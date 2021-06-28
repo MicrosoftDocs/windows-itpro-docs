@@ -117,7 +117,7 @@
       items:
         - name: Set up and test Cortana in Windows 10, version 2004 and later
           href: cortana-at-work/set-up-and-test-cortana-in-windows-10.md
-        - name: Testing scenarios using Cortana in your business or organization
+        - name: Cortana at work testing scenarios
           href: cortana-at-work/cortana-at-work-testing-scenarios.md
         - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
           href: cortana-at-work/cortana-at-work-scenario-1.md
@@ -138,7 +138,7 @@
         - name: Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization
           href: cortana-at-work/cortana-at-work-o365.md
         - name: Testing scenarios using Cortana in your business or organization
-          href: cortana-at-work/cortana-at-work-testing-scenarios.md
+          href: cortana-at-work/testing-scenarios-using-cortana-in-business-org.md
         - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
           href: cortana-at-work/test-scenario-1.md
         - name: Test scenario 2 - Perform a quick search with Cortana at work
