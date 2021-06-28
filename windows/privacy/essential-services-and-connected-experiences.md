@@ -53,6 +53,7 @@ If automatic updates are turned off, applications and websites may stop working 
 <p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1-automatic-root-certificates-update">Automatic Root Certificates Update</a></p></td>
 </tr>
 <tr class="odd">
+<td>Services Configuration</td>
 <td><p>Services Configuration is used by Windows components and apps, such as the telemetry service, to dynamically update their configuration. If you turn off this service, apps using this service may stop working.</p>
 <p>To turn it off, see <u>Services</u> <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1816-feedback--diagnostics">Configuration</a>.</p></td>
 </tr>
