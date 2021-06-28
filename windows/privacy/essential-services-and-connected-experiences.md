@@ -18,15 +18,13 @@ ms.date: 6/28/2021
 
 # Essential Services and Connected Experiences for Windows 10
 
-Applies to:
+**Applies to:**
 
 - Windows 10, version 1903 and later
 
-Windows includes features that connect to the internet to provide enhanced experiences and additional service based capabilities. These are called “connected experiences”. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure. Required service data is collected to enables us provide these cloud-based connected experiences and it's crucial to help keep them secure, up to date and performing properly. Windows diagnostic data is separate from required service data.For more information on Windows diagnostic data see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
+Windows includes features that connect to the internet to provide enhanced experiences and additional service based capabilities. These are called “connected experiences”. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure. When a connected experience is used, data is sent to and processed by Microsoft to provide that connected experiences. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data. Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. Required service data is separate from Windows diagnostic data. For more information on Windows diagnostic data see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
-Connected experiences that are critical to the proper functioning of Windows are called “essential services”. For example, the Windows licensing service confirms that you are properly licensed to use Windows.
-
-While you can control many of the connected experiences that are available to you and your organization, we recommend that you carefully assess the impact of turning off essential services.
+Connected experiences that are critical to the proper functioning of Windows are called “essential services”. For example, the Windows licensing service confirms that you are properly licensed to use Windows. While you can control many of the connected experiences that are available to you and your organization, we recommend that you carefully assess the impact of turning off essential services.
 
 Windows connected experiences and essential services transfer data to Microsoft network endpoints. The article [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) provides details about the different ways to control traffic to these endpoints. Where applicable, each connected experience or essential service includes a link to the specific details on how to control that traffic.
 
@@ -55,7 +53,6 @@ If automatic updates are turned off, applications and websites may stop working 
 <p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1-automatic-root-certificates-update">Automatic Root Certificates Update</a></p></td>
 </tr>
 <tr class="odd">
-<td><del>Configuration Service</del> Services Configuration</td>
 <td><p>Services Configuration is used by Windows components and apps, such as the telemetry service, to dynamically update their configuration. If you turn off this service, apps using this service may stop working.</p>
 <p>To turn it off, see <u>Services</u> <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1816-feedback--diagnostics">Configuration</a>.</p></td>
 </tr>
@@ -73,9 +70,9 @@ If automatic updates are turned off, applications and websites may stop working 
 <td>Networking</td>
 <td><p>Networking in Windows provides connectivity to and from your devices to the local intranet and internet. If you turn off networking, Windows 10 devices will lose network connectivity.</p>
 <p>To turn off Network Adapters, see <a href="/powershell/module/netadapter/disable-netadapter?view=windowsserver2019-ps&preserve-view=true">Disable-NetAdapter</a></p></td>
-</tr
+</tr>
 <tr class="odd">
-<td><del>Setup Service</del> Device setup</td>
+<td>Device setup</td>
 <td><p>The first time a user sets up a new device, the Windows out-of-box experience (OOBE) guides the user through the steps to accept the license agreement, connect to the internet, sign in to (or sign up for) a Microsoft account, and takes care of other important tasks. Most settings can also be changed after setup is completed.</p>
 <p>To customize the initial setup experience, see <a href="/windows-hardware/customize/desktop/customize-oobe.md">Customize Setup</a></p></td>
 </tr>
