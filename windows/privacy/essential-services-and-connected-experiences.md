@@ -24,7 +24,7 @@ ms.date: 6/28/2021
 
 Windows includes features that connect to the internet to provide enhanced experiences and additional service based capabilities. These are called “connected experiences”. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure.
 
-When a connected experience is used, data is sent to and processed by Microsoft to provide that connected experience. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data. Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected.
+When a connected experience is used, data is sent to and processed by Microsoft to provide that connected experiences. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data. Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected.
 
 Required service data is separate from Windows diagnostic data. For more information on Windows diagnostic data see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
@@ -48,23 +48,23 @@ Windows connected experiences and essential services transfer data to Microsoft 
 <tr class="odd">
 <td>Authentication</td>
 <td><p>The authentication service is required to enable sign in to work or school accounts. It validates a user’s identity and provides access to multiple apps and system components like OneDrive and activity history. Using a work or school account to sign in to Windows 10 enables Microsoft to provide a consistent experience across your devices. If the authentication service is turned off, many apps and components may lose functionality and users may not be able to sign in.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#12-microsoft-account">Microsoft Account</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#12-microsoft-account">Microsoft Account</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Certificates</td>
 <td><p>Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA), are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates that are publicly known to be fraudulent. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.<br />
 If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1-automatic-root-certificates-update">Automatic Root Certificates Update</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1-automatic-root-certificates-update">Automatic Root Certificates Update</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Services Configuration</td>
 <td><p>Services Configuration is used by Windows components and apps, such as the telemetry service, to dynamically update their configuration. If you turn off this service, apps using this service may stop working.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1816-feedback--diagnostics">Services Configuration</a>.</p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1816-feedback--diagnostics"><u>Services Configuration</u></a>.</p></td>
 </tr>
 <tr class="even">
 <td>Date and Time</td>
 <td><p>The Windows Time service is used to synchronize and maintain the most accurate date and time on your devices. It is installed by default and starts automatically on devices that are part of a domain. It can be started manually on other devices. If this service is stopped, date and time synchronization will be unavailable and any services that explicitly depend on it will fail to start.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#3-date--time">Date and Time</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#3-date--time"><u>Date and Time</u></a></p></td>
 </tr>
 <tr class="odd">
 <td>Licensing</td>
@@ -74,12 +74,12 @@ If automatic updates are turned off, applications and websites may stop working 
 <tr class="even">
 <td>Networking</td>
 <td><p>Networking in Windows provides connectivity to and from your devices to the local intranet and internet. If you turn off networking, Windows 10 devices will lose network connectivity.</p>
-<p>To turn off Network Adapters, see <a href="/powershell/module/netadapter/disable-netadapter?view=windowsserver2019-ps&preserve-view=true">Disable-NetAdapter</a></p></td>
+<p>To turn off Network Adapters, see <a href="/powershell/module/netadapter/disable-netadapter?view=windowsserver2019-ps&preserve-view=true">Disable-NetAdapter</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Device setup</td>
 <td><p>The first time a user sets up a new device, the Windows out-of-box experience (OOBE) guides the user through the steps to accept the license agreement, connect to the internet, sign in to (or sign up for) a Microsoft account, and takes care of other important tasks. Most settings can also be changed after setup is completed.</p>
-<p>To customize the initial setup experience, see <a href="/windows-hardware/customize/desktop/customize-oobe.md">Customize Setup</a></p></td>
+<p>To customize the initial setup experience, see <a href="/windows-hardware/customize/desktop/customize-oobe.md">Customize Setup</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Telemetry</td>
@@ -90,7 +90,7 @@ If automatic updates are turned off, applications and websites may stop working 
 <td>Windows Update</td>
 <td><p>Windows Update ensures devices are kept up to date and secure by downloading the latest updates and security patches for Windows. This service also enables users download apps from the Microsoft Store and keep them up to date.</p>
 <p>Turning off Windows Update will potentially leave your Windows devices in a vulnerable state and more prone to security threats.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#29-windows-update">Windows Update</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#29-windows-update">Windows Update</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -115,38 +115,38 @@ If automatic updates are turned off, applications and websites may stop working 
 <td><p>Delivery Optimization is a cloud-managed, peer-to-peer client and a downloader service for Windows updates, upgrades, and applications to an organization's networked devices. Delivery Optimization allows devices to download updates from alternate sources (such as other peers on the network), in addition to Microsoft servers. This helps when you have a limited or unreliable Internet connection and reduces the bandwidth needed to keep all your organization's devices up to date.</p>
 <p>If you have Delivery Optimization Peer-to-Peer option turned on, devices on your network may send and receive updates and apps to other devices on your local network, if you choose, or to devices on the Internet.</p>
 <p>By default, devices running Windows 10 will only use Delivery Optimization to get and receive updates for devices and apps on your local network.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#28-delivery-optimization">Delivery Optimization.</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#28-delivery-optimization">Delivery Optimization</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Speech Recognition</td>
 <td><p>Microsoft provides a cloud-based (online) speech recognition technology that allows users to write text by speaking or interact with this system using your voice. It functions by converting speech audio into transcribed text. Turning on the online speech recognition setting enables the use of Microsoft cloud-based speech recognition in Cortana, the Mixed Reality Portal, dictation in Windows from the software keyboard, supported Microsoft Store apps, and in other parts of Windows 10.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#186-speech">Speech Recognition.</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#186-speech">Speech Recognition</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Find My Device</td>
 <td><p>Find My Device is a feature that can help users locate their Windows 10 device if it's lost or stolen. This feature only works if a Microsoft account is used to logon to the device, the user is an administrator on the device and when location is turned on for the device. Users can find their device by logging in to https://account.microsoft.com/devices under the Find My Device tab.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#5-find-my-device">Find My Device.</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#5-find-my-device">Find My Device</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Windows Insider Program</td>
 <td><p>The Windows Insider Preview program lets you help shape the future of Windows, be part of the community, and get early access to releases of Windows 10. Once you've registered for the program, you can run Insider Preview builds on as many devices as you want, each in the channel of your choice. Learn how to join the Windows Insider program by visiting the program’s <a href="https://insider.windows.com/">website</a>.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#7-insider-preview-builds">Windows Insider Program.</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#7-insider-preview-builds">Windows Insider Program</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Location services</td>
 <td><p>The device location setting enables certain Windows features such as auto setting the time zone or Find My Device to function properly. When the device location setting is enabled, the Microsoft location service will use a combination of global positioning service (GPS), nearby wireless access points, cell towers, and IP address to determine the device’s location. Depending on the capabilities of the device, its location can be determined with varying degrees of accuracy and may in some cases be determined precisely.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#182-location">Location Services.</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#182-location">Location Services</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Microsoft Store</td>
 <td><p>Microsoft Store enables users to purchase and download apps, games, and digital content. The Store also enables the developers of these apps to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to store apps in a power-efficient and dependable way. The Store can also revoke malicious apps.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store">Microsoft Store.</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store">Microsoft Store</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Microsoft Defender Antivirus</td>
 <td><p>Microsoft Defender Antivirus provides cloud-delivered protection against new and emerging threats for the devices in your organization.</p>
 <p>Turning off Microsoft Defender Antivirus will potentially leave your Windows devices in a vulnerable state and more prone to security threats.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#24-windows-defender">Microsoft Defender Antivirus.</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#24-windows-defender">Microsoft Defender Antivirus.</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Microsoft Defender SmartScreen</td>
@@ -163,23 +163,23 @@ If automatic updates are turned off, applications and websites may stop working 
 <td>Windows Spotlight</td>
 <td><p>Windows Spotlight displays new background images on the lock screen each day. Additionally, it provides feature suggestions, fun facts, and tips on the lock screen background.</p>
 <p>Administrators can turn off Windows Spotlight features to prevent users from using the Windows Spotlight background.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#25-windows-spotlight">Windows Spotlight.</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#25-windows-spotlight">Windows Spotlight</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Activity History</td>
 <td><p>Activity History shows a history of activities a user has performed and can even synchronize activities across multiple devices for the same user.</p>
 <p>Synchronization across devices only works when a user signs in with the same account.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-act-history">Activity History.</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-act-history">Activity History.</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Settings Synchronization</td>
 <td><p>With settings synchronization is turned on, a user's settings are synced across all Windows 10 devices when they sign in with the same account.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#21-sync-your-settings">Sync Your Settings</a></p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#21-sync-your-settings">Sync Your Settings</a>.</p></td>
 </tr>
 <tr class="even">
 <td>Cloud Clipboard</td>
 <td><p>Cloud Clipboard enables users to copy images and text across all Windows 10 devices when they sign in with the same account. Users can paste from their clipboard history and also pin items.</p>
-<p>To turn it off, see <a href="/windows/client-management/mdm/policy-csp-privacy.md#privacy-allowcrossdeviceclipboard">Cloud Clipboard</a></p></td>
+<p>To turn it off, see <a href="/windows/client-management/mdm/policy-csp-privacy.md#privacy-allowcrossdeviceclipboard">Cloud Clipboard</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>OneDrive</td>
