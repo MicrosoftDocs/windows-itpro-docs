@@ -52,8 +52,8 @@ Windows connected experiences and essential services transfer data to Microsoft 
 </tr>
 <tr class="even">
 <td>Certificates</td>
-<td><p>Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA), are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates that are publicly known to be fraudulent. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.<br />
-If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.</p>
+<td><p>Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA), are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates that are publicly known to be fraudulent. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.</p>
+<p>If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.</p>
 <p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#1-automatic-root-certificates-update">Automatic Root Certificates Update</a>.</p></td>
 </tr>
 <tr class="odd">
@@ -146,7 +146,7 @@ If automatic updates are turned off, applications and websites may stop working 
 <td>Microsoft Defender Antivirus</td>
 <td><p>Microsoft Defender Antivirus provides cloud-delivered protection against new and emerging threats for the devices in your organization.</p>
 <p>Turning off Microsoft Defender Antivirus will potentially leave your Windows devices in a vulnerable state and more prone to security threats.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#24-windows-defender">Microsoft Defender Antivirus.</a>.</p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#24-windows-defender">Microsoft Defender Antivirus</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Microsoft Defender SmartScreen</td>
@@ -169,7 +169,7 @@ If automatic updates are turned off, applications and websites may stop working 
 <td>Activity History</td>
 <td><p>Activity History shows a history of activities a user has performed and can even synchronize activities across multiple devices for the same user.</p>
 <p>Synchronization across devices only works when a user signs in with the same account.</p>
-<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-act-history">Activity History.</a>.</p></td>
+<p>To turn it off, see <a href="manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-act-history">Activity History</a>.</p></td>
 </tr>
 <tr class="odd">
 <td>Settings Synchronization</td>
