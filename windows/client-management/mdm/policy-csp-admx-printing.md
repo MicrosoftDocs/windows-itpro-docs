@@ -1842,11 +1842,11 @@ Available in the latest Windows 10 Insider Preview Build. Announces the presence
 
 On domains with Active Directory, shared printer resources are available in Active Directory and are not announced.
 
-If you enable this setting, the print spooler announces shared printers to the print browse master servers.
+If you enable this setting, the print spooler announces shared printers to the print browse main servers.
 
-If you disable this setting, shared printers are not announced to print browse master servers, even if Active Directory is not available.
+If you disable this setting, shared printers are not announced to print browse main servers, even if Active Directory is not available.
 
-If you do not configure this setting, shared printers are announced to browse master servers only when Active Directory is not available.
+If you do not configure this setting, shared printers are announced to browse main servers only when Active Directory is not available.
 
 > [!NOTE]
 > A client license is used each time a client computer announces a printer to a print browse master on the domain.
