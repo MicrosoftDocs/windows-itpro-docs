@@ -39,8 +39,8 @@ The Language Pack Management CSP allows a direct way to provision language packs
 
     Status: 0 – not started; 1 – in process; 2 – succeeded; 3 – failed. ErrorCode is a HRESULT that could help diagnosis if the installation failed.
 
-  > [!NOTE]
-  > If IT admin has NOT set the policy of blocking cleanup of unused language packs, this command will fail.  
+    > [!NOTE]
+    > If IT admin has NOT set the policy of blocking cleanup of unused language packs, this command will fail.  
 
 3. Delete installed Language with the DELETE command on the installed language tag. The delete command is a fire and forget operation. The deletion will run in background. IT admin can query the installed language later and resend the command if needed.
 
