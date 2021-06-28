@@ -1,6 +1,6 @@
 ---
 title: Cortana at work testing scenarios
-description: A list of suggested testing scenarios that you can use to test Cortana in your organization.
+description: Suggested testing scenarios that you can use to test Cortana in your organization.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
