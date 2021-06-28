@@ -224,7 +224,7 @@
         - name: Information for developers
           items: 
             - name: Software developer FAQ
-              href: intelligence/developer-faq.md
+              href: intelligence/developer-faq.yml
             - name: Software developer resources
               href: intelligence/developer-resources.md
     - name: The Windows Security app
