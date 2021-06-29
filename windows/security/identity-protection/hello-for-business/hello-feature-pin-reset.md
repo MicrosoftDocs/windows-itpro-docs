@@ -23,7 +23,7 @@ ms.reviewer:
 
 - Windows 10, version 1709 or later
 
-Windows Hello for Business provides the capability for users to reset forgotten PINs using the "I forgot my PIN link" from the Sign-in options page in Settings or from above the lock screen. User's are required to authenticate and complete multi-factor authentication to reset their PIN.
+Windows Hello for Business provides the capability for users to reset forgotten PINs using the "I forgot my PIN link" from the Sign-in options page in Settings or from above the lock screen. User's are required to authenticate and complete multifactor authentication to reset their PIN.
 
 There are two forms of PIN reset called destructive and non-destructive. Destructive PIN reset is the default and does not require configuration. During a destructive PIN reset, the user's existing PIN and underlying credentials, including any keys or certificates added to their Windows Hello container, will be deleted from the client and a new logon key and PIN are provisioned. For non-destructive PIN reset, you must deploy the Microsoft PIN reset service and client policy to enable the PIN recovery feature. During a non-destructive PIN reset, the user's Windows Hello for Business container and keys are preserved, but the user's PIN that they use to authorize key usage is changed.
 
@@ -50,17 +50,17 @@ Destructive and non-destructive PIN reset use the same entry points for initiati
 For Azure AD joined devices:
 
 1. If the PIN credential provider is not selected, expand the **Sign-in options** link, and select the PIN pad icon.
-1. Click **I forgot my PIN** from the PIN credential provider
-1. Select an authentication option from the list of presented options. This list will be based on the different authentication methods enabled in your tenant (i.e. Password, PIN, Security key)
-1. Follow the instructions provided by the provisioning process
+1. Click **I forgot my PIN** from the PIN credential provider.
+1. Select an authentication option from the list of presented options. This list will be based on the different authentication methods enabled in your tenant (i.e., Password, PIN, Security key).
+1. Follow the instructions provided by the provisioning process.
 1. When finished, unlock your desktop using your newly created PIN.
 
 For Hybrid Azure AD joined devices:
 
 1. If the PIN credential provider is not selected, expand the **Sign-in options** link, and select the PIN pad icon.
-1. Click **I forgot my PIN** from the PIN credential provider
+1. Click **I forgot my PIN** from the PIN credential provider.
 1. Enter your password and press enter.
-1. Follow the instructions provided by the provisioning process
+1. Follow the instructions provided by the provisioning process.
 1. When finished, unlock your desktop using your newly created PIN.
 
 > [!NOTE]
@@ -79,7 +79,7 @@ Visit the [Windows Hello for Business Videos](./hello-videos.md) page and watch 
 - Azure AD registered, Azure AD joined, and Hybrid Azure AD joined
 - Windows 10, version 1709 to 1809, **Enterprise Edition**. There is no licensing requirement for this feature since version 1903.
 
-When non-destructive PIN reset is enabled on a client, a 256-bit AES key is generated locally and added to a user's Windows Hello for Business container and keys as the PIN reset protector. This PIN reset protector is encrypted using a public key retrieved from the Microsoft PIN reset service and then stored on the client for later use during PIN reset. After a user initiates a PIN reset, completes authentication to Azure, and completes multi-factor authentication, the encrypted PIN reset protector is sent to the Microsoft PIN reset service, decrypted, and returned to the client. The decrypted PIN reset protector is used to change the PIN used to authorize Windows Hello for Business keys and it is then cleared from memory.
+When non-destructive PIN reset is enabled on a client, a 256-bit AES key is generated locally and added to a user's Windows Hello for Business container and keys as the PIN reset protector. This PIN reset protector is encrypted using a public key retrieved from the Microsoft PIN reset service and then stored on the client for later use during PIN reset. After a user initiates a PIN reset, completes authentication to Azure, and completes multifactor authentication, the encrypted PIN reset protector is sent to the Microsoft PIN reset service, decrypted, and returned to the client. The decrypted PIN reset protector is used to change the PIN used to authorize Windows Hello for Business keys and it is then cleared from memory.
 
 Using Group Policy, Microsoft Intune or a compatible MDM, you can configure Windows 10 devices to securely use the Microsoft PIN reset service that enables users to reset their forgotten PIN through settings or above the lock screen without requiring re-enrollment.
 
@@ -94,17 +94,23 @@ Before you can remotely reset PINs, you must on-board the Microsoft PIN reset se
 ### Connect Azure Active Directory with the PIN reset service
 
 1. Go to the [Microsoft PIN Reset Service Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=b8456c59-1230-44c7-a4a2-99b085333e84&resource=https%3A%2F%2Fgraph.windows.net&redirect_uri=https%3A%2F%2Fcred.microsoft.com&state=e9191523-6c2f-4f1d-a4f9-c36f26f89df0&prompt=admin_consent), and sign in using the Global administrator account you use to manage your Azure Active Directory tenant.
+
 1. After you have logged in, choose **Accept** to give consent for the PIN reset service to access your account.
+
    ![PIN reset service application in Azure](images/pinreset/pin-reset-service-prompt.png)
+
 1. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using the Global administrator account you use to manage your Azure Active Directory tenant.
+
 1. After you have logged in, choose **Accept** to give consent for the PIN reset client to access your account.
- ![PIN reset client application in Azure](images/pinreset/pin-reset-client-prompt.png)
-    > [!NOTE]
-    > After you have accepted the PIN reset service and client requests, you will land on a page that states "You do not have permission to view this directory or page." This behavior is expected. Be sure to confirm that the two PIN reset applications are listed for your tenant.
+
+   ![PIN reset client application in Azure](images/pinreset/pin-reset-client-prompt.png)
+
+   > [!NOTE]
+   > After you have accepted the PIN reset service and client requests, you will land on a page that states "You do not have permission to view this directory or page." This behavior is expected. Be sure to confirm that the two PIN reset applications are listed for your tenant.
+
 1. In the [Azure portal](https://portal.azure.com), verify that the Microsoft PIN Reset Service and Microsoft PIN Reset Client are integrated from the **Enterprise applications** blade. Filter to application status "Enabled" and both Microsoft Pin Reset Service Production and Microsoft Pin Reset Client Production will show up in your tenant.
 
-   > [!div class="mx-imgBorder"]
-   > ![PIN reset service permissions page](images/pinreset/pin-reset-applications.png)
+   :::image type="content" alt-text="PIN reset service permissions page" source="images/pinreset/pin-reset-applications.png" lightbox="images/pinreset/pin-reset-applications.png":::
 
 ### Configure Windows devices to use PIN reset using Group Policy
 
@@ -122,7 +128,7 @@ You configure Windows 10 to use the Microsoft PIN Reset service using the comput
 1. Set **Enable PIN recovery** to **Yes**.
 
 > [!NOTE]
-> You can also setup PIN recovery using configuration profiles.
+> You can also set up PIN recovery using configuration profiles.
 >
 > 1. Sign in to Endpoint Manager.
 > 1. Click **Devices** > **Configuration Profiles** > Create a new profile or edit an existing profile using the Identity Protection profile type.
@@ -141,7 +147,7 @@ The PIN reset configuration for a user can be viewed by running [**dsregcmd /sta
 
 #### Sample User state Output for Destructive PIN Reset
 
-```
+```console
 +----------------------------------------------------------------------+
 | User State                                                           |
 +----------------------------------------------------------------------+
@@ -160,7 +166,7 @@ The PIN reset configuration for a user can be viewed by running [**dsregcmd /sta
 
 #### Sample User state Output for Non-Destructive PIN Reset
 
-```
+```console
 +----------------------------------------------------------------------+
 | User State                                                           |
 +----------------------------------------------------------------------+
@@ -189,21 +195,29 @@ The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-au
 ### Configuring Policy Using Intune
 
 1. Sign-in to [Endpoint Manager admin center](https://endpoint.microsoft.com/) using a Global administrator account.
+
 1. Click **Devices**. Click **Configuration profiles**. Click **Create profile**.
+
 1. For Platform select **Windows 10 and later** and for Profile type select **Templates**. In the list of templates that is loaded, select **Custom** and click Create.
+
 1. In the **Name** field type **Web Sign In Allowed URLs** and optionally provide a description for the configuration. Click Next.
+
 1. On the Configuration settings page, click **Add** to add a custom OMA-URI setting. Provide the following information for the custom settings
+
     - **Name:** Web Sign In Allowed URLs
     - **Description:** (Optional) List of domains that are allowed during PIN reset flows.
     - **OMA-URI:** ./Vendor/MSFT/Policy/Config/Authentication/ConfigureWebSignInAllowedUrls
     - **Data type:** String
-    - **Value**: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be signin.contoso.com;portal.contoso.com (no double quotes)
+    - **Value**: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be _signin.contoso.com;portal.contoso.com_ (without quotation marks)
 
-   ![Custom Configuration for ConfigureWebSignInAllowedUrls policy](images/pinreset/allowlist.png)
+    :::image type="content" alt-text="Custom Configuration for ConfigureWebSignInAllowedUrls policy" source="images/pinreset/allowlist.png" lightbox="images/pinreset/allowlist.png":::
 
 1. Click the Save button to save the custom configuration.
+
 1. On the Assignments page, use the Included groups and Excluded groups sections to define the groups of users or devices that should receive this policy. Once you have completed configuring groups click the Next button.
+
 1. On the Applicability rules page, click Next.
+
 1. Review the configuration that is shown on the Review + create page to make sure that it is accurate. Click create to save the profile and apply it to the configured groups.
 
 > [!NOTE]
