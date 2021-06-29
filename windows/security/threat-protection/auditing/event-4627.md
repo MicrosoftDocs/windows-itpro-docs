@@ -21,7 +21,7 @@ ms.technology: mde
 -   Windows Server 2016
 
 
-<img src="images/event-4627.png" alt="Event 4627 illustration" width="876" height="1418" hspace="10" align="left" />
+<img src="images/event-4627.png" alt="Event 4627 illustration" width="554" height="896" hspace="10" align="left" />
 
 ***Subcategory:***&nbsp;[Audit Group Membership](audit-group-membership.md)
 

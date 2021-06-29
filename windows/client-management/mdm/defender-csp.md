@@ -8,9 +8,9 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/11/2020
+ms.date: 06/23/2021
 ---
 
 # Defender CSP
@@ -56,9 +56,12 @@ Defender
 --------TamperProtectionEnabled (Added in Windows 10, version 1903)
 --------IsVirtualMachine (Added in Windows 10, version 1903)
 ----Configuration (Added in Windows 10, version 1903)
---------TamperProetection (Added in Windows 10, version 1903)
---------EnableFileHashcomputation (Added in Windows 10, version 1903)
+--------TamperProtection (Added in Windows 10, version 1903)
+--------EnableFileHashComputation (Added in Windows 10, version 1903)
 --------SupportLogLocation (Added in the next major release of Windows 10)
+--------PlatformUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
+--------EngineUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
+--------SignaturesUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 ----Scan
 ----UpdateSignature
 ----OfflineScan (Added in Windows 10 version 1803)
@@ -94,11 +97,11 @@ The data type is integer.
 
 The following list shows the supported values:
 
--   0 = Unknown
--   1 = Low
--   2 = Moderate
--   4 = High
--   5 = Severe
+- 0 = Unknown
+- 1 = Low
+- 2 = Moderate
+- 4 = High
+- 5 = Severe
 
 Supported operation is Get.
 
@@ -171,17 +174,17 @@ The data type is integer.
 
 The following list shows the supported values:
 
--   0 = Active
--   1 = Action failed
--   2 = Manual steps required
--   3 = Full scan required
--   4 = Reboot required
--   5 = Remediated with noncritical failures
--   6 = Quarantined
--   7 = Removed
--   8 = Cleaned
--   9 = Allowed
--   10 = No Status ( Cleared)
+- 0 = Active
+- 1 = Action failed
+- 2 = Manual steps required
+- 3 = Full scan required
+- 4 = Reboot required
+- 5 = Remediated with noncritical failures
+- 6 = Quarantined
+- 7 = Removed
+- 8 = Cleaned
+- 9 = Allowed
+- 10 = No Status ( Cleared)
 
 Supported operation is Get.
 
@@ -491,7 +494,7 @@ Supported operations are Add, Delete, Get, Replace.
 
 <a href="" id="configuration-enablefilehashcomputation"></a>**Configuration/EnableFileHashComputation**  
 Enables or disables file hash computation feature.
-When this feature is enabled Windows defender will compute hashes for files it scans.
+When this feature is enabled Windows Defender will compute hashes for files it scans.
 
 The data type is integer.
 
@@ -518,8 +521,74 @@ When enabled or disabled exists on the client and admin moves the setting to not
 
 More details:  
 
-- [Microsoft Defender AV diagnostic data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)  
+- [Microsoft Defender Antivirus diagnostic data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)  
 - [Collect investigation package from devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)  
+
+<a href="" id="configuration-supportloglocation"></a>**Configuration/PlatformUpdatesChannel**
+
+Enable this policy to specify when devices receive Microsoft Defender platform updates during the monthly gradual rollout.
+
+Beta Channel: Devices set to this channel will be the first to receive new updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in (manual) test environments only and a limited number of devices.
+
+Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments.
+
+Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%).
+
+Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
+
+If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:
+- 0: Not configured (Default)
+- 1: Beta Channel - Prerelease
+- 2: Current Channel (Preview)
+- 3: Current Channel (Staged)
+- 4: Current Channel (Broad)
+
+<a href="" id="configuration-supportloglocation"></a>**Configuration/EngineUpdatesChannel**
+
+Enable this policy to specify when devices receive Microsoft Defender engine updates during the monthly gradual rollout.
+
+Beta Channel: Devices set to this channel will be the first to receive new updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in (manual) test environments only and a limited number of devices.
+
+Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments.
+
+Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%).
+
+Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
+
+If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:
+- 0 - Not configured (Default)
+- 1 - Beta Channel - Prerelease
+- 2 - Current Channel (Preview)
+- 3 - Current Channel (Staged)
+- 4 - Current Channel (Broad)
+
+<a href="" id="configuration-supportloglocation"></a>**Configuration/SignaturesUpdatesChannel** 
+
+Enable this policy to specify when devices receive daily Microsoft Defender definition updates during the daily gradual rollout.
+
+Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
+
+If you disable or do not configure this policy, the device will stay up to date automatically during the daily release cycle. Suitable for most devices.
+
+The data type is integer.
+Supported operations are Add, Delete, Get, Replace.
+
+Valid Values are:
+- 0: Not configured (Default)
+- 3: Current Channel (Staged)
+- 4: Current Channel (Broad)
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.

@@ -71,7 +71,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -97,7 +97,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -123,7 +123,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -149,7 +149,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -201,7 +201,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -227,7 +227,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -253,7 +253,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -305,7 +305,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -331,7 +331,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -358,7 +358,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
@@ -384,7 +384,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -410,7 +410,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -436,7 +436,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -462,7 +462,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -514,7 +514,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -540,7 +540,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -566,7 +566,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -592,7 +592,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -618,7 +618,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -644,7 +644,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -670,7 +670,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -722,7 +722,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -748,7 +748,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -774,7 +774,6 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -802,7 +801,6 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -829,7 +827,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -882,7 +880,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -934,7 +932,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -960,7 +958,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1012,7 +1010,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1037,9 +1035,9 @@ Additional lists:
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" />
-<a href="https://docs.microsoft.com/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection">Only for mobile application management (MAM)</td>
+<a href="/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection">Only for mobile application management (MAM)</td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1065,10 +1063,9 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -1092,7 +1089,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1118,7 +1115,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1144,7 +1141,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1168,7 +1165,7 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
@@ -1196,10 +1193,10 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
 </tr>
 </table>
 
@@ -1248,7 +1245,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1274,7 +1271,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1284,6 +1281,33 @@ Additional lists:
 <!--EndSKU-->
 <!--EndCSP-->
 
+<!--StartCSP-->
+[LanguagePackManagement CSP](language-pack-management-csp.md)
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+	<th>Mobile Enterprise</th>
+</tr>
+<tr>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
 <!--StartCSP-->
 [Maps CSP](maps-csp.md)
 
@@ -1300,7 +1324,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1378,7 +1402,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1404,7 +1428,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1482,7 +1506,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1534,7 +1558,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1560,7 +1584,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1586,7 +1610,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1638,7 +1662,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1664,7 +1688,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1688,12 +1712,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
 </tr>
 </table>
 
@@ -1716,7 +1740,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1742,7 +1766,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1768,7 +1792,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1794,7 +1818,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1820,7 +1844,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1846,7 +1870,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1872,7 +1896,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1898,7 +1922,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1924,7 +1948,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1950,7 +1974,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1976,7 +2000,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2002,7 +2026,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -2028,7 +2052,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2159,7 +2183,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -2185,7 +2209,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2211,7 +2235,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2237,7 +2261,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2290,7 +2314,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2316,7 +2340,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -2368,7 +2392,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -2421,7 +2445,7 @@ Additional lists:
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2447,7 +2471,7 @@ Additional lists:
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2503,7 +2527,6 @@ Additional lists:
 	<td></td>
 	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 </tr>
 </table>
 
@@ -2555,7 +2578,7 @@ The following list shows the CSPs supported in HoloLens devices:
 [PassportForWork CSP](passportforwork-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
 | [Policy CSP](policy-configuration-service-provider.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [RemoteFind CSP](remotefind-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
-| [RemoteWipe CSP](remotewipe-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
+| [RemoteWipe CSP](remotewipe-csp.md) (**doWipe** and **doWipePersistProvisionedData** nodes only)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
 | [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [TenantLockdown CSP](tenantlockdown-csp.md) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>10</sup>  |
 | [Update CSP](update-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
@@ -2627,6 +2650,8 @@ The following list shows the CSPs supported in HoloLens devices:
 <hr>
 
  Footnotes:
+- A - Only for mobile application management (MAM).
+- B - Provisioning only.
 - 1 - Added in Windows 10, version 1607.
 - 2 - Added in Windows 10, version 1703.
 - 3 - Added in Windows 10, version 1709.
@@ -2637,3 +2662,4 @@ The following list shows the CSPs supported in HoloLens devices:
 - 8 - Added in Windows 10, version 2004.
 - 9 - Added in Windows 10 Team 2020 Update
 - 10 - Added in [Windows Holographic, version 20H2](/hololens/hololens-release-notes#windows-holographic-version-20h2)
+

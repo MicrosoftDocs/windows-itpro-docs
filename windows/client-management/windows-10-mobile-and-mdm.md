@@ -531,7 +531,7 @@ To distribute an app offline (organization-managed), the app must be downloaded 
 
 To install acquired Microsoft Store or LOB apps offline on a Windows 10 Mobile device, IT administrators can use an MDM system. The MDM system distributes the app packages that you downloaded from Microsoft Store (also called sideloading) to Windows 10 Mobile devices. Support for offline app distribution depends on the MDM system you are using, so consult your MDM vendor documentation for details. You can fully automate the app deployment process so that no user intervention is required.
 
-Microsoft Store apps or LOB apps that have been uploaded to the Microsoft Store for Business are automatically trusted on all Windows devices, as they are cryptographically signed with Microsoft Store certificates. LOB apps that are uploaded to the Microsoft Store for Business are private to your organization and are never visible to other companies or consumers. If you do not want to upload your LOB apps, you have to establish trust for the app on your devices. To establish this trust, you’ll need to generate a signing certificate with your Public Key Infrastructure and add your chain of trust to the trusted certificates on the device (see the certificates section). You can install up to 20 self-signed LOB apps per device with Windows 10 Mobile. To install more than 20 apps on a device, you can purchase a signing certificate from a trusted public Certificate Authority, or upgrade your devices to Windows 10 Mobile Enterprise edition.
+Microsoft Store apps or LOB apps that have been uploaded to the Microsoft Store for Business are automatically trusted on all Windows devices, as they are cryptographically signed with Microsoft Store certificates. LOB apps that are uploaded to the Microsoft Store for Business are private to your organization and are never visible to other companies or consumers. If you do not want to upload your LOB apps, you have to establish trust for the app on your devices. To establish this trust, you’ll need to generate a signing certificate with your Public Key Infrastructure and add your chain of trust to the trusted certificates on the device (see the certificates section). You can install up to 20 self-signed LOB apps per device with Windows 10 Mobile. To install more than 20 apps on a device, you can purchase a signing certificate from a trusted public Certificate Authority, or upgrade your devices to Windows 10 edition.
 
 For more information, see [Microsoft Store for Business](/microsoft-store/index).
 
@@ -786,14 +786,12 @@ Update availability depends on what servicing option you choose for the device. 
 <td align="left">Immediately after the Feature Update is published to Windows Update by Microsoft</td>
 <td align="left">Microsoft typically releases two Feature Updates per 12-month period (approximately every four months, though it can potentially be longer)</td>
 <td align="left">Makes new features available to users as soon as possible</td>
-<td align="left">Mobile &amp; Mobile Enterprise</td>
 </tr>
 <tr class="even">
 <td align="left"><strong>Current Branch for Business (CBB)</strong></td>
 <td align="left">A minimum of four months after the corresponding Feature Update is first published to Windows Update by Microsoft</td>
 <td align="left">A minimum of four months, though it potentially can be longerNo</td>
 <td align="left">Provides additional time to test new feature before deployment</td>
-<td align="left">Mobile Enterprise only</td>
 </tr>
 </tbody>
 </table>
@@ -802,11 +800,11 @@ Update availability depends on what servicing option you choose for the device. 
 
 *Applies to: Corporate devices*
 
-While Windows 10 Mobile provides updates directly to user devices from Windows Update, there are many organizations that want to track, test, and schedule updates to corporate devices. To support these requirements, we created the Windows 10 Mobile Enterprise edition.
+While Windows 10 Mobile provides updates directly to user devices from Windows Update, there are many organizations that want to track, test, and schedule updates to corporate devices. To support these requirements, we created the Windows 10 edition.
 
-Upgrading to Windows 10 Mobile Enterprise edition provides additional device and app management capabilities for organizations that want to:
--   **Defer, approve and deploy feature and quality updates:** Windows 10 Mobile devices get updates directly from Windows Update. If you want to curate updates prior to deploying them, an upgrade to Windows 10 Mobile Enterprise edition is required. Once Enterprise edition is enabled, the phone can be set to the Current Branch for Business servicing option, giving IT additional time to test updates before they are released.
--   **Deploy an unlimited number of self-signed LOB apps to a single device:** To use an MDM system to deploy LOB apps directly to devices, you must cryptographically sign the software packages with a code signing certificate that your organization’s certificate authority (CA) generates. You can deploy a maximum of 20 self-signed LOB apps to a Windows 10 Mobile device. To deploy more than 20 self-signed LOB apps, Windows 10 Mobile Enterprise is required.
+Upgrading to Windows 10 edition provides additional device and app management capabilities for organizations that want to:
+-   **Defer, approve and deploy feature and quality updates:** Windows 10 Mobile devices get updates directly from Windows Update. If you want to curate updates prior to deploying them, an upgrade to Windows 10 edition is required. Once Enterprise edition is enabled, the phone can be set to the Current Branch for Business servicing option, giving IT additional time to test updates before they are released.
+-   **Deploy an unlimited number of self-signed LOB apps to a single device:** To use an MDM system to deploy LOB apps directly to devices, you must cryptographically sign the software packages with a code signing certificate that your organization’s certificate authority (CA) generates. You can deploy a maximum of 20 self-signed LOB apps to a Windows 10 Mobile device. To deploy more than 20 self-signed LOB apps, Windows 10 is required.
 -   **Set the diagnostic data level:** Microsoft collects diagnostic data to help keep Windows devices secure and to help Microsoft improve the quality of Windows and Microsoft services. An upgrade to Windows 10 Mobile Enterprise edition is required to set the diagnostic data level so that only diagnostic information required to keep devices secured is gathered.
 
 To learn more about diagnostic, see [Configure Windows diagnostic data in your organization](/windows/configuration/configure-windows-diagnostic-data-in-your-organization).
@@ -980,7 +978,7 @@ This is a list of attributes that are supported by DHA and can trigger the corre
 -   **Boot Manager Version** The version of the Boot Manager running on the device. The HAS can check this version to determine whether the most current Boot Manager is running, which is more secure (trusted).
 -   **Code integrity version** Specifies the version of code that is performing integrity checks during the boot sequence. The HAS can check this version to determine whether the most current version of code is running, which is more secure (trusted).
 -   **Secure Boot Configuration Policy (SBCP) present** Specifies whether the hash of the custom SBCP is present. A device with an SBCP hash present is more trustworthy than a device without an SBCP hash.
--   **Boot cycle whitelist** The view of the host platform between boot cycles as defined by the manufacturer compared to a published allow list. A device that complies with the allow list is more trustworthy (secure) than a device that is noncompliant.
+-   **Boot cycle allow list** The view of the host platform between boot cycles as defined by the manufacturer compared to a published allow list. A device that complies with the allow list is more trustworthy (secure) than a device that is noncompliant.
 
 #### Example scenario
 

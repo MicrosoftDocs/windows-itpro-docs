@@ -5,7 +5,7 @@ summary: Learn about managing applications in Windows client, including how to r
 
 metadata:
   title: Windows application management  # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about managing applications in Windows 10 and Windows Sun Valley. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn about managing applications in Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice

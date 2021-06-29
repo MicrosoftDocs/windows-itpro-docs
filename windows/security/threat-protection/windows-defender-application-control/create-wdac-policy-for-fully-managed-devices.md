@@ -149,7 +149,7 @@ Alice has defined a policy for Lamna's fully-managed devices that makes some tra
    Possible mitigations:
   - Use signed WDAC policies and UEFI BIOS access protection to prevent tampering of WDAC policies.
 - **Managed installer**<br>
-    See [security considerations with managed installer](use-windows-defender-application-control-with-managed-installer.md#security-considerations-with-managed-installer)
+    See [security considerations with managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md#security-considerations-with-managed-installer)
 
    Existing mitigations applied:
   - Limit who can elevate to administrator on the device.
