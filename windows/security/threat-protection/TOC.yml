@@ -193,7 +193,7 @@
             - name: Phishing
               href: intelligence/phishing.md
             - name: Ransomware
-              href: intelligence/ransomware-malware.md
+              href: /security/compass/human-operated-ransomware
             - name: Rootkits
               href: intelligence/rootkits-malware.md
             - name: Supply chain attacks
