@@ -573,7 +573,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Configure Do Not Track         | Choose whether employees can send Do Not Track headers.<br /> **Set to Enabled**                     |
 | Configure Password Manager                            | Choose whether employees can save passwords locally on their devices. <br /> **Set to Disabled**       |
 | Configure search suggestions in Address Bar              | Choose whether the Address Bar shows search suggestions. <br /> **Set to Disabled**                    |
-| Configure Microsoft Defender SmartScreen (Windows 10, version 1703)               | Choose whether Microsoft Defender SmartScreen is turned on or off. <br /> **Set to Disabled**                            |
+| Configure Windows Defender SmartScreen (Windows 10, version 1703)               | Choose whether Microsoft Defender SmartScreen is turned on or off. <br /> **Set to Disabled**                            |
 | Allow web content on New Tab page                     | Choose whether a new tab page appears. <br /> **Set to Disabled**                                     |
 | Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> **Enabled** and **Set this to <<about:blank>>**         |
 | Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> **Set to: Enable**        |
@@ -589,7 +589,7 @@ Alternatively, you can configure the following Registry keys as described:
 | Configure Do Not Track   | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_DWORD name: DoNotTrack<br/> REG_DWORD: **1** |
 | Configure Password Manager | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_SZ name: FormSuggest Passwords<br /> REG_SZ: **No** |
 | Configure search suggestions in Address Bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes<br/>REG_DWORD name: ShowSearchSuggestionsGlobal <br />Value: **0**|
-| Configure Microsoft Defender SmartScreen (Windows 10, version 1703) | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter<br/>REG_DWORD name: EnabledV9 <br/>Value: **0** |
+| Configure Windows Defender SmartScreen (Windows 10, version 1703) | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter<br/>REG_DWORD name: EnabledV9 <br/>Value: **0** |
 | Allow web content on New Tab page  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI<br/>REG_DWORD name: AllowWebContentOnNewTabPage <br/>Value: **0** |
 | Configure corporate Home pages | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Internet Settings<br/>REG_SZ name: ProvisionedHomePages <br/>Value: **<<about:blank>>**|
 | Prevent the First Run webpage from opening on Microsoft Edge | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main <br>REG_DWORD name: PreventFirstRunPage <br/>Value: **1**|
@@ -917,7 +917,7 @@ To turn off **Let apps use my advertising ID for experiences across apps (turnin
 
 - Create a REG_DWORD registry setting named **DisabledByGroupPolicy** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\AdvertisingInfo** with a value of 1 (one).
 
-To turn off **Turn on Microsoft Defender Antivirus SmartScreen to check web content (URLs) that Microsoft Store apps use**:
+To turn off **Turn on Microsoft Defender SmartScreen to check web content (URLs) that Microsoft Store apps use**:
 
 - Turn off the feature in the UI.
 
@@ -1691,21 +1691,21 @@ You can turn off **Enhanced Notifications** as follows:
 - Create a new REG_DWORD registry setting named **DisableEnhancedNotifications** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\Reporting** and enter the decimal value **1**.
 
 
-### <a href="" id="bkmk-defender-smartscreen"></a>24.1 Microsoft Defender Antivirus SmartScreen
+### <a href="" id="bkmk-defender-smartscreen"></a>24.1 Microsoft Defender SmartScreen
 
-To disable Microsoft Defender Antivirus SmartScreen:
+To disable Microsoft Defender SmartScreen:
 
 In Group Policy, configure:
 
-- **Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus SmartScreen > Explorer > Configure Microsoft Defender Antivirus SmartScreen** to be **Disabled**
+- **Computer Configuration > Administrative Templates > Windows Components > Windows Defender SmartScreen > Explorer > Configure Windows Defender SmartScreen** to be **Disabled**
 
    -and-
 
-- **Computer Configuration > Administrative Templates > Windows Components > File Explorer > Configure Microsoft Defender Antivirus SmartScreen** : **Disable**
+- **Computer Configuration > Administrative Templates > Windows Components > File Explorer > Configure Windows Defender SmartScreen** : **Disable**
 
    -and-
 
-- **Computer Configuration > Administrative Templates > Windows Components > Microsoft Defender Antivirus SmartScreen > Explorer > Configure app install control** : **Enable**, and select **Turn off app recommendations**
+- **Computer Configuration > Administrative Templates > Windows Components > Windows Defender SmartScreen > Explorer > Configure app install control** : **Enable**, and select **Turn off app recommendations**
 
 -OR-
 
