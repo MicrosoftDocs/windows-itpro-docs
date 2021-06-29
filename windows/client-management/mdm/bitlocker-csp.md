@@ -172,6 +172,10 @@ If you want to disable this policy, use the following SyncML:
     </SyncBody>
 </SyncML>        
 ```
+
+> [!NOTE]
+> Currently only used space encryption is supported when using this CSP. 
+
 <!--/Policy-->
 <!--Policy-->
 <a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType**
