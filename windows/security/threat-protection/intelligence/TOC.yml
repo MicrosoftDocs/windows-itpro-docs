@@ -18,7 +18,7 @@
             - name: Phishing trends and techniques
               href: phishing-trends.md
         - name: Ransomware
-          href: ransomware-malware.md
+          href: /security/compass/human-operated-ransomware
         - name: Rootkits
           href: rootkits-malware.md
         - name: Supply chain attacks
