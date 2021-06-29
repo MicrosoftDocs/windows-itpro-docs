@@ -25,6 +25,10 @@ eUICCs
 --------IsActive
 --------PPR1Allowed
 --------PPR1AlreadySet
+--------DownloadServers
+------------ServerName
+----------------DiscoveryState
+----------------AutoEnable
 --------Profiles
 ------------ICCID
 ----------------ServerName
