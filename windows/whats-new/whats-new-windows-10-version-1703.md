@@ -150,7 +150,7 @@ New features for Microsoft Defender AV in Windows 10, version 1703 include:
 
 In Windows 10, version 1607, we [invested heavily in helping to protect against ransomware](https://blogs.windows.com/business/2016/11/11/defending-against-ransomware-with-windows-10-anniversary-update/#UJlHc6SZ2Zm44jCt.97), and we continue that investment in version 1703 with [updated behavior monitoring and always-on real-time protection](/windows/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
-You can read more about ransomware mitigations and detection capability in Microsoft Defender AV in the [ransomware information topic](/windows/security/threat-protection/intelligence/ransomware-malware) and at the [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/).
+You can read more about ransomware mitigations and detection capability in Microsoft Defender AV in the [Microsoft Malware Protection Center blog](https://blogs.technet.microsoft.com/mmpc/category/research/ransomware/).
 
 ### Device Guard and Credential Guard
 
