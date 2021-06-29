@@ -1936,7 +1936,7 @@ For China releases of Windows 10 there is one additional Regkey to be set to pre
 
 ### <a href="" id="bkmk-clcp"></a>30. Cloud Clipboard
 
-Specifies whether clipboard items roam across devices. When this is allowed, an item copied to the clipboard is uploaded to the cloud so that other devices can access. Also, when this is allowed, a new clipboard item on the cloud is downloaded to a device so that user can paste on the device.
+Specifies whether clipboard items roam across devices. When this is allowed, an item copied to the clipboard is uploaded to the cloud so that other devices can access it. Clipboard items in the cloud can be downloaded and pasted across your Windows 10 devices.
 
 Most restricted value is 0.
 
