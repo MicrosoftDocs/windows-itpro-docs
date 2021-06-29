@@ -1035,9 +1035,7 @@ Additional lists:
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" />
-
 <a href="/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection">Only for mobile application management (MAM)</td>
-
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
