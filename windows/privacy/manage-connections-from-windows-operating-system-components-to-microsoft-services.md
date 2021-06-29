@@ -295,7 +295,7 @@ You can also apply the Group Policies using the following registry keys:
 > [!IMPORTANT]
 > Using the Group Policy editor these steps are required for all supported versions of Windows 10, however they are not required for devices running Windows 10, version 1607 or Windows Server 2016.
 
-1. Expand **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Microsoft Defender Antivirus Firewall with Advanced Security** &gt; **Microsoft Defender Antivirus Firewall with Advanced Security - &lt;LDAP name&gt;**, and then click **Outbound Rules**.
+1. Expand **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Windows Defender Firewall with Advanced Security** &gt; **Windows Defender Firewall with Advanced Security - &lt;LDAP name&gt;**, and then click **Outbound Rules**.
 
 2. Right-click **Outbound Rules**, and then click **New Rule**. The **New Outbound Rule Wizard** starts.
 
@@ -427,7 +427,7 @@ To turn off Insider Preview builds for Windows 10:
 | Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | Choose whether an employee can configure enhanced suggestions, which are presented to the employee as they type in the Address Bar. <br /> **Set Value to: Disabled**|
 | Turn off the auto-complete feature for web addresses | Choose whether auto-complete suggests possible matches when employees are typing web address in the Address Bar. <br /> **Set Value to: Enabled** </br> You can also turn this off in the UI by clearing the <strong>Internet Options</strong> &gt; **Advanced** &gt; **Use inline AutoComplete in the Internet Explorer Address Bar and Open Dialog** check box.|
 | Turn off browser geolocation | Choose whether websites can request location data from Internet Explorer. <br /> **Set Value to: Enabled**|
-| Prevent managing Microsoft Defender Antivirus SmartScreen | Choose whether employees can manage the Microsoft Defender Antivirus SmartScreen in Internet Explorer. <br /> **Set Value to: Enabled** and then set **Select Microsoft Defender Antivirus SmartScreen mode** to **Off**.|
+| Prevent managing Microsoft Defender SmartScreen | Choose whether employees can manage the Microsoft Defender SmartScreen in Internet Explorer. <br /> **Set Value to: Enabled** and then set **Select Windows Defender SmartScreen mode** to **Off**.|
 
 
 | Registry Key                                         | Registry path                                                                                       |
@@ -436,7 +436,7 @@ To turn off Insider Preview builds for Windows 10:
 | Allow Microsoft services to provide enhanced suggestions as the user types in the Address Bar | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer<br />REG_DWORD: AllowServicePoweredQSA <br />**Set Value to: 0**|
 | Turn off the auto-complete feature for web addresses |HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\CurrentVersion\\Explorer\\AutoComplete<br/>REG_SZ: AutoSuggest <br />Set Value to: **no** |
 | Turn off browser geolocation | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\Geolocation<br/>REG_DWORD: PolicyDisableGeolocation <br />**Set Value to: 1** |
-| Prevent managing Microsoft Defender Antivirus SmartScreen | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter<br/>REG_DWORD: EnabledV9 <br />**Set Value to: 0** |
+| Prevent managing Microsoft Defender SmartScreen | HKLM\\SOFTWARE\\Policies\\Microsoft\\Internet Explorer\\PhishingFilter<br/>REG_DWORD: EnabledV9 <br />**Set Value to: 0** |
 
 There are more Group Policy objects that are used by Internet Explorer:
 
@@ -573,7 +573,7 @@ Find the Microsoft Edge Group Policy objects under **Computer Configuration** &g
 | Configure Do Not Track         | Choose whether employees can send Do Not Track headers.<br /> **Set to Enabled**                     |
 | Configure Password Manager                            | Choose whether employees can save passwords locally on their devices. <br /> **Set to Disabled**       |
 | Configure search suggestions in Address Bar              | Choose whether the Address Bar shows search suggestions. <br /> **Set to Disabled**                    |
-| Configure Microsoft Defender Antivirus SmartScreen (Windows 10, version 1703)               | Choose whether Microsoft Defender Antivirus SmartScreen is turned on or off. <br /> **Set to Disabled**                            |
+| Configure Microsoft Defender SmartScreen (Windows 10, version 1703)               | Choose whether Microsoft Defender SmartScreen is turned on or off. <br /> **Set to Disabled**                            |
 | Allow web content on New Tab page                     | Choose whether a new tab page appears. <br /> **Set to Disabled**                                     |
 | Configure Start pages                       | Choose the Start page for domain-joined devices. <br /> **Enabled** and **Set this to <<about:blank>>**         |
 | Prevent the First Run webpage from opening on Microsoft Edge                       | Choose whether employees see the First Run webpage. <br /> **Set to: Enable**        |
@@ -589,7 +589,7 @@ Alternatively, you can configure the following Registry keys as described:
 | Configure Do Not Track   | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_DWORD name: DoNotTrack<br/> REG_DWORD: **1** |
 | Configure Password Manager | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main<br/>REG_SZ name: FormSuggest Passwords<br /> REG_SZ: **No** |
 | Configure search suggestions in Address Bar | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\SearchScopes<br/>REG_DWORD name: ShowSearchSuggestionsGlobal <br />Value: **0**|
-| Configure Microsoft Defender Antivirus SmartScreen (Windows 10, version 1703) | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter<br/>REG_DWORD name: EnabledV9 <br/>Value: **0** |
+| Configure Microsoft Defender SmartScreen (Windows 10, version 1703) | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\PhishingFilter<br/>REG_DWORD name: EnabledV9 <br/>Value: **0** |
 | Allow web content on New Tab page  | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\ServiceUI<br/>REG_DWORD name: AllowWebContentOnNewTabPage <br/>Value: **0** |
 | Configure corporate Home pages | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Internet Settings<br/>REG_SZ name: ProvisionedHomePages <br/>Value: **<<about:blank>>**|
 | Prevent the First Run webpage from opening on Microsoft Edge | HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\MicrosoftEdge\\Main <br>REG_DWORD name: PreventFirstRunPage <br/>Value: **1**|
