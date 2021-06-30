@@ -2573,16 +2573,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### ADMX_NetworkListManager policies  
-
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-networklistmanager.md#admx-networklistmanager-allowedtlsauthenticationendpoints" id="admx-networklistmanager-allowedtlsauthenticationendpoints">ADMX_NetworkListManager/AllowedTlsAuthenticationEndpoints</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-networklistmanager.md#admx-networklistmanager-configuredtlsauthenticationnetworkname" id="admx-networklistmanager-configuredtlsauthenticationnetworkname">ADMX_NetworkListManager_ConfiguredTLSAuthenticationNetworkName</a>
-  </dd>
-
 ### ADMX_OfflineFiles policies
 
 <dd>
@@ -7075,6 +7065,18 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-networkisolation.md#networkisolation-neutralresources" id="networkisolation-neutralresources">NetworkIsolation/NeutralResources</a>
   </dd>
+</dl>
+
+### NetworkListManager policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-networklistmanager.md#networklistmanager-allowedtlsauthenticationendpoints" id="networklistmanager-allowedtlsauthenticationendpoints">NetworkListManager/AllowedTlsAuthenticationEndpoints</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-networklistmanager.md#networklistmanager-configuredtlsauthenticationnetworkname" id="networklistmanager-configuredtlsauthenticationnetworkname">NetworkListManager/ConfiguredTLSAuthenticationNetworkName</a>
+  </dd>
+  <dd>
 </dl>
 
 ### Notifications policies
