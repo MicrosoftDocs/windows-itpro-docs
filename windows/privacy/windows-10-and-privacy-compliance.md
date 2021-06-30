@@ -65,7 +65,7 @@ The following table provides an overview of the Windows 10 privacy settings pres
 An administrator can also use the Diagnostic Data Viewer for PowerShell module to view the diagnostic data collected from the device instead of using the Diagnostic Data Viewer UI. The [Diagnostic Data Viewer for PowerShell Overview](microsoft-diagnosticdataviewer.md) provides further information.
 
 > [!Note]
-> If the Windows diagnostic data processor configuration is enabled, IT administrators should use the admin portal to fulfill data subject requests to access or export Windows diagnostic data associated with a particular user’s use of a device. See [The process for exercising data subject rights](#3-the-process-for-exercising-data-subject-rights).
+> If the Windows diagnostic data processor configuration is enabled, IT administrators should use the admin portal to fulfill data subject requests to access or export Windows diagnostic data associated with a particular user’s device usage. See [The process for exercising data subject rights](#3-the-process-for-exercising-data-subject-rights).
 
 ## 2. Windows 10 data collection management
 
@@ -134,7 +134,6 @@ For more information, see [Manage connections from Windows operating system comp
 An organization may want to minimize the amount of data sent back to Microsoft or shared with Microsoft apps by managing the connections and configuring additional settings on their devices. Similar to [Windows security baselines](/windows/security/threat-protection/windows-security-baselines), Microsoft has released a limited functionality baseline focused on configuring settings to minimize the data sent back to Microsoft. However, the functionality of the device could be impacted by applying these settings. The [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) article provides details on how to apply the baseline, along with the full list of settings covered in the baseline and the functionality that would be impacted. Administrators that don’t want to apply the baseline can still find details on how to configure each setting individually to find the right balance between data sharing and impact to functionality for their organization.
 
 >[!IMPORTANT]
-
 > - We recommend that you fully test any modifications to these settings before deploying them in your organization.
 > - We also recommend that if you plan to enable the Windows diagnostic data processor configuration, adjust the limited configuration baseline before deploying to ensure the Windows diagnostic setting is not turned off.
 
