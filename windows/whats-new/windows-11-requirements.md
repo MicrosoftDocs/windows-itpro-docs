@@ -19,7 +19,7 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**
 
--   Windows 11
+- Windows 11
 
 This article lists the system requirements for Windows 11. Windows 11 is also supported on a virtual machine (VM). 
 
