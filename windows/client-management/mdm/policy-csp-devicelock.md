@@ -757,7 +757,7 @@ PIN enforces the following behavior for desktop and mobile devices:
 -   1 - Digits only
 -   2 - Digits and lowercase letters are required
 -   3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 
--   4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop.
+-   4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop or Hololens.
 
 The default value is 1. The following list shows the supported values and actual enforced values:
 
