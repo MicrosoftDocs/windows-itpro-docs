@@ -600,7 +600,7 @@ Alternatively, you can configure the following Registry keys as described:
 
 For a complete list of the Microsoft Edge policies, see [Group Policy and Mobile Device Management (MDM) settings for Microsoft Edge](/microsoft-edge/deploy/available-policies). 
 
-> [!Important]
+> [!IMPORTANT]
 > - The following settings are applicable to Microsoft Edge version 77 or later. 
 > - For details on supported Operating Systems, see [Microsoft Edge supported Operating Systems](/deployedge/microsoft-edge-supported-operating-systems).
 > - These policies require the Microsoft Edge administrative templates to be applied. For more information on administrative templates for Microsoft Edge, see [Configure Microsoft Edge policy settings on Windows](/deployedge/configure-microsoft-edge).
