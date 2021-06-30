@@ -172,11 +172,15 @@ If you want to disable this policy, use the following SyncML:
     </SyncBody>
 </SyncML>        
 ```
+
+> [!NOTE]
+> Currently only used space encryption is supported when using this CSP. 
+
 <!--/Policy-->
 <!--Policy-->
 <a href="" id="encryptionmethodbydrivetype"></a>**EncryptionMethodByDriveType**
 <!--Description-->
-Allows you to set the default encryption method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system, and recovery partitions are skipped from encryption. This setting is a direct mapping to the Bitlocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)".
+Allows you to set the default encryption method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system, and recovery partitions are skipped from encryption. This setting is a direct mapping to the BitLocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)".
 <!--/Description-->
 <!--SupportedValues-->
 <table>
@@ -204,7 +208,7 @@ ADMX Info:
 <ul>
 <li>GP English name: <em>Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)</em></li>
 <li>GP name: <em>EncryptionMethodWithXts_Name</em></li>
-<li>GP path: <em>Windows Components/Bitlocker Drive Encryption</em></li>
+<li>GP path: <em>Windows Components/BitLocker Drive Encryption</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
@@ -260,7 +264,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="systemdrivesrequirestartupauthentication"></a>**SystemDrivesRequireStartupAuthentication**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy "Require additional authentication at startup".
+This setting is a direct mapping to the BitLocker Group Policy "Require additional authentication at startup".
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -289,7 +293,7 @@ ADMX Info:
 <ul>
 <li>GP English name: <em>Require additional authentication at startup</em></li>
 <li>GP name: <em>ConfigureAdvancedStartup_Name</em></li>
-<li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Operating System Drives</em></li>
+<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
@@ -368,7 +372,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="systemdrivesminimumpinlength"></a>**SystemDrivesMinimumPINLength**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy "Configure minimum PIN length for startup".
+This setting is a direct mapping to the BitLocker Group Policy "Configure minimum PIN length for startup".
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -397,7 +401,7 @@ ADMX Info:
 <ul>
 <li>GP English name:<em>Configure minimum PIN length for startup</em></li>
 <li>GP name: <em>MinimumPINLength_Name</em></li>
-<li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Operating System Drives</em></li>
+<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
@@ -444,7 +448,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="systemdrivesrecoverymessage"></a>**SystemDrivesRecoveryMessage** 
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy "Configure pre-boot recovery message and URL"
+This setting is a direct mapping to the BitLocker Group Policy "Configure pre-boot recovery message and URL"
 (PrebootRecoveryInfo_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
@@ -474,7 +478,7 @@ ADMX Info:
 <ul>
 <li>GP English name: <em>Configure pre-boot recovery message and URL</em></li>
 <li>GP name: <em>PrebootRecoveryInfo_Name</em></li>
-<li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Operating System Drives</em></li>
+<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
@@ -534,7 +538,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="systemdrivesrecoveryoptions"></a>**SystemDrivesRecoveryOptions**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLocker-protected operating system drives can be recovered" (OSRecoveryUsage_Name).
+This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLocker-protected operating system drives can be recovered" (OSRecoveryUsage_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -563,7 +567,7 @@ ADMX Info:
 <ul>
 <li>GP English name: <em>Choose how BitLocker-protected operating system drives can be recovered</em></li>
 <li>GP name: <em>OSRecoveryUsage_Name</em></li>
-<li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Operating System Drives</em></li>
+<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
@@ -631,7 +635,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="fixeddrivesrecoveryoptions"></a>**FixedDrivesRecoveryOptions**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy "Choose how BitLocker-protected fixed drives can be recovered" ().
+This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLocker-protected fixed drives can be recovered" ().
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -660,7 +664,7 @@ ADMX Info:
 <ul>
 <li>GP English name: <em>Choose how BitLocker-protected fixed drives can be recovered</em></li>
 <li>GP name: <em>FDVRecoveryUsage_Name</em></li>
-<li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Fixed Drives</em></li>
+<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Fixed Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
@@ -737,7 +741,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="fixeddrivesrequireencryption"></a>**FixedDrivesRequireEncryption**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy "Deny write access to fixed drives not protected by BitLocker" (FDVDenyWriteAccess_Name).
+This setting is a direct mapping to the BitLocker Group Policy "Deny write access to fixed drives not protected by BitLocker" (FDVDenyWriteAccess_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -766,7 +770,7 @@ ADMX Info:
 <ul>
 <li>GP English name: <em>Deny write access to fixed drives not protected by BitLocker</em></li>
 <li>GP name: <em>FDVDenyWriteAccess_Name</em></li>
-<li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Fixed Drives</em></li>
+<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Fixed Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
@@ -806,7 +810,7 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--Policy-->
 <a href="" id="removabledrivesrequireencryption"></a>**RemovableDrivesRequireEncryption**  
 <!--Description-->
-This setting is a direct mapping to the Bitlocker Group Policy "Deny write access to removable drives not protected by BitLocker" (RDVDenyWriteAccess_Name).
+This setting is a direct mapping to the BitLocker Group Policy "Deny write access to removable drives not protected by BitLocker" (RDVDenyWriteAccess_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
 <table>
@@ -835,7 +839,7 @@ ADMX Info:
 <ul>
 <li>GP English name: <em>Deny write access to removable drives not protected by BitLocker</em></li>
 <li>GP name: <em>RDVDenyWriteAccess_Name</em></li>
-<li>GP path: <em>Windows Components/Bitlocker Drive Encryption/Removeable Drives</em></li>
+<li>GP path: <em>Windows Components/BitLocker Drive Encryption/Removeable Drives</em></li>
 <li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
