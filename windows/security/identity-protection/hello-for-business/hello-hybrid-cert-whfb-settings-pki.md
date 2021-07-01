@@ -193,7 +193,7 @@ Sign-in to a certificate authority or management workstation with _Domain Admin 
 
 10. On the **Request Handling** tab, select the **Renew with same key** check box.
 
-11. On the **Security** tab, click **Add**. Type **Window Hello for Business Users** in the **Enter the object names to select** text box and click **OK**.
+11. On the **Security** tab, click **Add**. Type **Windows Hello for Business Users** in the **Enter the object names to select** text box and click **OK**.
 
 12. Click the **Windows Hello for Business Users** from the **Group or users names** list. In the **Permissions for Windows Hello for Business Users** section, select the **Allow** check box for the **Read**, **Enroll**, and **AutoEnroll** permissions. Excluding the **Windows Hello for Business Users** group, clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other entries in the **Group or users names** section if the check boxes are not already cleared. Click **OK**. 
 
