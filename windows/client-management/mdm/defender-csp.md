@@ -604,10 +604,11 @@ More details:
 - [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
 
 <a href="" id="configuration-disablegradualrelease"></a>**Configuration/DisableGradualRelease**
-Enable this policy to disable gradual rollout of monthly and daily Defender updates.
-Devices will be offered all Defender updates after the gradual release cycle completes. Best for datacenter machines that only receive limited updates.
+Enable this policy to disable gradual rollout of monthly and daily Microsoft Defender updates.
+Devices will be offered all Microsoft Defender updates after the gradual release cycle completes. This is best for datacenters that only receive limited updates.
 
-Note: This setting applies to both monthly as well as daily Defender updates and will override any previously configured channel selections for platform and engine updates.
+> [!NOTE]
+> This setting applies to both monthly as well as daily Microsoft Defender updates and will override any previously configured channel selections for platform and engine updates.
 
 If you disable or do not configure this policy, the device will remain in Current Channel (Default) unless specified otherwise in specific channels for platform and engine updates. Stay up to date automatically during the gradual release cycle. Suitable for most devices.
 
