@@ -29,7 +29,7 @@ Applies to:
 
 At Microsoft, we are committed to data privacy across all our products and services. With this guide, we provide administrators and compliance professionals with data privacy considerations for Windows 10.
 
-Microsoft collects data through multiple interactions with users of Windows 10 devices. This information can contain personal data that may be used to provide, secure, and improve Windows 10 and our connected experiences. To help users and organizations control the collection of personal data, Windows 10 provides comprehensive transparency features, settings choices, controls, and support for data subject requests, all of which are detailed in this article.
+Microsoft collects data through multiple interactions with users of Windows 10 devices. This information can contain personal data that may be used to provide, secure, and improve Windows 10 services. To help users and organizations control the collection of personal data, Windows 10 provides comprehensive transparency features, settings choices, controls, and support for data subject requests, all of which are detailed in this article.
 
 This information allows administrators and compliance professionals to work together to better manage personal data privacy considerations and related regulations, such as the General Data Protection Regulation (GDPR)
 
@@ -82,7 +82,7 @@ Administrators can configure and control privacy settings across their organizat
 The following table provides an overview of the privacy settings discussed earlier in this document with details on how to configure these policies. The table also provides information on what the default value would be for each of these privacy settings if you do not manage the setting by using policy and suppress the Out-of-box Experience (OOBE) during device setup. If you’re interested in minimizing data collection, we also provide the recommended value to set.
 
 > [!NOTE]
-> This is not a complete list of settings that involve connecting to Microsoft connected experiences. For a more detailed list, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
+> This is not a complete list of settings that involve connecting to Microsoft services. For a more detailed list, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
 
 | Feature/Setting | GP/MDM Documentation | Default State if the Setup experience is suppressed | State to stop/minimize data collection |
 |---|---|---|---|
@@ -113,21 +113,17 @@ You can use the following articles to learn more about Autopilot and how to use 
 - [Overview of Windows Autopilot](/windows/deployment/windows-Autopilot/windows-Autopilot)
 - [Windows Autopilot deployment process](/windows/deployment/windows-Autopilot/deployment-process)
 
-#### _2.3.2 Windows 10 connected experiences and essential services_
+#### _2.3.2 Managing connections from Windows components to Microsoft services_
 
-Windows includes features that connect to the internet to provide enhanced experiences and additional service based capabilities. These are called “connected experiences”. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure.
+Administrators can manage the data sent from their organization to Microsoft by configuring settings associated with the functionality provided by Windows components.
 
-Connected experiences that are critical to the proper functioning of Windows are called “essential services”. For example, the Windows licensing service confirms that you are properly licensed to use Windows.
+For more details, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). This topic includes the different methods available on how to configure each setting, the impact to functionality, and which versions of Windows that are applicable.
 
-Windows connected experiences and essential services transfer data to Microsoft network endpoints, and while an administrator may want to block these endpoints for their organization to meet specific compliance objectives, we recommend that you carefully assess the impact of turning off essential services.
+#### _2.3.3 Managing Windows 10 connections_
 
-The article [Manage connection endpoints for Windows 10, version 20H2](/windows/privacy/manage-windows-20h2-endpoints) provides a list of endpoints for the latest Windows 10 release, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found under the **Manage Windows 10 connection endpoints** section of the left-hand navigation menu.
+Some Windows components, apps, and related services transfer data to Microsoft network endpoints. An administrator may want to block these endpoints for their organization to meet their specific compliance objectives.
 
-#### _2.3.3 Managing connections from Windows connected experiences to Microsoft services_
-
-Administrators can manage the data sent from their organization to Microsoft by configuring settings associated with the functionality provided by Windows connected experiences and essential services.
-
-For more information, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). This topic includes the different methods available on how to configure each setting, the impact to functionality, and which versions of Windows that are applicable.
+[Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md) provides a list of endpoints for the latest Windows 10 release, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the Windows Privacy site under the **Manage Windows 10 connection endpoints** section of the left-hand navigation menu.
 
 #### _2.3.4 Limited functionality baseline_
 
