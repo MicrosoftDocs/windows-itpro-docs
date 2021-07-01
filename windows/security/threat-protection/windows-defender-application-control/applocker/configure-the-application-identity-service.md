@@ -46,7 +46,7 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 2.  Click the **Services** tab, right-click **AppIDSvc**, and then click **Start Service**.
 3.  Verify that the status for the Application Identity service is **Running**.
 
-Starting with Windows 10, the Application Identity service is now a protected process. Because of this, you can no longer manually set the service **Startup type** to **Automatic** by using the Sevices snap-in. Try either of these methods instead:
+Starting with Windows 10, the Application Identity service is now a protected process. Because of this, you can no longer manually set the service **Startup type** to **Automatic** by using the Services snap-in. Try either of these methods instead:
 
 - Open an elevated command prompt or PowerShell session and type:
 
