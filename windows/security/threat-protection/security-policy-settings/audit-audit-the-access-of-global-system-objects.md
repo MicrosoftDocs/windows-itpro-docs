@@ -79,7 +79,7 @@ All auditing capabilities are integrated in Group Policy. You can configure, dep
 To audit attempts to access global system objects, you can use one of two security audit policy settings:
 
 -   [Audit Kernel Object](../auditing/audit-kernel-object.md) in Advanced Security Audit Policy Settings\\Object Access
--   [Audit object access](../auditing/basic-audit-object-access.md) under Security Settings\\Local Policies\\Audit Policy
+-   [Audit Object Access](../auditing/basic-audit-object-access.md) under Security Settings\\Local Policies\\Audit Policy
 
 If possible, use the Advanced Security Audit Policy option to reduce the number of unrelated audit events that you generate.
 
@@ -92,7 +92,7 @@ If the [Audit Kernel Object](../auditing/audit-kernel-object.md) setting is conf
 | 4661 | A handle to an object was requested. |  
 | 4663 | An attempt was made to access an object. |  
  
-If the [Audit Kernel Object](../auditing/audit-kernel-object.md) setting is configured, the following events are generated:
+If the [Audit Object Access](../auditing/basic-audit-object-access.md) setting is configured, the following events are generated:
 
 | Event ID | Event message |
 | - | - |
