@@ -42,7 +42,7 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 > - To restrict a device effectively (first time or subsequently), it is recommended to apply the Restricted Traffic Limited Functionality Baseline settings package in offline mode.
 > - During update or upgrade of Windows, egress traffic may occur.
 
-To use Microsoft Intune cloud-based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](./manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm).
+To use Microsoft Intune cloud-based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm.md).
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting **telmhelp**@**microsoft.com**.
 
@@ -1293,7 +1293,7 @@ To turn off **Let your apps use your trusted devices (hardware you've already co
 
 ### <a href="" id="bkmk-priv-feedback"></a>18.16 Feedback & diagnostics
 
-In the **Feedback & Diagnostics** area, you can choose how often you're asked for feedback and how much diagnostic and usage information is sent to Microsoft. If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization).
+In the **Feedback & Diagnostics** area, you can choose how often you're asked for feedback and how much diagnostic and usage information is sent to Microsoft. If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
 To change how frequently **Windows should ask for my feedback**:
 
