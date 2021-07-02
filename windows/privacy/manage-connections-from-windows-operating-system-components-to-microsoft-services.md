@@ -42,7 +42,7 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 > - To restrict a device effectively (first time or subsequently), it is recommended to apply the Restricted Traffic Limited Functionality Baseline settings package in offline mode.
 > - During update or upgrade of Windows, egress traffic may occur.
 
-To use Microsoft Intune cloud-based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](./manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm.md).
+To use Microsoft Intune cloud-based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](./manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm).
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting **telmhelp**@**microsoft.com**.
 
@@ -1293,7 +1293,7 @@ To turn off **Let your apps use your trusted devices (hardware you've already co
 
 ### <a href="" id="bkmk-priv-feedback"></a>18.16 Feedback & diagnostics
 
-In the **Feedback & Diagnostics** area, you can choose how often you're asked for feedback and how much diagnostic and usage information is sent to Microsoft. If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
+In the **Feedback & Diagnostics** area, you can choose how often you're asked for feedback and how much diagnostic and usage information is sent to Microsoft. If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization).
 
 To change how frequently **Windows should ask for my feedback**:
 
@@ -1876,11 +1876,9 @@ For a comprehensive list of Delivery Optimization Policies, see [Delivery Optimi
 
 - Create a new REG_DWORD registry setting named **DODownloadMode** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\DeliveryOptimization** to a value of **99 (Ninety-nine)**.
 
-
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
 
-For IT Professionals, information about Delivery Optimization is available here: [Delivery Optimization for Windows 10 updates]
-(https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
+For IT Professionals, information about Delivery Optimization is available here: [Delivery Optimization for Windows 10 updates](/windows/deployment/update/waas-delivery-optimization).
 
 ### <a href="" id="bkmk-wu"></a>29. Windows Update
 
@@ -1948,7 +1946,8 @@ ADMX Info:
 - GP ADMX file name: OSPolicy.admx<br>
 
 The following list shows the supported values:<br>
-0 – Not allowed. 1 (default) – Allowed.<br>
+ - 0 – Not allowed<br>
+ - 1 (default) – Allowed<br>
 
 ### <a href="" id="bkmk-svccfg"></a>31. Services Configuration
 
