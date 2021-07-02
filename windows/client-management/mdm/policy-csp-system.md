@@ -216,7 +216,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms.
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
 
 To enable this behavior, you must complete two steps:
 
@@ -264,7 +264,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID policy settings, enables organizations to configure the device so that Microsoft is the processor for Windows diagnostic data collected from the device, subject to the Product Terms.
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID policy settings, enables organizations to configure the device so that Microsoft is the processor for Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
 
 To enable this behavior, you must complete three steps:
 
@@ -303,7 +303,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -372,7 +372,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -428,7 +428,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -489,7 +489,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -564,7 +564,7 @@ To verify if System/AllowFontProviders is set to true:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -656,7 +656,7 @@ If you disable this policy setting, devices may not appear in Microsoft Managed 
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -712,7 +712,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -841,7 +841,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -867,7 +867,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID policy settings, enables organizations to configure the device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms.
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID policy settings, enables organizations to configure the device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
 
 To enable this behavior, you must complete three steps:
 
@@ -915,7 +915,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -964,7 +964,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the Product Terms. 
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
 
 To enable this behavior, you must complete three steps:
 
@@ -993,7 +993,7 @@ If you disable or do not configure this policy setting, devices enrolled to the 
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1065,7 +1065,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1135,7 +1135,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1198,7 +1198,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1266,7 +1266,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1333,7 +1333,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1400,7 +1400,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1456,7 +1456,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1534,7 +1534,7 @@ To validate on Desktop, do the following:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" />  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1606,7 +1606,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1660,7 +1660,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1730,7 +1730,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" />  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1788,7 +1788,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
