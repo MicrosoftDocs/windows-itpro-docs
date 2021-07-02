@@ -98,7 +98,7 @@ If the [Audit Object Access](../auditing/basic-audit-object-access.md) setting i
 | - | - |
 | 560 | Access was granted to an already existing object. | 
 | 562 | A handle to an object was closed. | 
-| 563 | An attempt was made to open an object with the intent to delete it.<br>**Note: **This is used by file systems when the FILE_DELETE_ON_CLOSE flag is specified in Createfile() |
+| 563 | An attempt was made to open an object with the intent to delete it.<br>**Note:** This is used by file systems when the FILE_DELETE_ON_CLOSE flag is specified in Createfile() |
 | 564 | A protected object was deleted. |
 | 565 | Access was granted to an already existing object type. | 
 | 567 | A permission associated with a handle was used.<br>**Note:**  A handle is created with certain granted permissions (Read, Write, and so on). When the handle is used, up to one audit is generated for each of the permissions that was used. |
