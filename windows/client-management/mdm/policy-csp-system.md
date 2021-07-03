@@ -776,15 +776,15 @@ The following list shows the supported values for Windows 10 version 1809 and ol
 
 - 0 – **Off (Security)** This turns Windows diagnostic data off.
 
-      > [!NOTE]
-      > This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), HoloLens 2, and Windows Server 2016 (and later versions). Using this setting on other devices editions of Windows is equivalent to setting the value of 1.
+    > [!NOTE]
+    > This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), HoloLens 2, and Windows Server 2016 (and later versions). Using this setting on other devices editions of Windows is equivalent to setting the value of 1.
 
 - 1 – **Required (Basic)** Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date.
 
 - 2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows apps are used, how they perform, and advanced reliability data, such as limited crash dumps.
 
-      > [!NOTE]
-      > **Enhanced** is no longer an option for Windows Holographic, version 21H1.
+    > [!NOTE]
+    > **Enhanced** is no longer an option for Windows Holographic, version 21H1.
 
 - 3 – **Optional (Full)** Sends the same data as a value of 2, plus additional data necessary to identify and fix problems with devices such as enhanced error logs.
 
