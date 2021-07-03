@@ -634,9 +634,8 @@ You can turn off NCSI by doing one of the following:
 
 - **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Internet Communication Management** &gt; **Internet Communication Settings** &gt; **Turn off Windows Network Connectivity Status Indicator active tests**
 
-
-> [!NOTE]
-> After you apply this policy, you must restart the device for the policy setting to take effect.
+  > [!NOTE]
+  > After you apply this policy, you must restart the device for the policy setting to take effect.
 
 -or-
 
@@ -692,8 +691,9 @@ To remove the News app:
 - Right-click the app in Start, and then click **Uninstall**.
 
   -or-
-> [!IMPORTANT]
-> If you have any issues with these commands, restart the system and try the scripts again.
+
+  > [!IMPORTANT]
+  > If you have any issues with the following commands, restart the system and try the scripts again.
 
 - Remove the app for new user accounts. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxProvisionedPackage -Online | Where-Object {$\_.PackageName -Like "Microsoft.BingNews"} | ForEach-Object { Remove-AppxProvisionedPackage -Online -PackageName $\_.PackageName}**
 
@@ -863,10 +863,10 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 To turn off **Let apps use advertising ID to make ads more interesting to you based on your app usage (turning this off will reset your ID)**:
 
-> [!NOTE]
-> When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
-
 - Turn off the feature in the UI.
+
+  > [!NOTE]
+  > When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
 
   -or-
 
@@ -900,10 +900,10 @@ To turn off **Let Windows track app launches to improve Start and search results
 
 To turn off **Let apps use my advertising ID for experiences across apps (turning this off will reset your ID)**:
 
-> [!NOTE]
-> When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
-
 - Turn off the feature in the UI.
+
+  > [!NOTE]
+  > When you turn this feature off in the UI, it turns off the advertising ID, not just resets it.
 
   -or-
 
@@ -1295,11 +1295,10 @@ To turn off **Let your apps use your trusted devices (hardware you've already co
 
 In the **Feedback & Diagnostics** area, you can choose how often you're asked for feedback and how much diagnostic and usage information is sent to Microsoft. If you're looking for content on what each diagnostic data level means and how to configure it in your organization, see [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md).
 
-To change how frequently **Windows should ask for my feedback**:
-
 > [!NOTE]
 > Feedback frequency only applies to user-generated feedback, not diagnostic and usage data sent from the device.
 
+To change how frequently **Windows should ask for my feedback**:
 
 - To change from **Automatically (Recommended)**, use the drop-down list in the UI.
 
@@ -1579,10 +1578,10 @@ You can control if your settings are synchronized:
 
 To turn off Messaging cloud sync:
 
-> [!NOTE]
-> There is no Group Policy corresponding to this registry key.
-
 - Create a REG_DWORD registry setting named **CloudServiceSyncEnabled** in **HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Messaging** and set to a **value of 0 (zero)**.
+
+  > [!NOTE]
+  > There is no Group Policy corresponding to this registry key.
 
 ### <a href="" id="bkmk-teredo"></a>22. Teredo
 
@@ -1674,8 +1673,8 @@ You can turn off **Malicious Software Reporting Tool (MSRT) diagnostic data**:
 
 - Set the REG_DWORD value **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MRT\\DontReportInfectionInformation** to **1**.
 
-> [!NOTE]
-> There is no Group Policy to turn off the Malicious Software Reporting Tool diagnostic data.
+  > [!NOTE]
+  > There is no Group Policy to turn off the Malicious Software Reporting Tool diagnostic data.
 
 
 You can turn off **Enhanced Notifications** as follows:
