@@ -33,12 +33,12 @@ The tools that you use for core workloads during Windows 10 deployments can stil
 
 #### On-premises solutions
 
-- If you use Windows Server Update Service (WSUS), you will need to sync the new **Windows 11** product category. After you sync the product category, you will see Windows 11 offered as an option. If you would like to validate Windows 11 prior to release, you can sync the **Windows Insider Pre-release** category as well.
+- If you use [Windows Server Update Service (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus), you will need to sync the new **Windows 11** product category. After you sync the product category, you will see Windows 11 offered as an option. If you would like to validate Windows 11 prior to release, you can sync the **Windows Insider Pre-release** category as well.
 
   > [!NOTE]
   > During deployment, you will be prompted to agree to the End User License Agreement on behalf of your users. Additionally, you will not see an x86 option because Windows 11 is not supported on 32-bit architecture.
 
-- If you use Microsoft Endpoint Configuration Manager, you can sync the new **Windows 11** product category and begin upgrading eligible devices. If you would like to validate Windows 11 prior to release, you can sync the **Windows Insider Pre-release** category as well.  
+- If you use [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/), you can sync the new **Windows 11** product category and begin upgrading eligible devices. If you would like to validate Windows 11 prior to release, you can sync the **Windows Insider Pre-release** category as well.  
 
   > [!NOTE]
   > Configuration Manager will prompt you to accept the End User License Agreement on behalf of the users in your organization. 
