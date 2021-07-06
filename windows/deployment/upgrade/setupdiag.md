@@ -119,7 +119,7 @@ SetupDiag.exe /Output:C:\SetupDiag\Results.log
 The following example uses the /Output parameter to save results to a path name that contains a space:
 
 ```
-SetupDiag /Output:"C:\Tools\SetupDiag\SetupDiag Results\Results.log"
+SetupDiag /Output:"C:\SetupDiag\SetupDiag Results\Results.log"
 ```
 
 The following example specifies that SetupDiag is to run in offline mode, and to process the log files found in **D:\Temp\Logs\LogSet1**.
