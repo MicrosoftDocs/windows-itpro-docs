@@ -90,7 +90,7 @@ If you suspect that the machine is in a state of port exhaustion:
 
     ![Screenshot of event id 4231 in Event Viewer](images/tcp-ts-19.png)
 
-3. Collect a `netstat -anob output` from the server. The netstat output will show you a huge number of entries for TIME_WAIT state for a single PID.
+3. Collect a `netstat -anob` output from the server. The netstat output will show you a huge number of entries for TIME_WAIT state for a single PID.
 
     ![Screenshot of netstate command output](images/tcp-ts-20.png)
 
