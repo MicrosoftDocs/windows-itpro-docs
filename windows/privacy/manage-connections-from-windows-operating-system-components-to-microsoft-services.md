@@ -1888,7 +1888,7 @@ For a comprehensive list of Delivery Optimization Policies, see [Delivery Optimi
 For more info about Delivery Optimization in general, see [Windows Update Delivery Optimization: FAQ](https://go.microsoft.com/fwlink/p/?LinkId=730684).
 
 For IT Professionals, information about Delivery Optimization is available here: [Delivery Optimization for Windows 10 updates]
-(https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
+(/windows/deployment/update/waas-delivery-optimization).
 
 ### <a href="" id="bkmk-wu"></a>29. Windows Update
 
