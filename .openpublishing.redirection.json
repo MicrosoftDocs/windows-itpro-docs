@@ -18919,7 +18919,12 @@
       "source_path": "windows/security/threat-protection/device-control/device-control-report.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-report",
       "redirect_document_id": false
-    }, 
+    },
+    {
+      "source_path": "windows/privacy/deploy-data-processor-service-windows.md",
+      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_document_id": false
+    },
     {
       "source_path": "windows/security/threat-protection/intelligence/ransomware-malware.md",
       "redirect_url": "/security/compass/human-operated-ransomware",
@@ -18929,6 +18934,11 @@
       "source_path": "windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md",
       "redirect_url": "/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows",
       "redirect_document_id": false
-    }        
+    }, 
+    {
+      "source_path": "windows/privacy/data-processor-service-for-windows-enterprise-public-preview-terms.md",
+      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_document_id": false
+    }
 	    ]
 }
