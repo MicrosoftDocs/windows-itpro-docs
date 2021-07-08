@@ -29,7 +29,7 @@ Windows Defender Application Control (WDAC) can control what runs on Windows 10 
 
 ## Getting started with commdlets
 
-Some of the [SKUs](feature-availability.md) that support our PowerShell commandlets [(ConfigCI Module)](powershell/module/configci/?view=windowsserver2019-ps) support but do not have the module installed on the box. 
+Some of the [SKUs](feature-availability.md) that support our PowerShell commandlets [(ConfigCI Module)](/powershell/module/configci/?view=windowsserver2019-ps) support but do not have the module installed on the box. 
 
 **Steps to install the module:**
 - Install-Module "ConfigCI"
