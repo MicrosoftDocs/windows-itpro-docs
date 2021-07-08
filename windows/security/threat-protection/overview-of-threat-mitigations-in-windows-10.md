@@ -20,7 +20,7 @@ ms.technology: mde
 
 This topic provides an overview of some of the software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats. For information about related types of protection offered by Microsoft, see [Related topics](#related-topics).
 
-| **Section**  | **Contents** |
+|  Section   |  Contents  |
 |--------------|-------------------------|
 | [The security threat landscape](#threat-landscape) | Describes the current nature of the security threat landscape, and outlines how Windows 10 is designed to mitigate software exploits and similar threats.  |
 | [Windows 10 mitigations that you can configure](#windows-10-mitigations-that-you-can-configure) | Provides tables of configurable threat mitigations with links to more information. Product features such as Device Guard appear in [Table 1](#windows-10-mitigations-that-you-can-configure), and memory protection options such as Data Execution Prevention appear in [Table 2](#table-2). |
@@ -118,7 +118,7 @@ Data Execution Prevention (DEP) does exactly that, by substantially reducing the
 
 1. Open Task Manager: Press Ctrl+Alt+Del and select **Task Manager**, or search the Start screen.
 
-2.  Click **More Details** (if necessary), and then click the **Details** tab.
+2. Click **More Details** (if necessary), and then click the **Details** tab.
 
 3. Right-click any column heading, and then click **Select Columns**.
 
@@ -311,9 +311,9 @@ The following table lists EMET features in relation to Windows 10 features.
 <table>
 <thead>
 <tr class="header">
-<th><b>Specific EMET features</b></th>
-<th><b>How these EMET features map<br />
-to Windows 10 features</b></th>
+<th>Specific EMET features</th>
+<th>How these EMET features map<br />
+to Windows 10 features</th>
 </tr>
 </thead>
 <tbody>
