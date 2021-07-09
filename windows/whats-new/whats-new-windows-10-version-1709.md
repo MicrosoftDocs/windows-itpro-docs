@@ -52,7 +52,7 @@ WUfB now has additional controls available to manage Windows Insider Program enr
 
 ### Windows Insider Program for Business
 
-You can now register your Azure AD domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](/windows/deployment/update/waas-windows-insider-for-business#getting-started-with-windows-insider-program-for-business).
+You can now register your Azure AD domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](https://insider.windows.com/for-business).
 
 
 ## Administration
