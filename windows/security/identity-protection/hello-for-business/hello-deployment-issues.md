@@ -92,13 +92,10 @@ Level:         Error
 Keywords:      
 User:          SYSTEM
 Description:
-```
 
 The Kerberos client received a KDC certificate that does not have a matched domain name.
-    
- ```console
- Expected Domain Name: ad.contoso.com
- Error Code: 0xC000006D
+Expected Domain Name: ad.contoso.com
+Error Code: 0xC000006D
  ```
 
 ### Resolving On-premises Resource Access Issue with Third-Party CAs
