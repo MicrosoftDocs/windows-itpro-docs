@@ -74,7 +74,7 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 
 | Source process | Protocol | Destination |
 |:--------------:|:--------:|:------------|
-|  | HTTPS   | wildcard.twimg.com |
+|  | HTTPS   | `wildcard.twimg.com` |
 | svchost.exe |             | `oem.twimg.com/windows/tile.xml` |
 
 The following endpoint is used for Facebook updates.
@@ -93,7 +93,7 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 
 | Source process | Protocol | Destination |
 |:--------------:|:--------:|:------------|
-| WindowsApps\Microsoft.Windows.Photos | HTTPS | evoke-windowsservices-tas.msedge.net |
+| WindowsApps\Microsoft.Windows.Photos | HTTPS | `evoke-windowsservices-tas.msedge.net` |
 
 The following endpoint is used for Candy Crush Saga updates.
 To turn off traffic for this endpoint, either uninstall Candy Crush Saga or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore).
@@ -111,7 +111,7 @@ Additionally, the Microsoft Store won't be able to revoke malicious Store apps a
 
 | Source process | Protocol | Destination |
 |:--------------:|:--------:|:------------|
-| system32\AppHostRegistrationVerifier.exe | HTTPS | wallet.microsoft.com |
+| system32\AppHostRegistrationVerifier.exe | HTTPS | `wallet.microsoft.com` |
 
 The following endpoint is used by the Groove Music app for update HTTP handler status.
 If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-apps-for-websites), apps for websites won't work and customers who visit websites (such as mediaredirect.microsoft.com) that are registered with their associated app (such as Groove Music) will stay at the website and won't be able to directly launch the app.
@@ -332,7 +332,7 @@ If you turn off traffic for these endpoints, users won't be able to save documen
 
 | Source process | Protocol | Destination |
 |:--------------:|:--------:|:------------|
-| system32\Auth.Host.exe | HTTPS | outlook.office365.com |
+| system32\Auth.Host.exe | HTTPS | `outlook.office365.com` |
 
 The following endpoint is OfficeHub traffic used to get the metadata of Office apps. To turn off traffic for this endpoint, either uninstall the app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore). If you disable the Microsoft store, other Microsoft Store apps cannot be installed or updated. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.
 
