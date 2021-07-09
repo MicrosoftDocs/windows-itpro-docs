@@ -82,7 +82,8 @@ For more information, read [Guidelines for enabling smart card logon with third-
 
 This issue can be identified using network traces or Kerberos logging from the client. In the network trace, the client will fail to place a TGS_REQ request when a user attempts to access a resource. On the client, this can be observed in the Kerberos operation event log under **Application and Services/Microsoft/Windows/Security-Kerberos/Operational**. These logs are default disabled. The failure event for this case will include the following information:
 
-    Log Name:      Microsoft-Windows-Kerberos/Operational
+   ```console
+   Log Name:      Microsoft-Windows-Kerberos/Operational
     Source:        Microsoft-Windows-Security-Kerberos
     Event ID:      107
     GUID:          {98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1} 
@@ -91,6 +92,7 @@ This issue can be identified using network traces or Kerberos logging from the c
     Keywords:      
     User:          SYSTEM
     Description:
+    ```
 
     The Kerberos client received a KDC certificate that does not have a matched domain name.
     
