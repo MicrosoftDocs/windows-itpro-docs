@@ -146,6 +146,7 @@ AD FS running on Windows Server 2019 fails to complete device authentication pro
 
 The provisioning experience for Windows Hello for Business will launch if a set of prerequisite checks done by the client are successful. The result of the provisioningAdmin checks is available in event logs under Microsoft-Windows-User Device Registration. If provisioning is blocked because device authentication has not successfully occurred, there will be an event ID 362 in the logs that states that *User has successfully authenticated to the enterprise STS: No*.
 
+   ```console
     Log Name:      Microsoft-Windows-User Device Registration/Admin
     Source:        Microsoft-Windows-User Device Registration
     Date:          <Date and time>
@@ -169,11 +170,13 @@ The provisioning experience for Windows Hello for Business will launch if a set 
     User has successfully authenticated to the enterprise STS: No
     Certificate enrollment method: enrollment authority
     See https://go.microsoft.com/fwlink/?linkid=832647 for more details.
+    ```
 
 If a device has recently been joined to a domain, then there may be a delay before the device authentication occurs. If the failing state of this prerequisite check persists, then it can indicate an issue with the AD FS configuration.
 
 If this AD FS scope issue is present, event logs on the AD FS server will indicate an authentication failure from the client. This error will be logged in event logs under AD FS/Admin as event ID 1021 and the event will specify that the client is forbidden access to resource 'http<span>://schemas.microsoft.com/ws/2009/12/identityserver/selfscope</span>' with scope 'ugs':
 
+   ```console
     Log Name:      AD FS/Admin
     Source:        AD FS
     Date:          <Date and time>
@@ -190,6 +193,7 @@ If this AD FS scope issue is present, event logs on the AD FS server will indica
     Microsoft.IdentityServer.Web.Protocols.OAuth.Exceptions.OAuthUnauthorizedClientException: MSIS9368: Received invalid OAuth request. The client '38aa3b87-a06d-4817-b275-7a316988d93b' is forbidden to access the resource 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' with scope 'ugs'.
        at Microsoft.IdentityServer.Web.Protocols.OAuth.OAuthProtocolContext.ValidateScopes(String scopeParameter, String clientId, String relyingPartyId)
        at Microsoft.IdentityServer.Web.Protocols.OAuth.OAuthToken.OAuthJWTBearerRequestContext.ValidateCore()
+    ```
 
 ### Resolving Certificate Trust with AD FS 2019 Enrollment Issue
 
