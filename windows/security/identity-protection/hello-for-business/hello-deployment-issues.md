@@ -82,17 +82,17 @@ For more information, read [Guidelines for enabling smart card logon with third-
 
 This issue can be identified using network traces or Kerberos logging from the client. In the network trace, the client will fail to place a TGS_REQ request when a user attempts to access a resource. On the client, this can be observed in the Kerberos operation event log under **Application and Services/Microsoft/Windows/Security-Kerberos/Operational**. These logs are default disabled. The failure event for this case will include the following information:
 
-   ```console
-   Log Name:      Microsoft-Windows-Kerberos/Operational
-    Source:        Microsoft-Windows-Security-Kerberos
-    Event ID:      107
-    GUID:          {98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1} 
-    Task Category: None
-    Level:         Error
-    Keywords:      
-    User:          SYSTEM
-    Description:
-    ```
+```console
+Log Name:      Microsoft-Windows-Kerberos/Operational
+Source:        Microsoft-Windows-Security-Kerberos
+Event ID:      107
+GUID:          {98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1} 
+Task Category: None
+Level:         Error
+Keywords:      
+User:          SYSTEM
+Description:
+```
 
     The Kerberos client received a KDC certificate that does not have a matched domain name.
     
@@ -146,54 +146,54 @@ AD FS running on Windows Server 2019 fails to complete device authentication pro
 
 The provisioning experience for Windows Hello for Business will launch if a set of prerequisite checks done by the client are successful. The result of the provisioningAdmin checks is available in event logs under Microsoft-Windows-User Device Registration. If provisioning is blocked because device authentication has not successfully occurred, there will be an event ID 362 in the logs that states that *User has successfully authenticated to the enterprise STS: No*.
 
-   ```console
-    Log Name:      Microsoft-Windows-User Device Registration/Admin
-    Source:        Microsoft-Windows-User Device Registration
-    Date:          <Date and time>
-    Event ID:      362
-    Task Category: None
-    Level:         Warning
-    Keywords:     
-    User:          <User SID>
-    Computer:      <Computer name>
-    Description:
-    Windows Hello for Business provisioning will not be launched.
-    Device is AAD joined ( AADJ or DJ++ ): Yes
-    User has logged on with AAD credentials: Yes
-    Windows Hello for Business policy is enabled: Yes
-    Windows Hello for Business post-logon provisioning is enabled: Yes
-    Local computer meets Windows hello for business hardware requirements: Yes
-    User is not connected to the machine via Remote Desktop: Yes
-    User certificate for on premise auth policy is enabled: Yes
-    Enterprise user logon certificate enrollment endpoint is ready: Not Tested
-    Enterprise user logon certificate template is : No ( 1 : StateNoPolicy ) 
-    User has successfully authenticated to the enterprise STS: No
-    Certificate enrollment method: enrollment authority
-    See https://go.microsoft.com/fwlink/?linkid=832647 for more details.
-    ```
+```console
+Log Name:      Microsoft-Windows-User Device Registration/Admin
+Source:        Microsoft-Windows-User Device Registration
+Date:          <Date and time>
+Event ID:      362
+Task Category: None
+Level:         Warning
+Keywords:     
+User:          <User SID>
+Computer:      <Computer name>
+Description:
+Windows Hello for Business provisioning will not be launched.
+Device is AAD joined ( AADJ or DJ++ ): Yes
+User has logged on with AAD credentials: Yes
+Windows Hello for Business policy is enabled: Yes
+Windows Hello for Business post-logon provisioning is enabled: Yes
+Local computer meets Windows hello for business hardware requirements: Yes
+User is not connected to the machine via Remote Desktop: Yes
+User certificate for on premise auth policy is enabled: Yes
+Enterprise user logon certificate enrollment endpoint is ready: Not Tested
+Enterprise user logon certificate template is : No ( 1 : StateNoPolicy ) 
+User has successfully authenticated to the enterprise STS: No
+Certificate enrollment method: enrollment authority
+See https://go.microsoft.com/fwlink/?linkid=832647 for more details.
+```
 
 If a device has recently been joined to a domain, then there may be a delay before the device authentication occurs. If the failing state of this prerequisite check persists, then it can indicate an issue with the AD FS configuration.
 
 If this AD FS scope issue is present, event logs on the AD FS server will indicate an authentication failure from the client. This error will be logged in event logs under AD FS/Admin as event ID 1021 and the event will specify that the client is forbidden access to resource 'http<span>://schemas.microsoft.com/ws/2009/12/identityserver/selfscope</span>' with scope 'ugs':
 
-   ```console
-    Log Name:      AD FS/Admin
-    Source:        AD FS
-    Date:          <Date and time>
-    Event ID:      1021
-    Task Category: None
-    Level:         Error
-    Keywords:      AD FS
-    User:          <ADFS service Account>
-    Computer:      <Date and time>
-    Description:
-    Encountered error during OAuth token request.
-    Additional Data
-    Exception details:
-    Microsoft.IdentityServer.Web.Protocols.OAuth.Exceptions.OAuthUnauthorizedClientException: MSIS9368: Received invalid OAuth request. The client '38aa3b87-a06d-4817-b275-7a316988d93b' is forbidden to access the resource 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' with scope 'ugs'.
+```console
+Log Name:      AD FS/Admin
+Source:        AD FS
+Date:          <Date and time>
+Event ID:      1021
+Task Category: None
+Level:         Error
+Keywords:      AD FS
+User:          <ADFS service Account>
+Computer:      <Date and time>
+Description:
+Encountered error during OAuth token request.
+Additional Data
+Exception details:
+Microsoft.IdentityServer.Web.Protocols.OAuth.Exceptions.OAuthUnauthorizedClientException: MSIS9368: Received invalid OAuth request. The client '38aa3b87-a06d-4817-b275-7a316988d93b' is forbidden to access the resource 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' with scope 'ugs'.
        at Microsoft.IdentityServer.Web.Protocols.OAuth.OAuthProtocolContext.ValidateScopes(String scopeParameter, String clientId, String relyingPartyId)
        at Microsoft.IdentityServer.Web.Protocols.OAuth.OAuthToken.OAuthJWTBearerRequestContext.ValidateCore()
-    ```
+```
 
 ### Resolving Certificate Trust with AD FS 2019 Enrollment Issue
 
