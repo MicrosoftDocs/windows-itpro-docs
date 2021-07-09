@@ -26,9 +26,8 @@ This article depicts the BitLocker deployment comparison chart.
 
 ## BitLocker deployment comparison chart
 
-|  |Microsoft Intune  |Microsoft Endpoint Configuration Manager  |Microsoft BitLocker Administration and Monitoring (MBAM) |
+| Requirements |Microsoft Intune  |Microsoft Endpoint Configuration Manager  |Microsoft BitLocker Administration and Monitoring (MBAM) |
 |---------|---------|---------|---------|
-|**Requirements**||||
 |Minimum client operating system version     |Windows 10     | Windows 10 and Windows 8.1  | Windows 7 and later        |
 |Supported Windows 10 SKUs     |    Enterprise, Pro, Education     |    Enterprise, Pro, Education     |     Enterprise    |
 |Minimum Windows 10 version     |1909   |    None     |    None     |

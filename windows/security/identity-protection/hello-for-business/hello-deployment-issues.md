@@ -76,7 +76,7 @@ Applies to:
 Windows Hello for Business uses smart card based authentication for many operations. Smart card has special guidelines when using a third-party CA for certificate issuance, some of which apply to the domain controllers. Not all Windows Hello for Business deployment types require these configurations. Accessing on-premises resources from an Azure AD Joined device does require special configuration when using a third-party CA to issue domain controller certificates.
 
 For more information, read [Guidelines for enabling smart card logon with third-party certification authorities](
-https://docs.microsoft.com/troubleshoot/windows-server/windows-security/enabling-smart-card-logon-third-party-certification-authorities).
+/troubleshoot/windows-server/windows-security/enabling-smart-card-logon-third-party-certification-authorities).
 
 ### Identifying On-premises Resource Access Issues with Third-Party CAs
 
