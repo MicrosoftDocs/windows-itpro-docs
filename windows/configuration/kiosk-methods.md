@@ -65,6 +65,7 @@ There are several kiosk configuration methods that you can choose from, dependin
 >Single-app kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
  
  <span id="uwp" />
+ 
 ## Methods for a single-app kiosk running a UWP app
 
 You can use this method | For this edition | For this kiosk account type 
@@ -76,6 +77,7 @@ You can use this method | For this edition | For this kiosk account type
 [Shell Launcher](kiosk-shelllauncher.md) v2 | Ent, Edu | Local standard user, Active Directory, Azure AD
 
 <span id="classic" />
+
 ## Methods for a single-app kiosk running a Windows desktop application
 
 You can use this method | For this edition | For this kiosk account type 
@@ -85,6 +87,7 @@ You can use this method | For this edition | For this kiosk account type
 [Shell Launcher](kiosk-shelllauncher.md) v1 and v2 | Ent, Edu | Local standard user, Active Directory, Azure AD
 
 <span id="desktop" />
+
 ## Methods for a multi-app kiosk
 
 You can use this method | For this edition | For this kiosk account type 

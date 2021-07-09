@@ -266,12 +266,10 @@ The following is an enrollment policy request example with a received security t
           https://enrolltest.contoso.com/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
         </a:To>
         <wsse:Security s:mustUnderstand="1">
-          <wsse:BinarySecurityToken  ValueType= 
-    "http: //schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken"
-          EncodingType=
-          "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
-          xmlns=
-          "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+          <wsse:BinarySecurityToken
+             ValueType="http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken"
+             EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
+             xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
           B64EncodedSampleBinarySecurityToken
           </wsse:BinarySecurityToken>
         </wsse:Security>
@@ -410,12 +408,9 @@ The following example shows the enrollment web service request for federated aut
           https://enrolltest.contoso.com:443/ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC
         </a:To>
         <wsse:Security s:mustUnderstand="1">
-          <wsse:BinarySecurityToken  wsse:ValueType= 
-    "http:"//schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken
-          wsse:EncodingType=
-          http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
-          
-    >
+          <wsse:BinarySecurityToken
+             wsse:ValueType="http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentUserToken"
+             wsse:EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary">
           B64EncodedSampleBinarySecurityToken
           </wsse:BinarySecurityToken>
         </wsse:Security>
@@ -518,21 +513,18 @@ The following example shows the enrollment web service response.
              xmlns="http://docs.oasis-open.org/ws-sx/ws-trust/200512">
              <RequestSecurityTokenResponse>
                 <TokenType>
-        http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
+                    http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentToken
                 </TokenType>
-                 <DispositionMessage xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment"/>           <RequestedSecurityToken>
+                 <DispositionMessage xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment"/>
+                 <RequestedSecurityToken>
                    <BinarySecurityToken 
-                      ValueType=
-    "http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc"
-                      EncodingType=
-       "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
-                      xmlns=
-              "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+                      ValueType="http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrollmentProvisionDoc"
+                      EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd#base64binary"
+                      xmlns="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
                       B64EncodedSampleBinarySecurityToken
                    </BinarySecurityToken>
                 </RequestedSecurityToken>
-                <RequestID xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment">0
-                </RequestID>
+                <RequestID xmlns="http://schemas.microsoft.com/windows/pki/2009/01/enrollment">0</RequestID>
              </RequestSecurityTokenResponse>
           </RequestSecurityTokenResponseCollection>
        </s:Body>
@@ -558,12 +550,12 @@ The following code shows sample provisioning XML (presented in the preceding pac
             <characteristic type="Encoded Root Cert Hash Inserted Here">
                <parm name="EncodedCertificate" value="B64EncodedCertInsertedHere" />
             </characteristic>
-            <characteristic type="PrivateKeyContainer"/> 
-            <!-- This tag must be present for XML syntax correctness. -->            
+            <characteristic type="PrivateKeyContainer"/>
+            <!-- This tag must be present for XML syntax correctness. -->
          </characteristic>
          <characteristic type="WSTEP">
             <characteristic type="Renew">
-             <!—If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
+               <!—If the datatype for ROBOSupport, RenewPeriod, and RetryInterval tags exist, they must be set explicitly. -->
                <parm name="ROBOSupport" value="true" datatype="boolean"/>
                <parm name="RenewPeriod" value="60" datatype="integer"/>
                <parm name="RetryInterval" value="4" datatype="integer"/>
@@ -581,8 +573,7 @@ The following code shows sample provisioning XML (presented in the preceding pac
       <parm name="MAXBACKOFFTIME" value="120000" />
       <parm name="BACKCOMPATRETRYDISABLED" />
       <parm name="DEFAULTENCODING" value="application/vnd.syncml.dm+wbxml" />
-      <parm name="SSLCLIENTCERTSEARCHCRITERIA" value=
-  "Subject=DC%3dcom%2cDC%3dmicrosoft%2cCN%3dUsers%2cCN%3dAdministrator&amp;amp;Stores=My%5CUser"/>
+      <parm name="SSLCLIENTCERTSEARCHCRITERIA" value="Subject=DC%3dcom%2cDC%3dmicrosoft%2cCN%3dUsers%2cCN%3dAdministrator&amp;amp;Stores=My%5CUser"/>
       <characteristic type="APPAUTH">
          <parm name="AAUTHLEVEL" value="CLIENT"/>
          <parm name="AAUTHTYPE" value="DIGEST"/>
@@ -598,25 +589,24 @@ The following code shows sample provisioning XML (presented in the preceding pac
    </characteristic>
    <characteristic type="DMClient"> <!-- In Windows 10, an enrollment server should use DMClient CSP XML to configure DM polling schedules. -->
       <characteristic type="Provider">
-<!-- ProviderID in DMClient CSP must match to PROVIDER-ID in w7 APPLICATION characteristics -->
-    <characteristic type="TestMDMServer">
-          <parm name="UPN" value="UserPrincipalName@contoso.com" datatype="string" /> 
-             <characteristic type="Poll">
+        <!-- ProviderID in DMClient CSP must match to PROVIDER-ID in w7 APPLICATION characteristics -->
+        <characteristic type="TestMDMServer">
+            <parm name="UPN" value="UserPrincipalName@contoso.com" datatype="string" />
+            <parm name="EntDeviceName" value="Administrator_Windows" datatype="string" />
+            <characteristic type="Poll">
                 <parm name="NumberOfFirstRetries" value="8" datatype="integer" />
                 <parm name="IntervalForFirstSetOfRetries" value="15" datatype="integer" />
                 <parm name="NumberOfSecondRetries" value="5" datatype="integer" />
                 <parm name="IntervalForSecondSetOfRetries" value="3" datatype="integer" />
                 <parm name="NumberOfRemainingScheduledRetries" value="0" datatype="integer" />
-<!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule’s retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
-         <parm name="IntervalForRemainingScheduledRetries" value="1560" datatype="integer" />
-         <parm name="PollOnLogin" value="true" datatype="boolean" />
- </characteristic>
-        <parm name="EntDeviceName" value="Administrator_Windows" datatype="string" />
-</characteristic>
+                <!-- Windows 10 supports MDM push for real-time communication. The DM client long term polling schedule’s retry waiting interval should be more than 24 hours (1440) to reduce the impact to data consumption and battery life. Refer to the DMClient Configuration Service Provider section for information about polling schedule parameters.-->
+                <parm name="IntervalForRemainingScheduledRetries" value="1560" datatype="integer" />
+                <parm name="PollOnLogin" value="true" datatype="boolean" />
+            </characteristic>
+        </characteristic>
       </characteristic>
    </characteristic>
-   <!-- For Windows 10, we removed EnterpriseAppManagement from the enrollment 
-        protocol. -->
+   <!-- For Windows 10, we removed EnterpriseAppManagement from the enrollment protocol. -->
 </wap-provisioningdoc>
 ```
 
