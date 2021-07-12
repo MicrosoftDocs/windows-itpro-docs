@@ -290,6 +290,5 @@ We used the following methodology to derive these network endpoints:
 | weus2watcab02.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
 | tsfe.trafficshaping.dsp.mp.microsoft.com | TLSv1.2 | Used for content regulation. |
 | wallet.microsoft.com | HTTPS | Used by the Microsoft Wallet app. |
-
 | wdcp.microsoft.akadns.net | TLSv1.2 | Used for Windows Defender when Cloud-based Protection is enabled. |
 | www.bing.com | HTTPS | Used for updates for Cortana, apps, and Live Tiles. |
