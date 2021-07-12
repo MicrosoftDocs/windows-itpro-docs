@@ -27,9 +27,9 @@ ms.technology: mde
 
 Windows Defender Application Control (WDAC) can control what runs on Windows 10 by setting policies that specify whether a driver or application is trusted. A policy includes *policy rules* that control options such as audit mode, and *file rules* (or *file rule levels*) that specify how applications are identified and trusted.
 
-## Getting started with commdlets
+## Getting started with cmdlets
 
-Some of the [SKUs](feature-availability.md) that support our PowerShell commandlets [(ConfigCI Module)](/powershell/module/configci/?view=windowsserver2019-ps) support but do not have the module installed on the box. 
+Some of the [SKUs](feature-availability.md) that support our PowerShell cmdlets [(ConfigCI Module)](/powershell/module/configci/?view=windowsserver2019-ps) support but do not have the module installed on the box. 
 
 **Steps to install the module:**
 - Install-Module "ConfigCI"
