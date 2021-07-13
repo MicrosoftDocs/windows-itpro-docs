@@ -122,7 +122,7 @@ As part of normal operations, they will eventually install software updates, or 
 
 ## File rule precedence order
 
-WDAC has a built-in file rule conflict logic that translates to precedence order. It will first processes all explicit deny rules it finds. Then, it will process all explicit allow rules. If no deny or allow rule exists, WDAC will check for [Managed Installer EA](deployment/deploy-wdac-policies-with-memcm.md). Lastly, if none of these exists, WDAC will fall back on [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md).
+WDAC has a built-in file rule conflict logic that translates to precedence order. It will first process all explicit deny rules it finds. Then, it will process all explicit allow rules. If no deny or allow rule exists, WDAC will check for [Managed Installer EA](deployment/deploy-wdac-policies-with-memcm.md). Lastly, if none of these exists, WDAC will fall back on [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md).
 
 ## More information about filepath rules
 
