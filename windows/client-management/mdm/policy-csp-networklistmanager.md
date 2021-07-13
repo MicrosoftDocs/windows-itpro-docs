@@ -1,19 +1,18 @@
 ---
 title: Policy CSP - NetworkListManager
 description: The Policy CSP - NetworkListManager setting creates a new MDM policy that allows admins to configure a list of URIs of HTTPS endpoints that are considered secure.
-ms.author: dansimp
+ms.author: v-nsatapathy
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: nimishasatapathy
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 7/10/2021
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - NetworkListManager
-
 
 
 <hr/>
@@ -48,11 +47,11 @@ manager: dansimp
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -60,7 +59,7 @@ manager: dansimp
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -116,11 +115,11 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="check mark" /></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -128,7 +127,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/crossmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
