@@ -99,4 +99,3 @@ If you feel you've been a victim of a phishing attack:
 
 - [Protect yourself from phishing](https://support.microsoft.com/help/4033787/windows-protect-yourself-from-phishing)
 - [Phishing trends](phishing-trends.md)
-- [Microsoft e-book on preventing social engineering attacks](https://info.microsoft.com/Protectyourweakestlink.html?ls=social), especially in enterprise environments.

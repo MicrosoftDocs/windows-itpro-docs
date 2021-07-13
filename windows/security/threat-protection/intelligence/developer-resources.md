@@ -37,7 +37,7 @@ To objectively identify malware and unidentified software, Microsoft applies a [
 
 ### Developer questions
 
-Find more guidance about the file submission and detection dispute process in our [FAQ for software developers](developer-faq.md).
+Find more guidance about the file submission and detection dispute process in our [FAQ for software developers](developer-faq.yml).
 
 ### Scan your software
 
