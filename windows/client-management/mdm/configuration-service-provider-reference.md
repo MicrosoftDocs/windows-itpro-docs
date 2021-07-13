@@ -1270,10 +1270,10 @@ Additional lists:
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
