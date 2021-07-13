@@ -978,7 +978,7 @@ This is a list of attributes that are supported by DHA and can trigger the corre
 -   **Boot Manager Version** The version of the Boot Manager running on the device. The HAS can check this version to determine whether the most current Boot Manager is running, which is more secure (trusted).
 -   **Code integrity version** Specifies the version of code that is performing integrity checks during the boot sequence. The HAS can check this version to determine whether the most current version of code is running, which is more secure (trusted).
 -   **Secure Boot Configuration Policy (SBCP) present** Specifies whether the hash of the custom SBCP is present. A device with an SBCP hash present is more trustworthy than a device without an SBCP hash.
--   **Boot cycle whitelist** The view of the host platform between boot cycles as defined by the manufacturer compared to a published allow list. A device that complies with the allow list is more trustworthy (secure) than a device that is noncompliant.
+-   **Boot cycle allow list** The view of the host platform between boot cycles as defined by the manufacturer compared to a published allow list. A device that complies with the allow list is more trustworthy (secure) than a device that is noncompliant.
 
 #### Example scenario
 

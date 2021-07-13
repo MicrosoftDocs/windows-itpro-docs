@@ -29,6 +29,9 @@ manager: dansimp
     <a href="#system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a>
   </dd>
   <dd>
+    <a href="#system-allowdesktopanalyticsprocessing">System/AllowDesktopAnalyticsProcessing </a>
+  </dd>
+  <dd>
     <a href="#system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
   </dd>
   <dd>
@@ -44,16 +47,22 @@ manager: dansimp
     <a href="#system-allowlocation">System/AllowLocation</a>
   </dd>
   <dd>
+    <a href="#system-allowmicrosoftmanageddesktopprocessing">System/AllowMicrosoftManagedDesktopProcessing</a>
+  </dd>
+  <dd>
     <a href="#system-allowstoragecard">System/AllowStorageCard</a>
   </dd>
   <dd>
     <a href="#system-allowtelemetry">System/AllowTelemetry</a>
   </dd>
   <dd>
-    <a href="#system-allowUpdateComplianceProcessing">System/AllowUpdateComplianceProcessing</a>
+    <a href="#system-allowupdatecomplianceprocessing">System/AllowUpdateComplianceProcessing</a>
   </dd>
   <dd>
     <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
+  </dd>
+ <dd>
+    <a href="#system-allowwufbcloudprocessing">System/AllowWuFBCloudProcessing</a>
   </dd>
   <dd>
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
@@ -114,11 +123,7 @@ manager: dansimp
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -186,11 +191,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -215,13 +216,20 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting opts the device into the Windows enterprise data pipeline. 
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
 
-If you enable this setting, data collected from the device will be opted into the Windows enterprise data pipeline.
+To enable this behavior, you must complete two steps:
 
-If you disable or don't configure this setting, all data from the device will be collected and processed in accordance with our policies for the Windows standard data pipeline.
+ 1. Enable this policy setting
+ 2. Join an Azure Active Directory account to the device
 
-Configuring this setting does not change the telemetry collection level or the ability of the user to change the level. This setting only applies to the Windows operating system and apps included with Windows, not third-party apps or services running on Windows 10.
+Windows diagnostic data is collected when the Allow Telemetry policy setting is set to 1 – **Required (Basic)** or above.
+
+If you disable or do not configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft’s [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839) unless you have enabled policies like Allow Update Compliance Processing or Allow Desktop Analytics Processing.
+
+Configuring this setting does not change the Windows diagnostic data collection level set for the device or the operation of optional analytics processor services like Desktop Analytics and Update Compliance.
+
+See the documentation at [ConfigureWDD](https://aka.ms/ConfigureWDD) for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -251,6 +259,36 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="system-allowdesktopanalyticsprocessing"></a>**System/AllowDesktopAnalyticsProcessing**  
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID policy settings, enables organizations to configure the device so that Microsoft is the processor for Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
+
+To enable this behavior, you must complete three steps:
+
+ 1. Enable this policy setting
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
+ 3. Set the Configure the Commercial ID setting for your Desktop Analytics workspace
+
+This setting has no effect on devices unless they are properly enrolled in Desktop Analytics.
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable or do not configure this policy setting, devices will not appear in Desktop Analytics.
+
+The following list shows the supported values:
+
+-   0 (default) – Disabled.
+-   2 – Allowed.
+
+
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="system-allowdevicenameindiagnosticdata"></a>**System/AllowDeviceNameInDiagnosticData**  
 
 <!--SupportedSKUs-->
@@ -265,11 +303,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -338,11 +372,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -398,11 +428,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -463,11 +489,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -542,11 +564,7 @@ To verify if System/AllowFontProviders is set to true:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -603,6 +621,27 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="system-allowmicrosoftmanageddesktopprocessing"></a>**System/AllowMicrosoftManagedDesktopProcessing**
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data.
+
+For customers who enroll into the Microsoft Managed Desktop service, this policy will be enabled by default to allow Microsoft to process data for operational and analytic needs. For more information, see [Privacy and personal data](/microsoft-365/managed-desktop/service-description/privacy-personal-data.md).
+
+This setting has no effect on devices unless they are properly enrolled in Microsoft Managed Desktop.
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable this policy setting, devices may not appear in Microsoft Managed Desktop.
+
+>[!IMPORTANT]
+> You should not disable or make changes to this policy as that will severely impact the ability of Microsoft Managed Desktop to manage the devices.
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**  
 
 <!--SupportedSKUs-->
@@ -617,11 +656,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -677,11 +712,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -741,13 +772,21 @@ The following list shows the supported values for Windows 8.1:
 
 In Windows 10, you can configure this policy setting to decide what level of diagnostic data to send to Microsoft.
 
-The following list shows the supported values for Windows 10 version 1809 and older:
+The following list shows the supported values for Windows 10 version 1809 and older, choose the value that is applicable to your OS version (older OS values are displayed in the brackets):
 
--   0 – (**Security**) This turns Windows diagnostic data off.  
-    **Note**: This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), HoloLens 2, and Windows Server 2016 (and later versions). Using this setting on other devices editions of Windows is equivalent to setting the value of 1.
--   1 – (**Required**) Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date.
--   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows apps are used, how they perform, and advanced reliability data, such as limited crash dumps.
--   3 – (**Optional**) Sends the same data as a value of 2, plus additional data necessary to identify and fix problems with devices such as enhanced error logs.
+- 0 – **Off (Security)** This turns Windows diagnostic data off.
+
+    > [!NOTE]
+    > This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), HoloLens 2, and Windows Server 2016 (and later versions). Using this setting on other devices editions of Windows is equivalent to setting the value of 1.
+
+- 1 – **Required (Basic)** Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date.
+
+- 2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows apps are used, how they perform, and advanced reliability data, such as limited crash dumps.
+
+    > [!NOTE]
+    > **Enhanced** is no longer an option for Windows Holographic, version 21H1.
+
+- 3 – **Optional (Full)** Sends the same data as a value of 2, plus additional data necessary to identify and fix problems with devices such as enhanced error logs.
 
 Most restrictive value is 0.
 
@@ -795,7 +834,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowUpdateComplianceProcessing"></a>**System/AllowUpdateComplianceProcessing**  
+<a href="" id="system-allowupdatecomplianceprocessing"></a>**System/AllowUpdateComplianceProcessing**  
 
 <!--SupportedSKUs-->
 <table>
@@ -809,11 +848,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -838,11 +873,18 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Allows IT admins to enable diagnostic data from this device to be processed by Update Compliance.  
 
-If you enable this setting, it enables data flow through Update Compliance's data processing system and indicates a device's explicit enrollment to the service.
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID policy settings, enables organizations to configure the device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
 
-If you disable or do not configure this policy setting, diagnostic data from this device will not be processed by Update Compliance.
+To enable this behavior, you must complete three steps:
+
+ 1. Enable this policy setting
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
+ 3. Set the Configure the Commercial ID setting for your Update Compliance workspace
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable or do not configure this policy setting, devices will not appear in Update Compliance.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -880,11 +922,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -926,6 +964,28 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWuFBCloudProcessing**
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
+
+To enable this behavior, you must complete three steps:
+
+ 1. Enable this policy setting
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
+ 3. Join an Azure Active Directory account to the device
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable or do not configure this policy setting, devices enrolled to the Windows Update for Business deployment service will not be able to take advantage of some deployment service features.
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
 
 <!--SupportedSKUs-->
@@ -940,11 +1000,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1016,11 +1072,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1090,11 +1142,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1157,11 +1205,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1229,11 +1273,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1300,11 +1340,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1371,11 +1407,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1431,11 +1463,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1513,11 +1541,7 @@ To validate on Desktop, do the following:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" />  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1589,11 +1613,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1647,11 +1667,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1676,20 +1692,25 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting, in combination with the System/AllowTelemetry 
- policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. 
+This policy setting, in combination with the Allow Telemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. 
  
 To enable this behavior, you must complete two steps:
 
--   Enable this policy setting
--   Set the **AllowTelemetry** level:
-    - For Windows 10 version 1809 and older: set **AllowTelemetry** to Enhanced
+ 1. Enable this policy setting.
+
+ 2. Set the **AllowTelemetry** level:
+
+    - For Windows 10 version 1809 and older: set **AllowTelemetry** to Enhanced. 
+
+      > [!NOTE]
+      > **Enhanced** is no longer an option for Windows Holographic, version 21H1.
+
     - For Windows 10 version 19H1 and later: set **AllowTelemetry** to Optional (Full)
 
  
 When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
  
-Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send Required (Basic) or Optional (Full) diagnostic data to Microsoft.
+Enabling enhanced diagnostic data in the Allow Telemetry  policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send Required (Basic) or Optional (Full) diagnostic data to Microsoft.
    
 If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.
 
@@ -1722,11 +1743,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" />  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1784,11 +1801,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1855,5 +1868,6 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 - 9 - Available in Windows 10, version 20H2.
 - 10 - Available in Windows 10, version 21H1.
+- 11 - Also applies to Windows 10 Business.
 
 <!--/Policies-->

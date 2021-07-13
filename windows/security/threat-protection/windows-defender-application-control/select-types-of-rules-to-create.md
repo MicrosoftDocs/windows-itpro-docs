@@ -27,6 +27,14 @@ ms.technology: mde
 
 Windows Defender Application Control (WDAC) can control what runs on Windows 10 by setting policies that specify whether a driver or application is trusted. A policy includes *policy rules* that control options such as audit mode, and *file rules* (or *file rule levels*) that specify how applications are identified and trusted.
 
+## Getting started with cmdlets
+
+Some of the [SKUs](feature-availability.md) that support our PowerShell cmdlets [(ConfigCI Module)](/powershell/module/configci/?view=windowsserver2019-ps) support but do not have the module installed on the box. 
+
+### Steps to install the module
+- Install-Module "ConfigCI"
+- Import-Module "ConfigCI"
+
 ## Windows Defender Application Control policy rules
 
 To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleOption](/powershell/module/configci/set-ruleoption). The following examples show how to use this cmdlet to add and remove a rule option on an existing WDAC policy:
@@ -46,7 +54,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 > [!NOTE]
 > We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
-**Table 1. Windows Defender Application Control policy - policy rule options**
+### Table 1. Windows Defender Application Control policy - policy rule options
 
 | Rule option | Description |
 |------------ | ----------- |
@@ -61,7 +69,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **8 Required:EV Signers** | This rule requires that drivers must be WHQL signed and have been submitted by a partner with an Extended Verification (EV) certificate. All Windows 10 and later drivers will meet this requirement. |
 | **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. |
 | **10 Enabled:Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
-| **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is supported on 1709, 1803, and 1809 builds with the 2019 10C LCU or higher, and on devices with the Windows 10 May 2019 Update (1903) and higher. Using it on versions of Windows 10 without the proper update may have unintended results. |
+| **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is required to run HTA files, and is supported on 1709, 1803, and 1809 builds with the 2019 10C LCU or higher, and on devices with the Windows 10 May 2019 Update (1903) and higher. Using it on versions of Windows 10 without the proper update may have unintended results. |
 | **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies will also apply to Universal Windows applications. |
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a managed installer. For more information, see [Authorize apps deployed with a WDAC managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
@@ -88,7 +96,7 @@ File rule levels allow administrators to specify the level at which they want to
 
 Each file rule level has its benefit and disadvantage. Use Table 2 to select the appropriate protection level for your available administrative resources and Windows Defender Application Control deployment scenario.
 
-**Table 2. Windows Defender Application Control policy - file rule levels**
+### Table 2. Windows Defender Application Control policy - file rule levels
 
 | Rule level | Description |
 |----------- | ----------- |
@@ -142,6 +150,9 @@ Wildcards can be used at the beginning or end of a path rule; only one wildcard 
 
 You can also use the following macros when the exact volume may vary: `%OSDRIVE%`, `%WINDIR%`, `%SYSTEM32%`.
 
+> [!NOTE]
+> For others to better understand the WDAC policies that has been deployed, we recommend maintaining separate ALLOW and DENY policies on Windows 10, version 1903 and later.
+
 ## More information about hashes
 
 ### Why does scan create four hash rules per XML file?
@@ -161,7 +172,7 @@ File name rule levels let you specify file attributes to base a rule on. File na
 
 Use Table 3 to select the appropriate file name level for your use cases. For instance, an LOB or production application and its binaries may all share the same product name. This option lets you easily create targeted policies based on the Product Name filename rule level.
 
-**Table 3. Windows Defender Application Control policy - filename levels**
+### Table 3. Windows Defender Application Control policy - filename levels
 
 | Rule level | Description |
 |----------- | ----------- |

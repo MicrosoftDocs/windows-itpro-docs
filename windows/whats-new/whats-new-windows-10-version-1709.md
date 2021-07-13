@@ -52,7 +52,7 @@ WUfB now has additional controls available to manage Windows Insider Program enr
 
 ### Windows Insider Program for Business
 
-You can now register your Azure AD domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](/windows/deployment/update/waas-windows-insider-for-business#getting-started-with-windows-insider-program-for-business).
+You can now register your Azure AD domains to the Windows Insider Program. For more information, see [Windows Insider Program for Business](https://insider.windows.com/for-business).
 
 
 ## Administration
@@ -119,7 +119,7 @@ The minimum PIN length is being changed from 6 to 4, with a default of 6. For mo
 Microsoft has released new [Windows security baselines](/windows/device-security/windows-security-baselines) for Windows Server and Windows 10. A security baseline is a group of Microsoft-recommended configuration settings with an explanation of their security impact. For more information, and to download the Policy Analyzer tool, see [Microsoft Security Compliance Toolkit 1.0](/windows/device-security/security-compliance-toolkit-10).
 
 ### SMBLoris vulnerability
-An issue, known as “SMBLoris�?, which could result in denial of service, has been addressed.
+An issue, known as _SMBLoris_, which could result in denial of service, has been addressed.
 
 
 ## Windows Analytics
