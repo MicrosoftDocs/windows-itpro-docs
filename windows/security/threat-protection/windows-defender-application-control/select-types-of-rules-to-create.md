@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 03/04/2020
+ms.date: 07/12/2021
 ms.technology: mde
 ---
 
@@ -27,11 +27,11 @@ ms.technology: mde
 
 Windows Defender Application Control (WDAC) can control what runs on Windows 10 by setting policies that specify whether a driver or application is trusted. A policy includes *policy rules* that control options such as audit mode, and *file rules* (or *file rule levels*) that specify how applications are identified and trusted.
 
-## Getting started with commdlets
+## Getting started with cmdlets
 
-Some of the [SKUs](feature-availability.md) that support our PowerShell commandlets [(ConfigCI Module)](/powershell/module/configci/?view=windowsserver2019-ps) support but do not have the module installed on the box. 
+Some of the [SKUs](feature-availability.md) that support our PowerShell cmdlets [(ConfigCI Module)](/powershell/module/configci/?view=windowsserver2019-ps) support but do not have the module installed on the box. 
 
-**Steps to install the module:**
+### Steps to install the module
 - Install-Module "ConfigCI"
 - Import-Module "ConfigCI"
 
@@ -54,7 +54,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 > [!NOTE]
 > We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
-**Table 1. Windows Defender Application Control policy - policy rule options**
+### Table 1. Windows Defender Application Control policy - policy rule options
 
 | Rule option | Description |
 |------------ | ----------- |
@@ -96,7 +96,7 @@ File rule levels allow administrators to specify the level at which they want to
 
 Each file rule level has its benefit and disadvantage. Use Table 2 to select the appropriate protection level for your available administrative resources and Windows Defender Application Control deployment scenario.
 
-**Table 2. Windows Defender Application Control policy - file rule levels**
+### Table 2. Windows Defender Application Control policy - file rule levels
 
 | Rule level | Description |
 |----------- | ----------- |
@@ -172,7 +172,7 @@ File name rule levels let you specify file attributes to base a rule on. File na
 
 Use Table 3 to select the appropriate file name level for your use cases. For instance, an LOB or production application and its binaries may all share the same product name. This option lets you easily create targeted policies based on the Product Name filename rule level.
 
-**Table 3. Windows Defender Application Control policy - filename levels**
+### Table 3. Windows Defender Application Control policy - filename levels
 
 | Rule level | Description |
 |----------- | ----------- |
