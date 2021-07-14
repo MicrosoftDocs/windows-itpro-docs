@@ -519,8 +519,6 @@ items:
               href: policy-csp-admx-netlogon.md
             - name: ADMX_NetworkConnections
               href: policy-csp-admx-networkconnections.md
-            - name: ADMX_NetworkListManager
-              href: policy-csp-admx-networklistmanager.md
             - name: ADMX_OfflineFiles
               href: policy-csp-admx-offlinefiles.md
             - name: ADMX_PeerToPeerCaching
