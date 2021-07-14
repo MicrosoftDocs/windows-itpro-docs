@@ -72,7 +72,7 @@ A final set of changes includes two new policies that can help you fine-tune dia
 >[!Important]
 >All the changes mentioned in this section will not be released on versions of Windows, version 1809 and earlier as well as Windows Server 2019 and earlier.
 
-## Configure a Windows 10 device to limit crash dumps and logs
+## Configure a Windows 11 device to limit crash dumps and logs
 
 With the Enhanced diagnostic data level being split out into new policies, we're providing additional controls to manage what types of crash dumps are collected and whether to send additional diagnostic logs. Here are some steps on how to configure them:
 
