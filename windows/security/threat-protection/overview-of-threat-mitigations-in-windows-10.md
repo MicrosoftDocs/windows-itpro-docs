@@ -20,12 +20,12 @@ ms.technology: mde
 
 This topic provides an overview of some of the software and firmware threats faced in the current security landscape, and the mitigations that Windows 10 offers in response to these threats. For information about related types of protection offered by Microsoft, see [Related topics](#related-topics).
 
-| **Section**  | **Contents** |
+|  Section   |  Contents  |
 |--------------|-------------------------|
 | [The security threat landscape](#threat-landscape) | Describes the current nature of the security threat landscape, and outlines how Windows 10 is designed to mitigate software exploits and similar threats.  |
 | [Windows 10 mitigations that you can configure](#windows-10-mitigations-that-you-can-configure) | Provides tables of configurable threat mitigations with links to more information. Product features such as Device Guard appear in [Table 1](#windows-10-mitigations-that-you-can-configure), and memory protection options such as Data Execution Prevention appear in [Table 2](#table-2). |
 | [Mitigations that are built in to Windows 10](#mitigations-that-are-built-in-to-windows-10) | Provides descriptions of Windows 10 mitigations that require no configuration—they are built into the operating system. For example, heap protections and kernel pool protections are built into Windows 10. |
-| [Understanding Windows 10 in relation to the Enhanced Mitigation Experience Toolkit](#understanding-windows-10-in-relation-to-the-enhanced-mitigation-experience-toolkit) | Describes how mitigations in the [Enhanced Mitigation Experience Toolkit (EMET)](https://support.microsoft.com/kb/2458544) correspond to features built into Windows 10 and how to convert EMET settings into mitigation policies for Windows 10. |
+| [Understanding Windows 10 in relation to the Enhanced Mitigation Experience Toolkit](#understanding-windows-10-in-relation-to-the-enhanced-mitigation-experience-toolkit) | Describes how mitigations in the [Enhanced Mitigation Experience Toolkit (EMET)](https://www.microsoft.com/download/details.aspx?id=48240) correspond to features built into Windows 10 and how to convert EMET settings into mitigation policies for Windows 10. |
 
 <a href="" id="threat-landscape"></a>This topic focuses on pre-breach mitigations aimed at device protection and threat resistance. These protections work with other security defenses in Windows 10, as shown in the following illustration:
 
@@ -118,7 +118,7 @@ Data Execution Prevention (DEP) does exactly that, by substantially reducing the
 
 1. Open Task Manager: Press Ctrl+Alt+Del and select **Task Manager**, or search the Start screen.
 
-2.  Click **More Details** (if necessary), and then click the **Details** tab.
+2. Click **More Details** (if necessary), and then click the **Details** tab.
 
 3. Right-click any column heading, and then click **Select Columns**.
 
@@ -311,9 +311,9 @@ The following table lists EMET features in relation to Windows 10 features.
 <table>
 <thead>
 <tr class="header">
-<th><b>Specific EMET features</b></th>
-<th><b>How these EMET features map<br />
-to Windows 10 features</b></th>
+<th>Specific EMET features</th>
+<th>How these EMET features map<br />
+to Windows 10 features</th>
 </tr>
 </thead>
 <tbody>
@@ -435,7 +435,7 @@ Examples:
     Set-ProcessMitigation -Name notepad.exe -Enable SEHOP -Disable MandatoryASLR,DEPATL
     ```
 
-- **Convert Attack surface reduction (ASR) settings to a Code Integrity policy file**: If the input file contains any settings for EMET's Attack surface reduction (ASR) mitigation, the converter will also create a Code Integrity policy file. In this case, you can complete the merging, auditing, and deployment process for the Code Integrity policy, as described in [Deploy Device Guard: deploy code integrity policies](/windows/device-security/device-guard/deploy-device-guard-deploy-code-integrity-policies). This will enable protections on Windows 10 equivalent to EMET's ASR protections.
+- **Convert Attack surface reduction (ASR) settings to a Code Integrity policy file**: If the input file contains any settings for EMET's Attack surface reduction (ASR) mitigation, the converter will also create a Code Integrity policy file. In this case, you can complete the merging, auditing, and deployment process for the Code Integrity policy, as described in [Deploy Device Guard: deploy code integrity policies](/windows/device-security/device-guard/deploy-windows-defender-application-control). This will enable protections on Windows 10 equivalent to EMET's ASR protections.
 
 - **Convert Certificate Trust settings to enterprise certificate pinning rules**: If you have an EMET "Certificate Trust" XML file (pinning rules file), you can also use ConvertTo-ProcessMitigationPolicy to convert the pinning rules file into an enterprise certificate pinning rules file. Then you can finish enabling that file as described in [Enterprise Certificate Pinning](/windows/access-protection/enterprise-certificate-pinning). For example:
 
