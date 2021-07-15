@@ -2,7 +2,7 @@
 title: Delivery Optimization in Update Compliance (Windows 10)
 ms.reviewer: 
 manager: laurawi
-description: new Delivery Optimization data displayed in Update Compliance
+description: Learn how the Update Compliance solution provides you with information about your Delivery Optimization configuration.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.pagetype: deploy
@@ -13,11 +13,12 @@ keywords: oms, operations management suite, optimization, downloads, updates, lo
 ms.localizationpriority: medium
 ms.collection: M365-analytics
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Delivery Optimization in Update Compliance
 ![DO status](images/UC_workspace_DO_status.png)
-The Update Compliance solution of Windows Analytics provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
+The Update Compliance solution provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
 
 ## Delivery Optimization Status
  
@@ -41,5 +42,5 @@ The table breaks down the number of bytes from each download source into specifi
 
 The download sources that could be included are:
 - LAN Bytes: Bytes downloaded from LAN Peers which are other devices on the same local network
-- Group Bytes: Bytes downloaded from Group Peers which are other devices that belong to the same Group (available when the “Group” download mode is used)
+- Group Bytes: Bytes downloaded from Group Peers which are other devices that belong to the same Group (available when the "Group" download mode is used)
 - HTTP Bytes: Non-peer bytes. The HTTP download source can be Microsoft Servers, Windows Update Servers, a WSUS server or an SCCM Distribution Point for Express Updates. 

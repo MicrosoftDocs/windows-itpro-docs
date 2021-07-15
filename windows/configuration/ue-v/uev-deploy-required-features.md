@@ -1,7 +1,7 @@
 ---
 title: Deploy required UE-V features
-description: Deploy required UE-V features
-author: dansimp
+description: Learn how to install and configure User Experience Virtualization (UE-V) features, for example a network share that stores and retrieves user settings.
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -117,7 +117,7 @@ You can configure UE-V before, during, or after you enable the UE-V service on u
 
     Windows Server 2012 and Windows Server 2012 R2
 
--   [**Configuration Manager**](uev-configuring-uev-with-system-center-configuration-manager.md) The UE-V Configuration Pack lets you use the Compliance Settings feature of System Center Configuration Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
+-   [**Configuration Manager**](uev-configuring-uev-with-system-center-configuration-manager.md) The UE-V Configuration Pack lets you use the Compliance Settings feature of Microsoft Endpoint Manager to apply consistent configurations across sites where UE-V and Configuration Manager are installed.
 
 -   [**Windows PowerShell and WMI**](uev-administering-uev-with-windows-powershell-and-wmi.md) You can use scripted commands for Windows PowerShell and Windows Management Instrumentation (WMI) to modify the configuration of the UE-V service.
 

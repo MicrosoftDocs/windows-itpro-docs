@@ -4,7 +4,7 @@ description: This topic for IT professionals shows how to create an AppLocker ru
 ms.assetid: eb3b3524-1b3b-4979-ba5a-0a0b1280c5c7
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Create a rule that uses a file hash condition

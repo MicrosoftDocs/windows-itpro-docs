@@ -2,7 +2,7 @@
 title: 5141(S) A directory service object was deleted. (Windows 10)
 description: Describes security event 5141(S) A directory service object was deleted.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5141(S): A directory service object was deleted.
@@ -28,7 +29,7 @@ ms.author: dansimp
 
 This event generates every time an Active Directory object is deleted.
 
-This event only generates if the deleted object has a particular entry in its [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx): the “**Delete”** action, auditing for specific objects.
+This event only generates if the deleted object has a particular entry in its [SACL](/windows/win32/secauthz/access-control-lists): the “**Delete”** action, auditing for specific objects.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -197,4 +198,3 @@ For 5141(S): A directory service object was deleted.
 -   If you need to monitor deletion of Active Directory objects with specific classes, monitor for **Class** field with specific class name. For example, we recommend that you monitor for group policy objects deletions: **groupPolicyContainer** class.
 
 -   If you need to monitor deletion of specific Active Directory objects, monitor for **DN** field with specific object name. For example, if you have critical Active Directory objects which should not be deleted, monitor for their deletion.
-

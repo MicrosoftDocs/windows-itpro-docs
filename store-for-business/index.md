@@ -8,13 +8,13 @@ ms.sitesec: library
 ms.pagetype: store
 ms.author: cmcatee
 author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: high
 ms.date: 03/10/2021
 ---
 
 # Microsoft Store for Business and Education
-
 
 **Applies to**
 

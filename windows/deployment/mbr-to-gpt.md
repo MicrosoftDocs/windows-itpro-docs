@@ -1,18 +1,21 @@
 ---
 title: MBR2GPT
-description: How to use the MBR2GPT tool to convert MBR partitions to GPT
+description: Use MBR2GPT.EXE to convert a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk.
 keywords: deploy, troubleshoot, windows, 10, upgrade, partition, mbr, gpt
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
+ms.author: greglin
 ms.date: 02/13/2018
-ms.reviewer: 
+ms.reviewer:
 manager: laurawi
-ms.audience: itproauthor: greg-lindsay
+ms.audience: itpro
 ms.localizationpriority: medium
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # MBR2GPT.EXE
@@ -20,9 +23,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-## Summary
-
-**MBR2GPT.EXE** converts a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS) by using the **/allowFullOS** option. 
+**MBR2GPT.EXE** converts a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS) by using the **/allowFullOS** option.
 
 >MBR2GPT.EXE is located in the **Windows\\System32** directory on a computer running Windows 10 version 1703 (also known as the Creator's Update) or later.
 >The tool is available in both the full OS environment and Windows PE. To use this tool in a deployment task sequence with Configuration Manager or Microsoft Deployment Toolkit (MDT), you must first update the Windows PE image (winpe.wim, boot.wim) with the [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) 1703, or a later version.
@@ -31,7 +32,7 @@ See the following video for a detailed description and demonstration of MBR2GPT.
 
 <iframe width="560" height="315" align="center" src="https://www.youtube-nocookie.com/embed/hfJep4hmg9o" frameborder="0" allowfullscreen></iframe>
 
-You can use MBR2GPT to: 
+You can use MBR2GPT to:
 
 - Convert any attached MBR-formatted system disk to the GPT partition format. You cannot use the tool to convert non-system disks from MBR to GPT.
 - Convert an MBR disk with BitLocker-encrypted volumes as long as protection has been suspended. To resume BitLocker after conversion, you will need to delete the existing protectors and recreate them.
@@ -73,7 +74,7 @@ If any of these checks fails, the conversion will not proceed and an error will 
 |/convert| Instructs MBR2GPT.exe to perform the disk validation and to proceed with the conversion if all validation tests pass. |
 |/disk:\<diskNumber\>| Specifies the disk number of the disk to be converted to GPT. If not specified, the system disk is used. The mechanism used is the same as that used by the diskpart.exe tool **SELECT DISK SYSTEM** command.|
 |/logs:\<logDirectory\>| Specifies the directory where MBR2GPT.exe logs should be written. If not specified, **%windir%** is used. If specified, the directory must already exist, it will not be automatically created or overwritten.|
-|/map:\<source\>=\<destination\>| Specifies additional partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexidecimal. The GPT GUID can contain brackets, for example: **/map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}**. Multiple /map options can be specified if multiple mappings are required. |
+|/map:\<source\>=\<destination\>| Specifies additional partition type mappings between MBR and GPT. The MBR partition number is specified in decimal notation, not hexadecimal. The GPT GUID can contain brackets, for example: **/map:42={af9b60a0-1431-4f62-bc68-3311714a69ad}**. Multiple /map options can be specified if multiple mappings are required. |
 |/allowFullOS| By default, MBR2GPT.exe is blocked unless it is run from Windows PE. This option overrides this block and enables disk conversion while running in the full Windows environment. <br>**Note**: Since the existing MBR system partition is in use while running the full Windows environment, it cannot be reused. In this case, a new ESP is created by shrinking the OS partition.|
 
 ## Examples
@@ -95,11 +96,11 @@ MBR2GPT: Validation completed successfully
 In the following example:
 
 1. Using DiskPart, the current disk partition layout is displayed prior to conversion - three partitions are present on the MBR disk (disk 0): a system reserved partition, a Windows partition, and a recovery partition. A DVD-ROM is also present as volume 0.
-2. The OS volume is selected, partitions are listed, and partition details are displayed for the OS partition. The [MBR partition type](https://msdn.microsoft.com/library/windows/desktop/aa363990.aspx) is **07** corresponding to the installable file system (IFS) type. 
+2. The OS volume is selected, partitions are listed, and partition details are displayed for the OS partition. The [MBR partition type](/windows/win32/fileio/disk-partition-types) is **07** corresponding to the installable file system (IFS) type.
 2. The MBR2GPT tool is used to convert disk 0.
 3. The DiskPart tool displays that disk 0 is now using the GPT format.
 4. The new disk layout is displayed - four partitions are present on the GPT disk: three are identical to the previous partitions and one is the new EFI system partition (volume 3).
-5. The OS volume is selected again, and detail displays that it has been converted to the [GPT partition type](https://msdn.microsoft.com/library/windows/desktop/aa365449.aspx) of **ebd0a0a2-b9e5-4433-87c0-68b6b72699c7** corresponding to the **PARTITION_BASIC_DATA_GUID** type. 
+5. The OS volume is selected again, and detail displays that it has been converted to the [GPT partition type](/windows/win32/api/winioctl/ns-winioctl-partition_information_gpt) of **ebd0a0a2-b9e5-4433-87c0-68b6b72699c7** corresponding to the **PARTITION_BASIC_DATA_GUID** type.
 
 >As noted in the output from the MBR2GPT tool, you must make changes to the computer firmware so that the new EFI system partition will boot properly.
 
@@ -231,7 +232,7 @@ The following steps illustrate high-level phases of the MBR-to-GPT conversion pr
 1. Disk validation is performed.
 2. The disk is repartitioned to create an EFI system partition (ESP) if one does not already exist.
 3. UEFI boot files are installed to the ESP.
-4. GPT metatdata and layout information is applied.
+4. GPT metadata and layout information is applied.
 5. The boot configuration data (BCD) store is updated.
 6. Drive letter assignments are restored.
 
@@ -265,13 +266,13 @@ In addition to applying the correct partition types, partitions of type PARTITIO
 - GPT_BASIC_DATA_ATTRIBUTE_NO_DRIVE_LETTER (0x8000000000000000)
 
 For more information about partition types, see:
-- [GPT partition types](https://msdn.microsoft.com/library/windows/desktop/aa365449.aspx)
-- [MBR partition types](https://msdn.microsoft.com/library/windows/desktop/aa363990.aspx)
+- [GPT partition types](/windows/win32/api/winioctl/ns-winioctl-partition_information_gpt)
+- [MBR partition types](/windows/win32/fileio/disk-partition-types)
 
 
 ### Persisting drive letter assignments
 
-The conversion tool will attempt to remap all drive letter assignment information contained in the registry that correspond to the volumes of the converted disk. If a drive letter assignment cannot be restored, an error will be displayed at the console and in the log, so that you can manually perform the correct assignment of the drive letter. **Important**: this code runs after the layout conversion has taken place, so the operation cannot be undone at this stage. 
+The conversion tool will attempt to remap all drive letter assignment information contained in the registry that correspond to the volumes of the converted disk. If a drive letter assignment cannot be restored, an error will be displayed at the console and in the log, so that you can manually perform the correct assignment of the drive letter. **Important**: this code runs after the layout conversion has taken place, so the operation cannot be undone at this stage.
 
 The conversion tool will obtain volume unique ID data before and after the layout conversion, organizing this information into a lookup table. It will then iterate through all the entries in **HKLM\SYSTEM\MountedDevices**, and for each entry do the following:
 
@@ -298,7 +299,7 @@ The default location for all these log files in Windows PE is **%windir%**.
 
 ### Interactive help
 
-To view a list of options available when using the tool, type **mbr2gpt /?** 
+To view a list of options available when using the tool, type **mbr2gpt /?**
 
 The following text is displayed:
 
@@ -375,7 +376,7 @@ Number Friendly Name      Serial Number        HealthStatus OperationalStatus To
 
 You can also view the partition type of a disk by opening the Disk Management tool, right-clicking the disk number, clicking **Properties**, and then clicking the **Volumes** tab. See the following example:
 
-![Volumes](images/mbr2gpt-volume.PNG)
+![Volumes](images/mbr2gpt-volume.png)
 
 
 If Windows PowerShell and Disk Management are not available, such as when you are using Windows PE, you can determine the partition type at a command prompt with the DiskPart tool. To determine the partition style from a command line, type **diskpart** and then type **list disk**. See the following example:
@@ -399,7 +400,7 @@ DISKPART> list disk
 In this example, Disk 0 is formatted with the MBR partition style, and Disk 1 is formatted using GPT.
 
 
-## Known issue 
+## Known issue
 
 ### MBR2GPT.exe cannot run in Windows PE
 
@@ -409,7 +410,7 @@ When you start a Windows 10, version 1903-based computer in the Windows Preinsta
 
 **Issue 2** When you manually run the MBR2GPT.exe command in a Command Prompt window, there is no output from the tool.
 
-**Issue 3** When MBR2GPT.exe runs inside an imaging process such as a System Center Configuration Manager task sequence, an MDT task sequence, or by using a script, you receive the following exit code: 0xC0000135/3221225781.
+**Issue 3** When MBR2GPT.exe runs inside an imaging process such as a Microsoft Endpoint Manager task sequence, an MDT task sequence, or by using a script, you receive the following exit code: 0xC0000135/3221225781.
 
 #### Cause
 
@@ -419,12 +420,15 @@ This issue occurs because in Windows 10, version 1903 and later versions, MBR2GP
 
 To fix this issue, mount the Windows PE image (WIM), copy the missing file from the [Windows 10, version 1903 Assessment and Development Kit (ADK)](https://go.microsoft.com/fwlink/?linkid=2086042) source, and then commit the changes to the WIM. To do this, follow these steps:
 
-1. Mount the Windows PE WIM to a path (for example, C:\WinPE_Mount). For more information about how to mount WIM files, see [Mount an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#mount-an-image).
+1. Mount the Windows PE WIM to a path (for example, C:\WinPE_Mount). For more information about how to mount WIM files, see [Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#mount-an-image).
 
 2. Copy the ReAgent files and the ReAgent localization files from the Window 10, version 1903 ADK source folder to the mounted WIM.
 
    For example, if the ADK is installed to the default location of C:\Program Files (x86)\Windows Kits\10 and the Windows PE image is mounted to C:\WinPE_Mount, run the following commands from an elevated Command Prompt window:
-   
+
+   > [!NOTE]
+   > You can access the ReAgent files if you have installed the User State Migration Tool (USMT) as a feature while installing Windows Assessment and Deployment Kit.
+
    **Command 1:**
    ```cmd
    copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources\ReAgent*.*" "C:\WinPE_Mount\Windows\System32"
@@ -434,20 +438,20 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
    * ReAgent.admx
    * ReAgent.dll
    * ReAgent.xml
-   
+
    **Command 2:**
    ```cmd
    copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources\En-Us\ReAgent*.*" "C:\WinPE_Mount\Windows\System32\En-Us"
-   ```   
+   ```
    This command copies two files:
    * ReAgent.adml
    * ReAgent.dll.mui
 
    > [!NOTE]
    > If you aren't using an English version of Windows, replace "En-Us" in the path with the appropriate string that represents the system language.
-   
-3. After you copy all the files, commit the changes and unmount the Windows PE WIM. MBR2GPT.exe now functions as expected in Windows PE. For information about how to unmount WIM files while committing changes, see [Unmounting an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#unmounting-an-image).
- 
+
+3. After you copy all the files, commit the changes and unmount the Windows PE WIM. MBR2GPT.exe now functions as expected in Windows PE. For information about how to unmount WIM files while committing changes, see [Unmounting an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#unmounting-an-image).
+
 
 ## Related topics
 

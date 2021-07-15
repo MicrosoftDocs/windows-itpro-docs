@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use uninstallation .INF files to uninstall custom components
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The Internet Explorer Administration Kit 11 (IEAK 11) uses Setup information (.inf) files to provide installation instructions for your custom browser packages. You can also use this file to uninstall your custom components by removing the files, registry entries, and shortcuts, and adding your custom component to the list of programs that can be uninstalled from **Uninstall or change a program**.
 
 **To uninstall your custom components**

@@ -11,7 +11,6 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 ms.date: 07/27/2017
@@ -26,12 +25,15 @@ ms.reviewer:
 Enterprise certificate pinning is a Windows feature for remembering, or “pinning,” a root issuing certificate authority or end entity certificate to a given domain name. 
 Enterprise certificate pinning helps reduce man-in-the-middle attacks by enabling you to protect your internal domain names from chaining to unwanted certificates or to fraudulently issued certificates.
 
->[!NOTE]
+> [!NOTE]
 > External domain names, where the certificate issued to these domains is issued by a public certificate authority, are not ideal for enterprise certificate pinning.
 
 Windows Certificate APIs (CertVerifyCertificateChainPolicy and WinVerifyTrust) are updated to check if the site’s server authentication certificate chain matches a restricted set of certificates. 
 These restrictions are encapsulated in a Pin Rules Certificate Trust List (CTL) that is configured and deployed to Windows 10 computers. 
 Any site certificate triggering a name mismatch causes Windows to write an event to the CAPI2 event log and prevents the user from navigating to the web site using Microsoft Edge or Internet Explorer.
+
+> [!NOTE]
+> Enterprise Certificate Pinning feature triggering doesn't cause clients other than Microsoft Edge or Internet Explorer to block the connection.
 
 ## Deployment
 

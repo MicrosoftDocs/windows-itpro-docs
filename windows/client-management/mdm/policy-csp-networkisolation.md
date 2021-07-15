@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - NetworkIsolation
-description: Policy CSP - NetworkIsolation
+description: Learn how Policy CSP - NetworkIsolation contains a list of Enterprise resource domains hosted in the cloud that need to be protected.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -228,7 +228,7 @@ fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 <!--/Scope-->
 <!--Description-->
-Boolean value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets.
+Integer value that tells the client to accept the configured list and not to use heuristics to attempt to find other subnets.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -356,8 +356,8 @@ This is the list of domains that comprise the boundaries of the enterprise. Data
 Here are the steps to create canonical domain names:
 
 1.  Transform the ASCII characters (A-Z only) to lower case. For example, Microsoft.COM -&gt; microsoft.com.
-2.  Call [IdnToAscii](https://msdn.microsoft.com/library/windows/desktop/dd318149.aspx) with IDN\_USE\_STD3\_ASCII\_RULES as the flags.
-3.  Call [IdnToUnicode](https://msdn.microsoft.com/library/windows/desktop/dd318151.aspx) with no flags set (dwFlags = 0).
+2.  Call [IdnToAscii](/windows/win32/api/winnls/nf-winnls-idntoascii) with IDN\_USE\_STD3\_ASCII\_RULES as the flags.
+3.  Call [IdnToUnicode](/windows/win32/api/winnls/nf-winnls-idntounicode) with no flags set (dwFlags = 0).
 
 <!--/Description-->
 <!--/Policy-->
@@ -468,7 +468,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Boolean value that tells the client to accept the configured list of proxies and not try to detect other work proxies.
+Integer value that tells the client to accept the configured list of proxies and not try to detect other work proxies.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -544,12 +544,13 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

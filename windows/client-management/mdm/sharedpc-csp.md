@@ -1,6 +1,6 @@
 ---
 title: SharedPC CSP
-description: SharedPC CSP
+description: Learn how the SharedPC configuration service provider is used to configure settings for Shared PC usage.
 ms.assetid: 31273166-1A1E-4F96-B176-CB42ECB80957
 ms.reviewer: 
 manager: dansimp
@@ -17,10 +17,27 @@ ms.date: 01/16/2019
 
 The SharedPC configuration service provider is used to configure settings for Shared PC usage.
 
-The following diagram shows the SharedPC configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
-
-![sharedpc](images/sharedpc-csp.png)
-
+The following shows the SharedPC configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+```
+./Vendor/MSFT
+SharedPC
+----EnableSharedPCMode
+----SetEduPolicies
+----SetPowerPolicies
+----MaintenanceStartTime
+----SignInOnResume
+----SleepTimeout
+----EnableAccountManager
+----AccountModel
+----DeletionPolicy
+----DiskLevelDeletion
+----DiskLevelCaching
+----RestrictLocalStorage
+----KioskModeAUMID
+----KioskModeUserTileDisplayText
+----InactiveThreshold
+----MaxPageFileSizeMB
+```
 <a href="" id="--vendor-msft-sharedpc"></a>**./Vendor/MSFT/SharedPC**  
 The root node for the SharedPC configuration service provider.
 

@@ -1,6 +1,6 @@
 ---
 title: Alter Windows 10 Start and taskbar via mobile device management
-description: In Windows 10, you can use a mobile device management (MDM) policy to deploy a customized Start and tasbkar layout to users.
+description: In Windows 10, you can use a mobile device management (MDM) policy to deploy a customized Start and taskbar layout to users.
 ms.assetid: F487850D-8950-41FB-9B06-64240127C1E4
 ms.reviewer: 
 manager: dansimp
@@ -8,9 +8,9 @@ keywords: ["start screen", "start menu"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.topic: article
-ms.author: dansimp
+ms.author: greglin
 ms.localizationpriority: medium
 ms.date: 02/08/2018
 ---
@@ -45,11 +45,14 @@ Two features enable Start layout control:
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
     >[!NOTE]
-    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/import-startlayout) cmdlet.
+    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
 
      
 
 -   In Microsoft Intune, you select the Start layout XML file and add it to a device configuration profile. 
+
+    >[!NOTE]
+    >Please do not include XML Prologs like \<?xml version="1.0" encoding="utf-8"?\> in the Start layout XML file. The settings may not be reflected correctly.
 
 ## <a href="" id="bkmk-domaingpodeployment"></a>Create a policy for your customized Start layout
 
@@ -78,7 +81,7 @@ This example uses Microsoft Intune to configure an MDM policy that applies a cus
 
 11. Assign the profile to a device group.
 
-For other MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=623244). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
+For other MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
 
 
 ## Related topics
@@ -93,10 +96,4 @@ For other MDM solutions, you may need to use an OMA-URI setting for Start layout
 - [Customize Windows 10 Start and taskbar with provisioning packages](customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
  
-
- 
-
-
-
-
 

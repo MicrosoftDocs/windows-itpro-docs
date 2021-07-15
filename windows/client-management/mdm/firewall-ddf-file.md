@@ -1,6 +1,6 @@
 ---
 title: Firewall DDF file
-description: Firewall DDF file
+description: Learn about the OMA DM device description framework (DDF) for the Firewall configuration service provider.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10

@@ -2,7 +2,7 @@
 title: 5632(S, F) A request was made to authenticate to a wireless network. (Windows 10)
 description: Describes security event 5632(S, F) A request was made to authenticate to a wireless network.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5632(S, F): A request was made to authenticate to a wireless network.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates when [802.1x](https://technet.microsoft.com/library/hh831831.aspx) authentication attempt was made for wireless network.
+This event generates when [802.1x](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831831(v=ws.11)) authentication attempt was made for wireless network.
 
 It typically generates when network adapter connects to new wireless network.
 
@@ -84,7 +85,7 @@ It typically generates when network adapter connects to new wireless network.
 
 -   **Security ID** \[Type = UnicodeString\]**:** User Principal Name (UPN) or another type of account identifier for which 802.1x authentication request was made.
 
-> **Note**&nbsp;&nbsp;[User principal name](https://msdn.microsoft.com/library/windows/desktop/aa380525(v=vs.85).aspx) (UPN) format is used to specify an Internet-style name, such as UserName@Example.Microsoft.com.
+> **Note**&nbsp;&nbsp;[User principal name](/windows/win32/secauthn/user-name-formats) (UPN) format is used to specify an Internet-style name, such as UserName@Example.Microsoft.com.
 
 -   **Account Name** \[Type = UnicodeString\]**:** the name of the account for which 802.1x authentication request was made.
 
@@ -141,4 +142,3 @@ You can see interface’s GUID using the following commands:
 For 5632(S, F): A request was made to authenticate to a wireless network.
 
 -   There is no recommendation for this event in this document.
-

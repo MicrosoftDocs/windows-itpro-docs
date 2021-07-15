@@ -1,6 +1,6 @@
 ---
 title: Windows Upgrade and Migration Considerations (Windows 10)
-description: Windows Upgrade and Migration Considerations
+description: Discover the Microsoft tools you can use to move files and settings between installations, as well as special considerations for performing an upgrade or migration.
 ms.assetid: 7f85095c-5922-45e9-b28e-91b1263c7281
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +8,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -21,7 +22,7 @@ You can upgrade from an earlier version of Windows, which means you can install 
 ## Migrate files and settings
 Migration tools are available to transfer settings from one computer that is running Windows to another. These tools transfer only the program settings, not the programs themselves.
 
-For more information about application compatibility, see the [Application Compatibility Toolkit (ACT)](https://go.microsoft.com/fwlink/p/?LinkId=131349).
+For more information about application compatibility, see the [Application Compatibility Toolkit (ACT)](/previous-versions/windows/server/cc722055(v=ws.10)).
 
 The User State Migration Tool (USMT) 10.0 is an application intended for administrators who are performing large-scale automated deployments. For deployment to a small number of computers or for individually customized deployments, you can use Windows Easy Transfer.
 
@@ -40,7 +41,7 @@ You can use USMT to automate migration during large deployments of the Windows o
 Whether you are upgrading or migrating to a new version of Windows, you must be aware of the following issues and considerations:
 
 ### Application compatibility
-For more information about application compatibility in Windows, see [Use Upgrade Readiness to manage Windows upgrades](https://docs.microsoft.com/windows/deployment/upgrade/use-upgrade-readiness-to-manage-windows-upgrades).
+For more information about application compatibility in Windows, see [Use Upgrade Readiness to manage Windows upgrades](/windows/deployment/upgrade/use-upgrade-readiness-to-manage-windows-upgrades).
 
 ### Multilingual Windows image upgrades
 When performing multilingual Windows upgrades, cross-language upgrades are not supported by USMT. If you are upgrading or migrating an operating system with multiple language packs installed, you can upgrade or migrate only to the system default user interface (UI) language. For example, if English is the default but you have a Spanish language pack installed, you can upgrade or migrate only to English.
@@ -72,8 +73,3 @@ This feature is disabled if this registry key value exists and is configured to�
  
 
  
-
-
-
-
-

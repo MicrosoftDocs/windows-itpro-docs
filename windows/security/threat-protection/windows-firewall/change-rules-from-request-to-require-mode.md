@@ -1,10 +1,10 @@
 ---
 title: Change Rules from Request to Require Mode (Windows 10)
-description: Change Rules from Request to Require Mode
+description: Learn how to convert a rule from request to require mode and apply the modified GPOs to the client devices.
 ms.assetid: ad969eda-c681-48cb-a2c4-0b6cae5f4cff
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Change Rules from Request to Require Mode

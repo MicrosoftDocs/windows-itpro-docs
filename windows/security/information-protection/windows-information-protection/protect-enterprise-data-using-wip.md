@@ -9,7 +9,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -42,7 +42,7 @@ You’ll need this software to run WIP in your enterprise:
 
 |Operating system | Management solution |
 |-----------------|---------------------|
-|Windows 10, version 1607 or later | Microsoft Intune<br><br>-OR-<br><br>System Center Configuration Manager<br><br>-OR-<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt697634.aspx) documentation.|
+|Windows 10, version 1607 or later | Microsoft Intune<br><br>-OR-<br><br>Microsoft Endpoint Configuration Manager<br><br>-OR-<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](/windows/client-management/mdm/enterprisedataprotection-csp) documentation.|
 
 ## What is enterprise data control?
 Effective collaboration means that you need to share data with others in your enterprise. This sharing can be from one extreme where everyone has access to everything without any security, all the way to the other extreme where people can’t share anything and it’s all highly secured. Most enterprises fall somewhere in between the two extremes, where success is balanced between providing the necessary access with the potential for improper data disclosure.
@@ -59,7 +59,7 @@ To help address this security insufficiency, companies developed data loss preve
 
 - **The ability to specify what happens when data matches a rule, including whether employees can bypass enforcement.** For example, in Microsoft SharePoint and SharePoint Online, the Microsoft data loss prevention system lets you warn your employees that shared data includes sensitive info, and to share it anyway (with an optional audit log entry).
 
-Unfortunately, data loss prevention systems have their own problems. For example, the more detailed the rule set, the more false positives are created, leading employees to believe that the rules slow down their work and need to be bypassed in order to remain productive, potentially leading to data being incorrectly blocked or improperly released. Another major problem is that data loss prevention systems must be widely implemented to be effective. For example, if your company uses a data loss prevention system for email, but not for file shares or document storage, you might find that your data leaks through the unprotected channels. But perhaps the biggest problem with data loss prevention systems is that it provides a jarring experience that interrupts the employees’ natural workflow by stopping some operations (such as sending a message with an attachment that the system tags as sensitive) while allowing others, often according to subtle rules that the employee doesn’t see and can’t understand.
+Unfortunately, data loss prevention systems have their own problems. For example, the less detailed the rule set, the more false positives are created, leading employees to believe that the rules slow down their work and need to be bypassed in order to remain productive, potentially leading to data being incorrectly blocked or improperly released. Another major problem is that data loss prevention systems must be widely implemented to be effective. For example, if your company uses a data loss prevention system for email, but not for file shares or document storage, you might find that your data leaks through the unprotected channels. But perhaps the biggest problem with data loss prevention systems is that it provides a jarring experience that interrupts the employees’ natural workflow by stopping some operations (such as sending a message with an attachment that the system tags as sensitive) while allowing others, often according to subtle rules that the employee doesn’t see and can’t understand.
 
 ### Using information rights management systems
 To help address the potential data loss prevention system problems, companies developed information rights management (also known as IRM) systems. Information rights management systems embed protection directly into documents, so that when an employee creates a document, he or she determines what kind of protection to apply. For example, an employee can choose to stop the document from being forwarded, printed, shared outside of the organization, and so on. 
@@ -79,7 +79,7 @@ WIP provides:
 
 - Use of audit reports for tracking issues and remedial actions.
 
-- Integration with your existing management system (Microsoft Intune, System Center Configuration Manager, or your current mobile device management (MDM) system) to configure, deploy, and manage WIP for your company.
+- Integration with your existing management system (Microsoft Intune, Microsoft Endpoint Configuration Manager, or your current mobile device management (MDM) system) to configure, deploy, and manage WIP for your company.
 
 ## Why use WIP?
 WIP is the mobile application management (MAM) mechanism on Windows 10. WIP gives you a new way to manage data policy enforcement for apps and documents on Windows 10 desktop operating systems, along with the ability to remove access to enterprise data from both enterprise and personal devices (after enrollment in an enterprise management solution, like Intune).
@@ -90,7 +90,7 @@ WIP is the mobile application management (MAM) mechanism on Windows 10. WIP give
 
     -   **Copying or downloading enterprise data.** When an employee or an app downloads content from a location like SharePoint, a network share, or an enterprise web location, while using a WIP-protected device, WIP encrypts the data on the device.
 
-    - **Using protected apps.** Managed apps (apps that you've included on the **Protected apps** list in your WIP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if WIP management is set to **Block**, your employees can copy and paste from one protected app to another protected app, but not to personal apps. Imagine an HR person wants to copy a job description from a protected app to the internal career website, an enterprise-protected location, but goofs and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
+    - **Using protected apps.** Managed apps (apps that you've included on the **Protected apps** list in your WIP policy) are allowed to access your enterprise data and will interact differently when used with unallowed, non-enterprise aware, or personal-only apps. For example, if WIP management is set to **Block**, your employees can copy and paste from one protected app to another protected app, but not to personal apps. Imagine an HR person wants to copy a job description from a protected app to the internal career website, an enterprise-protected location, but makes a mistake and tries to paste into a personal app instead. The paste action fails and a notification pops up, saying that the app couldn’t paste because of a policy restriction. The HR person then correctly pastes to the career website without a problem.
 
     -   **Managed apps and restrictions.** With WIP you can control which apps can access and use your enterprise data. After adding an app to your protected apps list, the app is trusted with enterprise data. All apps not on this list are stopped from accessing your enterprise data, depending on your WIP management-mode.
     
@@ -110,7 +110,7 @@ WIP is the mobile application management (MAM) mechanism on Windows 10. WIP give
 -   **Remove access to enterprise data from enterprise-protected devices.** WIP gives admins the ability to revoke enterprise data from one or many MDM-enrolled devices, while leaving personal data alone. This is a benefit when an employee leaves your company, or in the case of a stolen device. After determining that the data access needs to be removed, you can use Microsoft Intune to unenroll the device so when it connects to the network, the user's encryption key for the device is revoked and the enterprise data becomes unreadable.
 
     >[!NOTE]
-    >For management of Surface devices it is recommended that you use the Current Branch of System Center Configuration Manager.<br>System Center Configuration Manager also allows you to revoke enterprise data. However, it does it by performing a factory reset of the device.
+    >For management of Surface devices it is recommended that you use the Current Branch of Microsoft Endpoint Configuration Manager.<br>Microsoft Endpoint Manager also allows you to revoke enterprise data. However, it does it by performing a factory reset of the device.
 
 ## How WIP works
 WIP helps address your everyday challenges in the enterprise. Including:

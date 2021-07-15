@@ -24,9 +24,9 @@ ms.reviewer:
 -   Certificate trust
 
 
-The key registration process for the On-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory schema.  The key-trust model receives the schema extension when the first Windows Server 2016 domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 schema. If you already have a Windows Server 2016 domain controller in your forest, you can skip the **Updating the Schema** and **Create the KeyCredential Admins Security Global Group** steps.
+The key registration process for the On-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory or later schema.  The key-trust model receives the schema extension when the first Windows Server 2016 or later domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 or later schema. If you already have a Windows Server 2016 or later domain controller in your forest, you can skip the **Updating the Schema** and **Create the KeyCredential Admins Security Global Group** steps.
 
-Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
+Manually updating Active Directory uses the command-line utility **adprep.exe** located at **\<drive>:\support\adprep** on the Windows Server 2016 or later DVD or ISO.  Before running adprep.exe, you must identify the domain controller hosting the schema master role.
 
 ## Discovering schema role
 
@@ -44,11 +44,12 @@ Windows Hello for Business uses asymmetric keys as user credentials (rather than
 
 Sign-in to the domain controller hosting the schema master operational role using enterprise administrator equivalent credentials.
 
-1. Open an elevated command prompt.
-2. Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
-3. To update the schema, type ```adprep /forestprep```.
-4. Read the Adprep Warning.  Type the letter **C** and press **Enter** to update the schema.
-5. Close the Command Prompt and sign-out.
+1. Mount the ISO file (or insert the DVD) containing the Windows Server 2016 or later installation media.
+2. Open an elevated command prompt.
+3. Type ```cd /d x:\support\adprep``` where *x* is the drive letter of the DVD or mounted ISO.
+4. To update the schema, type ```adprep /forestprep```.
+5. Read the Adprep Warning.  Type the letter **C** and press **Enter** to update the schema.
+6. Close the Command Prompt and sign-out.
 
 ## Create the KeyCredential Admins Security Global Group
 

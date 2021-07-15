@@ -9,10 +9,10 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/30/2018
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -40,7 +40,6 @@ Remove access to the context menus for the task bar	| Enabled
 Clear history of recently opened documents on exit |	Enabled
 Prevent users from customizing their Start Screen |	Enabled
 Prevent users from uninstalling applications from Start |		Enabled
-Remove All Programs list from the Start menu |		Enabled
 Remove Run menu from Start Menu	 |	Enabled
 Disable showing balloon notifications as toast |		Enabled
 Do not allow pinning items in Jump Lists |		Enabled
@@ -71,15 +70,14 @@ Prevent access to drives from My Computer	 |	Enabled - Restrict all drivers
 ## MDM policy
 
 
-Some of the MDM policies based on the [Policy configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) affect all users on the system (i.e. system-wide).
+Some of the MDM policies based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider) affect all users on the system (i.e. system-wide).
 
 Setting	| 	Value	| System-wide
  --- | --- | ---
-[Experience/AllowCortana](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)		| 0 - Not allowed	| 	Yes
-[Start/AllowPinnedFolderSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldersettings)	| 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
+[Experience/AllowCortana](/windows/client-management/mdm/policy-csp-experience#experience-allowcortana)		| 0 - Not allowed	| 	Yes
+[Start/AllowPinnedFolderSettings](/windows/client-management/mdm/policy-csp-start#start-allowpinnedfoldersettings)	| 	0 - Shortcut is hidden and disables the setting in the Settings app	| 	Yes
 Start/HidePeopleBar		| 1 - True (hide)	| 	No
-[Start/HideChangeAccountSettings](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)		| 1 - True (hide) | Yes
-[WindowsInkWorkspace/AllowWindowsInkWorkspace](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace)	| 	0 - Access to ink workspace is disabled and the feature is turned off	| 	Yes
-[Start/StartLayout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start#start-startlayout)	| Configuration dependent	| 	No
-[WindowsLogon/DontDisplayNetworkSelectionUI](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)	| 	&lt;Enabled/&gt;	| 	Yes
-
+[Start/HideChangeAccountSettings](/windows/client-management/mdm/policy-csp-start#start-hidechangeaccountsettings)		| 1 - True (hide) | Yes
+[WindowsInkWorkspace/AllowWindowsInkWorkspace](/windows/client-management/mdm/policy-csp-windowsinkworkspace#windowsinkworkspace-allowwindowsinkworkspace)	| 	0 - Access to ink workspace is disabled and the feature is turned off	| 	Yes
+[Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout)	| Configuration dependent	| 	No
+[WindowsLogon/DontDisplayNetworkSelectionUI](/windows/client-management/mdm/policy-csp-windowslogon#windowslogon-dontdisplaynetworkselectionui)	| 	&lt;Enabled/&gt;	| 	Yes

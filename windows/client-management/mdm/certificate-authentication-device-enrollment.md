@@ -8,20 +8,18 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 # Certificate authentication device enrollment
 
+This section provides an example of the mobile device enrollment protocol using certificate authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
-This section provides an example of the mobile device enrollment protocol using certificate authentication policy. For details about the Microsoft mobile device enrollment protocol for Windows 10, see [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( http://go.microsoft.com/fwlink/p/?LinkId=619347).
-
-> **Note**  To set up devices to use certificate authentication for enrollment, you should create a provisioning package. For more information about provisioning packages, see [Build and apply a provisioning package](https://msdn.microsoft.com/library/windows/hardware/dn916107).
-
+> [!Note]
+> To set up devices to use certificate authentication for enrollment, you should create a provisioning package. For more information about provisioning packages, see [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package).
 
 ## In this topic
-
 
 -   [Discovery service](#discovery-service)
 -   [Enrollment policy web service](#enrollment-policy-web-service)
@@ -33,7 +31,7 @@ For the list of enrollment scenarios not supported in Windows 10, see [Enrollme
 
 The following example shows the discovery service request.
 
-``` syntax
+```xml
 POST /EnrollmentServer/Discovery.svc HTTP/1.1
 Content-Type: application/soap+xml; charset=utf-8
 User-Agent: Windows Enrollment Client
@@ -62,8 +60,7 @@ Cache-Control: no-cache
             <EmailAddress>user@contoso.com</EmailAddress>
             <OSEdition>101</OSEdition> <!--New in Windows 10-->
             <OSVersion>10.0.0.0</OSVersion> <!--New in Windows 10-->
-            <RequestVersion>3.0</RequestVersion> <!--Updated in Windows 10-->
-               <DeviceType>WindowsPhone</DeviceType> <!--Legacy in Windows 10 for Windows Phone/Handheld-->
+            <RequestVersion>3.0</RequestVersion> <!--Updated in Windows 10-->   
             <ApplicationVersion>10.0.0.0</ApplicationVersion>
             <AuthPolicies>Certificate</AuthPolicies> <!--New in Windows 10-->
          </request> 
@@ -74,7 +71,7 @@ Cache-Control: no-cache
 
 The following example shows the discovery service response.
 
-```
+```xml
 HTTP/1.1 200 OK
 Content-Length: 865
 Content-Type: application/soap+xml; charset=utf-8
@@ -114,7 +111,7 @@ http://schemas.microsoft.com/windows/management/2012/01/enrollment/IDiscoverySer
 
 The following example shows the policy web service request.
 
-```
+```xml
 POST /ENROLLMENTSERVER/DEVICEENROLLMENTWEBSERVICE.SVC HTTP/1.1
 Content-Type: application/soap+xml; charset=utf-8
 User-Agent: Windows Enrollment Client
@@ -186,7 +183,7 @@ Cache-Control: no-cache
 
 The following snippet shows the policy web service response.
 
-```
+```xml
 HTTP/1.1 200 OK
 Date: Fri, 03 Aug 2012 20:00:00 GMT
 Server: <server name here>
@@ -264,7 +261,7 @@ Content-Length: xxxx
 
 The following example shows the enrollment web service request.
 
-```
+```xml
 POST /EnrollmentServer/DeviceEnrollmentWebService.svc HTTP/1.1
 Content-Type: application/soap+xml; charset=utf-8
 User-Agent: Windows Enrollment Client
@@ -355,12 +352,8 @@ http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrol
                <ac:Value>49015420323756</ac:Value>
             <ac:ContextItem Name="EnrollmentType"> <!--New in Windows 10-->
                <ac:Value>Full</ac:Value>
-            <ac:ContextItem Name="DeviceType"> <!—From Windows Phone 8.1-->
-               <ac:Value>WindowsPhone</ac:Value>
-            </ac:ContextItem>
-            <ac:ContextItem Name="ApplicationVersion"> <!—From Windows Phone 8.1-->
-               <ac:Value>10.0.0.0</ac:Value>
-            </ac:ContextItem>
+              </ac:ContextItem>
+                     </ac:ContextItem>
             <ac:ContextItem Name="DeviceID"> <!--From Handheld 8.1 -->
                <ac:Value>7BA748C8-703E-4DF2-A74A-92984117346A</ac:Value> 
                <ac:ContextItem Name="EnrollmentData">
@@ -376,7 +369,7 @@ http://schemas.microsoft.com/5.0.0.0/ConfigurationManager/Enrollment/DeviceEnrol
 
 The following example shows the enrollment web service response.
 
-```
+```xml
 HTTP/1.1 200 OK
 Cache-Control: private
 Content-Length: 10231
@@ -429,7 +422,7 @@ Date: Fri, 03 Aug 2012 00:32:59 GMT
 
 The following example shows the encoded provisioning XML.
 
-```
+```xml
 <wap-provisioningdoc version="1.1">
    <characteristic type="CertificateStore">
       <characteristic type="Root">
@@ -507,10 +500,3 @@ The following example shows the encoded provisioning XML.
         protocol. This configuration service provider is being deprecated for Windows 10. -->
 </wap-provisioningdoc>
 ```
-
- 
-
-
-
-
-

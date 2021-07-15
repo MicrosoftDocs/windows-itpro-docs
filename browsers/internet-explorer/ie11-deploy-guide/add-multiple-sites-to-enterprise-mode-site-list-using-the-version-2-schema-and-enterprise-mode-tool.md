@@ -18,6 +18,9 @@ ms.date: 10/24/2017
 
 # Add multiple sites to the Enterprise Mode site list using a file and the Enterprise Mode Site List Manager (schema v.2)
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -116,7 +119,3 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
 - [Enterprise Mode schema v.2 guidance](enterprise-mode-schema-version-2-guidance.md)
  
-
- 
-
-

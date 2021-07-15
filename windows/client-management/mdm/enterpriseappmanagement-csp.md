@@ -1,6 +1,6 @@
 ---
 title: EnterpriseAppManagement CSP
-description: EnterpriseAppManagement CSP
+description: Handle enterprise application management tasks using EnterpriseAppManagement configuration service provider (CSP).
 ms.assetid: 698b8bf4-652e-474b-97e4-381031357623
 ms.reviewer: 
 manager: dansimp
@@ -51,7 +51,7 @@ Optional. The character string that contains the URI of the first enterprise app
 Supported operations are Get and Add.
 
 <a href="" id="enterpriseid-certificatesearchcriteria"></a>***EnterpriseID*/CertificateSearchCriteria**
-Optional. The character string that contains the search criteria to search for the DM-enrolled client certificate. The certificate is used for client authentication during enterprise application download. The company's application content server should use the enterprise-enrolled client certificate to authenticate the device. The value must be a URL encoded representation of the X.500 distinguished name of the client certificates Subject property. The X.500 name must conform to the format required by the [CertStrToName](https://go.microsoft.com/fwlink/p/?LinkId=523869) function. This search parameter is case sensitive. Scope is dynamic.
+Optional. The character string that contains the search criteria to search for the DM-enrolled client certificate. The certificate is used for client authentication during enterprise application download. The company's application content server should use the enterprise-enrolled client certificate to authenticate the device. The value must be a URL encoded representation of the X.500 distinguished name of the client certificates Subject property. The X.500 name must conform to the format required by the [CertStrToName](/windows/win32/api/wincrypt/nf-wincrypt-certstrtonamea) function. This search parameter is case sensitive. Scope is dynamic.
 
 Supported operations are Get and Add.
 
@@ -536,11 +536,4 @@ Uninstall an installed enterprise application with product ID “{7BB316008A-141
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
  
-
- 
-
-
-
-
-
 

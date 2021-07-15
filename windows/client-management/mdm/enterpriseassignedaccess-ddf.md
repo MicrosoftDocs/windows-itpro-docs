@@ -1,6 +1,6 @@
 ---
 title: EnterpriseAssignedAccess DDF
-description: EnterpriseAssignedAccess DDF
+description: Utilize the OMA DM device description framework (DDF) for the EnterpriseAssignedAccess configuration service provider.
 ms.assetid: 8BD6FB05-E643-4695-99A2-633995884B37
 ms.reviewer: 
 manager: dansimp

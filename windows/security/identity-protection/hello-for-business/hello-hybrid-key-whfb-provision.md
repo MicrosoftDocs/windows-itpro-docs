@@ -1,6 +1,6 @@
 ---
-title: Hybrid Windows Hello for Business key trust Provisioning (Windows Hello for Business)
-description: Provisioning for hybrid key trust deployments of  Windows Hello for Business.
+title: Hybrid Azure AD joined Windows Hello for Business key trust Provisioning (Windows Hello for Business)
+description: Learn about provisioning for hybrid key trust deployments of Windows Hello for Business and learn where to find the hybrid key trust deployment guide.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,10 +13,10 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/20/2018
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Hybrid Windows Hello for Business Provisioning
+# Hybrid Azure AD joined Windows Hello for Business Key Trust Provisioning
 
 **Applies to**
 -   Windows 10, version 1703 or later
@@ -27,7 +27,7 @@ ms.reviewer:
 ## Provisioning
 The Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user receives their desktop.  Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.
 
-![Event358](images/Event358.png)
+![Event358](images/Event358-2.png)
 
 The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is AAD joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **AzureADJoined** reads **Yes**.
 
@@ -55,10 +55,7 @@ The remainder of the provisioning includes Windows Hello for Business requesting
 > [!IMPORTANT]
 > The minimum time needed to synchronize the user's public key from Azure Active Directory to the on-premises Active Directory is 30 minutes. The Azure AD Connect scheduler controls the synchronization interval. 
 > **This synchronization latency delays the user's ability to authenticate and use on-premises resources until the user's public key has synchronized to Active Directory.** Once synchronized, the user can authenticate and use on-premises resources.
-> Read [Azure AD Connect sync: Scheduler](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) to view and adjust the **synchronization cycle** for your organization.
-
-> [!NOTE]
-> Microsoft is actively investigating ways to reduce the synchronization latency and delays.  
+> Read [Azure AD Connect sync: Scheduler](/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) to view and adjust the **synchronization cycle** for your organization.
 
 <br><br>
 

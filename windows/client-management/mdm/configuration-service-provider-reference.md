@@ -9,17 +9,14 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 05/13/2019
+ms.date: 09/18/2020
 ---
 
 # Configuration service provider reference
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 A configuration service provider (CSP) is an interface to read, set, modify, or delete configuration settings on the device. These settings map to registry keys or files. Some configuration service providers support the WAP format, some support SyncML, and some support both. SyncML is only used over–the–air for Open Mobile Alliance Device Management (OMA DM), whereas WAP can be used over–the–air for OMA Client Provisioning, or it can be included in the phone image as a .provxml file that is installed during boot.
 
-For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224). For CSP DDF files, see [CSP DDF files download](#csp-ddf-files-download).
+For information about the bridge WMI provider classes that map to these CSPs, see [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal). For CSP DDF files, see [CSP DDF files download](#csp-ddf-files-download).
 
 
 Additional lists:
@@ -44,10 +41,8 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -72,15 +67,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -100,12 +93,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -128,12 +119,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -156,12 +145,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -184,10 +171,8 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
@@ -212,12 +197,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -240,15 +223,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -268,12 +249,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -296,12 +275,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
@@ -324,12 +301,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -352,15 +327,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -380,15 +353,14 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 </tr>
 </table>
@@ -408,15 +380,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -436,15 +406,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -464,15 +432,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -492,12 +458,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -520,7 +484,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -528,7 +491,6 @@ Additional lists:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -548,12 +510,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -576,12 +536,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -604,12 +562,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -632,12 +588,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -660,15 +614,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -688,12 +640,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -716,12 +666,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -744,10 +692,8 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -772,15 +718,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -800,15 +744,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -828,12 +770,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -856,12 +796,11 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+	
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -884,12 +823,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
+	</tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -912,7 +849,7 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
+	
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -920,7 +857,6 @@ Additional lists:
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 </tr>
 </table>
@@ -940,12 +876,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -968,7 +902,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
@@ -976,7 +909,6 @@ Additional lists:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -996,15 +928,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -1024,15 +954,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -1052,7 +980,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1060,7 +987,6 @@ Additional lists:
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -1080,15 +1006,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -1108,12 +1032,11 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" />
+<a href="/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection">Only for mobile application management (MAM)</td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1136,15 +1059,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -1164,15 +1085,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -1192,15 +1111,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -1220,12 +1137,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1248,11 +1163,9 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
@@ -1276,16 +1189,14 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
 </tr>
 </table>
 
@@ -1304,7 +1215,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1312,7 +1222,6 @@ Additional lists:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -1332,12 +1241,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1360,14 +1267,12 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
@@ -1377,7 +1282,7 @@ Additional lists:
 <!--EndCSP-->
 
 <!--StartCSP-->
-[Maps CSP](maps-csp.md)
+[LanguagePackManagement CSP](language-pack-management-csp.md)
 
 <!--StartSKU-->
 <table>
@@ -1391,12 +1296,37 @@ Additional lists:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+</table>
+
+<!--EndSKU-->
+<!--EndCSP-->
+<!--StartCSP-->
+[Maps CSP](maps-csp.md)
+
+<!--StartSKU-->
+<table>
+<tr>
+	<th>Home</th>
+	<th>Pro</th>
+	<th>Business</th>
+	<th>Enterprise</th>
+	<th>Education</th>
+	<th>Mobile</th>
+</tr>
+<tr>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -1416,7 +1346,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1424,7 +1353,6 @@ Additional lists:
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 </tr>
 </table>
@@ -1444,10 +1372,8 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
@@ -1472,12 +1398,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1500,12 +1424,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1528,11 +1450,9 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
@@ -1556,16 +1476,14 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
 
@@ -1584,12 +1502,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1612,7 +1528,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1620,7 +1535,6 @@ Additional lists:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -1640,12 +1554,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1668,12 +1580,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1696,12 +1606,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1724,7 +1632,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -1732,7 +1639,6 @@ Additional lists:
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -1752,12 +1658,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1780,15 +1684,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -1808,16 +1710,14 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
-	<td><img src="images/checkmark.png" alt="check mark" /> (Provisioning only)</td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
 </tr>
 </table>
 
@@ -1836,12 +1736,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1864,15 +1762,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -1892,12 +1788,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -1920,15 +1814,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -1948,15 +1840,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -1976,12 +1866,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2004,12 +1892,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2032,12 +1918,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2060,12 +1944,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2088,15 +1970,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -2116,12 +1996,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2144,15 +2022,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -2172,12 +2048,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2200,7 +2074,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td></td>
@@ -2228,7 +2101,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -2236,7 +2108,6 @@ Additional lists:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -2256,11 +2127,9 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2284,15 +2153,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -2312,15 +2179,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -2340,12 +2205,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2368,15 +2231,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -2396,12 +2257,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2424,7 +2283,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td></td>
@@ -2452,12 +2310,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2480,15 +2336,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -2508,7 +2362,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -2516,7 +2369,6 @@ Additional lists:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -2536,15 +2388,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table>
@@ -2564,7 +2414,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
@@ -2572,8 +2421,7 @@ Additional lists:
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>>
 </tr>
 </table>
 
@@ -2593,12 +2441,10 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -2621,15 +2467,13 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td><img src="images/crossmark.png" alt="cross mark" /></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table>
@@ -2649,11 +2493,9 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
 	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
@@ -2677,7 +2519,6 @@ Additional lists:
 	<th>Enterprise</th>
 	<th>Education</th>
 	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
 </tr>
 <tr>
 	<td></td>
@@ -2686,7 +2527,6 @@ Additional lists:
 	<td></td>
 	<td></td>
 	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
 </tr>
 </table>
 
@@ -2699,6 +2539,7 @@ Additional lists:
 ## CSP DDF files download
 
 You can download the DDF files for various CSPs from the links below:
+- [Download all the DDF files for Windows 10, version 2004](https://download.microsoft.com/download/4/0/f/40f9ec45-3bea-442c-8afd-21edc1e057d8/Windows10_2004_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1903](https://download.microsoft.com/download/6/F/0/6F019079-6EB0-41B5-88E8-D1CE77DBA27B/Windows10_1903_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1809](https://download.microsoft.com/download/6/A/7/6A735141-5CFA-4C1B-94F4-B292407AF662/Windows10_1809_DDF_download.zip)
 - [Download all the DDF files for Windows 10, version 1803](https://download.microsoft.com/download/6/2/7/6276FE19-E3FD-4254-9C16-3C31CAA2DE50/Windows10_1803_DDF_download.zip)
@@ -2714,29 +2555,32 @@ The following list shows the CSPs supported in HoloLens devices:
 
 | Configuration service provider        | HoloLens (1st gen) Development Edition      | HoloLens (1st gen) Commercial Suite | HoloLens 2 |
 |------|--------|--------|--------|
-| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       | ![check mark](images/checkmark.png)
+| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png)
 | [Accounts CSP](accounts-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
 | [ApplicationControl CSP](applicationcontrol-csp.md) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) |  ![check mark](images/checkmark.png) |
 | [AppLocker CSP](applocker-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![cross mark](images/crossmark.png) |
-| [AssignedAccess CSP](assignedaccess-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       | ![check mark](images/checkmark.png) |
+| [AssignedAccess CSP](assignedaccess-csp.md)      | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
 | [CertificateStore CSP](certificatestore-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)| ![check mark](images/checkmark.png) |
 | [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [DevDetail CSP](devdetail-csp.md)   | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)2   (runtime provisioning via provisioning packages only; no MDM support)| ![check mark](images/checkmark.png) |
+| [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>2</sup>   (runtime provisioning via provisioning packages only; no MDM support)| ![check mark](images/checkmark.png) |
 | [DeviceManageability CSP](devicemanageability-csp.md) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
 | [DeviceStatus CSP](devicestatus-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)  | ![check mark](images/checkmark.png) |
 | [DevInfo CSP](devinfo-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [DiagnosticLog CSP](diagnosticlog-csp.md)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [DMAcc CSP](dmacc-csp.md)      | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [DMClient CSP](dmclient-csp.md)    | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>10</sup>  |
 | [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [NetworkProxy CSP](networkproxy-csp.md) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
+| [NetworkQoSPolicy CSP](networkqospolicy-csp.md)  | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png)       | ![check mark](images/checkmark.png) <sup>8</sup>|
 | [NodeCache CSP](nodecache-csp.md)  | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 [PassportForWork CSP](passportforwork-csp.md) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
 | [Policy CSP](policy-configuration-service-provider.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [RemoteFind CSP](remotefind-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       | ![check mark](images/checkmark.png) |
-| [RemoteWipe CSP](remotewipe-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)4       | ![check mark](images/checkmark.png) |
+| [RemoteFind CSP](remotefind-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
+| [RemoteWipe CSP](remotewipe-csp.md) (**doWipe** and **doWipePersistProvisionedData** nodes only)  | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
 | [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
+| [TenantLockdown CSP](tenantlockdown-csp.md) | ![cross mark](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>10</sup>  |
 | [Update CSP](update-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [VPNv2 CSP](vpnv2-csp.md)    | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
 | [WiFi CSP](wifi-csp.md)     | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
@@ -2745,6 +2589,9 @@ The following list shows the CSPs supported in HoloLens devices:
  
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
+-   [Accounts CSP](accounts-csp.md)<sup>9</sup> 
+    > [!NOTE]
+    > Support in Surface Hub is limited to **Domain\ComputerName**.
 -   [AccountManagement CSP](accountmanagement-csp.md)
 -   [APPLICATION CSP](application-csp.md)
 -   [CertificateStore CSP](certificatestore-csp.md)
@@ -2758,18 +2605,21 @@ The following list shows the CSPs supported in HoloLens devices:
 -   [DMAcc CSP](dmacc-csp.md)
 -   [DMClient CSP](dmclient-csp.md)
 -   [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
+-   [Firewall-CSP](firewall-csp.md)<sup>9</sup> 
 -   [HealthAttestation CSP](healthattestation-csp.md)
 -   [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
 -   [NodeCache CSP](nodecache-csp.md)
 -   [PassportForWork CSP](passportforwork-csp.md)
 -   [Policy CSP](policy-configuration-service-provider.md)
 -   [Reboot CSP](reboot-csp.md)
--   [RemoteWipe CSP](remotewipe-csp.md)
+-   [RemoteWipe CSP](remotewipe-csp.md)<sup>9</sup> 
 -   [Reporting CSP](reporting-csp.md)
 -   [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 -   [SurfaceHub CSP](surfacehub-csp.md)
 -   [UEFI CSP](uefi-csp.md)
+-   [Wifi-CSP](wifi-csp.md)<sup>9</sup> 
 -   [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
+-   [Wirednetwork-CSP](wirednetwork-csp.md)<sup>9</sup> 
 
 
 ## <a href="" id="iotcoresupport"></a>CSPs supported in Windows 10 IoT Core
@@ -2800,9 +2650,16 @@ The following list shows the CSPs supported in HoloLens devices:
 <hr>
 
  Footnotes:
+- A - Only for mobile application management (MAM).
+- B - Provisioning only.
 - 1 - Added in Windows 10, version 1607.
 - 2 - Added in Windows 10, version 1703.
 - 3 - Added in Windows 10, version 1709.
 - 4 - Added in Windows 10, version 1803.
 - 5 - Added in Windows 10, version 1809.
 - 6 - Added in Windows 10, version 1903.
+- 7 - Added in Windows 10, version 1909.
+- 8 - Added in Windows 10, version 2004.
+- 9 - Added in Windows 10 Team 2020 Update
+- 10 - Added in [Windows Holographic, version 20H2](/hololens/hololens-release-notes#windows-holographic-version-20h2)
+

@@ -3,7 +3,8 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/**/*.md",
+          "**/**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
@@ -18,9 +19,9 @@
     "resource": [
       {
         "files": [
-          "**/*.png",
-          "**/*.jpg",
-          "**/*.gif"
+          "**/**/*.png",
+          "**/**/*.jpg",
+          "**/**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
@@ -32,7 +33,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
-      "ms.technology": "windows",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.topic": "article",
       "audience": "ITPro",
       "feedback_system": "GitHub",
@@ -44,7 +45,17 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "What's new in Windows"
+      "titleSuffix": "What's new in Windows",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],

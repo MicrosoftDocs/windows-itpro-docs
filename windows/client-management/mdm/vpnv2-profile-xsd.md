@@ -1,6 +1,6 @@
 ---
 title: ProfileXML XSD
-description: Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some profile examples.
+description: Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some profile examples.
 ms.assetid: 2F32E14B-F9B9-4760-AE94-E57F1D4DFDB3
 ms.reviewer:
 manager: dansimp
@@ -9,12 +9,12 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 02/05/2018
+ms.date: 07/14/2020
 ---
 
 # ProfileXML XSD
 
-Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some profile examples.
+Here's the XSD for the ProfileXML node in the VPNv2 CSP and VpnManagementAgent::AddProfileFromXmlAsync for Windows 10 and some profile examples.
 
 ## XSD for the VPN profile
 
@@ -25,15 +25,16 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
   <xs:element name="VPNProfile">
     <xs:complexType>
       <xs:sequence>
+        <xs:element name="ProfileName" type="xs:string" minOccurs="0" maxOccurs="1" />
         <xs:element name="EdpModeId" type="xs:string" minOccurs="0" maxOccurs="1" />
         <xs:element name="RememberCredentials" type="xs:boolean" minOccurs="0" maxOccurs="1" />
         <xs:element name="AlwaysOn" type="xs:boolean" minOccurs="0" maxOccurs="1" />
         <xs:element name="DnsSuffix" type="xs:string" minOccurs="0" maxOccurs="1"/>
         <xs:element name="TrustedNetworkDetection" type="xs:string" minOccurs="0" maxOccurs="1"/>
-        <xs:element name="LockDown" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
         <xs:element name="DeviceTunnel" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
         <xs:element name="RegisterDNS" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
         <xs:element name="ByPassForLocal" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+        <xs:element name="RequireVpnClientAppUI" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
         <xs:element name="Proxy" minOccurs="0" maxOccurs="1">
           <xs:complexType>
             <xs:sequence>
@@ -107,6 +108,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
               <xs:element name="DnsServers" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="WebProxyServers" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="AutoTrigger" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="Persistent" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -127,6 +129,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
               <xs:element name="LocalAddressRanges" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="RemoteAddressRanges" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="RoutingPolicyType" type="xs:string" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="Direction" type="xs:string" minOccurs="0" maxOccurs="1"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -138,6 +141,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
               <xs:element name="NativeProtocolType" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="L2tpPsk" type="xs:string" minOccurs="0" maxOccurs="1"/>
               <xs:element name="DisableClassBasedDefaultRoute" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="PlumbIKEv2TSAsRoutes" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
               <xs:element name="CryptographySuite" minOccurs="0" maxOccurs="1">
                 <xs:complexType>
                   <xs:sequence>
@@ -155,7 +159,7 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
                   <xs:choice>
                     <xs:sequence>
                       <xs:element name="UserMethod" type="xs:string" minOccurs="0" maxOccurs="1" />
-                      <xs:element name="Eap" minOccurs="1" maxOccurs="1">
+                      <xs:element name="Eap" minOccurs="0" maxOccurs="1">
                         <xs:complexType>
                           <xs:sequence>
                             <xs:element name="Configuration" minOccurs="1" maxOccurs="1">
@@ -176,12 +180,13 @@ Here's the XSD for the ProfileXML node in VPNv2 CSP for Windows 10 and some pro
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element minOccurs="0" maxOccurs="unbounded" name="Route">
+        <xs:element name="Route" minOccurs="0" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Address" type="xs:string" minOccurs="1" maxOccurs="1"/>
               <xs:element name="PrefixSize" type="xs:unsignedByte" minOccurs="1" maxOccurs="1"/>
               <xs:element name="ExclusionRoute" type="xs:boolean" minOccurs="0" maxOccurs="1"/>
+              <xs:element name="Metric" type="xs:unsignedInt" minOccurs="0" maxOccurs="1"/>
             </xs:sequence>
           </xs:complexType>
         </xs:element>

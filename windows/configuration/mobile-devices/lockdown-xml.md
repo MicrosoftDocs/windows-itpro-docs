@@ -8,8 +8,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, mobile
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
@@ -26,10 +26,10 @@ Windows 10 Mobile allows enterprises to lock down a device, define multiple user
 
 This is accomplished using Lockdown XML, an XML file that contains settings for Windows 10 Mobile. When you deploy the lockdown XML file to a device, it is saved on the device as **wehlockdown.xml**. When the device boots, it looks for wehlockdown.xml and applies any settings configured in the file. 
 
-In this topic, you'll learn how to create an XML file that contains all lockdown entries available in the AssignedAccessXml area of the [EnterpriseAssignedAccess configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseassignedaccess-csp). This topic provides example XML that you can use in your own lockdown XML file that can be included in a provisioning package or when using a mobile device management (MDM) solution to push lockdown settings to enrolled devices. You can also use the [Lockdown Designer app](mobile-lockdown-designer.md) to configure and export your lockdown XML file.
+In this topic, you'll learn how to create an XML file that contains all lockdown entries available in the AssignedAccessXml area of the [EnterpriseAssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/enterpriseassignedaccess-csp). This topic provides example XML that you can use in your own lockdown XML file that can be included in a provisioning package or when using a mobile device management (MDM) solution to push lockdown settings to enrolled devices. You can also use the [Lockdown Designer app](mobile-lockdown-designer.md) to configure and export your lockdown XML file.
 
 > [!NOTE]
->  On Windows 10 desktop editions, *assigned access* is a feature that lets you configure the device to run a single app above the lockscreen ([kiosk mode](../set-up-a-device-for-anyone-to-use.md)). On a Windows 10 Mobile device, assigned access refers to the lockdown settings in AssignedAccessXml in the [EnterpriseAssignedAccess configuration service provider (CSP)](https://go.microsoft.com/fwlink/p/?LinkID=618601).
+>  On Windows 10 desktop editions, *assigned access* is a feature that lets you configure the device to run a single app above the lockscreen ([kiosk mode](../kiosk-methods.md)). On a Windows 10 Mobile device, assigned access refers to the lockdown settings in AssignedAccessXml in the [EnterpriseAssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/enterpriseassignedaccess-csp).
 
 If you're not familiar with CSPs, read [Introduction to configuration service providers (CSPs)](../provisioning-packages/how-it-pros-can-use-configuration-service-providers.md) first.
 
@@ -272,14 +272,14 @@ In the following example, when a user presses the Search button, the phone diale
 
 ![XML for CSP Runner](../images/CSPRunnerXML.jpg)
 
-You can use CSPRunner to include settings that are not defined in AssignedAccessXML. For example, you can include settings from other sections of EnterpriseAssignedAccess CSP, such as lockscreen, theme, and time zone. You can also include settings from other CSPs, such as [Wi-Fi CSP](https://go.microsoft.com/fwlink/p/?LinkID=717460) or [Policy CSP](https://msdn.microsoft.com/library/windows/hardware/dn904962%28v=vs.85%29.aspx).
+You can use CSPRunner to include settings that are not defined in AssignedAccessXML. For example, you can include settings from other sections of EnterpriseAssignedAccess CSP, such as lockscreen, theme, and time zone. You can also include settings from other CSPs, such as [Wi-Fi CSP](/windows/client-management/mdm/wifi-csp) or [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider).
 
 CSPRunner is helpful when you are configuring a device to support multiple roles. It lets you apply different policies according to the role that is signed on. For example, Wi-Fi could be enabled for a supervisor role and disabled for a stocking clerk role. 
 
 In CSPRunner, you specify the CSP and settings using SyncML, a standardized markup language for device management. A SyncML section can include multiple settings, or you can use multiple SyncML sections -- it's up to you how you want to organize settings in this section.
 
 > [!NOTE]
-> This description of SyncML is just the information that you need to use SyncML in a lockdown XML file. To learn more about SyncML, see [Structure of OMA DM provisioning files](https://msdn.microsoft.com/windows/hardware/dn914774.aspx).
+> This description of SyncML is just the information that you need to use SyncML in a lockdown XML file. To learn more about SyncML, see [Structure of OMA DM provisioning files](/windows/client-management/mdm/structure-of-oma-dm-provisioning-files).
 
 Let's start with the structure of SyncML in the following example:
 
@@ -385,14 +385,14 @@ For a list of the settings and quick actions that you can allow or block, see [S
 
   If you have existing lockdown xml, you must update start screen size if your device has >=400epx on its short axis so that tiles on Start can fill all 8 columns if you want to use all 8 columns instead of 6, or use 6 columns instead of 4. 
 
-  [Learn about effective pixel width (epx) for different device size classes.](https://go.microsoft.com/fwlink/p/?LinkId=733340)
+  [Learn about effective pixel width (epx) for different device size classes.](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design)
 
 
 ## Configure additional roles
 
 You can add custom configurations by role. In addition to the role configuration, you must also install a login application on the device. The app displays a list of available roles on the device; the user taps a role, such as "Manager"; the configuration defined for the "Manager" role is applied.
 
-[Learn how to create a login application that will work with your Lockdown XML file.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceLockdownAzureLogin) For reference, see the [Windows.Embedded.DeviceLockdown API](https://msdn.microsoft.com/library/windows/apps/windows.embedded.devicelockdown).
+[Learn how to create a login application that will work with your Lockdown XML file.](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/DeviceLockdownAzureLogin) For reference, see the [Windows.Embedded.DeviceLockdown API](/uwp/api/Windows.Embedded.DeviceLockdown).
 
 In the XML file, you define each role with a GUID and name, as shown in the following example:
 
@@ -433,14 +433,14 @@ You can configure the same settings for each role as you did for the default rol
 
 ## Validate your XML
 
-You can validate your lockdown XML file against the [EnterpriseAssignedAccess XSD](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/enterpriseassignedaccess-xsd).
+You can validate your lockdown XML file against the [EnterpriseAssignedAccess XSD](/windows/client-management/mdm/enterpriseassignedaccess-xsd).
 
 ## Add lockdown XML to a provisioning package
 
 
 Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (ADK) for Windows 10 to create a provisioning package. [Install the ADK.](https://go.microsoft.com/fwlink/p/?LinkId=526740)
 
-1.  Follow the instructions at [Build and apply a provisioning package](https://go.microsoft.com/fwlink/p/?LinkID=629651) to create a project, selecting **Common to all Windows mobile editions** for your project.
+1.  Follow the instructions at [Build and apply a provisioning package](../provisioning-packages/provisioning-create-package.md) to create a project, selecting **Common to all Windows mobile editions** for your project.
 
 2.  In **Available customizations**, go to **Runtime settings** &gt; **EmbeddedLockdownProfiles** &gt; **AssignedAccessXml**.
 
@@ -477,12 +477,12 @@ Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (
     -   If you choose, you can build the provisioning package again and pick a different path for the output package. To do this, click **Back** to change the output package name and path, and then click **Next** to start another build.
     -   If you are done, click **Finish** to close the wizard and go back to the **Customizations Page**.
 
-After you build the provisioning package, follow the instructions for [applying a provisioning package at runtime to Windows 10 Mobile](https://go.microsoft.com/fwlink/p/?LinkID=619164).
+After you build the provisioning package, follow the instructions for [applying a provisioning package at runtime to Windows 10 Mobile](../provisioning-packages/provisioning-create-package.md).
 
 ## Push lockdown XML using MDM
 
 
-After you deploy your devices, you can still configure lockdown settings through your MDM solution if it supports the [EnterpriseAssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=618601).
+After you deploy your devices, you can still configure lockdown settings through your MDM solution if it supports the [EnterpriseAssignedAccess CSP](/windows/client-management/mdm/enterpriseassignedaccess-csp).
 
 To push lockdown settings to enrolled devices, use the AssignedAccessXML setting and use the lockdown XML as the value. The lockdown XML will be in a HandheldLockdown section that becomes XML embedded in XML, so the XML that you enter must use escaped characters (such as `&lt;` in place of &lt;). After the MDM provider pushes your lockdown settings to the device, the CSP processes the file and updates the device.
 

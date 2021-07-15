@@ -34,8 +34,8 @@ Keep these best practices in mind when deploying any edition of Windows 10 in sc
 ## Windows 10 Contacts privacy settings
 
 If you’re an IT administrator who deploys Windows 10 in a school or district, we recommend that you review these deployment resources to make informed decisions about how you can configure telemetry for your school or district:
-* [Configure Windows telemetry in your organization](https://go.microsoft.com/fwlink/?LinkId=817241) - Describes the types of telemetry we gather and the ways you can manage this data.
-* [Manage connections from Windows operating system components to Microsoft services](https://go.microsoft.com/fwlink/?LinkId=817240) - Learn about network connections that Windows components make to Microsoft and also the privacy settings (such as location, camera, messaging, and more) that affect data that is shared with either Microsoft or apps and how you can manage this data.
+* [Configure Windows telemetry in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization) - Describes the types of telemetry we gather and the ways you can manage this data.
+* [Manage connections from Windows operating system components to Microsoft services](/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services) - Learn about network connections that Windows components make to Microsoft and also the privacy settings (such as location, camera, messaging, and more) that affect data that is shared with either Microsoft or apps and how you can manage this data.
 
 In particular, the **Contacts** area in the **Settings** > **Privacy** section lets you choose which apps can access a student’s contacts list. By default, this setting is turned on.
 

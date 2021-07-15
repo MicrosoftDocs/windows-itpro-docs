@@ -7,7 +7,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -23,12 +23,12 @@ ms.reviewer:
 - Windows 10, version 1607 and later
 - Windows 10 Mobile, version 1607 and later
 
-If you don’t already have an EFS DRA certificate, you’ll need to create and extract one from your system before you can use Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your organization. For the purposes of this section, we’ll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
+If you don't already have an EFS DRA certificate, you'll need to create and extract one from your system before you can use Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your organization. For the purposes of this section, we'll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
 
 The recovery process included in this topic only works for desktop devices. WIP deletes the data on Windows 10 Mobile devices.   
 
 >[!IMPORTANT]
->If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx).<br><br>If your DRA certificate has expired, you won’t be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
+>If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](/previous-versions/technet-magazine/cc162507(v=msdn.10)) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](/previous-versions/tn-archive/cc875821(v=technet.10)).<br><br>If your DRA certificate has expired, you won't be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
 
 ## Manually create an EFS DRA certificate
 
@@ -47,16 +47,16 @@ The recovery process included in this topic only works for desktop devices. WIP 
     >[!Important]
     >Because the private keys in your DRA .pfx files can be used to decrypt any WIP file, you must protect them accordingly. We highly recommend storing these files offline, keeping copies on a smart card with strong protection for normal use and master copies in a secured physical location.
 
-4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as [Microsoft Intune](create-wip-policy-using-intune-azure.md) or [System Center Configuration Manager](create-wip-policy-using-sccm.md).
+4. Add your EFS DRA certificate to your WIP policy using a deployment tool, such as [Microsoft Intune](create-wip-policy-using-intune-azure.md) or [Microsoft Endpoint Configuration Manager](create-wip-policy-using-configmgr.md).
 
 > [!NOTE]
 > This certificate can be used in Intune for policies both _with_ device enrollment (MDM) and _without_ device enrollment (MAM).
 
 ## Verify your data recovery certificate is correctly set up on a WIP client computer
 
-1. Find or create a file that's encrypted using Windows Information Protection. For example, you could open an app on your allowed app list, and then create and save a file so it’s encrypted by WIP. 
+1. Find or create a file that's encrypted using Windows Information Protection. For example, you could open an app on your allowed app list, and then create and save a file so it's encrypted by WIP. 
 
-2. Open an app on your protected app list, and then create and save a file so that it’s encrypted by WIP.
+2. Open an app on your protected app list, and then create and save a file so that it's encrypted by WIP.
 
 3. Open a command prompt with elevated rights, navigate to where you stored the file you just created, and then run this command:
 
@@ -89,7 +89,7 @@ It's possible that you might revoke data from an unenrolled device only to later
    
    <code>Robocopy "%localappdata%\Microsoft\EDP\Recovery" "<i>new_location</i>" * /EFSRAW</code>
 
-   Where "*new_location*" is in a different directory. This can be on the employee’s device or on a shared folder on a computer that runs Windows 8 or Windows Server 2012 or newer and can be accessed while you're logged in as a data recovery agent.
+   Where "*new_location*" is in a different directory. This can be on the employee's device or on a shared folder on a computer that runs Windows 8 or Windows Server 2012 or newer and can be accessed while you're logged in as a data recovery agent.
 
    To start Robocopy in S mode, open Task Manager. Click **File** > **Run new task**, type the command, and click **Create this task with administrative privileges**.
    
@@ -109,12 +109,12 @@ It's possible that you might revoke data from an unenrolled device only to later
 
 4. Ask the employee to lock and unlock the device.
 
-   The Windows Credential service automatically recovers the employee’s previously revoked keys from the `Recovery\Input` location.
+   The Windows Credential service automatically recovers the employee's previously revoked keys from the `Recovery\Input` location.
 
 ## Auto-recovery of encryption keys
 Starting with Windows 10, version 1709, WIP includes a data recovery feature that lets your employees auto-recover access to work files if the encryption key is lost and the files are no longer accessible. This typically happens if an employee reimages the operating system partition, removing the WIP key info, or if a device is reported as lost and you mistakenly target the wrong device for unenrollment.
 
-To help make sure employees can always access files, WIP creates an auto-recovery key that’s backed up to their Azure Active Directory (Azure AD) identity.
+To help make sure employees can always access files, WIP creates an auto-recovery key that's backed up to their Azure Active Directory (Azure AD) identity.
 
 The employee experience is based on sign in with an Azure AD work account. The employee can either:
 
@@ -141,15 +141,15 @@ After signing in, the necessary WIP key info is automatically downloaded and emp
 3. Sign-in to Azure AD as the employee and verify that the files now open
 
 ## Related topics
-- [Security Watch Deploying EFS: Part 1](https://technet.microsoft.com/magazine/2007.02.securitywatch.aspx)
+- [Security Watch Deploying EFS: Part 1](/previous-versions/technet-magazine/cc162507(v=msdn.10))
 
-- [Protecting Data by Using EFS to Encrypt Hard Drives](https://msdn.microsoft.com/library/cc875821.aspx)
+- [Protecting Data by Using EFS to Encrypt Hard Drives](/previous-versions/tn-archive/cc875821(v=technet.10))
 
 - [Create a Windows Information Protection (WIP) policy using Microsoft Intune](create-wip-policy-using-intune-azure.md)
 
-- [Create a Windows Information Protection (WIP) policy using System Center Configuration Manager](create-wip-policy-using-sccm.md)
+- [Create a Windows Information Protection (WIP) policy using Microsoft Endpoint Configuration Manager](create-wip-policy-using-configmgr.md)
 
-- [Creating a Domain-Based Recovery Agent](https://msdn.microsoft.com/library/cc875821.aspx#EJAA)
+- [Creating a Domain-Based Recovery Agent](/previous-versions/tn-archive/cc875821(v=technet.10)#EJAA)
 
 
 >[!Note]

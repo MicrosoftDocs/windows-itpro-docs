@@ -2,7 +2,7 @@
 title: 4913(S) Central Access Policy on the object was changed. (Windows 10)
 description: Describes security event 4913(S) Central Access Policy on the object was changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4913(S): Central Access Policy on the object was changed.
@@ -26,9 +27,9 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates when a [Central Access Policy](https://technet.microsoft.com/library/hh831425.aspx) on a file system object is changed.
+This event generates when a [Central Access Policy](/windows-server/identity/solution-guides/scenario--central-access-policy) on a file system object is changed.
 
-This event always generates, regardless of the object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) settings.
+This event always generates, regardless of the object’s [SACL](/windows/win32/secauthz/access-control-lists) settings.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -287,6 +288,3 @@ For 4913(S): Central Access Policy on the object was changed.
 -   If you have a pre-defined list of restricted substrings or words in process names (for example, “**mimikatz**” or “**cain.exe**”), check for these substrings in “**Process Name**.”
 
 -   If you have specific files, folders, or entire systems to which a specific Central Access Policy should be applied, you can monitor this event and compare the Central Access Policy SID in “**New Security Descriptor**” to see if it matches the expected policy.
-
-
-

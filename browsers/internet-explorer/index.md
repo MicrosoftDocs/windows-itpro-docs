@@ -15,7 +15,7 @@ ms.date: 07/27/2017
 # Internet Explorer 11 (IE11)
 Find info about Internet Explorer 11 that's important to IT Pros.
 
-- [Internet Explorer 11 - FAQ for IT Pros](ie11-faq/faq-for-it-pros-ie11.md)
+- [Internet Explorer 11 - FAQ for IT Pros](ie11-faq/faq-for-it-pros-ie11.yml)
 
 - [Internet Explorer 11 (IE11) - Deployment Guide for IT Pros](ie11-deploy-guide/index.md)
 

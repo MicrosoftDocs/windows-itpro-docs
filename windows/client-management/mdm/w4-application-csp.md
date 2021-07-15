@@ -1,6 +1,6 @@
 ---
 title: w4 APPLICATION CSP
-description: w4 APPLICATION CSP
+description: Use an APPLICATION configuration service provider (CSP) that has an APPID of w4 to configure Multimedia Messaging Service (MMS).
 ms.assetid: ef42b82a-1f04-49e4-8a48-bd4e439fc43a
 ms.reviewer: 
 manager: dansimp
@@ -66,15 +66,6 @@ Required. Specifies the address of the MMS application server, as a string. The 
 
 <a href="" id="ms"></a>**MS**
 Optional. The maximum authorized size, in KB, for multimedia content. This parameter takes a numeric value in string format. If the value is not a number, or is less than or equal to 10, it will be ignored and outgoing MMS will not be resized.
-
-## Remarks
-
-
-Windows Phone MMS does not support user–selectable profiles. While multiple MMS profiles can be provisioned and saved simultaneously, only the last received profile is active.
-
-If provisioning XML is received for a profile with an existing name, the values in that profile will be overwritten with the new values.
-
-For more information about the parameters used by the w4 APPLICATION configuration service provider and how they are used, see the OMA MMS Conformance Document (OMA-TS-MMS-CONF-V1\_3-20051027-C) available from the [OMA website](https://go.microsoft.com/fwlink/p/?LinkId=526900).
 
 ## Related topics
 

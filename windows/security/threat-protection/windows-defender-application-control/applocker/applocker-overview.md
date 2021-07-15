@@ -4,7 +4,7 @@ description: This topic provides a description of AppLocker and can help you dec
 ms.assetid: 94b57864-2112-43b6-96fb-2863c985dc9a
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/16/2017
+ms.technology: mde
 ---
 
 # AppLocker
@@ -23,7 +24,10 @@ ms.date: 10/16/2017
 - Windows 10
 - Windows Server
 
-This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers.
+This topic provides a description of AppLocker and can help you decide if your organization can benefit from deploying AppLocker application control policies. AppLocker helps you control which apps and files users can run. These include executable files, scripts, Windows Installer files, dynamic-link libraries (DLLs), packaged apps, and packaged app installers. 
+
+> [!NOTE]
+> AppLocker is unable to control processes running under the system account on any operating system.
 
 AppLocker can help you:
 
@@ -77,6 +81,9 @@ The following are examples of scenarios in which AppLocker can be used:
 -   A single user or small group of users needs to use a specific app that is denied for all others.
 -   Some computers in your organization are shared by people who have different software usage needs, and you need to protect specific apps.
 -   In addition to other measures, you need to control the access to sensitive data through app usage.
+
+> [!NOTE]
+> AppLocker is a defense-in-depth security feature and not a [security boundary](https://www.microsoft.com/msrc/windows-security-servicing-criteria). [Windows Defender Application Control](/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview) should be used when the goal is to provide robust protection against a threat and there are expected to be no by-design limitations that would prevent the security feature from achieving this goal.
 
 AppLocker can help you protect the digital assets within your organization, reduce the threat of malicious software being introduced into your environment, and improve the management of application control and the maintenance of application control policies.
 
@@ -136,4 +143,3 @@ For reference in your security planning, the following table identifies the base
 | [AppLocker design guide](applocker-policies-design-guide.md) | This topic for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker. |
 | [AppLocker deployment guide](applocker-policies-deployment-guide.md) | This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies. |
 | [AppLocker technical reference](applocker-technical-reference.md) | This overview topic for IT professionals provides links to the topics in the technical reference. |
-

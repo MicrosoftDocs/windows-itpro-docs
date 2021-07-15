@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the CabSigning .INS file to customize the digital signature info for your apps
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about how to customize the digital signature info for your apps.
 
 |Name       |Value                      |Description  |

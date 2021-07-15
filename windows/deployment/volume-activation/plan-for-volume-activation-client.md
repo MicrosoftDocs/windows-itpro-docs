@@ -199,7 +199,7 @@ When you create installation media or images for client computers that will be a
 
 Installation media from Microsoft for Enterprise editions of the Windows operating system may already contain the GVLK. One GVLK is available for each type of installation. The GLVK will not activate the software against Microsoft activation servers, but rather against a KMS or Active Directory-based activation object. In other words, the GVLK does not work unless a valid KMS host key can be found. GVLKs are the only product keys that do not need to be kept confidential.
 
-Typically, you will not need to manually enter a GVLK unless a computer has been activated with a MAK or a retail key and it is being converted to a KMS activation or to Active Directory-based activation. If you need to locate the GVLK for a particular client edition, see [Appendix A: KMS Client Setup Keys](https://technet.microsoft.com/library/jj612867.aspx).
+Typically, you will not need to manually enter a GVLK unless a computer has been activated with a MAK or a retail key and it is being converted to a KMS activation or to Active Directory-based activation. If you need to locate the GVLK for a particular client edition, see [Appendix A: KMS Client Setup Keys](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v=ws.11)).
 
 ### Multiple activation keys
 
@@ -228,5 +228,4 @@ The flow of KMS activation is shown in Figure 3, and it follows this sequence:
 
 ## See also
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
- 
  

@@ -26,7 +26,7 @@ ms.reviewer:
 - Key trust
 
 > [!NOTE]
->There was an issue with key trust on Windows Server 2019. To fix it, refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044).
+>There was an issue with key trust authentication on Windows Server 2019. To fix it, refer to [KB4487044](https://support.microsoft.com/en-us/help/4487044/windows-10-update-kb4487044).
 
 ## How many is adequate
 

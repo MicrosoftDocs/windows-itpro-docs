@@ -8,7 +8,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.date: 05/17/2018
@@ -20,10 +20,10 @@ ms.date: 05/17/2018
 -   Windows 10
 -   Windows 10 Mobile
 
-Most of the VPN settings in Windows 10 can be configured in VPN profiles using Microsoft Intune or System Center Configuration Manager. All VPN settings in Windows 10 can be configued using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](https://msdn.microsoft.com/library/windows/hardware/dn914776.aspx). 
+Most of the VPN settings in Windows 10 can be configured in VPN profiles using Microsoft Intune or Microsoft Endpoint Configuration Manager. All VPN settings in Windows 10 can be configured using the **ProfileXML** node in the [VPNv2 configuration service provider (CSP)](/windows/client-management/mdm/vpnv2-csp). 
 
 >[!NOTE]
->If you're not familiar with CSPs, read [Introduction to configuration service providers (CSPs)](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers) first.
+>If you're not familiar with CSPs, read [Introduction to configuration service providers (CSPs)](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) first.
 
 The following table lists the VPN settings and whether the setting can be configured in Intune and Configuration Manager, or can only be configured using **ProfileXML**.
 
@@ -34,7 +34,6 @@ The following table lists the VPN settings and whether the setting can be config
 | Routing: forced-tunnel | yes |
 | Authentication (EAP) | yes, if connection type is built-in |
 | Conditional access | yes |
-| Proxy settings | yes, by PAC/WPAD file or server and port |
 | Name resolution: NRPT | yes |
 | Name resolution: DNS suffix | no |
 | Name resolution: persistent | no |
@@ -45,8 +44,12 @@ The following table lists the VPN settings and whether the setting can be config
 | LockDown | no |
 | Windows Information Protection (WIP) | yes |
 | Traffic filters | yes |
+| Proxy settings | yes, by PAC/WPAD file or server and port |
 
-The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This is particularly useful for deploying profiles with features that are not yet supported by MDMs. You can get additional examples in the [ProfileXML XSD](https://msdn.microsoft.com/library/windows/hardware/mt755930.aspx) topic.
+> [!NOTE] 
+> VPN proxy settings are only used on Force Tunnel Connections. On Split Tunnel Connections, the general proxy settings are used.
+
+The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN profile as a single blob. This is particularly useful for deploying profiles with features that are not yet supported by MDMs. You can get additional examples in the [ProfileXML XSD](/windows/client-management/mdm/vpnv2-profile-xsd) topic.
 
 
 ## Sample Native VPN profile
@@ -62,8 +65,7 @@ The following is a sample Native VPN profile. This blob would fall under the Pro
     
     <!--Sample EAP profile (PEAP)--> 
     <Authentication>  
-      <UserMethod>Eap</UserMethod>  
-      <MachineMethod>Eap</MachineMethod>  
+      <UserMethod>Eap</UserMethod> 
       <Eap>  
        <Configuration>
           <EapHostConfig xmlns="http://www.microsoft.com/provisioning/EapHostConfig">
@@ -317,9 +319,9 @@ After you configure the settings that you want using ProfileXML, you can apply i
 
 ## Learn more
 
-- [Learn how to configure VPN connections in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/vpn-connections-in-microsoft-intune)
-- [VPNv2 configuration service provider (CSP) reference](https://go.microsoft.com/fwlink/p/?LinkId=617588)
-- [How to Create VPN Profiles in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=618028)
+- [Create VPN profiles to connect to VPN servers in Intune](/mem/intune/configuration/vpn-settings-configure)
+- [VPNv2 configuration service provider (CSP) reference](/windows/client-management/mdm/vpnv2-csp)
+- [How to Create VPN Profiles in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/dn261200(v=technet.10))
 
 ## Related topics
 

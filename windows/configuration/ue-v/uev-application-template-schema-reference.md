@@ -1,7 +1,7 @@
 ---
 title: Application Template Schema Reference for UE-V
-description: Application Template Schema Reference for UE-V
-author: trudyha
+description: Learn details about the XML structure of the UE-V settings location templates and learn how to edit these files.
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -70,9 +70,9 @@ The XML declaration must specify the XML version 1.0 attribute (&lt;?xml version
 
 **Type: String**
 
-UE-V uses the http://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate namespace for all applications. SettingsLocationTemplate is the root element and contains all other elements. Reference SettingsLocationTemplate in all templates using this tag:
+UE-V uses the https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate namespace for all applications. SettingsLocationTemplate is the root element and contains all other elements. Reference SettingsLocationTemplate in all templates using this tag:
 
-`<SettingsLocationTemplate xmlns='http://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate'>`
+`<SettingsLocationTemplate xmlns='https://schemas.microsoft.com/UserExperienceVirtualization/2012/SettingsLocationTemplate'>`
 
 ### <a href="" id="data21"></a>Data types
 
@@ -646,10 +646,10 @@ Here is the SettingsLocationTemplate.xsd file showing its elements, child elemen
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema id="UevSettingsLocationTemplate"
-  targetNamespace="http://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"
+  targetNamespace="https://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"
   elementFormDefault="qualified"
-  xmlns="http://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"
-  xmlns:mstns="http://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"
+  xmlns="https://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"
+  xmlns:mstns="https://schemas.microsoft.com/UserExperienceVirtualization/2013A/SettingsLocationTemplate"
   xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
     <xs:simpleType name="Guid">

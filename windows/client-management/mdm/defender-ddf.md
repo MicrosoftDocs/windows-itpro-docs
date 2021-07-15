@@ -1,6 +1,6 @@
 ---
 title: Defender DDF file
-description: Defender DDF file
+description: Learn how the OMA DM device description framework (DDF) for the Defender configuration service provider is used.
 ms.assetid: 39B9E6CF-4857-4199-B3C3-EC740A439F65
 ms.reviewer: 
 manager: dansimp
@@ -10,11 +10,9 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/21/2019
 ---
 
 # Defender DDF file
-
 
 This topic shows the OMA DM device description framework (DDF) for the **Defender** configuration service provider. DDF files are used only with OMA DM provisioning XML.
 
@@ -46,7 +44,7 @@ The XML below is the current version for this CSP.
             <Permanent />
           </Scope>
           <DFType>
-            <MIME>com.microsoft/1.2/MDM/Defender</MIME>
+            <MIME>com.microsoft/1.3/MDM/Defender</MIME>
           </DFType>
         </DFProperties>
         <Node>
@@ -735,6 +733,30 @@ The XML below is the current version for this CSP.
               </DFType>
             </DFProperties>
           </Node>
+          <Node>
+            <NodeName>SupportLogLocation</NodeName>
+            <DFProperties>
+              <AccessType>
+                <Get />
+                <Replace />
+                <Add />
+                <Delete />
+              </AccessType>
+              <DFFormat>
+                <chr />
+              </DFFormat>
+              <Occurrence>
+                <One />
+              </Occurrence>
+              <Scope>
+                <Dynamic />
+              </Scope>
+              <DFType>
+                <MIME>text/plain</MIME>
+              </DFType>
+            </DFProperties>
+          </Node>
+          <Node>
         </Node>
         <Node>
           <NodeName>Scan</NodeName>

@@ -2,16 +2,17 @@
 title: System Guard Secure Launch and SMM protection (Windows 10)
 description: Explains how to configure System Guard Secure Launch and System Management Mode (SMM protection) to improve the startup security of Windows 10 devices.
 search.appverid: met150
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
-ms.date: 03/01/2019
+ms.date: 07/01/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # System Guard Secure Launch and SMM protection
@@ -29,49 +30,51 @@ You can enable System Guard Secure Launch by using any of these options:
 
 ### Mobile Device Management
 
-System Guard Secure Launch can be configured for Mobile Device Management (MDM) by using DeviceGuard policies in the Policy CSP, specifically [DeviceGuard/ConfigureSystemGuardLaunch](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-deviceguard#deviceguard-configuresystemguardlaunch).
+System Guard Secure Launch can be configured for Mobile Device Management (MDM) by using DeviceGuard policies in the Policy CSP, specifically [DeviceGuard/ConfigureSystemGuardLaunch](/windows/client-management/mdm/policy-csp-deviceguard#deviceguard-configuresystemguardlaunch).
 
 ### Group Policy
 
 1. Click **Start** > type and then click **Edit group policy**. 
+
 2. Click **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn On Virtualization Based Security** > **Secure Launch Configuration**.
 
-![Secure Launch Group Policy](images/secure-launch-group-policy.png)
+    ![Secure Launch Configuration](images/secure-launch-group-policy.png)
 
 ### Windows Security Center
 
 Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation** > **Firmware protection**.
 
-![Windows Security Center](images/secure-launch-security-app.png)
-
+  ![Windows Security Center](images/secure-launch-security-app.png)
+  
 ### Registry
 
 1. Open Registry editor.
+
 2. Click **HKEY_LOCAL_MACHINE** > **SYSTEM** > **CurrentControlSet** > **Control** > **DeviceGuard** > **Scenarios**.
+
 3. Right-click **Scenarios** > **New** > **Key** and name the new key **SystemGuard**.
+
 4. Right-click **SystemGuard** > **New** > **DWORD (32-bit) Value** and name the new DWORD **Enabled**. 
+
 5. Double-click **Enabled**, change the value to **1**, and click **OK**.
 
-![Secure Launch Registry](images/secure-launch-registry.png)
-
-> [!IMPORTANT]
-> If System Guard is enabled with a registry key, standard hardware security is not available for the Intel i5 7200U processor.
+    ![Secure Launch Registry](images/secure-launch-registry.png)
 
 ## How to verify System Guard Secure Launch is configured and running
 
 To verify that Secure Launch is running, use System Information (MSInfo32). Click **Start**, search for **System Information**, and look under **Virtualization-based Security Services Running** and **Virtualization-based Security Services Configured**.
 
-![Windows Security Center](images/secure-launch-msinfo.png)
+![Verifying Secure Launch is running in the Windows Security Center](images/secure-launch-msinfo.png)
 
->[!NOTE]
->To enable System Guard Secure launch, the platform must meet all the baseline requirements for [Device Guard](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control), [Credential Guard](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard-requirements), and [Virtualization Based Security](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-virtualization-based-protection-of-code-integrity).
+> [!NOTE]
+> To enable System Guard Secure launch, the platform must meet all the baseline requirements for [Device Guard](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md), [Credential Guard](../../identity-protection/credential-guard/credential-guard-requirements.md), and [Virtualization Based Security](/windows-hardware/design/device-experiences/oem-vbs).
 
 ## System requirements for System Guard
 
 |For Intel&reg; vPro&trade; processors starting with Intel&reg; Coffeelake, Whiskeylake, or later silicon|Description|
 |--------|-----------|
-|64-bit CPU|A 64-bit computer with minimum 4 cores (logical processors) is required for hypervisor and virtualization-based security (VBS). For more info about Hyper-V, see [Hyper-V on Windows Server 2016](https://docs.microsoft.com/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/about/). For more info about hypervisor, see [Hypervisor Specifications](https://docs.microsoft.com/virtualization/hyper-v-on-windows/reference/tlfs).|
-|Trusted Platform Module (TPM) 2.0|Platforms must support a discrete TPM 2.0. Integrated/firmware TPMs are not supported.|
+|64-bit CPU|A 64-bit computer with minimum 4 cores (logical processors) is required for hypervisor and virtualization-based security (VBS). For more info about Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/). For more info about hypervisor, see [Hypervisor Specifications](/virtualization/hyper-v-on-windows/reference/tlfs).|
+|Trusted Platform Module (TPM) 2.0|Platforms must support a discrete TPM 2.0. Integrated/firmware TPMs are not supported, with the exception of Intel chips that support Platform Trust Technology (PTT), which is a type of integrated hardware TPM that meets the TPM 2.0 spec.|
 |Windows DMA Protection|Platforms must meet the Windows DMA Protection Specification (all external DMA ports must be off by default until the OS explicitly powers them).|
 |SMM communication buffers| All SMM communication buffers must be implemented in EfiRuntimeServicesData ,EfiRuntimeServicesCode , EfiACPIMemoryNVS, or EfiReservedMemoryType memory types. |
 |SMM Page Tables| Must NOT contain any mappings to EfiConventionalMemory (e.g. no OS/VMM owned memory). <br/>Must NOT contain any mappings to code sections within EfiRuntimeServicesCode. <br/>Must NOT have execute and write permissions for the same page <br/>Must allow ONLY that TSEG pages can be marked executable and the memory map must report TSEG EfiReservedMemoryType. <br/>BIOS SMI handler must be implemented such that SMM page tables are locked on every SMM entry.  |
@@ -89,3 +92,6 @@ To verify that Secure Launch is running, use System Information (MSInfo32). Clic
 |Modern/Connected Standby|Platforms must support Modern/Connected Standby.|
 |Platform firmware|Platform firmware must carry all code required to perform a launch.|
 |Platform firmware update|System firmware is recommended to be updated via UpdateCapsule in Windows Update. |
+
+> [!NOTE]
+> For more details around AMD processors, see [Microsoft Security Blog: Force firmware code to be measured and attested by Secure Launch on Windows 10](https://www.microsoft.com/security/blog/2020/09/01/force-firmware-code-to-be-measured-and-attested-by-secure-launch-on-windows-10/).

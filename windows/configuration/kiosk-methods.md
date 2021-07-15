@@ -2,14 +2,14 @@
 title: Configure kiosks and digital signs on Windows desktop editions (Windows 10)
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
-description: Learn about the methods for configuring kiosks.
+ms.author: greglin
+description: In this article, learn about the methods for configuring kiosks and digital signs on Windows desktop editions.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dansimp
+author: greg-lindsay
 ms.topic: article
 ---
 

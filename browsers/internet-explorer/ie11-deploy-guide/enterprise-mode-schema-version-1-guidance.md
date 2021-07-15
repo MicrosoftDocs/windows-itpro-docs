@@ -18,6 +18,9 @@ ms.date: 07/27/2017
 
 # Enterprise Mode schema v.1 guidance
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 - Windows 10
@@ -163,27 +166,58 @@ This table includes the attributes used by the Enterprise Mode schema.
 </tr>
 <tr>
 <td>exclude</td>
-<td>Specifies the domain or path is excluded from applying Enterprise Mode. This attribute is only supported on the &lt;domain&gt; and &lt;path&gt; elements in the &lt;emie&gt; section.
-<p><b>Example</b>
+<td>Specifies the domain or path excluded from applying Enterprise Mode. This attribute is only supported on the &lt;domain&gt; and &lt;path&gt; elements in the &lt;emie&gt; section. If this attribute is absent, it defaults to false.
+<br />
+<p><b>Example:</b></p>
 <pre class="syntax">
 &lt;emie&gt;
   &lt;domain exclude=&quot;false&quot;&gt;fabrikam.com
     &lt;path exclude=&quot;true&quot;&gt;/products&lt;/path&gt;
   &lt;/domain&gt;
 &lt;/emie&gt;</pre><p>
-Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">https://fabrikam.com</a> uses IE8 Enterprise Mode, but <a href="https://fabrikam.com/products" data-raw-source="https://fabrikam.com/products">https://fabrikam.com/products</a> does not.</td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
+Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">https://fabrikam.com</a> uses IE8 Enterprise Mode, but <a href="https://fabrikam.com/products" data-raw-source="https://fabrikam.com/products">https://fabrikam.com/products</a> does not.</p></td>
+<td>Internet Explorer 11</td>
 </tr>
 <tr>
 <td>docMode</td>
 <td>Specifies the document mode to apply. This attribute is only supported on &lt;domain&gt; or &lt;path&gt; elements in the &lt;docMode&gt; section.
-<p><b>Example</b>
+<br />
+<p><b>Example:</b></p>
 <pre class="syntax">
 &lt;docMode&gt;
-  &lt;domain exclude=&quot;false&quot;&gt;fabrikam.com
-    &lt;path docMode=&quot;7&quot;&gt;/products&lt;/path&gt;
+  &lt;domain&gt;fabrikam.com
+    &lt;path docMode=&quot;9&quot;&gt;/products&lt;/path&gt;
   &lt;/domain&gt;
-&lt;/docMode&gt;</pre></td>
+&lt;/docMode&gt;</pre><p>
+Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">https://fabrikam.com</a> loads in IE11 document mode, but <a href="https://fabrikam.com/products" data-raw-source="https://fabrikam.com/products">https://fabrikam.com/products</a> uses IE9 document mode.</p></td>
+<td>Internet Explorer 11</td>
+</tr>
+<tr>
+<td>doNotTransition</td>
+<td>Specifies that the page should load in the current browser, otherwise it will open in IE11. This attribute is supported on all &lt;domain&gt; or &lt;path&gt; elements. If this attribute is absent, it defaults to false.
+<br />
+<p><b>Example:</b></p>
+<pre class="syntax">
+&lt;emie&gt;
+  &lt;domain doNotTransition=&quot;false&quot;&gt;fabrikam.com
+    &lt;path doNotTransition=&quot;true&quot;&gt;/products&lt;/path&gt;
+  &lt;/domain&gt;
+&lt;/emie&gt;</pre><p>
+Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">https://fabrikam.com</a> opens in the IE11 browser, but <a href="https://fabrikam.com/products" data-raw-source="https://fabrikam.com/products">https://fabrikam.com/products</a> loads in the current browser (eg. Microsoft Edge).</p></td>
+<td>Internet Explorer 11 and Microsoft Edge</td>
+</tr>
+<tr>
+<td>forceCompatView</td>
+<td>Specifies that the page should load in IE7 document mode (Compat View). This attribute is only supported on &lt;domain&gt; or &lt;path&gt; elements in the &lt;emie&gt; section. If the page is also configured to load in Enterprise Mode, it will load in IE7 Enterprise Mode. Otherwise (exclude=&quot;true&quot;), it will load in IE11's IE7 document mode. If this attribute is absent, it defaults to false.
+<br />
+<p><b>Example:</b></p>
+<pre class="syntax">
+&lt;emie&gt;
+  &lt;domain exclude=&quot;true&quot;&gt;fabrikam.com
+    &lt;path forceCompatView=&quot;true&quot;&gt;/products&lt;/path&gt;
+  &lt;/domain&gt;
+&lt;/emie&gt;</pre><p>
+Where <a href="https://fabrikam.com" data-raw-source="https://fabrikam.com">https://fabrikam.com</a> does not use Enterprise Mode, but <a href="https://fabrikam.com/products" data-raw-source="https://fabrikam.com/products">https://fabrikam.com/products</a> uses IE7 Enterprise Mode.</p></td>
 <td>Internet Explorer 11</td>
 </tr>
 </table>

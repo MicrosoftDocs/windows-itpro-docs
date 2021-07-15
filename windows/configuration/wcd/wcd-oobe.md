@@ -6,15 +6,15 @@ description: This section describes the OOBE settings that you can configure in 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
 # OOBE (Windows Configuration Designer reference)
 
-Use to configure settings for the [Out Of Box Experience (OOBE)](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-oobe).
+Use to configure settings for the [Out Of Box Experience (OOBE)](/windows-hardware/customize/desktop/customize-oobe).
 
 ## Applies to
 

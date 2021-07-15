@@ -1,8 +1,8 @@
 ---
 title: 4908(S) Special Groups Logon table modified. (Windows 10)
-description: Describes security event 4908(S) Special Groups Logon table modified.
+description: Describes security event 4908(S) Special Groups Logon table modified. This event is generated when the Special Groups Logon table is modified.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4908(S): Special Groups Logon table modified.
@@ -34,7 +35,7 @@ This event is always logged regardless of the "Audit Policy Change" sub-category
 
 More information about Special Groups auditing can be found here:
 
-<http://blogs.technet.com/b/askds/archive/2008/03/11/special-groups-auditing-via-group-policy-preferences.aspx>
+<https://blogs.technet.com/b/askds/archive/2008/03/11/special-groups-auditing-via-group-policy-preferences.aspx>
 
 <https://support.microsoft.com/kb/947223>
 

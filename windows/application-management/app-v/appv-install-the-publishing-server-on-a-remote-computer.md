@@ -1,7 +1,7 @@
 ---
 title: Install the Publishing Server on a Remote Computer (Windows 10)
-description: How to Install the App-V Publishing Server on a Remote Computer
-author: lomayor
+description: Use the procedures in this article to install the Microsoft Application Virtualization (App-V) publishing server on a separate computer.
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # How to install the publishing server on a remote computer
@@ -38,7 +38,7 @@ Use the following procedure to install the publishing server on a separate compu
     3. Enter the server name and a description (if required), then select **Add**.
 9. To verify that the publishing server is running correctly, you should import a package to the management server, entitle that package to an AD group, then publish it. Using an internet browser, open the following URL: <strong>https://publishingserver:pubport</strong>. If the server is running correctly, information like the following example should appear.
 
-    ```SQL
+    ```xml
     <Publishing Protocol="1.0">
     
         <Packages>

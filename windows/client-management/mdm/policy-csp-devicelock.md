@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - DeviceLock
-description: Policy CSP - DeviceLock
+description: Learn how to use the Policy CSP - DeviceLock setting to specify whether the user must input a PIN or password when the device resumes from an idle state.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -114,7 +114,7 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> Currently, this policy is supported only in HoloLens 2, Hololens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition.
+> Currently, this policy is supported only in HoloLens 2, HoloLens (1st gen) Commercial Suite, and HoloLens (1st gen) Development Edition.
 
 Specifies whether the user must input a PIN or password when the device resumes from an idle state.
 
@@ -184,7 +184,7 @@ Specifies whether PINs or passwords such as "1111" or "1234" are allowed. For th
 
 
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -421,7 +421,7 @@ Specifies when the password expires (in days).
 
 If all policy values = 0 then 0; otherwise, Min policy value is the most secure value.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -488,7 +488,7 @@ The value includes the user's current password. This means that with a setting o
 
 Max policy value is the most restricted.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -619,7 +619,7 @@ This policy has different behaviors on the mobile device and desktop.
 
 Most secure value is 0 if all policy values = 0; otherwise, Min policy value is the most secure value.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -687,7 +687,7 @@ Specifies the maximum amount of time (in minutes) allowed after the device is id
 
 
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -757,7 +757,7 @@ PIN enforces the following behavior for desktop and mobile devices:
 -   1 - Digits only
 -   2 - Digits and lowercase letters are required
 -   3 - Digits, lowercase letters, and uppercase letters are required. Not supported in desktop Microsoft accounts and domain accounts. 
--   4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop.
+-   4 - Digits, lowercase letters, uppercase letters, and special characters are required. Not supported in desktop or HoloLens.
 
 The default value is 1. The following list shows the supported values and actual enforced values:
 
@@ -816,7 +816,7 @@ Enforced values for Local and Microsoft Accounts:
 
 The enforcement of policies for Microsoft accounts happen on the server, and the server requires a password length of 8 and a complexity of 2. A complexity value of 3 or 4 is unsupported and setting this value on the server makes Microsoft accounts non-compliant.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <!--/Description-->
 <!--/Policy-->
@@ -878,7 +878,7 @@ Specifies the minimum number or characters required in the PIN or password.
 
 Max policy value is the most restricted.
 
-For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](https://technet.microsoft.com/library/dn282287.aspx) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
+For additional information about this policy, see [Exchange ActiveSync Policy Engine Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn282287(v=ws.11)) and [KB article](https://support.office.com/article/This-device-doesn-t-meet-the-security-requirements-set-by-your-email-administrator-87132fc7-2c7f-4a71-9de0-779ff81c86ca).
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -1119,12 +1119,13 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

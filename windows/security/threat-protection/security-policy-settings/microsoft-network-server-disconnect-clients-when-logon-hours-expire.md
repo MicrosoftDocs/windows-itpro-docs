@@ -4,7 +4,7 @@ description: Best practices, location, values, and security considerations for t
 ms.assetid: 48b5c424-9ba8-416d-be7d-ccaabb3f49af
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Microsoft network server: Disconnect clients when logon hours expire

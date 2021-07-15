@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Defender
-description: Policy CSP - Defender
+description: Learn how to use the Policy CSP - Defender setting so you can allow or disallow scanning of archives.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -205,7 +205,7 @@ Allows or disallows scanning of archives.
 ADMX Info:  
 -   GP English name: *Scan archive files*
 -   GP name: *Scan_DisableArchiveScanning*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -275,7 +275,7 @@ Allows or disallows Windows Defender Behavior Monitoring functionality.
 ADMX Info:  
 -   GP English name: *Turn on behavior monitoring*
 -   GP name: *RealtimeProtection_DisableBehaviorMonitoring*
--   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -346,7 +346,7 @@ ADMX Info:
 -   GP English name: *Join Microsoft MAPS*
 -   GP name: *SpynetReporting*
 -   GP element: *SpynetReporting*
--   GP path: *Windows Components/Windows Defender Antivirus/MAPS*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/MAPS*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -416,7 +416,7 @@ Allows or disallows scanning of email.
 ADMX Info:  
 -   GP English name: *Turn on e-mail scanning*
 -   GP name: *Scan_DisableEmailScanning*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -486,7 +486,7 @@ Allows or disallows a full scan of mapped network drives.
 ADMX Info:  
 -   GP English name: *Run full scan on mapped network drives*
 -   GP name: *Scan_DisableScanningMappedNetworkDrivesForFullScan*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -556,7 +556,7 @@ Allows or disallows a full scan of removable drives. During a quick scan, remova
 ADMX Info:  
 -   GP English name: *Scan removable drives*
 -   GP name: *Scan_DisableRemovableDriveScanning*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -626,7 +626,7 @@ Allows or disallows Windows Defender IOAVP Protection functionality.
 ADMX Info:  
 -   GP English name: *Scan all downloaded files and attachments*
 -   GP name: *RealtimeProtection_DisableIOAVProtection*
--   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -758,7 +758,7 @@ Allows or disallows Windows Defender On Access Protection functionality.
 ADMX Info:  
 -   GP English name: *Monitor file and program activity on your computer*
 -   GP name: *RealtimeProtection_DisableOnAccessProtection*
--   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -828,7 +828,7 @@ Allows or disallows Windows Defender Realtime Monitoring functionality.
 ADMX Info:  
 -   GP English name: *Turn off real-time protection*
 -   GP name: *DisableRealtimeMonitoring*
--   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -898,7 +898,7 @@ Allows or disallows a scanning of network files.
 ADMX Info:  
 -   GP English name: *Scan network files*
 -   GP name: *Scan_DisableScanningNetworkFiles*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1030,7 +1030,7 @@ Allows or disallows user access to the Windows Defender UI. If disallowed, all W
 ADMX Info:  
 -   GP English name: *Enable headless UI mode*
 -   GP name: *UX_Configuration_UILockdown*
--   GP path: *Windows Components/Windows Defender Antivirus/Client Interface*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Client Interface*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1103,7 +1103,7 @@ ADMX Info:
 -   GP English name: *Exclude files and paths from Attack Surface Reduction Rules*
 -   GP name: *ExploitGuard_ASR_ASROnlyExclusions*
 -   GP element: *ExploitGuard_ASR_ASROnlyExclusions*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1161,7 +1161,7 @@ ADMX Info:
 
 Added in Windows 10, version 1709. This policy setting enables setting the state (Block/Audit/Off) for each Attack surface reduction (ASR) rule. Each ASR rule listed can be set to one of the following states (Block/Audit/Off). The ASR rule ID and state should be added under the Options for this setting. Each entry must be listed as a name value pair. The name defines a valid ASR rule ID, while the value contains the status ID indicating the status of the rule.
 
-For more information about ASR rule ID and status ID, see [Enable Attack Surface Reduction](https://docs.microsoft.com/windows/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction).
+For more information about ASR rule ID and status ID, see [Enable Attack Surface Reduction](/windows/threat-protection/windows-defender-exploit-guard/enable-attack-surface-reduction).
 
 Value type is string.
 
@@ -1171,7 +1171,7 @@ ADMX Info:
 -   GP English name: *Configure Attack Surface Reduction rules*
 -   GP name: *ExploitGuard_ASR_Rules*
 -   GP element: *ExploitGuard_ASR_Rules*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Attack Surface Reduction*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1238,7 +1238,7 @@ ADMX Info:
 -   GP English name: *Specify the maximum percentage of CPU utilization during a scan*
 -   GP name: *Scan_AvgCPULoadFactor*
 -   GP element: *Scan_AvgCPULoadFactor*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1315,7 +1315,7 @@ ADMX Info:
 -   GP English name: *Check for the latest virus and spyware definitions before running a scheduled scan*
 -   GP name: *CheckForSignaturesBeforeRunningScan*
 -   GP element: *CheckForSignaturesBeforeRunningScan*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1380,11 +1380,11 @@ ADMX Info:
 > This policy is only enforced in Windows 10 for desktop.
 
 
-Added in Windows 10, version 1709. This policy setting determines how aggressive Windows Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer.
+Added in Windows 10, version 1709. This policy setting determines how aggressive Microsoft Defender Antivirus will be in blocking and scanning suspicious files. Value type is integer.
 
-If this setting is on, Windows Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
+If this setting is on, Microsoft Defender Antivirus will be more aggressive when identifying suspicious files to block and scan; otherwise, it will be less aggressive and therefore block and scan with less frequency. 
 
-For more information about specific values that are supported, see the Windows Defender Antivirus documentation site.
+For more information about specific values that are supported, see the Microsoft Defender Antivirus documentation site.
       
 > [!NOTE]
 > This feature requires the "Join Microsoft MAPS" setting enabled in order to function.
@@ -1395,7 +1395,7 @@ ADMX Info:
 -   GP English name: *Select cloud protection level*
 -   GP name: *MpEngine_MpCloudBlockLevel*
 -   GP element: *MpCloudBlockLevel*
--   GP path: *Windows Components/Windows Defender Antivirus/MpEngine*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/MpEngine*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1459,7 +1459,7 @@ The following list shows the supported values:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop.
 
-Added in Windows 10, version 1709. This feature allows Windows Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50.
+Added in Windows 10, version 1709. This feature allows Microsoft Defender Antivirus to block a suspicious file for up to 60 seconds, and scan it in the cloud to make sure it's safe. Value type is integer, range is 0 - 50.
 
 The typical cloud check timeout is 10 seconds. To enable the extended cloud check feature, specify the extended time in seconds, up to an additional 50 seconds. 
 
@@ -1474,7 +1474,7 @@ ADMX Info:
 -   GP English name: *Configure extended cloud check*
 -   GP name: *MpEngine_MpBafsExtendedTimeout*
 -   GP element: *MpBafsExtendedTimeout*
--   GP path: *Windows Components/Windows Defender Antivirus/MpEngine*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/MpEngine*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1529,7 +1529,7 @@ ADMX Info:
 > [!NOTE]
 > This policy is only enforced in Windows 10 for desktop. The previous name was GuardedFoldersAllowedApplications and changed to ControlledFolderAccessAllowedApplications.
 
-Added in Windows 10, version 1709. This policy setting allows user-specified applications to the controlled folder access feature. Adding an allowed application means the controlled folder access feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it will not be necessary to add entries. Windows Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the | as the substring separator.
+Added in Windows 10, version 1709. This policy setting allows user-specified applications to the controlled folder access feature. Adding an allowed application means the controlled folder access feature will allow the application to modify or delete content in certain folders such as My Documents. In most cases it will not be necessary to add entries. Microsoft Defender Antivirus will automatically detect and dynamically add applications that are friendly. Value type is string. Use the | as the substring separator.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1537,7 +1537,7 @@ ADMX Info:
 -   GP English name: *Configure allowed applications*
 -   GP name: *ExploitGuard_ControlledFolderAccess_AllowedApplications*
 -   GP element: *ExploitGuard_ControlledFolderAccess_AllowedApplications*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1600,7 +1600,7 @@ ADMX Info:
 -   GP English name: *Configure protected folders*
 -   GP name: *ExploitGuard_ControlledFolderAccess_ProtectedFolders*
 -   GP element: *ExploitGuard_ControlledFolderAccess_ProtectedFolders*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1667,7 +1667,7 @@ ADMX Info:
 -   GP English name: *Configure removal of items from Quarantine folder*
 -   GP name: *Quarantine_PurgeItemsAfterDelay*
 -   GP element: *Quarantine_PurgeItemsAfterDelay*
--   GP path: *Windows Components/Windows Defender Antivirus/Quarantine*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Quarantine*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1725,14 +1725,14 @@ Valid values: 0–90
 <!--Description-->
 This policy setting allows you to configure catch-up scans for scheduled full scans. A catch-up scan is a scan that is initiated because a regularly scheduled scan was missed.  Usually these scheduled scans are missed because the computer was turned off at the scheduled time. 
 
-If you enable this setting, catch-up scans for scheduled full scans will be turned on.  If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run. 
+If you enable this setting, catch-up scans for scheduled full scans will be turned on. If a computer is offline for two consecutive scheduled scans, a catch-up scan is started the next time someone logs on to the computer.  If there is no scheduled scan configured, there will be no catch-up scan run. 
 
 If you disable or do not configure this setting, catch-up scans for scheduled full scans will be turned off.
 
 Supported values:
 
-- 0 - Disabled 
-- 1 - Enabled (default)
+- 1 - Disabled (default)
+- 0 - Enabled 
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupFullScan
 
@@ -1742,7 +1742,7 @@ ADMX Info:
 -   GP English name: *Turn on catch-up full scan*
 -   GP name: *Scan_DisableCatchupFullScan*
 -   GP element: *Scan_DisableCatchupFullScan*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1811,8 +1811,8 @@ If you disable or do not configure this setting, catch-up scans for scheduled qu
 
 Supported values:
 
-- 0 - Disabled 
-- 1 - Enabled (default)
+- 1 - Disabled (default)
+- 0 - Enabled 
 
 OMA-URI Path: ./Vendor/MSFT/Policy/Config/Defender/DisableCatchupQuickScan
 
@@ -1822,7 +1822,7 @@ ADMX Info:
 -   GP English name: *Turn on catch-up quick scan*
 -   GP name: *Scan_DisableCatchupQuickScan*
 -   GP element: *Scan_DisableCatchupQuickScan*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1894,7 +1894,7 @@ ADMX Info:
 -   GP English name: *Configure Controlled folder access*
 -   GP name: *ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess*
 -   GP element: *ExploitGuard_ControlledFolderAccess_EnableControlledFolderAccess*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Controlled Folder Access*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -1971,7 +1971,7 @@ ADMX Info:
 -   GP English name: *Configure low CPU priority for scheduled scans*
 -   GP name: *Scan_LowCpuPriority*
 -   GP element: *Scan_LowCpuPriority*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2049,7 +2049,7 @@ ADMX Info:
 -   GP English name: *Prevent users and apps from accessing dangerous websites*
 -   GP name: *ExploitGuard_EnableNetworkProtection*
 -   GP element: *ExploitGuard_EnableNetworkProtection*
--   GP path: *Windows Components/Windows Defender Antivirus/Windows Defender Exploit Guard/Network Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Windows Defender Exploit Guard/Network Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2121,7 +2121,7 @@ ADMX Info:
 -   GP English name: *Path Exclusions*
 -   GP name: *Exclusions_Paths*
 -   GP element: *Exclusions_PathsList*
--   GP path: *Windows Components/Windows Defender Antivirus/Exclusions*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Exclusions*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2185,7 +2185,7 @@ ADMX Info:
 -   GP English name: *Extension Exclusions*
 -   GP name: *Exclusions_Extensions*
 -   GP element: *Exclusions_ExtensionsList*
--   GP path: *Windows Components/Windows Defender Antivirus/Exclusions*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Exclusions*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2255,7 +2255,7 @@ ADMX Info:
 -   GP English name: *Process Exclusions*
 -   GP name: *Exclusions_Processes*
 -   GP element: *Exclusions_ProcessesList*
--   GP path: *Windows Components/Windows Defender Antivirus/Exclusions*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Exclusions*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2313,7 +2313,19 @@ ADMX Info:
 
 Added in Windows 10, version 1607. Specifies the level of detection for potentially unwanted applications (PUAs). Windows Defender alerts you when potentially unwanted software is being downloaded or attempts to install itself on your computer.
 
+> [!NOTE]
+> Potentially unwanted applications (PUA) are a category of software that can cause your machine to run slowly, display unexpected ads, or at worst, install other software which might be unexpected or unwanted. By default in Windows 10 (version 2004 and later), Microsoft Defender Antivirus blocks apps that are considered PUA, for Enterprise (E5) devices. For more information about PUA, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
+
 <!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Configure detection for potentially unwanted applications*
+-   GP name: *Root_PUAProtection*
+-   GP element: *Root_PUAProtection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus*
+-   GP ADMX file name: *WindowsDefender.admx*
+
+<!--/ADMXMapped-->
 <!--SupportedValues-->
 The following list shows the supported values:
 
@@ -2385,7 +2397,7 @@ ADMX Info:
 -   GP English name: *Configure monitoring for incoming and outgoing file and program activity*
 -   GP name: *RealtimeProtection_RealtimeScanDirection*
 -   GP element: *RealtimeProtection_RealtimeScanDirection*
--   GP path: *Windows Components/Windows Defender Antivirus/Real-time Protection*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Real-time Protection*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2457,7 +2469,7 @@ ADMX Info:
 -   GP English name: *Specify the scan type to use for a scheduled scan*
 -   GP name: *Scan_ScanParameters*
 -   GP element: *Scan_ScanParameters*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2537,7 +2549,7 @@ ADMX Info:
 -   GP English name: *Specify the time for a daily quick scan*
 -   GP name: *Scan_ScheduleQuickScantime*
 -   GP element: *Scan_ScheduleQuickScantime*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2608,7 +2620,7 @@ ADMX Info:
 -   GP English name: *Specify the day of the week to run a scheduled scan*
 -   GP name: *Scan_ScheduleDay*
 -   GP element: *Scan_ScheduleDay*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2695,7 +2707,7 @@ ADMX Info:
 -   GP English name: *Specify the time of day to run a scheduled scan*
 -   GP name: *Scan_ScheduleTime*
 -   GP element: *Scan_ScheduleTime*
--   GP path: *Windows Components/Windows Defender Antivirus/Scan*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Scan*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2774,7 +2786,7 @@ ADMX Info:
 -   GP English name: *Define the order of sources for downloading definition updates*
 -   GP name: *SignatureUpdate_FallbackOrder*
 -   GP element: *SignatureUpdate_FallbackOrder*
--   GP path: *Windows Components/Windows Defender Antivirus/Signature Updates*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Signature Updates*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2853,7 +2865,7 @@ ADMX Info:
 -   GP English name: *Define file shares for downloading definition updates*
 -   GP name: *SignatureUpdate_DefinitionUpdateFileSharesSources*
 -   GP element: *SignatureUpdate_DefinitionUpdateFileSharesSources*
--   GP path: *Windows Components/Windows Defender Antivirus/Signature Updates*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Signature Updates*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -2933,7 +2945,7 @@ ADMX Info:
 -   GP English name: *Specify the interval to check for definition updates*
 -   GP name: *SignatureUpdate_SignatureUpdateInterval*
 -   GP element: *SignatureUpdate_SignatureUpdateInterval*
--   GP path: *Windows Components/Windows Defender Antivirus/Signature Updates*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Signature Updates*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -3001,7 +3013,7 @@ ADMX Info:
 -   GP English name: *Send file samples when further analysis is required*
 -   GP name: *SubmitSamplesConsent*
 -   GP element: *SubmitSamplesConsent*
--   GP path: *Windows Components/Windows Defender Antivirus/MAPS*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/MAPS*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -3092,7 +3104,7 @@ ADMX Info:
 -   GP English name: *Specify threat alert levels at which default action should not be taken when detected*
 -   GP name: *Threats_ThreatSeverityDefaultAction*
 -   GP element: *Threats_ThreatSeverityDefaultActionList*
--   GP path: *Windows Components/Windows Defender Antivirus/Threats*
+-   GP path: *Windows Components/Microsoft Defender Antivirus/Threats*
 -   GP ADMX file name: *WindowsDefender.admx*
 
 <!--/ADMXMapped-->
@@ -3101,12 +3113,14 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
+- 9 - Available in Windows 10, version 20H2.
 
 <!--/Policies-->
-

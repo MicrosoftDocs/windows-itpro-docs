@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 02/28/2019
+ms.custom: bitlocker
 ---
 
 # BitLocker: Use BitLocker Recovery Password Viewer
@@ -57,7 +58,7 @@ By completing the procedures in this scenario, you have viewed and copied the re
 ## More information
 
 - [BitLocker Overview](bitlocker-overview.md)
-- [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md)
+- [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml)
 - [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [BitLocker: How to deploy on Windows Server 2012](bitlocker-how-to-deploy-on-windows-server.md)
 - [BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker](bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md)

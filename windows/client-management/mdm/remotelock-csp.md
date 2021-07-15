@@ -1,6 +1,6 @@
 ---
 title: RemoteLock CSP
-description: RemoteLock CSP
+description: Learn how RemoteLock CSP supports the ability to lock a device that has a PIN set on the device or reset the PIN on a device that may or may not have a PIN set.
 ms.assetid: c7889331-5aa3-4efe-9a7e-20d3f433659b
 ms.reviewer: 
 manager: dansimp
@@ -19,11 +19,6 @@ The RemoteLock CSP supports the ability to lock a device that has a PIN set on t
 
 > [!Note]
 > The RemoteLock CSP is only supported in Windows 10 Mobile.
-
- 
-The following diagram shows the RemoteLock configuration service provider in a tree format.
-
-![provisioning\-csp\-remotelock](images/provisioning-csp-remotelock.png)
 
 <a href="" id="--vendor-msft-remotelock"></a>**./Vendor/MSFT/RemoteLock**
 <p style="margin-left: 20px">Defines the root node for the RemoteLock configuration service provider.</p>
@@ -100,7 +95,7 @@ This node will return the following status. All OMA DM errors are listed [here](
 <a href="" id="lockandrecoverpin"></a>**LockAndRecoverPIN**
 Added in Windows 10, version 1703. This setting performs a similar function to the LockAndResetPIN node. With LockAndResetPIN any Windows Hello keys associated with the PIN gets deleted, but with LockAndRecoverPIN those keys are saved. After the Exec operation is called successfully on this setting, the new PIN can be retrieved from the NewPINValue setting. The previous PIN will no longer work.
 
-Executing this node requires a ticket from the Microsoft credential reset service. Additionally, the execution of this setting is only supported when the [EnablePinRecovery](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/passportforwork-csp#tenantid-policies-enablepinrecovery) policy is set on the client.
+Executing this node requires a ticket from the Microsoft credential reset service. Additionally, the execution of this setting is only supported when the [EnablePinRecovery](./passportforwork-csp.md#tenantid-policies-enablepinrecovery) policy is set on the client.
 
 
 <a href="" id="newpinvalue"></a>**NewPINValue**
@@ -161,9 +156,3 @@ Initiate a remote lock and PIN reset of the device. To successfully retrieve the
  
 
  
-
-
-
-
-
-

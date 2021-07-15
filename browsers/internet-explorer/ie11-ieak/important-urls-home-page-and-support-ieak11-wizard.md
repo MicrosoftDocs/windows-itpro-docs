@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Important URLs - Home Page and Support page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Important URLS – Home Page and Support** page of the Internet Explorer Customization Wizard 11 lets you choose one or more **Home** pages and an online support page for your customized version of IE.
 
 **To use the Important URLS – Home Page and Support page**

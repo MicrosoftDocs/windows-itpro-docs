@@ -4,7 +4,7 @@ description: This topic for IT professionals describes the steps to merge AppLoc
 ms.assetid: f1c7d5c0-463e-4fe2-a410-844a404f18d0
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Merge AppLocker policies by using Set-ApplockerPolicy
@@ -27,7 +28,7 @@ This topic for IT professionals describes the steps to merge AppLocker policies 
 
 The **Set-AppLockerPolicy** cmdlet sets the specified Group Policy Object (GPO) to contain the specified AppLocker policy. If no Lightweight Directory Access Protocol (LDAP) is specified, the local GPO is the default. When the Merge parameter is used, rules in the specified AppLocker policy will be merged with the AppLocker rules in the target GPO specified in the LDAP path. The merging of policies will remove rules with duplicate rule IDs, and the enforcement setting specified by the AppLocker policy in the target GPO will be preserved. If the Merge parameter is not specified, then the new policy will overwrite the existing policy.
 
-For info about using **Set-AppLockerPolicy**, including syntax descriptions and parameters, see [Set-AppLockerPolicy](https://technet.microsoft.com/library/hh847212.aspx).
+For info about using **Set-AppLockerPolicy**, including syntax descriptions and parameters, see [Set-AppLockerPolicy](/powershell/module/applocker/set-applockerpolicy).
 
 For info about using Windows PowerShell for AppLocker, including how to import the AppLocker cmdlets into Windows PowerShell, see [Use the AppLocker Windows PowerShell cmdlets](use-the-applocker-windows-powershell-cmdlets.md).
 

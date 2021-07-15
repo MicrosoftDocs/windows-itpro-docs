@@ -15,7 +15,10 @@ ms.date: 07/27/2017
 
 
 # Install Internet Explorer 11 (IE11) using Microsoft Intune
-Internet Explorer 11 is available as an update in Microsoft Intune. Microsoft Intune uses Windows cloud services to help you manage updates, monitor and protect your computers, provide remote assistance, track hardware and software inventory, and set security policies. For more information, see the [Documentation Library for Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=301805).
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+Internet Explorer 11 is available as an update in Microsoft Intune. Microsoft Intune uses Windows cloud services to help you manage updates, monitor and protect your computers, provide remote assistance, track hardware and software inventory, and set security policies. For more information, see the [Documentation Library for Microsoft Intune](/mem/intune/).
 
 ## Adding and deploying the IE11 package
 You can add and then deploy the IE11 package to any computer that's managed by Microsoft Intune.
@@ -26,7 +29,7 @@ You can add and then deploy the IE11 package to any computer that's managed by M
 
 2.  Add your IE11 package as either an external link or as a Windows installer package (.exe or .msi). 
 
-For more info about how to decide which one to use, and how to use it, see [Deploy and configure apps](https://go.microsoft.com/fwlink/p/?LinkId=301806).
+For more info about how to decide which one to use, and how to use it, see [Deploy and configure apps](/mem/intune/).
 
  **To automatically deploy and install the IE11 package**
 
@@ -36,7 +39,7 @@ For more info about how to decide which one to use, and how to use it, see [Depl
 
 3.  After the package is on your employee's computers, the installation process runs, based on what you set up in your wizard. 
 
-For more info about this, see [Deploy and configure apps](https://go.microsoft.com/fwlink/p/?LinkId=301806).
+For more info about this, see [Deploy and configure apps](/mem/intune/).
 
  **To let your employees install the IE11 package**
 
@@ -49,6 +52,3 @@ For more info about this, see [Update apps using Microsoft Intune](https://go.mi
  
 
  
-
-
-

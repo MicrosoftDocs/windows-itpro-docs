@@ -48,9 +48,9 @@ Once you have the apps and websites showing up in the WIP Learning logging repor
 
 ## Use the WIP section of Device Health
 
-You can use Device Health to adjust your WIP protection policy. See [Using Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-using#windows-information-protection) to learn more.
+You can use Device Health to adjust your WIP protection policy. See [Using Device Health](/windows/deployment/update/device-health-using#windows-information-protection) to learn more.
 
-If you want to configure your environment for Windows Analytics: Device Health, see [Get Started with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-get-started) for more information.
+If you want to configure your environment for Windows Analytics: Device Health, see [Get Started with Device Health](/windows/deployment/update/device-health-get-started) for more information.
 
 Once you have WIP policies in place, by using the WIP section of Device Health, you can:
 
@@ -59,7 +59,7 @@ Once you have WIP policies in place, by using the WIP section of Device Health, 
 
 ## Use Device Health and Intune to adjust WIP protection policy
 
-The information needed for the following steps can be found using Device Health, which you will first have to set up. Learn more about how you can  [Monitor the health of devices with Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor).
+The information needed for the following steps can be found using Device Health, which you will first have to set up. Learn more about how you can  [Monitor the health of devices with Device Health](/windows/deployment/update/device-health-monitor).
 
 1. In **Device Health** click the app you want to add to your policy and copy the **WipAppId**.
 

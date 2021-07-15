@@ -10,7 +10,8 @@ ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mobile
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.topic: article
 ---
 
@@ -25,9 +26,13 @@ With Windows 10, you can quickly upgrade from one edition of Windows 10 to ano
 
 For a list of operating systems that qualify for the Windows 10 Pro Upgrade or Windows 10 Enterprise Upgrade through Microsoft Volume Licensing, see [Windows 10 Qualifying Operating Systems](https://download.microsoft.com/download/2/d/1/2d14fe17-66c2-4d4c-af73-e122930b60f6/Windows10-QOS.pdf).
 
-The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer. **Note**: The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607.
+The following table shows the methods and paths available to change the edition of Windows 10 that is running on your computer.
 
-Note: Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](https://docs.microsoft.com/sccm/compliance/deploy-use/upgrade-windows-version) in System Center Configuration Manager.
+> [!NOTE]
+> The reboot requirement for upgrading from Pro to Enterprise was removed in version 1607.
+
+> [!TIP]
+> Although it isn't displayed yet in the table, edition upgrade is also possible using [edition upgrade policy](/configmgr/compliance/deploy-use/upgrade-windows-version) in Microsoft Endpoint Configuration Manager.
 
 ![not supported](../images/x_blk.png) (X) = not supported</br>
 ![supported, reboot required](../images/check_grn.png) (green checkmark) = supported, reboot required</br>
@@ -38,7 +43,7 @@ X = unsupported <BR>
 &#x2714; (green) = supported; reboot required<BR>
 &#x2714; (blue) = supported; no reboot required
 
-|Method |Home > Pro |Home > Education |Pro > Education |Pro > Enterprise |Ent > Education |Mobile > Mobile Enterprise |
+|Method |Home > Pro |Home > Education |Pro > Education |Pro > Enterprise |Ent > Education |Mobile |
 |-------|-----------|-----------------|----------------|-----------------|----------------|--------|
 | Using mobile device management (MDM) |![unsupported](../images/x_blk.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_blu.png) |![supported](../images/check_grn.png) |![supported](../images/check_blu.png) |
 | Using a provisioning package |![unsupported](../images/x_blk.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_grn.png) |![supported](../images/check_blu.png) |
@@ -62,18 +67,17 @@ X = unsupported <BR>
 | **Pro for Workstations > Enterprise** | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) | ![supported, no reboot](../images/check_blu.png) <br>(1703 - PC)<br>(1709 - MSfB) | ![supported, no reboot](../images/check_blu.png) | ![not supported](../images/x_blk.png) |
 | **Pro Education > Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
 | **Enterprise > Education** | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) | ![supported, reboot required](../images/check_grn.png) <br>(MSfB) | ![supported, reboot required](../images/check_grn.png) | ![not supported](../images/x_blk.png) |
-| **Mobile > Mobile Enterprise** | ![supported, no reboot](../images/check_blu.png) |![supported, no reboot](../images/check_blu.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) | ![not supported](../images/x_blk.png) |
 
 > [!NOTE]
 > - For information about upgrade paths in Windows 10 in S mode (for Pro or Education), check out [Windows 10 Pro/Enterprise in S mode](../windows-10-pro-in-s-mode.md)
 > - Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
 > <br>
-> - Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates.
+> - Due to [naming changes](../update/waas-overview.md#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates.
 
 ## Upgrade using mobile device management (MDM)
-- To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkID=690907).
+- To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp).
 
-- To upgrade mobile editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithLicense** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](https://go.microsoft.com/fwlink/p/?LinkID=690907).
+- To upgrade mobile editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithLicense** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp).
 
 ## Upgrade using a provisioning package
 Use Windows Configuration Designer to create a provisioning package to upgrade a desktop edition or mobile edition of Windows 10. To get started, [install Windows Configuration Designer from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22).
@@ -83,8 +87,8 @@ Use Windows Configuration Designer to create a provisioning package to upgrade a
 - To create a provisioning package for upgrading mobile editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithLicense** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
 
 For more info about Windows Configuration Designer, see these topics:
-- [Create a provisioining package for Windows 10](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-create-package)
-- [Apply a provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-apply-package)
+- [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package)
+- [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package)
 
 
 ## Upgrade using a command-line tool
@@ -92,7 +96,7 @@ You can run the changepk.exe command-line tool to upgrade devices to a supported
 
 `changepk.exe /ProductKey <enter your new product key here>`
 
-You can also upgrade using slmgr.vbs and a [KMS client setup key](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v%3dws.11)).  For example, the following command will upgrade to Windows 10 Enterprise.
+You can also upgrade using slmgr.vbs and a [KMS client setup key](/windows-server/get-started/kmsclientkeys).  For example, the following command will upgrade to Windows 10 Enterprise.
 
 `Cscript.exe c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43`
 
@@ -121,7 +125,8 @@ If you do not have a product key, you can upgrade your edition of Windows 10 th
 
 3.  Follow the on-screen instructions.
 
-    **Note**<br>If you are a Windows 10 Home N or Windows 10 Home KN user and have trouble finding your applicable upgrade in the Microsoft Store, click [here](ms-windows-store://windowsupgrade/).
+    > [!NOTE]
+    > If you are a Windows 10 Home N or Windows 10 Home KN user and have trouble finding your applicable upgrade in the Microsoft Store, click [here](ms-windows-store://windowsupgrade/).
 
 ## License expiration
 
@@ -129,7 +134,8 @@ Volume license customers whose license has expired will need to change the editi
 
 Downgrading from any edition of Windows 10 to Windows 7, 8, or 8.1 by entering a different product key is not supported.  You also cannot downgrade from a later version to an earlier version of the same edition (Ex: Windows 10 Pro 1709 to 1703) unless the rollback process is used. This topic does not discuss version downgrades.
 
-Note: If you are using [Windows 10 Enterprise Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation) and a license expires, devices will automatically revert to the original edition when the grace period expires.
+> [!NOTE]
+> If you are using [Windows 10 Enterprise Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation) and a license expires, devices will automatically revert to the original edition when the grace period expires.
 
 ### Scenario example
 
@@ -149,21 +155,21 @@ You can move directly from Enterprise to any valid destination edition. In this 
 <br>
 <table border="0" cellpadding="1">
     <tr>
-        <td colspan="10" align="center">Destination edition</td>
+        <th colspan="10" align="center">Destination edition</th>
     </tr>
     <tr>
-        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td></td>
-        <td>Home</td>
-        <td>Pro</td>
-        <td>Pro for Workstations</td>
-        <td>Pro Education</td>
-        <td>Education</td>
-        <td>Enterprise LTSC</td>
-        <td>Enterprise</td>
+        <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>&nbsp;</th>
+        <th>Home</th>
+        <th>Pro</th>
+        <th>Pro for Workstations</th>
+        <th>Pro Education</th>
+        <th>Education</th>
+        <th>Enterprise LTSC</th>
+        <th>Enterprise</th>
     </tr>
     <tr>
-        <td rowspan="9" nowrap="nowrap" valign="middle">Starting edition</td>
+        <th rowspan="9" nowrap="nowrap" valign="middle">Starting edition</th>
     </tr>
     <tr>
         <td>Home</td>
@@ -237,7 +243,7 @@ You can move directly from Enterprise to any valid destination edition. In this 
     </tr>
 </table>
 
-> **Windows 10 LTSC/LTSB**: Due to [naming changes](https://docs.microsoft.com/windows/deployment/update/waas-overview#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
+> **Windows 10 LTSC/LTSB**: Due to [naming changes](../update/waas-overview.md#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
 > 
 > **Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
 
@@ -245,6 +251,6 @@ Some slightly more complex scenarios are not represented by the table above. For
 
 ## Related topics
 
-[Windows 10 upgrade paths](https://docs.microsoft.com/windows/deployment/upgrade/windows-10-upgrade-paths)<br>
-[Windows 10 volume license media](https://docs.microsoft.com/windows/deployment/windows-10-media)<br>
-[Windows 10 Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-enterprise-subscription-activation)
+[Windows 10 upgrade paths](./windows-10-upgrade-paths.md)<br>
+[Windows 10 volume license media](../windows-10-media.md)<br>
+[Windows 10 Subscription Activation](/windows/deployment/windows-10-enterprise-subscription-activation)

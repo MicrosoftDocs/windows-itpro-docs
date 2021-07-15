@@ -1,106 +1,102 @@
-### YamlMime:YamlDocument
+### YamlMime:Landing
 
-documentType: LandingData
-title: Deploy and update Windows 10
+title: Windows client deployment resources and documentation # < 60 chars
+summary: Learn about deploying and keeping Windows client devices up to date.  # < 160 chars
+
 metadata:
-  document_id: 
-  title: Deploy and update Windows 10
-  description: Deploying and updating Windows 10 for IT professionals.
-  keywords: deploy, update, Windows, service, Microsoft365, e5, e3
-  ms.localizationpriority: high
-  author: greg-lindsay
-  ms.author: greglin
-  manager: elizapo
-  ms.date: 02/09/2018
-  ms.topic: article
-  ms.devlang: na
+  title: Windows client deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about deploying Windows 10 and keeping it up to date in your organization. # Required; article description that is displayed in search results. < 160 chars.
+  services: windows-10
+  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: windows-10
+  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
+  ms.author: greglin #Required; microsoft alias of author; optional team alias.
+  ms.date: 06/24/2021 #Required; mm/dd/yyyy format.
+  localization_priority: medium
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
-sections:
-- items:
-  - type: markdown
-    text: Learn about deployment of Windows 10 for IT professionals. This includes deploying the operating system, upgrading to it from previous versions and updating Windows 10.  
-- items:
-  - type: list
-    style: cards
-    className: cardsM
-    columns: 3
-    items:
-    - href: windows-10-deployment-scenarios
-      html: <p>Understand the different ways that Windows 10 can be deployed</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_deploy.svg"
-      title: Windows 10 deployment scenarios
-    - href: update
-      html: <p>Update Windows 10 in the enterprise</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_upgrade.svg
-      title: Windows as a service
-    - href: update/windows-analytics-overview
-      html: <p>Windows Analytics provides deep insights into your Windows 10 environment.</p>
-      image:
-        src: https://docs.microsoft.com/media/common/i_investigate.svg
-      title: Windows Analytics
-- title:
-- items:
-  - type: markdown
-    text: "
-      <br>
-      <table border='0'>
-      <tr><td>[Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home) </td><td>Check out the new Modern Deskop Deployment Center and discover content to help you with your Windows 10 and Office 365 ProPlus deployments.</td>
-      <tr><td>[What's new in Windows 10 deployment](deploy-whats-new.md) </td><td>See this topic for a summary of new features and some recent changes related to deploying Windows 10 in your organization. </td>
-      <tr><td>[Windows 10 deployment scenarios](windows-10-deployment-scenarios.md) </td><td>To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the key capabilities and limitations of each, is a key task. </td>
-      <tr><td>[Windows Autopilot](windows-autopilot/windows-autopilot.md) </td><td>Windows Autopilot enables an IT department to pre-configure new devices and repurpose existing devices with a simple process that requires little to no infrastructure.</td>
-      <tr><td>[Windows 10 Subscription Activation](windows-10-subscription-activation.md) </td><td>Windows 10 Enterprise has traditionally been sold as on premises software, however, with Windows 10 version 1703 (also known as the Creator’s Update), both Windows 10 Enterprise E3 and Windows 10 Enterprise E5 are available as true online services via subscription. You can move from Windows 10 Pro to Windows 10 Enterprise with no keys and no reboots. If you are using a Cloud Service Providers (CSP) see the related topic: [Windows 10 Enterprise E3 in CSP](windows-10-enterprise-e3-overview.md). </td>
-      <tr><td>[Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-errors.md) </td><td>This topic provides a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. </td>
-      </table>
-      "
-- title: Deploy Windows 10
-- items:
-  - type: markdown
-    text: "
-      Windows 10 upgrade options are discussed and information is provided about planning, testing, and managing your production deployment.
-      <br>&nbsp;<br>
-      <table border='0'><tr><td>Topic</td><td>Description</td></tr>
-      <tr><td>[Overview of Windows Autopilot](windows-autopilot/windows-autopilot.md) </td><td>Windows Autopilot deployment is a new cloud service from Microsoft that provides a zero touch experience for deploying Windows 10 devices. </td>
-      <tr><td>[Windows 10 upgrade paths](upgrade/windows-10-upgrade-paths.md) </td><td>This topic provides information about support for upgrading directly to Windows 10 from a previous operating system. </td>
-      <tr><td>[Windows 10 edition upgrade](upgrade/windows-10-edition-upgrades.md) </td><td>This topic provides information about support for upgrading from one edition of Windows 10 to another. </td>
-      <tr><td>[Windows 10 volume license media](windows-10-media.md) </td><td>This topic provides information about media available in the Microsoft Volume Licensing Service Center. </td>
-      <tr><td>[Manage Windows upgrades with Upgrade Readiness](upgrade/manage-windows-upgrades-with-upgrade-readiness.md) </td><td>With Upgrade Readiness, enterprises now have the tools to plan and manage the upgrade process end to end, allowing them to adopt new Windows releases more quickly. With Windows diagnostic data enabled, Upgrade Readiness collects system, application, and driver data for analysis. We then identify compatibility issues that can block an upgrade and suggest fixes when they are known to Microsoft. The Upgrade Readiness workflow steps you through the discovery and rationalization process until you have a list of computers that are ready to be upgraded.</td> 
-      <tr><td>[Windows 10 deployment test lab](windows-10-poc.md) </td><td>This guide contains instructions to configure a proof of concept (PoC) environment requiring a minimum amount of resources. The guide makes extensive use of Windows PowerShell and Hyper-V. Subsequent companion guides contain steps to deploy Windows 10 using the PoC environment. After completing this guide, additional guides are provided to  deploy Windows 10 in the test lab using [Microsoft Deployment Toolkit](windows-10-poc-mdt.md) or [System Center Configuration Manager](windows-10-poc-sc-config-mgr.md). </td>
-      <tr><td>[Plan for Windows 10 deployment](planning/index.md) </td><td>This section describes Windows 10 deployment considerations and provides information to assist in Windows 10 deployment planning. </td>
-      <tr><td>[Deploy Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md) </td><td>This guide will walk you through the process of deploying Windows 10 in an enterprise environment using the Microsoft Deployment Toolkit (MDT). </td>
-      <tr><td>[Deploy Windows 10 with System Center 2012 R2 Configuration Manager](deploy-windows-sccm/deploy-windows-10-with-system-center-2012-r2-configuration-manager.md) </td><td>If you have Microsoft System Center 2012 R2 Configuration Manager in your environment, you will most likely want to use it to deploy Windows 10. This topic will show you how to set up Configuration Manager for operating system deployment and how to integrate Configuration Manager with the Microsoft Deployment Toolkit (MDT) or. </td>
-      <tr><td>[Windows 10 deployment tools](windows-10-deployment-tools-reference.md) </td><td>Learn about available tools to deploy Windows 10, such as the Windows ADK, DISM, USMT, WDS, MDT, Windows PE and more. </td>
-      </table>
-      "
-- title: Update Windows 10
-- items:
-  - type: markdown
-    text: "
-      Information is provided about keeping Windows 10 up-to-date.
-      <br>&nbsp;<br>
-      <table border='0'><tr><td>Topic</td><td>Description</td></tr>
-      <tr><td>[Quick guide to Windows as a service](update/waas-quick-start.md) </td><td>Provides a brief summary of the key points for the new servicing model for Windows 10.</td>
-      <tr><td>[Overview of Windows as a service](update/waas-overview.md) </td><td>Explains the differences in building, deploying, and servicing Windows 10; introduces feature updates, quality updates, and the different servicing branches; compares servicing tools.</td>
-      <tr><td>[Prepare servicing strategy for Windows 10 updates](update/waas-servicing-strategy-windows-10-updates.md) </td><td>Explains the decisions you need to make in your servicing strategy.</td>
-      <tr><td>[Build deployment rings for Windows 10 updates](update/waas-deployment-rings-windows-10-updates.md) </td><td>Explains how to make use of servicing branches and update deferrals to manage Windows 10 updates.</td>
-      <tr><td>[Assign devices to servicing branches for Windows 10 updates](update/waas-servicing-branches-windows-10-updates.md) </td><td>Explains how to assign devices to Current Branch (CB) or Current Branch for Business (CBB) for feature and quality updates, and how to enroll devices in Windows Insider.</td>
-      <tr><td>[Monitor Windows Updates with Update Compliance](update/update-compliance-monitor.md) </td><td>Explains how to use Windows Analytics: Update Compliance to monitor and manage Windows Updates on devices in your organization.</td>
-      <tr><td>[Optimize update delivery for Windows 10 updates](update/waas-optimize-windows-10-updates.md) </td><td>Explains the benefits of using Delivery Optimization or BranchCache for update distribution.</td>
-      <tr><td>[Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](update/waas-mobile-updates.md) </td><td>Explains updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile.</td>
-      <tr><td>[Deploy updates using Windows Update for Business](update/waas-manage-updates-wufb.md) </td><td>Explains how to use Windows Update for Business to manage when devices receive updates directly from Windows Update. Includes walkthroughs for configuring Windows Update for Business using Group Policy and Microsoft Intune.</td>
-      <tr><td>[Deploy Windows 10 updates using Windows Server Update Services (WSUS)](update/waas-manage-updates-wsus.md) </td><td>Explains how to use WSUS to manage Windows 10 updates.</td>
-      <tr><td>[Deploy Windows 10 updates using System Center Configuration Manager](update/waas-manage-updates-configuration-manager.md) </td><td>Explains how to use Configuration Manager to manage Windows 10 updates.</td>
-      <tr><td>[Manage device restarts after updates](update/waas-restart.md) </td><td>Explains how to manage update related device restarts.</td>
-      <tr><td>[Manage additional Windows Update settings](update/waas-wu-settings.md) </td><td>Provides details about settings available to control and configure Windows Update.</td>
-      <tr><td>[Windows Insider Program for Business](update/waas-windows-insider-for-business.md) </td><td>Explains how the Windows Insider Program for Business works and how to become an insider.</td>
-      </table>
-      "
-- title: Additional topics
-- items:
-  - type: markdown
-    text: "
-      <br>
-      <tr><td>[Upgrade a Windows Phone 8.1 to Windows 10 Mobile with Mobile Device Management](upgrade/upgrade-windows-phone-8-1-to-10.md) </td><td> This topic describes how to upgrade eligible Windows Phone 8.1 devices to Windows 10 Mobile.</tr></td>
-      </table>
-      "
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Plan
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Create a deployment plan
+            url: update/create-deployment-plan.md
+          - text: Define readiness criteria
+            url: update/plan-define-readiness.md
+          - text: Evaluate infrastructure and tools
+            url: update/eval-infra-tools.md
+          - text: Define your servicing strategy
+            url:  update/plan-define-strategy.md
+
+  # Card (optional)
+  - title: Prepare
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Prepare to deploy Windows updates
+            url: update/prepare-deploy-windows.md
+          - text: Prepare updates using Windows Update for Business
+            url: update/waas-manage-updates-wufb.md
+          - text: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
+            url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+
+  # Card (optional)
+  - title: Deploy
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Deploy Windows 10 with Autopilot
+            url: /mem/autopilot
+          - text: Assign devices to servicing channels
+            url: update/waas-servicing-channels-windows-10-updates.md
+          - text: Deploy Windows updates with Configuration Manager
+            url: update/deploy-updates-configmgr.md
+ 
+  # Card
+  - title: Overview
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What's new in Windows deployment
+            url: deploy-whats-new.md
+          - text: Windows 11 overview
+            url: /windows/whats-new/windows-11.md
+          - text: Windows client deployment scenarios
+            url: windows-10-deployment-scenarios.md
+          - text: Basics of Windows updates, channels, and tools
+            url:  update/get-started-updates-channels-tools.md
+          - text: Overview of Windows Autopilot
+            url:  /mem/autopilot/windows-autopilot
+
+  # Card
+  - title: Support remote work
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Deploy Windows 10 for a remote world
+            url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/deploying-a-new-version-of-windows-10-in-a-remote-world/ba-p/1419846
+          - text: Empower remote workers with Microsoft 365
+            url: /microsoft-365/solutions/empower-people-to-work-remotely
+          - text: Top 12 tasks for security teams to support working from home
+            url: /microsoft-365/security/top-security-tasks-for-remote-work
+          - text: Support your remote workforce
+            url: /microsoftteams/faq-support-remote-workforce
+
+  # Card (optional)
+  - title: Microsoft Learn
+    linkLists:
+      - linkListType: learn
+        links:
+          - text: Plan to deploy updates for Windows 10 and Microsoft 365 Apps
+            url: /learn/modules/windows-plan
+          - text: Prepare to deploy updates for Windows 10 and Microsoft 365 Apps
+            url: /learn/modules/windows-prepare/
+          - text: Deploy updates for Windows 10 and Microsoft 365 Apps
+            url: /learn/modules/windows-deploy

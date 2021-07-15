@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Language Selection page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Language Selection** page of the Internet Explorer Customization Wizard 11 lets you choose the language for your Internet Explorer Administration Kit 11 (IEAK 11) custom package. You can create custom Internet Explorer 11 packages in any of the languages your operating system version is available in.
 
 **Important**<br>Make sure that the language of your IEAK 11 installation matches the language of your custom IE11 package. If the languages don’t match, IEAK 11 won’t work properly.

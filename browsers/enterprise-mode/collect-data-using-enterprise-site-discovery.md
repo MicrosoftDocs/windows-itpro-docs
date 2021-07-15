@@ -48,7 +48,7 @@ Before you start, you need to make sure you have the following:
 
     -   IETelemetry.mof file
 
-    -   Sample System Center 2012 report templates
+    -   Sample Configuration Manager report templates
 
         You must use System Center 2012 R2 Configuration Manager or later for these samples to work.
 

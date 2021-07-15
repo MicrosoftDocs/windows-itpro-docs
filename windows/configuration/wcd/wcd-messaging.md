@@ -4,9 +4,9 @@ description: This section describes the Messaging settings that you can configur
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.reviewer: 
 manager: dansimp
@@ -81,7 +81,7 @@ SyncSender | Specify a value for SyncSender that is greater than 3 characters bu
 
 ## PerSimSettings 
 
-Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, click **Add**, and then configure the folowing settings.
+Use to configure settings for each subscriber identification module (SIM) card. Enter the Integrated Circuit Card Identifier (ICCID) for the SIM card, click **Add**, and then configure the following settings.
 
 ### AllowMmsIfDataIsOff
 
@@ -177,7 +177,7 @@ LimitRecipients | Set the maximum number of recipients to which a single SMS or 
 MaxRetryCount | You can specify the number of times that the phone can retry sending the failed MMS message and photo before the user receives a notification that the photo could not be sent. Specify MaxRetryCount to specify the number of times the MMS transport will attempt resending the MMS message. This value has a maximum limit of 3.
 MMSLimitAttachments | You can specify the maximum number of attachments for MMS messages, from 1 to 20. The default is 5.
 NIInfoEnabled | NIInfoEnabled
-ProxyAuthorizationToken | See [Proxy authorization for MMS.](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/proxy-authorization-for-mms)
+ProxyAuthorizationToken | See [Proxy authorization for MMS.](/windows-hardware/customize/mobile/mcsf/proxy-authorization-for-mms)
 RetrySize | For MMS messages that have photo attachments and that fail to send, you can choose to automatically resize the photo and attempt to resend the message. Specify the maximum size to use to resize the photo in KB. Minimum is 0xA (10 KB). 
 SetCacheControlNoTransform | When set, proxies and transcoders are instructed not to change the HTTP header and the content should not be modified. A value of 1 or 0x1 adds support for the HTTP header Cache-Control No-Transform directive. When the SetCacheControlNoTransform``Value is set to 0 or 0x0 or when the setting is not set, the default HTTP header Cache-Control No-Cache directive is used.
 ShowRequiredMonthlyTest | **True** enables devices to receive CMAS Required Monthly Test (RMT) messages and have these show up on the device. **False** disables devices from receiving CMAS RMT messages.
@@ -206,7 +206,7 @@ Set **ImsiAuthenticationToken** to the token used as the header for authenticati
 
 ### LatAlertOptions
 
-Enable `LatLocalAlertEnabled` to enable support for LAT-Alert Local Alerts for devices sold in Chile. For more information, see [Emergency notifications](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/emergency-notifications).
+Enable `LatLocalAlertEnabled` to enable support for LAT-Alert Local Alerts for devices sold in Chile. For more information, see [Emergency notifications](/windows-hardware/customize/mobile/mcsf/emergency-notifications).
 
 ### MaxRetryCount
 
@@ -229,7 +229,7 @@ ShowMmsGroupTextWarning | **True** shows the warning that alerts users of possib
 
 ### NIAlertOptions
 
-Enable `NI2AlertEnabled` to enable support for the Netherlands Announcements for devices sold in the Netherlands. For more information, see [Emergency notifications](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/emergency-notifications).
+Enable `NI2AlertEnabled` to enable support for the Netherlands Announcements for devices sold in the Netherlands. For more information, see [Emergency notifications](/windows-hardware/customize/mobile/mcsf/emergency-notifications).
 
 ### RcsOptions
 
@@ -284,7 +284,7 @@ Set TargetVideoFormat to one of the following values to configure the default tr
 
 ### TaiwanAlertOptions
 
-Set options for Taiwan Emergency Alerts system. For more information, see [Emergency notifications](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/emergency-notifications#taiwan-alerts). 
+Set options for Taiwan Emergency Alerts system. For more information, see [Emergency notifications](/windows-hardware/customize/mobile/mcsf/emergency-notifications#taiwan-alerts). 
 
 
 Setting | Description
@@ -338,7 +338,7 @@ By default, this string has the format WindowsPhoneMMS/MicrosoftMMSVersionNumber
 | APPID | Set to `w4`.  |
 | MS | (optional) Specify the maximum size of MMS, in KB. If the value is not a number, or is less than or equal to 10, it will be ignored and outgoing MMS will not be resized. |
 | NAME | (optional) Enter  user–readable application identity. This parameter is also used to define part of the registry path for the APPLICATION parameters. The possible values to configure the **NAME** parameter are:</br></br>- Character string containing the name</br>- no value specified</br></br>If no value is specified, the registry location will default to `<unnamed>`. If **NAME** is greater than 40 characters, it will be truncated to 40 characters. |
-| TONAPID | Specify the network access point identification name (NAPID) defined in the provisioning file. This parameter takes a string value. It is only possible to refer to network access points defined within the same provisioning file (except if the INTERNET attribute is set in the NAPDEF characteristic). For more information about the NAPDEF characteristic, see [NAPDEF configuration service provider](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/napdef-csp). |
+| TONAPID | Specify the network access point identification name (NAPID) defined in the provisioning file. This parameter takes a string value. It is only possible to refer to network access points defined within the same provisioning file (except if the INTERNET attribute is set in the NAPDEF characteristic). For more information about the NAPDEF characteristic, see [NAPDEF configuration service provider](/windows/client-management/mdm/napdef-csp). |
 | TOPROXY | Specify one logical proxy with a matching PROXY-ID. It is only possible to refer to proxies defined within the same provisioning file. Only one proxy can be listed. The TO-PROXY value must be set to the value of the PROXY ID in PXLOGICAL that defines the MMS specific-proxy.  |
 
 ### WapPushTechnology
@@ -356,4 +356,4 @@ For networks that require non-standard handling of single-segment incoming MMS W
 
 
 ## Related topics
-- [Customizations for SMS and MMS](https://docs.microsoft.com/windows-hardware/customize/mobile/mcsf/customizations-for-sms-and-mms)
+- [Customizations for SMS and MMS](/windows-hardware/customize/mobile/mcsf/customizations-for-sms-and-mms)

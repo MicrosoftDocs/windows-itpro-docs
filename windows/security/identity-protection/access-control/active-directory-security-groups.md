@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -79,8 +79,8 @@ Groups are characterized by a scope that identifies the extent to which the grou
 
 -   Domain Local
 
-**Note**  
-In addition to these three scopes, the default groups in the **Builtin** container have a group scope of Builtin Local. This group scope and group type cannot be changed.
+> [!NOTE]
+> In addition to these three scopes, the default groups in the **Builtin** container have a group scope of Builtin Local. This group scope and group type cannot be changed.
 
  
 
@@ -111,8 +111,8 @@ The following table lists the three group scopes and more information about each
 <td><p>Accounts from any domain in the same forest</p>
 <p>Global groups from any domain in the same forest</p>
 <p>Other Universal groups from any domain in the same forest</p></td>
-<td><p>Can be converted to Domain Local scope</p>
-<p>Can be converted to Global scope if the group is not a member of any other Universal groups</p></td>
+<td><p>Can be converted to Domain Local scope if the group is not a member of any other Universal groups</p>
+<p>Can be converted to Global scope if the group does not contain any other Universal groups</p></td>
 <td><p>On any domain in the same forest or trusting forests</p></td>
 <td><p>Other Universal groups in the same forest</p>
 <p>Domain Local groups in the same forest or trusting forests</p>
@@ -576,7 +576,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn Local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -620,8 +620,8 @@ Members of the Account Operators group cannot manage the Administrator user acco
 
 The Account Operators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-By default, this built-in group has no members, and it can create and manage users and groups in the domain, including its own membership and that of the Server Operators group. This group is considered a service administrator group because it can modify Server Operators, which in turn can modify domain controller settings. As a best practice, leave the membership of this group empty, and do not use it for any delegated administration. This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> By default, this built-in group has no members, and it can create and manage users and groups in the domain, including its own membership and that of the Server Operators group. This group is considered a service administrator group because it can modify Server Operators, which in turn can modify domain controller settings. As a best practice, leave the membership of this group empty, and do not use it for any delegated administration. This group cannot be renamed, deleted, or moved.
 
  
 
@@ -645,7 +645,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn Local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -686,8 +686,8 @@ Members of the Administrators group have complete and unrestricted access to the
 
 The Administrators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-The Administrators group has built-in capabilities that give its members full control over the system. This group cannot be renamed, deleted, or moved. This built-in group controls access to all the domain controllers in its domain, and it can change the membership of all administrative groups.
+> [!NOTE]
+> The Administrators group has built-in capabilities that give its members full control over the system. This group cannot be renamed, deleted, or moved. This built-in group controls access to all the domain controllers in its domain, and it can change the membership of all administrative groups.
 
 Membership can be modified by members of the following groups: the default service Administrators, Domain Admins in the domain, or Enterprise Admins. This group has the special privilege to take ownership of any object in the directory or any resource on a domain controller. This account is considered a service administrator group because its members have full access to the domain controllers in the domain.
 
@@ -717,7 +717,7 @@ This security group includes the following changes since Windows Server 2008:
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn Local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -865,7 +865,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -987,7 +987,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-517</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-517</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1113,7 +1113,7 @@ This security group was introduced in Windows Vista Service Pack 1, and it h
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1241,7 +1241,7 @@ The Device Owners group applies to versions of the Windows Server operating syst
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn Local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1345,9 +1345,9 @@ This security group has not changed since Windows Server 2008.
 
 Members of the DnsUpdateProxy group are DNS clients. They are permitted to perform dynamic updates on behalf of other clients (such as DHCP servers). A DNS server can develop stale resource records when a DHCP server is configured to dynamically register host (A) and pointer (PTR) resource records on behalf of DHCP clients by using dynamic update. Adding clients to this security group mitigates this scenario.
 
-However, to protect against unsecured records or to permit members of the DnsUpdateProxy group to register records in zones that allow only secured dynamic updates, you must create a dedicated user account and configure DHCP servers to perform DNS dynamic updates by using the credentials of this account (user name, password, and domain). Multiple DHCP servers can use the credentials of one dedicated user account.
+However, to protect against unsecured records or to permit members of the DnsUpdateProxy group to register records in zones that allow only secured dynamic updates, you must create a dedicated user account and configure DHCP servers to perform DNS dynamic updates by using the credentials of this account (user name, password, and domain). Multiple DHCP servers can use the credentials of one dedicated user account. This group exists only if the DNS server role is or was once installed on a domain controller in the domain.
 
-For information, see [DNS Record Ownership and the DnsUpdateProxy Group](https://technet.microsoft.com/library/dd334715.aspx).
+For information, see [DNS Record Ownership and the DnsUpdateProxy Group](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd334715(v=ws.10)).
 
 This security group has not changed since Windows Server 2008.
 
@@ -1365,7 +1365,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-1103</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-&lt;variable RID&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1406,9 +1406,9 @@ This security group has not changed since Windows Server 2008.
 
 ### <a href="" id="bkmk-dnsadmins"></a>DnsAdmins
 
-Members of DNSAdmins group have access to network DNS information. The default permissions are as follows: Allow: Read, Write, Create All Child objects, Delete Child objects, Special Permissions.
+Members of DNSAdmins group have access to network DNS information. The default permissions are as follows: Allow: Read, Write, Create All Child objects, Delete Child objects, Special Permissions. This group exists only if the DNS server role is or was once installed on a domain controller in the domain.
 
-For more information about security and DNS, see [DNSSEC in Windows Server 2012](https://technet.microsoft.com/library/dn593694(v=ws.11).aspx).
+For more information about security and DNS, see [DNSSEC in Windows Server 2012](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn593694(v=ws.11)).
 
 This security group has not changed since Windows Server 2008.
 
@@ -1426,11 +1426,11 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-1102</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-&lt;variable RID&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Domain local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1493,7 +1493,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Domain Global</p></td>
+<td><p>Global</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1552,7 +1552,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-515</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-515</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1613,7 +1613,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-516</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-516</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1674,7 +1674,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-514</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-514</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1737,11 +1737,11 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-513</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-513</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Domain Global</p></td>
+<td><p>Global</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1853,7 +1853,7 @@ The Enterprise Key Admins group was introduced in Windows Server 2016.
 | Default container | CN=Users, DC=&lt;domain&gt;, DC= |
 | Default members | None |
 | Default member of | None |
-| Protected by ADMINSDHOLDER? | No |
+| Protected by ADMINSDHOLDER? | Yes |
 | Safe to move out of default container? | Yes |
 | Safe to delegate management of this group to non-Service admins? | No |
 | Default User Rights | None |
@@ -1865,7 +1865,7 @@ Members of this group are Read-Only Domain Controllers in the enterprise. Except
 
 Read-only domain controllers address some of the issues that are commonly found in branch offices. These locations might not have a domain controller. Or, they might have a writable domain controller, but not the physical security, network bandwidth, or local expertise to support it.
 
-For more information, see [What Is an RODC?](https://technet.microsoft.com/library/cc771030.aspx).
+For more information, see [What Is an RODC?](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771030(v=ws.10)).
 
 The Enterprise Read-Only Domain Controllers group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -1950,7 +1950,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Domain Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -1985,13 +1985,13 @@ This security group has not changed since Windows Server 2008.
 
  
 
-### <a href="" id="bkmk-gpcreatorsowners"></a>Group Policy Creators Owners
+### <a href="" id="bkmk-gpcreatorsowners"></a>Group Policy Creator Owners
 
 This group is authorized to create, edit, or delete Group Policy Objects in the domain. By default, the only member of the group is Administrator.
 
-For information about other features you can use with this security group, see [Group Policy Overview](https://technet.microsoft.com/library/hh831791.aspx).
+For information about other features you can use with this security group, see [Group Policy Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831791(v=ws.11)).
 
-The Group Policy Creators Owners group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
+The Group Policy Creator Owners group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
 This security group has not changed since Windows Server 2008.
 
@@ -2009,7 +2009,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-520</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-520</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -2056,8 +2056,8 @@ When a member of the Guests group signs out, the entire profile is deleted. This
 
 Computer Configuration\\Administrative Templates\\System\\User Profiles
 
-**Note**  
-A Guest account is a default member of the Guests security group. People who do not have an actual account in the domain can use the Guest account. A user whose account is disabled (but not deleted) can also use the Guest account.
+> [!NOTE]
+> A Guest account is a default member of the Guests security group. People who do not have an actual account in the domain can use the Guest account. A user whose account is disabled (but not deleted) can also use the Guest account.
 
 The Guest account does not require a password. You can set rights and permissions for the Guest account as in any user account. By default, the Guest account is a member of the built-in Guests group and the Domain Guests global group, which allows a user to sign in to a domain. The Guest account is disabled by default, and we recommend that it stay disabled.
 
@@ -2093,12 +2093,11 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Default members</p></td>
-<td><p>Guest</p></td>
+<td><p><a href="#bkmk-domainguests" data-raw-source="[Domain Guests](#bkmk-domainguests)">Domain Guests</a></p><p>Guest</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default member of</p></td>
-<td><p><a href="#bkmk-domainguests" data-raw-source="[Domain Guests](#bkmk-domainguests)">Domain Guests</a></p>
-<p>Guest</p></td>
+<td><p>None</p></td>
 </tr>
 <tr class="even">
 <td><p>Protected by ADMINSDHOLDER?</p></td>
@@ -2125,8 +2124,8 @@ This security group has not changed since Windows Server 2008.
 
 Members of the Hyper-V Administrators group have complete and unrestricted access to all the features in Hyper-V. Adding members to this group helps reduce the number of members required in the Administrators group, and further separates access.
 
-**Note**  
-Prior to Windows Server 2012, access to features in Hyper-V was controlled in part by membership in the Administrators group.
+> [!NOTE]
+> Prior to Windows Server 2012, access to features in Hyper-V was controlled in part by membership in the Administrators group.
 
  
 
@@ -2150,7 +2149,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2162,7 +2161,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tr>
 <tr class="odd">
 <td><p>Default member of</p></td>
-<td><p>No</p></td>
+<td><p>None</p></td>
 </tr>
 <tr class="even">
 <td><p>Protected by ADMINSDHOLDER?</p></td>
@@ -2189,7 +2188,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 
 IIS\_IUSRS is a built-in group that is used by Internet Information Services beginning with IIS 7.0. A built-in account and group are guaranteed by the operating system to always have a unique SID. IIS 7.0 replaces the IUSR\_MachineName account and the IIS\_WPG group with the IIS\_IUSRS group to ensure that the actual names that are used by the new account and group will never be localized. For example, regardless of the language of the Windows operating system that you install, the IIS account name will always be IUSR, and the group name will be IIS\_IUSRS.
 
-For more information, see [Understanding Built-In User and Group Accounts in IIS 7](http://www.iis.net/learn/get-started/planning-for-security/understanding-built-in-user-and-group-accounts-in-iis).
+For more information, see [Understanding Built-In User and Group Accounts in IIS 7](/iis/get-started/planning-for-security/understanding-built-in-user-and-group-accounts-in-iis).
 
 This security group has not changed since Windows Server 2008.
 
@@ -2211,7 +2210,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn Local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2252,17 +2251,17 @@ Members of the Incoming Forest Trust Builders group can create incoming, one-way
 
 To make this determination, the Windows security system computes a trust path between the domain controller for the server that receives the request and a domain controller in the domain of the requesting account. A secured channel extends to other Active Directory domains through interdomain trust relationships. This secured channel is used to obtain and verify security information, including security identifiers (SIDs) for users and groups.
 
-**Note**  
-This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
+> [!NOTE]
+> This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
  
 
-For more information, see [How Domain and Forest Trusts Work: Domain and Forest Trusts](https://technet.microsoft.com/library/f5c70774-25cd-4481-8b7a-3d65c86e69b1).
+For more information, see [How Domain and Forest Trusts Work: Domain and Forest Trusts](/previous-versions/windows/it-pro/windows-server-2003/cc773178(v=ws.10)).
 
 The Incoming Forest Trust Builders group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This group cannot be renamed, deleted, or moved.
 
  
 
@@ -2286,7 +2285,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2332,7 +2331,7 @@ The Key Admins group applies to versions of the Windows Server operating system 
 | Default container | CN=Users, DC=&lt;domain&gt;, DC= |
 | Default members | None |
 | Default member of | None |
-| Protected by ADMINSDHOLDER? | No |
+| Protected by ADMINSDHOLDER? | Yes |
 | Safe to move out of default container? | Yes |
 | Safe to delegate management of this group to non-Service admins? | No |
 | Default User Rights | None |
@@ -2359,17 +2358,15 @@ Members of the Network Configuration Operators group can have the following admi
 
 -   Enter the PIN unblock key (PUK) for mobile broadband devices that support a SIM card.
 
-**Note**  
-This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
+> [!NOTE]
+> This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
  
-
 The Network Configuration Operators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This group cannot be renamed, deleted, or moved.
 
- 
 
 This security group has not changed since Windows Server 2008.
 
@@ -2391,7 +2388,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>BuiltIn local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2434,26 +2431,23 @@ Members of the Performance Log Users group can manage performance counters, logs
 
 -   Can create and modify Data Collector Sets after the group is assigned the [Log on as a batch job](/windows/device-security/security-policy-settings/log-on-as-a-batch-job) user right.
 
-    **Warning**  
-    If you are a member of the Performance Log Users group, you must configure Data Collector Sets that you create to run under your credentials.
+    > [!WARNING]
+    > If you are a member of the Performance Log Users group, you must configure Data Collector Sets that you create to run under your credentials.
 
-     
 
 -   Cannot use the Windows Kernel Trace event provider in Data Collector Sets.
 
 For members of the Performance Log Users group to initiate data logging or modify Data Collector Sets, the group must first be assigned the [Log on as a batch job](/windows/device-security/security-policy-settings/log-on-as-a-batch-job) user right. To assign this user right, use the Local Security Policy snap-in in Microsoft Management Console.
 
-**Note**  
-This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
+> [!NOTE]
+> This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
  
-
 The Performance Log Users group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-This account cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This account cannot be renamed, deleted, or moved.
 
- 
 
 This security group has not changed since Windows Server 2008.
 
@@ -2475,7 +2469,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2524,13 +2518,13 @@ Specifically, members of this security group:
 
 -   Cannot create or modify Data Collector Sets.
 
-    **Warning**  
-    You cannot configure a Data Collector Set to run as a member of the Performance Monitor Users group.
+    > [!WARNING]
+    > You cannot configure a Data Collector Set to run as a member of the Performance Monitor Users group.
 
      
 
-**Note**  
-This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO). This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO). This group cannot be renamed, deleted, or moved.
 
  
 
@@ -2556,7 +2550,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2590,15 +2584,13 @@ This security group has not changed since Windows Server 2008.
 </table>
 
  
-
 ### <a href="" id="bkmk-pre-ws2kcompataccess"></a>Pre–Windows 2000 Compatible Access
 
 Members of the Pre–Windows 2000 Compatible Access group have Read access for all users and groups in the domain. This group is provided for backward compatibility for computers running Windows NT 4.0 and earlier. By default, the special identity group, Everyone, is a member of this group. Add users to this group only if they are running Windows NT 4.0 or earlier.
 
-**Warning**  
-This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
+> [!WARNING]
+> This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
- 
 
 The Pre–Windows 2000 Compatible Access group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -2622,7 +2614,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2666,7 +2658,7 @@ This group has no default members. Because members of this group can load and un
 
 The Print Operators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-This security group has not changed since Windows Server 2008. However, in Windows Server 2008 R2, functionality was added to manage print administration. For more information, see [Assign Delegated Print Administrator and Printer Permission Settings in Windows Server 2012](https://technet.microsoft.com/library/jj190062(v=ws.11).aspx).
+This security group has not changed since Windows Server 2008. However, in Windows Server 2008 R2, functionality was added to manage print administration. For more information, see [Assign Delegated Print Administrator and Printer Permission Settings in Windows Server 2012](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj190062(v=ws.11)).
 
 <table>
 <colgroup>
@@ -2686,7 +2678,7 @@ This security group has not changed since Windows Server 2008. However, in Windo
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2743,7 +2735,7 @@ Depending on the account’s domain functional level, members of the Protected U
 
 The Protected Users group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-This group was introduced in Windows Server 2012 R2. For more information about how this group works, see [Protected Users Security Group](https://technet.microsoft.com/library/dn466518.aspx).
+This group was introduced in Windows Server 2012 R2. For more information about how this group works, see [Protected Users Security Group](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn466518(v=ws.11)).
 
 The following table specifies the properties of the Protected Users group.
 
@@ -2765,7 +2757,7 @@ The following table specifies the properties of the Protected Users group.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Domain Global</p></td>
+<td><p>Global</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2826,7 +2818,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Domain local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2865,7 +2857,7 @@ This security group has not changed since Windows Server 2008.
 
 Servers that are members in the RDS Endpoint Servers group can run virtual machines and host sessions where user RemoteApp programs and personal virtual desktops run. This group needs to be populated on servers running RD Connection Broker. Session Host servers and RD Virtualization Host servers used in the deployment need to be in this group.
 
-For information about Remote Desktop Services, see [Host desktops and apps in Remote Desktop Services](https://technet.microsoft.com/library/mt718499.aspx).
+For information about Remote Desktop Services, see [Host desktops and apps in Remote Desktop Services](/windows-server/remote/remote-desktop-services/welcome-to-rds).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -2883,11 +2875,11 @@ This security group was introduced in Windows Server 2012, and it has not chang
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-32-&lt;domain&gt;-576</p></td>
+<td><p>S-1-5-32-576</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2946,7 +2938,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -2985,7 +2977,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 
 Servers in the RDS Remote Access Servers group provide users with access to RemoteApp programs and personal virtual desktops. In Internet facing deployments, these servers are typically deployed in an edge network. This group needs to be populated on servers running RD Connection Broker. RD Gateway servers and RD Web Access servers that are used in the deployment need to be in this group.
 
-For more information, see [Host desktops and apps in Remote Desktop Services](https://technet.microsoft.com/library/mt718499.aspx).
+For more information, see [Host desktops and apps in Remote Desktop Services](/windows-server/remote/remote-desktop-services/welcome-to-rds).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -3007,7 +2999,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3040,6 +3032,78 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tbody>
 </table>
 
+ 
+
+### <a href="" id="bkmk-rodc"></a>Read-Only Domain Controllers
+
+This group is comprised of the Read-only domain controllers in the domain. A Read-only domain controller makes it possible for organizations to easily deploy a domain controller in scenarios where physical security cannot be guaranteed, such as branch office locations, or in scenarios where local storage of all domain passwords is considered a primary threat, such as in an extranet or in an application-facing role.
+
+Because administration of a Read-only domain controller can be delegated to a domain user or security group, an Read-only domain controller is well suited for a site that should not have a user who is a member of the Domain Admins group. A Read-only domain controller encompasses the following functionality:
+
+-   Read-only AD DS database
+
+-   Unidirectional replication
+
+-   Credential caching
+
+-   Administrator role separation
+
+-   Read-only Domain Name System (DNS)
+
+For information about deploying a Read-only domain controller, see [Understanding Planning and Deployment for Read-Only Domain Controllers](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754719(v=ws.10)).
+
+This security group was introduced in Windows Server 2008, and it has not changed in subsequent versions.
+
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Attribute</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Well-Known SID/RID</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-521</p></td>
+</tr>
+<tr class="even">
+<td><p>Type</p></td>
+<td><p>Global</p></td>
+</tr>
+<tr class="odd">
+<td><p>Default container</p></td>
+<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
+</tr>
+<tr class="even">
+<td><p>Default members</p></td>
+<td><p>None</p></td>
+</tr>
+<tr class="odd">
+<td><p>Default member of</p></td>
+<td><p><a href="#bkmk-deniedrodcpwdrepl" data-raw-source="[Denied RODC Password Replication Group](#bkmk-deniedrodcpwdrepl)">Denied RODC Password Replication Group</a></p></td>
+</tr>
+<tr class="even">
+<td><p>Protected by ADMINSDHOLDER?</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="odd">
+<td><p>Safe to move out of default container?</p></td>
+<td><p>Yes</p></td>
+</tr>
+<tr class="even">
+<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
+<td><p></p></td>
+</tr>
+<tr class="odd">
+<td><p>Default User Rights</p></td>
+<td><p>See <a href="#bkmk-deniedrodcpwdrepl" data-raw-source="[Denied RODC Password Replication Group](#bkmk-deniedrodcpwdrepl)">Denied RODC Password Replication Group</a></p></td>
+</tr>
+</tbody>
+</table>
  
 
 ### <a href="" id="bkmk-remotedesktopusers"></a>Remote Desktop Users
@@ -3101,78 +3165,6 @@ This security group has not changed since Windows Server 2008.
 </tbody>
 </table>
 
- 
-
-### <a href="" id="bkmk-rodc"></a>Read-Only Domain Controllers
-
-This group is comprised of the Read-only domain controllers in the domain. A Read-only domain controller makes it possible for organizations to easily deploy a domain controller in scenarios where physical security cannot be guaranteed, such as branch office locations, or in scenarios where local storage of all domain passwords is considered a primary threat, such as in an extranet or in an application-facing role.
-
-Because administration of a Read-only domain controller can be delegated to a domain user or security group, an Read-only domain controller is well suited for a site that should not have a user who is a member of the Domain Admins group. A Read-only domain controller encompasses the following functionality:
-
--   Read-only AD DS database
-
--   Unidirectional replication
-
--   Credential caching
-
--   Administrator role separation
-
--   Read-only Domain Name System (DNS)
-
-For information about deploying a Read-only domain controller, see [Understanding Planning and Deployment for Read-Only Domain Controllers](https://technet.microsoft.com/library/cc754719(v=ws.10).aspx).
-
-This security group was introduced in Windows Server 2008, and it has not changed in subsequent versions.
-
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-521</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p><a href="#bkmk-deniedrodcpwdrepl" data-raw-source="[Denied RODC Password Replication Group](#bkmk-deniedrodcpwdrepl)">Denied RODC Password Replication Group</a></p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>Default User Rights</p></td>
-<td><p>See <a href="#bkmk-deniedrodcpwdrepl" data-raw-source="[Denied RODC Password Replication Group](#bkmk-deniedrodcpwdrepl)">Denied RODC Password Replication Group</a></p></td>
-</tr>
-</tbody>
-</table>
 
  
 
@@ -3182,7 +3174,7 @@ Members of the Remote Management Users group can access WMI resources over manag
 
 The Remote Management Users group is generally used to allow users to manage servers through the Server Manager console, whereas the [WinRMRemoteWMIUsers\_](#bkmk-winrmremotewmiusers-) group is allows remotely running Windows PowerShell commands.
 
-For more information, see [What's New in MI?](https://msdn.microsoft.com/library/jj819828(v=vs.85).aspx) and [About WMI](https://msdn.microsoft.com/library/aa384642.aspx).
+For more information, see [What's New in MI?](/previous-versions/windows/desktop/wmi_v2/what-s-new-in-mi) and [About WMI](/windows/win32/wmisdk/about-wmi).
 
 This security group was introduced in Windows Server 2012, and it has not changed in subsequent versions.
 
@@ -3204,7 +3196,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3243,13 +3235,13 @@ This security group was introduced in Windows Server 2012, and it has not chang
 
 Computers that are members of the Replicator group support file replication in a domain. Windows Server operating systems use the File Replication service (FRS) to replicate system policies and logon scripts stored in the System Volume (SYSVOL). Each domain controller keeps a copy of SYSVOL for network clients to access. FRS can also replicate data for the Distributed File System (DFS), synchronizing the content of each member in a replica set as defined by DFS. FRS can copy and maintain shared files and folders on multiple servers simultaneously. When changes occur, content is synchronized immediately within sites and by a schedule between sites.
 
-**Important**  
-In Windows Server 2008 R2, FRS cannot be used for replicating DFS folders or custom (non-SYSVOL) data. A Windows Server 2008 R2 domain controller can still use FRS to replicate the contents of a SYSVOL shared resource in a domain that uses FRS for replicating the SYSVOL shared resource between domain controllers.
+> [!WARNING]
+> In Windows Server 2008 R2, FRS cannot be used for replicating DFS folders or custom (non-SYSVOL) data. A Windows Server 2008 R2 domain controller can still use FRS to replicate the contents of a SYSVOL shared resource in a domain that uses FRS for replicating the SYSVOL shared resource between domain controllers.
 
 However, Windows Server 2008 R2 servers cannot use FRS to replicate the contents of any replica set apart from the SYSVOL shared resource. The DFS Replication service is a replacement for FRS, and it can be used to replicate the contents of a SYSVOL shared resource, DFS folders, and other custom (non-SYSVOL) data. You should migrate all non-SYSVOL FRS replica sets to DFS Replication. For more information, see:
 
-- [File Replication Service (FRS) Is Deprecated in Windows Server 2008 R2 (Windows)](https://msdn.microsoft.com/library/windows/desktop/ff384840.aspx)
-- [DFS Namespaces and DFS Replication Overview](https://technet.microsoft.com/library/jj127250(v=ws.11).aspx)
+- [File Replication Service (FRS) Is Deprecated in Windows Server 2008 R2 (Windows)](/windows/win32/win7appqual/file-replication-service--frs--is-deprecated-in-windows-server-2008-r2)
+- [DFS Namespaces and DFS Replication Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
 
 This security group has not changed since Windows Server 2008.
 
@@ -3271,7 +3263,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3314,7 +3306,7 @@ The group is authorized to make schema changes in Active Directory. By default,
 
 The membership of this group can be modified by any of the service administrator groups in the root domain. This is considered a service administrator account because its members can modify the schema, which governs the structure and content of the entire directory.
 
-For more information, see [What Is the Active Directory Schema?: Active Directory](https://technet.microsoft.com/library/cc784826.aspx).
+For more information, see [What Is the Active Directory Schema?: Active Directory](/previous-versions/windows/it-pro/windows-server-2003/cc784826(v=ws.10)).
 
 The Schema Admins group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -3334,7 +3326,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;root domain&gt;-518</p></td>
+<td><p>S-1-5-21-&lt;root domain&gt;-518</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -3375,9 +3367,9 @@ This security group has not changed since Windows Server 2008.
 
 ### <a href="" id="bkmk-serveroperators"></a>Server Operators
 
-Members in the Server Operators group can administer domain servers. This group exists only on domain controllers. By default, the group has no members. Memebers of the Server Operators group can sign in to a server interactively, create and delete network shared resources, start and stop services, back up and restore files, format the hard disk drive of the computer, and shut down the computer. This group cannot be renamed, deleted, or moved.
+Members in the Server Operators group can administer domain controllers. This group exists only on domain controllers. By default, the group has no members. Members of the Server Operators group can sign in to a server interactively, create and delete network shared resources, start and stop services, back up and restore files, format the hard disk drive of the computer, and shut down the computer. This group cannot be renamed, deleted, or moved.
 
-By default, this built-in group has no members, and it has access to server configuration options on domain controllers. Its membership is controlled by the service administrator groups, Administrators and Domain Admins, in the domain, and the Enterprise Admins group. Members in this group cannot change any administrative group memberships. This is considered a service administrator account because its members have physical access to domain controllers, they can perform maintenance tasks (such as backup and restore), and they have the ability to change binaries that are installed on the domain controllers. Note the default user rights in the following table.
+By default, this built-in group has no members, and it has access to server configuration options on domain controllers. Its membership is controlled by the service administrator groups Administrators and Domain Admins in the domain, and the Enterprise Admins group in the forest root domain. Members in this group cannot change any administrative group memberships. This is considered a service administrator account because its members have physical access to domain controllers, they can perform maintenance tasks (such as backup and restore), and they have the ability to change binaries that are installed on the domain controllers. Note the default user rights in the following table.
 
 The Server Operators group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
@@ -3401,7 +3393,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3449,7 +3441,7 @@ The Storage Replica Administrators group applies to versions of the Windows Serv
 | Attribute | Value |
 |-----------|-------|
 | Well-Known SID/RID | S-1-5-32-582 |
-| Type | BuiltIn Local |
+| Type | Builtin Local |
 | Default container | CN=BuiltIn, DC=&lt;domain&gt;, DC= |
 | Default members | None |
 | Default member of | None |
@@ -3470,7 +3462,7 @@ The System Managed Accounts group applies to versions of the Windows Server oper
 | Attribute | Value |
 |-----------|-------|
 | Well-Known SID/RID | S-1-5-32-581 |
-| Type | BuiltIn Local |
+| Type | Builtin Local |
 | Default container | CN=BuiltIn, DC=&lt;domain&gt;, DC= |
 | Default members | Users |
 | Default member of | None |
@@ -3485,12 +3477,12 @@ The System Managed Accounts group applies to versions of the Windows Server oper
 
 Members of the Terminal Server License Servers group can update user accounts in Active Directory with information about license issuance. This is used to track and report TS Per User CAL usage. A TS Per User CAL gives one user the right to access a Terminal Server from an unlimited number of client computers or devices. This group appears as a SID until the domain controller is made the primary domain controller and it holds the operations master role (also known as flexible single master operations or FSMO).
 
-For more information about this security group, see [Terminal Services License Server Security Group Configuration](https://technet.microsoft.com/library/cc775331.aspx).
+For more information about this security group, see [Terminal Services License Server Security Group Configuration](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc775331(v=ws.10)).
 
 The Terminal Server License Servers group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This group cannot be renamed, deleted, or moved.
 
  
 
@@ -3514,7 +3506,7 @@ This security group only applies to Windows Server 2003 and Windows Server 200
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3581,7 +3573,7 @@ This security group includes the following changes since Windows Server 2008:
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3595,7 +3587,7 @@ This security group includes the following changes since Windows Server 2008:
 </tr>
 <tr class="odd">
 <td><p>Default member of</p></td>
-<td><p>Domain Users (this membership is due to the fact that the Primary Group ID of all user accounts is Domain Users.)</p></td>
+<td><p>None</p></td>
 </tr>
 <tr class="even">
 <td><p>Protected by ADMINSDHOLDER?</p></td>
@@ -3624,11 +3616,10 @@ Members of this group have access to the computed token GroupsGlobalAndUniversal
 
 The Windows Authorization Access group applies to versions of the Windows Server operating system listed in the [Active Directory Default Security Groups table](#bkmk-groupstable).
 
-**Note**  
-This group cannot be renamed, deleted, or moved.
+> [!NOTE]
+> This group cannot be renamed, deleted, or moved.
 
  
-
 This security group has not changed since Windows Server 2008.
 
 <table>
@@ -3649,7 +3640,7 @@ This security group has not changed since Windows Server 2008.
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
-<td><p>Builtin local</p></td>
+<td><p>Builtin Local</p></td>
 </tr>
 <tr class="odd">
 <td><p>Default container</p></td>
@@ -3704,8 +3695,8 @@ The WinRMRemoteWMIUsers\_ group applies to versions of the Windows Server operat
 
 In Windows Server 2012, the Access Denied Assistance functionality adds the Authenticated Users group to the local WinRMRemoteWMIUsers\_\_ group. Therefore, when the Access Denied Assistance functionality is enabled, all authenticated users who have Read permissions to the file share can view the file share permissions.
 
-**Note**  
-The WinRMRemoteWMIUsers\_ group allows running Windows PowerShell commands remotely whereas the [Remote Management Users](#bkmk-remotemanagementusers) group is generally used to allow users to manage servers by using the Server Manager console.
+> [!NOTE]
+> The WinRMRemoteWMIUsers\_ group allows running Windows PowerShell commands remotely whereas the [Remote Management Users](#bkmk-remotemanagementusers) group is generally used to allow users to manage servers by using the Server Manager console.
 
  
 

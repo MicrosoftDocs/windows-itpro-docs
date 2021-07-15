@@ -2,7 +2,7 @@
 title: 4793(S) The Password Policy Checking API was called. (Windows 10)
 description: Describes security event 4793(S) The Password Policy Checking API was called.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4793(S): The Password Policy Checking API was called.
@@ -26,11 +27,11 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates each time the [Password Policy Checking API](https://msdn.microsoft.com/library/aa370661(VS.85).aspx) is called.
+This event generates each time the [Password Policy Checking API](/windows/win32/api/lmaccess/nf-lmaccess-netvalidatepasswordpolicy) is called.
 
 The Password Policy Checking API allows an application to check password compliance against an application-provided account database or single account and verify that passwords meet the complexity, aging, minimum length, and history reuse requirements of a password policy.
 
-This event, for example, generates during Directory Services Restore Mode ([DSRM](http://blogs.technet.com/b/askds/archive/2009/03/11/ds-restore-mode-password-maintenance.aspx)) account password reset procedure to check new DSRM password.
+This event, for example, generates during Directory Services Restore Mode ([DSRM](/archive/blogs/askds/ds-restore-mode-password-maintenance)) account password reset procedure to check new DSRM password.
 
 This event generates on the computer where Password Policy Checking API was called.
 
@@ -117,4 +118,3 @@ For 4793(S): The Password Policy Checking API was called.
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Typically this is an informational event, and can give you information about when Password Policy Checking APIs were invoked, and who invoked them. The **Provided Account Name** does not always have a value—sometimes it’s not really possible to determine for which account the password policy check was performed.
-

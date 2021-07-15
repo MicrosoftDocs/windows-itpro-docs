@@ -1,7 +1,7 @@
 ---
 title: Security Considerations for UE-V
-description: Security Considerations for UE-V
-author: dansimp
+description: Learn about accounts and groups, log files, and other security-related considerations for User Experience Virtualization (UE-V).
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 

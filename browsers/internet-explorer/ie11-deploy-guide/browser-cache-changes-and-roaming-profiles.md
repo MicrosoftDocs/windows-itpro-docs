@@ -7,7 +7,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 85f0cd01-6f82-4bd1-9c0b-285af1ce3436
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Browser cache changes and roaming profiles (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
@@ -16,9 +17,12 @@ ms.date: 10/16/2017
 
 
 # Browser cache changes and roaming profiles
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 We’ve redesigned the browser cache to improve the performance, flexibility, reliability, and scalability of Internet Explorer and the apps that rely on the Windows Internet (WinINet) cache. Our new database design stops multiple clients from simultaneously accessing and using cached information, while also providing a higher level of data integrity.
 
-You won’t notice any changes to the management of your roaming profile data if you use our new database implementation in conjunction with the [roaming user profile guidelines](https://go.microsoft.com/fwlink/p/?LinkId=401544). This means that IE data that’s stored in the `AppData\Roaming` user profile folder is still be uploaded to your normal profile storage location after a user successfully logs off.<p>**Note**<br>Cookies in a roaming profile can only be set by Internet Explorer for the desktop, with Enhanced Protected Mode turned off. Cookies set by the immersive version of IE or by Microsoft Store apps, can’t be part of a roaming profile. For more information about persistent cookies and roaming, see [Persistent cookies are not roamed in Internet Explorer](https://go.microsoft.com/fwlink/p/?LinkId=401545).
+You won’t notice any changes to the management of your roaming profile data if you use our new database implementation in conjunction with the [roaming user profile guidelines](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj649079(v=ws.11)). This means that IE data that’s stored in the `AppData\Roaming` user profile folder is still be uploaded to your normal profile storage location after a user successfully logs off.<p>**Note**<br>Cookies in a roaming profile can only be set by Internet Explorer for the desktop, with Enhanced Protected Mode turned off. Cookies set by the immersive version of IE or by Microsoft Store apps, can’t be part of a roaming profile. For more information about persistent cookies and roaming, see [Persistent cookies are not roamed in Internet Explorer](https://go.microsoft.com/fwlink/p/?LinkId=401545).
 
 To get the best results while using roaming profiles, we strongly recommend the following:
 
@@ -33,6 +37,3 @@ To get the best results while using roaming profiles, we strongly recommend the 
  
 
  
-
-
-

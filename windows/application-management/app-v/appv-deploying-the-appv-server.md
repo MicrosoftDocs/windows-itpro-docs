@@ -1,7 +1,7 @@
 ---
 title: Deploying the App-V Server (Windows 10)
-description: Deploying the App-V Server in App-V for Windows 10
-author: lomayor
+description: Learn how to deploy the Application Virtualization (App-V) Server in App-V for Windows 10 by using different deployment configurations described in this article.
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # Deploying the App-V server
@@ -35,11 +35,15 @@ App-V offers the following five server components, each of which serves a specif
 
 * **Management server.** Use the App-V management server and console to manage your App-V infrastructure. See [Administering App-V with the management console](appv-administering-virtual-applications-with-the-management-console.md) for more information about the management server.
 
- > [!NOTE]
-    >If you are using App-V with your electronic software distribution solution, you don’t need to use the management server and console. However, you may want to take advantage of the reporting and streaming capabilities in App-V.
+  > [!NOTE]
+  > If you are using App-V with your electronic software distribution solution, you don’t need to use the management server and console. However, you may want to take advantage of the reporting and streaming capabilities in App-V.
+
 * **Management database.** Use the App-V management database to facilitate database pre-deployments for App-V management. For more information about the management database, see [How to deploy the App-V server](appv-deploy-the-appv-server.md).
+
 * **Publishing server.** Use the App-V publishing server to host and stream virtual applications. The publishing server supports the HTTP and HTTPS protocols and does not require a database connection. To learn how to configure the publishing server, see [How to install the App-V publishing server](appv-install-the-publishing-server-on-a-remote-computer.md).
+
 * **Reporting server.** Use the App-V reporting server to generate reports that help you manage your App-V infrastructure. The reporting server requires a connection to the reporting database. To learn more about App-V's reporting capabilities, see [About App-V reporting](appv-reporting.md).
+
 * **Reporting database.** Use the App-V reporting database to facilitate database pre-deployments for App-V reporting. To learn more about the reporting database, see [How to deploy the App-V server](appv-deploy-the-appv-server.md).
 
 All five App-V server components are included in the Microsoft Desktop Optimization Pack (MDOP) 2015 ISO package, which can be downloaded from either of the following locations:

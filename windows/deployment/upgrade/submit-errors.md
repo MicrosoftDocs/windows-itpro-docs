@@ -3,13 +3,14 @@ title: Submit Windows 10 upgrade errors using Feedback Hub
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Submit Windows 10 upgrade errors for diagnosis using feedback hub
+description: Download the Feedback Hub app, and then submit Windows 10 upgrade errors for diagnosis using feedback hub.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, feedback
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: deploy
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -54,7 +55,7 @@ The Feedback Hub will open.
     - Are there any external devices connected? 
 - If you used the link above, the category and subcategory will be automatically selected. If it is not selected, choose **Install and Update** and **Windows Installation**. 
 
-You can attach a screenshot or file if desired. This is optional, but can be extremely helpful when diagnosing your upgrade issue. The location of these files is described here: [Windows Setup log files and event logs](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-log-files-and-event-logs).
+You can attach a screenshot or file if desired. This is optional, but can be extremely helpful when diagnosing your upgrade issue. The location of these files is described here: [Windows Setup log files and event logs](/windows-hardware/manufacture/desktop/windows-setup-log-files-and-event-logs).
 
 Click **Submit** to send your feedback.
 
@@ -73,4 +74,3 @@ After your feedback is submitted, you can email or post links to it by opening t
 ## Related topics
 
 [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx)
-

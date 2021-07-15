@@ -1,16 +1,15 @@
 ---
 title: Windows as a service news & resources
+description: The latest news for Windows as a service with resources to help you learn more about them.
 ms.prod: w10
 ms.topic: article
 ms.manager: elizapo
 audience: itpro
-itproauthor: jaimeo
 author: jaimeo
 ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
 ms.localizationpriority: high
-ms.topic: article
 ---
 # Windows as a service - More news
 
@@ -19,8 +18,8 @@ Here's more news about [Windows as a service](windows-as-a-service.md):
 <ul>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-Enterprise-vs-Windows-10-Pro-Modern-management/ba-p/720445">Windows 10 Enterprise vs. Windows 10 Pro: Modern management considerations for your organization  </a> - June 25, 2019</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Updating-Windows-10-version-1903-using-Configuration-Manager-or/ba-p/639100">Updating Windows 10, version 1903 using Configuration Manager or WSUS</a> - May 23, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064">What’s new in Windows Update for Business in Windows 10, version 1903</a> - May 21, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024">What’s new for IT pros in Windows 10, version 1903</a> - May 21, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-in-Windows-Update-for-Business-in-Windows-10-version/ba-p/622064">What's new in Windows Update for Business in Windows 10, version 1903</a> - May 21, 2019</li>
+<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-new-for-IT-pros-in-Windows-10-version-1903/ba-p/622024">What's new for IT pros in Windows 10, version 1903</a> - May 21, 2019</li>
 <li><a href="https://blogs.windows.com/windowsexperience/2019/05/21/how-to-get-the-windows-10-may-2019-update">How to get the Windows 10 May 2019 Update</a> - May 21, 2019</li>
  <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/The-benefits-of-Windows-10-Dynamic-Update/ba-p/467847">The benefits of Windows 10 Dynamic Update</a> - April 17, 2019</li>
   <li><a href="https://blogs.windows.com/windowsexperience/2019/04/04/improving-the-windows-10-update-experience-with-control-quality-and-transparency">Improving the Windows 10 update experience with control, quality and transparency</a> - April 4, 2019</li>
@@ -45,7 +44,6 @@ Here's more news about [Windows as a service](windows-as-a-service.md):
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Reduced-Windows-10-package-size-downloads-for-x64-systems/ba-p/262386">Reducing Windows 10 Package Size Downloads for x64 Systems</a> - September 26, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-7-servicing-stack-updates-managing-change-and/ba-p/260434">Windows 7 Servicing Stack Updates: Managing Change and Appreciating Cumulative Updates</a> - September 21, 2018</li>
 <li><a href="https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop/">Helping customers shift to a modern desktop</a> - September 6, 2018</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-Update-for-Business-amp-Windows-Analytics-a-real-world/ba-p/242417#M228">Windows Update for Business &amp; Windows Analytics: a real-world experience</a> - September 5, 2018</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/What-s-next-for-Windows-10-and-Windows-Server-quality-updates/ba-p/229461">What&#39;s next for Windows 10 and Windows Server quality updates</a> - August 16, 2018</li>
 <li><a href="https://www.youtube-nocookie.com/watch/BwB10v55WSk">Windows 10 monthly updates</a> - August 1, 2018 (<strong>video</strong>)</li>
 <li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-update-servicing-cadence/ba-p/222376">Windows 10 update servicing cadence</a> - August 1, 2018</li>

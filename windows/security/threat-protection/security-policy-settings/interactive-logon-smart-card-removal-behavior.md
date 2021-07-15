@@ -1,10 +1,10 @@
 ---
 title: Interactive logon Smart card removal behavior (Windows 10)
-description: Best practices, location, values, policy management and security considerations for the security policy setting, Interactive logon Smart card removal behavior.
+description: Best practices, location, values, policy management, and security considerations for the security policy setting, Interactive logon Smart card removal behavior.
 ms.assetid: 61487820-9d49-4979-b15d-c7e735999460
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Interactive logon: Smart card removal behavior
@@ -22,36 +23,39 @@ ms.date: 04/19/2017
 **Applies to**
 -   Windows 10
 
-Describes the best practices, location, values, policy management and security considerations for the **Interactive logon: Smart card removal behavior** security policy setting.
+Describes the recommended practices, location, values, policy management, and security considerations for the **Interactive logon: Smart card removal behavior** security policy setting.
 
 ## Reference
 
 This policy setting determines what happens when the smart card for a logged-on user is removed from the smart card reader.
 
-If smart cards are used for authentication, the device should automatically lock itself when the card is removed—that way, if users forget to manually lock their devices when they are away from them, malicious users cannot gain access.
+If smart cards are used for authentication, the device should automatically lock itself when the card is removed. So if users forget to manually lock their devices when they leave, malicious users cannot gain access.
 
 If you select **Force Logoff** in the property sheet for this policy setting, the user is automatically logged off when the smart card is removed. Users will have to reinsert their smart cards and reenter their PINs when they return to their workstations.
+
+> [!NOTE]
+> This policy depends on **Smart Card Removal Policy** service. The service must be running for the policy to take effect, so it is recommended to set the startup type of the service to **Automatic**.
 
 ### Possible values
 
 -   No Action
 -   Lock Workstation
 
-    If you select this, the workstation is locked when the smart card is removed, allowing users to leave the area, take their smart card with them, and still maintain a protected session.
+    If you use this setting, the workstation is locked when the smart card is removed. So users can leave the area, take their smart card with them, and still maintain a protected session.
 
 -   Force Logoff
 
-    If you select this, the user is automatically logged off when the smart card is removed.
+    If you use this setting, the user is automatically logged off when the smart card is removed.
 
 -   Disconnect if a remote Remote Desktop Services session
 
-    If you select this, removal of the smart card disconnects the session without logging the user off. This allows the user to insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.
+    If you use this setting, removal of the smart card disconnects the session without logging off the user. So the user can insert the smart card and resume the session later, or at another smart card reader-equipped computer, without having to log on again. If the session is local, this policy functions identically to Lock Workstation.
 
 -   Not Defined
 
 ### Best practices
 
--   Set **Interactive logon: Smart card removal behavior** to **Lock Workstation**. If you select **Lock Workstation** in the property sheet for this policy setting, the workstation is locked when the smart card is removed. This allows users to leave the area, take their smart card with them, and still maintain a protected session.
+-   Set **Interactive logon: Smart card removal behavior** to **Lock Workstation**. If you select **Lock Workstation** in the property sheet for this policy setting, the workstation is locked when the smart card is removed. So users can leave the area, take their smart card with them, and still maintain a protected session.
 
 ### Location
 
@@ -59,7 +63,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
+The following table lists the actual and effective default values for this policy, by server type or Group Policy Object (GPO). Default values are also listed on the policy's property page.
 
 | Server type or GPO | Default value |
 | - | - |
@@ -76,7 +80,7 @@ This section describes features and tools that are available to help you manage 
 
 ### Restart requirement
 
-None. Changes to this policy become effective without a device restart when they are saved locally or distributed through Group Policy.
+None. Changes to this policy become effective without a device restart when they're saved locally or distributed through Group Policy.
 
 ### Policy conflict considerations
 
@@ -84,7 +88,7 @@ None
 
 ### Group Policy
 
-This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through Group Policy Objects (GPOs). If this policy is not contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
+This policy setting can be configured by using the Group Policy Management Console (GPMC) to be distributed through GPOs. If this policy isn't contained in a distributed GPO, this policy can be configured on the local computer by using the Local Security Policy snap-in.
 
 ## Security considerations
 
@@ -92,7 +96,7 @@ This section describes how an attacker might exploit a feature or its configurat
 
 ### Vulnerability
 
-Users sometimes forget to lock their workstations when they are away from them, allowing the possibility for malicious users to access their devices. If smart cards are used for authentication, the device should automatically lock itself when the card is removed to ensure that only the user with the smart card is accessing resources by using those credentials.
+Users sometimes forget to lock their workstations when they're away from them, allowing the possibility for malicious users to access their devices. If smart cards are used for authentication, the device should automatically lock itself when the card is removed to ensure that only the user with the smart card is accessing resources by using those credentials.
 
 ### Countermeasure
 

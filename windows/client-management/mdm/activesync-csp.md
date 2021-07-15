@@ -1,6 +1,6 @@
 ---
 title: ActiveSync CSP
-description: ActiveSync CSP
+description: Learn how the ActiveSync configuration service provider is used to set up and change settings for Exchange ActiveSync. 
 ms.assetid: c65093ef-bd36-4f32-9dab-edb7bcfb3188
 ms.reviewer: 
 manager: dansimp
@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 06/26/2017
 ---
 
@@ -19,8 +19,8 @@ The ActiveSync configuration service provider is used to set up and change setti
 
 Configuring Windows Live ActiveSync accounts through this configuration service provider is not supported.
 
-> **Note**  
-The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the ./User/Vendor/MSFT/ActiveSync path.
+> [!NOTE]
+> The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the ./User/Vendor/MSFT/ActiveSync path.
 
 On the desktop, only per user configuration (./User/Vendor/MSFT/ActiveSync) is supported. However, the ./Vendor/MSFT/ActiveSync path will work if the user is logged in. The CSP fails when no user is logged in.
 
@@ -28,15 +28,45 @@ The ./Vendor/MSFT/ActiveSync path is deprecated, but will continue to work in th
 
  
 
-The following diagram shows the ActiveSync configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+The following shows the ActiveSync configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
 
-![activesync csp (cp)](images/provisioning-csp-activesync-cp.png)
+```
+./Vendor/MSFT
+ActiveSync
+----Accounts
+--------Account GUID
+------------EmailAddress
+------------Domain
+------------AccountIcon
+------------AccountType
+------------AccountName
+------------Password
+------------ServerName
+------------UserName
+------------Options
+----------------CalendarAgeFilter
+----------------Logging
+----------------MailBodyType
+----------------MailHTMLTruncation
+----------------MailPlainTextTruncation
+----------------Schedule
+----------------UseSSL
+----------------MailAgeFilter
+----------------ContentTypes
+--------------------Content Type GUID
+------------------------Enabled
+------------------------Name
+------------Policies
+----------------MailBodyType
+----------------MaxMailAgeFilter
+
+```
 
 <a href="" id="--user-vendor-msft-activesync"></a>**./User/Vendor/MSFT/ActiveSync**  
 The root node for the ActiveSync configuration service provider.
 
-> **Note**  
-The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the ./User/Vendor/MSFT/ActiveSync path.
+> [!NOTE]
+> The target user must be logged in for the CSP to succeed. The correct way to configure an account is to use the ./User/Vendor/MSFT/ActiveSync path.
 
 On the desktop, only per user configuration (./User/Vendor/MSFT/ActiveSync) is supported. However, the ./Vendor/MSFT/ActiveSync will work if the user is logged in. The CSP fails when no user is logged in.
 
@@ -231,10 +261,10 @@ Valid values are one of the following:
 <a href="" id="options-contenttypes-content-type-guid-name"></a>**Options/ContentTypes/*Content Type GUID*/Name**  
 Required. A character string that specifies the name of the content type.
 
-> **Note**  In Windows 10, this node is currently not working.
+> [!NOTE]
+> In Windows 10, this node is currently not working.
 
  
-
 Supported operations are Get, Replace, and Add (cannot Add after the account is created).
 
 When you use Add or Replace inside an atomic block in the SyncML, the CSP returns an error and provisioning fails. When you use Add or Replace outside of the atomic block, the error is ignored and the account is provisioned as expected.

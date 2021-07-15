@@ -1,0 +1,552 @@
+- name: Deploy and update Windows client
+  href: index.yml
+  items: 
+    - name: Get started
+      items: 
+        - name: What's new
+          href: deploy-whats-new.md
+        - name: Windows client deployment scenarios
+          href: windows-10-deployment-scenarios.md
+        - name: What is Windows as a service?
+          href: update/waas-quick-start.md
+        - name: Windows update fundamentals
+          href: update/waas-overview.md
+        - name: Basics of Windows updates, channels, and tools
+          href: update/get-started-updates-channels-tools.md
+        - name: Servicing the Windows 10 operating system
+          href: update/waas-servicing-strategy-windows-10-updates.md
+
+        - name: Deployment proof of concept
+          items: 
+            - name: Demonstrate Autopilot deployment on a VM
+              href: windows-autopilot/demonstrate-deployment-on-vm.md
+            - name: Deploy Windows 10 with MDT and Configuration Manager
+              items:
+                - name: 'Step by step guide: Configure a test lab to deploy Windows 10'
+                  href: windows-10-poc.md
+                - name: Deploy Windows 10 in a test lab using MDT
+                  href: windows-10-poc-mdt.md
+                - name: Deploy Windows 10 in a test lab using Configuration Manager
+                  href: windows-10-poc-sc-config-mgr.md 
+        - name: Deployment process posters
+          href: windows-10-deployment-posters.md      
+
+    - name: Plan
+      items:
+        - name: Plan for Windows 11
+          href: /windows/whats-new/windows-11-plan
+        - name: Create a deployment plan
+          href: update/create-deployment-plan.md
+        - name: Define readiness criteria
+          href: update/plan-define-readiness.md
+        - name: Evaluate infrastructure and tools
+          href: update/eval-infra-tools.md
+        - name: Determine application readiness
+          href: update/plan-determine-app-readiness.md 
+        - name: Define your servicing strategy
+          href: update/plan-define-strategy.md
+        - name: Delivery Optimization for Windows 10 updates
+          href: update/waas-delivery-optimization.md
+          items:
+            - name: Using a proxy with Delivery Optimization
+              href: update/delivery-optimization-proxy.md
+        - name: Best practices for feature updates on mission-critical devices
+          href: update/feature-update-mission-critical.md
+        - name: Windows 10 deployment considerations
+          href: planning/windows-10-deployment-considerations.md
+        - name: Windows 10 infrastructure requirements
+          href: planning/windows-10-infrastructure-requirements.md
+        - name: Plan for volume activation
+          href: volume-activation/plan-for-volume-activation-client.md
+        - name: Features removed or planned for replacement
+          items:
+            - name: Windows 10 features lifecycle
+              href: planning/features-lifecycle.md
+            - name: Features we're no longer developing
+              href: planning/windows-10-deprecated-features.md
+            - name: Features we removed
+              href: planning/windows-10-removed-features.md         
+
+    - name: Prepare
+      items: 
+        - name: Prepare for Windows 11
+          href: /windows/whats-new/windows-11-prepare
+        - name: Prepare to deploy Windows 10 updates
+          href: update/prepare-deploy-windows.md
+        - name: Evaluate and update infrastructure
+          href: update/update-policies.md
+        - name: Update Baseline
+          href: update/update-baseline.md
+        - name: Set up Delivery Optimization for Windows 10 updates
+          href: update/waas-delivery-optimization-setup.md
+        - name: Configure BranchCache for Windows 10 updates
+          href: update/waas-branchcache.md
+        - name: Prepare your deployment tools
+          items:
+            - name: Prepare for deployment with MDT
+              href: deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md
+            - name: Prepare for deployment with Configuration Manager
+              href: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
+        - name: Build a successful servicing strategy
+          items:
+            - name: Build deployment rings for Windows 10 updates
+              href: update/waas-deployment-rings-windows-10-updates.md
+            - name: Check release health
+              href: update/check-release-health.md
+            - name: Prepare updates using Windows Update for Business
+              href: update/waas-manage-updates-wufb.md
+            - name: Prepare updates using WSUS
+              href: update/waas-manage-updates-wsus.md
+
+    - name: Deploy
+      items: 
+        - name: Deploy Windows client
+          items:
+            - name: Deploy Windows client with Autopilot
+              href: windows-autopilot/index.yml
+            - name: Deploy Windows client with Configuration Manager
+              items:
+                - name: Deploy to a new device
+                  href: deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md
+                - name: Refresh a device
+                  href: deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md
+                - name: Replace a device
+                  href: deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md
+                - name: In-place upgrade
+                  href: deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md
+            - name: Deploy Windows client with MDT
+              items:
+                - name: Deploy to a new device
+                  href: deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md
+                - name: Refresh a device
+                  href: deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md
+                - name: Replace a device
+                  href: deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md
+                - name: In-place upgrade
+                  href: deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md
+            - name: Subscription Activation
+              items:
+                - name: Windows 10 Subscription Activation
+                  href: windows-10-subscription-activation.md
+                - name: Windows 10 Enterprise E3 in CSP
+                  href: windows-10-enterprise-e3-overview.md
+                - name: Configure VDA for Subscription Activation
+                  href: vda-subscription-activation.md
+                - name: Deploy Windows 10 Enterprise licenses
+                  href: deploy-enterprise-licenses.md
+        - name: Deploy Windows 10 updates
+          items:
+            - name: Assign devices to servicing channels
+              href: update/waas-servicing-channels-windows-10-updates.md
+            - name: Deploy updates with Configuration Manager
+              href: update/deploy-updates-configmgr.md
+            - name: Deploy updates with Intune
+              href: update/deploy-updates-intune.md
+            - name: Deploy updates with WSUS
+              href: update/waas-manage-updates-wsus.md
+            - name: Deploy updates with Group Policy
+              href: update/waas-wufb-group-policy.md
+            - name: Update Windows 10 media with Dynamic Update
+              href: update/media-dynamic-update.md
+            - name: Migrating and acquiring optional Windows content
+              href: update/optional-content.md
+            - name: Safeguard holds
+              href: update/safeguard-holds.md
+            - name: Manage the Windows 10 update experience
+              items:              
+                - name: Manage device restarts after updates
+                  href: update/waas-restart.md
+                - name: Manage additional Windows Update settings
+                  href: update/waas-wu-settings.md 
+                - name: Deploy feature updates during maintenance windows
+                  href: update/feature-update-maintenance-window.md  
+                - name: Deploy feature updates for user-initiated installations
+                  href: update/feature-update-user-install.md        
+        - name: Use Windows Update for Business
+          items:
+            - name: What is Windows Update for Business?
+              href: update/waas-manage-updates-wufb.md
+            - name: Configure Windows Update for Business
+              href: update/waas-configure-wufb.md
+            - name: Windows Update for Business deployment service
+              href: update/deployment-service-overview.md
+              items:
+                - name: Troubleshoot the Windows Update for Business deployment service
+                  href: update/deployment-service-troubleshoot.md
+            - name: Enforcing compliance deadlines for updates
+              href: update/wufb-compliancedeadlines.md
+            - name: Integrate Windows Update for Business with management solutions
+              href: update/waas-integrate-wufb.md
+            - name: 'Walkthrough: use Group Policy to configure Windows Update for Business'
+              href: update/waas-wufb-group-policy.md
+            - name: 'Walkthrough: use Intune to configure Windows Update for Business'
+              href: update/deploy-updates-intune.md
+        - name: Monitor Windows 10 updates
+          items:
+            - name: Monitor Delivery Optimization
+              href: update/waas-delivery-optimization-setup.md#monitor-delivery-optimization
+            - name: Monitor Windows Updates
+              items:
+              - name: Monitor Windows Updates with Update Compliance
+                href: update/update-compliance-monitor.md
+              - name: Get started
+                items: 
+                  - name: Get started with Update Compliance
+                    href: update/update-compliance-get-started.md
+                  - name: Update Compliance configuration script
+                    href: update/update-compliance-configuration-script.md
+                  - name: Manually configuring devices for Update Compliance
+                    href: update/update-compliance-configuration-manual.md
+                  - name: Configuring devices for Update Compliance in Microsoft Endpoint Manager
+                    href: update/update-compliance-configuration-mem.md
+              - name: Update Compliance monitoring
+                items: 
+                  - name: Use Update Compliance
+                    href: update/update-compliance-using.md
+                  - name: Need attention report
+                    href: update/update-compliance-need-attention.md
+                  - name: Security update status report
+                    href: update/update-compliance-security-update-status.md
+                  - name: Feature update status report
+                    href: update/update-compliance-feature-update-status.md
+                  - name: Delivery Optimization in Update Compliance
+                    href: update/update-compliance-delivery-optimization.md
+                  - name: Data handling and privacy in Update Compliance
+                    href: update/update-compliance-privacy.md
+                  - name: Update Compliance schema reference
+                    href: update/update-compliance-schema.md
+                    items:
+                      - name: WaaSUpdateStatus
+                        href: update/update-compliance-schema-waasupdatestatus.md
+                      - name: WaaSInsiderStatus
+                        href: update/update-compliance-schema-waasinsiderstatus.md
+                      - name: WaaSDepoymentStatus
+                        href: update/update-compliance-schema-waasdeploymentstatus.md
+                      - name: WUDOStatus
+                        href: update/update-compliance-schema-wudostatus.md
+                      - name: WUDOAggregatedStatus
+                        href: update/update-compliance-schema-wudoaggregatedstatus.md
+        - name: Troubleshooting
+          items:
+            - name: Resolve upgrade errors
+              items:
+                - name: Resolve Windows 10 upgrade errors
+                  href: upgrade/resolve-windows-10-upgrade-errors.md
+                - name: Quick fixes
+                  href: upgrade/quick-fixes.md
+                - name: SetupDiag
+                  href: upgrade/setupdiag.md
+                - name: Troubleshooting upgrade errors
+                  href: upgrade/troubleshoot-upgrade-errors.md
+                - name: Windows error reporting
+                  href: upgrade/windows-error-reporting.md
+                - name: Upgrade error codes
+                  href: upgrade/upgrade-error-codes.md
+                - name: Log files
+                  href: upgrade/log-files.md
+                - name: Resolution procedures
+                  href: upgrade/resolution-procedures.md
+                - name: Submit Windows 10 upgrade errors
+                  href: upgrade/submit-errors.md
+            - name: Troubleshoot Windows Update
+              items:
+                - name: How to troubleshoot Windows Update
+                  href: update/windows-update-troubleshooting.md
+                - name: Opt out of safeguard holds
+                  href: update/safeguard-opt-out.md
+                - name: Determine the source of Windows Updates
+                  href: ./update/how-windows-update-works.md
+                - name: Common Windows Update errors
+                  href: update/windows-update-errors.md
+                - name: Windows Update error code reference
+                  href: update/windows-update-error-reference.md
+                - name: Troubleshoot the Windows Update for Business deployment service
+                  href: update/deployment-service-troubleshoot.md
+
+    - name: Reference
+      items:
+        - name: How does Windows Update work?
+          href: update/how-windows-update-works.md
+        - name: Windows 10 upgrade paths
+          href: upgrade/windows-10-upgrade-paths.md
+        - name: Deploy Windows 10 with Microsoft 365
+          href: deploy-m365.md
+        - name: Understanding the Unified Update Platform
+          href: update/windows-update-overview.md
+        - name: Servicing stack updates
+          href: update/servicing-stack-updates.md
+        - name: Additional Windows Update settings
+          href: update/waas-wu-settings.md
+        - name: Delivery Optimization reference
+          href: update/waas-delivery-optimization-reference.md
+        - name: Windows 10 in S mode
+          href: s-mode.md
+        - name: Switch to Windows 10 Pro or Enterprise from S mode
+          href: windows-10-pro-in-s-mode.md
+        - name: Windows 10 deployment tools
+          items:
+            - name: Windows 10 deployment scenarios and tools
+              items:
+                - name: Convert MBR partition to GPT
+                  href: mbr-to-gpt.md
+                - name: Configure a PXE server to load Windows PE
+                  href: configure-a-pxe-server-to-load-windows-pe.md
+                - name: Windows ADK for Windows 10 scenarios for IT Pros
+                  href: windows-adk-scenarios-for-it-pros.md
+                - name: Windows To Go
+                  items:
+                    - name: Deploy Windows To Go in your organization
+                      href: deploy-windows-to-go.md
+                    - name: "Windows To Go: feature overview"
+                      href: planning/windows-to-go-overview.md
+                    - name: Best practice recommendations for Windows To Go
+                      href: planning/best-practice-recommendations-for-windows-to-go.md
+                    - name: Deployment considerations for Windows To Go
+                      href: planning/deployment-considerations-for-windows-to-go.md
+                    - name: Prepare your organization for Windows To Go
+                      href: planning/prepare-your-organization-for-windows-to-go.md
+                    - name: Security and data protection considerations for Windows To Go
+                      href: planning/security-and-data-protection-considerations-for-windows-to-go.md
+                    - name: "Windows To Go: frequently asked questions"
+                      href: planning/windows-to-go-frequently-asked-questions.yml
+        
+                - name: Volume Activation Management Tool (VAMT) technical reference
+                  items:
+                    - name: VAMT technical reference
+                      href: volume-activation/volume-activation-management-tool.md
+                    - name: Introduction to VAMT
+                      href: volume-activation/introduction-vamt.md
+                    - name: Active Directory-Based Activation Overview
+                      href: volume-activation/active-directory-based-activation-overview.md
+                    - name: Install and Configure VAMT
+                      href: volume-activation/install-configure-vamt.md
+                    - name: VAMT Requirements
+                      href: volume-activation/vamt-requirements.md
+                    - name: Install VAMT
+                      href: volume-activation/install-vamt.md
+                    - name: Configure Client Computers
+                      href: volume-activation/configure-client-computers-vamt.md
+                    - name: Add and Manage Products
+                      href: volume-activation/add-manage-products-vamt.md
+                    - name: Add and Remove Computers
+                      href: volume-activation/add-remove-computers-vamt.md
+                    - name: Update Product Status
+                      href: volume-activation/update-product-status-vamt.md
+                    - name: Remove Products
+                      href: volume-activation/remove-products-vamt.md
+                    - name: Manage Product Keys
+                      href: volume-activation/manage-product-keys-vamt.md
+                    - name: Add and Remove a Product Key
+                      href: volume-activation/add-remove-product-key-vamt.md
+                    - name: Install a Product Key
+                      href: volume-activation/install-product-key-vamt.md
+                    - name: Install a KMS Client Key
+                      href: volume-activation/install-kms-client-key-vamt.md
+                    - name: Manage Activations
+                      href: volume-activation/manage-activations-vamt.md
+                    - name: Perform Online Activation
+                      href: volume-activation/online-activation-vamt.md
+                    - name: Perform Proxy Activation
+                      href: volume-activation/proxy-activation-vamt.md
+                    - name: Perform KMS Activation
+                      href: volume-activation/kms-activation-vamt.md
+                    - name: Perform Local Reactivation
+                      href: volume-activation/local-reactivation-vamt.md
+                    - name: Activate an Active Directory Forest Online
+                      href: volume-activation/activate-forest-vamt.md
+                    - name: Activate by Proxy an Active Directory Forest
+                      href: volume-activation/activate-forest-by-proxy-vamt.md
+                    - name: Manage VAMT Data
+                      href: volume-activation/manage-vamt-data.md
+                    - name: Import and Export VAMT Data
+                      href: volume-activation/import-export-vamt-data.md
+                    - name: Use VAMT in Windows PowerShell
+                      href: volume-activation/use-vamt-in-windows-powershell.md
+                    - name: VAMT Step-by-Step Scenarios
+                      href: volume-activation/vamt-step-by-step.md
+                    - name: "Scenario 1: Online Activation"
+                      href: volume-activation/scenario-online-activation-vamt.md
+                    - name: "Scenario 2: Proxy Activation"
+                      href: volume-activation/scenario-proxy-activation-vamt.md
+                    - name: "Scenario 3: KMS Client Activation"
+                      href: volume-activation/scenario-kms-activation-vamt.md
+                    - name: VAMT Known Issues
+                      href: volume-activation/vamt-known-issues.md
+        
+                - name: User State Migration Tool (USMT) technical reference
+                  items:
+                    - name: USMT overview topics
+                      items:
+                        - name: USMT overview
+                          href: usmt/usmt-overview.md
+                        - name: Getting started with the USMT
+                          href: usmt/getting-started-with-the-user-state-migration-tool.md
+                        - name: Windows upgrade and migration considerations
+                          href: upgrade/windows-upgrade-and-migration-considerations.md
+                    - name: USMT How-to topics
+                      items:
+                        - name: Exclude Files and Settings
+                          href: usmt/usmt-exclude-files-and-settings.md
+                        - name: Extract Files from a Compressed USMT Migration Store
+                          href: usmt/usmt-extract-files-from-a-compressed-migration-store.md
+                        - name: Include Files and Settings
+                          href: usmt/usmt-include-files-and-settings.md
+                        - name: Migrate Application Settings
+                          href: usmt/migrate-application-settings.md
+                        - name: Migrate EFS Files and Certificates
+                          href: usmt/usmt-migrate-efs-files-and-certificates.md
+                        - name: Migrate User Accounts
+                          href: usmt/usmt-migrate-user-accounts.md
+                        - name: Reroute Files and Settings
+                          href: usmt/usmt-reroute-files-and-settings.md
+                        - name: Verify the Condition of a Compressed Migration Store
+                          href: usmt/verify-the-condition-of-a-compressed-migration-store.md
+                        - name: USMT Troubleshooting
+                          href: usmt/usmt-troubleshooting.md
+                        - name: Common Issues
+                          href: usmt/usmt-common-issues.md
+                        - name: Frequently Asked Questions
+                          href: usmt/usmt-faq.yml
+                        - name: Log Files
+                          href: usmt/usmt-log-files.md
+                        - name: Return Codes
+                          href: usmt/usmt-return-codes.md
+                        - name: USMT Resources
+                          href: usmt/usmt-resources.md
+        
+                    - name: USMT Reference
+                      items:
+                        - name: USMT Requirements
+                          href: usmt/usmt-requirements.md
+                        - name: USMT Best Practices
+                          href: usmt/usmt-best-practices.md
+                        - name: How USMT Works
+                          href: usmt/usmt-how-it-works.md
+                        - name: Plan Your Migration
+                          href: usmt/usmt-plan-your-migration.md
+                        - name: Common Migration Scenarios
+                          href: usmt/usmt-common-migration-scenarios.md
+                        - name: What Does USMT Migrate?
+                          href: usmt/usmt-what-does-usmt-migrate.md
+                        - name: Choose a Migration Store Type
+                          href: usmt/usmt-choose-migration-store-type.md
+                        - name: Migration Store Types Overview
+                          href: usmt/migration-store-types-overview.md
+                        - name: Estimate Migration Store Size
+                          href: usmt/usmt-estimate-migration-store-size.md
+                        - name: Hard-Link Migration Store
+                          href: usmt/usmt-hard-link-migration-store.md
+                        - name: Migration Store Encryption
+                          href: usmt/usmt-migration-store-encryption.md
+                        - name: Determine What to Migrate
+                          href: usmt/usmt-determine-what-to-migrate.md
+                        - name: Identify users
+                          href: usmt/usmt-identify-users.md
+                        - name: Identify Applications Settings
+                          href: usmt/usmt-identify-application-settings.md
+                        - name: Identify Operating System Settings
+                          href: usmt/usmt-identify-operating-system-settings.md
+                        - name: Identify File Types, Files, and Folders
+                          href: usmt/usmt-identify-file-types-files-and-folders.md
+                        - name: Test Your Migration
+                          href: usmt/usmt-test-your-migration.md
+                        - name: USMT Command-line Syntax
+                          href: usmt/usmt-command-line-syntax.md
+                        - name: ScanState Syntax
+                          href: usmt/usmt-scanstate-syntax.md
+                        - name: LoadState Syntax
+                          href: usmt/usmt-loadstate-syntax.md
+                        - name: UsmtUtils Syntax
+                          href: usmt/usmt-utilities.md
+                        - name: USMT XML Reference
+                          href: usmt/usmt-xml-reference.md
+                        - name: Understanding Migration XML Files
+                          href: usmt/understanding-migration-xml-files.md
+                        - name: Config.xml File
+                          href: usmt/usmt-configxml-file.md
+                        - name: Customize USMT XML Files
+                          href: usmt/usmt-customize-xml-files.md
+                        - name: Custom XML Examples
+                          href: usmt/usmt-custom-xml-examples.md
+                        - name: Conflicts and Precedence
+                          href: usmt/usmt-conflicts-and-precedence.md
+                        - name: General Conventions
+                          href: usmt/usmt-general-conventions.md
+                        - name: XML File Requirements
+                          href: usmt/xml-file-requirements.md
+                        - name: Recognized Environment Variables
+                          href: usmt/usmt-recognized-environment-variables.md
+                        - name: XML Elements Library
+                          href: usmt/usmt-xml-elements-library.md
+                        - name: Offline Migration Reference
+                          href: usmt/offline-migration-reference.md
+        
+            - name: Application Compatibility Toolkit (ACT) Technical Reference
+              items:
+                - name: SUA User's Guide
+                  href: planning/sua-users-guide.md
+                - name: Using the SUA Wizard
+                  href: planning/using-the-sua-wizard.md
+                - name: Using the SUA Tool
+                  href: planning/using-the-sua-tool.md
+                - name: Tabs on the SUA Tool Interface
+                  href: planning/tabs-on-the-sua-tool-interface.md
+                - name: Showing Messages Generated by the SUA Tool
+                  href: planning/showing-messages-generated-by-the-sua-tool.md
+                - name: Applying Filters to Data in the SUA Tool
+                  href: planning/applying-filters-to-data-in-the-sua-tool.md
+                - name: Fixing Applications by Using the SUA Tool
+                  href: planning/fixing-applications-by-using-the-sua-tool.md
+                - name: Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista
+                  href: planning/compatibility-fixes-for-windows-8-windows-7-and-windows-vista.md
+                - name: Compatibility Administrator User's Guide
+                  href: planning/compatibility-administrator-users-guide.md
+                - name: Using the Compatibility Administrator Tool
+                  href: planning/using-the-compatibility-administrator-tool.md
+                - name: Available Data Types and Operators in Compatibility Administrator
+                  href: planning/available-data-types-and-operators-in-compatibility-administrator.md
+                - name: Searching for Fixed Applications in Compatibility Administrator
+                  href: planning/searching-for-fixed-applications-in-compatibility-administrator.md
+                - name: Searching for Installed Compatibility Fixes with the Query Tool in Compatibility Administrator
+                  href: planning/searching-for-installed-compatibility-fixes-with-the-query-tool-in-compatibility-administrator.md
+                - name: Creating a Custom Compatibility Fix in Compatibility Administrator
+                  href: planning/creating-a-custom-compatibility-fix-in-compatibility-administrator.md
+                - name: Creating a Custom Compatibility Mode in Compatibility Administrator
+                  href: planning/creating-a-custom-compatibility-mode-in-compatibility-administrator.md
+                - name: Creating an AppHelp Message in Compatibility Administrator
+                  href: planning/creating-an-apphelp-message-in-compatibility-administrator.md
+                - name: Viewing the Events Screen in Compatibility Administrator
+                  href: planning/viewing-the-events-screen-in-compatibility-administrator.md
+                - name: Enabling and Disabling Compatibility Fixes in Compatibility Administrator
+                  href: planning/enabling-and-disabling-compatibility-fixes-in-compatibility-administrator.md
+                - name: Installing and Uninstalling Custom Compatibility Databases in Compatibility Administrator
+                  href: planning/installing-and-uninstalling-custom-compatibility-databases-in-compatibility-administrator.md
+                - name: Managing Application-Compatibility Fixes and Custom Fix Databases
+                  href: planning/managing-application-compatibility-fixes-and-custom-fix-databases.md
+                - name: Understanding and Using Compatibility Fixes
+                  href: planning/understanding-and-using-compatibility-fixes.md
+                - name: Compatibility Fix Database Management Strategies and Deployment
+                  href: planning/compatibility-fix-database-management-strategies-and-deployment.md
+                - name: Testing Your Application Mitigation Packages
+                  href: planning/testing-your-application-mitigation-packages.md
+                - name: Using the Sdbinst.exe Command-Line Tool
+                  href: planning/using-the-sdbinstexe-command-line-tool.md
+                - name: Volume Activation 
+                  href: volume-activation/volume-activation-windows-10.md
+                - name: Plan for volume activation 
+                  href: volume-activation/plan-for-volume-activation-client.md
+                - name: Activate using Key Management Service 
+                  href: volume-activation/activate-using-key-management-service-vamt.md
+                - name: Activate using Active Directory-based activation 
+                  href: volume-activation/activate-using-active-directory-based-activation-client.md
+                - name: Activate clients running Windows 10
+                  href: volume-activation/activate-windows-10-clients-vamt.md
+                - name: Monitor activation 
+                  href: volume-activation/monitor-activation-client.md
+                - name: Use the Volume Activation Management Tool 
+                  href: volume-activation/use-the-volume-activation-management-tool-client.md
+                - name: "Appendix: Information sent to Microsoft during activation "
+                  href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
+
+        - name: Install fonts in Windows 10
+          href: windows-10-missing-fonts.md

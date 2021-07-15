@@ -7,11 +7,11 @@ ms.sitesec: library
 ms.pagetype: store
 ms.author: cmcatee
 author: cmcatee-MSFT
-ms.date: 03/10/2021
-ms.reviewer: 
 manager: scotv
+ms.reviewer: 
 ms.topic: conceptual
 ms.localizationpriority: medium
+ms.date: 03/10/2021
 ---
 
 # Acquire apps in Microsoft Store for Business and Education
@@ -22,9 +22,9 @@ ms.localizationpriority: medium
 As an admin, you can acquire apps from the Microsoft Store for Business and Education for your employees. Some apps are free, and some have a price. For info on app types that are supported, see [Apps in the Microsoft Store for Business](apps-in-microsoft-store-for-business.md). The following sections explain some of the settings for shopping. 
 
 ## App licensing model
-The Microsoft Store supports two options to license apps: online and offline. **Online** licensing is the default licensing model. Online licensed apps require users and devices to connect to the Microsoft Store services to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. For more information, see [offline license visibility](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#offline-licensing). 
+The Microsoft Store supports two options to license apps: online and offline. **Online** licensing is the default licensing model. Online licensed apps require users and devices to connect to the Microsoft Store services to acquire an app and its license. **Offline** licensing is a new licensing option for Windows 10. With offline licenses, organizations can cache apps and their licenses to deploy within their network. ISVs or devs can opt-in their apps for offline licensing when they submit them to the developer center. Admins control whether or not offline apps are available in Microsoft Store with an offline app visibility setting. 
 
-For more information on the Microsoft Store licensing model, see [licensing model](https://docs.microsoft.com/microsoft-store/apps-in-microsoft-store-for-business#licensing-model).
+For more information on the Microsoft Store licensing model, see [licensing model](./apps-in-microsoft-store-for-business.md#licensing-model).
 
 ## Payment options
 Some apps are free, and some have a price. Apps can be purchased in the Microsoft Store using your credit card. You can enter your credit card information on **Account Information**, or when you purchase an app. Currently, we accept these credit cards:
@@ -65,7 +65,7 @@ People in your org can request license for apps that they need, or that others n
 
 ## Acquire apps
 **To acquire an app**  
-1. Sign in to http://businessstore.microsoft.com
+1. Sign in to https://businessstore.microsoft.com
 2. Select **Shop for my group**, or use Search to find an app. 
 3. Select the app you want to purchase. 
 4. On the product description page, choose your license type - either online or offline. 
@@ -73,7 +73,7 @@ People in your org can request license for apps that they need, or that others n
 6. If you don’t have a payment method saved in **Billing & payments**, we will prompt you for one.
 7. Add your credit card or debit card info, and select **Next**. Your card info is saved as a payment option on **Billing & payments - Payment methods**.
 
-You’ll also need to have your business address saved on **My organization - Profile**. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](https://docs.microsoft.com/microsoft-store/update-microsoft-store-for-business-account-settings#organization-tax-information). 
+You’ll also need to have your business address saved on **My organization - Profile**. The address is used to generate tax rates. For more information on taxes for apps, see [organization tax information](./update-microsoft-store-for-business-account-settings.md#organization-tax-information). 
 
 Microsoft Store adds the app to your inventory. From **Products & services**, you can:
 - Distribute the app: add to private store, or assign licenses
