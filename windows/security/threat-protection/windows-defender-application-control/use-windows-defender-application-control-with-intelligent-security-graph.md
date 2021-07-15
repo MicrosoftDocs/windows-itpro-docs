@@ -96,7 +96,7 @@ Since the Microsoft Intelligent Security Graph is a heuristic-based mechanism, i
 Processes running with kernel privileges can circumvent WDAC by setting the ISG extended file attribute to make a binary appear to have known good reputation. Also, since the ISG option passes along reputation from application installers to the binaries they write to disk, it can over-authorize files in some cases where the installer launches the application upon completion.
 
 ## Using fsutil to query SmartLocker EA
-Customers using Windows Defender Application Control (WDAC) with Managed Installer or Intelligent Security Graph enabled can use fsutil to determine whether a file was allowed to run by one of these features. This can be achieved by querying the EAs on a file using fsutil and looking for the KERNEL.SMARTLOCKER.ORIGINCLAIM EA. The presence of this EA indicates that either MI or ISG allowed the file to run. This can be used in conjunction with enabling the MI and ISG logging events.
+Customers using Windows Defender Application Control (WDAC) with Managed Installer (MI) or Intelligent Security Graph enabled can use fsutil to determine whether a file was allowed to run by one of these features. This can be achieved by querying the EAs on a file using fsutil and looking for the KERNEL.SMARTLOCKER.ORIGINCLAIM EA. The presence of this EA indicates that either MI or ISG allowed the file to run. This can be used in conjunction with enabling the MI and ISG logging events.
 
 #### Example:
 ```powershell
