@@ -1,5 +1,5 @@
 ---
-title: Configure authorized apps deployed with a WDAC managed installer (Windows 10)
+title: Configure authorized apps deployed with a WDAC-managed installer (Windows 10)
 description: Explains how to configure a custom Manged Installer.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -25,15 +25,15 @@ ms.technology: mde
 - Windows 10
 - Windows Server 2019
 
-Windows 10, version 1703 introduced a new option for Windows Defender Application Control (WDAC), called managed installer, that helps balance security and manageability when enforcing application control policies. This option lets you automatically allow applications installed by a designated software distribution solution such as Microsoft Endpoint Configuration Manager.
+Windows 10, version 1703 introduced a new option for Windows Defender Application Control (WDAC), called _managed installer_, that helps balance security and manageability when enforcing application control policies. This option lets you automatically allow applications installed by a designated software distribution solution such as Microsoft Endpoint Configuration Manager.
 
 ## How does a managed installer work?
 
-A new rule collection in AppLocker specifies binaries that are trusted by the organization as an authorized source for application deployment. When one of these binaries runs, Windows will monitor the binary's process (and processes it launches) then tag all files it writes as having originated from a managed installer. The managed installer rule collection is configured using Group Policy and can be applied with the Set-AppLockerPolicy PowerShell cmdlet. You can't currently set managed installers with the AppLocker CSP through MDM.
+A new rule collection in AppLocker specifies binaries that are trusted by the organization as an authorized source for application deployment. When one of these trusted binaries runs, Windows will monitor the binary's process (and processes it launches), and then tag all files it writes as having originated from a managed installer. The managed installer rule collection is configured using Group Policy and can be applied with the Set-AppLockerPolicy PowerShell cmdlet. You can't currently set managed installers with the AppLocker CSP through MDM.
 
-Having defined your managed installers using AppLocker, you can then configure WDAC to trust files installed by a managed installer by adding the "Enabled:Managed Installer" option to your WDAC policy. Once that option is set, WDAC will check for managed installer origin information when determining whether or not to allow a binary to run. As long as there are no deny rules present for the file, WDAC will allow a file to run based on its managed installer origin.
+Having defined your managed installers by using AppLocker, you can then configure WDAC to trust files that are installed by a managed installer. You do so by adding the "Enabled:Managed Installer" option to your WDAC policy. When that option is set, WDAC will check for managed installer origin information when determining whether or not to allow a binary to run. As long as there are no deny rules present for the file, WDAC will allow a file to run based on its managed installer origin.
 
-You should ensure that the WDAC policy allows the system/boot components and any other authorized applications that can't be deployed through a managed installer.
+Ensure that the WDAC policy allows the system/boot components and any other authorized applications that can't be deployed through a managed installer.
 
 ## Security considerations with managed installer
 
@@ -44,11 +44,11 @@ Users with administrator privileges, or malware running as an administrator user
 
 If a managed installer process runs in the context of a user with standard privileges, then it's possible that standard users or malware running as standard user may be able to circumvent the intent of Windows Defender Application Control.
 
-Some application installers may automatically run the application at the end of the installation process. If this happens when the installer is run by a managed installer, then the managed installer's heuristic tracking and authorization will extend to all files created during the first run of the application. This could result in over-authorization for executables that were not intended. To avoid that outcome, ensure that the application deployment solution used as a managed installer limits running applications as part of installation.
+Some application installers may automatically run the application at the end of the installation process. If this happens when the installer is run by a managed installer, then the managed installer's heuristic tracking and authorization will extend to all files that are created during the first run of the application. Extension of the installer's authorization could result in unintentional authorization of an executable. To avoid that outcome, ensure that the method of application deployment that is used as a managed installer limits running applications as part of installation.
 
 ## Known limitations with managed installer
 
-- Application control, based on managed installer, doesn't support applications that self-update. If an application deployed by a managed installer later updates itself, the updated application files won't include the managed installer origin information, and may not be able to run. When you rely on managed installers, you must deploy and install all application updates using a managed installer, or include rules to authorize the app in the WDAC policy. In some cases, it may be possible to also designate an application binary that performs self-updates as a managed installer. Proper review for functionality and security should be performed for the application before using this method.
+- Application control, based on managed installer, doesn't support applications that self-update. If an application that was deployed by a managed installer later updates itself, the updated application files won't include the origin information from the managed installer, and they might not be able to run. When you rely on managed installers, you must deploy and install all application updates by using a managed installer, or include rules to authorize the app in the WDAC policy. In some cases, it may be possible to also designate an application binary that performs self-updates as a managed installer. Proper review for functionality and security should be performed for the application before using this method.
 
 - [Packaged apps (MSIX)](/windows/msix/) deployed through a managed installer aren't tracked by the managed installer heuristic and will need to be separately authorized in your WDAC policy. See [Manage packaged apps with WDAC](manage-packaged-apps-with-windows-defender-application-control.md).
 
@@ -71,7 +71,7 @@ The identity of the managed installer executable(s) is specified in an AppLocker
 
 ### Create Managed Installer rule collection
 
-Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerShell cmdlets allow for directly specifying rules for the Managed Installer rule collection. However, you can use a text editor to make the simple changes needed to an EXE or DLL rule collection policy, to specify Type="ManagedInstaller", so that the new rule can be imported into a GPO.
+Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerShell cmdlets allow for directly specifying rules for the Managed Installer rule collection. However, you can use a text editor to make the changes that are needed to an EXE or DLL rule collection policy, to specify Type="ManagedInstaller", so that the new rule can be imported into a GPO.
 
 1. Use [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy?view=win10-ps) to make an EXE rule for the file you are designating as a managed installer. Note that only EXE file types can be designated as managed installers. Below is an example using the rule type Publisher with a hash fallback but other rule types can be used as well. You may need to reformat the output for readability.
 
@@ -116,8 +116,8 @@ An example of a valid Managed Installer rule collection using Microsoft Endpoint
 
 ### Enable service enforcement in AppLocker policy
 
-Since many installation processes rely on services, it's typically necessary to enable tracking of services.
-Correct tracking of services requires the presence of at least one rule in the rule collection. So, a simple audit only rule will suffice. This can be added to the policy created above, which specifies your managed installer rule collection.
+Since many installation processes rely on services, it is typically necessary to enable tracking of services.
+Correct tracking of services requires the presence of at least one rule in the rule collection. So, a simple audit-only rule will suffice. The audit rule can be added to the policy created above, which specifies the rule collection of your managed installer.
 
 For example:
 
@@ -159,13 +159,13 @@ For example:
 In order to enable trust for the binaries laid down by managed installers, the "Enabled: Managed Installer" option must be specified in your WDAC policy.
 This can be done by using the [Set-RuleOption cmdlet](/powershell/module/configci/set-ruleoption) with Option 13.
 
-Below are steps to create a WDAC policy, which allows Windows to boot and enables the managed installer option.
+Below are steps to create a WDAC policy that allows Windows to boot and enables the managed installer option.
 
 1. Copy the DefaultWindows_Audit policy into your working folder from "C:\Windows\schemas\CodeIntegrity\ExamplePolicies\DefaultWindows_Audit.xml"
 
-2. Reset the policy ID to ensure it is in multiple policy format, and give it a different GUID from the example policies. Also, give it a friendly name to help with identification.
+2. Reset the policy ID to ensure that it is in multiple-policy format, and give it a different GUID from the example policies. Also, give it a friendly name to help with identification.
 
-   For example:
+    For example:
 
     ```powershell
     Set-CIPolicyIdInfo -FilePath <XML filepath> -PolicyName "<friendly name>" -ResetPolicyID
