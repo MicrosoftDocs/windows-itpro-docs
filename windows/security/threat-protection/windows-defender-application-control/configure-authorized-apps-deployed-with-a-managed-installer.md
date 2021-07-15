@@ -38,17 +38,17 @@ You should ensure that the WDAC policy allows the system/boot components and any
 ## Security considerations with managed installer
 
 Since managed installer is a heuristic-based mechanism, it doesn't provide the same security guarantees that explicit allow or deny rules do.
-It is best suited for use where each user operates as a standard user and where all software is deployed and installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager (MEMCM).
+It's best suited for use where each user operates as a standard user and where all software is deployed and installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager (MEMCM).
 
 Users with administrator privileges, or malware running as an administrator user on the system, may be able to circumvent the intent of Windows Defender Application Control when the managed installer option is allowed.
 
-If a managed installer process runs in the context of a user with standard privileges, then it is possible that standard users or malware running as standard user may be able to circumvent the intent of Windows Defender Application Control.
+If a managed installer process runs in the context of a user with standard privileges, then it's possible that standard users or malware running as standard user may be able to circumvent the intent of Windows Defender Application Control.
 
 Some application installers may automatically run the application at the end of the installation process. If this happens when the installer is run by a managed installer, then the managed installer's heuristic tracking and authorization will extend to all files created during the first run of the application. This could result in over-authorization for executables that were not intended. To avoid that outcome, ensure that the application deployment solution used as a managed installer limits running applications as part of installation.
 
 ## Known limitations with managed installer
 
-- Application control, based on managed installer, does not support applications that self-update. If an application deployed by a managed installer later updates itself, the updated application files won't include the managed installer origin information, and may not be able to run. When you rely on managed installers, you must deploy and install all application updates using a managed installer, or include rules to authorize the app in the WDAC policy. In some cases, it may be possible to also designate an application binary that performs self-updates as a managed installer. Proper review for functionality and security should be performed for the application before using this method.
+- Application control, based on managed installer, doesn't support applications that self-update. If an application deployed by a managed installer later updates itself, the updated application files won't include the managed installer origin information, and may not be able to run. When you rely on managed installers, you must deploy and install all application updates using a managed installer, or include rules to authorize the app in the WDAC policy. In some cases, it may be possible to also designate an application binary that performs self-updates as a managed installer. Proper review for functionality and security should be performed for the application before using this method.
 
 - [Packaged apps (MSIX)](/windows/msix/) deployed through a managed installer aren't tracked by the managed installer heuristic and will need to be separately authorized in your WDAC policy. See [Manage packaged apps with WDAC](manage-packaged-apps-with-windows-defender-application-control.md).
 
@@ -116,7 +116,7 @@ An example of a valid Managed Installer rule collection using Microsoft Endpoint
 
 ### Enable service enforcement in AppLocker policy
 
-Since many installation processes rely on services, it is typically necessary to enable tracking of services.
+Since many installation processes rely on services, it's typically necessary to enable tracking of services.
 Correct tracking of services requires the presence of at least one rule in the rule collection. So, a simple audit only rule will suffice. This can be added to the policy created above, which specifies your managed installer rule collection.
 
 For example:
@@ -159,7 +159,7 @@ For example:
 In order to enable trust for the binaries laid down by managed installers, the "Enabled: Managed Installer" option must be specified in your WDAC policy.
 This can be done by using the [Set-RuleOption cmdlet](/powershell/module/configci/set-ruleoption) with Option 13.
 
-Below are steps to create a WDAC policy which allows Windows to boot and enables the managed installer option.
+Below are steps to create a WDAC policy, which allows Windows to boot and enables the managed installer option.
 
 1. Copy the DefaultWindows_Audit policy into your working folder from "C:\Windows\schemas\CodeIntegrity\ExamplePolicies\DefaultWindows_Audit.xml"
 
