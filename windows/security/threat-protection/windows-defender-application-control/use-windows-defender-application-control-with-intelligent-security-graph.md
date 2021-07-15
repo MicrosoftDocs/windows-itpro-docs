@@ -53,7 +53,7 @@ Setting up the ISG is easy using any management solution you wish. Configuring t
 
 To allow apps and binaries based on the Microsoft Intelligent Security Graph, the **Enabled:Intelligent Security Graph authorization** option must be specified in the WDAC policy. This step can be done with the Set-RuleOption cmdlet. You should also enable the **Enabled:Invalidate EAs on Reboot** option so that ISG results are verified again after each reboot. The ISG option is not recommended for devices that don't have regular access to the internet. The following example shows both options being set.
 
-```code
+```xml
 <Rules> 
     <Rule> 
       <Option>Enabled:Unsigned System Integrity Policy</Option> 
@@ -83,7 +83,7 @@ To allow apps and binaries based on the Microsoft Intelligent Security Graph, th
 
 In order for the heuristics used by the ISG to function properly, a number of components in Windows must be enabled. You can configure these components by running the appidtel executable in `c:\windows\system32`.
 
-```
+```console
 appidtel start
 ```
 
@@ -98,8 +98,9 @@ Processes running with kernel privileges can circumvent WDAC by setting the ISG 
 ## Using fsutil to query SmartLocker EA
 Customers using Windows Defender Application Control (WDAC) with Managed Installer (MI) or Intelligent Security Graph enabled can use fsutil to determine whether a file was allowed to run by one of these features. This can be achieved by querying the EAs on a file using fsutil and looking for the KERNEL.SMARTLOCKER.ORIGINCLAIM EA. The presence of this EA indicates that either MI or ISG allowed the file to run. This can be used in conjunction with enabling the MI and ISG logging events.
 
-#### Example:
-```powershell
+#### Example
+
+```console
 fsutil file queryEA C:\Users\Temp\Downloads\application.exe
 
 Extended Attributes (EA) information for file C:\Users\Temp\Downloads\application.exe:
