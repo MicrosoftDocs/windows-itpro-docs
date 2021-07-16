@@ -487,9 +487,9 @@ First create a ‘Prevent Class’ policy and then create ‘Allow Device’ one
 
 10. Open the **Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria** policy and enable it – this policy will enable you to override the wide coverage of the ‘Prevent’ policy with a specific device.
 
-    ![Apply layered order of evaluation policy](images/device-installation-apply-layered_policy-1.png)
+    ![Image of Local Group Policy Editor that shows the policies under "Device Installation Restrictions" and the policy named in this step.](images/device-installation-apply-layered_policy-1.png)
 
-    ![Apply layered order of evaluation policy](images/device-installation-apply-layered-policy-2.png)<br/>_Apply layered order of evaluation policy_
+    ![Image that shows the current settings of the policy named in this step, "Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria."](images/device-installation-apply-layered-policy-2.png)<br/>_Apply layered order of evaluation policy_
 
 9. Now Open **Allow installation of devices that match any of these device IDs** policy and select the ‘Enable’ radio button.
 
@@ -671,7 +671,7 @@ First create a ‘Prevent Class’ policy and then create ‘Allow Device’ one
 
 12. Enter the full list of USB device IDs you found above including the specific USB Thumb-drive you would like to authorize for installation – USBSTOR\DiskGeneric_Flash_Disk______8.07
 
-    ![Allowed USB Device IDs list](images/device-installation-gpo-allow-device-id-list-usb.png)<br/>_Allowed USB Device IDs list_
+    ![Image of an example list of devices that have been configured for the policy "Allow installation of devices that match any of these Device IDs."](images/device-installation-gpo-allow-device-id-list-usb.png)<br/>_Allowed USB Device IDs list_
 
 13. Click ‘OK’.
 
