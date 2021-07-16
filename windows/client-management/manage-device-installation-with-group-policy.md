@@ -233,7 +233,7 @@ Selecting the printer in Device Manager
 ![‘Details’ tab](images/device-installation-dm-printer-details-screen.png)
 Open the ‘Details’ tab to look for the device identifiers
 
-6. From the ‘Value’ window, copy the most detailed Hardware Id – we will use this in the policies.
+6. From the ‘Value’ window, copy the most detailed Hardware ID – we will use this in the policies.
     
 ![HWID](images/device-installation-dm-printer-hardware-ids.png) ![Compatible ID](images/device-installation-dm-printer-compatible-ids.png)
 HWID and Compatible ID 
@@ -440,7 +440,7 @@ Changing view in Device Manager to see the PnP connection tree
 When blocking one device, all the devices that are nested below it will be blocked as well
 
 5. Double-click the USB thumb-drive and move to the ‘Details’ tab.
-6. From the ‘Value’ window, copy the most detailed Hardware Id – we will use this in the policies. In this case Device ID = USBSTOR\DiskGeneric_Flash_Disk______8.07
+6. From the ‘Value’ window, copy the most detailed Hardware ID – we will use this in the policies. In this case Device ID = USBSTOR\DiskGeneric_Flash_Disk______8.07
  
 ![USB device hardware IDs](images/device-installation-dm-usb-hwid.png)
 USB device hardware IDs
