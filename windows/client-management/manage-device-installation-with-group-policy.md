@@ -68,7 +68,7 @@ The scenarios presented in this guide illustrate how you can control device inst
 
 Group Policy guides:
 
-- [Create a Group Policy Object (Windows 10) - Windows security](../security/threat-protection/windows-firewall/create-a-group-policy-object.md)
+- [Create a Group Policy Object (Windows 10) - Windows security](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object)
 - [Advanced Group Policy Management - Microsoft Desktop Optimization Pack](/microsoft-desktop-optimization-pack/agpm)
 
 ### Scenario #1: Prevent installation of all printers
