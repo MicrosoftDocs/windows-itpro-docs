@@ -68,8 +68,8 @@ The scenarios presented in this guide illustrate how you can control device inst
 
 Group Policy guides:
 
-- [Create a Group Policy Object (Windows 10) - Windows security](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/create-a-group-policy-object)
-- [Advanced Group Policy Management - Microsoft Desktop Optimization Pack](https://docs.microsoft.com/en-us/microsoft-desktop-optimization-pack/agpm/)
+- [Create a Group Policy Object (Windows 10) - Windows security](../security/threat-protection/windows-firewall/create-a-group-policy-object.md)
+- [Advanced Group Policy Management - Microsoft Desktop Optimization Pack](/microsoft-desktop-optimization-pack/agpm)
 
 ### Scenario #1: Prevent installation of all printers
 
@@ -144,14 +144,14 @@ When you use device Classes to allow or prevent users from installing drivers, y
 
 For example, a multi-function device, such as an all-in-one scanner/fax/printer, has a GUID for a generic multi-function device, a GUID for the printer function, a GUID for the scanner function, and so on. The GUIDs for the individual functions are "child nodes" under the multi-function device GUID. To install a child node, Windows must also be able to install the parent node. You must allow installation of the device setup class of the parent GUID for the multi-function device in addition to any child GUIDs for the printer and scanner functions.
 
-For more information, see [Device Setup Classes](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-device-setup-classes) in Microsoft Docs.
+For more information, see [Device Setup Classes](/windows-hardware/drivers/install/overview-of-device-setup-classes) in Microsoft Docs.
 
 This guide does not depict any scenarios that use device setup classes. However, the basic principles demonstrated with device identification strings in this guide also apply to device setup classes. After you discover the device setup class for a specific device, you can then use it in a policy to either allow or prevent installation of drivers for that class of devices.
 
 The following two links provide the complete list of Device Setup Classes. ‘System Use’ classes are mostly refer to devices that come with a computer/machine from the factory, while ‘Vendor’ classes are mostly refer to devices that could be connected to an existing computer/machine:
 
-- [System-Defined Device Setup Classes Available to Vendors - Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)
-- [System-Defined Device Setup Classes Reserved for System Use - Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)
+- [System-Defined Device Setup Classes Available to Vendors - Windows drivers](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)
+- [System-Defined Device Setup Classes Reserved for System Use - Windows drivers](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)
 
 #### ‘Removable Device’ Device type
 
@@ -274,7 +274,7 @@ To find device identification strings using Device Manager
     ![Compatible ID](images/device-installation-dm-printer-compatible-ids.png)<br/>_HWID and Compatible ID_
 
     > [!TIP]
-    > You can also determine your device identification strings by using the PnPUtil command-line utility. For more information, see [PnPUtil - Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/devtest/pnputil) in Microsoft Docs.
+    > You can also determine your device identification strings by using the PnPUtil command-line utility. For more information, see [PnPUtil - Windows drivers](/windows-hardware/drivers/devtest/pnputil) in Microsoft Docs.
 
 ### Getting device identifiers using PnPUtil
 
@@ -331,8 +331,8 @@ Getting the right device identifier to prevent it from being installed:
 
 2. If you don’t have such device installed on your system or know the name of the class, you can check the following two links:
 
-    - [System-Defined Device Setup Classes Available to Vendors - Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)
-    - [System-Defined Device Setup Classes Reserved for System Use - Windows drivers](https://docs.microsoft.com/en-us/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)
+    - [System-Defined Device Setup Classes Available to Vendors - Windows drivers](/windows-hardware/drivers/install/system-defined-device-setup-classes-available-to-vendors)
+    - [System-Defined Device Setup Classes Reserved for System Use - Windows drivers](/windows-hardware/drivers/install/system-defined-device-setup-classes-reserved-for-system-use)
 
 3. Our current scenario is focused on preventing all printers from being installed, as such here is the Class GUID for most of printers in the market: 
 
