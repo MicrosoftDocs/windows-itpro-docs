@@ -72,7 +72,7 @@ To monitor the task sequence as it happens, right-click the **MDT Build Lab** de
 
 ### Configure permissions for the deployment share
 
-In order to read files in the deployment share and write the reference image back to it, you need to assign NTSF and SMB permissions to the MDT Build Account (MDT\_BA) for the **D:\\MDTBuildLab** folder
+In order to read files in the deployment share and write the reference image back to it, you need to assign NTFS and SMB permissions to the MDT Build Account (MDT\_BA) for the **D:\\MDTBuildLab** folder
 
 On **MDT01**:
 
