@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+ms.localizationpriority: high
 author: dansimp
 ms.author: dansimp
 manager: dansimp
