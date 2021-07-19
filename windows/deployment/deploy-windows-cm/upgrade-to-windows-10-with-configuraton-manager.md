@@ -140,4 +140,4 @@ In-place upgrade with Configuration Manager
 ## Related topics
 
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
-[Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620109)
+[Configuration Manager Team blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/bg-p/ConfigurationManagerBlog)
