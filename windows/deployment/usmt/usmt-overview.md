@@ -37,7 +37,7 @@ USMT provides the following benefits to businesses that are deploying Windows op
 
 ## Limitations
 
-USMT is intended for administrators who are performing large-scale automated deployments. If you are only migrating the user states of a few computers, you can use [PCmover Express](https://go.microsoft.com/fwlink/?linkid=620915).Note that PCmover is not a free utility. PCmover Express is a tool created by Microsoft's partner, Laplink.
+USMT is intended for administrators who are performing large-scale automated deployments. If you are only migrating the user states of a few computers, you can use [PCmover Express](https://go.microsoft.com/fwlink/?linkid=620915). PCmover is not a free utility. PCmover Express is a tool created by Microsoft's partner, Laplink.
 
 There are some scenarios in which the use of USMT is not recommended. These include:
 
