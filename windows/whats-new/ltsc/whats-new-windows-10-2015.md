@@ -291,7 +291,7 @@ For more information about updating Windows 10, see [Windows 10 servicing optio
 
 ## Microsoft Edge
 
-Microsoft Edge is not available in the LTSC release of Windows 10.
+The new chromium-based Microsoft Edge is not included in the LTSC release of Windows 10.  However, you can download and install it separately [here](https://www.microsoft.com/edge/business/download).
 
 ## See Also
 

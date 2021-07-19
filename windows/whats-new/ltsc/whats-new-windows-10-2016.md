@@ -173,6 +173,10 @@ With the release of this version of Windows 10, UE-V is included with the Window
 
 [Learn how to synchronize user-customized settings with UE-V.](/windows/configuration/ue-v/uev-for-windows)
 
+## Microsoft Edge
+
+The new chromium-based Microsoft Edge is not included in the LTSC release of Windows 10.  However, you can download and install it separately [here](https://www.microsoft.com/edge/business/download).
+
 ## See Also
 
 [Windows 10 Enterprise LTSC](index.md): A description of the LTSC servicing channel with links to information about each release.
