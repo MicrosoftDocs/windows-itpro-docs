@@ -41,4 +41,4 @@ For more information on using MEMCM's native WDAC policies, see [Windows Defende
 
 ## Deploy custom WDAC policies using Packages/Programs or Task Sequences
 
-Using MEMCM's built-in policies can be a helpful starting point, but customers may find the available circle-of-trust options available in MEMCM too limiting. To define your own circle-of-trust, you can use MEMCM to deploy custom WDAC policies using [script-based deployment](deploy-wdac-policies-with-script.md) via Software Distribution Packages and Programs or Operating System Deployment Task Sequences.
+Using MEMCM's built-in policies can be a helpful starting point, but customers may find the circle-of-trust options available in MEMCM too limiting. To define your own circle-of-trust, you can use MEMCM to deploy custom WDAC policies using [script-based deployment](deploy-wdac-policies-with-script.md) via Software Distribution Packages and Programs or Operating System Deployment Task Sequences.
