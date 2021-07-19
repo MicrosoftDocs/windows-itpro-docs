@@ -1,6 +1,6 @@
 ---
-title: Overview of Windows as a service (Windows 10)
-description: Windows as a service introduces a new way to build, deploy, and service Windows. Learn how Windows as a service works.
+title: Monthly quality updates (Windows 10/11)
+description: Learn about Windows monthly quality updates to stay productive and protected.
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -19,7 +19,7 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-Windows1 monthly quality updates help customers stay productive and protected. They provide consumers and IT administrators alike with the security fixes they need to protect their devices before unpatched vulnerabilities can potentially be exploited. They are cumulative and include all previously released fixes to guard against fragmentation of the operating system (OS) that can lead to reliability and vulnerability issues when only a subset of fixes is installed.   
+Windows monthly quality updates help you stay productive and protected. They provide your users and IT administrators alike with the security fixes they need to protect their devices before unpatched vulnerabilities can potentially be exploited. They are cumulative and include all previously released fixes to guard against fragmentation of the operating system (OS) that can lead to reliability and vulnerability issues when only a subset of fixes is installed.   
 
 This document provides details on the types of monthly quality updates that Microsoft provides to consumers and organizations, and how they help make the overall user experience simpler and consistent. 
 
@@ -29,17 +29,17 @@ Quality updates are provided on a monthly schedule in non-security and combined 
 
 ### B releases
 
-Most users are familiar with what is commonly referred to as Patch Tuesday or Update Tuesday. These updates, published on the second Tuesday of each month, are known as the “B” release, where “B” refers to the second week in the month. They are published at 10:00 AM Pacific Time (PST/PDT).  
+Most users are familiar with what is commonly referred to as Patch Tuesday or Update Tuesday. These updates, published on the second Tuesday of each month, are known as the **B release**, where “B” refers to the second week in the month. They are typcially published at 10:00 AM Pacific Time (PST/PDT).  
 
-Because they are cumulative, they include both new and previously released security fixes, along with non-security content introduced in the prior month’s Preview “C” release (see below for details). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. “B” releases are mandatory. 
+Because they are cumulative, B releases include both new and previously released security fixes, along with non-security content introduced in the prior month’s Preview “C” release (see below for details). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. “B” releases are mandatory. 
 
 Channels for availability of “B” releases include Windows Update, Windows Server Update Services (WSUS), and the Microsoft Update Catalog. 
 
 ### C releases
 
-IT admins have the option to test and/or validate production-quality releases ahead of the planned “B” release for the following month. These are optional, cumulative, non-security preview releases. Known as “C” releases, they are only offered to the most recent, supported versions of Windows. New features like News and Interests may initially be deployed in the prior month’s “C” preview release, then ship in the following month’s “B” release. 
+IT admins have the option to test and/or validate production-quality releases ahead of the planned B release for the following month. These are optional, cumulative, non-security preview releases. Known as **C releases**, they are only offered to the most recent, supported versions of Windows. New features like News and Interests may initially be deployed in the prior month’s C preview release, then ship in the following month’s B release. 
 
-For customers to access the “C” releases, they must navigate to Settings > Update & Security > Windows Update and select the Check for updates box.  
+For customers to access the C releases, they must navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**.  
 
 IT admins may also validate fixes and features in a preview update by leveraging the Windows Insider Program for Business or via the Microsoft Update Catalog. 
 
@@ -49,13 +49,10 @@ Out-of-band (OOB) releases may be provided to fix a recently identified issue or
 
 Some key considerations about OOB releases include: 
 
-- OOB releases are always cumulative, and they supersede any prior “B” or “C” release. 
+- OOB releases are always cumulative, and they supersede any prior B or C release. 
 - The OOB releases will generally require IT admins to deploy off-cycle.  
-- Some OOB releases are classified as critical and will automatically be pushed to Windows Server Update Services and Windows Update for Business, just like the “B” releases.  
+- Some OOB releases are classified as critical and will automatically be pushed to Windows Server Update Services and Windows Update for Business, just like the B releases.  
 - Some OOB releases are non-critical and only go to the Microsoft Update Catalog for users or organizations to voluntarily seek out the update. 
-
-> [!NOTE]  
-> Windows monthly updates are applicable for Windows 10 and Windows 11 when released. 
 
 ## Also see
 
