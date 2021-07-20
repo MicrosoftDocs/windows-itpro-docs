@@ -74,6 +74,9 @@ manager: dansimp
     <a href="#experience-allowwindowstips">Experience/AllowWindowsTips</a>
   </dd>
   <dd>
+    <a href="#experience-configurechaticonvisibilityonthetaskbar">Experience/ConfigureChatIcon</a>
+  </dd>
+  <dd>
     <a href="#experience-configurewindowsspotlightonlockscreen">Experience/ConfigureWindowsSpotlightOnLockScreen</a>
   </dd>
   <dd>
@@ -1144,6 +1147,64 @@ The following list shows the supported values:
 
 -   0 – Disabled.
 -   1 (default) – Enabled.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="experience-configurechaticonvisibilityonthetaskbar"></a>**Experience/ConfigureChatIcon**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Machine
+<hr/>
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to configure the Chat icon on the taskbar.
+
+<!--/Description-->
+<!--SupportedValues-->
+The values for this policy are 0, 1, 2 and 3. This policy defaults to 0 if not enabled.
+
+-   0 - Not Configured: The Chat icon will be configured according to the defaults for your Windows edition.
+-   1 - Show: The Chat icon will be displayed on the taskbar by default. Users can show or hide it in Settings.
+-   2 - Hide: The Chat icon will be hidden by default. Users can show or hide it in Settings.
+-   3 - Disabled: The Chat icon will not be displayed, and users cannot show or hide it in Settings.
 
 <!--/SupportedValues-->
 <!--/Policy-->
