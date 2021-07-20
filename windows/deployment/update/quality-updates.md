@@ -19,25 +19,30 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-Windows monthly quality updates help you to stay productive and protected. They provide your users and IT administrators with the security fixes they need, and protect devices before unpatched vulnerabilities can be exploited. Quality updates are cumulative; they include all previously released fixes to guard against fragmentation of the operating system (OS). Reliability and vulnerability issues can occur when only a subset of fixes is installed.   
+Windows monthly quality updates help you to stay productive and protected. They provide your users and IT administrators with the security fixes they need, and protect devices so that unpatched vulnerabilities can't be exploited. Quality updates are cumulative; they include all previously released fixes to guard against fragmentation of the operating system (OS). Reliability and vulnerability issues can occur when only a subset of fixes is installed.   
 
-This document provides details on the types of monthly quality updates that Microsoft provides to consumers and organizations, and how they help make the overall user experience simple and consistent. 
+This article provides details on the types of monthly quality updates that Microsoft provides, and how they help make the overall user experience simple and consistent. 
 
 ## Quality updates
 
-Quality updates are provided on a monthly schedule, as two types of releases: non-security releases, and combined security + non-security releases. Non-security releases provide IT admins an opportunity for early validation of that content prior to the combined release. Releases can also be provided outside of the monthly schedule when there is an exceptional need. 
+Quality updates are provided on a monthly schedule, as two types of releases: 
+
+1. Non-security releases
+2. Combined security + non-security releases
+
+Non-security releases provide IT admins an opportunity for early validation of that content prior to the combined release. Releases can also be provided outside of the monthly schedule when there is an exceptional need. 
 
 ### B releases
 
-Most users are familiar with what is commonly referred to as **Patch Tuesday** or **Update Tuesday**. These updates are published on the second Tuesday of each month, and are known as the **B release**, where “**B**” refers to the second week in the month. These updates are typically published at 10:00 AM Pacific Time (PST/PDT).  
+Most people are familiar with what is commonly referred to as **Patch Tuesday** or **Update Tuesday**. These updates are released on the second Tuesday of each month, and are known as the **B release** (where “**B**” refers to the second week in the month). B releases are typically published at 10:00 AM Pacific Time (PST/PDT).  
 
-Because they are cumulative, B releases include both new and previously released security fixes, along with non-security content introduced in the prior month’s Preview “C” release (see below). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. B releases are mandatory. 
+Because they are cumulative, B releases include both new and previously released security fixes, along with non-security content introduced in the prior month’s Preview **C release** (see the next section). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. B releases are mandatory. 
 
-Channels for availability of B releases include Windows Update, Windows Server Update Services (WSUS), and the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
+Channels for availability of B releases include: Windows Update, Windows Server Update Services (WSUS), and the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
 
 ### C releases
 
-IT admins have the option to test and validate production-quality releases ahead of the planned B release for the following month. These updates are optional, cumulative, non-security preview releases. Known as **C releases**, they are only offered to the most recent, supported versions of Windows. New features like [News and Interests](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/group-configuration-news-and-interests-on-the-windows-taskbar/ba-p/2281005) may initially be deployed in the prior month’s C preview release, then ship in the following month’s B release. 
+IT admins have the option to test and validate production-quality releases ahead of the planned B release for the following month. These updates are optional, cumulative, non-security preview releases known as **C releases**. These releases are only offered to the most recent, supported versions of Windows. For example, new features like [News and Interests](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/group-configuration-news-and-interests-on-the-windows-taskbar/ba-p/2281005) might initially be deployed in the prior month’s C preview release, then ship in the following month’s B release. 
 
 For customers to access the C releases, they must navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**.  
 
@@ -54,9 +59,9 @@ Some key considerations about OOB releases include:
 - Some OOB releases are classified as critical and will automatically be pushed to Windows Server Update Services and Windows Update for Business, just like the B releases.  
 - Some OOB releases are non-critical and only go to the Microsoft Update Catalog for users or organizations to voluntarily seek out the update. 
 
-## Also see
+## More information
 
-For additional details about the different types of Windows updates like critical, security, drivers, service packs, and more, please see the Description of the standard terminology used to describe Microsoft software updates and Introducing a new deployment service for driver and firmware updates. 
+For additional details about the different types of Windows updates like critical, security, drivers, service packs, and more, please see the [Description of the standard terminology used to describe Microsoft software updates](https://support.microsoft.com/help/824684) and [Introducing a new deployment service for driver and firmware updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/introducing-a-new-deployment-service-for-driver-and-firmware/ba-p/2176942). 
 
 ## Related topics
 
