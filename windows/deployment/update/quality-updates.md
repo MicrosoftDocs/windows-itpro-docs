@@ -36,7 +36,7 @@ Non-security releases provide IT admins an opportunity for early validation of t
 
 Most people are familiar with what is commonly referred to as **Patch Tuesday** or **Update Tuesday**. These updates are released on the second Tuesday of each month, and are known as the **B release** (where “**B**” refers to the second week in the month). B releases are typically published at 10:00 AM Pacific Time (PST/PDT).  
 
-Because they are cumulative, B releases include both new and previously released security fixes, along with non-security content introduced in the prior month’s Preview **C release** (see the next section). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. B releases are mandatory. 
+Because they are cumulative, B releases include both new and previously released security fixes, along with non-security content introduced in the prior month’s **Preview C release** (see the next section). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. B releases are mandatory. 
 
 Channels for availability of B releases include: Windows Update, Windows Server Update Services (WSUS), and the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
 
