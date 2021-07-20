@@ -5,7 +5,7 @@ keywords: updates, servicing, current, deployment, semi-annual channel, feature,
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo
-ms.localizationpriority: medium
+ms.localizationpriority: high
 ms.author: jaimeo
 ms.reviewer: 
 manager: laurawi
