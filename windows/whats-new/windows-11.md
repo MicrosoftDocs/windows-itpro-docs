@@ -1,13 +1,12 @@
 ---
 title: Windows 11 overview
 description: Overview of Windows 11
-ms.assetid: E9E2DED5-DBA7-4300-B411-BA0FD39BE18C
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
 author: greg-lindsay
 ms.author: greglin
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -84,3 +83,7 @@ When Windows 11 reaches general availability, important servicing-related announ
 [Windows 11 requirements](windows-11-requirements.md)<br>
 [Plan for Windows 11](windows-11-plan.md)<br>
 [Prepare for Windows 11](windows-11-prepare.md)
+
+## Also see
+
+[What's new in Windows 11](/windows-hardware/get-started/what-s-new-in-windows)<br>
