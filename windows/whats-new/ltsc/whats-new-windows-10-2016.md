@@ -69,7 +69,7 @@ Isolated User Mode is now included with Hyper-V so you don't have to install it 
 
 ### Windows Hello for Business
 
-When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multi-factor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in this version of Windows 10. Customers who have already deployed Microsoft Passport for Work will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
+When Windows 10 first shipped, it included Microsoft Passport and Windows Hello, which worked together to provide multifactor authentication. To simplify deployment and improve supportability, Microsoft has combined these technologies into a single solution under the Windows Hello name in this version of Windows 10. Customers who have already deployed Microsoft Passport for Work will not experience any change in functionality. Customers who have yet to evaluate Windows Hello will find it easier to deploy due to simplified policies, documentation, and semantics.
 
 Additional changes for Windows Hello in Windows 10 Enterprise LTSC 2016:
 
@@ -172,6 +172,10 @@ With User Experience Virtualization (UE-V), you can capture user-customized Wind
 With the release of this version of Windows 10, UE-V is included with the Windows 10 for Enterprise edition. If you are new to Windows 10 and UE-V or upgrading from a previous version of UE-V, you’ll need to download, activate, and install server- and client-side components to start synchronizing user-customized settings across devices. 
 
 [Learn how to synchronize user-customized settings with UE-V.](/windows/configuration/ue-v/uev-for-windows)
+
+## Microsoft Edge
+
+The new chromium-based Microsoft Edge is not included in the LTSC release of Windows 10.  However, you can download and install it separately [here](https://www.microsoft.com/edge/business/download).
 
 ## See Also
 

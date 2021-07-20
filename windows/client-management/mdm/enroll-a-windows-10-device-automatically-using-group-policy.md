@@ -85,11 +85,7 @@ You may contact your domain administrators to verify if the group policy has bee
 
 8. Verify that the device is not enrolled with the old Intune client used on the Intune Silverlight Portal (this is the Intune portal used before the Azure portal).
 
-9. Verify that Azure AD allows the logon user to enroll devices.
-
-    ![Azure AD device settings](images/auto-enrollment-azure-ad-device-settings.png)
-
-10. Verify that Microsoft Intune should allow enrollment of Windows devices.
+9. Verify that Microsoft Intune should allow enrollment of Windows devices.
 
     ![Enrollment of Windows devices](images/auto-enrollment-enrollment-of-windows-devices.png)
 
