@@ -19,33 +19,33 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-Windows monthly quality updates help you stay productive and protected. They provide your users and IT administrators alike with the security fixes they need to protect their devices before unpatched vulnerabilities can potentially be exploited. They are cumulative and include all previously released fixes to guard against fragmentation of the operating system (OS) that can lead to reliability and vulnerability issues when only a subset of fixes is installed.   
+Windows monthly quality updates help you to stay productive and protected. They provide your users and IT administrators with the security fixes they need, and protect devices before unpatched vulnerabilities can be exploited. Quality updates are cumulative; they include all previously released fixes to guard against fragmentation of the operating system (OS). Reliability and vulnerability issues can occur when only a subset of fixes is installed.   
 
-This document provides details on the types of monthly quality updates that Microsoft provides to consumers and organizations, and how they help make the overall user experience simpler and consistent. 
+This document provides details on the types of monthly quality updates that Microsoft provides to consumers and organizations, and how they help make the overall user experience simple and consistent. 
 
 ## Quality updates
 
-Quality updates are provided on a monthly schedule in non-security and combined security and non-security releases. Non-security releases provide IT admins an opportunity for early validation of that content prior to the combined release. Releases are provided outside of the monthly schedule when there is an exceptional need. 
+Quality updates are provided on a monthly schedule, as two types of releases: non-security releases, and combined security + non-security releases. Non-security releases provide IT admins an opportunity for early validation of that content prior to the combined release. Releases can also be provided outside of the monthly schedule when there is an exceptional need. 
 
 ### B releases
 
-Most users are familiar with what is commonly referred to as Patch Tuesday or Update Tuesday. These updates, published on the second Tuesday of each month, are known as the **B release**, where “B” refers to the second week in the month. They are typcially published at 10:00 AM Pacific Time (PST/PDT).  
+Most users are familiar with what is commonly referred to as **Patch Tuesday** or **Update Tuesday**. These updates are published on the second Tuesday of each month, and are known as the **B release**, where “**B**” refers to the second week in the month. These updates are typically published at 10:00 AM Pacific Time (PST/PDT).  
 
-Because they are cumulative, B releases include both new and previously released security fixes, along with non-security content introduced in the prior month’s Preview “C” release (see below for details). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. “B” releases are mandatory. 
+Because they are cumulative, B releases include both new and previously released security fixes, along with non-security content introduced in the prior month’s Preview “C” release (see below). These updates help keep Windows devices secure and compliant by deploying stability fixes and addressing security vulnerabilities. B releases are mandatory. 
 
-Channels for availability of “B” releases include Windows Update, Windows Server Update Services (WSUS), and the Microsoft Update Catalog. 
+Channels for availability of B releases include Windows Update, Windows Server Update Services (WSUS), and the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
 
 ### C releases
 
-IT admins have the option to test and/or validate production-quality releases ahead of the planned B release for the following month. These are optional, cumulative, non-security preview releases. Known as **C releases**, they are only offered to the most recent, supported versions of Windows. New features like News and Interests may initially be deployed in the prior month’s C preview release, then ship in the following month’s B release. 
+IT admins have the option to test and validate production-quality releases ahead of the planned B release for the following month. These updates are optional, cumulative, non-security preview releases. Known as **C releases**, they are only offered to the most recent, supported versions of Windows. New features like [News and Interests](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/group-configuration-news-and-interests-on-the-windows-taskbar/ba-p/2281005) may initially be deployed in the prior month’s C preview release, then ship in the following month’s B release. 
 
 For customers to access the C releases, they must navigate to **Settings** > **Update & Security** > **Windows Update** and select **Check for updates**.  
 
-IT admins may also validate fixes and features in a preview update by leveraging the Windows Insider Program for Business or via the Microsoft Update Catalog. 
+IT admins can also validate fixes and features in a preview update by leveraging the [Windows Insider Program for Business](https://insider.windows.com/for-business) or via the [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx). 
 
 ### OOB releases
 
-Out-of-band (OOB) releases may be provided to fix a recently identified issue or vulnerability. They are used in atypical cases when an issue is detected and cannot wait for the next monthly release because devices must be updated immediately to address security vulnerabilities or to resolve a quality issue impacting many devices. 
+Out-of-band (OOB) releases might be provided to fix a recently identified issue or vulnerability. They are used in atypical cases when an issue is detected and cannot wait for the next monthly release, because devices must be updated immediately to address security vulnerabilities or to resolve a quality issue impacting many devices. 
 
 Some key considerations about OOB releases include: 
 
