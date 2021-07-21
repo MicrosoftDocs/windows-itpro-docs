@@ -12,7 +12,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 10/17/2017
 ---
 
 # Distribute offline apps
@@ -22,9 +22,6 @@ ms.date: 07/21/2021
 
 - Windows 10
 - Windows 10 Mobile
-
-> [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 Offline licensing is a new licensing option for Windows 10 with Microsoft Store for Business and Microsoft Store for Education. With offline licenses, organizations can download apps and their licenses to deploy within their network, or on devices that are not connected to the Internet. ISVs or devs can opt-in their apps for offline licensing when they submit them to the Windows Dev Center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store for Business and Microsoft Store for Education. This model allows organizations to deploy apps when users or devices do not have connectivity to the Store.
 

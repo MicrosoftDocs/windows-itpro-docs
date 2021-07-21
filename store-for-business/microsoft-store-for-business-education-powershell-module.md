@@ -9,7 +9,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 10/22/2017
 ms.reviewer: 
 manager: dansimp
 ---
@@ -18,9 +18,6 @@ manager: dansimp
 
 **Applies to**
 -   Windows 10
-
-> [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 Microsoft Store for Business and Education PowerShell module (preview) is now available on [PowerShell Gallery](https://go.microsoft.com/fwlink/?linkid=853459).
 

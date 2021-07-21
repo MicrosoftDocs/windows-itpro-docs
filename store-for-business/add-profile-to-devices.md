@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
-ms.date: 07/21/2021
+ms.date: 2/9/2018
 ms.reviewer: 
 manager: dansimp
 ms.topic: conceptual
@@ -18,9 +18,6 @@ ms.localizationpriority: medium
 
 **Applies to**
 -   Windows 10
-
-> [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 Windows Autopilot simplifies device set up for IT Admins. For an overview of benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](/windows/deployment/windows-autopilot/windows-10-autopilot).
 
