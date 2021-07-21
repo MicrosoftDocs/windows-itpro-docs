@@ -9,15 +9,12 @@ author: trudyha
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 03/01/2019
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Understand your Microsoft Customer Agreement invoice
-
-> [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 The invoice provides a summary of your charges and provides instructions for payment. It’s available for
 download in the Portable Document Format (.pdf) for commercial customers from Microsoft Store for Business [Microsoft Store for Business - Invoice](https://businessstore.microsoft.com/manage/payments-billing/invoices) or can be sent via email. This article applies to invoices generated for a Microsoft Customer Agreement billing account. Check if you have a [Microsoft Customer Agreement](https://businessstore.microsoft.com/manage/organization/agreements).
