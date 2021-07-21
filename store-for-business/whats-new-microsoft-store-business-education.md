@@ -8,12 +8,15 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 10/31/2018
+ms.date: 07/21/2021
 ms.reviewer: 
 manager: dansimp
 ---
 
 # What's new in Microsoft Store for Business and Education
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 Microsoft Store for Business and Education regularly releases new and improved features.  
 
@@ -21,9 +24,15 @@ Microsoft Store for Business and Education regularly releases new and improved f
 
 **October 2018**
 
-|  |  |
-|-----------------------|---------------------------------|
-| ![Security groups](images/security-groups-icon.png) |**Use security groups with Private store apps**<br /><br /> On the details page for apps in your private store, you can set **Private store availability**. This allows you to choose which security groups can see an app in the private store. <br /><br />[Get more info](./app-inventory-management-microsoft-store-for-business.md#private-store-availability)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
+:::row:::
+   :::column span="1":::
+   ![Security groups](images/security-groups-icon.png)
+   :::column-end:::
+   :::column span="1":::
+   **Use security groups with Private store apps**<br /><br /> On the details page for apps in your private store, you can set **Private store availability**. This allows you to choose which security groups can see an app in the private store. <br /><br />[Get more info](./app-inventory-management-microsoft-store-for-business.md#private-store-availability)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education
+   :::column-end:::
+:::row-end:::
+
 
 <!---
 We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!

@@ -9,7 +9,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 3/20/2018
+ms.date: 07/21/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -20,6 +20,9 @@ manager: dansimp
 
 -   Windows 10
 -   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 Software purchased with the Microsoft Products and Services Agreement (MPSA) can now be managed in Microsoft Store for Business. This allows customers to manage online software purchases in one location.
 
