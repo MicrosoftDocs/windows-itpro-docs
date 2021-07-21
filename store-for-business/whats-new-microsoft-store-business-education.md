@@ -24,9 +24,15 @@ Microsoft Store for Business and Education regularly releases new and improved f
 
 **October 2018**
 
-|  |  |
-|-----------------------|---------------------------------|
-| ![Security groups](images/security-groups-icon.png) |**Use security groups with Private store apps**<br /><br /> On the details page for apps in your private store, you can set **Private store availability**. This allows you to choose which security groups can see an app in the private store. <br /><br />[Get more info](./app-inventory-management-microsoft-store-for-business.md#private-store-availability)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education |
+:::row:::
+   :::column span="1":::
+   ![Security groups](images/security-groups-icon.png)
+   :::column-end:::
+   :::column span=1":::
+   **Use security groups with Private store apps**<br /><br /> On the details page for apps in your private store, you can set **Private store availability**. This allows you to choose which security groups can see an app in the private store. <br /><br />[Get more info](./app-inventory-management-microsoft-store-for-business.md#private-store-availability)<br /><br />**Applies to**:<br /> Microsoft Store for Business <br /> Microsoft Store for Education
+   :::column-end:::
+:::row-end:::
+
 
 <!---
 We’ve been working on bug fixes and performance improvements to provide you a better experience. Stay tuned for new features!
