@@ -13,7 +13,7 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 03/16/2021
+ms.date: 07/21/2021
 ---
 
 # Roles and permissions in Microsoft Store for Business and Education
@@ -22,6 +22,9 @@ ms.date: 03/16/2021
 
 - Windows 10
 - Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 > [!IMPORTANT]
 > Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
@@ -36,11 +39,11 @@ This table lists the global user accounts and the permissions they have in Micro
 
 |                                |  Global Administrator | Billing Administrator |
 | ------------------------------ | --------------------- | --------------------- |
-| Sign up for Microsoft Store for Business and Education |  X       | X             |
-| Modify company profile settings | X                    | X                     |
-| Purchase apps                  |  X                    | X                     |
-| Distribute apps                |  X                    | X                     |
-| Purchase subscription-based software  |  X             | X                     |
+| **Sign up for Microsoft Store for Business and Education** |  X       | X             |
+| **Modify company profile settings** | X                    | X                     |
+| **Purchase apps**                  |  X                    | X                     |
+| **Distribute apps**                |  X                    | X                     |
+| **Purchase subscription-based software**  |  X             | X                     |
 
 - **Global Administrator** and **Billing Administrator** - IT Pros with these accounts have full access to Microsoft Store. They can do everything allowed in the Microsoft Store Admin role, plus they can sign up for Microsoft Store.
 
@@ -52,12 +55,12 @@ This table lists the roles and their permissions.
 
 |                                |  Admin | Purchaser | Device Guard signer |
 | ------------------------------ | ------ | --------  | ------------------- |
-| Assign roles                   | X      |           |                     |
-| Manage Microsoft Store for Business and Education settings |  X |           |                     |
-| Acquire apps                   | X      | X         |                     |
-| Distribute apps                | X      | X         |                     |
-| Sign policies and catalogs     | X      |           |                     |
-| Sign Device Guard changes      | X      |           |  X                   |
+| **Assign roles**                   | X      |           |                     |
+| **Manage Microsoft Store for Business and Education settings** |  X |           |                     |
+| **Acquire apps**                   | X      | X         |                     |
+| **Distribute apps**                | X      | X         |                     |
+| **Sign policies and catalogs**     | X      |           |                     |
+| **Sign Device Guard changes**      | X      |           |  X                   |
 
 These permissions allow people to:
 
