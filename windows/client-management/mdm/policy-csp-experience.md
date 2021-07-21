@@ -1199,7 +1199,7 @@ This policy setting allows you to configure the Chat icon on the taskbar.
 
 <!--/Description-->
 <!--SupportedValues-->
-The values for this policy are 0, 1, 2 and 3. This policy defaults to 0 if not enabled.
+The values for this policy are 0, 1, 2, and 3. This policy defaults to 0 if not enabled.
 
 -   0 - Not Configured: The Chat icon will be configured according to the defaults for your Windows edition.
 -   1 - Show: The Chat icon will be displayed on the taskbar by default. Users can show or hide it in Settings.
