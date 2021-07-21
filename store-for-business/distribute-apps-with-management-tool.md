@@ -12,7 +12,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 10/17/2017
+ms.date: 07/21/2021
 ---
 
 # Distribute apps with a management tool
@@ -22,6 +22,9 @@ ms.date: 10/17/2017
 
 -   Windows 10
 -   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 You can configure a mobile device management (MDM) tool to synchronize your Microsoft Store for Business or Microsoft Store for Education inventory. Microsoft Store management tool services work with MDM tools to manage content.
 
