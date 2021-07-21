@@ -8,15 +8,12 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 07/21/2021
+ms.date: 10/31/2018
 ms.reviewer: 
 manager: dansimp
 ---
 
 # What's new in Microsoft Store for Business and Education
-
-> [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 Microsoft Store for Business and Education regularly releases new and improved features.  
 
