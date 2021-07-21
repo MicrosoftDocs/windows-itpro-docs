@@ -94,6 +94,8 @@ Regardless of the method you choose, you have the benefit of free Microsoft supp
 
 If you use Microsoft Endpoint Manager and have onboarded devices to Endpoint analytics, you will have access to a hardware readiness assessment later this year. This tool enables you to quickly identify which of your managed devices are eligible for the Windows 11 upgrade.
 
+[Desktop Analytics](/mem/configmgr/desktop-analytics/overview) does not support Windows 11. You must use [Endpoint analytics](/mem/analytics/overview).
+
 ## Prepare a pilot deployment
 
 A pilot deployment is a proof of concept that rolls out an upgrade to a select number of devices in production, before deploying it broadly across the organization.  

@@ -18,6 +18,8 @@ items:
           href: change-default-removal-policy-external-storage-media.md
         - name: Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education
           href: group-policies-for-enterprise-and-education-editions.md
+        - name: Manage Device Installation with Group Policy
+          href: manage-device-installation-with-group-policy.md
         - name: Manage the Settings app with Group Policy
           href: manage-settings-app-with-group-policy.md
         - name: What version of Windows am I running
