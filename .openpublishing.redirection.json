@@ -14086,6 +14086,11 @@
       "redirect_document_id": false
     },
     {
+     "source_path": "store-for-business/manage-mpsa-software-microsoft-store-for-business.md",
+     "redirect_url": "/microsoft-store/index",
+     "redirect_document_id": false
+    },
+    {
       "source_path": "windows/manage/reset-a-windows-10-mobile-device.md",
       "redirect_url": "/windows/client-management/reset-a-windows-10-mobile-device",
       "redirect_document_id": false
