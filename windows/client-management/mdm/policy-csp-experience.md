@@ -502,7 +502,7 @@ The values for this policy are 1 and 0. This policy defaults to 1.
 
 <hr/>
 <!--Policy-->
-<a href="" id="experience-allowsaveasofofficefiles"></a>**Experience/AllowSaveAsOfOfficeFiles**  
+<a href="" id="experience-allowsaveasofofficefiles"></a><b>Experience/AllowSaveAsOfOfficeFiles</b>
 
 <hr/>
 
