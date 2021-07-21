@@ -12,7 +12,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 07/21/2021
+ms.date: 10/17/2017
 ---
 
 # Manage user accounts in Microsoft Store for Business and Education
@@ -22,9 +22,6 @@ ms.date: 07/21/2021
 
 -   Windows 10
 -   Windows 10 Mobile
-
-> [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 Microsoft Store for Business and Education manages permissions with a set of roles. Currently, you can [assign these roles to individuals in your organization](roles-and-permissions-microsoft-store-for-business.md), but not to groups.
 

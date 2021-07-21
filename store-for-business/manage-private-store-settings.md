@@ -11,7 +11,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 07/21/2021
+ms.date: 3/29/2018
 ms.localizationpriority: medium
 ---
 
@@ -21,9 +21,6 @@ ms.localizationpriority: medium
 
 -   Windows 10
 -   Windows 10 Mobile
-
-> [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 The private store is a feature in Microsoft Store for Business and Education that organizations receive during the sign up process. When admins add apps to the private store, all people in the organization can view and download the apps. Only online-licensed apps can be distributed from your private store.
 
