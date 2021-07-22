@@ -124,10 +124,6 @@ If you don't know the Store app publisher or product name, you can find them by 
     >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
     <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
 
-<!-- Go Kamatsu says the following info about Windows Mobile can be removed after Windows Mobile EOL at end of 2019
--->
-
-If you need to add Windows 10 mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
 
 > [!NOTE]
 > Your PC and phone must be on the same wireless network.
@@ -570,12 +566,6 @@ After you've decided where your protected apps can access enterprise data on you
 
 ![Advanced optional settings](images/wip-azure-advanced-settings-optional.png)
    
-**Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile.** Determines whether to encrypt enterprise data using a key that's protected by an employee's PIN code on a locked device. Apps won't be able to read corporate data when the device is locked. The options are:
-        
-- **On.** Turns on the feature and provides the additional protection.
-        
-- **Off, or not configured.** Doesn't enable this feature.
-    
 **Revoke encryption keys on unenroll.** Determines whether to revoke a user’s local encryption keys from a device when it’s unenrolled from Windows Information Protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
     
 - **On, or not configured (recommended).** Revokes local encryption keys from a device during unenrollment.

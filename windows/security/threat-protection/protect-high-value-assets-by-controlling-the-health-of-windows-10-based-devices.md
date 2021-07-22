@@ -591,18 +591,7 @@ The following table presents some key items that can be reported back to MDM dep
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left"><p>Windows 10 Mobile</p></td>
-<td align="left"><ul>
-<li><p>PCR0 measurement</p></li>
-<li><p>Secure Boot enabled</p></li>
-<li><p>Secure Boot db is default</p></li>
-<li><p>Secure Boot dbx is up to date</p></li>
-<li><p>Secure Boot policy GUID is default</p></li>
-<li><p>Device Encryption enabled</p></li>
-<li><p>Code Integrity revocation list timestamp/version is up to date</p></li>
-</ul></td>
-</tr>
+
 <tr class="even">
 <td align="left"><p>Windows 10 for desktop editions</p></td>
 <td align="left"><ul>

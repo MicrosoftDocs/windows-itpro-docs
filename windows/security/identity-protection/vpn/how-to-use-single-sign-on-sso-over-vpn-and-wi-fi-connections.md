@@ -92,6 +92,5 @@ You need IP connectivity to a DNS server and domain controller over the network 
 The domain controllers will need to have appropriate KDC certificates for the client to trust them as domain controllers, and since phones are not domain-joined, the root CA of the KDC’s certificate must be in the Third-Party Root CA or Smart Card Trusted Roots store.
 
 The domain controllers must be using certificates based on the updated KDC certificate template Kerberos Authentication.
-This is because Windows 10 Mobile requires strict KDC validation to be enabled.
 This requires that all authenticating domain controllers run Windows Server 2016, or you'll need to enable strict KDC validation on domain controllers that run previous versions of Windows Server.
 For more information, see [Enabling Strict KDC Validation in Windows Kerberos](https://www.microsoft.com/download/details.aspx?id=6382).
