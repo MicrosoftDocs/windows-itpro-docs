@@ -82,7 +82,7 @@ Configuration of Encrypted Hard Drives as startup drives is done using the same 
 
 ## Configuring hardware-based encryption with Group Policy
 
-There are three related Group Policy settings that help you manage how BitLocker uses hardware-based envryption and which encryption algorithms to use. If these settings are not configured or disabled on systems that are equipped with encrypted drives, BitLocker uses software-based encryption: 
+There are three related Group Policy settings that help you manage how BitLocker uses hardware-based encryption and which encryption algorithms to use. If these settings are not configured or disabled on systems that are equipped with encrypted drives, BitLocker uses software-based encryption: 
 
 - [Configure use of hardware-based encryption for fixed data drives](bitlocker/bitlocker-group-policy-settings.md#bkmk-hdefxd)  
 - [Configure use of hardware-based encryption for removable data drives](bitlocker/bitlocker-group-policy-settings.md#configure-use-of-hardware-based-encryption-for-removable-data-drives)
