@@ -69,6 +69,11 @@ sections:
           Why aren’t employees able to see their extensions in the Application Guard Edge session?
         answer: |
           Make sure to enable the extensions policy on your Application Guard configuration.
+          
+      - question: |
+          My extension doesn’t seem to work in Edge Application Guard?
+        answer: |
+          If the extensions policy is enabled for MDAG in configuration, check if your extension requires Native Message Handling components, those extensions are not supported in the Application Guard container.
 
       - question: |
           I’m trying to watch playback video with HDR, why is the HDR option missing?
