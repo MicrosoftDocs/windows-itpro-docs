@@ -119,7 +119,7 @@ In either of the scenarios above, once these rules are added they must be delete
 
 When designing a set of firewall policies for your network, it is a best practice to configure allow rules for any networked applications deployed on the host. Having these rules in place before the user first launches the application will help ensure a seamless experience.
 
-The absence of these staged rules does not necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime require user interaction and administrative privilege. If the device is expected to be used by non-administrative users, you should follow best practice and provide these rules before application first launch to avoid unexpected networking issues.
+The absence of these staged rules does not necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime require user interaction and administrative privilege. If the device is expected to be used by non-administrative users, you should follow best practices and provide these rules before the application's first launch to avoid unexpected networking issues.
 
 To determine why some applications are blocked from communicating in the network, check for the following:
 
