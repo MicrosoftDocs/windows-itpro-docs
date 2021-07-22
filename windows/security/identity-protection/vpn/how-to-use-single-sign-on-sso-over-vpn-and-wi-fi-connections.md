@@ -1,5 +1,5 @@
 ---
-title: How to use single sign on (SSO) over VPN and Wi-Fi connections (Windows 10)
+title: How to use Single Sign-On (SSO) over VPN and Wi-Fi connections (Windows 10)
 description: Explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,16 +12,16 @@ manager: dansimp
 ms.author: dansimp
 ---
 
-# How to use single sign on (SSO) over VPN and Wi-Fi connections
+# How to use Single Sign-On (SSO) over VPN and Wi-Fi connections
 
-This topic explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections. The scenario is:
+This article explains requirements to enable Single Sign-On (SSO) to on-premises domain resources over WiFi or VPN connections. This includes:
 
-- You connect to a network using Wi-Fi or VPN.
-- You want to use the credentials that you use for the WiFi or VPN authentication to also authenticate requests to access a domain resource you are connecting to, without being prompted for your domain credentials separately.
+- Connecting to a network using Wi-Fi or VPN.
+- Use credentials for WiFi or VPN authentication to also authenticate requests to access a domain resource without being prompted for your domain credentials.
 
 For example, you want to connect to a corporate network and access an internal website that requires Windows integrated authentication.
 
-At a high level, the way this works is that the credentials that are used for the connection authentication are put in Credential Manager as the default credentials for the logon session.
+The way this works is that the credentials that are used for the connection authentication are put in Credential Manager as the default credentials for the logon session.
 Credential Manager is a place where credentials in the OS are can be stored for specific domain resources based on the targetname of the resource.
 For VPN, the VPN stack saves its credential as the session default.
 For WiFi, EAP does it.
