@@ -17,6 +17,7 @@ ms.date: 04/02/2019
 
 **Applies to**
 - Windows 10
+- Windows Server 2022
 - Windows Server 2019
 - Windows Server 2016
 
