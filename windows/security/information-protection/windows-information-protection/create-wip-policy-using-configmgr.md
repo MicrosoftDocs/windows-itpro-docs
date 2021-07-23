@@ -217,19 +217,19 @@ For this example, we're going to add an AppLocker XML file to the **App Rules** 
 
 4. On the **Before You Begin** page, click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/intune-applocker-before-begin.png)
+    ![Create a Packaged app Rules wizard and showing the Before You Begin page](images/intune-applocker-before-begin.png)
 
 5. On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/intune-applocker-permissions.png)
+    ![Create Packaged app Rules wizard, set action to Allow](images/intune-applocker-permissions.png)
 
 6.  On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
 
-    ![Create Packaged app Rules wizard, showing the Publisher](images/intune-applocker-publisher.png)
+    ![Create Packaged app Rules wizard, select use an installed packaged app](images/intune-applocker-publisher.png)
 
 7. In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we're using Microsoft Photos.
 
-    ![Create Packaged app Rules wizard, showing the Select applications page](images/intune-applocker-select-apps.png)
+    ![Create Packaged app Rules wizard, select application and click ok](images/intune-applocker-select-apps.png)
 
 8. On the updated **Publisher** page, click **Create**.
 
