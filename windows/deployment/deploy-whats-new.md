@@ -35,12 +35,12 @@ Check out the following new articles about Windows 11:
 - [Plan for Windows 11](/windows/whats-new/windows-11-plan)
 - [Prepare for Windows 11](/windows/whats-new/windows-11-prepare)
 
+The [Windows ADK for Windows 11](/windows-hardware/get-started/adk-install) is available.<br>
+
 [SetupDiag](#setupdiag) is included with Windows 10, version 2004 and later.<br>
-The [Windows ADK for Windows 10, version 2004](/windows-hardware/get-started/adk-install) is available.<br>
 New capabilities are available for [Delivery Optimization](#delivery-optimization) and [Windows Update for Business](#windows-update-for-business).<br>
 VPN support is added to [Windows Autopilot](#windows-autopilot)<br>
 An in-place upgrade wizard is available in [Configuration Manager](#microsoft-endpoint-configuration-manager).<br>
-The [Windows ADK](#windows-assessment-and-deployment-kit-adk) for Windows 10, version 2004 is available.<br>
 The Windows 10 deployment and update [landing page](index.yml) has been redesigned, with additional content added and more content coming soon.<br>
 
 ## The Modern Desktop Deployment Center
@@ -186,9 +186,9 @@ For the latest information about MDT, see the [MDT release notes](/mem/configmgr
 
 The Windows Assessment and Deployment Kit (Windows ADK) contains tools that can be used by IT Pros to deploy Windows.
 
-Download the Windows ADK and Windows PE add-on for Windows 10, version 2004 [here](/windows-hardware/get-started/adk-install).
+Download the Windows ADK and Windows PE add-on for Windows 11 [here](/windows-hardware/get-started/adk-install).
 
-For information about what's new in the ADK, see [What's new in the Windows ADK for Windows 10, version 2004](/windows-hardware/get-started/what-s-new-in-kits-and-tools#whats-new-in-the-windows-adk-for-windows-10-version-2004).
+For information about what's new in the ADK, see [What's new in the Windows ADK](/windows-hardware/get-started/what-s-new-in-kits-and-tools).
 
 Also see [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
 
