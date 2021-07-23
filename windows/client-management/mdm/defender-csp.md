@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 06/23/2021
+ms.date: 07/23/2021
 ---
 
 # Defender CSP
@@ -61,7 +61,7 @@ Defender
 --------SupportLogLocation (Added in the next major release of Windows 10)
 --------PlatformUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 --------EngineUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
---------SignaturesUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
+--------DefinitionUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 --------DisableGradualRelease (Added with the 4.18.2106.5 Defender platform release)
 ----Scan
 ----UpdateSignature
