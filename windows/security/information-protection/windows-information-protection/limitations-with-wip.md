@@ -21,7 +21,6 @@ ms.localizationpriority: medium
 
 **Applies to:**
 -   Windows 10, version 1607 and later
--   Windows 10 Mobile, version 1607 and later
 
 This table provides info about the most common problems you might encounter while running WIP in your organization.
 

@@ -156,9 +156,6 @@ Here are a few examples of responses from the Reporting CSP.
 ## Collect WIP audit logs by using Windows Event Forwarding (for Windows desktop domain-joined devices only)
 Use Windows Event Forwarding to collect and aggregate your WIP audit events. You can view your audit events in the Event Viewer.
 
->[!NOTE]
->Windows 10 Mobile requires you to use the [Reporting CSP process](#collect-wip-audit-logs-by-using-the-reporting-configuration-service-provider-csp) instead.
-
 **To view the WIP events in the Event Viewer**
 1. Open Event Viewer.
 
