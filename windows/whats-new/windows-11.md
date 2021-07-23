@@ -47,6 +47,8 @@ For more information about device eligibility, see [Windows 11 requirements](win
 
 If you are interested in testing Windows 11 before general availability, you can join the [Windows Insider Program](https://insider.windows.com) or [Windows Insider Program for Business](https://insider.windows.com/for-business). You can also preview Windows 11 by enabling pre-release Windows 10 feature updates in [Microsoft Endpoint Configuration Manager](/mem/configmgr/core/servers/manage/pre-release-features) or [Windows Server Update Services](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/publishing-pre-release-windows-10-feature-updates-to-wsus/ba-p/845054) (WSUS).
 
+If you're an administrator, you can manage installations of Windows 11 Insider Preview Builds across multiple devices in your organization using Group Policy, MDM solutions such as Intune, Configuration Manager, or [Windows Server Update Services](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/publishing-pre-release-windows-10-feature-updates-to-wsus/ba-p/845054) (WSUS).For more informinformation see [Manage Insider Preview builds across your organization](https://docs.microsoft.com/windows-insider/business/manage-builds).
+
 ## Before you begin
 
 The following sections provide a quick summary of licensing, compatibility, management, and servicing considerations to help you get started with Windows 11.  
