@@ -25,8 +25,6 @@ ms.reviewer:
 
 If you don't already have an EFS DRA certificate, you'll need to create and extract one from your system before you can use Windows Information Protection (WIP), formerly known as enterprise data protection (EDP), in your organization. For the purposes of this section, we'll use the file name EFSDRA; however, this name can be replaced with anything that makes sense to you.
 
-The recovery process included in this topic only works for desktop devices. WIP deletes the data on Windows 10 Mobile devices.   
-
 >[!IMPORTANT]
 >If you already have an EFS DRA certificate for your organization, you can skip creating a new one. Just use your current EFS DRA certificate in your policy. For more info about when to use a PKI and the general strategy you should use to deploy DRA certificates, see the [Security Watch Deploying EFS: Part 1](/previous-versions/technet-magazine/cc162507(v=msdn.10)) article on TechNet. For more general info about EFS protection, see [Protecting Data by Using EFS to Encrypt Hard Drives](/previous-versions/tn-archive/cc875821(v=technet.10)).<br><br>If your DRA certificate has expired, you won't be able to encrypt your files with it. To fix this, you'll need to create a new certificate, using the steps in this topic, and then deploy it through policy.
 

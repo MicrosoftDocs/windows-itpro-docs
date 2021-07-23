@@ -18,7 +18,6 @@ ms.technology: mde
 **Applies to:**
 
 - Windows 10
-- Windows 10 Mobile
 
 Microsoft Defender SmartScreen works with Intune, Group Policy, and mobile device management (MDM) settings to help you manage your organization's computer settings. Based on how you set up Microsoft Defender SmartScreen, you can show employees a warning page and let them continue to the site, or you can block the site entirely.
 
@@ -77,7 +76,7 @@ SmartScreen uses registry-based Administrative Template policy settings.
 </table>
 
 ## MDM settings
-If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. All settings support both desktop computers (running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune) and Windows 10 Mobile devices.  <br><br> 
+If you manage your policies using Microsoft Intune, you'll want to use these MDM policy settings. All settings support  desktop computers running Windows 10 Pro or Windows 10 Enterprise, enrolled with Microsoft Intune.  <br><br> 
 For Microsoft Defender SmartScreen Edge MDM policies, see [Policy CSP - Browser](/windows/client-management/mdm/policy-csp-browser).
 <table>
 <tr>

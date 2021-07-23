@@ -101,11 +101,9 @@
               href: virtual-smart-cards\virtual-smart-card-tpmvscmgr.md
     - name: Enterprise Certificate Pinning
       href: enterprise-certificate-pinning.md
-    - name: Install digital certificates on Windows 10 Mobile
-      href: installing-digital-certificates-on-windows-10-mobile.md
     - name: Windows 10 credential theft mitigation guide abstract
       href: windows-credential-theft-mitigation-guide-abstract.md
-    - name: Configure S/MIME for Windows 10 and Windows 10 Mobile
+    - name: Configure S/MIME for Windows 10
       href: configure-s-mime.md
     - name: VPN technical guide
       href: vpn\vpn-guide.md
