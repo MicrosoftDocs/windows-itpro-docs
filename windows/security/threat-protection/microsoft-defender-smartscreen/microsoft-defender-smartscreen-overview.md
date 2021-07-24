@@ -20,7 +20,6 @@ ms.technology: mde
 **Applies to:**
 
 - Windows 10
-- Windows 10 Mobile
 - Microsoft Edge
 
 Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files.

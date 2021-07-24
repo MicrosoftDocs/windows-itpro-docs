@@ -22,7 +22,6 @@ ms.date: 03/05/2019
 **Applies to:**
 
 - Windows 10, version 1607 and later
-- Windows 10 Mobile, version 1607 and later
 
 We've come up with a list of suggested testing scenarios that you can use to test Windows Information Protection (WIP) in your company.
 
@@ -164,14 +163,7 @@ You can try any of the processes included in these scenarios, but you should foc
             </ul>
         </td>
     </tr>
-    <tr>
-        <td>Verify that app content is protected when a Windows 10 Mobile phone is locked.</td>
-        <td>
-            <ul>
-                <li>Check that protected app data doesn&#39;t appear on the Lock screen of a Windows 10 Mobile phone.</li>
-            </ul>
-        </td>
-    </tr>
+   
     
 </table>
 

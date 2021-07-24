@@ -57,7 +57,7 @@ Inherited Activation is a new feature available in Windows 10, version 1803 that
 
 When a user with Windows 10 E3/E5 or A3/A5 license assigned creates a new Windows 10 virtual machine (VM) using a Windows 10 local host, the VM inherits the activation state from a host machine independent of whether user signs on with a local account or using an Azure Active Directory (AAD) account on a VM.
 
-To support Inherited Activation, both the host computer and the VM must be running Windows 10, version 1803 or later.
+To support Inherited Activation, both the host computer and the VM must be running Windows 10, version 1803 or later. The hypervisor platform must also be Windows Hyper-V.
 
 ## The evolution of deployment
 

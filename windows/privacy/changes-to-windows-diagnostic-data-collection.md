@@ -50,7 +50,7 @@ Starting in Windows 10, version 1903 and newer, both the **Out-of-Box-Experience
 
 ## Behavioral changes
 
-In an upcoming release of Windows 10, we’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. If your devices are set to **Enhanced** when they are upgraded, the device settings will be evaluated to be at the more privacy-preserving setting of **Required diagnostic data**, which means that analytic services that leverage enhanced data collection may not work properly. For a list of services, see [Services that rely on Enhanced diagnostic data](#services-that-rely-on-enhanced-diagnostic-data). Administrators should read through the details and determine whether to apply these new policies to restore the same collection settings as they had before this change. For a list of steps, see [Configure a Windows 10 device to limit crash dumps and logs](#configure-a-windows-10-device-to-limit-crash-dumps-and-logs). For more information on services that rely on Enhanced diagnostic data, see [Services that rely on Enhanced diagnostic data](#services-that-rely-on-enhanced-diagnostic-data).
+In an upcoming release of Windows 10, we’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. If your devices are set to **Enhanced** when they are upgraded, the device settings will be evaluated to be at the more privacy-preserving setting of **Required diagnostic data**, which means that analytic services that leverage enhanced data collection may not work properly. For a list of services, see [Services that rely on Enhanced diagnostic data](#services-that-rely-on-enhanced-diagnostic-data). Administrators should read through the details and determine whether to apply these new policies to restore the same collection settings as they had before this change. For a list of steps, see [Configure a Windows 11 device to limit crash dumps and logs](#configure-a-windows-11-device-to-limit-crash-dumps-and-logs). For more information on services that rely on Enhanced diagnostic data, see [Services that rely on Enhanced diagnostic data](#services-that-rely-on-enhanced-diagnostic-data).
 
 Additionally, you will see the following policy changes in an upcoming release of Windows 10:
 
@@ -72,7 +72,7 @@ A final set of changes includes two new policies that can help you fine-tune dia
 >[!Important]
 >All the changes mentioned in this section will not be released on versions of Windows, version 1809 and earlier as well as Windows Server 2019 and earlier.
 
-## Configure a Windows 10 device to limit crash dumps and logs
+## Configure a Windows 11 device to limit crash dumps and logs
 
 With the Enhanced diagnostic data level being split out into new policies, we're providing additional controls to manage what types of crash dumps are collected and whether to send additional diagnostic logs. Here are some steps on how to configure them:
 

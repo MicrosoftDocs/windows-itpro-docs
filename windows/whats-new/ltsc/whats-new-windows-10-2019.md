@@ -450,7 +450,9 @@ In the Feedback and Settings page under Privacy Settings you can now delete the 
 
 ### Kiosk configuration
 
-Microsoft Edge has many improvements specifically targeted to Kiosks, however Edge is not available in the LTSC release of Windows 10. Internet Explorer is included in Windows 10 LTSC releases as its feature set is not changing, and it will continue to get security fixes for the life of a Windows 10 LTSC release.
+The new chromium-based Microsoft Edge has many improvements specifically targeted to Kiosks. However, it is not included in the LTSC release of Windows 10.  You can download and install Microsoft Edge separately [here](https://www.microsoft.com/edge/business/download).
+
+Internet Explorer is included in Windows 10 LTSC releases as its feature set is not changing, and it will continue to get security fixes for the life of a Windows 10 LTSC release.
 
 If you wish to take advantage of [Kiosk capabilities in Edge](/microsoft-edge/deploy/microsoft-edge-kiosk-mode-deploy), consider [Kiosk mode](/windows/configuration/kiosk-methods) with a semi-annual release channel. 
 
