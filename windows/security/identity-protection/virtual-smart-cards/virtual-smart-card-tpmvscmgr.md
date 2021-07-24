@@ -51,7 +51,7 @@ The Destroy command securely deletes a virtual smart card from a computer.
 > [!WARNING]
 > When a virtual smart card is deleted, it cannot be recovered.
 
-| **Parameter** | **Description**   |
+| Parameter | Description |
 |---------------|-------------------|
 | /instance     | Specifies the instance ID of the virtual smart card to be removed. The instanceID was generated as output by Tpmvscmgr.exe when the card was created. The **/instance** parameter is a required field for the Destroy command.   |
 | /machine      | Allows you to specify the name of a remote computer on which the virtual smart card will be deleted. This can be used in a domain environment only, and it relies on DCOM. For the command to succeed in deleting a virtual smart card on a different computer, the user running this command must be a member in the local administrators group on the remote computer. |
@@ -67,25 +67,35 @@ For alphanumeric inputs, the full 127 character ASCII set is allowed.
 
 The following command shows how to create a virtual smart card that can be later managed by a smart card management tool launched from another computer.
 
-    tpmvscmgr.exe create /name "VirtualSmartCardForCorpAccess" /AdminKey DEFAULT /PIN PROMPT
+```console
+tpmvscmgr.exe create /name "VirtualSmartCardForCorpAccess" /AdminKey DEFAULT /PIN PROMPT
+```
 
 Alternatively, instead of using a default administrator key, you can create an administrator key at the command line. The following command shows how to create an administrator key.
 
-    tpmvscmgr.exe create /name "VirtualSmartCardForCorpAccess" /AdminKey PROMPT /PIN PROMPT
+```console
+tpmvscmgr.exe create /name "VirtualSmartCardForCorpAccess" /AdminKey PROMPT /PIN PROMPT
+```
 
 The following command will create the unmanaged virtual smart card that can be used to enroll certificates.
 
-    tpmvscmgr.exe create /name "VirtualSmartCardForCorpAccess" /AdminKey RANDOM /PIN PROMPT /generate
+```console
+tpmvscmgr.exe create /name "VirtualSmartCardForCorpAccess" /AdminKey RANDOM /PIN PROMPT /generate
+```
 
 The preceding command will create a virtual smart card with a randomized administrator key. The key is automatically discarded after the card is created. This means that if the user forgets the PIN or wants to the change the PIN, the user needs to delete the card and create it again. To delete the card, the user can run the following command.
 
-    tpmvscmgr.exe destroy /instance <instance ID>
+```console
+tpmvscmgr.exe destroy /instance <instance ID>
+```
 
 where &lt;instance ID&gt; is the value printed on the screen when the user created the card. Specifically, for the first card created, the instance ID is ROOT\\SMARTCARDREADER\\0000.
 
 The following command will create a TPM virtual smart card with the default value for the administrator key and a specified PIN policy and attestation method:
 
-    tpmvscmgr.exe create /name "VirtualSmartCardForCorpAccess" /PIN PROMPT /pinpolicy minlen 4 maxlen 8 /AdminKey DEFAULT /attestation AIK_AND_CERT /generate
+```console
+tpmvscmgr.exe create /name "VirtualSmartCardForCorpAccess" /PIN PROMPT /pinpolicy minlen 4 maxlen 8 /AdminKey DEFAULT /attestation AIK_AND_CERT /generate
+```
 
 ## Additional references
 

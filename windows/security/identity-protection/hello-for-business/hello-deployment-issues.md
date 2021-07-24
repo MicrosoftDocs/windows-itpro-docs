@@ -28,7 +28,7 @@ Applies to:
 - Azure AD joined deployments
 - Windows 10, version 1803 and later
 
-PIN reset on Azure AD joined devices uses a flow called web sign-in to authenticate the user above lock. Web sign in only allows navigation to specific domains. If it attempts to navigate to a domain that is not allowed it will shows a page with the "We can't open that page right now" error message.
+PIN reset on Azure AD joined devices uses a flow called web sign-in to authenticate the user above lock. Web sign in only allows navigation to specific domains. If it attempts to navigate to a domain that is not allowed it will shows a page with the error message "We can't open that page right now".
 
 ### Identifying Azure AD joined PIN Reset Allowed Domains Issue
 
@@ -36,7 +36,7 @@ The user can launch the PIN reset flow from above lock using the "I forgot my PI
 
 In federated environments authentication may be configured to route to AD FS or a third party identity provider. If the PIN reset flow is launched and attempts to navigate to a federated identity provider server page, it will fail and display the "We can't open that page right now" error if the domain for the server page is not included in an allow list.
 
-If you are a customer of Azure US Government cloud, PIN reset will also attempt to navigate to a domain that is not included in the default allow list. This results in the "We can't open that page right now" being shown.
+If you are a customer of Azure US Government cloud, PIN reset will also attempt to navigate to a domain that is not included in the default allow list. This results in "We can't open that page right now".
 
 ### Resolving Azure AD joined PIN Reset Allowed Domains Issue
 
@@ -96,7 +96,7 @@ Description:
 The Kerberos client received a KDC certificate that does not have a matched domain name.
 Expected Domain Name: ad.contoso.com
 Error Code: 0xC000006D
- ```
+```
 
 ### Resolving On-premises Resource Access Issue with Third-Party CAs
 
@@ -173,7 +173,7 @@ See https://go.microsoft.com/fwlink/?linkid=832647 for more details.
 
 If a device has recently been joined to a domain, then there may be a delay before the device authentication occurs. If the failing state of this prerequisite check persists, then it can indicate an issue with the AD FS configuration.
 
-If this AD FS scope issue is present, event logs on the AD FS server will indicate an authentication failure from the client. This error will be logged in event logs under AD FS/Admin as event ID 1021 and the event will specify that the client is forbidden access to resource 'http<span>://schemas.microsoft.com/ws/2009/12/identityserver/selfscope</span>' with scope 'ugs':
+If this AD FS scope issue is present, event logs on the AD FS server will indicate an authentication failure from the client. This error will be logged in event logs under AD FS/Admin as event ID 1021 and the event will specify that the client is forbidden access to resource `http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope` with scope 'ugs':
 
 ```console
 Log Name:      AD FS/Admin
@@ -198,16 +198,22 @@ Microsoft.IdentityServer.Web.Protocols.OAuth.Exceptions.OAuthUnauthorizedClientE
 
 This issue is fixed in Windows Server, version 1903 and later. For Windows Server 2019, this issue can be remediated by adding the ugs scope manually.
 
-1. Launch AD FS management console. Browse to "Services > Scope Descriptions".
-2. Right click "Scope Descriptions" and select "Add Scope Description".
-3. Under name type "ugs" and Click Apply > OK.
+1. Launch AD FS management console. Browse to **Services > Scope Descriptions**.
+
+2. Right click **Scope Descriptions** and select **Add Scope Description**.
+
+3. Under name type **ugs** and click **Apply > OK**.
+
 4. Launch PowerShell as an administrator.
+
 5. Get the ObjectIdentifier of the application permission with the ClientRoleIdentifier parameter equal to "38aa3b87-a06d-4817-b275-7a316988d93b":
 
-``` PowerShell
-(Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
-```
+   ```powershell
+   (Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
+   ```
 
 6. Execute the command `Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'`.
+
 7. Restart the AD FS service.
+
 8. On the client: Restart the client. User should be prompted to provision Windows Hello for Business.
