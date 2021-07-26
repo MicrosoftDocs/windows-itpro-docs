@@ -60,7 +60,7 @@ sections:
           > Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](/windows/deployment/mbr-to-gpt) before changing the BIOS mode which will prepare the OS and the disk to support UEFI.
           
       - question: How can I tell if a TPM is on my computer?
-        answer: Beginning with Windows 10, version 1803, you can check TPM status in **Windows Defender Security Center** > **Device Security** > **Security processor details**. In previous versions of Windows, open the TPM MMC console (tpm.msc) and look under the **Status** heading.
+        answer: Beginning with Windows 10, version 1803, you can check TPM status in **Windows Defender Security Center** > **Device Security** > **Security processor details**. In previous versions of Windows, open the TPM MMC console (tpm.msc) and look under the **Status** heading. You can also run **[Get-TPM](https://docs.microsoft.com/en-us/powershell/module/trustedplatformmodule/get-tpm?view=windowsserver2019-ps)** in Powershell to get more details about the TPM on the current computer.
 
       - question: Can I use BitLocker on an operating system drive without a TPM?
         answer: |
