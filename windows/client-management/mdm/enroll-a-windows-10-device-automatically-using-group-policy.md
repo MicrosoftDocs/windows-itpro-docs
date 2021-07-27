@@ -85,11 +85,7 @@ You may contact your domain administrators to verify if the group policy has bee
 
 8. Verify that the device is not enrolled with the old Intune client used on the Intune Silverlight Portal (this is the Intune portal used before the Azure portal).
 
-9. Verify that Azure AD allows the logon user to enroll devices.
-
-    ![Azure AD device settings](images/auto-enrollment-azure-ad-device-settings.png)
-
-10. Verify that Microsoft Intune should allow enrollment of Windows devices.
+9. Verify that Microsoft Intune should allow enrollment of Windows devices.
 
     ![Enrollment of Windows devices](images/auto-enrollment-enrollment-of-windows-devices.png)
 
@@ -116,9 +112,6 @@ Requirements:
     > ![MDM policies](images/autoenrollment-mdm-policies.png)
 
 4. Double-click **Enable automatic MDM enrollment using default Azure AD credentials** (previously called **Auto MDM Enrollment with AAD Token** in Windows 10, version 1709). For ADMX files in Windows 10, version 1903 and later, select **User Credential** as the Selected Credential Type to use.
-
-   > [!NOTE]
-   > **Device Credential** Credential Type may work, however, it is not yet supported by Intune. We don't recommend using this option until it's supported. 
 
    ![MDM autoenrollment policy](images/autoenrollment-policy.png)
 

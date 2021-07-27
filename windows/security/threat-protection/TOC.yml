@@ -193,7 +193,7 @@
             - name: Phishing
               href: intelligence/phishing.md
             - name: Ransomware
-              href: intelligence/ransomware-malware.md
+              href: /security/compass/human-operated-ransomware
             - name: Rootkits
               href: intelligence/rootkits-malware.md
             - name: Supply chain attacks
@@ -1408,5 +1408,3 @@
                   href: windows-security-configuration-framework/security-compliance-toolkit-10.md
                 - name: Get support
                   href: windows-security-configuration-framework/get-support-for-security-baselines.md
-        - name: Windows 10 Mobile security guide
-          href: windows-10-mobile-security-guide.md

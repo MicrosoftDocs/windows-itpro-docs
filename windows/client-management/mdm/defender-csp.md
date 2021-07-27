@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 06/23/2021
+ms.date: 07/23/2021
 ---
 
 # Defender CSP
@@ -61,7 +61,8 @@ Defender
 --------SupportLogLocation (Added in the next major release of Windows 10)
 --------PlatformUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 --------EngineUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
---------SignaturesUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
+--------DefinitionUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
+--------DisableGradualRelease (Added with the 4.18.2106.5 Defender platform release)
 ----Scan
 ----UpdateSignature
 ----OfflineScan (Added in Windows 10 version 1803)
@@ -524,8 +525,7 @@ More details:
 - [Microsoft Defender Antivirus diagnostic data](/microsoft-365/security/defender-endpoint/collect-diagnostic-data)  
 - [Collect investigation package from devices](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices)  
 
-<a href="" id="configuration-supportloglocation"></a>**Configuration/PlatformUpdatesChannel**
-
+<a href="" id="configuration-platformupdateschannel"></a>**Configuration/PlatformUpdatesChannel**
 Enable this policy to specify when devices receive Microsoft Defender platform updates during the monthly gradual rollout.
 
 Beta Channel: Devices set to this channel will be the first to receive new updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in (manual) test environments only and a limited number of devices.
@@ -549,8 +549,12 @@ Valid values are:
 - 3: Current Channel (Staged)
 - 4: Current Channel (Broad)
 
-<a href="" id="configuration-supportloglocation"></a>**Configuration/EngineUpdatesChannel**
+More details:  
 
+- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)  
+- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
+
+<a href="" id="configuration-engineupdateschannel"></a>**Configuration/EngineUpdatesChannel**
 Enable this policy to specify when devices receive Microsoft Defender engine updates during the monthly gradual rollout.
 
 Beta Channel: Devices set to this channel will be the first to receive new updates. Select Beta Channel to participate in identifying and reporting issues to Microsoft. Devices in the Windows Insider Program are subscribed to this channel by default. For use in (manual) test environments only and a limited number of devices.
@@ -574,8 +578,12 @@ Valid values are:
 - 3 - Current Channel (Staged)
 - 4 - Current Channel (Broad)
 
-<a href="" id="configuration-supportloglocation"></a>**Configuration/SignaturesUpdatesChannel** 
+More details:  
 
+- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)  
+- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
+
+<a href="" id="configuration-definitionupdateschannel"></a>**Configuration/DefinitionUpdatesChannel** 
 Enable this policy to specify when devices receive daily Microsoft Defender definition updates during the daily gradual rollout.
 
 Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
@@ -589,6 +597,33 @@ Valid Values are:
 - 0: Not configured (Default)
 - 3: Current Channel (Staged)
 - 4: Current Channel (Broad)
+
+More details:  
+
+- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)  
+- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
+
+<a href="" id="configuration-disablegradualrelease"></a>**Configuration/DisableGradualRelease**
+Enable this policy to disable gradual rollout of monthly and daily Microsoft Defender updates.
+Devices will be offered all Microsoft Defender updates after the gradual release cycle completes. This is best for datacenters that only receive limited updates.
+
+> [!NOTE]
+> This setting applies to both monthly as well as daily Microsoft Defender updates and will override any previously configured channel selections for platform and engine updates.
+
+If you disable or do not configure this policy, the device will remain in Current Channel (Default) unless specified otherwise in specific channels for platform and engine updates. Stay up to date automatically during the gradual release cycle. Suitable for most devices.
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:
+•	1 – Enabled.
+•	0 (default) – Not Configured.
+
+More details:  
+
+- [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)  
+- [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
 
 <a href="" id="scan"></a>**Scan**  
 Node that can be used to start a Windows Defender scan on a device.

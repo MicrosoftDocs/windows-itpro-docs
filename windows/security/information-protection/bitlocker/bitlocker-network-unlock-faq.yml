@@ -35,6 +35,6 @@ sections:
           BitLocker Network Unlock has software and hardware requirements for both client computers, Windows Deployment services, and domain controllers that must be met before you can use it.
           
           Network Unlock uses two protectors, the TPM protector and the one provided by the network or by your PIN, whereas automatic unlock uses a single protector, the one stored in the TPM. If the computer is joined to a network without the key protector it will prompt you to enter your PIN. If the PIN is 
-          not available you will need to use the recovery key to unlock the computer if it can ot be connected to the network.
+          not available you will need to use the recovery key to unlock the computer if it can not be connected to the network.
           
           For more info, see [BitLocker: How to enable Network Unlock](bitlocker-how-to-enable-network-unlock.md).

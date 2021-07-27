@@ -14086,6 +14086,11 @@
       "redirect_document_id": false
     },
     {
+     "source_path": "store-for-business/manage-mpsa-software-microsoft-store-for-business.md",
+     "redirect_url": "/microsoft-store/index",
+     "redirect_document_id": false
+    },
+    {
       "source_path": "windows/manage/reset-a-windows-10-mobile-device.md",
       "redirect_url": "/windows/client-management/reset-a-windows-10-mobile-device",
       "redirect_document_id": false
@@ -17957,27 +17962,27 @@
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-atp-post-migration.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-endpoint-post-migration",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-atp-post-migration",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-atp-post-migration-configuration-manager.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-endpoint-post-migration-configuration-manager",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-atp-post-migration-configuration-manager",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-atp-post-migration-group-policy-objects.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-endpoint-post-migration-group-policy-objects",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-atp-post-migration-group-policy-objects",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-atp-post-migration-intune.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-endpoint-post-migration-intune",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-atp-post-migration-intune",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/manage-atp-post-migration-other-tools.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-endpoint-post-migration-other-tools",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/manage-atp-post-migration-other-tools",
       "redirect_document_id": false
     },
     {
@@ -18022,22 +18027,22 @@
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/mcafee-to-microsoft-defender-migration.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-migration",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-migration",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/mcafee-to-microsoft-defender-onboard.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-onboard",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/mcafee-to-microsoft-defender-prepare.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-prepare",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/mcafee-to-microsoft-defender-setup.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/mcafee-to-microsoft-defender-setup",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-setup",
       "redirect_document_id": false
     },
     {
@@ -18367,22 +18372,22 @@
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/symantec-to-microsoft-defender-atp-migration.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-endpoint-migration",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-migration",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/symantec-to-microsoft-defender-atp-onboard.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-endpoint-onboard",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-onboard",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/symantec-to-microsoft-defender-atp-prepare.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-endpoint-prepare",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-prepare",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/security/threat-protection/microsoft-defender-atp/symantec-to-microsoft-defender-atp-setup.md",
-      "redirect_url": "/microsoft-365/security/defender-endpoint/symantec-to-microsoft-defender-endpoint-setup",
+      "redirect_url": "/microsoft-365/security/defender-endpoint/switch-to-microsoft-defender-setup",
       "redirect_document_id": false
     },
     {
@@ -18919,11 +18924,26 @@
       "source_path": "windows/security/threat-protection/device-control/device-control-report.md",
       "redirect_url": "/microsoft-365/security/defender-endpoint/device-control-report",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/privacy/deploy-data-processor-service-windows.md",
+      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/intelligence/ransomware-malware.md",
+      "redirect_url": "/security/compass/human-operated-ransomware",
+      "redirect_document_id": false
     }, 
     {
       "source_path": "windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md",
       "redirect_url": "/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows",
       "redirect_document_id": false
-    }        
+    }, 
+    {
+      "source_path": "windows/privacy/data-processor-service-for-windows-enterprise-public-preview-terms.md",
+      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "redirect_document_id": false
+    }
 	    ]
 }
