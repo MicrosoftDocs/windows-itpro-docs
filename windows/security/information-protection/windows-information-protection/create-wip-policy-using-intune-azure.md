@@ -526,7 +526,7 @@ Separate multiple ranges with the "," delimiter.
 **Starting IPv4 Address:** 3.4.0.1<br/>
 **Ending IPv4 Address:** 3.4.255.254<br/>
 **Custom URI:** 3.4.0.1-3.4.255.254,<br/>
-<br>10.0.0.1-10.255.255.254
+10.0.0.1-10.255.255.254
 
 ### IPv6 ranges
 
@@ -564,7 +564,7 @@ Decide if you want Windows to look for additional network settings:
 After you create and deploy your WIP policy to your employees, Windows begins to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the Data Recovery Agent (DRA) certificate lets Windows use an included public key to encrypt the local data while you maintain the private key that can unencrypt the data.
 
 >[!Important]
->Using a DRA certificate isn’t mandatory. However, we strongly recommend it. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](/previous-versions/tn-archive/cc512680(v=technet.10)) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate) topic.
+>Using a DRA certificate isn’t mandatory. However, we strongly recommend it. For more info about how to find and export your data recovery certificate, see [Data Recovery and Encrypting File System (EFS)](/previous-versions/tn-archive/cc512680(v=technet.10)). For more info about creating and verifying your EFS DRA certificate, see [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate).
 
 **To upload your DRA certificate**
 1. From the **App policy** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.

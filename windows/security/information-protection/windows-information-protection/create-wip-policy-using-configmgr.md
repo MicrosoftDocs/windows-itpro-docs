@@ -103,7 +103,7 @@ If you don't know the publisher or product name, you can find them for both desk
 
    > [!NOTE]
    > 
-   > If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section.
+   > If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in [Add an AppLocker policy file](#add-an-applocker-policy-file) in this article.
 
 2. Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
 
@@ -111,27 +111,32 @@ If you don't know the publisher or product name, you can find them for both desk
 
    The API runs and opens a text editor with the app details.
 
-   ``` json
-       {
+   ```json
+   {
        "packageIdentityName": "Microsoft.Office.OneNote",
        "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
-       }
+   }
    ```
 
 4. Copy the `publisherCertificateName` value and paste them into the **Publisher Name** box, copy the `packageIdentityName` value into the **Product Name** box of Intune.
 
    > [!IMPORTANT]
-   > The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that's using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as "CN=" followed by the `windowsPhoneLegacyId`.<p>For example:<p>
+   > The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that's using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as "CN=" followed by the `windowsPhoneLegacyId`.
+   >
+   > For example:
+   >
    > ```json
-   >     {
-   >         "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-   >     }
+   > {
+   >     "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+   > }
    > ```
 
 ### Add a desktop app rule to your policy
+
 For this example, we're going to add Internet Explorer, a desktop app, to the **App Rules** list.
 
 **To add a desktop app to your policy**
+
 1.  From the **App rules** area, click **Add**.
 
     The **Add app rule** box appears.
@@ -310,7 +315,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 3.  Click **Exempt** from the **Windows Information Protection mode** drop-down list.
 
-    Be aware that when you exempt apps, they're allowed to bypass the WIP restrictions and access your corporate data. To allow apps, see the [Add app rules to your policy](#add-app-rules-to-your-policy) section of this topic.
+    Be aware that when you exempt apps, they're allowed to bypass the WIP restrictions and access your corporate data. To allow apps, see [Add app rules to your policy](#add-app-rules-to-your-policy) in this article.
 
 4.  Fill out the rest of the app rule info, based on the type of rule you're adding:
 
@@ -430,7 +435,7 @@ There are no default locations included with WIP, you must add each of your netw
 
    After you create and deploy your WIP policy to your employees, Windows will begin to encrypt your corporate data on the employees' local device drive. If somehow the employees' local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data. 
 
-   For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](/previous-versions/tn-archive/cc512680(v=technet.10)) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
+   For more info about how to find and export your data recovery certificate, see [Data Recovery and Encrypting File System (EFS)](/previous-versions/tn-archive/cc512680(v=technet.10)). For more info about creating and verifying your EFS DRA certificate, see [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
 
 ## Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you'll be asked to decide if you want to add any optional WIP settings.
