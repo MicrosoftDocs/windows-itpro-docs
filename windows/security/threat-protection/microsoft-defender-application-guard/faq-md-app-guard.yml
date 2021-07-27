@@ -9,7 +9,7 @@ metadata:
   ms.localizationpriority: medium
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 06/16/2021
+  ms.date: 07/23/2021
   ms.reviewer:
   manager: dansimp
   ms.custom: asr
@@ -47,33 +47,6 @@ sections:
          - Verify this by going to edge://application-guard-internals/#utilities and entering the FQDN for the pac/proxy in the “check url trust” field and verifying that it says “Neutral”.
          - It must be a FQDN. A simple IP address will not work.
          - Optionally, if possible, the IP addresses associated with the server hosting the above should be removed from the Enterprise IP Ranges in the Network Isolation policies used by Application Guard.
-
-      - question: |
-          Can employees download documents from the Application Guard Edge session onto host devices?
-        answer: |
-          In Windows 10 Enterprise edition, version 1803, users are able to download documents from the isolated Application Guard container to the host PC. This capability is managed by policy.
-          
-          In Windows 10 Enterprise edition, version 1709, or Windows 10 Professional edition, version 1803, it is not possible to download files from the isolated Application Guard container to the host computer. However, employees can use the **Print as PDF** or **Print as XPS** options and save those files to the host device.
-          
-      - question: |
-          Can employees copy and paste between the host device and the Application Guard Edge session?
-        answer: |
-          Depending on your organization's settings, employees can copy and paste images (.bmp) and text to and from the isolated container.
-
-      - question: |
-          Why don't employees see their favorites in the Application Guard Edge session?
-        answer: |
-          Depending on your organization’s settings, it might be that Favorites Sync is turned off. To manage the policy, see: [Microsoft Edge and Microsoft Defender Application Guard | Microsoft Docs](/deployedge/microsoft-edge-security-windows-defender-application-guard).
-          
-      - question: |
-          Why aren’t employees able to see their extensions in the Application Guard Edge session?
-        answer: |
-          Make sure to enable the extensions policy on your Application Guard configuration.
-
-      - question: |
-          I’m trying to watch playback video with HDR, why is the HDR option missing?
-        answer: |
-          In order for HDR video playback to work in the container, vGPU Hardware Acceleration needs to be enabled in Application Guard.
         
       - question: |
           How do I configure Microsoft Defender Application Guard to work with my network proxy (IP-Literal Addresses)?

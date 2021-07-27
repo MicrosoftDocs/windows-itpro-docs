@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 03/04/2020
+ms.date: 07/15/2021
 ms.technology: mde
 ---
 
@@ -41,46 +41,35 @@ To modify the policy rule options of an existing WDAC policy XML, use [Set-RuleO
 
     `Set-RuleOption -FilePath <Path to policy XML> -Option 0 -Delete`
 
-You can set several rule options within a WDAC policy. Table 1 describes each rule option.
+You can set several rule options within a WDAC policy. Table 1 describes each rule option and whether they have supplemental policies. However, option 5 is not implemented as it is reserved for future work, and option 7 is not supported.
 
 > [!NOTE]
 > We recommend that you use **Enabled:Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. To allow these applications, you can capture the policy information from the event log, and then merge that information into the existing policy. When the **Enabled:Audit Mode** is deleted, the policy runs in enforced mode.
 
-**Table 1. Windows Defender Application Control policy - policy rule options**
+### Table 1. Windows Defender Application Control policy - policy rule options
 
-| Rule option | Description |
-|------------ | ----------- |
-| **0 Enabled:UMCI** | WDAC policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. |
-| **1 Enabled:Boot Menu Protection** | This option is not currently supported. |
-| **2 Required:WHQL** | By default, legacy drivers that are not Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Kernel drivers built for Windows 10 should be WHQL certified. |
-| **3 Enabled:Audit Mode (Default)** | Instructs WDAC to log information about applications, binaries, and scripts that would have been blocked if the policy was enforced. You can use this option to identify the potential impact of your WDAC policy, and use the audit events to refine the policy before enforcement. To enforce a WDAC policy, delete this option. |
-| **4 Disabled:Flight Signing** | If enabled, WDAC policies will not trust flightroot-signed binaries. This option would be used by organizations that only want to run released binaries, not pre-release Windows builds. |
-| **5 Enabled:Inherit Default Policy** | This option is reserved for future use and currently has no effect. |
-| **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and the certificates that are trusted for future policy updates must be identified in the UpdatePolicySigners section. |
-| **7 Allowed:Debug Policy Augmented** | This option is not currently supported. |
-| **8 Required:EV Signers** | This rule requires that drivers must be WHQL signed and have been submitted by a partner with an Extended Verification (EV) certificate. All Windows 10 and later drivers will meet this requirement. |
-| **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. |
-| **10 Enabled:Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. |
-| **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is supported on 1709, 1803, and 1809 builds with the 2019 10C LCU or higher, and on devices with the Windows 10 May 2019 Update (1903) and higher. Using it on versions of Windows 10 without the proper update may have unintended results. |
-| **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies will also apply to Universal Windows applications. |
-| **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a managed installer. For more information, see [Authorize apps deployed with a WDAC managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) |
-| **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
-| **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically revalidate the reputation for files that were authorized by the ISG.|
-| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. NOTE: This option is only supported on Windows 10, version 1709, and above.|
-| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. NOTE: This option is only supported on Windows 10, version 1903, and above. |
-| **18 Disabled:Runtime FilePath Rule Protection** | This option disables the default runtime check that only allows FilePath rules for paths that are only writable by an administrator. NOTE: This option is only supported on Windows 10, version 1903, and above. |
-| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries. NOTE: This option is only supported on Windows 10, version 1803, and above. |
-
-The following options are valid for supplemental policies. However, option 5 is not implemented as it is reserved for future work, and option 7 is not  supported.
-
-| Rule option | Description |
-|------------ | ----------- |
-| 5 | Enabled: Inherit Default Policy |
-| **6** | **Enabled: Unsigned System Integrity Policy** |
-| 7 | Allowed: Debug Policy Augmented |
-| **13** | **Enabled: Managed Installer** |
-| **14** | **Enabled: Intelligent Security Graph Authorization** |
-| **18** | **Disabled: Runtime FilePath Rule Protection** |
+| Rule option | Description | Valid supplemental option |
+|------------ | ----------- | ----------- |
+| **0 Enabled:UMCI** | WDAC policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. | No |
+| **1 Enabled:Boot Menu Protection** | This option is not currently supported. | No |
+| **2 Required:WHQL** | By default, legacy drivers that are not Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Kernel drivers built for Windows 10 should be WHQL certified. | No |
+| **3 Enabled:Audit Mode (Default)** | Instructs WDAC to log information about applications, binaries, and scripts that would have been blocked if the policy was enforced. You can use this option to identify the potential impact of your WDAC policy, and use the audit events to refine the policy before enforcement. To enforce a WDAC policy, delete this option. | No |
+| **4 Disabled:Flight Signing** | If enabled, WDAC policies will not trust flightroot-signed binaries. This option would be used by organizations that only want to run released binaries, not pre-release Windows builds. | No |
+| **5 Enabled:Inherit Default Policy** | This option is reserved for future use and currently has no effect. | Yes |
+| **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and the certificates that are trusted for future policy updates must be identified in the UpdatePolicySigners section. | Yes |
+| **7 Allowed:Debug Policy Augmented** | This option is not currently supported. | Yes |
+| **8 Required:EV Signers** | This rule requires that drivers must be WHQL signed and have been submitted by a partner with an Extended Verification (EV) certificate. All Windows 10 and later drivers will meet this requirement. | No |
+| **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. | No |
+| **10 Enabled:Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. | No |
+| **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is required to run HTA files, and is supported on 1709, 1803, and 1809 builds with the 2019 10C LCU or higher, and on devices with the Windows 10 May 2019 Update (1903) and higher. Using it on versions of Windows 10 without the proper update may have unintended results. | No |
+| **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies will also apply to Universal Windows applications. | No |
+| **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a managed installer. For more information, see [Authorize apps deployed with a WDAC managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) | Yes |
+| **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). | Yes |
+| **15 Enabled:Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically revalidate the reputation for files that were authorized by the ISG.| No |
+| **16 Enabled:Update Policy No Reboot** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. NOTE: This option is only supported on Windows 10, version 1709, and above.| No |
+| **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. NOTE: This option is only supported on Windows 10, version 1903, and above. | No |
+| **18 Disabled:Runtime FilePath Rule Protection** | This option disables the default runtime check that only allows FilePath rules for paths that are only writable by an administrator. NOTE: This option is only supported on Windows 10, version 1903, and above. | Yes |
+| **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries. NOTE: This option is only supported on Windows 10, version 1803, and above. | No |
 
 ## Windows Defender Application Control file rule levels
 
@@ -88,7 +77,7 @@ File rule levels allow administrators to specify the level at which they want to
 
 Each file rule level has its benefit and disadvantage. Use Table 2 to select the appropriate protection level for your available administrative resources and Windows Defender Application Control deployment scenario.
 
-**Table 2. Windows Defender Application Control policy - file rule levels**
+### Table 2. Windows Defender Application Control policy - file rule levels
 
 | Rule level | Description |
 |----------- | ----------- |
@@ -122,7 +111,7 @@ As part of normal operations, they will eventually install software updates, or 
 
 ## File rule precedence order
 
-WDAC has a built-in file rule conflict logic that translates to precedence order. It will first processes all explicit deny rules it finds. Then, it will process all explicit allow rules. If no deny or allow rule exists, WDAC will check for [Managed Installer EA](deployment/deploy-wdac-policies-with-memcm.md). Lastly, if none of these exists, WDAC will fall back on [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md).
+WDAC has a built-in file rule conflict logic that translates to precedence order. It will first process all explicit deny rules it finds. Then, it will process all explicit allow rules. If no deny or allow rule exists, WDAC will check for [Managed Installer EA](deployment/deploy-wdac-policies-with-memcm.md). Lastly, if none of these exists, WDAC will fall back on [ISG](use-windows-defender-application-control-with-intelligent-security-graph.md).
 
 ## More information about filepath rules
 
@@ -164,7 +153,7 @@ File name rule levels let you specify file attributes to base a rule on. File na
 
 Use Table 3 to select the appropriate file name level for your use cases. For instance, an LOB or production application and its binaries may all share the same product name. This option lets you easily create targeted policies based on the Product Name filename rule level.
 
-**Table 3. Windows Defender Application Control policy - filename levels**
+### Table 3. Windows Defender Application Control policy - filename levels
 
 | Rule level | Description |
 |----------- | ----------- |

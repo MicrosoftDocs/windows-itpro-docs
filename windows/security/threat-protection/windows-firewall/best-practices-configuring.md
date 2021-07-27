@@ -119,7 +119,7 @@ In either of the scenarios above, once these rules are added they must be delete
 
 When designing a set of firewall policies for your network, it is a best practice to configure allow rules for any networked applications deployed on the host. Having these rules in place before the user first launches the application will help ensure a seamless experience.
 
-The absence of these staged rules does not necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime requires user interaction. 
+The absence of these staged rules does not necessarily mean that in the end an application will be unable to communicate on the network. However, the behaviors involved in the automatic creation of application rules at runtime require user interaction and administrative privilege. If the device is expected to be used by non-administrative users, you should follow best practices and provide these rules before the application's first launch to avoid unexpected networking issues.
 
 To determine why some applications are blocked from communicating in the network, check for the following:
 
@@ -128,6 +128,8 @@ To determine why some applications are blocked from communicating in the network
 2.  A user lacks sufficient privileges and is therefore not prompted to allow the application to make the appropriate policy changes.
 
 3.  Local Policy Merge is disabled, preventing the application or network service from creating local rules.
+
+Creation of application rules at runtime can also be prohibited by administrators using the Settings app or Group Policy.
 
 ![Windows Firewall prompt](images/fw04-userquery.png)
 
@@ -207,4 +209,4 @@ For tasks related to creating outbound rules, see [Checklist: Creating Outbound 
 
 ## Document your changes
 
-When creating an inbound or outbound rule, you should specify details about the app itself, the port range used, and important notes like creation date. Rules must be well-documented for ease of review both by you and other admins. We highly encourage taking the time  to make the work of reviewing your firewall rules at a later date easier. And *never* create unnecessary holes in your firewall.
+When creating an inbound or outbound rule, you should specify details about the app itself, the port range used, and important notes like creation date. Rules must be well-documented for ease of review both by you and other admins. We highly encourage taking the time to make the work of reviewing your firewall rules at a later date easier. And *never* create unnecessary holes in your firewall.

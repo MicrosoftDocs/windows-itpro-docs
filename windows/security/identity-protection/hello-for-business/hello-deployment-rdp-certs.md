@@ -105,7 +105,7 @@ Three approaches are documented here:
 
 1. Update the certificate template by executing the following command:
 
-    certutil - dsaddtemplate \<TemplateName\>.txt
+    certutil -dsaddtemplate \<TemplateName\>.txt
 
 1. In the Certificate Authority console, right-click **Certificate Templates**, select **New**, and select **Certificate Template to Issue**
 

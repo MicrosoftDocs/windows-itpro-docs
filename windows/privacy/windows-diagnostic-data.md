@@ -28,7 +28,7 @@ Applies to:
 
 Microsoft uses Windows diagnostic data to keep Windows secure and up-to-date, troubleshoot problems, and make product improvements. For users who have turned on "Tailored experiences", it can also be used to offer you personalized tips, ads, and recommendations to enhance Microsoft products and services for your needs. This article describes all types of diagnostic data collected by Windows at the Full level (inclusive of data collected at Basic), with comprehensive examples of data we collect per each type. For additional, detailed technical descriptions of Basic data items, see [Windows 10, version 20H2 required diagnostic events and fields](/windows/configuration/basic-level-windows-diagnostic-events-and-fields).
 
-In addition, this article provides references to equivalent definitions for the data types and examples from [ISO/IEC 19944:2017 Information technology - Cloud computing - Cloud services and devices: Data flow, data categories, and data use](https://www.iso.org/standard/66674.html). Each data type also has a Data Use statement, for diagnostics and for Tailored experiences on the device, using the terms as defined by the standard. These Data Use statements define the purposes for which Microsoft processes each type of Windows diagnostic data, using a uniform set of definitions referenced at the end of this document and based on the ISO standard. Reference to the ISO standard provides additional clarity about the information collected, and allows easy comparison with other services or guidance that also references the standard.
+In addition, this article provides references to equivalent definitions for the data types and examples from [ISO/IEC 19944-1:2020 Information technology - Cloud computing - Cloud services and devices: Data flow, data categories, and data use](https://www.iso.org/standard/79573.html). Each data type also has a Data Use statement, for diagnostics and for Tailored experiences on the device, using the terms as defined by the standard. These Data Use statements define the purposes for which Microsoft processes each type of Windows diagnostic data, using a uniform set of definitions referenced at the end of this document and based on the ISO standard. Reference to the ISO standard provides additional clarity about the information collected, and allows easy comparison with other services or guidance that also references the standard.
 
 The data covered in this article is grouped into the following types:
 
@@ -41,7 +41,7 @@ The data covered in this article is grouped into the following types:
 - Inking, Typing, and Speech Utterance data
 
 ## Common data extensions
-Most diagnostic events contain a header of common data. In each example, the info in parentheses provides the equivalent definition for ISO/IEC 19944:2017.
+Most diagnostic events contain a header of common data. In each example, the info in parentheses provides the equivalent definition for ISO/IEC 19944-1:2020.
 
 **Data Use for Common data extensions**
 Header data supports the use of data associated with all diagnostic events. Therefore, Common data is used to [provide](#provide) Windows 10, and may be used to [improve](#improve), [personalize](#personalize), [recommend](#recommend), [offer](#offer), or [promote](#promote) Microsoft and third-party products and services, depending on the uses described in the **Data Use** statements for each data category.
@@ -66,7 +66,7 @@ Information that is added to most diagnostic events, if relevant and available:
 
 
 ## Device, Connectivity, and Configuration data
-This type of data includes details about the device, its configuration and connectivity capabilities, and status. Device, Connectivity, and Configuration data is equivalent to ISO/IEC 19944:2017, 8.2.3.2.3 Connectivity data.
+This type of data includes details about the device, its configuration and connectivity capabilities, and status. Device, Connectivity, and Configuration data is equivalent to ISO/IEC 19944-1:2020, 8.2.3.2.3 Connectivity data.
 
 ### Data Use for Device, Connectivity, and Configuration data 
 
@@ -178,7 +178,7 @@ If a user has enabled Tailored experiences on the device, [Pseudonymized](#pseud
 - Hashed IP address
 
 ## Product and Service Usage data
-This type of data includes details about the usage of the device, operating system, applications, and services. Product and Service Usage data is equivalent to ISO/IEC 19944:2017, 8.2.3.2.4 Observed Usage of the Service Capability.
+This type of data includes details about the usage of the device, operating system, applications, and services. Product and Service Usage data is equivalent to ISO/IEC 19944-1:2020, 8.2.3.2.4 Observed Usage of the Service Capability.
 
 ### Data Use for Product and Service Usage data
 
@@ -242,7 +242,7 @@ If a user has enabled Tailored experiences on the device, [pseudonymized](#pseud
 - Login sessions and state
 
 ## Product and Service Performance data
-This type of data includes details about the health of the device, operating system, apps, and drivers. Product and Service Performance data is equivalent to ISO/IEC 19944:2017 8.2.3.2.2 EUII Telemetry data.
+This type of data includes details about the health of the device, operating system, apps, and drivers. Product and Service Performance data is equivalent to ISO/IEC 19944-1:2020 8.2.3.2.2 EUII Telemetry data.
 
 ### Data Use for Product and Service Performance data
 
@@ -355,7 +355,7 @@ If a user has enabled Tailored experiences on the device, [pseudonymized](#pseud
 - License usage session
 
 ## Software Setup and Inventory data
-This type of data includes software installation and update information on the device. Software Setup and Inventory Data is a subtype of ISO/IEC 19944:2017 8.2.3.2.4 Observed Usage of the Service Capability.
+This type of data includes software installation and update information on the device. Software Setup and Inventory Data is a subtype of ISO/IEC 19944-1:2020 8.2.3.2.4 Observed Usage of the Service Capability.
 
 ### Data Use for Software Setup and Inventory data
 
@@ -397,7 +397,7 @@ If a user has enabled Tailored experiences on the device, [pseudonymized](#pseud
 - Windows Insider build details
 
 ## Browsing History data
-This type of data includes details about web browsing in the Microsoft browsers. Browsing History data is equivalent to ISO/IEC 19944:2017 8.2.3.2.8 Client-side browsing history.
+This type of data includes details about web browsing in the Microsoft browsers. Browsing History data is equivalent to ISO/IEC 19944-1:2020 8.2.3.2.8 Client-side browsing history.
 
 ### Data Use for Browsing History data
 
@@ -429,7 +429,7 @@ If a user has enabled Tailored experiences on the device, [pseudonymized](#pseud
 - Page title
 
 ## Inking Typing and Speech Utterance data
-This type of data gathers details about the voice, inking, and typing input features on the device. Inking, Typing, and Speech Utterance data is a subtype of ISO/IEC 19944:2017 8.2.3.2.1 End User Identifiable information.
+This type of data gathers details about the voice, inking, and typing input features on the device. Inking, Typing, and Speech Utterance data is a subtype of ISO/IEC 19944-1:2020 8.2.3.2.1 End User Identifiable information.
 
 ### Data Use for Inking, Typing, and Speech Utterance data
 
@@ -462,31 +462,31 @@ This type of data gathers details about the voice, inking, and typing input feat
 - Whether user is known to be a child
 - Confidence and success or failure of speech recognition
 
-## ISO/IEC 19944:2017-specific terminology
+## ISO/IEC 19944-1:2020-specific terminology
 
-This section provides the ISO/IEC 19944:2017-specific definitions for use and de-identification qualifiers used in this article.
+This section provides the ISO/IEC 19944-1:2020-specific definitions for use and de-identification qualifiers used in this article.
 
 ### Provide
 
-ISO/IEC 19944:2017 Reference: **9.3.2 Provide**
+ISO/IEC 19944-1:2020 Reference: **9.3.2 Provide**
 
 Use of a specified data category by a Microsoft product or service to protect and provide the described service, including, (i) troubleshoot and fix issues with the product or service or (ii) provide product or service updates.
 
 ### Improve
 
-ISO/IEC 19944:2017 Reference: **9.3.3 Improve**
+ISO/IEC 19944-1:2020 Reference: **9.3.3 Improve**
 
 Use of a specified data category to improve or increase the quality of a Microsoft product or service. Those improvements may be available to end users.
 
 ### Personalize
 
-ISO/IEC 19944:2017 Reference: **9.3.4 Personalize**
+ISO/IEC 19944-1:2020 Reference: **9.3.4 Personalize**
 
 Use of the specified data categories to create a customized experience for the end user in any Microsoft product or service.
 
 ### Recommend
 
-ISO/IEC 19944:2017 Reference: **9.3.4 Personalize**
+ISO/IEC 19944-1:2020 Reference: **9.3.4 Personalize**
 
 “Recommend” means use of the specified data categories to Personalize (9.3.4) the end user’s experience by recommending Microsoft products or services that can be accessed without the need to make a purchase or pay money.
 
@@ -494,7 +494,7 @@ Use of the specified data categories give recommendations about Microsoft produc
 
 ### Offer
 
-ISO/IEC 19944:2017 Reference: **9.3.5 Offer upgrades or upsell**
+ISO/IEC 19944-1:2020 Reference: **9.3.5 Offer upgrades or upsell**
 
 Implies that the source of the data is Microsoft products and services, and the upgrades offered come from Microsoft products and services that are relevant to the context of the current capability. The target audience for the offer is Microsoft customers.
 
@@ -502,13 +502,13 @@ Specifically, use of the specified data categories to make an offer or upsell ne
 
 ### Promote
 
-ISO/IEC 19944:2017 Reference: **9.3.6 Market/advertise/promote**
+ISO/IEC 19944-1:2020 Reference: **9.3.6 Market/advertise/promote**
 
 Use of the specified data categories to promote a product or service in or on a first-party Microsoft product or service.
 
 ### Data identification qualifiers
 
-Here are the data identification qualifiers and the ISO/IEC 19944:2017 reference:
+Here are the data identification qualifiers and the ISO/IEC 19944-1:2020 reference:
 
 - **<a name="pseudo">Pseudonymized Data</a>** 8.3.3 Pseudonymized data. Microsoft usage notes are as defined.
 - **<a name="anon">Anonymized Data</a>** 8.3.5 Anonymized data. Microsoft usage notes are as defined.
