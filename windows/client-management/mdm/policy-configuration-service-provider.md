@@ -7076,6 +7076,18 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### NetworkListManager policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-networklistmanager.md#networklistmanager-allowedtlsauthenticationendpoints" id="networklistmanager-allowedtlsauthenticationendpoints">NetworkListManager/AllowedTlsAuthenticationEndpoints</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-networklistmanager.md#networklistmanager-configuredtlsauthenticationnetworkname" id="networklistmanager-configuredtlsauthenticationnetworkname">NetworkListManager/ConfiguredTLSAuthenticationNetworkName</a>
+  </dd>
+  <dd>
+</dl>
+
 ### Notifications policies
 
 <dl>

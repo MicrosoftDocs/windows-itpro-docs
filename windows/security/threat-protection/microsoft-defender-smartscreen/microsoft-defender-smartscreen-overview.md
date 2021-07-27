@@ -20,7 +20,6 @@ ms.technology: mde
 **Applies to:**
 
 - Windows 10
-- Windows 10 Mobile
 - Microsoft Edge
 
 Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files.
@@ -76,7 +75,7 @@ Microsoft Defender SmartScreen events appear in the Microsoft-Windows-SmartScree
 
 Windows event log for SmartScreen is disabled by default, users can use Event Viewer UI to enable the log or use the command line to enable it:
 
-```
+```console
 wevtutil sl Microsoft-Windows-SmartScreen/Debug /e:true
 ```
 
@@ -84,11 +83,11 @@ wevtutil sl Microsoft-Windows-SmartScreen/Debug /e:true
 > For information on how to use the Event Viewer, see [Windows Event Viewer](/host-integration-server/core/windows-event-viewer1).
 
 
-EventID | Description
--|-
-1000 | Application Windows Defender SmartScreen Event
-1001 | Uri Windows Defender SmartScreen Event
-1002 | User Decision Windows Defender SmartScreen Event
+| EventID | Description |
+|---|---|
+| 1000 | Application Windows Defender SmartScreen Event |
+| 1001 | Uri Windows Defender SmartScreen Event |
+| 1002 | User Decision Windows Defender SmartScreen Event |
 
 ## Related topics
 - [SmartScreen Frequently Asked Questions](https://fb.smartscreen.microsoft.com/smartscreenfaq.aspx)

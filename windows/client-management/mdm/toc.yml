@@ -725,6 +725,8 @@ items:
               href: policy-csp-multitasking.md
             - name: NetworkIsolation
               href: policy-csp-networkisolation.md
+            - name: NetworkListManager
+              href: policy-csp-networklistmanager.md
             - name: Notifications
               href: policy-csp-notifications.md
             - name: Power
