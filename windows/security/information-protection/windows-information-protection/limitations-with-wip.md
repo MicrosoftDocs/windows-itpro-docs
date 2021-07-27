@@ -71,7 +71,7 @@ This table provides info about the most common problems you might encounter whil
         <td>Turn off WIP for all devices before changing the primary Corporate Identity (first entry in the list), restarting, and finally redeploying.</td>
     </tr>
     <tr>
-        <td>Redirected folders with Client Side Caching are not compatible with WIP.</td>
+        <td>Redirected folders with Client-Side Caching are not compatible with WIP.</td>
         <td>Apps might encounter access errors while attempting to read a cached, offline file.</td>
         <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.<br><br><b>Note</b><br>For more info about Work Folders and Offline Files, see the blog, <a href="https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/" data-raw-source="[Work Folders and Offline Files support for Windows Information Protection](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/)">Work Folders and Offline Files support for Windows Information Protection</a>. If you&#39;re having trouble opening files offline while using Offline Files and WIP, see the support article, <a href="https://support.microsoft.com/kb/3187045" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/kb/3187045)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.</td>
     </tr>
