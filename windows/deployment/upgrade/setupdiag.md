@@ -49,7 +49,7 @@ When run by Windows Setup, the following [parameters](#parameters) are used:
 - /Output:%windir%\logs\SetupDiag\SetupDiagResults.xml
 - /RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results
 
-The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.  Please note that this is not the same as the default registry path when SetupDiag is run manually. When SetupDiag is run manually, and the /RegPath parameter is not specificed, data is stored in the registry at HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag.
+The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.  Please note that this is not the same as the default registry path when SetupDiag is run manually. When SetupDiag is run manually, and the /RegPath parameter is not specified, data is stored in the registry at HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag.
 
 > [!IMPORTANT]
 > When SetupDiag indicates that there were multiple failures, the last failure in the log file is typically the fatal error, not the first one.
