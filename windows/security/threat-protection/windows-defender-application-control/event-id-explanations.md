@@ -86,6 +86,35 @@ To enable 3090 allow events, and 3091 and 3092 events, you must instead create a
 reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x300
 ```
 
+## System Integrity Policy Options
+Below are the policy options in event 3099.
+
+| Bit Address | Policy Rule Option |
+|-------|------|
+| 2 | Enabled:UMCI |
+| 3 | Enabled:Boot Menu Protection |
+| 4 | Enabled:Intelligent Security Graph Authorization |
+| 5 | Enabled:Invalidate EAs on Reboot |
+| 7 |Required:WHQL |
+| 8 | Enabled:Developer Dynamic Code Security |
+| 9 | Enabled: No Revalidation Upon Refresh |
+| 10 | Enabled:Allow Supplemental Policies |
+| 11 | Disabled:Runtime FilePath Rule Protection |
+| 13 | Enabled: Revoked Expired As Unsigned |
+| 16 |Enabled:Audit Mode (Default) |
+| 17 | Disabled:Flight Signing |
+| 18 | Enabled:Inherit Default Policy |
+| 19 | Enabled:Unsigned System Integrity Policy (Default) |
+| 20 | Enabled:Dynamic Code Security |
+| 21 | Required:EV Signers |
+| 22 | Enabled:Boot Audit on Failure |
+| 23 | Enabled:Advanced Boot Options Menu |
+| 24 | Disabled:Script Enforcement |
+| 25 | Required:Enforce Store Applications |
+| 26 | Enabled: Host Policy Enforcement |
+| 27 |Enabled:Managed Installer  |
+| 28 |Enabled:Update Policy No Reboot |
+
 ## Appendix
 A list of other relevant event IDs and their corresponding description.
 
