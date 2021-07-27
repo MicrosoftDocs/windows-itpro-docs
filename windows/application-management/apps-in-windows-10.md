@@ -41,6 +41,8 @@ Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
 
 Here are the provisioned Windows apps in Windows 10 versions 1803, 1809, 1903, 1909, and 2004.
 
+<br/>
+
 | Package name                                 | App name                                                                                                           | 1803 | 1809 | 1903 | 1909 | 2004 | Uninstall through UI? |
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|:----:|:----:|:----:|:----:|:----:|:---------------------:|
 | Microsoft.3DBuilder                          | [3D Builder](ms-windows-store://pdp/?PFN=Microsoft.3DBuilder_8wekyb3d8bbwe)                                        |      |      |      |      |      |          Yes          |
@@ -99,6 +101,7 @@ You can list all system apps with this PowerShell command:
 ```Powershell
 Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | Sort Name | Format-Table Name, InstallLocation
 ```
+<br/>
 
 | Name                             | Package Name                                | 1709 | 1803 | 1809 |Uninstall through UI? |
 |----------------------------------|---------------------------------------------|:-----:|:----:|:----:|-----------------------|
@@ -150,6 +153,7 @@ Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | 
 
 Here are the typical installed Windows apps in Windows 10 versions 1709, 1803, and 1809.
 
+<br/>
 
 |         Name          |                Full name                 | 1709 | 1803 | 1809 | Uninstall through UI? |
 |-----------------------|------------------------------------------|:----:|:----:|:----:|:---------------------:|
