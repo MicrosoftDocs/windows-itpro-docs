@@ -777,7 +777,7 @@ The following process describes how Azure AD conditional access works:
 13. If the device is compliant and the user is authorized, an access token is generated.
 14. User can access the corporate managed asset.
 
-For more information about Azure AD join, see the [Azure AD & Windows 10: Better Together for Work or School](https://go.microsoft.com/fwlink/p/?LinkId=691619) white paper.
+For more information about Azure AD join, see [Azure AD & Windows 10: Better Together for Work or School](https://go.microsoft.com/fwlink/p/?LinkId=691619), a white paper.
 
 Conditional access control is a topic that many organizations and IT pros may not know as well as they should. The different attributes that describe a user, a device, compliance, and context of access are very powerful when used with a conditional access engine. Conditional access control is an essential step that helps organizations secure their environment.
 
