@@ -93,6 +93,5 @@ When you receive a signed email, the app provide feature to install correspondin
 
 3.  Tap **Install.**
 
-    ![message security information](images/installcert.png)
-    :::image type="content" alt-text="Image alt text." source="/media/image-file-inline.png" lightbox="media/image-file-expanded.png":::
+	:::image type="content" alt-text="message security information" source="images/installcert.png":::
  
