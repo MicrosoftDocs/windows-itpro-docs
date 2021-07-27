@@ -44,8 +44,10 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
 
 ## Configure the MDM or MAM provider
 
-1. Sign in to the Azure portal. 
+1. Sign in to the Azure portal.
+
 2. Click **Azure Active Directory** > **Mobility (MDM and MAM)** > **Microsoft Intune**.
+
 3. Click **Restore Default URLs** or enter the settings for MDM or MAM user scope and click **Save**:
 
    ![Configure MDM or MAM provider](images/mobility-provider.png)
@@ -112,17 +114,23 @@ If you don't know the Store app publisher or product name, you can find them by 
     The API runs and opens a text editor with the app details.
 
     ```json
-        {
-            "packageIdentityName": "Microsoft.MicrosoftPowerBIForWindows",
-            "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
-        }
+	{
+		"packageIdentityName": "Microsoft.MicrosoftPowerBIForWindows",
+		"publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+	}
     ```
 
 4.  Copy the `publisherCertificateName` value into the **Publisher** box and copy the `packageIdentityName` value into the **Name** box of Intune.
 
     >[!Important]
-    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
-    <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
+    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.
+	>
+	> For example:
+	>
+	> ```json
+	> {
+	>     "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+	> }
 
 
 > [!NOTE]
@@ -143,8 +151,14 @@ If you don't know the Store app publisher or product name, you can find them by 
 8. Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
 
     >[!Important]
-    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
-    <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
+    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.
+	>
+	> For example:
+	>
+	> ```json
+	> {
+	>     "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+	> }
 
 ### Add Desktop apps
 
@@ -509,10 +523,10 @@ Classless Inter-Domain Routing (CIDR) notation isn’t supported.
 
 Separate multiple ranges with the "," delimiter. 
 
-**Starting IPv4 Address:** 3.4.0.1
-**Ending IPv4 Address:** 3.4.255.254
-**Custom URI:** 3.4.0.1-3.4.255.254,
-<br>10.0.0.1-10.255.255.254
+**Starting IPv4 Address:** 3.4.0.1<br/>
+**Ending IPv4 Address:** 3.4.255.254<br/>
+**Custom URI:** 3.4.0.1-3.4.255.254,<br/>
+10.0.0.1-10.255.255.254
 
 ### IPv6 ranges
 
@@ -524,8 +538,8 @@ Classless Inter-Domain Routing (CIDR) notation isn’t supported.
 
 Separate multiple ranges with the "," delimiter.
 
-**Starting IPv6 Address:** 2a01:110::
-**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff
+**Starting IPv6 Address:** 2a01:110::<br/>
+**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br/>
 **Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 ### Neutral resources
@@ -550,7 +564,7 @@ Decide if you want Windows to look for additional network settings:
 After you create and deploy your WIP policy to your employees, Windows begins to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the Data Recovery Agent (DRA) certificate lets Windows use an included public key to encrypt the local data while you maintain the private key that can unencrypt the data.
 
 >[!Important]
->Using a DRA certificate isn’t mandatory. However, we strongly recommend it. For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](/previous-versions/tn-archive/cc512680(v=technet.10)) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate) topic.
+>Using a DRA certificate isn’t mandatory. However, we strongly recommend it. For more info about how to find and export your data recovery certificate, see [Data Recovery and Encrypting File System (EFS)](/previous-versions/tn-archive/cc512680(v=technet.10)). For more info about creating and verifying your EFS DRA certificate, see [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](/windows/threat-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate).
 
 **To upload your DRA certificate**
 1. From the **App policy** blade, click the name of your policy, and then click **Advanced settings** from the menu that appears.
