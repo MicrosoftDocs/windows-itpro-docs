@@ -187,24 +187,28 @@ For this example, we're going to add Internet Explorer, a desktop app, to the **
 
 If you're unsure about what to include for the publisher, you can run this PowerShell command:
 
-```ps1
+```powershell
 Get-AppLockerFileInformation -Path "<path of the exe>"
 ```
+
 Where `"<path of the exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Internet Explorer\iexplore.exe"`.
 
 In this example, you'd get the following info:
 
-``` json
+```console
 Path                   Publisher
 ----                   ---------
 %PROGRAMFILES%\INTERNET EXPLORER\IEXPLORE.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\INTERNET EXPLOR...
 ```
+
 Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter in the **Publisher Name** box.
 
 ### Add an AppLocker policy file
+
 For this example, we're going to add an AppLocker XML file to the **App Rules** list. You'll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](../../threat-protection/windows-defender-application-control/applocker/applocker-overview.md) content.
 
 **To create an app rule and xml file using the AppLocker tool**
+
 1.  Open the Local Security Policy snap-in (SecPol.msc).
 
 2.  In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
@@ -333,7 +337,7 @@ We recommend that you start with **Silent** or **Override** while verifying with
 |Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would've been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still blocked.|
 |Off (not recommended) |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn't automatically reapplied if you turn WIP protection back on.|
 
-![Create Configuration Item wizard, choose your WIP-protection level](images/wip-configmgr-appmgmt.png)
+:::image type="content" alt-text="Create Configuration Item wizard, choose your WIP-protection level" source="images/wip-configmgr-appmgmt.png":::
 
 ## Define your enterprise-managed identity domains
 Corporate identity, usually expressed as your primary internet domain (for example, contoso.com), helps to identify and tag your corporate data from apps you've marked as protected by WIP. For example, emails using contoso.com are identified as being corporate and are restricted by your Windows Information Protection policies.
@@ -412,7 +416,7 @@ There are no default locations included with WIP, you must add each of your netw
 
 4. Decide if you want to Windows to look for additional network settings and if you want to show the WIP icon on your corporate files while in File Explorer.
 
-   ![Create Configuration Item wizard, Add whether to search for additional network settings](images/wip-configmgr-optsettings.png)
+   :::image type="content" alt-text="Create Configuration Item wizard, Add whether to search for additional network settings" source="images/wip-configmgr-optsettings.png":::
 
    - **Enterprise Proxy Servers list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the proxy servers you specified in the network boundary definition as the complete list of proxy servers available on your network. If you clear this box, Windows will search for additional proxy servers in your immediate network. Not configured is the default option.
 
