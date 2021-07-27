@@ -1,6 +1,6 @@
 ---
 title: Configure S/MIME for Windows 10
-description: S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients with a digital ID, aka a certificate, can read them.
+description: S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients with a digital ID, also known as a certificate, can read them.
 ms.assetid: 7F9C2A99-42EB-4BCC-BB53-41C04FBBBF05
 ms.reviewer: 
 keywords: encrypt, digital signature
@@ -47,32 +47,37 @@ A digitally signed message reassures the recipient that the message hasn't been 
 ## Choose S/MIME settings
 
 On the device, perform the following steps: (add select certificate)
+
 1.  Open the Mail app. (In Windows 10 Mobile, the app is Outlook Mail.)
+
 2.  Open **Settings** by tapping the gear icon on a PC, or the ellipsis (...) and then the gear icon on a phone.
 
-    ![settings icon in mail app](images/mailsettings.png)
+	:::image type="content" alt-text="settings icon in mail app" source="images/mailsettings.png" lightbox="images/mailsettings.png":::
 
 3.  Tap **Email security**.
 
-    ![email security settings](images/emailsecurity.png)
+	:::image type="content" alt-text="email security settings" source="images/emailsecurity.png" lightbox="images/emailsecurity.png":::
 
 4.  In **Select an account**, select the account for which you want to configure S/MIME options.
+
 5.  Make a certificate selection for digital signature and encryption.
 
     -   Select **Automatically** to let the app choose the certificate.
     -   Select **Manually** to specify the certificate yourself from the list of valid certificates on the device.
 6.  (Optional) Select **Always sign with S/MIME**, **Always encrypt with S/MIME**, or both, to automatically digitally sign or encrypt all outgoing messages.
 
-    >**Note:**  The option to sign or encrypt can be changed for individual messages, unless EAS policies prevent it.
+    > [!NOTE]
+    > The option to sign or encrypt can be changed for individual messages, unless EAS policies prevent it.
      
 7.  Tap the back arrow.
 
 ## Encrypt or sign individual messages
+
 1.  While composing a message, choose **Options** from the ribbon. On phone, **Options** can be accessed by tapping the ellipsis (...).
 
 2.  Use **Sign** and **Encrypt** icons to turn on digital signature and encryption for this message.
 
-    ![sign or encrypt message](images/signencrypt.png)
+	:::image type="content" alt-text="sign or encrypt message" source="images/signencrypt.png" lightbox="images/signencrypt.png":::
 
 ## Read signed or encrypted messages
 
@@ -83,9 +88,11 @@ When you receive an encrypted message, the mail app will check whether there is 
 When you receive a signed email, the app provide feature to install corresponding encryption certificate on your device if the certificate is available. This certificate can then be used to send encrypted email to this person.
 
 1.  Open a signed email.
+
 2.  Tap or click the digital signature icon in the reading pane.
+
 3.  Tap **Install.**
 
     ![message security information](images/installcert.png)
- 
+    :::image type="content" alt-text="Image alt text." source="/media/image-file-inline.png" lightbox="media/image-file-expanded.png":::
  
