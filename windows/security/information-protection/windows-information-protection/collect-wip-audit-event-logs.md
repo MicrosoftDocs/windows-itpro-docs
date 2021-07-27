@@ -188,23 +188,24 @@ You can collect audit logs using Azure Monitor. See [Windows event log data sour
 
 3.  Download Microsoft [Monitoring Agent](/azure/azure-monitor/platform/agent-windows#install-the-agent-using-dsc-in-azure-automation).
 
-4.  To get MSI for Intune installation as stated in the Azure Monitor article, extract: MMASetup-.exe /c /t:
-Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary key. More information on Workspace ID and Primary key can be found in **Log Analytics** > **Advanced Settings**.
+4.  To get MSI for Intune installation as stated in the Azure Monitor article, extract: `MMASetup-.exe /c /t:`
 
-5.  To deploy MSI via Intune, in installation parameters add: /q /norestart NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE=0 OPINSIGHTS_WORKSPACE_ID=<WORKSPACE_ID> OPINSIGHTS_WORKSPACE_KEY=<WORKSPACE_KEY> AcceptEndUserLicenseAgreement=1
+	Install Microsoft Monitoring Agent to WIP devices using Workspace ID and Primary key. More information on Workspace ID and Primary key can be found in **Log Analytics** > **Advanced Settings**.
 
->[!NOTE]
->Replace <WORKSPACE_ID> & <WORKSPACE_KEY> received from step 5. In installation parameters, don't place <WORKSPACE_ID> & <WORKSPACE_KEY> in quotes ("" or '').
+5.  To deploy MSI via Intune, in installation parameters add: `/q /norestart NOAPM=1 ADD_OPINSIGHTS_WORKSPACE=1 OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE=0 OPINSIGHTS_WORKSPACE_ID=<WORKSPACE_ID> OPINSIGHTS_WORKSPACE_KEY=<WORKSPACE_KEY> AcceptEndUserLicenseAgreement=1`
+
+	>[!NOTE]
+	>Replace <WORKSPACE_ID> & <WORKSPACE_KEY> received from step 5. In installation parameters, don't place <WORKSPACE_ID> & <WORKSPACE_KEY> in quotes ("" or '').
 
 6. After the agent is deployed, data will be received within approximately 10 minutes.
 
 7. To search for logs, go to **Log Analytics workspace** > **Logs**, and type **Event** in search.
 
-***Example***
+	***Example***
 
-```console
-Event | where EventLog == "Microsoft-Windows-EDP-Audit-TCB/Admin"
-```
+	```console
+	Event | where EventLog == "Microsoft-Windows-EDP-Audit-TCB/Admin"
+	```
 
 ## Additional resources
 -   [How to deploy app via Intune](/intune/apps-add)
