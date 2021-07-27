@@ -29,7 +29,7 @@ ms.topic: article
 
 ## About SetupDiag
 
-<I>Current downloadable version of SetupDiag: 1.6.1.0</I>
+<I>Current downloadable version of SetupDiag: 1.6.2107.27002</I>
 >Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
@@ -49,7 +49,7 @@ When run by Windows Setup, the following [parameters](#parameters) are used:
 - /Output:%windir%\logs\SetupDiag\SetupDiagResults.xml
 - /RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results
 
-The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.  Please note that this is not the same as the default registry path when SetupDiag is run manually. When SetupDiag is run manually, and the /RegPath parameter is not specificed, data is stored in the registry at HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag.
+The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.  Please note that this is not the same as the default registry path when SetupDiag is run manually. When SetupDiag is run manually, and the /RegPath parameter is not specified, data is stored in the registry at HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag.
 
 > [!IMPORTANT]
 > When SetupDiag indicates that there were multiple failures, the last failure in the log file is typically the fatal error, not the first one.
