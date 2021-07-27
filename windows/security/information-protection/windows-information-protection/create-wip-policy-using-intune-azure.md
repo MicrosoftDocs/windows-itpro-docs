@@ -509,9 +509,9 @@ Classless Inter-Domain Routing (CIDR) notation isn’t supported.
 
 Separate multiple ranges with the "," delimiter. 
 
-**Starting IPv4 Address:** 3.4.0.1
-**Ending IPv4 Address:** 3.4.255.254
-**Custom URI:** 3.4.0.1-3.4.255.254,
+**Starting IPv4 Address:** 3.4.0.1<br/>
+**Ending IPv4 Address:** 3.4.255.254<br/>
+**Custom URI:** 3.4.0.1-3.4.255.254,<br/>
 <br>10.0.0.1-10.255.255.254
 
 ### IPv6 ranges
@@ -524,8 +524,8 @@ Classless Inter-Domain Routing (CIDR) notation isn’t supported.
 
 Separate multiple ranges with the "," delimiter.
 
-**Starting IPv6 Address:** 2a01:110::
-**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff
+**Starting IPv6 Address:** 2a01:110::<br/>
+**Ending IPv6 Address:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br/>
 **Custom URI:** 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff
 
 ### Neutral resources
