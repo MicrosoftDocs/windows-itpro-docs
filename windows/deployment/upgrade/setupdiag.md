@@ -29,7 +29,7 @@ ms.topic: article
 
 ## About SetupDiag
 
-<I>Current downloadable version of SetupDiag: 1.6.1.0</I>
+<I>Current downloadable version of SetupDiag: 1.6.2107.27002</I>
 >Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
