@@ -44,8 +44,10 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
 
 ## Configure the MDM or MAM provider
 
-1. Sign in to the Azure portal. 
+1. Sign in to the Azure portal.
+
 2. Click **Azure Active Directory** > **Mobility (MDM and MAM)** > **Microsoft Intune**.
+
 3. Click **Restore Default URLs** or enter the settings for MDM or MAM user scope and click **Save**:
 
    ![Configure MDM or MAM provider](images/mobility-provider.png)
@@ -112,10 +114,10 @@ If you don't know the Store app publisher or product name, you can find them by 
     The API runs and opens a text editor with the app details.
 
     ```json
-        {
-            "packageIdentityName": "Microsoft.MicrosoftPowerBIForWindows",
-            "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
-        }
+	{
+		"packageIdentityName": "Microsoft.MicrosoftPowerBIForWindows",
+		"publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
+	}
     ```
 
 4.  Copy the `publisherCertificateName` value into the **Publisher** box and copy the `packageIdentityName` value into the **Name** box of Intune.
@@ -143,8 +145,14 @@ If you don't know the Store app publisher or product name, you can find them by 
 8. Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
 
     >[!Important]
-    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.<br><br>For example:<br>
-    <code>{<br>"windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",<br>}</code>
+    >The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that’s using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as `CN=` followed by the `windowsPhoneLegacyId`.
+	>
+	> For example:
+	>
+	> ```json
+	> {
+	>     "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+	> }
 
 ### Add Desktop apps
 
