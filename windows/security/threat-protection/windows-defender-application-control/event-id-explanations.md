@@ -87,7 +87,7 @@ reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x
 ```
 
 ## System Integrity Policy Options
-Below are the policy options in event 3099.
+The WDAC policy rule-option values can be derived from the "Options" field in the Details section of the Code integrity 3099 event. To parse the values, first convert the hex value to binary. Next, use the bit addresses and their values from the table below to determine the state of each [policy rule-option](select-types-of-rules-to-create#table-1-windows-defender-application-control-policy---rule-options).
 
 | Bit Address | Policy Rule Option |
 |-------|------|
@@ -95,13 +95,13 @@ Below are the policy options in event 3099.
 | 3 | Enabled:Boot Menu Protection |
 | 4 | Enabled:Intelligent Security Graph Authorization |
 | 5 | Enabled:Invalidate EAs on Reboot |
-| 7 |Required:WHQL |
+| 7 | Required:WHQL |
 | 8 | Enabled:Developer Dynamic Code Security |
-| 9 | Enabled: No Revalidation Upon Refresh |
+| 9 | Enabled:No Revalidation Upon Refresh |
 | 10 | Enabled:Allow Supplemental Policies |
 | 11 | Disabled:Runtime FilePath Rule Protection |
-| 13 | Enabled: Revoked Expired As Unsigned |
-| 16 |Enabled:Audit Mode (Default) |
+| 13 | Enabled:Revoked Expired As Unsigned |
+| 16 | Enabled:Audit Mode (Default) |
 | 17 | Disabled:Flight Signing |
 | 18 | Enabled:Inherit Default Policy |
 | 19 | Enabled:Unsigned System Integrity Policy (Default) |
@@ -111,9 +111,9 @@ Below are the policy options in event 3099.
 | 23 | Enabled:Advanced Boot Options Menu |
 | 24 | Disabled:Script Enforcement |
 | 25 | Required:Enforce Store Applications |
-| 26 | Enabled: Host Policy Enforcement |
-| 27 |Enabled:Managed Installer  |
-| 28 |Enabled:Update Policy No Reboot |
+| 26 | Enabled:Host Policy Enforcement |
+| 27 | Enabled:Managed Installer  |
+| 28 | Enabled:Update Policy No Reboot |
 
 ## Appendix
 A list of other relevant event IDs and their corresponding description.
