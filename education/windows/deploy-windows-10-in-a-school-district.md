@@ -1637,12 +1637,12 @@ You’re ready to deploy Windows 10 to faculty and student devices. You must com
 
 Prior to deployment of Windows 10, complete the tasks in Table 18. Most of these tasks are already complete, but use this step to make sure.
 
-|Task|   |
-|----|----|
-|1. |Ensure that the target devices have sufficient system resources to run Windows 10.|
-|2. |Identify the necessary devices drivers, and then import them into the MDT deployment share or Microsoft Endpoint Configuration Manager.|
-|3. |For each Microsoft Store and Windows desktop app, create an MDT application or Configuration Manager application.|
-|4. |Notify the students and faculty about the deployment.|
+|    | Task |
+|:---|:---|
+|**1.** |Ensure that the target devices have sufficient system resources to run Windows 10.|
+|**2.** |Identify the necessary devices drivers, and then import them into the MDT deployment share or Microsoft Endpoint Configuration Manager.|
+|**3.** |For each Microsoft Store and Windows desktop app, create an MDT application or Configuration Manager application.|
+|**4.** |Notify the students and faculty about the deployment.|
 
 *Table 18. Deployment preparation checklist*
 
@@ -1739,7 +1739,7 @@ Table 19 lists the school and individual classroom maintenance tasks, the resour
 <td>Verify that Windows Update is active and current with operating system and software updates.<br/><br/>
 For more information about completing this task when you have:
 <ul>
-<li>Intune, see <a href="https://docs.microsoft.com/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune" data-raw-source="[Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)">Keep Windows PCs up to date with software updates in Microsoft Intune</a>.</li>
+<li>Intune, see <a href="/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune" data-raw-source="[Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)">Keep Windows PCs up to date with software updates in Microsoft Intune</a>.</li>
 <li>Group Policy, see <a href="/windows/deployment/update/waas-manage-updates-wufb" data-raw-source="[Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb)">Windows Update for Business</a>.</li>
 <li>WSUS, see <a href="/windows/deployment/deploy-whats-new" data-raw-source="[Windows Server Update Services](/windows/deployment/deploy-whats-new)">Windows Server Update Services</a>.</li>
 <li>Neither Intune, Group Policy, nor WSUS, see “Install, upgrade, &amp; activate” in <a href="https://support.microsoft.com/products/windows?os=windows-10" data-raw-source="[Windows 10 help](https://support.microsoft.com/products/windows?os=windows-10)">Windows 10 help</a>.</li>

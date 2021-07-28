@@ -28,7 +28,7 @@ Applies to:
 - Azure AD joined deployments
 - Windows 10, version 1803 and later
 
-PIN reset on Azure AD joined devices uses a flow called web sign-in to authenticate the user above lock. Web sign in only allows navigation to specific domains. If it attempts to navigate to a domain that is not allowed it will shows a page with the "We can't open that page right now" error message.
+PIN reset on Azure AD joined devices uses a flow called web sign-in to authenticate the user above lock. Web sign in only allows navigation to specific domains. If it attempts to navigate to a domain that is not allowed it will shows a page with the error message "We can't open that page right now".
 
 ### Identifying Azure AD joined PIN Reset Allowed Domains Issue
 
@@ -36,7 +36,7 @@ The user can launch the PIN reset flow from above lock using the "I forgot my PI
 
 In federated environments authentication may be configured to route to AD FS or a third party identity provider. If the PIN reset flow is launched and attempts to navigate to a federated identity provider server page, it will fail and display the "We can't open that page right now" error if the domain for the server page is not included in an allow list.
 
-If you are a customer of Azure US Government cloud, PIN reset will also attempt to navigate to a domain that is not included in the default allow list. This results in the "We can't open that page right now" being shown.
+If you are a customer of Azure US Government cloud, PIN reset will also attempt to navigate to a domain that is not included in the default allow list. This results in "We can't open that page right now".
 
 ### Resolving Azure AD joined PIN Reset Allowed Domains Issue
 
@@ -76,26 +76,27 @@ Applies to:
 Windows Hello for Business uses smart card based authentication for many operations. Smart card has special guidelines when using a third-party CA for certificate issuance, some of which apply to the domain controllers. Not all Windows Hello for Business deployment types require these configurations. Accessing on-premises resources from an Azure AD Joined device does require special configuration when using a third-party CA to issue domain controller certificates.
 
 For more information, read [Guidelines for enabling smart card logon with third-party certification authorities](
-https://docs.microsoft.com/troubleshoot/windows-server/windows-security/enabling-smart-card-logon-third-party-certification-authorities).
+/troubleshoot/windows-server/windows-security/enabling-smart-card-logon-third-party-certification-authorities).
 
 ### Identifying On-premises Resource Access Issues with Third-Party CAs
 
 This issue can be identified using network traces or Kerberos logging from the client. In the network trace, the client will fail to place a TGS_REQ request when a user attempts to access a resource. On the client, this can be observed in the Kerberos operation event log under **Application and Services/Microsoft/Windows/Security-Kerberos/Operational**. These logs are default disabled. The failure event for this case will include the following information:
 
-    Log Name:      Microsoft-Windows-Kerberos/Operational
-    Source:        Microsoft-Windows-Security-Kerberos
-    Event ID:      107
-    GUID:          {98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1} 
-    Task Category: None
-    Level:         Error
-    Keywords:      
-    User:          SYSTEM
-    Description:
+```console
+Log Name:      Microsoft-Windows-Kerberos/Operational
+Source:        Microsoft-Windows-Security-Kerberos
+Event ID:      107
+GUID:          {98e6cfcb-ee0a-41e0-a57b-622d4e1b30b1} 
+Task Category: None
+Level:         Error
+Keywords:      
+User:          SYSTEM
+Description:
 
-    The Kerberos client received a KDC certificate that does not have a matched domain name.
-    
-    Expected Domain Name: ad.contoso.com
-    Error Code: 0xC000006D
+The Kerberos client received a KDC certificate that does not have a matched domain name.
+Expected Domain Name: ad.contoso.com
+Error Code: 0xC000006D
+```
 
 ### Resolving On-premises Resource Access Issue with Third-Party CAs
 
@@ -144,65 +145,75 @@ AD FS running on Windows Server 2019 fails to complete device authentication pro
 
 The provisioning experience for Windows Hello for Business will launch if a set of prerequisite checks done by the client are successful. The result of the provisioningAdmin checks is available in event logs under Microsoft-Windows-User Device Registration. If provisioning is blocked because device authentication has not successfully occurred, there will be an event ID 362 in the logs that states that *User has successfully authenticated to the enterprise STS: No*.
 
-    Log Name:      Microsoft-Windows-User Device Registration/Admin
-    Source:        Microsoft-Windows-User Device Registration
-    Date:          <Date and time>
-    Event ID:      362
-    Task Category: None
-    Level:         Warning
-    Keywords:     
-    User:          <User SID>
-    Computer:      <Computer name>
-    Description:
-    Windows Hello for Business provisioning will not be launched.
-    Device is AAD joined ( AADJ or DJ++ ): Yes
-    User has logged on with AAD credentials: Yes
-    Windows Hello for Business policy is enabled: Yes
-    Windows Hello for Business post-logon provisioning is enabled: Yes
-    Local computer meets Windows hello for business hardware requirements: Yes
-    User is not connected to the machine via Remote Desktop: Yes
-    User certificate for on premise auth policy is enabled: Yes
-    Enterprise user logon certificate enrollment endpoint is ready: Not Tested
-    Enterprise user logon certificate template is : No ( 1 : StateNoPolicy ) 
-    User has successfully authenticated to the enterprise STS: No
-    Certificate enrollment method: enrollment authority
-    See https://go.microsoft.com/fwlink/?linkid=832647 for more details.
+```console
+Log Name:      Microsoft-Windows-User Device Registration/Admin
+Source:        Microsoft-Windows-User Device Registration
+Date:          <Date and time>
+Event ID:      362
+Task Category: None
+Level:         Warning
+Keywords:     
+User:          <User SID>
+Computer:      <Computer name>
+Description:
+Windows Hello for Business provisioning will not be launched.
+Device is AAD joined ( AADJ or DJ++ ): Yes
+User has logged on with AAD credentials: Yes
+Windows Hello for Business policy is enabled: Yes
+Windows Hello for Business post-logon provisioning is enabled: Yes
+Local computer meets Windows hello for business hardware requirements: Yes
+User is not connected to the machine via Remote Desktop: Yes
+User certificate for on premise auth policy is enabled: Yes
+Enterprise user logon certificate enrollment endpoint is ready: Not Tested
+Enterprise user logon certificate template is : No ( 1 : StateNoPolicy ) 
+User has successfully authenticated to the enterprise STS: No
+Certificate enrollment method: enrollment authority
+See https://go.microsoft.com/fwlink/?linkid=832647 for more details.
+```
 
 If a device has recently been joined to a domain, then there may be a delay before the device authentication occurs. If the failing state of this prerequisite check persists, then it can indicate an issue with the AD FS configuration.
 
-If this AD FS scope issue is present, event logs on the AD FS server will indicate an authentication failure from the client. This error will be logged in event logs under AD FS/Admin as event ID 1021 and the event will specify that the client is forbidden access to resource 'http<span>://schemas.microsoft.com/ws/2009/12/identityserver/selfscope</span>' with scope 'ugs':
+If this AD FS scope issue is present, event logs on the AD FS server will indicate an authentication failure from the client. This error will be logged in event logs under AD FS/Admin as event ID 1021 and the event will specify that the client is forbidden access to resource `http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope` with scope 'ugs':
 
-    Log Name:      AD FS/Admin
-    Source:        AD FS
-    Date:          <Date and time>
-    Event ID:      1021
-    Task Category: None
-    Level:         Error
-    Keywords:      AD FS
-    User:          <ADFS service Account>
-    Computer:      <Date and time>
-    Description:
-    Encountered error during OAuth token request.
-    Additional Data
-    Exception details:
-    Microsoft.IdentityServer.Web.Protocols.OAuth.Exceptions.OAuthUnauthorizedClientException: MSIS9368: Received invalid OAuth request. The client '38aa3b87-a06d-4817-b275-7a316988d93b' is forbidden to access the resource 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' with scope 'ugs'.
+```console
+Log Name:      AD FS/Admin
+Source:        AD FS
+Date:          <Date and time>
+Event ID:      1021
+Task Category: None
+Level:         Error
+Keywords:      AD FS
+User:          <ADFS service Account>
+Computer:      <Date and time>
+Description:
+Encountered error during OAuth token request.
+Additional Data
+Exception details:
+Microsoft.IdentityServer.Web.Protocols.OAuth.Exceptions.OAuthUnauthorizedClientException: MSIS9368: Received invalid OAuth request. The client '38aa3b87-a06d-4817-b275-7a316988d93b' is forbidden to access the resource 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' with scope 'ugs'.
        at Microsoft.IdentityServer.Web.Protocols.OAuth.OAuthProtocolContext.ValidateScopes(String scopeParameter, String clientId, String relyingPartyId)
        at Microsoft.IdentityServer.Web.Protocols.OAuth.OAuthToken.OAuthJWTBearerRequestContext.ValidateCore()
+```
 
 ### Resolving Certificate Trust with AD FS 2019 Enrollment Issue
 
 This issue is fixed in Windows Server, version 1903 and later. For Windows Server 2019, this issue can be remediated by adding the ugs scope manually.
 
-1. Launch AD FS management console. Browse to "Services > Scope Descriptions".
-2. Right click "Scope Descriptions" and select "Add Scope Description".
-3. Under name type "ugs" and Click Apply > OK.
+1. Launch AD FS management console. Browse to **Services > Scope Descriptions**.
+
+2. Right click **Scope Descriptions** and select **Add Scope Description**.
+
+3. Under name type **ugs** and click **Apply > OK**.
+
 4. Launch PowerShell as an administrator.
+
 5. Get the ObjectIdentifier of the application permission with the ClientRoleIdentifier parameter equal to "38aa3b87-a06d-4817-b275-7a316988d93b":
 
-``` PowerShell
-(Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
-```
+   ```powershell
+   (Get-AdfsApplicationPermission -ServerRoleIdentifiers 'http://schemas.microsoft.com/ws/2009/12/identityserver/selfscope' | ?{ $_.ClientRoleIdentifier -eq '38aa3b87-a06d-4817-b275-7a316988d93b' }).ObjectIdentifier
+   ```
 
 6. Execute the command `Set-AdfsApplicationPermission -TargetIdentifier <ObjectIdentifier from step 5> -AddScope 'ugs'`.
+
 7. Restart the AD FS service.
+
 8. On the client: Restart the client. User should be prompted to provision Windows Hello for Business.

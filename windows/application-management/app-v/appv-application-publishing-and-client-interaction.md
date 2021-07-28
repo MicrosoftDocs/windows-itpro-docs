@@ -101,25 +101,25 @@ The App-V Client manages the following two file-based locations:
 
 The locations described in this table can be found in the %programdata%\Microsoft\AppV\Client\Catalog\ folder.
 
-|||
-|---|---|
-|Description|Stores package documents that are available to users on the machine when packages are added and published. However, if a package is “global” at publishing time, the integrations are available to all users.<br></br>If a package is non-global, the integrations are published only for specific users, but there are still global resources that are modified and visible to anyone on the client computer (such as when the package directory is in a shared disk location).<br></br>If a package is available to a user on the computer (global or non-global), the manifest is stored in the Machine Catalog. When a package is published globally, there is a Dynamic Configuration file, stored in the Machine Catalog; therefore, the determination of whether a package is global is defined according to whether there is a policy file (UserDeploymentConfiguration file) in the Machine Catalog.|
-|Default storage location|%programdata%\Microsoft\AppV\Client\Catalog\<br></br>This location is not the same as the Package Store location. The Package Store is the golden or pristine copy of the package files.|
-|Files in the machine catalog|- Manifest.xml<br>- DeploymentConfiguration.xml<br>- UserManifest.xml (Globally Published Package)<br>- UserDeploymentConfiguration.xml (Globally Published Package)|
-|Additional machine catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned previously as the default storage location:<br></br>%programdata%\Microsoft\AppV\Client\Catalog\PackageGroups\ConGroupGUID\ConGroupVerGUID|
-|Additional files in the machine catalog when the package is part of a connection group|- PackageGroupDescriptor.xml<br>- UserPackageGroupDescriptor.xml (globally published Connection Group)|
+|    | Location |
+|:---|:---|
+|**Description**|Stores package documents that are available to users on the machine when packages are added and published. However, if a package is “global” at publishing time, the integrations are available to all users.<br></br>If a package is non-global, the integrations are published only for specific users, but there are still global resources that are modified and visible to anyone on the client computer (such as when the package directory is in a shared disk location).<br></br>If a package is available to a user on the computer (global or non-global), the manifest is stored in the Machine Catalog. When a package is published globally, there is a Dynamic Configuration file, stored in the Machine Catalog; therefore, the determination of whether a package is global is defined according to whether there is a policy file (UserDeploymentConfiguration file) in the Machine Catalog.|
+|**Default storage location**|%programdata%\Microsoft\AppV\Client\Catalog\<br></br>This location is not the same as the Package Store location. The Package Store is the golden or pristine copy of the package files.|
+|**Files in the machine catalog**|- Manifest.xml<br>- DeploymentConfiguration.xml<br>- UserManifest.xml (Globally Published Package)<br>- UserDeploymentConfiguration.xml (Globally Published Package)|
+|**Additional machine catalog location, used when the package is part of a connection group**|The following location is in addition to the specific package location mentioned previously as the default storage location:<br></br>%programdata%\Microsoft\AppV\Client\Catalog\PackageGroups\ConGroupGUID\ConGroupVerGUID|
+|**Additional files in the machine catalog when the package is part of a connection group**|- PackageGroupDescriptor.xml<br>- UserPackageGroupDescriptor.xml (globally published Connection Group)|
 
 ### User catalog
 
 The locations described in this table can be found in the appdata\roaming\Microsoft\AppV\Client\Catalog\ folder.
 
-|||
-|---|---|
-|Description|Created during the publishing process. Contains information used for publishing the package, and for making sure that a package is provisioned to a specific user at launch. Created in a roaming location and includes user-specific publishing information.<br></br>When a package is published for a user, the policy file is stored in the User Catalog. At the same time, a copy of the manifest is also stored in the User Catalog. When a package entitlement is removed for a user, the relevant package files are removed from the User Catalog. Looking at the user catalog, an administrator can view the presence of a Dynamic Configuration file, which indicates that the package is entitled for that user.<br></br>For roaming users, the User Catalog needs to be in a roaming or shared location to preserve the legacy App-V behavior of targeting users by default. Entitlement and policy are tied to a user, not a computer, so they should roam with the user once they are provisioned.|
-|Default storage location|appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID|
-|Files in the user catalog|- UserManifest.xml<br>- DynamicConfiguration.xml or UserDeploymentConfiguration.xml|
-|Additional user catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned above:<br></br>appdata\roaming\Microsoft\AppV\Client\Catalog\PackageGroups\PkgGroupGUID\PkgGroupVerGUID|
-|Additional file in the machine catalog when the package is part of a connection group|UserPackageGroupDescriptor.xml|
+|| Location |
+|:---|:---|
+|**Description**|Created during the publishing process. Contains information used for publishing the package, and for making sure that a package is provisioned to a specific user at launch. Created in a roaming location and includes user-specific publishing information.<br></br>When a package is published for a user, the policy file is stored in the User Catalog. At the same time, a copy of the manifest is also stored in the User Catalog. When a package entitlement is removed for a user, the relevant package files are removed from the User Catalog. Looking at the user catalog, an administrator can view the presence of a Dynamic Configuration file, which indicates that the package is entitled for that user.<br></br>For roaming users, the User Catalog needs to be in a roaming or shared location to preserve the legacy App-V behavior of targeting users by default. Entitlement and policy are tied to a user, not a computer, so they should roam with the user once they are provisioned.|
+|**Default storage location**|appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID|
+|**Files in the user catalog**|- UserManifest.xml<br>- DynamicConfiguration.xml or UserDeploymentConfiguration.xml|
+|**Additional user catalog location, used when the package is part of a connection group**|The following location is in addition to the specific package location mentioned above:<br></br>appdata\roaming\Microsoft\AppV\Client\Catalog\PackageGroups\PkgGroupGUID\PkgGroupVerGUID|
+|**Additional file in the machine catalog when the package is part of a connection group**|UserPackageGroupDescriptor.xml|
 
 ### Shortcut backups
 
