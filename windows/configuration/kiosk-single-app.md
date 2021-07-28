@@ -22,11 +22,9 @@ ms.topic: article
 
 -   Windows 10 Pro, Enterprise, and Education
 
+A single-app kiosk uses the Assigned Access feature to run a single app above the lockscreen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk cannot do anything on the device outside of the kiosk app.
 
-
-|  |  |
---- | ---
-A single-app kiosk uses the Assigned Access feature to run a single app above the lockscreen.<br><br> When the kiosk account signs in, the app is launched automatically. The person using the kiosk cannot do anything on the device outside of the kiosk app. | ![Illustration of a single-app kiosk experience](images/kiosk-fullscreen-sm.png)
+![Illustration of a single-app kiosk experience](images/kiosk-fullscreen-sm.png)
 
 >[!IMPORTANT]
 >[User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.

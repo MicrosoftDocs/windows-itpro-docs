@@ -59,7 +59,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
    $WDACPolicy=$PolicyPath+$PolicyName+".xml"
    $WDACPolicyBin=$PolicyPath+$PolicyName+".bin"
 
-2. Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) to create a new WDAC policy by scanning the system for installed applications:
+2. Use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to create a new WDAC policy by scanning the system for installed applications:
 
    ```powershell
    New-CIPolicy -Level PcaCertificate -FilePath $WDACPolicy –UserPEs 3> CIPolicyLog.txt 
@@ -75,7 +75,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
    > 
    > - The preceding example includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
-3. Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
+3. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
 
    ```powershell
    ConvertFrom-CIPolicy $WDACPolicy $WDACPolicyBin
