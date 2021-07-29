@@ -75,7 +75,7 @@ Some things that you can check on the device are:
 -   Is SecureBoot supported and enabled?
 
 > [!NOTE]
->  Windows 11, Windows 10, Windows Server 2016 and Windows Server 2019 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1). TPM 2.0 requires UEFI firmware. A computer with legacy BIOS and TPM 2.0 won't work as expected.
+>  Windows 11, Windows 10, Windows Server 2016, and Windows Server 2019 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1). TPM 2.0 requires UEFI firmware. A computer with legacy BIOS and TPM 2.0 won't work as expected.
 
 ## Supported versions for device health attestation
 
