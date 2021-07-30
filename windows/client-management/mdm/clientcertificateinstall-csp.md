@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 02/28/2020
+ms.date: 07/30/2021
 ---
 
 # ClientCertificateInstall CSP
@@ -205,11 +205,8 @@ Supported operations are Add, Get, Delete, and Replace.
 Required. Specifies extended key usages. Subject to SCEP server configuration. The list of OIDs are separated by a plus <strong>+</strong>. For example, <em>OID1</em>+<em>OID2</em>+<em>OID3</em>.
 
 Data type is string.
-Required for enrollment. Specifies the key usage bits (0x80, 0x20, 0xA0, etc.) for the certificate in decimal format. The value should at least have the second (0x20), fourth (0x80) or both bits set. If the value doesn’t have those bits set, the configuration will fail.
 
-Data type is int.
-
-Supported operations are Add, Get, Delete, and Replace.
+Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-subjectname"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/SubjectName**  
 Required. Specifies the subject name. 
@@ -242,7 +239,9 @@ Supported operations are Add, Get, Delete, and Replace.
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-keyusage"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/KeyUsage**  
 Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for the certificate in decimal format. The value should at least have second (0x20) or forth (0x80) or both bits set. If the value doesn’t have those bits set, configuration will fail.
 
- Supported operations are Add, Get, Delete, and Replace. Value type is integer.
+Data type is int.
+
+Supported operations are Add, Get, Delete, and Replace. 
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-retrydelay"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/RetryDelay**  
 Optional. When the SCEP server sends a pending status, this value specifies the device retry waiting time in minutes.
