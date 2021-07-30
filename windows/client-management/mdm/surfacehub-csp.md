@@ -316,12 +316,12 @@ SurfaceHub
 <p style="margin-left: 20px">Invitations to collaborate from the Whiteboard app are not allowed.
 
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
-    
+
 <a href="" id="inboxapps-whiteboard-signindisabled"></a>**InBoxApps/Whiteboard/SigninDisabled**
 <p style="margin-left: 20px">Sign-ins from the Whiteboard app are not allowed.
 
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
-    
+
 <a href="" id="inboxapps-whiteboard-telemetrydisabled"></a>**InBoxApps/Whiteboard/TelemeteryDisabled**
 <p style="margin-left: 20px">Telemetry collection from the Whiteboard app is not allowed.
 
