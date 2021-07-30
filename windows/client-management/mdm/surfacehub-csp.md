@@ -295,7 +295,7 @@ SurfaceHub
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-currentbackgroundpath"></a>**InBoxApps/Welcome/CurrentBackgroundPath**
-<p style="margin-left: 20px">Background image for the welcome screen. To set this, specify an https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
+<p style="margin-left: 20px">Download location for image to be used as the background during user sessions and on the welcome screen. To set this, specify an https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
 
 <p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
