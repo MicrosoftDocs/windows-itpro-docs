@@ -28,7 +28,11 @@ This topic provides an overview of new solutions and online content related to d
 
 - For an all-up overview of new features in Windows 10, see [What's new in Windows 10](/windows/whats-new/index).
 
-## Latest news
+## [Preview] Windows Autopilot diagnostics page
+
+When you deploy Windows 11 with Autopilot, you can enable users to view additional information about the Autopilot provisioning process. A new **Windows Autopilot diagnostics Page** is available to provide IT admins and end users with a user-friendly view to troubleshoot Autopilot failures. For more information, see [Windows Autopilot: What's new](/mem/autopilot/windows-autopilot-whats-new#preview-windows-autopilot-diagnostics-page).
+
+## Windows 11
 
 Check out the following new articles about Windows 11:
 - [Overview of Windows 11](/windows/whats-new/windows-11)
@@ -37,7 +41,9 @@ Check out the following new articles about Windows 11:
 
 The [Windows ADK for Windows 11](/windows-hardware/get-started/adk-install) is available.<br>
 
-[SetupDiag](#setupdiag) is included with Windows 10, version 2004 and later.<br>
+## Deployment tools 
+
+[SetupDiag](#setupdiag) is included with Windows 10, version 2004 and later, and Windows 11.<br>
 New capabilities are available for [Delivery Optimization](#delivery-optimization) and [Windows Update for Business](#windows-update-for-business).<br>
 VPN support is added to [Windows Autopilot](#windows-autopilot)<br>
 An in-place upgrade wizard is available in [Configuration Manager](#microsoft-endpoint-configuration-manager).<br>
