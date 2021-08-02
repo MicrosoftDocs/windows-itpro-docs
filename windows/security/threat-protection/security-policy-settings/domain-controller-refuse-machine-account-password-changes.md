@@ -14,7 +14,6 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
 ms.technology: mde
 ---
 
@@ -31,17 +30,11 @@ This policy setting enables or disables blocking a domain controller from accept
 
 ### Possible values
 
--   Enabled
+-   **Enabled** When enabled, this setting does not allow a domain controller to accept any changes to a machine account's password.
 
-    When enabled, this setting does not allow a domain controller to accept any changes to a machine account's password.
+-   **Disabled** When disabled, this setting allows a domain controller to accept any changes to a machine account's password.
 
--   Disabled
-
-    When disabled, this setting allows a domain controller to accept any changes to a machine account's password.
-
--   Not defined
-
-    Same as Disabled.
+-   **Not defined** Same as Disabled.
 
 ### Best practices
 
@@ -63,13 +56,13 @@ Value Name: RefusePasswordChange
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
 | Server type or GPO | Default value |
-| - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not defined| 
-| DC Effective Default Settings | Disabled| 
-| Member Server Effective Default Settings | Disabled| 
-| Client Computer Effective Default Settings | Not applicable| 
+|---|---|
+| Default Domain Policy | Not defined | 
+| Default Domain Controller Policy | Not defined | 
+| Stand-Alone Server Default Settings | Not defined | 
+| DC Effective Default Settings | Disabled | 
+| Member Server Effective Default Settings | Disabled | 
+| Client Computer Effective Default Settings | Not applicable | 
  
 ## Policy management
 
