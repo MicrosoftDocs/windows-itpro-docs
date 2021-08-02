@@ -51,6 +51,13 @@ This policy setting enables or disables blocking a domain controller from accept
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
 
+The policy referenced configures the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \System\CurrentControlSet\Services\Netlogon\Parameters\
+
+Value Name: RefusePasswordChange
+
 ### Default values
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
