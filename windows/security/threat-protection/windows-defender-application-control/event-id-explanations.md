@@ -96,8 +96,6 @@ The WDAC policy rule-option values can be derived from the "Options" field in th
 | 4 | Enabled:Intelligent Security Graph Authorization |
 | 5 | Enabled:Invalidate EAs on Reboot |
 | 7 | Required:WHQL |
-| 8 | Enabled:Developer Dynamic Code Security |
-| 9 | Enabled:No Revalidation Upon Refresh |
 | 10 | Enabled:Allow Supplemental Policies |
 | 11 | Disabled:Runtime FilePath Rule Protection |
 | 13 | Enabled:Revoked Expired As Unsigned |
@@ -111,7 +109,6 @@ The WDAC policy rule-option values can be derived from the "Options" field in th
 | 23 | Enabled:Advanced Boot Options Menu |
 | 24 | Disabled:Script Enforcement |
 | 25 | Required:Enforce Store Applications |
-| 26 | Enabled:Host Policy Enforcement |
 | 27 | Enabled:Managed Installer  |
 | 28 | Enabled:Update Policy No Reboot |
 
