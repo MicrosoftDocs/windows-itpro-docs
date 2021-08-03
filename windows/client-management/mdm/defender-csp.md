@@ -137,7 +137,7 @@ The following table describes the supported values:
 | 7     | Remote access Trojan        |
 | 8     | Trojan                      |
 | 9     | Email flooder               |
-| 10    | Keylogger                   |
+| 10    | Key logger                   |
 | 11    | Dialer                      |
 | 12    | Monitoring software         |
 | 13    | Browser modifier            |
@@ -197,7 +197,7 @@ The following list shows the supported values:
 - 7 = Removed
 - 8 = Cleaned
 - 9 = Allowed
-- 10 = No Status ( Cleared)
+- 10 = No Status (Cleared)
 
 Supported operation is Get.
 
@@ -218,7 +218,7 @@ The following list shows the supported values:
 - 7 = Removed
 - 8 = Cleaned
 - 9 = Allowed
-- 10 = No Status ( Cleared)
+- 10 = No Status (Cleared)
 
 Supported operation is Get.
 
@@ -254,7 +254,7 @@ Supported operation is Get.
 
 The Network Protection Service is a network filter that helps to protect you against web-based malicious threats, including phishing and malware. The Network Protection service contacts the SmartScreen URL reputation service to validate the safety of connections to web resources. 
 The acceptable values for this parameter are:
-- 0: Disabled. The Network Protection service will not block navigations to malicious websites, or contact the SmartScreen URL reputation service. It will still send connection metadata to the antimalware engine if behavior monitoring is enabled, to enhance AV Detections.
+- 0: Disabled. The Network Protection service will not block navigation to malicious websites, or contact the SmartScreen URL reputation service. It will still send connection metadata to the antimalware engine if behavior monitoring is enabled, to enhance AV Detections.
 - 1: Enabled. The Network Protection service will block connections to malicious websites based on URL Reputation from the SmartScreen URL reputation service.
 - 2: AuditMode. As above, but the Network Protection service will not block connections to malicious websites, but will instead log the access to the event log. 
 
@@ -305,7 +305,7 @@ Network Protection inspects UDP connections allowing us to find malicious DNS or
 
 <a href="" id="enablenetworkprotection-disableinboundconnectionfiltering"></a>**EnableNetworkProtection/DisableInboundConnectionFiltering**
 
-Network Protection inspects and can block both connections that originates from the host machine, as well as those that originates from outside the machine. To have network connection to inspect only outbound connections, set this configuration to "$true".
+Network Protection inspects and can block both connections that originate from the host machine, as well as those that originates from outside the machine. To have network connection to inspect only outbound connections, set this configuration to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -315,7 +315,7 @@ Network Protection inspects and can block both connections that originates from 
 
 <a href="" id="enablenetworkprotection-enablednssinkhole"></a>**EnableNetworkProtection/EnableDnsSinkhole**
 
-Network Protection can inspect the DNS traffic of a machine and, in conjunction with behavior monitoring, detect and sinkhole DNS exfiltration attempts and other DNS based malicious attacks. Set this configuration to "$true" to enable this feature.
+Network Protection can inspect the DNS traffic of a machine and, in conjunction with behavior monitoring, detect and sink hole DNS exfiltration attempts and other DNS based malicious attacks. Set this configuration to "$true" to enable this feature.
 
 - Type: Boolean
 - Position: Named
@@ -325,7 +325,7 @@ Network Protection can inspect the DNS traffic of a machine and, in conjunction 
 
 <a href="" id="enablenetworkprotection-disablednsovertcpparsing"></a>**EnableNetworkProtection/DisableDnsOverTcpParsing**
 
-Network Protection inspects DNS traffic that occurs over a TCP channel, to provide metadata for Anti-malware Behavior Monitoring or to allow for DNS Sinkholing if the -EnableDnsSinkhole configuration is set. This can be disabled by setting this value to "$true".
+Network Protection inspects DNS traffic that occurs over a TCP channel, to provide metadata for Anti-malware Behavior Monitoring or to allow for DNS sink holing if the -EnableDnsSinkhole configuration is set. This can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -335,7 +335,7 @@ Network Protection inspects DNS traffic that occurs over a TCP channel, to provi
 
 <a href="" id="enablenetworkprotection-disablednsparsing"></a>**EnableNetworkProtection/DisableDnsParsing**
 
-Network Protection inspects DNS traffic that occurs over a UDP channel, to provide metadata for Anti-malware Behavior Monitoring or to allow for DNS Sinkholing if the -EnableDnsSinkhole configuration is set. This can be disabled by setting this value to "$true".
+Network Protection inspects DNS traffic that occurs over a UDP channel, to provide metadata for Anti-malware Behavior Monitoring or to allow for DNS sink holing if the -EnableDnsSinkhole configuration is set. This can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -355,7 +355,7 @@ Network Protection inspects HTTP traffic to see if a connection is being made to
 
 <a href="" id="enablenetworkprotection-disablerdpparsing"></a>**EnableNetworkProtection/DisableRdpParsing**
 
-Network Protection inspects RDP traffic so that it can block connections from known malicious hosts if -EnableNetworkProtection is set to enabled, and to provide metadata to behavior monitoring. RDP inspection can be disabled by setting this value to "$true".
+Network Protection inspects RDP traffic so that it can block connections from known malicious hosts if -EnableNetworkProtection is set to be enabled, and to provide metadata to behavior monitoring. RDP inspection can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -365,7 +365,7 @@ Network Protection inspects RDP traffic so that it can block connections from kn
 
 <a href="" id="enablenetworkprotection-disablesshparsing"></a>**EnableNetworkProtection/DisableSshParsing**
 
-Network Protection inspects SSH traffic, so that it can block connections from known malicious hosts. if -EnableNetworkProtection is set to enabled, and to provide metadata to behavior monitoring. SSH inspection can be disabled by setting this value to "$true".
+Network Protection inspects SSH traffic, so that it can block connections from known malicious hosts. If -EnableNetworkProtection is set to be enabled, and to provide metadata to behavior monitoring. SSH inspection can be disabled by setting this value to "$true".
 
 - Type: Boolean
 - Position: Named
@@ -414,7 +414,7 @@ Supported product status values:
 -  Service is shutting down as part of system shutdown              = 1 << 16
 -  Threat remediation failed critically                             = 1 << 17
 -  Threat remediation failed non-critically                         = 1 << 18
--  No status flags set (well initialized state)                     = 1 << 19
+-  No status flags set (well-initialized state)                     = 1 << 19
 -  Platform is out of date                                          = 1 << 20
 -  Platform update is in progress                                   = 1 << 21
 -  Platform is about to be outdated                                 = 1 << 22
@@ -698,7 +698,7 @@ Beta Channel: Devices set to this channel will be the first to receive new updat
 
 Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments.
 
-Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%).
+Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested applying to a small, representative part of your production population (~10%).
 
 Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
 
@@ -727,7 +727,7 @@ Beta Channel: Devices set to this channel will be the first to receive new updat
 
 Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments.
 
-Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%).
+Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested applying to a small, representative part of your production population (~10%).
 
 Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
 
