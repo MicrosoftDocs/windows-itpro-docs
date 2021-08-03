@@ -198,8 +198,8 @@ Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MO
 
 # Note: If you are applying a combined cumulative update to a previously updated image (e.g. an image you updated last month)
 # There is a known issue where the servicing stack update is installed, but the cumulative update will fail.
-# This error should be caught and ignored, as the last step will be to apply the cumulative update (or in this case the combined cumulative update)
-# and thus the image will be left with the correct packages installed.
+# This error should be caught and ignored, as the last step will be to apply the cumulative update 
+# (or in this case the combined cumulative update) and thus the image will be left with the correct packages installed.
 
 Write-Output "$(Get-TS): Adding package $SSU_PATH"
 
@@ -307,8 +307,8 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
 
     # Note: If you are applying a combined cumulative update to a previously updated image (e.g. an image you updated last month)
     # There is a known issue where the servicing stack update is installed, but the cumulative update will fail.
-    # This error should be caught and ignored, as the last step will be to apply the cumulative update (or in this case the combined cumulative update)
-    # and thus the image will be left with the correct packages installed.
+    # This error should be caught and ignored, as the last step will be to apply the cumulative update 
+    # (or in this case the combined cumulative update) and thus the image will be left with the correct packages installed.
 
     Write-Output "$(Get-TS): Adding package $SSU_PATH"
     
