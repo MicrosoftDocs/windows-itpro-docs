@@ -178,8 +178,6 @@ The script assumes that only a single edition is being updated, indicated by Ind
 
 It finishes by cleaning and exporting the image to reduce the image size.
 
-> [!NOTE]
-> Skip adding the latest cumulative update to Winre.wim because it contains unnecessary components in the recovery environment. The components that are updated and applicable are contained in the safe operating system Dynamic Update package. This also helps to keep the image small.
 
 ```powershell
 # Mount the main operating system, used throughout the script
@@ -194,8 +192,33 @@ Write-Output "$(Get-TS): Mounting WinRE"
 Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MOUNT -ErrorAction stop | Out-Null
 
 # Add servicing stack update
+
+# Note: If you are using a combined cumulative update, there may be a prerequisite servicing stack update required
+# This is where you'd add the prerequisite SSU, before applying the latest combined cumulative update. 
+
+# Note: If you are applying a combined cumulative update to a previously updated image (e.g. an image you updated last month)
+# There is a known issue where the servicing stack update is installed, but the cumulative update will fail.
+# This error should be caught and ignored, as the last step will be to apply the cumulative update (or in this case the combined cumulative update)
+# and thus the image will be left with the correct packages installed.
+
 Write-Output "$(Get-TS): Adding package $SSU_PATH"
-Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH -ErrorAction stop | Out-Null  
+
+try
+{
+    Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH -ErrorAction stop | Out-Null  
+}
+Catch
+{
+    $theError = $_
+    Write-Output "$(Get-TS): $theError"
+    
+    if ($theError.Exception -like "*0x8007007e*") {
+        Write-Output "$(Get-TS): This failure is a known issue with combined cumulative update, we can ignore."
+    }
+    else {
+        throw
+    }
+}
 
 #
 # Optional: Add the language to recovery environment
@@ -278,8 +301,33 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -Index $IMAGE.ImageIndex -Path $WINPE_MOUNT -ErrorAction stop | Out-Null  
 
     # Add SSU
+
+    # Note: If you are using a combined cumulative update, there may be a prerequisite servicing stack update required
+    # This is where you'd add the prerequisite SSU, before applying the latest combined cumulative update. 
+
+    # Note: If you are applying a combined cumulative update to a previously updated image (e.g. an image you updated last month)
+    # There is a known issue where the servicing stack update is installed, but the cumulative update will fail.
+    # This error should be caught and ignored, as the last step will be to apply the cumulative update (or in this case the combined cumulative update)
+    # and thus the image will be left with the correct packages installed.
+
     Write-Output "$(Get-TS): Adding package $SSU_PATH"
-    Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $SSU_PATH -ErrorAction stop | Out-Null
+    
+    try
+    {
+        Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $SSU_PATH -ErrorAction stop | Out-Null
+    }
+    Catch
+    {
+        $theError = $_
+        Write-Output "$(Get-TS): $theError"
+        
+        if ($theError.Exception -like "*0x8007007e*") {
+            Write-Output "$(Get-TS): This failure is a known issue with combined cumulative update, we can ignore."
+        }
+        else {
+            throw
+        }
+    }
 
     # Install lp.cab cab
     Write-Output "$(Get-TS): Adding package $WINPE_OC_LP_PATH"
