@@ -16,7 +16,7 @@ ms.date: 08/17/2017
 ms.reviewer: 
 ---
 
-# Windows Defender Credential Guard protection limits
+# Windows Defender Credential Guard protection limits and mitigations
 
 **Applies to**
 -   Windows 10
