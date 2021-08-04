@@ -453,6 +453,26 @@ Valid values are:
 - 1 – Enable.
 - 0 (default) – Disable.
 
+<a href="" id="configuration-hideexclusionsfromlocaladmins"></a>**Configuration/HideExclusionsFromLocalAdmins**<br>
+This policy setting controls whether or not exclusions are visible to Local Admins.  For end users (that are not Local Admins) exclusions are not visible, whether or not this setting is enabled.
+
+If you disable or do not configure this setting, Local Admins will be able to see exclusions in the Windows Security App and via PowerShell.
+
+If you enable this setting, Local Admins will no longer be able to see the exclusion list in Windows Security App or via PowerShell.  
+
+> [!NOTE]
+> Applying this setting will not remove exclusions, it will only prevent them from being visible to Local Admins. This is reflected in **Get-MpPreference**.
+
+Supported OS versions:  Windows 10
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:  
+- 1 – Enable.
+- 0 (default) – Disable.
+
 <a href="" id="configuration-disablecputhrottleonidlescans"></a>**Configuration/DisableCpuThrottleOnIdleScans**<br>	
 Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and will not throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.	
 
