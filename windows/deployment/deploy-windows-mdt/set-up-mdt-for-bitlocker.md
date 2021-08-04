@@ -95,7 +95,7 @@ Following these steps, you enable the backup of BitLocker and TPM recovery infor
 
 ### Set permissions in Active Directory for BitLocker
 
-In addition to the Group Policy created previously, you need to configure permissions in Active Directory to be able to store the TPM recovery information. In these steps, we assume you have downloaded the [Add-TPMSelfWriteACE.vbs script](https://gallery.technet.microsoft.com/ScriptCenter/b4dee016-053e-4aa3-a278-3cebf70d1191) from Microsoft to C:\\Setup\\Scripts on DC01.
+In addition to the Group Policy created previously, you need to configure permissions in Active Directory to be able to store the TPM recovery information. In these steps, we assume you have downloaded the [Add-TPMSelfWriteACE.vbs script](https://raw.githubusercontent.com/DeploymentArtist/DF4/master/BitLocker%20and%20TPM/Add-TPMSelfWriteACE.vbs) to C:\\Setup\\Scripts on DC01.
 
 1. On DC01, start an elevated PowerShell prompt (run as Administrator).
 2. Configure the permissions by running the following command:
