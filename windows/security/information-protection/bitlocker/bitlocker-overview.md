@@ -49,7 +49,7 @@ BitLocker control panel, and they are appropriate to use for automated deploymen
 
 ## <a href="" id="bkmk-new"></a>New and changed functionality
 
-To find out what's new in BitLocker for Windows 10, such as support for the XTS-AES encryption algorithm, see the [BitLocker](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10."
+To find out what's new in BitLocker for Windows 10, such as support for the XTS-AES encryption algorithm, see the [BitLocker](/windows/whats-new/whats-new-windows-10-version-1507-and-1511#bitlocker) section in "What's new in Windows 10."
  
 ## System requirements
 
@@ -67,7 +67,7 @@ The system BIOS or UEFI firmware (for TPM and non-TPM computers) must support th
 > [!NOTE]
 > TPM 2.0 is not supported in Legacy and CSM Modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as Native UEFI only. The Legacy and Compatibility Support Module (CSM) options must be disabled. For added security Enable the Secure Boot feature.
 
-> Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](https://docs.microsoft.com/windows/deployment/mbr-to-gpt) before changing the BIOS mode which will prepare the OS and the disk to support UEFI.
+> Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](/windows/deployment/mbr-to-gpt) before changing the BIOS mode which will prepare the OS and the disk to support UEFI.
 
 The hard disk must be partitioned with at least two drives:
 
@@ -85,7 +85,7 @@ When installing the BitLocker optional component on a server you will also need 
 | Topic | Description |
 | - | - |
 | [Overview of BitLocker Device Encryption in Windows 10](bitlocker-device-encryption-overview-windows-10.md) | This topic for the IT professional provides an overview of the ways that BitLocker Device Encryption can help protect data on devices running Windows 10.  |
-| [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.md) | This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.| 
+| [BitLocker frequently asked questions (FAQ)](bitlocker-frequently-asked-questions.yml) | This topic for the IT professional answers frequently asked questions concerning the requirements to use, upgrade, deploy and administer, and key management policies for BitLocker.| 
 | [Prepare your organization for BitLocker: Planning and policies](prepare-your-organization-for-bitlocker-planning-and-policies.md)| This topic for the IT professional explains how can you plan your BitLocker deployment. |
 | [BitLocker basic deployment](bitlocker-basic-deployment.md) | This topic for the IT professional explains how BitLocker features can be used to protect your data through drive encryption. |
 | [BitLocker: How to deploy on Windows Server](bitlocker-how-to-deploy-on-windows-server.md)| This topic for the IT professional explains how to deploy BitLocker on Windows Server.| 
@@ -95,7 +95,7 @@ When installing the BitLocker optional component on a server you will also need 
 | [BitLocker Group Policy settings](bitlocker-group-policy-settings.md) | This topic for IT professionals describes the function, location, and effect of each Group Policy setting that is used to manage BitLocker. |
 | [BCD settings and BitLocker](bcd-settings-and-bitlocker.md) | This topic for IT professionals describes the BCD settings that are used by BitLocker.| 
 | [BitLocker Recovery Guide](bitlocker-recovery-guide-plan.md)| This topic for IT professionals describes how to recover BitLocker keys from AD DS. |
-| [Protect BitLocker from pre-boot attacks](protect-bitlocker-from-pre-boot-attacks.md)| This detailed guide will help you understand the circumstances under which the use of pre-boot authentication is recommended for devices running Windows 10, Windows 8.1, Windows 8, or Windows 7; and when it can be safely omitted from a device’s configuration. |
+| [Protect BitLocker from pre-boot attacks](./bitlocker-countermeasures.md)| This detailed guide will help you understand the circumstances under which the use of pre-boot authentication is recommended for devices running Windows 10, Windows 8.1, Windows 8, or Windows 7; and when it can be safely omitted from a device’s configuration. |
 | [Troubleshoot BitLocker](troubleshoot-bitlocker.md) | This guide describes the resources that can help you troubleshoot BitLocker issues, and provides solutions for several common BitLocker issues. |
 | [Protecting cluster shared volumes and storage area networks with BitLocker](protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md)| This topic for IT pros describes how to protect CSVs and SANs with BitLocker.| 
-| [Enabling Secure Boot and BitLocker Device Encryption on Windows 10 IoT Core](https://developer.microsoft.com/windows/iot/docs/securebootandbitlocker) | This topic covers how to use BitLocker with Windows 10 IoT Core |
+| [Enabling Secure Boot and BitLocker Device Encryption on Windows 10 IoT Core](/windows/iot-core/secure-your-device/SecureBootAndBitLocker) | This topic covers how to use BitLocker with Windows 10 IoT Core |

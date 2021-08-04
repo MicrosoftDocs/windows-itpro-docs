@@ -22,14 +22,14 @@ ms.topic: article
 
 - Windows 10
 
-From its release, Windows 10 has supported remote connections to PCs joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is [joined to Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join). Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics).
+From its release, Windows 10 has supported remote connections to PCs joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is [joined to Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join). Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session](/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics).
 
 ![Remote Desktop Connection client](images/rdp.png)
 
 ## Set up
 
 - Both PCs (local and remote) must be running Windows 10, version 1607 or later. Remote connections to an Azure AD-joined PC running earlier versions of Windows 10 are not supported.
-- Your local PC (where you are connecting from) must be either Azure AD-joined or Hybrid Azure AD-joined if using Windows 10, version 1607 and above, or [Azure AD registered](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-register) if using Windows 10, version 2004 and above. Remote connections to an Azure AD-joined PC from an unjoined device or a non-Windows 10 device are not supported. 
+- Your local PC (where you are connecting from) must be either Azure AD-joined or Hybrid Azure AD-joined if using Windows 10, version 1607 and above, or [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) if using Windows 10, version 2004 and above. Remote connections to an Azure AD-joined PC from an unjoined device or a non-Windows 10 device are not supported. 
 - The local PC and remote PC must be in the same Azure AD tenant. Azure AD B2B guests are not supported for Remote desktop. 
 
 Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-guard), a new feature in Windows 10, version 1607, is turned off on the client PC you are using to connect to the remote PC.
@@ -64,7 +64,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
 
       - Adding users using policy
      
-         Starting in Windows 10, version 2004, you can add users or Azure AD groups to the Remote Desktop Users using MDM policies as described in [How to manage the local administrators group on Azure AD joined devices](https://docs.microsoft.com/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview).
+         Starting in Windows 10, version 2004, you can add users or Azure AD groups to the Remote Desktop Users using MDM policies as described in [How to manage the local administrators group on Azure AD joined devices](/azure/active-directory/devices/assign-local-admin#manage-administrator-privileges-using-azure-ad-groups-preview).
 
          > [!TIP]
          > When you connect to the remote PC, enter your account name in this format: AzureAD\yourloginid@domain.com.
@@ -83,8 +83,8 @@ The table below lists the supported configurations for remotely connecting to an
 
 
 > [!NOTE]
-> If the RDP client is running Windows Server 2016 or Windows Server 2019, to be able to connect to Azure Active Directory-joined PCs, it must [allow Public Key Cryptography Based User-to-User (PKU2U) authentication requests to use online identities](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities).
+> If the RDP client is running Windows Server 2016 or Windows Server 2019, to be able to connect to Azure Active Directory-joined PCs, it must [allow Public Key Cryptography Based User-to-User (PKU2U) authentication requests to use online identities](/windows/security/threat-protection/security-policy-settings/network-security-allow-pku2u-authentication-requests-to-this-computer-to-use-online-identities).
 
 ## Related topics
 
-[How to use Remote Desktop](https://support.microsoft.com/instantanswers/ff521c86-2803-4bc0-a5da-7df445788eb9/how-to-use-remote-desktop)
+[How to use Remote Desktop](https://support.microsoft.com/windows/how-to-use-remote-desktop-5fe128d5-8fb1-7a23-3b8a-41e636865e8c)

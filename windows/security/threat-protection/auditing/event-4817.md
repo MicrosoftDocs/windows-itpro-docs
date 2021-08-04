@@ -27,7 +27,7 @@ ms.technology: mde
 
 ***Event Description:***
 
-This event generates when the [Global Object Access Auditing](https://technet.microsoft.com/library/dd772630(v=ws.10).aspx) policy is changed on a computer.
+This event generates when the [Global Object Access Auditing](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd772630(v=ws.10)) policy is changed on a computer.
 
 Separate events will be generated for “Registry” and “File system” policy changes.
 
@@ -248,4 +248,3 @@ For 4817(S): Auditing settings on object were changed.
 -   If you use Global Object Access Auditing policies, then this event should be always monitored, especially on high value assets or computers. If this change was not planned, investigate the reason for the change.
 
 -   If you don’t use Global Object Access Auditing policies, then this event should be always monitored because it indicates use of Global Object Access Auditing policies outside of your standard procedures.
-

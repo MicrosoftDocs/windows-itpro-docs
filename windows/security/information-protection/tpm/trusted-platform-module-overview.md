@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+ms.localizationpriority: high
 author: dansimp
 ms.author: dansimp
 manager: dansimp
@@ -20,9 +20,9 @@ ms.date: 11/29/2018
 # Trusted Platform Module Technology Overview
 
 **Applies to**
--   Windows 10
--   Windows Server 2016
--   Windows Server 2019
+- Windows 10
+- Windows Server 2016
+- Windows Server 2019
 
 This topic for the IT professional describes the Trusted Platform Module (TPM) and how Windows uses it for access control and authentication.
 
@@ -30,11 +30,11 @@ This topic for the IT professional describes the Trusted Platform Module (TPM) a
 
 Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. Some of the key advantages of using TPM technology are that you can:
 
--   Generate, store, and limit the use of cryptographic keys.
+- Generate, store, and limit the use of cryptographic keys.
 
--   Use TPM technology for platform device authentication by using the TPM’s unique RSA key, which is burned into itself.
+- Use TPM technology for platform device authentication by using the TPM’s unique RSA key, which is burned into itself.
 
--   Help ensure platform integrity by taking and storing security measurements.
+- Help ensure platform integrity by taking and storing security measurements.
 
 The most common TPM functions are used for system integrity measurements and for key creation and use. During the boot process of a system, the boot code that is loaded (including firmware and the operating system components) can be measured and recorded in the TPM. The integrity measurements can be used as evidence for how a system started and to make sure that a TPM-based key was used only when the correct software was used to boot the system.
 
@@ -44,7 +44,7 @@ Different versions of the TPM are defined in specifications by the Trusted Compu
 
 ### Automatic initialization of the TPM with Windows 10
 
-Starting with Windows 10, the operating system automatically initializes and takes ownership of the TPM. This means that in most cases, we recommend that you avoid configuring the TPM through the TPM management console, **TPM.msc**. There are a few exceptions, mostly related to resetting or performing a clean installation on a PC. For more information, see [Clear all the keys from the TPM](initialize-and-configure-ownership-of-the-tpm.md#clear-all-the-keys-from-the-tpm). We're [no longer actively developing the TPM management console](https://docs.microsoft.com/windows-server/get-started-19/removed-features-19#features-were-no-longer-developing) beginning with Windows Server 2019 and Windows 10, version 1809.
+Starting with Windows 10, the operating system automatically initializes and takes ownership of the TPM. This means that in most cases, we recommend that you avoid configuring the TPM through the TPM management console, **TPM.msc**. There are a few exceptions, mostly related to resetting or performing a clean installation on a PC. For more information, see [Clear all the keys from the TPM](initialize-and-configure-ownership-of-the-tpm.md#clear-all-the-keys-from-the-tpm). We're [no longer actively developing the TPM management console](/windows-server/get-started-19/removed-features-19#features-were-no-longer-developing) beginning with Windows Server 2019 and Windows 10, version 1809.
 
 In certain specific enterprise scenarios limited to Windows 10, versions 1507 and 1511, Group Policy might be used to back up the TPM owner authorization value in Active Directory. Because the TPM state persists across operating system installations, this TPM information is stored in a location in Active Directory that is separate from computer objects.
 
@@ -60,7 +60,7 @@ The TPM has several Group Policy settings that might be useful in certain enterp
 
 ## New and changed functionality
 
-For more info on new and changed functionality for Trusted Platform Module in Windows 10, see [What's new in Trusted Platform Module?](https://technet.microsoft.com/itpro/windows/whats-new/whats-new-windows-10-version-1507-and-1511#trusted-platform-module).
+For more info on new and changed functionality for Trusted Platform Module in Windows 10, see [What's new in Trusted Platform Module?](/windows/whats-new/whats-new-windows-10-version-1507-and-1511#trusted-platform-module).
 
 ## Device health attestation
 
@@ -89,10 +89,10 @@ Some things that you can check on the device are:
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) (list of topics)
 - [Details on the TPM standard](https://www.microsoft.com/research/project/the-trusted-platform-module-tpm/) (has links to features using TPM)
-- [TPM Base Services Portal](https://docs.microsoft.com/windows/desktop/TBS/tpm-base-services-portal)
-- [TPM Base Services API](https://docs.microsoft.com/windows/desktop/api/_tbs/)
-- [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule)
-- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)
+- [TPM Base Services Portal](/windows/desktop/TBS/tpm-base-services-portal)
+- [TPM Base Services API](/windows/desktop/api/_tbs/)
+- [TPM Cmdlets in Windows PowerShell](/powershell/module/trustedplatformmodule)
+- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](../bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [Azure device provisioning: Identity attestation with TPM](https://azure.microsoft.com/blog/device-provisioning-identity-attestation-with-tpm/)
 - [Azure device provisioning: A manufacturing timeline for TPM devices](https://azure.microsoft.com/blog/device-provisioning-a-manufacturing-timeline-for-tpm-devices/)
 - [Windows 10: Enabling vTPM (Virtual TPM)](https://social.technet.microsoft.com/wiki/contents/articles/34431.windows-10-enabling-vtpm-virtual-tpm.aspx)

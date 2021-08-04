@@ -6,9 +6,9 @@ description: This section describes the Cellular settings that you can configure
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -55,7 +55,7 @@ Enter the service provider name for the mobile operator.
 
 ### DataClassMappingTable
 
-Enter a customized string for the appropriate [data class](https://docs.microsoft.com/windows/desktop/api/mbnapi/ne-mbnapi-mbn_data_class).
+Enter a customized string for the appropriate [data class](/windows/desktop/api/mbnapi/ne-mbnapi-mbn_data_class).
 
 ### NetworkBlockList
 

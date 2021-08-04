@@ -9,8 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
@@ -31,7 +31,7 @@ In earlier versions of Windows 10, you used the page name to define allowed sett
 
 For example, in place of **SettingsPageDisplay**, you would use **ms-settings:display**.
 
-See the [ms-settings: URI scheme reference](https://docs.microsoft.com/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to find the URI for each Settings page.
+See the [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference) to find the URI for each Settings page.
 
 ## Settings lockdown in Windows 10, version 1607 and earlier
 
@@ -497,8 +497,3 @@ You can specify the quick actions as follows:
  
 
  
-
-
-
-
-

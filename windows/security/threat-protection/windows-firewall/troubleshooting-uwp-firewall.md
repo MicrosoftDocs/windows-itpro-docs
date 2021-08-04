@@ -41,9 +41,9 @@ filters ensures network isolation for UWP applications. Specifically, it guarant
 
 For more information on the filter arbitration algorithm and network isolation,
 see [Filter
-Arbitration](https://docs.microsoft.com/windows/win32/fwp/filter-arbitration)
+Arbitration](/windows/win32/fwp/filter-arbitration)
 and
-[Isolation](https://docs.microsoft.com/windows/win32/secauthz/appcontainer-isolation).
+[Isolation](/windows/win32/secauthz/appcontainer-isolation).
 
 The following sections cover debugging case examples for loopback and non-loopback UWP app network connectivity issues.
 
@@ -70,7 +70,12 @@ You can ensure loopback is enabled by checking the appx manifests of both the se
 
 For more information about loopback scenarios, see [Communicating with
 localhost
-(loopback)](https://docs.microsoft.com/windows/iot-core/develop-your-app/loopback).
+(loopback)](/windows/iot-core/develop-your-app/loopback).
+
+>[!NOTE]
+>If you are in the middle of developing a UWA application and want to test its loopback, ensure to uninstall and re-install the UWA app if the network capabilities change for whatever reason. 
+
+Also, see [How to enable loopback and troubleshoot network isolation (Windows Runtime apps)](/previous-versions/windows/apps/hh780593(v=win.10)).
 
 ## Debugging Live Drops
 

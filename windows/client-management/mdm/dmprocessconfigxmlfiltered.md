@@ -25,7 +25,7 @@ ms.date: 06/26/2017
 # DMProcessConfigXMLFiltered function
 
 > [!Important]
-> The use of this function for automatic data configuration (ADC) is deprecated in Windows Phone 8.1. Please see [Connectivity configuration](https://msdn.microsoft.com/library/windows/hardware/dn757424) for more information about the new process for provisioning connectivity configuration. However, this function is still supported for other OEM uses.
+> The use of this function for automatic data configuration (ADC) is deprecated in Windows Phone 8.1. Please see [Connectivity configuration](/previous-versions//dn757424(v=vs.85)) for more information about the new process for provisioning connectivity configuration. However, this function is still supported for other OEM uses.
 
 
 Configures phone settings by using OMA Client Provisioning XML. Use of this function is strictly limited to the following scenarios.
@@ -81,7 +81,7 @@ HRESULT STDAPICALLTYPE DMProcessConfigXMLFiltered(
 
 *pbstrXmlOut*
 <ul style="list-style-type:none">
-<li>[out] The resulting null–terminated XML from configuration. The caller of <strong>DMProcessConfigXMLFiltered</strong> is responsible for cleanup of the output buffer that the <em>pbstrXmlOut</em> parameter references. Use <a href="https://msdn.microsoft.com/library/windows/hardware/ms221481" data-raw-source="[**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481)"><strong>SysFreeString</strong></a> to free the memory.</li>
+<li>[out] The resulting null–terminated XML from configuration. The caller of <strong>DMProcessConfigXMLFiltered</strong> is responsible for cleanup of the output buffer that the <em>pbstrXmlOut</em> parameter references. Use <a href="/windows/win32/api/oleauto/nf-oleauto-sysfreestring" data-raw-source="[**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring)"><strong>SysFreeString</strong></a> to free the memory.</li>
 </ul>
 <br>
 
@@ -224,12 +224,5 @@ if ( bstr != NULL )
 
 ## See also
 
-[**SysFreeString**](https://msdn.microsoft.com/library/windows/hardware/ms221481)
-
- 
-
-
-
-
-
+[**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring)
 

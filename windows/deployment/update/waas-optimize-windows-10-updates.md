@@ -43,9 +43,9 @@ Two methods of peer-to-peer content distribution are available in Windows 10.
 | BranchCache | ![no](images/crossmark.png) | ![no](images/crossmark.png) |![yes](images/checkmark.png) | ![yes](images/checkmark.png) |
 
 > [!NOTE]
-> Microsoft Endpoint Manager has an additional feature called Client Peer Cache that allows peer-to-peer content sharing between clients you use Microsoft Endpoint Manager to manage, in the same Configuration Manager boundary Group. For more information, see [Client Peer Cache](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/client-peer-cache).
+> Microsoft Endpoint Manager has an additional feature called Client Peer Cache that allows peer-to-peer content sharing between clients you use Microsoft Endpoint Manager to manage, in the same Configuration Manager boundary Group. For more information, see [Client Peer Cache](/configmgr/core/plan-design/hierarchy/client-peer-cache).
 >
-> In addition to Client Peer Cache, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with Microsoft Endpoint Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic).
+> In addition to Client Peer Cache, similar functionality is available in the Windows Preinstallation Environment (Windows PE) for imaging-related content. Using this technology, clients imaging with Microsoft Endpoint Manager task sequences can source operating system images, driver packages, boot images, packages, and programs from peers instead of distribution points. For detailed information about how Windows PE Peer Cache works and how to configure it, see [Prepare Windows PE peer cache to reduce WAN traffic in Microsoft Endpoint Configuration Manager](/configmgr/osd/get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic).
 
 ## Express update delivery
 
@@ -58,7 +58,7 @@ Windows 10 quality update downloads can be large because every package contains 
 - **Express on Microsoft Endpoint Configuration Manager** starting with version 1702 of Configuration Manager and Windows 10, version 1703 or later, or Windows 10, version 1607 with the April 2017 cumulative update.
 - **Express on WSUS Standalone**
 
-  Express update delivery is available on [all support versions of WSUS](https://technet.microsoft.com/library/cc708456(v=ws.10).aspx).
+  Express update delivery is available on [all support versions of WSUS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc708456(v=ws.10)).
 - **Express on devices directly connected to Windows Update**
 - **Enterprise devices managed using [Windows Update for Business](waas-manage-updates-wufb.md)** also get the benefit of Express update delivery support without any change in configuration.
 
@@ -93,7 +93,7 @@ At this point, the download is complete and the update is ready to be installed.
 | ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
 | ![done](images/checklistdone.png) | Optimize update delivery for Windows 10 updates (this topic) |
-| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)<br/>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)<br/>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md) |
+| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)<br/>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)<br/>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
 
 
 ## Related topics
@@ -104,5 +104,5 @@ At this point, the download is complete and the update is ready to be installed.
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
+- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
 - [Manage device restarts after updates](waas-restart.md)

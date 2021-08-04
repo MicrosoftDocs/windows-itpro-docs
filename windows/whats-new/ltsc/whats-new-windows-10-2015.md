@@ -40,9 +40,9 @@ AppLocker was available for Windows 8.1, and is improved with Windows 10. See [R
 
 Enhancements to AppLocker in Windows 10 include:
 
--   A new parameter was added to the [New-AppLockerPolicy](https://technet.microsoft.com/library/hh847211.aspx) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
--   A new [AppLocker](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
--   You can manage Windows 10 Mobile devices by using the new [AppLocker CSP](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx).
+-   A new parameter was added to the [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy) Windows PowerShell cmdlet that lets you choose whether executable and DLL rule collections apply to non-interactive processes. To enable this, set the **ServiceEnforcement** to **Enabled**.
+-   A new [AppLocker](/windows/client-management/mdm/applocker-csp) configuration service provider was add to allow you to enable AppLocker rules by using an MDM server.
+-   You can manage Windows 10 Mobile devices by using the new [AppLocker CSP](/windows/client-management/mdm/applocker-csp).
 
 [Learn how to manage AppLocker within your organization](/windows/device-security/applocker/applocker-overview).
 
@@ -50,9 +50,9 @@ Enhancements to AppLocker in Windows 10 include:
 
 Enhancements to AppLocker in Windows 10 include:
 
--   **Encrypt and recover your device with Azure Active Directory**. In addition to using a Microsoft Account, automatic [Device Encryption](https://technet.microsoft.com/itpro/windows/keep-secure/windows-10-security-guide#device-encryption) can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This will make it easier to recover your BitLocker key online.
--   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#dataprotection-allowdirectmemoryaccess) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
--   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more info, see the [Configure pre-boot recovery message and URL](https://technet.microsoft.com/itpro/windows/keep-secure/bitlocker-group-policy-settings#bkmk-configurepreboot) section in "BitLocker Group Policy settings."
+-   **Encrypt and recover your device with Azure Active Directory**. In addition to using a Microsoft Account, automatic [Device Encryption](/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10#device-encryption) can now encrypt your devices that are joined to an Azure Active Directory domain. When the device is encrypted, the BitLocker recovery key is automatically escrowed to Azure Active Directory. This will make it easier to recover your BitLocker key online.
+-   **DMA port protection**. You can use the [DataProtection/AllowDirectMemoryAccess](/windows/client-management/mdm/policy-configuration-service-provider#dataprotection-allowdirectmemoryaccess) MDM policy to block DMA ports when the device is starting up. Also, when a device is locked, all unused DMA ports are turned off, but any devices that are already plugged into a DMA port will continue to work. When the device is unlocked, all DMA ports are turned back on.
+-   **New Group Policy for configuring pre-boot recovery**. You can now configure the pre-boot recovery message and recover URL that is shown on the pre-boot recovery screen. For more info, see the [Configure pre-boot recovery message and URL](/windows/security/information-protection/bitlocker/bitlocker-group-policy-settings#bkmk-configurepreboot) section in "BitLocker Group Policy settings."
 
 [Learn how to deploy and manage BitLocker within your organization](/windows/device-security/bitlocker/bitlocker-overview).
 
@@ -117,7 +117,7 @@ The logon event ID 4624 has been updated to include more verbose information to 
     A list of all of the groups in the user's token.
 6.  **RestrictedAdminMode** String: yes or no
     If the user logs into the PC in restricted admin mode with Remote Desktop, this field will be yes.
-    For more info on restricted admin mode, see [Restricted Admin mode for RDP](https://blogs.technet.com/b/kfalde/archive/2013/08/14/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2.aspx).
+    For more info on restricted admin mode, see [Restricted Admin mode for RDP](/archive/blogs/kfalde/restricted-admin-mode-for-rdp-in-windows-8-1-2012-r2).
 
 #### <a href="" id="bkmk-process"></a>New fields in the process creation event
 
@@ -194,13 +194,13 @@ Some things that you can check on the device are:
 
 User Account Control (UAC) helps prevent malware from damaging a computer and helps organizations deploy a better-managed desktop environment.
 
-You should not turn off UAC because this is not a supported scenario for devices running Windows 10. If you do turn off UAC, all Univeral Windows Platform apps stop working. You must always set the **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA** registry value to 1. If you need to provide auto elevation for programmatic access or installation, you could set the **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin** registry value to 0, which is the same as setting the UAC slider Never Notify. This is not recommended for devices running Windows 10.
+You should not turn off UAC because this is not a supported scenario for devices running Windows 10. If you do turn off UAC, all Universal Windows Platform apps stop working. You must always set the **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\EnableLUA** registry value to 1. If you need to provide auto elevation for programmatic access or installation, you could set the **HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\System\\ConsentPromptBehaviorAdmin** registry value to 0, which is the same as setting the UAC slider Never Notify. This is not recommended for devices running Windows 10.
 
 For more info about how manage UAC, see [UAC Group Policy Settings and Registry Key Settings](/windows/access-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings).
 
 In Windows 10, User Account Control has added some improvements:
 
--   **Integration with the Antimalware Scan Interface (AMSI)**. The [AMSI](https://msdn.microsoft.com/library/windows/desktop/dn889587.aspx) scans all UAC elevation requests for malware. If malware is detected, the admin privilege is blocked.
+-   **Integration with the Antimalware Scan Interface (AMSI)**. The [AMSI](/windows/win32/amsi/antimalware-scan-interface-portal) scans all UAC elevation requests for malware. If malware is detected, the admin privilege is blocked.
 
 [Learn how to manage User Account Control within your organization](/windows/access-protection/user-account-control/user-account-control-overview).
 
@@ -227,7 +227,7 @@ MDM policies for Windows 10 align with the policies supported in Windows 8.1 a
 
 MDM support in Windows 10 is based on [Open Mobile Alliance (OMA)](https://go.microsoft.com/fwlink/p/?LinkId=533885) Device Management (DM) protocol 1.2.1 specification.
 
-Corporate-owned devices can be enrolled automatically for enterprises using Azure AD. [Reference for Mobile device management for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=533172)
+Corporate-owned devices can be enrolled automatically for enterprises using Azure AD. [Reference for Mobile device management for Windows 10](/windows/client-management/mdm/)
 
 ### Unenrollment
 
@@ -246,7 +246,7 @@ Enterprises have the following identity and management choices.
 | Device management | Group Policy; Microsoft Endpoint Configuration Manager; Microsoft Intune; other MDM solutions; Exchange ActiveSync; Windows PowerShell; Windows Management Instrumentation (WMI) |
 
  > **Note**  
-With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](https://go.microsoft.com/fwlink/p/?LinkID=613512).
+With the release of Windows Server 2012 R2, Network Access Protection (NAP) was deprecated and the NAP client has now been removed in Windows 10. For more information about support lifecycles, see [Microsoft Support Lifecycle](/lifecycle/).
 
  
 ### Device lockdown
@@ -258,11 +258,11 @@ Do you need a computer that can only do one thing? For example:
 -   A portable device that drivers can use to check a route on a map.
 -   A device that a temporary worker uses to enter data.
 
-You can configure a persistent locked down state to [create a kiosk-type device](https://technet.microsoft.com/itpro/windows/manage/set-up-a-device-for-anyone-to-use). When the locked-down account is logged on, the device displays only the app that you select.
+You can configure a persistent locked down state to [create a kiosk-type device](/windows/configuration/kiosk-methods). When the locked-down account is logged on, the device displays only the app that you select.
 
-You can also [configure a lockdown state](https://technet.microsoft.com/itpro/windows/manage/lock-down-windows-10-to-specific-apps) that takes effect when a given user account logs on. The lockdown restricts the user to only the apps that you specify.
+You can also [configure a lockdown state](/windows/configuration/lock-down-windows-10-to-specific-apps) that takes effect when a given user account logs on. The lockdown restricts the user to only the apps that you specify.
 
-Lockdown settings can also be configured for device look and feel, such as a theme or a [custom layout on the Start screen](https://technet.microsoft.com/itpro/windows/manage/windows-10-start-layout-options-and-policies).
+Lockdown settings can also be configured for device look and feel, such as a theme or a [custom layout on the Start screen](/windows/configuration/windows-10-start-layout-options-and-policies).
 
 ### Start layout
 
@@ -274,15 +274,15 @@ Administrators can also use mobile device management (MDM) or Group Policy to di
 
 Windows Update for Business enables information technology administrators to keep the Windows 10-based devices in their organization always up to date with the latest security defenses and Windows features by directly connecting these systems to Microsoft’s Windows Update service.
 
-By using [Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=699279), Windows Update for Business is an easily established and implemented system which enables organizations and administrators to exercise control on how their Windows 10-based devices are updated, by allowing:
+By using [Group Policy Objects](/previous-versions/cc498727(v=msdn.10)), Windows Update for Business is an easily established and implemented system which enables organizations and administrators to exercise control on how their Windows 10-based devices are updated, by allowing:
 
 -   **Deployment and validation groups**; where administrators can specify which devices go first in an update wave, and which devices will come later (to ensure any quality bars are met).
 
 -   **Peer-to-peer delivery**, which administrators can enable to make delivery of updates to branch offices and remote sites with limited bandwidth very efficient.
 
--   **Use with existing tools** such as Microsoft Endpoint Manager and the [Enterprise Mobility Suite](https://docs.microsoft.com/enterprise-mobility-security).
+-   **Use with existing tools** such as Microsoft Endpoint Manager and the [Enterprise Mobility Suite](/enterprise-mobility-security).
 
-Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](https://technet.microsoft.com/library/hh852345.aspx) and [Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr).
+Together, these Windows Update for Business features help reduce device management costs, provide controls over update deployment, offer quicker access to security updates, as well as provide access to the latest innovations from Microsoft on an ongoing basis. Windows Update for Business is a free service for all Windows 10 Pro, Enterprise, and Education editions, and can be used independent of, or in conjunction with, existing device management solutions such as [Windows Server Update Services (WSUS)](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345(v=ws.11)) and [Microsoft Endpoint Configuration Manager](/configmgr).
 
 
 Learn more about [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).
@@ -291,9 +291,8 @@ For more information about updating Windows 10, see [Windows 10 servicing optio
 
 ## Microsoft Edge
 
-Microsoft Edge is not available in the LTSC release of Windows 10.
+The new chromium-based Microsoft Edge is not included in the LTSC release of Windows 10.  However, you can download and install it separately [here](https://www.microsoft.com/edge/business/download).
 
 ## See Also
 
 [Windows 10 Enterprise LTSC](index.md): A description of the LTSC servicing channel with links to information about each release.
-

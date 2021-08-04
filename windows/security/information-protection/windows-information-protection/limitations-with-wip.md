@@ -21,7 +21,6 @@ ms.localizationpriority: medium
 
 **Applies to:**
 -   Windows 10, version 1607 and later
--   Windows 10 Mobile, version 1607 and later
 
 This table provides info about the most common problems you might encounter while running WIP in your organization.
 
@@ -72,7 +71,7 @@ This table provides info about the most common problems you might encounter whil
         <td>Turn off WIP for all devices before changing the primary Corporate Identity (first entry in the list), restarting, and finally redeploying.</td>
     </tr>
     <tr>
-        <td>Redirected folders with Client Side Caching are not compatible with WIP.</td>
+        <td>Redirected folders with Client-Side Caching are not compatible with WIP.</td>
         <td>Apps might encounter access errors while attempting to read a cached, offline file.</td>
         <td>Migrate to use another file synchronization method, such as Work Folders or OneDrive for Business.<br><br><b>Note</b><br>For more info about Work Folders and Offline Files, see the blog, <a href="https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/" data-raw-source="[Work Folders and Offline Files support for Windows Information Protection](https://blogs.technet.microsoft.com/filecab/2016/08/29/work-folders-and-offline-files-support-for-windows-information-protection/)">Work Folders and Offline Files support for Windows Information Protection</a>. If you&#39;re having trouble opening files offline while using Offline Files and WIP, see the support article, <a href="https://support.microsoft.com/kb/3187045" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/kb/3187045)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.</td>
     </tr>
@@ -89,7 +88,7 @@ This table provides info about the most common problems you might encounter whil
     <tr>
         <td>ActiveX controls should be used with caution.</td>
         <td>Webpages that use ActiveX controls can potentially communicate with other outside processes that aren’t protected by using WIP.</td>
-        <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<br><br>For more info, see <a href="https://technet.microsoft.com/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking" data-raw-source="[Out-of-date ActiveX control blocking](https://technet.microsoft.com/itpro/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking)">Out-of-date ActiveX control blocking</a>.</td>
+        <td>We recommend that you switch to using Microsoft Edge, the more secure and safer browser that prevents the use of ActiveX controls. We also recommend that you limit the usage of Internet Explorer 11 to only those line-of-business apps that require legacy technology.<br><br>For more info, see <a href="/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking" data-raw-source="[Out-of-date ActiveX control blocking](/internet-explorer/ie11-deploy-guide/out-of-date-activex-control-blocking)">Out-of-date ActiveX control blocking</a>.</td>
     </tr>
     <tr>
          <td>Resilient File System (ReFS) isn&#39;t currently supported with WIP.</td>
@@ -115,7 +114,7 @@ This table provides info about the most common problems you might encounter whil
             </ul>
         </td>
         <td>WIP isn’t turned on for employees in your organization. Error code 0x807c0008 will result if WIP is deployed by using Microsoft Endpoint Configuration Manager.</td>
-        <td>Don’t set the <b>MakeFolderAvailableOfflineDisabled</b> option to <b>False</b> for any of the specified folders.  You can configure this parameter, as described <a href="https://docs.microsoft.com/windows-server/storage/folder-redirection/disable-offline-files-on-folders" data-raw-source="[here](https://docs.microsoft.com/windows-server/storage/folder-redirection/disable-offline-files-on-folders)">here</a>.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see <a href="https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.
+        <td>Don’t set the <b>MakeFolderAvailableOfflineDisabled</b> option to <b>False</b> for any of the specified folders.  You can configure this parameter, as described <a href="/windows-server/storage/folder-redirection/disable-offline-files-on-folders" data-raw-source="[here](/windows-server/storage/folder-redirection/disable-offline-files-on-folders)">here</a>.<br><br>If you currently use redirected folders, we recommend that you migrate to a file synchronization solution that supports WIP, such as Work Folders or OneDrive for Business. Additionally, if you apply redirected folders after WIP is already in place, you might be unable to open your files offline. For more info about these potential access errors, see <a href="https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection" data-raw-source="[Can&#39;t open files offline when you use Offline Files and Windows Information Protection](https://support.microsoft.com/help/3187045/can-t-open-files-offline-when-you-use-offline-files-and-windows-information-protection)">Can&#39;t open files offline when you use Offline Files and Windows Information Protection</a>.
         </td>
     </tr>
     <tr>
@@ -159,4 +158,4 @@ Wait a few minutes to allow OneDrive to finish syncing & upgrading the notebook,
 
 
 > [!NOTE]
-> Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).       
+> Help to make this topic better by providing us with edits, additions, and feedback. For info about how to contribute to this topic, see [Contributing to our content](https://github.com/Microsoft/windows-itpro-docs/blob/master/CONTRIBUTING.md).

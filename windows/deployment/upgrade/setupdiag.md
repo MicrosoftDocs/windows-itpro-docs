@@ -29,7 +29,7 @@ ms.topic: article
 
 ## About SetupDiag
 
-<I>Current downloadable version of SetupDiag: 1.6.0.42</I>
+<I>Current downloadable version of SetupDiag: 1.6.2107.27002</I>
 >Always be sure to run the most recent version of SetupDiag, so that can access new functionality and fixes to known issues.
 
 SetupDiag is a standalone diagnostic tool that can be used to obtain details about why a Windows 10 upgrade was unsuccessful. 
@@ -38,7 +38,7 @@ SetupDiag works by examining Windows Setup log files. It attempts to parse these
 
 ## SetupDiag in Windows 10, version 2004 and later
 
-With the release of Windows 10, version 2004, SetupDiag is included with [Windows Setup](https://docs.microsoft.com/windows-hardware/manufacture/desktop/deployment-troubleshooting-and-log-files#windows-setup-scenario).
+With the release of Windows 10, version 2004, SetupDiag is included with [Windows Setup](/windows-hardware/manufacture/desktop/deployment-troubleshooting-and-log-files#windows-setup-scenario).
 
 During the upgrade process, Windows Setup will extract all its sources files to the **%SystemDrive%\$Windows.~bt\Sources** directory. With Windows 10, version 2004 and later, **setupdiag.exe** is also installed to this directory. If there is an issue with the upgrade, SetupDiag will automatically run to determine the cause of the failure.
 
@@ -49,7 +49,10 @@ When run by Windows Setup, the following [parameters](#parameters) are used:
 - /Output:%windir%\logs\SetupDiag\SetupDiagResults.xml
 - /RegPath:HKEY_LOCAL_MACHINE\SYSTEM\Setup\SetupDiag\Results
 
-The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.
+The resulting SetupDiag analysis can be found at **%WinDir%\Logs\SetupDiag\SetupDiagResults.xml** and in the registry under **HKLM\SYSTEM\Setup\SetupDiag\Results**.  Please note that this is not the same as the default registry path when SetupDiag is run manually. When SetupDiag is run manually, and the /RegPath parameter is not specified, data is stored in the registry at HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag.
+
+> [!IMPORTANT]
+> When SetupDiag indicates that there were multiple failures, the last failure in the log file is typically the fatal error, not the first one.
 
 If the upgrade process proceeds normally, the **Sources** directory including **setupdiag.exe** is moved under **%SystemDrive%\Windows.Old** for cleanup. If the **Windows.old** directory is deleted later, **setupdiag.exe** will also be removed.
 
@@ -59,13 +62,13 @@ To quickly use SetupDiag on your current computer:
 1. Verify that your system meets the [requirements](#requirements) described below. If needed, install the [.NET framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137).
 2. [Download SetupDiag](https://go.microsoft.com/fwlink/?linkid=870142).
 3. If your web browser asks what to do with the file, choose **Save**. By default, the file will be saved to your **Downloads** folder. You can also save it to a different location if desired by using **Save As**.
-4. When SetupDiag has finished downloading, open the folder where you downloaded the file. By default, this is your **Downloads** folder, which is displayed in File Explorer under **Quick access** in the left navigation pane.
+4. When SetupDiag has finished downloading, open the folder where you downloaded the file. By default, this folder is the **Downloads** folder, which is displayed in File Explorer under **Quick access** in the left navigation pane.
 5. Double-click the **SetupDiag** file to run it. Click **Yes** if you are asked to approve running the program.
     - Double-clicking the file to run it will automatically close the command window when SetupDiag has completed its analysis. If you wish to keep this window open instead, and review the messages that you see, run the program by typing **SetupDiag** at the command prompt instead of double-clicking it. You will need to change directories to the location of SetupDiag to run it this way.
-6. A command window will open while SetupDiag diagnoses your computer. Wait for this to finish.
+6. A command window will open while SetupDiag diagnoses your computer. Wait for this process to finish.
 7. When SetupDiag finishes, two files will be created in the same folder where you double-clicked SetupDiag. One is a configuration file, the other is a log file.
 8. Use Notepad to open the log file: **SetupDiagResults.log**.
-9. Review the information that is displayed. If a rule was matched, this can tell you why the computer failed to upgrade, and potentially how to fix the problem. See the [Text log sample](#text-log-sample) below.
+9. Review the information that is displayed. If a rule was matched, this information can tell you why the computer failed to upgrade, and potentially how to fix the problem. See the [Text log sample](#text-log-sample) below.
 
 For instructions on how to run the tool in offline mode and with more advanced options, see the [Parameters](#parameters) and [Examples](#examples) sections below.
 
@@ -74,7 +77,7 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 ## Requirements
 
 1. The destination OS must be Windows 10.
-2. [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137) must be installed. If you are not sure what version of .NET is currently installed, see [How to: Determine Which .NET Framework Versions Are Installed](https://docs.microsoft.com/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed). You can also use the following command-line query to display the installed v4 versions:
+2. [.NET Framework 4.6](https://www.microsoft.com/download/details.aspx?id=48137) must be installed. If you are not sure what version of .NET is currently installed, see [How to: Determine Which .NET Framework Versions Are Installed](/dotnet/framework/migration-guide/how-to-determine-which-versions-are-installed). You can also use the following command-line query to display the installed v4 versions:
 
     ```
     reg query "HKLM\SOFTWARE\Microsoft\Net Framework Setup\NDP\v4" /s
@@ -85,19 +88,19 @@ The [Release notes](#release-notes) section at the bottom of this topic has info
 | Parameter | Description |
 | --- | --- |
 | /? | <ul><li>Displays interactive help</ul> |
-| /Output:\<path to results file\> | <ul><li>This optional parameter enables you to specify the output file for results. This is where you will find what SetupDiag was able to determine.  Only text format output is supported.  UNC paths will work, provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, you must enclose the entire path in double quotes (see the example section below). <li>Default: If not specified, SetupDiag will create the file **SetupDiagResults.log** in the same  directory where SetupDiag.exe is run.</ul> |
+| /Output:\<path to results file\> | <ul><li>This optional parameter enables you to specify the output file for results. This file is where you will find what SetupDiag was able to determine.  Only text format output is supported.  UNC paths will work, provided the context under which SetupDiag runs has access to the UNC path.  If the path has a space in it, you must enclose the entire path in double quotes (see the example section below). <li>Default: If not specified, SetupDiag will create the file **SetupDiagResults.log** in the same  directory where SetupDiag.exe is run.</ul> |
 | /LogsPath:\<Path to logs\> | <ul><li>This optional parameter tells SetupDiag.exe where to find the log files for an offline analysis. These log files can be in a flat folder format, or containing multiple subdirectories.  SetupDiag will recursively search all child directories.</ul> |
 | /ZipLogs:\<True \| False\> | <ul><li>This optional parameter tells SetupDiag.exe to create a zip file containing the results and all the log files it parsed.  The zip file is created in the same directory where SetupDiag.exe is run.<li>Default: If not specified, a value of 'true' is used.</ul> |
 | /Format:\<xml \| json\> | <ul><li>This optional parameter can be used to output log files in xml or JSON format.  If this parameter is not specified, text format is used by default.</ul> |
 | /Scenario:\[Recovery\] | <ul><li>This optional parameter instructs SetupDiag.exe to look for and process reset and recovery logs and ignore setup/upgrade logs.</ul>|
-| /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce an additional log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
+| /Verbose | <ul><li>This optional parameter will output much more data to a log file.  By default, SetupDiag will only produce a log file entry for serious errors.  Using **/Verbose** will cause SetupDiag to always produce another log file with debugging details. These details can be useful when reporting a problem with SetupDiag.</ul> |
 | /NoTel | <ul><li>This optional parameter tells SetupDiag.exe not to send diagnostic telemetry to Microsoft.</ul> |
 | /AddReg | <ul><li>This optional parameter instructs SetupDiag.exe to add failure information to the registry in offline mode. By default, SetupDiag will add failure information to the registry in online mode only. Registry data is added to the following location on the system where SetupDiag is run: **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**.</ul> |
 | /RegPath | <ul><li>This optional parameter instructs SetupDiag.exe to add failure information to the registry using the specified path. If this parameter is not specified the default path is **HKLM\SYSTEM\Setup\MoSetup\Volatile\SetupDiag**.
 </ul> |
 
 Note: The **/Mode** parameter is deprecated in version 1.4.0.0 of SetupDiag. 
-- In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In version 1.4.0.0 when you specify /LogsPath then SetupDiag will automatically run in offline mode, therefore the /Mode parameter is not needed.
+- In previous versions, this command was used with the LogsPath parameter to specify that SetupDiag should run in an offline manner to analyze a set of log files that were captured from a different computer. In version 1.4.0.0, when you specify /LogsPath then SetupDiag will automatically run in offline mode, therefore the /Mode parameter is not needed.
 
 ### Examples:
 
@@ -107,7 +110,7 @@ In the following example, SetupDiag is run with default parameters (online mode,
 SetupDiag.exe
 ```
 
-In the following example, SetupDiag is run in online mode (this is the default).  It will know where to look for logs on the current (failing) system, so there is no need to gather logs ahead of time. A custom location for results is specified.
+In the following example, SetupDiag is run in online mode (this mode is the default).  It will know where to look for logs on the current (failing) system, so there is no need to gather logs ahead of time. A custom location for results is specified.
 
 ```
 SetupDiag.exe /Output:C:\SetupDiag\Results.log
@@ -140,26 +143,26 @@ SetupDiag.exe /Scenario:Recovery /Format:xml
 
 ## Log files
 
-[Windows Setup Log Files and Event Logs](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-setup-log-files-and-event-logs) has information about where logs are created during Windows Setup. For offline processing, you should run SetupDiag against the contents of the entire folder. For example, depending on when the upgrade failed, copy one of the following folders to your offline location:
+[Windows Setup Log Files and Event Logs](/windows-hardware/manufacture/desktop/windows-setup-log-files-and-event-logs) has information about where logs are created during Windows Setup. For offline processing, you should run SetupDiag against the contents of the entire folder. For example, depending on when the upgrade failed, copy one of the following folders to your offline location:
 
 \\$Windows.~bt\sources\panther
 <br>\\$Windows.~bt\Sources\Rollback
 <br>\Windows\Panther
 <br>\Windows\Panther\NewOS
 
-If you copy the parent folder and all sub-folders, SetupDiag will automatically search for log files in all subdirectories.
+If you copy the parent folder and all subfolders, SetupDiag will automatically search for log files in all subdirectories.
 
 ## Setup bug check analysis
 
 When Microsoft Windows encounters a condition that compromises safe system operation, the system halts. This condition is called a bug check. It is also commonly referred to as a system crash, a kernel error, a Stop error, or BSOD. Typically a hardware device, hardware driver, or related software causes this error.
 
-If crash dumps [are enabled](https://docs.microsoft.com/windows-hardware/drivers/debugger/enabling-a-kernel-mode-dump-file) on the system, a crash dump file is created. If the bug check occurs during an upgrade, Windows Setup will extract a minidump (setupmem.dmp) file. SetupDiag can also debug these setup related minidumps.
+If crash dumps [are enabled](/windows-hardware/drivers/debugger/enabling-a-kernel-mode-dump-file) on the system, a crash dump file is created. If the bug check occurs during an upgrade, Windows Setup will extract a minidump (setupmem.dmp) file. SetupDiag can also debug these setup-related minidumps.
 
-To debug a setup related bug check, you must:
+To debug a setup-related bug check, you must:
 - Specify the **/LogsPath** parameter. You cannot debug memory dumps in online mode. 
 - Gather the setup memory dump file (setupmem.dmp) from the failing system. 
     - Setupmem.dmp will be created in either **%SystemDrive%\$Windows.~bt\Sources\Rollback**, or in **%WinDir%\Panther\NewOS\Rollback** depending on when the bug check occurs.
-- Install the [Windows Debugging Tools](https://docs.microsoft.com/windows-hardware/drivers/debugger/debugger-download-tools) on the computer that runs SetupDiag.
+- Install the [Windows Debugging Tools](/windows-hardware/drivers/debugger/debugger-download-tools) on the computer that runs SetupDiag.
 
 In the following example, the **setupmem.dmp** file is copied to the **D:\Dump** directory and the Windows Debugging Tools are installed prior to running SetupDiag:
 
@@ -174,7 +177,7 @@ SetupDiag.exe /Output:C:\SetupDiag\Dumpdebug.log /LogsPath:D:\Dump
 
 ## Sample output
 
-The following is an example where SetupDiag is run in offline mode.
+The following command is an example where SetupDiag is run in offline mode.
 
 ```
 D:\SetupDiag>SetupDiag.exe /output:c:\setupdiag\result.xml /logspath:D:\Tests\Logs\f55be736-beed-4b9b-aedf-c133536c946e /format:xml
@@ -219,7 +222,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 1. CompatScanOnly - FFDAFD37-DB75-498A-A893-472D49A1311D
     - This rule indicates that setup.exe was called with a specific command line parameter that indicated setup was to do a compat scan only, not an upgrade.
 2. BitLockerHardblock - C30152E2-938E-44B8-915B-D1181BA635AE
-    - This is a block when the target OS does not support BitLocker, yet the host OS has BitLocker enabled.
+    - This is an upgrade block when the target OS does not support BitLocker, yet the host OS has BitLocker enabled.
 3. VHDHardblock - D9ED1B82-4ED8-4DFD-8EC0-BE69048978CC
     - This block happens when the host OS is booted to a VHD image.  Upgrade is not supported when the host OS is booted from a VHD image.
 4. PortableWorkspaceHardblock - 5B0D3AB4-212A-4CE4-BDB9-37CA404BB280
@@ -233,11 +236,11 @@ Each rule name and its associated unique rule identifier are listed with a descr
 8. CompatBlockedApplicationAutoUninstall – BEBA5BC6-6150-413E-8ACE-5E1EC8D34DD5
     - This rule indicates there is an application that needs to be uninstalled before setup can continue.
 9. CompatBlockedApplicationDismissable - EA52620B-E6A0-4BBC-882E-0686605736D9
-    - When running setup in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies “/compat ignorewarning”.  This rule indicates setup was executed in /quiet mode but there is an application dismissible block message that have prevented setup from continuing.
+    - When running setup in /quiet mode, there are dismissible application messages that turn into blocks unless the command line also specifies “/compat ignorewarning”.  This rule indicates setup was executed in /quiet mode but there is an application dismissible block message that has prevented setup from continuing.
 10. CompatBlockedApplicationManualUninstall - 9E912E5F-25A5-4FC0-BEC1-CA0EA5432FF4
     - This rule indicates that an application without an Add/Remove Programs entry, is present on the system and blocking setup from continuing.  This typically requires manual removal of the files associated with this application to continue.
 11. HardblockDeviceOrDriver - ED3AEFA1-F3E2-4F33-8A21-184ADF215B1B
-    - This indicates a device driver that is loaded on the host OS is not compatible with the newer OS version and needs to be removed prior to the upgrade.
+    - This error indicates a device driver that is loaded on the host OS is not compatible with the newer OS version and needs to be removed prior to the upgrade.
 12. HardblockMismatchedLanguage - 60BA8449-CF23-4D92-A108-D6FCEFB95B45
     - This rule indicates the host OS and the target OS language editions do not match.
 13. HardblockFlightSigning - 598F2802-3E7F-4697-BD18-7A6371C8B2F8
@@ -336,9 +339,16 @@ Each rule name and its associated unique rule identifier are listed with a descr
     - Detects failures in down-level phase before setup platform is invoked.
 60. FindSPFatalError - A4028172-1B09-48F8-AD3B-86CDD7D55852
     - Captures failure information when setup platform encounters a fatal error.
-
+61. UserProfileSuffixMismatch - B4BBCCCE-F99D-43EB-9090-078213397FD8
+    - Detects when a file or other object causes the migration or creation of a user profile to fail during the update.
 
 ## Release notes
+
+05/06/2021 - SetupDiag v1.6.1.0 is released with 61 rules, as a standalone tool available in the Download Center.  
+- This version of SetupDiag is included with Windows 10, version 21H1.
+- A new rule is added: UserProfileSuffixMismatch.
+- All outputs to the command line are now invariant culture for purposes of time/date format
+- Fixed an issue with registry output in which the "no match found" result caused a corrupted REG_SZ value.
 
 08/08/2019 - SetupDiag v1.6.0.42 is released with 60 rules, as a standalone tool available from the Download Center.
  - Log detection performance is improved.  What used to take up to a minute should take around 10 seconds or less.
@@ -356,7 +366,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
 06/19/2019 - SetupDiag v1.5.0.0 is released with 60 rules, as a standalone tool available from the Download Center.
 - All date and time outputs are updated to localized format per user request.
 - Added setup Operation and Phase information to /verbose log.
-- Added last Setup Operation and last Setup Phase information to most rules where it make sense (see new output below).
+- Added last Setup Operation and last Setup Phase information to most rules where it makes sense (see new output below).
 - Performance improvement in searching setupact.logs to determine correct log to parse.
 - Added SetupDiag version number to text report (xml and json always had it).
 - Added "no match" reports for xml and json per user request.
@@ -370,7 +380,7 @@ Each rule name and its associated unique rule identifier are listed with a descr
   - For an example, see [Sample registry key](#sample-registry-key).
 
 05/17/2019 - SetupDiag v1.4.1.0 is released with 53 rules, as a standalone tool available from the Download Center.
-- This release dds the ability to find and diagnose reset and recovery failures (Push Button Reset).  
+- This release dds the ability to find and diagnose reset and recovery failures (Push-Button Reset).  
 
 12/18/2018 - SetupDiag v1.4.0.0 is released with 53 rules, as a standalone tool available from the Download Center.
 - This release includes major improvements in rule processing performance: ~3x faster rule processing performance!
@@ -557,4 +567,4 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
 
 ## Related topics
 
-[Resolve Windows 10 upgrade errors: Technical information for IT Pros](https://docs.microsoft.com/windows/deployment/upgrade/resolve-windows-10-upgrade-errors)
+[Resolve Windows 10 upgrade errors: Technical information for IT Pros](./resolve-windows-10-upgrade-errors.md)

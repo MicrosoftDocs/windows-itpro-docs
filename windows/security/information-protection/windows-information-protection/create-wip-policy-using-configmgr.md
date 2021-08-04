@@ -22,7 +22,6 @@ ms.date: 01/09/2020
 **Applies to:**
 
 - Windows 10, version 1607 and later
-- Windows 10 Mobile, version 1607 and later
 - Microsoft Endpoint Configuration Manager
 
 Configuration Manager helps you create and deploy your Windows Information Protection (WIP) policy, including letting you choose your protected apps, your WIP-protection mode, and how to find enterprise data on the network.
@@ -96,7 +95,7 @@ For this example, we're going to add Microsoft OneNote, a store app, to the **Ap
 
 5.  Type the name of the app and the name of its publisher, and then click **OK**. For this UWP app example, the **Publisher** is `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US` and the **Product name** is `Microsoft.Office.OneNote`.
 
-If you don't know the publisher or product name, you can find them for both desktop devices and Windows 10 Mobile phones by following these steps.
+If you don't know the publisher or product name, you can find them for both desktop devices by following these steps.
 
 **To find the Publisher and Product Name values for Store apps without installing them**
 
@@ -104,7 +103,7 @@ If you don't know the publisher or product name, you can find them for both desk
 
    > [!NOTE]
    > 
-   > If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in the [Add an AppLocker policy file](#add-an-applocker-policy-file) section.
+   > If your app is already installed on desktop devices, you can use the AppLocker local security policy MMC snap-in to gather the info for adding the app to the protected apps list. For info about how to do this, see the steps in [Add an AppLocker policy file](#add-an-applocker-policy-file) in this article.
 
 2. Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, `9wzdncrfhvjl`.
 
@@ -112,56 +111,32 @@ If you don't know the publisher or product name, you can find them for both desk
 
    The API runs and opens a text editor with the app details.
 
-   ``` json
-       {
+   ```json
+   {
        "packageIdentityName": "Microsoft.Office.OneNote",
        "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
-       }
+   }
    ```
 
 4. Copy the `publisherCertificateName` value and paste them into the **Publisher Name** box, copy the `packageIdentityName` value into the **Product Name** box of Intune.
 
    > [!IMPORTANT]
-   > The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that's using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as "CN=" followed by the `windowsPhoneLegacyId`.<p>For example:<p>
-   > ```json
-   >     {
-   >         "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-   >     }
-   > ```
-
-**To find the Publisher and Product Name values for apps installed on Windows 10 mobile phones**
-1. If you need to add mobile apps that aren't distributed through the Store for Business, you must use the **Windows Device Portal** feature.
-
-   >[!NOTE]
-   >Your PC and phone must be on the same wireless network.
-
-2. On the Windows Phone, go to **Settings**, choose **Update & security**, and then choose **For developers**.
-
-3. On the **For developers** screen, turn on **Developer mode**, turn on **Device Discovery**, and then turn on **Device Portal**.
-
-4. Copy the URL in the **Device Portal** area into your device's browser, and then accept the SSL certificate.
-
-5. In the **Device discovery** area, press **Pair**, and then enter the PIN into the website from the previous step.
-
-6. On the **Apps** tab of the website, you can see details for the running apps, including the publisher and product names.
-
-7. Start the app for which you're looking for the publisher and product name values.
-
-8. Copy the `publisherCertificateName` value and paste it into the **Publisher Name** box and the `packageIdentityName` value into the **Product Name** box of Intune.
-
-   > [!IMPORTANT]
    > The JSON file might also return a `windowsPhoneLegacyId` value for both the **Publisher Name** and **Product Name** boxes. This means that you have an app that's using a XAP package and that you must set the **Product Name** as `windowsPhoneLegacyId`, and set the **Publisher Name** as "CN=" followed by the `windowsPhoneLegacyId`.
-   > For example:<p>
+   >
+   > For example:
+   >
    > ```json
-   >     {
-   >         "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
-   >     }
+   > {
+   >     "windowsPhoneLegacyId": "ca05b3ab-f157-450c-8c49-a1f127f5e71d",
+   > }
    > ```
 
 ### Add a desktop app rule to your policy
+
 For this example, we're going to add Internet Explorer, a desktop app, to the **App Rules** list.
 
 **To add a desktop app to your policy**
+
 1.  From the **App rules** area, click **Add**.
 
     The **Add app rule** box appears.
@@ -217,24 +192,28 @@ For this example, we're going to add Internet Explorer, a desktop app, to the **
 
 If you're unsure about what to include for the publisher, you can run this PowerShell command:
 
-```ps1
+```powershell
 Get-AppLockerFileInformation -Path "<path of the exe>"
 ```
+
 Where `"<path of the exe>"` goes to the location of the app on the device. For example, `Get-AppLockerFileInformation -Path "C:\Program Files\Internet Explorer\iexplore.exe"`.
 
 In this example, you'd get the following info:
 
-``` json
+```console
 Path                   Publisher
 ----                   ---------
 %PROGRAMFILES%\INTERNET EXPLORER\IEXPLORE.EXE O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US\INTERNET EXPLOR...
 ```
+
 Where the text, `O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US` is the publisher name to enter in the **Publisher Name** box.
 
 ### Add an AppLocker policy file
-For this example, we're going to add an AppLocker XML file to the **App Rules** list. You'll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](https://technet.microsoft.com/itpro/windows/keep-secure/applocker-overview) content.
+
+For this example, we're going to add an AppLocker XML file to the **App Rules** list. You'll use this option if you want to add multiple apps at the same time. For more info about AppLocker, see the [AppLocker](../../threat-protection/windows-defender-application-control/applocker/applocker-overview.md) content.
 
 **To create an app rule and xml file using the AppLocker tool**
+
 1.  Open the Local Security Policy snap-in (SecPol.msc).
 
 2.  In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
@@ -247,19 +226,19 @@ For this example, we're going to add an AppLocker XML file to the **App Rules** 
 
 4. On the **Before You Begin** page, click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/intune-applocker-before-begin.png)
+    ![Create a Packaged app Rules wizard and showing the Before You Begin page](images/intune-applocker-before-begin.png)
 
 5. On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
 
-    ![Create Packaged app Rules wizard, showing the Before You Begin page](images/intune-applocker-permissions.png)
+    ![Create Packaged app Rules wizard, set action to Allow](images/intune-applocker-permissions.png)
 
 6.  On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
 
-    ![Create Packaged app Rules wizard, showing the Publisher](images/intune-applocker-publisher.png)
+    ![Create Packaged app Rules wizard, select use an installed packaged app](images/intune-applocker-publisher.png)
 
 7. In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we're using Microsoft Photos.
 
-    ![Create Packaged app Rules wizard, showing the Select applications page](images/intune-applocker-select-apps.png)
+    ![Create Packaged app Rules wizard, select application and click ok](images/intune-applocker-select-apps.png)
 
 8. On the updated **Publisher** page, click **Create**.
 
@@ -336,7 +315,7 @@ If you're running into compatibility issues where your app is incompatible with 
 
 3.  Click **Exempt** from the **Windows Information Protection mode** drop-down list.
 
-    Be aware that when you exempt apps, they're allowed to bypass the WIP restrictions and access your corporate data. To allow apps, see the [Add app rules to your policy](#add-app-rules-to-your-policy) section of this topic.
+    Be aware that when you exempt apps, they're allowed to bypass the WIP restrictions and access your corporate data. To allow apps, see [Add app rules to your policy](#add-app-rules-to-your-policy) in this article.
 
 4.  Fill out the rest of the app rule info, based on the type of rule you're adding:
 
@@ -363,7 +342,7 @@ We recommend that you start with **Silent** or **Override** while verifying with
 |Silent |WIP runs silently, logging inappropriate data sharing, without blocking anything that would've been prompted for employee interaction while in Override mode. Unallowed actions, like apps inappropriately trying to access a network resource or WIP-protected data, are still blocked.|
 |Off (not recommended) |WIP is turned off and doesn't help to protect or audit your data.<p>After you turn off WIP, an attempt is made to decrypt any WIP-tagged files on the locally attached drives. Be aware that your previous decryption and policy info isn't automatically reapplied if you turn WIP protection back on.|
 
-![Create Configuration Item wizard, choose your WIP-protection level](images/wip-configmgr-appmgmt.png)
+:::image type="content" alt-text="Create Configuration Item wizard, choose your WIP-protection level" source="images/wip-configmgr-appmgmt.png":::
 
 ## Define your enterprise-managed identity domains
 Corporate identity, usually expressed as your primary internet domain (for example, contoso.com), helps to identify and tag your corporate data from apps you've marked as protected by WIP. For example, emails using contoso.com are identified as being corporate and are restricted by your Windows Information Protection policies.
@@ -442,7 +421,7 @@ There are no default locations included with WIP, you must add each of your netw
 
 4. Decide if you want to Windows to look for additional network settings and if you want to show the WIP icon on your corporate files while in File Explorer.
 
-   ![Create Configuration Item wizard, Add whether to search for additional network settings](images/wip-configmgr-optsettings.png)
+   :::image type="content" alt-text="Create Configuration Item wizard, Add whether to search for additional network settings" source="images/wip-configmgr-optsettings.png":::
 
    - **Enterprise Proxy Servers list is authoritative (do not auto-detect).** Click this box if you want Windows to treat the proxy servers you specified in the network boundary definition as the complete list of proxy servers available on your network. If you clear this box, Windows will search for additional proxy servers in your immediate network. Not configured is the default option.
 
@@ -456,7 +435,7 @@ There are no default locations included with WIP, you must add each of your netw
 
    After you create and deploy your WIP policy to your employees, Windows will begin to encrypt your corporate data on the employees' local device drive. If somehow the employees' local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data. 
 
-   For more info about how to find and export your data recovery certificate, see the [Data Recovery and Encrypting File System (EFS)](https://go.microsoft.com/fwlink/p/?LinkId=761462) topic. For more info about creating and verifying your EFS DRA certificate, see the [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
+   For more info about how to find and export your data recovery certificate, see [Data Recovery and Encrypting File System (EFS)](/previous-versions/tn-archive/cc512680(v=technet.10)). For more info about creating and verifying your EFS DRA certificate, see [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](create-and-verify-an-efs-dra-certificate.md).
 
 ## Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you'll be asked to decide if you want to add any optional WIP settings.
@@ -465,12 +444,6 @@ After you've decided where your protected apps can access enterprise data on you
 
 **To set your optional settings**
 1.  Choose to set any or all of the optional settings:
-
-    - **Prevent corporate data from being accessed by apps when the device is locked. Applies only to Windows 10 Mobile**. Determines whether to encrypt enterprise data using a key that's protected by an employee's PIN code on a locked device. Apps won't be able to read corporate data when the device is locked. The options are:
-
-        - **Yes (recommended).** Turns on the feature and provides the additional protection.
-
-        - **No, or not configured.**  Doesn't enable this feature.
 
     - **Allow Windows Search to search encrypted corporate data and Store apps.** Determines whether Windows Search can search and index encrypted corporate data and Store apps. The options are:
 
@@ -484,7 +457,7 @@ After you've decided where your protected apps can access enterprise data on you
 
         - **No.** Stop local encryption keys from being revoked from a device during unenrollment. For example, if you're migrating between Mobile Device Management (MDM) solutions.
 
-    - **Allow Azure RMS.** Enables secure sharing of files by using removable media such as USB drives. For more information about how RMS works with WIP, see [Create a WIP policy using Intune](create-wip-policy-using-intune-azure.md). To confirm what templates your tenant has, run [Get-AadrmTemplate](https://docs.microsoft.com/powershell/module/aadrm/get-aadrmtemplate) from the [AADRM PowerShell module](https://docs.microsoft.com/azure/information-protection/administer-powershell). If you don't specify a template, WIP uses a key from a default RMS template that everyone in the tenant will have access to.
+    - **Allow Azure RMS.** Enables secure sharing of files by using removable media such as USB drives. For more information about how RMS works with WIP, see [Create a WIP policy using Intune](create-wip-policy-using-intune-azure.md). To confirm what templates your tenant has, run [Get-AadrmTemplate](/powershell/module/aadrm/get-aadrmtemplate) from the [AADRM PowerShell module](/azure/information-protection/administer-powershell). If you don't specify a template, WIP uses a key from a default RMS template that everyone in the tenant will have access to.
 
 2. After you pick all of the settings you want to include, click **Summary**.
 
@@ -500,11 +473,11 @@ After you've finished configuring your policy, you can review all of your info o
 
 ## Deploy the WIP policy
 After you've created your WIP policy, you'll need to deploy it to your organization's devices. For info about your deployment options, see these topics:
-- [Operations and Maintenance for Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=708224)
+- [Operations and Maintenance for Compliance Settings in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699357(v=technet.10))
 
-- [How to Create Configuration Baselines for Compliance Settings in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=708225)
+- [How to Create Configuration Baselines for Compliance Settings in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg712268(v=technet.10))
 
-- [How to Deploy Configuration Baselines in Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=708226)
+- [How to Deploy Configuration Baselines in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/hh219289(v=technet.10))
 
 ## Related topics
 

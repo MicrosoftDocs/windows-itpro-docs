@@ -41,7 +41,7 @@ All server and client computers referenced in this guide are on the same subnet.
 
 ## Add an OS upgrade package
 
-Configuration Manager Current Branch includes a native in-place upgrade task. This task sequence differs from the MDT in-place upgrade task sequence in that it does not use a default OS image, but rather uses an [OS upgrade package](https://docs.microsoft.com/configmgr/osd/get-started/manage-operating-system-upgrade-packages).
+Configuration Manager Current Branch includes a native in-place upgrade task. This task sequence differs from the MDT in-place upgrade task sequence in that it does not use a default OS image, but rather uses an [OS upgrade package](/configmgr/osd/get-started/manage-operating-system-upgrade-packages).
 
 On **CM01**:
 
@@ -140,4 +140,4 @@ In-place upgrade with Configuration Manager
 ## Related topics
 
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
-[Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620109)
+[Configuration Manager Team blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/bg-p/ConfigurationManagerBlog)

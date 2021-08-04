@@ -6,9 +6,9 @@ description: Cortana includes powerful configuration options specifically to opt
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ---
 
 # Set up and test Cortana in Windows 10, version 2004 and later
@@ -16,7 +16,7 @@ ms.author: dansimp
 ## Before you begin
 
 - If your enterprise had previously disabled Cortana for your employees using the **Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana** Group Policy or the **Experience\AllowCortana** MDM setting but want to enable it now that Cortana is part of Microsoft 365, you will need to re-enable it at least for Windows 10, version 2004 and later.
-- **Cortana is regularly updated through the Microsoft Store.** Beginning with Windows 10, version 2004, Cortana is an appx preinstalled with Windows and is regularly updated through the Microsoft Store. To receive the latest updates to Cortana, you will need to [enable updates through the Microsoft Store](https://docs.microsoft.com/windows/configuration/stop-employees-from-using-microsoft-store).
+- **Cortana is regularly updated through the Microsoft Store.** Beginning with Windows 10, version 2004, Cortana is an appx preinstalled with Windows and is regularly updated through the Microsoft Store. To receive the latest updates to Cortana, you will need to [enable updates through the Microsoft Store](../stop-employees-from-using-microsoft-store.md).
 
 ## Set up and configure the Bing Answers feature
 Bing Answers provides fast, authoritative results to search queries based on search terms. When the Bing Answers feature is enabled, users will be able to ask Cortana web-related questions in the Cortana in Windows app, such as &quot;What&#39;s the current weather?&quot; or &quot;Who is the president of the U.S.?,&quot; and get a response, based on public results from Bing.com.
@@ -31,7 +31,7 @@ Users cannot enable or disable the Bing Answer feature individually. So, if you 
 
 Sign in to the [Office Configuration Admin tool](https://config.office.com/).
 
-Follow the steps [here](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service#steps-for-creating-a-policy-configuration) to create this policy configuration. Once completed, the policy will look as shown below:
+Follow the steps [here](/deployoffice/overview-office-cloud-policy-service#steps-for-creating-a-policy-configuration) to create this policy configuration. Once completed, the policy will look as shown below:
 
 :::image type="content" source="../screenshot3.png" alt-text="Screenshot: Bing policy example":::
 
@@ -41,7 +41,7 @@ When a user enters a search query (by speech or text), Cortana evaluates if the 
 
 1. If it is for any of the first-party compliant skills, the query is sent to that skill, and results/action are returned.
 
-2. If it is not for any of the first-party compliant skills, the query is sent to Bing for a search of public results from Bing.com. Because enterprise searches might be sensitive, similar to [Microsoft Search in Bing](https://docs.microsoft.com/MicrosoftSearch/security-for-search#microsoft-search-in-bing-protects-workplace-searches), Bing Answers in Cortana has implemented a set of trust measures, described below, that govern how the separate search of public results from Bing.com is handled. The Bing Answers in Cortana trust measures are consistent with the enhanced privacy and security measures described in [Microsoft Search in Bing](https://docs.microsoft.com/MicrosoftSearch/security-for-search). All Bing.com search logs that pertain to Cortana traffic are disassociated from users&#39; workplace identity. All Cortana queries issued via a work or school account are stored separately from public, non-Cortana traffic.
+2. If it is not for any of the first-party compliant skills, the query is sent to Bing for a search of public results from Bing.com. Because enterprise searches might be sensitive, similar to [Microsoft Search in Bing](/MicrosoftSearch/security-for-search#microsoft-search-in-bing-protects-workplace-searches), Bing Answers in Cortana has implemented a set of trust measures, described below, that govern how the separate search of public results from Bing.com is handled. The Bing Answers in Cortana trust measures are consistent with the enhanced privacy and security measures described in [Microsoft Search in Bing](/MicrosoftSearch/security-for-search). All Bing.com search logs that pertain to Cortana traffic are disassociated from users&#39; workplace identity. All Cortana queries issued via a work or school account are stored separately from public, non-Cortana traffic.
 
 Bing Answers is enabled by default for all users. However, admins can configure and change this for specific users and user groups in their organization.
 

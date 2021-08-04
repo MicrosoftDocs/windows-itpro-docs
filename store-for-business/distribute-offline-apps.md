@@ -12,7 +12,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 10/17/2017
+ms.date: 07/21/2021
 ---
 
 # Distribute offline apps
@@ -22,6 +22,9 @@ ms.date: 10/17/2017
 
 - Windows 10
 - Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 Offline licensing is a new licensing option for Windows 10 with Microsoft Store for Business and Microsoft Store for Education. With offline licenses, organizations can download apps and their licenses to deploy within their network, or on devices that are not connected to the Internet. ISVs or devs can opt-in their apps for offline licensing when they submit them to the Windows Dev Center. Only apps that are opted in to offline licensing will show that they are available for offline licensing in Microsoft Store for Business and Microsoft Store for Education. This model allows organizations to deploy apps when users or devices do not have connectivity to the Store.
 
@@ -39,13 +42,13 @@ Offline-licensed apps offer an alternative to online apps, and provide additiona
 
 You can't distribute offline-licensed apps directly from Microsoft Store. Once you download the items for the offline-licensed app, you have options for distributing the apps:
 
-- **Deployment Image Servicing and Management**. DISM is a command-line tool that is used to mount and service Microsoft Windows images before deployment. You can also use DISM to install, uninstall, configure, and update Windows features, packages, drivers, and international settings in a .wim file or VHD using the DISM servicing commands. DISM commands are used on offline images. For more information, see [Deployment Image Servicing and Management](https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
+- **Deployment Image Servicing and Management**. DISM is a command-line tool that is used to mount and service Microsoft Windows images before deployment. You can also use DISM to install, uninstall, configure, and update Windows features, packages, drivers, and international settings in a .wim file or VHD using the DISM servicing commands. DISM commands are used on offline images. For more information, see [Deployment Image Servicing and Management](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
 
-- **Create provisioning package**. You can use Windows Imaging and Configuration Designer (ICD) to create a provisioning package for your offline app. Once you have the package, there are options to [apply the provisioning package](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-apply-package). For more information, see [Provisioning Packages for Windows 10](https://docs.microsoft.com/windows/configuration/provisioning-packages/provisioning-packages).
+- **Create provisioning package**. You can use Windows Imaging and Configuration Designer (ICD) to create a provisioning package for your offline app. Once you have the package, there are options to [apply the provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package). For more information, see [Provisioning Packages for Windows 10](/windows/configuration/provisioning-packages/provisioning-packages).
 
 - **Mobile device management provider or management server.** You can use a mobile device management (MDM) provider or management server to distribute offline apps. For more information, see these topics:
-    - [Manage apps from Microsoft Store for Business with Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
-    - [Manage apps from Microsoft Store for Business with Microsoft Intune](https://docs.microsoft.com/mem/intune/apps/windows-store-for-business)<br>
+    - [Manage apps from Microsoft Store for Business with Microsoft Endpoint Configuration Manager](/configmgr/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+    - [Manage apps from Microsoft Store for Business with Microsoft Intune](/mem/intune/apps/windows-store-for-business)<br>
 
 For third-party MDM providers or management servers, check your product documentation.
 

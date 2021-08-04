@@ -7,8 +7,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: dansimp
-author: msfttracyp
+ms.author: greglin
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
 ---
@@ -41,6 +41,8 @@ Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
 
 Here are the provisioned Windows apps in Windows 10 versions 1803, 1809, 1903, 1909, and 2004.
 
+<br/>
+
 | Package name                                 | App name                                                                                                           | 1803 | 1809 | 1903 | 1909 | 2004 | Uninstall through UI? |
 |----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|:----:|:----:|:----:|:----:|:----:|:---------------------:|
 | Microsoft.3DBuilder                          | [3D Builder](ms-windows-store://pdp/?PFN=Microsoft.3DBuilder_8wekyb3d8bbwe)                                        |      |      |      |      |      |          Yes          |
@@ -49,7 +51,7 @@ Here are the provisioned Windows apps in Windows 10 versions 1803, 1809, 1903, 1
 | Microsoft.GetHelp                            | [Get Help](ms-windows-store://pdp/?PFN=Microsoft.Gethelp_8wekyb3d8bbwe)                                            |   x  |   x  |   x  |   x  |   x  |           No          |
 | Microsoft.Getstarted                         | [Microsoft Tips](ms-windows-store://pdp/?PFN=Microsoft.Getstarted_8wekyb3d8bbwe)                                   |   x  |   x  |   x  |   x  |   x  |           No          |
 | Microsoft.HEIFImageExtension                 | [HEIF Image Extensions](ms-windows-store://pdp/?PFN=Microsoft.HEIFImageExtension_8wekyb3d8bbwe)                    |      |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Messaging                          | [Microsoft Messaging](ms-windows-store://pdp/?PFN=Microsoft.Messaging_8wekyb3d8bbwe)                               |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.Messaging                          | [Microsoft Messaging](ms-windows-store://pdp/?PFN=Microsoft.Messaging_8wekyb3d8bbwe)                               |   x  |   x  |   x  |   x  |      |           No          |
 | Microsoft.Microsoft3DViewer                  | [Mixed Reality Viewer](ms-windows-store://pdp/?PFN=Microsoft.Microsoft3DViewer_8wekyb3d8bbwe)                      |   x  |   x  |   x  |   x  |   x  |           No          |
 | Microsoft.MicrosoftOfficeHub                 | [Office](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe)                                |   x  |   x  |   x  |   x  |   x  |          Yes          |
 | Microsoft.MicrosoftSolitaireCollection       | [Microsoft Solitaire Collection](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe) |   x  |   x  |   x  |   x  |   x  |          Yes          |
@@ -57,10 +59,10 @@ Here are the provisioned Windows apps in Windows 10 versions 1803, 1809, 1903, 1
 | Microsoft.MixedReality.Portal                | [Mixed Reality Portal](ms-windows-store://pdp/?PFN=Microsoft.MixedReality.Portal_8wekyb3d8bbwe)                    |      |   x  |   x  |   x  |   x  |           No          |
 | Microsoft.MSPaint                            | [Paint 3D](ms-windows-store://pdp/?PFN=Microsoft.MSPaint_8wekyb3d8bbwe)                                            |   x  |   x  |   x  |   x  |   x  |           No          |
 | Microsoft.Office.OneNote                     | [OneNote for Windows 10](ms-windows-store://pdp/?PFN=Microsoft.Office.OneNote_8wekyb3d8bbwe)                                      |   x  |   x  |   x  |   x  |   x  |          Yes          |
-| Microsoft.OneConnect                         | [Mobile Plans](ms-windows-store://pdp/?PFN=Microsoft.OneConnect_8wekyb3d8bbwe)                            |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Outlook.DesktopIntegrationServices |                                                                                                                    |      |      |      |   x  |   x  |                       |
+| Microsoft.OneConnect                         | [Mobile Plans](ms-windows-store://pdp/?PFN=Microsoft.OneConnect_8wekyb3d8bbwe)                            |   x  |   x  |   x  |   x  |      |           No          |
+| Microsoft.Outlook.DesktopIntegrationServices |                                                                                                                    |      |      |      |   x  |      |                       |
 | Microsoft.People                             | [Microsoft People](ms-windows-store://pdp/?PFN=Microsoft.People_8wekyb3d8bbwe)                                     |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Print3D                            | [Print 3D](ms-windows-store://pdp/?PFN=Microsoft.Print3D_8wekyb3d8bbwe)                                            |   x  |   x  |   x  |   x  |   x  |           No          |
+| Microsoft.Print3D                            | [Print 3D](ms-windows-store://pdp/?PFN=Microsoft.Print3D_8wekyb3d8bbwe)                                            |   x  |   x  |   x  |   x  |      |           No          |
 | Microsoft.ScreenSketch                       | [Snip & Sketch](ms-windows-store://pdp/?PFN=Microsoft.ScreenSketch_8wekyb3d8bbwe)                                  |      |   x  |   x  |   x  |   x  |           No          |
 | Microsoft.SkypeApp                           | [Skype](ms-windows-store://pdp/?PFN=Microsoft.SkypeApp_kzf8qxf38zg5c)                                              |   x  |   x  |   x  |   x  |   x  |           No          |
 | Microsoft.StorePurchaseApp                   | [Store Purchase App](ms-windows-store://pdp/?PFN=Microsoft.StorePurchaseApp_8wekyb3d8bbwe)                         |   x  |   x  |   x  |   x  |   x  |           No          |
@@ -99,6 +101,7 @@ You can list all system apps with this PowerShell command:
 ```Powershell
 Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | Sort Name | Format-Table Name, InstallLocation
 ```
+<br/>
 
 | Name                             | Package Name                                | 1709 | 1803 | 1809 |Uninstall through UI? |
 |----------------------------------|---------------------------------------------|:-----:|:----:|:----:|-----------------------|
@@ -150,6 +153,7 @@ Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | 
 
 Here are the typical installed Windows apps in Windows 10 versions 1709, 1803, and 1809.
 
+<br/>
 
 |         Name          |                Full name                 | 1709 | 1803 | 1809 | Uninstall through UI? |
 |-----------------------|------------------------------------------|:----:|:----:|:----:|:---------------------:|

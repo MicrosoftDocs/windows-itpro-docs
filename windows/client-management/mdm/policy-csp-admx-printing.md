@@ -1838,15 +1838,15 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Announces the presence of shared printers to print browse master servers for the domain.
+Available in the latest Windows 10 Insider Preview Build. Announces the presence of shared printers to print browse main servers for the domain.
 
 On domains with Active Directory, shared printer resources are available in Active Directory and are not announced.
 
-If you enable this setting, the print spooler announces shared printers to the print browse master servers.
+If you enable this setting, the print spooler announces shared printers to the print browse main servers.
 
-If you disable this setting, shared printers are not announced to print browse master servers, even if Active Directory is not available.
+If you disable this setting, shared printers are not announced to print browse main servers, even if Active Directory is not available.
 
-If you do not configure this setting, shared printers are announced to browse master servers only when Active Directory is not available.
+If you do not configure this setting, shared printers are announced to browse main servers only when Active Directory is not available.
 
 > [!NOTE]
 > A client license is used each time a client computer announces a printer to a print browse master on the domain.
@@ -2013,16 +2013,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607
-- 2 - Available in Windows 10, version 1703
-- 3 - Available in Windows 10, version 1709
-- 4 - Available in Windows 10, version 1803
-- 5 - Available in Windows 10, version 1809
-- 6 - Available in Windows 10, version 1903
-- 7 - Available in Windows 10, version 1909
-- 8 - Available in Windows 10, version 2004
-- 9 - Available in Windows 10, version 20H2
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->

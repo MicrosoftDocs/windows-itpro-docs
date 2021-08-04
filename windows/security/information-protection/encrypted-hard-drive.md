@@ -17,6 +17,7 @@ ms.date: 04/02/2019
 
 **Applies to**
 - Windows 10
+- Windows Server 2022
 - Windows Server 2019
 - Windows Server 2016
 
@@ -44,7 +45,7 @@ Encrypted Hard Drives are supported natively in the operating system through the
 >[!WARNING]
 >Self-Encrypting Hard Drives and Encrypted Hard Drives for Windows are not the same type of device. Encrypted Hard Drives for Windows require compliance for specific TCG protocols as well as IEEE 1667 compliance; Self-Encrypting Hard Drives do not have these requirements. It is important to confirm the device type is an Encrypted Hard Drive for Windows when planning for deployment.
  
-If you are a storage device vendor who is looking for more info on how to implement Encrypted Hard Drive, see the [Encrypted Hard Drive Device Guide](https://msdn.microsoft.com/library/windows/hardware/dn653989.aspx).
+If you are a storage device vendor who is looking for more info on how to implement Encrypted Hard Drive, see the [Encrypted Hard Drive Device Guide](/previous-versions/windows/hardware/design/dn653989(v=vs.85)).
 
 ## System Requirements
 
@@ -76,12 +77,12 @@ Configuration of Encrypted Hard Drives as startup drives is done using the same 
 
 -   **Deploy from media**: Configuration of Encrypted Hard Drives happens automatically through the installation process.
 -   **Deploy from network**: This deployment method involves booting a Windows PE environment and using imaging tools to apply a Windows image from a network share. Using this method, the Enhanced Storage optional component needs to be included in the Windows PE image. You can enable this component using Server Manager, Windows PowerShell, or the DISM command line tool. If this component is not present, configuration of Encrypted Hard Drives will not work.
--   **Deploy from server**: This deployment method involves PXE booting a client with Encrypted Hard Drives present. Configuration of Encrypted Hard Drives happens automatically in this environment when the Enhanced Storage component is added to the PXE boot image. During deployment, the [TCGSecurityActivationDisabled](https://msdn.microsoft.com/library/windows/hardware/dn923247.aspx) setting in unattend.xml controls the encryption behavior of Encrypted Hard Drives.
+-   **Deploy from server**: This deployment method involves PXE booting a client with Encrypted Hard Drives present. Configuration of Encrypted Hard Drives happens automatically in this environment when the Enhanced Storage component is added to the PXE boot image. During deployment, the [TCGSecurityActivationDisabled](/windows-hardware/customize/desktop/unattend/microsoft-windows-enhancedstorage-adm-tcgsecurityactivationdisabled) setting in unattend.xml controls the encryption behavior of Encrypted Hard Drives.
 -   **Disk Duplication**: This deployment method involves use of a previously configured device and disk duplication tools to apply a Windows image to an Encrypted Hard Drive. Disks must be partitioned using at least Windows 8 or Windows Server 2012 for this configuration to work. Images made using disk duplicators will not work.
 
 ## Configuring hardware-based encryption with Group Policy
 
-There are three related Group Policy settings that help you manage how BitLocker uses hardware-based envryption and which encryption algorithms to use. If these settings are not configured or disabled on systems that are equipped with encrypted drives, BitLocker uses software-based encryption: 
+There are three related Group Policy settings that help you manage how BitLocker uses hardware-based encryption and which encryption algorithms to use. If these settings are not configured or disabled on systems that are equipped with encrypted drives, BitLocker uses software-based encryption: 
 
 - [Configure use of hardware-based encryption for fixed data drives](bitlocker/bitlocker-group-policy-settings.md#bkmk-hdefxd)  
 - [Configure use of hardware-based encryption for removable data drives](bitlocker/bitlocker-group-policy-settings.md#configure-use-of-hardware-based-encryption-for-removable-data-drives)

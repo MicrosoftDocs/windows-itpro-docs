@@ -19,7 +19,6 @@ ms.technology: mde
 
 **Applies to:**
 - Windows 10, version 1703
-- Windows 10 Mobile
 - Microsoft Edge
 
 Microsoft Defender SmartScreen helps to protect users if they try to visit sites previously reported as phishing or malware websites, or if a user tries to download potentially malicious files.
@@ -48,7 +47,7 @@ Starting with Windows 10, version 1703, users can use Windows Security to set up
        - **Off.** Turns off Microsoft Defender SmartScreen, so a user isn't alerted or stopped from downloading potentially malicious apps and files.
    - In the **Potentially unwanted app blocking** area:
 
-      - **On.** Turns on both the 'Block apps' and 'Block downloads settings. To learn more, see [How Microsoft identifies malware and potentially unwanted applications](https://docs.microsoft.com/windows/security/threat-protection/intelligence/criteria#potentially-unwanted-application-pua).
+      - **On.** Turns on both the 'Block apps' and 'Block downloads settings. To learn more, see [How Microsoft identifies malware and potentially unwanted applications](../intelligence/criteria.md#potentially-unwanted-application-pua).
           - **Block apps.** This setting will prevent new apps from installing on the device and warn users of apps that are existing on the device.
 
           - **Block downloads.** This setting will alert users and stop the downloads of apps in the Microsoft Edge browser (based on Chromium).

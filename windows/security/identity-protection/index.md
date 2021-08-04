@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
 author: dansimp
-ms.author: daniha
+ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
@@ -23,8 +23,7 @@ Learn more about identity and access management technologies in Windows 10 and 
 |-|-|
 | [Technical support policy for lost or forgotten passwords](password-support-policy.md)| Outlines the ways in which Microsoft can help you reset a lost or forgotten password, and provides links to instructions for doing so. |
 | [Access control](access-control/access-control.md) | Describes access control in Windows, which is the process of authorizing users, groups, and computers to access objects on the network or computer. Key concepts that make up access control are permissions, ownership of objects, inheritance of permissions, user rights, and object auditing. |
-| [Configure S/MIME for Windows 10 and Windows 10 Mobile](configure-s-mime.md) | In Windows 10, S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients who have a digital identification (ID), also known as a certificate, can read them. Users can digitally sign a message, which provides the recipients with a way to verify the identity of the sender and that the message hasn't been tampered with. |
-| [Install digital certificates on Windows 10 Mobile](installing-digital-certificates-on-windows-10-mobile.md) | Digital certificates bind the identity of a user or computer to a pair of keys that can be used to encrypt and sign digital information. Certificates are issued by a certification authority (CA) that vouches for the identity of the certificate holder, and they enable secure client communications with websites and services. |
+| [Configure S/MIME for Windows 10](configure-s-mime.md) | In Windows 10, S/MIME lets users encrypt outgoing messages and attachments so that only intended recipients who have a digital identification (ID), also known as a certificate, can read them. Users can digitally sign a message, which provides the recipients with a way to verify the identity of the sender and that the message hasn't been tampered with. |
 | [Protect derived domain credentials with Credential Guard](credential-guard/credential-guard.md) | Introduced in Windows 10 Enterprise, Credential Guard uses virtualization-based security to isolate secrets so that only privileged system software can access them. Unauthorized access to these secrets can lead to credential theft attacks, such as Pass-the-Hash or Pass-The-Ticket. Credential Guard helps prevent these attacks by protecting NTLM password hashes and Kerberos Ticket Granting Tickets. |
 | [Protect Remote Desktop credentials with Remote Credential Guard](remote-credential-guard.md) | Remote Credential Guard helps you protect your credentials over a Remote Desktop connection by redirecting the Kerberos requests back to the device that's requesting the connection. |
 | [User Account Control](user-account-control/user-account-control-overview.md)| Provides information about User Account Control (UAC), which helps prevent malware from damaging a PC and helps organizations deploy a better-managed desktop. UAC can help block the automatic installation of unauthorized apps and prevent inadvertent changes to system settings.|

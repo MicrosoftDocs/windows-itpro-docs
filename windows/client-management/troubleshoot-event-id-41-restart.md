@@ -73,8 +73,8 @@ When a computer shuts down or restarts because of a Stop error, Windows includes
 After you identify the hexadecimal value, use the following references to continue troubleshooting:
 
 - [Advanced troubleshooting for Stop error or blue screen error issue](troubleshoot-stop-errors.md).
-- [Bug Check Code Reference](https://docs.microsoft.com/windows-hardware/drivers/debugger/bug-check-code-reference2). This page lists links to documentation for different bug check codes.
-- [How to Debug Kernel Mode Blue Screen Crashes (for beginners)](https://blogs.technet.microsoft.com/askcore/2008/10/31/how-to-debug-kernel-mode-blue-screen-crashes-for-beginners/).
+- [Bug Check Code Reference](/windows-hardware/drivers/debugger/bug-check-code-reference2). This page lists links to documentation for different bug check codes.
+- [How to Debug Kernel Mode Blue Screen Crashes (for beginners)](/archive/blogs/askcore/how-to-debug-kernel-mode-blue-screen-crashes-for-beginners).
 
 ### <a name="scen2"></a>Scenario 2: The computer restarts because you pressed and held the power button
 

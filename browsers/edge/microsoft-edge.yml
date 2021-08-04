@@ -27,7 +27,7 @@ landingContent:
       - linkListType: whats-new
         links:
           - text: Documentation for Microsoft Edge version 77 or later
-            url: https://docs.microsoft.com/DeployEdge/
+            url: /DeployEdge/
           - text: Microsoft Edge Legacy desktop app will reach end of support on March 9, 2021
             url: https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666
           - text: The latest in Microsoft Edge
@@ -35,11 +35,11 @@ landingContent:
           - text: Microsoft Edge for iOS and Android
             url: https://blogs.windows.com/windowsexperience/2017/11/30/microsoft-edge-now-available-for-ios-and-android
           - text: Application Guard
-            url: https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview
+            url: /windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview
       - linkListType: download
         links:
           - text: Evaluate the impact
-            url: /microsoft-edge/deploy/microsoft-edge-forrester
+            url: ./microsoft-edge-forrester.md
 
   # Card (optional)
   - title: Test your site on Microsoft Edge
@@ -57,9 +57,9 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Use Enterprise mode to improve compatibility
-            url: /microsoft-edge/deploy/emie-to-improve-compatibility
+            url: ./emie-to-improve-compatibility.md
           - text: Turn on Enterprise Mode and use a site list
-            url: https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list
+            url: /internet-explorer/ie11-deploy-guide/turn-on-enterprise-mode-and-use-a-site-list
           - text: Enterprise Site List Portal
             url: https://github.com/MicrosoftEdge/enterprise-mode-site-list-portal
   
@@ -69,7 +69,7 @@ landingContent:
       - linkListType: overview
         links:
           - text: Overview
-            url: /microsoft-edge/deploy/emie-to-improve-compatibility
+            url: ./emie-to-improve-compatibility.md
 
   # Card (optional)
   - title: Security
@@ -83,7 +83,7 @@ landingContent:
           - text: Microsoft Edge sandbox
             url: https://blogs.windows.com/msedgedev/2017/03/23/strengthening-microsoft-edge-sandbox/
           - text: Windows Defender SmartScreen
-            url: https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview
+            url: /windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview
   
   # Card (optional)
   - title: Deployment
@@ -91,15 +91,15 @@ landingContent:
       - linkListType: overview
         links:
           - text: Microsoft Edge deployment guide
-            url: /microsoft-edge/deploy/
+            url: ./index.yml
           - text: Microsoft Edge FAQ
-            url: /microsoft-edge/deploy/microsoft-edge-faq
+            url: ./microsoft-edge-faq.yml
           - text: System requirements and language support
             url: /microsoft-edge/deploy/hardware-and-software-requirements
           - text: Group Policy and MDM settings in Microsoft Edge
-            url: /microsoft-edge/deploy/available-policies
+            url: ./available-policies.md
           - text: Microsoft Edge training and demonstrations
-            url: /microsoft-edge/deploy/edge-technical-demos
+            url: ./edge-technical-demos.md
       - linkListType: download
         links:
           - text: Web Application Compatibility Lab Kit
@@ -121,9 +121,9 @@ landingContent:
           - text: Use Microsoft Edge to collaborate (PDF, 468 KB)
             url: https://go.microsoft.com/fwlink/?linkid=825653
           - text: Group Policy and MDM settings in Microsoft Edge
-            url: /microsoft-edge/deploy/available-policies
+            url: ./available-policies.md
           - text: Microsoft Edge training and demonstrations
-            url: /microsoft-edge/deploy/edge-technical-demos
+            url: ./edge-technical-demos.md
       - linkListType: how-to-guide
         links:
           - text: Import bookmarks

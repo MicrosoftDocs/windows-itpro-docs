@@ -1715,11 +1715,6 @@ Allows IT Admins to specify update delays for up to 4 weeks.
 
 Supported values are 0-4, which refers to the number of weeks to defer updates.
 
-In Windows 10 Mobile Enterprise version 1511 devices set to automatic updates, for DeferUpdatePeriod to work, you must set the following:
-
--   Update/RequireDeferUpgrade must be set to 1
--   System/AllowTelemetry must be set to 1 or higher
-
 If the "Specify intranet Microsoft update service location" policy is enabled, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 If the Allow Telemetry policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
@@ -1991,7 +1986,7 @@ ADMX Info:
 <!--Description-->
 Added in Windows 10, version 1709, but was added to 1607 and 1703 service releases. Do not allow update deferral policies to cause scans against Windows Update. If this policy is not enabled, then configuring deferral policies will result in the client unexpectedly scanning Windows update.  With the policy enabled, those scans are prevented, and users can configure deferral policies as much as they like.
 
-For more information about dual scan, see [Demystifying "Dual Scan"](https://blogs.technet.microsoft.com/wsus/2017/05/05/demystifying-dual-scan/) and [Improving Dual Scan on 1607](https://blogs.technet.microsoft.com/wsus/2017/08/04/improving-dual-scan-on-1607/).
+For more information about dual scan, see [Demystifying "Dual Scan"](/archive/blogs/wsus/demystifying-dual-scan) and [Improving Dual Scan on 1607](/archive/blogs/wsus/improving-dual-scan-on-1607).
 
 This is the same as the Group Policy in Windows Components > Window Update "Do not allow update deferral policies to cause scans against Windows Update."
 
@@ -3470,7 +3465,7 @@ Supported values are 15, 30, or 60 (minutes).
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart warning reminder notifications.
@@ -3937,7 +3932,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 Enables the IT admin to schedule the time of the update installation.
@@ -4333,7 +4328,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10, version 1803 and later. Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](https://docs.microsoft.com/windows/release-health/release-information/).
+Available in Windows 10, version 1803 and later. Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](/windows/release-health/release-information/).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
@@ -4479,7 +4474,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!IMPORTANT]
-> Starting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enterprise and IoT Mobile.
+> Starting in Windows 10, version 1703 this policy is not supported in IoT Mobile.
 
 Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
 

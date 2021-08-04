@@ -14,7 +14,7 @@ ms.date: 06/25/2018
 
 # Diagnose MDM failures in Windows 10
 
-To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop or mobile device. The following sections describe the procedures for collecting MDM logs.
+To help diagnose enrollment or device management issues in Windows 10 devices managed by an MDM server, you can examine the MDM logs collected from the desktop. The following sections describe the procedures for collecting MDM logs.
 
 ## Download the MDM Diagnostic Information log from Windows 10 PCs
 
@@ -29,6 +29,27 @@ To help diagnose enrollment or device management issues in Windows 10 devices m
    ![Access work or school log files](images/diagnose-mdm-failures17.png)
 
 1. In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
+
+## Use command to collect logs directly from Windows 10 PCs
+
+You can also collect the MDM Diagnostic Information logs using the following command:
+
+```xml
+mdmdiagnosticstool.exe -area DeviceEnrollment;DeviceProvisioning;Autopilot -cab c:\users\public\documents\MDMDiagReport.cab
+```
+-   In File Explorer, navigate to c:\Users\Public\Documents\MDMDiagnostics to see the report.
+
+### Understanding cab structure
+The cab file will have logs according to the areas that were used in the command. This explanation is based on DeviceEnrollment, DeviceProvisioning and Autopilot areas. It applies to the cab files collected via command line or Feedback Hub
+
+-   DiagnosticLogCSP_Collector_Autopilot_*: Autopilot etls
+-   DiagnosticLogCSP_Collector_DeviceProvisioning_*: Provisioning etls (Microsoft-Windows-Provisioning-Diagnostics-Provider)
+-   MDMDiagHtmlReport.html: Summary snapshot of MDM space configurations and policies. Includes, management url, MDM server device ID, certificates, policies.
+-   MdmDiagLogMetadata, json: mdmdiagnosticstool metadata file, contains command-line arguments used to run the tool
+-   MDMDiagReport.xml: contains a more detail view into the MDM space configurations, e.g enrollment variables
+-   MdmDiagReport_RegistryDump.reg: contains dumps from common MDM registry locations
+-   MdmLogCollectorFootPrint.txt: mdmdiagnosticslog tool logs from running the command
+-   *.evtx: Common event viewer logs microsoft-windows-devicemanagement-enterprise-diagnostics-provider-admin.evtx main one that contains MDM events.
 
 ## Collect logs directly from Windows 10 PCs
 
@@ -112,81 +133,9 @@ Example: Export the Debug logs
 </SyncML>
 ```
 
-## Collect logs from Windows 10 Mobile devices
+## Collect logs remotely from Windows 10 Holographic
 
-Since there is no Event Viewer in Windows 10 Mobile, you can use the [Field Medic](https://www.microsoft.com/p/field-medic/9wzdncrfjb82?activetab=pivot%3aoverviewtab) app to collect logs.
-
-**To collect logs manually**
-
-1.  Download and install the [Field Medic]( https://go.microsoft.com/fwlink/p/?LinkId=718232) app from the store.
-2.  Open the Field Medic app and then click on **Advanced**.
-
-    ![field medic screenshot 2](images/diagnose-mdm-failures2.png)
-
-3.  Click on **Choose with ETW provider to use**.
-
-    ![field medic screenshot 3](images/diagnose-mdm-failures3.png)
-
-4.  Check **Enterprise** and un-check the rest.
-
-    ![field medic screenshot 4](images/diagnose-mdm-failures4.png)
-
-5.  In the app, click on **Start Logging** and then perform the operation that you want to troubleshoot.
-
-    ![field medic screenshot 5](images/diagnose-mdm-failures2.png)
-
-6.  When the operation is done, click on **Stop Logging**.
-
-    ![field medic screenshot 6](images/diagnose-mdm-failures5.png)
-
-7.  Save the logs. They will be stored in the Field Medic log location on the device.
-8.  You can send the logs via email by attaching the files from **Documents > Field Medic > Reports > ...** folder.
-
-    ![device documents folder](images/diagnose-mdm-failures6.png)![device folder screenshot 7](images/diagnose-mdm-failures7.png)![device folder screenshot 8](images/diagnose-mdm-failures8.png)
-
-The following table contains a list of common providers and their corresponding GUIDs.
-
-| GUID                                 | Provider Name                                          |
-|--------------------------------------|--------------------------------------------------------|
-| 099614a5-5dd7-4788-8bc9-e29f43db28fc | Microsoft-Windows-LDAP-Client                          |
-| 0f67e49f-fe51-4e9f-b490-6f2948cc6027 | Microsoft-Windows-Kernel-Processor-Power               |
-| 0ff1c24b-7f05-45c0-abdc-3c8521be4f62 | Microsoft-Windows-Mobile-Broadband-Experience-SmsApi   |
-| 10e4f0e0-9686-4e62-b2d6-fd010eb976d3 | Microsoft-WindowsPhone-Shell-Events                    |
-| 1e39b4ce-d1e6-46ce-b65b-5ab05d6cc266 | Microsoft-Windows-Networking-RealTimeCommunication     |
-| 22a7b160-f6e8-46b9-8e0b-a51989c85c66 | Microsoft-WindowsPhone-Bluetooth-AG                    |
-| 2f94e1cc-a8c5-4fe7-a1c3-53d7bda8e73e | Microsoft-WindowsPhone-ConfigManager2                  |
-| 331c3b3a-2005-44c2-ac5e-77220c37d6b4 | Microsoft-Windows-Kernel-Power                         |
-| 33693e1d-246a-471b-83be-3e75f47a832d | Microsoft-Windows-BTH-BTHUSB                           |
-| 3742be72-99a9-42e6-9fd5-c01a330e3625 | Microsoft-WindowsPhone-PhoneAudio                      |
-| 3b9602ff-e09b-4c6c-bc19-1a3dfa8f2250 | Microsoft-WindowsPhone-OmaDm-Client-Provider           |
-| 3da494e4-0fe2-415C-b895-fb5265c5c83b | Microsoft-WindowsPhone-Enterprise-Diagnostics-Provider |
-| 3f471139-acb7-4a01-b7a7-ff5da4ba2d43 | Microsoft-Windows-AppXDeployment-Server                |
-| 4180c4f7-e238-5519-338f-ec214f0b49aa | Microsoft.Windows.ResourceManager                      |
-| 4637124c-1d40-4b4d-892f-2aaecf24ff06 | Microsoft-Windows-WinJson                              |
-| 4d13548f-c7b8-4174-bb7a-d7f64bf22d29 | Microsoft-WindowsPhone-LocationServiceProvider         |
-| 4eacb4d0-263b-4b93-8cd6-778a278e5642 | Microsoft-Windows-GenericRoaming                       |
-| 4f386063-ef17-4629-863c-d71597af743d | Microsoft-WindowsPhone-NotificationService             |
-| 55404e71-4db9-4deb-a5f5-8f86e46dde56 | Microsoft-Windows-Winsock-NameResolution               |
-| 59819d0a-adaf-46b2-8d7c-990bc39c7c15 | Microsoft-Windows-Battery                              |
-| 5c103042-7e75-4629-a748-bdfa67607fac | Microsoft-WindowsPhone-Power                           |
-| 69c1c3f1-2b5c-41d0-a14a-c7ca5130640e | Microsoft-WindowsPhone-Cortana                         |
-| 6ad52b32-d609-4be9-ae07-ce8dae937e39 | Microsoft-Windows-RPC                                  |
-| 7263516b-6eb0-477b-b64f-17b91d29f239 | Microsoft-WindowsPhone-BatterySense                    |
-| 7dd42a49-5329-4832-8dfd-43d979153a88 | Microsoft-Windows-Kernel-Network                       |
-| ae4bd3be-f36f-45b6-8d21-bdd6fb832853 | Microsoft-Windows-Audio                                |
-| daa6a96b-f3e7-4d4d-a0d6-31a350e6a445 | Microsoft-Windows-WLAN-Driver                          |
-| 4d13548f-c7b8-4174-bb7a-d7f64bf22d29 | Microsoft-WindowsPhone-LocationServiceProvider         |
-| 74e106b7-00be-4a55-b707-7ab58d6a9e90 | Microsoft-WindowsPhone-Shell-OOBE                      |
-| cbda4dbf-8d5d-4f69-9578-be14aa540d22 | Microsoft-Windows-AppLocker                            |
-| e595f735-b42a-494b-afcd-b68666945cd3 | Microsoft-Windows-Firewall                             |
-| e5fc4a0f-7198-492f-9b0f-88fdcbfded48 | Microsoft-Windows Networking VPN                       |
-| e5c16d49-2464-4382-bb20-97a4b5465db9 | Microsoft-Windows-WiFiNetworkManager                   |
-
- 
-
-## Collect logs remotely from Windows 10 Holographic or Windows 10 Mobile devices
-
-For holographic or mobile devices already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
+For holographic already enrolled in MDM, you can remotely collect MDM logs through the MDM channel using the [DiagnosticLog CSP](diagnosticlog-csp.md).
 
 You can use the DiagnosticLog CSP to enable the ETW provider. The provider ID is 3DA494E4-0FE2-415C-B895-FB5265C5C83B. The following examples show how to enable the ETW provider:
 

@@ -50,7 +50,7 @@ On **DC01**:
 2. Create the **MDT_JD** service account by running the following command from an elevated **Windows PowerShell prompt**:
 
    ```powershell
-   New-ADUser -Name MDT_JD -UserPrincipalName MDT_JD -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT join domain account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true 
+   New-ADUser -Name MDT_JD -UserPrincipalName MDT_JD@contoso.com -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT join domain account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true 
    ```
 
 3. Next, run the Set-OuPermissions script to apply permissions to the **MDT\_JD** service account, enabling it to manage computer accounts in the Contoso / Computers OU. Run the following commands from an elevated Windows PowerShell prompt:
@@ -194,7 +194,7 @@ On **MDT01**:
     2.  WinPE x64
     3.  Windows 10 x64
 3.  In the new Windows 10 x64 folder, create the following folder structure:
-    -   Dell Inc
+    -   Dell Inc.
         -   Latitude E7450
     -   Hewlett-Packard
         -   HP EliteBook 8560w
@@ -215,7 +215,7 @@ When you import drivers to the MDT driver repository, MDT creates a single insta
     2.  WinPE x64
     3.  Windows 10 x64
 3.  In the **Windows 10 x64** folder, create the following folder structure:
-    -   Dell Inc
+    -   Dell Inc.
         -   Latitude E7450
     -   Hewlett-Packard
         -   HP EliteBook 8560w
@@ -236,7 +236,7 @@ Or, you can use this command in a normal command prompt:
 wmic csproduct get name
 ```
 
-If you want a more standardized naming convention, try the **ModelAliasExit.vbs script** from the Deployment Guys blog post, entitled [Using and Extending Model Aliases for Hardware Specific Application Installation](https://go.microsoft.com/fwlink/p/?LinkId=619536).
+If you want a more standardized naming convention, try the **ModelAliasExit.vbs script** from the Deployment Guys blog post, entitled [Using and Extending Model Aliases for Hardware Specific Application Installation](/archive/blogs/deploymentguys/using-and-extending-model-aliases-for-hardware-specific-application-installation).
 
 ![drivers](../images/fig4-oob-drivers.png)
 
@@ -304,15 +304,15 @@ On **MDT01**:
 
 For the Dell Latitude E7450 model, you use the Dell Driver CAB file, which is accessible via the [Dell TechCenter website](https://go.microsoft.com/fwlink/p/?LinkId=619544).
 
-In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E7450 model to the **D:\\Drivers\\Dell Inc\\Latitude E7450** folder.
+In these steps, we assume you have downloaded and extracted the CAB file for the Latitude E7450 model to the **D:\\Drivers\\Dell Inc.\\Latitude E7450** folder.
 
 On **MDT01**:
 
-1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Dell Inc** node.
+1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Dell Inc.** node.
 
 2.  Right-click the **Latitude E7450** folder and select **Import Drivers** and use the following Driver source directory to import drivers: 
 
-    **D:\\Drivers\\Windows 10 x64\\Dell Inc\\Latitude E7450**
+    **D:\\Drivers\\Windows 10 x64\\Dell Inc.\\Latitude E7450**
 
 ### For the HP EliteBook 8560w
 
@@ -369,9 +369,9 @@ On **MDT01**:
 2. On the **Task Sequence** tab, configure the **Windows 10 Enterprise x64 RTM Custom Image** task sequence with the following settings:
 
    1.  Preinstall: After the **Enable BitLocker (Offline)** action, add a **Set Task Sequence Variable** action with the following settings:
-       - Name: Set DriverGroup001
-       - Task Sequence Variable: DriverGroup001
-       - Value: Windows 10 x64\\%Make%\\%Model%
+       1.  Name: Set DriverGroup001
+       2.  Task Sequence Variable: DriverGroup001
+       3.  Value: Windows 10 x64\\%Manufacturer%\\%Model%
 
    2.  Configure the **Inject Drivers** action with the following settings:
        - Choose a selection profile: Nothing
@@ -576,7 +576,7 @@ If you have licensing for MDOP and DaRT, you can add DaRT to the boot images usi
 
 
 > [!NOTE]
-> DaRT 10 is part of [MDOP 2015](https://docs.microsoft.com/microsoft-desktop-optimization-pack/#how-to-get-mdop).
+> DaRT 10 is part of [MDOP 2015](/microsoft-desktop-optimization-pack/#how-to-get-mdop).
 >
 > MDOP might be available as a download from your [Visual Studio subscription](https://my.visualstudio.com/Downloads). When searching, be sure to look for **Desktop Optimization Pack**.
 
@@ -829,7 +829,7 @@ Follow these steps to create a bootable USB stick from the offline media content
 
 ## Unified Extensible Firmware Interface (UEFI)-based deployments
 
-As referenced in [Windows 10 deployment scenarios and tools](https://go.microsoft.com/fwlink/p/?LinkId=619546), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UEFI.
+As referenced in [Windows 10 deployment scenarios and tools](../windows-deployment-scenarios-and-tools.md), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UEFI.
 
 ![figure 14](../images/mdt-07-fig16.png)
 

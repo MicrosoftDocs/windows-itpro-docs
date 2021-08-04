@@ -1,16 +1,18 @@
-- name: Deploy and update Windows 10
+- name: Deploy and update Windows client
   href: index.yml
   items: 
     - name: Get started
       items: 
         - name: What's new
           href: deploy-whats-new.md
-        - name: Windows 10 deployment scenarios
+        - name: Windows client deployment scenarios
           href: windows-10-deployment-scenarios.md
         - name: What is Windows as a service?
           href: update/waas-quick-start.md
         - name: Windows update fundamentals
           href: update/waas-overview.md
+        - name: Monthly quality updates
+          href: update/quality-updates.md
         - name: Basics of Windows updates, channels, and tools
           href: update/get-started-updates-channels-tools.md
         - name: Servicing the Windows 10 operating system
@@ -33,6 +35,8 @@
 
     - name: Plan
       items:
+        - name: Plan for Windows 11
+          href: /windows/whats-new/windows-11-plan
         - name: Create a deployment plan
           href: update/create-deployment-plan.md
         - name: Define readiness criteria
@@ -67,6 +71,8 @@
 
     - name: Prepare
       items: 
+        - name: Prepare for Windows 11
+          href: /windows/whats-new/windows-11-prepare
         - name: Prepare to deploy Windows 10 updates
           href: update/prepare-deploy-windows.md
         - name: Evaluate and update infrastructure
@@ -87,6 +93,8 @@
           items:
             - name: Build deployment rings for Windows 10 updates
               href: update/waas-deployment-rings-windows-10-updates.md
+            - name: Check release health
+              href: update/check-release-health.md
             - name: Prepare updates using Windows Update for Business
               href: update/waas-manage-updates-wufb.md
             - name: Prepare updates using WSUS
@@ -94,11 +102,11 @@
 
     - name: Deploy
       items: 
-        - name: Deploy Windows 10
+        - name: Deploy Windows client
           items:
-            - name: Deploy Windows 10 with Autopilot
+            - name: Deploy Windows client with Autopilot
               href: windows-autopilot/index.yml
-            - name: Deploy Windows 10 with Configuration Manager
+            - name: Deploy Windows client with Configuration Manager
               items:
                 - name: Deploy to a new device
                   href: deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md
@@ -108,7 +116,7 @@
                   href: deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md
                 - name: In-place upgrade
                   href: deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md
-            - name: Deploy Windows 10 with MDT
+            - name: Deploy Windows client with MDT
               items:
                 - name: Deploy to a new device
                   href: deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md
@@ -162,6 +170,11 @@
               href: update/waas-manage-updates-wufb.md
             - name: Configure Windows Update for Business
               href: update/waas-configure-wufb.md
+            - name: Windows Update for Business deployment service
+              href: update/deployment-service-overview.md
+              items:
+                - name: Troubleshoot the Windows Update for Business deployment service
+                  href: update/deployment-service-troubleshoot.md
             - name: Enforcing compliance deadlines for updates
               href: update/wufb-compliancedeadlines.md
             - name: Integrate Windows Update for Business with management solutions
@@ -186,6 +199,8 @@
                     href: update/update-compliance-configuration-script.md
                   - name: Manually configuring devices for Update Compliance
                     href: update/update-compliance-configuration-manual.md
+                  - name: Configuring devices for Update Compliance in Microsoft Endpoint Manager
+                    href: update/update-compliance-configuration-mem.md
               - name: Update Compliance monitoring
                 items: 
                   - name: Use Update Compliance
@@ -242,16 +257,20 @@
                 - name: Opt out of safeguard holds
                   href: update/safeguard-opt-out.md
                 - name: Determine the source of Windows Updates
-                  href: update/windows-update-sources.md
+                  href: ./update/how-windows-update-works.md
                 - name: Common Windows Update errors
                   href: update/windows-update-errors.md
                 - name: Windows Update error code reference
                   href: update/windows-update-error-reference.md
+                - name: Troubleshoot the Windows Update for Business deployment service
+                  href: update/deployment-service-troubleshoot.md
 
     - name: Reference
       items:
         - name: How does Windows Update work?
           href: update/how-windows-update-works.md
+        - name: Windows 10 upgrade paths
+          href: upgrade/windows-10-upgrade-paths.md
         - name: Deploy Windows 10 with Microsoft 365
           href: deploy-m365.md
         - name: Understanding the Unified Update Platform
@@ -291,7 +310,7 @@
                     - name: Security and data protection considerations for Windows To Go
                       href: planning/security-and-data-protection-considerations-for-windows-to-go.md
                     - name: "Windows To Go: frequently asked questions"
-                      href: planning/windows-to-go-frequently-asked-questions.md
+                      href: planning/windows-to-go-frequently-asked-questions.yml
         
                 - name: Volume Activation Management Tool (VAMT) technical reference
                   items:
@@ -389,7 +408,7 @@
                         - name: Common Issues
                           href: usmt/usmt-common-issues.md
                         - name: Frequently Asked Questions
-                          href: usmt/usmt-faq.md
+                          href: usmt/usmt-faq.yml
                         - name: Log Files
                           href: usmt/usmt-log-files.md
                         - name: Return Codes

@@ -77,7 +77,7 @@ Alice follows these steps to complete this task:
 > [!NOTE]
 > If you do not use MEMCM or prefer to use a different [example WDAC base policy](example-wdac-base-policies.md) for your own policy, skip to step 2 and substitute the MEMCM policy path with your preferred example base policy.
 
-1. [Use MEMCM to create and deploy an audit policy](https://docs.microsoft.com/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 or above.
+1. [Use MEMCM to create and deploy an audit policy](/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager) to a client device running Windows 10 version 1903 or above.
 
 2. On the client device, run the following commands in an elevated Windows PowerShell session to initialize variables:
 
@@ -115,7 +115,7 @@ Alice follows these steps to complete this task:
 
 6. If appropriate, add additional signer or file rules to further customize the policy for your organization.
 
-7. Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
+7. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
 
     > [!NOTE]
     > In the sample commands below, replace the string "{InsertPolicyID}" with the actual PolicyID GUID (including braces **{ }**) found in your policy XML file.
@@ -149,7 +149,7 @@ Alice has defined a policy for Lamna's fully-managed devices that makes some tra
    Possible mitigations:
   - Use signed WDAC policies and UEFI BIOS access protection to prevent tampering of WDAC policies.
 - **Managed installer**<br>
-    See [security considerations with managed installer](use-windows-defender-application-control-with-managed-installer.md#security-considerations-with-managed-installer)
+    See [security considerations with managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md#security-considerations-with-managed-installer)
 
    Existing mitigations applied:
   - Limit who can elevate to administrator on the device.

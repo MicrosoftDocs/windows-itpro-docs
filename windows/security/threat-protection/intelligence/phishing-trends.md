@@ -7,8 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -41,7 +41,7 @@ An attacker sends a fraudulent email requesting you to open or download a docume
 
 ## Phishing emails that deliver other threats
 
-Phishing emails are often effective, so attackers sometimes use them to distribute [ransomware](ransomware-malware.md) through links or attachments in emails. When run, the ransomware encrypts files and displays a ransom note, which asks you to pay a sum of money to access to your files.
+Phishing emails are often effective, so attackers sometimes use them to distribute [ransomware](/security/compass/human-operated-ransomware) through links or attachments in emails. When run, the ransomware encrypts files and displays a ransom note, which asks you to pay a sum of money to access to your files.
 
 We have also seen phishing emails that have links to [tech support scam](support-scams.md) websites. These websites use various scare tactics to trick you into calling hotlines and paying for unnecessary "technical support services" that supposedly fix contrived device, platform, or software problems.
 

@@ -1,5 +1,5 @@
 ---
-title: Hybrid Windows Hello for Business Prerequisites
+title: Hybrid Azure AD joined Windows Hello for Business Prerequisites
 description: Learn these prerequisites for hybrid Windows Hello for Business deployments using certificate trust.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, certificate-trust
 ms.prod: w10
@@ -13,10 +13,10 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 08/19/2018
+ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Hybrid Windows Hello for Business Prerequisites
+# Hybrid Azure AD joined Windows Hello for Business Prerequisites
 
 **Applies to**
 -   Windows 10, version 1703 or later
@@ -72,23 +72,26 @@ The minimum required enterprise certificate authority that can be used with Wind
 ## Directory Synchronization ##
 The two directories used in hybrid deployments must be synchronized.  You need Azure Active Directory Connect to synchronize user accounts in the on-premises Active Directory with Azure Active Directory.
   
-Organizations using older directory synchronization technology, such as DirSync or Azure AD sync, need to upgrade to Azure AD Connect. In case the schema of your local AD DS was changed since the last directory synchronization, you may need to [refresh directory schema](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-installation-wizard#refresh-directory-schema).
+Organizations using older directory synchronization technology, such as DirSync or Azure AD sync, need to upgrade to Azure AD Connect. In case the schema of your local AD DS was changed since the last directory synchronization, you may need to [refresh directory schema](/azure/active-directory/hybrid/how-to-connect-installation-wizard#refresh-directory-schema).
  
+> [!NOTE]
+> User accounts enrolling for Windows Hello for Business in a Hybrid Certificate Trust scenario must have a UPN matching a verified domain name in Azure AD. For more details, see [Troubleshoot Post-Join issues](/azure/active-directory/devices/troubleshoot-hybrid-join-windows-current#troubleshoot-post-join-issues).
+
 > [!NOTE]
 > Windows Hello for Business is tied between a user and a device. Both the user and device need to be synchronized between Azure Active Directory and Active Directory.
  
 ### Section Review 
 > [!div class="checklist"]
 > * Azure Active Directory Connect directory synchronization
-> * [Upgrade from DirSync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-dirsync-upgrade-get-started)
-> * [Upgrade from Azure AD Sync](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-upgrade-previous-version)
+> * [Upgrade from DirSync](/azure/active-directory/connect/active-directory-aadconnect-dirsync-upgrade-get-started)
+> * [Upgrade from Azure AD Sync](/azure/active-directory/connect/active-directory-aadconnect-upgrade-previous-version)
 
 <br>
 
 ## Federation ##
 Windows Hello for Business hybrid certificate trust requires Active Directory being federated with Azure Active Directory and needs Windows Server 2016 Active Directory Federation Services or newer. Windows Hello for Business hybrid certificate trust doesn’t support Managed Azure Active Directory using Pass-through authentication or password hash sync. All nodes in the AD FS farm must run the same version of AD FS. Additionally, you need to configure your AD FS farm to support Azure registered devices.
 
-The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).  If your AD FS farm is not running the AD FS role with updates from Windows Server 2016, then read [Upgrading to AD FS in Windows Server 2016](https://docs.microsoft.com/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016)
+The AD FS farm used with Windows Hello for Business must be Windows Server 2016 with minimum update of [KB4088889 (14393.2155)](https://support.microsoft.com/help/4088889).  If your AD FS farm is not running the AD FS role with updates from Windows Server 2016, then read [Upgrading to AD FS in Windows Server 2016](/windows-server/identity/ad-fs/deployment/upgrading-to-ad-fs-in-windows-server-2016)
 
 ### Section Review ###
 > [!div class="checklist"]

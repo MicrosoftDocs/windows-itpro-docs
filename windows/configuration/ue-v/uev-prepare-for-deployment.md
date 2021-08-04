@@ -1,7 +1,7 @@
 ---
 title: Prepare a UE-V Deployment
 description: Learn about the types of User Experience Virtualization (UE-V) deployment you can execute and what preparations you can make beforehand to be successful.
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -169,14 +169,14 @@ In general, you can synchronize settings that meet the following criteria:
 
 If you’ve decided that you need to synchronize settings for custom applications, use this checklist to determine which applications you’ll include.
 
-|       | **Description**          |
+|    | **Description**  |
 |-------|--------------------------|
 | ![Checklist box](images/uev-checklist-box.gif) | Does this application contain settings that the user can customize? |
-| ![Checklist box](images/uev-checklist-box.gif) | Is it important for the user that these settings are synchronized?  |
-| ![Checklist box](images/uev-checklist-box.gif) | Are these user settings already managed by an application management or settings policy solution? UE-V applies application settings at application startup and Windows settings at logon, unlock, or remote connect events. If you use UE-V with other settings sharing solutions, users might experience inconsistency across synchronized settings.  |
+| ![Checklist box](images/uev-checklist-box.gif) | Is it important for the user that these settings are synchronized? |
+| ![Checklist box](images/uev-checklist-box.gif) | Are these user settings already managed by an application management or settings policy solution? UE-V applies application settings at application startup and Windows settings at logon, unlock, or remote connect events. If you use UE-V with other settings sharing solutions, users might experience inconsistency across synchronized settings. |
 | ![Checklist box](images/uev-checklist-box.gif) | Are the application settings specific to the computer? Application preferences and customizations that are associated with hardware or specific computer configurations do not consistently synchronize across sessions and can cause a poor application experience. |
 | ![Checklist box](images/uev-checklist-box.gif) | Does the application store settings in the Program Files directory or in the file directory that is located in the **Users**\\ \[User name\] \\**AppData**\\**LocalLow** directory? Application data that is stored in either of these locations usually should not synchronize with the user, because this data is specific to the computer or because the data is too large to synchronize. |
-| ![Checklist box](images/uev-checklist-box.gif) | Does the application store any settings in a file that contains other application data that should not synchronize? UE-V synchronizes files as a single unit. If settings are stored in files that include application data other than settings, then synchronizing this additional data can cause a poor application experience. |
+| ![Checklist box](images/uev-checklist-box.gif) | Does the application store any settings in a file that contains other application data that should not synchronize? UE-V synchronizes files as a single unit. If settings are stored in files that include application data other than settings, then synchronizing this additional data can cause a poor application experience.|
 | ![Checklist box](images/uev-checklist-box.gif) | How large are the files that contain the settings? The performance of the settings synchronization can be affected by large files. Including large files can affect the performance of settings synchronization. |
 
 ## Other considerations when preparing a UE-V deployment

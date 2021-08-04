@@ -1,6 +1,6 @@
 ---
 title: ApplicationControl CSP
-description: The ApplicationControl CSP allows you to manage multiple Windows Defender Application Control (WDAC) policies from a MDM server.
+description: The ApplicationControl CSP allows you to manage multiple Windows Defender Application Control (WDAC) policies from an MDM server.
 keywords: security, malware
 ms.author: dansimp
 ms.topic: article
@@ -13,13 +13,36 @@ ms.date: 09/10/2020
 
 # ApplicationControl CSP
 
-Windows Defender Application Control (WDAC) policies can be managed from an MDM server or locally using PowerShell via the WMI Bridge through the ApplicationControl configuration service provider (CSP). The ApplicationControl CSP was added in Windows 10, version 1903. This CSP provides expanded diagnostic capabilities and support for [multiple policies](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike the [AppLocker CSP](applocker-csp.md), the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently does not schedule a reboot.
+Windows Defender Application Control (WDAC) policies can be managed from an MDM server or locally using PowerShell via the WMI Bridge through the ApplicationControl configuration service provider (CSP). The ApplicationControl CSP was added in Windows 10, version 1903. This CSP provides expanded diagnostic capabilities and support for [multiple policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) (introduced in Windows 10, version 1903). It also provides support for rebootless policy deployment (introduced in Windows 10, version 1709). Unlike the [AppLocker CSP](applocker-csp.md), the ApplicationControl CSP correctly detects the presence of no-reboot option and consequently does not schedule a reboot.
 Existing WDAC policies deployed using the AppLocker CSP's CodeIntegrity node can now be deployed using the ApplicationControl CSP URI. Although WDAC policy deployment via the AppLocker CSP will continue to be supported, all new feature work will be done in the ApplicationControl CSP only.
 
-The following diagram shows the ApplicationControl CSP in tree format.
+The following shows the ApplicationControl CSP in tree format.
 
-![tree diagram for applicationcontrol csp](images/provisioning-csp-applicationcontrol.png)
-
+```
+./Vendor/MSFT
+ApplicationControl
+----Policies
+--------Policy GUID
+------------Policy
+------------PolicyInfo
+----------------Version
+----------------IsEffective
+----------------IsDeployed
+----------------IsAuthorized
+----------------Status
+----------------FriendlyName
+------------Token
+----------------TokenID
+----Tokens
+--------ID
+------------Token
+------------TokenInfo
+----------------Status
+------------PolicyIDs
+----------------Policy GUID
+----TenantID
+----DeviceID
+```
 <a href="" id="vendor-msft-applicationcontrol"></a>**./Vendor/MSFT/ApplicationControl**  
 Defines the root node for the ApplicationControl CSP.
 
@@ -99,7 +122,7 @@ The following table provides the result of this policy based on different values
 |False|False|True|Not Reachable.|
 |False|False|False|*Not Reachable.|
 
-`*` denotes a valid intermediary state; however, if an MDM transaction results in this state configuration, the END_COMMAND_PROCESSING will result in a fail.
+\* denotes a valid intermediary state; however, if an MDM transaction results in this state configuration, the END_COMMAND_PROCESSING will result in a fail.
 
 <a href="" id="applicationcontrol-policies-policyguid-policyinfo-status"></a>**ApplicationControl/Policies/_Policy GUID_/PolicyInfo/Status**  
 This node specifies whether the deployment of the policy indicated by the GUID was successful.
@@ -117,7 +140,7 @@ Value type is char.
 
 ## Microsoft Endpoint Manager (MEM) Intune Usage Guidance  
 
-For customers using Intune standalone or hybrid management with Configuration Manager (MEMCM) to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune)
+For customers using Intune standalone or hybrid management with Configuration Manager (MEMCM) to deploy custom policies via the ApplicationControl CSP, refer to [Deploy Windows Defender Application Control policies by using Microsoft Intune](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune).
 
 ## Generic MDM Server Usage Guidance
 
@@ -125,11 +148,11 @@ In order to leverage the ApplicationControl CSP without using Intune, you must:
 
 1. Know a generated policy's GUID, which can be found in the policy xml as `<PolicyID>` or `<PolicyTypeID>` for pre-1903 systems.
 2. Convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet in order to be deployed. The binary policy may be signed or unsigned.
-3. Create a policy node (a Base64-encoded blob of the binary policy representation) using the certutil -encode command line tool.
+3. Create a policy node (a Base64-encoded blob of the binary policy representation) using the certutil -encode command-line tool.
 
 Below is a sample certutil invocation:
 
-```cmd
+```console
 certutil  -encode WinSiPolicy.p7b WinSiPolicy.cer
 ```
 
@@ -141,7 +164,7 @@ An alternative to using certutil would be to use the following PowerShell invoca
 
 ### Deploy Policies
 
-To deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the the Format section in the Example 1 below.
+To deploy a new base policy using the CSP, perform an ADD on **./Vendor/MSFT/ApplicationControl/Policies/_Policy GUID_/Policy** using the Base64-encoded policy node as {Data}. Refer to the Format section in the Example 1 below.
 
 To deploy base policy and supplemental policies:
 
@@ -266,7 +289,7 @@ The following is an example of Delete command:
 
 ## PowerShell and WMI Bridge Usage Guidance
 
-The ApplicationControl CSP can also be managed locally from PowerShell or via Microsoft Endpoint Manager Configuration Manager's (MEMCM, formerly known as SCCM) task sequence scripting by leveraging the [WMI Bridge Provider](https://docs.microsoft.com/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider).
+The ApplicationControl CSP can also be managed locally from PowerShell or via Microsoft Endpoint Manager Configuration Manager's (MEMCM, formerly known as SCCM) task sequence scripting by leveraging the [WMI Bridge Provider](./using-powershell-scripting-with-the-wmi-bridge-provider.md).
 
 ### Setup for using the WMI Bridge
 
@@ -285,7 +308,7 @@ The ApplicationControl CSP can also be managed locally from PowerShell or via Mi
 Run the following command. PolicyID is a GUID which can be found in the policy xml, and should be used here without braces.
 
 ```powershell
-    New-CimInstance -Namespace $namespace -ClassName $policyClassName -Property @{ParentID="./Vendor/MSFT/ApplicationControl/Policies";InstanceID="<PolicyID>";Policy=$policyBase64}
+New-CimInstance -Namespace $namespace -ClassName $policyClassName -Property @{ParentID="./Vendor/MSFT/ApplicationControl/Policies";InstanceID="<PolicyID>";Policy=$policyBase64}
 ```
 
 ### Querying all policies via WMI Bridge

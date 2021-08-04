@@ -19,10 +19,27 @@ ms.date: 08/15/2018
 
 The WindowsLicensing configuration service provider is designed for licensing related management scenarios. Currently the scope is limited to edition upgrades of Windows 10 desktop and mobile devices, such as Windows 10 Pro to Windows 10 Enterprise. In addition, this CSP provides the capability to activate or change the product key of Windows 10 desktop devices.
 
-The following diagram shows the WindowsLicensing configuration service provider in tree format.
-
-![windowslicensing csp diagram](images/provisioning-csp-windowslicensing.png)
-
+The following shows the WindowsLicensing configuration service provider in tree format.
+```
+./Vendor/MSFT
+WindowsLicensing
+----UpgradeEditionWithProductKey
+----ChangeProductKey
+----Edition
+----Status
+----UpgradeEditionWithLicense
+----LicenseKeyType
+----CheckApplicability
+----ChangeProductKey (Added in Windows 10, version 1703)
+----Subscriptions (Added in Windows 10, version 1607)
+--------SubscriptionId (Added in Windows 10, version 1607)
+------------Status (Added in Windows 10, version 1607)
+------------Name (Added in Windows 10, version 1607)
+----SMode (Added in Windows 10, version 1809)
+--------SwitchingPolicy (Added in Windows 10, version 1809)
+--------SwitchFromSMode (Added in Windows 10, version 1809)
+--------Status (Added in Windows 10, version 1809)
+```
 <a href="" id="--device-vendor-msft-windowslicensing"></a>**./Device/Vendor/MSFT/WindowsLicensing**  
 This is the root node for the WindowsLicensing configuration service provider.
 

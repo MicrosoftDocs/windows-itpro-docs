@@ -7,8 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -62,7 +62,7 @@ Microsoft classifies most malicious software into one of the following categorie
 
 * **Password stealer:** A type of malware that gathers your personal information, such as usernames and passwords. It often works along with a keylogger, which collects and sends information about the keys you press and websites you visit.
 
-* **Ransomware:** A type of malware that encrypts your files or makes other modifications that can prevent you from using your device. It then displays a ransom note that states you must pay money or perform other actions before you can use your device again. [See more information about ransomware](ransomware-malware.md).
+* **Ransomware:** A type of malware that encrypts your files or makes other modifications that can prevent you from using your device. It then displays a ransom note that states you must pay money or perform other actions before you can use your device again. [See more information about ransomware](/security/compass/human-operated-ransomware).
 
 * **Rogue security software:** Malware that pretends to be security software but doesn't provide any protection. This type of malware usually displays alerts about nonexistent threats on your device. It also tries to convince you to pay for its services.
 
@@ -164,7 +164,7 @@ Microsoft maintains a worldwide network of analysts and intelligence systems whe
 
 ## Potentially unwanted application (PUA)
 
-Our PUA protection aims to safeguard user productivity and ensure enjoyable Windows experiences. This protection helps deliver more productive, performant, and delightful Windows experiences. For instruction on how to enable PUA protection in Chromium-based Microsoft Edge and Microsoft Defender Antivirus, see [Detect and block potentially unwanted applications](../microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md).
+Our PUA protection aims to safeguard user productivity and ensure enjoyable Windows experiences. This protection helps deliver more productive, performant, and delightful Windows experiences. For instruction on how to enable PUA protection in Chromium-based Microsoft Edge and Microsoft Defender Antivirus, see [Detect and block potentially unwanted applications](/microsoft-365/security/defender-endpoint/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
 
 *PUAs are not considered malware.*
 

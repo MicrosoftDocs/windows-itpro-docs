@@ -12,18 +12,22 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 10/17/2017
+ms.date: 07/21/2021
 ---
 
 # Sign code integrity policy with Device Guard signing
 
 > [!IMPORTANT]
-> We are introducing a new version of the Device Guard Signing Service (DGSS) to be more automation friendly. The new version of the service (DGSS v2) is now available. As announced earlier, you will have until the end of December 2020 to transition to DGSS v2. At the end of December 2020, the existing web-based mechanisms for the current version of the DGSS service will be retired and will no longer be available for use. Please make plans to migrate to the new version of the service by the end of December 2020.
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+
+
+> [!IMPORTANT]
+> We are introducing a new version of the Device Guard Signing Service (DGSS) to be more automation friendly. The new version of the service (DGSS v2) is now available. As announced earlier, you will have until June 9, 2021 to transition to DGSS v2. On June 9, 2021, the existing web-based mechanisms for the current version of the DGSS service will be retired and will no longer be available for use. Please make plans to migrate to the new version of the service by June 9, 2021.
 >
 > Following are the major changes we are making to the service: 
 > - The method for consuming the service will change to a more automation-friendly method based on PowerShell cmdlets. These cmdlets are available as a NuGet download, https://www.nuget.org/packages/Microsoft.Acs.Dgss.Client/.
 > - In order to achieve desired isolation, you will be required to get a new CI policy from DGSS v2 (and optionally sign it). 
-> -	DGSS v2 will not have support for downloading leaf certificates used to sign your files (however, the root certificate will still be available to download).  Note that the certificate used to sign a file can be easily extracted from the signed file itself.  As a result, after DGSS v1 is retired at the end of December 2020, you will no longer be able to download the leaf certificates used to sign your files.
+> -	DGSS v2 will not have support for downloading leaf certificates used to sign your files (however, the root certificate will still be available to download).  Note that the certificate used to sign a file can be easily extracted from the signed file itself.  As a result, after DGSS v1 is retired, you will no longer be able to download the leaf certificates used to sign your files.
 >
 > The following functionality will be available via these PowerShell cmdlets:
 > - Get a CI policy
@@ -48,7 +52,7 @@ Before you get started, be sure to review these best practices:
 **Best practices**
 
 - Test your code integrity policies on a group of devices before deploying them to a large group of devices.
-- Use rule options 9 and 10 during testing. For more information, see the section Code integrity policy rules in the [Device Guard deployment guide](https://docs.microsoft.com/windows/device-security/device-guard/device-guard-deployment-guide).
+- Use rule options 9 and 10 during testing. For more information, see the section Code integrity policy rules in the [Device Guard deployment guide](/windows/device-security/device-guard/device-guard-deployment-guide).
 
 **To sign a code integrity policy**
 

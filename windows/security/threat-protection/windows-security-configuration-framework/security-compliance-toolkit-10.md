@@ -55,7 +55,7 @@ The Security Compliance Toolkit consists of:
     -   Local Group Policy Object (LGPO) tool
 
 
-You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/).
+You can [download the tools](https://www.microsoft.com/download/details.aspx?id=55319) along with the baselines for the relevant Windows versions. For more details about security baseline recommendations, see the [Microsoft Security Guidance blog](/archive/blogs/secguide/).
 
 ## What is the Policy Analyzer tool?
 
@@ -67,7 +67,7 @@ The Policy Analyzer is a utility for analyzing and comparing sets of Group Polic
 
 Policy Analyzer lets you treat a set of GPOs as a single unit. This makes it easy to determine whether particular settings are duplicated across the GPOs or are set to conflicting values. Policy Analyzer also lets you capture a baseline and then compare it to a snapshot taken at a later time to identify changes anywhere across the set. 
 
-More information on the Policy Analyzer tool can be found on the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/22/new-tool-policy-analyzer/) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+More information on the Policy Analyzer tool can be found on the [Microsoft Security Guidance blog](/archive/blogs/secguide/new-tool-policy-analyzer) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
 
 ## What is the Local Group Policy Object (LGPO) tool?
 
@@ -77,4 +77,16 @@ LGPO.exe can import and apply settings from Registry Policy (Registry.pol) files
 It can export local policy to a GPO backup. 
 It can export the contents of a Registry Policy file to the “LGPO text” format that can then be edited, and can build a Registry Policy file from an LGPO text file.
 
-Documentation for the LGPO tool can be found on the [Microsoft Security Guidance blog](https://blogs.technet.microsoft.com/secguide/2016/01/21/lgpo-exe-local-group-policy-object-utility-v1-0/) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+Documentation for the LGPO tool can be found on the [Microsoft Security Guidance blog](/archive/blogs/secguide/lgpo-exe-local-group-policy-object-utility-v1-0) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+
+## What is the Set Object Security tool?
+
+SetObjectSecurity.exe enables you to set the security descriptor for just about any type of Windows securable object, such as files, directories, registry keys, event logs, services, and SMB shares. For file system and registry objects, you can choose whether to apply inheritance rules. You can also choose to output the security descriptor in a .reg-file-compatible representation of the security descriptor for a REG_BINARY registry value.
+
+Documentation for the Set Object Security tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/new-amp-updated-security-tools/ba-p/1631613) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).
+
+## What is the GPO to Policy Rules tool?
+
+Automate the conversion of GPO backups to Policy Analyzer .PolicyRules files and skip the GUI. GPO2PolicyRules is a command-line tool that is included with the Policy Analyzer download. 
+
+Documentation for the GPO to PolicyRules tool can be found on the [Microsoft Security Baselines blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/new-amp-updated-security-tools/ba-p/1631613) or by [downloading the tool](https://www.microsoft.com/download/details.aspx?id=55319).

@@ -4,8 +4,8 @@ description: A provisioning package (.ppkg) is a container for a collection of c
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
@@ -65,7 +65,7 @@ Windows provisioning XML is the framework that allows Microsoft and OEM componen
 
 Settings for each component can be declared within that component's package manifest file. These declarations are turned into settings schema that are used by Windows Configuration Designer to expose the potential settings to users to create customizations in the image or in provisioning packages. Windows Configuration Designer translates the user configuration, which is declared through Windows provisioning answer file(s), into the on-device provisioning format.
 
-When the provisioning engine selects a configuration, the Windows provisioning XML is contained within the selected provisioning data and is passed through the configuration manager and then to the [Windows provisioning CSP](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/provisioning-csp). The Windows provisioning CSP then takes and applies the provisioning to the proper location for the actual component to use. 
+When the provisioning engine selects a configuration, the Windows provisioning XML is contained within the selected provisioning data and is passed through the configuration manager and then to the [Windows provisioning CSP](/windows/client-management/mdm/provisioning-csp). The Windows provisioning CSP then takes and applies the provisioning to the proper location for the actual component to use. 
 
 ## Provisioning engine
 
@@ -82,7 +82,7 @@ The provisioning engine provides the following functionality:
 
 ## Configuration manager
 
-The configuration manager provides the unified way of managing Windows 10 devices. Configuration is mainly done through the Open Mobile Alliance (OMA) Device Management (DM) and Client Provisioning (CP) protocols. The configuration manager handles and parses these protocol requests from different channels and passes them down to [Configuration Service Providers (CSPs)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/configuration-service-provider-reference) to perform the specific management requests and settings. 
+The configuration manager provides the unified way of managing Windows 10 devices. Configuration is mainly done through the Open Mobile Alliance (OMA) Device Management (DM) and Client Provisioning (CP) protocols. The configuration manager handles and parses these protocol requests from different channels and passes them down to [Configuration Service Providers (CSPs)](/windows/client-management/mdm/configuration-service-provider-reference) to perform the specific management requests and settings. 
 
 The provisioning engine relies on configuration manager for all of the actual processing and application of a chosen configuration. The provisioning engine determines the stage of provisioning and, based on a set of keys, determines the set of configuration to send to the configuration manager. The configuration manager in turn parses and calls into the CSPs for the setting to be applied. 
 
@@ -179,8 +179,3 @@ After a stand-alone provisioning package is applied to the device, the package i
  
 
  
-
-
-
-
-

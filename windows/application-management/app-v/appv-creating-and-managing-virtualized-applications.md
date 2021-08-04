@@ -1,7 +1,7 @@
 ---
 title: Creating and managing App-V virtualized applications (Windows 10)
 description: Create and manage App-V virtualized applications to monitor and record the installation process for an application to be run as a virtualized application.
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # Creating and managing App-V virtualized applications
@@ -96,11 +96,12 @@ The following table lists the supported shell extensions:
 
 Copy on write (CoW) file extensions allow App-V to dynamically write to specific locations contained in the virtual package while it is being used.
 
-The following table displays the file types that can exist in a virtual package under the VFS directory, since App-V 5.1, but which cannot be updated on the computer running the App-V client. All other files and directories can be modified.
+The following list shows the file types that can exist in a virtual package under the VFS directory, since App-V 5.1, but which cannot be updated on the computer running the App-V client. All other files and directories can be modified.
 
-| File Type||||||
-|---|---|---|---|---|---|
-| .com | .exe | .dll | .ocx |  |
+- .com
+- .exe
+- .dll
+- .ocx
 
 ## Modifying an existing virtual application package
 

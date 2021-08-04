@@ -15,10 +15,27 @@ manager: dansimp
 
 The WindowsDefenderApplicationGuard configuration service provider (CSP) is used by the enterprise to configure the settings in Microsoft Defender Application Guard. This CSP was added in Windows 10, version 1709.
 
-The following diagram shows the WindowsDefenderApplicationGuard configuration service provider in tree format.
-
-![windowsdefenderapplicationguard csp](images/provisioning-csp-windowsdefenderapplicationguard.png)
-
+The following shows the WindowsDefenderApplicationGuard configuration service provider in tree format.
+```
+./Device/Vendor/MSFT
+WindowsDefenderApplicationGuard
+----Settings
+--------AllowWindowsDefenderApplicationGuard
+--------ClipboardFileType
+--------ClipboardSettings
+--------PrintingSettings
+--------BlockNonEnterpriseContent
+--------AllowPersistence
+--------AllowVirtualGPU
+--------SaveFilesToHost
+--------CertificateThumbprints
+--------AllowCameraMicrophoneRedirection
+----Status
+----PlatformStatus
+----InstallWindowsDefenderApplicationGuard
+----Audit
+--------AuditApplicationGuard
+```
 <a href="" id="windowsdefenderapplicationguard"></a>**./Device/Vendor/MSFT/WindowsDefenderApplicationGuard**  
 Root node. Supported operation is Get.
 
@@ -179,14 +196,14 @@ ADMX Info:
 <!--/ADMXMapped-->
 
 <a href="" id="savefilestohost"></a>**Settings/SaveFilesToHost**  
-Added in Windows 10, version 1803. This policy setting allows you to determine whether users can elect to download files from Edge in the container and persist files them from container to the host operating system. 
+Added in Windows 10, version 1803. This policy setting allows you to determine whether users can elect to download files from Edge in the container and persist files them from container to the host operating system. This also enables users to elect files on the host operating system and upload it through Edge in the container. 
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete. 
 
 This policy setting is supported on Microsoft Edge on Windows 10 Enterprise or Windows 10 Education with Microsoft Defender Application Guard in Enterprise mode.
 
 The following list shows the supported values:  
-- 0 (default) - The user cannot download files from Edge in the container to the host file system. When the policy is not configured, it is the same as disabled (0).
+- 0 (default) - The user cannot download files from Edge in the container to the host file system, or upload files from host file system to Edge in the container. When the policy is not configured, it is the same as disabled (0).
 - 1 - Turns on the functionality to allow users to download files from Edge in the container to the host file system.  
 
 <!--ADMXMapped-->
@@ -218,6 +235,9 @@ ADMX Info:
 - GP path: *Windows Components/Microsoft Defender Application Guard*
 - GP ADMX file name: *AppHVSI.admx*
 <!--/ADMXMapped-->
+
+> [!NOTE]
+> To enforce this policy, device restart or user logon/logoff is required. 
 
 <a href="" id="allowcameramicrophoneredirection"></a>**Settings/AllowCameraMicrophoneRedirection**  
 Added in Windows 10, version 1809. This policy setting allows you to determine whether applications inside Microsoft Defender Application Guard can access the device’s camera and microphone when these settings are enabled on the user’s device.

@@ -9,8 +9,8 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
@@ -37,8 +37,8 @@ To objectively identify malware and unidentified software, Microsoft applies a [
 
 ### Developer questions
 
-Find more guidance about the file submission and detection dispute process in our [FAQ for software developers](developer-faq.md).
+Find more guidance about the file submission and detection dispute process in our [FAQ for software developers](developer-faq.yml).
 
 ### Scan your software
 
-Use [Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) to check your software against the latest Security intelligence and cloud protection from Microsoft.
+Use [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) to check your software against the latest Security intelligence and cloud protection from Microsoft.

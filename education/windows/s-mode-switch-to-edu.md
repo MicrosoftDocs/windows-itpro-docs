@@ -27,20 +27,20 @@ S mode is an enhanced security mode of Windows 10 – streamlined for security a
 
 
 |  |Home  |S mode  |Pro/Pro Education  |Enterprise/Education |
-|---------|:---:|:---:|:---:|:---:|
-|Start Menu/Hello/Cortana/<BR>Windows Ink/Microsoft Edge | X | X | X | X |
-|Store apps (including Windows <BR>desktop bridge apps) | X | X | X | X |
-|Windows Update | X | X | X | X |
-|Device Encryption | X | X | X | X |
-|BitLocker | | X | X | X |
-|Windows Update for Business |  | X | X | X |
-|Microsoft Store for Education | | X | X | X |
-|Mobile Device Management<BR> and Azure AD join | | X | X | X |
-|Group Policy management and <BR>Active Directory Domain Services | | | X | X |
-|Desktop (Windows 32) Apps | X | | X | X |
-|Change App Defaults<BR>Search/Browser/Photos/etc. | X | | X | X |
-|Credential Guard | | | | X |
-|Device Guard | | | | X |
+|:---------|:---:|:---:|:---:|:---:|
+|**Start Menu/Hello/Cortana/<BR>Windows Ink/Microsoft Edge** | X | X | X | X |
+|**Store apps (including Windows <BR>desktop bridge apps)** | X | X | X | X |
+|**Windows Update** | X | X | X | X |
+|**Device Encryption** | X | X | X | X |
+|**BitLocker** | | X | X | X |
+|**Windows Update for Business** |  | X | X | X |
+|**Microsoft Store for Education** | | X | X | X |
+|**Mobile Device Management**<BR> **and Azure AD join** | | X | X | X |
+|**Group Policy management and** <BR>**Active Directory Domain Services** | | | X | X |
+|**Desktop (Windows 32) Apps** | X | | X | X |
+|**Change App Defaults**<BR>**Search/Browser/Photos/etc.** | X | | X | X |
+|**Credential Guard** | | | | X |
+|**Device Guard** | | | | X |
 
 ### Windows 10 in S mode is safe, secure, and fast.  
 However, in some limited scenarios, you might need to switch to Windows 10 Education. You can switch devices running Windows 10, version 1709 or later. Use the following information to switch to Windows 10 Pro through the Microsoft Store. 
@@ -56,7 +56,7 @@ Tenant-wide Windows 10 Pro in S mode > Pro Education in S mode <BR>
 Tenant-wide Windows 10 Pro > Pro Education
 
 > [!IMPORTANT]
-> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to roll back this kind of switch is through a [bare metal recovery (BMR)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
+> While it’s free to switch to Windows 10 Pro, it’s not reversible. The only way to roll back this kind of switch is through a [bare metal recovery (BMR)](/windows-hardware/manufacture/desktop/create-media-to-run-push-button-reset-features-s14) reset. This restores a Windows device to the factory state, even if the user needs to replace the hard drive or completely wipe the drive clean. If a device is switched out of S mode via the Microsoft Store, it will remain out of S mode even after the device is reset.
 
 ### Devices running Windows 10, version 1709
 
