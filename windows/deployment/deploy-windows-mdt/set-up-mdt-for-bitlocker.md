@@ -32,16 +32,16 @@ To configure your environment for BitLocker, you will need to do the following:
 4. Configure the rules (CustomSettings.ini) for BitLocker.
 
 > [!NOTE]
-> Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery password in Active Directory. For additional information about this feature, see [Backing Up BitLocker and TPM Recovery Information to AD DS](/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds).
+> Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery password in Active Directory. For more information about this feature, see [Backing Up BitLocker and TPM Recovery Information to AD DS](/windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds).
 If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
 
 > [!NOTE]
 > Backing up TPM to Active Directory was supported only on Windows 10 version 1507 and 1511.
 
 >[!NOTE]
->Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For additional information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](/previous-versions/windows/it-pro/windows-7/dd875529(v=ws.10)). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
+>Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For more information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](/previous-versions/windows/it-pro/windows-7/dd875529(v=ws.10)). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
 
-For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, please see [Deploy Windows 10 with the Microsoft Deployment Toolkit](./prepare-for-windows-deployment-with-mdt.md).
+For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](./prepare-for-windows-deployment-with-mdt.md).
 
 ## Configure Active Directory for BitLocker
 
@@ -69,7 +69,7 @@ The BitLocker Drive Encryption Administration Utilities are added as features vi
     1. BitLocker Drive Encryption Administration Utilities
     2. BitLocker Drive Encryption Tools
     3. BitLocker Recovery Password Viewer
-7. On the **Confirm installation selections** page, click **Install** and then click **Close**.
+7. On the **Confirm installation selections** page, click **Install**, and then click **Close**.
 
 ![figure 3](../images/mdt-09-fig03.png)
 
@@ -114,7 +114,7 @@ If you want to automate enabling the TPM chip as part of the deployment process,
 
 ### Add tools from Dell
 
-[Dell Comnmand | Configure](https://www.dell.com/support/article/us/en/04/sln311302/dell-command-configure) provides a Command Line Interface and a Graphical User Interface.
+[Dell Command | Configure](https://www.dell.com/support/article/us/en/04/sln311302/dell-command-configure) provides a Command Line Interface and a Graphical User Interface.
 
 ### Add tools from HP
 
