@@ -35,6 +35,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/windows/release-information/breadcrumb/toc.json",
       "ms.prod": "w10",
       "ms.date": "4/30/2019",
