@@ -96,7 +96,7 @@ landingContent:
           - text: New policies for Windows 10
             url: /windows/client-management/new-policies-for-windows-10
           - text: Configuration service provider reference
-            url: /windows/client-management/mdm/configuration-service-provider-reference.md
+            url: /windows/client-management/mdm/configuration-service-provider-reference
 
   # Card (optional)
   - title: Security and Privacy
