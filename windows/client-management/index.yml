@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
 title: Client management # < 60 chars
-summary: Find out how to apply custom configurations to Windows client devices. Windows provides a number of features and methods to help you configure or lock down specific parts of the Windows interface.  # < 160 chars
+summary: Find out how to apply custom configurations to Windows client devices. Windows provides many features and methods to help you configure or lock down specific parts of the Windows interface.  # < 160 chars
 
 metadata:
   title: Manage Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about the administrative tools, tasks and best practices for managing Windows clients across your enterprise. # Required; article description that is displayed in search results. < 160 chars.
+  description: Learn about the administrative tools, tasks, and best practices for managing Windows clients across your enterprise. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/30/2021 #Required; mm/dd/yyyy format.
+  ms.date: 08/05/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
