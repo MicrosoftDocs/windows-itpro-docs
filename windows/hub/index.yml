@@ -95,6 +95,8 @@ landingContent:
             url: /windows/client-management/mandatory-user-profile
           - text: New policies for Windows 10
             url: /windows/client-management/new-policies-for-windows-10
+          - text: Configuration service provider reference
+            url: /windows/client-management/mdm/configuration-service-provider-reference.md
 
   # Card (optional)
   - title: Security and Privacy

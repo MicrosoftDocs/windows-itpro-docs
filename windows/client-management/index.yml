@@ -4,7 +4,7 @@ title: Client management # < 60 chars
 summary: Find out how to apply custom configurations to Windows client devices. Windows provides a number of features and methods to help you configure or lock down specific parts of the Windows interface.  # < 160 chars
 
 metadata:
-  title: Configure Windows 10 # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Manage Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about the administrative tools, tasks and best practices for managing Windows clients across your enterprise. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
