@@ -81,7 +81,7 @@ The following example uses Microsoft Intune to configure an MDM policy that appl
 
 7. Select **Next**.
 8. In **Scope tags**, select **Next**. For more information about scope tags, see [Use RBAC and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
-9. In **Assignments**, select the user or groups that will receive your profile. Select **Next**. For more information on assigning profiles, see [Assign user and device profiles](device-profile-assign.md).
+9. In **Assignments**, select the user or groups that will receive your profile. Select **Next**. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
 10. In **Review + create**, review your settings. When you select **Create**, your changes are saved, and the profile is assigned. The policy is also shown in the profiles list.
 
 > [!NOTE]
@@ -89,7 +89,6 @@ The following example uses Microsoft Intune to configure an MDM policy that appl
 
 
 ## Next steps
-
 
 - [Manage Windows 10 Start and taskbar layout](windows-10-start-layout-options-and-policies.md)
 - [Configure Windows 10 taskbar](configure-windows-10-taskbar.md)

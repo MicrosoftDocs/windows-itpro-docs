@@ -4,7 +4,7 @@
   items:
     - name: Windows 10 Start and taskbar
       items:
-        - name: Manage Windows 10 Start and taskbar layout
+        - name: Start layout and taskbar
           href: windows-10-start-layout-options-and-policies.md
         - name: Use XML
           items: 
