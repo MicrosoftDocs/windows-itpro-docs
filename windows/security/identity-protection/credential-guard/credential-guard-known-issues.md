@@ -45,9 +45,9 @@ The following known issue has been fixed in the [Cumulative Security Update for 
     @@CyBAAAAUBQYAMHArBwUAMGAoBQZAQGA1BAbAUGAyBgOAQFAhBwcAsGA6AweAgDA2AQQAMEAwAANAgDA1AQLAIEADBQRAADAtAANAYEA1AwQA0CA5AAOAMEAyAQLAYDAxAwQAEDAEBwMAMEAwAgMAMDACBgRA0HA  
     Domain name: NULL
     
-   - This event stems from a scheduled task running under local user context with the Cumulative Security Update for November 2017 or later and happens when Credential Guard is enabled.
-   - The username appears in an unusual format because local accounts aren’t protected by Credential Guard. The task also fails to execute.
-   - As a workaround, run the scheduled task under a domain user or the computer's SYSTEM account.
+    - This event stems from a scheduled task running under local user context with the Cumulative Security Update for November 2017 or later and happens when Credential Guard is enabled.
+    - The username appears in an unusual format because local accounts aren’t protected by Credential Guard. The task also fails to execute.
+    - As a workaround, run the scheduled task under a domain user or the computer's SYSTEM account.
 
 The following known issues have been fixed by servicing releases made available in the Cumulative Security Updates for April 2017:
 
