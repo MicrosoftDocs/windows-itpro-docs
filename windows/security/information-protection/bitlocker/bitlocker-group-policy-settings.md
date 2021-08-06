@@ -444,6 +444,7 @@ This policy setting is used to require, allow, or deny the use of passwords with
 |**When enabled**|Users can configure a password that meets the requirements you define. To require the use of a password, select **Require password for removable data drive**. To enforce complexity requirements on the password, select **Require complexity**.|
 |**When disabled**|The user is not allowed to use a password.|
 |**When not configured**|Passwords are supported with the default settings, which do not include password complexity requirements and require only 8 characters.|
+
 **Reference**
 
 If you choose to allow the use of a password, you can require a password to be used, enforce complexity requirements, and configure a minimum length. For the complexity requirement setting to be effective, the Group Policy setting **Password must meet complexity requirements**, which is located at
