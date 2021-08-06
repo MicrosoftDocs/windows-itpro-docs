@@ -28,8 +28,8 @@ Windows Defender Credential Guard has certain application requirements. Windows 
 The following known issue has been fixed in the [Cumulative Security Update for November 2017](https://support.microsoft.com/help/4051033):
 
 -  Scheduled tasks with domain user stored credentials fail to run when Credential Guard is enabled. The task fails and reports Event ID 104 with the following message: <br>
-   "Task Scheduler failed to log on ‘\Test’ . <br>
-   Failure occurred in ‘LogonUserExEx’ . <br>
+   "Task Scheduler failed to log on ‘\Test’. <br>
+   Failure occurred in ‘LogonUserExEx’. <br>
    User Action: Ensure the credentials for the task are correctly specified. <br>
    Additional Data: Error Value: 2147943726. 2147943726 : ERROR\_LOGON\_FAILURE (The user name or password is incorrect)."
 -  When enabling NTLM audit on the domain controller, an Event ID 8004 with an indecipherable username format is logged. For example:
