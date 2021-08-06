@@ -31,7 +31,7 @@ The following known issue has been fixed in the [Cumulative Security Update for 
    "Task Scheduler failed to log on ‘\Test’. <br>
    Failure occurred in ‘LogonUserExEx’. <br>
    User Action: Ensure the credentials for the task are correctly specified. <br>
-   Additional Data: Error Value: 2147943726. 2147943726 : ERROR\_LOGON\_FAILURE (The user name or password is incorrect)."
+   Additional Data: Error Value: 2147943726. 2147943726: ERROR\_LOGON\_FAILURE (The user name or password is incorrect)."
 -  When enabling NTLM audit on the domain controller, an Event ID 8004 with an indecipherable username format is logged. For example:
    > Log Name: Microsoft-Windows-NTLM/Operational  
     Source: Microsoft-Windows-Security-Netlogon  
