@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Configure Windows 10 # < 60 chars
-summary: Find out how to apply custom configurations to Windows 10 devices. Windows 10 provides a number of features and methods to help you configure or lock down specific parts of Windows 10.  # < 160 chars
+title: Configure Windows client # < 60 chars
+summary: Find out how to apply custom configurations to Windows 10 and Windows 11 devices. Windows 10 provides a number of features and methods to help you configure or lock down specific parts of Windows client.  # < 160 chars
 
 metadata:
-  title: Configure Windows 10 # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Find out how to apply custom configurations to Windows 10 devices. # Required; article description that is displayed in search results. < 160 chars.
+  title: Configure Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Find out how to apply custom configurations to Windows client devices. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 03/23/2021 #Required; mm/dd/yyyy format.
+  ms.date: 08/05/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Manage Windows 10 settings 
+  - title: Manage Windows client settings 
     linkLists:
       - linkListType: overview
         links:
@@ -35,7 +35,7 @@ landingContent:
 
 
   # Card (optional)
-  - title: Configure a Windows 10 kiosk
+  - title: Configure a Windows kiosk
     linkLists:
       - linkListType: overview
         links:
@@ -48,7 +48,7 @@ landingContent:
 
 
   # Card (optional)
-  - title: Windows 10 provisioning packages
+  - title: Windows client provisioning packages
     linkLists:
       - linkListType: overview
         links:
@@ -70,7 +70,7 @@ landingContent:
             url: wcd/wcd-oobe.md
 
   # Card (optional)
-  - title: Configure Cortana in Windows 10
+  - title: Configure Cortana in Windows client
     linkLists:
       - linkListType: overview
         links:
@@ -80,7 +80,7 @@ landingContent:
             url: cortana-at-work/cortana-at-work-voice-commands.md
 
   # Card (optional)
-  - title: User Experience Virtualization (UE-V) for Windows 10
+  - title: User Experience Virtualization (UE-V) for Windows client
     linkLists:
       - linkListType: overview
         links:

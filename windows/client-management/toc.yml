@@ -36,7 +36,7 @@ items:
       items: 
         - name: CSP reference     
           href: mdm/configuration-service-provider-reference.md
-    - name: Troubleshoot Windows 10 clients
+    - name: Troubleshoot Windows clients
       items: 
         - name: Windows 10 support solutions      
           href: windows-10-support-solutions.md
