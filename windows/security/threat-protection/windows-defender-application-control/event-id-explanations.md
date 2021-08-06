@@ -91,7 +91,7 @@ A list of other relevant event IDs and their corresponding description.
 
 | Event ID | Description |
 |-------|------|
-| 3001 | An unsigned driver was attempted to load on the system. | 
+| 3001 | An unsigned driver was attempted to load on the system. |
 | 3002 | Code Integrity could not verify the boot image as the page hash could not be found. |
 | 3004 | Code Integrity could not verify the file as the page hash could not be found. |
 | 3010 | The catalog containing the signature for the file under validation is invalid. |
@@ -101,27 +101,27 @@ A list of other relevant event IDs and their corresponding description.
 | 3024 | Windows application control was unable to refresh the boot catalog file. |
 | 3026 | The catalog loaded is signed by a signing certificate that has been revoked by Microsoft and/or the certificate issuing authority. |
 | 3033 | The file under validation did not meet the requirements to pass the application control policy. |
-| 3034 | The file under validation would not meet the requirements to pass the application control policy if the policy was enforced. The file was allowed since the policy is in audit mode. | 
+| 3034 | The file under validation would not meet the requirements to pass the application control policy if the policy was enforced. The file was allowed since the policy is in audit mode. |
 | 3036 | The signed file under validation is signed by a code signing certificate that has been revoked by Microsoft or the certificate issuing authority. |
-| 3064 | If the policy was enforced, a user mode DLL under validation would not meet the requirements to pass the application control policy. The DLL was allowed since the policy is in audit mode. | 
-| 3065 | [Ignored] If the policy was enforced, a user mode DLL under validation would not meet the requirements to pass the application control policy. | 
+| 3064 | If the policy was enforced, a user mode DLL under validation would not meet the requirements to pass the application control policy. The DLL was allowed since the policy is in audit mode. |
+| 3065 | [Ignored] If the policy was enforced, a user mode DLL under validation would not meet the requirements to pass the application control policy. |
 | 3074 | Page hash failure while hypervisor-protected code integrity was enabled. |
 | 3075 | This event monitors the performance of the Code Integrity policy check a file. |
 | 3079 | The file under validation did not meet the requirements to pass the application control policy. |
 | 3080 | If the policy was in enforced mode, the file under validation would not have met the requirements to pass the application control policy. |
 | 3081 | The file under validation did not meet the requirements to pass the application control policy. |
-| 3082 | If the policy was in enforced mode, the non-WHQL driver would have been denied by the policy. | 
+| 3082 | If the policy was in enforced mode, the non-WHQL driver would have been denied by the policy. |
 | 3084 | Code Integrity will enforce the WHQL Required policy setting on this session. |
 | 3085 | Code Integrity will not enforce the WHQL Required policy setting on this session. |
 | 3086 | The file under validation does not meet the signing requirements for an isolated user mode (IUM) process. |
-| 3095 | This Code Integrity policy cannot be refreshed and must be rebooted instead. | 
-| 3097 | The Code Integrity policy cannot be refreshed. | 
+| 3095 | This Code Integrity policy cannot be refreshed and must be rebooted instead. |
+| 3097 | The Code Integrity policy cannot be refreshed. |
 | 3100 | The application control policy was refreshed but was unsuccessfully activated. Retry. |
-| 3101 | Code Integrity started refreshing the policy. | 
-| 3102 | Code Integrity finished refreshing the policy. | 
-| 3103 | Code Integrity is ignoring the policy refresh. | 
-| 3104 | The file under validation does not meet the signing requirements for a PPL (protected process light) process. | 
-| 3105 | Code Integrity is attempting to refresh the policy. | 
+| 3101 | Code Integrity started refreshing the policy. |
+| 3102 | Code Integrity finished refreshing the policy. |
+| 3103 | Code Integrity is ignoring the policy refresh. |
+| 3104 | The file under validation does not meet the signing requirements for a PPL (protected process light) process. |
+| 3105 | Code Integrity is attempting to refresh the policy. |
 | 3108 | Windows mode change event was successful. |
 | 3110 | Windows mode change event was unsuccessful. |
-| 3111 | The file under validation did not meet the hypervisor-protected code integrity (HVCI) policy. | 
+| 3111 | The file under validation did not meet the hypervisor-protected code integrity (HVCI) policy. |
