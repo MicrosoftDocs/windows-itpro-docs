@@ -55,6 +55,12 @@ items:
               items: 
                 - name: Collect data using Network Monitor
                   href: troubleshoot-tcpip-netmon.md
+                - name: "Part 1: TCP/IP performance overview"
+                  href: /troubleshoot/windows-server/networking/overview-of-tcpip-performance
+                - name: "Part 2: TCP/IP performance underlying network issues"
+                  href: /troubleshoot/windows-server/networking/troubleshooting-tcpip-performance-underlying-network
+                - name: "Part 3: TCP/IP performance known issues"
+                  href: /troubleshoot/windows-server/networking/tcpip-performance-known-issues                
                 - name: Troubleshoot TCP/IP connectivity
                   href: troubleshoot-tcpip-connectivity.md
                 - name: Troubleshoot port exhaustion
