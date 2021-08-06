@@ -40,12 +40,12 @@ The following known issue has been fixed in the [Cumulative Security Update for 
     Level:         Information  
     Description:  
     Domain Controller Blocked Audit: Audit NTLM authentication to this domain controller.  
-    Secure Channel name: \<Secure Channel name>  
+    Secure Channel name: \<Secure Channel Name>  
     User name:  
     @@CyBAAAAUBQYAMHArBwUAMGAoBQZAQGA1BAbAUGAyBgOAQFAhBwcAsGA6AweAgDA2AQQAMEAwAANAgDA1AQLAIEADBQRAADAtAANAYEA1AwQA0CA5AAOAMEAyAQLAYDAxAwQAEDAEBwMAMEAwAgMAMDACBgRA0HA  
     Domain name: NULL
     
-    - This event stems from a scheduled task running under local user context with the Cumulative Security Update for November 2017 or later and happens when Credential Guard is enabled.
+    - This event stems from a scheduled task running under local user context with the [Cumulative Security Update for November 2017](https://support.microsoft.com/topic/november-27-2017-kb4051033-os-build-14393-1914-447b6b88-e75d-0a24-9ab9-5dcda687aaf4) or later and happens when Credential Guard is enabled.
     - The username appears in an unusual format because local accounts aren’t protected by Credential Guard. The task also fails to execute.
     - As a workaround, run the scheduled task under a domain user or the computer's SYSTEM account.
 
