@@ -1,6 +1,6 @@
 ---
 title: Bulk enrollment
-description: Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. In Windows 10 and 11.
+description: Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. In Windows 10 and Windows 11.
 MS-HAID: 
   - 'p\_phdevicemgmt.bulk\_enrollment'
   - 'p\_phDeviceMgmt.bulk\_enrollment\_using\_Windows\_provisioning\_tool'
