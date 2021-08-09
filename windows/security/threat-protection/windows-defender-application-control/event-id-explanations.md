@@ -91,26 +91,26 @@ The WDAC policy rule-option values can be derived from the "Options" field in th
 
 | Bit Address | Policy Rule Option |
 |-------|------|
-| 2 | Enabled:UMCI |
-| 3 | Enabled:Boot Menu Protection |
-| 4 | Enabled:Intelligent Security Graph Authorization |
-| 5 | Enabled:Invalidate EAs on Reboot |
-| 7 | Required:WHQL |
-| 10 | Enabled:Allow Supplemental Policies |
-| 11 | Disabled:Runtime FilePath Rule Protection |
-| 13 | Enabled:Revoked Expired As Unsigned |
-| 16 | Enabled:Audit Mode (Default) |
-| 17 | Disabled:Flight Signing |
-| 18 | Enabled:Inherit Default Policy |
-| 19 | Enabled:Unsigned System Integrity Policy (Default) |
-| 20 | Enabled:Dynamic Code Security |
-| 21 | Required:EV Signers |
-| 22 | Enabled:Boot Audit on Failure |
-| 23 | Enabled:Advanced Boot Options Menu |
-| 24 | Disabled:Script Enforcement |
-| 25 | Required:Enforce Store Applications |
-| 27 | Enabled:Managed Installer  |
-| 28 | Enabled:Update Policy No Reboot |
+| 2 | `Enabled:UMCI` |
+| 3 | `Enabled:Boot Menu Protection` |
+| 4 | `Enabled:Intelligent Security Graph Authorization` |
+| 5 | `Enabled:Invalidate EAs on Reboot` |
+| 7 | `Required:WHQL` |
+| 10 | `Enabled:Allow Supplemental Policies` |
+| 11 | `Disabled:Runtime FilePath Rule Protection` |
+| 13 | `Enabled:Revoked Expired As Unsigned` |
+| 16 | `Enabled:Audit Mode (Default)` |
+| 17 | `Disabled:Flight Signing` |
+| 18 | `Enabled:Inherit Default Policy` |
+| 19 | `Enabled:Unsigned System Integrity Policy (Default)` |
+| 20 | `Enabled:Dynamic Code Security` |
+| 21 | `Required:EV Signers` |
+| 22 | `Enabled:Boot Audit on Failure` |
+| 23 | `Enabled:Advanced Boot Options Menu` |
+| 24 | `Disabled:Script Enforcement` |
+| 25 | `Required:Enforce Store Applications` |
+| 27 | `Enabled:Managed Installer`  |
+| 28 | `Enabled:Update Policy No Reboot` |
 
 ## Appendix
 A list of other relevant event IDs and their corresponding description.
