@@ -93,27 +93,86 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
     <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
     ```
 
-An example of a valid Managed Installer rule collection using Microsoft Endpoint Config Manager (MEMCM) is shown below.
+An example of a valid Managed Installer rule collection, using Microsoft Endpoint Config Manager (MEMCM), MEM (Intune), Powershell, and Powershell ISE, is shown below. Remove any rules that you do not wish to designate as a Managed Installer.
 
 ```xml
-<RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
-    <FilePublisherRule Id="6cc9a840-b0fd-4f86-aca7-8424a22b4b93" Name="MEMCM - CCMEXEC.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+<AppLockerPolicy Version="1">
+  <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
+    <FilePublisherRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Allow all" Description="Allow all" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="CCMEXEC.EXE">
-          <BinaryVersionRange LowSection="5.0.0.0" HighSection="*" />
+        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
         </FilePublisherCondition>
       </Conditions>
     </FilePublisherRule>
-    <FilePublisherRule Id="780ae2d3-5047-4240-8a57-767c251cbb12" Name="MEMCM - CCMSETUP.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <RuleCollectionExtensions>
+      <ThresholdExtensions>
+        <Services EnforcementMode="Enabled" />
+      </ThresholdExtensions>
+      <RedstoneExtensions>
+        <SystemApps Allow="Enabled"/>
+      </RedstoneExtensions>
+    </RuleCollectionExtensions>
+  </RuleCollection>
+  <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
+    <FilePublisherRule Id="9420c496-046d-45ab-bd0e-455b2649e41e" Name="Allow all" Description="Allow all" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <RuleCollectionExtensions>
+      <ThresholdExtensions>
+        <Services EnforcementMode="Enabled" />
+      </ThresholdExtensions>
+      <RedstoneExtensions>
+        <SystemApps Allow="Enabled"/>
+      </RedstoneExtensions>
+    </RuleCollectionExtensions>
+  </RuleCollection>
+  <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
+  <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
+    <FilePublisherRule Id="55932f09-04b8-44ec-8e2d-3fc736500c56" Name="MICROSOFT.MANAGEMENT.SERVICES.INTUNEWINDOWSAGENT.EXE version 1.39.200.2 or greater in MICROSOFTÂ® INTUNEâ„¢ from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFTÂ® INTUNEâ„¢" BinaryName="MICROSOFT.MANAGEMENT.SERVICES.INTUNEWINDOWSAGENT.EXE">
+          <BinaryVersionRange LowSection="1.39.200.2" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+      <FilePublisherRule Id="6ead5a35-5bac-4fe4-a0a4-be8885012f87" Name="CMM - CCMEXEC.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+        <Conditions>
+          <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="CCMEXEC.EXE">
+            <BinaryVersionRange LowSection="5.0.0.0" HighSection="*" />
+          </FilePublisherCondition>
+        </Conditions>
+      </FilePublisherRule>
+    <FilePublisherRule Id="8e23170d-e0b7-4711-b6d0-d208c960f30e" Name="CCM - CCMSETUP.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="CCMSETUP.EXE">
           <BinaryVersionRange LowSection="5.0.0.0" HighSection="*" />
         </FilePublisherCondition>
       </Conditions>
     </FilePublisherRule>
-</RuleCollection>
+    <FilePublisherRule Id="a8cb325e-b26e-4f52-b528-a137764cae42" Name="POWERSHELL.EXE, version 10.0.0.0 and above, in MICROSOFTÂ® WINDOWSÂ® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="POWERSHELL.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+    <FilePublisherRule Id="a8cb325e-b26e-4f52-b528-a137764cae54" Name="POWERSHELL_ISE.EXE, version 10.0.0.0 and above, in MICROSOFTÂ® WINDOWSÂ® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+      <Conditions>
+        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="POWERSHELL_ISE.EXE">
+          <BinaryVersionRange LowSection="*" HighSection="*" />
+        </FilePublisherCondition>
+      </Conditions>
+    </FilePublisherRule>
+  </RuleCollection>
+</AppLockerPolicy>
 ```
-
 ### Enable service enforcement in AppLocker policy
 
 Since many installation processes rely on services, it is typically necessary to enable tracking of services.
@@ -214,3 +273,27 @@ Ea Value Length: 7e
 ## Enabling managed installer logging events
 
 Refer to [Understanding Application Control Events](event-id-explanations.md#optional-intelligent-security-graph-isg-or-managed-installer-mi-diagnostic-events) for information on enabling optional managed installer diagnostic events.
+
+## Deploying the Managed Installer
+
+Once you've completed configuring your chosen Managed Installer, by specifying which to use in the AppLocker policy, enabling the service enforcement of it, and by enabling the Managed Installer option in a WDAC policy, you'll need to deploy it.
+
+1. Using the following command to deploy the policy.
+   ```powershell
+   Set-AppLockerPolicy -XmlPolicy $policyFile -Merge -ErrorAction SilentlyContinue
+   ```
+
+2. Verify policy deployment
+   ```powershell
+   Get-AppLockerPolicy -Local
+   
+   Version RuleCollections RuleCollectionTypes
+   ------- --------------- -------------------
+      1 {0, 0, 0, 0...} {Appx, Dll, Exe, ManagedInstaller...}
+   ```
+    Notice the output shows the ManagedInstaller rule is there.
+
+3. Get the policy XML (optional) using PS:
+   ```powershell
+   Get-AppLockerPolicy -Effective -Xml -ErrorVariable ev -ErrorAction SilentlyContinue
+   ```
