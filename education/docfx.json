@@ -26,6 +26,7 @@
       }
     ],
     "globalMetadata": {
+      "recommendations": true,
       "ROBOTS": "INDEX, FOLLOW",
       "audience": "windows-education",
       "ms.topic": "article",
