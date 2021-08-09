@@ -681,7 +681,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 11. Next to **Subject name format**, type **CN={{OnPrem_Distinguished_Name}}** to make the on-premises distinguished name the subject of the issued certificate.
 
    > [!NOTE]
-   > If the distinguished name contains special characters like plus sign ("+"), comma (","), semicolon (";"), or equal sign ("="), the bracketed name must be enclosed in quotation marks: CN=”{{OnPrem_Distinguished_Name}}”.
+   > If the distinguished name contains special characters like a plus sign ("+"), comma (","), semicolon (";"), or equal sign ("="), the bracketed name must be enclosed in quotation marks: CN=”{{OnPrem_Distinguished_Name}}”.
    > If the length of the distinguished name is more than 64 characters, the name length enforcement on the Certification Authority [must be disabled](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc784789(v=ws.10)?#disable-dn-length-enforcement).
 
 12. Specify **User Principal Name (UPN)** as a **Subject Alternative Name** parameter. Set its value as {{UserPrincipalName}}.
