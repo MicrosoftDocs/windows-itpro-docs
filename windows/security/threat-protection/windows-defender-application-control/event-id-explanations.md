@@ -87,7 +87,7 @@ reg add hklm\system\currentcontrolset\control\ci -v TestFlags -t REG_DWORD -d 0x
 ```
 
 ## System Integrity Policy Options
-The WDAC policy rule-option values can be derived from the "Options" field in the Details section of the Code integrity 3099 event. To parse the values, first convert the hex value to binary. Next, use the bit addresses and their values from the table below to determine the state of each [policy rule-option](select-types-of-rules-to-create#table-1-windows-defender-application-control-policy---rule-options).
+The WDAC policy rule-option values can be derived from the "Options" field in the Details section of the Code integrity 3099 event. To parse the values, first convert the hex value to binary. Next, use the bit addresses and their values from the table below to determine the state of each [policy rule-option](/select-types-of-rules-to-create#table-1-windows-defender-application-control-policy---rule-options).
 
 | Bit Address | Policy Rule Option |
 |-------|------|
