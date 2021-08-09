@@ -41,11 +41,11 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 
 ## What you need
 
--   Windows 10 devices
--   Windows Configuration Designer (WCD) tool
+-   Windows 10 devices.
+-   Windows Configuration Designer (WCD) tool.
 
     To get the WCD tool, download from the [Microsoft Store](https://www.microsoft.com/store/productId/9NBLGGH4TX22). For more information about the WCD tool, see [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd) and [Getting started with Windows WCD](/windows/configuration/provisioning-packages/provisioning-install-icd).
--   Enrollment credentials (domain account for enrollment, generic enrollment credentials for MDM, enrollment certificate for MDM.)
+-   Enrollment credentials (domain account for enrollment, generic enrollment credentials for MDM, enrollment certificate for MDM.).
 -   Wi-Fi credentials, computer name scheme, and anything else required by your organization.
 
     Some organizations require custom APNs to be provisioned before talking to the enrollment endpoint or custom VPN to join a domain.
@@ -73,7 +73,8 @@ Using the WCD, create a provisioning package using the enrollment information re
    -   **Secret** - Password
    For detailed descriptions of these settings, see [Provisioning CSP](provisioning-csp.md).
    Here is the screenshot of the WCD at this point.
-   ![bulk enrollment screenshot](images/bulk-enrollment.png)
+   
+    ![bulk enrollment screenshot](images/bulk-enrollment.png)
 9. Configure the other settings, such as the Wi-Fi connections so that the device can join a network before joining MDM (e.g., **Runtime settings** &gt; **ConnectivityProfiles** &gt; **WLANSetting**).
 10. When you are done adding all the settings, on the **File** menu, click **Save**.
 11. On the main menu click **Export** &gt; **Provisioning package**.
