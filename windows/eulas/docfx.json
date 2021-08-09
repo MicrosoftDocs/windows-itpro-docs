@@ -35,6 +35,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/windows/eulas/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None",
