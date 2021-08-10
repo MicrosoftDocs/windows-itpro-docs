@@ -280,22 +280,22 @@ Once you've completed configuring your chosen Managed Installer, by specifying w
 
 1. Using the following command to deploy the policy.
    ```powershell
+   $policyFile=
+   @"
+   Raw_AppLocker_Policy_XML
+   "@
    Set-AppLockerPolicy -XmlPolicy $policyFile -Merge -ErrorAction SilentlyContinue
    ```
 
 2. Verify Deployment of the Rule set was successful
    ```powershell
-   $policyFile=
-   @"
-   Raw_AppLocker_Policy_XML
-   "@
    Get-AppLockerPolicy -Local
    
    Version RuleCollections RuleCollectionTypes
    ------- --------------- -------------------
-      1 {0, 0, 0, 0...} {Appx, Dll, Exe, ManagedInstaller...}
+   1 {0, 0, 0, 0...} {Appx, Dll, Exe, ManagedInstaller...}
    ```
-    Verify the output shows the ManagedInstaller rule set.
+   Verify the output shows the ManagedInstaller rule set.
 
 3. Get the policy XML (optional) using PS:
    ```powershell
