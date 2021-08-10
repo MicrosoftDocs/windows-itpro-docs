@@ -283,17 +283,22 @@ Once you've completed configuring your chosen Managed Installer, by specifying w
    Set-AppLockerPolicy -XmlPolicy $policyFile -Merge -ErrorAction SilentlyContinue
    ```
 
-2. Verify policy deployment
+2. Verify Deployment of the Rule set was successful
    ```powershell
+   $policyFile=
+   @"
+   Raw_AppLocker_Policy_XML
+   "@
    Get-AppLockerPolicy -Local
    
    Version RuleCollections RuleCollectionTypes
    ------- --------------- -------------------
       1 {0, 0, 0, 0...} {Appx, Dll, Exe, ManagedInstaller...}
    ```
-    Notice the output shows the ManagedInstaller rule is there.
+    Verify the output shows the ManagedInstaller rule set.
 
 3. Get the policy XML (optional) using PS:
    ```powershell
    Get-AppLockerPolicy -Effective -Xml -ErrorVariable ev -ErrorAction SilentlyContinue
    ```
+   This command will show the raw XML to verify the individual rules that were set.
