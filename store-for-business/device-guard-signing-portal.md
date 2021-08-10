@@ -62,46 +62,45 @@ Device Guard is a feature set that consists of both hardware and software system
 
 - Usage:
 
-```powershell
-Get-DefaultPolicy -OutFile filename [-PassThru] [.. common ..]
-```
+  ```powershell
+  Get-DefaultPolicy -OutFile filename [-PassThru] [.. common ..]
+  ```
 
 - Parameters:
 
-     **OutFile** - string, mandatory - The filename where the default policy file should be persisted to disk. The file name should be an .xml file. If the file already            exists, it will be overwritten (note: create the folder first).
+  **OutFile** - string, mandatory - The filename where the default policy file should be persisted to disk. The file name should be an .xml file. If the file already            exists, it will be overwritten (note: create the folder first).
       
-     **PassThru** - switch, optional - If present, returns an XmlDocument object returning the default policy file.
+  **PassThru** - switch, optional - If present, returns an XmlDocument object returning the default policy file.
       
 - Command running time: 
 
-     The average running time is under 20 seconds but may be up to 3 minutes.
+  The average running time is under 20 seconds but may be up to 3 minutes.
       
 **Get-RootCertificate** Gets the root certificate for the current tenant. All Authenticode and policy signing certificates will eventually chain up to this root certificate.
 
 - Usage:
 
-     ```powershell
-     Get-RootCertificate -OutFile filename [-PassThru] [.. common ..]
-     ```
+  ```powershell
+  Get-RootCertificate -OutFile filename [-PassThru] [.. common ..]
+  ```
      
 - Parameters:
 
-     **OutFile** - string, mandatory - The filename where the root certificate file should be persisted to disk. The file name should be a .cer file. If the file already          exists, it will be overwritten (note: create the folder first).
+  **OutFile** - string, mandatory - The filename where the root certificate file should be persisted to disk. The file name should be a .cer file. If the file already          exists, it will be overwritten (note: create the folder first).
      
-     **PassThru** - switch, optional - If present, returns an X509Certificate2 object returning the default 
-     policy file.
+  **PassThru** - switch, optional - If present, returns an X509Certificate2 object returning the default policy file.
 
 - Command running time: 
 
-     The average running time is under 20 seconds but may be up to 3 minutes.
+  The average running time is under 20 seconds but may be up to 3 minutes.
 
 **Get-SigningHistory** Gets information for the latest 100 files signed by the current tenant. Results are returned as a collection with elements in reverse chronological order (most recent to least recent).
 
 - Usage:
 
-     ```powershell
-     Get-SigningHistory -OutFile filename [-PassThru] [.. common ..]
-     ```
+  ```powershell
+  Get-SigningHistory -OutFile filename [-PassThru] [.. common ..]
+  ```
 
 - Parameters:
 
@@ -117,9 +116,9 @@ Get-DefaultPolicy -OutFile filename [-PassThru] [.. common ..]
 
 - Usage: 
 
-   ```powershell
-   Submit-SigningJob -InFile filename -OutFile filename [-NoTimestamp][- TimeStamperUrl "timestamper url"] [-JobDescription "description"] [.. common ..]
-   ```
+  ```powershell
+  Submit-SigningJob -InFile filename -OutFile filename [-NoTimestamp][- TimeStamperUrl "timestamper url"] [-JobDescription "description"] [.. common ..]
+  ```
 
 - Parameters:
 
@@ -129,12 +128,12 @@ Get-DefaultPolicy -OutFile filename [-PassThru] [.. common ..]
 
   **NoTimestamp** - switch, optional - If present, the signing operation will skip timestamping the output file, and it will be signed only. If not present (default) and       TimeStamperUrl presents, the output file will be both signed and timestamped. If both NoTimestamp and TimeStamperUrl not present, the signing operation will skip             timestamping the output file, and it will be signed only.
 
-  **TimeStamperUrl** - string, optional - If this value is invalid Url (and NoTimestamp not present), the module will throw exception. To understand more about timestamping,   refer to [Timestamping](https://docs.microsoft.com/en-us/windows/msix/package/signing-package-overview#timestamping).
+  **TimeStamperUrl** - string, optional - If this value is invalid Url (and NoTimestamp not present), the module will throw exception. To understand more about timestamping,   refer to [Timestamping](/windows/msix/package/signing-package-overview#timestamping).
   
   **JobDescription** - string, optional - A short (< 100 chars), human-readable description of this submission. If the script is being called as part of an automated build     rocess the agent may wish to pass a version number or changeset number for this field. This information will be provided as part of the results of the Get-SigningHistory     command.
 
 **Submit-SigningV1MigrationPolicy** Submits a file to the service for signing and timestamping. The only valid file type for policy 
-signing is binary policy files with the extension (.bin) that have been created via the [ConvertFromCiPolicy](https://docs.microsoft.com/en-us/powershell/module/configci/convertfrom-cipolicy?view=windowsserver2019-ps&viewFallbackFrom=win10-ps) cmdlet. Otherwise, binary policy file may not be deployed properly. Note: Only use for V1 migration.
+signing is binary policy files with the extension (.bin) that have been created via the [ConvertFromCiPolicy](/powershell/module/configci/convertfrom-cipolicy?view=windowsserver2019-ps&viewFallbackFrom=win10-ps) cmdlet. Otherwise, binary policy file may not be deployed properly. Note: Only use for V1 migration.
 
 - Usage:
 
@@ -153,7 +152,7 @@ signing is binary policy files with the extension (.bin) that have been created 
 
   **NoTimestamp** - switch, optional - If present, the signing operation will skip timestamping the output file, and it will be signed only. If not present (default) and       TimeStamperUrl presents, the output file will be both signed and timestamped. If both NoTimestamp and TimeStamperUrl not present, the signing operation will skip             timestamping the output file, and it will be signed only.
 
-  **TimeStamperUrl** - string, optional - If this value is invalid Url (and NoTimestamp not present), the module will throw exception. To understand more about timestamping,   refer to [Timestamping](https://docs.microsoft.com/en-us/windows/msix/package/signing-package-overview#timestamping).
+  **TimeStamperUrl** - string, optional - If this value is invalid Url (and NoTimestamp not present), the module will throw exception. To understand more about timestamping,   refer to [Timestamping](/windows/msix/package/signing-package-overview#timestamping).
 
   **JobDescription** - string, optional - A short (< 100 chars), human-readable description of this submission. If the script is being called as part of an automated build     process the agent may wish to pass a version number or changeset number for this field. This information will be provided as part of the results of the Get-SigningHistory     command.
 
@@ -189,7 +188,7 @@ When you're uploading files for Device Guard signing, there are a few limits for
 | Maximum size for multiple files (uploaded in a group) | 4 MB     |
 | Maximum number of files per upload                    | 15 files |
 
- ## File types
+## File types
 Catalog and policy files have required files types.
 
 | File          | Required file type |
@@ -197,7 +196,7 @@ Catalog and policy files have required files types.
 | catalog files | .cat               |
 | policy files  | .bin               |
 
- ## Store for Business roles and permissions
+## Store for Business roles and permissions
 Signing code integrity policies and access to Device Guard portal requires the Device Guard signer role.
 
 ## Device Guard signing certificates
