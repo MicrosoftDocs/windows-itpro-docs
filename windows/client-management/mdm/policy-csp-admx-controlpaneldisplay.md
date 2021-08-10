@@ -159,7 +159,7 @@ Also, see the "Prohibit access to the Control Panel" (User Configuration\Adminis
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable the Display Control Panel*
+-   GP Friendly name: *Disable the Display Control Panel*
 -   GP name: *CPL_Display_Disable*
 -   GP path: *Control Panel\Display*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -226,7 +226,7 @@ This setting prevents users from using Control Panel to add, configure, or chang
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide Settings tab*
+-   GP Friendly name: *Hide Settings tab*
 -   GP name: *CPL_Display_HideSettings*
 -   GP path: *Control Panel\Display*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -297,7 +297,7 @@ For Windows 7 and later, use the "Prevent changing color and appearance" setting
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent changing color scheme*
+-   GP Friendly name: *Prevent changing color scheme*
 -   GP name: *CPL_Personalization_DisableColorSchemeChoice*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -369,7 +369,7 @@ If you disable or do not configure this setting, there is no effect.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent changing theme*
+-   GP Friendly name: *Prevent changing theme*
 -   GP name: *CPL_Personalization_DisableThemeChange*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -438,7 +438,7 @@ When enabled on Windows XP and later systems, this setting prevents users and ap
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent changing visual style for windows and buttons*
+-   GP Friendly name: *Prevent changing visual style for windows and buttons*
 -   GP name: *CPL_Personalization_DisableVisualStyle*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -511,7 +511,7 @@ Also, see the "Prevent changing Screen Saver" setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable screen saver*
+-   GP Friendly name: *Enable screen saver*
 -   GP name: *CPL_Personalization_EnableScreenSaver*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -584,7 +584,7 @@ Note: This setting only applies to Enterprise, Education, and Server SKUs.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Force a specific default lock screen and logon image*
+-   GP Friendly name: *Force a specific default lock screen and logon image*
 -   GP name: *CPL_Personalization_ForceDefaultLockScreen*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -653,7 +653,7 @@ If you disable or do not configure this setting, a user may change the font size
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit selection of visual style font size*
+-   GP Friendly name: *Prohibit selection of visual style font size*
 -   GP name: *CPL_Personalization_LockFontSize*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -722,7 +722,7 @@ If you enable this setting, the user will not be able to change their lock scree
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent changing lock screen and logon image*
+-   GP Friendly name: *Prevent changing lock screen and logon image*
 -   GP name: *CPL_Personalization_NoChangingLockScreen*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -795,7 +795,7 @@ If the "Force a specific Start background" policy is also set on a supported ver
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent changing start menu background*
+-   GP Friendly name: *Prevent changing start menu background*
 -   GP name: *CPL_Personalization_NoChangingStartMenuBackground*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -866,7 +866,7 @@ For systems prior to Windows Vista, this setting hides the Appearance and Themes
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent changing color and appearance*
+-   GP Friendly name: *Prevent changing color and appearance*
 -   GP name: *CPL_Personalization_NoColorAppearanceUI*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -941,7 +941,7 @@ Also, see the "Allow only bitmapped wallpaper" setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent changing desktop background*
+-   GP Friendly name: *Prevent changing desktop background*
 -   GP name: *CPL_Personalization_NoDesktopBackgroundUI*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1012,7 +1012,7 @@ For systems prior to Windows Vista, this setting also hides the Desktop tab in t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent changing desktop icons*
+-   GP Friendly name: *Prevent changing desktop icons*
 -   GP name: *CPL_Personalization_NoDesktopIconsUI*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1081,7 +1081,7 @@ If you disable or do not configure this policy setting, users that are not requi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not display the lock screen*
+-   GP Friendly name: *Do not display the lock screen*
 -   GP name: *CPL_Personalization_NoLockScreen*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1150,7 +1150,7 @@ If you enable this setting, none of the mouse pointer scheme settings can be cha
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent changing mouse pointers*
+-   GP Friendly name: *Prevent changing mouse pointers*
 -   GP name: *CPL_Personalization_NoMousePointersUI*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1217,7 +1217,7 @@ This setting prevents users from using Control Panel to add, configure, or chang
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent changing screen saver*
+-   GP Friendly name: *Prevent changing screen saver*
 -   GP name: *CPL_Personalization_NoScreenSaverUI*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1286,7 +1286,7 @@ If you enable this setting, none of the Sound Scheme settings can be changed by 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent changing sounds*
+-   GP Friendly name: *Prevent changing sounds*
 -   GP name: *CPL_Personalization_NoSoundSchemeUI*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1355,7 +1355,7 @@ If this setting is enabled, the background and accent colors of Windows will be 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Force a specific background and accent color*
+-   GP Friendly name: *Force a specific background and accent color*
 -   GP name: *CPL_Personalization_PersonalColors*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1431,7 +1431,7 @@ To ensure that a computer will be password protected, enable the "Enable Screen 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Password protect the screen saver*
+-   GP Friendly name: *Password protect the screen saver*
 -   GP name: *CPL_Personalization_ScreenSaverIsSecure*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1510,7 +1510,7 @@ When not configured, whatever wait time is set on the client through the Screen 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Screen saver timeout*
+-   GP Friendly name: *Screen saver timeout*
 -   GP name: *CPL_Personalization_ScreenSaverTimeOut*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1586,7 +1586,7 @@ If the specified screen saver is not installed on a computer to which this setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Force specific screen saver*
+-   GP Friendly name: *Force specific screen saver*
 -   GP name: *CPL_Personalization_SetScreenSaver*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1655,7 +1655,7 @@ If you disable or do not configure this setting, the default theme will be appli
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Load a specific theme*
+-   GP Friendly name: *Load a specific theme*
 -   GP name: *CPL_Personalization_SetTheme*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1733,7 +1733,7 @@ If you disable or do not configure this setting, the users can select the visual
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Force a specific visual style file or force Windows Classic*
+-   GP Friendly name: *Force a specific visual style file or force Windows Classic*
 -   GP name: *CPL_Personalization_SetVisualStyle*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1802,7 +1802,7 @@ If this setting is set to a nonzero value, then Start uses the specified backgro
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Force a specific Start background*
+-   GP Friendly name: *Force a specific Start background*
 -   GP name: *CPL_Personalization_StartBackground*
 -   GP path: *Control Panel\Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*

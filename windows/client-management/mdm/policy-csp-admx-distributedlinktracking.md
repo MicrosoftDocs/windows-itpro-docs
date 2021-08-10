@@ -92,7 +92,7 @@ This policy should not be set unless the DLT server is running on all domain con
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow Distributed Link Tracking clients to use domain resources*
+-   GP Friendly name: *Allow Distributed Link Tracking clients to use domain resources*
 -   GP name: *DLT_AllowDomainMode*
 -   GP path: *Windows\System!DLT_AllowDomainMode*
 -   GP ADMX file name: *DistributedLinkTracking.admx*
