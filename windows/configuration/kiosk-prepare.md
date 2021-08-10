@@ -226,7 +226,7 @@ The following table describes some features that have interoperability issues we
 <tr class="odd">
 <td><p>Power button</p></td>
 <td><p>Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user cannot turn off the device when it is in assigned access.</p>
-<p>For more information on removing the power button or disabling the physical power button, see <a href="https://docs.microsoft.com/windows-hardware/customize/enterprise/custom-logon" data-raw-source="[Custom Logon](/windows-hardware/customize/enterprise/custom-logon)">Custom Logon</a>.</p></td>
+<p>For more information on removing the power button or disabling the physical power button, see <a href="/windows-hardware/customize/enterprise/custom-logon" data-raw-source="[Custom Logon](/windows-hardware/customize/enterprise/custom-logon)">Custom Logon</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Unified Write Filter (UWF)</p></td>
@@ -236,12 +236,12 @@ The following table describes some features that have interoperability issues we
 <tr class="odd">
 <td><p>WEDL_AssignedAccess class</p></td>
 <td><p>Although you can use this class to configure and manage basic lockdown features for assigned access, we recommend that you use the Windows PowerShell cmdlets instead.</p>
-<p>If you need to use assigned access API, see <a href="https://docs.microsoft.com/windows-hardware/customize/enterprise/wedl-assignedaccess" data-raw-source="[WEDL_AssignedAccess](./w/windows-hardware/customize/enterprise/wedl-assignedaccess)">WEDL_AssignedAccess</a>.</p></td>
+<p>If you need to use assigned access API, see <a href="/windows-hardware/customize/enterprise/wedl-assignedaccess" data-raw-source="[WEDL_AssignedAccess](./w/windows-hardware/customize/enterprise/wedl-assignedaccess)">WEDL_AssignedAccess</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p>Welcome Screen</p></td>
 <td><p>Customizations for the Welcome screen let you personalize not only how the Welcome screen looks, but for how it functions. You can disable the power or language button, or remove all user interface elements. There are many options to make the Welcome screen your own.</p>
-<p>For more information, see <a href="https://docs.microsoft.com/windows-hardware/customize/enterprise/custom-logon" data-raw-source="[Custom Logon](/windows-hardware/customize/enterprise/custom-logon)">Custom Logon</a>.</p></td>
+<p>For more information, see <a href="/windows-hardware/customize/enterprise/custom-logon" data-raw-source="[Custom Logon](/windows-hardware/customize/enterprise/custom-logon)">Custom Logon</a>.</p></td>
 </tr>
 </tbody>
 </table>

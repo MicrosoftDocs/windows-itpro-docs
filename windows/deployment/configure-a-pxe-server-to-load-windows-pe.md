@@ -184,9 +184,9 @@ The following summarizes the PXE client boot process.
 7.  Windows PE loads, a command prompt opens and wpeinit.exe is run to initialize Windows PE.
 8.  The Windows PE client provides access to tools like imagex, diskpart, and bcdboot using the Windows PE command prompt. Using these tools together with a Windows 10 image file, the destination computer can be formatted properly to load a full Windows 10 operating system.
 
-See Also 
----------
+## See Also 
 
-#### Concepts
+
+### Concepts
 
 [Windows PE Walkthroughs](/previous-versions/windows/it-pro/windows-vista/cc748899(v=ws.10))

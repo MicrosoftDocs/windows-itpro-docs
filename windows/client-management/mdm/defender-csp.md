@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 06/23/2021
+ms.date: 08/05/2021
 ---
 
 # Defender CSP
@@ -73,7 +73,7 @@ Defender
 --------SupportLogLocation (Added in the next major release of Windows 10)
 --------PlatformUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 --------EngineUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
---------SignaturesUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
+--------DefinitionUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 --------DisableGradualRelease (Added with the 4.18.2106.5 Defender platform release)
 ----Scan
 ----UpdateSignature
@@ -608,6 +608,26 @@ If you enable this setting, only items defined by management will be used in the
 
 > [!NOTE]
 > Applying this setting will not remove exclusions from the device registry, it will only prevent them from being applied/used. This is reflected in **Get-MpPreference**.
+
+Supported OS versions:  Windows 10
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:  
+- 1 – Enable.
+- 0 (default) – Disable.
+
+<a href="" id="configuration-hideexclusionsfromlocaladmins"></a>**Configuration/HideExclusionsFromLocalAdmins**<br>
+This policy setting controls whether or not exclusions are visible to Local Admins.  For end users (that are not Local Admins) exclusions are not visible, whether or not this setting is enabled.
+
+If you disable or do not configure this setting, Local Admins will be able to see exclusions in the Windows Security App and via PowerShell.
+
+If you enable this setting, Local Admins will no longer be able to see the exclusion list in Windows Security App or via PowerShell.  
+
+> [!NOTE]
+> Applying this setting will not remove exclusions, it will only prevent them from being visible to Local Admins. This is reflected in **Get-MpPreference**.
 
 Supported OS versions:  Windows 10
 

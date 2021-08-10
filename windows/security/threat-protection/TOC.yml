@@ -265,8 +265,8 @@
           href: windows-sandbox/windows-sandbox-architecture.md
         - name: Windows Sandbox configuration
           href: windows-sandbox/windows-sandbox-configure-using-wsb-file.md
-        - name: "Windows Defender Device Guard: virtualization-based security and WDAC"
-          href: device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+    - name: "Windows Defender Application Control and virtualization-based protection of code integrity"
+      href: device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
     - name: Windows Certifications
       items: 
         - name: FIPS 140 Validations
@@ -1408,5 +1408,3 @@
                   href: windows-security-configuration-framework/security-compliance-toolkit-10.md
                 - name: Get support
                   href: windows-security-configuration-framework/get-support-for-security-baselines.md
-        - name: Windows 10 Mobile security guide
-          href: windows-10-mobile-security-guide.md

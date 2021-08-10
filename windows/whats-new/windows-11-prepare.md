@@ -55,7 +55,7 @@ If you aren’t already taking advantage of cloud-based management capabilities,
 
 The following are some common use cases and the corresponding Microsoft Endpoint Manager capabilities that support them: 
 
-- **Provision and pre-configure new Windows 11 devices**: [Windows Autopilot](/mem/autopilot/windows-autopilot) enables you to deploy new Windows 11 devices in a “business-ready” state that includes your desired applications, settings, and policies. It can also be used to change the edition of Windows. For example, you can upgrade from Pro to Enterprise edition and gain the use of advanced features. 
+- **Provision and pre-configure new Windows 11 devices**: [Windows Autopilot](/mem/autopilot/windows-autopilot) enables you to deploy new Windows 11 devices in a “business-ready” state that includes your desired applications, settings, and policies. It can also be used to change the edition of Windows. For example, you can upgrade from Pro to Enterprise edition and gain the use of advanced features. The [Windows Autopilot diagnostics page](/mem/autopilot/windows-autopilot-whats-new#preview-windows-autopilot-diagnostics-page) is new feature that is available when you use in Windows Autopilot to deploy Windows 11.
 - **Configure rules and control settings for users, apps, and devices**: When you enroll devices in [Microsoft Intune](/mem/intune/fundamentals/what-is-intune), administrators have full control over apps, settings, features, and security for both Windows 11 and Windows 10. You can also use app protection policies to require multi-factor authentication (MFA) for specific apps. 
 - **Streamline device management for frontline, remote, and onsite workers**: Introduced with Windows 10, [cloud configuration](/mem/intune/fundamentals/cloud-configuration) is a standard, easy-to-manage, device configuration that is cloud-optimized for users with specific workflow needs. It can be deployed to devices running the Pro, Enterprise, and Education editions of Windows 11 by using Microsoft Endpoint Manager. 
 
@@ -93,6 +93,8 @@ Regardless of the method you choose, you have the benefit of free Microsoft supp
 #### Analytics and assessment tools 
 
 If you use Microsoft Endpoint Manager and have onboarded devices to Endpoint analytics, you will have access to a hardware readiness assessment later this year. This tool enables you to quickly identify which of your managed devices are eligible for the Windows 11 upgrade.
+
+[Desktop Analytics](/mem/configmgr/desktop-analytics/overview) does not support Windows 11. You must use [Endpoint analytics](/mem/analytics/overview).
 
 ## Prepare a pilot deployment
 

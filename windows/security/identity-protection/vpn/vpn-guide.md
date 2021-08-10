@@ -18,7 +18,6 @@ ms.author: dansimp
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
 
 This guide will walk you through the decisions you will make for Windows 10 clients in your enterprise VPN solution and how to configure your deployment. This guide references the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp) and provides mobile device management (MDM) configuration instructions using Microsoft Intune and the VPN Profile template for Windows 10.
 

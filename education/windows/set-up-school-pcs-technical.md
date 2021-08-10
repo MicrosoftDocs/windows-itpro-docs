@@ -14,8 +14,8 @@ ms.reviewer:
 manager: dansimp
 ---
 
-What is Set up School PCs?
-=================================================
+# What is Set up School PCs?
+
 
 **Applies to:**
 

@@ -12,7 +12,7 @@ author: cmcatee-MSFT
 manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 03/10/2021
+ms.date: 07/21/2021
 ---
 
 # Sign up and get started
@@ -21,6 +21,9 @@ ms.date: 03/10/2021
 
 -   Windows 10
 -   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 IT admins can sign up for Microsoft Store for Business and Education, and get started working with apps.
 
@@ -32,6 +35,6 @@ IT admins can sign up for Microsoft Store for Business and Education, and get st
 | Topic | Description |
 | ----- | ----------- |
 | [Microsoft Store for Business and Education overview](./microsoft-store-for-business-overview.md) | Learn about Microsoft Store for Business. |
-| [Prerequisites for Microsoft Store for Business and Education](./prerequisites-microsoft-store-for-business.md) | There are a few prerequisites for using Microsoft Store for Business and Education.](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business) |
+| [Prerequisites for Microsoft Store for Business and Education](./prerequisites-microsoft-store-for-business.md) | There are a few prerequisites for using [Microsoft Store for Business and Education.](/microsoft-store/prerequisites-microsoft-store-for-business) |
 | [Roles and permissions in Microsoft Store for Business and Education](./roles-and-permissions-microsoft-store-for-business.md)| The first person to sign in to Microsoft Store for Business and Education must be a Global Admin of the Azure Active Directory (AD) tenant. Once the Global Admin has signed in, they can give permissions to others employees. |
 | [Settings reference: Microsoft Store for Business and Education](./settings-reference-microsoft-store-for-business.md) | Microsoft Store for Business and Education has a group of settings that admins use to manage the store. |
