@@ -756,7 +756,7 @@ Enabling this policy prevents context menus from being invoked in the Start Menu
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable context menus in the Start Menu*
+-   GP Friendly name: *Disable context menus in the Start Menu*
 -   GP name: *DisableContextMenusInStart*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *StartMenu.admx*
@@ -1242,7 +1242,7 @@ Value type is integer.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Remove the People Bar from the taskbar*
+-   GP Friendly name: *Remove the People Bar from the taskbar*
 -   GP name: *HidePeopleBar*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *StartMenu.admx*
@@ -1454,7 +1454,7 @@ Added in Windows 10, version 1703. Allows IT Admins to configure Start by hidin
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Remove "Recently added" list from Start Menu*
+-   GP Friendly name: *Remove "Recently added" list from Start Menu*
 -   GP name: *HideRecentlyAddedApps*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *StartMenu.admx*

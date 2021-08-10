@@ -98,7 +98,7 @@ If this policy setting is not configured or is disabled, computers are allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit connection to non-domain networks when connected to domain authenticated network*
+-   GP Friendly name: *Prohibit connection to non-domain networks when connected to domain authenticated network*
 -   GP name: *WCM_BlockNonDomain*
 -   GP path: *Network/Windows Connection Manager*
 -   GP ADMX file name: *WCM.admx*

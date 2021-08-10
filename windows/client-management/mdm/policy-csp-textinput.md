@@ -716,7 +716,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Uninstallation of Language Features*
+-   GP Friendly name: *Allow Uninstallation of Language Features*
 -   GP name: *AllowLanguageFeaturesUninstall*
 -   GP path: *Windows Components/Text Input*
 -   GP ADMX file name: *TextInput.admx*
@@ -782,7 +782,7 @@ This policy setting controls the ability to send inking and typing data to Micro
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Improve inking and typing recognition*
+-   GP Friendly name: *Improve inking and typing recognition*
 -   GP name: *AllowLinguisticDataCollection*
 -   GP path: *Windows Components/Text Input*
 -   GP ADMX file name: *TextInput.admx*
