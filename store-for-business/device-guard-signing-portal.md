@@ -62,46 +62,45 @@ Device Guard is a feature set that consists of both hardware and software system
 
 - Usage:
 
-```powershell
-Get-DefaultPolicy -OutFile filename [-PassThru] [.. common ..]
-```
+  ```powershell
+  Get-DefaultPolicy -OutFile filename [-PassThru] [.. common ..]
+  ```
 
 - Parameters:
 
-     **OutFile** - string, mandatory - The filename where the default policy file should be persisted to disk. The file name should be an .xml file. If the file already            exists, it will be overwritten (note: create the folder first).
+  **OutFile** - string, mandatory - The filename where the default policy file should be persisted to disk. The file name should be an .xml file. If the file already            exists, it will be overwritten (note: create the folder first).
       
-     **PassThru** - switch, optional - If present, returns an XmlDocument object returning the default policy file.
+  **PassThru** - switch, optional - If present, returns an XmlDocument object returning the default policy file.
       
 - Command running time: 
 
-     The average running time is under 20 seconds but may be up to 3 minutes.
+  The average running time is under 20 seconds but may be up to 3 minutes.
       
 **Get-RootCertificate** Gets the root certificate for the current tenant. All Authenticode and policy signing certificates will eventually chain up to this root certificate.
 
 - Usage:
 
-     ```powershell
-     Get-RootCertificate -OutFile filename [-PassThru] [.. common ..]
-     ```
+  ```powershell
+  Get-RootCertificate -OutFile filename [-PassThru] [.. common ..]
+  ```
      
 - Parameters:
 
-     **OutFile** - string, mandatory - The filename where the root certificate file should be persisted to disk. The file name should be a .cer file. If the file already          exists, it will be overwritten (note: create the folder first).
+  **OutFile** - string, mandatory - The filename where the root certificate file should be persisted to disk. The file name should be a .cer file. If the file already          exists, it will be overwritten (note: create the folder first).
      
-     **PassThru** - switch, optional - If present, returns an X509Certificate2 object returning the default 
-     policy file.
+  **PassThru** - switch, optional - If present, returns an X509Certificate2 object returning the default policy file.
 
 - Command running time: 
 
-     The average running time is under 20 seconds but may be up to 3 minutes.
+  The average running time is under 20 seconds but may be up to 3 minutes.
 
 **Get-SigningHistory** Gets information for the latest 100 files signed by the current tenant. Results are returned as a collection with elements in reverse chronological order (most recent to least recent).
 
 - Usage:
 
-     ```powershell
-     Get-SigningHistory -OutFile filename [-PassThru] [.. common ..]
-     ```
+  ```powershell
+  Get-SigningHistory -OutFile filename [-PassThru] [.. common ..]
+  ```
 
 - Parameters:
 
@@ -117,9 +116,9 @@ Get-DefaultPolicy -OutFile filename [-PassThru] [.. common ..]
 
 - Usage: 
 
-   ```powershell
-   Submit-SigningJob -InFile filename -OutFile filename [-NoTimestamp][- TimeStamperUrl "timestamper url"] [-JobDescription "description"] [.. common ..]
-   ```
+  ```powershell
+  Submit-SigningJob -InFile filename -OutFile filename [-NoTimestamp][- TimeStamperUrl "timestamper url"] [-JobDescription "description"] [.. common ..]
+  ```
 
 - Parameters:
 
