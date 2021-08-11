@@ -803,8 +803,8 @@ The data type is integer.
 Supported operations are Add, Delete, Get, Replace.
 
 Valid values are:
-•	1 – Enabled.
-•	0 (default) – Not Configured.
+- 1 – Enabled.
+-	0 (default) – Not Configured.
 
 More details:  
 
