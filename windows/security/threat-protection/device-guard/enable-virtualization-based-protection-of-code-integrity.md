@@ -17,7 +17,8 @@ ms.technology: mde
 
 # Enable virtualization-based protection of code integrity
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to** 
+- Windows 10
 
 This topic covers different ways to enable Hypervisor-protected code integrity (HVCI) on Windows 10.
 Some applications, including device drivers, may be incompatible with HVCI.
