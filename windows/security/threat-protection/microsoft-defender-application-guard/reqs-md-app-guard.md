@@ -1,5 +1,5 @@
 ---
-title: System requirements for Microsoft Defender Application Guard (Windows 10)
+title: System requirements for Microsoft Defender Application Guard 
 description: Learn about the system requirements for installing and running Microsoft Defender Application Guard.
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -17,7 +17,8 @@ ms.technology: mde
 
 # System requirements for Microsoft Defender Application Guard
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to** 
+- Windows 10
 
 The threat landscape is continually evolving. While hackers are busy developing new techniques to breach enterprise networks by compromising workstations, phishing schemes remain one of the top ways to lure employees into social engineering attacks. Microsoft Defender Application Guard is designed to help prevent old, and newly emerging attacks, to help keep employees productive.
 

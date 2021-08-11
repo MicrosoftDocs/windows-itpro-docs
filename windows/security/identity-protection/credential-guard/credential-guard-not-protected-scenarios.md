@@ -16,7 +16,7 @@ ms.date: 08/17/2017
 ms.reviewer: 
 ---
 
-# Windows Defender Credential Guard protection limits
+# Windows Defender Credential Guard protection limits and mitigations
 
 **Applies to**
 -   Windows 10
@@ -43,7 +43,7 @@ do not qualify as credentials because they cannot be presented to another comput
 
 ## Additional mitigations
 
-Windows Defender Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Windows Defender Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, reusing previously stolen credentials prior to Windows Defender Device Guard, and abuse of management tools and weak application configurations. Because of this, additional mitigations also must be deployed to make the domain environment more robust.
+Windows Defender Credential Guard can provide mitigations against attacks on derived credentials and prevent the use of stolen credentials elsewhere. However, PCs can still be vulnerable to certain attacks, even if the derived credentials are protected by Windows Defender Credential Guard. These attacks can include abusing privileges and use of derived credentials directly from a compromised device, reusing previously stolen credentials, and abuse of management tools and weak application configurations. Because of this, additional mitigations also must be deployed to make the domain environment more robust.
 
 ### Restricting domain users to specific domain-joined devices
 

@@ -70,6 +70,7 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **17 Enabled:Allow Supplemental Policies** | Use this option on a base policy to allow supplemental policies to expand it. NOTE: This option is only supported on Windows 10, version 1903, and above. | No |
 | **18 Disabled:Runtime FilePath Rule Protection** | This option disables the default runtime check that only allows FilePath rules for paths that are only writable by an administrator. NOTE: This option is only supported on Windows 10, version 1903, and above. | Yes |
 | **19 Enabled:Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries. NOTE: This option is only supported on Windows 10, version 1803, and above. | No |
+| **20 Enabled:Revoked Expired As Unsigned** | Use this option to treat binaries signed with expired and/or revoked certificates as "Unsigned binaries" for user-mode process/components under enterprise signing scenarios. | No |
 
 ## Windows Defender Application Control file rule levels
 

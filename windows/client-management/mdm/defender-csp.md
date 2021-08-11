@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/23/2021
+ms.date: 08/05/2021
 ---
 
 # Defender CSP
@@ -35,6 +35,18 @@ Defender
 ------------InitialDetectionTime
 ------------LastThreatStatusChangeTime
 ------------NumberOfDetections
+----EnableNetworkProtection
+--------AllowNetworkProtectionDownLevel
+--------AllowNetworkProtectionOnWinServer
+--------DisableNetworkProtectionPerfTelemetry
+--------DisableDatagramProcessing
+--------DisableInboundConnectionFiltering
+--------EnableDnsSinkhole
+--------DisableDnsOverTcpParsing
+--------DisableHttpParsing
+--------DisableRdpParsing
+--------DisableSshParsing
+--------DisableTlsParsing
 ----Health
 --------ProductStatus (Added in Windows 10 version 1809)
 --------ComputerState
@@ -125,7 +137,7 @@ The following table describes the supported values:
 | 7     | Remote access Trojan        |
 | 8     | Trojan                      |
 | 9     | Email flooder               |
-| 10    | Keylogger                   |
+| 10    | Key logger                   |
 | 11    | Dialer                      |
 | 12    | Monitoring software         |
 | 13    | Browser modifier            |
@@ -185,7 +197,28 @@ The following list shows the supported values:
 - 7 = Removed
 - 8 = Cleaned
 - 9 = Allowed
-- 10 = No Status ( Cleared)
+- 10 = No Status (Cleared)
+
+Supported operation is Get.
+
+<a href="" id="detections-threatid-currentstatus"></a>**Detections/*ThreatId*/CurrentStatus**  
+Information about the current status of the threat.
+
+The data type is integer.
+
+The following list shows the supported values:
+
+- 0 = Active
+- 1 = Action failed
+- 2 = Manual steps required
+- 3 = Full scan required
+- 4 = Reboot required
+- 5 = Remediated with noncritical failures
+- 6 = Quarantined
+- 7 = Removed
+- 8 = Cleaned
+- 9 = Allowed
+- 10 = No Status (Cleared)
 
 Supported operation is Get.
 
@@ -216,6 +249,139 @@ Number of times this threat has been detected on a particular client.
 The data type is integer.
 
 Supported operation is Get.
+
+<a href="" id="enablenetworkprotection"></a>**EnableNetworkProtection** 
+
+The Network Protection Service is a network filter that helps to protect you against web-based malicious threats, including phishing and malware. The Network Protection service contacts the SmartScreen URL reputation service to validate the safety of connections to web resources. 
+The acceptable values for this parameter are:
+- 0: Disabled. The Network Protection service will not block navigation to malicious websites, or contact the SmartScreen URL reputation service. It will still send connection metadata to the antimalware engine if behavior monitoring is enabled, to enhance AV Detections.
+- 1: Enabled. The Network Protection service will block connections to malicious websites based on URL Reputation from the SmartScreen URL reputation service.
+- 2: AuditMode. As above, but the Network Protection service will not block connections to malicious websites, but will instead log the access to the event log. 
+
+Accepted values: Disabled, Enabled, and AuditMode
+Position: Named
+Default value: Disabled
+Accept pipeline input: False
+Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-allownetworkprotectiondownlevel"></a>**EnableNetworkProtection/AllowNetworkProtectionDownLevel**
+
+By default, network protection is not allowed to be enabled on Windows versions before 1709, regardless of the setting of the EnableNetworkProtection configuration. Set this configuration to "$true" to override that behavior and allow Network Protection to be set to Enabled or Audit Mode. 
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-allownetworkprotectiononwinserver"></a>**EnableNetworkProtection/AllowNetworkProtectionOnWinServer**
+
+By default, network protection is not allowed to be enabled on Windows Server, regardless of the setting of the EnableNetworkProtection configuration. Set this configuration to "$true" to override that behavior and allow Network Protection to be set to Enabled or Audit Mode.
+
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-disablenetworkprotectionperftelemetry"></a>**EnableNetworkProtection/DisableNetworkProtectionPerfTelemetry**
+
+Network Protection sends up anonymized performance statistics about its connection monitoring to improve our product and help to find bugs. You can disable this behavior by setting this configuration to "$true".
+
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-disabledatagramprocessing"></a>**EnableNetworkProtection/DisableDatagramProcessing**
+
+Network Protection inspects UDP connections allowing us to find malicious DNS or other UDP Traffic. To disable this functionality, set this configuration to "$true".
+
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-disableinboundconnectionfiltering"></a>**EnableNetworkProtection/DisableInboundConnectionFiltering**
+
+Network Protection inspects and can block both connections that originate from the host machine, as well as those that originates from outside the machine. To have network connection to inspect only outbound connections, set this configuration to "$true".
+
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-enablednssinkhole"></a>**EnableNetworkProtection/EnableDnsSinkhole**
+
+Network Protection can inspect the DNS traffic of a machine and, in conjunction with behavior monitoring, detect and sink hole DNS exfiltration attempts and other DNS based malicious attacks. Set this configuration to "$true" to enable this feature.
+
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-disablednsovertcpparsing"></a>**EnableNetworkProtection/DisableDnsOverTcpParsing**
+
+Network Protection inspects DNS traffic that occurs over a TCP channel, to provide metadata for Anti-malware Behavior Monitoring or to allow for DNS sink holing if the -EnableDnsSinkhole configuration is set. This can be disabled by setting this value to "$true".
+
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-disablednsparsing"></a>**EnableNetworkProtection/DisableDnsParsing**
+
+Network Protection inspects DNS traffic that occurs over a UDP channel, to provide metadata for Anti-malware Behavior Monitoring or to allow for DNS sink holing if the -EnableDnsSinkhole configuration is set. This can be disabled by setting this value to "$true".
+
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-disablehttpparsing"></a>**EnableNetworkProtection/DisableHttpParsing**
+
+Network Protection inspects HTTP traffic to see if a connection is being made to a malicious website, and to provide metadata to Behavior Monitoring. HTTP connections to malicious websites can also be blocked if -EnableNetworkProtection is set to enabled. HTTP inspection can be disabled by setting this value to "$true".
+
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-disablerdpparsing"></a>**EnableNetworkProtection/DisableRdpParsing**
+
+Network Protection inspects RDP traffic so that it can block connections from known malicious hosts if -EnableNetworkProtection is set to be enabled, and to provide metadata to behavior monitoring. RDP inspection can be disabled by setting this value to "$true".
+
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-disablesshparsing"></a>**EnableNetworkProtection/DisableSshParsing**
+
+Network Protection inspects SSH traffic, so that it can block connections from known malicious hosts. If -EnableNetworkProtection is set to be enabled, and to provide metadata to behavior monitoring. SSH inspection can be disabled by setting this value to "$true".
+
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
+
+<a href="" id="enablenetworkprotection-disabletlsparsing"></a>**EnableNetworkProtection/DisableTlsParsing**
+
+Network Protection inspects TLS traffic (also known as HTTPS traffic) to see if a connection is being made to a malicious website, and to provide metadata to Behavior Monitoring. TLS connections to malicious websites can also be blocked if -EnableNetworkProtection is set to enabled. HTTP inspection can be disabled by setting this value to "$true".
+
+- Type: Boolean
+- Position: Named
+- Default value: False
+- Accept pipeline input: False
+- Accept wildcard characters: False
 
 <a href="" id="health"></a>**Health**  
 An interior node to group information about Windows Defender health status.
@@ -248,7 +414,7 @@ Supported product status values:
 -  Service is shutting down as part of system shutdown              = 1 << 16
 -  Threat remediation failed critically                             = 1 << 17
 -  Threat remediation failed non-critically                         = 1 << 18
--  No status flags set (well initialized state)                     = 1 << 19
+-  No status flags set (well-initialized state)                     = 1 << 19
 -  Platform is out of date                                          = 1 << 20
 -  Platform update is in progress                                   = 1 << 21
 -  Platform is about to be outdated                                 = 1 << 22
@@ -453,6 +619,26 @@ Valid values are:
 - 1 – Enable.
 - 0 (default) – Disable.
 
+<a href="" id="configuration-hideexclusionsfromlocaladmins"></a>**Configuration/HideExclusionsFromLocalAdmins**<br>
+This policy setting controls whether or not exclusions are visible to Local Admins.  For end users (that are not Local Admins) exclusions are not visible, whether or not this setting is enabled.
+
+If you disable or do not configure this setting, Local Admins will be able to see exclusions in the Windows Security App and via PowerShell.
+
+If you enable this setting, Local Admins will no longer be able to see the exclusion list in Windows Security App or via PowerShell.  
+
+> [!NOTE]
+> Applying this setting will not remove exclusions, it will only prevent them from being visible to Local Admins. This is reflected in **Get-MpPreference**.
+
+Supported OS versions:  Windows 10
+
+The data type is integer.
+
+Supported operations are Add, Delete, Get, Replace.
+
+Valid values are:  
+- 1 – Enable.
+- 0 (default) – Disable.
+
 <a href="" id="configuration-disablecputhrottleonidlescans"></a>**Configuration/DisableCpuThrottleOnIdleScans**<br>	
 Indicates whether the CPU will be throttled for scheduled scans while the device is idle.  This feature is enabled by default and will not throttle the CPU for scheduled scans performed when the device is otherwise idle, regardless of what ScanAvgCPULoadFactor is set to. For all other scheduled scans this flag will have no impact and normal throttling will occur.	
 
@@ -532,7 +718,7 @@ Beta Channel: Devices set to this channel will be the first to receive new updat
 
 Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments.
 
-Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%).
+Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested applying to a small, representative part of your production population (~10%).
 
 Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
 
@@ -561,7 +747,7 @@ Beta Channel: Devices set to this channel will be the first to receive new updat
 
 Current Channel (Preview): Devices set to this channel will be offered updates earliest during the monthly gradual release cycle. Suggested for pre-production/validation environments.
 
-Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested to apply to a small, representative part of your production population (~10%).
+Current Channel (Staged): Devices will be offered updates after the monthly gradual release cycle. Suggested applying to a small, representative part of your production population (~10%).
 
 Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
 
@@ -617,8 +803,8 @@ The data type is integer.
 Supported operations are Add, Delete, Get, Replace.
 
 Valid values are:
-•	1 – Enabled.
-•	0 (default) – Not Configured.
+- 1 – Enabled.
+-	0 (default) – Not Configured.
 
 More details:  
 

@@ -18,7 +18,8 @@ ms.technology: mde
 
 # Baseline protections and additional qualifications for virtualization-based protection of code integrity
 
-**Applies to** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to** 
+- Windows 10
 
 Computers must meet certain hardware, firmware, and software requirements in order to take advantage of all of the virtualization-based security (VBS) features in [Windows Defender Device Guard](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md). Computers lacking these requirements can still be protected by Windows Defender Application Control (WDAC) policies—the difference is that those computers will not be as hardened against certain threats.
 
