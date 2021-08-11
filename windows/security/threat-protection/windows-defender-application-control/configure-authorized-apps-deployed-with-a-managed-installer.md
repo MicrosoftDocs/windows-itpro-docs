@@ -93,7 +93,7 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
     <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
     ```
 
-An example of a valid Managed Installer rule collection, using Microsoft Endpoint Config Manager (MEMCM), MEM (Intune), Powershell, and Powershell ISE, is shown below. Remove any rules that you do not wish to designate as a Managed Installer.
+An example of a valid Managed Installer rule collection, using Microsoft Endpoint Config Manager (MEMCM), MEM (Intune), Powershell, and PowerShell ISE, is shown below. Remove any rules that you do not wish to designate as a Managed Installer.
 
 ```xml
 <AppLockerPolicy Version="1">
@@ -274,11 +274,11 @@ Ea Value Length: 7e
 
 Refer to [Understanding Application Control Events](event-id-explanations.md#optional-intelligent-security-graph-isg-or-managed-installer-mi-diagnostic-events) for information on enabling optional managed installer diagnostic events.
 
-## Deploying the Managed Installer
+## Deploying the Managed Installer rule collection
 
-Once you've completed configuring your chosen Managed Installer, by specifying which to use in the AppLocker policy, enabling the service enforcement of it, and by enabling the Managed Installer option in a WDAC policy, you'll need to deploy it.
+Once you've completed configuring your chosen Managed Installer, by specifying which option to use in the AppLocker policy, enabling the service enforcement of it, and by enabling the Managed Installer option in a WDAC policy, you'll need to deploy it.
 
-1. Using the following command to deploy the policy.
+1. Use the following command to deploy the policy.
    ```powershell
    $policyFile=
    @"
@@ -287,7 +287,7 @@ Once you've completed configuring your chosen Managed Installer, by specifying w
    Set-AppLockerPolicy -XmlPolicy $policyFile -Merge -ErrorAction SilentlyContinue
    ```
 
-2. Verify Deployment of the Rule set was successful
+2. Verify Deployment of the ruleset was successful
    ```powershell
    Get-AppLockerPolicy -Local
    
@@ -297,7 +297,7 @@ Once you've completed configuring your chosen Managed Installer, by specifying w
    ```
    Verify the output shows the ManagedInstaller rule set.
 
-3. Get the policy XML (optional) using PS:
+3. Get the policy XML (optional) using PowerShell:
    ```powershell
    Get-AppLockerPolicy -Effective -Xml -ErrorVariable ev -ErrorAction SilentlyContinue
    ```
