@@ -17,7 +17,6 @@ ms.date: 05/20/2019
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 > [!NOTE]
 > As of Windows Insider Build 18956, sideloading is enabled by default. Now, you can deploy a signed package onto a device without a special configuration. 
@@ -87,40 +86,6 @@ You can sideload apps on managed or unmanaged devices.
 **To install the app**
 -   From the folder with the appx package, run the PowerShell `Add-AppxPackage` command to install the appx package.
 
-## How do I sideload an app on mobile
-You can sideload apps on managed or unmanaged devices.
-
-**To turn on sideloading for a managed device**
-
--   Deploy an enterprise policy.
-
-**To turn on sideloading for unmanaged devices**
-
-1.  Open **Settings**.
-
-2.  Click **Update & Security** &gt; **For developers**.
-
-3.  On **Use developer features**, select **Sideload apps**.
-
-**To import the security certificate for managed devices**
-
-1.  Open the security certificate for the appx package, and select **Install Certificate**.
-
-2.  On the **Certificate Import Wizard**, select **Local Machine**.
-
-3.  Import the certificate to the **Trusted Root Certification Authorities** folder.
-
-**To import the security certificate for unmanaged devices**
-
--   You can use a runtime provisioning package to import a security certificate. For information about applying a provisioning package to a Windows 10 mobile device, see runtime instructions on [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=619164).
-
-**To install the app**
-
--   From an email, tap a xap, appx, or appx bundle package.
-
-    -OR-
-
-    With your mobile device tethered to a desktop, click a xap, appx, or appx bundle package from the files system to install the app.
 
  
 
