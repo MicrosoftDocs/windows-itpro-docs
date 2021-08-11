@@ -14,6 +14,7 @@
         }
     ],
     "globalMetadata": {
+      "recommendations": true,
         "ROBOTS": "INDEX, FOLLOW",
         "audience": "ITPro",
         "breadcrumb_path": "/itpro/windows/breadcrumb/toc.json",

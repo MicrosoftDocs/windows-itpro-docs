@@ -34,6 +34,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "audience": "ITPro",
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
