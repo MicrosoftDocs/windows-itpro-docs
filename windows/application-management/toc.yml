@@ -260,7 +260,5 @@ items:
       href: per-user-services-in-windows.md
     - name: Disabling System Services in Windows Server
       href: /windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server
-    - name: Deploy app upgrades on Windows 10 Mobile
-      href: deploy-app-upgrades-windows-10-mobile.md
     - name: How to keep apps removed from Windows 10 from returning during an update
       href: remove-provisioned-apps-during-update.md
