@@ -24,6 +24,7 @@
       }
     ],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/surface-hub/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.technology": "windows",

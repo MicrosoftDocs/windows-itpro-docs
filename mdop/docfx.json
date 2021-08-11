@@ -22,6 +22,7 @@
       }
     ],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/microsoft-desktop-optimization-pack/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.technology": "windows",
