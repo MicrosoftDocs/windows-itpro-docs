@@ -91,7 +91,7 @@ This policy allows you to disable Per-Process System DPI for a semicolon-separat
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Per-Process System DPI settings*
+-   GP Friendly name: *Configure Per-Process System DPI settings*
 -   GP name: *DisplayPerProcessSystemDpiSettings*
 -   GP element: *DisplayDisablePerProcessSystemDpiSettings*
 -   GP path: *System/Display*
@@ -164,7 +164,7 @@ Enabling this setting lets you specify the system-wide default for desktop appli
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Per-Process System DPI settings*
+-   GP Friendly name: *Configure Per-Process System DPI settings*
 -   GP name: *DisplayPerProcessSystemDpiSettings*
 -   GP element: *DisplayGlobalPerProcessSystemDpiSettings*
 -   GP path: *System/Display*
@@ -231,7 +231,7 @@ This policy allows you to enable Per-Process System DPI for a semicolon-separate
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Per-Process System DPI settings*
+-   GP Friendly name: *Configure Per-Process System DPI settings*
 -   GP name: *DisplayPerProcessSystemDpiSettings*
 -   GP element: *DisplayEnablePerProcessSystemDpiSettings*
 -   GP path: *System/Display*
@@ -299,7 +299,7 @@ If GDI DPI Scaling is configured to both turn off and turn on an application, th
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off GdiDPIScaling for applications*
+-   GP Friendly name: *Turn off GdiDPIScaling for applications*
 -   GP name: *DisplayTurnOffGdiDPIScaling*
 -   GP element: *DisplayTurnOffGdiDPIScalingPrompt*
 -   GP path: *System/Display*
@@ -374,7 +374,7 @@ If GDI DPI Scaling is configured to both turn off and turn on an application, th
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn on GdiDPIScaling for applications*
+-   GP Friendly name: *Turn on GdiDPIScaling for applications*
 -   GP name: *DisplayTurnOnGdiDPIScaling*
 -   GP element: *DisplayTurnOnGdiDPIScalingPrompt*
 -   GP path: *System/Display*
