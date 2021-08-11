@@ -5,8 +5,8 @@ metadata:
   ms.prod: m365-security
   ms.mktglfcycl: manage
   ms.sitesec: library
-  ms.pagetype: security
-  ms.localizationpriority: medium
+  ms.pagetype: security 
+  ms.localizationpriority: medium 
   author: denisebmsft
   ms.author: deniseb
   ms.date: 07/23/2021
