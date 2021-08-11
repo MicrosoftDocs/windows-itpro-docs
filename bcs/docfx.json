@@ -35,6 +35,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/microsoft-365/business/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "contributors_to_exclude": [
