@@ -18,7 +18,7 @@ ms.technology: mde
 # Prepare to install Microsoft Defender Application Guard
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/)
+- - Windows 10
 
 ## Review system requirements
  
