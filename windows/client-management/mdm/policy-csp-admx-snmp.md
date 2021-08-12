@@ -108,7 +108,7 @@ Also, see the other two SNMP settings: "Specify permitted managers" and "Specify
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify communities*
+-   GP Friendly name: *Specify communities*
 -   GP name: *SNMP_Communities*
 -   GP path: *Network\SNMP*
 -   GP ADMX file name: *Snmp.admx*
@@ -188,7 +188,7 @@ Also, see the other two SNMP policy settings: "Specify trap configuration" and "
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify permitted managers*
+-   GP Friendly name: *Specify permitted managers*
 -   GP name: *SNMP_PermittedManagers*
 -   GP path: *Network\SNMP*
 -   GP ADMX file name: *Snmp.admx*
@@ -266,7 +266,7 @@ Also, see the other two SNMP settings: "Specify permitted managers" and "Specify
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify traps for public community*
+-   GP Friendly name: *Specify traps for public community*
 -   GP name: *SNMP_Traps_Public*
 -   GP path: *Network\SNMP*
 -   GP ADMX file name: *Snmp.admx*
