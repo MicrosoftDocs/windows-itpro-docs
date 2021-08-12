@@ -18,7 +18,6 @@ ms.topic: article
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 ## Upgrade paths
 
@@ -49,8 +48,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <th>Windows 10 Pro Education</th>
         <th>Windows 10 Education</th>
         <th>Windows 10 Enterprise</th>
-        <th>Windows 10 Mobile</th>
-        <th>Windows 10 Mobile Enterprise</th>
     </tr>
     <tr>
         <th rowspan="7" nowrap="nowrap">Windows 7</th>
@@ -62,8 +59,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td></td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Home Basic</td>
@@ -71,8 +66,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
-        <td></td>
         <td></td>
     </tr>
     <tr>
@@ -82,8 +75,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td></td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Professional</td>
@@ -92,8 +83,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Ultimate</td>
@@ -102,8 +91,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Enterprise</td>
@@ -112,8 +99,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <th rowspan="10" nowrap="nowrap">Windows 8.1</th>
@@ -125,8 +110,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td></td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Connected</td>
@@ -134,8 +117,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
-        <td></td>
         <td></td>
     </tr>
     <tr>
@@ -145,8 +126,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Pro Student</td>
@@ -155,8 +134,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Pro WMC</td>
@@ -165,8 +142,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Enterprise</td>
@@ -175,8 +150,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Embedded Industry</td>
@@ -185,13 +158,9 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td>✔</td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Windows RT</td>
-        <td></td>
-        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -205,8 +174,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
-        <td>✔</td>
     </tr>
     <tr>
         <th rowspan="8" nowrap="nowrap">Windows 10</th>
@@ -218,8 +185,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td></td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Pro</td>
@@ -228,8 +193,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
         <td>✔</td>
         <td>✔</td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Education</td>
@@ -238,8 +201,6 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td></td>
         <td>D</td>
-        <td></td>
-        <td></td>
     </tr>
     <tr>
         <td>Enterprise</td>
@@ -248,20 +209,8 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
         <td>✔</td>
         <td></td>
-        <td></td>
-        <td></td>
     </tr>
-    <tr>
-        <td>Mobile</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>✔</td>
-    </tr>
-   </table>
+    </table>
 
 
 ## Related Topics
