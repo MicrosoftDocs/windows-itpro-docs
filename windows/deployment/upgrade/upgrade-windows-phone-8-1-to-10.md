@@ -108,7 +108,3 @@ Some enterprises may want to block their users from installing the Windows 10 Mo
 http://windowsphone.com/s?appid=fbe47e4f-7769-4103-910e-dca8c43e0b07
 
 For more information about how to do this, see [Try it out: restrict Windows Phone 8.1 apps](/previous-versions/windows/it-pro/windows-phone/cc182269(v=technet.10)).
-
-## Related topics
-
-[Windows 10 Mobile and mobile device management](/windows/client-management/windows-10-mobile-and-mdm)
