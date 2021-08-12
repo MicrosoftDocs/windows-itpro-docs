@@ -38,7 +38,7 @@ For example, to create a WDAC policy allowing **addin1.dll** and **addin2.dll** 
 
 ```powershell
 $rule = New-CIPolicyRule -DriverFilePath '.\temp\addin1.dll' -Level FileName -AppID '.\ERP1.exe'
-$rule += New-CIPolicyRule -DriverFilePath '.\temp\addin1.dll' -Level FileName -AppID '.\ERP1.exe'
+$rule += New-CIPolicyRule -DriverFilePath '.\temp\addin2.dll' -Level FileName -AppID '.\ERP2.exe'
 New-CIPolicy -Rules $rule -FilePath ".\AllowERPAddins.xml" -UserPEs
 ```
 
