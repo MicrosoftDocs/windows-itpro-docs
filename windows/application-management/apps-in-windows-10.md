@@ -416,6 +416,16 @@ The following information lists the provisioned apps on the supported Windows 10
 
     ---
 
+- [Xbox Game Bar](ms-windows-store://pdp/?PFN=Microsoft.XboxGamingOverlay_8wekyb3d8bbwe) | Package name: Microsoft.XboxGamingOverlay
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
+
 - [Xbox Identity Provider](ms-windows-store://pdp/?PFN=Microsoft.XboxIdentityProvider_8wekyb3d8bbwe) | Package name: Microsoft.XboxIdentityProvider
   - Supported versions:
 
