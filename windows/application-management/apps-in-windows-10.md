@@ -47,12 +47,12 @@ The following information lists the provisioned apps on the supported Windows 10
 - [3D Builder](ms-windows-store://pdp/?PFN=Microsoft.3DBuilder_8wekyb3d8bbwe) | Package name: Microsoft.3DBuilder
   - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ✔️ | ✔️ | | | | | |
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ✔️ | ✔️ | | | | | |
 
-  ---
+    ---
 
 - [Bing Weather](ms-windows-store://pdp/?PFN=Microsoft.BingWeather_8wekyb3d8bbwe) | Package name: Microsoft.BingWeather
   - Supported versions:
