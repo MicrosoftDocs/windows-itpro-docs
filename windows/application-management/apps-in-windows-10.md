@@ -50,6 +50,7 @@ The following information lists the provisioned apps on the supported Windows 10
   | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
   | --- | --- | --- | --- | --- | --- |--- |
   | ✔️ | ✔️ | | | | | |
+
   ---
 
 - [Bing Weather](ms-windows-store://pdp/?PFN=Microsoft.BingWeather_8wekyb3d8bbwe) | Package name: Microsoft.BingWeather
@@ -58,6 +59,7 @@ The following information lists the provisioned apps on the supported Windows 10
   | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
   | --- | --- | --- | --- | --- | --- |--- |
   | ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+
   ---
 
 - [Desktop App Installer](ms-windows-store://pdp/?PFN=Microsoft.DesktopAppInstaller_8wekyb3d8bbwe) | Package name: Microsoft.DesktopAppInstaller
@@ -66,6 +68,7 @@ The following information lists the provisioned apps on the supported Windows 10
   | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
   | --- | --- | --- | --- | --- | --- |--- |
   | Use Settings App | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+
   ---
 
 - [Get Help](ms-windows-store://pdp/?PFN=Microsoft.Gethelp_8wekyb3d8bbwe) | Package name: Microsoft.GetHelp
@@ -74,6 +77,7 @@ The following information lists the provisioned apps on the supported Windows 10
   | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
   | --- | --- | --- | --- | --- | --- |--- |
   | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+
   ---
 
 - [Microsoft Tips](ms-windows-store://pdp/?PFN=Microsoft.Getstarted_8wekyb3d8bbwe) | Package name: Microsoft.Getstarted
@@ -82,6 +86,7 @@ The following information lists the provisioned apps on the supported Windows 10
   | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
   | --- | --- | --- | --- | --- | --- |--- |
   | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+
   ---
 
 - [HEIF Image Extensions](ms-windows-store://pdp/?PFN=Microsoft.HEIFImageExtension_8wekyb3d8bbwe) | Package name: Microsoft.HEIFImageExtension
