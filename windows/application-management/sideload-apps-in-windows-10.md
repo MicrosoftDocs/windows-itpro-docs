@@ -14,6 +14,7 @@ ms.date: 05/20/2019
 ---
 
 # Sideload LOB apps in Windows 10
+
 **Applies to**
 
 -   Windows 10
