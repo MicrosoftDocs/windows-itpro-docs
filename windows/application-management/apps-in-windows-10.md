@@ -45,6 +45,7 @@ Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
 The following information lists the provisioned apps on the supported Windows 10 OS versions:
 
 - [3D Builder](ms-windows-store://pdp/?PFN=Microsoft.3DBuilder_8wekyb3d8bbwe) | Package name: Microsoft.3DBuilder
+  - Supported versions:
 
   ---
   | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
@@ -54,339 +55,416 @@ The following information lists the provisioned apps on the supported Windows 10
   ---
 
 - [Bing Weather](ms-windows-store://pdp/?PFN=Microsoft.BingWeather_8wekyb3d8bbwe) | Package name: Microsoft.BingWeather
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
 
-  ---
+    ---
 
 - [Desktop App Installer](ms-windows-store://pdp/?PFN=Microsoft.DesktopAppInstaller_8wekyb3d8bbwe) | Package name: Microsoft.DesktopAppInstaller
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | Use Settings App | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | Use Settings App | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
 
-  ---
+    ---
 
 - [Get Help](ms-windows-store://pdp/?PFN=Microsoft.Gethelp_8wekyb3d8bbwe) | Package name: Microsoft.GetHelp
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
 
-  ---
+    ---
 
 - [Microsoft Tips](ms-windows-store://pdp/?PFN=Microsoft.Getstarted_8wekyb3d8bbwe) | Package name: Microsoft.Getstarted
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
 
-  ---
+    ---
 
 - [HEIF Image Extensions](ms-windows-store://pdp/?PFN=Microsoft.HEIFImageExtension_8wekyb3d8bbwe) | Package name: Microsoft.HEIFImageExtension
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Microsoft Messaging](ms-windows-store://pdp/?PFN=Microsoft.Messaging_8wekyb3d8bbwe) | Package name:Microsoft.Messaging
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Microsoft 3D Viewer](ms-windows-store://pdp/?PFN=Microsoft.Microsoft3DViewer_8wekyb3d8bbwe) | Package name: Microsoft.Microsoft3DViewer
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Office](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe) | Package name: Microsoft.MicrosoftOfficeHub
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Microsoft Solitaire Collection](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe) | Package name: Microsoft.MicrosoftSolitaireCollection
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Microsoft Sticky Notes](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe) | Package name: Microsoft.MicrosoftStickyNotes
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Mixed Reality Portal](ms-windows-store://pdp/?PFN=Microsoft.MixedReality.Portal_8wekyb3d8bbwe) | Package name: Microsoft.MixedReality.Portal
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Paint 3D](ms-windows-store://pdp/?PFN=Microsoft.MSPaint_8wekyb3d8bbwe) | Package name: Microsoft.MSPaint
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [OneNote for Windows 10](ms-windows-store://pdp/?PFN=Microsoft.Office.OneNote_8wekyb3d8bbwe) | Package name: Microsoft.Office.OneNote
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Mobile Plans](ms-windows-store://pdp/?PFN=Microsoft.OneConnect_8wekyb3d8bbwe) | Package name: Microsoft.OneConnect
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
+
+    ---
 
 - Microsoft.Outlook.DesktopIntegrationServices
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  |  | ✔️ | ✔️| | ✔️| | |
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    |  | ✔️ | ✔️| | ✔️| | |
+
+    ---
 
 - [Microsoft People](ms-windows-store://pdp/?PFN=Microsoft.People_8wekyb3d8bbwe) | Package name: Microsoft.People
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Print 3D](ms-windows-store://pdp/?PFN=Microsoft.Print3D_8wekyb3d8bbwe) | Package name: Microsoft.Print3D
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Snip & Sketch](ms-windows-store://pdp/?PFN=Microsoft.ScreenSketch_8wekyb3d8bbwe) | Package name: Microsoft.ScreenSketch
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Skype](ms-windows-store://pdp/?PFN=Microsoft.SkypeApp_kzf8qxf38zg5c) | Package name: Microsoft.SkypeApp
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Store Purchase App](ms-windows-store://pdp/?PFN=Microsoft.StorePurchaseApp_8wekyb3d8bbwe) | Package name: Microsoft.StorePurchaseApp
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - Microsoft.VP9VideoExtensions
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Microsoft Pay](ms-windows-store://pdp/?PFN=Microsoft.Wallet_8wekyb3d8bbwe) | Package name: Microsoft.Wallet
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Web Media Extensions](ms-windows-store://pdp/?PFN=Microsoft.WebMediaExtensions_8wekyb3d8bbwe) | Package name: Microsoft.WebMediaExtensions
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Webp Image Extension](ms-windows-store://pdp/?PFN=Microsoft.WebpImageExtension_8wekyb3d8bbwe) | Package name: Microsoft.WebpImageExtension
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Microsoft Photos](ms-windows-store://pdp/?PFN=Microsoft.Windows.Photos_8wekyb3d8bbwe) | Package name: Microsoft.Windows.Photos
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Windows Alarms & Clock](ms-windows-store://pdp/?PFN=Microsoft.WindowsAlarms_8wekyb3d8bbwe) | Package name: Microsoft.WindowsAlarms
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Windows Calculator](ms-windows-store://pdp/?PFN=Microsoft.WindowsCalculator_8wekyb3d8bbwe) | Package name: Microsoft.WindowsCalculator
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Windows Camera](ms-windows-store://pdp/?PFN=Microsoft.WindowsCamera_8wekyb3d8bbwe) | Package name: Microsoft.WindowsCamera
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Mail and Calendar](ms-windows-store://pdp/?PFN=microsoft.windowscommunicationsapps_8wekyb3d8bbwe) | Package name: microsoft.windowscommunicationsapps
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Feedback Hub](ms-windows-store://pdp/?PFN=Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe) | Package name: Microsoft.WindowsFeedbackHub
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Windows Maps](ms-windows-store://pdp/?PFN=Microsoft.WindowsMaps_8wekyb3d8bbwe) | Package name: Microsoft.WindowsMaps
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
 
-- | [Windows Voice Recorder](ms-windows-store://pdp/?PFN=Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe) | Package name: Microsoft.WindowsSoundRecorder
+    ---
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+- [Windows Voice Recorder](ms-windows-store://pdp/?PFN=Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe) | Package name: Microsoft.WindowsSoundRecorder
+  - Supported versions:
+
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Microsoft Store](ms-windows-store://pdp/?PFN=Microsoft.WindowsStore_8wekyb3d8bbwe) | Package name: Microsoft.WindowsStore
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
+
+  - The Store app shouldn't be removed. If you remove the Store app, and want to reinstall it, you can restore your system from a backup, or reset your system. Instead of removing the Store app, use group policies to hide or disable it.
 
 - [Xbox Live in-game experience](ms-windows-store://pdp/?PFN=Microsoft.Xbox.TCUI_8wekyb3d8bbwe) | Package name: Microsoft.Xbox.TCUI
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Xbox Console Companion](ms-windows-store://pdp/?PFN=Microsoft.XboxApp_8wekyb3d8bbwe) | Package name: Microsoft.XboxApp
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Xbox Game Bar Plugin](ms-windows-store://pdp/?PFN=Microsoft.XboxGameOverlay_8wekyb3d8bbwe) | Package name: Microsoft.XboxGameOverlay
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Xbox Identity Provider](ms-windows-store://pdp/?PFN=Microsoft.XboxIdentityProvider_8wekyb3d8bbwe) | Package name: Microsoft.XboxIdentityProvider
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - Microsoft.XboxSpeechToTextOverlay
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Your Phone](ms-windows-store://pdp/?PFN=Microsoft.YourPhone_8wekyb3d8bbwe) | Package name: Microsoft.YourPhone
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Groove Music](ms-windows-store://pdp/?PFN=Microsoft.ZuneMusic_8wekyb3d8bbwe) | Package name: Microsoft.ZuneMusic
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+
+    ---
 
 - [Movies & TV](ms-windows-store://pdp/?PFN=Microsoft.ZuneVideo_8wekyb3d8bbwe) | Package name: Microsoft.ZuneVideo
+  - Supported versions:
 
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-  | --- | --- | --- | --- | --- | --- |--- |
-  | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-  ---
+    ---
+    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
+    | --- | --- | --- | --- | --- | --- |--- |
+    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
 
-> [!NOTE]
-> The Store app can't be removed. If you remove the Store app, and want to reinstall it, you can restore your system from a backup, or reset your system. Instead of removing the Store app, use group policies to hide or disable it.
+    ---
 
 ## System apps
 
@@ -404,6 +482,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - File Explorer | Package name: c5e2524a-ea46-4f67-841f-6a9465d9d515
@@ -412,6 +491,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - App Resolver UX | Package name: E2A4F912-2574-4A75-9BB0-0D023378592B
@@ -420,6 +500,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Add Suggested Folders To Library | Package name: F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE
@@ -428,6 +509,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - InputApp
@@ -436,6 +518,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ |  | | ✔️ |
+
   ---
 
 - Microsoft.AAD.Broker.Plugin | Package name: Microsoft.AAD.Broker.Plugin
@@ -444,6 +527,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.AccountsControl | Package name: Microsoft.AccountsControl
@@ -452,6 +536,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.AsyncTextService | Package name: Microsoft.AsyncTextService
@@ -460,14 +545,16 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
-- Hello setup UI | Microsoft.BioEnrollment
+- Hello setup UI | Package name: Microsoft.BioEnrollment
 
   ---
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.CredDialogHost
@@ -476,6 +563,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.ECApp
@@ -484,6 +572,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.LockApp
@@ -492,14 +581,16 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
-- Microsoft Edge | Microsoft.MicrosoftEdge
+- Microsoft Edge | Package name: Microsoft.MicrosoftEdge
 
   ---
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.MicrosoftEdgeDevToolsClient
@@ -508,6 +599,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.PPIProjection
@@ -516,6 +608,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ |  | | ✔️ |
+
   ---
 
 - Microsoft.Win32WebViewHost
@@ -524,6 +617,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.Windows.Apprep.ChxApp
@@ -532,6 +626,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.Windows.AssignedAccessLockApp
@@ -540,6 +635,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.Windows.CapturePicker
@@ -548,6 +644,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.Windows.CloudExperienceHost
@@ -556,6 +653,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.Windows.ContentDeliveryManager
@@ -564,6 +662,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Cortana | Package name: Microsoft.Windows.Cortana
@@ -572,6 +671,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ |  | | ✔️ |
+
   ---
 
 - Microsoft.Windows.OOBENetworkCaptivePort
@@ -580,6 +680,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.Windows.OOBENetworkConnectionFlow
@@ -588,6 +689,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.Windows.ParentalControls
@@ -596,6 +698,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - People Hub | Package name: Microsoft.Windows.PeopleExperienceHost
@@ -604,6 +707,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.Windows.PinningConfirmationDialog
@@ -612,6 +716,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.Windows.SecHealthUI
@@ -620,6 +725,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.Windows.SecureAssessmentBrowser
@@ -628,6 +734,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Start | Package name: Microsoft.Windows.ShellExperienceHost
@@ -636,6 +743,7 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Microsoft.XboxGameCallableUI
@@ -644,71 +752,42 @@ The following information lists the system apps on some Windows 10 OS versions:
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
   | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Windows.CBSPreview
 
   ---
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- | 
+  | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Settings | Package name: Windows.immersivecontrolpanel
 
   ---
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- | 
+  | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
 - Print 3D | Package name: Windows.Print3D
 
   ---
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- | 
+  | --- | --- | --- | --- |
   | ✔️ |  | | ✔️ |
+
   ---
 
 - Print UI | Package name: Windows.PrintDialog
 
   ---
   | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- | 
+  | --- | --- | --- | --- |
   | ❌ | ✔️ | ✔️| ✔️ |
+
   ---
 
-## Installed Windows apps
-
-Here are the typical installed Windows apps in Windows 10 versions 1709, 1803, and 1809.
-
-|         Name          |                Full name                 | 1709 | 1803 | 1809 | Uninstall through UI? |
-|-----------------------|------------------------------------------|:----:|:----:|:----:|:---------------------:|
-|    Remote Desktop     |         Microsoft.RemoteDesktop          |  x   |      |  x   |          Yes          |
-|      Code Writer      |     ActiproSoftwareLLC.562882FEEB491     |  x   |  x   |      |          Yes          |
-|    Eclipse Manager    |        46928bounde.EclipseManager        |  x   |  x   |      |          Yes          |
-|        Pandora        |      PandoraMediaInc.29680B314EFC2       |  x   |  x   |      |          Yes          |
-|   Photoshop Express   | AdobeSystemIncorporated. AdobePhotoshop  |  x   |  x   |      |          Yes          |
-|       Duolingo        | D5EA27B7.Duolingo- LearnLanguagesforFree |  x   |  x   |      |          Yes          |
-|  Network Speed Test   |        Microsoft.NetworkSpeedTest        |  x   |  x   |  x   |          Yes          |
-|         News          |            Microsoft.BingNews            |  x   |  x   |  x   |          Yes          |
-|         Sway          |          Microsoft.Office.Sway           |  x   |  x   |  x   |          Yes          |
-| Microsoft.Advertising |        Microsoft.Advertising.Xaml        |  x   |  x   |  x   |          Yes          |
-|                       |    Microsoft.NET.Native.Framework.1.2    |  x   |  x   |      |          Yes          |
-|                       |    Microsoft.NET.Native.Framework.1.3    |  x   |  x   |      |          Yes          |
-|                       |    Microsoft.NET.Native.Framework.1.6    |  x   |  x   |  x   |          Yes          |
-|                       |    Microsoft.NET.Native.Framework.1.7    |      |  x   |  x   |          Yes          |
-|                       |    Microsoft.NET.Native.Framework.2.0    |  x   |  x   |      |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.1.1     |  x   |  x   |      |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.1.3     |  x   |      |      |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.1.4     |  x   |  x   |      |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.1.6     |  x   |  x   |  x   |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.1.7     |  x   |  x   |  x   |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.2.0     |  x   |  x   |      |          Yes          |
-|                       |   Microsoft.Services.Store.Engagement    |  x   |  x   |      |          Yes          |
-|                       |         Microsoft.VCLibs.120.00          |  x   |  x   |      |          Yes          |
-|                       |         Microsoft.VCLibs.140.00          |  x   |  x   |  x   |          Yes          |
-|                       |    Microsoft.VCLibs.120.00.Universal     |  x   |      |      |          Yes          |
-|                       |    Microsoft.VCLibs.140.00.UWPDesktop    |      |  x   |      |          Yes          |
-
----
