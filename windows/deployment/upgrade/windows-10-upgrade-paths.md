@@ -50,7 +50,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <th>Windows 10 Enterprise</th>
     </tr>
     <tr>
-        <th rowspan="7" nowrap="nowrap">Windows 7</th>
+        <th rowspan="7">Windows 7</th>
     </tr>
     <tr>
         <td>Starter</td>
@@ -101,7 +101,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td>✔</td>
     </tr>
     <tr>
-        <th rowspan="10" nowrap="nowrap">Windows 8.1</th>
+        <th rowspan="10">Windows 8.1</th>
     </tr>
     <tr>
         <td>(Core)</td>
@@ -176,7 +176,7 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
         <td></td>
     </tr>
     <tr>
-        <th rowspan="8" nowrap="nowrap">Windows 10</th>
+        <th rowspan="8">Windows 10</th>
     </tr>
     <tr>
         <td>Home</td>
