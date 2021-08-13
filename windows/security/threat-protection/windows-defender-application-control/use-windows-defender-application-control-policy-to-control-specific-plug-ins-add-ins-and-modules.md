@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
-ms.date: 05/03/2018
+ms.date: 08/12/2021
 ms.technology: mde
 ---
 
@@ -38,7 +38,7 @@ For example, to create a WDAC policy allowing **addin1.dll** and **addin2.dll** 
 
 ```powershell
 $rule = New-CIPolicyRule -DriverFilePath '.\temp\addin1.dll' -Level FileName -AppID '.\ERP1.exe'
-$rule += New-CIPolicyRule -DriverFilePath '.\temp\addin1.dll' -Level FileName -AppID '.\ERP1.exe'
+$rule += New-CIPolicyRule -DriverFilePath '.\temp\addin2.dll' -Level FileName -AppID '.\ERP2.exe'
 New-CIPolicy -Rules $rule -FilePath ".\AllowERPAddins.xml" -UserPEs
 ```
 
