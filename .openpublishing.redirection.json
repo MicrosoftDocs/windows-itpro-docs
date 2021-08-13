@@ -18947,12 +18947,12 @@
     },
     {
       "source_path": "windows/client-management/windows-10-mobile-and-mdm.md",
-      "redirect_url": "/windows/client-management/index.yml",
+      "redirect_url": "/windows/client-management/index",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/application-management/deploy-app-upgrades-windows-10-mobile.md",
-      "redirect_url": "/windows/application-management/index.yml",
+      "redirect_url": "/windows/application-management/index",
       "redirect_document_id": false
     }
 
