@@ -1,5 +1,5 @@
 ---
-title: Windows 10 - Apps
+title: Learn about the different app types in Windows 10 | Microsoft Docs
 ms.reviewer: 
 manager: dansimp
 description: Use this article to understand the different types of apps that run on Windows 10, such as UWP and Win32 apps.
@@ -30,7 +30,7 @@ On your Windows 10 devices, you can run the following app types:
 - **Universal Windows Platform (UWP) apps**: These apps run and can be installed on many Windows platforms, including tablets, Microsoft HoloLens, Xbox, and more. All UWP apps are Windows apps. But, not all Windows apps are UWP apps.
 - **Win32 apps**: These apps are traditional Windows applications.
 
-This article lists the system apps, installed Windows apps, and provisioned Windows apps in a standard Windows 10 Enterprise installation. If you use custom images, your specific apps might be different.
+This article lists the provisioned Windows apps and system apps installed on a standard Windows 10 Enterprise device. If you use custom images, your specific apps might be different.
 
 Some of the apps show up in multiple areas. That's because their status changed between versions. Make sure to check the version column for the version you're currently running.
 
