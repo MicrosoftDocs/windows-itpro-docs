@@ -55,8 +55,6 @@ Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security
   <EKUs />
   <!--File Rules-->
   <FileRules>
-    <Allow ID="ID_ALLOW_ALL_1" FriendlyName="" FileName="*" />
-    <Allow ID="ID_ALLOW_ALL_2" FriendlyName="" FileName="*" />
     <Deny ID="ID_DENY_BANDAI_SHA1" FriendlyName="bandai.sys Hash Sha1" Hash="0F780B7ADA5DD8464D9F2CC537D973F5AC804E9C" />
     <Deny ID="ID_DENY_BANDAI_SHA256" FriendlyName="bandai.sys Hash Sha256" Hash="7FD788358585E0B863328475898BB4400ED8D478466D1B7F5CC0252671456CC8" />
     <Deny ID="ID_DENY_BANDAI_SHA1_PAGE" FriendlyName="bandai.sys Hash Page Sha1" Hash="EA360A9F23BB7CF67F08B88E6A185A699F0C5410" />
@@ -315,7 +313,6 @@ Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_INSYDE" />
         </DeniedSigners>
         <FileRulesRef>        
-            <FileRuleRef RuleID="ID_ALLOW_ALL_1"/>
             <FileRuleRef RuleID="ID_DENY_BANDAI_SHA1" />
             <FileRuleRef RuleID="ID_DENY_BANDAI_SHA256" />
             <FileRuleRef RuleID="ID_DENY_BANDAI_SHA1_PAGE" />
@@ -425,7 +422,6 @@ Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security
     <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="">
       <ProductSigners>
         <FileRulesRef>
-          <FileRuleRef RuleID="ID_ALLOW_ALL_2" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
