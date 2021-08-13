@@ -165,7 +165,7 @@ You can move directly from Enterprise to any valid destination edition. In this 
         <th>Enterprise</th>
     </tr>
     <tr>
-        <th rowspan="9" nowrap="nowrap" valign="middle">Starting edition</th>
+        <th rowspan="9" valign="middle">Starting edition</th>
     </tr>
     <tr>
         <td>Home</td>
