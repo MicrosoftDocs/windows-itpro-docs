@@ -69,7 +69,7 @@ After you click Submit, that's all you need to do. Microsoft will receive your f
 
 After your feedback is submitted, you can email or post links to it by opening the Feedback Hub, clicking My feedback at the top, clicking the feedback item you submitted, clicking **Share**, then copying the short link that is displayed.
 
-![share](../images/share.jpg) 
+![share link](../images/share.jpg) 
 
 ## Related topics
 
