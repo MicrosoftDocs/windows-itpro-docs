@@ -316,7 +316,7 @@ On **MDT01**:
 
 ### For the HP EliteBook 8560w
 
-For the HP EliteBook 8560w, you use HP SoftPaq Download Manager to get the drivers. The HP SoftPaq Download Manager can be accessed on the [HP Support site](https://go.microsoft.com/fwlink/p/?LinkId=619545).
+For the HP EliteBook 8560w, you use HP Image Assistant to get the drivers. The HP Image Assistant can be accessed on the [HP Support site](https://ftp.ext.hp.com/pub/caps-softpaq/cmit/HPIA.html).
 
 In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w** folder.
 
