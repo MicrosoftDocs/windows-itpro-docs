@@ -66,7 +66,7 @@ First, create the WMI filter and configure it to look for a specified version (o
     ... where Version like "6.1%" or Version like "6.2%"
     ```
 
-    To restrict the query to only clients or only servers, add a clause that includes the ProductType parameter. To filter for client operating systems only, such as Windows 8 or Windows 7, use only ProductType="1". For server operating systems that are not domain controllers, use ProductType="3". For domain controllers only, use ProductType="2". This is a useful distinction, because you often want to prevent your GPOs from being applied to the domain controllers on your network.
+    To restrict the query to only clients or only servers, add a clause that includes the ProductType parameter. To filter for client operating systems only, such as Windows 8 or Windows 7, use only ProductType="1". For server operating systems that are not domain controllers and for Windows 10 multi-session, use ProductType="3". For domain controllers only, use ProductType="2". This is a useful distinction, because you often want to prevent your GPOs from being applied to the domain controllers on your network.
 
     The following clause returns **true** for all devices that are not domain controllers:
 
