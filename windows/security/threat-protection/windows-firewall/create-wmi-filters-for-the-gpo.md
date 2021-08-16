@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/25/2017
+ms.date: 08/16/2021
 ms.technology: mde
 ---
 
@@ -40,17 +40,15 @@ First, create the WMI filter and configure it to look for a specified version (o
 
 1.  Open the Group Policy Management console.
 
-2.  In the navigation pane, expand **Forest:** *YourForestName*, expand **Domains**, expand *YourDomainName*, and then click **WMI Filters**.
+2.  In the navigation pane, expand **Forest:** *YourForestName*, expand **Domains**, expand *YourDomainName*, and then select **WMI Filters**.
 
-3.  Click **Action**, and then click **New**.
+3.  Select **Action**, and then select **New**.
 
-4.  In the **Name** text box, type the name of the WMI filter.
-
-    >**Note:**  Be sure to use a name that clearly indicates the purpose of the filter. Check to see if your organization has a naming convention.
+4.  In the **Name** text box, type the name of the WMI filter. Be sure to use a name that clearly indicates the purpose of the filter. Check to see if your organization has a naming convention.
 
 5.  In the **Description** text box, type a description for the WMI filter. For example, if the filter excludes domain controllers, you might consider stating that in the description.
 
-6.  Click **Add**.
+6.  Select **Add**.
 
 7.  Leave the **Namespace** value set to **root\\CIMv2**.
 
@@ -92,9 +90,9 @@ First, create the WMI filter and configure it to look for a specified version (o
     select * from Win32_OperatingSystem where Version like "10.%" and ProductType="3"
     ```
 
-9.  Click **OK** to save the query to the filter.
+9.  Select **OK** to save the query to the filter.
 
-10. Click **Save** to save your completed filter.
+10. Select **Save** to save your completed filter.
 
 > [!NOTE]
 > If you're using multiple queries in the same WMI filter, these queries must all return **TRUE** for the filter requirements to be met and for the GPO to be applied.
@@ -105,8 +103,8 @@ After you have created a filter with the correct query, link the filter to the G
 
 1.  Open the Group Policy Management console.
 
-2.  In the navigation pane, find and then click the GPO that you want to modify.
+2.  In the navigation pane, find and then select the GPO that you want to modify.
 
 3.  Under **WMI Filtering**, select the correct WMI filter from the list.
 
-4.  Click **Yes** to accept the filter.
+4.  Select **Yes** to accept the filter.
