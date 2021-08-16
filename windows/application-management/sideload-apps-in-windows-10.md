@@ -14,10 +14,10 @@ ms.date: 05/20/2019
 ---
 
 # Sideload LOB apps in Windows 10
+
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 > [!NOTE]
 > As of Windows Insider Build 18956, sideloading is enabled by default. Now, you can deploy a signed package onto a device without a special configuration. 
