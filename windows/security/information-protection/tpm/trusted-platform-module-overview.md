@@ -60,7 +60,7 @@ The TPM has several Group Policy settings that might be useful in certain enterp
 
 ## New and changed functionality
 
-For more info on new and changed functionality for Trusted Platform Module in Windows 10, see [What's new in Trusted Platform Module?](/windows/whats-new/whats-new-windows-10-version-1507-and-1511#trusted-platform-module).
+For more info on new and changed functionality for Trusted Platform Module in Windows 10, see [What's new in Trusted Platform Module?](/windows/whats-new/whats-new-windows-10-version-1507-and-1511#trusted-platform-module)
 
 ## Device health attestation
 
