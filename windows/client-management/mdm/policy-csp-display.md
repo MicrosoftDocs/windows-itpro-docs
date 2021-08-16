@@ -159,7 +159,7 @@ Per Process System DPI will not work for all applications as some older desktop 
 
 In some cases, you may see some unexpected behavior in some desktop applications that have Per-Process System DPI applied. If that happens, Per Process System DPI should be disabled.
 
-Enabling this setting lets you specify the system-wide default for desktop applications as well as per-application overrides. If you disable or do not configure this setting, Per Process System DPI will not apply to any processes on the system.
+Enabling this setting lets you specify the system-wide default for desktop applications and per-application overrides. If you disable or do not configure this setting, Per Process System DPI will not apply to any processes on the system.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -309,7 +309,7 @@ ADMX Info:
 <!--Validation-->
 To validate on Desktop, do the following:
 
-1.   Configure the setting for an app which has GDI DPI scaling enabled via MDM or any other supported mechanisms.
+1.   Configure the setting for an app, which has GDI DPI scaling enabled via MDM or any other supported mechanisms.
 2.   Run the app and observe blurry text.
 
 <!--/Validation-->
