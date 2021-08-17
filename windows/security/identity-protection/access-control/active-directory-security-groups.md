@@ -3716,7 +3716,7 @@ This security group was introduced in Windows Server 2012, and it has not chang
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-1000</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-&lt;variable RID&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>

@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 11/29/2018
 ---
 
 # Trusted Platform Module Technology Overview
 
 **Applies to**
+- Windows 11
 - Windows 10
 - Windows Server 2016
 - Windows Server 2019
@@ -28,7 +28,7 @@ This topic for the IT professional describes the Trusted Platform Module (TPM) a
 
 ## Feature description
 
-Trusted Platform Module (TPM) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper resistant, and malicious software is unable to tamper with the security functions of the TPM. Some of the key advantages of using TPM technology are that you can:
+[Trusted Platform Module (TPM)](/windows/security/information-protection/tpm/trusted-platform-module-top-node) technology is designed to provide hardware-based, security-related functions. A TPM chip is a secure crypto-processor that is designed to carry out cryptographic operations. The chip includes multiple physical security mechanisms to make it tamper-resistant, and malicious software is unable to tamper with the security functions of the TPM. Some of the key advantages of using TPM technology are that you can:
 
 - Generate, store, and limit the use of cryptographic keys.
 
@@ -54,13 +54,13 @@ Certificates can be installed or created on computers that are using the TPM. Af
 
 Automated provisioning in the TPM reduces the cost of TPM deployment in an enterprise. New APIs for TPM management can determine if TPM provisioning actions require physical presence of a service technician to approve TPM state change requests during the boot process.
 
-Antimalware software can use the boot measurements of the operating system start state to prove the integrity of a computer running Windows 10 or Windows Server 2016. These measurements include the launch of Hyper-V to test that datacenters using virtualization are not running untrusted hypervisors. With BitLocker Network Unlock, IT administrators can push an update without concerns that a computer is waiting for PIN entry.
+Antimalware software can use the boot measurements of the operating system start state to prove the integrity of a computer running Windows 10 and later editions or Windows Server 2016. These measurements include the launch of Hyper-V to test that datacenters using virtualization are not running untrusted hypervisors. With BitLocker Network Unlock, IT administrators can push an update without concerns that a computer is waiting for PIN entry.
 
 The TPM has several Group Policy settings that might be useful in certain enterprise scenarios. For more info, see [TPM Group Policy Settings](trusted-platform-module-services-group-policy-settings.md).
 
 ## New and changed functionality
 
-For more info on new and changed functionality for Trusted Platform Module in Windows 10, see [What's new in Trusted Platform Module?](/windows/whats-new/whats-new-windows-10-version-1507-and-1511#trusted-platform-module).
+For more info on new and changed functionality for Trusted Platform Module in Windows 10, see [What's new in Trusted Platform Module?](/windows/whats-new/whats-new-windows-10-version-1507-and-1511#trusted-platform-module)
 
 ## Device health attestation
 
@@ -75,14 +75,14 @@ Some things that you can check on the device are:
 -   Is SecureBoot supported and enabled?
 
 > [!NOTE]
->  Windows 10, Windows Server 2016 and Windows Server 2019 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1). TPM 2.0 requires UEFI firmware. A computer with legacy BIOS and TPM 2.0 won't work as expected.
+>  Windows 11, Windows 10, Windows Server 2016, and Windows Server 2019 support Device Health Attestation with TPM 2.0. Support for TPM 1.2 was added beginning with Windows version 1607 (RS1). TPM 2.0 requires UEFI firmware. A computer with legacy BIOS and TPM 2.0 won't work as expected.
 
 ## Supported versions for device health attestation
 
-| TPM version | Windows 10  | Windows Server 2016 | Windows Server 2019 |
-|-------------|-------------|---------------------|---------------------|
-| TPM 1.2     | >= ver 1607 |    >= ver 1607      |       Yes           |
-| TPM 2.0     |    Yes      |        Yes          |       Yes           |
+| TPM version | Windows 11  | Windows 10  | Windows Server 2016 | Windows Server 2019 |
+|-------------|-------------|-------------|---------------------|---------------------|
+| TPM 1.2     |             | >= ver 1607 |    >= ver 1607      |       Yes           |
+| TPM 2.0     |    Yes      |     Yes     |       Yes           |       Yes           |
 
 
 ## Related topics
