@@ -220,3 +220,6 @@ sections:
       - question: Does Windows Hello for Business work with Mac and Linux clients?
         answer: |
           Windows Hello for Business is a feature of Windows 10. At this time, Microsoft is not developing clients for other platforms. However, Microsoft is open to third-parties who are interested in moving these platforms away from passwords. Interested third-parties can get more information by emailing [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration).
+
+         question: Does Windows Hello for Business work with AADS clients?
+        answer: No, AAD DS is seperate on-prem enviornment and device registration with cloud (Azure AD) not available for them via ADConnect.
