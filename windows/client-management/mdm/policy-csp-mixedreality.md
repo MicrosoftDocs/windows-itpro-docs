@@ -47,12 +47,12 @@ Steps to use this policy correctly:
     1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. The value can be between min / max allowed.
 1. Enroll HoloLens devices and verify both configurations get applied to the device.
-1. Let Azure AD user 1 sign-in when internet is available, once user signs-in and Azure AD group membership is confirmed successfully, cache will be created.
+1. Let Azure AD user 1 sign-in when internet is available. Once the user signs-in and Azure AD group membership is confirmed successfully, cache will be created.
 1. Now Azure AD user 1 can take HoloLens offline and use it for kiosk mode as long as policy value allows for X number of days.
-1. Steps 4 and 5 can be repeated for any other Azure AD user N. Key point here is that any Azure AD user must sign-in to device using Internet so at least once we can determine that they are member of Azure AD group to which Kiosk configuration is targeted.
+1. Steps 4 and 5 can be repeated for any other Azure AD user N. The key point here is that any Azure AD user must sign-in to device using Internet at least once. Then we can determine that they are member of Azure AD group to which Kiosk configuration is targeted.
 
 > [!NOTE]
-> Until step 4 is performed for a Azure AD user will experience failure behavior mentioned in “disconnected” environments.
+> Until step 4 is performed for a Azure AD user will experience failure behavior mentioned similar to “disconnected” environments.
 
 <hr/>
 
