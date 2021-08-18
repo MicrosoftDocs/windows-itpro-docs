@@ -200,7 +200,7 @@ Sign-in to the issuing certificate authority or management workstations with _Do
 5. On the **Subject** tab, select **Supply in the request**.
 6. On the **Cryptography** tab, validate the **Minimum key size** is **2048**.
 7. On the **Security** tab, click **Add**.
-8. Select **Object Types**, then, in the appeared window, choose **Computers** and click **OK**
+8. Select **Object Types**, then, in the window that appears, choose **Computers** and click **OK**.
 9. Type **NDES server** in the **Enter the object names to select** text box and click **OK**.
 10. Select **NDES server** from the **Group or users names** list. In the **Permissions for** section, select the **Allow** check box for the **Enroll** permission. Clear the **Allow** check box for the **Enroll** and **Autoenroll** permissions for all other items in the **Group or users names** list if the check boxes are not already cleared. Click **OK**.
 11. Click on the **Apply** to save changes and close the console.
