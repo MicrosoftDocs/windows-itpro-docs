@@ -147,21 +147,9 @@ Switch to **DC01** and perform the following procedures on **DC01**:
 
 To create the OU structure, you can use the Active Directory Users and Computers console (dsa.msc), or you can use Windows PowerShell.
 
-To use Windows PowerShell, copy the following commands into a text file and save it as <b>C:\Setup\Scripts\ou.ps1</b>. Be sure that you are viewing file extensions and that you save the file with the .ps1 extension.
+Copy the following list of OU names and paths into a CSV file and save it as `~\Setup\Scripts\oulist.csv`.
 
-```powershell
-$oulist = Import-csv -Path c:\oulist.txt
-ForEach($entry in $oulist){
-    $ouname = $entry.ouname
-    $oupath = $entry.oupath
-    New-ADOrganizationalUnit -Name $ouname -Path $oupath
-    Write-Host -ForegroundColor Green "OU $ouname is created in the location $oupath"
-}
-```
-
-Next, copy the following list of OU names and paths into a text file and save it as <b>C:\Setup\Scripts\oulist.txt</b>
-
-```text
+```csv
 OUName,OUPath
 Contoso,"DC=CONTOSO,DC=COM"
 Accounts,"OU=Contoso,DC=CONTOSO,DC=COM"
@@ -175,11 +163,20 @@ Workstations,"OU=Computers,OU=Contoso,DC=CONTOSO,DC=COM"
 Security Groups,"OU=Groups,OU=Contoso,DC=CONTOSO,DC=COM"
 ```
 
-Lastly, open an elevated Windows PowerShell prompt on DC01 and run the ou.ps1 script:
+Next, copy the following commands into a file and save it as `~\Setup\Scripts\ou.ps1`. Be sure that you are viewing file extensions and that you save the file with the `.ps1` extension.
+
+```powershell
+Import-CSV -Path $home\Setup\Scripts\oulist.csv | ForEach-Object {
+    New-ADOrganizationalUnit -Name $_.ouname -Path $_.oupath
+    Write-Host -ForegroundColor Green "OU $($_.ouname) is created in the location $($_.oupath)"
+}
+```
+
+Lastly, open an elevated Windows PowerShell prompt on DC01 and run the `ou.ps1` script:
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
-Set-Location C:\Setup\Scripts
+Set-Location $home\Setup\Scripts
 .\ou.ps1
 ```
 
