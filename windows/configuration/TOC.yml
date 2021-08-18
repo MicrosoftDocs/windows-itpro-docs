@@ -1,24 +1,26 @@
 - name: Configure Windows client
   href: index.yml
-- name: Configure appearance settings
+- name: Customize the appearance
   items:
     - name: Windows 10 Start and taskbar
       items:
-        - name: Manage Windows 10 Start and taskbar layout
+        - name: Start layout and taskbar
           href: windows-10-start-layout-options-and-policies.md
-        - name: Configure Windows 10 taskbar
-          href: configure-windows-10-taskbar.md
-        - name: Customize and export Start layout
-          href: customize-and-export-start-layout.md
-        - name: Add image for secondary tiles
-          href: start-secondary-tiles.md
-        - name: Start layout XML for desktop editions of Windows 10 (reference)
-          href: start-layout-xml-desktop.md
-        - name: Customize Windows 10 Start and taskbar with Group Policy
+        - name: Use XML
+          items: 
+          - name: Customize and export Start layout
+            href: customize-and-export-start-layout.md
+          - name: Customize the taskbar
+            href: configure-windows-10-taskbar.md
+          - name: Add image for secondary Microsoft Edge tiles
+            href: start-secondary-tiles.md
+          - name: Start layout XML for Windows 10 desktop editions (reference)
+            href: start-layout-xml-desktop.md
+        - name: Use group policy
           href: customize-windows-10-start-screens-by-using-group-policy.md
-        - name: Customize Windows 10 Start and taskbar with provisioning packages
+        - name: Use provisioning packages
           href: customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md
-        - name: Customize Windows 10 Start and taskbar with mobile device management (MDM)
+        - name: Use mobile device management (MDM)
           href: customize-windows-10-start-screens-by-using-mobile-device-management.md
         - name: Troubleshoot Start menu errors
           href: start-layout-troubleshoot.md
