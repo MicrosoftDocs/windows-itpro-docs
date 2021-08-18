@@ -32,7 +32,7 @@ The procedures in this guide use the following names and infrastructure.
 For the purposes of this topic, we will use three server computers: **DC01**, **MDT01**, and **HV01**.
 - All servers are running Windows Server 2019. 
     - You can use an earlier version of Windows Server with minor modifications to some procedures.
-    - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is requried to perform the procedures in this guide.
+    - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is required to perform the procedures in this guide.
 - **DC01** is a domain controller, DHCP server, and DNS server for <b>contoso.com</b>, representing the fictitious Contoso Corporation.
 - **MDT01** is a domain member server in contoso.com with a data (D:) drive that can store at least 200GB. MDT01 will host deployment shares and run the Windows Deployment Service. Optionally, MDT01 is also a WSUS server.
     - A second MDT server (**MDT02**) configured identically to MDT01 is optionally used to [build a distributed environment](build-a-distributed-environment-for-windows-10-deployment.md) for Windows 10 deployment. This server is located on a different subnet than MDT01 and has a different default gateway.
@@ -209,7 +209,7 @@ The final result of either method is shown below. The **MDT_BA** account will be
 
 When creating a reference image, you need an account for MDT. The MDT build account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01.
 
-To create an MDT build account, open an elevalted Windows PowerShell prompt on DC01 and enter the following (copy and paste the entire command, taking care to notice the scroll bar at the bottom). This command will create the MDT_BA user account and set the password to "pass@word1":
+To create an MDT build account, open an elevated Windows PowerShell prompt on DC01 and enter the following (copy and paste the entire command, taking care to notice the scroll bar at the bottom). This command will create the MDT_BA user account and set the password to "pass@word1":
 
 ```powershell
 New-ADUser -Name MDT_BA -UserPrincipalName MDT_BA -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT Build Account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true
