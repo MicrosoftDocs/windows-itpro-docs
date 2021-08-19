@@ -1,9 +1,17 @@
-- name: Security
+
+- name: Windows security foundation
   href: index.yml
+  expanded: true
   items: 
-    - name: Identity and access management
-      href: identity-protection/index.md
-    - name: Information protection
-      href: information-protection/index.md
-    - name: Threat protection
-      href: threat-protection/index.md
+    - name: FIPS 140-2 Validation
+      href: /windows/security/threat-protection/fips-140-validation.md
+    - name: Common Criteria Certifications
+      href: /windows/security/threat-protection/windows-platform-common-criteria.md
+- name: Windows hardware Security
+  items: 
+    - name: Trusted Platform Module (TPM) overview
+      href: /windows/security/information-protection/tpm/trusted-platform-module-overview.md
+    - name: Protect derived domain credentials with Windows Defender Credential Guard
+      href: /windows/security/identity-protection/credential-guard/credential-guard.md
+    - name: Kernel DMA Protection
+      href: /windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md

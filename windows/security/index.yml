@@ -1,64 +1,44 @@
-### YamlMime:Hub
+### YamlMime:Landing
 
-title: Windows 10 Enterprise Security # < 60 chars
-summary: Security from chip to cloud. # < 160 chars
-# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
-brand: windows
+title: Windows security # < 60 chars
+summary: Learn about Windows security from chip to cloud.  # < 160 chars
 
 metadata:
-  title: Windows 10 Enterprise Security # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Learn about enterprise-grade security features in Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
-  services: windows
-  ms.product: windows
-  ms.topic: hub-page # Required
-  ms.collection: M365-security-compliance # Optional; Remove if no collection is used.
+  title: Windows security # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Windows security # Required; article description that is displayed in search results. < 160 chars.
+  ms.topic: landing-page # Required
+  ms.collection: m365-security-compliance
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
   ms.date: 09/30/2021 #Required; mm/dd/yyyy format.
-  ms.localizationpriority: high
+  localization_priority: Priority
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
-# productDirectory section (optional)
-productDirectory:
-  items:
-    # Card
-    - title: Security foundation
-      imageSrc: https://docs.microsoft.com/media/common/i_information-protection.svg
-      summary: Security assurances and certifications
-      url: ./information-protection/index.md
-
-    # Card
-    - title: Hardware security
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: https://docs.microsoft.com/media/common/i_identity-protection.svg
-      summary: Hardware root of trust and silicon-assisted security
-      url: ./identity-protection/index.md
-    # Card
-    - title: Operating system protection
-      imageSrc: https://docs.microsoft.com/media/common/i_threat-protection.svg
-      summary: Windows security enhancements
-      url: ./threat-protection/index.md
-    # Card
-    - title: Threat protection
-      imageSrc: https://docs.microsoft.com/media/common/i_information-protection.svg
-      summary: Protection from external attacks and threats
-      url: ./information-protection/index.md
-    # Card
-    - title: Application protection
-      imageSrc: https://docs.microsoft.com/media/common/i_information-protection.svg
-      summary: App protections
-      url: ./information-protection/index.md
-    # Card
-    - title: User protection
-      imageSrc: https://docs.microsoft.com/media/common/i_information-protection.svg
-      summary: Protecting your users
-      url: ./information-protection/index.md
-    # Card
-    - title: Privacy controls
-      imageSrc: https://docs.microsoft.com/media/common/i_information-protection.svg
-      summary: Manage your privacy settings
-      url: ./information-protection/index.md
-    # Card
-    - title: Cloud security
-      imageSrc: https://docs.microsoft.com/media/common/i_information-protection.svg
-      summary: Additional cloud-based security and management solutions
-      url: ./information-protection/index.md
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Security foundations
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Federal Information Processing Standard (FIPS) 140 Validation
+            url: /windows/security/threat-protection/fips-140-validation
+          - text: Common Criteria Certifications
+            url: /windows/security/threat-protection/windows-platform-common-criteria
+          - text: Microsoft Security Development Lifecycle (SDL)
+            url:  /previous-versions/windows/desktop/cc307891(v=msdn.10)
+          - text: Microsoft bounty program
+            url: https://www.microsoft.com/msrc/bounty
+  # Card (optional)
+  - title: Hardware security
+    linkLists:
+      - linkListType: overview
+        links:
+         - name: Trusted Platform Module (TPM) overview
+           href: /windows/security/information-protection/tpm/trusted-platform-module-overview.md
+         - name: Protect derived domain credentials with Windows Defender Credential Guard
+           href: /windows/security/identity-protection/credential-guard/credential-guard.md
+         - name: Kernel DMA Protection
+           href: /windows/security/information-protection/kernel-dma-protection-for-thunderbolt.m
