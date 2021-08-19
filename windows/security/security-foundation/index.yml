@@ -1,0 +1,39 @@
+### YamlMime:Landing
+
+title: Windows security foundation # < 60 chars
+summary: Learn about Windows security foundations.  # < 160 chars
+
+metadata:
+  title: Windows security foundation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about Windows security foundation # Required; article description that is displayed in search results. < 160 chars.
+  ms.topic: landing-page # Required
+  ms.collection: m365-security-compliance
+  author: dansimp #Required; your GitHub user alias, with correct capitalization.
+  ms.author: dansimp #Required; microsoft alias of author; optional team alias.
+  ms.date: 09/30/2021 #Required; mm/dd/yyyy format.
+  localization_priority: Priority
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Security assurance
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft Security Development Lifecycle (SDL)
+            url:  /previous-versions/windows/desktop/cc307891(v=msdn.10)
+          - text: Microsoft bounty program
+            url: https://www.microsoft.com/msrc/bounty
+  # Card
+  - title: Certifications
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Federal Information Processing Standard (FIPS) 140 Validation
+            url: /windows/security/threat-protection/fips-140-validation
+          - text: Common Criteria Certifications
+            url: /windows/security/threat-protection/windows-platform-common-criteria
+ 
