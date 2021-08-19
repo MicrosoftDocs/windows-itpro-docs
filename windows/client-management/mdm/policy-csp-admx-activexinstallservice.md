@@ -95,7 +95,7 @@ If the trusted site uses the HTTPS protocol, this policy setting can also contro
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Establish ActiveX installation policy for sites in Trusted zones*
+-   GP Friendly name: *Establish ActiveX installation policy for sites in Trusted zones*
 -   GP name: *AxISURLZonePolicies*
 -   GP path: *Windows Components\ActiveX Installer Service*
 -   GP ADMX file name: *ActiveXInstallService.admx*

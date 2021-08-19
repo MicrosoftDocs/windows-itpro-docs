@@ -86,7 +86,7 @@ Added in Windows 10, version 2004. This policy setting allows you to control whe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Graphing Calculator*
+-   GP Friendly name: *Allow Graphing Calculator*
 -   GP name: *AllowGraphingCalculator*
 -   GP path: *Windows Components/Calculator*
 -   GP ADMX file name: *Programs.admx*
@@ -203,7 +203,7 @@ Added in Windows 10, version 1709. Allows IT Admins to prevent user installatio
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent addition of printers*
+-   GP Friendly name: *Prevent addition of printers*
 -   GP name: *NoAddPrinter*
 -   GP path: *Control Panel/Printers*
 -   GP ADMX file name: *Printing.admx*

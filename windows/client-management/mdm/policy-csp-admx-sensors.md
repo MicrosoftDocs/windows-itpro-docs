@@ -102,7 +102,7 @@ If you disable or do not configure this policy setting, all location scripts wil
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off location scripting*
+-   GP Friendly name: *Turn off location scripting*
 -   GP name: *DisableLocationScripting_1*
 -   GP path: *Windows Components\Location and Sensors*
 -   GP ADMX file name: *Sensors.admx*
@@ -171,7 +171,7 @@ If you disable or do not configure this policy setting, all location scripts wil
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off location scripting*
+-   GP Friendly name: *Turn off location scripting*
 -   GP name: *DisableLocationScripting_2*
 -   GP path: *Windows Components\Location and Sensors*
 -   GP ADMX file name: *Sensors.admx*
@@ -240,7 +240,7 @@ If you disable or do not configure this policy setting, all programs on this com
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off location*
+-   GP Friendly name: *Turn off location*
 -   GP name: *DisableLocation_1*
 -   GP path: *Windows Components\Location and Sensors*
 -   GP ADMX file name: *Sensors.admx*
@@ -309,7 +309,7 @@ If you disable or do not configure this policy setting, all programs on this com
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off sensors*
+-   GP Friendly name: *Turn off sensors*
 -   GP name: *DisableSensors_1*
 -   GP path: *Windows Components\Location and Sensors*
 -   GP ADMX file name: *Sensors.admx*
@@ -378,7 +378,7 @@ If you disable or do not configure this policy setting, all programs on this com
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off sensors*
+-   GP Friendly name: *Turn off sensors*
 -   GP name: *DisableSensors_2*
 -   GP path: *Windows Components\Location and Sensors*
 -   GP ADMX file name: *Sensors.admx*
