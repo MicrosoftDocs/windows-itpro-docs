@@ -112,7 +112,7 @@ This setting does not prevent the Default Programs icon from appearing on the St
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide "Set Program Access and Computer Defaults" page*
+-   GP Friendly name: *Hide "Set Program Access and Computer Defaults" page*
 -   GP name: *NoDefaultPrograms*
 -   GP path: *Control Panel\Programs*
 -   GP ADMX file name: *Programs.admx*
@@ -188,7 +188,7 @@ If this setting is disabled or is not configured, the "Install a program from th
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide "Get Programs" page*
+-   GP Friendly name: *Hide "Get Programs" page*
 -   GP name: *NoGetPrograms*
 -   GP path: *Control Panel\Programs*
 -   GP ADMX file name: *Programs.admx*
@@ -259,7 +259,7 @@ This setting does not prevent users from using other tools and methods to instal
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide "Installed Updates" page*
+-   GP Friendly name: *Hide "Installed Updates" page*
 -   GP name: *NoInstalledUpdates*
 -   GP path: *Control Panel\Programs*
 -   GP ADMX file name: *Programs.admx*
@@ -328,7 +328,7 @@ This setting does not prevent users from using other tools and methods to view o
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide "Programs and Features" page*
+-   GP Friendly name: *Hide "Programs and Features" page*
 -   GP name: *NoProgramsAndFeatures*
 -   GP path: *Control Panel\Programs*
 -   GP ADMX file name: *Programs.admx*
@@ -401,7 +401,7 @@ This setting does not prevent users from using other tools and methods to instal
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide the Programs Control Panel*
+-   GP Friendly name: *Hide the Programs Control Panel*
 -   GP name: *NoProgramsCPL*
 -   GP path: *Control Panel\Programs*
 -   GP ADMX file name: *Programs.admx*
@@ -470,7 +470,7 @@ This setting does not prevent users from using other tools and methods to config
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide "Windows Features"*
+-   GP Friendly name: *Hide "Windows Features"*
 -   GP name: *NoWindowsFeatures*
 -   GP path: *Control Panel\Programs*
 -   GP ADMX file name: *Programs.admx*
@@ -544,7 +544,7 @@ If this feature is disabled or is not configured, the "Get new programs from Win
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide "Windows Marketplace"*
+-   GP Friendly name: *Hide "Windows Marketplace"*
 -   GP name: *NoWindowsMarketplace*
 -   GP path: *Control Panel\Programs*
 -   GP ADMX file name: *Programs.admx*

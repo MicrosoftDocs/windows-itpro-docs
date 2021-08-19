@@ -81,7 +81,7 @@ The easiest way to verify the policy is to restart the explorer process or to re
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow edge swipe*
+-   GP Friendly name: *Allow edge swipe*
 -   GP name: *AllowEdgeSwipe*
 -   GP path: *Windows Components/Edge UI*
 -   GP ADMX file name: *EdgeUI.admx*
