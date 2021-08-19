@@ -173,7 +173,7 @@ Also, see the "Custom support URL in the Printers folder's left pane" setting in
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Activate Internet printing*
+-   GP Friendly name: *Activate Internet printing*
 -   GP name: *AllowWebPrinting*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -249,7 +249,7 @@ If you disable this policy setting, then print drivers will be loaded within all
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Isolate print drivers from applications*
+-   GP Friendly name: *Isolate print drivers from applications*
 -   GP name: *ApplicationDriverIsolation*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -325,7 +325,7 @@ Web view is affected by the "Turn on Classic Shell" and "Do not allow Folder Opt
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Custom support URL in the Printers folder's left pane*
+-   GP Friendly name: *Custom support URL in the Printers folder's left pane*
 -   GP name: *CustomizedSupportUrl*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -398,7 +398,7 @@ By default, Windows Ultimate, Professional and Home SKUs will continue to search
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Extend Point and Print connection to search Windows Update*
+-   GP Friendly name: *Extend Point and Print connection to search Windows Update*
 -   GP name: *DoNotInstallCompatibleDriverFromWindowsUpdate*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -481,7 +481,7 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Add Printer wizard - Network scan page (Managed network)*
+-   GP Friendly name: *Add Printer wizard - Network scan page (Managed network)*
 -   GP name: *DomainPrinters*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -553,7 +553,7 @@ If you disable this setting, the network printer browse page is removed from wit
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Browse the network to find printers*
+-   GP Friendly name: *Browse the network to find printers*
 -   GP name: *DownlevelBrowse*
 -   GP path: *Control Panel\Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -633,7 +633,7 @@ If you do not enable this policy setting, the behavior is the same as disabling 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Always render print jobs on the server*
+-   GP Friendly name: *Always render print jobs on the server*
 -   GP name: *EMFDespooling*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -700,7 +700,7 @@ This setting may improve the performance of the XPS Rasterization Service or the
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Always rasterize content to be printed using a software rasterizer*
+-   GP Friendly name: *Always rasterize content to be printed using a software rasterizer*
 -   GP name: *ForceSoftwareRasterization*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -773,7 +773,7 @@ Also, see the "Custom support URL in the Printers folder's left pane" and "Activ
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Browse a common web site to find printers*
+-   GP Friendly name: *Browse a common web site to find printers*
 -   GP name: *IntranetPrintersUrl*
 -   GP path: *Control Panel\Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -847,7 +847,7 @@ If you enable this setting, installation of a printer using a kernel-mode driver
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disallow installation of printers using kernel-mode drivers*
+-   GP Friendly name: *Disallow installation of printers using kernel-mode drivers*
 -   GP name: *KMPrintersAreBlocked*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -918,7 +918,7 @@ If you do not configure this setting, default printer management will not change
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Windows default printer management*
+-   GP Friendly name: *Turn off Windows default printer management*
 -   GP name: *LegacyDefaultPrinterMode*
 -   GP path: *Control Panel\Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -987,7 +987,7 @@ If you disable or do not configure this policy setting, the default MXDW output 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Change Microsoft XPS Document Writer (MXDW) default output format to the legacy Microsoft XPS format (*.xps)*
+-   GP Friendly name: *Change Microsoft XPS Document Writer (MXDW) default output format to the legacy Microsoft XPS format (*.xps)*
 -   GP name: *MXDWUseLegacyOutputFormatMSXPS*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1058,7 +1058,7 @@ If this policy is disabled, or not configured, users can delete printers using t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent deletion of printers*
+-   GP Friendly name: *Prevent deletion of printers*
 -   GP name: *NoDeletePrinter*
 -   GP path: *Control Panel\Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1138,7 +1138,7 @@ In Windows 8 and later, Bluetooth printers are not shown so its limit does not a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Add Printer wizard - Network scan page (Unmanaged network)*
+-   GP Friendly name: *Add Printer wizard - Network scan page (Unmanaged network)*
 -   GP name: *NonDomainPrinters*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1207,7 +1207,7 @@ If this setting is disabled, or not configured, users will not be restricted to 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Only use Package Point and print*
+-   GP Friendly name: *Only use Package Point and print*
 -   GP name: *PackagePointAndPrintOnly*
 -   GP path: *Control Panel\Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1276,7 +1276,7 @@ If this setting is disabled, or not configured, users will not be restricted to 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Only use Package Point and print*
+-   GP Friendly name: *Only use Package Point and print*
 -   GP name: *PackagePointAndPrintOnly_Win7*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1349,7 +1349,7 @@ If this setting is disabled, or not configured, package point and print will not
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Package Point and print - Approved servers*
+-   GP Friendly name: *Package Point and print - Approved servers*
 -   GP name: *PackagePointAndPrintServerList*
 -   GP path: *Control Panel\Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1422,7 +1422,7 @@ If this setting is disabled, or not configured, package point and print will not
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Package Point and print - Approved servers*
+-   GP Friendly name: *Package Point and print - Approved servers*
 -   GP name: *PackagePointAndPrintServerList_Win7*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1495,7 +1495,7 @@ If you disable this setting or do not configure it, and the user does not type a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Computer location*
+-   GP Friendly name: *Computer location*
 -   GP name: *PhysicalLocation*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1566,7 +1566,7 @@ If you disable this setting or do not configure it, Location Tracking is disable
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Pre-populate printer search location text*
+-   GP Friendly name: *Pre-populate printer search location text*
 -   GP name: *PhysicalLocationSupport*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1640,7 +1640,7 @@ If you disable this policy setting, the print spooler will execute print drivers
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Execute print drivers in isolated processes*
+-   GP Friendly name: *Execute print drivers in isolated processes*
 -   GP name: *PrintDriverIsolationExecutionPolicy*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1714,7 +1714,7 @@ If you disable or do not configure this policy setting, the print spooler uses t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Override print driver execution compatibility setting reported by print driver*
+-   GP Friendly name: *Override print driver execution compatibility setting reported by print driver*
 -   GP name: *PrintDriverIsolationOverrideCompat*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1785,7 +1785,7 @@ This setting only provides a starting point for Active Directory searches for pr
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Default Active Directory path when searching for printers*
+-   GP Friendly name: *Default Active Directory path when searching for printers*
 -   GP name: *PrinterDirectorySearchScope*
 -   GP path: *Control Panel\Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1861,7 +1861,7 @@ If you do not configure this setting, shared printers are announced to browse ma
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Printer browsing*
+-   GP Friendly name: *Printer browsing*
 -   GP name: *PrinterServerThread*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -1933,7 +1933,7 @@ If you enable this policy setting, the print job name will be included in new lo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow job name in event logs*
+-   GP Friendly name: *Allow job name in event logs*
 -   GP name: *ShowJobTitleInEventLogs*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
@@ -2004,7 +2004,7 @@ If you disable this policy setting or do not configure it, then all printer exte
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow v4 printer drivers to show printer extensions*
+-   GP Friendly name: *Do not allow v4 printer drivers to show printer extensions*
 -   GP name: *V4DriverDisallowPrinterExtension*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing.admx*
