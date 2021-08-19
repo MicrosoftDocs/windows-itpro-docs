@@ -38,9 +38,9 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - name: Trusted Platform Module
-          url: /windows/security/information-protection/trusted-platform-module-top-node.md
-        - name: Kernel DMA Protection
+        - text: Trusted Platform Module
+          url: /windows/security/information-protection/tpm/trusted-platform-module-top-node.md
+        - text: Kernel DMA Protection
           url: /windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
@@ -49,7 +49,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - name: Secure the Windows boot process
+        - text: Secure the Windows boot process
           url: /windows/security/information-protection/secure-the-windows-10-boot-process.md
-        - name: Configure S/MIME for Windows 10
+        - text: Configure S/MIME for Windows 10
           url: /windows/security/identity-protection/configure-s-mime.md
