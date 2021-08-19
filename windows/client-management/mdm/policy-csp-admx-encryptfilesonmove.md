@@ -92,7 +92,7 @@ This setting applies only to files moved within a volume. When files are moved t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not automatically encrypt files moved to encrypted folders*
+-   GP Friendly name: *Do not automatically encrypt files moved to encrypted folders*
 -   GP name: *NoEncryptOnMove*
 -   GP path: *System*
 -   GP ADMX file name: *EncryptFilesonMove.admx*
