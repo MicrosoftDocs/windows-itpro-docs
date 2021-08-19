@@ -162,7 +162,7 @@ If you disable or do not configure this policy setting, by default, only system 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow users to browse for source while elevated*
+-   GP Friendly name: *Allow users to browse for source while elevated*
 -   GP name: *AllowLockdownBrowse*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -236,7 +236,7 @@ Also, see the "Prevent removable media source for any install" policy setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow users to use media source while elevated*
+-   GP Friendly name: *Allow users to use media source while elevated*
 -   GP name: *AllowLockdownMedia*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -307,7 +307,7 @@ This policy setting does not affect installations that run in the user's securit
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow users to patch elevated products*
+-   GP Friendly name: *Allow users to patch elevated products*
 -   GP name: *AllowLockdownPatch*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -383,7 +383,7 @@ If you disable or do not configure this policy setting, Windows Installer will u
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit use of Restart Manager*
+-   GGP Friendly name: *Prohibit use of Restart Manager*
 -   GP name: *DisableAutomaticApplicationShutdown*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -459,7 +459,7 @@ Also, see the "Enable user to browse for source while elevated" policy setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove browse dialog box for new source*
+-   GP Friendly name: *Remove browse dialog box for new source*
 -   GP name: *DisableBrowse*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -529,7 +529,7 @@ If you disable or do not configure this policy setting, it enables faster applic
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit flyweight patching*
+-   GP Friendly name: *Prohibit flyweight patching*
 -   GP name: *DisableFlyweightPatching*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -603,7 +603,7 @@ If you disable or do not configure this policy setting, Windows Installer will a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off logging via package settings*
+-   GP Friendly name: *Turn off logging via package settings*
 -   GP name: *DisableLoggingFromPackage*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -679,7 +679,7 @@ This policy setting affects Windows Installer only. It does not prevent users fr
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Windows Installer*
+-   GP Friendly name: *Turn off Windows Installer*
 -   GP name: *DisableMSI*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -753,7 +753,7 @@ Also, see the "Enable user to use media source while elevated" and "Hide the 'Ad
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent removable media source for any installation*
+-   GP Friendly name: *Prevent removable media source for any installation*
 -   GP name: *DisableMedia*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -828,7 +828,7 @@ Also, see the "Enable user to patch elevated products" policy setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent users from using Windows Installer to install updates and upgrades*
+-   GP Friendly name: *Prevent users from using Windows Installer to install updates and upgrades*
 -   GP name: *DisablePatch*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -899,7 +899,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit rollback*
+-   GP Friendly name: *Prohibit rollback*
 -   GP name: *DisableRollback_1*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -971,7 +971,7 @@ This policy setting appears in the Computer Configuration and User Configuration
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit rollback*
+-   GP Friendly name: *Prohibit rollback*
 -   GP name: *DisableRollback_2*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1041,7 +1041,7 @@ If you disable or do not configure this policy setting, by default, the shared c
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off shared components*
+-   GP Friendly name: *Turn off shared components*
 -   GP name: *DisableSharedComponent*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1113,7 +1113,7 @@ If you disable or do not configure this policy setting, Windows Installer logs t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify the types of events Windows Installer records in its transaction log*
+-   GP Friendly name: *Specify the types of events Windows Installer records in its transaction log*
 -   GP name: *MSILogging*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1186,7 +1186,7 @@ If you disable or do not configure this policy setting, users without administra
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit non-administrators from applying vendor signed updates*
+-   GP Friendly name: *Prohibit non-administrators from applying vendor signed updates*
 -   GP name: *MSI_DisableLUAPatching*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1259,7 +1259,7 @@ If you disable or do not configure this policy setting, a user can remove an upd
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit removal of updates*
+-   GP Friendly name: *Prohibit removal of updates*
 -   GP name: *MSI_DisablePatchUninstall*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1330,7 +1330,7 @@ If you disable or do not configure this policy setting, by default, the Windows 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off creation of System Restore checkpoints*
+-   GP Friendly name: *Turn off creation of System Restore checkpoints*
 -   GP name: *MSI_DisableSRCheckPoints*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1401,7 +1401,7 @@ If you enable this policy setting and "Hide User Installs" is selected, the inst
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit User Installs*
+-   GP Friendly name: *Prohibit User Installs*
 -   GP name: *MSI_DisableUserInstalls*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1478,7 +1478,7 @@ If you disable or do not configure this policy setting, the Windows Installer wi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enforce upgrade component rules*
+-   GP Friendly name: *Enforce upgrade component rules*
 -   GP name: *MSI_EnforceUpgradeComponentRules*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1554,7 +1554,7 @@ If you disable or do not configure this policy setting, the Windows Installer wi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Control maximum size of baseline file cache*
+-   GP Friendly name: *Control maximum size of baseline file cache*
 -   GP name: *MSI_MaxPatchCacheSize*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1624,7 +1624,7 @@ If you disable or do not configure this policy setting, embedded UI is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent embedded UI*
+-   GP Friendly name: *Prevent embedded UI*
 -   GP name: *MsiDisableEmbeddedUI*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1696,7 +1696,7 @@ This policy setting is designed for enterprises that use Web-based tools to dist
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent Internet Explorer security prompt for Windows Installer scripts*
+-   GP Friendly name: *Prevent Internet Explorer security prompt for Windows Installer scripts*
 -   GP name: *SafeForScripting*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1772,7 +1772,7 @@ To exclude a file source, omit or delete the letter representing that source typ
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify the order in which Windows Installer searches for installation files*
+-   GP Friendly name: *Specify the order in which Windows Installer searches for installation files*
 -   GP name: *SearchOrder*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -1850,7 +1850,7 @@ If you do not configure this policy setting on Windows 2000 Professional, Window
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Save copies of transform files in a secure location on workstation*
+-   GP Friendly name: *Save copies of transform files in a secure location on workstation*
 -   GP name: *TransformsSecure*
 -   GP path: *Windows Components\Windows Installer*
 -   GP ADMX file name: *MSI.admx*

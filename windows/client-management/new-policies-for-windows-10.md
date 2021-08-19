@@ -481,7 +481,7 @@ For a spreadsheet of Group Policy settings included in Windows 10 and Windows Se
 ## New MDM policies
 
 
-Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile includes settings from Windows Phone 8.1, plus new or enhanced settings for Windows 10, such as:
+Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education includes settings from Windows Phone 8.1, plus new or enhanced settings for Windows 10, such as:
 
 -   Defender (Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education only)
 

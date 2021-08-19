@@ -112,7 +112,7 @@ If this policy setting is disabled or is not configured, the cost of 4G connecti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set 4G Cost*
+-   GP Friendly name: *Set 4G Cost*
 -   GP name: *SetCost4G*
 -   GP path: *Network/WWAN Service/WWAN Media Cost*
 -   GP ADMX file name: *wwansvc.admx*

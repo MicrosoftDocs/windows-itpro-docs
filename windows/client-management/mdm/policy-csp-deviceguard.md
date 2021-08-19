@@ -95,7 +95,7 @@ For more information about System Guard, see [Introducing Windows Defender Syste
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *SystemGuardDrop*
 -   GP path: *System/Device Guard*
@@ -164,7 +164,7 @@ Added in Windows 10, version 1709. Turns on virtualization based security(VBS) a
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP path: *System/Device Guard*
 -   GP ADMX file name: *DeviceGuard.admx*
@@ -230,7 +230,7 @@ Added in Windows 10, version 1709. This setting lets users turn on Credential Gu
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *CredentialIsolationDrop*
 -   GP path: *System/Device Guard*
@@ -298,7 +298,7 @@ Added in Windows 10, version 1709. Specifies the platform security level at the 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *RequirePlatformSecurityFeaturesDrop*
 -   GP path: *System/Device Guard*

@@ -100,7 +100,7 @@ If you don't configure this policy setting on a workgroup device, a user on a Co
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow users to select when a password is required when resuming from connected standby*
+-   GP Friendly name: *Allow users to select when a password is required when resuming from connected standby*
 -   GP name: *AllowDomainDelayLock*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *CredentialProviders.admx*
@@ -172,7 +172,7 @@ If you disable or do not configure this policy setting, the system picks the def
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Assign a default credential provider*
+-   GP Friendly name: *Assign a default credential provider*
 -   GP name: *DefaultCredentialProvider*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *CredentialProviders.admx*
@@ -245,7 +245,7 @@ If you disable or do not configure this policy, all installed and otherwise enab
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Exclude credential providers*
+-   GP Friendly name: *Exclude credential providers*
 -   GP name: *ExcludedCredentialProviders*
 -   GP path: *System\Logon*
 -   GP ADMX file name: *CredentialProviders.admx*
