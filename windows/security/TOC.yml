@@ -5,44 +5,44 @@
 - name: Windows security foundations
   items: 
     - name: FIPS 140-2 Validation
-      href: /windows/security/threat-protection/fips-140-validation.md
+      href: threat-protection/fips-140-validation.md
     - name: Common Criteria Certifications
-      href: /windows/security/threat-protection/windows-platform-common-criteria.md
+      href: threat-protection/windows-platform-common-criteria.md
 - name: Windows hardware security
   items: 
     - name: Trusted Platform Module
-      href: /windows/security/information-protection/tpm/trusted-platform-module-top-node.md
+      href: information-protection/tpm/trusted-platform-module-top-node.md
       items: 
         - name: Trusted Platform Module Overview
-          href: /windows/security/information-protection/tpm/trusted-platform-module-overview.md
+          href: information-protection/tpm/trusted-platform-module-overview.md
         - name: TPM fundamentals
-          href: /windows/security/information-protection/tpm/tpm-fundamentals.md
+          href: information-protection/tpm/tpm-fundamentals.md
         - name: How Windows 10 uses the TPM
-          href: /windows/security/information-protection/tpm/how-windows-uses-the-tpm.md
+          href: information-protection/tpm/how-windows-uses-the-tpm.md
         - name: TPM Group Policy settings
-          href: /windows/security/information-protection/tpm/trusted-platform-module-services-group-policy-settings.md
+          href: information-protection/tpm/trusted-platform-module-services-group-policy-settings.md
         - name: Back up the TPM recovery information to AD DS
-          href: /windows/security/information-protection/tpm/backup-tpm-recovery-information-to-ad-ds.md
+          href: information-protection/tpm/backup-tpm-recovery-information-to-ad-ds.md
         - name: View status, clear, or troubleshoot the TPM
-          href: /windows/security/information-protection/tpm/initialize-and-configure-ownership-of-the-tpm.md
+          href: information-protection/tpm/initialize-and-configure-ownership-of-the-tpm.md
         - name: Understanding PCR banks on TPM 2.0 devices
-          href: /windows/security/information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices.md
+          href: information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices.md
         - name: TPM recommendations
-          href: /windows/security/information-protection/tpm/tpm-recommendations.md
+          href: information-protection/tpm/tpm-recommendations.md
     - name: Protect derived domain credentials with Windows Defender Credential Guard
-      href: /windows/security/identity-protection/credential-guard/credential-guard.md
+      href: identity-protection/credential-guard/credential-guard.md
     - name: Kernel DMA Protection
-      href: /windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md
+      href: information-protection/kernel-dma-protection-for-thunderbolt.md
 - name: Windows operating system security
   items: 
    - name: system security
      items:
      - name: Secure the Windows 10 boot process
-       href: /windows/security/information-protection/secure-the-windows-10-boot-process.md
+       href: information-protection/secure-the-windows-10-boot-process.md
    - name: Encryption and data protection
      items:
      - name: Bitlocker 
-       href: /windows/security/information-protection/bitlocker/bitlocker-overview.md
+       href: information-protection/bitlocker/bitlocker-overview.md
    - name: Network security
      items:
      - name: VPN 
