@@ -46,9 +46,9 @@ This guide provides end-to-end instructions to install and configure Microsoft E
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
-||||
-|--- |--- |--- |
+
 |Topic|Description|Time|
+|--- |--- |--- |
 |[Install prerequisites](#install-prerequisites)|Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.|60 minutes|
 |[Install Microsoft Endpoint Configuration Manager](#install-microsoft-endpoint-configuration-manager)|Download Microsoft Endpoint Configuration Manager, configure prerequisites, and install the package.|45 minutes|
 |[Download MDOP and install DaRT](#download-mdop-and-install-dart)|Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.|15 minutes|
