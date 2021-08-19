@@ -41,8 +41,82 @@
        href: information-protection/secure-the-windows-10-boot-process.md
    - name: Encryption and data protection
      items:
+     - name: Encrypted Hard Drive
+       href: encrypted-hard-drive.md
      - name: Bitlocker 
        href: information-protection/bitlocker/bitlocker-overview.md
+       items: 
+        - name: Overview of BitLocker Device Encryption in Windows 10
+          href: information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10.md
+        - name: BitLocker frequently asked questions (FAQ)
+          href: information-protection/bitlocker/bitlocker-frequently-asked-questions.yml
+          items: 
+            - name: Overview and requirements
+              href: information-protection/bitlocker/bitlocker-overview-and-requirements-faq.yml
+            - name: Upgrading
+              href: information-protection/bitlocker/bitlocker-upgrading-faq.yml
+            - name: Deployment and administration
+              href: information-protection/bitlocker/bitlocker-deployment-and-administration-faq.yml
+            - name: Key management
+              href: information-protection/bitlocker/bitlocker-key-management-faq.yml
+            - name: BitLocker To Go
+              href: information-protection/bitlocker/bitlocker-to-go-faq.yml
+            - name: Active Directory Domain Services
+              href: information-protection/bitlocker/bitlocker-and-adds-faq.yml
+            - name: Security
+              href: information-protection/bitlocker/bitlocker-security-faq.yml
+            - name: BitLocker Network Unlock
+              href: information-protection/bitlocker/bitlocker-network-unlock-faq.yml
+            - name: General
+              href: information-protection/bitlocker/bitlocker-using-with-other-programs-faq.yml
+        - name: "Prepare your organization for BitLocker: Planning and policies"
+          href: information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md
+        - name: BitLocker deployment comparison
+          href: information-protection/bitlocker/bitlocker-deployment-comparison.md
+        - name: BitLocker basic deployment
+          href: information-protection/bitlocker/bitlocker-basic-deployment.md
+        - name: Deploy BitLocker on Windows Server 2012 and later
+          href: information-protection/bitlocker/bitlocker-how-to-deploy-on-windows-server.md
+        - name: BitLocker management for enterprises
+          href: information-protection/bitlocker/bitlocker-management-for-enterprises.md
+        - name: Enable Network Unlock with BitLocker
+          href: information-protection/bitlocker/bitlocker-how-to-enable-network-unlock.md
+        - name: Use BitLocker Drive Encryption Tools to manage BitLocker
+          href: information-protection/bitlocker/bitlocker-use-bitlocker-drive-encryption-tools-to-manage-bitlocker.md
+        - name: Use BitLocker Recovery Password Viewer
+          href: information-protection/bitlocker/bitlocker-use-bitlocker-recovery-password-viewer.md
+        - name: BitLocker Group Policy settings
+          href: information-protection/bitlocker/bitlocker-group-policy-settings.md
+        - name: BCD settings and BitLocker
+          href: information-protection/bitlocker/bcd-settings-and-bitlocker.md
+        - name: BitLocker Recovery Guide
+          href: information-protection/bitlocker/bitlocker-recovery-guide-plan.md
+        - name: BitLocker Countermeasures
+          href: information-protection/bitlocker/bitlocker-countermeasures.md
+        - name: Protecting cluster shared volumes and storage area networks with BitLocker
+          href: information-protection/bitlocker/protecting-cluster-shared-volumes-and-storage-area-networks-with-bitlocker.md
+        - name: Troubleshoot BitLocker
+          items: 
+            - name: Troubleshoot BitLocker
+              href: information-protection/bitlocker/troubleshoot-bitlocker.md
+            - name: "BitLocker cannot encrypt a drive: known issues"
+              href: information-protection/bitlocker/ts-bitlocker-cannot-encrypt-issues.md
+            - name: "Enforcing BitLocker policies by using Intune: known issues"
+              href: information-protection/bitlocker/ts-bitlocker-intune-issues.md
+            - name: "BitLocker Network Unlock: known issues"
+              href: information-protection/bitlocker/ts-bitlocker-network-unlock-issues.md
+            - name: "BitLocker recovery: known issues"
+              href: information-protection/bitlocker/ts-bitlocker-recovery-issues.md
+            - name: "BitLocker configuration: known issues"
+              href: information-protection/bitlocker/ts-bitlocker-config-issues.md
+            - name: Troubleshoot BitLocker and TPM issues
+              items: 
+                - name: "BitLocker cannot encrypt a drive: known TPM issues"
+                  href: information-protection/bitlocker/ts-bitlocker-cannot-encrypt-tpm-issues.md
+                - name: "BitLocker and TPM: other known issues"
+                  href: information-protection/bitlocker/ts-bitlocker-tpm-issues.md
+                - name: Decode Measured Boot logs to track PCR changes
+                  href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
    - name: Network security
      items:
      - name: VPN 
