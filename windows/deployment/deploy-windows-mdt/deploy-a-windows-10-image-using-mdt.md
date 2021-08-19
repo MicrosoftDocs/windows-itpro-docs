@@ -145,8 +145,8 @@ When you configure your MDT Build Lab deployment share, you can also add applica
 
 On **MDT01**:
 
-1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC1902120058_en_US.exe) to **D:\\setup\\adobe** on MDT01.
-2. Extract the .exe file that you downloaded to an .msi (ex: .\AcroRdrDC1902120058_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
+1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2100520060_en_US.exe) to **D:\\setup\\adobe** on MDT01.
+2. Extract the .exe file that you downloaded to an .msi (ex: .\AcroRdrDC2100520060_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
 3. In the Deployment Workbench, expand the **MDT Production** node and navigate to the **Applications** node.
 4. Right-click the **Applications** node, and create a new folder named **Adobe**.
 
@@ -316,7 +316,7 @@ On **MDT01**:
 
 ### For the HP EliteBook 8560w
 
-For the HP EliteBook 8560w, you use HP SoftPaq Download Manager to get the drivers. The HP SoftPaq Download Manager can be accessed on the [HP Support site](https://go.microsoft.com/fwlink/p/?LinkId=619545).
+For the HP EliteBook 8560w, you use HP Image Assistant to get the drivers. The HP Image Assistant can be accessed on the [HP Support site](https://ftp.ext.hp.com/pub/caps-softpaq/cmit/HPIA.html).
 
 In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w** folder.
 

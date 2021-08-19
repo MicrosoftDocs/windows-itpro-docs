@@ -164,7 +164,7 @@ If you do not configure this policy setting, users control this setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow network connectivity during connected-standby (plugged in)*
+-   GP Friendly name: *Allow network connectivity during connected-standby (plugged in)*
 -   GP name: *ACConnectivityInStandby_2*
 -   GP path: *System\Power Management\Sleep Settings*
 -   GP ADMX file name: *Power.admx*
@@ -233,7 +233,7 @@ If you disable or do not configure this policy setting, users control this setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on the ability for applications to prevent sleep transitions (plugged in)*
+-   GP Friendly name: *Turn on the ability for applications to prevent sleep transitions (plugged in)*
 -   GP name: *ACCriticalSleepTransitionsDisable_2*
 -   GP path: *System\Power Management\Sleep Settings*
 -   GP ADMX file name: *Power.admx*
@@ -306,7 +306,7 @@ If you disable this policy or do not configure this policy setting, users contro
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Select the Start menu Power button action (plugged in)*
+-   GP Friendly name: *Select the Start menu Power button action (plugged in)*
 -   GP name: *ACStartMenuButtonAction_2*
 -   GP path: *System\Power Management\Button Settings*
 -   GP ADMX file name: *Power.admx*
@@ -375,7 +375,7 @@ If you disable or do not configure this policy setting, applications, services, 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow applications to prevent automatic sleep (plugged in)*
+-   GP Friendly name: *Allow applications to prevent automatic sleep (plugged in)*
 -   GP name: *AllowSystemPowerRequestAC*
 -   GP path: *System\Power Management\Sleep Settings*
 -   GP ADMX file name: *Power.admx*
@@ -444,7 +444,7 @@ If you disable or do not configure this policy setting, applications, services, 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow applications to prevent automatic sleep (on battery)*
+-   GP Friendly name: *Allow applications to prevent automatic sleep (on battery)*
 -   GP name: *AllowSystemPowerRequestDC*
 -   GP path: *System\Power Management\Sleep Settings*
 -   GP ADMX file name: *Power.admx*
@@ -513,7 +513,7 @@ If you disable or do not configure this policy setting, the computer does not au
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow automatic sleep with Open Network Files (plugged in)*
+-   GP Friendly name: *Allow automatic sleep with Open Network Files (plugged in)*
 -   GP name: *AllowSystemSleepWithRemoteFilesOpenAC*
 -   GP path: *System\Power Management\Sleep Settings*
 -   GP ADMX file name: *Power.admx*
@@ -582,7 +582,7 @@ If you disable or do not configure this policy setting, the computer does not au
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow automatic sleep with Open Network Files (on battery)*
+-   GP Friendly name: *Allow automatic sleep with Open Network Files (on battery)*
 -   GP name: *AllowSystemSleepWithRemoteFilesOpenDC*
 -   GP path: *System\Power Management\Sleep Settings*
 -   GP ADMX file name: *Power.admx*
@@ -651,7 +651,7 @@ If you disable or do not configure this policy setting, users can see and change
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify a custom active power plan*
+-   GP Friendly name: *Specify a custom active power plan*
 -   GP name: *CustomActiveSchemeOverride_2*
 -   GP path: *System\Power Management*
 -   GP ADMX file name: *Power.admx*
@@ -725,7 +725,7 @@ If you disable or do not configure this policy setting, users control this setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Critical battery notification action*
+-   GP Friendly name: *Critical battery notification action*
 -   GP name: *DCBatteryDischargeAction0_2*
 -   GP path: *System\Power Management\Notification Settings*
 -   GP ADMX file name: *Power.admx*
@@ -799,7 +799,7 @@ If you disable or do not configure this policy setting, users control this setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Low battery notification action*
+-   GP Friendly name: *Low battery notification action*
 -   GP name: *DCBatteryDischargeAction1_2*
 -   GP path: *System\Power Management\Notification Settings*
 -   GP ADMX file name: *Power.admx*
@@ -870,7 +870,7 @@ If you disable this policy setting or do not configure it, users control this se
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Critical battery notification level*
+-   GP Friendly name: *Critical battery notification level*
 -   GP name: *DCBatteryDischargeLevel0_2*
 -   GP path: *System\Power Management\Notification Settings*
 -   GP ADMX file name: *Power.admx*
@@ -943,7 +943,7 @@ If you disable or do not configure this policy setting, users can control this s
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off low battery user notification*
+-   GP Friendly name: *Turn off low battery user notification*
 -   GP name: *DCBatteryDischargeLevel1UINotification_2*
 -   GP path: *System\Power Management\Notification Settings*
 -   GP ADMX file name: *Power.admx*
@@ -1014,7 +1014,7 @@ If you disable this policy setting or do not configure it, users control this se
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Low battery notification level*
+-   GP Friendly name: *Low battery notification level*
 -   GP name: *DCBatteryDischargeLevel1_2*
 -   GP path: *System\Power Management\Notification Settings*
 -   GP ADMX file name: *Power.admx*
@@ -1085,7 +1085,7 @@ If you do not configure this policy setting, users control this setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow network connectivity during connected-standby (on battery)*
+-   GP Friendly name: *Allow network connectivity during connected-standby (on battery)*
 -   GP name: *DCConnectivityInStandby_2*
 -   GP path: *System\Power Management\Sleep Settings*
 -   GP ADMX file name: *Power.admx*
@@ -1154,7 +1154,7 @@ If you disable or do not configure this policy setting, users control this setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on the ability for applications to prevent sleep transitions (on battery)*
+-   GP Friendly name: *Turn on the ability for applications to prevent sleep transitions (on battery)*
 -   GP name: *DCCriticalSleepTransitionsDisable_2*
 -   GP path: *System\Power Management\Sleep Settings*
 -   GP ADMX file name: *Power.admx*
@@ -1227,7 +1227,7 @@ If you disable this policy or do not configure this policy setting, users contro
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Select the Start menu Power button action (on battery)*
+-   GP Friendly name: *Select the Start menu Power button action (on battery)*
 -   GP name: *DCStartMenuButtonAction_2*
 -   GP path: *System\Power Management\Button Settings*
 -   GP ADMX file name: *Power.admx*
@@ -1296,7 +1296,7 @@ If you disable or do not configure this policy setting, users can see and change
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn Off the hard disk (plugged in)*
+-   GP Friendly name: *Turn Off the hard disk (plugged in)*
 -   GP name: *DiskACPowerDownTimeOut_2*
 -   GP path: *System\Power Management\Hard Disk Settings*
 -   GP ADMX file name: *Power.admx*
@@ -1365,7 +1365,7 @@ If you disable or do not configure this policy setting, users can see and change
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn Off the hard disk (on battery)*
+-   GP Friendly name: *Turn Off the hard disk (on battery)*
 -   GP name: *DiskDCPowerDownTimeOut_2*
 -   GP path: *System\Power Management\Hard Disk Settings*
 -   GP ADMX file name: *Power.admx*
@@ -1440,7 +1440,7 @@ If you disable or do not configure this policy setting, the computer system safe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not turn off system power after a Windows system shutdown has occurred.*
+-   GP Friendly name: *Do not turn off system power after a Windows system shutdown has occurred.*
 -   GP name: *Dont_PowerOff_AfterShutdown*
 -   GP path: *System*
 -   GP ADMX file name: *Power.admx*
@@ -1511,7 +1511,7 @@ If you disable or do not configure this policy setting, users control this setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on desktop background slideshow (plugged in)*
+-   GP Friendly name: *Turn on desktop background slideshow (plugged in)*
 -   GP name: *EnableDesktopSlideShowAC*
 -   GP path: *System\Power Management\Video and Display Settings*
 -   GP ADMX file name: *Power.admx*
@@ -1582,7 +1582,7 @@ If you disable or do not configure this policy setting, users control this setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on desktop background slideshow (on battery)*
+-   GP Friendly name: *Turn on desktop background slideshow (on battery)*
 -   GP name: *EnableDesktopSlideShowDC*
 -   GP path: *System\Power Management\Video and Display Settings*
 -   GP ADMX file name: *Power.admx*
@@ -1651,7 +1651,7 @@ If you disable or do not configure this policy setting, users control this setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Select an active power plan*
+-   GP Friendly name: *Select an active power plan*
 -   GP name: *InboxActiveSchemeOverride_2*
 -   GP path: *System\Power Management*
 -   GP ADMX file name: *Power.admx*
@@ -1720,7 +1720,7 @@ If you disable or do not configure this policy setting, users control if their c
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prompt for password on resume from hibernate/suspend*
+-   GP Friendly name: *Prompt for password on resume from hibernate/suspend*
 -   GP name: *PW_PromptPasswordOnResume*
 -   GP path: *System\Power Management*
 -   GP ADMX file name: *Power.admx*
@@ -1789,7 +1789,7 @@ If you disable or do not configure this policy setting, users control this setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Power Throttling*
+-   GP Friendly name: *Turn off Power Throttling*
 -   GP name: *PowerThrottlingTurnOff*
 -   GP path: *System\Power Management\Power Throttling Settings*
 -   GP ADMX file name: *Power.admx*
@@ -1858,7 +1858,7 @@ If you disable or do not configure this policy setting, users can see and change
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Reserve battery notification level*
+-   GP Friendly name: *Reserve battery notification level*
 -   GP name: *ReserveBatteryNotificationLevel*
 -   GP path: *System\Power Management\Notification Settings*
 -   GP ADMX file name: *Power.admx*

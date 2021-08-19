@@ -131,7 +131,7 @@ If you disable or do not configure (by default) this policy setting, delegation 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow delegating default credentials with NTLM-only server authentication*
+-   GP Friendly name: *Allow delegating default credentials with NTLM-only server authentication*
 -   GP name: *AllowDefCredentialsWhenNTLMOnly*
 -   GP path: *System\Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*
@@ -216,7 +216,7 @@ https://go.microsoft.com/fwlink/?LinkId=301508
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow delegating default credentials*
+-   GP Friendly name: *Allow delegating default credentials*
 -   GP name: *AllowDefaultCredentials*
 -   GP path: *System\Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*
@@ -296,7 +296,7 @@ For more information about the vulnerability and servicing requirements for prot
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Encryption Oracle Remediation*
+-  GP Friendly name: *Encryption Oracle Remediation*
 -   GP name: *AllowEncryptionOracle*
 -   GP path: *System\Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*
@@ -378,7 +378,7 @@ If you disable this policy setting, delegation of fresh credentials is not permi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow delegating fresh credentials*
+-   GP Friendly name: *Allow delegating fresh credentials*
 -   GP name: *AllowFreshCredentials*
 -   GP path: *System\Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*
@@ -460,7 +460,7 @@ If you disable this policy setting, delegation of fresh credentials is not permi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow delegating fresh credentials with NTLM-only server authentication*
+-   GP Friendly name: *Allow delegating fresh credentials with NTLM-only server authentication*
 -   GP name: *AllowFreshCredentialsWhenNTLMOnly*
 -   GP path: *System\Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*
@@ -542,7 +542,7 @@ If you disable this policy setting, delegation of saved credentials is not permi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow delegating saved credentials*
+-   GP Friendly name: *Allow delegating saved credentials*
 -   GP name: *AllowSavedCredentials*
 -   GP path: *System\Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*
@@ -624,7 +624,7 @@ If you disable this policy setting, delegation of saved credentials is not permi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow delegating saved credentials with NTLM-only server authentication*
+-   GP Friendly name: *Allow delegating saved credentials with NTLM-only server authentication*
 -   GP name: *AllowSavedCredentialsWhenNTLMOnly*
 -   GP path: *System\Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*
@@ -704,7 +704,7 @@ This policy setting can be used in combination with the "Allow delegating defaul
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Deny delegating default credentials*
+-   GP Friendly name: *Deny delegating default credentials*
 -   GP name: *DenyDefaultCredentials*
 -   GP path: *System\Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*
@@ -784,7 +784,7 @@ This policy setting can be used in combination with the "Allow delegating fresh 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Deny delegating fresh credentials*
+-   GP Friendly name: *Deny delegating fresh credentials*
 -   GP name: *DenyFreshCredentials*
 -   GP path: *System\Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*
@@ -864,7 +864,7 @@ This policy setting can be used in combination with the "Allow delegating saved 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Deny delegating saved credentials*
+-   GP Friendly name: *Deny delegating saved credentials*
 -   GP name: *DenySavedCredentials*
 -   GP path: *System\Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*
@@ -945,7 +945,7 @@ If you disable or do not configure this policy setting, Restricted Admin and Rem
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict delegation of credentials to remote servers*
+-   GP Friendly name: *Restrict delegation of credentials to remote servers*
 -   GP name: *RestrictedRemoteAdministration*
 -   GP path: *System\Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*

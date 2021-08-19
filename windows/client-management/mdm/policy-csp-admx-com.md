@@ -98,7 +98,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Download missing COM components*
+-   GP Friendly name: *Download missing COM components*
 -   GP name: *AppMgmt_COM_SearchForCLSID_1*
 -   GP path: *System*
 -   GP ADMX file name: *COM.admx*
@@ -173,7 +173,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Download missing COM components*
+-   GP Friendly name: *Download missing COM components*
 -   GP name: *AppMgmt_COM_SearchForCLSID_2*
 -   GP path: *System*
 -   GP ADMX file name: *COM.admx*
