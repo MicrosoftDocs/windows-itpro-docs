@@ -117,6 +117,8 @@
                   href: information-protection/bitlocker/ts-bitlocker-tpm-issues.md
                 - name: Decode Measured Boot logs to track PCR changes
                   href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
+     - name: Configure S/MIME for Windows 10
+       href: configure-s-mime.md     
      - name: Windows Information Protection (WIP)
        href: information-protection/windows-information-protection/protect-enterprise-data-using-wip.md
        items: 
@@ -166,8 +168,31 @@
           href: information-protection/windows-information-protection/wip-learning.md
    - name: Network security
      items:
-     - name: VPN 
+     - name: VPN technical guide
        href: identity-protection/vpn/vpn-guide.md
+       items: 
+        - name: VPN connection types
+          href: identity-protection/vpn/vpn-connection-type.md
+        - name: VPN routing decisions
+          href: identity-protection/vpn/vpn-routing.md
+        - name: VPN authentication options
+          href: identity-protection/vpn/vpn-authentication.md
+        - name: VPN and conditional access
+          href: identity-protection/vpn/vpn-conditional-access.md
+        - name: VPN name resolution
+          href: identity-protection/vpn/vpn-name-resolution.md
+        - name: VPN auto-triggered profile options
+          href: identity-protection/vpn/vpn-auto-trigger-profile.md
+        - name: VPN security features
+          href: identity-protection/vpn/vpn-security-features.md
+        - name: VPN profile options
+          href: identity-protection/vpn/vpn-profile-options.md
+        - name: How to configure Diffie Hellman protocol over IKEv2 VPN connections
+          href: identity-protection/vpn/how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections.md
+        - name: How to use single sign-on (SSO) over VPN and Wi-Fi connections
+          href: identity-protection/vpn/how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md
+        - name: Optimizing Office 365 traffic with the Windows 10 VPN client
+          href: identity-protection/vpn/vpn-office-365-optimization.md
      - name: Windows Defender Firewall
        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
 - name: Threat protection
@@ -178,6 +203,108 @@
   items:
 - name: User protection
   items:
+    - name: Technical support policy for lost or forgotten passwords
+      href: identity-protection/password-support-policy.md
+    - name: Access Control Overview
+      href: identity-protection/access-control/access-control.md
+      items: 
+        - name: Dynamic Access Control Overview
+          href: identity-protection/access-control/dynamic-access-control.md
+        - name: Security identifiers
+          href: identity-protection/access-control/security-identifiers.md
+        - name: Security Principals
+          href: identity-protection/access-control/security-principals.md
+        - name: Local Accounts
+          href: identity-protection/access-control/local-accounts.md
+        - name: Active Directory Accounts
+          href: identity-protection/access-control/active-directory-accounts.md
+        - name: Microsoft Accounts
+          href: identity-protection/access-control/microsoft-accounts.md
+        - name: Service Accounts
+          href: identity-protection/access-control/service-accounts.md
+        - name: Active Directory Security Groups
+          href: identity-protection/access-control/active-directory-security-groups.md
+        - name: Special Identities
+          href: identity-protection/access-control/special-identities.md
+        - name: User Account Control
+          href: identity-protection/user-account-control/user-account-control-overview.md
+          items: 
+            - name: How User Account Control works
+              href: identity-protection/user-account-control/how-user-account-control-works.md
+            - name: User Account Control security policy settings
+              href: identity-protection/user-account-control/user-account-control-security-policy-settings.md
+            - name: User Account Control Group Policy and registry key settings
+              href: identity-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings.md
+    - name: Windows Hello for Business
+      href: identity-protection/hello-for-business/index.yml
+    - name: Windows credential theft mitigation guide
+      href: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
+    - name: Enterprise Certificate Pinning
+      href: identity-protection/enterprise-certificate-pinning.md
+    - name: Protect derived domain credentials with Credential Guard
+      href: identity-protection/credential-guard/credential-guard.md
+      items: 
+        - name: How Credential Guard works
+          href: identity-protection/credential-guard/credential-guard-how-it-works.md
+        - name: Credential Guard Requirements
+          href: identity-protection/credential-guard/credential-guard-requirements.md
+        - name: Manage Credential Guard
+          href: identity-protection/credential-guard/credential-guard-manage.md
+        - name: Hardware readiness tool
+          href: identity-protection/credential-guard/dg-readiness-tool.md
+        - name: Credential Guard protection limits
+          href: identity-protection/credential-guard/credential-guard-protection-limits.md
+        - name: Considerations when using Credential Guard
+          href: identity-protection/credential-guard/credential-guard-considerations.md
+        - name: "Credential Guard: Additional mitigations"
+          href: identity-protection/credential-guard/additional-mitigations.md
+        - name: "Credential Guard: Known issues"
+          href: identity-protection/credential-guard/credential-guard-known-issues.md
+    - name: Protect Remote Desktop credentials with Remote Credential Guard
+      href: identity-protection/remote-credential-guard.md
+    - name: Smart Cards
+      href: identity-protection/smart-cards/smart-card-windows-smart-card-technical-reference.md
+      items: 
+        - name: How Smart Card Sign-in Works in Windows
+          href: identity-protection/smart-cards/smart-card-how-smart-card-sign-in-works-in-windows.md
+          items: 
+            - name: Smart Card Architecture
+              href: identity-protection/smart-cards/smart-card-architecture.md
+            - name: Certificate Requirements and Enumeration
+              href: identity-protection/smart-cards/smart-card-certificate-requirements-and-enumeration.md
+            - name: Smart Card and Remote Desktop Services
+              href: identity-protection/smart-cards/smart-card-and-remote-desktop-services.md
+            - name: Smart Cards for Windows Service
+              href: identity-protection/smart-cards/smart-card-smart-cards-for-windows-service.md
+            - name: Certificate Propagation Service
+              href: identity-protection/smart-cards/smart-card-certificate-propagation-service.md
+            - name: Smart Card Removal Policy Service
+              href: identity-protection/smart-cards/smart-card-removal-policy-service.md
+        - name: Smart Card Tools and Settings
+          href: identity-protection/smart-cards/smart-card-tools-and-settings.md
+          items: 
+            - name: Smart Cards Debugging Information
+              href: identity-protection/smart-cards/smart-card-debugging-information.md
+            - name: Smart Card Group Policy and Registry Settings
+              href: identity-protection/smart-cards/smart-card-group-policy-and-registry-settings.md
+            - name: Smart Card Events
+              href: identity-protection/smart-cards/smart-card-events.md
+        - name: Virtual Smart Cards
+          href: identity-protection/virtual-smart-cards/virtual-smart-card-overview.md
+          items: 
+            - name: Understanding and Evaluating Virtual Smart Cards
+              href: identity-protection/virtual-smart-cards/virtual-smart-card-understanding-and-evaluating.md
+              items: 
+                - name: "Get Started with Virtual Smart Cards: Walkthrough Guide"
+                  href: identity-protection/virtual-smart-cards/virtual-smart-card-get-started.md
+                - name: Use Virtual Smart Cards
+                  href: identity-protection/virtual-smart-cards/virtual-smart-card-use-virtual-smart-cards.md
+                - name: Deploy Virtual Smart Cards
+                  href: identity-protection/virtual-smart-cards/virtual-smart-card-deploy-virtual-smart-cards.md
+                - name: Evaluate Virtual Smart Card Security
+                  href: identity-protection/virtual-smart-cards/virtual-smart-card-evaluate-security.md
+            - name: Tpmvscmgr
+              href: identity-protection/virtual-smart-cards/virtual-smart-card-tpmvscmgr.md
 - name: Privacy controls
   items:
   - name: Windows Privacy controls
