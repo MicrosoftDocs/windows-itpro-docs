@@ -82,6 +82,7 @@ For errors listed in this table, contact Microsoft Support for assistance.
 |-------------|---------|
 | 0X80072F0C  | Unknown |
 | 0x80070057  | Invalid parameter or argument is passed. |
+| 0x80090010  | NTE_PERM |
 | 0x80090020  | NTE\_FAIL |
 | 0x80090027  | Caller provided a wrong parameter. If third-party code receives this error, they must change their code. |
 | 0x8009002D  | NTE\_INTERNAL\_ERROR |

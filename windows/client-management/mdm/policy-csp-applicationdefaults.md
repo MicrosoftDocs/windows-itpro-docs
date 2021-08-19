@@ -84,7 +84,7 @@ If policy is enabled and the client machine is Azure Active Directory joined, th
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Set a default associations configuration file*
+-   GP Friendly name: *Set a default associations configuration file*
 -   GP name: *DefaultAssociationsConfiguration*
 -   GP element: *DefaultAssociationsConfiguration_TextBox*
 -   GP path: *File Explorer*
@@ -204,7 +204,7 @@ If you do not configure this policy setting, the default behavior depends on the
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure web-to-app linking with app URI handlers*
+-   GP Friendly name: *Configure web-to-app linking with app URI handlers*
 -   GP name: *EnableAppUriHandlers*
 -   GP path: *System/Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*

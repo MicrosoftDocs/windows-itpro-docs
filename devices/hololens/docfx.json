@@ -30,6 +30,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/hololens/breadcrumb/toc.json",
       "ms.technology": "windows",
       "ms.topic": "article",

@@ -1,5 +1,5 @@
 ---
-title: Update Windows 10 media with Dynamic Update
+title: Update Windows installation media with Dynamic Update
 description: Learn how to deploy feature updates to your mission critical devices
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -14,17 +14,17 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# Update Windows 10 media with Dynamic Update
+# Update Windows installation media with Dynamic Update
 
-**Applies to**: Windows 10
+**Applies to**: Windows 10, Windows 11
 
-This topic explains how to acquire and apply Dynamic Update packages to existing Windows 10 images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.
+This topic explains how to acquire and apply Dynamic Update packages to existing Windows images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.
 
-Volume-licensed media is available for each release of Windows 10 in the Volume Licensing Service Center (VLSC) and other relevant channels such as Windows Update for Business, Windows Server Update Services (WSUS), and Visual Studio Subscriptions. You can use Dynamic Update to ensure that Windows 10 devices have the latest feature update packages as part of an in-place upgrade while preserving language pack and Features on Demand (FODs) that might have been previously installed. Dynamic Update also eliminates the need to install a separate quality update as part of the in-place upgrade process.
+Volume-licensed media is available for each release of Windows in the Volume Licensing Service Center (VLSC) and other relevant channels such as Windows Update for Business, Windows Server Update Services (WSUS), and Visual Studio Subscriptions. You can use Dynamic Update to ensure that Windows devices have the latest feature update packages as part of an in-place upgrade while preserving language pack and Features on Demand (FODs) that might have been previously installed. Dynamic Update also eliminates the need to install a separate quality update as part of the in-place upgrade process.
 
 ## Dynamic Update
 
-Whenever installation of a feature update starts (whether from media or an environment connected to Windows Update), *Dynamic Update* is one of the first steps. Windows 10 Setup contacts a Microsoft endpoint to fetch Dynamic Update packages, and then applies those updates to your operating system installation media. The update packages include the following kinds of updates:
+Whenever installation of a feature update starts (whether from media or an environment connected to Windows Update), *Dynamic Update* is one of the first steps. Windows Setup contacts a Microsoft endpoint to fetch Dynamic Update packages, and then applies those updates to your operating system installation media. The update packages include the following kinds of updates:
 
 - Updates to Setup.exe binaries or other files that Setup uses for feature updates
 - Updates for the "safe operating system" (SafeOS) that is used for the Windows recovery environment
@@ -53,14 +53,14 @@ The various Dynamic Update packages might not all be present in the results from
 
 If you want to customize the image with additional languages or Features on Demand, download supplemental media ISO files from the [Volume Licensing Service Center](https://www.microsoft.com/licensing/servicecenter/default.aspx). For example, since Dynamic Update will be disabled for your devices, and if users require specific Features on Demand, you can preinstall these into the image.
 
-## Update Windows 10 installation media
+## Update Windows installation media
 
 Properly updating the installation media involves a large number of actions operating on several different targets (image files). Some actions are repeated on different targets. The target images files include:
 
 - Windows Preinstallation Environment (WinPE): a small operating system used to install, deploy, and repair Windows operating systems
 - Windows Recovery Environment (WinRE): repairs common causes of unbootable operating systems. WinRE is based on WinPE and can be customized with additional drivers, languages, optional packages, and other troubleshooting or diagnostic tools.
-- Windows operating system: one or more editions of Windows 10 stored in \sources\install.wim
-- Windows installation media: the complete collection of files and folders in the Windows 10 installation media. For example, \sources folder, \boot folder, Setup.exe, and so on.
+- Windows operating system: one or more editions of Windows stored in \sources\install.wim
+- Windows installation media: the complete collection of files and folders in the Windows installation media. For example, \sources folder, \boot folder, Setup.exe, and so on.
 
 This table shows the correct sequence for applying the various tasks to the files. For example, the full sequence starts with adding the servicing stack update to WinRE (1) and concludes with adding the Dynamic Update for Setup to the new media (26).
 
@@ -89,7 +89,7 @@ This table shows the correct sequence for applying the various tasks to the file
 
 ### Multiple Windows editions
 
-The main operating system file (install.wim) contains multiple editions of Windows 10. It’s possible that only an update for a given edition is required to deploy it, based on the index. Or, it might be that all editions need an update. Further, ensure that languages are installed before Features on Demand, and the latest cumulative update is always applied last.
+The main operating system file (install.wim) contains multiple editions of Windows. It’s possible that only an update for a given edition is required to deploy it, based on the index. Or, it might be that all editions need an update. Further, ensure that languages are installed before Features on Demand, and the latest cumulative update is always applied last.
 
 ### Additional languages and features
 
@@ -178,8 +178,6 @@ The script assumes that only a single edition is being updated, indicated by Ind
 
 It finishes by cleaning and exporting the image to reduce the image size.
 
-> [!NOTE]
-> Skip adding the latest cumulative update to Winre.wim because it contains unnecessary components in the recovery environment. The components that are updated and applicable are contained in the safe operating system Dynamic Update package. This also helps to keep the image small.
 
 ```powershell
 # Mount the main operating system, used throughout the script
@@ -194,8 +192,33 @@ Write-Output "$(Get-TS): Mounting WinRE"
 Mount-WindowsImage -ImagePath $WORKING_PATH"\winre.wim" -Index 1 -Path $WINRE_MOUNT -ErrorAction stop | Out-Null
 
 # Add servicing stack update
+
+# Note: If you are using a combined cumulative update, there may be a prerequisite servicing stack update required
+# This is where you'd add the prerequisite SSU, before applying the latest combined cumulative update. 
+
+# Note: If you are applying a combined cumulative update to a previously updated image (e.g. an image you updated last month)
+# There is a known issue where the servicing stack update is installed, but the cumulative update will fail.
+# This error should be caught and ignored, as the last step will be to apply the cumulative update 
+# (or in this case the combined cumulative update) and thus the image will be left with the correct packages installed.
+
 Write-Output "$(Get-TS): Adding package $SSU_PATH"
-Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH -ErrorAction stop | Out-Null  
+
+try
+{
+    Add-WindowsPackage -Path $WINRE_MOUNT -PackagePath $SSU_PATH | Out-Null  
+}
+Catch
+{
+    $theError = $_
+    Write-Output "$(Get-TS): $theError"
+    
+    if ($theError.Exception -like "*0x8007007e*") {
+        Write-Output "$(Get-TS): This failure is a known issue with combined cumulative update, we can ignore."
+    }
+    else {
+        throw
+    }
+}
 
 #
 # Optional: Add the language to recovery environment
@@ -278,8 +301,33 @@ Foreach ($IMAGE in $WINPE_IMAGES) {
     Mount-WindowsImage -ImagePath $MEDIA_NEW_PATH"\sources\boot.wim" -Index $IMAGE.ImageIndex -Path $WINPE_MOUNT -ErrorAction stop | Out-Null  
 
     # Add SSU
+
+    # Note: If you are using a combined cumulative update, there may be a prerequisite servicing stack update required
+    # This is where you'd add the prerequisite SSU, before applying the latest combined cumulative update. 
+
+    # Note: If you are applying a combined cumulative update to a previously updated image (e.g. an image you updated last month)
+    # There is a known issue where the servicing stack update is installed, but the cumulative update will fail.
+    # This error should be caught and ignored, as the last step will be to apply the cumulative update 
+    # (or in this case the combined cumulative update) and thus the image will be left with the correct packages installed.
+
     Write-Output "$(Get-TS): Adding package $SSU_PATH"
-    Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $SSU_PATH -ErrorAction stop | Out-Null
+    
+    try
+    {
+        Add-WindowsPackage -Path $WINPE_MOUNT -PackagePath $SSU_PATH | Out-Null
+    }
+    Catch
+    {
+        $theError = $_
+        Write-Output "$(Get-TS): $theError"
+        
+        if ($theError.Exception -like "*0x8007007e*") {
+            Write-Output "$(Get-TS): This failure is a known issue with combined cumulative update, we can ignore."
+        }
+        else {
+            throw
+        }
+    }
 
     # Install lp.cab cab
     Write-Output "$(Get-TS): Adding package $WINPE_OC_LP_PATH"

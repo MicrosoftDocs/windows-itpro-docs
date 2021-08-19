@@ -32,7 +32,7 @@ The procedures in this guide use the following names and infrastructure.
 For the purposes of this topic, we will use three server computers: **DC01**, **MDT01**, and **HV01**.
 - All servers are running Windows Server 2019. 
     - You can use an earlier version of Windows Server with minor modifications to some procedures.
-    - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is requried to perform the procedures in this guide.
+    - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is required to perform the procedures in this guide.
 - **DC01** is a domain controller, DHCP server, and DNS server for <b>contoso.com</b>, representing the fictitious Contoso Corporation.
 - **MDT01** is a domain member server in contoso.com with a data (D:) drive that can store at least 200GB. MDT01 will host deployment shares and run the Windows Deployment Service. Optionally, MDT01 is also a WSUS server.
     - A second MDT server (**MDT02**) configured identically to MDT01 is optionally used to [build a distributed environment](build-a-distributed-environment-for-windows-10-deployment.md) for Windows 10 deployment. This server is located on a different subnet than MDT01 and has a different default gateway.
@@ -147,21 +147,9 @@ Switch to **DC01** and perform the following procedures on **DC01**:
 
 To create the OU structure, you can use the Active Directory Users and Computers console (dsa.msc), or you can use Windows PowerShell.
 
-To use Windows PowerShell, copy the following commands into a text file and save it as <b>C:\Setup\Scripts\ou.ps1</b>. Be sure that you are viewing file extensions and that you save the file with the .ps1 extension.
+Copy the following list of OU names and paths into a CSV file and save it as `~\Setup\Scripts\oulist.csv`.
 
-```powershell
-$oulist = Import-csv -Path c:\oulist.txt
-ForEach($entry in $oulist){
-    $ouname = $entry.ouname
-    $oupath = $entry.oupath
-    New-ADOrganizationalUnit -Name $ouname -Path $oupath
-    Write-Host -ForegroundColor Green "OU $ouname is created in the location $oupath"
-}
-```
-
-Next, copy the following list of OU names and paths into a text file and save it as <b>C:\Setup\Scripts\oulist.txt</b>
-
-```text
+```csv
 OUName,OUPath
 Contoso,"DC=CONTOSO,DC=COM"
 Accounts,"OU=Contoso,DC=CONTOSO,DC=COM"
@@ -175,11 +163,20 @@ Workstations,"OU=Computers,OU=Contoso,DC=CONTOSO,DC=COM"
 Security Groups,"OU=Groups,OU=Contoso,DC=CONTOSO,DC=COM"
 ```
 
-Lastly, open an elevated Windows PowerShell prompt on DC01 and run the ou.ps1 script:
+Next, copy the following commands into a file and save it as `~\Setup\Scripts\ou.ps1`. Be sure that you are viewing file extensions and that you save the file with the `.ps1` extension.
+
+```powershell
+Import-CSV -Path $home\Setup\Scripts\oulist.csv | ForEach-Object {
+    New-ADOrganizationalUnit -Name $_.ouname -Path $_.oupath
+    Write-Host -ForegroundColor Green "OU $($_.ouname) is created in the location $($_.oupath)"
+}
+```
+
+Lastly, open an elevated Windows PowerShell prompt on DC01 and run the `ou.ps1` script:
 
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
-Set-Location C:\Setup\Scripts
+Set-Location $home\Setup\Scripts
 .\ou.ps1
 ```
 
@@ -212,7 +209,7 @@ The final result of either method is shown below. The **MDT_BA** account will be
 
 When creating a reference image, you need an account for MDT. The MDT build account is used for Windows Preinstallation Environment (Windows PE) to connect to MDT01.
 
-To create an MDT build account, open an elevalted Windows PowerShell prompt on DC01 and enter the following (copy and paste the entire command, taking care to notice the scroll bar at the bottom). This command will create the MDT_BA user account and set the password to "pass@word1":
+To create an MDT build account, open an elevated Windows PowerShell prompt on DC01 and enter the following (copy and paste the entire command, taking care to notice the scroll bar at the bottom). This command will create the MDT_BA user account and set the password to "pass@word1":
 
 ```powershell
 New-ADUser -Name MDT_BA -UserPrincipalName MDT_BA -path "OU=Service Accounts,OU=Accounts,OU=Contoso,DC=CONTOSO,DC=COM" -Description "MDT Build Account" -AccountPassword (ConvertTo-SecureString "pass@word1" -AsPlainText -Force) -ChangePasswordAtLogon $false -PasswordNeverExpires $true -Enabled $true
