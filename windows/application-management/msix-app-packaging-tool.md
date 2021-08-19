@@ -12,6 +12,8 @@ ms.date: 12/03/2018
 ms.reviewer: 
 manager: dansimp
 author: greg-lindsay
+
+ROBOTS: NOINDEX
 ---
 
 # Repackage existing win32 applications to the MSIX format

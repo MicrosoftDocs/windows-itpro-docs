@@ -3,8 +3,13 @@ items:
   href: index.yml
 - name: Application management
   items: 
-    - name: Apps in Windows 10
+    - name: Apps in Windows client OS
       href: apps-in-windows-10.md
+      items:
+        - name: Provisioned apps in Windows client OS
+          href: provisioned-apps-windows-client-os.md
+        - name: System apps in Windows client OS
+          href: system-apps-windows-client-os.md
     - name: Add apps and features in Windows 10
       href: add-apps-and-features.md
     - name: Sideload apps
@@ -13,7 +18,7 @@ items:
       href: enterprise-background-activity-controls.md
     - name: Enable or block Windows Mixed Reality apps in the enterprise
       href: manage-windows-mixed-reality.md
-    - name: Repackage win32 apps in the MSIX format
+    - name: Repackage win32 apps in the MSIX format - DELETE
       href: msix-app-packaging-tool.md
 - name: Application Virtualization (App-V)
   items: 
