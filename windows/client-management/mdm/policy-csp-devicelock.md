@@ -969,7 +969,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
--   GP English name: *Minimum password age*
+-   GP Friendly name: *Minimum password age*
 -   GP path: *Windows Settings/Security Settings/Account Policies/Password Policy*
 
 <!--/DbMapped-->
@@ -1037,7 +1037,7 @@ If you enable this setting, users will no longer be able to enable or disable lo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent enabling lock screen camera*
+-   GP Friendly name: *Prevent enabling lock screen camera*
 -   GP name: *CPL_Personalization_NoLockScreenCamera*
 -   GP path: *Control Panel/Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1107,7 +1107,7 @@ If you enable this setting, users will no longer be able to modify slide show se
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent enabling lock screen slide show*
+-   GP Friendly name: *Prevent enabling lock screen slide show*
 -   GP name: *CPL_Personalization_NoLockScreenSlideshow*
 -   GP path: *Control Panel/Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
