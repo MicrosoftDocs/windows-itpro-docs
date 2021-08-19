@@ -174,7 +174,7 @@ Microsoft uses specific categories and the category definitions to classify soft
 
 * **Torrent software (Enterprise only):** Software that is used to create or download torrents or other files specifically used with peer-to-peer file-sharing technologies.
 
-* **Cryptomining software:** Software that uses your device resources to mine cryptocurrencies.
+* **Cryptomining software (Enterprise only):** Software that uses your device resources to mine cryptocurrencies.
 
 * **Bundling software:** Software that offers to install other software that is not developed by the same entity or not required for the software to run. Also, software that offers to install other software that qualifies as PUA based on the criteria outlined in this document.
 
