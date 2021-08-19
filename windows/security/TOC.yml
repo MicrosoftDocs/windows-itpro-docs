@@ -2,13 +2,13 @@
 - name: Windows security
   href: index.yml
   expanded: true
-- name: Windows security foundations
+- name: Security foundations
   items: 
     - name: FIPS 140-2 Validation
       href: threat-protection/fips-140-validation.md
     - name: Common Criteria Certifications
       href: threat-protection/windows-platform-common-criteria.md
-- name: Windows hardware security
+- name: Hardware security
   items: 
     - name: Trusted Platform Module
       href: information-protection/tpm/trusted-platform-module-top-node.md
@@ -33,9 +33,9 @@
       href: identity-protection/credential-guard/credential-guard.md
     - name: Kernel DMA Protection
       href: information-protection/kernel-dma-protection-for-thunderbolt.md
-- name: Windows operating system security
+- name: Operating system security
   items: 
-   - name: system security
+   - name: System security
      items:
      - name: Secure the Windows 10 boot process
        href: information-protection/secure-the-windows-10-boot-process.md
@@ -49,7 +49,15 @@
        href: identity-protection/vpn/vpn-guide.md
      - name: Windows Defender Firewall
        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
-- name: Windows threat protection
+- name: Threat protection
   items: 
     - name: Microsoft Defender Antivirus
       href: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows.md
+- name: Application protection
+  items:
+- name: User protection
+  items:
+- name: Privacy controls
+  items:
+  - name: Windows Privacy controls
+    href: https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance
