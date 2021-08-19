@@ -28,7 +28,7 @@ landingContent:
           - text: Common Criteria Certifications
             url: /windows/security/threat-protection/windows-platform-common-criteria.md
           - text: Microsoft Security Development Lifecycle (SDL)
-            url:  /previous-versions/windows/desktop/cc307891(v=msdn.10)
+            url: /previous-versions/windows/desktop/cc307891(v=msdn.10)
           - text: Microsoft bounty program
             url: https://www.microsoft.com/msrc/bounty
   # Card (optional)
@@ -37,8 +37,8 @@ landingContent:
       - linkListType: overview
         links:
          - name: Trusted Platform Module (TPM) overview
-           href: /windows/security/information-protection/tpm/trusted-platform-module-overview.md
+           url: /windows/security/information-protection/tpm/trusted-platform-module-overview.md
          - name: Protect derived domain credentials with Windows Defender Credential Guard
-           href: /windows/security/identity-protection/credential-guard/credential-guard.md
+           url: /windows/security/identity-protection/credential-guard/credential-guard.md
          - name: Kernel DMA Protection
-           href: /windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md
+           url: /windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md
