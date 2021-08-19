@@ -45,7 +45,7 @@ The Security Compliance Toolkit consists of:
     - Microsoft 365 Apps for enterprise, Version 2104
 
 - Microsoft Edge security baseline
-    - Version 88
+    - Version 92
     
 - Windows Update security baseline
     - Windows 10 20H2 and below (October 2020 Update)
