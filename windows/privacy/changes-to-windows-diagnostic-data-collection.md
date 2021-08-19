@@ -52,7 +52,7 @@ Starting in Windows 10, version 1903 and newer, both the **Out-of-Box-Experience
 
 In an upcoming release of Windows 10, we’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. If your devices are set to **Enhanced** when they are upgraded, the device settings will be evaluated to be at the more privacy-preserving setting of **Required diagnostic data**, which means that analytic services that leverage enhanced data collection may not work properly. For a list of services, see [Services that rely on Enhanced diagnostic data](#services-that-rely-on-enhanced-diagnostic-data). Administrators should read through the details and determine whether to apply these new policies to restore the same collection settings as they had before this change. For a list of steps, see [Configure a Windows 11 device to limit crash dumps and logs](#configure-a-windows-11-device-to-limit-crash-dumps-and-logs). For more information on services that rely on Enhanced diagnostic data, see [Services that rely on Enhanced diagnostic data](#services-that-rely-on-enhanced-diagnostic-data).
 
-Additionally, you will see the following policy changes in an upcoming release of Windows 10:
+Additionally, you will see the following policy changes in an upcoming release of Windows Holographic, version 21H1 (HoloLens 2), Windows Server 2022 and Windows 11:
 
 | Policy type | Current policy | Renamed policy |
 | --- | --- | --- |

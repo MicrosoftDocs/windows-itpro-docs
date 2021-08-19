@@ -295,7 +295,7 @@ SurfaceHub
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-currentbackgroundpath"></a>**InBoxApps/Welcome/CurrentBackgroundPath**
-<p style="margin-left: 20px">Background image for the welcome screen. To set this, specify an https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
+<p style="margin-left: 20px">Download location for image to be used as the background during user sessions and on the welcome screen. To set this, specify an https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
 
 <p style="margin-left: 20px">The data type is string. Supported operation is Get and Replace.
 
@@ -316,12 +316,12 @@ SurfaceHub
 <p style="margin-left: 20px">Invitations to collaborate from the Whiteboard app are not allowed.
 
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
-    
+
 <a href="" id="inboxapps-whiteboard-signindisabled"></a>**InBoxApps/Whiteboard/SigninDisabled**
 <p style="margin-left: 20px">Sign-ins from the Whiteboard app are not allowed.
 
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
-    
+
 <a href="" id="inboxapps-whiteboard-telemetrydisabled"></a>**InBoxApps/Whiteboard/TelemeteryDisabled**
 <p style="margin-left: 20px">Telemetry collection from the Whiteboard app is not allowed.
 
@@ -571,7 +571,7 @@ SurfaceHub
 <p style="margin-left: 20px">If this setting is true, the device account will be used for proxy authentication. If false, a separate account will be used.
 
 <p style="margin-left: 20px">The data type is boolean. Supported operation is Get and Replace.
-    
+
 <a href="" id="properties-proxyservers"></a>**Properties/ProxyServers**
 <p style="margin-left: 20px">Added in <a href="https://support.microsoft.com/topic/may-28-2019-kb4499162-os-build-15063-1839-ed6780ab-38d6-f590-d789-5ba873b1e142" data-raw-source="[KB4499162](https://support.microsoft.com/topic/may-28-2019-kb4499162-os-build-15063-1839-ed6780ab-38d6-f590-d789-5ba873b1e142)">KB4499162</a> for Windows 10, version 1703. Specifies FQDNs of proxy servers to provide device account credentials to before any user interaction (if AllowAutoProxyAuth is enabled). This is a semi-colon separated list of server names, without any additional prefixes (e.g. https://).
 
