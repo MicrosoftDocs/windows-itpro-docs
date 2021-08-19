@@ -105,7 +105,7 @@ Available in the latest Windows 10 Insider Preview Build. Compression can add to
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow compression on all NTFS volumes*
+-   GP Friendly name: *Do not allow compression on all NTFS volumes*
 -   GP name: *DisableCompression*
 -   GP path: *System/Filesystem/NTFS*
 -   GP ADMX file name: *FileSys.admx*
@@ -173,7 +173,7 @@ A value of 1 will disable delete notifications for all volumes.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable delete notifications on all volumes*
+-   GP Friendly name: *Disable delete notifications on all volumes*
 -   GP name: *DisableDeleteNotification*
 -   GP path: *System/Filesystem*
 -   GP ADMX file name: *FileSys.admx*
@@ -236,7 +236,7 @@ Available in the latest Windows 10 Insider Preview Build. Encryption can add to 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow encryption on all NTFS volumes*
+-   GP Friendly name: *Do not allow encryption on all NTFS volumes*
 -   GP name: *DisableEncryption*
 -   GP path: *System/Filesystem/NTFS*
 -   GP ADMX file name: *FileSys.admx*
@@ -299,7 +299,7 @@ Available in the latest Windows 10 Insider Preview Build. Encrypting the page fi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable NTFS pagefile encryption*
+-   GP Friendly name: *Enable NTFS pagefile encryption*
 -   GP name: *EnablePagefileEncryption*
 -   GP path: *System/Filesystem/NTFS*
 -   GP ADMX file name: *FileSys.admx*
@@ -362,7 +362,7 @@ Available in the latest Windows 10 Insider Preview Build. Enabling Win32 long pa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Win32 long paths*
+-   GP Friendly name: *Enable Win32 long paths*
 -   GP name: *LongPathsEnabled*
 -   GP path: *System/Filesystem*
 -   GP ADMX file name: *FileSys.admx*
@@ -427,7 +427,7 @@ If you enable short names on all volumes then short names will always be generat
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Short name creation options*
+-   GP Friendly name: *Short name creation options*
 -   GP name: *ShortNameCreationSettings*
 -   GP path: *System/Filesystem/NTFS*
 -   GP ADMX file name: *FileSys.admx*
@@ -501,7 +501,7 @@ For more information, refer to the Windows Help section.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Selectively allow the evaluation of a symbolic link*
+-   GP Friendly name: *Selectively allow the evaluation of a symbolic link*
 -   GP name: *SymlinkEvaluation*
 -   GP path: *System/Filesystem*
 -   GP ADMX file name: *FileSys.admx*
@@ -564,7 +564,7 @@ Available in the latest Windows 10 Insider Preview Build. TXF deprecated feature
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable / disable TXF deprecated features*
+-   GP Friendly name: *Enable / disable TXF deprecated features*
 -   GP name: *TxfDeprecatedFunctionality*
 -   GP path: *System/Filesystem/NTFS*
 -   GP ADMX file name: *FileSys.admx*
