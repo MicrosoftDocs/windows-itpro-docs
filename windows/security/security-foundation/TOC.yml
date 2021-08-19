@@ -1,9 +1,8 @@
-- name: Security
+- name: Security foundation
   href: index.yml
   items: 
-    - name: Identity and access management
-      href: identity-protection/index.md
-    - name: Information protection
-      href: information-protection/index.md
-    - name: Threat protection
-      href: threat-protection/index.md
+    - name: FIPS 140-2 Validation
+      href: /windows/security/threat-protection/fips-140-validation.md
+    - name: Common Criteria Certifications
+      href: /windows/security/threat-protection/windows-platform-common-criteria.md
+
