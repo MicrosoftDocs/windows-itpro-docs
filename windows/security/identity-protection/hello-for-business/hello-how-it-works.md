@@ -34,7 +34,7 @@ Windows Hello for Business is a distributed system that uses several components 
 
 Registration is a fundamental prerequisite for Windows Hello for Business.  Without registration, Windows Hello for Business provisioning cannot start. Registration is where the device **registers** its identity with the identity provider. For cloud and hybrid deployments, the identity provider is Azure Active Directory and the device registers with the Azure Device Registration Service (ADRS). For on-premises deployments, the identity provider is Active Directory Federation Services (AD FS), and the device registers with the enterprise device registration service hosted on the federation servers (AD FS).
 
-For more information read [how device registration works](hello-how-it-works-device-registration.md).
+For more information read [how device registration works](/azure/active-directory/devices/device-registration-how-it-works).
 
 ### Provisioning
 
