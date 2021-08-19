@@ -44,10 +44,13 @@ The following video provides an overview of the process:
 ## Prerequisites
 
 These are the things you'll need to complete this lab:
-<table><tr><td>Windows 10 installation media</td><td>Windows 10 Professional or Enterprise (ISO file) for a supported version of Windows 10, semi-annual channel. If you do not already have an ISO to use, a link is provided to download an <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise" data-raw-source="[evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)">evaluation version of Windows 10 Enterprise</a>.</td></tr>
-<tr><td>Internet access</td><td>If you're behind a firewall, see the detailed <a href="/mem/autopilot/software-requirements#networking-requirements" data-raw-source="[networking requirements](/mem/autopilot/software-requirements#networking-requirements)">networking requirements</a>. Otherwise, just ensure that you have a connection to the Internet.</td></tr>
-<tr><td>Hyper-V or a physical device running Windows 10</td><td>The guide assumes that you will use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.</td></tr>
-<tr><td>An account with Azure AD Premium license</td><td>This guide will describe how to obtain a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.</td></tr></table>
+
+|    | Description |
+|:---|:---|
+|**Windows 10 installation media**|Windows 10 Professional or Enterprise (ISO file) for a supported version of Windows 10, semi-annual channel. If you do not already have an ISO to use, a link is provided to download an <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise" data-raw-source="[evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)">evaluation version of Windows 10 Enterprise</a>.|
+|**Internet access**|If you're behind a firewall, see the detailed <a href="/mem/autopilot/software-requirements#networking-requirements" data-raw-source="[networking requirements](/mem/autopilot/software-requirements#networking-requirements)">networking requirements</a>. Otherwise, just ensure that you have a connection to the Internet.|
+|**Hyper-V or a physical device running Windows 10**|The guide assumes that you will use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.|
+|**An account with Azure AD Premium license**|This guide will describe how to obtain a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.|
 
 ## Procedures
 
@@ -55,39 +58,39 @@ A summary of the sections and procedures in the lab is provided below. Follow ea
 
 If you already have Hyper-V and a Windows 10 VM, you can skip directly to the [Capture the hardware ID](#capture-the-hardware-id) step. The VM must be running Windows 10, version 1903 or a later version.
 
-[Verify support for Hyper-V](#verify-support-for-hyper-v)
-<br>[Enable Hyper-V](#enable-hyper-v)
-<br>[Create a demo VM](#create-a-demo-vm)
-<br>&nbsp;&nbsp;&nbsp; [Set ISO file location](#set-iso-file-location)
-<br>&nbsp;&nbsp;&nbsp; [Determine network adapter name](#determine-network-adapter-name)
-<br>&nbsp;&nbsp;&nbsp;  [Use Windows PowerShell to create the demo VM](#use-windows-powershell-to-create-the-demo-vm)
-<br>&nbsp;&nbsp;&nbsp; [Install Windows 10](#install-windows-10)
-<br>[Capture the hardware ID](#capture-the-hardware-id)
-<br>[Reset the VM back to Out-Of-Box-Experience (OOBE)](#reset-the-vm-back-to-out-of-box-experience-oobe)
-<br>[Verify subscription level](#verify-subscription-level)
-<br>[Configure company branding](#configure-company-branding)
-<br>[Configure Microsoft Intune auto-enrollment](#configure-microsoft-intune-auto-enrollment)
-<br>[Register your VM](#register-your-vm)
-<br>&nbsp;&nbsp;&nbsp; [Autopilot registration using Intune](#autopilot-registration-using-intune)
-<br>&nbsp;&nbsp;&nbsp; [Autopilot registration using MSfB](#autopilot-registration-using-msfb)
-<br>[Create and assign a Windows Autopilot deployment profile](#create-and-assign-a-windows-autopilot-deployment-profile)
-<br>&nbsp;&nbsp;&nbsp; [Create a Windows Autopilot deployment profile using Intune](#create-a-windows-autopilot-deployment-profile-using-intune)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Create a device group](#create-a-device-group)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Create the deployment profile](#create-the-deployment-profile)
-<br>&nbsp;&nbsp;&nbsp; [Create a Windows Autopilot deployment profile using MSfB](#create-a-windows-autopilot-deployment-profile-using-msfb)
-<br>[See Windows Autopilot in action](#see-windows-autopilot-in-action)
-<br>[Remove devices from Autopilot](#remove-devices-from-autopilot)
-<br>&nbsp;&nbsp;&nbsp; [Delete (deregister) Autopilot device](#delete-deregister-autopilot-device)
-<br>[Appendix A: Verify support for Hyper-V](#appendix-a-verify-support-for-hyper-v)
-<br>[Appendix B: Adding apps to your profile](#appendix-b-adding-apps-to-your-profile)
-<br>&nbsp;&nbsp;&nbsp; [Add a Win32 app](#add-a-win32-app)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Prepare the app for Intune](#prepare-the-app-for-intune)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Create app in Intune](#create-app-in-intune)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
-<br>&nbsp;&nbsp;&nbsp; [Add Office 365](#add-office-365)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Create app in Intune](#create-app-in-intune)
-<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
-<br>[Glossary](#glossary)
+- [Verify support for Hyper-V](#verify-support-for-hyper-v)
+- [Enable Hyper-V](#enable-hyper-v)
+- [Create a demo VM](#create-a-demo-vm)
+  - [Set ISO file location](#set-iso-file-location)
+  - [Determine network adapter name](#determine-network-adapter-name)
+  - [Use Windows PowerShell to create the demo VM](#use-windows-powershell-to-create-the-demo-vm)
+  - [Install Windows 10](#install-windows-10)
+- [Capture the hardware ID](#capture-the-hardware-id)
+- [Reset the VM back to Out-Of-Box-Experience (OOBE)](#reset-the-vm-back-to-out-of-box-experience-oobe)
+- [Verify subscription level](#verify-subscription-level)
+- [Configure company branding](#configure-company-branding)
+- [Configure Microsoft Intune auto-enrollment](#configure-microsoft-intune-auto-enrollment)
+- [Register your VM](#register-your-vm)
+  - [Autopilot registration using Intune](#autopilot-registration-using-intune)
+  - [Autopilot registration using MSfB](#autopilot-registration-using-msfb)
+- [Create and assign a Windows Autopilot deployment profile](#create-and-assign-a-windows-autopilot-deployment-profile)
+  - [Create a Windows Autopilot deployment profile using Intune](#create-a-windows-autopilot-deployment-profile-using-intune)
+    - [Create a device group](#create-a-device-group)
+    - [Create the deployment profile](#create-the-deployment-profile)
+  - [Create a Windows Autopilot deployment profile using MSfB](#create-a-windows-autopilot-deployment-profile-using-msfb)
+- [See Windows Autopilot in action](#see-windows-autopilot-in-action)
+- [Remove devices from Autopilot](#remove-devices-from-autopilot)
+  - [Delete (deregister) Autopilot device](#delete-deregister-autopilot-device)
+- [Appendix A: Verify support for Hyper-V](#appendix-a-verify-support-for-hyper-v)
+- [Appendix B: Adding apps to your profile](#appendix-b-adding-apps-to-your-profile)
+  - [Add a Win32 app](#add-a-win32-app)
+    - [Prepare the app for Intune](#prepare-the-app-for-intune)
+    - [Create app in Intune](#create-app-in-intune)
+    - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
+  - [Add Office 365](#add-office-365)
+    - [Create app in Intune](#create-app-in-intune)
+    - [Assign the app to your Intune profile](#assign-the-app-to-your-intune-profile)
+- [Glossary](#glossary)
 
 ## Verify support for Hyper-V
 
