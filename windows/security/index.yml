@@ -31,3 +31,18 @@ landingContent:
             url: /previous-versions/windows/desktop/cc307891(v=msdn.10)
           - text: Microsoft bounty program
             url: https://www.microsoft.com/msrc/bounty
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Security foundations
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Federal Information Processing Standard (FIPS) 140 Validation
+            url: /windows/security/threat-protection/fips-140-validation.md
+          - text: Common Criteria Certifications
+            url: /windows/security/threat-protection/windows-platform-common-criteria.md
+          - text: Microsoft Security Development Lifecycle (SDL)
+            url: /previous-versions/windows/desktop/cc307891(v=msdn.10)
+          - text: Microsoft bounty program
+            url: https://www.microsoft.com/msrc/bounty
