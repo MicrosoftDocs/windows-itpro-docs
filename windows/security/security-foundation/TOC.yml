@@ -1,8 +1,0 @@
-- name: Security foundation
-  href: index.yml
-  items: 
-    - name: FIPS 140-2 Validation
-      href: /windows/security/threat-protection/fips-140-validation.md
-    - name: Common Criteria Certifications
-      href: /windows/security/threat-protection/windows-platform-common-criteria.md
-
