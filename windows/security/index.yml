@@ -31,14 +31,3 @@ landingContent:
             url: /previous-versions/windows/desktop/cc307891(v=msdn.10)
           - text: Microsoft bounty program
             url: https://www.microsoft.com/msrc/bounty
-  # Card (optional)
-  - title: Hardware security
-    linkLists:
-      - linkListType: overview
-        links:
-         - name: Trusted Platform Module (TPM) overview
-           url: /windows/security/information-protection/tpm/trusted-platform-module-overview.md
-         - name: Protect derived domain credentials with Windows Defender Credential Guard
-           url: /windows/security/identity-protection/credential-guard/credential-guard.md
-         - name: Kernel DMA Protection
-           url: /windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md
