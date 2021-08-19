@@ -85,7 +85,7 @@ The docked mode is especially useful in Kiosk mode where you do not expect the e
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Handwriting Panel Default Mode Docked*
+-   GP Friendly name: *Handwriting Panel Default Mode Docked*
 -   GP name: *PanelDefaultModeDocked*
 -   GP path: *Windows Components/Handwriting*
 -   GP ADMX file name: *Handwriting.admx*

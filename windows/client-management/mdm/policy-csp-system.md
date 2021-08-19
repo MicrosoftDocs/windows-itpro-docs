@@ -158,7 +158,7 @@ If you enable or do not configure this policy setting, users can download and in
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Toggle user control over Insider builds*
+-   GP Friendly name: *Toggle user control over Insider builds*
 -   GP name: *AllowBuildPreview*
 -   GP path: *Data Collection and Preview Builds*
 -   GP ADMX file name: *AllowBuildPreview.admx*
