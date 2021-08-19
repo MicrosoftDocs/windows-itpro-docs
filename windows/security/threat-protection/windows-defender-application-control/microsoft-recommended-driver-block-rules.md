@@ -24,15 +24,15 @@ ms.date:
 - Windows 10
 - Windows Server 2016 and above
 
-Microsoft has strict requirements for code running in kernel. Consequently, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they are patched and rolled out to the ecosystem in an expedited manner. Microsoft then adds the vulnerable versions of the drivers to our ecosystem block policy which is applied to the following sets of devices:
+Microsoft has strict requirements for code running in kernel. Consequently, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they're patched and rolled out to the ecosystem in an expedited manner. Microsoft then adds the vulnerable versions of the drivers to our ecosystem block policy, which is applied to the following sets of devices:
 
 - Hypervisor-protected code integrity (HVCI) enabled devices
 - Windows 10 in S mode (S mode) devices
 
-Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this is not possible, Microsoft recommends blocking the following list of drivers by merging this policy with your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It is recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
+Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this isn't possible, Microsoft recommends blocking the following list of drivers by merging this policy with your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
 
 > [!Note]
-> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. It is recommended that this policy be first validated in audit mode before rolling the rules into enforcement mode. 
+> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. It's recommended that this policy be first validated in audit mode before rolling the rules into enforcement mode. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -55,8 +55,6 @@ Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security
   <EKUs />
   <!--File Rules-->
   <FileRules>
-    <Allow ID="ID_ALLOW_ALL_1" FriendlyName="" FileName="*" />
-    <Allow ID="ID_ALLOW_ALL_2" FriendlyName="" FileName="*" />
     <Deny ID="ID_DENY_BANDAI_SHA1" FriendlyName="bandai.sys Hash Sha1" Hash="0F780B7ADA5DD8464D9F2CC537D973F5AC804E9C" />
     <Deny ID="ID_DENY_BANDAI_SHA256" FriendlyName="bandai.sys Hash Sha256" Hash="7FD788358585E0B863328475898BB4400ED8D478466D1B7F5CC0252671456CC8" />
     <Deny ID="ID_DENY_BANDAI_SHA1_PAGE" FriendlyName="bandai.sys Hash Page Sha1" Hash="EA360A9F23BB7CF67F08B88E6A185A699F0C5410" />
@@ -315,7 +313,6 @@ Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_INSYDE" />
         </DeniedSigners>
         <FileRulesRef>        
-            <FileRuleRef RuleID="ID_ALLOW_ALL_1"/>
             <FileRuleRef RuleID="ID_DENY_BANDAI_SHA1" />
             <FileRuleRef RuleID="ID_DENY_BANDAI_SHA256" />
             <FileRuleRef RuleID="ID_DENY_BANDAI_SHA1_PAGE" />
@@ -425,7 +422,6 @@ Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security
     <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="">
       <ProductSigners>
         <FileRulesRef>
-          <FileRuleRef RuleID="ID_ALLOW_ALL_2" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
