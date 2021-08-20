@@ -54,6 +54,11 @@ The following sections list the components that make network connections to Micr
 
 The following table lists management options for each setting, beginning with Windows 10 Enterprise version 1607.
 
+ >[!IMPORTANT]
+>**If you need assistance with troubleshooting issues, please refer to:**</br> 
+> - [Keep your device running smoothly](https://support.microsoft.com/en-us/topic/keep-your-device-running-smoothly-with-recommended-troubleshooting-ec76fe10-4ac8-ce9d-49c6-757770fe68f1)</br>
+> - [CSP - Troubleshooting](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-troubleshooting)
+
 
 | Setting | UI | Group Policy | Registry |
 | - | :-: | :-: | :-: |
