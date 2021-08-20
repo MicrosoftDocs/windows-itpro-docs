@@ -129,7 +129,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow installation of devices that match any of these device IDs*
+-   GP Friendly name: *Allow installation of devices that match any of these device IDs*
 -   GP name: *DeviceInstall_IDs_Allow*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -253,7 +253,7 @@ Peripherals can be specified by their [device instance ID](/windows-hardware/dri
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow installation of devices that match any of these device instance IDs*
+-   GP Friendly name: *Allow installation of devices that match any of these device instance IDs*
 -   GP name: *DeviceInstall_Instance_IDs_Allow*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -376,7 +376,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow installation of devices using drivers that match these device setup classes*
+-   GP Friendly name: *Allow installation of devices using drivers that match these device setup classes*
 -   GP name: *DeviceInstall_Classes_Allow*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -509,7 +509,7 @@ If you disable or do not configure this policy setting, the default evaluation i
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria*
+-   GP Friendly name: *Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria*
 -   GP name: *DeviceInstall_Allow_Deny_Layered*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -618,7 +618,7 @@ If you disable or do not configure this policy setting, the setting in the Devic
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent device metadata retrieval from the Internet*
+-   GP Friendly name: *Prevent device metadata retrieval from the Internet*
 -   GP name: *DeviceMetadata_PreventDeviceMetadataFromNetwork*
 -   GP path: *System/Device Installation*
 -   GP ADMX file name: *DeviceSetup.admx*
@@ -700,7 +700,7 @@ If you disable or do not configure this policy setting, Windows is allowed to in
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent installation of devices not described by other policy settings*
+-   GP Friendly name: *Prevent installation of devices not described by other policy settings*
 -   GP name: *DeviceInstall_Unspecified_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -817,7 +817,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent installation of devices that match any of these device IDs*
+-   GP Friendly name: *Prevent installation of devices that match any of these device IDs*
 -   GP name: *DeviceInstall_IDs_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -934,7 +934,7 @@ Peripherals can be specified by their [device instance ID](/windows-hardware/dri
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent installation of devices that match any of these device instance IDs*
+-   GP Friendly name: *Prevent installation of devices that match any of these device instance IDs*
 -   GP name: *DeviceInstall_Instance_IDs_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -1064,7 +1064,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent installation of devices using drivers that match these device setup classes*
+-   GP Friendly name: *Prevent installation of devices using drivers that match these device setup classes*
 -   GP name: *DeviceInstall_Classes_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*

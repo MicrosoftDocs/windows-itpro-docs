@@ -93,7 +93,7 @@ If you disable or do not configure this policy setting, users will be able to cu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Apply the default account picture to all users*
+-   GP Friendly name: *Apply the default account picture to all users*
 -   GP name: *UseDefaultTile*
 -   GP path: *Control Panel/User Accounts*
 -   GP ADMX file name: *Cpls.admx*

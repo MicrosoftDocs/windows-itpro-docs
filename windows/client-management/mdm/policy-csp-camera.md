@@ -81,7 +81,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Use of Camera*
+-   GP Friendly name: *Allow Use of Camera*
 -   GP name: *L_AllowCamera*
 -   GP path: *Windows Components/Camera*
 -   GP ADMX file name: *Camera.admx*

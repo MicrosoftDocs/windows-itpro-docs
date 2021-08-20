@@ -128,7 +128,7 @@ This policy setting applies to Japanese Microsoft IME only.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not include Non-Publishing Standard Glyph in the candidate list*
+-   GP Friendly name: *Do not include Non-Publishing Standard Glyph in the candidate list*
 -   GP name: *L_DoNotIncludeNonPublishingStandardGlyphInTheCandidateList*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*
@@ -214,7 +214,7 @@ This policy setting applies to Japanese Microsoft IME only.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict character code range of conversion*
+-   GP Friendly name: *Restrict character code range of conversion*
 -   GP name: *L_RestrictCharacterCodeRangeOfConversion*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*
@@ -290,7 +290,7 @@ This policy setting is applied to Japanese Microsoft IME.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off custom dictionary*
+-   GP Friendly name: *Turn off custom dictionary*
 -   GP name: *L_TurnOffCustomDictionary*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*
@@ -364,7 +364,7 @@ This policy setting applies to Japanese Microsoft IME only.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off history-based predictive input*
+-   GP Friendly name: *Turn off history-based predictive input*
 -   GP name: *L_TurnOffHistorybasedPredictiveInput*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*
@@ -440,7 +440,7 @@ This policy setting applies to Japanese Microsoft IME.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Internet search integration*
+-   GP Friendly name: *Turn off Internet search integration*
 -   GP name: *L_TurnOffInternetSearchIntegration*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*
@@ -513,7 +513,7 @@ This policy setting is applied to Japanese Microsoft IME.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Open Extended Dictionary*
+-   GP Friendly name: *Turn off Open Extended Dictionary*
 -   GP name: *L_TurnOffOpenExtendedDictionary*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*
@@ -584,7 +584,7 @@ This policy setting applies to Japanese Microsoft IME only.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off saving auto-tuning data to file*
+-   GP Friendly name: *Turn off saving auto-tuning data to file*
 -   GP name: *L_TurnOffSavingAutoTuningDataToFile*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*
@@ -657,7 +657,7 @@ This Policy setting applies to Microsoft CHS Pinyin IME and JPN IME.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on cloud candidate*
+-   GP Friendly name: *Turn on cloud candidate*
 -   GP name: *L_TurnOnCloudCandidate*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*
@@ -730,7 +730,7 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on cloud candidate for CHS*
+-   GP Friendly name: *Turn on cloud candidate for CHS*
 -   GP name: *L_TurnOnCloudCandidateCHS*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*
@@ -803,7 +803,7 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on lexicon update*
+-   GP Friendly name: *Turn on lexicon update*
 -   GP name: *L_TurnOnLexiconUpdate*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*
@@ -876,7 +876,7 @@ This Policy setting applies only to Microsoft CHS Pinyin IME.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Live Sticker*
+-   GP Friendly name: *Turn on Live Sticker*
 -   GP name: *L_TurnOnLiveStickers*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*
@@ -947,7 +947,7 @@ This policy setting applies to Japanese Microsoft IME and Traditional Chinese IM
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on misconversion logging for misconversion report*
+-   GP Friendly name: *Turn on misconversion logging for misconversion report*
 -   GP name: *L_TurnOnMisconversionLoggingForMisconversionReport*
 -   GP path: *Windows Components\IME*
 -   GP ADMX file name: *EAIME.admx*

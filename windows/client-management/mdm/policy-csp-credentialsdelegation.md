@@ -92,7 +92,7 @@ If you disable or do not configure this policy setting, Restricted Administratio
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remote host allows delegation of non-exportable credentials*
+-   GP Friendly name: *Remote host allows delegation of non-exportable credentials*
 -   GP name: *AllowProtectedCreds*
 -   GP path: *System/Credentials Delegation*
 -   GP ADMX file name: *CredSsp.admx*
