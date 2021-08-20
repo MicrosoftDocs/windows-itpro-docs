@@ -1,5 +1,5 @@
 ---
-title: Help protect data with Cortana and WIP (Windows 10)
+title: Help protect data with Cortana and WIP (Windows)
 description: An optional test scenario about how to use Cortana at work with Windows Information Protection (WIP).
 ms.prod: w10
 ms.mktglfcycl: manage

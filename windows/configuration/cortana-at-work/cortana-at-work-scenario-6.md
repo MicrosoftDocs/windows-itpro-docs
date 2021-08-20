@@ -1,5 +1,5 @@
 ---
-title: Review a reminder suggested by Cortana (Windows 10)
+title: Review a reminder suggested by Cortana (Windows)
 description: A test scenario about how to use Cortana with the Suggested reminders feature.
 ms.prod: w10
 ms.mktglfcycl: manage

@@ -15,7 +15,7 @@ ms.author: greglin
 
 ## Before you begin
 
-- If your enterprise had previously disabled Cortana for your employees using the **Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana** Group Policy or the **Experience\AllowCortana** MDM setting but want to enable it now that Cortana is part of Microsoft 365, you will need to re-enable it at least for Windows 10, version 2004 and later.
+- If your enterprise had previously disabled Cortana for your employees using the **Computer Configuration\Administrative Templates\Windows Components\Search\Allow Cortana** Group Policy or the **Experience\AllowCortana** MDM setting but want to enable it now that Cortana is part of Microsoft 365, you will need to re-enable it at least for Windows 10, version 2004 and later, or Windows 11.
 - **Cortana is regularly updated through the Microsoft Store.** Beginning with Windows 10, version 2004, Cortana is an appx preinstalled with Windows and is regularly updated through the Microsoft Store. To receive the latest updates to Cortana, you will need to [enable updates through the Microsoft Store](../stop-employees-from-using-microsoft-store.md).
 
 ## Set up and configure the Bing Answers feature
