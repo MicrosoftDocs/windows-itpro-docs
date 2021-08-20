@@ -24,12 +24,11 @@ Each release of Windows 10 and Windows 11 contains many new and improved feature
 
 The following topic lists features that are no longer being developed. These features might be removed in a future release.
 
-[Windows 10 features we're no longer developing](windows-10-deprecated-features.md)<br>
-[Windows 11 features we're no longer developing](windows-11-deprecated-features.md)
+[Windows 10 features we're no longer developing](windows-10-deprecated-features.md)
 
 ## Features removed
 
-The following topic has details about features that have been removed from Windows 10 or Windows 11. This includes features that are present in Windows 10, but are removed in Windows 11.
+The following topics have details about features that have been removed from Windows 10 or Windows 11. This includes features that are present in Windows 10, but are removed in Windows 11.
 
 [Windows 10 features we removed](windows-10-removed-features.md)<br>
 [Windows 11 features we removed](windows-11-removed-features.md)
