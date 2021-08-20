@@ -62,12 +62,20 @@
           href: volume-activation/plan-for-volume-activation-client.md
         - name: Features removed or planned for replacement
           items:
-            - name: Windows 10 features lifecycle
+            - name: Windows client features lifecycle
               href: planning/features-lifecycle.md
             - name: Features we're no longer developing
-              href: planning/windows-10-deprecated-features.md
+              items:
+                - name: Windows 10 deprecated features
+                  href: planning/windows-10-deprecated-features.md
+                - name: Windows 11 deprecated features
+                  href: planning/windows-11-deprecated-features.md
             - name: Features we removed
-              href: planning/windows-10-removed-features.md         
+              items:
+                - name: Windows 10 features removed
+                  href: planning/windows-10-removed-features.md
+                - name: Windows 11 features removed
+                  href: planning/windows-11-removed-features.md         
 
     - name: Prepare
       items: 
@@ -287,8 +295,10 @@
           href: windows-10-pro-in-s-mode.md
         - name: Windows 10 deployment tools
           items:
-            - name: Windows 10 deployment scenarios and tools
+            - name: Windows client deployment scenarios and tools
               items:
+                - name: Windows Deployment Services (WDS) image deployment
+                  href: wds-boot-support.md
                 - name: Convert MBR partition to GPT
                   href: mbr-to-gpt.md
                 - name: Configure a PXE server to load Windows PE
