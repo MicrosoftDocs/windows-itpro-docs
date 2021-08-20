@@ -2083,7 +2083,7 @@ For further details on how to customize the Start layout, please see [Customize 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Start Layout*
+-   GP Friendly name: *Start Layout*
 -   GP name: *LockedStartLayout*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *StartMenu.admx*

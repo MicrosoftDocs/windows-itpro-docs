@@ -3,16 +3,16 @@ items:
   href: index.yml
 - name: Application management
   items: 
+    - name: Apps in Windows 10
+      href: apps-in-windows-10.md
+    - name: Add apps and features in Windows 10
+      href: add-apps-and-features.md
     - name: Sideload apps
       href: sideload-apps-in-windows-10.md
     - name: Remove background task resource restrictions
       href: enterprise-background-activity-controls.md
     - name: Enable or block Windows Mixed Reality apps in the enterprise
       href: manage-windows-mixed-reality.md
-    - name: Understand apps in Windows 10
-      href: apps-in-windows-10.md
-    - name: Add apps and features in Windows 10
-      href: add-apps-and-features.md
     - name: Repackage win32 apps in the MSIX format
       href: msix-app-packaging-tool.md
 - name: Application Virtualization (App-V)
@@ -260,7 +260,5 @@ items:
       href: per-user-services-in-windows.md
     - name: Disabling System Services in Windows Server
       href: /windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server
-    - name: Deploy app upgrades on Windows 10 Mobile
-      href: deploy-app-upgrades-windows-10-mobile.md
     - name: How to keep apps removed from Windows 10 from returning during an update
       href: remove-provisioned-apps-during-update.md

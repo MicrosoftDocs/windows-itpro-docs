@@ -320,11 +320,11 @@ To graph the equation 3x+4=7, follow these instructions:
 **Watch what Educators say about Microsoft Education delivering better learning outcomes**
 Bring out the best in students by providing a platform for collaborating, exploring, personalized learning, and getting things done across all devices.
 
-|  |  |
+|&nbsp;  |&nbsp;  |
 |:--- |:--- |
 | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c" frameborder="0" allowfullscreen></iframe></br>See how one school improves reading skills using Learning Tools Immersive Reader | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg" frameborder="0" allowfullscreen></iframe></br>Here's how Microsoft Teams creates more robust classroom experiences at all ages. |
 | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o" frameborder="0" allowfullscreen></iframe></br>Watch teachers elevate the education of students using OneNote. | <iframe width="420" height="236" src="https://www.youtube.com/embed/hl9ZQiektJE" frameborder="0" allowfullscreen></iframe></br>Here what other teachers say about using Minecraft: Education Edition in their classrooms. |
-|  |  |
+
 
 ## Update your apps
 

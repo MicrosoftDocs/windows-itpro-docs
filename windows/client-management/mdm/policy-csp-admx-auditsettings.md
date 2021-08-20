@@ -95,7 +95,7 @@ Default is Not configured.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Include command line in process creation events*
+-   GP Friendly name: *Include command line in process creation events*
 -   GP name: *IncludeCmdLine*
 -   GP path: *System/Audit Process Creation*
 -   GP ADMX file name: *AuditSettings.admx*

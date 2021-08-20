@@ -99,7 +99,7 @@ If you disable or do not configure this policy setting, the default behavior app
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Active Help*
+-   GP Friendly name: *Turn off Active Help*
 -   GP name: *ActiveHelp*
 -   GP path: *Windows Components/Online Assistance*
 -   GP ADMX file name: *HelpAndSupport.admx*
@@ -170,7 +170,7 @@ Users can use the control to provide feedback on the quality and usefulness of t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Help Ratings*
+-   GP Friendly name: *Turn off Help Ratings*
 -   GP name: *HPExplicitFeedback*
 -   GP path: *System/Internet Communication Management/Internet Communication settings*
 -   GP ADMX file name: *HelpAndSupport.admx*
@@ -238,7 +238,7 @@ If you disable or do not configure this policy setting, users can turn on the He
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Help Experience Improvement Program*
+-   GP Friendly name: *Turn off Help Experience Improvement Program*
 -   GP name: *HPImplicitFeedback*
 -   GP path: *System/Internet Communication Management/Internet Communication settings*
 -   GP ADMX file name: *HelpAndSupport.admx*
@@ -307,7 +307,7 @@ If you disable or do not configure this policy setting, users can access online 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Windows Online*
+-   GP Friendly name: *Turn off Windows Online*
 -   GP name: *HPOnlineAssistance*
 -   GP path: *System/Internet Communication Management/Internet Communication settings*
 -   GP ADMX file name: *HelpAndSupport.admx*

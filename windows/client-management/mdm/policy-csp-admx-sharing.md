@@ -89,7 +89,7 @@ If you disable or don't configure this policy setting, users can share files out
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent users from sharing files within their profile.*
+-   GP Friendly name: *Prevent users from sharing files within their profile.*
 -   GP name: *NoInplaceSharing*
 -   GP path: *Windows Components\Network Sharing*
 -   GP ADMX file name: *Sharing.admx*

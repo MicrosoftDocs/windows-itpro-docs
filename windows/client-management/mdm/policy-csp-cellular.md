@@ -103,7 +103,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Let Windows apps access cellular data*
+-   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_Enum*
 -   GP path: *Network/WWAN Service/Cellular Data Access*
@@ -171,7 +171,7 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Let Windows apps access cellular data*
+-   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_ForceAllowTheseApps_List*
 -   GP path: *Network/WWAN Service/Cellular Data Access*
@@ -231,7 +231,7 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Let Windows apps access cellular data*
+-   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_ForceDenyTheseApps_List*
 -   GP path: *Network/WWAN Service/Cellular Data Access*
@@ -291,7 +291,7 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Let Windows apps access cellular data*
+-   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_UserInControlOfTheseApps_List*
 -   GP path: *Network/WWAN Service/Cellular Data Access*
@@ -361,7 +361,7 @@ If this policy setting is disabled or is not configured, the link to the per-app
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Per-App Cellular Access UI Visibility*
+-   GP Friendly name: *Set Per-App Cellular Access UI Visibility*
 -   GP name: *ShowAppCellularAccessUI*
 -   GP path: *Network/WWAN Service/WWAN UI Settings*
 -   GP ADMX file name: *wwansvc.admx*
