@@ -82,7 +82,7 @@ Added in Windows 10, version 1607. Enables or Disable Windows license reactivat
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Control Device Reactivation for Retail devices*
+-   GP Friendly name: *Control Device Reactivation for Retail devices*
 -   GP name: *AllowWindowsEntitlementReactivation*
 -   GP path: *Windows Components/Software Protection Platform*
 -   GP ADMX file name: *AVSValidationGP.admx*
@@ -148,7 +148,7 @@ Added in Windows 10, version 1607. Enabling this setting prevents this computer
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off KMS Client Online AVS Validation*
+-   GP Friendly name: *Turn off KMS Client Online AVS Validation*
 -   GP name: *NoAcquireGT*
 -   GP path: *Windows Components/Software Protection Platform*
 -   GP ADMX file name: *AVSValidationGP.admx*

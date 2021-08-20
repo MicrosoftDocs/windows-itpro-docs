@@ -93,7 +93,7 @@ If you disable or do not configure this policy setting, "Found New Hardware" bal
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off "Found New Hardware" balloons during device installation*
+-   GP Friendly name: *Turn off "Found New Hardware" balloons during device installation*
 -   GP name: *DeviceInstall_BalloonTips*
 -   GP path: *System\Device Installation*
 -   GP ADMX file name: *DeviceSetup.admx*
@@ -164,7 +164,7 @@ If you disable or do not configure this policy setting, members of the Administr
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify search order for device driver source locations*
+-   GP Friendly name: *Specify search order for device driver source locations*
 -   GP name: *DriverSearchPlaces_SearchOrderConfiguration*
 -   GP path: *System\Device Installation*
 -   GP ADMX file name: *DeviceSetup.admx*
