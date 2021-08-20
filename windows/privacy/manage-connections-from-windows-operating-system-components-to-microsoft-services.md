@@ -855,6 +855,8 @@ Use Settings &gt; Privacy to configure some settings that may be important to yo
 
 - [18.23 Voice Activation](#bkmk-voice-act)
 
+- [18.24 News and interests](#bkmk-priv-news)
+
 ### <a href="" id="bkmk-general"></a>18.1 General
 
 **General** includes options that don't fall into other areas.
@@ -1523,6 +1525,13 @@ To turn this Off in the UI:
 
 - Create a REG_DWORD registry setting named **LetAppsActivateWithVoiceAboveLock** in **HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\AppPrivacy** with a **value of 2 (two)**
 
+### <a href="" id="bkmk-priv-news"></a>18.24 News and interests  
+
+In the **Windows Feeds** area, you can choose which apps have access to your diagnostic information.
+
+To turn this off:
+
+- Create a REG_DWORD registry setting named **EnableFeeds** in **HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Feeds** with a **value of 0 (zero)**.
 
 ### <a href="" id="bkmk-spp"></a>19. Software Protection Platform
 
