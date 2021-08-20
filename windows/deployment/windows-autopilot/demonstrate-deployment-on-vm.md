@@ -2,7 +2,7 @@
 title: Demonstrate Autopilot deployment
 ms.reviewer:
 manager: laurawi
-description: In this article, find step-by-step instructions on how to set-up a Virtual Machine with a Windows Autopilot deployment.
+description: In this article, find step-by-step instructions on how to set up a Virtual Machine with a Windows Autopilot deployment.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune, upgrade
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ ms.custom:
 
 To get started with Windows Autopilot, you should try it out with a virtual machine (VM) or you can use a physical device that will be wiped and then have a fresh install of Windows 10.
 
-In this topic you'll learn how to set-up a Windows Autopilot deployment for a VM using Hyper-V.
+In this topic, you'll learn how to set up a Windows Autopilot deployment for a VM using Hyper-V.
 
 > [!NOTE]
 > Although there are [multiple platforms](/mem/autopilot/add-devices#registering-devices) available to enable Autopilot, this lab primarily uses Intune.
@@ -248,7 +248,7 @@ Ensure the VM booted from the installation ISO, select **Next** then select **In
 
    ![Windows setup example 6](images/winsetup6.png)
 
-After the VM restarts, during OOBE, it's fine to select **Set up for personal use** or **Domain join instead** and then choose an offline account on the **Sign in** screen.  This will offer the fastest way to the desktop. For example:
+After the VM restarts, during OOBE, it's fine to select **Set up for personal use** or **Domain join instead** and then choose an offline account on the **Sign in** screen.  This offers the fastest way to the desktop. For example:
 
    ![Windows setup example 7](images/winsetup7.png)
 
@@ -363,7 +363,7 @@ For this lab, you need an AAD Premium subscription.  You can tell if you have a 
 
 If the configuration blade shown above does not appear, it's likely that you don't have a **Premium** subscription.  Auto-enrollment is a feature only available in AAD Premium.
 
-To convert your Intune trial account to a free Premium trial account, navigate to **Azure Active Directory** > **Licenses** > **All products** > **Try / Buy** and select **Free trial** for Azure AD Premium, or EMS E5.
+To convert your Intune trial account to a free Premium trial account, go to **Azure Active Directory** > **Licenses** > **All products** > **Try / Buy** and select **Free trial** for Azure AD Premium, or EMS E5.
 
 ![License conversion option](images/aad-lic1.png)
 
@@ -374,7 +374,7 @@ If you already have company branding configured in Azure Active Directory, you c
 > [!IMPORTANT]
 > Make sure to sign-in with a Global Administrator account.
 
-Navigate to [Company branding in Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/LoginTenantBranding), select **Configure** and configure any type of company branding you'd like to see during the OOBE.
+Go to [Company branding in Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/LoginTenantBranding), select **Configure**, and then configure any type of company branding you'd like to see during the OOBE.
 
 ![Configure company branding](images/branding.png)
 
@@ -478,7 +478,7 @@ The Autopilot deployment profile wizard will ask for a device group, so we must 
 
 #### Create the deployment profile
 
-To create a Windows Autopilot profile, scroll back to the left hand pane and select **Devices**, then under **Enroll devices | Windows enrollment** select **Deployment Profiles**.
+To create a Windows Autopilot profile, scroll back to the left-side pane and select **Devices**, then under **Enroll devices | Windows enrollment** select **Deployment Profiles**.
 
 > [!div class="mx-imgBorder"]
 > ![Deployment profiles](images/dp.png)
@@ -612,7 +612,7 @@ To use the device (or VM) for other purposes after completion of this lab, you w
 
 ### Delete (deregister) Autopilot device
 
-You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure Active Directory), log into the MEM admin center, then navigate to **Intune > Devices > All Devices**.  Select the device you want to delete, then select the **Delete** button along the top menu.
+You need to delete (or retire, or factory reset) the device from Intune before deregistering the device from Autopilot. To delete the device from Intune (not Azure Active Directory), log into the MEM admin center, then go to **Intune > Devices > All Devices**.  Select the device you want to delete, then select the **Delete** button along the top menu.
 
 > [!div class="mx-imgBorder"]
 > ![Delete device step 1](images/delete-device1.png)
@@ -633,7 +633,7 @@ At this point, your device has been unenrolled from Intune and also deregistered
 
 Once the device no longer appears, you're free to reuse it for other purposes.
 
-If you also (optionally) want to remove your device from AAD, navigate to **Azure Active Directory > Devices > All Devices**, select your device, and then select the **Delete** button:
+If you also (optionally) want to remove your device from AAD, go to **Azure Active Directory > Devices > All Devices**, select your device, and then select the **Delete** button:
 
 ## Appendix A: Verify support for Hyper-V
 
@@ -703,7 +703,7 @@ After the tool finishes running, you should have an .intunewin file in the Outpu
 
 Log into the Azure portal and select **Intune**.
 
-Navigate to **Intune > Clients apps > Apps**, and then click the **Add** button to create a new app package.
+Go to **Intune > Clients apps > Apps**, and then click the **Add** button to create a new app package.
 
 ![Add app step 1](images/app02.png)
 
@@ -732,7 +732,7 @@ Uninstall:  msiexec /x "{F188A506-C3C6-4411-BE3A-DA5BF1EA6737}" /q
 
 ![Add app step 5](images/app06.png)
 
-Simply using an install command like "notepad++.exe /S" will not actually install Notepad++; it will only launch the app.  To actually install the program, we need to use the .msi file instead.  Notepad++ doesn't actually have an .msi version of their program, but we got an .msi version from a [third party provider](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available).
+Simply using an install command like "notepad++.exe /S" will not actually install Notepad++; it will only launch the app.  To actually install the program, we need to use the .msi file instead.  Notepad++ doesn't actually have a .msi version of their program, but we got a .msi version from a [third party provider](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available).
 
 Select **OK** to save your input and activate the **Requirements** blade.
 
@@ -818,7 +818,7 @@ For more information on adding apps to Intune, see [Intune Standalone - Win32 ap
 
 Log into the Azure portal and select **Intune**.
 
-Navigate to **Intune > Clients apps > Apps**, and then select the **Add** button to create a new app package.
+Go to **Intune > Clients apps > Apps**, and then select the **Add** button to create a new app package.
 
 ![Create app step 1](images/app17.png)
 
@@ -826,7 +826,7 @@ Under **App Type**, select **Office 365 Suite > Windows 10**:
 
 ![Create app step 2](images/app18.png)
 
-Under the **Configure App Suite** pane, select the Office apps you want to install.  For the purposes of this labe we have only selected Excel:
+Under the **Configure App Suite** pane, select the Office apps you want to install.  For the purposes of this lab we have only selected Excel:
 
 > [!div class="mx-imgBorder"]
 > ![Create app step 3](images/app19.png)
