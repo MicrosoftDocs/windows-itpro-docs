@@ -295,7 +295,7 @@
           items:
             - name: Windows client deployment scenarios and tools
               items:
-                - name: WWindows Deployment Services (WDS) boot.wim support
+                - name: Windows Deployment Services (WDS) boot.wim support
                   href: wds-boot-support.md
                 - name: Convert MBR partition to GPT
                   href: mbr-to-gpt.md
