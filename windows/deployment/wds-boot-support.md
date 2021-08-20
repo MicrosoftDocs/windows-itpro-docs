@@ -33,7 +33,7 @@ The table below provides support details for specific deployment scenarios.
 <table cellpadding="1">
     <tr>
         <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        <td><i>OS deployed</i></td>
+        <td>&nbsp;</td>
         <th>Windows 10</th>
         <th>Windows Server 2016</th>
         <th>Windows Server 2019</th>
@@ -41,8 +41,8 @@ The table below provides support details for specific deployment scenarios.
         <th>Windows 11</th>
     </tr>
     <tr>
-        <td rowspan="6" valign="middle"><i>
-    <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>Boot image version</i></td>
+        <td rowspan="6"><i>
+    <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>Boot image version</i></td>
     </tr>
     <tr>
         <td><b>Windows 10</b></td>
