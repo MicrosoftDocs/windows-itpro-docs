@@ -96,7 +96,7 @@ If this policy setting is not configured or is disabled, power management is ena
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable power management in connected standby mode*
+-   GP Friendly name: *Disable power management in connected standby mode*
 -   GP name: *WCM_DisablePowerManagement*
 -   GP path: *Network\Windows Connection Manager*
 -   GP ADMX file name: *WCM.admx*
@@ -173,7 +173,7 @@ This policy setting depends on other group policy settings. For example, if 'Min
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Windows to soft-disconnect a computer from a network*
+-   GP Friendly name: *Enable Windows to soft-disconnect a computer from a network*
 -   GP name: *WCM_EnableSoftDisconnect*
 -   GP path: *Network\Windows Connection Manager*
 -   GP ADMX file name: *WCM.admx*
@@ -248,7 +248,7 @@ This policy setting is related to the "Enable Windows to soft-disconnect a compu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Minimize the number of simultaneous connections to the Internet or a Windows Domain*
+-   GP Friendly name: *Minimize the number of simultaneous connections to the Internet or a Windows Domain*
 -   GP name: *WCM_MinimizeConnections*
 -   GP path: *Network\Windows Connection Manager*
 -   GP ADMX file name: *WCM.admx*

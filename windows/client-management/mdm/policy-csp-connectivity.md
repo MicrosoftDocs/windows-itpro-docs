@@ -243,7 +243,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Prohibit connection to roaming Mobile Broadband networks*
+-   GP Friendly name: *Prohibit connection to roaming Mobile Broadband networks*
 -   GP name: *WCM_DisableRoaming*
 -   GP path: *Network/Windows Connection Manager*
 -   GP ADMX file name: *WCM.admx*
@@ -658,7 +658,7 @@ Also, see the "Web-based printing" policy setting in Computer Configuration/Admi
 
 <!--ADMXBacked-->
 ADMX Info:
--   GP English name: *Turn off printing over HTTP*
+-   GP Friendly name: *Turn off printing over HTTP*
 -   GP name: *DisableHTTPPrinting_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -732,7 +732,7 @@ If you disable or do not configure this policy setting, users can download print
 
 <!--ADMXBacked-->
 ADMX Info:
--   GP English name: *Turn off downloading of print drivers over HTTP*
+-   GP Friendly name: *Turn off downloading of print drivers over HTTP*
 -   GP name: *DisableWebPnPDownload_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -806,7 +806,7 @@ See the documentation for the web publishing and online ordering wizards for mor
 
 <!--ADMXBacked-->
 ADMX Info:
--   GP English name: *Turn off Internet download for Web publishing and online ordering wizards*
+-   GP Friendly name: *Turn off Internet download for Web publishing and online ordering wizards*
 -   GP name: *ShellPreventWPWDownload_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -867,7 +867,7 @@ Value type is integer.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:
--   GP English name: *Turn off Windows Network Connectivity Status Indicator active tests*
+-   GP Friendly name: *Turn off Windows Network Connectivity Status Indicator active tests*
 -   GP name: *NoActiveProbe*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -935,7 +935,7 @@ If you enable this policy, Windows only allows access to the specified UNC paths
 
 <!--ADMXBacked-->
 ADMX Info:
--   GP English name: *Hardened UNC Paths*
+-   GP Friendly name: *Hardened UNC Paths*
 -   GP name: *Pol_HardenedPaths*
 -   GP path: *Network/Network Provider*
 -   GP ADMX file name: *networkprovider.admx*
@@ -1007,7 +1007,7 @@ If you disable this setting or do not configure it, the user will be able to cre
 
 <!--ADMXBacked-->
 ADMX Info:
--   GP English name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
+-   GP Friendly name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
 -   GP name: *NC_AllowNetBridge_NLA*
 -   GP path: *Network/Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
