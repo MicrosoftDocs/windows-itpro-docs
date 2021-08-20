@@ -22,7 +22,6 @@ ms.topic: article
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 You can use the same management tools to manage all device types running Windows 10 : desktops, laptops, tablets, and phones. And your current management tools, such as Group Policy, Windows Management Instrumentation (WMI), PowerShell scripts, System Center tools, and so on, will continue to work for Windows 10.
 
@@ -36,7 +35,7 @@ You can use the same management tools to manage all device types running Windows
 | [New policies for Windows 10](new-policies-for-windows-10.md) | New Group Policy settings added in Windows 10 |
 | [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md) | Group Policy settings that apply only to Windows 10 Enterprise and Windows 10 Education |
 | [Changes to Group Policy settings for Start in Windows 10](/windows/configuration/changes-to-start-policies-in-windows-10) | Changes to the Group Policy settings that you use to manage Start |
-| [Introduction to configuration service providers (CSPs) for IT pros](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) | How IT pros and system administrators can take advantage of many settings available through CSPs to configure devices running Windows 10 and Windows 10 Mobile in their organizations |
+| [Introduction to configuration service providers (CSPs) for IT pros](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) | How IT pros and system administrators can take advantage of many settings available through CSPs to configure devices running Windows 10 in their organizations |
 
 
 ## Learn more

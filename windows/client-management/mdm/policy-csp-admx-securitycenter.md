@@ -102,7 +102,7 @@ In Windows Vista, this policy setting monitors essential security settings to in
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Security Center (Domain PCs only)*
+-   GP Friendly name: *Turn on Security Center (Domain PCs only)*
 -   GP name: *SecurityCenter_SecurityCenterInDomain*
 -   GP path: *Windows Components\Security Center*
 -   GP ADMX file name: *Securitycenter.admx*

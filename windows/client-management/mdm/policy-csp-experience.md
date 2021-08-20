@@ -152,7 +152,7 @@ Value type is integer. Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Clipboard History*
+-   GP Friendly name: *Allow Clipboard History*
 -   GP name: *AllowClipboardHistory*
 -   GP path: *System/OS Policies*
 -   GP ADMX file name: *OSPolicy.admx*
@@ -229,7 +229,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Cortana*
+-   GP Friendly name: *Allow Cortana*
 -   GP name: *AllowCortana*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -361,7 +361,7 @@ When Find My Device is off, the device and its location are not registered and t
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On/Off Find My Device*
+-   GP Friendly name: *Turn On/Off Find My Device*
 -   GP name: *FindMy_AllowFindMyDeviceConfig*
 -   GP path: *Windows Components/Find My Device*
 -   GP ADMX file name: *FindMy.admx*
@@ -642,7 +642,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not use diagnostic data for tailored experiences*
+-   GP Friendly name: *Do not use diagnostic data for tailored experiences*
 -   GP name: *DisableTailoredExperiencesWithDiagnosticData*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -712,7 +712,7 @@ Specifies whether to allow app and content suggestions from third-party software
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not suggest third-party content in Windows spotlight*
+-   GP Friendly name: *Do not suggest third-party content in Windows spotlight*
 -   GP name: *DisableThirdPartySuggestions*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -785,7 +785,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off Microsoft consumer experiences*
+-   GP Friendly name: *Turn off Microsoft consumer experiences*
 -   GP name: *DisableWindowsConsumerFeatures*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -857,7 +857,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off all Windows spotlight features*
+-   GP Friendly name: *Turn off all Windows spotlight features*
 -   GP name: *DisableWindowsSpotlightFeatures*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -928,7 +928,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off Windows Spotlight on Action Center*
+-   GP Friendly name: *Turn off Windows Spotlight on Action Center*
 -   GP name: *DisableWindowsSpotlightOnActionCenter*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -998,7 +998,7 @@ Added in Windows 10, version 1803. This policy allows IT admins to turn off Sugg
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off Windows Spotlight on Settings*
+-   GP Friendly name: *Turn off Windows Spotlight on Settings*
 -   GP name: *DisableWindowsSpotlightOnSettings*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -1070,7 +1070,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off the Windows Welcome Experience*
+-   GP Friendly name: *Turn off the Windows Welcome Experience*
 -   GP name: *DisableWindowsSpotlightWindowsWelcomeExperience*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -1136,7 +1136,7 @@ Enables or disables Windows Tips / soft landing.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not show Windows tips*
+-   GP Friendly name: *Do not show Windows tips*
 -   GP name: *DisableSoftLanding*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -1264,7 +1264,7 @@ Allows IT admins to specify whether spotlight should be used on the user's lock 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Windows spotlight on lock screen*
+-   GP Friendly name: *Configure Windows spotlight on lock screen*
 -   GP name: *ConfigureWindowsSpotlight*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -1333,7 +1333,7 @@ If you disable or do not configure this policy setting, Windows experiences will
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off cloud optimized content*
+-   GP Friendly name: *Turn off cloud optimized content*
 -   GP name: *DisableCloudOptimizedContent*
 -   GP path: *Windows Components/Cloud Content*
 -   GP ADMX file name: *CloudContent.admx*
@@ -1403,7 +1403,7 @@ If you disable or do not configure this policy setting, users can control how of
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not show feedback notifications*
+-   GP Friendly name: *Do not show feedback notifications*
 -   GP name: *DoNotShowFeedbackNotifications*
 -   GP path: *Data Collection and Preview Builds*
 -   GP ADMX file name: *FeedbackNotifications.admx*
@@ -1472,7 +1472,7 @@ Related policy:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not sync browser settings*
+-   GP Friendly name: *Do not sync browser settings*
 -   GP name: *DisableWebBrowserSettingSync*
 -   GP path: *Windows Components/Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -1567,7 +1567,7 @@ Related policy:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent users from turning on browser syncing*
+-   GP Friendly name: *Prevent users from turning on browser syncing*
 -   GP name: *PreventUsersFromTurningOnBrowserSyncing*
 -   GP path: *Windows Components/Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -1664,7 +1664,7 @@ If you do not configure this policy setting, the lock option is shown in the Use
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Show lock in the user tile menu*
+-   GP Friendly name: *Show lock in the user tile menu*
 -   GP name: *ShowLockOption*
 -   GP path: *File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
