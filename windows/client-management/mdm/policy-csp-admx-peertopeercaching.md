@@ -124,7 +124,7 @@ Select one of the following:
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on BranchCache*
+-   GP Friendly name: *Turn on BranchCache*
 -   GP name: *EnableWindowsBranchCache*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -202,7 +202,7 @@ Select one of the following:
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set BranchCache Distributed Cache mode*
+-   GP Friendly name: *Set BranchCache Distributed Cache mode*
 -   GP name: *EnableWindowsBranchCache_Distributed*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -286,7 +286,7 @@ Hosted cache clients must trust the server certificate that is issued to the hos
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set BranchCache Hosted Cache mode*
+-   GP Friendly name: *Set BranchCache Hosted Cache mode*
 -   GP name: *EnableWindowsBranchCache_Hosted*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -373,7 +373,7 @@ Select one of the following:
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Automatic Hosted Cache Discovery by Service Connection Point*
+-   GP Friendly name: *Enable Automatic Hosted Cache Discovery by Service Connection Point*
 -   GP name: *EnableWindowsBranchCache_HostedCacheDiscovery*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -456,7 +456,7 @@ In circumstances where this setting is enabled, you can also select and configur
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Hosted Cache Servers*
+-   GP Friendly name: *Configure Hosted Cache Servers*
 -   GP name: *EnableWindowsBranchCache_HostedMultipleServers*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -533,7 +533,7 @@ In circumstances where this policy setting is enabled, you can also select and c
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure BranchCache for network files*
+-   GP Friendly name: *Configure BranchCache for network files*
 -   GP name: *EnableWindowsBranchCache_SMB*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -617,7 +617,7 @@ In circumstances where this setting is enabled, you can also select and configur
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set percentage of disk space used for client computer cache*
+-   GP Friendly name: *Set percentage of disk space used for client computer cache*
 -   GP name: *SetCachePercent*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -698,7 +698,7 @@ In circumstances where this setting is enabled, you can also select and configur
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set age for segments in the data cache*
+-   GP Friendly name: *Set age for segments in the data cache*
 -   GP name: *SetDataCacheEntryMaxAge*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -782,7 +782,7 @@ Select from the following versions
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Client BranchCache Version Support*
+-   GP Friendly name: *Configure Client BranchCache Version Support*
 -   GP name: *SetDowngrading*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*

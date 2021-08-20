@@ -86,7 +86,7 @@ At this point, the download is complete and the update is ready to be installed.
 
 ## Steps to manage updates for Windows 10
 
-| | |
+|&nbsp; |&nbsp; |
 | --- | --- |
 | ![done](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
 | ![done](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |

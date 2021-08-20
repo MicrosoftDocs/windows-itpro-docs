@@ -92,7 +92,7 @@ If you enable or disable this setting, do not return the setting to Not Configur
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent OneDrive from generating network traffic until the user signs in to OneDrive*
+-   GP Friendly name: *Prevent OneDrive from generating network traffic until the user signs in to OneDrive*
 -   GP name: *PreventNetworkTrafficPreUserSignIn*
 -   GP path: *Windows Components\OneDrive*
 -   GP ADMX file name: *SkyDrive.admx*

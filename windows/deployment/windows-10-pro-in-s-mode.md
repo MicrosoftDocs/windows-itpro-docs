@@ -26,7 +26,7 @@ A number of other transformations are possible depending on which version and ed
 
 
 
-| If a device is running this version of Windows 10 | and this edition of Windows 10       | then you can switch or convert it to this edition of Windows 10 by these methods: |                               |                                            |
+| If a device is running this version of Windows 10 | and this edition of Windows 10       | then you can switch or convert it to this edition of Windows 10 by these methods: |             &nbsp;                         | &nbsp;|
 |-------------|---------------------|-----------------------------------|-------------------------------|--------------------------------------------|
 |             |                     | **Store for Education** (switch/convert all devices in your tenant)           | **Microsoft Store** (switch/convert one device at a time)          | **Intune** (switch/convert any number of devices selected by admin)                                |
 | **Windows 10, version 1709**     | Pro in S mode | Pro EDU                           | Pro                           | Not by this method                                        |
