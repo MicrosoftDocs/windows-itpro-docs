@@ -89,7 +89,7 @@ Disabling data execution prevention can allow certain legacy plug-in application
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Data Execution Prevention for Explorer*
+-   GP Friendly name: *Turn off Data Execution Prevention for Explorer*
 -   GP name: *NoDataExecutionPrevention*
 -   GP path: *File Explorer*
 -   GP ADMX file name: *Explorer.admx*
@@ -155,7 +155,7 @@ Disabling heap termination on corruption can allow certain legacy plug-in applic
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off heap termination on corruption*
+-   GP Friendly name: *Turn off heap termination on corruption*
 -   GP name: *NoHeapTerminationOnCorruption*
 -   GP path: *File Explorer*
 -   GP ADMX file name: *Explorer.admx*

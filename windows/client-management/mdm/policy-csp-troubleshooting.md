@@ -77,7 +77,7 @@ This policy setting allows IT admins to configure how to apply recommended troub
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Troubleshooting: Allow users to access recommended troubleshooting for known problems*
+-   GP Friendly name: *Troubleshooting: Allow users to access recommended troubleshooting for known problems*
 -   GP name: *TroubleshootingAllowRecommendations*
 -   GP path: *Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool*
 -   GP ADMX file name: *MSDT.admx*
