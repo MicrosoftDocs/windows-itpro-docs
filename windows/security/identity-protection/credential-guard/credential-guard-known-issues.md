@@ -21,16 +21,33 @@ ms.reviewer:
 **Applies to**
 -   Windows 10
 -   Windows Server 2016
+-   Windows Server 2019
  
 Windows Defender Credential Guard has certain application requirements. Windows Defender Credential Guard blocks specific authentication capabilities. Therefore applications that require such capabilities will not function when it is enabled. For further information, see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements). 
 
 The following known issue has been fixed in the [Cumulative Security Update for November 2017](https://support.microsoft.com/help/4051033):
 
--  Scheduled tasks with stored credentials fail to run when Credential Guard is enabled. The task fails and reports Event ID 104 with the following message: <br>
-   "Task Scheduler failed to log on ‘\Test’ . <br>
-   Failure occurred in ‘LogonUserExEx’ . <br>
+-  Scheduled tasks with domain user stored credentials fail to run when Credential Guard is enabled. The task fails and reports Event ID 104 with the following message: <br>
+   "Task Scheduler failed to log on ‘\Test’. <br>
+   Failure occurred in ‘LogonUserExEx’. <br>
    User Action: Ensure the credentials for the task are correctly specified. <br>
-   Additional Data: Error Value: 2147943726. 2147943726 : ERROR\_LOGON\_FAILURE (The user name or password is incorrect)."
+   Additional Data: Error Value: 2147943726. 2147943726: ERROR\_LOGON\_FAILURE (The user name or password is incorrect)."
+-  When enabling NTLM audit on the domain controller, an Event ID 8004 with an indecipherable username format is logged. For example:
+   > Log Name: Microsoft-Windows-NTLM/Operational  
+    Source: Microsoft-Windows-Security-Netlogon  
+    Event ID: 8004  
+    Task Category: Auditing NTLM  
+    Level:         Information  
+    Description:  
+    Domain Controller Blocked Audit: Audit NTLM authentication to this domain controller.  
+    Secure Channel name: \<Secure Channel Name>  
+    User name:  
+    @@CyBAAAAUBQYAMHArBwUAMGAoBQZAQGA1BAbAUGAyBgOAQFAhBwcAsGA6AweAgDA2AQQAMEAwAANAgDA1AQLAIEADBQRAADAtAANAYEA1AwQA0CA5AAOAMEAyAQLAYDAxAwQAEDAEBwMAMEAwAgMAMDACBgRA0HA  
+    Domain name: NULL
+    
+    - This event stems from a scheduled task running under local user context with the [Cumulative Security Update for November 2017](https://support.microsoft.com/topic/november-27-2017-kb4051033-os-build-14393-1914-447b6b88-e75d-0a24-9ab9-5dcda687aaf4) or later and happens when Credential Guard is enabled.
+    - The username appears in an unusual format because local accounts aren’t protected by Credential Guard. The task also fails to execute.
+    - As a workaround, run the scheduled task under a domain user or the computer's SYSTEM account.
 
 The following known issues have been fixed by servicing releases made available in the Cumulative Security Updates for April 2017:
 
