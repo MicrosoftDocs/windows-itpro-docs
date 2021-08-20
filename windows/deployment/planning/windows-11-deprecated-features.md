@@ -11,11 +11,12 @@ ms.author: greglin
 manager: laurawi
 ms.topic: article
 ---
-# Windows 10 features we’re no longer developing
+
+# Windows 11 features we’re no longer developing
 
 > Applies to: Windows 11
 
-Each version of Windows 10 adds new features and functionality; occasionally we also remove features and functionality, often because we've added a better option. Below are the details about the features and functionalities that are no longer being developed in Windows 10. For information about features that have been removed, see [Features we removed](windows-10-removed-features.md).
+Each version of Windows 11 adds new features and functionality; occasionally we also remove features and functionality, often because we've added a better option. Below are the details about the features and functionalities that are no longer being developed in Windows 11. For information about features that have been removed, see [Features we removed](windows-11-removed-features.md).
 
 The features described below are no longer being actively developed, and might be removed in a future update. Some features have been replaced with other features or functionality and some are now available from other sources.
 
@@ -26,4 +27,4 @@ The features described below are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
-| Internet Explorer (IE) 11 | The IE11 desktop application will end support for certain operating systems starting June 15, 2022. For more information, see [Internet Explorer 11](/lifecycle/products/internet-explorer-11). | 21H1 |
+| Feature | Description | Version |
