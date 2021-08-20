@@ -26,5 +26,5 @@ The following features and functionalities have been removed from the installed 
 
 |Feature    |  Details and mitigation  | Removed in version |
 | ----------- | --------------------- | ------ |
-| WDS image deployment | End to end WDS deployment workflows that use boot.wim from installation media are affected. For more information, see [Windows Deployment Services (WDS) boot.wim support](../wds-boot-support.md) | Windows 11 |
+| WDS image deployment | End to end WDS deployment workflows that use **boot.wim** from installation media are affected. For more information, see [Windows Deployment Services (WDS) boot.wim support](../wds-boot-support.md) | Windows 11 |
 

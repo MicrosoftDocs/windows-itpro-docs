@@ -19,15 +19,15 @@ Applies to:
 - Windows 10 
 - Windows 11
 
-The operating system deployment functionality of [Windows Deployment Services](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831764(v=ws.11)) (WDS) is being partically deprecated. Starting with Windows 11, workflows that rely on boot.wim from installation media and/or on running Setup.exe in WDS mode will no longer be supported.
+The operating system deployment functionality of [Windows Deployment Services](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831764(v=ws.11)) (WDS) is being partially deprecated. Starting with Windows 11, workflows that rely on **boot.wim** from installation media or on running Windows Setup in WDS mode will no longer be supported.
 
-When you PXE-boot from a WDS server that uses the **boot.wim** file from installation media as its boot image, Windows Setup automatically launches in WDS mode. This workflow is deprecated for Windows 11 and newer boot images. The following message will be displayed in this scenario:
+When you PXE-boot from a WDS server that uses the **boot.wim** file from installation media as its boot image, Windows Setup automatically launches in WDS mode. This workflow is deprecated for Windows 11 and newer boot images. In this scenario, the following message is displayed:
 
-![WDS deprecation notice](images/wds-deprecation.png)
+  ![WDS deprecation notice](images/wds-deprecation.png)
 
 ## Deployment scenarios impacted
 
-See the following table for a summary of the impacted deployment scenarios.
+The following table provides support details for possible deployment scenarios:
 
 
 <br>
@@ -42,10 +42,10 @@ See the following table for a summary of the impacted deployment scenarios.
         <th>Windows Windows 11</th>
     </tr>
     <tr>
-        <th rowspan="6" nowrap="nowrap">Boot image version</th>
+        <th rowspan="6" valign="center">Boot image version</th>
     </tr>
     <tr>
-        <td>Windows 10</td>
+        <td><b>Windows 10</b></td>
         <td>Supported, using a boot image from matching or newer version.</td>
         <td>Supported, using a boot image from Windows 10, version 1607 or later.</td>
         <td>Supported, using a boot image from Windows 10, version 1809 or later.</td>
@@ -53,7 +53,7 @@ See the following table for a summary of the impacted deployment scenarios.
         <td>Not supported.</td>
     </tr>
     <tr>
-        <td>Windows Server 2016</td>
+        <td><b>Windows Server 2016</b></td>
         <td>Supported, using a boot image from Windows 10, version 1607 or later.</td>
         <td>Supported.</td>
         <td>Not supported.</td>
@@ -61,7 +61,7 @@ See the following table for a summary of the impacted deployment scenarios.
         <td>Not supported.</td>
     </tr>
     <tr>
-        <td>Windows Server 2019</td>
+        <td><b>Windows Server 2019</b></td>
         <td>Supported, using a boot image from Windows 10, version 1809 or later.</td>
         <td>Supported.</td>
         <td>Supported.</td>
@@ -69,7 +69,7 @@ See the following table for a summary of the impacted deployment scenarios.
         <td>Not supported.</td>
     </tr>
     <tr>
-        <td>Windows Server 2022</td>
+        <td><b>Windows Server 2022</b></td>
         <td>Deprecated, with a warning message.</td>
         <td>Deprecated, with a warning message.</td>
         <td>Deprecated, with a warning message.</td>
@@ -77,7 +77,7 @@ See the following table for a summary of the impacted deployment scenarios.
         <td>Not supported.</td>
     </tr>
     <tr>
-        <td>Windows 11</td>
+        <td><b>Windows 11</b></td>
         <td>Not supported, blocked.</td>
         <td>Not supported, blocked.</td>
         <td>Not supported, blocked.</td>
@@ -86,15 +86,15 @@ See the following table for a summary of the impacted deployment scenarios.
     </tr>
    </table>
 
-## What is not impacted
-
-WDS PXE boot is not affected by this change. You can still use WDS to PXE boot devices with a custom boot images, but you will no longer be able to use boot.wim as the boot image and run Windows Setup in WDS mode.
-
-You can still run Windows Setup from a network share. Workflows that leverage a custom boot.wim, such as MDT or Configuration Manager are also not affected by this change.
-
 ## Reason for the change
 
-Alternatives to WDS, such as Configuration Manager and MDT provide a better, more flexible, and feature-rich experince for deploying Windows images. 
+Alternatives to WDS, such as [Microsoft Endpoint Configuration Manager](/mem/configmgr/) and [Microsoft Deployment Toolkit](/mem/configmgr/mdt/) (MDT) provide a better, more flexible, and feature-rich experince for deploying Windows images. 
+
+## What is not impacted
+
+WDS PXE boot is not affected by this change. You can still use WDS to PXE boot devices with a custom boot images, but you will no longer be able to use **boot.wim** as the boot image and run Windows Setup in WDS mode.
+
+You can still run Windows Setup from a network share. Workflows that leverage a custom boot.wim, such as MDT or Configuration Manager are also not affected by this change.
 
 ## Summary
 
@@ -103,9 +103,10 @@ Alternatives to WDS, such as Configuration Manager and MDT provide a better, mor
 - Windows Server 2022 workflows that rely on boot.wim from installation media will show a non-blocking deprecation notice that can be dismissed, but the workflow is not blocked.
 - Windows Server workflows after Windows Server 2022 that rely on boot.wim from installation media will be blocked.
 
-If you currently use WDS with boot.wim from installation media for end-to-end operating system deployment, and your OS version is not supported, deprecated, or blocked, you can use other deployment tools, such as Microsoft Deployment Toolkit (MDT), Configuration Manager, or a non-Microsoft solution with a custom boot.wim image. 
+If you currently use WDS with **boot.wim** from installation media for end-to-end operating system deployment, and your OS version is not supported, deprecated, or blocked, you can use other deployment tools, such as MDT, Configuration Manager, or a non-Microsoft solution with a custom boot.wim image. 
 
 ## Also see
 
 [Create a custom Windows PE boot image with Configuration Manager](deploy-windows-cm/create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
-[Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
+[Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)<br>
+[Features removed or no longer developed starting with Windows Server 2022](/windows-server/get-started/removed-deprecated-features-windows-server-2022)

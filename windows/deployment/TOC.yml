@@ -68,8 +68,6 @@
               items:
                 - name: Windows 10 deprecated features
                   href: planning/windows-10-deprecated-features.md
-                - name: Windows 11 deprecated features
-                  href: planning/windows-11-deprecated-features.md
             - name: Features we removed
               items:
                 - name: Windows 10 features removed
