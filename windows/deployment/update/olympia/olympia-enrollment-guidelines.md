@@ -55,20 +55,20 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
 
 1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/instantanswers/5de907f1-f8ba-4fd9-a89d-efd23fee918c/create-a-local-user-or-administrator-account-in-windows-10)).
 
-    ![Settings -> Accounts](images/1-1.png)
+    ![Settings -> Accounts.](images/1-1.png)
 
 2. If you are already connected to a domain, click the existing account and then click **Disconnect**. Click **Restart Later**.
 
 3. Click **Connect** and enter your **Olympia corporate account** (e.g., username@olympia.windows.com). Click **Next**.
 
-    ![Entering account information when setting up a work or school account](images/1-3.png)
+    ![Entering account information when setting up a work or school account.](images/1-3.png)
 
 4. Enter the temporary password that was sent to you. Click **Sign in**. Follow the instructions to set a new password.
 
     > [!NOTE]
     > Passwords should contain 8-16 characters, including at least one special character or number.
 
-    ![Update your password](images/1-4.png)
+    ![Update your password.](images/1-4.png)
 
 5. Read the **Terms and Conditions**. Click **Accept** to participate in the program.
 
@@ -94,24 +94,24 @@ This is the Bring Your Own Device (BYOD) method--your device will receive Olympi
 
 1. Go to **Start > Settings > Accounts > Access work or school**. To see this setting, you need to have administrator rights to your device (see [local administrator](https://support.microsoft.com/instantanswers/5de907f1-f8ba-4fd9-a89d-efd23fee918c/create-a-local-user-or-administrator-account-in-windows-10)).
 
-    ![Settings -> Accounts](images/1-1.png)
+    ![Settings -> Accounts.](images/1-1.png)
 
 2. If you are already connected to a domain, click the existing account and then click **Disconnect**. Click **Restart Later**.
     
 3. Click **Connect**, then click **Join this device to Azure Active Directory**.
 
-    ![Joining device to Azure AD]](images/2-3.png)
+    ![Joining device to Azure AD.]](images/2-3.png)
 
 4. Enter your **Olympia corporate account** (e.g., username@olympia.windows.com). Click **Next**.
 
-    ![Set up a work or school account](images/2-4.png)
+    ![Set up a work or school account.](images/2-4.png)
 
 5. Enter the temporary password that was sent to you. Click **Sign in**. Follow the instructions to set a new password.
 
     > [!NOTE]
     > Passwords should contain 8-16 characters, including at least one special character or number.
 
-    ![Entering temporary password](images/2-5.png)
+    ![Entering temporary password.](images/2-5.png)
 
 6. When asked to make sure this is your organization, verify that the information is correct. If so, click **Join**.
 

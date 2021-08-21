@@ -20,7 +20,7 @@ This configuration service provider requires the ID\_CAP\_NETWORKING\_ADMIN capa
 
 The following diagram shows the CM\_CellularEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
 
-![cm\-cellularentries csp](images/provisioning-csp-cm-cellularentries.png)
+![cm\-cellularentries csp.](images/provisioning-csp-cm-cellularentries.png)
 
 <a href="" id="entryname"></a>***entryname***  
 <p style="margin-left: 20px">Defines the name of the connection.</p>
