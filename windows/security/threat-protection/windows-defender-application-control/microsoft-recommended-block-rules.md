@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 04/09/2019
+ms.date: 08/23/2021
 ---
 
 # Microsoft recommended block rules
@@ -22,7 +22,7 @@ ms.date: 04/09/2019
 **Applies to:**
 
 - Windows 10
-- Windows Server 2016 and above
+- Windows Server 2016 or later
 
 Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
