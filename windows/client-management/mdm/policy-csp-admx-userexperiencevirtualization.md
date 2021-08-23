@@ -470,7 +470,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Calculator*
+-   GP Friendly name: *Calculator*
 -   GP name: *Calculator*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -549,7 +549,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Sync Method*
+-   GP Friendly name: *Configure Sync Method*
 -   GP name: *ConfigureSyncMethod*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -624,7 +624,7 @@ If you do not configure this policy, no UE-V rollback state is copied to the set
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *VDI Configuration*
+-   GP Friendly name: *VDI Configuration*
 -   GP name: *ConfigureVdi*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -695,7 +695,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Contact IT Link Text*
+-   GP Friendly name: *Contact IT Link Text*
 -   GP name: *ContactITDescription*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -765,7 +765,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Contact IT URL*
+-   GP Friendly name: *Contact IT URL*
 -   GP name: *ContactITUrl*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -842,7 +842,7 @@ If you do not configure this policy setting, any defined values are deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not synchronize Windows Apps*
+-   GP Friendly name: *Do not synchronize Windows Apps*
 -   GP name: *DisableWin8Sync*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -914,7 +914,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Synchronize Windows settings*
+-   GP Friendly name: *Synchronize Windows settings*
 -   GP name: *DisableWindowsOSSettings*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -981,7 +981,7 @@ Reboot is needed for enable to take effect. With Auto-register inbox templates e
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable UEV*
+-   GP Friendly name: *Enable UEV*
 -   GP name: *EnableUEV*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1053,7 +1053,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Finance*
+-   GP Friendly name: *Finance*
 -   GP name: *Finance*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1124,7 +1124,7 @@ If you do not configure this policy setting, any defined values are deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *First Use Notification*
+-   GP Friendly name: *First Use Notification*
 -   GP name: *FirstUseNotificationEnabled*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1196,7 +1196,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Games*
+-   GP Friendly name: *Games*
 -   GP name: *Games*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1270,7 +1270,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Internet Explorer 8*
+-   GP Friendly name: *Internet Explorer 8*
 -   GP name: *InternetExplorer8*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1342,7 +1342,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Internet Explorer 9*
+-   GP Friendly name: *Internet Explorer 9*
 -   GP name: *InternetExplorer9*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1414,7 +1414,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Internet Explorer 10*
+-   GP Friendly name: *Internet Explorer 10*
 -   GP name: *InternetExplorer10*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1486,7 +1486,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Internet Explorer 11*
+-   GP Friendly name: *Internet Explorer 11*
 -   GP name: *InternetExplorer11*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1559,7 +1559,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Internet Explorer Common Settings*
+-   GP Friendly name: *Internet Explorer Common Settings*
 -   GP name: *InternetExplorerCommon*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1630,7 +1630,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Maps*
+-   GP Friendly name: *Maps*
 -   GP name: *Maps*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1700,7 +1700,7 @@ If you disable or do not configure this policy setting, no event is written to t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Settings package size warning threshold*
+-   GP Friendly name: *Settings package size warning threshold*
 -   GP name: *MaxPackageSizeInBytes*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1772,7 +1772,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Access 2010*
+-   GP Friendly name: *Microsoft Access 2010*
 -   GP name: *MicrosoftOffice2010Access*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1844,7 +1844,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 2010 Common Settings*
+-   GP Friendly name: *Microsoft Office 2010 Common Settings*
 -   GP name: *MicrosoftOffice2010Common*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1915,7 +1915,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Excel 2010*
+-   GP Friendly name: *Microsoft Excel 2010*
 -   GP name: *MicrosoftOffice2010Excel*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -1987,7 +1987,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft InfoPath 2010*
+-   GP Friendly name: *Microsoft InfoPath 2010*
 -   GP name: *MicrosoftOffice2010InfoPath*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2059,7 +2059,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Lync 2010*
+-   GP Friendly name: *Microsoft Lync 2010*
 -   GP name: *MicrosoftOffice2010Lync*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2130,7 +2130,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft OneNote 2010*
+-   GP Friendly name: *Microsoft OneNote 2010*
 -   GP name: *MicrosoftOffice2010OneNote*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2202,7 +2202,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Outlook 2010*
+-   GP Friendly name: *Microsoft Outlook 2010*
 -   GP name: *MicrosoftOffice2010Outlook*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2274,7 +2274,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft PowerPoint 2010*
+-   GP Friendly name: *Microsoft PowerPoint 2010*
 -   GP name: *MicrosoftOffice2010PowerPoint*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2345,7 +2345,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Project 2010*
+-   GP Friendly name: *Microsoft Project 2010*
 -   GP name: *MicrosoftOffice2010Project*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2417,7 +2417,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Publisher 2010*
+-   GP Friendly name: *Microsoft Publisher 2010*
 -   GP name: *MicrosoftOffice2010Publisher*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2489,7 +2489,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft SharePoint Designer 2010*
+-   GP Friendly name: *Microsoft SharePoint Designer 2010*
 -   GP name: *MicrosoftOffice2010SharePointDesigner*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2561,7 +2561,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft SharePoint Workspace 2010*
+-   GP Friendly name: *Microsoft SharePoint Workspace 2010*
 -   GP name: *MicrosoftOffice2010SharePointWorkspace*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2633,7 +2633,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Visio 2010*
+-   GP Friendly name: *Microsoft Visio 2010*
 -   GP name: *MicrosoftOffice2010Visio*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2705,7 +2705,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Word 2010*
+-   GP Friendly name: *Microsoft Word 2010*
 -   GP name: *MicrosoftOffice2010Word*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2776,7 +2776,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Access 2013*
+-   GP Friendly name: *Microsoft Access 2013*
 -   GP name: *MicrosoftOffice2013Access*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2848,7 +2848,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Access 2013 backup only*
+-   GP Friendly name: *Access 2013 backup only*
 -   GP name: *MicrosoftOffice2013AccessBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2920,7 +2920,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 2013 Common Settings*
+-   GP Friendly name: *Microsoft Office 2013 Common Settings*
 -   GP name: *MicrosoftOffice2013Common*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -2993,7 +2993,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Common 2013 backup only*
+-   GP Friendly name: *Common 2013 backup only*
 -   GP name: *MicrosoftOffice2013CommonBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3066,7 +3066,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Excel 2013*
+-   GP Friendly name: *Microsoft Excel 2013*
 -   GP name: *MicrosoftOffice2013Excel*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3137,7 +3137,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Excel 2013 backup only*
+-   GP Friendly name: *Excel 2013 backup only*
 -   GP name: *MicrosoftOffice2013ExcelBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3209,7 +3209,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft InfoPath 2013*
+-   GP Friendly name: *Microsoft InfoPath 2013*
 -   GP name: *MicrosoftOffice2013InfoPath*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3281,7 +3281,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *InfoPath 2013 backup only*
+-   GP Friendly name: *InfoPath 2013 backup only*
 -   GP name: *MicrosoftOffice2013InfoPathBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3352,7 +3352,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Lync 2013*
+-   GP Friendly name: *Microsoft Lync 2013*
 -   GP name: *MicrosoftOffice2013Lync*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3424,7 +3424,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Lync 2013 backup only*
+-   GP Friendly name: *Lync 2013 backup only*
 -   GP name: *MicrosoftOffice2013LyncBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3496,7 +3496,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft OneDrive for Business 2013*
+-   GP Friendly name: *Microsoft OneDrive for Business 2013*
 -   GP name: *MicrosoftOffice2013OneDriveForBusiness*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3568,7 +3568,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft OneNote 2013*
+-   GP Friendly name: *Microsoft OneNote 2013*
 -   GP name: *MicrosoftOffice2013OneNote*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3640,7 +3640,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *OneNote 2013 backup only*
+-   GP Friendly name: *OneNote 2013 backup only*
 -   GP name: *MicrosoftOffice2013OneNoteBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3711,7 +3711,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Outlook 2013*
+-   GP Friendly name: *Microsoft Outlook 2013*
 -   GP name: *MicrosoftOffice2013Outlook*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3783,7 +3783,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Outlook 2013 backup only*
+-   GP Friendly name: *Outlook 2013 backup only*
 -   GP name: *MicrosoftOffice2013OutlookBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3855,7 +3855,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft PowerPoint 2013*
+-   GP Friendly name: *Microsoft PowerPoint 2013*
 -   GP name: *MicrosoftOffice2013PowerPoint*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3927,7 +3927,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *PowerPoint 2013 backup only*
+-   GP Friendly name: *PowerPoint 2013 backup only*
 -   GP name: *MicrosoftOffice2013PowerPointBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -3998,7 +3998,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Project 2013*
+-   GP Friendly name: *Microsoft Project 2013*
 -   GP name: *MicrosoftOffice2013Project*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4070,7 +4070,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Project 2013 backup only*
+-   GP Friendly name: *Project 2013 backup only*
 -   GP name: *MicrosoftOffice2013ProjectBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4142,7 +4142,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Publisher 2013*
+-   GP Friendly name: *Microsoft Publisher 2013*
 -   GP name: *MicrosoftOffice2013Publisher*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4214,7 +4214,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Publisher 2013 backup only*
+-   GP Friendly name: *Publisher 2013 backup only*
 -   GP name: *MicrosoftOffice2013PublisherBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4286,7 +4286,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft SharePoint Designer 2013*
+-   GP Friendly name: *Microsoft SharePoint Designer 2013*
 -   GP name: *MicrosoftOffice2013SharePointDesigner*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4357,7 +4357,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *SharePoint Designer 2013 backup only*
+-   GP Friendly name: *SharePoint Designer 2013 backup only*
 -   GP name: *MicrosoftOffice2013SharePointDesignerBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4428,7 +4428,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 2013 Upload Center*
+-   GP Friendly name: *Microsoft Office 2013 Upload Center*
 -   GP name: *MicrosoftOffice2013UploadCenter*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4500,7 +4500,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Visio 2013*
+-   GP Friendly name: *Microsoft Visio 2013*
 -   GP name: *MicrosoftOffice2013Visio*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4572,7 +4572,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Visio 2013 backup only*
+-   GP Friendly name: *Visio 2013 backup only*
 -   GP name: *MicrosoftOffice2013VisioBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4644,7 +4644,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Word 2013*
+-   GP Friendly name: *Microsoft Word 2013*
 -   GP name: *MicrosoftOffice2013Word*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4716,7 +4716,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Word 2013 backup only*
+-   GP Friendly name: *Word 2013 backup only*
 -   GP name: *MicrosoftOffice2013WordBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4788,7 +4788,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Access 2016*
+-   GP Friendly name: *Microsoft Access 2016*
 -   GP name: *MicrosoftOffice2016Access*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4860,7 +4860,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Access 2016 backup only*
+-   GP Friendly name: *Access 2016 backup only*
 -   GP name: *MicrosoftOffice2016AccessBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -4932,7 +4932,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 2016 Common Settings*
+-   GP Friendly name: *Microsoft Office 2016 Common Settings*
 -   GP name: *MicrosoftOffice2016Common*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5005,7 +5005,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Common 2016 backup only*
+-   GP Friendly name: *Common 2016 backup only*
 -   GP name: *MicrosoftOffice2016CommonBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5077,7 +5077,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Excel 2016*
+-   GP Friendly name: *Microsoft Excel 2016*
 -   GP name: *MicrosoftOffice2016Excel*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5149,7 +5149,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Excel 2016 backup only*
+-   GP Friendly name: *Excel 2016 backup only*
 -   GP name: *MicrosoftOffice2016ExcelBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5221,7 +5221,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Lync 2016*
+-   GP Friendly name: *Microsoft Lync 2016*
 -   GP name: *MicrosoftOffice2016Lync*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5293,7 +5293,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Lync 2016 backup only*
+-   GP Friendly name: *Lync 2016 backup only*
 -   GP name: *MicrosoftOffice2016LyncBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5365,7 +5365,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft OneDrive for Business 2016*
+-   GP Friendly name: *Microsoft OneDrive for Business 2016*
 -   GP name: *MicrosoftOffice2016OneDriveForBusiness*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5437,7 +5437,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft OneNote 2016*
+-   GP Friendly name: *Microsoft OneNote 2016*
 -   GP name: *MicrosoftOffice2016OneNote*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5509,7 +5509,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *OneNote 2016 backup only*
+-   GP Friendly name: *OneNote 2016 backup only*
 -   GP name: *MicrosoftOffice2016OneNoteBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5581,7 +5581,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Outlook 2016*
+-   GP Friendly name: *Microsoft Outlook 2016*
 -   GP name: *MicrosoftOffice2016Outlook*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5653,7 +5653,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Outlook 2016 backup only*
+-   GP Friendly name: *Outlook 2016 backup only*
 -   GP name: *MicrosoftOffice2016OutlookBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5725,7 +5725,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft PowerPoint 2016*
+-   GP Friendly name: *Microsoft PowerPoint 2016*
 -   GP name: *MicrosoftOffice2016PowerPoint*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5797,7 +5797,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *PowerPoint 2016 backup only*
+-   GP Friendly name: *PowerPoint 2016 backup only*
 -   GP name: *MicrosoftOffice2016PowerPointBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5870,7 +5870,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Project 2016*
+-   GP Friendly name: *Microsoft Project 2016*
 -   GP name: *MicrosoftOffice2016Project*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -5941,7 +5941,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Project 2016 backup only*
+-   GP Friendly name: *Project 2016 backup only*
 -   GP name: *MicrosoftOffice2016ProjectBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6013,7 +6013,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Publisher 2016*
+-   GP Friendly name: *Microsoft Publisher 2016*
 -   GP name: *MicrosoftOffice2016Publisher*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6085,7 +6085,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Publisher 2016 backup only*
+-   GP Friendly name: *Publisher 2016 backup only*
 -   GP name: *MicrosoftOffice2016PublisherBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6156,7 +6156,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 2016 Upload Center*
+-   GP Friendly name: *Microsoft Office 2016 Upload Center*
 -   GP name: *MicrosoftOffice2016UploadCenter*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6228,7 +6228,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Visio 2016*
+-   GP Friendly name: *Microsoft Visio 2016*
 -   GP name: *MicrosoftOffice2016Visio*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6300,7 +6300,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Visio 2016 backup only*
+-   GP Friendly name: *Visio 2016 backup only*
 -   GP name: *MicrosoftOffice2016VisioBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6372,7 +6372,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Word 2016*
+-   GP Friendly name: *Microsoft Word 2016*
 -   GP name: *MicrosoftOffice2016Word*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6444,7 +6444,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Word 2016 backup only*
+-   GP Friendly name: *Word 2016 backup only*
 -   GP name: *MicrosoftOffice2016WordBackup*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6516,7 +6516,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Access 2013*
+-   GP Friendly name: *Microsoft Office 365 Access 2013*
 -   GP name: *MicrosoftOffice365Access2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6588,7 +6588,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Access 2016*
+-   GP Friendly name: *Microsoft Office 365 Access 2016*
 -   GP name: *MicrosoftOffice365Access2016*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6660,7 +6660,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Common 2013*
+-   GP Friendly name: *Microsoft Office 365 Common 2013*
 -   GP name: *MicrosoftOffice365Common2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6731,7 +6731,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Common 2016*
+-   GP Friendly name: *Microsoft Office 365 Common 2016*
 -   GP name: *MicrosoftOffice365Common2016*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6803,7 +6803,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Excel 2013*
+-   GP Friendly name: *Microsoft Office 365 Excel 2013*
 -   GP name: *MicrosoftOffice365Excel2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6875,7 +6875,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Excel 2016*
+-   GP Friendly name: *Microsoft Office 365 Excel 2016*
 -   GP name: *MicrosoftOffice365Excel2016*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -6946,7 +6946,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 InfoPath 2013*
+-   GP Friendly name: *Microsoft Office 365 InfoPath 2013*
 -   GP name: *MicrosoftOffice365InfoPath2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7018,7 +7018,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Lync 2013*
+-   GP Friendly name: *Microsoft Office 365 Lync 2013*
 -   GP name: *MicrosoftOffice365Lync2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7090,7 +7090,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Lync 2016*
+-   GP Friendly name: *Microsoft Office 365 Lync 2016*
 -   GP name: *MicrosoftOffice365Lync2016*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7162,7 +7162,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 OneNote 2013*
+-   GP Friendly name: *Microsoft Office 365 OneNote 2013*
 -   GP name: *MicrosoftOffice365OneNote2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7234,7 +7234,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 OneNote 2016*
+-   GP Friendly name: *Microsoft Office 365 OneNote 2016*
 -   GP name: *MicrosoftOffice365OneNote2016*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7306,7 +7306,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Outlook 2013*
+-   GP Friendly name: *Microsoft Office 365 Outlook 2013*
 -   GP name: *MicrosoftOffice365Outlook2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7378,7 +7378,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Outlook 2016*
+-   GP Friendly name: *Microsoft Office 365 Outlook 2016*
 -   GP name: *MicrosoftOffice365Outlook2016*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7450,7 +7450,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 PowerPoint 2013*
+-   GP Friendly name: *Microsoft Office 365 PowerPoint 2013*
 -   GP name: *MicrosoftOffice365PowerPoint2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7522,7 +7522,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 PowerPoint 2016*
+-   GP Friendly name: *Microsoft Office 365 PowerPoint 2016*
 -   GP name: *MicrosoftOffice365PowerPoint2016*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7594,7 +7594,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Project 2013*
+-   GP Friendly name: *Microsoft Office 365 Project 2013*
 -   GP name: *MicrosoftOffice365Project2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7665,7 +7665,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Project 2016*
+-   GP Friendly name: *Microsoft Office 365 Project 2016*
 -   GP name: *MicrosoftOffice365Project2016*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7737,7 +7737,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Publisher 2013*
+-   GP Friendly name: *Microsoft Office 365 Publisher 2013*
 -   GP name: *MicrosoftOffice365Publisher2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7809,7 +7809,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Publisher 2016*
+-   GP Friendly name: *Microsoft Office 365 Publisher 2016*
 -   GP name: *MicrosoftOffice365Publisher2016*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7881,7 +7881,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 SharePoint Designer 2013*
+-   GP Friendly name: *Microsoft Office 365 SharePoint Designer 2013*
 -   GP name: *MicrosoftOffice365SharePointDesigner2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -7953,7 +7953,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Visio 2013*
+-   GP Friendly name: *Microsoft Office 365 Visio 2013*
 -   GP name: *MicrosoftOffice365Visio2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8025,7 +8025,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Visio 2016*
+-   GP Friendly name: *Microsoft Office 365 Visio 2016*
 -   GP name: *MicrosoftOffice365Visio2016*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8097,7 +8097,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Word 2013*
+-   GP Friendly name: *Microsoft Office 365 Word 2013*
 -   GP name: *MicrosoftOffice365Word2013*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8169,7 +8169,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Office 365 Word 2016*
+-   GP Friendly name: *Microsoft Office 365 Word 2016*
 -   GP name: *MicrosoftOffice365Word2016*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8240,7 +8240,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Music*
+-   GP Friendly name: *Music*
 -   GP name: *Music*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8312,7 +8312,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *News*
+-   GP Friendly name: *News*
 -   GP name: *News*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8384,7 +8384,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Notepad*
+-   GP Friendly name: *Notepad*
 -   GP name: *Notepad*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8457,7 +8457,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Reader*
+-   GP Friendly name: *Reader*
 -   GP name: *Reader*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8527,7 +8527,7 @@ If you disable or do not configure this policy setting, the default value of 200
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Synchronization timeout*
+-   GP Friendly name: *Synchronization timeout*
 -   GP name: *RepositoryTimeout*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8597,7 +8597,7 @@ If you disable or do not configure this policy setting, the user settings are st
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Settings storage path*
+-   GP Friendly name: *Settings storage path*
 -   GP name: *SettingsStoragePath*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8673,7 +8673,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Settings template catalog path*
+-   GP Friendly name: *Settings template catalog path*
 -   GP name: *SettingsTemplateCatalogPath*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8745,7 +8745,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Sports*
+-   GP Friendly name: *Sports*
 -   GP name: *Sports*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8811,7 +8811,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting al
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use User Experience Virtualization (UE-V)*
+-   GP Friendly name: *Use User Experience Virtualization (UE-V)*
 -   GP name: *SyncEnabled*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8882,7 +8882,7 @@ If you do not configure this policy setting, any defined values are deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Sync settings over metered connections*
+-   GP Friendly name: *Sync settings over metered connections*
 -   GP name: *SyncOverMeteredNetwork*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -8954,7 +8954,7 @@ If you do not configure this policy setting, any defined values are deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Sync settings over metered connections even when roaming*
+-   GP Friendly name: *Sync settings over metered connections even when roaming*
 -   GP name: *SyncOverMeteredNetworkWhenRoaming*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -9026,7 +9026,7 @@ If you do not configure this policy, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Ping the settings storage location before sync*
+-   GP Friendly name: *Ping the settings storage location before sync*
 -   GP name: *SyncProviderPingEnabled*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -9097,7 +9097,7 @@ If you do not configure this policy setting, any defined values are deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Sync Unlisted Windows Apps*
+-   GP Friendly name: *Sync Unlisted Windows Apps*
 -   GP name: *SyncUnlistedWindows8Apps*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -9169,7 +9169,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Travel*
+-   GP Friendly name: *Travel*
 -   GP name: *Travel*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -9238,7 +9238,7 @@ If you do not configure this policy setting, any defined values are deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Tray Icon*
+-   GP Friendly name: *Tray Icon*
 -   GP name: *TrayIconEnabled*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -9310,7 +9310,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Video*
+-   GP Friendly name: *Video*
 -   GP name: *Video*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -9382,7 +9382,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Weather*
+-   GP Friendly name: *Weather*
 -   GP name: *Weather*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Windows Apps*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -9453,7 +9453,7 @@ If you do not configure this policy setting, any defined values will be deleted.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *WordPad*
+-   GP Friendly name: *WordPad*
 -   GP name: *Wordpad*
 -   GP path: *Windows Components\Microsoft User Experience Virtualization\Applications*
 -   GP ADMX file name: *UserExperienceVirtualization.admx*
@@ -9461,16 +9461,7 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->
 

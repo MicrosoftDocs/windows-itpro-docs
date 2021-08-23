@@ -4,9 +4,9 @@ description: This section describes the StartupApp settings that you can configu
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
@@ -23,4 +23,4 @@ Use StartupApp settings to configure the default app that will run on start for 
 | --- | :---: | :---: | :---: | :---: | :---: |
 | Default |  |  |  |  |  X |
 
-Enter the [Application User Model ID (AUMID)](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) for the default app. 
+Enter the [Application User Model ID (AUMID)](/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) for the default app.

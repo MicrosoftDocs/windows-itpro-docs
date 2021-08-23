@@ -29,6 +29,9 @@ manager: dansimp
     <a href="#system-allowcommercialdatapipeline">System/AllowCommercialDataPipeline</a>
   </dd>
   <dd>
+    <a href="#system-allowdesktopanalyticsprocessing">System/AllowDesktopAnalyticsProcessing </a>
+  </dd>
+  <dd>
     <a href="#system-allowdevicenameindiagnosticdata">System/AllowDeviceNameInDiagnosticData</a>
   </dd>
   <dd>
@@ -44,13 +47,22 @@ manager: dansimp
     <a href="#system-allowlocation">System/AllowLocation</a>
   </dd>
   <dd>
+    <a href="#system-allowmicrosoftmanageddesktopprocessing">System/AllowMicrosoftManagedDesktopProcessing</a>
+  </dd>
+  <dd>
     <a href="#system-allowstoragecard">System/AllowStorageCard</a>
   </dd>
   <dd>
     <a href="#system-allowtelemetry">System/AllowTelemetry</a>
   </dd>
   <dd>
+    <a href="#system-allowupdatecomplianceprocessing">System/AllowUpdateComplianceProcessing</a>
+  </dd>
+  <dd>
     <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
+  </dd>
+ <dd>
+    <a href="#system-allowwufbcloudprocessing">System/AllowWuFBCloudProcessing</a>
   </dd>
   <dd>
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
@@ -111,11 +123,7 @@ manager: dansimp
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -141,7 +149,7 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy setting applies only to devices running Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, Windows 10 Mobile, and Windows 10 Mobile Enterprise.
+> This policy setting applies only to devices running Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
 This policy setting determines whether users can access the Insider build controls in the Advanced Options for Windows Update. These controls are located under "Get Insider builds," and enable users to make their devices available for downloading and installing Windows preview software.
 
@@ -150,7 +158,7 @@ If you enable or do not configure this policy setting, users can download and in
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Toggle user control over Insider builds*
+-   GP Friendly name: *Toggle user control over Insider builds*
 -   GP name: *AllowBuildPreview*
 -   GP path: *Data Collection and Preview Builds*
 -   GP ADMX file name: *AllowBuildPreview.admx*
@@ -183,11 +191,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -212,18 +216,25 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting opts the device into the Windows enterprise data pipeline. 
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
 
-If you enable this setting, data collected from the device will be opted into the Windows enterprise data pipeline.
+To enable this behavior, you must complete two steps:
 
-If you disable or don't configure this setting, all data from the device will be collected and processed in accordance with our policies for the Windows standard data pipeline.
+ 1. Enable this policy setting
+ 2. Join an Azure Active Directory account to the device
 
-Configuring this setting does not change the telemetry collection level or the ability of the user to change the level. This setting only applies to the Windows operating system and apps included with Windows, not third-party apps or services running on Windows 10.
+Windows diagnostic data is collected when the Allow Telemetry policy setting is set to 1 – **Required (Basic)** or above.
+
+If you disable or do not configure this setting, Microsoft will be the controller of the Windows diagnostic data collected from the device and processed in accordance with Microsoft’s [privacy statement](https://go.microsoft.com/fwlink/?LinkId=521839) unless you have enabled policies like Allow Update Compliance Processing or Allow Desktop Analytics Processing.
+
+Configuring this setting does not change the Windows diagnostic data collection level set for the device or the operation of optional analytics processor services like Desktop Analytics and Update Compliance.
+
+See the documentation at [ConfigureWDD](https://aka.ms/ConfigureWDD) for information on this and other policies that will result in Microsoft being the processor of Windows diagnostic data.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow commercial data pipeline*
+-   GP Friendly name: *Allow commercial data pipeline*
 -   GP name: *AllowCommercialDataPipeline*
 -   GP element: *AllowCommercialDataPipeline*
 -   GP path: *Data Collection and Preview Builds*
@@ -248,6 +259,36 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="system-allowdesktopanalyticsprocessing"></a>**System/AllowDesktopAnalyticsProcessing**  
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID policy settings, enables organizations to configure the device so that Microsoft is the processor for Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
+
+To enable this behavior, you must complete three steps:
+
+ 1. Enable this policy setting
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
+ 3. Set the Configure the Commercial ID setting for your Desktop Analytics workspace
+
+This setting has no effect on devices unless they are properly enrolled in Desktop Analytics.
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable or do not configure this policy setting, devices will not appear in Desktop Analytics.
+
+The following list shows the supported values:
+
+-   0 (default) – Disabled.
+-   2 – Allowed.
+
+
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="system-allowdevicenameindiagnosticdata"></a>**System/AllowDeviceNameInDiagnosticData**  
 
 <!--SupportedSKUs-->
@@ -262,11 +303,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -296,7 +333,7 @@ This policy allows the device name to be sent to Microsoft as part of Windows di
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow device name to be sent in Windows diagnostic data*
+-   GP Friendly name: *Allow device name to be sent in Windows diagnostic data*
 -   GP name: *AllowDeviceNameInDiagnosticData*
 -   GP element: *AllowDeviceNameInDiagnosticData*
 -   GP path: *Data Collection and Preview Builds*
@@ -335,11 +372,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -395,11 +428,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -460,11 +489,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -501,7 +526,7 @@ This setting is used by lower-level components for text display and fond handlin
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Enable Font Providers*
+-   GP Friendly name: *Enable Font Providers*
 -   GP name: *EnableFontProviders*
 -   GP path: *Network/Fonts*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -539,11 +564,7 @@ To verify if System/AllowFontProviders is set to true:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -582,7 +603,7 @@ For example, an app's original Location setting is Off. The administrator then s
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off location*
+-   GP Friendly name: *Turn off location*
 -   GP name: *DisableLocation_2*
 -   GP path: *Windows Components/Location and Sensors*
 -   GP ADMX file name: *Sensors.admx*
@@ -600,6 +621,27 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
+<a href="" id="system-allowmicrosoftmanageddesktopprocessing"></a>**System/AllowMicrosoftManagedDesktopProcessing**
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data.
+
+For customers who enroll into the Microsoft Managed Desktop service, this policy will be enabled by default to allow Microsoft to process data for operational and analytic needs. For more information, see [Privacy and personal data](/microsoft-365/managed-desktop/service-description/privacy-personal-data.md).
+
+This setting has no effect on devices unless they are properly enrolled in Microsoft Managed Desktop.
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable this policy setting, devices may not appear in Microsoft Managed Desktop.
+
+>[!IMPORTANT]
+> You should not disable or make changes to this policy as that will severely impact the ability of Microsoft Managed Desktop to manage the devices.
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="system-allowstoragecard"></a>**System/AllowStorageCard**  
 
 <!--SupportedSKUs-->
@@ -614,11 +656,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -674,11 +712,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -706,7 +740,7 @@ The following list shows the supported values:
 <!--Description-->
 Allows the device to send diagnostic and usage telemetry data, such as Watson. 
 
-For more information about diagnostic data, including what is and what is not collected by Windows, see [Configure Windows diagnostic data in your organization](https://docs.microsoft.com/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
+For more information about diagnostic data, including what is and what is not collected by Windows, see [Configure Windows diagnostic data in your organization](/windows/privacy/configure-windows-diagnostic-data-in-your-organization).
 
 The following list shows the supported values for Windows 8.1:  
 -   0 - Not allowed.
@@ -736,12 +770,25 @@ The following list shows the supported values for Windows 8.1:
 </tbody>
 </table>-->
 
-In Windows 10, you can configure this policy setting to decide what level of diagnostic data to send to Microsoft. The following list shows the supported values for Windows 10:  
--   0 – (**Security**) Sends information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Microsoft Defender. 
-    **Note:** This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), Hololens 2, and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
--   1 – (**Basic**) Sends the same data as a value of 0, plus additional basic device info, including quality-related data, app compatibility, and app usage data.
--   2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows, Windows Server, System Center, and apps are used, how they perform, and advanced reliability data.
--   3 – (**Full**) Sends the same data as a value of 2, plus all data necessary to identify and fix problems with devices.
+In Windows 10, you can configure this policy setting to decide what level of diagnostic data to send to Microsoft.
+
+The following list shows the supported values for Windows 10 version 1809 and older, choose the value that is applicable to your OS version (older OS values are displayed in the brackets):
+
+- 0 – **Off (Security)** This turns Windows diagnostic data off.
+
+    > [!NOTE]
+    > This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), HoloLens 2, and Windows Server 2016 (and later versions). Using this setting on other devices editions of Windows is equivalent to setting the value of 1.
+
+- 1 – **Required (Basic)** Sends basic device info, including quality-related data, app compatibility, and other similar data to keep the device secure and up-to-date.
+
+- 2 – (**Enhanced**) Sends the same data as a value of 1, plus additional insights, including how Windows apps are used, how they perform, and advanced reliability data, such as limited crash dumps.
+
+    > [!NOTE]
+    > **Enhanced** is no longer an option for Windows Holographic, version 21H1.
+
+- 3 – **Optional (Full)** Sends the same data as a value of 2, plus additional data necessary to identify and fix problems with devices such as enhanced error logs.
+
+Most restrictive value is 0.
 
 <!--<table style="margin-left: 20px">
 <colgroup>
@@ -756,7 +803,7 @@ In Windows 10, you can configure this policy setting to decide what level of dia
 <tr class="odd">
 <td style="vertical-align:top"><p>0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.</p>
 <div class="alert">
-<strong>Note</strong>  This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 Mobile Enterprise, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
+<strong>Note</strong>  This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
 </div>
 </td>
 </tr>
@@ -772,17 +819,10 @@ In Windows 10, you can configure this policy setting to decide what level of dia
 </tbody>
 </table>-->
 
-
-> [!IMPORTANT]
-> If you are using Windows 8.1 MDM server and set a value of 0 using the legacy AllowTelemetry policy on a Windows 10 Mobile device, then the value is not respected and the telemetry level is silently set to level 1.
-
-
-Most restricted value is 0.
-
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Telemetry*
+-   GP Friendly name: *Allow Telemetry*
 -   GP name: *AllowTelemetry*
 -   GP element: *AllowTelemetry*
 -   GP path: *Data Collection and Preview Builds*
@@ -790,6 +830,80 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="system-allowupdatecomplianceprocessing"></a>**System/AllowUpdateComplianceProcessing**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting, in combination with the Allow Telemetry and Configure the Commercial ID policy settings, enables organizations to configure the device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
+
+To enable this behavior, you must complete three steps:
+
+ 1. Enable this policy setting
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
+ 3. Set the Configure the Commercial ID setting for your Update Compliance workspace
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable or do not configure this policy setting, devices will not appear in Update Compliance.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Allow Update Compliance Processing*
+-   GP name: *AllowUpdateComplianceProcessing*
+-   GP element: *AllowUpdateComplianceProcessing*
+-   GP path: *Data Collection and Preview Builds*
+-   GP ADMX file name: *DataCollection.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Disabled.
+-   16 - Enabled.
+<!--/SupportedValues-->
+<!--/Policy-->
+
 
 <hr/>
 
@@ -808,11 +922,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -852,6 +962,29 @@ The following list shows the supported values:
 <!--/Policy-->
 
 <hr/>
+
+<!--Policy-->
+<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWuFBCloudProcessing**
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting configures an Azure Active Directory joined device so that Microsoft is the processor of the Windows diagnostic data collected from the device, subject to the [Product Terms](https://www.microsoft.com/licensing/terms/productoffering).
+
+To enable this behavior, you must complete three steps:
+
+ 1. Enable this policy setting
+ 2. Set **AllowTelemetry** to 1 – **Required (Basic)** or above
+ 3. Join an Azure Active Directory account to the device
+
+When these policies are configured, Windows diagnostic data collected from the device will be subject to Microsoft processor commitments.
+
+If you disable or do not configure this policy setting, devices enrolled to the Windows Update for Business deployment service will not be able to take advantage of some deployment service features.
+
+<hr/>
+
 <!--Policy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
 
@@ -867,11 +1000,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -918,7 +1047,7 @@ If your malware detection application does not include an Early Launch Antimalwa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Boot-Start Driver Initialization Policy*
+-   GP Friendly name: *Boot-Start Driver Initialization Policy*
 -   GP name: *POL_DriverLoadPolicy_Name*
 -   GP path: *System/Early Launch Antimalware*
 -   GP ADMX file name: *earlylauncham.admx*
@@ -943,11 +1072,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -982,7 +1107,7 @@ Value type is string.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Microsoft 365 Update Readiness upload endpoint*
+-   GP Friendly name: *Configure Microsoft 365 Update Readiness upload endpoint*
 -   GP name: *ConfigureMicrosoft365UploadEndpoint*
 -   GP element: *ConfigureMicrosoft365UploadEndpoint*
 -   GP path: *Data Collection and Preview Builds*
@@ -1017,11 +1142,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1053,7 +1174,7 @@ If you set this policy setting to "Enable telemetry change notifications" or don
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure telemetry opt-in change notifications.*
+-   GP Friendly name: *Configure telemetry opt-in change notifications.*
 -   GP name: *ConfigureTelemetryOptInChangeNotification*
 -   GP element: *ConfigureTelemetryOptInChangeNotification*
 -   GP path: *Data Collection and Preview Builds*
@@ -1084,11 +1205,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1125,7 +1242,7 @@ If you set this policy setting to "Enable Telemetry opt-in Settings" or don't co
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure telemetry opt-in setting user interface.*
+-   GP Friendly name: *Configure telemetry opt-in setting user interface.*
 -   GP name: *ConfigureTelemetryOptInSettingsUx*
 -   GP element: *ConfigureTelemetryOptInSettingsUx*
 -   GP path: *Data Collection and Preview Builds*
@@ -1156,11 +1273,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1192,7 +1305,7 @@ If you disable or don't configure this policy setting, the Delete diagnostic dat
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable deleting diagnostic data*
+-   GP Friendly name: *Disable deleting diagnostic data*
 -   GP name: *DisableDeviceDelete*
 -   GP element: *DisableDeviceDelete*
 -   GP path: *Data Collection and Preview Builds*
@@ -1227,11 +1340,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1263,7 +1372,7 @@ If you disable or don't configure this policy setting, the Diagnostic Data Viewe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable diagnostic data viewer.*
+-   GP Friendly name: *Disable diagnostic data viewer.*
 -   GP name: *DisableDiagnosticDataViewer*
 -   GP element: *DisableDiagnosticDataViewer*
 -   GP path: *Data Collection and Preview Builds*
@@ -1298,11 +1407,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1332,7 +1437,7 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service*
+-   GP Friendly name: *Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service*
 -   GP name: *DisableEnterpriseAuthProxy*
 -   GP element: *DisableEnterpriseAuthProxy*
 -   GP path: *Data Collection and Preview Builds*
@@ -1358,11 +1463,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1400,7 +1501,7 @@ If you disable or do not configure this policy setting, apps and features can wo
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent the usage of OneDrive for file storage*
+-   GP Friendly name: *Prevent the usage of OneDrive for file storage*
 -   GP name: *PreventOnedriveFileSync*
 -   GP path: *Windows Components/OneDrive*
 -   GP ADMX file name: *SkyDrive.admx*
@@ -1440,11 +1541,7 @@ To validate on Desktop, do the following:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" />  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1491,7 +1588,7 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off System Restore*
+-   GP Friendly name: *Turn off System Restore*
 -   GP name: *SR_DisableSR*
 -   GP path: *System/System Restore*
 -   GP ADMX file name: *systemrestore.admx*
@@ -1516,11 +1613,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1574,11 +1667,7 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1603,25 +1692,32 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting, in combination with the System/AllowTelemetry 
- policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. 
+This policy setting, in combination with the Allow Telemetry policy setting, enables organizations to send Microsoft a specific set of diagnostic data for IT insights via Windows Analytics services. 
  
 To enable this behavior, you must complete two steps:
-<ul>
-<li>Enable this policy setting</li>
-<li>Set Allow Telemetry to level 2 (Enhanced)</li>
-</ul>
+
+ 1. Enable this policy setting.
+
+ 2. Set the **AllowTelemetry** level:
+
+    - For Windows 10 version 1809 and older: set **AllowTelemetry** to Enhanced. 
+
+      > [!NOTE]
+      > **Enhanced** is no longer an option for Windows Holographic, version 21H1.
+
+    - For Windows 10 version 19H1 and later: set **AllowTelemetry** to Optional (Full)
+
  
-When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="https://go.microsoft.com/fwlink/?linkid=847594" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](https://go.microsoft.com/fwlink/?linkid=847594)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
+When you configure these policy settings, a basic level of  diagnostic data plus additional events that are required for Windows Analytics are sent to Microsoft. These events are documented here: <a href="/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields" data-raw-source="[Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics](/windows/privacy/enhanced-diagnostic-data-windows-analytics-events-and-fields)">Windows 10, version 1709 enhanced telemetry events and fields used by Windows Analytics</a>.
  
-Enabling enhanced diagnostic data in the System/AllowTelemetry policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send full, basic or security level diagnostic data to Microsoft.
+Enabling enhanced diagnostic data in the Allow Telemetry  policy in combination with not configuring this policy will also send the required events for Windows Analytics, plus additional enhanced level telemetry data. This setting has no effect on computers configured to send Required (Basic) or Optional (Full) diagnostic data to Microsoft.
    
 If you disable or do not configure this policy setting, then the level of diagnostic data sent to Microsoft is determined by the System/AllowTelemetry policy.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Limit Enhanced diagnostic data to the minimum required by Windows Analytics*
+-   GP Friendly name: *Limit Enhanced diagnostic data to the minimum required by Windows Analytics*
 -   GP name: *LimitEnhancedDiagnosticDataWindowsAnalytics*
 -   GP element: *LimitEnhancedDiagnosticDataWindowsAnalytics*
 -   GP path: *Data Collection and Preview Builds*
@@ -1647,11 +1743,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td><img src="images/checkmark.png" alt="check mark" />  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1683,7 +1775,7 @@ If you disable or do not configure this policy setting, Connected User Experienc
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Connected User Experiences and Telemetry*
+-   GP Friendly name: *Configure Connected User Experiences and Telemetry*
 -   GP name: *TelemetryProxy*
 -   GP element: *TelemetryProxyName*
 -   GP path: *Data Collection and Preview Builds*
@@ -1709,11 +1801,7 @@ ADMX Info:
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -1747,7 +1835,7 @@ If you disable or do not configure this policy setting, File History can be acti
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off File History*
+-   GP Friendly name: *Turn off File History*
 -   GP name: *DisableFileHistory*
 -   GP path: *Windows Components/File History*
 -   GP ADMX file name: *FileHistory.admx*
@@ -1778,5 +1866,8 @@ Footnotes:
 - 6 - Available in Windows 10, version 1903.
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
+- 9 - Available in Windows 10, version 20H2.
+- 10 - Available in Windows 10, version 21H1.
+- 11 - Also applies to Windows 10 Business.
 
 <!--/Policies-->

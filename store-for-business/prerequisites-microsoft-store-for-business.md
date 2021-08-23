@@ -3,16 +3,16 @@ title: Prerequisites for Microsoft Store for Business and Education (Windows 10)
 description: There are a few prerequisites for using Microsoft Store for Business or Microsoft Store for Education.
 ms.assetid: CEBC6870-FFDD-48AD-8650-8B0DC6B2651D
 ms.reviewer: 
-manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store
-author: TrudyHa
-ms.author: TrudyHa
+ms.author: cmcatee
+author: cmcatee-MSFT
+manager: scotv
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 
+ms.date: 07/21/2021
 ---
 
 # Prerequisites for Microsoft Store for Business and Education
@@ -21,6 +21,12 @@ ms.date:
 
 -   Windows 10
 -   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+
+> [!IMPORTANT]
+> Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
 
 > [!IMPORTANT]
 > Customers who are in the Office 365 GCC environment or are eligible to buy with government pricing cannot use Microsoft Store for Business.
@@ -41,7 +47,7 @@ Microsoft Azure Active Directory (AD) or Office 365 accounts for your employees:
 -   Employees need Azure AD accounts when they access Microsoft Store for Business or Education content from Windows-based devices.
 -   If you use a management tool to distribute and manage online-licensed apps, all employees will need an Azure AD account.
 
-For more information on Azure AD, see [About Office 365 and Azure Active Directory](https://go.microsoft.com/fwlink/p/?LinkId=708612), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
+For more information on Azure AD, see [About Office 365 and Azure Active Directory](/previous-versions//dn509517(v=technet.10)), and [Intro to Azure: identity and access](https://go.microsoft.com/fwlink/p/?LinkId=708611).
 
 ### Optional
 
@@ -68,9 +74,3 @@ If your organization restricts computers on your network from connecting to the 
  
 Store for Business requires Microsoft Windows HTTP Services (WinHTTP) to install, or update apps.
 For more information about how to configure WinHTTP proxy settings to devices, see [Use Group Policy to apply WinHTTP proxy settings to Windows clients](https://support.microsoft.com/help/4494447/use-group-policy-to-apply-winhttp-proxy-settings-to-clients).
- 
-
-
-
-
-

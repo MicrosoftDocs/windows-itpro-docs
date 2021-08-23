@@ -104,7 +104,7 @@ If you do not configure this policy setting, the Persistent System Timestamp is 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Persistent Time Stamp*
+-   GP Friendly name: *Enable Persistent Time Stamp*
 -   GP name: *EE_EnablePersistentTimeStamp*
 -   GP path: *System*
 -   GP ADMX file name: *Reliability.admx*
@@ -179,7 +179,7 @@ Also see the "Configure Error Reporting" policy setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Report unplanned shutdown events*
+-   GP Friendly name: *Report unplanned shutdown events*
 -   GP name: *PCH_ReportShutdownEvents*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *Reliability.admx*
@@ -257,7 +257,7 @@ If you do not configure this policy setting, the default behavior for the System
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Activate Shutdown Event Tracker System State Data feature*
+-   GP Friendly name: *Activate Shutdown Event Tracker System State Data feature*
 -   GP name: *ShutdownEventTrackerStateFile*
 -   GP path: *System*
 -   GP ADMX file name: *Reliability.admx*
@@ -337,7 +337,7 @@ If you do not configure this policy setting, the default behavior for the Shutdo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Display Shutdown Event Tracker*
+-   GP Friendly name: *Display Shutdown Event Tracker*
 -   GP name: *ShutdownReason*
 -   GP path: *System*
 -   GP ADMX file name: *Reliability.admx*
@@ -346,16 +346,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

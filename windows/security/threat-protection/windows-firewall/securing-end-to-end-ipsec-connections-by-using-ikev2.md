@@ -1,7 +1,7 @@
 ---
 title: Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012 (Windows 10)
 description: Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.topic: conceptual
 ms.date: 08/17/2017
 ms.reviewer: 
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # Securing End-to-End IPsec connections by using IKEv2
@@ -48,7 +49,7 @@ You can use IKEv2 as a virtual private network (VPN) tunneling protocol that sup
 
 -   [Troubleshooting](#troubleshooting)
 
->**Note:**  This topic includes sample Windows PowerShell cmdlets. For more info, see [How to Run a Windows PowerShell Cmdlet](https://go.microsoft.com/fwlink/p/?linkid=230693).
+>**Note:**  This topic includes sample Windows PowerShell cmdlets. For more info, see [How to Run a Windows PowerShell Cmdlet](/previous-versions//bb648607(v=vs.85)).
 
 ## Prerequisites
 
@@ -188,10 +189,4 @@ You might not find the exact answer for the issue, but you can find good hints. 
 -   [Windows Defender Firewall with Advanced Security](windows-firewall-with-advanced-security.md)
 
  
-
- 
-
-
-
-
 

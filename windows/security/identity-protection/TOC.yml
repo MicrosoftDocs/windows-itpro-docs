@@ -1,0 +1,132 @@
+- name: Identity and access management
+  href: index.md
+  items: 
+    - name: Technical support policy for lost or forgotten passwords
+      href: password-support-policy.md
+    - name: Access Control Overview
+      href: access-control/access-control.md
+      items: 
+        - name: Dynamic Access Control Overview
+          href: access-control/dynamic-access-control.md
+        - name: Security identifiers
+          href: access-control/security-identifiers.md
+        - name: Security Principals
+          href: access-control/security-principals.md
+        - name: Local Accounts
+          href: access-control/local-accounts.md
+        - name: Active Directory Accounts
+          href: access-control/active-directory-accounts.md
+        - name: Microsoft Accounts
+          href: access-control/microsoft-accounts.md
+        - name: Service Accounts
+          href: access-control/service-accounts.md
+        - name: Active Directory Security Groups
+          href: access-control/active-directory-security-groups.md
+        - name: Special Identities
+          href: access-control/special-identities.md
+        - name: User Account Control
+          href: user-account-control\user-account-control-overview.md
+          items: 
+            - name: How User Account Control works
+              href: user-account-control\how-user-account-control-works.md
+            - name: User Account Control security policy settings
+              href: user-account-control\user-account-control-security-policy-settings.md
+            - name: User Account Control Group Policy and registry key settings
+              href: user-account-control\user-account-control-group-policy-and-registry-key-settings.md
+    - name: Windows Hello for Business
+      href: hello-for-business/index.yml
+    - name: Protect derived domain credentials with Credential Guard
+      href: credential-guard/credential-guard.md
+      items: 
+        - name: How Credential Guard works
+          href: credential-guard/credential-guard-how-it-works.md
+        - name: Credential Guard Requirements
+          href: credential-guard/credential-guard-requirements.md
+        - name: Manage Credential Guard
+          href: credential-guard/credential-guard-manage.md
+        - name: Hardware readiness tool
+          href: credential-guard/dg-readiness-tool.md
+        - name: Credential Guard protection limits
+          href: credential-guard/credential-guard-protection-limits.md
+        - name: Considerations when using Credential Guard
+          href: credential-guard/credential-guard-considerations.md
+        - name: "Credential Guard: Additional mitigations"
+          href: credential-guard/additional-mitigations.md
+        - name: "Credential Guard: Known issues"
+          href: credential-guard/credential-guard-known-issues.md
+    - name: Protect Remote Desktop credentials with Remote Credential Guard
+      href: remote-credential-guard.md
+    - name: Smart Cards
+      href: smart-cards/smart-card-windows-smart-card-technical-reference.md
+      items: 
+        - name: How Smart Card Sign-in Works in Windows
+          href: smart-cards/smart-card-how-smart-card-sign-in-works-in-windows.md
+          items: 
+            - name: Smart Card Architecture
+              href: smart-cards/smart-card-architecture.md
+            - name: Certificate Requirements and Enumeration
+              href: smart-cards/smart-card-certificate-requirements-and-enumeration.md
+            - name: Smart Card and Remote Desktop Services
+              href: smart-cards/smart-card-and-remote-desktop-services.md
+            - name: Smart Cards for Windows Service
+              href: smart-cards/smart-card-smart-cards-for-windows-service.md
+            - name: Certificate Propagation Service
+              href: smart-cards/smart-card-certificate-propagation-service.md
+            - name: Smart Card Removal Policy Service
+              href: smart-cards/smart-card-removal-policy-service.md
+        - name: Smart Card Tools and Settings
+          href: smart-cards/smart-card-tools-and-settings.md
+          items: 
+            - name: Smart Cards Debugging Information
+              href: smart-cards/smart-card-debugging-information.md
+            - name: Smart Card Group Policy and Registry Settings
+              href: smart-cards/smart-card-group-policy-and-registry-settings.md
+            - name: Smart Card Events
+              href: smart-cards/smart-card-events.md
+        - name: Virtual Smart Cards
+          href: virtual-smart-cards\virtual-smart-card-overview.md
+          items: 
+            - name: Understanding and Evaluating Virtual Smart Cards
+              href: virtual-smart-cards\virtual-smart-card-understanding-and-evaluating.md
+              items: 
+                - name: "Get Started with Virtual Smart Cards: Walkthrough Guide"
+                  href: virtual-smart-cards\virtual-smart-card-get-started.md
+                - name: Use Virtual Smart Cards
+                  href: virtual-smart-cards\virtual-smart-card-use-virtual-smart-cards.md
+                - name: Deploy Virtual Smart Cards
+                  href: virtual-smart-cards\virtual-smart-card-deploy-virtual-smart-cards.md
+                - name: Evaluate Virtual Smart Card Security
+                  href: virtual-smart-cards\virtual-smart-card-evaluate-security.md
+            - name: Tpmvscmgr
+              href: virtual-smart-cards\virtual-smart-card-tpmvscmgr.md
+    - name: Enterprise Certificate Pinning
+      href: enterprise-certificate-pinning.md
+    - name: Windows 10 credential theft mitigation guide abstract
+      href: windows-credential-theft-mitigation-guide-abstract.md
+    - name: Configure S/MIME for Windows 10
+      href: configure-s-mime.md
+    - name: VPN technical guide
+      href: vpn\vpn-guide.md
+      items: 
+        - name: VPN connection types
+          href: vpn\vpn-connection-type.md
+        - name: VPN routing decisions
+          href: vpn\vpn-routing.md
+        - name: VPN authentication options
+          href: vpn\vpn-authentication.md
+        - name: VPN and conditional access
+          href: vpn\vpn-conditional-access.md
+        - name: VPN name resolution
+          href: vpn\vpn-name-resolution.md
+        - name: VPN auto-triggered profile options
+          href: vpn\vpn-auto-trigger-profile.md
+        - name: VPN security features
+          href: vpn\vpn-security-features.md
+        - name: VPN profile options
+          href: vpn\vpn-profile-options.md
+        - name: How to configure Diffie Hellman protocol over IKEv2 VPN connections
+          href: vpn\how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections.md
+        - name: How to use single sign-on (SSO) over VPN and Wi-Fi connections
+          href: vpn\how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md
+        - name: Optimizing Office 365 traffic with the Windows 10 VPN client
+          href: vpn\vpn-office-365-optimization.md

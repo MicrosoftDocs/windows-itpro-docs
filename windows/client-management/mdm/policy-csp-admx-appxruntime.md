@@ -99,7 +99,7 @@ If you disable or don't set this policy setting, Windows Store apps will only us
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on dynamic Content URI Rules for Windows store apps*
+-   GP Friendly name: *Turn on dynamic Content URI Rules for Windows store apps*
 -   GP name: *AppxRuntimeApplicationContentUriRules*
 -   GP path: *Windows Components\App runtime*
 -   GP ADMX file name: *AppXRuntime.admx*
@@ -169,7 +169,7 @@ If you disable or do not configure this policy setting, Windows Store apps can o
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Block launching desktop apps associated with a file.*
+-   GP Friendly name: *Block launching desktop apps associated with a file.*
 -   GP name: *AppxRuntimeBlockFileElevation*
 -   GP path: *Windows Components\App runtime*
 -   GP ADMX file name: *AppXRuntime.admx*
@@ -241,7 +241,7 @@ If you disable or do not configure this policy setting, all Universal Windows ap
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Block launching Universal Windows apps with Windows Runtime API access from hosted content.*
+-   GP Friendly name: *Block launching Universal Windows apps with Windows Runtime API access from hosted content.*
 -   GP name: *AppxRuntimeBlockHostedAppAccessWinRT*
 -   GP path: *Windows Components\App runtime*
 -   GP ADMX file name: *AppXRuntime.admx*
@@ -314,7 +314,7 @@ If you disable or do not configure this policy setting, Windows Store apps can o
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Block launching desktop apps associated with a URI scheme*
+-   GP Friendly name: *Block launching desktop apps associated with a URI scheme*
 -   GP name: *AppxRuntimeBlockProtocolElevation*
 -   GP path: *Windows Components\App runtime*
 -   GP ADMX file name: *AppXRuntime.admx*
@@ -323,16 +323,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

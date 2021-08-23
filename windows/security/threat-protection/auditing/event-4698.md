@@ -2,7 +2,7 @@
 title: 4698(S) A scheduled task was created. (Windows 10)
 description: Describes security event 4698(S) A scheduled task was created. This event is generated when a scheduled task is created.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4698(S): A scheduled task was created.
@@ -110,7 +111,7 @@ This event generates every time a new scheduled task is created.
 
 <img src="images/computer-management.png" alt="Task Scheduler Library illustration" width="840" height="176" />
 
--   **Task Content** \[Type = UnicodeString\]: the [XML](https://msdn.microsoft.com/library/aa286548.aspx) content of the new task. For more information about the XML format for scheduled tasks, see “[XML Task Definition Format](https://msdn.microsoft.com/library/cc248308.aspx).”
+-   **Task Content** \[Type = UnicodeString\]: the [XML](/previous-versions/aa286548(v=msdn.10)) content of the new task. For more information about the XML format for scheduled tasks, see “[XML Task Definition Format](/openspecs/windows_protocols/ms-tsch/0d6383e4-de92-43e7-b0bb-a60cfa36379f).”
 
 ## Security Monitoring Recommendations
 
@@ -123,4 +124,3 @@ For 4698(S): A scheduled task was created.
 -   Monitor for new tasks located in the **Task Scheduler Library** root node, that is, where **Task Name** looks like ‘\\TASK\_NAME’. Scheduled tasks that are created manually or by malware are often located in the **Task Scheduler Library** root node.
 
 -   In the new task, if the **Task Content:** XML contains **&lt;LogonType&gt;Password&lt;/LogonType&gt;** value, trigger an alert. In this case, the password for the account that will be used to run the scheduled task will be saved in Credential Manager in cleartext format, and can be extracted using Administrative privileges.
-

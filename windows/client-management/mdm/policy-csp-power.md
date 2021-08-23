@@ -153,7 +153,7 @@ If you disable this policy setting, standby states (S1-S3) are not allowed.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow standby states (S1-S3) when sleeping (on battery)*
+-   GP Friendly name: *Allow standby states (S1-S3) when sleeping (on battery)*
 -   GP name: *AllowStandbyStatesDC_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -223,7 +223,7 @@ If you disable this policy setting, standby states (S1-S3) are not allowed.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow standby states (S1-S3) when sleeping (plugged in)*
+-   GP Friendly name: *Allow standby states (S1-S3) when sleeping (plugged in)*
 -   GP name: *AllowStandbyStatesAC_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -295,7 +295,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the display (on battery)*
+-   GP Friendly name: *Turn off the display (on battery)*
 -   GP name: *VideoPowerDownTimeOutDC_2*
 -   GP path: *System/Power Management/Video and Display Settings*
 -   GP ADMX file name: *power.admx*
@@ -367,7 +367,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the display (plugged in)*
+-   GP Friendly name: *Turn off the display (plugged in)*
 -   GP name: *VideoPowerDownTimeOutAC_2*
 -   GP path: *System/Power Management/Video and Display Settings*
 -   GP ADMX file name: *power.admx*
@@ -431,7 +431,7 @@ If you disable or do not configure this policy setting, users control this setti
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Energy Saver Battery Threshold (on battery)*
+-   GP Friendly name: *Energy Saver Battery Threshold (on battery)*
 -   GP name: *EsBattThresholdDC*
 -   GP element: *EnterEsBattThreshold*
 -   GP path: *System/Power Management/Energy Saver Settings*
@@ -504,7 +504,7 @@ If you disable or do not configure this policy setting, users control this setti
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Energy Saver Battery Threshold (plugged in)*
+-   GP Friendly name: *Energy Saver Battery Threshold (plugged in)*
 -   GP name: *EsBattThresholdAC*
 -   GP element: *EnterEsBattThreshold*
 -   GP path: *System/Power Management/Energy Saver Settings*
@@ -586,7 +586,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify the system hibernate timeout (on battery)*
+-   GP Friendly name: *Specify the system hibernate timeout (on battery)*
 -   GP name: *DCHibernateTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -658,7 +658,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify the system hibernate timeout (plugged in)*
+-   GP Friendly name: *Specify the system hibernate timeout (plugged in)*
 -   GP name: *ACHibernateTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -728,7 +728,7 @@ If you disable this policy setting, the user is not prompted for a password when
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require a password when a computer wakes (on battery)*
+-   GP Friendly name: *Require a password when a computer wakes (on battery)*
 -   GP name: *DCPromptForPasswordOnResume_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -798,7 +798,7 @@ If you disable this policy setting, the user is not prompted for a password when
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require a password when a computer wakes (plugged in)*
+-   GP Friendly name: *Require a password when a computer wakes (plugged in)*
 -   GP name: *ACPromptForPasswordOnResume_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -861,7 +861,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the lid switch action (on battery)*
+-   GP Friendly name: *Select the lid switch action (on battery)*
 -   GP name: *DCSystemLidAction_2*
 -   GP element: *SelectDCSystemLidAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -940,7 +940,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the lid switch action (plugged in)*
+-   GP Friendly name: *Select the lid switch action (plugged in)*
 -   GP name: *ACSystemLidAction_2*
 -   GP element: *SelectACSystemLidAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -1019,7 +1019,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the Power button action (on battery)*
+-   GP Friendly name: *Select the Power button action (on battery)*
 -   GP name: *DCPowerButtonAction_2*
 -   GP element: *SelectDCPowerButtonAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -1098,7 +1098,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the Power button action (plugged in)*
+-   GP Friendly name: *Select the Power button action (plugged in)*
 -   GP name: *ACPowerButtonAction_2*
 -   GP element: *SelectACPowerButtonAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -1177,7 +1177,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the Sleep button action (on battery)*
+-   GP Friendly name: *Select the Sleep button action (on battery)*
 -   GP name: *DCSleepButtonAction_2*
 -   GP element: *SelectDCSleepButtonAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -1256,7 +1256,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the Sleep button action (plugged in)*
+-   GP Friendly name: *Select the Sleep button action (plugged in)*
 -   GP name: *ACSleepButtonAction_2*
 -   GP element: *SelectACSleepButtonAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -1344,7 +1344,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify the system sleep timeout (on battery)*
+-   GP Friendly name: *Specify the system sleep timeout (on battery)*
 -   GP name: *DCStandbyTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -1416,7 +1416,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify the system sleep timeout (plugged in)*
+-   GP Friendly name: *Specify the system sleep timeout (plugged in)*
 -   GP name: *ACStandbyTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -1479,7 +1479,7 @@ If you set this policy setting to 1 or do not configure this policy setting, use
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off hybrid sleep (on battery)*
+-   GP Friendly name: *Turn off hybrid sleep (on battery)*
 -   GP name: *DCStandbyWithHiberfileEnable_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -1555,7 +1555,7 @@ If you set this policy setting to 1 or do not configure this policy setting, use
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off hybrid sleep (plugged in)*
+-   GP Friendly name: *Turn off hybrid sleep (plugged in)*
 -   GP name: *ACStandbyWithHiberfileEnable_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -1633,7 +1633,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify the unattended sleep timeout (on battery)*
+-   GP Friendly name: *Specify the unattended sleep timeout (on battery)*
 -   GP name: *UnattendedSleepTimeOutDC*
 -   GP element: *EnterUnattendedSleepTimeOut*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -1709,7 +1709,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify the unattended sleep timeout (plugged in)*
+-   GP Friendly name: *Specify the unattended sleep timeout (plugged in)*
 -   GP name: *UnattendedSleepTimeOutAC*
 -   GP element: *EnterUnattendedSleepTimeOut*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -1739,6 +1739,7 @@ Footnotes:
 - 6 - Available in Windows 10, version 1903.
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
+- 9 - Available in Windows 10, version 20H2.
 
 <!--/Policies-->
 

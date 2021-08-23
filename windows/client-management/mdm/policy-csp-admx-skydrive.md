@@ -92,7 +92,7 @@ If you enable or disable this setting, do not return the setting to Not Configur
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent OneDrive from generating network traffic until the user signs in to OneDrive*
+-   GP Friendly name: *Prevent OneDrive from generating network traffic until the user signs in to OneDrive*
 -   GP name: *PreventNetworkTrafficPreUserSignIn*
 -   GP path: *Windows Components\OneDrive*
 -   GP ADMX file name: *SkyDrive.admx*
@@ -101,16 +101,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

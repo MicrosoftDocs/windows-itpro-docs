@@ -4,7 +4,7 @@ description: This topic for the IT professional lists the various application co
 ms.assetid: 33f71578-89f0-4063-ac04-cf4f4ca5c31f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # AppLocker policy use scenarios

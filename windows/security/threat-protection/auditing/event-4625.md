@@ -2,7 +2,7 @@
 title: 4625(F) An account failed to log on. (Windows 10)
 description: Describes security event 4625(F) An account failed to log on. This event is generated if an account logon attempt failed for a locked out account.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4625(F): An account failed to log on.
@@ -231,7 +232,7 @@ More information: <https://dev.windows.com/en-us/downloads>
 
 -   **Transited Services** \[Type = UnicodeString\] \[Kerberos-only\]**:** the list of transmitted services. Transmitted services are populated if the logon was a result of a S4U (Service For User) logon process. S4U is a Microsoft extension to the Kerberos Protocol to allow an application service to obtain a Kerberos service ticket on behalf of a user – most commonly done by a front-end website to access an internal resource on behalf of a user. For more information about S4U, see <https://msdn.microsoft.com/library/cc246072.aspx>
 
--   **Package Name (NTLM only)** \[Type = UnicodeString\]**:** The name of the LAN Manager subpackage ([NTLM-family](https://msdn.microsoft.com/library/cc236627.aspx) protocol name) that was used during the logon attempt. Possible values are:
+-   **Package Name (NTLM only)** \[Type = UnicodeString\]**:** The name of the LAN Manager subpackage ([NTLM-family](/openspecs/windows_protocols/ms-nlmp/c50a85f0-5940-42d8-9e82-ed206902e919) protocol name) that was used during the logon attempt. Possible values are:
 
     -   “NTLM V1”
 
@@ -241,7 +242,7 @@ More information: <https://dev.windows.com/en-us/downloads>
 
         Only populated if “**Authentication Package” = “NTLM”**.
 
--   **Key Length** \[Type = UInt32\]**:** the length of [NTLM Session Security](https://msdn.microsoft.com/library/cc236650.aspx) key. Typically, it has a length of 128 bits or 56 bits. This parameter is always 0 if **"Authentication Package" = "Kerberos"**, because it is not applicable for Kerberos protocol. This field will also have “0” value if Kerberos was negotiated using **Negotiate** authentication package.
+-   **Key Length** \[Type = UInt32\]**:** the length of [NTLM Session Security](/openspecs/windows_protocols/ms-nlmp/99d90ff4-957f-4c8a-80e4-5bfe5a9a9832) key. Typically, it has a length of 128 bits or 56 bits. This parameter is always 0 if **"Authentication Package" = "Kerberos"**, because it is not applicable for Kerberos protocol. This field will also have “0” value if Kerberos was negotiated using **Negotiate** authentication package.
 
 ## Security Monitoring Recommendations
 
@@ -297,4 +298,3 @@ For 4625(F): An account failed to log on.
     | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000192 – “An attempt was made to logon, but the Netlogon service was not started”. <br>This issue is typically not a security issue but it can be an infrastructure or availability issue.      |
     | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0xC0000193 – “User logon with expired account”.                                                                                                                                                     |
     | **Failure Information\\Status** or <br>**Failure Information\\Sub Status** | 0XC0000413 – “Logon Failure: The machine you are logging onto is protected by an authentication firewall. The specified account is not allowed to authenticate to the machine”.                     |
-

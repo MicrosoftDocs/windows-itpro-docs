@@ -43,11 +43,8 @@ You can create and configure shortcuts for any domain-based Group Policy Object 
 
 5.  Type the required shortcut settings and your comments into the **Description** box, and click **OK**.
 
-For more information about shortcut extensions, including step-by-step guidance, see [Shortcuts Extension](https://go.microsoft.com/fwlink/p/?LinkId=214525) and [Configure a Shortcut Item](https://go.microsoft.com/fwlink/p/?LinkId=301837).
+For more information about shortcut extensions, including step-by-step guidance, see [Shortcuts Extension](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc730592(v=ws.11)) and [Configure a Shortcut Item](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753580(v=ws.11)).
 
  
 
  
-
-
-

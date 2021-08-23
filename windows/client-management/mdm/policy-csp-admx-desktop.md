@@ -176,7 +176,7 @@ To see the filter bar, open Network Locations, click Entire Network, and then cl
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable filter in Find dialog box*
+-   GP Friendly name: *Enable filter in Find dialog box*
 -   GP name: *AD_EnableFilter*
 -   GP path: *Desktop\Active Directory*
 -   GP ADMX file name: *Desktop.admx*
@@ -249,7 +249,7 @@ This setting is designed to let users search Active Directory but not tempt them
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide Active Directory folder*
+-   GP Friendly name: *Hide Active Directory folder*
 -   GP name: *AD_HideDirectoryFolder*
 -   GP path: *Desktop\Active Directory*
 -   GP ADMX file name: *Desktop.admx*
@@ -320,7 +320,7 @@ This setting is designed to protect the network and the domain controller from t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Maximum size of Active Directory searches*
+-   GP Friendly name: *Maximum size of Active Directory searches*
 -   GP name: *AD_QueryLimit*
 -   GP path: *Desktop\Active Directory*
 -   GP ADMX file name: *Desktop.admx*
@@ -392,7 +392,7 @@ If you disable this setting or do not configure it, Active Desktop is disabled b
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Active Desktop*
+-   GP Friendly name: *Enable Active Desktop*
 -   GP name: *ForceActiveDesktopOn*
 -   GP path: *Desktop\Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -464,7 +464,7 @@ If you disable this setting or do not configure it, Active Desktop is disabled b
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable Active Desktop*
+-   GP Friendly name: *Disable Active Desktop*
 -   GP name: *NoActiveDesktop*
 -   GP path: *Desktop\Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -531,7 +531,7 @@ This is a comprehensive setting that locks down the configuration you establish 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit changes*
+-   GP Friendly name: *Prohibit changes*
 -   GP name: *NoActiveDesktopChanges*
 -   GP path: *Desktop\Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -600,7 +600,7 @@ Also, see "Items displayed in Places Bar" in User Configuration\Administrative T
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide and disable all items on the desktop*
+-   GP Friendly name: *Hide and disable all items on the desktop*
 -   GP name: *NoDesktop*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -672,7 +672,7 @@ If you disable this setting or do not configure it, the default behavior of the 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove the Desktop Cleanup Wizard*
+-   GP Friendly name: *Remove the Desktop Cleanup Wizard*
 -   GP name: *NoDesktopCleanupWizard*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -739,7 +739,7 @@ This setting does not prevent the user from starting Internet Explorer by using 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide Internet Explorer icon on desktop*
+-   GP Friendly name: *Hide Internet Explorer icon on desktop*
 -   GP name: *NoInternetIcon*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -813,7 +813,7 @@ If you do not configure this setting, the default is to display Computer as usua
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Computer icon on the desktop*
+-   GP Friendly name: *Remove Computer icon on the desktop*
 -   GP name: *NoMyComputerIcon*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -887,7 +887,7 @@ This setting does not remove the My Documents icon from the Start menu. To do so
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove My Documents icon on the desktop*
+-   GP Friendly name: *Remove My Documents icon on the desktop*
 -   GP name: *NoMyDocumentsIcon*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -957,7 +957,7 @@ This setting only affects the desktop icon. It does not prevent users from conne
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide Network Locations icon on desktop*
+-   GP Friendly name: *Hide Network Locations icon on desktop*
 -   GP name: *NoNetHood*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1026,7 +1026,7 @@ If you disable or do not configure this setting, the Properties option is displa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Properties from the Computer icon context menu*
+-   GP Friendly name: *Remove Properties from the Computer icon context menu*
 -   GP name: *NoPropertiesMyComputer*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1099,7 +1099,7 @@ If you disable or do not configure this policy setting, the Properties menu comm
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Properties from the Documents icon context menu*
+-   GP Friendly name: *Remove Properties from the Documents icon context menu*
 -   GP name: *NoPropertiesMyDocuments*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1168,7 +1168,7 @@ If you enable this setting, shared folders are not added to Network Locations au
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not add shares of recently opened documents to Network Locations*
+-   GP Friendly name: *Do not add shares of recently opened documents to Network Locations*
 -   GP name: *NoRecentDocsNetHood*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1240,7 +1240,7 @@ This setting does not prevent the user from using other methods to gain access t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Recycle Bin icon from desktop*
+-   GP Friendly name: *Remove Recycle Bin icon from desktop*
 -   GP name: *NoRecycleBinIcon*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1309,7 +1309,7 @@ If you disable or do not configure this setting, the Properties option is displa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Properties from the Recycle Bin context menu*
+-   GP Friendly name: *Remove Properties from the Recycle Bin context menu*
 -   GP name: *NoRecycleBinProperties*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1376,7 +1376,7 @@ If you enable this setting, users can change the desktop, but some changes, such
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Don't save settings at exit*
+-   GP Friendly name: *Don't save settings at exit*
 -   GP name: *NoSaveSettings*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1445,7 +1445,7 @@ If you disable or do not configure this policy, this window minimizing and resto
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Aero Shake window minimizing mouse gesture*
+-   GP Friendly name: *Turn off Aero Shake window minimizing mouse gesture*
 -   GP name: *NoWindowMinimizingShortcuts*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1521,7 +1521,7 @@ Also, see the "Allow only bitmapped wallpaper" in the same location, and the "Pr
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Desktop Wallpaper*
+-   GP Friendly name: *Desktop Wallpaper*
 -   GP name: *Wallpaper*
 -   GP path: *Desktop\Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1590,7 +1590,7 @@ Also, see the "Disable all items" setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit adding items*
+-   GP Friendly name: *Prohibit adding items*
 -   GP name: *sz_ATC_DisableAdd*
 -   GP path: *Desktop\Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1662,7 +1662,7 @@ If you enable this setting, items added to the desktop cannot be closed; they al
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit closing items*
+-   GP Friendly name: *Prohibit closing items*
 -   GP name: *sz_ATC_DisableClose*
 -   GP path: *Desktop\Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1733,7 +1733,7 @@ Also, see the "Prohibit closing items" and "Disable all items" settings.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit deleting items*
+-   GP Friendly name: *Prohibit deleting items*
 -   GP name: *sz_ATC_DisableDel*
 -   GP path: *Desktop\Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1800,7 +1800,7 @@ This setting disables the Properties button on the Web tab in Display in Control
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit editing items*
+-   GP Friendly name: *Prohibit editing items*
 -   GP name: *sz_ATC_DisableEdit*
 -   GP path: *Desktop\Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1870,7 +1870,7 @@ This setting removes all Active Desktop items from the desktop. It also removes 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable all items*
+-   GP Friendly name: *Disable all items*
 -   GP name: *sz_ATC_NoComponents*
 -   GP path: *Desktop\Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -1945,7 +1945,7 @@ You can also use this setting to delete particular Web-based items from users' d
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Add/Delete items*
+-   GP Friendly name: *Add/Delete items*
 -   GP name: *sz_AdminComponents_Title*
 -   GP path: *Desktop\Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -2020,7 +2020,7 @@ Also, see the "Prohibit adjusting desktop toolbars" setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent adding, dragging, dropping and closing the Taskbar's toolbars*
+-   GP Friendly name: *Prevent adding, dragging, dropping and closing the Taskbar's toolbars*
 -   GP name: *sz_DB_DragDropClose*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -2092,7 +2092,7 @@ Also, see the "Prevent adding, dragging, dropping and closing the Taskbar's tool
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit adjusting desktop toolbars*
+-   GP Friendly name: *Prohibit adjusting desktop toolbars*
 -   GP name: *sz_DB_Moving*
 -   GP path: *Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -2159,7 +2159,7 @@ Also, see the "Desktop Wallpaper" and the "Prevent changing wallpaper" (in User 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow only bitmapped wallpaper*
+-   GP Friendly name: *Allow only bitmapped wallpaper*
 -   GP name: *sz_DWP_NoHTMLPaper*
 -   GP path: *Desktop\Desktop*
 -   GP ADMX file name: *Desktop.admx*
@@ -2168,16 +2168,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->
 

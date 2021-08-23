@@ -1,22 +1,24 @@
 ---
 title: Enable virtualization-based protection of code integrity
 description: This article explains the steps to opt in to using HVCI on Windows devices.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/01/2019
+ms.date: 07/30/2021
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Enable virtualization-based protection of code integrity
 
-**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2069559)
+**Applies to** 
+- Windows 10
 
 This topic covers different ways to enable Hypervisor-protected code integrity (HVCI) on Windows 10.
 Some applications, including device drivers, may be incompatible with HVCI.
@@ -47,7 +49,7 @@ HVCI is labeled **Memory integrity** in the Windows Security app and it can be a
 
 ### Enable HVCI using Intune
 
-Enabling in Intune requires using the Code Integrity node in the [AppLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/applocker-csp).
+Enabling in Intune requires using the Code Integrity node in the [AppLocker CSP](/windows/client-management/mdm/applocker-csp).
 
 ### Enable HVCI using Group Policy
 
@@ -102,7 +104,11 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualiza
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
 ```
 
-> To enable **VBS with Secure Boot and DMA (value 3)**, in the preceding command, change **/d 1** to **/d 3**.
+**To enable VBS with Secure Boot and DMA (value 3)**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
+```
 
 **To enable VBS without UEFI lock (value 0)**
 
@@ -110,7 +116,11 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformS
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 0 /f
 ```
 
-> To enable **VBS with UEFI lock (value 1)**, in the preceding command, change **/d 0** to **/d 1**.
+**To enable VBS with UEFI lock (value 1)**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 1 /f
+```
 
 **To enable virtualization-based protection of Code Integrity policies**
 
@@ -124,7 +134,11 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorE
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 0 /f
 ```
 
-> To enable **virtualization-based protection of Code Integrity policies with UEFI lock (value 1)**, in the preceding command, change **/d 0** to **/d 1**.
+**To enable virtualization-based protection of Code Integrity policies with UEFI lock (value 1)**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 1 /f
+```
 
 #### For Windows 10 version 1511 and earlier
 
@@ -154,7 +168,11 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualiza
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
 ```
 
-> To enable **VBS with Secure Boot and DMA (value 3)**, in the preceding command, change **/d 1** to **/d 3**.
+**To enable VBS with Secure Boot and DMA (value 3)**
+
+``` command
+reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
+```
 
 **To enable virtualization-based protection of Code Integrity policies (with the default, UEFI lock)**
 
@@ -269,7 +287,7 @@ A. If a device driver fails to load or crashes at runtime, you may be able to up
 
 B. If you experience software or device malfunction after using the above procedure to turn on HVCI, but you are able to log in to Windows, you can turn off HVCI by renaming or deleting the SIPolicy.p7b file from the file location in step 3 above and then restart your device.
 
-C. If you experience a critical error during boot or your system is unstable after using the above procedure to turn on HVCI, you can recover using the Windows Recovery Environment (Windows RE). To boot to Windows RE, see [Windows RE Technical Reference](https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). After logging in to Windows RE, you can turn off HVCI by renaming or deleting the SIPolicy.p7b file from the file location in step 3 above and then restart your device.
+C. If you experience a critical error during boot or your system is unstable after using the above procedure to turn on HVCI, you can recover using the Windows Recovery Environment (Windows RE). To boot to Windows RE, see [Windows RE Technical Reference](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference). After logging in to Windows RE, you can turn off HVCI by renaming or deleting the SIPolicy.p7b file from the file location in step 3 above and then restart your device.
 
 ## How to turn off HVCI
 
@@ -293,6 +311,6 @@ Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 ### Requirements for running HVCI in Hyper-V virtual machines
 -   The Hyper-V host must run at least Windows Server 2016 or Windows 10 version 1607.
 -   The Hyper-V virtual machine must be Generation 2, and running at least Windows Server 2016 or Windows 10.
--   HVCI and [nested virtualization](https://docs.microsoft.com/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time
+-   HVCI and [nested virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time
 -   Virtual Fibre Channel adapters are not compatible with HVCI. Before attaching a virtual Fibre Channel Adapter to a virtual machine, you must first opt out of virtualization-based security using `Set-VMSecurity`.
 -   The AllowFullSCSICommandSet option for pass-through disks is not compatible with HVCI. Before configuring a pass-through disk with AllowFullSCSICommandSet, you must first opt out of virtualization-based security using `Set-VMSecurity`.

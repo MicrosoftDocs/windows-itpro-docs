@@ -96,7 +96,7 @@ Also, see the "Turn off System Restore" policy setting. If the "Turn off System 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Configuration*
+-   GP Friendly name: *Turn off Configuration*
 -   GP name: *SR_DisableConfig*
 -   GP path: *System\System Restore*
 -   GP ADMX file name: *SystemRestore.admx*
@@ -105,16 +105,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

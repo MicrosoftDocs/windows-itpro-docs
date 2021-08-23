@@ -91,7 +91,7 @@ If you enable this policy setting, the WinRM service does not accept Kerberos cr
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disallow Kerberos authentication*
+-   GP Friendly name: *Disallow Kerberos authentication*
 -   GP name: *DisallowKerberos_1*
 -   GP path: *Windows Components\Windows Remote Management (WinRM)\WinRM Service*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
@@ -161,7 +161,7 @@ If you disable or do not configure this policy setting, the WinRM client uses th
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disallow Kerberos authentication*
+-   GP Friendly name: *Disallow Kerberos authentication*
 -   GP name: *DisallowKerberos_2*
 -   GP path: *Windows Components\Windows Remote Management (WinRM)\WinRM Client*
 -   GP ADMX file name: *WindowsRemoteManagement.admx*
@@ -170,15 +170,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->

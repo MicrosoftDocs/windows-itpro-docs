@@ -93,7 +93,7 @@ If you disable or do not configure this policy setting, the daily scheduled time
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Automatic Maintenance Activation Boundary*
+-   GP Friendly name: *Automatic Maintenance Activation Boundary*
 -   GP name: *ActivationBoundaryPolicy*
 -   GP path: *Windows Components\Maintenance Scheduler*
 -   GP ADMX file name: *msched.admx*
@@ -166,7 +166,7 @@ If you disable this policy setting, no random delay will be applied to Automatic
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Automatic Maintenance Random Delay*
+-   GP Friendly name: *Automatic Maintenance Random Delay*
 -   GP name: *RandomDelayPolicy*
 -   GP path: *Windows Components\Maintenance Scheduler*
 -   GP ADMX file name: *msched.admx*
@@ -176,16 +176,8 @@ ADMX Info:
 <hr/>
 
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

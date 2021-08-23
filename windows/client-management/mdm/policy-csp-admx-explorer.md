@@ -98,7 +98,7 @@ Available in the latest Windows 10 Insider Preview Build. Sets the target of the
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set a support web page link*
+-   GP Friendly name: *Set a support web page link*
 -   GP name: *AdminInfoUrl*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *Explorer.admx*
@@ -173,7 +173,7 @@ If you disable or do not configure this policy setting, the menu bar will not be
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Display the menu bar in File Explorer*
+-   GP Friendly name: *Display the menu bar in File Explorer*
 -   GP name: *AlwaysShowClassicMenu*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *Explorer.admx*
@@ -240,7 +240,7 @@ If you enable this policy setting on a machine that does not contain all program
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not reinitialize a pre-existing roamed user profile when it is loaded on a machine for the first time*
+-   GP Friendly name: *Do not reinitialize a pre-existing roamed user profile when it is loaded on a machine for the first time*
 -   GP name: *DisableRoamedProfileInit*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *Explorer.admx*
@@ -312,7 +312,7 @@ If you disable or do not configure this policy setting, users will be able to ad
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent users from adding files to the root of their Users Files folder.*
+-   GP Friendly name: *Prevent users from adding files to the root of their Users Files folder.*
 -   GP name: *PreventItemCreationInUsersFilesFolder*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *Explorer.admx*
@@ -377,7 +377,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy is similar
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off common control and window animations*
+-   GP Friendly name: *Turn off common control and window animations*
 -   GP name: *TurnOffSPIAnimations*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *Explorer.admx*
@@ -386,15 +386,6 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->

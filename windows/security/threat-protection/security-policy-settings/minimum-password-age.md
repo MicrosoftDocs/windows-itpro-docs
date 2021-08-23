@@ -5,13 +5,14 @@ ms.assetid: 91915cb2-1b3f-4fb7-afa0-d03df95e8161
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 11/13/2018
+ms.technology: mde
 ---
 
 # Minimum password age
@@ -32,7 +33,7 @@ The **Minimum password age** policy setting determines the period of time (in da
 
 ### Best practices
 
-[Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend setting **Minimum password age** to one day. 
+[Windows security baselines](../windows-security-baselines.md) recommend setting **Minimum password age** to one day. 
 
 Setting the number of days to 0 allows immediate password changes. This setting is not recommended. 
 Combining immediate password changes with password history allows someone to change a password repeatedly until the password history requirement is met and re-establish the original password again. 

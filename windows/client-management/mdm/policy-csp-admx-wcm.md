@@ -96,7 +96,7 @@ If this policy setting is not configured or is disabled, power management is ena
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable power management in connected standby mode*
+-   GP Friendly name: *Disable power management in connected standby mode*
 -   GP name: *WCM_DisablePowerManagement*
 -   GP path: *Network\Windows Connection Manager*
 -   GP ADMX file name: *WCM.admx*
@@ -173,7 +173,7 @@ This policy setting depends on other group policy settings. For example, if 'Min
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Windows to soft-disconnect a computer from a network*
+-   GP Friendly name: *Enable Windows to soft-disconnect a computer from a network*
 -   GP name: *WCM_EnableSoftDisconnect*
 -   GP path: *Network\Windows Connection Manager*
 -   GP ADMX file name: *WCM.admx*
@@ -248,7 +248,7 @@ This policy setting is related to the "Enable Windows to soft-disconnect a compu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Minimize the number of simultaneous connections to the Internet or a Windows Domain*
+-   GP Friendly name: *Minimize the number of simultaneous connections to the Internet or a Windows Domain*
 -   GP name: *WCM_MinimizeConnections*
 -   GP path: *Network\Windows Connection Manager*
 -   GP ADMX file name: *WCM.admx*
@@ -257,16 +257,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

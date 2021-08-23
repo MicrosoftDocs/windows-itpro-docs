@@ -200,7 +200,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify address lookup behavior for DC locator ping*
+-   GP Friendly name: *Specify address lookup behavior for DC locator ping*
 -   GP name: *Netlogon_AddressLookupOnPingBehavior*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -273,7 +273,7 @@ If you do not configure this policy setting, DC Locator APIs can return IPv4/IPv
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Return domain controller address type*
+-   GP Friendly name: *Return domain controller address type*
 -   GP name: *Netlogon_AddressTypeReturned*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -346,7 +346,7 @@ If you disable this policy setting, when the AllowSingleLabelDnsDomain policy is
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use DNS name resolution when a single-label domain name is used, by appending different registered DNS suffixes, if the AllowSingleLabelDnsDomain setting is not enabled.*
+-   GP Friendly name: *Use DNS name resolution when a single-label domain name is used, by appending different registered DNS suffixes, if the AllowSingleLabelDnsDomain setting is not enabled.*
 -   GP name: *Netlogon_AllowDnsSuffixSearch*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -421,7 +421,7 @@ If you do not configure this policy setting, Net Logon will not allow the negoti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow cryptography algorithms compatible with Windows NT 4.0*
+-   GP Friendly name: *Allow cryptography algorithms compatible with Windows NT 4.0*
 -   GP name: *Netlogon_AllowNT4Crypto*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -496,7 +496,7 @@ If you do not configure this policy setting, it is not applied to any computers,
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use DNS name resolution with a single-label domain name instead of NetBIOS name resolution to locate the DC*
+-   GP Friendly name: *Use DNS name resolution with a single-label domain name instead of NetBIOS name resolution to locate the DC*
 -   GP name: *Netlogon_AllowSingleLabelDnsDomain*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -569,7 +569,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use automated site coverage by the DC Locator DNS SRV Records*
+-   GP Friendly name: *Use automated site coverage by the DC Locator DNS SRV Records*
 -   GP name: *Netlogon_AutoSiteCoverage*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -645,7 +645,7 @@ If you disable this policy setting, the DC location algorithm can use NetBIOS-ba
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not use NetBIOS-based discovery for domain controller location when DNS-based discovery fails*
+-   GP Friendly name: *Do not use NetBIOS-based discovery for domain controller location when DNS-based discovery fails*
 -   GP name: *Netlogon_AvoidFallbackNetbiosDiscovery*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -720,7 +720,7 @@ If you do not configure this policy setting, it is not applied to any DCs.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Contact PDC on logon failure*
+-   GP Friendly name: *Contact PDC on logon failure*
 -   GP name: *Netlogon_AvoidPdcOnWan*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -798,7 +798,7 @@ If the value of this setting is less than the value specified in the NegativeCac
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use initial DC discovery retry setting for background callers*
+-   GP Friendly name: *Use initial DC discovery retry setting for background callers*
 -   GP name: *Netlogon_BackgroundRetryInitialPeriod*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -878,7 +878,7 @@ If the value for this setting is too small and the DC is not available, the freq
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use maximum DC discovery retry interval setting for background callers*
+-   GP Friendly name: *Use maximum DC discovery retry interval setting for background callers*
 -   GP name: *Netlogon_BackgroundRetryMaximumPeriod*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -950,7 +950,7 @@ The default value for this setting is to not quit retrying (0). The maximum valu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use final DC discovery retry setting for background callers*
+-   GP Friendly name: *Use final DC discovery retry setting for background callers*
 -   GP name: *Netlogon_BackgroundRetryQuitTime*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1017,7 +1017,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting de
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use positive periodic DC cache refresh for background callers*
+-   GP Friendly name: *Use positive periodic DC cache refresh for background callers*
 -   GP name: *Netlogon_BackgroundSuccessfulRefreshPeriod*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1092,7 +1092,7 @@ If you disable this policy setting or do not configure it, the default behavior 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify log file debug output level*
+-   GP Friendly name: *Specify log file debug output level*
 -   GP name: *Netlogon_DebugFlag*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1191,7 +1191,7 @@ If you do not configure this policy setting, DCs use their local configuration.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify DC Locator DNS records not registered by the DCs*
+-   GP Friendly name: *Specify DC Locator DNS records not registered by the DCs*
 -   GP name: *Netlogon_DnsAvoidRegisterRecords*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1267,7 +1267,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify Refresh Interval of the DC Locator DNS records*
+-   GP Friendly name: *Specify Refresh Interval of the DC Locator DNS records*
 -   GP name: *Netlogon_DnsRefreshInterval*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1343,7 +1343,7 @@ A reboot is not required for changes to this setting to take effect.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use lowercase DNS host names when registering domain controller SRV records*
+-   GP Friendly name: *Use lowercase DNS host names when registering domain controller SRV records*
 -   GP name: *Netlogon_DnsSrvRecordUseLowerCaseHostNames*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1413,7 +1413,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set TTL in the DC Locator DNS Records*
+-   GP Friendly name: *Set TTL in the DC Locator DNS Records*
 -   GP name: *Netlogon_DnsTtl*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1484,7 +1484,7 @@ If you do not configure this policy setting, it is not applied to any computers,
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify expected dial-up delay on logon*
+-   GP Friendly name: *Specify expected dial-up delay on logon*
 -   GP name: *Netlogon_ExpectedDialupDelay*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1559,7 +1559,7 @@ If you do not configure this policy setting, Force Rediscovery will be used by d
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Force Rediscovery Interval*
+-   GP Friendly name: *Force Rediscovery Interval*
 -   GP name: *Netlogon_ForceRediscoveryInterval*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1632,7 +1632,7 @@ If you do not configure this policy setting, it is not applied to any GCs, and G
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify sites covered by the GC Locator DNS SRV Records*
+-   GP Friendly name: *Specify sites covered by the GC Locator DNS SRV Records*
 -   GP name: *Netlogon_GcSiteCoverage*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1708,7 +1708,7 @@ If you disable or do not configure this policy setting, this DC processes incomi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not process incoming mailslot messages used for domain controller location based on NetBIOS domain names*
+-   GP Friendly name: *Do not process incoming mailslot messages used for domain controller location based on NetBIOS domain names*
 -   GP name: *Netlogon_IgnoreIncomingMailslotMessages*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1781,7 +1781,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Priority in the DC Locator DNS SRV records*
+-   GP Friendly name: *Set Priority in the DC Locator DNS SRV records*
 -   GP name: *Netlogon_LdapSrvPriority*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1854,7 +1854,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Weight in the DC Locator DNS SRV records*
+-   GP Friendly name: *Set Weight in the DC Locator DNS SRV records*
 -   GP name: *Netlogon_LdapSrvWeight*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1925,7 +1925,7 @@ If you disable or do not configure this policy setting, the default behavior occ
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify maximum log file size*
+-   GP Friendly name: *Specify maximum log file size*
 -   GP name: *Netlogon_MaximumLogFileSize*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -1998,7 +1998,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify sites covered by the application directory partition DC Locator DNS SRV records*
+-   GP Friendly name: *Specify sites covered by the application directory partition DC Locator DNS SRV records*
 -   GP name: *Netlogon_NdncSiteCoverage*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -2070,7 +2070,7 @@ The default value for this setting is 45 seconds. The maximum value for this set
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify negative DC Discovery cache setting*
+-   GP Friendly name: *Specify negative DC Discovery cache setting*
 -   GP name: *Netlogon_NegativeCachePeriod*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -2148,7 +2148,7 @@ If you enable this policy setting, domain administrators should ensure that the 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Netlogon share compatibility*
+-   GP Friendly name: *Set Netlogon share compatibility*
 -   GP name: *Netlogon_NetlogonShareCompatibilityMode*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -2217,7 +2217,7 @@ The default value for this setting is 30 minutes (1800). The maximum value for t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify positive periodic DC Cache refresh for non-background callers*
+-   GP Friendly name: *Specify positive periodic DC Cache refresh for non-background callers*
 -   GP name: *Netlogon_NonBackgroundSuccessfulRefreshPeriod*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -2295,7 +2295,7 @@ If you do not configure this policy setting, it is not applied to any computers,
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use urgent mode when pinging domain controllers*
+-   GP Friendly name: *Use urgent mode when pinging domain controllers*
 -   GP name: *Netlogon_PingUrgencyMode*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -2372,7 +2372,7 @@ To enable the setting, click Enabled, and then specify the interval in seconds.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set scavenge interval*
+-   GP Friendly name: *Set scavenge interval*
 -   GP name: *Netlogon_ScavengeInterval*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -2445,7 +2445,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify sites covered by the DC Locator DNS SRV records*
+-   GP Friendly name: *Specify sites covered by the DC Locator DNS SRV records*
 -   GP name: *Netlogon_SiteCoverage*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -2518,7 +2518,7 @@ If you do not configure this policy setting, it is not applied to any computers,
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify site name*
+-   GP Friendly name: *Specify site name*
 -   GP name: *Netlogon_SiteName*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -2596,7 +2596,7 @@ If you enable this policy setting, domain administrators should ensure that the 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set SYSVOL share compatibility*
+-   GP Friendly name: *Set SYSVOL share compatibility*
 -   GP name: *Netlogon_SysvolShareCompatibilityMode*
 -   GP path: *System\Net Logon*
 -   GP ADMX file name: *Netlogon.admx*
@@ -2671,7 +2671,7 @@ If you do not configure this policy setting, Try Next Closest Site DC Location w
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Try Next Closest Site*
+-   GP Friendly name: *Try Next Closest Site*
 -   GP name: *Netlogon_TryNextClosestSite*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -2744,7 +2744,7 @@ If you do not configure this policy setting, it is not applied to any DCs, and D
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify dynamic registration of the DC Locator DNS Records*
+-   GP Friendly name: *Specify dynamic registration of the DC Locator DNS Records*
 -   GP name: *Netlogon_UseDynamicDns*
 -   GP path: *System\Net Logon\DC Locator DNS Records*
 -   GP ADMX file name: *Netlogon.admx*
@@ -2753,16 +2753,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->
 

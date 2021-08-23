@@ -96,11 +96,11 @@ MBR2GPT: Validation completed successfully
 In the following example:
 
 1. Using DiskPart, the current disk partition layout is displayed prior to conversion - three partitions are present on the MBR disk (disk 0): a system reserved partition, a Windows partition, and a recovery partition. A DVD-ROM is also present as volume 0.
-2. The OS volume is selected, partitions are listed, and partition details are displayed for the OS partition. The [MBR partition type](https://msdn.microsoft.com/library/windows/desktop/aa363990.aspx) is **07** corresponding to the installable file system (IFS) type.
+2. The OS volume is selected, partitions are listed, and partition details are displayed for the OS partition. The [MBR partition type](/windows/win32/fileio/disk-partition-types) is **07** corresponding to the installable file system (IFS) type.
 2. The MBR2GPT tool is used to convert disk 0.
 3. The DiskPart tool displays that disk 0 is now using the GPT format.
 4. The new disk layout is displayed - four partitions are present on the GPT disk: three are identical to the previous partitions and one is the new EFI system partition (volume 3).
-5. The OS volume is selected again, and detail displays that it has been converted to the [GPT partition type](https://msdn.microsoft.com/library/windows/desktop/aa365449.aspx) of **ebd0a0a2-b9e5-4433-87c0-68b6b72699c7** corresponding to the **PARTITION_BASIC_DATA_GUID** type.
+5. The OS volume is selected again, and detail displays that it has been converted to the [GPT partition type](/windows/win32/api/winioctl/ns-winioctl-partition_information_gpt) of **ebd0a0a2-b9e5-4433-87c0-68b6b72699c7** corresponding to the **PARTITION_BASIC_DATA_GUID** type.
 
 >As noted in the output from the MBR2GPT tool, you must make changes to the computer firmware so that the new EFI system partition will boot properly.
 
@@ -266,8 +266,8 @@ In addition to applying the correct partition types, partitions of type PARTITIO
 - GPT_BASIC_DATA_ATTRIBUTE_NO_DRIVE_LETTER (0x8000000000000000)
 
 For more information about partition types, see:
-- [GPT partition types](https://msdn.microsoft.com/library/windows/desktop/aa365449.aspx)
-- [MBR partition types](https://msdn.microsoft.com/library/windows/desktop/aa363990.aspx)
+- [GPT partition types](/windows/win32/api/winioctl/ns-winioctl-partition_information_gpt)
+- [MBR partition types](/windows/win32/fileio/disk-partition-types)
 
 
 ### Persisting drive letter assignments
@@ -410,7 +410,7 @@ When you start a Windows 10, version 1903-based computer in the Windows Preinsta
 
 **Issue 2** When you manually run the MBR2GPT.exe command in a Command Prompt window, there is no output from the tool.
 
-**Issue 3** When MBR2GPT.exe runs inside an imaging process such as a Microsoft Endpoint Configuration Manager task sequence, an MDT task sequence, or by using a script, you receive the following exit code: 0xC0000135/3221225781.
+**Issue 3** When MBR2GPT.exe runs inside an imaging process such as a Microsoft Endpoint Manager task sequence, an MDT task sequence, or by using a script, you receive the following exit code: 0xC0000135/3221225781.
 
 #### Cause
 
@@ -420,7 +420,7 @@ This issue occurs because in Windows 10, version 1903 and later versions, MBR2GP
 
 To fix this issue, mount the Windows PE image (WIM), copy the missing file from the [Windows 10, version 1903 Assessment and Development Kit (ADK)](https://go.microsoft.com/fwlink/?linkid=2086042) source, and then commit the changes to the WIM. To do this, follow these steps:
 
-1. Mount the Windows PE WIM to a path (for example, C:\WinPE_Mount). For more information about how to mount WIM files, see [Mount an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#mount-an-image).
+1. Mount the Windows PE WIM to a path (for example, C:\WinPE_Mount). For more information about how to mount WIM files, see [Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#mount-an-image).
 
 2. Copy the ReAgent files and the ReAgent localization files from the Window 10, version 1903 ADK source folder to the mounted WIM.
 
@@ -450,7 +450,7 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
    > [!NOTE]
    > If you aren't using an English version of Windows, replace "En-Us" in the path with the appropriate string that represents the system language.
 
-3. After you copy all the files, commit the changes and unmount the Windows PE WIM. MBR2GPT.exe now functions as expected in Windows PE. For information about how to unmount WIM files while committing changes, see [Unmounting an image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#unmounting-an-image).
+3. After you copy all the files, commit the changes and unmount the Windows PE WIM. MBR2GPT.exe now functions as expected in Windows PE. For information about how to unmount WIM files while committing changes, see [Unmounting an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#unmounting-an-image).
 
 
 ## Related topics

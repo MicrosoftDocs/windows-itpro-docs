@@ -2,7 +2,7 @@
 title: 5139(S) A directory service object was moved. (Windows 10)
 description: Describes security event 5139(S) A directory service object was moved.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5139(S): A directory service object was moved.
@@ -28,7 +29,7 @@ ms.author: dansimp
 
 This event generates every time an Active Directory object is moved.
 
-This event only generates if the destination object has a particular entry in its [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx): the “**Create**” action, auditing for specific classes or objects. An example is the “**Create Computer objects**” action, auditing for the organizational unit.
+This event only generates if the destination object has a particular entry in its [SACL](/windows/win32/secauthz/access-control-lists): the “**Create**” action, auditing for specific classes or objects. An example is the “**Create Computer objects**” action, auditing for the organizational unit.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -189,4 +190,3 @@ For 5139(S): A directory service object was moved.
 -   If you need to monitor movement of Active Directory objects with specific classes, monitor for **Class** field with specific class name.
 
 -   You must set correct auditing access lists (SACLs) for specific classes within Active Directory container to get [5139](event-5139.md). There is no reason to audit all movement events for all types of Active Directory objects, you need to find the most important locations (organizational units, folders, etc.) and monitor for movement of specific classes only to these locations (user, computer, group, etc.).
-

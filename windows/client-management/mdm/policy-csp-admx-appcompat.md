@@ -131,7 +131,7 @@ If the status is set to Not Configured, the OS falls back on a local policy set 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent access to 16-bit applications*
+-   GP Friendly name: *Prevent access to 16-bit applications*
 -   GP name: *AppCompatPrevent16BitMach*
 -   GP path: *Windows Components/Application Compatibility*
 -   GP ADMX file name: *AppCompat.admx*
@@ -202,7 +202,7 @@ Enabling this policy setting removes the property page from the context-menus, b
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Program Compatibility Property Page*
+-   GP Friendly name: *Remove Program Compatibility Property Page*
 -   GP name: *AppCompatRemoveProgramCompatPropPage*
 -   GP path: *Windows Components/Application Compatibility*
 -   GP ADMX file name: *AppCompat.admx*
@@ -277,7 +277,7 @@ Disabling telemetry will take effect on any newly launched applications. To ensu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Application Telemetry*
+-   GP Friendly name: *Turn off Application Telemetry*
 -   GP name: *AppCompatTurnOffApplicationImpactTelemetry*
 -   GP path: *Windows Components/Application Compatibility*
 -   GP ADMX file name: *AppCompat.admx*
@@ -353,7 +353,7 @@ Reboot the system after changing the setting to ensure that your system accurate
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off SwitchBack Compatibility Engine*
+-   GP Friendly name: *Turn off SwitchBack Compatibility Engine*
 -   GP name: *AppCompatTurnOffSwitchBack*
 -   GP path: *Windows Components/Application Compatibility*
 -   GP ADMX file name: *AppCompat.admx*
@@ -431,7 +431,7 @@ This option is useful to server administrators who require faster performance an
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Application Compatibility Engine*
+-   GP Friendly name: *Turn off Application Compatibility Engine*
 -   GP name: *AppCompatTurnOffEngine*
 -   GP path: *Windows Components/Application Compatibility*
 -   GP ADMX file name: *AppCompat.admx*
@@ -498,7 +498,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting ex
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Program Compatibility Assistant*
+-   GP Friendly name: *Turn off Program Compatibility Assistant*
 -   GP name: *AppCompatTurnOffProgramCompatibilityAssistant_1*
 -   GP path: *Windows Components/Application Compatibility*
 -   GP ADMX file name: *AppCompat.admx*
@@ -572,7 +572,7 @@ If you disable or do not configure this policy setting, the PCA will be turned o
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Program Compatibility Assistant*
+-   GP Friendly name: *Turn off Program Compatibility Assistant*
 -   GP name: *AppCompatTurnOffProgramCompatibilityAssistant_2*
 -   GP path: *Windows Components/Application Compatibility*
 -   GP ADMX file name: *AppCompat.admx*
@@ -645,7 +645,7 @@ If you disable or do not configure this policy setting, Steps Recorder will be e
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Steps Recorder*
+-   GP Friendly name: *Turn off Steps Recorder*
 -   GP name: *AppCompatTurnOffUserActionRecord*
 -   GP path: *Windows Components/Application Compatibility*
 -   GP ADMX file name: *AppCompat.admx*
@@ -721,7 +721,7 @@ If you disable or do not configure this policy setting, the Inventory Collector 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Inventory Collector*
+-   GP Friendly name: *Turn off Inventory Collector*
 -   GP name: *AppCompatTurnOffProgramInventory*
 -   GP path: *Windows Components/Application Compatibility*
 -   GP ADMX file name: *AppCompat.admx*
@@ -729,16 +729,8 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

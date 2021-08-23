@@ -119,7 +119,7 @@ The default behavior is to automatically publish shared printers in Active Direc
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Automatically publish new printers in Active Directory*
+-   GP Friendly name: *Automatically publish new printers in Active Directory*
 -   GP name: *AutoPublishing*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing2.admx*
@@ -193,7 +193,7 @@ If you disable this setting, the domain controller does not prune this computer'
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow pruning of published printers*
+-   GP Friendly name: *Allow pruning of published printers*
 -   GP name: *ImmortalPrintQueue*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing2.admx*
@@ -274,7 +274,7 @@ You can enable this setting to change the default behavior. To use this setting,
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prune printers that are not automatically republished*
+-   GP Friendly name: *Prune printers that are not automatically republished*
 -   GP name: *PruneDownlevel*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing2.admx*
@@ -350,7 +350,7 @@ If you do not configure or disable this setting the default values will be used.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Directory pruning interval*
+-   GP Friendly name: *Directory pruning interval*
 -   GP name: *PruningInterval*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing2.admx*
@@ -424,7 +424,7 @@ By default, the pruning thread runs at normal priority. However, you can adjust 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Directory pruning priority*
+-   GP Friendly name: *Directory pruning priority*
 -   GP name: *PruningPriority*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing2.admx*
@@ -500,7 +500,7 @@ If you do not configure or disable this setting, the default values are used.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Directory pruning retry*
+-   GP Friendly name: *Directory pruning retry*
 -   GP name: *PruningRetries*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing2.admx*
@@ -576,7 +576,7 @@ Note: This setting does not affect the logging of pruning events; the actual pru
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Log directory pruning retry events*
+-   GP Friendly name: *Log directory pruning retry events*
 -   GP name: *PruningRetryLog*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing2.admx*
@@ -647,7 +647,7 @@ The spooler must be restarted for changes to this policy to take effect.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow Print Spooler to accept client connections*
+-   GP Friendly name: *Allow Print Spooler to accept client connections*
 -   GP name: *RegisterSpoolerRemoteRpcEndPoint*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing2.admx*
@@ -718,7 +718,7 @@ To disable verification, disable this setting, or enable this setting and select
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Check published state*
+-   GP Friendly name: *Check published state*
 -   GP name: *VerifyPublishedState*
 -   GP path: *Printers*
 -   GP ADMX file name: *Printing2.admx*
@@ -727,15 +727,6 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->

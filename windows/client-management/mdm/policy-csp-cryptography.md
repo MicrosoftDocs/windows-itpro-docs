@@ -82,7 +82,7 @@ Allows or disallows the Federal Information Processing Standard (FIPS) policy.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing*
+-   GP Friendly name: *System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing*
 -   GP path: *Windows Settings/Security Settings/Local Policies/Security Options*
 
 <!--/ADMXMapped-->

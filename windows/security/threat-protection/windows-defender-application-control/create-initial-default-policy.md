@@ -1,9 +1,9 @@
 ---
 title: Create a WDAC policy for fixed-workload devices using a reference computer (Windows 10)
 description: To create a Windows Defender Application Control (WDAC) policy for fixed-workload devices within your organization, follow this guide.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2018
+ms.technology: mde
 ---
 
 # Create a WDAC policy for fixed-workload devices using a reference computer
@@ -58,7 +59,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
    $WDACPolicy=$PolicyPath+$PolicyName+".xml"
    $WDACPolicyBin=$PolicyPath+$PolicyName+".bin"
 
-2. Use [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy) to create a new WDAC policy by scanning the system for installed applications:
+2. Use [New-CIPolicy](/powershell/module/configci/new-cipolicy) to create a new WDAC policy by scanning the system for installed applications:
 
    ```powershell
    New-CIPolicy -Level PcaCertificate -FilePath $WDACPolicy –UserPEs 3> CIPolicyLog.txt 
@@ -74,7 +75,7 @@ To create a WDAC policy, copy each of the following commands into an elevated Wi
    > 
    > - The preceding example includes `3> CIPolicylog.txt`, which redirects warning messages to a text file, **CIPolicylog.txt**.
 
-3. Use [ConvertFrom-CIPolicy](https://docs.microsoft.com/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
+3. Use [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy) to convert the WDAC policy to a binary format:
 
    ```powershell
    ConvertFrom-CIPolicy $WDACPolicy $WDACPolicyBin

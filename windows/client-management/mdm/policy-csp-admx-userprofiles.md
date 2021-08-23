@@ -111,7 +111,7 @@ If you disable or do not configure this policy setting, User Profile Service wil
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Delete user profiles older than a specified number of days on system restart*
+-   GP Friendly name: *Delete user profiles older than a specified number of days on system restart*
 -   GP name: *CleanupProfiles*
 -   GP path: *System\User Profiles*
 -   GP ADMX file name: *UserProfiles.admx*
@@ -182,7 +182,7 @@ If you disable or do not configure this policy setting, Windows will always unlo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not forcefully unload the users registry at user logoff*
+-   GP Friendly name: *Do not forcefully unload the users registry at user logoff*
 -   GP name: *DontForceUnloadHive*
 -   GP path: *System\User Profiles*
 -   GP ADMX file name: *UserProfiles.admx*
@@ -256,7 +256,7 @@ If you disable or do not configure this policy setting, Windows will delete the 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Leave Windows Installer and Group Policy Software Installation Data*
+-   GP Friendly name: *Leave Windows Installer and Group Policy Software Installation Data*
 -   GP name: *LeaveAppMgmtData*
 -   GP path: *System\User Profiles*
 -   GP ADMX file name: *UserProfiles.admx*
@@ -334,7 +334,7 @@ If you enable this policy setting, you can:
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Limit profile size*
+-   GP Friendly name: *Limit profile size*
 -   GP name: *LimitSize*
 -   GP path: *System\User Profiles*
 -   GP ADMX file name: *UserProfiles.admx*
@@ -407,7 +407,7 @@ Also, see the "Delete cached copies of roaming profiles" policy setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not log users on with temporary profiles*
+-   GP Friendly name: *Do not log users on with temporary profiles*
 -   GP name: *ProfileErrorAction*
 -   GP path: *System\User Profiles*
 -   GP ADMX file name: *UserProfiles.admx*
@@ -480,7 +480,7 @@ If you disable or do not configure this policy setting, Windows considers the ne
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Control slow network connection timeout for user profiles*
+-   GP Friendly name: *Control slow network connection timeout for user profiles*
 -   GP name: *SlowLinkTimeOut*
 -   GP path: *System\User Profiles*
 -   GP ADMX file name: *UserProfiles.admx*
@@ -558,7 +558,7 @@ If the "Set Remote Desktop Services User Home Directory" policy setting is enabl
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set user home folder*
+-   GP Friendly name: *Set user home folder*
 -   GP name: *USER_HOME*
 -   GP path: *System\User Profiles*
 -   GP ADMX file name: *UserProfiles.admx*
@@ -631,7 +631,7 @@ If you do not configure or disable this policy the user will have full control o
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *User management of sharing user name, account picture, and domain information with apps (not desktop apps)*
+-   GP Friendly name: *User management of sharing user name, account picture, and domain information with apps (not desktop apps)*
 -   GP name: *UserInfoAccessAction*
 -   GP path: *System\User Profiles*
 -   GP ADMX file name: *UserProfiles.admx*
@@ -641,15 +641,6 @@ ADMX Info:
 
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->

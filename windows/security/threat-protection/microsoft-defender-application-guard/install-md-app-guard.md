@@ -1,7 +1,7 @@
 ---
 title: Enable hardware-based isolation for Microsoft Edge (Windows 10)
 description: Learn about the Microsoft Defender Application Guard modes (Standalone or Enterprise-managed), and how to install Application Guard in your enterprise.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -12,16 +12,17 @@ ms.date: 10/21/2020
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
+ms.technology: mde
 ---
 
 # Prepare to install Microsoft Defender Application Guard
 
 **Applies to:**
-- [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- - Windows 10
 
 ## Review system requirements
  
-See [System requirements for Microsoft Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard) to review the hardware and software installation requirements for Microsoft Defender Application Guard.
+See [System requirements for Microsoft Defender Application Guard](./reqs-md-app-guard.md) to review the hardware and software installation requirements for Microsoft Defender Application Guard.
 >[!NOTE]
 >Microsoft Defender Application Guard is not supported on VMs and VDI environment. For testing and automation on non-production machines, you may enable WDAG on a VM by enabling Hyper-V nested virtualization on the host.
 
@@ -83,7 +84,7 @@ Application Guard functionality is turned off by default. However, you can quick
 ### To install by using Intune
 
 > [!IMPORTANT]
-> Make sure your organization's devices meet [requirements](reqs-md-app-guard.md) and are [enrolled in Intune](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
+> Make sure your organization's devices meet [requirements](reqs-md-app-guard.md) and are [enrolled in Intune](/mem/intune/enrollment/device-enrollment).
 
 :::image type="content" source="images/MDAG-EndpointMgr-newprofile.jpg" alt-text="Enroll devices in Intune":::
 
@@ -120,4 +121,3 @@ Application Guard functionality is turned off by default. However, you can quick
    1. Click **Save**.
 
 After the profile is created, any devices to which the policy should apply will have Microsoft Defender Application Guard enabled. Users might have to restart their devices in order for protection to be in place.
-

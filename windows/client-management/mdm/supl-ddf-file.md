@@ -217,29 +217,6 @@ The XML below is the DDF for the current version for this CSP.
                 </DFProperties>
               </Node>
               <Node>
-                <NodeName>HighAccPositioningMethod</NodeName>
-                <DFProperties>
-                  <AccessType>
-                    <Get />
-                    <Replace />
-                  </AccessType>
-                  <DefaultValue>0</DefaultValue>
-                  <Description>Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The default is 0. The default method in Windows Phones provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator's network or location services. For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.</Description>
-                  <DFFormat>
-                    <int />
-                  </DFFormat>
-                  <Occurrence>
-                    <One />
-                  </Occurrence>
-                  <Scope>
-                    <Permanent />
-                  </Scope>
-                  <DFType>
-                    <MIME>text/plain</MIME>
-                  </DFType>
-                </DFProperties>
-              </Node>
-              <Node>
                 <NodeName>LocMasterSwitchDependencyNII</NodeName>
                 <DFProperties>
                   <AccessType>
@@ -308,26 +285,6 @@ The XML below is the DDF for the current version for this CSP.
                   </DFType>
                 </DFProperties>
               </Node>
-              <Node>
-                <NodeName>RootCertificate</NodeName>
-                <DFProperties>
-                  <AccessType>
-                    <Get />
-                  </AccessType>
-                  <Description>Required. Specifies the root certificate for the H-SLP server. Windows Phone does not support a non-secure mode. If this node is not included, the configuration service provider will fail but may not return a specific error.</Description>
-                  <DFFormat>
-                    <node />
-                  </DFFormat>
-                  <Occurrence>
-                    <One />
-                  </Occurrence>
-                  <Scope>
-                    <Permanent />
-                  </Scope>
-                  <DFType>
-                    <DDFName></DDFName>
-                  </DFType>
-                </DFProperties>
                 <Node>
                   <NodeName>Name</NodeName>
                   <DFProperties>
@@ -766,32 +723,9 @@ The XML below is the DDF for the current version for this CSP.
             </DFProperties>
           </Node>
           <Node>
-            <NodeName>PositioningMethod_MR</NodeName>
-            <DFProperties>
-              <AccessType>
-                <Get />
-                <Replace />
-              </AccessType>
-              <DefaultValue>0</DefaultValue>
-              <Description>Optional. Specifies the positioning method that the SUPL client will use for mobile originated position requests. The default is 0. The default method in Windows Phones provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator's network or location services. The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes. For OMA DM, if the format for this node is incorrect the entry will be ignored and an error will be returned, but the configuration service provider will continue processing the rest of the parameters.</Description>
-              <DFFormat>
-                <int />
-              </DFFormat>
-              <Occurrence>
-                <One />
-              </Occurrence>
-              <Scope>
-                <Permanent />
-              </Scope>
-              <DFType>
-                <MIME>text/plain</MIME>
-              </DFType>
-            </DFProperties>
-          </Node>
-          <Node>
             <NodeName>LocMasterSwitchDependencyNII</NodeName>
             <DFProperties>
-              <AccessType>
+              <AccessType>-
                 <Get />
                 <Replace />
               </AccessType>

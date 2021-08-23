@@ -95,7 +95,7 @@ If you disable or do not configure this setting, Digital Locker can be run.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow Digital Locker to run*
+-   GP Friendly name: *Do not allow Digital Locker to run*
 -   GP name: *Digitalx_DiableApplication_TitleText_1*
 -   GP path: *Windows Components/Digital Locker*
 -   GP ADMX file name: *DigitalLocker.admx*
@@ -166,7 +166,7 @@ If you disable or do not configure this setting, Digital Locker can be run.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow Digital Locker to run*
+-   GP Friendly name: *Do not allow Digital Locker to run*
 -   GP name: *Digitalx_DiableApplication_TitleText_2*
 -   GP path: *Windows Components/Digital Locker*
 -   GP ADMX file name: *DigitalLocker.admx*
@@ -175,16 +175,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -146,5 +146,5 @@ If you don't want users to see the recommendation to update TPM firmware, you ca
 ## Related topics
 
 - [Trusted Platform Module](trusted-platform-module-top-node.md) 
-- [TPM Cmdlets in Windows PowerShell](https://docs.microsoft.com/powershell/module/trustedplatformmodule/?view=win10-ps)
-- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](https://docs.microsoft.com/windows/security/information-protection/bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies#bkmk-tpmconfigurations)
+- [TPM Cmdlets in Windows PowerShell](/powershell/module/trustedplatformmodule/?view=win10-ps)
+- [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](../bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md)

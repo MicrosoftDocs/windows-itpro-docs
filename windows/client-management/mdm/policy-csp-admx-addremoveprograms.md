@@ -125,7 +125,7 @@ If you disable this setting or do not configure it, all programs (Category: All)
 
 <!--ADMXBacked-->
 ADMX Info:  
-- GP English name: *Specify default category for Add New Programs*
+- GP Friendly name: *Specify default category for Add New Programs*
 - GP name: *DefaultCategory*
 - GP path: *Control Panel/Add or Remove Programs*
 - GP ADMX file name: *addremoveprograms.admx*
@@ -206,7 +206,7 @@ If you disable this setting or do not configure it, the "Add a program from CD-R
 
 <!--ADMXBacked-->
 ADMX Info:  
-- GP English name: *Hide the "Add a program from CD-ROM or floppy disk" option*
+- GP Friendly name: *Hide the "Add a program from CD-ROM or floppy disk" option*
 - GP name: *NoAddFromCDorFloppy*
 - GP path: *Control Panel/Add or Remove Programs*
 - GP ADMX file name: *addremoveprograms.admx*
@@ -287,7 +287,7 @@ If you disable this setting or do not configure it, "Add programs from Microsoft
 
 <!--ADMXBacked-->
 ADMX Info:  
-- GP English name: *Hide the "Add programs from Microsoft" option*
+- GP Friendly name: *Hide the "Add programs from Microsoft" option*
 - GP name: *NoAddFromInternet*
 - GP path: *Control Panel/Add or Remove Programs*
 - GP ADMX file name: *addremoveprograms.admx*
@@ -370,7 +370,7 @@ If you disable this setting or do not configure it, "Add programs from your netw
 
 <!--ADMXBacked-->
 ADMX Info:  
-- GP English name: *Hide the "Add programs from your network" option*
+- GP Friendly name: *Hide the "Add programs from your network" option*
 - GP name: *NoAddFromNetwork*
 - GP path: *Control Panel/Add or Remove Programs*
 - GP ADMX file name: *addremoveprograms.admx*
@@ -447,7 +447,7 @@ If you disable this setting or do not configure it, the Add New Programs button 
 
 <!--ADMXBacked-->
 ADMX Info:  
-- GP English name: *Hide Add New Programs page*
+- GP Friendly name: *Hide Add New Programs page*
 - GP name: *NoAddPage*
 - GP path: *Control Panel/Add or Remove Programs*
 - GP ADMX file name: *addremoveprograms.admx*
@@ -939,16 +939,8 @@ ADMX Info:
 <!--/Validation-->
 <!--/Policy-->
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

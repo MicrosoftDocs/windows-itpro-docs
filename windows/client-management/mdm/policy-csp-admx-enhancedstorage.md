@@ -105,7 +105,7 @@ If you disable or do not configure this policy setting, all Enhanced Storage dev
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure list of Enhanced Storage devices usable on your computer*
+-   GP Friendly name: *Configure list of Enhanced Storage devices usable on your computer*
 -   GP name: *ApprovedEnStorDevices*
 -   GP path: *System\Enhanced Storage Access*
 -   GP ADMX file name: *EnhancedStorage.admx*
@@ -174,7 +174,7 @@ If you disable or do not configure this policy setting, all IEEE 1667 silos on E
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure list of IEEE 1667 silos usable on your computer*
+-   GP Friendly name: *Configure list of IEEE 1667 silos usable on your computer*
 -   GP name: *ApprovedSilos*
 -   GP path: *System\Enhanced Storage Access*
 -   GP ADMX file name: *EnhancedStorage.admx*
@@ -243,7 +243,7 @@ If you disable or do not configure this policy setting, a password can be used t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow password authentication of Enhanced Storage devices*
+-   GP Friendly name: *Do not allow password authentication of Enhanced Storage devices*
 -   GP name: *DisablePasswordAuthentication*
 -   GP path: *System\Enhanced Storage Access*
 -   GP ADMX file name: *EnhancedStorage.admx*
@@ -312,7 +312,7 @@ If you disable or do not configure this policy setting, non-Enhanced Storage rem
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow non-Enhanced Storage removable devices*
+-   GP Friendly name: *Do not allow non-Enhanced Storage removable devices*
 -   GP name: *DisallowLegacyDiskDevices*
 -   GP path: *System\Enhanced Storage Access*
 -   GP ADMX file name: *EnhancedStorage.admx*
@@ -383,7 +383,7 @@ If you disable or do not configure this policy setting, the Enhanced Storage dev
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Lock Enhanced Storage when the computer is locked*
+-   GP Friendly name: *Lock Enhanced Storage when the computer is locked*
 -   GP name: *LockDeviceOnMachineLock*
 -   GP path: *System\Enhanced Storage Access*
 -   GP ADMX file name: *EnhancedStorage.admx*
@@ -452,7 +452,7 @@ If you disable or do not configure this policy setting, USB Enhanced Storage dev
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow only USB root hub connected Enhanced Storage devices*
+-   GP Friendly name: *Allow only USB root hub connected Enhanced Storage devices*
 -   GP name: *RootHubConnectedEnStorDevices*
 -   GP path: *System\Enhanced Storage Access*
 -   GP ADMX file name: *EnhancedStorage.admx*
@@ -461,16 +461,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

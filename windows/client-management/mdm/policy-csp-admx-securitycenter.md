@@ -102,7 +102,7 @@ In Windows Vista, this policy setting monitors essential security settings to in
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Security Center (Domain PCs only)*
+-   GP Friendly name: *Turn on Security Center (Domain PCs only)*
 -   GP name: *SecurityCenter_SecurityCenterInDomain*
 -   GP path: *Windows Components\Security Center*
 -   GP ADMX file name: *Securitycenter.admx*
@@ -111,16 +111,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

@@ -24,6 +24,7 @@ This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with 
 >* Windows 10 Enterprise Subscription Activation (EA or MPSA) requires Windows 10 Pro, version 1703 or later.
 >* Windows 10 Enterprise E3 in CSP requires Windows 10 Pro, version 1607 or later.
 >* Automatic, non-KMS activation requires Windows 10, version 1803 or later, on a device with a firmware-embedded activation key.
+>* Windows 10 Enterprise Subscription Activation requires Windows 10 Enterprise per user licensing; it does not work on per device based licensing.
 
 >[!IMPORTANT]
 >An issue has been identified where devices can lose activation status or be blocked from upgrading to Windows Enterprise if the device is not able to connect to Windows Update. A workaround is to ensure that devices do not have the REG_DWORD present HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations and set to 1.  If this REG_DWORD is present, it must be set to 0.
@@ -87,7 +88,7 @@ You might ask why you need to synchronize these identities. The answer is so tha
 
 For more information about integrating on-premises AD DS domains with Azure AD, see the following resources:
 
--   [Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)
+-   [Integrating your on-premises identities with Azure Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity)
 -   [Azure AD + Domain Join + Windows 10](https://blogs.technet.microsoft.com/enterprisemobility/2016/02/17/azure-ad-domain-join-windows-10/)
 
 >[!NOTE]
@@ -106,7 +107,7 @@ Upon acquisition of Windows 10 subscription has been completed (Windows 10 Busin
 
 The following methods are available to assign licenses:
 
-1. When you have the required Azure AD subscription, [group-based licensing](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal) is the preferred method to assign Enterprise E3 or E5 licenses to users.
+1. When you have the required Azure AD subscription, [group-based licensing](/azure/active-directory/active-directory-licensing-whatis-azure-portal) is the preferred method to assign Enterprise E3 or E5 licenses to users.
 
 2. You can sign in to portal.office.com and manually assign licenses:
 
@@ -214,7 +215,7 @@ If there are any problems with the Windows 10 Enterprise E3 or E5 license or th
 
 ## Virtual Desktop Access (VDA)
 
-Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx).
+Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://aka.ms/qmth).
 
 Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Azure Active Directory-joined clients are supported. See [Enable VDA for Enterprise Subscription Activation](vda-subscription-activation.md).
 
@@ -250,7 +251,7 @@ Use the following figures to help you troubleshoot when users experience these c
 
 ### Review requirements on devices
 
-Devices must be running Windows 10 Pro, version 1703, and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
+Devices must be running Windows 10 Pro, version 1703 (or later), and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
 
 **To determine if a device is Azure Active Directory joined:**
 
@@ -263,4 +264,4 @@ At a command prompt, type: **winver**
 
 A popup window will display the Windows 10 version number and detailed OS build information.
 
-If a device is running a previous version of Windows 10 Pro (for example, version 1511), it will not be upgraded to Windows 10 Enterprise when a user signs in, even if the user has been assigned a subscription in the CSP portal.
+If a device is running a version of Windows 10 Pro prior to version 1703 (for example, version 1511), it will not be upgraded to Windows 10 Enterprise when a user signs in, even if the user has been assigned a subscription in the CSP portal.

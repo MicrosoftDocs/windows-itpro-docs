@@ -90,7 +90,7 @@ If you suspect that the machine is in a state of port exhaustion:
 
     ![Screenshot of event id 4231 in Event Viewer](images/tcp-ts-19.png)
 
-3. Collect a `netstat -anob output` from the server. The netstat output will show you a huge number of entries for TIME_WAIT state for a single PID.
+3. Collect a `netstat -anob` output from the server. The netstat output will show you a huge number of entries for TIME_WAIT state for a single PID.
 
     ![Screenshot of netstate command output](images/tcp-ts-20.png)
 
@@ -146,7 +146,7 @@ If Task Manager did not help you identify the process, then use Process Explorer
  
 Steps to use Process explorer: 
 
-1.	[Download Process Explorer](https://docs.microsoft.com/sysinternals/downloads/process-explorer) and run it **Elevated**. 
+1.	[Download Process Explorer](/sysinternals/downloads/process-explorer) and run it **Elevated**. 
 2. Alt + click the column header, select **Choose Columns**, and on the **Process Performance** tab, add **Handle Count**.
 3. Select **View \ Show Lower Pane**.
 4. Select **View \ Lower Pane View \ Handles**.
@@ -194,7 +194,6 @@ goto loop
  
 ## Useful links
 
-- [Port Exhaustion and You!](https://blogs.technet.microsoft.com/askds/2008/10/29/port-exhaustion-and-you-or-why-the-netstat-tool-is-your-friend/) - this article gives a detail on netstat states and how you can use netstat output to determine the port status
+- [Port Exhaustion and You!](/archive/blogs/askds/port-exhaustion-and-you-or-why-the-netstat-tool-is-your-friend) - this article gives a detail on netstat states and how you can use netstat output to determine the port status
 
-- [Detecting ephemeral port exhaustion](https://blogs.technet.microsoft.com/yongrhee/2018/01/09/windows-server-2012-r2-ephemeral-ports-a-k-a-dynamic-ports-hotfixes/): this article has a script which will run in a loop to report the port status. (Applicable for Windows 2012 R2, Windows 8, Windows 10)
-
+- [Detecting ephemeral port exhaustion](/archive/blogs/yongrhee/windows-server-2012-r2-ephemeral-ports-a-k-a-dynamic-ports-hotfixes): this article has a script which will run in a loop to report the port status. (Applicable for Windows 2012 R2, Windows 8, Windows 10)

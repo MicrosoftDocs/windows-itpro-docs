@@ -95,7 +95,7 @@ If you do not configure this policy setting, users can configure the setting in 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow only Windows Vista or later connections*
+-   GP Friendly name: *Allow only Windows Vista or later connections*
 -   GP name: *RA_EncryptedTicketOnly*
 -   GP path: *System\Remote Assistance*
 -   GP ADMX file name: *RemoteAssistance.admx*
@@ -182,7 +182,7 @@ If you do not configure this policy setting, application-based settings are used
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on bandwidth optimization*
+-   GP Friendly name: *Turn on bandwidth optimization*
 -   GP name: *RA_Optimize_Bandwidth*
 -   GP path: *System\Remote Assistance*
 -   GP ADMX file name: *RemoteAssistance.admx*
@@ -190,16 +190,7 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
-
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are for upcoming release.
 
 <!--/Policies-->

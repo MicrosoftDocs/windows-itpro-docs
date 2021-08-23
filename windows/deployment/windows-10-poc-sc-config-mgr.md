@@ -36,7 +36,7 @@ The PoC environment is a virtual network running on Hyper-V with three virtual m
 - **SRV1**: A dual-homed contoso.com domain member server, DNS server, and default gateway providing NAT service for the PoC network.
 - **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been cloned from a physical computer on your corporate network for testing purposes.
 
->This guide leverages the Hyper-V server role to perform procedures. If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
+>This guide leverages the Hyper-V server role to perform procedures. If you do not complete all steps in a single session, consider using [checkpoints](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn818483(v=ws.11)) and [saved states](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee247418(v=ws.10)) to pause, resume, or restart your work.
 
 >Multiple features and services are installed on SRV1 in this guide. This is not a typical installation, and is only done to set up a lab environment with a bare minimum of resources. However, if less than 4 GB of RAM is allocated to SRV1 in the Hyper-V console, some procedures will be extremely slow to complete. If resources are limited on the Hyper-V host, consider reducing RAM allocation on DC1 and PC1, and then increasing the RAM allocation on SRV1. You can adjust RAM allocation for a VM by right-clicking the VM in the Hyper-V Manager console, clicking **Settings**, clicking **Memory**, and modifying the value next to **Maximum RAM**.
 
@@ -46,9 +46,9 @@ This guide provides end-to-end instructions to install and configure Microsoft E
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
-||||
-|--- |--- |--- |
+
 |Topic|Description|Time|
+|--- |--- |--- |
 |[Install prerequisites](#install-prerequisites)|Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.|60 minutes|
 |[Install Microsoft Endpoint Configuration Manager](#install-microsoft-endpoint-configuration-manager)|Download Microsoft Endpoint Configuration Manager, configure prerequisites, and install the package.|45 minutes|
 |[Download MDOP and install DaRT](#download-mdop-and-install-dart)|Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.|15 minutes|
@@ -116,7 +116,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     New-NetFirewallRule -DisplayName "SQL Debugger/RPC" -Direction Inbound –Protocol TCP –LocalPort 135 -Action allow
     ```
 
-6. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 2004. Installation might require several minutes to acquire all components.
+6. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 2004. Installation might require several minutes to acquire all components.
 
 ## Install Microsoft Endpoint Configuration Manager
 
@@ -128,7 +128,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     Stop-Process -Name Explorer
     ```
 
-2. Download [Microsoft Endpoint Configuration Manager and Endpoint Protection](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1 (download the executable file anywhere on SRV1), double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
+2. Download [Microsoft Endpoint Manager and Endpoint Protection](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1 (download the executable file anywhere on SRV1), double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
 
 3. Before starting the installation, verify that WMI is working on SRV1. See the following examples. Verify that **Running** is displayed under **Status** and **True** is displayed next to **TcpTestSucceeded**:
 
@@ -188,7 +188,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     cmd /c C:\configmgr\SMSSETUP\BIN\X64\Setup.exe
     ```
 
-18. Provide the following in the Microsoft Endpoint Configuration Manager Setup Wizard:
+18. Provide the following in the Microsoft Endpoint Manager Setup Wizard:
     - **Before You Begin**: Read the text and click *Next*.
     - **Getting Started**: Choose **Install a Configuration Manager primary site** and select the **Use typical installation options for a stand-alone primary site** checkbox.
         - Click **Yes** in response to the popup window.
@@ -218,7 +218,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 > [!IMPORTANT]
 > This step requires an MSDN subscription or volume licence agreement. For more information, see [Ready for Windows 10: MDOP 2015 and more tools are now available](https://blogs.technet.microsoft.com/windowsitpro/2015/08/17/ready-for-windows-10-mdop-2015-and-more-tools-are-now-available/).
-> If your organization qualifies and does not already have an MSDN subscription, you can obtain a [free MSDN subscription with BizSpark](https://docs.microsoft.com/archive/blogs/zainnab/bizspark-free-msdn-subscription-for-start-up-companies/).
+> If your organization qualifies and does not already have an MSDN subscription, you can obtain a [free MSDN subscription with BizSpark](/archive/blogs/zainnab/bizspark-free-msdn-subscription-for-start-up-companies/).
 
 1. Download the [Microsoft Desktop Optimization Pack 2015](https://msdn.microsoft.com/subscriptions/downloads/#ProductFamilyId=597) to the Hyper-V host using an MSDN subscription. Download the .ISO file (mu_microsoft_desktop_optimization_pack_2015_x86_x64_dvd_5975282.iso, 2.79 GB) to the C:\VHD directory on the Hyper-V host.
 
@@ -320,7 +320,7 @@ WDSUTIL /Set-Server /AnswerClients:None
 
     > If the internal network adapter, assigned an IP address of 192.168.0.2, is not named "Ethernet" then replace the name "Ethernet" in the previous command with the name of this network adapter. You can review the names of network adapters and the IP addresses assigned to them by typing **ipconfig**.
 
-2. In the Microsoft Endpoint Configuration Manager console, in the **Administration** workspace, click **Distribution Points**.
+2. In the Microsoft Endpoint Manager console, in the **Administration** workspace, click **Distribution Points**.
 3. In the display pane, right-click **SRV1.CONTOSO.COM** and then click **Properties**.
 4. On the PXE tab, select the following settings:
    - **Enable PXE support for clients**. Click **Yes** in the popup that appears.
@@ -770,8 +770,8 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 6. The smsts.log file is critical for troubleshooting any installation problems that might be encountered. Depending on the deployment phase, the smsts.log file is created in different locations:
    - X:\Windows\temp\SMSTSLog\smsts.log before disks are formatted.
    - X:\smstslog\smsts.log after disks are formatted.
-   - C:\\_SMSTaskSequence\Logs\Smstslog\smsts.log before the Microsoft Endpoint Configuration Manager client is installed.
-   - C:\Windows\ccm\logs\Smstslog\smsts.log after the Microsoft Endpoint Configuration Manager client is installed.
+   - C:\\_SMSTaskSequence\Logs\Smstslog\smsts.log before the Microsoft Endpoint Manager client is installed.
+   - C:\Windows\ccm\logs\Smstslog\smsts.log after the Microsoft Endpoint Manager client is installed.
    - C:\Windows\ccm\logs\smsts.log when the task sequence is complete.
 
      Note: If a reboot is pending on the client, the reboot will be blocked as long as the command window is open.
@@ -854,11 +854,9 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 6. When a popup dialog box asks if you want to run full discovery, click **Yes**.
 7. In the Assets and Compliance workspace, click **Devices** and verify that the computer account names for SRV1 and PC1 are displayed. See the following example (GREGLIN-PC1 is the computer account name of PC1 in this example):
 
-    ![assets](images/configmgr-assets.png)
+>If you do not see the computer account for PC1, try clicking the **Refresh** button in the upper right corner of the console.
 
-    >If you do not see the computer account for PC1, try clicking the **Refresh** button in the upper right corner of the console.
-
-    The **Client** column indicates that the Configuration Manager client is not currently installed. This procedure will be carried out next.
+The **Client** column indicates that the Configuration Manager client is not currently installed. This procedure will be carried out next.
 
 8. Sign in to PC1 using the contoso\administrator account and type the following at an elevated command prompt to remove any pre-existing client configuration, if it exists. Note: this command requires an elevated command prompt not an elevated Windows PowerShell prompt:
 
@@ -867,7 +865,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
     "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /Uninstall
     ```
 
-    >If PC1 still has Configuration Manager registry settings that were applied by Group Policy, startup scripts, or other policies in its previous domain, these might not all be removed by CCMSetup /Uninstall and can cause problems with installation or registration of the client in its new environment. It might be necessary to manually remove these settings if they are present. For more information, see [Manual removal of the Configuration Manager client](https://blogs.technet.microsoft.com/michaelgriswold/2013/01/02/manual-removal-of-the-sccm-client/).
+    >If PC1 still has Configuration Manager registry settings that were applied by Group Policy, startup scripts, or other policies in its previous domain, these might not all be removed by CCMSetup /Uninstall and can cause problems with installation or registration of the client in its new environment. It might be necessary to manually remove these settings if they are present. For more information, see [Manual removal of the Configuration Manager client](/archive/blogs/michaelgriswold/manual-removal-of-the-sccm-client).
 
 9. On PC1, temporarily stop Windows Update from queuing items for download and clear all BITS jobs from the queue. From an elevated command prompt, type:
 

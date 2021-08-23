@@ -108,7 +108,7 @@ If you do not configure this policy setting, Windows uses its default trust logi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Trust logic for file attachments*
+-   GP Friendly name: *Trust logic for file attachments*
 -   GP name: *AM_EstimateFileHandlerRisk*
 -   GP path: *Windows Components\Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
@@ -185,7 +185,7 @@ If you do not configure this policy setting, Windows sets the default risk level
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Default risk level for file attachments*
+-   GP Friendly name: *Default risk level for file attachments*
 -   GP name: *AM_SetFileRiskLevel*
 -   GP path: *Windows Components\Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
@@ -256,7 +256,7 @@ If you do not configure this policy setting, Windows uses its built-in list of h
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Inclusion list for high risk file types*
+-   GP Friendly name: *Inclusion list for high risk file types*
 -   GP name: *AM_SetHighRiskInclusion*
 -   GP path: *Windows Components\Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
@@ -327,7 +327,7 @@ If you do not configure this policy setting, Windows uses its default trust logi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Inclusion list for low file types*
+-   GP Friendly name: *Inclusion list for low file types*
 -   GP name: *AM_SetLowRiskInclusion*
 -   GP path: *Windows Components\Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
@@ -398,7 +398,7 @@ If you do not configure this policy setting, Windows uses its default trust logi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Inclusion list for moderate risk file types*
+-   GP Friendly name: *Inclusion list for moderate risk file types*
 -   GP name: *AM_SetModRiskInclusion*
 -   GP path: *Windows Components\Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
@@ -407,16 +407,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->
 

@@ -96,7 +96,7 @@ If you disable this policy setting, users can only access and search troubleshoo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Troubleshooting: Allow users to access online troubleshooting content on Microsoft servers from the Troubleshooting Control Panel (via the Windows Online Troubleshooting Service - WOTS)*
+-   GP Friendly name: *Troubleshooting: Allow users to access online troubleshooting content on Microsoft servers from the Troubleshooting Control Panel (via the Windows Online Troubleshooting Service - WOTS)*
 -   GP name: *BetterWhenConnected*
 -   GP path: *System\Troubleshooting and Diagnostics\Scripted Diagnostics*
 -   GP ADMX file name: *sdiageng.admx*
@@ -167,7 +167,7 @@ Note that this setting also controls a user's ability to launch standalone troub
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Troubleshooting: Allow users to access and run Troubleshooting Wizards*
+-   GP Friendly name: *Troubleshooting: Allow users to access and run Troubleshooting Wizards*
 -   GP name: *ScriptedDiagnosticsExecutionPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Scripted Diagnostics*
 -   GP ADMX file name: *sdiageng.admx*
@@ -236,7 +236,7 @@ If you disable or do not configure this policy setting, the scripted diagnostics
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Security Policy for Scripted Diagnostics*
+-   GP Friendly name: *Configure Security Policy for Scripted Diagnostics*
 -   GP name: *ScriptedDiagnosticsSecurityPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Scripted Diagnostics*
 -   GP ADMX file name: *sdiageng.admx*
@@ -245,16 +245,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->
 

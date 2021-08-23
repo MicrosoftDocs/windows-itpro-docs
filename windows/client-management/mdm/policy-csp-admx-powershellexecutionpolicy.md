@@ -105,7 +105,7 @@ To add modules and snap-ins to the policy setting list, click Show, and then typ
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Module Logging*
+-   GP Friendly name: *Turn on Module Logging*
 -   GP name: *EnableModuleLogging*
 -   GP path: *Windows Components\Windows PowerShell*
 -   GP ADMX file name: *PowerShellExecutionPolicy.admx*
@@ -180,7 +180,7 @@ If you disable this policy setting, no scripts are allowed to run.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Script Execution*
+-   GP Friendly name: *Turn on Script Execution*
 -   GP name: *EnableScripts*
 -   GP path: *Windows Components\Windows PowerShell*
 -   GP ADMX file name: *PowerShellExecutionPolicy.admx*
@@ -255,7 +255,7 @@ If you use the OutputDirectory setting to enable transcript logging to a shared 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on PowerShell Transcription*
+-   GP Friendly name: *Turn on PowerShell Transcription*
 -   GP name: *EnableTranscripting*
 -   GP path: *Windows Components\Windows PowerShell*
 -   GP ADMX file name: *PowerShellExecutionPolicy.admx*
@@ -328,7 +328,7 @@ If this policy setting is disabled or not configured, this policy setting does n
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set the default source path for Update-Help*
+-   GP Friendly name: *Set the default source path for Update-Help*
 -   GP name: *EnableUpdateHelpDefaultSourcePath*
 -   GP path: *Windows Components\Windows PowerShell*
 -   GP ADMX file name: *PowerShellExecutionPolicy.admx*
@@ -337,15 +337,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->

@@ -45,9 +45,9 @@ This guide provides information and step-by-step guidance to help you choose a v
 
 Because most organizations will not immediately switch all computers to Windows 10, practical volume activation strategies must also take in to account how to work with the Windows 8.1, Windows 7, Windows Server 2012, and Windows Server 2008 R2 operating systems. This guide discusses how the new volume activation tools can support earlier operating systems, but it does not discuss the tools that are provided with earlier operating system versions.
 
-Volume activation -and the need for activation itself- is not new, and this guide does not review all of its concepts and history. You can find additional background in the appendices of this guide. For more information, see [Volume Activation Overview](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831612(v=ws.11)).
+Volume activation -and the need for activation itself- is not new, and this guide does not review all of its concepts and history. You can find additional background in the appendices of this guide. For more information, see [Volume Activation Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831612(v=ws.11)).
 
-If you would like additional information about planning a volume activation deployment specifically for Windows 7 and Windows Server 2008 R2, please see the [Volume Activation Planning Guide for Windows 7](https://go.microsoft.com/fwlink/p/?LinkId=618210).
+If you would like additional information about planning a volume activation deployment specifically for Windows 7 and Windows Server 2008 R2, please see the [Volume Activation Planning Guide for Windows 7](/previous-versions/tn-archive/dd878528(v=technet.10)).
 
 To successfully plan and implement a volume activation strategy, you must:
 

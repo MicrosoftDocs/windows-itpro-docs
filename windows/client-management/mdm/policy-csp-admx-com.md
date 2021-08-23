@@ -98,7 +98,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Download missing COM components*
+-   GP Friendly name: *Download missing COM components*
 -   GP name: *AppMgmt_COM_SearchForCLSID_1*
 -   GP path: *System*
 -   GP ADMX file name: *COM.admx*
@@ -173,7 +173,7 @@ This setting appears in the Computer Configuration and User Configuration folder
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Download missing COM components*
+-   GP Friendly name: *Download missing COM components*
 -   GP name: *AppMgmt_COM_SearchForCLSID_2*
 -   GP path: *System*
 -   GP ADMX file name: *COM.admx*
@@ -182,16 +182,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->
 

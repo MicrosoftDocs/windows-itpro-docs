@@ -121,7 +121,7 @@ You must configure this setting to have complete NCA functionality.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Corporate Resources*
+-   GP Friendly name: *Corporate Resources*
 -   GP name: *CorporateResources*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
@@ -186,7 +186,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting sp
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Custom Commands*
+-   GP Friendly name: *Custom Commands*
 -   GP name: *CustomCommands*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
@@ -257,7 +257,7 @@ You must configure this setting to have complete NCA functionality.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *IPsec Tunnel Endpoints*
+-   GP Friendly name: *IPsec Tunnel Endpoints*
 -   GP name: *DTEs*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
@@ -324,7 +324,7 @@ If this setting is not configured, the string that appears for DirectAccess conn
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Friendly Name*
+-   GP Friendly name: *Friendly Name*
 -   GP name: *FriendlyName*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
@@ -400,7 +400,7 @@ If this setting is not configured, users do not have Connect or Disconnect optio
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prefer Local Names Allowed*
+-   GP Friendly name: *Prefer Local Names Allowed*
 -   GP name: *LocalNamesOn*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
@@ -466,7 +466,7 @@ Set this to Disabled to keep NCA probing actively all the time. If this setting 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *DirectAccess Passive Mode*
+-   GP Friendly name: *DirectAccess Passive Mode*
 -   GP name: *PassiveMode*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
@@ -535,7 +535,7 @@ If this setting is not configured, the entry for DirectAccess connectivity appea
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *User Interface*
+-   GP Friendly name: *User Interface*
 -   GP name: *ShowUI*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
@@ -602,7 +602,7 @@ When the user sends the log files to the Administrator, NCA uses the default e-m
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Support Email Address*
+-   GP Friendly name: *Support Email Address*
 -   GP name: *SupportEmail*
 -   GP path: *Network\DirectAccess Client Experience Settings*
 -   GP ADMX file name: *nca.admx*
@@ -611,16 +611,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

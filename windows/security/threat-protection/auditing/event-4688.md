@@ -2,7 +2,7 @@
 title: 4688(S) A new process has been created. (Windows 10)
 description: Describes security event 4688(S) A new process has been created. This event is generated when a new process starts.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4688(S): A new process has been created.
@@ -159,7 +160,7 @@ This event generates every time a new process starts.
 
     -   **TokenElevationTypeLimited (3):** Type 3 is a limited token with administrative privileges removed and administrative groups disabled. The limited token is used when User Account Control is enabled, the application does not require administrative privilege, and the user does not choose to start the program using Run as administrator.
 
--   **Mandatory Label** \[Version 2\] \[Type = SID\]**:** SID of [integrity label](https://msdn.microsoft.com/library/windows/desktop/bb648648(v=vs.85).aspx) which was assigned to the new process. Can have one of the following values:
+-   **Mandatory Label** \[Version 2\] \[Type = SID\]**:** SID of [integrity label](/windows/win32/secauthz/mandatory-integrity-control) which was assigned to the new process. Can have one of the following values:
 
 | SID          | RID        | RID label                                    | Meaning                |
 |--------------|------------|----------------------------------------------|------------------------|
@@ -192,7 +193,7 @@ For 4688(S): A new process has been created.
 | **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor all events with the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** that corresponds to the high-value account or accounts.                                                              |
 | **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** (with other information) to monitor how or when a particular account is being used. |
 | **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor all events with the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** that corresponds to the accounts that should never be used.                                                          |
-| **Account whitelist**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a "whitelist-only" action, review the **"Creator Subject\\Security ID"** and **"Target Subject\\Security ID"** for accounts that are outside the allow list.                                 |
+| **Account allowlist**: You might have a specific allowlist of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to an "allowlist-only" action, review the **"Creator Subject\\Security ID"** and **"Target Subject\\Security ID"** for accounts that are outside the allowlist.                                 |
 | **Accounts of different types**: You might want to ensure that certain actions are performed only by certain account types, for example, local or domain account, machine or user account, vendor or employee account, and so on.                                                                                 | If this event corresponds to an action you want to monitor for certain account types, review the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** to see whether the account type is as expected. |
 | **External accounts**: You might be monitoring accounts from another domain, or "external" accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                     | Monitor the specific events for the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** corresponding to accounts from another domain or "external" accounts.                                        |
 | **Restricted-use computers or devices**: You might have certain computers, machines, or devices on which certain people (accounts) should not typically perform any actions.                                                                                                                                      | Monitor the target **Computer:** (or other target device) for actions performed by the **"Creator Subject\\Security ID"** or **"Target Subject\\Security ID"** that you are concerned about.                             |

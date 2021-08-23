@@ -1,0 +1,957 @@
+items:
+- name: Mobile device management
+  href: index.md
+  items: 
+    - name: What's new in MDM enrollment and management
+      href: new-in-windows-mdm-enrollment-management.md
+      items: 
+        - name: Change history for MDM documentation
+          href: change-history-for-mdm-documentation.md
+    - name: Mobile device enrollment
+      href: mobile-device-enrollment.md
+      items: 
+        - name: MDM enrollment of Windows devices
+          href: mdm-enrollment-of-windows-devices.md
+          items: 
+            - name: "Azure AD and Microsoft Intune: Automatic MDM enrollment in the new Portal"
+              href: azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md
+        - name: Enroll a Windows 10 device automatically using Group Policy
+          href: enroll-a-windows-10-device-automatically-using-group-policy.md
+        - name: Federated authentication device enrollment
+          href: federated-authentication-device-enrollment.md
+        - name: Certificate authentication device enrollment
+          href: certificate-authentication-device-enrollment.md
+        - name: On-premises authentication device enrollment
+          href: on-premise-authentication-device-enrollment.md
+    - name: Understanding ADMX-backed policies
+      href: understanding-admx-backed-policies.md
+    - name: Enable ADMX-backed policies in MDM
+      href: enable-admx-backed-policies-in-mdm.md
+    - name: Win32 and Desktop Bridge app policy configuration
+      href: win32-and-centennial-app-policy-configuration.md
+    - name: Implement server-side support for mobile application management on Windows
+      href: implement-server-side-mobile-application-management.md
+    - name: Diagnose MDM failures in Windows 10
+      href: diagnose-mdm-failures-in-windows-10.md
+    - name: Deploy and configure App-V apps using MDM
+      href: appv-deploy-and-config.md
+    - name: Azure Active Directory integration with MDM
+      href: azure-active-directory-integration-with-mdm.md
+      items: 
+        - name: Add an Azure AD tenant and Azure AD subscription
+          href: add-an-azure-ad-tenant-and-azure-ad-subscription.md
+        - name: Register your free Azure Active Directory subscription
+          href: register-your-free-azure-active-directory-subscription.md
+    - name: Enterprise app management
+      href: enterprise-app-management.md
+    - name: Mobile device management (MDM) for device updates
+      href: device-update-management.md
+    - name: Bulk enrollment
+      href: bulk-enrollment-using-windows-provisioning-tool.md
+    - name: Management tool for the Microsoft Store for Business
+      href: management-tool-for-windows-store-for-business.md
+      items: 
+        - name: REST API reference for Microsoft Store for Business
+          href: rest-api-reference-windows-store-for-business.md
+          items: 
+            - name: Data structures for Microsoft Store for Business
+              href: data-structures-windows-store-for-business.md
+            - name: Get Inventory
+              href: get-inventory.md
+            - name: Get product details
+              href: get-product-details.md
+            - name: Get localized product details
+              href: get-localized-product-details.md
+            - name: Get offline license
+              href: get-offline-license.md
+            - name: Get product packages
+              href: get-product-packages.md
+            - name: Get product package
+              href: get-product-package.md
+            - name: Get seats
+              href: get-seats.md
+            - name: Get seat
+              href: get-seat.md
+            - name: Assign seats
+              href: assign-seats.md
+            - name: Reclaim seat from user
+              href: reclaim-seat-from-user.md
+            - name: Bulk assign and reclaim seats from users
+              href: bulk-assign-and-reclaim-seats-from-user.md
+            - name: Get seats assigned to a user
+              href: get-seats-assigned-to-a-user.md
+    - name: Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices
+      href: enable-offline-updates-for-windows-embedded-8-1-handheld-devices-to-windows-10.md
+    - name: Certificate renewal
+      href: certificate-renewal-windows-mdm.md
+    - name: Disconnecting from the management infrastructure (unenrollment)
+      href: disconnecting-from-mdm-unenrollment.md
+    - name: Enterprise settings, policies, and app management
+      href: windows-mdm-enterprise-settings.md
+    - name: Push notification support for device management
+      href: push-notification-windows-mdm.md
+    - name: OMA DM protocol support
+      href: oma-dm-protocol-support.md
+    - name: Structure of OMA DM provisioning files
+      href: structure-of-oma-dm-provisioning-files.md
+    - name: Server requirements for OMA DM
+      href: server-requirements-windows-mdm.md
+    - name: DMProcessConfigXMLFiltered
+      href: dmprocessconfigxmlfiltered.md
+    - name: Using PowerShell scripting with the WMI Bridge Provider
+      href: using-powershell-scripting-with-the-wmi-bridge-provider.md
+    - name: WMI providers supported in Windows 10
+      href: wmi-providers-supported-in-windows.md
+    - name: Configuration service provider reference
+      href: configuration-service-provider-reference.md
+      items: 
+        - name: AccountManagement CSP
+          href: accountmanagement-csp.md
+          items: 
+            - name: AccountManagement DDF file
+              href: accountmanagement-ddf.md
+        - name: Accounts CSP
+          href: accounts-csp.md
+          items: 
+            - name: Accounts DDF file
+              href: accounts-ddf-file.md
+        - name: ActiveSync CSP
+          href: activesync-csp.md
+          items: 
+            - name: ActiveSync DDF file
+              href: activesync-ddf-file.md
+        - name: AllJoynManagement CSP
+          href: alljoynmanagement-csp.md
+          items: 
+            - name: AllJoynManagement DDF
+              href: alljoynmanagement-ddf.md
+        - name: APPLICATION CSP
+          href: application-csp.md
+        - name: ApplicationControl CSP
+          href: applicationcontrol-csp.md
+          items: 
+            - name: ApplicationControl DDF file
+              href: applicationcontrol-csp-ddf.md
+        - name: AppLocker CSP
+          href: applocker-csp.md
+          items: 
+            - name: AppLocker DDF file
+              href: applocker-ddf-file.md
+            - name: AppLocker XSD
+              href: applocker-xsd.md
+        - name: AssignedAccess CSP
+          href: assignedaccess-csp.md
+          items: 
+            - name: AssignedAccess DDF file
+              href: assignedaccess-ddf.md
+        - name: BitLocker CSP
+          href: bitlocker-csp.md
+          items: 
+            - name: BitLocker DDF file
+              href: bitlocker-ddf-file.md
+        - name: BOOTSTRAP CSP
+          href: bootstrap-csp.md
+        - name: BrowserFavorite CSP
+          href: browserfavorite-csp.md
+        - name: CellularSettings CSP
+          href: cellularsettings-csp.md
+        - name: CertificateStore CSP
+          href: certificatestore-csp.md
+          items: 
+            - name: CertificateStore DDF file
+              href: certificatestore-ddf-file.md
+        - name: CleanPC CSP
+          href: cleanpc-csp.md
+          items: 
+            - name: CleanPC DDF
+              href: cleanpc-ddf.md
+        - name: ClientCertificateInstall CSP
+          href: clientcertificateinstall-csp.md
+          items: 
+            - name: ClientCertificateInstall DDF file
+              href: clientcertificateinstall-ddf-file.md
+        - name: CM_CellularEntries CSP
+          href: cm-cellularentries-csp.md
+        - name: CM_ProxyEntries CSP
+          href: cm-proxyentries-csp.md
+        - name: CMPolicy CSP
+          href: cmpolicy-csp.md
+        - name: CMPolicyEnterprise CSP
+          href: cmpolicyenterprise-csp.md
+          items: 
+            - name: CMPolicyEnterprise DDF file
+              href: cmpolicyenterprise-ddf-file.md
+        - name: CustomDeviceUI CSP
+          href: customdeviceui-csp.md
+          items: 
+            - name: CustomDeviceUI DDF file
+              href: customdeviceui-ddf.md
+        - name: Defender CSP
+          href: defender-csp.md
+          items: 
+            - name: Defender DDF file
+              href: defender-ddf.md
+        - name: DevDetail CSP
+          href: devdetail-csp.md
+          items: 
+            - name: DevDetail DDF file
+              href: devdetail-ddf-file.md
+        - name: DeveloperSetup CSP
+          href: developersetup-csp.md
+          items: 
+            - name: DeveloperSetup DDF
+              href: developersetup-ddf.md
+        - name: DeviceInstanceService CSP
+          href: deviceinstanceservice-csp.md
+        - name: DeviceLock CSP
+          href: devicelock-csp.md
+          items: 
+            - name: DeviceLock DDF file
+              href: devicelock-ddf-file.md
+        - name: DeviceManageability CSP
+          href: devicemanageability-csp.md
+          items: 
+            - name: DeviceManageability DDF
+              href: devicemanageability-ddf.md
+        - name: DeviceStatus CSP
+          href: devicestatus-csp.md
+          items: 
+            - name: DeviceStatus DDF
+              href: devicestatus-ddf.md
+        - name: DevInfo CSP
+          href: devinfo-csp.md
+          items: 
+            - name: DevInfo DDF file
+              href: devinfo-ddf-file.md
+        - name: DiagnosticLog CSP
+          href: diagnosticlog-csp.md
+          items: 
+            - name: DiagnosticLog DDF file
+              href: diagnosticlog-ddf.md
+        - name: DMAcc CSP
+          href: dmacc-csp.md
+          items: 
+            - name: DMAcc DDF file
+              href: dmacc-ddf-file.md
+        - name: DMClient CSP
+          href: dmclient-csp.md
+          items: 
+            - name: DMClient DDF file
+              href: dmclient-ddf-file.md
+        - name: DMSessionActions CSP
+          href: dmsessionactions-csp.md
+          items: 
+            - name: DMSessionActions DDF file
+              href: dmsessionactions-ddf.md
+        - name: DynamicManagement CSP
+          href: dynamicmanagement-csp.md
+          items: 
+            - name: DynamicManagement DDF file
+              href: dynamicmanagement-ddf.md
+        - name: EMAIL2 CSP
+          href: email2-csp.md
+          items: 
+            - name: EMAIL2 DDF file
+              href: email2-ddf-file.md
+        - name: EnrollmentStatusTracking CSP
+          href: enrollmentstatustracking-csp.md
+          items: 
+            - name: EnrollmentStatusTracking DDF file
+              href: enrollmentstatustracking-csp-ddf.md
+        - name: EnterpriseAPN CSP
+          href: enterpriseapn-csp.md
+          items: 
+            - name: EnterpriseAPN DDF
+              href: enterpriseapn-ddf.md
+        - name: EnterpriseAppManagement CSP
+          href: enterpriseappmanagement-csp.md
+        - name: EnterpriseAppVManagement CSP
+          href: enterpriseappvmanagement-csp.md
+          items: 
+            - name: EnterpriseAppVManagement DDF file
+              href: enterpriseappvmanagement-ddf.md
+        - name: EnterpriseAssignedAccess CSP
+          href: enterpriseassignedaccess-csp.md
+          items: 
+            - name: EnterpriseAssignedAccess DDF file
+              href: enterpriseassignedaccess-ddf.md
+            - name: EnterpriseAssignedAccess XSD
+              href: enterpriseassignedaccess-xsd.md
+        - name: EnterpriseDataProtection CSP
+          href: enterprisedataprotection-csp.md
+          items: 
+            - name: EnterpriseDataProtection DDF file
+              href: enterprisedataprotection-ddf-file.md
+        - name: EnterpriseDesktopAppManagement CSP
+          href: enterprisedesktopappmanagement-csp.md
+          items: 
+            - name: EnterpriseDesktopAppManagement DDF
+              href: enterprisedesktopappmanagement-ddf-file.md
+            - name: EnterpriseDesktopAppManagement XSD
+              href: enterprisedesktopappmanagement2-xsd.md
+        - name: EnterpriseExt CSP
+          href: enterpriseext-csp.md
+          items: 
+            - name: EnterpriseExt DDF file
+              href: enterpriseext-ddf.md
+        - name: EnterpriseExtFileSystem CSP
+          href: enterpriseextfilessystem-csp.md
+          items: 
+            - name: EnterpriseExtFileSystem DDF file
+              href: enterpriseextfilesystem-ddf.md
+        - name: EnterpriseModernAppManagement CSP
+          href: enterprisemodernappmanagement-csp.md
+          items: 
+            - name: EnterpriseModernAppManagement DDF
+              href: enterprisemodernappmanagement-ddf.md
+            - name: EnterpriseModernAppManagement XSD
+              href: enterprisemodernappmanagement-xsd.md
+        - name: eUICCs CSP
+          href: euiccs-csp.md
+          items: 
+            - name: eUICCs DDF file
+              href: euiccs-ddf-file.md
+        - name: FileSystem CSP
+          href: filesystem-csp.md
+        - name: Firewall CSP
+          href: firewall-csp.md
+          items: 
+            - name: Firewall DDF file
+              href: firewall-ddf-file.md
+        - name: HealthAttestation CSP
+          href: healthattestation-csp.md
+          items: 
+            - name: HealthAttestation DDF
+              href: healthattestation-ddf.md
+        - name: HotSpot CSP
+          href: hotspot-csp.md
+        - name: Maps CSP
+          href: maps-csp.md
+          items: 
+            - name: Maps DDF
+              href: maps-ddf-file.md
+        - name: Messaging CSP
+          href: messaging-csp.md
+          items: 
+            - name: Messaging DDF file
+              href: messaging-ddf.md
+        - name: MultiSIM CSP
+          href: multisim-csp.md
+          items: 
+            - name: MultiSIM DDF file
+              href: multisim-ddf.md
+        - name: NAP CSP
+          href: nap-csp.md
+        - name: NAPDEF CSP
+          href: napdef-csp.md
+        - name: NetworkProxy CSP
+          href: networkproxy-csp.md
+          items: 
+            - name: NetworkProxy DDF file
+              href: networkproxy-ddf.md
+        - name: NetworkQoSPolicy CSP
+          href: networkqospolicy-csp.md
+          items: 
+            - name: NetworkQoSPolicy DDF file
+              href: networkqospolicy-ddf.md
+        - name: NodeCache CSP
+          href: nodecache-csp.md
+          items: 
+            - name: NodeCache DDF file
+              href: nodecache-ddf-file.md
+        - name: Office CSP
+          href: office-csp.md
+          items: 
+            - name: Office DDF
+              href: office-ddf.md
+        - name: PassportForWork CSP
+          href: passportforwork-csp.md
+          items: 
+            - name: PassportForWork DDF file
+              href: passportforwork-ddf.md
+        - name: Personalization CSP
+          href: personalization-csp.md
+          items: 
+            - name: Personalization DDF file
+              href: personalization-ddf.md
+        - name: Policy CSP
+          href: policy-configuration-service-provider.md
+          items: 
+            - name: Policy CSP DDF file
+              href: policy-ddf-file.md
+            - name: Policies in Policy CSP supported by Group Policy
+              href: policies-in-policy-csp-supported-by-group-policy.md
+            - name: ADMX-backed policies in Policy CSP
+              href: policies-in-policy-csp-admx-backed.md
+            - name: Policies in Policy CSP supported by HoloLens 2
+              href: policies-in-policy-csp-supported-by-hololens2.md
+            - name: Policies in Policy CSP supported by HoloLens (1st gen) Commercial Suite
+              href: policies-in-policy-csp-supported-by-hololens-1st-gen-commercial-suite.md
+            - name: Policies in Policy CSP supported by HoloLens (1st gen) Development Edition
+              href: policies-in-policy-csp-supported-by-hololens-1st-gen-development-edition.md
+            - name: Policies in Policy CSP supported by Windows 10 IoT Enterprise
+              href: ./configuration-service-provider-reference.md
+            - name: Policies in Policy CSP supported by Windows 10 IoT Core
+              href: policies-in-policy-csp-supported-by-iot-core.md
+            - name: Policies in Policy CSP supported by Microsoft Surface Hub
+              href: policies-in-policy-csp-supported-by-surface-hub.md
+            - name: Policy CSPs that can be set using Exchange Active Sync (EAS)
+              href: policies-in-policy-csp-that-can-be-set-using-eas.md
+            - name: AboveLock
+              href: policy-csp-abovelock.md
+            - name: Accounts
+              href: policy-csp-accounts.md
+            - name: ActiveXControls
+              href: policy-csp-activexcontrols.md
+            - name: ADMX_ActiveXInstallService
+              href: policy-csp-admx-activexinstallservice.md
+            - name: ADMX_AddRemovePrograms
+              href: policy-csp-admx-addremoveprograms.md
+            - name: ADMX_AppCompat
+              href: policy-csp-admx-appcompat.md
+            - name: ADMX_AppxPackageManager
+              href: policy-csp-admx-appxpackagemanager.md
+            - name: ADMX_AppXRuntime
+              href: policy-csp-admx-appxruntime.md
+            - name: ADMX_AttachmentManager
+              href: policy-csp-admx-attachmentmanager.md
+            - name: ADMX_AuditSettings
+              href: policy-csp-admx-auditsettings.md
+            - name: ADMX_Bits
+              href: policy-csp-admx-bits.md
+            - name: ADMX_CipherSuiteOrder
+              href: policy-csp-admx-ciphersuiteorder.md
+            - name: ADMX_COM
+              href: policy-csp-admx-com.md
+            - name: ADMX_ControlPanel
+              href: policy-csp-admx-controlpanel.md
+            - name: ADMX_ControlPanelDisplay
+              href: policy-csp-admx-controlpaneldisplay.md
+            - name: ADMX_Cpls
+              href: policy-csp-admx-cpls.md
+            - name: ADMX_CredentialProviders
+              href: policy-csp-admx-credentialproviders.md
+            - name: ADMX_CredSsp
+              href: policy-csp-admx-credssp.md
+            - name: ADMX_CredUI
+              href: policy-csp-admx-credui.md
+            - name: ADMX_CtrlAltDel
+              href: policy-csp-admx-ctrlaltdel.md
+            - name: ADMX_DataCollection
+              href: policy-csp-admx-datacollection.md
+            - name: ADMX_Desktop
+              href: policy-csp-admx-desktop.md
+            - name: ADMX_DeviceInstallation
+              href: policy-csp-admx-deviceinstallation.md
+            - name: ADMX_DeviceSetup
+              href: policy-csp-admx-devicesetup.md
+            - name: ADMX_DigitalLocker
+              href: policy-csp-admx-digitallocker.md
+            - name: ADMX_DistributedLinkTracking
+              href: policy-csp-admx-distributedlinktracking.md
+            - name: ADMX_DnsClient
+              href: policy-csp-admx-dnsclient.md
+            - name: ADMX_DWM
+              href: policy-csp-admx-dwm.md
+            - name: ADMX_EAIME
+              href: policy-csp-admx-eaime.md
+            - name: ADMX_EncryptFilesonMove
+              href: policy-csp-admx-encryptfilesonmove.md
+            - name: ADMX_EnhancedStorage
+              href: policy-csp-admx-enhancedstorage.md
+            - name: ADMX_ErrorReporting
+              href: policy-csp-admx-errorreporting.md
+            - name: ADMX_EventForwarding
+              href: policy-csp-admx-eventforwarding.md
+            - name: ADMX_EventLog
+              href: policy-csp-admx-eventlog.md
+            - name: ADMX_Explorer
+              href: policy-csp-admx-explorer.md
+            - name: ADMX_FileRecovery
+              href: policy-csp-admx-filerecovery.md
+            - name: ADMX_FileServerVSSProvider
+              href: policy-csp-admx-fileservervssprovider.md
+            - name: ADMX_FileSys
+              href: policy-csp-admx-filesys.md
+            - name: ADMX_FolderRedirection
+              href: policy-csp-admx-folderredirection.md
+            - name: ADMX_Globalization
+              href: policy-csp-admx-globalization.md
+            - name: ADMX_GroupPolicy
+              href: policy-csp-admx-grouppolicy.md
+            - name: ADMX_Help
+              href: policy-csp-admx-help.md
+            - name: ADMX_HelpAndSupport
+              href: policy-csp-admx-helpandsupport.md
+            - name: ADMX_ICM
+              href: policy-csp-admx-icm.md
+            - name: ADMX_kdc
+              href: policy-csp-admx-kdc.md
+            - name: ADMX_Kerberos
+              href: policy-csp-admx-kerberos.md
+            - name: ADMX_LanmanServer
+              href: policy-csp-admx-lanmanserver.md
+            - name: ADMX_LanmanWorkstation
+              href: policy-csp-admx-lanmanworkstation.md
+            - name: ADMX_LinkLayerTopologyDiscovery
+              href: policy-csp-admx-linklayertopologydiscovery.md
+            - name: ADMX_Logon
+              href: policy-csp-admx-logon.md
+            - name: ADMX_MicrosoftDefenderAntivirus
+              href: policy-csp-admx-microsoftdefenderantivirus.md
+            - name: ADMX_MMC
+              href: policy-csp-admx-mmc.md
+            - name: ADMX_MMCSnapins
+              href: policy-csp-admx-mmcsnapins.md
+            - name: ADMX_MSAPolicy
+              href: policy-csp-admx-msapolicy.md
+            - name: ADMX_msched
+              href: policy-csp-admx-msched.md
+            - name: ADMX_MSDT
+              href: policy-csp-admx-msdt.md
+            - name: ADMX_MSI
+              href: policy-csp-admx-msi.md
+            - name: ADMX_nca
+              href: policy-csp-admx-nca.md
+            - name: ADMX_NCSI
+              href: policy-csp-admx-ncsi.md
+            - name: ADMX_Netlogon
+              href: policy-csp-admx-netlogon.md
+            - name: ADMX_NetworkConnections
+              href: policy-csp-admx-networkconnections.md
+            - name: ADMX_OfflineFiles
+              href: policy-csp-admx-offlinefiles.md
+            - name: ADMX_PeerToPeerCaching
+              href: policy-csp-admx-peertopeercaching.md
+            - name: ADMX_PerformanceDiagnostics
+              href: policy-csp-admx-performancediagnostics.md
+            - name: ADMX_Power
+              href: policy-csp-admx-power.md
+            - name: ADMX_PowerShellExecutionPolicy
+              href: policy-csp-admx-powershellexecutionpolicy.md
+            - name: ADMX_Printing
+              href: policy-csp-admx-printing.md
+            - name: ADMX_Printing2
+              href: policy-csp-admx-printing2.md
+            - name: ADMX_Programs
+              href: policy-csp-admx-programs.md
+            - name: ADMX_Reliability
+              href: policy-csp-admx-reliability.md
+            - name: ADMX_RemoteAssistance
+              href: policy-csp-admx-remoteassistance.md
+            - name: ADMX_RemovableStorage
+              href: policy-csp-admx-removablestorage.md
+            - name: ADMX_RPC
+              href: policy-csp-admx-rpc.md
+            - name: ADMX_Scripts
+              href: policy-csp-admx-scripts.md
+            - name: ADMX_sdiageng
+              href: policy-csp-admx-sdiageng.md
+            - name: ADMX_Securitycenter
+              href: policy-csp-admx-securitycenter.md
+            - name: ADMX_Sensors
+              href: policy-csp-admx-sensors.md
+            - name: ADMX_Servicing
+              href: policy-csp-admx-servicing.md
+            - name: ADMX_SettingSync
+              href: policy-csp-admx-settingsync.md
+            - name: ADMX_SharedFolders
+              href: policy-csp-admx-sharedfolders.md
+            - name: ADMX_Sharing
+              href: policy-csp-admx-sharing.md
+            - name: ADMX_ShellCommandPromptRegEditTools
+              href: policy-csp-admx-shellcommandpromptregedittools.md
+            - name: ADMX_SkyDrive
+              href: policy-csp-admx-skydrive.md
+            - name: ADMX_Smartcard
+              href: policy-csp-admx-smartcard.md
+            - name: ADMX_Snmp
+              href: policy-csp-admx-snmp.md
+            - name: ADMX_StartMenu
+              href: policy-csp-admx-startmenu.md
+            - name: ADMX_SystemRestore
+              href: policy-csp-admx-systemrestore.md
+            - name: ADMX_Taskbar
+              href: policy-csp-admx-taskbar.md
+            - name: ADMX_tcpip
+              href: policy-csp-admx-tcpip.md
+            - name: ADMX_Thumbnails
+              href: policy-csp-admx-thumbnails.md
+            - name: ADMX_TPM
+              href: policy-csp-admx-tpm.md
+            - name: ADMX_UserExperienceVirtualization
+              href: policy-csp-admx-userexperiencevirtualization.md
+            - name: ADMX_UserProfiles
+              href: policy-csp-admx-userprofiles.md
+            - name: ADMX_W32Time
+              href: policy-csp-admx-w32time.md
+            - name: ADMX_WCM
+              href: policy-csp-admx-wcm.md
+            - name: ADMX_WinCal
+              href: policy-csp-admx-wincal.md
+            - name: ADMX_WindowsAnytimeUpgrade
+              href: policy-csp-admx-windowsanytimeupgrade.md
+            - name: ADMX_WindowsConnectNow
+              href: policy-csp-admx-windowsconnectnow.md
+            - name: ADMX_WindowsExplorer
+              href: policy-csp-admx-windowsexplorer.md
+            - name: ADMX_WindowsFileProtection
+              href: policy-csp-admx-windowsfileprotection.md
+            - name: ADMX_WindowsMediaDRM
+              href: policy-csp-admx-windowsmediadrm.md
+            - name: ADMX_WindowsMediaPlayer
+              href: policy-csp-admx-windowsmediaplayer.md
+            - name: ADMX_WindowsRemoteManagement
+              href: policy-csp-admx-windowsremotemanagement.md
+            - name: ADMX_WindowsStore
+              href: policy-csp-admx-windowsstore.md
+            - name: ADMX_WinInit
+              href: policy-csp-admx-wininit.md
+            - name: ADMX_WinLogon
+              href: policy-csp-admx-winlogon.md
+            - name: ADMX-Winsrv
+              href: policy-csp-admx-winsrv.md
+            - name: ADMX_wlansvc
+              href: policy-csp-admx-wlansvc.md
+            - name: ADMX_WPN
+              href: policy-csp-admx-wpn.md
+            - name: ApplicationDefaults
+              href: policy-csp-applicationdefaults.md
+            - name: ApplicationManagement
+              href: policy-csp-applicationmanagement.md
+            - name: AppRuntime
+              href: policy-csp-appruntime.md
+            - name: AppVirtualization
+              href: policy-csp-appvirtualization.md
+            - name: AttachmentManager
+              href: policy-csp-attachmentmanager.md
+            - name: Audit
+              href: policy-csp-audit.md
+            - name: Authentication
+              href: policy-csp-authentication.md
+            - name: Autoplay
+              href: policy-csp-autoplay.md
+            - name: BitLocker
+              href: policy-csp-bitlocker.md
+            - name: BITS
+              href: policy-csp-bits.md
+            - name: Bluetooth
+              href: policy-csp-bluetooth.md
+            - name: Browser
+              href: policy-csp-browser.md
+            - name: Camera
+              href: policy-csp-camera.md
+            - name: Cellular
+              href: policy-csp-cellular.md
+            - name: Connectivity
+              href: policy-csp-connectivity.md
+            - name: ControlPolicyConflict
+              href: policy-csp-controlpolicyconflict.md
+            - name: CredentialsDelegation
+              href: policy-csp-credentialsdelegation.md
+            - name: CredentialProviders
+              href: policy-csp-credentialproviders.md
+            - name: CredentialsUI
+              href: policy-csp-credentialsui.md
+            - name: Cryptography
+              href: policy-csp-cryptography.md
+            - name: DataProtection
+              href: policy-csp-dataprotection.md
+            - name: DataUsage
+              href: policy-csp-datausage.md
+            - name: Defender
+              href: policy-csp-defender.md
+            - name: DeliveryOptimization
+              href: policy-csp-deliveryoptimization.md
+            - name: Desktop
+              href: policy-csp-desktop.md
+            - name: DeviceGuard
+              href: policy-csp-deviceguard.md
+            - name: DeviceHealthMonitoring
+              href: policy-csp-devicehealthmonitoring.md
+            - name: DeviceInstallation
+              href: policy-csp-deviceinstallation.md
+            - name: DeviceLock
+              href: policy-csp-devicelock.md
+            - name: Display
+              href: policy-csp-display.md
+            - name: DmaGuard
+              href: policy-csp-dmaguard.md
+            - name: Education
+              href: policy-csp-education.md
+            - name: EnterpriseCloudPrint
+              href: policy-csp-enterprisecloudprint.md
+            - name: ErrorReporting
+              href: policy-csp-errorreporting.md
+            - name: EventLogService
+              href: policy-csp-eventlogservice.md
+            - name: Experience
+              href: policy-csp-experience.md
+            - name: ExploitGuard
+              href: policy-csp-exploitguard.md
+            - name: FileExplorer
+              href: policy-csp-fileexplorer.md
+            - name: Games
+              href: policy-csp-games.md
+            - name: Handwriting
+              href: policy-csp-handwriting.md
+            - name: InternetExplorer
+              href: policy-csp-internetexplorer.md
+            - name: Kerberos
+              href: policy-csp-kerberos.md
+            - name: KioskBrowser
+              href: policy-csp-kioskbrowser.md
+            - name: LanmanWorkstation
+              href: policy-csp-lanmanworkstation.md
+            - name: Licensing
+              href: policy-csp-licensing.md
+            - name: LocalPoliciesSecurityOptions
+              href: policy-csp-localpoliciessecurityoptions.md
+            - name: LocalUsersAndGroups
+              href: policy-csp-localusersandgroups.md
+            - name: LockDown
+              href: policy-csp-lockdown.md
+            - name: Maps
+              href: policy-csp-maps.md
+            - name: Messaging
+              href: policy-csp-messaging.md
+            - name: MixedReality
+              href: policy-csp-mixedreality.md
+            - name: MSSecurityGuide
+              href: policy-csp-mssecurityguide.md
+            - name: MSSLegacy
+              href: policy-csp-msslegacy.md
+            - name: Multitasking
+              href: policy-csp-multitasking.md
+            - name: NetworkIsolation
+              href: policy-csp-networkisolation.md
+            - name: NetworkListManager
+              href: policy-csp-networklistmanager.md
+            - name: Notifications
+              href: policy-csp-notifications.md
+            - name: Power
+              href: policy-csp-power.md
+            - name: Printers
+              href: policy-csp-printers.md
+            - name: Privacy
+              href: policy-csp-privacy.md
+            - name: RemoteAssistance
+              href: policy-csp-remoteassistance.md
+            - name: RemoteDesktopServices
+              href: policy-csp-remotedesktopservices.md
+            - name: RemoteManagement
+              href: policy-csp-remotemanagement.md
+            - name: RemoteProcedureCall
+              href: policy-csp-remoteprocedurecall.md
+            - name: RemoteShell
+              href: policy-csp-remoteshell.md
+            - name: RestrictedGroups
+              href: policy-csp-restrictedgroups.md
+            - name: Search
+              href: policy-csp-search.md
+            - name: Security
+              href: policy-csp-security.md
+            - name: ServiceControlManager
+              href: policy-csp-servicecontrolmanager.md
+            - name: Settings
+              href: policy-csp-settings.md
+            - name: Speech
+              href: policy-csp-speech.md
+            - name: Start
+              href: policy-csp-start.md
+            - name: Storage
+              href: policy-csp-storage.md
+            - name: System
+              href: policy-csp-system.md
+            - name: SystemServices
+              href: policy-csp-systemservices.md
+            - name: TaskManager
+              href: policy-csp-taskmanager.md
+            - name: TaskScheduler
+              href: policy-csp-taskscheduler.md
+            - name: TextInput
+              href: policy-csp-textinput.md
+            - name: TimeLanguageSettings
+              href: policy-csp-timelanguagesettings.md
+            - name: Troubleshooting
+              href: policy-csp-troubleshooting.md
+            - name: Update
+              href: policy-csp-update.md
+            - name: UserRights
+              href: policy-csp-userrights.md
+            - name: Wifi
+              href: policy-csp-wifi.md
+            - name: WindowsConnectionManager
+              href: policy-csp-windowsconnectionmanager.md
+            - name: WindowsDefenderSecurityCenter
+              href: policy-csp-windowsdefendersecuritycenter.md
+            - name: WindowsDefenderSmartScreen
+              href: policy-csp-smartscreen.md
+            - name: WindowsInkWorkspace
+              href: policy-csp-windowsinkworkspace.md
+            - name: WindowsLogon
+              href: policy-csp-windowslogon.md
+            - name: WindowsPowerShell
+              href: policy-csp-windowspowershell.md
+            - name: WindowsSandbox
+              href: policy-csp-windowssandbox.md
+            - name: WirelessDisplay
+              href: policy-csp-wirelessdisplay.md
+        - name: PolicyManager CSP
+          href: policymanager-csp.md
+        - name: Provisioning CSP
+          href: provisioning-csp.md
+        - name: PROXY CSP
+          href: proxy-csp.md
+        - name: PXLOGICAL CSP
+          href: pxlogical-csp.md
+        - name: Reboot CSP
+          href: reboot-csp.md
+          items: 
+            - name: Reboot DDF file
+              href: reboot-ddf-file.md
+        - name: Registry CSP
+          href: registry-csp.md
+          items: 
+            - name: Registry DDF file
+              href: registry-ddf-file.md
+        - name: RemoteFind CSP
+          href: remotefind-csp.md
+          items: 
+            - name: RemoteFind DDF file
+              href: remotefind-ddf-file.md
+        - name: RemoteLock CSP
+          href: remotelock-csp.md
+          items: 
+            - name: RemoteLock DDF file
+              href: remotelock-ddf-file.md
+        - name: RemoteRing CSP
+          href: remotering-csp.md
+          items: 
+            - name: RemoteRing DDF file
+              href: remotering-ddf-file.md
+        - name: RemoteWipe CSP
+          href: remotewipe-csp.md
+          items: 
+            - name: RemoteWipe DDF file
+              href: remotewipe-ddf-file.md
+        - name: Reporting CSP
+          href: reporting-csp.md
+          items: 
+            - name: Reporting DDF file
+              href: reporting-ddf-file.md
+        - name: RootCATrustedCertificates CSP
+          href: rootcacertificates-csp.md
+          items: 
+            - name: RootCATrustedCertificates DDF file
+              href: rootcacertificates-ddf-file.md
+        - name: SecureAssessment CSP
+          href: secureassessment-csp.md
+          items: 
+            - name: SecureAssessment DDF file
+              href: secureassessment-ddf-file.md
+        - name: SecurityPolicy CSP
+          href: securitypolicy-csp.md
+        - name: SharedPC CSP
+          href: sharedpc-csp.md
+          items: 
+            - name: SharedPC DDF file
+              href: sharedpc-ddf-file.md
+        - name: Storage CSP
+          href: storage-csp.md
+          items: 
+            - name: Storage DDF file
+              href: storage-ddf-file.md
+        - name: SUPL CSP
+          href: supl-csp.md
+          items: 
+            - name: SUPL DDF file
+              href: supl-ddf-file.md
+        - name: SurfaceHub CSP
+          href: surfacehub-csp.md
+          items: 
+            - name: SurfaceHub DDF file
+              href: surfacehub-ddf-file.md
+        - name: TenantLockdown CSP
+          href: tenantlockdown-csp.md
+          items: 
+            - name: TenantLockdown DDF file
+              href: tenantlockdown-ddf.md
+        - name: TPMPolicy CSP
+          href: tpmpolicy-csp.md
+          items: 
+            - name: TPMPolicy DDF file
+              href: tpmpolicy-ddf-file.md
+        - name: UEFI CSP
+          href: uefi-csp.md
+          items: 
+            - name: UEFI DDF file
+              href: uefi-ddf.md
+        - name: UnifiedWriteFilter CSP
+          href: unifiedwritefilter-csp.md
+          items: 
+            - name: UnifiedWriteFilter DDF file
+              href: unifiedwritefilter-ddf.md
+        - name: Update CSP
+          href: update-csp.md
+          items: 
+            - name: Update DDF file
+              href: update-ddf-file.md
+        - name: VPN CSP
+          href: vpn-csp.md
+          items: 
+            - name: VPN DDF file
+              href: vpn-ddf-file.md
+        - name: VPNv2 CSP
+          href: vpnv2-csp.md
+          items: 
+            - name: VPNv2 DDF file
+              href: vpnv2-ddf-file.md
+            - name: ProfileXML XSD
+              href: vpnv2-profile-xsd.md
+            - name: EAP configuration
+              href: eap-configuration.md
+        - name: w4 APPLICATION CSP
+          href: w4-application-csp.md
+        - name: w7 APPLICATION CSP
+          href: w7-application-csp.md
+        - name: WiFi CSP
+          href: wifi-csp.md
+          items: 
+            - name: WiFi DDF file
+              href: wifi-ddf-file.md
+        - name: Win32AppInventory CSP
+          href: win32appinventory-csp.md
+          items: 
+            - name: Win32AppInventory DDF file
+              href: win32appinventory-ddf-file.md
+        - name: Win32CompatibilityAppraiser CSP
+          href: win32compatibilityappraiser-csp.md
+          items: 
+            - name: Win32CompatibilityAppraiser DDF file
+              href: win32compatibilityappraiser-ddf.md
+        - name: WindowsAdvancedThreatProtection CSP
+          href: windowsadvancedthreatprotection-csp.md
+          items: 
+            - name: WindowsAdvancedThreatProtection DDF file
+              href: windowsadvancedthreatprotection-ddf.md
+        - name: WindowsDefenderApplicationGuard CSP
+          href: windowsdefenderapplicationguard-csp.md
+          items: 
+            - name: WindowsDefenderApplicationGuard DDF file
+              href: windowsdefenderapplicationguard-ddf-file.md
+        - name: WindowsLicensing CSP
+          href: windowslicensing-csp.md
+          items: 
+            - name: WindowsLicensing DDF file
+              href: windowslicensing-ddf-file.md
+        - name: WindowsSecurityAuditing CSP
+          href: windowssecurityauditing-csp.md
+          items: 
+            - name: WindowsSecurityAuditing DDF file
+              href: windowssecurityauditing-ddf-file.md
+        - name: WiredNetwork CSP
+          href: wirednetwork-csp.md
+          items: 
+            - name: WiredNetwork DDF file
+              href: wirednetwork-ddf-file.md

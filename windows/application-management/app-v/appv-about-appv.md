@@ -1,7 +1,7 @@
 ---
 title: What's new in App-V for Windows 10, version 1703 and earlier (Windows 10)
 description: Information about what's new in App-V for Windows 10, version 1703 and earlier. 
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 06/08/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # What's new in App-V for Windows 10, version 1703 and earlier
@@ -44,7 +44,7 @@ Previous versions of App-V have required you to manually remove your unpublished
 
 With Windows 10, version 1607 and later releases, App-V is now included with [Windows 10 for Enterprise and Windows 10 for Education](https://www.microsoft.com/WindowsForBusiness/windows-product-home) and is no longer part of the Microsoft Desktop Optimization Pack.
 
-To learn more about earlier versions of App-V, see [MDOP Information Experience](https://docs.microsoft.com/microsoft-desktop-optimization-pack/index).
+To learn more about earlier versions of App-V, see [MDOP Information Experience](/microsoft-desktop-optimization-pack/index).
 
 The changes in App-V for Windows 10, version 1607 impact existing implementations of App-V in the following ways:
 
@@ -61,7 +61,7 @@ For more information about how to configure an existing App-V installation after
 
 ## Support for System Center
 
-App-V supports System Center 2016 and System Center 2012 R2 Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](https://technet.microsoft.com/library/jj822982.aspx) to learn more about how to integrate your App-V environment with Configuration Manager.
+App-V supports System Center 2016 and System Center 2012 R2 Configuration Manager SP1. See [Planning for App-V Integration with Configuration Manager](/previous-versions/system-center/system-center-2012-R2/jj822982(v=technet.10)) to learn more about how to integrate your App-V environment with Configuration Manager.
 
 
 

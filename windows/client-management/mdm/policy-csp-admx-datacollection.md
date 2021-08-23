@@ -90,7 +90,7 @@ If you disable or do not configure this policy setting, then Microsoft will not 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure the Commercial ID*
+-   GP Friendly name: *Configure the Commercial ID*
 -   GP name: *CommercialIdPolicy*
 -   GP path: *Windows Components\Data Collection and Preview Builds*
 -   GP ADMX file name: *DataCollection.admx*
@@ -99,16 +99,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are for upcoming release.
 
 <!--/Policies-->
 

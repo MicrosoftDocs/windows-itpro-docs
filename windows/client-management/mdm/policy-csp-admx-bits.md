@@ -132,7 +132,7 @@ If you disable or do not configure this policy setting, the BITS client uses Win
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow the BITS client to use Windows Branch Cache*
+-   GP Friendly name: *Do not allow the BITS client to use Windows Branch Cache*
 -   GP name: *BITS_DisableBranchCache*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -204,7 +204,7 @@ If you disable or do not configure this policy setting, the computer attempts to
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow the computer to act as a BITS Peercaching client*
+-   GP Friendly name: *Do not allow the computer to act as a BITS Peercaching client*
 -   GP name: *BITS_DisablePeercachingClient*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -276,7 +276,7 @@ If you disable or do not configure this policy setting, the computer will offer 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow the computer to act as a BITS Peercaching server*
+-   GP Friendly name: *Do not allow the computer to act as a BITS Peercaching server*
 -   GP name: *BITS_DisablePeercachingServer*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -348,7 +348,7 @@ If you disable or do not configure this policy setting, the BITS peer caching fe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow BITS Peercaching*
+-   GP Friendly name: *Allow BITS Peercaching*
 -   GP name: *BITS_EnablePeercaching*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -425,7 +425,7 @@ If you disable this policy setting or do not configure it, the default value of 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Limit the maximum network bandwidth used for Peercaching*
+-   GP Friendly name: *Limit the maximum network bandwidth used for Peercaching*
 -   GP name: *BITS_MaxBandwidthServedForPeers*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -499,7 +499,7 @@ If you disable or do not configure this policy setting, the limits defined for w
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set up a maintenance schedule to limit the maximum network bandwidth used for BITS background transfers*
+-   GP Friendly name: *Set up a maintenance schedule to limit the maximum network bandwidth used for BITS background transfers*
 -   GP name: *BITS_MaxBandwidthV2_Maintenance*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -571,7 +571,7 @@ If you disable or do not configure this policy setting, BITS uses all available 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set up a work schedule to limit the maximum network bandwidth used for BITS background transfers*
+-   GP Friendly name: *Set up a work schedule to limit the maximum network bandwidth used for BITS background transfers*
 -   GP name: *BITS_MaxBandwidthV2_Work*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -644,7 +644,7 @@ If you disable or do not configure this policy setting, the default size of the 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Limit the BITS Peercache size*
+-   GP Friendly name: *Limit the BITS Peercache size*
 -   GP name: *BITS_MaxCacheSize*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -716,7 +716,7 @@ If you disable or do not configure this policy setting, files that have not been
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Limit the age of files in the BITS Peercache*
+-   GP Friendly name: *Limit the age of files in the BITS Peercache*
 -   GP name: *BITS_MaxContentAge*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -789,7 +789,7 @@ If you disable or do not configure this policy setting, the default value of 90 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Limit the maximum BITS job download time*
+-   GP Friendly name: *Limit the maximum BITS job download time*
 -   GP name: *BITS_MaxDownloadTime*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -861,7 +861,7 @@ If you disable or do not configure this policy setting, BITS will use the defaul
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Limit the maximum number of files allowed in a BITS job*
+-   GP Friendly name: *Limit the maximum number of files allowed in a BITS job*
 -   GP name: *BITS_MaxFilesPerJob*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -933,7 +933,7 @@ If you disable or do not configure this policy setting, BITS will use the defaul
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Limit the maximum number of BITS jobs for this computer*
+-   GP Friendly name: *Limit the maximum number of BITS jobs for this computer*
 -   GP name: *BITS_MaxJobsPerMachine*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -1005,7 +1005,7 @@ If you disable or do not configure this policy setting, BITS will use the defaul
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Limit the maximum number of BITS jobs for each user*
+-   GP Friendly name: *Limit the maximum number of BITS jobs for each user*
 -   GP name: *BITS_MaxJobsPerUser*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -1077,7 +1077,7 @@ If you disable or do not configure this policy setting, BITS will limit ranges t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Limit the maximum number of ranges that can be added to the file in a BITS job*
+-   GP Friendly name: *Limit the maximum number of ranges that can be added to the file in a BITS job*
 -   GP name: *BITS_MaxRangesPerFile*
 -   GP path: *Network\Background Intelligent Transfer Service (BITS)*
 -   GP ADMX file name: *Bits.admx*
@@ -1086,16 +1086,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

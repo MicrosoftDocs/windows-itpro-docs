@@ -114,7 +114,7 @@ If you disable or do not configure this policy setting, redirected shell folders
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not automatically make all redirected folders available offline*
+-   GP Friendly name: *Do not automatically make all redirected folders available offline*
 -   GP name: *DisableFRAdminPin*
 -   GP path: *System/Folder Redirection*
 -   GP ADMX file name: *FolderRedirection.admx*
@@ -187,7 +187,7 @@ If you disable or do not configure this policy setting, all redirected shell fol
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not automatically make specific redirected folders available offline*
+-   GP Friendly name: *Do not automatically make specific redirected folders available offline*
 -   GP name: *DisableFRAdminPinByFolder*
 -   GP path: *System/Folder Redirection*
 -   GP ADMX file name: *FolderRedirection.admx*
@@ -256,7 +256,7 @@ If you disable or do not configure this policy setting, when the path to a redir
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable optimized move of contents in Offline Files cache on Folder Redirection server path change*
+-   GP Friendly name: *Enable optimized move of contents in Offline Files cache on Folder Redirection server path change*
 -   GP name: *FolderRedirectionEnableCacheRename*
 -   GP path: *System/Folder Redirection*
 -   GP ADMX file name: *FolderRedirection.admx*
@@ -328,7 +328,7 @@ If you disable or not configure this policy setting, Windows Vista, Windows 7, W
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use localized subfolder names when redirecting Start Menu and My Documents*
+-   GP Friendly name: *Use localized subfolder names when redirecting Start Menu and My Documents*
 -   GP name: *LocalizeXPRelativePaths_1*
 -   GP path: *System/Folder Redirection*
 -   GP ADMX file name: *FolderRedirection.admx*
@@ -400,7 +400,7 @@ If you disable or not configure this policy setting, Windows Vista, Windows 7, W
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use localized subfolder names when redirecting Start Menu and My Documents*
+-   GP Friendly name: *Use localized subfolder names when redirecting Start Menu and My Documents*
 -   GP name: *LocalizeXPRelativePaths_2*
 -   GP path: *System/Folder Redirection*
 -   GP ADMX file name: *FolderRedirection.admx*
@@ -473,7 +473,7 @@ If you disable or do not configure this policy setting and the user has redirect
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Redirect folders on primary computers only*
+-   GP Friendly name: *Redirect folders on primary computers only*
 -   GP name: *PrimaryComputer_FR_1*
 -   GP path: *System/Folder Redirection*
 -   GP ADMX file name: *FolderRedirection.admx*
@@ -546,7 +546,7 @@ If you disable or do not configure this policy setting and the user has redirect
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Redirect folders on primary computers only*
+-   GP Friendly name: *Redirect folders on primary computers only*
 -   GP name: *PrimaryComputer_FR_2*
 -   GP path: *System/Folder Redirection*
 -   GP ADMX file name: *FolderRedirection.admx*
@@ -555,16 +555,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

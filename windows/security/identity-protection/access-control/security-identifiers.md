@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -52,7 +52,7 @@ SIDs always remain unique. Security authorities never issue the same SID twice, 
 
 A security identifier is a data structure in binary format that contains a variable number of values. The first values in the structure contain information about the SID structure. The remaining values are arranged in a hierarchy (similar to a telephone number), and they identify the SID-issuing authority (for example, “NT Authority”), the SID-issuing domain, and a particular security principal or group. The following image illustrates the structure of a SID.
 
-![](images/security-identifider-architecture.jpg)
+![Security identifier architecture](images/security-identifider-architecture.jpg)
 
 The individual values of a SID are described in the following table.
 
@@ -188,91 +188,108 @@ The SECURITY\_NT\_AUTHORITY (S-1-5) predefined identifier authority produces SID
 
 | SID | Display Name | Description |
 | - | - | - |
-| S-1-5-1 | Dialup | A group that includes all users who are logged on to the system by means of a dial-up connection.| 
+| S-1-5-1 | Dialup | A group that includes all users who are logged on to the system by means of a dial-up connection.|
 | S-1-5-113 | Local account| You can use this SID when restricting network logon to local accounts instead of "administrator" or equivalent. This SID can be effective in blocking network logon for local users and groups by account type regardless of what they are actually named.|
 | S-1-5-114| Local account and member of Administrators group | You can use this SID when restricting network logon to local accounts instead of "administrator" or equivalent. This SID can be effective in blocking network logon for local users and groups by account type regardless of what they are actually named. |
 | S-1-5-2 | Network | A group that includes all users who are logged on by means of a network connection. Access tokens for interactive users do not contain the Network SID.|
-| S-1-5-3 | Batch | A group that includes all users who have logged on by means of a batch queue facility, such as task scheduler jobs.| 
-| S-1-5-4 | Interactive| A group that includes all users who log on interactively. A user can start an interactive logon session by logging on directly at the keyboard, by opening a Remote Desktop Services connection from a remote computer, or by using a remote shell such as Telnet. In each case, the user's access token contains the Interactive SID. If the user signs in by using a Remote Desktop Services connection, the user's access token also contains the Remote Interactive Logon SID.| 
-| S-1-5-5- *X*-*Y* | Logon Session| The  *X* and  *Y* values for these SIDs uniquely identify a particular logon session.| 
+| S-1-5-3 | Batch | A group that includes all users who have logged on by means of a batch queue facility, such as task scheduler jobs.|
+| S-1-5-4 | Interactive| A group that includes all users who log on interactively. A user can start an interactive logon session by logging on directly at the keyboard, by opening a Remote Desktop Services connection from a remote computer, or by using a remote shell such as Telnet. In each case, the user's access token contains the Interactive SID. If the user signs in by using a Remote Desktop Services connection, the user's access token also contains the Remote Interactive Logon SID.|
+| S-1-5-5- *X*-*Y* | Logon Session| The  *X* and  *Y* values for these SIDs uniquely identify a particular logon session.|
 | S-1-5-6 | Service| A group that includes all security principals that have signed in as a service.|
-| S-1-5-7 | Anonymous Logon| A user who has connected to the computer without supplying a user name and password.<br/>The Anonymous Logon identity is different from the identity that is used by Internet Information Services (IIS) for anonymous web access. IIS uses an actual account—by default, IUSR_ *ComputerName*, for anonymous access to resources on a website. Strictly speaking, such access is not anonymous because the security principal is known even though unidentified people are using the account. IUSR_ *ComputerName* (or whatever you name the account) has a password, and IIS logs on the account when the service starts. As a result, the IIS "anonymous" user is a member of Authenticated Users but Anonymous Logon is not.| 
-| S-1-5-8| Proxy| Does not currently apply: this SID is not used.| 
+| S-1-5-7 | Anonymous Logon| A user who has connected to the computer without supplying a user name and password.<br/>The Anonymous Logon identity is different from the identity that is used by Internet Information Services (IIS) for anonymous web access. IIS uses an actual account—by default, IUSR_ *ComputerName*, for anonymous access to resources on a website. Strictly speaking, such access is not anonymous because the security principal is known even though unidentified people are using the account. IUSR_ *ComputerName* (or whatever you name the account) has a password, and IIS logs on the account when the service starts. As a result, the IIS "anonymous" user is a member of Authenticated Users but Anonymous Logon is not.|
+| S-1-5-8| Proxy| Does not currently apply: this SID is not used.|
 | S-1-5-9 | Enterprise Domain Controllers| A group that includes all domain controllers in a forest of domains.|
-| S-1-5-10 | Self| A placeholder in an ACE for a user, group, or computer object in Active Directory. When you grant permissions to Self, you grant them to the security principal that is represented by the object. During an access check, the operating system replaces the SID for Self with the SID for the security principal that is represented by the object.| 
+| S-1-5-10 | Self| A placeholder in an ACE for a user, group, or computer object in Active Directory. When you grant permissions to Self, you grant them to the security principal that is represented by the object. During an access check, the operating system replaces the SID for Self with the SID for the security principal that is represented by the object.|
 | S-1-5-11 | Authenticated Users| A group that includes all users and computers with identities that have been authenticated. Authenticated Users does not include Guest even if the Guest account has a password.<br/>This group includes authenticated security principals from any trusted domain, not only the current domain.|
-| S-1-5-12 | Restricted Code| An identity that is used by a process that is running in a restricted security context. In Windows and Windows Server operating systems, a software restriction policy can assign one of three security levels to code: unrestricted, restricted, or disallowed. When code runs at the restricted security level, the Restricted SID is added to the user's access token.| 
-| S-1-5-13 | Terminal Server User| A group that includes all users who sign in to a server with Remote Desktop Services enabled.| 
-| S-1-5-14 | Remote Interactive Logon| A group that includes all users who log on to the computer by using a remote desktop connection. This group is a subset of the Interactive group. Access tokens that contain the Remote Interactive Logon SID also contain the Interactive SID.| 
-| S-1-5-15| This Organization| A group that includes all users from the same organization. Only included with Active Directory accounts and only added by a domain controller.| 
-| S-1-5-17 | IIS_USRS| An account that is used by the default Internet Information Services (IIS) user.| 
-| S-1-5-18 | System (or LocalSystem)| An identity that is used locally by the operating system and by services that are configured to sign in as LocalSystem.<br/>System is a hidden member of Administrators. That is, any process running as System has the SID for the built-in Administrators group in its access token.<br/>When a process that is running locally as System accesses network resources, it does so by using the computer's domain identity. Its access token on the remote computer includes the SID for the local computer's domain account plus SIDs for security groups that the computer is a member of, such as Domain Computers and Authenticated Users.| 
-| S-1-5-19 | NT Authority (LocalService)| An identity that is used by services that are local to the computer, have no need for extensive local access, and do not need authenticated network access. Services that run as LocalService access local resources as ordinary users, and they access network resources as anonymous users. As a result, a service that runs as LocalService has significantly less authority than a service that runs as LocalSystem locally and on the network.| 
-| S-1-5-20 | Network Service| An identity that is used by services that have no need for extensive local access but do need authenticated network access. Services running as NetworkService access local resources as ordinary users and access network resources by using the computer's identity. As a result, a service that runs as NetworkService has the same network access as a service that runs as LocalSystem, but it has significantly reduced local access.| 
-| S-1-5-*domain*-500 | Administrator| A user account for the system administrator. Every computer has a local Administrator account and every domain has a domain Administrator account.<br/>The Administrator account is the first account created during operating system installation. The account cannot be deleted, disabled, or locked out, but it can be renamed.<br/>By default, the Administrator account is a member of the Administrators group, and it cannot be removed from that group.| 
-| S-1-5-*domain*-501 | Guest| A user account for people who do not have individual accounts. Every computer has a local Guest account, and every domain has a domain Guest account.<br/>By default, Guest is a member of the Everyone and the Guests groups. The domain Guest account is also a member of the Domain Guests and Domain Users groups.<br/>Unlike Anonymous Logon, Guest is a real account, and it can be used to log on interactively. The Guest account does not require a password, but it can have one.| 
-| S-1-5-*domain*-502| krbtgt| A user account that is used by the Key Distribution Center (KDC) service. The account exists only on domain controllers.| 
-| S-1-5-*domain*-512| Domain Admins| A global group with members that are authorized to administer the domain. By default, the Domain Admins group is a member of the Administrators group on all computers that have joined the domain, including domain controllers.<br/>Domain Admins is the default owner of any object that is created in the domain's Active Directory by any member of the group. If members of the group create other objects, such as files, the default owner is the Administrators group.| 
-| S-1-5-*domain*-513| Domain Users| A global group that includes all users in a domain. When you create a new User object in Active Directory, the user is automatically added to this group.| 
-| S-1-5-*domain*-514| Domain Guests| A global group, which by default, has only one member: the domain's built-in Guest account.| 
-| S-1-5-*domain*-515 | Domain Computers| A global group that includes all computers that have joined the domain, excluding domain controllers.| 
-| S-1-5-*domain*-516| Domain Controllers| A global group that includes all domain controllers in the domain. New domain controllers are added to this group automatically.| 
-| S-1-5-*domain*-517 | Cert Publishers| A global group that includes all computers that host an enterprise certification authority.<br/>Cert Publishers are authorized to publish certificates for User objects in Active Directory.| 
-| S-1-5-*root domain*-518| Schema Admins| A group that exists only in the forest root domain. It is a universal group if the domain is in native mode, and it is a global group if the domain is in mixed mode. The Schema Admins group is authorized to make schema changes in Active Directory. By default, the only member of the group is the Administrator account for the forest root domain.| 
+| S-1-5-12 | Restricted Code| An identity that is used by a process that is running in a restricted security context. In Windows and Windows Server operating systems, a software restriction policy can assign one of three security levels to code: unrestricted, restricted, or disallowed. When code runs at the restricted security level, the Restricted SID is added to the user's access token.|
+| S-1-5-13 | Terminal Server User| A group that includes all users who sign in to a server with Remote Desktop Services enabled.|
+| S-1-5-14 | Remote Interactive Logon| A group that includes all users who log on to the computer by using a remote desktop connection. This group is a subset of the Interactive group. Access tokens that contain the Remote Interactive Logon SID also contain the Interactive SID.|
+| S-1-5-15| This Organization| A group that includes all users from the same organization. Only included with Active Directory accounts and only added by a domain controller.|
+| S-1-5-17 | IIS_USRS| An account that is used by the default Internet Information Services (IIS) user.|
+| S-1-5-18 | System (or LocalSystem)| An identity that is used locally by the operating system and by services that are configured to sign in as LocalSystem.<br/>System is a hidden member of Administrators. That is, any process running as System has the SID for the built-in Administrators group in its access token.<br/>When a process that is running locally as System accesses network resources, it does so by using the computer's domain identity. Its access token on the remote computer includes the SID for the local computer's domain account plus SIDs for security groups that the computer is a member of, such as Domain Computers and Authenticated Users.|
+| S-1-5-19 | NT Authority (LocalService)| An identity that is used by services that are local to the computer, have no need for extensive local access, and do not need authenticated network access. Services that run as LocalService access local resources as ordinary users, and they access network resources as anonymous users. As a result, a service that runs as LocalService has significantly less authority than a service that runs as LocalSystem locally and on the network.|
+| S-1-5-20 | Network Service| An identity that is used by services that have no need for extensive local access but do need authenticated network access. Services running as NetworkService access local resources as ordinary users and access network resources by using the computer's identity. As a result, a service that runs as NetworkService has the same network access as a service that runs as LocalSystem, but it has significantly reduced local access.|
+| S-1-5-*domain*-500 | Administrator| A user account for the system administrator. Every computer has a local Administrator account and every domain has a domain Administrator account.<br/>The Administrator account is the first account created during operating system installation. The account cannot be deleted, disabled, or locked out, but it can be renamed.<br/>By default, the Administrator account is a member of the Administrators group, and it cannot be removed from that group.|
+| S-1-5-*domain*-501 | Guest| A user account for people who do not have individual accounts. Every computer has a local Guest account, and every domain has a domain Guest account.<br/>By default, Guest is a member of the Everyone and the Guests groups. The domain Guest account is also a member of the Domain Guests and Domain Users groups.<br/>Unlike Anonymous Logon, Guest is a real account, and it can be used to log on interactively. The Guest account does not require a password, but it can have one.|
+| S-1-5-*domain*-502| krbtgt| A user account that is used by the Key Distribution Center (KDC) service. The account exists only on domain controllers.|
+| S-1-5-*domain*-512| Domain Admins| A global group with members that are authorized to administer the domain. By default, the Domain Admins group is a member of the Administrators group on all computers that have joined the domain, including domain controllers.<br/>Domain Admins is the default owner of any object that is created in the domain's Active Directory by any member of the group. If members of the group create other objects, such as files, the default owner is the Administrators group.|
+| S-1-5-*domain*-513| Domain Users| A global group that includes all users in a domain. When you create a new User object in Active Directory, the user is automatically added to this group.|
+| S-1-5-*domain*-514| Domain Guests| A global group, which by default, has only one member: the domain's built-in Guest account.|
+| S-1-5-*domain*-515 | Domain Computers| A global group that includes all computers that have joined the domain, excluding domain controllers.|
+| S-1-5-*domain*-516| Domain Controllers| A global group that includes all domain controllers in the domain. New domain controllers are added to this group automatically.|
+| S-1-5-*domain*-517 | Cert Publishers| A global group that includes all computers that host an enterprise certification authority.<br/>Cert Publishers are authorized to publish certificates for User objects in Active Directory.|
+| S-1-5-*root domain*-518| Schema Admins| A group that exists only in the forest root domain. It is a universal group if the domain is in native mode, and it is a global group if the domain is in mixed mode. The Schema Admins group is authorized to make schema changes in Active Directory. By default, the only member of the group is the Administrator account for the forest root domain.|
 | S-1-5-*root domain*-519| Enterprise Admins| A group that exists only in the forest root domain. It is a universal group if the domain is in native mode, and it is a global group if the domain is in mixed mode.<br/>The Enterprise Admins group is authorized to make changes to the forest infrastructure, such as adding child domains, configuring sites, authorizing DHCP servers, and installing enterprise certification authorities.<br/>By default, the only member of Enterprise Admins is the Administrator account for the forest root domain. The group is a default member of every Domain Admins group in the forest. |
-| S-1-5-*domain*-520| Group Policy Creator Owners| A global group that is authorized to create new Group Policy Objects in Active Directory. By default, the only member of the group is Administrator.<br/>Objects that are created by members of Group Policy Creator Owners are owned by the individual user who creates them. In this way, the Group Policy Creator Owners group is unlike other administrative groups (such as Administrators and Domain Admins). Objects that are created by members of these groups are owned by the group rather than by the individual.| 
-| S-1-5-*domain*-553| RAS and IAS Servers| A local domain group. By default, this group has no members. Computers that are running the Routing and Remote Access service are added to the group automatically.<br/>Members of this group have access to certain properties of User objects, such as Read Account Restrictions, Read Logon Information, and Read Remote Access Information.| 
-| S-1-5-32-544 | Administrators| A built-in group. After the initial installation of the operating system, the only member of the group is the Administrator account. When a computer joins a domain, the Domain Admins group is added to the Administrators group. When a server becomes a domain controller, the Enterprise Admins group also is added to the Administrators group.| 
-| S-1-5-32-545 | Users| A built-in group. After the initial installation of the operating system, the only member is the Authenticated Users group.| 
-| S-1-5-32-546 | Guests| A built-in group. By default, the only member is the Guest account. The Guests group allows occasional or one-time users to log on with limited privileges to a computer's built-in Guest account.| 
+| S-1-5-*domain*-520| Group Policy Creator Owners| A global group that is authorized to create new Group Policy Objects in Active Directory. By default, the only member of the group is Administrator.<br/>Objects that are created by members of Group Policy Creator Owners are owned by the individual user who creates them. In this way, the Group Policy Creator Owners group is unlike other administrative groups (such as Administrators and Domain Admins). Objects that are created by members of these groups are owned by the group rather than by the individual.|
+| S-1-5-*domain*-553| RAS and IAS Servers| A local domain group. By default, this group has no members. Computers that are running the Routing and Remote Access service are added to the group automatically.<br/>Members of this group have access to certain properties of User objects, such as Read Account Restrictions, Read Logon Information, and Read Remote Access Information.|
+| S-1-5-32-544 | Administrators| A built-in group. After the initial installation of the operating system, the only member of the group is the Administrator account. When a computer joins a domain, the Domain Admins group is added to the Administrators group. When a server becomes a domain controller, the Enterprise Admins group also is added to the Administrators group.|
+| S-1-5-32-545 | Users| A built-in group. After the initial installation of the operating system, the only member is the Authenticated Users group.|
+| S-1-5-32-546 | Guests| A built-in group. By default, the only member is the Guest account. The Guests group allows occasional or one-time users to log on with limited privileges to a computer's built-in Guest account.|
 | S-1-5-32-547 | Power Users| A built-in group. By default, the group has no members. Power users can create local users and groups; modify and delete accounts that they have created; and remove users from the Power Users, Users, and Guests groups. Power users also can install programs; create, manage, and delete local printers; and create and delete file shares. |
-| S-1-5-32-548| Account Operators| A built-in group that exists only on domain controllers. By default, the group has no members. By default, Account Operators have permission to create, modify, and delete accounts for users, groups, and computers in all containers and organizational units of Active Directory except the Builtin container and the Domain Controllers OU. Account Operators do not have permission to modify the Administrators and Domain Admins groups, nor do they have permission to modify the accounts for members of those groups.| 
-| S-1-5-32-549| Server Operators| Description: A built-in group that exists only on domain controllers. By default, the group has no members. Server Operators can log on to a server interactively; create and delete network shares; start and stop services; back up and restore files; format the hard disk of the computer; and shut down the computer.| 
-| S-1-5-32-550 | Print Operators| A built-in group that exists only on domain controllers. By default, the only member is the Domain Users group. Print Operators can manage printers and document queues.| 
-| S-1-5-32-551 | Backup Operators| A built-in group. By default, the group has no members. Backup Operators can back up and restore all files on a computer, regardless of the permissions that protect those files. Backup Operators also can log on to the computer and shut it down. 
+| S-1-5-32-548| Account Operators| A built-in group that exists only on domain controllers. By default, the group has no members. By default, Account Operators have permission to create, modify, and delete accounts for users, groups, and computers in all containers and organizational units of Active Directory except the Builtin container and the Domain Controllers OU. Account Operators do not have permission to modify the Administrators and Domain Admins groups, nor do they have permission to modify the accounts for members of those groups.|
+| S-1-5-32-549| Server Operators| Description: A built-in group that exists only on domain controllers. By default, the group has no members. Server Operators can log on to a server interactively; create and delete network shares; start and stop services; back up and restore files; format the hard disk of the computer; and shut down the computer.|
+| S-1-5-32-550 | Print Operators| A built-in group that exists only on domain controllers. By default, the only member is the Domain Users group. Print Operators can manage printers and document queues.|
+| S-1-5-32-551 | Backup Operators| A built-in group. By default, the group has no members. Backup Operators can back up and restore all files on a computer, regardless of the permissions that protect those files. Backup Operators also can log on to the computer and shut it down.|
 | S-1-5-32-552 | Replicators | A built-in group that is used by the File Replication service on domain controllers. By default, the group has no members. Do not add users to this group.|
-| S-1-5-64-10| NTLM Authentication| A SID that is used when the NTLM authentication package authenticated the client| 
-| S-1-5-64-14 | SChannel Authentication| A SID that is used when the SChannel authentication package authenticated the client.| 
-| S-1-5-64-21 | Digest Authentication| A SID that is used when the Digest authentication package authenticated the client.| 
-| S-1-5-80 | NT Service | A SID that is used as an NT Service account prefix.| 
-| S-1-5-80-0 | All Services| A group that includes all service processes that are configured on the system. Membership is controlled by the operating system. SID S-1-5-80-0 equals NT SERVICES\ALL SERVICES. This SID was introduced in Windows Server 2008 R2.| 
-| S-1-5-83-0| NT VIRTUAL MACHINE\Virtual Machines| A built-in group. The group is created when the Hyper-V role is installed. Membership in the group is maintained by the Hyper-V Management Service (VMMS). This group requires the **Create Symbolic Links** right (SeCreateSymbolicLinkPrivilege), and also the **Log on as a Service** right (SeServiceLogonRight). | 
-| S-1-16-0| Untrusted Mandatory Level| A SID that represents an untrusted integrity level.| 
-| S-1-16-4096 | Low Mandatory Level| A SID that represents a low integrity level.| 
-| S-1-16-8192 | Medium Mandatory Level| This SID represents a medium integrity level.| 
-| S-1-16-8448 | Medium Plus Mandatory Level| A SID that represents a medium plus integrity level.| 
-| S-1-16-12288 | High Mandatory Level| A SID that represents a high integrity level.| 
-| S-1-16-16384 | System Mandatory Level| A SID that represents a system integrity level.| 
-| S-1-16-20480 | Protected Process Mandatory Level| A SID that represents a protected-process integrity level.| 
-| S-1-16-28672 | Secure Process Mandatory Level| A SID that represents a secure process integrity level.| 
+|S-1-5-32-554|Builtin\Pre-Windows 2000 Compatible Access|An alias added by Windows 2000. A backward compatibility group that allows read access on all users and groups in the domain.|
+|S-1-5-32-555|Builtin\Remote Desktop Users|An alias. Members in this group are granted the right to log on remotely.|
+|S-1-5-32-556|Builtin\Network Configuration Operators|An alias. Members in this group can have some administrative privileges to manage configuration of networking features.|
+|S-1-5-32-557|Builtin\Incoming Forest Trust Builders|An alias. Members of this group can create incoming, one-way trusts to this forest.|
+|S-1-5-32-558|Builtin\Performance Monitor Users|An alias. Members of this group have remote access to monitor this computer.|
+|S-1-5-32-559|Builtin\Performance Log Users|An alias. Members of this group have remote access to schedule logging of performance counters on this computer.|
+|S-1-5-32-560|Builtin\Windows Authorization Access Group|An alias. Members of this group have access to the computed tokenGroupsGlobalAndUniversal attribute on User objects.|
+|S-1-5-32-561|Builtin\Terminal Server License Servers|An alias. A group for Terminal Server License Servers. When Windows Server 2003 Service Pack 1 is installed, a new local group is created.|
+|S-1-5-32-562|Builtin\Distributed COM Users|An alias. A group for COM to provide computer-wide access controls that govern access to all call, activation, or launch requests on the computer.|
+|S-1-5-32-569|Builtin\Cryptographic Operators|A built-in local group. Members are authorized to perform cryptographic operations.|
+|S-1-5-32-573|Builtin\Event Log Readers|A built-in local group. Members of this group can read event logs from local computer.|
+|S-1-5-32-574|Builtin\Certificate Service DCOM Access|A built-in local group. Members of this group are allowed to connect to Certification Authorities in the enterprise.|
+|S-1-5-32-575|Builtin\RDS Remote Access Servers|A built-in local group. Servers in this group enable users of RemoteApp programs and personal virtual desktops access to these resources. In Internet-facing deployments, these servers are typically deployed in an edge network. This group needs to be populated on servers running RD Connection Broker. RD Gateway servers and RD Web Access servers used in the deployment need to be in this group.|
+|S-1-5-32-576|Builtin\RDS Endpoint Servers|A built-in local group. Servers in this group run virtual machines and host sessions where users RemoteApp programs and personal virtual desktops run. This group needs to be populated on servers running RD Connection Broker. RD Session Host servers and RD Virtualization Host servers used in the deployment need to be in this group.|
+|S-1-5-32-577|Builtin\RDS Management Servers|A builtin local group. Servers in this group can perform routine administrative actions on servers running Remote Desktop Services. This group needs to be populated on all servers in a Remote Desktop Services deployment. The servers running the RDS Central Management service must be included in this group.|
+|S-1-5-32-578|Builtin\Hyper-V Administrators|A built-in local group. Members of this group have complete and unrestricted access to all features of Hyper-V.|
+|S-1-5-32-579|Builtin\Access Control Assistance Operators|A built-in local group. Members of this group can remotely query authorization attributes and permissions for resources on this computer.|
+|S-1-5-32-580|Builtin\Remote Management Users|A built-in local group. Members of this group can access WMI resources over management protocols (such as WS-Management via the Windows Remote Management service). This applies only to WMI namespaces that grant access to the user.|
+| S-1-5-64-10| NTLM Authentication| A SID that is used when the NTLM authentication package authenticated the client|
+| S-1-5-64-14 | SChannel Authentication| A SID that is used when the SChannel authentication package authenticated the client.|
+| S-1-5-64-21 | Digest Authentication| A SID that is used when the Digest authentication package authenticated the client.|
+| S-1-5-80 | NT Service | A SID that is used as an NT Service account prefix.|
+| S-1-5-80-0 | All Services| A group that includes all service processes that are configured on the system. Membership is controlled by the operating system. SID S-1-5-80-0 equals NT SERVICES\ALL SERVICES. This SID was introduced in Windows Server 2008 R2.|
+| S-1-5-83-0| NT VIRTUAL MACHINE\Virtual Machines| A built-in group. The group is created when the Hyper-V role is installed. Membership in the group is maintained by the Hyper-V Management Service (VMMS). This group requires the **Create Symbolic Links** right (SeCreateSymbolicLinkPrivilege), and also the **Log on as a Service** right (SeServiceLogonRight). |
+| S-1-16-0| Untrusted Mandatory Level| A SID that represents an untrusted integrity level.|
+| S-1-16-4096 | Low Mandatory Level| A SID that represents a low integrity level.|
+| S-1-16-8192 | Medium Mandatory Level| This SID represents a medium integrity level.|
+| S-1-16-8448 | Medium Plus Mandatory Level| A SID that represents a medium plus integrity level.|
+| S-1-16-12288 | High Mandatory Level| A SID that represents a high integrity level.|
+| S-1-16-16384 | System Mandatory Level| A SID that represents a system integrity level.|
+| S-1-16-20480 | Protected Process Mandatory Level| A SID that represents a protected-process integrity level.|
+| S-1-16-28672 | Secure Process Mandatory Level| A SID that represents a secure process integrity level.|
 
 The following RIDs are relative to each domain.
 
-| RID | Identifies |
-| - | - |
-| DOMAIN_USER_RID_ADMIN | The administrative user account in a domain. |
-| DOMAIN_USER_RID_GUEST| The guest-user account in a domain. Users who do not have an account can automatically sign in to this account.| 
-| DOMAIN_GROUP_RID_USERS | A group that contains all user accounts in a domain. All users are automatically added to this group.| 
-| DOMAIN_GROUP_RID_GUESTS | The group Guest account in a domain.| 
-| DOMAIN_GROUP_RID_COMPUTERS | The Domain Computer group. All computers in the domain are members of this group.| 
-| DOMAIN_GROUP_RID_CONTROLLERS | The Domain Controller group. All domain controllers in the domain are members of this group.| 
-| DOMAIN_GROUP_RID_CERT_ADMINS | The certificate publishers' group. Computers running Active Directory Certificate Services are members of this group.| 
-| DOMAIN_GROUP_RID_SCHEMA_ADMINS | The schema administrators' group. Members of this group can modify the Active Directory schema.| 
-| DOMAIN_GROUP_RID_ENTERPRISE_ADMINS | The enterprise administrators' group. Members of this group have full access to all domains in the Active Directory forest. Enterprise administrators are responsible for forest-level operations such as adding or removing new domains.| 
-| DOMAIN_GROUP_RID_POLICY_ADMINS| The policy administrators' group.| 
+| RID |Decimal value| Identifies |
+| - | - | - |
+| DOMAIN_USER_RID_ADMIN | 500 | The administrative user account in a domain. |
+| DOMAIN_USER_RID_GUEST| 501 | The guest-user account in a domain. Users who do not have an account can automatically sign in to this account.|
+| DOMAIN_GROUP_RID_USERS | 513 | A group that contains all user accounts in a domain. All users are automatically added to this group.|
+| DOMAIN_GROUP_RID_GUESTS | 514 | The group Guest account in a domain.|
+| DOMAIN_GROUP_RID_COMPUTERS | 515 | The Domain Computer group. All computers in the domain are members of this group.|
+| DOMAIN_GROUP_RID_CONTROLLERS | 516 | The Domain Controller group. All domain controllers in the domain are members of this group.|
+| DOMAIN_GROUP_RID_CERT_ADMINS | 517 | The certificate publishers' group. Computers running Active Directory Certificate Services are members of this group.|
+| DOMAIN_GROUP_RID_SCHEMA_ADMINS | 518 | The schema administrators' group. Members of this group can modify the Active Directory schema.|
+| DOMAIN_GROUP_RID_ENTERPRISE_ADMINS | 519 | The enterprise administrators' group. Members of this group have full access to all domains in the Active Directory forest. Enterprise administrators are responsible for forest-level operations such as adding or removing new domains.|
+| DOMAIN_GROUP_RID_POLICY_ADMINS| 520 | The policy administrators' group.|
 
 The following table provides examples of domain-relative RIDs that are used to form well-known SIDs for local groups.
 
-
-| RID | Identifies |
-| - | - |
-| DOMAIN_ALIAS_RID_ADMINS | Administrators of the domain.| 
-| DOMAIN_ALIAS_RID_USERS | All users in the domain.| 
-| DOMAIN_ALIAS_RID_GUESTS | Guests of the domain.| 
-| DOMAIN_ALIAS_RID_POWER_USERS | A user or a set of users who expect to treat a system as if it were their personal computer rather than as a workstation for multiple users.| 
-| DOMAIN_ALIAS_RID_BACKUP_OPS | A local group that is used to control the assignment of file backup-and-restore user rights.| 
-| DOMAIN_ALIAS_RID_REPLICATOR | A local group that is responsible for copying security databases from the primary domain controller to the backup domain controllers. These accounts are used only by the system.| 
-| DOMAIN_ALIAS_RID_RAS_SERVERS | A local group that represents remote access and servers running Internet Authentication Service (IAS). This group permits access to various attributes of User objects.| 
+| RID | Decimal value | Identifies |
+| - | - | - |
+| DOMAIN_ALIAS_RID_ADMINS | 544 | Administrators of the domain.|
+| DOMAIN_ALIAS_RID_USERS | 545 | All users in the domain.|
+| DOMAIN_ALIAS_RID_GUESTS | 546 | Guests of the domain.|
+| DOMAIN_ALIAS_RID_POWER_USERS | 547 | A user or a set of users who expect to treat a system as if it were their personal computer rather than as a workstation for multiple users.|
+| DOMAIN_ALIAS_RID_BACKUP_OPS | 551 | A local group that is used to control the assignment of file backup-and-restore user rights.|
+| DOMAIN_ALIAS_RID_REPLICATOR | 552 | A local group that is responsible for copying security databases from the primary domain controller to the backup domain controllers. These accounts are used only by the system.|
+| DOMAIN_ALIAS_RID_RAS_SERVERS | 553 | A local group that represents remote access and servers running Internet Authentication Service (IAS). This group permits access to various attributes of User objects.|
 
 ## Changes in security identifier's functionality
 
@@ -290,6 +307,7 @@ Capability Security Identifiers (SIDs) are used to uniquely and immutably identi
 All Capability SIDs that the operating system is aware of are stored in the Windows Registry in the path `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities'. Any Capability SID added to Windows by first or third-party applications will be added to this location.
 
 ## Examples of registry keys taken from Windows 10, version 1909, 64-bit Enterprise edition
+
 You may see the following registry keys under AllCachedCapabilities:
 
 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_DevUnlock

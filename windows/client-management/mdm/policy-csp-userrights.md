@@ -18,7 +18,7 @@ manager: dansimp
 
 <hr/>
 
-User rights are assigned for user accounts or groups. The name of the policy defines the user right in question, and the values are always users or groups. Values can be represented as SIDs or strings. For reference, see [Well-Known SID Structures](https://msdn.microsoft.com/library/cc980032.aspx).
+User rights are assigned for user accounts or groups. The name of the policy defines the user right in question, and the values are always users or groups. Values can be represented as SIDs or strings. For reference, see [Well-Known SID Structures](/openspecs/windows_protocols/ms-dtyp/81d92bba-d22b-4a8c-908a-554ab29148ab).
 
 Even though strings are supported for well-known accounts and groups, it is better to use SIDs, because strings are localized for different languages. Some user rights allow things like AccessFromNetwork, while others disallow things, like DenyAccessFromNetwork.
 
@@ -243,7 +243,7 @@ This user right is used by Credential Manager during Backup/Restore. No accounts
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Access Credential Manager as a trusted caller*
+-   GP Friendly name: *Access Credential Manager as a trusted caller*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -302,7 +302,7 @@ This user right determines which users and groups are allowed to connect to the 
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Access this computer from the network*
+-   GP Friendly name: *Access this computer from the network*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -361,7 +361,7 @@ This user right allows a process to impersonate any user without authentication.
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Act as part of the operating system*
+-   GP Friendly name: *Act as part of the operating system*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -420,7 +420,7 @@ This user right determines which users can log on to the computer.
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Allow log on locally*
+-   GP Friendly name: *Allow log on locally*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -479,7 +479,7 @@ This user right determines which users can bypass file, directory, registry, and
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Back up files and directories*
+-   GP Friendly name: *Back up files and directories*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -536,7 +536,7 @@ This user right determines which users and groups can change the time and date o
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Change the system time*
+-   GP Friendly name: *Change the system time*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -595,7 +595,7 @@ This security setting determines whether users can create global objects that ar
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Create global objects*
+-   GP Friendly name: *Create global objects*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -652,7 +652,7 @@ This user right determines which users and groups can call an internal applicati
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Create a pagefile*
+-   GP Friendly name: *Create a pagefile*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -709,7 +709,7 @@ This user right determines which accounts can be used by processes to create a d
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Create permanent shared objects*
+-   GP Friendly name: *Create permanent shared objects*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -770,7 +770,7 @@ This user right determines if the user can create a symbolic link from the compu
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Create symbolic links*
+-   GP Friendly name: *Create symbolic links*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -829,7 +829,7 @@ This user right determines which accounts can be used by processes to create a t
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Create a token object*
+-   GP Friendly name: *Create a token object*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -888,7 +888,7 @@ This user right determines which users can attach a debugger to any process or t
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Debug programs*
+-   GP Friendly name: *Debug programs*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -945,7 +945,7 @@ This user right determines which users are prevented from accessing a computer o
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Deny access to this computer from the network*
+-   GP Friendly name: *Deny access to this computer from the network*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1004,7 +1004,7 @@ This security setting determines which service accounts are prevented from regis
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Deny log on as a service*
+-   GP Friendly name: *Deny log on Locally*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1061,7 +1061,7 @@ This user right determines which users and groups are prohibited from logging on
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Deny log on through Remote Desktop Services*
+-   GP Friendly name: *Deny log on through Remote Desktop Services*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1120,7 +1120,7 @@ This user right determines which users can set the Trusted for Delegation settin
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Enable computer and user accounts to be trusted for delegation*
+-   GP Friendly name: *Enable computer and user accounts to be trusted for delegation*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1177,7 +1177,7 @@ This user right determines which accounts can be used by a process to add entrie
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Generate security audits*
+-   GP Friendly name: *Generate security audits*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1244,7 +1244,7 @@ Because of these factors, users do not usually need this user right.
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Impersonate a client after authentication*
+-   GP Friendly name: *Impersonate a client after authentication*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1301,7 +1301,7 @@ This user right determines which accounts can use a process with Write Property 
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Increase scheduling priority*
+-   GP Friendly name: *Increase scheduling priority*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 > [!WARNING]
@@ -1365,7 +1365,7 @@ This user right determines which users can dynamically load and unload device dr
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Load and unload device drivers*
+-   GP Friendly name: *Load and unload device drivers*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1422,7 +1422,7 @@ This user right determines which accounts can use a process to keep data in phys
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Lock pages in memory*
+-   GP Friendly name: *Lock pages in memory*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1479,7 +1479,7 @@ This user right determines which users can specify object access auditing option
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Manage auditing and security log*
+-   GP Friendly name: *Manage auditing and security log*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1536,7 +1536,7 @@ This user right determines which users and groups can run maintenance tasks on a
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Perform volume maintenance tasks*
+-   GP Friendly name: *Perform volume maintenance tasks*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1595,7 +1595,7 @@ This user right determines who can modify firmware environment values. Firmware 
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Modify firmware environment values*
+-   GP Friendly name: *Modify firmware environment values*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1652,7 +1652,7 @@ This user right determines which user accounts can modify the integrity label of
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Modify an object label*
+-   GP Friendly name: *Modify an object label*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1709,7 +1709,7 @@ This user right determines which users can use performance monitoring tools to m
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Profile single process*
+-   GP Friendly name: *Profile single process*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1766,7 +1766,7 @@ This user right determines which users are allowed to shut down a computer from 
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Force shutdown from a remote system*
+-   GP Friendly name: *Force shutdown from a remote system*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1825,7 +1825,7 @@ This user right determines which users can bypass file, directory, registry, and
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Restore files and directories*
+-   GP Friendly name: *Restore files and directories*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->
@@ -1884,7 +1884,7 @@ This user right determines which users can take ownership of any securable objec
 <!--/Description-->
 <!--DbMapped-->
 GP Info:
--   GP English name: *Take ownership of files or other objects*
+-   GP Friendly name: *Take ownership of files or other objects*
 -   GP path: *Windows Settings/Security Settings/Local Policies/User Rights Assignment*
 
 <!--/DbMapped-->

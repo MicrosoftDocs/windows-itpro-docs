@@ -6,8 +6,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: devices
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/20/2017
@@ -56,14 +56,9 @@ Windows 10 provides organizations the ability to centrally manage the type of co
 - [Manage Windows 10 Start layout](windows-10-start-layout-options-and-policies.md)
 - [Cortana integration in your business or enterprise](cortana-at-work/cortana-at-work-overview.md)
 - [Windows spotlight on the lock screen](windows-spotlight.md)
-- [Windows 10 editions for education customers](https://technet.microsoft.com/edu/windows/windows-editions-for-education-customers)
+- [Windows 10 editions for education customers](/education/windows/windows-editions-for-education-customers)
 
 
  
 
  
-
-
-
-
-

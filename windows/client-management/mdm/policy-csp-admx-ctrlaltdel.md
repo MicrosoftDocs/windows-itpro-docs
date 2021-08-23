@@ -99,7 +99,7 @@ However, users are still able to change their password when prompted by the syst
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Change Password*
+-   GP Friendly name: *Remove Change Password*
 -   GP name: *DisableChangePassword*
 -   GP path: *System/Ctrl+Alt+Del Options*
 -   GP ADMX file name: *CtrlAltDel.admx*
@@ -174,7 +174,7 @@ If you disable or do not configure this policy setting, users will be able to lo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Lock Computer*
+-   GP Friendly name: *Remove Lock Computer*
 -   GP name: *DisableLockWorkstation*
 -   GP path: *System/Ctrl+Alt+Del Options*
 -   GP ADMX file name: *CtrlAltDel.admx*
@@ -244,7 +244,7 @@ If you disable or do not configure this policy setting, users can access Task Ma
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Task Manager*
+-   GP Friendly name: *Remove Task Manager*
 -   GP name: *DisableTaskMgr*
 -   GP path: *System/Ctrl+Alt+Del Options*
 -   GP ADMX file name: *CtrlAltDel.admx*
@@ -315,7 +315,7 @@ If you disable or do not configure this policy setting, users can see and select
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Logoff*
+-   GP Friendly name: *Remove Logoff*
 -   GP name: *NoLogoff*
 -   GP path: *System/Ctrl+Alt+Del Options*
 -   GP ADMX file name: *CtrlAltDel.admx*
@@ -324,16 +324,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

@@ -161,7 +161,7 @@ If the policy is Disabled or Not Configured, then the user will be able to use i
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disallow copying of user input methods to the system account for sign-in*
+-   GP Friendly name: *Disallow copying of user input methods to the system account for sign-in*
 -   GP name: *BlockUserInputMethodsForSignIn*
 -   GP path: *System\Locale Services*
 -   GP ADMX file name: *Globalization.admx*
@@ -238,7 +238,7 @@ To set this policy setting on a per-user basis, make sure that you do not config
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disallow selection of Custom Locales*
+-   GP Friendly name: *Disallow selection of Custom Locales*
 -   GP name: *CustomLocalesNoSelect_1*
 -   GP path: *System\Locale Services*
 -   GP ADMX file name: *Globalization.admx*
@@ -315,7 +315,7 @@ To set this policy setting on a per-user basis, make sure that you do not config
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disallow selection of Custom Locales*
+-   GP Friendly name: *Disallow selection of Custom Locales*
 -   GP name: *CustomLocalesNoSelect_2*
 -   GP path: *System\Locale Services*
 -   GP ADMX file name: *Globalization.admx*
@@ -392,7 +392,7 @@ If you disable or do not configure this policy setting, the user can see the Adm
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide Regional and Language Options administrative options*
+-   GP Friendly name: *Hide Regional and Language Options administrative options*
 -   GP name: *HideAdminOptions*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
@@ -466,7 +466,7 @@ If you disable or do not configure this policy setting, the user sees the option
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide the geographic location option*
+-   GP Friendly name: *Hide the geographic location option*
 -   GP name: *HideCurrentLocation*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
@@ -539,7 +539,7 @@ If you enable this policy setting, the user does not see the option for changing
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide the select language group options*
+-   GP Friendly name: *Hide the select language group options*
 -   GP name: *HideLanguageSelection*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
@@ -610,7 +610,7 @@ If you disable or do not configure this policy setting, the user sees the region
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide user locale selection and customization options*
+-   GP Friendly name: *Hide user locale selection and customization options*
 -   GP name: *HideLocaleSelectAndCustomize*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
@@ -693,7 +693,7 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off automatic learning*
+-   GP Friendly name: *Turn off automatic learning*
 -   GP name: *ImplicitDataCollectionOff_1*
 -   GP path: *Control Panel\Regional and Language Options\Handwriting personalization*
 -   GP ADMX file name: *Globalization.admx*
@@ -776,7 +776,7 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off automatic learning*
+-   GP Friendly name: *Turn off automatic learning*
 -   GP name: *ImplicitDataCollectionOff_2*
 -   GP path: *Control Panel\Regional and Language Options\Handwriting personalization*
 -   GP ADMX file name: *Globalization.admx*
@@ -847,7 +847,7 @@ If you disable or do not configure this policy setting, administrators can selec
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict system locales*
+-   GP Friendly name: *Restrict system locales*
 -   GP name: *LocaleSystemRestrict*
 -   GP path: *System\Locale Services*
 -   GP ADMX file name: *Globalization.admx*
@@ -920,7 +920,7 @@ If you disable or do not configure this policy setting, users can select any loc
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict user locales*
+-   GP Friendly name: *Restrict user locales*
 -   GP name: *LocaleUserRestrict_1*
 -   GP path: *System\Locale Services*
 -   GP ADMX file name: *Globalization.admx*
@@ -995,7 +995,7 @@ If this policy setting is enabled at the computer level, it cannot be disabled b
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict user locales*
+-   GP Friendly name: *Restrict user locales*
 -   GP name: *LocaleUserRestrict_2*
 -   GP path: *System\Locale Services*
 -   GP ADMX file name: *Globalization.admx*
@@ -1066,7 +1066,7 @@ If you disable or do not configure this policy setting, the user can specify whi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restricts the UI language Windows uses for all logged users*
+-   GP Friendly name: *Restricts the UI language Windows uses for all logged users*
 -   GP name: *LockMachineUILanguage*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
@@ -1139,7 +1139,7 @@ To enable this policy setting in Windows Server 2003, Windows XP, or Windows 200
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restricts the UI languages Windows should use for the selected user*
+-   GP Friendly name: *Restricts the UI languages Windows should use for the selected user*
 -   GP name: *LockUserUILanguage*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
@@ -1212,7 +1212,7 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disallow changing of geographic location*
+-   GP Friendly name: *Disallow changing of geographic location*
 -   GP name: *PreventGeoIdChange_1*
 -   GP path: *System\Locale Services*
 -   GP ADMX file name: *Globalization.admx*
@@ -1285,7 +1285,7 @@ To set this policy setting on a per-user basis, make sure that the per-computer 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disallow changing of geographic location*
+-   GP Friendly name: *Disallow changing of geographic location*
 -   GP name: *PreventGeoIdChange_2*
 -   GP path: *System\Locale Services*
 -   GP ADMX file name: *Globalization.admx*
@@ -1362,7 +1362,7 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disallow user override of locale settings*
+-   GP Friendly name: *Disallow user override of locale settings*
 -   GP name: *PreventUserOverrides_1*
 -   GP path: *System\Locale Services*
 -   GP ADMX file name: *Globalization.admx*
@@ -1439,7 +1439,7 @@ To set this policy on a per-user basis, make sure that the per-computer policy i
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disallow user override of locale settings*
+-   GP Friendly name: *Disallow user override of locale settings*
 -   GP name: *PreventUserOverrides_2*
 -   GP path: *System\Locale Services*
 -   GP ADMX file name: *Globalization.admx*
@@ -1510,7 +1510,7 @@ If you disable or do not configure this policy setting, the logged-on user can a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict selection of Windows menus and dialogs language*
+-   GP Friendly name: *Restrict selection of Windows menus and dialogs language*
 -   GP name: *RestrictUILangSelect*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
@@ -1582,7 +1582,7 @@ Note that the availability and function of this setting is dependent on supporte
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off autocorrect misspelled words*
+-   GP Friendly name: *Turn off autocorrect misspelled words*
 -   GP name: *TurnOffAutocorrectMisspelledWords*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
@@ -1655,7 +1655,7 @@ Note that the availability and function of this setting is dependent on supporte
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off highlight misspelled words*
+-   GP Friendly name: *Turn off highlight misspelled words*
 -   GP name: *TurnOffHighlightMisspelledWords*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
@@ -1727,7 +1727,7 @@ Note that the availability and function of this setting is dependent on supporte
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off insert a space after selecting a text prediction*
+-   GP Friendly name: *Turn off insert a space after selecting a text prediction*
 -   GP name: *TurnOffInsertSpace*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
@@ -1800,7 +1800,7 @@ Note that the availability and function of this setting is dependent on supporte
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off offer text predictions as I type*
+-   GP Friendly name: *Turn off offer text predictions as I type*
 -   GP name: *TurnOffOfferTextPredictions*
 -   GP path: *Control Panel\Regional and Language Options*
 -   GP ADMX file name: *Globalization.admx*
@@ -1873,7 +1873,7 @@ If you disable or do not configure this policy setting, Windows does not interpr
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Century interpretation for Year 2000*
+-   GP Friendly name: *Century interpretation for Year 2000*
 -   GP name: *Y2K*
 -   GP path: *System*
 -   GP ADMX file name: *Globalization.admx*
@@ -1882,15 +1882,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->

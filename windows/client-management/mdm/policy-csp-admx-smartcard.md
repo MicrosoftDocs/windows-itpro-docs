@@ -141,7 +141,7 @@ If you disable or do not configure this policy setting, only certificates that c
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow certificates with no extended key usage certificate attribute*
+-   GP Friendly name: *Allow certificates with no extended key usage certificate attribute*
 -   GP name: *AllowCertificatesWithNoEKU*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -212,7 +212,7 @@ If you disable or do not configure this policy setting then the integrated unblo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow Integrated Unblock screen to be displayed at the time of logon*
+-   GP Friendly name: *Allow Integrated Unblock screen to be displayed at the time of logon*
 -   GP name: *AllowIntegratedUnblock*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -281,7 +281,7 @@ If you disable or do not configure this policy setting, any available smart card
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow signature keys valid for Logon*
+-   GP Friendly name: *Allow signature keys valid for Logon*
 -   GP name: *AllowSignatureOnlyKeys*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -352,7 +352,7 @@ If you disable or do not configure this policy setting, certificates which are e
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow time invalid certificates*
+-   GP Friendly name: *Allow time invalid certificates*
 -   GP name: *AllowTimeInvalidCertificates*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -421,7 +421,7 @@ If you disable this policy setting, certificate propagation will not occur and t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on certificate propagation from smart card*
+-   GP Friendly name: *Turn on certificate propagation from smart card*
 -   GP name: *CertPropEnabledString*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -486,7 +486,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting al
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure root certificate clean up*
+-   GP Friendly name: *Configure root certificate clean up*
 -   GP name: *CertPropRootCleanupString*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -558,7 +558,7 @@ If you disable this policy setting then root certificates will not be propagated
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on root certificate propagation from smart card*
+-   GP Friendly name: *Turn on root certificate propagation from smart card*
 -   GP name: *CertPropRootEnabledString*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -630,7 +630,7 @@ If you disable or do not configure this policy setting, plaintext PINs can be re
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent plaintext PINs from being returned by Credential Manager*
+-   GP Friendly name: *Prevent plaintext PINs from being returned by Credential Manager*
 -   GP name: *DisallowPlaintextPin*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -702,7 +702,7 @@ If you disable or do not configure this policy setting, ECC certificates on a sm
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow ECC certificates to be used for logon and authentication*
+-   GP Friendly name: *Allow ECC certificates to be used for logon and authentication*
 -   GP name: *EnumerateECCCerts*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -778,7 +778,7 @@ If you disable this policy setting, no filtering will take place.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Filter duplicate logon certificates*
+-   GP Friendly name: *Filter duplicate logon certificates*
 -   GP name: *FilterDuplicateCerts*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -849,7 +849,7 @@ If you disable or do not configure this setting, Windows will only attempt to re
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Force the reading of all certificates from the smart card*
+-   GP Friendly name: *Force the reading of all certificates from the smart card*
 -   GP name: *ForceReadingAllCertificates*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -921,7 +921,7 @@ If you disable or do not configure this policy setting, the default message will
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Display string when smart card is blocked*
+-   GP Friendly name: *Display string when smart card is blocked*
 -   GP name: *IntegratedUnblockPromptString*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -992,7 +992,7 @@ If you disable, the subject name will be displayed as it appears in the certific
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Reverse the subject name stored in a certificate when displaying*
+-   GP Friendly name: *Reverse the subject name stored in a certificate when displaying*
 -   GP name: *ReverseSubject*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -1064,7 +1064,7 @@ If you disable this policy setting, Smart Card Plug and Play will be disabled an
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Smart Card Plug and Play service*
+-   GP Friendly name: *Turn on Smart Card Plug and Play service*
 -   GP name: *SCPnPEnabled*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -1136,7 +1136,7 @@ If you disable this policy setting, a confirmation message will not be displayed
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Notify user of successful smart card driver installation*
+-   GP Friendly name: *Notify user of successful smart card driver installation*
 -   GP name: *SCPnPNotification*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -1205,7 +1205,7 @@ If you disable or do not configure this policy setting, an optional field that a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow user name hint*
+-   GP Friendly name: *Allow user name hint*
 -   GP name: *X509HintsNeeded*
 -   GP path: *Windows Components\Smart Card*
 -   GP ADMX file name: *Smartcard.admx*
@@ -1214,16 +1214,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

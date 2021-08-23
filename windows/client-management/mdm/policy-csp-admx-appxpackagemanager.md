@@ -97,7 +97,7 @@ If you disable or do not configure this policy setting, Group Policy blocks depl
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow deployment operations in special profiles*
+-   GP Friendly name: *Allow deployment operations in special profiles*
 -   GP name: *AllowDeploymentInSpecialProfiles*
 -   GP path: *Windows Components\App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
@@ -106,15 +106,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->

@@ -15,9 +15,9 @@ ms.date: 07/22/2020
 # Policies in Policy CSP supported by Microsoft Surface Hub
 
 
-- [ApplicationManagement/AllowAppStoreAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate)
-- [ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock)
-- [Accounts/AllowMicrosoftAccountConnection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-accounts#accounts-allowmicrosoftaccountconnection)
+- [ApplicationManagement/AllowAppStoreAutoUpdate](./policy-csp-applicationmanagement.md#applicationmanagement-allowappstoreautoupdate)
+- [ApplicationManagement/AllowDeveloperUnlock](./policy-csp-applicationmanagement.md#applicationmanagement-allowdeveloperunlock)
+- [Accounts/AllowMicrosoftAccountConnection](./policy-csp-accounts.md#accounts-allowmicrosoftaccountconnection)
 - [Camera/AllowCamera](policy-csp-camera.md#camera-allowcamera)
 - [Cellular/ShowAppCellularAccessUI](policy-csp-cellular.md#cellular-showappcellularaccessui)
 - [Cryptography/AllowFipsAlgorithmPolicy](policy-csp-cryptography.md#cryptography-allowfipsalgorithmpolicy)
@@ -66,6 +66,9 @@ ms.date: 07/22/2020
 - [DeliveryOptimization/DOPercentageMaxDownloadBandwidth](policy-csp-deliveryoptimization.md#deliveryoptimization-dopercentagemaxdownloadbandwidth)
 - [Desktop/PreventUserRedirectionOfProfileFolders](policy-csp-desktop.md#desktop-preventuserredirectionofprofilefolders)
 - [RestrictedGroups/ConfigureGroupMembership](policy-csp-restrictedgroups.md)
+- [System/AllowLocation](policy-csp-system.md#system-allowlocation)
+- [System/AllowStorageCard](policy-csp-system.md#system-allowstoragecard)
+- [System/AllowTelemetry](policy-csp-system.md#system-allowtelemetry)
 - [TextInput/AllowIMELogging](policy-csp-textinput.md#textinput-allowimelogging)
 - [TextInput/AllowIMENetworkAccess](policy-csp-textinput.md#textinput-allowimenetworkaccess)
 - [TextInput/AllowInputPanel](policy-csp-textinput.md#textinput-allowinputpanel)

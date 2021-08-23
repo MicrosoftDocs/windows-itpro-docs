@@ -4,7 +4,7 @@ description: Learn about the isolated domain, which is the primary zone for trus
 ms.assetid: d6fa8d67-0078-49f6-9bcc-db1f24816c5e
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Isolated Domain
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
+**Applies to:**
+- Windows 10
+- Windows Server 2016
+- Windows Server 2019
 
 The isolated domain is the primary zone for trusted devices. The devices in this zone use connection security and firewall rules to control the communications that can be sent between devices in the zone.
 

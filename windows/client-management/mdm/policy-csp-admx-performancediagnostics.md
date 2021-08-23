@@ -107,7 +107,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Scenario Execution Level*
+-   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_1*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows Boot Performance Diagnostics*
 -   GP ADMX file name: *PerformanceDiagnostics.admx*
@@ -184,7 +184,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Scenario Execution Level*
+-   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_2*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows System Responsiveness Performance Diagnostics*
 -   GP ADMX file name: *PerformanceDiagnostics.admx*
@@ -261,7 +261,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Scenario Execution Level*
+-   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_3*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows Shutdown Performance Diagnostics*
 -   GP ADMX file name: *PerformanceDiagnostics.admx*
@@ -338,7 +338,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Scenario Execution Level*
+-   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_4*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows Standby/Resume Performance Diagnostics*
 -   GP ADMX file name: *PerformanceDiagnostics.admx*
@@ -347,16 +347,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

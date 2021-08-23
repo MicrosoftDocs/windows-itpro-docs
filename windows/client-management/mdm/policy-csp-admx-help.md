@@ -18,7 +18,7 @@ manager: dansimp
 
 <hr/>
 
-<!--Policies-->
+<!--Policies--
 ## ADMX_Help policies  
 
 <dl>
@@ -101,7 +101,7 @@ If you disable or do not configure this policy setting, DEP is turned on for HTM
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Data Execution Prevention for HTML Help Executible*
+-   GP Friendly name: *Turn off Data Execution Prevention for HTML Help Executible*
 -   GP name: *DisableHHDEP*
 -   GP path: *System*
 -   GP ADMX file name: *Help.admx*
@@ -184,7 +184,7 @@ For additional options, see the "Restrict these programs from being launched fro
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict potentially unsafe HTML Help functions to specified folders*
+-   GP Friendly name: *Restrict potentially unsafe HTML Help functions to specified folders*
 -   GP name: *HelpQualifiedRootDir_Comp*
 -   GP path: *System*
 -   GP ADMX file name: *Help.admx*
@@ -258,7 +258,7 @@ If you disable or do not configure this policy setting, users can run all applic
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict these programs from being launched from Help*
+-   GP Friendly name: *Restrict these programs from being launched from Help*
 -   GP name: *RestrictRunFromHelp*
 -   GP path: *System*
 -   GP ADMX file name: *Help.admx*
@@ -331,7 +331,7 @@ If you disable or do not configure this policy setting, users can run all applic
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Restrict these programs from being launched from Help*
+-   GP Friendly name: *Restrict these programs from being launched from Help*
 -   GP name: *RestrictRunFromHelp_Comp*
 -   GP path: *System*
 -   GP ADMX file name: *Help.admx*
@@ -340,16 +340,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

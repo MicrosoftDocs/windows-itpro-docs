@@ -98,7 +98,7 @@ If this policy setting is enabled, a drop-down list box presenting possible cost
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Cost*
+-   GP Friendly name: *Set Cost*
 -   GP name: *IncludeCmdLine*
 -   GP path: *Network\WLAN Service\WLAN Media Cost*
 -   GP ADMX file name: *wlansvc.admx*
@@ -167,7 +167,7 @@ If this policy setting is disabled or is not configured, by default Push Button 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require PIN pairing*
+-   GP Friendly name: *Require PIN pairing*
 -   GP name: *SetPINEnforced*
 -   GP path: *Network\Wireless Display*
 -   GP ADMX file name: *wlansvc.admx*
@@ -236,7 +236,7 @@ If this policy setting is disabled or is not configured, by default Push Button 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prefer PIN pairing*
+-   GP Friendly name: *Prefer PIN pairing*
 -   GP name: *SetPINPreferred*
 -   GP path: *Network\Wireless Display*
 -   GP ADMX file name: *wlansvc.admx*
@@ -245,16 +245,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

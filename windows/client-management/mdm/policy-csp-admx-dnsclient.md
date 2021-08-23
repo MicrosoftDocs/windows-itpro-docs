@@ -153,7 +153,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow NetBT queries for fully qualified domain names*
+-   GP Friendly name: *Allow NetBT queries for fully qualified domain names*
 -   GP name: *DNS_AllowFQDNNetBiosQueries*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -229,7 +229,7 @@ If you do not configure this policy setting, computers will use their local DNS 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow DNS suffix appending to unqualified multi-label name queries*
+-   GP Friendly name: *Allow DNS suffix appending to unqualified multi-label name queries*
 -   GP name: *DNS_AppendToMultiLabelName*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -298,7 +298,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Connection-specific DNS suffix*
+-   GP Friendly name: *Connection-specific DNS suffix*
 -   GP name: *DNS_Domain*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -384,7 +384,7 @@ If you disable this policy setting or do not configure it, DNS clients use the d
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Primary DNS suffix devolution level*
+-   GP Friendly name: *Primary DNS suffix devolution level*
 -   GP name: *DNS_DomainNameDevolutionLevel*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -454,7 +454,7 @@ If this policy setting is disabled, or if this policy setting is not configured,
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off IDN encoding*
+-   GP Friendly name: *Turn off IDN encoding*
 -   GP name: *DNS_IdnEncoding*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -523,7 +523,7 @@ If this policy setting is disabled, or if this policy setting is not configured,
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *IDN mapping*
+-   GP Friendly name: *IDN mapping*
 -   GP name: *DNS_IdnMapping*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -594,7 +594,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *DNS servers*
+-   GP Friendly name: *DNS servers*
 -   GP name: *DNS_NameServer*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -666,7 +666,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prefer link local responses over DNS when received over a network with higher precedence*
+-  GP Friendly name: *Prefer link local responses over DNS when received over a network with higher precedence*
 -   GP name: *DNS_PreferLocalResponsesOverLowerOrderDns*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -742,7 +742,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Primary DNS suffix*
+-   GP Friendly name: *Primary DNS suffix*
 -   GP name: *DNS_PrimaryDnsSuffix*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -816,7 +816,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Register DNS records with connection-specific DNS suffix*
+-   GP Friendly name: *Register DNS records with connection-specific DNS suffix*
 -   GP name: *DNS_RegisterAdapterName*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -892,7 +892,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Register PTR records*
+-   GP Friendly name: *Register PTR records*
 -   GP name: *DNS_RegisterReverseLookup*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -961,7 +961,7 @@ If you disable this policy setting, computers may not use dynamic DNS registrati
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Dynamic update*
+-   GP Friendly name: *Dynamic update*
 -   GP name: *DNS_RegistrationEnabled*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -1034,7 +1034,7 @@ If you disable this policy setting, existing A resource records that contain con
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Replace addresses in conflicts*
+-   GP Friendly name: *Replace addresses in conflicts*
 -   GP name: *DNS_RegistrationOverwritesInConflict*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -1110,7 +1110,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Registration refresh interval*
+-   GP Friendly name: *Registration refresh interval*
 -   GP name: *DNS_RegistrationRefreshInterval*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -1181,7 +1181,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *TTL value for A and PTR records*
+-   GP Friendly name: *TTL value for A and PTR records*
 -   GP name: *DNS_RegistrationTtl*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -1256,7 +1256,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *DNS suffix search list*
+-   GP Friendly name: *DNS suffix search list*
 -   GP name: *DNS_SearchList*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -1326,7 +1326,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off smart multi-homed name resolution*
+-   GP Friendly name: *Turn off smart multi-homed name resolution*
 -   GP name: *DNS_SmartMultiHomedNameResolution*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -1398,7 +1398,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off smart protocol reordering*
+-   GP Friendly name: *Turn off smart protocol reordering*
 -   GP name: *DNS_SmartProtocolReorder*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -1473,7 +1473,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Update security level*
+-   GP Friendly name: *Update security level*
 -   GP name: *DNS_UpdateSecurityLevel*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -1544,7 +1544,7 @@ If you disable this policy setting, or if you do not configure this policy setti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Update top level domain zones*
+-   GP Friendly name: *Update top level domain zones*
 -   GP name: *DNS_UpdateTopLevelDomainZones*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -1631,7 +1631,7 @@ If you disable this policy setting, DNS clients do not attempt to resolve names 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Primary DNS suffix devolution*
+-   GP Friendly name: *Primary DNS suffix devolution*
 -   GP name: *DNS_UseDomainNameDevolution*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -1702,7 +1702,7 @@ If you disable this policy setting, or you do not configure this policy setting,
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off multicast name resolution*
+-   GP Friendly name: *Turn off multicast name resolution*
 -   GP name: *Turn_Off_Multicast*
 -   GP path: *Network/DNS Client*
 -   GP ADMX file name: *DnsClient.admx*
@@ -1710,16 +1710,7 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->
 

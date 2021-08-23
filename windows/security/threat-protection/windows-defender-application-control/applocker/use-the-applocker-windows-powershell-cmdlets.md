@@ -4,7 +4,7 @@ description: This topic for IT professionals describes how each AppLocker Window
 ms.assetid: 374e029c-5c0a-44ab-a57a-2a9dd17dc57d
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Use the AppLocker Windows PowerShell cmdlets
@@ -35,26 +36,26 @@ Local Security policy snap-in, you must be a member of the local **Administrator
 
 ### Retrieve application information
 
-The [Get-AppLockerFileInformation](https://technet.microsoft.com/library/hh847209.aspx) cmdlet retrieves the AppLocker file information from a list of files or from an event log. File information that is retrieved can include publisher information, file hash information, and file path information.
+The [Get-AppLockerFileInformation](/powershell/module/applocker/get-applockerfileinformation) cmdlet retrieves the AppLocker file information from a list of files or from an event log. File information that is retrieved can include publisher information, file hash information, and file path information.
 
 File information from an event log may not contain all of these fields. Files that are not signed do not have any publisher information.
 
 ### Set AppLocker policy
 
-The [Set-AppLockerPolicy](https://technet.microsoft.com/library/hh847212.aspx) cmdlet sets the specified GPO to contain the specified AppLocker policy. If no Lightweight Directory Access Protocol (LDAP) is specified, the local GPO is the default.
+The [Set-AppLockerPolicy](/powershell/module/applocker/set-applockerpolicy) cmdlet sets the specified GPO to contain the specified AppLocker policy. If no Lightweight Directory Access Protocol (LDAP) is specified, the local GPO is the default.
 
 ### Retrieve an AppLocker policy
 
-The [Get-AppLockerPolicy](https://technet.microsoft.com/library/hh847214.aspx) cmdlet gets the AppLocker policy from the local GPO, from a specified GPO, or from the effective AppLocker policy on the device. The output of the AppLocker policy is an AppLockerPolicy object or an XML-formatted string.
+The [Get-AppLockerPolicy](/powershell/module/applocker/get-applockerpolicy) cmdlet gets the AppLocker policy from the local GPO, from a specified GPO, or from the effective AppLocker policy on the device. The output of the AppLocker policy is an AppLockerPolicy object or an XML-formatted string.
 
 ### Generate rules for a given user or group
 
-The [New-AppLockerPolicy](https://technet.microsoft.com/library/hh847211.aspx) cmdlet uses a list of file information to automatically generate rules for a given user or group. It can generate rules based on publisher, hash, or path information. Use **Get-AppLockerFileInformation** to create the
+The [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy) cmdlet uses a list of file information to automatically generate rules for a given user or group. It can generate rules based on publisher, hash, or path information. Use **Get-AppLockerFileInformation** to create the
 list of file information.
 
 ### Test the AppLocker Policy against a file set
 
-The [Test-AppLockerPolicy](https://technet.microsoft.com/library/hh847213.aspx) cmdlet uses the specified AppLocker policy to test whether a specified list of files are allowed to run or not on the local device for a specific user.
+The [Test-AppLockerPolicy](/powershell/module/applocker/test-applockerpolicy) cmdlet uses the specified AppLocker policy to test whether a specified list of files are allowed to run or not on the local device for a specific user.
 
 ## Additional resources
 

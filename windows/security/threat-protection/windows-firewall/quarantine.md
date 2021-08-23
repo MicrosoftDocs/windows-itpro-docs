@@ -6,7 +6,7 @@ author: Benny-54
 manager: dansimp
 ms.assetid: 
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/17/2020
+ms.technology: mde
 ---
 
 # Quarantine behavior
@@ -50,7 +51,7 @@ These filters are added in the FWPM_SUBLAYER_MPSSVC_QUARANTINE sublayer and thes
 >[!NOTE]
 > Any firewall rules added by the customers will not affect the filters in the quarantine sublayer as filters from Firewall rules are added in the FWPM_SUBLAYER_MPSSVC_WF sublayer. In other words, customers cannot add their own exception filters to prevent packets from being evaluated by quarantine filters.
 
-For more information about WFP layers and sublayers, see [WFP Operation](https://docs.microsoft.com/windows/win32/fwp/basic-operation).
+For more information about WFP layers and sublayers, see [WFP Operation](/windows/win32/fwp/basic-operation).
 
 ### Quarantine default inbound block filter
 
@@ -208,6 +209,6 @@ Get-NetIPInterface –InterfaceIndex 5
 
 Using the interface name, event viewer can be searched for any interface related changes. 
 
-To enable more networking audit events, see [Enable IPsec and Windows Firewall Audit Events](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754714(v=ws.10)?redirectedfrom=MSDN).
+To enable more networking audit events, see [Enable IPsec and Windows Firewall Audit Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754714(v=ws.10)).
 
 Packet drops from the quarantine default inbound block filter are often transient and do not signify anything more than a network change on the interface.

@@ -93,7 +93,7 @@ If you disable or do not configure this policy setting, "Found New Hardware" bal
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off "Found New Hardware" balloons during device installation*
+-   GP Friendly name: *Turn off "Found New Hardware" balloons during device installation*
 -   GP name: *DeviceInstall_BalloonTips*
 -   GP path: *System\Device Installation*
 -   GP ADMX file name: *DeviceSetup.admx*
@@ -164,7 +164,7 @@ If you disable or do not configure this policy setting, members of the Administr
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify search order for device driver source locations*
+-   GP Friendly name: *Specify search order for device driver source locations*
 -   GP name: *DriverSearchPlaces_SearchOrderConfiguration*
 -   GP path: *System\Device Installation*
 -   GP ADMX file name: *DeviceSetup.admx*
@@ -173,16 +173,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->
 

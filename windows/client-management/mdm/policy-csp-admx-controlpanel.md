@@ -107,7 +107,7 @@ If both the "Hide specified Control Panel items" setting and the "Show only spec
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide specified Control Panel items*
+-   GP Friendly name: *Hide specified Control Panel items*
 -   GP name: *DisallowCpls*
 -   GP path: *Control Panel*
 -   GP ADMX file name: *ControlPanel.admx*
@@ -181,7 +181,7 @@ If this policy setting is not configured, the Control Panel opens to the view us
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Always open All Control Panel Items when opening Control Panel*
+-   GP Friendly name: *Always open All Control Panel Items when opening Control Panel*
 -   GP name: *ForceClassicControlPanel*
 -   GP path: *Control Panel*
 -   GP ADMX file name: *ControlPanel.admx*
@@ -262,7 +262,7 @@ If users try to select a Control Panel item from the Properties item on a contex
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit access to Control Panel and PC settings*
+-   GP Friendly name: *Prohibit access to Control Panel and PC settings*
 -   GP name: *NoControlPanel*
 -   GP path: *Control Panel*
 -   GP ADMX file name: *ControlPanel.admx*
@@ -339,7 +339,7 @@ If both the "Hide specified Control Panel items" setting and the "Show only spec
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Show only specified Control Panel items*
+-   GP Friendly name: *Show only specified Control Panel items*
 -   GP name: *RestrictCpls*
 -   GP path: *Control Panel*
 -   GP ADMX file name: *ControlPanel.admx*
@@ -348,15 +348,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->

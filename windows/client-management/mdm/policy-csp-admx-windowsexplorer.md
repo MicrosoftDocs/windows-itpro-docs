@@ -304,7 +304,7 @@ If you disable or do not configure this policy setting, Folder Redirection does 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Verify old and new Folder Redirection targets point to the same share before redirecting*
+-   GP Friendly name: *Verify old and new Folder Redirection targets point to the same share before redirecting*
 -   GP name: *CheckSameSourceAndTargetForFRAndDFS*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -379,7 +379,7 @@ If you disable or not configure this policy, the default File Explorer behavior 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Classic Shell*
+-   GP Friendly name: *Turn on Classic Shell*
 -   GP name: *ClassicShell*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -448,7 +448,7 @@ If you disable or do not configure this setting, the default behavior of not dis
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Display confirmation dialog when deleting files*
+-   GP Friendly name: *Display confirmation dialog when deleting files*
 -   GP name: *ConfirmFileDelete*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -518,7 +518,7 @@ If you disable or do not configure this policy setting, no changes are made to t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Location where all default Library definition files for users/machines reside.*
+-   GP Friendly name: *Location where all default Library definition files for users/machines reside.*
 -   GP name: *DefaultLibrariesLocation*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -588,7 +588,7 @@ This disables access to user-defined properties, and properties stored in NTFS s
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable binding directly to IPropertySetStorage without intermediate layers.*
+-   GP Friendly name: *Disable binding directly to IPropertySetStorage without intermediate layers.*
 -   GP name: *DisableBindDirectlyToPropertySetStorage*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -667,7 +667,7 @@ If you disable or do not configure this policy, all default Windows Libraries fe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Windows Libraries features that rely on indexed file data*
+-   GP Friendly name: *Turn off Windows Libraries features that rely on indexed file data*
 -   GP name: *DisableIndexedLibraryExperience*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -740,7 +740,7 @@ You can specify a known folder using its known folder id or using its canonical 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable Known Folders*
+-   GP Friendly name: *Disable Known Folders*
 -   GP name: *DisableKnownFolders*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -812,7 +812,7 @@ These suggestions are based on their past entries into the Search Box.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off display of recent search entries in the File Explorer search box*
+-   GP Friendly name: *Turn off display of recent search entries in the File Explorer search box*
 -   GP name: *DisableSearchBoxSuggestions*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -885,7 +885,7 @@ If you disable or do not configure this policy setting, file shortcut icons that
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow the use of remote paths in file shortcut icons*
+-   GP Friendly name: *Allow the use of remote paths in file shortcut icons*
 -   GP name: *EnableShellShortcutIconRemotePath*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -964,7 +964,7 @@ If you do not configure this policy, SmartScreen will be enabled by default, but
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Windows Defender SmartScreen*
+-   GP Friendly name: *Configure Windows Defender SmartScreen*
 -   GP name: *EnableSmartScreen*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1035,7 +1035,7 @@ For shell extensions to run on a per-user basis, there must be an entry at HKEY_
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow only per user or approved shell extensions*
+-   GP Friendly name: *Allow only per user or approved shell extensions*
 -   GP name: *EnforceShellExtensionSecurity*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1105,7 +1105,7 @@ If you disable or do not configure this policy setting, users can choose how the
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Start File Explorer with ribbon minimized*
+-   GP Friendly name: *Start File Explorer with ribbon minimized*
 -   GP name: *ExplorerRibbonStartsMinimized*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1174,7 +1174,7 @@ If you disable or do not configure this policy setting, File Explorer shows snip
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the display of snippets in Content view mode*
+-   GP Friendly name: *Turn off the display of snippets in Content view mode*
 -   GP name: *HideContentViewModeSnippets*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1248,7 +1248,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
+-   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_Internet*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1322,7 +1322,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow OpenSearch queries in File Explorer*
+-   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_InternetLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Internet Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1396,7 +1396,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
+-   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_Intranet*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Intranet Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1470,7 +1470,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
+-   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_IntranetLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Intranet Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1544,7 +1544,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
+-   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_LocalMachine*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Local Machine Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1618,7 +1618,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
+-   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_LocalMachineLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Local Machine Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1692,7 +1692,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
+-   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_Restricted*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Restricted Sites Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1766,7 +1766,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
+-   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_RestrictedLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Restricted Sites Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1840,7 +1840,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
+-   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_Trusted*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Trusted Sites Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1914,7 +1914,7 @@ Changes to this setting may not be applied until the user logs off from Windows.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
+-   GP Friendly name: *Allow previewing and custom thumbnails of OpenSearch query results in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchPreview_TrustedLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Trusted Sites Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -1986,7 +1986,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow OpenSearch queries in File Explorer*
+-   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_Internet*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Internet Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2058,7 +2058,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow OpenSearch queries in File Explorer*
+-   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_InternetLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Internet Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2130,7 +2130,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow OpenSearch queries in File Explorer*
+-   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_Intranet*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Intranet Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2202,7 +2202,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow OpenSearch queries in File Explorer*
+-   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_IntranetLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Intranet Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2274,7 +2274,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow OpenSearch queries in File Explorer*
+-   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_LocalMachine*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Local Machine Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2346,7 +2346,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow OpenSearch queries in File Explorer*
+-   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_LocalMachineLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Local Machine Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2418,7 +2418,7 @@ If you do not configure this policy setting, users cannot perform OpenSearch que
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow OpenSearch queries in File Explorer*
+-   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_Restricted*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Restricted Sites Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2491,7 +2491,7 @@ If you do not configure this policy setting, users cannot perform OpenSearch que
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow OpenSearch queries in File Explorer*
+-   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_RestrictedLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Restricted Sites Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2564,7 +2564,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow OpenSearch queries in File Explorer*
+-   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_Trusted*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Trusted Sites Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2636,7 +2636,7 @@ If you do not configure this policy setting, users can perform OpenSearch querie
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow OpenSearch queries in File Explorer*
+-   GP Friendly name: *Allow OpenSearch queries in File Explorer*
 -   GP name: *IZ_Policy_OpenSearchQuery_TrustedLockdown*
 -   GP path: *Windows Components\Internet Explorer\Internet Control Panel\Security Page\Locked-Down Trusted Sites Zone*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2707,7 +2707,7 @@ If you disable or do not configure this policy setting, Windows searches for the
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not track Shell shortcuts during roaming*
+-   GP Friendly name: *Do not track Shell shortcuts during roaming*
 -   GP name: *LinkResolveIgnoreLinkInfo*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2776,7 +2776,7 @@ If you disable or do not configure this policy setting, by default, the system d
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Maximum number of recent documents*
+-   GP Friendly name: *Maximum number of recent documents*
 -   GP name: *MaxRecentDocs*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2849,7 +2849,7 @@ If you disable or do not configure this policy setting, the Back button is displ
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide the common dialog back button*
+-   GP Friendly name: *Hide the common dialog back button*
 -   GP name: *NoBackButton*
 -   GP path: *Windows Components\File Explorer\Common Open File Dialog*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2921,7 +2921,7 @@ If you disable or do not configure this policy setting, users are able to use th
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove CD Burning features*
+-   GP Friendly name: *Remove CD Burning features*
 -   GP name: *NoCDBurning*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -2993,7 +2993,7 @@ If you disable or do not configure this policy setting, thumbnail views are cach
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off caching of thumbnail pictures*
+-   GP Friendly name: *Turn off caching of thumbnail pictures*
 -   GP name: *NoCacheThumbNailPictures*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3064,7 +3064,7 @@ If you disable or do not configure this policy setting, users are allowed to tur
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove UI to change menu animation setting*
+-   GP Friendly name: *Remove UI to change menu animation setting*
 -   GP name: *NoChangeAnimation*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3131,7 +3131,7 @@ Effects, such as transitory underlines, are designed to enhance the user's exper
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove UI to change keyboard navigation indicator setting*
+-   GP Friendly name: *Remove UI to change keyboard navigation indicator setting*
 -   GP name: *NoChangeKeyboardNavigationIndicators*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3200,7 +3200,7 @@ If you disable or do not configure this policy setting, the DFS tab is available
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove DFS tab*
+-   GP Friendly name: *Remove DFS tab*
 -   GP name: *NoDFSTab*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3274,7 +3274,7 @@ If you disable or do not configure this policy setting, all drives are displayed
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide these specified drives in My Computer*
+-   GP Friendly name: *Hide these specified drives in My Computer*
 -   GP name: *NoDrives*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3348,7 +3348,7 @@ To remove computers in the user's workgroup or domain from lists of network reso
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *No Entire Network in Network Locations*
+-   GP Friendly name: *No Entire Network in Network Locations*
 -   GP name: *NoEntireNetwork*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3422,7 +3422,7 @@ To see an example of the standard Open dialog box, start WordPad and, on the Fil
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide the dropdown list of recent files*
+-   GP Friendly name: *Hide the dropdown list of recent files*
 -   GP name: *NoFileMRU*
 -   GP path: *Windows Components\File Explorer\Common Open File Dialog*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3489,7 +3489,7 @@ This setting does not prevent users from using other methods to perform tasks av
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove File menu from File Explorer*
+-   GP Friendly name: *Remove File menu from File Explorer*
 -   GP name: *NoFileMenu*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3560,7 +3560,7 @@ If you disable or do not configure this policy setting, users can open Folder Op
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow Folder Options to be opened from the Options button on the View tab of the ribbon*
+-   GP Friendly name: *Do not allow Folder Options to be opened from the Options button on the View tab of the ribbon*
 -   GP name: *NoFolderOptions*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3625,7 +3625,7 @@ Available in the latest Windows 10 Insider Preview Build. Removes the Hardware t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Hardware tab*
+-   GP Friendly name: *Remove Hardware tab*
 -   GP name: *NoHardwareTab*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3697,7 +3697,7 @@ This setting does not remove the Computer Management item from the Start menu (S
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hides the Manage item on the File Explorer context menu*
+-   GP Friendly name: *Hides the Manage item on the File Explorer context menu*
 -   GP name: *NoManageMyComputerVerb*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3769,7 +3769,7 @@ If you disable or do not configure this policy setting, the Shared Documents fol
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Shared Documents from My Computer*
+-   GP Friendly name: *Remove Shared Documents from My Computer*
 -   GP name: *NoMyComputerSharedDocuments*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3843,7 +3843,7 @@ This setting does not prevent users from connecting to another computer by typin
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove "Map Network Drive" and "Disconnect Network Drive"*
+-   GP Friendly name: *Remove "Map Network Drive" and "Disconnect Network Drive"*
 -   GP name: *NoNetConnectDisconnect*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3910,7 +3910,7 @@ If this group policy is enabled, no notifications will be shown. If the group po
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not show the 'new application installed' notification*
+-   GP Friendly name: *Do not show the 'new application installed' notification*
 -   GP name: *NoNewAppAlert*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -3980,7 +3980,7 @@ To see an example of the standard Open dialog box, start WordPad and, on the Fil
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide the common dialog places bar*
+-   GP Friendly name: *Hide the common dialog places bar*
 -   GP name: *NoPlacesBar*
 -   GP path: *Windows Components\File Explorer\Common Open File Dialog*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4049,7 +4049,7 @@ If you disable or do not configure this setting, files and folders deleted using
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not move deleted files to the Recycle Bin*
+-   GP Friendly name: *Do not move deleted files to the Recycle Bin*
 -   GP name: *NoRecycleFiles*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4122,7 +4122,7 @@ By default, users are not prompted for alternate logon credentials when installi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not request alternate credentials*
+-   GP Friendly name: *Do not request alternate credentials*
 -   GP name: *NoRunAsInstallPrompt*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4191,7 +4191,7 @@ If you do not configure this policy (default), there will be an "Internet" link 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove the Search the Internet "Search again" link*
+-   GP Friendly name: *Remove the Search the Internet "Search again" link*
 -   GP name: *NoSearchInternetTryHarderButton*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4260,7 +4260,7 @@ If you disable or do not configure this setting, users will be able to access th
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Security tab*
+-   GP Friendly name: *Remove Security tab*
 -   GP name: *NoSecurityTab*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4329,7 +4329,7 @@ This policy setting does not affect the Search items on the File Explorer contex
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Search button from File Explorer*
+-   GP Friendly name: *Remove Search button from File Explorer*
 -   GP name: *NoShellSearchButton*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4399,7 +4399,7 @@ If you disable or do not configure this policy setting, File Explorer will sort 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off numerical sorting in File Explorer*
+-   GP Friendly name: *Turn off numerical sorting in File Explorer*
 -   GP name: *NoStrCmpLogical*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4466,7 +4466,7 @@ If you enable this setting, menus do not appear when you right-click the desktop
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove File Explorer's default context menu*
+-   GP Friendly name: *Remove File Explorer's default context menu*
 -   GP name: *NoViewContextMenu*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4521,7 +4521,7 @@ ADMX Info:
 <!--Description-->
 Available in the latest Windows 10 Insider Preview Build. Prevents users from using My Computer to gain access to the content of selected drives.
 
-If you enable this setting, users can browse the directory structure of the selected drives in My Computer or File Explorer, but they cannot open folders and access the contents. Also, they cannot use the Run dialog box or the Map Network Drive dialog box to view the directories on these drives.
+If you enable this setting, users can browse the directory structure of the selected drives in My Computer or File Explorer, but they cannot open folders and access the contents (open the files in the folders or see the files in the folders). Also, they cannot use the Run dialog box or the Map Network Drive dialog box to view the directories on these drives.
 
 To use this setting, select a drive or combination of drives from the drop-down list. To allow access to all drive directories, disable this setting or select the "Do not restrict drives" option from the drop-down list.
 
@@ -4540,7 +4540,7 @@ To use this setting, select a drive or combination of drives from the drop-down 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent access to drives from My Computer*
+-   GP Friendly name: *Prevent access to drives from My Computer*
 -   GP name: *NoViewOnDrive*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4611,7 +4611,7 @@ If you disable or do not configure this setting, the Windows Key hotkeys are ava
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Windows Key hotkeys*
+-   GP Friendly name: *Turn off Windows Key hotkeys*
 -   GP name: *NoWindowsHotKeys*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4684,7 +4684,7 @@ To remove network computers from lists of network resources, use the "No Entire 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *No Computers Near Me in Network Locations*
+-   GP Friendly name: *No Computers Near Me in Network Locations*
 -   GP name: *NoWorkgroupContents*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4766,7 +4766,7 @@ If you disable or do not configure this setting the default list of items will b
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Items displayed in Places Bar*
+-   GP Friendly name: *Items displayed in Places Bar*
 -   GP name: *PlacesBar*
 -   GP path: *Windows Components\File Explorer\Common Open File Dialog*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4842,7 +4842,7 @@ If the dialog box does not appear, the installation proceeds with the current us
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Request credentials for network installations*
+-   GP Friendly name: *Request credentials for network installations*
 -   GP name: *PromptRunasInstallNetPath*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4914,7 +4914,7 @@ If you disable or do not configure this setting, users can change the total amou
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Maximum allowed Recycle Bin size*
+-   GP Friendly name: *Maximum allowed Recycle Bin size*
 -   GP name: *RecycleBinSize*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -4985,7 +4985,7 @@ If you do not configure this policy setting the protocol is in the protected mod
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off shell protocol protected mode*
+-   GP Friendly name: *Turn off shell protocol protected mode*
 -   GP name: *ShellProtocolProtectedModeTitle_1*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -5056,7 +5056,7 @@ If you do not configure this policy setting the protocol is in the protected mod
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off shell protocol protected mode*
+-   GP Friendly name: *Turn off shell protocol protected mode*
 -   GP name: *ShellProtocolProtectedModeTitle_2*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -5127,7 +5127,7 @@ If you do not configure this policy setting, users will be able to choose whethe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Show hibernate in the power options menu*
+-   GP Friendly name: *Show hibernate in the power options menu*
 -   GP name: *ShowHibernateOption*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -5198,7 +5198,7 @@ If you do not configure this policy setting, users will be able to choose whethe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Show sleep in the power options menu*
+-   GP Friendly name: *Show sleep in the power options menu*
 -   GP name: *ShowSleepOption*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -5271,7 +5271,7 @@ If you disable or do not configure this policy setting, no Libraries or Search C
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Pin Libraries or Search Connectors to the "Search again" links and the Start menu*
+-   GP Friendly name: *Pin Libraries or Search Connectors to the "Search again" links and the Start menu*
 -   GP name: *TryHarderPinnedLibrary*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -5344,7 +5344,7 @@ If you disable or do not configure this policy setting, no custom Internet searc
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Pin Internet search sites to the "Search again" links and the Start menu*
+-   GP Friendly name: *Pin Internet search sites to the "Search again" links and the Start menu*
 -   GP name: *TryHarderPinnedOpenSearch*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *WindowsExplorer.admx*
@@ -5353,15 +5353,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->

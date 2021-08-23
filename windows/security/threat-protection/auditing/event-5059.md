@@ -2,7 +2,7 @@
 title: 5059(S, F) Key migration operation. (Windows 10)
 description: Describes security event 5059(S, F) Key migration operation. This event is generated when a cryptographic key is exported/imported using a Key Storage Provider.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5059(S, F): Key migration operation.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates when a cryptographic key is exported or imported using a [Key Storage Provider](https://msdn.microsoft.com/library/windows/desktop/bb931355(v=vs.85).aspx) (KSP). This event generates only if one of the following KSPs were used:
+This event generates when a cryptographic key is exported or imported using a [Key Storage Provider](/windows/win32/seccertenroll/cng-key-storage-providers) (KSP). This event generates only if one of the following KSPs were used:
 
 -   Microsoft Software Key Storage Provider
 
@@ -157,5 +158,4 @@ For 5059(S, F): Key migration operation.
 
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
--   
-
+-

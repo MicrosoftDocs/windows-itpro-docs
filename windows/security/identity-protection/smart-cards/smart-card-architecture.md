@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -33,7 +33,7 @@ For smart cards, Windows supports a provider architecture that meets the secure 
 -   [Smart card subsystem architecture](#smart-card-subsystem-architecture)
 
 <!-- This link probably won't stay current. If it seems useful, it could be un-commented.
-For more information, see [Windows Authentication Architecture](https://technet.microsoft.com/library/dn751044(v=ws.11).aspx). This topic in the Windows Authentication Technical Overview explains the basic architectural scheme for Windows authentication for past and current versions of Windows.
+For more information, see [Windows Authentication Architecture](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn751044(v=ws.11)). This topic in the Windows Authentication Technical Overview explains the basic architectural scheme for Windows authentication for past and current versions of Windows.
 -->
 
 ## Credential provider architecture
@@ -342,4 +342,4 @@ If a smart card is registered by a CSP and a smart card minidriver, the one that
 
 CSPs and KSPs are meant to be written only if specific functionality is not available in the current smart card minidriver architecture. For example, the smart card minidriver architecture supports hardware security modules, so a minidriver could be written for a hardware security module, and a CSP or KSP may not be required unless it is needed to support algorithms that are not implemented in the Base CSP or smart card KSP.
 
-For more information about how to write a smart card minidriver, CSP, or KSP, see [Smart Card Minidrivers](https://msdn.microsoft.com/windows/hardware/drivers/smartcard/smart-card-minidrivers).
+For more information about how to write a smart card minidriver, CSP, or KSP, see [Smart Card Minidrivers](/windows-hardware/drivers/smartcard/smart-card-minidrivers).
