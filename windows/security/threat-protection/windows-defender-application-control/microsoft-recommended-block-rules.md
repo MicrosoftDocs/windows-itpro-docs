@@ -79,18 +79,18 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 
 |Name|Twitter|
 |---|---|
-|Alex Ionescu | @aionescu|
-|Brock Mammen| |
-|Casey Smith |@subTee| 
-|Jimmy Bayne | @bohops |
-|Lasse Trolle Borup | Langkjaer Cyber Defence |
-|Lee Christensen|@tifkin_|
-|Matt Graeber | @mattifestation| 
-|Matt Nelson | @enigma0x3| 
-|Oddvar Moe |@Oddvarmoe|
-|Philip Tsukerman | @PhilipTsukerman |
-|Vladas Bulavas | Kaspersky Lab |
-|William Easton | @Strawgate |
+| Alex Ionescu | @aionescu|
+| Brock Mammen| |
+| Casey Smith | @subTee| 
+| Jimmy Bayne | @bohops |
+| Lasse Trolle Borup | Langkjaer Cyber Defence |
+| Lee Christensen| @tifkin_|
+| Matt Graeber | @mattifestation| 
+| Matt Nelson | @enigma0x3| 
+| Oddvar Moe | @Oddvarmoe|
+| Philip Tsukerman | @PhilipTsukerman |
+| Vladas Bulavas | Kaspersky Lab |
+| William Easton | @Strawgate |
 
 <br />
 
