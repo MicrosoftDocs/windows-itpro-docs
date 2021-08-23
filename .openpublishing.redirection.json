@@ -8446,8 +8446,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/deploy/upgrade-windows-phone-8-1-to-10.md",
-      "redirect_url": "/windows/deployment/upgrade/upgrade-windows-phone-8-1-to-10",
+      "source_path": "windows/deployment/upgrade/upgrade-windows-phone-8-1-to-10.md",
+      "redirect_url": "/windows/deployment/upgrade/windows-10-edition-upgrades",
       "redirect_document_id": false
     },
     {
@@ -18950,17 +18950,7 @@
       "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
       "redirect_document_id": false
     },
-    {
-      "source_path": "windows/client-management/windows-10-mobile-and-mdm.md",
-      "redirect_url": "/windows/client-management/index",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "windows/application-management/deploy-app-upgrades-windows-10-mobile.md",
-      "redirect_url": "/windows/application-management/index",
-      "redirect_document_id": false
-    }
-
+    
 
 	    ]
 }
