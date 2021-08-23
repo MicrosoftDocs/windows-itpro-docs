@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 20d40a79-ce89-45e6-9bb4-148f83958460
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Audit: Audit the access of global system objects
@@ -78,7 +79,7 @@ All auditing capabilities are integrated in Group Policy. You can configure, dep
 To audit attempts to access global system objects, you can use one of two security audit policy settings:
 
 -   [Audit Kernel Object](../auditing/audit-kernel-object.md) in Advanced Security Audit Policy Settings\\Object Access
--   [Audit object access](../auditing/basic-audit-object-access.md) under Security Settings\\Local Policies\\Audit Policy
+-   [Audit Object Access](../auditing/basic-audit-object-access.md) under Security Settings\\Local Policies\\Audit Policy
 
 If possible, use the Advanced Security Audit Policy option to reduce the number of unrelated audit events that you generate.
 
@@ -91,13 +92,13 @@ If the [Audit Kernel Object](../auditing/audit-kernel-object.md) setting is conf
 | 4661 | A handle to an object was requested. |  
 | 4663 | An attempt was made to access an object. |  
  
-If the [Audit Kernel Object](../auditing/audit-kernel-object.md) setting is configured, the following events are generated:
+If the [Audit Object Access](../auditing/basic-audit-object-access.md) setting is configured, the following events are generated:
 
 | Event ID | Event message |
 | - | - |
 | 560 | Access was granted to an already existing object. | 
 | 562 | A handle to an object was closed. | 
-| 563 | An attempt was made to open an object with the intent to delete it.<br>**Note: **This is used by file systems when the FILE_DELETE_ON_CLOSE flag is specified in Createfile() |
+| 563 | An attempt was made to open an object with the intent to delete it.<br>**Note:** This is used by file systems when the FILE_DELETE_ON_CLOSE flag is specified in Createfile() |
 | 564 | A protected object was deleted. |
 | 565 | Access was granted to an already existing object type. | 
 | 567 | A permission associated with a handle was used.<br>**Note:**  A handle is created with certain granted permissions (Read, Write, and so on). When the handle is used, up to one audit is generated for each of the permissions that was used. |

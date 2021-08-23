@@ -4,19 +4,15 @@ description: How to integrate Cortana with Power BI to help your employees get a
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.date: 10/05/2017
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Set up and test Cortana for Power BI in your organization
-**Applies to:**
-
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
 
 >[!IMPORTANT]
 >Cortana for Power BI is deprecated and will not be available in future releases. This topic is provided as a reference for previous versions only.

@@ -4,9 +4,9 @@ description: This section describes the TakeATest settings that you can configur
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
@@ -15,7 +15,7 @@ manager: dansimp
 
 # TakeATest (Windows Configuration Designer reference)
 
-Use TakeATest to configure the Take A Test app, a secure browser for test-taking. Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. For more information, see [Take tests in Windows 10](https://docs.microsoft.com/education/windows/take-tests-in-windows-10).
+Use TakeATest to configure the Take A Test app, a secure browser for test-taking. Many schools use online testing for formative and summative assessments. It's critical that students use a secure browser that prevents them from using other computer or Internet resources during the test. For more information, see [Take tests in Windows 10](/education/windows/take-tests-in-windows-10).
 
 ## Applies to
 
@@ -48,4 +48,4 @@ To specify a domain account, enter **domain\user**. To specify an AAD account, e
 
 ## Related topics
 
-- [SecureAssessment configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/secureassessment-csp)
+- [SecureAssessment configuration service provider (CSP)](/windows/client-management/mdm/secureassessment-csp)

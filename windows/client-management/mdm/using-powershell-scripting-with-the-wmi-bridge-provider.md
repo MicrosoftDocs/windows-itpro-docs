@@ -14,16 +14,16 @@ ms.date: 06/26/2017
 
 # Using PowerShell scripting with the WMI Bridge Provider
 
-This topic covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, as well as how to invoke methods through the [WMI Bridge Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx).
+This topic covers using PowerShell Cmdlet scripts to configure per-user and per-device policy settings, as well as how to invoke methods through the [WMI Bridge Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal).
 
 
 ## Configuring per-device policy settings
 
-This section provides a PowerShell Cmdlet sample script to configure per-device settings through the [WMI Bridge Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx). If a class supports device settings, there must be a class level qualifier defined for InPartition("local-system").
+This section provides a PowerShell Cmdlet sample script to configure per-device settings through the [WMI Bridge Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal). If a class supports device settings, there must be a class level qualifier defined for InPartition("local-system").
 
 For all device settings, the WMI Bridge client must be executed under local system user. To do that, download the psexec tool from <https://technet.microsoft.com/sysinternals/bb897553.aspx> and run `psexec.exe -i -s cmd.exe` from an elevated admin command prompt.
 
-The script example in this section uses the class [MDM\_Policy\_Config01\_WiFi02](https://msdn.microsoft.com/library/windows/desktop/dn905246.aspx):
+The script example in this section uses the class [MDM\_Policy\_Config01\_WiFi02](/windows/win32/dmwmibridgeprov/mdm-policy-config01-wifi02):
 
 ```ManagedCPlusPlus
 [dynamic, provider("DMWmiBridgeProv"), InPartition("local-system")]
@@ -73,7 +73,7 @@ catch [Exception]
 
 This section provides a PowerShell Cmdlet sample script to configure per-user settings through the WMI Bridge. If a class supports user settings, there must be a class level qualifier defined for InPartition("local-user").
 
-The script example in this section uses the class [MDM\_Policy\_User\_Config01\_Authentication02](https://msdn.microsoft.com/library/windows/desktop/mt146854.aspx):
+The script example in this section uses the class [MDM\_Policy\_User\_Config01\_Authentication02](/windows/win32/dmwmibridgeprov/mdm-policy-user-config01-authentication02):
 
 ```ManagedCPlusPlus
 [dynamic, provider("DMWmiBridgeProv"), InPartition("local-user")]
@@ -193,7 +193,7 @@ catch [Exception]
 
 This section provides a PowerShell Cmdlet sample script to invoke a WMI Bridge object method. The following script must be executed under local system user. To do that, download the psexec tool from <https://technet.microsoft.com/sysinternals/bb897553.aspx> and run `psexec.exe -i -s cmd.exe` from an elevated admin command prompt.
 
-The script example in this section uses the [UpgradeEditionWithProductKeyMethod](https://msdn.microsoft.com/library/windows/desktop/mt599805.aspx) method of the [MDM\_WindowsLicensing](https://msdn.microsoft.com/library/windows/desktop/dn948453.aspx) class.
+The script example in this section uses the [UpgradeEditionWithProductKeyMethod](/windows/win32/dmwmibridgeprov/mdm-windowslicensing-upgradeeditionwithproductkeymethod) method of the [MDM\_WindowsLicensing](/windows/win32/dmwmibridgeprov/mdm-windowslicensing) class.
 
 ```PowerShell
 $namespaceName = "root\cimv2\mdm\dmmap"
@@ -220,11 +220,6 @@ catch [Exception]
 
 ## Related topics
 
-[WMI Bridge Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx)
+[WMI Bridge Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal)
 
  
-
-
-
-
-

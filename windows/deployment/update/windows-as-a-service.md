@@ -6,6 +6,7 @@ ms.manager: laurawi
 audience: itpro
 itproauthor: jaimeo
 author: jaimeo
+ms.author: jaimeo
 description: Discover the latest news articles, videos, and podcasts about Windows as a service. Find resources for using Windows as a service within your organization. 
 ms.audience: itpro
 ms.reviewer: 
@@ -25,7 +26,7 @@ Find the latest and greatest news on Windows 10 deployment and servicing.
 **Discovering the Windows 10 Update history pages**
 > [!VIDEO https://www.youtube-nocookie.com/embed/mTnAb9XjMPY]
 
-Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. Bookmark the <a href="https://aka.ms/WindowsReleaseHealth">Windows release health dashboard</a> for near real-time information on known issues, workarounds, and resolutions--as well as the current status of the latest feature update rollout.
+Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. Bookmark the <a href="/windows/release-health/">Windows release health dashboard</a> for near real-time information on known issues, workarounds, and resolutions--as well as the current status of the latest feature update rollout.
 
 The latest news:
 <ul compact style="list-style: none"> 
@@ -46,7 +47,7 @@ The latest news:
 ## IT pro champs corner
 Written by IT pros for IT pros, sharing real world examples and scenarios for Windows 10 deployment and servicing.
 
-<img src="images/champs-2.png" alt="" width="640" height="320">
+<img src="images/champs-2.png" alt="Champs" width="640" height="320">
 
 <a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Tactical-considerations-for-creating-Windows-deployment-rings/ba-p/746979">**NEW** Tactical considerations for creating Windows deployment rings</a>
 
@@ -56,18 +57,18 @@ Written by IT pros for IT pros, sharing real world examples and scenarios for Wi
 
 <a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Classifying-Windows-updates-in-common-deployment-tools/ba-p/331175">Classifying Windows updates in common deployment tools</a>
 
-<a href="https://docs.microsoft.com/windows-server/get-started/express-updates">Express updates for Windows Server 2016 re-enabled for November 2018 update
+<a href="/windows-server/get-started/express-updates">Express updates for Windows Server 2016 re-enabled for November 2018 update
 </a>
 
 <a href="https://support.microsoft.com/help/4472027/">2019 SHA-2 Code Signing Support requirement for Windows and WSUS</a>
 
-<a href="https://go.microsoft.com/fwlink/?linkid=2005509">Deploying Windows 10 Feature Updates to 24/7 Mission Critical Devices</a>
+<a href="/windows/deployment/update/feature-update-mission-critical">Deploying Windows 10 Feature Updates to 24/7 Mission Critical Devices</a>
 
 ## Discover
 
 Learn more about Windows as a service and its value to your organization.
 
-<img src="images/discover-land.png">
+<img src="images/discover-land.png" alt="Discover">
 
 <a href="waas-overview.md">Overview of Windows as a service</a>
 
@@ -82,7 +83,7 @@ Learn more about Windows as a service and its value to your organization.
 
 Prepare to implement Windows as a service effectively using the right tools, products, and strategies.
 
-<img src="images/plan-land.png" alt="" />
+<img src="images/plan-land.png" alt="Plan" />
 
 <a href="https://www.microsoft.com/windowsforbusiness/simplified-updates">Simplified updates</a>
 
@@ -90,7 +91,7 @@ Prepare to implement Windows as a service effectively using the right tools, pro
 
 <a href="https://developer.microsoft.com/windows/ready-for-windows#/">Ready for Windows</a>
 
-<a href="../upgrade/manage-windows-upgrades-with-upgrade-readiness.md">Manage Windows upgrades with Upgrade Readiness</a>
+<a href="/mem/configmgr/desktop-analytics/overview">Manage Windows upgrades with Upgrade Readiness</a>
 
 <a href="https://www.microsoft.com/itshowcase/windows10deployment">Preparing your organization for a seamless Windows 10 deployment</a>
 
@@ -98,7 +99,7 @@ Prepare to implement Windows as a service effectively using the right tools, pro
 
 Secure your organization's deployment investment.
 
-<img src="images/deploy-land.png" alt="" />
+<img src="images/deploy-land.png" alt="Deploy" />
 
 <a href="index.md">Update Windows 10 in the enterprise</a>
 
@@ -112,23 +113,6 @@ Secure your organization's deployment investment.
 
 
 ## Microsoft Ignite 2018
-<img src="images/ignite-land.jpg" alt="" width="640" height="320"/>
+<img src="images/ignite-land.jpg" alt="Ignite" width="640" height="320"/>
 
-Looking to learn more? These informative session replays from Microsoft Ignite 2018 (complete with downloadable slide decks) can provide some great insights on Windows as a service.
-
-
-[BRK3018: Deploying Windows 10 in the enterprise using traditional and modern techniques](https://myignite.techcommunity.microsoft.com/sessions/64509#ignite-html-anchor)
-
-[BRK3019: Delivery Optimization deep dive: How to reduce internet bandwidth impact on your network](https://myignite.techcommunity.microsoft.com/sessions/64510#ignite-html-anchor)
-
-[BRK3020: Using AI to automate Windows and Office update staging with Windows Update for Business](https://myignite.techcommunity.microsoft.com/sessions/64513#ignite-html-anchor)
-
-[BRK3027: Deploying Windows 10: Making the update experience smooth and seamless](https://myignite.techcommunity.microsoft.com/sessions/64612#ignite-html-anchor)
-
-[BRK3039: Windows 10 and Microsoft Office 365 ProPlus lifecycle and servicing update](https://myignite.techcommunity.microsoft.com/sessions/66763#ignite-html-anchor)
-
-[BRK3211: Ask the Experts: Successfully deploying, servicing, managing Windows 10](https://myignite.techcommunity.microsoft.com/sessions/65963#ignite-html-anchor)
-
-[THR2234: Windows servicing and delivery fundamentals](https://myignite.techcommunity.microsoft.com/sessions/66741#ignite-html-anchor)
-
-[THR3006: The pros and cons of LTSC in the enterprise](https://myignite.techcommunity.microsoft.com/sessions/64512#ignite-html-anchor)
+Looking to learn more? These informative session replays from Microsoft Ignite 2018 (complete with downloadable slide decks) can provide some great insights on Windows as a service. See [MyIgnite - Session catalog](https://myignite.techcommunity.microsoft.com/sessions).

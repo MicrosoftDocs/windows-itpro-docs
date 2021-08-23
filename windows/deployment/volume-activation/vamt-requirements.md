@@ -1,6 +1,6 @@
 ---
 title: VAMT Requirements (Windows 10)
-description: VAMT Requirements
+description: In this article, learn about the product key and system requierements for Volume Activation Management Tool (VAMT).
 ms.assetid: d14d152b-ab8a-43cb-a8fd-2279364007b9
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/25/2017
 ms.topic: article
 ---
@@ -40,7 +41,7 @@ The following table lists the system requirements for the VAMT host computer.
 | Display | 1024x768 or higher resolution monitor |
 | Network | Connectivity to remote computers via Windows Management Instrumentation (TCP/IP) and Microsoft Activation Web Service on the Internet via HTTPS |
 | Operating System | Windows 7, Windows 8, Windows 8.1, Windows 10, Windows Server 2008 R2, Windows Server 2012, or later. |
-| Additional Requirements | <ul><li>Connection to a SQL Server database. For more info, see [Install VAMT](install-vamt.md).</li><li>PowerShell 3.0: For Windows 8, Windows 8.1, Windows 10, and Windows Server 2012, PowerShell is included in the installation. For previous versions of Windows and Windows Server, you must download PowerShell 3.0. To download PowerShell, go to [Download Windows PowerShell 3.0](https://go.microsoft.com/fwlink/p/?LinkId=218356).</li><li>If installing on Windows Server 2008 R2, you must also install .NET Framework 3.51.</li></ul> |
+| Additional Requirements | <ul><li>Connection to a SQL Server database. For more info, see [Install VAMT](install-vamt.md).</li><li>PowerShell 3.0: For Windows 8, Windows 8.1, Windows 10, and Windows Server 2012, PowerShell is included in the installation. For previous versions of Windows and Windows Server, you must download PowerShell 3.0. To download PowerShell, go to [Download Windows PowerShell 3.0](/powershell/scripting/install/installing-powershell).</li><li>If installing on Windows Server 2008 R2, you must also install .NET Framework 3.51.</li></ul> |
 
 ## Related topics
 - [Install and Configure VAMT](install-configure-vamt.md)

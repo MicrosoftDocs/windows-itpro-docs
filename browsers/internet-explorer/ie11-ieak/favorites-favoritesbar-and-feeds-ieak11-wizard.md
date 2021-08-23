@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Favorites, Favorites Bar, and Feeds page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Favorites, Favorites Bar, and Feeds** page of the Internet Explorer Administration Kit (IEAK 11) Customization Wizard lets you add:
 
 -   **Links.** Used so your employees can quickly connect with your important websites. These links can appear in the **Links** folder or on the **Favorites Bar**.

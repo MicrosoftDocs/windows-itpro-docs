@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Connection Manager page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 We're sorry. We've removed all of the functionality included on the Connection Manager page of the Internet Explorer Customization Wizard 11.
 
 Click **Next** to go to the [Connection Settings](connection-settings-ieak11-wizard.md) page or **Back** to go to the [Compatibility View](compat-view-ieak11-wizard.md) page.

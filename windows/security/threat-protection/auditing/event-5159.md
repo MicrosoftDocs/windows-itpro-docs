@@ -2,7 +2,7 @@
 title: 5159(F) The Windows Filtering Platform has blocked a bind to a local port. (Windows 10)
 description: Describes security event 5159(F) The Windows Filtering Platform has blocked a bind to a local port.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5159(F): The Windows Filtering Platform has blocked a bind to a local port.
@@ -73,7 +74,7 @@ This event is logged if the Windows Filtering Platform has blocked a bind to a l
 
 **Application Information**:
 
--   **Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process which was permitted to bind to the local port. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
+-   **Process ID** \[Type = Pointer\]: hexadecimal Process ID of the process that was permitted to bind to the local port. Process ID (PID) is a number used by the operating system to uniquely identify an active process. To see the PID for a specific process you can, for example, use Task Manager (Details tab, PID column):
 
     <img src="images/task-manager.png" alt="Task manager illustration" width="585" height="375" />
 
@@ -127,19 +128,18 @@ This event is logged if the Windows Filtering Platform has blocked a bind to a l
 
 **Filter Information:**
 
--   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID which blocks the application from binding to the port. By default, Windows firewall won't prevent a port from binding by an application, and if this application doesn’t match any filters, you will get value 0 in this field.
+-   **Filter Run-Time ID** \[Type = UInt64\]: unique filter ID that blocks the application from binding to the port. By default, Windows firewall won't prevent a port from binding by an application, and if this application doesn’t match any filters, you will get value 0 in this field.
 
-    To find specific Windows Filtering Platform filter by ID you need to execute the following command: **netsh wfp show filters**. As a result of this command, **filters.xml** file will be generated. You need to open this file and find the specific substring with the required filter ID (**&lt;filterId&gt;**)**,** for example:
+    To find a specific Windows Filtering Platform filter by ID, run the following command: **netsh wfp show filters**. As a result of this command, the **filters.xml** file will be generated. Open this file and find the specific substring with the required filter ID (**&lt;filterId&gt;**)**,** for example:
 
     <img src="images/filters-xml-file.png" alt="Filters.xml file illustration" width="840" height="176" />
 
--   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
+-   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](/windows/win32/fwp/application-layer-enforcement--ale-) layer name.
 
--   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find specific Windows Filtering Platform layer ID you need to execute the following command: **netsh wfp show state**. As result of this command **wfpstate.xml** file will be generated. You need to open this file and find specific substring with required layer ID (**&lt;layerId&gt;**)**,** for example:
+-   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find a specific Windows Filtering Platform layer ID, run the following command: **netsh wfp show state**. As a result of this command, the **wfpstate.xml** file will be generated. Open this file and find the specific substring with the required layer ID (**&lt;layerId&gt;**)**,** for example:
 
 <img src="images/wfpstate-xml.png" alt="Wfpstate xml illustration" width="1563" height="780" />
 
 ## Security Monitoring Recommendations
 
 -   There is no recommendation for this event in this document.
-

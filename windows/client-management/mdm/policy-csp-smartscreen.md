@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - SmartScreen
-description: Policy CSP - SmartScreen
+description: Use the Policy CSP - SmartScreen setting to allow IT Admins to control whether users are allowed to install apps from places other than the Store.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -88,7 +88,7 @@ Added in Windows 10, version 1703. Allows IT Admins to control whether users ar
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure App Install Control*
+-   GP Friendly name: *Configure App Install Control*
 -   GP name: *ConfigureAppInstallControl*
 -   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
 -   GP ADMX file name: *SmartScreen.admx*
@@ -154,7 +154,7 @@ Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen fo
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Windows Defender SmartScreen*
+-   GP Friendly name: *Configure Windows Defender SmartScreen*
 -   GP name: *ShellConfigureSmartScreen*
 -   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
 -   GP ADMX file name: *SmartScreen.admx*
@@ -220,7 +220,7 @@ Added in Windows 10, version 1703. Allows IT Admins to control whether users ca
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Windows Defender SmartScreen*
+-   GP Friendly name: *Configure Windows Defender SmartScreen*
 -   GP name: *ShellConfigureSmartScreen*
 -   GP element: *ShellConfigureSmartScreen_Dropdown*
 -   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
@@ -239,12 +239,14 @@ The following list shows the supported values:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

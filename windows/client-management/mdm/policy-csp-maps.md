@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Maps
-description: Policy CSP - Maps
+description: Use the Policy CSP - Maps setting to allow the download and update of map data over metered connections.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -145,7 +145,7 @@ After the policy is applied, you can verify the settings in the user interface i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off Automatic Download and Update of Map Data*
+-   GP Friendly name: *Turn off Automatic Download and Update of Map Data*
 -   GP name: *TurnOffAutoUpdate*
 -   GP path: *Windows Components/Maps*
 -   GP ADMX file name: *WinMaps.admx*
@@ -164,12 +164,14 @@ The following list shows the supported values:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

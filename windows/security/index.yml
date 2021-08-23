@@ -1,80 +1,38 @@
-### YamlMime:YamlDocument
+### YamlMime:Hub
 
-documentType: LandingData
-
-title: Windows 10 Enterprise Security
+title: Windows 10 Enterprise Security # < 60 chars
+summary: Secure corporate data and manage risk. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-bi | power-platform | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: windows
 
 metadata:
-
-  document_id: 
-
-  title: Windows 10 Enterprise Security
-
-  description: Learn about enterprise-grade security features for Windows 10.
-
-  keywords: protect, company, data, Windows, device, app, management, Microsoft365, e5, e3
-
+  title: Windows 10 Enterprise Security # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about enterprise-grade security features for Windows 10. # Required; article description that is displayed in search results. < 160 chars.
+  services: windows
+  ms.prod: windows
+  ms.topic: hub-page # Required
+  ms.collection: M365-security-compliance # Optional; Remove if no collection is used.
+  author: dansimp #Required; your GitHub user alias, with correct capitalization.
+  ms.author: dansimp #Required; microsoft alias of author; optional team alias.
+  ms.date: 01/08/2018 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
 
-  author: brianlic-msft
-
-  ms.author: brianlic
-
-  manager: brianlic
-
-  ms.date: 08/01/2018
-
-  ms.topic: article
-
-  ms.devlang: na
-
-sections:
-
-- items:
-
-  - type: markdown
-
-    text: Secure corporate data and manage risk. 
-
-- items:
-
-  - type: list
-
-    style: cards
-
-    className: cardsM
-
-    columns: 3
-
-    items:
-
-    - href: \windows\security\identity-protection\
-
-      html: <p>Deploy secure enterprise-grade authentication and access control to protect accounts and data</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_identity-protection.svg
-
-      title: Identity and access management
-
-    - href: \windows\security\threat-protection\
-
-      html: <p>Stop cyberthreats and quickly identify and respond to breaches</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_threat-protection.svg
-
-      title: Threat protection
-
-    - href: \windows\security\information-protection\
-
-      html: <p>Identify and secure critical data to prevent data loss</p>
-
-      image:
-
-        src: https://docs.microsoft.com/media/common/i_information-protection.svg
-
-      title: Information protection
-
+# productDirectory section (optional)
+productDirectory:
+  items:
+    # Card
+    - title: Identity and access management
+      # imageSrc should be square in ratio with no whitespace
+      imageSrc: https://docs.microsoft.com/media/common/i_identity-protection.svg
+      summary: Deploy secure enterprise-grade authentication and access control to protect accounts and data
+      url: ./identity-protection/index.md
+    # Card
+    - title: Threat protection
+      imageSrc: https://docs.microsoft.com/media/common/i_threat-protection.svg
+      summary: Stop cyberthreats and quickly identify and respond to breaches
+      url: ./threat-protection/index.md
+    # Card
+    - title: Information protection
+      imageSrc: https://docs.microsoft.com/media/common/i_information-protection.svg
+      summary: Identify and secure critical data to prevent data loss
+      url: ./information-protection/index.md

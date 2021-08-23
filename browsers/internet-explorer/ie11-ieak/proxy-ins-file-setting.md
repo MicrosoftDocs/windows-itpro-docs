@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Proxy .INS file to specify a proxy server
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Info about whether to use a proxy server. If yes, this also includes the host names for the proxy server.
 
 |Name |Value |Description |

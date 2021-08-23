@@ -1,6 +1,6 @@
 ---
 title: CertificateStore CSP
-description: CertificateStore CSP
+description: Use the The CertificateStore configuration service provider (CSP) to add secure socket layers (SSL), intermediate, and self-signed certificates.
 ms.assetid: 0fe28629-3cc3-42a0-91b3-3624c8462fd3
 ms.reviewer: 
 manager: dansimp
@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 02/28/2020
 ---
 
@@ -17,22 +17,102 @@ ms.date: 02/28/2020
 
 The CertificateStore configuration service provider is used to add secure socket layers (SSL), intermediate, and self-signed certificates.
 
-> **Note**   The CertificateStore configuration service provider does not support installing client certificates.
+> [!Note]
+> The CertificateStore configuration service provider does not support installing client certificates.
+> The Microsoft protocol version of Open Mobile Alliance (OMA) is case insensitive.
 
  
 
 For the CertificateStore CSP, you cannot use the Replace command unless the node already exists.
 
-The following diagram shows the CertificateStore configuration service provider management object in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
+The following shows the CertificateStore configuration service provider management object in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
 
-![provisioning\-csp\-certificatestore](images/provisioning-csp-certificatestore.png)
-
+```
+./Vendor/MSFT
+CertificateStore
+----ROOT
+--------*
+------------EncodedCertificate
+------------IssuedBy
+------------IssuedTo
+------------ValidFrom
+------------ValidTo
+------------TemplateName
+--------System
+------------*
+----------------EncodedCertificate
+----------------IssuedBy
+----------------IssuedTo
+----------------ValidFrom
+----------------ValidTo
+----------------TemplateName
+----MY
+--------User
+------------*
+----------------EncodedCertificate
+----------------IssuedBy
+----------------IssuedTo
+----------------ValidFrom
+----------------ValidTo
+----------------TemplateName
+--------SCEP
+------------*
+----------------Install
+--------------------ServerURL
+--------------------Challenge
+--------------------EKUMapping
+--------------------KeyUsage
+--------------------SubjectName
+--------------------KeyProtection
+--------------------RetryDelay
+--------------------RetryCount
+--------------------TemplateName
+--------------------KeyLength
+--------------------HashAlgrithm
+--------------------CAThumbPrint
+--------------------SubjectAlternativeNames
+--------------------ValidPeriod
+--------------------ValidPeriodUnit
+--------------------Enroll
+----------------CertThumbPrint
+----------------Status
+----------------ErrorCode
+--------WSTEP
+------------CertThumprint
+------------Renew
+----------------RenewPeriod
+----------------ServerURL
+----------------RetryInterval
+----------------ROBOSupport
+----------------Status
+----------------ErrorCode
+----------------LastRenewalAttemptTime (Added in Windows 10, version 1607)
+----------------RenewNow (Added in Windows 10, version 1607)
+----------------RetryAfterExpiryInterval (Added in Windows 10, version 1703)
+----CA
+--------*
+------------EncodedCertificate
+------------IssuedBy
+------------IssuedTo
+------------ValidFrom
+------------ValidTo
+------------TemplateName
+--------System
+------------*
+----------------EncodedCertificate
+----------------IssuedBy
+----------------IssuedTo
+----------------ValidFrom
+----------------ValidTo
+----------------TemplateName
+```
 <a href="" id="root-system"></a>**Root/System**  
 Defines the certificate store that contains root, or self-signed, certificates.
 
 Supported operation is Get.
 
-> **Note**  Root/System is case sensitive. Please use the RootCATrustedCertificates CSP moving forward for installing root certificates.
+> [!NOTE]
+> Root/System is case sensitive. Please use the RootCATrustedCertificates CSP moving forward for installing root certificates.
 
  
 
@@ -41,7 +121,8 @@ Defines the certificate store that contains cryptographic information, including
 
 Supported operation is Get.
 
-> **Note**  CA/System is case sensitive. Please use the RootCATrustedCertificates CSP moving forward for installing CA certificates.
+> [!NOTE]
+> CA/System is case sensitive. Please use the RootCATrustedCertificates CSP moving forward for installing CA certificates.
 
  
 
@@ -50,7 +131,8 @@ Defines the certificate store that contains public keys for client certificates.
 
 Supported operation is Get.
 
-> **Note**  My/User is case sensitive.
+> [!NOTE]
+> My/User is case sensitive.
 
  
 
@@ -59,7 +141,8 @@ Defines the certificate store that contains public key for client certificate. T
 
 Supported operation is Get.
 
-> **Note**  My/System is case sensitive.
+> [!NOTE]
+> My/System is case sensitive.
 
  
 
@@ -103,7 +186,8 @@ Required for Simple Certificate Enrollment Protocol (SCEP) certificate enrollmen
 
 Supported operation is Get.
 
-> **Note**  Please use the ClientCertificateInstall CSP to install SCEP certificates moving forward. All enhancements to SCEP will happen in that CSP.
+> [!NOTE]
+> Please use the ClientCertificateInstall CSP to install SCEP certificates moving forward. All enhancements to SCEP will happen in that CSP.
 
  
 
@@ -117,7 +201,8 @@ Required for SCEP certificate enrollment. Parent node to group SCEP certificate 
 
 Supported operations are Add, Replace, and Delete.
 
-> **Note**   Though the children nodes under Install support Replace commands, after the Exec command is sent to the device, the device takes the values that are set when the Exec command is accepted. You should not expect the node value change that occurs after the Exec command is accepted to impact the current undergoing enrollment. You should check the Status node value and make sure that the device is not at an unknown stage before changing the children node values.
+> [!NOTE]
+> Though the children nodes under Install support Replace commands, after the Exec command is sent to the device, the device takes the values that are set when the Exec command is accepted. You should not expect the node value change that occurs after the Exec command is accepted to impact the current undergoing enrollment. You should check the Status node value and make sure that the device is not at an unknown stage before changing the children node values.
 
  
 
@@ -148,7 +233,7 @@ Required. Specifies the subject name.
 
 The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”  ).
 
-For more details, see [CertNameToStrA function](https://docs.microsoft.com/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
+For more details, see [CertNameToStrA function](/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
 
 Value type is chr.
 
@@ -217,7 +302,8 @@ Valid values are one of the following:
 -   Months
 -   Years
 
-> **Note**   The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) of the SCEP server as part of certificate enrollment request. How this valid period is used to create the certificate depends on the MDM server.
+> [!NOTE]
+> The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) of the SCEP server as part of certificate enrollment request. How this valid period is used to create the certificate depends on the MDM server.
 
  
 
@@ -226,7 +312,8 @@ Optional. Specifies desired number of units used in validity period and subject 
 
 Supported operations are Get, Add, Delete, and Replace.
 
-> **Note**   The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) of the SCEP server as part of certificate enrollment request. How this valid period is used to create the certificate depends on the MDM server.
+> [!NOTE]
+> The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) of the SCEP server as part of certificate enrollment request. How this valid period is used to create the certificate depends on the MDM server.
 
  
 
@@ -283,7 +370,8 @@ Supported operation is Get.
 <a href="" id="my-wstep-renew-serverurl"></a>**My/WSTEP/Renew/ServerURL**  
 Optional. Specifies the URL of certificate renewal server. If this node does not exist, the client uses the initial certificate enrollment URL.
 
-> **Note**  The renewal process follows the same steps as device enrollment, which means that it starts with Discovery service, followed by Enrollment policy service, and then Enrollment web service.
+> [!NOTE]
+> The renewal process follows the same steps as device enrollment, which means that it starts with Discovery service, followed by Enrollment policy service, and then Enrollment web service.
 
  
 
@@ -296,7 +384,8 @@ The default value is 42 and the valid values are 1 – 1000. Value type is an in
 
 Supported operations are Add, Get, Delete, and Replace.
 
-> **Note**   When you set the renewal schedule over SyncML DM commands to ROBOSupport, RenewalPeriod, and RetryInterval, you must wrap them in Atomic commands.
+> [!NOTE]
+> When you set the renewal schedule over SyncML DM commands to ROBOSupport, RenewalPeriod, and RetryInterval, you must wrap them in Atomic commands.
 
  
 
@@ -311,7 +400,8 @@ The default value is 7 and the valid values are 1 – 1000 AND =< RenewalPeriod,
 
 Supported operations are Add, Get, Delete, and Replace.
 
-> **Note**   When you set the renewal schedule over SyncML DM commands to ROBOSupport, RenewalPeriod, and RetryInterval, you must wrap them in Atomic commands.
+> [!NOTE]
+> When you set the renewal schedule over SyncML DM commands to ROBOSupport, RenewalPeriod, and RetryInterval, you must wrap them in Atomic commands.
 
  
 
@@ -322,7 +412,8 @@ ROBO is the only supported renewal method for Windows 10. This value is ignored
 
 Supported operations are Add, Get, Delete, and Replace.
 
-> **Note**   When you set the renewal schedule over SyncML DM commands to ROBOSupport, RenewalPeriod, and RetryInterval, you must wrap them in Atomic commands.
+> [!NOTE]
+> When you set the renewal schedule over SyncML DM commands to ROBOSupport, RenewalPeriod, and RetryInterval, you must wrap them in Atomic commands.
 
  
 
@@ -636,11 +727,4 @@ Configure the device to automatically renew an MDM client certificate with the s
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
  
-
- 
-
-
-
-
-
 

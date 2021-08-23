@@ -2,7 +2,7 @@
 title: 5028(F) The Windows Firewall Service was unable to parse the new security policy. The service will continue with currently enforced policy. (Windows 10)
 description: Describes security event 5028(F) The Windows Firewall Service was unable to parse the new security policy. The service will continue with currently enforced policy.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5028(F): The Windows Firewall Service was unable to parse the new security policy. The service will continue with currently enforced policy.

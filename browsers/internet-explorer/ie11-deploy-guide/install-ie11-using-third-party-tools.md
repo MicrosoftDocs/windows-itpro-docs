@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Install Internet Explorer 11 (IE11) using third-party tools
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You can install Internet Explorer 11 (IE11) using third-party electronic software distribution (ESD) systems and these command-line options:
 
 ## Setup Modes

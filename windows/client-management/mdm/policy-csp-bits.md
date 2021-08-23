@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - BITS
-description: Policy CSP - BITS
+description: Use StartTime, EndTime and Transfer rate together to define the BITS bandwidth-throttling schedule and transfer rate. 
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -13,10 +13,6 @@ manager: dansimp
 ---
 
 # Policy CSP - BITS
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 
 The following bandwidth policies are used together to define the bandwidth-throttling schedule and transfer rate. 
 
@@ -118,7 +114,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Limit the maximum network bandwidth for BITS background transfers*
+-   GP Friendly name: *Limit the maximum network bandwidth for BITS background transfers*
 -   GP name: *BITS_MaxBandwidth*
 -   GP element: *BITS_BandwidthLimitSchedTo*
 -   GP path: *Network/Background Intelligent Transfer Service (BITS)*
@@ -201,7 +197,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Limit the maximum network bandwidth for BITS background transfers*
+-   GP Friendly name: *Limit the maximum network bandwidth for BITS background transfers*
 -   GP name: *BITS_MaxBandwidth*
 -   GP element: *BITS_BandwidthLimitSchedFrom*
 -   GP path: *Network/Background Intelligent Transfer Service (BITS)*
@@ -284,7 +280,7 @@ Consider using this setting to prevent BITS transfers from competing for network
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Limit the maximum network bandwidth for BITS background transfers*
+-   GP Friendly name: *Limit the maximum network bandwidth for BITS background transfers*
 -   GP name: *BITS_MaxBandwidth*
 -   GP element: *BITS_MaxTransferRateText*
 -   GP path: *Network/Background Intelligent Transfer Service (BITS)*
@@ -362,7 +358,7 @@ For example, you can specify that background jobs are by default to transfer onl
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Set default download behavior for BITS jobs on costed networks*
+-   GP Friendly name: *Set default download behavior for BITS jobs on costed networks*
 -   GP name: *BITS_SetTransferPolicyOnCostedNetwork*
 -   GP element: *BITS_TransferPolicyNormalPriorityValue*
 -   GP path: *Network/Background Intelligent Transfer Service (BITS)*
@@ -440,7 +436,7 @@ For example, you can specify that foreground jobs are by default to transfer onl
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Set default download behavior for BITS jobs on costed networks*
+-   GP Friendly name: *Set default download behavior for BITS jobs on costed networks*
 -   GP name: *BITS_SetTransferPolicyOnCostedNetwork*
 -   GP element: *BITS_TransferPolicyForegroundPriorityValue*
 -   GP path: *Network/Background Intelligent Transfer Service (BITS)*
@@ -521,7 +517,7 @@ If you disable or do not configure this policy setting, the default value of 90 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Timeout for inactive BITS jobs*
+-   GP Friendly name: *Timeout for inactive BITS jobs*
 -   GP name: *BITS_Job_Timeout*
 -   GP element: *BITS_Job_Timeout_Time*
 -   GP path: *Network/Background Intelligent Transfer Service (BITS)*
@@ -546,12 +542,14 @@ Supported values range: 0 - 999
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

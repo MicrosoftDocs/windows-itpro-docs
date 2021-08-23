@@ -5,21 +5,30 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 03/27/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Accounts CSP 
+# Accounts Configuration Service Provider 
 
 
 The Accounts configuration service provider (CSP) is used by the enterprise (1) to rename a device, (2) to create a new local Windows account and join it to a local user group. This CSP was added in Windows 10, version 1803.
 
 
-The following diagram shows the Accounts configuration service provider in tree format.
+The following shows the Accounts configuration service provider in tree format.
 
-![Accounts CSP diagram](images/provisioning-csp-accounts.png) 
+```
+./Device/Vendor/MSFT
+Accounts
+----Domain
+--------ComputerName
+----Users
+--------UserName
+------------Password
+------------LocalUserGroup
+```
 
 <a href="" id="accounts"></a>**./Device/Vendor/MSFT/Accounts**  
 Root node.
@@ -40,7 +49,7 @@ Available naming macros:
 Supported operation is Add.
 
 > [!Note]
-> For desktop PCs on the next major release of Windows 10 or later, use the **Ext/Microsoft/DNSComputerName** node in [DevDetail CSP](devdetail-csp.md).
+> For desktop PCs on Windows 10, version 2004 or later, use the **Ext/Microsoft/DNSComputerName** node in [DevDetail CSP](devdetail-csp.md).
 
 <a href="" id="users"></a>**Users**  
 Interior node for the user account information.
@@ -52,6 +61,7 @@ This node specifies the username for a new local user account.  This setting can
 This node specifies the password for a new local user account.  This setting can be managed remotely. 
 
 Supported operation is Add.
+GET operation is not supported.  This setting will report as failed when deployed from the Endpoint Manager.
 
 <a href="" id="users-username-localusergroup"></a>**Users/_UserName_/LocalUserGroup**  
 This optional node specifies the local user group that a local user account should be joined to.  If the node is not set, the new local user account is joined just to the Standard Users group.  Set the value to 2 for Administrators group. This setting can be managed remotely.

@@ -34,8 +34,10 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "audience": "ITPro",
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
+      "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.technology": "windows",
       "ms.topic": "article",
       "feedback_system": "GitHub",
@@ -47,7 +49,16 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows 10 for IT Pros"
+      "titleSuffix": "Windows 10 for IT Pros",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
     "fileMetadata": {},
     "template": [],

@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - AttachmentManager
-description: Policy CSP - AttachmentManager
+description: Manage Windows marks file attachments with information about their zone of origin, such as restricted, internet, intranet, local.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -98,7 +98,7 @@ If you do not configure this policy setting, Windows marks file attachments with
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not preserve zone information in file attachments*
+-   GP Friendly name: *Do not preserve zone information in file attachments*
 -   GP name: *AM_MarkZoneOnSavedAtttachments*
 -   GP path: *Windows Components/Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
@@ -170,7 +170,7 @@ If you do not configure this policy setting, Windows hides the check box and Unb
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide mechanisms to remove zone information*
+-   GP Friendly name: *Hide mechanisms to remove zone information*
 -   GP name: *AM_RemoveZoneInfo*
 -   GP path: *Windows Components/Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
@@ -253,12 +253,14 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

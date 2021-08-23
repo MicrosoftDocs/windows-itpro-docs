@@ -1,6 +1,6 @@
 ---
 title: Deployment considerations for Windows To Go (Windows 10)
-description: Deployment considerations for Windows To Go
+description: Learn about deployment considerations for Windows To Go, such as the boot experience, deployment methods, and tools that you can use with Windows To Go.
 ms.assetid: dcfc5d96-b96b-44cd-ab65-416b5611c65e
 ms.reviewer: 
 manager: laurawi
@@ -13,6 +13,7 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deployment considerations for Windows To Go
@@ -23,7 +24,7 @@ ms.topic: article
 - Windows 10
 
 > [!IMPORTANT]
-> Windows To Go is no longer being developed. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
+> Windows To Go is removed in Windows 10, version 2004 and later operating systems. The feature does not support feature updates and therefore does not enable you to stay current. It also requires a specific type of USB that is no longer supported by many OEMs.
 
 From the start, Windows To Go was designed to minimize differences between the user experience of working on a laptop and Windows To Go booted from a USB drive. Given that Windows To Go was designed as an enterprise solution, extra consideration was given to the deployment workflows that enterprises already have in place. Additionally, there has been a focus on minimizing the number of differences in deployment between Windows To Go workspaces and laptop PCs.
 
@@ -51,12 +52,12 @@ When a Windows To Go workspace is first used at the workplace, the Windows To Go
 
 ![initial boot off-premises](images/wtg-first-boot-home.gif)
 
-When the Windows To Go workspace is going to be used first on an off-premises computer, such as one at the employee’s home, then the IT professional preparing the Windows To Go drives should configure the drive to be able to connect to organizational resources and to maintain the security of the workspace. In this situation, the Windows To Go workspace needs to be configured for offline domain join and BitLocker needs to be enabled before the workspace has been initialized.
+When the Windows To Go workspace is going to be used first on an off-premises computer, such as one at the employee's home, then the IT professional preparing the Windows To Go drives should configure the drive to be able to connect to organizational resources and to maintain the security of the workspace. In this situation, the Windows To Go workspace needs to be configured for offline domain join and BitLocker needs to be enabled before the workspace has been initialized.
 
 > [!TIP]
-> Applying BitLocker Drive Encryption to the drives before provisioning is a much faster process than encrypting the drives after data has already been stored on them due to a new feature called used-disk space only encryption. For more information, see [What's New in BitLocker](https://go.microsoft.com/fwlink/p/?LinkId=619076).
+> Applying BitLocker Drive Encryption to the drives before provisioning is a much faster process than encrypting the drives after data has already been stored on them due to a new feature called used-disk space only encryption. For more information, see [What's New in BitLocker](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn306081(v=ws.11)).
 
-DirectAccess can be used to ensure that the user can login with their domain credentials without needing a local account. For instructions on setting up a DirectAccess solution, for a small pilot deployment see [Deploy a Single Remote Access Server using the Getting Started Wizard](https://go.microsoft.com/fwlink/p/?LinkId=619077) for a larger scale deployment, see [Deploy Remote Access in an Enterprise](https://go.microsoft.com/fwlink/p/?LinkId=619078). If you do not want to use DirectAccess as an alternative users could log on using a local user account on the Windows To Go workspace and then use a virtual private network for remote access to your organizational network.
+DirectAccess can be used to ensure that the user can log in with their domain credentials without needing a local account. For instructions on setting up a DirectAccess solution, for a small pilot deployment see [Deploy a Single Remote Access Server using the Getting Started Wizard](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831520(v=ws.11)) for a larger scale deployment, see [Deploy Remote Access in an Enterprise](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj134200(v=ws.11)). If you do not want to use DirectAccess as an alternative user could log on using a local user account on the Windows To Go workspace and then use a virtual private network for remote access to your organizational network.
 
 ### <a href="" id="wtg-imagedep"></a>Image deployment and drive provisioning considerations
 
@@ -217,7 +218,7 @@ The following list of commonly used Wi-Fi network adapters that are not supporte
 </tbody>
 </table>
 
-IT administrators that want to target Windows To Go images for specific systems should test their images to ensure that the necessary system drivers are in the image, especially for critical functionality like Wi-Fi that is not supported by class drivers. Some consumer devices require OEM specific driver packages, which may not be available on Windows Update. For more information on how to add a driver to a Windows Image, please refer to the [Basic Windows Deployment Step-by-Step Guide](https://go.microsoft.com/fwlink/p/?LinkId=619079).
+IT administrators that want to target Windows To Go images for specific systems should test their images to ensure that the necessary system drivers are in the image, especially for critical functionality like Wi-Fi that is not supported by class drivers. Some consumer devices require OEM-specific driver packages, which may not be available on Windows Update. For more information on how to add a driver to a Windows Image, please refer to the [Basic Windows Deployment Step-by-Step Guide](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825212(v=win.10)).
 
 ### <a href="" id="wtg-appinstall"></a>Application installation and domain join
 
@@ -240,7 +241,7 @@ The use of the Store on Windows To Go workspaces that are running Windows 8 can 
 
 - **Disallow standby sleep states (S1-S3) when starting from a Windows To Go workspace**
 
-    This policy setting specifies whether the PC can use standby sleep states (S1–S3) when started from a Windows To Go workspace. The Sleep state also presents a unique challenge to Windows To Go users. When a computer goes to sleep, it appears as if it is shut down. It could be very easy for a user to think that a Windows To Go workspace in sleep mode was actually shut down and they could remove the Windows To Go drive and take it home. Removing the Windows To Go drive in this scenario is equivalent to an unclean shutdown which may result in the loss of unsaved user data or the corruption on the drive. Moreover, if the user now boots the drive on another PC and brings it back to the first PC which still happens to be in the sleep state, it will lead to an arbitrary crash and eventually corruption of the drive and result in the workspace becoming unusable. If you enable this policy setting, the Windows To Go workspace cannot use the standby states to cause the PC to enter sleep mode. If you disable or do not configure this policy setting, the Windows To Go workspace can place the PC in sleep mode.
+    This policy setting specifies whether the PC can use standby sleep states (S1–S3) when started from a Windows To Go workspace. The Sleep state also presents a unique challenge to Windows To Go users. When a computer goes to sleep, it appears as if it is shut down. It could be very easy for a user to think that a Windows To Go workspace in sleep mode was actually shut down and they could remove the Windows To Go drive and take it home. Removing the Windows To Go drive in this scenario is equivalent to an unclean shutdown, which may result in the loss of unsaved user data or the corruption on the drive. Moreover, if the user now boots the drive on another PC and brings it back to the first PC, which still happens to be in the sleep state, it will lead to an arbitrary crash and eventually corruption of the drive and result in the workspace becoming unusable. If you enable this policy setting, the Windows To Go workspace cannot use the standby states to cause the PC to enter sleep mode. If you disable or do not configure this policy setting, the Windows To Go workspace can place the PC in sleep mode.
 
 **Settings for host PCs**
 
@@ -266,7 +267,7 @@ Windows supports two types of PC firmware: Unified Extensible Firmware Interface
 
 ![bios layout](images/wtg-mbr-bios.gif)![uefi layout](images/wtg-gpt-uefi.gif)
 
-This presented a unique challenge for Windows To Go because the firmware type is not easily determined by end-users—a UEFI computer looks just like a legacy BIOS computer and Windows To Go must boot on both types of firmware.
+This presented a unique challenge for Windows To Go because the firmware type is not easily determined by end users—a UEFI computer looks just like a legacy BIOS computer and Windows To Go must boot on both types of firmware.
 
 To enable booting Windows To Go on both types of firmware, a new disk layout is provided for Windows 8 or later that contains both sets of boot components on a FAT32 system partition and a new command-line option was added to bcdboot.exe to support this configuration. The **/f** option is used with the **bcdboot /s** command to specify the firmware type of the target system partition by appending either **UEFI**, **BIOS** or **ALL**. When creating Windows To Go drives manually you must use the **ALL** parameter to provide the Windows To Go drive the ability to boot on both types of firmware. For example, on volume H: (your Windows To Go USB drive letter), you would use the command **bcdboot C:\\windows /s H: /f ALL**. The following diagram illustrates the disk layout that results from that command:
 
@@ -280,7 +281,7 @@ Windows To Go Startup Options is a setting available on Windows 10-based PCs tha
 
 **To configure Windows To Go startup options**
 
-1. On the Start screen, type, type **Windows To Go Startup Options**, click **Settings** and then press Enter.
+1. On the Start screen, type, type **Windows To Go Startup Options**, click **Settings** and, then press Enter.
 
   ![windows to go startup options](images/wtg-startup-options.gif)
 
@@ -301,4 +302,4 @@ If you choose to not use the Windows To Go startup options or are using a PC run
 [Windows To Go: feature overview](windows-to-go-overview.md)<br>
 [Prepare your organization for Windows To Go](prepare-your-organization-for-windows-to-go.md)<br>
 [Security and data protection considerations for Windows To Go](security-and-data-protection-considerations-for-windows-to-go.md)<br>
-[Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.md)
+[Windows To Go: frequently asked questions](windows-to-go-frequently-asked-questions.yml)

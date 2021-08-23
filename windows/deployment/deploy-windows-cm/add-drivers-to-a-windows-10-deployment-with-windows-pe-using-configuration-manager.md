@@ -1,5 +1,5 @@
 ---
-title: Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager (Windows 10)
+title: Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager
 description: Learn how to configure the Windows Preinstallation Environment (Windows PE) to include required network and storage drivers.
 ms.assetid: 97b3ea46-28d9-407e-8c42-ded2e45e8d5c
 ms.reviewer: 
@@ -13,6 +13,7 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager
@@ -51,10 +52,10 @@ On **CM01**:
 6. In the popup window that appears, click **Yes** to automatically update the distribution point.
 7. Click **Next**, wait for the image to be updated, and then click **Close**.
 
-  ![Add drivers to Windows PE](../images/fig21-add-drivers1.png "Add drivers to Windows PE")<br>
-  ![Add drivers to Windows PE](../images/fig21-add-drivers2.png "Add drivers to Windows PE")<br>
-  ![Add drivers to Windows PE](../images/fig21-add-drivers3.png "Add drivers to Windows PE")<br>
-  ![Add drivers to Windows PE](../images/fig21-add-drivers4.png "Add drivers to Windows PE")
+  ![Add drivers to Windows PE step 1](../images/fig21-add-drivers1.png)<br>
+  ![Add drivers to Windows PE step 2](../images/fig21-add-drivers2.png)<br>
+  ![Add drivers to Windows PE step 3](../images/fig21-add-drivers3.png)<br>
+  ![Add drivers to Windows PE step 4](../images/fig21-add-drivers4.png)
 
   Add drivers to Windows PE
 
@@ -64,7 +65,7 @@ This section illustrates how to add drivers for Windows 10 using the HP EliteBoo
 
 For the purposes of this section, we assume that you have downloaded the Windows 10 drivers for the HP EliteBook 8560w model and copied them to the **D:\Sources$\OSD\DriverSources\Windows 10 x64\Hewlett-Packard\HP EliteBook 8560w** folder on CM01.
 
-![Drivers](../images/cm01-drivers-windows.png)
+![Drivers in Windows](../images/cm01-drivers-windows.png)
 
 Driver folder structure on CM01
 
@@ -104,7 +105,7 @@ Next, see [Create a task sequence with Configuration Manager and MDT](create-a-t
 [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
 [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
 [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Create a task sequence with Configuration Manager and MDT](./create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
 [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
 [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>

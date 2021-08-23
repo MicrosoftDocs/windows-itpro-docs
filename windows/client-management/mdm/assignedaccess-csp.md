@@ -8,19 +8,17 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 09/18/2018
 ---
 
 # AssignedAccess CSP
 
-**Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.**
-
 The AssignedAccess configuration service provider (CSP) is used to set the device to run in kiosk mode. Once the CSP has been executed, then the next user login that is associated with the kiosk mode puts the device into the kiosk mode running the application specified in the CSP configuration.
 
-For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](https://go.microsoft.com/fwlink/p/?LinkID=722211)
+For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](/windows/configuration/kiosk-single-app)
 
- In Windows 10, version 1709, the AssignedAccess configuration service provider (CSP) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For a step-by-step guide, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps).
+ In Windows 10, version 1709, the AssignedAccess configuration service provider (CSP) has been expanded to make it easy for administrators to create kiosks that run more than one app. You can configure multi-app kiosks using a provisioning package. For a step-by-step guide, see [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps).
 
 > [!Warning]
 > You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.
@@ -31,17 +29,24 @@ For a step-by-step guide for setting up devices to run in kiosk mode, see [Set u
 > [!Note]
 > The AssignedAccess CSP is supported in Windows 10 Enterprise and Windows 10 Education. Starting from Windows 10, version 1709 it is also supported in Windows 10 Pro and Windows 10 S. Starting in Windows 10, version 1803, it is also supported in Windows Holographic for Business edition.
 
-The following diagram shows the AssignedAccess configuration service provider in tree format
+The following shows the AssignedAccess configuration service provider in tree format
 
-![assignedaccess csp diagram](images/provisioning-csp-assignedaccess.png)
-
+```
+./Vendor/MSFT
+AssignedAccess
+----KioskModeApp
+----Configuration (Added in Windows 10, version 1709) 
+----Status (Added in Windows 10, version 1803)
+----ShellLauncher (Added in Windows 10, version 1803)
+----StatusConfiguration (Added in Windows 10, version 1803)
+```
 <a href="" id="--vendor-msft-assignedaccess"></a>**./Device/Vendor/MSFT/AssignedAccess**
 Root node for the CSP.
 
 <a href="" id="assignedaccess-kioskmodeapp"></a>**./Device/Vendor/MSFT/AssignedAccess/KioskModeApp**
-A JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app. For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](https://docs.microsoft.com/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
+A JSON string that contains the user account name and Application User Model ID (AUMID) of the Kiosk mode app. For more information about how to get the AUMID, see [Find the Application User Model ID of an installed app](/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app).
 
-For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](https://go.microsoft.com/fwlink/p/?LinkID=722211)
+For a step-by-step guide for setting up devices to run in kiosk mode, see [Set up a kiosk on Windows 10 Pro, Enterprise, or Education.](/windows/configuration/kiosk-single-app)
 
 > [!Note]
 > In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
@@ -55,7 +60,7 @@ Starting in Windows 10, version 1607, you can use a provisioned app to configur
 
 Here's an example:
 
-``` syntax
+```json
 {"Account":"contoso\\kioskuser","AUMID":"Microsoft.Windows.Contoso_cw5n1h2txyewy!Microsoft.ContosoApp.ContosoApp"}
 ```
 
@@ -75,7 +80,7 @@ For a local account, the domain name should be the device name. When Get is exec
 The supported operations are Add, Delete, Get and Replace. When there's no configuration, the Get and Delete methods fail. When there's already a configuration for kiosk mode app, the Add method fails. The data pattern for Add and Replace is the same.
 
 <a href="" id="assignedaccess-configuration"></a>**./Device/Vendor/MSFT/AssignedAccess/Configuration**
-Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps). Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd).
+Added in Windows 10, version 1709. Specifies the settings that you can configure in the kiosk or device. This node accepts an AssignedAccessConfiguration xml as input to configure the device experience. For details about the configuration settings in the XML, see [Create a Windows 10 kiosk that runs multiple apps](/windows/configuration/lock-down-windows-10-to-specific-apps). Here is the schema for the [AssignedAccessConfiguration](#assignedaccessconfiguration-xsd).
 
 > [!Note]
 > In Windows 10, version 1803 the Configuration node introduces single app kiosk profile to replace KioskModeApp CSP node. KioskModeApp node will be deprecated soon, so you should use the single app kiosk profile in config xml for Configuration node to configure public-facing single app Kiosk.
@@ -99,7 +104,8 @@ In Windows 10, version 1803, Assigned Access runtime status only supports monito
 | KioskModeAppNotFound | This occurs when the kiosk app is not deployed to the machine. |
 | KioskModeAppActivationFailure | This happens when the assigned access controller detects the process terminated unexpectedly after exceeding the max retry. |
 
-Note that status codes available in the Status payload correspond to a specific KioskModeAppRuntimeStatus.
+> [!NOTE]
+> Status codes available in the Status payload correspond to a specific KioskModeAppRuntimeStatus.
 
 |Status code  | KioskModeAppRuntimeStatus |
 |---------|---------|
@@ -118,7 +124,8 @@ In Windows 10, version 1809, Assigned Access runtime status supports monitoring 
 |ActivationFailed|The AssignedAccess account (kiosk or multi-app) failed to sign in.|
 |AppNoResponse|The kiosk app launched successfully but is now unresponsive.|
 
-Note that status codes available in the Status payload correspond to a specific AssignedAccessRuntimeStatus.
+> [!NOTE]
+> Status codes available in the Status payload correspond to a specific AssignedAccessRuntimeStatus.
 
 |Status code|AssignedAccessRuntimeStatus|
 |---|---|
@@ -135,7 +142,7 @@ Additionally, the Status payload includes the following fields:
 Supported operation is Get.
 
 <a href="" id="assignedaccess-shelllauncher"></a>**./Device/Vendor/MSFT/AssignedAccess/ShellLauncher**
-Added in Windows 10,version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema. Shell Launcher V2 is introduced in Windows 10, version 1903 to support both UWP and Win32 apps as the custom shell. For more information, see [Shell Launcher](https://docs.microsoft.com/windows/configuration/kiosk-shelllauncher).
+Added in Windows 10,version 1803. This node accepts a ShellLauncherConfiguration xml as input. Click [link](#shelllauncherconfiguration-xsd) to see the schema. Shell Launcher V2 is introduced in Windows 10, version 1903 to support both UWP and Win32 apps as the custom shell. For more information, see [Shell Launcher](/windows/configuration/kiosk-shelllauncher).
 
 > [!Note]
 > You cannot set both ShellLauncher and KioskModeApp at the same time on the device.
@@ -575,7 +582,7 @@ Escape and CDATA are mechanisms when handling xml in xml. Consider it’s a tran
 
 This example shows escaped XML of the Data node.
 
-```
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncBody>
         <Add>
@@ -644,8 +651,10 @@ This example shows escaped XML of the Data node.
     </SyncBody>
 </SyncML>
 ```
+
 This example shows escaped XML of the Data node.
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncBody>
         <Replace>
@@ -716,7 +725,8 @@ This example shows escaped XML of the Data node.
 ```
 
 This example uses CData for the XML.
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
     <SyncBody>
         <Add>
@@ -787,7 +797,8 @@ This example uses CData for the XML.
 ```
 
 Example of Get command that returns the configuration in the device.
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
        <Get>
@@ -804,7 +815,8 @@ Example of Get command that returns the configuration in the device.
 ```
 
 Example of the Delete command.
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
    <SyncBody>
        <Delete>
@@ -1124,6 +1136,7 @@ Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. 
     </xs:element>
 </xs:schema>
 ```
+
 ### Shell Launcher V2 XSD
 
 ```xml
@@ -1153,7 +1166,8 @@ Shell Launcher V2 uses a separate XSD and namespace for backward compatibility. 
 ## ShellLauncherConfiguration examples
 
 ShellLauncherConfiguration Add
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Add>
@@ -1222,7 +1236,8 @@ ShellLauncherConfiguration Add
 ```
 
 ShellLauncherConfiguration Add AutoLogon
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Add>
@@ -1270,7 +1285,8 @@ ShellLauncherConfiguration Add AutoLogon
 ```
 
 ShellLauncher V2 Add
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Add>
@@ -1325,7 +1341,8 @@ xmlns:V2="http://schemas.microsoft.com/ShellLauncher/2019/Configuration">
 ```
 
 ShellLauncherConfiguration Get
-```
+
+```xml
 <SyncML xmlns='SYNCML:SYNCML1.2'>
   <SyncBody>
     <Get>
@@ -1405,7 +1422,7 @@ ShellLauncherConfiguration Get
 
 ## Windows Holographic for Business edition example
 
-This example configures the following apps: Skype, Learning, Feedback Hub, and Calibration, for first line workers. Use this XML in a provisioning package using Windows Configuration Designer. For instructions, see [Configure HoloLens using a provisioning package](https://docs.microsoft.com/hololens/hololens-provisioning).
+This example configures the following apps: Skype, Learning, Feedback Hub, and Calibration, for first line workers. Use this XML in a provisioning package using Windows Configuration Designer. For instructions, see [Configure HoloLens using a provisioning package](/hololens/hololens-provisioning).
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

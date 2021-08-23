@@ -1,6 +1,6 @@
 ---
 title: Reboot CSP
-description: Reboot CSP
+description: Learn how the Reboot configuration service provider (CSP) is used to configure reboot settings.
 ms.assetid: 4E3F1225-BBAD-40F5-A1AB-FF221B6BAF48
 ms.reviewer: 
 manager: dansimp
@@ -17,10 +17,15 @@ ms.date: 06/26/2017
 
 The Reboot configuration service provider is used to configure reboot settings.
 
-The following diagram shows the Reboot configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
-
-![reboot](images/reboot-csp.png)
-
+The following shows the Reboot configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+```
+./Device/Vendor/MSFT
+Reboot
+----RebootNow
+----Schedule
+--------Single
+--------DailyRecurrent
+```
 <a href="" id="--vendor-msft-reboot"></a>**./Vendor/MSFT/Reboot**  
 <p style="margin-left: 20px">The root node for the Reboot configuration service provider.</p>
 

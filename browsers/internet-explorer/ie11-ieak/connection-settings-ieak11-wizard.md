@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Use the Connection Settings page in the IEAK 11 Wizard
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 The **Connection Settings** page of the Internet Explorer Administration Kit (IEAK 11) Customization Wizard lets you import the connection settings from your computer, to preset the connection settings on your employee’s computers.
 
 **Note**<br>Using the options on the **Additional Settings** page of the wizard, you can let your employees change their connection settings. For more information see the [Additional Settings](additional-settings-ieak11-wizard.md) page. You can also customize additional connection settings using the **Automatic Configuration** page in the wizard. For more information see the [Automatic Configuration](auto-config-ieak11-wizard.md) page.

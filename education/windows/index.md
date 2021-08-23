@@ -46,18 +46,18 @@ ms.date: 10/13/2017
 
 Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in an academic environment.
 
-<p><b><a href="https://technet.microsoft.com/library/dn645509.aspx" target="_blank">Windows 8.1 deployment planning</a></b><br />Explore key considerations and questions that should be answered when planning for Windows 8.1 deployment.</p>
-<p><b><a href="https://technet.microsoft.com/library/dn645528.aspx" target="_blank">Windows 8.1 deployment to PCs</a></b><br />Get an overview of Windows 8.1 deployment to PCs in an educational environment.</p>
-<p><b><a href="https://technet.microsoft.com/library/dn645510.aspx" target="_blank">BYOD</a></b><br />Explore Bring Your Own Device (BYOD) considerations, including device types, infrastructure, and deployment models.</p>
-<p><b><a href="https://technet.microsoft.com/library/dn645488.aspx" target="_blank">Deploying Windows RT 8.1</a></b><br />Get step-by-step instructions on how to configure and deploy Windows RT devices (like Surface and other tablets) in educational environments.</p>
-<p><b><a href="https://technet.microsoft.com/library/dn645483.aspx" target="_blank">Virtual Desktop Infrastructure</a></b><br />Learn how to address challenges related to BYOD scenarios using Virtual Desktop Infrastructure (VDI).</p>
-<p><b><a href="https://technet.microsoft.com/library/dn645532.aspx" target="_blank">Microsoft Store apps</a></b><br />Explore Microsoft Store app deployment strategies and considerations for educational institutions running Windows 8.1.</p>
-<p><b><a href="https://technet.microsoft.com/library/dn645486.aspx" target="_blank">Windows To Go</a></b><br />Learn about the benefits, limitations, and processes involved in deploying Windows To Go.</p>
+<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645509(v=ws.11)" target="_blank">Windows 8.1 deployment planning</a></b><br />Explore key considerations and questions that should be answered when planning for Windows 8.1 deployment.</p>
+<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645528(v=ws.11)" target="_blank">Windows 8.1 deployment to PCs</a></b><br />Get an overview of Windows 8.1 deployment to PCs in an educational environment.</p>
+<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645510(v=ws.11)" target="_blank">BYOD</a></b><br />Explore Bring Your Own Device (BYOD) considerations, including device types, infrastructure, and deployment models.</p>
+<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645488(v=ws.11)" target="_blank">Deploying Windows RT 8.1</a></b><br />Get step-by-step instructions on how to configure and deploy Windows RT devices (like Surface and other tablets) in educational environments.</p>
+<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645483(v=ws.11)" target="_blank">Virtual Desktop Infrastructure</a></b><br />Learn how to address challenges related to BYOD scenarios using Virtual Desktop Infrastructure (VDI).</p>
+<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645532(v=ws.11)" target="_blank">Microsoft Store apps</a></b><br />Explore Microsoft Store app deployment strategies and considerations for educational institutions running Windows 8.1.</p>
+<p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645486(v=ws.11)" target="_blank">Windows To Go</a></b><br />Learn about the benefits, limitations, and processes involved in deploying Windows To Go.</p>
 
 ## Related topics
-- [Microsoft Education documentation and resources](https://docs.microsoft.com/education)
-- [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/index)
+- [Microsoft Education documentation and resources](/education)
+- [Windows 10 and Windows 10 Mobile](/windows/windows-10/)
 
 <!--
-<p><b><a href="https://technet.microsoft.com/windows/mt574244" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>
+<p><b><a href="/education/" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>
 -->

@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 06/26/2017
 ---
 
@@ -19,37 +19,37 @@ Here's a step-by-step guide to adding an Azure Active Directory tenant, adding a
 > **Note**  If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Azure AD. For step-by-step guide to register this free subscription, see [Register your free Azure Active Directory subscription.](#register-your-free-azure-active-directory-subscription)
 
 
-1. Sign-up for Azure AD tenant from [this website](https://account.windowsazure.com/organization) by creating an administrator account for your organization.
+1. Sign up for Azure AD tenant from [this website](https://account.windowsazure.com/organization) by creating an administrator account for your organization.
 
    ![sign up for azure ad tenant](images/azure-ad-add-tenant1.png)
 
-2. Enter the information for your organization. Click **check availability** to verify that domain name that you selected is available.
+2. Enter the information for your organization. Select **check availability** to verify that domain name that you selected is available.
 
    ![sign up for azure ad](images/azure-ad-add-tenant2.png)
 
-3. Complete the login and country information. You must provide a valid phone number, then click **Send text message** or **Call me**.
+3. Complete the login and country information. Enter a valid phone number, then select **Send text message** or **Call me**.
 
    ![create azure account](images/azure-ad-add-tenant3.png)
 
-4. Enter the code that you receive and then click **Verify code**. After the code is verified and the continue button turns green, click **continue**.
+4. Enter the code that you receive and then select **Verify code**. After the code is verified and the continue button turns green, select **continue**.
 
    ![add aad tenant](images/azure-ad-add-tenant3-b.png)
 
-5. After you finish creating your Azure account, you are ready to add an Azure AD subscription.
+5. After you finish creating your Azure account, you can add an Azure AD subscription.
 
-   If you don't have a paid subscription to any Microsoft service, you can purchase an Azure AD premium subscription. Go to Office 356 portal, <https://portal.office.com/> and then sign in using the admin account that you just created in Step 4 (for example, user1@contosoltd.onmicrosoftcom).
+   If you don't have a paid subscription to any Microsoft service, you can purchase an Azure AD premium subscription. Go to the Office 356 portal at https://portal.office.com/, and then sign in using the admin account that you created in Step 4 (for example, user1@contosoltd.onmicrosoftcom).
 
    ![login to office 365](images/azure-ad-add-tenant4.png)
 
-6. Click **Install software**.
+6. Select **Install software**.
 
    ![login to office 365](images/azure-ad-add-tenant5.png)
 
-7. In the Office 365 portal, select **Purchase Services** from the left nagivation.
+7. In the Microsoft 365 admin center, select **Purchase Services** from the left navigation.
 
    ![purchase service option in admin center menu](images/azure-ad-add-tenant6.png)
 
-8. On the **Purchase services** page, scroll down until you see **Azure Active Directory Premium**, then click to purchase.
+8. On the **Purchase services** page, scroll down until you see **Azure Active Directory Premium**, then select to purchase.
 
    ![azure active directory option in purchase services page](images/azure-ad-add-tenant7.png)
 
@@ -57,7 +57,7 @@ Here's a step-by-step guide to adding an Azure Active Directory tenant, adding a
 
    ![azure active directory premium payment page](images/azure-ad-add-tenant8.png)
 
-10. After the purchase is completed, you can login to your Office 365 Admin Portal and you will see the **Azure AD** option from the Admin drop-down menu along with other services (SharePoint, Exchange, etc...).
+10. After the purchase is completed, you can log in to your Office 365 Admin Portal and you will see the **Azure AD** option from the Admin drop-down menu along with other services (SharePoint, Exchange, etc....).
 
     ![admin center left navigation menu](images/azure-ad-add-tenant9.png)
 
@@ -67,11 +67,11 @@ Here's a step-by-step guide to adding an Azure Active Directory tenant, adding a
 
 If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Enterprise Mobility Suite, or other Microsoft services, you have a free subscription to Azure AD. Here's a step-by-step guide to register your free Azure AD subscription using an Office 365 Premium Business subscription.
 
-1.  Sign in to the Office 365 portal at <https://portal.office.com> using your organization's account.
+1.  Sign in to the Microsoft 365 admin center at <https://portal.office.com> using your organization's account.
 
     ![register azuread](images/azure-ad-add-tenant10.png)
 
-2.  On the **Home** page, click on the Admin tools icon.
+2.  On the **Home** page, select on the Admin tools icon.
 
     ![register azuread](images/azure-ad-add-tenant11.png)
 

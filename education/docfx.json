@@ -7,7 +7,8 @@
           "**/**.yml"
         ],
         "exclude": [
-          "**/obj/**"
+          "**/obj/**",
+          "**/includes/**"
         ]
       }
     ],
@@ -19,11 +20,13 @@
           "**/*.svg"
         ],
         "exclude": [
-          "**/obj/**"
+          "**/obj/**",
+          "**/includes/**"
         ]
       }
     ],
     "globalMetadata": {
+      "recommendations": true,
       "ROBOTS": "INDEX, FOLLOW",
       "audience": "windows-education",
       "ms.topic": "article",

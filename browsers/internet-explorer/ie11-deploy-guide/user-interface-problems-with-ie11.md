@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # User interface problems with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Some of the features in both Internet Explorer 11 and IEAK 11 have moved around. Here are some of the more common changes.
 
 ## Where did features go in the Internet Explorer Customization Wizard 11?

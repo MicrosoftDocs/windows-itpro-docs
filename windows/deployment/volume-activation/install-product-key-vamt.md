@@ -1,6 +1,6 @@
 ---
 title: Install a Product Key (Windows 10)
-description: Install a Product Key
+description: Learn to use the Volume Activation Management Tool (VAMT) to install retail, Multiple Activation Key (MAK), and KMS Host key (CSVLK).
 ms.assetid: 78812c87-2208-4f8b-9c2c-5a8a18b2d648
 ms.reviewer: 
 manager: laurawi
@@ -9,7 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: activation
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article
@@ -36,10 +37,9 @@ You can use the Volume Activation Management Tool (VAMT) to install retail, Mult
 
     **Note**  
     Product key installation will fail if VAMT finds mismatched key types or editions. VAMT will display the failure status and will continue the installation for the next product in the list. For more information on choosing the correct MAK or KMS Host key (CSVLK), see [How to Choose the Right 
-    Volume License Key for Windows](https://go.microsoft.com/fwlink/p/?linkid=238382).
+    Volume License Key for Windows](/previous-versions/tn-archive/ee939271(v=technet.10)).
 
 ## Related topics
 
 - [Manage Product Keys](manage-product-keys-vamt.md)
- 
  

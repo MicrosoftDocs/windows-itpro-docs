@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - WindowsLogon
-description: Policy CSP - WindowsLogon
+description: Use the Policy CSP - WindowsLogon setting to control whether a device automatically signs in and locks the last interactive user after the system restarts.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -114,7 +114,7 @@ If you disable this policy setting, the device does not configure automatic sign
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Sign-in and lock last interactive user automatically after a restart*
+-   GP Friendly name: *Sign-in and lock last interactive user automatically after a restart*
 -   GP name: *AutomaticRestartSignOn*
 -   GP path: *Windows Components/Windows Logon Options*
 -   GP ADMX file name: *WinLogon.admx*
@@ -199,7 +199,7 @@ If you disable or do not configure this setting, automatic sign on defaults to t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot*
+-   GP Friendly name: *Configure the mode of automatically signing in and locking last interactive user after a restart or cold boot*
 -   GP name: *ConfigAutomaticRestartSignOn*
 -   GP path: *Windows Components/Windows Logon Options*
 -   GP ADMX file name: *WinLogon.admx*
@@ -278,7 +278,7 @@ If you disable or do not configure this policy setting, users can choose which a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off app notifications on the lock screen*
+-   GP Friendly name: *Turn off app notifications on the lock screen*
 -   GP name: *DisableLockScreenAppNotifications*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *logon.admx*
@@ -373,7 +373,7 @@ Here is an example to enable this policy:
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not display network selection UI*
+-   GP Friendly name: *Do not display network selection UI*
 -   GP name: *DontDisplayNetworkSelectionUI*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *logon.admx*
@@ -441,7 +441,7 @@ If you do not configure this policy setting, the user who completes the initial 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Show first sign-in animation*
+-   GP Friendly name: *Show first sign-in animation*
 -   GP name: *EnableFirstLogonAnimation*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -522,7 +522,7 @@ If you disable or do not configure this policy setting, the Logon UI will not en
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enumerate local users on domain-joined computers*
+-   GP Friendly name: *Enumerate local users on domain-joined computers*
 -   GP name: *EnumerateLocalUsers*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *logon.admx*
@@ -581,7 +581,7 @@ Added in Windows 10, version 1703. This policy setting allows you to hide the Sw
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide entry points for Fast User Switching*
+-   GP Friendly name: *Hide entry points for Fast User Switching*
 -   GP name: *HideFastUserSwitching*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *Logon.admx*
@@ -606,12 +606,14 @@ To validate on Desktop, do the following:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

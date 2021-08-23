@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Tasks and references to consider before creating and deploying custom packages using IEAK 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 Review this list of tasks and references to help you use the Internet Explorer Administration Kit 11 (IEAK 11) to set up, deploy, and manage Internet Explorer 11 in your company.
 
 |Task                                    |References                                                    |

@@ -4,7 +4,7 @@ description: The policy setting, Audit object access, determines whether to audi
 ms.assetid: D15B6D67-7886-44C2-9972-3F192D5407EA
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Audit object access
@@ -28,7 +29,8 @@ If you define this policy setting, you can specify whether to audit successes, a
 
 To set this value to **No auditing**, in the **Properties** dialog box for this policy setting, select the Define these policy settings check box and clear the **Success** and **Failure** check boxes.
 
-> **Note:**  You can set a SACL on a file system object using the **Security** tab in that object's **Properties** dialog box.
+> [!NOTE]
+> You can set a SACL on a file system object using the **Security** tab in that object's **Properties** dialog box.
 
 **Default:** No auditing.
 
@@ -41,10 +43,10 @@ You can configure this security setting by opening the appropriate policy under 
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |         560          |                                                                                                 Access was granted to an already existing object.                                                                                                  |
 |         562          |                                                                                                         A handle to an object was closed.                                                                                                          |
-|         563          |                                An attempt was made to open an object with the intent to delete it.<br>\*\*Note: \*\*  This is used by file systems when the FILE_DELETE_ON_CLOSE flag is specified in Createfile().                                |
+|         563          |                                An attempt was made to open an object with the intent to delete it.<br>**Note:**  This is used by file systems when the FILE_DELETE_ON_CLOSE flag is specified in Createfile().                                |
 |         564          |                                                                                                          A protected object was deleted.                                                                                                           |
 |         565          |                                                                                               Access was granted to an already existing object type.                                                                                               |
-|         567          | A permission associated with a handle was used.<br>\*\*Note: \*\*  A handle is created with certain granted permissions (Read, Write, and so on). When the handle is used, up to one audit is generated for each of the permissions that was used. |
+|         567          | A permission associated with a handle was used.<br>**Note:**  A handle is created with certain granted permissions (Read, Write, and so on). When the handle is used, up to one audit is generated for each of the permissions that was used. |
 |         568          |                                                                                     An attempt was made to create a hard link to a file that is being audited.                                                                                     |
 |         569          |                                                                                The resource manager in Authorization Manager attempted to create a client context.                                                                                 |
 |         570          |                                                           A client attempted to access an object.<br>**Note:**  An event will be generated for every attempted operation on the object.                                                            |

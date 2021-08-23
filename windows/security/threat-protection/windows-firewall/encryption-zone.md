@@ -1,10 +1,10 @@
 ---
 title: Encryption Zone (Windows 10)
-description: Encryption Zone
+description: Learn how to create an encryption zone to contain devices that host very sensitive data and require that the sensitive network traffic be encrypted.
 ms.assetid: 55a025ce-357f-4d1b-b2ae-6ee32c9abe13
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Encryption Zone
@@ -23,9 +24,9 @@ ms.date: 04/19/2017
 -   Windows 10
 -   Windows Server 2016
 
-Some servers in the organization host data that is very sensitive, including medical, financial, or other personally identifying data. Government or industry regulations might require that this sensitive information must be encrypted when it is transferred between devices.
+Some servers in the organization host data that's very sensitive, including medical, financial, or other personal data. Government or industry regulations might require that this sensitive information must be encrypted when it is transferred between devices.
 
-To support the additional security requirements of these servers, we recommend that you create an encryption zone to contain the devices and that requires that the sensitive inbound and outbound network traffic be encrypted.
+To support the additional security requirements of these servers, we recommend that you create an encryption zone to contain the devices and that requires that the sensitive inbound and outbound network traffic is encrypted.
 
 You must create a group in Active Directory to contain members of the encryption zone. The settings and rules for the encryption zone are typically similar to those for the isolated domain, and you can save time and effort by copying those GPOs to serve as a starting point. You then modify the security methods list to include only algorithm combinations that include encryption protocols.
 

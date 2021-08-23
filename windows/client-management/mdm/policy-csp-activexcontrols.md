@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ActiveXControls
-description: Policy CSP - ActiveXControls
+description: Learn about various Policy configuration service provider (CSP) - ActiveXControls settings, including SyncML, for Windows 10.
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
@@ -74,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved Activex Install sites specified by host URL. 
+This policy setting determines which ActiveX installation sites standard users in your organization can use to install ActiveX controls on their computers. When this setting is enabled, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
 
 If you enable this setting, the administrator can create a list of approved ActiveX Install sites specified by host URL. 
 
@@ -92,7 +92,7 @@ Note: Wild card characters cannot be used when specifying the host URLs.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Approved Installation Sites for ActiveX Controls*
+-   GP Friendly name: *Approved Installation Sites for ActiveX Controls*
 -   GP name: *ApprovedActiveXInstallSites*
 -   GP path: *Windows Components/ActiveX Installer Service*
 -   GP ADMX file name: *ActiveXInstallService.admx*
@@ -103,12 +103,14 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

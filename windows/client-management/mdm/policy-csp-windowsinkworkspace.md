@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - WindowsInkWorkspace
-description: Policy CSP - WindowsInkWorkspace
+description: Learn to use the Policy CSP - WindowsInkWorkspace setting to specify whether to allow the user to access the ink workspace.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -82,7 +82,7 @@ Added in Windows 10, version 1607. Show recommended app suggestions in the ink 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow suggested apps in Windows Ink Workspace*
+-   GP Friendly name: *Allow suggested apps in Windows Ink Workspace*
 -   GP name: *AllowSuggestedAppsInWindowsInkWorkspace*
 -   GP path: *Windows Components/Windows Ink Workspace*
 -   GP ADMX file name: *WindowsInkWorkspace.admx*
@@ -148,7 +148,7 @@ Added in Windows 10, version 1607. Specifies whether to allow the user to acces
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Windows Ink Workspace*
+-   GP Friendly name: *Allow Windows Ink Workspace*
 -   GP name: *AllowWindowsInkWorkspace*
 -   GP element: *AllowWindowsInkWorkspaceDropdown*
 -   GP path: *Windows Components/Windows Ink Workspace*
@@ -168,12 +168,14 @@ Value type is int. The following list shows the supported values:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

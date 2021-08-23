@@ -1,8 +1,8 @@
 ---
 title: 4701(S) A scheduled task was disabled. (Windows 10)
-description: Describes security event 4701(S) A scheduled task was disabled.
+description: Describes security event 4701(S) A scheduled task was disabled. This event is generated every time a scheduled task is disabled.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4701(S): A scheduled task was disabled.
@@ -62,6 +63,17 @@ This event generates every time a scheduled task is disabled.
  </Event>
 
 ```
+>[!NOTE]
+> Windows 10 Versions 1903 and above augments the event with these additional properties:
+> Event Version 1.
+>  ***Event XML:***
+>```
+>  <Data Name="ClientProcessStartKey">5066549580796854</Data> 
+>  <Data Name="ClientProcessId">3932</Data> 
+>  <Data Name="ParentProcessId">5304</Data> 
+>  <Data Name="RpcCallClientLocality">0</Data> 
+>  <Data Name="FQDN">DESKTOP-Name</Data> 
+
 
 ***Required Server Roles:*** None.
 
@@ -99,7 +111,7 @@ This event generates every time a scheduled task is disabled.
 
 <img src="images/computer-management.png" alt="Task Scheduler Library illustration" width="840" height="176" />
 
--   **Task Content** \[Type = UnicodeString\]: the [XML](https://msdn.microsoft.com/library/aa286548.aspx) of the disabled task. Here “[XML Task Definition Format](https://msdn.microsoft.com/library/cc248308.aspx)” you can read more about the XML format for scheduled tasks.
+-   **Task Content** \[Type = UnicodeString\]: the [XML](/previous-versions/aa286548(v=msdn.10)) of the disabled task. Here “[XML Task Definition Format](/openspecs/windows_protocols/ms-tsch/0d6383e4-de92-43e7-b0bb-a60cfa36379f)” you can read more about the XML format for scheduled tasks.
 
 ## Security Monitoring Recommendations
 
@@ -108,4 +120,3 @@ For 4701(S): A scheduled task was disabled.
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   If a highly critical scheduled task exists on some computers, and it should never be disabled, monitor for [4701](event-4701.md) events with the corresponding **Task Name**.
-

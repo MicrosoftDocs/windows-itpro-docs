@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 # IExpress Wizard command-line options
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 - Windows Server 2008 R2 with SP1
 

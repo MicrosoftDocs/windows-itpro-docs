@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Autoplay
-description: Policy CSP - Autoplay
+description: Learn how the Policy CSP - Autoplay setting disallows AutoPlay for MTP devices like cameras or phones.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -97,7 +97,7 @@ If you disable or do not configure this policy setting, AutoPlay is enabled for 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disallow Autoplay for non-volume devices*
+-   GP Friendly name: *Disallow Autoplay for non-volume devices*
 -   GP name: *NoAutoplayfornonVolume*
 -   GP path: *Windows Components/AutoPlay Policies*
 -   GP ADMX file name: *AutoPlay.admx*
@@ -177,7 +177,7 @@ If you disable or not configure this policy setting, Windows Vista or later will
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set the default behavior for AutoRun*
+-   GP Friendly name: *Set the default behavior for AutoRun*
 -   GP name: *NoAutorun*
 -   GP path: *Windows Components/AutoPlay Policies*
 -   GP ADMX file name: *AutoPlay.admx*
@@ -258,7 +258,7 @@ Note: This policy setting appears in both the Computer Configuration and User Co
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Autoplay*
+-   GP Friendly name: *Turn off Autoplay*
 -   GP name: *Autorun*
 -   GP path: *Windows Components/AutoPlay Policies*
 -   GP ADMX file name: *AutoPlay.admx*
@@ -269,12 +269,14 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

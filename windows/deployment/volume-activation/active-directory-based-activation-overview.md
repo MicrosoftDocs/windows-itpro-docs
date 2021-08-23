@@ -1,6 +1,6 @@
 ---
 title: Active Directory-Based Activation Overview (Windows 10)
-description: Active Directory-Based Activation Overview
+description: Enable your enterprise to activate its computers through a connection to their domain using Active Directory-Based Activation (ADBA).
 ms.assetid: c1dac3bd-6a86-4c45-83dd-421e63a398c0
 ms.reviewer: 
 manager: laurawi
@@ -38,7 +38,7 @@ VAMT enables IT Professionals to manage and activate the ADBA object. Activation
 
 ## Related topics
 
-- [How to Activate an Active Directory Forest Online](https://docs.microsoft.com/windows/deployment/volume-activation/activate-forest-vamt)
-- [How to Proxy Activate an Active Directory Forest](https://docs.microsoft.com/windows/deployment/volume-activation/activate-forest-by-proxy-vamt)
+- [How to Activate an Active Directory Forest Online](./activate-forest-vamt.md)
+- [How to Proxy Activate an Active Directory Forest](./activate-forest-by-proxy-vamt.md)
  
  

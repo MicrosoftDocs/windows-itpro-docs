@@ -1,10 +1,10 @@
 ---
 title: Checklist Configuring Rules for an Isolated Server Zone (Windows 10)
-description: Checklist Configuring Rules for an Isolated Server Zone
+description: Use these tasks to configure connection security rules and IPsec settings in GPOs for servers in an isolated server zone that are part of an isolated domain.
 ms.assetid: 67c50a91-e71e-4f1e-a534-dad2582e311c
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Checklist: Configuring Rules for an Isolated Server Zone

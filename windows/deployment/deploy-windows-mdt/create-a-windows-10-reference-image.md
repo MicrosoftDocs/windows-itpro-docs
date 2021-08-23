@@ -72,7 +72,7 @@ To monitor the task sequence as it happens, right-click the **MDT Build Lab** de
 
 ### Configure permissions for the deployment share
 
-In order to read files in the deployment share and write the reference image back to it, you need to assign NTSF and SMB permissions to the MDT Build Account (MDT\_BA) for the **D:\\MDTBuildLab** folder
+In order to read files in the deployment share and write the reference image back to it, you need to assign NTFS and SMB permissions to the MDT Build Account (MDT\_BA) for the **D:\\MDTBuildLab** folder
 
 On **MDT01**:
 
@@ -160,10 +160,10 @@ Download all three items in this list to the D:\\Downloads folder on MDT01.
 ### Create configuration file: Microsoft Office 365 Professional Plus x64
 
 1. After downloading the most current version of the Office Deployment tool from the Microsoft Download Center using the link provided above, run the self-extracting executable file and extract the files to **D:\\Downloads\\Office365**.  The Office Deployment Tool (setup.exe) and several sample configuration.xml files will be extracted.
-2. Using a text editor (such as Notepad), create an XML file in the D:\\Downloads\\Office365 directory with the installation settings for Office 365 ProPlus that are appropriate for your organization. The file uses an XML format, so the file you create must have an extension of .xml but the file can have any filename.
+2. Using a text editor (such as Notepad), create an XML file in the D:\\Downloads\\Office365 directory with the installation settings for Microsoft 365 Apps for enterprise that are appropriate for your organization. The file uses an XML format, so the file you create must have an extension of .xml but the file can have any filename.
 
     For example, you can use the following configuration.xml file, which provides these configuration settings:
-      - Install the 64-bit version of Office 365 ProPlus in English directly from the Office Content Delivery Network (CDN) on the internet. Note: 64-bit is now the default and recommended edition. 
+      - Install the 64-bit version of Microsoft 365 Apps for enterprise in English directly from the Office Content Delivery Network (CDN) on the internet. Note: 64-bit is now the default and recommended edition. 
       - Use the Semi-Annual Channel and get updates directly from the Office CDN on the internet. 
       - Perform a silent installation. You won’t see anything that shows the progress of the installation and you won’t see any error messages.
 
@@ -179,27 +179,27 @@ Download all three items in this list to the D:\\Downloads folder on MDT01.
      </Configuration>
      ```
 
-     By using these settings, any time you build the reference image you’ll be installing the most up-to-date Semi-Annual Channel version of Office 365 ProPlus.
+     By using these settings, any time you build the reference image you’ll be installing the most up-to-date Semi-Annual Channel version of Microsoft 365 Apps for enterprise.
 
  >[!TIP]
  >You can also use the web-based interface of the [Office Customization Tool](https://config.office.com/) to help you create your configuration.xml file.
  
- Also see [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/deployoffice/configuration-options-for-the-office-2016-deployment-tool) and [Overview of the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool) for more information. 
+ Also see [Configuration options for the Office Deployment Tool](/deployoffice/configuration-options-for-the-office-2016-deployment-tool) and [Overview of the Office Deployment Tool](/DeployOffice/overview-of-the-office-2016-deployment-tool) for more information. 
 
 3. Ensure the configuration.xml file is in the D:\\Downloads\\Office365 folder. See the following example of the extracted files plus the configuration.xml file in the Downloads\\Office365 folder:
 
     ![folder](../images/office-folder.png)
 
-  Assuming you have named the file "configuration.xml" as shown above, we will use the command "**setup.exe /configure configuration.xml**" when we create the application in MDT. This will perform the installation of Office 365 ProPlus using the configuration settings in the configuration.xml file. Do not perform this step yet.
+  Assuming you have named the file "configuration.xml" as shown above, we will use the command "**setup.exe /configure configuration.xml**" when we create the application in MDT. This will perform the installation of Microsoft 365 Apps for enterprise using the configuration settings in the configuration.xml file. Do not perform this step yet.
 
  >[!IMPORTANT]
- >After Office 365 ProPlus is installed on the reference image, do NOT open any Office programs. if you open an Office program, you are prompted to sign-in, which activates the installation of Office 365 ProPlus. Even if you don't sign in and you close the Sign in to set up Office dialog box, a temporary product key is installed. You don't want any kind of product key for Office 365 ProPlus installed as part of your reference image.
+ >After Microsoft 365 Apps for enterprise is installed on the reference image, do NOT open any Office programs. if you open an Office program, you are prompted to sign-in, which activates the installation of Microsoft 365 Apps for enterprise. Even if you don't sign in and you close the Sign in to set up Office dialog box, a temporary product key is installed. You don't want any kind of product key for Microsoft 365 Apps for enterprise installed as part of your reference image.
 
 Additional information
-- Office 365 ProPlus is usually updated on a monthly basis with security updates and other quality updates (bug fixes), and possibly new features (depending on which update channel you’re using). That means that once you’ve deployed your reference image, Office 365 ProPlus will most likely need to download and install the latest updates that have been released since you created your reference image.
+- Microsoft 365 Apps for enterprise is usually updated on a monthly basis with security updates and other quality updates (bug fixes), and possibly new features (depending on which update channel you’re using). That means that once you’ve deployed your reference image, Microsoft 365 Apps for enterprise will most likely need to download and install the latest updates that have been released since you created your reference image.
 
-- **Note**: By using installing Office Deployment Tool as part of the reference image, Office 365 ProPlus is installed immediately after the reference image is deployed to the user’s device, rather than including Office apps part of the reference image. This way the user will have the most up-to-date version of Office 365 ProPlus right away and won’t have to download any new updates (which is most likely what would happen if Office 365 ProPlus was installed as part of the reference image.)
- - When you are creating your reference image, instead of installing Office 365 ProPlus directly from the Office CDN on the internet, you can install Office 365 ProPlus from a location on your local network, such as a file share. To do that, you would use the Office Deployment Tool in /download mode to download the installation files to that file share. Then you could use the Office Deployment Tool in /configure mode to install Office 365 ProPlus from that location on to your reference image. As part of that, you’ll need to point to that location in your configuration.xml file so that the Office Deployment Tool knows where to get the Office 365 ProPlus files. If you decide to do this, the next time you create a new reference image, you’ll want to be sure to use the Office Deployment Tool to download the most up-to-date installation files for Office 365 ProPlus to that location on your internal network. That way your new reference image will have a more up-to-date installation of Office 365 ProPlus.
+- **Note**: By using installing Office Deployment Tool as part of the reference image, Microsoft 365 Apps for enterprise is installed immediately after the reference image is deployed to the user’s device, rather than including Office apps part of the reference image. This way the user will have the most up-to-date version of Microsoft 365 Apps for enterprise right away and won’t have to download any new updates (which is most likely what would happen if Microsoft 365 Apps for enterprise was installed as part of the reference image.)
+ - When you are creating your reference image, instead of installing Microsoft 365 Apps for enterprise directly from the Office CDN on the internet, you can install Microsoft 365 Apps for enterprise from a location on your local network, such as a file share. To do that, you would use the Office Deployment Tool in /download mode to download the installation files to that file share. Then you could use the Office Deployment Tool in /configure mode to install Microsoft 365 Apps for enterprise from that location on to your reference image. As part of that, you’ll need to point to that location in your configuration.xml file so that the Office Deployment Tool knows where to get the Microsoft 365 Apps for enterprise files. If you decide to do this, the next time you create a new reference image, you’ll want to be sure to use the Office Deployment Tool to download the most up-to-date installation files for Microsoft 365 Apps for enterprise to that location on your internal network. That way your new reference image will have a more up-to-date installation of Microsoft 365 Apps for enterprise.
 
 ### Connect to the deployment share using Windows PowerShell
 
@@ -353,7 +353,7 @@ On **MDT01**:
     6. **State Restore > Custom Tasks (Pre-Windows Update)**: After the **Install - Microsoft NET Framework 3.5.1** action, add a new **Install Application** action (selected from the **General** group) with the following settings:
         1. Name: Microsoft Visual C++ Redistributable 2019 - x86
         2. Install a Single Application: browse to **Install - MSVC 2019 - x86**
-    7.  Repeat these steps (add a new **Install Application**) to add Microsoft Visual C++ Redistributable 2019 - x64 and Office 365 ProPlus as well.
+    7.  Repeat these steps (add a new **Install Application**) to add Microsoft Visual C++ Redistributable 2019 - x64 and Microsoft 365 Apps for enterprise as well.
 3. Click **OK**.
 
  ![apps](../images/mdt-apps.png) 
@@ -388,12 +388,12 @@ On **MDT01**:
 1. Using the Deployment Workbench, under **Deployment Shares > MDT Build Lab > Task Sequences** right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence and select **Properties**.
 2. In the **OS Info** tab, click **Edit Unattend.xml**. MDT now generates a catalog file. This will take a few minutes, and then Windows System Image Manager (Windows SIM) will start.
 
- >[!IMPORTANT]
- >The current version of MDT (8456) has a known issue generating a catalog file for Windows 10, version 1903 or 1909 X64 install.wim. You might see the error "Could not load file or assembly" in in the console output. As a temporary workaround:
- >- Close the Deployment Workbench and install the [WSIM 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334). This will update imagecat.exe and imgmgr.exe to version 10.0.18362.144.
- >- Manually run imgmgr.exe (C:\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM\\imgmgr.exe).
- >- Generate a catalog (Tools/Create Catalog) for the selected install.wim (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install.wim). 
- >- After manually creating the catalog file (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install_Windows 10 Enterprise.clg), open the Deployment Workbench and proceed to edit unattend.xml.
+ > [!IMPORTANT]
+ > The ADK version 1903 has a [known issue](/windows-hardware/get-started/what-s-new-in-kits-and-tools#whats-new-in-the-windows-adk-for-windows-10-version-1903) generating a catalog file for Windows 10, version 1903 or 1909 X64 install.wim. You might see the error "Could not load file or assembly" in in the console output. To avoid this issue, [install the ADK, version 2004 or a later version](/windows-hardware/get-started/adk-install). A workaround is also available for the ADK version 1903:
+ > - Close the Deployment Workbench and install the [WSIM 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334). This will update imagecat.exe and imgmgr.exe to version 10.0.18362.144.
+ > - Manually run imgmgr.exe (C:\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM\\imgmgr.exe).
+ > - Generate a catalog (Tools/Create Catalog) for the selected install.wim (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install.wim). 
+ > - After manually creating the catalog file (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install_Windows 10 Enterprise.clg), open the Deployment Workbench and proceed to edit unattend.xml.
 
 3. In Windows SIM, expand the **4 specialize** node in the **Answer File** pane and select the amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral entry.
 4. In the **amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral properties** window (right-hand window), set the following values:
@@ -661,11 +661,14 @@ After some time, you will have a Windows 10 Enterprise x64 image that is fully 
 
 ## Troubleshooting
 
+> [!IMPORTANT]
+> If you encounter errors applying the image when using a BIOS firmware type, see [Windows 10 deployments fail with Microsoft Deployment Toolkit on computers with BIOS type firmware](https://support.microsoft.com/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7). This 
+
 If you [enabled monitoring](#enable-monitoring), you can check the progress of the task sequence.
 
    ![monitoring](../images/mdt-monitoring.png)
 
-If there are problems with your task sequence, you can troubleshoot in Windows PE by pressing F8 to open a command prompt. There are several [MDT log files](https://docs.microsoft.com/configmgr/mdt/troubleshooting-reference#mdt-logs) created that can be helpful determining the origin of an error, such as BDD.log.  From the command line in Windows PE you can copy these logs from the client to your MDT server for viewing with CMTrace. For example: copy BDD.log \\\\mdt01\\logs$.
+If there are problems with your task sequence, you can troubleshoot in Windows PE by pressing F8 to open a command prompt. There are several [MDT log files](/configmgr/mdt/troubleshooting-reference#mdt-logs) created that can be helpful determining the origin of an error, such as BDD.log.  From the command line in Windows PE you can copy these logs from the client to your MDT server for viewing with CMTrace. For example: copy BDD.log \\\\mdt01\\logs$.
 
 After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
 

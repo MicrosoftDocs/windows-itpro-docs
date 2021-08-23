@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - LockDown
-description: Policy CSP - LockDown
+description: Use the Policy CSP - LockDown setting to allow the user to invoke any system user interface by swiping in from any screen edge using touch.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -81,7 +81,7 @@ The easiest way to verify the policy is to restart the explorer process or to re
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow edge swipe*
+-   GP Friendly name: *Allow edge swipe*
 -   GP name: *AllowEdgeSwipe*
 -   GP path: *Windows Components/Edge UI*
 -   GP ADMX file name: *EdgeUI.admx*
@@ -99,12 +99,14 @@ The following list shows the supported values:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

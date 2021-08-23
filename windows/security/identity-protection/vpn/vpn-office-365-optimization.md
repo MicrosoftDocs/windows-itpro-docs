@@ -17,18 +17,18 @@ ms.author: jajo
 
 # Optimizing Office 365 traffic for remote workers with the native Windows 10 VPN client
 
-This article describes how to configure the recommendations in the article [Optimize Office 365 connectivity for remote users using VPN split tunneling](https://docs.microsoft.com/office365/enterprise/office-365-vpn-split-tunnel) for the *native Windows 10 VPN client*. This guidance enables VPN administrators to optimize Office 365 usage while still ensuring that all other traffic goes over the VPN connection and through existing security gateways and tooling.
+This article describes how to configure the recommendations in the article [Optimize Office 365 connectivity for remote users using VPN split tunneling](/office365/enterprise/office-365-vpn-split-tunnel) for the *native Windows 10 VPN client*. This guidance enables VPN administrators to optimize Office 365 usage while still ensuring that all other traffic goes over the VPN connection and through existing security gateways and tooling.
 
 This can be achieved for the native/built-in Windows 10 VPN client using a _Force Tunneling with Exclusions_ approach. This allows you to define IP-based exclusions *even when using force tunneling* in order to "split" certain traffic to use the physical interface while still forcing all other traffic via the VPN interface. Traffic addressed to specifically defined destinations (like those listed in the Office 365 optimize categories) will therefore follow a much more direct and efficient path, without the need to traverse or "hairpin" via the VPN tunnel and back out of the corporate network. For cloud-services like Office 365, this makes a huge difference in performance and usability for remote users.
 
 > [!NOTE]
-> The term _force tunneling with exclusions_ is sometimes confusingly called "split tunnels" by other vendors and in some online documentation. For Windows 10 VPN, the term _split tunneling_ is defined differently as described in the article [VPN routing decisions](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-routing#split-tunnel-configuration).
+> The term _force tunneling with exclusions_ is sometimes confusingly called "split tunnels" by other vendors and in some online documentation. For Windows 10 VPN, the term _split tunneling_ is defined differently as described in the article [VPN routing decisions](./vpn-routing.md#split-tunnel-configuration).
 
 ## Solution Overview
 
-The solution is based upon the use of a VPN Configuration Service Provider Reference profile ([VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp)) and the embedded [ProfileXML](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-profile-xsd). These are used to configure the VPN profile on the device. Various provisioning approaches can be used to create and deploy the VPN profile as discussed in the article [Step 6. Configure Windows 10 client Always On VPN connections](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files).
+The solution is based upon the use of a VPN Configuration Service Provider Reference profile ([VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp)) and the embedded [ProfileXML](/windows/client-management/mdm/vpnv2-profile-xsd). These are used to configure the VPN profile on the device. Various provisioning approaches can be used to create and deploy the VPN profile as discussed in the article [Step 6. Configure Windows 10 client Always On VPN connections](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files).
 
-Typically, these VPN profiles are distributed using a Mobile Device Management solution like Intune, as described in [VPN profile options](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-profile-options#apply-profilexml-using-intune) and [Configure the VPN client by using Intune](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#configure-the-vpn-client-by-using-intune).
+Typically, these VPN profiles are distributed using a Mobile Device Management solution like Intune, as described in [VPN profile options](./vpn-profile-options.md#apply-profilexml-using-intune) and [Configure the VPN client by using Intune](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#configure-the-vpn-client-by-using-intune).
 
 To enable the use of force tunneling in Windows 10 VPN, the `<RoutingPolicyType>` setting is typically configured with a value of _ForceTunnel_ in your existing Profile XML (or script) by way of the following entry, under the `<NativeProfile></NativeProfile>` section:
 
@@ -73,7 +73,7 @@ An example of a correctly formatted Profile XML configuration for force tunnel w
 
 ## Solution Deployment
 
-For Office 365, it is therefore necessary to add exclusions for all IP addresses documented within the optimize categories described in [Office 365 URLs and IP address ranges](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) to ensure that they are excluded from VPN force tunneling.
+For Office 365, it is therefore necessary to add exclusions for all IP addresses documented within the optimize categories described in [Office 365 URLs and IP address ranges](/office365/enterprise/urls-and-ip-address-ranges) to ensure that they are excluded from VPN force tunneling.
 
 This can be achieved manually by adding the IP addresses defined within the *optimize* category entries to an existing Profile XML (or script) file, or alternatively the following script can be used which dynamically adds the required entries to an existing PowerShell script, or XML file, based upon directly querying the REST-based web service to ensure the correct IP address ranges are always used.
 
@@ -239,12 +239,12 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".ps1")
 
     # Extract the Profile XML from the ps1 file #
 
-    $regex = '(?sm).*^*.<VPNPROFILE>\r?\n(.*?)\r?\n</VPNProfile>.*'
+    $regex = '(?sm).*^*.<VPNProfile>\r?\n(.*?)\r?\n</VPNProfile>.*'
 
     # Create xml format variable to compare with the optimize list #
 
     $xmlbody=(Get-Content -Raw $VPNprofilefile) -replace $regex, '$1'
-    [xml]$VPNprofilexml="<VPNPROFILE>"+$xmlbody+"</VPNPROFILE>"
+    [xml]$VPNprofilexml="<VPNProfile>"+$xmlbody+"</VPNProfile>"
 
         # Loop through each address found in VPNPROFILE XML section #
         foreach ($Route in $VPNprofilexml.VPNProfile.Route)
@@ -349,7 +349,7 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
     $In_VPN_Only=$null         # Variable to hold IP Addresses that only appear in the VPN profile XML file #  
 
     # Extract the Profile XML from the XML file #
-    $regex = '(?sm).*^*.<VPNPROFILE>\r?\n(.*?)\r?\n</VPNProfile>.*'
+    $regex = '(?sm).*^*.<VPNProfile>\r?\n(.*?)\r?\n</VPNProfile>.*'
 
     # Create xml format variable to compare with optimize list #
     $xmlbody=(Get-Content -Raw $VPNprofilefile) -replace $regex, '$1'
@@ -367,7 +367,7 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
 
     # In VPN list only #
     $In_VPN_only =$ARRVPN | Where {$optimizeIpsv4 -NotContains $_}
-    [array]$Inpfile = get-content $VPNprofilefile
+    [System.Collections.ArrayList]$Inpfile = get-content $VPNprofilefile
 
         if ($In_Opt_Only.Count -gt 0 )
         {
@@ -377,10 +377,10 @@ if ($VPNprofilefile -ne "" -and $FileExtension -eq ".xml")
                 {
                     # Add the missing IP address(es) #
                     $IPInfo=$NewIP.Split("/")
-                    $inspoint = $Inpfile[0].IndexOf("</VPNProfile")
-                    $routes += "<Route>"+"<Address>"+$IPInfo[0].Trim()+"</Address>"+"<PrefixSize>"+$IPInfo[1].Trim()+"</PrefixSize>"+"<ExclusionRoute>true</ExclusionRoute>"+"</Route>"
+                    $routes += "<Route>`n"+"`t<Address>"+$IPInfo[0].Trim()+"</Address>`n"+"`t<PrefixSize>"+$IPInfo[1].Trim()+"</PrefixSize>`n"+"`t<ExclusionRoute>true</ExclusionRoute>`n"+"</Route>`n"
                 }
-            $Inpfile = $Inpfile[0].Insert($inspoint,$routes)
+            $inspoint = $Inpfile.IndexOf("</VPNProfile>")
+            $Inpfile.Insert($inspoint,$routes)
 
             # Update filename and write new XML file #
             $NewFileName=(Get-Item $VPNprofilefile).Basename + "-NEW.xml"
@@ -447,7 +447,7 @@ You should also be able to adapt this approach to include necessary exclusions f
 
 ## Examples
 
-An example of a PowerShell script that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial PowerShell script:
+An example of a PowerShell script that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial PowerShell script:
 
 ```powershell
 # Copyright (c) Microsoft Corporation.  All rights reserved.
@@ -666,7 +666,7 @@ Write-Host "$Message"
 
 ```
 
-An example of an [Intune-ready XML file](https://docs.microsoft.com/windows/security/identity-protection/vpn/vpn-profile-options#apply-profilexml-using-intune) that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](https://docs.microsoft.com/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial XML file.
+An example of an [Intune-ready XML file](./vpn-profile-options.md#apply-profilexml-using-intune) that can be used to create a force tunnel VPN connection with Office 365 exclusions is provided below, or refer to the guidance in [Create the ProfileXML configuration files](/windows-server/remote/remote-access/vpn/always-on-vpn/deploy/vpn-deploy-client-vpn-connections#create-the-profilexml-configuration-files) to create the initial XML file.
 
 >[!NOTE]
 >This XML is formatted for use with Intune and cannot contain any carriage returns or whitespace.

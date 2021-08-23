@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Kerberos
-description: Policy CSP - Kerberos
+description: Define the list of trusting forests that the Kerberos client searches when attempting to resolve two-part service principal names (SPNs).
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -13,9 +13,6 @@ manager: dansimp
 ---
 
 # Policy CSP - Kerberos
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 
 <hr/>
@@ -107,7 +104,7 @@ If you disable or do not configure this policy setting, the Kerberos client does
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use forest search order*
+-   GP Friendly name: *Use forest search order*
 -   GP name: *ForestSearch*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -176,7 +173,7 @@ If you disable or do not configure this policy setting, the client devices will 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Kerberos client support for claims, compound authentication and Kerberos armoring*
+-   GP Friendly name: *Kerberos client support for claims, compound authentication and Kerberos armoring*
 -   GP name: *EnableCbacAndArmor*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -250,7 +247,7 @@ If you disable or do not configure this policy setting, the client computers in 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Fail authentication requests when Kerberos armoring is not available*
+-   GP Friendly name: *Fail authentication requests when Kerberos armoring is not available*
 -   GP name: *ClientRequireFast*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -320,7 +317,7 @@ If you disable or do not configure this policy setting, the Kerberos client requ
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require strict KDC validation*
+-   GP Friendly name: *Require strict KDC validation*
 -   GP name: *ValidateKDC*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -394,7 +391,7 @@ Note: This policy setting configures the existing MaxTokenSize registry value in
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set maximum Kerberos SSPI context token buffer size*
+-   GP Friendly name: *Set maximum Kerberos SSPI context token buffer size*
 -   GP name: *MaxTokenSize*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -467,12 +464,14 @@ Devices joined to Azure Active Directory in a hybrid environment need to interac
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

@@ -3,7 +3,7 @@ title: Deploy Windows 10 with Microsoft 365
 ms.reviewer: 
 manager: laurawi
 ms.author: greglin
-description: Concepts about deploying Windows 10 for M365
+description: Learn about deploying Windows 10 with Microsoft 365 and how to use a free 90-day trial account to review some of the benefits of Microsoft 365.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -14,6 +14,7 @@ audience: itpro
 author: greg-lindsay
 ms.topic: article
 ms.collection: M365-modern-desktop
+ms.custom: seo-marvel-apr2020
 ---
 
 # Deploy Windows 10 with Microsoft 365
@@ -49,9 +50,9 @@ You can check out the Microsoft 365 deployment advisor and other resources for f
 >[!NOTE]
 >If you have not run a setup guide before, you will see the **Prepare your environment** guide first. This is to make sure you have basics covered like domain verification and a method for adding users. At the end of the "Prepare your environment" guide, there will be a **Ready to continue** button that sends you to the original guide that was selected.
 
-1. [Obtain a free M365 trial](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365).
-2. Check out the [Microsoft 365 deployment advisor](https://portal.office.com/onboarding/Microsoft365DeploymentAdvisor#/).
-3. Also check out the [Windows Analytics deployment advisor](https://portal.office.com/onboarding/WindowsAnalyticsDeploymentAdvisor#/). This advisor will walk you through deploying [Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness), [Update Compliance](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor), and [Device Health](https://docs.microsoft.com/windows/deployment/update/device-health-monitor). 
+1. [Obtain a free M365 trial](/office365/admin/try-or-buy-microsoft-365).
+2. Check out the [Microsoft 365 deployment advisor](https://aka.ms/microsoft365setupguide).
+3. Also check out the [Windows Analytics deployment advisor](/mem/configmgr/desktop-analytics/overview). This advisor will walk you through deploying [Desktop Analytics](/mem/configmgr/desktop-analytics/overview). 
 
 That's all there is to it! 
 
@@ -73,7 +74,4 @@ Examples of these two deployment advisors are shown below.
 ## Related Topics
 
 [Windows 10 deployment scenarios](windows-10-deployment-scenarios.md)<br>
-[Modern Desktop Deployment Center](https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home)
-
-
-
+[Modern Desktop Deployment Center](/microsoft-365/enterprise/desktop-deployment-center-home)

@@ -4,11 +4,10 @@ description: Learn how unenlightened and enlightened apps might behave, based on
 keywords: WIP, Enterprise Data Protection, EDP, Windows Information Protection, unenlightened apps, enlightened apps
 ms.prod: w10
 ms.mktglfcycl: explore
-ms.pagetype: security
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -38,7 +37,7 @@ We strongly suggest that the only unenlightened apps you add to your allowed app
 >After revoking WIP, unenlightened apps will have to be uninstalled and re-installed since their settings files will remain encrypted.
 
 >[!Note]
->For more info about creating enlightened apps, see the [Windows Information Protection (WIP)](https://msdn.microsoft.com/windows/uwp/enterprise/wip-hub) topic in the Windows Dev Center.
+>For more info about creating enlightened apps, see the [Windows Information Protection (WIP)](/windows/uwp/enterprise/wip-hub) topic in the Windows Dev Center.
 
 ## Unenlightened app behavior
 This table includes info about how unenlightened apps might behave, based on your Windows Information Protection (WIP) networking policies, your app configuration, and potentially whether the app connects to network resources directly by using IP addresses or by using hostnames.
@@ -54,7 +53,7 @@ This table includes info about how unenlightened apps might behave, based on you
         <th align="center">Name-based policies, using the /&#42;AppCompat&#42;/ string or proxy-based policies</th>
     </tr>
    <tr align="left">
-     <td><strong>Not required.</strong> App connects to enterprise cloud resources directly, using an IP address.</td>
+     <td><b>Not required.</b> App connects to enterprise cloud resources directly, using an IP address.</td>
      <td>
         <ul>
             <li>App is entirely blocked from both personal and enterprise cloud resources.</li>
@@ -71,7 +70,7 @@ This table includes info about how unenlightened apps might behave, based on you
     </td>
    </tr>
     <tr align="left">
-     <td><strong>Not required.</strong> App connects to enterprise cloud resources, using a hostname.</td>
+     <td><b>Not required.</b> App connects to enterprise cloud resources, using a hostname.</td>
      <td colspan="2">
         <ul>
             <li>App is blocked from accessing enterprise cloud resources, but can access other network resources.</li>
@@ -81,7 +80,7 @@ This table includes info about how unenlightened apps might behave, based on you
     </td>
    </tr>
     <tr align="left">
-     <td><strong>Allow.</strong> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
+     <td><b>Allow.</b> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
      <td colspan="2">
         <ul>
             <li>App can access both personal and enterprise cloud resources.</li>
@@ -91,7 +90,7 @@ This table includes info about how unenlightened apps might behave, based on you
     </td>
    </tr>
     <tr align="left" colspan="2">
-     <td><strong>Exempt.</strong> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
+     <td><b>Exempt.</b> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
      <td colspan="2">
         <ul>
             <li>App can access both personal and enterprise cloud resources.</li>
@@ -111,7 +110,7 @@ This table includes info about how enlightened apps might behave, based on your 
      <th>Networking policy configuration for name-based policies, possibly using the /&#42;AppCompat&#42;/ string, or proxy-based policies</th>
    </tr>
     <tr>
-        <td><strong>Not required.</strong> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
+        <td><b>Not required.</b> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
         <td>
             <ul>
                 <li>App is blocked from accessing enterprise cloud resources, but can access other network resources.</li>
@@ -121,7 +120,7 @@ This table includes info about how enlightened apps might behave, based on your 
         </td>
     </tr>
     <tr>
-        <td><strong>Allow.</strong> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
+        <td><b>Allow.</b> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
         <td>
             <ul>
                 <li>App can access both personal and enterprise cloud resources.</li>
@@ -131,7 +130,7 @@ This table includes info about how enlightened apps might behave, based on your 
         </td>
     </tr>
     <tr>
-        <td><strong>Exempt.</strong> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
+        <td><b>Exempt.</b> App connects to enterprise cloud resources, using an IP address or a hostname.</td>
         <td>
             <ul>
                 <li>App can access both personal and enterprise cloud resources.</li>

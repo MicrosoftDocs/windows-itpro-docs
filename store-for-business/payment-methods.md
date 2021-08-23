@@ -10,12 +10,16 @@ author: trudyha
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 03/01/2019
+ms.date: 07/21/2021
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Payment methods
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
+
 You can purchase products and services from Microsoft Store for Business using your credit card. You can enter your credit card information on **Payment methods**, or when you purchase an app. We currently accept these credit cards:
 - VISA
 - MasterCard

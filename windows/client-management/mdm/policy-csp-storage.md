@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Storage
-description: Policy CSP - Storage
+description: Learn to use the Policy CSP - Storage settings to automatically clean some of the user’s files to free up disk space.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -105,7 +105,7 @@ Value type is integer.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow downloading updates to the Disk Failure Prediction Model*
+-   GP Friendly name: *Allow downloading updates to the Disk Failure Prediction Model*
 -   GP name: *SH_AllowDiskHealthModelUpdates*
 -   GP path: *System/Storage Health*
 -   GP ADMX file name: *StorageHealth.admx*
@@ -176,7 +176,7 @@ If you do not configure this policy setting, Storage Sense is turned off by defa
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Storage Sense*
+-   GP Friendly name: *Allow Storage Sense*
 -   GP name: *SS_AllowStorageSenseGlobal*
 -   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
@@ -252,7 +252,7 @@ If you do not configure this policy setting, Storage Sense will delete the user�
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Storage Sense Temporary Files cleanup*
+-   GP Friendly name: *Allow Storage Sense Temporary Files cleanup*
 -   GP name: *SS_AllowStorageSenseTemporaryFilesCleanup*
 -   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
@@ -328,7 +328,7 @@ If you disable or do not configure this policy setting, then Storage Sense will 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Storage Sense Cloud Content dehydration threshold*
+-   GP Friendly name: *Configure Storage Sense Cloud Content dehydration threshold*
 -   GP name: *SS_ConfigStorageSenseCloudContentDehydrationThreshold*
 -   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
@@ -404,7 +404,7 @@ If you disable or do not configure this policy setting, then Storage Sense will 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Storage Storage Downloads cleanup threshold*
+-   GP Friendly name: *Configure Storage Storage Downloads cleanup threshold*
 -   GP name: *SS_ConfigStorageSenseDownloadsCleanupThreshold*
 -   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
@@ -486,7 +486,7 @@ If you do not configure this policy setting, then the Storage Sense cadence is s
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Storage Sense cadence*
+-   GP Friendly name: *Configure Storage Sense cadence*
 -   GP name: *SS_ConfigStorageSenseGlobalCadence*
 -   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
@@ -562,7 +562,7 @@ If you disable or do not configure this policy setting, Storage Sense will delet
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Storage Sense Recycle Bin cleanup threshold*
+-   GP Friendly name: *Configure Storage Sense Recycle Bin cleanup threshold*
 -   GP name: *SS_ConfigStorageSenseRecycleBinCleanupThreshold*
 -   GP path: *System/Storage Sense*
 -   GP ADMX file name: *StorageSense.admx*
@@ -641,7 +641,7 @@ If you disable or do not configure this policy setting, Windows will activate un
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow Windows to activate Enhanced Storage devices*
+-   GP Friendly name: *Do not allow Windows to activate Enhanced Storage devices*
 -   GP name: *TCGSecurityActivationDisabled*
 -   GP path: *System/Enhanced Storage Access*
 -   GP ADMX file name: *enhancedstorage.admx*
@@ -707,7 +707,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Removable Disks: Deny write access*
+-   GP Friendly name: *Removable Disks: Deny write access*
 -   GP name: *RemovableDisks_DenyWrite_Access_2*
 -   GP element: *RemovableDisks_DenyWrite_Access_2*
 -   GP path: *System/Removable Storage Access*
@@ -719,9 +719,9 @@ ADMX Info:
 <!--/SupportedValues-->
 <!--Example-->
 Example for setting the device custom OMA-URI setting to enable this policy:  
-To deny write access to removable storage within Intune’s custom profile, set OMA-URI to ```.\[device|user]\vendor\msft\policy\[config|result]\Storage/RemovableDiskDenyWriteAccess```, Data type to Integer, and Value to 1.
+To deny write access to removable storage within Intune’s custom profile, set OMA-URI to ```./Device/Vendor/MSFT/Policy/Config/Storage/RemovableDiskDenyWriteAccess```, Data type to Integer, and Value to 1.
 
-See [Use custom settings for Windows 10 devices in Intune](https://docs.microsoft.com/intune/custom-settings-windows-10) for information on how to create custom profiles.
+See [Use custom settings for Windows 10 devices in Intune](/intune/custom-settings-windows-10) for information on how to create custom profiles.
 <!--/Example-->
 <!--Validation-->
 
@@ -731,12 +731,13 @@ See [Use custom settings for Windows 10 devices in Intune](https://docs.microsof
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

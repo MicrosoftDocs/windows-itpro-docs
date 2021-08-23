@@ -1,6 +1,6 @@
 ---
 title: DevDetail CSP
-description: DevDetail CSP
+description: Learn how the DevDetail configuration service provider handles the management object which provides device-specific parameters to the OMA DM server.
 ms.assetid: 719bbd2d-508d-439b-b175-0874c7e6c360
 ms.reviewer: 
 manager: dansimp
@@ -14,9 +14,6 @@ ms.date: 03/27/2020
 
 # DevDetail CSP
 
-> [!WARNING]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
-
 The DevDetail configuration service provider handles the management object which provides device-specific parameters to the OMA DM server. These device parameters are not sent from the client to the server automatically, but can be queried by servers using OMA DM commands.
 
 > [!NOTE]
@@ -24,10 +21,43 @@ The DevDetail configuration service provider handles the management object which
 
 For the DevDetail CSP, you cannot use the Replace command unless the node already exists.
 
-The following diagram shows the DevDetail configuration service provider management object in tree format as used by OMA Device Management. The OMA Client Provisioning protocol is not supported for this configuration service provider.
-
-![devdetail csp (dm)](images/provisioning-csp-devdetail-dm.png)
-
+The following shows the DevDetail configuration service provider management object in tree format as used by OMA Device Management. The OMA Client Provisioning protocol is not supported for this configuration service provider.
+```
+.
+DevDetail
+----URI
+--------MaxDepth
+--------MaxTotLen
+--------MaxSegLen
+----DevTyp
+----OEM
+----FwV
+----SwV
+----HwV
+----LrgObj
+----Ext
+--------Microsoft
+------------MobileID
+------------RadioSwV
+------------Resolution
+------------CommercializationOperator
+------------ProcessorArchitecture
+------------ProcessorType
+------------OSPlatform
+------------LocalTime
+------------DeviceName
+------------DNSComputerName (Added in Windows 10, version 2004)
+------------TotalStorage
+------------TotalRAM
+------------SMBIOSSerialNumber (Added in Windows 10, version 1809)
+--------WLANMACAddress
+--------VoLTEServiceSetting
+--------WlanIPv4Address
+--------WlanIPv6Address
+--------WlanDnsSuffix
+--------WlanSubnetMask
+--------DeviceHardwareData (Added in Windows 10, version 1703)
+```
 <a href="" id="devtyp"></a>**DevTyp**  
 Required. Returns the device model name /SystemProductName as a string.
 
@@ -135,7 +165,7 @@ Value type is string.
 Supported operations are Get and Replace.
 
 <a href="" id="ext-microsoft-dnscomputername "></a>**Ext/Microsoft/DNSComputerName**  
-Added in the next major release of Windows 10. This node specifies the DNS computer name for a device. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 63 characters. This node replaces the **Domain/ComputerName** node in [Accounts CSP](accounts-csp.md).
+Added in Windows 10, version 2004. This node specifies the DNS computer name for a device. The server must explicitly reboot the device for this value to take effect. A couple of macros can be embedded within the value for dynamic substitution. Using any of these macros will limit the new name to 63 characters. This node replaces the **Domain/ComputerName** node in [Accounts CSP](accounts-csp.md).
 
 The following are the available naming macros:  
 
@@ -146,8 +176,10 @@ The following are the available naming macros:
 
 Value type is string. Supported operations are Get and Replace.
 
-> [!Note]  
-> On desktop PCs, this setting specifies the DNS hostname of the computer (Computer Name) up to 63 characters. Use `%RAND:x%` to generate x number of random digits in the name, where x must be a number less than 63. For domain joined computers, the unique name must use `%RAND:x%`. Use `%SERIAL%` to generate the name with the `computer&quot;s` serial number embedded. If the serial number exceeds the character limit, it will be truncated from the beginning of the sequence. The character restriction limit does not count the length of the macros, `%RAND:x%` and `%SERIAL%`. This setting is supported only in Windows 10, version 1803 and later. To change this setting in Windows 10, version 1709 and earlier releases, use the **ComputerName** setting under **Accounts** > **ComputerAccount**.
+> [!NOTE]  
+> We recommend using `%SERIAL%` or `%RAND:x%` with a high character limit to reduce the chance of name collision when generating a random name. This feature doesn't check if a particular name is already present in the environment.
+
+On desktop PCs, this setting specifies the DNS hostname of the computer (Computer Name) up to 63 characters. Use `%RAND:x%` to generate x number of random digits in the name, where x must be a number less than 63. For domain-joined computers, the unique name must use `%RAND:x%`. Use `%SERIAL%` to generate the name with the `computer's` serial number embedded. If the serial number exceeds the character limit, it will be truncated from the beginning of the sequence. The character restriction limit does not count the length of the macros, `%RAND:x%` and `%SERIAL%`. This setting is supported only in Windows 10, version 1803 and later. To change this setting in Windows 10, version 1709 and earlier releases, use the **ComputerName** setting under **Accounts** > **ComputerAccount**.
 
 <a href="" id="ext-microsoft-totalstorage"></a>**Ext/Microsoft/TotalStorage**  
 Added in Windows 10, version 1511. Integer that specifies the total available storage in MB from first internal drive on the device (may be less than total physical storage).
@@ -215,9 +247,6 @@ Supported operation is Get.
  
 
  
-
-
-
 
 
 

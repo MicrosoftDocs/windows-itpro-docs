@@ -1,6 +1,7 @@
 ---
 title: Step by step - Deploy Windows 10 in a test lab using MDT
-description: Deploy Windows 10 in a test lab using Microsoft Deployment Toolkit (MDT)
+description: In this article, you'll learn how to deploy Windows 10 in a test lab using Microsoft Deployment Toolkit (MDT).
+ms.custom: seo-marvel-apr2020
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -11,9 +12,9 @@ ms.date: 10/11/2017
 ms.reviewer: 
 manager: laurawi
 ms.audience: itpro
+ms.author: greglin
 author: greg-lindsay
 audience: itpro
-author: greg-lindsay
 ms.topic: article
 ---
 
@@ -35,7 +36,7 @@ The PoC environment is a virtual network running on Hyper-V with three virtual m
 - **SRV1**: A dual-homed contoso.com domain member server, DNS server, and default gateway providing NAT service for the PoC network.
 - **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been shadow-copied from a physical computer on your corporate network.
 
->This guide uses the Hyper-V server role. If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
+>This guide uses the Hyper-V server role. If you do not complete all steps in a single session, consider using [checkpoints](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn818483(v=ws.11)) and [saved states](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee247418(v=ws.10)) to pause, resume, or restart your work.
 
 ## In this guide
 
@@ -129,7 +130,7 @@ A reference image serves as the foundation for Windows 10 devices in your organi
     - Progress: wait for files to be copied
     - Confirmation: click **Finish**
 
-    >For purposes of this test lab, we will only add the prerequisite .NET Framework feature. Commerical applications (ex: Microsoft Office) will not be added to the deployment share. For information about adding applications, see the [Add applications](https://technet.microsoft.com/itpro/windows/deploy/create-a-windows-10-reference-image#sec03) section of the [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md) topic in the TechNet library.
+    >For purposes of this test lab, we will only add the prerequisite .NET Framework feature. Commerical applications (ex: Microsoft Office) will not be added to the deployment share. For information about adding applications, see the [Add applications](./deploy-windows-mdt/create-a-windows-10-reference-image.md) section of the [Create a Windows 10 reference image](deploy-windows-mdt/create-a-windows-10-reference-image.md) topic in the TechNet library.
 
 11. The next step is to create a task sequence to reference the operating system that was imported. To create a task sequence, right-click the **Task Sequences** node and then click **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
     - Task sequence ID: **REFW10X64-001**<BR>
@@ -366,7 +367,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
     ScanStateArgs=/all
     ```   
 
-    For more information, see [ScanState Syntax](https://technet.microsoft.com/library/cc749015.aspx).
+    For more information, see [ScanState Syntax](/previous-versions/windows/it-pro/windows-vista/cc749015(v=ws.10)).
 
 4. Click **Edit Bootstap.ini** and replace text in the file with the following text:
 
@@ -397,7 +398,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 2. On the **Monitoring** tab, select the **Enable monitoring for this deployment share** checkbox, and then click **OK**.
 
-3. Verify the monitoring service is working as expected by opening the following link on SRV1 in Internet Explorer: [http://localhost:9800/MDTMonitorEvent/](http://localhost:9800/MDTMonitorEvent/). If you do not see "**You have created a service**" at the top of the page, see [Troubleshooting MDT 2012 Monitoring](https://blogs.technet.microsoft.com/mniehaus/2012/05/10/troubleshooting-mdt-2012-monitoring/).
+3. Verify the monitoring service is working as expected by opening the following link on SRV1 in Internet Explorer: [http://localhost:9800/MDTMonitorEvent/](http://localhost:9800/MDTMonitorEvent/). If you do not see "**You have created a service**" at the top of the page, see [Troubleshooting MDT 2012 Monitoring](/archive/blogs/mniehaus/troubleshooting-mdt-2012-monitoring).
 
 4. Close Internet Explorer.
 
@@ -490,7 +491,7 @@ This section will demonstrate how to export user data from an existing client co
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
 
-    **Note**: For more information on tools for viewing log files and to assist with troubleshooting, see [Configuration Manager Tools](https://docs.microsoft.com/configmgr/core/support/tools).
+    **Note**: For more information on tools for viewing log files and to assist with troubleshooting, see [Configuration Manager Tools](/configmgr/core/support/tools).
 
 5. Choose the **Windows 10 Enterprise x64 Custom Image** and then click **Next**.
 
@@ -646,12 +647,6 @@ Also see [Resolve Windows 10 upgrade errors](upgrade/resolve-windows-10-upgrade-
 
 ## Related Topics
 
-[Microsoft Deployment Toolkit](https://technet.microsoft.com/windows/dn475741)<BR>
+[Microsoft Deployment Toolkit](/mem/configmgr/mdt/)<BR>
 [Prepare for deployment with MDT](deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
-
- 
-
-
-
-
 

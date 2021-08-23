@@ -1,7 +1,7 @@
 ---
 title: App-V Supported Configurations (Windows 10)
-description: App-V Supported Configurations
-author: lomayor
+description: Learn the requirements to install and run App-V supported configurations in your Windows 10 environment.
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,12 +9,12 @@ ms.prod: w10
 ms.date: 04/16/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # App-V Supported Configurations
 
->Applies to: Windows 10, version 1607; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2
+>Applies to: Windows 10, version 1607; Window Server 2019; Windows Server 2016; Windows Server 2012 R2; Windows Server 2012; Windows Server 2008 R2 (Extended Security Update)
 
 This topic specifies the requirements to install and run App-V in your Windows 10 environment. For information about prerequisite software such as the .NET Framework, see [App-V prerequisites](appv-prerequisites.md).
 
@@ -34,7 +34,7 @@ The App-V server does not support the following scenarios:
 
 ### Management server operating system requirements
 
-You can install the App-V Management server on a server running Windows Server 2008 R2 with SP1 or later.
+You can install the App-V Management server on a server running Windows Server 2008 R2 with SP1 (Extended Security Update) or later.
 
 >[!IMPORTANT]
 >Deploying a Management server role to a computer with Remote Desktop Services enabled is not supported.
@@ -104,17 +104,7 @@ Similarly, the App-V Remote Desktop Services (RDS) client is included with Windo
 
 ## Sequencer system requirements
 
-The following table lists the operating systems that the App-V Sequencer installation supports.
-
-|Operating system|Service pack|System architecture|
-|---|---|---|
-|Microsoft Windows Server 2012 R2||64-bit|
-|Microsoft Windows Server 2012||64-bit|
-|Microsoft Windows Server 2008 R2|SP1|64-bit|
-|Microsoft Windows 10||32-bit and 64-bit|
-|Microsoft Windows 8.1||32-bit and 64-bit|
-|Microsoft Windows 8||32-bit and 64-bit|
-|Microsoft Windows 7|SP1|32-bit and 64-bit|
+Sequencer is now part of the Windows Assessment and Deployment Kit (Windows ADK). [Download the latest Windows ADK](/windows-hardware/get-started/adk-install) that is recommended for your version of the Windows OS. 
 
 ### Sequencer hardware requirements
 

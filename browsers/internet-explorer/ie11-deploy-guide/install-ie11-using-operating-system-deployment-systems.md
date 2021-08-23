@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 # Install Internet Explorer 11 (IE11) using Microsoft Deployment Toolkit (MDT) and your Windows images
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 You can install Internet Explorer 11 (IE11) using Microsoft Deployment Toolkit (MDT) and your Windows images.
 
 You'll need to extract the .cab file for each supported operating system and platform combination and the .msu file for each prerequisite update. Download the IE11 update and prerequisites here:
@@ -29,7 +32,7 @@ After you install the .msu file updates, you'll need to add them to your MDT dep
 
 ## Installing IE11 using Microsoft Deployment Toolkit (MDT) 
 
-MDT adds IE11 to your Windows images, regardless whether you are creating or deploying a customized or non-customized image. MDT also lets you perform offline servicing during the System Center 2012 R2 Configuration Manager task sequence, letting you add IE11 before starting Windows. For info, see [Microsoft Deployment Toolkit (MDT)](https://go.microsoft.com/fwlink/p/?linkid=331148).
+MDT adds IE11 to your Windows images, regardless whether you are creating or deploying a customized or non-customized image. MDT also lets you perform offline servicing during the System Center 2012 R2 Configuration Manager task sequence, letting you add IE11 before starting Windows. For info, see [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt/).
 
  **To add IE11 to a MDT deployment share**
 
@@ -48,13 +51,10 @@ You can add the IE11 update while you're performing offline servicing, or slipst
 
 These articles have step-by-step details about adding packages to your Windows images:
 
--   For Windows 8.1, see [Add or Remove Packages Offline Using DISM](https://go.microsoft.com/fwlink/p/?LinkId=276791).
+-   For Windows 8.1, see [Add or Remove Packages Offline Using DISM](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824838(v=win.10)).
 
--   For Windows 7 SP1, see [Add or Remove Packages Offline](https://go.microsoft.com/fwlink/p/?LinkId=214490).
-
- 
+-   For Windows 7 SP1, see [Add or Remove Packages Offline](/previous-versions/windows/it-pro/windows-7/dd744559(v=ws.10)).
 
  
 
-
-
+ 

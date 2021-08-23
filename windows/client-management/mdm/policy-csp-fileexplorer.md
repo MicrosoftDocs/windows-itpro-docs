@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - FileExplorer
-description: Policy CSP - FileExplorer
+description: Use the Policy CSP - FileExplorer setting so you can allow certain legacy plug-in applications to function without terminating Explorer.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -89,7 +89,7 @@ Disabling data execution prevention can allow certain legacy plug-in application
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Data Execution Prevention for Explorer*
+-   GP Friendly name: *Turn off Data Execution Prevention for Explorer*
 -   GP name: *NoDataExecutionPrevention*
 -   GP path: *File Explorer*
 -   GP ADMX file name: *Explorer.admx*
@@ -155,7 +155,7 @@ Disabling heap termination on corruption can allow certain legacy plug-in applic
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off heap termination on corruption*
+-   GP Friendly name: *Turn off heap termination on corruption*
 -   GP name: *NoHeapTerminationOnCorruption*
 -   GP path: *File Explorer*
 -   GP ADMX file name: *Explorer.admx*
@@ -166,12 +166,14 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

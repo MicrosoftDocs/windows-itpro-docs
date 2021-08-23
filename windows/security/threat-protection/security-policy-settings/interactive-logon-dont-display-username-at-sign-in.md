@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 98b24b03-95fe-4edc-8e97-cbdaa8e314fd
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,14 +15,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Interactive logon: Don't display username at sign-in
 
 **Applies to**
--   Windows Server 2003, Windows Vista, Windows XP, Windows Server 2008, Windows 7, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2, Windows Server 2012, Windows 8, Windows 10
+- Windows 10, Windows Server 2019
 
-Describes the best practices, location, values, and security considerations for the **Interactive logon: Don't display username at sign-in** security policy setting. 
+Describes the best practices, location, values, and security considerations for the **Interactive logon: Don't display username at sign-in** security policy setting.
 
 ## Reference
 
@@ -56,7 +57,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 | Domain controller effective default settings | Not defined|
 | Member server effective default settings | Not defined|
 | Effective GPO default settings on client computers | Not defined|
- 
+
 ## Policy management
 
 This section describes features and tools that are available to help you manage this policy.

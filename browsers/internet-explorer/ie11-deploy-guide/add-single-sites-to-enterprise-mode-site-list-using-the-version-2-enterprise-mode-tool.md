@@ -18,6 +18,9 @@ ms.date: 07/27/2017
 
 # Add single sites to the Enterprise Mode site list using the Enterprise Mode Site List Manager (schema v.2)
 
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
+
 **Applies to:**
 
 -   Windows 10
@@ -58,15 +61,15 @@ You can add individual sites to your compatibility list by using the Enterprise 
 
 5. In conjunction with the compatibility mode, you'll need to use the **Open in** box to pick which browser opens the site.
 
-   -   **IE11**. Opens the site in IE11, regardless of which browser is opened by the employee. If you have enabled [Internet Explorer mode integration on Microsoft Edge](https://docs.microsoft.com/deployedge/edge-ie-mode), this option will open sites in Internet Explorer mode.
+   -   **IE11**. Opens the site in IE11, regardless of which browser is opened by the employee. If you have enabled [Internet Explorer mode integration on Microsoft Edge](/deployedge/edge-ie-mode), this option will open sites in Internet Explorer mode.
 
    -   **MSEdge**. Opens the site in Microsoft Edge, regardless of which browser is opened by the employee.
 
    -   **None**. Opens in whatever browser the employee chooses.
 
-6. If you have enabled [Internet Explorer mode integration on Microsoft Edge](https://docs.microsoft.com/deployedge/edge-ie-mode), and you have sites that still need to opened in the standalone Internet Explorer 11 application, you can check the box for **Standalone IE**. This checkbox is only relevant when associated to 'Open in' IE11. Checking the box when 'Open In' is set to MSEdge or None will not change browser behavior.
+6. If you have enabled [Internet Explorer mode integration on Microsoft Edge](/deployedge/edge-ie-mode), and you have sites that still need to opened in the standalone Internet Explorer 11 application, you can check the box for **Standalone IE**. This checkbox is only relevant when associated to 'Open in' IE11. Checking the box when 'Open In' is set to MSEdge or None will not change browser behavior.
 
-7. The checkbox **Allow Redirect** applies to the treatment of server side redirects. If you check this box, server side redirects will open in the browser specified by the open-in tag. For more information, see [here](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/enterprise-mode-schema-version-2-guidance#updated-schema-attributes).
+7. The checkbox **Allow Redirect** applies to the treatment of server side redirects. If you check this box, server side redirects will open in the browser specified by the open-in tag. For more information, see [here](./enterprise-mode-schema-version-2-guidance.md#updated-schema-attributes).
 
 8. Click **Save** to validate your website and to add it to the site list for your enterprise.<p>
    If your site passes validation, it’s added to the global compatibility list. If the site doesn’t pass validation, you’ll get an error message explaining the problem. You’ll then be able to either cancel the site or ignore the validation problem and add it to your list anyway.
@@ -80,8 +83,4 @@ After you’ve added all of your sites to the tool and saved the file to XML, yo
 ## Related topics
 - [Download the Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853)
  
-
- 
-
-
 

@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - WindowsPowerShell
-description: Policy CSP - WindowsPowerShell
+description: Use the Policy CSP - WindowsPowerShell setting to enable logging of all PowerShell script input to the Microsoft-Windows-PowerShell/Operational event log.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -95,7 +95,7 @@ Note: This policy setting exists under both Computer Configuration and User Conf
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on PowerShell Script Block Logging*
+-   GP Friendly name: *Turn on PowerShell Script Block Logging*
 -   GP name: *EnableScriptBlockLogging*
 -   GP path: *Windows Components/Windows PowerShell*
 -   GP ADMX file name: *PowerShellExecutionPolicy.admx*
@@ -106,12 +106,14 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

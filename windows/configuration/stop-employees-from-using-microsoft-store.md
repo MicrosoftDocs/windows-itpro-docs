@@ -8,8 +8,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: store, mobile
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 4/16/2018
@@ -31,7 +31,6 @@ IT pros can configure access to Microsoft Store for client computers in their or
 > All executable code including Microsoft Store applications should have an update and maintenance plan.  Organizations that use Microsoft Store applications should ensure that the applications can be updated through the Microsoft Store over the internet, through the [Private Store](/microsoft-store/distribute-apps-from-your-private-store), or [distributed offline](/microsoft-store/distribute-offline-apps) to keep the applications up to date.
 
 ## Options to configure access to Microsoft Store
-
 
 You can use these tools to configure access to Microsoft Store: AppLocker or Group Policy. For Windows 10, this is only supported on Windows 10 Enterprise edition.
 
@@ -64,6 +63,20 @@ For more information on AppLocker, see [What is AppLocker?](/windows/device-secu
 
 8.  Optional: On **Exceptions**, specify conditions by which to exclude files from being affected by the rule. This allows you to add exceptions based on the same rule reference and rule scope as you set before. Click **Next**.
 
+## <a href="" id="block-store-csp"></a>Block Microsoft Store using configuration service provider
+
+Applies to: Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education
+
+If you have Windows 10 devices in your organization that are managed using a mobile device management (MDM) system, such as Microsoft Intune, you can block access to Microsoft Store app using the following configuration service providers (CSPs):
+
+- [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider)
+- [AppLocker CSP](/windows/client-management/mdm/applocker-csp)
+
+For more information, see [Configure an MDM provider](/microsoft-store/configure-mdm-provider-microsoft-store-for-business).
+
+For more information on the rules available via AppLocker on the different supported operating systems, see [Operating system requirements](/windows/security/threat-protection/windows-defender-application-control/applocker/requirements-to-use-applocker#operating-system-requirements).
+
+
 ## <a href="" id="block-store-group-policy"></a>Block Microsoft Store using Group Policy
 
 
@@ -78,27 +91,27 @@ You can also use Group Policy to manage access to Microsoft Store.
 
 1.  Type gpedit in the search bar to find and start Group Policy Editor.
 
-2.  In the console tree of the snap-in, click **Computer Configuration**, click **Administrative Templates** , click **Windows Components**, and then click **Store**.
+2.  In the console tree of the snap-in, click **Computer Configuration**, click **Administrative Templates**, click **Windows Components**, and then click **Store**.
 
-3.  In the Setting pane, click **Turn off Store application**, and then click **Edit policy setting**.
+3.  In the Setting pane, click **Turn off the Store application**, and then click **Edit policy setting**.
 
-4.  On the **Turn off Store application** setting page, click **Enabled**, and then click **OK**.
+4.  On the **Turn off the Store application** setting page, click **Enabled**, and then click **OK**.
 
 > [!Important]
-> Enabling **Turn off Store application** policy turns off app updates from Microsoft Store.  
+> Enabling **Turn off the Store application** policy turns off app updates from Microsoft Store.  
 
-## <a href="" id="block-store-mdm"></a>Block Microsoft Store using management tool
+## <a href="" id="block-store-mobile"></a>Block Microsoft Store on Windows 10 Mobile
 
 
 Applies to: Windows 10 Mobile
 
-If you have mobile devices in your organization that you upgraded from earlier versions of Windows Phone 8 to Windows 10 Mobile, existing policies created using the Windows Phone 8.1 configuration service providers (CSP) with your MDM tool will continue to work on Windows 10 Mobile. If you are starting with Windows 10 Mobile, we recommend using [AppLocker](#block-store-applocker) to manage access to Microsoft Store app.
+If you have mobile devices in your organization that you upgraded from earlier versions of Windows Phone 8 to Windows 10 Mobile, existing policies created using the Windows Phone 8.1 CSPs with your MDM tool will continue to work on Windows 10 Mobile. If you are starting with Windows 10 Mobile, we recommend using [AppLocker](#block-store-applocker) to manage access to Microsoft Store app.
 
 When your MDM tool supports Microsoft Store for Business, the MDM can use these CSPs to block Microsoft Store app:
 
--   [Policy](https://go.microsoft.com/fwlink/p/?LinkId=717030)
+-   [Policy](/windows/client-management/mdm/policy-configuration-service-provider)
 
--   [EnterpriseAssignedAccess](https://msdn.microsoft.com/library/windows/hardware/mt157024.aspx) (Windows 10 Mobile, only)
+-   [EnterpriseAssignedAccess](/windows/client-management/mdm/enterpriseassignedaccess-csp) (Windows 10 Mobile, only)
 
 For more information, see [Configure an MDM provider](/microsoft-store/configure-mdm-provider-windows-store-for-business).
 
@@ -127,8 +140,3 @@ If you're using Microsoft Store for Business and you want employees to only see 
 
 
  
-
-
-
-
-

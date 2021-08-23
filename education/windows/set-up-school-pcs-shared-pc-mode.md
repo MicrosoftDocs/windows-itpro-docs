@@ -24,7 +24,7 @@ Shared PC mode can be applied on devices running:
 * Windows 10 Education
 * Windows 10 Enterprise  
 
-To learn more about how to set up a device in shared PC mode, see [Set up a shared or guest PC with Windows 10](https://docs.microsoft.com/windows/configuration/set-up-shared-or-guest-pc).  
+To learn more about how to set up a device in shared PC mode, see [Set up a shared or guest PC with Windows 10](/windows/configuration/set-up-shared-or-guest-pc).  
 
 ## Windows Updates
 Shared PC mode configures power and Windows Update settings so that computers update regularly. Computers that are set up through the Set up School PCs app are configured to:  
@@ -74,8 +74,3 @@ Learn more about setting up devices with the Set up School PCs app.
 * [Set up Windows 10 devices for education](set-up-windows-10.md) 
 
 When you're ready to create and apply your provisioning package, see [Use Set up School PCs app](use-set-up-school-pcs-app.md).
-
-
-
-
-

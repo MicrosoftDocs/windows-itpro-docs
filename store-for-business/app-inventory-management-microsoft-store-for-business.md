@@ -11,7 +11,7 @@ ms.pagetype: store
 author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
-ms.date: 10/23/2018
+ms.date: 07/21/2021
 ---
 
 # App inventory management for Microsoft Store for Business and Education
@@ -20,6 +20,9 @@ ms.date: 10/23/2018
 
 -   Windows 10
 -   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 You can manage all apps that you've acquired on your **Apps & software** page. This page shows all of the content you've acquired, including apps that from Microsoft Store, and line-of-business (LOB) apps that you've accepted into your inventory. After LOB apps are submitted to your organization, you'll see a notification on your **Apps & software** page. On the **New LOB apps** tab, you can accept, or reject the LOB apps. For more information on LOB apps, see [Working with line-of-business apps](working-with-line-of-business-apps.md). The inventory page includes apps acquired by all people in your organization with the Store for Business Admin role. 
 
@@ -192,7 +195,7 @@ For more information about downloading offline-licensed apps, see [Download offl
 
 ## Manage products programmatically
 
-Microsoft Store for Business and Education provides a set of Admin management APIs. If you organization develops scripts or tools, these APIs allow Admins to programmatically manage items in **Apps & software**. For more information, see [REST API reference for Microsoft Store for Business](https://docs.microsoft.com/windows/client-management/mdm/rest-api-reference-windows-store-for-business).
+Microsoft Store for Business and Education provides a set of Admin management APIs. If you organization develops scripts or tools, these APIs allow Admins to programmatically manage items in **Apps & software**. For more information, see [REST API reference for Microsoft Store for Business](/windows/client-management/mdm/rest-api-reference-windows-store-for-business).
 
 You can download a preview PowerShell script that uses REST APIs. The script is available from PowerShell Gallery. You can use to the script to:
 - View items in inventory (**Apps & software**)

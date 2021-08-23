@@ -17,15 +17,58 @@ ms.date: 11/01/2017
 
 The DMClient configuration service provider (CSP) is used to specify additional enterprise-specific mobile device management (MDM) configuration settings for identifying the device in the enterprise domain, for security mitigation for certificate renewal, and for server-triggered enterprise unenrollment.
 
-The following diagram shows the DMClient CSP in tree format.
-
-![dmclient csp](images/provisioning-csp-dmclient-th2.png)
+The following shows the DMClient CSP in tree format.
+```
+./Vendor/MSFT
+DMClient
+----Provider
+--------
+------------EntDeviceName
+------------ExchangeID
+------------EntDMID
+------------SignedEntDMID
+------------CertRenewTimeStamp
+------------PublisherDeviceID
+------------ManagementServiceAddress
+------------UPN
+------------HelpPhoneNumber
+------------HelpWebsite
+------------HelpEmailAddress
+------------RequireMessageSigning
+------------SyncApplicationVersion
+------------MaxSyncApplicationVersion
+------------Unenroll
+------------AADResourceID
+------------AADDeviceID
+------------EnrollmentType
+------------EnableOmaDmKeepAliveMessage
+------------HWDevID
+------------ManagementServerAddressList
+------------CommercialID
+------------Push
+----------------PFN
+----------------ChannelURI
+----------------Status
+------------Poll
+----------------IntervalForFirstSetOfRetries
+----------------NumberOfFirstRetries
+----------------IntervalForSecondSetOfRetries
+----------------NumberOfSecondRetries
+----------------IntervalForRemainingScheduledRetries
+----------------NumberOfRemainingScheduledRetries
+----------------PollOnLogin
+----------------AllUsersPollOnFirstLogin
+----Unenroll
+----UpdateManagementServiceAddress
+```
+<a href="" id="msft"></a>**./Vendor/MSFT**  
+All the nodes in this CSP are supported in the device context, except for the **ExchangeID** node, which is supported in the user context. For the device context, use the **./Device/Vendor/MSFT** path and for the user context, use the **./User/Vendor/MSFT** path.
 
 <a href="" id="dmclient"></a>**DMClient**  
 Root node for the CSP.
 
 <a href="" id="updatemanagementserviceaddress"></a>**UpdateManagementServiceAddress**  
-For provisioning packages only. Specifies the list of servers (semicolon delimited). The first server in the semicolon delimited list is the server that will be used to instantiate MDM sessions. The list can be a permutation or a subset of the existing server list. You cannot add new servers to the list using this node.
+For provisioning packages only. Specifies the list of servers (semicolon delimited). The first server in the semicolon-delimited list is the server that will be used to instantiate MDM sessions. The list can be a permutation or a subset of the existing server list. You cannot add new servers to the list using this node.
 
 <a href="" id="hwdevid"></a>**HWDevID**  
 Added in Windows 10, version 1703. Returns the hardware device ID.
@@ -39,8 +82,6 @@ Supported operation is Get.
 
 <a href="" id="provider-providerid"></a>**Provider/**<strong>*ProviderID*</strong>  
 Required. This node contains the URI-encoded value of the bootstrapped device management account’s Provider ID. Scope is dynamic. This value is set and controlled by the MDM server. As a best practice, use text that doesn’t require XML/URI escaping.
-
-For Intune, use **MS DM Server** for Windows desktop or **SCConfigMgr** for Windows mobile for the _ProviderID_.
 
 Supported operations are Get and Add.
 
@@ -221,7 +262,7 @@ Added in Windows 10, version 1607. Returns the hardware device ID.
 Supported operation is Get.
 
 <a href="" id="provider-providerid-commercialid"></a>**Provider/*ProviderID*/CommercialID**  
-Added in Windows 10, version 1607. Configures the identifier used to uniquely associate this diagnostic data of this device as belonging to a given organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program. If you disable or do not configure this policy setting, then Microsoft will not be able to use this identifier to associate this machine and its diagnostic data with your organization..
+Added in Windows 10, version 1607. Configures the identifier used to uniquely associate this diagnostic data of this device as belonging to a given organization. If your organization is participating in a program that requires this device to be identified as belonging to your organization then use this setting to provide that identification. The value for this setting will be provided by Microsoft as part of the onboarding process for the program. If you disable or do not configure this policy setting, then Microsoft will not be able to use this identifier to associate this machine and its diagnostic data with your organization.
 
 Supported operations are Add, Get, Replace, and Delete.
 
@@ -265,7 +306,7 @@ Supported operations are Add, Delete, Get, and Replace. Value type is integer.
 
 <a href="" id="provider-providerid-aadsenddevicetoken"></a>**Provider/*ProviderID*/AADSendDeviceToken**  
 
-Device. Added in Windows 10 version 1803. For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token can not be obtained.
+Device. Added in Windows 10 version 1803. For Azure AD backed enrollments, this will cause the client to send a Device Token if the User Token cannot be obtained.
 
 Supported operations are Add, Delete, Get, and Replace. Value type is bool.
 

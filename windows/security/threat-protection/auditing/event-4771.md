@@ -1,16 +1,17 @@
 ---
 title: 4771(F) Kerberos pre-authentication failed. (Windows 10)
-description: Describes security event 4771(F) Kerberos pre-authentication failed.
+description: Describes security event 4771(F) Kerberos pre-authentication failed. This event is generated when the Key Distribution Center fails to issue a Kerberos TGT.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 07/23/2020
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4771(F): Kerberos pre-authentication failed.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates every time the Key Distribution Center fails to issue a Kerberos Ticket Granting Ticket (TGT). This can occur when a domain controller doesn’t have a certificate installed for smart card authentication (for example, with a “Domain Controller” or “Domain Controller Authentication” template), the user’s password has expired, or the wrong password was provided.
+This event generates every time the Key Distribution Center fails to issue a Kerberos Ticket Granting Ticket (TGT). This problem can occur when a domain controller doesn’t have a certificate installed for smart card authentication (for example, with a “Domain Controller” or “Domain Controller Authentication” template), the user’s password has expired, or the wrong password was provided.
 
 This event generates only on domain controllers.
 
@@ -103,7 +104,7 @@ This event is not generated if “Do not require Kerberos preauthentication” o
 
 **Network Information:**
 
--   **Client Address** \[Type = UnicodeString\]**:** IP address of the computer from which the TGT request was received. Formats vary, and include the following:
+-   **Client Address** \[Type = UnicodeString\]**:** IP address of the computer from which the TGT request was received. Here are some examples of formats:
 
     -   **IPv6** or **IPv4** address.
 
@@ -117,7 +118,7 @@ This event is not generated if “Do not require Kerberos preauthentication” o
 
 **Additional Information:**
 
--   **Ticket Options**: \[Type = HexInt32\]: this is a set of different Ticket Flags in hexadecimal format.
+-   **Ticket Options**: \[Type = HexInt32\]: this set of different Ticket Flags is in hexadecimal format.
 
     Example:
 
@@ -125,7 +126,7 @@ This event is not generated if “Do not require Kerberos preauthentication” o
 
     -   Binary view: 01000000100000010000000000010000
 
-    -   Using **MSB 0** bit numbering we have bit 1, 8, 15 and 27 set = Forwardable, Renewable, Canonicalize, Renewable-ok.
+    -   Using **MSB 0**-bit numbering, we have bit 1, 8, 15 and 27 set = Forwardable, Renewable, Canonicalize, Renewable-ok.
 
 > **Note**&nbsp;&nbsp;In the table below **“MSB 0”** bit numbering is used, because RFC documents use this style. In “MSB 0” style bit numbering begins from left.<br><img src="images/msb.png" alt="MSB illustration" width="224" height="57" />
 
@@ -144,17 +145,17 @@ The most common values:
 | 2     | Forwarded                | Indicates either that a TGT has been forwarded or that a ticket was issued from a forwarded TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | 3     | Proxiable                | (TGT only). Tells the ticket-granting service that it can issue tickets with a network address that differs from the one in the TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | 4     | Proxy                    | Indicates that the network address in the ticket is different from the one in the TGT used to obtain the ticket.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| 5     | Allow-postdate           | Postdated tickets SHOULD NOT be supported in [KILE](https://msdn.microsoft.com/library/cc233855.aspx) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| 6     | Postdated                | Postdated tickets SHOULD NOT be supported in [KILE](https://msdn.microsoft.com/library/cc233855.aspx) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| 7     | Invalid                  | This flag indicates that a ticket is invalid, and it must be validated by the KDC before use. Application servers must reject tickets which have this flag set.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| 5     | Allow-postdate           | Postdated tickets SHOULD NOT be supported in [KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| 6     | Postdated                | Postdated tickets SHOULD NOT be supported in [KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) (Microsoft Kerberos Protocol Extension).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| 7     | Invalid                  | This flag indicates that a ticket is invalid, and it must be validated by the KDC before use. Application servers must reject tickets that have this flag set.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | 8     | Renewable                | Used in combination with the End Time and Renew Till fields to cause tickets with long life spans to be renewed at the KDC periodically.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | 9     | Initial                  | Indicates that a ticket was issued using the authentication service (AS) exchange and not issued based on a TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | 10    | Pre-authent              | Indicates that the client was authenticated by the KDC before a ticket was issued. This flag usually indicates the presence of an authenticator in the ticket. It can also flag the presence of credentials taken from a smart card logon.                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | 11    | Opt-hardware-auth        | This flag was originally intended to indicate that hardware-supported authentication was used during pre-authentication. This flag is no longer recommended in the Kerberos V5 protocol. KDCs MUST NOT issue a ticket with this flag set. KDCs SHOULD NOT preserve this flag if it is set by another KDC.                                                                                                                                                                                                                                                                                                                                                    |
 | 12    | Transited-policy-checked | KILE MUST NOT check for transited domains on servers or a KDC. Application servers MUST ignore the TRANSITED-POLICY-CHECKED flag.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | 13    | Ok-as-delegate           | The KDC MUST set the OK-AS-DELEGATE flag if the service account is trusted for delegation.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| 14    | Request-anonymous        | KILE not use this flag.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| 15    | Name-canonicalize        | In order to request referrals the Kerberos client MUST explicitly request the "canonicalize" KDC option for the AS-REQ or TGS-REQ.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| 14    | Request-anonymous        | KILE does not use this flag.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| 15    | Name-canonicalize        | To request referrals, the Kerberos client MUST explicitly request the "canonicalize" KDC option for the AS-REQ or TGS-REQ.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | 16-25 | Unused                   | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | 26    | Disable-transited-check  | By default the KDC will check the transited field of a TGT against the policy of the local realm before it will issue derivative tickets based on the TGT. If this flag is set in the request, checking of the transited field is disabled. Tickets issued without the performance of this check will be noted by the reset (0) value of the TRANSITED-POLICY-CHECKED flag, indicating to the application server that the transited field must be checked locally. KDCs are encouraged but not required to honor<br>the DISABLE-TRANSITED-CHECK option.<br>Should not be in use, because Transited-policy-checked flag is not supported by KILE. |
 | 27    | Renewable-ok             | The RENEWABLE-OK option indicates that a renewable ticket will be acceptable if a ticket with the requested life cannot otherwise be provided, in which case a renewable ticket may be issued with a renew-till equal to the requested end time. The value of the renew-till field may still be limited by local limits, or limits selected by the individual principal or server.                                                                                                                                                                                                                                                                           |
@@ -165,15 +166,80 @@ The most common values:
 
 > Table 6. Kerberos ticket flags.
 
--   **Failure Code** \[Type = HexInt32\]**:** hexadecimal failure code of failed TGT issue operation. The table below contains the list of the most common error codes for this event:
+-   **Failure Code** \[Type = HexInt32\]**:** hexadecimal failure code of failed TGT issue operation. The table below contains the list of the error codes for this event as defined in [RFC 4120](https://tools.ietf.org/html/rfc4120#section-7.5.9):
 
 | Code | Code Name                      | Description                                                  | Possible causes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------|--------------------------------|--------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0x10 | KDC\_ERR\_PADATA\_TYPE\_NOSUPP | KDC has no support for PADATA type (pre-authentication data) | Smart card logon is being attempted and the proper certificate cannot be located. This can happen because the wrong certification authority (CA) is being queried or the proper CA cannot be contacted in order to get Domain Controller or Domain Controller Authentication certificates for the domain controller.<br>It can also happen when a domain controller doesn’t have a certificate installed for smart cards (Domain Controller or Domain Controller Authentication templates). |
-| 0x17 | KDC\_ERR\_KEY\_EXPIRED         | Password has expired—change password to reset                | The user’s password has expired.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| 0x18 | KDC\_ERR\_PREAUTH\_FAILED      | Pre-authentication information was invalid                   | The wrong password was provided.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 0x0         | KDC\_ERR\_NONE                            | No error                                        |
+| 0x1         | KDC\_ERR\_NAME\_EXP                       | Client's entry in database has expired          |
+| 0x2         | KDC\_ERR\_SERVICE\_EXP                    | Server's entry in database has expired          |
+| 0x3         | KDC\_ERR\_BAD\_PVNO                       | Requested protocol version number not supported |
+| 0x4         | KDC\_ERR\_C\_OLD\_MAST\_KVNO              | Client's key encrypted in old master key        |
+| 0x5         | KDC\_ERR\_S\_OLD\_MAST\_KVNO              | Server's key encrypted in old master key        |
+| 0x6         | KDC\_ERR\_C\_PRINCIPAL\_UNKNOWN           | Client not found in Kerberos database           |
+| 0x7         | KDC\_ERR\_S\_PRINCIPAL\_UNKNOWN           | Server not found in Kerberos database           |
+| 0x8         | KDC\_ERR\_PRINCIPAL\_NOT\_UNIQUE          | Multiple principal entries in database          |
+| 0x9         | KDC\_ERR\_NULL\_KEY                       | The client or server has a null key             |
+| 0xa         | KDC\_ERR\_CANNOT\_POSTDATE                | Ticket not eligible for postdating              |
+| 0xb         | KDC\_ERR\_NEVER\_VALID                    | Requested starttime is later than end time      |
+| 0xc         | KDC\_ERR\_POLICY                          | KDC policy rejects request                      |
+| 0xd         | KDC\_ERR\_BADOPTION                       | KDC cannot accommodate requested option         |
+| 0xe         | KDC\_ERR\_ETYPE\_NOSUPP                   | KDC has no support for encryption type          |
+| 0xf         | KDC\_ERR\_SUMTYPE\_NOSUPP                 | KDC has no support for checksum type            |
+| 0x10         | KDC\_ERR\_PADATA\_TYPE\_NOSUPP            | KDC has no support for PADATA type (pre-authentication data)|Smart card logon is being attempted and the proper certificate cannot be located. This problem can happen because the wrong certification authority (CA) is being queried or the proper CA cannot be contacted in order to get Domain Controller or Domain Controller Authentication certificates for the domain controller.<br>It can also happen when a domain controller doesn’t have a certificate installed for smart cards (Domain Controller or Domain Controller Authentication templates).
+| 0x11         | KDC\_ERR\_TRTYPE\_NOSUPP                  | KDC has no support for transited type           |
+| 0x12         | KDC\_ERR\_CLIENT\_REVOKED                 | Clients credentials have been revoked           |
+| 0x13         | KDC\_ERR\_SERVICE\_REVOKED                | Credentials for server have been revoked        |
+| 0x14         | KDC\_ERR\_TGT\_REVOKED                    | TGT has been revoked                            |
+| 0x15         | KDC\_ERR\_CLIENT\_NOTYET                  | Client not yet valid; try again later           |
+| 0x16         | KDC\_ERR\_SERVICE\_NOTYET                 | Server not yet valid; try again later           |
+| 0x17         | KDC\_ERR\_KEY\_EXPIRED                    | Password has expired—change password to reset   |The user’s password has expired.
+| 0x18         | KDC\_ERR\_PREAUTH\_FAILED                 | Pre-authentication information was invalid      |The wrong password was provided.
+| 0x19         | KDC\_ERR\_PREAUTH\_REQUIRED               | Additional pre-authentication required          |
+| 0x1a         | KDC\_ERR\_SERVER\_NOMATCH                 | Requested server and ticket don't match         |
+| 0x1b         | KDC\_ERR\_MUST\_USE\_USER2USER            | Server principal valid for user2user only       |
+| 0x1c         | KDC\_ERR\_PATH\_NOT\_ACCEPTED             | KDC Policy rejects transited path               |
+| 0x1d         | KDC\_ERR\_SVC\_UNAVAILABLE                | A service is not available                      |
+| 0x1f         | KRB\_AP\_ERR\_BAD\_INTEGRITY              | Integrity check on decrypted field failed       |
+| 0x20         | KRB\_AP\_ERR\_TKT\_EXPIRED                | Ticket expired                                  |
+| 0x21         | KRB\_AP\_ERR\_TKT\_NYV                    | Ticket not yet valid                            |
+| 0x22         | KRB\_AP\_ERR\_REPEAT                      | Request is a replay                             |
+| 0x23         | KRB\_AP\_ERR\_NOT\_US                     | The ticket isn't for us                         |
+| 0x24         | KRB\_AP\_ERR\_BADMATCH                    | Ticket and authenticator don't match            |
+| 0x25         | KRB\_AP\_ERR\_SKEW                        | Clock skew too great                            |
+| 0x26         | KRB\_AP\_ERR\_BADADDR                     | Incorrect net address                           |
+| 0x27         | KRB\_AP\_ERR\_BADVERSION                  | Protocol version mismatch                       |
+| 0x28         | KRB\_AP\_ERR\_MSG\_TYPE                   | Invalid msg type                                |
+| 0x29         | KRB\_AP\_ERR\_MODIFIED                    | Message stream modified                         |
+| 0x2a         | KRB\_AP\_ERR\_BADORDER                    | Message out of order                            |
+| 0x2c         | KRB\_AP\_ERR\_BADKEYVER                   | Specified version of key is not available       |
+| 0x2d         | KRB\_AP\_ERR\_NOKEY                       | Service key not available                       |
+| 0x2e         | KRB\_AP\_ERR\_MUT\_FAIL                   | Mutual authentication failed                    |
+| 0x2f         | KRB\_AP\_ERR\_BADDIRECTION                | Incorrect message direction                     |
+| 0x30         | KRB\_AP\_ERR\_METHOD                      | Alternative authentication method required      |
+| 0x31         | KRB\_AP\_ERR\_BADSEQ                      | Incorrect sequence number in message            |
+| 0x32         | KRB\_AP\_ERR\_INAPP\_CKSUM                | Inappropriate type of checksum in message       |
+| 0x33         | KRB\_AP\_PATH\_NOT\_ACCEPTED              | Policy rejects transited path                   |
+| 0x34         | KRB\_ERR\_RESPONSE\_TOO\_BIG              | Response too big for UDP; retry with TCP        |
+| 0x3c         | KRB\_ERR\_GENERIC                         | Generic error (description in e-text)           |
+| 0x3d         | KRB\_ERR\_FIELD\_TOOLONG                  | Field is too long for this implementation       |
+| 0x3e         | KDC\_ERROR\_CLIENT\_NOT\_TRUSTED          | Reserved for PKINIT                             |
+| 0x3f         | KDC\_ERROR\_KDC\_NOT\_TRUSTED             | Reserved for PKINIT                             |
+| 0x40         | KDC\_ERROR\_INVALID\_SIG                  | Reserved for PKINIT                             |
+| 0x41         | KDC\_ERR\_KEY\_TOO\_WEAK                  | Reserved for PKINIT                             |
+| 0x42         | KDC\_ERR\_CERTIFICATE\_MISMATCH           | Reserved for PKINIT                             |
+| 0x43         | KRB\_AP\_ERR\_NO\_TGT                     | No TGT available to validate USER-TO-USER       |
+| 0x44         | KDC\_ERR\_WRONG\_REALM                    | Reserved for future use                         |
+| 0x45         | KRB\_AP\_ERR\_USER\_TO\_USER\_REQUIRED    | Ticket must be for USER-TO-USER                 |
+| 0x46         | KDC\_ERR\_CANT\_VERIFY\_CERTIFICATE       | Reserved for PKINIT                             |
+| 0x47         | KDC\_ERR\_INVALID\_CERTIFICATE            | Reserved for PKINIT                             |
+| 0x48         | KDC\_ERR\_REVOKED\_CERTIFICATE            | Reserved for PKINIT                             |
+| 0x49         | KDC\_ERR\_REVOCATION\_STATUS\_UNKNOWN     | Reserved for PKINIT                             |
+| 0x4a         | KDC\_ERR\_REVOCATION\_STATUS\_UNAVAILABLE | Reserved for PKINIT                             |
+| 0x4b         | KDC\_ERR\_CLIENT\_NAME\_MISMATCH          | Reserved for PKINIT                             |
+| 0x4c         | KDC\_ERR\_KDC\_NAME\_MISMATCH             | Reserved for PKINIT                             |                                                                   
 
--   **Pre-Authentication Type** \[Type = UnicodeString\]: the code of [pre-Authentication](https://technet.microsoft.com/library/cc772815(v=ws.10).aspx) type which was used in TGT request.
+-   **Pre-Authentication Type** \[Type = UnicodeString\]: the code of [pre-Authentication](/previous-versions/windows/it-pro/windows-server-2003/cc772815(v=ws.10)) type that was used in TGT request.
 
 <span id="kerberos-preauthentication-types" />
 ## Table 5. Kerberos Pre-Authentication types.
@@ -181,7 +247,7 @@ The most common values:
 | Type | Type Name              | Description                                                                                                                                                                                                                                                                                                                                                                                                      |
 |------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0    | -                      | Logon without Pre-Authentication.                                                                                                                                                                                                                                                                                                                                                                                |
-| 2    | PA-ENC-TIMESTAMP       | This is a normal type for standard password authentication.                                                                                                                                                                                                                                                                                                                                                      |
+| 2    | PA-ENC-TIMESTAMP       | This type is normal for standard password authentication.                                                                                                                                                                                                                                                                                                                                                      |
 | 11   | PA-ETYPE-INFO          | The ETYPE-INFO pre-authentication type is sent by the KDC in a KRB-ERROR indicating a requirement for additional pre-authentication. It is usually used to notify a client of which key to use for the encryption of an encrypted timestamp for the purposes of sending a PA-ENC-TIMESTAMP pre-authentication value.<br>Never saw this Pre-Authentication Type in Microsoft Active Directory environment.  |
 | 15   | PA-PK-AS-REP\_OLD      | Used for Smart Card logon authentication.                                                                                                                                                                                                                                                                                                                                                                        |
 | 16   | PA-PK-AS-REQ           | Request sent to KDC in Smart Card authentication scenarios.|
@@ -193,7 +259,7 @@ The most common values:
 
 **Certificate Information:**
 
-- **Certificate Issuer Name** \[Type = UnicodeString\]**:** the name of Certification Authority which issued smart card certificate. Populated in **Issued by** field in certificate. Always empty for [4771](event-4771.md) events.
+- **Certificate Issuer Name** \[Type = UnicodeString\]**:** the name of Certification Authority that issued smart card certificate. Populated in **Issued by** field in certificate. Always empty for [4771](event-4771.md) events.
 
 - **Certificate Serial Number** \[Type = UnicodeString\]**:** smart card certificate’s serial number. Can be found in **Serial number** field in the certificate. Always empty for [4771](event-4771.md) events.
 
@@ -208,14 +274,14 @@ For 4771(F): Kerberos pre-authentication failed.
 | **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **“Security ID”** that corresponds to the high-value account or accounts.                                                              |
 | **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **“Security ID”** (with other information) to monitor how or when a particular account is being used. |
 | **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor this event with the **“Security ID”** that corresponds to the accounts that should never be used.                                                          |
-| **Account whitelist**: You might have a specific whitelist of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a “whitelist-only” action, review the **“Security ID”** for accounts that are outside the whitelist.                                  |
+| **Account allow list**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a “allow list-only” action, review the **“Security ID”** for accounts that are outside the allow list.                                  |
 | **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor “**Subject\\Account Name”** for names that don’t comply with naming conventions.                                                                           |
 
 -   You can track all [4771](event-4771.md) events where the **Client Address** is not from your internal IP range or not from private IP ranges.
 
--   If you know that **Account Name** should be used only from known list of IP addresses, track all **Client Address** values for this **Account Name** in [4771](event-4771.md) events. If **Client Address** is not from the whitelist, generate the alert.
+-   If you know that **Account Name** should be used only from known list of IP addresses, track all **Client Address** values for this **Account Name** in [4771](event-4771.md) events. If **Client Address** is not from the allow list, generate the alert.
 
--   All **Client Address** = ::1 means local authentication. If you know the list of accounts which should log on to the domain controllers, then you need to monitor for all possible violations, where **Client Address** = ::1 and **Account Name** is not allowed to log on to any domain controller.
+-   All **Client Address** = ::1 means local authentication. If you know the list of accounts that should log on to the domain controllers, then you need to monitor for all possible violations, where **Client Address** = ::1 and **Account Name** is not allowed to log on to any domain controller.
 
 -   All [4771](event-4771.md) events with **Client Port** field value &gt; 0 and &lt; 1024 should be examined, because a well-known port was used for outbound connection.
 
@@ -226,6 +292,5 @@ For 4771(F): Kerberos pre-authentication failed.
 | **Pre-Authentication Type** | Value is **not 15** when account must use a smart card for authentication. For more information, see [Table 5. Kerberos Pre-Authentication types](#kerberos-preauthentication-types).                                        |
 | **Pre-Authentication Type** | Value is **not 2** when only standard password authentication is in use in the organization. For more information, see [Table 5. Kerberos Pre-Authentication types](#kerberos-preauthentication-types).                      |
 | **Pre-Authentication Type** | Value is **not 138** when Kerberos Armoring is enabled for all Kerberos communications in the organization. For more information, see [Table 5. Kerberos Pre-Authentication types](#kerberos-preauthentication-types).       |
-| **Result Code**             | **0x10** (KDC has no support for PADATA type (pre-authentication data)). This error can help you to more quickly identify smart-card related problems with Kerberos authentication.                                          |
-| **Result Code**             | **0x18** ((Pre-authentication information was invalid), if you see, for example N events in last N minutes. This can be an indicator of brute-force attack on the account password, especially for highly critical accounts. |
-
+| **Failure Code**             | **0x10** (KDC has no support for PADATA type (pre-authentication data)). This error can help you to more quickly identify smart-card related problems with Kerberos authentication.                                          |
+| **Failure Code**             | **0x18** ((Pre-authentication information was invalid), if you see, for example N events in last N minutes. This issue can indicate a brute-force attack on the account password, especially for highly critical accounts. |

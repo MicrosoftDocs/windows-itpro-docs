@@ -4,13 +4,13 @@ description: Create a provisioning package with multivariant settings to customi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 11/08/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ---
 
 # Create a provisioning package with multivariant settings
@@ -61,7 +61,7 @@ The following table shows the conditions supported in Windows 10 provisioning fo
 | ProcessorType | P1 | Supported | Supported | String | Use to target settings based on the processor type. |
 | ProcessorName | P1 | Supported | Supported | String | Use to target settings based on the processor name. |
 | AoAc ("Always On, Always Connected") | P1 | Supported | Supported | Boolean | Set the value to **0** (false) or **1** (true). If this condition is TRUE, the system supports the S0 low power idle model. |
-| PowerPlatformRole | P1 | Supported | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the [POWER_PLATFORM_ROLE enumeration](https://msdn.microsoft.com/library/windows/desktop/aa373174.aspx).  |
+| PowerPlatformRole | P1 | Supported | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the [POWER_PLATFORM_ROLE enumeration](/windows/win32/api/winnt/ne-winnt-power_platform_role).  |
 | Architecture | P1 | Supported | Supported | String | Matches the PROCESSOR_ARCHITECTURE environment variable. |
 | Server | P1 | Supported | Supported | Boolean | Set the value to **0** (false) or **1** (true) to identify a server. |
 | Region | P1 | Supported | Supported | Enumeration | Use to target settings based on country/region, using the 2-digit alpha ISO code per [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). |
@@ -315,10 +315,4 @@ The following events trigger provisioning on Windows 10 devices:
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
-
- 
-
-
-
-
 

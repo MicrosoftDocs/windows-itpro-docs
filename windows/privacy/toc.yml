@@ -1,0 +1,71 @@
+- name: Privacy
+  href: index.yml
+  items: 
+    - name: "Windows 10 & Privacy Compliance: A Guide for IT and Compliance Professionals"
+      href: windows-10-and-privacy-compliance.md
+    - name: Configure Windows diagnostic data in your organization
+      href: configure-windows-diagnostic-data-in-your-organization.md
+    - name: Changes to Windows diagnostic data collection
+      href: changes-to-windows-diagnostic-data-collection.md
+    - name: Diagnostic Data Viewer
+      items: 
+        - name: Diagnostic Data Viewer Overview
+          href: diagnostic-data-viewer-overview.md
+        - name: Diagnostic Data Viewer for PowerShell Overview
+          href: Microsoft-DiagnosticDataViewer.md
+    - name: Required Windows diagnostic data events and fields
+      items: 
+        - name: Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic data events and fields
+          href: required-windows-diagnostic-data-events-and-fields-2004.md
+        - name: Windows 10, version 1909 and Windows 10, version 1903 required level Windows diagnostic events and fields
+          href: basic-level-windows-diagnostic-events-and-fields-1903.md
+        - name: Windows 10, version 1809 required Windows diagnostic events and fields
+          href: basic-level-windows-diagnostic-events-and-fields-1809.md
+        - name: Windows 10, version 1803 required Windows diagnostic events and fields
+          href: basic-level-windows-diagnostic-events-and-fields-1803.md
+        - name: Windows 10, version 1709 required Windows diagnostic events and fields
+          href: basic-level-windows-diagnostic-events-and-fields-1709.md
+        - name: Windows 10, version 1703 required Windows diagnostic events and fields
+          href: basic-level-windows-diagnostic-events-and-fields-1703.md
+    - name: Optional Windows diagnostic data events and fields
+      items:
+        - name: Windows 10, version 1709 and newer optional diagnostic data
+          href: windows-diagnostic-data.md
+        - name: Windows 10, version 1703 optional diagnostic data
+          href: windows-diagnostic-data-1703.md
+    - name: Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy
+      href: enhanced-diagnostic-data-windows-analytics-events-and-fields.md
+    - name: Manage Windows 10 connection endpoints
+      items: 
+        - name: Manage connections from Windows operating system components to Microsoft services
+          href: manage-connections-from-windows-operating-system-components-to-microsoft-services.md
+        - name: Manage connections from Windows operating system components to Microsoft services using MDM
+          href: manage-connections-from-windows-operating-system-components-to-microsoft-services-using-MDM.md
+        - name: Connection endpoints for Windows 10, version 20H2
+          href: manage-windows-20H2-endpoints.md
+        - name: Connection endpoints for Windows 10, version 2004
+          href: manage-windows-2004-endpoints.md
+        - name: Connection endpoints for Windows 10, version 1909
+          href: manage-windows-1909-endpoints.md
+        - name: Connection endpoints for Windows 10, version 1903
+          href: manage-windows-1903-endpoints.md
+        - name: Connection endpoints for Windows 10, version 1809
+          href: manage-windows-1809-endpoints.md
+        - name: Connection endpoints for Windows 10, version 1803
+          href: manage-windows-1803-endpoints.md
+        - name: Connection endpoints for Windows 10, version 1709
+          href: manage-windows-1709-endpoints.md
+        - name: Connection endpoints for non-Enterprise editions of Windows 10, version 20H2
+          href: windows-endpoints-20H2-non-enterprise-editions.md
+        - name: Connection endpoints for non-Enterprise editions of Windows 10, version 2004
+          href: windows-endpoints-2004-non-enterprise-editions.md
+        - name: Connection endpoints for non-Enterprise editions of Windows 10, version 1909
+          href: windows-endpoints-1909-non-enterprise-editions.md
+        - name: Connection endpoints for non-Enterprise editions of Windows 10, version 1903
+          href: windows-endpoints-1903-non-enterprise-editions.md
+        - name: Connection endpoints for non-Enterprise editions of Windows 10, version 1809
+          href: windows-endpoints-1809-non-enterprise-editions.md
+        - name: Connection endpoints for non-Enterprise editions of Windows 10, version 1803
+          href: windows-endpoints-1803-non-enterprise-editions.md
+        - name: Connection endpoints for non-Enterprise editions of Windows 10, version 1709
+          href: windows-endpoints-1709-non-enterprise-editions.md

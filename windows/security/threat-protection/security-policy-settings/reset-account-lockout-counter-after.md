@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: d5ccf6dd-5ba7-44a9-8e0b-c478d8b1442c
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/02/2018
+ms.technology: mde
 ---
 
 # Reset account lockout counter after
@@ -28,7 +29,7 @@ Describes the best practices, location, values, and security considerations for 
 
 The **Reset account lockout counter after** policy setting determines the number of minutes that must elapse from the time a user fails to log on before the failed logon attempt counter is reset to 0. If [Account lockout threshold](account-lockout-threshold.md) is set to a number greater than zero, this reset time must be less than or equal to the value of [Account lockout duration](account-lockout-duration.md).
 
-A disadvantage to setting this too high is that users lock themselves out for an inconveniently long period if they exceed the account lockout threshold through logon errors. Users may make excessive Help Desk calls.
+The disadvantage of a high setting is that users lock themselves out for an inconveniently long period if they exceed the account lockout threshold through logon errors. Users may make excessive Help Desk calls.
 
 ### Possible values
 
@@ -37,9 +38,9 @@ A disadvantage to setting this too high is that users lock themselves out for an
 
 ### Best practices
 
-You need to determine the threat level for your organization and balance that against the cost of your Help Desk support for password resets. Each organization will have specific requirements. 
+Determine the threat level for your organization and balance that against the cost of your Help Desk support for password resets. Each organization will have specific requirements. 
 
-[Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend configuring the **Reset account lockout counter after** policy setting to 15, but as with other account lockeout settings, this value is more of a guideline than a rule or best practice because there is no "one size fits all." For more information, see [Configuring Account Lockout](https://blogs.technet.microsoft.com/secguide/2014/08/13/configuring-account-lockout/).
+[Windows security baselines](../windows-security-baselines.md) recommend configuring the **Reset account lockout counter after** policy setting to 15, but as with other account lockeout settings, this value is more of a guideline than a rule or best practice because there is no "one size fits all." For more information, see [Configuring Account Lockout](/archive/blogs/secguide/configuring-account-lockout).
 
 ### Location
 
@@ -68,7 +69,7 @@ Users can accidentally lock themselves out of their accounts if they mistype the
 
 ### Countermeasure
 
-[Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend configuring the **Reset account lockout counter after** policy setting to 15.
+[Windows security baselines](../windows-security-baselines.md) recommend configuring the **Reset account lockout counter after** policy setting to 15.
 
 ### Potential impact
 

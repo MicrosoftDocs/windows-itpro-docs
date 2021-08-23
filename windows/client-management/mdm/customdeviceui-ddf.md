@@ -1,6 +1,6 @@
 ---
 title: CustomDeviceUI DDF
-description: CustomDeviceUI DDF
+description: Learn about the OMA DM device description framework (DDF) for the CustomDeviceUI configuration service provider.
 ms.assetid: E6D6B902-C57C-48A6-9654-CCBA3898455E
 ms.reviewer: 
 manager: dansimp

@@ -1,6 +1,6 @@
 ---
 title: SUPL CSP
-description: SUPL CSP
+description: Learn how the SUPL configuration service provider (CSP) is used to configure the location client.
 ms.assetid: afad0120-1126-4fc5-8e7a-64b9f2a5eae1
 ms.reviewer: 
 manager: dansimp
@@ -13,9 +13,6 @@ ms.date: 09/12/2019
 ---
 
 # SUPL CSP
-
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 The SUPL configuration service provider is used to configure the location client, as shown in the following table:
 
@@ -62,16 +59,44 @@ The SUPL configuration service provider is used to configure the location client
 
 The SUPL or V2 UPL connection will be reconfigured every time the device is rebooted, a new UICC is inserted, or new settings are provisioned by using OMA Client Provisioning, OMA DM, or test tools. When the device is in roaming mode, it reverts to Mobile Station Standalone mode, in which only the built–in Microsoft location components are used.
 
-The following diagram shows the SUPL configuration service provider management object in tree format as used by OMA DM and OMA Client Provisioning.
+The following shows the SUPL configuration service provider management object in tree format as used by OMA DM and OMA Client Provisioning.
 
 > **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application.
 
  
 
-![SUPL csp (dm,cp)](images/provisioning-csp-supl-dmandcp.png)
-
-
-
+```
+./Vendor/MSFT/
+SUPL
+----SUPL1
+--------AppID
+--------Addr
+--------Ext
+------------Microsoft
+----------------Version
+----------------MCCMNPairs
+----------------HighAccPositioningMethod
+----------------LocMasterSwitchDependencyNII
+----------------NIDefaultTimeout 
+----------------ServerAccessInterval
+----------------RootCertificate
+--------------------Name
+--------------------Data
+----------------RootCertificate2
+--------------------Name
+--------------------Data
+----------------RootCertificate3
+--------------------Name
+--------------------Data
+----V2UPL1 
+--------MPC
+--------PDE
+--------PositioningMethod_MR
+--------LocMasterSwitchDependencyNII
+--------ApplicationTypeIndicator_MR
+--------NIDefaultTimeout 
+--------ServerAccessInterval
+```
 <a href="" id="supl1"></a>**SUPL1**  
 Required for SUPL. Defines the account for the SUPL Enabled Terminal (SET) node. Only one SUPL account is supported at a given time.
 
@@ -89,7 +114,7 @@ For OMA DM, if the format for this node is incorrect the entry will be ignored a
 Optional. Determines the major version of the SUPL protocol to use. For SUPL 1.0.0, set this value to 1. For SUPL 2.0.0, set this value to 2. The default is 1. Refer to FullVersion to define the minor version and the service indicator.
 
 <a href="" id="fullversion"></a>**FullVersion**  
-Added in the next major release of Windows 10. Optional. Determines the full version (X.Y.Z where X, Y, and Z are the major version, the minor version, and the service indicator, respectively) of the SUPL protocol to use. The default is 1.0.0. If FullVersion is defined, Version field is ignored.
+Added in Windows 10, version 2004. Optional. Determines the full version (X.Y.Z where X, Y, and Z are the major version, the minor version, and the service indicator, respectively) of the SUPL protocol to use. The default is 1.0.0. If FullVersion is defined, Version field is ignored.
 
 <a href="" id="mccmncpairs"></a>**MCCMNCPairs**  
 Required. List all of the MCC and MNC pairs owned by the mobile operator. This list is used to verify that the UICC matches the network and SUPL can be used. When the UICC and network do not match, the device uses the default location service and does not use SUPL.

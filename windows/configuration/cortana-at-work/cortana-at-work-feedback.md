@@ -1,26 +1,25 @@
 ---
-title: Send feedback about Cortana at work back to Microsoft (Windows 10)
-description: How to send feedback to Microsoft about Cortana at work.
+title: Send feedback about Cortana at work back to Microsoft
+description: Learn how to send feedback to Microsoft about Cortana at work so you can provide more information to help diagnose reported issues..
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.date: 10/05/2017
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Send feedback about Cortana at work back to Microsoft
-**Applies to:**
+# Send feedback about Cortana back to Microsoft
 
--   Windows 10, version 1703
--   Windows 10 Mobile, version 1703
+To provide feedback on an individual request or response, select the item in the conversation history and then select **Give feedback**. This opens the Feedback Hub application where you can provide more information to help diagnose reported issues.
 
-We ask that you report bugs and issues. To provide feedback, you can click the **Feedback** icon in the Cortana window. When you send this form to Microsoft it also includes troubleshooting info, in case you run into problems.
+:::image type="content" source="../screenshot1.png" alt-text="Screenshot: Send feedback page":::
 
-![Cortana at work, showing how to provide feedback to Microsoft](../images/cortana-feedback.png)
+To provide feedback about the application in general, go to the **Settings** menu by selecting the three dots in the top left of the application, and select **Feedback**. This opens the Feedback Hub where more information on the issue can be provided.
 
-If you don't want to use the feedback tool in Cortana, you can add feedback through the general Windows Insider Program feedback app. For info about the feedback app, see [How to use Windows Insider Preview – Updates and feedback](https://windows.microsoft.com/en-us/windows/preview-updates-feedback-pc).
+:::image type="content" source="../screenshot12.png" alt-text="Screenshot: Select Feedback to go to the Feedback Hub":::
 
+In order for enterprise users to provide feedback, admins must unblock the Feedback Hub in the [Azure portal](https://portal.azure.com/). Go to the **Enterprise applications section** and enable **Users can allow apps to access their data**.
