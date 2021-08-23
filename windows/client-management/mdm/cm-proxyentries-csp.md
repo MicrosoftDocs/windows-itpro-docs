@@ -1,6 +1,6 @@
 ---
 title: CM\_ProxyEntries CSP
-description: Configure proxy connections on mobile devices using CM\_ProxyEntries CSP.
+description: Learn how the CM\_ProxyEntries configuration service provider is used to configure proxy connections on the mobile device.
 ms.assetid: f4c3dc71-c85a-4c68-9ce9-19f408ff7a0a
 ms.reviewer: 
 manager: dansimp
@@ -17,18 +17,49 @@ ms.date: 06/26/2017
 
 The CM\_ProxyEntries configuration service provider is used to configure proxy connections on the mobile device.
 
-> **Note**  CM\_ProxyEntries CSP is only supported in Windows 10 Mobile.
-> 
-> 
-> 
-> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> [!NOTE]
+> CM\_ProxyEntries CSP is only supported in Windows 10 Mobile.
+
+> [!IMPORTANT]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
  
 
-The following diagram shows the CM\_ProxyEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP) and OMA Device Management(OMA DM). Support for OMA DM was added in Windows 10, version 1607.
+The following shows the CM\_ProxyEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP) and OMA Device Management(OMA DM). Support for OMA DM was added in Windows 10, version 1607.
 
-![cm\-proxyentries csp (cp)](images/provisioning-csp-cm-proxyentries-cp.png)
+```
+./Vendor/MSFT
+CM_ProxyEntries
+----Entry
+--------ConnectionName
+--------BypassLocal
+--------Enable
+--------Exception
+--------Password
+--------Port
+--------Server
+--------Type
+--------Username
 
+
+./Device/Vendor/MSFT
+Root
+
+
+./Vendor/MSFT
+./Device/Vendor/MSFT
+CM_ProxyEntries
+----Entry
+--------ConnectionName
+--------BypassLocal
+--------Enable
+--------Exception
+--------Password
+--------Port
+--------Server
+--------Type
+--------Username
+```
 <a href="" id="entryname"></a>**entryname**  
 Defines the name of the connection proxy.
 

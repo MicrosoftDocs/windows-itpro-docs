@@ -17,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Group Policy, the Group Policy Management Console (GPMC), and Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 A Microsoft Management Console (MMC)-based tool that uses scriptable interfaces to manage Group Policy. The 32-bit and 64-bit versions are included with Windows Server R2 with Service Pack 1 (SP1) and Windows Server 2012 R2.
 
 ## Why use the GPMC?
@@ -36,7 +39,7 @@ The GPMC lets you:
 
 -   Create scriptable interfaces to support all of the operations available within the GPMC. You can't use scripts to edit individual policy settings in a GPO.
 
-For more information about the GPMC, see [Group Policy Management Console](https://go.microsoft.com/fwlink/p/?LinkId=214515) on TechNet.
+For more information about the GPMC, see [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753298(v=ws.11)) on TechNet.
 
 ## Searching for Group Policy settings
 To search for Group Policy settings in the Group Policy Management Console (GPMC), use the [Group Policy Search tool](https://go.microsoft.com/fwlink/p/?LinkId=279857). To find the Group Policy settings, click **Windows Components**, and then click **Internet Explorer**.
@@ -44,6 +47,3 @@ To search for Group Policy settings in the Group Policy Management Console (GPMC
  
 
  
-
-
-

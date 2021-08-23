@@ -5,11 +5,10 @@ keywords: ["shared pc mode"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/02/2018
 ms.reviewer: 
 manager: dansimp
 ---
@@ -24,7 +23,7 @@ manager: dansimp
 Windows 10, version 1607, introduced *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Pro Education, Education, and Enterprise.
 
 > [!NOTE]
-> If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](https://technet.microsoft.com/edu/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
+> If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](/education/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
 
 ## Shared PC mode concepts
 A Windows 10 PC in shared PC mode is designed to be management- and maintenance-free with high reliability. In shared PC mode, only one user can be signed in at a time. When the PC is locked, the currently signed in user can always be signed out at the lock screen. 
@@ -46,15 +45,15 @@ Use one of the following methods to configure Windows Update:
 - MDM: Set **Update/AllowAutoUpdate** to `4`. 
 - Provisioning: In Windows Imaging and Configuration Designer (ICD), set **Policies/Update/AllowAutoUpdate** to `4`. 
 
-[Learn more about the AllowAutoUpdate settings](https://msdn.microsoft.com/library/windows/hardware/dn904962.aspx#Update_AllowAutoUpdate)
+[Learn more about the AllowAutoUpdate settings](/windows/client-management/mdm/policy-configuration-service-provider#Update_AllowAutoUpdate)
 
 ### App behavior
 
 Apps can take advantage of shared PC mode with the following three APIs:  
 
-- [IsEnabled](https://docs.microsoft.com/uwp/api/windows.system.profile.sharedmodesettings) - This informs apps when the PC has been configured for shared use scenarios. For example, an app might only download content on demand on a device in shared PC mode, or might skip first run experiences.   
-- [ShouldAvoidLocalStorage](https://docs.microsoft.com/uwp/api/windows.system.profile.sharedmodesettings) - This informs apps when the PC has been configured to not allow the user to save to the local storage of the PC. Instead, only cloud save locations should be offered by the app or saved automatically by the app.  
-- [IsEducationEnvironment](https://docs.microsoft.com/uwp/api/windows.system.profile.educationsettings) - This informs apps when the PC is used in an education environment. Apps may want to handle diagnostic data differently or hide advertising functionality.  
+- [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings) - This informs apps when the PC has been configured for shared use scenarios. For example, an app might only download content on demand on a device in shared PC mode, or might skip first run experiences.   
+- [ShouldAvoidLocalStorage](/uwp/api/windows.system.profile.sharedmodesettings) - This informs apps when the PC has been configured to not allow the user to save to the local storage of the PC. Instead, only cloud save locations should be offered by the app or saved automatically by the app.  
+- [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings) - This informs apps when the PC is used in an education environment. Apps may want to handle diagnostic data differently or hide advertising functionality.  
  
 
 ### Customization
@@ -62,19 +61,19 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 
 | Setting | Value |
 |:---|:---|
-| EnableSharedPCMode | Set as **True**. If this is not set to **True**, shared PC mode is not turned on and none of the other settings apply. This setting controls this API: [IsEnabled](https://docs.microsoft.com/uwp/api/windows.system.profile.sharedmodesettings) </br></br>Some of the remaining settings in **SharedPC** are optional, but we strongly recommend that you also set `EnableAccountManager` to **True**.  |
+| EnableSharedPCMode | Set as **True**. If this is not set to **True**, shared PC mode is not turned on and none of the other settings apply. This setting controls this API: [IsEnabled](/uwp/api/windows.system.profile.sharedmodesettings) </br></br>Some of the remaining settings in **SharedPC** are optional, but we strongly recommend that you also set `EnableAccountManager` to **True**.  |
 | AccountManagement: AccountModel | This option controls how users can sign-in on the PC. Choosing domain-joined will enable any user in the domain to sign-in. Specifying the guest option will add the **Guest** option to the sign-in screen and enable anonymous guest access to the PC. <br/>  - **Only guest** allows anyone to use the PC as a local standard (non-admin) account.<br/>  - **Domain-joined only** allows users to sign in with an Active Directory or Azure AD account.<br/>-   **Domain-joined and guest** allows users to sign in with an Active Directory, Azure AD, or local standard account. |
 | AccountManagement: DeletionPolicy | - **Delete immediately** will delete the account on sign-out. <br/>- **Delete at disk space threshold** will start deleting accounts when available disk space falls below the threshold you set for **DiskLevelDeletion**, and it will stop deleting accounts when the available disk space reaches the threshold you set for **DiskLevelCaching**. Accounts are deleted in order of oldest accessed to most recently accessed. <br/><br/>Example: The caching number is 50 and the deletion number is 25. Accounts will be cached while the free disk space is above 25%. When the free disk space is less than 25% (the deletion number) at a maintenance period, accounts will be deleted (oldest last used first) until the free disk space is above 50% (the caching number). Accounts will be deleted immediately at sign off of an account if free space is under the deletion threshold and disk space is very low, regardless if the PC is actively in use or not. <br/>- **Delete at disk space threshold and inactive threshold** will apply the same disk space checks as noted above, but also delete accounts if they have not signed in within the number of days specified by **InactiveThreshold**  |
 | AccountManagement: DiskLevelCaching | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account caching.   |
 | AccountManagement: DiskLevelDeletion | If you set **DeletionPolicy** to **Delete at disk space threshold**, set the percent of total disk space to be used as the disk space threshold for account deletion.   |
 | AccountManagement: InactiveThreshold | If you set **DeletionPolicy** to **Delete at disk space threshold and inactive threshold**, set the number of days after which an account that has not signed in will be deleted.   | 
 | AccountManagement: EnableAccountManager | Set as **True** to enable automatic account management. If this is not set to true, no automatic account management will be done. |
-| AccountManagement: KioskModeAUMID | Set an Application User Model ID (AUMID) to enable the kiosk account on the sign-in screen. A new account will be created and will use assigned access to only run the app specified by the AUMID. Note that the app must be installed on the PC. Set the name of the account using **KioskModeUserTileDisplayText**, or a default name will be used. [Find the Application User Model ID of an installed app](https://msdn.microsoft.com/library/dn449300.aspx)   |  
+| AccountManagement: KioskModeAUMID | Set an Application User Model ID (AUMID) to enable the kiosk account on the sign-in screen. A new account will be created and will use assigned access to only run the app specified by the AUMID. Note that the app must be installed on the PC. Set the name of the account using **KioskModeUserTileDisplayText**, or a default name will be used. [Find the Application User Model ID of an installed app](/previous-versions/windows/embedded/dn449300(v=winembedded.82))   |  
 | AccountManagement: KioskModeUserTileDisplayText | Sets the display text on the kiosk account if **KioskModeAUMID** has been set. |  
 | Customization: MaintenanceStartTime | By default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value.   |
 | Customization: MaxPageFileSizeMB | Adjusts the maximum page file size in MB. This can be used to fine-tune page file behavior, especially on low end PCs.  |  
-| Customization: RestrictLocalStorage | Set as **True** to restrict the user from saving or viewing local storage when using File Explorer. This setting controls this API: [ShouldAvoidLocalStorage](https://docs.microsoft.com/uwp/api/windows.system.profile.sharedmodesettings)  | 
-| Customization: SetEduPolicies | Set to **True** for PCs that will be used in a school. For more information, see [Windows 10 configuration recommendations for education customers](https://docs.microsoft.com/education/windows/configure-windows-for-education). This setting controls this API: [IsEducationEnvironment](https://docs.microsoft.com/uwp/api/windows.system.profile.educationsettings) |
+| Customization: RestrictLocalStorage | Set as **True** to restrict the user from saving or viewing local storage when using File Explorer. This setting controls this API: [ShouldAvoidLocalStorage](/uwp/api/windows.system.profile.sharedmodesettings)  | 
+| Customization: SetEduPolicies | Set to **True** for PCs that will be used in a school. For more information, see [Windows 10 configuration recommendations for education customers](/education/windows/configure-windows-for-education). This setting controls this API: [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings) |
 | Customization: SetPowerPolicies |  When set as **True**:<br/>- Prevents users from changing power settings<br/>- Turns off hibernate<br/>- Overrides all power state transitions to sleep (e.g. lid close)  |
 | Customization: SignInOnResume | This setting specifies if the user is required to sign in with a password when the PC wakes from sleep.     |
 | Customization: SleepTimeout | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.     |
@@ -84,52 +83,61 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 
 You can configure Windows to be in shared PC mode in a couple different ways:
 
-- Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp). To setup a shared device policy for Windows 10 in Intune, complete the following steps:
+- Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp). To setup a shared device policy for Windows 10 in Intune, complete the following steps:
 
-  1. Go to the [Microsoft Endpoint Manager portal](https://endpoint.microsoft.com/#home).
-  2. Select **Devices** from the navigation. 
-  3. Under **Policy**, select **Configuration profiles**.
-  4. Select **Create profile**.
-  5. From the **Platform** menu, select **Windows 10 and later**.
-  6. From the **Profile** menu, select **Shared multi-user device**.
+  1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+  
+  2. Select **Devices** > **Windows** > **Configuration profiles** > **Create profile**.
+  
+  3. Enter the following properties:
 
-     ![custom OMA-URI policy in Intune](images/Shared_PC_1.png) 
+     - **Platform**: Select **Windows 10 and later**.
+     - **Profile**: Select **Templates** > **Shared multi-user device**.
 
-  7. Select **Create**.
-  8. Enter a name for the policy (e.g. My Win10 Shared devices policy). You can optionally add a description should you wish to do so.
-  9. Select **Next**.
-  10. On the **Configuration settings** page, set the ‘Shared PC Mode’ value to **Enabled**.
+  4. Select **Create**.
+  
+  5. In **Basics**, enter the following properties:
 
-     ![Shared PC settings in ICD](images/Shared_PC_3.png) 
+     - **Name**: Enter a descriptive name for the new profile.
+     - **Description**: Enter a description for the profile. This setting is optional, but recommended.
+
+  6. Select **Next**.
+  
+  7. In **Configuration settings**, depending on the platform you chose, the settings you can configure are different. Choose your platform for detailed settings:
+
+  8. On the **Configuration settings** page, set the ‘Shared PC Mode’ value to **Enabled**.
+
+     > [!div class="mx-imgBorder"]
+     > ![Shared PC mode in the Configuration settings page](images/shared_pc_3.png) 
 
   11. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 6**.
 
-- A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp), exposed in Windows Configuration Designer as **SharedPC**.
+- A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp), exposed in Windows Configuration Designer as **SharedPC**.
 
-     ![Shared PC settings in ICD](images/icd-adv-shared-pc.PNG)
+     ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
-- WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](https://msdn.microsoft.com/library/windows/desktop/dn905224.aspx) to configure the [MDM_SharedPC class](https://msdn.microsoft.com/library/windows/desktop/mt779129.aspx). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](https://docs.microsoft.com/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
-
-```
-$sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
-$sharedPC.EnableSharedPCMode = $True
-$sharedPC.SetEduPolicies = $True
-$sharedPC.SetPowerPolicies = $True
-$sharedPC.MaintenanceStartTime = 0
-$sharedPC.SignInOnResume = $True
-$sharedPC.SleepTimeout = 0
-$sharedPC.EnableAccountManager = $True
-$sharedPC.AccountModel = 2
-$sharedPC.DeletionPolicy = 1
-$sharedPC.DiskLevelDeletion = 25
-$sharedPC.DiskLevelCaching = 50
-$sharedPC.RestrictLocalStorage = $False
-$sharedPC.KioskModeAUMID = ""
-$sharedPC.KioskModeUserTileDisplayText = ""
-$sharedPC.InactiveThreshold = 0
-Set-CimInstance -CimInstance $sharedPC
-Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName MDM_SharedPC
-```
+- WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the [MDM_SharedPC class](/windows/win32/dmwmibridgeprov/mdm-sharedpc). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
+    
+  ```powershell
+  $sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
+  $sharedPC.EnableSharedPCMode = $True
+  $sharedPC.SetEduPolicies = $True
+  $sharedPC.SetPowerPolicies = $True
+  $sharedPC.MaintenanceStartTime = 0
+  $sharedPC.SignInOnResume = $True
+  $sharedPC.SleepTimeout = 0
+  $sharedPC.EnableAccountManager = $True
+  $sharedPC.AccountModel = 2
+  $sharedPC.DeletionPolicy = 1
+  $sharedPC.DiskLevelDeletion = 25
+  $sharedPC.DiskLevelCaching = 50
+  $sharedPC.RestrictLocalStorage = $False
+  $sharedPC.KioskModeAUMID = ""
+  $sharedPC.KioskModeUserTileDisplayText = ""
+  $sharedPC.InactiveThreshold = 0
+  Set-CimInstance -CimInstance $sharedPC
+  Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName MDM_SharedPC
+  ```
 
 ### Create a provisioning package for shared use
 
@@ -206,19 +214,24 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 ## Guidance for accounts on shared PCs
 
 * We recommend no local admin accounts on the PC to improve the reliability and security of the PC.
+
 * When a PC is set up in shared PC mode with the default deletion policy, accounts will be cached automatically until disk space is low. Then, accounts will be deleted to reclaim disk space. This account management happens automatically. Both Azure AD and Active Directory domain accounts are managed in this way. Any accounts created through **Guest** and **Kiosk** will be deleted automatically at sign out.
 * On a Windows PC joined to Azure Active Directory:
     * By default, the account that joined the PC to Azure AD will have an admin account on that PC. Global administrators for the Azure AD domain will also have admin accounts on the PC.
     * With Azure AD Premium, you can specify which accounts have admin accounts on a PC using the **Additional administrators on Azure AD Joined devices** setting on the Azure portal.
-* Local accounts that already exist on a PC won’t be deleted when turning on shared PC mode. New local accounts that are created using **Settings > Accounts > Other people > Add someone else to this PC** after shared PC mode is turned on won't be deleted. However, any new local accounts created by the **Guest** and **Kiosk** options on the sign-in screen (if enabled) will automatically be deleted at sign-out.
+
+* Local accounts that already exist on a PC won’t be deleted when turning on shared PC mode. New local accounts that are created using **Settings > Accounts > Other people > Add someone else to this PC** after shared PC mode is turned on won't be deleted. However, any new guest accounts created by the **Guest** and **Kiosk** options on the sign-in screen (if enabled) will automatically be deleted at sign-out. To set a general policy on all local accounts, you can configure the following local Group Policy setting: **Computer Configuration** > **Administrative Templates** > **System** > **User Profiles**: **Delete User Profiles Older Than A Specified Number Of Days On System Restart**.
+
 * If admin accounts are necessary on the PC
     * Ensure the PC is joined to a domain that enables accounts to be signed on as admin, or
     * Create admin accounts before setting up shared PC mode, or 
     * Create exempt accounts before signing out when turning shared pc mode on.
+
 * The account management service supports accounts that are exempt from deletion.
-    * An account can be marked exempt from deletion by adding the account SID to the `HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\` registry key.
-    * To add the account SID to the registry key using PowerShell:<br/>
-        ```
+    * An account can be marked exempt from deletion by adding the account SID to the registry key: `HKEY_LOCAL_MACHINE\SOFTARE\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\`.
+    * To add the account SID to the registry key using PowerShell:
+
+        ```powershell
         $adminName = "LocalAdmin"
         $adminPass = 'Pa$$word123'
         iex "net user /add $adminName $adminPass"
@@ -227,8 +240,6 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
         $sid = $sid.Value;
         New-Item -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\SharedPC\Exemptions\$sid" -Force
         ``` 
-
-
 
 
 ## Policies set by shared PC mode
@@ -314,12 +325,6 @@ Shared PC mode sets local group policies to configure the device. Some of these 
 <tr> <td> <p>User Account Control: Behavior of the elevation prompt for standard users</p> </td> <td> <p>Auto deny</p> </td><td><p>Always</p></td></tr> 
 </tbody>
 </table> </br></br>
-
-
-
-
-
- 
 
 
 

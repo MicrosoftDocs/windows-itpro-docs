@@ -79,7 +79,7 @@ Make sure all drivers are installed and working properly on your device running 
 
 Check with your device manufacturer before trying Windows 10 in S mode on your device to see if the drivers are available and supported by the device manufacturer. 
 
-|   |   |   |
+| &nbsp;  | &nbsp;  | &nbsp;  |
 | - | - | - |
 | <a href="https://www.acer.com/ac/en/US/content/windows10s-compatible-list" target="_blank">Acer</a> | <a href="https://www.51cube.com/ch/win10s-help.php" target="_blank">Alldocube</a> | <a href="https://www.ibuypower.com/site/computer/windows-10-s" target="_blank">American Future Tech</a> | 
 | <a href="https://www.prestigio.com/support/compatibility-with-windows-10-s/" target="_blank">ASBISC</a> | <a href="https://www.asus.com/event/2017/win10S/" target="_blank">Asus</a> | <a href="https://www.atec.kr/contents/ms_info.html" target="_blank">Atec</a> | 
@@ -242,9 +242,6 @@ For help with activation issues, click on the appropriate link below for support
 
 <p>
 <a name="footnote1"></a><sup>1</sup> <small>Internet access fees may apply.</small><br/>
-<a name="footnote2"></a><sup>2</sup> <small>Devices must be configured for educational use by applying <strong><a href="https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies" data-raw-source="[SetEduPolicies](https://docs.microsoft.com/education/windows/configure-windows-for-education#setedupolicies)">SetEduPolicies</a></strong> using the Set up School PCs app.</small><br/>
+<a name="footnote2"></a><sup>2</sup> <small>Devices must be configured for educational use by applying <strong><a href="/education/windows/configure-windows-for-education#setedupolicies" data-raw-source="[SetEduPolicies](./configure-windows-for-education.md#setedupolicies)">SetEduPolicies</a></strong> using the Set up School PCs app.</small><br/>
 
 </p>
-
-
-

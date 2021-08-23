@@ -4,7 +4,7 @@ description: This topic for the IT professional describes how to use AppLocker l
 ms.assetid: 24609a6b-fdcb-4083-b234-73e23ff8bcb8
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Determine which apps are digitally signed on a reference device
@@ -36,7 +37,7 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 
 2.  Analyze the publisher's name and digital signature status from the output of the command.
 
-For command parameters, syntax, and examples, see [Get-AppLockerFileInformation](https://technet.microsoft.com/library/ee460961.aspx).
+For command parameters, syntax, and examples, see [Get-AppLockerFileInformation](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee460961(v=technet.10)).
 
 ## Related topics
 

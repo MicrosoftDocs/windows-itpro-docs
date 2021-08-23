@@ -1,6 +1,6 @@
 ---
 title: RemoteLock DDF file
-description: RemoteLock DDF file
+description: Learn about the OMA DM device description framework (DDF) for the RemoteLock configuration service provider (CSP).
 ms.assetid: A301AE26-1BF1-4328-99AB-1ABBA4960797
 ms.reviewer: 
 manager: dansimp

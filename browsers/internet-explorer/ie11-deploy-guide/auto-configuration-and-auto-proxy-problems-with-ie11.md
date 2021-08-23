@@ -7,7 +7,8 @@ author: dansimp
 ms.prod: ie11
 ms.assetid: 3fbbc2c8-859b-4b2e-abc3-de2c299e0938
 ms.reviewer: 
-audience: itpromanager: dansimp
+audience: itpro
+manager: dansimp
 ms.author: dansimp
 title: Auto configuration and auto proxy problems with Internet Explorer 11 (Internet Explorer 11 for IT Pros)
 ms.sitesec: library
@@ -16,6 +17,9 @@ ms.date: 07/27/2017
 
 
 # Auto configuration and auto proxy problems with Internet Explorer 11
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 You might experience some problems using automatic configuration and auto-proxy with Internet Explorer 11.
 
 ## Branding changes aren't distributed using automatic configuration
@@ -36,7 +40,7 @@ If you experience issues while setting up your proxy server, you can try these t
 
 2. Click **Settings** or **LAN Settings**, and then look at your proxy server address.
 
-3. If you have multiple proxy servers, click **Advanced** to look at all of the additional addresses.<p>**Note**<br>If IE11 uses a proxy server for local IP addresses, regardless whether you turned on the **Bypass Proxy Server for Local Addresses** option, see [Internet Explorer Uses Proxy Server for Local IP Address Even if the "Bypass Proxy Server for Local Addresses" Option Is Turned On](https://go.microsoft.com/fwlink/p/?LinkId=85652).
+3. If you have multiple proxy servers, click **Advanced** to look at all of the additional addresses.<p>**Note**<br>If IE11 uses a proxy server for local IP addresses, regardless whether you turned on the **Bypass Proxy Server for Local Addresses** option, see [Internet Explorer Uses Proxy Server for Local IP Address Even if the "Bypass Proxy Server for Local Addresses" Option Is Turned On](/troubleshoot/browsers/internet-explorer-uses-proxy-server-local-ip-address).
 
    **To check that you've turned on the correct settings**
 
@@ -55,8 +59,4 @@ If you experience issues while setting up your proxy server, you can try these t
 9. In the **Automatic configuration** area, check that you've chosen the **Use automatic configuration script** box, and that it has the correct location to your automatic configuration script or for your automatic proxy URL.
 
  
-
- 
-
-
 

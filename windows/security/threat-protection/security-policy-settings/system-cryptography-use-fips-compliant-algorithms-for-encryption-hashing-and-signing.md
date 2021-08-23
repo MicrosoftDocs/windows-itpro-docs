@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the policy se
 ms.assetid: 83988865-dc0f-45eb-90d1-ee33495eb045
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/16/2018
+ms.technology: mde
 ---
 
 # System cryptography: Use FIPS compliant algorithms for encryption, hashing, and signing
@@ -56,7 +57,9 @@ Additionally, if a data drive is password-protected, it can be accessed by a FIP
 
 ### Best practices
 
-There are no best practices for this setting. Our previous guidance had recommended a setting of **Enabled**, primarily to align with US Federal government recommendations. [Windows security baselines](https://docs.microsoft.com/windows/security/threat-protection/windows-security-baselines) recommend this setting be **Not Defined**, meaning that we leave the decision to customers. For a deeper explanation, see [Why We’re Not Recommending “FIPS Mode” Anymore](https://blogs.technet.microsoft.com/secguide/2014/04/07/why-were-not-recommending-fips-mode-anymore/).
+We recommend that customers hoping to comply with FIPS 140-2 research the configuration settings of applications and protocols they may be using to ensure their solutions can be configured to utilize the FIPS 140-2 validated cryptography provided by Windows when it is operating in FIPS 140-2 approved mode.
+
+For a complete list of Microsoft-recommended configuration settings, see [Windows security baselines](../windows-security-baselines.md). For more information about Windows and FIPS 140-2, see [FIPS 140 Validation](../fips-140-validation.md).
 
 ### Location
 

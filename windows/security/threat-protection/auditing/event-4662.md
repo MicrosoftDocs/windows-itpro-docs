@@ -2,7 +2,7 @@
 title: 4662(S, F) An operation was performed on an object. (Windows 10)
 description: Describes security event 4662(S, F) An operation was performed on an object.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4662(S, F): An operation was performed on an object.
@@ -28,7 +29,7 @@ ms.author: dansimp
 
 This event generates every time when an operation was performed on an Active Directory object.
 
-This event generates only if appropriate [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx) was set for Active Directory object and performed operation meets this SACL.
+This event generates only if appropriate [SACL](/windows/win32/secauthz/access-control-lists) was set for Active Directory object and performed operation meets this SACL.
 
 If operation failed then Failure event will be generated.
 
@@ -249,4 +250,3 @@ For 4662(S, F): An operation was performed on an object.
 -   If you need to monitor operations attempts to specific Active Directory properties, monitor for **Properties** field with specific property GUID.
 
 -   Do not forget that **Failure** attempts are also very important to audit. Decide where you want to monitor Failure attempts based on previous recommendations.
-

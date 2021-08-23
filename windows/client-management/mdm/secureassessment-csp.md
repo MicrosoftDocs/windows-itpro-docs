@@ -1,6 +1,6 @@
 ---
 title: SecureAssessment CSP
-description: SecureAssessment CSP
+description: Learn how the SecureAssessment configuration service provider (CSP) is used to provide configuration information for the secure assessment browser.
 ms.assetid: 6808BE4B-961E-4638-BF15-FD7841D1C00A
 ms.reviewer: 
 manager: dansimp
@@ -16,10 +16,13 @@ ms.date: 06/26/2017
 
 The SecureAssessment configuration service provider is used to provide configuration information for the secure assessment browser.
 
-The following diagram shows the SecureAssessment configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
-
-![secureassessment](images/secureassessment-csp.png)
-
+The following shows the SecureAssessment configuration service provider management objects in tree format as used by Open Mobile Alliance Device Management (OMA DM), OMA Client Provisioning, and Enterprise DM.
+```
+./Vendor/MSFT
+SecureAssessment
+----LaunchURI
+----TesterAccount
+```
 <a href="" id="--vendor-msft-secureassessment"></a>**./Vendor/MSFT/SecureAssessment**  
 The root node for the SecureAssessment configuration service provider.
 
@@ -56,16 +59,9 @@ Supported operations are Get and Replace.
 
 ## Related topics
 
-[Set up Take a Test on multiple PCs](https://technet.microsoft.com/edu/windows/take-a-test-multiple-pcs)  
+[Set up Take a Test on multiple PCs](/education/windows/take-a-test-multiple-pcs)  
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
  
-
- 
-
-
-
-
-
 

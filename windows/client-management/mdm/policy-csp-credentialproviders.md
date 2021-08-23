@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - CredentialProviders
-description: Learn the policy CSP for credential provider  set up, sign in, PIN requests and so on. 
+description: Learn how to use the policy CSP for credential provider so you can control whether a domain user can sign in using a convenience PIN.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -100,7 +100,7 @@ To configure Windows Hello for Business, use the Administrative Template policie
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on convenience PIN sign-in*
+-   GP Friendly name: *Turn on convenience PIN sign-in*
 -   GP name: *AllowDomainPINLogon*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *credentialproviders.admx*
@@ -172,7 +172,7 @@ Note that the user's domain password will be cached in the system vault when usi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off picture password sign-in*
+-   GP Friendly name: *Turn off picture password sign-in*
 -   GP name: *BlockDomainPicturePassword*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *credentialproviders.admx*
@@ -243,14 +243,14 @@ The following list shows the supported values:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
--   7 - Added in Windows 10, version 1909.
--   8 - Added in Windows 10, version 2004.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

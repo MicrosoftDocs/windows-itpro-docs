@@ -21,7 +21,7 @@ This topic lists new and updated topics in the [Windows 10 for Education](index.
 
 |New or changed topic | Description|
 |-----------|-------------|
-|[Windows 10 Subscription Activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation)|Subscription activation support for Windows 10 Pro Education to Windows 10 Education|
+|[Windows 10 Subscription Activation](/windows/deployment/windows-10-subscription-activation)|Subscription activation support for Windows 10 Pro Education to Windows 10 Education|
 
 ## April 2018
 New or changed topic | Description
@@ -92,8 +92,8 @@ New or changed topic | Description
 
 | New or changed topic | Description|
 | --- | --- |
-| [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](https://docs.microsoft.com/education/get-started/get-started-with-microsoft-education) | New. Learn how you can you can quickly and easily use the new Microsoft Education system to implement a full IT cloud solution for your school. |
-| [Microsoft Education documentation and resources](https://docs.microsoft.com/education) | New. Find links to more content for IT admins, teachers, students, and education app developers. |
+| [Get started: Deploy and manage a full cloud IT solution with Microsoft Education](/microsoft-365/education/deploy/) | New. Learn how you can you can quickly and easily use the new Microsoft Education system to implement a full IT cloud solution for your school. |
+| [Microsoft Education documentation and resources](/education) | New. Find links to more content for IT admins, teachers, students, and education app developers. |
 | [Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)  | New. Provides guidance on ways to configure the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, so that Windows is ready for your school. |
 | [Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)  | Updated the screenshots and related instructions to reflect the current UI and experience.  |
 | [Set up Windows devices for education](set-up-windows-10.md) | Updated for Windows 10, version 1703. |
@@ -150,5 +150,5 @@ The topics in this library have been updated for Windows 10, version 1607 (also 
 | [Use the Set up School PCs app (Preview)](use-set-up-school-pcs-app.md) | New. Learn how the Set up School PCs app works and how to use it.  |
 | [Set up School PCs app technical reference (Preview)](set-up-school-pcs-technical.md) | New. Describes the changes that the Set up School PCs app makes to a PC.  |
 | [Take tests in Windows 10 (Preview)](take-tests-in-windows-10.md) </br> [Set up Take a Test on a single PC (Preview)](take-a-test-single-pc.md) </br> [Set up Take a Test on multiple PCs (Preview)](take-a-test-multiple-pcs.md) </br> [Take a Test app technical reference (Preview)](take-a-test-app-technical.md) | New. Learn how to set up and use the Take a Test app. |
-| [Chromebook migration guide](chromebook-migration-guide.md)  | Moved from [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/plan/index) library, originally published in November 2015 |
-| [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)  |  Moved from [Windows 10 and Windows 10 Mobile](https://technet.microsoft.com/itpro/windows/plan/index) library, originally published in May 2016 |
+| [Chromebook migration guide](chromebook-migration-guide.md)  | Moved from [Windows 10 and Windows 10 Mobile](/windows/deployment/planning/) library, originally published in November 2015 |
+| [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)  |  Moved from [Windows 10 and Windows 10 Mobile](/windows/deployment/planning/) library, originally published in May 2016 |

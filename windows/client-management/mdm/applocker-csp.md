@@ -1,6 +1,6 @@
 ---
 title: AppLocker CSP
-description: AppLocker CSP
+description: Learn how the AppLocker configuration service provider is used to specify which applications are allowed or disallowed.
 ms.assetid: 32FEA2C9-3CAD-40C9-8E4F-E3C69637580F
 ms.reviewer: 
 manager: dansimp
@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 11/19/2019
 ---
 
@@ -17,10 +17,54 @@ ms.date: 11/19/2019
 
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
-The following diagram shows the AppLocker configuration service provider in tree format.
-
-![applocker csp](images/provisioning-csp-applocker.png)
-
+The following shows the AppLocker configuration service provider in tree format.
+```
+./Vendor/MSFT
+AppLocker
+----ApplicationLaunchRestrictions
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+----------------NonInteractiveProcessEnforcement
+------------MSI
+----------------Policy
+----------------EnforcementMode
+------------Script
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+------------DLL
+----------------Policy
+----------------EnforcementMode
+----------------NonInteractiveProcessEnforcement
+------------CodeIntegrity
+----------------Policy
+----EnterpriseDataProtection
+--------Grouping
+------------EXE
+----------------Policy
+------------StoreApps
+----------------Policy
+----LaunchControl
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+----FamilySafety
+--------Grouping
+------------EXE
+----------------Policy
+----------------EnforcementMode
+------------StoreApps
+----------------Policy
+----------------EnforcementMode
+```
 <a href="" id="--vendor-msft-applocker"></a>**./Vendor/MSFT/AppLocker**  
 Defines the root node for the AppLocker configuration service provider.
 
@@ -29,18 +73,13 @@ Defines restrictions for applications.
 
 > [!NOTE]
 > When you create a list of allowed apps, all [inbox apps](#inboxappsandcomponents) are also blocked, and you must include them in your list of allowed apps. Don't forget to add the inbox apps for Phone, Messaging, Settings, Start, Email and accounts, Work and school, and other apps that you need.
->
-> In Windows 10 Mobile, when you create a list of allowed apps, the [settings app that rely on splash apps](#settingssplashapps) are blocked. To unblock these apps, you must include them in your list of allowed apps.
->
+
 > Delete/unenrollment is not properly supported unless Grouping values are unique across enrollments. If multiple enrollments use the same Grouping value, then unenrollment will not work as expected since there are duplicate URIs that get deleted by the resource manager. To prevent this problem, the Grouping value should include some randomness. The best practice is to use a randomly generated GUID. However, there is no requirement on the exact value of the node.
 
 > [!NOTE]
-> Deploying policies via the AppLocker CSP will force a reboot during OOBE.
+> The AppLocker CSP will schedule a reboot when a policy is applied or a deletion occurs using the AppLocker/ApplicationLaunchRestrictions/Grouping/CodeIntegrity/Policy URI.
 
 Additional information:
-
-- [Find publisher and product name of apps](#productname) - step-by-step guide for getting the publisher and product names for various Windows apps.
-- [Whitelist example](#whitelist-examples) - example for Windows 10 Mobile that denies all apps except the ones listed.
 
 <a href="" id="applocker-applicationlaunchrestrictions-grouping"></a>**AppLocker/ApplicationLaunchRestrictions/_Grouping_**  
 Grouping nodes are dynamic nodes, and there may be any number of them for a given enrollment (or a given context). The actual identifiers are selected by the management endpoint, whose job it is to determine what their purpose is, and to not conflict with other identifiers that they define.
@@ -166,7 +205,7 @@ Data type is Base64.
 Supported operations are Get, Add, Delete, and Replace.
 
 > [!NOTE]
-> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](https://go.microsoft.com/fwlink/p/?LinkId=724364) command line tool) and added to the Applocker-CSP.
+> To use Code Integrity Policy, you first need to convert the policies to binary format using the ConvertFrom-CIPolicy cmdlet. Then a Base64-encoded blob of the binary policy representation should be created (for example, using the [certutil -encode](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc732443(v=ws.11)) command line tool) and added to the Applocker-CSP.
 
 <a href="" id="applocker-enterprisedataprotection"></a>**AppLocker/EnterpriseDataProtection**  
 Captures the list of apps that are allowed to handle enterprise data. Should be used in conjunction with the settings in **./Device/Vendor/MSFT/EnterpriseDataProtection** in [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md).
@@ -219,25 +258,6 @@ Data type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-## <a href="" id="productname"></a>Find publisher and product name of apps
-
-
-You can pair a Windows Phone (Windows 10 Mobile, version 1511) to your desktop using the Device Portal on the phone to get the various types of information, including publisher name and product name of apps installed on the phone. This procedure describes pairing your phone to your desktop using WiFi.
-
-If this procedure does not work for you, try the other methods for pairing described in [Device Portal for Mobile](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal-mobile).
-
-**To find Publisher and PackageFullName for apps installed on Windows 10 Mobile**
-
-1.  On your Windows Phone, go to **Settings**. Choose **Update & security**. Then choose **For developers**.
-2.  Choose **Developer mode**.
-3.  Turn on **Device discovery**.
-4.  Turn on **Device Portal** and keep **AuthenticationOn**.
-5.  Under the **Device Portal**, under **Connect using: WiFi**, copy the URL to your desktop browser to connect using WiFi.
-
-    If you get a certificate error, continue to the web page.
-
-    If you get an error about not reaching the web page, then you should try the other methods for pairing described in [Device Portal for Mobile](https://msdn.microsoft.com/windows/uwp/debug-test-perf/device-portal-mobile).
-
 6.  On your phone under **Device discovery**, tap **Pair**. You will get a code (case sensitive).
 7.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
 
@@ -250,11 +270,11 @@ If this procedure does not work for you, try the other methods for pairing descr
 
     ![device portal app manager](images/applocker-screenshot3.png)
 
-10. If you do not see the app that you want, look under **Installed apps**. Using the drop down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
+10. If you do not see the app that you want, look under **Installed apps**. Using the drop- down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
 
     ![app manager](images/applocker-screenshot2.png)
 
-The following table show the mapping of information to the AppLocker publisher rule field.
+The following table shows the mapping of information to the AppLocker publisher rule field.
 
 <table>
 <colgroup>
@@ -281,7 +301,7 @@ The following table show the mapping of information to the AppLocker publisher r
 <td><p>Version</p></td>
 <td><p>Version</p>
 <p>This can be used either in the HighSection or LowSection of the BinaryVersionRange.</p>
-<p>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.</p></td>
+<p>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version- independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.</p></td>
 </tr>
 </tbody>
 </table>
@@ -289,10 +309,10 @@ The following table show the mapping of information to the AppLocker publisher r
 
 Here is an example AppLocker publisher rule:
 
-``` syntax
-FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Reader" BinaryName="*">
+```xml
+<FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Reader" BinaryName="*">
   <BinaryVersionRange LowSection="*" HighSection="*" />
-  </FilePublisherCondition>
+</FilePublisherCondition>
 ```
 
 You can get the publisher name and product name of apps using a web API.
@@ -300,7 +320,9 @@ You can get the publisher name and product name of apps using a web API.
 **To find publisher and product name for Microsoft apps in Microsoft Store for Business**
 
 1.  Go to the Microsoft Store for Business website, and find your app. For example, Microsoft OneNote.
-2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https:<span><\span>//www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
+
+2.  Copy the ID value from the app URL. For example, Microsoft OneNote's ID URL is https://www.microsoft.com/store/apps/onenote/9wzdncrfhvjl, and you'd copy the ID value, **9wzdncrfhvjl**.
+
 3.  In your browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values.
 
     <table>
@@ -314,25 +336,22 @@ You can get the publisher name and product name of apps using a web API.
     </thead>
     <tbody>
     <tr class="odd">
-    <td><p>https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata</p></td>
+    <td><p><code>https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata</code></p></td>
     </tr>
     </tbody>
     </table>
 
-
-
-~~~
 Here is the example for Microsoft OneNote:
 
 Request
 
-``` syntax
+```http
 https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/9wzdncrfhvjl/applockerdata
 ```
 
 Result
 
-``` syntax
+```json
 {
   "packageFamilyName": "Microsoft.Office.OneNote_8wekyb3d8bbwe",
   "packageIdentityName": "Microsoft.Office.OneNote",
@@ -340,7 +359,6 @@ Result
   "publisherCertificateName": "CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 }
 ```
-~~~
 
 <table>
 <colgroup>
@@ -376,7 +394,7 @@ Result
 ## <a href="" id="settingssplashapps"></a>Settings apps that rely on splash apps
 
 
-When you create a list of allowed apps in Windows 10 Mobile, you must also include the subset of Settings apps that rely on splash apps in your list of allowed apps. These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps .
+These apps are blocked unless they are explicitly added to the list of allowed apps. The following table shows the subset of Settings apps that rely on splash apps.
 
 The product name is first part of the PackageFullName followed by the version number.
 
@@ -485,7 +503,7 @@ The following list shows the apps that may be included in the inbox.
 <td></td>
 </tr>
 <tr class="odd">
-<td>Colour profile</td>
+<td>Color profile</td>
 <td>b08997ca-60ab-4dce-b088-f92e9c7994f3</td>
 <td></td>
 </tr>
@@ -525,7 +543,7 @@ The following list shows the apps that may be included in the inbox.
 <td>Microsoft.AccountsControl</td>
 </tr>
 <tr class="even">
-<td>Enterprise install app</td>
+<td>Enterprise installs app</td>
 <td>da52fa01-ac0f-479d-957f-bfe4595941cb</td>
 <td></td>
 </tr>
@@ -770,7 +788,7 @@ The following list shows the apps that may be included in the inbox.
 <td></td>
 </tr>
 <tr class="odd">
-<td>Sign-in for Windows 10 Holographic</td>
+<td>Sign in for Windows 10 Holographic</td>
 <td></td>
 <td>WebAuthBridgeInternetSso, WebAuthBridgeInternet, WebAuthBridgeIntranetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternet, WebAuthBrokerIntranetSso, SignIn</td>
 </tr>
@@ -869,7 +887,7 @@ The following list shows the apps that may be included in the inbox.
 
 
 
-## Whitelist examples
+## <a href="" id="allow-list-examples"></a>Allowlist examples
 
 The following example disables the calendar application.
 
@@ -974,11 +992,6 @@ The following example disables the Mixed Reality Portal. In the example, the **I
 </SyncML>
 ```
 
-The following example for Windows 10 Mobile denies all apps and allows the following apps:
-
--   [settings app that rely on splash apps](#settingssplashapps)
--   most of the [inbox apps](#inboxappsandcomponents), but not all.
-
 In this example, **MobileGroup0** is the node name. We recommend using a GUID for this node.
 
 ```xml
@@ -1021,7 +1034,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="DDCD112F-E003-4874-8B3E-14CB23851D54" Name="Whitelist Settings splash app" Description="Allow Admins to run Settings." UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="DDCD112F-E003-4874-8B3E-14CB23851D54" Name="Allowlist Settings splash app" Description="Allow Admins to run Settings." UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="2A4E62D8-8809-4787-89F8-69D0F01654FB" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1029,7 +1042,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="757D94A8-C752-4013-9896-D46EF10925E9" Name="Whitelist Settings WorkOrSchool" Description="Allow Admins to run WorkOrSchool" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="757D94A8-C752-4013-9896-D46EF10925E9" Name="Allowlist Settings WorkOrSchool" Description="Allow Admins to run WorkOrSchool" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5B04B775-356B-4AA0-AAF8-6491FFEA562A" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1037,7 +1050,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="473BCE1A-94D2-4AE1-8CB1-064B0677CACB" Name="Whitelist WorkPlace AAD BrokerPlugin" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="473BCE1A-94D2-4AE1-8CB1-064B0677CACB" Name="Allowlist WorkPlace AAD BrokerPlugin" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.AAD.BrokerPlugin" BinaryName="*" >
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1045,7 +1058,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="E13EA64B-B0D3-4257-87F4-1B522D06EA03" Name="Whitelist Start" Description="Allow Admins to run Start." UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="E13EA64B-B0D3-4257-87F4-1B522D06EA03" Name="Allowlist Start" Description="Allow Admins to run Start." UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5B04B775-356B-4AA0-AAF8-6491FFEA5602" BinaryName="*" >
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1053,7 +1066,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="2898C4B2-4B37-4BFF-8F7B-16B377EDEA88" Name="Whitelist SettingsPageKeyboard" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="2898C4B2-4B37-4BFF-8F7B-16B377EDEA88" Name="Allowlist SettingsPageKeyboard" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5b04b775-356b-4aa0-aaf8-6491ffea5608" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1061,7 +1074,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="15BBA04F-3989-4FF7-9FEF-83C4DFDABA27" Name="Whitelist SettingsPageTimeRegion" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="15BBA04F-3989-4FF7-9FEF-83C4DFDABA27" Name="Allowlist SettingsPageTimeRegion" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5b04b775-356b-4aa0-aaf8-6491ffea560c" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1069,7 +1082,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="C3735CB1-060D-4D40-9708-6D33B98A7A2D" Name="Whitelist SettingsPagePCSystemBluetooth" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="C3735CB1-060D-4D40-9708-6D33B98A7A2D" Name="Allowlist SettingsPagePCSystemBluetooth" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5b04b775-356b-4aa0-aaf8-6491ffea5620" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1077,7 +1090,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="AFACF5A3-2974-41EE-A31A-1486F593C145" Name="Whitelist SettingsPageNetworkAirplaneMode" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="AFACF5A3-2974-41EE-A31A-1486F593C145" Name="Allowlist SettingsPageNetworkAirplaneMode" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5b04b775-356b-4aa0-aaf8-6491ffea5621" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1085,7 +1098,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="7B02A339-9E77-4694-AF86-119265138129" Name="Whitelist SettingsPageNetworkWiFi" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="7B02A339-9E77-4694-AF86-119265138129" Name="Allowlist SettingsPageNetworkWiFi" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5B04B775-356B-4AA0-AAF8-6491FFEA5623" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1093,7 +1106,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="F912172F-9D83-46F5-8D6C-BA7AB17063BE" Name="Whitelist SettingsPageNetworkInternetSharing" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="F912172F-9D83-46F5-8D6C-BA7AB17063BE" Name="Allowlist SettingsPageNetworkInternetSharing" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5B04B775-356B-4AA0-AAF8-6491FFEA5629" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1101,7 +1114,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="67AE8001-4E49-442A-AD72-F837129ABF63" Name="Whitelist SettingsPageRestoreUpdate" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="67AE8001-4E49-442A-AD72-F837129ABF63" Name="Allowlist SettingsPageRestoreUpdate" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5b04b775-356b-4aa0-aaf8-6491ffea5640" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1109,7 +1122,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="7B65BCB2-4B1D-42B6-921B-B87F1474BDC5" Name="Whitelist SettingsPageKidsCorner" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="7B65BCB2-4B1D-42B6-921B-B87F1474BDC5" Name="Allowlist SettingsPageKidsCorner" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5b04b775-356b-4aa0-aaf8-6491ffea5802" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1117,7 +1130,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="3964A53B-E131-4ED6-88DA-71FBDBE4E232" Name="Whitelist SettingsPageDrivingMode" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="3964A53B-E131-4ED6-88DA-71FBDBE4E232" Name="Allowlist SettingsPageDrivingMode" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5b04b775-356b-4aa0-aaf8-6491ffea5804" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1125,7 +1138,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="99C4CD58-51A2-429A-B479-976ADB4EA757" Name="Whitelist SettingsPageTimeLanguage" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="99C4CD58-51A2-429A-B479-976ADB4EA757" Name="Allowlist SettingsPageTimeLanguage" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5b04b775-356b-4aa0-aaf8-6491ffea5808" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1133,7 +1146,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="EBA3BCBE-4651-48CE-8F94-C5AC5D8F72FB" Name="Whitelist SettingsPageAppsCorner" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="EBA3BCBE-4651-48CE-8F94-C5AC5D8F72FB" Name="Allowlist SettingsPageAppsCorner" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="5b04b775-356b-4aa0-aaf8-6491ffea580a" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1141,7 +1154,7 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="E16EABCC-46E7-4AB3-9F48-67FFF941BBDC" Name="Whitelist SettingsPagePhoneNfc" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="E16EABCC-46E7-4AB3-9F48-67FFF941BBDC" Name="Allowlist SettingsPagePhoneNfc" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="*" ProductName="b0894dfd-4671-4bb9-bc17-a8b39947ffb6" BinaryName="*">
                 <BinaryVersionRange LowSection="*" HighSection="*"/>
@@ -1149,277 +1162,277 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="1F4C3904-9976-4FEE-A492-5708F14EABA5" Name="Whitelist MSA Cloud Experience Host" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="1F4C3904-9976-4FEE-A492-5708F14EABA5" Name="Allowlist MSA Cloud Experience Host" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.CloudExperienceHost" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="AA741A28-7C02-49A5-AA5C-35D53FB8A9DC" Name="Whitelist Email and Accounts" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="AA741A28-7C02-49A5-AA5C-35D53FB8A9DC" Name="Allowlist Email and Accounts" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.AccountsControl" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="863BE063-D134-4C5C-9825-9DF9A86B6B56" Name="Whitelist Calculator" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="863BE063-D134-4C5C-9825-9DF9A86B6B56" Name="Allowlist Calculator" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.WindowsCalculator" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="1DA2F479-3D1D-4425-9FFA-D4E6908F945A" Name="Whitelist Alarms and  Clock" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="1DA2F479-3D1D-4425-9FFA-D4E6908F945A" Name="Allowlist Alarms and  Clock" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.WindowsAlarms" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="18E12372-21C6-4DA5-970E-0A58739D7151" Name="Whitelist People" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="18E12372-21C6-4DA5-970E-0A58739D7151" Name="Allowlist People" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.People" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="FD686D83-A829-4351-8FF4-27C7DE5755D2" Name="Whitelist Camera" Description="Allow Admins to run camera." UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="FD686D83-A829-4351-8FF4-27C7DE5755D2" Name="Allowlist Camera" Description="Allow Admins to run camera." UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.WindowsCamera" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="16875F70-1778-43CC-96BB-783C9A8E53D5" Name="Whitelist WindowsMaps" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="16875F70-1778-43CC-96BB-783C9A8E53D5" Name="Allowlist WindowsMaps" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.WindowsMaps" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="D21D6F9D-CFF6-4AD1-867A-2411CE6A388D" Name="Whitelist FileExplorer" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="D21D6F9D-CFF6-4AD1-867A-2411CE6A388D" Name="Allowlist FileExplorer" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="c5e2524a-ea46-4f67-841f-6a9465d9d515" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="450B6D7E-1738-41C9-9241-466C3FA4AB0C" Name="Whitelist FM Radio" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="450B6D7E-1738-41C9-9241-466C3FA4AB0C" Name="Allowlist FM Radio" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="*" ProductName="F725010E-455D-4C09-AC48-BCDEF0D4B626" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="37F4272C-F4A0-4AB8-9B5F-C9194A0EC6F3" Name="Whitelist Microsoft Edge" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="37F4272C-F4A0-4AB8-9B5F-C9194A0EC6F3" Name="Allowlist Microsoft Edge" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.MicrosoftEdge" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="253D3AEA-36C0-4877-B932-9E9C9493F3F3" Name="Whitelist Movies" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="253D3AEA-36C0-4877-B932-9E9C9493F3F3" Name="Allowlist Movies" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.ZuneVideo" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="9A73E081-01D1-4BFD-ADF4-5C29AD4031F7" Name="Whitelist Money" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="9A73E081-01D1-4BFD-ADF4-5C29AD4031F7" Name="Allowlist Money" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.BingFinance" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="EE4BF66C-EBF0-4565-982C-922FFDCB2E6D" Name="Whitelist News" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="EE4BF66C-EBF0-4565-982C-922FFDCB2E6D" Name="Allowlist News" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.BingNews" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="D78E6A9D-10F8-4C23-B620-40B01B60E5EA" Name="Whitelist Onedrive" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="D78E6A9D-10F8-4C23-B620-40B01B60E5EA" Name="Allowlist Onedrive" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="*" ProductName="AD543082-80EC-45BB-AA02-FFE7F4182BA8" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="0012F35E-C242-47FF-A573-3DA06AF7E43C" Name="Whitelist Onedrive APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="0012F35E-C242-47FF-A573-3DA06AF7E43C" Name="Allowlist Onedrive APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.MicrosoftSkydrive" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="178B0D68-3498-40CE-A0C3-295C6B3DA169" Name="Whitelist OneNote" Description="Allow Admins to run onenote." UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="178B0D68-3498-40CE-A0C3-295C6B3DA169" Name="Allowlist OneNote" Description="Allow Admins to run onenote." UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Office.OneNote" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="673914E4-D73A-405D-8DCF-173E36EA6722" Name="Whitelist GetStarted" Description="Allow Admins to run onenote." UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="673914E4-D73A-405D-8DCF-173E36EA6722" Name="Allowlist GetStarted" Description="Allow Admins to run onenote." UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Getstarted" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="4546BD28-69B6-4175-A44C-33197D48F658" Name="Whitelist Outlook Calendar" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="4546BD28-69B6-4175-A44C-33197D48F658" Name="Allowlist Outlook Calendar" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="microsoft.windowscommunicationsapps" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="7B843572-E1AD-45E6-A1F2-C551C70E4A34" Name="Whitelist Outlook Mail" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="7B843572-E1AD-45E6-A1F2-C551C70E4A34" Name="Allowlist Outlook Mail" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="microsoft.windowscommunicationsapps" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="E5A1CD1A-8C23-41E4-AACF-BF82FCE775A5" Name="Whitelist Photos" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="E5A1CD1A-8C23-41E4-AACF-BF82FCE775A5" Name="Allowlist Photos" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Windows.Photos" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="0A194DD1-B25B-4512-8AFC-6F560D0EC205" Name="Whitelist PodCasts" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="0A194DD1-B25B-4512-8AFC-6F560D0EC205" Name="Allowlist PodCasts" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.MSPodcast" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="F5D27860-0238-4D1A-8011-9B8B263C3A33" Name="Whitelist SkypeApp" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="F5D27860-0238-4D1A-8011-9B8B263C3A33" Name="Allowlist SkypeApp" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="*" ProductName="Microsoft.SkypeApp" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="B8BBC965-EC6D-4C16-AC68-C5F0090CB703" Name="Whitelist Store" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="B8BBC965-EC6D-4C16-AC68-C5F0090CB703" Name="Allowlist Store" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.WindowsStore" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="6031E1E7-A659-4B3D-87FB-3CB4C900F9D2" Name="Whitelist Sports" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="6031E1E7-A659-4B3D-87FB-3CB4C900F9D2" Name="Allowlist Sports" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.BingSports" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="A6D61B56-7CF7-4E95-953C-3A5913309B4E" Name="Whitelist Wallet" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="A6D61B56-7CF7-4E95-953C-3A5913309B4E" Name="Allowlist Wallet" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.MicrosoftWallet" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="A2C44744-0627-4A52-937E-E3EC1ED476E0" Name="Whitelist Weather" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="A2C44744-0627-4A52-937E-E3EC1ED476E0" Name="Allowlist Weather" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.BingWeather" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="D79978B4-EFAE-4458-8FE1-0F13B5CE6764" Name="Whitelist Xbox" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="D79978B4-EFAE-4458-8FE1-0F13B5CE6764" Name="Allowlist Xbox" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.XboxApp" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="395713B9-DD39-4741-8AB3-63D0A0DCA2B0" Name="Whitelist Xbox Identity Provider" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="395713B9-DD39-4741-8AB3-63D0A0DCA2B0" Name="Allowlist Xbox Identity Provider" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.XboxIdentityProvider" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="7565A8BB-D50B-4237-A9E9-B0997B36BDF9" Name="Whitelist Voice recorder" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="7565A8BB-D50B-4237-A9E9-B0997B36BDF9" Name="Allowlist Voice recorder" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.WindowsSoundRecorder" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="409A286E-8C3D-48AB-9D7C-3225A48B30C9" Name="Whitelist Word" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="409A286E-8C3D-48AB-9D7C-3225A48B30C9" Name="Allowlist Word" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Office.Word" BinaryName="*" />
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="F72A5DA6-CA6A-4E7F-A350-AC9FACAB47DB" Name="Whitelist Excel" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="F72A5DA6-CA6A-4E7F-A350-AC9FACAB47DB" Name="Allowlist Excel" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Office.Excel" BinaryName="*" />
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="169B3498-2A73-4D5C-8AFB-A0DE2908A07D" Name="Whitelist PowerPoint" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="169B3498-2A73-4D5C-8AFB-A0DE2908A07D" Name="Allowlist PowerPoint" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
         <Conditions>
             <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Office.PowerPoint" BinaryName="*" />
         </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="A483B662-3538-4D70-98A7-1312D51A0DB9" Name="Whitelist Contact Support" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="A483B662-3538-4D70-98A7-1312D51A0DB9" Name="Allowlist Contact Support" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Windows.ContactSupport" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="EAB1CEDC-DD8A-4311-9146-27A3C689DEAF" Name="Whitelist Cortana" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="EAB1CEDC-DD8A-4311-9146-27A3C689DEAF" Name="Allowlist Cortana" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Windows.Cortana" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="01CD8E68-666B-4DE6-8849-7CE4F0C37CA8" Name="Whitelist Storage" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="01CD8E68-666B-4DE6-8849-7CE4F0C37CA8" Name="Allowlist Storage" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="*" ProductName="5B04B775-356B-4AA0-AAF8-6491FFEA564D" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="15D9AD89-58BC-458E-9B96-3A18DA63AC3E" Name="Whitelist Groove Music" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="15D9AD89-58BC-458E-9B96-3A18DA63AC3E" Name="Allowlist Groove Music" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.ZuneMusic" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="E2B71B03-D759-4AE2-8526-E1A0CE2801DE" Name="Whitelist Windows Feedback" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="E2B71B03-D759-4AE2-8526-E1A0CE2801DE" Name="Allowlist Windows Feedback" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.WindowsFeedback" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="E7A30489-A20B-44C3-91A8-19D9F61A8B5B" Name="Whitelist Messaging and Messaging Video" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="E7A30489-A20B-44C3-91A8-19D9F61A8B5B" Name="Allowlist Messaging and Messaging Video" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.Messaging" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="D2A16D0C-8CC0-4C3A-9FB5-C1DB1B380CED" Name="Whitelist Phone splash" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="D2A16D0C-8CC0-4C3A-9FB5-C1DB1B380CED" Name="Allowlist Phone splash" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
     <FilePublisherCondition PublisherName="*" ProductName="5B04B775-356B-4AA0-AAF8-6491FFEA5611" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="2A355478-7449-43CB-908A-A378AA59FBB9" Name="Whitelist Phone APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="2A355478-7449-43CB-908A-A378AA59FBB9" Name="Allowlist Phone APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.CommsPhone" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="89441630-7F1C-439B-8FFD-0BEEFF400C9B" Name="Whitelist Connect APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="89441630-7F1C-439B-8FFD-0BEEFF400C9B" Name="Allowlist Connect APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.DevicesFlow" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="E8AF01B5-7039-44F4-8072-6A6CC71EDF2E" Name="Whitelist Miracast APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="E8AF01B5-7039-44F4-8072-6A6CC71EDF2E" Name="Allowlist Miracast APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="906BEEDA-B7E6-4DDC-BA8D-AD5031223EF9" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="DA02425B-0291-4A10-BE7E-B9C7922F4EDF" Name="Whitelist Print Dialog APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="DA02425B-0291-4A10-BE7E-B9C7922F4EDF" Name="Allowlist Print Dialog APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.PrintDialog" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="42919A05-347B-4A5F-ACB2-73710A2E6203" Name="Whitelist Block and Filter APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="42919A05-347B-4A5F-ACB2-73710A2E6203" Name="Allowlist Block and Filter APP" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.BlockandFilterglobal" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="6F3D8885-C15E-4D7E-8E1F-F2A560C08F9E" Name="Whitelist MSFacebook" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="6F3D8885-C15E-4D7E-8E1F-F2A560C08F9E" Name="Allowlist MSFacebook" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" ProductName="Microsoft.MSFacebook" BinaryName="*" />
       </Conditions>
     </FilePublisherRule>
 
-    <FilePublisherRule Id="5168A5C3-5DC9-46C1-87C0-65A9DE1B4D18" Name="Whitelist Advanced Info" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
+    <FilePublisherRule Id="5168A5C3-5DC9-46C1-87C0-65A9DE1B4D18" Name="Allowlist Advanced Info" Description="Allow Admins" UserOrGroupSid="S-1-1-0" Action="Allow">
       <Conditions>
         <FilePublisherCondition PublisherName="*" ProductName="B6E3E590-9FA5-40C0-86AC-EF475DE98E88" BinaryName="*" />
       </Conditions>
@@ -1435,12 +1448,12 @@ In this example, **MobileGroup0** is the node name. We recommend using a GUID fo
 ```
 
 ## Example for Windows 10 Holographic for Business
-The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable to enable a working device, as well as Settings.
+The following example for Windows 10 Holographic for Business denies all apps and allows the minimum set of [inbox apps](#inboxappsandcomponents) to enable a working device, as well as Settings.
 
 ```xml
 <RuleCollection Type="Appx" EnforcementMode="Enabled">
     <FilePublisherRule Id="96B82A15-F841-499a-B674-963DC647762F"
-                     Name="Whitelist BackgroundTaskHost"
+                     Name="Allowlist BackgroundTaskHost"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1453,7 +1466,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="8D345CB2-AC5B-4b6b-8F0B-DCE3F6FB9259"
-                     Name="Whitelist CertInstaller"
+                     Name="Allowlist CertInstaller"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1466,7 +1479,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="9F07FB38-B952-4f3c-A17A-CE7EC8132987"
-                     Name="Whitelist MigrationUI"
+                     Name="Allowlist MigrationUI"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1479,7 +1492,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="1C32E96F-2F44-4317-9D98-2F624147D7AE"
-                     Name="Whitelist CredDiagHost"
+                     Name="Allowlist CredDiagHost"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1492,7 +1505,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="53DCC751-E92A-4d0a-84DF-E6EAC2A7C7CE"
-                     Name="Whitelist Settings"
+                     Name="Allowlist Settings"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1505,7 +1518,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="70D9E233-81F4-4707-B79D-58F9C3A6BFB1"
-                     Name="Whitelist HoloShell"
+                     Name="Allowlist HoloShell"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1518,7 +1531,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="6557A9BC-BA1F-4b7d-90FD-8C620CA81906"
-                     Name="Whitelist MSA"
+                     Name="Allowlist MSA"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1531,7 +1544,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="81CD98A6-82EC-443f-87F8-039B00DFBE78"
-                     Name="Whitelist BrokerPlugin"
+                     Name="Allowlist BrokerPlugin"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1544,7 +1557,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="1330E03E-7D43-4e01-9853-40ED8CF62D10"
-                     Name="Whitelist SignIn1"
+                     Name="Allowlist SignIn1"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1557,7 +1570,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="107EC30A-2CEF-4ec1-B556-F7DAA7DF7998"
-                     Name="Whitelist SignIn2"
+                     Name="Allowlist SignIn2"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1570,7 +1583,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="F806AC17-3E31-4a83-92EB-6A34696478D1"
-                     Name="Whitelist SignIn3"
+                     Name="Allowlist SignIn3"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1583,7 +1596,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="E8CAF694-2256-4516-BDCC-CDABF218573C"
-                     Name="Whitelist SignIn4"
+                     Name="Allowlist SignIn4"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1596,7 +1609,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="5918428D-B9A8-4810-8FB4-25AE5A25D5A7"
-                     Name="Whitelist SignIn5"
+                     Name="Allowlist SignIn5"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1609,7 +1622,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="C90D99E3-C3EE-47c5-B181-7E8C54FA66B3"
-                     Name="Whitelist SignIn6"
+                     Name="Allowlist SignIn6"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1622,7 +1635,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="9CD87A91-FB48-480d-B788-3770A950CD03"
-                     Name="Whitelist SignIn7"
+                     Name="Allowlist SignIn7"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1635,7 +1648,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="DCF74448-C287-4195-9072-8F3649AB9305"
-                     Name="Whitelist Cortana"
+                     Name="Allowlist Cortana"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1648,7 +1661,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="BE4FD0C4-527B-45a3-A5B8-F4EA00584779"
-                      Name="Whitelist Cortana ListenUI"
+                      Name="Allowlist Cortana ListenUI"
                       Description=""
                       UserOrGroupSid="S-1-1-0"
                       Action="Allow">
@@ -1661,7 +1674,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="336509A7-FFBA-48cb-81BD-8DF9060B3CF8"
-                     Name="Whitelist Email and accounts"
+                     Name="Allowlist Email and accounts"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1674,7 +1687,7 @@ The following example for Windows 10 Holographic for Business denies all apps an
     </Conditions>
   </FilePublisherRule>
   <FilePublisherRule Id="55912F15-0B94-445b-80E1-83BC8F0E8999"
-                     Name="Whitelist Device Portal PIN UX"
+                     Name="Allowlist Device Portal PIN UX"
                      Description=""
                      UserOrGroupSid="S-1-1-0"
                      Action="Allow">
@@ -1875,12 +1888,3 @@ In this example, Contoso is the node name. We recommend using a GUID for this no
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
-
-
-
-
-
-
-
-

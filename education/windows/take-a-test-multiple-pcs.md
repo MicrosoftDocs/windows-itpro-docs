@@ -30,7 +30,7 @@ To configure a dedicated test account on multiple PCs, select any of the followi
 - [Configuration in Intune for Education](#set-up-a-test-account-in-intune-for-education)
 - [Mobile device management (MDM) or Microsoft Endpoint Configuration Manager](#set-up-a-test-account-in-mdm-or-configuration-manager)
 - [Provisioning package created through Windows Configuration Designer](#set-up-a-test-account-through-windows-configuration-designer)
-- [Group Policy to deploy a scheduled task that runs a Powershell script](https://docs.microsoft.com/education/windows/take-a-test-multiple-pcs#create-a-scheduled-task-in-group-policy) 
+- [Group Policy to deploy a scheduled task that runs a Powershell script](#create-a-scheduled-task-in-group-policy) 
 
 ### Set up a test account in the Set up School PCs app 
 If you want to set up a test account using the Set up School PCs app, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app. Follow the instructions in [Use the Set up School PCs app](use-set-up-school-pcs-app.md) to configure the test-taking account and create a provisioning package. 
@@ -128,8 +128,8 @@ You can configure a dedicated testing account through MDM or Configuration Manag
 ### Set up a test account through Windows Configuration Designer
 To set up a test account through Windows Configuration Designer, follow these steps.
 
-1. [Install Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd).
-2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
+1. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
+2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
    1. After you're done with the wizard, do not click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtime settings**.
    2. Under **Runtime settings**, go to **AssignedAccess > AssignedAccessSettings**.
    3. Enter **{"Account":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}**, using the account that you want to set up.
@@ -145,15 +145,15 @@ To set up a test account through Windows Configuration Designer, follow these st
       - username@tenant.com
 
    4. Under **Runtime settings**, go to **TakeATest** and configure the following settings:
-      1. In **LaunchURI**, enter the assessment URL.
-      2. In **TesterAccount**, enter the test account you entered in step 3.
+      - In **LaunchURI**, enter the assessment URL.
+      - In **TesterAccount**, enter the test account you entered in step 3.
 
-3. Follow the steps to [build a package](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package#build-package). 
+3. Follow the steps to [build a package](/windows/configuration/provisioning-packages/provisioning-create-package#build-package). 
 
    - You will see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
    - Copy the provisioning package to a USB drive.
 
-4. Follow the steps in [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package) to apply the package that you created.
+4. Follow the steps in [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to apply the package that you created.
 
 ### Set up a tester account in Group Policy
 To set up a tester account using Group Policy, first create a Powershell script that configures the tester account and assessment URL, and then create a scheduled task to run the script.
@@ -166,9 +166,9 @@ This sample PowerShell script configures the tester account and the assessment U
 - Use your tester account for **-UserName**
 
 >[!NOTE]
->The account that you specify for the tester account must already exist on the device.
+>The account that you specify for the tester account must already exist on the device. For steps to create the tester account, see [Set up a dedicated test account](./take-a-test-single-pc.md#set-up-a-dedicated-test-account).
 
-```
+```powershell
 $obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";
 $obj.LaunchURI='https://www.foo.com';
 $obj.TesterAccount='TestAccount';
@@ -232,7 +232,7 @@ One of the ways you can present content in a locked down manner is by embedding 
 
 1. Embed a link or create a desktop shortcut with:
 
-   ```
+   ```http
    ms-edu-secureassessment:<URL>#enforceLockdown
    ```
 

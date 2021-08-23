@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Connectivity
-description: Policy CSP - Connectivity
+description: Learn how to use the Policy CSP - Connectivity setting to allow the user to enable Bluetooth or restrict access.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -8,18 +8,16 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer:
 manager: dansimp
 ---
 
 # Policy CSP - Connectivity
 
-
-
 <hr/>
 
 <!--Policies-->
-## Connectivity policies  
+## Connectivity policies
 
 <dl>
   <dd>
@@ -47,7 +45,7 @@ manager: dansimp
     <a href="#connectivity-allowvpnroamingovercellular">Connectivity/AllowVPNRoamingOverCellular</a>
   </dd>
   <dd>
-    <a href="#connectivity-diableprintingoverhttp">Connectivity/DiablePrintingOverHTTP</a>
+    <a href="#connectivity-disableprintingoverhttp">Connectivity/DisablePrintingOverHTTP</a>
   </dd>
   <dd>
     <a href="#connectivity-disabledownloadingofprintdriversoverhttp">Connectivity/DisableDownloadingOfPrintDriversOverHTTP</a>
@@ -70,7 +68,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-allowbluetooth"></a>**Connectivity/AllowBluetooth**  
+<a href="" id="connectivity-allowbluetooth"></a>**Connectivity/AllowBluetooth**
 
 <!--SupportedSKUs-->
 <table>
@@ -136,7 +134,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-allowcellulardata"></a>**Connectivity/AllowCellularData**  
+<a href="" id="connectivity-allowcellulardata"></a>**Connectivity/AllowCellularData**
 
 <!--SupportedSKUs-->
 <table>
@@ -195,7 +193,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-allowcellulardataroaming"></a>**Connectivity/AllowCellularDataRoaming**  
+<a href="" id="connectivity-allowcellulardataroaming"></a>**Connectivity/AllowCellularDataRoaming**
 
 <!--SupportedSKUs-->
 <table>
@@ -244,8 +242,8 @@ Most restricted value is 0.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Prohibit connection to roaming Mobile Broadband networks*
+ADMX Info:
+-   GP Friendly name: *Prohibit connection to roaming Mobile Broadband networks*
 -   GP name: *WCM_DisableRoaming*
 -   GP path: *Network/Windows Connection Manager*
 -   GP ADMX file name: *WCM.admx*
@@ -274,7 +272,7 @@ To validate on mobile devices, do the following:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-allowconnecteddevices"></a>**Connectivity/AllowConnectedDevices**  
+<a href="" id="connectivity-allowconnecteddevices"></a>**Connectivity/AllowConnectedDevices**
 
 <!--SupportedSKUs-->
 <table>
@@ -335,7 +333,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-allowphonepclinking"></a>**Connectivity/AllowPhonePCLinking**  
+<a href="" id="connectivity-allowphonepclinking"></a>**Connectivity/AllowPhonePCLinking**
 
 <!--SupportedSKUs-->
 <table>
@@ -385,20 +383,20 @@ If you do not configure this policy setting, the default behavior depends on the
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
+ADMX Info:
 -   GP name: *enableMMX*
 -   GP ADMX file name: *grouppolicy.admx*
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-This setting supports a range of values between 0 and 1.  
+This setting supports a range of values between 0 and 1.
 
 - 0 - Do not link
 - 1 (default) - Allow phone-PC linking
 
 <!--/SupportedValues-->
 <!--Validation-->
-Validation:  
+Validation:
 
 If the Connectivity/AllowPhonePCLinking policy is configured to value 0, the add a phone button in the Phones section in settings will be grayed out and clicking it will not launch the window for a user to enter their phone number.
 
@@ -410,7 +408,7 @@ Device that has previously opt-in to MMX will also stop showing on the device li
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-allowusbconnection"></a>**Connectivity/AllowUSBConnection**  
+<a href="" id="connectivity-allowusbconnection"></a>**Connectivity/AllowUSBConnection**
 
 <!--SupportedSKUs-->
 <table>
@@ -475,7 +473,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-allowvpnovercellular"></a>**Connectivity/AllowVPNOverCellular**  
+<a href="" id="connectivity-allowvpnovercellular"></a>**Connectivity/AllowVPNOverCellular**
 
 <!--SupportedSKUs-->
 <table>
@@ -535,7 +533,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-allowvpnroamingovercellular"></a>**Connectivity/AllowVPNRoamingOverCellular**  
+<a href="" id="connectivity-allowvpnroamingovercellular"></a>**Connectivity/AllowVPNRoamingOverCellular**
 
 <!--SupportedSKUs-->
 <table>
@@ -595,7 +593,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-diableprintingoverhttp"></a>**Connectivity/DiablePrintingOverHTTP**  
+<a href="" id="connectivity-disableprintingoverhttp"></a>**Connectivity/DisablePrintingOverHTTP**
 
 <!--SupportedSKUs-->
 <table>
@@ -652,15 +650,15 @@ Also, see the "Web-based printing" policy setting in Computer Configuration/Admi
 
 <!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there is a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off printing over HTTP*
+ADMX Info:
+-   GP Friendly name: *Turn off printing over HTTP*
 -   GP name: *DisableHTTPPrinting_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -671,7 +669,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-disabledownloadingofprintdriversoverhttp"></a>**Connectivity/DisableDownloadingOfPrintDriversOverHTTP**  
+<a href="" id="connectivity-disabledownloadingofprintdriversoverhttp"></a>**Connectivity/DisableDownloadingOfPrintDriversOverHTTP**
 
 <!--SupportedSKUs-->
 <table>
@@ -726,15 +724,15 @@ If you disable or do not configure this policy setting, users can download print
 
 <!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there is a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off downloading of print drivers over HTTP*
+ADMX Info:
+-   GP Friendly name: *Turn off downloading of print drivers over HTTP*
 -   GP name: *DisableWebPnPDownload_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -745,7 +743,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards"></a>**Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards**  
+<a href="" id="connectivity-disableinternetdownloadforwebpublishingandonlineorderingwizards"></a>**Connectivity/DisableInternetDownloadForWebPublishingAndOnlineOrderingWizards**
 
 <!--SupportedSKUs-->
 <table>
@@ -800,15 +798,15 @@ See the documentation for the web publishing and online ordering wizards for mor
 
 <!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there is a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Turn off Internet download for Web publishing and online ordering wizards*
+ADMX Info:
+-   GP Friendly name: *Turn off Internet download for Web publishing and online ordering wizards*
 -   GP name: *ShellPreventWPWDownload_2*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -819,7 +817,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-disallownetworkconnectivityactivetests"></a>**Connectivity/DisallowNetworkConnectivityActiveTests**  
+<a href="" id="connectivity-disallownetworkconnectivityactivetests"></a>**Connectivity/DisallowNetworkConnectivityActiveTests**
 
 <!--SupportedSKUs-->
 <table>
@@ -868,8 +866,8 @@ Value type is integer.
 
 <!--/Description-->
 <!--ADMXMapped-->
-ADMX Info:  
--   GP English name: *Turn off Windows Network Connectivity Status Indicator active tests*
+ADMX Info:
+-   GP Friendly name: *Turn off Windows Network Connectivity Status Indicator active tests*
 -   GP name: *NoActiveProbe*
 -   GP path: *Internet Communication settings*
 -   GP ADMX file name: *ICM.admx*
@@ -880,7 +878,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-hardeneduncpaths"></a>**Connectivity/HardenedUNCPaths**  
+<a href="" id="connectivity-hardeneduncpaths"></a>**Connectivity/HardenedUNCPaths**
 
 <!--SupportedSKUs-->
 <table>
@@ -929,15 +927,15 @@ If you enable this policy, Windows only allows access to the specified UNC paths
 
 <!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there is a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Hardened UNC Paths*
+ADMX Info:
+-   GP Friendly name: *Hardened UNC Paths*
 -   GP name: *Pol_HardenedPaths*
 -   GP path: *Network/Network Provider*
 -   GP ADMX file name: *networkprovider.admx*
@@ -948,7 +946,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="connectivity-prohibitinstallationandconfigurationofnetworkbridge"></a>**Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge**  
+<a href="" id="connectivity-prohibitinstallationandconfigurationofnetworkbridge"></a>**Connectivity/ProhibitInstallationAndConfigurationOfNetworkBridge**
 
 <!--SupportedSKUs-->
 <table>
@@ -1001,31 +999,34 @@ If you disable this setting or do not configure it, the user will be able to cre
 
 <!--/Description-->
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+>
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+>
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there is a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
-ADMX Info:  
--   GP English name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
+ADMX Info:
+-   GP Friendly name: *Prohibit installation and configuration of Network Bridge on your DNS domain network*
 -   GP name: *NC_AllowNetBridge_NLA*
 -   GP path: *Network/Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
+- 9 - Available in Windows 10, version 2009.
 
 <!--/Policies-->
-

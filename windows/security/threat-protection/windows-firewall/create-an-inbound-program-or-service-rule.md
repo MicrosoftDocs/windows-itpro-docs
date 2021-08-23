@@ -1,10 +1,10 @@
 ---
 title: Create an Inbound Program or Service Rule (Windows 10)
-description: Create an Inbound Program or Service Rule
+description: Learn how to allow inbound traffic to a program or service by using the Group Policy Management MMC snap-in to create firewall rules.
 ms.assetid: 00b7fa60-7c64-4ba5-ba95-c542052834cf
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Create an Inbound Program or Service Rule
@@ -64,7 +65,7 @@ To create an inbound firewall rule for a program or service
 
     To set a SID type on a service, run the following command:
 
-    **sc** **sidtype** *&lt;Type&gt; &lt;ServiceName&gt;*
+    **sc** **sidtype** *&lt;ServiceName&gt; &lt;Type&gt;*
 
     In the preceding command, the value of *&lt;Type&gt;* can be **UNRESTRICTED** or **RESTRICTED**. Although the command also permits the value of **NONE**, that setting means the service cannot be used in a firewall rule as described here. By default, most services in Windows are configured as **UNRESTRICTED**. If you change the SID type to **RESTRICTED**, the service might fail to start. We recommend that you change the SID type only on services that you want to use in firewall rules, and that you change the SID type to **UNRESTRICTED**.
 

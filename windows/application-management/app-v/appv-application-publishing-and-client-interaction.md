@@ -1,7 +1,7 @@
 ---
 title: Application Publishing and Client Interaction (Windows 10)
-description: Application publishing and client interaction.
-author: dansimp
+description: Learn technical information about common App-V Client operations and their integration with the local operating system.
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 06/08/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # Application publishing and client interaction
@@ -85,7 +85,7 @@ To change the default location of the package store during setup, see [Enable th
 
 ### Shared Content Store
 
-If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). In VDI environments where local storage can be limited, it's important to use as little disk space as possible. You can minimize disk space usage by streaming applications from a high-performance network location (such as a SAN). For more information, see [Shared Content Store in Microsoft App-V 5.0 - Behind the Scenes](https://blogs.technet.microsoft.com/appv/2013/07/22/shared-content-store-in-microsoft-app-v-5-0-behind-the-scenes/).
+If the App-V Client is configured in Shared Content Store mode, no data is written to disk when a stream fault occurs, which means that the packages require minimal local disk space (publishing data). In VDI environments where local storage can be limited, it's important to use as little disk space as possible. You can minimize disk space usage by streaming applications from a high-performance network location (such as a SAN). For more information, see [Shared Content Store in Microsoft App-V 5.0 - Behind the Scenes](/archive/blogs/appv/shared-content-store-in-microsoft-app-v-5-0-behind-the-scenes).
 
 >[!NOTE]
 >The machine and package store must be located on a local drive, even when you’re using Shared Content Store configurations for the App-V Client.
@@ -101,25 +101,25 @@ The App-V Client manages the following two file-based locations:
 
 The locations described in this table can be found in the %programdata%\Microsoft\AppV\Client\Catalog\ folder.
 
-|||
-|---|---|
-|Description|Stores package documents that are available to users on the machine when packages are added and published. However, if a package is “global” at publishing time, the integrations are available to all users.<br></br>If a package is non-global, the integrations are published only for specific users, but there are still global resources that are modified and visible to anyone on the client computer (such as when the package directory is in a shared disk location).<br></br>If a package is available to a user on the computer (global or non-global), the manifest is stored in the Machine Catalog. When a package is published globally, there is a Dynamic Configuration file, stored in the Machine Catalog; therefore, the determination of whether a package is global is defined according to whether there is a policy file (UserDeploymentConfiguration file) in the Machine Catalog.|
-|Default storage location|%programdata%\Microsoft\AppV\Client\Catalog\<br></br>This location is not the same as the Package Store location. The Package Store is the golden or pristine copy of the package files.|
-|Files in the machine catalog|- Manifest.xml<br>- DeploymentConfiguration.xml<br>- UserManifest.xml (Globally Published Package)<br>- UserDeploymentConfiguration.xml (Globally Published Package)|
-|Additional machine catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned previously as the default storage location:<br></br>%programdata%\Microsoft\AppV\Client\Catalog\PackageGroups\ConGroupGUID\ConGroupVerGUID|
-|Additional files in the machine catalog when the package is part of a connection group|- PackageGroupDescriptor.xml<br>- UserPackageGroupDescriptor.xml (globally published Connection Group)|
+|    | Location |
+|:---|:---|
+|**Description**|Stores package documents that are available to users on the machine when packages are added and published. However, if a package is “global” at publishing time, the integrations are available to all users.<br></br>If a package is non-global, the integrations are published only for specific users, but there are still global resources that are modified and visible to anyone on the client computer (such as when the package directory is in a shared disk location).<br></br>If a package is available to a user on the computer (global or non-global), the manifest is stored in the Machine Catalog. When a package is published globally, there is a Dynamic Configuration file, stored in the Machine Catalog; therefore, the determination of whether a package is global is defined according to whether there is a policy file (UserDeploymentConfiguration file) in the Machine Catalog.|
+|**Default storage location**|%programdata%\Microsoft\AppV\Client\Catalog\<br></br>This location is not the same as the Package Store location. The Package Store is the golden or pristine copy of the package files.|
+|**Files in the machine catalog**|- Manifest.xml<br>- DeploymentConfiguration.xml<br>- UserManifest.xml (Globally Published Package)<br>- UserDeploymentConfiguration.xml (Globally Published Package)|
+|**Additional machine catalog location, used when the package is part of a connection group**|The following location is in addition to the specific package location mentioned previously as the default storage location:<br></br>%programdata%\Microsoft\AppV\Client\Catalog\PackageGroups\ConGroupGUID\ConGroupVerGUID|
+|**Additional files in the machine catalog when the package is part of a connection group**|- PackageGroupDescriptor.xml<br>- UserPackageGroupDescriptor.xml (globally published Connection Group)|
 
 ### User catalog
 
 The locations described in this table can be found in the appdata\roaming\Microsoft\AppV\Client\Catalog\ folder.
 
-|||
-|---|---|
-|Description|Created during the publishing process. Contains information used for publishing the package, and for making sure that a package is provisioned to a specific user at launch. Created in a roaming location and includes user-specific publishing information.<br></br>When a package is published for a user, the policy file is stored in the User Catalog. At the same time, a copy of the manifest is also stored in the User Catalog. When a package entitlement is removed for a user, the relevant package files are removed from the User Catalog. Looking at the user catalog, an administrator can view the presence of a Dynamic Configuration file, which indicates that the package is entitled for that user.<br></br>For roaming users, the User Catalog needs to be in a roaming or shared location to preserve the legacy App-V behavior of targeting users by default. Entitlement and policy are tied to a user, not a computer, so they should roam with the user once they are provisioned.|
-|Default storage location|appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID|
-|Files in the user catalog|- UserManifest.xml<br>- DynamicConfiguration.xml or UserDeploymentConfiguration.xml|
-|Additional user catalog location, used when the package is part of a connection group|The following location is in addition to the specific package location mentioned above:<br></br>appdata\roaming\Microsoft\AppV\Client\Catalog\PackageGroups\PkgGroupGUID\PkgGroupVerGUID|
-|Additional file in the machine catalog when the package is part of a connection group|UserPackageGroupDescriptor.xml|
+|| Location |
+|:---|:---|
+|**Description**|Created during the publishing process. Contains information used for publishing the package, and for making sure that a package is provisioned to a specific user at launch. Created in a roaming location and includes user-specific publishing information.<br></br>When a package is published for a user, the policy file is stored in the User Catalog. At the same time, a copy of the manifest is also stored in the User Catalog. When a package entitlement is removed for a user, the relevant package files are removed from the User Catalog. Looking at the user catalog, an administrator can view the presence of a Dynamic Configuration file, which indicates that the package is entitled for that user.<br></br>For roaming users, the User Catalog needs to be in a roaming or shared location to preserve the legacy App-V behavior of targeting users by default. Entitlement and policy are tied to a user, not a computer, so they should roam with the user once they are provisioned.|
+|**Default storage location**|appdata\roaming\Microsoft\AppV\Client\Catalog\Packages\PkgGUID\VerGUID|
+|**Files in the user catalog**|- UserManifest.xml<br>- DynamicConfiguration.xml or UserDeploymentConfiguration.xml|
+|**Additional user catalog location, used when the package is part of a connection group**|The following location is in addition to the specific package location mentioned above:<br></br>appdata\roaming\Microsoft\AppV\Client\Catalog\PackageGroups\PkgGroupGUID\PkgGroupVerGUID|
+|**Additional file in the machine catalog when the package is part of a connection group**|UserPackageGroupDescriptor.xml|
 
 ### Shortcut backups
 
@@ -694,7 +694,7 @@ The App-V Client supports publishing applications with support for COM integrati
 
 App-V supports registering COM objects from the package to the local operating system with two process types: Out-of-process and In-process. Registering COM objects is accomplished with one or a combination of multiple modes of operation for a specific App-V package that includes Off, Isolated, and Integrated. Integrated mode is configured for either the Out-of-process or In-process type. Configuration of COM modes and types is accomplished with dynamic configuration files (deploymentconfig.xml or userconfig.xml).
 
-For details on App-V integration, see [Microsoft Application Virtualization 5.0 Integration](https://blogs.technet.microsoft.com/appv/2013/01/03/microsoft-application-virtualization-5-0-integration).
+For details on App-V integration, see [Microsoft Application Virtualization 5.0 Integration](/archive/blogs/appv/microsoft-application-virtualization-5-0-integration).
 
 ### Software clients and application capabilities
 
@@ -758,7 +758,7 @@ For situations where there is more than one application that could register the 
 
 The AppPath extension point supports calling App-V applications directly from the operating system. Administrators can provide access to App-V applications from operating system commands or scripts without calling the specific path to the executable from either the Run or Start Screen, depending on the operating system. It therefore avoids modifying the system path environment variable on all systems, as it is accomplished during publishing.
 
-The AppPath extension point is configured either in the manifest or in the dynamic configuration files and is stored in the registry on the local machine during publishing for the user. For additional information on AppPath review: [App Paths - A Virtual Application Extension in App-V 5.0](https://blogs.technet.microsoft.com/virtualworld/2012/12/12/app-paths-a-virtual-application-extension-in-app-v-5-0/).
+The AppPath extension point is configured either in the manifest or in the dynamic configuration files and is stored in the registry on the local machine during publishing for the user. For additional information on AppPath review: [App Paths - A Virtual Application Extension in App-V 5.0](/archive/blogs/virtualworld/app-paths-a-virtual-application-extension-in-app-v-5-0).
 
 ### Virtual application
 
@@ -896,6 +896,3 @@ There are three specific categories of events recorded:
 - **Admin** logs events for configurations applied to the App-V Client and also contains the primary warnings and errors.
 - **Operational** logs the general App-V execution and usage of individual components, creating an audit log of the App-V Client's completed App-V operations.
 - **Virtual Application** logs virtual application launches and use of virtualization subsystems.
-
-
-

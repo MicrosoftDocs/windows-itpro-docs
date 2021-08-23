@@ -1,6 +1,6 @@
 ---
 title: Configure system failure and recovery options in Windows
-description: Learn about the system failure and recovery options in Windows.
+description: Learn how to configure the actions that Windows takes when a system error occurs and what the recovery options are.
 ms.prod: w10
 ms.sitesec: library
 ms.topic: troubleshooting
@@ -202,4 +202,4 @@ To view system failure and recovery settings for your local computer, type **wmi
 
 ## References
 
-[Varieties of Kernel-Mode Dump Files](https://docs.microsoft.com/windows-hardware/drivers/debugger/varieties-of-kernel-mode-dump-files)
+[Varieties of Kernel-Mode Dump Files](/windows-hardware/drivers/debugger/varieties-of-kernel-mode-dump-files)

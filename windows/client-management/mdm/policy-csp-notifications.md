@@ -80,7 +80,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This policy setting blocks applications from using the network to send tile, badge, toast, and raw notifications. Specifically, this policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to use [periodic (polling) notifications](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/periodic-notification-overview).
+Added in Windows 10, version 1803. This policy setting blocks applications from using the network to send tile, badge, toast, and raw notifications. Specifically, this policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to use [periodic (polling) notifications](/windows/uwp/design/shell/tiles-and-notifications/periodic-notification-overview).
 
 If you enable this policy setting, applications and system features will not be able receive notifications from the network from WNS or via notification polling APIs.
 
@@ -96,7 +96,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off notifications network usage*
+-   GP Friendly name: *Turn off notifications network usage*
 -   GP name: *NoCloudNotification*
 -   GP path: *Start Menu and Taskbar/Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -170,7 +170,7 @@ No reboot or service restart is required for this policy to take effect.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off notification mirroring*
+-   GP Friendly name: *Turn off notification mirroring*
 -   GP name: *NoNotificationMirroring*
 -   GP path: *Start Menu and Taskbar/Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -242,7 +242,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off tile notifications*
+-   GP Friendly name: *Turn off tile notifications*
 -   GP name: *NoTileNotification*
 -   GP path: *Start Menu and Taskbar/Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -264,12 +264,13 @@ Validation:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

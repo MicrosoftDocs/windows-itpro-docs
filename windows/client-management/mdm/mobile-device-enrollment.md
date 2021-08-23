@@ -14,7 +14,6 @@ ms.date: 08/11/2017
 
 # Mobile device enrollment
 
-
 Mobile device enrollment is the first phase of enterprise management. The device is configured to communicate with the MDM server using security precautions during the enrollment process. The enrollment service verifies that only authenticated and authorized devices can be managed by their enterprise.
 
 The enrollment process includes the following steps:
@@ -33,21 +32,20 @@ The enrollment process includes the following steps:
 
 ## Enrollment protocol
 
-
-There are a number of changes made to the enrollment protocol to better support a variety of scenarios across all platforms. For detailed information about the mobile device enrollment protocol, see [\[MS-MDM\]: Mobile Device Management Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619346) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
+There are a number of changes made to the enrollment protocol to better support a variety of scenarios across all platforms. For detailed information about the mobile device enrollment protocol, see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347).
 
 The enrollment process involves the following steps:
 
-**Discovery request**
+### Discovery request
    The discovery request is a simple HTTP post call that returns XML over HTTP. The returned XML includes the authentication URL, the management service URL, and the user credential type.
 
-**Certificate enrollment policy**
-The certificate enrollment policy configuration is an implementation of the MS-XCEP protocol, which is described in \[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol Specification. Section 4 of the specification provides an example of the policy request and response. The X.509 Certificate Enrollment Policy Protocol is a minimal messaging protocol that includes a single client request message (GetPolicies) with a matching server response message (GetPoliciesResponse). For more information, see [\[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol](https://go.microsoft.com/fwlink/p/?LinkId=619345)
+### Certificate enrollment policy
+The certificate enrollment policy configuration is an implementation of the MS-XCEP protocol, which is described in \[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol Specification. Section 4 of the specification provides an example of the policy request and response. The X.509 Certificate Enrollment Policy Protocol is a minimal messaging protocol that includes a single client request message (GetPolicies) with a matching server response message (GetPoliciesResponse). For more information, see [\[MS-XCEP\]: X.509 Certificate Enrollment Policy Protocol](/openspecs/windows_protocols/ms-xcep/08ec4475-32c2-457d-8c27-5a176660a210)
 
-**Certificate enrollment**
+### Certificate enrollment
 The certificate enrollment is an implementation of the MS-WSTEP protocol.
 
-**Management configuration**
+### Management configuration
 The server sends provisioning XML that contains a server certificate (for SSL server authentication), a client certificate issued by enterprise CA, DM client bootstrap information (for the client to communicate with the management server), an enterprise application token (for the user to install enterprise applications), and the link to download the Company Hub application.
 
 The following topics describe the end-to-end enrollment process using various authentication methods:
@@ -56,18 +54,17 @@ The following topics describe the end-to-end enrollment process using various au
 -   [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
 -   [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
 
-> **Note**  As a best practice, do not use hardcoded server-side checks on values such as:
+> [!Note]
+> As a best practice, do not use hardcoded server-side checks on values such as:
 > -   User agent string
 > -   Any fixed URIs that are passed during enrollment
 > -   Specific formatting of any value unless otherwise noted, such as the format of the device ID.
 
-
 ## Enrollment support for domain-joined devices
- 
+
 Devices that are joined to an on-premises Active Directory can enroll into MDM via the Work access page in **Settings**. However, the enrollment can only target the user enrolled with user-specific policies. Device targeted policies will continue to impact all users of the device.
 
 ## Disable MDM enrollments
-
 
 Starting in Windows 10, version 1607, IT admin can disable MDM enrollments for domain-joined PCs using Group Policy. Using the GP editor, the path is **Computer configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **MDM** &gt; **Disable MDM Enrollment**.
 
@@ -89,7 +86,6 @@ The following scenarios do not allow MDM enrollments:
 
 ## Enrollment migration
 
-
 **Desktop:** After the MDM client upgrade from Windows 8.1 to Windows 10, enrollment migration starts at the first client-initiated sync with the MDM service. The enrollment migration start time depends on the MDM server configuration. For example, for Intune it runs every 6 hours.
 
 Until the enrollment migration is completed, the user interface will show no enrollment and server push will not work.
@@ -99,7 +95,6 @@ To manually trigger enrollment migration, you can run MDMMaintenenceTask.
 **Mobile devices:** After the MDM client upgrade from Windows Phone 8.1 to Windows 10 Mobile, enrollment migration is performed during the first boot after the upgrade.
 
 ## Enrollment error messages
-
 
 The enrollment server can decline enrollment messages using the SOAP Fault format. Errors created can be sent as follows:
 
@@ -196,8 +191,6 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 </tbody>
 </table>
 
- 
-
 In Windows 10, version 1507, we added the deviceenrollmentserviceerror element. Here is an example:
 
 ```xml
@@ -291,20 +284,11 @@ In Windows 10, version 1507, we added the deviceenrollmentserviceerror element.
 </tbody>
 </table>
 
- 
-
 TraceID is a freeform text node which is logged. It should identify the server side state for this enrollment attempt. This information may be used by support to look up why the server declined the enrollment.
 
 ## Related topics
-
 
 -   [MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)
 -   [Federated authentication device enrollment](federated-authentication-device-enrollment.md)
 -   [Certificate authentication device enrollment](certificate-authentication-device-enrollment.md)
 -   [On-premise authentication device enrollment](on-premise-authentication-device-enrollment.md)
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 ---
 title: Configure Client Computers (Windows 10)
-description: Configure Client Computers
+description: Learn how to configure client computers to enable the Volume Activation Management Tool (VAMT) to function correctly.
 ms.assetid: a48176c9-b05c-4dd5-a9ef-83073e2370fc
 ms.reviewer: 
 manager: laurawi
@@ -24,8 +24,8 @@ To enable the Volume Activation Management Tool (VAMT) to function correctly, ce
 
 Organizations where the VAMT will be widely used may benefit from making these changes inside the master image for Windows.
 
-> [IMPORTANT]  
-> This procedure only applies to clients running Windows Vista or later. For clients running Windows XP Service Pack 1, see [Connecting Through Windows Firewall](https://docs.microsoft.com/windows/win32/wmisdk/connecting-to-wmi-remotely-with-vbscript).
+> [IMPORTANT]
+> This procedure only applies to clients running Windows Vista or later. For clients running Windows XP Service Pack 1, see [Connecting Through Windows Firewall](/windows/win32/wmisdk/connecting-to-wmi-remotely-with-vbscript).
 
 ## Configuring the Windows Firewall to allow VAMT access
 

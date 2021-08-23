@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Cellular
-description: Policy CSP - Cellular
+description: Learn how to use the Policy CSP - Cellular setting so you can specify whether Windows apps can access cellular data.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -103,7 +103,7 @@ If an app is open when this Group Policy object is applied on a device, employee
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Let Windows apps access cellular data*
+-   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_Enum*
 -   GP path: *Network/WWAN Service/Cellular Data Access*
@@ -171,7 +171,7 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Let Windows apps access cellular data*
+-   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_ForceAllowTheseApps_List*
 -   GP path: *Network/WWAN Service/Cellular Data Access*
@@ -231,7 +231,7 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Let Windows apps access cellular data*
+-   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_ForceDenyTheseApps_List*
 -   GP path: *Network/WWAN Service/Cellular Data Access*
@@ -291,7 +291,7 @@ Added in Windows 10, version 1709. List of semi-colon delimited Package Family N
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Let Windows apps access cellular data*
+-   GP Friendly name: *Let Windows apps access cellular data*
 -   GP name: *LetAppsAccessCellularData*
 -   GP element: *LetAppsAccessCellularData_UserInControlOfTheseApps_List*
 -   GP path: *Network/WWAN Service/Cellular Data Access*
@@ -361,7 +361,7 @@ If this policy setting is disabled or is not configured, the link to the per-app
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Per-App Cellular Access UI Visibility*
+-   GP Friendly name: *Set Per-App Cellular Access UI Visibility*
 -   GP name: *ShowAppCellularAccessUI*
 -   GP path: *Network/WWAN Service/WWAN UI Settings*
 -   GP ADMX file name: *wwansvc.admx*
@@ -372,12 +372,14 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, and security consid
 ms.assetid: 5a7fa2e2-e1a8-4833-90f7-aa83e3b456a9
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Domain controller: Refuse machine account password changes
@@ -30,17 +30,11 @@ This policy setting enables or disables blocking a domain controller from accept
 
 ### Possible values
 
--   Enabled
+-   **Enabled** When enabled, this setting does not allow a domain controller to accept any changes to a machine account's password.
 
-    When enabled, this setting does not allow a domain controller to accept any changes to a machine account's password.
+-   **Disabled** When disabled, this setting allows a domain controller to accept any changes to a machine account's password.
 
--   Disabled
-
-    When disabled, this setting allows a domain controller to accept any changes to a machine account's password.
-
--   Not defined
-
-    Same as Disabled.
+-   **Not defined** Same as Disabled.
 
 ### Best practices
 
@@ -50,18 +44,25 @@ This policy setting enables or disables blocking a domain controller from accept
 
 Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Security Options
 
+The policy referenced configures the following registry value:
+
+Registry Hive: HKEY_LOCAL_MACHINE
+Registry Path: \System\CurrentControlSet\Services\Netlogon\Parameters\
+
+Value Name: RefusePasswordChange
+
 ### Default values
 
 The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
 
 | Server type or GPO | Default value |
-| - | - |
-| Default Domain Policy | Not defined| 
-| Default Domain Controller Policy | Not defined| 
-| Stand-Alone Server Default Settings | Not defined| 
-| DC Effective Default Settings | Disabled| 
-| Member Server Effective Default Settings | Disabled| 
-| Client Computer Effective Default Settings | Not applicable| 
+|---|---|
+| Default Domain Policy | Not defined | 
+| Default Domain Controller Policy | Not defined | 
+| Stand-Alone Server Default Settings | Not defined | 
+| DC Effective Default Settings | Disabled | 
+| Member Server Effective Default Settings | Disabled | 
+| Client Computer Effective Default Settings | Not applicable | 
  
 ## Policy management
 

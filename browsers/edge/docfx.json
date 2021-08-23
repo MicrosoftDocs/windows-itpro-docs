@@ -27,6 +27,7 @@
       }
     ],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/microsoft-edge/deploy/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "ms.technology": "microsoft-edge",
@@ -42,9 +43,18 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Edge"
+      "titleSuffix": "Edge",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
-    "externalReference": [],
+    "fileMetadata": {},
     "template": "op.html",
     "dest": "browsers/edge",
     "markdownEngineName": "markdig"

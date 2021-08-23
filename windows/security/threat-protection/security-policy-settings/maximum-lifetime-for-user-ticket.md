@@ -4,7 +4,7 @@ description: Describes the best practices, location, values, policy management, 
 ms.assetid: bcb4ff59-334d-4c2f-99af-eca2b64011dc
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Maximum lifetime for user ticket
@@ -37,7 +38,7 @@ If the value for this policy setting is too high, users might be able to access 
 
 ### Best practices
 
--   It is advisable to set **Maximum lifetime for user ticket** to 10 hours.
+-   We recommend that you set the **Maximum lifetime for user ticket** to 10 hours.
 
 ### Location
 

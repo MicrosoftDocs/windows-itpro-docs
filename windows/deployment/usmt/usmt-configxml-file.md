@@ -1,6 +1,6 @@
 ---
 title: Config.xml File (Windows 10)
-description: Config.xml File
+description: Learn how the Config.xml file is an optional User State Migration Tool (USMT) 10.0 file that you can create using the /genconfig option with the ScanState.exe tool.
 ms.assetid: 9dc98e76-5155-4641-bcb3-81915db538e8
 ms.reviewer: 
 manager: laurawi
@@ -33,7 +33,7 @@ To exclude a component from the Config.xml file, set the **migrate** value to **
 
  
 
-## In This Topic
+## In this topic
 
 
 In USMT there are new migration policies that can be configured in the Config.xml file. For example, you can configure additional **&lt;ErrorControl&gt;**, **&lt;ProfileControl&gt;**, and **&lt;HardLinkStoreControl&gt;** options. The following elements and parameters are for use in the Config.xml file only.

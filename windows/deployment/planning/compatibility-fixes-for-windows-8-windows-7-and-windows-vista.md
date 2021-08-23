@@ -1,5 +1,5 @@
 ---
-title: Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista (Windows 10)
+title: Compatibility Fixes for Windows 10, Windows 8, Windows 7, & Windows Vista
 description: Find compatibility fixes for all Windows operating systems that have been released from Windows Vista through Windows 10.
 ms.assetid: cd51c824-557f-462a-83bb-54b0771b7dff
 ms.reviewer: 
@@ -13,6 +13,7 @@ audience: itpro
 author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Compatibility Fixes for Windows 10, Windows 8, Windows 7, and Windows Vista
@@ -75,7 +76,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 </tr>
 <tr class="even">
 <td align="left"><p>BIOSRead</p></td>
-<td align="left"><p>This problem is indicated when an application cannot access the <strong>Device\PhysicalMemory</strong> object beyond the kernel-mode drivers, on any of the Windows Server® 2003 operating systems.</p>
+<td align="left"><p>This problem is indicated when an application cannot access the <strong>Device\PhysicalMemory</strong> object beyond the kernel-mode drivers, on any of the Windows Server&reg; 2003 operating systems.</p>
 <p>The fix enables OEM executable (.exe) files to use the GetSystemFirmwareTable function instead of the NtOpenSection function when the BIOS is queried for the <strong>\Device\Physical</strong> memory information..</p></td>
 </tr>
 <tr class="odd">
@@ -83,7 +84,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>This problem occurs when <strong>InstallShield</strong> creates installers and uninstallers that fail to complete and that generate error messages or warnings.</p>
 <p>The fix blocks <strong>InstallShield</strong> from setting the value of <strong>RunAs</strong> registry keys to InteractiveUser Because InteractiveUser no longer has Administrator rights.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690328" data-raw-source="[Using the BlockRunAsInteractiveUser Fix](https://go.microsoft.com/fwlink/p/?LinkId=690328)">Using the BlockRunAsInteractiveUser Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638336(v=ws.10)" data-raw-source="[Using the BlockRunAsInteractiveUser Fix](/previous-versions/windows/it-pro/windows-7/dd638336(v=ws.10))">Using the BlockRunAsInteractiveUser Fix</a>.</p>
 </div>
 <div>
 
@@ -92,7 +93,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <tr class="even">
 <td align="left"><p>ChangeFolderPathToXPStyle</p></td>
 <td align="left"><p>This fix is required when an application cannot return shell folder paths when it uses the <strong>SHGetFolder</strong> API.</p>
-<p>The fix intercepts the <strong>SHGetFolder</strong> path request to the common <strong>appdata</strong> file path and returns the Windows® XP-style file path instead of the Windows Vista-style file path.</p></td>
+<p>The fix intercepts the <strong>SHGetFolder</strong> path request to the common <strong>appdata</strong> file path and returns the Windows&reg; XP-style file path instead of the Windows Vista-style file path.</p></td>
 </tr>
 <tr class="odd">
 <td align="left"><p>ClearLastErrorStatusonIntializeCriticalSection</p></td>
@@ -105,7 +106,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <p>The fix scans the existing user profiles and tries to copy the specified keys into the HKEY_CURRENT_USER registry area.</p>
 <p>You can control this fix further by entering the relevant registry keys as parameters that are separated by the ^ Symbol; for example: <code>Software\MyCompany\Key1^Software\MyCompany\Key2</code>.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690329" data-raw-source="[Using the CopyHKCUSettingsFromOtherUsers Fix](https://go.microsoft.com/fwlink/p/?LinkId=690329)">Using the CopyHKCUSettingsFromOtherUsers Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638375(v=ws.10)" data-raw-source="[Using the CopyHKCUSettingsFromOtherUsers Fix](/previous-versions/windows/it-pro/windows-7/dd638375(v=ws.10))">Using the CopyHKCUSettingsFromOtherUsers Fix</a>.</p>
 </div>
 <div>
 
@@ -121,7 +122,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem is indicated when an application tries to write files to the hard disk and is denied access or receives a file not found or path not found error message.</p>
 <p>The fix modifies the file path names to point to a new location on the hard disk.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about the CorrectFilePaths application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690330" data-raw-source="[Using the CorrectFilePaths Fix](https://go.microsoft.com/fwlink/p/?LinkId=690330)">Using the CorrectFilePaths Fix</a>. We recommend that you use this fix together with the CorrectFilePathsUninstall fix if you are applying it to a setup installation file.</p>
+<strong>Note</strong><br/><p>For more detailed information about the CorrectFilePaths application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc766201(v=ws.10)" data-raw-source="[Using the CorrectFilePaths Fix](/previous-versions/windows/it-pro/windows-7/cc766201(v=ws.10))">Using the CorrectFilePaths Fix</a>. We recommend that you use this fix together with the CorrectFilePathsUninstall fix if you are applying it to a setup installation file.</p>
 </div>
 <div>
 
@@ -132,7 +133,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>This problem occurs when an uninstalled application leaves behind files, directories, and links.</p>
 <p>The fix corrects the file paths that are used by the uninstallation process of an application.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690331" data-raw-source="[Using the CorrectFilePathsUninstall Fix](https://go.microsoft.com/fwlink/p/?LinkId=690331)">Using the CorrectFilePathsUninstall Fix</a>. We recommend that you use this fix together with the CorrectFilePaths fix if you are applying it to a setup installation file.</p>
+<strong>Note</strong><br/><p>For more detailed information about this fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638414(v=ws.10)" data-raw-source="[Using the CorrectFilePathsUninstall Fix](/previous-versions/windows/it-pro/windows-7/dd638414(v=ws.10))">Using the CorrectFilePathsUninstall Fix</a>. We recommend that you use this fix together with the CorrectFilePaths fix if you are applying it to a setup installation file.</p>
 </div>
 <div>
 
@@ -143,7 +144,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>This problem occurs when you start an executable (.exe) and a taskbar item blinks instead of an elevation prompt being opened, or when the application does not provide a valid HWND value when it calls the ShellExecute(Ex) function.</p>
 <p>The fix intercepts the ShellExecute(Ex) calls, and then inspects the HWND value. If the value is invalid, this fix enables the call to use the currently active HWND value.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about the CorrectShellExecuteHWND application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690332" data-raw-source="[Using the CorrectShellExecuteHWND Fix](https://go.microsoft.com/fwlink/p/?LinkId=690332)">Using the CorrectShellExecuteHWND Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about the CorrectShellExecuteHWND application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc722028(v=ws.10)" data-raw-source="[Using the CorrectShellExecuteHWND Fix](/previous-versions/windows/it-pro/windows-7/cc722028(v=ws.10))">Using the CorrectShellExecuteHWND Fix</a>.</p>
 </div>
 <div>
 
@@ -188,7 +189,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 </tr>
 <tr class="even">
 <td align="left"><p>DirectXVersionLie</p></td>
-<td align="left"><p>This problem occurs when an application fails because it does not find the correct version number for DirectX®.</p>
+<td align="left"><p>This problem occurs when an application fails because it does not find the correct version number for DirectX&reg;.</p>
 <p>The fix modifies the DXDIAGN GetProp function call to return the correct DirectX version.</p>
 <p>You can control this fix further by typing the following command at the command prompt:</p>
 <p>MAJORVERSION.MINORVERSION.LETTER</p>
@@ -211,7 +212,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when some objects are not drawn or object artifacts remain on the screen in an application.</p>
 <p>The fix temporarily disables the Windows Aero menu theme functionality for unsupported applications.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690334" data-raw-source="[Using the DisableDWM Fix]( https://go.microsoft.com/fwlink/p/?LinkId=690334)">Using the DisableDWM Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc722418(v=ws.10)" data-raw-source="[Using the DisableDWM Fix]( https://go.microsoft.com/fwlink/p/?LinkId=690334)">Using the DisableDWM Fix</a>.</p>
 </div>
 <div>
 
@@ -248,7 +249,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem is indicated when installations, de-installations, or updates fail because the host process calls the CreateProcess function and it returns an ERROR_ELEVATION_REQUIRED error message.</p>
 <p>The fix handles the error code and attempts to recall the CreateProcess function together with requested elevation. If the fixed application already has a UAC manifest, the error code will be returned unchanged.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690335" data-raw-source="[Using the ElevateCreateProcess Fix](https://go.microsoft.com/fwlink/p/?LinkId=690335)">Using the ElevateCreateProcess Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc722422(v=ws.10)" data-raw-source="[Using the ElevateCreateProcess Fix](/previous-versions/windows/it-pro/windows-7/cc722422(v=ws.10))">Using the ElevateCreateProcess Fix</a>.</p>
 </div>
 <div>
 
@@ -264,7 +265,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem is indicated when an application fails to install or to run, and it generates an error message that there is not enough free disk space to install or use the application, even though there is enough free disk space to meet the application requirements.</p>
 <p>The fix determines the amount of free space, so that if the amount of free space is larger than 2 GB, the compatibility fix returns a value of 2 GB, but if the amount of free space is smaller than 2 GB, the compatibility fix returns the actual free space amount.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690336" data-raw-source="[Using the EmulateGetDiskFreeSpace Fix](https://go.microsoft.com/fwlink/p/?LinkId=690336)">Using the EmulateGetDiskFreeSpace Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/ff720129(v=ws.10)" data-raw-source="[Using the EmulateGetDiskFreeSpace Fix](/previous-versions/windows/it-pro/windows-7/ff720129(v=ws.10))">Using the EmulateGetDiskFreeSpace Fix</a>.</p>
 </div>
 <div>
 
@@ -275,7 +276,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when an application experiences search functionality issues.</p>
 <p>The fix forces applications that use the CompareStringW/LCMapString sorting table to use an older version of the table.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this e application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690337" data-raw-source="[Using the EmulateSorting Fix](https://go.microsoft.com/fwlink/p/?LinkId=690337)">Using the EmulateSorting Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this e application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc749209(v=ws.10)" data-raw-source="[Using the EmulateSorting Fix](/previous-versions/windows/it-pro/windows-7/cc749209(v=ws.10))">Using the EmulateSorting Fix</a>.</p>
 </div>
 <div>
 
@@ -290,7 +291,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem is indicated when an application and computer appear to hang because processes cannot end to allow the computer to complete its restart processes.</p>
 <p>The fix enables the computer to restart and finish the installation process by verifying and enabling that the SeShutdownPrivilege service privilege exists.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690338" data-raw-source="[Using the EnableRestarts Fix](https://go.microsoft.com/fwlink/p/?LinkId=690338)">Using the EnableRestarts Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/ff720128(v=ws.10)" data-raw-source="[Using the EnableRestarts Fix](/previous-versions/windows/it-pro/windows-7/ff720128(v=ws.10))">Using the EnableRestarts Fix</a>.</p>
 </div>
 <div>
 
@@ -323,7 +324,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when a theme application does not properly display: the colors are washed out or the user interface is not detailed.</p>
 <p>The fix intercepts the GetCurrentThemeName API and returns the value for the Windows XP default theme, (Luna).</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about the FakeLunaTheme application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690339" data-raw-source="[Using the FakeLunaTheme Fix](https://go.microsoft.com/fwlink/p/?LinkId=690339)">Using the FakeLunaTheme Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about the FakeLunaTheme application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc766315(v=ws.10)" data-raw-source="[Using the FakeLunaTheme Fix](/previous-versions/windows/it-pro/windows-7/cc766315(v=ws.10))">Using the FakeLunaTheme Fix</a>.</p>
 </div>
 <div>
 
@@ -343,7 +344,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when an application fails to function during an explicit administrator check.</p>
 <p>The fix allows the user to temporarily imitate being a part of the Administrators group by returning a value of True during the administrator check.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690342" data-raw-source="[Using the ForceAdminAccess Fix](https://go.microsoft.com/fwlink/p/?LinkId=690342)">Using the ForceAdminAccess Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc766024(v=ws.10)" data-raw-source="[Using the ForceAdminAccess Fix](/previous-versions/windows/it-pro/windows-7/cc766024(v=ws.10))">Using the ForceAdminAccess Fix</a>.</p>
 </div>
 <div>
 
@@ -391,7 +392,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when an application fails to function when special key combinations are used.</p>
 <p>The fix intercepts the RegisterRawInputDevices API and prevents the delivery of the WM_INPUT messages. This delivery failure forces the included hooks to be ignored and forces DInput to use Windows-specific hooks.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690343" data-raw-source="[Using the IgnoreAltTab Fix](https://go.microsoft.com/fwlink/p/?LinkId=690343)">Using the IgnoreAltTab Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc722093(v=ws.10)" data-raw-source="[Using the IgnoreAltTab Fix](/previous-versions/windows/it-pro/windows-7/cc722093(v=ws.10))">Using the IgnoreAltTab Fix</a>.</p>
 </div>
 <div>
 
@@ -426,7 +427,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 
 </div>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690344" data-raw-source="[Using the IgnoreException Fix](https://go.microsoft.com/fwlink/p/?LinkId=690344)">Using the IgnoreException Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc766154(v=ws.10)" data-raw-source="[Using the IgnoreException Fix](/previous-versions/windows/it-pro/windows-7/cc766154(v=ws.10))">Using the IgnoreException Fix</a>.</p>
 </div>
 <div>
 
@@ -447,7 +448,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem is indicated by a message box that displays with debugging or extraneous content when the application runs on an unexpected operating system.</p>
 <p>The fix intercepts the MessageBox* APIs and inspects them for specific message text. If matching text is found, the application continues without showing the message box.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690345" data-raw-source="[Using the IgnoreMessageBox Fix](https://go.microsoft.com/fwlink/p/?LinkId=690345)">Using the IgnoreMessageBox Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc749044(v=ws.10)" data-raw-source="[Using the IgnoreMessageBox Fix](/previous-versions/windows/it-pro/windows-7/cc749044(v=ws.10))">Using the IgnoreMessageBox Fix</a>.</p>
 </div>
 <div>
 
@@ -456,7 +457,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <tr class="odd">
 <td align="left"><p>IgnoreMSOXMLMF</p></td>
 <td align="left"><p>The problem is indicated by an error message that states that the operating system cannot locate the MSVCR80D.DLL file.</p>
-<p>The fix ignores the registered MSOXMLMF.DLL object, which Microsoft® Office 2007 loads into the operating system any time that you load an XML file, and then it fails the CoGetClassObject for its CLSID. This compatibility fix will just ignore the registered MSOXMLMF and fail the CoGetClassObject for its CLSID.</p></td>
+<p>The fix ignores the registered MSOXMLMF.DLL object, which Microsoft&reg; Office 2007 loads into the operating system any time that you load an XML file, and then it fails the CoGetClassObject for its CLSID. This compatibility fix will just ignore the registered MSOXMLMF and fail the CoGetClassObject for its CLSID.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>IgnoreSetROP2</p></td>
@@ -475,7 +476,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when an application unsuccessfully tries to create an object in the Global namespace.</p>
 <p>The fix intercepts the function call to create the object and replaces the word Global with Local.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690346" data-raw-source="[Using the LocalMappedObject Fix](https://go.microsoft.com/fwlink/p/?LinkId=690346)">Using the LocalMappedObject Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc749287(v=ws.10)" data-raw-source="[Using the LocalMappedObject Fix](/previous-versions/windows/it-pro/windows-7/cc749287(v=ws.10))">Using the LocalMappedObject Fix</a>.</p>
 </div>
 <div>
 
@@ -486,7 +487,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem is indicated when an application fails to uninstall because of access-related errors.</p>
 <p>The fix locates any RunDLL.exe-based uninstallers and forces them to run with different credentials during the application installation. After it applies this fix, the installer will create a shortcut that specifies a matching string to run during the application installation, thereby enabling the uninstallation to occur later.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690347" data-raw-source="[Using the MakeShortcutRunas Fix]( https://go.microsoft.com/fwlink/p/?LinkId=690347)">Using the MakeShortcutRunas Fix</a></p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638338(v=ws.10)" data-raw-source="[Using the MakeShortcutRunas Fix]( https://go.microsoft.com/fwlink/p/?LinkId=690347)">Using the MakeShortcutRunas Fix</a></p>
 </div>
 <div>
 
@@ -510,7 +511,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem is indicated by an error message that states that you do not have the appropriate permissions to access the application.</p>
 <p>The fix reduces the security privilege levels on a specified set of files and folders.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690348" data-raw-source="[Using the OpenDirectoryACL Fix](https://go.microsoft.com/fwlink/p/?LinkId=690348)">Using the OpenDirectoryACL Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638417(v=ws.10)" data-raw-source="[Using the OpenDirectoryACL Fix](/previous-versions/windows/it-pro/windows-7/dd638417(v=ws.10))">Using the OpenDirectoryACL Fix</a>.</p>
 </div>
 <div>
 
@@ -583,7 +584,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when installers, uninstallers, or updaters fail when they are started from a host application.</p>
 <p>The fix enables a child .exe file to run with elevated privileges when it is difficult to determine the parent process with either the ElevateCreateProcess fix or by marking the .exe files to RunAsAdmin.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690349" data-raw-source="[Using the RelaunchElevated Fix](https://go.microsoft.com/fwlink/p/?LinkId=690349)">Using the RelaunchElevated Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638373(v=ws.10)" data-raw-source="[Using the RelaunchElevated Fix](/previous-versions/windows/it-pro/windows-7/dd638373(v=ws.10))">Using the RelaunchElevated Fix</a>.</p>
 </div>
 <div>
 
@@ -599,7 +600,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <li><p>SC_MANAGER_QUERY_LOCK_STATUS</p></li>
 <li><p>STANDARD_READ_RIGHTS</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690350" data-raw-source="[Using the RetryOpenSCManagerwithReadAccess Fix](https://go.microsoft.com/fwlink/p/?LinkId=690350)">Using the RetryOpenSCManagerwithReadAccess Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc721915(v=ws.10)" data-raw-source="[Using the RetryOpenSCManagerwithReadAccess Fix](/previous-versions/windows/it-pro/windows-7/cc721915(v=ws.10))">Using the RetryOpenSCManagerwithReadAccess Fix</a>.</p>
 </div>
 <div>
 
@@ -611,7 +612,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when an Unable to open service due to your application using the OpenService() API to test for the existence of a particular service error message displays.</p>
 <p>The fix retries the OpenService() API call and verifies that the user has Administrator rights, is not a Protected Administrator, and by using read-only access. Applications can test for the existence of a service by calling the OpenService() API but some applications ask for all access when making this check. This fix retries the call but only asking for read-only access. The user needs to be an administrator for this to work</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690351" data-raw-source="[Using the RetryOpenServiceWithReadAccess Fix](https://go.microsoft.com/fwlink/p/?LinkId=690351)">Using the RetryOpenServiceWithReadAccess Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc766423(v=ws.10)" data-raw-source="[Using the RetryOpenServiceWithReadAccess Fix](/previous-versions/windows/it-pro/windows-7/cc766423(v=ws.10))">Using the RetryOpenServiceWithReadAccess Fix</a>.</p>
 </div>
 <div>
 
@@ -622,7 +623,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when an application fails to function by using the Standard User or Protected Administrator account.</p>
 <p>The fix enables the application to run by using elevated privileges. The fix is the equivalent of specifying requireAdministrator in an application manifest.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690353" data-raw-source="[Using the RunAsAdmin Fix](https://go.microsoft.com/fwlink/p/?LinkId=690353)">Using the RunAsAdmin Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638315(v=ws.10)" data-raw-source="[Using the RunAsAdmin Fix](/previous-versions/windows/it-pro/windows-7/dd638315(v=ws.10))">Using the RunAsAdmin Fix</a>.</p>
 </div>
 <div>
 
@@ -633,7 +634,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when administrators cannot view the read/write version of an application that presents a read-only view to standard users.</p>
 <p>The fix enables the application to run by using the highest available permissions. This is the equivalent of specifying highestAvailable in an application manifest.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690355" data-raw-source="[Using the RunAsHighest Fix](https://go.microsoft.com/fwlink/p/?LinkId=690355)">Using the RunAsHighest Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638322(v=ws.10)" data-raw-source="[Using the RunAsHighest Fix](/previous-versions/windows/it-pro/windows-7/dd638322(v=ws.10))">Using the RunAsHighest Fix</a>.</p>
 </div>
 <div>
 
@@ -644,7 +645,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when an application is not detected as requiring elevation.</p>
 <p>The fix enables the application to run by using the privileges that are associated with the creation process, without requiring elevation. This is the equivalent of specifying asInvoker in an application manifest.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690356" data-raw-source="[Using the RunAsInvoker Fix](https://go.microsoft.com/fwlink/p/?LinkId=690356)">Using the RunAsInvoker Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638389(v=ws.10)" data-raw-source="[Using the RunAsInvoker Fix](/previous-versions/windows/it-pro/windows-7/dd638389(v=ws.10))">Using the RunAsInvoker Fix</a>.</p>
 </div>
 <div>
 
@@ -665,7 +666,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 
 </div>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690358" data-raw-source="[Using the SessionShim Fix](https://go.microsoft.com/fwlink/p/?LinkId=690358)">Using the SessionShim Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc722085(v=ws.10)" data-raw-source="[Using the SessionShim Fix](/previous-versions/windows/it-pro/windows-7/cc722085(v=ws.10))">Using the SessionShim Fix</a>.</p>
 </div>
 <div>
 
@@ -698,7 +699,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when an application fails, even after applying acompatibility fix that is known to fix an issue. Applications that use unicows.dll or copy protection often present this issue.</p>
 <p>The fix applies the specified compatibility fixes by modifying the export table and by nullifying the use of module inclusion and exclusion.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690359" data-raw-source="[Using the ShimViaEAT Fix](https://go.microsoft.com/fwlink/p/?LinkId=690359)">Using the ShimViaEAT Fix</a>.</p>
+<strong>Note</strong><br/><p>For more information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc766286(v=ws.10)" data-raw-source="[Using the ShimViaEAT Fix](/previous-versions/windows/it-pro/windows-7/cc766286(v=ws.10))">Using the ShimViaEAT Fix</a>.</p>
 </div>
 <div>
 
@@ -722,7 +723,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when an application installation file fails to be picked up by the GenericInstaller function.</p>
 <p>The fix flags the application as being an installer file (for example, setup.exe), and then prompts for elevation.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690361" data-raw-source="[Using the SpecificInstaller Fix]( https://go.microsoft.com/fwlink/p/?LinkId=690361)">Using the SpecificInstaller Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638397(v=ws.10)" data-raw-source="[Using the SpecificInstaller Fix]( https://go.microsoft.com/fwlink/p/?LinkId=690361)">Using the SpecificInstaller Fix</a>.</p>
 </div>
 <div>
 
@@ -733,7 +734,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem occurs when an application that is not an installer (and has sufficient privileges) generates a false positive from the GenericInstaller function.</p>
 <p>The fix flags the application to exclude it from detection by the GenericInstaller function.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690363" data-raw-source="[Using the SpecificNonInstaller Fix](https://go.microsoft.com/fwlink/p/?LinkId=690363)">Using the SpecificNonInstaller Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638326(v=ws.10)" data-raw-source="[Using the SpecificNonInstaller Fix](/previous-versions/windows/it-pro/windows-7/dd638326(v=ws.10))">Using the SpecificNonInstaller Fix</a>.</p>
 </div>
 <div>
 
@@ -763,7 +764,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <p>MessageString1 MessageString2</p>
 <p>Where MessageString1 and MessageString2 reflect the message strings that can pass.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>Multiple message strings must be separated by spaces. For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690365" data-raw-source="[Using the UIPIEnableCustomMsgs Fix](https://go.microsoft.com/fwlink/p/?LinkId=690365)">Using the UIPIEnableCustomMsgs Fix</a>.</p>
+<strong>Note</strong><br/><p>Multiple message strings must be separated by spaces. For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638320(v=ws.10)" data-raw-source="[Using the UIPIEnableCustomMsgs Fix](/previous-versions/windows/it-pro/windows-7/dd638320(v=ws.10))">Using the UIPIEnableCustomMsgs Fix</a>.</p>
 </div>
 <div>
 
@@ -777,7 +778,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <p>1055 1056 1069</p>
 <p>Where 1055 reflects the first message ID, 1056 reflects the second message ID, and 1069 reflects the third message ID that can pass.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>Multiple messages can be separated by spaces. For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690367" data-raw-source="[Using the UIPIEnableStandardMsgs Fix [act]](https://go.microsoft.com/fwlink/p/?LinkId=690367)">Using the UIPIEnableStandardMsgs Fix [act]</a>.</p>
+<strong>Note</strong><br/><p>Multiple messages can be separated by spaces. For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638361(v=ws.10)" data-raw-source="[Using the UIPIEnableStandardMsgs Fix [act]](/previous-versions/windows/it-pro/windows-7/dd638361(v=ws.10))">Using the UIPIEnableStandardMsgs Fix [act]</a>.</p>
 </div>
 <div>
 
@@ -795,14 +796,14 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>VirtualRegistry</p></td>
 <td align="left"><p>The problem is indicated when a Component failed to be located error message displays when an application is started.</p>
 <p>The fix enables the registry functions to allow for virtualization, redirection, expansion values, version spoofing, the simulation of performance data counters, and so on.</p>
-<p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690368" data-raw-source="[Using the VirtualRegistry Fix](https://go.microsoft.com/fwlink/p/?LinkId=690368)">Using the VirtualRegistry Fix</a>.</p></td>
+<p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc749368(v=ws.10)" data-raw-source="[Using the VirtualRegistry Fix](/previous-versions/windows/it-pro/windows-7/cc749368(v=ws.10))">Using the VirtualRegistry Fix</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>VirtualizeDeleteFile</p></td>
 <td align="left"><p>The problem occurs when several error messages display and the application cannot delete files.</p>
 <p>The fix makes the application&#39;s DeleteFile function call a virtual call in an effort to remedy the UAC and file virtualization issues that were introduced with Windows Vista. This fix also links other file APIs (for example, GetFileAttributes) to ensure that the virtualization of the file is deleted.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690369" data-raw-source="[Using the VirtualizeDeleteFile Fix](https://go.microsoft.com/fwlink/p/?LinkId=690369)">Using the VirtualizeDeleteFile Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638360(v=ws.10)" data-raw-source="[Using the VirtualizeDeleteFile Fix](/previous-versions/windows/it-pro/windows-7/dd638360(v=ws.10))">Using the VirtualizeDeleteFile Fix</a>.</p>
 </div>
 <div>
 
@@ -814,13 +815,13 @@ The following table lists the known compatibility fixes for all Windows operatin
 <p>The fix redirects the HKCR write calls (HKLM) to the HKCU hive for a per-user COM registration. This operates much like the VirtualRegistry fix when you use the VirtualizeHKCR parameter; however, VirtualizeHKCRLite provides better performance.</p>
 <p>HKCR is a virtual merge of the HKCU\Software\Classes and HKLM\Software\Classes directories. The use of HKCU is preferred if an application is not elevated and is ignored if the application is elevated.</p>
 <p>You typically will use this compatibility fix in conjunction with the VirtualizeRegisterTypeLib fix.</p>
-<p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690370" data-raw-source="[Using the VirtualizeHKCRLite Fix](https://go.microsoft.com/fwlink/p/?LinkId=690370)">Using the VirtualizeHKCRLite Fix</a>.</p></td>
+<p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638327(v=ws.10)" data-raw-source="[Using the VirtualizeHKCRLite Fix](/previous-versions/windows/it-pro/windows-7/dd638327(v=ws.10))">Using the VirtualizeHKCRLite Fix</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>VirtualizeRegisterTypeLib</p></td>
 <td align="left"><p>The fix, when it is used with the VirtualizeHKCRLite fix, ensures that the type library and the COM class registration happen simultaneously. This functions much like the RegistryTypeLib fix when the RegisterTypeLibForUser parameter is used.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690371" data-raw-source="[Using the VirtualizeRegisterTypelib Fix](https://go.microsoft.com/fwlink/p/?LinkId=690371)">Using the VirtualizeRegisterTypelib Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638385(v=ws.10)" data-raw-source="[Using the VirtualizeRegisterTypelib Fix](/previous-versions/windows/it-pro/windows-7/dd638385(v=ws.10))">Using the VirtualizeRegisterTypelib Fix</a>.</p>
 </div>
 <div>
 
@@ -870,7 +871,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <li><p>Type vbrun60.dll into the <strong>Module Name</strong> box, click <strong>Include</strong>, and then click <strong>Add</strong>.</p></li>
 <li><p>Save the custom database.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more information about the WinXPSP2VersionLie application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690374" data-raw-source="[Using the WinXPSP2VersionLie Fix](https://go.microsoft.com/fwlink/p/?LinkId=690374)">Using the WinXPSP2VersionLie Fix</a>.</p>
+<strong>Note</strong><br/><p>For more information about the WinXPSP2VersionLie application fix, see <a href="/previous-versions/windows/it-pro/windows-7/cc749518(v=ws.10)" data-raw-source="[Using the WinXPSP2VersionLie Fix](/previous-versions/windows/it-pro/windows-7/cc749518(v=ws.10))">Using the WinXPSP2VersionLie Fix</a>.</p>
 </div>
 <div>
 
@@ -885,7 +886,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <p>Component1.dll;Component2.dll</p>
 <p>Where Component1.dll and Component2.dll reflect the components to be skipped.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690375" data-raw-source="[Using the WRPDllRegister Fix](https://go.microsoft.com/fwlink/p/?LinkId=690375)">Using the WRPDllRegister Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about this application fix, see <a href="/previous-versions/windows/it-pro/windows-7/dd638345(v=ws.10)" data-raw-source="[Using the WRPDllRegister Fix](/previous-versions/windows/it-pro/windows-7/dd638345(v=ws.10))">Using the WRPDllRegister Fix</a>.</p>
 </div>
 <div>
 
@@ -896,7 +897,7 @@ The following table lists the known compatibility fixes for all Windows operatin
 <td align="left"><p>The problem is indicated when an access denied error message displays when the application tries to access a protected operating system resource by using more than read-only access.</p>
 <p>The fix emulates the successful authentication and modification of file and registry APIs, so that the application can continue.</p>
 <div class="alert">
-<strong>Note</strong><br/><p>For more detailed information about WRPMitigation, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=690376" data-raw-source="[Using the WRPMitigation Fix](https://go.microsoft.com/fwlink/p/?LinkId=690376)">Using the WRPMitigation Fix</a>.</p>
+<strong>Note</strong><br/><p>For more detailed information about WRPMitigation, see <a href="/previous-versions/windows/it-pro/windows-7/dd638325(v=ws.10)" data-raw-source="[Using the WRPMitigation Fix](/previous-versions/windows/it-pro/windows-7/dd638325(v=ws.10))">Using the WRPMitigation Fix</a>.</p>
 </div>
 <div>
 

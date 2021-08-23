@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Settings
-description: Policy CSP - Settings
+description: Learn how to use the Policy CSP - Settings setting so that you can allow the user to change Auto Play settings.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -360,7 +360,7 @@ If disabled, Settings will not contact Microsoft content services to retrieve ti
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Online Tips*
+-   GP Friendly name: *Allow Online Tips*
 -   GP name: *AllowOnlineTips*
 -   GP element: *CheckBox_AllowOnlineTips*
 -   GP path: *Control Panel*
@@ -784,7 +784,7 @@ Added in Windows 10, version 1703.  Allows IT Admins to configure the default se
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Show additional calendar*
+-   GP Friendly name: *Show additional calendar*
 -   GP name: *ConfigureTaskbarCalendar*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -877,7 +877,7 @@ hide:network-wifi
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Settings Page Visibility*
+-   GP Friendly name: *Settings Page Visibility*
 -   GP name: *SettingsPageVisibility*
 -   GP element: *SettingsPageVisibilityBox*
 -   GP path: *Control Panel*
@@ -897,12 +897,13 @@ To validate on Desktop, do the following:
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
-
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 <!--/Policies-->
 

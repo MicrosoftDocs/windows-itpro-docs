@@ -7,6 +7,7 @@
           "**/*.yml"
         ],
         "exclude": [
+          "**/includes/**",
           "**/obj/**"
         ]
       }
@@ -22,6 +23,7 @@
       }
     ],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/internet-explorer/breadcrumb/toc.json",
       "ROBOTS": "INDEX, FOLLOW",
       "audience": "ITPro",
@@ -38,7 +40,16 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Internet Explorer"
+      "titleSuffix": "Internet Explorer",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ]
     },
     "externalReference": [],
     "template": "op.html",

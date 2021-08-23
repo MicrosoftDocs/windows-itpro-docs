@@ -1,7 +1,7 @@
 ---
 title: Application Template Schema Reference for UE-V
-description: Application Template Schema Reference for UE-V
-author: trudyha
+description: Learn details about the XML structure of the UE-V settings location templates and learn how to edit these files.
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 

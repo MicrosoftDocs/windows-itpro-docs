@@ -1,6 +1,6 @@
 ---
 title: Perform in-place upgrade to Windows 10 via Configuration Manager
-description: In-place upgrades make upgrading Windows 7, Windows 8, and Windows 8.1 to Windows 10 easy -- you can even automate the whole process with a Microsoft Endpoint Configuration Manager task sequence.
+description: Learn how to perform an in-place upgrade to Windows 10 by automating the process with a Microsoft Endpoint Manager task sequence.
 ms.assetid: F8DF6191-0DB0-4EF5-A9B1-6A11D5DE4878
 ms.reviewer: 
 manager: laurawi
@@ -12,6 +12,7 @@ ms.mktglfcycl: deploy
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.custom: seo-marvel-apr2020
 ---
 
 # Perform an in-place upgrade to Windows 10 using Configuration Manager
@@ -21,7 +22,7 @@ ms.topic: article
 
 -   Windows 10
 
-The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Endpoint Configuration Manager task sequence to completely automate the process.
+The simplest path to upgrade PCs currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. You can use a Microsoft Endpoint Manager task sequence to completely automate the process.
 
 >[!IMPORTANT]
 >Beginning with Windows 10 and Windows Server 2016, Windows Defender is already installed. A management client for Windows Defender is also installed automatically if the Configuration Manager client is installed. However, previous Windows operating systems installed the System Center Endpoint Protection (SCEP) client with the Configuration Manager client. The SCEP client can block in-place upgrade to Windows 10 due to incompatibility, and must be removed from a device before performing an in-place upgrade to Windows 10.
@@ -40,7 +41,7 @@ All server and client computers referenced in this guide are on the same subnet.
 
 ## Add an OS upgrade package
 
-Configuration Manager Current Branch includes a native in-place upgrade task. This task sequence differs from the MDT in-place upgrade task sequence in that it does not use a default OS image, but rather uses an [OS upgrade package](https://docs.microsoft.com/configmgr/osd/get-started/manage-operating-system-upgrade-packages).
+Configuration Manager Current Branch includes a native in-place upgrade task. This task sequence differs from the MDT in-place upgrade task sequence in that it does not use a default OS image, but rather uses an [OS upgrade package](/configmgr/osd/get-started/manage-operating-system-upgrade-packages).
 
 On **CM01**:
 
@@ -126,17 +127,17 @@ On **PC0004**:
 4.  Confirm you want to upgrade the operating system on this computer by clicking **Install** again.
 5.  Allow the Upgrade Task Sequence to complete. The PC0004 computer will download the install.wim file, perform an in-place upgrade, and install your added applications. See the following examples:
 
-![pc0004-a](../images/pc0004-a.png)<br>
-![pc0004-b](../images/pc0004-b.png)<br>
-![pc0004-c](../images/pc0004-c.png)<br>
-![pc0004-d](../images/pc0004-d.png)<br>
-![pc0004-e](../images/pc0004-e.png)<br>
-![pc0004-f](../images/pc0004-f.png)<br>
-![pc0004-g](../images/pc0004-g.png)
+![Upgrade task sequence example 1](../images/pc0004-a.png)<br>
+![Upgrade task sequence example 2](../images/pc0004-b.png)<br>
+![Upgrade task sequence example 3](../images/pc0004-c.png)<br>
+![Upgrade task sequence example 4](../images/pc0004-d.png)<br>
+![Upgrade task sequence example 5](../images/pc0004-e.png)<br>
+![Upgrade task sequence example 6](../images/pc0004-f.png)<br>
+![Upgrade task sequence example 7](../images/pc0004-g.png)
 
 In-place upgrade with Configuration Manager
 
 ## Related topics
 
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
-[Configuration Manager Team blog](https://go.microsoft.com/fwlink/p/?LinkId=620109)
+[Configuration Manager Team blog](https://techcommunity.microsoft.com/t5/configuration-manager-blog/bg-p/ConfigurationManagerBlog)

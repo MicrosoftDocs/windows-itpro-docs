@@ -1,11 +1,11 @@
 ---
 title: VPN security features (Windows 10)
-description: tbd
+description: Learn about security features for VPN, including LockDown VPN, Windows Information Protection integration with VPN, and traffic filters.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking
-author: dulcemontemayor
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.reviewer: 
@@ -20,28 +20,11 @@ ms.author: dansimp
 - Windows 10 Mobile
 
 
-## LockDown VPN
-
-A VPN profile configured with LockDown secures the device to only allow network traffic over the VPN interface. It has the following features:
-
-- The system attempts to keep the VPN connected at all times.
-- The user cannot disconnect the VPN connection.
-- The user cannot delete or modify the VPN profile.
-- The VPN LockDown profile uses forced tunnel connection.
-- If the VPN connection is not available, outbound network traffic is blocked.
-- Only one VPN LockDown profile is allowed on a device.
-
-> [!NOTE]
-> For built-in VPN, LockDown VPN is only available for the Internet Key Exchange version 2 (IKEv2) connection type.
-
-Deploy this feature with caution, as the resultant connection will not be able to send or receive any network traffic without the VPN being connected.
-
-
 ## Windows Information Protection (WIP) integration with VPN
 
 Windows Information Protection provides capabilities allowing the separation and protection of enterprise data against disclosure across both company and personally owned devices, without requiring additional changes to the environments or the apps themselves. Additionally, when used with Rights Management Services (RMS), WIP can help to protect enterprise data locally.
 
-The **EdpModeId** node in the [VPNv2 Configuration Service Provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp) allows a Windows 10 VPN client to integrate with WIP, extending its functionality to remote devices. Use case scenarios for WIP include:
+The **EdpModeId** node in the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp) allows a Windows 10 VPN client to integrate with WIP, extending its functionality to remote devices. Use case scenarios for WIP include:
 
 - Core functionality: File encryption and file access blocking
 - UX policy enforcement: Restricting copy/paste, drag/drop, and sharing operations
@@ -72,11 +55,29 @@ For example, an admin could define rules that specify:
 
 ## Configure traffic filters
 
-See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](https://docs.microsoft.com/windows/client-management/mdm/vpnv2-csp) for XML configuration.
+See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp) for XML configuration.
 
 The following image shows the interface to configure traffic rules in a VPN Profile configuration policy, using Microsoft Intune.
 
 ![Add a traffic rule](images/vpn-traffic-rules.png)
+
+
+## LockDown VPN
+
+A VPN profile configured with LockDown secures the device to only allow network traffic over the VPN interface. It has the following features:
+
+- The system attempts to keep the VPN connected at all times.
+- The user cannot disconnect the VPN connection.
+- The user cannot delete or modify the VPN profile.
+- The VPN LockDown profile uses forced tunnel connection.
+- If the VPN connection is not available, outbound network traffic is blocked.
+- Only one VPN LockDown profile is allowed on a device.
+
+> [!NOTE]
+> For built-in VPN, LockDown VPN is only available for the Internet Key Exchange version 2 (IKEv2) connection type.
+
+Deploy this feature with caution, as the resultant connection will not be able to send or receive any network traffic without the VPN being connected.
+
 
 ## Related topics
 

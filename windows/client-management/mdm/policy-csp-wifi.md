@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Wifi
-description: Policy CSP - Wifi
+description: Learn how the Policy CSP - Wifi setting allows or disallows the device to automatically connect to Wi-Fi hotspots.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -112,7 +112,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services*
+-   GP Friendly name: *Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services*
 -   GP name: *WiFiSense*
 -   GP path: *Network/WLAN Service/WLAN Settings*
 -   GP ADMX file name: *wlansvc.admx*
@@ -180,7 +180,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prohibit use of Internet Connection Sharing on your DNS domain network*
+-   GP Friendly name: *Prohibit use of Internet Connection Sharing on your DNS domain network*
 -   GP name: *NC_ShowSharedAccessUI*
 -   GP path: *Network/Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -436,12 +436,14 @@ Supported operations are Add, Delete, Get, and Replace.
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

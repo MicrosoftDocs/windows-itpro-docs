@@ -1,6 +1,6 @@
 ---
 title: Return Codes (Windows 10)
-description: Return Codes
+description: Learn about User State Migration Tool (USMT) 10.0 return codes and error messages. Also view a list of USMT return codes and their associated migration steps.
 ms.assetid: e71bbc6b-d5a6-4e48-ad01-af0012b35f22
 ms.reviewer: 
 manager: laurawi
@@ -8,7 +8,8 @@ ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-audience: itproauthor: greg-lindsay
+audience: itpro
+author: greg-lindsay
 ms.date: 04/19/2017
 ms.topic: article
 ---
@@ -53,7 +54,7 @@ As a best practice, we recommend that you set verbosity level to 5, **/v**<em>:5
 
 Error messages provide more detailed information about the migration problem than the associated return code. For example, the **ScanState**, **LoadState**, or **USMTUtils** tool might return a code of "11” (for “USMT\_INVALID\_PARAMETERS") and a related error message that reads "/key and /keyfile both specified". The error message is displayed at the command prompt and is identified in the **ScanState**, **LoadState**, or **USMTUtils** log files to help you determine why the return code was received.
 
-You can obtain more information about any listed Windows application programming interface (API) system error codes by typing **net helpmsg** on the command line and, then typing the error code number. For more information about System Error Codes, see [this Microsoft Web site](https://go.microsoft.com/fwlink/p/?LinkId=147060).
+You can obtain more information about any listed Windows application programming interface (API) system error codes by typing **net helpmsg** on the command line and, then typing the error code number. For more information about System Error Codes, see [this Microsoft Web site](/windows/win32/debug/system-error-codes--0-499-).
 
 ## <a href="" id="bkmk-tscodeserrors"></a>Troubleshooting Return Codes and Error Messages
 
@@ -777,10 +778,4 @@ The following table lists each return code by numeric value, along with the asso
 [Log Files](usmt-log-files.md)
 
  
-
- 
-
-
-
-
 

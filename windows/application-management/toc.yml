@@ -1,0 +1,264 @@
+items:
+- name: Manage Windows applications
+  href: index.yml
+- name: Application management
+  items: 
+    - name: Apps in Windows 10
+      href: apps-in-windows-10.md
+    - name: Add apps and features in Windows 10
+      href: add-apps-and-features.md
+    - name: Sideload apps
+      href: sideload-apps-in-windows-10.md
+    - name: Remove background task resource restrictions
+      href: enterprise-background-activity-controls.md
+    - name: Enable or block Windows Mixed Reality apps in the enterprise
+      href: manage-windows-mixed-reality.md
+    - name: Repackage win32 apps in the MSIX format
+      href: msix-app-packaging-tool.md
+- name: Application Virtualization (App-V)
+  items: 
+    - name: App-V for Windows 10 overview
+      href: app-v/appv-for-windows.md
+    - name: Getting Started
+      items: 
+        - name: Getting Started with App-V
+          href: app-v/appv-getting-started.md
+        - name: What's new
+          items: 
+            - name: What's new in App-V for Windows 10, version 1703 and earlier
+              href: app-v/appv-about-appv.md
+            - name: Release Notes for App-V for Windows 10, version 1607
+              href: app-v/appv-release-notes-for-appv-for-windows.md
+            - name: Release Notes for App-V for Windows 10, version 1703
+              href: app-v/appv-release-notes-for-appv-for-windows-1703.md
+        - name: Evaluating App-V
+          href: app-v/appv-evaluating-appv.md
+        - name: High Level Architecture for App-V
+          href: app-v/appv-high-level-architecture.md
+    - name: Planning
+      items: 
+        - name: Planning for App-V
+          href: app-v/appv-planning-for-appv.md
+        - name: Preparing your environment
+          items: 
+            - name: Preparing your environment for App-V
+              href: app-v/appv-preparing-your-environment.md
+            - name: App-V Prerequisites
+              href: app-v/appv-prerequisites.md
+            - name: App-V security considerations
+              href: app-v/appv-security-considerations.md
+        - name: Planning to deploy
+          items: 
+            - name: Planning to Deploy App-V
+              href: app-v/appv-planning-to-deploy-appv.md
+            - name: App-V Supported Configurations
+              href: app-v/appv-supported-configurations.md
+            - name: App-V Capacity Planning
+              href: app-v/appv-capacity-planning.md
+            - name: Planning for High Availability with App-V
+              href: app-v/appv-planning-for-high-availability-with-appv.md
+            - name: Planning to Deploy App-V with an Electronic Software Distribution System
+              href: app-v/appv-planning-to-deploy-appv-with-electronic-software-distribution-solutions.md
+            - name: Planning for the App-V Server Deployment
+              href: app-v/appv-planning-for-appv-server-deployment.md
+            - name: Planning for the App-V Sequencer and Client Deployment
+              href: app-v/appv-planning-for-sequencer-and-client-deployment.md
+            - name: Planning for Using App-V with Office
+              href: app-v/appv-planning-for-using-appv-with-office.md
+            - name: Planning to Use Folder Redirection with App-V
+              href: app-v/appv-planning-folder-redirection-with-appv.md
+            - name: App-V Planning Checklist
+              href: app-v/appv-planning-checklist.md
+    - name: Deploying
+      items: 
+        - name: Deploying App-V
+          href: app-v/appv-deploying-appv.md
+        - name: App-V sequencer and client configuration
+          items: 
+            - name: Deploying the App-V Sequencer and Configuring the Client
+              href: app-v/appv-deploying-the-appv-sequencer-and-client.md
+            - name: About Client Configuration Settings
+              href: app-v/appv-client-configuration-settings.md
+            - name: Enable the App-V desktop client
+              href: app-v/appv-enable-the-app-v-desktop-client.md
+            - name: How to Install the Sequencer
+              href: app-v/appv-install-the-sequencer.md
+        - name: App-V server deployment
+          items: 
+            - name: Deploying the App-V Server
+              href: app-v/appv-deploying-the-appv-server.md
+            - name: How to Deploy the App-V Server
+              href: app-v/appv-deploy-the-appv-server.md
+            - name: How to Deploy the App-V Server Using a Script
+              href: app-v/appv-deploy-the-appv-server-with-a-script.md
+            - name: How to Deploy the App-V Databases by Using SQL Scripts
+              href: app-v/appv-deploy-appv-databases-with-sql-scripts.md
+            - name: How to Install the Publishing Server on a Remote Computer
+              href: app-v/appv-install-the-publishing-server-on-a-remote-computer.md
+            - name: How to Install the Management and Reporting Databases on Separate Computers from the Management and Reporting Services
+              href: app-v/appv-install-the-management-and-reporting-databases-on-separate-computers.md
+            - name: How to install the Management Server on a Standalone Computer and Connect it to the Database
+              href: app-v/appv-install-the-management-server-on-a-standalone-computer.md
+            - name: About App-V Reporting
+              href: app-v/appv-reporting.md
+            - name: How to install the Reporting Server on a Standalone Computer and Connect it to the Database
+              href: app-v/appv-install-the-reporting-server-on-a-standalone-computer.md
+        - name: App-V Deployment Checklist
+          href: app-v/appv-deployment-checklist.md
+        - name: Deploying Microsoft Office 2016 by Using App-V
+          href: app-v/appv-deploying-microsoft-office-2016-with-appv.md
+        - name: Deploying Microsoft Office 2013 by Using App-V
+          href: app-v/appv-deploying-microsoft-office-2013-with-appv.md
+        - name: Deploying Microsoft Office 2010 by Using App-V
+          href: app-v/appv-deploying-microsoft-office-2010-wth-appv.md
+        - name: Operations
+          items: 
+            - name: Operations for App-V
+              href: app-v/appv-operations.md
+            - name: Creating and managing virtualized applications
+              items: 
+                - name: Creating and Managing App-V Virtualized Applications
+                  href: app-v/appv-creating-and-managing-virtualized-applications.md
+                - name: Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)
+                  href: app-v/appv-auto-provision-a-vm.md
+                - name: Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)
+                  href: app-v/appv-auto-batch-sequencing.md
+                - name: Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)
+                  href: app-v/appv-auto-batch-updating.md
+                - name: Manually sequence a new app using Microsoft Application Virtualization Sequencer (App-V Sequencer)
+                  href: app-v/appv-sequence-a-new-application.md
+                - name: How to Modify an Existing Virtual Application Package
+                  href: app-v/appv-modify-an-existing-virtual-application-package.md
+                - name: How to Create and Use a Project Template
+                  href: app-v/appv-create-and-use-a-project-template.md
+                - name: How to Create a Package Accelerator
+                  href: app-v/appv-create-a-package-accelerator.md
+                - name: How to Create a Virtual Application Package Using an App-V Package Accelerator
+                  href: app-v/appv-create-a-virtual-application-package-package-accelerator.md
+            - name: Administering App-V
+              items: 
+                - name: Administering App-V Virtual Applications by Using the Management Console
+                  href: app-v/appv-administering-virtual-applications-with-the-management-console.md
+                - name: About App-V Dynamic Configuration
+                  href: app-v/appv-dynamic-configuration.md
+                - name: How to Connect to the Management Console
+                  href: app-v/appv-connect-to-the-management-console.md
+                - name: How to Add or Upgrade Packages by Using the Management Console
+                  href: app-v/appv-add-or-upgrade-packages-with-the-management-console.md
+                - name: How to Configure Access to Packages by Using the Management Console
+                  href: app-v/appv-configure-access-to-packages-with-the-management-console.md
+                - name: How to Publish a Package by Using the Management Console
+                  href: app-v/appv-publish-a-packages-with-the-management-console.md
+                - name: How to Delete a Package in the Management Console
+                  href: app-v/appv-delete-a-package-with-the-management-console.md
+                - name: How to Add or Remove an Administrator by Using the Management Console
+                  href: app-v/appv-add-or-remove-an-administrator-with-the-management-console.md
+                - name: How to Register and Unregister a Publishing Server by Using the Management Console
+                  href: app-v/appv-register-and-unregister-a-publishing-server-with-the-management-console.md
+                - name: How to Create a Custom Configuration File by Using the App-V Management Console
+                  href: app-v/appv-create-a-custom-configuration-file-with-the-management-console.md
+                - name: How to Transfer Access and Configurations to Another Version of a Package by Using the Management Console
+                  href: app-v/appv-transfer-access-and-configurations-to-another-version-of-a-package-with-the-management-console.md
+                - name: How to Customize Virtual Applications Extensions for a Specific AD Group by Using the Management Console
+                  href: app-v/appv-customize-virtual-application-extensions-with-the-management-console.md
+                - name: How to View and Configure Applications and Default Virtual Application Extensions by Using the Management Console
+                  href: app-v/appv-view-and-configure-applications-and-default-virtual-application-extensions-with-the-management-console.md
+            - name: Connection groups
+              items: 
+                - name: Managing Connection Groups
+                  href: app-v/appv-managing-connection-groups.md
+                - name: About the Connection Group Virtual Environment
+                  href: app-v/appv-connection-group-virtual-environment.md
+                - name: About the Connection Group File
+                  href: app-v/appv-connection-group-file.md
+                - name: How to Create a Connection Group
+                  href: app-v/appv-create-a-connection-group.md
+                - name: How to Create a Connection Group with User-Published and Globally Published Packages
+                  href: app-v/appv-create-a-connection-group-with-user-published-and-globally-published-packages.md
+                - name: How to Delete a Connection Group
+                  href: app-v/appv-delete-a-connection-group.md
+                - name: How to Publish a Connection Group
+                  href: app-v/appv-publish-a-connection-group.md
+                - name: How to Make a Connection Group Ignore the Package Version
+                  href: app-v/appv-configure-connection-groups-to-ignore-the-package-version.md
+                - name: How to Allow Only Administrators to Enable Connection Groups
+                  href: app-v/appv-allow-administrators-to-enable-connection-groups.md
+            - name: Deploying App-V packages with ESD
+              items: 
+                - name: Deploying App-V Packages by Using Electronic Software Distribution (ESD)
+                  href: app-v/appv-deploying-packages-with-electronic-software-distribution-solutions.md
+                - name: How to deploy App-V Packages Using Electronic Software Distribution
+                  href: app-v/appv-deploy-appv-packages-with-electronic-software-distribution-solutions.md
+                - name: How to Enable Only Administrators to Publish Packages by Using an ESD
+                  href: app-v/appv-enable-administrators-to-publish-packages-with-electronic-software-distribution-solutions.md
+            - name: Using the management console
+              items: 
+                - name: Using the App-V client management console
+                  href: app-v/appv-using-the-client-management-console.md
+                - name: Automatically clean-up unpublished packages on the App-V client
+                  href: app-v/appv-auto-clean-unpublished-packages.md
+            - name: Migrating
+              items: 
+                - name: Migrating to App-V from a previous version
+                  href: app-v/appv-migrating-to-appv-from-a-previous-version.md
+                - name: How to convert a package created in a previous version of App-V
+                  href: app-v/appv-convert-a-package-created-in-a-previous-version-of-appv.md
+            - name: Maintenance
+              items: 
+                - name: Maintaining App-V
+                  href: app-v/appv-maintaining-appv.md
+                - name: How to Move the App-V Server to Another Computer
+                  href: app-v/appv-move-the-appv-server-to-another-computer.md
+            - name: Administering App-V with Windows PowerShell
+              items: 
+                - name: Administering App-V by using Windows PowerShell
+                  href: app-v/appv-administering-appv-with-powershell.md
+                - name: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help
+                  href: app-v/appv-load-the-powershell-cmdlets-and-get-cmdlet-help.md
+                - name: How to Manage App-V Packages Running on a Stand-Alone Computer by Using Windows PowerShell
+                  href: app-v/appv-manage-appv-packages-running-on-a-stand-alone-computer-with-powershell.md
+                - name: How to Manage Connection Groups on a Stand-alone Computer by Using Windows PowerShell
+                  href: app-v/appv-manage-connection-groups-on-a-stand-alone-computer-with-powershell.md
+                - name: How to Modify Client Configuration by Using Windows PowerShell
+                  href: app-v/appv-modify-client-configuration-with-powershell.md
+                - name: How to Configure the Client to Receive Package and Connection Groups Updates From the Publishing Server
+                  href: app-v/appv-configure-the-client-to-receive-updates-from-the-publishing-server.md
+                - name: How to Apply the User Configuration File by Using Windows PowerShell
+                  href: app-v/appv-apply-the-user-configuration-file-with-powershell.md
+                - name: How to Apply the Deployment Configuration File by Using Windows PowerShell
+                  href: app-v/appv-apply-the-deployment-configuration-file-with-powershell.md
+                - name: How to Sequence a Package  by Using Windows PowerShell
+                  href: app-v/appv-sequence-a-package-with-powershell.md
+                - name: How to Create a Package Accelerator by Using Windows PowerShell
+                  href: app-v/appv-create-a-package-accelerator-with-powershell.md
+                - name: How to Enable Reporting on the App-V Client by Using Windows PowerShell
+                  href: app-v/appv-enable-reporting-on-the-appv-client-with-powershell.md
+                - name: How to Install the App-V Databases and Convert the Associated Security Identifiers  by Using Windows PowerShell
+                  href: app-v/appv-install-the-appv-databases-and-convert-the-associated-security-identifiers-with-powershell.md
+        - name: Troubleshooting App-V
+          href: app-v/appv-troubleshooting.md
+        - name: Technical Reference
+          items: 
+            - name: Technical Reference for App-V
+              href: app-v/appv-technical-reference.md
+            - name: Available Mobile Device Management (MDM) settings for App-V
+              href: app-v/appv-available-mdm-settings.md
+            - name: Performance Guidance for Application Virtualization
+              href: app-v/appv-performance-guidance.md
+            - name: Application Publishing and Client Interaction
+              href: app-v/appv-application-publishing-and-client-interaction.md
+            - name: Viewing App-V Server Publishing Metadata
+              href: app-v/appv-viewing-appv-server-publishing-metadata.md
+            - name: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
+              href: app-v/appv-running-locally-installed-applications-inside-a-virtual-environment.md
+
+- name: Reference
+  items: 
+    - name: Service Host process refactoring
+      href: svchost-service-refactoring.md
+    - name: Per-user services in Windows
+      href: per-user-services-in-windows.md
+    - name: Disabling System Services in Windows Server
+      href: /windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server
+    - name: How to keep apps removed from Windows 10 from returning during an update
+      href: remove-provisioned-apps-during-update.md

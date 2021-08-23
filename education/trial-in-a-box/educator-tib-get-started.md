@@ -22,7 +22,7 @@ manager: dansimp
 
 <span style="font-size: 1.5em">This guide shows you how to quickly and easily try a few transformational tools from Microsoft Education in 5 quick steps.</span>
 
-|  |  |
+| Tool | Description |
 | :---: |:--- |
 | [![Connect the device to Wi-Fi](images/edu-TIB-setp-1-v3.png)](#edu-task1) | [Log in](#edu-task1) to **Device A** with your Teacher credentials and connect to the school network. |
 | [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2-v3.png)](#edu-task2) | **Interested in significantly improving your students' reading speed and comprehension?<sup>[1](#footnote1)</sup>** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
@@ -31,7 +31,7 @@ manager: dansimp
 | [![Try Photos app](images/edu-tib-setp-5-v4.png)](#edu-task5) | **Curious about telling stories through video?** </br>Try the [Photos app](#edu-task5) to make your own example video. |
 | [![Play with Minecraft: Education Edition](images/edu-tib-setp-6-v4.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task6) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
 | [![Do Math with Windows Ink](images/edu-tib-setp-7-v1.png)](#edu-task7) | **Want to provide a personal math tutor for your students?** </br>Use [Windows Ink and the Math Assistant feature](#edu-task7) in OneNote to give students step-by-step instructions and interactive 2D graphs for math problems. |
-|  |  |
+
 
 </br>
 
@@ -320,11 +320,11 @@ To graph the equation 3x+4=7, follow these instructions:
 **Watch what Educators say about Microsoft Education delivering better learning outcomes**
 Bring out the best in students by providing a platform for collaborating, exploring, personalized learning, and getting things done across all devices.
 
-|  |  |
+|&nbsp;  |&nbsp;  |
 |:--- |:--- |
 | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c" frameborder="0" allowfullscreen></iframe></br>See how one school improves reading skills using Learning Tools Immersive Reader | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg" frameborder="0" allowfullscreen></iframe></br>Here's how Microsoft Teams creates more robust classroom experiences at all ages. |
 | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o" frameborder="0" allowfullscreen></iframe></br>Watch teachers elevate the education of students using OneNote. | <iframe width="420" height="236" src="https://www.youtube.com/embed/hl9ZQiektJE" frameborder="0" allowfullscreen></iframe></br>Here what other teachers say about using Minecraft: Education Edition in their classrooms. |
-|  |  |
+
 
 ## Update your apps
 

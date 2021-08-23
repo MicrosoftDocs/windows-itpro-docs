@@ -4,9 +4,9 @@ description: This section describes the Workplace settings that you can configur
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 04/30/2018
 ms.reviewer: 
@@ -16,7 +16,7 @@ manager: dansimp
 # Workplace (reference)
 
 
-Use Workplace settings to configure bulk user enrollment to a mobile device management (MDM) service. For more information, see [Bulk enrollment step-by-step](https://docs.microsoft.com/windows/client-management/mdm/bulk-enrollment-using-windows-provisioning-tool).
+Use Workplace settings to configure bulk user enrollment to a mobile device management (MDM) service. For more information, see [Bulk enrollment step-by-step](/windows/client-management/mdm/bulk-enrollment-using-windows-provisioning-tool).
 
 ## Applies to
 
@@ -38,4 +38,4 @@ Select **Enrollments**, enter a UPN, and then click **Add** to configure the set
 
 ## Related topics
 
-- [Provisioning configuration service provider (CSP)](https://docs.microsoft.com/windows/client-management/mdm/provisioning-csp)
+- [Provisioning configuration service provider (CSP)](/windows/client-management/mdm/provisioning-csp)

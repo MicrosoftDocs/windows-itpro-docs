@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - Troubleshooting
-description: Policy CSP - Troubleshooting
+description: The Policy CSP - Troubleshooting setting allows IT admins to configure how to apply recommended troubleshooting for known problems on the devices in their domains.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -77,7 +77,7 @@ This policy setting allows IT admins to configure how to apply recommended troub
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Troubleshooting: Allow users to access recommended troubleshooting for known problems*
+-   GP Friendly name: *Troubleshooting: Allow users to access recommended troubleshooting for known problems*
 -   GP name: *TroubleshootingAllowRecommendations*
 -   GP path: *Troubleshooting and Diagnostics/Microsoft Support Diagnostic Tool*
 -   GP ADMX file name: *MSDT.admx*
@@ -140,12 +140,14 @@ By default, this policy is not configured and the SKU based defaults are used fo
 
 Footnotes:
 
--   1 - Added in Windows 10, version 1607.
--   2 - Added in Windows 10, version 1703.
--   3 - Added in Windows 10, version 1709.
--   4 - Added in Windows 10, version 1803.
--   5 - Added in Windows 10, version 1809.
--   6 - Added in Windows 10, version 1903.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

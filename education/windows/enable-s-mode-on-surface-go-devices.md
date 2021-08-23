@@ -25,16 +25,16 @@ Here are some things you’ll need before attempting any of these procedures:
 -   A Surface Go device or Surface Go device image based on Windows 10 Pro
     (1803)
 -   General understanding of [Windows deployment scenarios and related
-    tools](https://docs.microsoft.com/windows/deployment/windows-deployment-scenarios-and-tools)
+    tools](/windows/deployment/windows-deployment-scenarios-and-tools)
 -   [Windows ADK for Windows 10
-    1803](https://docs.microsoft.com/windows/deployment/windows-adk-scenarios-for-it-pros)
+    1803](/windows/deployment/windows-adk-scenarios-for-it-pros)
 -   [Bootable Windows Preinstall Environment
-    (WinPE)](https://docs.microsoft.com/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)
+    (WinPE)](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive)
 
 ## Enabling S Mode – Windows Image (WIM)
 
 Like enterprise administrators performing large-scale deployment of customized Windows images, education customers can create their own customized Windows images for deployment to multiple classroom devices. An education customer who plans to follow [a traditional image-based deployment
-process](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios#traditional-deployment) using a Windows 10 Pro (1803) image for Surface Go devices can enable S mode as follows:
+process](/windows/deployment/windows-10-deployment-scenarios#traditional-deployment) using a Windows 10 Pro (1803) image for Surface Go devices can enable S mode as follows:
 
 1. Use DISM to mount your offline Windows 10 Pro (1803) image.
 
@@ -87,7 +87,7 @@ Your Windows 10 Pro (1803) image now has S mode enabled and is ready to deploy t
 Education customers who wish to avoid the additional overhead associated with Windows image creation, customization, and deployment can enable S mode on a per-device basis. Performing the following steps on a Surface Go device will enable S mode on an existing installation of Windows 10 Pro (1803).
 
 1.  Create a bootable WinPE media. See [Create a bootable Windows PE USB
-    drive](https://msdn.microsoft.com/library/windows/hardware/dn938386.aspx) for details.
+    drive](/windows-hardware/manufacture/desktop/winpe-create-usb-bootable-drive) for details.
 
 2. Create an unattend.xml answer file, adding the
     amd64_Microsoft_Windows_CodeIntegrity component to Pass 2 offline Servicing
@@ -130,17 +130,16 @@ Upon reboot, you should find your Surface Go device now is now in S mode.
 
 ## Additional Info
 
-[Windows 10 deployment scenarios](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios)
+[Windows 10 deployment scenarios](/windows/deployment/windows-10-deployment-scenarios)
 
-[Windows 10 deployment scenarios and tools](https://docs.microsoft.com/windows/deployment/windows-deployment-scenarios-and-tools)
+[Windows 10 deployment scenarios and tools](/windows/deployment/windows-deployment-scenarios-and-tools)
 
-[Download and install the Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install)
+[Download and install the Windows ADK](/windows-hardware/get-started/adk-install)
 
-[Windows ADK for Windows 10 scenarios for IT Pros](https://docs.microsoft.com/windows/deployment/windows-adk-scenarios-for-it-pros)
+[Windows ADK for Windows 10 scenarios for IT Pros](/windows/deployment/windows-adk-scenarios-for-it-pros)
 
-[Modify a Windows Image Using DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+[Modify a Windows Image Using DISM](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 
-[Service a Windows Image Using DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/service-a-windows-image-using-dism)
+[Service a Windows Image Using DISM](/windows-hardware/manufacture/desktop/service-a-windows-image-using-dism)
 
-[DISM Image Management Command-Line Options](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-
+[DISM Image Management Command-Line Options](/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)

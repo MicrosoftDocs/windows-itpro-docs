@@ -1,8 +1,8 @@
 ---
 title: 4713(S) Kerberos policy was changed. (Windows 10)
-description: Describes security event 4713(S) Kerberos policy was changed.
+description: Describes security event 4713(S) Kerberos policy was changed. This event is generated when Kerberos policy is changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4713(S): Kerberos policy was changed.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates when [Kerberos](https://msdn.microsoft.com/library/windows/desktop/aa378747.aspx) policy was changed.
+This event generates when [Kerberos](/windows/win32/secauthn/microsoft-kerberos) policy was changed.
 
 This event is generated only on domain controllers.
 
@@ -113,4 +114,3 @@ This event shows changes in “Kerberos policy”. Here is location of Kerberos 
 For 4713(S): Kerberos policy was changed.
 
 -   Any changes in Kerberos policy reported by current event must be monitored and an alert should be triggered. If this change was not planned, investigate the reason for the change.
-

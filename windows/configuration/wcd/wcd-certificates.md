@@ -4,9 +4,9 @@ description: This section describes the Certificates settings that you can confi
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
@@ -71,4 +71,4 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 ## Related topics
 
 
-- [RootCATrustedCertficates configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/rootcacertificates-csp)
+- [RootCATrustedCertficates configuration service provider (CSP)](/windows/client-management/mdm/rootcacertificates-csp)

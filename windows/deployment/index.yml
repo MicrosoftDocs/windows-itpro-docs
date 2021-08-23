@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
-title: Windows 10 deployment resources and documentation # < 60 chars
-summary: Learn about deploying and and keeping Windows 10 up to date.  # < 160 chars
+title: Windows client deployment resources and documentation # < 60 chars
+summary: Learn about deploying and keeping Windows client devices up to date.  # < 160 chars
 
 metadata:
-  title: Windows 10 deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
+  title: Windows client deployment resources and documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about deploying Windows 10 and keeping it up to date in your organization. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/09/2020 #Required; mm/dd/yyyy format.
+  ms.date: 06/24/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -22,39 +22,9 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Deploy Windows 10
+  - title: Plan
     linkLists:
       - linkListType: overview
-        links:
-          - text: Windows 10 deployment scenarios
-            url: windows-10-deployment-scenarios.md
-
-      - linkListType: get-started
-        links:
-          - text: Demonstrate Autopilot deployment
-            url: windows-autopilot/demonstrate-deployment-on-vm.md
-          - text: Deploy Windows 10 in a test lab
-            url: windows-10-poc.md
-
-  # Card (optional)
-  - title: Update Windows 10
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: What is Windows as a service?
-            url:  update/waas-overview.md
-          - text: Types of Windows updates
-            url: update/waas-quick-start.md#definitions
-      - linkListType: get-started
-        links:
-          - text: Servicing the Windows 10 operating system
-            url: update/waas-servicing-strategy-windows-10-updates.md
-
-
-  # Card (optional)
-  - title: Deployment planning
-    linkLists:
-      - linkListType: architecture
         links:
           - text: Create a deployment plan
             url: update/create-deployment-plan.md
@@ -62,56 +32,71 @@ landingContent:
             url: update/plan-define-readiness.md
           - text: Evaluate infrastructure and tools
             url: update/eval-infra-tools.md
-          - text: Determine application readiness
-            url: update/plan-determine-app-readiness.md
           - text: Define your servicing strategy
-            url: update/waas-servicing-strategy-windows-10-updates.md
- 
-   # Card
-  - title: Prepare to deploy Windows 10
+            url:  update/plan-define-strategy.md
+
+  # Card (optional)
+  - title: Prepare
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Prepare for Zero Touch Installation with Configuration Manager
+          - text: Prepare to deploy Windows updates
+            url: update/prepare-deploy-windows.md
+          - text: Prepare updates using Windows Update for Business
+            url: update/waas-manage-updates-wufb.md
+          - text: Prepare for Zero Touch Installation of Windows 10 with Configuration Manager
             url: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
-          - text: Prepare to deploy Windows 10 with MDT
-            url: deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md
-          - text: Evaluate and update infrastructure
-            url: update/update-policies.md
-          - text: Build a successful servicing strategy
-            url: update/waas-deployment-rings-windows-10-updates.md
 
-  # Card
-  - title: Deploy and update Windows 10
+  # Card (optional)
+  - title: Deploy
     linkLists:
       - linkListType: deploy
         links:
-          - text: Windows Autopilot scenarios and capabilities
-            url: windows-autopilot/windows-autopilot-scenarios.md
-          - text: Deploy Windows 10 to a new device with Configuration Manager
-            url: deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager.md
-          - text: Deploy a Windows 10 image using MDT
-            url: deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md
+          - text: Deploy Windows 10 with Autopilot
+            url: /mem/autopilot
           - text: Assign devices to servicing channels
             url: update/waas-servicing-channels-windows-10-updates.md
-          - text: Deploy Windows 10 updates
-            url: update/waas-servicing-channels-windows-10-updates.md
-          - text: Resolve Windows 10 upgrade errors
-            url: upgrade/resolve-windows-10-upgrade-errors.md          
+          - text: Deploy Windows updates with Configuration Manager
+            url: update/deploy-updates-configmgr.md
+ 
+  # Card
+  - title: Overview
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What's new in Windows deployment
+            url: deploy-whats-new.md
+          - text: Windows 11 overview
+            url: /windows/whats-new/windows-11.md
+          - text: Windows client deployment scenarios
+            url: windows-10-deployment-scenarios.md
+          - text: Basics of Windows updates, channels, and tools
+            url:  update/get-started-updates-channels-tools.md
+          - text: Overview of Windows Autopilot
+            url:  /mem/autopilot/windows-autopilot
+
+  # Card
+  - title: Support remote work
+    linkLists:
+      - linkListType: concept
+        links:
+          - text: Deploy Windows 10 for a remote world
+            url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/deploying-a-new-version-of-windows-10-in-a-remote-world/ba-p/1419846
+          - text: Empower remote workers with Microsoft 365
+            url: /microsoft-365/solutions/empower-people-to-work-remotely
+          - text: Top 12 tasks for security teams to support working from home
+            url: /microsoft-365/security/top-security-tasks-for-remote-work
+          - text: Support your remote workforce
+            url: /microsoftteams/faq-support-remote-workforce
 
   # Card (optional)
-  - title: Windows 10 resources
+  - title: Microsoft Learn
     linkLists:
-      - linkListType: reference
+      - linkListType: learn
         links:
-          - text: Windows 10 release information
-            url: https://docs.microsoft.com/windows/release-information/
-          - text: What's new in Windows 10
-            url: https://docs.microsoft.com/windows/whats-new/
-          - text: Windows 10 Enterprise Security
-            url: https://docs.microsoft.com/windows/security/
-          - text: Desktop Deployment Center
-            url: https://docs.microsoft.com/microsoft-365/enterprise/desktop-deployment-center-home
-          - text: Microsoft 365 solution and architecture center
-            url: https://docs.microsoft.com/microsoft-365/solutions/?view=o365-worldwide
-
+          - text: Plan to deploy updates for Windows 10 and Microsoft 365 Apps
+            url: /learn/modules/windows-plan
+          - text: Prepare to deploy updates for Windows 10 and Microsoft 365 Apps
+            url: /learn/modules/windows-prepare/
+          - text: Deploy updates for Windows 10 and Microsoft 365 Apps
+            url: /learn/modules/windows-deploy

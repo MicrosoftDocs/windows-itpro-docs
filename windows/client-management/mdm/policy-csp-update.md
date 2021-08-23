@@ -1,21 +1,19 @@
 ---
 title: Policy CSP - Update
-description: Policy CSP - Update
+description: The Policy CSP - Update allows the IT admin, when used with Update/ActiveHoursStart, to manage a range of active hours where update reboots aren't scheduled.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 02/10/2020
+ms.date: 11/03/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - Update
 
-> [!NOTE]
-> If the MSA service is disabled, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](https://docs.microsoft.com/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 <hr/>
 
@@ -97,6 +95,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#update-disabledualscan">Update/DisableDualScan</a>
+  </dd>
+  <dd>
+    <a href="#update-disablewufbsafeguards">Update/DisableWUfBSafeguards</a>
   </dd>
   <dd>
     <a href="#update-engagedrestartdeadline">Update/EngagedRestartDeadline</a>
@@ -194,6 +195,9 @@ manager: dansimp
   <dd>
     <a href="#update-setedurestart">Update/SetEDURestart</a>
   </dd>
+  <dd>
+    <a href="#update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
+  </dd>
   <dd> 
     <a href="#update-targetreleaseversion">Update/TargetReleaseVersion</a> 
   </dd>
@@ -267,7 +271,7 @@ The default is 17 (5 PM).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off auto-restart for updates during active hours*
+-   GP Friendly name: *Turn off auto-restart for updates during active hours*
 -   GP name: *ActiveHours*
 -   GP element: *ActiveHoursEndTime*
 -   GP path: *Windows Components/Windows Update*
@@ -331,7 +335,7 @@ The default value is 18 (hours).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify active hours range for auto-restarts*
+-   GP Friendly name: *Specify active hours range for auto-restarts*
 -   GP name: *ActiveHoursMaxRange*
 -   GP element: *ActiveHoursMaxRange*
 -   GP path: *Windows Components/Windows Update*
@@ -398,7 +402,7 @@ The default value is 8 (8 AM).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off auto-restart for updates during active hours*
+-   GP Friendly name: *Turn off auto-restart for updates during active hours*
 -   GP name: *ActiveHours*
 -   GP element: *ActiveHoursStartTime*
 -   GP path: *Windows Components/Windows Update*
@@ -457,17 +461,12 @@ Enables the IT admin to manage automatic update behavior to scan, download, and 
 
 Supported operations are Get and Replace.
 
-
-> [!IMPORTANT]
-> This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
- 
-
 If the policy is not configured, end-users get the default behavior (Auto install and restart).
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
+-   GP Friendly name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AutoUpdateMode*
 -   GP path: *Windows Components/Windows Update*
@@ -483,6 +482,11 @@ The following list shows the supported values:
 -   3 – Auto install and restart at a specified time. The IT specifies the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart.
 -   4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks and installed during "Automatic Maintenance" when the device is not in use and is not running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device is not actively being used. This setting option also sets the end-user control panel to read-only.
 -   5 – Turn off automatic updates.
+
+
+> [!IMPORTANT]
+> This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
+
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -542,7 +546,7 @@ This policy is accessible through the Update setting in the user interface or Gr
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow updates to be downloaded automatically over metered connections*
+-   GP Friendly name: *Allow updates to be downloaded automatically over metered connections*
 -   GP name: *AllowAutoWindowsUpdateDownloadOverMeteredNetwork*
 -   GP path: *Windows Components/Windows Update*
 -   GP ADMX file name: *WindowsUpdate.admx*
@@ -608,7 +612,7 @@ Added in Windows 10, version 1607. Allows the IT admin to manage whether to sca
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
+-   GP Friendly name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AllowMUUpdateServiceId*
 -   GP path: *Windows Components/Windows Update*
@@ -744,7 +748,7 @@ Enabling this policy will disable that functionality, and may cause connection t
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify intranet Microsoft update service location*
+-   GP Friendly name: *Specify intranet Microsoft update service location*
 -   GP name: *CorpWuURL*
 -   GP path: *Windows Components/Windows Update*
 -   GP ADMX file name: *WindowsUpdate.admx*
@@ -826,7 +830,7 @@ If any of the following two policies are enabled, this policy has no effect:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadline before auto-restart for update installation*
+-   GP Friendly name: *Specify deadline before auto-restart for update installation*
 -   GP name: *AutoRestartDeadline*
 -   GP element: *AutoRestartDeadline*
 -   GP path: *Windows Components/Windows Update*
@@ -902,7 +906,7 @@ If any of the following two policies are enabled, this policy has no effect:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadline before auto-restart for update installation*
+-   GP Friendly name: *Specify deadline before auto-restart for update installation*
 -   GP name: *AutoRestartDeadline*
 -   GP element: *AutoRestartDeadlineForFeatureUpdates*
 -   GP path: *Windows Components/Windows Update*
@@ -964,7 +968,7 @@ The default value is 15 (minutes).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure auto-restart reminder notifications for updates*
+-   GP Friendly name: *Configure auto-restart reminder notifications for updates*
 -   GP name: *AutoRestartNotificationConfig*
 -   GP element: *AutoRestartNotificationSchd*
 -   GP path: *Windows Components/Windows Update*
@@ -1028,7 +1032,7 @@ Added in Windows 10, version 1703. Allows the IT Admin to specify the method by
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure auto-restart required notification for updates*
+-   GP Friendly name: *Configure auto-restart required notification for updates*
 -   GP name: *AutoRestartRequiredNotificationDismissal*
 -   GP element: *AutoRestartRequiredNotificationDismissal*
 -   GP path: *Windows Components/Windows Update*
@@ -1101,7 +1105,7 @@ If you disable or do not configure this policy setting, the wake setting as spec
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Automatic Maintenance WakeUp Policy*
+-   GP Friendly name: *Automatic Maintenance WakeUp Policy*
 -   GP name: *WakeUpPolicy*
 -   GP path: *Windows Components/Maintenance Scheduler*
 -   GP ADMX file name: *msched.admx*
@@ -1109,8 +1113,8 @@ ADMX Info:
 <!--/ADMXMapped-->
 <!--SupportedValues-->
 Supported values:  
--   true - Enable
--   false - Disable (Default)
+-   0  - Disable
+-   1  - Enable (Default)
 <!--/SupportedValues-->
 <!--Example-->
 
@@ -1171,7 +1175,7 @@ Added in Windows 10, version 1607. Allows the IT admin to set which branch a de
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Preview Builds and Feature Updates are received*
+-   GP Friendly name: *Select when Preview Builds and Feature Updates are received*
 -   GP name: *DeferFeatureUpdates*
 -   GP element: *BranchReadinessLevelId*
 -   GP path: *Windows Components/Windows Update/Windows Update for Business*
@@ -1241,7 +1245,7 @@ Added in Windows 10, version 1903. Also available in Windows 10, versions 1809, 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadlines for automatic updates and restarts*
+-   GP Friendly name: *Specify deadlines for automatic updates and restarts*
 -   GP name: *ConfigureDeadlineForFeatureUpdates*
 -   GP element: *ConfigureDeadlineForFeatureUpdates*
 -   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
@@ -1312,7 +1316,7 @@ Added in Windows 10, version 1903. Also available in Windows 10, versions 1809, 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadlines for automatic updates and restarts*
+-   GP Friendly name: *Specify deadlines for automatic updates and restarts*
 -   GP name: *ConfigureDeadlineForQualityUpdates*
 -   GP element: *ConfigureDeadlineForQualityUpdates*
 -   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
@@ -1384,7 +1388,7 @@ Added in Windows 10, version 1903. Also available in Windows 10, versions 1809, 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadlines for automatic updates and restarts*
+-   GP Friendly name: *Specify deadlines for automatic updates and restarts*
 -   GP name: *ConfigureDeadlineGracePeriod*
 -   GP element: *ConfigureDeadlineGracePeriod*
 -   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
@@ -1457,7 +1461,7 @@ When disabled, if the device has installed the required updates and is outside o
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify deadlines for automatic updates and restarts*
+-   GP Friendly name: *Specify deadlines for automatic updates and restarts*
 -   GP name: *ConfigureDeadlineNoAutoReboot*
 -   GP element: *ConfigureDeadlineNoAutoReboot*
 -   GP path: *Administrative Templates\Windows Components\WindowsUpdate*
@@ -1586,7 +1590,7 @@ Supported values are 0-365 days.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Preview Builds and Feature Updates are received*
+-   GP Friendly name: *Select when Preview Builds and Feature Updates are received*
 -   GP name: *DeferFeatureUpdates*
 -   GP element: *DeferFeatureUpdatesPeriodId*
 -   GP path: *Windows Components/Windows Update/Windows Update for Business*
@@ -1648,7 +1652,7 @@ Supported values are 0-30.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Quality Updates are received*
+-   GP Friendly name: *Select when Quality Updates are received*
 -   GP name: *DeferQualityUpdates*
 -   GP element: *DeferQualityUpdatesPeriodId*
 -   GP path: *Windows Components/Windows Update/Windows Update for Business*
@@ -1711,11 +1715,6 @@ Allows IT Admins to specify update delays for up to 4 weeks.
 
 Supported values are 0-4, which refers to the number of weeks to defer updates.
 
-In Windows 10 Mobile Enterprise version 1511 devices set to automatic updates, for DeferUpdatePeriod to work, you must set the following:
-
--   Update/RequireDeferUpgrade must be set to 1
--   System/AllowTelemetry must be set to 1 or higher
-
 If the "Specify intranet Microsoft update service location" policy is enabled, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
 
 If the Allow Telemetry policy is enabled and the Options value is set to 0, then the "Defer upgrades by", "Defer updates by" and "Pause Updates and Upgrades" settings have no effect.
@@ -1729,18 +1728,19 @@ OS upgrade:
 Update:
 - Maximum deferral: 1 month
 - Deferral increment: 1 week
-- Update type/notes:
-  If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
-      - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
-      - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
-      - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
-      - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
-      - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
-      - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
-      - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
-      - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
+- Update type/notes: If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic:
+  
+  - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
+  - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
+  - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
+  - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
+  - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
+  - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
+  - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
+  - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
 
 Other/cannot defer:
+
 - Maximum deferral: No deferral
 - Deferral increment: No deferral
 - Update type/notes:
@@ -1924,12 +1924,12 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours. Default is 22 hours.
+Added in Windows 10, version 1703. Specifies the scan frequency from every 1 - 22 hours with a random variant of 0 - 4 hours. Default is 22 hours. This policy should only be enabled when Update/UpdateServiceUrl is configured to point the device at a WSUS server rather than Microsoft Update. 
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Automatic Updates detection frequency*
+-   GP Friendly name: *Automatic Updates detection frequency*
 -   GP name: *DetectionFrequency_Title*
 -   GP element: *DetectionFrequency_Hour2*
 -   GP path: *Windows Components/Windows Update*
@@ -1986,7 +1986,7 @@ ADMX Info:
 <!--Description-->
 Added in Windows 10, version 1709, but was added to 1607 and 1703 service releases. Do not allow update deferral policies to cause scans against Windows Update. If this policy is not enabled, then configuring deferral policies will result in the client unexpectedly scanning Windows update.  With the policy enabled, those scans are prevented, and users can configure deferral policies as much as they like.
 
-For more information about dual scan, see [Demystifying "Dual Scan"](https://blogs.technet.microsoft.com/wsus/2017/05/05/demystifying-dual-scan/) and [Improving Dual Scan on 1607](https://blogs.technet.microsoft.com/wsus/2017/08/04/improving-dual-scan-on-1607/).
+For more information about dual scan, see [Demystifying "Dual Scan"](/archive/blogs/wsus/demystifying-dual-scan) and [Improving Dual Scan on 1607](/archive/blogs/wsus/improving-dual-scan-on-1607).
 
 This is the same as the Group Policy in Windows Components > Window Update "Do not allow update deferral policies to cause scans against Windows Update."
 
@@ -1995,7 +1995,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not allow update deferral policies to cause scans against Windows Update*
+-   GP Friendly name: *Do not allow update deferral policies to cause scans against Windows Update*
 -   GP name: *DisableDualScan*
 -   GP path: *Windows Components/Windows Update*
 -   GP ADMX file name: *WindowsUpdate.admx*
@@ -2006,6 +2006,85 @@ The following list shows the supported values:
 
 - 0 - allow scan against Windows Update
 - 1 - do not allow update deferral policies to cause scans against Windows Update
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-disablewufbsafeguards"></a>**Update/DisableWUfBSafeguards**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows Update for Business (WUfB) devices running Windows 10, version 1809 and above and installed with October 2020 security update. This policy setting specifies that a WUfB device should skip safeguards.
+
+Safeguard holds prevent a device with a known compatibility issue from being offered a new OS version. The offering will proceed once a fix is issued and is verified on a held device. The aim of safeguards is to protect the device and user from a failed or poor upgrade experience.
+
+The safeguard holds protection is provided by default to all the devices trying to update to a new Windows 10 Feature Update version via Windows Update.
+
+IT admins can, if necessary, opt devices out of safeguard protections using this policy setting or via the “Disable safeguards for Feature Updates” Group Policy. 
+
+> [!NOTE]
+> Opting out of the safeguards can put devices at risk from known performance issues. We recommend opting out only in an IT environment for validation purposes. Further, you can leverage the Windows Insider Program for Business Release Preview Channel in order to validate the upcoming Windows 10 Feature Update version without the safeguards being applied.
+>
+> The disable safeguards policy will revert to “Not Configured” on a device after moving to a new Windows 10 version, even if previously enabled. This ensures the admin is consciously disabling Microsoft’s default protection from known issues for each new feature update. 
+>
+> Disabling safeguards does not guarantee your device will be able to successfully update. The update may still fail on the device and will likely result in a bad experience post upgrade as you are bypassing the protection given by Microsoft pertaining to known issues.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Disable safeguards for Feature Updates*
+-   GP name: *DisableWUfBSafeguards*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) - Safeguards are enabled and devices may be blocked for upgrades until the safeguard is cleared.
+- 1 - Safeguards are not enabled and upgrades will be deployed without blocking on safeguards.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2079,7 +2158,7 @@ If any of the following policies are configured, this policy has no effect:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartDeadline*
 -   GP path: *Windows Components/Windows Update*
@@ -2152,7 +2231,7 @@ If any of the following policies are configured, this policy has no effect:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartDeadlineForFeatureUpdates*
 -   GP path: *Windows Components/Windows Update*
@@ -2223,7 +2302,7 @@ If any of the following policies are configured, this policy has no effect:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartSnoozeSchedule*
 -   GP path: *Windows Components/Windows Update*
@@ -2294,7 +2373,7 @@ If any of the following policies are configured, this policy has no effect:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartSnoozeScheduleForFeatureUpdates*
 -   GP path: *Windows Components/Windows Update*
@@ -2365,7 +2444,7 @@ If any of the following policies are configured, this policy has no effect:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartTransitionSchedule*
 -   GP path: *Windows Components/Windows Update*
@@ -2436,7 +2515,7 @@ If any of the following policies are configured, this policy has no effect:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify Engaged restart transition and notification schedule for updates*
+-   GP Friendly name: *Specify Engaged restart transition and notification schedule for updates*
 -   GP name: *EngagedRestartTransitionSchedule*
 -   GP element: *EngagedRestartTransitionScheduleForFeatureUpdates*
 -   GP path: *Windows Components/Windows Update*
@@ -2499,7 +2578,7 @@ Added in Windows 10, version 1607. Allows IT Admins to exclude Windows Update (
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Do not include drivers with Windows Updates*
+-   GP Friendly name: *Do not include drivers with Windows Updates*
 -   GP name: *ExcludeWUDriversInQualityUpdate*
 -   GP path: *Windows Components/Windows Update*
 -   GP ADMX file name: *WindowsUpdate.admx*
@@ -2568,7 +2647,7 @@ Added in the April service release of Windows 10, version 1607. Allows Windows U
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify intranet Microsoft update service location*
+-   GP Friendly name: *Specify intranet Microsoft update service location*
 -   GP name: *CorpWuURL*
 -   GP element: *CorpWUFillEmptyContentUrls*
 -   GP path: *Windows Components/Windows Update*
@@ -2777,7 +2856,7 @@ Added in Windows 10, version 1709. Used to manage Windows 10 Insider Preview bu
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Manage preview builds*
+-   GP Friendly name: *Manage preview builds*
 -   GP name: *ManagePreviewBuilds*
 -   GP element: *ManagePreviewBuildsId*
 -   GP path: *Windows Components/Windows Update/Windows Update for Business*
@@ -2917,12 +2996,12 @@ The following list shows the supported values:
 Since this policy is not blocked, you will not get a failure message when you use it to configure a Windows 10 Mobile device. However, the policy will not take effect.
 
 
-Added in Windows 10, version 1607. Allows IT Admins to pause Feature Updates for up to 60 days.
+Added in Windows 10, version 1607. Allows IT Admins to pause feature updates for up to 35 days. We recomment that you use the *Update/PauseFeatureUpdatesStartTime* policy if you are running Windows 10, version 1703 or later.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Preview Builds and Feature Updates are received*
+-   GP Friendly name: *Select when Preview Builds and Feature Updates are received*
 -   GP name: *DeferFeatureUpdates*
 -   GP element: *PauseFeatureUpdatesId*
 -   GP path: *Windows Components/Windows Update/Windows Update for Business*
@@ -2933,7 +3012,7 @@ ADMX Info:
 The following list shows the supported values:
 
 -   0 (default) – Feature Updates are not paused.
--   1 – Feature Updates are paused for 60 days or until value set to back to 0, whichever is sooner.
+-   1 – Feature Updates are paused for 35 days or until value set to back to 0, whichever is sooner.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -2984,14 +3063,14 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates.
+Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Feature Updates. When this policy is configured, Feature Updates will be paused for 35 days from the specified start date. 
 
 Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Preview Builds and Feature Updates are received*
+-   GP Friendly name: *Select when Preview Builds and Feature Updates are received*
 -   GP name: *DeferFeatureUpdates*
 -   GP element: *PauseFeatureUpdatesStartId*
 -   GP path: *Windows Components/Windows Update/Windows Update for Business*
@@ -3046,12 +3125,12 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Allows IT Admins to pause Quality Updates.
+Added in Windows 10, version 1607. Allows IT Admins to pause quality updates. For those running Windows 10, version 1703 or later, we recommend that you use *Update/PauseQualityUpdatesStartTime* instead.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Quality Updates are received*
+-   GP Friendly name: *Select when Quality Updates are received*
 -   GP name: *DeferQualityUpdates*
 -   GP element: *PauseQualityUpdatesId*
 -   GP path: *Windows Components/Windows Update/Windows Update for Business*
@@ -3113,14 +3192,14 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates.
+Added in Windows 10, version 1703. Specifies the date and time when the IT admin wants to start pausing the Quality Updates. When this policy is configured, Quality Updates will be paused for 35 days from the specified start date. 
 
 Value type is string (yyyy-mm-dd, ex. 2018-10-28). Supported operations are Add, Get, Delete, and Replace.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select when Quality Updates are received*
+-   GP Friendly name: *Select when Quality Updates are received*
 -   GP name: *DeferQualityUpdates*
 -   GP element: *PauseQualityUpdatesStartId*
 -   GP path: *Windows Components/Windows Update/Windows Update for Business*
@@ -3256,7 +3335,7 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
+> This policy is *only* recommended for managing mobile devices. If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead. 
 
 
 Allows the IT admin to restrict the updates that are installed on a device to only those on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update on behalf of the end-user. EULAs are approved once an update is approved.
@@ -3326,7 +3405,7 @@ The default value is 15 (minutes).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure auto-restart warning notifications schedule for updates*
+-   GP Friendly name: *Configure auto-restart warning notifications schedule for updates*
 -   GP name: *RestartWarnRemind*
 -   GP element: *RestartWarn*
 -   GP path: *Windows Components/Windows Update*
@@ -3386,7 +3465,7 @@ Supported values are 15, 30, or 60 (minutes).
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 Added in Windows 10, version 1703. Allows the IT Admin to specify the period for auto-restart warning reminder notifications.
@@ -3396,7 +3475,7 @@ The default value is 4 (hours).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure auto-restart warning notifications schedule for updates*
+-   GP Friendly name: *Configure auto-restart warning notifications schedule for updates*
 -   GP name: *RestartWarnRemind*
 -   GP element: *RestartWarnRemind*
 -   GP path: *Windows Components/Windows Update*
@@ -3464,7 +3543,7 @@ Supported operations are Add, Delete, Get, and Replace.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
+-   GP Friendly name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AutoUpdateSchDay*
 -   GP path: *Windows Components/Windows Update*
@@ -3541,7 +3620,7 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
+-   GP Friendly name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AutoUpdateSchEveryWeek*
 -   GP path: *Windows Components/Windows Update*
@@ -3605,7 +3684,7 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
+-   GP Friendly name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AutoUpdateSchFirstWeek*
 -   GP path: *Windows Components/Windows Update*
@@ -3669,7 +3748,7 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
+-   GP Friendly name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *ScheduledInstallFourthWeek*
 -   GP path: *Windows Components/Windows Update*
@@ -3733,7 +3812,7 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
+-   GP Friendly name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *ScheduledInstallSecondWeek*
 -   GP path: *Windows Components/Windows Update*
@@ -3797,7 +3876,7 @@ Added in Windows 10, version 1709. Enables the IT admin to schedule the update i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
+-   GP Friendly name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *ScheduledInstallThirdWeek*
 -   GP path: *Windows Components/Windows Update*
@@ -3853,7 +3932,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is available on Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile Enterprise
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education
 
 
 Enables the IT admin to schedule the time of the update installation.
@@ -3869,7 +3948,7 @@ The default value is 3.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Automatic Updates*
+-   GP Friendly name: *Configure Automatic Updates*
 -   GP name: *AutoUpdateCfg*
 -   GP element: *AutoUpdateSchTime*
 -   GP path: *Windows Components/Windows Update*
@@ -3929,7 +4008,7 @@ Added in Windows 10, version 1703. Allows the IT Admin to disable auto-restart 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off auto-restart notifications for update installations*
+-   GP Friendly name: *Turn off auto-restart notifications for update installations*
 -   GP name: *AutoRestartNotificationDisable*
 -   GP element: *AutoRestartNotificationSchd*
 -   GP path: *Windows Components/Windows Update*
@@ -4116,7 +4195,7 @@ When you set this policy along with Update/ActiveHoursStart, Update/ActiveHoursE
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Update Power Policy for Cart Restarts*
+-   GP Friendly name: *Update Power Policy for Cart Restarts*
 -   GP name: *SetEDURestart*
 -   GP path: *Windows Components/Windows Update*
 -   GP ADMX file name: *WindowsUpdate.admx*
@@ -4127,6 +4206,78 @@ The following list shows the supported values:
 
 - 0 - not configured
 - 1 - configured
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+
+<!--Policy-->
+<a href="" id="update-setproxybehaviorforupdatedetection"></a>**Update/SetProxyBehaviorForUpdateDetection**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1607 and later. By default, HTTP WSUS servers scan only if system proxy is configured. This policy setting allows you to configure user proxy as a fallback for detecting updates while using an HTTP based intranet server despite the vulnerabilities it presents.
+
+This policy setting does not impact those customers who have, per Microsoft recommendation, secured their WSUS server with TLS/SSL protocol, thereby using HTTPS based intranet servers to keep systems secure. That said, if a proxy is required, we recommend configuring a system proxy to ensure the highest level of security.
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Select the proxy behavior for Windows Update client for detecting updates with non-TLS (HTTP) based service*
+-   GP name: *Select the proxy behavior*
+-   GP element: *Select the proxy behavior*
+-   GP path: *Windows Components/Windows Update/Specify intranet Microsoft update service location*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+- 0 (default) - Allow system proxy only for HTTP scans.
+- 1 - Allow user proxy to be used as a fallback if detection using system proxy fails. 
+> [!NOTE]
+> Configuring this policy setting to 1 exposes your environment to potential security risk and makes scans unsecure.
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -4177,11 +4328,11 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10, version 1803 and later. Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](https://docs.microsoft.com/windows/release-information/).
+Available in Windows 10, version 1803 and later. Enables IT administrators to specify which version they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy. For details about different Windows 10 versions, see [Windows 10 release information](/windows/release-health/release-information/).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the target Feature Update version*
+-   GP Friendly name: *Select the target Feature Update version*
 -   GP name: *TargetReleaseVersion*
 -   GP element: *TargetReleaseVersionId*
 -   GP path: *Windows Components/Windows Update/Windows Update for Business*
@@ -4259,7 +4410,7 @@ Options:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Display options for update notifications*
+-   GP Friendly name: *Display options for update notifications*
 -   GP name: *UpdateNotificationLevel*
 -   GP path: *Windows Components/Windows Update*
 -   GP ADMX file name: *WindowsUpdate.admx*
@@ -4323,7 +4474,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 > [!IMPORTANT]
-> Starting in Windows 10, version 1703 this policy is not supported in Windows 10 Mobile Enterprise and IoT Mobile.
+> Starting in Windows 10, version 1703 this policy is not supported in IoT Mobile.
 
 Allows the device to check for updates from a WSUS server instead of Microsoft Update. This is useful for on-premises MDMs that need to update devices that cannot connect to the Internet.
 
@@ -4332,7 +4483,7 @@ Supported operations are Get and Replace.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify intranet Microsoft update service location*
+-   GP Friendly name: *Specify intranet Microsoft update service location*
 -   GP name: *CorpWuURL*
 -   GP element: *CorpWUURL_Name*
 -   GP path: *Windows Components/Windows Update*
@@ -4430,7 +4581,7 @@ Value type is string and the default value is an empty string, "". If the settin
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify intranet Microsoft update service location*
+-   GP Friendly name: *Specify intranet Microsoft update service location*
 -   GP name: *CorpWuURL*
 -   GP element: *CorpWUContentHost_Name*
 -   GP path: *Windows Components/Windows Update*
@@ -4442,13 +4593,13 @@ ADMX Info:
 
 Footnotes:
 
--   1 - Available in Windows 10, version 1607.
--   2 - Available in Windows 10, version 1703.
--   3 - Available in Windows 10, version 1709.
--   4 - Available in Windows 10, version 1803.
--   5 - Available in Windows 10, version 1809.
--   6 - Available in Windows 10, version 1903.
--   7 - Available in Windows 10, version 1909.
+- 1 - Available in Windows 10, version 1607.
+- 2 - Available in Windows 10, version 1703.
+- 3 - Available in Windows 10, version 1709.
+- 4 - Available in Windows 10, version 1803.
+- 5 - Available in Windows 10, version 1809.
+- 6 - Available in Windows 10, version 1903.
+- 7 - Available in Windows 10, version 1909.
+- 8 - Available in Windows 10, version 2004.
 
-<!--/Policies-->
-
+<!--/Policies-->1`

@@ -4,7 +4,7 @@ description: This topic for describes the decisions you need to make to establis
 ms.assetid: dccc196f-6ae0-4ae4-853a-a3312b18751b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Plan for AppLocker policy management
@@ -73,7 +74,7 @@ AppLocker event log is located in the following path: **Applications and Service
 2.  **MSI and Script**. Contains events for all files affected by the Windows Installer and script rule collections (.msi, .msp, .ps1, .bat, .cmd, .vbs, and .js).
 3.  **Packaged app-Deployment** or **Packaged app-Execution**, contains events for all Universal Windows apps affected by the packaged app and packed app installer rule collection (.appx).
 
-Collecting these events in a central location can help you maintain your AppLocker policy and troubleshoot rule configuration problems. Event collection technologies such as those available in Windows allow administrators to subscribe to specific event channels and have the events from source computers aggregated into a forwarded event log on a Windows Server operating system collector. For more info about setting up an event subscription, see [Configure Computers to Collect and Forward Events](https://go.microsoft.com/fwlink/p/?LinkId=145012).
+Collecting these events in a central location can help you maintain your AppLocker policy and troubleshoot rule configuration problems. Event collection technologies such as those available in Windows allow administrators to subscribe to specific event channels and have the events from source computers aggregated into a forwarded event log on a Windows Server operating system collector. For more info about setting up an event subscription, see [Configure Computers to Collect and Forward Events](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc748890(v=ws.11)).
 
 ### Policy maintenance
 
@@ -109,7 +110,7 @@ A file could be blocked for three reasons:
 -   There may be an existing rule that was created for the file that is too restrictive.
 -   A deny rule, which cannot be overridden, is explicitly blocking the file.
 
-Before editing the rule collection, first determine what rule is preventing the file from running. You can troubleshoot the problem by using the **Test-AppLockerPolicy** Windows PowerShell cmdlet. For more info about troubleshooting an AppLocker policy, see [Testing and Updating an AppLocker Policy](https://go.microsoft.com/fwlink/p/?LinkId=160269) (https://go.microsoft.com/fwlink/p/?LinkId=160269).
+Before editing the rule collection, first determine what rule is preventing the file from running. You can troubleshoot the problem by using the **Test-AppLockerPolicy** Windows PowerShell cmdlet. For more info about troubleshooting an AppLocker policy, see [Testing and Updating an AppLocker Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791793(v=ws.10)) (https://go.microsoft.com/fwlink/p/?LinkId=160269).
 
 ## Record your findings
 
@@ -277,7 +278,7 @@ The following table is an example of what to consider and record.
 </tbody>
 </table>
  
-<strong>Policy maintenance policy</strong>
+<b>Policy maintenance policy</b>
 When applications are identified and policies are created for application control, then you can begin documenting how you intend to update those policies.
 The following table is an example of what to consider and record.
 <table>
@@ -322,4 +323,3 @@ The following table is an example of what to consider and record.
 </tr>
 </tbody>
 </table>
-

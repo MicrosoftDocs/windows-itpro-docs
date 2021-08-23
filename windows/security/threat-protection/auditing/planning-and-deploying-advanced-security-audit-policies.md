@@ -2,10 +2,9 @@
 title: Plan and deploy advanced security audit policies (Windows 10)
 description: Learn to deploy an effective security audit policy in a network that includes advanced security audit policies.
 ms.assetid: 7428e1db-aba8-407b-a39e-509671e5a442
-
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -16,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Plan and deploy advanced security audit policies
@@ -153,9 +153,9 @@ Security and auditing requirements and audit event volume can vary considerably 
 
     > [!NOTE]
     > For more information about auditing:
-    > - In Exchange Server, see [Exchange 2010 Security Guide](https://go.microsoft.com/fwlink/p/?linkid=128052).
-    > - In SQL Server 2008, see [Auditing (Database Engine)](https://go.microsoft.com/fwlink/p/?LinkId=163434).   
-    > - In SQL Server 2012, see [SQL Server Audit (Database Engine)](https://technet.microsoft.com/library/cc280386.aspx).
+    > - In Exchange Server, see [Exchange 2010 Security Guide](/previous-versions/office/exchange-server-2010/bb691338(v=exchg.141)).
+    > - In SQL Server 2008, see [Auditing (Database Engine)](/previous-versions/sql/sql-server-2008-r2/cc280526(v=sql.105)).   
+    > - In SQL Server 2012, see [SQL Server Audit (Database Engine)](/sql/relational-databases/security/auditing/sql-server-audit-database-engine).
      
 -   The operating system versions
 
@@ -179,7 +179,7 @@ The following table illustrates an analysis of computers in an organization.
 
 Many industries and locales have specific requirements for network operations and how resources are protected. In the health care and financial industries, for example, strict guidelines control who can access records and how the records are used. Many countries have strict privacy rules. To identify regulatory requirements, work with your organization's legal department and other departments responsible for these requirements. Then consider the security configuration and auditing options that you can use to comply with these regulations and verify compliance.
 
-For more information, see the [System Center Process Pack for IT GRC](https://technet.microsoft.com/library/dd206732.aspx).
+For more information, see the [System Center Process Pack for IT GRC](/previous-versions/tn-archive/dd206732(v=technet.10)).
 
 ## <a href="" id="bkmk-2"></a>Map your security audit policy to groups of users, computers, and resources
 
@@ -320,7 +320,7 @@ Not all versions of Windows support advanced audit policy settings or the use of
 
 The audit policy settings under **Local Policies\\Audit Policy** overlap with the audit policy settings under **Security Settings\\Advanced Audit Policy Configuration**. However, the advanced audit policy categories and subcategories enable you to focus your auditing efforts on critical activities while reducing the amount of audit data that's less important to your organization.
 
-For example, **Local Policies\\Audit Policy** contains a single setting called **[Audit account logon events](https://technet.microsoft.com/library/cc787176.aspx)**. When this setting is configured, it generates at least 10 types of audit events.
+For example, **Local Policies\\Audit Policy** contains a single setting called **[Audit account logon events](/previous-versions/windows/it-pro/windows-server-2003/cc787176(v=ws.10))**. When this setting is configured, it generates at least 10 types of audit events.
 
 In comparison, the Account Logon category under **Security Settings\\Advanced Audit Policy Configuration** provides the following advanced settings, which allow you to focus your auditing:
 
@@ -361,7 +361,7 @@ Configuration\\Administrative Templates\\Windows Components\\Event Log Service\\
 -   **Retain old events**: This policy setting controls event log behavior when the log file reaches its maximum size. When this policy setting is enabled and a log file reaches its maximum size, new events aren't written to the log and are lost. When this policy setting is disabled and a log file reaches its maximum size, new events overwrite old events.
 -   **Backup log automatically when full**: This policy setting controls event log behavior when the log file reaches its maximum size. It takes effect only if the **Retain old events** policy setting is enabled. If you enable these policy settings, the event log file is automatically closed and renamed when it's full. A new log file is then started. If you disable or don't configure this policy setting and the **Retain old events** policy setting is enabled, new events are discarded, and the old events are retained.
 
-Many organizations are now required to store archived log files for a number of years. Consult with regulatory compliance officers in your organization to determine whether such guidelines apply to your organization. For more information, see the [IT Compliance Management Guide](https://go.microsoft.com/fwlink/p/?LinkId=163435).
+Many organizations are now required to store archived log files for a number of years. Consult with regulatory compliance officers in your organization to determine whether such guidelines apply to your organization. For more information, see the [IT Compliance Management Guide](/previous-versions/tn-archive/dd206732(v=technet.10)).
 
 ## <a href="" id="bkmk-5"></a>Deploy the security audit policy
 

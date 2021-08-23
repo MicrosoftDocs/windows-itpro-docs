@@ -1,0 +1,121 @@
+### YamlMime:Landing
+
+title: Windows client resources and documentation for IT Pros # < 60 chars
+summary: Plan, deploy, secure, and manage devices running Windows 10 and Windows 11.  # < 160 chars
+
+metadata:
+  title: Windows client documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Evaluate, plan, deploy, secure, and manage devices running Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
+  services: windows-10
+  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: windows-10
+  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
+  ms.author: greglin #Required; microsoft alias of author; optional team alias.
+  ms.date: 06/01/2020 #Required; mm/dd/yyyy format.
+  localization_priority: medium
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: What's new
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows 11 overview
+            url: /windows/whats-new/windows-11
+          - text: Windows 11 requirements
+            url: /windows/whats-new/windows-11-requirements
+          - text: Plan for Windows 11
+            url: /windows/whats-new/windows-11-plan
+          - text: Prepare for Windows 11
+            url: /windows/whats-new/windows-11-prepare
+          - text: What's new in Windows 10, version 21H1
+            url: /windows/whats-new/whats-new-windows-10-version-21H1
+          - text: Windows release information
+            url:  /windows/release-health/release-information
+
+  # Card (optional)
+  - title: Configuration
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Configure Windows
+            url: /windows/configuration/index
+          - text: Accessibility information for IT Pros
+            url: /windows/configuration/windows-10-accessibility-for-itpros
+          - text: Configure access to Microsoft Store
+            url: /windows/configuration/stop-employees-from-using-microsoft-store
+          - text: Set up a shared or guest PC
+            url: /windows/configuration/set-up-shared-or-guest-pc
+
+  # Card (optional)
+  - title: Deployment
+    linkLists:
+      - linkListType: deploy
+        links:
+          - text: Deploy and update Windows
+            url: /windows/deployment/index
+          - text: Windows deployment scenarios
+            url: /windows/deployment/windows-10-deployment-scenarios
+          - text: Create a deployment plan
+            url: /windows/deployment/update/create-deployment-plan
+          - text: Prepare to deploy Windows client
+            url: /windows/deployment/update/prepare-deploy-windows
+
+ 
+  # Card
+  - title: App management
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Windows application management
+            url: /windows/application-management/index
+          - text: Understand the different apps included in Windows 10
+            url: /windows/application-management/apps-in-windows-10
+          - text: Get started with App-V for Windows 10
+            url:  /windows/application-management/app-v/appv-getting-started
+          - text: Keep removed apps from returning during an update
+            url:  /windows/application-management/remove-provisioned-apps-during-update
+
+  # Card
+  - title: Client management
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Windows client management
+            url: /windows/client-management/index
+          - text: Administrative tools 
+            url: /windows/client-management/administrative-tools-in-windows-10
+          - text: Create mandatory user profiles
+            url: /windows/client-management/mandatory-user-profile
+          - text: New policies for Windows 10
+            url: /windows/client-management/new-policies-for-windows-10
+          - text: Configuration service provider reference
+            url: /windows/client-management/mdm/configuration-service-provider-reference
+
+  # Card (optional)
+  - title: Security and Privacy
+    linkLists:
+      - linkListType: how-to-guide
+        links:
+          - text: Windows Enterprise Security
+            url: /windows/security/index
+          - text: Windows Privacy
+            url: /windows/privacy/index
+          - text: Identity and access management
+            url: /windows/security/identity-protection/index
+          - text: Threat protection
+            url: /windows/security/threat-protection/index
+          - text: Information protection
+            url: /windows/security/information-protection/index
+          - text: Required diagnostic data
+            url: /windows/privacy/required-windows-diagnostic-data-events-and-fields-2004
+          - text: Optional diagnostic data
+            url: /windows/privacy/windows-diagnostic-data
+          - text: Changes to Windows diagnostic data collection
+            url: /windows/privacy/changes-to-windows-diagnostic-data-collection

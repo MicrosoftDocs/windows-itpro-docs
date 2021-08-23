@@ -1,0 +1,73 @@
+### YamlMime:Landing
+
+title: What's new in Windows # < 60 chars
+summary: Find out about new features and capabilities in the latest release of Windows 10 and Windows 11.  # < 160 chars
+
+metadata:
+  title: What's new in Windows # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Find out about new features and capabilities in the latest release of Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
+  services: windows-10
+  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: windows-10
+  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
+  ms.author: greglin #Required; microsoft alias of author; optional team alias.
+  ms.date: 06/24/2021 #Required; mm/dd/yyyy format.
+  localization_priority: medium
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+
+  - title: Windows 11
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows 11 overview
+            url:  windows-11.md
+          - text: Windows 11 requirements
+            url: windows-11-requirements.md
+          - text: Plan for Windows 11 
+            url: windows-11-plan.md
+          - text: Prepare for Windows 11 
+            url: windows-11-prepare.md
+
+  - title: Windows 10
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: What's new in Windows 10, version 21H1
+            url:  whats-new-windows-10-version-21h1.md
+          - text: What's new in Windows 10, version 20H2
+            url: whats-new-windows-10-version-20H2.md
+          - text: What's new in Windows 10, version 2004
+            url: whats-new-windows-10-version-2004.md
+          - text: What's new in Windows 10, version 1909
+            url: whats-new-windows-10-version-1909.md
+          - text: What's new in Windows 10, version 1903
+            url:  whats-new-windows-10-version-1903.md
+
+
+  # Card (optional)
+  - title: Learn more
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows release information
+            url: /windows/release-health/release-information
+          - text: Windows release health dashboard
+            url: /windows/release-information/
+          - text: Windows update history
+            url: https://support.microsoft.com/topic/windows-10-update-history-7dd3071a-3906-fa2c-c342-f7f86728a6e3
+          - text: Windows 10 features we’re no longer developing
+            url: /windows/deployment/planning/windows-10-deprecated-features
+          - text: Features and functionality removed in Windows 10
+            url: /windows/deployment/planning/windows-10-removed-features
+          - text: Compare Windows 10 Editions
+            url: https://go.microsoft.com/fwlink/p/?LinkId=690485
+          - text: Windows 10 Enterprise LTSC
+            url: ltsc/index.md

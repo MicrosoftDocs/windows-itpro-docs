@@ -1,17 +1,17 @@
 ---
 title: Network access - Restrict clients allowed to make remote calls to SAM
 description: Security policy setting that controls which users can enumerate users and groups in the local Security Accounts Manager (SAM) database.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 09/17/2018
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM
@@ -22,6 +22,7 @@ ms.author: dansimp
 -   Windows 10, version 1507 with [KB 4012606](https://support.microsoft.com/help/4012606) installed 
 -   Windows 8.1 with [KB 4102219](https://support.microsoft.com/help/4012219/march-2017-preview-of-monthly-quality-rollup-for-windows-8-1-and-windows-server-2012-r2) installed 
 -   Windows 7 with [KB 4012218](https://support.microsoft.com/help/4012218/march-2017-preview-of-monthly-quality-rollup-for-windows-7-sp1-and-windows-server-2008-r2-sp1) installed 
+-   Windows Server 2019
 -   Windows Server 2016
 -   Windows Server 2012 R2 with[KB 4012219](https://support.microsoft.com/help/4012219/march-2017-preview-of-monthly-quality-rollup-for-windows-8-1-and-windows-server-2012-r2) installed
 -   Windows Server 2012 with [KB 4012220](https://support.microsoft.com/help/4012220/march-2017-preview-of-monthly-quality-rollup-for-windows-server-2012) installed 
@@ -61,14 +62,14 @@ This less restrictive default allows for testing the impact of enabling restrict
 
 ## Policy and Registry Names
 
-|   |   |
-|----|---|
-| Policy Name | Network access: Restrict clients allowed to make remote calls to SAM |
-| Location | Computer Configuration\|Windows Settings\|Security Settings\|Local Policies\|Security Options |
-| Possible values | <br>- Not defined <br>- Defined, along with the security descriptor for users and groups who are allowed or denied to use SAMRPC to remotely access either the local SAM or Active Directory. |
-| Registry location | `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\RestrictRemoteSam` |
-| Registry type | REG_SZ |
-| Registry value | A string that will contain the SDDL of the security descriptor to be deployed. |
+|   | Description  |
+|:---|:---|
+| **Policy Name** | Network access: Restrict clients allowed to make remote calls to SAM |
+| **Location** | Computer Configuration\|Windows Settings\|Security Settings\|Local Policies\|Security Options |
+| **Possible values** | <br>- Not defined <br>- Defined, along with the security descriptor for users and groups who are allowed or denied to use SAMRPC to remotely access either the local SAM or Active Directory. |
+| **Registry location** | `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Lsa\RestrictRemoteSam` |
+| **Registry type** | REG_SZ |
+| **Registry value** | A string that will contain the SDDL of the security descriptor to be deployed. |
 
 The Group Policy setting is only available on computers that run Windows Server 2016 or Windows 10, version 1607 and later. 
 This is the only option to configure this setting by using a user interface (UI).
@@ -88,12 +89,12 @@ Administrators can test whether applying the same restriction earlier versions o
 
 In other words, the hotfix in each KB article provides the necessary code and functionality, but you need to configure the restriction after you install the hotfix—no restrictions are enabled by default after the hotfix is installed on earlier versions of Windows.
 
-| |Default SDDL	|Translated SDDL| Comments
+| |Default SDDL	|Translated SDDL| Comments |
 |---|---|---|---|
-|Windows Server 2016 domain controller (reading Active Directory)|“”|-|Everyone has read permissions to preserve compatibility.|
-|Earlier domain controller |-|-|No access check is performed by default.|
-|Windows 10, version 1607 non-domain controller|O:SYG:SYD:(A;;RC;;;BA)| Owner: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>Primary group: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>DACL: <br>•	Revision: 0x02 <br>•	Size: 0x0020 <br>•	Ace Count: 0x001 <br>•	Ace[00]------------------------- <br> &nbsp;&nbsp;AceType:0x00 <br> &nbsp;&nbsp;(ACCESS\_ALLOWED_ACE_TYPE)<br> &nbsp;&nbsp;AceSize:0x0018 <br> &nbsp;&nbsp;InheritFlags:0x00 <br> &nbsp;&nbsp;Access Mask:0x00020000 <br> &nbsp;&nbsp;AceSid: BUILTIN\Administrators (Alias) (S-1-5-32-544) <br><br> &nbsp;&nbsp;SACL: Not present |Grants RC access (READ_CONTROL, also known as STANDARD_RIGHTS_READ) only to members of the local (built-in) Administrators group. |
-|Earlier non-domain controller |-|-|No access check is performed by default.|
+|**Windows Server 2016 (or later) domain controller (reading Active Directory)**|“”|-|Everyone has read permissions to preserve compatibility.|
+|**Earlier domain controller** |-|-|No access check is performed by default.|
+|**Windows 10, version 1607 (or later) non-domain controller**|O:SYG:SYD:(A;;RC;;;BA)| Owner: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>Primary group: NTAUTHORITY/SYSTEM (WellKnownGroup) (S-1-5-18) <br>DACL: <br>•	Revision: 0x02 <br>•	Size: 0x0020 <br>•	Ace Count: 0x001 <br>•	Ace[00]------------------------- <br> &nbsp;&nbsp;AceType:0x00 <br> &nbsp;&nbsp;(ACCESS\_ALLOWED_ACE_TYPE)<br> &nbsp;&nbsp;AceSize:0x0018 <br> &nbsp;&nbsp;InheritFlags:0x00 <br> &nbsp;&nbsp;Access Mask:0x00020000 <br> &nbsp;&nbsp;AceSid: BUILTIN\Administrators (Alias) (S-1-5-32-544) <br><br> &nbsp;&nbsp;SACL: Not present |Grants RC access (READ_CONTROL, also known as STANDARD_RIGHTS_READ) only to members of the local (built-in) Administrators group. |
+|**Earlier non-domain controller** |-|-|No access check is performed by default.|
 
 ## Policy management
 
@@ -166,7 +167,7 @@ You can mitigate this vulnerability by enabling the **Network access: Restrict c
 If the policy is defined, admin tools, scripts and software that formerly enumerated users, groups and group membership may fail. To identify accounts that may be affected, test this setting in [audit only mode](#audit-only-mode).  
 
 ## Related Topics
-[Security Options](https://technet.microsoft.com/itpro/windows/keep-secure/security-options)
+[Security Options](./security-options.md)
 
 [SAMRi10 - Hardening SAM Remote Access in Windows 10/Server 2016](https://gallery.technet.microsoft.com/SAMRi10-Hardening-Remote-48d94b5b)
 

@@ -3,8 +3,7 @@ title: Device & performance health in the Windows Security app
 description: Use the Device & performance health section to see the status of the machine and note any storage, update, battery, driver, or hardware configuration issues
 keywords: wdsc, windows update, storage, driver, device, installation, battery, health, status
 search.product: eADQiWindows 10XVcnh
-ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +13,7 @@ ms.author: dansimp
 ms.date: 04/30/2018
 ms.reviewer: 
 manager: dansimp
+ms.technology: mde
 ---
 
 
@@ -24,9 +24,9 @@ manager: dansimp
 - Windows 10, version 1703 and later
 
 
-The **Device performance & health** section contains information about hardware, devices, and drivers related to the machine. IT administrators and IT pros should reference the appropriate documentation library for the issues they are seeing, such as the [configure the Load and unload device drivers security policy setting](https://docs.microsoft.com/windows/device-security/security-policy-settings/load-and-unload-device-drivers) and how to [deploy drivers during Windows 10 deployment using Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/windows/deployment/deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager).
+The **Device performance & health** section contains information about hardware, devices, and drivers related to the machine. IT administrators and IT pros should reference the appropriate documentation library for the issues they are seeing, such as the [configure the Load and unload device drivers security policy setting](/windows/device-security/security-policy-settings/load-and-unload-device-drivers) and how to [deploy drivers during Windows 10 deployment using Microsoft Endpoint Configuration Manager](/windows/deployment/deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager).
 
-The [Windows 10 IT pro troubleshooting topic](https://docs.microsoft.com/windows/client-management/windows-10-support-solutions), and the main [Windows 10 documentation library](https://docs.microsoft.com/windows/windows-10/) can also be helpful for resolving issues.
+The [Windows 10 IT pro troubleshooting topic](/windows/client-management/windows-10-support-solutions), and the main [Windows 10 documentation library](/windows/windows-10/) can also be helpful for resolving issues.
 
 
 In Windows 10, version 1709 and later, the section can be hidden from users of the machine. This can be useful if you don't want employees in your organization to see or have access to user-configured options for the features shown in the section.
@@ -43,7 +43,7 @@ This can only be done in Group Policy.
 >
 >You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings. 
 
-1.  On your Group Policy management machine, open the [Group Policy Management Console](https://technet.microsoft.com/library/cc731212.aspx), right-click the Group Policy Object you want to configure and click **Edit**.
+1.  On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
 3.  In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
 
@@ -51,7 +51,7 @@ This can only be done in Group Policy.
 
 6.  Open the **Hide the Device performance and health area** setting and set it to **Enabled**. Click **OK**.
 
-7. [Deploy the updated GPO as you normally do](https://msdn.microsoft.com/library/ee663280(v=vs.85).aspx). 
+7. [Deploy the updated GPO as you normally do](/windows/win32/srvnodes/group-policy). 
 
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:

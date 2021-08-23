@@ -2,7 +2,7 @@
 title: 4866(S) A trusted forest information entry was removed. (Windows 10)
 description: Describes security event 4866(S) A trusted forest information entry was removed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4866(S): A trusted forest information entry was removed.
@@ -120,8 +121,8 @@ This event is generated only on domain controllers.
 
 | Value | Type Name                 | Description                                                                                                                                                                                                                                                                                                                                                                     |
 |-------|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0     | ForestTrustTopLevelName   | The [DNS name](https://msdn.microsoft.com/library/cc234227.aspx#gt_102a36e2-f66f-49e2-bee3-558736b2ecd5) of the [trusted forest](https://msdn.microsoft.com/library/cc234227.aspx#gt_3b76a71f-9697-4836-9c69-09899b23c21b). The structure used for this record type is equivalent to [LSA\_UNICODE\_STRING](https://msdn.microsoft.com/library/cc234258.aspx) |
-| 1     | ForestTrustTopLevelNameEx | This type commonly used for name suffix exceptions. The structure used for this record type is equivalent to [LSA\_UNICODE\_STRING](https://msdn.microsoft.com/library/cc234258.aspx).                                                                                                                                                                                    |
+| 0     | ForestTrustTopLevelName   | The [DNS name](/openspecs/windows_protocols/ms-lsad/31ca2a31-0be4-4773-bcef-05ad6cd3ccfb#gt_102a36e2-f66f-49e2-bee3-558736b2ecd5) of the [trusted forest](/openspecs/windows_protocols/ms-lsad/31ca2a31-0be4-4773-bcef-05ad6cd3ccfb#gt_3b76a71f-9697-4836-9c69-09899b23c21b). The structure used for this record type is equivalent to [LSA\_UNICODE\_STRING](/openspecs/windows_protocols/ms-lsad/4b35e17e-405c-4e99-8ebe-8b28f047156f) |
+| 1     | ForestTrustTopLevelNameEx | This type commonly used for name suffix exceptions. The structure used for this record type is equivalent to [LSA\_UNICODE\_STRING](/openspecs/windows_protocols/ms-lsad/4b35e17e-405c-4e99-8ebe-8b28f047156f).                                                                                                                                                                                    |
 | 2     | ForestTrustDomainInfo     | This field specifies a record containing identification and name information                                                                                                                                                                                                                                                                                                    |
 
 -   **Flags** \[Type = UInt32\]: The following table specifies the possible flags.
@@ -152,4 +153,3 @@ This event is generated only on domain controllers.
 For 4866(S): A trusted forest information entry was removed.
 
 -   Any changes related to Active Directory forest trusts (especially trust removal) must be monitored and alerts should be triggered. If this change was not planned, investigate the reason for the change.
-

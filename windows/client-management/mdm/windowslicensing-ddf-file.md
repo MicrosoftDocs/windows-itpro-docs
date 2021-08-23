@@ -1,6 +1,6 @@
 ---
 title: WindowsLicensing DDF file
-description: WindowsLicensing DDF file
+description: Learn about the OMA DM device description framework (DDF) for the WindowsLicensing configuration service provider (CSP).
 ms.assetid: 2A24C922-A167-4CEE-8F74-08E7453800D2
 ms.reviewer: 
 manager: dansimp
@@ -131,54 +131,6 @@ The XML below is for Windows 10, version 1809.
             <Description>Returns the status of an edition upgrade on Windows 10 desktop and mobile devices.	 Status: 0 = Failed, 1 = Pending, 2 = In progress, 3 = Completed, 4 = Unknown</Description>
             <DFFormat>
               <int />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>UpgradeEditionWithLicense</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Exec />
-            </AccessType>
-            <Description>Provide a license for an edition upgrade of Windows 10 mobile devices. Does not require reboot.</Description>
-            <DFFormat>
-              <xml />
-            </DFFormat>
-            <Occurrence>
-              <One />
-            </Occurrence>
-            <Scope>
-              <Permanent />
-            </Scope>
-            <CaseSense>
-              <CIS />
-            </CaseSense>
-            <DFType>
-              <MIME>text/plain</MIME>
-            </DFType>
-          </DFProperties>
-        </Node>
-        <Node>
-          <NodeName>LicenseKeyType</NodeName>
-          <DFProperties>
-            <AccessType>
-              <Get />
-            </AccessType>
-            <Description>Returns the parameter type used by Windows 10 devices for an edition upgrade. Windows 10 desktop devices require a product key for an edition upgrade. Windows 10 mobile devices require a license for an edition upgrade.</Description>
-            <DFFormat>
-              <chr />
             </DFFormat>
             <Occurrence>
               <One />

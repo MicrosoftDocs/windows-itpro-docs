@@ -16,6 +16,9 @@ ms.date: 07/27/2017
 
 
 # Fix font rendering problems by turning off natural metrics
+
+[!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
+
 By default, Internet Explorer 11 uses “natural metrics”. Natural metrics use inter-pixel spacing that creates more accurately rendered and readable text, avoiding many common font rendering problems with Windows Internet Explorer 9 or older sites.
 
 However, you might find that many intranet sites need you to use Windows Graphics Device Interface (GDI) metrics. To avoid potential compatibility issues, you must turn off natural metrics for those sites.

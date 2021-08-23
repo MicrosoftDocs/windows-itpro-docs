@@ -8,13 +8,13 @@ metadata:
   title: Windows Privacy
   description: Learn about how privacy is managed in Windows.
   services: windows
-  ms.product: windows
+  ms.prod: windows
   ms.topic: hub-page # Required
   ms.collection: M365-security-compliance
-  author: danihalfin
-  ms.author: daniha
+  author: dansimp
+  ms.author: dansimp
   manager: dansimp
-  ms.date: 02/21/2019 #Required; mm/dd/yyyy format.
+  ms.date: 07/21/2020 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -23,9 +23,9 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Start with GDPR basics
-      itemType: get-started
-      url: gdpr-it-guidance.md
+    - title: Windows privacy & compliance guide for IT and compliance professionals
+      itemType: overview
+      url: Windows-10-and-privacy-compliance.md
     # Card
     - title: Configure Windows diagnostic data
       itemType: how-to-guide
@@ -41,21 +41,21 @@ productDirectory:
   summary: For the latest Windows 10 version, learn more about what Windows diagnostic data is collected at various diagnostics levels.
   items:
     # Card
-    - title: Basic level events and fields
+    - title: Required diagnostic data
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/media/common/i_extend.svg
       summary: Learn more about basic Windows diagnostic data events and fields collected.
       url: required-windows-diagnostic-data-events-and-fields-2004.md
     # Card
-    - title: Enhanced level events and fields
-      imageSrc: https://docs.microsoft.com/media/common/i_delivery.svg
-      summary: Learn more about Windows diagnostic data events and fields used by Windows Analytics.
-      url: enhanced-diagnostic-data-windows-analytics-events-and-fields.md
-    # Card
-    - title: Full level data categories
+    - title: Optional diagnostic data
       imageSrc: https://docs.microsoft.com/media/common/i_get-started.svg
-      summary: Learn more about all Windows diagnostic data collected.
+      summary: Get examples of the types of optional diagnostic data collected from Windows
       url: windows-diagnostic-data.md
+    # Card
+    - title: Changes to Windows diagnostic data collection
+      imageSrc: https://docs.microsoft.com/media/common/i_build.svg
+      summary: See what changes Windows is making to align to the new data collection taxonomy
+      url: changes-to-windows-diagnostic-data-collection.md  
 
 # conceptualContent section (optional)
 # conceptualContent:
@@ -152,7 +152,7 @@ productDirectory:
 #           summary: cardsummary3
 #           url: file1.md OR https://docs.microsoft.com/file3
 #   # footer (optional)
-#   footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"
+#   footer: "footertext [linktext](/footerfile)"
 
 # additionalContent section (optional)
 # Card with links style
@@ -161,19 +161,10 @@ additionalContent:
   sections:
     - items:
         # Card
-        - title: More Windows privacy
-          links:
-            - text: "Windows 10 & Privacy Compliance: A Guide for IT and Compliance Professionals"
-              url: Windows-10-and-privacy-compliance.md
-            - text: Windows 10 personal data services configuration
-              url: windows-personal-data-services-configuration.md 
-            - text: Beginning your GDPR journey for Windows 10
-              url: gdpr-win10-whitepaper.md
-        # Card
         - title: View and manage Windows 10 connection endpoints
           links:
             - text: Manage Windows 10 connection endpoints
-              url: manage-windows-endpoints.md
+              url: ./manage-windows-2004-endpoints.md
             - text: Manage connection endpoints for non-Enterprise editions of Windows 10
               url: windows-endpoints-2004-non-enterprise-editions.md 
             - text: Manage connections from Windows to Microsoft services
@@ -184,8 +175,8 @@ additionalContent:
             - text: Windows 10 on Trust Center
               url: https://www.microsoft.com/en-us/trustcenter/cloudservices/windows10
             - text: GDPR on Microsoft 365 Compliance solutions
-              url: https://docs.microsoft.com/microsoft-365/compliance/gdpr
+              url: /microsoft-365/compliance/gdpr
             - text: Support for GDPR Accountability on Service Trust Portal
               url: https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted
   # footer (optional)
-  # footer: "footertext [linktext](https://docs.microsoft.com/footerfile)"
+  # footer: "footertext [linktext](/footerfile)"

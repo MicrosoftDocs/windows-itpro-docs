@@ -1,6 +1,6 @@
 ---
 title: Deploy Windows 10 using PXE and Configuration Manager (Windows 10)
-description: In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Configuration Manager deployment packages and task sequences.
+description: In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Manager deployment packages and task sequences.
 ms.assetid: fb93f514-5b30-4f4b-99dc-58e6860009fa
 ms.reviewer: 
 manager: laurawi
@@ -21,7 +21,7 @@ ms.topic: article
 
 -   Windows 10
 
-In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Configuration Manager deployment packages and task sequences. This topic will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) computer named PC0001. An existing Configuration Manager infrastructure that is integrated with MDT is used for the procedures in this topic.
+In this topic, you will learn how to deploy Windows 10 using Microsoft Endpoint Manager deployment packages and task sequences. This topic will walk you through the process of deploying the Windows 10 Enterprise image to a Unified Extensible Firmware Interface (UEFI) computer named PC0001. An existing Configuration Manager infrastructure that is integrated with MDT is used for the procedures in this topic.
 
 This topic assumes that you have completed the following prerequisite procedures:
 - [Prepare for Zero Touch Installation of Windows 10 with Configuration Manager](prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md)
@@ -51,7 +51,7 @@ All server and client computers referenced in this guide are on the same subnet.
 ## Procedures
 
 1. Start the PC0001 computer. At the Pre-Boot Execution Environment (PXE) boot menu, press **Enter** to allow it to PXE boot.
-2. On the **Welcome to the Task Sequence Wizard** page, type in the password **pass@word1** and click **Next**.
+2. On the **Welcome to the Task Sequence Wizard** page, type in the password **pass\@word1** and click **Next**.
 3. On the **Select a task sequence to run** page, select **Windows 10 Enterprise x64 RTM** and click **Next**.
 4. On the **Edit Task Sequence Variables** page, double-click the **OSDComputerName** variable, and in the **Value** field, type **PC0001** and click **OK**. Then click **Next**.
 5. The operating system deployment will take several minutes to complete. 
@@ -97,6 +97,6 @@ Next, see [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Ma
 [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
 [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
 [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Create a task sequence with Configuration Manager and MDT](./create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
 [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>

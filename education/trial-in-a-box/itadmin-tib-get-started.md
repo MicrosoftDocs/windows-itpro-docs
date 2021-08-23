@@ -22,14 +22,14 @@ manager: dansimp
 
 <span style="font-size: 1.5em">Learn how to quickly deploy and manage devices for your school in 5 quick steps.</span>
 
-|  |  |
+|&nbsp;  |&nbsp;  |
 | :---: |:--- |
 | [![Log in to Device A](images/admin-TIB-setp-1-v3.png)](#it-task1) | [Log in](#it-task1) to **Device A** with your IT Admin credentials and connect to your school's network. |
 | [![Configure Device B with Set up School PCs](images/admin-TIB-setp-2-v3.png)](#it-task2) | [Configure Device B](#it-task2) with the Set up School PCs app. |
 | [![Configure Intune for Education](images/admin-TIB-setp-3-v3.png)](#it-task3) | [Express configure Intune for Education](#it-task3) to manage devices, users, and policies. |
 | [![Find and deploy apps](images/admin-TIB-setp-4-v3.png)](#it-task4) | [Find apps from the Microsoft Store for Education](#it-task4) and deploy them to manage devices in your tenant. |
 | [![Create custom folders](images/admin-TIB-setp-5-v3.png)](#it-task5) | [Create custom folders](#it-task5) that will appear on each managed device's **Start** menu. |
-|  |  |
+
 
 </br>
 To get the most out of Microsoft Education, we&#39;ve pre-configured your tenant for you so you don&#39;t need to set it up. A tenant is representative of an organization. It is a dedicated instance of the Azure AD service that an organization receives and owns when it signs up for a Microsoft cloud service such as Azure, Microsoft Intune, or Office 365. We&#39;ve also pre-populated the tenant with fictitious Student Information System (SIS) data so you can work with this as you follow the guide.
@@ -60,7 +60,7 @@ To try out the IT admin tasks, start by logging in as an IT admin.
 ## <a name="it-task2"></a>2. Configure Device B with Set up School PCs
 Now you're ready to learn how to configure a brand new device. You will start on **Device A** by downloading and running the Set up School PCs app. Then, you will configure **Device B**.
 
-If you've previously used Set up School PCs to provision student devices, you can follow the instructions in this section to quickly configure **Device B**. Otherwise, we recommend you follow the instructions in [Use the Set up School PCs app](https://docs.microsoft.com/education/windows/use-set-up-school-pcs-app) for more detailed information, including tips for successfully running Set up School PCs.
+If you've previously used Set up School PCs to provision student devices, you can follow the instructions in this section to quickly configure **Device B**. Otherwise, we recommend you follow the instructions in [Use the Set up School PCs app](../windows/use-set-up-school-pcs-app.md) for more detailed information, including tips for successfully running Set up School PCs.
 
 ### Download, install, and get ready
 
@@ -103,7 +103,7 @@ If you've previously used Set up School PCs to provision student devices, you ca
      - Set up School PCs will change some account management logic so that it sets the expiration time for an account to 180 days (without requiring sign-in). 
      - This setting also increases the maximum storage to 100% of the available disk space. This prevents the student's account from being erased if the student stores a lot of files or data or if the student doesn't use the PC over a prolonged period.
    - **Let guests sign-in to these PCs** allows guests to use student PCs without a school account. If you select this option, a **Guest** account button will be added in the PC's sign-in screen to allow anyone to use the PC.
-   - **Enable Windows 10 Autopilot Reset** enables IT admins to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment the student PC is returned to a fully configured or known approved state. For more info, see [Autopilot Reset](https://docs.microsoft.com/education/windows/autopilot-reset).
+   - **Enable Windows 10 Autopilot Reset** enables IT admins to quickly remove personal files, apps, and settings, and reset Windows 10 devices from the lock screen any time and apply original settings and management enrollment the student PC is returned to a fully configured or known approved state. For more info, see [Autopilot Reset](../windows/autopilot-reset.md).
    - **Lock screen background** shows the default background used for student PCs provisioned by Set up School PCs. Select **Browse** to change the default.
 
 7. **Set up the Take a Test app** configures the device for taking quizzes and high-stakes assessments by some providers like Smarter Balanced. Windows will lock down the student PC so that students can't access anything else while taking the test.
@@ -224,7 +224,7 @@ The Microsoft Store for Education is where you can shop for more apps for your s
 
     ![List of apps bought for the school](images/msfe_boughtapps.png)
 
-    In the **Private store** column of the **Products & services** page, the status for some apps will indicate that it's "In private store" while others will say "Adding to private store" or "Not applicable". Learn more about this in <a href="https://docs.microsoft.com/microsoft-store/distribute-apps-from-your-private-store" target="_blank">Distribute apps using your private store</a>.
+    In the **Private store** column of the **Products & services** page, the status for some apps will indicate that it's "In private store" while others will say "Adding to private store" or "Not applicable". Learn more about this in <a href="/microsoft-store/distribute-apps-from-your-private-store" target="_blank">Distribute apps using your private store</a>.
 
     > [!NOTE]  
     > Sync happens automatically, but it may take up to 36 hours for your organization's private store and 12 hours for Intune for Education to sync all your purchased apps.
@@ -246,7 +246,7 @@ Update settings for all devices in your tenant by adding the **Documents** and *
 ## <a name="othertasks"></a>Verify correct device setup and other IT admin tasks
 Follow these instructions to confirm if you configured your tenant correctly and the right apps and settings were applied to all users or devices on your tenant:
 
-* [Verify correct device setup](https://docs.microsoft.com/education/get-started/finish-setup-and-other-tasks#verify-correct-device-setup) 
+* [Verify correct device setup](/microsoft-365/education/deploy/#verify-correct-device-setup) 
 
     1. Confirm that the apps you bought from the Microsoft Store for Education appear in the Windows Start screen's **Recently added** section.
 
@@ -256,13 +256,13 @@ Follow these instructions to confirm if you configured your tenant correctly and
     2. Confirm that the folders you added, if you chose to customize the Windows interface from Intune for Education, appear in the Start menu.
     3. If you added **Office 365 for Windows 10 S (Education Preview)** to the package and provisioned **Device B** with it, you need to click on one of the Office apps in the **Start** menu to complete app registration. 
 
-* [Verify the device is Azure AD joined](https://docs.microsoft.com/education/get-started/finish-setup-and-other-tasks#verify-the-device-is-azure-ad-joined) - Confirm that your devices are being managed in Intune for Education.
-* [Add more users](https://docs.microsoft.com/education/get-started/finish-setup-and-other-tasks#add-more-users) - Go to the Microsoft 365 admin center to add more users.
+* [Verify the device is Azure AD joined](/microsoft-365/education/deploy/#verify-the-device-is-azure-ad-joined) - Confirm that your devices are being managed in Intune for Education.
+* [Add more users](/microsoft-365/education/deploy/#add-more-users) - Go to the Microsoft 365 admin center to add more users.
 * Get app updates (including updates for Office 365 for Windows 10 S)
     1. Open the **Start** menu and go to the **Microsoft Store**.
     2. From the **Microsoft Store**, click **...** (See more) and select **Downloads and updates**.
     3. In the **Downloads and updates** page, click **Get updates**.
-* [Try the BYOD scenario](https://docs.microsoft.com/education/get-started/finish-setup-and-other-tasks#connect-other-devices-to-your-cloud-infrastructure) 
+* [Try the BYOD scenario](/microsoft-365/education/deploy/#connect-other-devices-to-your-cloud-infrastructure) 
 
 ## Update your apps
 

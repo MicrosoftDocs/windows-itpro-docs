@@ -1,10 +1,10 @@
 ---
-title: Audit Audit the use of Backup and Restore privilege (Windows 10)
-description: Describes the best practices, location, values, and security considerations for the Audit Audit the use of Backup and Restore privilege security policy setting.
+title: "Audit: Audit the use of Backup and Restore privilege (Windows 10)"
+description: "Describes the best practices, location, values, and security considerations for the 'Audit: Audit the use of Backup and Restore privilege' security policy setting."
 ms.assetid: f656a2bb-e8d6-447b-8902-53df3a7756c5
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/01/2019
+ms.technology: mde
 ---
 
 # Audit: Audit the use of Backup and Restore privilege
@@ -65,9 +66,9 @@ None. Changes to this policy become effective without a computer restart when th
 
 ### Auditing
 
-Enabling this policy setting in conjunction with the **Audit privilege use** policy setting records any instance of user rights that are being exercised in the security log. If **Audit privilege use** is enabled but **Audit: Audit the use of Backup and Restore privilege** is disabled, when users use backup or restore user rights, those events will not be audited.
+Enabling this policy setting in conjunction with the **Audit privilege use** policy setting records any instance of user rights that are being exercised in the security log. If **Audit privilege use** is enabled but **Audit: Audit the use of Backup and Restore privilege** is disabled, when users back up or restore user rights, those events will not be audited.
 
-Enabling this policy setting when the **Audit privilege use** policy setting is also enabled generates an audit event for every file that is backed up or restored. This can help you to track down an administrator who is accidentally or maliciously restoring data in an unauthorized manner.
+Enabling this policy setting when the **Audit privilege use** policy setting is also enabled generates an audit event for every file that is backed up or restored. This setup can help you to track down an administrator who is accidentally or maliciously restoring data in an unauthorized manner.
 
 Alternately, you can use the advanced audit policy, [Audit Sensitive Privilege Use](../auditing/audit-sensitive-privilege-use.md), which can help you manage the number of events generated.
 
@@ -82,7 +83,7 @@ When the backup and restore function is used, it creates a copy of the file syst
 ### Countermeasure
 
 Enable the **Audit: Audit the use of Backup and Restore privilege** setting. Alternatively, implement automatic log backup by configuring the **AutoBackupLogFiles** registry key. If you enable this option when the [Audit privilege use](../auditing/basic-audit-privilege-use.md) setting is also enabled, an audit event is generated for every file that is backed up or restored. This information could help you to identify an account that was used to accidentally or maliciously restore data in an unauthorized manner.
-For more information about configuring this key, see [Eventlog Key](https://docs.microsoft.com/windows/desktop/EventLog/eventlog-key).
+For more information about configuring this key, see [Eventlog Key](/windows/desktop/EventLog/eventlog-key).
 
 ### Potential impact
 
@@ -91,5 +92,4 @@ If you enable this policy setting, a large number of security events could be ge
 ## Related topics
 
 - [Security Options](security-options.md)
- 
  

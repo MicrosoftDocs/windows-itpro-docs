@@ -70,7 +70,7 @@ If you’ve been approved and are part of the Enrollment for Education Solutions
 
 Now that the app is in your Microsoft Store for Education inventory, you can choose how to distribute Minecraft. For more information on distribution options, see [Distribute Minecraft](#distribute-minecraft).
 
-If you need additional licenses for **Minecraft: Education Edition**, see [Purchase additional licenses](https://technet.microsoft.com/edu/windows/education-scenarios-store-for-business#purchase-additional-licenses).
+If you need additional licenses for **Minecraft: Education Edition**, see [Purchase additional licenses](./education-scenarios-store-for-business.md#purchase-additional-licenses).
 
 ### <a href="" id="volume-license"></a>Minecraft: Education Edition - volume licensing
 Qualified education institutions can purchase Minecraft: Education Edition licenses through their Microsoft channel partner. Schools need to be part of the Enrollment for Education Solutions (EES) volume licensing program. Educational institutions should work with their channel partner to determine which Minecraft: Education Edition licensing offer is best for their institution. The process looks like this: 
@@ -128,7 +128,7 @@ After Minecraft: Education Edition is added to your Microsoft Store for Educatio
 - You can assign the app to others. 
 - You can download the app to distribute.
 
-Admins can also add Minecraft: Education Edition to the private store. This allows people in your organization to install the app from the private store. For more information, see [Distribute apps using your private store](https://technet.microsoft.com/itpro/windows/manage/distribute-apps-from-your-private-store). 
+Admins can also add Minecraft: Education Edition to the private store. This allows people in your organization to install the app from the private store. For more information, see [Distribute apps using your private store](/microsoft-store/distribute-apps-from-your-private-store). 
 
 <!---
 Here's the page you'll see for Minecraft: Education Edition licenses purchased directly through the Microsoft Store for Business. 
@@ -315,8 +315,8 @@ If you’ve purchased a volume license, be sure to let other basic purchasers in
 ## Learn more
 [Working with Microsoft Store for Education – education scenarios](education-scenarios-store-for-business.md) </br>
 Learn about overall Microsoft Store for Education management: manage settings, shop for apps, distribute apps, manage inventory, and manage order history.  
-[Roles and permissions in Microsoft Store for Business and Education](https://technet.microsoft.com/itpro/windows/manage/roles-and-permissions-windows-store-for-business)
-[Troubleshoot Microsoft Store for Business and Education](https://technet.microsoft.com/itpro/windows/manage/troubleshoot-windows-store-for-business)
+[Roles and permissions in Microsoft Store for Business and Education](/microsoft-store/roles-and-permissions-microsoft-store-for-business)
+[Troubleshoot Microsoft Store for Business and Education](/microsoft-store/troubleshoot-microsoft-store-for-business)
 
 ## Related topics
 
