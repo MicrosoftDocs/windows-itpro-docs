@@ -360,7 +360,7 @@ If disabled, Settings will not contact Microsoft content services to retrieve ti
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Online Tips*
+-   GP Friendly name: *Allow Online Tips*
 -   GP name: *AllowOnlineTips*
 -   GP element: *CheckBox_AllowOnlineTips*
 -   GP path: *Control Panel*
@@ -784,7 +784,7 @@ Added in Windows 10, version 1703.  Allows IT Admins to configure the default se
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Show additional calendar*
+-   GP Friendly name: *Show additional calendar*
 -   GP name: *ConfigureTaskbarCalendar*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -877,7 +877,7 @@ hide:network-wifi
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Settings Page Visibility*
+-   GP Friendly name: *Settings Page Visibility*
 -   GP name: *SettingsPageVisibility*
 -   GP element: *SettingsPageVisibilityBox*
 -   GP path: *Control Panel*
