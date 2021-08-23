@@ -27,7 +27,7 @@ ms.technology: mde
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker.
 
