@@ -1,5 +1,5 @@
 ---
-title: Allow LOB Win32 Apps on Intune-Managed S Mode Devices (Windows 10)
+title: Allow LOB Win32 Apps on Intune-Managed S Mode Devices (Windows)
 description: Using WDAC supplemental policies, you can expand the S mode base policy on your Intune-managed devices.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -23,10 +23,15 @@ ms.technology: mde
 **Applies to:**
 
 -   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
-Beginning with the Windows 10 November 2019 update (build 18363), Microsoft Intune enables customers to deploy and run business critical Win32 applications as well as Windows components that are normally blocked in S mode (ex. PowerShell.exe) on their Intune-managed Windows 10 in S mode devices. 
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
-With Intune, IT Pros can now configure their managed S mode devices using a Windows Defender Application Control (WDAC) supplemental policy that expands the S mode base policy to authorize the apps their business uses. This feature changes the S mode security posture from "every app is Microsoft-verified" to "every app is verified by Microsoft or your organization". 
+Beginning with the Windows 10 November 2019 update (build 18363), Microsoft Intune enables customers to deploy and run business critical Win32 applications and Windows components that are normally blocked in S mode (ex. PowerShell.exe) on their Intune-managed Windows 10 in S mode devices.
+
+With Intune, IT Pros can now configure their managed S mode devices using a Windows Defender Application Control (WDAC) supplemental policy that expands the S mode base policy to authorize the apps their business uses. This feature changes the S mode security posture from "every app is Microsoft-verified" to "every app is verified by Microsoft or your organization".
 
 Refer to the below video for an overview and brief demo.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mlcp]

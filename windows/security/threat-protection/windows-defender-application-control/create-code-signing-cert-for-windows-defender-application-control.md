@@ -1,5 +1,5 @@
 ---
-title: Create a code signing cert for Windows Defender Application Control  (Windows 10)
+title: Create a code signing cert for Windows Defender Application Control (Windows)
 description: Learn how to set up a publicly-issued code signing certificate, so you can sign catalog files or WDAC policies internally.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -23,7 +23,11 @@ ms.technology: mde
 **Applies to:**
 
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this, you will either need a publicly issued code signing certificate or an internal CA. If you have purchased a code signing certificate, you can skip this topic and instead follow other topics listed in the [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md). 
 
@@ -75,7 +79,7 @@ When this certificate template has been created, you must publish it to the CA p
 
 2.  Select the WDAC Catalog signing certificate, and then click **OK**.
 
-Now that the template is available to be issued, you must request one from the computer running Windows 10 on which you create and sign catalog files. To begin, open the MMC, and then complete the following steps:
+Now that the template is available to be issued, you must request one from the computer running Windows 10 and Windows 11 on which you create and sign catalog files. To begin, open the MMC, and then complete the following steps:
 
 1.  In MMC, from the **File** menu, click **Add/Remove Snap-in**. Double-click **Certificates**, and then select **My user account**.
 

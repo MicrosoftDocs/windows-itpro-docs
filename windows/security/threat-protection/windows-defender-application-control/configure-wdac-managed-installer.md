@@ -1,5 +1,5 @@
 ---
-title: Configure a WDAC managed installer (Windows 10)
+title: Configure a WDAC managed installer (Windows)
 description: Explains how to configure a custom Manged Installer.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,8 +22,12 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2019
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 Setting up managed installer tracking and application execution enforcement requires applying both an AppLocker and WDAC policy with specific rules and options enabled.
 There are three primary steps to keep in mind:
@@ -126,7 +130,7 @@ For example:
 In order to enable trust for the binaries laid down by managed installers, the Enabled: Managed Installer option must be specified in your WDAC policy.
 This can be done by using the [Set-RuleOption cmdlet](/powershell/module/configci/set-ruleoption) with Option 13.
 
-Below are steps to create a WDAC policy which allows Windows to boot and enables the managed installer option.
+Below are steps to create a WDAC policy that allows Windows to boot and enables the managed installer option.
 
 1. Copy the DefaultWindows_Audit policy into your working folder from C:\Windows\schemas\CodeIntegrity\ExamplePolicies\DefaultWindows_Audit.xml
 

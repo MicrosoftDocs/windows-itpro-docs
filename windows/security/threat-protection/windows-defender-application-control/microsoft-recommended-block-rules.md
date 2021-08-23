@@ -1,5 +1,5 @@
 ---
-title: Microsoft recommended block rules (Windows 10)
+title: Microsoft recommended block rules (Windows)
 description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,8 +22,12 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
@@ -71,7 +75,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 
 <sup>1</sup> A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
-<sup>2</sup> If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
+<sup>2</sup> If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end-user device that is not being used in a development context, we recommend that you block msbuild.exe.
 
 <sup>*</sup> Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
@@ -96,9 +100,9 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 > [!Note]
 > This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
 
-Certain software applications may allow additional code to run by design. 
+Certain software applications may allow extra code to run by design. 
 These types of applications should be blocked by your Windows Defender Application Control policy. 
-In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Application Control bypass, you should add deny rules to your WDAC policies for that application’s previous, less secure versions. 
+Also, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Application Control bypass, you should add Deny rules to your WDAC policies for that application’s previous, less secure versions. 
 
 Microsoft recommends that you install the latest security updates. 
 The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Application Control. 
