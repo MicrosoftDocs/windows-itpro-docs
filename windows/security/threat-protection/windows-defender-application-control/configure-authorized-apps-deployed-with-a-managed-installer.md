@@ -1,6 +1,6 @@
 ---
 title: Configure authorized apps deployed with a WDAC-managed installer (Windows)
-description: Explains how to configure a custom Manged Installer.
+description: Explains about how to configure a custom Manged Installer.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -77,7 +77,7 @@ The identity of the managed installer executable(s) is specified in an AppLocker
 
 Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerShell cmdlets allow for directly specifying rules for the Managed Installer rule collection. However, you can use a text editor to make the changes that are needed to an EXE or DLL rule collection policy, to specify Type="ManagedInstaller", so that the new rule can be imported into a GPO.
 
-1. Use [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy?view=win10-ps) to make an EXE rule for the file you are designating as a managed installer. Note that only EXE file types can be designated as managed installers. Below is an example using the rule type Publisher with a hash fallback but other rule types can be used as well. You may need to reformat the output for readability.
+1. Use [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy?view=win10-ps&preserve-view=true) to make an EXE rule for the file you are designating as a managed installer. Note that only EXE file types can be designated as managed installers. Below is an example using the rule type Publisher with a hash fallback but other rule types can be used as well. You may need to reformat the output for readability.
 
     ```powershell
     Get-ChildItem <exe filepath> | Get-AppLockerFileInformation | New-AppLockerPolicy -RuleType Publisher, Hash -User Everyone -Xml > AppLocker_MI_PS_ISE.xml
