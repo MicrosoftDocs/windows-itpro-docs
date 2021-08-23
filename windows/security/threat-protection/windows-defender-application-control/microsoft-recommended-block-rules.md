@@ -71,9 +71,9 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 
 <sup>1</sup> A vulnerability in bginfo.exe has been fixed in the latest version 4.22. If you use BGInfo, for security, make sure to download and run the latest version here [BGInfo 4.22](/sysinternals/downloads/bginfo). Note that BGInfo versions earlier than 4.22 are still vulnerable and should be blocked.
 
-<sup>2</sup> If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end user device that is not being used in a development context, we recommend that you block msbuild.exe.
+<sup>2</sup> If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end-user device that is not being used in a development context, we recommend that you block msbuild.exe.
 
-<sup>*</sup> Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
+<sup>*</sup> Microsoft recognizes the efforts of people in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
 <br />
 
@@ -97,13 +97,9 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 > [!Note]
 > This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
 
-Certain software applications may allow additional code to run by design. 
-These types of applications should be blocked by your Windows Defender Application Control policy. 
-In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Application Control bypass, you should add deny rules to your WDAC policies for that application’s previous, less secure versions. 
+Certain software applications may allow other code to run by design. Such applications should be blocked by your Windows Defender Application Control policy. In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Application Control bypass, you should add *deny* rules to your application control policies for that application’s previous, less secure versions.
 
-Microsoft recommends that you install the latest security updates. 
-The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Application Control. 
-These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
+Microsoft recommends that you install the latest security updates. The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Application Control. These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
 
 For October 2017, we are announcing an update to system.management.automation.dll in which we are revoking older versions by hash values, instead of version rules.
 
@@ -113,7 +109,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
 - msxml6.dll
 - jscript9.dll
 
-Pick the correct version of each .dll for the Windows release you plan to support, and remove the other versions. Ensure that you also uncomment them in the signing scenarios section.
+Select the correct version of each .dll for the Windows release you plan to support, and remove the other versions. Ensure that you also uncomment them in the signing scenarios section.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
