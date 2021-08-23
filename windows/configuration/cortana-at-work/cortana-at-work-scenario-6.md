@@ -1,6 +1,6 @@
 ---
 title: Review a reminder suggested by Cortana (Windows)
-description: A test scenario about how to use Cortana with the Suggested reminders feature.
+description: A test scenario on how to use Cortana with the Suggested reminders feature.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library

@@ -56,7 +56,7 @@ Before you can start this testing scenario, you must first set up your test envi
 
 4. Click **Samples** from the **Content Pack Library** area of the **Get Data** screen.
 
-    ![Cortana at work, showing the Samples link](../images/cortana-powerbi-getdata-samples.png)
+    ![Cortana at work, showing Samples link](../images/cortana-powerbi-getdata-samples.png)
 
 5. Click **Retail Analysis Sample**, and then click **Connect**.
 

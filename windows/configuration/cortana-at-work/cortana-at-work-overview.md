@@ -2,7 +2,7 @@
 title: Configure Cortana in Windows 10 and Windows 11
 ms.reviewer: 
 manager: dansimp
-description: Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.
+description: Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and for enterprise environments.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -51,7 +51,7 @@ Cortana's approach to integration with Microsoft 365 has changed with Windows 10
 
 ### Cortana in Windows 10, version 2004 and later, or Windows 11
 
-Cortana enterprise services that can be accessed using Azure AD through Cortana in Windows 10, version 2004 and later, or Windows 11, meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products). To learn more, see [Cortana in Microsoft 365](/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide#what-data-is-processed-by-cortana-in-office-365).
+Cortana enterprise services that can be accessed using Azure AD through Cortana in Windows 10, version 2004 and later, or Windows 11, meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products). To learn more, see [Cortana in Microsoft 365](/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide#what-data-is-processed-by-cortana-in-office-365&preserve-view=true).
 
 #### How does Microsoft store, retain, process, and use Customer Data in Cortana?
 

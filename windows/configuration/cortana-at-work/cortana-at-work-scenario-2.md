@@ -1,6 +1,6 @@
 ---
 title: Perform a quick search with Cortana at work (Windows)
-description: A test scenario about how to perform a quick search with Cortana at work.
+description: This is a test scenario about how to perform a quick search with Cortana at work.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
