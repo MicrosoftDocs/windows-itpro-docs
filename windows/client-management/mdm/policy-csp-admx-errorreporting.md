@@ -180,7 +180,7 @@ For related information, see the Configure Error Reporting and Report Operating 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Default application reporting settings*
+-   GP Friendly name: *Default application reporting settings*
 -   GP name: *PCH_AllOrNoneDef*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -251,7 +251,7 @@ If you disable or do not configure this policy setting, the Default application 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *List of applications to never report errors for*
+-   GP Friendly name: *List of applications to never report errors for*
 -   GP name: *PCH_AllOrNoneEx*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -328,7 +328,7 @@ This setting will be ignored if the 'Configure Error Reporting' setting is disab
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *List of applications to always report errors for*
+-   GP Friendly name: *List of applications to always report errors for*
 -   GP name: *PCH_AllOrNoneInc*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -418,7 +418,7 @@ See related policy settings Display Error Notification (same folder as this poli
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Error Reporting*
+-   GP Friendly name: *Configure Error Reporting*
 -   GP name: *PCH_ConfigureReport*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -491,7 +491,7 @@ See also the Configure Error Reporting policy setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Report operating system errors*
+-   GP Friendly name: *Report operating system errors*
 -   GP name: *PCH_ReportOperatingSystemFaults*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -560,7 +560,7 @@ If you disable or do not configure this policy setting, no Windows Error Reporti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Report Archive*
+-   GP Friendly name: *Configure Report Archive*
 -   GP name: *WerArchive_1*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -629,7 +629,7 @@ If you disable or do not configure this policy setting, no Windows Error Reporti
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Report Archive*
+-   GP Friendly name: *Configure Report Archive*
 -   GP name: *WerArchive_2*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -698,7 +698,7 @@ If you disable this policy setting, then all memory dumps are uploaded according
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Automatically send memory dumps for OS-generated error reports*
+-   GP Friendly name: *Automatically send memory dumps for OS-generated error reports*
 -   GP name: *WerAutoApproveOSDumps_1*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -767,7 +767,7 @@ If you disable this policy setting, then all memory dumps are uploaded according
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Automatically send memory dumps for OS-generated error reports*
+-   GP Friendly name: *Automatically send memory dumps for OS-generated error reports*
 -   GP name: *WerAutoApproveOSDumps_2*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -836,7 +836,7 @@ If you disable or do not configure this policy setting, WER throttles data by de
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not throttle additional data*
+-   GP Friendly name: *Do not throttle additional data*
 -   GP name: *WerBypassDataThrottling_1*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -905,7 +905,7 @@ If you disable or do not configure this policy setting, WER throttles data by de
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not throttle additional data*
+-   GP Friendly name: *Do not throttle additional data*
 -   GP name: *WerBypassDataThrottling_2*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -974,7 +974,7 @@ If you disable or do not configure this policy setting, WER does not send data, 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Send data when on connected to a restricted/costed network*
+-   GP Friendly name: *Send data when on connected to a restricted/costed network*
 -   GP name: *WerBypassNetworkCostThrottling_1*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1043,7 +1043,7 @@ If you disable or do not configure this policy setting, WER does not send data, 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Send data when on connected to a restricted/costed network*
+-   GP Friendly name: *Send data when on connected to a restricted/costed network*
 -   GP name: *WerBypassNetworkCostThrottling_2*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1112,7 +1112,7 @@ If you disable or do not configure this policy setting, WER checks for solutions
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Send additional data when on battery power*
+-   GP Friendly name: *Send additional data when on battery power*
 -   GP name: *WerBypassPowerThrottling_1*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1181,7 +1181,7 @@ If you disable or do not configure this policy setting, WER checks for solutions
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Send additional data when on battery power*
+-   GP Friendly name: *Send additional data when on battery power*
 -   GP name: *WerBypassPowerThrottling_2*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1250,7 +1250,7 @@ If you disable or do not configure this policy setting, Windows Error Reporting 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Corporate Windows Error Reporting*
+-   GP Friendly name: *Configure Corporate Windows Error Reporting*
 -   GP name: *WerCER*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1329,7 +1329,7 @@ If you disable or do not configure this policy setting, then the default consent
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Customize consent settings*
+-   GP Friendly name: *Customize consent settings*
 -   GP name: *WerConsentCustomize_1*
 -   GP path: *Windows Components\Windows Error Reporting\Consent*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1398,7 +1398,7 @@ If you disable or do not configure this policy setting, custom consent policy se
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Ignore custom consent settings*
+-   GP Friendly name: *Ignore custom consent settings*
 -   GP name: *WerConsentOverride_1*
 -   GP path: *Windows Components\Windows Error Reporting\Consent*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1467,7 +1467,7 @@ If you disable or do not configure this policy setting, custom consent policy se
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Ignore custom consent settings*
+-   GP Friendly name: *Ignore custom consent settings*
 -   GP name: *WerConsentOverride_2*
 -   GP path: *Windows Components\Windows Error Reporting\Consent*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1621,7 +1621,7 @@ If this policy setting is disabled or not configured, then the consent level def
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Default consent*
+-   GP Friendly name: *Configure Default consent*
 -   GP name: *WerDefaultConsent_2*
 -   GP path: *Windows Components\Windows Error Reporting\Consent*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1760,7 +1760,7 @@ If you disable or do not configure this policy setting, errors are reported on a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *List of applications to be excluded*
+-   GP Friendly name: *List of applications to be excluded*
 -   GP name: *WerExlusion_1*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1829,7 +1829,7 @@ If you disable or do not configure this policy setting, errors are reported on a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *List of applications to be excluded*
+-   GP Friendly name: *List of applications to be excluded*
 -   GP name: *WerExlusion_2*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1898,7 +1898,7 @@ If you disable or do not configure this policy setting, Windows Error Reporting 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable logging*
+-   GP Friendly name: *Disable logging*
 -   GP name: *WerNoLogging_1*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -1967,7 +1967,7 @@ If you disable or do not configure this policy setting, Windows Error Reporting 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable logging*
+-   GP Friendly name: *Disable logging*
 -   GP name: *WerNoLogging_2*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -2036,7 +2036,7 @@ If you disable or do not configure this policy setting, then consent policy sett
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not send additional data*
+-   GP Friendly name: *Do not send additional data*
 -   GP name: *WerNoSecondLevelData_1*
 -   GP path: *Windows Components\Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -2107,7 +2107,7 @@ If you disable or do not configure this policy setting, Windows Error Reporting 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Report Queue*
+-   GP Friendly name: *Configure Report Queue*
 -   GP name: *WerQueue_1*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -2178,7 +2178,7 @@ If you disable or do not configure this policy setting, Windows Error Reporting 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Report Queue*
+-   GP Friendly name: *Configure Report Queue*
 -   GP name: *WerQueue_2*
 -   GP path: *Windows Components\Windows Error Reporting\Advanced Error Reporting Settings*
 -   GP ADMX file name: *ErrorReporting.admx*

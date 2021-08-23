@@ -182,7 +182,7 @@ With all these options, which an organization chooses depends on the resources, 
 
 ## Steps to manage updates for Windows 10
 
-| | |
+|&nbsp; |&nbsp; |
 | --- | --- |
 | ![done](images/checklistdone.png) | Learn about updates and servicing channels (this topic) |
 | ![to do](images/checklistbox.gif) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |

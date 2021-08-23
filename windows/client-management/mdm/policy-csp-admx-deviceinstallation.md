@@ -111,7 +111,7 @@ If you disable or do not configure this policy setting, members of the Administr
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow administrators to override Device Installation Restriction policies*
+-   GP Friendly name: *Allow administrators to override Device Installation Restriction policies*
 -   GP name: *DeviceInstall_AllowAdminInstall*
 -   GP path: *System\Device Installation\Device Installation Restrictions*
 -   GP ADMX file name: *DeviceInstallation.admx*
@@ -180,7 +180,7 @@ If you disable or do not configure this policy setting, Windows displays a defau
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Display a custom message when installation is prevented by a policy setting*
+-   GP Friendly name: *Display a custom message when installation is prevented by a policy setting*
 -   GP name: *DeviceInstall_DeniedPolicy_DetailText*
 -   GP path: *System\Device Installation\Device Installation Restrictions*
 -   GP ADMX file name: *DeviceInstallation.admx*
@@ -249,7 +249,7 @@ If you disable or do not configure this policy setting, Windows displays a defau
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Display a custom message title when device installation is prevented by a policy setting*
+-   GP Friendly name: *Display a custom message title when device installation is prevented by a policy setting*
 -   GP name: *DeviceInstall_DeniedPolicy_SimpleText*
 -   GP path: *System\Device Installation\Device Installation Restrictions*
 -   GP ADMX file name: *DeviceInstallation.admx*
@@ -318,7 +318,7 @@ If you disable or do not configure this policy setting, Windows waits 240 second
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure device installation time-out*
+-   GP Friendly name: *Configure device installation time-out*
 -   GP name: *DeviceInstall_InstallTimeout*
 -   GP path: *System\Device Installation*
 -   GP ADMX file name: *DeviceInstallation.admx*
@@ -389,7 +389,7 @@ Note: If no reboot is forced, the device installation restriction right will not
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Time (in seconds) to force reboot when required for policy changes to take effect*
+-   GP Friendly name: *Time (in seconds) to force reboot when required for policy changes to take effect*
 -   GP name: *DeviceInstall_Policy_RebootTime*
 -   GP path: *System\Device Installation\Device Installation Restrictions*
 -   GP ADMX file name: *DeviceInstallation.admx*
@@ -457,7 +457,7 @@ If you disable or do not configure this policy setting, Windows can install and 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent installation of removable devices*
+-   GP Friendly name: *Prevent installation of removable devices*
 -   GP name: *DeviceInstall_Removable_Deny*
 -   GP path: *System\Device Installation\Device Installation Restrictions*
 -   GP ADMX file name: *DeviceInstallation.admx*
@@ -526,7 +526,7 @@ If you disable or do not configure this policy setting, Windows creates a system
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent creation of a system restore point during device activity that would normally prompt creation of a restore point*
+-   GP Friendly name: *Prevent creation of a system restore point during device activity that would normally prompt creation of a restore point*
 -   GP name: *DeviceInstall_SystemRestore*
 -   GP path: *System\Device Installation*
 -   GP ADMX file name: *DeviceInstallation.admx*
@@ -596,7 +596,7 @@ If you disable or do not configure this policy setting, only members of the Admi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow non-administrators to install drivers for these device setup classes*
+-   GP Friendly name: *Allow non-administrators to install drivers for these device setup classes*
 -   GP name: *DriverInstall_Classes_AllowUser*
 -   GP path: *System\Device Installation*
 -   GP ADMX file name: *DeviceInstallation.admx*

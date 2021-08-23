@@ -157,7 +157,7 @@ A reboot is required for this policy setting to take effect.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove Notifications and Action Center*
+-   GP Friendly name: *Remove Notifications and Action Center*
 -   GP name: *DisableNotificationCenter*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -230,7 +230,7 @@ A reboot is required for this policy setting to take effect.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable showing balloon notifications as toasts.*
+-   GP Friendly name: *Disable showing balloon notifications as toasts.*
 -   GP name: *EnableLegacyBalloonNotifications*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -299,7 +299,7 @@ If you disable or do not configure this policy setting, the Security and Mainten
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove the Security and Maintenance icon*
+-   GP Friendly name: *Remove the Security and Maintenance icon*
 -   GP name: *HideSCAHealth*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -368,7 +368,7 @@ If you disable or do not configure this policy setting, the networking icon is d
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove the networking icon*
+-   GP Friendly name: *Remove the networking icon*
 -   GP name: *HideSCANetwork*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -437,7 +437,7 @@ If you disable or do not configure this policy setting, the battery meter is dis
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove the battery meter*
+-   GP Friendly name: *Remove the battery meter*
 -   GP name: *HideSCAPower*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -506,7 +506,7 @@ If you disable or do not configure this policy setting, the volume control icon 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove the volume control icon*
+-   GP Friendly name: *Remove the volume control icon*
 -   GP name: *HideSCAVolume*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -575,7 +575,7 @@ If you disable do not configure this policy setting, feature advertisement ballo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off feature advertisement balloon notifications*
+-   GP Friendly name: *Turn off feature advertisement balloon notifications*
 -   GP name: *NoBalloonFeatureAdvertisements*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -644,7 +644,7 @@ If you disable or do not configure this policy setting, users can pin the Store 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow pinning Store app to the Taskbar*
+-   GP Friendly name: *Do not allow pinning Store app to the Taskbar*
 -   GP name: *NoPinningStoreToTaskbar*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -713,7 +713,7 @@ If you disable or do not configure this policy setting, users can pin files, fol
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow pinning items in Jump Lists*
+-   GP Friendly name: *Do not allow pinning items in Jump Lists*
 -   GP name: *NoPinningToDestinations*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -782,7 +782,7 @@ If you disable or do not configure this policy setting, users can change the pro
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow pinning programs to the Taskbar*
+-   GP Friendly name: *Do not allow pinning programs to the Taskbar*
 -   GP name: *NoPinningToTaskbar*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -856,7 +856,7 @@ If you disable or do not configure this policy setting, all files that the user 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not display or track items in Jump Lists from remote locations*
+-   GP Friendly name: *Do not display or track items in Jump Lists from remote locations*
 -   GP name: *NoRemoteDestinations*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -927,7 +927,7 @@ If you disable or do not configure this policy setting, newly added notification
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off automatic promotion of notification icons to the taskbar*
+-   GP Friendly name: *Turn off automatic promotion of notification icons to the taskbar*
 -   GP name: *NoSystraySystemPromotion*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -1000,7 +1000,7 @@ If you donâ€™t configure this policy setting, the default setting for the userâ€
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Show Windows Store apps on the taskbar*
+-   GP Friendly name: *Show Windows Store apps on the taskbar*
 -   GP name: *ShowWindowsStoreAppsOnTaskbar*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -1071,7 +1071,7 @@ If you disable or do not configure this policy setting, the user will be able to
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Lock all taskbar settings*
+-   GP Friendly name: *Lock all taskbar settings*
 -   GP name: *TaskbarLockAll*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -1142,7 +1142,7 @@ If you disable or do not configure this policy setting, the users and applicatio
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent users from adding or removing toolbars*
+-   GP Friendly name: *Prevent users from adding or removing toolbars*
 -   GP name: *TaskbarNoAddRemoveToolbar*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -1213,7 +1213,7 @@ If you disable or do not configure this policy setting, users are able to rearra
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent users from rearranging toolbars*
+-   GP Friendly name: *Prevent users from rearranging toolbars*
 -   GP name: *TaskbarNoDragToolbar*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -1284,7 +1284,7 @@ If you disable or do not configure this policy setting, users can show taskbars 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow taskbars on more than one display*
+-   GP Friendly name: *Do not allow taskbars on more than one display*
 -   GP name: *TaskbarNoMultimon*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -1355,7 +1355,7 @@ If you disable or do not configure this policy setting, notification balloons ar
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off all balloon notifications*
+-   GP Friendly name: *Turn off all balloon notifications*
 -   GP name: *TaskbarNoNotification*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -1426,7 +1426,7 @@ If you disable or do not configure this policy setting, users can pin programs s
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove pinned programs from the Taskbar*
+-   GP Friendly name: *Remove pinned programs from the Taskbar*
 -   GP name: *TaskbarNoPinnedList*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -1497,7 +1497,7 @@ If you disable or do not configure this policy setting, users are able to drag t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent users from moving taskbar to another screen dock location*
+-   GP Friendly name: *Prevent users from moving taskbar to another screen dock location*
 -   GP name: *TaskbarNoRedock*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -1568,7 +1568,7 @@ If you disable or do not configure this policy setting, users are able to resize
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent users from resizing the taskbar*
+-   GP Friendly name: *Prevent users from resizing the taskbar*
 -   GP name: *TaskbarNoResize*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
@@ -1639,7 +1639,7 @@ If you disable or do not configure this policy setting, the taskbar thumbnails a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off taskbar thumbnails*
+-   GP Friendly name: *Turn off taskbar thumbnails*
 -   GP name: *TaskbarNoThumbnail*
 -   GP path: *Start Menu and Taskbar*
 -   GP ADMX file name: *Taskbar.admx*
