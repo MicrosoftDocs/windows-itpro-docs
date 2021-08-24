@@ -1,5 +1,5 @@
 ---
-title: Use a reference device to create and maintain AppLocker policies (Windows 10)
+title: Use a reference device to create and maintain AppLocker policies (Windows)
 description: This topic for the IT professional describes the steps to create and maintain AppLocker policies by using a reference computer.
 ms.assetid: 10c3597f-f44c-4c8e-8fe5-105d4ac016a6
 ms.author: macapara
@@ -21,8 +21,13 @@ ms.technology: mde
 # Use a reference device to create and maintain AppLocker policies
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes the steps to create and maintain AppLocker policies by using a reference computer.
 

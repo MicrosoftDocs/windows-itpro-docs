@@ -1,5 +1,5 @@
 ---
-title: Understand AppLocker rules and enforcement setting inheritance in Group Policy (Windows 10)
+title: Understand AppLocker rules and enforcement setting inheritance in Group Policy (Windows)
 description: This topic for the IT professional describes how application control policies configured in AppLocker are applied through Group Policy.
 ms.assetid: c1c5a3d3-540a-4698-83b5-0dab5d27d871
 ms.reviewer: 
@@ -21,12 +21,17 @@ ms.technology: mde
 # Understand AppLocker rules and enforcement setting inheritance in Group Policy
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes how application control policies configured in AppLocker are applied through Group Policy.
 
-Rule enforcement is applied only to collections of rules, not individual rules. AppLocker divides the rules into the following collections: executable files, Windows Installer files, scripts, packaged apps and packaged app installers, and DLL files. The options for rule enforcement are **Not configured**, **Enforce rules**, or **Audit only**. Together, all AppLocker rule collections compose the application control policy, or AppLocker policy.
+Rule enforcement is applied only to collections of rules, not individual rules. AppLocker divides the rules into the following collections: executable files, Windows Installer files, scripts, packaged apps, and packaged app installers, and DLL files. The options for rule enforcement are **Not configured**, **Enforce rules**, or **Audit only**. Together, all AppLocker rule collections compose the application control policy, or AppLocker policy.
 
 Group Policy merges AppLocker policy in two ways:
 
