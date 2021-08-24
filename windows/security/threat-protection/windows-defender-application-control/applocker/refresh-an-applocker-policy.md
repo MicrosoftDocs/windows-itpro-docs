@@ -1,5 +1,5 @@
 ---
-title: Refresh an AppLocker policy (Windows 10)
+title: Refresh an AppLocker policy (Windows)
 description: This topic for IT professionals describes the steps to force an update for an AppLocker policy.
 ms.assetid: 3f24fcbc-3926-46b9-a1a2-dd036edab8a9
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Refresh an AppLocker policy
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes the steps to force an update for an AppLocker policy.
 
