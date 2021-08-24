@@ -25,7 +25,7 @@ As organizations become more global, and to support employees working from anywh
 
 In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
 
-- [Microsoft Endpoint Manager overview](mem/endpoint-manager-overview)
+- [Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview)
 - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
 - [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
 

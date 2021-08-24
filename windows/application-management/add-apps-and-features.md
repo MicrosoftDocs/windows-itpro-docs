@@ -16,7 +16,9 @@ ms.topic: article
 # How to add apps and features to Windows 10
 > Applies to: Windows 10
 
-Windows 10 includes a range of [applications](apps-in-windows-10.md), from [system apps](apps-in-windows-10.md#system-apps) that support the operating system (like Settings) to ["provisioned" apps](apps-in-windows-10.md#provisioned-windows-apps) (like Feedback Hub) that are installed the first time you run Windows. We also provide additional apps and features, called Features on Demand (like language packs or handwriting recognition), that you can install at any time. If you're working in a managed environment (like at work, where you have an administrator who manages your systems and resources), your admin can use [Windows Update to install Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). If you're working on your own device, you can add apps and features from the Settings app.
+Windows 10 includes a range of [applications](apps-in-windows-10.md), from [system apps](system-apps-windows-client-os.md) that support the operating system (like Settings) to ["provisioned" apps](provisioned-apps-windows-client-os.md) (like Feedback Hub) that are installed the first time you run Windows. We also provide additional apps and features, called Features on Demand (like language packs or handwriting recognition), that you can install at any time. If you're working in a managed environment (like at work, where you have an administrator who manages your systems and resources), your admin can use [Windows Update to install Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). 
+
+If you're working on your own device, you can add apps and features from the Settings app.
 
 Here's how you do that:
 

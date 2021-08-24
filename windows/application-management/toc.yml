@@ -4,8 +4,9 @@ items:
 - name: Application management
   items: 
     - name: Apps in Windows client OS
-      href: apps-in-windows-10.md
       items:
+        - name: Common app types
+          href: apps-in-windows-10.md
         - name: Provisioned apps in Windows client OS
           href: provisioned-apps-windows-client-os.md
         - name: System apps in Windows client OS
@@ -18,8 +19,6 @@ items:
       href: enterprise-background-activity-controls.md
     - name: Enable or block Windows Mixed Reality apps in the enterprise
       href: manage-windows-mixed-reality.md
-    - name: Repackage win32 apps in the MSIX format - DELETE
-      href: msix-app-packaging-tool.md
 - name: Application Virtualization (App-V)
   items: 
     - name: App-V for Windows 10 overview
