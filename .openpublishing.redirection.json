@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "windows/application-management/msix-app-packaging-tool.md",
+      "redirect_url": "/windows/application-management/apps-in-windows-10",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "browsers/edge/about-microsoft-edge.md",
       "redirect_url": "/previous-versions/windows/edge-legacy/about-microsoft-edge",
       "redirect_document_id": false

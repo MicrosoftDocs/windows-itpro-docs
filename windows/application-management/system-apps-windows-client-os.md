@@ -21,9 +21,9 @@ ms.topic: article
 
 On all Windows devices, the OS automatically installs some apps. These apps are called system apps, and are typically installed in the `C:\Windows\` folder. On your Windows devices, you can use Windows PowerShell to see the system apps automatically installed.
 
-This article lists the built-in system apps on some Windows OS versions, and lists the Windows Powershell command to get a list.
+This article lists the built-in system apps on some Windows OS versions, and lists the Windows PowerShell command to get a list.
 
-## Use Windows Powershell
+## Use Windows PowerShell
 
 To get a list of all the system apps, use Windows PowerShell:
 

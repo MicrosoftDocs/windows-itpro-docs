@@ -21,9 +21,9 @@ ms.topic: article
 
 Provisioned apps are included with the OS, and automatically installed when a user signs into a Windows device the first time. They are per-user apps, and typically installed in the `C:\Program Files\WindowsApps` folder. On your Windows devices, you can use Windows PowerShell to see the provisioned apps automatically installed.
 
-This article lists some of the built-in provisioned apps on the different Windows client OS versions, and lists the Windows Powershell command to get a list.
+This article lists some of the built-in provisioned apps on the different Windows client OS versions, and lists the Windows PowerShell command to get a list.
 
-## Use Windows Powershell
+## Use Windows PowerShell
 
 To get a list of all the provisioned apps, use Windows PowerShell:
 
@@ -382,7 +382,7 @@ Provisioned apps are also listed in **Settings** > **Apps and Features**.
 
     ---
 
-  - The Store app shouldn't be removed. If you remove the Store app, and want to reinstall it, you can restore your system from a backup, or reset your system. Instead of removing the Store app, use group policies to hide or disable it.
+  - The Store app shouldn't be removed. If you remove the Store app, and want to reinstall it, you must restore your system from a backup, or reset your system. Instead of removing the Store app, use group policies to hide or disable it.
 
 - [Xbox Live in-game experience](ms-windows-store://pdp/?PFN=Microsoft.Xbox.TCUI_8wekyb3d8bbwe) | Package name: Microsoft.Xbox.TCUI
   - Supported versions:
