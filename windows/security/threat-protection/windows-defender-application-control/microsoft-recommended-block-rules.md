@@ -4,6 +4,7 @@ description: View a list of recommended block rules, based on knowledge shared b
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,8 +15,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 04/09/2019
-ms.technology: mde
+ms.date: 08/23/2021
 ---
 
 # Microsoft recommended block rules
@@ -77,36 +77,33 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 
 <sup>2</sup> If you are using your reference system in a development context and use msbuild.exe to build managed applications, we recommend that you allow msbuild.exe in your code integrity policies. However, if your reference system is an end-user device that is not being used in a development context, we recommend that you block msbuild.exe.
 
-<sup>*</sup> Microsoft recognizes the efforts of those in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
+<sup>*</sup> Microsoft recognizes the efforts of people in the security community who help us protect customers through responsible vulnerability disclosure, and extends thanks to the following people:
 
 <br />
 
 |Name|Twitter|
 |---|---|
-|Casey Smith |@subTee| 
-|Matt Graeber | @mattifestation| 
-|Matt Nelson | @enigma0x3| 
-|Oddvar Moe |@Oddvarmoe|
-|Alex Ionescu | @aionescu|
-|Lee Christensen|@tifkin_|
-|Vladas Bulavas | Kaspersky Lab |
-|Lasse Trolle Borup | Langkjaer Cyber Defence |
-|Jimmy Bayne | @bohops |
-|Philip Tsukerman | @PhilipTsukerman |
-|Brock Mammen| |
+| `Alex Ionescu` | `@aionescu`|
+| `Brock Mammen`| |
+| `Casey Smith` | `@subTee` | 
+| `Jimmy Bayne` | `@bohops` |
+| `Lasse Trolle Borup` | `Langkjaer Cyber Defence` |
+| `Lee Christensen` | `@tifkin_` |
+| `Matt Graeber` | `@mattifestation` | 
+| `Matt Nelson` | `@enigma0x3` | 
+| `Oddvar Moe` | `@Oddvarmoe` |
+| `Philip Tsukerman` | `@PhilipTsukerman` |
+| `Vladas Bulavas` | `Kaspersky Lab` |
+| `William Easton` | `@Strawgate` |
 
 <br />
 
 > [!Note]
 > This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. 
 
-Certain software applications may allow extra code to run by design. 
-These types of applications should be blocked by your Windows Defender Application Control policy. 
-Also, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Application Control bypass, you should add Deny rules to your WDAC policies for that application’s previous, less secure versions. 
+Certain software applications may allow other code to run by design. Such applications should be blocked by your Windows Defender Application Control policy. In addition, when an application version is upgraded to fix a security vulnerability or potential Windows Defender Application Control bypass, you should add *deny* rules to your application control policies for that application’s previous, less secure versions.
 
-Microsoft recommends that you install the latest security updates. 
-The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Application Control. 
-These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
+Microsoft recommends that you install the latest security updates. The June 2017 Windows updates resolve several issues in PowerShell modules that allowed an attacker to bypass Windows Defender Application Control. These modules cannot be blocked by name or version, and therefore must be blocked by their corresponding hashes. 
 
 For October 2017, we are announcing an update to system.management.automation.dll in which we are revoking older versions by hash values, instead of version rules.
 
@@ -116,7 +113,7 @@ Microsoft recommends that you block the following Microsoft-signed applications 
 - msxml6.dll
 - jscript9.dll
 
-Pick the correct version of each .dll for the Windows release you plan to support, and remove the other versions. Ensure that you also uncomment them in the signing scenarios section.
+Select the correct version of each .dll for the Windows release you plan to support, and remove the other versions. Ensure that you also uncomment them in the signing scenarios section.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -152,6 +149,7 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <Deny ID="ID_DENY_BGINFO" FriendlyName="bginfo.exe" FileName="BGINFO.Exe" MinimumFileVersion="4.21.0.0"/> 
   <Deny ID="ID_DENY_CBD" FriendlyName="cdb.exe" FileName="CDB.Exe" MinimumFileVersion="65535.65535.65535.65535"/>
   <Deny ID="ID_DENY_CSI" FriendlyName="csi.exe" FileName="csi.Exe" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_CSCRIPT" FriendlyName="cscript.exe" FileName="cscript.exe" MinimumFileVersion = "65535.65535.65535.65535" />
   <Deny ID="ID_DENY_DBGHOST" FriendlyName="dbghost.exe" FileName="DBGHOST.Exe" MinimumFileVersion="2.3.0.0"/> 
   <Deny ID="ID_DENY_DBGSVC" FriendlyName="dbgsvc.exe" FileName="DBGSVC.Exe" MinimumFileVersion="2.3.0.0"/>
   <Deny ID="ID_DENY_DNX" FriendlyName="dnx.exe" FileName="dnx.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
@@ -181,6 +179,7 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />   
   <Deny ID="ID_DENY_WINDBG" FriendlyName="windbg.exe" FileName="windbg.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_WSCRIPT" FriendlyName="wscript.exe"  FileName="wscript.exe" MinimumFileVersion = "65535.65535.65535.65535" />
   <Deny ID="ID_DENY_WSL" FriendlyName="wsl.exe" FileName="wsl.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WSLCONFIG" FriendlyName="wslconfig.exe" FileName="wslconfig.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WSLHOST" FriendlyName="wslhost.exe" FileName="wslhost.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
@@ -892,6 +891,7 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <FileRuleRef RuleID="ID_DENY_BGINFO"/> 
   <FileRuleRef RuleID="ID_DENY_CBD"/> 
   <FileRuleRef RuleID="ID_DENY_CSI"/> 
+  <FileRuleRef RuleID="ID_DENY_CSCRIPT"/>
   <FileRuleRef RuleID="ID_DENY_DBGHOST"/> 
   <FileRuleRef RuleID="ID_DENY_DBGSVC"/> 
   <FileRuleRef RuleID="ID_DENY_DNX"/> 
@@ -920,6 +920,7 @@ Pick the correct version of each .dll for the Windows release you plan to suppor
   <FileRuleRef RuleID="ID_DENY_WFC" /> 
   <FileRuleRef RuleID="ID_DENY_WINDBG"/> 
   <FileRuleRef RuleID="ID_DENY_WMIC"/>
+  <FileRuleRef RuleID="ID_DENY_WSCRIPT"/>
   <FileRuleRef RuleID="ID_DENY_WSL"/> 
   <FileRuleRef RuleID="ID_DENY_WSLCONFIG"/> 
   <FileRuleRef RuleID="ID_DENY_WSLHOST"/> 
