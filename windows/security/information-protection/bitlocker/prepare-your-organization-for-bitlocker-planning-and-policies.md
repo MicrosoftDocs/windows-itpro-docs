@@ -62,7 +62,7 @@ On computers that do not have a TPM version 1.2 or higher, you can still use Bi
 | TPM | A hardware device used to help establish a secure root-of-trust. BitLocker only supports TPM version 1.2 or higher.|
 | PIN | A user-entered numeric key protector that can only be used in addition to the TPM.|
 | Enhanced PIN | A user-entered alphanumeric key protector that can only be used in addition to the TPM.|
-| Startup key | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or in conjunction with a TPM for added security.|
+| Startup key | An encryption key that can be stored on most removable media. This key protector can be used alone on non-TPM computers, or with a TPM for added security.|
 | Recovery password | A 48-digit number used to unlock a volume when it is in recovery mode. Numbers can often be typed on a regular keyboard, if the numbers on the normal keyboard are not responding you can always use the function keys (F1-F10) to input the numbers.|
 | Recovery key| An encryption key stored on removable media that can be used for recovering data encrypted on a BitLocker volume.|
 
@@ -88,7 +88,7 @@ However, TPM-only authentication method offers the lowest level of data protecti
 
 **What areas of your organization need a more secure level of data protection?**
 
-If there are areas of your organization where data residing on user computers is considered highly-sensitive, consider the best practice of deploying BitLocker with multifactor authentication on those systems. Requiring the user to input a PIN significantly increases the level of protection for the system. You can also use BitLocker Network Unlock to allow these computers to automatically unlock when connected to a trusted wired network that can provide the Network Unlock key.
+If there are areas of your organization where data residing on user computers is considered highly sensitive, consider the best practice of deploying BitLocker with multifactor authentication on those systems. Requiring the user to input a PIN significantly increases the level of protection for the system. You can also use BitLocker Network Unlock to allow these computers to automatically unlock when connected to a trusted wired network that can provide the Network Unlock key.
 
 **What multifactor authentication method does your organization prefer?**
 
@@ -127,7 +127,7 @@ Test your individual hardware platforms with the BitLocker system check option w
 To function correctly, BitLocker requires a specific disk configuration. BitLocker requires two partitions that meet the following requirements:
 
 - The operating system partition contains the operating system and its support files; it must be formatted with the NTFS file system
-- The system partition (or boot partition) contains the files that are needed to load Windows after the BIOS or UEFI firware has prepared the system hardware. BitLocker is not enabled on this partition. For BitLocker to work, the system partition must not be encrypted and must be on a different partition than the operating system. On UEFI platforms the system partition must be formatted with the FAT 32 file system. On BIOS platforms the system partition must be formatted with the NTFS file system. It should be at least 350 MB in size
+- The system partition (or boot partition) contains the files that are needed to load Windows after the BIOS or UEFI firmware has prepared the system hardware. BitLocker is not enabled on this partition. For BitLocker to work, the system partition must not be encrypted and must be on a different partition than the operating system. On UEFI platforms, the system partition must be formatted with the FAT 32 file system. On BIOS platforms the system partition must be formatted with the NTFS file system. It should be at least 350 MB in size
 
 Windows setup will automatically configure the disk drives of your computer to support BitLocker encryption.
 
@@ -139,7 +139,7 @@ Windows RE can also be used from boot media other than the local hard disk. If y
 
 In Windows Vista and Windows 7, BitLocker was provisioned post installation for system and data volumes through either the manage-bde command line interface or the Control Panel user interface. With newer operating systems, BitLocker can be easily provisioned before the operating system is installed. Preprovisioning requires that the computer have a TPM.
 
-To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker control panel applet or Windows Explorer. A status of "Waiting For Activation" with a yellow exclamation icon means that the drive was preprovisioned for BitLocker. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume is not protected and needs to have a secure key added to the volume before the drive is considered fully protected. Administrators can use the control panel options, manage-bde tool or WMI APIs to add an appropriate key protector and the volume status will be updated.
+To check the BitLocker status of a particular volume, administrators can look at the status of the drive in the BitLocker control panel applet or Windows Explorer. A status of "Waiting For Activation" with a yellow exclamation icon means that the drive was preprovisioned for BitLocker. This status means that there was only a clear protector used when encrypting the volume. In this case, the volume is not protected and needs to have a secure key added to the volume before the drive is considered fully protected. Administrators can use the control panel options, manage-bde tool, or WMI APIs to add an appropriate key protector and the volume status will be updated.
 
 When using the control panel options, administrators can choose to **Turn on BitLocker** and follow the steps in the wizard to add a protector, such as a PIN for an operating system volume (or a password if no TPM exists), or a password or smart card protector to a data volume. Then the drive security window is presented prior to changing the volume status.
 
