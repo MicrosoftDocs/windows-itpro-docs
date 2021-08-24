@@ -98,7 +98,7 @@ You can resolve this issue by verifying the configuration of the disk partitions
 
 #### Step 1: Verify the configuration of the disk partitions
 
-The procedures described in this section depend on the default disk partitions that Windows configures during installation. Windows 10 automatically creates a recovery partition that contains the Winre.wim file. The partition configuration resembles the following.
+The procedures described in this section depend on the default disk partitions that Windows configures during installation. Windows 11 and Windows 10 automatically create a recovery partition that contains the Winre.wim file. The partition configuration resembles the following.
 
 ![Default disk partitions, including the recovery partition](./images/4509194-en-1.png)
 
@@ -221,7 +221,7 @@ To verify the Secure Boot state, use the System Information app. To do this, fol
 
 ## <a id="issue-7"></a>Event ID 846, 778, and 851: Error 0x80072f9a
 
-In this case, you are deploying Intune policy to encrypt a Windows 10, version 1809 device and store the recovery password in Azure Active Directory (Azure AD). As part of the policy configuration, you have selected the **Allow standard users to enable encryption during Azure AD Join** option.
+In this case, you are deploying Intune policy to encrypt a Windows 11, Windows 10, version 1809 device, and store the recovery password in Azure Active Directory (Azure AD). As part of the policy configuration, you have selected the **Allow standard users to enable encryption during Azure AD Join** option.
 
 The policy deployment fails and generates the following events (visible in Event Viewer in the **Applications and Services Logs\\Microsoft\\Windows\\BitLocker API** folder):
 
@@ -250,7 +250,7 @@ These events refer to Error code 0x80072f9a.
 
 These events indicate that the signed-in user does not have permission to read the private key on the certificate that is generated as part of the provisioning and enrollment process. Therefore, the BitLocker MDM policy refresh fails.
 
-The issue affects Windows 10 version 1809.
+The issue affects Windows 11 and Windows 10 version 1809.
 
 ### Resolution
 
@@ -282,11 +282,11 @@ For information about how to use policy together with BitLocker and Intune, see 
 
 Intune offers the following enforcement types for BitLocker:
 
-- **Automatic** (Enforced when the device joins Azure AD during the provisioning process. This option is available in Windows 10 version 1703 and later.)
-- **Silent** (Endpoint protection policy. This option is available in Windows 10 version 1803 and later.)
-- **Interactive** (Endpoint policy for Windows versions that are older than Windows 10 version 1803.)
+- **Automatic** (Enforced when the device joins Azure AD during the provisioning process. This option is available in Windows 10 version 1703 and later, or Windows 11.)
+- **Silent** (Endpoint protection policy. This option is available in Windows 10 version 1803 and later, or Windows 11.)
+- **Interactive** (Endpoint policy for Windows versions that are older than Windows 10 version 1803, or Windows 11.)
 
-If your device runs Windows 10 version 1703 or later, supports Modern Standby (also known as Instant Go) and is HSTI-compliant, joining the device to Azure AD triggers automatic device encryption. A separate endpoint protection policy is not required to enforce device encryption.
+If your device runs Windows 10 version 1703 or later, or Windows 11, supports Modern Standby (also known as Instant Go) and is HSTI-compliant, joining the device to Azure AD triggers automatic device encryption. A separate endpoint protection policy is not required to enforce device encryption.
 
 If your device is HSTI-compliant but does not support Modern Standby, you have to configure an endpoint protection policy to enforce silent BitLocker Drive Encryption. The settings for this policy should resemble the following:
 
@@ -303,18 +303,18 @@ The OMA-URI references for these settings are as follows:
    Value: **0** (0 = Blocked, 1 = Allowed)  
 
 > [!NOTE]
-> Because of an update to the BitLocker Policy CSP, if the device uses Windows 10 version 1809 or later, you can use an endpoint protection policy to enforce silent BitLocker Device Encryption even if the device is not HSTI-compliant.
+> Because of an update to the BitLocker Policy CSP, if the device uses Windows 10 version 1809 or later, or Windows 11, you can use an endpoint protection policy to enforce silent BitLocker Device Encryption even if the device is not HSTI-compliant.
 
 > [!NOTE]
 > If the **Warning for other disk encryption** setting is set to **Not configured**, you have to manually start the BitLocker Drive Encryption wizard.  
 
-If the device does not support Modern Standby but is HSTI-compliant, and it uses a version of Windows that is earlier than Windows 10, version 1803, an endpoint protection policy that has the settings that are described in this article delivers the policy configuration to the device. However, Windows then notifies the user to manually enable BitLocker Drive Encryption. To do this, the user selects the notification. This action starts the BitLocker Drive Encryption wizard.  
+If the device does not support Modern Standby but is HSTI-compliant, and it uses a version of Windows that is earlier than Windows 10, version 1803, or Windows 11, an endpoint protection policy that has the settings that are described in this article delivers the policy configuration to the device. However, Windows then notifies the user to manually enable BitLocker Drive Encryption. To do this, the user selects the notification. This action starts the BitLocker Drive Encryption wizard.  
 
 The Intune 1901 release provides settings that you can use to configure automatic device encryption for Autopilot devices for standard users. Each device must meet the following requirements:
 
 - Be HSTI-compliant
 - Support Modern Standby
-- Use Windows 10 version 1803 or later
+- Use Windows 10 version 1803 or later, or Windows 11
 
 ![Intune policy setting](./images/4509188-en-1.png)
 

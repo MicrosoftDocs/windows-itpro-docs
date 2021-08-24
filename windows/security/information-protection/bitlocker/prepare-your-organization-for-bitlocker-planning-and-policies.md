@@ -22,7 +22,9 @@ ms.custom: bitlocker
 
 **Applies to**
 
-- Windows 10
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 This topic for the IT professional explains how can you plan your BitLocker deployment.
 
@@ -98,7 +100,7 @@ In your deployment plan, identify what TPM-based hardware platforms will be supp
 
 ### TPM 1.2 states and initialization
 
-For TPM 1.2, there are multiple possible states. Windows 10 automatically initializes the TPM, which brings it to an enabled, activated, and owned state. This is the state that BitLocker requires before it can use the TPM.
+For TPM 1.2, there are multiple possible states. Windows automatically initializes the TPM, which brings it to an enabled, activated, and owned state. This is the state that BitLocker requires before it can use the TPM.
 
 ### Endorsement keys
 
