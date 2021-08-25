@@ -11,7 +11,7 @@ items:
           href: provisioned-apps-windows-client-os.md
         - name: System apps in Windows client OS
           href: system-apps-windows-client-os.md
-    - name: Add apps and features in Windows 10
+    - name: Add features in Windows client
       href: add-apps-and-features.md
     - name: Sideload apps
       href: sideload-apps-in-windows-10.md

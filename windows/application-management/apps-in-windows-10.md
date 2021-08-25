@@ -74,7 +74,7 @@ There are different types of apps that can run on your Windows client devices. T
 
 When your apps are ready, you can add or deploy these apps to your Windows devices. This section lists some common options.
 
-- **Manually install**: On your devices, users can install apps from the Microsoft Store, from the internet, and from an organization shared drive. These apps, and more, are listed in **Settings** > **Apps and Features**.
+- **Manually install**: On your devices, users can install apps from the Microsoft Store, from the internet, and from an organization shared drive. These apps, and more, are listed in **Settings** > **Apps** > **Apps and Features**.
 
   If you want to prevent users from downloading apps on organization owned devices, use an MDM provider, like Microsoft Intune. For example, you can create a policy that allows or prevents users from sideloading apps, only allow the private store, and more. For more information on the features you can restrict, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10).
 
@@ -87,11 +87,13 @@ When your apps are ready, you can add or deploy these apps to your Windows devic
   - [Add apps to Microsoft Intune](/mem/intune/apps/apps-add)
   - [Application management in Configuration Manager](/mem/configmgr/apps/understand/introduction-to-application-management)
 
-- **Microsoft Store**: Using the Microsoft Store app, Windows users can download apps from the public store. And, they can download apps provided by your organization, which is called the "private store". If your organization creates its own apps, you can use **Windows Package Manager** to add apps to the private store.
+- **Microsoft Store**: Using the Microsoft Store app, Windows users can download apps from the public store. And, they can download apps provided by your organization, which is called the "private store". If your organization creates its own apps, you can use **[Windows Package Manager](/windows/package-manager)** to add apps to the private store.
 
   To help manage the Microsoft Store on your devices, you can use policies:
 
-  - On premises, you can use Administrative Templates in group policy to control access to the Microsoft Store app (`User Configuration\Administrative Templates\Windows Components\Store`).
+  - On premises, you can use Administrative Templates in Group Policy to control access to the Microsoft Store app:
+    - `User Configuration\Administrative Templates\Windows Components\Store`
+    - `Computer Configuration\Administrative Templates\Windows Components\Store`
   - Using Microsoft Intune, you can use [Administrative Templates](/mem/intune/configuration/administrative-templates-windows) (opens another Microsoft web site) or the [Settings Catalog](/mem/intune/configuration/settings-catalog) (opens another Microsoft web site) to control access to the Microsoft Store app.
 
   For more information, see:
@@ -135,9 +137,8 @@ When your apps are ready, you can add or deploy these apps to your Windows devic
 
   To help manage App-V on your devices, you can use policies:
 
-  - On premises, you can use Administrative Templates in group policy to deploy App-V policies (`Computer Configuration\Administrative Templates\System\App-V`).
+  - On premises, you can use Administrative Templates in Group Policy to deploy App-V policies (`Computer Configuration\Administrative Templates\System\App-V`).
   - Using Microsoft Intune, you can use [Administrative Templates](/mem/intune/configuration/administrative-templates-windows) (opens another Microsoft web site) or the [Settings Catalog](/mem/intune/configuration/settings-catalog) (opens another Microsoft web site) to deploy App-V policies.
 
   > [!TIP]
   > If you want to decrease your on-premises footprint, then **Azure Virtual desktop with MSIX app attach** might be the better deployment for your organization.
-

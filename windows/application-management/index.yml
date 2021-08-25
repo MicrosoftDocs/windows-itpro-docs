@@ -28,7 +28,7 @@ landingContent:
         links:
           - text: Understand apps in Windows client OS
             url: apps-in-windows-10.md
-          - text: How to add apps and features
+          - text: How to add features
             url: add-apps-and-features.md
           - text: Sideload LOB apps
             url: sideload-apps-in-windows-10.md
