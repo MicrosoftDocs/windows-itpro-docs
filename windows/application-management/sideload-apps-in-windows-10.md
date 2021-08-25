@@ -27,15 +27,17 @@ Sideloading apps is when you install apps that aren't from an official source, s
 
 When you sideload an app, you deploy a signed app package to a device. You maintain the signing, hosting, and deployment of these apps. Sideloading was also available with Windows 8 and Windows 8.1
 
-Starting with Windows 10, sideloading is different than in earlier versions of Windows:
+Starting with Windows 10, sideloading is different than earlier versions of Windows:
 
 - You can unlock a device for sideloading using an enterprise policy, or through the **Settings** app.
 - License keys aren't required.
 - Devices don't have to be joined to a domain.
 
-To allow these apps to run on your Windows devices, you might have to enable sideloading on your devices. This article shows you how to:
+To allow these apps to run on your Windows devices, you might have to enable sideloading on your devices.
 
-- **Turn on sideloading**: You can deploy using Group Policy or a mobile device management (MDM) provider. Or, you can use **Settings** apps to turn on sideloading.
+This article shows you how to:
+
+- **Turn on sideloading**: You can deploy using Group Policy or a mobile device management (MDM) provider. Or, you can use the **Settings** app to turn on sideloading.
 - **Install the app certificate**: Import the security certificate to the local device. This certificate tells the local device to trust the app.
 - **Install the app**: Use Windows PowerShell to install the app package.
 
@@ -75,7 +77,7 @@ If you use Group Policy, use the `Computer Configuration\Administrative Template
 - Allows development of Windows Store apps and installing them from an integrated development environment (IDE)
 - Allow all trusted apps to install
 
-By default, the OS might set these policies to **Not configured**, which means app sideloading is turned off. If you set these policies to **Enabled**, users can sideload apps.
+By default, the OS might set these policies to **Not configured**, which means app sideloading is turned off. If you set these policies to **Enabled**, then users can sideload apps.
 
 ### MDM
 
@@ -100,4 +102,6 @@ This step installs the app certificate to the local device. Installing the certi
 
 ## Step 3: Install the app
 
-From the folder with the `.appx` package, run the Windows PowerShell `Add-AppxPackage` command to install the `.appx` package. For more information on this command, see [Add-AppxPackage](/powershell/module/appx/add-appxpackage).
+From the folder with the `.appx` package, run the Windows PowerShell `Add-AppxPackage` command to install the `.appx` package.
+
+For more information on this command, see [Add-AppxPackage](/powershell/module/appx/add-appxpackage).
