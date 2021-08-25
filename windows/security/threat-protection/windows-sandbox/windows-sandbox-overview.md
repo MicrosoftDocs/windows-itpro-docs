@@ -1,6 +1,6 @@
 ---
 title: Windows Sandbox
-description: 
+description: Windows Sandbox overview
 ms.prod: m365-security
 audience: ITPro
 author: dansimp
