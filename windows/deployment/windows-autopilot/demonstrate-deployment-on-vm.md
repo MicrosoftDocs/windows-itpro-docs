@@ -47,14 +47,14 @@ These are the things you'll need to complete this lab:
 
 |    | Description |
 |:---|:---|
-|**Windows 10 installation media**|Windows 10 Professional or Enterprise (ISO file) for a supported version of Windows 10, semi-annual channel. If you do not already have an ISO to use, a link is provided to download an <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise" data-raw-source="[evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)">evaluation version of Windows 10 Enterprise</a>.|
+|**Windows 10 installation media**|Windows 10 Professional or Enterprise (ISO file) for a supported version of Windows 10, semi-annual channel. If you don't already have an ISO to use, a link is provided to download an <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise" data-raw-source="[evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)">evaluation version of Windows 10 Enterprise</a>.|
 |**Internet access**|If you're behind a firewall, see the detailed <a href="/mem/autopilot/software-requirements#networking-requirements" data-raw-source="[networking requirements](/mem/autopilot/software-requirements#networking-requirements)">networking requirements</a>. Otherwise, just ensure that you have a connection to the Internet.|
-|**Hyper-V or a physical device running Windows 10**|The guide assumes that you will use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.|
+|**Hyper-V or a physical device running Windows 10**|The guide assumes that you'll use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.|
 |**An account with Azure Active Directory (AD) Premium license**|This guide will describe how to obtain a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.|
 
 ## Procedures
 
-A summary of the sections and procedures in the lab is provided below. Follow each section in the order it's presented, skipping the sections that do not apply to you. Optional procedures are provided in the appendices.
+A summary of the sections and procedures in the lab is provided below. Follow each section in the order it's presented, skipping the sections that don't apply to you. Optional procedures are provided in the appendices.
 
 If you already have Hyper-V and a Windows 10 VM, you can skip directly to the [Capture the hardware ID](#capture-the-hardware-id) step. The VM must be running Windows 10, version 1903 or a later version.
 
@@ -273,7 +273,7 @@ Select the **WindowsAutopilot** VM in Hyper-V Manager and verify that you see **
 
 Follow these steps to run the PowerShell script:
 
-1. **On the client VM**: Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same regardless of whether you're using a VM or a physical device:
+1. **On the client VM**: Open an elevated Windows PowerShell prompt and run the following commands. These commands are the same whether you're using a VM or a physical device:
 
     ```powershell
     md c:\HWID
@@ -362,7 +362,7 @@ For this lab, you need an Azure AD Premium subscription. To tell if you have a P
 
 ![MDM and Intune](images/mdm-intune2.png)
 
-If the configuration blade shown above does not appear, it's likely that you don't have a **Premium** subscription.  Auto-enrollment is a feature only available in Azure AD Premium.
+If the configuration blade shown above doesn't appear, it's likely that you don't have a **Premium** subscription.  Auto-enrollment is a feature only available in Azure AD Premium.
 
 To convert your Intune trial account to a free Premium trial account, go to **Azure Active Directory** > **Licenses** > **All products** > **Try / Buy** and select **Free trial** for Azure AD Premium, or EMS E5.
 
@@ -618,7 +618,7 @@ You need to delete (or retire, or factory reset) the device from Intune before d
 > [!div class="mx-imgBorder"]
 > ![Delete device step 1](images/delete-device1.png)
 
-This action removes the device from Intune management, and it will disappear from **Intune > Devices > All devices**. But this does not yet deregister the device from Autopilot. So, the device should still appear under **Intune > Device Enrollment > Windows Enrollment > Windows Autopilot Deployment Program > Devices**.
+This action removes the device from Intune management, and it will disappear from **Intune > Devices > All devices**. But this doesn't yet deregister the device from Autopilot. So, the device should still appear under **Intune > Device Enrollment > Windows Enrollment > Windows Autopilot Deployment Program > Devices**.
 
 The **Intune > Devices > All Devices** list and the **Intune > Device Enrollment > Windows Enrollment > Windows Autopilot Deployment Program > Devices** list mean different things and are two completely separate datastores. The former (All devices) is the list of devices currently enrolled into Intune.
 
@@ -655,7 +655,7 @@ Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
 In this example, the computer supports SLAT and Hyper-V.
 
 > [!NOTE]
-> If one or more requirements are evaluated as **No** then the computer does not support installing Hyper-V. However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the **Virtualization Enabled In Firmware** setting from **No** to **Yes**. The location of this setting depends on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
+> If one or more requirements are evaluated as **No** then the computer doesn't support installing Hyper-V. However, if only the virtualization setting is incompatible, you might be able to enable virtualization in the BIOS and change the **Virtualization Enabled In Firmware** setting from **No** to **Yes**. The location of this setting depends on the manufacturer and BIOS version, but is typically found associated with the BIOS security settings.
 
 You can also identify Hyper-V support using [tools](/archive/blogs/taylorb/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v) provided by the processor manufacturer, the [msinfo32](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731397(v=ws.11)) tool, or you can download the [Coreinfo](/sysinternals/downloads/coreinfo) utility and run it, as shown in the following example:
 
