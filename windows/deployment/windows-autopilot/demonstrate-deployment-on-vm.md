@@ -733,7 +733,7 @@ Uninstall:  msiexec /x "{F188A506-C3C6-4411-BE3A-DA5BF1EA6737}" /q
 
 ![Add app step 5](images/app06.png)
 
-Simply using an install command like "notepad++.exe /S" will not actually install Notepad++; it will only launch the app.  To actually install the program, we need to use the .msi file instead.  Notepad++ doesn't actually have a .msi version of their program, but we got a .msi version from a [third party provider](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available).
+Simply using an install command like "notepad++.exe /S" doesn't actually install Notepad++; it only launches the app.  To install the program, you need to use the .msi file instead. Notepad++ doesn't have a .msi version of their program, but there's a .msi version from a [third party provider](https://www.hass.de/content/notepad-msi-package-enterprise-deployment-available).
 
 Select **OK** to save your input and activate the **Requirements** blade.
 
@@ -742,12 +742,12 @@ On the **Requirements Configuration** blade, specify the **OS architecture** and
 > [!div class="mx-imgBorder"]
 > ![Add app step 6](images/app07.png)
 
-Next, configure the **Detection rules**.  For our purposes, we will select manual format:
+Next, configure the **Detection rules**.  For the purpose of this lab, select manual format:
 
 > [!div class="mx-imgBorder"]
 > ![Add app step 7](images/app08.png)
 
-Select **Add** to define the rule properties.  For **Rule type**, select **MSI**, which will automatically import the right MSI product code into the rule:
+Select **Add** to define the rule properties.  For **Rule type**, select **MSI**, which automatically imports the correct MSI product code into the rule:
 
 ![Add app step 8](images/app09.png)
 
@@ -760,16 +760,16 @@ Select **OK** twice to save, as you back out to the main **Add app** blade again
 
 Select **OK** to exit.
 
-You may skip configuring the final **Scope (Tags)** blade.
+You can skip configuring the final **Scope (Tags)** blade.
 
 Select the **Add** button to finalize and save your app package.
 
-Once the indicator message says the addition has completed.
+Wait for indicator message that says the addition has completed.
 
 > [!div class="mx-imgBorder"]
 > ![Add app step 10](images/app11.png)
 
-You will be able to find your app in your app list:
+Find your app in your app list:
 
 > [!div class="mx-imgBorder"]
 > ![Add app step 11](images/app12.png)
@@ -777,16 +777,16 @@ You will be able to find your app in your app list:
 #### Assign the app to your Intune profile
 
 > [!NOTE]
-> The following steps only work if you previously [created a GROUP in Intune and assigned a profile to it](#create-a-device-group).  If you have not done that, please return to the main part of the lab and complete those steps before returning here.
+> The following steps only work if you previously [created a GROUP in Intune and assigned a profile to it](#create-a-device-group).  If you haven't done that, return to the main part of the lab and complete those steps before returning here.
 
 In the **Intune > Client Apps > Apps** pane, select the app package you already created to reveal its properties blade.  Then select **Assignments** from the menu:
 
 > [!div class="mx-imgBorder"]
 > ![Assign app step 1](images/app13.png)
 
-Select **Add Group** to open the **Add group** pane that is related to the app.
+Select **Add Group** to open the **Add group** pane that's related to the app.
 
-For our purposes, select **Required** from the **Assignment type** dropdown menu.
+For the purpose of this lab, select **Required** from the **Assignment type** dropdown menu.
 
 > [!NOTE]
 > **Available for enrolled devices** means users install the app from the Company Portal app or Company Portal website.
@@ -817,7 +817,7 @@ For more information on adding apps to Intune, see [Intune Standalone - Win32 ap
 
 #### Create app in Intune
 
-Log into the Azure portal and select **Intune**.
+Log in to the Azure portal and select **Intune**.
 
 Go to **Intune > Clients apps > Apps**, and then select the **Add** button to create a new app package.
 
@@ -827,14 +827,14 @@ Under **App Type**, select **Office 365 Suite > Windows 10**:
 
 ![Create app step 2](images/app18.png)
 
-Under the **Configure App Suite** pane, select the Office apps you want to install.  For the purposes of this lab we have only selected Excel:
+Under the **Configure App Suite** pane, select the Office apps you want to install.  For the purposes of this lab, only select Excel:
 
 > [!div class="mx-imgBorder"]
 > ![Create app step 3](images/app19.png)
 
 Select **OK**.
 
-In the **App Suite Information** pane, enter a <i>unique</i> suite name, and a suitable description.
+In the **App Suite Information** pane, enter a *unique* suite name, and a suitable description.
 
 Enter the name of the app suite as it's displayed in the company portal. Make sure that all suite names that you use are unique. If the same app suite name exists twice, only one of the apps is displayed to users in the company portal.
 
@@ -843,7 +843,7 @@ Enter the name of the app suite as it's displayed in the company portal. Make su
 
 Select **OK**.
 
-In the **App Suite Settings** pane, select **Monthly** for the **Update channel** (any selection would be fine for the purposes of this lab).  Also select **Yes** for **Automatically accept the app end user license agreement**:
+In the **App Suite Settings** pane, select **Monthly** for the **Update channel** (any selection is okay for the purposes of this lab).  Also select **Yes** for **Automatically accept the app end user license agreement**:
 
 ![Create app step 5](images/app21.png)
 
@@ -852,14 +852,14 @@ Select **OK** and, then select **Add**.
 #### Assign the app to your Intune profile
 
 > [!NOTE]
-> The following steps only work if you previously [created a GROUP in Intune and assigned a profile to it](#create-a-device-group).  If you have not done that, please return to the main part of the lab and complete those steps before returning here.
+> The following steps only work if you previously [created a GROUP in Intune and assigned a profile to it](#create-a-device-group).  If you haven't done that, return to the main part of the lab and complete those steps before returning here.
 
 In the **Intune > Client Apps > Apps** pane, select the Office package you already created to reveal its properties blade.  Then select **Assignments** from the menu:
 
 > [!div class="mx-imgBorder"]
 > ![Create app step 6](images/app22.png)
 
-Select **Add Group** to open the **Add group** pane that is related to the app.
+Select **Add Group** to open the **Add group** pane that's related to the app.
 
 For our purposes, select **Required** from the **Assignment type** dropdown menu.
 
@@ -886,23 +886,23 @@ At this point, you have completed steps to add Office to Intune.
 
 For more information on adding Office apps to Intune, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](/intune/apps-add-office365).
 
-If you installed both the win32 app (Notepad++) and Office (just Excel) per the instructions in this lab, your VM will show them in the apps list, although it could take several minutes to populate:
+If you installed both the win32 app (Notepad++) and Office (just Excel) per the instructions in this lab, your VM will show them in the apps list. It might take several minutes to populate.
 
 ![Create app step 10](images/app26.png)
 
 ## Glossary
 
-<table border="1">
-<tr><td>OEM</td><td>Original Equipment Manufacturer</td></tr>
-<tr><td>CSV</td><td>Comma Separated Values</td></tr>
-<tr><td>MPC</td><td>Microsoft Partner Center</td></tr>
-<tr><td>CSP</td><td>Cloud Solution Provider</td></tr>
-<tr><td>MSfB</td><td>Microsoft Store for Business</td></tr>
-<tr><td>AAD</td><td>Azure Active Directory</td></tr>
-<tr><td>4K HH</td><td>4K Hardware Hash</td></tr>
-<tr><td>CBR</td><td>Computer Build Report</td></tr>
-<tr><td>EC</td><td>Enterprise Commerce (server)</td></tr>
-<tr><td>DDS</td><td>Device Directory Service</td></tr>
-<tr><td>OOBE</td><td>Out of the Box Experience</td></tr>
-<tr><td>VM</td><td>Virtual Machine</td></tr>
-</table>
+|    | Description |
+|:---|:---|
+|**OEM** | Original Equipment Manufacturer |
+|**CSV** | Comma Separated Values |
+|**MPC** | Microsoft Partner Center |
+|**CSP** | Cloud Solution Provider |
+|**MSfB** | Microsoft Store for Business |
+|**Azure AD** | Azure Active Directory |
+|**4K HH** | 4K Hardware Hash |
+|**CBR** | Computer Build Report |
+|**EC** | Enterprise Commerce (server) |
+|**DDS** | Device Directory Service |
+|**OOBE** | Out of the Box Experience |
+|**VM** |Virtual Machine |
