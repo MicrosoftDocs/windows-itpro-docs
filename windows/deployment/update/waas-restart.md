@@ -163,6 +163,7 @@ In the Group Policy editor, you will see a number of policy settings that pertai
 | Delay Restart for scheduled installations | ![no.](images/crossmark.png) |   |
 | Reschedule Automatic Updates scheduled installations | ![no.](images/crossmark.png) |   |
 
+
 >[!NOTE]
 >You can only choose one path for restart behavior.
 >If you set conflicting restart policies, the actual restart behavior may not be what you expected.

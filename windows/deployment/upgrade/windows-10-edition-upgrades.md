@@ -20,7 +20,6 @@ ms.topic: article
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 With Windows 10, you can quickly upgrade from one edition of Windows 10 to another, provided the upgrade path is supported. For information on what edition of Windows 10 is right for you, see [Compare Windows 10 Editions](https://go.microsoft.com/fwlink/p/?LinkID=690882). For a comprehensive list of all possible upgrade paths to Windows 10, see [Windows 10 upgrade paths](windows-10-upgrade-paths.md). Downgrading the edition of Windows is discussed in the [License expiration](#license-expiration) section on this page.
 
@@ -77,14 +76,11 @@ X = unsupported <BR>
 ## Upgrade using mobile device management (MDM)
 - To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp).
 
-- To upgrade mobile editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithLicense** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp).
 
 ## Upgrade using a provisioning package
-Use Windows Configuration Designer to create a provisioning package to upgrade a desktop edition or mobile edition of Windows 10. To get started, [install Windows Configuration Designer from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22).
+Use Windows Configuration Designer to create a provisioning package to upgrade a desktop edition. To get started, [install Windows Configuration Designer from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22).
 
 - To create a provisioning package for upgrading desktop editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithProductKey** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
-
-- To create a provisioning package for upgrading mobile editions of Windows 10, go to **Runtime settings &gt; EditionUpgrade &gt; UpgradeEditionWithLicense** in the **Available customizations** panel in Windows ICD and enter the product key for the upgraded edition.
 
 For more info about Windows Configuration Designer, see these topics:
 - [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package)
@@ -169,7 +165,7 @@ You can move directly from Enterprise to any valid destination edition. In this 
         <th>Enterprise</th>
     </tr>
     <tr>
-        <th rowspan="9" nowrap="nowrap" valign="middle">Starting edition</th>
+        <th rowspan="9" valign="middle">Starting edition</th>
     </tr>
     <tr>
         <td>Home</td>

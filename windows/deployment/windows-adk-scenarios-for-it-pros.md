@@ -73,7 +73,7 @@ For a list of settings you can change, see [Unattended Windows Setup Reference](
 
 ### Create a Windows image using Windows ICD
 
-Introduced in Windows 10, [Windows Imaging and Configuration Designer (ICD)](/windows/configuration/provisioning-packages/provisioning-install-icd) streamlines the customizing and provisioning of a Windows 10 for desktop editions (Home, Pro, Enterprise, and Education), Windows 10 Mobile, or Windows 10 IoT Core (IoT Core) image.
+Introduced in Windows 10, [Windows Imaging and Configuration Designer (ICD)](/windows/configuration/provisioning-packages/provisioning-install-icd) streamlines the customizing and provisioning of a Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) or Windows 10 IoT Core (IoT Core) image.
 
 Here are some things you can do with Windows ICD:
 
