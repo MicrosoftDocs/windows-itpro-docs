@@ -25,7 +25,7 @@ ms.topic: article
 >This is a 300 level topic (moderate advanced).<br>
 >See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.<br>
 
-&nbsp;[![Download SetupDiag](../images/download.png)](https://go.microsoft.com/fwlink/?linkid=870142)
+&nbsp;[![Download SetupDiag.](../images/download.png)](https://go.microsoft.com/fwlink/?linkid=870142)
 
 ## About SetupDiag
 
@@ -567,7 +567,7 @@ Refer to "https://docs.microsoft.com/windows/desktop/Debug/system-error-codes" f
 
 ## Sample registry key
 
-![Example of Addreg](./../images/addreg.png)
+![Example of Addreg.](./../images/addreg.png)
 
 ## Related topics
 

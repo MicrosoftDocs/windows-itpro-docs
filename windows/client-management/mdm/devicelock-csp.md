@@ -32,7 +32,7 @@ The DevicePasswordEnabled setting must be set to 0 (device password is enabled) 
 
 The following image shows the DeviceLock configuration service provider in tree format.
 
-![devicelock csp](images/provisioning-csp-devicelock.png)
+![devicelock csp.](images/provisioning-csp-devicelock.png)
 
 <a href="" id="provider"></a>**Provider**  
 Required. An interior node to group all policy providers. Scope is permanent. Supported operation is Get.

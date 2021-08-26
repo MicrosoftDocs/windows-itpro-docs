@@ -23,7 +23,7 @@ Virtual private networks (VPNs) are point-to-point connections across a private 
 
 There are many options for VPN clients. In Windows 10, the built-in plug-in and the Universal Windows Platform (UWP) VPN plug-in platform are built on top of the Windows VPN platform. This guide focuses on the Windows VPN platform clients and the features that can be configured. 
 
-![VPN connection types](images/vpn-connection.png)
+![VPN connection types.](images/vpn-connection.png)
 
 ## Built-in VPN client
 
@@ -67,12 +67,12 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 The following image shows connection options in a VPN Profile configuration policy using Microsoft Intune:
 
 > [!div class="mx-imgBorder"]
-> ![Available connection types](images/vpn-connection-intune.png)
+> ![Available connection types.](images/vpn-connection-intune.png)
      
 In Intune, you can also include custom XML for third-party plug-in profiles:
 
 > [!div class="mx-imgBorder"]
-> ![Custom XML](images/vpn-custom-xml-intune.png)
+> ![Custom XML.](images/vpn-custom-xml-intune.png)
 
 
 ## Related topics

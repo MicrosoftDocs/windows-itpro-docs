@@ -196,7 +196,7 @@ Auditpol /set /category:"System" /SubCategory:"Filtering Platform Connection" /s
 
 Sample drop audit with `filterOrigin` as `Quarantine Default`.
 
-![Quarantine default](images/quarantine-default1.png)
+![Quarantine default.](images/quarantine-default1.png)
 
 Once the drop’s filter origin has been identified as the quarantine default inbound block filter, the interface should be further investigated. To find the relevant interface, use the `InterfaceIndex` value from the `netEvent` or event audit in the following PowerShell command to generate more information about the interface:
 
@@ -205,7 +205,7 @@ Get-NetIPInterface –InterfaceIndex <Interface Index>
 Get-NetIPInterface –InterfaceIndex 5
 ```
 
-![Quarantine Interfaceindex](images/quarantine-interfaceindex1.png)
+![Quarantine Interfaceindex.](images/quarantine-interfaceindex1.png)
 
 Using the interface name, event viewer can be searched for any interface related changes. 
 

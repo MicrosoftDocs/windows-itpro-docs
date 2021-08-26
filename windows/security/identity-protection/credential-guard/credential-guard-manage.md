@@ -45,7 +45,7 @@ You can use Group Policy to enable Windows Defender Credential Guard. This will 
 
 5.  In the **Secure Launch Configuration** box, choose **Not Configured**, **Enabled** or **Disabled**. Check [this article](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md) for more details.
 
-    ![Windows Defender Credential Guard Group Policy setting](images/credguard-gp-2.png)
+    ![Windows Defender Credential Guard Group Policy setting.](images/credguard-gp-2.png)
 
 6.  Close the Group Policy Management Console.
 
@@ -168,7 +168,7 @@ You can view System Information to check that Windows Defender Credential Guard 
     Here's an example:
 
     > [!div class="mx-imgBorder"]
-    > ![System Information](images/credguard-msinfo32.png)
+    > ![System Information.](images/credguard-msinfo32.png)
 
 You can also check that Windows Defender Credential Guard is running by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
 
