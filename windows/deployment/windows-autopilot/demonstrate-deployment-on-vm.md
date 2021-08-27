@@ -48,7 +48,7 @@ These are the things you'll need to complete this lab:
 |    | Description |
 |:---|:---|
 |**Windows 10 installation media**|Windows 10 Professional or Enterprise (ISO file) for a supported version of Windows 10, semi-annual channel. If you don't already have an ISO to use, a link is provided to download an <a href="https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise" data-raw-source="[evaluation version of Windows 10 Enterprise](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)">evaluation version of Windows 10 Enterprise</a>.|
-|**Internet access**|If you're behind a firewall, see the detailed <a href="/mem/autopilot/software-requirements#networking-requirements" data-raw-source="[networking requirements](/mem/autopilot/software-requirements#networking-requirements)">networking requirements</a>. Otherwise, just ensure that you have a connection to the Internet.|
+|**Internet access**|If you're behind a firewall, see the detailed <a href="/mem/autopilot/software-requirements#networking-requirements" data-raw-source="[networking requirements](/mem/autopilot/software-requirements#networking-requirements)">networking requirements</a>. Otherwise, just ensure that you have a connection to the internet.|
 |**Hyper-V or a physical device running Windows 10**|The guide assumes that you'll use a Hyper-V VM, and provides instructions to install and configure Hyper-V if needed. To use a physical device, skip the steps to install and configure Hyper-V.|
 |**An account with Azure Active Directory (AD) Premium license**|This guide will describe how to obtain a free 30-day trial Azure AD Premium subscription that can be used to complete the lab.|
 
@@ -175,7 +175,7 @@ All VM data will be created under the current path in your PowerShell prompt. Co
 > [!IMPORTANT]
 > **VM switch**: a VM switch is how Hyper-V connects VMs to a network.
 >
->- If you previously enabled Hyper-V and your Internet-connected network interface is already bound to a VM switch, then the PowerShell commands below will fail. In this case, you can either delete the existing VM switch (so that the commands below can create one), or you can reuse this VM switch by skipping the first command below and either modifying the second command to replace the switch name **AutopilotExternal** with the name of your switch, or by renaming your existing switch to "AutopilotExternal."
+>- If you previously enabled Hyper-V and your internet-connected network interface is already bound to a VM switch, then the PowerShell commands below will fail. In this case, you can either delete the existing VM switch (so that the commands below can create one), or you can reuse this VM switch by skipping the first command below and either modifying the second command to replace the switch name **AutopilotExternal** with the name of your switch, or by renaming your existing switch to "AutopilotExternal."
 >- If you have never created an external VM switch before, then just run the commands below.
 >- If you're not sure if you already have an External VM switch, enter **get-vmswitch** at a Windows PowerShell prompt to display a currently list of the VM switches that are provisioned in Hyper-V. If one of them is of SwitchType **External**, then you already have a VM switch configured on the server that's used to connect to the internet. In this case, you need to skip the first command below and modify the others to use the name of your VM switch instead of the name "AutopilotExternal" (or change the name of your switch).
 
@@ -396,7 +396,7 @@ For the purposes of this demo, select **All** under the **MDM user scope** and s
 
 ## Register your VM
 
-Your VM (or device) can be registered either via Intune or Microsoft Store for Business (MSfB).  Both processes are shown here, but *only pick one* for the purposes of this lab. It's highly recommend to use Intune rather than MSfB.
+Your VM (or device) can be registered either via Intune or Microsoft Store for Business (MSfB).  Both processes are shown here, but *only pick one* for the purposes of this lab. It's highly recommended that you use Intune rather than MSfB.
 
 ### Autopilot registration using Intune
 
