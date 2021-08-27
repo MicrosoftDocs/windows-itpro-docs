@@ -37,7 +37,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 
 ## Azure AD joined provisioning in a Managed environment
-![Azure AD joined provisioning in a Managed environment](images/howitworks/prov-aadj-managed.png)
+![Azure AD joined provisioning in a Managed environment.](images/howitworks/prov-aadj-managed.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -48,7 +48,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 [Return to top](#windows-hello-for-business-provisioning)
 ## Azure AD joined provisioning in a Federated environment
-![Azure AD joined provisioning in a Managed environment](images/howitworks/prov-aadj-federated.png)
+![Azure AD joined provisioning in a Managed environment.](images/howitworks/prov-aadj-federated.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -58,7 +58,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 [Return to top](#windows-hello-for-business-provisioning)
 ## Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment
-![Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment](images/howitworks/prov-haadj-keytrust-managed.png)
+![Hybrid Azure AD joined provisioning in a Key Trust deployment in a Managed environment.](images/howitworks/prov-haadj-keytrust-managed.png)
 
 
 | Phase | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
@@ -76,7 +76,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 [Return to top](#windows-hello-for-business-provisioning)
 ## Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment
-![Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment](images/howitworks/prov-haadj-instant-certtrust-federated.png)
+![Hybrid Azure AD joined provisioning in a synchronous Certificate Trust deployment in a Federated environment.](images/howitworks/prov-haadj-instant-certtrust-federated.png)
 
 
 | Phase | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
@@ -94,7 +94,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 [Return to top](#windows-hello-for-business-provisioning)
 ## Domain joined provisioning in an On-premises Key Trust deployment
-![Domain joined provisioning in an On-premises Key Trust deployment](images/howitworks/prov-onprem-keytrust.png)
+![Domain joined provisioning in an On-premises Key Trust deployment.](images/howitworks/prov-onprem-keytrust.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -105,7 +105,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 [Return to top](#windows-hello-for-business-provisioning)
 ## Domain joined provisioning in an On-premises Certificate Trust deployment
-![Domain joined provisioning in an On-premises Certificate Trust deployment](images/howitworks/prov-onprem-certtrust.png)
+![Domain joined provisioning in an On-premises Certificate Trust deployment.](images/howitworks/prov-onprem-certtrust.png)
 
 | Phase  | Description  |
 | :----: | :----------- |

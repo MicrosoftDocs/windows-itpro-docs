@@ -39,7 +39,7 @@ To deploy and manage a WDAC policy with Group Policy:
    > [!NOTE]
    > You can use any OU name. Also, security group filtering is an option when you consider different ways of combining WDAC policies (or keeping them separate), as discussed in [Plan for Windows Defender Application Control policy management](plan-windows-defender-application-control-management.md).
 
-   ![Group Policy Management, create a GPO](images/dg-fig24-creategpo.png)
+   ![Group Policy Management, create a GPO.](images/dg-fig24-creategpo.png)
 
 3. Name the new GPO. You can choose any name.
 
@@ -47,7 +47,7 @@ To deploy and manage a WDAC policy with Group Policy:
 
 5. In the selected GPO, navigate to Computer Configuration\\Administrative Templates\\System\\Device Guard. Right-click **Deploy Windows Defender Application Control** and then click **Edit**.
 
-    ![Edit the Group Policy for Windows Defender Application Control](images/wdac-edit-gp.png)
+    ![Edit the Group Policy for Windows Defender Application Control.](images/wdac-edit-gp.png)
 
 6. In the **Deploy Windows Defender Application Control** dialog box, select the **Enabled** option, and then specify the WDAC policy deployment path.
 
@@ -56,7 +56,7 @@ To deploy and manage a WDAC policy with Group Policy:
     > [!NOTE]
     > This policy file does not need to be copied to every computer. You can instead copy the WDAC policies to a file share to which all computer accounts have access. Any policy selected here is converted to SIPolicy.p7b when it is deployed to the individual client computers.
 
-    ![Group Policy called Deploy Windows Defender Application Control](images/dg-fig26-enablecode.png)
+    ![Group Policy called Deploy Windows Defender Application Control.](images/dg-fig26-enablecode.png)
 
     > [!NOTE]
     > You may have noticed that the GPO setting references a .p7b file and this example uses a .bin file for the policy. Regardless of the type of policy you deploy (.bin, .p7b, or .p7), they are all converted to SIPolicy.p7b when dropped on the client computer running Windows 10. Give your WDAC policies friendly names and allow the system to convert the policy names for you to ensure that the policies are easily distinguishable when viewed in a share or any other central repository.

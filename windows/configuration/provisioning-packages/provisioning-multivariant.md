@@ -35,7 +35,7 @@ In the XML file, you provide an **Id**, or friendly name, for each **Target**. E
 
 A **Target** can have more than one **TargetState**, and a **TargetState** can have more than one **Condition**. 
 
-![Target with multiple target states and conditions](../images/multi-target.png)
+![Target with multiple target states and conditions.](../images/multi-target.png)
 
 The following table describes the logic for the target definition.
 

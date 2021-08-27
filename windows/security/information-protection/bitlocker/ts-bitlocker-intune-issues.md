@@ -20,7 +20,7 @@ ms.custom: bitlocker
 
 This article helps you troubleshoot issues that you may experience if you use Microsoft Intune policy to manage silent BitLocker encryption on devices. The Intune portal indicates whether BitLocker has failed to encrypt one or more managed devices.
 
-![The BitLocker status indictors on the Intune portal](./images/4509189-en-1.png)
+![The BitLocker status indictors on the Intune portal.](./images/4509189-en-1.png)
 
 To start narrowing down the cause of the problem, review the event logs as described in [Troubleshoot BitLocker](troubleshoot-bitlocker.md). Concentrate on the Management and Operations logs in the **Applications and Services logs\\Microsoft\\Windows\\BitLocker-API** folder. The following sections provide more information about how to resolve the indicated events and error messages:
 
@@ -43,7 +43,7 @@ For information about how to verify that Intune policies are enforcing BitLocker
 
 Event ID 853 can carry different error messages, depending on the context. In this case, the Event ID 853 error message indicates that the device does not appear to have a TPM. The event information resembles the following:
 
-![Details of event ID 853 (TPM is not available, cannot find TPM)](./images/4509190-en-1.png)
+![Details of event ID 853 (TPM is not available, cannot find TPM).](./images/4509190-en-1.png)
 
 ### Cause
 
@@ -64,7 +64,7 @@ For more information, see [Troubleshoot the TPM](../tpm/initialize-and-configure
 
 In this case, you see event ID 853, and the error message in the event indicates that bootable media is available to the device. The event information resembles the following.
 
-![Details of event ID 853 (TPM is not available, bootable media found)](./images/4509191-en-1.png)
+![Details of event ID 853 (TPM is not available, bootable media found).](./images/4509191-en-1.png)
 
 ### Cause
 
@@ -100,7 +100,7 @@ You can resolve this issue by verifying the configuration of the disk partitions
 
 The procedures described in this section depend on the default disk partitions that Windows configures during installation. Windows 10 automatically creates a recovery partition that contains the Winre.wim file. The partition configuration resembles the following.
 
-![Default disk partitions, including the recovery partition](./images/4509194-en-1.png)
+![Default disk partitions, including the recovery partition.](./images/4509194-en-1.png)
 
 To verify the configuration of the disk partitions, open an elevated Command Prompt window, and run the following commands:
 
@@ -108,11 +108,11 @@ To verify the configuration of the disk partitions, open an elevated Command Pro
 diskpart 
 list volume
 ```
-![Output of the list volume command in the Diskpart app](./images/4509195-en-1.png)
+![Output of the list volume command in the Diskpart app.](./images/4509195-en-1.png)
 
 If the status of any of the volumes is not healthy or if the recovery partition is missing, you may have to reinstall Windows. Before you do this, check the configuration of the Windows image that you are using for provisioning. Make sure that the image uses the correct disk configuration. The image configuration should resemble the following (this example is from Microsoft Endpoint Configuration Manager).
 
-![Windows image configuration in Microsoft Endpoint Configuration Manager](./images/configmgr-imageconfig.jpg)
+![Windows image configuration in Microsoft Endpoint Configuration Manager.](./images/configmgr-imageconfig.jpg)
 
 #### Step 2: Verify the status of WinRE
 
@@ -123,7 +123,7 @@ reagentc /info
 ```
 The output of this command resembles the following.
 
-![Output of the reagentc /info command](./images/4509193-en-1.png)
+![Output of the reagentc /info command.](./images/4509193-en-1.png)
 
 If the **Windows RE status** is not **Enabled**, run the following command to enable it:
 
@@ -141,7 +141,7 @@ bcdedit /enum all
 
 The output of this command resembles the following.
 
-![Output of the bcdedit /enum all command](./images/4509196-en-1.png)
+![Output of the bcdedit /enum all command.](./images/4509196-en-1.png)
 
 In the output, locate the **Windows Boot Loader** section that includes the line **identifier={current}**. In that section, locate the **recoverysequence** attribute. The value of this attribute should be a GUID value, not a string of zeros.
 
@@ -163,7 +163,7 @@ To verify the BIOS mode, use the System Information app. To do this, follow thes
 
 1. Select **Start**, and enter **msinfo32** in the **Search** box.
 1. Verify that the **BIOS Mode** setting is **UEFI** and not **Legacy**.  
-   ![System Information app, showing the BIOS Mode setting](./images/4509198-en-1.png)
+   ![System Information app, showing the BIOS Mode setting.](./images/4509198-en-1.png)
 1. If the **BIOS Mode** setting is **Legacy**, you have to switch the BIOS into **UEFI** or **EFI** mode. The steps for doing this are specific to the device.
    > [!NOTE]
    > If the device supports only Legacy mode, you cannot use Intune to manage BitLocker Device Encryption on the device.
@@ -192,11 +192,11 @@ Manage-bde -protectors -get %systemdrive%
 
 In the TPM section of the output of this command, verify that the **PCR Validation Profile** setting includes **7**, as follows.
 
-![Output of the manage-bde command](./images/4509199-en-1.png)
+![Output of the manage-bde command.](./images/4509199-en-1.png)
 
 If **PCR Validation Profile** doesn't include **7** (for example, the values include **0**, **2**, **4**, and **11**, but not **7**), then Secure Boot is not turned on.
 
-![Output of the manage-bde command when PCR 7 is not present](./images/4509200-en-1.png)
+![Output of the manage-bde command when PCR 7 is not present.](./images/4509200-en-1.png)
 
 #### 2. Verify the Secure Boot state
 
@@ -204,9 +204,9 @@ To verify the Secure Boot state, use the System Information app. To do this, fol
 
 1. Select **Start**, and enter **msinfo32** in the **Search** box.
 1. Verify that the **Secure Boot State** setting is **On**, as follows:  
-   ![System Information app, showing a supported Secure Boot State](./images/4509201-en-1.png)
+   ![System Information app, showing a supported Secure Boot State.](./images/4509201-en-1.png)
 1. If the **Secure Boot State** setting is **Unsupported**, you cannot use Silent BitLocker Encryption on this device.  
-   ![System Information app, showing a unsupported Secure Boot State](./images/4509202-en-1.png)
+   ![System Information app, showing a unsupported Secure Boot State.](./images/4509202-en-1.png)
 
 > [!NOTE]
 > You can also use the [Confirm-SecureBootUEFI](/powershell/module/secureboot/confirm-securebootuefi?view=win10-ps) cmdlet to verify the Secure Boot state. To do this, open an elevated PowerShell window and run the following command:
@@ -290,7 +290,7 @@ If your device runs Windows 10 version 1703 or later, supports Modern Standby (a
 
 If your device is HSTI-compliant but does not support Modern Standby, you have to configure an endpoint protection policy to enforce silent BitLocker Drive Encryption. The settings for this policy should resemble the following:
 
-![Intune policy settings](./images/4509186-en-1.png)
+![Intune policy settings.](./images/4509186-en-1.png)
 
 The OMA-URI references for these settings are as follows:
 
@@ -316,7 +316,7 @@ The Intune 1901 release provides settings that you can use to configure automati
 - Support Modern Standby
 - Use Windows 10 version 1803 or later
 
-![Intune policy setting](./images/4509188-en-1.png)
+![Intune policy setting.](./images/4509188-en-1.png)
 
 The OMA-URI references for these settings are as follows:
 
@@ -331,17 +331,17 @@ The OMA-URI references for these settings are as follows:
 
 During regular operations, BitLocker Drive Encryption generates events such as Event ID 796 and Event ID 845.
 
-![Event ID 796, as shown in Event Viewer](./images/4509203-en-1.png)
+![Event ID 796, as shown in Event Viewer.](./images/4509203-en-1.png)
 
-![Event ID 845, as shown in Event Viewer](./images/4509204-en-1.png)
+![Event ID 845, as shown in Event Viewer.](./images/4509204-en-1.png)
 
 You can also determine whether the BitLocker recovery password has been uploaded to Azure AD by checking the device details in the Azure AD Devices section.
 
-![BitLocker recovery information as viewed in Azure AD](./images/4509205-en-1.png)
+![BitLocker recovery information as viewed in Azure AD.](./images/4509205-en-1.png)
 
 On the device, check the Registry Editor to verify the policy settings on the device. Verify the entries under the following subkeys:
 
 - **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device\\BitLocker**
 - **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager\\current\\device**  
 
-![Registry subkeys that relate to Intune policy](./images/4509206-en-1.png)
+![Registry subkeys that relate to Intune policy.](./images/4509206-en-1.png)

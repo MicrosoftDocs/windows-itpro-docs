@@ -87,14 +87,14 @@ On **CM01**:
     >[!NOTE]
     >You also can add a Query WMI condition with the following query: SELECT \* FROM Win32\_ComputerSystem WHERE Model LIKE '%HP EliteBook 8560w%'
     
-    ![Driver package options](../images/fig27-driverpackage.png "Driver package options")
+    ![Driver package options.](../images/fig27-driverpackage.png "Driver package options")
     
     The driver package options
 
 7.  In the **State Restore / Install Applications** group, select the **Install Application** action.
 8.  Select the **Install the following applications** radio button, and add the OSD / Adobe Reader DC - OSD Install application to the list.
 
-    ![Add an application to the task sequence](../images/fig28-addapp.png "Add an application to the task sequence")
+    ![Add an application to the task sequence.](../images/fig28-addapp.png "Add an application to the task sequence")
 
     Add an application to the Configuration Manager task sequence
 

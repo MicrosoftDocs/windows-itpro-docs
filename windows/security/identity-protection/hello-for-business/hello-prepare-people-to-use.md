@@ -35,11 +35,11 @@ People who are currently using virtual or physical smart cards for authenticatio
 
 When someone sets up a new device, they are prompted to choose who owns the device. For corporate devices, they select **This device belongs to my organization**.
 
-![who owns this pc](images/corpown.png)
+![who owns this pc.](images/corpown.png)
 
 Next, they select a way to connect. Tell the people in your enterprise which option they should pick here.
 
-![choose how you'll connect](images/connect.png)
+![choose how you'll connect.](images/connect.png)
 
 They sign in, and are then asked to verify their identity. People have options to choose from a text message, phone call, or the authentication application. After verification, they create their PIN. The **Create a PIN** screen displays any complexity requirements that you have set, such as minimum length.
 
@@ -55,7 +55,7 @@ People can go to **Settings** &gt; **Accounts** &gt; **Work or school**, select 
 
 If your policy allows it, people can use biometrics (fingerprint, iris, and facial recognition) with Windows Hello for Business, if the hardware supports it.
 
-![sign in to windows, apps, and services using fingerprint or face](images/hellosettings.png)
+![sign in to windows, apps, and services using fingerprint or face.](images/hellosettings.png)
 
 
 

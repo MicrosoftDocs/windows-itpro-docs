@@ -372,11 +372,11 @@ The Group Policy object contains the policy settings needed to trigger Windows H
 
 7. Expand **Administrative Templates > Windows Component**, and select **Windows Hello for Business**.
 
-   ![Group Policy Editor](images/multifactorUnlock/gpme.png)
+   ![Group Policy Editor.](images/multifactorUnlock/gpme.png)
    
 8. In the content pane, double-click **Configure device unlock factors**. Click **Enable**.  The **Options** section populates the policy setting with default values.
 
-   ![Multifactor Policy Setting](images/multifactorUnlock/gp-setting.png)
+   ![Multifactor Policy Setting.](images/multifactorUnlock/gp-setting.png)
    
 9. Configure first and second unlock factors using the information in [Configure Unlock Factors](#configuring-unlock-factors).
 

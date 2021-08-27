@@ -32,7 +32,7 @@ You can implement a server isolation design without using domain isolation. To d
 
 The design is shown in the following illustration, with arrows that show the permitted communication paths.
 
-![isolated domain with isolated server](images/wfas-domainisohighsec.gif)
+![isolated domain with isolated server.](images/wfas-domainisohighsec.gif)
 
 Characteristics of this design include the following:
 
