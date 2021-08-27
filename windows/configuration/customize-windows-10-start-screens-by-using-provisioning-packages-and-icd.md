@@ -87,7 +87,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 7. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
 
-    ![Customizations file with the placeholder text to replace highlighted](images/customization-start.png)
+    ![Customizations file with the placeholder text to replace highlighted.](images/customization-start.png)
 
 7. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
 

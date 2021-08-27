@@ -142,7 +142,7 @@ To sign the existing catalog file, copy each of the following commands into an e
     
 4. Verify the catalog file digital signature. Right-click the catalog file, and then click **Properties**. On the **Digital Signatures** tab, verify that your signing certificate exists with a **sha256** algorithm, as shown in Figure 1.
 
-   ![Digital Signature list in file Properties](images/dg-fig12-verifysigning.png)
+   ![Digital Signature list in file Properties.](images/dg-fig12-verifysigning.png)
 
    Figure 1. Verify that the signing certificate exists
 
@@ -182,7 +182,7 @@ To simplify the management of catalog files, you can use Group Policy preference
    > [!NOTE]
    > You can use any OU name. Also, security group filtering is an option when you consider different ways of combining WDAC policies (or keeping them separate).
 
-   ![Group Policy Management, create a GPO](images/dg-fig13-createnewgpo.png)
+   ![Group Policy Management, create a GPO.](images/dg-fig13-createnewgpo.png)
 
    Figure 2. Create a new GPO
 
@@ -192,7 +192,7 @@ To simplify the management of catalog files, you can use Group Policy preference
 
 5. Within the selected GPO, navigate to Computer Configuration\\Preferences\\Windows Settings\\Files. Right-click **Files**, point to **New**, and then click **File**, as shown in Figure 3.
 
-   ![Group Policy Management Editor, New File](images/dg-fig14-createnewfile.png)
+   ![Group Policy Management Editor, New File.](images/dg-fig14-createnewfile.png)
 
    Figure 3. Create a new file
 
@@ -202,7 +202,7 @@ To simplify the management of catalog files, you can use Group Policy preference
 
 7. To keep versions consistent, in the **New File Properties** dialog box (Figure 4), select **Replace** from the **Action** list so that the newest version is always used.
 
-   ![File Properties, Replace option](images/dg-fig15-setnewfileprops.png)
+   ![File Properties, Replace option.](images/dg-fig15-setnewfileprops.png)
 
    Figure 4. Set the new file properties
 
@@ -235,7 +235,7 @@ As an alternative to Group Policy, you can use Configuration Manager to deploy c
 
 3.  Name the package, set your organization as the manufacturer, and select an appropriate version number.
 
-    ![Create Package and Program Wizard](images/dg-fig16-specifyinfo.png)
+    ![Create Package and Program Wizard.](images/dg-fig16-specifyinfo.png)
 
     Figure 5. Specify information about the new package
 
@@ -257,7 +257,7 @@ As an alternative to Group Policy, you can use Configuration Manager to deploy c
 
     -   From the **Drive mode** list, select **Runs with UNC name**.
 
-    ![Standard Program page of wizard](images/dg-fig17-specifyinfo.png)
+    ![Standard Program page of wizard.](images/dg-fig17-specifyinfo.png)
 
     Figure 6. Specify information about the standard program
 
@@ -285,7 +285,7 @@ After you create the deployment package, deploy it to a collection so that the c
 
     -   Select the **Commit changes at deadline or during a maintenance window (requires restarts)** check box.
 
-    ![Deploy Software Wizard, User Experience page](images/dg-fig18-specifyux.png)
+    ![Deploy Software Wizard, User Experience page.](images/dg-fig18-specifyux.png)
 
     Figure 7. Specify the user experience
 
@@ -310,13 +310,13 @@ When catalog files have been deployed to the computers within your environment, 
 
 3.  Name the new policy, and under **Select and then configure the custom settings for client devices**, select the **Software Inventory** check box, as shown in Figure 8.
 
-    ![Create Custom Client Device Settings](images/dg-fig19-customsettings.png)
+    ![Create Custom Client Device Settings.](images/dg-fig19-customsettings.png)
 
     Figure 8. Select custom settings
 
 4.  In the navigation pane, click **Software Inventory**, and then click **Set Types**, as shown in Figure 9.
 
-    ![Software Inventory settings for devices](images/dg-fig20-setsoftwareinv.png)
+    ![Software Inventory settings for devices.](images/dg-fig20-setsoftwareinv.png)
 
     Figure 9. Set the software inventory
 
@@ -329,7 +329,7 @@ When catalog files have been deployed to the computers within your environment, 
 
 7.  In the **Path Properties** dialog box, select **Variable or path name**, and then type **C:\\Windows\\System32\\catroot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}** in the box, as shown in Figure 10.
 
-    ![Path Properties, specifying a path](images/dg-fig21-pathproperties.png)
+    ![Path Properties, specifying a path.](images/dg-fig21-pathproperties.png)
 
     Figure 10. Set the path properties
 

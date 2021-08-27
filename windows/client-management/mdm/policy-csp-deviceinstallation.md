@@ -549,7 +549,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 ```
 You can also change the evaluation order of device installation policy settings by using a custom profile in Intune.
 
-:::image type="content" source="images/edit-row.png" alt-text="This is a edit row image":::
+:::image type="content" source="images/edit-row.png" alt-text="This is a edit row image.":::
 
 <!--/Example-->
 <!--Validation-->
@@ -743,7 +743,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 
 You can also block installation by using a custom profile in Intune. 
 
-![Custom profile prevent devices](images/custom-profile-prevent-other-devices.png)
+![Custom profile prevent devices.](images/custom-profile-prevent-other-devices.png)
 <!--/Example-->
 <!--Validation-->
 
@@ -863,7 +863,7 @@ You can also block installation and usage of prohibited peripherals by using a c
 
 For example, this custom profile blocks installation and usage of USB devices with hardware IDs "USB\Composite" and "USB\Class_FF", and applies to USB devices with matching hardware IDs that are already installed.
 
-![Custom profile prevent device ids](images/custom-profile-prevent-device-ids.png)
+![Custom profile prevent device ids.](images/custom-profile-prevent-device-ids.png)
 <!--/Example-->
 <!--Validation-->
 
@@ -977,7 +977,7 @@ You can also block installation and usage of prohibited peripherals by using a c
 
 For example, this custom profile prevents installation of devices with matching device instance IDs.
 
-![Custom profile](images/custom-profile-prevent-device-instance-ids.png)
+![Custom profile.](images/custom-profile-prevent-device-instance-ids.png)
 
 To prevent installation of devices with matching device instance IDs by using custom profile in Intune:
 1. Locate the device instance ID.
