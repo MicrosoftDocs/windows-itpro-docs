@@ -61,7 +61,7 @@ AppLocker can be configured to display the default message but with a custom URL
 
 The following image shows an example of the error message for a blocked app. You can use the **Set a support web link** policy setting to customize the **More information** link.
 
-![applocker blocked application error message](images/blockedappmsg.gif)
+![applocker blocked application error message.](images/blockedappmsg.gif)
 
 For steps to display a custom URL for the message, see [Display a custom URL message when users try to run a blocked app](display-a-custom-url-message-when-users-try-to-run-a-blocked-application.md).
 

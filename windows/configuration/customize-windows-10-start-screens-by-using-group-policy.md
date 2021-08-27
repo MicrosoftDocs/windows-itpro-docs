@@ -92,13 +92,13 @@ This procedure adds the customized Start and taskbar layout to the user configur
 
 2. Go to **User Configuration** or **Computer Configuration** &gt; **Administrative Templates** &gt;**Start Menu and Taskbar**.
 
-   ![start screen layout policy settings](images/starttemplate.jpg)
+   ![start screen layout policy settings.](images/starttemplate.jpg)
 
 3. Right-click **Start Layout** in the right pane, and click **Edit**.
 
    This opens the **Start Layout** policy settings.
 
-   ![policy settings for start screen layout](images/startlayoutpolicy.jpg)
+   ![policy settings for start screen layout.](images/startlayoutpolicy.jpg)
 
 4. Enter the following settings, and then click **OK**:
 

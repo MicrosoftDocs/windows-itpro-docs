@@ -30,7 +30,7 @@ For the purposes of this topic, we will use three computers: DC01, MDT01, and PC
 
 Both DC01 and MDT01 are running Windows Server 2019; however any supported version of Windows Server can be used. For more details on the setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
-![computers](../images/mdt-04-fig01.png "Computers used in this topic")
+![computers.](../images/mdt-04-fig01.png "Computers used in this topic")
 
 The computers used in this topic.
 
@@ -93,7 +93,7 @@ It is also assumed that you have a domain member client computer named PC0001 in
      >Skip this optional full WIM backup that we are choosing not to perform. The USMT backup will still run.
    * Select one or more applications to install: Install - Adobe Reader
 
-     ![Computer refresh](../images/fig2-taskseq.png "Start the computer refresh")
+     ![Computer refresh.](../images/fig2-taskseq.png "Start the computer refresh")
 
 4. Setup starts and does the following:
     
@@ -105,7 +105,7 @@ It is also assumed that you have a domain member client computer named PC0001 in
 
 5. You can monitor progress of the deployment using the deployment workbench on MDT01. See the following example:
 
-     ![monitor deployment](../images/monitor-pc0001.png)
+     ![monitor deployment.](../images/monitor-pc0001.png)
 
 6. After the refresh process completes, sign in to the Windows 10 computer and verify that user accounts, data and settings were migrated.
 

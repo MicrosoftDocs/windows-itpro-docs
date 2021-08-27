@@ -69,7 +69,7 @@ In Windows 10, Windows Hello replaces passwords. When the identity provider sup
 >[!NOTE]
 >Windows Hello as a convenience sign-in uses regular user name and password authentication, without the user entering the password.
 
-![How authentication works in Windows Hello](images/authflow.png)
+![How authentication works in Windows Hello.](images/authflow.png)
 
 Imagine that someone is looking over your shoulder as you get money from an ATM and sees the PIN that you enter. Having that PIN won't help them access your account because they don't have your ATM card. In the same way, learning your PIN for your device doesn't allow that attacker to access your account because the PIN is local to your specific device and doesn't enable any type of authentication from any other device.
 

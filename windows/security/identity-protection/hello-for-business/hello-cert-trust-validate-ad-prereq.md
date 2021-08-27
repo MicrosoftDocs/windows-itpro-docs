@@ -34,7 +34,7 @@ To locate the schema master role holder, open and command prompt and type:
 
 ```Netdom query fsmo | findstr -i “schema”```
 
-![Netdom example output](images/hello-cmd-netdom.png)
+![Netdom example output.](images/hello-cmd-netdom.png)
 
 The command should return the name of the domain controller where you need to adprep.exe.  Update the schema locally on the domain controller hosting the Schema master role.
 

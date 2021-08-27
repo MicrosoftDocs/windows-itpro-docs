@@ -56,11 +56,11 @@ Group Policy option button setting:
 
 The following diagram shows the main display for the Group Policy Editor.
 
-![Group Policy editor](images/group-policy-editor.png)
+![Group Policy editor.](images/group-policy-editor.png)
 
 The following diagram shows the settings for the "Publishing Server 2 Settings" Group Policy in the Group Policy Editor.
 
-![Group Policy publisher server 2 settings](images/group-policy-publisher-server-2-settings.png)
+![Group Policy publisher server 2 settings.](images/group-policy-publisher-server-2-settings.png)
 
 Note that most Group Policies are a simple Boolean type. For a Boolean Group Policy, if you select **Enabled**, the options panel contains no data input fields and the payload of the SyncML is simply `<enabled/>`. However, if there are data input fields in the options panel, the MDM server must supply this data. The following *Enabling a Group Policy* example illustrates this complexity. In this example, 10 name-value pairs are described by `<data />` tags in the payload, which correspond to the 10 data input fields in the Group Policy Editor options panel for the "Publishing Server 2 Settings" Group Policy. The ADMX file, which defines the Group Policies, is consumed by the MDM server, similarly to how the Group Policy Editor consumes it. The Group Policy Editor displays a UI to receive the complete Group Policy instance data, which the MDM server's IT administrator console must also do. For every `<text>` element and id attribute in the ADMX policy definition, there must be a corresponding `<data />` element and id attribute in the payload. The ADMX file drives the policy definition and is required by the MDM server via the SyncML protocol.
 
