@@ -76,11 +76,11 @@ When performing an operating system upgrade, Windows Setup uses phases described
 
     At the end of the second boot phase, the **Welcome to Windows 10** screen is displayed, preferences are configured, and the Windows 10 sign-in prompt is displayed.
 
-    ![second boot phase.](../images/secondboot.png) 
+    ![second boot phase 1](../images/secondboot.png) 
 
-    ![second boot phase.](../images/secondboot2.png) 
+    ![second boot phase 2](../images/secondboot2.png) 
 
-    ![second boot phase.](../images/secondboot3.png) 
+    ![second boot phase 3](../images/secondboot3.png) 
 
 5. **Uninstall phase**: This phase occurs if upgrade is unsuccessful (image not shown). Example error codes: 0x50000, 0x50015.
 
