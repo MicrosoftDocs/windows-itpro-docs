@@ -30,7 +30,7 @@ To successfully deploy AppLocker policies, you need to identify your application
 
 The following diagram shows the main points in the design, planning, and deployment process for AppLocker.
 
-![applocker quick reference guide](images/applocker-plandeploy-quickreference.gif)
+![applocker quick reference guide.](images/applocker-plandeploy-quickreference.gif)
 
 ## Resources to support the deployment process
 

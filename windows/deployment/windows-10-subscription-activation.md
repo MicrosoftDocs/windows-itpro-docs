@@ -65,7 +65,7 @@ To support Inherited Activation, both the host computer and the VM must be runni
 
 The following figure illustrates how deploying Windows 10 has evolved with each release. With this release, deployment is automatic.
 
-![Illustration of how Windows 10 deployment has evolved](images/sa-evolution.png)
+![Illustration of how Windows 10 deployment has evolved.](images/sa-evolution.png)
 
 - **Windows 7** required you to redeploy the operating system using a full wipe-and-load process if you wanted to change from Windows 7 Professional to Windows 10 Enterprise.<br>
 
@@ -117,11 +117,11 @@ If the device is running Windows 10, version 1809 or later:
 
 - When the user signs in on a Hybrid Azure AD joined device with MFA enabled, a notification will indicate that there is a problem. Click the notification and then click **Fix now** to step through the subscription activation process. See the example below:
 
-   ![Subscription Activation with MFA example 1](images/sa-mfa1.png)<br>
+   ![Subscription Activation with MFA example 1.](images/sa-mfa1.png)<br>
 
-   ![Subscription Activation with MFA example 2](images/sa-mfa2.png)<br>
+   ![Subscription Activation with MFA example 2.](images/sa-mfa2.png)<br>
 
-   ![Subscription Activation with MFA example 3](images/sa-mfa3.png)
+   ![Subscription Activation with MFA example 3.](images/sa-mfa3.png)
 
 ### Windows 10 Education requirements
 
@@ -162,7 +162,7 @@ The device is AAD joined from **Settings > Accounts > Access work or school**.
 
 The IT administrator assigns Windows 10 Enterprise to a user. See the following figure.
 
-![Windows 10 Enterprise](images/ent.png)
+![Windows 10 Enterprise.](images/ent.png)
 
 When a licensed user signs in to a device that meets requirements using their Azure AD credentials, the operating system steps up from Windows 10 Pro to Windows 10 Enterprise (or Windows 10 Pro Education to Windows 10 Education) and all the appropriate Windows 10 Enterprise/Education features are unlocked. When a user’s subscription expires or is transferred to another user, the device reverts seamlessly to Windows 10 Pro / Windows 10 Pro Education edition, once current subscription validity expires.
 
@@ -171,10 +171,10 @@ Devices running Windows 10 Pro, version 1703 or Windows 10 Pro Education, versio
 The following figures summarize how the Subscription Activation model works:
 
 Before Windows 10, version 1903:<br>
-![1703](images/before.png)
+![1703.](images/before.png)
 
 After Windows 10, version 1903:<br>
-![1903](images/after.png)
+![1903.](images/after.png)
 
 > [!NOTE]
 > 
