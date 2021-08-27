@@ -178,7 +178,7 @@ The following list shows the supported values:
 Allows the user to change Data Sense settings.
 
 > [!NOTE]
-> This policy is not supported on Windows 10, version 2004 and later.
+> The **AllowDataSense** policy is not supported on Windows 10, version 2004 and later.
 
 <!--/Description-->
 <!--SupportedValues-->
