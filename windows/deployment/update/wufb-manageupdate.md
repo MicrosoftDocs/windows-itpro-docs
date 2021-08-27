@@ -40,7 +40,7 @@ If you don't need a wave deployment and have a small set of devices to manage, w
 |Do not allow update deferral policies to cause scans against Windows Update|GPO: Computer Configuration > Administrative Templates > Windows Components > Windows Update > Do not allow update deferral policies to cause scans against Windows Update|State: Disabled|
 
 ## Suggested configuration for a wave deployment
-![Graphic showing a deployment divided into rings for a wave deployment](images/wufb-wave-deployment.png)
+![Graphic showing a deployment divided into rings for a wave deployment.](images/wufb-wave-deployment.png)
 
 ## Early validation and testing
 Depending on your organizational size and requirements you might be able to test feature updates earlier to identify if there are impacts to Line of Business applications. Our recommendation is to enroll a set of devices that are a good representation of your device ecosystem (for example, devices with accounting software or engineering software). Learn more about [different deployment rings](https://insider.windows.com/how-to-pc/#working-with-rings).

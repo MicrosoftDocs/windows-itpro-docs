@@ -41,7 +41,7 @@ Most WDAC policies will evolve over time and proceed through a set of identifiab
 6. Deploy the enforced mode policy to intended devices. We recommend using staged rollouts for enforced policies to detect and respond to issues before deploying the policy broadly.
 7. Repeat steps 1-6 anytime the desired "circle-of-trust" changes.  
 
-![Recommended WDAC policy deployment process](images/policyflow.png)
+![Recommended WDAC policy deployment process.](images/policyflow.png)
 
 ### Keep WDAC policies in a source control or document management solution
 

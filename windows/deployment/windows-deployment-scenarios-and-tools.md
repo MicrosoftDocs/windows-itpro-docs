@@ -29,7 +29,7 @@ In this topic, you also learn about different types of reference images that you
 
 Windows ADK contains core assessment and deployment tools and technologies, including Deployment Image Servicing and Management (DISM), Windows Imaging and Configuration Designer (Windows ICD), Windows System Image Manager (Windows SIM), User State Migration Tool (USMT), Volume Activation Management Tool (VAMT), Windows Preinstallation Environment (Windows PE), Windows Assessment Services, Windows Performance Toolkit (WPT), Application Compatibility Toolkit (ACT), and Microsoft SQL Server 2012 Express. For more details, see [Windows ADK for Windows 10](/windows-hardware/get-started/adk-install) or [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
 
-![figure 1](images/win-10-adk-select.png)
+![figure 1.](images/win-10-adk-select.png)
 
 The Windows 10 ADK feature selection page.
 
@@ -50,7 +50,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All
 -Source D:\Sources\SxS -LimitAccess
 ```
 
-![figure 2](images/mdt-11-fig05.png)
+![figure 2.](images/mdt-11-fig05.png)
 
 Using DISM functions in PowerShell.
 
@@ -77,7 +77,7 @@ In addition to these tools, there are also XML templates that manage which data 
 -   **Custom templates.** Custom templates that you create.
 -   **Config template.** An optional template, called Config.xml, which you can use to exclude or include components in a migration without modifying the other standard XML templates.
 
-![figure 3](images/mdt-11-fig06.png)
+![figure 3.](images/mdt-11-fig06.png)
 
 A sample USMT migration file that will exclude .MP3 files on all local drives and include the folder C:\\Data and all its files, including its subdirectories and their files.
 
@@ -100,7 +100,7 @@ These are the settings migrated by the default MigUser.xml and MigApp.xml templa
 
 Windows Imaging and Configuration Designer (Windows ICD) is a tool designed to assist with the creation of provisioning packages that can be used to dynamically configure a Windows device (PCs, tablets, and phones). This is particularly useful for setting up new devices, without the need for re-imaging the device with a custom image.
 
-![figure 4](images/windows-icd.png)
+![figure 4.](images/windows-icd.png)
 
 Windows Imaging and Configuration Designer.
 
@@ -110,7 +110,7 @@ For more information, see [Windows Imaging and Configuration Designer](/windows/
 
 Windows SIM is an authoring tool for Unattend.xml files. When using MDT and/or Configuration Manager, you don’t need Windows SIM very often because those systems automatically update the Unattend.xml file during the deployment, greatly simplifying the process overall.
 
-![figure 7](images/mdt-11-fig07.png)
+![figure 7.](images/mdt-11-fig07.png)
 
 Windows answer file opened in Windows SIM.
 
@@ -120,7 +120,7 @@ For more information, see [Windows System Image Manager Technical Reference]( ht
 
 If you don’t use KMS, you can still manage your MAKs centrally with the Volume Activation Management Tool (VAMT). With this tool, you can install and manage product keys throughout the organization. VAMT also can activate on behalf of clients without Internet access, acting as a MAK proxy.
 
-![figure 6](images/mdt-11-fig08.png)
+![figure 6.](images/mdt-11-fig08.png)
 
 The updated Volume Activation Management Tool.
 
@@ -138,7 +138,7 @@ Windows PE is a “Lite” version of Windows 10 and was created to act as a dep
 
 The key thing to know about Windows PE is that, like the operating system, it needs drivers for at least network and storage devices in each PC. Luckily Windows PE includes the same drivers as the full Windows 10 operating system, which means much of your hardware will work out of the box.
 
-![figure 7](images/mdt-11-fig09.png)
+![figure 7.](images/mdt-11-fig09.png)
 
 A machine booted with the Windows ADK default Windows PE boot image.
 
@@ -149,7 +149,7 @@ For more details on Windows PE, see [Windows PE (WinPE)](/windows-hardware/manuf
 
 Windows Recovery Environment (Windows RE) is a diagnostics and recovery toolset included in Windows Vista and later operating systems. The latest version of Windows RE is based on Windows PE. You can also extend Windows RE and add your own tools if needed. If a Windows installation fails to start and Windows RE is installed, you will see an automatic failover into Windows RE.
 
-![figure 8](images/mdt-11-fig10.png)
+![figure 8.](images/mdt-11-fig10.png)
 
 A Windows 10 client booted into Windows RE, showing Advanced options.
 
@@ -160,7 +160,7 @@ For more information on Windows RE, see [Windows Recovery Environment](/windows-
 
 Windows Deployment Services (WDS) has been updated and improved in several ways starting with Windows 8. Remember that the two main functions you will use are the PXE boot support and multicast. Most of the changes are related to management and increased performance. In Windows Server 2012 R2, WDS also can be used for the Network Unlock feature in BitLocker.
 
-![figure 9](images/mdt-11-fig11.png)
+![figure 9.](images/mdt-11-fig11.png)
 
 Windows Deployment Services using multicast to deploy three machines.
 
@@ -176,7 +176,7 @@ Also, there are a few new features related to TFTP performance:
 -   **Scalable port management.** Provides the capability to service clients with shared UDP port allocation, increasing scalability.
 -   **Variable-size transmission window (Variable Windows Extension).** Improves TFTP performance by allowing the client and server to determine the largest workable window size.
 
-![figure 10](images/mdt-11-fig12.png)
+![figure 10.](images/mdt-11-fig12.png)
 
 TFTP changes are now easy to perform.
 
@@ -192,7 +192,7 @@ Lite Touch and Zero Touch are marketing names for the two solutions that MDT sup
 
  
 
-![figure 11](images/mdt-11-fig13.png)
+![figure 11.](images/mdt-11-fig13.png)
 
 The Deployment Workbench in, showing a task sequence.
 
@@ -203,7 +203,7 @@ For more information on MDT, see the [Microsoft Deployment Toolkit](/mem/configm
 
 [Microsoft SCM](https://go.microsoft.com/fwlink/p/?LinkId=619246) is a free utility used to create baseline security settings for the Windows client and server environment. The baselines can be exported and then deployed via Group Policy, local policies, MDT, or Configuration Manager. The current version of Security Compliance Manager includes baselines for Windows 8.1 and several earlier versions of Windows, Windows Server, and Internet Explorer.
 
-![figure 12](images/mdt-11-fig14.png)
+![figure 12.](images/mdt-11-fig14.png)
 
 The SCM console showing a baseline configuration for a fictional client's computer security compliance.
 
@@ -228,7 +228,7 @@ For more information on the benefits of an MDOP subscription, see [Microsoft Des
 
 There has been a version of IEAK for every version of Internet Explorer since 3.0. It gives you the capability to customize Internet Explorer as you would like. The end result of using IEAK is an Internet Explorer package that can be deployed unattended. The wizard creates one .exe file and one .msi file.
 
-![figure 13](images/mdt-11-fig15.png)
+![figure 13.](images/mdt-11-fig15.png)
 
 The User Experience selection screen in IEAK 11.
 
@@ -239,7 +239,7 @@ To download IEAK 11, see the [Internet Explorer Administration Kit (IEAK) Inform
 
 WSUS is a server role in Windows Server 2012 R2 that enables you to maintain a local repository of Microsoft updates and then distribute them to machines on your network. WSUS offers approval control and reporting of update status in your environment.
 
-![figure 14](images/mdt-11-fig16.png)
+![figure 14.](images/mdt-11-fig16.png)
 
 The Windows Server Update Services console.
 

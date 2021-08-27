@@ -30,13 +30,13 @@ Proper preparation is essential for a successful school deployment. To avoid com
 
 As part of preparing for your school deployment, you need to plan your configuration—the focus of this guide. Figure 1 illustrates a typical finished school configuration that you can use as a model (the blueprint in our builder analogy) for the finished state.
 
-![fig 1](images/deploy-win-10-school-figure1.png)
+![fig 1.](images/deploy-win-10-school-figure1.png)
 
 *Figure 1. Typical school configuration for this guide*
 
 Figure 2 shows the classroom configuration this guide uses.
 
-![fig 2](images/deploy-win-10-school-figure2.png)
+![fig 2.](images/deploy-win-10-school-figure2.png)
 
 *Figure 2. Typical classroom configuration in a school*
 
@@ -112,7 +112,7 @@ The high-level process for deploying and configuring devices within individual c
 6. On the student and faculty devices, deploy Windows 10 to new or existing devices, or upgrade eligible devices to Windows 10.
 7. On the admin device, manage the Windows 10 devices and apps, the Office 365 subscription, and the AD DS and Azure AD integration.
 
-![fig 3](images/deploy-win-10-school-figure3.png)
+![fig 3.](images/deploy-win-10-school-figure3.png)
 
 *Figure 3. How school configuration works*
 
@@ -346,7 +346,7 @@ In this method, you have an on-premises AD DS domain. As shown in Figure 4, the 
 
 **Note**&nbsp;&nbsp;Azure AD Connect also supports synchronization from any Lightweight Directory Access Protocol version 3 (LDAPv3)–compliant directory by using the information provided in [Generic LDAP Connector for FIM 2010 R2 Technical Reference](/previous-versions/mim/dn510997(v=ws.10)?f=255&MSPPError=-2147217396).
 
-![fig 4](images/deploy-win-10-school-figure4.png)
+![fig 4.](images/deploy-win-10-school-figure4.png)
 
 *Figure 4. Automatic synchronization between AD DS and Azure AD*
 
@@ -356,7 +356,7 @@ For more information about how to perform this step, see the [Integrate on-premi
 
 In this method, you have no on-premises AD DS domain. As shown in Figure 5, you manually prepare a .csv file with the student information from your source, and then manually import the information directly into Azure AD. The .csv file must be in the format that Office 365 specifies.
 
-![fig 5](images/deploy-win-10-school-figure5.png)
+![fig 5.](images/deploy-win-10-school-figure5.png)
 
 *Figure 5. Bulk import into Azure AD from other sources*
 
@@ -383,13 +383,13 @@ You can deploy the Azure AD Connect tool by using one of the following methods:
 
 - **On premises.** As shown in Figure 6, Azure AD Connect runs on premises, which has the advantage of not requiring a virtual private network (VPN) connection to Azure. It does, however, require a virtual machine (VM) or physical server.
 
-  ![fig 6](images/deploy-win-10-school-figure6.png)
+  ![fig 6.](images/deploy-win-10-school-figure6.png)
 
   *Figure 6. Azure AD Connect on premises*
 
 - **In Azure**. As shown in Figure 7, Azure AD Connect runs on a VM in Azure AD, which has the advantages of being faster to provision (than a physical, on-premises server), offers better site availability, and helps reduce the number of on-premises servers. The disadvantage is that you need to deploy a VPN gateway on premises.
 
-  ![fig 7](images/deploy-win-10-school-figure7.png)
+  ![fig 7.](images/deploy-win-10-school-figure7.png)
 
   *Figure 7. Azure AD Connect in Azure*
 
