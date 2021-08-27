@@ -25,7 +25,7 @@ ms.topic: article
 
 This article contains a brief introduction to Windows 10 installation processes, and provides resolution procedures that IT administrators can use to resolve issues with Windows 10 upgrade. 
 
-The article was originally one page, but has been divided into sub-topics of different technical levels. Basic level provides common procedures that can resolve several types of upgrade errors. Advanced level requires some experience with detailed troubleshooting methods.
+The article has been divided into sub-topics of different technical levels. Basic level provides common procedures that can resolve several types of upgrade errors. Advanced level requires some experience with detailed troubleshooting methods.
 
 The following four levels are assigned:
 
