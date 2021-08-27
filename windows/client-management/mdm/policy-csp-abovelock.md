@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - AboveLock
 
-[!INCLUDE[appliesto-xxx-xxx-xxx-SUB-xxx-md](../includes/appliesto-xxx-xxx-xxx-SUB-xxx-md.md)]
 
 
 <hr/>
@@ -55,11 +54,11 @@ manager: dansimp
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td>Yes, starting in Windows 10, version 1909</td><td>Yes</td>
+    <td>Yes, starting in Windows 10, version 1903</td><td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td>Yes, starting in Windows 10, version 2004</td><td>Yes</td>
+    <td>Yes, starting in Windows 10, version 1903</td><td>Yes</td>
 
 </table>
 
@@ -81,7 +80,7 @@ Added in Windows 10, version 1607. Specifies whether or not the user can intera
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Cortana above lock screen*
+-   GP Friendly name: *Allow Cortana above lock screen*
 -   GP name: *AllowCortanaAboveLock*
 -   GP path: *Windows Components/Search*
 -   GP ADMX file name: *Search.admx*
@@ -104,8 +103,9 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
