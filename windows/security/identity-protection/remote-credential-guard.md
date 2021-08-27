@@ -34,13 +34,13 @@ Administrator credentials are highly privileged and must be protected. By using 
 
 The following diagram helps you to understand how a standard Remote Desktop session to a server without Windows Defender Remote Credential Guard works:
 
-![RDP connection to a server without Windows Defender Remote Credential Guard.png](images/rdp-to-a-server-without-windows-defender-remote-credential-guard.png)
+![RDP connection to a server without Windows Defender Remote Credential Guard.png.](images/rdp-to-a-server-without-windows-defender-remote-credential-guard.png)
 
 <br />
 
 The following diagram helps you to understand how Windows Defender Remote Credential Guard works, what it helps to protect against, and compares it with the [Restricted Admin mode](https://social.technet.microsoft.com/wiki/contents/articles/32905.how-to-enable-restricted-admin-mode-for-remote-desktop.aspx) option:
 
-![Windows Defender Remote Credential Guard](images/windows-defender-remote-credential-guard-with-remote-admin-mode.png)
+![Windows Defender Remote Credential Guard.](images/windows-defender-remote-credential-guard-with-remote-admin-mode.png)
 
 <br />
 As illustrated, Windows Defender Remote Credential Guard blocks NTLM (allowing only Kerberos), prevents Pass-the-Hash (PtH) attacks, and also prevents use of credentials after disconnection.
@@ -152,7 +152,7 @@ Beginning with Windows 10 version 1703, you can enable Windows Defender Remote C
 
 2. Double-click **Restrict delegation of credentials to remote servers**.
 
-    ![Windows Defender Remote Credential Guard Group Policy](images/remote-credential-guard-gp.png)
+    ![Windows Defender Remote Credential Guard Group Policy.](images/remote-credential-guard-gp.png)
 
 3. Under **Use the following restricted mode**:
 

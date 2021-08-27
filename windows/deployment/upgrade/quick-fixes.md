@@ -174,7 +174,7 @@ To check your system for unsigned drivers:
 5. Type **sigverif** and press ENTER. 
 6. The File Signature Verification tool will open. Click **Start**.
 
-    ![File Signature Verification](../images/sigverif.png)
+    ![File Signature Verification.](../images/sigverif.png)
 
 7. After the scanning process is complete, if you see **Your files have been scanned and verified as digitally signed** then you have no unsigned drivers. Otherwise, you will see **The following files have not been digitally signed** and a list will be provided with name, location, and version of all unsigned drivers.
 8. To view and save a log file, click **Advanced**, and then click **View Log**. Save the log file if desired.
@@ -268,7 +268,7 @@ To obtain the proper firmware drivers, search for the most updated driver versio
 
 When you begin a Windows Update, the setup process will ask you to **Get important updates**. Answer **Yes** if the computer you are updating is connected to the Internet. See the following example:
 
-![Get important updates](../images/update.jpg)
+![Get important updates.](../images/update.jpg)
 
 ### Verify disk space
 
@@ -280,13 +280,13 @@ In File Explorer, click on **Computer** or **This PC** on the left, then look un
 
 The amount of space available on the system drive will be displayed under the drive. See the following example:
 
-![System drive](../images/drive.png)
+![System drive.](../images/drive.png)
 
 In the previous example, there is 703 GB of available free space on the system drive (C:).
 
 To free up additional space on the system drive, begin by running Disk Cleanup. You can access Disk Cleanup by right-clicking the hard drive icon and then clicking Properties. See the following example:
 
-![Disk cleanup](../images/cleanup.png)
+![Disk cleanup.](../images/cleanup.png)
 
 For instructions to run Disk Cleanup and other suggestions to free up hard drive space, see [Tips to free up drive space on your PC](https://support.microsoft.com/help/17421/windows-free-up-drive-space).
 

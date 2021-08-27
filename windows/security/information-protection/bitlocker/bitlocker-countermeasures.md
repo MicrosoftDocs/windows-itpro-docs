@@ -89,7 +89,7 @@ On computers with a compatible TPM, operating system drives that are BitLocker-p
 
 In the following Group Policy example, TPM + PIN is required to unlock an operating system drive:
 
-![Pre-boot authentication setting in Group Policy](images/pre-boot-authentication-group-policy.png)
+![Pre-boot authentication setting in Group Policy.](images/pre-boot-authentication-group-policy.png)
 
 Pre-boot authentication with a PIN can mitigate an attack vector for devices that use a bootable eDrive because an exposed eDrive bus can allow an attacker to capture the BitLocker encryption key during startup. 
 Pre-boot authentication with a PIN can also mitigate DMA port attacks during the window of time between when BitLocker unlocks the drive and Windows boots to the point that Windows can set any port-related policies that have been configured. 
@@ -110,7 +110,7 @@ This Kernel DMA Protection is available only for new systems beginning with Wind
 
 You can use the System Information desktop app (MSINFO32) to check if a device has kernel DMA protection enabled: 
 
-![Kernel DMA protection](images/kernel-dma-protection.png)
+![Kernel DMA protection.](images/kernel-dma-protection.png)
 
 If kernel DMA protection *not* enabled, follow these steps to protect Thunderbolt™ 3 enabled ports:
 

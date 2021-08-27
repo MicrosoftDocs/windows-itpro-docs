@@ -59,31 +59,31 @@ When performing an operating system upgrade, Windows Setup uses phases described
 
 1. **Downlevel phase**: The downlevel phase is run within the previous operating system. Windows files are copied and installation components are gathered.
 
-    ![downlevel phase](../images/downlevel.png)  
+    ![downlevel phase.](../images/downlevel.png)  
 
 2. **Safe OS phase**: A recovery partition is configured, Windows files are expanded, and updates are installed. An OS rollback is prepared if needed. Example error codes: 0x2000C, 0x20017.
 
-    ![safeOS phase](../images/safeos.png) 
+    ![safeOS phase.](../images/safeos.png) 
 
 3. **First boot phase**: Initial settings are applied. Example error codes: 0x30018, 0x3000D.
 
-    ![first boot phase](../images/firstboot.png) 
+    ![first boot phase.](../images/firstboot.png) 
 
 4. **Second boot phase**: Final settings are applied. This is also called the **OOBE boot phase**. Example error codes: 0x4000D, 0x40017. 
 
     At the end of the second boot phase, the **Welcome to Windows 10** screen is displayed, preferences are configured, and the Windows 10 sign-in prompt is displayed.
 
-    ![second boot phase](../images/secondboot.png) 
+    ![second boot phase.](../images/secondboot.png) 
 
-    ![second boot phase](../images/secondboot2.png) 
+    ![second boot phase.](../images/secondboot2.png) 
 
-    ![second boot phase](../images/secondboot3.png) 
+    ![second boot phase.](../images/secondboot3.png) 
 
 5. **Uninstall phase**: This phase occurs if upgrade is unsuccessful (image not shown). Example error codes: 0x50000, 0x50015.
 
 **Figure 1**: Phases of a successful Windows 10 upgrade (uninstall is not shown):
 
-![Upgrade process](../images/upgrade-process.png)
+![Upgrade process.](../images/upgrade-process.png)
 
 DU = Driver/device updates.<br>
 OOBE = Out of box experience.<br>

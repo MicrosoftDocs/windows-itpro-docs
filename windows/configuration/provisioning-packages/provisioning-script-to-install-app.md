@@ -189,13 +189,13 @@ cmd /c InstallMyApp.bat
 
 In Windows Configuration Designer, this looks like:
 
-![Command line in Selected customizations](../images/icd-script1.png)
+![Command line in Selected customizations.](../images/icd-script1.png)
 
 You also need to add the relevant assets for that command line including the orchestrator script and any other assets it references such as installers or .cab files.
 
 In Windows Configuration Designer, that is done by adding files under the `ProvisioningCommands/DeviceContext/CommandFiles` setting.
 
-![Command files in Selected customizations](../images/icd-script2.png)
+![Command files in Selected customizations.](../images/icd-script2.png)
 
 When you are done, [build the package](provisioning-create-package.md#build-package). 
  

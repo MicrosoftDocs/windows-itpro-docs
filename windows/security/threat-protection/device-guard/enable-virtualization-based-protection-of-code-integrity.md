@@ -58,7 +58,7 @@ Enabling in Intune requires using the Code Integrity node in the [AppLocker CSP]
 3. Double-click **Turn on Virtualization Based Security**.
 4. Click **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled with UEFI lock** to ensure HVCI cannot be disabled remotely or select **Enabled without UEFI lock**.
 
-   ![Enable HVCI using Group Policy](../images/enable-hvci-gp.png)
+   ![Enable HVCI using Group Policy.](../images/enable-hvci-gp.png)
 
 5. Click **Ok** to close the editor.
 
@@ -279,7 +279,7 @@ This field lists the computer name. All valid values for computer name.
 
 Another method to determine the available and enabled Windows Defender Device Guard features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the Windows Defender Device Guard properties are displayed at the bottom of the **System Summary** section.
 
-![Windows Defender Device Guard properties in the System Summary](../images/dg-fig11-dgproperties.png)
+![Windows Defender Device Guard properties in the System Summary.](../images/dg-fig11-dgproperties.png)
 
 ## Troubleshooting
 

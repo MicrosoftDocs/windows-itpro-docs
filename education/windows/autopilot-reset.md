@@ -61,7 +61,7 @@ You can set the policy using one of these methods:
 
   - When using [Set up School PCs](use-set-up-school-pcs-app.md), in the **Configure student PC settings** screen, select **Enable Windows 10 Autopilot Reset** among the list of settings for the student PC as shown in the following example:
 
-    ![Configure student PC settings in Set up School PCs](images/suspc_configure_pc2.jpg)
+    ![Configure student PC settings in Set up School PCs.](images/suspc_configure_pc2.jpg)
     
 ## Trigger Autopilot Reset
 Autopilot Reset is a two-step process: trigger it and then authenticate. Once you've done these two steps, you can let the process execute and once it's done, the device is again ready for use. 
@@ -70,7 +70,7 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
 1. From the Windows device lock screen, enter the keystroke: **CTRL + Windows key + R**. 
 
-   ![Enter CTRL+Windows key+R on the Windows lockscreen](images/autopilot-reset-lockscreen.png)
+   ![Enter CTRL+Windows key+R on the Windows lockscreen.](images/autopilot-reset-lockscreen.png)
 
    This will open up a custom login screen for Autopilot Reset. The screen serves two purposes:
 
@@ -78,7 +78,7 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
    2. Notify the user in case a provisioning package, created using Windows Configuration Designer or Set up School PCs, will be used as part of the process.
 
-      ![Custom login screen for Autopilot Reset](images/autopilot-reset-customlogin.png)
+      ![Custom login screen for Autopilot Reset.](images/autopilot-reset-customlogin.png)
 
 2. Sign in with the admin account credentials. If you created a provisioning package, plug in the USB drive and trigger Autopilot Reset.
 
@@ -97,7 +97,7 @@ Autopilot Reset is a two-step process: trigger it and then authenticate. Once yo
 
    - Is returned to a known good managed state, connected to Azure AD and MDM.
 
-     ![Notification that provisioning is complete](images/autopilot-reset-provisioningcomplete.png)
+     ![Notification that provisioning is complete.](images/autopilot-reset-provisioningcomplete.png)
 
      Once provisioning is complete, the device is again ready for use.
 

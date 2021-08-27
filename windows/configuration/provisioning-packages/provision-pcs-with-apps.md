@@ -74,11 +74,11 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 2. Enter a name for the first app, and then click **Add**.
 
-    ![enter name for first app](../images/wcd-app-name.png)
+    ![enter name for first app.](../images/wcd-app-name.png)
 
 3. Configure the settings for the appropriate installer type.
 
-    ![enter settings for first app](../images/wcd-app-commands.png)
+    ![enter settings for first app.](../images/wcd-app-commands.png)
 
 ## Add a universal app to your package
 
@@ -88,19 +88,19 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 2. For **DeviceContextApp**, specify the **PackageFamilyName** for the app. In Microsoft Store for Business, the package family name is listed in the **Package details** section of the download page.
 
-    ![details for offline app package](../images/uwp-family.png)
+    ![details for offline app package.](../images/uwp-family.png)
 
 3. For **ApplicationFile**, click **Browse** to find and select the target app (either an \*.appx or \*.appxbundle).
 
 4. For **DependencyAppxFiles**, click **Browse** to find and add any dependencies for the app. In Microsoft Store for Business, any dependencies for the app are listed in the **Required frameworks** section of the download page. 
 
-    ![required frameworks for offline app package](../images/uwp-dependencies.png)
+    ![required frameworks for offline app package.](../images/uwp-dependencies.png)
 
 5. For **DeviceContextAppLicense**, enter the **LicenseProductID**. 
 
     - In Microsoft Store for Business, generate the unencoded license for the app on the app's download page. 
 
-        ![generate license for offline app](../images/uwp-license.png)
+        ![generate license for offline app.](../images/uwp-license.png)
         
     - Open the license file and search for **LicenseID=** to get the GUID, enter the GUID in the **LicenseProductID** field and click **Add**.
     

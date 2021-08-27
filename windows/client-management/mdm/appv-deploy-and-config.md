@@ -23,7 +23,7 @@ manager: dansimp
 
 [EnterpriseAppVManagement CSP reference](./enterpriseappvmanagement-csp.md)
 
-![enterpriseappvmanagement csp](images/provisioning-csp-enterpriseappvmanagement.png)
+![enterpriseappvmanagement csp.](images/provisioning-csp-enterpriseappvmanagement.png)
 
 <p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following sub-nodes.</p>
 
