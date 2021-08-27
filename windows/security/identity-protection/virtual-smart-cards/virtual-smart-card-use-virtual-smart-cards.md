@@ -74,7 +74,7 @@ For more information about these Windows APIs, see:
 
 To help users visually distinguish a Trusted Platform Module (TPM)-based virtual smart card from physical smart cards, the virtual smart card has a different icon. The following icon is displayed during sign in, and on other screens that require the user to enter the PIN for a virtual smart card.
 
-![Icon for a virtual smart card](images/vsc-virtual-smart-card-icon.png)
+![Icon for a virtual smart card.](images/vsc-virtual-smart-card-icon.png)
 
 A TPM-based virtual smart card is labeled **Security Device** in the user interface.
 

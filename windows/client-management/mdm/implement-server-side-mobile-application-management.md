@@ -44,7 +44,7 @@ To make applications WIP-aware, app developers need to include the following dat
 
 MAM enrollment requires integration with Azure AD. The MAM service provider needs to publish the Management MDM app to the Azure AD app gallery. Starting with Azure AD in Windows 10, version 1703, the same cloud-based Management MDM app will support both MDM and MAM enrollments. If you have already published your MDM app, it needs to be updated to include MAM Enrollment and Terms of use URLs. The screenshot below illustrates the management app for an IT admin configuration.  
 
-![Mobile application management app](images/implement-server-side-mobile-application-management.png)
+![Mobile application management app.](images/implement-server-side-mobile-application-management.png)
 
 MAM and MDM services in an organization could be provided by different vendors. Depending on the company configuration, IT admin typically needs to add one or two Azure AD Management apps to configure MAM and MDM policies. For example, if both MAM and MDM are provided by the same vendor, then an IT Admin needs to add one Management app from this vendor that will contain both MAM and MDM policies for the organization. Alternatively, if the MAM and MDM services in an organization are provided by two different vendors, then two Management apps from the two vendors need to be configured for the company in Azure AD: one for MAM and one for MDM. Please note: if the MDM service in an organization is not integrated with Azure AD and uses auto-discovery, only one Management app for MAM needs to be configured.  
 

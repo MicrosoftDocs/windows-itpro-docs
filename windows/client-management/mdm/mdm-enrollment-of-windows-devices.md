@@ -25,7 +25,7 @@ In today’s cloud-first world, enterprise IT departments increasingly want to l
 
 You can connect corporate-owned devices to work by either joining the device to an Active Directory domain, or to an Azure Active Directory (Azure AD) domain. Windows 10 does not require a personal Microsoft account on devices joined to Azure AD or an on-premises Active Directory domain.
 
-![active directory azure ad signin](images/unifiedenrollment-rs1-1.png)
+![active directory azure ad signin.](images/unifiedenrollment-rs1-1.png)
 
 ### Connect your device to an Active Directory domain (join a domain)
 
@@ -40,15 +40,15 @@ Joining your device to an Active Directory domain during the out-of-box-experien
 
 1.  On the **Who Owns this PC?** page, select **My work or school owns it**.
 
-    ![oobe local account creation](images/unifiedenrollment-rs1-2.png)
+    ![oobe local account creation.](images/unifiedenrollment-rs1-2.png)
 
 2.  Next, select **Join a domain**.
 
-    ![select domain or azure ad](images/unifiedenrollment-rs1-3.png)
+    ![select domain or azure ad.](images/unifiedenrollment-rs1-3.png)
 
 3.  You'll see a prompt to set up a local account on the device. Enter your local account details, and then select **Next** to continue.
 
-    ![create pc account](images/unifiedenrollment-rs1-4.png)
+    ![create pc account.](images/unifiedenrollment-rs1-4.png)
 
 ### Use the Settings app
 
@@ -56,27 +56,27 @@ To create a local account and connect the device:
 
 1.  Launch the Settings app.
 
-    ![windows settings page](images/unifiedenrollment-rs1-5.png)
+    ![windows settings page.](images/unifiedenrollment-rs1-5.png)
 
 2.  Next, select **Accounts**.
 
-    ![windows settings accounts select](images/unifiedenrollment-rs1-6.png)
+    ![windows settings accounts select.](images/unifiedenrollment-rs1-6.png)
 
 3.  Navigate to **Access work or school**.
 
-    ![select access work or school](images/unifiedenrollment-rs1-7.png)
+    ![select access work or school.](images/unifiedenrollment-rs1-7.png)
 
 4.  Select **Connect**.
 
-    ![connect to work or school](images/unifiedenrollment-rs1-8.png)
+    ![connect to work or school.](images/unifiedenrollment-rs1-8.png)
 
 5.  Under **Alternate actions**, select **Join this device to a local Active Directory domain**.
 
-    ![join account to active directory domain](images/unifiedenrollment-rs1-9.png)
+    ![join account to active directory domain.](images/unifiedenrollment-rs1-9.png)
 
 6.  Type in your domain name, follow the instructions, and then select **Next** to continue. After you complete the flow and restart your device, it should be connected to your Active Directory domain. You can now sign in to the device using your domain credentials.
 
-    ![type in domain name](images/unifiedenrollment-rs1-10.png)
+    ![type in domain name.](images/unifiedenrollment-rs1-10.png)
 
 ### Help with connecting to an Active Directory domain
 
@@ -101,11 +101,11 @@ To join a domain:
 
 1.  Select **My work or school owns it**, then select **Next.**
 
-    ![oobe local account creation](images/unifiedenrollment-rs1-11.png)
+    ![oobe local account creation.](images/unifiedenrollment-rs1-11.png)
 
 2.  Select **Join Azure AD**, and then select **Next.**
 
-    ![select domain or azure ad](images/unifiedenrollment-rs1-12.png)
+    ![select domain or azure ad.](images/unifiedenrollment-rs1-12.png)
 
 3.  Type in your Azure AD username. This is the email address you use to log into Microsoft Office 365 and similar services.
 
@@ -113,7 +113,7 @@ To join a domain:
 
     Based on IT policy, you may also be prompted to provide a second factor of authentication at this point. If your Azure AD tenant has auto-enrollment configured, your device will also be enrolled into MDM during this flow. For more information, see [these steps](azure-ad-and-microsoft-intune-automatic-mdm-enrollment-in-the-new-portal.md). If your tenant is not configured for auto-enrollment, you will have to go through the enrollment flow a second time to connect your device to MDM. After you complete the flow, your device will be connected to your organization’s Azure AD domain.
 
-    ![azure ad signin](images/unifiedenrollment-rs1-13.png)
+    ![azure ad signin.](images/unifiedenrollment-rs1-13.png)
 
 ### Use the Settings app
 
@@ -121,27 +121,27 @@ To create a local account and connect the device:
 
 1.  Launch the Settings app.
 
-    ![windows settings page](images/unifiedenrollment-rs1-14.png)
+    ![windows settings page.](images/unifiedenrollment-rs1-14.png)
 
 2.  Next, navigate to **Accounts**.
 
-    ![windows settings accounts select](images/unifiedenrollment-rs1-15.png)
+    ![windows settings accounts select.](images/unifiedenrollment-rs1-15.png)
 
 3.  Navigate to **Access work or school**.
 
-    ![select access work or school](images/unifiedenrollment-rs1-16.png)
+    ![select access work or school.](images/unifiedenrollment-rs1-16.png)
 
 4.  Select **Connect**.
 
-    ![connect to work or school](images/unifiedenrollment-rs1-17.png)
+    ![connect to work or school.](images/unifiedenrollment-rs1-17.png)
 
 5.  Under **Alternate Actions**, selct **Join this device to Azure Active Directory**.
 
-    ![join work or school account to azure ad](images/unifiedenrollment-rs1-18.png)
+    ![join work or school account to azure ad.](images/unifiedenrollment-rs1-18.png)
 
 6.  Type in your Azure AD username. This is the email address you use to log into Office 365 and similar services.
 
-    ![azure ad sign in](images/unifiedenrollment-rs1-19.png)
+    ![azure ad sign in.](images/unifiedenrollment-rs1-19.png)
 
 7.  If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page changes to show the organization's custom branding, and you can enter your password directly on this page. If the tenant is part of a federated domain, you are redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
@@ -151,7 +151,7 @@ To create a local account and connect the device:
 
     After you reach the end of the flow, your device should be connected to your organization’s Azure AD domain. You may now log out of your current account and sign in using your Azure AD username.
 
-    ![corporate sign in](images/unifiedenrollment-rs1-20.png)
+    ![corporate sign in.](images/unifiedenrollment-rs1-20.png)
 
 ### Help with connecting to an Azure AD domain
 
@@ -183,19 +183,19 @@ To create a local account and connect the device:
 
 1.  Launch the Settings app, and then select **Accounts** >**Start** > **Settings** > **Accounts**.
 
-    ![windows settings page](images/unifiedenrollment-rs1-21-b.png)
+    ![windows settings page.](images/unifiedenrollment-rs1-21-b.png)
 
 2.  Navigate to **Access work or school**.
 
-    ![select access work or school](images/unifiedenrollment-rs1-23-b.png)
+    ![select access work or school.](images/unifiedenrollment-rs1-23-b.png)
 
 3.  Select **Connect**.
 
-    ![connect to work or school](images/unifiedenrollment-rs1-24-b.png)
+    ![connect to work or school.](images/unifiedenrollment-rs1-24-b.png)
 
 4.  Type in your Azure AD username. This is the email address you use to log into Office 365 and similar services.
 
-    ![join work or school account to azure ad](images/unifiedenrollment-rs1-25-b.png)
+    ![join work or school account to azure ad.](images/unifiedenrollment-rs1-25-b.png)
 
 5.  If the tenant is a cloud-only, password hash sync, or pass-through authentication tenant, this page changes to show the organization's custom branding, and can enter your password directly into the page. If the tenant is part of a federated domain, you are redirected to the organization's on-premises federation server, such as AD FS, for authentication.
 
@@ -205,11 +205,11 @@ To create a local account and connect the device:
 
     Starting in Windows 10, version 1709, you will see the status page that shows the progress of your device being set up.
 
-    ![corporate sign in](images/unifiedenrollment-rs1-26.png)
+    ![corporate sign in.](images/unifiedenrollment-rs1-26.png)
 
 6.  After you complete the flow, your Microsoft account will be connected to your work or school account.
 
-    ![account successfully added](images/unifiedenrollment-rs1-27.png)
+    ![account successfully added.](images/unifiedenrollment-rs1-27.png)
 
 ### Connect to MDM on a desktop (enrolling in device management)
 
@@ -221,29 +221,29 @@ To create a local account and connect the device:
 
 1. Launch the Settings app.
 
-   ![windows settings page](images/unifiedenrollment-rs1-28.png)
+   ![windows settings page.](images/unifiedenrollment-rs1-28.png)
 
 2. Next, navigate to **Accounts**.
 
-   ![windows settings accounts page](images/unifiedenrollment-rs1-29.png)
+   ![windows settings accounts page.](images/unifiedenrollment-rs1-29.png)
 
 3. Navigate to **Access work or school**.
 
-   ![access work or school](images/unifiedenrollment-rs1-30.png)
+   ![access work or school.](images/unifiedenrollment-rs1-30.png)
 
 4. Select the **Enroll only in device management** link (available in servicing build 14393.82, KB3176934). For older builds, see [Connect your Windows 10-based device to work using a deep link](mdm-enrollment-of-windows-devices.md#connect-your-windows-10-based-device-to-work-using-a-deep-link).
 
-   ![connect to work or school](images/unifiedenrollment-rs1-31.png)
+   ![connect to work or school.](images/unifiedenrollment-rs1-31.png)
 
 5. Type in your work email address.
 
-   ![set up work or school account](images/unifiedenrollment-rs1-32.png)
+   ![set up work or school account.](images/unifiedenrollment-rs1-32.png)
 
 6. If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you’ll be presented with a new window that will ask you for additional authentication information.
 
    Based on IT policy, you may also be prompted to provide a second factor of authentication at this point. Starting in Windows 10, version 1709, you will see the enrollment progress on screen.
 
-   ![corporate sign in](images/unifiedenrollment-rs1-33-b.png)
+   ![corporate sign in.](images/unifiedenrollment-rs1-33-b.png)
 
    After you complete the flow, your device will be connected to your organization’s MDM.
    
@@ -300,7 +300,7 @@ To connect your devices to MDM using deep links:
 
     - IT admins can add this link to a welcome email that users can select to enroll into MDM.
 
-      ![using enrollment deeplink in email](images/deeplinkenrollment1.png)
+      ![using enrollment deeplink in email.](images/deeplinkenrollment1.png)
 
     - IT admins can also add this link to an internal web page that users refer to enrollment instructions.
 
@@ -308,20 +308,20 @@ To connect your devices to MDM using deep links:
 
     Type in your work email address.
 
-    ![set up work or school account](images/deeplinkenrollment3.png)
+    ![set up work or school account.](images/deeplinkenrollment3.png)
 
 3.  If the device finds an endpoint that only supports on-premises authentication, this page will change and ask you for your password. If the device finds an MDM endpoint that supports federated authentication, you’ll be presented with a new window that will ask you for additional authentication information. Based on IT policy, you may also be prompted to provide a second factor of authentication at this point.
 
     After you complete the flow, your device will be connected to your organization's MDM.
 
-    ![corporate sign in](images/deeplinkenrollment4.png)
+    ![corporate sign in.](images/deeplinkenrollment4.png)
 
 ## Manage connections
 
 
 To manage your work or school connections, select **Settings** > **Accounts** > **Access work or school**. Your connections will show on this page and selecting one will expand options for that connection.
 
-![managing work or school account](images/unifiedenrollment-rs1-34-b.png)
+![managing work or school account.](images/unifiedenrollment-rs1-34-b.png)
 
 ### Info
 
@@ -335,7 +335,7 @@ Selecting the **Info** button will open a new page in the Settings app that prov
 
 Starting in Windows 10, version 1709, selecting the **Info** button will show a list of policies and line-of-business apps installed by your organization. Here is an example screenshot.
 
-![work or school info](images/unifiedenrollment-rs1-35-b.png)
+![work or school info.](images/unifiedenrollment-rs1-35-b.png)
 
 > [!NOTE]
 > Starting in Windows 10, version 1709, the **Manage** button is no longer available. 
@@ -357,7 +357,7 @@ You can collect diagnostic logs around your work connections by going to **Setti
 
 Starting in Windows 10, version 1709, you can get the advanced diagnostic report by going to **Settings** > **Accounts** > **Access work or school**, and selecting the **Info** button. At the bottom of the Settings page, you will see the button to create a report, as shown here.
 
-![collecting enrollment management log files](images/unifiedenrollment-rs1-37-c.png)
+![collecting enrollment management log files.](images/unifiedenrollment-rs1-37-c.png)
 
  
 

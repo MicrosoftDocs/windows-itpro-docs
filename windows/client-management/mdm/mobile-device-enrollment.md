@@ -68,7 +68,7 @@ Devices that are joined to an on-premises Active Directory can enroll into MDM v
 
 Starting in Windows 10, version 1607, IT admin can disable MDM enrollments for domain-joined PCs using Group Policy. Using the GP editor, the path is **Computer configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **MDM** &gt; **Disable MDM Enrollment**.
 
-![Disable MDM enrollment policy in GP Editor](images/mdm-enrollment-disable-policy.png)
+![Disable MDM enrollment policy in GP Editor.](images/mdm-enrollment-disable-policy.png)
 
 Here is the corresponding registry key:
 

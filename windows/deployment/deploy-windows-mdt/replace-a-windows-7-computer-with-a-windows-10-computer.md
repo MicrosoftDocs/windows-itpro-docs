@@ -32,7 +32,7 @@ For the purposes of this topic, we will use four computers: DC01, MDT01, PC0002,
 
 For more details on the setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
-![The computers used in this topic](../images/mdt-03-fig01.png)
+![The computers used in this topic.](../images/mdt-03-fig01.png)
 
 The computers used in this topic.
 
@@ -73,7 +73,7 @@ On **MDT01**:
 
 4. In the **Other** folder, double-click **Backup Only Task Sequence**, and then in the **Task Sequence** tab, review the sequence. Notice that it only contains a subset of the normal client task sequence actions.
 
-   ![The Backup Only Task Sequence action list](../images/mdt-03-fig02.png "The Backup Only Task Sequence action list")
+   ![The Backup Only Task Sequence action list.](../images/mdt-03-fig02.png "The Backup Only Task Sequence action list")
 
    The Backup Only Task Sequence action list.
 
@@ -103,13 +103,13 @@ On **PC0002**:
 
     The task sequence will now run USMT (Scanstate.exe) to capture user data and settings of the computer.
 
-    ![The new task sequence](../images/mdt-03-fig03.png "The new task sequence")
+    ![The new task sequence.](../images/mdt-03-fig03.png "The new task sequence")
 
     The new task sequence running the Capture User State action on PC0002.
 
 4.  On **MDT01**, verify that you have an USMT.MIG compressed backup file in the **D:\\MigData\\PC0002\\USMT** folder.
 
-    ![The USMT backup](../images/mdt-03-fig04.png "The USMT backup")
+    ![The USMT backup.](../images/mdt-03-fig04.png "The USMT backup")
 
     The USMT backup of PC0002.
 
@@ -130,7 +130,7 @@ On **HV01**:
 
 2.  Start the PC0007 virtual machine, and press **Enter** to start the Pre-Boot Execution Environment (PXE) boot. The VM will now load the Windows PE boot image from MDT01 (or MDT02 if at a remote site).
 
-    ![The initial PXE boot process](../images/mdt-03-fig05.png "The initial PXE boot process")
+    ![The initial PXE boot process.](../images/mdt-03-fig05.png "The initial PXE boot process")
 
     The initial PXE boot process of PC0007.
 
@@ -153,7 +153,7 @@ On **HV01**:
 
 You can view progress of the process by clicking the Monitoring node in the Deployment Workbrench on MDT01.
 
-![Monitor progress](../images/mdt-replace.png)
+![Monitor progress.](../images/mdt-replace.png)
 
 ## Related topics
 
