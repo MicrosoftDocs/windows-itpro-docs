@@ -31,7 +31,7 @@ The order of apps in the XML file dictates the order of pinned apps on the taskb
 
 The following example shows how apps will be pinned: Windows default apps to the left (blue circle), apps pinned by the user in the center (orange triangle), and apps that you pin using the XML file to the right (green square).
 
-![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
+![Windows left, user center, enterprise to the right.](images/taskbar-generic.png)
 
 
 ## Configure taskbar (general)
@@ -142,11 +142,11 @@ The `<CustomTaskbarLayoutCollection>` section will append listed apps to the tas
 ```
 **Before:**
 
-![default apps pinned to taskbar](images/taskbar-default.png)
+![default apps pinned to taskbar.](images/taskbar-default.png)
 
 **After:**
 
- ![additional apps pinned to taskbar](images/taskbar-default-plus.png)
+ ![additional apps pinned to taskbar.](images/taskbar-default-plus.png)
 
 ## Remove default apps and add your own
 
@@ -175,11 +175,11 @@ If you only want to remove some of the default pinned apps, you would use this m
 ```
 **Before:**
 
-![Taskbar with default apps](images/taskbar-default.png)
+![Taskbar with default apps.](images/taskbar-default.png)
 
 **After:**
 
-![Taskbar with default apps removed](images/taskbar-default-removed.png)
+![Taskbar with default apps removed.](images/taskbar-default-removed.png)
 
 ## Remove default apps
 
@@ -250,15 +250,15 @@ The following example shows you how to configure taskbars by country or region. 
 
 When the preceding example XML file is applied, the resulting taskbar for computers in the US or UK:
 
-![taskbar for US and UK locale](images/taskbar-region-usuk.png)
+![taskbar for US and UK locale.](images/taskbar-region-usuk.png)
 
 The resulting taskbar for computers in Germany or France:
 
-![taskbar for DE and FR locale](images/taskbar-region-defr.png)
+![taskbar for DE and FR locale.](images/taskbar-region-defr.png)
 
 The resulting taskbar for computers in any other country region:
 
-![taskbar for all other regions](images/taskbar-region-other.png)
+![taskbar for all other regions.](images/taskbar-region-other.png)
 
 
 > [!NOTE]

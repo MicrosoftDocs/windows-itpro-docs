@@ -38,7 +38,7 @@ The network administrators want to implement Windows Defender Firewall with Adva
 
 The following illustration shows the traffic protection needs for this design example.
 
-![design example 1](images/wfas-designexample1.gif)
+![design example 1.](images/wfas-designexample1.gif)
 
 1.  The network infrastructure servers that are running services, such as Active Directory, DNS, DHCP, or WINS, can receive unsolicited inbound requests from network clients. The network clients can receive the responses from the infrastructure servers.
 

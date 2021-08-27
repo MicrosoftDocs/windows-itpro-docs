@@ -81,7 +81,7 @@ Let's start by looking at the basic structure of the XML file.
 
 - A profile has no effect if it’s not associated to a config section.
 
-    ![profile = app and config = account](images/profile-config.png)
+    ![profile = app and config = account.](images/profile-config.png)
 
 You can start your file by pasting the following XML (or any other examples in this topic) into a XML editor, and saving the file as *filename*.xml. Each section of this XML is explained in this topic. You can see a full sample version in the [Assigned access XML reference.](kiosk-xml.md)
 
@@ -271,7 +271,7 @@ This example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint,
 >[!NOTE]
 >If an app is not installed for the user but is included in the Start layout XML, the app will not be shown on the Start screen.
 
-![What the Start screen looks like when the XML sample is applied](images/sample-start.png)
+![What the Start screen looks like when the XML sample is applied.](images/sample-start.png)
 
 ##### Taskbar
 
@@ -494,7 +494,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 7. In the center pane, click **Browse** to locate and select the assigned access configuration XML file that you created.
 
-   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer](images/multiappassignedaccesssettings.png)
+   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer.](images/multiappassignedaccesssettings.png)
 
 8. (**Optional**: If you want to apply the provisioning package after device initial setup and there is an admin user already available on the kiosk device, skip this step.) Create an admin user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.
 
@@ -544,7 +544,7 @@ Provisioning packages can be applied to a device during the first-run experience
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
-    ![The first screen to set up a new PC](images/oobe.jpg)
+    ![The first screen to set up a new PC.](images/oobe.jpg)
 
 2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
@@ -552,11 +552,11 @@ Provisioning packages can be applied to a device during the first-run experience
 
 3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
 
-    ![Provision this device](images/prov.jpg)
+    ![Provision this device.](images/prov.jpg)
 
 4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
 
-    ![Choose a package](images/choose-package.png)
+    ![Choose a package.](images/choose-package.png)
 
 5. Select **Yes, add it**.
 
@@ -570,7 +570,7 @@ Provisioning packages can be applied to a device during the first-run experience
 >[!NOTE]
 >if your provisioning package doesn’t include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device.
 
-![add a package option](images/package.png)
+![add a package option.](images/package.png)
 
 <span id="alternate-methods" />
 ### Use MDM to deploy the multi-app configuration

@@ -48,7 +48,7 @@ Each of the template policies has a unique set of policy allow list rules that w
 
 More information about the Default Windows Mode and Allow Microsoft Mode policies can be accessed through the [Example WDAC base policies article](example-wdac-base-policies.md). 
 
-![Selecting a base template for the policy](images/wdac-wizard-template-selection.png)
+![Selecting a base template for the policy.](images/wdac-wizard-template-selection.png)
 
 Once the base template is selected, give the policy a name and choose where to save the application control policy on disk.
 
@@ -74,7 +74,7 @@ A description of each policy rule, beginning with the left-most column, is provi
 | **User Mode Code Integrity** | WDAC policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. |
 
 > [!div class="mx-imgBorder"]
-> ![Rule options UI for Windows Allowed mode policy](images/wdac-wizard-rule-options-UI-advanced-collapsed.png)
+> ![Rule options UI for Windows Allowed mode policy.](images/wdac-wizard-rule-options-UI-advanced-collapsed.png)
 
 ### Advanced Policy Rules Description
 
@@ -89,7 +89,7 @@ Selecting the **+ Advanced Options** label will show another column of policy ru
 | **Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically revalidate the reputation for files that were authorized by the ISG.| 
 | **Require EV Signers** | In addition to being WHQL signed, this rule requires that drivers must have been submitted by a partner that has an Extended Verification (EV) certificate. All Windows 10 and later, or Windows 11 drivers will meet this requirement. |
 
-![Rule options UI for Windows Allowed mode](images/wdac-wizard-rule-options-UI.png)
+![Rule options UI for Windows Allowed mode.](images/wdac-wizard-rule-options-UI.png)
 
 > [!NOTE]
 > We recommend that you **enable Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. For this reason, all templates have Audit Mode enabled by default. 
@@ -110,7 +110,7 @@ The Publisher file rule type uses properties in the code signing certificate cha
 | **File name** | FilePublisher | Most specific. Combination of the file name, publisher, and PCA certificate as well as a minimum version number. Files from the publisher with the specified name and greater or equal to the specified version are affected. |
 
 
-![Custom filepublisher file rule creation](images/wdac-wizard-custom-publisher-rule.png)
+![Custom filepublisher file rule creation.](images/wdac-wizard-custom-publisher-rule.png)
 
 ### Filepath Rules
 
@@ -128,7 +128,7 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 | **Internal name** | Specifies the internal name of the binary. |
 
 > [!div class="mx-imgBorder"]
-> ![Custom file attributes rule](images/wdac-wizard-custom-file-attribute-rule.png)
+> ![Custom file attributes rule.](images/wdac-wizard-custom-file-attribute-rule.png)
 
 ### File Hash Rules
 

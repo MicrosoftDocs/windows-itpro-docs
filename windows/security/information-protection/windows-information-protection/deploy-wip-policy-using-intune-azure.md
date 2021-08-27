@@ -34,7 +34,7 @@ After you’ve created your Windows Information Protection (WIP) policy, you'll 
 
    The policy is deployed to the selected users' devices.
 
-   ![Microsoft Intune: Pick your user groups that should get the policy when it's deployed](images/wip-azure-add-user-groups.png)
+   ![Microsoft Intune: Pick your user groups that should get the policy when it's deployed.](images/wip-azure-add-user-groups.png)
 
 
 >[!NOTE]

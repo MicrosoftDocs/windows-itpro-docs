@@ -50,7 +50,7 @@ To get the names and AUMIDs for all apps installed for the current user, perform
 
 3. In the **Choose Details** window, select **AppUserModelId**, and then select **OK**. (You might need to change the **View** setting from **Tiles** to **Details**.)
 
-![Image of the Choose Details options](images/aumid-file-explorer.png)
+![Image of the Choose Details options.](images/aumid-file-explorer.png)
 
 ## To find the AUMID of an installed app for the current user by using the registry
 

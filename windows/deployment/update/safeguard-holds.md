@@ -30,7 +30,7 @@ Queries identify Safeguard IDs for each affected device, giving IT admins a deta
 On devices that use Windows Update (but not Windows Update for Business), the **Windows Update** page in the Settings app displays a message stating that an update is on its way, but not ready for the device. Instead of the option to download and install the update, users will see this message:
 
 
-![Feature update message reading "The Windows 10 May 2020 Update is on its way. Once it's ready for your device, you'll see the update available on this page](images/safeguard-hold-notification.png)
+![Feature update message reading "The Windows 10 May 2020 Update is on its way. Once it's ready for your device, you'll see the update available on this page.](images/safeguard-hold-notification.png)
 
 If you see this message, it means one or more holds affect your device. When the issue is fixed and the update is safe to install, we’ll release the hold and the update can resume safely.
 

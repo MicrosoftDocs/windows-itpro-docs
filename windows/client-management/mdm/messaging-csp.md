@@ -17,7 +17,7 @@ The Messaging configuration service provider is used to configure the ability to
 
 The following diagram shows the Messaging configuration service provider in tree format.
 
-![messaging csp](images/provisioning-csp-messaging.png)
+![messaging csp.](images/provisioning-csp-messaging.png)
 
 <a href="" id="--user-msft-applocker"></a>**./User/Vendor/MSFT/Messaging**  
 

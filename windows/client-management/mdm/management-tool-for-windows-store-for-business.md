@@ -59,13 +59,13 @@ The Store for Business provides services that enable a management tool to synchr
 
 The following diagram provides an overview of app distribution from acquisition of an offline-licensed application to distribution to a client. Once synchronized from the Store for Business, the management tool can use the Windows management framework to distribute applications to devices.
 
-![business store offline app distribution](images/businessstoreportalservices2.png)
+![business store offline app distribution.](images/businessstoreportalservices2.png)
 
 ### Online-licensed application distribution
 
 The following diagram provides an overview of app distribution from acquisition of an online-licensed application to distribution to a client. Once synchronized from the Store for Business, the management tool can use the Windows management framework to distribute applications to devices. For online-licensed applications, the management tool calls back into the Store for Business management services to assign an application prior to issuing the policy to install the application.
 
-![business store online app distribution](images/businessstoreportalservices3.png)
+![business store online app distribution.](images/businessstoreportalservices3.png)
 
 ## Integrate with Azure Active Directory
 
@@ -105,7 +105,7 @@ After registering your management tool with Azure AD, the management tool can ca
 
 The diagram below shows the call patterns for acquiring a new or updated application.
 
-![business store portal service flow diagram](images/businessstoreportalservicesflow.png)
+![business store portal service flow diagram.](images/businessstoreportalservicesflow.png)
 
 **Here is the list of available operations**:
 

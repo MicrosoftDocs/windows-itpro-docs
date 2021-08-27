@@ -176,7 +176,7 @@ Certutil writes the binary information to the following registration location:
 | Value | Binary contents from the certificate pin rules certificate trust list file |
 | Data type | REG_BINARY |
 
-![Registry binary information](images/enterprise-pinning-registry-binary-information.png)
+![Registry binary information.](images/enterprise-pinning-registry-binary-information.png)
 
 ### Deploying Enterprise Pin Rule Settings using Group Policy
 
@@ -203,7 +203,7 @@ Sign-in to the reference computer using domain administrator equivalent credenti
 
 11. The **Key Path** should contain the selected registry key. The **Value name** configuration should contain the registry value name **_PinRules_**. **Value type** should read **_REG\_BINARY_** and **Value data** should contain a long series of numbers from 0-9 and letters ranging from A-F (hexadecimal).  Click **OK** to save your settings and close the dialog box.
 
-    ![PinRules Properties](images/enterprise-certificate-pinning-pinrules-properties.png)
+    ![PinRules Properties.](images/enterprise-certificate-pinning-pinrules-properties.png)
 
 12. Close the **Group Policy Management Editor** to save your settings.
 13. Link the **Enterprise Certificate Pinning Rules** Group Policy object to apply to computers that run Windows 10, version 1703 in your enterprise. When these domain-joined computers apply Group Policy, the registry information configured in the Group Policy object is applied to the computer.
@@ -258,7 +258,7 @@ These dates must be properly formatted and represented in UTC.
 You can use Windows PowerShell to format these dates.  
 You can then copy and paste the output of the cmdlet into the XML file. 
 
-![Representing a date](images/enterprise-certificate-pinning-representing-a-date.png)
+![Representing a date.](images/enterprise-certificate-pinning-representing-a-date.png)
 
 For simplicity, you can truncate decimal point (.) and the numbers after it. 
 However, be certain to append the uppercase “Z” to the end of the XML date string.
@@ -272,7 +272,7 @@ However, be certain to append the uppercase “Z” to the end of the XML date s
 
 You can also use Windows PowerShell to validate convert an XML date into a human readable date to validate it’s the correct date.
 
-![Converting an XML date](images/enterprise-certificate-pinning-converting-an-xml-date.png)
+![Converting an XML date.](images/enterprise-certificate-pinning-converting-an-xml-date.png)
 
 ## Representing a Duration in XML
 
@@ -280,13 +280,13 @@ Some elements may be configured to use a duration rather than a date.
 You must represent the duration as an XML timespan data type. 
 You can use Windows PowerShell to properly format and validate durations (timespans) and copy and paste them into your XML file.
 
-![Representing a duration](images/enterprise-certificate-pinning-representing-a-duration.png)
+![Representing a duration.](images/enterprise-certificate-pinning-representing-a-duration.png)
 
 ## Converting an XML Duration
 
 You can convert a XML formatted timespan into a timespan variable that you can read. 
 
-![Converting an XML duration](images/enterprise-certificate-pinning-converting-a-duration.png)
+![Converting an XML duration.](images/enterprise-certificate-pinning-converting-a-duration.png)
 
 ## Certificate Trust List XML Schema Definition (XSD)
 
