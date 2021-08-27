@@ -271,6 +271,8 @@
           href: update/how-windows-update-works.md
         - name: Windows 10 upgrade paths
           href: upgrade/windows-10-upgrade-paths.md
+        - name: Windows 10 edition upgrade
+          href: upgrade/windows-10-edition-upgrades.md
         - name: Deploy Windows 10 with Microsoft 365
           href: deploy-m365.md
         - name: Understand the Unified Update Platform

@@ -66,13 +66,13 @@ You can apply a provisioning package to a device running Windows 10 Mobile by us
 1. Insert an SD card containing the provisioning package into the device.
 2. Navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. 
 
-    ![add a package option](../images/packages-mobile.png)
+    ![add a package option.](../images/packages-mobile.png)
 
 3. Click **Add**.
 
 4. On the device, the **Is this package from a source you trust?** message will appear. Tap **Yes, add it**.
 
-    ![Is this package from a source you trust](../images/package-trust.png)
+    ![Is this package from a source you trust.](../images/package-trust.png)
     
 ### Copying the provisioning package to the device
 
@@ -82,7 +82,7 @@ You can apply a provisioning package to a device running Windows 10 Mobile by us
 
 3. On the device, the **Is this package from a source you trust?** message will appear. Tap **Yes, add it**.
 
-    ![Is this package from a source you trust](../images/package-trust.png)
+    ![Is this package from a source you trust.](../images/package-trust.png)
 
 
 ## Related topics

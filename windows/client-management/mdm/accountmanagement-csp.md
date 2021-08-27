@@ -22,7 +22,7 @@ AccountManagement CSP is used to configure setting in the Account Manager servic
 
 The following diagram shows the AccountManagement configuration service provider in tree format.
 
-![accountmanagement csp](images/provisioning-csp-accountmanagement.png)
+![accountmanagement csp.](images/provisioning-csp-accountmanagement.png)
 
 <a href="" id="accountmanagement"></a>**./Vendor/MSFT/AccountManagement**  
 Root node for the AccountManagement configuration service provider.

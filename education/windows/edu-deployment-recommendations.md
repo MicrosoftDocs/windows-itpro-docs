@@ -55,11 +55,11 @@ To turn off access to contacts for all apps on individual Windows devices:
 
 1. On the computer, go to **Settings** and select **Privacy**.
 
-   ![Privacy settings](images/win10_settings_privacy.png)
+   ![Privacy settings.](images/win10_settings_privacy.png)
 
 2. Under the list of **Privacy** areas, select **Contacts**.
 
-   ![Contacts privacy settings](images/win10_settings_privacy_contacts.png)
+   ![Contacts privacy settings.](images/win10_settings_privacy_contacts.png)
 
 3. Turn off **Let apps access my contacts**.
 
@@ -73,7 +73,7 @@ For IT-managed Windows devices, you can use a Group Policy to turn off the setti
 
 If you want to allow only certain apps to have access to contacts, you can use the switch for each app to specify which ones you want on or off.
 
-![Choose apps with access to contacts](images/win10_settings_privacy_contacts_apps.png)
+![Choose apps with access to contacts.](images/win10_settings_privacy_contacts_apps.png)
 
 The list of apps on the Windows-based device may vary from the above example. The list depends on what apps you have installed and which of these apps access contacts.
 
@@ -83,7 +83,7 @@ To allow only certain apps to have access to contacts, you can:
 
 * Apply the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps access contacts** and then specify the default for each app by adding the app's Package Family Name under the default behavior you want to enforce.
 
-  ![App privacy Group Policy](images/gp_letwinappsaccesscontacts.png)
+  ![App privacy Group Policy.](images/gp_letwinappsaccesscontacts.png)
 
 
 ## Skype and Xbox settings
@@ -109,7 +109,7 @@ Skype uses the user’s contact details to deliver important information about t
 
 To manage and edit your profile in the Skype UWP app, follow these steps:
 
-1. In the Skype UWP app, select the user profile icon ![Skype profile icon](images/skype_uwp_userprofile_icon.png)  to go to the user’s profile page.
+1. In the Skype UWP app, select the user profile icon ![Skype profile icon.](images/skype_uwp_userprofile_icon.png)  to go to the user’s profile page.
 
 2. In the account page, select **Manage account** for the Skype account that you want to change. This will take you to the online Skype portal.
 
@@ -127,7 +127,7 @@ To manage and edit your profile in the Skype UWP app, follow these steps:
 
 6. To change the profile picture, go to the Skype app and click on the current profile picture or avatar. The **Manage Profile Picture** window pops up.
 
-   ![Skype profile icon](images/skype_uwp_manageprofilepic.png)
+   ![Skype profile icon.](images/skype_uwp_manageprofilepic.png)
 
    * To take a new picture, click the camera icon in the pop up window. To upload a new picture, click the three dots (**...**).
 

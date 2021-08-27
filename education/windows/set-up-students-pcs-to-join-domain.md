@@ -43,7 +43,7 @@ Follow the steps in [Provision PCs with common settings for initial deployment (
 
       **Figure 7** - Add the account to use for test-taking
 
-      ![Add the account to use for test-taking](images/wcd_settings_assignedaccess.png)
+      ![Add the account to use for test-taking.](images/wcd_settings_assignedaccess.png)
 
       The account can be in one of the following formats:
       - username

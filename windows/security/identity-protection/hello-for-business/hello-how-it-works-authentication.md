@@ -31,7 +31,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 
 
 ## Azure AD join authentication to Azure Active Directory
-![Azure AD join authentication to Azure Active Directory](images/howitworks/auth-aadj-cloud.png)
+![Azure AD join authentication to Azure Active Directory.](images/howitworks/auth-aadj-cloud.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -42,7 +42,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 |E | The Cloud AP provider returns a successful authentication response to lsass. Lsass caches the PRT, and informs winlogon of the success authentication.  Winlogon creates a logon session, loads the user's profile, and starts explorer.exe.| 
 
 ## Azure AD join authentication to Active Directory using a Key
-![Azure AD join authentication to Active Directory using a Key](images/howitworks/auth-aadj-keytrust-kerb.png)
+![Azure AD join authentication to Active Directory using a Key.](images/howitworks/auth-aadj-keytrust-kerb.png)
 
 
 | Phase  | Description  |
@@ -56,7 +56,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 
 
 ## Azure AD join authentication to Active Directory using a Certificate
-![Azure AD join authentication to Active Directory using a Certificate](images/howitworks/auth-aadj-certtrust-kerb.png)
+![Azure AD join authentication to Active Directory using a Certificate.](images/howitworks/auth-aadj-certtrust-kerb.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -69,7 +69,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 
 
 ## Hybrid Azure AD join authentication using a Key
-![Hybrid Azure AD join authentication using a Key](images/howitworks/auth-haadj-keytrust.png)
+![Hybrid Azure AD join authentication using a Key.](images/howitworks/auth-haadj-keytrust.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
@@ -85,7 +85,7 @@ Azure Active Directory joined devices authenticate to Azure during sign-in and c
 > In the above deployment model, a newly provisioned user will not be able to sign in using Windows Hello for Business until (a) Azure AD Connect successfully synchronizes the public key to the on-premises Active Directory and (b) device has line of sight to the domain controller for the first time.
 
 ## Hybrid Azure AD join authentication using a Certificate
-![Hybrid Azure AD join authentication using a Certificate](images/howitworks/auth-haadj-certtrust.png)
+![Hybrid Azure AD join authentication using a Certificate.](images/howitworks/auth-haadj-certtrust.png)
 
 | Phase  | Description  |
 | :----: | :----------- |

@@ -70,7 +70,7 @@ To locate the schema master role holder, open and command prompt and type:
 
 ```Netdom query fsmo | findstr -i schema```
 
-![Netdom example output](images/hello-cmd-netdom.png)
+![Netdom example output.](images/hello-cmd-netdom.png)
 
 The command should return the name of the domain controller where you need to run adprep.exe.  Update the schema locally on the domain controller hosting the Schema master role.
 
@@ -114,14 +114,14 @@ When you are ready to install, follow the **Configuring federation with AD FS** 
 ### Create AD objects for AD FS Device Authentication  
 If your AD FS farm is not already configured for Device Authentication (you can see this in the AD FS Management console under Service -> Device Registration), use the following steps to create the correct AD DS objects and configuration.  
 
-![Device Registration](images/hybridct/device1.png)
+![Device Registration.](images/hybridct/device1.png)
 
 > [!NOTE]
 > The below commands require Active Directory administration tools, so if your federation server is not also a domain controller, first install the tools using step 1 below.  Otherwise you can skip step 1.  
 
 1.  Run the **Add Roles & Features** wizard and select feature **Remote Server Administration Tools** -> **Role Administration Tools** -> **AD DS and AD LDS Tools** -> Choose both the **Active Directory module for Windows PowerShell** and the **AD DS Tools**.
 
-![Device Registration](images/hybridct/device2.png)
+![Device Registration.](images/hybridct/device2.png)
 
 2. On your AD FS primary server, ensure you are logged in as AD DS user with enterprise administrator privileges and open an elevated Windows PowerShell prompt.  Then, run the following commands:  
 
@@ -132,7 +132,7 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 > [!NOTE]
 > If your AD FS service is configured to use a GMSA account, enter the account name in the format "domain\accountname$"
 
-![Device Registration](images/hybridct/device3.png)  
+![Device Registration.](images/hybridct/device3.png)  
 
 The above PSH creates the following objects:  
 
@@ -140,11 +140,11 @@ The above PSH creates the following objects:
 - Device Registration Service container and object under Configuration --> Services --> Device Registration Configuration  
 - Device Registration Service DKM container and object under Configuration --> Services --> Device Registration Configuration  
 
-![Device Registration](images/hybridct/device4.png)  
+![Device Registration.](images/hybridct/device4.png)  
 
 4. Once this is done, you will see a successful completion message.
 
-![Device Registration](images/hybridct/device5.png) 
+![Device Registration.](images/hybridct/device5.png) 
 
 ### Create Service Connection Point (SCP) in Active Directory  
 If you plan to use Windows 10 domain join (with automatic registration to Azure AD) as described here, execute the following commands to create a service connection point in AD DS  
@@ -155,13 +155,13 @@ If you plan to use Windows 10 domain join (with automatic registration to Azure 
 > [!NOTE]
 > If necessary, copy the AdSyncPrep.psm1 file from your Azure AD Connect server.  This file is located in Program Files\Microsoft Azure Active Directory Connect\AdPrep
 
-![Device Registration](images/hybridct/device6.png)   
+![Device Registration.](images/hybridct/device6.png)   
 
 2. Provide your Azure AD global administrator credentials  
 
     `PS C:>$aadAdminCred = Get-Credential`
 
-![Device Registration](images/hybridct/device7.png) 
+![Device Registration.](images/hybridct/device7.png) 
 
 3. Run the following PowerShell command 
 
@@ -517,7 +517,7 @@ For your reference, below is a comprehensive list of the AD DS devices, containe
 - Container CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;
 - Container Device Registration Service DKM under the above container
 
-![Device Registration](images/hybridct/device8.png) 
+![Device Registration.](images/hybridct/device8.png) 
 
 - object of type serviceConnectionpoint at CN=&lt;guid&gt;, CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;  
   - read/write access to the specified AD connector account name on the new object 

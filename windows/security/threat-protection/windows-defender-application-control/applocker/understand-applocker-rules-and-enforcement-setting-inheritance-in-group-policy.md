@@ -49,7 +49,7 @@ Because a computer's effective policy includes rules from each linked GPO, dupli
 
 The following figure demonstrates how AppLocker rule enforcement is applied through linked GPOs.
 
-![applocker rule enforcement inheritance chart](images/applocker-plan-inheritance.gif)
+![applocker rule enforcement inheritance chart.](images/applocker-plan-inheritance.gif)
 
 In the preceding illustration, note that all GPOs linked to Contoso are applied in order as configured. The rules that are not configured are also applied. For example, the result of the Contoso and Human Resources GPOs is 33 rules enforced, as shown in the client HR-Term1. The Human Resources GPO contains 10 non-configured rules. When the rule collection is configured for **Audit only**, no rules are enforced.
 

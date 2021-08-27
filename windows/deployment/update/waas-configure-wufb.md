@@ -56,7 +56,7 @@ With Windows Update for Business, you can set a device to be on either Windows I
 
 Starting with Windows 10, version 1703, users can configure the branch readiness level for their device by using **Settings > Update & security > Windows Update > Advanced options**.
 
-![Branch readiness level setting](images/waas-wufb-settings-branch.jpg)
+![Branch readiness level setting.](images/waas-wufb-settings-branch.jpg)
 
 >[!NOTE]
 >Users will not be able to change this setting if it was configured by policy.
