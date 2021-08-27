@@ -25,10 +25,10 @@ TPMPolicy
 ----IsActiveZeroExhaust
 ```
 <a href="" id="--device-vendor-msft-tpmpolicy"></a>**./Device/Vendor/MSFT/TPMPolicy**  
-<p style="margin-left: 20px">Defines the root node.</p>
+<p>Defines the root node.</p>
 
 <a href="" id="isactivezeroexhaust"></a>**IsActiveZeroExhaust**  
-<p style="margin-left: 20px">Boolean value that indicates whether network traffic from the device to public IP addresses is not allowed unless directly intended by the user (zero exhaust). Default value is false. Some examples when zero exhaust is configured:</p>
+<p>Boolean value that indicates whether network traffic from the device to public IP addresses is not allowed unless directly intended by the user (zero exhaust). Default value is false. Some examples when zero exhaust is configured:</p>
 
 <ul>
 <li>There should be no traffic when machine is on idle. When the user is not interacting with the system/device, no traffic is expected. </li>

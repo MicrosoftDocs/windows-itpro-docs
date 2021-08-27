@@ -185,7 +185,7 @@ After entering these commands, connect to the VM that you just created and wait 
 
 See the sample output below. In this sample, the VM is created under the **c:\autopilot** directory and the vmconnect.exe command is used (which is only available on Windows Server). If you installed Hyper-V on Windows 10, use Hyper-V Manager to connect to your VM.
 
-<pre style="overflow-y: visible">
+<pre>
 PS C:\autopilot&gt; dir c:\iso
 
 
