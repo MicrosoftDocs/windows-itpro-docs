@@ -88,7 +88,7 @@ In this example, the deferral behavior for updates to Office and other non-Windo
 
 For Windows 10, version 1607, organizations already managing their systems with a Configuration Manager solution can also have their devices configured for Windows Update for Business (i.e. setting deferral policies on those devices). Such devices will be visible in the Configuration Manager console, however they will appear with a detection state of **Unknown**.
 
-![Example of unknown devices.](images/wufb-sccm.png)
+![Example of unknown devices](images/wufb-sccm.png)
 
 For more information, see [Integration with Windows Update for Business in Windows 10](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10).
 

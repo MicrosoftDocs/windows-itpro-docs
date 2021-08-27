@@ -39,7 +39,7 @@ Before you can use a site list with Enterprise Mode, you need to turn the functi
 1. Open your Group Policy editor and go to the `Administrative Templates\Windows Components\Internet Explorer\Use the Enterprise Mode IE website list` setting.<p>
    Turning this setting on also requires you to create and store a site list. For more information about creating your site list, see the [Use the Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md) topics.
 
-   ![local group policy editor for using a site list.](images/ie-emie-grouppolicysitelist.png)
+   ![local group policy editor for using a site list](images/ie-emie-grouppolicysitelist.png)
 
 2. Click **Enabled**, and then in the **Options** area, type the location to your site list.
 
@@ -51,7 +51,7 @@ Before you can use a site list with Enterprise Mode, you need to turn the functi
 
 4. Edit the `SiteList` registry key to point to where you want to keep your Enterprise Mode site list file. For example:
 
-   ![enterprise mode with site list in the registry.](images/ie-emie-registrysitelist.png)
+   ![enterprise mode with site list in the registry](images/ie-emie-registrysitelist.png)
 
    -   **HTTPS location**: `"SiteList"="https://localhost:8080/sites.xml"`
 

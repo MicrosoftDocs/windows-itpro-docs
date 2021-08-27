@@ -46,11 +46,11 @@ The following sections discuss the boot experience, deployment methods, and tool
 
 The following diagrams illustrate the two different methods you could use to provide Windows To Go drives to your users. The experiences differ depending on whether the user will be booting the device initially on-premises or off-premises:
 
-![initial boot on-premises.](images/wtg-first-boot-work.gif)
+![initial boot on-premises](images/wtg-first-boot-work.gif)
 
 When a Windows To Go workspace is first used at the workplace, the Windows To Go workspace can be joined to the domain through the normal procedures that occur when a new computer is introduced. It obtains a lease, applicable policies are applied and set, and user account tokens are placed appropriately. BitLocker protection can be applied and the BitLocker recovery key automatically stored in Active Directory Domain Services. The user can access network resources to install software and get access to data sources. When the workspace is subsequently booted at a different location either on or off premises, the configuration required for it to connect back to the work network using either DirectAccess or a virtual private network connection can be configured. It is not necessary to configure the workspace for offline domain join. DirectAccess can make connecting to organizational resources easier, but is not required.
 
-![initial boot off-premises.](images/wtg-first-boot-home.gif)
+![initial boot off-premises](images/wtg-first-boot-home.gif)
 
 When the Windows To Go workspace is going to be used first on an off-premises computer, such as one at the employee's home, then the IT professional preparing the Windows To Go drives should configure the drive to be able to connect to organizational resources and to maintain the security of the workspace. In this situation, the Windows To Go workspace needs to be configured for offline domain join and BitLocker needs to be enabled before the workspace has been initialized.
 
@@ -63,7 +63,7 @@ DirectAccess can be used to ensure that the user can log in with their domain cr
 
 The Image Deployment process can be accomplished either by a centralized IT process for your organization or by individual users creating their own Windows To Go workspaces. You must have local Administrator access and access to a Windows 10 Enterprise or Windows 10 Education image to create a Windows To Go workspace, or you must be using System Center 2012 Configuration Manager Service Pack 1 or later to distribute Windows To Go workspaces to users. The image deployment process takes a blank USB drive and a Windows 10 Enterprise image (WIM) and turns it into a Windows To Go drive.
 
-![windows to go image deployment.](images/wtg-image-deployment.gif)
+![windows to go image deployment](images/wtg-image-deployment.gif)
 
 The simplest way to provision a Windows To Go drive is to use the Windows To Go Creator. After a single Windows To Go workspace has been created, it can be duplicated as many times as necessary using widely available USB duplicator products as long as the device has not been booted. After the Windows To Go drive is initialized, it should not be duplicated. Alternatively, Windows To Go Workspace Creator can be run multiple times to create multiple Windows To Go drives.
 
@@ -265,13 +265,13 @@ If you are going to be using a Windows 7 computer as a host-PC, see the wiki art
 
 Windows supports two types of PC firmware: Unified Extensible Firmware Interface (UEFI), which is the new standard, and legacy BIOS firmware, which was used in most PCs shipping with Windows 7 or earlier version of Windows. Each firmware type has completely different Windows boot components that are incompatible with each other. Beyond the different boot components, Windows supports different partition styles and layout requirements for each type of firmware as shown in the following diagrams.
 
-![bios layout.](images/wtg-mbr-bios.gif)![uefi layout](images/wtg-gpt-uefi.gif)
+![bios layout](images/wtg-mbr-bios.gif)![uefi layout](images/wtg-gpt-uefi.gif)
 
 This presented a unique challenge for Windows To Go because the firmware type is not easily determined by end users—a UEFI computer looks just like a legacy BIOS computer and Windows To Go must boot on both types of firmware.
 
 To enable booting Windows To Go on both types of firmware, a new disk layout is provided for Windows 8 or later that contains both sets of boot components on a FAT32 system partition and a new command-line option was added to bcdboot.exe to support this configuration. The **/f** option is used with the **bcdboot /s** command to specify the firmware type of the target system partition by appending either **UEFI**, **BIOS** or **ALL**. When creating Windows To Go drives manually you must use the **ALL** parameter to provide the Windows To Go drive the ability to boot on both types of firmware. For example, on volume H: (your Windows To Go USB drive letter), you would use the command **bcdboot C:\\windows /s H: /f ALL**. The following diagram illustrates the disk layout that results from that command:
 
-![firmware roaming disk layout.](images/wtg-mbr-firmware-roaming.gif)
+![firmware roaming disk layout](images/wtg-mbr-firmware-roaming.gif)
 
 This is the only supported disk configuration for Windows To Go. With this disk configuration, a single Windows To Go drive can be booted on computers with UEFI and legacy BIOS firmware.
 
@@ -283,7 +283,7 @@ Windows To Go Startup Options is a setting available on Windows 10-based PCs tha
 
 1. On the Start screen, type, type **Windows To Go Startup Options**, click **Settings** and, then press Enter.
 
-  ![windows to go startup options.](images/wtg-startup-options.gif)
+  ![windows to go startup options](images/wtg-startup-options.gif)
 
 2. Select **Yes** to enable the startup options.
 

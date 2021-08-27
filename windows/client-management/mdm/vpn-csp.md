@@ -33,7 +33,7 @@ Important considerations:
 
 The following diagram shows the VPN configuration service provider in tree format.
 
-![provisioning\-csp\-vpnimg.](images/provisioning-csp-vpn.png)
+![provisioning\-csp\-vpnimg](images/provisioning-csp-vpn.png)
 
 <a href="" id="profilename"></a>***ProfileName***
 Unique alpha numeric Identifier for the profile. The profile name must not include a forward slash (/).

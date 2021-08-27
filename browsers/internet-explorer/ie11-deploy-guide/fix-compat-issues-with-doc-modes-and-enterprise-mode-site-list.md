@@ -45,7 +45,7 @@ To see if this fix might help you, run through this process one step at a time, 
 
 1.  Go to a site having compatibility problems, press **F12** to open the **F12 Developer Tools**, and go to the **Emulation** tool.
 
-    ![Emulation tool showing document mode selection.](images/docmode-f12.png)
+    ![Emulation tool showing document mode selection](images/docmode-f12.png)
 
 2.  Starting with the **11 (Default)** option, test your broken scenario.<br>
 If that doesn’t work, continue down to the next lowest document mode, stopping as soon as you find a document mode that fixes your problems. For more information about the Emulation tool, see [Emulate browsers, screen sizes, and GPS locations](/previous-versions/windows/internet-explorer/ie-developer/samples/dn255001(v=vs.85)).
@@ -62,7 +62,7 @@ There are two versions of the Enterprise Mode site list schema and the Enterpris
 
 1.  Open the Enterprise Mode Site List Manager, and click **Add**.
 
-    ![Enterprise Mode Site List Manager, showing the available modes.](images/emie-listmgr.png)
+    ![Enterprise Mode Site List Manager, showing the available modes](images/emie-listmgr.png)
 
 2.  Add the **URL** and pick the document mode from the **Launch in** box. This should be the same document mode you found fixed your problems while testing the site.<br>
 Similar to Enterprise Mode, you can specify a document mode for a particular web path—such as contoso.com/ERP—or at a domain level. In the above, the entire contoso.com domain loads in Enterprise Mode, while microsoft.com is forced to load into IE8 Document Mode and bing.com loads in IE11.
@@ -74,7 +74,7 @@ For more information about Enterprise Mode, see [What is Enterprise Mode?](what-
 ### Review your Enterprise Mode site list
 Take a look at your Enterprise Mode site list and make sure everything is the way you want it. The next step will be to turn the list on and start to use it in your company. The Enterprise Mode Site List Manager will look something like:
 
-![Enterprise Mode Site List Manager, showing the different modes.](images/emie-sitelistmgr.png)
+![Enterprise Mode Site List Manager, showing the different modes](images/emie-sitelistmgr.png)
 
 And the underlying XML code will look something like:
 

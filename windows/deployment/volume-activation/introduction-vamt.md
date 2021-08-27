@@ -45,7 +45,7 @@ VAMT treats a KMS Host key (CSVLK) product key identically to a retail-type prod
 
 VAMT is commonly implemented in enterprise environments. The following illustrates three common environments—Core Network, Secure Zone, and Isolated Lab.
 
-![VAMT in the enterprise.](images/dep-win8-l-vamt-image001-enterprise.jpg)
+![VAMT in the enterprise](images/dep-win8-l-vamt-image001-enterprise.jpg)
 
 In the Core Network environment, all computers are within a common network managed by Active Directory® Domain Services (AD DS). The Secure Zone represents higher-security Core Network computers that have additional firewall protection.
 The Isolated Lab environment is a workgroup that is physically separate from the Core Network, and its computers do not have Internet access. The network security policy states that no information that could identify a specific computer or user may be transferred out of the Isolated Lab.
@@ -54,7 +54,7 @@ The Isolated Lab environment is a workgroup that is physically separate from the
 
 The following screenshot shows the VAMT graphical user interface.
 
-![VAMT user interface.](images/vamtuserinterfaceupdated.jpg)
+![VAMT user interface](images/vamtuserinterfaceupdated.jpg)
 
 VAMT provides a single, graphical user interface for managing activations, and for performing other activation-related tasks such as:
 

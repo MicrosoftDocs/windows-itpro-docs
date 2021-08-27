@@ -55,7 +55,7 @@ The process proceeds as follows:
 3. Client computers are activated by receiving the activation object from a domain controller during startup.
 
     > [!div class="mx-imgBorder"]
-    > ![Active Directory-based activation flow.](../images/volumeactivationforwindows81-10.jpg)
+    > ![Active Directory-based activation flow](../images/volumeactivationforwindows81-10.jpg)
 
     **Figure 10**. The Active Directory-based activation flow
 
@@ -80,31 +80,31 @@ When a reactivation event occurs, the client queries AD DS for the activation o
 
 3. Add the Volume Activation Services role, as shown in Figure 11.
 
-    ![Adding the Volume Activation Services role.](../images/volumeactivationforwindows81-11.jpg)
+    ![Adding the Volume Activation Services role](../images/volumeactivationforwindows81-11.jpg)
 
     **Figure 11**. Adding the Volume Activation Services role
 
 4. Click the link to launch the Volume Activation Tools (Figure 12).
 
-    ![Launching the Volume Activation Tools.](../images/volumeactivationforwindows81-12.jpg)
+    ![Launching the Volume Activation Tools](../images/volumeactivationforwindows81-12.jpg)
 
     **Figure 12**. Launching the Volume Activation Tools
 
 5. Select the **Active Directory-Based Activation** option (Figure 13).
 
-    ![Selecting Active Directory-Based Activation.](../images/volumeactivationforwindows81-13.jpg)
+    ![Selecting Active Directory-Based Activation](../images/volumeactivationforwindows81-13.jpg)
 
     **Figure 13**. Selecting Active Directory-Based Activation
 
 6. Enter your KMS host key and (optionally) a display name (Figure 14).
 
-    ![Choosing how to activate your product.](../images/volumeactivationforwindows81-15.jpg)
+    ![Choosing how to activate your product](../images/volumeactivationforwindows81-15.jpg)
 
     **Figure 14**. Entering your KMS host key
 
 7. Activate your KMS host key by phone or online (Figure 15).
 
-    ![Entering your KMS host key.](../images/volumeactivationforwindows81-14.jpg)
+    ![Entering your KMS host key](../images/volumeactivationforwindows81-14.jpg)
     
     **Figure 15**. Choosing how to activate your product
 

@@ -44,7 +44,7 @@ On **CM01**:
 
 2.  Right-click the **MDT Production** deployment share, and click **Properties**. On the **Monitoring** tab, select the **Enable monitoring for this deployment share** check box, and click **OK**.
 
-    ![Enable MDT monitoring for Configuration Manager.](../images/mdt-06-fig31.png)
+    ![Enable MDT monitoring for Configuration Manager](../images/mdt-06-fig31.png)
 
     Enable MDT monitoring for Configuration Manager
 
@@ -80,7 +80,7 @@ On **CM01**:
    ApplyGPOPack=NO
    ```
 
-   ![Settings package during deployment.](../images/fig30-settingspack.png)
+   ![Settings package during deployment](../images/fig30-settingspack.png)
 
    The Settings package, holding the rules and the Unattend.xml template used during deployment
 
@@ -99,7 +99,7 @@ On **CM01**:
 2.  In the Distribute Content Wizard, click **Next** twice then on the **Specify the content destination** page add the Distribution Point: **CM01.CONTOSO.COM**, and then complete the wizard.
 3.  Using the CMTrace tool, verify the distribution to the CM01 distribution point by reviewing the distmgr.log file, or use the Distribution Status / Content Status option in the Monitoring workspace. Do not continue until you see all the new packages being distributed successfully.
 
-   ![Content status.](../images/cm01-content-status1.png)
+   ![Content status](../images/cm01-content-status1.png)
 
    Content status
 
@@ -116,7 +116,7 @@ On **CM01**:
    * Purpose: Available
    * Make available to the following: Only media and PXE
 
-   ![Configure the deployment settings.](../images/mdt-06-fig33.png)
+   ![Configure the deployment settings](../images/mdt-06-fig33.png)
     
    Configure the deployment settings
 
@@ -125,7 +125,7 @@ On **CM01**:
 6. On the **Alerts** page, accept the default settings and click **Next**.
 7. On the **Distribution Points** page, accept the default settings, click **Next** twice, and then click **Close**.
 
-   ![Task sequence deployed.](../images/fig32-deploywiz.png)
+   ![Task sequence deployed](../images/fig32-deploywiz.png)
 
    The Windows 10 Enterprise x64 RTM task sequence deployed to the All Unknown Computers collections available for media and PXE
 
@@ -149,7 +149,7 @@ On **CM01**:
    >[!NOTE]
    >Configuration Manager can prompt for information in many ways. Using a collection variable with an empty value is just one of them. Another option is the User-Driven Installation (UDI) wizard.
    
-   ![Configure a collection variable.](../images/mdt-06-fig35.png)
+   ![Configure a collection variable](../images/mdt-06-fig35.png)
    
    Configure a collection variable
 

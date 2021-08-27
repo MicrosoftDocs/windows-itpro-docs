@@ -36,23 +36,23 @@ The private store for your organization is a page in Microsoft Store app that co
 
 1.  Click the people icon in Microsoft Store app, and click **Sign in**.
 
-    ![Sign in to Store app with a different account.](images/wsfb-wsappsignin.png)
+    ![Sign in to Store app with a different account](images/wsfb-wsappsignin.png)
 
 2.  Click **Add account**, and then click **Work or school account**.
 
-    ![Choose an account to use.](images/wsfb-wsappaddacct.png)
+    ![Choose an account to use](images/wsfb-wsappaddacct.png)
 
 3.  Type the email account and password, and click **Sign in**.
 
-    ![Sign in for work or school account.](images/wsfb-wsappworkacct.png)
+    ![Sign in for work or school account](images/wsfb-wsappworkacct.png)
 
 4.  You should see the private store for your organization. In our example, the page is named **Contoso publishing**.
 
-    ![Private store with name highlighted.](images/wsfb-wsappprivatestore.png)
+    ![Private store with name highlighted](images/wsfb-wsappprivatestore.png)
 
     Click the private store to see apps in your private store.
 
-    ![Private store for Contoso publishing.](images/wsfb-privatestoreapps.png)
+    ![Private store for Contoso publishing](images/wsfb-privatestoreapps.png)
 
 ## Troubleshooting Microsoft Store for Business integration with Microsoft Endpoint Configuration Manager
 

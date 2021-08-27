@@ -54,7 +54,7 @@ In this example, you use two security groups to manage your updates: **Ring 4 Br
 
 2. Click the **Policy** workspace. In the middle pane, click **Configuration Policies**, and then click **Add** in the details pane.
 
-    ![Shows the UI for this step.](images/waas-wufb-intune-step2a.png)
+    ![Shows the UI for this step](images/waas-wufb-intune-step2a.png)
     
 3. In the Create a New Policy Wizard, select **Windows\Custom Configuration (Windows 10 Desktop and Mobile and later)**, and then click **Create Policy**.
 
@@ -69,7 +69,7 @@ In this example, you use two security groups to manage your updates: **Ring 4 Br
     >[!NOTE]
     >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) for the proper syntax.
 
-    ![Settings for the RequireDeferUpgrade policy.](images/waas-wufb-intune-step7a.png)
+    ![Settings for the RequireDeferUpgrade policy](images/waas-wufb-intune-step7a.png)
     
 8. For this deployment ring, you're required to enable only CBB, so click **Save Policy**.
 
@@ -119,7 +119,7 @@ You have now configured the **Ring 4 Broad business users** deployment ring to e
 
     Three settings should appear in the **Windows Update for Business – CBB2** policy.
     
-    ![Settings for CBB2 policy.](images/waas-wufb-intune-step19a.png)
+    ![Settings for CBB2 policy](images/waas-wufb-intune-step19a.png)
     
 20. Click **Save Policy**, and then click **Yes** at the **Deploy Policy** prompt.
 
@@ -141,7 +141,7 @@ In this example, you use three security groups from Table 1 in [Build deployment
 
 2. Click the **Policy** workspace. In the middle pane, click **Configuration Policies**, and then click **Add** in the details pane.
 
-    ![Shows the UI for this step.](images/waas-wufb-intune-step2a.png)
+    ![Shows the UI for this step](images/waas-wufb-intune-step2a.png)
     
 3. In the Create a New Policy Wizard, select **Windows\Custom Configuration (Windows 10 Desktop and Mobile and later)**, and then click **Create Policy**.
 
@@ -156,7 +156,7 @@ In this example, you use three security groups from Table 1 in [Build deployment
     >[!NOTE]
     >The OMA-URI settings are case sensitive, so be sure to review [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider) for the proper syntax.
 
-    ![Settings for the BranchReadinessLevel policy.](images/waas-wufb-intune-cb2a.png)
+    ![Settings for the BranchReadinessLevel policy](images/waas-wufb-intune-cb2a.png)
     
 8. Because the **Ring 2 Pilot Business Users** deployment ring receives the CB feature updates after 28 days, in the **OMA-URI Settings** section, click **Add** to add another OMA-URI setting. 
 
@@ -164,7 +164,7 @@ In this example, you use three security groups from Table 1 in [Build deployment
 10. In the **OMA-URI** box, type **./Vendor/MSFT/Policy/Config/Update/DeferFeatureUpdatesPeriodInDays**.
 11. In the **Value** box, type **28**, and then click **OK**.
 
-    ![Settings for the DeferFeatureUpdatesPeriodInDays policy step 11.](images/waas-wufb-intune-step11a.png)
+    ![Settings for the DeferFeatureUpdatesPeriodInDays policy step 11](images/waas-wufb-intune-step11a.png)
 
 9. Click **Save Policy**.
 
@@ -181,7 +181,7 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
 
 2. Click the **Policy** workspace. In the middle pane, click **Configuration Policies**, and then click **Add** in the details pane.
 
-    ![Shows the UI for this step.](images/waas-wufb-intune-step2a.png)
+    ![Shows the UI for this step](images/waas-wufb-intune-step2a.png)
     
 3. In the Create a New Policy Wizard, select **Windows\Custom Configuration (Windows 10 Desktop and Mobile and later)**, and then click **Create Policy**.
 
@@ -205,7 +205,7 @@ You have now configured the **Ring 2 Pilot Business Users** deployment ring to e
 
 11. In the **Value** box, type **0**, and then click **OK**.
 
-    ![Settings for the DeferFeatureUpdatesPeriodInDays policy for broad business.](images/waas-wufb-intune-cbb1a.png)
+    ![Settings for the DeferFeatureUpdatesPeriodInDays policy for broad business](images/waas-wufb-intune-cbb1a.png)
 
 12. Click **Save Policy**.
 
@@ -223,7 +223,7 @@ You have now configured the **Ring 4 Broad business users** deployment ring to r
 
 2. Click the **Policy** workspace. In the middle pane, click **Configuration Policies**, and then click **Add** in the details pane.
 
-    ![Shows the UI for this step.](images/waas-wufb-intune-step2a.png)
+    ![Shows the UI for this step](images/waas-wufb-intune-step2a.png)
     
 3. In the Create a New Policy Wizard, select **Windows\Custom Configuration (Windows 10 Desktop and Mobile and later)**, and then click **Create Policy**.
 
@@ -255,7 +255,7 @@ You have now configured the **Ring 4 Broad business users** deployment ring to r
 
 15. In the **Value** box, type **14**, and then click **OK**.
 
-    ![Settings for the DeferFeatureUpdatesPeriodInDays policy.](images/waas-wufb-intune-cbb2a.png)
+    ![Settings for the DeferFeatureUpdatesPeriodInDays policy](images/waas-wufb-intune-cbb2a.png)
 
 16. Click **Save Policy**.
 

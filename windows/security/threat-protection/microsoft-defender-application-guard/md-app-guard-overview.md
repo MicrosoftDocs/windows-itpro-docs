@@ -29,7 +29,7 @@ For Microsoft Edge, Application Guard helps to isolate enterprise-defined untrus
 For Microsoft Office, Application Guard helps prevents untrusted Word, PowerPoint and Excel files from accessing trusted resources. Application Guard opens untrusted files in an isolated Hyper-V-enabled container. The isolated Hyper-V container is separate from the host operating system. This container isolation means that if the untrusted site or file turns out to be malicious, the host device is protected, and the attacker can't get to your enterprise data. For example, this approach makes the isolated container anonymous, so an attacker can't get to your employee's enterprise credentials.
 
 
-![Hardware isolation diagram.](images/appguard-hardware-isolation.png)
+![Hardware isolation diagram](images/appguard-hardware-isolation.png)
 
 ### What types of devices should use Application Guard?
 

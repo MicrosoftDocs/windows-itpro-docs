@@ -38,7 +38,7 @@ You must install Application Verifier before you can use the SUA Wizard. If Appl
 
 The following flowchart shows the process of using the SUA Wizard.
 
-![act sua wizard flowchart.](images/dep-win8-l-act-suawizardflowchart.jpg)
+![act sua wizard flowchart](images/dep-win8-l-act-suawizardflowchart.jpg)
 
 **To test an application by using the SUA Wizard**
 

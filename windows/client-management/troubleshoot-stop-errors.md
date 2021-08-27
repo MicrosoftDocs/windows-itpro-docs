@@ -165,13 +165,13 @@ You can use the tools such as Windows Software Development KIT (SDK) and Symbols
 
 6. Click on **Open Crash Dump**, and then open the memory.dmp file that you copied. See the example below.
 
-    ![WinDbg img.](images/windbg.png)
+    ![WinDbg img](images/windbg.png)
 
 7. There should be a link that says **!analyze -v** under **Bugcheck Analysis**. Click that link. This will enter the command !analyze -v in the prompt at the bottom of the page.
 
 8. A detailed bugcheck analysis will appear. See the example below.
 
-    ![Bugcheck analysis.](images/bugcheck-analysis.png)
+    ![Bugcheck analysis](images/bugcheck-analysis.png)
 
 9. Scroll down to the section where it says **STACK_TEXT**. There will be rows of numbers with each row followed by a colon and some text. That text should tell you what DLL is causing the crash and if applicable what service is crashing the DLL.
 

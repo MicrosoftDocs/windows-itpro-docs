@@ -50,7 +50,7 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
 
 3. Click **Restore Default URLs** or enter the settings for MDM or MAM user scope and click **Save**:
 
-   ![Configure MDM or MAM provider.](images/mobility-provider.png)
+   ![Configure MDM or MAM provider](images/mobility-provider.png)
 
 ## Create a WIP policy
 
@@ -58,7 +58,7 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
 
 2. Open Microsoft Intune and click **Apps** > **App protection policies** > **Create policy**.
 
-   ![Open Client apps.](images/create-app-protection-policy.png)
+   ![Open Client apps](images/create-app-protection-policy.png)
 
 3. In the **App policy** screen, click **Add a policy**, and then fill out the fields:
 
@@ -70,11 +70,11 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
 
    - **Enrollment state.** Choose **Without enrollment** for MAM or **With enrollment** for MDM.
 
-   ![Add a mobile app policy.](images/add-a-mobile-app-policy.png)
+   ![Add a mobile app policy](images/add-a-mobile-app-policy.png)
 
 4. Click **Protected apps** and then click **Add apps**.
 
-   ![Add protected apps.](images/add-protected-apps.png)
+   ![Add protected apps](images/add-protected-apps.png)
 
    You can add these types of apps:
 
@@ -89,7 +89,7 @@ Before you can create a WIP policy using Intune, you need to configure an MDM or
 
 Select **Recommended apps** and select each app you want to access your enterprise data or select them all, and click **OK**.
 
-![Microsoft Intune management console: Recommended apps.](images/recommended-apps.png)    
+![Microsoft Intune management console: Recommended apps](images/recommended-apps.png)    
 
 ### Add Store apps 
 
@@ -99,7 +99,7 @@ Select **Store apps**, type the app product name and publisher, and click **OK**
 - **Publisher**: `CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US`
 - **Product Name**: `Microsoft.MicrosoftPowerBIForWindows`
 
-![Add Store app.](images/add-a-protected-store-app.png)
+![Add Store app](images/add-a-protected-store-app.png)
 
 To add multiple Store apps, click the ellipsis **…**. 
 
@@ -201,7 +201,7 @@ To add **Desktop apps**, complete the following fields, based on what results yo
 
 To add another Desktop app, click the ellipsis **…**. After you’ve entered the info into the fields, click **OK**.
 
-![Microsoft Intune management console: Adding Desktop app info.](images/wip-azure-add-desktop-apps.png)
+![Microsoft Intune management console: Adding Desktop app info](images/wip-azure-add-desktop-apps.png)
  
 If you’re unsure about what to include for the publisher, you can run this PowerShell command:
 
@@ -242,7 +242,7 @@ For more info about AppLocker, see the [AppLocker](../../threat-protection/windo
     
 2. In the left blade, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
 
-    ![Local security snap-in, showing the Packaged app Rules.](images/wip-applocker-secpol-1.png)
+    ![Local security snap-in, showing the Packaged app Rules](images/wip-applocker-secpol-1.png)
 
 3. Right-click in the right-hand blade, and then click **Create New Rule**.
 
@@ -250,7 +250,7 @@ For more info about AppLocker, see the [AppLocker](../../threat-protection/windo
 
 4.  On the **Before You Begin** page, click **Next**.
 
-    ![Screenshot of the Before You Begin tab.](images/wip-applocker-secpol-wizard-1.png)
+    ![Screenshot of the Before You Begin tab](images/wip-applocker-secpol-wizard-1.png)
 
 5.  On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
 
@@ -262,25 +262,25 @@ For more info about AppLocker, see the [AppLocker](../../threat-protection/windo
 
 7.  In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we’re using Microsoft Dynamics 365.
 
-    ![Screenshot of the Select applications list.](images/wip-applocker-secpol-wizard-4.png)
+    ![Screenshot of the Select applications list](images/wip-applocker-secpol-wizard-4.png)
 
 8.  On the updated **Publisher** page, click **Create**.
 
-    ![Screenshot of the Publisher tab.](images/wip-applocker-secpol-wizard-5.png)
+    ![Screenshot of the Publisher tab](images/wip-applocker-secpol-wizard-5.png)
 
 9.  Click **No** in the dialog box that appears, asking if you want to create the default rules. You must not create default rules for your WIP policy.
 
-    ![Screenshot of AppLocker warning.](images/wip-applocker-default-rule-warning.png)
+    ![Screenshot of AppLocker warning](images/wip-applocker-default-rule-warning.png)
 
 9.  Review the Local Security Policy snap-in to make sure your rule is correct.
 
-    ![Local security snap-in, showing the new rule.](images/wip-applocker-secpol-create.png)
+    ![Local security snap-in, showing the new rule](images/wip-applocker-secpol-create.png)
 
 10. In the left blade, right-click on **AppLocker**, and then click **Export policy**.
 
     The **Export policy** box opens, letting you export and save your new policy as XML.
 
-    ![Local security snap-in, showing the Export Policy option.](images/wip-applocker-secpol-export.png)
+    ![Local security snap-in, showing the Export Policy option](images/wip-applocker-secpol-export.png)
 
 11. In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
 
@@ -320,7 +320,7 @@ The executable rule helps to create an AppLocker rule to sign any unsigned apps.
 
 3. Right-click **Executable Rules** > **Create New Rule**.
 
-   ![Local security snap-in, showing the Executable Rules.](images/create-new-path-rule.png)
+   ![Local security snap-in, showing the Executable Rules](images/create-new-path-rule.png)
 
 4. On the **Before You Begin** page, click **Next**.
 
@@ -328,11 +328,11 @@ The executable rule helps to create an AppLocker rule to sign any unsigned apps.
 
 6. On the **Conditions** page, click **Path** and then click **Next**.
 
-    ![Screenshot with Path conditions selected in the Create Executable Rules wizard.](images/path-condition.png)
+    ![Screenshot with Path conditions selected in the Create Executable Rules wizard](images/path-condition.png)
 
 7. Click **Browse Folders...** and select the path for the unsigned apps. For this example, we’re using "C:\Program Files".
 
-    ![Screenshot of the Path field of the Create Executable Rules wizard.](images/select-path.png)
+    ![Screenshot of the Path field of the Create Executable Rules wizard](images/select-path.png)
 
 8. On the **Exceptions** page, add any exceptions and then click **Next**.
 
@@ -351,11 +351,11 @@ The executable rule helps to create an AppLocker rule to sign any unsigned apps.
 
 1. In **Protected apps**, click **Import apps**.
 
-    ![Import protected apps.](images/import-protected-apps.png)
+    ![Import protected apps](images/import-protected-apps.png)
     
     Then import your file.
     
-    ![Microsoft Intune, Importing your AppLocker policy file using Intune.](images/wip-azure-import-apps.png)
+    ![Microsoft Intune, Importing your AppLocker policy file using Intune](images/wip-azure-import-apps.png)
 
 2. Browse to your exported AppLocker policy file, and then click **Open**.
 
@@ -366,7 +366,7 @@ If your app is incompatible with WIP, but still needs to be used with enterprise
 
 1. In **Client apps - App protection policies**, click **Exempt apps**.
     
-    ![Exempt apps.](images/exempt-apps.png)
+    ![Exempt apps](images/exempt-apps.png)
 
 2. In **Exempt apps**, click **Add apps**.
 
@@ -391,7 +391,7 @@ We recommend that you start with **Silent** or **Allow Overrides** while verifyi
 
 1. From the **App protection policy** blade, click the name of your policy, and then click **Required settings**.
 
-    ![Microsoft Intune, Required settings blade showing Windows Information Protection mode.](images/wip-azure-required-settings-protection-mode.png)
+    ![Microsoft Intune, Required settings blade showing Windows Information Protection mode](images/wip-azure-required-settings-protection-mode.png)
 
     |Mode |Description |
     |-----|------------|
@@ -413,11 +413,11 @@ Starting with Windows 10, version 1703, Intune automatically determines your cor
 
 2. If the auto-defined identity isn’t correct, you can change the info in the **Corporate identity** field. 
 
-   ![Microsoft Intune, Set your corporate identity for your organization.](images/wip-azure-required-settings-corp-identity.png)
+   ![Microsoft Intune, Set your corporate identity for your organization](images/wip-azure-required-settings-corp-identity.png)
 
 3. To add domains, such your email domain names, click **Configure Advanced settings** > **Add network boundary** and select **Protected domains**.
 
-   ![Add protected domains.](images/add-protected-domains.png)
+   ![Add protected domains](images/add-protected-domains.png)
 
 ## Choose where apps can access enterprise data
 After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network. Every WIP policy should include your enterprise network locations. 
@@ -426,7 +426,7 @@ There are no default locations included with WIP, you must add each of your netw
 
 To define the network boundaries, click **App policy** > the name of your policy > **Advanced settings** > **Add network boundary**.
 
-![Microsoft Intune, Set where your apps can access enterprise data on your network.](images/wip-azure-advanced-settings-network.png)
+![Microsoft Intune, Set where your apps can access enterprise data on your network](images/wip-azure-advanced-settings-network.png)
 
 Select the type of network boundary to add from the **Boundary type** box. Type a name for your boundary into the **Name** box, add your values to the **Value** box, based on the options covered in the following subsections, and then click **OK**.
 
@@ -558,7 +558,7 @@ Decide if you want Windows to look for additional network settings:
 
 - **Enterprise IP Ranges list is authoritative (do not auto-detect).** Turn on if you want Windows to treat the IP ranges you specified in the network boundary definition as the complete list of IP ranges available on your network. If you turn this off, Windows will search for additional IP ranges on any domain-joined devices connected to your network.
 
-![Microsoft Intune, Choose if you want Windows to search for additional proxy servers or IP ranges in your enterprise.](images/wip-azure-advanced-settings-network-autodetect.png)
+![Microsoft Intune, Choose if you want Windows to search for additional proxy servers or IP ranges in your enterprise](images/wip-azure-advanced-settings-network-autodetect.png)
 
 ## Upload your Data Recovery Agent (DRA) certificate
 After you create and deploy your WIP policy to your employees, Windows begins to encrypt your corporate data on the employees’ local device drive. If somehow the employees’ local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the Data Recovery Agent (DRA) certificate lets Windows use an included public key to encrypt the local data while you maintain the private key that can unencrypt the data.
@@ -573,12 +573,12 @@ After you create and deploy your WIP policy to your employees, Windows begins to
 
 2.  In the **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
 
-    ![Microsoft Intune, Upload your Data Recovery Agent (DRA) certificate.](images/wip-azure-advanced-settings-efsdra.png)
+    ![Microsoft Intune, Upload your Data Recovery Agent (DRA) certificate](images/wip-azure-advanced-settings-efsdra.png)
 
 ## Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you can choose optional settings.
 
-![Advanced optional settings.](images/wip-azure-advanced-settings-optional.png)
+![Advanced optional settings](images/wip-azure-advanced-settings-optional.png)
    
 **Revoke encryption keys on unenroll.** Determines whether to revoke a user’s local encryption keys from a device when it’s unenrolled from Windows Information Protection. If the encryption keys are revoked, a user no longer has access to encrypted corporate data. The options are:
     
@@ -613,7 +613,7 @@ After you've decided where your protected apps can access enterprise data on you
 
 You can restrict which files are protected by WIP when they are downloaded from an SMB share within your enterprise network locations. If this setting is configured, only files with the extensions in the list will be encrypted. If this setting is not specified, the existing auto-encryption behavior is applied. 
 
-![WIP encrypted file extensions.](images/wip-encrypted-file-extensions.png)
+![WIP encrypted file extensions](images/wip-encrypted-file-extensions.png)
 
 ## Related topics
 

@@ -31,7 +31,7 @@ All Windows 10 Mobile Enterprise and Windows 10 Mobile images have the NFC provi
 
 On all Windows devices, device provisioning during OOBE can be triggered by 5 fast taps on the Windows hardware key, which shows the **Provision this device** screen. In the **Provision this device** screen, select **NFC** for NFC-based provisioning. 
 
-![Example of Provision this device screen.](../images/nfc.png)
+![Example of Provision this device screen](../images/nfc.png)
 
 If there is an error during NFC provisioning, the device will show a message if any of the following errors occur:
 

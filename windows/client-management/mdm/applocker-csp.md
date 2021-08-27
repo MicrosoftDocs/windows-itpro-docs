@@ -263,16 +263,16 @@ Supported operations are Get, Add, Delete, and Replace.
 
     The **Device Portal** page opens on your browser.
 
-    ![device portal screenshot.](images/applocker-screenshot1.png)
+    ![device portal screenshot](images/applocker-screenshot1.png)
 
 8.  On the desktop **Device Portal** page, click **Apps** to open the **App Manager**.
 9.  On the **App Manager** page under **Running apps**, you will see the **Publisher** and **PackageFullName** of apps.
 
-    ![device portal app manager.](images/applocker-screenshot3.png)
+    ![device portal app manager](images/applocker-screenshot3.png)
 
 10. If you do not see the app that you want, look under **Installed apps**. Using the drop- down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
 
-    ![app manager.](images/applocker-screenshot2.png)
+    ![app manager](images/applocker-screenshot2.png)
 
 The following table shows the mapping of information to the AppLocker publisher rule field.
 

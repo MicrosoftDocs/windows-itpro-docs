@@ -108,13 +108,13 @@ You can configure Windows to be in shared PC mode in a couple different ways:
   8. On the **Configuration settings** page, set the ‘Shared PC Mode’ value to **Enabled**.
 
      > [!div class="mx-imgBorder"]
-     > ![Shared PC mode in the Configuration settings page.](images/shared_pc_3.png) 
+     > ![Shared PC mode in the Configuration settings page](images/shared_pc_3.png) 
 
   11. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 6**.
 
 - A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp), exposed in Windows Configuration Designer as **SharedPC**.
 
-     ![Shared PC settings in ICD.](images/icd-adv-shared-pc.png)
+     ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
 
 - WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the [MDM_SharedPC class](/windows/win32/dmwmibridgeprov/mdm-sharedpc). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
     
@@ -189,7 +189,7 @@ You can apply the provisioning package to a PC during initial setup or to a PC t
 
 1. Start with a PC on the setup screen. 
 
-    ![The first screen to set up a new PC.](images/oobe.jpg)
+    ![The first screen to set up a new PC](images/oobe.jpg)
 
 2. Insert the USB drive. If nothing happens when you insert the USB drive, press the Windows key five times.
 
@@ -206,7 +206,7 @@ You can apply the provisioning package to a PC during initial setup or to a PC t
 
 On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and selects the package to install. 
 
-![add a package option.](images/package.png)
+![add a package option](images/package.png)
 
 > [!NOTE]
 > If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.

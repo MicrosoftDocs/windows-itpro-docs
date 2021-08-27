@@ -33,7 +33,7 @@ When Windows Defender Credential Guard is enabled, Kerberos does not allow uncon
 
 Here's a high-level overview on how the LSA is isolated by using virtualization-based security:
 
-![Windows Defender Credential Guard overview.](images/credguard.png)  
+![Windows Defender Credential Guard overview](images/credguard.png)  
 
 ## See also
 

@@ -52,7 +52,7 @@ SIDs always remain unique. Security authorities never issue the same SID twice, 
 
 A security identifier is a data structure in binary format that contains a variable number of values. The first values in the structure contain information about the SID structure. The remaining values are arranged in a hierarchy (similar to a telephone number), and they identify the SID-issuing authority (for example, “NT Authority”), the SID-issuing domain, and a particular security principal or group. The following image illustrates the structure of a SID.
 
-![Security identifier architecture.](images/security-identifider-architecture.jpg)
+![Security identifier architecture](images/security-identifider-architecture.jpg)
 
 The individual values of a SID are described in the following table.
 

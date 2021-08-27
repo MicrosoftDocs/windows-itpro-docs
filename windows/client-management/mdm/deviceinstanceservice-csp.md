@@ -26,7 +26,7 @@ The DeviceInstance CSP is only supported in Windows 10 Mobile.
 
 The following diagram shows the DeviceInstanceService configuration service provider in tree format.
 
-![provisioning\-csp\-deviceinstanceservice.](images/provisioning-csp-deviceinstanceservice.png)
+![provisioning\-csp\-deviceinstanceservice](images/provisioning-csp-deviceinstanceservice.png)
 
 <a href="" id="roaming"></a>**Roaming**  
 A boolean value that specifies the roaming status of the device. In dual SIM mode when the device supports two different phone numbers, querying SIM 1 explicitly with ./Vendor/MSFT/DeviceInstanceService/Identify1/Roaming is functionally equivalent to using ./Vendor/MSFT/DeviceInstanceService/Roaming.

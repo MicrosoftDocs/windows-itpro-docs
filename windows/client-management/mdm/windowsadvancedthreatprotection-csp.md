@@ -19,7 +19,7 @@ The Windows Defender Advanced Threat Protection (WDATP) configuration service pr
 
 The following diagram shows the WDATP configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).
 
-![windowsadvancedthreatprotection csp diagram.](images/provisioning-csp-watp.png)
+![windowsadvancedthreatprotection csp diagram](images/provisioning-csp-watp.png)
 
 The following list describes the characteristics and parameters.
 

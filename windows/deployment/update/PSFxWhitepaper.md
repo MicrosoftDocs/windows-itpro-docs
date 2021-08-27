@@ -45,17 +45,17 @@ its reverse differential back to the base version. Both forward and reverse
 differentials are then packaged as an update and distributed to the endpoints
 running the software to be updated. The update package contents can be symbolized as follows:
 
-![Symbolic representation of update package contents. A box containing two expressions: delta sub zero transform to sub N, followed delta sub N transform to sub zero.](images/PSF1.png)
+![Symbolic representation of update package contents. A box containing two expressions: delta sub zero transform to sub N, followed delta sub N transform to sub zero](images/PSF1.png)
 
 The endpoints that have the base version of the file (V<sub>0</sub>) hydrate the target
 revision (V<sub>N</sub>) by applying a simple transformation:
 
-![Equation: V sub zero + delta sub zero transform to sub N = V sub n.](images/PSF2.png)
+![Equation: V sub zero + delta sub zero transform to sub N = V sub n](images/PSF2.png)
 
 The endpoints that have revision N of the file (V<sub>N</sub>), hydrate the target revision
 (V<sub>R</sub>) by applying the following set of transformations:
 
-![Equation 1: V sub n + delta sub n transform to 0 = V sun 0; Equation 2: V sub zero + delta sub 0 transform to R = V sub R.](images/PSF3.png)
+![Equation 1: V sub n + delta sub n transform to 0 = V sun 0; Equation 2: V sub zero + delta sub 0 transform to R = V sub R](images/PSF3.png)
 
 The endpoints retain the reverse differentials for the software revision they
 are on, so that it can be used for hydrating and applying next revision update.
@@ -85,7 +85,7 @@ Windows 10 quality update packages will contain forward differentials from quali
 
 There can be cases where new files are added to the system during servicing. These files will not have RTM baselines, thus forward and reverse differentials cannot be used. In these scenarios, null differentials will be used to handle servicing. Null differentials are the slightly compressed and optimized version of the full binaries. Update packages can have either forward or reverse differentials, or null differential of any given binary in them. The following image symbolizes the content of a Windows 10 quality update installer:
 
-![Outer box labeled .msu containing two sub-boxes: 1) Applicability Logic, 2) box labeled .cab containing four sub-boxes: 1) update metadata, 2) content manifests, 3) delta sub RTM transform to sub N (file 1, file2, etc.), and 4) delta sub N transform to RTM (file 1, file 2, etc.).](images/PSF4.png)
+![Outer box labeled .msu containing two sub-boxes: 1) Applicability Logic, 2) box labeled .cab containing four sub-boxes: 1) update metadata, 2) content manifests, 3) delta sub RTM transform to sub N (file 1, file2, etc.), and 4) delta sub N transform to RTM (file 1, file 2, etc.)](images/PSF4.png)
 
 ### Hydration and installation 
 

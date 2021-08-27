@@ -42,7 +42,7 @@ When troubleshooting basic Start issues (and for the most part, all other Window
   - `get-AppXPackage -Name Microsoft.Windows.ShellExperienceHost`
   - `get-AppXPackage -Name Microsoft.Windows.Cortana`
 
-    ![Example of output from cmdlets.](images/start-ts-1.png)
+    ![Example of output from cmdlets](images/start-ts-1.png)
 
     Failure messages will appear if they aren't installed
 
@@ -188,7 +188,7 @@ Events for both PDC and Background Tasks Infrastructure Service will be recorded
 
 ### Symptom: Application tiles like Alarm, Calculator, and Edge are missing from Start menu and the Settings app fails to open on Windows 10, version 1709 when a local user profile is deleted
 
-![Screenshots that show download icons on app tiles and missing app tiles.](images/start-ts-2.png)
+![Screenshots that show download icons on app tiles and missing app tiles](images/start-ts-2.png)
 
 **Cause**: This issue is known. The first-time sign-in experience is not detected and does not trigger the install of some apps.
 
@@ -236,11 +236,11 @@ Specifically, behaviors include
 - If a new roaming user is created, the first sign-in appears normal, but on subsequent sign-ins, tiles are missing.
 
 
-![Example of a working layout.](images/start-ts-3.png)
+![Example of a working layout](images/start-ts-3.png)
 
 *Working layout on first sign-in of a new roaming user profile*
 
-![Example of a failing layout.](images/start-ts-4.png)
+![Example of a failing layout](images/start-ts-4.png)
 
 *Failing layout on subsequent sign-ins*
 
@@ -256,15 +256,15 @@ Specifically, behaviors include
 
 Before the upgrade:
  
-  ![Example of Start screen with customizations applied.](images/start-ts-5.jpg)
+  ![Example of Start screen with customizations applied](images/start-ts-5.jpg)
 
 After the upgrade the user pinned tiles are missing:
 
-  ![Example of Start screen with previously pinned tiles missing.](images/start-ts-6.png)
+  ![Example of Start screen with previously pinned tiles missing](images/start-ts-6.png)
  
 Additionally, users may see blank tiles if sign-in was attempted without network connectivity.
 
-  ![Example of blank tiles.](images/start-ts-7.png)
+  ![Example of blank tiles](images/start-ts-7.png)
  
 
 **Resolution**: This issue was fixed in the [October 2017 update](https://support.microsoft.com/en-us/help/4041676).

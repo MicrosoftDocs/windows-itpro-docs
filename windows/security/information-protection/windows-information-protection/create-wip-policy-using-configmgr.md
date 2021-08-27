@@ -36,12 +36,12 @@ After you've installed and set up Configuration Manager for your organization, y
 
 1.  Open the Configuration Manager console, click the **Assets and Compliance** node, expand the **Overview** node, expand the **Compliance Settings** node, and then expand the **Configuration Items** node.
 
-    ![Configuration Manager, Configuration Items screen.](images/wip-configmgr-addpolicy.png)
+    ![Configuration Manager, Configuration Items screen](images/wip-configmgr-addpolicy.png)
 
 2.  Click the **Create Configuration Item** button.<p>
 The **Create Configuration Item Wizard** starts.
 
-    ![Create Configuration Item wizard, define the configuration item and choose the configuration type.](images/wip-configmgr-generalscreen.png)
+    ![Create Configuration Item wizard, define the configuration item and choose the configuration type](images/wip-configmgr-generalscreen.png)
 
 3.  On the **General Information screen**, type a name (required) and an optional description for your policy into the **Name** and **Description** boxes.
 
@@ -55,11 +55,11 @@ The **Create Configuration Item Wizard** starts.
 
 5.  On the **Supported Platforms** screen, click the **Windows 10** box, and then click **Next**.
 
-    ![Create Configuration Item wizard, choose the supported platforms for the policy.](images/wip-configmgr-supportedplat.png)
+    ![Create Configuration Item wizard, choose the supported platforms for the policy](images/wip-configmgr-supportedplat.png)
 
 6.  On the **Device Settings** screen, click **Windows Information Protection**, and then click **Next**.
 
-    ![Create Configuration Item wizard, choose the Windows Information Protection settings.](images/wip-configmgr-devicesettings.png)
+    ![Create Configuration Item wizard, choose the Windows Information Protection settings](images/wip-configmgr-devicesettings.png)
 
 The **Configure Windows Information Protection settings** page appears, where you'll configure your policy for your organization.
 
@@ -81,7 +81,7 @@ For this example, we're going to add Microsoft OneNote, a store app, to the **Ap
 
     The **Add app rule** box appears.
 
-    ![Create Configuration Item wizard, add a universal store app.](images/wip-configmgr-adduniversalapp.png)
+    ![Create Configuration Item wizard, add a universal store app](images/wip-configmgr-adduniversalapp.png)
 
 2.  Add a friendly name for your app into the **Title** box. In this example, it's *Microsoft OneNote*.
 
@@ -141,7 +141,7 @@ For this example, we're going to add Internet Explorer, a desktop app, to the **
 
     The **Add app rule** box appears.
 
-    ![Create Configuration Item wizard, add a classic desktop app.](images/wip-configmgr-adddesktopapp.png)
+    ![Create Configuration Item wizard, add a classic desktop app](images/wip-configmgr-adddesktopapp.png)
 
 2.  Add a friendly name for your app into the **Title** box. In this example, it's *Internet Explorer*.
 
@@ -218,7 +218,7 @@ For this example, we're going to add an AppLocker XML file to the **App Rules** 
 
 2.  In the left pane, expand **Application Control Policies**, expand **AppLocker**, and then click **Packaged App Rules**.
 
-    ![Local security snap-in, showing the Packaged app Rules.](images/intune-local-security-snapin.png)
+    ![Local security snap-in, showing the Packaged app Rules](images/intune-local-security-snapin.png)
 
 3.  Right-click in the right-hand pane, and then click **Create New Rule**.
 
@@ -226,33 +226,33 @@ For this example, we're going to add an AppLocker XML file to the **App Rules** 
 
 4. On the **Before You Begin** page, click **Next**.
 
-    ![Create a Packaged app Rules wizard and showing the Before You Begin page.](images/intune-applocker-before-begin.png)
+    ![Create a Packaged app Rules wizard and showing the Before You Begin page](images/intune-applocker-before-begin.png)
 
 5. On the **Permissions** page, make sure the **Action** is set to **Allow** and the **User or group** is set to **Everyone**, and then click **Next**.
 
-    ![Create Packaged app Rules wizard, set action to Allow.](images/intune-applocker-permissions.png)
+    ![Create Packaged app Rules wizard, set action to Allow](images/intune-applocker-permissions.png)
 
 6.  On the **Publisher** page, click **Select** from the **Use an installed packaged app as a reference** area.
 
-    ![Create Packaged app Rules wizard, select use an installed packaged app.](images/intune-applocker-publisher.png)
+    ![Create Packaged app Rules wizard, select use an installed packaged app](images/intune-applocker-publisher.png)
 
 7. In the **Select applications** box, pick the app that you want to use as the reference for your rule, and then click **OK**. For this example, we're using Microsoft Photos.
 
-    ![Create Packaged app Rules wizard, select application and click ok.](images/intune-applocker-select-apps.png)
+    ![Create Packaged app Rules wizard, select application and click ok](images/intune-applocker-select-apps.png)
 
 8. On the updated **Publisher** page, click **Create**.
 
-    ![Create Packaged app Rules wizard, showing the Microsoft Photos on the Publisher page.](images/intune-applocker-publisher-with-app.png)
+    ![Create Packaged app Rules wizard, showing the Microsoft Photos on the Publisher page](images/intune-applocker-publisher-with-app.png)
 
 9. Review the Local Security Policy snap-in to make sure your rule is correct.
 
-    ![Local security snap-in, showing the new rule.](images/intune-local-security-snapin-updated.png)
+    ![Local security snap-in, showing the new rule](images/intune-local-security-snapin-updated.png)
 
 10. In the left pane, right-click on **AppLocker**, and then click **Export policy**.
 
     The **Export policy** box opens, letting you export and save your new policy as XML.
 
-    ![Local security snap-in, showing the Export Policy option.](images/intune-local-security-export.png)
+    ![Local security snap-in, showing the Export Policy option](images/intune-local-security-export.png)
 
 11. In the **Export policy** box, browse to where the policy should be stored, give the policy a name, and then click **Save**.
 
@@ -286,7 +286,7 @@ For this example, we're going to add an AppLocker XML file to the **App Rules** 
 
     The **Add app rule** box appears.
 
-    ![Create Configuration Item wizard, add an AppLocker policy.](images/wip-configmgr-addapplockerfile.png)
+    ![Create Configuration Item wizard, add an AppLocker policy](images/wip-configmgr-addapplockerfile.png)
 
 2.  Add a friendly name for your app into the **Title** box. In this example, it's *Allowed app list*.
 
@@ -353,7 +353,7 @@ You can specify multiple domains owned by your enterprise by separating them wit
 
 - Type the name of your corporate identity into the **Corporate identity** field. For example, `contoso.com` or `contoso.com|newcontoso.com`.
 
-    ![Create Configuration Item wizard, Add the primary Internet domain for your enterprise identity.](images/wip-configmgr-corp-identity.png)
+    ![Create Configuration Item wizard, Add the primary Internet domain for your enterprise identity](images/wip-configmgr-corp-identity.png)
 
 ## Choose where apps can access enterprise data
 After you've added a protection mode to your apps, you'll need to decide where those apps can access enterprise data on your network.
@@ -372,7 +372,7 @@ There are no default locations included with WIP, you must add each of your netw
 
 2. Type a name for your corporate network element into the **Name** box, and then pick what type of network element it is, from the **Network element** drop-down box. This can include any of the options in the following table.
 
-   ![Add or edit corporate network definition box, Add your enterprise network locations.](images/wip-configmgr-add-network-domain.png)
+   ![Add or edit corporate network definition box, Add your enterprise network locations](images/wip-configmgr-add-network-domain.png)
 
    <table>
        <tr>
@@ -431,7 +431,7 @@ There are no default locations included with WIP, you must add each of your netw
 
 5. In the required **Upload a Data Recovery Agent (DRA) certificate to allow recovery of encrypted data** box, click **Browse** to add a data recovery certificate for your policy.
 
-   ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate.](images/wip-configmgr-dra.png)
+   ![Create Configuration Item wizard, Add a data recovery agent (DRA) certificate](images/wip-configmgr-dra.png)
 
    After you create and deploy your WIP policy to your employees, Windows will begin to encrypt your corporate data on the employees' local device drive. If somehow the employees' local encryption keys get lost or revoked, the encrypted data can become unrecoverable. To help avoid this possibility, the DRA certificate lets Windows use an included public key to encrypt the local data, while you maintain the private key that can unencrypt the data. 
 
@@ -440,7 +440,7 @@ There are no default locations included with WIP, you must add each of your netw
 ## Choose your optional WIP-related settings
 After you've decided where your protected apps can access enterprise data on your network, you'll be asked to decide if you want to add any optional WIP settings.
 
-![Create Configuration Item wizard, Choose any additional, optional settings.](images/wip-configmgr-additionalsettings.png)
+![Create Configuration Item wizard, Choose any additional, optional settings](images/wip-configmgr-additionalsettings.png)
 
 **To set your optional settings**
 1.  Choose to set any or all of the optional settings:
@@ -467,7 +467,7 @@ After you've finished configuring your policy, you can review all of your info o
 **To view the Summary screen**
 - Click the **Summary** button to review your policy choices, and then click **Next** to finish and to save your policy.
 
-    ![Create Configuration Item wizard, Summary screen for all of your policy choices.](images/wip-configmgr-summaryscreen.png)
+    ![Create Configuration Item wizard, Summary screen for all of your policy choices](images/wip-configmgr-summaryscreen.png)
 
     A progress bar appears, showing you progress for your policy. After it's done, click **Close** to return to the **Configuration Items** page.
 

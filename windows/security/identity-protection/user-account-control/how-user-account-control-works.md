@@ -34,7 +34,7 @@ In order to better understand how this process happens, let's look at the Window
 
 The following shows how the logon process for an administrator differs from the logon process for a standard user.
 
-![uac windows logon process.](images/uacwindowslogonprocess.gif)
+![uac windows logon process](images/uacwindowslogonprocess.gif)
 
 By default, standard users and administrators access resources and run apps in the security context of standard users. When a user logs on to a computer, the system creates an access token for that user. The access token contains information about the level of access that the user is granted, including specific security identifiers (SIDs) and Windows privileges.
 
@@ -56,7 +56,7 @@ With UAC enabled, Windows 10 prompts for consent or prompts for credentials of 
 
 The consent prompt is presented when a user attempts to perform a task that requires a user's administrative access token. The following is an example of the UAC consent prompt.
 
-![uac consent prompt.](images/uacconsentprompt.gif)
+![uac consent prompt](images/uacconsentprompt.gif)
 
 **The credential prompt**
 
@@ -64,7 +64,7 @@ The credential prompt is presented when a standard user attempts to perform a ta
 
 The following is an example of the UAC credential prompt.
 
-![uac credential prompt.](images/uaccredentialprompt.gif)
+![uac credential prompt](images/uaccredentialprompt.gif)
 
 **UAC elevation prompts**
 
@@ -81,7 +81,7 @@ The elevation prompt color-coding is as follows:
 
 Some Control Panel items, such as **Date and Time Properties**, contain a combination of administrator and standard user operations. Standard users can view the clock and change the time zone, but a full administrator access token is required to change the local system time. The following is a screen shot of the **Date and Time Properties** Control Panel item.
 
-![uac shield icon.](images/uacshieldicon.png)
+![uac shield icon](images/uacshieldicon.png)
 
 The shield icon on the **Change date and time** button indicates that the process requires a full administrator access token and will display a UAC elevation prompt.
 
@@ -99,7 +99,7 @@ While malware could present an imitation of the secure desktop, this issue canno
 
 The following diagram details the UAC architecture.
 
-![uac architecture.](images/uacarchitecture.gif)
+![uac architecture](images/uacarchitecture.gif)
 
 To better understand each component, review the table below:
 

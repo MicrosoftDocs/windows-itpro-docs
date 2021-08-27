@@ -57,4 +57,4 @@ This can only be done in Group Policy.
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >  
->![Windows Security app with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
+>![Windows Security app with all sections hidden by Group Policy](images/wdsc-all-hide.png)

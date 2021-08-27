@@ -73,7 +73,7 @@ Sign-in the federation server with domain administrator equivalent credentials.
 5. Click **Next** on the **Select Certificate Enrollment Policy** page.
 6. On the **Request Certificates** page, Select the **Internal Web Server** check box.
 7. Click the **More information is required to enroll for this certificate. Click here to configure settings** link   
-    ![Example of Certificate Properties Subject Tab - This is what shows when you click the above link.](images/hello-internal-web-server-cert.png)
+    ![Example of Certificate Properties Subject Tab - This is what shows when you click the above link](images/hello-internal-web-server-cert.png)
 8. Under **Subject name**, select **Common Name** from the **Type** list.  Type the FQDN of the computer hosting the Active Directory Federation Services role and then click **Add**.  Under **Alternative name**, select **DNS** from the **Type** list.  Type the FQDN of the name you will use for your federation services (fs.corp.contoso.com). The name you use here MUST match the name you use when configuring the Active Directory Federation Services server role.  Click **Add**. Click **OK** when finished.
 9. Click **Enroll**.
 
@@ -155,7 +155,7 @@ Use the following procedures to configure AD FS when your environment uses **Win
 Sign-in the federation server with _Domain Admin_ equivalent credentials. These procedures assume you are configuring the first federation server in a federation server farm.
 1. Start **Server Manager**.
 2. Click the notification flag in the upper right corner. Click **Configure federation services on this server**.   
-   ![Example of pop-up notification as described above.](images/hello-adfs-configure-2012r2.png)
+   ![Example of pop-up notification as described above](images/hello-adfs-configure-2012r2.png)
 
 3. On the **Welcome** page, click **Create the first federation server farm** and click **Next**.
 4. Click **Next** on the **Connect to Active Directory Domain Services** page.
@@ -175,7 +175,7 @@ Use the following procedures to configure AD FS when your environment uses **Win
 Sign-in the federation server with _Domain Admin_ equivalent credentials.  These instructions assume you are configuring the first federation server in a federation server farm.
 1. Start **Server Manager**.
 2. Click the notification flag in the upper right corner.  Click **Configure federation services on this server**.   
-    ![Example of pop-up notification as described above.](images/hello-adfs-configure-2012r2.png)
+    ![Example of pop-up notification as described above](images/hello-adfs-configure-2012r2.png)
 
 3. On the **Welcome** page, click **Create the first federation server farm** and click **Next**.
 4. Click **Next** on the **Connect to Active Directory Domain Services** page.
@@ -262,7 +262,7 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
 6. On the **Select server roles** page, click **Next**.
 7. Select **Network Load Balancing** on the **Select features** page.
 8. Click **Install** to start the feature installation   
-    ![Feature selection screen with NLB selected.](images/hello-nlb-feature-install.png)
+    ![Feature selection screen with NLB selected](images/hello-nlb-feature-install.png)
 
 ### Configure Network Load Balancing for AD FS
 
@@ -270,25 +270,25 @@ Before you can load balance all the nodes in the AD FS farm, you must first crea
 
 Sign-in a node of the federation farm with _Admin_ equivalent credentials.
 1. Open **Network Load Balancing Manager** from **Administrative Tools**.   
-    ![NLB Manager user interface.](images/hello-nlb-manager.png)
+    ![NLB Manager user interface](images/hello-nlb-manager.png)
 2. Right-click **Network Load Balancing Clusters**, and then click **New Cluster**.
 3. To connect to the host that is to be a part of the new cluster, in the **Host** text box, type the name of the host, and then click **Connect**.   
-    ![NLB Manager - Connect to new Cluster screen.](images/hello-nlb-connect.png)
+    ![NLB Manager - Connect to new Cluster screen](images/hello-nlb-connect.png)
 4. Select the interface that you want to use with the cluster, and then click **Next**. (The interface hosts the virtual IP address and receives the client traffic to load balance.)
 5. In **Host Parameters**, select a value in **Priority (Unique host identifier)**. This parameter specifies a unique ID for each host. The host with the lowest numerical priority among the current members of the cluster handles all of the cluster's network traffic that is not covered by a port rule. Click **Next**.
 6. In **Cluster IP Addresses**, click **Add** and type the cluster IP address that is shared by every host in the cluster. NLB adds this IP address to the TCP/IP stack on the selected interface of all hosts that are chosen to be part of the cluster. Click **Next**.   
-    ![NLB Manager - Add IP to New Cluster screen.](images/hello-nlb-add-ip.png)
+    ![NLB Manager - Add IP to New Cluster screen](images/hello-nlb-add-ip.png)
 7. In **Cluster Parameters**, select values in **IP Address** and **Subnet mask** (for IPv6 addresses, a subnet mask value is not needed). Type the full Internet name that users will use to access this NLB cluster.   
-    ![NLB Manager - Cluster IP Configuration screen.](images/hello-nlb-cluster-ip-config.png)
+    ![NLB Manager - Cluster IP Configuration screen](images/hello-nlb-cluster-ip-config.png)
 8. In **Cluster operation mode**, click **Unicast** to specify that a unicast media access control (MAC) address should be used for cluster operations. In unicast mode, the MAC address of the cluster is assigned to the network adapter of the computer, and the built-in MAC address of the network adapter is not used. We recommend that you accept the unicast default settings. Click **Next**.
 9. In Port Rules, click Edit to modify the default port rules to use port 443.   
-    ![NLB Manager - Add\Edit Port Rule screen.](images/hello-nlb-cluster-port-rule.png)
+    ![NLB Manager - Add\Edit Port Rule screen](images/hello-nlb-cluster-port-rule.png)
 
 ### Additional AD FS Servers
 
 1. To add more hosts to the cluster, right-click the new cluster, and then click **Add Host to Cluster**.
 2. Configure the host parameters (including host priority, dedicated IP addresses, and load weight) for the additional hosts by following the same instructions that you used to configure the initial host. Because you are adding hosts to an already configured cluster, all the cluster-wide parameters remain the same.   
-    ![NLB Manager - Cluster with nodes.](images/hello-nlb-cluster.png)
+    ![NLB Manager - Cluster with nodes](images/hello-nlb-cluster.png)
 
 ## Configure DNS for Device Registration
 

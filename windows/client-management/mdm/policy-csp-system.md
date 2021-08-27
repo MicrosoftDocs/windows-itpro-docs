@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 08/26/2021
+ms.date: 10/14/2020
 ms.reviewer: 
 manager: dansimp
 ---
@@ -62,7 +62,7 @@ manager: dansimp
     <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
   </dd>
  <dd>
-    <a href="#system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a>
+    <a href="#system-allowwufbcloudprocessing">System/AllowWuFBCloudProcessing</a>
   </dd>
   <dd>
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
@@ -964,7 +964,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWUfBCloudProcessing**
+<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWuFBCloudProcessing**
 
 <hr/>
 
@@ -984,15 +984,6 @@ When these policies are configured, Windows diagnostic data collected from the d
 If you disable or do not configure this policy setting, devices enrolled to the Windows Update for Business deployment service will not be able to take advantage of some deployment service features.
 
 <hr/>
-
-<!--/Description-->
-<!--SupportedValues-->
-The following list shows the supported values:
-
--   0 - Disabled.
--   8 - Enabled.
-<!--/SupportedValues-->
-
 
 <!--Policy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  

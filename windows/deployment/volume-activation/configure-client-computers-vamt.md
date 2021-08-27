@@ -45,7 +45,7 @@ Enable the VAMT to access client computers using the **Windows Firewall** Contro
 
 Enable the VAMT to access client computers across multiple subnets using the **Windows Firewall with Advanced Security** Control Panel:
 
-![VAMT Firewall configuration for multiple subnets.](images/dep-win8-l-vamt-firewallconfigurationformultiplesubnets.gif)
+![VAMT Firewall configuration for multiple subnets](images/dep-win8-l-vamt-firewallconfigurationformultiplesubnets.gif)
 
 1. Open the Control Panel and double-click **Administrative Tools**.
 2. Click **Windows Firewall with Advanced Security**.

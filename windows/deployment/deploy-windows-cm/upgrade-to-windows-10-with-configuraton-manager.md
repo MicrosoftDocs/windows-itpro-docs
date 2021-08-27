@@ -71,7 +71,7 @@ On **CM01**:
 4. Complete the wizard, and click **Close**.
 5. Review the Upgrade Task Sequence.
 
-![The upgrade task sequence.](../images/cm-upgrade-ts.png)
+![The upgrade task sequence](../images/cm-upgrade-ts.png)
 
 The Configuration Manager upgrade task sequence
 
@@ -127,13 +127,13 @@ On **PC0004**:
 4.  Confirm you want to upgrade the operating system on this computer by clicking **Install** again.
 5.  Allow the Upgrade Task Sequence to complete. The PC0004 computer will download the install.wim file, perform an in-place upgrade, and install your added applications. See the following examples:
 
-![Upgrade task sequence example 1.](../images/pc0004-a.png)<br>
-![Upgrade task sequence example 2.](../images/pc0004-b.png)<br>
-![Upgrade task sequence example 3.](../images/pc0004-c.png)<br>
-![Upgrade task sequence example 4.](../images/pc0004-d.png)<br>
-![Upgrade task sequence example 5.](../images/pc0004-e.png)<br>
-![Upgrade task sequence example 6.](../images/pc0004-f.png)<br>
-![Upgrade task sequence example 7.](../images/pc0004-g.png)
+![Upgrade task sequence example 1](../images/pc0004-a.png)<br>
+![Upgrade task sequence example 2](../images/pc0004-b.png)<br>
+![Upgrade task sequence example 3](../images/pc0004-c.png)<br>
+![Upgrade task sequence example 4](../images/pc0004-d.png)<br>
+![Upgrade task sequence example 5](../images/pc0004-e.png)<br>
+![Upgrade task sequence example 6](../images/pc0004-f.png)<br>
+![Upgrade task sequence example 7](../images/pc0004-g.png)
 
 In-place upgrade with Configuration Manager
 

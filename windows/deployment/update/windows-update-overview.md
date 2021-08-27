@@ -32,7 +32,7 @@ Use the following information to get started with Windows Update:
 ## Unified Update Platform (UUP) architecture 
 To understand the changes to the Windows Update architecture that UUP introduces let's start with some new key terms. 
 
-![Windows Update terminology.](images/update-terminology.png)
+![Windows Update terminology](images/update-terminology.png)
 
 - **Update UI** – The user interface to initiate Windows Update check and history. Available under **Settings --> Update & Security --> Windows Update**. 
 - **Update Session Orchestrator (USO)**- A Windows OS component that orchestrates the sequence of downloading and installing various update types from Windows Update.  

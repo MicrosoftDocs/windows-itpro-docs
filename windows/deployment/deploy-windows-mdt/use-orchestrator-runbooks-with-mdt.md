@@ -47,13 +47,13 @@ This section assumes you have Orchestrator 2012 R2 installed on a server named O
    **Note**  
    Make sure File Explorer is configured to show known file extensions so the file is not named DeployLog.txt.txt.
      
-   ![figure 23.](../images/mdt-09-fig23.png)
+   ![figure 23](../images/mdt-09-fig23.png)
 
    Figure 23. The DeployLog.txt file.
 
 3. Using System Center 2012 R2 Orchestrator Runbook Designer, in the **Runbooks** node, create the **1.0 MDT** folder.
 
-   ![figure 24.](../images/mdt-09-fig24.png)
+   ![figure 24](../images/mdt-09-fig24.png)
 
    Figure 24. Folder created in the Runbooks node.
 
@@ -65,14 +65,14 @@ This section assumes you have Orchestrator 2012 R2 installed on a server named O
    2.  Text File Management / Append Line
 8. Connect **Initialize Data** to **Append Line**.
 
-   ![figure 25.](../images/mdt-09-fig25.png)
+   ![figure 25](../images/mdt-09-fig25.png)
 
    Figure 25. Activities added and connected.
 
 9. Right-click the **Initialize Data** activity, and select **Properties**
 10. On **the Initialize Data Properties** page, click **Add**, change **Parameter 1** to **OSDComputerName**, and then click **Finish**.
 
-    ![figure 26.](../images/mdt-09-fig26.png)
+    ![figure 26](../images/mdt-09-fig26.png)
 
     Figure 26. The Initialize Data Properties window.
 
@@ -81,13 +81,13 @@ This section assumes you have Orchestrator 2012 R2 installed on a server named O
 13. In the **File** encoding drop-down list, select **ASCII**.
 14. In the **Append** area, right-click inside the **Text** text box and select **Expand**.
 
-    ![figure 27.](../images/mdt-09-fig27.png)
+    ![figure 27](../images/mdt-09-fig27.png)
 
     Figure 27. Expanding the Text area.
 
 15. In the blank text box, right-click and select **Subscribe / Published Data**.
 
-    ![figure 28.](../images/mdt-09-fig28.png)
+    ![figure 28](../images/mdt-09-fig28.png)
 
     Figure 28. Subscribing to data.
 
@@ -95,7 +95,7 @@ This section assumes you have Orchestrator 2012 R2 installed on a server named O
 17. After the **{OSDComputerName from "Initialize Data"}** text, type in **has been deployed at** and, once again, right-click and select **Subscribe / Published Data**.
 18. In the **Published Data** window, select the **Show common Published Data** check box, select the **Activity end time** item, and click **OK**.
 
-    ![figure 29.](../images/mdt-09-fig29.png)
+    ![figure 29](../images/mdt-09-fig29.png)
 
     Figure 29. The expanded text box after all subscriptions have been added.
 
@@ -109,7 +109,7 @@ This section assumes you have Orchestrator 2012 R2 installed on a server named O
 23. Close the **Runbook Tester**.
 24. On the ribbon bar, click **Check In**.
 
-![figure 30.](../images/mdt-09-fig30.png)
+![figure 30](../images/mdt-09-fig30.png)
 
 Figure 30. All tests completed.
 
@@ -133,7 +133,7 @@ Figure 30. All tests completed.
     2.  Use Browse to select **1.0 MDT / MDT Sample**.
 8.  Click **OK**.
 
-![figure 31.](../images/mdt-09-fig31.png)
+![figure 31](../images/mdt-09-fig31.png)
 
 Figure 31. The ready-made task sequence.
 
@@ -157,7 +157,7 @@ Make sure the account you are using has permissions to run runbooks on the Orche
         3.  Domain: CONTOSO
 4.  Wait until the task sequence is completed and then verify that the DeployLog.txt file in the E:\\Logfile folder on OR01 was updated.
 
-![figure 32.](../images/mdt-09-fig32.png)
+![figure 32](../images/mdt-09-fig32.png)
 
 Figure 32. The ready-made task sequence.
 

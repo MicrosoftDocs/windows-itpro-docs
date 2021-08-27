@@ -25,7 +25,7 @@ The default security roles are defined in the root characteristic, and map to ea
 
 The following diagram shows the configuration service provider in tree format as used by OMA Client Provisioning.
 
-![w4 application csp (cp).](images/provisioning-csp-w4-application-cp.png)
+![w4 application csp (cp)](images/provisioning-csp-w4-application-cp.png)
 
 <a href="" id="appid"></a>**APPID**
 Required. This parameter takes a string value. The only supported value for configuring MMS is "w4".

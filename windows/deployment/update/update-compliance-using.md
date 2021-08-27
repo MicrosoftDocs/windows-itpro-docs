@@ -30,23 +30,23 @@ Update Compliance:
 ## The Update Compliance tile
 After Update Compliance has successfully been [added to your Azure subscription](update-compliance-get-started.md#add-update-compliance-to-your-azure-subscription), you'll see this tile:
 
-![Update Compliance tile no data.](images/UC_tile_assessing.png)
+![Update Compliance tile no data](images/UC_tile_assessing.png)
 
 When the solution is added, data is not immediately available. Data will begin to be collected after data is sent up that belongs to the Commercial ID associated with the device. This process assumes that Windows diagnostic data is enabled and data sharing is enabled as described in [Enrolling devices in Update Compliance](update-compliance-get-started.md#enroll-devices-in-update-compliance). After Microsoft has collected and processed any device data associated with your Commercial ID, the tile will be replaced with the following summary:
 
-![Update Compliance tile with data.](images/UC_tile_filled.png)
+![Update Compliance tile with data](images/UC_tile_filled.png)
 
 The summary details the total number of devices that Microsoft has received data from with your Commercial ID. It also provides the number of devices that need attention if any. Finally, it details the last point at which your Update Compliance workspace was refreshed.
 
 ## The Update Compliance workspace
 
-![Update Compliance workspace view.](images/UC_workspace_needs_attention.png)
+![Update Compliance workspace view](images/UC_workspace_needs_attention.png)
 
 When you select this tile, you will be redirected to the Update Compliance workspace. The workspace is organized with the Overview blade providing a hub from which to navigate to different reports of your devices' data. 
 
 ### Overview blade
 
-![The Overview blade.](images/UC_workspace_overview_blade.png)
+![The Overview blade](images/UC_workspace_overview_blade.png)
 
 Update Compliance's overview blade summarizes all the data Update Compliance provides. It functions as a hub from which you can navigate to different sections. The total number of devices detected by Update Compliance is reported in the title of this blade. What follows is a distribution for all devices as to whether they are up to date on the following items:
 * Security updates: A device is up to date on quality updates whenever it has the latest applicable quality update installed. Quality updates are monthly cumulative updates that are specific to a version of Windows 10.

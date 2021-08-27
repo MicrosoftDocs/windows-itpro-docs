@@ -43,7 +43,7 @@ MDT has many useful features, such as:
 - **GPT support.** Supports deployment to machines that require the new GPT partition table format. This is related to UEFI.
 - **Enhanced Windows PowerShell support.** Provides support for running PowerShell scripts.
 
-    ![figure 2.](../images/mdt-05-fig02.png)
+    ![figure 2](../images/mdt-05-fig02.png)
 
     The deployment share mounted as a standard PSDrive allows for administration using PowerShell.
 
@@ -58,7 +58,7 @@ MDT has many useful features, such as:
 - **Offline BitLocker.** Provides the capability to have BitLocker enabled during the Windows Preinstallation Environment (Windows PE) phase, thus saving hours of encryption time.
 - **USMT offline user-state migration.** Provides support for running the User State Migration Tool (USMT) capture offline, during the Windows PE phase of the deployment.
 
-    ![figure 3.](../images/mdt-05-fig03.png)
+    ![figure 3](../images/mdt-05-fig03.png)
 
     The offline USMT backup in action.
 
@@ -76,7 +76,7 @@ Many features in MDT support Lite Touch Installation (LTI) for Windows 10. An L
 
 When deploying the Windows operating system using MDT, most of the administration and configuration is done through the Deployment Workbench, but you also can perform many of the tasks using Windows PowerShell. The easiest way to find out how to use PowerShell in MDT is to use the Deployment Workbench to perform an operation and at the end of that task, click View Script. That will give you the PowerShell command.
 
-![figure 4.](../images/mdt-05-fig04.png)
+![figure 4](../images/mdt-05-fig04.png)
 
 If you click **View Script** on the right side, you will get the PowerShell code that was used to perform the task.
 
@@ -93,7 +93,7 @@ The rules (CustomSettings.ini and Bootstrap.ini) make up the brain of MDT. The r
 - Regional settings
 You can manage hundreds of settings in the rules. For more information, see the [Microsoft Deployment Toolkit resource center](/mem/configmgr/mdt/).
 
-![figure 5.](../images/mdt-05-fig05.png)
+![figure 5](../images/mdt-05-fig05.png)
 
 Example of a MDT rule. In this example, the new computer name is being calculated based on PC- plus the first seven (Left) characters from the serial number
 

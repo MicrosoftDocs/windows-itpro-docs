@@ -209,7 +209,7 @@ On **CM01**:
    * Site Server Name: CM01.contoso.com
    * Site code: PS1
 
-![figure 8.](../images/mdt-06-fig08.png)
+![figure 8](../images/mdt-06-fig08.png)
 
 MDT integration with Configuration Manager.
 
@@ -223,11 +223,11 @@ On **CM01**:
 2.  In the right pane, right-click **Default Client Settings** and then click **Properties**.
 3.  In the **Computer Agent** node, in the **Organization name displayed in Software Center** text box, type in **Contoso** and click **OK**.
 
-![figure 9.](../images/mdt-06-fig10.png)
+![figure 9](../images/mdt-06-fig10.png)
 
 Configure the organization name in client settings.
 
-![figure 10.](../images/fig10-contosoinstall.png)
+![figure 10](../images/fig10-contosoinstall.png)
 
 The Contoso organization name displayed during deployment.
 
@@ -241,7 +241,7 @@ On **CM01**:
 2.  Right-click **PS1 - Primary Site 1**, point to **Configure Site Components**, and then select **Software Distribution**.
 3.  On the **Network Access Account** tab, select **Specify the account that accesses network locations** and add the *New Account* **CONTOSO\\CM\_NAA** as the Network Access account (password: pass@word1). Use the new **Verify** option to verify that the account can connect to the **\\\\DC01\\sysvol** network share.
 
-![figure 11.](../images/mdt-06-fig12.png)
+![figure 11](../images/mdt-06-fig12.png)
 
 Test the connection for the Network Access account.
 
@@ -261,7 +261,7 @@ On **CM01**:
     * Require a password when computers use PXE
     * Password and Confirm password: pass@word1
 
-    ![figure 12.](../images/mdt-06-fig13.png)
+    ![figure 12](../images/mdt-06-fig13.png)
 
     Configure the CM01 distribution point for PXE.
 
@@ -270,13 +270,13 @@ On **CM01**:
 
 4.  Using the CMTrace tool, review the C:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Look for ConfigurePXE and CcmInstallPXE lines.
 
-    ![figure 13.](../images/mdt-06-fig14.png)
+    ![figure 13](../images/mdt-06-fig14.png)
 
     The distmgr.log displays a successful configuration of PXE on the distribution point.
 
 5.  Verify that you have seven files in each of the folders **D:\\RemoteInstall\\SMSBoot\\x86** and **D:\\RemoteInstall\\SMSBoot\\x64**.
 
-    ![figure 14.](../images/mdt-06-fig15.png)
+    ![figure 14](../images/mdt-06-fig15.png)
 
     The contents of the D:\\RemoteInstall\\SMSBoot\\x64 folder after you enable PXE.
 
@@ -341,7 +341,7 @@ The task sequence uses instructions that allow you to reduce the number of task 
     MachineObjectOU=ou=desktops,ou=Contoso,dc=contoso,dc=com
     ```
 
-![figure 2.](../images/fig2-gather.png)
+![figure 2](../images/fig2-gather.png)
 
 The Gather action in the task sequence is reading the rules.
 
@@ -349,7 +349,7 @@ The Gather action in the task sequence is reading the rules.
 
 When testing a deployment, it is important to be able to quickly test any changes you make to the deployment without needing to run through an entire deployment. MDT rules can be tested very quickly, saving significant testing time in a deployment project. For more information, see [Configure MDT settings](../deploy-windows-mdt/configure-mdt-settings.md).
 
-![figure 3.](../images/mdt-06-fig03.png)
+![figure 3](../images/mdt-06-fig03.png)
 
 The folder that contains the rules, a few scripts from MDT, and a custom script (Gather.ps1).
 
@@ -357,7 +357,7 @@ The folder that contains the rules, a few scripts from MDT, and a custom script 
 
 With MDT integration, you can follow your deployments in real time, and if you have access to Microsoft Diagnostics and Recovery Toolkit (DaRT), you can even remote into Windows Preinstallation Environment (Windows PE) during deployment. The real-time monitoring data can be viewed from within the MDT Deployment Workbench, via a web browser, Windows PowerShell, the Event Viewer, or Microsoft Excel 2013. In fact, any script or app that can read an Open Data (OData) feed can read the information.
 
-![figure 4.](../images/mdt-06-fig04.png)
+![figure 4](../images/mdt-06-fig04.png)
 
 View the real-time monitoring data with PowerShell.
 
@@ -365,7 +365,7 @@ View the real-time monitoring data with PowerShell.
 
 For some deployment scenarios, you may need to prompt the user for information during deployment such as the computer name, the correct organizational unit (OU) for the computer, or which applications should be installed by the task sequence. With MDT integration, you can enable the User-Driven Installation (UDI) wizard to gather the required information, and customize the wizard using the UDI Wizard Designer.
 
-![figure 5.](../images/mdt-06-fig05.png)
+![figure 5](../images/mdt-06-fig05.png)
 
 The optional UDI wizard open in the UDI Wizard Designer.
 

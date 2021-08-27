@@ -53,7 +53,7 @@ For example:
 3. Verify that the configuration XML file is authored and formatted correctly. Correct any configuration errors, then create and apply a new provisioning package. Sign out and sign in again to check the new configuration.
 4. Additional logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
 
-![Event Viewer, right-click Operational, select enable log.](images/enable-assigned-access-log.png)
+![Event Viewer, right-click Operational, select enable log](images/enable-assigned-access-log.png)
 
 
 ### Automatic logon issues 

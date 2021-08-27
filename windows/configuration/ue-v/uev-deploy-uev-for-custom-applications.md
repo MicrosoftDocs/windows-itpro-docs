@@ -121,7 +121,7 @@ UE-V for Windows 10, version 1607 includes a new template generator. If you are 
 <img src="media/image1.png" width="537" height="394" />
 -->
 
-![Selecting UE-V features in ADK.](images/uev-adk-select-uev-feature.png)
+![Selecting UE-V features in ADK](images/uev-adk-select-uev-feature.png)
 
 3. To open the generator, select **Microsoft Application Virtualization Generator** from the **Start** menu. 
 

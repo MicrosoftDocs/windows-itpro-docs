@@ -57,7 +57,7 @@ Using the WCD, create a provisioning package using the enrollment information re
 1. Open the WCD tool.
 2. Click **Advanced Provisioning**.
 
-   ![icd start page.](images/bulk-enrollment7.png)
+   ![icd start page](images/bulk-enrollment7.png)
 3. Enter a project name and click **Next**.
 4. Select **All Windows editions**, since Provisioning CSP is common to all Windows editions, then click **Next**.
 5. Skip **Import a provisioning package (optional)** and click **Finish**.
@@ -74,20 +74,20 @@ Using the WCD, create a provisioning package using the enrollment information re
    For detailed descriptions of these settings, see [Provisioning CSP](provisioning-csp.md).
    Here is the screenshot of the WCD at this point.
    
-    ![bulk enrollment screenshot.](images/bulk-enrollment.png)
+    ![bulk enrollment screenshot](images/bulk-enrollment.png)
 9. Configure the other settings, such as the Wi-Fi connections so that the device can join a network before joining MDM (e.g., **Runtime settings** &gt; **ConnectivityProfiles** &gt; **WLANSetting**).
 10. When you are done adding all the settings, on the **File** menu, click **Save**.
 11. On the main menu click **Export** &gt; **Provisioning package**.
 
-    ![icd menu for export.](images/bulk-enrollment2.png)
+    ![icd menu for export](images/bulk-enrollment2.png)
 12. Enter the values for your package and specify the package output location.
 
-    ![enter package information.](images/bulk-enrollment3.png)
-    ![enter additional information for package information.](images/bulk-enrollment4.png)
-    ![specify file location.](images/bulk-enrollment6.png)
+    ![enter package information](images/bulk-enrollment3.png)
+    ![enter additional information for package information](images/bulk-enrollment4.png)
+    ![specify file location](images/bulk-enrollment6.png)
 13. Click **Build**.
 
-    ![icb build window.](images/bulk-enrollment5.png)
+    ![icb build window](images/bulk-enrollment5.png)
 14. Apply the package to some test devices and verify that they work. For more information, see [Apply a provisioning package](#apply-a-provisioning-package).
 15. Apply the package to your devices.
 
@@ -108,7 +108,7 @@ Using the WCD, create a provisioning package using the enrollment information re
    5.  Set **ExportCertificate** to False.
    6.  For **KeyLocation**, select **Software only**.
 
-   ![icd certificates section.](images/bulk-enrollment8.png)
+   ![icd certificates section](images/bulk-enrollment8.png)
 7. Specify the workplace settings.
    1. Got to **Workplace** &gt; **Enrollments**.
    2. Enter the **UPN** for the enrollment and then click **Add**.

@@ -34,7 +34,7 @@ By using connection security rules based on IPsec, you provide a logical barrier
 
 The design is shown in the following illustration, with the arrows that show the permitted communication paths.
 
-![isolated domain boundary zone.](images/wfasdomainisoboundary.gif)
+![isolated domain boundary zone](images/wfasdomainisoboundary.gif)
 
 Characteristics of this design, as shown in the diagram, include the following:
 

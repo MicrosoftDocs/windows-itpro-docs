@@ -26,7 +26,7 @@ The smart card removal policy service is applicable when a user has signed in wi
 
 **Smart card removal policy service**
 
-![Smart card removal policy service.](images/sc-image501.gif)
+![Smart card removal policy service](images/sc-image501.gif)
 
 The numbers in the previous figure represent the following actions:
 

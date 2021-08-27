@@ -42,7 +42,7 @@ This helps simplify servicing. Devices with the original Release to Market (RTM)
 Windows publishes the new LCU packages for each Windows 10 version (1607, 1709, etc.) on the second Tuesday of each month. This package is classified as a required security update and contains contents from the previous LCU as well as new security, non-security, and Internet Explorer 11 (IE11) fixes. A reboot of the device might be required to complete installation of the update.
 
 
-![High level cumulative update model.](images/servicing-cadence.png)
+![High level cumulative update model](images/servicing-cadence.png)
 *Figure 1.0 - High level cumulative update model*
 
 Another benefit of the LCU model is fewer steps. Devices that have the original Release to Market (RTM) version of a release can install the most recent LCU to get up to date in one step, rather than having to install multiple updates with reboots after each.
@@ -67,7 +67,7 @@ Customers saw the LCU model used for Windows 10 as having packages that were too
 
 The Monthly Rollup includes new non-security (if appropriate), security updates, Internet Explorer (IE) updates, and all updates from the previous month similar to the Windows 10 model. The Security-only package includes only new security updates for the month. This means that any security updates from any previous month are not included in current month's Security-Only Package. If a Security-Only update is missed, it is missed. Those updates will not appear in a future Security-Only update. Additionally, a cumulative package is offered for IE, which can be tested and installed separately, reducing the total update package size. The IE cumulative update includes both security and non-security fixes following the same model as Windows 10.
 
-![Legacy OS security-only update model.](images/security-only-update.png)
+![Legacy OS security-only update model](images/security-only-update.png)
 *Figure 2.0 - Legacy OS security-only update model*
 
 Moving to the cumulative model for legacy OS versions continues to improve predictability of update quality. The Windows legacy environments which have fully updated machines with Monthly Rollups are running the same baseline against which all legacy OS version updates are tested. These include all of the updates (security and non-security) prior to and after October 2016. Many customer environments do not have all updates prior to this change installed, which leaves some continued fragmentation in the ecosystem. Further, customers who are installing Security-Only Updates and potentially doing so inconsistently are also more fragmented than Microsoft's test environments for legacy OS version. This remaining fragmentation results in issues like those seen when the September 2016 Servicing Stack Update (SSU) was needed for smooth installation of the August 2018 security update. These environments did not have the SSU applied previously.
@@ -99,7 +99,7 @@ Windows 10 version 1709:
 - (10B) October 9, 2018 Update Tuesday / B release includes all fixes included in 9B, all fixes in 9C and introduces new security fixes and IE updates. This update is qualified as "Required, Security" and requires a system reboot.
 All of these updates are cumulative and build on each other for Windows 10. This is in contrast to legacy OS versions, where the 9C release becomes part of the "Monthly Rollup," but not the "Security Only" update. In other words, a Window 7 SP1 9C update is part of the cumulative "Monthly Rollup" but not included in the "Security Only" update because the fixes are qualified as "non-security". This is an important variation to note on the two models. 
 
-![Preview releases in the Windows 10 LCU model.](images/servicing-previews.png)
+![Preview releases in the Windows 10 LCU model](images/servicing-previews.png)
 *Figure 3.0 - Preview releases within the Windows 10 LCU model*
 
 ## Previews vs. on-demand releases

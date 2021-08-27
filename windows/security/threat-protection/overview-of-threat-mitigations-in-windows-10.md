@@ -130,7 +130,7 @@ You can now see which processes have DEP enabled.
 
 <!-- This might be a good place to mention the cmdlet that lets you see the same kind of output. -->
 
-![Processes with DEP enabled in Windows 10.](images/security-fig5-dep.png)
+![Processes with DEP enabled in Windows 10](images/security-fig5-dep.png)
 
 *Figure 2.&nbsp;&nbsp;Processes on which DEP has been enabled in Windows 10*
 
@@ -168,7 +168,7 @@ One of the most common techniques used to gain access to a system is to find a v
 
 Address Space Layout Randomization (ASLR) makes that type of attack much more difficult because it randomizes how and where important data is stored in memory. With ASLR, it is more difficult for malware to find the specific location it needs to attack. Figure 3 illustrates how ASLR works by showing how the locations of different critical Windows components can change in memory between restarts.
 
-![ASLR at work.](images/security-fig4-aslr.png)
+![ASLR at work](images/security-fig4-aslr.png)
 
 **Figure 3.&nbsp;&nbsp;ASLR at work**
 

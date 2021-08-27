@@ -52,11 +52,11 @@ On the device, perform the following steps: (add select certificate)
 
 2.  Open **Settings** by tapping the gear icon on a PC, or the ellipsis (...) and then the gear icon on a phone.
 
-	:::image type="content" alt-text="settings icon in mail app." source="images/mailsettings.png":::
+	:::image type="content" alt-text="settings icon in mail app" source="images/mailsettings.png":::
 
 3.  Tap **Email security**.
 
-	:::image type="content" alt-text="email security settings." source="images/emailsecurity.png":::
+	:::image type="content" alt-text="email security settings" source="images/emailsecurity.png":::
 
 4.  In **Select an account**, select the account for which you want to configure S/MIME options.
 
@@ -77,7 +77,7 @@ On the device, perform the following steps: (add select certificate)
 
 2.  Use **Sign** and **Encrypt** icons to turn on digital signature and encryption for this message.
 
-	:::image type="content" alt-text="sign or encrypt message." source="images/signencrypt.png":::
+	:::image type="content" alt-text="sign or encrypt message" source="images/signencrypt.png":::
 
 ## Read signed or encrypted messages
 
@@ -93,5 +93,5 @@ When you receive a signed email, the app provide feature to install correspondin
 
 3.  Tap **Install.**
 
-	:::image type="content" alt-text="message security information." source="images/installcert.png":::
+	:::image type="content" alt-text="message security information" source="images/installcert.png":::
  

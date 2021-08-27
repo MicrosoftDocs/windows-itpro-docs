@@ -213,16 +213,16 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 
 | Class                                                                    | Test completed in Windows 10 for desktop |
 |--------------------------------------------------------------------------|------------------------------------------|
-| [**wpcappoverride**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | ![cross mark.](images/checkmark.png)      |
-| [**wpcgameoverride**](/windows/win32/parcon/parental-controls-wmi-provider-schema)      | ![cross mark.](images/checkmark.png)      |
-| [**wpcgamessettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)     | ![cross mark.](images/checkmark.png)      |
-| [**wpcrating**](/windows/win32/parcon/parental-controls-wmi-provider-schema)            | ![cross mark.](images/checkmark.png)      |
+| [**wpcappoverride**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | ![cross mark](images/checkmark.png)      |
+| [**wpcgameoverride**](/windows/win32/parcon/parental-controls-wmi-provider-schema)      | ![cross mark](images/checkmark.png)      |
+| [**wpcgamessettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)     | ![cross mark](images/checkmark.png)      |
+| [**wpcrating**](/windows/win32/parcon/parental-controls-wmi-provider-schema)            | ![cross mark](images/checkmark.png)      |
 | [**wpcRatingsDescriptor**](/windows/win32/parcon/parental-controls-wmi-provider-schema) |                                          |
-| [**wpcratingssystem**](/windows/win32/parcon/parental-controls-wmi-provider-schema)     | ![cross mark.](images/checkmark.png)      |
-| [**wpcsystemsettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)    | ![cross mark.](images/checkmark.png)      |
-| [**wpcurloverride**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | ![cross mark.](images/checkmark.png)      |
-| [**wpcusersettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)      | ![cross mark.](images/checkmark.png)      |
-| [**wpcwebsettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | ![cross mark.](images/checkmark.png)      |
+| [**wpcratingssystem**](/windows/win32/parcon/parental-controls-wmi-provider-schema)     | ![cross mark](images/checkmark.png)      |
+| [**wpcsystemsettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)    | ![cross mark](images/checkmark.png)      |
+| [**wpcurloverride**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | ![cross mark](images/checkmark.png)      |
+| [**wpcusersettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)      | ![cross mark](images/checkmark.png)      |
+| [**wpcwebsettings**](/windows/win32/parcon/parental-controls-wmi-provider-schema)       | ![cross mark](images/checkmark.png)      |
 
  
 
@@ -232,17 +232,17 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 |--------------------------------------------------------------------------|------------------------------------------|
 [**Win32\_1394Controller**](/windows/win32/cimwin32prov/win32-1394controller) |
 [**Win32\_BaseBoard**](/windows/win32/cimwin32prov/win32-baseboard)      |
-[**Win32\_Battery**](/windows/win32/cimwin32prov/win32-battery)        | ![cross mark.](images/checkmark.png)
-[**Win32\_BIOS**](/windows/win32/cimwin32prov/win32-bios)           | ![cross mark.](images/checkmark.png)
+[**Win32\_Battery**](/windows/win32/cimwin32prov/win32-battery)        | ![cross mark](images/checkmark.png)
+[**Win32\_BIOS**](/windows/win32/cimwin32prov/win32-bios)           | ![cross mark](images/checkmark.png)
 [**Win32\_CDROMDrive**](/windows/win32/cimwin32prov/win32-cdromdrive)     |
-[**Win32\_ComputerSystem**](/windows/win32/cimwin32prov/win32-computersystem) | ![cross mark.](images/checkmark.png)
-[**Win32\_ComputerSystemProduct**](/windows/win32/cimwin32prov/win32-computersystemproduct) | ![cross mark.](images/checkmark.png)
-[**Win32\_CurrentTime**](/previous-versions/windows/desktop/wmitimepprov/win32-currenttime)    | ![cross mark.](images/checkmark.png)
+[**Win32\_ComputerSystem**](/windows/win32/cimwin32prov/win32-computersystem) | ![cross mark](images/checkmark.png)
+[**Win32\_ComputerSystemProduct**](/windows/win32/cimwin32prov/win32-computersystemproduct) | ![cross mark](images/checkmark.png)
+[**Win32\_CurrentTime**](/previous-versions/windows/desktop/wmitimepprov/win32-currenttime)    | ![cross mark](images/checkmark.png)
 [**Win32\_Desktop**](/windows/win32/cimwin32prov/win32-desktop)        |
-[**Win32\_DesktopMonitor**](/windows/win32/cimwin32prov/win32-desktopmonitor) |![cross mark.](images/checkmark.png)
-[**Win32\_DiskDrive**](/windows/win32/cimwin32prov/win32-diskdrive)      | ![cross mark.](images/checkmark.png)
+[**Win32\_DesktopMonitor**](/windows/win32/cimwin32prov/win32-desktopmonitor) |![cross mark](images/checkmark.png)
+[**Win32\_DiskDrive**](/windows/win32/cimwin32prov/win32-diskdrive)      | ![cross mark](images/checkmark.png)
 [**Win32\_DiskPartition**](/windows/win32/cimwin32prov/win32-diskpartition)  |
-[**Win32\_DisplayConfiguration**](/previous-versions//aa394137(v=vs.85)) | ![cross mark.](images/checkmark.png)
+[**Win32\_DisplayConfiguration**](/previous-versions//aa394137(v=vs.85)) | ![cross mark](images/checkmark.png)
 [**Win32\_DMAChannel**](/windows/win32/cimwin32prov/win32-dmachannel)     | 
 [**Win32\_DriverVXD**](/previous-versions//aa394141(v=vs.85))      |
 [**Win32\_EncryptableVolume**](/windows/win32/secprov/win32-encryptablevolume) |
@@ -252,23 +252,23 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 [**Win32\_IRQResource**](/windows/win32/cimwin32prov/win32-irqresource)    |
 [**Win32\_Keyboard**](/windows/win32/cimwin32prov/win32-keyboard)       |
 [**Win32\_LoadOrderGroup**](/windows/win32/cimwin32prov/win32-loadordergroup) |
-[**Win32\_LocalTime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime)      | ![cross mark.](images/checkmark.png)
+[**Win32\_LocalTime**](/previous-versions/windows/desktop/wmitimepprov/win32-localtime)      | ![cross mark](images/checkmark.png)
 [**Win32\_LoggedOnUser**](/windows/win32/cimwin32prov/win32-loggedonuser)   |
-[**Win32\_LogicalDisk**](/windows/win32/cimwin32prov/win32-logicaldisk)    | ![cross mark.](images/checkmark.png)
+[**Win32\_LogicalDisk**](/windows/win32/cimwin32prov/win32-logicaldisk)    | ![cross mark](images/checkmark.png)
 [**Win32\_MotherboardDevice**](/windows/win32/cimwin32prov/win32-motherboarddevice) |
-[**Win32\_NetworkAdapter**](/windows/win32/cimwin32prov/win32-networkadapter) | ![cross mark.](images/checkmark.png)
+[**Win32\_NetworkAdapter**](/windows/win32/cimwin32prov/win32-networkadapter) | ![cross mark](images/checkmark.png)
 [**Win32\_NetworkAdapterConfiguration**](/windows/win32/cimwin32prov/win32-networkadapterconfiguration) |
 [**Win32\_NetworkClient**](/windows/win32/cimwin32prov/win32-networkclient)  |
 [**Win32\_NetworkLoginProfile**](/windows/win32/cimwin32prov/win32-networkloginprofile) |
 [**Win32\_NetworkProtocol**](/windows/win32/cimwin32prov/win32-networkprotocol) |
 [**Win32\_NTEventlogFile**](/previous-versions/windows/desktop/legacy/aa394225(v=vs.85))  |
-[**Win32\_OperatingSystem**](/windows/win32/cimwin32prov/win32-operatingsystem) | ![cross mark.](images/checkmark.png)
+[**Win32\_OperatingSystem**](/windows/win32/cimwin32prov/win32-operatingsystem) | ![cross mark](images/checkmark.png)
 [**Win32\_OSRecoveryConfiguration**](/windows/win32/cimwin32prov/win32-osrecoveryconfiguration) |
 [**Win32\_PageFileSetting**](/windows/win32/cimwin32prov/win32-pagefilesetting) |
 [**Win32\_ParallelPort**](/windows/win32/cimwin32prov/win32-parallelport) |
 [**Win32\_PCMCIAController**](/windows/win32/cimwin32prov/win32-pcmciacontroller) |
 [**Win32\_PhysicalMedia**](/previous-versions/windows/desktop/cimwin32a/win32-physicalmedia)                                   |  
-[**Win32\_PhysicalMemory**](/windows/win32/cimwin32prov/win32-physicalmemory)   | ![cross mark.](images/checkmark.png)
+[**Win32\_PhysicalMemory**](/windows/win32/cimwin32prov/win32-physicalmemory)   | ![cross mark](images/checkmark.png)
 [**Win32\_PnPDevice**](/windows/win32/cimwin32prov/win32-pnpdevice)        |  
 [**Win32\_PnPEntity**](/windows/win32/cimwin32prov/win32-pnpentity)        |  
 [**Win32\_PointingDevice**](/windows/win32/cimwin32prov/win32-pointingdevice)   |
@@ -277,25 +277,25 @@ For links to these classes, see [**MDM Bridge WMI Provider**](/windows/win32/dmw
 [**Win32\_POTSModem**](/windows/win32/cimwin32prov/win32-potsmodem)        |
 [**Win32\_Printer**](/windows/win32/cimwin32prov/win32-printer)          |
 [**Win32\_PrinterConfiguration**](/windows/win32/cimwin32prov/win32-printerconfiguration) |
-[**Win32\_Processor**](/windows/win32/cimwin32prov/win32-processor)        | ![cross mark.](images/checkmark.png)
-[**Win32\_QuickFixEngineering**](/windows/win32/cimwin32prov/win32-quickfixengineering) | ![cross mark.](images/checkmark.png)
+[**Win32\_Processor**](/windows/win32/cimwin32prov/win32-processor)        | ![cross mark](images/checkmark.png)
+[**Win32\_QuickFixEngineering**](/windows/win32/cimwin32prov/win32-quickfixengineering) | ![cross mark](images/checkmark.png)
 [**Win32\_Registry**](/windows/win32/cimwin32prov/win32-registry)         |
 [**Win32\_SCSIController**](/windows/win32/cimwin32prov/win32-scsicontroller)   |
 [**Win32\_SerialPort**](/windows/win32/cimwin32prov/win32-serialport)       |
 [**Win32\_SerialPortConfiguration**](/windows/win32/cimwin32prov/win32-serialportconfiguration) |
 [**Win32\_ServerFeature**](/windows/win32/wmisdk/win32-serverfeature)    |
-[**Win32\_Service**](/windows/win32/cimwin32prov/win32-service)          | ![cross mark.](images/checkmark.png)
-[**Win32\_Share**](/windows/win32/cimwin32prov/win32-share)            | ![cross mark.](images/checkmark.png)
+[**Win32\_Service**](/windows/win32/cimwin32prov/win32-service)          | ![cross mark](images/checkmark.png)
+[**Win32\_Share**](/windows/win32/cimwin32prov/win32-share)            | ![cross mark](images/checkmark.png)
 [**Win32\_SoundDevice**](/windows/win32/cimwin32prov/win32-sounddevice)      |
 [**Win32\_SystemAccount**](/windows/win32/cimwin32prov/win32-systemaccount)    |
-[**Win32\_SystemBIOS**](/windows/win32/cimwin32prov/win32-systembios)       | ![cross mark.](images/checkmark.png)
+[**Win32\_SystemBIOS**](/windows/win32/cimwin32prov/win32-systembios)       | ![cross mark](images/checkmark.png)
 [**Win32\_SystemDriver**](/windows/win32/cimwin32prov/win32-systemdriver)     |
-[**Win32\_SystemEnclosure**](/windows/win32/cimwin32prov/win32-systemenclosure)  | ![cross mark.](images/checkmark.png)
+[**Win32\_SystemEnclosure**](/windows/win32/cimwin32prov/win32-systemenclosure)  | ![cross mark](images/checkmark.png)
 [**Win32\_TapeDrive**](/windows/win32/cimwin32prov/win32-tapedrive)        |
-[**Win32\_TimeZone**](/windows/win32/cimwin32prov/win32-timezone)         | ![cross mark.](images/checkmark.png)
+[**Win32\_TimeZone**](/windows/win32/cimwin32prov/win32-timezone)         | ![cross mark](images/checkmark.png)
 [**Win32\_UninterruptiblePowerSupply**](/previous-versions//aa394503(v=vs.85)) |
 [**Win32\_USBController**](/windows/win32/cimwin32prov/win32-usbcontroller)    |
-[**Win32\_UTCTime**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime)          | ![cross mark.](images/checkmark.png)
+[**Win32\_UTCTime**](/previous-versions/windows/desktop/wmitimepprov/win32-utctime)          | ![cross mark](images/checkmark.png)
 [**Win32\_VideoController**](/windows/win32/cimwin32prov/win32-videocontroller) |
 **Win32\_WindowsUpdateAgentVersion**                                                        |
  

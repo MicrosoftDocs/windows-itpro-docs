@@ -35,7 +35,7 @@ You can apply a provisioning package on a USB drive to off-the-shelf devices dur
 2. 
 2. On the **Finish** page, select **Switch to advanced editor**.
 
-  ![Switch to advanced editor.](images/icd-school-adv-edit.png)
+  ![Switch to advanced editor](images/icd-school-adv-edit.png)
 
 **Next steps**
 - [Add a desktop app to your package](#add-a-desktop-app-to-your-package)
@@ -52,7 +52,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 2. Click **Advanced provisioning**.
 
-  ![ICD start options.](images/icdstart-option.png)  
+  ![ICD start options](images/icdstart-option.png)  
   
 3. Name your project and click **Next**.
 
@@ -89,17 +89,17 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 2. For **DeviceContextApp**, specify the **PackageFamilyName** for the app. In Microsoft Store for Business, the package family name is listed in the **Package details** section of the download page.
 
-    ![details for offline app package.](images/uwp-family.png)
+    ![details for offline app package](images/uwp-family.png)
 
 3. For **ApplicationFile**, click **Browse** to find and select the target app (either an \*.appx or \*.appxbundle).
 
 4. For **DependencyAppxFiles**, click **Browse** to find and add any dependencies for the app. In Microsoft Store for Business, any dependencies for the app are listed in the **Required frameworks** section of the download page. 
 
-    ![required frameworks for offline app package.](images/uwp-dependencies.png)
+    ![required frameworks for offline app package](images/uwp-dependencies.png)
 
 5. For **DeviceContextAppLicense**, enter the **LicenseProductID**. In Microsoft Store for Business, you generate the license for the app on the app's download page.
 
-    ![generate license for offline app.](images/uwp-license.png)
+    ![generate license for offline app](images/uwp-license.png)
 
 [Learn more about distributing offline apps from the Microsoft Store for Business.](/microsoft-store/distribute-offline-apps)
 
@@ -168,7 +168,7 @@ If your build is successful, the name of the provisioning package, output direct
 **During initial setup, from a USB drive**
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
-    ![The first screen to set up a new PC.](images/oobe.jpg)
+    ![The first screen to set up a new PC](images/oobe.jpg)
 
 2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
@@ -176,11 +176,11 @@ If your build is successful, the name of the provisioning package, output direct
 
 3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
 
-    ![Provision this device.](images/prov.jpg)
+    ![Provision this device](images/prov.jpg)
     
 4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
 
-    ![Choose a package.](images/choose-package.png)
+    ![Choose a package](images/choose-package.png)
 
 5. Select **Yes, add it**.
 
@@ -188,11 +188,11 @@ If your build is successful, the name of the provisioning package, output direct
     
 6. Read and accept the Microsoft Software License Terms.  
 
-    ![Sign in.](images/license-terms.png)
+    ![Sign in](images/license-terms.png)
     
 7. Select **Use Express settings**.
 
-    ![Get going fast.](images/express-settings.png)
+    ![Get going fast](images/express-settings.png)
 
 8. If the PC doesn't use a volume license, you'll see the **Who owns this PC?** screen. Select **My work or school owns it** and tap **Next**.
 
@@ -200,18 +200,18 @@ If your build is successful, the name of the provisioning package, output direct
 
 9. On the **Choose how you'll connect** screen, select **Join Azure AD** or **Join a domain** and tap **Next**.
 
-    ![Connect to Azure AD.](images/connect-aad.png)
+    ![Connect to Azure AD](images/connect-aad.png)
 
 10. Sign in with  your domain, Azure AD,  or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
 
-    ![Sign in.](images/sign-in-prov.png)
+    ![Sign in](images/sign-in-prov.png)
 
     
 **After setup, from a USB drive, network folder, or SharePoint site**
 
 On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and select the package to install. 
 
-![add a package option.](images/package.png)
+![add a package option](images/package.png)
 
 -->
 

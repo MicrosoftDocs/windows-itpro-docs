@@ -31,11 +31,11 @@ Previously known as *Windows Imaging and Configuration Designer (ICD)*, the tool
 
 Windows Configuration Designer in Windows 10, version 1703, includes several new wizards to make it easier to create provisioning packages.
 
-![wizards for desktop, mobile, kiosk, Surface Hub.](images/wcd-options.png)
+![wizards for desktop, mobile, kiosk, Surface Hub](images/wcd-options.png)
 
 Both the desktop and kiosk wizards include an option to remove pre-installed software, based on the new [CleanPC configuration service provider (CSP)](/windows/client-management/mdm/cleanpc-csp).
 
-![remove pre-installed software option.](images/wcd-cleanpc.png)
+![remove pre-installed software option](images/wcd-cleanpc.png)
 
 [Learn more about Windows Configuration Designer.](/windows/configuration/provisioning-packages/provisioning-packages)
 
@@ -44,7 +44,7 @@ Both the desktop and kiosk wizards include an option to remove pre-installed sof
 
 Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](/windows/configuration/provisioning-packages/provisioning-packages#configuration-designer-wizards). Azure AD join in bulk is available in the desktop, mobile, kiosk, and Surface Hub wizards.
 
-![get bulk token action in wizard.](images/bulk-token.png)
+![get bulk token action in wizard](images/bulk-token.png)
 
 
 ### Windows Spotlight
@@ -279,7 +279,7 @@ Learn about the new Group Policies that were added in Windows 10, version 1703.
 
 The Lockdown Designer app helps you configure and create a lockdown XML file to apply to devices running Windows 10 Mobile, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](/windows/configuration/mobile-devices/lockdown-xml).
 
-![Lockdown Designer app in Store.](images/ldstore.png)
+![Lockdown Designer app in Store](images/ldstore.png)
 
 [Learn more about the Lockdown Designer app.](/windows/configuration/mobile-devices/mobile-lockdown-designer)
 

@@ -30,13 +30,13 @@ To configure the assessment URL and a dedicated testing account on a single PC, 
 
    **Figure 1** - Use the Settings app to set up a test-taking account
 
-   ![Use the Settings app to set up a test-taking account.](images/tat_settingsapp_workorschoolaccess_setuptestaccount.png)
+   ![Use the Settings app to set up a test-taking account](images/tat_settingsapp_workorschoolaccess_setuptestaccount.png)
 
 4. In the **Set up an account for taking tests** window, choose an existing account to use as the dedicated testing account.
 
    **Figure 2** - Choose the test-taking account
 
-   ![Choose the test-taking account.](images/tat_settingsapp_setuptesttakingaccount_1703.png) 
+   ![Choose the test-taking account](images/tat_settingsapp_setuptesttakingaccount_1703.png) 
 
     > [!NOTE]  
     > If you don't have an account on the device, you can create a new account. To do this, go to **Settings > Accounts > Other people > Add someone else to this PC > I don’t have this person’s sign-in information > Add a user without a Microsoft account**.

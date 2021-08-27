@@ -58,7 +58,7 @@ Provisioning packages can include management instructions and policies, installa
 > [!TIP]
 > Use the desktop wizard to create a package with the common settings, then switch to the advanced editor to add other settings, apps, policies, etc.
 >
->![open advanced editor.](../images/icd-simple-edit.png)
+>![open advanced editor](../images/icd-simple-edit.png)
 
 ## Create the provisioning package
 
@@ -68,11 +68,11 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 2. Click **Provision desktop devices**.
 
-   ![ICD start options.](../images/icd-create-options-1703.png)   
+   ![ICD start options](../images/icd-create-options-1703.png)   
 
 3. Name your project and click **Finish**. The pages for desktop provisioning will walk you through the following steps.
 
-   ![ICD desktop provisioning.](../images/icd-desktop-1703.png)
+   ![ICD desktop provisioning](../images/icd-desktop-1703.png)
   
 > [!IMPORTANT]
 > When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.

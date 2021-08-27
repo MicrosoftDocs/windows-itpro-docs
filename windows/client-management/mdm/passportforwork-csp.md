@@ -23,13 +23,13 @@ The PassportForWork configuration service provider is used to provision Windows 
 
 The following diagram shows the PassportForWork configuration service provider in tree format.
 
-![passportforwork csp.](images/provisioning-csp-passportforwork.png)
+![passportforwork csp](images/provisioning-csp-passportforwork.png)
 
 ### Device configuration diagram
 
 The following diagram shows the PassportForWork configuration service provider in tree format.
 
-![passportforwork diagram.](images/provisioning-csp-passportforwork2.png)
+![passportforwork diagram](images/provisioning-csp-passportforwork2.png)
 
 <a href="" id="passportforwork"></a>**PassportForWork**  
 Root node for PassportForWork configuration service provider.

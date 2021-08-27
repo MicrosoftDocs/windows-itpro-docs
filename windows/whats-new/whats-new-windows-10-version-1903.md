@@ -125,7 +125,7 @@ The draft release of the [security configuration baseline settings](/archive/blo
 
 This new feature is displayed under the Device Security page with the string “Your device exceeds the requirements for enhanced hardware security” if configured properly:
 
-![System Guard.](images/system-guard.png "SMM Firmware Measurement")
+![System Guard](images/system-guard.png "SMM Firmware Measurement")
 
 ### Identity Protection
 

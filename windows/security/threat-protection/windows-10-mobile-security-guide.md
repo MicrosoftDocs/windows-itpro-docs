@@ -299,7 +299,7 @@ One of the most common techniques used by attackers to gain access to a system i
 
 Address Space Layout Randomization (ASLR) makes that type of attack much more difficult because it randomizes how and where important data is stored in memory. With ASLR, it is more difficult for malware to find the specific location it needs to attack. The below diagram illustrates how ASLR works, showing how the locations of different critical Windows components can change in memory between restarts.
 
-![figure 3.](images/mobile-security-guide-figure3.png)
+![figure 3](images/mobile-security-guide-figure3.png)
 
 Microsoft has substantively improved the ASLR implementation in Windows 10 Mobile over previous versions, applying it across the entire system rather than only in specific apps. With 64bit system and application processes that can take advantage of a vastly increased memory space, it is even more difficult for malware to predict where Windows 10 Mobile stores vital data. When used on systems that have TPMs, ASLR memory randomization becomes increasingly unique across devices, adding additional degrees of difficulty for repurposing successful exploits to another system.
 

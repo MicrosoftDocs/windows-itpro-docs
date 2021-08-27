@@ -61,12 +61,12 @@ You can download the security baselines from the [Microsoft Download Center](htt
 
 The security baselines are included in the [Security Compliance Toolkit (SCT)](security-compliance-toolkit-10.md), which can be downloaded from the Microsoft Download Center. The SCT also includes tools to help admins manage the security baselines. 
 
-[![Security Compliance Toolkit.](images/security-compliance-toolkit-1.png)](security-compliance-toolkit-10.md) 
-[![Get Support.](images/get-support.png)](get-support-for-security-baselines.md) 
+[![Security Compliance Toolkit](images/security-compliance-toolkit-1.png)](security-compliance-toolkit-10.md) 
+[![Get Support](images/get-support.png)](get-support-for-security-baselines.md) 
 
 ## Community
 
-[![Microsoft Security Guidance Blog.](images/community.png)](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bd-p/Security-Baselines) 
+[![Microsoft Security Guidance Blog](images/community.png)](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bd-p/Security-Baselines) 
 
 ## Related Videos
 

@@ -137,7 +137,7 @@ The OMA-URI path is `./Device/Vendor/MSFT/AssignedAccess/ShellLauncher`.
 
 For the value, you can select data type `String` and paste the desired configuration file content into the value box. If you wish to upload the xml instead of pasting the content, choose data type `String (XML file)`. 
 
-![Screenshot of custom OMA-URI settings.](images/slv2-oma-uri.png)
+![Screenshot of custom OMA-URI settings](images/slv2-oma-uri.png)
 
 After you configure the profile containing the custom Shell Launcher setting, select **All Devices** or selected groups of devices to apply the profile to. Don't assign the profile to users or user groups.
 

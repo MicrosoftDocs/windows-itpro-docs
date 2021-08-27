@@ -34,7 +34,7 @@ AppLocker rules are organized into collections based on file format. If no AppLo
 
 This topic describes how to lock down apps on a local device. You can also use AppLocker to set rules for applications in a domain by using Group Policy.
 
-![install create lockdown customize.](images/lockdownapps.png)
+![install create lockdown customize](images/lockdownapps.png)
 
 ## Install apps
 
@@ -50,13 +50,13 @@ After you install the desired apps, set up AppLocker rules to only allow specifi
 
 2.  Go to **Security Settings** &gt; **Application Control Policies** &gt; **AppLocker**, and select **Configure rule enforcement**.
 
-    ![configure rule enforcement.](images/apprule.png)
+    ![configure rule enforcement](images/apprule.png)
 
 3.  Check **Configured** under **Executable rules**, and then click **OK**.
 
 4.  Right-click **Executable Rules** and then click **Automatically generate rules**.
 
-    ![automatically generate rules.](images/genrule.png)
+    ![automatically generate rules](images/genrule.png)
 
 5.  Select the folder that contains the apps that you want to permit, or select C:\\ to analyze all apps.
 
@@ -68,7 +68,7 @@ After you install the desired apps, set up AppLocker rules to only allow specifi
 
 9.  Read the message and click **Yes**.
 
-    ![default rules warning.](images/appwarning.png)
+    ![default rules warning](images/appwarning.png)
 
 10. (optional) If you want a rule to apply to a specific set of users, right-click on the rule and select **Properties**. Then use the dialog to choose a different user or group of users.
 

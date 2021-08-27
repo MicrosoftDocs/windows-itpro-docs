@@ -59,7 +59,7 @@ These procedures assume that you already have a public key infrastructure (PKI) 
 
 The following Windows PowerShell script establishes a connection security rule that uses IKEv2 for communication between two computers (CLIENT1 and SERVER1) that are joined to the corp.contoso.com domain as shown in Figure 1.
 
-![the contoso corporate network.](images/corpnet.gif)
+![the contoso corporate network](images/corpnet.gif)
 
 **Figure 1** The Contoso corporate network
 
@@ -77,7 +77,7 @@ This script does the following:
 
 -   Creates the IKEv2 connection security rule called **My IKEv2 Rule**.
 
-![powershell logo.](images/powershelllogosmall.gif)**Windows PowerShell commands**
+![powershell logo](images/powershelllogosmall.gif)**Windows PowerShell commands**
 
 Type each cmdlet on a single line, even though they may appear to wrap across several lines because of formatting constraints.
 
@@ -117,7 +117,7 @@ Use a Windows PowerShell script similar to the following to create a local IPsec
 
 >**Important:**  The certificate parameters that you specify for the certificate are case sensitive, so make sure that you type them exactly as specified in the certificate, and place the parameters in the exact order that you see in the following example. Failure to do so will result in connection errors.
 
-![powershell logo.](images/powershelllogosmall.gif)**Windows PowerShell commands**
+![powershell logo](images/powershelllogosmall.gif)**Windows PowerShell commands**
 
 Type each cmdlet on a single line, even though they may appear to wrap across several lines because of formatting constraints.
 

@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 S mode is an evolution of the S SKU introduced with Windows 10 April 2018 Update. It's a configuration that's available on all Windows Editions when enabled at the time of manufacturing. The edition of Windows can be upgrade at any time as shown below. However, the switch from S mode is a onetime switch and can only be undone by a wipe and reload of the OS.
 
-![Configuration and features of S mode.](images/smodeconfig.png)
+![Configuration and features of S mode](images/smodeconfig.png)
 
 ## S mode key features
 
@@ -37,7 +37,7 @@ Start-ups are quick, and S mode is built to keep them that way. With Microsoft E
 
 Save your files to your favorite cloud, like OneDrive or Dropbox, and access them from any device you choose. Browse the Microsoft Store for thousands of apps, and if you don’t find exactly what you want, you can easily [switch out of S mode](./windows-10-pro-in-s-mode.md) to Windows 10 Home, Pro, or Enterprise editions at any time and search the web for more choices, as shown below.
 
-![Switching out of S mode flow chart.](images/s-mode-flow-chart.png)
+![Switching out of S mode flow chart](images/s-mode-flow-chart.png)
 
 
 ## Deployment

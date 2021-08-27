@@ -124,7 +124,7 @@ For details about the settings you can customize in provisioning packages, see [
 
 Windows ICD for Windows 10, version 1607, simplified common provisioning scenarios. 
 
-![Configuration Designer options.](../images/icd.png)
+![Configuration Designer options](../images/icd.png)
 
 Windows ICD in Windows 10, version 1607, supported the following scenarios for IT administrators:
 

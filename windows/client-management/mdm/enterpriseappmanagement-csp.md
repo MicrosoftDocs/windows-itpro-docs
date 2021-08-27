@@ -23,7 +23,7 @@ The EnterpriseAppManagement enterprise configuration service provider is used to
 
 The following diagram shows the EnterpriseAppManagement configuration service provider in tree format.
 
-![enterpriseappmanagement csp.](images/provisioning-csp-enterpriseappmanagement.png)
+![enterpriseappmanagement csp](images/provisioning-csp-enterpriseappmanagement.png)
 
 <a href="" id="enterpriseid"></a>***EnterpriseID***
 Optional. A dynamic node that represents the EnterpriseID as a GUID. It is used to enroll or unenroll enterprise applications.

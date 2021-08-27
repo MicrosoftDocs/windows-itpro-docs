@@ -28,7 +28,7 @@ Jump to:
 
 [Enterprise Mode for Internet Explorer 11](enterprise-mode-overview-for-ie11.md) can be very effective in providing backward compatibility for older web apps. The Enterprise Mode Site List includes the ability to put any web app in any document mode, include IE8 and IE7 Enterprise Modes, without changing a single line of code on the website.
 
-![Internet Explorer Enterprise Modes and document modes.](images/img-enterprise-mode-site-list-xml.jpg)
+![Internet Explorer Enterprise Modes and document modes](images/img-enterprise-mode-site-list-xml.jpg)
 
 Sites in the \<docMode\> section can be rendered in any document mode, as shown in blue above. Some sites designed for older versions of Internet Explorer may require better backward compatibility, and these can leverage the \<emie\> section of the Enterprise Mode Site List. IE8 Enterprise Mode provides higher-fidelity emulation for Internet Explorer 8 by using, among other improvements, the original Internet Explorer 8 user agent string. IE7 Enterprise Mode further improves emulation by adding Compatibility View.  
   
@@ -84,7 +84,7 @@ To see if the site works in the Internet Explorer 5, Internet Explorer 7, Intern
 
 -   Open the site in Internet Explorer 11, load the F12 tools by pressing the **F12** key or by selecting **F12 Developer Tools** from the **Tools** menu, and select the **Emulation** tab.  
 
-    ![F12 Developer Tools Emulation tab.](images/img-f12-developer-tools-emulation.jpg)
+    ![F12 Developer Tools Emulation tab](images/img-f12-developer-tools-emulation.jpg)
 
 -   Run the site in each document mode until you find the mode in which the site works.
  

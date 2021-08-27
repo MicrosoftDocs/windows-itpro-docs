@@ -367,15 +367,15 @@ The following table shows the Group Policy and registry settings that are used t
 
 3.  In the console tree, right-click **Group Policy Objects**, and &gt; **New**.
 
-    ![local accounts 1.](images/localaccounts-proc1-sample1.png)
+    ![local accounts 1](images/localaccounts-proc1-sample1.png)
 
 4.  In the **New GPO** dialog box, type &lt;**gpo\_name**&gt;, and &gt; **OK** where *gpo\_name* is the name of the new GPO. The GPO name indicates that the GPO is used to restrict local administrator rights from being carried over to another computer.
 
-    ![local accounts 2.](images/localaccounts-proc1-sample2.png)
+    ![local accounts 2](images/localaccounts-proc1-sample2.png)
 
 5.  In the details pane, right-click &lt;**gpo\_name**&gt;, and &gt; **Edit**.
 
-    ![local accounts 3.](images/localaccounts-proc1-sample3.png)
+    ![local accounts 3](images/localaccounts-proc1-sample3.png)
 
 6.  Ensure that UAC is enabled and that UAC restrictions apply to the default Administrator account by doing the following:
 
@@ -391,7 +391,7 @@ The following table shows the Group Policy and registry settings that are used t
 
     2.  Right-click **Registry**, and &gt; **New** &gt; **Registry Item**.
 
-        ![local accounts 4.](images/localaccounts-proc1-sample4.png)
+        ![local accounts 4](images/localaccounts-proc1-sample4.png)
 
     3.  In the **New Registry Properties** dialog box, on the **General** tab, change the setting in the **Action** box to **Replace**.
 
@@ -407,7 +407,7 @@ The following table shows the Group Policy and registry settings that are used t
 
     9.  Verify this configuration, and &gt; **OK**.
 
-        ![local accounts 5.](images/localaccounts-proc1-sample5.png)
+        ![local accounts 5](images/localaccounts-proc1-sample5.png)
 
 8.  Link the GPO to the first **Workstations** organizational unit (OU) by doing the following:
 
@@ -415,7 +415,7 @@ The following table shows the Group Policy and registry settings that are used t
 
     2.  Right-click the **Workstations** OU, and &gt; **Link an existing GPO**.
 
-        ![local accounts 6.](images/localaccounts-proc1-sample6.png)
+        ![local accounts 6](images/localaccounts-proc1-sample6.png)
 
     3.  Select the GPO that you just created, and &gt; **OK**.
 
@@ -495,11 +495,11 @@ The following table shows the Group Policy settings that are used to deny networ
 
 4.  In the **New GPO** dialog box, type &lt;**gpo\_name**&gt;, and then &gt; **OK** where *gpo\_name* is the name of the new GPO indicates that it is being used to restrict the local administrative accounts from interactively signing in to the computer.
 
-    ![local accounts 7.](images/localaccounts-proc2-sample1.png)
+    ![local accounts 7](images/localaccounts-proc2-sample1.png)
 
 5.  In the details pane, right-click &lt;**gpo\_name**&gt;, and &gt; **Edit**.
 
-    ![local accounts 8.](images/localaccounts-proc2-sample2.png)
+    ![local accounts 8](images/localaccounts-proc2-sample2.png)
 
 6.  Configure the user rights to deny network logons for administrative local accounts as follows:
 

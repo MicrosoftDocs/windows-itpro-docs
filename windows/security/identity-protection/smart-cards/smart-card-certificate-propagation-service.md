@@ -38,7 +38,7 @@ The following figure shows the flow of the certificate propagation service. The 
 
 **Certificate propagation service**
 
-![Certificate propagation service.](images/sc-image302.gif)
+![Certificate propagation service](images/sc-image302.gif)
 
 1.  A signed-in user inserts a smart card.
 

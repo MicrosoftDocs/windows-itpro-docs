@@ -32,7 +32,7 @@ In addition to the basic protection provided by the firewall rules in the previo
 
 The following illustration shows the traffic protection needed for this design example.
 
-![domain isolation policy design.](images/wfas-design2example1.gif)
+![domain isolation policy design](images/wfas-design2example1.gif)
 
 1.  All devices on the Woodgrove Bank corporate network that are Active Directory domain members must authenticate inbound network traffic as coming from another computer that is a member of the domain. Unless otherwise specified in this section, Woodgrove Bank's devices reject all unsolicited inbound network traffic that is not authenticated. If the basic firewall design is also implemented, even authenticated inbound network traffic is dropped unless it matches an inbound firewall rule.
 

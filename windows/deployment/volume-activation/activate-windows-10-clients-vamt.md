@@ -99,12 +99,12 @@ A MAK is used for one-time activation with Microsoft’s hosted activation servi
 You can activate computers by using a MAK in two ways:
 -   **MAK independent activation**. Each computer independently connects and is activated with Microsoft over the Internet or by telephone. MAK independent activation is best suited to computers within an organization that do not maintain a connection to the corporate network. MAK independent activation is shown in Figure 16.
 
-    ![MAK independent activation.](../images/volumeactivationforwindows81-16.jpg)
+    ![MAK independent activation](../images/volumeactivationforwindows81-16.jpg)
     
     **Figure 16**. MAK independent activation
 -   **MAK proxy activation**. MAK proxy activation enables a centralized activation request on behalf of multiple computers with one connection to Microsoft. You configure MAK proxy activation by using the VAMT. MAK proxy activation is appropriate for environments in which security concerns restrict direct access to the Internet or the corporate network. It is also suited for development and test labs that lack this connectivity. MAK proxy activation with the VAMT is shown in Figure 17.
 
-    ![MAK proxy activation with the VAMT.](../images/volumeactivationforwindows81-17.jpg)
+    ![MAK proxy activation with the VAMT](../images/volumeactivationforwindows81-17.jpg)
     
     **Figure 17**. MAK proxy activation with the VAMT
 

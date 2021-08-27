@@ -48,7 +48,7 @@ Active Directory** \> **Devices** \> **Device settings**.
 for Azure AD by selecting **All** or **Selected**. If you choose the latter
 option, select the teachers and IT staff to allow them to connect to Azure AD.  
 
-![Select the users you want to let join devices to Azure AD.](images/suspc-enable-shared-pc-1807.png)  
+![Select the users you want to let join devices to Azure AD](images/suspc-enable-shared-pc-1807.png)  
 
 You can also create an account that holds the exclusive rights to join devices. When a student PC needs to be set up, provide the account credentials to the appropriate teachers or staff.
 

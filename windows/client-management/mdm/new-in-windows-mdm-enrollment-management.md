@@ -240,7 +240,7 @@ Passing CDATA in data in SyncML to ConfigManager and CSPs does not work in Windo
 
 The certificate setting under "SSL Settings" in the IIS server for SCEP must be set to "Ignore" in Windows 10. In Windows Phone 8.1, when you set the client certificate to "Accept," it works fine.
 
-![ssl settings.](images/ssl-settings.png)
+![ssl settings](images/ssl-settings.png)
 
 ### MDM enrollment fails on the mobile device when traffic is going through proxy
 
@@ -439,7 +439,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
 1.  Follow steps 1 through 7 in the [EAP configuration](eap-configuration.md) article.
 2.  In the Microsoft VPN SelfHost Properties dialog box, select **Microsoft : Smart Card or other Certificate** from the drop down (this selects EAP TLS.)
 
-    ![vpn selfhost properties window.](images/certfiltering1.png)
+    ![vpn selfhost properties window](images/certfiltering1.png)
 
     > [!NOTE]
     > For PEAP or TTLS, select the appropriate method and continue following this procedure.
@@ -447,10 +447,10 @@ Alternatively you can use the following procedure to create an EAP Configuration
 3.  Click the **Properties** button underneath the drop down menu.
 4.  In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
 
-    ![smart card or other certificate properties window.](images/certfiltering2.png)
+    ![smart card or other certificate properties window](images/certfiltering2.png)
 5.  In the **Configure Certificate Selection** menu, adjust the filters as needed.
 
-    ![configure certificate selection window.](images/certfiltering3.png)
+    ![configure certificate selection window](images/certfiltering3.png)
 6.  Click **OK** to close the windows to get back to the main rasphone.exe dialog box.
 7.  Close the rasphone dialog box.
 8.  Continue following the procedure in the [EAP configuration](eap-configuration.md) article from Step 9 to get an EAP TLS profile with appropriate filtering.
@@ -492,7 +492,7 @@ No. Only one MDM is allowed.
 4.  Click **Configure**.
 5.  Set quota to unlimited.
 
-    ![aad maximum joined devices.](images/faq-max-devices.png)
+    ![aad maximum joined devices](images/faq-max-devices.png)
  
 
 ### **What is dmwappushsvc?**

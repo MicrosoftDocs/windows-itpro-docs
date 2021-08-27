@@ -39,7 +39,7 @@ Admins can control whether or not teachers are automatically assigned the **Basi
 2. Click **Manage**, and then click **Settings**. 
 3. On **Shop**, select or clear **Make everyone a Basic Purchaser**.
 
-![manage settings to control Basic Purchaser role assignment.](images/sfe-make-everyone-bp.png)
+![manage settings to control Basic Purchaser role assignment](images/sfe-make-everyone-bp.png)
 
 > [!NOTE]
 > **Make everyone a Basic Purchaser** is on by default. 
@@ -52,7 +52,7 @@ When **Make everyone a Basic Purchaser** is turned off, admins can manually assi
 2. Click **Manage**, and then choose **Permissions**.
 3. On **Roles**, click **Assign roles**, type and select a name, choose the role you want to assign, and then click **Save**.
 
-    ![Permission page for Microsoft Store for Business.](images/sfe-roles.png)
+    ![Permission page for Microsoft Store for Business](images/sfe-roles.png)
 
 **Blocked Basic Purchasers**
 

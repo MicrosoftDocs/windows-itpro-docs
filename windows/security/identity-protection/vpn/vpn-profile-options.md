@@ -312,7 +312,7 @@ After you configure the settings that you want using ProfileXML, you can apply i
 10. Set Data type to **String (XML file)**.
 11. Upload the profile XML file.
 12. Click **OK**.
-    ![Custom VPN profile.](images/custom-vpn-profile.png)
+    ![Custom VPN profile](images/custom-vpn-profile.png)
 13. Click **OK**, then **Create**.
 14. Assign the profile.
 

@@ -38,13 +38,13 @@ System Guard Secure Launch can be configured for Mobile Device Management (MDM) 
 
 2. Click **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn On Virtualization Based Security** > **Secure Launch Configuration**.
 
-    ![Secure Launch Configuration.](images/secure-launch-group-policy.png)
+    ![Secure Launch Configuration](images/secure-launch-group-policy.png)
 
 ### Windows Security Center
 
 Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation** > **Firmware protection**.
 
-  ![Windows Security Center.](images/secure-launch-security-app.png)
+  ![Windows Security Center](images/secure-launch-security-app.png)
   
 ### Registry
 
@@ -58,13 +58,13 @@ Click **Start** > **Settings** > **Update & Security** > **Windows Security** > 
 
 5. Double-click **Enabled**, change the value to **1**, and click **OK**.
 
-    ![Secure Launch Registry.](images/secure-launch-registry.png)
+    ![Secure Launch Registry](images/secure-launch-registry.png)
 
 ## How to verify System Guard Secure Launch is configured and running
 
 To verify that Secure Launch is running, use System Information (MSInfo32). Click **Start**, search for **System Information**, and look under **Virtualization-based Security Services Running** and **Virtualization-based Security Services Configured**.
 
-![Verifying Secure Launch is running in the Windows Security Center.](images/secure-launch-msinfo.png)
+![Verifying Secure Launch is running in the Windows Security Center](images/secure-launch-msinfo.png)
 
 > [!NOTE]
 > To enable System Guard Secure launch, the platform must meet all the baseline requirements for [Device Guard](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md), [Credential Guard](../../identity-protection/credential-guard/credential-guard-requirements.md), and [Virtualization Based Security](/windows-hardware/design/device-experiences/oem-vbs).

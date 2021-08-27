@@ -85,7 +85,7 @@ The time stamp indicates the time at which the logging occurs.
 - Messages are usually in chronological order, but there may be exceptions. 
 - A pause during a sync can indicate a network problem, even if the scan succeeds. 
 - A long pause near the end of a scan can indicate a supersedence chain issue.   
-   ![Windows Update time stamps.](images/update-time-log.png)
+   ![Windows Update time stamps](images/update-time-log.png)
 
 
 #### Process ID and thread ID  
@@ -93,7 +93,7 @@ The Process IDs and Thread IDs are random, and they can vary from log to log and
 - The first four hex digits are the process ID. 
 - The next four hex digits are the thread ID. 
 - Each component, such as the USO, Windows Update engine, COM API callers, and Windows Update installer handlers, has its own process ID.   
-   ![Windows Update process and thread IDs.](images/update-process-id.png)
+   ![Windows Update process and thread IDs](images/update-process-id.png)
 
 
 #### Component name  
@@ -106,7 +106,7 @@ Search for and identify the components that are associated with the IDs. Differe
 - DataStore - Caching update data locally 
 - IdleTimer - Tracking active calls, stopping service 
 
-![Windows Update component name.](images/update-component-name.png)
+![Windows Update component name](images/update-component-name.png)
 
 
 #### Update identifiers  
@@ -117,7 +117,7 @@ There are different identifiers for the same update in different contexts. It's 
 - Revision number: A number incremented every time that a given update (that has a given update ID) is modified and republished on a service 
 - Revision numbers are reused from one update to another (not a unique identifier). 
 - The update ID and revision number are often shown together as "{GUID}.revision." 
-   ![Windows Update update identifiers.](images/update-update-id.png)
+   ![Windows Update update identifiers](images/update-update-id.png)
 
 
 ##### Revision ID 
@@ -141,7 +141,7 @@ There are different identifiers for the same update in different contexts. It's 
    - Small integers that appear alongside an update ID are revision numbers 
    - Large integers are typically revision IDs 
    - Small integers (especially in Datastore) can be local IDs 
-      ![Windows Update inconsisten terminology.](images/update-inconsistent.png)
+      ![Windows Update inconsisten terminology](images/update-inconsistent.png)
 
 ## Windows Setup log files analysis using SetupDiag tool
 SetupDiag is a diagnostic tool that can be used for analysis of logs related to installation of Windows Updates. For detailed information, see [SetupDiag](../upgrade/setupdiag.md).

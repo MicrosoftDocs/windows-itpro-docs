@@ -104,7 +104,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 - Receives an encrypted blob (DHA-EncBlob) from DHA-Service, and stores it in a local cache on the device</li>
 - Receives attestation requests (DHA-Requests) from a DHA-Enabled-MDM, and replies with a device health report (DHA-Report)</li>
 
-![healthattestation service diagram.](images/healthattestation_2.png)
+![healthattestation service diagram](images/healthattestation_2.png)
 
 <table> 
 <col width="20%" />

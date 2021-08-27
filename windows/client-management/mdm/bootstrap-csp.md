@@ -27,7 +27,7 @@ The BOOTSTRAP configuration service provider sets the Trusted Provisioning Serve
 
 The following image shows the BOOTSTRAP configuration service provider in tree format as used by Open Mobile Alliance (OMA) Client Provisioning. The OMA Device Management protocol is not supported with this configuration service provider.
 
-![bootstrap csp (cp).](images/provisioning-csp-bootstrap-cp.png)
+![bootstrap csp (cp)](images/provisioning-csp-bootstrap-cp.png)
 
 <a href="" id="context-allow"></a>**CONTEXT-ALLOW**  
 Optional. Specifies a context for the TPS. Only one context is supported, so this parameter is ignored and "0" is assumed for its value.

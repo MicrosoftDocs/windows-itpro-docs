@@ -137,7 +137,7 @@ You can only use the Work Access page to unenroll under the following conditions
 
 When a user is enrolled into MDM through Azure Active Directory Join and then disconnects the enrollment, there is no warning that the user will lose Windows Information Protection (WIP) data. The disconnection message does not indicate the loss of WIP data.
 
-![aadj unenerollment.](images/azure-ad-unenrollment.png)
+![aadj unenerollment](images/azure-ad-unenrollment.png)
 
 When a device is enrolled into MDM through Azure Active Directory Join and then remotely unenrolled, the device may get into a state where it must be re-imaged. When devices are remotely unenrolled from MDM, the AAD association is also removed. This safeguard is in place to avoid leaving the corporated devices in unmanaged state.
 

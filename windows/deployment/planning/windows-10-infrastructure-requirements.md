@@ -68,7 +68,7 @@ Windows Server Update Services (WSUS) requires some additional configuration to 
 2.  In the **Products** tree, select the **Windows 10** and **Windows 10 LTSB** products and any other Windows 10-related items that you want. Click **OK**.
 3.  From the **Synchronizations** node, right-click and choose **Synchronize Now**.
 
-![figure 1.](images/fig4-wsuslist.png)
+![figure 1](images/fig4-wsuslist.png)
 
 WSUS product list with Windows 10 choices
 

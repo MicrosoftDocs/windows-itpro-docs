@@ -64,7 +64,7 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 
 The following image shows name resolution options in a VPN Profile configuration policy using Microsoft Intune.
 
-![Add DNS rule.](images/vpn-name-intune.png)
+![Add DNS rule](images/vpn-name-intune.png)
 
 The fields in **Add or edit DNS rule** in the Intune profile correspond to the XML settings shown in the following table.
 

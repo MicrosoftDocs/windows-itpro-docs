@@ -55,7 +55,7 @@ Windows Hello for Business emulates a smart card for application compatibility. 
 Users appreciate convenience of biometrics and administrators value the security however, you may experience compatibility issues with your applications and Windows Hello for Business certificates.  You can relax knowing a Group Policy setting and a [MDM URI](/windows/client-management/mdm/passportforwork-csp) exist to help you revert to the previous behavior for those users who need it.
 
 > [!div class="mx-imgBorder"]
-> ![WHFB Certificate GP Setting.](images/rdpbio/rdpbiopolicysetting.png)
+> ![WHFB Certificate GP Setting](images/rdpbio/rdpbiopolicysetting.png)
 
 > [!IMPORTANT]
 > The remote desktop with biometric feature does not work with [Dual Enrollment](hello-feature-dual-enrollment.md) feature or scenarios where the user provides alternative credentials.  Microsoft continues to investigate supporting the feature.

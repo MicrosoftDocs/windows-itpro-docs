@@ -21,7 +21,7 @@ In this topic, you will learn how to use Microsoft Network Monitor 3.4, which is
 
 To get started, [download Network Monitor tool](https://www.microsoft.com/download/details.aspx?id=4865). When you install Network Monitor, it installs its driver and hooks it to all the network adapters installed on the device. You can see the same on the adapter properties, as shown in the following image:
 
-![Adapters.](images/nm-adapters.png)
+![Adapters](images/nm-adapters.png)
 
 When the driver gets hooked to the network interface card (NIC) during installation, the NIC is reinitialized, which might cause a brief network glitch.
 
@@ -29,15 +29,15 @@ When the driver gets hooked to the network interface card (NIC) during installat
 
 1. Run netmon in an elevated status by choosing Run as Administrator.
 
-    ![Image of Start search results for Netmon.](images/nm-start.png)
+    ![Image of Start search results for Netmon](images/nm-start.png)
 
 2. Network Monitor opens with all network adapters displayed. Select the network adapters where you want to capture traffic, click **New Capture**, and then click **Start**.
 
-    ![Image of the New Capture option on menu.](images/tcp-ts-4.png)
+    ![Image of the New Capture option on menu](images/tcp-ts-4.png)
 
 3. Reproduce the issue, and you will see that Network Monitor grabs the packets on the wire.
 
-    ![Frame summary of network packets.](images/tcp-ts-5.png)
+    ![Frame summary of network packets](images/tcp-ts-5.png)
 
 4. Select **Stop**, and go to **File > Save as** to save the results. By default, the file will be saved as a ".cap" file.
 

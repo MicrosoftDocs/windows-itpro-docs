@@ -61,7 +61,7 @@ If you believe a warning or block was incorrectly shown for a file or applicatio
 
 When submitting Microsoft Defender SmartScreen products, make sure to select **Microsoft Defender SmartScreen** from the product menu.
 
-![Windows Security, Microsoft Defender SmartScreen controls.](images/Microsoft-defender-smartscreen-submission.png)
+![Windows Security, Microsoft Defender SmartScreen controls](images/Microsoft-defender-smartscreen-submission.png)
 
 ## Viewing Microsoft Defender SmartScreen anti-phishing events
 

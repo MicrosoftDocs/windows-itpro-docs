@@ -84,7 +84,7 @@ After the upgrade to Windows 10 is complete, if you decide to push down a new we
 
 The following diagram shows a high-level overview of the process.
 
-![update process for windows embedded 8.1 devices.](images/windowsembedded-update.png)
+![update process for windows embedded 8.1 devices](images/windowsembedded-update.png)
 
 ## Step 1: Prepare a test device to download updates from Microsoft Update
 
@@ -107,15 +107,15 @@ Trigger the device to check for updates either manually or using Microsoft Endpo
 
 1.  Remotely trigger a scan of the test device by deploying a Trigger Scan configuration baseline.
 
-    ![device scan using Configuration Manager.](images/windowsembedded-update2.png)
+    ![device scan using Configuration Manager](images/windowsembedded-update2.png)
 
 2.  Set the value of this OMA-URI by going to **Configuration Item**, and then selecting the newly created Trigger Scan settings from the previous step.
 
-    ![device scan using Configuration Manager.](images/windowsembedded-update3.png)
+    ![device scan using Configuration Manager](images/windowsembedded-update3.png)
 
 3.  Ensure that the value that is specified for this URI is greater than the value on the device(s), and that the **Remediate noncompliant rules when supported** option is selected. For the first time, any value that is greater than 0 will work, but for subsequent configurations, ensure that you specify an incremented value.
 
-    ![device scan using Configuration Manager.](images/windowsembedded-update4.png)
+    ![device scan using Configuration Manager](images/windowsembedded-update4.png)
 
 4.  Create a configuration baseline for Trigger Scan and Deploy. We recommend that this configuration baseline be deployed after the Controlled Updates baseline has been applied to the device. (The corresponding files are deployed on the device through a device sync session.)
 5.  Follow the prompts for downloading the updates, but do not install the updates on the device.
@@ -216,11 +216,11 @@ The deployment process has three parts:
 
 1.  Create a configuration item. In the **Browse Settings** window, select **Device File** as a filter, and then select **Select**.
 
-    ![embedded device update.](images/windowsembedded-update18.png)
+    ![embedded device update](images/windowsembedded-update18.png)
 
 2.  Browse to the DUControlledUpdates.xml that was created from the test device, and then specify the file path and name on the device as `NonPersistent\DUControlledUpdates.xml`.
 
-    ![embedded device update.](images/windowsembedded-update19.png)
+    ![embedded device update](images/windowsembedded-update19.png)
 
 3.  Select **Remediate noncompliant settings**, and then select **OK**.
 
@@ -231,7 +231,7 @@ The deployment process has three parts:
 1.  Create a configuration item and specify the file path and name on the device as `NonPersistent\DUCustomContentURIs.xml`
 2.  Select **Remediate noncompliant settings**.
 
-    ![embedded device update.](images/windowsembedded-update21.png)
+    ![embedded device update](images/windowsembedded-update21.png)
 
 3.  Select **OK**.
 
@@ -242,11 +242,11 @@ The deployment process has three parts:
 1.  Create a configuration baseline item and give it a name (such as ControlledUpdates).
 2.  Add the DUControlledUpdates and DUCustomContentURIs configuration items, and then select **OK**.
 
-    ![embedded device update.](images/windowsembedded-update22.png)
+    ![embedded device update](images/windowsembedded-update22.png)
 
 3.  Deploy the configuration baseline to the appropriate device or device collection.
 
-    ![embedded device update.](images/windowsembedded-update23.png)
+    ![embedded device update](images/windowsembedded-update23.png)
 
 4.  Select **OK**.
 
@@ -472,57 +472,57 @@ Use this procedure for pre-GDR1 devices:
 2.  In Microsoft Endpoint Configuration Manager, under **Assets and Compliance** > **Compliance Settings**, right-click **Configuration Items**.
 3.  Select **Create Configuration Item**.
 
-    ![device update using Configuration Manager.](images/windowsembedded-update5.png)
+    ![device update using Configuration Manager](images/windowsembedded-update5.png)
 4.  Enter a filename (such as GetDUReport), and then select **Mobile Device**.
 5.  On the **Mobile Device Settings** page, select **Configure Additional Settings that are not in the default settings group**, and then select **Next**.
 
-    ![device update using Configuration Manager.](images/windowsembedded-update6.png)
+    ![device update using Configuration Manager](images/windowsembedded-update6.png)
 6.  On the **Additional Settings** page, select **Add**.
 
-    ![device update using Configuration Manager.](images/windowsembedded-update7.png)
+    ![device update using Configuration Manager](images/windowsembedded-update7.png)
 7.  On the **Browse Settings** page, select **Create Setting**.
 
-    ![device update.](images/windowsembedded-update8.png)
+    ![device update](images/windowsembedded-update8.png)
 8.  Enter a unique **Name**. For **Setting type**, select **OMA-URI**, and for **Data type**, select **String**.
 9.  In the **OMA-URI** text box, enter `./Vendor/MSFT/EnterpriseExt/DeviceUpdate/UpdatesResultXml`, and then select **OK**.
 
-    ![handheld device update.](images/windowsembedded-update9.png)
+    ![handheld device update](images/windowsembedded-update9.png)
 10. On the **Browse Settings** page, select **Close**.
 11. On the **Create Configuration Item Wizard** page, select **All Windows Embedded 8.1 Handheld** as the supported platform, and then select **Next**.
 
-    ![embedded device update.](images/windowsembedded-update10.png)
+    ![embedded device update](images/windowsembedded-update10.png)
 12. Close the **Create Configuration Item Wizard** page.
 13. Right-click on the newly create configuration item, and then select the **Compliance Rules** tab.
 14. Select the new created mobile device setting (such as DUReport), and then select **Select**.
 15. Enter a dummy value (such as zzz) that is different from the one on the device.
 
-    ![embedded device update.](images/windowsembedded-update11.png)
+    ![embedded device update](images/windowsembedded-update11.png)
 16. Disable remediation by deselecting the **Remediate noncompliant rules when supported** option.
 17. Select **OK** to close the **Edit Rule** page.
 18. Create a new configuration baseline. Under **Assets and Compliance** > **Compliance Settings**, right-click **Configuration Baselines**.
 19. Select **Create Configuration Item**.
 
-    ![embedded device update.](images/windowsembedded-update12.png)
+    ![embedded device update](images/windowsembedded-update12.png)
 20. Enter a baseline name (such as RetrieveDUReport).
 21. Add the configuration item that you just created. Select **Add**, and then select the configuration item that you just created (such as DUReport).
 
-    ![embedded device update.](images/windowsembedded-update13.png)
+    ![embedded device update](images/windowsembedded-update13.png)
 22. Select **OK**, and then select **OK** again to complete the configuration baseline.
 23. Deploy the newly created configuration baseline to the appropriate device collection. Right-click on the configuration baseline that you created, and then select **Deploy**.
 
-    ![embedded device update.](images/windowsembedded-update14.png)
+    ![embedded device update](images/windowsembedded-update14.png)
 24. Select **Remediate noncompliant rules when supported**.
 25. Select the appropriate device collection and define the schedule.
 
-    ![device update.](images/windowsembedded-update15.png)
+    ![device update](images/windowsembedded-update15.png)
 26. To view the DUReport content, select the appropriate deployment for the configuration baseline that you created. Right-click on the deployment, and then select **View Status**.
 27. Select **Run Summarization**, and then select **Refresh**. The test device(s) should be listed on the **Non-Compliant** tab.
 28. Under **Asset Details**, right-click on the test device, and then select **Mode Details**.
 
-    ![device update.](images/windowsembedded-update16.png)
+    ![device update](images/windowsembedded-update16.png)
 29. On the **Non-compliant** tab, you can see the DUReport, but you cannot retrieve the content from here.
 
-    ![device update.](images/windowsembedded-update17.png)
+    ![device update](images/windowsembedded-update17.png)
 30. To retrieve the DUReport, open C:\\Program Files\\SMS\_CCM\\SMS\_DM.log.
 31. In the log file, search from the bottom for "./Vendor/MSFT/EnterpriseExt/DeviceUpdate/UpdatesResultXml" RuleExression="Equals zzz," where zzz is the dummy value. Just above this, copy the information for UpdateData and use this information to create the DUControlledUpdates.xml.
 

@@ -62,7 +62,7 @@ The settings for the Default role and other roles must be listed in your XML fil
 
 ## Action Center
 
-![XML for Action Center.](../images/ActionCenterXML.jpg)
+![XML for Action Center](../images/ActionCenterXML.jpg)
 
 The Action Center setting controls whether the user can open the Action Center on the device. When the Action Center is disabled, notifications on the lockscreen and toasts are also disabled. You can use optional attributes with the Action Center element to change that behavior for either notifications, toasts, or both.
 
@@ -92,7 +92,7 @@ The following example is a complete lockdown XML file that disables Action Cente
 
 ## Apps
 
-![XML for Apps.](../images/AppsXML.png)
+![XML for Apps](../images/AppsXML.png)
 
 The Apps setting serves as an allow list and specifies the applications that will be available in the All apps list. Apps that are not included in this setting are hidden from the user and blocked from running. 
 
@@ -110,7 +110,7 @@ The following example makes Outlook Calendar available on the device.
 
 When you list an app, you can also set the app to be pinned to the Start screen by specifying the tile size and location. Tip: draw a grid and mark your app tiles on it to make sure you get the result you want. The width (X axis) in the following example is the limit for Windows 10 Mobile, but the length (Y axis) is unlimited. The number of columns available to you depends on the value for [StartScreenSize](#start-screen-size).
 
-![Grid to lay out tiles for Start.](../images/StartGrid.jpg)
+![Grid to lay out tiles for Start](../images/StartGrid.jpg)
 
 Tile sizes are:
 * Small: 1x1
@@ -152,7 +152,7 @@ In the following example, Outlook Calendar and Outlook Mail are pinned to the St
 
 That layout would appear on a device like this:
 
-![Example of the layout on a Start screen.](../images/StartGridPinnedApps.jpg)
+![Example of the layout on a Start screen](../images/StartGridPinnedApps.jpg)
 
 You can create and pin folders to Start by using the Apps setting. Each folder requires a **folderId**, which must be a consecutive positive integer starting with `1`. You can also specify a **folderName** (optional) which will be displayed on Start.
 
@@ -203,7 +203,7 @@ When an app is contained in a folder, its **PinToStart** configuration (tile siz
 
 ## Buttons
 
-![XML for buttons.](../images/ButtonsXML.jpg)
+![XML for buttons](../images/ButtonsXML.jpg)
 
 In the Buttons setting, you use ButtonLockdownList to disable hardware buttons and ButtonRemapList to change button events to open an app that you specify. 
 
@@ -213,11 +213,11 @@ When a user taps a button that is in the lockdown list, nothing will happen. The
 
 Button | Press | PressAndHold | All
 ---|:---:|:---:|:--:|-
-Start | ![no.](../images/crossmark.png) | ![yes](../images/checkmark.png) | ![no](../images/crossmark.png)
-Back | ![yes.](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) 
-Search | ![yes.](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png)
-Camera | ![yes.](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png)
-Custom 1, 2, and 3 | ![yes.](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png)
+Start | ![no](../images/crossmark.png) | ![yes](../images/checkmark.png) | ![no](../images/crossmark.png)
+Back | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) 
+Search | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png)
+Camera | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png)
+Custom 1, 2, and 3 | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png) | ![yes](../images/checkmark.png)
 
 > [!NOTE]
 >  Custom buttons are hardware buttons that can be added to devices by OEMs.
@@ -270,7 +270,7 @@ In the following example, when a user presses the Search button, the phone diale
 
 ## CSPRunner
 
-![XML for CSP Runner.](../images/CSPRunnerXML.jpg)
+![XML for CSP Runner](../images/CSPRunnerXML.jpg)
 
 You can use CSPRunner to include settings that are not defined in AssignedAccessXML. For example, you can include settings from other sections of EnterpriseAssignedAccess CSP, such as lockscreen, theme, and time zone. You can also include settings from other CSPs, such as [Wi-Fi CSP](/windows/client-management/mdm/wifi-csp) or [Policy CSP](/windows/client-management/mdm/policy-configuration-service-provider).
 
@@ -317,7 +317,7 @@ SyncML entry | Description
 
 ## Menu items
 
-![XML for menu items.](../images/MenuItemsXML.png)
+![XML for menu items](../images/MenuItemsXML.png)
 
 Use DisableMenuItems to prevent use of the context menu, which is displayed when a user presses and holds an application in the All Apps list. You can include this entry in the default profile and in any additional user role profiles that you create.
 
@@ -329,7 +329,7 @@ Use DisableMenuItems to prevent use of the context menu, which is displayed when
 
 ## Settings
 
-![XML for settings.](../images/SettingsXML.png)
+![XML for settings](../images/SettingsXML.png)
 
 The **Settings** section contains an `allow` list of pages in the Settings app and quick actions. The following example allows all settings.
 
@@ -363,7 +363,7 @@ For a list of the settings and quick actions that you can allow or block, see [S
 
  ## Tiles
 
- ![XML for tiles.](../images/TilesXML.png)
+ ![XML for tiles](../images/TilesXML.png)
 
  By default, under Assigned Access, tile manipulation is turned off (blocked) and only available if enabled in the user’s profile. If tile manipulation is enabled in the user’s profile, they can pin/unpin, move, and resize tiles based on their preferences. When multiple people use one device and you want to enable tile manipulation for multiple users, you must enable it for each user in their user profile. 
 
@@ -446,7 +446,7 @@ Use the Windows ICD tool included in the Windows Assessment and Deployment Kit (
 
 3.  In the center pane, click **Browse** to locate and select the lockdown XML file that you created.
 
-    ![browse button.](../images/icdbrowse.png)
+    ![browse button](../images/icdbrowse.png)
 
 4.  On the **File** menu, select **Save.**
 

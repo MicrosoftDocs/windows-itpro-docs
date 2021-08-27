@@ -65,7 +65,7 @@ All server and client computers referenced in this guide are on the same subnet.
     >[!NOTE]
     >You also can use the built-in reports to get information about ongoing deployments. For example, a task sequence report gives you a quick overview of the task sequence progress.
 
-    ![MDT monitoring.](../images/pc0001-monitor.png)
+    ![MDT monitoring](../images/pc0001-monitor.png)
 
     Monitoring the deployment with MDT.
 
@@ -73,20 +73,20 @@ All server and client computers referenced in this guide are on the same subnet.
 
 Examples are provided below of various stages of deployment:
 
-![pc0001a.](../images/pc0001a.png)<br>
-![pc0001b.](../images/pc0001b.png)<br>
-![pc0001c.](../images/pc0001c.png)<br>
-![pc0001d.](../images/pc0001d.png)<br>
-![pc0001e.](../images/pc0001e.png)<br>
-![pc0001f.](../images/pc0001f.png)<br>
-![pc0001g.](../images/pc0001g.png)<br>
-![pc0001h.](../images/pc0001h.png)<br>
-![pc0001i.](../images/pc0001i.png)<br>
-![pc0001j.](../images/pc0001j.png)<br>
-![pc0001k.](../images/pc0001k.png)<br>
-![pc0001l.](../images/pc0001l.png)<br>
-![pc0001m.](../images/pc0001m.png)<br>
-![pc0001n.](../images/pc0001n.png)
+![pc0001a](../images/pc0001a.png)<br>
+![pc0001b](../images/pc0001b.png)<br>
+![pc0001c](../images/pc0001c.png)<br>
+![pc0001d](../images/pc0001d.png)<br>
+![pc0001e](../images/pc0001e.png)<br>
+![pc0001f](../images/pc0001f.png)<br>
+![pc0001g](../images/pc0001g.png)<br>
+![pc0001h](../images/pc0001h.png)<br>
+![pc0001i](../images/pc0001i.png)<br>
+![pc0001j](../images/pc0001j.png)<br>
+![pc0001k](../images/pc0001k.png)<br>
+![pc0001l](../images/pc0001l.png)<br>
+![pc0001m](../images/pc0001m.png)<br>
+![pc0001n](../images/pc0001n.png)
 
 Next, see [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md).
 

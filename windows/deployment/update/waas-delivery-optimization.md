@@ -39,7 +39,7 @@ For information about setting up Delivery Optimization, including tips for the b
 
 - Enterprise network throttling: new settings have been added in Group Policy and mobile device management (MDM) to control foreground and background throttling as absolute values (Maximum Background Download Bandwidth in (in KB/s)). These settings are also available in the Windows user interface:
 
-  ![absolute bandwidth settings in delivery optimization interface.](images/DO-absolute-bandwidth.png)
+  ![absolute bandwidth settings in delivery optimization interface](images/DO-absolute-bandwidth.png)
 
 - Activity Monitor now identifies the cache server used for as the source for Microsoft Connected Cache. For more information about using Microsoft Connected Cache with Configuration Manager, see [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
 

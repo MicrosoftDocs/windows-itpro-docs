@@ -34,7 +34,7 @@ You can restrict access by specifying either computer or user credentials.
 
 The following illustration shows an isolated server, and examples of devices that can and cannot communicate with it. Devices that are outside the Woodgrove corporate network, or computers that are in the isolated domain but are not members of the required NAG, cannot communicate with the isolated server.
 
-![isolated domain with network access groups.](images/wfas-domainnag.gif)
+![isolated domain with network access groups](images/wfas-domainnag.gif)
 
 This goal, which corresponds to [Server Isolation Policy Design](server-isolation-policy-design.md), provides the following features:
 

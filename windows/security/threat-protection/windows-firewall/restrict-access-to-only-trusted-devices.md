@@ -35,7 +35,7 @@ The protection provided by domain isolation can help you comply with regulatory 
 
 The following illustration shows an isolated domain, with one of the zones that are optionally part of the design. The rules that implement both the isolated domain and the different zones are deployed by using Group Policy and Active Directory.
 
-![domain isolation.](images/wfas-domainiso.gif)
+![domain isolation](images/wfas-domainiso.gif)
 
 These goals, which correspond to [Domain Isolation Policy Design](domain-isolation-policy-design.md) and [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md), provide the following benefits:
 

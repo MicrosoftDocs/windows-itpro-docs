@@ -23,7 +23,7 @@ The APPLICATION configuration service provider that has an APPID of w7 is used f
 
 The following image shows the configuration service provider in tree format as used by OMA Client Provisioning.
 
-![w7 application csp (dm).](images/provisioning-csp-w7-application-dm.png)
+![w7 application csp (dm)](images/provisioning-csp-w7-application-dm.png)
 
 > **Note**   All parm names and characteristic types are case sensitive and must use all uppercase.
 Both APPSRV and CLIENT credentials must be provided in provisioning XML.

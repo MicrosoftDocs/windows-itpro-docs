@@ -91,7 +91,7 @@ Get-MSStoreInventory
 >1. Sign in to [Microsoft Store for Business](https://go.microsoft.com/fwlink/p/?LinkId=691845) or [Microsoft Store for Education](https://businessstore.microsoft.com/).
 >2. Click **Manage** and then choose **Apps & software**.
 >3. Click the line-of-business app. The URL of the page will contain the product ID and SKU as part of the URL. For example:
->![Url after apps/ is product id and next is SKU.](images/lob-sku.png)
+>![Url after apps/ is product id and next is SKU](images/lob-sku.png)
 
 ## View people assigned to a product
 Most items in **Products and Services** in **Microsoft Store for Business and Education** need to be assigned to people in your org. You can view the people in your org assigned to a specific product by using these commands:

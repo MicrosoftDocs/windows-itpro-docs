@@ -75,7 +75,7 @@ The following generic credentials are used in this guide. You should replace the
 
 The following OU structure is used in this guide. Instructions are provided [below](#create-the-ou-structure) to help you create the required OUs.
 
-![figure 2.](../images/mdt-01-fig02.jpg)
+![figure 2](../images/mdt-01-fig02.jpg)
 
 ## Install the Windows ADK
 
@@ -182,7 +182,7 @@ Set-Location $home\Setup\Scripts
 
 This will create an OU structure as shown below.
 
-![OU structure.](../images/mdt-05-fig07.png)
+![OU structure](../images/mdt-05-fig07.png)
 
 To use the Active Directory Users and Computers console (instead of PowerShell):
 
@@ -233,18 +233,18 @@ On **MDT01**:
 
 See the following example:
 
-![Logs folder.](../images/mdt-05-fig08.png)
+![Logs folder](../images/mdt-05-fig08.png)
 
 ## Use CMTrace to read log files (optional)
 
 The log files in MDT Lite Touch are formatted to be read by Configuration Manager Trace ([CMTrace](/sccm/core/support/cmtrace)), which is available as part of the [Microsoft System 2012 R2 Center Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717). You should also download this tool.  
 You can use Notepad (example below):
 
-![figure 8.](../images/mdt-05-fig09.png)
+![figure 8](../images/mdt-05-fig09.png)
 
 Alternatively, CMTrace formatting makes the logs much easier to read. See the same log file below, opened in CMTrace:
 
-![figure 9.](../images/mdt-05-fig10.png)
+![figure 9](../images/mdt-05-fig10.png)
 
 After installing the ConfigMgrTools.msi file, you can search for **cmtrace** and pin the tool to your taskbar for easy access.
 

@@ -66,7 +66,7 @@ On devices running Windows 10, you can install [the Windows Configuration Design
 
 6. On the **Select the features you want to install** page, clear all selections except **Configuration Designer**, and then click **Install**.
 
-    ![Only Configuration Designer selected for installation.](../images/icd-install.png)
+    ![Only Configuration Designer selected for installation](../images/icd-install.png)
 
 ## Current Windows Configuration Designer limitations
 

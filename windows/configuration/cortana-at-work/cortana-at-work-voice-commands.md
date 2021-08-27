@@ -49,7 +49,7 @@ While these aren't line-of-business apps, we've worked to make sure to implement
 
 2. Click on **Connected Services**, click **Uber**, and then click **Connect**.
 
-    ![Cortana at work, showing where to connect the Uber service to Cortana.](../images/cortana-connect-uber.png)
+    ![Cortana at work, showing where to connect the Uber service to Cortana](../images/cortana-connect-uber.png)
 
 **To use the voice-enabled commands with Cortana**
 1. Click on the **Cortana** icon in the taskbar, and then click the **Microphone** icon (to the right of the **Search** box).

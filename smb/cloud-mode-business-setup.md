@@ -18,7 +18,7 @@ ms.topic: conceptual
 
 # Get started: Deploy and manage a full cloud IT solution for your business
 
-![Learn how to set up a full cloud infrastructure for your business.](images/business-cloud-mode.png)
+![Learn how to set up a full cloud infrastructure for your business](images/business-cloud-mode.png)
 
 **Applies to:**
 
@@ -61,7 +61,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
    **Figure 1** - Try or buy Office 365
 
-   ![Office 365 for business sign up.](images/office365_tryorbuy_now.png)
+   ![Office 365 for business sign up](images/office365_tryorbuy_now.png)
 
 2. Fill out the sign up form and provide information about you and your company.
 3. Create a user ID and password to use to sign into your account.
@@ -76,7 +76,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
    **Figure 2** - Microsoft 365 admin center
 
-   ![Microsoft 365 admin center.](images/office365_portal.png)
+   ![Microsoft 365 admin center](images/office365_portal.png)
 
 
 6. Select the **Admin** tile to go to the admin center.
@@ -86,7 +86,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
   
    **Figure 3** - Admin center
 
-   ![Microsoft 365 admin center.](images/office365_admin_portal.png)
+   ![Microsoft 365 admin center](images/office365_admin_portal.png)
 
 
 8. Go back to the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">admin center</a> to add or buy a domain.
@@ -94,14 +94,14 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
       **Figure 4** - Option to add or buy a domain
 
-      ![Add or buy a domain in admin center.](images/office365_buy_domain.png)
+      ![Add or buy a domain in admin center](images/office365_buy_domain.png)
     
 
    2. In the **Home > Domains** page, you will see the Microsoft-provided domain, such as *fabrikamdesign.onmicrosoft.com*.
 
       **Figure 5** - Microsoft-provided domain
 
-      ![Microsoft-provided domain.](images/office365_ms_provided_domain.png)
+      ![Microsoft-provided domain](images/office365_ms_provided_domain.png)
 
       - If you already have a domain, select **+ Add domain** to add your existing domain. If you select this option, you'll be required to verify that you own the domain. Follow the steps in the wizard to verify your domain.
       - If you don't already own a domain, select **+ Buy domain**. If you're using a trial plan, you'll be required to upgrade your trial plan in order to buy a domain. Choose the subscription plan to use for your business and provide the details to complete your order.
@@ -110,7 +110,7 @@ If this is the first time you're setting this up, and you'd like to see how it's
 
       **Figure 6** - Domains
 
-      ![Verify your domains in the admin center.](images/office365_additional_domain.png)
+      ![Verify your domains in the admin center](images/office365_additional_domain.png)
 
 ### 1.2 Add users and assign product licenses
 Once you've set up Office and added your domain, it's time to add users so they have access to Office 365. People in your organization need an account before they can sign in and access Office 365. The easiest way to add users is to add them one at a time in the Microsoft 365 admin center.
@@ -123,7 +123,7 @@ When adding users, you can also assign admin privileges to certain users in your
 
    **Figure 7** - Add users
 
-   ![Add Office 365 users.](images/office365_users.png)
+   ![Add Office 365 users](images/office365_users.png)
 
 2. In the **Home > Active users** page, add users individually or in bulk.
    - To add users one at a time, select **+ Add a user**.
@@ -132,7 +132,7 @@ When adding users, you can also assign admin privileges to certain users in your
 
      **Figure 8** - Add an individual user
 
-     ![Add an individual user.](images/office365_add_individual_user.png)
+     ![Add an individual user](images/office365_add_individual_user.png)
 
    - To add multiple users at once, select **More** and then choose **+ Import multiple users**. If you select this option, you'll need to create and upload a CSV file containing the list of users.
 
@@ -140,13 +140,13 @@ When adding users, you can also assign admin privileges to certain users in your
 
      **Figure 9** - Import multiple users
 
-     ![Import multiple users.](images/office365_import_multiple_users.png)
+     ![Import multiple users](images/office365_import_multiple_users.png)
 
 3. Verify that all the users you added appear in the list of **Active users**. The **Status** should indicate the product licenses that were assigned to them.
 
    **Figure 10** - List of active users
 
-   ![Verify users and assigned product licenses.](images/o365_active_users.png)
+   ![Verify users and assigned product licenses](images/o365_active_users.png)
 
 ### 1.3 Add Microsoft Intune
 Microsoft Intune provides mobile device management, app management, and PC management capabilities from the cloud. Using Intune, organizations can provide their employees with access to apps, data, and corporate resources from anywhere on almost any device while helping to keep corporate information secure. To learn more, see <a href="/intune/understand-explore/introduction-to-microsoft-intune" target="_blank">What is Intune?</a>
@@ -160,14 +160,14 @@ Microsoft Intune provides mobile device management, app management, and PC manag
 
    **Figure 11** - Assign Intune licenses
 
-   ![Assign Microsoft Intune licenses to users.](images/o365_assign_intune_license.png)
+   ![Assign Microsoft Intune licenses to users](images/o365_assign_intune_license.png)
 
 5. In the admin center, confirm that **Intune** shows up in the list under **Admin centers**. If it doesn't, sign out and then sign back in and then check again.
 6. Select **Intune**. This will take you to the Intune management portal.
 
    **Figure 12** - Microsoft Intune management portal
 
-   ![Microsoft Intune management portal.](images/intune_portal_home.png)
+   ![Microsoft Intune management portal](images/intune_portal_home.png)
 
 Intune should now be added to your tenant. We'll come back to Intune later when we [Configure Microsoft Store for Business for app distribution](#17-configure-microsoft-store-for-business-for-app-distribution).
 
@@ -185,21 +185,21 @@ Microsoft Azure is an open and flexible cloud platform that enables you to quick
 
    **Figure 13** - Access to Azure AD is not available
 
-   ![Access to Azure AD not available.](images/azure_ad_access_not_available.png)
+   ![Access to Azure AD not available](images/azure_ad_access_not_available.png)
 
 3. From the error message, select the country/region for your business. This should match with the location you specified when you signed up for Office 365.
 4. Click **Azure subscription**. This will take you to a free trial sign up screen.
 
    **Figure 14** - Sign up for Microsoft Azure
 
-   ![Sign up for Microsoft Azure.](images/azure_ad_sign_up_screen.png)
+   ![Sign up for Microsoft Azure](images/azure_ad_sign_up_screen.png)
 
 5. In the **Free trial sign up** screen, fill in the required information and then click **Sign up**.
 6. After you sign up, you should see the message that your subscription is ready. Click **Start managing my service**.
 
    **Figure 15** - Start managing your Azure subscription
 
-   ![Start managing your Azure subscription.](images/azure_ad_successful_signup.png)
+   ![Start managing your Azure subscription](images/azure_ad_successful_signup.png)
 
    This will take you to the <a href="https://portal.azure.com" target="_blank">Microsoft Azure portal</a>.
 
@@ -216,26 +216,26 @@ To add Azure AD group(s), we will use the <a href="https://manage.windowsazure.c
 
    **Figure 16** - Azure first sign-in screen
 
-   ![Select Azure AD.](images/azure_portal_classic_configure_directory.png)
+   ![Select Azure AD](images/azure_portal_classic_configure_directory.png)
 
 2. Select the directory (such as Fabrikam Design) to go to the directory's home page.
 
    **Figure 17** - Directory home page
 
-   ![Directory home page.](images/azure_portal_classic_directory_ready.png)
+   ![Directory home page](images/azure_portal_classic_directory_ready.png)
 
 3. From the menu options on top, select **Groups**.
 
    **Figure 18** - Azure AD groups
 
-   ![Add groups in Azure AD.](images/azure_portal_classic_groups.png)
+   ![Add groups in Azure AD](images/azure_portal_classic_groups.png)
 
 4. Select **Add a group** (from the top) or **Add group** at the bottom.
 5. In the **Add Group** window, add a name, group type, and description for the group and click the checkmark to save your changes. The new group will appear on the groups list.
 
    **Figure 19** - Newly added group in Azure AD
 
-   ![Verify the new group appears on the list.](images/azure_portal_classic_all_users_group.png)
+   ![Verify the new group appears on the list](images/azure_portal_classic_all_users_group.png)
 
 6. In the **Groups** tab, select the arrow next to the group (such as **All users**), add members to the group, and then save your changes.
 
@@ -243,7 +243,7 @@ To add Azure AD group(s), we will use the <a href="https://manage.windowsazure.c
 
    **Figure 20** - Members in the new group
 
-   ![Members added to the new group.](images/azure_portal_classic_members_added.png)
+   ![Members added to the new group](images/azure_portal_classic_members_added.png)
 
 7. Repeat steps 2-6 to add other groups. You can add groups based on their roles in your company, based on the apps that each group can use, and so on.
 
@@ -263,14 +263,14 @@ You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/201
 
    **Figure 21** - List of applications for your company
 
-   ![List of applications for your company.](images/azure_portal_classic_applications.png)
+   ![List of applications for your company](images/azure_portal_classic_applications.png)
 
 2. Select **Microsoft Intune** to configure the application.
 3. In the Microsoft Intune configuration page, click **Configure** to start automatic MDM enrollment configuration with Intune.
 
    **Figure 22** - Configure Microsoft Intune in Azure
 
-   ![Configure Microsoft Intune in Azure.](images/azure_portal_classic_configure_intune_app.png)
+   ![Configure Microsoft Intune in Azure](images/azure_portal_classic_configure_intune_app.png)
 
 4. In the Microsoft Intune configuration page:
    - In the **Properties** section, you should see a list of URLs for MDM discovery, MDM terms of use, and MDM compliance.
@@ -289,7 +289,7 @@ You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/201
 
    **Figure 23** - Configure Microsoft Intune
 
-   ![Configure automatic MDM enrollment with Intune.](images/azure_portal_classic_configure_intune_mdm_enrollment.png)
+   ![Configure automatic MDM enrollment with Intune](images/azure_portal_classic_configure_intune_mdm_enrollment.png)
 
 ### 1.7 Configure Microsoft Store for Business for app distribution
 Next, you'll need to configure Microsoft Store for Business to distribute apps with a management tool such as Intune.
@@ -303,7 +303,7 @@ In this part of the walkthrough, we'll be working on the <a href="https://manage
 
    **Figure 24** - Mobile device management
 
-   ![Set up mobile device management in Intune.](images/intune_admin_mdm_configure.png)
+   ![Set up mobile device management in Intune](images/intune_admin_mdm_configure.png)
 
 3. Sign into <a href="https://businessstore.microsoft.com/en-us/Store/Apps" target="_blank">Microsoft Store for Business</a> using the same tenant account that you used to sign into Intune.
 4. Accept the EULA.
@@ -312,20 +312,20 @@ In this part of the walkthrough, we'll be working on the <a href="https://manage
 
    **Figure 25** - Activate Intune as the Store management tool
 
-   ![Activate Intune from the Store portal.](images/wsfb_management_tools_activate.png)
+   ![Activate Intune from the Store portal](images/wsfb_management_tools_activate.png)
 
 7. Go back to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Admin > Mobile Device Management**, expand **Windows**, and then choose **Store for Business**.
 8. In the **Microsoft Store for Business** page, select **Configure Sync** to sync your Store for Business volume-purchased apps with Intune.
 
    **Figure 26** - Configure Store for Business sync in Intune
 
-   ![Configure Store for Business sync in Intune.](images/intune_admin_mdm_store_sync.png)
+   ![Configure Store for Business sync in Intune](images/intune_admin_mdm_store_sync.png)
 
 9. In the **Configure Microsoft Store for Business app sync** dialog box, check **Enable Microsoft Store for Business sync**. In the **Language** dropdown list, choose the language in which you want apps from the Store to be displayed in the Intune console and then click **OK**.
 
    **Figure 27** - Enable Microsoft Store for Business sync in Intune
 
-   ![Enable Store for Business sync in Intune.](images/intune_configure_store_app_sync_dialog.png)
+   ![Enable Store for Business sync in Intune](images/intune_configure_store_app_sync_dialog.png)
 
    The **Microsoft Store for Business** page will refresh and it will show the details from the sync.
 
@@ -348,7 +348,7 @@ In the following example, we'll show you how to buy apps through the Microsoft S
 
    **Figure 28** - Shop for Store apps
 
-   ![Shop for Store apps.](images/wsfb_shop_microsoft_apps.png)
+   ![Shop for Store apps](images/wsfb_shop_microsoft_apps.png)
 
 2. Click to select an app, such as **Reader**. This opens the app page.
 3. In the app's Store page, click **Get the app**. You should see a dialog that confirms your order. Click **Close**. This will refresh the app's Store page.
@@ -358,7 +358,7 @@ In the following example, we'll show you how to buy apps through the Microsoft S
 
    **Figure 29** - App inventory shows the purchased apps
 
-   ![Confirm that your inventory shows purchased apps.](images/wsfb_manage_inventory_newapps.png)
+   ![Confirm that your inventory shows purchased apps](images/wsfb_manage_inventory_newapps.png)
 
    > [!NOTE]
    > Sync happens automatically, but it may take up to 24 hours for your organization's private store and 12 hours for Intune to sync all your purchased apps. You can force a sync to make this process happen faster. For more info, see [To sync recently purchased apps](#forceappsync).
@@ -372,7 +372,7 @@ If you need to sync your most recently purchased apps and have it appear in your
 
    **Figure 30** - Force a sync in Intune
 
-   ![Force a sync in Intune.](images/intune_admin_mdm_forcesync.png)
+   ![Force a sync in Intune](images/intune_admin_mdm_forcesync.png)
 
 **To view purchased apps**
 - In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Apps > Apps** and then choose **Volume-Purchased Apps** to see the list of available apps. Verify that the apps you purchased were imported correctly.
@@ -393,7 +393,7 @@ To set up new Windows devices, go through the Windows initial device setup or fi
 
    **Figure 31** - First screen in Windows device setup
 
-   ![First screen in Windows device setup.](images/win10_hithere.png)
+   ![First screen in Windows device setup](images/win10_hithere.png)
 
    > [!NOTE]  
    > During setup, if you don't have a Wi-Fi network configured, make sure you connect the device to the Internet through a wired/Ethernet connection.
@@ -403,13 +403,13 @@ To set up new Windows devices, go through the Windows initial device setup or fi
 
    **Figure 32** - Choose how you'll connect your Windows device
 
-   ![Choose how you'll connect the Windows device.](images/win10_choosehowtoconnect.png)
+   ![Choose how you'll connect the Windows device](images/win10_choosehowtoconnect.png)
 
 4. In the **Let's get you signed in** screen, sign in using one of the user accounts you added in section [1.2 Add users and assign product licenses](#12-add-users-and-assign-product-licenses). We suggest signing in as one of the global administrators. Later, sign in on another device using one of the non-admin accounts.
 
    **Figure 33** - Sign in using one of the accounts you added
 
-   ![Sign in using one of the accounts you added.](images/win10_signin_admin_account.png)
+   ![Sign in using one of the accounts you added](images/win10_signin_admin_account.png)
 
 5. If this is the first time you're signing in, you will be asked to update your password. Update the password and continue with sign-in and setup.
 
@@ -430,7 +430,7 @@ In the <a href="https://manage.microsoft.com/" target="_blank">Intune management
 
    **Figure 34** - Check the PC name on your device
 
-   ![Check the PC name on your device.](images/win10_settings_pcname.png)
+   ![Check the PC name on your device](images/win10_settings_pcname.png)
   
 2. Log in to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>.
 3. Select **Groups** and then go to **Devices**.
@@ -441,7 +441,7 @@ In the <a href="https://manage.microsoft.com/" target="_blank">Intune management
 
    **Figure 35** - Check that the device appears in Intune
 
-   ![Check that the device appears in Intune.](images/intune_groups_devices_list.png)
+   ![Check that the device appears in Intune](images/intune_groups_devices_list.png)
 
 ## 3. Manage device settings and features
 You can use Microsoft Intune admin settings and policies to manage features on your organization's mobile devices and computers. For more info, see [Manage settings and features on your devices with Microsoft Intune policies](/intune/deploy-use/manage-settings-and-features-on-your-devices-with-microsoft-intune-policies).
@@ -460,7 +460,7 @@ In some cases, if an app is missing from the device, you need to reconfigure the
 
    **Figure 36** - Reconfigure an app's deployment setting in Intune
 
-   ![Reconfigure app deployment settings in Intune.](images/intune_apps_deploymentaction.png)
+   ![Reconfigure app deployment settings in Intune](images/intune_apps_deploymentaction.png)
 
 6. Click **Finish**.
 7. Repeat steps 2-6 for other apps that you want to deploy to the device(s) as soon as possible.
@@ -470,7 +470,7 @@ In some cases, if an app is missing from the device, you need to reconfigure the
 
      **Figure 37** - Confirm that additional apps were deployed to the device
 
-     ![Confirm that additional apps were deployed to the device.](images/win10_deploy_apps_immediately.png)
+     ![Confirm that additional apps were deployed to the device](images/win10_deploy_apps_immediately.png)
 
 ### 3.2 Configure other settings in Intune
 
@@ -486,7 +486,7 @@ In some cases, if an app is missing from the device, you need to reconfigure the
 
    **Figure 38** - Add a configuration policy
 
-   ![Add a configuration policy.](images/intune_policy_disablecamera.png)
+   ![Add a configuration policy](images/intune_policy_disablecamera.png)
 
 7. Click **Save Policy**. A confirmation window will pop up.
 8. On the **Deploy Policy** confirmation window, select **Yes** to deploy the policy now.
@@ -495,7 +495,7 @@ In some cases, if an app is missing from the device, you need to reconfigure the
 
     **Figure 39** - The new policy should appear in the **Policies** list.
 
-    ![New policy appears on the list.](images/intune_policies_newpolicy_deployed.png)
+    ![New policy appears on the list](images/intune_policies_newpolicy_deployed.png)
 
 **To turn off Windows Hello and PINs during device setup**
 1. In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Admin**.
@@ -504,7 +504,7 @@ In some cases, if an app is missing from the device, you need to reconfigure the
 
    **Figure 40** - Policy to disable Windows Hello for Business
 
-   ![Disable Windows Hello for Business.](images/intune_policy_disable_windowshello.png)
+   ![Disable Windows Hello for Business](images/intune_policy_disable_windowshello.png)
 
 4. Click **Save**.
 
@@ -531,32 +531,32 @@ For other devices, such as those personally-owned by employees who need to conne
 
    **Figure 41** - Add an Azure AD account to the device
 
-   ![Add an Azure AD account to the device.](images/win10_add_new_user_join_aad.png)
+   ![Add an Azure AD account to the device](images/win10_add_new_user_join_aad.png)
 
 4. In the **Let's get you signed in** window, enter the work credentials for the account and then click **Sign in** to authenticate the user.
 
    **Figure 42** - Enter the account details
 
-   ![Enter the account details.](images/win10_add_new_user_account_aadwork.png)
+   ![Enter the account details](images/win10_add_new_user_account_aadwork.png)
 
 5. You will be asked to update the password so enter a new password.
 6. Verify the details to make sure you're connecting to the right organization and then click **Join**.
 
    **Figure 43** - Make sure this is your organization
 
-   ![Make sure this is your organization.](images/win10_confirm_organization_details.png)
+   ![Make sure this is your organization](images/win10_confirm_organization_details.png)
 
 7. You will see a confirmation window that says the device is now connected to your organization. Click **Done**.
 
    **Figure 44** - Confirmation that the device is now connected
 
-   ![Confirmation that the device is now connected.](images/win10_confirm_device_connected_to_org.png)
+   ![Confirmation that the device is now connected](images/win10_confirm_device_connected_to_org.png)
 
 8. The **Connect to work or school** window will refresh and will now include an entry that shows you're connected to your organization's Azure AD. This means the device is now registered in Azure AD and enrolled in MDM and the account should have access to the organization's resources.
 
    **Figure 45** - Device is now enrolled in Azure AD
 
-   ![Device is enrolled in Azure AD.](images/win10_device_enrolled_in_aad.png)
+   ![Device is enrolled in Azure AD](images/win10_device_enrolled_in_aad.png)
 
 9. You can confirm that the new device and user are showing up as Intune-managed by going to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and following the steps in [2.3 Verify the device is Azure AD joined](#23-verify-the-device-is-azure-ad-joined). It may take several minutes before the new device shows up so check again later.
 

@@ -52,7 +52,7 @@ To enable BitLocker to store the recovery key and TPM information in Active Dire
 
 In Windows Server version from 2008 R2 and later, you have access to the BitLocker Drive Encryption Administration Utilities features, which will help you manage BitLocker. When you install the features, the BitLocker Active Directory Recovery Password Viewer is included, and it extends Active Directory Users and Computers with BitLocker Recovery information.
 
-![figure 2.](../images/mdt-09-fig02.png)
+![figure 2](../images/mdt-09-fig02.png)
 
 The BitLocker Recovery information on a computer object in the contoso.com domain.
 
@@ -71,7 +71,7 @@ The BitLocker Drive Encryption Administration Utilities are added as features vi
     3. BitLocker Recovery Password Viewer
 7. On the **Confirm installation selections** page, click **Install**, and then click **Close**.
 
-![figure 3.](../images/mdt-09-fig03.png)
+![figure 3](../images/mdt-09-fig03.png)
 
 Selecting the BitLocker Drive Encryption Administration Utilities.
 
@@ -104,7 +104,7 @@ In addition to the Group Policy created previously, you need to configure permis
     cscript C:\Setup\Scripts\Add-TPMSelfWriteACE.vbs
     ```
 
-![figure 4.](../images/mdt-09-fig04.png)
+![figure 4](../images/mdt-09-fig04.png)
 
 Running the Add-TPMSelfWriteACE.vbs script on DC01.
 

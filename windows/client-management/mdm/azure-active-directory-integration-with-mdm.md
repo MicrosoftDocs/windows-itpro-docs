@@ -90,7 +90,7 @@ After the users accepts the Terms of Use, the device is registered in Azure AD a
 
 The following diagram illustrates the high-level flow involved in the actual enrollment process. The device is first registered with Azure AD. This process assigns a unique device identifier to the device and presents the device with the ability to authenticate itself with Azure AD (device authentication). Subsequently, the device is enrolled for management with the MDM. This is done by calling the enrollment endpoint and requesting enrollment for the user and device. At this point, the user has been authenticated and device has been registered and authenticated with Azure AD. This information is made available to the MDM in the form of claims within an access token presented at the enrollment endpoint.
 
-![azure ad enrollment flow.](images/azure-ad-enrollment-flow.png)
+![azure ad enrollment flow](images/azure-ad-enrollment-flow.png)
 
 The MDM is expected to use this information about the device (Device ID) when reporting device compliance back to Azure AD using the [Azure AD Graph API](/azure/active-directory/develop/active-directory-graph-api). A sample for reporting device compliance is provided later in this topic.
 
@@ -173,7 +173,7 @@ IT administrators use the Azure AD app gallery to add an MDM for their organizat
 
 The following image illustrates how MDM applications will show up in the Azure app gallery in a category dedicated to MDM software.
 
-![azure ad add an app for mdm.](images/azure-ad-app-gallery.png)
+![azure ad add an app for mdm](images/azure-ad-app-gallery.png)
 
 ### Add cloud-based MDM to the app gallery
 
@@ -732,7 +732,7 @@ Response:
 
 When a user is enrolled into MDM through Azure Active Directory Join and then disconnects the enrollment, there is no warning that the user will lose Windows Information Protection (WIP) data. The disconnection message does not indicate the loss of WIP data.
 
-![aadj unenrollment.](images/azure-ad-unenrollment.png)
+![aadj unenrollment](images/azure-ad-unenrollment.png)
 
 ## Error codes
 

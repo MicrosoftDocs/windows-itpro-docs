@@ -38,23 +38,23 @@ Determining an adequate number of Windows Server domain controllers is important
 
 Consider a controlled environment where there are 1000 client computers and the authentication load of these 1000 client computers is evenly distributed across 10 domain controllers in the environment. The Kerberos AS requests load would look something like the following:
 
-![dc-chart1.](images/plan/dc-chart1.png)
+![dc-chart1](images/plan/dc-chart1.png)
 
 The environment changes. The first change includes DC1 upgraded to Windows Server 2016 or later to support Windows Hello for Business key-trust authentication. Next, 100 clients enroll for Windows Hello for Business using the public key trust deployment. Given all other factors stay constant, the authentication would now look like the following:
 
-![dc-chart2.](images/plan/dc-chart2.png)
+![dc-chart2](images/plan/dc-chart2.png)
 
 The Windows Server 2016 or later domain controller is handling 100 percent of all public key trust authentication. However, it is also handling 10 percent of password authentication. Why? This behavior occurs because domain controllers 2 - 10 only support password and certificate trust authentication; only a Windows Server 2016 and above domain controller supports public key trust authentication. The Windows Server 2016 and above domain controller still understands how to authenticate password and certificate trust authentication and will continue to share the load of authenticating those clients. Because DC1 can handle all forms of authentication, it will bear more of the authentication load, and easily become overloaded. What if another Windows Server 2016 or later domain controller is added, but without deploying Windows Hello for Business to any more clients?
 
-![dc-chart3.](images/plan/dc-chart3.png)
+![dc-chart3](images/plan/dc-chart3.png)
 
 Upgrading another domain controller to Windows Server 2016 or later distributes the public key trust authentication across two domain controllers - each supporting 50 percent of the load.  But it doesn't change the distribution of password and certificate trust authentication. Both Windows Server 2019 domain controllers still share 10 percent of this load. Now look at the scenario when half of the domain controllers are upgraded to Windows Server 2016 or later, but the number of WHFB clients remains the same.
 
-![dc-chart4.](images/plan/dc-chart4.png)
+![dc-chart4](images/plan/dc-chart4.png)
 
 Domain controllers 1 through 5 now share the public key trust authentication load where each domain controller handles 20 percent of the public key trust load but they each still handle 10 percent of the password and certificate trust authentication. These domain controllers still have a heavier load than domain controllers 6 through 10; however, the load is adequately distributed. Now look the scenario when half of the client computers are upgraded to Windows Hello for Business using a key-trust deployment.
 
-![dc-chart5.](images/plan/dc-chart5.png)
+![dc-chart5](images/plan/dc-chart5.png)
 
 You'll notice the distribution did not change.  Each Windows Server 2016 or later domain controller handles 20 percent of the public key trust authentication. However, increasing the volume of authentication (by increasing the number of clients) increases the amount of work that is represented by the same 20 percent. In the previous example, 20 percent of public key trust authentication equated to a volume of 20 authentications per domain controller capable of public key trust authentication. However, with upgraded clients, that same 20 percent represents a volume of 100 public key trust authentications per public key trust capable domain controller. Also, the distribution of non-public key trust authentication remained at 10 percent, but the volume of password and certificate trust authentications decreased across the older domain controllers.
 

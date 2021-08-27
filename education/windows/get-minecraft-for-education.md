@@ -29,7 +29,7 @@ ms.topic: conceptual
 
 Teachers and IT administrators can now get early access to **Minecraft: Education Edition** and add it their Microsoft Store for Business for distribution. 
 
-<!-- ![education.minecraft.net.](images/minecraft.png) -->
+<!-- ![education.minecraft.net](images/minecraft.png) -->
 
 ## Prerequisites
  
@@ -39,11 +39,11 @@ Teachers and IT administrators can now get early access to **Minecraft: Educatio
   - Office 365 Education, which includes online versions of Office apps plus 1 TB online storage. [Sign up your school for Office 365 Education.](https://products.office.com/academic/office-365-education-plan)
   - If your school has an Office 365 Education subscription, it includes a free Azure AD subscription. [Register your free Azure AD subscription.](/windows/client-management/mdm/register-your-free-azure-active-directory-subscription)
 
-<!-- ![teacher.](images/teacher.png) --> 
+<!-- ![teacher](images/teacher.png) --> 
 
 [Learn how teachers can get and distribute **Minecraft: Education Edition**](teacher-get-minecraft.md)
 
   
-<!-- ![IT administrator.](images/school.png) -->
+<!-- ![IT administrator](images/school.png) -->
 
 [Learn how IT administrators can get and distribute **Minecraft: Education Edition**](school-get-minecraft.md), and how to manage permissions for Minecraft.

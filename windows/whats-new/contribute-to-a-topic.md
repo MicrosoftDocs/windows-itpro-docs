@@ -38,7 +38,7 @@ Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner
 
 1. Go to the article that you want to update, and then click **Edit**.
 
-    ![GitHub Web, showing the Edit link.](images/contribute-link.png)
+    ![GitHub Web, showing the Edit link](images/contribute-link.png)
 
 2. Sign into (or sign up for) a GitHub account.
     
@@ -46,7 +46,7 @@ Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner
 
 3. Click the **Pencil** icon (in the red box) to edit the content.
 
-    ![GitHub Web, showing the Pencil icon in the red box.](images/pencil-icon.png)
+    ![GitHub Web, showing the Pencil icon in the red box](images/pencil-icon.png)
 
 4. Using Markdown language, make your changes to the topic. For info about how to edit content using Markdown, see:
    - **If you're linked to the Microsoft organization in GitHub:** [Windows authoring guide](https://aka.ms/WindowsAuthoring)
@@ -55,11 +55,11 @@ Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner
 
 5. Make your suggested change, and then click **Preview Changes** to make sure it looks correct.
 
-      ![GitHub Web, showing the Preview Changes tab.](images/preview-changes.png)
+      ![GitHub Web, showing the Preview Changes tab](images/preview-changes.png)
 
 6. When you’re done editing the topic, scroll to the bottom of the page, and then click **Propose file change**.
 
-    ![GitHub Web, showing the Propose file change button.](images/propose-file-change.png)
+    ![GitHub Web, showing the Propose file change button](images/propose-file-change.png)
 
     The **Comparing changes** screen shows the changes between your version of the article and the original content.
 
@@ -67,7 +67,7 @@ Across the docs.microsoft.com site, if you see **Edit** in the right-hand corner
 
    If there are no problems, you’ll see the message, **Able to merge**.
 
-   ![GitHub Web, showing the Comparing changes screen.](images/compare-changes.png)
+   ![GitHub Web, showing the Comparing changes screen](images/compare-changes.png)
 
 8. Click **Create pull request**.
 

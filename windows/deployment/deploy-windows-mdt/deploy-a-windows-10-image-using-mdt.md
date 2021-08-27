@@ -34,7 +34,7 @@ For the purposes of this topic, we will use four computers: DC01, MDT01, HV01 an
 
 MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.  HV01 used to test deployment of PC0005 in a virtual environment.
 
-   ![devices.](../images/mdt-07-fig01.png)
+   ![devices](../images/mdt-07-fig01.png)
 
 >[!NOTE]
 >For details about the setup for the procedures in this article, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
@@ -135,7 +135,7 @@ In these steps, we assume that you have completed the steps in the [Create a Win
 >The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
  
 
-![imported OS.](../images/fig2-importedos.png)
+![imported OS](../images/fig2-importedos.png)
 
 ## Step 4: Add an application
 
@@ -162,7 +162,7 @@ On **MDT01**:
 
 10. On the **Command Details** page, in the **Command Line** text box, type **msiexec /i AcroRead.msi /q**, click **Next** twice, and then click **Finish**.
 
-    ![acroread image.](../images/acroread.png)
+    ![acroread image](../images/acroread.png)
 
     The Adobe Reader application added to the Deployment Workbench.
 
@@ -238,7 +238,7 @@ wmic csproduct get name
 
 If you want a more standardized naming convention, try the **ModelAliasExit.vbs script** from the Deployment Guys blog post, entitled [Using and Extending Model Aliases for Hardware Specific Application Installation](/archive/blogs/deploymentguys/using-and-extending-model-aliases-for-hardware-specific-application-installation).
 
-![drivers.](../images/fig4-oob-drivers.png)
+![drivers](../images/fig4-oob-drivers.png)
 
 The Out-of-Box Drivers structure in the Deployment Workbench.
 
@@ -260,7 +260,7 @@ On **MDT01**:
     2.  Folders: Select the WinPE x64 folder in Out-of-Box Drivers.
     3.  Click **Next**, **Next** and **Finish**.
 
-    ![figure 5.](../images/fig5-selectprofile.png)
+    ![figure 5](../images/fig5-selectprofile.png)
 
     Creating the WinPE x64 selection profile.
 
@@ -284,7 +284,7 @@ On **MDT01**:
 For the ThinkStation P500 model, you use the Lenovo ThinkVantage Update Retriever software to download the drivers. With Update Retriever, you need to specify the correct Lenovo Machine Type for the actual hardware (the first four characters of the model name). As an example, the Lenovo ThinkStation P500 model has the 30A6003TUS model name, meaning the Machine Type is 30A6.
 
 > [!div class="mx-imgBorder"]
-> ![ThinkStation image.](../images/thinkstation.png)
+> ![ThinkStation image](../images/thinkstation.png)
 
 To get the updates, download the drivers from the Lenovo ThinkVantage Update Retriever using its export function. You can also download the drivers by searching PC Support on the [Lenovo website](https://go.microsoft.com/fwlink/p/?LinkId=619543).
 
@@ -386,7 +386,7 @@ On **MDT01**:
 
 3. Click **OK**.
 
-   ![drivergroup.](../images/fig6-taskseq.png)
+   ![drivergroup](../images/fig6-taskseq.png)
 
    The task sequence for production deployment.
 
@@ -488,7 +488,7 @@ On **MDT01**:
     >[!NOTE]
     >It will take a while for the Deployment Workbench to create the monitoring database and web service.
  
-    ![figure 8.](../images/mdt-07-fig08.png)
+    ![figure 8](../images/mdt-07-fig08.png)
 
     The Windows PE tab for the x64 boot image.
 
@@ -586,7 +586,7 @@ On **MDT01**:
 
 2. Install DaRT 10 (MSDaRT10.msi) using the default settings.
 
-   ![DaRT image.](../images/dart.png)
+   ![DaRT image](../images/dart.png)
 
 2. Copy the two tools CAB files from **C:\\Program Files\\Microsoft DaRT\\v10** (**Toolsx86.cab** and **Toolsx64.cab**) to the production deployment share at **D:\\MDTProduction\\Tools\\x86** and **D:\\MDTProduction\\Tools\\x64**, respectively.
 
@@ -596,7 +596,7 @@ On **MDT01**:
 
 5. On the **Features** sub tab, select the **Microsoft Diagnostics and Recovery Toolkit (DaRT)** checkbox.
 
-   ![DaRT selection.](../images/mdt-07-fig09.png)
+   ![DaRT selection](../images/mdt-07-fig09.png)
 
    Selecting the DaRT 10 feature in the deployment share.
 
@@ -633,7 +633,7 @@ On **MDT01**:
 
 3. Browse to the **D:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** file and add the image with the default settings.
 
-   ![figure 9.](../images/mdt-07-fig10.png)
+   ![figure 9](../images/mdt-07-fig10.png)
 
    The boot image added to the WDS console.
 
@@ -655,7 +655,7 @@ On **HV01**:
 
 2.  Start the PC0005 virtual machine, and press **Enter** to start the PXE boot. The VM will now load the Windows PE boot image from the WDS server.
 
-    ![figure 10.](../images/mdt-07-fig11.png)
+    ![figure 10](../images/mdt-07-fig11.png)
 
     The initial PXE boot process of PC0005.
 
@@ -671,13 +671,13 @@ On **HV01**:
     - Installs the added application.
     - Updates the operating system via your local Windows Server Update Services (WSUS) server.
 
-    ![pc0005 image1.](../images/pc0005-vm.png)
+    ![pc0005 image1](../images/pc0005-vm.png)
 
 ### Application installation
 
 Following OS installation, Microsoft Office 365 Pro Plus - x64 is installed automatically.
 
- ![pc0005 image2.](../images/pc0005-vm-office.png)
+ ![pc0005 image2](../images/pc0005-vm-office.png)
 
 ### Use the MDT monitoring feature
 
@@ -691,7 +691,7 @@ On **MDT01**:
 
 3.  Double-click PC0005, and review the information.
 
-    ![figure 11.](../images/mdt-07-fig13.png)
+    ![figure 11](../images/mdt-07-fig13.png)
 
     The Monitoring node, showing the deployment progress of PC0005.
 
@@ -699,7 +699,7 @@ On **MDT01**:
 
 When monitoring is enabled, MDT also writes information to the event viewer on MDT01. This information can be used to trigger notifications via scheduled tasks when deployment is completed. For example, you can configure scheduled tasks to send an email when a certain event is created in the event log.
 
-![figure 12.](../images/mdt-07-fig14.png)
+![figure 12](../images/mdt-07-fig14.png)
 
 The Event Viewer showing a successful deployment of PC0005.
 
@@ -723,7 +723,7 @@ On **MDT01**:
 3.  Right-click the **MDT Production** deployment share folder and select **Update Deployment Share**.
 4.  After updating the deployment share, use the Windows Deployment Services console to, verify that the multicast namespace was created.
 
-    ![figure 13.](../images/mdt-07-fig15.png)
+    ![figure 13](../images/mdt-07-fig15.png)
 
     The newly created multicast namespace.
 
@@ -753,7 +753,7 @@ On **MDT01**:
       - Out-Of-Box Drivers / Windows 10 x64
       - Task Sequences / Windows 10
 
-      ![offline media.](../images/mdt-offline-media.png)
+      ![offline media](../images/mdt-offline-media.png)
 
 ### Create the offline media
 
@@ -831,7 +831,7 @@ Follow these steps to create a bootable USB stick from the offline media content
 
 As referenced in [Windows 10 deployment scenarios and tools](../windows-deployment-scenarios-and-tools.md), Unified Extensible Firmware Interface (UEFI)-based deployments are becoming more common. In fact, when you create a generation 2 virtual machine in Hyper-V, you get a UEFI-based computer. During deployment, MDT automatically detects that you have an UEFI-based machine and creates the partitions UEFI requires. You do not need to update or change your task sequences in any way to accommodate UEFI.
 
-![figure 14.](../images/mdt-07-fig16.png)
+![figure 14](../images/mdt-07-fig16.png)
 
 The partitions when deploying an UEFI-based machine.
 

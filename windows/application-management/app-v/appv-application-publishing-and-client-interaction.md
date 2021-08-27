@@ -423,7 +423,7 @@ The process then configures the client for package or connection group additions
 
 This completes an App-V package add for the publishing refresh process. The next step is publishing the package to a specific target (machine or user).
 
-![Package add file and registry data.](images/packageaddfileandregistrydata.png)
+![Package add file and registry data](images/packageaddfileandregistrydata.png)
 
 **Package add file and registry data**
 
@@ -454,7 +454,7 @@ During the Publishing Refresh operation, the specific publishing operation, **Pu
 
 Publishing an App-V Package that is part of a Connection Group is very similar to the above process. For connection groups, the path that stores the specific catalog information includes PackageGroups as a child of the Catalog Directory. Review the Machine and User Catalog information in the preceding sections for details.
 
-![package add file and registry data - global.](images/packageaddfileandregistrydata-global.png)
+![package add file and registry data - global](images/packageaddfileandregistrydata-global.png)
 
 **Package add file and registry data—global**
 
@@ -481,7 +481,7 @@ After the Publishing Refresh process, the user launches and then relaunches an A
 
 7. The Application launches. For any missing files in the package store (sparse files), App-V will stream fault the files on an as-needed basis.
 
-    ![package add file and registry data - stream.](images/packageaddfileandregistrydata-stream.png)
+    ![package add file and registry data - stream](images/packageaddfileandregistrydata-stream.png)
 
     **Package add file and registry data—stream**
 

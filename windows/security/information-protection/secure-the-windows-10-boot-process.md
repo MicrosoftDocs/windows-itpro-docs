@@ -55,7 +55,7 @@ Windows 10 supports four features to help prevent rootkits and bootkits from lo
 Figure 1 shows the Windows 10 startup process.
 
 
-![Windows 10 startup process.](./images/dn168167.boot_process(en-us,MSDN.10).png)
+![Windows 10 startup process](./images/dn168167.boot_process(en-us,MSDN.10).png)
 
 **Figure 1. Secure Boot, Trusted Boot, and Measured Boot block malware at every stage**
 
@@ -115,7 +115,7 @@ Depending on the implementation and configuration, the server can now determine 
 Figure 2 illustrates the Measured Boot and remote attestation process.
 
 
-![Measured Boot and remote attestation process.](./images/dn168167.measure_boot(en-us,MSDN.10).png)
+![Measured Boot and remote attestation process](./images/dn168167.measure_boot(en-us,MSDN.10).png)
 
 
 **Figure 2. Measured Boot proves the PC’s health to a remote server**

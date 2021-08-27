@@ -52,7 +52,7 @@ DRTM lets the system freely boot into untrusted code initially, but shortly afte
 This has the benefit of allowing untrusted early UEFI code to boot the system, but then being able to securely transition into a trusted and measured state.
 
 
-![System Guard Secure Launch.](images/system-guard-secure-launch.png)
+![System Guard Secure Launch](images/system-guard-secure-launch.png)
 
 Secure Launch simplifies management of SRTM measurements because the launch code is now unrelated to a specific hardware configuration. This means the number of valid code measurements is small, and future updates can be deployed more widely and quickly. 
 
@@ -82,7 +82,7 @@ While Windows Defender System Guard provides advanced protection that will help 
 As Windows 10 boots, a series of integrity measurements are taken by Windows Defender System Guard using the device’s Trusted Platform Module 2.0 (TPM 2.0). System Guard Secure Launch will not support earlier TPM versions, such as TPM 1.2. This process and data are hardware-isolated away from Windows to help ensure that the measurement data is not subject to the type of tampering that could happen if the platform was compromised. From here, the measurements can be used to determine the integrity of the device’s firmware, hardware configuration state, and Windows boot-related components, just to name a few. 
 
 
-![Boot time integrity.](images/windows-defender-system-guard-boot-time-integrity.png)
+![Boot time integrity](images/windows-defender-system-guard-boot-time-integrity.png)
 
 After the system boots, Windows Defender System Guard signs and seals these measurements using the TPM. Upon request, a management system like Intune or Microsoft Endpoint Configuration Manager can acquire them for remote analysis. If Windows Defender System Guard indicates that the device lacks integrity, the management system can take a series of actions, such as denying the device access to resources.
 

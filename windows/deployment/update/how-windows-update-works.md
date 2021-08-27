@@ -49,7 +49,7 @@ The Windows Update workflow has four core areas of functionality:
 During the updating process, the Windows Update Orchestrator operates in the background to scan, download, and install updates. It does these actions automatically, according to your settings, and silently so that doesn't disrupt your computer usage. 
 
 ## Scanning updates 
-![Windows Update scanning step.](images/update-scan-step.png)
+![Windows Update scanning step](images/update-scan-step.png)
 
 The Windows Update Orchestrator on your PC checks the Microsoft Update server or your WSUS endpoint for new updates at random intervals. The randomization ensures that the Windows Update server isn't overloaded with requests all at the same time. The Update Orchestrator searches only for updates that have been added since the last time updates were searched, allowing it to find updates quickly and efficiently.  
 
@@ -86,14 +86,14 @@ When users start scanning in Windows Update through the Settings panel, the foll
    - Updates are identified by the different IDs ("ID = 10", "ID = 11") and from the different thread ID numbers. 
    - Windows Update uses the thread ID filtering to concentrate on one particular task. 
 
-      ![Windows Update scan log 1.](images/update-scan-log-1.png)
+      ![Windows Update scan log 1](images/update-scan-log-1.png)
 
 #### Identifies service IDs
 
 - Service IDs indicate which update source is being scanned. 
 
 - The Windows Update engine treats every service as a separate entity, even though multiple services may contain the same updates. 
-   ![Windows Update scan log 2.](images/update-scan-log-2.png)
+   ![Windows Update scan log 2](images/update-scan-log-2.png)
 - Common service IDs 
 
    > [!IMPORTANT]
@@ -120,10 +120,10 @@ Common update failure is caused due to network issues. To find the root of the i
    > If the search is against WSUS or Configuration Manager, you can ignore warning messages for the Service Locator Service. 
 
 - On sites that only use WSUS or Configuration Manager, the Service Locator Service might be blocked at the firewall. In this case the request will fail, and though the service can’t scan against Windows Update or Microsoft Update, it can still scan against WSUS or Configuration Manager, since it’s locally configured.
-   ![Windows Update scan log 3.](images/update-scan-log-3.png)
+   ![Windows Update scan log 3](images/update-scan-log-3.png)
    
 ## Downloading updates 
-![Windows Update download step.](images/update-download-step.png)
+![Windows Update download step](images/update-download-step.png)
 
 Once the Windows Update Orchestrator determines which updates apply to your computer, it will begin downloading the updates, if you have selected the option to automatically download updates. It does operation in the background without interrupting your normal use of the device.  
 
@@ -132,14 +132,14 @@ To ensure that your other downloads aren't affected or slowed down because updat
 For more information, see [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md). 
 
 ## Installing updates 
-![Windows Update install step.](images/update-install-step.png)
+![Windows Update install step](images/update-install-step.png)
 
 When an update is applicable, the "Arbiter" and metadata are downloaded. Depending on your Windows Update settings, when downloading is complete, the Arbiter will gather details from the device, and compare that with the downloaded metadata to create an "action list".  
 
 The action list describes all the files needed from Windows Update, and what the installation agent (such as CBS or Setup) should do with them. The action list is provided to the installation agent along with the payload to begin the installation. 
  
 ## Committing Updates 
-![Windows Update commit step.](images/update-commit-step.png)
+![Windows Update commit step](images/update-commit-step.png)
 
 When the option to automatically install updates is configured, the Windows Update Orchestrator, in most cases, automatically restarts the device for you after installing the updates. It has to restart the device because it might be insecure, or not fully updated, until it restarts. You can use Group Policy settings, mobile device management (MDM), or the registry (not recommended) to configure when devices will restart after a Windows 10 update is installed.  
 

@@ -32,7 +32,7 @@ Many schools use online testing for formative and summative assessments. It's cr
 
 ## How to use Take a Test
 
-![Set up and user flow for the Take a Test app.](images/take_a_test_flow_dark.png)
+![Set up and user flow for the Take a Test app](images/take_a_test_flow_dark.png)
 
 There are several ways to configure devices for assessments, depending on your use case:
 

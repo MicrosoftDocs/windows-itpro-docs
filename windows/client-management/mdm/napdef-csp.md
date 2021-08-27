@@ -27,11 +27,11 @@ The NAPDEF configuration service provider is used to add, modify, or delete WAP 
 
 The following diagram shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **initial bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
 
-![napdef csp (cp) (initial bootstrapping).](images/provisioning-csp-napdef-cp.png)
+![napdef csp (cp) (initial bootstrapping)](images/provisioning-csp-napdef-cp.png)
 
 The following diagram shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **updating the bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
 
-![napdef csp (cp) (update bootstrapping).](images/provisioning-csp-napdef-cp-2.png)
+![napdef csp (cp) (update bootstrapping)](images/provisioning-csp-napdef-cp-2.png)
 
 <a href="" id="napauthinfo"></a>**NAPAUTHINFO**  
 Defines a group of authentication settings.

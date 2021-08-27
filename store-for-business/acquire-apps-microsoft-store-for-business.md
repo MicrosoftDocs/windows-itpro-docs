@@ -55,7 +55,7 @@ There are a couple of things we need to know when you pay for apps. You can add 
 2. Select **Manage**, and then select **Settings**. 
 3. On **Shop**, , under **Shopping behavior**, turn on or turn off **Allow users to shop**.
 
-![manage settings to control Basic Purchaser role assignment.](images/sfb-allow-shop-setting.png)
+![manage settings to control Basic Purchaser role assignment](images/sfb-allow-shop-setting.png)
 
 ## Allow app requests
 

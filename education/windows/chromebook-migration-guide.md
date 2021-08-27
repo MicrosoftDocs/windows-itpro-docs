@@ -118,7 +118,7 @@ At the end of this section, you should have a list of Chromebook user and device
 
 You use the Google Admin Console (as shown in Figure 1) to manage user and device settings. These settings are applied to all the Chromebook devices in your institution that are enrolled in the Google Admin Console. Review the user and device settings in the Google Admin Console and determine which settings are appropriate for your Windows devices.
 
-![figure 1.](images/chromebook-fig1-googleadmin.png)
+![figure 1](images/chromebook-fig1-googleadmin.png)
 
 Figure 1. Google Admin Console
 
@@ -221,7 +221,7 @@ Table 3. Settings in the Security node in the Google Admin Console
 
 In addition to the settings configured in the Google Admin Console, users may have locally configured their devices based on their own personal preferences (as shown in Figure 2). Table 4 lists the Chromebook user and device settings that you can locally configure. Review the settings and determine which settings you will migrate to Windows. Some of the settings listed in Table 4 can only be seen when you click the **Show advanced settings** link (as shown in Figure 2).
 
-![figure 2.](images/fig2-locallyconfig.png)
+![figure 2](images/fig2-locallyconfig.png)
 
 Figure 2. Locally-configured settings on Chromebook
 

@@ -157,7 +157,7 @@ The following diagram shows Security Settings and related features.
 
 #### Security Settings Policies and Related Features
 
-![components related to security policies.](images/secpol-components.gif)
+![components related to security policies](images/secpol-components.gif)
 
 - **Scesrv.dll**
 
@@ -181,7 +181,7 @@ The Security Settings extension of the Local Group Policy Editor is part of the 
 
 **Security Settings Architecture**
 
-![architecture of security policy settings.](images/secpol-architecture.gif)
+![architecture of security policy settings](images/secpol-architecture.gif)
 
 The security settings configuration and analysis tools include a security configuration engine, which provides local computer (non-domain member) and Group Policy−based configuration and analysis of security settings policies. The security configuration engine also supports the creation of security policy files. The primary features of the security configuration engine are scecli.dll and scesrv.dll.
 
@@ -321,7 +321,7 @@ In the context of Group Policy processing, security settings policy is processed
 
    **Multiple GPOs and Merging of Security Policy**
 
-   ![multiple gpos and merging of security policy.](images/secpol-multigpomerge.gif)
+   ![multiple gpos and merging of security policy](images/secpol-multigpomerge.gif)
 
 1. The resultant security policies are stored in secedit.sdb, the security settings database. The security engine gets the security template files and imports them to secedit.sdb.
 1. The security settings policies are applied to devices.
@@ -329,7 +329,7 @@ The following figure illustrates the security settings policy processing.
 
 **Security Settings Policy Processing**
 
-![process and interactions of security policy settings.](images/secpol-processes.gif)
+![process and interactions of security policy settings](images/secpol-processes.gif)
 
 ### Merging of security policies on domain controllers
 

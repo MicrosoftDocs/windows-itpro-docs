@@ -35,7 +35,7 @@ Policy paths:
 
 **User Configuration** > **Administrative Templates** > **Control Panel** > **Settings Page Visibility**.
 
-![Settings page visibility policy.](images/settings-page-visibility-gp.png)
+![Settings page visibility policy](images/settings-page-visibility-gp.png)
 
 ## Configuring the Group Policy
 

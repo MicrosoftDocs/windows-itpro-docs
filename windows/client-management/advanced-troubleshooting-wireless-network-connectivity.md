@@ -152,7 +152,7 @@ The important components of the MSM include:
 - Security Manager (SecMgr) - handles all pre and post-connection security operations.
 - Authentication Engine (AuthMgr) – Manages 802.1x auth requests
 
-    ![MSM details.](images/msmdetails.png)
+    ![MSM details](images/msmdetails.png)
 
 Each of these components has their own individual state machines which follow specific transitions.
 Enable the **FSM transition, SecMgr Transition,** and **AuthMgr Transition** filters in TextAnalysisTool for more detail.
@@ -327,4 +327,4 @@ Copy and paste all the lines below and save them into a text file named "wifi.ta
 
 In the following example, the **View** settings are configured to **Show Only Filtered Lines**.
 
-![TAT filter example.](images/tat.png)
+![TAT filter example](images/tat.png)

@@ -150,7 +150,7 @@ Hardware requirements are displayed below:
 
 The lab architecture is summarized in the following diagram:
 
-![PoC diagram.](images/poc.png)
+![PoC diagram](images/poc.png)
 
 - Computer 1 is configured to host four VMs on a private, PoC network.
     - Two VMs are running Windows Server 2012 R2 with required network services and tools installed.
@@ -224,9 +224,9 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
     >Alternatively, you can install Hyper-V using the Control Panel in Windows under **Turn Windows features on or off** for a client operating system, or using Server Manager's **Add Roles and Features Wizard** on a server operating system, as shown below:
 
-    ![hyper-v features.](images/hyper-v-feature.png)
+    ![hyper-v features](images/hyper-v-feature.png)
 
-    ![hyper-v.](images/svr_mgr2.png)
+    ![hyper-v](images/svr_mgr2.png)
 
     <P>If you choose to install Hyper-V using Server Manager, accept all default selections. Also be sure to install both items under <strong>Role Administration Tools\Hyper-V Management Tools</strong>.
 
@@ -449,7 +449,7 @@ Notes:<BR>
 3. Select the checkboxes next to the **C:\\** and the **system reserved** (BIOS/MBR) volumes. The system volume is not assigned a drive letter, but will be displayed in the Disk2VHD tool with a volume label similar to **\\?\Volume{**. See the following example. **Important**: You must include the system volume in order to create a bootable VHD. If this volume is not displayed in the disk2vhd tool, then the computer is likely to be using the GPT partition style. For more information, see [Determine VM generation](#determine-vm-generation).
 4. Specify a location to save the resulting VHD or VHDX file (F:\VHD\w7.vhdx in the following example) and click **Create**. See the following example:
 
-    ![disk2vhd 1.](images/disk2vhd.png)
+    ![disk2vhd 1](images/disk2vhd.png)
 
     >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
 
@@ -482,7 +482,7 @@ Notes:<BR>
 
 5. Specify a location to save the resulting VHD or VHDX file (F:\VHD\PC1.vhdx in the following example) and click **Create**. See the following example:
 
-    ![disk2vhd 2.](images/disk2vhd-gen2.png)
+    ![disk2vhd 2](images/disk2vhd-gen2.png)
 
     >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
 
@@ -506,7 +506,7 @@ Notes:<BR>
 3. Select the checkbox next to the **C:\\** volume and clear the checkbox next to **Use Vhdx**. Note: the system volume is not copied in this scenario, it will be added later.
 4. Specify a location to save the resulting VHD file (F:\VHD\w7.vhd in the following example) and click **Create**. See the following example:
 
-    ![disk2vhd 3.](images/disk2vhd4.png)
+    ![disk2vhd 3](images/disk2vhd4.png)
 
     >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
 
@@ -821,7 +821,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
 15. After signing in, the operating system detects that it is running in a new environment. New drivers will be automatically installed, including the network adapter driver. The network adapter driver must be updated before you can proceed, so that you will be able to join the contoso.com domain. Depending on the resources allocated to PC1, installing the network adapter driver might take a few minutes. You can monitor device driver installation by clicking **Show hidden icons** in the notification area.
 
-    ![PoC 1.](images/installing-drivers.png)
+    ![PoC 1](images/installing-drivers.png)
 
     >If the client was configured with a static address, you must change this to a dynamic one so that it can obtain a DHCP lease.
 
@@ -879,7 +879,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     See the following example:
 
-    ![ISE 1.](images/ISE.png)
+    ![ISE 1](images/ISE.png)
 
 19. Click **File**, click **Save As**, and save the commands as **c:\VHD\pc1.ps1** on the Hyper-V host.
 20. In the (lower) terminal input window, type the following commands to enable Guest Service Interface on PC1 and then use this service to copy the script to PC1:

@@ -97,20 +97,20 @@ Before you can remotely reset PINs, you must on-board the Microsoft PIN reset se
 
 1. After you have logged in, choose **Accept** to give consent for the PIN reset service to access your account.
 
-   ![PIN reset service application in Azure.](images/pinreset/pin-reset-service-prompt.png)
+   ![PIN reset service application in Azure](images/pinreset/pin-reset-service-prompt.png)
 
 1. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using the Global administrator account you use to manage your Azure Active Directory tenant.
 
 1. After you have logged in, choose **Accept** to give consent for the PIN reset client to access your account.
 
-   ![PIN reset client application in Azure.](images/pinreset/pin-reset-client-prompt.png)
+   ![PIN reset client application in Azure](images/pinreset/pin-reset-client-prompt.png)
 
    > [!NOTE]
    > After you have accepted the PIN reset service and client requests, you will land on a page that states "You do not have permission to view this directory or page." This behavior is expected. Be sure to confirm that the two PIN reset applications are listed for your tenant.
 
 1. In the [Azure portal](https://portal.azure.com), verify that the Microsoft PIN Reset Service and Microsoft PIN Reset Client are integrated from the **Enterprise applications** blade. Filter to application status "Enabled" and both Microsoft Pin Reset Service Production and Microsoft Pin Reset Client Production will show up in your tenant.
 
-   :::image type="content" alt-text="PIN reset service permissions page." source="images/pinreset/pin-reset-applications.png" lightbox="images/pinreset/pin-reset-applications.png":::
+   :::image type="content" alt-text="PIN reset service permissions page" source="images/pinreset/pin-reset-applications.png" lightbox="images/pinreset/pin-reset-applications.png":::
 
 ### Configure Windows devices to use PIN reset using Group Policy
 
@@ -210,7 +210,7 @@ The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-au
     - **Data type:** String
     - **Value**: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be _signin.contoso.com;portal.contoso.com_ (without quotation marks)
 
-    :::image type="content" alt-text="Custom Configuration for ConfigureWebSignInAllowedUrls policy." source="images/pinreset/allowlist.png" lightbox="images/pinreset/allowlist.png":::
+    :::image type="content" alt-text="Custom Configuration for ConfigureWebSignInAllowedUrls policy" source="images/pinreset/allowlist.png" lightbox="images/pinreset/allowlist.png":::
 
 1. Click the Save button to save the custom configuration.
 

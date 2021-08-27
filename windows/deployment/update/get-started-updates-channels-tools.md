@@ -72,12 +72,12 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 
 | Windows 10 edition | Semi-Annual Channel | Insider Program | Long-Term Servicing Channel |
 | --- | --- | --- | --- |
-| Home | ![yes.](images/checkmark.png)|![no](images/crossmark.png)    | ![no](images/crossmark.png)|
-| Pro | ![yes.](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
-| Enterprise  | ![yes.](images/checkmark.png) |![yes](images/checkmark.png)  |  ![no](images/crossmark.png)|
-| Enterprise LTSB  | ![no.](images/crossmark.png) |![no](images/crossmark.png) |   ![yes](images/checkmark.png)|
-| Pro Education | ![yes.](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
-| Education  | ![yes.](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
+| Home | ![yes](images/checkmark.png)|![no](images/crossmark.png)    | ![no](images/crossmark.png)|
+| Pro | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
+| Enterprise  | ![yes](images/checkmark.png) |![yes](images/checkmark.png)  |  ![no](images/crossmark.png)|
+| Enterprise LTSB  | ![no](images/crossmark.png) |![no](images/crossmark.png) |   ![yes](images/checkmark.png)|
+| Pro Education | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
+| Education  | ![yes](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
 
 ## Servicing tools
 

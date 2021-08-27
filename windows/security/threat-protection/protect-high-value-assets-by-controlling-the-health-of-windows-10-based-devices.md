@@ -56,13 +56,13 @@ Because mobile devices are increasingly being used to access corporate informati
 
 Devices that are used to access corporate resources must be trusted. An efficient end-to-end security approach is able to evaluate device health and use the current security state when granting access to a high-value asset.
 
-:::image type="content" alt-text="figure 1." source="images/hva-fig1-endtoend1.png":::
+:::image type="content" alt-text="figure 1" source="images/hva-fig1-endtoend1.png":::
 
 A robust design needs to establish the user’s identity, strengthen the authentication method if needed, and learn behavior like the network location the user regularly connects from. Also, a modern approach must be able to release sensitive content only if user devices are determined to be healthy and secure.
 
 The following figure shows a solution built to assess device health from the cloud. The device authenticates the user through a connection to an identity provider in the cloud. If the managed asset contains highly confidential information, the conditional access engine of the identity provider may elect to verify the security compliance of the mobile device before access is granted. The user’s device is able to prove its health status that can be sent at any time or when mobile device management (MDM) requests it.
 
-:::image type="content" alt-text="figure 2." source="images/hva-fig2-assessfromcloud2.png":::
+:::image type="content" alt-text="figure 2" source="images/hva-fig2-assessfromcloud2.png":::
 
 Windows devices can be protected from low-level rootkits and bootkits by using low-level hardware technologies such as Unified Extensible Firmware Interface (UEFI) Secure Boot.
 
@@ -94,7 +94,7 @@ In Windows 10, there are three pillars of investments:
 
 This section is an overview that describes different parts of the end-to-end security solution that helps protect high-value assets and information from attackers and malware.
 
-:::image type="content" alt-text="figure 3." source="images/hva-fig3-endtoendoverview3.png":::
+:::image type="content" alt-text="figure 3" source="images/hva-fig3-endtoendoverview3.png":::
 
 | Number | Part of the solution | Description |
 | - | - | - |
@@ -115,7 +115,7 @@ This section describes what Windows 10 offers in terms of security defenses and 
 The most aggressive forms of malware try to insert themselves into the boot process as early as possible so that they can take control of the operating system early and prevent protection mechanisms and antimalware software from working. This type of malicious code is often called a rootkit or bootkit. The best way to avoid having to deal with low-level malware is to secure the boot process so that the device is protected from the very start.
 Windows 10 supports multiple layers of boot protection. Some of these features are available only if specific types of hardware are installed. For more information, see the [Hardware requirements](#hardware-req) section.
 
-:::image type="content" alt-text="figure 4." source="images/hva-fig4-hardware.png":::
+:::image type="content" alt-text="figure 4" source="images/hva-fig4-hardware.png":::
 
 Windows 10 supports features to help prevent sophisticated low-level malware like rootkits and bootkits from loading during the startup process:
 
@@ -230,7 +230,7 @@ The following Windows 10 services are protected with virtualization-based securi
 
 The schema below is a high-level view of Windows 10 with virtualization-based security.
 
-:::image type="content" alt-text="figure 5." source="images/hva-fig5-virtualbasedsecurity.png":::
+:::image type="content" alt-text="figure 5" source="images/hva-fig5-virtualbasedsecurity.png":::
 
 ### Credential Guard
 
@@ -425,11 +425,11 @@ The antimalware software can search to determine whether the boot sequence conta
 
 Health attestation logs the measurements in various TPM Platform Configuration Registers (PCRs) and TCG logs during the boot process.
 
-:::image type="content" alt-text="figure 6." source="images/hva-fig6-logs.png":::
+:::image type="content" alt-text="figure 6" source="images/hva-fig6-logs.png":::
 
 When starting a device equipped with TPM, a measurement of different components is performed. This includes firmware, UEFI drivers, CPU microcode, and also all the Windows 10 drivers whose type is Boot Start. The raw measurements are stored in the TPM PCR registers while the details of all events (executable path, authority certification, and so on) are available in the TCG log.
 
-:::image type="content" alt-text="figure 7." source="images/hva-fig7-measurement.png":::
+:::image type="content" alt-text="figure 7" source="images/hva-fig7-measurement.png":::
 
 The health attestation process works as follows:
 
@@ -459,7 +459,7 @@ The following process describes how health boot measurements are sent to the hea
 
 4.  The client stores the health encrypted blob in its local store. The device health token contains device health status, a device ID (the Windows AIK), and the boot counter.
 
-:::image type="content" alt-text="figure 8." source="images/hva-fig8a-healthattest8a.png":::
+:::image type="content" alt-text="figure 8" source="images/hva-fig8a-healthattest8a.png":::
 
 ### Device health attestation components
 
@@ -632,7 +632,7 @@ A solution that leverages MDM and the Health Attestation Service consists of thr
 2.  After this is enabled, and every boot thereafter, the device will send health measurements to the Health Attestation Service hosted by Microsoft, and it will receive a health attestation blob in return.
 3.  At any point after this, an MDM server can request the health attestation blob from the device and ask Health Attestation Service to decrypt the content and validate that it’s been attested.
 
-    :::image type="content" alt-text="figure 9." source="images/hva-fig8-evaldevicehealth8.png":::
+    :::image type="content" alt-text="figure 9" source="images/hva-fig8-evaldevicehealth8.png":::
 
 Interaction between a Windows 10-based device, the Health Attestation Service, and MDM can be performed as follows:
 
@@ -671,7 +671,7 @@ The remote device health attestation process uses measured boot data to verify t
 
 The figure below shows how the Health Attestation Service is expected to work with Microsoft’s cloud-based Intune MDM service.
 
-:::image type="content" alt-text="figure 10." source="images/hva-fig9-intune.png":::
+:::image type="content" alt-text="figure 10" source="images/hva-fig9-intune.png":::
 
 An MDM solution can then leverage health state statements and take them to the next level by coupling with client policies that will enable conditional access to be granted based on the device’s ability to prove that it’s malware free, its antimalware system is functional and up to date, the 
 firewall is running, and the devices patch state is compliant.
@@ -705,7 +705,7 @@ If the device is not registered, the user will get a message with instructions o
 
 **Azure AD** authenticates the user and the device, **MDM** manages the compliance and conditional access policies, and the **Health Attestation Service** reports about the health of the device in an attested way.
 
-:::image type="content" alt-text="figure 11." source="images/hva-fig10-conditionalaccesscontrol.png":::
+:::image type="content" alt-text="figure 11" source="images/hva-fig10-conditionalaccesscontrol.png":::
 
 ### <a href="" id="office-365-conditional-access-control-"></a>Office 365 conditional access control
 
@@ -725,7 +725,7 @@ The user will be denied access to services when sign-in credentials are changed,
 
 Depending on the type of email application that employees use to access Exchange online, the path to establish secured access to email can be slightly different. However, the key components: Azure AD, Office 365/Exchange Online, and Intune, are the same. The IT experience and end-user experience also are similar.
 
-:::image type="content" alt-text="figure 12." source="images/hva-fig11-office365.png":::
+:::image type="content" alt-text="figure 12" source="images/hva-fig11-office365.png":::
 
 Clients that attempt to access Office 365 will be evaluated for the following properties:
 
@@ -758,7 +758,7 @@ For on-premises applications there are two options to enable conditional access 
 -   For on-premises applications that are published through the Azure AD Application Proxy, you can configure conditional access control policies as you would for cloud applications. For more details, see the [Azure AD Conditional Access preview updated: Now supports On-Premises and Custom LOB apps](https://go.microsoft.com/fwlink/p/?LinkId=691618) blog post.
 -   Additionally, Azure AD Connect will sync device compliance information from Azure AD to on-premises AD. ADFS on Windows Server 2016 will support conditional access control based on a device's compliance state. IT pros will configure conditional access control policies in ADFS that use the device's compliance state reported by a compatible MDM solution to secure on-premises applications.
 
-:::image type="content" alt-text="figure 13." source="images/hva-fig12-conditionalaccess12.png":::
+:::image type="content" alt-text="figure 13" source="images/hva-fig12-conditionalaccess12.png":::
 
 The following process describes how Azure AD conditional access works:
 

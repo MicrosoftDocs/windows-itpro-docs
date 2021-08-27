@@ -33,15 +33,15 @@ Prerequisite information about application control can be accessed through the [
 
 Once the Supplemental Policy type is chosen on the New Policy page, policy name and file dialog fields can be used to name and save the supplemental policy. The next step requires selecting a base policy to expand. To expand a base policy, the base must allow supplemental policies. The WDAC Wizard will verify if the base policy allows supplementals and will show the following confirmation. 
 
-![Base policy allows supplemental policies.](images/wdac-wizard-supplemental-expandable.png)
+![Base policy allows supplemental policies](images/wdac-wizard-supplemental-expandable.png)
 
 If the base policy is not configured for supplemental policies, the Wizard will attempt to convert the policy to one that can be supplemented. Once successful, the Wizard will show a dialog demonstrating that the addition of the Allow Supplemental Policy rule was completed.  
 
-![Wizard confirms modification of base policy.](images/wdac-wizard-confirm-base-policy-modification.png)
+![Wizard confirms modification of base policy](images/wdac-wizard-confirm-base-policy-modification.png)
 
 Policies that cannot be supplemented, for instance, a supplemental policy, will be detected by the Wizard and will show the following error. Only a base policy can be supplemented. More information on supplemental policies can be found on our [Multiple Policies article](deploy-multiple-windows-defender-application-control-policies.md).
 
-![Wizard detects a bad base policy.](images/wdac-wizard-supplemental-not-base.png)
+![Wizard detects a bad base policy](images/wdac-wizard-supplemental-not-base.png)
 
 ## Configuring Policy Rules
 
@@ -60,7 +60,7 @@ There are only three policy rules that can be configured by the supplemental pol
 | **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
 | **Disable Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. |
 
-![Rule options UI for Windows Allowed mode.](images/wdac-wizard-supplemental-policy-rule-options-UI.png)
+![Rule options UI for Windows Allowed mode](images/wdac-wizard-supplemental-policy-rule-options-UI.png)
 
 ## Creating custom file rules
 
@@ -78,7 +78,7 @@ The Publisher file rule type uses properties in the code signing certificate cha
 | **File name** | FilePublisher | Most specific. Combination of the file name, publisher, and PCA certificate and a minimum version number. Files from the publisher with the specified name and greater or equal to the specified version are affected. |
 
 
-![Custom filepublisher file rule creation.](images/wdac-wizard-custom-publisher-rule.png)
+![Custom filepublisher file rule creation](images/wdac-wizard-custom-publisher-rule.png)
 
 ### Filepath Rules
 
@@ -96,7 +96,7 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 | **Internal name** | Specifies the internal name of the binary. |
 
 
-![Custom file attributes rule.](images/wdac-wizard-custom-file-attribute-rule.png)
+![Custom file attributes rule](images/wdac-wizard-custom-file-attribute-rule.png)
 
 ### File Hash Rules
 

@@ -25,7 +25,7 @@ The DM client is configured during the enrollment process to be invoked by the t
 
 The following diagram shows the work flow between server and client.
 
-![windows client and server mdm diagram.](images/enterprise-workflow.png)
+![windows client and server mdm diagram](images/enterprise-workflow.png)
 
 
 ## Management workflow

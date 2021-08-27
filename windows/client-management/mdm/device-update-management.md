@@ -42,7 +42,7 @@ For more information about the CSPs, see [Update CSP](update-csp.md) and the upd
 
 The following diagram provides a conceptual overview of how this works:
 
-![mobile device update management.](images/mdm-update-sync.png)
+![mobile device update management](images/mdm-update-sync.png)
 
 The diagram can be roughly divided into three areas:
 
@@ -56,7 +56,7 @@ The Microsoft Update Catalog is huge and contains many updates that are not need
 
 This section describes how this is done. The following diagram shows the server-server sync protocol process.
 
-![mdm server-server sync.](images/deviceupdateprocess2.png)
+![mdm server-server sync](images/deviceupdateprocess2.png)
 
 MSDN provides much information about the Server-Server sync protocol. In particular:
 
@@ -140,7 +140,7 @@ The enterprise IT can configure auto-update polices via OMA DM using the [Policy
 
 The following diagram shows the Update policies in a tree format.
 
-![update policies.](images/update-policies.png)
+![update policies](images/update-policies.png)
 
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**
 > [!NOTE]
@@ -676,7 +676,7 @@ Example
 
 The enterprise IT can configure the set of approved updates and get compliance status via OMA DM using the [Update CSP](update-csp.md). The following diagram shows the Update CSP in tree format..
 
-![provisioning csp update.](images/provisioning-csp-update.png)
+![provisioning csp update](images/provisioning-csp-update.png)
 
 <a href="" id="update"></a>**Update**
 The root node.
@@ -889,9 +889,9 @@ Here is the list of older policies that are still supported for backward compati
 
 The following screenshots of the administrator console show the list of update titles, approval status, and additional metadata fields.
 
-![mdm update management screenshot.](images/deviceupdatescreenshot1.png)
+![mdm update management screenshot](images/deviceupdatescreenshot1.png)
 
-![mdm update management metadata screenshot.](images/deviceupdatescreenshot2.png)
+![mdm update management metadata screenshot](images/deviceupdatescreenshot2.png)
 
 
 ## <a href="" id="syncmlexample"></a>SyncML example
@@ -945,5 +945,5 @@ Set auto update to notify and defer.
 
 The following diagram and screenshots show the process flow of the device update process using Windows Server Update Services and Microsoft Update Catalog.
 
-![mdm device update management screenshot3.](images/deviceupdatescreenshot3.png)![mdm device update management screenshot4](images/deviceupdatescreenshot4.png)![mdm device update management screenshot5](images/deviceupdatescreenshot5.png)![mdm device update management screenshot6](images/deviceupdatescreenshot6.png)![mdm device update management screenshot7](images/deviceupdatescreenshot7.png)![mdm device update management screenshot8](images/deviceupdatescreenshot8.png)![mdm device update management screenshot9](images/deviceupdatescreenshot9.png)
+![mdm device update management screenshot3](images/deviceupdatescreenshot3.png)![mdm device update management screenshot4](images/deviceupdatescreenshot4.png)![mdm device update management screenshot5](images/deviceupdatescreenshot5.png)![mdm device update management screenshot6](images/deviceupdatescreenshot6.png)![mdm device update management screenshot7](images/deviceupdatescreenshot7.png)![mdm device update management screenshot8](images/deviceupdatescreenshot8.png)![mdm device update management screenshot9](images/deviceupdatescreenshot9.png)
 

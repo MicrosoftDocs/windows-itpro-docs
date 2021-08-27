@@ -83,19 +83,19 @@ A Windows Update for Business administrator can defer or pause updates. You can 
 
 In this example, there are three rings for quality updates. The first ring ("pilot") has a deferral period of 0 days. The second ring ("fast") has a deferral of five days. The third ring ("slow") has a deferral of ten days.
 
-![illustration of devices divided into three rings.](images/waas-wufb-3-rings.png)
+![illustration of devices divided into three rings](images/waas-wufb-3-rings.png)
 
 When the quality update is released, it is offered to devices in the pilot ring the next time they scan for updates.
 
 ##### Five days later
 The devices in the fast ring are offered the quality update the next time they scan for updates.
 
-![illustration of devices with fast ring deployed.](images/waas-wufb-fast-ring.png)
+![illustration of devices with fast ring deployed](images/waas-wufb-fast-ring.png)
 
 ##### Ten days later
 Ten days after the quality update is released, it is offered to the devices in the slow ring the next time they scan for updates.
 
-![illustration of devices with slow ring deployed.](images/waas-wufb-slow-ring.png)
+![illustration of devices with slow ring deployed](images/waas-wufb-slow-ring.png)
 
 If no problems occur, all of the devices that scan for updates will be offered the quality update within ten days of its release, in three waves.
 
@@ -103,11 +103,11 @@ If no problems occur, all of the devices that scan for updates will be offered t
 
 In this example, some problem is discovered during the deployment of the update to the "pilot" ring.
 
-![illustration of devices divided with pilot ring experiencing a problem.](images/waas-wufb-pilot-problem.png)
+![illustration of devices divided with pilot ring experiencing a problem](images/waas-wufb-pilot-problem.png)
 
 At this point, the IT administrator can set a policy to pause the update. In this example, the admin selects the **Pause quality updates** check box.
 
-![illustration of rings with pause quality update check box selected.](images/waas-wufb-pause.png)
+![illustration of rings with pause quality update check box selected](images/waas-wufb-pause.png)
 
 Now all devices are paused from updating for 35 days. When the pause is removed, they will be offered the *next* quality update, which ideally will not have the same issue. If there is still an issue, the IT admin can pause updates again.
 
@@ -150,21 +150,21 @@ When **Specify deadlines for automatic updates and restarts** is set (For Window
 
    - After this period, the user receives this dialog:
 
-     ![The notification users get for an impending restart prior to deadline.](images/wufb-update-deadline-warning.png)
+     ![The notification users get for an impending restart prior to deadline](images/wufb-update-deadline-warning.png)
 
    - If the user scheduled a restart, or if an auto restart is scheduled, 15 minutes before the scheduled time the user is receives this notification that the restart is about to occur:
 
-     ![The notification users get for an impending restart 15 minutes prior to restart.](images/wufb-restart-imminent-warning.png)
+     ![The notification users get for an impending restart 15 minutes prior to restart](images/wufb-restart-imminent-warning.png)
 
  - **If the restart is still pending after the deadline passes:**
  
    - Within 12 hours before the deadline passes, the user receives this notification that the deadline is approaching:
 
-     ![The notification users get for an approaching restart deadline.](images/wufb-pastdeadline-restart-warning.png)
+     ![The notification users get for an approaching restart deadline](images/wufb-pastdeadline-restart-warning.png)
 
    - Once the deadline has passed, the user is forced to restart to keep their devices in compliance and receives this notification:
 
-     ![The notification users get for an imminent restart after the deadline.](images/wufb-pastdeadline-restartnow.png)
+     ![The notification users get for an imminent restart after the deadline](images/wufb-pastdeadline-restartnow.png)
 
 #### I want to manage the notifications a user sees
 

@@ -29,7 +29,7 @@ When you set up Windows Hello in Windows 10, you may get an error during the **
 
 The following image shows an example of an error during **Create a PIN**.
 
-![PIN error.](images/pinerror.png)
+![PIN error](images/pinerror.png)
 
 ## Error mitigations
 

@@ -24,35 +24,35 @@ To get the EAP configuration from your desktop using the rasphone tool that is s
 
 1.  Run rasphone.exe.
 
-    ![vpnv2 rasphone.](images/vpnv2-csp-rasphone.png)
+    ![vpnv2 rasphone](images/vpnv2-csp-rasphone.png)
 
 1.  If you don't currently have a VPN connection and you see the following message, select **OK**.
 
-    ![vpnv2 csp network connections.](images/vpnv2-csp-networkconnections.png)
+    ![vpnv2 csp network connections](images/vpnv2-csp-networkconnections.png)
 
 1.  In the wizard, select **Workplace network**.
 
-    ![vpnv2 csp set up connection.](images/vpnv2-csp-setupnewconnection.png)
+    ![vpnv2 csp set up connection](images/vpnv2-csp-setupnewconnection.png)
 
 1.  Enter an Internet address and connection name. These can be fake since it does not impact the authentication parameters.
 
-    ![vpnv2 csp set up connection 2.](images/vpnv2-csp-setupnewconnection2.png)
+    ![vpnv2 csp set up connection 2](images/vpnv2-csp-setupnewconnection2.png)
 
 1.  Create a fake VPN connection. In the UI shown here, select **Properties**.
 
-    ![vpnv2 csp choose nw connection.](images/vpnv2-csp-choosenetworkconnection.png)
+    ![vpnv2 csp choose nw connection](images/vpnv2-csp-choosenetworkconnection.png)
 
 1.  In the **Test Properties** dialog, select the **Security** tab.
 
-    ![vpnv2 csp test props.](images/vpnv2-csp-testproperties.png)
+    ![vpnv2 csp test props](images/vpnv2-csp-testproperties.png)
 
 1.  On the **Security** tab, select **Use Extensible Authentication Protocol (EAP)**.
 
-    ![vpnv2 csp test props2.](images/vpnv2-csp-testproperties2.png)
+    ![vpnv2 csp test props2](images/vpnv2-csp-testproperties2.png)
 
 1.  From the drop-down menu, select the EAP method that you want to configure, and then select **Properties** to configure as needed.
 
-    ![vpnv2 csp test props3.](images/vpnv2-csp-testproperties3.png)![vpnv2 csp test props4](images/vpnv2-csp-testproperties4.png)
+    ![vpnv2 csp test props3](images/vpnv2-csp-testproperties3.png)![vpnv2 csp test props4](images/vpnv2-csp-testproperties4.png)
 
 1.  Switch over to PowerShell and use the following cmdlets to retrieve the EAP configuration XML.
 
@@ -267,7 +267,7 @@ Alternatively, you can use the following procedure to create an EAP configuratio
 1.  Follow steps 1 through 7 in the EAP configuration article.
 1.  In the **Microsoft VPN SelfHost Properties** dialog box, select **Microsoft: Smart Card or other Certificate** from the drop-down menu (this selects EAP TLS).
 
-    ![vpn self host properties window.](images/certfiltering1.png)
+    ![vpn self host properties window](images/certfiltering1.png)
 
     > [!NOTE]
     > For PEAP or TTLS, select the appropriate method and continue following this procedure.
@@ -277,11 +277,11 @@ Alternatively, you can use the following procedure to create an EAP configuratio
 1.  Select the **Properties** button underneath the drop-down menu.
 1.  On the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
 
-    ![smart card or other certificate properties window.](images/certfiltering2.png)
+    ![smart card or other certificate properties window](images/certfiltering2.png)
 
 1.  On the **Configure Certificate Selection** menu, adjust the filters as needed.
 
-    ![configure certificate window.](images/certfiltering3.png)
+    ![configure certificate window](images/certfiltering3.png)
 
 1.  Select **OK** to close the windows and get back to the main rasphone.exe dialog box.
 1.  Close the rasphone dialog box.
