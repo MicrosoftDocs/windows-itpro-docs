@@ -54,7 +54,7 @@ Disable removable media. |     Go to **Group Policy Editor** &gt; **Computer Con
 
 Logs can help you [troubleshoot issues](./kiosk-troubleshoot.md) kiosk issues. Logs about configuration and runtime issues can be obtained by enabling the **Applications and Services Logs\Microsoft\Windows\AssignedAccess\Operational** channel, which is disabled by default.
 
-![Event Viewer, right-click Operational, select enable log](images/enable-assigned-access-log.png)
+![Event Viewer, right-click Operational, select enable log.](images/enable-assigned-access-log.png)
 
 ## Automatic logon
 
@@ -257,7 +257,7 @@ A single-app kiosk configuration runs an app above the lock screen. It doesn't w
 
 When you connect to a VM configured as a single-app kiosk, you need a *basic* session rather than an enhanced session. In the following image, notice that **Enhanced session** is not selected in the **View** menu; that means it's a basic session.
 
-![VM windows, View menu, Extended session is not selected](images/vm-kiosk.png)
+![VM windows, View menu, Extended session is not selected.](images/vm-kiosk.png)
 
 To connect to a VM in a basic session, do not select **Connect** in the connection dialog, as shown in the following image, but instead, select the **X** button in the upper-right corner to cancel the dialog. 
 

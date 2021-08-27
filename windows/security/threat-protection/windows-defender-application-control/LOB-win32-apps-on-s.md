@@ -37,7 +37,7 @@ Refer to the below video for an overview and brief demo.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mlcp]
 
 ## Policy Authorization Process
-![Policy Authorization](images/wdac-intune-policy-authorization.png)
+![Policy Authorization.](images/wdac-intune-policy-authorization.png)
 The general steps for expanding the S mode base policy on your Intune-managed devices are to generate a supplemental policy, sign that policy, and then upload the signed policy to Intune and assign it to user or device groups. Because you need access to WDAC PowerShell cmdlets to generate your supplemental policy, you should create and manage your policies on a non-S mode device. Once the policy has been uploaded to Intune, we recommend assigning it to a single test S-mode device to verify expected functioning before deploying the policy more broadly.
 
 1. Generate a supplemental policy with WDAC tooling
@@ -89,11 +89,11 @@ The general steps for expanding the S mode base policy on your Intune-managed de
 > When updating your supplemental policy, ensure that the new version number is strictly greater than the previous one. Using the same version number is not allowed by Intune. Refer to [Set-CIPolicyVersion](/powershell/module/configci/set-cipolicyversion?view=win10-ps&preserve-view=true) for information on setting the version number.
 
 ## Standard Process for Deploying Apps through Intune
-![Deploying Apps through Intune](images/wdac-intune-app-deployment.png)
+![Deploying Apps through Intune.](images/wdac-intune-app-deployment.png)
 Refer to [Intune Standalone - Win32 app management](/intune/apps-win32-app-management)  for guidance on the existing procedure of packaging signed catalogs and app deployment.
 
 ## Optional: Process for Deploying Apps using Catalogs
-![Deploying Apps using Catalogs](images/wdac-intune-app-catalogs.png)
+![Deploying Apps using Catalogs.](images/wdac-intune-app-catalogs.png)
 Your supplemental policy can be used to significantly relax the S mode base policy, but there are security trade-offs you must consider in doing so. For example, you can use a signer rule to trust an external signer, but that will authorize all apps signed by that certificate, which may include apps you don't want to allow as well.
 
 Instead of authorizing signers external to your organization, Intune has added new functionality to make it easier to authorize existing applications (without requiring repackaging or access to the source code) through the use of signed catalogs. This works for apps which may be unsigned or even signed apps when you don't want to trust all apps that may share the same signing certificate.

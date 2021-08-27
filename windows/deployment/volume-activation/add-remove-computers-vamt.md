@@ -34,7 +34,7 @@ Before adding computers, ensure that the Windows Management Instrumentation (WMI
 5.  VAMT searches for the specified computers and adds them to the VAMT database. During the search, VAMT displays the **Finding computers** message shown below.
     To cancel the search, click **Cancel**. When the search is complete the names of the newly-discovered computers appear in the product list view in the center pane.
     
-    ![VAMT, Finding computers dialog box](images/dep-win8-l-vamt-findingcomputerdialog.gif)
+    ![VAMT, Finding computers dialog box.](images/dep-win8-l-vamt-findingcomputerdialog.gif)
     
     **Important**  
     This step adds only the computers to the VAMT database, and not the products that are installed on the computers. To add the products, you need to run the **Update license status** function.

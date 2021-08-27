@@ -59,7 +59,7 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 
 The following image shows the interface to configure traffic rules in a VPN Profile configuration policy, using Microsoft Intune.
 
-![Add a traffic rule](images/vpn-traffic-rules.png)
+![Add a traffic rule.](images/vpn-traffic-rules.png)
 
 
 ## LockDown VPN

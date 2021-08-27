@@ -24,7 +24,7 @@ ms.topic: article
 
 A single-app kiosk uses the Assigned Access feature to run a single app above the lockscreen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk cannot do anything on the device outside of the kiosk app.
 
-![Illustration of a single-app kiosk experience](images/kiosk-fullscreen-sm.png)
+![Illustration of a single-app kiosk experience.](images/kiosk-fullscreen-sm.png)
 
 >[!IMPORTANT]
 >[User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
@@ -66,7 +66,7 @@ When your kiosk is a local device that is not managed by Active Directory or Azu
 
 - If you do not want the kiosk account signed in automatically when the device restarts, you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account, go to **Settings** > **Accounts** > **Sign-in options**, and toggle the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
 
-![Screenshot of automatic sign-in setting](images/auto-signin.png)
+![Screenshot of automatic sign-in setting.](images/auto-signin.png)
 
 ### Instructions for Windows 10, version 1809
 
@@ -98,7 +98,7 @@ To remove assigned access, select the account tile on the **Set up a kiosk** pag
 
 When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows 10, version 1803 and earlier, you must select an existing local standard user account. [Learn how to create a local standard user account.](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10)
 
-![The Set up assigned access page in Settings](images/kiosk-settings.png)
+![The Set up assigned access page in Settings.](images/kiosk-settings.png)
 
 **To set up assigned access in PC settings**
 
@@ -131,7 +131,7 @@ To remove assigned access, choose **Turn off assigned access and sign out of the
 >
 >Account type: Local standard user
 
-![PowerShell windows displaying Set-AssignedAccess cmdlet](images/set-assignedaccess.png)
+![PowerShell windows displaying Set-AssignedAccess cmdlet.](images/set-assignedaccess.png)
 
 You can use any of the following PowerShell cmdlets to set up assigned access on multiple devices. 
 
@@ -191,7 +191,7 @@ Clear-AssignedAccess
 >
 >Account type: Local standard user, Active Directory 
 
-![Kiosk wizard option in Windows Configuration Designer](images/kiosk-wizard.png)
+![Kiosk wizard option in Windows Configuration Designer.](images/kiosk-wizard.png)
 
 
 >[!IMPORTANT]

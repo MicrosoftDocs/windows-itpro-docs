@@ -39,7 +39,7 @@ ECDSA is not supported.
 
 2.  When connected, right-click **Certificate Templates**, and then click **Manage** to open the Certification Templates Console.
 
-    ![CA snap-in showing Certificate Templates](images/dg-fig27-managecerttemp.png)
+    ![CA snap-in showing Certificate Templates.](images/dg-fig27-managecerttemp.png)
 
     Figure 1. Manage the certificate templates
 
@@ -55,7 +55,7 @@ ECDSA is not supported.
 
 8.  In the **Edit Basic Constraints Extension** dialog box, select **Enable this extension**, as shown in Figure 2.
 
-    ![Edit Basic Constraints Extension](images/dg-fig29-enableconstraints.png)
+    ![Edit Basic Constraints Extension.](images/dg-fig29-enableconstraints.png)
 
     Figure 2. Select constraints on the new template
 
@@ -71,7 +71,7 @@ When this certificate template has been created, you must publish it to the CA p
 
 1.  In the Certification Authority MMC snap-in, right-click **Certification Templates**, point to **New**, and then click **Certificate Template to Issue**, as shown in Figure 3.
 
-    ![Select Certificate Template to Issue](images/dg-fig30-selectnewcert.png)
+    ![Select Certificate Template to Issue.](images/dg-fig30-selectnewcert.png)
 
     Figure 3. Select the new certificate template to issue
 
@@ -89,7 +89,7 @@ Now that the template is available to be issued, you must request one from the c
 
 4.  In the **Request Certificate** list, select your newly created code signing certificate, and then select the blue text that requests additional information, as shown in Figure 4.
 
-    ![Request Certificates: more information required](images/dg-fig31-getmoreinfo.png)
+    ![Request Certificates: more information required.](images/dg-fig31-getmoreinfo.png)
 
     Figure 4. Get more information for your code signing certificate
 

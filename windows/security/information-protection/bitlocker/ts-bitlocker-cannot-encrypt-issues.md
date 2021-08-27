@@ -82,11 +82,11 @@ To verify that this issue has occurred, follow these steps:
 
 1. Copy this output, and use it as part of the [**ConvertFrom-SddlString**](/powershell/module/microsoft.powershell.utility/convertfrom-sddlstring?view=powershell-6) command in the PowerShell window, as follows.
 
-   ![Output of the ConvertFrom-SddlString command, showing NT AUTHORITY\\INTERACTIVE](./images/ts-bitlocker-usb-sddl.png)
+   ![Output of the ConvertFrom-SddlString command, showing NT AUTHORITY\\INTERACTIVE.](./images/ts-bitlocker-usb-sddl.png)
 
    If you see NT AUTHORITY\INTERACTIVE (as highlighted), in the output of this command, this is the cause of the issue. Under typical conditions, the output should resemble the following:
 
-   ![Output of the ConvertFrom-SddlString command, showing NT AUTHORITY\\Authenticated Users](./images/ts-bitlocker-usb-default-sddl.png)
+   ![Output of the ConvertFrom-SddlString command, showing NT AUTHORITY\\Authenticated Users.](./images/ts-bitlocker-usb-default-sddl.png)
 
 > [!NOTE]
 > GPOs that change the security descriptors of services have been known to cause this issue.
