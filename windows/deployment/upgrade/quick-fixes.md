@@ -39,7 +39,6 @@ The Microsoft Virtual Agent provided by [Microsoft Support](https://support.micr
 <li>Check the system drive for errors and attempt repairs. <a href="#repair-the-system-drive" data-raw-source="[More information](#repair-the-system-drive)">More information</a>.</li>
 <li>Run the Windows Update troubleshooter. <a href="#windows-update-troubleshooter" data-raw-source="[More information](#windows-update-troubleshooter)">More information</a>.</li>
 <li>Attempt to restore and repair system files. <a href="#repair-system-files" data-raw-source="[More information](#repair-system-files)">More information</a>.</li>
-<li>Check for unsigned drivers and update or repair them. <a href="#repair-unsigned-drivers" data-raw-source="[More information](#repair-unsigned-drivers)">More information</a>.</li>
 <li>Update Windows so that all available recommended updates are installed, and ensure the computer is rebooted if this is necessary to complete installation of an update. <a href="#update-windows" data-raw-source="[More information](#update-windows)">More information</a>.</li>
 <li>Temporarily uninstall non-Microsoft antivirus software.
   <a href="#uninstall-non-microsoft-antivirus-software" data-raw-source="[More information](#uninstall-non-microsoft-antivirus-software)">More information</a>.</li>
@@ -155,76 +154,6 @@ To check and repair system files:
     ```
     > [!NOTE] 
     > It may take several minutes for the command operations to be completed. For more information, see [Repair a Windows Image](/windows-hardware/manufacture/desktop/repair-a-windows-image) and [Use the System File Checker tool](https://support.microsoft.com/help/929833/use-the-system-file-checker-tool-to-repair-missing-or-corrupted-system).
-
-
-### Repair unsigned drivers
-
-[Drivers](/windows-hardware/drivers/gettingstarted/what-is-a-driver-) are files ending in *.dll or *.sys that are used to communicate with hardware components.  Because drivers are so important, they are cryptographically signed to ensure they are genuine. Drivers with a *.sys extension that are not properly signed frequently block the upgrade process. Drivers might not be properly signed if you:
-- Disabled driver signature verification (highly not recommended).
-- A catalog file used to sign a driver is corrupt or missing.
-
- Catalog files (files with a *.cat extension) are used to sign drivers. If a catalog file is corrupt or missing, the driver will appear to be unsigned, even though it should be signed. To restore the catalog file, reinstall the driver or copy the catalog file from another device. You might need to analyze another device to determine the catalog file that is associated with the unsigned driver.  All drivers should be signed to ensure the upgrade process works.
-
-To check your system for unsigned drivers:
-
-1. Click **Start**.
-2. Type **command**.
-3. Right-click **Command Prompt** and then left-click **Run as administrator**.
-4. If you are prompted by UAC, click **Yes**.
-5. Type **sigverif** and press ENTER. 
-6. The File Signature Verification tool will open. Click **Start**.
-
-    ![File Signature Verification.](../images/sigverif.png)
-
-7. After the scanning process is complete, if you see **Your files have been scanned and verified as digitally signed** then you have no unsigned drivers. Otherwise, you will see **The following files have not been digitally signed** and a list will be provided with name, location, and version of all unsigned drivers.
-8. To view and save a log file, click **Advanced**, and then click **View Log**. Save the log file if desired.
-9. Locate drivers in the log file that are unsigned, write down the location and file names. Also write down the catalog that is associated to the driver if it is provided. If the name of a catalog file is not provided you might need to analyze another device that has the same driver with sigverif and sigcheck (described below).
-10. The next step is to check that the driver reported as unsigned by sigverif.exe has a problem. In some cases, sigverif.exe might not be successful at locating the catalog file used to sign a driver, even though the catalog file exists. To perform a detailed driver check, download [sigcheck.zip](https://download.sysinternals.com/files/Sigcheck.zip) and extract the tool to a directory on your computer, for example: **C:\sigcheck**.
-
-    [Sigcheck](/sysinternals/downloads/sigcheck) is a tool that you can download and use to review digital signature details of a file. To use sigcheck:
-
-11. In the command window, use the **cd** command to switch to the directory where you extracted sigcheck, for example **cd c:\sigcheck**.
-12. Using the list of unsigned drivers and their associated paths that you obtained from the File Signature Verification tool, run sigcheck to obtain details about the driver, including the catalog file used for signing. Type **sigcheck64 -i \<driver path\>** and press ENTER (or sigcheck -i for a 32 bit OS). See the following example:
-    ```
-    C:\Sigcheck>sigcheck64.exe -i c:\windows\system32\drivers\afd.sys
-    
-    Sigcheck v2.80 - File version and signature viewer
-    Copyright (C) 2004-2020 Mark Russinovich
-    Sysinternals - www.sysinternals.com
-
-    c:\windows\system32\drivers\afd.sys:
-	    Verified:	Signed
-	    Signing date:	6:18 PM 11/29/2017
-	    Signing date:	6:18 PM 11/29/2017
-	    Catalog:	C:\Windows\system32\CatRoot\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\Package_163_for_KB4054518~31bf3856ad364e35~x86~~6.1.1.2.cat
-	    Signers:
-	       Microsoft Windows
-		    Cert Status:	This certificate or one of the certificates in the certificate chain is not time valid.
-		    Valid Usage:	NT5 Crypto, Code Signing
-		    Cert Issuer:	Microsoft Windows Verification PCA
-		    Serial Number:	33 00 00 00 4B 76 63 2D 24 A2 39 9A 8B 00 01 00 00 00 4B
-		    Thumbprint:	B8037C46D0DB7A8CEE502407469B0EE3234D3365
-		    Algorithm:	sha1RSA
-		    Valid from:	11:46 AM 3/1/2017
-		    Valid to:	11:46 AM 5/9/2018
-            (output truncated)
-    ```
-    In the example above, the afd.sys driver is properly signed by the catalog file Package_163_for_KB4054518~31bf3856ad364e35~x86~~6.1.1.2.cat. 
-
-
-13. Optionally, you can generate a list of drivers using driverquery.exe, which is included with Windows. To save a list of signed and unsigned drivers with driverquery, type **driverquery /si > c:\drivers.txt** and press ENTER. See the following example:
-
-    ```cmd
-    C:\>Driverquery /si
-    
-    DeviceName                     InfName       IsSigned Manufacturer             
-    ============================== ============= ======== =========================
-    Microsoft ISATAP Adapter       nettun.inf    TRUE     Microsoft                
-    Generic volume shadow copy     volsnap.inf   TRUE     Microsoft                
-    Generic volume                 volume.inf    TRUE     Microsoft                
-    (truncated)               
-    ```
-    For more information about using driverquery, see [Two Minute Drill: DriverQuery.exe](https://techcommunity.microsoft.com/t5/ask-the-performance-team/two-minute-drill-driverquery-exe/ba-p/374977) and [driverquery](/windows-server/administration/windows-commands/driverquery).
 
 ### Update Windows
 
