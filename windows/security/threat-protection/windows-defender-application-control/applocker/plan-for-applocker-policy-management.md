@@ -138,7 +138,7 @@ The three key areas to determine for AppLocker policy management are:
 
 The following table contains the added sample data that was collected when determining how to maintain and manage AppLocker policies.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="11%" />
 <col width="11%" />
