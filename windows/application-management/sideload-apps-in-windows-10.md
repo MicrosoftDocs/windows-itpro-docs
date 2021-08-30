@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 08/25/2021
+ms.date: 08/30/2021
 ms.localizationpriority: medium
 ---
 
@@ -74,8 +74,8 @@ For more information, see [Enable your device for development](/windows/apps/get
 
 If you use Group Policy, use the `Computer Configuration\Administrative Templates\Windows Components\App Package Deployment` policies to enable or prevent sideloading apps:
 
-- Allows development of Windows Store apps and installing them from an integrated development environment (IDE)
-- Allow all trusted apps to install
+- `Allows development of Windows Store apps and installing them from an integrated development environment (IDE)`
+- `Allow all trusted apps to install`
 
 By default, the OS might set these policies to **Not configured**, which means app sideloading is turned off. If you set these policies to **Enabled**, then users can sideload apps.
 

@@ -8,7 +8,7 @@ ms.pagetype: article
 ms.author: mandia
 author: MandiOhlinger
 ms.localizationpriority: medium
-ms.date: 08/25/2021
+ms.date: 08/30/2021
 ms.reviewer: 
 manager: dougeby
 ms.topic: article
@@ -70,5 +70,5 @@ Microsoft Intune can also execute Windows PowerShell scripts. For more informati
 
 ## Restore Windows features
 
-- If you use Group Policy or MDM to hide Windows Features or the entire Apps feature, you can set the policy to **Not configured**. Then, deploy your policy. When the device receives the policy, the features are shown.
+- If you use Group Policy or MDM to hide Windows Features or the entire Apps feature, you can set the policy to **Not configured**. Then, deploy your policy. When the device receives the policy, the features are configurable.
 - Using Windows PowerShell, you can also enable specific features using the [Enable-WindowsOptionalFeature](/powershell/module/dism/enable-windowsoptionalfeature) command.

@@ -61,7 +61,7 @@ There are different types of apps that can run on your Windows client devices. T
 
   Web apps are typically created in Visual Studio, and can be created with different languages. For more information, see [Create a Web App](https://azure.microsoft.com/get-started/web-app/). When the app is created and ready to be used, you deploy the web app to a web server. Using Azure, you can host your web apps in the cloud, instead of on-premises. For more information, see [App Service overview](/azure/app-service/overview).
 
-  Use an MDM provider, you can create shortcuts to your web apps and progressive web apps on devices.
+  Using an MDM provider, you can create shortcuts to your web apps and progressive web apps on devices.
 
 - **Win32 apps**: These apps are traditional Windows apps that run on the device, and are often called desktop apps. They require direct access to Windows and the device hardware, and typically don't require a web browser. These apps run in 32-bit mode on 64-bit devices, and don't depend on a managed runtime environment, like .NET.
 
