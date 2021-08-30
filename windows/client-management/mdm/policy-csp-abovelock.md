@@ -50,15 +50,15 @@ manager: dansimp
 </tr>
 <tr>
     <td>Pro</td>
-    <td>Yes, starting in Windows 10, version 1903</td><td>Yes</td>
+    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td>Yes, starting in Windows 10, version 1903</td><td>Yes</td>
+    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td>Yes, starting in Windows 10, version 1903</td><td>Yes</td>
+    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
 
 </table>
 
@@ -109,24 +109,19 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td><td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
+    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
 </table>
 
 <!--/SupportedSKUs-->
