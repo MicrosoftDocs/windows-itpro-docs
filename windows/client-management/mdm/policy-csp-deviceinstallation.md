@@ -129,7 +129,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow installation of devices that match any of these device IDs*
+-   GP Friendly name: *Allow installation of devices that match any of these device IDs*
 -   GP name: *DeviceInstall_IDs_Allow*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -253,7 +253,7 @@ Peripherals can be specified by their [device instance ID](/windows-hardware/dri
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow installation of devices that match any of these device instance IDs*
+-   GP Friendly name: *Allow installation of devices that match any of these device instance IDs*
 -   GP name: *DeviceInstall_Instance_IDs_Allow*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -376,7 +376,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow installation of devices using drivers that match these device setup classes*
+-   GP Friendly name: *Allow installation of devices using drivers that match these device setup classes*
 -   GP name: *DeviceInstall_Classes_Allow*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -509,7 +509,7 @@ If you disable or do not configure this policy setting, the default evaluation i
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria*
+-   GP Friendly name: *Apply layered order of evaluation for Allow and Prevent device installation policies across all device match criteria*
 -   GP name: *DeviceInstall_Allow_Deny_Layered*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -549,7 +549,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 ```
 You can also change the evaluation order of device installation policy settings by using a custom profile in Intune.
 
-:::image type="content" source="images/edit-row.png" alt-text="This is a edit row image":::
+:::image type="content" source="images/edit-row.png" alt-text="This is a edit row image.":::
 
 <!--/Example-->
 <!--Validation-->
@@ -618,7 +618,7 @@ If you disable or do not configure this policy setting, the setting in the Devic
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent device metadata retrieval from the Internet*
+-   GP Friendly name: *Prevent device metadata retrieval from the Internet*
 -   GP name: *DeviceMetadata_PreventDeviceMetadataFromNetwork*
 -   GP path: *System/Device Installation*
 -   GP ADMX file name: *DeviceSetup.admx*
@@ -700,7 +700,7 @@ If you disable or do not configure this policy setting, Windows is allowed to in
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent installation of devices not described by other policy settings*
+-   GP Friendly name: *Prevent installation of devices not described by other policy settings*
 -   GP name: *DeviceInstall_Unspecified_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -743,7 +743,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 
 You can also block installation by using a custom profile in Intune. 
 
-![Custom profile prevent devices](images/custom-profile-prevent-other-devices.png)
+![Custom profile prevent devices.](images/custom-profile-prevent-other-devices.png)
 <!--/Example-->
 <!--Validation-->
 
@@ -817,7 +817,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent installation of devices that match any of these device IDs*
+-   GP Friendly name: *Prevent installation of devices that match any of these device IDs*
 -   GP name: *DeviceInstall_IDs_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -863,7 +863,7 @@ You can also block installation and usage of prohibited peripherals by using a c
 
 For example, this custom profile blocks installation and usage of USB devices with hardware IDs "USB\Composite" and "USB\Class_FF", and applies to USB devices with matching hardware IDs that are already installed.
 
-![Custom profile prevent device ids](images/custom-profile-prevent-device-ids.png)
+![Custom profile prevent device ids.](images/custom-profile-prevent-device-ids.png)
 <!--/Example-->
 <!--Validation-->
 
@@ -934,7 +934,7 @@ Peripherals can be specified by their [device instance ID](/windows-hardware/dri
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent installation of devices that match any of these device instance IDs*
+-   GP Friendly name: *Prevent installation of devices that match any of these device instance IDs*
 -   GP name: *DeviceInstall_Instance_IDs_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*
@@ -977,7 +977,7 @@ You can also block installation and usage of prohibited peripherals by using a c
 
 For example, this custom profile prevents installation of devices with matching device instance IDs.
 
-![Custom profile](images/custom-profile-prevent-device-instance-ids.png)
+![Custom profile.](images/custom-profile-prevent-device-instance-ids.png)
 
 To prevent installation of devices with matching device instance IDs by using custom profile in Intune:
 1. Locate the device instance ID.
@@ -1064,7 +1064,7 @@ Peripherals can be specified by their [hardware identity](/windows-hardware/driv
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent installation of devices using drivers that match these device setup classes*
+-   GP Friendly name: *Prevent installation of devices using drivers that match these device setup classes*
 -   GP name: *DeviceInstall_Classes_Deny*
 -   GP path: *System/Device Installation/Device Installation Restrictions*
 -   GP ADMX file name: *deviceinstallation.admx*

@@ -7,6 +7,8 @@ metadata:
   title: Windows security # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Learn about Windows security # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page # Required
+  ms.topic: hub-page # Required
+  ms.prod: windows
   ms.collection: m365-security-compliance
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.

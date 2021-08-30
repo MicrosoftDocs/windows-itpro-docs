@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/14/2020
+ms.date: 08/26/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -62,7 +62,7 @@ manager: dansimp
     <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
   </dd>
  <dd>
-    <a href="#system-allowwufbcloudprocessing">System/AllowWuFBCloudProcessing</a>
+    <a href="#system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a>
   </dd>
   <dd>
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
@@ -158,7 +158,7 @@ If you enable or do not configure this policy setting, users can download and in
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Toggle user control over Insider builds*
+-   GP Friendly name: *Toggle user control over Insider builds*
 -   GP name: *AllowBuildPreview*
 -   GP path: *Data Collection and Preview Builds*
 -   GP ADMX file name: *AllowBuildPreview.admx*
@@ -234,7 +234,7 @@ See the documentation at [ConfigureWDD](https://aka.ms/ConfigureWDD) for informa
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow commercial data pipeline*
+-   GP Friendly name: *Allow commercial data pipeline*
 -   GP name: *AllowCommercialDataPipeline*
 -   GP element: *AllowCommercialDataPipeline*
 -   GP path: *Data Collection and Preview Builds*
@@ -333,7 +333,7 @@ This policy allows the device name to be sent to Microsoft as part of Windows di
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow device name to be sent in Windows diagnostic data*
+-   GP Friendly name: *Allow device name to be sent in Windows diagnostic data*
 -   GP name: *AllowDeviceNameInDiagnosticData*
 -   GP element: *AllowDeviceNameInDiagnosticData*
 -   GP path: *Data Collection and Preview Builds*
@@ -526,7 +526,7 @@ This setting is used by lower-level components for text display and fond handlin
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Enable Font Providers*
+-   GP Friendly name: *Enable Font Providers*
 -   GP name: *EnableFontProviders*
 -   GP path: *Network/Fonts*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -603,7 +603,7 @@ For example, an app's original Location setting is Off. The administrator then s
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off location*
+-   GP Friendly name: *Turn off location*
 -   GP name: *DisableLocation_2*
 -   GP path: *Windows Components/Location and Sensors*
 -   GP ADMX file name: *Sensors.admx*
@@ -822,7 +822,7 @@ Most restrictive value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Telemetry*
+-   GP Friendly name: *Allow Telemetry*
 -   GP name: *AllowTelemetry*
 -   GP element: *AllowTelemetry*
 -   GP path: *Data Collection and Preview Builds*
@@ -889,7 +889,7 @@ If you disable or do not configure this policy setting, devices will not appear 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Update Compliance Processing*
+-   GP Friendly name: *Allow Update Compliance Processing*
 -   GP name: *AllowUpdateComplianceProcessing*
 -   GP element: *AllowUpdateComplianceProcessing*
 -   GP path: *Data Collection and Preview Builds*
@@ -964,7 +964,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWuFBCloudProcessing**
+<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWUfBCloudProcessing**
 
 <hr/>
 
@@ -984,6 +984,15 @@ When these policies are configured, Windows diagnostic data collected from the d
 If you disable or do not configure this policy setting, devices enrolled to the Windows Update for Business deployment service will not be able to take advantage of some deployment service features.
 
 <hr/>
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Disabled.
+-   8 - Enabled.
+<!--/SupportedValues-->
+
 
 <!--Policy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
@@ -1047,7 +1056,7 @@ If your malware detection application does not include an Early Launch Antimalwa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Boot-Start Driver Initialization Policy*
+-   GP Friendly name: *Boot-Start Driver Initialization Policy*
 -   GP name: *POL_DriverLoadPolicy_Name*
 -   GP path: *System/Early Launch Antimalware*
 -   GP ADMX file name: *earlylauncham.admx*
@@ -1107,7 +1116,7 @@ Value type is string.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Microsoft 365 Update Readiness upload endpoint*
+-   GP Friendly name: *Configure Microsoft 365 Update Readiness upload endpoint*
 -   GP name: *ConfigureMicrosoft365UploadEndpoint*
 -   GP element: *ConfigureMicrosoft365UploadEndpoint*
 -   GP path: *Data Collection and Preview Builds*
@@ -1174,7 +1183,7 @@ If you set this policy setting to "Enable telemetry change notifications" or don
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure telemetry opt-in change notifications.*
+-   GP Friendly name: *Configure telemetry opt-in change notifications.*
 -   GP name: *ConfigureTelemetryOptInChangeNotification*
 -   GP element: *ConfigureTelemetryOptInChangeNotification*
 -   GP path: *Data Collection and Preview Builds*
@@ -1242,7 +1251,7 @@ If you set this policy setting to "Enable Telemetry opt-in Settings" or don't co
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure telemetry opt-in setting user interface.*
+-   GP Friendly name: *Configure telemetry opt-in setting user interface.*
 -   GP name: *ConfigureTelemetryOptInSettingsUx*
 -   GP element: *ConfigureTelemetryOptInSettingsUx*
 -   GP path: *Data Collection and Preview Builds*
@@ -1305,7 +1314,7 @@ If you disable or don't configure this policy setting, the Delete diagnostic dat
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable deleting diagnostic data*
+-   GP Friendly name: *Disable deleting diagnostic data*
 -   GP name: *DisableDeviceDelete*
 -   GP element: *DisableDeviceDelete*
 -   GP path: *Data Collection and Preview Builds*
@@ -1372,7 +1381,7 @@ If you disable or don't configure this policy setting, the Diagnostic Data Viewe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable diagnostic data viewer.*
+-   GP Friendly name: *Disable diagnostic data viewer.*
 -   GP name: *DisableDiagnosticDataViewer*
 -   GP element: *DisableDiagnosticDataViewer*
 -   GP path: *Data Collection and Preview Builds*
@@ -1437,7 +1446,7 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service*
+-   GP Friendly name: *Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service*
 -   GP name: *DisableEnterpriseAuthProxy*
 -   GP element: *DisableEnterpriseAuthProxy*
 -   GP path: *Data Collection and Preview Builds*
@@ -1501,7 +1510,7 @@ If you disable or do not configure this policy setting, apps and features can wo
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent the usage of OneDrive for file storage*
+-   GP Friendly name: *Prevent the usage of OneDrive for file storage*
 -   GP name: *PreventOnedriveFileSync*
 -   GP path: *Windows Components/OneDrive*
 -   GP ADMX file name: *SkyDrive.admx*
@@ -1588,7 +1597,7 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off System Restore*
+-   GP Friendly name: *Turn off System Restore*
 -   GP name: *SR_DisableSR*
 -   GP path: *System/System Restore*
 -   GP ADMX file name: *systemrestore.admx*
@@ -1717,7 +1726,7 @@ If you disable or do not configure this policy setting, then the level of diagno
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Limit Enhanced diagnostic data to the minimum required by Windows Analytics*
+-   GP Friendly name: *Limit Enhanced diagnostic data to the minimum required by Windows Analytics*
 -   GP name: *LimitEnhancedDiagnosticDataWindowsAnalytics*
 -   GP element: *LimitEnhancedDiagnosticDataWindowsAnalytics*
 -   GP path: *Data Collection and Preview Builds*
@@ -1775,7 +1784,7 @@ If you disable or do not configure this policy setting, Connected User Experienc
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Connected User Experiences and Telemetry*
+-   GP Friendly name: *Configure Connected User Experiences and Telemetry*
 -   GP name: *TelemetryProxy*
 -   GP element: *TelemetryProxyName*
 -   GP path: *Data Collection and Preview Builds*
@@ -1835,7 +1844,7 @@ If you disable or do not configure this policy setting, File History can be acti
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off File History*
+-   GP Friendly name: *Turn off File History*
 -   GP name: *DisableFileHistory*
 -   GP path: *Windows Components/File History*
 -   GP ADMX file name: *FileHistory.admx*

@@ -25,7 +25,7 @@ ms.collection: m365initiative-coredeploy
 In the past, traditional Windows deployments tended to be large, lengthy, and expensive. Windows 10 offers a new approach to deploying both quality and feature updates, making the process much simpler and therefore the planning much more straightforward. With Windows as a service, the methodology around updating Windows has changed, moving away from major upgrades every few years to iterative updates twice per year. Each iteration contains a smaller subset of changes so that they won’t seem like substantial differences, like they do today. This image illustrates the level of effort needed for traditional Windows deployments versus servicing Windows 10 and how it is now spread evenly over time versus spiking every few years.
 
 
-![Compare traditional servicing to Windows 10](images/waas-strategy-fig1a.png)
+![Compare traditional servicing to Windows 10.](images/waas-strategy-fig1a.png)
 
 Windows 10 spreads the traditional deployment effort of a Windows upgrade, which typically occurred every few years, over smaller, continuous updates. With this change, you must approach the ongoing deployment and servicing of Windows differently. A strong Windows 10 deployment strategy begins with establishing a simple, repeatable process for testing and deploying each feature update. Here’s an example of what this process might look like:
 
@@ -50,14 +50,14 @@ Each time Microsoft releases a Windows 10 feature update, the IT department shou
 
 ## Steps to manage updates for Windows 10
 
-| | |
+|&nbsp; |&nbsp; |
 | --- | --- |
-| ![done](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
-| ![done](images/checklistdone.png) | Prepare servicing strategy for Windows 10 updates (this topic) |
-| ![to do](images/checklistbox.gif) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
-| ![to do](images/checklistbox.gif) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
-| ![to do](images/checklistbox.gif) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
-| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
+| ![done.](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
+| ![done.](images/checklistdone.png) | Prepare servicing strategy for Windows 10 updates (this topic) |
+| ![to do.](images/checklistbox.gif) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
+| ![to do.](images/checklistbox.gif) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
+| ![to do.](images/checklistbox.gif) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
+| ![to do.](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
 
 
 ## Related topics

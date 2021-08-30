@@ -119,7 +119,7 @@ You must select an error response type in the drop-down box.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Propagate extended error information*
+-   GP Friendly name: *Propagate extended error information*
 -   GP name: *RpcExtendedErrorInformation*
 -   GP path: *System\Remote Procedure Call*
 -   GP ADMX file name: *RPC.admx*
@@ -199,7 +199,7 @@ If you enable this policy setting, then:
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Ignore Delegation Failure*
+-   GP Friendly name: *Ignore Delegation Failure*
 -   GP name: *RpcIgnoreDelegationFailure*
 -   GP path: *System\Remote Procedure Call*
 -   GP ADMX file name: *RPC.admx*
@@ -280,7 +280,7 @@ If you enable this policy setting, and the IIS server running the RPC HTTP proxy
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Minimum Idle Connection Timeout for RPC/HTTP connections*
+-   GP Friendly name: *Set Minimum Idle Connection Timeout for RPC/HTTP connections*
 -   GP name: *RpcMinimumHttpConnectionTimeout*
 -   GP path: *System\Remote Procedure Call*
 -   GP ADMX file name: *RPC.admx*
@@ -366,7 +366,7 @@ If you enable this policy setting, you can use the drop-down box to determine wh
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Maintain RPC Troubleshooting State Information*
+-   GP Friendly name: *Maintain RPC Troubleshooting State Information*
 -   GP name: *RpcStateInformation*
 -   GP path: *System\Remote Procedure Call*
 -   GP ADMX file name: *RPC.admx*

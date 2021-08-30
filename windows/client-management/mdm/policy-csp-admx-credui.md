@@ -96,7 +96,7 @@ If you disable or do not configure this policy setting, users will enter Windows
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require trusted path for credential entry*
+-   GP Friendly name: *Require trusted path for credential entry*
 -   GP name: *EnableSecureCredentialPrompting*
 -   GP path: *Windows Components\Credential User Interface*
 -   GP ADMX file name: *CredUI.admx*
@@ -161,7 +161,7 @@ Available in the latest Windows 10 Insider Preview Build. If you turn this polic
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent the use of security questions for local accounts*
+-   GP Friendly name: *Prevent the use of security questions for local accounts*
 -   GP name: *NoLocalPasswordResetQuestions*
 -   GP path: *Windows Components\Credential User Interface*
 -   GP ADMX file name: *CredUI.admx*

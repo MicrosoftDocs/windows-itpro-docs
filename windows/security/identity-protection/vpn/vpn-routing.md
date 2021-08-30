@@ -53,11 +53,11 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 
 When you configure a VPN profile in Microsoft Intune, you select a checkbox to enable split tunnel configuration.
 
-![split tunnel](images/vpn-split.png)
+![split tunnel.](images/vpn-split.png)
 
 Next, in **Corporate Boundaries**, you add the routes that should use the VPN connection.   
   
-![add route for split tunnel](images/vpn-split-route.png)
+![add route for split tunnel.](images/vpn-split-route.png)
 
 
 ## Related topics

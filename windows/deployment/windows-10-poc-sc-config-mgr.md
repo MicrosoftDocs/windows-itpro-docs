@@ -46,9 +46,9 @@ This guide provides end-to-end instructions to install and configure Microsoft E
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
-||||
-|--- |--- |--- |
+
 |Topic|Description|Time|
+|--- |--- |--- |
 |[Install prerequisites](#install-prerequisites)|Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.|60 minutes|
 |[Install Microsoft Endpoint Configuration Manager](#install-microsoft-endpoint-configuration-manager)|Download Microsoft Endpoint Configuration Manager, configure prerequisites, and install the package.|45 minutes|
 |[Download MDOP and install DaRT](#download-mdop-and-install-dart)|Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.|15 minutes|
@@ -331,7 +331,7 @@ WDSUTIL /Set-Server /AnswerClients:None
    - **Respond to PXE requests on specific network interfaces**: Click the yellow starburst and then enter the MAC address determined in the first step of this procedure.
 
      See the following example:
-     ![Config Mgr PXE](images/configmgr-pxe.png)
+     ![Config Mgr PXE.](images/configmgr-pxe.png)
 
 5. Click **OK**.
 6. Wait for a minute, then type the following command at an elevated Windows PowerShell prompt on SRV1, and verify that the files displayed are present:
@@ -803,7 +803,7 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 
 >Before starting this section, you can delete computer objects from Active Directory that were created as part of previous deployment procedures. Use the Active Directory Users and Computers console on DC1 to remove stale entries under contoso.com\Computers, but do not delete the computer account (hostname) for PC1. There should be at least two computer accounts present in the contoso.com\Computers container: one for SRV1, and one for the hostname of PC1. It is not required to delete the stale entries, this is only done to remove clutter.
 
-![contoso.com\Computers](images/poc-computers.png)
+![contoso.com\Computers.](images/poc-computers.png)
 
 In the replace procedure, PC1 will not be migrated to a new operating system. It is simplest to perform this procedure before performing the refresh procedure. After refreshing PC1, the operating system will be new. The next (replace) procedure does not install a new operating system on PC1 but rather performs a side-by-side migration of PC1 and another computer (PC4), to copy users and settings from PC1 to the new computer.
 
@@ -907,7 +907,7 @@ The **Client** column indicates that the Configuration Manager client is not cur
 
 14. Click the **Site** tab, click **Configure Settings**, and click **Find Site**. The client will report that it has found the PS1 site. See the following example:
 
-    ![site](images/configmgr-site.png)
+    ![site.](images/configmgr-site.png)
 
     If the client is not able to find the PS1 site, review any error messages that are displayed in **C:\Windows\CCM\Logs\ClientIDManagerStartup.log** and **LocationServices.log**. A common reason the site code is not located is because a previous configuration exists. For example, if a previous site code is configured at **HKLM\SOFTWARE\Microsoft\SMS\Mobile Client\GPRequestedSiteAssignmentCode** this must be deleted or updated.
 
@@ -915,7 +915,7 @@ The **Client** column indicates that the Configuration Manager client is not cur
 
 16. Click **All Desktop and Server Clients** and verify that the computer account for PC1 is displayed here with **Yes** and **Active** in the **Client** and **Client Activity** columns, respectively. You might have to refresh the view and wait few minutes for the client to appear here.  See the following example:
 
-    ![client](images/configmgr-client.png)
+    ![client.](images/configmgr-client.png)
 
     >It might take several minutes for the client to fully register with the site and complete a client check. When it is complete you will see a green check mark over the client icon as shown above. To refresh the client, click it and then press **F5** or right-click the client and click **Refresh**.
 
@@ -976,7 +976,7 @@ The **Client** column indicates that the Configuration Manager client is not cur
 
 11. Click **Device Collections** and then double-click **Install Windows 10 Enterprise x64**. Verify that **PC4** is displayed in the collection. You might have to update and refresh the collection, or wait a few minutes, but do not proceed until PC4 is available. See the following example:
 
-    ![collection](images/configmgr-collection.png)
+    ![collection.](images/configmgr-collection.png)
 
 ### Create a device collection for PC1
 
@@ -1026,7 +1026,7 @@ In the Configuration Manager console, in the Software Library workspace under Op
 
 4. In the Software Center , click **Available Software** and then select the **Replace Task Sequence** checkbox. See the following example:
 
-    ![software](images/configmgr-software-cntr.png)
+    ![software.](images/configmgr-software-cntr.png)
 
     >If you do not see any available software, try running step #2 again to start the Machine Policy Retrieval & Evaluation Cycle. You should see an alert that new software is available.
 
@@ -1064,17 +1064,17 @@ In the Configuration Manager console, in the Software Library workspace under Op
 3. On PC1, in the notification area, click **New software is available** and then click **Open Software Center**.
 4. In the Software Center, click **Operating Systems**, click **Windows 10 Enterprise x64**, click **Install** and then click **INSTALL OPERATING SYSTEM**. See the following example:
 
-    ![installOS](images/configmgr-install-os.png)
+    ![installOS.](images/configmgr-install-os.png)
 
     The computer will restart several times during the installation process. Installation includes downloading updates, reinstalling the Configuration Manager Client Agent, and restoring the user state. You can view status of the installation in the Configuration Manager console by accessing the Monitoring workspace, clicking **Deployments**, and then double-clicking the deployment associated with the **Install Windows 10 Enterprise x64** collection. Under **Asset Details**, right-click the device and then click **More Details**. Click the **Status** tab to see a list of tasks that have been performed.  See the following example:
 
-    ![asset](images/configmgr-asset.png)
+    ![asset.](images/configmgr-asset.png)
 
     You can also monitor progress of the installation by using the MDT deployment workbench and viewing the **Monitoring** node under **Deployment Shares\MDT Production**.
 
     When installation has completed, sign in using the contoso\administrator account or the contoso\user1 account and verify that applications and settings have been successfully backed up and restored to your new Windows 10 Enterprise operating system.
 
-    ![post-refresh](images/configmgr-post-refresh.png) 
+    ![post-refresh.](images/configmgr-post-refresh.png) 
 
 ## Related Topics
 

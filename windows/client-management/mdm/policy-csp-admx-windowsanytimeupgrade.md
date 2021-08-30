@@ -91,7 +91,7 @@ If you disable this policy setting or set it to Not Configured, the wizard will 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent the wizard from running.*
+-   GP Friendly name: *Prevent the wizard from running.*
 -   GP name: *Disabled*
 -   GP path: *Windows Components\Add features to Windows 10*
 -   GP ADMX file name: *WindowsAnytimeUpgrade.admx*

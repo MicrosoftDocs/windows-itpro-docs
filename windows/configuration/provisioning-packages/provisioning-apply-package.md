@@ -35,7 +35,7 @@ Provisioning packages can be applied to a device during the first-run experience
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
-    ![The first screen to set up a new PC](../images/oobe.jpg)
+    ![The first screen to set up a new PC.](../images/oobe.jpg)
 
 2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
@@ -43,11 +43,11 @@ Provisioning packages can be applied to a device during the first-run experience
 
 3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
 
-    ![Provision this device](../images/prov.jpg)
+    ![Provision this device.](../images/prov.jpg)
     
 4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
 
-    ![Choose a package](../images/choose-package.png)
+    ![Choose a package.](../images/choose-package.png)
 
 5. Select **Yes, add it**.
 
@@ -59,7 +59,7 @@ Provisioning packages can be applied to a device during the first-run experience
 
 Insert the USB drive to a desktop computer, navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. For a provisioning package stored on a network folder or on a SharePoint site, navigate to the provisioning package and double-click it to begin installation.
 
-![add a package option](../images/package.png)
+![add a package option.](../images/package.png)
     
 ## Mobile editions
 
@@ -68,13 +68,13 @@ Insert the USB drive to a desktop computer, navigate to **Settings** > **Account
 1. Insert an SD card containing the provisioning package into the device.
 2. Navigate to **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** > **Add a package**, and select the package to install. 
 
-    ![add a package option](../images/packages-mobile.png)
+    ![add a package option.](../images/packages-mobile.png)
 
 3. Click **Add**.
 
 4. On the device, the **Is this package from a source you trust?** message will appear. Tap **Yes, add it**.
 
-    ![Is this package from a source you trust](../images/package-trust.png)
+    ![Is this package from a source you trust.](../images/package-trust.png)
     
 ### Copying the provisioning package to the device
 
@@ -84,7 +84,7 @@ Insert the USB drive to a desktop computer, navigate to **Settings** > **Account
 
 3. On the device, the **Is this package from a source you trust?** message will appear. Tap **Yes, add it**.
 
-    ![Is this package from a source you trust](../images/package-trust.png)
+    ![Is this package from a source you trust.](../images/package-trust.png)
 
 
 
