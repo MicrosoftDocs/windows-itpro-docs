@@ -116,7 +116,7 @@ Some lines in the text below are shortened to enhance readability. The date and 
 
 <br><B>setuperr.log</B> content:
 
-<pre style="font-size: 10px; overflow-y: visible">
+<pre>
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
 27:08, Error           MIG    Error 1392 while gathering object C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Shell application requested abort![gle=0x00000570]
 27:08, Error                  Gather failed. Last error: 0x00000000
@@ -129,7 +129,7 @@ Some lines in the text below are shortened to enhance readability. The date and 
 
 The first line indicates there was an error **0x00000570** with the file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]** (shown below):
 
-<pre style="font-size: 10px; overflow-y: visible">
+<pre>
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
 </PRE>
 
@@ -139,7 +139,7 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 
 <br><B>setupact.log</B> content:
 
-<pre style="font-size: 10px; overflow-y: visible">
+<pre>
 27:00, Info                   Gather started at 10/5/2016 23:27:00
 27:00, Info [0x080489] MIG    Setting system object filter context (System)
 27:00, Info [0x0803e5] MIG    Not unmapping HKCU\Software\Classes; it is not mapped
@@ -164,7 +164,7 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 
 <br><B>setupapi.dev.log</B> content:
 
-<pre style="font-size: 10px; overflow-y: visible">
+<pre>
 >>>  [Device Install (UpdateDriverForPlugAndPlayDevices) - PCI\VEN_8086&DEV_8C4F]
 >>>  Section start 2019/09/26 20:13:01.623
       cmd: rundll32.exe "C:\WINDOWS\Installer\MSI6E4C.tmp",zzzzInvokeManagedCustomActionOutOfProc SfxCA_95972906 484 ChipsetWiX.CustomAction!Intel.Deployment.ChipsetWiX.CustomActions.InstallDrivers
