@@ -1,5 +1,5 @@
 ---
-title: Feature Availability
+title:  Windows Defender Application Control Feature Availability
 description: Compare WDAC and AppLocker feature availability.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -19,7 +19,7 @@ ms.custom: asr
 ms.technology: mde
 ---
 
-# WDAC and AppLocker feature availability
+# Windows Defender Application Control and AppLocker feature availability
 
 **Applies to:**
 
@@ -28,7 +28,7 @@ ms.technology: mde
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. See below to learn more.
 
 | Capability  | WDAC | AppLocker   |
 |-------------|------|-------------|
