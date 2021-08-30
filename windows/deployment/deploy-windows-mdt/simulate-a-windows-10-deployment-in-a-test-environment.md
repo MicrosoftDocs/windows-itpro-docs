@@ -46,7 +46,7 @@ On **PC0001**:
 8. In the **C:\\MDT** folder, create a subfolder named **X64**.
 9. From the **\\\\MDT01\\MDTProduction$\\Tools\\X64** folder, copy the Microsoft.BDD.Utility.dll file to **C:\\MDT\\X64**.
 
-   ![files](../images/mdt-09-fig06.png)
+   ![files.](../images/mdt-09-fig06.png)
 
    The C:\\MDT folder with the files added for the simulation environment.
 
@@ -62,7 +62,7 @@ On **PC0001**:
     **Note**  
     Warnings or errors with regard to the Wizard.hta are expected. If the log file looks okay, you are ready to try a real deployment.
  
-   ![ztigather](../images/mdt-09-fig07.png)
+   ![ztigather.](../images/mdt-09-fig07.png)
 
    The ZTIGather.log file from PC0001.
 

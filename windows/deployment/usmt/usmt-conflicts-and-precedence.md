@@ -414,7 +414,7 @@ For this example, the following table describes the resulting behavior if you ad
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;merge script=&quot;MigXmlHelper.DestinationPriority()&quot;&gt; 
+<td align="left"><pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.DestinationPriority()&quot;&gt; 
    &lt;objectSet&gt; 
       &lt;pattern type=&quot;File&quot;&gt;c:\data* [<em>]&lt;/pattern&gt; 
    &lt;/objectSet&gt; 
@@ -423,7 +423,7 @@ For this example, the following table describes the resulting behavior if you ad
 <p>During LoadState, only C:\Data\SampleA.txt will be restored.</p></td>
 </tr>
 <tr class="even">
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; 
+<td align="left"><pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; 
    &lt;objectSet&gt; 
       &lt;pattern type=&quot;File&quot;&gt;c:\data* [</em>]&lt;/pattern&gt; 
    &lt;/objectSet&gt; 
@@ -432,7 +432,7 @@ For this example, the following table describes the resulting behavior if you ad
 <p>During LoadState, all the files will be restored, overwriting the existing files on the destination computer.</p></td>
 </tr>
 <tr class="odd">
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; 
+<td align="left"><pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; 
    &lt;objectSet&gt; 
       &lt;pattern type=&quot;File&quot;&gt;c:\data\ [*]&lt;/pattern&gt; 
    &lt;/objectSet&gt; 

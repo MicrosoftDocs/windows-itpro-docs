@@ -30,7 +30,7 @@ The current known issues with the Volume Activation Management Tool (VAMT), vers
 
 Another known issue is that when you try to add a Windows 10 Key Management Service (KMS) Host key (CSVLK) or a Windows Server 2012 R2 for Windows 10 CSVLK into VAMT 3.1 (version 10.0.10240.0), you receive the error message shown here.
 
-![VAMT error message](./images/vamt-known-issue-message.png)
+![VAMT error message.](./images/vamt-known-issue-message.png)
 
 This issue occurs because VAMT 3.1 does not contain the correct Pkconfig files to recognize this kind of key. To work around this issue, use one of the following methods.
 

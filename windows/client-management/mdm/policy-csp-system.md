@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/14/2020
+ms.date: 08/26/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -62,7 +62,7 @@ manager: dansimp
     <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
   </dd>
  <dd>
-    <a href="#system-allowwufbcloudprocessing">System/AllowWuFBCloudProcessing</a>
+    <a href="#system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a>
   </dd>
   <dd>
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
@@ -747,7 +747,7 @@ The following list shows the supported values for Windows 8.1:
 -   1 – Allowed, except for Secondary Data Requests.
 -   2 (default) – Allowed.
 
-<!--<table style="margin-left: 20px">
+<!--<table>
 <colgroup>
 <col width="100%" />
 </colgroup>
@@ -758,14 +758,14 @@ The following list shows the supported values for Windows 8.1:
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>0 – Not allowed.</p>
+<td><p>0 – Not allowed.</p>
 </td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p> 1 – Allowed, except for Secondary Data Requests.</p></td>
+<td><p> 1 – Allowed, except for Secondary Data Requests.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>2 (default) – Allowed.</p></td>
+<td><p>2 (default) – Allowed.</p></td>
 </tr>
 </tbody>
 </table>-->
@@ -790,7 +790,7 @@ The following list shows the supported values for Windows 10 version 1809 and ol
 
 Most restrictive value is 0.
 
-<!--<table style="margin-left: 20px">
+<!--<table>
 <colgroup>
 <col width="100%" />
 </colgroup>
@@ -801,20 +801,20 @@ Most restrictive value is 0.
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.</p>
+<td><p>0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.</p>
 <div class="alert">
 <strong>Note</strong>  This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
 </div>
 </td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.</p></td>
+<td><p>1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>2 – Enhanced. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.</p></td>
+<td><p>2 – Enhanced. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.</p></td>
+<td><p>3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.</p></td>
 </tr>
 </tbody>
 </table>-->
@@ -964,7 +964,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWuFBCloudProcessing**
+<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWUfBCloudProcessing**
 
 <hr/>
 
@@ -984,6 +984,15 @@ When these policies are configured, Windows diagnostic data collected from the d
 If you disable or do not configure this policy setting, devices enrolled to the Windows Update for Business deployment service will not be able to take advantage of some deployment service features.
 
 <hr/>
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Disabled.
+-   8 - Enabled.
+<!--/SupportedValues-->
+
 
 <!--Policy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  

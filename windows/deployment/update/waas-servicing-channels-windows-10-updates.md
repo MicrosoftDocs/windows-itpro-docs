@@ -32,12 +32,12 @@ The Semi-Annual Channel is the default servicing channel for all Windows 10 devi
 
 | Windows 10 edition | Semi-Annual Channel | Long-Term Servicing Channel | Insider Program |
 | --- | --- | --- | --- |
-| Home | ![no](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Pro | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Enterprise  | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Enterprise LTSB  | ![no](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
-| Pro Education | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Education  | ![yes](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Home | ![no.](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Pro | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Enterprise  | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Enterprise LTSB  | ![no.](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
+| Pro Education | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
+| Education  | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 
 
 >[!NOTE]
@@ -164,12 +164,12 @@ Administrators can disable the "Check for updates" option for users by enabling 
 
 |&nbsp; |&nbsp; |
 | --- | --- |
-| ![done](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
-| ![done](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | Assign devices to servicing channels for Windows 10 updates (this topic) |
-| ![to do](images/checklistbox.gif) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
-| ![to do](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
+| ![done.](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
+| ![done.](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | Assign devices to servicing channels for Windows 10 updates (this topic) |
+| ![to do.](images/checklistbox.gif) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
+| ![to do.](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
 
 ## Related topics
 
