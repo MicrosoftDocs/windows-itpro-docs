@@ -46,7 +46,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 <br>
 
-<div style='font-size:9.0pt'>
+<div>
 
 <table border="1" cellspacing="0" cellpadding="0">
 <tr><td BGCOLOR="#a0e4fa"><B>Topic</B><td BGCOLOR="#a0e4fa"><B>Description</B><td BGCOLOR="#a0e4fa"><B>Time</B>
@@ -226,8 +226,8 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 26. Open a Windows PowerShell prompt on the Hyper-V host computer and type the following commands:
 
-    <div style='font-size:8.0pt'>
-    <pre style="overflow-y: visible">
+    <div>
+    <pre>
 
     New-VM REFW10X64-001 -SwitchName poc-internal -NewVHDPath "c:\VHD\REFW10X64-001.vhdx" -NewVHDSizeBytes 60GB
     Set-VMMemory REFW10X64-001 -DynamicMemoryEnabled $true -MinimumBytes 1024MB -MaximumBytes 1024MB -Buffer 20
