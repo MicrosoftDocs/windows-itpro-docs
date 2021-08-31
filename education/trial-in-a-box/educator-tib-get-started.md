@@ -20,7 +20,7 @@ manager: dansimp
 
 ![Welcome, Educators!](images/Welocme-Educators.png)
 
-<span style="font-size: 1.5em">This guide shows you how to quickly and easily try a few transformational tools from Microsoft Education in 5 quick steps.</span>
+<span>This guide shows you how to quickly and easily try a few transformational tools from Microsoft Education in 5 quick steps.</span>
 
 | Tool | Description |
 | :---: |:--- |

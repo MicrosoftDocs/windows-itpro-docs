@@ -27,38 +27,38 @@ Reboot
 --------DailyRecurrent
 ```
 <a href="" id="--vendor-msft-reboot"></a>**./Vendor/MSFT/Reboot**  
-<p style="margin-left: 20px">The root node for the Reboot configuration service provider.</p>
+<p>The root node for the Reboot configuration service provider.</p>
 
-<p style="margin-left: 20px">The supported operation is Get.</p>
+<p>The supported operation is Get.</p>
 
 <a href="" id="rebootnow"></a>**RebootNow**  
-<p style="margin-left: 20px">This node executes a reboot of the device. RebootNow triggers a reboot within 5 minutes to allow the user to wrap up any active work.</p>
+<p>This node executes a reboot of the device. RebootNow triggers a reboot within 5 minutes to allow the user to wrap up any active work.</p>
 
 > [!NOTE]
 > If this node is set to execute during a sync session, the device will reboot at the end of the sync session.
 
-<p style="margin-left: 20px">The supported operations are Execute and Get.</p>
+<p>The supported operations are Execute and Get.</p>
 
 <a href="" id="schedule"></a>**Schedule**  
-<p style="margin-left: 20px">The supported operation is Get.</p>
+<p>The supported operation is Get.</p>
 
 <a href="" id="schedule-single"></a>**Schedule/Single**  
-<p style="margin-left: 20px">This node will execute a reboot at a scheduled date and time. The date and time value is **ISO 8601**, and both the date and time are required.  </br>
+<p>This node will execute a reboot at a scheduled date and time. The date and time value is **ISO 8601**, and both the date and time are required.  </br>
 Example to configure: 2018-10-25T18:00:00</p>
 
 Setting a null (empty) date will delete the existing schedule. In accordance with the ISO 8601 format, the date and time representation needs to be 0000-00-00T00:00:00.
 
-<p style="margin-left: 20px">The supported operations are Get, Add, Replace, and Delete.</p>
+<p>The supported operations are Get, Add, Replace, and Delete.</p>
 
-<p style="margin-left: 20px">The supported data type is "String".</p>
+<p>The supported data type is "String".</p>
 
 <a href="" id="schedule-dailyrecurrent"></a>**Schedule/DailyRecurrent**  
-<p style="margin-left: 20px">This node will execute a reboot each day at a scheduled time starting at the configured starting time and date. Setting a null (empty) date will delete the existing schedule. The date and time value is ISO8601, and both the date and time are required. The CSP will return the date time in the following format: 2018-06-29T10:00:00+01:00.  </br>
+<p>This node will execute a reboot each day at a scheduled time starting at the configured starting time and date. Setting a null (empty) date will delete the existing schedule. The date and time value is ISO8601, and both the date and time are required. The CSP will return the date time in the following format: 2018-06-29T10:00:00+01:00.  </br>
 Example to configure: 2018-10-25T18:00:00</p>
 
-<p style="margin-left: 20px">The supported operations are Get, Add, Replace, and Delete.</p>
+<p>The supported operations are Get, Add, Replace, and Delete.</p>
 
-<p style="margin-left: 20px">The supported data type is "String".</p>
+<p>The supported data type is "String".</p>
 
 ## Related topics
 

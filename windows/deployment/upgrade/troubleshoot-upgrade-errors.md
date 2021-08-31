@@ -20,11 +20,14 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
->[!NOTE]
->This is a 300 level topic (moderately advanced).<br>
->See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
+> [!NOTE]
+> This is a 300 level topic (moderately advanced).<br>
+> See [Resolve Windows 10 upgrade errors](resolve-windows-10-upgrade-errors.md) for a full list of topics in this article.
 
 If a Windows 10 upgrade is not successful, it can be very helpful to understand *when* an error occurred in the upgrade process. 
+
+> [!IMPORTANT]
+> Use the [SetupDiag](setupdiag.md) tool before you begin manually troubleshooting an upgrade error. SetupDiag automates log file analysis, detecting and reporting details on many different types of known upgrade issues.
 
 Briefly, the upgrade process consists of four phases that are controlled by [Windows Setup](/windows-hardware/manufacture/desktop/windows-setup-technical-reference): **Downlevel**, **SafeOS**, **First boot**, and **Second boot**. The computer will reboot once between each phase. Note: Progress is tracked in the registry during the upgrade process using the following key: **HKLM\System\Setup\mosetup\volatile\SetupProgress**. This key is volatile and only present during the upgrade process; it contains a binary value in the range 0-100.
 
@@ -73,11 +76,11 @@ When performing an operating system upgrade, Windows Setup uses phases described
 
     At the end of the second boot phase, the **Welcome to Windows 10** screen is displayed, preferences are configured, and the Windows 10 sign-in prompt is displayed.
 
-    ![second boot phase.](../images/secondboot.png) 
+    ![second boot phase 1](../images/secondboot.png) 
 
-    ![second boot phase.](../images/secondboot2.png) 
+    ![second boot phase 2](../images/secondboot2.png) 
 
-    ![second boot phase.](../images/secondboot3.png) 
+    ![second boot phase 3](../images/secondboot3.png) 
 
 5. **Uninstall phase**: This phase occurs if upgrade is unsuccessful (image not shown). Example error codes: 0x50000, 0x50015.
 
