@@ -1,5 +1,5 @@
 ---
-title: Managing and troubleshooting Windows Defender Application Control policies (Windows 10)
+title: Managing and troubleshooting Windows Defender Application Control policies (Windows)
 description: Gather information about how your deployed Windows Defender Application Control policies are behaving.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -23,7 +23,11 @@ ms.technology: mde
 **Applies to**
 
 - Windows 10
+- Windows 11
 - Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 After designing and deploying your Windows Defender Application Control (WDAC) policies, this guide covers understanding the effects your policies are having and troubleshooting when they are not behaving as expected. It contains information on where to find events and what they mean, and also querying these events with Microsoft Defender for Endpoint Advanced Hunting feature.
 
