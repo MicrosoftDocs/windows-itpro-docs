@@ -41,12 +41,12 @@ The Store for Business provides services that enable a management tool to synchr
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>Application data</p></td>
-<td style="vertical-align:top"><p>The Store for Business service provides metadata for the applications that have been acquired via the Store for Business. This includes the application identifier that is used to deploy online license applications, artwork for an application that is used to create a company portal, and localized descriptions for applications.</p></td>
+<td><p>Application data</p></td>
+<td><p>The Store for Business service provides metadata for the applications that have been acquired via the Store for Business. This includes the application identifier that is used to deploy online license applications, artwork for an application that is used to create a company portal, and localized descriptions for applications.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Licensing models</p></td>
-<td style="vertical-align:top"><p><strong>Offline vs. Online</strong></p>
+<td><p>Licensing models</p></td>
+<td><p><strong>Offline vs. Online</strong></p>
 <p>Online-licensed applications require connectivity to the Microsoft Store. Users require an Azure Active Directory identity and rely on the store services on the device to be able to acquire an application from the store. It is similar to how applications are acquired from the Microsoft Store using a Microsoft account. Assigning or reclaiming seats for an application require a call to the Store for Business services.</p>
 <p>Offline-licensed applications enable an organization to use the application for imaging and for devices that may not have connectivity to the store or may not have Azure Active Directory. Offline-licensed application do not require connectivity to the store, however it can be updated directly from the store if the device has connectivity and the app update policies allow updates to be distributed via the store.</p></td>
 </tr>
@@ -59,13 +59,13 @@ The Store for Business provides services that enable a management tool to synchr
 
 The following diagram provides an overview of app distribution from acquisition of an offline-licensed application to distribution to a client. Once synchronized from the Store for Business, the management tool can use the Windows management framework to distribute applications to devices.
 
-![business store offline app distribution](images/businessstoreportalservices2.png)
+![business store offline app distribution.](images/businessstoreportalservices2.png)
 
 ### Online-licensed application distribution
 
 The following diagram provides an overview of app distribution from acquisition of an online-licensed application to distribution to a client. Once synchronized from the Store for Business, the management tool can use the Windows management framework to distribute applications to devices. For online-licensed applications, the management tool calls back into the Store for Business management services to assign an application prior to issuing the policy to install the application.
 
-![business store online app distribution](images/businessstoreportalservices3.png)
+![business store online app distribution.](images/businessstoreportalservices3.png)
 
 ## Integrate with Azure Active Directory
 
@@ -105,7 +105,7 @@ After registering your management tool with Azure AD, the management tool can ca
 
 The diagram below shows the call patterns for acquiring a new or updated application.
 
-![business store portal service flow diagram](images/businessstoreportalservicesflow.png)
+![business store portal service flow diagram.](images/businessstoreportalservicesflow.png)
 
 **Here is the list of available operations**:
 

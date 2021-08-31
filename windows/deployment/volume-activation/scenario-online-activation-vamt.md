@@ -25,7 +25,7 @@ In this scenario, the Volume Activation Management Tool (VAMT) is deployed in th
 -   Retail
 The Secure Zone represents higher-security Core Network computers that have additional firewall protection.
 
-![VAMT firewall configuration for multiple subnets](images/dep-win8-l-vamt-makindependentactivationscenario.jpg)
+![VAMT firewall configuration for multiple subnets.](images/dep-win8-l-vamt-makindependentactivationscenario.jpg)
 
 ## In This Topic
 -   [Install and start VAMT on a networked host computer](#bkmk-partone)

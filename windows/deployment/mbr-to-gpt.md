@@ -62,7 +62,7 @@ If any of these checks fails, the conversion will not proceed and an error will 
 
 ## Syntax
 
-<table style="font-family:consolas;font-size:12px" >
+<table>
 <TR><TD>MBR2GPT /validate|convert [/disk:&lt;diskNumber>] [/logs:&lt;logDirectory>] [/map:&lt;source>=&lt;destination>] [/allowFullOS]
 </TABLE>
 
@@ -376,7 +376,7 @@ Number Friendly Name      Serial Number        HealthStatus OperationalStatus To
 
 You can also view the partition type of a disk by opening the Disk Management tool, right-clicking the disk number, clicking **Properties**, and then clicking the **Volumes** tab. See the following example:
 
-![Volumes](images/mbr2gpt-volume.png)
+![Volumes.](images/mbr2gpt-volume.png)
 
 
 If Windows PowerShell and Disk Management are not available, such as when you are using Windows PE, you can determine the partition type at a command prompt with the DiskPart tool. To determine the partition style from a command line, type **diskpart** and then type **list disk**. See the following example:

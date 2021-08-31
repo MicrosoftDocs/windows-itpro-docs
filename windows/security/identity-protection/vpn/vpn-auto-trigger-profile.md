@@ -89,11 +89,11 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 
 The following image shows associating an app to a VPN connection in a VPN Profile configuration policy using Microsoft Intune.
 
-![Add an app for the VPN connection](images/vpn-app-trigger.png)
+![Add an app for the VPN connection.](images/vpn-app-trigger.png)
 
 After you add an associated app, if you select the **Only these apps can use this VPN connection (per-app VPN)** checkbox, the app becomes available in **Corporate Boundaries**, where you can configure rules for the app. See [Traffic filters](vpn-security-features.md#traffic-filters) for more details. 
 
-![Configure rules for the app](images/vpn-app-rules.png)
+![Configure rules for the app.](images/vpn-app-rules.png)
 
 ## Related topics
 

@@ -24,13 +24,13 @@ Some desktop devices in an enterprise serve a special purpose, such as a PC in t
   
     A single-app kiosk is ideal for public use. Using [Shell Launcher](kiosk-shelllauncher.md), you can configure a kiosk device that runs a Windows desktop application as the user interface. The application that you specify replaces the default shell (explorer.exe) that usually runs when a user logs on. This type of single-app kiosk does not run above the lockscreen. 
 
-    ![Illustration of a full-screen kiosk experience](images/kiosk-fullscreen.png)
+    ![Illustration of a full-screen kiosk experience.](images/kiosk-fullscreen.png)
 
 - **A multi-app kiosk**, which runs one or more apps from the desktop. People using the kiosk see a customized Start that shows only the tiles for the apps that are allowed. With this approach, you can configure a locked-down experience for different account types. 
 
     A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, [specific policies are enforced](kiosk-policies.md) that will affect **all** non-administrator users on the device. 
 
-    ![Illustration of a kiosk Start screen](images/kiosk-desktop.png)
+    ![Illustration of a kiosk Start screen.](images/kiosk-desktop.png)
 
 Kiosk configurations are based on **Assigned Access**, a feature in Windows 10 that allows an administrator to manage the user's experience by limiting the application entry points exposed to the user. 
 
@@ -38,25 +38,25 @@ There are several kiosk configuration methods that you can choose from, dependin
 
 - **Which type of app will your kiosk run?**
 
-    ![icon that represents apps](images/office-logo.png) 
+    ![icon that represents apps.](images/office-logo.png) 
 
     Your kiosk can run a Universal Windows Platform (UWP) app or a Windows desktop application. For [digital signage](setup-digital-signage.md), simply select a digital sign player as your kiosk app. [Check out the guidelines for kiosk apps.](guidelines-for-assigned-access-app.md)
 
 - **Which type of kiosk do you need?**
 
-    ![icon that represents a kiosk](images/kiosk.png)
+    ![icon that represents a kiosk.](images/kiosk.png)
 
     If you want your kiosk to run a single app for anyone to see or use, consider a single-app kiosk that runs either a [Universal Windows Platform (UWP) app](#uwp) or a [Windows desktop application](#classic). For a kiosk that people can sign in to with their accounts or that runs more than one app, choose [a multi-app kiosk](#desktop).
 
 - **Which edition of Windows 10 will the kiosk run?**
 
-    ![icon that represents Windows](images/windows.png)
+    ![icon that represents Windows.](images/windows.png)
 
     All of the configuration methods work for Windows 10 Enterprise and Education; some of the methods work for Windows 10 Pro. Kiosk mode is not available on Windows 10 Home.
 
 - **Which type of user account will be the kiosk account?**
 
-    ![icon that represents a user account](images/user.png)
+    ![icon that represents a user account.](images/user.png)
 
     The kiosk account can be a local standard user account, a local administrator account, a domain account, or an Azure Active Directory (Azure AD) account, depending on the method that you use to configure the kiosk. If you want people to sign in and authenticate on the device, you should use a multi-app kiosk configuration. The single-app kiosk configuration doesn't require people to sign in to the device, although they can sign in to the kiosk app if you select an app that has a sign-in method.
 
