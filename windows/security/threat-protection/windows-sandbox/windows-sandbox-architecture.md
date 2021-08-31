@@ -1,6 +1,6 @@
 ---
 title: Windows Sandbox architecture
-description: 
+description: Windows Sandbox architecture
 ms.prod: m365-security
 audience: ITPro
 author: dansimp
