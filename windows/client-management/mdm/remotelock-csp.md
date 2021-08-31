@@ -21,7 +21,7 @@ The RemoteLock CSP supports the ability to lock a device that has a PIN set on t
 > The RemoteLock CSP is only supported in Windows 10 Mobile.
 
 <a href="" id="--vendor-msft-remotelock"></a>**./Vendor/MSFT/RemoteLock**
-<p style="margin-left: 20px">Defines the root node for the RemoteLock configuration service provider.</p>
+<p>Defines the root node for the RemoteLock configuration service provider.</p>
 
 <a href="" id="lock"></a>**Lock**
 Required. The setting accepts requests to lock the device screen. The device screen will lock immediately if a PIN has been set. If no PIN is set, the lock request is ignored and the OMA DM (405) Forbidden error is returned over the management channel. All OMA DM errors are listed [here](https://go.microsoft.com/fwlink/p/?LinkId=522607) in the protocol specification. The supported operations are Get and Exec.

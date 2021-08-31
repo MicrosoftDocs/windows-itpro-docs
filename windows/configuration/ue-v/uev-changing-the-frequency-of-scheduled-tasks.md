@@ -158,7 +158,7 @@ schtasks /change /tn "Microsoft\UE-V\Template Auto Update" /ri 60
 
 The following chart provides additional information about scheduled tasks for UE-V 2:
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="16%" />
 <col width="16%" />
