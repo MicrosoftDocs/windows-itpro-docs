@@ -44,31 +44,33 @@ There are different types of apps that can run on your Windows client devices. T
   - **Windows Presentation Foundation (WPF)**: Using .NET, you can create a WPF desktop app that runs on the device, or create a WPF web app. This app is commonly used by organizations that create line of business (LOB) desktop apps. For more information, see [WPF Application Development](/dotnet/desktop/wpf/app-development).
   - **Windows Forms (WinForm)**: Using .NET, you can create a Windows Forms desktop app that runs on the device, and doesn't require a web browser or internet access. Just like Win32 apps, WinForm apps can access the local hardware and file system of the computer where the app is running. For more information, see [Desktop Guide (Windows Forms .NET)](/dotnet/desktop/winforms/overview).
 
-- **Windows apps**: These apps are included with the Windows OS, and can also be installed from the Microsoft Store. There are two categories:
+- **Windows apps**: 
+
+  > [!TIP]
+  > Starting with Windows 10, you can use the **Windows UI Library (WinUI 3)** to create .NET, Win32 desktop, and UWP apps. This library includes native Windows UI controls and other user interface elements familiar to Windows users. For more information, see [Windows UI Library (WinUI)](/windows/apps/winui/).
 
   - **Apps**: All apps installed in `C:\Program Files\WindowsApps`. There are two classes of apps:
 
     - **Provisioned**: Installed in user account the first time you sign in with a new user account. For a list of some common provisioned apps, see [Provisioned apps installed with the Windows client OS](provisioned-apps-windows-client-os.md).
     - **Installed**: Installed as part of the OS.
 
+  - **Universal Windows Platform (UWP) apps**: These apps run and can be installed on many Windows platforms, including tablets, Microsoft HoloLens, Xbox, and more. All UWP apps are Windows apps. Not all Windows apps are UWP apps.
+
+    For more information, see [What's a Universal Windows Platform (UWP) app?](/windows/uwp/get-started/universal-application-platform-guide).
+
+  - **Win32 apps**: These apps are traditional Windows apps that run on the device, and are often called desktop apps. They require direct access to Windows and the device hardware, and typically don't require a web browser. These apps run in 32-bit mode on 64-bit devices, and don't depend on a managed runtime environment, like .NET.
+
+    For more information, see [Get started developing apps for Windows desktop](/windows/apps/get-started) and [Make your apps great on Windows 11](/windows/apps/get-started/make-apps-great-for-windows).
+
   - **System apps**: Apps installed in the `C:\Windows\` directory. These apps are part of the Windows OS. For a list of some common system apps, see [System apps installed with the Windows client OS](system-apps-windows-client-os.md).
 
-- **Universal Windows Platform (UWP) apps**: These apps run and can be installed on many Windows platforms, including tablets, Microsoft HoloLens, Xbox, and more. All UWP apps are Windows apps. Not all Windows apps are UWP apps.
-
-  For more information, see [What's a Universal Windows Platform (UWP) app?](/windows/uwp/get-started/universal-application-platform-guide).
+  ??These apps are included with the Windows OS, and can also be installed from the Microsoft Store. There are two categories:
 
 - **Web apps** and **Progressive web apps (PWA)**: These apps run on a server, and don't run on the end user device. To use these apps, users must use a web browser and have internet access. **Progressive web apps** are designed to work for all users, work with any browser, and work on any platform.
 
   Web apps are typically created in Visual Studio, and can be created with different languages. For more information, see [Create a Web App](https://azure.microsoft.com/get-started/web-app/). When the app is created and ready to be used, you deploy the web app to a web server. Using Azure, you can host your web apps in the cloud, instead of on-premises. For more information, see [App Service overview](/azure/app-service/overview).
 
   Using an MDM provider, you can create shortcuts to your web apps and progressive web apps on devices.
-
-- **Win32 apps**: These apps are traditional Windows apps that run on the device, and are often called desktop apps. They require direct access to Windows and the device hardware, and typically don't require a web browser. These apps run in 32-bit mode on 64-bit devices, and don't depend on a managed runtime environment, like .NET.
-
-  For more information, see [Get started developing apps for Windows desktop](/windows/apps/get-started) and [Make your apps great on Windows 11](/windows/apps/get-started/make-apps-great-for-windows).
-
-> [!TIP]
-> Starting with Windows 10, you can use the **Windows UI Library (WinUI 3)** to create .NET, Win32 desktop, and UWP apps. This library includes native Windows UI controls and other user interface elements familiar to Windows users. For more information, see [Windows UI Library (WinUI)](/windows/apps/winui/).
 
 ## Add or deploy apps to devices
 
@@ -131,7 +133,12 @@ When your apps are ready, you can add or deploy these apps to your Windows devic
   - [What is Azure Virtual Desktop?](/azure/virtual-desktop/overview)
   - [Set up MSIX app attach with the Azure portal](/azure/virtual-desktop/app-attach-azure-portal)
 
-- **Application Virtualization (App-V)**: App-V allows Win32 apps to be used as virtual apps. On an on-premises server, you install and configure the App-V server components, and then install your Win32 apps. On Windows Enterprise client devices, you use the App-V client components to run the virtualized apps. They allow users to open the virtual apps using the icons and file names they're familiar with. Users use the apps as if they're installed locally.
+- **Application Virtualization (App-V)**: App-V allows Win32 apps to be used as virtual apps.
+
+  > [!NOTE]
+  > Application Virtualization will be [end of life in April 2026](/lifecycle/announcements/mdop-extended). We recommend looking at **Azure Virtual desktop with MSIX app attach**. For more information, see [What is Azure Virtual Desktop?](/azure/virtual-desktop/overview) and [Set up MSIX app attach with the Azure portal](/azure/virtual-desktop/app-attach-azure-portal).
+
+  On an on-premises server, you install and configure the App-V server components, and then install your Win32 apps. On Windows Enterprise client devices, you use the App-V client components to run the virtualized apps. They allow users to open the virtual apps using the icons and file names they're familiar with. Users use the apps as if they're installed locally.
 
   The benefit is to deliver virtual apps in real time, and as-needed. For more information, see [Application Virtualization (App-V) for Windows overview](./app-v/appv-for-windows.md).
 
@@ -140,5 +147,4 @@ When your apps are ready, you can add or deploy these apps to your Windows devic
   - On premises, you can use Administrative Templates in Group Policy to deploy App-V policies (`Computer Configuration\Administrative Templates\System\App-V`).
   - Using Microsoft Intune, you can use [Administrative Templates](/mem/intune/configuration/administrative-templates-windows) (opens another Microsoft web site) or the [Settings Catalog](/mem/intune/configuration/settings-catalog) (opens another Microsoft web site) to deploy App-V policies.
 
-  > [!TIP]
-  > If you want to decrease your on-premises footprint, then **Azure Virtual desktop with MSIX app attach** might be the better deployment for your organization.
+
