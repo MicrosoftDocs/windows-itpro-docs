@@ -1,5 +1,5 @@
 ---
-title: Use audit events to create then enforce WDAC policy rules (Windows 10)
+title: Use audit events to create then enforce WDAC policy rules (Windows)
 description: Learn how audits allow admins to discover apps, binaries, and scripts that should be added to a WDAC policy, then learn how to switch that WDAC policy from audit to enforced mode.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,8 +22,12 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 Running Application Control in audit mode lets you discover applications, binaries, and scripts that are missing from your WDAC policy but should be included.
 
