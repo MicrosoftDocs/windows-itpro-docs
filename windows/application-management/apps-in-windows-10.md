@@ -64,8 +64,6 @@ There are different types of apps that can run on your Windows client devices. T
 
   - **System apps**: Apps installed in the `C:\Windows\` directory. These apps are part of the Windows OS. For a list of some common system apps, see [System apps installed with the Windows client OS](system-apps-windows-client-os.md).
 
-  ??These apps are included with the Windows OS, and can also be installed from the Microsoft Store. There are two categories:
-
 - **Web apps** and **Progressive web apps (PWA)**: These apps run on a server, and don't run on the end user device. To use these apps, users must use a web browser and have internet access. **Progressive web apps** are designed to work for all users, work with any browser, and work on any platform.
 
   Web apps are typically created in Visual Studio, and can be created with different languages. For more information, see [Create a Web App](https://azure.microsoft.com/get-started/web-app/). When the app is created and ready to be used, you deploy the web app to a web server. Using Azure, you can host your web apps in the cloud, instead of on-premises. For more information, see [App Service overview](/azure/app-service/overview).
