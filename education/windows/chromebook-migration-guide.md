@@ -497,7 +497,7 @@ Table 6 is a decision matrix that lists the device, user, and app management pro
 
 Table 6. Device, user, and app management products and technologies
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="14%" />
 <col width="14%" />
