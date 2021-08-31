@@ -1,5 +1,5 @@
 ---
-title: AppLocker deployment guide (Windows 10)
+title: AppLocker deployment guide (Windows)
 description: This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
 ms.assetid: 38632795-be13-46b0-a7af-487a4340bea1
 ms.reviewer: 
@@ -22,8 +22,13 @@ ms.technology: mde
 # AppLocker deployment guide
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals introduces the concepts and describes the steps required to deploy AppLocker policies.
 

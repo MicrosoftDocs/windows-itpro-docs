@@ -1,5 +1,5 @@
 ---
-title: Authorize reputable apps with the Intelligent Security Graph (ISG) (Windows 10)
+title: Authorize reputable apps with the Intelligent Security Graph (ISG) (Windows)
 description: Automatically authorize applications that Microsoft’s ISG recognizes as having known good reputation.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,8 +22,12 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 Application control can be difficult to implement in organizations that don't deploy and manage applications through an IT-managed system. In such environments, users can acquire the applications they want to use for work, making it hard to build an effective application control policy.
 

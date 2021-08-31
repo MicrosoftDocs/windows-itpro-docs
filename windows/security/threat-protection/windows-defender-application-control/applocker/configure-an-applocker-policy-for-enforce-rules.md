@@ -1,5 +1,5 @@
 ---
-title: Configure an AppLocker policy for enforce rules (Windows 10)
+title: Configure an AppLocker policy for enforce rules (Windows)
 description: This topic for IT professionals describes the steps to enable the AppLocker policy enforcement setting.
 ms.assetid: 5dbbb290-a5ae-4f88-82b3-21e95972e66c
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Configure an AppLocker policy for enforce rules
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes the steps to enable the AppLocker policy enforcement setting.
 
