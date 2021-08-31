@@ -1,5 +1,5 @@
 ---
-title: AppLocker design guide (Windows 10)
+title: AppLocker design guide (Windows)
 description: This topic for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker.
 ms.assetid: 1c8e4a7b-3164-4eb4-9277-11b1d5a09c7b
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # AppLocker design guide
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional introduces the design and planning steps required to deploy application control policies by using AppLocker.
 

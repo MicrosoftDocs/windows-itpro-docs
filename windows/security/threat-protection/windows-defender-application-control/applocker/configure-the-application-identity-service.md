@@ -1,5 +1,5 @@
 ---
-title: Configure the Application Identity service (Windows 10)
+title: Configure the Application Identity service (Windows)
 description: This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.
 ms.assetid: dc469599-37fd-448b-b23e-5b8e4f17e561
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Configure the Application Identity service
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.
 
