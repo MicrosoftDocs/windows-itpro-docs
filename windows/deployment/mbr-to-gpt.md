@@ -62,7 +62,7 @@ If any of these checks fails, the conversion will not proceed and an error will 
 
 ## Syntax
 
-<table style="font-family:consolas;font-size:12px" >
+<table>
 <TR><TD>MBR2GPT /validate|convert [/disk:&lt;diskNumber>] [/logs:&lt;logDirectory>] [/map:&lt;source>=&lt;destination>] [/allowFullOS]
 </TABLE>
 

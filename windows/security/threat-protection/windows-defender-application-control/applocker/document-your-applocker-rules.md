@@ -41,7 +41,7 @@ Document the following items for each business group or organizational unit:
 
 The following table details sample data for documenting rule type and rule condition findings. In addition, you should now consider whether to allow an app to run or deny permission for it to run. For info about these settings, see [Understanding AppLocker allow and deny actions on rules](understanding-applocker-allow-and-deny-actions-on-rules.md).
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="14%" />
 <col width="14%" />
