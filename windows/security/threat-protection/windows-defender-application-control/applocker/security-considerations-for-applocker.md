@@ -1,5 +1,5 @@
 ---
-title: Security considerations for AppLocker (Windows 10)
+title: Security considerations for AppLocker (Windows)
 description: This topic for the IT professional describes the security considerations you need to address when implementing AppLocker.
 ms.assetid: 354a5abb-7b31-4bea-a442-aa9666117625
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Security considerations for AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes the security considerations you need to address when implementing AppLocker.
 
