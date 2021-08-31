@@ -1,5 +1,5 @@
 ---
-title: Enforce AppLocker rules (Windows 10)
+title: Enforce AppLocker rules (Windows)
 description: This topic for IT professionals describes how to enforce application control rules by using AppLocker.
 ms.assetid: e1528b7b-77f2-4419-8e27-c9cc3721d96d
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Enforce AppLocker rules
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes how to enforce application control rules by using AppLocker.
 
