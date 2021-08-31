@@ -21,7 +21,7 @@ ms.reviewer:
 ## Four steps to password freedom
 
 Over the past few years, Microsoft has continued their commitment to enabling a world without passwords. At Microsoft Ignite 2017, we shared our four-step approach to password freedom.
-![Passwordless approach](images/four-steps-passwordless.png)
+![Passwordless approach.](images/four-steps-passwordless.png)
 
 
 ### 1. Develop a password replacement offering
@@ -203,24 +203,24 @@ Windows provides two ways to prevent your users from using passwords. You can us
 
 ##### Security Policy
 You can use Group Policy to deploy an interactive logon security policy setting to the computer. This policy setting is found under **Computer Configuration > Policies > Windows Settings > Local Policy > Security Options**.  The name of the policy setting depends on the version of the operating systems you use to configure Group Policy.
-![securityPolicyLocation](images/passwordless/00-securityPolicy.png)
+![securityPolicyLocation.](images/passwordless/00-securityPolicy.png)
 
 **Windows Server 2016 and earlier**
 The policy name for these operating systems is **Interactive logon: Require smart card**.
-![securityPolicyBefore2016](images/passwordless/00-securitypolicy-2016.png)
+![securityPolicyBefore2016.](images/passwordless/00-securitypolicy-2016.png)
 
 **Windows 10, version 1703 or later using Remote Server Administrator Tools**
 The policy name for these operating systems is **Interactive logon: Require Windows Hello for Business or smart card**.
-![securityPolicyRSAT](images/passwordless/00-updatedsecuritypolicytext.png)
+![securityPolicyRSAT.](images/passwordless/00-updatedsecuritypolicytext.png)
 
 When you enable this security policy setting, Windows prevents users from signing in or unlocking with a password. The password credential provider remains visible to the user. If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
 
 #### Excluding the password credential provider
 You can use Group Policy to deploy an administrative template policy setting to the computer. This policy setting is found under **Computer Configuration > Policies > Administrative Templates > System > Logon**
-![HideCredProvPolicy](images/passwordless/00-hidecredprov.png)
+![HideCredProvPolicy.](images/passwordless/00-hidecredprov.png)
 
 The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is **60b78e88-ead8-445c-9cfd-0b87f74ea6cd**.
-![HideCredProvPolicy2](images/passwordless/01-hidecredprov.png)
+![HideCredProvPolicy2.](images/passwordless/01-hidecredprov.png)
 
 Excluding the password credential provider hides the password credential provider from Windows and any application that attempts to load it. This prevents the user from entering a password using the credential provider. However, this does not prevent applications from creating their own password collection dialogs and prompting the user for a password using custom dialogs.
 
@@ -261,7 +261,7 @@ The account options on a user account includes an option -- **Smart card is requ
 > [!NOTE]
 > Do not confuse the Interactive Logon security policy for SCRIL. Security policies are enforced on the client (locally). A user account configured for SCRIL is enforced at the domain controller.
 
-![SCRIL setting on AD Users and Computers](images/passwordless/00-scril-dsa.png)
+![SCRIL setting on AD Users and Computers.](images/passwordless/00-scril-dsa.png)
 **SCRIL setting for a user on Active Directory Users and Computers.**
 
 When you configure a user account for SCRIL, Active Directory changes the affected user's password to a random 128 bits of data. Additionally, domain controllers hosting the user account do not allow the user to sign-in interactively with a password. Also, users will no longer be troubled with needing to change their password when it expires, because passwords for SCRIL users in domains with a Windows Server 2012 R2 or early domain functional level do not expire. The users are effectively passwordless because:
@@ -270,13 +270,13 @@ When you configure a user account for SCRIL, Active Directory changes the affect
 - the user is not asked to change their password
 - domain controllers do not allow passwords for interactive authentication
 
-![SCRIL setting from ADAC on Windows Server 2012](images/passwordless/01-scril-adac-2012.png)
+![SCRIL setting from ADAC on Windows Server 2012.](images/passwordless/01-scril-adac-2012.png)
 **SCRIL setting for a user in Active Directory Administrative Center on Windows Server 2012.**
 
 > [!NOTE]
 > Although a SCRIL user's password never expires in early domains, you can toggle the SCRIL configuration on a user account (clear the check box, save the settings, select the check box and save the settings) to generate a new random 128 bit password. However, you should consider upgrading the domain to Windows Server 2016 domain forest functional level and allow the domain controller to do this for you automatically.
 
-![SCRIL setting from ADAC on Windows Server 2016](images/passwordless/01-scril-adac-2016.png)
+![SCRIL setting from ADAC on Windows Server 2016.](images/passwordless/01-scril-adac-2016.png)
 **SCRIL setting for a user in Active Directory Administrative Center on Windows Server 2016.**
 
 > [!NOTE]
@@ -286,7 +286,7 @@ When you configure a user account for SCRIL, Active Directory changes the affect
 Domains configured for Windows Server 2016 domain functional level can further secure the unknown password for SCRIL-enabled users by configuring the domain to automatically change the password for SCRIL users.
 
 In this configuration, passwords for SCRIL-configured users expire based on Active Directory password policy settings. When the SCRIL user authenticates from a domain controller, the domain controller recognizes the password has expired, and automatically generates a new random 128 bit password for the user as part of the authentication. What is great about this feature is your users do not experience any change password notifications or any authentication outages.
-![Rotate Password 2016](images/passwordless/02-rotate-scril-2016.png)
+![Rotate Password 2016.](images/passwordless/02-rotate-scril-2016.png)
 
 > [!NOTE]
 > Some components within Windows 10, such as Data Protection APIs and NTLM authentication, still need artifacts of a user possessing a password. This configuration provides interoperability by reducing the usage surface while Microsoft continues to close the gaps to remove the password completely.

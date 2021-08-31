@@ -15,7 +15,7 @@ ms.custom: seo-marvel-apr2020
 
 # Security Update Status
 
-![The Security Update Status report](images/UC_workspace_SU_status.png)
+![The Security Update Status report.](images/UC_workspace_SU_status.png)
 
 The Security Update Status section provides information about [security updates](waas-quick-start.md#definitions) across all devices. The section tile within the [Overview Blade](update-compliance-using.md#overview-blade) lists the percentage of devices on the latest security update available. Meanwhile, the blades within show the percentage of devices on the latest security update for each Windows 10 version and the deployment progress toward the latest two security updates.  
 

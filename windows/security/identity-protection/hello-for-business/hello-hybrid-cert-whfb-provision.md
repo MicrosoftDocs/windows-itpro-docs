@@ -27,22 +27,22 @@ ms.reviewer:
 ## Provisioning
 The Windows Hello for Business provisioning begins immediately after the user has signed in, after the user profile is loaded, but before the user receives their desktop.  Windows only launches the provisioning experience if all the prerequisite checks pass. You can determine the status of the prerequisite checks by viewing the **User Device Registration** in the **Event Viewer** under **Applications and Services Logs\Microsoft\Windows**.
 
-![Event358 from User Device Registration log showing Windows Hello for Business prerequisite check result](images/Event358.png)
+![Event358 from User Device Registration log showing Windows Hello for Business prerequisite check result.](images/Event358.png)
 
 The first thing to validate is the computer has processed device registration. You can view this from the User device registration logs where the check **Device is AAD joined (AADJ or DJ++): Yes** appears.  Additionally, you can validate this using the **dsregcmd /status** command from a console prompt where the value for **AzureADJoined** reads **Yes**.
 
 
 Windows Hello for Business provisioning begins with a full screen page with the title **Setup a PIN** and button with the same name.  The user clicks **Setup a PIN**.
 
-![Setup a PIN Provisioning](images/setupapin.png)
+![Setup a PIN Provisioning.](images/setupapin.png)
 
 The provisioning flow proceeds to the Multi-Factor authentication portion of the enrollment.  Provisioning informs the user that it is actively attempting to contact the user through their configured form of MFA.  The provisioning process does not proceed until authentication succeeds, fails or times out. A failed or timeout MFA results in an error and asks the user to retry.
   
-![MFA prompt during provisioning](images/mfa.png)
+![MFA prompt during provisioning.](images/mfa.png)
 
 After a successful MFA, the provisioning flow asks the user to create and validate a PIN.  This PIN must observe any PIN complexity requirements that you deployed to the environment.
 
-![Create a PIN during provisioning](images/createPin.png)
+![Create a PIN during provisioning.](images/createPin.png)
 
 The provisioning flow has all the information it needs to complete the Windows Hello for Business enrollment.
 * A successful single factor authentication (username and password at sign-in)

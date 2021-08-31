@@ -39,7 +39,7 @@ You can use Windows Configuration Designer to create a provisioning package (.pp
 
 2. Select your desired option on the **Start** page, which offers multiple options for creating a provisioning package, as shown in the following image:
 
-    ![Configuration Designer wizards](../images/icd-create-options-1703.png)
+    ![Configuration Designer wizards.](../images/icd-create-options-1703.png)
 
     - The following wizard options provide a simple interface for configuring common settings for desktop, mobile, and kiosk devices: 
 
@@ -56,7 +56,7 @@ You can use Windows Configuration Designer to create a provisioning package (.pp
         >[!TIP]
         > You can start a project in the simple wizard editor and then switch the project to the advanced editor.
         >
-        > ![Switch to advanced editor](../images/icd-switch.png)
+        > ![Switch to advanced editor.](../images/icd-switch.png)
 
 3. Enter a name for your project, and then select **Next**.
 
@@ -87,7 +87,7 @@ You can use Windows Configuration Designer to create a provisioning package (.pp
 
 For an advanced provisioning project, Windows Configuration Designer opens the **Available customizations** pane. The example in the following image is based on **All Windows desktop editions** settings.
 
-![What the ICD interface looks like](../images/icd-runtime.png)
+![What the ICD interface looks like.](../images/icd-runtime.png)
 
 The settings in Windows Configuration Designer are based on Windows 10 configuration service providers (CSPs). To learn more about CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](./how-it-pros-can-use-configuration-service-providers.md).
 
@@ -103,14 +103,14 @@ The process for configuring settings is similar for all settings. The following 
 
 For details on each specific setting, see [Windows Provisioning settings reference](../wcd/wcd.md). The reference topic for a setting is also displayed in Windows Configuration Designer when you select the setting, as shown in the following image.
 
-![Windows Configuration Designer opens the reference topic when you select a setting](../images/icd-setting-help.png) 
+![Windows Configuration Designer opens the reference topic when you select a setting.](../images/icd-setting-help.png) 
 
 
  ## Build package
 
 1. After you're done configuring your customizations, select **Export**, and then select **Provisioning Package**.
 
-    ![Export on top bar](../images/icd-export-menu.png)
+    ![Export on top bar.](../images/icd-export-menu.png)
 
 2. In the **Describe the provisioning package** window, enter the following information, and then select **Next**:
     - **Name** - This field is pre-populated with the project name. You can change this value by entering a different name in the **Name** field.
