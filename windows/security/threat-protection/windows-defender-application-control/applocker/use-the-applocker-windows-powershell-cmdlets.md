@@ -1,5 +1,5 @@
 ---
-title: Use the AppLocker Windows PowerShell cmdlets (Windows 10)
+title: Use the AppLocker Windows PowerShell cmdlets (Windows)
 description: This topic for IT professionals describes how each AppLocker Windows PowerShell cmdlet can help you administer your AppLocker application control policies.
 ms.assetid: 374e029c-5c0a-44ab-a57a-2a9dd17dc57d
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Use the AppLocker Windows PowerShell cmdlets
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes how each AppLocker Windows PowerShell cmdlet can help you administer your AppLocker application control policies.
 

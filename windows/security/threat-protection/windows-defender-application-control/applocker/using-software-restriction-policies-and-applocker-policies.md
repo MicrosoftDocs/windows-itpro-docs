@@ -1,5 +1,5 @@
 ---
-title: Use Software Restriction Policies and AppLocker policies (Windows 10)
+title: Use Software Restriction Policies and AppLocker policies (Windows)
 description: This topic for the IT professional describes how to use Software Restriction Policies (SRP) and AppLocker policies in the same Windows deployment.
 ms.assetid: c3366be7-e632-4add-bd10-9df088f74c6d
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Use Software Restriction Policies and AppLocker policies
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes how to use Software Restriction Policies (SRP) and AppLocker policies in the same Windows deployment.
 
