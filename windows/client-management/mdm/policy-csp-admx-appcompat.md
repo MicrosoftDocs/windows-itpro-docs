@@ -70,7 +70,7 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
+    <th>Edition</th>
     <th>Supported?</th>
 </tr>
 <tr>
