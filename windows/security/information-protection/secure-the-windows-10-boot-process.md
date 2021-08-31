@@ -20,9 +20,10 @@ ms.author: dansimp
 # Secure the Windows 10 boot process
 
 **Applies to:**
+-  Windows 11
 -  Windows 10
 -  Windows 8.1
--  Windows 11
+
 
 The Windows operating system has many features to help protect you from malware, and it does an amazingly good job. Except for apps that businesses develop and use internally, all Microsoft Store apps must meet a series of requirements to be certified and included in the Microsoft Store. This certification process examines several criteria, including security, and is an effective means of preventing malware from entering the Microsoft Store. Even if a malicious app does get through, the Windows 10 operating system includes a series of security features that can mitigate the impact. For instance, Microsoft Store apps are sandboxed and lack the privileges necessary to access user data or change system settings.
 
