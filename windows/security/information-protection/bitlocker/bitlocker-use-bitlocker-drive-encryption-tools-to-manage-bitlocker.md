@@ -55,7 +55,7 @@ manage-bde -status
 ```
 This command returns the volumes on the target, current encryption status, encryption method, and volume type (operating system or data) for each volume:
 
-![Using manage-bde to check encryption status](images/manage-bde-status.png)
+![Using manage-bde to check encryption status.](images/manage-bde-status.png)
 
 The following example illustrates enabling BitLocker on a computer without a TPM chip. Before beginning the encryption process, you must create the startup key needed for BitLocker and save it to the USB drive. When BitLocker is enabled for the operating system volume, the BitLocker will need to access the USB flash drive to obtain the encryption key (in this example, the drive letter E represents the USB drive). You will be prompted to reboot to complete the encryption process.
 

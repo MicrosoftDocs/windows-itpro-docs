@@ -1,5 +1,5 @@
 ---
-title: Plan for AppLocker policy management (Windows 10)
+title: Plan for AppLocker policy management (Windows)
 description: This topic for describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies.
 ms.assetid: dccc196f-6ae0-4ae4-853a-a3312b18751b
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Plan for AppLocker policy management
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for describes the decisions you need to make to establish the processes for managing and maintaining AppLocker policies.
 
@@ -61,7 +66,7 @@ AppLocker can be configured to display the default message but with a custom URL
 
 The following image shows an example of the error message for a blocked app. You can use the **Set a support web link** policy setting to customize the **More information** link.
 
-![applocker blocked application error message](images/blockedappmsg.gif)
+![applocker blocked application error message.](images/blockedappmsg.gif)
 
 For steps to display a custom URL for the message, see [Display a custom URL message when users try to run a blocked app](display-a-custom-url-message-when-users-try-to-run-a-blocked-application.md).
 
@@ -138,7 +143,7 @@ The three key areas to determine for AppLocker policy management are:
 
 The following table contains the added sample data that was collected when determining how to maintain and manage AppLocker policies.
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="11%" />
 <col width="11%" />

@@ -41,7 +41,7 @@ The following are important factors in the implementation of your Windows Defend
 
 The next step in implementing your design is to determine in what order each of the deployment steps must be performed. This guide uses checklists to help you accomplish the various deployment tasks that are required to implement your design plan. As the following diagram shows, checklists and subchecklists are used as necessary to provide the end-to-end procedure for deploying a design.
 
-![wfas implementation](images/wfas-implement.gif)
+![wfas implementation.](images/wfas-implement.gif)
 
 Use the following parent checklists in this section of the guide to become familiar with the deployment tasks for implementing your organization's Windows Defender Firewall with Advanced Security design.
 

@@ -328,7 +328,7 @@ Windows PowerShell can create powerful, complex IPsec policies like in Netsh and
 
 In Netsh, the authentication and cryptographic sets were specified as a list of comma-separated tokens in a specific format. In Windows PowerShell, rather than using default settings, you first create your desired authentication or cryptographic proposal objects and bundle them into lists in your preferred order. Then, you create one or more IPsec rules that reference these sets. The benefit of this model is that programmatic access to the information in the rules is much easier. See the following sections for clarifying examples.
 
-![object model for creating a single ipsec rule](images/createipsecrule.gif)
+![object model for creating a single ipsec rule.](images/createipsecrule.gif)
 
 ### Create IPsec rules
 
@@ -353,7 +353,7 @@ If you want to create a custom set of quick-mode proposals that includes both AH
 
 You can then use the newly created custom quick-mode policies when you create IPsec rules. The cryptography set object is linked to an IPsec rule object.
 
-![crypto set object](images/qmcryptoset.gif)
+![crypto set object.](images/qmcryptoset.gif)
 
 In this example, we build on the previously created IPsec rule by specifying a custom quick-mode crypto set. The final IPsec rule requires outbound traffic to be authenticated by the specified cryptography method.
 

@@ -1,5 +1,5 @@
 ---
-title: Document your AppLocker rules (Windows 10)
+title: Document your AppLocker rules (Windows)
 description: Learn how to document your AppLocker rules and associate rule conditions with files, permissions, rule source, and implementation.
 ms.assetid: 91a198ce-104a-45ff-b49b-487fb40cd2dd
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Document your AppLocker rules
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic describes what AppLocker rule conditions to associate with each file, how to associate these rule conditions, the source of the rule, and whether the file should be included or excluded.
 
@@ -41,7 +46,7 @@ Document the following items for each business group or organizational unit:
 
 The following table details sample data for documenting rule type and rule condition findings. In addition, you should now consider whether to allow an app to run or deny permission for it to run. For info about these settings, see [Understanding AppLocker allow and deny actions on rules](understanding-applocker-allow-and-deny-actions-on-rules.md).
 
-<table style="width:100%;">
+<table>
 <colgroup>
 <col width="14%" />
 <col width="14%" />

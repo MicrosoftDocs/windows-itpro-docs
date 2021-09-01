@@ -48,7 +48,7 @@ This version of Window 10 includes security improvements for threat protection, 
 
 The [Microsoft Defender for Endpoint](/windows/security/threat-protection/index) platform includes the security pillars shown in the following diagram. In this version of Windows, Defender for Endpoint includes powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. 
 
-![Microsoft Defender for Endpoint](../images/wdatp.png)
+![Microsoft Defender for Endpoint.](../images/wdatp.png)
 
 ##### Attack surface reduction 
 
@@ -275,7 +275,7 @@ The WSC service now requires antivirus products to run as a protected process to
 
 WSC now includes the Fluent Design System elements you know and love. You’ll also notice we’ve adjusted the spacing and padding around the app. It will now dynamically size the categories on the main page if more room is needed for extra info. We also updated the title bar so that it will use your accent color if you have enabled that option in **Color Settings**.
 
-![Security at a glance](../images/defender.png "Windows Security Center")
+![Security at a glance.](../images/defender.png "Windows Security Center")
 
 #### Group Policy Security Options
 
@@ -288,7 +288,7 @@ A new security policy setting
 
 We’ve continued to work on the **Current threats** area in  [Virus & threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
-![S mode settings](../images/virus-and-threat-protection.png "Virus & threat protection settings")
+![S mode settings.](../images/virus-and-threat-protection.png "Virus & threat protection settings")
 
 ## Deployment
 
@@ -387,7 +387,7 @@ If you have shared devices deployed in your work place, **Fast sign-in** enables
 
 3. Sign-in to a shared PC with your account. You'll notice the difference!
 
-   ![fast sign-in](../images/fastsignin.png "fast sign-in")
+   ![fast sign-in.](../images/fastsignin.png "fast sign-in")
 
 ### Web sign-in to Windows 10
 
@@ -402,7 +402,7 @@ Until now, Windows logon only supported the use of identities federated to ADFS 
 3. On the lock screen, select web sign-in under sign-in options.
 4. Click the “Sign in” button to continue.
 
-![Sign-in option](../images/websignin.png "web sign-in")
+![Sign-in option.](../images/websignin.png "web sign-in")
 
 ## Windows Analytics
 
@@ -470,7 +470,7 @@ The OS uninstall period is a length of time that users are given when they can o
 
 Using the new wizards in Windows Configuration Designer, you can [create provisioning packages to enroll devices in Azure Active Directory](/windows/configuration/provisioning-packages/provisioning-packages#configuration-designer-wizards). Azure AD join in bulk is available in the desktop, mobile, kiosk, and Surface Hub wizards.
 
-![get bulk token action in wizard](../images/bulk-token.png)
+![get bulk token action in wizard.](../images/bulk-token.png)
 
 ### Windows Spotlight
 
@@ -636,7 +636,7 @@ If you have a device that has been updated to Windows 10 Enterprise LTSC 2019, t
 
 We added a dropdown that displays as you type to help complete the next part of the path. You can also press **Ctrl + Backspace** to delete the last word, and **Ctrl + Delete** to delete the next word.
 
-![Reg editor](../images/regeditor.png "Registry editor dropdown")
+![Reg editor.](../images/regeditor.png "Registry editor dropdown")
 
 ## Remote Desktop with Biometrics
 
@@ -650,9 +650,9 @@ To get started, sign into your device using Windows Hello for Business. Bring up
 
 See the following example:
 
-![Enter your credentials](../images/RDPwBioTime.png "Windows Hello")
-![Provide credentials](../images/RDPwBio2.png "Windows Hello personal")
-![Microsoft Hyper-V Server 2016](../images/hyper-v.png "Microsoft Hyper-V Server 2016")
+![Enter your credentials.](../images/RDPwBioTime.png "Windows Hello")
+![Provide credentials.](../images/RDPwBio2.png "Windows Hello personal")
+![Microsoft Hyper-V Server 2016.](../images/hyper-v.png "Microsoft Hyper-V Server 2016")
 
 ## See Also
 

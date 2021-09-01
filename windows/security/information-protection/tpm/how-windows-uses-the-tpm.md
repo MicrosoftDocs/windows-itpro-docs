@@ -84,7 +84,7 @@ Identity providers have flexibility in how they provision credentials on client 
 
 •	**Attestation identity key**. To protect privacy, most TPM scenarios do not directly use an actual endorsement key. Instead, they use attestation identity keys, and an identity certificate authority (CA) uses the endorsement key and its certificate to prove that one or more attestation identity keys actually exist in a real TPM. The identity CA issues attestation identity key certificates. More than one identity CA will generally see the same endorsement key certificate that can uniquely identify the TPM, but any number of attestation identity key certificates can be created to limit the information shared in other scenarios.
 
-![TPM Capabilities](images/tpm-capabilities.png)
+![TPM Capabilities.](images/tpm-capabilities.png)
 
 *Figure 1:  TPM Cryptographic Key Management*
 
@@ -126,7 +126,7 @@ The TPM provides the following way for scenarios to use the measurements recorde
 
 When new security features are added to Windows, Measured Boot adds security-relevant configuration information to the measurements recorded in the TPM. Measured Boot enables remote attestation scenarios that reflect the system firmware and the Windows initialization state.
 
-![Process to Create Evidence of Boot Software and Configuration Using TPM](images/process-to-create-evidence-of-boot-software-and-configuration-using-tpm.png)
+![Process to Create Evidence of Boot Software and Configuration Using TPM.](images/process-to-create-evidence-of-boot-software-and-configuration-using-tpm.png)
 
 *Figure 2:  Process used to create evidence of boot software and configuration using a TPM*
 
