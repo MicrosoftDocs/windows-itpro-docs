@@ -52,13 +52,13 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Secure the Windows boot process
-          url: /windows/security/information-protection/secure-the-windows-10-boot-process.md
-        - text: Configure S/MIME for Windows 10
-          url: /windows/security/identity-protection/configure-s-mime.md
+        - text: Overview of operating system security
+          url: /windows/security/information-protection/index.md
       - linkListType: concept
         links:
         - text: Secure the Windows boot process
           url: /windows/security/information-protection/secure-the-windows-10-boot-process.md
         - text: Configure S/MIME for Windows 10
           url: /windows/security/identity-protection/configure-s-mime.md
+        - text: Encrypted hard drive
+          url: /windows/security/information-protection/encrypted-hard-drive.md
