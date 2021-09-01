@@ -1,5 +1,5 @@
 ---
-title: Understanding AppLocker default rules (Windows 10)
+title: Understanding AppLocker default rules (Windows)
 description: This topic for IT professional describes the set of rules that can be used to ensure that required Windows system files are allowed to run when the policy is applied.
 ms.assetid: bdb03d71-05b7-41fb-96e3-a289ce1866e1
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Understanding AppLocker default rules
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professional describes the set of rules that can be used to ensure that required Windows system files are allowed to run when the policy is applied.
 

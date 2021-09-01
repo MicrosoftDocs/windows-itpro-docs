@@ -1,5 +1,5 @@
 ---
-title: Determine the Group Policy structure and rule enforcement (Windows 10)
+title: Determine the Group Policy structure and rule enforcement (Windows)
 description: This overview topic describes the process to follow when you are planning to deploy AppLocker rules.
 ms.assetid: f435fcbe-c7ac-4ef0-9702-729aab64163f
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Determine the Group Policy structure and rule enforcement
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This overview topic describes the process to follow when you are planning to deploy AppLocker rules.
 
