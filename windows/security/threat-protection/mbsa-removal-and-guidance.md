@@ -9,7 +9,7 @@ ms.author: dansimp
 author: dansimp
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: other
 ---
  
 # What is Microsoft Baseline Security Analyzer and its uses?

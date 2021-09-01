@@ -13,7 +13,7 @@ author: dansimp
 ms.author: dansimp
 ms.date: 08/14/2017
 ms.localizationpriority: medium
-ms.technology: mde
+ms.technology: other
 ---
 
 # Block untrusted fonts in an enterprise
