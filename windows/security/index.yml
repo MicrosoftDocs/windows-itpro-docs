@@ -23,7 +23,7 @@ landingContent:
   # Card (optional)
   - title: Security foundations
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
           - text: Federal Information Processing Standard (FIPS) 140 Validation
             url: /windows/security/threat-protection/fips-140-validation.md
@@ -38,7 +38,7 @@ landingContent:
   # Card (optional)
   - title: Hardware security
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
         - text: Trusted Platform Module
           url: /windows/security/information-protection/tpm/trusted-platform-module-top-node.md
@@ -49,7 +49,7 @@ landingContent:
   # Card (optional)
   - title: Operating system security
     linkLists:
-      - linkListType: overview
+      - linkListType: concept
         links:
         - text: Secure the Windows boot process
           url: /windows/security/information-protection/secure-the-windows-10-boot-process.md
