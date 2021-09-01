@@ -1,5 +1,5 @@
 ---
-title: Set up and test Cortana with Microsoft Dynamics CRM (Preview feature) in your organization (Windows)
+title: Set up and test Cortana with Microsoft Dynamics CRM (Preview feature) in Windows
 description: How to set up Cortana to give salespeople insights on important CRM activities, including sales leads, accounts, and opportunities.
 ms.prod: w10
 ms.mktglfcycl: manage
