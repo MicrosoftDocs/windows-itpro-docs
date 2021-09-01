@@ -20,6 +20,7 @@ ms.topic: article
 
 **Applies to**
 - Windows 10
+- Windows 11
 
 This article provides an overview of the features, components, and capabilities of the [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt/). When you have finished reviewing this information, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 

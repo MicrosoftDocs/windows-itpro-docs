@@ -18,6 +18,22 @@
           href: replace-a-windows-7-computer-with-a-windows-10-computer.md
         - name: Perform an in-place upgrade to Windows 10 with MDT
           href: upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md
+    - name: Deploy Windows 11 with MDT
+      items: 
+        - name: Prepare for deployment with MDT
+          href: prepare-for-windows-deployment-with-mdt.md
+        - name: Create a Windows 11 reference image
+          href: create-a-windows-11-reference-image.md
+        - name: Deploy a Windows 11 image using MDT
+          href: deploy-a-windows-11-image-using-mdt.md
+        - name: Build a distributed environment for Windows 10 deployment
+          href: build-a-distributed-environment-for-windows-10-deployment.md
+        - name: Refresh a Windows 10 computer with Windows 11
+          href: refresh-a-windows-10-computer-with-windows-11.md
+        - name: Replace a Windows 10 computer with a Windows 11 computer
+          href: replace-a-windows-10-computer-with-a-windows-11-computer.md
+        - name: Perform an in-place upgrade to Windows 11 with MDT
+          href: upgrade-to-windows-11-with-the-microsoft-deployment-toolkit.md
     - name: Customize MDT
       items: 
         - name: Configure MDT settings
