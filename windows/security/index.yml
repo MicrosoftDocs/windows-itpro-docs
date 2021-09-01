@@ -29,9 +29,9 @@ landingContent:
             url: /windows/security/threat-protection/fips-140-validation.md
           - text: Common Criteria Certifications
             url: /windows/security/threat-protection/windows-platform-common-criteria.md
-          - text: Microsoft Security Development Lifecycle (SDL)
+          - text: Microsoft Security Development Lifecycle
             url: /windows/security/threat-protection/msft-security-dev-lifecycle.md
-          - text: Microsoft bounty program
+          - text: Microsoft Bug Bounty
             url: /windows/security/threat-protection/microsoft-bug-bounty-program.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
