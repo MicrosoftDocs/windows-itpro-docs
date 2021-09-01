@@ -9,7 +9,9 @@
     - name: Common Criteria Certifications
       href: threat-protection/windows-platform-common-criteria.md
     - name: Microsoft Security Development Lifecycle
-      href: /threat-protection/msft-security-dev-lifecycle.md
+      href: threat-protection/msft-security-dev-lifecycle.md
+    - name: Microsoft Bug Bounty Program
+      href: threat-protection/microsoft-bug-bounty-program.md
 - name: Hardware security
   items: 
     - name: Trusted Platform Module
