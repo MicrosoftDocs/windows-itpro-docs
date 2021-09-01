@@ -1,5 +1,5 @@
 ---
-title: Requirements for deploying AppLocker policies (Windows 10)
+title: Requirements for deploying AppLocker policies (Windows)
 description: This deployment topic for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies.
 ms.assetid: 3e55bda2-3cd7-42c7-bad3-c7dfbe193d48
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Requirements for deploying AppLocker policies
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This deployment topic for the IT professional lists the requirements that you need to consider before you deploy AppLocker policies.
 

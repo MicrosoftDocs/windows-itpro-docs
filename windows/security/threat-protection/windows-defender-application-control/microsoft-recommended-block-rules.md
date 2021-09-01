@@ -1,5 +1,5 @@
 ---
-title: Microsoft recommended block rules (Windows 10)
+title: Microsoft recommended block rules (Windows)
 description: View a list of recommended block rules, based on knowledge shared between Microsoft and the wider security community.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,8 +22,12 @@ ms.date: 08/23/2021
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 or later
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 

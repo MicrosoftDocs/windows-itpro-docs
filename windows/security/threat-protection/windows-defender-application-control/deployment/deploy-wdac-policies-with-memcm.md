@@ -1,5 +1,5 @@
 ---
-title: Deploy Windows Defender Application Control (WDAC) policies by using Microsoft Endpoint Configuration Manager (MEMCM) (Windows 10)
+title: Deploy Windows Defender Application Control (WDAC) policies by using Microsoft Endpoint Configuration Manager (MEMCM) (Windows)
 description: You can use Microsoft Endpoint Configuration Manager (MEMCM) to configure Windows Defender Application Control (WDAC). Learn how with this step-by-step guide.
 keywords: security, malware
 ms.prod: m365-security
@@ -21,13 +21,17 @@ ms.localizationpriority: medium
 **Applies to:**
 
 - Windows 10
+- Windows 11
 - Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 You can use Microsoft Endpoint Configuration Manager (MEMCM) to configure Windows Defender Application Control (WDAC) on client machines.
 
 ## Use MEMCM's built-in policies
 
-MEMCM includes native support for WDAC, which allows you to configure Windows 10 client computers with a policy that will only allow:
+MEMCM includes native support for WDAC, which allows you to configure Windows 10 and Windows 11 client computers with a policy that will only allow:
 
 - Windows components
 - Microsoft Store apps

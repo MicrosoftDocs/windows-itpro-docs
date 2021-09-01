@@ -1,5 +1,5 @@
 ---
-title: Create a rule for packaged apps (Windows 10)
+title: Create a rule for packaged apps (Windows)
 description: This article for IT professionals shows how to create an AppLocker rule for packaged apps with a publisher condition.
 ms.assetid: e4ffd400-7860-47b3-9118-0e6853c3dfa0
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Create a rule for packaged apps
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This article for IT professionals shows how to create an AppLocker rule for packaged apps with a publisher condition.
 
@@ -32,7 +37,7 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 -   Package name
 -   Package version
 
-All the files within a package as well as the package installer share these attributes. Therefore, an AppLocker rule for a packaged app controls both the installation as well as the running of the app. Otherwise, the publisher rules for packaged apps are no different than the rest of the rule collections; they support exceptions, can be increased or decreased in scope, and can be assigned to users and groups.
+All the files within a package and the package installers share these attributes. Therefore, an AppLocker rule for a packaged app controls both the installation and the running of the app. Otherwise, the publisher rules for packaged apps are no different than the rest of the rule collections; they support exceptions, can be increased or decreased in scope, and can be assigned to users and groups.
 
 For info about the publisher condition, see [Understanding the publisher rule condition in AppLocker](understanding-the-publisher-rule-condition-in-applocker.md).
 
@@ -67,7 +72,7 @@ You can perform this task by using the Group Policy Management Console for an Ap
     <tr class="even">
     <td align="left"><p><b>Use a packaged app installer as a reference</b></p></td>
     <td align="left"><p>If selected, AppLocker requires you to choose an app installer on which to base your new rule. A packaged app installer has the .appx extension. AppLocker uses the publisher, package name, and package version of the installer to define the rule.</p></td>
-    <td align="left"><p>Your company has developed a number of internal line-of-business packaged apps. The app installers are stored on a common file share. Employees can install the required apps from that file share. You want to allow all your employees to install the Payroll app from this share. So you choose this option from the wizard, browse to the file share, and choose the installer for the Payroll app as a reference to create your rule.</p></td>
+    <td align="left"><p>Your company has developed many internal line-of-business packaged apps. The app installers are stored on a common file share. Employees can install the required apps from that file share. You want to allow all your employees to install the Payroll app from this share. So you choose this option from the wizard, browse to the file share, and choose the installer for the Payroll app as a reference to create your rule.</p></td>
     </tr>
     </tbody>
     </table>
