@@ -1,5 +1,5 @@
 ---
-title: Configure an AppLocker policy for audit only (Windows 10)
+title: Configure an AppLocker policy for audit only (Windows)
 description: This topic for IT professionals describes how to set AppLocker policies to Audit only within your IT environment by using AppLocker.
 ms.assetid: 10bc87d5-cc7f-4500-b7b3-9006e50afa50
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Configure an AppLocker policy for audit only
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes how to set AppLocker policies to **Audit only** within your IT environment by using AppLocker.
 

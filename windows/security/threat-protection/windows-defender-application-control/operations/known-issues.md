@@ -20,8 +20,13 @@ ms.localizationpriority: medium
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic covers tips and tricks for admins as well as known issues with WDAC.
 Test this configuration in your lab before enabling it in production.

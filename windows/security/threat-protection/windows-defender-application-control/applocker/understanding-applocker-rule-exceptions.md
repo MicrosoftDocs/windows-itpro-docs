@@ -1,5 +1,5 @@
 ---
-title: Understanding AppLocker rule exceptions (Windows 10)
+title: Understanding AppLocker rule exceptions (Windows)
 description: This topic describes the result of applying AppLocker rule exceptions to rule collections.
 ms.assetid: e6bb349f-ee60-4c8d-91cd-6442f2d0eb9c
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Understanding AppLocker rule exceptions
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic describes the result of applying AppLocker rule exceptions to rule collections.
 

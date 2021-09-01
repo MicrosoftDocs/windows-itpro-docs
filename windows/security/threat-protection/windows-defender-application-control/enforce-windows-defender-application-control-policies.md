@@ -1,5 +1,5 @@
 ---
-title: Enforce Windows Defender Application Control (WDAC) policies (Windows 10)
+title: Enforce Windows Defender Application Control (WDAC) policies (Windows)
 description: Learn how to switch a WDAC policy from audit to enforced mode.
 keywords: security, malware
 ms.prod: m365-security
@@ -20,13 +20,17 @@ ms.localizationpriority: medium
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 You should now have one or more WDAC policies broadly deployed in audit mode. You have analyzed events collected from the devices with those policies and you're ready to enforce. Use this procedure to prepare and deploy your WDAC policies in enforcement mode.
 
 > [!NOTE]
-> Some of the steps described in this article only apply to Windows 10 version 1903 and above. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features. Evaluate the impact for any features that may be unavailable on your clients running earlier versions of Windows 10 and Windows Server. You may need to adapt this guidance to meet your specific organization's needs.
+> Some of the steps described in this article only apply to Windows 10 version 1903 and above, or Windows 11. When using this topic to plan your own organization's WDAC policies, consider whether your managed clients can use all or some of these features. Evaluate the impact for any features that may be unavailable on your clients running earlier versions of Windows 10 and Windows Server. You may need to adapt this guidance to meet your specific organization's needs.
 
 ## Convert WDAC **base** policy from audit to enforced
 
