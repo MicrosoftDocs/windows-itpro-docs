@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 08/30/2021
+ms.date: 08/31/2021
 ms.localizationpriority: medium
 ---
 
@@ -21,7 +21,7 @@ ms.localizationpriority: medium
 > - Windows 10
 
 > [!NOTE]
-> As of Windows Insider Build 18956, sideloading is enabled by default. You can deploy a signed package onto a device without a special configuration.
+> Starting with Windows 10 2004, sideloading is enabled by default. You can deploy a signed package onto a device without a special configuration.
 
 Sideloading apps is when you install apps that aren't from an official source, such as the Microsoft store. Your organization may create its own apps, including line-of-business (LOB) apps. Many organizations create their own apps to solve problems unique to their business.
 
@@ -59,7 +59,7 @@ Unmanaged devices are devices that are not managed by your organization. These d
 > To install an app on Windows 10 and later, you can:
 >
 > - [Install Windows 10 apps from a web page](/windows/msix/app-installer/installing-windows10-apps-web).
-> - Users can double-click any `.APPX` or `.MSIX` package.
+> - Users can double-click any `.msix` or `.appx` package.
 
 ### User interface
 
@@ -90,7 +90,7 @@ Using Microsoft Intune, you can also enable sideloading apps on managed devices.
 
 This step installs the app certificate to the local device. Installing the certificate creates the trust between the app and the device.
 
-1. Open the security certificate for the `.appx` package, and select **Install Certificate**.
+1. Open the security certificate for the `.msix` package, and select **Install Certificate**.
 
 2. On the **Certificate Import Wizard**, select **Local Machine**.
 
@@ -102,6 +102,6 @@ This step installs the app certificate to the local device. Installing the certi
 
 ## Step 3: Install the app
 
-From the folder with the `.appx` package, run the Windows PowerShell `Add-AppxPackage` command to install the `.appx` package.
+From the folder with the `.msix` package, run the Windows PowerShell `Add-AppxPackage` command to install the `.msix` package.
 
 For more information on this command, see [Add-AppxPackage](/powershell/module/appx/add-appxpackage).
