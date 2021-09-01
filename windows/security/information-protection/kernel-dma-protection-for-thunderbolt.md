@@ -54,7 +54,7 @@ By default, peripherals with DMA Remapping incompatible drivers will be blocked 
 
 ## User experience
 
-![Kernel DMA protection user experience](images/kernel-dma-protection-user-experience.png)
+![Kernel DMA protection user experience.](images/kernel-dma-protection-user-experience.png)
 
 By default, peripherals with DMA remapping compatible device drivers will be automatically enumerated and started. Peripherals with DMA Remapping incompatible drivers will be blocked from starting if the peripheral was plugged in before an authorized user logs in, or while the screen is locked. Once the system is unlocked, the peripheral driver will be started by the OS, and the peripheral will continue to function normally until the system is rebooted, or the peripheral is unplugged. 
 The peripheral will continue to function normally if the user locks the screen or logs out of the system.
@@ -78,7 +78,7 @@ Systems running Windows 10 version 1803 that do support Kernel DMA Protection do
 
 Beginning with Windows 10 version 1809, you can use Security Center to check if Kernel DMA Protection is enabled. Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation details** > **Memory access protection**.
 
-![Kernel DMA protection in Security Center](bitlocker/images/kernel-dma-protection-security-center.png)
+![Kernel DMA protection in Security Center.](bitlocker/images/kernel-dma-protection-security-center.png)
 
 ### Using System information
 
@@ -86,7 +86,7 @@ Beginning with Windows 10 version 1809, you can use Security Center to check if 
 
 2. Check the value of **Kernel DMA Protection**.
 
-   ![Kernel DMA protection in System Information](bitlocker/images/kernel-dma-protection.png)
+   ![Kernel DMA protection in System Information.](bitlocker/images/kernel-dma-protection.png)
    
 3. If the current state of **Kernel DMA Protection** is OFF and **Hyper-V - Virtualization Enabled in Firmware** is NO:
 
@@ -114,11 +114,11 @@ No, Kernel DMA Protection only protects against drive-by DMA attacks after the O
 DMA-remapping is supported for specific device drivers, and is not universally supported by all devices and drivers on a platform. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the DMA Remapping Policy property in the Details tab of a device in Device Manager*. A value of 0 or 1 means that the device driver does not support DMA-remapping. A value of 2 means that the device driver supports DMA-remapping. If the property is not available, then the policy is not set by the device driver (i.e. the device driver does not support DMA-remapping).
 Please check the driver instance for the device you are testing. Some drivers may have varying values depending on the location of the device (internal vs. external).
 
-![Kernel DMA protection user experience](images/device_details_tab_1903.png)
+![Kernel DMA protection user experience.](images/device_details_tab_1903.png)
 
 *For Windows 10 versions 1803 and 1809, the property field in Device Manager uses a GUID, as highlighted in the following image. 
 
-![Kernel DMA protection user experience](images/device-details-tab.png)
+![Kernel DMA protection user experience.](images/device-details-tab.png)
 
 ### What should I do if the drivers for my PCI or Thunderbolt™ 3 peripherals do not support DMA-remapping?
 

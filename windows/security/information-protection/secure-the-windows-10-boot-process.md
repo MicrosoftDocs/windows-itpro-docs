@@ -117,7 +117,7 @@ Depending on the implementation and configuration, the server can now determine 
 Figure 2 illustrates the Measured Boot and remote attestation process.
 
 
-![Measured Boot and remote attestation process](./images/dn168167.measure_boot(en-us,MSDN.10).png)
+![Measured Boot and remote attestation process.](./images/dn168167.measure_boot(en-us,MSDN.10).png)
 
 
 **Figure 2. Measured Boot proves the PC’s health to a remote server**

@@ -1,5 +1,5 @@
 ---
-title: Allow LOB Win32 Apps on Intune-Managed S Mode Devices (Windows 10)
+title: Allow LOB Win32 Apps on Intune-Managed S Mode Devices (Windows)
 description: Using WDAC supplemental policies, you can expand the S mode base policy on your Intune-managed devices.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -23,16 +23,20 @@ ms.technology: mde
 **Applies to:**
 
 -   Windows 10
+-   Windows 11
 
-Beginning with the Windows 10 November 2019 update (build 18363), Microsoft Intune enables customers to deploy and run business critical Win32 applications as well as Windows components that are normally blocked in S mode (ex. PowerShell.exe) on their Intune-managed Windows 10 in S mode devices. 
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
-With Intune, IT Pros can now configure their managed S mode devices using a Windows Defender Application Control (WDAC) supplemental policy that expands the S mode base policy to authorize the apps their business uses. This feature changes the S mode security posture from "every app is Microsoft-verified" to "every app is verified by Microsoft or your organization". 
+Beginning with the Windows 10 November 2019 update (build 18363), Microsoft Intune enables customers to deploy and run business critical Win32 applications and Windows components that are normally blocked in S mode (ex. PowerShell.exe) on their Intune-managed Windows in S mode devices.
+
+With Intune, IT Pros can now configure their managed S mode devices using a Windows Defender Application Control (WDAC) supplemental policy that expands the S mode base policy to authorize the apps their business uses. This feature changes the S mode security posture from "every app is Microsoft-verified" to "every app is verified by Microsoft or your organization".
 
 Refer to the below video for an overview and brief demo.
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mlcp]
 
 ## Policy Authorization Process
-![Policy Authorization](images/wdac-intune-policy-authorization.png)
+![Policy Authorization.](images/wdac-intune-policy-authorization.png)
 The general steps for expanding the S mode base policy on your Intune-managed devices are to generate a supplemental policy, sign that policy, and then upload the signed policy to Intune and assign it to user or device groups. Because you need access to WDAC PowerShell cmdlets to generate your supplemental policy, you should create and manage your policies on a non-S mode device. Once the policy has been uploaded to Intune, we recommend assigning it to a single test S-mode device to verify expected functioning before deploying the policy more broadly.
 
 1. Generate a supplemental policy with WDAC tooling
@@ -42,18 +46,18 @@ The general steps for expanding the S mode base policy on your Intune-managed de
     Refer to [Deploy multiple Windows Defender Application Control Policies](deploy-multiple-windows-defender-application-control-policies.md) for guidance on creating supplemental policies and [Deploy Windows Defender Application Control policy rules and file rules](select-types-of-rules-to-create.md) to choose the right type of rules to create for your policy. 
 
     Below are a basic set of instructions for creating an S mode supplemental policy:
-    - Create a new base policy using [New-CIPolicy](/powershell/module/configci/new-cipolicy?view=win10-ps)
+    - Create a new base policy using [New-CIPolicy](/powershell/module/configci/new-cipolicy?view=win10-ps&preserve-view=true)
 
         ```powershell
         New-CIPolicy -MultiplePolicyFormat -ScanPath <path> -UserPEs -FilePath "<path>\SupplementalPolicy.xml" -Level Publisher -Fallback Hash
         ```
-    - Change it to a supplemental policy using [Set-CIPolicyIdInfo](/powershell/module/configci/set-cipolicyidinfo?view=win10-ps)
+    - Change it to a supplemental policy using [Set-CIPolicyIdInfo](/powershell/module/configci/set-cipolicyidinfo?view=win10-ps&preserve-view=true)
 
         ```powershell
         Set-CIPolicyIdInfo -SupplementsBasePolicyID 5951A96A-E0B5-4D3D-8FB8-3E5B61030784 -FilePath "<path>\SupplementalPolicy.xml"
         ```
         Policies which are supplementing the S mode base policy must use **-SupplementsBasePolicyID 5951A96A-E0B5-4D3D-8FB8-3E5B61030784**, as this is the S mode policy ID.
-    - Put the policy in enforce mode using [Set-RuleOption](/powershell/module/configci/set-ruleoption?view=win10-ps)
+    - Put the policy in enforce mode using [Set-RuleOption](/powershell/module/configci/set-ruleoption?view=win10-ps&preserve-view=true)
 
         ```powershell
         Set-RuleOption -FilePath "<path>\SupplementalPolicy.xml>" -Option 3 –Delete
@@ -64,7 +68,7 @@ The general steps for expanding the S mode base policy on your Intune-managed de
         ```powershell
         Add-SignerRule -FilePath <policypath> -CertificatePath <certpath> -User -Update
         ```
-    - Convert to .bin using [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy?view=win10-ps)
+    - Convert to .bin using [ConvertFrom-CIPolicy](/powershell/module/configci/convertfrom-cipolicy?view=win10-ps&preserve-view=true)
 
         ```powershell
         ConvertFrom-CIPolicy -XmlFilePath "<path>\SupplementalPolicy.xml" -BinaryFilePath "<path>\SupplementalPolicy.bin>
@@ -81,14 +85,14 @@ The general steps for expanding the S mode base policy on your Intune-managed de
     Go to the Azure portal online and navigate to the Microsoft Intune page, then go to the Client apps blade and select 'S mode supplemental policies'. Upload the signed policy to Intune and assign it to user or device groups. Intune will generate tenant- and device- specific authorization tokens. Intune then deploys the corresponding authorization token and supplemental policy to each device in the assigned group. Together, these expand the S mode base policy on the device. 
 
 > [!Note]
-> When updating your supplemental policy, ensure that the new version number is strictly greater than the previous one. Using the same version number is not allowed by Intune. Refer to [Set-CIPolicyVersion](/powershell/module/configci/set-cipolicyversion?view=win10-ps) for information on setting the version number.
+> When updating your supplemental policy, ensure that the new version number is strictly greater than the previous one. Using the same version number is not allowed by Intune. Refer to [Set-CIPolicyVersion](/powershell/module/configci/set-cipolicyversion?view=win10-ps&preserve-view=true) for information on setting the version number.
 
 ## Standard Process for Deploying Apps through Intune
-![Deploying Apps through Intune](images/wdac-intune-app-deployment.png)
+![Deploying Apps through Intune.](images/wdac-intune-app-deployment.png)
 Refer to [Intune Standalone - Win32 app management](/intune/apps-win32-app-management)  for guidance on the existing procedure of packaging signed catalogs and app deployment.
 
 ## Optional: Process for Deploying Apps using Catalogs
-![Deploying Apps using Catalogs](images/wdac-intune-app-catalogs.png)
+![Deploying Apps using Catalogs.](images/wdac-intune-app-catalogs.png)
 Your supplemental policy can be used to significantly relax the S mode base policy, but there are security trade-offs you must consider in doing so. For example, you can use a signer rule to trust an external signer, but that will authorize all apps signed by that certificate, which may include apps you don't want to allow as well.
 
 Instead of authorizing signers external to your organization, Intune has added new functionality to make it easier to authorize existing applications (without requiring repackaging or access to the source code) through the use of signed catalogs. This works for apps which may be unsigned or even signed apps when you don't want to trust all apps that may share the same signing certificate.

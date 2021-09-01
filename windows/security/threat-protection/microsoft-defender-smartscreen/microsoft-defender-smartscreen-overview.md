@@ -1,7 +1,6 @@
 ---
-title: Microsoft Defender SmartScreen overview (Windows 10)
+title: Microsoft Defender SmartScreen overview (Windows)
 description: Learn how Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files.
-keywords: SmartScreen Filter, Windows SmartScreen, Microsoft Defender SmartScreen
 ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -20,6 +19,7 @@ ms.technology: mde
 **Applies to:**
 
 - Windows 10
+- Windows 11
 - Microsoft Edge
 
 Microsoft Defender SmartScreen protects against phishing or malware websites and applications, and the downloading of potentially malicious files.
@@ -61,7 +61,7 @@ If you believe a warning or block was incorrectly shown for a file or applicatio
 
 When submitting Microsoft Defender SmartScreen products, make sure to select **Microsoft Defender SmartScreen** from the product menu.
 
-![Windows Security, Microsoft Defender SmartScreen controls](images/Microsoft-defender-smartscreen-submission.png)
+![Windows Security, Microsoft Defender SmartScreen controls.](images/Microsoft-defender-smartscreen-submission.png)
 
 ## Viewing Microsoft Defender SmartScreen anti-phishing events
 

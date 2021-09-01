@@ -24,7 +24,7 @@ ms.topic: article
 
 From its release, Windows 10 has supported remote connections to PCs joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is [joined to Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join). Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session](/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics).
 
-![Remote Desktop Connection client](images/rdp.png)
+![Remote Desktop Connection client.](images/rdp.png)
 
 ## Set up
 
@@ -40,7 +40,7 @@ Ensure [Remote Credential Guard](/windows/access-protection/remote-credential-gu
   
   2. Enable **Allow remote connections to this computer** and select **Allow connections only from computers running Remote Desktop with Network Level Authentication**.
 
-     ![Allow remote connections to this computer](images/allow-rdp.png)
+     ![Allow remote connections to this computer.](images/allow-rdp.png)
 
   3. If the user who joined the PC to Azure AD is the only one who is going to connect remotely, no additional configuration is needed. To allow additional users or groups to connect to the PC, you must allow remote connections for the specified users or groups. Users can be added either manually or through MDM policies:
      
