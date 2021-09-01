@@ -1,5 +1,5 @@
 ---
-title: Get started with the Microsoft Deployment Toolkit (MDT) (Windows 10)
+title: Get started with the Microsoft Deployment Toolkit (MDT) (Windows 10/11)
 description: This topic will help you gain a better understanding of how to use the Microsoft Deployment Toolkit (MDT), as part of a Windows operating system deployment.
 ms.assetid: a256442c-be47-4bb9-a105-c831f58ce3ee
 ms.reviewer: 
@@ -37,7 +37,7 @@ MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1,
 MDT has been in existence since 2003, when it was first introduced as Business Desktop Deployment (BDD) 1.0. The toolkit has evolved, both in functionality and popularity, and today it is considered fundamental to Windows operating system and enterprise application deployment.
 
 MDT has many useful features, such as:
-- **Windows Client support.** Supports Windows 7, Windows 8.1, and Windows 10.
+- **Windows Client support.** Supports Windows 7, Windows 8.1, Windows 10, and Windows 11.
 - **Windows Server support.** Supports Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019.
 - **Additional operating systems support.** Supports Windows Thin PC and [Windows Embedded POSReady 7](https://www.microsoft.com/en-us/download/details.aspx?id=26558), as well as Windows 8.1 Embedded Industry.
 - **UEFI support.** Supports deployment to machines using Unified Extensible Firmware Interface (UEFI) version 2.3.1.
