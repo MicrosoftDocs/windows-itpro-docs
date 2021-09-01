@@ -42,10 +42,10 @@ landingContent:
         links:
         - text: Trusted Platform Module
           url: /windows/security/information-protection/tpm/trusted-platform-module-top-node.md
-        - text: Kernel DMA Protection
-          url: /windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md
         - text: Protect domain credentials
           url: /windows/security/identity-protection/credential-guard/credential-guard.md
+        - text: Kernel DMA Protection
+          url: /windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
