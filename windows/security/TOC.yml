@@ -9,7 +9,7 @@
     - name: Common Criteria Certifications
       href: threat-protection/windows-platform-common-criteria.md
     - name: Microsoft Security Development Lifecycle
-      href: msft-security-dev-lifecycle.md
+      href: /threat-protection/msft-security-dev-lifecycle.md
 - name: Hardware security
   items: 
     - name: Trusted Platform Module
