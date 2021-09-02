@@ -62,3 +62,12 @@ landingContent:
           url: /windows/security/identity-protection/configure-s-mime.md
         - text: Encrypted hard drive
           url: /windows/security/information-protection/encrypted-hard-drive.md
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Threat protection
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Security baselines
+          url: /windows/security/threat-protection/windows-security-baselines.md
