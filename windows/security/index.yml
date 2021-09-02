@@ -71,3 +71,31 @@ landingContent:
         links:
         - text: Security baselines
           url: /windows/security/threat-protection/windows-security-baselines.md
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Application protection
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Security baselines
+          url: /windows/security/threat-protection/windows-security-baselines.md
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: User protection
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: article (change link later)
+          url: /windows/security/threat-protection/windows-security-baselines.md
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Privacy controls
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Windows and Privacy Compliance
+          url: /windows/privacy/windows-10-and-privacy-compliance.md
+
