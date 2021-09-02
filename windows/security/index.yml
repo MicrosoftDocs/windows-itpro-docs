@@ -62,7 +62,6 @@ landingContent:
           url: /windows/security/information-protection/encrypted-hard-drive.md
         - text: Network security
           url: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
-
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
@@ -70,7 +69,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Security baselines
+        - text: Security baselines (more to follow)
           url: /windows/security/threat-protection/windows-security-baselines.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
@@ -79,7 +78,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Security baselines
+        - text: article (change link later, add more)
           url: /windows/security/threat-protection/windows-security-baselines.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
