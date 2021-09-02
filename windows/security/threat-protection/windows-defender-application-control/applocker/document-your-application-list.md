@@ -1,5 +1,5 @@
 ---
-title: Document your app list (Windows 10)
+title: Document your app list (Windows)
 description: This planning topic describes the app information that you should document when you create a list of apps for AppLocker policies.
 ms.assetid: b155284b-f75d-4405-aecf-b74221622dc0
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Document your app list
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This planning topic describes the app information that you should document when you create a list of apps for AppLocker policies.
 

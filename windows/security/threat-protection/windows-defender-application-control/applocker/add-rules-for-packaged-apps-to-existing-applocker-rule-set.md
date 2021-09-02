@@ -1,5 +1,5 @@
 ---
-title: Add rules for packaged apps to existing AppLocker rule-set (Windows 10)
+title: Add rules for packaged apps to existing AppLocker rule-set (Windows)
 description: This topic for IT professionals describes how to update your existing AppLocker policies for packaged apps using the Remote Server Administration Toolkit (RSAT).
 ms.assetid: 758c2a9f-c2a3-418c-83bc-fd335a94097f
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Add rules for packaged apps to existing AppLocker rule-set
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes how to update your existing AppLocker policies for packaged apps using the Remote Server Administration Toolkit (RSAT).
 

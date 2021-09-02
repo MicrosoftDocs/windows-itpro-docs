@@ -1,6 +1,6 @@
 ---
-title: Understand Windows Defender Application Control (WDAC) policy rules and file rules (Windows 10)
-description: Learn how WDAC policy rules and file rules can control your Windows 10 computers.
+title: Understand Windows Defender Application Control (WDAC) policy rules and file rules (Windows)
+description: Learn how WDAC policy rules and file rules can control your Windows 10 and Windows 11 computers.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -22,10 +22,14 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
-Windows Defender Application Control (WDAC) can control what runs on Windows 10 by setting policies that specify whether a driver or application is trusted. A policy includes *policy rules* that control options such as audit mode, and *file rules* (or *file rule levels*) that specify how applications are identified and trusted.
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+
+Windows Defender Application Control (WDAC) can control what runs on Windows 10 and Windows 11 by setting policies that specify whether a driver or application is trusted. A policy includes *policy rules* that control options such as audit mode, and *file rules* (or *file rule levels*) that specify how applications are identified and trusted.
 
 ## Windows Defender Application Control policy rules
 
@@ -58,10 +62,10 @@ You can set several rule options within a WDAC policy. Table 1 describes each ru
 | **5 Enabled:Inherit Default Policy** | This option is reserved for future use and currently has no effect. | Yes |
 | **6 Enabled:Unsigned System Integrity Policy (Default)** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and the certificates that are trusted for future policy updates must be identified in the UpdatePolicySigners section. | Yes |
 | **7 Allowed:Debug Policy Augmented** | This option is not currently supported. | Yes |
-| **8 Required:EV Signers** | This rule requires that drivers must be WHQL signed and have been submitted by a partner with an Extended Verification (EV) certificate. All Windows 10 and later drivers will meet this requirement. | No |
+| **8 Required:EV Signers** | This rule requires that drivers must be WHQL signed and have been submitted by a partner with an Extended Verification (EV) certificate. All Windows 10 and Windows 11 drivers will meet this requirement. | No |
 | **9 Enabled:Advanced Boot Options Menu** | The F8 preboot menu is disabled by default for all WDAC policies. Setting this rule option allows the F8 menu to appear to physically present users. | No |
 | **10 Enabled:Boot Audit on Failure** | Used when the WDAC policy is in enforcement mode. When a driver fails during startup, the WDAC policy will be placed in audit mode so that Windows will load. Administrators can validate the reason for the failure in the CodeIntegrity event log. | No |
-| **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is required to run HTA files, and is supported on 1709, 1803, and 1809 builds with the 2019 10C LCU or higher, and on devices with the Windows 10 May 2019 Update (1903) and higher. Using it on versions of Windows 10 without the proper update may have unintended results. | No |
+| **11 Disabled:Script Enforcement** | This option disables script enforcement options. Unsigned PowerShell scripts and interactive PowerShell are no longer restricted to [Constrained Language Mode](/powershell/module/microsoft.powershell.core/about/about_language_modes). NOTE: This option is required to run HTA files, and is supported on 1709, 1803, and 1809 builds with the 2019 10C LCU or higher, and on devices with the Windows 10 May 2019 Update (1903) and higher. Using it on versions of Windows without the proper update may have unintended results. | No |
 | **12 Required:Enforce Store Applications** | If this rule option is enabled, WDAC policies will also apply to Universal Windows applications. | No |
 | **13 Enabled:Managed Installer** | Use this option to automatically allow applications installed by a managed installer. For more information, see [Authorize apps deployed with a WDAC managed installer](configure-authorized-apps-deployed-with-a-managed-installer.md) | Yes |
 | **14 Enabled:Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). | Yes |
