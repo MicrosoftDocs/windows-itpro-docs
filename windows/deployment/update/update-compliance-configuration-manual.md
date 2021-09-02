@@ -80,12 +80,3 @@ To enable data sharing between devices, your network, and Microsoft's Diagnostic
 Many Windows and Microsoft services are required to ensure that not only the device can function, but Update Compliance can see device data. It is recommended that you allow all default services from the out-of-box experience to remain running. The [Update Compliance Configuration Script](update-compliance-configuration-script.md) checks whether the majority of these services are running or are allowed to run automatically.
 
 
-## Run a full Census sync
-
-Census is a service that runs on a regular schedule on Windows devices. A number of key device attributes, like what operating system edition is installed on the device, are included in the Census payload. However, to save network load and system resources, data that tends to be more static (like edition) is sent approximately once per week rather than on every daily run. Because of this behavior, these attributes can take longer to appear in Update Compliance unless you start a full Census sync. The Update Compliance Configuration Script will do a full sync. 
-
-A full Census sync adds a new registry value to Census's path. When this registry value is added, Census's configuration is overridden to force a full sync. For Census to work normally, this registry value should be enabled, Census should be started manually, and then the registry value should be disabled. Follow these steps:
-
-1. For every device you are manually configuring for Update Compliance and do not plan to use the [Update Compliance Configuration Script](update-compliance-configuration-script.md), add or modify the registry key located at **HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Census** to include a new **DWORD value** named **FullSync** and set to **1**. 
-2. Run Devicecensus.exe with administrator privileges on every device. Devicecensus.exe is in the System32 folder. No additional run parameters are required. 
-3. After Devicecensus.exe has run, the **FullSync** registry value can be removed or set to **0**.
