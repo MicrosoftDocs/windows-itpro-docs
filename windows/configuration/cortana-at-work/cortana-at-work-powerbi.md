@@ -1,5 +1,5 @@
 ---
-title: Set up and test Cortana for Power BI in your organization (Windows 10)
+title: Set up and test Cortana for Power BI in your organization (Windows)
 description: How to integrate Cortana with Power BI to help your employees get answers directly from your key business data.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -25,7 +25,7 @@ Integration between Cortana and Power BI shows how Cortana can work with custom 
 ## Before you begin
 To use this walkthrough, you’ll need:
 
-- **Windows 10**. You’ll need to be running at least Windows 10, version 1703.
+- **Windows 10 or Windows 11**. You’ll need your PC to be running at least Windows 10, version 1703 or later, or Windows 11.
 
 - **Cortana**. You need to have Cortana turned on and be logged into your account.
 
@@ -56,7 +56,7 @@ Before you can start this testing scenario, you must first set up your test envi
 
 4. Click **Samples** from the **Content Pack Library** area of the **Get Data** screen.
 
-    ![Cortana at work, showing the Samples link.](../images/cortana-powerbi-getdata-samples.png)
+    ![Cortana at work, showing Samples link](../images/cortana-powerbi-getdata-samples.png)
 
 5. Click **Retail Analysis Sample**, and then click **Connect**.
 
@@ -79,7 +79,7 @@ Before you can start this testing scenario, you must first set up your test envi
     ![Cortana at work, showing where to find the dataset options.](../images/cortana-powerbi-retail-analysis-dataset.png)
 
     >[!NOTE]
-    >It can take up to 30 minutes for a new dataset to appear for Power BI and Cortana. Logging in and out of Windows 10, or otherwise restarting Cortana, causes the new content to appear immediately.<p>If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you’ll need to re-publish for your colleagues to also use it with Cortana.
+    >It can take up to 30 minutes for a new dataset to appear for Power BI and Cortana. Logging in and out of Windows, or otherwise restarting Cortana, causes the new content to appear immediately.<p>If you enable a dataset for Cortana, and that dataset is part of a content pack you own, you’ll need to re-publish for your colleagues to also use it with Cortana.
 
 ## Create a custom Answer Page for Cortana
 You must create special reports, known as _Answer Pages_, to display the most commonly asked answers in Cortana. For example, if you want Cortana to quickly show sales data to your employees, you can create a 2016 sales data Answer Page that shows sales data, with various pivots, in Cortana.
@@ -87,7 +87,7 @@ You must create special reports, known as _Answer Pages_, to display the most co
 After you’ve finished creating your Answer Page, you can continue to the included testing scenarios.
 
 >[!NOTE]
->It can take up to 30 minutes for a custom Answer Page to appear for Power BI and Cortana. Logging in and out of Windows 10, or otherwise restarting Cortana, causes the new content to appear immediately.
+>It can take up to 30 minutes for a custom Answer Page to appear for Power BI and Cortana. Logging in and out of Windows, or otherwise restarting Cortana, causes the new content to appear immediately.
 
 **To create a custom sales data Answer Page for Cortana**
 1. In Power BI, click **My Workspace**, click **Create**, and then click **Report**.
@@ -116,7 +116,7 @@ After you’ve finished creating your Answer Page, you can continue to the inclu
     
 6. Click **File**, click **Save as**, and save the report as _Sales data 2016_. 
 
-    Because this is part of the Retail Analysis Sample, it will automatically be included as part of the dataset you included for Cortana. However, you will still need to log in and out of Windows 10, or otherwise restart Cortana, before the new content appears.
+    Because this is part of the Retail Analysis Sample, it will automatically be included as part of the dataset you included for Cortana. However, you will still need to log in and out of Windows, or otherwise restart Cortana, before the new content appears.
 
 ## Test Scenario: Use Cortana to show info from Power BI in your organization
 Now that you’ve set up your device, you can use Cortana to show your info from within Power BI.
