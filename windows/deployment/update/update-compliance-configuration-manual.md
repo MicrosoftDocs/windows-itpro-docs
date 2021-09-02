@@ -27,7 +27,7 @@ The requirements are separated into different categories:
 1. Ensuring the [**required policies**](#required-policies) for Update Compliance are correctly configured.
 2. Devices in every network topography must send data to the [**required endpoints**](#required-endpoints) for Update Compliance. For example, devices in both main and satellite offices, which might have different network configurations must be able to reach the endpoints.
 3. Ensure [**Required Windows services**](#required-services) are running or are scheduled to run. It is recommended all Microsoft and Windows services are set to their out-of-box defaults to ensure proper functionality.
-4. [**Run a full Census sync**](#run-a-full-census-sync) on new devices to ensure that all necessary data points are collected.
+
 
 ## Required policies
 
