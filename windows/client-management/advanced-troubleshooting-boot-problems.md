@@ -31,8 +31,7 @@ There are several reasons why a Windows-based computer may have problems during 
 
 **1. PreBoot**
 
-The PC’s firmware initiates a Power-On Self Test (POST) and loads firmware settings. This pre-boot process ends when a valid system disk is detected. Firmware reads the master boot record (MBR), and then starts Windows Boot
-Manager.
+The PC’s firmware initiates a Power-On Self Test (POST) and loads firmware settings. This pre-boot process ends when a valid system disk is detected. Firmware reads the master boot record (MBR), and then starts Windows Boot Manager.
 
 **2. Windows Boot Manager**
 
