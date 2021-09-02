@@ -28,3 +28,6 @@ The following features and functionalities have been removed from the installed 
 | ----------- | --------------------- | ------ |
 | Windows Deployment Services (WDS) image deployment | End to end WDS deployment workflows that use **boot.wim** from installation media are affected. For more information, see [Windows Deployment Services (WDS) boot.wim support](../wds-boot-support.md) | Windows 11 |
 
+## Also see
+
+[Features removed or no longer developed starting with Windows Server 2022](/windows-server/get-started/removed-deprecated-features-windows-server-2022#features-were-no-longer-developing)<br>
