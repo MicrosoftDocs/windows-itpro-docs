@@ -33,6 +33,10 @@
           href: information-protection/tpm/switch-pcr-banks-on-tpm-2-0-devices.md
         - name: TPM recommendations
           href: information-protection/tpm/tpm-recommendations.md
+    - name: Hardware-based root of trust
+      href: threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md
+    - name: System Guard Secure Launch and SMM protection
+      href: threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md
     - name: Protect derived domain credentials with Windows Defender Credential Guard
       href: identity-protection/credential-guard/credential-guard.md
     - name: Kernel DMA Protection
