@@ -1,5 +1,5 @@
 ---
-title: Understanding Application Control event IDs (Windows 10)
+title: Understanding Application Control event IDs (Windows)
 description: Learn what different Windows Defender Application Control event IDs signify.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
