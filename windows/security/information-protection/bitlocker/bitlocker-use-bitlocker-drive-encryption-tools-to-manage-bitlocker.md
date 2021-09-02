@@ -21,7 +21,10 @@ ms.custom: bitlocker
 # BitLocker: Use BitLocker Drive Encryption Tools to manage BitLocker
 
 **Applies to**
--   Windows 10
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 This article for the IT professional describes how to use tools to manage BitLocker.
 

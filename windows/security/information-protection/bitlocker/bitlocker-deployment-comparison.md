@@ -20,7 +20,9 @@ ms.custom: bitlocker
 
 **Applies to**
 
-- Windows 10
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
 This article depicts the BitLocker deployment comparison chart.
 
@@ -28,9 +30,9 @@ This article depicts the BitLocker deployment comparison chart.
 
 | Requirements |Microsoft Intune  |Microsoft Endpoint Configuration Manager  |Microsoft BitLocker Administration and Monitoring (MBAM) |
 |---------|---------|---------|---------|
-|Minimum client operating system version     |Windows 10     | Windows 10 and Windows 8.1  | Windows 7 and later        |
-|Supported Windows 10 SKUs     |    Enterprise, Pro, Education     |    Enterprise, Pro, Education     |     Enterprise    |
-|Minimum Windows 10 version     |1909   |    None     |    None     |
+|Minimum client operating system version     |Windows 11 and Windows 10    | Windows 11, Windows 10, and Windows 8.1  | Windows 7 and later        |
+|Supported Windows SKUs     |    Enterprise, Pro, Education     |    Enterprise, Pro, Education     |     Enterprise    |
+|Minimum Windows version     |1909   |    None     |    None     |
 |Supported domain-joined status     |     Microsoft Azure Active Directory (Azure AD) joined, hybrid Azure AD joined    |   Active Directory joined, hybrid Azure AD joined      |     Active Directory joined    |
 |Permissions required to manage policies     |    Endpoint security manager or custom     |   Full administrator or custom      |     Domain Admin or Delegated GPO access    |
 |Cloud or on premises      |     Cloud    |  On premises     |    On premises     |
@@ -54,7 +56,7 @@ This article depicts the BitLocker deployment comparison chart.
 |Can be administered outside company network     |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::     |         |
 |Support for organization unique IDs     |         |      :::image type="content" source="images/yes-icon.png" alt-text="supported.":::   |     :::image type="content" source="images/yes-icon.png" alt-text="supported.":::    |
 |Self-service recovery      |    Yes (through Azure AD or Company Portal app)     |   :::image type="content" source="images/yes-icon.png" alt-text="supported.":::    |    :::image type="content" source="images/yes-icon.png" alt-text="supported.":::     |
-|Recovery password rotation for fixed and operating environment drives     |   Yes (Windows 10, version 1909 and later)     |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |
+|Recovery password rotation for fixed and operating environment drives     |   Yes (Windows 10, version 1909 and later or Windows 11)     |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |
 |Wait to complete encryption until recovery information is backed up to Azure AD      |     :::image type="content" source="images/yes-icon.png" alt-text="supported.":::    |       |        |
 |Wait to complete encryption until recovery information is backed up to Active Directory      |         |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::     |    :::image type="content" source="images/yes-icon.png" alt-text="supported.":::     |
 |Allow or deny Data Recovery Agent     |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |  :::image type="content" source="images/yes-icon.png" alt-text="supported.":::       |
