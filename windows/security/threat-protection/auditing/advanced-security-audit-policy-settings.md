@@ -21,7 +21,8 @@ ms.technology: mde
 # Advanced security audit policy settings
 
 **Applies to**
--   Windows 10
+- Windows 10
+- Windows 11
 
 This reference for IT professionals provides information about the advanced audit policy settings that are available in Windows and the audit events that they generate.
 
