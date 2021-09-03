@@ -1,5 +1,5 @@
 ---
-title: Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules  (Windows 10)
+title: Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules (Windows)
 description: WDAC policies can be used not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,8 +22,12 @@ ms.technology: mde
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 As of Windows 10, version 1703, you can use WDAC policies not only to control applications, but also to control whether specific plug-ins, add-ins, and modules can run from specific apps (such as a line-of-business application or a browser):
 
