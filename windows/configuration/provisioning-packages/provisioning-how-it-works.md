@@ -1,14 +1,14 @@
 ---
 title: How provisioning works in Windows 
 description: A provisioning package (.ppkg) is a container for a collection of configuration settings. 
-ms.prod: w10,w11
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 09/03/2021
 ms.reviewer: 
 manager: dansimp
 ---
