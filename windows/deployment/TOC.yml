@@ -71,9 +71,7 @@
             - name: Features we removed
               items:
                 - name: Windows 10 features removed
-                  href: planning/windows-10-removed-features.md
-                - name: Windows 11 features removed
-                  href: planning/windows-11-removed-features.md         
+                  href: planning/windows-10-removed-features.md       
 
     - name: Prepare
       items: 

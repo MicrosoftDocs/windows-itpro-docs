@@ -30,8 +30,7 @@ The following topic lists features that are no longer being developed. These fea
 
 The following topics have details about features that have been removed from Windows 10 or Windows 11. This includes features that are present in Windows 10, but are removed in Windows 11.
 
-[Windows 10 features we removed](windows-10-removed-features.md)<br>
-[Windows 11 features we removed](windows-11-removed-features.md)
+[Windows 10 features we removed](windows-10-removed-features.md)
 
 ## Terminology
 
