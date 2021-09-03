@@ -2,6 +2,12 @@
   href: index.yml
 - name: Customize the appearance
   items:
+    - name: Windows 11
+      items:
+        - name: Start layout
+          href: use-json-customize-start-menu-windows.md
+        - name: Supported Start layout CSPs
+          href: supported-csp-start-menu-layout-windows.md
     - name: Windows 10 Start and taskbar
       items:
         - name: Start layout and taskbar
