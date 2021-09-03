@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 - Windows 11
 
-The Windows OS exposes CSPs that are used by MDM providers, like Microsoft Endpoint Manager. In an MDM policy, these CSPs are settings that you configure in a policy. When the policy is ready, you deploy the policy to your devices.
+The Windows OS exposes CSPs that are used by MDM providers, like [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). In an MDM policy, these CSPs are settings that you configure in a policy. When the policy is ready, you deploy the policy to your devices.
 
 This article lists the CSPs that are available to customize the Start menu layout for Windows 11 and later devices. Windows 11 uses the [Policy CSP - Start](../client-management/mdm/policy-csp-start.md).
 

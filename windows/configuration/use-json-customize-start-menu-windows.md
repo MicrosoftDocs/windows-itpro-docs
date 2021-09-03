@@ -26,7 +26,7 @@ ms.localizationpriority: medium
 
 Your organization can deploy a customized Start layout to your Windows 11 devices. Customizing the Start layout is common when you have similar devices used by many users, and on devices that are locked down.
 
-For example, you can create a pinned list that includes a common set of apps, or remove the default pinned apps. As an administrator, you can use this feature to pin Win32 apps, remove default pinned apps, order the app list, and more. 
+For example, you can create a pinned list that includes a common set of apps. As an administrator, you can use this feature to pin Win32 apps, remove default pinned apps, order the app list, and more. 
 
 This article shows you how to export an existing Start menu layout, and use the syntax in a Microsoft Intune MDM policy.
 
@@ -52,19 +52,19 @@ Starting with Windows 11, the Start menu is updated. The apps are shown as a fla
 
 The layout has the following areas:
 
-- **Pinned**: This area shows some of the apps that are installed on the devices. You can customize this section using the **ConfigureStartPins** policy, and create a pinned list of apps you want on the devices. You can also remove apps that are pinned by default.
+- **Pinned**: This area shows some of the apps that are installed on the device. You can customize this section using the **ConfigureStartPins** policy, and create a pinned list of apps you want on the devices. You can also remove apps that are pinned by default.
 
   This article shows you how to use the **ConfigureStartPins** policy.
 
 - **All apps**: Users can select this option to see a list of all the apps on the device. This section can't be customized.
-- **Recommended**: This area shows recent files that have been opened. You can't hide this section, but you can prevent files from showing. The [Start/HideRecentJumplists CSP](../windows/client-management/mdm/policy-csp-start.md#start-hiderecentjumplists) controls this setting, and can be set using an MDM provider, like Microsoft Intune.
+- **Recommended**: This area shows recent files that have been opened. You can't hide this section, but you can prevent files from showing. The [Start/HideRecentJumplists CSP](../client-management/mdm/policy-csp-start.md#start-hiderecentjumplists) controls this setting, and can be set using an MDM provider, like Microsoft Intune.
 
-  For more information on the Start menu settings you can configure in a Microsoft Intune policy, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
+  For more information on the Start menu settings you can configure in a Microsoft Intune policy, see [Windows 10 (and later) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
 
 ### What you need to know
 
 - When you customize the Start layout, you overwrite the entire full layout. Users can't pin, unpin, or uninstall apps from Start. Users can see and open all apps in the **All Apps** view, but they can't pin any apps to Start. A partial Start layout isn't available.
-- On Windows 11 and newer devices, you must create a new JSON file. You can't use a file from a previous OS, such as Windows 10.
+- On Windows 11 and later devices, you must create a new JSON file. You can't use a file from a previous OS, such as Windows 10.
 
 ## Create the JSON file
 
