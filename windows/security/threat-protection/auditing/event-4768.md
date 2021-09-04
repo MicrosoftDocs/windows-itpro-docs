@@ -41,7 +41,7 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 <br clear="all">
 
 ***Event XML:***
-```
+```xml
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
