@@ -155,7 +155,7 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 > [!NOTE]
 > In the table below **“MSB 0”** bit numbering is used, because RFC documents use this style. In “MSB 0” style bit numbering begins from left.
 > 
-> :::image type="content" alt-text="MSB illustration." source="images/msb.png":::
+> <img src="images/msb.png" alt="MSB illustration" width="224" height="57" />
 
 The most common values:
 
