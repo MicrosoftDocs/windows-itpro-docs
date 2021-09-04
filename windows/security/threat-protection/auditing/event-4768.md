@@ -35,7 +35,8 @@ If TGT issue fails then you will see Failure event with **Result Code** field no
 
 This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “[4771](event-4771.md): Kerberos pre-authentication failed.” generates instead.
 
-> **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
+> [!NOTE]
+> For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
 <br clear="all">
 
@@ -101,7 +102,8 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-> **Note**&nbsp;&nbsp;A **Kerberos Realm** is a set of managed nodes that share the same Kerberos database. The Kerberos database resides on the Kerberos master computer system, which should be kept in a physically secure room. Active Directory domain is the example of Kerberos Realm in the Microsoft Windows Active Directory world.
+    > [!NOTE]
+    > A **Kerberos Realm** is a set of managed nodes that share the same Kerberos database. The Kerberos database resides on the Kerberos master computer system, which should be kept in a physically secure room. Active Directory domain is the example of Kerberos Realm in the Microsoft Windows Active Directory world.
 
 -   **User ID** \[Type = SID\]**:** SID of account for which (TGT) ticket was requested. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
@@ -109,7 +111,8 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 
     -   **NULL SID** – this value shows in [4768](event-4768.md) Failure events.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+    > [!NOTE]
+    > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 **Service Information:**
 
@@ -149,7 +152,10 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 
     -   Using **MSB 0** bit numbering we have bit 1, 8, 15 and 27 set = Forwardable, Renewable, Canonicalize, Renewable-ok.
 
-> **Note**&nbsp;&nbsp;In the table below **“MSB 0”** bit numbering is used, because RFC documents use this style. In “MSB 0” style bit numbering begins from left.<br><img src="images/msb.png" alt="MSB illustration" width="224" height="57" />
+> [!NOTE]
+> In the table below **“MSB 0”** bit numbering is used, because RFC documents use this style. In “MSB 0” style bit numbering begins from left.
+> 
+> :::image type="content" alt-text="MSB illustration." source="images/msb.png":::
 
 The most common values:
 
@@ -186,8 +192,9 @@ The most common values:
 | 31    | Validate                 | This option is used only by the ticket-granting service. The VALIDATE option indicates that the request is to validate a postdated ticket. Should not be in use, because postdated tickets are not supported by KILE.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
 > Table 2. Kerberos ticket flags.
-> 
-> **Note**&nbsp;&nbsp;[KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) **(Microsoft Kerberos Protocol Extension)** – Kerberos protocol extensions used in Microsoft operating systems. These extensions provide additional capability for authorization information including group memberships, interactive logon information, and integrity levels.
+
+> [!NOTE]
+> [KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) **(Microsoft Kerberos Protocol Extension)** – Kerberos protocol extensions used in Microsoft operating systems. These extensions provide additional capability for authorization information including group memberships, interactive logon information, and integrity levels.
 
 -   **Result Code** \[Type = HexInt32\]**:** hexadecimal result code of TGT issue operation. The “Table 3. TGT/TGS issue error codes.” contains the list of the most common error codes for this event.
 
