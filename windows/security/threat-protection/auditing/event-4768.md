@@ -21,7 +21,7 @@ ms.technology: mde
 -   Windows Server 2016
 
 
-<img src="images/event-4768.png" alt="Event 4768 illustration" width="554" height="659" hspace="10" align="left" />
+:::image type="content" alt-text="Event 4768 illustration." source="images/event-4768.png":::
 
 ***Subcategory:***&nbsp;[Audit Kerberos Authentication Service](audit-kerberos-authentication-service.md)
 
