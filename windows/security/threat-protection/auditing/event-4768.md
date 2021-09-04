@@ -191,7 +191,7 @@ The most common values:
 | 30    | Renew                    | The RENEW option indicates that the present request is for a renewal. The ticket provided is encrypted in the secret key for the server on which it is valid. This option will only be honored if the ticket to be renewed has its RENEWABLE flag set and if the time in it’s renew-till field has not passed. The ticket to be renewed is passed in the padata field as part of the authentication header.                                                                                                                                                                                                                                                  |
 | 31    | Validate                 | This option is used only by the ticket-granting service. The VALIDATE option indicates that the request is to validate a postdated ticket. Should not be in use, because postdated tickets are not supported by KILE.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
-> Table 2. Kerberos ticket flags.
+## Table 2. Kerberos ticket flags
 
 > [!NOTE]
 > [KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) **(Microsoft Kerberos Protocol Extension)** – Kerberos protocol extensions used in Microsoft operating systems. These extensions provide additional capability for authorization information including group memberships, interactive logon information, and integrity levels.
@@ -259,12 +259,15 @@ The most common values:
 | 0x43                                                       | KRB\_AP\_ERR\_NO\_TGT                  | No TGT was presented or available                                           | In user-to-user authentication if the service does not possess a ticket granting ticket, it should return the error KRB\_AP\_ERR\_NO\_TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | 0x44                                                       | KDC\_ERR\_WRONG\_REALM                 | Incorrect domain or principal                                               | Although this error rarely occurs, it occurs when a client presents a cross-realm TGT to a realm other than the one specified in the TGT. Typically, this results from incorrectly configured DNS.                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-> <span id="_Ref432868145" class="anchor"></span>Table 3. TGT/TGS issue error codes.
+<span id="_Ref432868145" class="anchor"></span>
+
+## Table 3. TGT/TGS issue error codes
 
 -   **Ticket Encryption Type** \[Type = HexInt32\]: the cryptographic suite that was used for issued TGT.
 
 
 <span id="kerberos-encryption-types" />
+
 ## Table 4. Kerberos encryption types
 
 | Type | Type Name               | Description                                                                       |
@@ -281,7 +284,8 @@ The most common values:
 -   **Pre-Authentication Type** \[Type = UnicodeString\]: the code number of [pre-Authentication](/previous-versions/windows/it-pro/windows-server-2003/cc772815(v=ws.10)) type which was used in TGT request.
 
 <span id="kerberos-preauthentication-types" />
-## Table 5. Kerberos Pre-Authentication types.
+
+## Table 5. Kerberos Pre-Authentication types
 
 | Type | Type Name              | Description                                                                                                                                                                                                                                                                                                                                                                                                      |
 |------------------------------------------------------------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
