@@ -1,0 +1,90 @@
+### YamlMime:Landing
+
+title: Configure Windows client # < 60 chars
+summary: Find out how to apply custom configurations to Windows 10 and Windows 11 devices. Windows 10 provides a number of features and methods to help you configure or lock down specific parts of Windows client.  # < 160 chars
+
+metadata:
+  title: Configure Windows client # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Find out how to apply custom configurations to Windows client devices. # Required; article description that is displayed in search results. < 160 chars.
+  services: windows-10
+  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: windows-10
+  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
+  ms.author: greglin #Required; microsoft alias of author; optional team alias.
+  ms.date: 08/05/2021 #Required; mm/dd/yyyy format.
+  localization_priority: medium
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Manage Windows client settings 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Manage the Windows 10 Start and taskbar layout
+            url: windows-10-start-layout-options-and-policies.md
+          - text: Configure Windows Spotlight on the lock screen
+            url: windows-spotlight.md
+          - text: Customize the Windows 10 Start and taskbar with Group Policy
+            url: customize-windows-10-start-screens-by-using-group-policy.md
+
+
+  # Card (optional)
+  - title: Configure a Windows kiosk
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Guidelines for choosing an app for assigned access
+            url: guidelines-for-assigned-access-app.md
+          - text: Set up a single-app kiosk
+            url: kiosk-single-app.md
+          - text: Set up a multi-app kiosk
+            url: lock-down-windows-10-to-specific-apps.md
+
+
+  # Card (optional)
+  - title: Windows client provisioning packages
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Install Windows Configuration Designer
+            url: provisioning-packages/provisioning-install-icd.md
+          - text: Provisioning packages for Windows 10
+            url: provisioning-packages/provisioning-packages.md
+
+  # Card (optional)
+  - title: Use Windows Configuration Designer (WCD)
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Windows Configuration Designer (WCD) reference
+            url: wcd/wcd.md
+          - text: WCD policies reference
+            url: wcd/wcd-policies.md
+          - text:  WCD OOBE reference
+            url: wcd/wcd-oobe.md
+
+  # Card (optional)
+  - title: Configure Cortana in Windows client
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Configure Cortana in Windows 10
+            url: cortana-at-work/cortana-at-work-overview.md
+          - text: Custom voice commands in Cortana 
+            url: cortana-at-work/cortana-at-work-voice-commands.md
+
+  # Card (optional)
+  - title: User Experience Virtualization (UE-V) for Windows client
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: UE-V for Windows 10 overview
+            url: ue-v/uev-for-windows.md
+          - text: Get Started with UE-V
+            url: ue-v/uev-getting-started.md

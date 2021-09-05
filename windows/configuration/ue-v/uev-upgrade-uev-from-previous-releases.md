@@ -1,7 +1,7 @@
 ---
 title: Upgrade to UE-V for Windows 10
 description: Use these few adjustments to upgrade from User Experience Virtualization (UE-V) 2.x to the latest version of UE-V.
-author: dansimp
+author: greg-lindsay
 ms.pagetype: mdop, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -35,7 +35,7 @@ If you’re already using UE-V 2.x and you’re planning to upgrade user devices
 
 ## Upgrade user devices to Windows 10, version 1607
 
-Performing an in-place upgrade on user devices automatically installs the UE-V service, updates the settings location path, and migrates users' UE-V settings. See the [Windows 10 documentation for IT Pros](https://technet.microsoft.com/itpro/windows/deploy/index) for information about upgrading user devices to Windows 10. 
+Performing an in-place upgrade on user devices automatically installs the UE-V service, updates the settings location path, and migrates users' UE-V settings. See the [Windows 10 documentation for IT Pros](/windows/deployment/) for information about upgrading user devices to Windows 10. 
 
 ## Verify that UE-V settings were migrated correctly 
 
@@ -101,7 +101,7 @@ The UE-V template generator is included in the Windows Assessment and Deployment
 
 2. Select the **Get Windows ADK for Windows 10** button on this page to start the ADK installer. On the screen pictured below, select **Microsoft User Experience Virtualization (UE-V) Template Generator** and then select **Install**.
 
-    ![Selecting UE-V features in ADK](images/uev-adk-select-uev-feature.png)
+    ![Selecting UE-V features in ADK.](images/uev-adk-select-uev-feature.png)
  
 3. To open the generator, open the **Start** menu and navigate to **Windows Kits** > **Microsoft User Experience Virtualization (UE-V) Template Generator**. 
 

@@ -116,7 +116,7 @@ Some lines in the text below are shortened to enhance readability. The date and 
 
 <br><B>setuperr.log</B> content:
 
-<pre style="font-size: 10px; overflow-y: visible">
+<pre>
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
 27:08, Error           MIG    Error 1392 while gathering object C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Shell application requested abort![gle=0x00000570]
 27:08, Error                  Gather failed. Last error: 0x00000000
@@ -129,17 +129,17 @@ Some lines in the text below are shortened to enhance readability. The date and 
 
 The first line indicates there was an error **0x00000570** with the file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]** (shown below):
 
-<pre style="font-size: 10px; overflow-y: visible">
+<pre>
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
 </PRE>
 
-</B>The error 0x00000570 is a [Win32 error code](https://msdn.microsoft.com/library/cc231199.aspx) corresponding to: ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable.
+</B>The error 0x00000570 is a [Win32 error code](/openspecs/windows_protocols/ms-erref/18d8fbe8-a967-4f1c-ae50-99ca8e491d2d) corresponding to: ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable.
 
 Therefore, Windows Setup failed because it was not able to migrate the corrupt file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]**.  This file is a local system certificate and can be safely deleted. Searching the setupact.log file for additional details, the phrase "Shell application requested abort" is found in a location with the same timestamp as the lines in setuperr.log. This confirms our suspicion that this file is the cause of the upgrade failure:
 
 <br><B>setupact.log</B> content:
 
-<pre style="font-size: 10px; overflow-y: visible">
+<pre>
 27:00, Info                   Gather started at 10/5/2016 23:27:00
 27:00, Info [0x080489] MIG    Setting system object filter context (System)
 27:00, Info [0x0803e5] MIG    Not unmapping HKCU\Software\Classes; it is not mapped
@@ -164,7 +164,7 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 
 <br><B>setupapi.dev.log</B> content:
 
-<pre style="font-size: 10px; overflow-y: visible">
+<pre>
 >>>  [Device Install (UpdateDriverForPlugAndPlayDevices) - PCI\VEN_8086&DEV_8C4F]
 >>>  Section start 2019/09/26 20:13:01.623
       cmd: rundll32.exe "C:\WINDOWS\Installer\MSI6E4C.tmp",zzzzInvokeManagedCustomActionOutOfProc SfxCA_95972906 484 ChipsetWiX.CustomAction!Intel.Deployment.ChipsetWiX.CustomActions.InstallDrivers
@@ -254,7 +254,7 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)

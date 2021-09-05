@@ -4,7 +4,7 @@ description: Learn about best practices and more for the security policy setting
 ms.assetid: b9b64360-36ea-40fa-b795-2d6558c46563
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -14,7 +14,8 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 07/01/2021
+ms.technology: mde
 ---
 
 # Network access: Do not allow storage of passwords and credentials for network authentication
@@ -91,7 +92,7 @@ Overwriting the administrator's password does not help the attacker access data 
 
 Enable the **Network access: Do not allow storage of passwords and credentials for network authentication** setting.
 
-To limit the number of changed domain credentials that are stored on the computer, set the **cachedlogonscount** registry entry. By default, the operating system caches the verifier for each unique user's ten most recent valid logons. This value can be set to any value between 0 and 50. By default, all versions of the Windows operating system remember 10 cached logons, except Windows Server 2008 and later, which are set at 25.
+To limit the number of cached domain credentials that are stored on the computer, set the **cachedlogonscount** registry entry. By default, the operating system caches the verifier for each unique user's ten most recent valid logons. This value can be set to any value between 0 and 50. By default, all versions of the Windows operating system remember 10 cached logons, except Windows Server 2008 and later, which are set at 25.
 
 When you try to log on to a domain from a Windows-based client device, and a domain controller is unavailable, you do not receive an error message. Therefore, you may not notice that you logged on with cached domain credentials. You can set a notification of logon that uses cached domain credentials with the ReportDC registry entry.
 

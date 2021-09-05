@@ -29,14 +29,14 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 
 | Group Policy setting | MDM setting | Supported from version |
 | --- | --- | --- |
-| [Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) | [UpdateServiceUrl](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurlalternate) | All |
-| [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) | [DetectionFrequency](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-detectionfrequency) | 1703 |
-| [Remove access to use all Windows Update features](#remove-access-to-use-all-windows-update-features) | [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess)| All |
+| [Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) | [UpdateServiceUrl](/windows/client-management/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](/windows/client-management/mdm/policy-configuration-service-provider#update-updateserviceurlalternate) | All |
+| [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) | [DetectionFrequency](/windows/client-management/mdm/policy-configuration-service-provider#update-detectionfrequency) | 1703 |
+| [Remove access to use all Windows Update features](#remove-access-to-use-all-windows-update-features) | [Update/SetDisableUXWUAccess](/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess)| All |
 | [Do not connect to any Windows Update Internet locations](#do-not-connect-to-any-windows-update-internet-locations) | | All |
 | [Enable client-side targeting](#enable-client-side-targeting) | | All |
-| [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
-| [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
-| [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
+| [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location) | [AllowNonMicrosoftSignedUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate) | All |
+| [Do not include drivers with Windows Updates](#do-not-include-drivers-with-windows-updates) | [ExcludeWUDriversInQualityUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-excludewudriversinqualityupdate) | 1607 |
+| [Configure Automatic Updates](#configure-automatic-updates) | [AllowAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allowautoupdate) | All |
 
 >[!IMPORTANT]
 >Additional information about settings to manage device restarts and restart notifications for updates is available on **[Manage device restarts after updates](waas-restart.md)**.
@@ -47,7 +47,7 @@ You can use Group Policy settings or mobile device management (MDM) to configure
 
 With Windows 10, admins have a lot of flexibility in configuring how their devices scan and receive updates.
 
-[Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) allows admins to point devices to an internal Microsoft update service location, while [Do not connect to any Windows Update Internet locations](#do-not-connect-to-any-windows-update-internet-locations) gives them to option to restrict devices to just that internal update service. [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) controls how frequently devices scan for updates.
+[Specify Intranet Microsoft update service location](#specify-intranet-microsoft-update-service-location) allows admins to point devices to an internal Microsoft update service location, while [Do not connect to any Windows Update Internet locations](#do-not-connect-to-any-windows-update-internet-locations) gives them the option to restrict devices to just that internal update service. [Automatic Updates Detection Frequency](#automatic-updates-detection-frequency) controls how frequently devices scan for updates.
 
 You can make custom device groups that'll work with your internal Microsoft update service by using [Enable client-side targeting](#enable-client-side-targeting). You can also make sure your devices receive updates that were not signed by Microsoft from your internal Microsoft update service, through [Allow signed updates from an intranet Microsoft update service location](#allow-signed-updates-from-an-intranet-microsoft-update-service-location).
 
@@ -75,7 +75,7 @@ The option to download files with missing Urls allows content to be downloaded f
 >
 >The option to "Download files with no Url..." is only used if the "Alternate Download Server" is set.
 
-To configure this policy with MDM, use [UpdateServiceUrl](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-updateserviceurlalternate).
+To configure this policy with MDM, use [UpdateServiceUrl](/windows/client-management/mdm/policy-configuration-service-provider#update-updateserviceurl) and [UpdateServiceUrlAlternate](/windows/client-management/mdm/policy-configuration-service-provider#update-updateserviceurlalternate).
 
 ### Automatic Updates detection frequency
 
@@ -91,7 +91,7 @@ If the setting is set to **Disabled** or **Not Configured**, Windows will check 
 >
 >If the "Configure Automatic Updates" policy is disabled, this policy has no effect.
 
-To configure this policy with MDM, use [DetectionFrequency](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-detectionfrequency).
+To configure this policy with MDM, use [DetectionFrequency](/windows/client-management/mdm/policy-configuration-service-provider#update-detectionfrequency).
 
 ### Remove access to use all Windows Update features
 
@@ -131,7 +131,7 @@ If you disable or do not configure this policy setting, updates from an intranet
 >[!NOTE]
 >Updates from a service other than an intranet Microsoft update service must always be signed by Microsoft and are not affected by this policy setting.
 
-To configure this policy with MDM, use [AllowNonMicrosoftSignedUpdate](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate).
+To configure this policy with MDM, use [AllowNonMicrosoftSignedUpdate](/windows/client-management/mdm/policy-configuration-service-provider#update-allownonmicrosoftsignedupdate).
 
 
 ## Installing updates
@@ -252,7 +252,6 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\
 
 - [Update Windows 10 in the enterprise](index.md)
 - [Overview of Windows as a service](waas-overview.md)
-- [Manage updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
 - [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)

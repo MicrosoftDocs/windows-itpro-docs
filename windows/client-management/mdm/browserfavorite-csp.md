@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 06/26/2017
 ---
 
@@ -30,7 +30,7 @@ This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID
 
 The following diagram shows the BrowserFavorite configuration service provider in tree format as used by Open Mobile Alliance Device (OMA) Client Provisioning. The OMA Device Management protocol is not supported with this configuration service provider.
 
-![browserfavorite csp (cp)](images/provisioning-csp-browserfavorite-cp.png)
+![browserfavorite csp (cp).](images/provisioning-csp-browserfavorite-cp.png)
 
 <a href="" id="favorite-name-------------"></a>***favorite name***   
 Required. Specifies the user-friendly name of the favorite URL that is displayed in the Favorites list of Internet Explorer.

@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -480,7 +480,7 @@ Each default local account in Active Directory has a number of account settings 
 <td><p>Use DES encryption types for this account</p></td>
 <td><p>Provides support for the Data Encryption Standard (DES). DES supports multiple levels of encryption, including Microsoft Point-to-Point Encryption (MPPE) Standard (40-bit and 56-bit), MPPE standard (56-bit), MPPE Strong (128-bit), Internet Protocol security (IPSec) DES (40-bit), IPSec 56-bit DES, and IPSec Triple DES (3DES).</p>
 <div class="alert">
-<b>Note</b><br/><p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see <a href="https://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx" data-raw-source="[Hunting down DES in order to securely deploy Kerberos](https://blogs.technet.com/b/askds/archive/2010/10/19/hunting-down-des-in-order-to-securely-deploy-kerberos.aspx)">Hunting down DES in order to securely deploy Kerberos</a>.</p>
+<b>Note</b><br/><p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see <a href="/archive/blogs/askds/hunting-down-des-in-order-to-securely-deploy-kerberos" data-raw-source="[Hunting down DES in order to securely deploy Kerberos](/archive/blogs/askds/hunting-down-des-in-order-to-securely-deploy-kerberos)">Hunting down DES in order to securely deploy Kerberos</a>.</p>
 </div>
 <div>
 
@@ -502,11 +502,11 @@ After the default local accounts are installed, these accounts reside in the Use
 
 You can use Active Directory Users and Computers to assign rights and permissions on a given local domain controller, and that domain controller only, to limit the ability of local users and groups to perform certain actions. A right authorizes a user to perform certain actions on a computer, such as backing up files and folders or shutting down a computer. In contrast, an access permission is a rule that is associated with an object, usually a file, folder, or printer, that regulates which users can have access to the object and in what manner.
 
-For more information about creating and managing local user accounts in Active Directory, see [Manage Local Users](https://technet.microsoft.com/library/cc731899.aspx).
+For more information about creating and managing local user accounts in Active Directory, see [Manage Local Users](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731899(v=ws.11)).
 
 You can also use Active Directory Users and Computers on a domain controller to target remote computers that are not domain controllers on the network.
 
-You can obtain recommendations from Microsoft for domain controller configurations that you can distribute by using the Security Compliance Manager (SCM) tool. For more information, see [Microsoft Security Compliance Manager](https://technet.microsoft.com/library/cc677002.aspx).
+You can obtain recommendations from Microsoft for domain controller configurations that you can distribute by using the Security Compliance Manager (SCM) tool. For more information, see [Microsoft Security Compliance Manager](/previous-versions/tn-archive/cc677002(v=technet.10)).
 
 Some of the default local user accounts are protected by a background process that periodically checks and applies a specific security descriptor, which is a data structure that contains security information that is associated with a protected object. This security descriptor is present on the AdminSDHolder object.
 
@@ -592,7 +592,7 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     > **Note**&nbsp;&nbsp;You might have to delegate permissions to join computers to the domain if the account that joins the workstations to the domain does not already have them. For more information, see [Delegation of Administration in Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/20292.delegation-of-administration-in-active-directory.aspx).
 
-    ![Active Directory local accounts](images/adlocalaccounts-proc1-sample1.gif)
+    ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample1.gif)
 
 3.  Close Active Directory Users and Computers.
 
@@ -600,13 +600,13 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
 5.  Right-click the new OU, and &gt; **Create a GPO in this domain, and Link it here**.
 
-    ![Active Directory local accounts](images/adlocalaccounts-proc1-sample2.png)
+    ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample2.png)
 
 6.  Name the GPO, and &gt; **OK**.
 
 7.  Expand the GPO, right-click the new GPO, and &gt; **Edit**.
 
-    ![Active Directory local accounts](images/adlocalaccounts-proc1-sample3.png)
+    ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample3.png)
 
 8.  Configure which members of accounts can log on locally to these administrative workstations as follows:
 
@@ -625,7 +625,7 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     5.  Click **Add User or Group**, type **Administrators**, and &gt; **OK**.
 
-        ![Active Directory local accounts](images/adlocalaccounts-proc1-sample4.png)
+        ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample4.png)
 
 9.  Configure the proxy configuration:
 
@@ -633,7 +633,7 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     2.  Double-click **Proxy Settings**, select the **Enable proxy settings** check box, type **127.0.0.1** (the network Loopback IP address) as the proxy address, and &gt; **OK**.
 
-        ![Active Directory local accounts](images/adlocalaccounts-proc1-sample5.png)
+        ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample5.png)
 
 10. Configure the loopback processing mode to enable the user Group Policy proxy setting to apply to all users on the computer as follows:
 
@@ -696,11 +696,11 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     1.  Right-click **Windows Firewall with Advanced Security LDAP://path**, and &gt; **Properties**.
 
-        ![Active Directory local accounts](images/adlocalaccounts-proc1-sample6.png)
+        ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample6.png)
 
     2.  On each profile, ensure that the firewall is enabled and that inbound connections are set to **Block all connections**.
 
-        ![Active Directory local accounts](images/adlocalaccounts-proc1-sample7.png)
+        ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample7.png)
 
     3.  Click **OK** to complete the configuration.
 
@@ -738,11 +738,11 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
 3.  Right-click **Group Policy Objects**, and &gt; **New**.
 
-    ![Active Directory local accounts](images/adlocalaccounts-proc2-sample1.png)
+    ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample1.png)
 
 4.  In the **New GPO** dialog box, name the GPO that restricts administrators from signing in to workstations, and &gt; **OK**.
 
-    ![Active Directory local accounts](images/adlocalaccounts-proc2-sample2.png)
+    ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample2.png)
 
 5.  Right-click **New GPO**, and &gt; **Edit**.
 
@@ -756,7 +756,7 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     3.  Click **Add User or Group**, click **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![Active Directory local accounts](images/adlocalaccounts-proc2-sample3.png)
+        ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample3.png)
 
         **Note**  
         You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
@@ -778,7 +778,7 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     3.  Click **Add User or Group** &gt; **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![Active Directory local accounts](images/adlocalaccounts-proc2-sample4.png)
+        ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample4.png)
 
         **Note**  
         You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
@@ -791,7 +791,7 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     6.  Click **Add User or Group** &gt; **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![Active Directory local accounts](images/adlocalaccounts-proc2-sample5.png)
+        ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample5.png)
 
         **Note**  
         You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
@@ -804,11 +804,11 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     1.  Right-click the workstation OU, and then &gt; **Link an Existing GPO**.
 
-        ![Active Directory local accounts](images/adlocalaccounts-proc2-sample6.png)
+        ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample6.png)
 
     2.  Select the GPO that you just created, and &gt; **OK**.
 
-        ![Active Directory local accounts](images/adlocalaccounts-proc2-sample7.png)
+        ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample7.png)
 
 10. Test the functionality of enterprise applications on workstations in the first OU and resolve any issues caused by the new policy.
 
@@ -831,7 +831,7 @@ It is a best practice to configure the user objects for all sensitive accounts i
 
 As with any configuration change, test this enabled setting fully to ensure that it performs correctly before you implement it.
 
-![Active Directory local accounts](images/adlocalaccounts-proc3-sample1.png)
+![Active Directory local accounts.](images/adlocalaccounts-proc3-sample1.png)
 
 ## <a href="" id="sec-secure-manage-dcs"></a>Secure and manage domain controllers
 

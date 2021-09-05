@@ -20,18 +20,18 @@ manager: dansimp
 
 ![Welcome, Educators!](images/Welocme-Educators.png)
 
-<span style="font-size: 1.5em">This guide shows you how to quickly and easily try a few transformational tools from Microsoft Education in 5 quick steps.</span>
+<span>This guide shows you how to quickly and easily try a few transformational tools from Microsoft Education in 5 quick steps.</span>
 
-|  |  |
+| Tool | Description |
 | :---: |:--- |
-| [![Connect the device to Wi-Fi](images/edu-TIB-setp-1-v3.png)](#edu-task1) | [Log in](#edu-task1) to **Device A** with your Teacher credentials and connect to the school network. |
-| [![Try Learning Tools Immersive Reader](images/edu-TIB-setp-2-v3.png)](#edu-task2) | **Interested in significantly improving your students' reading speed and comprehension?<sup>[1](#footnote1)</sup>** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
-| [![Launch Microsoft Teams](images/edu-TIB-setp-3-v3.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
-| [![Open OneNote](images/edu-TIB-setp-4-v3.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
-| [![Try Photos app](images/edu-tib-setp-5-v4.png)](#edu-task5) | **Curious about telling stories through video?** </br>Try the [Photos app](#edu-task5) to make your own example video. |
-| [![Play with Minecraft: Education Edition](images/edu-tib-setp-6-v4.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task6) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
-| [![Do Math with Windows Ink](images/edu-tib-setp-7-v1.png)](#edu-task7) | **Want to provide a personal math tutor for your students?** </br>Use [Windows Ink and the Math Assistant feature](#edu-task7) in OneNote to give students step-by-step instructions and interactive 2D graphs for math problems. |
-|  |  |
+| [![Connect the device to Wi-Fi.](images/edu-TIB-setp-1-v3.png)](#edu-task1) | [Log in](#edu-task1) to **Device A** with your Teacher credentials and connect to the school network. |
+| [![Try Learning Tools Immersive Reader.](images/edu-TIB-setp-2-v3.png)](#edu-task2) | **Interested in significantly improving your students' reading speed and comprehension?<sup>[1](#footnote1)</sup>** </br>Try the [Learning Tools Immersive Reader](#edu-task2) to see how kids can learn to read faster, using text read aloud, and highlighting words for syntax. |
+| [![Launch Microsoft Teams.](images/edu-TIB-setp-3-v3.png)](#edu-task3) | **Looking to foster collaboration, communication, and critical thinking in the classroom?** </br>Launch [Microsoft Teams](#edu-task3) and learn how to set up digital classroom discussions, respond to student questions, and organize class content. |
+| [![Open OneNote.](images/edu-TIB-setp-4-v3.png)](#edu-task4) | **Trying to expand classroom creativity and interaction between students?** </br>Open [OneNote](#edu-task4) and create an example group project for your class. |
+| [![Try Photos app.](images/edu-tib-setp-5-v4.png)](#edu-task5) | **Curious about telling stories through video?** </br>Try the [Photos app](#edu-task5) to make your own example video. |
+| [![Play with Minecraft: Education Edition.](images/edu-tib-setp-6-v4.png)](#edu-task6) | **Want to teach kids to further collaborate and problem solve?** </br>Play with [Minecraft: Education Edition](#edu-task6) to see how it can be used as a collaborative and versatile platform across subjects to encourage 21st century skills. |
+| [![Do Math with Windows Ink.](images/edu-tib-setp-7-v1.png)](#edu-task7) | **Want to provide a personal math tutor for your students?** </br>Use [Windows Ink and the Math Assistant feature](#edu-task7) in OneNote to give students step-by-step instructions and interactive 2D graphs for math problems. |
+
 
 </br>
 
@@ -41,7 +41,7 @@ manager: dansimp
 </br>
 
 
-![Log in to Device A and connect to the school network](images/edu-TIB-setp-1-jump.png)
+![Log in to Device A and connect to the school network.](images/edu-TIB-setp-1-jump.png)
 ## <a name="edu-task1"></a>1. Log in and connect to the school network
 To try out the educator tasks, start by logging in as a teacher.
 
@@ -55,7 +55,7 @@ To try out the educator tasks, start by logging in as a teacher.
 </br>
 </br>
 
-![Improve student reading speed and comprehension](images/edu-TIB-setp-2-jump.png)
+![Improve student reading speed and comprehension.](images/edu-TIB-setp-2-jump.png)
 ## <a name="edu-task2"></a>2. Significantly improve student reading speed and comprehension
 
 > [!VIDEO https://www.youtube.com/embed/GCzSAslq_2Y]
@@ -78,7 +78,7 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
 4. Select the **Immersive Reader** button.
 
-   ![Word's Immersive Reader](images/word_online_immersive_reader.png)
+   ![Word's Immersive Reader.](images/word_online_immersive_reader.png)
 
 5. Press the **Play** button to hear text read aloud.
 
@@ -86,14 +86,14 @@ Learning Tools and the Immersive Reader can be used in the Microsoft Edge browse
 
    | Text to Speech | Text Preferences | Grammar Options | Line Focus |
    | :------------: | :--------------: | :-------------: | :--------: |
-   | ![Word Text to Speech](images/wordonline_tts.png) | ![Word Text Preferences](images/wordonline_text_preferences.png) | ![Word Grammar Options](images/wordonline_grammar_options.png) | ![Word Line Focus](images/wordonline_line_focus.png) |
+   | ![Word Text to Speech.](images/wordonline_tts.png) | ![Word Text Preferences](images/wordonline_text_preferences.png) | ![Word Grammar Options](images/wordonline_grammar_options.png) | ![Word Line Focus](images/wordonline_line_focus.png) |
 
 </br>
 </br>
 
 
 
-![Spark communication, critical thinking, and creativity with Microsoft Teams](images/edu-TIB-setp-3-jump.png)
+![Spark communication, critical thinking, and creativity with Microsoft Teams.](images/edu-TIB-setp-3-jump.png)
 ## <a name="edu-task3"></a>3. Spark communication, critical thinking, and creativity in the classroom
 
 > [!VIDEO https://www.youtube.com/embed/riQr4Dqb8B8]
@@ -114,7 +114,7 @@ Take a guided tour of Microsoft Teams and test drive this digital hub.
 </br>
 </br>
 
-![Expand classroom collaboration and interaction with OneNote](images/edu-TIB-setp-4-jump.png)
+![Expand classroom collaboration and interaction with OneNote.](images/edu-TIB-setp-4-jump.png)
 ## <a name="edu-task4"></a>4. Expand classroom collaboration and interaction between students
 
 > [!VIDEO https://www.youtube.com/embed/dzDSWMb_fIE]
@@ -135,16 +135,16 @@ When you're not using the pen, just use the magnet to stick it to the left side 
 3. Follow the instructions for the project. Look for the **Try this!** callouts to experiment with these engaging activities.
    - Discover the power of digital ink by selecting the Draw tab. Choose your pen and get scribbling.
 
-     ![OneNote Draw tab](images/onenote_draw.png)
+     ![OneNote Draw tab.](images/onenote_draw.png)
 
    - Type anywhere on the page! Just click your cursor where you want to place text.
    - Use the checkmark in the **Home** tab to keep track of completed tasks.
 
-     ![OneNote To Do Tag](images/onenote_checkmark.png)
+     ![OneNote To Do Tag.](images/onenote_checkmark.png)
 
    - To find information without leaving OneNote, use the Researcher tool found under the Insert tab.
 
-     ![OneNote Researcher](images/onenote_researcher.png)
+     ![OneNote Researcher.](images/onenote_researcher.png)
 
 </br>
 </br>
@@ -178,7 +178,7 @@ Use video to create a project summary.
 
 8. Drag the videos to the Storyboard, one by one. Your project should look roughly like this:
 
-   ![Photos app layout showing videos added in previous steps](images/photo_app_1.png)
+   ![Photos app layout showing videos added in previous steps.](images/photo_app_1.png)
 
 9. Select the first card in the Storyboard (the video of the project materials) and select **Text**, type a title in, a text style, a layout, and select **Done**.
 
@@ -191,7 +191,7 @@ Use video to create a project summary.
     4. Play back your effect.
     5. Select **Done** when you have it where you want it.
 
-    ![Lighting bolt effect being added to a video clip](images/photo_app_2.png)
+    ![Lighting bolt effect being added to a video clip.](images/photo_app_2.png)
 
 12. Select **Music** and select a track from the **Recommended** music collection.
     1. The music will update automatically to match the length of your video project, even as you make changes.
@@ -208,7 +208,7 @@ Check out this use case video of the Photos team partnering with the Bureau Of F
 </br>
 </br>
 
-![Further collaborate and problem solve with Minecraft: Education Edition](images/edu-TIB-setp-5-jump.png)
+![Further collaborate and problem solve with Minecraft: Education Edition.](images/edu-TIB-setp-5-jump.png)
 ## <a name="edu-task6"></a>6. Get kids to further collaborate and problem solve
 
 > [!VIDEO https://www.youtube.com/embed/QI_bRNUugog]
@@ -226,7 +226,7 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 
 3. Scroll down to the **Details** section and select **Download World**.
 
-   ![Select the download world link](images/mcee_downloadworld.png)
+   ![Select the download world link.](images/mcee_downloadworld.png)
 
 4. When prompted, save the world.
 
@@ -250,7 +250,7 @@ Today, we'll explore a Minecraft world through the eyes of a student.
 
     To try more advanced movements or building within Minecraft, use the Minecraft Controls Diagram.
 
-    ![Minecraft mouse and keyboard controls](images/mcee_keyboard_mouse_controls.png)
+    ![Minecraft mouse and keyboard controls.](images/mcee_keyboard_mouse_controls.png)
 
 12. Access and adapt over 300 lesson plans, spanning all grades and subjects, to meet your needs. Enjoy exploring new worlds and happy crafting.
 
@@ -260,13 +260,13 @@ Today, we'll explore a Minecraft world through the eyes of a student.
     2. Click **Class Resources**.
     3. Click **Find a Lesson**.
 
-    ![Access and adapt over 300 Minecraft lesson plans](images/minecraft_lesson_plans.png)
+    ![Access and adapt over 300 Minecraft lesson plans.](images/minecraft_lesson_plans.png)
 
 </br>
 </br>
 </br>
 
-![Help students understand new math concepts with the Math Assistant in OneNote](images/Inking.png)
+![Help students understand new math concepts with the Math Assistant in OneNote.](images/Inking.png)
 ## <a name="edu-task7"></a>7. Use Windows Ink to provide a personal math tutor for your students
 
 The **Math Assistant** and **Ink Replay** features available in the OneNote app give your students step-by-step instructions on how to solve their math problems and help them visualize math functions on an interactive 2D graph.
@@ -275,15 +275,15 @@ The **Math Assistant** and **Ink Replay** features available in the OneNote app 
 To get started:
 1. Open the OneNote app for Windows 10 (not OneNote 2016).
 
-   ![OneNote icon](images/OneNote_logo.png)
+   ![OneNote icon.](images/OneNote_logo.png)
 
 2. In the top left corner, click on the **<** arrow to access your notebooks and pages.
 
-   ![OneNote back arrow navigation button](images/left_arrow.png)
+   ![OneNote back arrow navigation button.](images/left_arrow.png)
 
 3. Click **Add Page** to launch a blank work space.
 
-   ![Select add page button](images/plus-page.png)
+   ![Select add page button.](images/plus-page.png)
 
 4. Make sure your pen is paired to the device. To pair, see <a href="https://support.microsoft.com/help/12383" target="_blank">Connect to Bluetooth devices</a>.
 
@@ -292,26 +292,26 @@ To solve the equation 3x+4=7, follow these instructions:
 
 2. If you wrote the equation using digital ink, use the **Lasso tool** to circle the equation. If you typed the equation, highlight it using your mouse.
 
-   ![Lasso button](images/lasso.png)
+   ![Lasso button.](images/lasso.png)
 
 3. On the **Draw** tab, click the **Math** button.
 
-   ![Math button](images/math-button.png)
+   ![Math button.](images/math-button.png)
 
 4. From the drop-down menu in the **Math** pane, select the option to **Solve for x**. You can now see the final solution of the equation.
 
-   ![Solve for x menu](images/solve-for-x.png)
+   ![Solve for x menu.](images/solve-for-x.png)
 
 5. From the second drop-down below, choose **Steps for Solving Linear Formula**, which shows you the step-by-step solution of this equation.
 
 6. On the **View** tab, click the **Replay** button. Use your mouse to select the written equation and watch your text in replay. Replay is great for students to review how the teacher solved the equation and for teachers to review how students approached a problem.
 
-   ![Replay button](images/replay.png)
+   ![Replay button.](images/replay.png)
 
 To graph the equation 3x+4=7, follow these instructions:
 1. From the drop-down menu in the **Math** pane, select the option to **Graph Both Sides in 2D**. You can play with the interactive graph of your equation - use a single finger to move the graph position or two fingers to change the **zoom** level.
 
-   ![Graph both sides in 2D](images/graph-for-x.png)
+   ![Graph both sides in 2D.](images/graph-for-x.png)
 
 2. Click the **Insert on Page** button below the graph to add a screenshot of the graph to your page.
    </br>
@@ -320,11 +320,11 @@ To graph the equation 3x+4=7, follow these instructions:
 **Watch what Educators say about Microsoft Education delivering better learning outcomes**
 Bring out the best in students by providing a platform for collaborating, exploring, personalized learning, and getting things done across all devices.
 
-|  |  |
+|&nbsp;  |&nbsp;  |
 |:--- |:--- |
 | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/nt3hz2vVf8c" frameborder="0" allowfullscreen></iframe></br>See how one school improves reading skills using Learning Tools Immersive Reader | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/N7uiMs4dPcg" frameborder="0" allowfullscreen></iframe></br>Here's how Microsoft Teams creates more robust classroom experiences at all ages. |
 | <iframe width="420" height="236" src="https://www.youtube-nocookie.com/embed/hMmRud4B54o" frameborder="0" allowfullscreen></iframe></br>Watch teachers elevate the education of students using OneNote. | <iframe width="420" height="236" src="https://www.youtube.com/embed/hl9ZQiektJE" frameborder="0" allowfullscreen></iframe></br>Here what other teachers say about using Minecraft: Education Edition in their classrooms. |
-|  |  |
+
 
 ## Update your apps
 

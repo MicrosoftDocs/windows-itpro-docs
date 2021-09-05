@@ -180,7 +180,7 @@ The Install and Uninstall buttons appear in the properties dialog box for connec
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit adding and removing components for a LAN or remote access connection*
+-   GP Friendly name: *Prohibit adding and removing components for a LAN or remote access connection*
 -   GP name: *NC_AddRemoveComponents*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -256,7 +256,7 @@ If you disable this setting or do not configure it, the Advanced Settings item i
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit access to the Advanced Settings item on the Advanced menu*
+-   GP Friendly name: *Prohibit access to the Advanced Settings item on the Advanced menu*
 -   GP name: *NC_AdvancedSettings*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -337,7 +337,7 @@ Changing this setting from Enabled to Not Configured does not enable the Advance
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit TCP/IP advanced configuration*
+-   GP Friendly name: *Prohibit TCP/IP advanced configuration*
 -   GP name: *NC_AllowAdvancedTCPIPConfig*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -413,7 +413,7 @@ If you disable this setting or do not configure it, the Properties dialog box fo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit Enabling/Disabling components of a LAN connection*
+-   GP Friendly name: *Prohibit Enabling/Disabling components of a LAN connection*
 -   GP name: *NC_ChangeBindState*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -495,7 +495,7 @@ When enabled, the "Prohibit deletion of remote access connections" setting takes
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Ability to delete all user remote access connections*
+-   GP Friendly name: *Ability to delete all user remote access connections*
 -   GP name: *NC_DeleteAllUserConnection*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -575,7 +575,7 @@ When enabled, this setting takes precedence over the "Ability to delete all user
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit deletion of remote access connections*
+-   GP Friendly name: *Prohibit deletion of remote access connections*
 -   GP name: *NC_DeleteConnection*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -648,7 +648,7 @@ If you disable this setting or do not configure it, the Remote Access Preference
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit access to the Remote Access Preferences item on the Advanced menu*
+-   GP Friendly name: *Prohibit access to the Remote Access Preferences item on the Advanced menu*
 -   GP name: *NC_DialupPrefs*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -717,7 +717,7 @@ If you disable this setting or do not configure it, the "local access only" icon
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not show the "local access only" network icon*
+-   GP Friendly name: *Do not show the "local access only" network icon*
 -   GP name: *NC_DoNotShowLocalOnlyIcon*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -793,7 +793,7 @@ If you disable this setting or do not configure it, Windows XP settings that exi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Windows 2000 Network Connections settings for Administrators*
+-   GP Friendly name: *Enable Windows 2000 Network Connections settings for Administrators*
 -   GP name: *NC_EnableAdminProhibits*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -866,7 +866,7 @@ If you do not configure this policy setting, traffic between remote client compu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Route all traffic through the internal network*
+-   GP Friendly name: *Route all traffic through the internal network*
 -   GP name: *NC_ForceTunneling*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -935,7 +935,7 @@ If you disable or do not configure this policy setting, a DHCP-configured connec
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off notifications when a connection has only limited or no connectivity*
+-   GP Friendly name: *Turn off notifications when a connection has only limited or no connectivity*
 -   GP name: *NC_IpStateChecking*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1019,7 +1019,7 @@ The Local Area Connection Properties dialog box includes a list of the network c
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit access to properties of components of a LAN connection*
+-   GP Friendly name: *Prohibit access to properties of components of a LAN connection*
 -   GP name: *NC_LanChangeProperties*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1095,7 +1095,7 @@ If you do not configure this setting, only Administrators and Network Configurat
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Ability to Enable/Disable a LAN connection*
+-   GP Friendly name: *Ability to Enable/Disable a LAN connection*
 -   GP name: *NC_LanConnect*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1173,7 +1173,7 @@ If you disable this setting or do not configure it, a Properties menu item appea
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit access to properties of a LAN connection*
+-   GP Friendly name: *Prohibit access to properties of a LAN connection*
 -   GP name: *NC_LanProperties*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1249,7 +1249,7 @@ If you disable this setting or do not configure it, the Make New Connection icon
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit access to the New Connection Wizard*
+-   GP Friendly name: *Prohibit access to the New Connection Wizard*
 -   GP name: *NC_NewConnectionWizard*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1327,7 +1327,7 @@ If you disable this setting or do not configure it, the Internet Connection Fire
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit use of Internet Connection Firewall on your DNS domain network*
+-   GP Friendly name: *Prohibit use of Internet Connection Firewall on your DNS domain network*
 -   GP name: *NC_PersonalFirewallConfig*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1409,7 +1409,7 @@ If you do not configure this setting, only Administrators and Network Configurat
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Ability to change properties of an all user remote access connection*
+-   GP Friendly name: *Ability to change properties of an all user remote access connection*
 -   GP name: *NC_RasAllUserProperties*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1491,7 +1491,7 @@ The Networking tab of the Remote Access Connection Properties dialog box include
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit access to properties of components of a remote access connection*
+-   GP Friendly name: *Prohibit access to properties of components of a remote access connection*
 -   GP name: *NC_RasChangeProperties*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1562,7 +1562,7 @@ If you disable this setting or do not configure it, the Connect and Disconnect o
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit connecting and disconnecting a remote access connection*
+-   GP Friendly name: *Prohibit connecting and disconnecting a remote access connection*
 -   GP name: *NC_RasConnect*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1642,7 +1642,7 @@ If you disable this setting or do not configure it, a Properties menu item appea
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit changing properties of a private remote access connection*
+-   GP Friendly name: *Prohibit changing properties of a private remote access connection*
 -   GP name: *NC_RasMyProperties*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1722,7 +1722,7 @@ This setting does not prevent users from using other programs, such as Internet 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Ability to rename all user remote access connections*
+-   GP Friendly name: *Ability to rename all user remote access connections*
 -   GP name: *NC_RenameAllUserRasConnection*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1800,7 +1800,7 @@ If this setting is not configured, only Administrators and Network Configuration
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Ability to rename LAN connections or remote access connections available to all users*
+-   GP Friendly name: *Ability to rename LAN connections or remote access connections available to all users*
 -   GP name: *NC_RenameConnection*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1876,7 +1876,7 @@ When the "Ability to rename LAN connections or remote access connections availab
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Ability to rename LAN connections*
+-   GP Friendly name: *Ability to rename LAN connections*
 -   GP name: *NC_RenameLanConnection*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -1952,7 +1952,7 @@ If you disable this setting or do not configure it, the Rename option is enabled
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit renaming private remote access connections*
+-   GP Friendly name: *Prohibit renaming private remote access connections*
 -   GP name: *NC_RenameMyRasConnection*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -2034,7 +2034,7 @@ Disabling this setting does not prevent Wireless Hosted Networking from using th
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit use of Internet Connection Sharing on your DNS domain network*
+-   GP Friendly name: *Prohibit use of Internet Connection Sharing on your DNS domain network*
 -   GP name: *NC_ShowSharedAccessUI*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -2107,7 +2107,7 @@ If you disable this setting or do not configure it, the connection status taskba
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit viewing of status for an active connection*
+-   GP Friendly name: *Prohibit viewing of status for an active connection*
 -   GP name: *NC_Statistics*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -2176,7 +2176,7 @@ If you disable or do not configure this policy setting, domain users can set a n
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require domain users to elevate when setting a network's location*
+-   GP Friendly name: *Require domain users to elevate when setting a network's location*
 -   GP name: *NC_StdDomainUserSetLocation*
 -   GP path: *Network\Network Connections*
 -   GP ADMX file name: *NetworkConnections.admx*
@@ -2185,15 +2185,6 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->

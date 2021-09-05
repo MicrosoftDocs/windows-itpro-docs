@@ -32,7 +32,7 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
 
 For the purposes of this article, we will use one server computer (CM01) and two client computers (PC0004, PC0006).
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server.
-  - Important: CM01 must include the **[State migration point](https://docs.microsoft.com/configmgr/osd/get-started/manage-user-state#BKMK_StateMigrationPoint)** role for the replace task sequence used in this article to work. 
+  - Important: CM01 must include the **[State migration point](/configmgr/osd/get-started/manage-user-state#BKMK_StateMigrationPoint)** role for the replace task sequence used in this article to work. 
 - PC0004 is a domain member client computer running Windows 7 SP1, or a later version of Windows, with the Configuration Manager client installed, that will be replaced.
 - PC0006 is a domain member client computer running Windows 10, with the Configuration Manager client installed, that will replace PC0004.
 
@@ -69,7 +69,7 @@ On **CM01**:
     >[!NOTE]
     >This task sequence has many fewer actions than the normal client task sequence. If it doesn't seem different, make sure you selected the **Client Replace Task Sequence** template when creating the task sequence.
 
-![The back-up only task sequence](../images/mdt-06-fig42.png "The back-up only task sequence")
+![The back-up only task sequence.](../images/mdt-06-fig42.png "The back-up only task sequence")
 
 The backup-only task sequence (named Replace Task Sequence).
 
@@ -91,7 +91,7 @@ On **CM01**:
     * MAC Address: &lt;the mac address that you wrote down&gt;
     * Source Computer: PC0004
 
-    ![Create the computer association](../images/mdt-06-fig43.png "Create the computer association")
+    ![Create the computer association.](../images/mdt-06-fig43.png "Create the computer association")
 
     Creating the computer association between PC0004 and PC0006.
 
@@ -160,7 +160,7 @@ On **PC0004**:
 4.  Confirm you want to upgrade the operating system on this computer by clicking **Install** again.
 5.  Allow the Replace Task Sequence to complete. The PC0004 computer will gather user data, boot into Windows PE and gather more data, then boot back to the full OS. The entire process should only take a few minutes.
 
-![Task sequence example](../images/pc0004b.png)
+![Task sequence example.](../images/pc0004b.png)
 
 Capturing the user state
 
@@ -191,15 +191,15 @@ On **PC0006**:
 
 When the process is complete, you will have a new Windows 10 computer in your domain with user data and settings restored. See the following examples:
 
-![User data and setting restored example 1](../images/pc0006a.png)<br>
-![User data and setting restored example 2](../images/pc0006b.png)<br>
-![User data and setting restored example 3](../images/pc0006c.png)<br>
-![User data and setting restored example 4](../images/pc0006d.png)<br>
-![User data and setting restored example 5](../images/pc0006e.png)<br>
-![User data and setting restored example 6](../images/pc0006f.png)<br>
-![User data and setting restored example 7](../images/pc0006g.png)<br>
-![User data and setting restored example 8](../images/pc0006h.png)<br>
-![User data and setting restored example 9](../images/pc0006i.png)
+![User data and setting restored example 1.](../images/pc0006a.png)<br>
+![User data and setting restored example 2.](../images/pc0006b.png)<br>
+![User data and setting restored example 3.](../images/pc0006c.png)<br>
+![User data and setting restored example 4.](../images/pc0006d.png)<br>
+![User data and setting restored example 5.](../images/pc0006e.png)<br>
+![User data and setting restored example 6.](../images/pc0006f.png)<br>
+![User data and setting restored example 7.](../images/pc0006g.png)<br>
+![User data and setting restored example 8.](../images/pc0006h.png)<br>
+![User data and setting restored example 9.](../images/pc0006i.png)
 
 Next, see [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade-to-windows-10-with-configuraton-manager.md).
 
@@ -210,6 +210,6 @@ Next, see [Perform an in-place upgrade to Windows 10 using Configuration Manager
 [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
 [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
 [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Create a task sequence with Configuration Manager and MDT](./create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
 [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
 [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>

@@ -11,7 +11,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# MultiSIM CSP 
+# MultiSIM DDF
 
 
 This topic shows the OMA DM device description framework (DDF) for the **MultiSIM** configuration service provider.

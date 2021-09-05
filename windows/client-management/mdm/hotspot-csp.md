@@ -27,7 +27,7 @@ The HotSpot configuration service provider is used to configure and enable Inter
 
 The following diagram shows the HotSpot configuration service provider management object in tree format as used by OMA Client Provisioning. The OMA DM protocol is not supported by this configuration service provider.
 
-![hotspot csp (cp)](images/provisioning-csp-hotspot-cp.png)
+![hotspot csp (cp).](images/provisioning-csp-hotspot-cp.png)
 
 <a href="" id="enabled"></a>**Enabled**
 Required. Specifies whether to enable Internet sharing on the device. The default is false.
@@ -90,7 +90,7 @@ Optional. Reference to a localized string, provided by the mobile operator, that
 
 `@<path_to_res_dll>,-<str_id>`
 
-Where `<path_to_res_dll>` is the path to the resource dll that contains the string and `<str_id>` is the string identifier. For more information on language-neutral string resource registry values, see [Using Registry String Redirection](https://msdn.microsoft.com/library/windows/desktop/dd374120.aspx) on MSDN.
+Where `<path_to_res_dll>` is the path to the resource dll that contains the string and `<str_id>` is the string identifier. For more information on language-neutral string resource registry values, see [Using Registry String Redirection](/windows/win32/intl/using-registry-string-redirection) on MSDN.
 
 > **Note**  MOAppLink is required to use the MOHelpMessage setting.
 
@@ -165,7 +165,7 @@ For mobile operator networks that require an entitlement check, the OEM must pro
 
 The `EntitlementDll` parm of the HotSpot configuration service provider must be set to a string that is the path to this DLL.
 
-The DLL must be code signed in a specific way, see [Sign binaries and packages](https://msdn.microsoft.com/library/windows/hardware/dn789217(v=vs.85).aspx).
+The DLL must be code signed in a specific way, see [Sign binaries and packages](/previous-versions/windows/hardware/code-signing/dn789217(v=vs.85)).
 
 During an entitlement check the Internet Sharing service loads the specified DLL and then call the `IsEntitled` function. The function must connect to the server to perform any required validation, then return one of the following **ICS\_ENTITLEMENT\_RESULT** enumeration values.
 
@@ -206,11 +206,4 @@ The definition for the **ICS\_ENTITLEMENT\_RESULT** is in the header file `IcsEn
 [Configuration service provider reference](configuration-service-provider-reference.md)
 
  
-
- 
-
-
-
-
-
 

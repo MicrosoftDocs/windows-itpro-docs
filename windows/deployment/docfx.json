@@ -34,6 +34,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "recommendations": true,
       "breadcrumb_path": "/windows/windows-10/breadcrumb/toc.json",
       "uhfHeaderId": "MSDocsHeader-M365-IT",
       "ms.technology": "windows",
@@ -49,7 +50,17 @@
           "folder_relative_path_in_docset": "./"
         }
       },
-      "titleSuffix": "Windows Deployment" 
+      "titleSuffix": "Windows Deployment",
+      "contributors_to_exclude": [
+        "rjagiewich", 
+        "traya1", 
+        "rmca14", 
+        "claydetels19", 
+        "jborsecnik",
+        "tiburd",
+        "garycentric"
+      ],
+      "searchScope": ["Windows 10"]
     },
     "fileMetadata": {},
     "template": [],

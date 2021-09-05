@@ -21,7 +21,7 @@ ms.topic: article
 **Applies to**
 -   Windows 10
 
-This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the online computer refresh process. The computer refresh scenario is a reinstallation of an updated operating system on the same computer. You can also use this procedure to reinstall the same OS version. In this article, the computer refresh will be done while the computer is online. MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property on the [MDT resource page](https://go.microsoft.com/fwlink/p/?LinkId=618117).
+This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the online computer refresh process. The computer refresh scenario is a reinstallation of an updated operating system on the same computer. You can also use this procedure to reinstall the same OS version. In this article, the computer refresh will be done while the computer is online. MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property on the [MDT resource page](/mem/configmgr/mdt/).
 
 For the purposes of this topic, we will use three computers: DC01, MDT01, and PC0001. 
 - DC01 is a domain controller for the contoso.com domain.
@@ -30,7 +30,7 @@ For the purposes of this topic, we will use three computers: DC01, MDT01, and PC
 
 Both DC01 and MDT01 are running Windows Server 2019; however any supported version of Windows Server can be used. For more details on the setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
-![computers](../images/mdt-04-fig01.png "Computers used in this topic")
+![computers.](../images/mdt-04-fig01.png "Computers used in this topic")
 
 The computers used in this topic.
 
@@ -62,7 +62,7 @@ For example, the following line configures USMT to migrate only domain user prof
  
 ### Support for additional settings
 
-In addition to the command-line switches that control which profiles to migrate, [XML templates](https://docs.microsoft.com/windows/deployment/usmt/understanding-migration-xml-files) control exactly what data is being migrated. You can control data within and outside the user profiles.
+In addition to the command-line switches that control which profiles to migrate, [XML templates](../usmt/understanding-migration-xml-files.md) control exactly what data is being migrated. You can control data within and outside the user profiles.
 
 ### Multicast
 
@@ -93,7 +93,7 @@ It is also assumed that you have a domain member client computer named PC0001 in
      >Skip this optional full WIM backup that we are choosing not to perform. The USMT backup will still run.
    * Select one or more applications to install: Install - Adobe Reader
 
-     ![Computer refresh](../images/fig2-taskseq.png "Start the computer refresh")
+     ![Computer refresh.](../images/fig2-taskseq.png "Start the computer refresh")
 
 4. Setup starts and does the following:
     
@@ -105,7 +105,7 @@ It is also assumed that you have a domain member client computer named PC0001 in
 
 5. You can monitor progress of the deployment using the deployment workbench on MDT01. See the following example:
 
-     ![monitor deployment](../images/monitor-pc0001.png)
+     ![monitor deployment.](../images/monitor-pc0001.png)
 
 6. After the refresh process completes, sign in to the Windows 10 computer and verify that user accounts, data and settings were migrated.
 

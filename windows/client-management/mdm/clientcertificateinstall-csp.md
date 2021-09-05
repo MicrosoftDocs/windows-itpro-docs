@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 02/28/2020
+ms.date: 07/30/2021
 ---
 
 # ClientCertificateInstall CSP
@@ -23,10 +23,48 @@ For PFX certificate installation and SCEP installation, the SyncML commands must
 
 You can only set PFXKeyExportable to true if KeyLocation=3. For any other KeyLocation value, the CSP will fail.
 
-The following image shows the ClientCertificateInstall configuration service provider in tree format.
-
-![clientcertificateinstall csp](images/provisioning-csp-clientcertificateinstall.png)
-
+The following shows the ClientCertificateInstall configuration service provider in tree format.
+```
+./Vendor/MSFT
+ClientCertificateInstall
+----PFXCertInstall
+--------UniqueID
+------------KeyLocation
+------------ContainerName
+------------PFXCertBlob
+------------PFXCertPassword
+------------PFXCertPasswordEncryptionType
+------------PFXKeyExportable
+------------Thumbprint
+------------Status
+------------PFXCertPasswordEncryptionStore (Added in Windows 10, version 1511)
+----SCEP
+--------UniqueID
+------------Install
+----------------ServerURL
+----------------Challenge
+----------------EKUMapping
+----------------KeyUsage
+----------------SubjectName
+----------------KeyProtection
+----------------RetryDelay
+----------------RetryCount
+----------------TemplateName
+----------------KeyLength
+----------------HashAlgorithm
+----------------CAThumbprint
+----------------SubjectAlternativeNames
+----------------ValidPeriod
+----------------ValidPeriodUnits
+----------------ContainerName
+----------------CustomTextToShowInPrompt
+----------------Enroll
+----------------AADKeyIdentifierList (Added in Windows 10, version 1703)
+------------CertThumbprint
+------------Status
+------------ErrorCode
+------------RespondentServerUrl
+```
 <a href="" id="device-or-user"></a>**Device or User**  
 For device certificates, use <strong>./Device/Vendor/MSFT</strong> path and for user certificates use <strong>./User/Vendor/MSFT</strong> path.
 
@@ -79,7 +117,7 @@ If a blob already exists, the Add operation will fail. If Replace is called on t
 
 If Add is called on this node for a new PFX, the certificate will be added. When a certificate does not exist, Replace operation on this node will fail.
 
-In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate CRYPT_DATA_BLOB, which can be found in <a href="https://go.microsoft.com/fwlink/p/?LinkId=523871" data-raw-source="[CRYPT\_INTEGER\_BLOB](https://go.microsoft.com/fwlink/p/?LinkId=523871)">CRYPT_INTEGER_BLOB</a>.
+In other words, using Replace or Add will result in the effect of either overwriting the old certificate or adding a new certificate CRYPT_DATA_BLOB, which can be found in <a href="/previous-versions/windows/desktop/legacy/aa381414(v=vs.85)" data-raw-source="[CRYPT\_INTEGER\_BLOB](/previous-versions/windows/desktop/legacy/aa381414(v=vs.85))">CRYPT_INTEGER_BLOB</a>.
 
 <a href="" id="clientcertificateinstall-pfxcertinstall-uniqueid-pfxcertpassword"></a>**ClientCertificateInstall/PFXCertInstall/*UniqueID*/PFXCertPassword**  
 Password that protects the PFX blob. This is required if the PFX is password protected.
@@ -167,18 +205,15 @@ Supported operations are Add, Get, Delete, and Replace.
 Required. Specifies extended key usages. Subject to SCEP server configuration. The list of OIDs are separated by a plus <strong>+</strong>. For example, <em>OID1</em>+<em>OID2</em>+<em>OID3</em>.
 
 Data type is string.
-Required for enrollment. Specifies the key usage bits (0x80, 0x20, 0xA0, etc.) for the certificate in decimal format. The value should at least have the second (0x20), fourth (0x80) or both bits set. If the value doesn’t have those bits set, the configuration will fail.
 
-Data type is int.
-
-Supported operations are Add, Get, Delete, and Replace.
+Supported operations are Get, Add, Delete, and Replace.
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-subjectname"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/SubjectName**  
 Required. Specifies the subject name. 
 
 The SubjectName value is quoted if it contains leading or trailing white space or one of the following characters: (“,” “=” “+” “;”  ).
 
-For more details, see [CertNameToStrA function](https://docs.microsoft.com/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
+For more details, see [CertNameToStrA function](/windows/win32/api/wincrypt/nf-wincrypt-certnametostra#remarks).
 
 Data type is string.
 
@@ -204,7 +239,9 @@ Supported operations are Add, Get, Delete, and Replace.
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-keyusage"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/KeyUsage**  
 Required for enrollment. Specify the key usage bits (0x80, 0x20, 0xA0, etc.) for the certificate in decimal format. The value should at least have second (0x20) or forth (0x80) or both bits set. If the value doesn’t have those bits set, configuration will fail.
 
- Supported operations are Add, Get, Delete, and Replace. Value type is integer.
+Data type is int.
+
+Supported operations are Add, Get, Delete, and Replace. 
 
 <a href="" id="clientcertificateinstall-scep-uniqueid-install-retrydelay"></a>**ClientCertificateInstall/SCEP/*UniqueID*/Install/RetryDelay**  
 Optional. When the SCEP server sends a pending status, this value specifies the device retry waiting time in minutes.
@@ -287,7 +324,8 @@ Valid values are:
 -   Months
 -   Years
 
-> **Note**  The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
+> [!NOTE]
+> The device only sends the MDM server expected certificate validation period (ValidPeriodUnits + ValidPeriod) to the SCEP server as part of certificate enrollment request. Depending on the server configuration, the server defines how to use this valid period to create the certificate.
 
 Supported operations are Add, Get, Delete, and Replace.
 

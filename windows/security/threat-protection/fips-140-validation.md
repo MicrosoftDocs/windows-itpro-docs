@@ -1,7 +1,7 @@
 ---
 title: Federal Information Processing Standard (FIPS) 140 Validation
 description: Learn how Microsoft products and cryptographic modules follow the U.S. Federal government standard FIPS 140.
-ms.prod: w10
+ms.prod: m365-security
 audience: ITPro
 author: dansimp
 ms.author: dansimp
@@ -10,6 +10,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # FIPS 140-2 Validation
@@ -44,7 +45,7 @@ Each of the cryptographic modules has a defined security policy that must be met
 
 ### Step 3: Enable the FIPS security policy
 
-Windows provides the security policy setting, *System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing*. This setting is used by some Microsoft products to determine whether to run in FIPS mode.  When this policy is turned on, the validated cryptographic modules in Windows will also operate in FIPS mode.  This policy may be set using Local Security Policy, as part of Group Policy, or through a Modern Device Management (MDM) solution.   For more information on the policy, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing).  
+Windows provides the security policy setting, *System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing*. This setting is used by some Microsoft products to determine whether to run in FIPS mode.  When this policy is turned on, the validated cryptographic modules in Windows will also operate in FIPS mode.  This policy may be set using Local Security Policy, as part of Group Policy, or through a Modern Device Management (MDM) solution.   For more information on the policy, see [System cryptography: Use FIPS-compliant algorithms for encryption, hashing, and signing](./security-policy-settings/system-cryptography-use-fips-compliant-algorithms-for-encryption-hashing-and-signing.md).  
 
 ### Step 4: Ensure that only FIPS validated cryptographic algorithms are used
 
@@ -101,10 +102,10 @@ Validated Editions: Home, Pro, Enterprise, Education
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -171,10 +172,10 @@ Validated Editions: Home, Pro, Enterprise, Education
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -235,10 +236,10 @@ Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -304,11 +305,11 @@ Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
 Validated Editions: Home, Pro, Enterprise, Education, S, Surface Hub, Mobile
 
 <table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col /><colgroup>
+
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -392,10 +393,10 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -485,10 +486,10 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, Surface Hub
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -583,10 +584,10 @@ Validated Editions: Home, Pro, Enterprise, Enterprise LTSB, Mobile, and Surface 
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -681,10 +682,10 @@ Validated Editions: RT, Pro, Enterprise, Phone, Embedded
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -860,10 +861,10 @@ Validated Editions: Windows 7, Windows 7 SP1
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -984,10 +985,10 @@ Validated Editions: Ultimate Edition
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1102,10 +1103,10 @@ Validated Editions: Ultimate Edition
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1143,10 +1144,10 @@ Validated Editions: Ultimate Edition
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1177,10 +1178,10 @@ Validated Editions: Ultimate Edition
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1204,10 +1205,10 @@ Validated Editions: Ultimate Edition
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1231,10 +1232,10 @@ Validated Editions: Ultimate Edition
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1268,10 +1269,10 @@ Validated Editions: Ultimate Edition
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1309,10 +1310,10 @@ Validated Editions: Ultimate Edition
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1339,10 +1340,10 @@ Validated Editions: Ultimate Edition
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1366,10 +1367,10 @@ Validated Editions: Ultimate Edition
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1418,10 +1419,10 @@ Validated Editions: Standard, Datacenter
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1488,10 +1489,10 @@ Validated Editions: Standard, Datacenter
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1552,10 +1553,10 @@ Validated Editions: Standard, Datacenter
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -1622,10 +1623,10 @@ Validated Editions: Standard, Datacenter, Storage Server
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -2023,10 +2024,10 @@ Validated Editions: Server, Storage Server
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -2064,10 +2065,10 @@ Validated Editions: Server, Storage Server
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -2111,10 +2112,10 @@ Validated Editions: Server, Storage Server
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -2160,10 +2161,10 @@ Validated Editions: Server, Storage Server
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -2195,10 +2196,10 @@ Validated Editions: Server, Storage Server
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -2222,10 +2223,10 @@ Validated Editions: Server, Storage Server
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col />
+<col />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -2254,8 +2255,8 @@ The following tables are organized by cryptographic algorithms with their modes,
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -3006,8 +3007,8 @@ AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -3158,8 +3159,8 @@ AES <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -3516,8 +3517,8 @@ SHS: SHA-1 (BYTE)</p></td>
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -3977,8 +3978,8 @@ Some of the previously validated components for this validation have been remove
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -4398,8 +4399,8 @@ SHS <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-p
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -5228,8 +5229,8 @@ Random Number Generator (RNG)
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -5281,8 +5282,8 @@ Random Number Generator (RNG)
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -6284,8 +6285,8 @@ Some of the previously validated components for this validation have been remove
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -6558,8 +6559,8 @@ Version 6.3.9600</td>
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -6792,17 +6793,17 @@ Version 6.3.9600</td>
     <td>
       <b>PBKDF</b> (vendor affirmed)</td>
     <td colspan="2">
-      <p> Kernel Mode Cryptographic Primitives Library (cng.sys) Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 <a runat="server" href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2937">#2937</a><br />(Software Version: 10.0.14393)</p>
-      <p>Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 <a runat="server" href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2936">#2936</a><br />(Software Version: 10.0.14393)</p>
-      <p>Code Integrity (ci.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 <a runat="server" href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2935">#2935</a><br />(Software Version: 10.0.14393)</p>
-      <p>Boot Manager in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 <a runat="server" href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2931">#2931</a><br />(Software Version: 10.0.14393)</p>
+      <p> Kernel Mode Cryptographic Primitives Library (cng.sys) Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 <a  href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2937">#2937</a><br />(Software Version: 10.0.14393)</p>
+      <p>Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 <a  href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2936">#2936</a><br />(Software Version: 10.0.14393)</p>
+      <p>Code Integrity (ci.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 <a  href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2935">#2935</a><br />(Software Version: 10.0.14393)</p>
+      <p>Boot Manager in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 <a  href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2931">#2931</a><br />(Software Version: 10.0.14393)</p>
     </td>
   </tr>
   <tr>
     <td colspan="2">
       <b>PBKDF</b> (vendor affirmed)</td>
     <td>
-      <p>Kernel Mode Cryptographic Primitives Library (cng.sys) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 <a runat="server" href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2936">#2936</a><br />(Software Version: 10.0.14393)</p>
+      <p>Kernel Mode Cryptographic Primitives Library (cng.sys) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows Server 2016 Standard, Windows Server 2016 Datacenter, Windows Storage Server 2016 <a  href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2936">#2936</a><br />(Software Version: 10.0.14393)</p>
       <p>Windows 8, Windows RT, Windows Server 2012, Surface Windows RT, Surface Windows 8 Pro, and Windows Phone 8 Cryptography Next Generation (CNG), vendor-affirmed</p>
     </td>
   </tr>
@@ -6813,8 +6814,8 @@ Version 6.3.9600</td>
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col />
+<col />
 </colgroup>
 <tbody>
 <tr class="odd">

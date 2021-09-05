@@ -1,7 +1,7 @@
 ---
 title: Operations for App-V (Windows 10)
 description: Learn about the various types of App-V administration and operating tasks that are typically performed by an administrator.
-author: lomayor
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # Operations for App-V

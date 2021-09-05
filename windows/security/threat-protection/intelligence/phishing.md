@@ -3,17 +3,18 @@ title: How to protect against phishing attacks
 ms.reviewer: 
 description: Learn about how phishing work, deliver malware do your devices, and  what you can do to protect yourself
 keywords: security, malware, phishing, information, scam, social engineering, bait, lure, protection, trends, targeted attack
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: secure
 ms.sitesec: library
 ms.localizationpriority: medium
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance  
+ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
+ms.technology: mde
 ---
 
 # How to protect against phishing attacks
@@ -34,7 +35,7 @@ Here are several telltale signs of a phishing scam:
 
 * The links or URLs provided in emails are **not pointing to the correct location** or are pointing to a third-party site not affiliated with the sender of the email. For example, in the image below the URL provided doesn't match the URL that you'll be taken to.
 
-    ![example of how exploit kits work](./images/URLhover.png)
+    ![example of how exploit kits work.](./images/URLhover.png)
 
 * There's a **request for personal information** such as social security numbers or bank or financial information. Official communications won't generally request personal information from you in the form of an email.
 
@@ -60,7 +61,7 @@ If in doubt, contact the business by known channels to verify if any suspicious 
 
 ## Software solutions for organizations
 
-* [Microsoft Edge](https://docs.microsoft.com/microsoft-edge/deploy/index) and [Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-guard/wd-app-guard-overview) offer protection from the increasing threat of targeted attacks using Microsoft's industry-leading Hyper-V virtualization technology. If a browsed website is deemed untrusted, the Hyper-V container will isolate that device from the rest of your network thereby preventing access to your enterprise data.
+* [Microsoft Edge](/microsoft-edge/deploy/index) and [Windows Defender Application Guard](../microsoft-defender-application-guard/md-app-guard-overview.md) offer protection from the increasing threat of targeted attacks using Microsoft's industry-leading Hyper-V virtualization technology. If a browsed website is deemed untrusted, the Hyper-V container will isolate that device from the rest of your network thereby preventing access to your enterprise data.
 
 * [Microsoft Exchange Online Protection (EOP)](https://products.office.com/exchange/exchange-email-security-spam-protection) offers enterprise-class reliability and protection against spam and malware, while maintaining access to email during and after emergencies.  Using various layers of filtering, EOP can provide different controls for spam filtering, such as bulk mail controls and international spam, that will further enhance your protection services.
 
@@ -84,7 +85,7 @@ If you feel you've been a victim of a phishing attack:
     - Junk: junk@office365.microsoft.com
     - Phishing: phish@office365.microsoft.com
 
-    Drag and drop the junk or phishing message into the new message. This will save the junk or phishing message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers). For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](https://docs.microsoft.com/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
+    Drag and drop the junk or phishing message into the new message. This will save the junk or phishing message as an attachment in the new message. Don't copy and paste the content of the message or forward the message (we need the original message so we can inspect the message headers). For more information, see [Submit spam, non-spam, and phishing scam messages to Microsoft for analysis](/office365/SecurityCompliance/submit-spam-non-spam-and-phishing-scam-messages-to-microsoft-for-analysis).
 
 - **Anti-Phishing Working Group**: phishing-report@us-cert.gov. The group uses reports generated from emails sent to fight phishing scams and hackers. ISPs, security vendors, financial institutions, and law enforcement agencies are involved.
 
@@ -98,4 +99,3 @@ If you feel you've been a victim of a phishing attack:
 
 - [Protect yourself from phishing](https://support.microsoft.com/help/4033787/windows-protect-yourself-from-phishing)
 - [Phishing trends](phishing-trends.md)
-- [Microsoft e-book on preventing social engineering attacks](https://info.microsoft.com/Protectyourweakestlink.html?ls=social), especially in enterprise environments.

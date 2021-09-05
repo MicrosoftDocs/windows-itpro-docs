@@ -4,7 +4,7 @@ description: Learn about server isolation policy design, where you assign server
 ms.assetid: f93f65cd-b863-461e-ab5d-a620fd962c9a
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Server Isolation Policy Design
@@ -31,7 +32,7 @@ You can implement a server isolation design without using domain isolation. To d
 
 The design is shown in the following illustration, with arrows that show the permitted communication paths.
 
-![isolated domain with isolated server](images/wfas-domainisohighsec.gif)
+![isolated domain with isolated server.](images/wfas-domainisohighsec.gif)
 
 Characteristics of this design include the following:
 

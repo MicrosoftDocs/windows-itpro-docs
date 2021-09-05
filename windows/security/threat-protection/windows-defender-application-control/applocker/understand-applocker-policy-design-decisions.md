@@ -1,10 +1,10 @@
 ---
-title: Understand AppLocker policy design decisions (Windows 10)
+title: Understand AppLocker policy design decisions (Windows)
 description: Review some common considerations while you are planning to use AppLocker to deploy application control policies within a Windows environment.
 ms.assetid: 3475def8-949a-4b51-b480-dc88b5c1e6e6
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/13/2017
+ms.technology: mde
 ---
 
 # Understand AppLocker policy design decisions
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies by using AppLocker within a Windows operating system environment.
 
@@ -45,7 +51,7 @@ You might need to control a limited number of apps because they access sensitive
 | Possible answers | Design considerations|
 | - | - |
 | Control all apps | AppLocker policies control applications by creating an allowed list of applications by file type. Exceptions are also possible. AppLocker policies can only be applied to applications installed on computers running one of the supported versions of Windows. For specific operating system version requirements, see [Requirements to use AppLocker](requirements-to-use-applocker.md).|
-| Control specific apps | When you create AppLocker rules, a list of allowed apps are created. All apps on that list will be allowed to run (except those on the exception list). Apps that are not on the list will be prevented from running. AppLocker policies can only be applied to apps installed on computers running any of the supported versions of Windows. For specific operating system version requirements, see [Requirements to use AppLocker](requirements-to-use-applocker.md).|
+| Control specific apps | When you create AppLocker rules, a list of allowed apps is created. All apps on that list will be allowed to run (except those on the exception list). Apps that are not on the list will be prevented from running. AppLocker policies can only be applied to apps installed on computers running any of the supported versions of Windows. For specific operating system version requirements, see [Requirements to use AppLocker](requirements-to-use-applocker.md).|
 |Control only Classic Windows applications, only Universal Windows apps, or both| AppLocker policies control apps by creating an allowed list of apps by file type. Because Universal Windows apps are categorized under the Publisher condition, Classic Windows applications and Universal Windows apps can be controlled together. AppLocker policies for Universal Windows apps can be applied only to apps that are installed on PCs that support the Microsoft Store, but Classic Windows applications can be controlled with AppLocker on all supported versions of Windows. The rules you currently have configured for Classic Windows applications can remain, and you can create new ones for Universal Windows apps.<br/>For a comparison of Classic Windows applications and Universal Windows apps, see [Comparing Classic Windows applications and Universal Windows apps for AppLocker policy design decisions](#bkmk-compareclassicmetro) in this topic.|
 | Control apps by business group and user | AppLocker policies can be applied through a Group Policy Object (GPO) to computer objects within an organizational unit (OU). Individual AppLocker rules can be applied to individual users or to groups of users.|
 | Control apps by computer, not user | AppLocker is a computer-based policy implementation. If your domain or site organizational structure is not based on a logical user structure, such as an OU, you might want to set up that structure before you begin your AppLocker planning. Otherwise, you will have to identify users, their computers, and their app access requirements.|
@@ -53,7 +59,7 @@ You might need to control a limited number of apps because they access sensitive
 
 >**Important:**  The following list contains files or types of files that cannot be managed by AppLocker:
 
--   AppLocker does not protect against running 16-bit DOS binaries in a NT Virtual DOS Machine (NTVDM). This technology allows running legacy DOS and 16-bit Windows programs on computers that are using Intel 80386 or higher when there is already another operating system running and controlling the hardware. The result is that 16-bit binaries can still run on Windows Server 2008 R2 and Windows 7 when AppLocker is configured to otherwise block binaries and libraries. If it is a requirement to prevent 16-bit applications from running, you must configure the Deny rule in the Executable rule collection for NTVDM.exe.
+-   AppLocker does not protect against running 16-bit DOS binaries in an NT Virtual DOS Machine (NTVDM). This technology allows running legacy DOS and 16-bit Windows programs on computers that are using Intel 80386 or higher when there is already another operating system running and controlling the hardware. The result is that 16-bit binaries can still run on Windows Server 2008 R2 and Windows 7 when AppLocker is configured to otherwise block binaries and libraries. If it is a requirement to prevent 16-bit applications from running, you must configure the Deny rule in the Executable rule collection for NTVDM.exe.
 
 -   You cannot use AppLocker to prevent code from running outside the Win32 subsystem. In particular, this applies to the (POSIX) subsystem in Windows NT. If it is a requirement to prevent applications from running in the POSIX subsystem, you must disable the subsystem.
 
@@ -107,6 +113,7 @@ If your organization supports multiple Windows operating systems, app control po
 <tr class="odd">
 <td align="left"><p>Your organization&#39;s computers are running a combination of the following operating systems:</p>
 <ul>
+<li><p>Windows 11</p></li>
 <li><p>Windows 10</p></li>
 <li><p>Windows 8</p></li>
 <li><p>Windows 7</p></li>
@@ -129,6 +136,7 @@ If your organization supports multiple Windows operating systems, app control po
 <tr class="even">
 <td align="left"><p>Your organization&#39;s computers are running only the following operating systems:</p>
 <ul>
+<li><p>Windows 11</p></li>
 <li><p>Windows 10</p></li>
 <li><p>Windows 8.1</p></li>
 <li><p>Windows 8</p></li>

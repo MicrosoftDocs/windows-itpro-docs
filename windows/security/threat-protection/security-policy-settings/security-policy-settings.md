@@ -4,7 +4,7 @@ description: This reference topic describes the common scenarios, architecture, 
 ms.assetid: e7ac5204-7f6c-4708-a9f6-6af712ca43b9
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Security policy settings
@@ -156,7 +157,7 @@ The following diagram shows Security Settings and related features.
 
 #### Security Settings Policies and Related Features
 
-![components related to security policies](images/secpol-components.gif)
+![components related to security policies.](images/secpol-components.gif)
 
 - **Scesrv.dll**
 
@@ -180,7 +181,7 @@ The Security Settings extension of the Local Group Policy Editor is part of the 
 
 **Security Settings Architecture**
 
-![architecture of security policy settings](images/secpol-architecture.gif)
+![architecture of security policy settings.](images/secpol-architecture.gif)
 
 The security settings configuration and analysis tools include a security configuration engine, which provides local computer (non-domain member) and Group Policy−based configuration and analysis of security settings policies. The security configuration engine also supports the creation of security policy files. The primary features of the security configuration engine are scecli.dll and scesrv.dll.
 
@@ -305,7 +306,7 @@ At the level of each organizational unit in the Active Directory hierarchy, one,
 
 This order means that the local Group Policy Object is processed first, and Group Policy Objects that are linked to the organizational unit of which the computer or user is a direct member are processed last, which overwrites the earlier Group Policy Objects.
 
-This is the default processing order and administrators can specify exceptions to this order. A Group Policy Object that is linked to a site, domain, or organizational unit (not a local Group Policy Object) can be set to **Enforced** with respect to that site, domain, or organizational unit, so that none of its policy settings can be overridden. At any site, domain, or organizational unit, you can mark Group Policy inheritance selectively as **Block Inheritance**. Group Policy Object links that are set to **Enforced** are always applied, however, and they cannot be blocked. For more information see [Group Policy Basics – Part 2: Understanding Which GPOs to Apply](https://blogs.technet.microsoft.com/musings_of_a_technical_tam/2012/02/15/group-policy-basics-part-2-understanding-which-gpos-to-apply/).
+This is the default processing order and administrators can specify exceptions to this order. A Group Policy Object that is linked to a site, domain, or organizational unit (not a local Group Policy Object) can be set to **Enforced** with respect to that site, domain, or organizational unit, so that none of its policy settings can be overridden. At any site, domain, or organizational unit, you can mark Group Policy inheritance selectively as **Block Inheritance**. Group Policy Object links that are set to **Enforced** are always applied, however, and they cannot be blocked. For more information see [Group Policy Basics – Part 2: Understanding Which GPOs to Apply](/archive/blogs/musings_of_a_technical_tam/group-policy-basics-part-2-understanding-which-gpos-to-apply).
 
 ### <a href="" id="bkmk-secpolprocessing"></a>Security settings policy processing
 
@@ -320,7 +321,7 @@ In the context of Group Policy processing, security settings policy is processed
 
    **Multiple GPOs and Merging of Security Policy**
 
-   ![multiple gpos and merging of security policy](images/secpol-multigpomerge.gif)
+   ![multiple gpos and merging of security policy.](images/secpol-multigpomerge.gif)
 
 1. The resultant security policies are stored in secedit.sdb, the security settings database. The security engine gets the security template files and imports them to secedit.sdb.
 1. The security settings policies are applied to devices.
@@ -328,7 +329,7 @@ The following figure illustrates the security settings policy processing.
 
 **Security Settings Policy Processing**
 
-![process and interactions of security policy settings](images/secpol-processes.gif)
+![process and interactions of security policy settings.](images/secpol-processes.gif)
 
 ### Merging of security policies on domain controllers
 

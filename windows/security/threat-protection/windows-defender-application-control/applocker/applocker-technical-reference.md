@@ -1,10 +1,10 @@
 ---
-title: AppLocker technical reference (Windows 10)
+title: AppLocker technical reference (Windows)
 description: This overview topic for IT professionals provides links to the topics in the technical reference.
 ms.assetid: 2b2678f8-c46b-4e1d-b8c5-037c0be255ab
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # AppLocker technical reference
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This overview topic for IT professionals provides links to the topics in the technical reference.
 AppLocker advances the application control features and functionality of Software Restriction Policies. AppLocker contains new capabilities and extensions that allow you to create rules to allow or deny apps from running based on unique identities of files and to specify which users or groups can run those apps.

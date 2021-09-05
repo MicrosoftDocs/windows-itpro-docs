@@ -74,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether Security Center is turned on or off for computers that are joined to an Active Directory domain. When Security Center is turned on, it monitors essential security settings and notifies the user when the computer might be at risk. The Security Center Control Panel category view also contains a status section, where the user can get recommendations to help increase the computer's security. When Security Center is not enabled on the domain, neither the notifications nor the Security Center status section are displayed. 
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether Security Center is turned on or off for computers that are joined to an Active Directory domain. When Security Center is turned on, it monitors essential security settings and notifies the user when the computer might be at risk. The Security Center Control Panel category view also contains a status section, where the user can get recommendations to help increase the computer's security. When Security Center is not enabled on the domain, neither the notifications nor the Security Center status section are displayed. 
 
 Note that Security Center can only be turned off for computers that are joined to a Windows domain. When a computer is not joined to a Windows domain, the policy setting will have no effect.
 
@@ -102,7 +102,7 @@ In Windows Vista, this policy setting monitors essential security settings to in
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Security Center (Domain PCs only)*
+-   GP Friendly name: *Turn on Security Center (Domain PCs only)*
 -   GP name: *SecurityCenter_SecurityCenterInDomain*
 -   GP path: *Windows Components\Security Center*
 -   GP ADMX file name: *Securitycenter.admx*
@@ -111,16 +111,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

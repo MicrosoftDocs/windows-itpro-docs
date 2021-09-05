@@ -1,10 +1,10 @@
 ---
-title: Understanding AppLocker rule behavior (Windows 10)
+title: Understanding AppLocker rule behavior (Windows)
 description: This topic describes how AppLocker rules are enforced by using the allow and deny options in AppLocker.
 ms.assetid: 3e2738a3-8041-4095-8a84-45c1894c97d0
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Understanding AppLocker rule behavior
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic describes how AppLocker rules are enforced by using the allow and deny options in AppLocker.
 

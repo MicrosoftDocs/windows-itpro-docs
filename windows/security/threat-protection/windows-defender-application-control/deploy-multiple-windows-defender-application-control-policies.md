@@ -1,9 +1,9 @@
 ---
-title: Use multiple Windows Defender Application Control Policies  (Windows 10)
+title: Use multiple Windows Defender Application Control Policies  (Windows)
 description: Windows Defender Application Control supports multiple code integrity policies for one device.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -11,20 +11,25 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
-ms.date: 11/13/2020
+ms.date: 07/19/2021
+ms.technology: mde
 ---
 
 # Use multiple Windows Defender Application Control Policies
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
-The restriction of only having a single code integrity policy active on a system at any given time has felt limiting for customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports up to 32 active policies on a device at once in order to enable the following scenarios:
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+
+Prior to Windows 10 1903, WDAC only supported a single active policy on a system at any given time. This significantly limited customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports up to 32 active policies on a device at once in order to enable the following scenarios:
 
 1. Enforce and Audit Side-by-Side
     - To validate policy changes before deploying in enforcement mode, users can now deploy an audit-mode base policy side by side with an existing enforcement-mode base policy
@@ -48,7 +53,7 @@ The restriction of only having a single code integrity policy active on a system
 
 ## Creating WDAC policies in Multiple Policy Format
 
-In order to allow multiple policies to exist and take effect on a single system, policies must be created using the new Multiple Policy Format. The "MultiplePolicyFormat" switch in [New-CIPolicy](https://docs.microsoft.com/powershell/module/configci/new-cipolicy?view=win10-ps&preserve-view=true) results in 1) random GUIDs being generated for the policy ID and 2) the policy type being specified as base. The below is an example of creating a new policy in the multiple policy format.
+In order to allow multiple policies to exist and take effect on a single system, policies must be created using the new Multiple Policy Format. The "MultiplePolicyFormat" switch in [New-CIPolicy](/powershell/module/configci/new-cipolicy?preserve-view=true&view=win10-ps) results in 1) unique GUIDs being generated for the policy ID and 2) the policy type being specified as base. The below is an example of creating a new policy in the multiple policy format.
 
 ```powershell
 New-CIPolicy -MultiplePolicyFormat -ScanPath "<path>" -UserPEs -FilePath ".\policy.xml" -Level Publisher -Fallback Hash
@@ -100,7 +105,11 @@ To deploy policies locally using the new multiple policy format, follow these st
 
 ### Deploying multiple policies via ApplicationControl CSP
 
-Multiple WDAC policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). The CSP also provides support for rebootless policy deployment. See [ApplicationControl CSP](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp) for more information on deploying multiple policies, optionally using MEM Intune's Custom OMA-URI capability.
+Multiple WDAC policies can be managed from an MDM server through ApplicationControl configuration service provider (CSP). The CSP also provides support for rebootless policy deployment.<br>
+
+However, when policies are un-enrolled from an MDM server, the CSP will attempt to remove every policy from devices, not just the policies added by the CSP. The reason for this is that the ApplicationControl CSP doesn't track enrollment sources for individual policies, even though it will query all policies on a device, regardless if they were deployed by the CSP.
+
+See [ApplicationControl CSP](/windows/client-management/mdm/applicationcontrol-csp) for more information on deploying multiple policies, optionally using MEM Intune's Custom OMA-URI capability.
 
 > [!NOTE]
-> WMI and GP do not currently support multiple policies. Instead, customers who cannot directly access the MDM stack should use the [ApplicationControl CSP via the MDM Bridge WMI Provider](https://docs.microsoft.com/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage Multiple Policy Format WDAC policies.
+> WMI and GP do not currently support multiple policies. Instead, customers who cannot directly access the MDM stack should use the [ApplicationControl CSP via the MDM Bridge WMI Provider](/windows/client-management/mdm/applicationcontrol-csp#powershell-and-wmi-bridge-usage-guidance) to manage Multiple Policy Format WDAC policies.

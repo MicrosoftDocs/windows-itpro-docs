@@ -4,9 +4,9 @@ description: This section describes the NetworkQoSPolicy settings that you can c
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.reviewer: 
 manager: dansimp
@@ -36,4 +36,4 @@ Use to create network Quality of Service (QoS) policies. A QoS policy performs a
 
 ## Related topics
 
-- [NetworkQoSPolicy configuration service provider (CSP)](https://msdn.microsoft.com/windows/hardware/commercialize/customize/mdm/networkqospolicy-csp)
+- [NetworkQoSPolicy configuration service provider (CSP)](/windows/client-management/mdm/networkqospolicy-csp)

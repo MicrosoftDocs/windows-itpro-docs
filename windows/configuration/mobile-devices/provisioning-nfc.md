@@ -4,8 +4,8 @@ description:
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
@@ -31,7 +31,7 @@ All Windows 10 Mobile Enterprise and Windows 10 Mobile images have the NFC provi
 
 On all Windows devices, device provisioning during OOBE can be triggered by 5 fast taps on the Windows hardware key, which shows the **Provision this device** screen. In the **Provision this device** screen, select **NFC** for NFC-based provisioning. 
 
-![Example of Provision this device screen](../images/nfc.png)
+![Example of Provision this device screen.](../images/nfc.png)
 
 If there is an error during NFC provisioning, the device will show a message if any of the following errors occur:
 
@@ -57,7 +57,7 @@ The protocol used for NFC-based device provisioning is similar to the one used f
 
 NFC tags are suitable for very light applications where minimal provisioning is required. The size of NFC tags that contain provisioning packages is typically 4 KB to 10 KB. 
 
-To write to an NFC tag, you will need to use an NFC Writer tool, or you can use the [ProximityDevice class API](https://msdn.microsoft.com/library/windows/apps/windows.networking.proximity.proximitydevice.aspx) to write your own custom tool to transfer your provisioning package file to your NFC tag. The tool must publish a binary message (write) a Chunk data type to your NFC tag.
+To write to an NFC tag, you will need to use an NFC Writer tool, or you can use the [ProximityDevice class API](/uwp/api/Windows.Networking.Proximity.ProximityDevice) to write your own custom tool to transfer your provisioning package file to your NFC tag. The tool must publish a binary message (write) a Chunk data type to your NFC tag.
 
 The following table describes the information that is required when writing to an NFC tag.
 
@@ -125,7 +125,7 @@ The following example shows how to write to an NFC tag. This example assumes tha
 
 Provisioning from an NFC-enabled source device allows for larger provisioning packages than can be transferred using an NFC tag. When provisioning from an NFC-enabled device, we recommend that the total file size not exceed 120 KB. Be aware that the larger the NFC file is, the longer it will take to transfer the provisioning file. Depending on your NFC hardware, the transfer time for a 120 KB file will vary between 2.5 seconds and 10 seconds.
 
-To provision from an NFC-enabled source device, use [ProximityDevice class API](https://msdn.microsoft.com/library/windows/apps/windows.networking.proximity.proximitydevice.aspx) to write your own custom tool that transfers your provisioning package in chunks to your target mobile device. The tool must publish binary messages (transmit) a Header message, followed by one or more Chunk messages. The Header specifies the total amount of data that will be transferred to the target device; the Chunks must contain binary raw data formatted provisioning data, as shown in the NFC tag components section.
+To provision from an NFC-enabled source device, use [ProximityDevice class API](/uwp/api/Windows.Networking.Proximity.ProximityDevice) to write your own custom tool that transfers your provisioning package in chunks to your target mobile device. The tool must publish binary messages (transmit) a Header message, followed by one or more Chunk messages. The Header specifies the total amount of data that will be transferred to the target device; the Chunks must contain binary raw data formatted provisioning data, as shown in the NFC tag components section.
 
 For detailed information and code samples on how to implement an NFC-enabled device tag, see **ConvertToNfcMessageAsync** in [this GitHub NfcProvisioner Universal Windows app example](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/NfcProvisioner/cs/Scenario1.xaml.cs). The sample app shows you how to host the provisioning package on a master device so that you can transfer it to the receiving device.
 
@@ -141,10 +141,4 @@ For detailed information and code samples on how to implement an NFC-enabled dev
 
 - [Barcode provisioning and the package splitter tool](provisioning-package-splitter.md)
  
-
- 
-
-
-
-
 

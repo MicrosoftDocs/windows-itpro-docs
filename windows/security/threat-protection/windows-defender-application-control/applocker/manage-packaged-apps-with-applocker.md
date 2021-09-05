@@ -1,10 +1,10 @@
 ---
-title: Manage packaged apps with AppLocker (Windows 10)
+title: Manage packaged apps with AppLocker (Windows)
 description: Learn concepts and lists procedures to help you manage packaged apps with AppLocker as part of your overall application control strategy.
 ms.assetid: 6d0c99e7-0284-4547-a30a-0685a9916650
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Manage packaged apps with AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes concepts and lists procedures to help you manage Packaged apps with AppLocker as part of your overall application control strategy.
 
@@ -57,7 +63,7 @@ You can use two methods to create an inventory of packaged apps on a computer: t
 > [!NOTE]
 > Not all packaged apps are listed in AppLocker’s application inventory wizard. Certain app packages are framework packages that are leveraged by other apps. By themselves, these packages cannot do anything, but blocking such packages can inadvertently cause failure for apps that you want to allow. Instead, you can create Allow or Deny rules for the packaged apps that use these framework packages. The AppLocker user interface deliberately filters out all the packages that are registered as framework packages. For info about how to create an inventory list, see [Create list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md).
  
-For info about how to use the **Get-AppxPackage** Windows PowerShell cmdlet, see the [AppLocker PowerShell Command Reference](https://docs.microsoft.com/powershell/module/applocker/).
+For info about how to use the **Get-AppxPackage** Windows PowerShell cmdlet, see the [AppLocker PowerShell Command Reference](/powershell/module/applocker/).
 
 For info about creating rules for Packaged apps, see [Create a rule for packaged apps](create-a-rule-for-packaged-apps.md).
 
@@ -76,7 +82,7 @@ Just as there are differences in managing each rule collection, you need to mana
 
 1.  Gather information about which Packaged apps are running in your environment. For information about how to do this, see [Create list of apps deployed to each business group](create-list-of-applications-deployed-to-each-business-group.md).
 
-2.  Create AppLocker rules for specific packaged apps based on your policy strategies. For more information, see [Create a rule for packaged apps](create-a-rule-for-packaged-apps.md) and [Understanding AppLocker default rules](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/understanding-applocker-default-rules).
+2.  Create AppLocker rules for specific packaged apps based on your policy strategies. For more information, see [Create a rule for packaged apps](create-a-rule-for-packaged-apps.md) and [Understanding AppLocker default rules](./understanding-applocker-default-rules.md).
 
 3.  Continue to update the AppLocker policies as new package apps are introduced into your environment. To do this, see [Add rules for packaged apps to existing AppLocker rule-set](add-rules-for-packaged-apps-to-existing-applocker-rule-set.md).
 

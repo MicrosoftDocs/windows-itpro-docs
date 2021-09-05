@@ -1,11 +1,11 @@
 ---
-title: Display a custom URL message when users try to run a blocked app (Windows 10)
+title: Display a custom URL message when users try to run a blocked app (Windows)
 description: This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.
 ms.assetid: 9a2534a5-d1fa-48a9-93c6-989d4857cf85
 ms.reviewer: 
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Display a custom URL message when users try to run a blocked app
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes the steps for displaying a customized message to users when an AppLocker policy denies access to an app.
 

@@ -97,7 +97,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether BranchCache is enabled on client computers to which this policy is applied. In addition to this policy setting, you must specify whether the client computers are hosted cache mode or distributed cache mode clients. To do so, configure one of the following the policy settings: 
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether BranchCache is enabled on client computers to which this policy is applied. In addition to this policy setting, you must specify whether the client computers are hosted cache mode or distributed cache mode clients. To do so, configure one of the following the policy settings: 
 
 - Set BranchCache Distributed Cache mode
 - Set BranchCache Hosted Cache mode
@@ -124,7 +124,7 @@ Select one of the following:
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on BranchCache*
+-   GP Friendly name: *Turn on BranchCache*
 -   GP name: *EnableWindowsBranchCache*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -177,7 +177,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether BranchCache distributed cache mode is enabled on client computers to which this policy is applied. In addition to this policy, you must use the policy "Turn on BranchCache" to enable BranchCache on client computers.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether BranchCache distributed cache mode is enabled on client computers to which this policy is applied. In addition to this policy, you must use the policy "Turn on BranchCache" to enable BranchCache on client computers.
 
 In distributed cache mode, client computers download content from BranchCache-enabled main office content servers, cache the content locally, and serve the content to other BranchCache distributed cache mode clients in the branch office.
 
@@ -202,7 +202,7 @@ Select one of the following:
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set BranchCache Distributed Cache mode*
+-   GP Friendly name: *Set BranchCache Distributed Cache mode*
 -   GP name: *EnableWindowsBranchCache_Distributed*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -255,7 +255,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether BranchCache hosted cache mode is enabled on client computers to which this policy is applied. In addition to this policy, you must use the policy "Turn on BranchCache" to enable BranchCache on client computers.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether BranchCache hosted cache mode is enabled on client computers to which this policy is applied. In addition to this policy, you must use the policy "Turn on BranchCache" to enable BranchCache on client computers.
 
 When a client computer is configured as a hosted cache mode client, it is able to download cached content from a hosted cache server that is located at the branch office. In addition, when the hosted cache client obtains content from a content server, the client can upload the content to the hosted cache server for access by other hosted cache clients at the branch office.
 
@@ -286,7 +286,7 @@ Hosted cache clients must trust the server certificate that is issued to the hos
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set BranchCache Hosted Cache mode*
+-   GP Friendly name: *Set BranchCache Hosted Cache mode*
 -   GP name: *EnableWindowsBranchCache_Hosted*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -339,7 +339,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether client computers should attempt the automatic configuration of hosted cache mode by searching for hosted cache servers publishing service connection points that are associated with the client's current Active Directory site. If you enable this policy setting, client computers to which the policy setting is applied search for hosted cache servers using Active Directory, and will prefer both these servers and hosted cache mode rather than manual BranchCache configuration or BranchCache configuration by other group policies.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether client computers should attempt the automatic configuration of hosted cache mode by searching for hosted cache servers publishing service connection points that are associated with the client's current Active Directory site. If you enable this policy setting, client computers to which the policy setting is applied search for hosted cache servers using Active Directory, and will prefer both these servers and hosted cache mode rather than manual BranchCache configuration or BranchCache configuration by other group policies.
 
 If you enable this policy setting in addition to the "Turn on BranchCache" policy setting, BranchCache clients attempt to discover hosted cache servers in the local branch office. If client computers detect hosted cache servers, hosted cache mode is turned on. If they do not detect hosted cache servers, hosted cache mode is not turned on, and the client uses any other configuration that is specified manually or by Group Policy.
 
@@ -373,7 +373,7 @@ Select one of the following:
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Automatic Hosted Cache Discovery by Service Connection Point*
+-   GP Friendly name: *Enable Automatic Hosted Cache Discovery by Service Connection Point*
 -   GP name: *EnableWindowsBranchCache_HostedCacheDiscovery*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -426,7 +426,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether client computers are configured to use hosted cache mode and provides the computer name of the hosted cache servers that are available to the client computers. Hosted cache mode enables client computers in branch offices to retrieve content from one or more hosted cache servers that are installed in the same office location. You can use this setting to automatically configure client computers that are configured for hosted cache mode with the computer names of the hosted cache servers in the branch office.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether client computers are configured to use hosted cache mode and provides the computer name of the hosted cache servers that are available to the client computers. Hosted cache mode enables client computers in branch offices to retrieve content from one or more hosted cache servers that are installed in the same office location. You can use this setting to automatically configure client computers that are configured for hosted cache mode with the computer names of the hosted cache servers in the branch office.
 
 If you enable this policy setting and specify valid computer names of hosted cache servers, hosted cache mode is enabled for all client computers to which the policy setting is applied. For this policy setting to take effect, you must also enable the "Turn on BranchCache" policy setting.
 
@@ -456,7 +456,7 @@ In circumstances where this setting is enabled, you can also select and configur
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Hosted Cache Servers*
+-   GP Friendly name: *Configure Hosted Cache Servers*
 -   GP name: *EnableWindowsBranchCache_HostedMultipleServers*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -509,7 +509,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting is used only when you have deployed one or more BranchCache-enabled file servers at your main office. This policy setting specifies when client computers in branch offices start caching content from file servers based on the network latency - or delay - that occurs when the clients download content from the main office over a Wide Area Network (WAN) link. When you configure a value for this setting, which is the maximum round trip network latency allowed before caching begins, clients do not cache content until the network latency reaches the specified value; when network latency is greater than the value, clients begin caching content after they receive it from the file servers.
+Available in the latest Windows 10 Insider Preview Build. This policy setting is used only when you have deployed one or more BranchCache-enabled file servers at your main office. This policy setting specifies when client computers in branch offices start caching content from file servers based on the network latency - or delay - that occurs when the clients download content from the main office over a Wide Area Network (WAN) link. When you configure a value for this setting, which is the maximum round trip network latency allowed before caching begins, clients do not cache content until the network latency reaches the specified value; when network latency is greater than the value, clients begin caching content after they receive it from the file servers.
 
 Policy configuration
 
@@ -533,7 +533,7 @@ In circumstances where this policy setting is enabled, you can also select and c
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure BranchCache for network files*
+-   GP Friendly name: *Configure BranchCache for network files*
 -   GP name: *EnableWindowsBranchCache_SMB*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -586,7 +586,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies the default percentage of total disk space that is allocated for the BranchCache disk cache on client computers.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the default percentage of total disk space that is allocated for the BranchCache disk cache on client computers.
 
 If you enable this policy setting, you can configure the percentage of total disk space to allocate for the cache.
 
@@ -617,7 +617,7 @@ In circumstances where this setting is enabled, you can also select and configur
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set percentage of disk space used for client computer cache*
+-   GP Friendly name: *Set percentage of disk space used for client computer cache*
 -   GP name: *SetCachePercent*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -670,7 +670,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies the default age in days for which segments are valid in the BranchCache data cache on client computers.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies the default age in days for which segments are valid in the BranchCache data cache on client computers.
 
 If you enable this policy setting, you can configure the age for segments in the data cache.
 
@@ -698,7 +698,7 @@ In circumstances where this setting is enabled, you can also select and configur
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set age for segments in the data cache*
+-   GP Friendly name: *Set age for segments in the data cache*
 -   GP name: *SetDataCacheEntryMaxAge*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -751,7 +751,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether BranchCache-capable client computers operate in a downgraded mode in order to maintain compatibility with previous versions of BranchCache. If client computers do not use the same BranchCache version, cache efficiency might be reduced because client computers that are using different versions of BranchCache might store cache data in incompatible formats.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether BranchCache-capable client computers operate in a downgraded mode in order to maintain compatibility with previous versions of BranchCache. If client computers do not use the same BranchCache version, cache efficiency might be reduced because client computers that are using different versions of BranchCache might store cache data in incompatible formats.
 
 If you enable this policy setting, all clients use the version of BranchCache that you specify in "Select from the following versions."
 
@@ -782,7 +782,7 @@ Select from the following versions
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Client BranchCache Version Support*
+-   GP Friendly name: *Configure Client BranchCache Version Support*
 -   GP name: *SetDowngrading*
 -   GP path: *Network\BranchCache*
 -   GP ADMX file name: *PeerToPeerCaching.admx*
@@ -791,15 +791,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->

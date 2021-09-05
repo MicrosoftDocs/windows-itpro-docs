@@ -4,7 +4,7 @@ description: Learn how a boundary zone supports devices that must receive traffi
 ms.assetid: ed98b680-fd24-44bd-a7dd-26c522e45a20
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Boundary Zone
@@ -31,7 +32,7 @@ The GPOs you build for the boundary zone include IPsec or connection security ru
 
 Because these boundary zone devices can receive unsolicited inbound communications from untrusted devices that use plaintext, they must be carefully managed and secured in other ways. Mitigating this additional risk is an important part of deciding whether to add a device to the boundary zone. For example, completing a formal business justification process before adding each device to the boundary zone can help ensure that the additional risk is minimized. The following illustration shows a sample process that can help make such a decision.
 
-![design flowchart](images/wfas-designflowchart1.gif)
+![design flowchart.](images/wfas-designflowchart1.gif)
 
 The goal of this process is to determine whether the risk of adding a device to a boundary zone can be mitigated to a level that makes it acceptable to the organization. Ultimately, if the risk cannot be mitigated, membership must be denied.
 

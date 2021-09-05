@@ -2,7 +2,7 @@
 title: BitLocker recovery guide (Windows 10)
 description: This article for IT professionals describes how to recover BitLocker keys from AD DS.
 ms.assetid: d0f722e9-1773-40bf-8456-63ee7a95ea14
-ms.reviewer: 
+ms.reviewer:
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -22,7 +22,9 @@ ms.custom: bitlocker
 
 **Applies to:**
 
-- Windows 10
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 This article for IT professionals describes how to recover BitLocker keys from AD DS.
 
@@ -123,7 +125,7 @@ Before you create a thorough BitLocker recovery process, we recommend that you t
 
 When planning the BitLocker recovery process, first consult your organization's current best practices for recovering sensitive information. For example: How does your enterprise handle lost Windows passwords? How does your organization perform smart card PIN resets? You can use these best practices and related resources (people and tools) to help formulate a BitLocker recovery model.
 
-Organizations that rely on BitLocker Drive Encryption and BitLocker To Go to protect data on a large number of computers and removable drives running the Windows 10, Windows 8, or Windows 7 operating systems and Windows to Go should consider using the Microsoft BitLocker Administration and Monitoring (MBAM) Tool version 2.0, which is included in the Microsoft Desktop Optimization Pack (MDOP) for Microsoft Software Assurance. MBAM makes BitLocker implementations easier to deploy and manage and allows administrators to provision and monitor encryption for operating system and fixed drives. MBAM prompts the user before encrypting fixed drives. MBAM also manages recovery keys for fixed and removable drives, making recovery easier to manage. MBAM can be used as part of a Microsoft System Center deployment or as a stand-alone solution. For more info, see [Microsoft BitLocker Administration and Monitoring](/microsoft-desktop-optimization-pack/mbam-v25/).
+Organizations that rely on BitLocker Drive Encryption and BitLocker To Go to protect data on a large number of computers and removable drives running the Windows 11, Windows 10, Windows 8, or Windows 7 operating systems and Windows to Go should consider using the Microsoft BitLocker Administration and Monitoring (MBAM) Tool version 2.0, which is included in the Microsoft Desktop Optimization Pack (MDOP) for Microsoft Software Assurance. MBAM makes BitLocker implementations easier to deploy and manage and allows administrators to provision and monitor encryption for operating system and fixed drives. MBAM prompts the user before encrypting fixed drives. MBAM also manages recovery keys for fixed and removable drives, making recovery easier to manage. MBAM can be used as part of a Microsoft System Center deployment or as a stand-alone solution. For more info, see [Microsoft BitLocker Administration and Monitoring](/microsoft-desktop-optimization-pack/mbam-v25/).
 
 After a BitLocker recovery has been initiated, users can use a recovery password to unlock access to encrypted data. Consider both self-recovery and recovery password retrieval methods for your organization.
 
@@ -291,25 +293,25 @@ During BitLocker recovery, Windows can display a custom recovery message and hin
 
 ### Custom recovery message
 
-BitLocker Group Policy settings in Windows 10, version 1511, let you configure a custom recovery message and URL on the BitLocker recovery screen, which can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
+BitLocker Group Policy settings in Windows 10, version 1511, or Windows 11, let you configure a custom recovery message and URL on the BitLocker recovery screen, which can include the address of the BitLocker self-service recovery portal, the IT internal website, or a phone number for support.
 
 This policy can be configured using GPO under **Computer Configuration** > **Administrative Templates** > **Windows Components** > **BitLocker Drive Encryption** > **Operating System Drives** > **Configure pre-boot recovery message and URL**.
 
 It can also be configured using Intune mobile device management (MDM) in the BitLocker CSP:
 *\<LocURI>./Device/Vendor/MSFT/BitLocker/SystemDrivesRecoveryMessage\</LocURI>*
 
-![Custom URL](./images/bl-intune-custom-url.png)
+![Custom URL.](./images/bl-intune-custom-url.png)
 
 Example of customized recovery screen:
 
-![Customized BitLocker Recovery Screen](./images/bl-password-hint1.png)
+![Customized BitLocker Recovery Screen.](./images/bl-password-hint1.png)
 
 
 ### BitLocker recovery key hints
 
-BitLocker metadata has been enhanced in Windows 10, version 1903 to include information about when and where the BitLocker recovery key was backed up. This information is not exposed through the UI or any public API. It is used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where the key has been saved. Hints are displayed on both the modern (blue) and legacy (black) recovery screen. This applies to both the boot manager recovery screen and the WinRE unlock screen.
+BitLocker metadata has been enhanced in Windows 10, version 1903 or Windows 11 to include information about when and where the BitLocker recovery key was backed up. This information is not exposed through the UI or any public API. It is used solely by the BitLocker recovery screen in the form of hints to help a user locate a volume's recovery key. Hints are displayed on the recovery screen and refer to the location where the key has been saved. Hints are displayed on both the modern (blue) and legacy (black) recovery screen. This applies to both the boot manager recovery screen and the WinRE unlock screen.
 
-![Customized BitLocker recovery screen](./images/bl-password-hint2.png)
+![Customized BitLocker recovery screen.](./images/bl-password-hint2.png)
 
 > [!IMPORTANT]
 > We don't recommend printing recovery keys or saving them to a file. Instead, use Active Directory backup or a cloud-based backup. Cloud-based backup includes Azure Active Directory (Azure AD) and Microsoft Account.
@@ -339,7 +341,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 **Result:** The hint for the Microsoft Account and the custom URL are displayed.
 
-![Example 1 of Customized BitLocker recovery screen](./images/rp-example1.PNG)
+![Example 1 of Customized BitLocker recovery screen.](./images/rp-example1.png)
 
 
 #### Example 2 (single recovery key with single backup)
@@ -354,7 +356,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 **Result:** Only the custom URL is displayed.
 
-![Example 2 of customized BitLocker recovery screen](./images/rp-example2.PNG)
+![Example 2 of customized BitLocker recovery screen.](./images/rp-example2.png)
 
 
 #### Example 3 (single recovery key with multiple backups)
@@ -369,7 +371,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 **Result:** Only the Microsoft Account hint is displayed.
 
-![Example 3 of customized BitLocker recovery screen](./images/rp-example3.PNG)
+![Example 3 of customized BitLocker recovery screen.](./images/rp-example3.png)
 
 
 #### Example 4  (multiple recovery passwords)
@@ -399,7 +401,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 **Result:** Only the hint for a successfully backed up key is displayed, even if it isn't the most recent key.
 
-![Example 4 of customized BitLocker recovery screen](./images/rp-example4.PNG)
+![Example 4 of customized BitLocker recovery screen.](./images/rp-example4.png)
 
 
 #### Example 5  (multiple recovery passwords)
@@ -429,7 +431,7 @@ There are rules governing which hint is shown during the recovery (in order of p
 
 **Result:** The hint for the most recent key is displayed.
 
-![Example 5 of customized BitLocker recovery screen](./images/rp-example5.PNG)
+![Example 5 of customized BitLocker recovery screen.](./images/rp-example5.png)
 
 
 ## <a href="" id="bkmk-usingaddrecovery"></a>Using additional recovery information
@@ -484,7 +486,7 @@ You can reset the recovery password in two ways:
 
     > [!WARNING]
     > You must include the braces in the ID string.
-     
+
 **To run the sample recovery password script:**
 
 1. Save the following sample script in a VBScript file. For example: ResetPassword.vbs.

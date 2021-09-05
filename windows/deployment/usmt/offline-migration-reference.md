@@ -96,7 +96,7 @@ The following table defines the supported combination of online and offline oper
  
 
 **Note**  
-It is possible to run the ScanState tool while the drive remains encrypted by suspending Windows BitLocker Drive Encryption before booting into WinPE. For more information, see [this Microsoft site](https://go.microsoft.com/fwlink/p/?LinkId=190314).
+It is possible to run the ScanState tool while the drive remains encrypted by suspending Windows BitLocker Drive Encryption before booting into WinPE. For more information, see [this Microsoft site](/previous-versions/windows/it-pro/windows-7/ee424315(v=ws.10)).
 
  
 
@@ -187,13 +187,13 @@ The following system environment variables are necessary in the scenarios outlin
 <td align="left"><p>USMT_WORKING_DIR</p></td>
 <td align="left"><p>Full path to a working directory</p></td>
 <td align="left"><p>Required when USMT binaries are located on read-only media, which does not support the creation of log files or temporary storage. To set the system environment variable, at a command prompt type the following:</p>
-<pre class="syntax" space="preserve"><code>Set USMT_WORKING_DIR=[path to working directory]</code></pre></td>
+<pre class="syntax"><code>Set USMT_WORKING_DIR=[path to working directory]</code></pre></td>
 </tr>
 <tr class="even">
 <td align="left"><p>MIG_OFFLINE_PLATFORM_ARCH</p></td>
 <td align="left"><p>32 or 64</p></td>
 <td align="left"><p>While operating offline, this environment variable defines the architecture of the offline system, if the system does not match the WinPE and Scanstate.exe architecture. This environment variable enables the 32-bit ScanState application to gather data from a computer with 64-bit architecture, or the 64-bit ScanState application to gather data from a computer with 32-bit architecture. This is required when auto-detection of the offline architecture doesn't function properly, for example, when the source system is running a 64-bit version of Windows XP. For example, to set this system environment variable for a 32-bit architecture, at a command prompt type the following:</p>
-<pre class="syntax" space="preserve"><code>Set MIG_OFFLINE_PLATFORM_ARCH=32</code></pre></td>
+<pre class="syntax"><code>Set MIG_OFFLINE_PLATFORM_ARCH=32</code></pre></td>
 </tr>
 </tbody>
 </table>
@@ -260,10 +260,4 @@ The following XML example illustrates some of the elements discussed earlier in 
 [Plan Your Migration](usmt-plan-your-migration.md)
 
  
-
- 
-
-
-
-
 

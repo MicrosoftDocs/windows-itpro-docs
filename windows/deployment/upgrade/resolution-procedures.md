@@ -36,7 +36,7 @@ A frequently observed [result code](upgrade-error-codes.md#result-codes) is 0xC1
 
 The device install log is particularly helpful if rollback occurs during the sysprep operation (extend code 0x30018).  
 
-To resolve a rollback that was caused by driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/kb/929135) before initiating the upgrade process. Also check to be sure that your drivers are properly signed. For more information, see [Remove unsigned drivers](quick-fixes.md#repair-unsigned-drivers).
+To resolve a rollback that was caused by driver conflicts, try running setup using a minimal set of drivers and startup programs by performing a [clean boot](https://support.microsoft.com/kb/929135) before initiating the upgrade process.
 
 See the following general troubleshooting procedures associated with a result code of 0xC1900101:<br /><br />
 
@@ -49,7 +49,7 @@ See the following general troubleshooting procedures associated with a result co
 | 0xC1900101 - 0x30018 | Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.<br>Contact your hardware vendor to obtain updated device drivers.<br>Ensure that &quot;Download and install updates (recommended)&quot; is accepted at the start of the upgrade process. | A device driver has stopped responding to setup.exe during the upgrade process. |
 | 0xC1900101 - 0x3000D | Disconnect all peripheral devices that are connected to the system, except for the mouse, keyboard and display.<br>Update or uninstall the display driver. | Installation failed during the FIRST_BOOT phase while attempting the MIGRATE_DATA operation.<br>This can occur due to a problem with a display driver. |
 | 0xC1900101 - 0x4000D | Check supplemental rollback logs for a setupmem.dmp file, or event logs for any unexpected reboots or errors.<br>Review the rollback log and determine the stop code.<br>The rollback log is located in the <strong>$Windows.~BT\Sources\Rollback</strong> folder.  An example analysis is shown below. This example is not representative of all cases:<br>&nbsp;<br>Info SP     Crash 0x0000007E detected<br>Info SP       Module name           :<br>Info SP       Bugcheck parameter 1  : 0xFFFFFFFFC0000005<br>Info SP       Bugcheck parameter 2  : 0xFFFFF8015BC0036A<br>Info SP       Bugcheck parameter 3  : 0xFFFFD000E5D23728<br>Info SP       Bugcheck parameter 4  : 0xFFFFD000E5D22F40<br>Info SP     Cannot recover the system.<br>Info SP     Rollback: Showing splash window with restoring text: Restoring your previous version of Windows.<br>&nbsp;<br>Typically, there is a dump file for the crash to analyze. If you are not equipped to debug the dump, then attempt the following basic troubleshooting procedures:<br>&nbsp;<br>1. Make sure you have enough disk space.<br>2. If a driver is identified in the bug check message, disable the driver or check with the manufacturer for driver updates.<br>3. Try changing video adapters.<br>4. Check with your hardware vendor for any BIOS updates.<br>5. Disable BIOS memory options such as caching or shadowing. | A rollback occurred due to a driver configuration issue.<br>Installation failed during the second boot phase while attempting the MIGRATE_DATA operation.<br>This can occur because of incompatible drivers. |
-| 0xC1900101 - 0x40017 | Clean boot into Windows, and then attempt the upgrade to Windows 10. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).<br>&nbsp;<br>Ensure that you select the option to "Download and install updates (recommended)."  Also be sure to [remove unsigned drivers](quick-fixes.md#repair-unsigned-drivers).<br>&nbsp;<br><b>Computers that run Citrix VDA</b>  <br>You may see this message after you upgrade a computer from Windows 10, version 1511 to Windows 10, version 1607. After the second system restart, the system generates this error and then rolls back to the previous version. This problem has also been observed in upgrades to Windows 8.1 and Windows 8.  <br>&nbsp;<br>This problem occurs because the computer has Citrix Virtual Delivery Agent (VDA) installed. Citrix VDA installs device drivers and a file system filter driver (CtxMcsWbc). This Citrix filter driver prevents the upgrade from writing changes to the disk, so the upgrade cannot complete and the system rolls back.  <br>&nbsp;<br>**Resolution**<br>&nbsp;<br>To resolve this problem, install [Cumulative update for Windows 10 Version 1607 and Windows Server 2016: November 8, 2016](https://support.microsoft.com/help/3200970/cumulative-update-for-windows-10-version-1607-and-windows-server-2016).<br>&nbsp;<br>You can work around this problem in two ways:<br>&nbsp;<br>**Workaround 1**<br>&nbsp;<br>1. Use the VDA setup application (VDAWorkstationSetup_7.11) to uninstall Citrix VDA.<br>2. Run the Windows upgrade again.<br>3. Reinstall Citrix VDA.<br>&nbsp;<br>**Workaround 2**<br>&nbsp;<br>If you cannot uninstall Citrix VDA, follow these steps to work around this problem:  <br>&nbsp;<br>1. In Registry Editor, go to the following subkey:<br> **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}\CtxMcsWbc**<br>2. Change the value of the **Start** entry from **0** to **4**. This change disables the Citrix MCS cache service.<br>3. Go to the following subkey:<br> **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}**<br>4. Delete the **CtxMcsWbc** entry.<br>5. Restart the computer, and then try the upgrade again.<br>&nbsp;<br>**Non-Microsoft information disclaimer**  <br>The non-Microsoft products that this article discusses are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, about the performance or reliability of these products. | Windows 10 upgrade failed after the second reboot.<br>This is usually caused by a faulty driver. For example: antivirus filter drivers or encryption drivers. |
+| 0xC1900101 - 0x40017 | Clean boot into Windows, and then attempt the upgrade to Windows 10. For more information, see [How to perform a clean boot in Windows](https://support.microsoft.com/kb/929135).<br>Ensure that you select the option to "Download and install updates (recommended)."<br>&nbsp;<br><b>Computers that run Citrix VDA</b>  <br>You may see this message after you upgrade a computer from Windows 10, version 1511 to Windows 10, version 1607. After the second system restart, the system generates this error and then rolls back to the previous version. This problem has also been observed in upgrades to Windows 8.1 and Windows 8.  <br>&nbsp;<br>This problem occurs because the computer has Citrix Virtual Delivery Agent (VDA) installed. Citrix VDA installs device drivers and a file system filter driver (CtxMcsWbc). This Citrix filter driver prevents the upgrade from writing changes to the disk, so the upgrade cannot complete and the system rolls back.  <br>&nbsp;<br>**Resolution**<br>&nbsp;<br>To resolve this problem, install [Cumulative update for Windows 10 Version 1607 and Windows Server 2016: November 8, 2016](https://support.microsoft.com/help/3200970/cumulative-update-for-windows-10-version-1607-and-windows-server-2016).<br>&nbsp;<br>You can work around this problem in two ways:<br>&nbsp;<br>**Workaround 1**<br>&nbsp;<br>1. Use the VDA setup application (VDAWorkstationSetup_7.11) to uninstall Citrix VDA.<br>2. Run the Windows upgrade again.<br>3. Reinstall Citrix VDA.<br>&nbsp;<br>**Workaround 2**<br>&nbsp;<br>If you cannot uninstall Citrix VDA, follow these steps to work around this problem:  <br>&nbsp;<br>1. In Registry Editor, go to the following subkey:<br> **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}\CtxMcsWbc**<br>2. Change the value of the **Start** entry from **0** to **4**. This change disables the Citrix MCS cache service.<br>3. Go to the following subkey:<br> **HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Class\{4d36e967-e325-11ce-bfc1-08002be10318}**<br>4. Delete the **CtxMcsWbc** entry.<br>5. Restart the computer, and then try the upgrade again.<br>&nbsp;<br>**Non-Microsoft information disclaimer**  <br>The non-Microsoft products that this article discusses are manufactured by companies that are independent of Microsoft. Microsoft makes no warranty, implied or otherwise, about the performance or reliability of these products. | Windows 10 upgrade failed after the second reboot.<br>This is usually caused by a faulty driver. For example: antivirus filter drivers or encryption drivers. |
 
 ## 0x800xxxxx
 
@@ -80,7 +80,7 @@ See the following general troubleshooting procedures associated with a result co
 <tr>
 <td>0xC1800118</td>
 <td>WSUS has downloaded content that it cannot use due to a missing decryption key.</td>
-<td>See <a href="https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/" data-raw-source="[Steps to resolve error 0xC1800118](https://blogs.technet.microsoft.com/wsus/2016/09/21/resolving-error-0xc1800118/)">Steps to resolve error 0xC1800118</a> for information.</td>
+<td>See <a href="/archive/blogs/wsus/resolving-error-0xc1800118" data-raw-source="[Steps to resolve error 0xC1800118](/archive/blogs/wsus/resolving-error-0xc1800118)">Steps to resolve error 0xC1800118</a> for information.</td>
 </tr>
 
 <tr>
@@ -153,7 +153,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <tr>
 <td>0xC1900209</td>
 <td>The user has chosen to cancel because the system does not pass the compatibility scan to install the update. Setup.exe will report this error when it can upgrade the machine with user data but cannot migrate installed applications.</td>
-<td>Incompatible software is blocking the upgrade process. Uninstall the application and try the upgrade again. See <a href="https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/" data-raw-source="[Windows 10 Pre-Upgrade Validation using SETUP.EXE](https://blogs.technet.microsoft.com/mniehaus/2015/08/23/windows-10-pre-upgrade-validation-using-setup-exe/)">Windows 10 Pre-Upgrade Validation using SETUP.EXE</a> for more information.
+<td>Incompatible software is blocking the upgrade process. Uninstall the application and try the upgrade again. See <a href="/archive/blogs/mniehaus/windows-10-pre-upgrade-validation-using-setup-exe" data-raw-source="[Windows 10 Pre-Upgrade Validation using SETUP.EXE](/archive/blogs/mniehaus/windows-10-pre-upgrade-validation-using-setup-exe)">Windows 10 Pre-Upgrade Validation using SETUP.EXE</a> for more information.
 <br>You can also download the <a href="https://go.microsoft.com/fwlink/p/?LinkId=526740">Windows Assessment and Deployment Kit (ADK) for Windows 10</a> and install Application Compatibility Tools.
 </td>
 </tr>
@@ -170,7 +170,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <tr>
 <td>0x80240FFF </td>
 <td>Occurs when update synchronization fails. It can occur when you are using Windows Server Update Services on its own or when it is integrated with Microsoft Endpoint Configuration Manager. If you enable update synchronization before you install <a href="https://support.microsoft.com/help/3095113/">hotfix 3095113</a>, WSUS doesn&#39;t recognize the Upgrades classification and instead treats the upgrade like a regular update.</td>
-<td> You can prevent this by installing <a href="https://blogs.technet.microsoft.com/wsus/2015/12/03/important-update-for-wsus-4-0-kb-3095113/">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
+<td> You can prevent this by installing <a href="/archive/blogs/wsus/important-update-for-wsus-4-0-kb-3095113">hotfix 3095113</a> before you enable update synchronization. However, if you have already run into this problem, do the following:
 <ol>
 <li>Disable the Upgrades classification.</li>
 <li>Install hotfix 3095113.</li>
@@ -178,7 +178,7 @@ Download and run the media creation tool. See <a href="https://www.microsoft.com
 <li>Enable the Upgrades classification.</li>
 <li>Perform a full synch.</li>
 </ol>
-For detailed information on how to run these steps check out <a href="https://blogs.technet.microsoft.com/wsus/2016/01/29/how-to-delete-upgrades-in-wsus/">How to delete upgrades in WSUS</a>.</p>
+For detailed information on how to run these steps check out <a href="/archive/blogs/wsus/how-to-delete-upgrades-in-wsus">How to delete upgrades in WSUS</a>.</p>
 </td>
 </tr>
 
@@ -210,7 +210,7 @@ For detailed information on how to run these steps check out <a href="https://bl
 <tr><td>0x80070003- 0x20007
 <td>This is a failure during SafeOS phase driver installation.
 
-<td><a href="https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
+<td><a href="/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
 </td></tr>
 <tr><td>0x8007025D - 0x2000C
 <td>This error occurs if the ISO file&#39;s metadata is corrupt.<td>&quot;Re-download the ISO/Media and re-attempt the upgrade.
@@ -220,7 +220,7 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 </td></tr>
 <tr><td>0x80070490 - 0x20007<td>An incompatible device driver is present.
 
-<td><a href="https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](https://msdn.microsoft.com/windows/hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
+<td><a href="/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations" data-raw-source="[Verify device drivers](/windows-hardware/drivers/install/troubleshooting-device-and-driver-installations)">Verify device drivers</a> on the computer, and <a href="log-files.md#analyze-log-files" data-raw-source="[analyze log files](log-files.md#analyze-log-files)">analyze log files</a> to determine the problem driver.
 
 </td></tr>
 <tr><td>0xC1900101 - 0x2000c
@@ -233,7 +233,7 @@ Alternatively, re-create installation media the [Media Creation Tool](https://ww
 
 See <a href="https://www.microsoft.com/windows/windows-10-specifications" data-raw-source="[Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)">Windows 10 Specifications</a> and verify the computer meets minimum requirements.
 
-Review logs for [compatibility information](https://blogs.technet.microsoft.com/askcore/2016/01/21/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues/).</td></tr>
+Review logs for [compatibility information](/archive/blogs/askcore/using-the-windows-10-compatibility-reports-to-understand-upgrade-issues).</td></tr>
 <tr><td>0x80070004 - 0x3000D
 <td>This is a problem with data migration during the first boot phase. There are multiple possible causes.
 
@@ -340,8 +340,10 @@ Also see the following sequential list of modern setup (mosetup) error codes wit
 
 ## Related topics
 
-- [Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)
+- [Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)
 - [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 - [Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)
 - [Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/home?category=Windows10ITPro)
 - [Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+- [Win 7 to Win 10 upgrade error (0x800707E7 - 0x3000D)](https://answers.microsoft.com/en-us/windows/forum/all/win-7-to-win-10-upgrade-error-0x800707e7-0x3000d/1273bc1e-8a04-44d4-a6b2-808c9feeb020))
+- [Win 10 upgrade error: User profile suffix mismatch, 0x800707E7 - 0x3000D](https://answers.microsoft.com/en-us/windows/forum/windows_10-windows_install/win-10-upgrade-error-user-profile-suffix-mismatch/0f006733-2af5-4b42-a2d4-863fad05273d?page=3)

@@ -56,15 +56,15 @@ Page files extend how much "committed memory" (also known as "virtual memory") i
 
 The system commit memory limit is the sum of physical memory and all page files combined. It represents the maximum system-committed memory (also known as the "system commit charge") that the system can support.
 
-![Task manager](images/task-manager.png)
+![Task manager.](images/task-manager.png)
  
 The system commit charge is the total committed or "promised" memory of all committed virtual memory in the system. If the system commit charge reaches the system commit limit, the system and processes might not get committed memory. This condition can cause freezing, crashing, and other malfunctions. Therefore, make sure that you set the system commit limit high enough to support the system commit charge during peak usage.
 
-![Out of memory](images/out-of-memory.png)
+![Out of memory.](images/out-of-memory.png)
 
-![Task Manager](images/task-manager-commit.png)
+![Task Manager.](images/task-manager-commit.png)
 
 The system committed charge and system committed limit can be measured on the **Performance** tab in Task Manager or by using the "\Memory\Committed Bytes" and "\Memory\Commit Limit" performance counters. The \Memory\% Committed Bytes In Use counter is a ratio of \Memory\Committed Bytes to \Memory\Commit Limit values.
 
->[!Note]
->System-managed page files automatically grow up to three times the physical memory or 4 GB (whichever is larger) when the system commit charge reaches 90 percent of the system commit limit. This assumes that enough free disk space is available to accommodate the growth.
+> [!NOTE]
+> System-managed page files automatically grow up to three times the physical memory or 4 GB (whichever is larger, but no more than one-eighth of the volume size) when the system commit charge reaches 90 percent of the system commit limit. This assumes that enough free disk space is available to accommodate the growth.

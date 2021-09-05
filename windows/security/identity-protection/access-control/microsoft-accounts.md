@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -185,6 +185,6 @@ Within your organization, you can set application control policies to regulate a
 
 ## See also
 
-- [Managing Privacy: Using a Microsoft Account to Logon and Resulting Internet Communication](https://technet.microsoft.com/library/jj884082(v=ws.11).aspx)
+- [Managing Privacy: Using a Microsoft Account to Logon and Resulting Internet Communication](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj884082(v=ws.11))
 
 - [Access Control Overview](access-control.md)

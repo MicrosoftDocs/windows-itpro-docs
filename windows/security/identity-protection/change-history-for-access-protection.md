@@ -1,12 +1,12 @@
 ---
 title: Change history for access protection (Windows 10)
-description: This topic lists new and updated topics in the Windows 10 access protection documentation for Windows 10 and Windows 10 Mobile.
+description: This topic lists new and updated topics in the Windows 10 access protection documentation for Windows 10.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -27,7 +27,7 @@ This topic lists new and updated topics in the [Access protection](index.md) doc
 ## June 2017
 |New or changed topic |Description |
 |---------------------|------------|
-|[How hardware-based containers help protect Windows 10](how-hardware-based-containers-help-protect-windows.md) | New | 
+|[How hardware-based containers help protect Windows 10](/windows/security/threat-protection/windows-defender-atp/how-hardware-based-containers-help-protect-windows) | New | 
 
 
 ## March 2017

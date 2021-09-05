@@ -1,10 +1,10 @@
 ---
-title: Monitor app usage with AppLocker (Windows 10)
+title: Monitor app usage with AppLocker (Windows)
 description: This topic for IT professionals describes how to monitor app usage when AppLocker policies are applied.
 ms.assetid: 0516da6e-ebe4-45b4-a97b-31daba96d1cf
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Monitor app usage with AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes how to monitor app usage when AppLocker policies are applied.
 

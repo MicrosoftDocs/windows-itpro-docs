@@ -1,7 +1,7 @@
 ---
 title: Install the App-V Sequencer (Windows 10)
 description: Learn how to install the App-V Sequencer to convert Win32 applications into virtual packages for deployment to user devices.
-author: lomayor
+author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -9,7 +9,7 @@ ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 # Install the App-V Sequencer
@@ -28,7 +28,7 @@ The App-V Sequencer is included in the Windows 10 Assessment and Deployment Kit 
 1. Go to [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 2. Select the **Get Windows ADK for Windows 10** button on the page to start the ADK installer. Make sure that **Microsoft Application Virtualization (App-V) Sequencer** is selected during the installation.
 
-    ![Selecting APP-V features in ADK](images/app-v-in-adk.png)
+    ![Selecting APP-V features in ADK.](images/app-v-in-adk.png)
 3. To open the Sequencer, go to the **Start** menu and select **Microsoft Application Virtualization (App-V) Sequencer**.
 
 See [Creating and managing virtual applications](appv-creating-and-managing-virtualized-applications.md) and the [Application Virtualization Sequencing Guide](https://download.microsoft.com/download/F/7/8/F784A197-73BE-48FF-83DA-4102C05A6D44/App-V%205.0%20Sequencing%20Guide.docx) for information about creating virtual applications with the Sequencer.

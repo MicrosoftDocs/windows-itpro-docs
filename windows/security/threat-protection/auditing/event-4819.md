@@ -2,7 +2,7 @@
 title: 4819(S) Central Access Policies on the machine have been changed. (Windows 10)
 description: Describes security event 4819(S) Central Access Policies on the machine have been changed.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 4819(S): Central Access Policies on the machine have been changed.
@@ -26,9 +27,9 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates when [Central Access Policy](https://technet.microsoft.com/library/hh831425.aspx) on the machine have been changed.
+This event generates when [Central Access Policy](/windows-server/identity/solution-guides/scenario--central-access-policy) on the machine have been changed.
 
-For example, it generates when a new [Central Access Policy](https://technet.microsoft.com/library/hh831425.aspx) was applied to the machine via Group Policy.
+For example, it generates when a new [Central Access Policy](/windows-server/identity/solution-guides/scenario--central-access-policy) was applied to the machine via Group Policy.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -136,5 +137,4 @@ For 4819(S): Central Access Policies on the machine have been changed.
 
 -   This event can help you to track modifications, additions and deletions of Central Access Policies if it is required by your security monitoring policy.
 
--   
-
+-

@@ -1,6 +1,6 @@
 ---
 title: Bulk enrollment
-description: Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. In Windows 10.
+description: Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. In Windows 10 and Windows 11.
 MS-HAID: 
   - 'p\_phdevicemgmt.bulk\_enrollment'
   - 'p\_phDeviceMgmt.bulk\_enrollment\_using\_Windows\_provisioning\_tool'
@@ -11,14 +11,14 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: lomayor
+author: dansimp
 ms.date: 06/26/2017
 ---
 
 
 # Bulk enrollment
 
-Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. In Windows 10 desktop and mobile devices, you can use the [Provisioning CSP](provisioning-csp.md) for bulk enrollment, except for the Azure Active Directory Join (Cloud Domain Join) enrollment scenario.
+Bulk enrollment is an efficient way to set up a large number of devices to be managed by an MDM server without the need to re-image the devices. In Windows 10 and 11 desktop devices, you can use the [Provisioning CSP](provisioning-csp.md) for bulk enrollment, except for the Azure Active Directory Join (Cloud Domain Join) enrollment scenario.
 
 ## Typical use cases
 
@@ -35,29 +35,31 @@ On the desktop and mobile devices, you can use an enrollment certificate or enro
 > [!NOTE]
 > -   Bulk-join is not supported in Azure Active Directory Join.
 > -   Bulk enrollment does not work in Intune standalone environment.
-> -   Bulk enrollment works in Microsoft Endpoint Configuration Manager where the ppkg is generated from the Configuration Manager console.
+> -   Bulk enrollment works in Microsoft Endpoint Manager where the ppkg is generated from the Configuration Manager console.
 > -   To change bulk enrollment settings, login to **AAD**, then **Devices**, and then click **Device Settings**. Change the number under **Maximum number of devices per user**.
+> -   Bulk Token creation is not supported with federated accounts.
 
 ## What you need
 
--   Windows 10 devices
--   Windows Imaging and Configuration Designer (ICD) tool
-    To get the ICD tool, download the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit). For more information about the ICD tool, see [Windows Imaging and Configuration Designer](https://msdn.microsoft.com/library/windows/hardware/dn916113) and [Getting started with Windows ICD](https://msdn.microsoft.com/library/windows/hardware/dn916112).
--   Enrollment credentials (domain account for enrollment, generic enrollment credentials for MDM, enrollment certificate for MDM.)
+-   Windows 10 devices.
+-   Windows Configuration Designer (WCD) tool.
+
+    To get the WCD tool, download from the [Microsoft Store](https://www.microsoft.com/store/productId/9NBLGGH4TX22). For more information about the WCD tool, see [Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd) and [Getting started with Windows WCD](/windows/configuration/provisioning-packages/provisioning-install-icd).
+-   Enrollment credentials (domain account for enrollment, generic enrollment credentials for MDM, enrollment certificate for MDM.).
 -   Wi-Fi credentials, computer name scheme, and anything else required by your organization.
 
     Some organizations require custom APNs to be provisioned before talking to the enrollment endpoint or custom VPN to join a domain.
 
 ## Create and apply a provisioning package for on-premises authentication
 
-Using the ICD, create a provisioning package using the enrollment information required by your organization. Ensure that you have all the configuration settings.
+Using the WCD, create a provisioning package using the enrollment information required by your organization. Ensure that you have all the configuration settings.
 
-1. Open the Windows ICD tool (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+1. Open the WCD tool.
 2. Click **Advanced Provisioning**.
 
-   ![icd start page](images/bulk-enrollment7.png)
+   ![icd start page.](images/bulk-enrollment7.png)
 3. Enter a project name and click **Next**.
-4. Select **All Windows editions**, since Provisioning CSP is common to all Windows 10 editions, then click **Next**.
+4. Select **All Windows editions**, since Provisioning CSP is common to all Windows editions, then click **Next**.
 5. Skip **Import a provisioning package (optional)** and click **Finish**.
 6. Expand **Runtime settings** &gt; **Workplace**.
 7. Click **Enrollments**, enter a value in **UPN**, and then click **Add**.
@@ -70,32 +72,33 @@ Using the ICD, create a provisioning package using the enrollment information re
    -   **PolicyServiceFullUrl** - Optional and in most cases, it should be left blank.
    -   **Secret** - Password
    For detailed descriptions of these settings, see [Provisioning CSP](provisioning-csp.md).
-   Here is the screenshot of the ICD at this point.
-   ![bulk enrollment screenshot](images/bulk-enrollment.png)
+   Here is the screenshot of the WCD at this point.
+   
+    ![bulk enrollment screenshot.](images/bulk-enrollment.png)
 9. Configure the other settings, such as the Wi-Fi connections so that the device can join a network before joining MDM (e.g., **Runtime settings** &gt; **ConnectivityProfiles** &gt; **WLANSetting**).
 10. When you are done adding all the settings, on the **File** menu, click **Save**.
 11. On the main menu click **Export** &gt; **Provisioning package**.
 
-    ![icd menu for export](images/bulk-enrollment2.png)
+    ![icd menu for export.](images/bulk-enrollment2.png)
 12. Enter the values for your package and specify the package output location.
 
-    ![enter package information](images/bulk-enrollment3.png)
-    ![enter additional information for package information](images/bulk-enrollment4.png)
-    ![specify file location](images/bulk-enrollment6.png)
+    ![enter package information.](images/bulk-enrollment3.png)
+    ![enter additional information for package information.](images/bulk-enrollment4.png)
+    ![specify file location.](images/bulk-enrollment6.png)
 13. Click **Build**.
 
-    ![icb build window](images/bulk-enrollment5.png)
+    ![icb build window.](images/bulk-enrollment5.png)
 14. Apply the package to some test devices and verify that they work. For more information, see [Apply a provisioning package](#apply-a-provisioning-package).
 15. Apply the package to your devices.
 
 ## Create and apply a provisioning package for certificate authentication
 
-Using the ICD, create a provisioning package using the enrollment information required by your organization. Ensure that you have all the configuration settings.
+Using the WCD, create a provisioning package using the enrollment information required by your organization. Ensure that you have all the configuration settings.
 
-1. Open the Windows ICD tool (by default, %windir%\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Imaging and Configuration Designer\\x86\\ICD.exe).
+1. Open the WCD tool.
 2. Click **Advanced Provisioning**.
 3. Enter a project name and click **Next**.
-4. Select **Common to all Windows editions**, since Provisioning CSP is common to all Windows 10 editions.
+4. Select **Common to all Windows editions**, since Provisioning CSP is common to all Windows editions.
 5. Skip **Import a provisioning package (optional)** and click **Finish**.
 6. Specify the certificate.
    1.  Go to **Runtime settings** &gt; **Certificates** &gt; **ClientCertificates**.
@@ -105,7 +108,7 @@ Using the ICD, create a provisioning package using the enrollment information re
    5.  Set **ExportCertificate** to False.
    6.  For **KeyLocation**, select **Software only**.
 
-   ![icd certificates section](images/bulk-enrollment8.png)
+   ![icd certificates section.](images/bulk-enrollment8.png)
 7. Specify the workplace settings.
    1. Got to **Workplace** &gt; **Enrollments**.
    2. Enter the **UPN** for the enrollment and then click **Add**.
@@ -128,9 +131,8 @@ Using the ICD, create a provisioning package using the enrollment information re
 
 Here's the list of topics about applying a provisioning package:
 
--   [Apply a package on the first-run setup screen (out-of-the-box experience)](https://technet.microsoft.com/itpro/windows/deploy/provision-pcs-for-initial-deployment#apply-package) - topic in Technet.
--   [Apply a package to a Windows 10 desktop edition image](https://msdn.microsoft.com/library/windows/hardware/dn916107.aspx#to_apply_a_provisioning_package_to_a_desktop_image) - topic in MSDN
--   [Apply a package to a Windows 10 Mobile image](https://msdn.microsoft.com/library/windows/hardware/dn916107.aspx#to_apply_a_provisioning_package_to_a_mobile_image) - topic in MSDN.
+-   [Apply a package on the first-run setup screen (out-of-the-box experience)](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment#apply-package) - topic in Technet.
+-   [Apply a package to a Windows desktop edition image](/windows/configuration/provisioning-packages/provisioning-create-package#to_apply_a_provisioning_package_to_a_desktop_image) - topic in MSDN
 -   [Apply a package from the Settings menu](#apply-a-package-from-the-settings-menu) - topic below
 
 ## Apply a package from the Settings menu
@@ -153,18 +155,12 @@ If all immediate attempts fail, a delayed task is launched to try provisioning a
 
 It will also retry to apply the provisioning each time it is launched, if started from somewhere else as well.
 
-In addition, provisioning will be restarted in a SYSTEM context after a login and the system has been idle ([details on idle conditions](https://msdn.microsoft.com/library/windows/desktop/aa383561.aspx)).
+In addition, provisioning will be restarted in a SYSTEM context after a login and the system has been idle ([details on idle conditions](/windows/win32/taskschd/task-idle-conditions)).
 
 ## Other provisioning topics
 
 Here are links to step-by-step provisioning topics in Technet.
 
--   [Provision PCs with apps and certificates for initial deployment](https://technet.microsoft.com/itpro/windows/deploy/provision-pcs-with-apps-and-certificates)
--   [Provision PCs with common settings for initial deployment](https://technet.microsoft.com/itpro/windows/deploy/provision-pcs-for-initial-deployment)
-
- 
-
-
-
-
+-   [Provision PCs with apps and certificates for initial deployment](/windows/configuration/provisioning-packages/provision-pcs-with-apps)
+-   [Provision PCs with common settings for initial deployment](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment)
 

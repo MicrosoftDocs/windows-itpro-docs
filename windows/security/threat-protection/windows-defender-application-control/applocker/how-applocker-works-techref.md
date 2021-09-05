@@ -1,10 +1,10 @@
 ---
-title: How AppLocker works (Windows 10)
+title: How AppLocker works (Windows)
 description: This topic for the IT professional provides links to topics about AppLocker architecture and components, processes and interactions, rules and policies.
 ms.assetid: 24bb1d73-0ff5-4af7-8b8a-2fa44d4ddbcd
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # How AppLocker works
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional provides links to topics about AppLocker architecture and components, processes and interactions, rules and policies.
 

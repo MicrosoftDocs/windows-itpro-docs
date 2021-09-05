@@ -62,15 +62,15 @@ When IE blocks an outdated ActiveX control, you’ll see a notification bar simi
 
 **Internet Explorer 9 through Internet Explorer 11**
 
-![Warning about outdated activex controls (ie9+)](images/outdatedcontrolwarning.png)
+![Warning about outdated activex controls (ie9+).](images/outdatedcontrolwarning.png)
 
 **Windows Internet Explorer 8**
 
-![Warning about outdated activex controls (ie8)](images/ieoutdatedcontrolwarning.png)
+![Warning about outdated activex controls (ie8).](images/ieoutdatedcontrolwarning.png)
 
 Out-of-date ActiveX control blocking also gives you a security warning that tells you if a webpage tries to launch specific outdated apps, outside of IE:
 
-![Warning about outdated activex controls outside ie](images/ieoutdatedcontroloutsideofie.png)
+![Warning about outdated activex controls outside ie.](images/ieoutdatedcontroloutsideofie.png)
 
 
 ## How do I fix an outdated ActiveX control or app?
@@ -168,7 +168,7 @@ Here’s a detailed example and description of what’s included in the VersionA
 
 -   **Allowed/Blocked** Whether IE blocked the ActiveX control.
  
--   **Enhanced Protected Mode (EPM)-compatible.** Whether the loaded ActiveX control is compatible with [Enhanced Protected Mode](https://go.microsoft.com/fwlink/p/?LinkId=403865).<p>**Note**<br>Enhanced Protected Mode isn’t supported on Internet Explorer 9 or earlier versions of IE. Therefore, if you’re using Internet Explorer 8 or Internet Explorer 9, all ActiveX controls will always be marked as not EPM-compatible.
+-   **Enhanced Protected Mode (EPM)-compatible.** Whether the loaded ActiveX control is compatible with [Enhanced Protected Mode](/troubleshoot/browsers/enhanced-protected-mode-add-on-compatibility).<p>**Note**<br>Enhanced Protected Mode isn’t supported on Internet Explorer 9 or earlier versions of IE. Therefore, if you’re using Internet Explorer 8 or Internet Explorer 9, all ActiveX controls will always be marked as not EPM-compatible.
 
 -   **Reason.** The ActiveX control can be blocked or allowed for any of these reasons:
 
@@ -204,9 +204,8 @@ Before running the PowerShell script, you must copy both the .ps1 and .mof file 
    ```
    powershell –ExecutionPolicy Bypass .\ConfigureWMILogging.ps1
    ``` 
-   For more info, see [about_Execution_Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
+   For more info, see [about_Execution_Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 
 3. **Optional:** Set up your domain firewall for WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).
 
 The inventory info appears in the WMI class, `IEAXControlBlockingAuditInfo`, located in the WMI namespace, *root\\cimv2\\IETelemetry*. To collect the inventory info from your client computers, we recommend using System Center 2012 R2 Configuration Manager or any agent that can access the WMI data. For more info, see [Collect data using Enterprise Site Discovery](collect-data-using-enterprise-site-discovery.md).
-

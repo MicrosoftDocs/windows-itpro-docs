@@ -18,14 +18,17 @@ ms.date: 02/28/2019
 ms.custom: bitlocker
 ---
 
-# BCD settings and BitLocker
+# Boot Configuration Data settings and BitLocker
 
 **Applies to**
--   Windows 10
 
-This topic for IT professionals describes the BCD settings that are used by BitLocker.
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
-When protecting data at rest on an operating system volume, during the boot process BitLocker verifies that the security sensitive boot configuration data (BCD) settings have not changed since BitLocker was last enabled, resumed, or recovered.
+This topic for IT professionals describes the Boot Configuration Data (BCD) settings that are used by BitLocker.
+
+When protecting data at rest on an operating system volume, during the boot process BitLocker verifies that the security sensitive BCD settings have not changed since BitLocker was last enabled, resumed, or recovered.
 
 ## BitLocker and BCD Settings
 
@@ -105,7 +108,7 @@ The following table contains the default BCD validation profile used by BitLocke
 
 ### Full list of friendly names for ignored BCD settings
 
-This following is a full list of BCD settings with friendly names which are ignored by default. These settings are not part of the default BitLocker validation profile, but can be added if you see a need to validate any of these settings before allowing a BitLocker–protected operating system drive to be unlocked.
+This following is a full list of BCD settings with friendly names, which are ignored by default. These settings are not part of the default BitLocker validation profile, but can be added if you see a need to validate any of these settings before allowing a BitLocker–protected operating system drive to be unlocked.
 > **Note:**  Additional BCD settings exist that have hex values but do not have friendly names. These settings are not included in this list.
 
 | Hex Value | Prefix | Friendly Name |

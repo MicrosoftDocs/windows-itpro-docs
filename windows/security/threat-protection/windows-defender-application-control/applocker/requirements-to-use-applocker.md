@@ -1,10 +1,10 @@
 ---
-title: Requirements to use AppLocker (Windows 10)
+title: Requirements to use AppLocker (Windows)
 description: This topic for the IT professional lists software requirements to use AppLocker on the supported Windows operating systems.
 ms.assetid: dc380535-071e-4794-8f9d-e5d1858156f0
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Requirements to use AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional lists software requirements to use AppLocker on the supported Windows operating systems.
 
@@ -37,11 +43,11 @@ To use AppLocker, you need:
  
 ## Operating system requirements
 
-The following table show the on which operating systems AppLocker features are supported.
+The following table shows the on which operating systems AppLocker features are supported.
 
 | Version | Can be configured | Can be enforced | Available rules | Notes |
 | - | - | - | - | - |
-| Windows 10| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| You can use the [AppLocker CSP](https://msdn.microsoft.com/library/windows/hardware/dn920019.aspx) to configure AppLocker policies on any edition of Windows 10 supported by Mobile Device Management (MDM). You can only manage AppLocker with Group Policy on devices running Windows 10 Enterprise, Windows 10 Education, and Windows Server 2016. |
+| Windows 10 and Windows 11| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| You can use the [AppLocker CSP](/windows/client-management/mdm/applocker-csp) to configure AppLocker policies on any edition of Windows 10 and Windows 11 supported by Mobile Device Management (MDM). You can only manage AppLocker with Group Policy on devices running Windows 10 and Windows 11 Enterprise, Windows 10 and Windows 11 Education, and Windows Server 2016. |
 | Windows Server 2019<br/>Windows Server 2016<br/>Windows Server 2012 R2<br/>Windows Server 2012| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| |
 | Windows 8.1 Pro| Yes| No| N/A||
 | Windows 8.1 Enterprise| Yes| Yes| Packaged apps<br/>Executable<br/>Windows Installer<br/>Script<br/>DLL| |

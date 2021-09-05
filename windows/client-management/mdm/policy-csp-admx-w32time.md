@@ -83,7 +83,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to specify Clock discipline and General values for the Windows Time service (W32time) for domain controllers including RODCs.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify Clock discipline and General values for the Windows Time service (W32time) for domain controllers including RODCs.
 
 If this policy setting is enabled, W32time Service on target machines use the settings provided here. Otherwise, the service on target machines use locally configured settings values.
 
@@ -175,7 +175,7 @@ This parameter controls the frequency at which an event that indicates the numbe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Global Configuration Settings*
+-   GP Friendly name: *Global Configuration Settings*
 -   GP name: *W32TIME_POLICY_CONFIG*
 -   GP path: *System\Windows Time Service*
 -   GP ADMX file name: *W32Time.admx*
@@ -228,7 +228,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies a set of parameters for controlling the Windows NTP Client.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies a set of parameters for controlling the Windows NTP Client.
 
 If you enable this policy setting, you can specify the following parameters for the Windows NTP Client.
 
@@ -265,7 +265,7 @@ This value is a bitmask that controls events that may be logged to the System lo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Windows NTP Client*
+-   GP Friendly name: *Configure Windows NTP Client*
 -   GP name: *W32TIME_POLICY_CONFIGURE_NTPCLIENT*
 -   GP path: *System\Windows Time Service\Time Providers*
 -   GP ADMX file name: *W32Time.admx*
@@ -318,7 +318,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting specifies whether the Windows NTP Client is enabled.
+Available in the latest Windows 10 Insider Preview Build. This policy setting specifies whether the Windows NTP Client is enabled.
 
 Enabling the Windows NTP Client allows your computer to synchronize its computer clock with other NTP servers. You might want to disable this service if you decide to use a third-party time provider.
 
@@ -336,7 +336,7 @@ If you disable or do not configure this policy setting, the local computer clock
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Windows NTP Client*
+-   GP Friendly name: *Enable Windows NTP Client*
 -   GP name: *W32TIME_POLICY_ENABLE_NTPCLIENT*
 -   GP path: *System\Windows Time Service\Time Providers*
 -   GP ADMX file name: *W32Time.admx*
@@ -389,7 +389,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to specify whether the Windows NTP Server is enabled.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify whether the Windows NTP Server is enabled.
 
 If you enable this policy setting for the Windows NTP Server, your computer can service NTP requests from other computers.
 
@@ -405,7 +405,7 @@ If you disable or do not configure this policy setting, your computer cannot ser
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Windows NTP Server*
+-   GP Friendly name: *Enable Windows NTP Server*
 -   GP name: *W32TIME_POLICY_ENABLE_NTPSERVER*
 -   GP path: *System\Windows Time Service\Time Providers*
 -   GP ADMX file name: *W32Time.admx*
@@ -414,16 +414,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

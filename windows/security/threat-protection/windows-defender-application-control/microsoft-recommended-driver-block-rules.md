@@ -1,5 +1,5 @@
 ---
-title: Microsoft recommended driver block rules (Windows 10)
+title: Microsoft recommended driver block rules (Windows)
 description: View a list of recommended block rules to block vulnerable third-party drivers discovered by Microsoft and the security research community.  
 keywords:  security, malware, kernel mode, driver
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -14,25 +14,29 @@ author: jgeurten
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 10/15/2020
+ms.date: 
 ---
 
 # Microsoft recommended driver block rules
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
-Microsoft has strict requirements for code running in kernel. Consequently, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they are patched and rolled out to the ecosystem in an expedited manner. Microsoft then adds the vulnerable versions of the drivers to our ecosystem block policy which is applied to the following sets of devices:
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+
+Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they're patched and rolled out to the ecosystem in an expedited manner. Microsoft then adds the vulnerable versions of the drivers to our ecosystem block policy, which is applied to the following sets of devices:
 
 - Hypervisor-protected code integrity (HVCI) enabled devices
 - Windows 10 in S mode (S mode) devices
 
-Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this is not possible, Microsoft recommends blocking the following list of drivers by merging this policy with your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It is recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
+Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this isn't possible, Microsoft recommends blocking the following list of drivers by merging this policy with your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
 
 > [!Note]
-> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. It is recommended that this policy be first validated in audit mode before rolling the rules into enforcement mode. 
+> This application list will be updated with the latest vendor information as application vulnerabilities are resolved and new issues are discovered. It's recommended that this policy be first validated in audit mode before rolling the rules into enforcement mode. 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -55,8 +59,6 @@ Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security
   <EKUs />
   <!--File Rules-->
   <FileRules>
-    <Allow ID="ID_ALLOW_ALL_1" FriendlyName="" FileName="*" />
-    <Allow ID="ID_ALLOW_ALL_2" FriendlyName="" FileName="*" />
     <Deny ID="ID_DENY_BANDAI_SHA1" FriendlyName="bandai.sys Hash Sha1" Hash="0F780B7ADA5DD8464D9F2CC537D973F5AC804E9C" />
     <Deny ID="ID_DENY_BANDAI_SHA256" FriendlyName="bandai.sys Hash Sha256" Hash="7FD788358585E0B863328475898BB4400ED8D478466D1B7F5CC0252671456CC8" />
     <Deny ID="ID_DENY_BANDAI_SHA1_PAGE" FriendlyName="bandai.sys Hash Page Sha1" Hash="EA360A9F23BB7CF67F08B88E6A185A699F0C5410" />
@@ -126,6 +128,40 @@ Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA256" FriendlyName="semav6msr64.sys Hash Sha256" Hash="EB71A8ECEF692E74AE356E8CB734029B233185EE5C2CCB6CC87CC6B36BEA65CF" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA1_PAGE" FriendlyName="semav6msr64.sys Hash Page Sha1" Hash="F3821EC0AEF270F749DF9F44FBA91AFA5C8C38E8" />
     <Deny ID="ID_DENY_SEMAV6MSR64_SHA256_PAGE" FriendlyName="semav6msr64.sys Hash Page Sha256" Hash="4F12EE563E7496E7105D67BF64AF6B436902BE4332033AF0B5A242B206372CB7" />
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_1"  FriendlyName="nt2.sys Hash Sha1" Hash="8F0B99B53EB921547AFECF1F12B3299818C4E5D1"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_2"  FriendlyName="nstr.sys Hash Sha1" Hash="61258963D900C2A39408EF4B51F69F405F55E407"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_3"  FriendlyName="nt5.sys Hash Sha1" Hash="7A43BE821832E9BF55B1B781AE468179D0E4F56E"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_4"  FriendlyName="80.sys Hash Sha1" Hash="BC2F3850C7B858340D7ED27B90E63B036881FD6C"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_5" FriendlyName="nstrwsk.sys Hash Sha1" Hash="83767982B3A5F70615A386F4D6638F20509F3560"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_6" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="8BC75E18953B7B23991B2FBC79713E1E175F75E4"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_7" FriendlyName="nt3.sys Hash Sha1" Hash="295E590D49DF717C489C5C824E9C6896A14248BB"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_8" FriendlyName="nt4.sys Hash Sha1" Hash="EC7947AD1919C8F60BC973B96DA4132A1EA396E0"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_9" FriendlyName="nt6.sys Hash Sha1" Hash="8403A17AE001FEF3488C2E641E2BE553CD5B478D"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_10" FriendlyName="81.sys Hash Sha1" Hash="FAA870B0CB15C9AC2B9BBA5D0470BD501CCD4326"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_11" FriendlyName="81.sys Hash Sha1" Hash="ACA8E53483B40A06DFDEE81BB364B1622F9156FE"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_12" FriendlyName="full.sys Hash Sha1" Hash="4B8C0445075F09AEEF542AB1C86E5DE6B06E91A3"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_13" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="E74B6DDA8BC53BC687FC21218BD34062A78D8467"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_14" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="E014C6BEBFDA944CE3A58AB9FE055D4F9367D49C"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_15" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="8241C9A5755A740811C8E8D2739B33146ACD3E6D"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_16" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="2C27ABBBBCF10DFB75AD79557E30ACE5ED314DF8"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA1_17" FriendlyName="netfilterdrv.sys Hash Sha1" Hash="E5A152BB57060C2B27E825258698BD7FF67907FF"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_1"  FriendlyName="nt2.sys Hash Sha256" Hash="CB9890D4E303A4C03095D7BC176C42DEE1B47D8AA58E2F442EC1514C8F9E3CEC"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_2"  FriendlyName="nstr.sys Hash Sha256" Hash="455BC98BA32ADAB8B47D2D89BDBADCA4910F91C182AB2FC3211BA07D3784537B"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_3"  FriendlyName="nt5.sys Hash Sha256" Hash="FD33FB2735CC5EF466A54807D3436622407287E325276FCD3ED1290C98BD0533"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_4"  FriendlyName="80.sys Hash Sha256" Hash="F08EBDDC11AEFCB46082C239F8D97CEEA247D846E22C4BCDD72AF75C1CBC6B0B"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_5" FriendlyName="nstrwsk.sys Hash Sha256" Hash="3390919BB28D5C36CC348F9EF23BE5FA49BFD81263EB7740826E4437CBE904CD"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_6" FriendlyName="netfilterdrv.sys Hash Sha256" Hash="82774D5230C5B6604D6F67A32883F720B4695387F3F383AABC713FC2904FF45D"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_7" FriendlyName="nt3.sys Hash Sha256" Hash="7D8937C18D6E11A0952E53970A0934CF0E65515637AC24D6CA52CCF4B93D385F"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_8" FriendlyName="nt4.sys Hash Sha256" Hash="D7BC7306CB489FE4C285BBEDDC6D1A09E814EF55CF30BD5B8DAF87A52396F102"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_9" FriendlyName="nt6.sys Hash Sha256" Hash="15C53EB3A0EA44BBD2901A45A6EBEAE29BB123F9C1115C38DFB2CDBEC0642229"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_10" FriendlyName="81.sys Hash Sha256" Hash="5C206B569B7059B7C32EB5FC36922CB435C2B16C8D96DE1038C8BD298ED498FE"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_11" FriendlyName="81.sys Hash Sha256" Hash="3D31118A2E92377ECB632BD722132C04AF4E65E24FF87743796C75EB07CFCD71"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_12" FriendlyName="full.sys Hash Sha256" Hash="0988D366572A57B3015D875B60704517D05115580678E8F2E126F771EDA28F7B"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_13" FriendlyName="netfilterdrv.sys Hash Sha256" Hash="12A636449A491EF3DC8688C5D25BE9EBF785874F9C4573667EEFD42139201AA4"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_14" FriendlyName="netfilterdrv.sys Hash Sha256" Hash="651FFA0C7AFF7B4A7695DDDD209DC3E7F68156E29A14D3FCC17AEF4F2A205DCC"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_15" FriendlyName="netfilterdrv.sys Hash Sha256" Hash="C56536F99207915E5A1F7D4F014AB942BD820E64FF7F371AD0462EF26ED27242"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_16" FriendlyName="netfilterdrv.sys Hash Sha256" Hash="7F1772BDF7DD81CB00D30159D19D4EB9160B54D7609B36F781D08CA3AFBD29A7"/>
+    <Deny ID="ID_DENY_RETLIFTEN_SHA256_17" FriendlyName="netfilterdrv.sys Hash Sha256" Hash="7113DEE11925B346192F6EE5441974DB7D1FE9B5BE1497A6B295C06930FDD264"/>
     <FileAttrib ID="ID_FILEATTRIB_CPUZ_DRIVER" FriendlyName="" FileName="cpuz.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="1.0.4.3" />
     <FileAttrib ID="ID_FILEATTRIB_ELBY_DRIVER" FriendlyName="" FileName="ElbyCDIO.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="6.0.3.2" />
     <FileAttrib ID="ID_FILEATTRIB_LIBNICM_DRIVER" FriendlyName="" FileName="libnicm.sys" MinimumFileVersion="0.0.0.0" MaximumFileVersion="3.1.12.0" />
@@ -281,7 +317,6 @@ Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security
           <DeniedSigner SignerId="ID_SIGNER_VERISIGN_INSYDE" />
         </DeniedSigners>
         <FileRulesRef>        
-            <FileRuleRef RuleID="ID_ALLOW_ALL_1"/>
             <FileRuleRef RuleID="ID_DENY_BANDAI_SHA1" />
             <FileRuleRef RuleID="ID_DENY_BANDAI_SHA256" />
             <FileRuleRef RuleID="ID_DENY_BANDAI_SHA1_PAGE" />
@@ -351,13 +386,46 @@ Microsoft recommends enabling [HVCI](https://docs.microsoft.com/windows/security
             <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA256"/>
             <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA1_PAGE"/>
             <FileRuleRef RuleID="ID_DENY_SEMAV6MSR64_SHA256_PAGE"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_1" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_2" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_3" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_4" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_5" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_6" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_7" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_8" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_9" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_10"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_11"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_12"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_13"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_14"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_15"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_16"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA1_17"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_1" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_2" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_3" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_4" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_5" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_6" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_7" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_8" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_9" />
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_10"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_11"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_12"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_13"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_14"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_15"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_16"/>
+            <FileRuleRef RuleID="ID_DENY_RETLIFTEN_SHA256_17"/>
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>
     <SigningScenario Value="12" ID="ID_SIGNINGSCENARIO_WINDOWS" FriendlyName="">
       <ProductSigners>
         <FileRulesRef>
-          <FileRuleRef RuleID="ID_ALLOW_ALL_2" />
         </FileRulesRef>
       </ProductSigners>
     </SigningScenario>

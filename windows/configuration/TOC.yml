@@ -1,0 +1,399 @@
+- name: Configure Windows client
+  href: index.yml
+- name: Customize the appearance
+  items:
+    - name: Windows 10 Start and taskbar
+      items:
+        - name: Start layout and taskbar
+          href: windows-10-start-layout-options-and-policies.md
+        - name: Use XML
+          items: 
+          - name: Customize and export Start layout
+            href: customize-and-export-start-layout.md
+          - name: Customize the taskbar
+            href: configure-windows-10-taskbar.md
+          - name: Add image for secondary Microsoft Edge tiles
+            href: start-secondary-tiles.md
+          - name: Start layout XML for Windows 10 desktop editions (reference)
+            href: start-layout-xml-desktop.md
+        - name: Use group policy
+          href: customize-windows-10-start-screens-by-using-group-policy.md
+        - name: Use provisioning packages
+          href: customize-windows-10-start-screens-by-using-provisioning-packages-and-icd.md
+        - name: Use mobile device management (MDM)
+          href: customize-windows-10-start-screens-by-using-mobile-device-management.md
+        - name: Troubleshoot Start menu errors
+          href: start-layout-troubleshoot.md
+        - name: Changes to Start policies in Windows 10
+          href: changes-to-start-policies-in-windows-10.md
+    - name: Accessibility settings
+      items:
+         - name: Accessibility information for IT Pros
+           href: windows-10-accessibility-for-ITPros.md
+         - name: Configure access to Microsoft Store
+           href: stop-employees-from-using-microsoft-store.md
+         - name: Configure Windows Spotlight on the lock screen
+           href: windows-spotlight.md
+         - name: Manage Windows 10 and Microsoft Store tips, "fun facts", and suggestions
+           href: manage-tips-and-suggestions.md
+         - name: Configure cellular settings for tablets and PCs
+           href: provisioning-apn.md
+         - name: Lockdown features from Windows Embedded 8.1 Industry
+           href: lockdown-features-windows-10.md
+
+
+- name: Configure kiosks and digital signs
+  items:
+    - name: Configure kiosks and digital signs on Windows desktop editions
+      href: kiosk-methods.md
+    - name: Prepare a device for kiosk configuration
+      href: kiosk-prepare.md
+    - name: Set up digital signs on Windows 10
+      href: setup-digital-signage.md
+    - name: Set up a single-app kiosk
+      href: kiosk-single-app.md
+    - name: Set up a multi-app kiosk
+      href: lock-down-windows-10-to-specific-apps.md
+    - name: Set up a shared or guest PC with Windows 10
+      href: set-up-shared-or-guest-pc.md
+    - name: Set up a kiosk on Windows 10 Mobile 
+      href: mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md 
+    - name: Additional kiosk reference information
+      items:
+        - name: More kiosk methods and reference information
+          href: kiosk-additional-reference.md
+        - name: Find the Application User Model ID of an installed app
+          href: find-the-application-user-model-id-of-an-installed-app.md
+        - name: Validate your kiosk configuration
+          href: kiosk-validate.md
+        - name: Guidelines for choosing an app for assigned access (kiosk mode)
+          href: guidelines-for-assigned-access-app.md
+        - name: Policies enforced on kiosk devices
+          href: kiosk-policies.md
+        - name: Assigned access XML reference
+          href: kiosk-xml.md
+        - name: Use AppLocker to create a Windows 10 kiosk
+          href: lock-down-windows-10-applocker.md
+        - name: Use Shell Launcher to create a Windows 10 kiosk
+          href: kiosk-shelllauncher.md
+        - name: Use MDM Bridge WMI Provider to create a Windows 10 kiosk
+          href: kiosk-mdm-bridge.md
+        - name: Troubleshoot kiosk mode issues
+          href: kiosk-troubleshoot.md
+       
+
+- name: Use provisioning packages
+  items:
+    - name: Provisioning packages for Windows 10
+      href: provisioning-packages/provisioning-packages.md
+    - name: How provisioning works in Windows 10
+      href: provisioning-packages/provisioning-how-it-works.md
+    - name: Introduction to configuration service providers (CSPs)
+      href: provisioning-packages/how-it-pros-can-use-configuration-service-providers.md
+    - name: Install Windows Configuration Designer
+      href: provisioning-packages/provisioning-install-icd.md
+    - name: Create a provisioning package
+      href: provisioning-packages/provisioning-create-package.md
+    - name: Apply a provisioning package
+      href: provisioning-packages/provisioning-apply-package.md
+    - name: Settings changed when you uninstall a provisioning package
+      href: provisioning-packages/provisioning-uninstall-package.md
+    - name: Provision PCs with common settings for initial deployment (desktop wizard)
+      href: provisioning-packages/provision-pcs-for-initial-deployment.md
+    - name: Provision PCs with apps
+      href: provisioning-packages/provision-pcs-with-apps.md
+    - name: Use a script to install a desktop app in provisioning packages
+      href: provisioning-packages/provisioning-script-to-install-app.md
+    - name: Create a provisioning package with multivariant settings
+      href: provisioning-packages/provisioning-multivariant.md
+    - name: PowerShell cmdlets for provisioning Windows 10 (reference)
+      href: provisioning-packages/provisioning-powershell.md
+    - name: Windows Configuration Designer command-line interface (reference)
+      href: provisioning-packages/provisioning-command-line.md
+
+- name: Configure Cortana
+  items:
+    - name: Configure Cortana in Windows 10
+      href: cortana-at-work/cortana-at-work-overview.md
+    - name: Testing scenarios using Cortana n Windows 10, version 2004 and later
+      items:
+        - name: Set up and test Cortana in Windows 10, version 2004 and later
+          href: cortana-at-work/set-up-and-test-cortana-in-windows-10.md
+        - name: Cortana at work testing scenarios
+          href: cortana-at-work/cortana-at-work-testing-scenarios.md
+        - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
+          href: cortana-at-work/cortana-at-work-scenario-1.md
+        - name: Test scenario 2 - Perform a Bing search with Cortana
+          href: cortana-at-work/cortana-at-work-scenario-2.md
+        - name: Test scenario 3 - Set a reminder
+          href: cortana-at-work/cortana-at-work-scenario-3.md
+        - name: Test scenario 4 - Use Cortana to find free time on your calendar
+          href: cortana-at-work/cortana-at-work-scenario-4.md
+        - name: Test scenario 5 - Find out about a person
+          href: cortana-at-work/cortana-at-work-scenario-5.md
+        - name: Test scenario 6 - Change your language and perform a quick search with Cortana
+          href: cortana-at-work/cortana-at-work-scenario-6.md
+    - name: Send feedback about Cortana back to Microsoftr
+      href: cortana-at-work/cortana-at-work-feedback.md
+    - name: Testing scenarios using Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization
+      items:
+        - name: Set up and test Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization
+          href: cortana-at-work/cortana-at-work-o365.md
+        - name: Testing scenarios using Cortana in your business or organization
+          href: cortana-at-work/testing-scenarios-using-cortana-in-business-org.md
+        - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
+          href: cortana-at-work/test-scenario-1.md
+        - name: Test scenario 2 - Perform a quick search with Cortana at work
+          href: cortana-at-work/test-scenario-2.md
+        - name: Test scenario 3 - Set a reminder for a specific location using Cortana at work
+          href: cortana-at-work/test-scenario-3.md
+        - name: Test scenario 4 - Use Cortana at work to find your upcoming meetings
+          href: cortana-at-work/test-scenario-4.md
+        - name: Test scenario 5 - Use Cortana to send email to a co-worker
+          href: cortana-at-work/test-scenario-5.md
+        - name: Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email
+          href: cortana-at-work/test-scenario-6.md
+        - name: Test scenario 7 - Use Cortana and Windows Information Protection (WIP) to help protect your organization’s data on a device
+          href: cortana-at-work/cortana-at-work-scenario-7.md
+
+    - name: Set up and test custom voice commands in Cortana for your organization
+      href: cortana-at-work/cortana-at-work-voice-commands.md
+    - name: Use Group Policy and mobile device management (MDM) settings to configure Cortana in your organization
+      href: cortana-at-work/cortana-at-work-policy-settings.md
+
+
+- name: Reference
+  items:
+    - name: Configure Windows 10 Mobile devices
+      href: mobile-devices/configure-mobile.md
+    - name: Windows Configuration Designer reference
+      items:
+        - name: Windows Configuration Designer provisioning settings (reference)
+          href: wcd/wcd.md
+        - name: Changes to settings in Windows Configuration Designer
+          href: wcd/wcd-changes.md
+        - name: AccountManagement
+          href: wcd/wcd-accountmanagement.md
+        - name: Accounts
+          href: wcd/wcd-accounts.md 
+        - name: ADMXIngestion
+          href: wcd/wcd-admxingestion.md 
+        - name: AssignedAccess
+          href: wcd/wcd-assignedaccess.md 
+        - name: AutomaticTime
+          href: wcd/wcd-automatictime.md 
+        - name: Browser
+          href: wcd/wcd-browser.md 
+        - name: CallAndMessagingEnhancement
+          href: wcd/wcd-callandmessagingenhancement.md 
+        - name: Calling
+          href: wcd/wcd-calling.md
+        - name: CellCore
+          href: wcd/wcd-cellcore.md
+        - name: Cellular
+          href: wcd/wcd-cellular.md     
+        - name: Certificates
+          href: wcd/wcd-certificates.md 
+        - name: CleanPC
+          href: wcd/wcd-cleanpc.md     
+        - name: Connections
+          href: wcd/wcd-connections.md 
+        - name: ConnectivityProfiles
+          href: wcd/wcd-connectivityprofiles.md 
+        - name: CountryAndRegion
+          href: wcd/wcd-countryandregion.md 
+        - name: DesktopBackgroundAndColors
+          href: wcd/wcd-desktopbackgroundandcolors.md     
+        - name: DeveloperSetup
+          href: wcd/wcd-developersetup.md     
+        - name: DeviceFormFactor
+          href: wcd/wcd-deviceformfactor.md  
+        - name: DeviceInfo
+          href: wcd/wcd-deviceinfo.md
+        - name: DeviceManagement
+          href: wcd/wcd-devicemanagement.md  
+        - name: DeviceUpdateCenter
+          href: wcd/wcd-deviceupdatecenter.md
+        - name: DMClient
+          href: wcd/wcd-dmclient.md 
+        - name: EditionUpgrade
+          href: wcd/wcd-editionupgrade.md 
+        - name: EmbeddedLockdownProfiles
+          href: wcd/wcd-embeddedlockdownprofiles.md     
+        - name: FirewallConfiguration
+          href: wcd/wcd-firewallconfiguration.md     
+        - name: FirstExperience
+          href: wcd/wcd-firstexperience.md     
+        - name: Folders
+          href: wcd/wcd-folders.md  
+        - name: HotSpot
+          href: wcd/wcd-hotspot.md
+        - name: InitialSetup
+          href: wcd/wcd-initialsetup.md     
+        - name: InternetExplorer
+          href: wcd/wcd-internetexplorer.md 
+        - name: KioskBrowser
+          href: wcd/wcd-kioskbrowser.md      
+        - name: Licensing
+          href: wcd/wcd-licensing.md 
+        - name: Location
+          href: wcd/wcd-location.md      
+        - name: Maps
+          href: wcd/wcd-maps.md  
+        - name: Messaging
+          href: wcd/wcd-messaging.md     
+        - name: ModemConfigurations
+          href: wcd/wcd-modemconfigurations.md     
+        - name: Multivariant
+          href: wcd/wcd-multivariant.md     
+        - name: NetworkProxy
+          href: wcd/wcd-networkproxy.md     
+        - name: NetworkQOSPolicy
+          href: wcd/wcd-networkqospolicy.md
+        - name: NFC
+          href: wcd/wcd-nfc.md     
+        - name: OOBE
+          href: wcd/wcd-oobe.md    
+        - name: OtherAssets
+          href: wcd/wcd-otherassets.md     
+        - name: Personalization
+          href: wcd/wcd-personalization.md     
+        - name: Policies
+          href: wcd/wcd-policies.md 
+        - name: Privacy
+          href: wcd/wcd-privacy.md  
+        - name: ProvisioningCommands
+          href: wcd/wcd-provisioningcommands.md    
+        - name: RcsPresence
+          href: wcd/wcd-rcspresence.md 
+        - name: SharedPC
+          href: wcd/wcd-sharedpc.md     
+        - name: Shell
+          href: wcd/wcd-shell.md     
+        - name: SMISettings
+          href: wcd/wcd-smisettings.md     
+        - name: Start
+          href: wcd/wcd-start.md    
+        - name: StartupApp
+          href: wcd/wcd-startupapp.md     
+        - name: StartupBackgroundTasks
+          href: wcd/wcd-startupbackgroundtasks.md 
+        - name: StorageD3InModernStandby
+          href: wcd/wcd-storaged3inmodernstandby.md
+        - name: SurfaceHubManagement
+          href: wcd/wcd-surfacehubmanagement.md    
+        - name: TabletMode
+          href: wcd/wcd-tabletmode.md  
+        - name: TakeATest
+          href: wcd/wcd-takeatest.md    
+        - name: TextInput
+          href: wcd/wcd-textinput.md  
+        - name: Theme
+          href: wcd/wcd-theme.md  
+        - name: Time
+          href: wcd/wcd-time.md    
+        - name: UnifiedWriteFilter
+          href: wcd/wcd-unifiedwritefilter.md     
+        - name: UniversalAppInstall
+          href: wcd/wcd-universalappinstall.md 
+        - name: UniversalAppUninstall
+          href: wcd/wcd-universalappuninstall.md 
+        - name: UsbErrorsOEMOverride
+          href: wcd/wcd-usberrorsoemoverride.md
+        - name: WeakCharger
+          href: wcd/wcd-weakcharger.md  
+        - name: WindowsHelloForBusiness
+          href: wcd/wcd-windowshelloforbusiness.md
+        - name: WindowsTeamSettings
+          href: wcd/wcd-windowsteamsettings.md     
+        - name: WLAN
+          href: wcd/wcd-wlan.md     
+        - name: Workplace
+          href: wcd/wcd-workplace.md  
+
+    - name: User Experience Virtualization (UE-V)
+      items:
+        - name: User Experience Virtualization (UE-V) for Windows 10
+          href: ue-v/uev-for-windows.md
+        - name: Get started with UE-V
+          items:
+            - name: Get started with UE-V
+              href: ue-v/uev-getting-started.md
+            - name: What's New in UE-V for Windows 10, version 1607
+              href: ue-v/uev-whats-new-in-uev-for-windows.md
+            - name: User Experience Virtualization Release Notes
+              href: ue-v/uev-release-notes-1607.md
+            - name: Upgrade to UE-V for Windows 10
+              href: ue-v/uev-upgrade-uev-from-previous-releases.md
+        - name: Prepare a UE-V Deployment
+          items:
+            - name: Prepare a UE-V Deployment
+              href: ue-v/uev-prepare-for-deployment.md
+            - name: Deploy Required UE-V Features
+              href: ue-v/uev-deploy-required-features.md
+            - name: Deploy UE-V for use with Custom Applications
+              href: ue-v/uev-deploy-uev-for-custom-applications.md
+        - name: Administer UE-V
+          items:
+            - name: UE-V administion guide
+              href: ue-v/uev-administering-uev.md
+            - name: Manage Configurations for UE-V
+              items:
+                - name: Manage Configurations for UE-V
+                  href: ue-v/uev-manage-configurations.md
+                - name: Configuring UE-V with Group Policy Objects
+                  href: ue-v/uev-configuring-uev-with-group-policy-objects.md
+                - name: Configuring UE-V with Microsoft Endpoint Configuration Manager
+                  href: ue-v/uev-configuring-uev-with-system-center-configuration-manager.md
+                - name: Administering UE-V with Windows PowerShell and WMI
+                  href: ue-v/uev-administering-uev-with-windows-powershell-and-wmi.md
+                - name: Managing the UE-V Service and Packages with Windows PowerShell and WMI
+                  href: ue-v/uev-managing-uev-agent-and-packages-with-windows-powershell-and-wmi.md
+                - name: Managing UE-V Settings Location Templates Using Windows PowerShell and WMI
+                  href: ue-v/uev-managing-settings-location-templates-using-windows-powershell-and-wmi.md
+                - name: Working with Custom UE-V Templates and the UE-V Template Generator
+                  href: ue-v/uev-working-with-custom-templates-and-the-uev-generator.md
+                - name: Manage Administrative Backup and Restore in UE-V
+                  href: ue-v/uev-manage-administrative-backup-and-restore.md
+                - name: Changing the Frequency of UE-V Scheduled Tasks
+                  href: ue-v/uev-changing-the-frequency-of-scheduled-tasks.md
+                - name: Migrating UE-V Settings Packages
+                  href: ue-v/uev-migrating-settings-packages.md
+                - name: Using UE-V with Application Virtualization Applications
+                  href: ue-v/uev-using-uev-with-application-virtualization-applications.md
+        - name: Troubleshooting UE-V
+          href: ue-v/uev-troubleshooting.md
+        - name: Technical Reference for UE-V
+          items:
+            - name: Technical Reference for UE-V
+              href: ue-v/uev-technical-reference.md
+            - name: Sync Methods for UE-V
+              href: ue-v/uev-sync-methods.md
+            - name: Sync Trigger Events for UE-V
+              href: ue-v/uev-sync-trigger-events.md
+            - name: Synchronizing Microsoft Office with UE-V
+              href: ue-v/uev-synchronizing-microsoft-office-with-uev.md
+            - name: Application Template Schema Reference for UE-V
+              href: ue-v/uev-application-template-schema-reference.md
+            - name: Security Considerations for UE-V
+              href: ue-v/uev-security-considerations.md
+
+
+    - name: Use Windows Configuration Designer for Windows 10 Mobile devices
+      items:
+        - name: Use Windows Configuration Designer to configure Windows 10 Mobile devices
+          href: mobile-devices/provisioning-configure-mobile.md
+        - name: NFC-based device provisioning
+          href: mobile-devices/provisioning-nfc.md
+        - name: Barcode provisioning and the package splitter tool
+          href: mobile-devices/provisioning-package-splitter.md
+        - name: Use the Lockdown Designer app to create a Lockdown XML file
+          href: mobile-devices/mobile-lockdown-designer.md
+        - name: Configure Windows 10 Mobile using Lockdown XML
+          href: mobile-devices/lockdown-xml.md
+        - name: Settings and quick actions that can be locked down in Windows 10 Mobile
+          href: mobile-devices/settings-that-can-be-locked-down.md
+        - name: Product IDs in Windows 10 Mobile
+          href: mobile-devices/product-ids-in-windows-10-mobile.md
+        - name: Start layout XML for mobile editions of Windows 10 (reference)
+          href: mobile-devices/start-layout-xml-mobile.md

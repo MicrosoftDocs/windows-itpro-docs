@@ -20,16 +20,16 @@ ms.topic: article
 
 To successfully deploy the Windows 10 operating system and applications for your organization, it is essential that you know about the available tools to help with the process. In this topic, you will learn about the most commonly used tools for Windows 10 deployment.
 
-Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). Keep in mind that these are just tools and not a complete solution on their own. It’s when you combine these tools with solutions like [Microsoft Deployment Toolkit (MDT)](deploy-windows-mdt/deploy-windows-10-with-the-microsoft-deployment-toolkit.md) or [Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) that you get the complete deployment solution.
+Microsoft provides many tools, services, and solutions. These tools include Windows Deployment Services (WDS), the Volume Activation Management Tool (VAMT), the User State Migration Tool (USMT), Windows System Image Manager (Windows SIM), Windows Preinstallation Environment (Windows PE), and Windows Recovery Environment (Windows RE). Keep in mind that these are just tools and not a complete solution on their own. It’s when you combine these tools with solutions like [Microsoft Deployment Toolkit (MDT)](./deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md) or [Configuration Manager](deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md) that you get the complete deployment solution.
 
 In this topic, you also learn about different types of reference images that you can build, and why reference images are beneficial for most organizations
 
 ## Windows Assessment and Deployment Kit
 
 
-Windows ADK contains core assessment and deployment tools and technologies, including Deployment Image Servicing and Management (DISM), Windows Imaging and Configuration Designer (Windows ICD), Windows System Image Manager (Windows SIM), User State Migration Tool (USMT), Volume Activation Management Tool (VAMT), Windows Preinstallation Environment (Windows PE), Windows Assessment Services, Windows Performance Toolkit (WPT), Application Compatibility Toolkit (ACT), and Microsoft SQL Server 2012 Express. For more details, see [Windows ADK for Windows 10](https://go.microsoft.com/fwlink/p/?LinkId=526803  ) or [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
+Windows ADK contains core assessment and deployment tools and technologies, including Deployment Image Servicing and Management (DISM), Windows Imaging and Configuration Designer (Windows ICD), Windows System Image Manager (Windows SIM), User State Migration Tool (USMT), Volume Activation Management Tool (VAMT), Windows Preinstallation Environment (Windows PE), Windows Assessment Services, Windows Performance Toolkit (WPT), Application Compatibility Toolkit (ACT), and Microsoft SQL Server 2012 Express. For more details, see [Windows ADK for Windows 10](/windows-hardware/get-started/adk-install) or [Windows ADK for Windows 10 scenarios for IT Pros](windows-adk-scenarios-for-it-pros.md).
 
-![figure 1](images/win-10-adk-select.png)
+![figure 1.](images/win-10-adk-select.png)
 
 The Windows 10 ADK feature selection page.
 
@@ -50,11 +50,11 @@ Enable-WindowsOptionalFeature -Online -FeatureName NetFx3 -All
 -Source D:\Sources\SxS -LimitAccess
 ```
 
-![figure 2](images/mdt-11-fig05.png)
+![figure 2.](images/mdt-11-fig05.png)
 
 Using DISM functions in PowerShell.
 
-For more information on DISM, see [DISM technical reference](https://go.microsoft.com/fwlink/p/?LinkId=619161).
+For more information on DISM, see [DISM technical reference](/windows-hardware/manufacture/desktop/dism---deployment-image-servicing-and-management-technical-reference-for-windows).
 
 ### User State Migration Tool (USMT)
 
@@ -77,7 +77,7 @@ In addition to these tools, there are also XML templates that manage which data 
 -   **Custom templates.** Custom templates that you create.
 -   **Config template.** An optional template, called Config.xml, which you can use to exclude or include components in a migration without modifying the other standard XML templates.
 
-![figure 3](images/mdt-11-fig06.png)
+![figure 3.](images/mdt-11-fig06.png)
 
 A sample USMT migration file that will exclude .MP3 files on all local drives and include the folder C:\\Data and all its files, including its subdirectories and their files.
 
@@ -94,23 +94,23 @@ By default USMT migrates many settings, most of which are related to the user pr
 -   Operating system component settings
 -   Application settings
 
-These are the settings migrated by the default MigUser.xml and MigApp.xml templates. For more details on what USMT migrates, see [What does USMT migrate?](https://go.microsoft.com/fwlink/p/?LinkId=619227) For more information on the USMT overall, see the [USMT technical reference](https://go.microsoft.com/fwlink/p/?LinkId=619228).
+These are the settings migrated by the default MigUser.xml and MigApp.xml templates. For more details on what USMT migrates, see [What does USMT migrate?](./usmt/usmt-what-does-usmt-migrate.md) For more information on the USMT overall, see the [USMT technical reference](./usmt/usmt-reference.md).
 
 ### Windows Imaging and Configuration Designer
 
 Windows Imaging and Configuration Designer (Windows ICD) is a tool designed to assist with the creation of provisioning packages that can be used to dynamically configure a Windows device (PCs, tablets, and phones). This is particularly useful for setting up new devices, without the need for re-imaging the device with a custom image.
 
-![figure 4](images/windows-icd.png)
+![figure 4.](images/windows-icd.png)
 
 Windows Imaging and Configuration Designer.
 
-For more information, see [Windows Imaging and Configuration Designer](https://go.microsoft.com/fwlink/p/?LinkID=525483).
+For more information, see [Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
 
 ### Windows System Image Manager (Windows SIM)
 
 Windows SIM is an authoring tool for Unattend.xml files. When using MDT and/or Configuration Manager, you don’t need Windows SIM very often because those systems automatically update the Unattend.xml file during the deployment, greatly simplifying the process overall.
 
-![figure 7](images/mdt-11-fig07.png)
+![figure 7.](images/mdt-11-fig07.png)
 
 Windows answer file opened in Windows SIM.
 
@@ -120,7 +120,7 @@ For more information, see [Windows System Image Manager Technical Reference]( ht
 
 If you don’t use KMS, you can still manage your MAKs centrally with the Volume Activation Management Tool (VAMT). With this tool, you can install and manage product keys throughout the organization. VAMT also can activate on behalf of clients without Internet access, acting as a MAK proxy.
 
-![figure 6](images/mdt-11-fig08.png)
+![figure 6.](images/mdt-11-fig08.png)
 
 The updated Volume Activation Management Tool.
 
@@ -130,7 +130,7 @@ VAMT also can be used to create reports, switch from MAK to KMS, manage Active D
 Get-VamtProduct
 ```
 
-For more information on the VAMT, see [VAMT technical reference](https://go.microsoft.com/fwlink/p/?LinkId=619230).
+For more information on the VAMT, see [VAMT technical reference](./volume-activation/volume-activation-management-tool.md).
 
 ### Windows Preinstallation Environment (Windows PE)
 
@@ -138,33 +138,33 @@ Windows PE is a “Lite” version of Windows 10 and was created to act as a dep
 
 The key thing to know about Windows PE is that, like the operating system, it needs drivers for at least network and storage devices in each PC. Luckily Windows PE includes the same drivers as the full Windows 10 operating system, which means much of your hardware will work out of the box.
 
-![figure 7](images/mdt-11-fig09.png)
+![figure 7.](images/mdt-11-fig09.png)
 
 A machine booted with the Windows ADK default Windows PE boot image.
 
-For more details on Windows PE, see [Windows PE (WinPE)](https://go.microsoft.com/fwlink/p/?LinkId=619233).
+For more details on Windows PE, see [Windows PE (WinPE)](/windows-hardware/manufacture/desktop/winpe-intro).
 
 ## <a href="" id="sec07"></a>Windows Recovery Environment
 
 
 Windows Recovery Environment (Windows RE) is a diagnostics and recovery toolset included in Windows Vista and later operating systems. The latest version of Windows RE is based on Windows PE. You can also extend Windows RE and add your own tools if needed. If a Windows installation fails to start and Windows RE is installed, you will see an automatic failover into Windows RE.
 
-![figure 8](images/mdt-11-fig10.png)
+![figure 8.](images/mdt-11-fig10.png)
 
 A Windows 10 client booted into Windows RE, showing Advanced options.
 
-For more information on Windows RE, see [Windows Recovery Environment](https://go.microsoft.com/fwlink/p/?LinkId=619236).
+For more information on Windows RE, see [Windows Recovery Environment](/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference).
 
 ## Windows Deployment Services
 
 
 Windows Deployment Services (WDS) has been updated and improved in several ways starting with Windows 8. Remember that the two main functions you will use are the PXE boot support and multicast. Most of the changes are related to management and increased performance. In Windows Server 2012 R2, WDS also can be used for the Network Unlock feature in BitLocker.
 
-![figure 9](images/mdt-11-fig11.png)
+![figure 9.](images/mdt-11-fig11.png)
 
 Windows Deployment Services using multicast to deploy three machines.
 
-In Windows Server 2012 R2, [Windows Deployment Services](https://go.microsoft.com/fwlink/p/?LinkId=619245) can be configured for stand-alone mode or for Active Directory integration. In most scenarios, the Active Directory integration mode is the best option. WDS also has the capability to manage drivers; however, driver management through MDT and Configuration Manager is more suitable for deployment due to the flexibility offered by both solutions, so you will use them instead. In WDS, it is possible to pre-stage devices in Active Directory, but here, too, Configuration Manager has that capability built in, and MDT has the ability to use a SQL Server database for pre-staging. In most scenarios, those solutions are better than the built-in pre-staging function as they allow greater control and management.
+In Windows Server 2012 R2, [Windows Deployment Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831764(v=ws.11)) can be configured for stand-alone mode or for Active Directory integration. In most scenarios, the Active Directory integration mode is the best option. WDS also has the capability to manage drivers; however, driver management through MDT and Configuration Manager is more suitable for deployment due to the flexibility offered by both solutions, so you will use them instead. In WDS, it is possible to pre-stage devices in Active Directory, but here, too, Configuration Manager has that capability built in, and MDT has the ability to use a SQL Server database for pre-staging. In most scenarios, those solutions are better than the built-in pre-staging function as they allow greater control and management.
 
 ### Trivial File Transfer Protocol (TFTP) configuration
 
@@ -176,7 +176,7 @@ Also, there are a few new features related to TFTP performance:
 -   **Scalable port management.** Provides the capability to service clients with shared UDP port allocation, increasing scalability.
 -   **Variable-size transmission window (Variable Windows Extension).** Improves TFTP performance by allowing the client and server to determine the largest workable window size.
 
-![figure 10](images/mdt-11-fig12.png)
+![figure 10.](images/mdt-11-fig12.png)
 
 TFTP changes are now easy to perform.
 
@@ -192,18 +192,18 @@ Lite Touch and Zero Touch are marketing names for the two solutions that MDT sup
 
  
 
-![figure 11](images/mdt-11-fig13.png)
+![figure 11.](images/mdt-11-fig13.png)
 
 The Deployment Workbench in, showing a task sequence.
 
-For more information on MDT, see the [Microsoft Deployment Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=618117) resource center.
+For more information on MDT, see the [Microsoft Deployment Toolkit](/mem/configmgr/mdt/) resource center.
 
 ## Microsoft Security Compliance Manager 2013
 
 
 [Microsoft SCM](https://go.microsoft.com/fwlink/p/?LinkId=619246) is a free utility used to create baseline security settings for the Windows client and server environment. The baselines can be exported and then deployed via Group Policy, local policies, MDT, or Configuration Manager. The current version of Security Compliance Manager includes baselines for Windows 8.1 and several earlier versions of Windows, Windows Server, and Internet Explorer.
 
-![figure 12](images/mdt-11-fig14.png)
+![figure 12.](images/mdt-11-fig14.png)
 
 The SCM console showing a baseline configuration for a fictional client's computer security compliance.
 
@@ -222,28 +222,28 @@ The following components are included in the MDOP suite:
 -   **Microsoft Diagnostics and Recovery Toolset (DaRT).** DaRT provides additional tools that extend Windows RE to help you troubleshoot and repair your machines.
 -   **Microsoft BitLocker Administration and Monitoring (MBAM).** MBAM is an administrator interface used to manage BitLocker drive encryption. It allows you to configure your enterprise with the correct BitLocker encryption policy options, as well as monitor compliance with these policies.
 
-For more information on the benefits of an MDOP subscription, see [Microsoft Desktop Optimization Pack](https://go.microsoft.com/fwlink/p/?LinkId=619247).
+For more information on the benefits of an MDOP subscription, see [Microsoft Desktop Optimization Pack](/microsoft-desktop-optimization-pack/).
 
 ## Internet Explorer Administration Kit 11
 
 There has been a version of IEAK for every version of Internet Explorer since 3.0. It gives you the capability to customize Internet Explorer as you would like. The end result of using IEAK is an Internet Explorer package that can be deployed unattended. The wizard creates one .exe file and one .msi file.
 
-![figure 13](images/mdt-11-fig15.png)
+![figure 13.](images/mdt-11-fig15.png)
 
 The User Experience selection screen in IEAK 11.
 
-To download IEAK 11, see the [Internet Explorer Administration Kit (IEAK) Information and Downloads](https://go.microsoft.com/fwlink/p/?LinkId=619248) page.
+To download IEAK 11, see the [Internet Explorer Administration Kit (IEAK) Information and Downloads](/internet-explorer/ie11-ieak/ieak-information-and-downloads) page.
 
 ## Windows Server Update Services
 
 
 WSUS is a server role in Windows Server 2012 R2 that enables you to maintain a local repository of Microsoft updates and then distribute them to machines on your network. WSUS offers approval control and reporting of update status in your environment.
 
-![figure 14](images/mdt-11-fig16.png)
+![figure 14.](images/mdt-11-fig16.png)
 
 The Windows Server Update Services console.
 
-For more information on WSUS, see the [Windows Server Update Services Overview](https://go.microsoft.com/fwlink/p/?LinkId=619249).
+For more information on WSUS, see the [Windows Server Update Services Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh852345(v=ws.11)).
 
 ## Unified Extensible Firmware Interface
 
@@ -300,7 +300,7 @@ There are many things that affect operating system deployment as soon as you run
 -   When deploying from media, remember the media has to be FAT32 for UEFI, and FAT32 has a file-size limitation of 4GB.
 -   UEFI does not support cross-platform booting; therefore, you need to have the correct boot media (32- or 64-bit).
 
-For more information on UEFI, see the [UEFI firmware](https://go.microsoft.com/fwlink/p/?LinkId=619251) overview and related resources.
+For more information on UEFI, see the [UEFI firmware](/previous-versions/windows/it-pro/windows-8.1-and-8/hh824898(v=win.10)) overview and related resources.
 
 ## Related topics
 

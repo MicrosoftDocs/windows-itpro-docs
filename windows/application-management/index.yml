@@ -1,0 +1,68 @@
+### YamlMime:Landing
+
+title: Windows application management # < 60 chars
+summary: Learn about managing applications in Windows client, including how to remove background task resource restrictions.  # < 160 chars
+
+metadata:
+  title: Windows application management  # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Learn about managing applications in Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
+  services: windows-10
+  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice
+  ms.topic: landing-page # Required
+  ms.collection: windows-10
+  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
+  ms.author: greglin #Required; microsoft alias of author; optional team alias.
+  ms.date: 08/24/2021 #Required; mm/dd/yyyy format.
+  ms.localizationpriority : medium
+    
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Manage Windows applications
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Understand apps in Windows client OS
+            url: apps-in-windows-10.md
+          - text: How to add features
+            url: add-apps-and-features.md
+          - text: Sideload LOB apps
+            url: sideload-apps-in-windows-10.md
+          - text: Keep removed apps from returning during an update
+            url: remove-provisioned-apps-during-update.md
+
+  # Card (optional)
+  - title: Application Virtualization (App-V) 
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: App-V overview
+            url: app-v/appv-for-windows.md
+          - text: Getting started with App-V
+            url: app-v/appv-getting-started.md
+          - text: Planning for App-V
+            url: app-v/appv-planning-for-appv.md
+          - text: Deploying App-V
+            url: app-v/appv-deploying-appv.md
+          - text: Operations for App-V
+            url: app-v/appv-operations.md
+          - text: Troubleshooting App-V
+            url: app-v/appv-troubleshooting.md
+          - text: Technical Reference for App-V
+            url: app-v/appv-technical-reference.md
+
+  # Card (optional)
+  - title: Windows System Services
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Changes to Service Host grouping in Windows 10
+            url: svchost-service-refactoring.md
+          - text: Per-user services in Windows
+            url: per-user-services-in-windows.md
+          - text: Per-user services in Windows
+            url: per-user-services-in-windows.md

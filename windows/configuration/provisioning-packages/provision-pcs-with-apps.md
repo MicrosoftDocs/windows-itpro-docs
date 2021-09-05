@@ -5,9 +5,9 @@ keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 09/06/2017
 ms.reviewer: 
@@ -27,7 +27,7 @@ In Windows 10, version 1703, you can install multiple Universal Windows Platform
 When you add an app in a Windows Configuration Designer wizard, the appropriate settings are displayed based on the app that you select. For instructions on adding an app using the advanced editor in Windows Configuration Designer, see [Add an app using advanced editor](#adv).
 
 >[!IMPORTANT]
->If you plan to use Intune to manage your devices, we recommend using Intune to install Microsoft 365 Apps for enterprise 2016 apps (Access, Excel, OneDrive for Business, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Word, Project Desktop Client, and Visio Pro for Microsoft 365 Apps for enterprise). Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to assign Microsoft 365 Apps for enterprise 2016 apps using Microsoft Intune.](https://docs.microsoft.com/intune/apps-add-office365)
+>If you plan to use Intune to manage your devices, we recommend using Intune to install Microsoft 365 Apps for enterprise 2016 apps (Access, Excel, OneDrive for Business, OneNote, Outlook, PowerPoint, Publisher, Skype for Business, Word, Project Desktop Client, and Visio Pro for Microsoft 365 Apps for enterprise). Apps that are installed using a provisioning package cannot be managed or modified using Intune. [Learn how to assign Microsoft 365 Apps for enterprise 2016 apps using Microsoft Intune.](/intune/apps-add-office365)
 
 ## Settings for UWP apps
 
@@ -42,7 +42,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 ### MSI installer
 
 > [!NOTE]
-> You can find more information about command-line options for Msiexec.exe [here](https://docs.microsoft.com/windows/win32/msi/command-line-options).
+> You can find more information about command-line options for Msiexec.exe [here](/windows/win32/msi/command-line-options).
 
 - **Command line arguments**: Optionally, append additional command arguments. The silent flag is appended for you. Example: PROPERTY=VALUE 
 
@@ -74,11 +74,11 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 2. Enter a name for the first app, and then click **Add**.
 
-    ![enter name for first app](../images/wcd-app-name.png)
+    ![enter name for first app.](../images/wcd-app-name.png)
 
 3. Configure the settings for the appropriate installer type.
 
-    ![enter settings for first app](../images/wcd-app-commands.png)
+    ![enter settings for first app.](../images/wcd-app-commands.png)
 
 ## Add a universal app to your package
 
@@ -88,19 +88,19 @@ Universal apps that you can distribute in the provisioning package can be line-o
 
 2. For **DeviceContextApp**, specify the **PackageFamilyName** for the app. In Microsoft Store for Business, the package family name is listed in the **Package details** section of the download page.
 
-    ![details for offline app package](../images/uwp-family.png)
+    ![details for offline app package.](../images/uwp-family.png)
 
 3. For **ApplicationFile**, click **Browse** to find and select the target app (either an \*.appx or \*.appxbundle).
 
 4. For **DependencyAppxFiles**, click **Browse** to find and add any dependencies for the app. In Microsoft Store for Business, any dependencies for the app are listed in the **Required frameworks** section of the download page. 
 
-    ![required frameworks for offline app package](../images/uwp-dependencies.png)
+    ![required frameworks for offline app package.](../images/uwp-dependencies.png)
 
 5. For **DeviceContextAppLicense**, enter the **LicenseProductID**. 
 
     - In Microsoft Store for Business, generate the unencoded license for the app on the app's download page. 
 
-        ![generate license for offline app](../images/uwp-license.png)
+        ![generate license for offline app.](../images/uwp-license.png)
         
     - Open the license file and search for **LicenseID=** to get the GUID, enter the GUID in the **LicenseProductID** field and click **Add**.
     
@@ -214,5 +214,3 @@ For details about the settings you can customize in provisioning packages, see [
 - [Use the package splitter tool](../mobile-devices/provisioning-package-splitter.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
-
-

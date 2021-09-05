@@ -42,7 +42,7 @@ Windows 10, version 1709 is available starting on 10/17/2017 in all relevant dis
 
 For ISOs that you download from the VLSC or Visual Studio Subscriptions, you can still search for the individual Windows editions. However, each of these editions (Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education) will point to the same ISO file, so you only need to download the ISO once. A single Windows image (WIM) file is included in the ISO that contains all the volume licensing images:
 
-![Images](images/table01.png)
+![Images.](images/table01.png)
 
 When using the contents of these ISOs with tools such as the Microsoft Deployment Toolkit or Microsoft Endpoint Configuration Manager, make sure you select the appropriate image index in any task sequences that you create or update.
 
@@ -59,7 +59,7 @@ For packages published to Windows Server Update Services (WSUS), you’ll also n
 
 When you approve one of these packages, it applies to all of the editions.
 
-This Semi-Annual Channel release of Windows 10 continues the Windows as a service methodology.  For more information about implementing Windows as a service in your organization in order to stay up to date with Windows, see [Update Windows 10 in the enterprise](https://aka.ms/waas).
+This Semi-Annual Channel release of Windows 10 continues the Windows as a service methodology.  For more information about implementing Windows as a service in your organization in order to stay up to date with Windows, see [Update Windows 10 in the enterprise](./update/index.md).
 
 
 ### Language packs
@@ -69,11 +69,11 @@ This Semi-Annual Channel release of Windows 10 continues the Windows as a servic
 
 See the following example for Windows 10, version 1709:
 
-![Windows 10, version 1709 lang pack](images/lang-pack-1709.png)
+![Windows 10, version 1709 lang pack.](images/lang-pack-1709.png)
 
 ### Features on demand
 
-[Features on demand](https://blogs.technet.microsoft.com/mniehaus/2015/08/31/adding-features-including-net-3-5-to-windows-10/) can be downloaded by searching for "**Windows 10 Enterprise Features on Demand**" and then following the same download process that is described above.
+[Features on demand](/archive/blogs/mniehaus/adding-features-including-net-3-5-to-windows-10) can be downloaded by searching for "**Windows 10 Enterprise Features on Demand**" and then following the same download process that is described above.
 
 Features on demand is a method for adding features to your Windows 10 image that aren’t included in the base operating system image.
 
@@ -81,8 +81,8 @@ Features on demand is a method for adding features to your Windows 10 image that
 ## Related topics
 
 [Microsoft Volume Licensing Service Center (VLSC) User Guide](https://www.microsoft.com/download/details.aspx?id=10585)
-<br>[Volume Activation for Windows 10](https://docs.microsoft.com/windows/deployment/volume-activation/volume-activation-windows-10)
-<br>[Plan for volume activation](https://docs.microsoft.com/windows/deployment/volume-activation/plan-for-volume-activation-client)
+<br>[Volume Activation for Windows 10](./volume-activation/volume-activation-windows-10.md)
+<br>[Plan for volume activation](./volume-activation/plan-for-volume-activation-client.md)
 <br>[VLSC downloads FAQ](https://www.microsoft.com/Licensing/servicecenter/Help/FAQDetails.aspx?id=150)
 <br>[Download and burn an ISO file on the volume licensing site (VLSC)](https://support.microsoft.com/help/2472143/download-and-burn-an-iso-file-on-the-volume-licensing-site-vlsc)
 
@@ -90,8 +90,3 @@ Features on demand is a method for adding features to your Windows 10 image that
  
 
  
-
-
-
-
-

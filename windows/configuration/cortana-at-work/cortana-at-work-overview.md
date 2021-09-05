@@ -1,21 +1,21 @@
 ---
-title: Configure Cortana in Windows 10
+title: Configure Cortana in Windows 10 and Windows 11
 ms.reviewer: 
 manager: dansimp
-description: Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and enterprise environments.
+description: Cortana includes powerful configuration options specifically to optimize for unique small to medium-sized business and for enterprise environments.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ---
 
-# Configure Cortana in Windows 10
+# Configure Cortana in Windows 10 and Windows 11
 
 ## Who is Cortana?
 
-Cortana is a personal productivity assistant in Microsoft 365, helping your users achieve more with less effort and focus on what matters. The Cortana app in Windows 10 helps users quickly get information across Microsoft 365, using typed or spoken queries to connect with people, check calendars, set reminders, add tasks, and more.
+Cortana is a personal productivity assistant in Microsoft 365, helping your users achieve more with less effort and focus on what matters. The Cortana app in Windows 10 and Windows 11 helps users quickly get information across Microsoft 365, using typed or spoken queries to connect with people, check calendars, set reminders, add tasks, and more.
 
 :::image type="content" source="../screenshot1.png" alt-text="Screenshot: Cortana home page example":::
 
@@ -34,21 +34,24 @@ Cortana requires a PC running Windows 10, version 1703 or later, as well as the 
 
 | Software | Minimum version |
 |---------|---------|
-|Client operating system     |     Desktop: <br> - Windows 10, version 2004 (recommended)  <br> <br> - Windows 10, version 1703 (legacy version of Cortana) <br> <br> Mobile: Windows 10 mobile, version 1703 (legacy version of Cortana) <br> <br> For more information on the differences between Cortana in Windows 10, version 2004 and earlier versions, see [**How is my data processed by Cortana**](https://docs.microsoft.com/windows/configuration/cortana-at-work/cortana-at-work-overview#how-is-my-data-processed-by-cortana) below. |
+|Client operating system     |     Desktop: <br> - Windows 10, version 2004 (recommended)  <br> <br> - Windows 10, version 1703 (legacy version of Cortana) <br> <br> Mobile: Windows 10 mobile, version 1703 (legacy version of Cortana) <br> <br> For more information on the differences between Cortana in Windows 10, version 2004 and earlier versions, see [**How is my data processed by Cortana**](#how-is-my-data-processed-by-cortana) below. |
 |Azure Active Directory (Azure AD)    | While all employees signing into Cortana need an Azure AD account, an Azure AD premium tenant isn't required.        |
 |Additional policies (Group Policy and Mobile Device Management (MDM))     |There is a rich set of policies that can be used to manage various aspects of Cortana. Most of these policies will limit the abilities of Cortana but won't turn Cortana off. For example, if you turn **Speech** off, your employees won't be able to use the wake word ("Cortana") for hands-free activation or voice commands to easily ask for help.  |
 
+>[!NOTE]
+>For Windows 11, Cortana is no longer pinned to the taskbar by default. You can still pin the Cortana app to the taskbar as you would any other app. In addition, the keyboard shortcut that launched Cortana (Win+C) no longer opens Cortana.
+
 ## Signing in using Azure AD
 
-Your organization must have an Azure AD tenant and your employees&#39; devices must all be Azure AD-joined for the best Cortana experience. (Users may also sign into Cortana with a Microsoft account, but will not be able to use their enterprise email or calendar.) For info about what an Azure AD tenant is, how to get your devices joined, and other Azure AD maintenance info, see [Azure Active Directory documentation.](https://docs.microsoft.com/azure/active-directory/)
+Your organization must have an Azure AD tenant and your employees&#39; devices must all be Azure AD-joined for the best Cortana experience. (Users may also sign into Cortana with a Microsoft account, but will not be able to use their enterprise email or calendar.) For info about what an Azure AD tenant is, how to get your devices joined, and other Azure AD maintenance info, see [Azure Active Directory documentation.](/azure/active-directory/)
 
 ## How is my data processed by Cortana?
 
 Cortana's approach to integration with Microsoft 365 has changed with Windows 10, version 2004 and later.
 
-### Cortana in Windows 10, version 2004 and later
+### Cortana in Windows 10, version 2004 and later, or Windows 11
 
-Cortana enterprise services that can be accessed using Azure AD through Cortana in Windows 10, version 2004 and later, meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products). To learn more, see [Cortana in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide#what-data-is-processed-by-cortana-in-office-365).
+Cortana enterprise services that can be accessed using Azure AD through Cortana in Windows 10, version 2004 and later, or Windows 11, meet the same enterprise-level privacy, security, and compliance promises as reflected in the [Online Services Terms (OST)](https://www.microsoft.com/en-us/licensing/product-licensing/products). To learn more, see [Cortana in Microsoft 365](/microsoft-365/admin/misc/cortana-integration?view=o365-worldwide#what-data-is-processed-by-cortana-in-office-365&preserve-view=true).
 
 #### How does Microsoft store, retain, process, and use Customer Data in Cortana?
 
@@ -70,7 +73,7 @@ The table below describes the data handling for Cortana enterprise services.
 
 Cortana only begins listening for commands or queries when the wake word is detected, or the microphone button has been selected.
 
-First, the user must enable the wake word from within Cortana settings. Once it has been enabled, a component of Windows called the [Windows Multiple Voice Assistant platform](https://docs.microsoft.com/windows-hardware/drivers/audio/voice-activation-mva#voice-activation) will start listening for the wake word. No audio is processed by speech recognition unless two local wake word detectors and a server-side one agree with high confidence that the wake word was heard.
+First, the user must enable the wake word from within Cortana settings. Once it has been enabled, a component of Windows called the [Windows Multiple Voice Assistant platform](/windows-hardware/drivers/audio/voice-activation-mva#voice-activation) will start listening for the wake word. No audio is processed by speech recognition unless two local wake word detectors and a server-side one agree with high confidence that the wake word was heard.
 
 The first decision is made by the Windows Multiple Voice Assistant platform leveraging hardware optionally included in the user&#39;s PC for power savings. If the wake word is detected, Windows will show a microphone icon in the system tray indicating an assistant app is listening.
 

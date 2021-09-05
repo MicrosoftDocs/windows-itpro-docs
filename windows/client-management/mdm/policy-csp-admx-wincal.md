@@ -77,7 +77,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Windows Calendar is a feature that allows users to manage appointments and tasks by creating personal calendars, publishing them, and subscribing to other users calendars.
+Available in the latest Windows 10 Insider Preview Build. Windows Calendar is a feature that allows users to manage appointments and tasks by creating personal calendars, publishing them, and subscribing to other users calendars.
 
 If you enable this setting, Windows Calendar will be turned off.
 
@@ -95,7 +95,7 @@ The default is for Windows Calendar to be turned on.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Windows Calendar*
+-   GP Friendly name: *Turn off Windows Calendar*
 -   GP name: *TurnOffWinCal_1*
 -   GP path: *Windows Components\Windows Calendar*
 -   GP ADMX file name: *WinCal.admx*
@@ -150,7 +150,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Windows Calendar is a feature that allows users to manage appointments and tasks by creating personal calendars, publishing them, and subscribing to other users calendars.
+Available in the latest Windows 10 Insider Preview Build. Windows Calendar is a feature that allows users to manage appointments and tasks by creating personal calendars, publishing them, and subscribing to other users calendars.
 
 If you enable this setting, Windows Calendar will be turned off.
 
@@ -168,7 +168,7 @@ The default is for Windows Calendar to be turned on.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Windows Calendar*
+-   GP Friendly name: *Turn off Windows Calendar*
 -   GP name: *TurnOffWinCal_2*
 -   GP path: *Windows Components\Windows Calendar*
 -   GP ADMX file name: *WinCal.admx*
@@ -177,16 +177,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

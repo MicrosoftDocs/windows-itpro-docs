@@ -83,7 +83,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents users from running the interactive command prompt, Cmd.exe. This policy setting also determines whether batch files (.cmd and .bat) can run on the computer.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from running the interactive command prompt, Cmd.exe. This policy setting also determines whether batch files (.cmd and .bat) can run on the computer.
 
 If you enable this policy setting and the user tries to open a command window, the system displays a message explaining that a setting prevents the action.
 
@@ -102,7 +102,7 @@ If you disable this policy setting or do not configure it, users can run Cmd.exe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent access to the command prompt*
+-   GP Friendly name: *Prevent access to the command prompt*
 -   GP name: *DisableCMD*
 -   GP path: *System*
 -   GP ADMX file name: *Shell-CommandPrompt-RegEditTools.admx*
@@ -155,7 +155,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Disables the Windows registry editor Regedit.exe.
+Available in the latest Windows 10 Insider Preview Build. Disables the Windows registry editor Regedit.exe.
 
 If you enable this policy setting and the user tries to start Regedit.exe, a message appears explaining that a policy setting prevents the action.
 
@@ -173,7 +173,7 @@ To prevent users from using other administrative tools, use the "Run only specif
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent access to registry editing tools*
+-   GP Friendly name: *Prevent access to registry editing tools*
 -   GP name: *DisableRegedit*
 -   GP path: *System*
 -   GP ADMX file name: *Shell-CommandPrompt-RegEditTools.admx*
@@ -227,7 +227,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents Windows from running the programs you specify in this policy setting.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents Windows from running the programs you specify in this policy setting.
 
 If you enable this policy setting, users cannot run programs that you add to the list of disallowed applications.
 
@@ -249,7 +249,7 @@ This policy setting only prevents users from running programs that are started b
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Don't run specified Windows applications*
+-   GP Friendly name: *Don't run specified Windows applications*
 -   GP name: *DisallowApps*
 -   GP path: *System*
 -   GP ADMX file name: *Shell-CommandPrompt-RegEditTools.admx*
@@ -302,7 +302,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. Limits the Windows programs that users have permission to run on the computer.
+Available in the latest Windows 10 Insider Preview Build. Limits the Windows programs that users have permission to run on the computer.
 
 If you enable this policy setting, users can only run programs that you add to the list of allowed applications.
 
@@ -324,7 +324,7 @@ This policy setting only prevents users from running programs that are started b
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Run only specified Windows applications*
+-   GP Friendly name: *Run only specified Windows applications*
 -   GP name: *RestrictApps*
 -   GP path: *System*
 -   GP ADMX file name: *Shell-CommandPrompt-RegEditTools.admx*
@@ -333,16 +333,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

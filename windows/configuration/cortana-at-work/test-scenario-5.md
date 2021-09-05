@@ -1,18 +1,18 @@
 ---
-title: Use Cortana to send email to a co-worker (Windows 10)
-description: A test scenario about how to use Cortana at work to send email to a co-worker.
+title: Use Cortana to send an email to co-worker (Windows)
+description: A test scenario on how to use Cortana at work to send email to a co-worker.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.date: 10/05/2017
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Test scenario 5 - Use Cortana to send email to a co-worker
+# Test scenario 5 - Use Cortana to send an email to co-worker
 
 >[!Important]
 >The data created as part of these scenarios will be uploaded to Microsoft’s Cloud to help Cortana learn and help your employees. This is the same info that Cortana uses in the consumer offering.

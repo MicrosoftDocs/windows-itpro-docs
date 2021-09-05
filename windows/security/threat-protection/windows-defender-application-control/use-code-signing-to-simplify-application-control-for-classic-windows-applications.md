@@ -1,9 +1,9 @@
 ---
-title: Use code signing to simplify application control for classic Windows applications (Windows 10)
+title: Use code signing to simplify application control for classic Windows applications (Windows)
 description: With embedded signing, your WDAC policies typically do not have to be updated when an app is updated. To set this up, you can choose from a variety of methods.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,18 +15,23 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2018
+ms.technology: mde
 ---
 
 # Use code signing to simplify application control for classic Windows applications
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 This topic covers guidelines for using code signing control classic Windows apps.
 
-## Reviewing your applications: application signing and catalog files 
+## Reviewing your applications: application signing and catalog files
 
 Typically, WDAC policies are configured to use the application's signing certificate as part or all of what identifies the application as trusted. This means that applications must either use embedded signing—where the signature is part of the binary—or catalog signing, where you generate a "catalog file" from the applications, sign it, and through the signed catalog file, configure the WDAC policy to recognize the applications as signed.
 
@@ -48,20 +53,20 @@ To use catalog signing, you can choose from the following options:
 
 ### Catalog files
 
-Catalog files (which you can create in Windows 10 with a tool called Package Inspector) contain information about all deployed and executed binary files associated with your trusted but unsigned applications. When you create catalog files, you can also include signed applications for which you do not want to trust the signer but rather the specific application. After creating a catalog, you must sign the catalog file itself by using enterprise public key infrastructure (PKI), or a purchased code signing certificate. Then you can distribute the catalog, so that your trusted applications can be handled by WDAC in the same way as any other signed application.
+Catalog files (which you can create in Windows 10 and Windows 11 with a tool called Package Inspector) contain information about all deployed and executed binary files associated with your trusted but unsigned applications. When you create catalog files, you can also include signed applications for which you do not want to trust the signer but rather the specific application. After creating a catalog, you must sign the catalog file itself by using enterprise public key infrastructure (PKI), or a purchased code signing certificate. Then you can distribute the catalog, so that your trusted applications can be handled by WDAC in the same way as any other signed application.
 
 Catalog files are simply Secure Hash Algorithm 2 (SHA2) hash lists of discovered binaries. These binaries' hash values are updated each time an application is updated, which requires the catalog file to be updated also.
 
 After you have created and signed your catalog files, you can configure your WDAC policies to trust the signer or signing certificate of those files.
 
 > [!NOTE]
-> Package Inspector only works on operating systems that support Windows Defender, such as Windows 10 Enterprise, Windows 10 Education, Windows 2016 Server, or Windows Enterprise IoT.
+> Package Inspector only works on operating systems that support Windows Defender, such as Windows 10 and Windows 11 Enterprise, Windows 10 and Windows 11 Education, Windows 2016 Server, or Windows Enterprise IoT.
 
 For procedures for working with catalog files, see [Deploy catalog files to support Windows Defender Application Control](deploy-catalog-files-to-support-windows-defender-application-control.md).
 
 ## Windows Defender Application Control policy formats and signing
 
-When you generate a WDAC policy, you are generating a binary-encoded XML document that includes configuration settings for both the User and Kernel-modes of Windows 10 Enterprise, along with restrictions on Windows 10 script hosts. You can view your original XML document in a text editor, for example if you want to check the rule options that are present in the **&lt;Rules&gt;** section of the file.
+When you generate a WDAC policy, you are generating a binary-encoded XML document that includes configuration settings for both the User and Kernel-modes of Windows 10 and Windows 11 Enterprise, along with restrictions on Windows 10 and Windows 11 script hosts. You can view your original XML document in a text editor, for example if you want to check the rule options that are present in the **&lt;Rules&gt;** section of the file.
 
 We recommend that you keep the original XML file for use when you need to merge the WDAC policy with another policy or update its rule options. For deployment purposes, the file is converted to a binary format, which can be done using a simple Windows PowerShell command.
 

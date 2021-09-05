@@ -2,7 +2,7 @@
 title: 5377(S) Credential Manager credentials were restored from a backup. (Windows 10)
 description: Describes security event 5377(S) Credential Manager credentials were restored from a backup.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5377(S): Credential Manager credentials were restored from a backup.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates every time the user (**Subject**) successfully restores the [credential manager](https://technet.microsoft.com/library/jj554668.aspx) database.
+This event generates every time the user (**Subject**) successfully restores the [credential manager](/previous-versions/windows/it-pro/windows-8.1-and-8/jj554668(v=ws.11)) database.
 
 Typically this can be done by clicking “Restore Credentials” in Credential Manager in the Control Panel.
 
@@ -102,4 +103,3 @@ For 5377(S): Credential Manager credentials were restored from a backup.
 > **Important**&nbsp;&nbsp;For this event, also see [Appendix A: Security monitoring recommendations for many audit events](appendix-a-security-monitoring-recommendations-for-many-audit-events.md).
 
 -   Every [5377](event-5377.md) event should be recorded for all local and domain accounts, because this action (restore Credential Manager credentials from a backup) is very rarely used by users, and can indicate a virus, or other harmful or malicious activity.
-

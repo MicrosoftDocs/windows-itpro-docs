@@ -25,12 +25,12 @@ Safeguard holds only affect devices that use the Window Update service for updat
 
 IT admins can use [Update Compliance](update-compliance-feature-update-status.md#safeguard-holds) to monitor various update health metrics for devices in their organization, including ones affected by a safeguard hold that prevents them from updating to a newer operating system version. 
 
-Queries identify Safeguard IDs for each affected device, giving IT admins a detailed view into the various protections extended to devices. Safeguard IDs for publicly discussed known issues are also included in the [Windows release health](https://aka.ms/windowsreleasehealth) dashboard, where you can easily find information related to publicly available safeguards.
+Queries identify Safeguard IDs for each affected device, giving IT admins a detailed view into the various protections extended to devices. Safeguard IDs for publicly discussed known issues are also included in the [Windows release health](/windows/release-health/) dashboard, where you can easily find information related to publicly available safeguards.
 
 On devices that use Windows Update (but not Windows Update for Business), the **Windows Update** page in the Settings app displays a message stating that an update is on its way, but not ready for the device. Instead of the option to download and install the update, users will see this message:
 
 
-![Feature update message reading "The Windows 10 May 2020 Update is on its way. Once it's ready for your device, you'll see the update available on this page](images/safeguard-hold-notification.png)
+![Feature update message reading "The Windows 10 May 2020 Update is on its way. Once it's ready for your device, you'll see the update available on this page.](images/safeguard-hold-notification.png)
 
 If you see this message, it means one or more holds affect your device. When the issue is fixed and the update is safe to install, we’ll release the hold and the update can resume safely.
 
@@ -41,4 +41,4 @@ We recommend that you do not attempt to manually update until issues have been r
 > [!CAUTION]
 > Opting out of a safeguard hold can put devices at risk from known performance issues. We strongly recommend that you complete robust testing to ensure the impact is acceptable before opting out.
   
-With that in mind, IT admins who stay informed with [Update Compliance](update-compliance-feature-update-status.md#safeguard-holds) and the [Windows release health](https://aka.ms/windowsreleasehealth) dashboard can choose to temporarily [opt-out of the protection of all safeguard holds](safeguard-opt-out.md) and allow an update to proceed. We recommend opting out only in an IT environment and for validation purposes. If you do opt out of a hold, this condition is temporary. Once an update is complete, the protection of safeguard holds is reinstated automatically. 
+With that in mind, IT admins who stay informed with [Update Compliance](update-compliance-feature-update-status.md#safeguard-holds) and the [Windows release health](/windows/release-health/) dashboard can choose to temporarily [opt-out of the protection of all safeguard holds](safeguard-opt-out.md) and allow an update to proceed. We recommend opting out only in an IT environment and for validation purposes. If you do opt out of a hold, this condition is temporary. Once an update is complete, the protection of safeguard holds is reinstated automatically.

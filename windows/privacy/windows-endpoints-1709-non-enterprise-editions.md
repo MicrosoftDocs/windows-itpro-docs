@@ -23,7 +23,7 @@ ms.reviewer:
 - Windows 10 Professional, version 1709
 - Windows 10 Education, version 1709
 
-In addition to the endpoints listed for [Windows 10 Enterprise](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services), the following endpoints are available on other editions of Windows 10, version 1709.
+In addition to the endpoints listed for [Windows 10 Enterprise](./manage-connections-from-windows-operating-system-components-to-microsoft-services.md), the following endpoints are available on other editions of Windows 10, version 1709.
 
 We used the following methodology to derive these network endpoints:
 
@@ -290,6 +290,5 @@ We used the following methodology to derive these network endpoints:
 | weus2watcab02.blob.core.windows.net | HTTPS | Used by Windows Error Reporting. |
 | tsfe.trafficshaping.dsp.mp.microsoft.com | TLSv1.2 | Used for content regulation. |
 | wallet.microsoft.com | HTTPS | Used by the Microsoft Wallet app. |
-
 | wdcp.microsoft.akadns.net | TLSv1.2 | Used for Windows Defender when Cloud-based Protection is enabled. |
 | www.bing.com | HTTPS | Used for updates for Cortana, apps, and Live Tiles. |

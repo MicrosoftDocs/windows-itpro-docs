@@ -1,10 +1,10 @@
 ---
-title: AppLocker architecture and components (Windows 10)
+title: AppLocker architecture and components (Windows)
 description: This topic for IT professional describes AppLocker’s basic architecture and its major components.
 ms.assetid: efdd8494-553c-443f-bd5f-c8976535135a
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # AppLocker architecture and components
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professional describes AppLocker’s basic architecture and its major components.
 

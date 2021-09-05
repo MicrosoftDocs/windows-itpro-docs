@@ -7,8 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 09/27/2019
-ms.reviewer: 
+ms.reviewer: bobgil
 manager: dansimp
 ---
 
@@ -36,6 +35,9 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#authentication-allowsecondaryauthenticationdevice">Authentication/AllowSecondaryAuthenticationDevice</a>
+  </dd>
+  <dd>
+    <a href="#authentication-configurewebsigninallowedurls">Authentication/ConfigureWebSignInAllowedUrls</a>
   </dd>
   <dd>
     <a href="#authentication-enablefastfirstsignin">Authentication/EnableFastFirstSignIn</a>
@@ -342,7 +344,7 @@ In the next major release of Windows 10, the default for this policy for consume
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow companion device for secondary authentication*
+-   GP Friendly name: *Allow companion device for secondary authentication*
 -   GP name: *MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice*
 -   GP path: *Windows Components/Microsoft Secondary Authentication Factor*
 -   GP ADMX file name: *DeviceCredential.admx*
@@ -355,6 +357,68 @@ The following list shows the supported values:
 -   1 – Allowed.
 
 <!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="authentication-configurewebsigninallowedurls"></a>**Authentication/ConfigureWebSignInAllowedUrls**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 1803. Specifies the list of domains that are allowed to be navigated to in AAD PIN reset and Web Sign-in Windows device scenarios where authentication is handled by AD FS or a third-party federated identity provider. Note this policy is required in federated environments as a mitigation to the vulnerability described in [CVE-2021-27092](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-27092).
+
+**Example**: If your organization's PIN reset or Web Sign-in authentication flow is expected to navigate to two domains, accounts.contoso.com and signin.contoso.com, the policy value should be "accounts.contoso.com;signin.contoso.com".
+
+<!--/Description-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
 <!--/Policy-->
 
 <hr/>
@@ -478,7 +542,7 @@ Value type is integer. Supported values:
 > [!Warning]
 > This policy is in preview mode only and therefore not meant or recommended for production purposes.
 
-"Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for non-ADFS federated providers (e.g. SAML). 
+"Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for new Azure AD credentials, like Temporary Access Pass.
 
 > [!Note]
 > Web Sign-in is only supported on Azure AD Joined PCs.
@@ -579,4 +643,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

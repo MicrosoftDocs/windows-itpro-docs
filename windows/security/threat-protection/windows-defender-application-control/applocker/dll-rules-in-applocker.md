@@ -1,10 +1,10 @@
 ---
-title: DLL rules in AppLocker (Windows 10)
+title: DLL rules in AppLocker (Windows)
 description: This topic describes the file formats and available default rules for the DLL rule collection.
 ms.assetid: a083fd08-c07e-4534-b0e7-1e15d932ce8f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # DLL rules in AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic describes the file formats and available default rules for the DLL rule collection.
 

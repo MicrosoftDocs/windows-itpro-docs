@@ -1,11 +1,11 @@
 ---
-title: Configure the Application Identity service (Windows 10)
+title: Configure the Application Identity service (Windows)
 description: This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.
 ms.assetid: dc469599-37fd-448b-b23e-5b8e4f17e561
 ms.reviewer: 
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: medium
@@ -14,14 +14,20 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/02/2018
+ms.date: 07/01/2021
+ms.technology: mde
 ---
 
 # Configure the Application Identity service
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals shows how to configure the Application Identity service to start automatically or manually.
 
@@ -45,7 +51,7 @@ Membership in the local **Administrators** group, or equivalent, is the minimum 
 2.  Click the **Services** tab, right-click **AppIDSvc**, and then click **Start Service**.
 3.  Verify that the status for the Application Identity service is **Running**.
 
-Starting with Windows 10, the Application Identity service is now a protected process. Because of this, you can no longer manually set the service **Startup type** to **Automatic** by using the Sevices snap-in. Try either of these methods instead:
+Starting with Windows 10, the Application Identity service is now a protected process. Because of this, you can no longer manually set the service **Startup type** to **Automatic** by using the Services snap-in. Try either of these methods instead:
 
 - Open an elevated command prompt or PowerShell session and type:
 

@@ -134,7 +134,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to specify the HTTP proxy settings for Windows Media Player.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify the HTTP proxy settings for Windows Media Player.
 
 If you enable this policy setting, select one of the following proxy types:
 
@@ -162,7 +162,7 @@ If you do not configure this policy setting, users can configure the HTTP proxy 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure HTTP Proxy*
+-   GP Friendly name: *Configure HTTP Proxy*
 -   GP name: *ConfigureHTTPProxySettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -215,7 +215,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to specify the MMS proxy settings for Windows Media Player.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify the MMS proxy settings for Windows Media Player.
 
 If you enable this policy setting, select one of the following proxy types:
 
@@ -242,7 +242,7 @@ If you do not configure this policy setting, users can configure the MMS proxy s
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure MMS Proxy*
+-   GP Friendly name: *Configure MMS Proxy*
 -   GP name: *ConfigureMMSProxySettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -295,7 +295,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to specify the RTSP proxy settings for Windows Media Player.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify the RTSP proxy settings for Windows Media Player.
 
 If you enable this policy setting, select one of the following proxy types:
 
@@ -320,7 +320,7 @@ If you do not configure this policy setting, users can configure the RTSP proxy 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure RTSP Proxy*
+-   GP Friendly name: *Configure RTSP Proxy*
 -   GP name: *ConfigureRTSPProxySettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -373,7 +373,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to turn off do not show first use dialog boxes.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to turn off do not show first use dialog boxes.
 
 If you enable this policy setting, the Privacy Options and Installation Options dialog boxes are prevented from being displayed the first time a user starts Windows Media Player.
 
@@ -391,7 +391,7 @@ If you disable or do not configure this policy setting, the dialog boxes are dis
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent Automatic Updates*
+-   GP Friendly name: *Prevent Automatic Updates*
 -   GP name: *DisableAutoUpdate*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -444,7 +444,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to hide the Network tab.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to hide the Network tab.
 
 If you enable this policy setting, the Network tab in Windows Media Player is hidden. The default network settings are used unless the user has previously defined network settings for the Player.
 
@@ -460,7 +460,7 @@ If you disable or do not configure this policy setting, the Network tab appears 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide Network Tab*
+-   GP Friendly name: *Hide Network Tab*
 -   GP name: *DisableNetworkSettings*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -513,7 +513,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to prevent the anchor window from being displayed when Windows Media Player is in skin mode.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent the anchor window from being displayed when Windows Media Player is in skin mode.
 
 If you enable this policy setting, the anchor window is hidden when the Player is in skin mode. In addition, the option on the Player tab in the Player that enables users to choose whether the anchor window displays is not available.
 
@@ -531,7 +531,7 @@ If you do not configure this policy setting, and the "Set and lock skin" policy 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do Not Show First Use Dialog Boxes*
+-   GP Friendly name: *Do Not Show First Use Dialog Boxes*
 -   GP name: *DisableSetupFirstUseConfiguration*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -584,7 +584,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents the anchor window from being displayed when Windows Media Player is in skin mode.
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents the anchor window from being displayed when Windows Media Player is in skin mode.
 
 This policy hides the anchor window when the Player is in skin mode. In addition, the option on the Player tab in the Player that enables users to choose whether the anchor window displays is not available.
 
@@ -602,7 +602,7 @@ When this policy is not configured and the Set and Lock Skin policy is enabled, 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do Not Show Anchor*
+-   GP Friendly name: *Do Not Show Anchor*
 -   GP name: *DoNotShowAnchor*
 -   GP path: *Windows Components\Windows Media Player\User Interface*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -655,7 +655,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to prevent video smoothing from occurring.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent video smoothing from occurring.
 
 If you enable this policy setting, video smoothing is prevented, which can improve video playback on computers with limited resources. In addition, the Use Video Smoothing check box in the Video Acceleration Settings dialog box in the Player is cleared and is not available.
 
@@ -675,7 +675,7 @@ Video smoothing is available only on the Windows XP Home Edition and Windows XP 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent Video Smoothing*
+-   GP Friendly name: *Prevent Video Smoothing*
 -   GP name: *DontUseFrameInterpolation*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -728,7 +728,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows a screen saver to interrupt playback.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows a screen saver to interrupt playback.
 
 If you enable this policy setting, a screen saver is displayed during playback of digital media according to the options selected on the Screen Saver tab in the Display Properties dialog box in Control Panel. The Allow screen saver during playback check box on the Player tab in the Player is selected and is not available.
 
@@ -746,7 +746,7 @@ If you do not configure this policy setting, users can change the setting for th
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow Screen Saver*
+-   GP Friendly name: *Allow Screen Saver*
 -   GP name: *EnableScreenSaver*
 -   GP path: *Windows Components\Windows Media Player\Playback*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -799,7 +799,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to hide the Privacy tab in Windows Media Player.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to hide the Privacy tab in Windows Media Player.
 
 If you enable this policy setting, the "Update my music files (WMA and MP3 files) by retrieving missing media information from the Internet" check box on the Media Library tab is available, even though the Privacy tab is hidden, unless the "Prevent music file media information retrieval" policy setting is enabled.
 
@@ -817,7 +817,7 @@ If you disable or do not configure this policy setting, the Privacy tab is not h
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent Automatic Updates*
+-   GP Friendly name: *Prevent Automatic Updates*
 -   GP name: *HidePrivacyTab*
 -   GP path: *Windows Components\Windows Media Player\User Interface*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -870,7 +870,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to hide the Security tab in Windows Media Player.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to hide the Security tab in Windows Media Player.
 
 If you enable this policy setting, the default security settings for the options on the Security tab are used unless the user changed the settings previously. Users can still change security and zone settings by using Internet Explorer unless these settings have been hidden or disabled by Internet Explorer policies.
 
@@ -886,7 +886,7 @@ If you disable or do not configure this policy setting, users can configure the 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide Security Tab*
+-   GP Friendly name: *Hide Security Tab*
 -   GP name: *HideSecurityTab*
 -   GP path: *Windows Components\Windows Media Player\User Interface*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -939,7 +939,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to specify whether network buffering uses the default or a specified number of seconds.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify whether network buffering uses the default or a specified number of seconds.
 
 If you enable this policy setting, select one of the following options to specify the number of seconds streaming media is buffered before it is played.
 
@@ -960,7 +960,7 @@ If you disable or do not configure this policy setting, users can change the buf
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Network Buffering*
+-   GP Friendly name: *Configure Network Buffering*
 -   GP name: *NetworkBuffering*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -1013,7 +1013,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to prevent Windows Media Player from downloading codecs.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent Windows Media Player from downloading codecs.
 
 If you enable this policy setting, the Player is prevented from automatically downloading codecs to your computer. In addition, the Download codecs automatically check box on the Player tab in the Player is not available.
 
@@ -1031,7 +1031,7 @@ If you do not configure this policy setting, users can change the setting for th
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent Codec Download*
+-   GP Friendly name: *Prevent Codec Download*
 -   GP name: *PolicyCodecUpdate*
 -   GP path: *Windows Components\Windows Media Player\Playback*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -1084,7 +1084,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to prevent media information for CDs and DVDs from being retrieved from the Internet.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent media information for CDs and DVDs from being retrieved from the Internet.
 
 If you enable this policy setting, the Player is prevented from automatically obtaining media information from the Internet for CDs and DVDs played by users. In addition, the Retrieve media information for CDs and DVDs from the Internet check box on the Privacy Options tab in the first use dialog box and on the Privacy tab in the Player are not selected and are not available.
 
@@ -1100,7 +1100,7 @@ If you disable or do not configure this policy setting, users can change the set
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent CD and DVD Media Information Retrieval*
+-   GP Friendly name: *Prevent CD and DVD Media Information Retrieval*
 -   GP name: *PreventCDDVDMetadataRetrieval*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -1153,7 +1153,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to prevent media sharing from Windows Media Player.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent media sharing from Windows Media Player.
 
 If you enable this policy setting, any user on this computer is prevented from sharing digital media content from Windows Media Player with other computers and devices that are on the same network. Media sharing is disabled from Windows Media Player or from programs that depend on the Player's media sharing feature.
 
@@ -1169,7 +1169,7 @@ If you disable or do not configure this policy setting, anyone using Windows Med
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent Media Sharing*
+-   GP Friendly name: *Prevent Media Sharing*
 -   GP name: *PreventLibrarySharing*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -1222,7 +1222,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to prevent media information for music files from being retrieved from the Internet.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent media information for music files from being retrieved from the Internet.
 
 If you enable this policy setting, the Player is prevented from automatically obtaining media information for music files such as Windows Media Audio (WMA) and MP3 files from the Internet. In addition, the Update my music files (WMA and MP3 files) by retrieving missing media information from the Internet check box in the first use dialog box and on the Privacy and Media Library tabs in the Player are not selected and are not available.
 
@@ -1238,7 +1238,7 @@ If you disable or do not configure this policy setting, users can change the set
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent Music File Media Information Retrieval*
+-   GP Friendly name: *Prevent Music File Media Information Retrieval*
 -   GP name: *PreventMusicFileMetadataRetrieval*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -1291,7 +1291,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to prevent a shortcut for the Player from being added to the Quick Launch bar.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent a shortcut for the Player from being added to the Quick Launch bar.
 
 If you enable this policy setting, the user cannot add the shortcut for the Player to the Quick Launch bar.
 
@@ -1307,7 +1307,7 @@ If you disable or do not configure this policy setting, the user can choose whet
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent Quick Launch Toolbar Shortcut Creation*
+-   GP Friendly name: *Prevent Quick Launch Toolbar Shortcut Creation*
 -   GP name: *PreventQuickLaunchShortcut*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -1359,7 +1359,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to prevent radio station presets from being retrieved from the Internet.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent radio station presets from being retrieved from the Internet.
 
 If you enable this policy setting, the Player is prevented from automatically retrieving radio station presets from the Internet and displaying them in Media Library. In addition, presets that exist before the policy is configured are not be updated, and presets a user adds are not be displayed.
 
@@ -1375,7 +1375,7 @@ If you disable or do not configure this policy setting, the Player automatically
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *PPrevent Radio Station Preset Retrieval*
+-   GP Friendly name: *PPrevent Radio Station Preset Retrieval*
 -   GP name: *PreventRadioPresetsRetrieval*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -1428,7 +1428,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to prevent a shortcut icon for the Player from being added to the user's desktop.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to prevent a shortcut icon for the Player from being added to the user's desktop.
 
 If you enable this policy setting, users cannot add the Player shortcut icon to their desktops.
 
@@ -1444,7 +1444,7 @@ If you disable or do not configure this policy setting, users can choose whether
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent Desktop Shortcut Creation*
+-   GP Friendly name: *Prevent Desktop Shortcut Creation*
 -   GP name: *PreventWMPDeskTopShortcut*
 -   GP path: *Windows Components\Windows Media Player*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -1497,7 +1497,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to set and lock Windows Media Player in skin mode, using a specified skin.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to set and lock Windows Media Player in skin mode, using a specified skin.
 
 If you enable this policy setting, the Player displays only in skin mode using the skin specified in the Skin box on the Setting tab.
 
@@ -1517,7 +1517,7 @@ If you disable or do not configure this policy setting, users can display the Pl
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set and Lock Skin*
+-   GP Friendly name: *Set and Lock Skin*
 -   GP name: *SkinLockDown*
 -   GP path: *Windows Components\Windows Media Player\User Interface*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -1570,7 +1570,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows you to specify that Windows Media Player can attempt to use selected protocols when receiving streaming media from a server running Windows Media Services.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to specify that Windows Media Player can attempt to use selected protocols when receiving streaming media from a server running Windows Media Services.
 
 If you enable this policy setting, the protocols that are selected on the Network tab of the Player are used to receive a stream initiated through an MMS or RTSP URL from a Windows Media server. If the RSTP/UDP check box is selected, a user can specify UDP ports in the Use ports check box. If the user does not specify UDP ports, the Player uses default ports when using the UDP protocol. This policy setting also specifies that multicast streams can be received if the "Allow the Player to receive multicast streams" check box on the Network tab is selected.
 
@@ -1590,7 +1590,7 @@ If you disable this policy setting, the Protocols for MMS URLs and Multicast str
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Streaming Media Protocols*
+-   GP Friendly name: *Streaming Media Protocols*
 -   GP name: *WindowsStreamingMediaProtocols*
 -   GP path: *Windows Components\Windows Media Player\Networking*
 -   GP ADMX file name: *WindowsMediaPlayer.admx*
@@ -1599,16 +1599,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

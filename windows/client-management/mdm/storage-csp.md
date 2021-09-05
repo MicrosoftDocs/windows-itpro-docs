@@ -21,10 +21,12 @@ The Storage enterprise configuration service provider is used to configure the s
 
  
 
-The following diagram shows the Storage configuration service provider in tree format.
-
-![provisioning\-csp\-storage](images/provisioning-csp-storage.png)
-
+The following shows the Storage configuration service provider in tree format.
+```
+./Vendor/MSFT
+Storage
+----Disable
+```
 <a href="" id="disable"></a>**Disable**  
 Required. A Boolean value that specifies whether to enable or disable a storage card. A value of **True** disables the storage card. A value of **False** enables the storage card. The default value is **False**. The value is case sensitive.
 

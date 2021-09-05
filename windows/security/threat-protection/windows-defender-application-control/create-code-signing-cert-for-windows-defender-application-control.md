@@ -1,9 +1,9 @@
 ---
-title: Create a code signing cert for Windows Defender Application Control  (Windows 10)
+title: Create a code signing cert for Windows Defender Application Control (Windows)
 description: Learn how to set up a publicly-issued code signing certificate, so you can sign catalog files or WDAC policies internally.
-keywords:  security, malware
+keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/28/2018
+ms.technology: mde
 ---
 
 # Optional: Create a code signing cert for Windows Defender Application Control  
@@ -22,7 +23,11 @@ ms.date: 02/28/2018
 **Applies to:**
 
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 As you deploy Windows Defender Application Control (WDAC), you might need to sign catalog files or WDAC policies internally. To do this, you will either need a publicly issued code signing certificate or an internal CA. If you have purchased a code signing certificate, you can skip this topic and instead follow other topics listed in the [Windows Defender Application Control Deployment Guide](windows-defender-application-control-deployment-guide.md). 
 
@@ -34,7 +39,7 @@ ECDSA is not supported.
 
 2.  When connected, right-click **Certificate Templates**, and then click **Manage** to open the Certification Templates Console.
 
-    ![CA snap-in showing Certificate Templates](images/dg-fig27-managecerttemp.png)
+    ![CA snap-in showing Certificate Templates.](images/dg-fig27-managecerttemp.png)
 
     Figure 1. Manage the certificate templates
 
@@ -50,7 +55,7 @@ ECDSA is not supported.
 
 8.  In the **Edit Basic Constraints Extension** dialog box, select **Enable this extension**, as shown in Figure 2.
 
-    ![Edit Basic Constraints Extension](images/dg-fig29-enableconstraints.png)
+    ![Edit Basic Constraints Extension.](images/dg-fig29-enableconstraints.png)
 
     Figure 2. Select constraints on the new template
 
@@ -66,7 +71,7 @@ When this certificate template has been created, you must publish it to the CA p
 
 1.  In the Certification Authority MMC snap-in, right-click **Certification Templates**, point to **New**, and then click **Certificate Template to Issue**, as shown in Figure 3.
 
-    ![Select Certificate Template to Issue](images/dg-fig30-selectnewcert.png)
+    ![Select Certificate Template to Issue.](images/dg-fig30-selectnewcert.png)
 
     Figure 3. Select the new certificate template to issue
 
@@ -74,7 +79,7 @@ When this certificate template has been created, you must publish it to the CA p
 
 2.  Select the WDAC Catalog signing certificate, and then click **OK**.
 
-Now that the template is available to be issued, you must request one from the computer running Windows 10 on which you create and sign catalog files. To begin, open the MMC, and then complete the following steps:
+Now that the template is available to be issued, you must request one from the computer running Windows 10 and Windows 11 on which you create and sign catalog files. To begin, open the MMC, and then complete the following steps:
 
 1.  In MMC, from the **File** menu, click **Add/Remove Snap-in**. Double-click **Certificates**, and then select **My user account**.
 
@@ -84,7 +89,7 @@ Now that the template is available to be issued, you must request one from the c
 
 4.  In the **Request Certificate** list, select your newly created code signing certificate, and then select the blue text that requests additional information, as shown in Figure 4.
 
-    ![Request Certificates: more information required](images/dg-fig31-getmoreinfo.png)
+    ![Request Certificates: more information required.](images/dg-fig31-getmoreinfo.png)
 
     Figure 4. Get more information for your code signing certificate
 

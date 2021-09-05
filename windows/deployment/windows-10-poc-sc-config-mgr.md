@@ -36,7 +36,7 @@ The PoC environment is a virtual network running on Hyper-V with three virtual m
 - **SRV1**: A dual-homed contoso.com domain member server, DNS server, and default gateway providing NAT service for the PoC network.
 - **PC1**: A contoso.com member computer running Windows 7, Windows 8, or Windows 8.1 that has been cloned from a physical computer on your corporate network for testing purposes.
 
->This guide leverages the Hyper-V server role to perform procedures. If you do not complete all steps in a single session, consider using [checkpoints](https://technet.microsoft.com/library/dn818483.aspx) and [saved states](https://technet.microsoft.com/library/ee247418.aspx) to pause, resume, or restart your work.
+>This guide leverages the Hyper-V server role to perform procedures. If you do not complete all steps in a single session, consider using [checkpoints](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn818483(v=ws.11)) and [saved states](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee247418(v=ws.10)) to pause, resume, or restart your work.
 
 >Multiple features and services are installed on SRV1 in this guide. This is not a typical installation, and is only done to set up a lab environment with a bare minimum of resources. However, if less than 4 GB of RAM is allocated to SRV1 in the Hyper-V console, some procedures will be extremely slow to complete. If resources are limited on the Hyper-V host, consider reducing RAM allocation on DC1 and PC1, and then increasing the RAM allocation on SRV1. You can adjust RAM allocation for a VM by right-clicking the VM in the Hyper-V Manager console, clicking **Settings**, clicking **Memory**, and modifying the value next to **Maximum RAM**.
 
@@ -46,9 +46,9 @@ This guide provides end-to-end instructions to install and configure Microsoft E
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
-||||
-|--- |--- |--- |
+
 |Topic|Description|Time|
+|--- |--- |--- |
 |[Install prerequisites](#install-prerequisites)|Install prerequisite Windows Server roles and features, download, install and configure SQL Server, configure firewall rules, and install the Windows ADK.|60 minutes|
 |[Install Microsoft Endpoint Configuration Manager](#install-microsoft-endpoint-configuration-manager)|Download Microsoft Endpoint Configuration Manager, configure prerequisites, and install the package.|45 minutes|
 |[Download MDOP and install DaRT](#download-mdop-and-install-dart)|Download the Microsoft Desktop Optimization Pack 2015 and install DaRT 10.|15 minutes|
@@ -116,7 +116,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     New-NetFirewallRule -DisplayName "SQL Debugger/RPC" -Direction Inbound –Protocol TCP –LocalPort 135 -Action allow
     ```
 
-6. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](https://docs.microsoft.com/windows-hardware/get-started/adk-install) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 2004. Installation might require several minutes to acquire all components.
+6. Download and install the latest [Windows Assessment and Deployment Kit (ADK)](/windows-hardware/get-started/adk-install) on SRV1 using the default installation settings. The current version is the ADK for Windows 10, version 2004. Installation might require several minutes to acquire all components.
 
 ## Install Microsoft Endpoint Configuration Manager
 
@@ -128,7 +128,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     Stop-Process -Name Explorer
     ```
 
-2. Download [Microsoft Endpoint Configuration Manager and Endpoint Protection](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1 (download the executable file anywhere on SRV1), double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
+2. Download [Microsoft Endpoint Manager and Endpoint Protection](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) on SRV1 (download the executable file anywhere on SRV1), double-click the file, enter **C:\configmgr** for **Unzip to folder**, and click **Unzip**. The C:\configmgr directory will be automatically created. Click **OK** and then close the **WinZip Self-Extractor** dialog box when finished.
 
 3. Before starting the installation, verify that WMI is working on SRV1. See the following examples. Verify that **Running** is displayed under **Status** and **True** is displayed next to **TcpTestSucceeded**:
 
@@ -188,7 +188,7 @@ Topics and procedures in this guide are summarized in the following table. An es
     cmd /c C:\configmgr\SMSSETUP\BIN\X64\Setup.exe
     ```
 
-18. Provide the following in the Microsoft Endpoint Configuration Manager Setup Wizard:
+18. Provide the following in the Microsoft Endpoint Manager Setup Wizard:
     - **Before You Begin**: Read the text and click *Next*.
     - **Getting Started**: Choose **Install a Configuration Manager primary site** and select the **Use typical installation options for a stand-alone primary site** checkbox.
         - Click **Yes** in response to the popup window.
@@ -218,7 +218,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 > [!IMPORTANT]
 > This step requires an MSDN subscription or volume licence agreement. For more information, see [Ready for Windows 10: MDOP 2015 and more tools are now available](https://blogs.technet.microsoft.com/windowsitpro/2015/08/17/ready-for-windows-10-mdop-2015-and-more-tools-are-now-available/).
-> If your organization qualifies and does not already have an MSDN subscription, you can obtain a [free MSDN subscription with BizSpark](https://docs.microsoft.com/archive/blogs/zainnab/bizspark-free-msdn-subscription-for-start-up-companies/).
+> If your organization qualifies and does not already have an MSDN subscription, you can obtain a [free MSDN subscription with BizSpark](/archive/blogs/zainnab/bizspark-free-msdn-subscription-for-start-up-companies/).
 
 1. Download the [Microsoft Desktop Optimization Pack 2015](https://msdn.microsoft.com/subscriptions/downloads/#ProductFamilyId=597) to the Hyper-V host using an MSDN subscription. Download the .ISO file (mu_microsoft_desktop_optimization_pack_2015_x86_x64_dvd_5975282.iso, 2.79 GB) to the C:\VHD directory on the Hyper-V host.
 
@@ -283,7 +283,7 @@ This section contains several procedures to support Zero Touch installation with
 3. On the **Network Access Account** tab, choose **Specify the account that accesses network locations**.
 4. Click the yellow starburst and then click **New Account**.
 5. Click **Browse** and then under **Enter the object name to select**, type **CM_NAA** and click **OK**.
-6. Next to **Password** and **Confirm Password**, type **pass@word1**, and then click **OK** twice.
+6. Next to **Password** and **Confirm Password**, type **pass\@word1**, and then click **OK** twice.
 
 ### Configure a boundary group
 
@@ -320,7 +320,7 @@ WDSUTIL /Set-Server /AnswerClients:None
 
     > If the internal network adapter, assigned an IP address of 192.168.0.2, is not named "Ethernet" then replace the name "Ethernet" in the previous command with the name of this network adapter. You can review the names of network adapters and the IP addresses assigned to them by typing **ipconfig**.
 
-2. In the Microsoft Endpoint Configuration Manager console, in the **Administration** workspace, click **Distribution Points**.
+2. In the Microsoft Endpoint Manager console, in the **Administration** workspace, click **Distribution Points**.
 3. In the display pane, right-click **SRV1.CONTOSO.COM** and then click **Properties**.
 4. On the PXE tab, select the following settings:
    - **Enable PXE support for clients**. Click **Yes** in the popup that appears.
@@ -331,7 +331,7 @@ WDSUTIL /Set-Server /AnswerClients:None
    - **Respond to PXE requests on specific network interfaces**: Click the yellow starburst and then enter the MAC address determined in the first step of this procedure.
 
      See the following example:
-     ![Config Mgr PXE](images/configmgr-pxe.png)
+     ![Config Mgr PXE.](images/configmgr-pxe.png)
 
 5. Click **OK**.
 6. Wait for a minute, then type the following command at an elevated Windows PowerShell prompt on SRV1, and verify that the files displayed are present:
@@ -770,8 +770,8 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 6. The smsts.log file is critical for troubleshooting any installation problems that might be encountered. Depending on the deployment phase, the smsts.log file is created in different locations:
    - X:\Windows\temp\SMSTSLog\smsts.log before disks are formatted.
    - X:\smstslog\smsts.log after disks are formatted.
-   - C:\\_SMSTaskSequence\Logs\Smstslog\smsts.log before the Microsoft Endpoint Configuration Manager client is installed.
-   - C:\Windows\ccm\logs\Smstslog\smsts.log after the Microsoft Endpoint Configuration Manager client is installed.
+   - C:\\_SMSTaskSequence\Logs\Smstslog\smsts.log before the Microsoft Endpoint Manager client is installed.
+   - C:\Windows\ccm\logs\Smstslog\smsts.log after the Microsoft Endpoint Manager client is installed.
    - C:\Windows\ccm\logs\smsts.log when the task sequence is complete.
 
      Note: If a reboot is pending on the client, the reboot will be blocked as long as the command window is open.
@@ -803,7 +803,7 @@ In this first deployment scenario, we will deploy Windows 10 using PXE. This sce
 
 >Before starting this section, you can delete computer objects from Active Directory that were created as part of previous deployment procedures. Use the Active Directory Users and Computers console on DC1 to remove stale entries under contoso.com\Computers, but do not delete the computer account (hostname) for PC1. There should be at least two computer accounts present in the contoso.com\Computers container: one for SRV1, and one for the hostname of PC1. It is not required to delete the stale entries, this is only done to remove clutter.
 
-![contoso.com\Computers](images/poc-computers.png)
+![contoso.com\Computers.](images/poc-computers.png)
 
 In the replace procedure, PC1 will not be migrated to a new operating system. It is simplest to perform this procedure before performing the refresh procedure. After refreshing PC1, the operating system will be new. The next (replace) procedure does not install a new operating system on PC1 but rather performs a side-by-side migration of PC1 and another computer (PC4), to copy users and settings from PC1 to the new computer.
 
@@ -854,11 +854,9 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 6. When a popup dialog box asks if you want to run full discovery, click **Yes**.
 7. In the Assets and Compliance workspace, click **Devices** and verify that the computer account names for SRV1 and PC1 are displayed. See the following example (GREGLIN-PC1 is the computer account name of PC1 in this example):
 
-    ![assets](images/configmgr-assets.png)
+>If you do not see the computer account for PC1, try clicking the **Refresh** button in the upper right corner of the console.
 
-    >If you do not see the computer account for PC1, try clicking the **Refresh** button in the upper right corner of the console.
-
-    The **Client** column indicates that the Configuration Manager client is not currently installed. This procedure will be carried out next.
+The **Client** column indicates that the Configuration Manager client is not currently installed. This procedure will be carried out next.
 
 8. Sign in to PC1 using the contoso\administrator account and type the following at an elevated command prompt to remove any pre-existing client configuration, if it exists. Note: this command requires an elevated command prompt not an elevated Windows PowerShell prompt:
 
@@ -867,7 +865,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
     "\\SRV1\c$\Program Files\Microsoft Configuration Manager\Client\CCMSetup.exe" /Uninstall
     ```
 
-    >If PC1 still has Configuration Manager registry settings that were applied by Group Policy, startup scripts, or other policies in its previous domain, these might not all be removed by CCMSetup /Uninstall and can cause problems with installation or registration of the client in its new environment. It might be necessary to manually remove these settings if they are present. For more information, see [Manual removal of the Configuration Manager client](https://blogs.technet.microsoft.com/michaelgriswold/2013/01/02/manual-removal-of-the-sccm-client/).
+    >If PC1 still has Configuration Manager registry settings that were applied by Group Policy, startup scripts, or other policies in its previous domain, these might not all be removed by CCMSetup /Uninstall and can cause problems with installation or registration of the client in its new environment. It might be necessary to manually remove these settings if they are present. For more information, see [Manual removal of the Configuration Manager client](/archive/blogs/michaelgriswold/manual-removal-of-the-sccm-client).
 
 9. On PC1, temporarily stop Windows Update from queuing items for download and clear all BITS jobs from the queue. From an elevated command prompt, type:
 
@@ -909,7 +907,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
 14. Click the **Site** tab, click **Configure Settings**, and click **Find Site**. The client will report that it has found the PS1 site. See the following example:
 
-    ![site](images/configmgr-site.png)
+    ![site.](images/configmgr-site.png)
 
     If the client is not able to find the PS1 site, review any error messages that are displayed in **C:\Windows\CCM\Logs\ClientIDManagerStartup.log** and **LocationServices.log**. A common reason the site code is not located is because a previous configuration exists. For example, if a previous site code is configured at **HKLM\SOFTWARE\Microsoft\SMS\Mobile Client\GPRequestedSiteAssignmentCode** this must be deleted or updated.
 
@@ -917,7 +915,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
 16. Click **All Desktop and Server Clients** and verify that the computer account for PC1 is displayed here with **Yes** and **Active** in the **Client** and **Client Activity** columns, respectively. You might have to refresh the view and wait few minutes for the client to appear here.  See the following example:
 
-    ![client](images/configmgr-client.png)
+    ![client.](images/configmgr-client.png)
 
     >It might take several minutes for the client to fully register with the site and complete a client check. When it is complete you will see a green check mark over the client icon as shown above. To refresh the client, click it and then press **F5** or right-click the client and click **Refresh**.
 
@@ -978,7 +976,7 @@ Set-VMNetworkAdapter -VMName PC4 -StaticMacAddress 00-15-5D-83-26-FF
 
 11. Click **Device Collections** and then double-click **Install Windows 10 Enterprise x64**. Verify that **PC4** is displayed in the collection. You might have to update and refresh the collection, or wait a few minutes, but do not proceed until PC4 is available. See the following example:
 
-    ![collection](images/configmgr-collection.png)
+    ![collection.](images/configmgr-collection.png)
 
 ### Create a device collection for PC1
 
@@ -1028,7 +1026,7 @@ In the Configuration Manager console, in the Software Library workspace under Op
 
 4. In the Software Center , click **Available Software** and then select the **Replace Task Sequence** checkbox. See the following example:
 
-    ![software](images/configmgr-software-cntr.png)
+    ![software.](images/configmgr-software-cntr.png)
 
     >If you do not see any available software, try running step #2 again to start the Machine Policy Retrieval & Evaluation Cycle. You should see an alert that new software is available.
 
@@ -1066,17 +1064,17 @@ In the Configuration Manager console, in the Software Library workspace under Op
 3. On PC1, in the notification area, click **New software is available** and then click **Open Software Center**.
 4. In the Software Center, click **Operating Systems**, click **Windows 10 Enterprise x64**, click **Install** and then click **INSTALL OPERATING SYSTEM**. See the following example:
 
-    ![installOS](images/configmgr-install-os.png)
+    ![installOS.](images/configmgr-install-os.png)
 
     The computer will restart several times during the installation process. Installation includes downloading updates, reinstalling the Configuration Manager Client Agent, and restoring the user state. You can view status of the installation in the Configuration Manager console by accessing the Monitoring workspace, clicking **Deployments**, and then double-clicking the deployment associated with the **Install Windows 10 Enterprise x64** collection. Under **Asset Details**, right-click the device and then click **More Details**. Click the **Status** tab to see a list of tasks that have been performed.  See the following example:
 
-    ![asset](images/configmgr-asset.png)
+    ![asset.](images/configmgr-asset.png)
 
     You can also monitor progress of the installation by using the MDT deployment workbench and viewing the **Monitoring** node under **Deployment Shares\MDT Production**.
 
     When installation has completed, sign in using the contoso\administrator account or the contoso\user1 account and verify that applications and settings have been successfully backed up and restored to your new Windows 10 Enterprise operating system.
 
-    ![post-refresh](images/configmgr-post-refresh.png) 
+    ![post-refresh.](images/configmgr-post-refresh.png) 
 
 ## Related Topics
 

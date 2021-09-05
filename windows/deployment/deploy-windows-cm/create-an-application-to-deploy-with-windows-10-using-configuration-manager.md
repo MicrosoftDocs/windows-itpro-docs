@@ -1,6 +1,6 @@
 ---
 title: Create an app to deploy with Windows 10 using Configuration Manager
-description: Microsoft Microsoft Endpoint Configuration Manager supports deploying applications as part of the Windows 10 deployment process.
+description: Microsoft Microsoft Endpoint Manager supports deploying applications as part of the Windows 10 deployment process.
 ms.assetid: 2dfb2f39-1597-4999-b4ec-b063e8a8c90c
 ms.reviewer: 
 manager: laurawi
@@ -22,7 +22,7 @@ ms.topic: article
 
 -   Windows 10
 
-Microsoft Endpoint Configuration Manager supports deploying applications as part of the Windows 10 deployment process. In this section, you create an application in Microsoft Endpoint Configuration Manager that you later configure the task sequence to use.
+Microsoft Endpoint Manager supports deploying applications as part of the Windows 10 deployment process. In this section, you create an application in Microsoft Endpoint Manager that you later configure the task sequence to use.
 
 For the purposes of this guide, we will use one server computer: CM01.
 - CM01 is a domain member server and Configuration Manager software distribution point. In this guide CM01 is a standalone primary site server. CM01 is running Windows Server 2019. However, an earlier, supported version of Windows Server can also be used. 
@@ -54,7 +54,7 @@ On **CM01**:
     * Type: Windows Installer (\*.msi file)
     * Location: \\\\CM01\\Sources$\\Software\\Adobe\\AcroRead.msi
 
-    ![The Create Application Wizard](../images/mdt-06-fig20.png "The Create Application Wizard")
+    ![The Create Application Wizard.](../images/mdt-06-fig20.png "The Create Application Wizard")
 
     The Create Application Wizard
 
@@ -65,7 +65,7 @@ On **CM01**:
   >[!NOTE]
   >Because it is not possible to reference an application deployment type in the task sequence, you should have a single deployment type for applications deployed by the task sequence. If you are deploying applications via both the task sequence and normal application deployment, and you have multiple deployment types, you should have two applications of the same software. In this section, you add the "OSD Install" suffix to applications that are deployed via the task sequence. If using packages, you can still reference both package and program in the task sequence.
   
-  ![Add the OSD Install suffix to the application name](../images/mdt-06-fig21.png "Add the OSD Install suffix to the application name")
+  ![Add the OSD Install suffix to the application name.](../images/mdt-06-fig21.png "Add the OSD Install suffix to the application name")
   
   Add the "OSD Install" suffix to the application name
 
@@ -80,7 +80,7 @@ Next, see [Add drivers to a Windows 10 deployment with Windows PE using Configur
 [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
 [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
 [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Create a task sequence with Configuration Manager and MDT](./create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
 [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
 [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>

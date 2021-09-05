@@ -40,7 +40,7 @@ There are three possible scenarios for volume activation of Windows 10 or Windo
 - Host KMS on a computer running Windows Server 2012 R2
 - Host KMS on a computer running an earlier version of Windows
 
-Check out [Windows 10 Volume Activation Tips](https://blogs.technet.microsoft.com/askcore/2015/09/15/windows-10-volume-activation-tips/).
+Check out [Windows 10 Volume Activation Tips](/archive/blogs/askcore/windows-10-volume-activation-tips).
 
 ## Key Management Service in Windows 10
 
@@ -60,7 +60,7 @@ To activate, use the slmgr.vbs command. Open an elevated command prompt and run 
   3. Follow the voice prompts and write down the responded 48-digit confirmation ID for OS activation.
   4. Run `slmgr.vbs /atp \<confirmation ID\>`.
 
-For more information, see the information for Windows 7 in [Deploy KMS Activation](https://go.microsoft.com/fwlink/p/?LinkId=717032).
+For more information, see the information for Windows 7 in [Deploy KMS Activation](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn502531(v=ws.11)).
 
 ## Key Management Service in Windows Server 2012 R2
 
@@ -72,7 +72,7 @@ Installing a KMS host key on a computer running Windows Server allows you to act
 This scenario is commonly used in larger organizations that do not find the overhead of using a server a burden.
 
 > [!NOTE]
-> If you receive error 0xC004F015 when trying to activate Windows 10 Enterprise, see [KB 3086418](https://go.microsoft.com/fwlink/p/?LinkId=620687).
+> If you receive error 0xC004F015 when trying to activate Windows 10 Enterprise, see [KB 3086418](/troubleshoot/windows-server/deployment/error-0xc004f015-activate-windows-10).
 
 ### Configure KMS in Windows Server 2012 R2
 
@@ -80,39 +80,39 @@ This scenario is commonly used in larger organizations that do not find the over
 2. Launch Server Manager.
 3. Add the Volume Activation Services role, as shown in Figure 4.
 
-   ![Adding the Volume Activation Services role in Server Manager](../images/volumeactivationforwindows81-04.jpg)
+   ![Adding the Volume Activation Services role in Server Manager.](../images/volumeactivationforwindows81-04.jpg)
 
    **Figure 4**. Adding the Volume Activation Services role in Server Manager
 
 4. When the role installation is complete, click the link to launch the Volume Activation Tools (Figure 5).
 
-   ![Launching the Volume Activation Tools](../images/volumeactivationforwindows81-05.jpg)
+   ![Launching the Volume Activation Tools.](../images/volumeactivationforwindows81-05.jpg)
 
    **Figure 5**. Launching the Volume Activation Tools
 
 5. Select the **Key Management Service (KMS)** option, and specify the computer that will act as the KMS host (Figure 6).
       This can be the same computer on which you installed the role or another computer. For example, it can be a client computer running Windows 10.
 
-   ![Configuring the computer as a KMS host](../images/volumeactivationforwindows81-06.jpg)
+   ![Configuring the computer as a KMS host.](../images/volumeactivationforwindows81-06.jpg)
 
    **Figure 6**. Configuring the computer as a KMS host
 
 6. Install your KMS host key by typing it in the text box, and then click **Commit** (Figure 7).
 
-   ![Installing your KMS host key](../images/volumeactivationforwindows81-07.jpg)
+   ![Installing your KMS host key.](../images/volumeactivationforwindows81-07.jpg)
 
    **Figure 7**. Installing your KMS host key
 
 7. If asked to confirm replacement of an existing key, click **Yes**.
 8. After the product key is installed, you must activate it. Click **Next** (Figure 8).
 
-   ![Activating the software](../images/volumeactivationforwindows81-08.jpg)
+   ![Activating the software.](../images/volumeactivationforwindows81-08.jpg)
 
    **Figure 8**. Activating the software
 
    The KMS key can be activated online or by phone. See Figure 9.
 
-   ![Choosing to activate online](../images/volumeactivationforwindows81-09.jpg)
+   ![Choosing to activate online.](../images/volumeactivationforwindows81-09.jpg)
 
    **Figure 9**. Choosing to activate online
 
@@ -135,7 +135,7 @@ To verify that KMS volume activation works, complete the following steps:
 
    The **/dlv** command displays the detailed licensing information. The response should return an error that states that the KMS activation count is too low. This confirms that KMS is functioning correctly, even though the client has not been activated.
 
-For more information about the use and syntax of slmgr.vbs, see [Slmgr.vbs Options](https://docs.microsoft.com/windows-server/get-started/activation-slmgr-vbs-options).
+For more information about the use and syntax of slmgr.vbs, see [Slmgr.vbs Options](/windows-server/get-started/activation-slmgr-vbs-options).
 
 ## Key Management Service in earlier versions of Windows
 

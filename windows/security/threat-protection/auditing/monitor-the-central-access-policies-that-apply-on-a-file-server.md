@@ -4,7 +4,7 @@ description: Learn how to monitor changes to the central access policies that ap
 ms.assetid: 126b051e-c20d-41f1-b42f-6cff24dcf20c
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Monitor the central access policies that apply on a file server
@@ -24,7 +25,7 @@ ms.date: 04/19/2017
 
 This article describes how to monitor changes to the central access policies (CAPs) that apply to a file server when using advanced security auditing options to monitor dynamic access control objects. CAPs are created on a domain controller and then applied to file servers through Group Policy management.
 
-Use the following procedures to configure and verify security auditing settings that are used to monitor changes to the set of CAPs on a file server. The following procedures assume that you have configured and deployed dynamic access control, including CAPs and claims, in your network. If you have not yet deployed dynamic access control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](https://technet.microsoft.com/library/hh846167.aspx).
+Use the following procedures to configure and verify security auditing settings that are used to monitor changes to the set of CAPs on a file server. The following procedures assume that you have configured and deployed dynamic access control, including CAPs and claims, in your network. If you have not yet deployed dynamic access control in your network, see [Deploy a Central Access Policy (Demonstration Steps)](/windows-server/identity/solution-guides/deploy-a-central-access-policy--demonstration-steps-).
 
 **To configure settings to monitor changes to central access policies**
 

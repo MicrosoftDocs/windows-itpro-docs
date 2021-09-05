@@ -1,10 +1,10 @@
 ---
-title: AppLocker policy use scenarios (Windows 10)
+title: AppLocker policy use scenarios (Windows)
 description: This topic for the IT professional lists the various application control scenarios in which AppLocker policies can be effectively implemented.
 ms.assetid: 33f71578-89f0-4063-ac04-cf4f4ca5c31f
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # AppLocker policy use scenarios
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional lists the various application control scenarios in which AppLocker policies can be effectively implemented.
 
@@ -33,7 +39,7 @@ AppLocker can help you improve the management of application control and the mai
 
 2.  **Protection against unwanted software**
 
-    AppLocker has the ability to deny apps from running simply by excluding them from the list of allowed apps per business group or user. If an app is not specifically identified by its publisher, installation path, or file hash, the attempt to run the application fails.
+    AppLocker has the ability to deny apps from running simply by excluding them from the list of allowed apps per business group or user. If an app is not identified by its publisher, installation path, or file hash, the attempt to run the application fails.
 
 3.  **Licensing conformance**
 

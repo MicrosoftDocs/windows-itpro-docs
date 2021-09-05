@@ -26,18 +26,18 @@ The following is a list of functions performed by the Device HealthAttestation C
 ## Terms
 
 **TPM (Trusted Platform Module)**
-<p style="margin-left: 20px">TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption and signing. </p>
+<p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption and signing. </p>
 
 **DHA (Device HealthAttestation) feature**
-<p style="margin-left: 20px">The Device HealthAttestation (DHA) feature enables enterprise IT administrators to monitor the security posture of managed devices remotely by using hardware (TPM) protected and attested data via a tamper-resistant and tamper-evident communication channel.</p>
+<p>The Device HealthAttestation (DHA) feature enables enterprise IT administrators to monitor the security posture of managed devices remotely by using hardware (TPM) protected and attested data via a tamper-resistant and tamper-evident communication channel.</p>
 
 **DHA-Enabled device (Device HealthAttestation enabled device)**
-<p style="margin-left: 20px">A Device HealthAttestation enabled (DHA-Enabled) device is a computing device (phone, desktop, laptop, tablet, server) that runs Windows 10 and supports TPM version 1.2 or 2.0.</p>
+<p>A Device HealthAttestation enabled (DHA-Enabled) device is a computing device (phone, desktop, laptop, tablet, server) that runs Windows 10 and supports TPM version 1.2 or 2.0.</p>
 
 **DHA-Session (Device HealthAttestation session)**
-<p style="margin-left: 20px">The Device HealthAttestation session (DHA-Session) describes the end-to-end communication flow that is performed in one device health attestation session.</p>
+<p>The Device HealthAttestation session (DHA-Session) describes the end-to-end communication flow that is performed in one device health attestation session.</p>
 
-<p style="margin-left: 20px">The following list of transactions are performed in one DHA-Session:</p>
+<p>The following list of transactions is performed in one DHA-Session:</p>
 <ul>
 <li>DHA-CSP and DHA-Service communication:
 <ul><li>DHA-CSP forwards device boot data (DHA-BootData) to DHA-Service</li>
@@ -57,7 +57,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 
 <img src="images/healthattestation_1.png" alt="healthattestation session diagram"/><br/>
 <strong>DHA session data (Device HealthAttestation session data)</strong>
-<p style="margin-left: 20px">The following list of data is produced or consumed in one DHA-Transaction:</p>
+<p>The following list of data is produced or consumed in one DHA-Transaction:</p>
 <ul>
 <li>DHA-BootData: the device boot data (TCG logs, PCR values, device/TPM certificate, boot and TPM counters) that are required for validating device boot health.</li>
 <li>DHA-EncBlob: an encrypted summary report that DHA-Service issues to a device after reviewing the DHA-BootData it receives from devices.</li>
@@ -73,9 +73,9 @@ The following is a list of functions performed by the Device HealthAttestation C
 </ul>
 
 <strong>DHA-Enabled MDM (Device HealthAttestation enabled device management solution)</strong>
-<p style="margin-left: 20px">Device HealthAttestation enabled (DHA-Enabled) device management solution is a device management tool that is integrated with the DHA feature.</p>
-<p style="margin-left: 20px">DHA-Enabled device management solutions enable enterprise IT managers to raise the security protection bar for their managed devices based on hardware (TPM) protected data that can be trusted even if a device is compromised by advanced security threats or running a malicious (jailbroken) operating system.</p>
-<p style="margin-left: 20px">The following list of operations are performed by DHA-Enabled-MDM:</p>
+<p>Device HealthAttestation enabled (DHA-Enabled) device management solution is a device management tool that is integrated with the DHA feature.</p>
+<p>DHA-Enabled device management solutions enable enterprise IT managers to raise the security protection bar for their managed devices based on hardware (TPM) protected data that can be trusted even if a device is compromised by advanced security threats or running a malicious (jailbroken) operating system.</p>
+<p>The following list of operations is performed by DHA-Enabled-MDM</p>
 <ul>
 <li>Enables the DHA feature on a DHA-Enabled device</li>
 <li>Issues device health attestation requests to enrolled/managed devices</li>
@@ -84,8 +84,8 @@ The following is a list of functions performed by the Device HealthAttestation C
 </ul>
 
 <strong>DHA-CSP (Device HealthAttestation Configuration Service Provider)</strong>
-<p style="margin-left: 20px">The Device HealthAttestation Configuration Service Provider (DHA-CSP) uses a device’s TPM and firmware to measure critical security properties of the device’s BIOS and Windows boot, such that even on a system infected with kernel level malware or a rootkit, these properties cannot be spoofed.</p>
-<p style="margin-left: 20px">The following list of operations are performed by DHA-CSP:</p>
+<p>The Device HealthAttestation Configuration Service Provider (DHA-CSP) uses a device’s TPM and firmware to measure critical security properties of the device’s BIOS and Windows boot, such that even on a system infected with kernel level malware or a rootkit, these properties cannot be spoofed.</p>
+<p>The following list of operations is performed by DHA-CSP:</p>
 <ul>
 <li>Collects device boot data (DHA-BootData) from a managed device</li>
 <li>Forwards DHA-BootData to Device Health Attestation Service (DHA-Service)</li>
@@ -94,17 +94,17 @@ The following is a list of functions performed by the Device HealthAttestation C
 </ul>
 
 <strong>DHA-Service (Device HealthAttestation Service)</strong>
-<p style="margin-left: 20px">Device HealthAttestation Service (DHA-Service) validates the data it receives from DHA-CSP and issues a highly trusted hardware (TPM) protected report (DHA-Report) to DHA-Enabled device management solutions through a tamper resistant and tamper evident communication channel.</p>
+<p>Device HealthAttestation Service (DHA-Service) validates the data it receives from DHA-CSP and issues a highly trusted hardware (TPM) protected report (DHA-Report) to DHA-Enabled device management solutions through a tamper resistant and tamper evident communication channel.</p>
 
-<p style="margin-left: 20px">DHA-Service is available in 2 flavors: “DHA-Cloud” and “DHA-Server2016”. DHA-Service supports a variety of implementation scenarios including cloud, on premises, air-gapped, and hybrid scenarios.</p>
-<p style="margin-left: 20px">The following list of operations are performed by DHA-Service:</p>
+<p>DHA-Service is available in 2 flavors: “DHA-Cloud” and “DHA-Server2016”. DHA-Service supports a variety of implementation scenarios including cloud, on premises, air-gapped, and hybrid scenarios.</p>
+<p>The following list of operations is performed by DHA-Service:</p>
 
 - Receives device boot data (DHA-BootData) from a DHA-Enabled device</li>
 - Forwards DHA-BootData to Device Health Attestation Service (DHA-Service) </li>
 - Receives an encrypted blob (DHA-EncBlob) from DHA-Service, and stores it in a local cache on the device</li>
 - Receives attestation requests (DHA-Requests) from a DHA-Enabled-MDM, and replies with a device health report (DHA-Report)</li>
 
-![healthattestation service diagram](images/healthattestation_2.png)
+![healthattestation service diagram.](images/healthattestation_2.png)
 
 <table> 
 <col width="20%" />
@@ -120,13 +120,13 @@ The following is a list of functions performed by the Device HealthAttestation C
 </thead>
 <tbody>
 <tr class="even">
-<td style="vertical-align:top">Device Health Attestation – Cloud <p>(DHA-Cloud)</p></td>
-<td style="vertical-align:top"><p>DHA-Cloud is a Microsoft owned and operated DHA-Service that is:</p>
+<td>Device Health Attestation – Cloud <p>(DHA-Cloud)</p></td>
+<td><p>DHA-Cloud is a Microsoft owned and operated DHA-Service that is:</p>
 <ul>
 <li>Available in Windows for free</li>
 <li>Running on a high-availability and geo-balanced cloud infrastructure </li>
 <li>Supported by most DHA-Enabled device management solutions as the default device attestation service provider</li>
-<li>Accessible to all enterprise managed devices via following:
+<li>Accessible to all enterprise-managed devices via following:
 <ul>
 <li>FQDN = has.spserv.microsoft.com) port</li>
 <li>Port = 443</li>
@@ -134,17 +134,17 @@ The following is a list of functions performed by the Device HealthAttestation C
 </ul> 
 </li>
 </ul>
-<td style="vertical-align:top">No cost</td>
+<td>No cost</td>
 </td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">Device Health Attestation – On Premise<p>(DHA-OnPrem)</p></td>
-<td style="vertical-align:top"><p>DHA-OnPrem refers to DHA-Service that is running on premises:</p>
+<td>Device Health Attestation – On Premise<p>(DHA-OnPrem)</p></td>
+<td><p>DHA-OnPrem refers to DHA-Service that is running on premises:</p>
 <ul>
 <li>Offered to Windows Server 2016 customer (no added licensing cost for enabling/running DHA-Service) </li>
 <li>Hosted on an enterprise owned and managed server device/hardware</li>
 <li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios</li>
-<li><p>Accessible to all enterprise managed devices via following:</p>
+<li><p>Accessible to all enterprise-managed devices via following:</p>
 <ul>
 <li>FQDN = (enterprise assigned)</li>
 <li>Port = (enterprise assigned)</li>
@@ -152,15 +152,15 @@ The following is a list of functions performed by the Device HealthAttestation C
 </ul>
 </li>
 </ul></td>
-<td style="vertical-align:top">The operation cost of running one or more instances of Server 2016 on-premises.</td>
+<td>The operation cost of running one or more instances of Server 2016 on-premises.</td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">Device Health Attestation - Enterprise Managed Cloud<p>(DHA-EMC)</p></td>
-<td style="vertical-align:top"><p>DHA-EMC refers to an enterprise managed DHA-Service that is running as a virtual host/service on a Windows Server 2016 compatible - enterprise managed cloud service, such as Microsoft Azure.</p>
+<td>Device Health Attestation - Enterprise-Managed Cloud<p>(DHA-EMC)</p></td>
+<td><p>DHA-EMC refers to an enterprise-managed DHA-Service that is running as a virtual host/service on a Windows Server 2016 compatible - enterprise-managed cloud service, such as Microsoft Azure.</p>
 <ul>
 <li>Offered to Windows Server 2016 customers with no additional licensing cost (no added licensing cost for enabling/running DHA-Service)</li>
 <li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios </li>
-<li><p>Accessible to all enterprise managed devices via following:</p>
+<li><p>Accessible to all enterprise-managed devices via following:</p>
 <ul>
 <li>FQDN = (enterprise assigned)</li>
 <li>Port = (enterprise assigned)</li>
@@ -168,7 +168,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 </ul>
 </li>
 </ul></td>
-<td style="vertical-align:top">The operation cost of running Server 2016 on a compatible cloud service, such as Microsoft Azure.</td>
+<td>The operation cost of running Server 2016 on a compatible cloud service, such as Microsoft Azure.</td>
 </tr>
 </tbody>
 </table>
@@ -176,24 +176,36 @@ The following is a list of functions performed by the Device HealthAttestation C
 ## CSP diagram and node descriptions  
 
 
-The following diagram shows the Device HealthAttestation configuration service provider in tree format.  
-
-![healthattestation csp](images/provisioning-csp-healthattestation.png)
-
+The following shows the Device HealthAttestation configuration service provider in tree format.  
+```
+./Vendor/MSFT
+HealthAttestation
+----VerifyHealth
+----Status
+----ForceRetrieve
+----Certificate
+----Nonce
+----CorrelationID
+----HASEndpoint
+----TpmReadyStatus
+----CurrentProtocolVersion
+----PreferredMaxProtocolVersion
+----MaxSupportedProtocolVersion
+```
 <a href="" id="healthattestation"></a>**./Vendor/MSFT/HealthAttestation**  
-<p style="margin-left: 20px">The root node for the device HealthAttestation configuration service provider.</p>
+<p>The root node for the device HealthAttestation configuration service provider.</p>
 
 <a href="" id="verifyhealth"></a>**VerifyHealth** (Required)  
-<p style="margin-left: 20px">Notifies the device to prepare a device health verification request.</p>
+<p>Notifies the device to prepare a device health verification request.</p>
 
-<p style="margin-left: 20px">The supported operation is Execute.</p>
+<p>The supported operation is Execute.</p>
 
 <a href="" id="status"></a>**Status** (Required)  
-<p style="margin-left: 20px">Provides the current status of the device health request.</p>
+<p>Provides the current status of the device health request.</p>
 
-<p style="margin-left: 20px">The supported operation is Get.</p>
+<p>The supported operation is Get.</p>
 
-<p style="margin-left: 20px">The following list shows some examples of supported values. For the complete list of status see <a href="#device-healthattestation-csp-status-and-error-codes" data-raw-source="[Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes)">Device HealthAttestation CSP status and error codes</a>.</p>
+<p>The following list shows some examples of supported values. For the complete list of status see <a href="#device-healthattestation-csp-status-and-error-codes" data-raw-source="[Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes)">Device HealthAttestation CSP status and error codes</a>.</p>
 
 -   0 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_UNINITIALIZED): DHA-CSP is preparing a request to get a new DHA-EncBlob from DHA-Service
 -   1 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_REQUESTED): DHA-CSP is waiting for the DHA-Service to respond back, and issue a DHA-EncBlob to the device
@@ -201,35 +213,35 @@ The following diagram shows the Device HealthAttestation configuration service p
 -   3 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_COMPLETE): DHA-Data is ready for pick up
 
 <a href="" id="forceretrieve"></a>**ForceRetrieve** (Optional)  
-<p style="margin-left: 20px">Instructs the client to initiate a new request to DHA-Service, and get a new DHA-EncBlob (a summary of the boot state that is issued by DHA-Service). This option should only be used if the MDM server enforces a certificate freshness policy, which needs to force a device to get a fresh encrypted blob from DHA-Service.</p>
+<p>Instructs the client to initiate a new request to DHA-Service, and get a new DHA-EncBlob (a summary of the boot state that is issued by DHA-Service). This option should only be used if the MDM server enforces a certificate freshness policy, which needs to force a device to get a fresh encrypted blob from DHA-Service.</p>
 
-<p style="margin-left: 20px">Boolean value. The supported operation is Replace.</p>
+<p>Boolean value. The supported operation is Replace.</p>
 
 <a href="" id="certificate"></a>**Certificate** (Required)  
-<p style="margin-left: 20px">Instructs the DHA-CSP to forward DHA-Data to the MDM server.</p>
+<p>Instructs the DHA-CSP to forward DHA-Data to the MDM server.</p>
 
-<p style="margin-left: 20px">Value type is b64.The supported operation is Get.</p>
+<p>Value type is b64.The supported operation is Get.</p>
 
 <a href="" id="nonce"></a>**Nonce** (Required)  
-<p style="margin-left: 20px">Enables MDMs to protect the device health attestation communications from man-in-the-middle type (MITM) attacks with a crypt-protected random value that is generated by the MDM Server.</p>
+<p>Enables MDMs to protect the device health attestation communications from man-in-the-middle type (MITM) attacks with a crypt-protected random value that is generated by the MDM Server.</p>
 
-<p style="margin-left: 20px">The nonce is in hex format, with a minimum size of 8 bytes, and a maximum size of 32 bytes.</p>
+<p>The nonce is in hex format, with a minimum size of 8 bytes, and a maximum size of 32 bytes.</p>
 
-<p style="margin-left: 20px">The supported operations are Get and Replace.</p>
+<p>The supported operations are Get and Replace.</p>
 
 <a href="" id="correlationid"></a>**CorrelationId** (Required)  
-<p style="margin-left: 20px">Identifies a unique device health attestation session. CorrelationId is used to correlate DHA-Service logs with the MDM server events and Client event logs for debug and troubleshooting.</p>
+<p>Identifies a unique device health attestation session. CorrelationId is used to correlate DHA-Service logs with the MDM server events and Client event logs for debug and troubleshooting.</p>
 
-<p style="margin-left: 20px">Value type is integer, the minimum value is - 2,147,483,648 and the maximum value is 2,147,483,647. The supported operation is Get.</p>
+<p>Value type is integer, the minimum value is - 2,147,483,648 and the maximum value is 2,147,483,647. The supported operation is Get.</p>
 
 <a href="" id="hasendpoint"></a>**HASEndpoint** (Optional)
-<p style="margin-left: 20px">Identifies the fully qualified domain name (FQDN) of the DHA-Service that is assigned to perform attestation. If an FQDN is not assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.</p>
+<p>Identifies the fully qualified domain name (FQDN) of the DHA-Service that is assigned to perform attestation. If an FQDN is not assigned, DHA-Cloud (Microsoft owned and operated cloud service) will be used as the default attestation service.</p>
 
-<p style="margin-left: 20px">Value type is string. The supported operations are Get and Replace. The default value is has.spserv.microsoft.com.</p>
+<p>Value type is string. The supported operations are Get and Replace. The default value is has.spserv.microsoft.com.</p>
 
 <a href="" id="tpmreadystatus"></a>**TpmReadyStatus** (Required)
-<p style="margin-left: 20px">Added in Windows 10, version 1607 March service release. Returns a bitmask of information describing the state of TPM. It indicates whether the TPM of the device is in a ready and trusted state.</p>
-<p style="margin-left: 20px">Value type is integer. The supported operation is Get.</p>
+<p>Added in Windows 10, version 1607 March service release. Returns a bitmask of information describing the state of TPM. It indicates whether the TPM of the device is in a ready and trusted state.</p>
+<p>Value type is integer. The supported operation is Get.</p>
 
 ## **DHA-CSP integration steps**
 
@@ -306,13 +318,13 @@ SSL-Session:
 There are three types of DHA-Service:
 - Device Health Attestation – Cloud (owned and operated by Microsoft)
 - Device Health Attestation – On Premise (owned and operated by an enterprise, runs on Windows Server 2016 on premises)
-- Device Health Attestation - Enterprise Managed Cloud (owned and operated by an enterprise, runs on Windows Server 2016 compatible enterprise managed cloud)
+- Device Health Attestation - Enterprise-Managed Cloud (owned and operated by an enterprise, runs on Windows Server 2016 compatible enterprise-managed cloud)
 
 DHA-Cloud is the default setting. No further action is required if an enterprise is planning to use Microsoft DHA-Cloud as the trusted DHA-Service provider.
 
 For DHA-OnPrem & DHA-EMC scenarios, send a SyncML command to the HASEndpoint node to instruct a managed device to communicate with the enterprise trusted DHA-Service. 
 
-The following example shows a sample call that instructs a managed device to communicate with an enterprise managed DHA-Service.
+The following example shows a sample call that instructs a managed device to communicate with an enterprise-managed DHA-Service.
 
 ```xml
 <Replace>
@@ -490,20 +502,20 @@ The following list of data points are verified by the DHA-Service in DHA-Report 
 - [HealthStatusMismatchFlags](#healthstatusmismatchflags)
 
 \*  TPM 2.0 only   
-**  Reports if Bitlocker was enabled during initial boot.    
-*** The “Hybrid Resume” must be disabled on the device. Reports 1st party ELAM “Defender” was loaded during boot.  
+\*\*  Reports if BitLocker was enabled during initial boot.    
+\*\*\* The “Hybrid Resume” must be disabled on the device. Reports 1st party ELAM “Defender” was loaded during boot.  
 
 Each of these are described in further detail in the following sections, along with the recommended actions to take.
 
 <a href="" id="issued"></a>**Issued**
-<p style="margin-left: 20px">The date and time DHA-report was evaluated or issued to MDM.</p>
+<p>The date and time DHA-report was evaluated or issued to MDM.</p>
 
 <a href="" id="aikpresent"></a>**AIKPresent**  
-<p style="margin-left: 20px">When an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate. It can be trusted more than a device that doesn’t have an EK certificate.</p>
+<p>When an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate. It can be trusted more than a device that doesn’t have an EK certificate.</p>
 
-<p style="margin-left: 20px">If AIKPresent = True (1), then allow access.</p>
+<p>If AIKPresent = True (1), then allow access.</p>
 
-<p style="margin-left: 20px">If AIKPresent = False (0), then take one of the following actions that align with your enterprise policies:</p>
+<p>If AIKPresent = False (0), then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI assets
@@ -511,40 +523,40 @@ Each of these are described in further detail in the following sections, along w
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="resetcount"></a>**ResetCount** (Reported only for devices that support TPM 2.0)
-<p style="margin-left: 20px">This attribute reports the number of times a PC device has hibernated or resumed.</p>
+<p>This attribute reports the number of times a PC device has hibernated or resumed.</p>
 
 <a href="" id="restartcount"></a>**RestartCount** (Reported only for devices that support TPM 2.0)
-<p style="margin-left: 20px">This attribute reports the number of times a PC device has rebooted</p>
+<p>This attribute reports the number of times a PC device has rebooted</p>
 
 <a href="" id="deppolicy"></a>**DEPPolicy**  
-<p style="margin-left: 20px">A device can be trusted more if the DEP Policy is enabled on the device.</p>
+<p>A device can be trusted more if the DEP Policy is enabled on the device.</p>
 
-<p style="margin-left: 20px">Data Execution Prevention (DEP) Policy defines is a set of hardware and software technologies that perform additional checks on memory to help prevent malicious code from running on a system. Secure boot allows a limited list on x86/amd64 and on ARM NTOS locks it to on.</p>
+<p>Data Execution Prevention (DEP) Policy defines is a set of hardware and software technologies that perform additional checks on memory to help prevent malicious code from running on a system. Secure boot allows a limited list on x86/amd64 and on ARM NTOS locks it to on.</p>
 
-<p style="margin-left: 20px">DEPPolicy can be disabled or enabled by using the following commands in WMI or a PowerShell script:</p>
+<p>DEPPolicy can be disabled or enabled by using the following commands in WMI or a PowerShell script:</p>
 
 -   To disable DEP, type **bcdedit.exe /set {current} nx AlwaysOff**
 -   To enable DEP, type **bcdedit.exe /set {current} nx AlwaysOn**
 
-<p style="margin-left: 20px">If DEPPolicy = 1 (On), then allow access.</p>
+<p>If DEPPolicy = 1 (On), then allow access.</p>
 
-<p style="margin-left: 20px">If DEPPolicy = 0 (Off), then take one of the following actions that align with your enterprise policies:</p>
+<p>If DEPPolicy = 0 (Off), then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI assets
 -   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a devices past activities and trust history.
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
-<a href="" id="bitlockerstatus"></a>**BitlockerStatus** (at boot time) 
-<p style="margin-left: 20px">When Bitlocker is reported &quot;on&quot; at boot time, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</p>
+<a href="" id="bitlockerstatus"></a>**BitLockerStatus** (at boot time) 
+<p>When BitLocker is reported &quot;on&quot; at boot time, the device is able to protect data that is stored on the drive from unauthorized access, when the system is turned off or goes to hibernation.</p>
 
-<p style="margin-left: 20px">Windows BitLocker Drive Encryption, encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen.</p>
+<p>Windows BitLocker Drive Encryption, encrypts all data stored on the Windows operating system volume. BitLocker uses the TPM to help protect the Windows operating system and user data and helps to ensure that a computer is not tampered with, even if it is left unattended, lost, or stolen.</p>
 
-<p style="margin-left: 20px">If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer.</p>
+<p>If the computer is equipped with a compatible TPM, BitLocker uses the TPM to lock the encryption keys that protect the data. As a result, the keys cannot be accessed until the TPM has verified the state of the computer.</p>
 
-<p style="margin-left: 20px">If BitLockerStatus = 1 (On), then allow access.</p>
+<p>If BitLockerStatus = 1 (On), then allow access.</p>
 
-<p style="margin-left: 20px">If BitLockerStatus = 0 (Off), then take one of the following actions that align with your enterprise policies:</p>
+<p>If BitLockerStatus = 0 (Off), then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI assets
@@ -552,11 +564,11 @@ Each of these are described in further detail in the following sections, along w
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="bootmanagerrevlistversion"></a>**BootManagerRevListVersion**
-<p style="margin-left: 20px">This attribute indicates the version of the Boot Manager that is running on the device, to allow you to track and manage the security of the boot sequence/environment.</p>
+<p>This attribute indicates the version of the Boot Manager that is running on the device, to allow you to track and manage the security of the boot sequence/environment.</p>
 
-<p style="margin-left: 20px">If BootManagerRevListVersion = [CurrentVersion], then allow access.</p>
+<p>If BootManagerRevListVersion = [CurrentVersion], then allow access.</p>
 
-<p style="margin-left: 20px">If BootManagerRevListVersion != [CurrentVersion], then take one of the following actions that align with your enterprise policies:</p>
+<p>If BootManagerRevListVersion != [CurrentVersion], then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI and MBI assets
@@ -564,11 +576,11 @@ Each of these are described in further detail in the following sections, along w
 -   Trigger a corrective action, such as such as informing the technical support team to contact the owner investigate the issue.
 
 <a href="" id="codeintegrityrevlistversion"></a>**CodeIntegrityRevListVersion**
-<p style="margin-left: 20px">This attribute indicates the version of the code that is performing integrity checks during the boot sequence. Using this attribute can help you detect if the device is running the latest version of the code that performs integrity checks, or if it is exposed to security risks (revoked) and enforce an appropriate policy action.</p>
+<p>This attribute indicates the version of the code that is performing integrity checks during the boot sequence. Using this attribute can help you detect if the device is running the latest version of the code that performs integrity checks, or if it is exposed to security risks (revoked) and enforce an appropriate policy action.</p>
 
-<p style="margin-left: 20px">If CodeIntegrityRevListVersion = [CurrentVersion], then allow access.</p>
+<p>If CodeIntegrityRevListVersion = [CurrentVersion], then allow access.</p>
 
-<p style="margin-left: 20px">If CodeIntegrityRevListVersion != [CurrentVersion], then take one of the following actions that align with your enterprise policies:</p>
+<p>If CodeIntegrityRevListVersion != [CurrentVersion], then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI and MBI assets
@@ -576,11 +588,11 @@ Each of these are described in further detail in the following sections, along w
 -   Trigger a corrective action, such as such as informing the technical support team to contact the owner investigate the issue.
 
 <a href="" id="securebootenabled"></a>**SecureBootEnabled**  
-<p style="margin-left: 20px">When Secure Boot is enabled the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.</p>
+<p>When Secure Boot is enabled the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.</p>
 
-<p style="margin-left: 20px">If SecureBootEnabled = 1 (True), then allow access.</p>
+<p>If SecureBootEnabled = 1 (True), then allow access.</p>
 
-<p style="margin-left: 20px">If SecurebootEnabled = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
+<p>If SecurebootEnabled = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI assets
@@ -588,28 +600,28 @@ Each of these are described in further detail in the following sections, along w
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="bootdebuggingenabled"></a>**BootDebuggingEnabled**
-<p style="margin-left: 20px">Boot debug enabled points to a device that is used in development and testing. Devices that are used for test and development typically are less secure: the device may run unstable code, or be configured with fewer security restrictions that is required for testing and development.</p>
+<p>Boot debug enabled points to a device that is used in development and testing. Devices that are used for test and development typically are less secure: the device may run unstable code, or be configured with fewer security restrictions that is required for testing and development.</p>
 
-<p style="margin-left: 20px">Boot debugging can be disabled or enabled by using the following commands in WMI or a PowerShell script:</p>
+<p>Boot debugging can be disabled or enabled by using the following commands in WMI or a PowerShell script:</p>
 
 -   To disable boot debugging, type **bcdedit.exe /set {current} bootdebug off**
 -   To enable boot debugging, type **bcdedit.exe /set {current} bootdebug on**
 
-<p style="margin-left: 20px">If BootdebuggingEnabled = 0 (False), then allow access.</p>
+<p>If BootdebuggingEnabled = 0 (False), then allow access.</p>
 
-<p style="margin-left: 20px">If BootDebuggingEnabled = 1 (True), then take one of the following actions that align with your enterprise policies:</p>
+<p>If BootDebuggingEnabled = 1 (True), then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI assets
 -   Place the device in a watch list to monitor the device more closely for potential risks.
--   Trigger a corrective action, such as enabling VSM using WMI or a Powershell script.  
+-   Trigger a corrective action, such as enabling VSM using WMI or a PowerShell script.  
 
 <a href="" id="oskerneldebuggingenabled"></a>**OSKernelDebuggingEnabled**
-<p style="margin-left: 20px">OSKernelDebuggingEnabled points to a device that is used in development and testing. Devices that are used for test and development typically are less secure: they may run unstable code, or be configured with fewer security restrictions required for testing and development.</p>
+<p>OSKernelDebuggingEnabled points to a device that is used in development and testing. Devices that are used for test and development typically are less secure: they may run unstable code, or be configured with fewer security restrictions required for testing and development.</p>
 
-<p style="margin-left: 20px">If OSKernelDebuggingEnabled = 0 (False), then allow access.</p>
+<p>If OSKernelDebuggingEnabled = 0 (False), then allow access.</p>
 
-<p style="margin-left: 20px">If OSKernelDebuggingEnabled = 1 (True), then take one of the following actions that align with your enterprise policies:</p>
+<p>If OSKernelDebuggingEnabled = 1 (True), then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI assets
@@ -617,15 +629,15 @@ Each of these are described in further detail in the following sections, along w
 -   Trigger a corrective action, such as such as informing the technical support team to contact the owner investigate the issue.
 
 <a href="" id="codeintegrityenabled"></a>**CodeIntegrityEnabled**  
-<p style="margin-left: 20px">When code integrity is enabled, code execution is restricted to integrity verified code.</p>
+<p>When code integrity is enabled, code execution is restricted to integrity verified code.</p>
 
-<p style="margin-left: 20px">Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.</p>
+<p>Code integrity is a feature that validates the integrity of a driver or system file each time it is loaded into memory. Code integrity detects whether an unsigned driver or system file is being loaded into the kernel, or whether a system file has been modified by malicious software that is being run by a user account with administrator privileges.</p>
 
-<p style="margin-left: 20px">On x64-based versions of the operating system, kernel-mode drivers must be digitally signed.</p>
+<p>On x64-based versions of the operating system, kernel-mode drivers must be digitally signed.</p>
 
-<p style="margin-left: 20px">If CodeIntegrityEnabled = 1 (True), then allow access.</p>
+<p>If CodeIntegrityEnabled = 1 (True), then allow access.</p>
 
-<p style="margin-left: 20px">If CodeIntegrityEnabled = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
+<p>If CodeIntegrityEnabled = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI assets
@@ -633,50 +645,50 @@ Each of these are described in further detail in the following sections, along w
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="testsigningenabled"></a>**TestSigningEnabled**
-<p style="margin-left: 20px">When test signing is enabled, the device does not enforce signature validation during boot, and allows the unsigned drivers (such as unsigned UEFI modules) to load during boot.</p>
+<p>When test signing is enabled, the device does not enforce signature validation during boot, and allows the unsigned drivers (such as unsigned UEFI modules) to load during boot.</p>
 
-<p style="margin-left: 20px">Test signing can be disabled or enabled by using the following commands in WMI or a PowerShell script:</p>
+<p>Test signing can be disabled or enabled by using the following commands in WMI or a PowerShell script:</p>
 
 -   To disable boot debugging, type **bcdedit.exe /set {current} testsigning off**
 -   To enable boot debugging, type **bcdedit.exe /set {current} testsigning on**
 
-<p style="margin-left: 20px">If TestSigningEnabled = 0 (False), then allow access.</p>
+<p>If TestSigningEnabled = 0 (False), then allow access.</p>
 
-<p style="margin-left: 20px">If TestSigningEnabled = 1 (True), then take one of the following actions that align with your enterprise policies:</p>
+<p>If TestSigningEnabled = 1 (True), then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI and MBI assets
 -   Place the device in a watch list to monitor the device more closely for potential risks.
--   Trigger a corrective action, such as enabling test signing using WMI or a Powershell script.
+-   Trigger a corrective action, such as enabling test signing using WMI or a PowerShell script.
 
 <a href="" id="safemode"></a>**SafeMode**  
-<p style="margin-left: 20px">Safe mode is a troubleshooting option for Windows that starts your computer in a limited state. Only the basic files and drivers necessary to run Windows are started.</p>
+<p>Safe mode is a troubleshooting option for Windows that starts your computer in a limited state. Only the basic files and drivers necessary to run Windows are started.</p>
 
-<p style="margin-left: 20px">If SafeMode = 0 (False), then allow access.</p>
+<p>If SafeMode = 0 (False), then allow access.</p>
 
-<p style="margin-left: 20px">If SafeMode = 1 (True), then take one of the following actions that align with your enterprise policies:</p>
+<p>If SafeMode = 1 (True), then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI assets
 -   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
 
 <a href="" id="winpe"></a>**WinPE**  
-<p style="margin-left: 20px">Windows pre-installation Environment (Windows PE) is a minimal operating system with limited services that is used to prepare a computer for Windows installation, to copy disk images from a network file server, and to initiate Windows Setup.</p>
+<p>Windows pre-installation Environment (Windows PE) is a minimal operating system with limited services that is used to prepare a computer for Windows installation, to copy disk images from a network file server, and to initiate Windows Setup.</p>
 
-<p style="margin-left: 20px">If WinPE = 0 (False), then allow access.</p>
+<p>If WinPE = 0 (False), then allow access.</p>
 
-<p style="margin-left: 20px">If WinPE = 1 (True), then limit access to remote resources that are required for Windows OS installation.</p>
+<p>If WinPE = 1 (True), then limit access to remote resources that are required for Windows OS installation.</p>
 
 <a href="" id="elamdriverloaded"></a>**ELAMDriverLoaded**  (Windows Defender)
-<p style="margin-left: 20px">To use this reporting feature you must disable &quot;Hybrid Resume&quot; on the device. Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.</p>
+<p>To use this reporting feature you must disable &quot;Hybrid Resume&quot; on the device. Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.</p>
 
-<p style="margin-left: 20px">In the current release, this attribute only monitors/reports if a Microsoft 1st party ELAM  (Windows Defender) was loaded during initial boot.</p>
+<p>In the current release, this attribute only monitors/reports if a Microsoft 1st party ELAM  (Windows Defender) was loaded during initial boot.</p>
 
-<p style="margin-left: 20px">If a device is expected to use a 3rd party antivirus program, ignore the reported state.</p>
+<p>If a device is expected to use a 3rd party antivirus program, ignore the reported state.</p>
 
-<p style="margin-left: 20px">If a device is expected to use Windows Defender and ELAMDriverLoaded = 1 (True), then allow access.</p>
+<p>If a device is expected to use Windows Defender and ELAMDriverLoaded = 1 (True), then allow access.</p>
 
-<p style="margin-left: 20px">If a device is expected to use Windows Defender and ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies, also accounting for whether it is a desktop or mobile device:</p>
+<p>If a device is expected to use Windows Defender and ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies, also accounting for whether it is a desktop or mobile device:</p>
 
 -   Disallow all access
 -   Disallow access to HBI assets
@@ -684,61 +696,61 @@ Each of these are described in further detail in the following sections, along w
 
 **Bcdedit.exe /set {current} vsmlaunchtype auto**
 
-<p style="margin-left: 20px">If ELAMDriverLoaded = 1 (True), then allow access.</p>
+<p>If ELAMDriverLoaded = 1 (True), then allow access.</p>
 
-<p style="margin-left: 20px">If ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
+<p>If ELAMDriverLoaded = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Disallow access to HBI assets
 -   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
 
 <a href="" id="vsmenabled"></a>**VSMEnabled**  
-<p style="margin-left: 20px">Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel. VSM requires about 1GB of memory – it has just enough capability to run the LSA service that is used for all authentication brokering.</p>
+<p>Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel. VSM requires about 1GB of memory – it has just enough capability to run the LSA service that is used for all authentication brokering.</p>
 
-<p style="margin-left: 20px">VSM can be enabled by using the following command in WMI or a PowerShell script:</p>
+<p>VSM can be enabled by using the following command in WMI or a PowerShell script:</p>
 
-<p style="margin-left: 20px">bcdedit.exe /set {current} vsmlaunchtype auto</p>
+<p>bcdedit.exe /set {current} vsmlaunchtype auto</p>
 
-<p style="margin-left: 20px">If VSMEnabled = 1 (True), then allow access.</p>
-<p style="margin-left: 20px">If VSMEnabled = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
+<p>If VSMEnabled = 1 (True), then allow access.</p>
+<p>If VSMEnabled = 0 (False), then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Disallow access to HBI assets
 - Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue
 
 <a href="" id="pcrhashalgorithmid"></a>**PCRHashAlgorithmID**
-<p style="margin-left: 20px">This attribute is an informational attribute that identifies the HASH algorithm that was used by TPM; no compliance action required.</p>
+<p>This attribute is an informational attribute that identifies the HASH algorithm that was used by TPM; no compliance action required.</p>
 
 <a href="" id="bootappsvn"></a>**BootAppSVN**
-<p style="margin-left: 20px">This attribute identifies the security version number of the Boot Application that was loaded during initial boot on the attested device</p>
+<p>This attribute identifies the security version number of the Boot Application that was loaded during initial boot on the attested device</p>
 
-<p style="margin-left: 20px">If reported BootAppSVN equals an accepted value, then allow access.</p>
+<p>If reported BootAppSVN equals an accepted value, then allow access.</p>
 
- <p style="margin-left: 20px">If reported BootAppSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
+ <p>If reported BootAppSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Direct the device to an enterprise honeypot, to further monitor the device's activities.
 
 <a href="" id="bootmanagersvn"></a>**BootManagerSVN**
-<p style="margin-left: 20px">This attribute identifies the security version number of the Boot Manager that was loaded during initial boot on the attested device.</p>
+<p>This attribute identifies the security version number of the Boot Manager that was loaded during initial boot on the attested device.</p>
 
-<p style="margin-left: 20px">If reported BootManagerSVN equals an accepted value, then allow access.</p>
+<p>If reported BootManagerSVN equals an accepted value, then allow access.</p>
 
-<p style="margin-left: 20px">If reported BootManagerSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
+<p>If reported BootManagerSVN does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Direct the device to an enterprise honeypot, to further monitor the device's activities.
 
 <a href="" id="tpmversion"></a>**TPMVersion**
 
-<p style="margin-left: 20px">This attribute identifies the version of the TPM that is running on the attested device.</p>
-<p style="margin-left: 20px">TPMVersion node provides to replies &quot;1&quot; and &quot;2&quot;:</p>
+<p>This attribute identifies the version of the TPM that is running on the attested device.</p>
+<p>TPMVersion node provides to replies &quot;1&quot; and &quot;2&quot;:</p>
 <ul>
 <li>1 means TPM specification version 1.2</li>
 <li>2 means TPM specification version 2.0</li>
 </ul>
 
-<p style="margin-left: 20px">Based on the reply you receive from TPMVersion node:</p>
+<p>Based on the reply you receive from TPMVersion node:</p>
 
 - If reported TPMVersion equals an accepted value, then allow access.
 - If reported TPMVersion does not equal an accepted value, then take one of the following actions that align with your enterprise policies:
@@ -746,63 +758,63 @@ Each of these are described in further detail in the following sections, along w
     - Direct the device to an enterprise honeypot, to further monitor the device's activities.
 
 <a href="" id="pcr0"></a>**PCR0**
-<p style="margin-left: 20px">The measurement that is captured in PCR[0] typically represents a consistent view of the Host Platform between boot cycles. It contains a measurement of components that are provided by the host platform manufacturer.</p>
+<p>The measurement that is captured in PCR[0] typically represents a consistent view of the Host Platform between boot cycles. It contains a measurement of components that are provided by the host platform manufacturer.</p>
 
-<p style="margin-left: 20px">Enterprise managers can create a allow list of trusted PCR[0] values, compare the PCR[0] value of the managed devices (the value that is verified and reported by HAS) with the allow list, and then make a trust decision based on the result of the comparison.</p>
+<p>Enterprise managers can create a allow list of trusted PCR[0] values, compare the PCR[0] value of the managed devices (the value that is verified and reported by HAS) with the allow list, and then make a trust decision based on the result of the comparison.</p>
 
-<p style="margin-left: 20px">If your enterprise does not have a allow list of accepted PCR[0] values, then take no action.</p>
+<p>If your enterprise does not have a allow list of accepted PCR[0] values, then take no action.</p>
 
-<p style="margin-left: 20px">If PCR[0] equals an accepted allow list value, then allow access.</p>
+<p>If PCR[0] equals an accepted allow list value, then allow access.</p>
 
-<p style="margin-left: 20px">If PCR[0] does not equal any accepted listed value, then take one of the following actions that align with your enterprise policies:</p>
+<p>If PCR[0] does not equal any accepted listed value, then take one of the following actions that align with your enterprise policies:</p>
 
 -   Disallow all access
 -   Direct the device to an enterprise honeypot, to further monitor the device's activities.
 
 <a href="" id="sbcphash"></a>**SBCPHash**
-<p style="margin-left: 20px">SBCPHash is the finger print of the Custom Secure Boot Configuration Policy (SBCP) that was loaded during boot in Windows devices, except PCs.</p>
+<p>SBCPHash is the finger print of the Custom Secure Boot Configuration Policy (SBCP) that was loaded during boot in Windows devices, except PCs.</p>
 
-<p style="margin-left: 20px">If SBCPHash is not present, or is an accepted allow-listed value, then allow access.
+<p>If SBCPHash is not present, or is an accepted allow-listed value, then allow access.
 
-<p style="margin-left: 20px">If SBCPHash is present in DHA-Report, and is not a allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
+<p>If SBCPHash is present in DHA-Report, and is not a allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="cipolicy"></a>**CIPolicy**
-<p style="margin-left: 20px">This attribute indicates the Code Integrity policy that is controlling the security of the boot environment.</p>
+<p>This attribute indicates the Code Integrity policy that is controlling the security of the boot environment.</p>
 
-<p style="margin-left: 20px">If CIPolicy is not present, or is an accepted allow-listed value, then allow access.</p>
+<p>If CIPolicy is not present, or is an accepted allow-listed value, then allow access.</p>
 
-<p style="margin-left: 20px">If CIPolicy is present and is not a allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
+<p>If CIPolicy is present and is not a allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="bootrevlistinfo"></a>**BootRevListInfo**
-<p style="margin-left: 20px">This attribute identifies the Boot Revision List that was loaded during initial boot on the attested device.</p>
+<p>This attribute identifies the Boot Revision List that was loaded during initial boot on the attested device.</p>
 
-<p style="margin-left: 20px">If reported BootRevListInfo version equals an accepted value, then allow access.</p>
+<p>If reported BootRevListInfo version equals an accepted value, then allow access.</p>
 
-<p style="margin-left: 20px">If reported BootRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
+<p>If reported BootRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Direct the device to an enterprise honeypot, to further monitor the device's activities.
 
 <a href="" id="osrevlistinfo"></a>**OSRevListInfo**
-<p style="margin-left: 20px">This attribute identifies the Operating System Revision List that was loaded during initial boot on the attested device.</p>
+<p>This attribute identifies the Operating System Revision List that was loaded during initial boot on the attested device.</p>
 
-<p style="margin-left: 20px">If reported OSRevListInfo version equals an accepted value, then allow access.</p>
+<p>If reported OSRevListInfo version equals an accepted value, then allow access.</p>
 
-<p style="margin-left: 20px">If reported OSRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
+<p>If reported OSRevListInfo version does not equal an accepted value, then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Direct the device to an enterprise honeypot, to further monitor the device's activities.  
 
 <a href="" id="healthstatusmismatchflags"></a>**HealthStatusMismatchFlags**
-<p style="margin-left: 20px">HealthStatusMismatchFlags attribute appears if DHA-Service detects an integrity issue (mismatch) in the DHA-Data it receives from device management solutions, for validation.</p>
+<p>HealthStatusMismatchFlags attribute appears if DHA-Service detects an integrity issue (mismatch) in the DHA-Data it receives from device management solutions, for validation.</p>
 
-<p style="margin-left: 20px">In case of a detected issue a list of impacted DHA-report elements will be listed under the HealthStatusMismatchFlags attribute.</p>
+<p>In case of a detected issue a list of impacted DHA-report elements will be listed under the HealthStatusMismatchFlags attribute.</p>
 
 ## **Device HealthAttestation CSP status and error codes**
 
@@ -813,204 +825,204 @@ Each of these are described in further detail in the following sections, along w
         <th>Description</th>
     </tr>
     <tr>
-        <td style="vertical-align:top">0</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED</td>
-        <td style="vertical-align:top">This is the initial state for devices that have never participated in a DHA-Session. </td>
+        <td>0</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED</td>
+        <td>This is the initial state for devices that have never participated in a DHA-Session. </td>
     </tr>
     <tr>
-        <td style="vertical-align:top">1</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_REQUESTED</td>
-        <td style="vertical-align:top">This state signifies that MDM client’s Exec call on the node VerifyHealth has been triggered and now the OS is trying to retrieve DHA-EncBlob from DHA-Server.</td>
+        <td>1</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_REQUESTED</td>
+        <td>This state signifies that MDM client’s Exec call on the node VerifyHealth has been triggered and now the OS is trying to retrieve DHA-EncBlob from DHA-Server.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">2</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED</td>
-        <td style="vertical-align:top">This state signifies that the device failed to retrieve DHA-EncBlob from DHA-Server.</td>
+        <td>2</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED</td>
+        <td>This state signifies that the device failed to retrieve DHA-EncBlob from DHA-Server.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">3</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_COMPLETE</td>
-        <td style="vertical-align:top">This state signifies that the device has successfully retrieved DHA-EncBlob from the DHA-Server.</td>
+        <td>3</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_COMPLETE</td>
+        <td>This state signifies that the device has successfully retrieved DHA-EncBlob from the DHA-Server.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">4</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_PCR_FAIL</td>
-        <td style="vertical-align:top">Deprecated in Windows 10, version 1607.</td>
+        <td>4</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_PCR_FAIL</td>
+        <td>Deprecated in Windows 10, version 1607.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">5</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_GETQUOTE_FAIL</td>
-        <td style="vertical-align:top">DHA-CSP failed to get a claim quote.</td>
+        <td>5</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_GETQUOTE_FAIL</td>
+        <td>DHA-CSP failed to get a claim quote.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">6</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_DEVICE_NOT_READY</td>
-        <td style="vertical-align:top">DHA-CSP failed in opening a handle to Microsoft Platform Crypto Provider.</td>
+        <td>6</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_DEVICE_NOT_READY</td>
+        <td>DHA-CSP failed in opening a handle to Microsoft Platform Crypto Provider.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">7</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_WINDOWS_AIK_FAIL</td>
-        <td style="vertical-align:top">DHA-CSP failed in retrieving Windows AIK</td>
+        <td>7</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_WINDOWS_AIK_FAIL</td>
+        <td>DHA-CSP failed in retrieving Windows AIK</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">8</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FROM_WEB_FAIL</td>
-        <td style="vertical-align:top">Deprecated in Windows 10, version 1607.</td>
+        <td>8</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FROM_WEB_FAIL</td>
+        <td>Deprecated in Windows 10, version 1607.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">9</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_INVALID_TPM_VERSION</td>
-        <td style="vertical-align:top">Invalid TPM version (TPM version is not 1.2 or 2.0)</td>
+        <td>9</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_INVALID_TPM_VERSION</td>
+        <td>Invalid TPM version (TPM version is not 1.2 or 2.0)</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">10</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_GETNONCE_FAIL</td>
-        <td style="vertical-align:top">Nonce was not found in the registry.</td>
+        <td>10</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_GETNONCE_FAIL</td>
+        <td>Nonce was not found in the registry.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">11</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_GETCORRELATIONID_FAIL</td>
-        <td style="vertical-align:top">Correlation ID was not found in the registry.</td>
+        <td>11</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_GETCORRELATIONID_FAIL</td>
+        <td>Correlation ID was not found in the registry.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">12</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_GETCERT_FAIL</td>
-        <td style="vertical-align:top">Deprecated in Windows 10, version 1607.</td>
+        <td>12</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_GETCERT_FAIL</td>
+        <td>Deprecated in Windows 10, version 1607.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">13</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_GETCLAIM_FAIL</td>
-        <td style="vertical-align:top">Deprecated in Windows 10, version 1607.</td>
+        <td>13</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_GETCLAIM_FAIL</td>
+        <td>Deprecated in Windows 10, version 1607.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">14</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_ENCODING_FAIL</td>
-        <td style="vertical-align:top">Failure in Encoding functions. (Extremely unlikely scenario)</td>
+        <td>14</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_ENCODING_FAIL</td>
+        <td>Failure in Encoding functions. (Extremely unlikely scenario)</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">15</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_ENDPOINTOVERRIDE_FAIL</td>
-        <td style="vertical-align:top">Deprecated in Windows 10, version 1607.</td>
+        <td>15</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_ENDPOINTOVERRIDE_FAIL</td>
+        <td>Deprecated in Windows 10, version 1607.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">16</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_LOAD_XML</td>
-        <td style="vertical-align:top">DHA-CSP failed to load the payload it received from DHA-Service </td>
+        <td>16</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_LOAD_XML</td>
+        <td>DHA-CSP failed to load the payload it received from DHA-Service </td>
     </tr>
     <tr>
-        <td style="vertical-align:top">17</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CORRUPT_XML</td>
-        <td style="vertical-align:top">DHA-CSP received a corrupted response from DHA-Service.</td>
+        <td>17</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CORRUPT_XML</td>
+        <td>DHA-CSP received a corrupted response from DHA-Service.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">18</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EMPTY_XML</td>
-        <td style="vertical-align:top">DHA-CSP received an empty response from DHA-Service.</td>
+        <td>18</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EMPTY_XML</td>
+        <td>DHA-CSP received an empty response from DHA-Service.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">19</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_DECRYPT_AES_EK</td>
-        <td style="vertical-align:top">DHA-CSP failed in decrypting the AES key from the EK challenge.</td>
+        <td>19</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_DECRYPT_AES_EK</td>
+        <td>DHA-CSP failed in decrypting the AES key from the EK challenge.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">20</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_DECRYPT_CERT_AES_EK</td>
-        <td style="vertical-align:top">DHA-CSP failed in decrypting the health cert with the AES key.</td>
+        <td>20</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_DECRYPT_CERT_AES_EK</td>
+        <td>DHA-CSP failed in decrypting the health cert with the AES key.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">21</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EXPORT_AIKPUB</td>
-        <td style="vertical-align:top">DHA-CSP failed in exporting the AIK Public Key.</td>
+        <td>21</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EXPORT_AIKPUB</td>
+        <td>DHA-CSP failed in exporting the AIK Public Key.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">22</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CREATE_CLAIMAUTHORITYONLY</td>
-        <td style="vertical-align:top">DHA-CSP failed in trying to create a claim with AIK attestation data.</td>
+        <td>22</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CREATE_CLAIMAUTHORITYONLY</td>
+        <td>DHA-CSP failed in trying to create a claim with AIK attestation data.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">23</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_APPEND_AIKPUB</td>
-        <td style="vertical-align:top">DHA-CSP failed in appending the AIK Pub to the request blob.</td>
+        <td>23</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_APPEND_AIKPUB</td>
+        <td>DHA-CSP failed in appending the AIK Pub to the request blob.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">24</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_APPEND_AIKCERT</td>
-        <td style="vertical-align:top">DHA-CSP failed in appending the AIK Cert to the request blob.</td>
+        <td>24</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_APPEND_AIKCERT</td>
+        <td>DHA-CSP failed in appending the AIK Cert to the request blob.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">25</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_INIT_HTTPHANDLE</td>
-        <td style="vertical-align:top">DHA-CSP failed to obtain a Session handle.</td>
+        <td>25</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_INIT_HTTPHANDLE</td>
+        <td>DHA-CSP failed to obtain a Session handle.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">26</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_GETTARGET_HTTPHANDLE</td>
-        <td style="vertical-align:top">DHA-CSP failed to connect to the DHA-Service.</td>
+        <td>26</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_GETTARGET_HTTPHANDLE</td>
+        <td>DHA-CSP failed to connect to the DHA-Service.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">27</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CREATE_HTTPHANDLE</td>
-        <td style="vertical-align:top">DHA-CSP failed to create a HTTP request handle.</td>
+        <td>27</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CREATE_HTTPHANDLE</td>
+        <td>DHA-CSP failed to create a HTTP request handle.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">28</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_SET_INTERNETOPTION</td>
-        <td style="vertical-align:top">DHA-CSP failed to set options.</td>
+        <td>28</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_SET_INTERNETOPTION</td>
+        <td>DHA-CSP failed to set options.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">29</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_ADD_REQUESTHEADERS</td>
-        <td style="vertical-align:top">DHA-CSP failed to add request headers.</td>
+        <td>29</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_ADD_REQUESTHEADERS</td>
+        <td>DHA-CSP failed to add request headers.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">30</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_SEND_REQUEST</td>
-        <td style="vertical-align:top">DHA-CSP failed to send the HTTP request.</td>
+        <td>30</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_SEND_REQUEST</td>
+        <td>DHA-CSP failed to send the HTTP request.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">31</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_RECEIVE_RESPONSE</td>
-        <td style="vertical-align:top">DHA-CSP failed to receive a response from the DHA-Service.</td>
+        <td>31</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_RECEIVE_RESPONSE</td>
+        <td>DHA-CSP failed to receive a response from the DHA-Service.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">32</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_QUERY_HEADERS</td>
-        <td style="vertical-align:top">DHA-CSP failed to query headers when trying to get HTTP status code.</td>
+        <td>32</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_QUERY_HEADERS</td>
+        <td>DHA-CSP failed to query headers when trying to get HTTP status code.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">33</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EMPTY_RESPONSE</td>
-        <td style="vertical-align:top">DHA-CSP received an empty response from DHA-Service even though HTTP status was OK.</td>
+        <td>33</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EMPTY_RESPONSE</td>
+        <td>DHA-CSP received an empty response from DHA-Service even though HTTP status was OK.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">34</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_MISSING_RESPONSE</td>
-        <td style="vertical-align:top">DHA-CSP received an empty response along with a HTTP error code from DHA-Service.</td>
+        <td>34</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_MISSING_RESPONSE</td>
+        <td>DHA-CSP received an empty response along with a HTTP error code from DHA-Service.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">35</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_IMPERSONATE_USER</td>
-        <td style="vertical-align:top">DHA-CSP failed to impersonate user.</td>
+        <td>35</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_IMPERSONATE_USER</td>
+        <td>DHA-CSP failed to impersonate user.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">36</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_ACQUIRE_PDCNETWORKACTIVATOR</td>
-        <td style="vertical-align:top">DHA-CSP failed to acquire the PDC activators that are needed for network communication when the device is in Connected standby mode.</td>
+        <td>36</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_ACQUIRE_PDCNETWORKACTIVATOR</td>
+        <td>DHA-CSP failed to acquire the PDC activators that are needed for network communication when the device is in Connected standby mode.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">0xFFFF</td>
-        <td style="vertical-align:top">HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_UNKNOWN</td>
-        <td style="vertical-align:top">DHA-CSP failed due to an unknown reason, this error is highly unlikely to occur.</td>
+        <td>0xFFFF</td>
+        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_UNKNOWN</td>
+        <td>DHA-CSP failed due to an unknown reason, this error is highly unlikely to occur.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">400</td>
-        <td style="vertical-align:top">Bad_Request_From_Client</td>
-        <td style="vertical-align:top">DHA-CSP has received a bad (malformed) attestation request.</td>
+        <td>400</td>
+        <td>Bad_Request_From_Client</td>
+        <td>DHA-CSP has received a bad (malformed) attestation request.</td>
     </tr>
     <tr>
-        <td style="vertical-align:top">404</td>
-        <td style="vertical-align:top">Endpoint_Not_Reachable</td>
-        <td style="vertical-align:top">DHA-Service is not reachable by DHA-CSP</td>
+        <td>404</td>
+        <td>Endpoint_Not_Reachable</td>
+        <td>DHA-Service is not reachable by DHA-CSP</td>
     </tr>
 
 </table>
@@ -1163,5 +1175,4 @@ xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validatio
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
 

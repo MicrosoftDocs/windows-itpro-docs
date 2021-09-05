@@ -1,5 +1,5 @@
 ---
-title: Customize Windows 10 Start and tasbkar with Group Policy (Windows 10)
+title: Customize Windows 10 Start and taskbar with Group Policy (Windows 10)
 description: In Windows 10, you can use a Group Policy Object (GPO) to deploy a customized Start layout to users in a domain.
 ms.assetid: F4A47B36-F1EF-41CD-9CBA-04C83E960545
 ms.reviewer: 
@@ -8,9 +8,9 @@ keywords: ["Start layout", "start menu", "layout", "group policy"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ---
 
@@ -39,17 +39,17 @@ This topic describes how to update Group Policy settings to display a customized
 
 In Windows 10, version 1607, Start and taskbar layout control using Group Policy is supported in Windows 10 Enterprise and Windows 10 Education. In Windows 10, version 1703, Start and taskbar layout control using Group Policy is also supported in Windows 10 Pro.
 
-The GPO can be configured from any computer on which the necessary ADMX and ADML files (StartMenu.admx and StartMenu.adml) for Windows 10 are installed. In Group Policy, ADMX files are used to define Registry-based policy settings in the Administrative Templates category. To find out how to create a central store for Administrative Templates files, see [article 929841, written for Windows Vista and still applicable](https://go.microsoft.com/fwlink/p/?LinkId=691687) in the Microsoft Knowledge Base.
+The GPO can be configured from any computer on which the necessary ADMX and ADML files (StartMenu.admx and StartMenu.adml) for Windows 10 are installed. In Group Policy, ADMX files are used to define Registry-based policy settings in the Administrative Templates category. To find out how to create a central store for Administrative Templates files, see [article 929841, written for Windows Vista and still applicable](/troubleshoot/windows-server/group-policy/create-central-store-domain-controller) in the Microsoft Knowledge Base.
 
 ## <a href="" id="bkmk-howstartscreencontrolworks"></a>How Start layout control works
 
 
 Three features enable Start and taskbar layout control:
 
--   The [Export-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
+-   The [Export-StartLayout](/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
     >[!NOTE]
-    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/import-startlayout) cmdlet.
+    >To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
 
 -    [You can modify the Start .xml file](configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration. 
 
@@ -71,7 +71,7 @@ The GPO can be configured from any computer on which the necessary ADMX and ADML
 
 The .xml file with the Start and taskbar layout must be located on shared network storage that is available to the users’ computers when they sign in and the users must have Read-only access to the file. If the file is not available when the first user signs in, Start and the taskbar are not customized during the session, but the user will be prevented from making changes to Start. On subsequent sign-ins, if the file is available at sign-in, the layout it contains will be applied to the user's Start and taskbar.
 
-For information about deploying GPOs in a domain, see [Working with Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=620889).
+For information about deploying GPOs in a domain, see [Working with Group Policy Objects](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
 ## <a href="" id="bkmk-localgpimport"></a>Use Group Policy to apply a customized Start layout on the local computer
 
@@ -81,7 +81,7 @@ You can use the Local Group Policy Editor to provide a customized Start and task
 >[!NOTE]
 >This procedure applies the policy settings on the local computer only. For information about deploying the Start and taskbar layout to users in a domain, see [Use Group Policy to deploy a customized Start layout in a domain](#bkmk-domaingpodeployment).
 >
->This procedure creates a Local Group Policy that applies to all users on the computer. To configure Local Group Policy that applies to a specific user or group on the computer, see [Step-by-Step Guide to Managing Multiple Local Group Policy Objects](https://go.microsoft.com/fwlink/p/?LinkId=620881). The guide was written for Windows Vista and the procedures still apply to Windows 10.
+>This procedure creates a Local Group Policy that applies to all users on the computer. To configure Local Group Policy that applies to a specific user or group on the computer, see [Step-by-Step Guide to Managing Multiple Local Group Policy Objects](/previous-versions/windows/it-pro/windows-vista/cc766291(v=ws.10)). The guide was written for Windows Vista and the procedures still apply to Windows 10.
 
 
 This procedure adds the customized Start and taskbar layout to the user configuration, which overrides any Start layout settings in the local computer configuration when a user signs in on the computer.
@@ -92,13 +92,13 @@ This procedure adds the customized Start and taskbar layout to the user configur
 
 2. Go to **User Configuration** or **Computer Configuration** &gt; **Administrative Templates** &gt;**Start Menu and Taskbar**.
 
-   ![start screen layout policy settings](images/starttemplate.jpg)
+   ![start screen layout policy settings.](images/starttemplate.jpg)
 
 3. Right-click **Start Layout** in the right pane, and click **Edit**.
 
    This opens the **Start Layout** policy settings.
 
-   ![policy settings for start screen layout](images/startlayoutpolicy.jpg)
+   ![policy settings for start screen layout.](images/startlayoutpolicy.jpg)
 
 4. Enter the following settings, and then click **OK**:
 
@@ -132,9 +132,3 @@ After you use Group Policy to apply a customized Start and taskbar layout on a c
 - [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
  
- 
-
-
-
-
-

@@ -6,7 +6,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 audience: ITPro
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
@@ -32,7 +32,7 @@ There are 10 Group Policy settings that can be configured for User Account Contr
 | [User Account Control: Admin Approval Mode for the built-in Administrator account](#user-account-control-admin-approval-mode-for-the-built-in-administrator-account) | FilterAdministratorToken | Disabled |
 | [User Account Control: Allow UIAccess applications to prompt for elevation without using the secure desktop](#user-account-control-allow-uiaccess-applications-to-prompt-for-elevation-without-using-the-secure-desktop) | EnableUIADesktopToggle | Disabled |
 | [User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode](#user-account-control-behavior-of-the-elevation-prompt-for-administrators-in-admin-approval-mode) | ConsentPromptBehaviorAdmin | Prompt for consent for non-Windows binaries |
-| [User Account Control: Behavior of the elevation prompt for standard users](#user-account-control-behavior-of-the-elevation-prompt-for-standard-users) | ConsentPromptBehaviorUser | Prompt for credentials on the secure desktop |
+| [User Account Control: Behavior of the elevation prompt for standard users](#user-account-control-behavior-of-the-elevation-prompt-for-standard-users) | ConsentPromptBehaviorUser | Prompt for credentials |
 | [User Account Control: Detect application installations and prompt for elevation](#user-account-control-detect-application-installations-and-prompt-for-elevation) | EnableInstallerDetection | Enabled (default for home)<br />Disabled (default for enterprise) |
 | [User Account Control: Only elevate executables that are signed and validated](#user-account-control-only-elevate-executables-that-are-signed-and-validated) | ValidateAdminCodeSignatures | Disabled |
 | [User Account Control: Only elevate UIAccess applications that are installed in secure locations](#user-account-control-only-elevate-uiaccess-applications-that-are-installed-in-secure-locations) | EnableSecureUIAPaths | Enabled |
@@ -104,8 +104,8 @@ The **User Account Control: Behavior of the elevation prompt for standard users*
 The options are:
 
 -   **Automatically deny elevation requests.** When an operation requires elevation of privilege, a configurable access denied error message is displayed. An enterprise that is running desktops as standard user may choose this setting to reduce help desk calls.
--   **Prompt for credentials on the secure desktop.** (Default) When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
--   **Prompt for credentials.** When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+-   **Prompt for credentials on the secure desktop.** When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a different user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
+-   **Prompt for credentials.** (Default) When an operation requires elevation of privilege, the user is prompted to enter an administrative user name and password. If the user enters valid credentials, the operation continues with the applicable privilege.
 
 ### User Account Control: Detect application installations and prompt for elevation
 

@@ -2,7 +2,7 @@
 title: 5156(S) The Windows Filtering Platform has permitted a connection. (Windows 10)
 description: Describes security event 5156(S) The Windows Filtering Platform has permitted a connection.
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
@@ -11,6 +11,7 @@ ms.date: 04/19/2017
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
+ms.technology: mde
 ---
 
 # 5156(S): The Windows Filtering Platform has permitted a connection.
@@ -26,7 +27,7 @@ ms.author: dansimp
 
 ***Event Description:***
 
-This event generates when [Windows Filtering Platform](https://msdn.microsoft.com/library/windows/desktop/aa366510(v=vs.85).aspx) has allowed a connection.
+This event generates when [Windows Filtering Platform](/windows/win32/fwp/windows-filtering-platform-start-page) has allowed a connection.
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
@@ -158,7 +159,7 @@ This event generates when [Windows Filtering Platform](https://msdn.microsoft.co
 
 <img src="images/filters-xml-file.png" alt="Filters.xml file illustration" width="840" height="176" />
 
--   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](https://msdn.microsoft.com/library/windows/desktop/aa363971(v=vs.85).aspx) layer name.
+-   **Layer Name** \[Type = UnicodeString\]: [Application Layer Enforcement](/windows/win32/fwp/application-layer-enforcement--ale-) layer name.
 
 -   **Layer Run-Time ID** \[Type = UInt64\]: Windows Filtering Platform layer identifier. To find a specific Windows Filtering Platform layer ID, run the following command: **netsh wfp show state**. As a result of this command, the **wfpstate.xml** file will be generated. Open this file and find specific substring with required layer ID (**&lt;layerId&gt;**)**,** for example:
 
@@ -187,4 +188,3 @@ For 5156(S): The Windows Filtering Platform has permitted a connection.
 -   Monitor for all connections with a “**Protocol Number”** that is not typical for this device or computer, for example, anything other than 1, 6, or 17.
 
 -   If the computer’s communication with “**Destination Address”** should always use a specific “**Destination Port**,**”** monitor for any other “**Destination Port**.”
-

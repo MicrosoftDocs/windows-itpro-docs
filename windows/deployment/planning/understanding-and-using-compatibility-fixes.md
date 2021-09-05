@@ -33,11 +33,11 @@ The Compatibility Fix infrastructure uses the linking ability of APIs to redirec
 
 The Windows Portable Executable File Format includes headers that contain the data directories that are used to provide a layer of indirection between the application and the linked file. API calls to the external binary files take place through the Import Address Table (IAT), which then directly calls the Windows operating system, as shown in the following figure.
 
-![act app calls operating system through iat](images/dep-win8-l-act-appcallosthroughiat.jpg)
+![act app calls operating system through iat.](images/dep-win8-l-act-appcallosthroughiat.jpg)
 
 Specifically, the process modifies the address of the affected Windows function in the IAT to point to the compatibility fix code, as shown in the following figure.
 
-![act app redirect with compatibility fix](images/dep-win8-l-act-appredirectwithcompatfix.jpg)
+![act app redirect with compatibility fix.](images/dep-win8-l-act-appredirectwithcompatfix.jpg)
 
 >[!NOTE]
 >For statically linked DLLs, the code redirection occurs as the application loads. You can also fix dynamically linked DLLs by hooking into the GetProcAddress API.

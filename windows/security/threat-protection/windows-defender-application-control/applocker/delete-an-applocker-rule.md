@@ -1,10 +1,10 @@
 ---
-title: Delete an AppLocker rule (Windows 10)
+title: Delete an AppLocker rule (Windows)
 description: This article for IT professionals describes the steps to delete an AppLocker rule.
 ms.assetid: 382b4be3-0df9-4308-89b2-dcf9df351eb5
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/09/2020
+ms.technology: mde
 ---
 
 # Delete an AppLocker rule
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This article for IT professionals describes the steps to delete an AppLocker rule. 
 
@@ -49,20 +55,26 @@ When the following procedure is performed on the local device, the AppLocker pol
 ## To clear AppLocker policies on a single system or remote systems
 Use the Set-AppLockerPolicy cmdlet with the -XMLPolicy parameter, using an .XML file that contains the following contents:
 
-    <AppLockerPolicy Version="1">
-      <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
-      <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
-    </AppLockerPolicy>
+```xml
+<AppLockerPolicy Version="1">
+    <RuleCollection Type="Exe" EnforcementMode="NotConfigured" />
+    <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
+    <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
+    <RuleCollection Type="Dll" EnforcementMode="NotConfigured" />
+    <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
+</AppLockerPolicy>
+```
 
 To use the Set-AppLockerPolicy cmdlet, first import the AppLocker modules:
-    
-    PS C:\Users\Administrator> import-module AppLocker
+
+```powershell
+PS C:\Users\Administrator> import-module AppLocker
+```
 
 We will create a file (for example, clear.xml), place it in the same directory where we are executing our cmdlet, and add the preceding XML contents. Then run the following command:
-    
-    C:\Users\Administrator> Set-AppLockerPolicy -XMLPolicy .\clear.xml
+
+```powershell
+C:\Users\Administrator> Set-AppLockerPolicy -XMLPolicy .\clear.xml
+```
 
 This will remove all AppLocker Policies on a machine and could be potentially scripted to use on multiple machines using remote execution tools with accounts with proper access.

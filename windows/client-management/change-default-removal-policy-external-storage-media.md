@@ -4,10 +4,11 @@ description: In Windows 10, version 1809, the default removal policy for externa
 ms.prod: w10
 author: Teresa-Motiv
 ms.author: v-tea
-ms.date: 12/13/2019
+ms.date: 11/25/2020
 ms.topic: article
 ms.custom: 
 - CI 111493
+- CI 125140
 - CSSTroubleshooting
 audience: ITPro
 ms.localizationpriority: medium
@@ -44,6 +45,13 @@ To change the policy for an external storage device:
   
    ![In Disk Management, right-click the device and click Properties.](./images/change-def-rem-policy-1.png)
   
-6. Select **Policies**, and then select the policy you want to use.
+6. Select **Policies**.
   
-   ![Policy options for disk management](./images/change-def-rem-policy-2.png)
+   > [!NOTE]  
+   > Some recent versions of Windows may use a different arrangement of tabs in the disk properties dialog box.  
+   >  
+   > If you do not see the **Policies** tab, select **Hardware**, select the removable drive from the **All disk drives** list, and then select **Properties**. The **Policies** tab should now be available.
+  
+7. Select the policy that you want to use.
+  
+   ![Policy options for disk management.](./images/change-def-rem-policy-2.png)

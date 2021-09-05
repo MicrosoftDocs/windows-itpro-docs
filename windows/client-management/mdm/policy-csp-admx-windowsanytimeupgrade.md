@@ -75,7 +75,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. By default, Add features to Windows 10 is available for all administrators. 
+Available in the latest Windows 10 Insider Preview Build. By default, Add features to Windows 10 is available for all administrators. 
 
 If you enable this policy setting, the wizard will not run.
 
@@ -91,7 +91,7 @@ If you disable this policy setting or set it to Not Configured, the wizard will 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent the wizard from running.*
+-   GP Friendly name: *Prevent the wizard from running.*
 -   GP name: *Disabled*
 -   GP path: *Windows Components\Add features to Windows 10*
 -   GP ADMX file name: *WindowsAnytimeUpgrade.admx*
@@ -100,16 +100,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 <!--/Policies-->
 

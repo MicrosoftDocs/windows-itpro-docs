@@ -6,13 +6,14 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 keywords: data protection, encryption, malware resistance, smartphone, device, Microsoft Store
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: dulcemontemayor
 ms.date: 10/13/2017
+ms.technology: mde
 ---
 # Windows 10 Mobile security guide
 
@@ -236,7 +237,7 @@ Windows 10 Mobile supports TPM implementations that comply with the 2.0 standard
 
 Many assume that original equipment manufacturers (OEMs) must implant a TPM in hardware on a motherboard as a discrete module, but TPM can also be effective when implemented in firmware. Windows 10 Mobile supports only firmware TPM that complies with the 2.0 standard. Windows does not differentiate between discrete and firmware-based solutions because both must meet the same implementation and security requirements. Therefore, any Windows 10 feature that can take advantage of TPM can be used with Windows 10 Mobile.
 
->Microsoft requires TPM 2.0 on devices running any version of Windows 10 Mobile. For more information, see [minimum hardware requirements](https://technet.microsoft.com/library/dn915086.aspx)
+>Microsoft requires TPM 2.0 on devices running any version of Windows 10 Mobile. For more information, see [minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)
 
 Several Windows 10 Mobile security features require TPM:
 - Virtual smart cards
@@ -298,7 +299,7 @@ One of the most common techniques used by attackers to gain access to a system i
 
 Address Space Layout Randomization (ASLR) makes that type of attack much more difficult because it randomizes how and where important data is stored in memory. With ASLR, it is more difficult for malware to find the specific location it needs to attack. The below diagram illustrates how ASLR works, showing how the locations of different critical Windows components can change in memory between restarts.
 
-![figure 3](images/mobile-security-guide-figure3.png)
+![figure 3.](images/mobile-security-guide-figure3.png)
 
 Microsoft has substantively improved the ASLR implementation in Windows 10 Mobile over previous versions, applying it across the entire system rather than only in specific apps. With 64bit system and application processes that can take advantage of a vastly increased memory space, it is even more difficult for malware to predict where Windows 10 Mobile stores vital data. When used on systems that have TPMs, ASLR memory randomization becomes increasingly unique across devices, adding additional degrees of difficulty for repurposing successful exploits to another system.
 
@@ -366,4 +367,3 @@ Windows 10 Mobile provides security on personal and corporate-owned devices to p
 November 2015 		Updated for Windows 10 Mobile (version 1511)
 
 July 2016		Updated for Windows 10 Mobile Anniversary Update (version 1607)
-

@@ -6,12 +6,13 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 ms.pagetype: security
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Audit Removable Storage
@@ -21,7 +22,7 @@ ms.date: 04/19/2017
 -   Windows Server 2016
 
 
-Audit Removable Storage allows you to audit user attempts to access file system objects on a removable storage device. A security audit event is generated for all objects and all types of access requested, with no dependency on object’s [SACL](https://msdn.microsoft.com/library/windows/desktop/aa374872(v=vs.85).aspx).
+Audit Removable Storage allows you to audit user attempts to access file system objects on a removable storage device. A security audit event is generated for all objects and all types of access requested, with no dependency on object’s [SACL](/windows/win32/secauthz/access-control-lists).
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-------------------|-----------------|-----------------|------------------|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -36,6 +37,3 @@ Audit Removable Storage allows you to audit user attempts to access file system 
 -   [4658](event-4658.md)(S): The handle to an object was closed.
 
 -   [4663](event-4663.md)(S): An attempt was made to access an object.
-
-
-

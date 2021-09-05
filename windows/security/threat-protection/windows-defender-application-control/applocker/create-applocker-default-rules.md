@@ -1,10 +1,10 @@
 ---
-title: Create AppLocker default rules (Windows 10)
+title: Create AppLocker default rules (Windows)
 description: This topic for IT professionals describes the steps to create a standard set of AppLocker rules that will allow Windows system files to run.
 ms.assetid: 21e9dc68-a6f4-4ebe-ac28-4c66a7ab6e18
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Create AppLocker default rules
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes the steps to create a standard set of AppLocker rules that will allow Windows system files to run.
 

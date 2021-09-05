@@ -12,7 +12,7 @@ author: TrudyHa
 ms.author: TrudyHa
 ms.topic: conceptual
 ms.localizationpriority: medium
-ms.date: 10/13/2017
+ms.date: 07/21/2021
 ---
 
 # Troubleshoot Microsoft Store for Business
@@ -21,6 +21,9 @@ ms.date: 10/13/2017
 
 -   Windows 10
 -   Windows 10 Mobile
+
+> [!IMPORTANT]
+> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
 
 Troubleshooting topics for Microsoft Store for Business.
 
@@ -33,23 +36,23 @@ The private store for your organization is a page in Microsoft Store app that co
 
 1.  Click the people icon in Microsoft Store app, and click **Sign in**.
 
-    ![Sign in to Store app with a different account](images/wsfb-wsappsignin.png)
+    ![Sign in to Store app with a different account.](images/wsfb-wsappsignin.png)
 
 2.  Click **Add account**, and then click **Work or school account**.
 
-    ![Choose an account to use](images/wsfb-wsappaddacct.png)
+    ![Choose an account to use.](images/wsfb-wsappaddacct.png)
 
 3.  Type the email account and password, and click **Sign in**.
 
-    ![Sign in for work or school account](images/wsfb-wsappworkacct.png)
+    ![Sign in for work or school account.](images/wsfb-wsappworkacct.png)
 
 4.  You should see the private store for your organization. In our example, the page is named **Contoso publishing**.
 
-    ![Private store with name highlighted](images/wsfb-wsappprivatestore.png)
+    ![Private store with name highlighted.](images/wsfb-wsappprivatestore.png)
 
     Click the private store to see apps in your private store.
 
-    ![Private store for Contoso publishing](images/wsfb-privatestoreapps.png)
+    ![Private store for Contoso publishing.](images/wsfb-privatestoreapps.png)
 
 ## Troubleshooting Microsoft Store for Business integration with Microsoft Endpoint Configuration Manager
 

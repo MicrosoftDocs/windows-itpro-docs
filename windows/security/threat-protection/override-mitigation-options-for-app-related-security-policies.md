@@ -4,12 +4,13 @@ ms.author: dansimp
 title: Override Process Mitigation Options (Windows 10)
 description: How to use Group Policy to override individual Process Mitigation Options settings and to help enforce specific app-related security policies.
 keywords: Process Mitigation Options, Mitigation Options, Group Policy Mitigation Options
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.pagetype: security
 ms.sitesec: library
 author: dulcemontemayor
 ms.localizationpriority: medium
+ms.technology: mde
 ---
 
 
@@ -40,7 +41,7 @@ The following procedure describes how to use Group Policy to override individual
 
 1. Open your Group Policy editor and go to the **Administrative Templates\System\Mitigation Options\Process Mitigation Options** setting.
 
-    ![Group Policy editor: Process Mitigation Options with setting enabled and Show button active](images/gp-process-mitigation-options.png)
+    ![Group Policy editor: Process Mitigation Options with setting enabled and Show button active.](images/gp-process-mitigation-options.png)
 
 2. Click **Enabled**, and then in the **Options** area, click **Show** to open the **Show Contents** box, where you’ll be able to add your apps and the appropriate bit flag values, as shown in the [Setting the bit field](#setting-the-bit-field) and [Example](#example) sections of this topic.
 
@@ -51,12 +52,12 @@ The following procedure describes how to use Group Policy to override individual
     
        **Note**<br>Setting bit flags in positions not specified here to anything other than ? might cause undefined behavior.
 
-     ![Group Policy editor: Process Mitigation Options with Show Contents box and example text](images/gp-process-mitigation-options-show.png)
+     ![Group Policy editor: Process Mitigation Options with Show Contents box and example text.](images/gp-process-mitigation-options-show.png)
 
 ## Setting the bit field
 Here’s a visual representation of the bit flag locations for the various Process Mitigation Options settings:
 
-![Visual representation of the bit flag locations for the Process Mitigation Options settings](images/gp-process-mitigation-options-bit-flag-image.png)
+![Visual representation of the bit flag locations for the Process Mitigation Options settings.](images/gp-process-mitigation-options-bit-flag-image.png)
 
 Where the bit flags are read from right to left and are defined as:
 

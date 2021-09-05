@@ -9,8 +9,8 @@ ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: mobile
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
@@ -42,7 +42,7 @@ Enterprise Assigned Access allows you to put your Windows 10 Mobile or Windows�
 
 In AssignedAccessXml, for Application, you enter the product ID for the app to run in kiosk mode. Find product IDs at [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md).
 
-[See the technical reference for the Enterprise Assigned Access configuration service provider (CSP).](https://go.microsoft.com/fwlink/p/?LinkID=618601)
+[See the technical reference for the Enterprise Assigned Access configuration service provider (CSP).](/windows/client-management/mdm/enterpriseassignedaccess-csp)
 
 ### Set up assigned access using Windows Configuration Designer
 
@@ -51,7 +51,7 @@ In AssignedAccessXml, for Application, you enter the product ID for the app to r
 
 #### Create the *AssignedAccess*.xml file
 
-1.  Create an *AssignedAccess*.xml file that specifies the app the device will run. (You can name use any file name.) For instructions on AssignedAccessXml, see [EnterpriseAssignedAccess CSP](https://go.microsoft.com/fwlink/p/?LinkID=618601).
+1.  Create an *AssignedAccess*.xml file that specifies the app the device will run. (You can name use any file name.) For instructions on AssignedAccessXml, see [EnterpriseAssignedAccess CSP](/windows/client-management/mdm/enterpriseassignedaccess-csp).
 
     >[!NOTE]
     >Do not escape the xml in *AssignedAccess*.xml file as Windows Configuration Designer will do that when building the package. Providing escaped xml in Windows ICD will cause building the package fail.
@@ -168,39 +168,35 @@ Apps Corner lets you set up a custom Start screen on your Windows 10 Mobile or 
 
 **To set up Apps Corner**
 
-1.  On Start ![start](../images/starticon.png), swipe over to the App list, then tap **Settings** ![settings](../images/settingsicon.png) &gt; **Accounts** &gt; **Apps Corner**.
+1.  On Start ![start.](../images/starticon.png), swipe over to the App list, then tap **Settings** ![settings](../images/settingsicon.png) &gt; **Accounts** &gt; **Apps Corner**.
 
-2.  Tap **Apps**, tap to select the app that you want people to use in the kiosk mode, and then tap done ![done icon](images/doneicon.png).
+2.  Tap **Apps**, tap to select the app that you want people to use in the kiosk mode, and then tap done ![done icon.](images/doneicon.png).
 
-3.  If your phone doesn't already have a lock screen password, you can set one now to ensure that people can't get to your Start screen from Apps Corner. Tap **Protect my phone with a password**, click **Add**, type a PIN in the **New PIN** box, type it again in the **Confirm PIN** box, and then tap **OK**. Press **Back** ![back](../images/backicon.png) to the Apps Corner settings.
+3.  If your phone doesn't already have a lock screen password, you can set one now to ensure that people can't get to your Start screen from Apps Corner. Tap **Protect my phone with a password**, click **Add**, type a PIN in the **New PIN** box, type it again in the **Confirm PIN** box, and then tap **OK**. Press **Back** ![back.](../images/backicon.png) to the Apps Corner settings.
 
 4.  Turn **Action center** on or off, depending on whether you want people to be able to use these features when using the device in kiosk mode.
 
 5.  Tap **advanced**, and then turn features on or off, depending on whether you want people to be able to use them.
 
-6.  Press **Back** ![back](../images/backicon.png) when you're done.
+6.  Press **Back** ![back.](../images/backicon.png) when you're done.
 
 **To use Apps Corner**
 
-1.  On Start ![start](../images/starticon.png), swipe over to the App list, then tap **Settings** ![settings](../images/settingsicon.png) &gt; **Accounts** &gt; **Apps Corner** &gt; launch ![launch](../images/launchicon.png).
+1.  On Start ![start.](../images/starticon.png), swipe over to the App list, then tap **Settings** ![settings](../images/settingsicon.png) &gt; **Accounts** &gt; **Apps Corner** &gt; launch ![launch](../images/launchicon.png).
 
     >[!TIP]
     >Want to get to Apps Corner with one tap? In **Settings**, tap **Apps Corner** &gt; **pin** to pin the Apps Corner tile to your Start screen.
   
 2.  Give the device to someone else, so they can use the device and only the one app you chose.
 
-3.  When they're done and you get the device back, press and hold Power ![power](../images/powericon.png), and then swipe right to exit Apps Corner.
+3.  When they're done and you get the device back, press and hold Power ![power.](../images/powericon.png), and then swipe right to exit Apps Corner.
 
 ## Related topics
 
 
-[Set up a kiosk on Windows 10 Pro, Enterprise, or Education](../set-up-a-kiosk-for-windows-10-for-desktop-editions.md)
+[Set up a kiosk on Windows 10 Pro, Enterprise, or Education](../kiosk-single-app.md)
 
 [Configure Windows 10 Mobile using Lockdown XML](lockdown-xml.md)
 
 [Product IDs in Windows 10 Mobile](product-ids-in-windows-10-mobile.md)
-
- 
-
-
 

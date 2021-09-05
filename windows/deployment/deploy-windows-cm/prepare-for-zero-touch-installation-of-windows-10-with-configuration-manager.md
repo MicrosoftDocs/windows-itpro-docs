@@ -22,21 +22,21 @@ ms.custom: seo-marvel-apr2020
 
 -   Windows 10
 
-This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Configuration Manager (ConfigMgr) [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT). 
+This topic will walk you through the Zero Touch Installation process of Windows 10 operating system deployment (OSD) using Microsoft Endpoint Manager (ConfigMgr) [integrated](#why-integrate-mdt-with-configuration-manager) with Microsoft Deployment Toolkit (MDT). 
 
 ## Prerequisites
 
 In this topic, you will use [components](#components-of-configuration-manager-operating-system-deployment) of an existing Configuration Manager infrastructure to prepare for Windows 10 OSD. In addition to the base setup, the following configurations should be made in the Configuration Manager environment:
 
 - Configuration Manager current branch + all security and critical updates are installed.
-  - Note: Procedures in this guide use ConfigMgr 1910. For information about the version of Windows 10 supported by ConfigMgr, see [Support for Windows 10](https://docs.microsoft.com/configmgr/core/plan-design/configs/support-for-windows-10).
-- The [Active Directory Schema has been extended](https://docs.microsoft.com/configmgr/core/plan-design/network/extend-the-active-directory-schema) and System Management container created.
-- Active Directory Forest Discovery and Active Directory System Discovery are [enabled](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/configure-discovery-methods).
-- IP range [boundaries and a boundary group](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups) for content and site assignment have been created.
-- The Configuration Manager [reporting services](https://docs.microsoft.com/configmgr/core/servers/manage/configuring-reporting) point role has been added and configured.
+  - Note: Procedures in this guide use ConfigMgr 1910. For information about the version of Windows 10 supported by ConfigMgr, see [Support for Windows 10](/configmgr/core/plan-design/configs/support-for-windows-10).
+- The [Active Directory Schema has been extended](/configmgr/core/plan-design/network/extend-the-active-directory-schema) and System Management container created.
+- Active Directory Forest Discovery and Active Directory System Discovery are [enabled](/configmgr/core/servers/deploy/configure/configure-discovery-methods).
+- IP range [boundaries and a boundary group](/configmgr/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups) for content and site assignment have been created.
+- The Configuration Manager [reporting services](/configmgr/core/servers/manage/configuring-reporting) point role has been added and configured.
 - A file system folder structure and Configuration Manager console folder structure for packages has been created. Steps to verify or create this folder structure are [provided below](#review-the-sources-folder-structure).
-- The [Windows ADK](https://docs.microsoft.com/windows-hardware/get-started/adk-install) (including USMT) version 1903, Windows PE add-on, WSIM 1903 update, [MDT](https://www.microsoft.com/download/details.aspx?id=54259) version 8456, and DaRT 10 (part of [MDOP 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015)) are installed.
-- The [CMTrace tool](https://docs.microsoft.com/configmgr/core/support/cmtrace) (cmtrace.exe) is installed on the distribution point.
+- The [Windows ADK](/windows-hardware/get-started/adk-install) (including USMT) version 1903, Windows PE add-on, WSIM 1903 update, [MDT](https://www.microsoft.com/download/details.aspx?id=54259) version 8456, and DaRT 10 (part of [MDOP 2015](https://my.visualstudio.com/Downloads?q=Desktop%20Optimization%20Pack%202015)) are installed.
+- The [CMTrace tool](/configmgr/core/support/cmtrace) (cmtrace.exe) is installed on the distribution point.
   - Note: CMTrace is automatically installed with the current branch of Configuration Manager at **Program Files\Microsoft Configuration Manager\tools\cmtrace.exe**. In previous releases of ConfigMgr it was necessary to install the [Configuration Manager Toolkit](https://www.microsoft.com/download/details.aspx?id=50012) separately to get the CMTrace tool, but this is no longer needed.  Configuraton Manager version 1910 installs version 5.0.8913.1000 of the CMTrace tool.
 
 For the purposes of this guide, we will use three server computers: DC01, CM01 and HV01. 
@@ -77,7 +77,7 @@ ForEach($entry in $oulist){
 }
 ```
 
-Next, copy the following list of OU names and paths into a text file and save it as <b>C:\Setup\Scripts\oulist.txt</b>
+Next, copy the following list of OU names and paths into a text file and save it as **C:\Setup\Scripts\oulist.txt**
 
 ```text
 OUName,OUPath
@@ -129,7 +129,7 @@ In order for the Configuration Manager Join Domain Account (CM\_JD) to join mach
 
 On **DC01**:
 
-1. Sign in as contoso\administrtor and enter the following at an elevated Windows PowerShell prompt:
+1. Sign in as contoso\administrator and enter the following at an elevated Windows PowerShell prompt:
 
    ``` 
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
@@ -209,7 +209,7 @@ On **CM01**:
    * Site Server Name: CM01.contoso.com
    * Site code: PS1
 
-![figure 8](../images/mdt-06-fig08.png)
+![figure 8.](../images/mdt-06-fig08.png)
 
 MDT integration with Configuration Manager.
 
@@ -223,11 +223,11 @@ On **CM01**:
 2.  In the right pane, right-click **Default Client Settings** and then click **Properties**.
 3.  In the **Computer Agent** node, in the **Organization name displayed in Software Center** text box, type in **Contoso** and click **OK**.
 
-![figure 9](../images/mdt-06-fig10.png)
+![figure 9.](../images/mdt-06-fig10.png)
 
 Configure the organization name in client settings.
 
-![figure 10](../images/fig10-contosoinstall.png)
+![figure 10.](../images/fig10-contosoinstall.png)
 
 The Contoso organization name displayed during deployment.
 
@@ -241,7 +241,7 @@ On **CM01**:
 2.  Right-click **PS1 - Primary Site 1**, point to **Configure Site Components**, and then select **Software Distribution**.
 3.  On the **Network Access Account** tab, select **Specify the account that accesses network locations** and add the *New Account* **CONTOSO\\CM\_NAA** as the Network Access account (password: pass@word1). Use the new **Verify** option to verify that the account can connect to the **\\\\DC01\\sysvol** network share.
 
-![figure 11](../images/mdt-06-fig12.png)
+![figure 11.](../images/mdt-06-fig12.png)
 
 Test the connection for the Network Access account.
 
@@ -261,22 +261,22 @@ On **CM01**:
     * Require a password when computers use PXE
     * Password and Confirm password: pass@word1
 
-    ![figure 12](../images/mdt-06-fig13.png)
+    ![figure 12.](../images/mdt-06-fig13.png)
 
     Configure the CM01 distribution point for PXE.
 
     >[!NOTE]
-    >If you select **Enable a PXE responder without Windows Deployment Service**, then WDS will not be installed, or if it is already installed it will be suspended, and the **ConfigMgr PXE Responder Service** (SccmPxe) will be used instead of WDS. The ConfigMgr PXE Responder does not support multicast. For more information, see [Install and configure distribution points](https://docs.microsoft.com/configmgr/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe).
+    >If you select **Enable a PXE responder without Windows Deployment Service**, then WDS will not be installed, or if it is already installed it will be suspended, and the **ConfigMgr PXE Responder Service** (SccmPxe) will be used instead of WDS. The ConfigMgr PXE Responder does not support multicast. For more information, see [Install and configure distribution points](/configmgr/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_config-pxe).
 
 4.  Using the CMTrace tool, review the C:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file. Look for ConfigurePXE and CcmInstallPXE lines.
 
-    ![figure 13](../images/mdt-06-fig14.png)
+    ![figure 13.](../images/mdt-06-fig14.png)
 
     The distmgr.log displays a successful configuration of PXE on the distribution point.
 
 5.  Verify that you have seven files in each of the folders **D:\\RemoteInstall\\SMSBoot\\x86** and **D:\\RemoteInstall\\SMSBoot\\x64**.
 
-    ![figure 14](../images/mdt-06-fig15.png)
+    ![figure 14.](../images/mdt-06-fig15.png)
 
     The contents of the D:\\RemoteInstall\\SMSBoot\\x64 folder after you enable PXE.
 
@@ -341,7 +341,7 @@ The task sequence uses instructions that allow you to reduce the number of task 
     MachineObjectOU=ou=desktops,ou=Contoso,dc=contoso,dc=com
     ```
 
-![figure 2](../images/fig2-gather.png)
+![figure 2.](../images/fig2-gather.png)
 
 The Gather action in the task sequence is reading the rules.
 
@@ -349,7 +349,7 @@ The Gather action in the task sequence is reading the rules.
 
 When testing a deployment, it is important to be able to quickly test any changes you make to the deployment without needing to run through an entire deployment. MDT rules can be tested very quickly, saving significant testing time in a deployment project. For more information, see [Configure MDT settings](../deploy-windows-mdt/configure-mdt-settings.md).
 
-![figure 3](../images/mdt-06-fig03.png)
+![figure 3.](../images/mdt-06-fig03.png)
 
 The folder that contains the rules, a few scripts from MDT, and a custom script (Gather.ps1).
 
@@ -357,7 +357,7 @@ The folder that contains the rules, a few scripts from MDT, and a custom script 
 
 With MDT integration, you can follow your deployments in real time, and if you have access to Microsoft Diagnostics and Recovery Toolkit (DaRT), you can even remote into Windows Preinstallation Environment (Windows PE) during deployment. The real-time monitoring data can be viewed from within the MDT Deployment Workbench, via a web browser, Windows PowerShell, the Event Viewer, or Microsoft Excel 2013. In fact, any script or app that can read an Open Data (OData) feed can read the information.
 
-![figure 4](../images/mdt-06-fig04.png)
+![figure 4.](../images/mdt-06-fig04.png)
 
 View the real-time monitoring data with PowerShell.
 
@@ -365,7 +365,7 @@ View the real-time monitoring data with PowerShell.
 
 For some deployment scenarios, you may need to prompt the user for information during deployment such as the computer name, the correct organizational unit (OU) for the computer, or which applications should be installed by the task sequence. With MDT integration, you can enable the User-Driven Installation (UDI) wizard to gather the required information, and customize the wizard using the UDI Wizard Designer.
 
-![figure 5](../images/mdt-06-fig05.png)
+![figure 5.](../images/mdt-06-fig05.png)
 
 The optional UDI wizard open in the UDI Wizard Designer.
 
@@ -386,7 +386,7 @@ You can create reference images for Configuration Manager in Configuration Manag
 [Add a Windows 10 operating system image using Configuration Manager](add-a-windows-10-operating-system-image-using-configuration-manager.md)<br>
 [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
 [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Create a task sequence with Configuration Manager and MDT](./create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
 [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
 [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)

@@ -4,9 +4,9 @@ description: This section describes the DeviceInfo settings that you can configu
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: article
 ms.date: 09/21/2017
 ms.reviewer: 
@@ -39,7 +39,7 @@ This string is not visible to the user.
 
 This setting must not be changed over time even if the user switches SIMs or mobile operators, as updates are always targeted based on the first mobile operator associated with the phone.
 
-The [PhoneManufacturer](https://msdn.microsoft.com/library/windows/hardware/mt138328.aspx), [PhoneManufacturerModelName](https://msdn.microsoft.com/library/windows/hardware/mt138336.aspx), and PhoneMobileOperatorName should create a unique Phone-Operator-Pairing (POP).
+The [PhoneManufacturer](/previous-versions/windows/hardware/previsioning-framework/mt138328(v=vs.85)), [PhoneManufacturerModelName](/previous-versions/windows/hardware/previsioning-framework/mt138336(v=vs.85)), and PhoneMobileOperatorName should create a unique Phone-Operator-Pairing (POP).
 
 
 
@@ -63,5 +63,4 @@ This setting varies by OEM.
 
 ## PhoneSupportPhoneNumber
 
-Use to specify the OEM or mobile operator's support contact phone number. The country code is not required. This string is displayed in the About screen in Settings. This setting also corresponds to the Genuine Windows Phone Certificates (GWPC) support number. 
-
+Use to specify the OEM or mobile operator's support contact phone number. The country code is not required. This string is displayed in the About screen in Settings. This setting also corresponds to the Genuine Windows Phone Certificates (GWPC) support number.

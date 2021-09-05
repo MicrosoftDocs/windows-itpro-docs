@@ -4,7 +4,7 @@ description: This example features a fictitious company and illustrates firewall
 ms.assetid: 0dc3bcfe-7a4d-4a15-93a9-64b13bd775a7
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Basic Firewall Policy Design Example
@@ -37,7 +38,7 @@ The network administrators want to implement Windows Defender Firewall with Adva
 
 The following illustration shows the traffic protection needs for this design example.
 
-![design example 1](images/wfas-designexample1.gif)
+![design example 1.](images/wfas-designexample1.gif)
 
 1.  The network infrastructure servers that are running services, such as Active Directory, DNS, DHCP, or WINS, can receive unsolicited inbound requests from network clients. The network clients can receive the responses from the infrastructure servers.
 

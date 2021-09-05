@@ -1,6 +1,6 @@
 ---
-title: Windows Hello for Business (Windows 10)
-description: Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. 
+title: Windows Hello for Business Deployment Prerequisite Overview
+description: Overview of all the different infrastructure requirements for Windows Hello for Business deployment models
 ms.assetid: 5BF09642-8CF5-4FBC-AC9A-5CA51E19387E
 ms.reviewer: 
 keywords: identity, PIN, biometric, Hello, passport
@@ -15,39 +15,25 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 localizationpriority: medium
-ms.date: 05/05/2018
+ms.date: 1/22/2021
 ---
 
-# Windows Hello for Business
+# Windows Hello for Business Deployment Prerequisite Overview
 
-In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN.</br>
-Windows Hello for Business lets user authenticate to an Active Directory or Azure Active Directory account.
+This article lists the infrastructure requirements for the different deployment models for Windows Hello for Business.
 
-Windows Hello addresses the following problems with passwords:
-
-- Strong passwords can be difficult to remember, and users often reuse passwords on multiple sites.
-- Server breaches can expose symmetric network credentials (passwords).
-- Passwords are subject to [replay attacks](https://go.microsoft.com/fwlink/p/?LinkId=615673).
-- Users can inadvertently expose their passwords due to [phishing attacks](https://docs.microsoft.com/windows/security/threat-protection/intelligence/phishing).
-
-> | | | |
-> | :---: | :---: | :---: |
-> | [![Overview Icon](images/hello_filter.png)](hello-overview.md)</br>[Overview](hello-overview.md) | [![Why a PIN is better than a password Icon](images/hello_lock.png)](hello-why-pin-is-better-than-password.md)</br>[Why PIN is better than a password](hello-why-pin-is-better-than-password.md) | [![Manage Hello Icon](images/hello_gear.png)](hello-manage-in-organization.md)</br>[Manage Windows Hello in your Organization](hello-manage-in-organization.md) |
-
-## Prerequisites
-
-### Cloud Only Deployment
+## Cloud Only Deployment
 
 * Windows 10, version 1511 or later
 * Microsoft Azure Account
 * Azure Active Directory
-* Azure Multi-factor authentication
+* Azure AD Multi-Factor Authentication
 * Modern Management (Intune or supported third-party MDM), *optional*
 * Azure AD Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Azure Active Directory
 
-### Hybrid Deployments
+## Hybrid Deployments
 
-The table shows the minimum requirements for each deployment. For key trust in a multi-domain/multi-forest deployment, the following requirements are applicable for each domain/forest that hosts Windows Hello for business components or is involved in the Kerberos referral process. 
+The table shows the minimum requirements for each deployment. For key trust in a multi-domain/multi-forest deployment, the following requirements are applicable for each domain/forest that hosts Windows Hello for business components or is involved in the Kerberos referral process.
 
 | Key trust</br>Group Policy managed | Certificate trust</br>Mixed managed | Key trust</br>Modern managed | Certificate trust</br>Modern managed | 
 | --- | --- | --- | --- |
@@ -75,7 +61,7 @@ The table shows the minimum requirements for each deployment. For key trust in a
 > Reset above lock screen - Windows 10, version 1709, Professional</br>
 > Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
-### On-premises Deployments
+## On-premises Deployments
 
 The table shows the minimum requirements for each deployment.
 
@@ -91,4 +77,4 @@ The table shows the minimum requirements for each deployment.
 | Azure Account, optional for Azure MFA billing | Azure Account, optional for Azure MFA billing |
 
 > [!IMPORTANT]
-> For Windows Hello for Business key trust deployments, if you have several domains, at least one Windows Server Domain Controller 2016 or newer is required for each domain. For more information, see the [planning guide](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-adequate-domain-controllers).
+> For Windows Hello for Business key trust deployments, if you have several domains, at least one Windows Server Domain Controller 2016 or newer is required for each domain. For more information, see the [planning guide](./hello-adequate-domain-controllers.md).

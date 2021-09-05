@@ -4,7 +4,7 @@ description: Restrict access to devices and users that are members of domain gro
 ms.assetid: a6106a07-f9e5-430f-8dbd-06d3bf7406df
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Restrict Access to Only Specified Users or Computers
@@ -33,7 +34,7 @@ You can restrict access by specifying either computer or user credentials.
 
 The following illustration shows an isolated server, and examples of devices that can and cannot communicate with it. Devices that are outside the Woodgrove corporate network, or computers that are in the isolated domain but are not members of the required NAG, cannot communicate with the isolated server.
 
-![isolated domain with network access groups](images/wfas-domainnag.gif)
+![isolated domain with network access groups.](images/wfas-domainnag.gif)
 
 This goal, which corresponds to [Server Isolation Policy Design](server-isolation-policy-design.md), provides the following features:
 

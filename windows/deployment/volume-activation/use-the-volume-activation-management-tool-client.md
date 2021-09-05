@@ -51,7 +51,7 @@ You can use the VAMT to complete the activation process in products by using MAK
 
 The VAMT provides an overview of the activation and licensing status of computers across your network, as shown in Figure 18. Several prebuilt reports are also available to help you proactively manage licensing.
 
-![VAMT showing the licensing status of multiple computers](../images/volumeactivationforwindows81-18.jpg)
+![VAMT showing the licensing status of multiple computers.](../images/volumeactivationforwindows81-18.jpg)
 
 **Figure 18**. The VAMT showing the licensing status of multiple computers
 
@@ -59,7 +59,7 @@ The VAMT provides an overview of the activation and licensing status of computer
 
 The VAMT makes it easier to track the various keys that are issued to your organization. You can enter each key into VAMT, and then the VAMT can use those keys for online or proxy activation of clients. The tool can also describe what type of key it is and to which product group it belongs. The VAMT is the most convenient way to quickly determine how many activations remain on a MAK. Figure 19 shows an example of key types and usage.
 
-![VAMT showing key types and usage](../images/volumeactivationforwindows81-19.jpg)
+![VAMT showing key types and usage.](../images/volumeactivationforwindows81-19.jpg)
 
 **Figure 19**. The VAMT showing key types and usage
 
@@ -71,8 +71,8 @@ The VAMT stores information in a Microsoft SQL Server database for performance 
 -   **Managing activation data**. The VAMT stores activation data in a SQL Server database. The tool can export this data in XML format to other VAMT hosts or to an archive.
 
 For more information, see:
--   [Volume Activation Management Tool (VAMT) Overview](https://go.microsoft.com/fwlink/p/?LinkId=618266)
--   [VAMT Step-by-Step Scenarios](https://go.microsoft.com/fwlink/p/?LinkId=618267)
+-   [Volume Activation Management Tool (VAMT) Overview](./volume-activation-management-tool.md)
+-   [VAMT Step-by-Step Scenarios](./vamt-step-by-step.md)
 
 ## See also
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)

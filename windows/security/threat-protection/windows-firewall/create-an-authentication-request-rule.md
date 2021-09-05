@@ -4,7 +4,7 @@ description: Create a new rule for Windows Defender Firewall with Advanced Secur
 ms.assetid: 1296e048-039f-4d1a-aaf2-8472ad05e359
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Create an Authentication Request Rule
@@ -31,7 +32,7 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 To create the authentication request rule:
 
-1. Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
+1.  Open the Group Policy Management Console to [Windows Defender Firewall with Advanced Security](open-the-group-policy-management-console-to-windows-firewall-with-advanced-security.md).
 
 2.  In the navigation pane, right-click **Connection Security Rules**, and then click **New Rule**.
 
@@ -54,32 +55,32 @@ To create the authentication request rule:
         
 6.  Optional: If you selected **Advanced** in the previous step, then Click **Customize** to specify a custom combination of authentication methods required for your scenario. You can specify both a **First authentication method** and a **Second authentication method**.
 
-        The **First authentication method** can be one of the following:
+    The **First authentication method** can be one of the following:
 
-        -   **Computer (Kerberos V5)**. Selecting this option tells the device to request authentication of the device by using its domain credentials. This option works with other devices than can use IKE v1, including earlier versions of Windows.
+    -   **Computer (Kerberos V5)**. Selecting this option tells the device to request authentication of the device by using its domain credentials. This option works with other devices than can use IKE v1, including earlier versions of Windows.
 
-        -   **Computer (NTLMv2)**. Selecting this option tells the device to use and require authentication of the device by using its domain credentials. This option works only with other devices that can use AuthIP. User-based authentication using Kerberos V5 is not supported by IKE v1.
+    -   **Computer (NTLMv2)**. Selecting this option tells the device to use and require authentication of the device by using its domain credentials. This option works only with other devices that can use AuthIP. User-based authentication using Kerberos V5 is not supported by IKE v1.
 
-        -   **Computer certificate from this certification authority (CA)**. Selecting this option and entering the identification of a CA tells the device to request authentication by using a certificate that is issued by the specified CA. If you also select **Accept only health certificates**, then only certificates issued by a NAP server can be used for this rule.
+    -   **Computer certificate from this certification authority (CA)**. Selecting this option and entering the identification of a CA tells the device to request authentication by using a certificate that is issued by the specified CA. If you also select **Accept only health certificates**, then only certificates issued by a NAP server can be used for this rule.
 
-        -   **Preshared key (not recommended)**. Selecting this method and entering a pre-shared key tells the device to authenticate by exchanging the pre-shared keys. If the keys match, then the authentication succeeds. This method is not recommended, and is included for backward compatibility and testing purposes only.
+    -   **Preshared key (not recommended)**. Selecting this method and entering a pre-shared key tells the device to authenticate by exchanging the pre-shared keys. If the keys match, then the authentication succeeds. This method is not recommended, and is included for backward compatibility and testing purposes only.
 
-        If you select **First authentication is optional**, then the connection can succeed even if the authentication attempt specified in this column fails.
+    If you select **First authentication is optional**, then the connection can succeed even if the authentication attempt specified in this column fails.
 
-        The **Second authentication method** can be one of the following:
+    The **Second authentication method** can be one of the following:
 
-        -   **User (Kerberos V5)**. Selecting this option tells the device to use and require authentication of the currently logged-on user by using his or her domain credentials. This authentication method works only with other devices that can use AuthIP. User-based authentication using Kerberos V5 is not supported by IKE v1.
+    -   **User (Kerberos V5)**. Selecting this option tells the device to use and require authentication of the currently logged-on user by using his or her domain credentials. This authentication method works only with other devices that can use AuthIP. User-based authentication using Kerberos V5 is not supported by IKE v1.
 
-        -   **User (NTLMv2)**. Selecting this option tells the device to use and require authentication of the currently logged-on user by using his or her domain credentials, and uses the NTLMv2 protocol instead of Kerberos V5. This authentication method works only with other devices that can use AuthIP. User-based authentication using NTLMv2 is not supported by IKE v1.
+    -   **User (NTLMv2)**. Selecting this option tells the device to use and require authentication of the currently logged-on user by using his or her domain credentials, and uses the NTLMv2 protocol instead of Kerberos V5. This authentication method works only with other devices that can use AuthIP. User-based authentication using NTLMv2 is not supported by IKE v1.
 
-        -   **User health certificate from this certification authority (CA)**. Selecting this option and entering the identification of a CA tells the device to request user-based authentication by using a certificate that is issued by the specified CA. If you also select **Enable certificate to account mapping**, then the certificate can be associated with a user in Active Directory for purposes of granting or denying access to certain users or user groups.
+    -   **User health certificate from this certification authority (CA)**. Selecting this option and entering the identification of a CA tells the device to request user-based authentication by using a certificate that is issued by the specified CA. If you also select **Enable certificate to account mapping**, then the certificate can be associated with a user in Active Directory for purposes of granting or denying access to certain users or user groups.
 
-        -   **Computer health certificate from this certification authority (CA)**. Selecting this option and entering the identification of a CA tells the device to use and require authentication by using a certificate that is issued by the specified CA. If you also select **Accept only health certificates**, then only certificates issued by a NAP server can be used for this rule.
+    -   **Computer health certificate from this certification authority (CA)**. Selecting this option and entering the identification of a CA tells the device to use and require authentication by using a certificate that is issued by the specified CA. If you also select **Accept only health certificates**, then only certificates issued by a NAP server can be used for this rule.
 
-        If you check **Second authentication is optional**, the connection can succeed even if the authentication attempt specified in this column fails.
+    If you check **Second authentication is optional**, the connection can succeed even if the authentication attempt specified in this column fails.
 
-        > [!IMPORTANT]
-        > Make sure that you do not select the boxes to make both first and second authentication optional. Doing so allows plaintext connections whenever authentication fails.
+    > [!IMPORTANT]
+    > Make sure that you do not select the boxes to make both first and second authentication optional. Doing so allows plaintext connections whenever authentication fails.
 
 7.  After you have configured the authentication methods, click **OK** on each dialog box to save your changes and close it, until you return to the **Authentication Method** page in the wizard. Click **Next**.
 

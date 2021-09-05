@@ -34,7 +34,7 @@ Three computers are used in this topic: DC01, MDT01, and PC0002.
 - MDT01 is a domain member server 
 - PC0002 is a domain member computer running Windows 7 SP1, targeted for the Windows 10 upgrade
 
- ![computers](../images/mdt-upgrade.png)
+ ![computers.](../images/mdt-upgrade.png)
 
  The computers used in this topic.
 
@@ -96,19 +96,19 @@ On **PC0002**:
 4. On the **Ready** tab, click **Begin** to start the task sequence.
    When the task sequence begins, it automatically initiates the in-place upgrade process by invoking the Windows setup program (Setup.exe) with the necessary command-line parameters to perform an automated upgrade, which preserves all data, settings, apps, and drivers.
 
-![upgrade1](../images/upgrademdt-fig5-winupgrade.png)
+![upgrade1.](../images/upgrademdt-fig5-winupgrade.png)
 
 <br>
 
-![upgrade2](../images/mdt-upgrade-proc.png)
+![upgrade2.](../images/mdt-upgrade-proc.png)
 
 <br>
 
-![upgrade3](../images/mdt-post-upg.png)
+![upgrade3.](../images/mdt-post-upg.png)
 
 After the task sequence completes, the computer will be fully upgraded to Windows 10.
 
 ## Related topics
 
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
-[Microsoft Deployment Toolkit downloads and resources](https://go.microsoft.com/fwlink/p/?LinkId=618117)
+[Microsoft Deployment Toolkit downloads and resources](/mem/configmgr/mdt/)

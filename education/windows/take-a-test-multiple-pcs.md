@@ -30,7 +30,7 @@ To configure a dedicated test account on multiple PCs, select any of the followi
 - [Configuration in Intune for Education](#set-up-a-test-account-in-intune-for-education)
 - [Mobile device management (MDM) or Microsoft Endpoint Configuration Manager](#set-up-a-test-account-in-mdm-or-configuration-manager)
 - [Provisioning package created through Windows Configuration Designer](#set-up-a-test-account-through-windows-configuration-designer)
-- [Group Policy to deploy a scheduled task that runs a Powershell script](https://docs.microsoft.com/education/windows/take-a-test-multiple-pcs#create-a-scheduled-task-in-group-policy) 
+- [Group Policy to deploy a scheduled task that runs a Powershell script](#create-a-scheduled-task-in-group-policy) 
 
 ### Set up a test account in the Set up School PCs app 
 If you want to set up a test account using the Set up School PCs app, configure the settings in the **Set up the Take a Test app** page in the Set up School PCs app. Follow the instructions in [Use the Set up School PCs app](use-set-up-school-pcs-app.md) to configure the test-taking account and create a provisioning package. 
@@ -39,7 +39,7 @@ If you set up Take a Test, this adds a **Take a Test** button on the student PC'
 
 **Figure 1** - Configure Take a Test in the Set up School PCs app
 
-![Configure Take a Test in the Set up School PCs app](images/suspc_choosesettings_setuptakeatest.png)
+![Configure Take a Test in the Set up School PCs app.](images/suspc_choosesettings_setuptakeatest.png)
 
 ### Set up a test account in Intune for Education
 You can set up a test-taking account in Intune for Education. To do this, follow these steps:
@@ -49,7 +49,7 @@ You can set up a test-taking account in Intune for Education. To do this, follow
 
     **Figure 2** - Add a test profile in Intune for Education
 
-    ![Add a test profile in Intune for Education](images/i4e_takeatestprofile_addnewprofile.png)
+    ![Add a test profile in Intune for Education.](images/i4e_takeatestprofile_addnewprofile.png)
 
 3. In the new profile page:
    1. Enter a name for the profile.
@@ -60,7 +60,7 @@ You can set up a test-taking account in Intune for Education. To do this, follow
 
       **Figure 3** - Add information about the test profile
 
-      ![Add information about the test profile](images/i4e_takeatestprofile_newtestaccount.png)
+      ![Add information about the test profile.](images/i4e_takeatestprofile_newtestaccount.png)
 
       After you save the test profile, you will see a summary of the settings that you configured for Take a Test. Next, you'll need to assign the test profile to a group that will be using the test account.
     
@@ -68,13 +68,13 @@ You can set up a test-taking account in Intune for Education. To do this, follow
 
    **Figure 4** - Assign the test account to a group
 
-   ![Assign the test account to a group](images/i4e_takeatestprofile_accountsummary.png)
+   ![Assign the test account to a group.](images/i4e_takeatestprofile_accountsummary.png)
 
 5. In the **Groups** page, click **Change group assignments**.
 
     **Figure 5** - Change group assignments
 
-    ![Change group assignments](images/i4e_takeatestprofile_groups_changegroupassignments.png)
+    ![Change group assignments.](images/i4e_takeatestprofile_groups_changegroupassignments.png)
 
 6. In the **Change group assignments** page:
    1. Select a group from the right column and click **Add Members** to select the group and assign the test-taking account to that group. You can select more than one group. 
@@ -82,7 +82,7 @@ You can set up a test-taking account in Intune for Education. To do this, follow
 
       **Figure 6** - Select the group(s) that will use the test account
 
-      ![Select the groups that will use the test account](images/i4e_takeatestprofile_groupassignment_selected.png)
+      ![Select the groups that will use the test account.](images/i4e_takeatestprofile_groupassignment_selected.png)
 
 And that's it! When the students from the selected group sign in to the student PCs using the Take a Test user name that you selected, the PC will be locked down and Take a Test will open the assessment URL and students can start taking tests.
 
@@ -128,15 +128,15 @@ You can configure a dedicated testing account through MDM or Configuration Manag
 ### Set up a test account through Windows Configuration Designer
 To set up a test account through Windows Configuration Designer, follow these steps.
 
-1. [Install Windows Configuration Designer](https://technet.microsoft.com/itpro/windows/configure/provisioning-install-icd).
-2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
+1. [Install Windows Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd).
+2. Create a provisioning package by following the steps in [Provision PCs with common settings for initial deployment (desktop wizard)](/windows/configuration/provisioning-packages/provision-pcs-for-initial-deployment). However, make a note of these other settings to customize the test account.
    1. After you're done with the wizard, do not click **Create**. Instead, click the **Switch to advanced editor** to switch the project to the advanced editor to see all the available **Runtime settings**.
    2. Under **Runtime settings**, go to **AssignedAccess > AssignedAccessSettings**.
    3. Enter **{"Account":"*redmond\\kioskuser*","AUMID":” Microsoft.Windows.SecureAssessmentBrowser_cw5n1h2txyewy!App "}**, using the account that you want to set up.
 
       **Figure 7** - Add the account to use for test-taking
 
-      ![Add the account to use for test-taking](images/wcd_settings_assignedaccess.png)
+      ![Add the account to use for test-taking.](images/wcd_settings_assignedaccess.png)
 
       The account can be in one of the following formats:
       - username
@@ -148,12 +148,12 @@ To set up a test account through Windows Configuration Designer, follow these st
       - In **LaunchURI**, enter the assessment URL.
       - In **TesterAccount**, enter the test account you entered in step 3.
 
-3. Follow the steps to [build a package](https://technet.microsoft.com/itpro/windows/configure/provisioning-create-package#build-package). 
+3. Follow the steps to [build a package](/windows/configuration/provisioning-packages/provisioning-create-package#build-package). 
 
    - You will see the file path for your provisioning package. By default, this is set to %windir%\Users\*your_username<em>\Windows Imaging and Configuration Designer (WICD)\*Project name</em>). 
    - Copy the provisioning package to a USB drive.
 
-4. Follow the steps in [Apply a provisioning package](https://technet.microsoft.com/itpro/windows/configure/provisioning-apply-package) to apply the package that you created.
+4. Follow the steps in [Apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-apply-package) to apply the package that you created.
 
 ### Set up a tester account in Group Policy
 To set up a tester account using Group Policy, first create a Powershell script that configures the tester account and assessment URL, and then create a scheduled task to run the script.
@@ -166,7 +166,7 @@ This sample PowerShell script configures the tester account and the assessment U
 - Use your tester account for **-UserName**
 
 >[!NOTE]
->The account that you specify for the tester account must already exist on the device. For steps to create the tester account, see [Set up a dedicated test account](https://docs.microsoft.com/education/windows/take-a-test-single-pc#set-up-a-dedicated-test-account).
+>The account that you specify for the tester account must already exist on the device. For steps to create the tester account, see [Set up a dedicated test account](./take-a-test-single-pc.md#set-up-a-dedicated-test-account).
 
 ```powershell
 $obj = get-wmiobject -namespace root/cimv2/mdm/dmmap -class MDM_SecureAssessment -filter "InstanceID='SecureAssessment' AND ParentID='./Vendor/MSFT'";

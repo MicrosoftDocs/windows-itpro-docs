@@ -1,10 +1,10 @@
 ---
-title: Select the types of rules to create (Windows 10)
+title: Select the types of rules to create (Windows)
 description: This topic lists resources you can use when selecting your application control policy rules by using AppLocker.
 ms.assetid: 14751169-0ed1-47cc-822c-8c01a7477784
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Select the types of rules to create
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic lists resources you can use when selecting your application control policy rules by using AppLocker.
 

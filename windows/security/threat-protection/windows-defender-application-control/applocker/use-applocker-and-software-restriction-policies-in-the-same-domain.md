@@ -1,10 +1,10 @@
 ---
-title: Use AppLocker and Software Restriction Policies in the same domain (Windows 10)
+title: Use AppLocker and Software Restriction Policies in the same domain (Windows)
 description: This topic for IT professionals describes concepts and procedures to help you manage your application control strategy using Software Restriction Policies and AppLocker.
 ms.assetid: 2b7e0cec-df62-49d6-a2b7-6b8e30180943
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Use AppLocker and Software Restriction Policies in the same domain
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes concepts and procedures to help you manage your application control strategy using Software Restriction Policies and AppLocker.
 
@@ -70,8 +76,8 @@ The following table compares the features and functions of Software Restriction 
 <tr class="odd">
 <td align="left"><p>Enforcement mode</p></td>
 <td align="left"><p>SRP works in the “deny list mode” where administrators can create rules for files that they do not want to allow in this Enterprise whereas the rest of the file is allowed to run by default.</p>
-<p>SRP can also be configured in the “allow list mode” so that by default all files are blocked and administrators need to create allow rules for files that they want to allow.</p></td>
-<td align="left"><p>AppLocker by default works in the “allow list mode” where only those files are allowed to run for which there is a matching allow rule.</p></td>
+<p>SRP can also be configured in the “allowlist mode” so that by default all files are blocked and administrators need to create allow rules for files that they want to allow.</p></td>
+<td align="left"><p>AppLocker by default works in the “allowlist mode” where only those files are allowed to run for which there is a matching allow rule.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>File types that can be controlled</p></td>
@@ -125,7 +131,7 @@ The following table compares the features and functions of Software Restriction 
 <td align="left"><p>Editing the hash value</p></td>
 <td align="left"><p>In Windows XP, you could use SRP to provide custom hash values.</p>
 <p>Beginning with Windows 7 and Windows Server 2008 R2, you can only select the file to hash, not provide the hash value.</p></td>
-<td align="left"><p>AppLocker computes the hash value itself. Internally, it uses the SHA2 Authenticode hash for Portable Executables (exe and dll) and Windows Installers and a SHA2 flat file hash for the rest.</p></td>
+<td align="left"><p>AppLocker computes the hash value itself. Internally, it uses the SHA2 Authenticode hash for Portable Executables (exe and dll) and Windows Installers and an SHA2 flat file hash for the rest.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Support for different security levels</p></td>

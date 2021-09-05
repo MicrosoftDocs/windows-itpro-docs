@@ -20,13 +20,13 @@ manager: dansimp
 -   Windows 10  
 
 
-To create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home, follow the steps in [Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps).
+To create and apply a provisioning package that contains apps to a device running all desktop editions of Windows 10 except Windows 10 Home, follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps).
 
 Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more.
 
 You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices. 
-- If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps). 
-- If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md). Set up School PCs now lets you add recommended apps from the Store so you can add these apps while you're creating your package through Set up School PCs. You can also follow the steps in [Provision PCs with apps](https://technet.microsoft.com/itpro/windows/configure/provision-pcs-with-apps) if you want to add apps to student PCs after initial setup with the Set up School PCs package.
+- If you want to [provision a school PC to join a domain](set-up-students-pcs-to-join-domain.md) and add apps in the same provisioning package, follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps). 
+- If you want to provision a school PC to join Azure AD, set up the PC using the steps in [Use Set up School PCs App](use-set-up-school-pcs-app.md). Set up School PCs now lets you add recommended apps from the Store so you can add these apps while you're creating your package through Set up School PCs. You can also follow the steps in [Provision PCs with apps](/windows/configuration/provisioning-packages/provision-pcs-with-apps) if you want to add apps to student PCs after initial setup with the Set up School PCs package.
 
 <!--
 ## Add apps to a provisioning package
@@ -35,7 +35,7 @@ You can apply a provisioning package on a USB drive to off-the-shelf devices dur
 2. 
 2. On the **Finish** page, select **Switch to advanced editor**.
 
-  ![Switch to advanced editor](images/icd-school-adv-edit.png)
+  ![Switch to advanced editor.](images/icd-school-adv-edit.png)
 
 **Next steps**
 - [Add a desktop app to your package](#add-a-desktop-app-to-your-package)
@@ -52,7 +52,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 2. Click **Advanced provisioning**.
 
-  ![ICD start options](images/icdstart-option.png)  
+  ![ICD start options.](images/icdstart-option.png)  
   
 3. Name your project and click **Next**.
 
@@ -74,7 +74,7 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 3. Go to **Runtime settings** > **ProvisioningCommands** > **DeviceContext** > **CommandLine** and specify the command line that needs to be executed to install the app. This is a single command line (such as a script, executable, or msi) that triggers a silent install of your CommandFiles. Note that the install must execute silently (without displaying any UI). For MSI installers use, the msiexec /quiet option. 
 
 > [!NOTE] 
-> If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](https://msdn.microsoft.com/library/windows/hardware/mt703295%28v=vs.85%29.aspx). 
+> If you are installing more than one app, then use CommandLine to invoke the script or batch file that orchestrates installation of the files. For more information, see [Install a Win32 app using a provisioning package](/windows/configuration/provisioning-packages/provisioning-script-to-install-app). 
 
 **Next steps**
 - (optional) [Add a universal app to your package](#add-a-universal-app-to-your-package)
@@ -83,25 +83,25 @@ Use the Windows Imaging and Configuration Designer (ICD) tool included in the Wi
 
 ## Add a universal app to your package
 
-Universal apps that you can distribute in the provisioning package can be line-of-business (LOB) apps developed by your organization, Microsoft Store for Business apps that you acquire with [offline licensing](https://technet.microsoft.com/itpro/windows/manage/acquire-apps-windows-store-for-business), or third-party apps. This procedure will assume you are distributing apps from the Microsoft Store for Business. For other apps, obtain the necessary information (such as the package family name) from the app developer. 
+Universal apps that you can distribute in the provisioning package can be line-of-business (LOB) apps developed by your organization, Microsoft Store for Business apps that you acquire with [offline licensing](/microsoft-store/acquire-apps-microsoft-store-for-business), or third-party apps. This procedure will assume you are distributing apps from the Microsoft Store for Business. For other apps, obtain the necessary information (such as the package family name) from the app developer. 
 
 1. In the **Available customizations** pane, go to **Runtime settings** > **UniversalAppInstall**. 
 
 2. For **DeviceContextApp**, specify the **PackageFamilyName** for the app. In Microsoft Store for Business, the package family name is listed in the **Package details** section of the download page.
 
-    ![details for offline app package](images/uwp-family.png)
+    ![details for offline app package.](images/uwp-family.png)
 
 3. For **ApplicationFile**, click **Browse** to find and select the target app (either an \*.appx or \*.appxbundle).
 
 4. For **DependencyAppxFiles**, click **Browse** to find and add any dependencies for the app. In Microsoft Store for Business, any dependencies for the app are listed in the **Required frameworks** section of the download page. 
 
-    ![required frameworks for offline app package](images/uwp-dependencies.png)
+    ![required frameworks for offline app package.](images/uwp-dependencies.png)
 
 5. For **DeviceContextAppLicense**, enter the **LicenseProductID**. In Microsoft Store for Business, you generate the license for the app on the app's download page.
 
-    ![generate license for offline app](images/uwp-license.png)
+    ![generate license for offline app.](images/uwp-license.png)
 
-[Learn more about distributing offline apps from the Microsoft Store for Business.](https://technet.microsoft.com/itpro/windows/manage/distribute-offline-apps)
+[Learn more about distributing offline apps from the Microsoft Store for Business.](/microsoft-store/distribute-offline-apps)
 
 > [!NOTE]  
 > Removing a provisioning package will not remove any apps installed by device context in that provisioning package.
@@ -168,7 +168,7 @@ If your build is successful, the name of the provisioning package, output direct
 **During initial setup, from a USB drive**
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
-    ![The first screen to set up a new PC](images/oobe.jpg)
+    ![The first screen to set up a new PC.](images/oobe.jpg)
 
 2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
@@ -176,11 +176,11 @@ If your build is successful, the name of the provisioning package, output direct
 
 3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
 
-    ![Provision this device](images/prov.jpg)
+    ![Provision this device.](images/prov.jpg)
     
 4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
 
-    ![Choose a package](images/choose-package.png)
+    ![Choose a package.](images/choose-package.png)
 
 5. Select **Yes, add it**.
 
@@ -188,11 +188,11 @@ If your build is successful, the name of the provisioning package, output direct
     
 6. Read and accept the Microsoft Software License Terms.  
 
-    ![Sign in](images/license-terms.png)
+    ![Sign in.](images/license-terms.png)
     
 7. Select **Use Express settings**.
 
-    ![Get going fast](images/express-settings.png)
+    ![Get going fast.](images/express-settings.png)
 
 8. If the PC doesn't use a volume license, you'll see the **Who owns this PC?** screen. Select **My work or school owns it** and tap **Next**.
 
@@ -200,24 +200,24 @@ If your build is successful, the name of the provisioning package, output direct
 
 9. On the **Choose how you'll connect** screen, select **Join Azure AD** or **Join a domain** and tap **Next**.
 
-    ![Connect to Azure AD](images/connect-aad.png)
+    ![Connect to Azure AD.](images/connect-aad.png)
 
 10. Sign in with  your domain, Azure AD,  or Office 365 account and password. When you see the progress ring, you can remove the USB drive.
 
-    ![Sign in](images/sign-in-prov.png)
+    ![Sign in.](images/sign-in-prov.png)
 
     
 **After setup, from a USB drive, network folder, or SharePoint site**
 
 On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and select the package to install. 
 
-![add a package option](images/package.png)
+![add a package option.](images/package.png)
 
 -->
 
 ## Learn more
 
--  [Develop Universal Windows Education apps](https://msdn.microsoft.com/windows/uwp/apps-for-education/index)
+-  [Develop Universal Windows Education apps](/windows/uwp/apps-for-education/)
 
 -   [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=629651)
 
@@ -225,4 +225,3 @@ On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work ac
 
 -   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
  
-

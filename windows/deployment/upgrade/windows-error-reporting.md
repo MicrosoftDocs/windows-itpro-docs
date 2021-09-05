@@ -63,12 +63,12 @@ Ten parameters are listed in the event:
 
 The event will also contain links to log files that can be used to perform a detailed diagnosis of the error.  An example of this event from a successful upgrade is shown below.
 
-![Windows Error Reporting](../images/event.png)
+![Windows Error Reporting.](../images/event.png)
 
 ## Related topics
 
-[Windows 10 FAQ for IT professionals](https://technet.microsoft.com/windows/dn798755.aspx)  
+[Windows 10 FAQ for IT professionals](../planning/windows-10-enterprise-faq-itpro.yml)  
 [Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)  
 [Windows 10 Specifications](https://www.microsoft.com/windows/Windows-10-specifications)  
 [Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)  
-[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)  
+[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)

@@ -8,8 +8,8 @@ keywords: ["Start layout", "start menu"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -39,7 +39,7 @@ Three features enable Start and taskbar layout control:
 -   The **Export-StartLayout** cmdlet in Windows PowerShell exports a description of the current Start layout in .xml file format. 
 
     > [!NOTE]
-    > To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](https://docs.microsoft.com/powershell/module/startlayout/import-startlayout) cmdlet.
+    > To import the layout of Start to a mounted Windows image, use the [Import-StartLayout](/powershell/module/startlayout/import-startlayout) cmdlet.
 
 -    [You can modify the Start .xml file](configure-windows-10-taskbar.md) to include  `<CustomTaskbarLayoutCollection>` or create an .xml file just for the taskbar configuration.
 
@@ -87,7 +87,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 7. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
 
-    ![Customizations file with the placeholder text to replace highlighted](images/customization-start.png)
+    ![Customizations file with the placeholder text to replace highlighted.](images/customization-start.png)
 
 7. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
 

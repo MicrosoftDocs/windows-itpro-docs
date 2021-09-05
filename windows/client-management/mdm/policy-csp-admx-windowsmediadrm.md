@@ -74,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting prevents Windows Media Digital Rights Management (DRM) from accessing the Internet (or intranet).
+Available in the latest Windows 10 Insider Preview Build. This policy setting prevents Windows Media Digital Rights Management (DRM) from accessing the Internet (or intranet).
 
 When enabled, Windows Media DRM is prevented from accessing the Internet (or intranet) for license acquisition and security upgrades.
 
@@ -92,7 +92,7 @@ When this policy is either disabled or not configured, Windows Media DRM functio
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent Windows Media DRM Internet Access*
+-   GP Friendly name: *Prevent Windows Media DRM Internet Access*
 -   GP name: *DisableOnline*
 -   GP path: *Windows Components\Windows Media Digital Rights Management*
 -   GP ADMX file name: *WindowsMediaDRM.admx*
@@ -101,16 +101,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

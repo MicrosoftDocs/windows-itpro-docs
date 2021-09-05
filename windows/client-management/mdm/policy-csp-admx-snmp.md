@@ -80,7 +80,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting configures a list of the communities defined to the Simple Network Management Protocol (SNMP) service.
+Available in the latest Windows 10 Insider Preview Build. This policy setting configures a list of the communities defined to the Simple Network Management Protocol (SNMP) service.
 
 SNMP is a protocol designed to give a user the capability to remotely manage a computer network, by polling and setting terminal values and monitoring network events.
 
@@ -108,7 +108,7 @@ Also, see the other two SNMP settings: "Specify permitted managers" and "Specify
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify communities*
+-   GP Friendly name: *Specify communities*
 -   GP name: *SNMP_Communities*
 -   GP path: *Network\SNMP*
 -   GP ADMX file name: *Snmp.admx*
@@ -161,7 +161,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines the permitted list of hosts that can submit a query to the Simple Network Management (SNMP) agent running on the client computer.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines the permitted list of hosts that can submit a query to the Simple Network Management (SNMP) agent running on the client computer.
 
 Simple Network Management Protocol is a protocol designed to give a user the capability to remotely manage a computer network by polling and setting terminal values and monitoring network events.
 
@@ -188,7 +188,7 @@ Also, see the other two SNMP policy settings: "Specify trap configuration" and "
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify permitted managers*
+-   GP Friendly name: *Specify permitted managers*
 -   GP name: *SNMP_PermittedManagers*
 -   GP path: *Network\SNMP*
 -   GP ADMX file name: *Snmp.admx*
@@ -241,7 +241,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows trap configuration for the Simple Network Management Protocol (SNMP) agent.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows trap configuration for the Simple Network Management Protocol (SNMP) agent.
 
 Simple Network Management Protocol is a protocol designed to give a user the capability to remotely manage a computer network by polling and setting terminal values and monitoring network events.
 
@@ -266,7 +266,7 @@ Also, see the other two SNMP settings: "Specify permitted managers" and "Specify
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify traps for public community*
+-   GP Friendly name: *Specify traps for public community*
 -   GP name: *SNMP_Traps_Public*
 -   GP path: *Network\SNMP*
 -   GP ADMX file name: *Snmp.admx*
@@ -275,16 +275,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

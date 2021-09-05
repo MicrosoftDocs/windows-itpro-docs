@@ -3082,7 +3082,7 @@ Syntax:
 <tr class="odd">
 <td align="left"><p>urlid</p></td>
 <td align="left"><p>Yes</p></td>
-<td align="left"><p><em>UrlID</em> is a string identifier that uniquely identifies this .xml file. This parameter must be a no-colon-name as defined by the XML Namespaces specification. Each migration .xml file must have a unique urlid. If two migration .xml files have the same urlid, the second .xml file that is specified on the command line will not be processed. For more information about XML Namespaces, see <a href="https://go.microsoft.com/fwlink/p/?LinkId=220938" data-raw-source="[Use XML Namespaces](https://go.microsoft.com/fwlink/p/?LinkId=220938)">Use XML Namespaces</a>.</p></td>
+<td align="left"><p><em>UrlID</em> is a string identifier that uniquely identifies this .xml file. This parameter must be a no-colon-name as defined by the XML Namespaces specification. Each migration .xml file must have a unique urlid. If two migration .xml files have the same urlid, the second .xml file that is specified on the command line will not be processed. For more information about XML Namespaces, see <a href="/previous-versions/windows/desktop/ms754539(v=vs.85)" data-raw-source="[Use XML Namespaces](/previous-versions/windows/desktop/ms754539(v=vs.85))">Use XML Namespaces</a>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Name</p></td>
@@ -3465,7 +3465,7 @@ Syntax:
 <li><p>Specify up to three &lt;role&gt; elements within a &lt;component&gt; — one "Binaries" role element, one "Settings" role element and one "Data" role element. These parameters do not change the migration behavior — their only purpose is to help you categorize the settings that you are migrating. You can nest these &lt;role&gt; elements, but each nested element must be of the same role parameter.</p></li>
 <li><p>Specify one "Container" &lt;role&gt; element within a &lt;component&gt; element. In this case, you cannot specify any child &lt;rules&gt; elements, only other &lt;component&gt; elements. And each child &lt;component&gt; element must have the same type as that of parent &lt;component&gt; element. For example:</p></li>
 </ol>
-<pre class="syntax" space="preserve"><code>&lt;component context=&quot;UserAndSystem&quot; type=&quot;Application&quot;&gt;
+<pre class="syntax"><code>&lt;component context=&quot;UserAndSystem&quot; type=&quot;Application&quot;&gt;
   &lt;displayName _locID=&quot;migapp.msoffice2003&quot;&gt;Microsoft Office 2003&lt;/displayName&gt; 
   &lt;environment name=&quot;GlobalEnv&quot; /&gt; 
   &lt;role role=&quot;Container&quot;&gt;
@@ -3975,7 +3975,7 @@ The following scripts have no return value. You can use the following errors wit
          </processing>
     ```
 
--   **StartService (ServiceName, OptionalParam1, OptionalParam2,…).** Starts the service identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service. The optional parameters, if any, will be passed to the StartService API. For more information, see [this Microsoft Web site](https://go.microsoft.com/fwlink/p/?LinkId=267898).
+-   **StartService (ServiceName, OptionalParam1, OptionalParam2,…).** Starts the service identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service. The optional parameters, if any, will be passed to the StartService API. For more information, see [this Microsoft Web site](/windows/win32/api/winsvc/nf-winsvc-startservicea).
 
 -   **StopService (ServiceName)**. Stops the service that is identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service.
 
@@ -4251,12 +4251,3 @@ The following version tags contain values that can be compared:
 
 
 [USMT XML Reference](usmt-xml-reference.md)
-
-
-
-
-
-
-
-
-

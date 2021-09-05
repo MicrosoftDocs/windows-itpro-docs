@@ -28,7 +28,7 @@ ms.date: 07/27/2017
 Use Internet Explorer to collect data on computers running Windows Internet Explorer 8 through Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7. This inventory information helps you build a list of websites used by your company so you can make more informed decisions about your IE deployments, including figuring out which sites might be at risk or require overhauls during future upgrades.
 
 >**Upgrade Readiness and Windows upgrades**<br>
->You can use Upgrade Readiness to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Readiness to review several site discovery reports. For more information, see [Manage Windows upgrades with Upgrade Readiness](https://docs.microsoft.com/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
+>You can use Upgrade Readiness to help manage your Windows 10 upgrades on devices running Windows 8.1 and Windows 7 (SP1). You can also use Upgrade Readiness to review several site discovery reports. For more information, see [Manage Windows upgrades with Upgrade Readiness](/windows/deployment/upgrade/manage-windows-upgrades-with-upgrade-readiness).
 
 
 ## Before you begin
@@ -36,13 +36,13 @@ Before you start, you need to make sure you have the following:
 
 -   Latest cumulative security update (for all supported versions of Internet Explorer):
 
-    1.  Go to the [Microsoft Security Bulletin](https://go.microsoft.com/fwlink/p/?LinkID=718223) page, and change the filter to **Windows Internet Explorer 11**.
+    1.  Go to the [Microsoft Security Bulletin](/security-updates/) page, and change the filter to **Windows Internet Explorer 11**.
 
-        ![microsoft security bulletin techcenter](images/securitybulletin-filter.png)
+        ![microsoft security bulletin techcenter.](images/securitybulletin-filter.png)
 
     2.  Click the title of the latest cumulative security update, and then scroll down to the **Affected software** table.
 
-        ![affected software section](images/affectedsoftware.png)
+        ![affected software section.](images/affectedsoftware.png)
 
     3.  Click the link that represents both your operating system version and Internet Explorer 11, and then follow the instructions in the **How to get this update** section.
 
@@ -151,7 +151,7 @@ You need to set up your computers for data collection by running the provided Po
 
 **To set up Enterprise Site Discovery**
 
-- Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETelemetrySetUp.ps1`. For more info, see [about Execution Policies](https://go.microsoft.com/fwlink/p/?linkid=517460).
+- Start PowerShell in elevated mode (using admin privileges) and run IETelemetrySetUp.ps1 by by-passing the PowerShell execution policy, using this command: `powershell -ExecutionPolicy Bypass .\IETelemetrySetUp.ps1`. For more info, see [about Execution Policies](/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 
 ### WMI only: Set up your firewall for WMI data
 If you choose to use WMI as your data output, you need to make sure that your WMI data can travel through your firewall for the domain. If you’re sure, you can skip this section; otherwise, follow these steps:
@@ -284,13 +284,13 @@ You can collect your hardware inventory using the MOF Editor, while you’re con
 
 1.  From the Configuration Manager, click **Administration**, click **Client Settings**, double-click **Default Client Settings**, click **Hardware Inventory**, and then click **Set Classes**.
 
-    ![Configuration Manager, showing the hardware inventory settings for client computers](images/configmgrhardwareinventory.png)
+    ![Configuration Manager, showing the hardware inventory settings for client computers.](images/configmgrhardwareinventory.png)
 
 2.  Click **Add**, click **Connect**, and connect to a computer that has completed the setup process and has already existing classes.
 
 3.  Change the **WMI Namespace** to `root\cimv2\IETelemetry`, and click **Connect**.
 
-    ![Configuration Manager, with the Connect to Windows Management Instrumentation (WMI) box](images/ie11-inventory-addclassconnectscreen.png)
+    ![Configuration Manager, with the Connect to Windows Management Instrumentation (WMI) box.](images/ie11-inventory-addclassconnectscreen.png)
 
 4.  Select the check boxes next to the following classes, and then click **OK**:
 
@@ -397,12 +397,12 @@ The sample reports, **SCCM Report Sample – ActiveX.rdl** and **SCCM Report Sam
 ### SCCM Report Sample – ActiveX.rdl
 Gives you a list of all of the ActiveX-related sites visited by the client computer.
 
-![ActiveX.rdl report, lists all ActiveX-related sites visited by the client computer](images/configmgractivexreport.png)
+![ActiveX.rdl report, lists all ActiveX-related sites visited by the client computer.](images/configmgractivexreport.png)
 
 ### SCCM Report Sample – Site Discovery.rdl
 Gives you a list of all of the sites visited by the client computer.
 
-![Site Discovery.rdl report, lists all websites visited by the client computer](images/ie-site-discovery-sample-report.png)
+![Site Discovery.rdl report, lists all websites visited by the client computer.](images/ie-site-discovery-sample-report.png)
 
 ## View the collected XML data
 After the XML files are created, you can use your own solutions to extract and parse the data. The data will look like:
@@ -440,7 +440,7 @@ You can import this XML data into the correct version of the Enterprise Mode Sit
 
 1.  Open the Enterprise Mode Site List Manager, click **File**, and then click **Bulk add from file**.
 
-    ![Enterprise Mode Site List Manager with Bulk add from file option](images/bulkadd-emiesitelistmgr.png)
+    ![Enterprise Mode Site List Manager with Bulk add from file option.](images/bulkadd-emiesitelistmgr.png)
 
 2.  Go to your XML file to add the included sites to the tool, and then click **Open**.<br>Each site is validated and if successful, added to the global site list when you click **OK** to close the menu. If a site doesn’t pass validation, you can try to fix the issues or pick the site and click **Add to list** to ignore the validation problem. For more information about fixing validation problems, see [Fix validation problems using the Enterprise Mode Site List Manager](fix-validation-problems-using-the-enterprise-mode-site-list-manager.md).
 
@@ -480,7 +480,3 @@ You can completely remove the data stored on your employee’s computers.
 ## Related topics
 * [Enterprise Mode Site List Manager (schema v.2) download](https://go.microsoft.com/fwlink/?LinkId=746562)
 * [Enterprise Mode for Internet Explorer 11 (IE11)](enterprise-mode-overview-for-ie11.md)
- 
-
-
-

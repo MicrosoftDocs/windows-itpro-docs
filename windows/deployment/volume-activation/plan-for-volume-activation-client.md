@@ -120,7 +120,7 @@ In the core network, a centralized KMS solution is recommended. You can also use
 
 A typical core network that includes a KMS host is shown in Figure 1.
 
-![Typical core network](../images/volumeactivationforwindows81-01.jpg)
+![Typical core network.](../images/volumeactivationforwindows81-01.jpg)
 
 **Figure 1**. Typical core network
 
@@ -140,7 +140,7 @@ If the isolated network cannot communicate with the core network’s KMS server,
 
 If the network is fully isolated, MAK-independent activation would be the recommended choice, perhaps using the telephone option. But VAMT proxy activation may also be possible. You can also use MAKs to activate new computers during setup, before they are placed in the isolated network.
 
-![New KMS host in an isolated network](../images/volumeactivationforwindows81-02.jpg)
+![New KMS host in an isolated network.](../images/volumeactivationforwindows81-02.jpg)
 
 **Figure 2**. New KMS host in an isolated network
 
@@ -199,7 +199,7 @@ When you create installation media or images for client computers that will be a
 
 Installation media from Microsoft for Enterprise editions of the Windows operating system may already contain the GVLK. One GVLK is available for each type of installation. The GLVK will not activate the software against Microsoft activation servers, but rather against a KMS or Active Directory-based activation object. In other words, the GVLK does not work unless a valid KMS host key can be found. GVLKs are the only product keys that do not need to be kept confidential.
 
-Typically, you will not need to manually enter a GVLK unless a computer has been activated with a MAK or a retail key and it is being converted to a KMS activation or to Active Directory-based activation. If you need to locate the GVLK for a particular client edition, see [Appendix A: KMS Client Setup Keys](https://technet.microsoft.com/library/jj612867.aspx).
+Typically, you will not need to manually enter a GVLK unless a computer has been activated with a MAK or a retail key and it is being converted to a KMS activation or to Active Directory-based activation. If you need to locate the GVLK for a particular client edition, see [Appendix A: KMS Client Setup Keys](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v=ws.11)).
 
 ### Multiple activation keys
 
@@ -222,11 +222,10 @@ The flow of KMS activation is shown in Figure 3, and it follows this sequence:
 7.  If the KMS host has a KMS host key that matches the products in the GVLK, the KMS host sends a single packet back to the client. This packet contains a count of the number of computers that have requested activation from this KMS host.
 8.  If the count exceeds the activation threshold for the product that is being activated, the client is activated. If the activation threshold has not yet been met, the client will try again.
 
-![KMS activation flow](../images/volumeactivationforwindows81-03.jpg)
+![KMS activation flow.](../images/volumeactivationforwindows81-03.jpg)
 
 **Figure 3**. KMS activation flow
 
 ## See also
 -   [Volume Activation for Windows 10](volume-activation-windows-10.md)
- 
  

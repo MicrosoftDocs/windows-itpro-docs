@@ -29,7 +29,7 @@ When you set up Windows Hello in Windows 10, you may get an error during the **
 
 The following image shows an example of an error during **Create a PIN**.
 
-![](images/pinerror.png)
+![PIN error.](images/pinerror.png)
 
 ## Error mitigations
 
@@ -37,8 +37,8 @@ When a user encounters an error when creating the work PIN, advise the user to t
 1.  Try to create the PIN again. Some errors are transient and resolve themselves.
 2.  Sign out, sign in, and try to create the PIN again.
 3.  Reboot the device and then try to create the PIN again.
-4.  Unjoin the device from Azure Active Directory (Azure AD), rejoin, and then try to create the PIN again. To unjoin a desktop PC, go to **Settings** &gt; **System** &gt; **About** and select **Disconnect from organization**. To unjoin a device running Windows 10 Mobile, you must [reset the device](https://go.microsoft.com/fwlink/p/?LinkId=715697).
-5.  On mobile devices, if you are unable to setup a PIN after multiple attempts, reset your device and start over. For help on how to reset your phone go to [Reset my phone](https://go.microsoft.com/fwlink/p/?LinkId=715697).
+4.  Unjoin the device from Azure Active Directory (Azure AD), rejoin, and then try to create the PIN again. To unjoin a desktop PC, go to **Settings** &gt; **System** &gt; **About** and select **Disconnect from organization**. To unjoin a device running Windows 10 Mobile, you must [reset the device](/windows/client-management/reset-a-windows-10-mobile-device).
+5.  On mobile devices, if you are unable to setup a PIN after multiple attempts, reset your device and start over. For help on how to reset your phone go to [Reset my phone](/windows/client-management/reset-a-windows-10-mobile-device).
 If the error occurs again, check the error code against the following table to see if there is another mitigation for that error. When no mitigation is listed in the table, contact Microsoft Support for assistance.
 
 | Hex        | Cause                                                              | Mitigation                                  |
@@ -48,11 +48,11 @@ If the error occurs again, check the error code against the following table to s
 | 0x80090011 | The container or key was not found.                                | Unjoin the device from Azure AD and rejoin. |
 | 0x80090029 | TPM is not set up.                                                 | Sign on with an administrator account. Click **Start**, type "tpm.msc", and select **tpm.msc Microsoft Common Console Document**. In the **Actions** pane, select **Prepare the TPM**. |
 | 0x8009002A | NTE\_NO\_MEMORY                                                    | Close programs which are taking up memory and try again. |
-| 0x80090031 | NTE\_AUTHENTICATION\_IGNORED                                       | Reboot the device. If the error occurs again after rebooting, [reset the TPM](https://go.microsoft.com/fwlink/p/?LinkId=619969) or run [Clear-TPM](https://go.microsoft.com/fwlink/p/?LinkId=629650). |
+| 0x80090031 | NTE\_AUTHENTICATION\_IGNORED                                       | Reboot the device. If the error occurs again after rebooting, [reset the TPM](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd851452(v=ws.11)) or run [Clear-TPM](/powershell/module/trustedplatformmodule/clear-tpm). |
 | 0x80090035 | Policy requires TPM and the device does not have TPM.              | Change the Windows Hello for Business policy to not require a TPM. |
 | 0x80090036 | User canceled an interactive dialog.                               | User will be asked to try again. |
 | 0x801C0003 | User is not authorized to enroll.                                  | Check if the user has permission to perform the operation​. |
-| 0x801C000E | Registration quota reached.                                        | Unjoin some other device that is currently joined using the same account or [increase the maximum number of devices per user](https://go.microsoft.com/fwlink/p/?LinkId=626933). |
+| 0x801C000E | Registration quota reached.                                        | Unjoin some other device that is currently joined using the same account or [increase the maximum number of devices per user](/azure/active-directory/devices/device-management-azure-portal). |
 | 0x801C000F | Operation successful, but the device requires a reboot.            | Reboot the device.               |
 | 0x801C0010 | The AIK certificate is not valid or trusted.                       | Sign out and then sign in again. |
 | 0x801C0011 | The attestation statement of the transport key is invalid.         | Sign out and then sign in again. |
@@ -65,10 +65,10 @@ If the error occurs again, check the error code against the following table to s
 | 0x801C03EA | Server failed to authorize user or device.                         | Check if the token is valid and user has permission to register Windows Hello for Business keys. |
 | 0x801C03EB | Server response http status is not valid                           | Sign out and then sign in again. |
 | 0x801C03EC | Unhandled exception from server.                                   | sign out and then sign in again. |
-| 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed. <br><br> -or- <br><br> Token was not found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure Active Directory (Azure AD) and rejoin.
+| 0x801C03ED | Multi-factor authentication is required for a 'ProvisionKey' operation, but was not performed. <br><br> -or- <br><br> Token was not found in the Authorization header. <br><br> -or- <br><br> Failed to read one or more objects. <br><br> -or- <br><br> The request sent to the server was invalid. <br><br> -or- <br><br> User does not have permissions to join to Azure AD. | Sign out and then sign in again. If that doesn't resolve the issue, unjoin the device from Azure  AD and rejoin. <br> Allow user(s) to join to Azure AD under Azure AD Device settings.
 | 0x801C03EE | Attestation failed.                                                | Sign out and then sign in again. |
 | 0x801C03EF | The AIK certificate is no longer valid.                            | Sign out and then sign in again. |
-| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR\_BAD\_DIRECTORY\_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue refer to [Duplicate Attributes Prevent Dirsync](https://docs.microsoft.com/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync).
+| 0x801C03F2 | Windows Hello key registration failed.                             | ERROR\_BAD\_DIRECTORY\_REQUEST. Another object with the same value for property proxyAddresses already exists. To resolve the issue, refer to [Duplicate Attributes Prevent Dirsync](/office365/troubleshoot/administration/duplicate-attributes-prevent-dirsync). Also, if no sync conflict exists, please verify that the "Mail/Email address" in AAD and the Primary SMTP address are the same in the proxy address.
 | 0x801C044D | Authorization token does not contain device ID.                    | Unjoin the device from Azure AD and rejoin. |
 |            | Unable to obtain user token.                                       | Sign out and then sign in again. Check network and credentials. |
 | 0x801C044E | Failed to receive user credentials input.                          | Sign out and then sign in again. |
@@ -82,6 +82,7 @@ For errors listed in this table, contact Microsoft Support for assistance.
 |-------------|---------|
 | 0X80072F0C  | Unknown |
 | 0x80070057  | Invalid parameter or argument is passed. |
+| 0x80090010  | NTE_PERM |
 | 0x80090020  | NTE\_FAIL |
 | 0x80090027  | Caller provided a wrong parameter. If third-party code receives this error, they must change their code. |
 | 0x8009002D  | NTE\_INTERNAL\_ERROR |

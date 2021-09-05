@@ -24,7 +24,7 @@ ms.topic: article
 >Due to [naming changes](waas-overview.md#naming-changes), older terms like CB and CBB might still be displayed in some of our products, such as in Group Policy or the registry. If you encounter these terms, "CB" refers to the Semi-Annual Channel (Targeted)--which is no longer used--while "CBB" refers to the Semi-Annual Channel.
 
 
-WSUS is a Windows Server role available in the Windows Server operating systems. It provides a single hub for Windows updates within an organization. WSUS allows companies not only to defer updates but also to selectively approve them, choose when they’re delivered, and determine which individual devices or groups of devices receive them. WSUS provides additional control over Windows Update for Business but does not provide all the scheduling options and deployment flexibility that Microsoft Endpoint Configuration Manager provides.
+WSUS is a Windows Server role available in the Windows Server operating systems. It provides a single hub for Windows updates within an organization. WSUS allows companies not only to defer updates but also to selectively approve them, choose when they’re delivered, and determine which individual devices or groups of devices receive them. WSUS provides additional control over Windows Update for Business but does not provide all the scheduling options and deployment flexibility that Microsoft Endpoint Manager provides.
 
 When you choose WSUS as your source for Windows updates, you use Group Policy to point Windows 10 client devices to the WSUS server for their updates. From there, updates are periodically downloaded to the WSUS server and managed, approved, and deployed through the WSUS administration console or Group Policy, streamlining enterprise update management. If you’re currently using WSUS to manage Windows updates in your environment, you can continue to do so in Windows 10. 
 
@@ -40,12 +40,12 @@ To be able to use WSUS to manage and deploy Windows 10 feature updates, you must
 
 > [!IMPORTANT]
 > Both [KB 3095113](https://support.microsoft.com/kb/3095113) and [KB 3159706](https://support.microsoft.com/kb/3159706) are included in the **Security Monthly Quality Rollup** starting in July 2017. This means you might not see KB 3095113 and KB 3159706 as installed updates since they might have been installed with a rollup. However, if you need either of these updates, we recommend installing a **Security Monthly Quality Rollup** released after **October 2017** since they contain an additional WSUS update to decrease memory utilization on WSUS's clientwebservice.
->If you have synced either of these updates prior to the security monthly quality rollup, you can experience problems. To recover from this, see [How to Delete Upgrades in WSUS](https://blogs.technet.microsoft.com/wsus/2016/01/29/how-to-delete-upgrades-in-wsus/).
+>If you have synced either of these updates prior to the security monthly quality rollup, you can experience problems. To recover from this, see [How to Delete Upgrades in WSUS](/archive/blogs/wsus/how-to-delete-upgrades-in-wsus).
 
 
 ## WSUS scalability
 
-To use WSUS to manage all Windows updates, some organizations may need access to WSUS from a perimeter network, or they might have some other complex scenario. WSUS is highly scalable and configurable for organizations of any size or site layout. For specific information about scaling WSUS, including upstream and downstream server configuration, branch offices, WSUS load balancing, and other complex scenarios, see [Choose a Type of WSUS Deployment](https://technet.microsoft.com/library/cc720448%28v=ws.10%29.aspx).
+To use WSUS to manage all Windows updates, some organizations may need access to WSUS from a perimeter network, or they might have some other complex scenario. WSUS is highly scalable and configurable for organizations of any size or site layout. For specific information about scaling WSUS, including upstream and downstream server configuration, branch offices, WSUS load balancing, and other complex scenarios, see [Choose a Type of WSUS Deployment](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720448(v=ws.10)).
  
 
 
@@ -62,7 +62,7 @@ When using WSUS to manage updates on Windows client devices, start by configurin
 
 3. Right-click **Your_Domain**, and then select **Create a GPO in this domain, and Link it here**.
 
-   ![Example of UI](images/waas-wsus-fig3.png) 
+   ![Example of UI.](images/waas-wsus-fig3.png) 
     
    >[!NOTE]
    >In this example, the **Configure Automatic Updates** and **Intranet Microsoft Update Service Location** Group Policy settings are specified for the entire domain. This is not a requirement; you can target these settings to any security group by using Security Filtering or a specific OU.
@@ -75,19 +75,19 @@ When using WSUS to manage updates on Windows client devices, start by configurin
 
 7. Right-click the **Configure Automatic Updates** setting, and then click **Edit**.
 
-   ![Example of UI](images/waas-wsus-fig4.png)
+   ![Example of UI.](images/waas-wsus-fig4.png)
     
 8. In the **Configure Automatic Updates** dialog box, select **Enable**.
 
 9. Under **Options**, from the **Configure automatic updating** list, select **3 - Auto download and notify for install**, and then click **OK**.
 
-   ![Example of UI](images/waas-wsus-fig5.png)
+   ![Example of UI.](images/waas-wsus-fig5.png)
    
    >[!IMPORTANT]
    > Use Regedit.exe to check that the following key is not enabled, because it can break Windows Store connectivity: Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations
     
    > [!NOTE]
-   > There are three other settings for automatic update download and installation dates and times. This is simply the option this example uses. For more examples of how to control automatic updates and other related policies, see [Configure Automatic Updates by Using Group Policy](https://technet.microsoft.com/library/cc720539%28v=ws.10%29.aspx). 
+   > There are three other settings for automatic update download and installation dates and times. This is simply the option this example uses. For more examples of how to control automatic updates and other related policies, see [Configure Automatic Updates by Using Group Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc720539(v=ws.10)). 
     
 10. Right-click the **Specify intranet Microsoft update service location** setting, and then select **Edit**. 
 
@@ -98,7 +98,7 @@ When using WSUS to manage updates on Windows client devices, start by configurin
     >[!NOTE]
     >The URL `http://CONTOSO-WSUS1.contoso.com:8530` in the following image is just an example. In your environment, be sure to use the server name and port number for your WSUS instance.
     
-     ![Example of UI](images/waas-wsus-fig6.png)
+     ![Example of UI.](images/waas-wsus-fig6.png)
      
      >[!NOTE]
      >The default HTTP port for WSUS is 8530, and the default HTTP over Secure Sockets Layer (HTTPS) port is 8531. (The other options are 80 and 443; no other ports are supported.)
@@ -118,7 +118,7 @@ You can use computer groups to target a subset of devices that have specific qua
 
 2. Go to *Server_Name*\Computers\All Computers, and then click **Add Computer Group**. 
 
-    ![Example of UI](images/waas-wsus-fig7.png)
+    ![Example of UI.](images/waas-wsus-fig7.png)
     
 3. Type **Ring 2 Pilot Business Users** for the name, and then click **Add**.
 
@@ -146,7 +146,7 @@ When new computers communicate with WSUS, they appear in the **Unassigned Comput
 
 2. Select both computers, right-click the selection, and then click **Change Membership**.
 
-    ![Example of UI](images/waas-wsus-fig8.png)
+    ![Example of UI.](images/waas-wsus-fig8.png)
 
 3. In the **Set Computer Group Membership** dialog box, select the **Ring 2 Pilot Business Users** deployment ring, and then click **OK**.
 
@@ -164,7 +164,7 @@ Another way to add multiple computers to a deployment ring in the WSUS Administr
 
 3. In the search results, select the computers, right-click the selection, and then click **Change Membership**.
 
-    ![Example of UI](images/waas-wsus-fig9.png)
+    ![Example of UI.](images/waas-wsus-fig9.png)
     
 4. Select the **Ring 3 Broad IT** deployment ring, and then click **OK**.
 
@@ -172,6 +172,7 @@ You can now see these computers in the **Ring 3 Broad IT** computer group.
 
 
 <span id="wsus-gp"/>
+
 ## Use Group Policy to populate deployment rings
 
 The WSUS Administration Console provides a friendly interface from which you can manage Windows 10 quality and feature updates. When you need to add many computers to their correct WSUS deployment ring, however, it can be time-consuming to do so manually in the WSUS Administration Console. For these cases, consider using Group Policy to target the correct computers, automatically adding them to the correct WSUS deployment ring based on an Active Directory security group. This process is called *client-side targeting*. Before enabling client-side targeting in Group Policy, you must configure WSUS to accept Group Policy computer assignment.
@@ -180,7 +181,7 @@ The WSUS Administration Console provides a friendly interface from which you can
 
 1. Open the WSUS Administration Console, and go to *Server_Name*\Options, and then click **Computers**.
 
-     ![Example of UI](images/waas-wsus-fig10.png)
+     ![Example of UI.](images/waas-wsus-fig10.png)
      
 2. In the **Computers** dialog box, select **Use Group Policy or registry settings on computers**, and then click **OK**.
 
@@ -204,7 +205,7 @@ Now that WSUS is ready for client-side targeting, complete the following steps t
 
 5. Right-click the **WSUS – Client Targeting – Ring 4 Broad Business Users** GPO, and then click **Edit**.
 
-    ![Example of UI](images/waas-wsus-fig11.png)
+    ![Example of UI.](images/waas-wsus-fig11.png)
     
 6. In the Group Policy Management Editor, go to Computer Configuration\Policies\Administrative Templates\Windows Components\Windows Update.
 
@@ -214,7 +215,7 @@ Now that WSUS is ready for client-side targeting, complete the following steps t
 
 9. In the **Target group name for this computer** box, type *Ring 4 Broad Business Users*. This is the name of the deployment ring in WSUS to which these computers will be added.
 
-    ![Example of UI](images/waas-wsus-fig12.png)
+    ![Example of UI.](images/waas-wsus-fig12.png)
 
 > [!WARNING]
 > The target group name must match the computer group name.
@@ -231,7 +232,7 @@ Now you’re ready to deploy this GPO to the correct computer security group for
 
 3. Under **Security Filtering**, remove the default **AUTHENTICATED USERS** security group, and then add the **Ring 4 Broad Business Users** group.
 
-    ![Example of UI](images/waas-wsus-fig13.png)
+    ![Example of UI.](images/waas-wsus-fig13.png)
     
 The next time the clients in the **Ring 4 Broad Business Users** security group receive their computer policy and contact WSUS, they will be added to the **Ring 4 Broad Business Users** deployment ring. 
 
@@ -251,7 +252,7 @@ For clients that should have their feature updates approved as soon as they’re
 
 3. In the **Add Rule** dialog box, select the **When an update is in a specific classification**, **When an update is in a specific product**, and **Set a deadline for the approval** check boxes.
 
-     ![Example of UI](images/waas-wsus-fig14.png)
+     ![Example of UI.](images/waas-wsus-fig14.png)
      
 4. In the **Edit the properties** area, select **any classification**. Clear everything except **Upgrades**, and then click **OK**.
 
@@ -265,7 +266,7 @@ For clients that should have their feature updates approved as soon as they’re
 
 8. In the **Step 3: Specify a name** box, type **Windows 10 Upgrade Auto-approval for Ring 3 Broad IT**, and then click **OK**.
 
-    ![Example of UI](images/waas-wsus-fig15.png)
+    ![Example of UI.](images/waas-wsus-fig15.png)
     
 9. In the **Automatic Approvals** dialog box, click **OK**.
 
@@ -300,7 +301,7 @@ To simplify the manual approval process, start by creating a software update vie
     
 5. In the **Step 3: Specify a name** box, type **All Windows 10 Upgrades**, and then click **OK**.
 
-     ![Example of UI](images/waas-wsus-fig16.png)
+     ![Example of UI.](images/waas-wsus-fig16.png)
 
 Now that you have the **All Windows 10 Upgrades** view, complete the following steps to manually approve an update for the **Ring 4 Broad Business Users** deployment ring:
 
@@ -308,21 +309,21 @@ Now that you have the **All Windows 10 Upgrades** view, complete the following s
 
 2. Right-click the feature update you want to deploy, and then click **Approve**.
 
-      ![Example of UI](images/waas-wsus-fig17.png)  
+      ![Example of UI.](images/waas-wsus-fig17.png)  
       
 3. In the **Approve Updates** dialog box, from the **Ring 4 Broad Business Users** list, select **Approved for Install**.
 
-      ![Example of UI](images/waas-wsus-fig18.png) 
+      ![Example of UI.](images/waas-wsus-fig18.png) 
       
 4. In the **Approve Updates** dialog box, from the **Ring 4 Broad Business Users** list, click **Deadline**, click **One Week**, and then click **OK**. 
 
-      ![Example of UI](images/waas-wsus-fig19.png) 
+      ![Example of UI.](images/waas-wsus-fig19.png) 
       
 5. If the **Microsoft Software License Terms** dialog box opens, click **Accept**.
 
     If the deployment is successful, you should receive a successful progress report.
     
-    ![Example of UI](images/waas-wsus-fig20.png) 
+    ![Example of UI.](images/waas-wsus-fig20.png) 
 
 6. In the **Approval Progress** dialog box, click **Close**.
 
@@ -330,14 +331,14 @@ Now that you have the **All Windows 10 Upgrades** view, complete the following s
 
 ## Steps to manage updates for Windows 10
 
-| | |
+|&nbsp; |&nbsp; |
 | --- | --- |
-| ![done](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
-| ![done](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
-| ![done](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or Deploy Windows 10 updates using Windows Server Update Services (this topic)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md) |
+| ![done.](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
+| ![done.](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or Deploy Windows 10 updates using Windows Server Update Services (this topic)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
 
 
 
@@ -350,12 +351,11 @@ Now that you have the **All Windows 10 Upgrades** view, complete the following s
 - [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
 - [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
 - [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates for Windows 10 Mobile Enterprise and Windows 10 IoT Mobile](waas-mobile-updates.md) 
+- [Configure BranchCache for Windows 10 updates](waas-branchcache.md) 
 - [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
 - [Configure Windows Update for Business](waas-configure-wufb.md)
 - [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
 - [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](https://docs.microsoft.com/intune/windows-update-for-business-configure)
-- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](waas-manage-updates-configuration-manager.md)
+- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
+- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service)
 - [Manage device restarts after updates](waas-restart.md)

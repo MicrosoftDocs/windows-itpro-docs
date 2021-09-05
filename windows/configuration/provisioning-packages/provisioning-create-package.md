@@ -4,8 +4,8 @@ description: Learn how to create a provisioning package for Windows 10, which le
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/27/2017
@@ -39,15 +39,15 @@ You can use Windows Configuration Designer to create a provisioning package (.pp
 
 2. Select your desired option on the **Start** page, which offers multiple options for creating a provisioning package, as shown in the following image:
 
-    ![Configuration Designer wizards](../images/icd-create-options-1703.png)
+    ![Configuration Designer wizards.](../images/icd-create-options-1703.png)
 
     - The following wizard options provide a simple interface for configuring common settings for desktop, mobile, and kiosk devices: 
 
         - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
         - [Instructions for the mobile wizard](../mobile-devices/provisioning-configure-mobile.md)
         - [Instructions for the kiosk wizard](../kiosk-single-app.md#wizard)
-        - [Instructions for HoloLens wizard](https://technet.microsoft.com/itpro/hololens/hololens-provisioning)
-        - [Instructions for Surface Hub wizard](https://technet.microsoft.com/itpro/surface-hub/provisioning-packages-for-certificates-surface-hub)
+        - [Instructions for HoloLens wizard](/hololens/hololens-provisioning)
+        - [Instructions for Surface Hub wizard](/surface-hub/provisioning-packages-for-surface-hub)
         
       Wizards are also available for creating provisioning packages for Microsoft Surface Hub and Microsoft HoloLens devices. For a summary of the settings available in the desktop, mobile, and kiosk devices, see [What you can configure using Configuration Designer wizards](provisioning-packages.md#configuration-designer-wizards).
 
@@ -56,7 +56,7 @@ You can use Windows Configuration Designer to create a provisioning package (.pp
         >[!TIP]
         > You can start a project in the simple wizard editor and then switch the project to the advanced editor.
         >
-        > ![Switch to advanced editor](../images/icd-switch.png)
+        > ![Switch to advanced editor.](../images/icd-switch.png)
 
 3. Enter a name for your project, and then select **Next**.
 
@@ -69,8 +69,8 @@ You can use Windows Configuration Designer to create a provisioning package (.pp
    |   All Windows desktop editions    |    Common settings and settings specific to desktop devices     |                All Windows 10 desktop editions (Home, Pro, Enterprise, Pro Education, Enterprise Education)                 |
    |    All Windows mobile editions    |     Common settings and settings specific to mobile devices     |                                                All Windows 10 Mobile devices                                                |
    |        Windows 10 IoT Core        |  Common settings and settings specific to Windows 10 IoT Core   |                                               All Windows 10 IoT Core devices                                               |
-   |      Windows 10 Holographic       | Common settings and settings specific to Windows 10 Holographic |                  [Microsoft HoloLens](https://technet.microsoft.com/itpro/hololens/hololens-provisioning)                   |
-   | Common to Windows 10 Team edition |    Common settings and settings specific to Windows 10 Team     | [Microsoft Surface Hub](https://technet.microsoft.com/itpro/surface-hub/provisioning-packages-for-certificates-surface-hub) |
+   |      Windows 10 Holographic       | Common settings and settings specific to Windows 10 Holographic |                  [Microsoft HoloLens](/hololens/hololens-provisioning)                   |
+   | Common to Windows 10 Team edition |    Common settings and settings specific to Windows 10 Team     | [Microsoft Surface Hub](/surface-hub/provisioning-packages-for-surface-hub) |
 
 
 5. On the **Import a provisioning package (optional)** page, you can select **Finish** to create your project, or browse to and select an existing provisioning package to import to your project, and then select **Finish**.
@@ -87,9 +87,9 @@ You can use Windows Configuration Designer to create a provisioning package (.pp
 
 For an advanced provisioning project, Windows Configuration Designer opens the **Available customizations** pane. The example in the following image is based on **All Windows desktop editions** settings.
 
-![What the ICD interface looks like](../images/icd-runtime.png)
+![What the ICD interface looks like.](../images/icd-runtime.png)
 
-The settings in Windows Configuration Designer are based on Windows 10 configuration service providers (CSPs). To learn more about CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](https://technet.microsoft.com/itpro/windows/manage/how-it-pros-can-use-configuration-service-providers).
+The settings in Windows Configuration Designer are based on Windows 10 configuration service providers (CSPs). To learn more about CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](./how-it-pros-can-use-configuration-service-providers.md).
 
 The process for configuring settings is similar for all settings. The following table shows an example.
 
@@ -101,16 +101,16 @@ The process for configuring settings is similar for all settings. The following 
 <tr><td><img src="../images/five.png" alt="step five"/></br>When the setting is configured, it is displayed in the <strong>Selected customizations</strong> pane.</td><td><img src="../images/icd-step5.png" alt="Selected customizations pane"/></td></tr>
 </table>
 
-For details on each specific setting, see [Windows Provisioning settings reference](https://msdn.microsoft.com/library/windows/hardware/dn965990.aspx). The reference topic for a setting is also displayed in Windows Configuration Designer when you select the setting, as shown in the following image.
+For details on each specific setting, see [Windows Provisioning settings reference](../wcd/wcd.md). The reference topic for a setting is also displayed in Windows Configuration Designer when you select the setting, as shown in the following image.
 
-![Windows Configuration Designer opens the reference topic when you select a setting](../images/icd-setting-help.png) 
+![Windows Configuration Designer opens the reference topic when you select a setting.](../images/icd-setting-help.png) 
 
 
  ## Build package
 
 1. After you're done configuring your customizations, select **Export**, and then select **Provisioning Package**.
 
-    ![Export on top bar](../images/icd-export-menu.png)
+    ![Export on top bar.](../images/icd-export-menu.png)
 
 2. In the **Describe the provisioning package** window, enter the following information, and then select **Next**:
     - **Name** - This field is pre-populated with the project name. You can change this value by entering a different name in the **Name** field.
@@ -150,7 +150,7 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
 - Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
-- [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
+- [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 
 ## Related topics
 

@@ -92,7 +92,7 @@ Note: Wild card characters cannot be used when specifying the host URLs.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Approved Installation Sites for ActiveX Controls*
+-   GP Friendly name: *Approved Installation Sites for ActiveX Controls*
 -   GP name: *ApprovedActiveXInstallSites*
 -   GP path: *Windows Components/ActiveX Installer Service*
 -   GP ADMX file name: *ActiveXInstallService.admx*

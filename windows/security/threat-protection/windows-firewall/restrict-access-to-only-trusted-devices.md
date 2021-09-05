@@ -4,7 +4,7 @@ description: Windows Defender Firewall with Advanced Security enables you to iso
 ms.assetid: bc1f49a4-7d54-4857-8af9-b7c79f47273b
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/17/2017
+ms.technology: mde
 ---
 
 # Restrict access to only trusted devices
@@ -34,7 +35,7 @@ The protection provided by domain isolation can help you comply with regulatory 
 
 The following illustration shows an isolated domain, with one of the zones that are optionally part of the design. The rules that implement both the isolated domain and the different zones are deployed by using Group Policy and Active Directory.
 
-![domain isolation](images/wfas-domainiso.gif)
+![domain isolation.](images/wfas-domainiso.gif)
 
 These goals, which correspond to [Domain Isolation Policy Design](domain-isolation-policy-design.md) and [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md), provide the following benefits:
 

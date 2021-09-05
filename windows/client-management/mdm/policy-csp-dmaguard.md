@@ -73,7 +73,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with [DMA Remapping](https://docs.microsoft.com/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers)/device memory isolation and sandboxing. 
+This policy is intended to provide additional security against external DMA capable devices. It allows for more control over the enumeration of external DMA capable devices incompatible with [DMA Remapping](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers)/device memory isolation and sandboxing. 
 
 Device memory sandboxing allows the OS to leverage the I/O Memory Management Unit (IOMMU) of a device to block unallowed I/O, or memory access, by the peripheral. In other words, the OS assigns a certain memory range to the peripheral. If the peripheral attempts to read/write to memory outside of the assigned range, the OS blocks it.
 
@@ -93,7 +93,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Enumeration policy for external devices incompatible with Kernel DMA Protection*
+-   GP Friendly name: *Enumeration policy for external devices incompatible with Kernel DMA Protection*
 -   GP name: *DmaGuardEnumerationPolicy*
 -   GP path: *System/Kernel DMA Protection*
 -   GP ADMX file name: *dmaguard.admx*
@@ -123,4 +123,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

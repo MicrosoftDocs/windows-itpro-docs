@@ -1,10 +1,10 @@
 ---
-title: Tools to use with AppLocker (Windows 10)
+title: Tools to use with AppLocker (Windows)
 description: This topic for the IT professional describes the tools available to create and administer AppLocker policies.
 ms.assetid: db2b7cb3-7643-4be5-84eb-46ba551e1ad1
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Tools to use with AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes the tools available to create and administer AppLocker policies.
 
@@ -55,7 +61,7 @@ The following tools can help you administer the application control policies cre
 
 -   **AppLocker PowerShell cmdlets**
 
-    The AppLocker Windows PowerShell cmdlets are designed to streamline the administration of AppLocker policy. They can be used to help create, test, maintain, and troubleshoot an AppLocker policy. The cmdlets are intended to be used in conjunction with the AppLocker user interface that is accessed through the Local Security Policy snap-in and the GPMC. For information about the cmdlets, see the [AppLocker PowerShell Command Reference](https://technet.microsoft.com/itpro/powershell/windows/applocker/applocker).
+    The AppLocker Windows PowerShell cmdlets are designed to streamline the administration of AppLocker policy. They can be used to help create, test, maintain, and troubleshoot an AppLocker policy. The cmdlets are intended to be used in conjunction with the AppLocker user interface that is accessed through the Local Security Policy snap-in and the GPMC. For information about the cmdlets, see the [AppLocker PowerShell Command Reference](/powershell/module/applocker/).
 
 ## Related topics
 

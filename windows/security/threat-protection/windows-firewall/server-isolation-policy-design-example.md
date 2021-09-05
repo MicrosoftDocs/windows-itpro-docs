@@ -4,7 +4,7 @@ description: Learn about server isolation policy design in Windows Defender Fire
 ms.assetid: 337e5f6b-1ec5-4b83-bee5-d0aea1fa5fc6
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Server Isolation Policy Design Example
@@ -45,7 +46,7 @@ In addition to the protection provided by the firewall rules and domain isolatio
 
 The following illustration shows the traffic protection needs for this design example.
 
-![isolated server example](images/wfas-design3example1.gif)
+![isolated server example.](images/wfas-design3example1.gif)
 
 1.  Access to the SQL Server devices must be restricted to only those computer or user accounts that have a business requirement to access the data. This includes the service accounts that are used by the WGBank front-end servers, and administrators of the SQL Server devices. In addition, access is only granted when it is sent from an authorized computer. Authorization is determined by membership in a network access group (NAG).
 

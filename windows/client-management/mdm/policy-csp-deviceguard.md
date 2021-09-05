@@ -90,12 +90,12 @@ Secure Launch configuration:
 - 1 - Enables Secure Launch if supported by hardware
 - 2 - Disables Secure Launch.
 
-For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://cloudblogs.microsoft.com/microsoftsecure/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation/) and [How a hardware-based root of trust helps protect Windows 10](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows).
+For more information about System Guard, see [Introducing Windows Defender System Guard runtime attestation](https://cloudblogs.microsoft.com/microsoftsecure/2018/04/19/introducing-windows-defender-system-guard-runtime-attestation/) and [How a hardware-based root of trust helps protect Windows 10](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows).
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *SystemGuardDrop*
 -   GP path: *System/Device Guard*
@@ -164,7 +164,7 @@ Added in Windows 10, version 1709. Turns on virtualization based security(VBS) a
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP path: *System/Device Guard*
 -   GP ADMX file name: *DeviceGuard.admx*
@@ -230,7 +230,7 @@ Added in Windows 10, version 1709. This setting lets users turn on Credential Gu
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *CredentialIsolationDrop*
 -   GP path: *System/Device Guard*
@@ -298,7 +298,7 @@ Added in Windows 10, version 1709. Specifies the platform security level at the 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn On Virtualization Based Security*
+-   GP Friendly name: *Turn On Virtualization Based Security*
 -   GP name: *VirtualizationBasedSecurity*
 -   GP element: *RequirePlatformSecurityFeaturesDrop*
 -   GP path: *System/Device Guard*
@@ -327,4 +327,3 @@ Footnotes:
 - 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
-

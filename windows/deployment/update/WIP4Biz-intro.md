@@ -37,7 +37,7 @@ Microsoft recommends that all organizations have at least a few devices enrolled
 
 The Windows Insider Program doesn't replace Semi-Annual Channel deployments in an organization. Rather, it provides IT Pros and other interested parties with pre-release Windows builds that they can test and ultimately provide feedback on to Microsoft.
 
-[![Illustration showing the Windows Insider PreviewFast Ring for exploration, the Slow Ring for validation, the Semi-Annual Channel Targeted ring for Pilot deployment, and the Semi-Annual Channel for broad deployment](images/WIP4Biz_deployment.png)](images/WIP4Biz_deployment.png)<br>
+[![Illustration showing the Windows Insider PreviewFast Ring for exploration, the Slow Ring for validation, the Semi-Annual Channel Targeted ring for Pilot deployment, and the Semi-Annual Channel for broad deployment.](images/WIP4Biz_deployment.png)](images/WIP4Biz_deployment.png)<br>
 Windows 10 Insider Preview builds enable organizations to prepare sooner for Windows Semi-Annual releases and reduce the overall validation effort required with traditional deployments. 
 
 ## Explore new Windows 10 features in Insider Previews
@@ -51,7 +51,7 @@ Windows 10 Insider Preview builds offer organizations a valuable and exciting op
 |Feedback   |  - Provide feedback via [Feedback Hub app](insiderhub://home/). This helps us make adjustments to features as quickly as possible.<br> - Encourage users to sign into the Feedback Hub using their AAD work accounts. This enables both you and Microsoft to track feedback submitted by users within your specific organization. (Note: This tracking is only visible to Microsoft and registered Insiders within your organization’s domain.)<br> - [Learn how to provide effective feedback in the Feedback Hub](https://insider.windows.com/how-to-feedback/)       |
 
 ## Validate Insider Preview builds 
-Along with exploring new features, you also have the option to validate your apps and infrastructure on Insider Preview builds. This activity can play an important role in your [Windows 10 deployment strategy](https://docs.microsoft.com/windows/deployment/update/waas-windows-insider-for-business). Early validation has several benefits:
+Along with exploring new features, you also have the option to validate your apps and infrastructure on Insider Preview builds. This activity can play an important role in your [Windows 10 deployment strategy](/windows/deployment/update/waas-windows-insider-for-business). Early validation has several benefits:
  
 - Get a head start on your Windows validation process 
 - Identify issues sooner to accelerate your Windows deployment 
@@ -65,4 +65,4 @@ Along with exploring new features, you also have the option to validate your app
 |Users    |   Application and infrastructure validation: In addition to Insiders who might have participated in feature exploration, we also recommend including a small group of application users from each business department to ensure a representative sample.|
 |Tasks   | Application and infrastructure validation: Before running an Insider Preview build, check our [Windows Insider blog](https://blogs.windows.com/windowsexperience/tag/windows-insider-program/#k3WWwxKCTWHCO82H.97) and [Windows Insider Tech Community](https://techcommunity.microsoft.com/t5/Windows-Insider-Program/bd-p/WindowsInsiderProgram) pages for updates on current issues and fixes.    |
 |Feedback   | Application and infrastructure validation:Provide feedback in the Feedback Hub app and also inform app vendors of any significant issues.  |
-|Guidance  |  Application and infrastructure validation:<br>- [Use Upgrade Readiness to create an app inventory and identify mission-critical apps](https://technet.microsoft.com/itpro/windows/deploy/upgrade-readiness-identify-apps)<br>- [Use Device Health to identify problem devices and device drivers](https://docs.microsoft.com/windows/deployment/update/device-health-monitor)<br> - [Windows 10 application compatibility](https://technet.microsoft.com/windows/mt703793)|
+|Guidance  |  Application and infrastructure validation:<br>- [Use Upgrade Readiness to create an app inventory and identify mission-critical apps](/mem/configmgr/desktop-analytics/overview)<br>- [Use Device Health to identify problem devices and device drivers](/windows/deployment/update/device-health-monitor)<br> - [Windows 10 application compatibility](/windows/windows-10/)|

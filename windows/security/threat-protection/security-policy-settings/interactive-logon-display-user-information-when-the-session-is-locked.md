@@ -4,7 +4,7 @@ description: Best practices, security considerations, and more for the security 
 ms.assetid: 9146aa3d-9b2f-47ba-ac03-ff43efb10530
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,6 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
+ms.technology: mde
 ---
 
 # Interactive logon: Display user information when the session is locked
@@ -35,7 +36,7 @@ Beginning with Windows 10 version 1607, new functionality was added to Windows 1
 This functionality is controlled by a new **Privacy** setting in **Settings** > **Accounts** > **Sign-in options**.
 The Privacy setting is off by default, which hides the details.
 
-![Privacy setting](images/privacy-setting-in-sign-in-options.png)
+![Privacy setting.](images/privacy-setting-in-sign-in-options.png)
 
 The **Interactive logon: Display user information when the session is locked** Group Policy setting controls the same functionality.
 

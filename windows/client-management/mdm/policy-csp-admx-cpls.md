@@ -74,7 +74,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting allows an administrator to standardize the account pictures for all users on a system to the default account picture. One application for this policy setting is to standardize the account pictures to a company logo.
+Available in the latest Windows 10 Insider Preview Build. This policy setting allows an administrator to standardize the account pictures for all users on a system to the default account picture. One application for this policy setting is to standardize the account pictures to a company logo.
 
 > [!NOTE] 
 > The default account picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\user.jpg. The default guest picture is stored at %PROGRAMDATA%\Microsoft\User Account Pictures\guest.jpg. If the default pictures do not exist, an empty frame is displayed.
@@ -93,7 +93,7 @@ If you disable or do not configure this policy setting, users will be able to cu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Apply the default account picture to all users*
+-   GP Friendly name: *Apply the default account picture to all users*
 -   GP name: *UseDefaultTile*
 -   GP path: *Control Panel/User Accounts*
 -   GP ADMX file name: *Cpls.admx*
@@ -102,16 +102,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

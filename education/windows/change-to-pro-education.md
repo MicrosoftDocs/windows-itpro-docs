@@ -18,12 +18,12 @@ manager: dansimp
 Windows 10 Pro Education is a new offering in Windows 10, version 1607. This edition builds on the commercial version of Windows 10 Pro and provides important management controls needed in schools by providing education-specific default settings.
 
 If you have an education tenant and use devices with Windows 10 Pro, global administrators can opt-in to a free change to Windows 10 Pro Education depending on your scenario.
-- [Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode](https://docs.microsoft.com/education/windows/s-mode-switch-to-edu)
+- [Switch to Windows 10 Pro Education in S mode from Windows 10 Pro in S mode](./s-mode-switch-to-edu.md)
 
 To take advantage of this offering, make sure you meet the [requirements for changing](#requirements-for-changing). For academic customers who are eligible to change to Windows 10 Pro Education, but are unable to use the above methods, contact Microsoft Support for assistance.
 
 >[!IMPORTANT]
->If you change a Windows 10 Pro device to Windows 10 Pro Education using Microsoft Store for Education, [subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation) won't work.
+>If you change a Windows 10 Pro device to Windows 10 Pro Education using Microsoft Store for Education, [subscription activation](/windows/deployment/windows-10-subscription-activation) won't work.
 
 ## Requirements for changing
 Before you change to Windows 10 Pro Education, make sure you meet these requirements:
@@ -65,7 +65,7 @@ See [change using Microsoft Store for Education](#change-using-microsoft-store-f
    
         **Figure 1** - Enter the details for the Windows edition change
 
-        ![Enter the details for the Windows edition change](images/i4e_editionupgrade.png)
+        ![Enter the details for the Windows edition change.](images/i4e_editionupgrade.png)
 
 3. The change will automatically be applied to the group you selected.
 
@@ -78,11 +78,11 @@ You can use Windows Configuration Designer to create a provisioning package that
 
     **Figure 2** - Enter the license key 
 
-    ![Enter the license key to change to Windows 10 Pro Education](images/wcd_productkey.png)
+    ![Enter the license key to change to Windows 10 Pro Education.](images/wcd_productkey.png)
 
 3. Complete the rest of the process for creating a provisioning package and then apply the package to the devices you want to change to Windows 10 Pro Education.
 
-    For more information about using Windows Configuration Designer, see [Set up student PCs to join domain](https://technet.microsoft.com/edu/windows/set-up-students-pcs-to-join-domain). 
+    For more information about using Windows Configuration Designer, see [Set up student PCs to join domain](./set-up-students-pcs-to-join-domain.md). 
 
 
 ### Change using the Activation page
@@ -123,7 +123,7 @@ Once you enable the setting to change to Windows 10 Pro Education, the change wi
 
     **Figure 3** - Check the box to confirm
 
-    ![Check the box to confirm](images/msfe_manage_benefits_checktoconfirm.png)
+    ![Check the box to confirm.](images/msfe_manage_benefits_checktoconfirm.png)
 
 5. Click **Change all my devices**. 
 
@@ -169,13 +169,13 @@ If the Windows device is running Windows 10, version 1703, follow these steps.
 
     **Figure 4** - Select how you'd like to set up the device
 
-    ![Select how you'd like to set up the device](images/1_howtosetup.png)
+    ![Select how you'd like to set up the device.](images/1_howtosetup.png)
 
 2. On the **Sign in with Microsoft** page, enter the username and password to use with Office 365 or other services from Microsoft, and then click **Next**.
 
     **Figure 5** - Enter the account details
 
-    ![Enter the account details you use with Office 365 or other Microsoft services](images/2_signinwithms.png)
+    ![Enter the account details you use with Office 365 or other Microsoft services.](images/2_signinwithms.png)
 
 3. Go through the rest of Windows device setup. Once you're done, the device will be Azure AD joined to your school's subscription.
 
@@ -188,21 +188,21 @@ If the Windows device is running Windows 10, version 1703, follow these steps.
 
     **Figure 6** - Go to **Access work or school** in Settings
 
-    ![Go to Access work or school in Settings](images/settings_workorschool_1.png)
+    ![Go to Access work or school in Settings.](images/settings_workorschool_1.png)
 
 2. In **Access work or school**, click **Connect**.
 3. In the **Set up a work or school account** window, click the **Join this device to Azure Active Directory** option at the bottom.
 
     **Figure 7** - Select the option to join the device to Azure Active Directory
 
-    ![Select the option to join the device to Azure Active Directory](images/settings_setupworkorschoolaccount_2.png)
+    ![Select the option to join the device to Azure Active Directory.](images/settings_setupworkorschoolaccount_2.png)
 
 4. On the **Let's get you signed in** window, enter the Azure AD credentials (username and password) and sign in. This will join the device to the school's Azure AD.
 5. To verify that the device was successfully joined to Azure AD, go back to **Settings > Accounts > Access work or school**. You should now see a connection under the **Connect to work or school** section that indicates the device is connected to Azure AD.
 
     **Figure 8** - Verify the device connected to Azure AD
 
-    ![Verify the device is connected to Azure AD](images/settings_connectedtoazuread_3.png)
+    ![Verify the device is connected to Azure AD.](images/settings_connectedtoazuread_3.png)
 
 
 #### Step 2: Sign in using Azure AD account
@@ -286,7 +286,7 @@ Once the automatic change to Windows 10 Pro Education is turned off, the change 
 
     **Figure 12** - Revert to Windows 10 Pro
 
-    ![Revert to Windows 10 Pro](images/msfe_manage_reverttowin10pro.png)
+    ![Revert to Windows 10 Pro.](images/msfe_manage_reverttowin10pro.png)
 
 4. You will be asked if you're sure that you want to turn off automatic changes to Windows 10 Pro Education. Click **Yes**.
 5. Click **Close** in the **Success** page.
@@ -304,10 +304,10 @@ You need to synchronize these identities so that users will have a *single ident
 
 **Figure 13** - On-premises AD DS integrated with Azure AD
 
-![Illustration of Azure Active Directory Connect](images/windows-ad-connect.png)
+![Illustration of Azure Active Directory Connect.](images/windows-ad-connect.png)
 
 For more information about integrating on-premises AD DS domains with Azure AD, see these resources:
--   [Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)
+-   [Integrating your on-premises identities with Azure Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity)
 -   [Azure AD + Domain Join + Windows 10](https://blogs.technet.microsoft.com/enterprisemobility/2016/02/17/azure-ad-domain-join-windows-10/)
 
 ## Related topics
@@ -315,5 +315,4 @@ For more information about integrating on-premises AD DS domains with Azure AD, 
 [Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)  
 [Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)  
 [Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)  
-[Windows 10 subscription activation](https://docs.microsoft.com/windows/deployment/windows-10-subscription-activation)
-
+[Windows 10 subscription activation](/windows/deployment/windows-10-subscription-activation)

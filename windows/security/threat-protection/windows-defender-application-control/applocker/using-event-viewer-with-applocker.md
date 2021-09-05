@@ -1,10 +1,10 @@
 ---
-title: Using Event Viewer with AppLocker (Windows 10)
+title: Using Event Viewer with AppLocker (Windows)
 description: This topic lists AppLocker events and describes how to use Event Viewer with AppLocker.
 ms.assetid: 109abb10-78b1-4c29-a576-e5a17dfeb916
 ms.reviewer: 
 ms.author: macapara
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -15,13 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
+ms.technology: mde
 ---
 
 # Using Event Viewer with AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic lists AppLocker events and describes how to use Event Viewer with AppLocker.
 

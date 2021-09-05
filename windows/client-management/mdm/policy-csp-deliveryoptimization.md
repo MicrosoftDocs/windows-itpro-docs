@@ -172,7 +172,7 @@ The default value is 10.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Absolute Max Cache Size (in GB)*
+-   GP Friendly name: *Absolute Max Cache Size (in GB)*
 -   GP name: *AbsoluteMaxCacheSize*
 -   GP element: *AbsoluteMaxCacheSize*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -236,7 +236,7 @@ Added in Windows 10, version 1703. Specifies whether the device is allowed to p
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Enable Peer Caching while the device connects via VPN*
+-   GP Friendly name: *Enable Peer Caching while the device connects via VPN*
 -   GP name: *AllowVPNPeerCaching*
 -   GP element: *AllowVPNPeerCaching*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -306,7 +306,7 @@ One or more values can be added as either fully qualified domain names (FQDN) or
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Cache Server Hostname*
+-   GP Friendly name: *Cache Server Hostname*
 -   GP name: *CacheHost*
 -   GP element: *CacheHost*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -376,7 +376,7 @@ This policy allows you to configure one or more Delivery Optimization in Network
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Cache Server Hostname Source*
+-   GP Friendly name: *Cache Server Hostname Source*
 -   GP name: *CacheHostSource*
 -   GP element: *CacheHostSource*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -457,7 +457,7 @@ After the max delay is reached, the download will resume using HTTP, either down
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Delay background download from http (in secs)*
+-   GP Friendly name: *Delay background download from http (in secs)*
 -   GP name: *DelayBackgroundDownloadFromHttp*
 -   GP element: *DelayBackgroundDownloadFromHttp*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -520,7 +520,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Delay Background download Cache Server fallback (in seconds)*
+-   GP Friendly name: *Delay Background download Cache Server fallback (in seconds)*
 -   GP name: *DelayCacheServerFallbackBackground*
 -   GP element: *DelayCacheServerFallbackBackground*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -593,7 +593,7 @@ Specifies the time in seconds to delay the fallback from Cache Server to the HTT
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Delay Foreground download Cache Server fallback (in seconds)*
+-   GP Friendly name: *Delay Foreground download Cache Server fallback (in seconds)*
 -   GP name: *DelayCacheServerFallbackForeground*
 -   GP element: *DelayCacheServerFallbackForeground*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -667,7 +667,7 @@ The recommended value is 1 minute (60).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Delay Foreground download from http (in secs)*
+-   GP Friendly name: *Delay Foreground download from http (in secs)*
 -   GP name: *DelayForegroundDownloadFromHttp*
 -   GP element: *DelayForegroundDownloadFromHttp*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -739,7 +739,7 @@ Specifies the download method that Delivery Optimization can use in downloads of
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Download Mode*
+-   GP Friendly name: *Download Mode*
 -   GP name: *DownloadMode*
 -   GP element: *DownloadMode*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -816,7 +816,7 @@ This Policy specifies an arbitrary group ID that the device belongs to. Use this
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Group ID*
+-   GP Friendly name: *Group ID*
 -   GP name: *GroupId*
 -   GP element: *GroupId*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -886,7 +886,7 @@ Starting with Windows 10, version 1903, you can use the Azure Active Directory (
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the source of Group IDs*
+-   GP Friendly name: *Select the source of Group IDs*
 -   GP name: *GroupIdSource*
 -   GP element: *GroupIdSource*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -958,7 +958,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Maximum Background Download Bandwidth (in KB/s)*
+-   GP Friendly name: *Maximum Background Download Bandwidth (in KB/s)*
 -   GP name: *MaxBackgroundDownloadBandwidth*
 -   GP element: *MaxBackgroundDownloadBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1024,7 +1024,7 @@ The default value is 259200 seconds (3 days).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Max Cache Age (in seconds)*
+-   GP Friendly name: *Max Cache Age (in seconds)*
 -   GP name: *MaxCacheAge*
 -   GP element: *MaxCacheAge*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1090,7 +1090,7 @@ The default value is 20.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Max Cache Size (percentage)*
+-   GP Friendly name: *Max Cache Size (percentage)*
 -   GP name: *MaxCacheSize*
 -   GP element: *MaxCacheSize*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1175,7 +1175,7 @@ The default value 0 (zero) means that Delivery Optimization dynamically adjusts 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Maximum Foreground Download Bandwidth (in KB/s)*
+-   GP Friendly name: *Maximum Foreground Download Bandwidth (in KB/s)*
 -   GP name: *MaxForegroundDownloadBandwidth*
 -   GP element: *MaxForegroundDownloadBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1260,7 +1260,7 @@ The default value is 500.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Minimum Background QoS (in KB/s)*
+-   GP Friendly name: *Minimum Background QoS (in KB/s)*
 -   GP name: *MinBackgroundQos*
 -   GP element: *MinBackgroundQos*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1325,7 +1325,7 @@ The default value is 0. The value 0 (zero) means "not limited" and the cloud ser
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow uploads while the device is on battery while under set Battery level (percentage)*
+-   GP Friendly name: *Allow uploads while the device is on battery while under set Battery level (percentage)*
 -   GP name: *MinBatteryPercentageAllowedToUpload*
 -   GP element: *MinBatteryPercentageAllowedToUpload*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1394,7 +1394,7 @@ The default value is 32 GB.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Minimum disk size allowed to use Peer Caching (in GB)*
+-   GP Friendly name: *Minimum disk size allowed to use Peer Caching (in GB)*
 -   GP name: *MinDiskSizeAllowedToPeer*
 -   GP element: *MinDiskSizeAllowedToPeer*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1460,7 +1460,7 @@ The default value is 100 MB.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Minimum Peer Caching Content File Size (in MB)*
+-   GP Friendly name: *Minimum Peer Caching Content File Size (in MB)*
 -   GP name: *MinFileSizeToCache*
 -   GP element: *MinFileSizeToCache*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1526,7 +1526,7 @@ The default value is 4 GB.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Minimum RAM capacity (inclusive) required to enable use of Peer Caching (in GB)*
+-   GP Friendly name: *Minimum RAM capacity (inclusive) required to enable use of Peer Caching (in GB)*
 -   GP name: *MinRAMAllowedToPeer*
 -   GP element: *MinRAMAllowedToPeer*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1592,7 +1592,7 @@ By default, %SystemDrive% is used to store the cache.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Modify Cache Drive*
+-   GP Friendly name: *Modify Cache Drive*
 -   GP name: *ModifyCacheDrive*
 -   GP element: *ModifyCacheDrive*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1660,7 +1660,7 @@ The default value is 20.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Monthly Upload Data Cap (in GB)*
+-   GP Friendly name: *Monthly Upload Data Cap (in GB)*
 -   GP name: *MonthlyUploadDataCap*
 -   GP element: *MonthlyUploadDataCap*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1722,7 +1722,7 @@ Note that downloads from LAN peers will not be throttled even when this policy i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Maximum Background Download Bandwidth (percentage)*
+-   GP Friendly name: *Maximum Background Download Bandwidth (percentage)*
 -   GP name: *PercentageMaxBackgroundBandwidth*
 -   GP element: *PercentageMaxBackgroundBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1797,7 +1797,7 @@ Note that downloads from LAN peers will not be throttled even when this policy i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Maximum Foreground Download Bandwidth (percentage)*
+-   GP Friendly namee: *Maximum Foreground Download Bandwidth (percentage)*
 -   GP name: *PercentageMaxForegroundBandwidth*
 -   GP element: *PercentageMaxForegroundBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1860,7 +1860,7 @@ Option 1 (Subnet mask) applies to both Download Mode LAN (1) and Group (2).
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select a method to restrict Peer Selection*
+-   GP Friendly name: *Select a method to restrict Peer Selection*
 -   GP name: *RestrictPeerSelectionBy*
 -   GP element: *RestrictPeerSelectionBy*
 -   GP path: *Windows Components/Delivery Optimization*
@@ -1933,7 +1933,7 @@ Added in Windows&nbsp;10, version 1803. Specifies the maximum background downloa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Business Hours to Limit Background Download Bandwidth*
+-   GP Friendly name: *Set Business Hours to Limit Background Download Bandwidth*
 -   GP name: *SetHoursToLimitBackgroundDownloadBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*
@@ -2007,7 +2007,7 @@ Added in Windows&nbsp;10, version 1803. Specifies the maximum foreground downloa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Business Hours to Limit Foreground Download Bandwidth*
+-   GP Friendly name: *Set Business Hours to Limit Foreground Download Bandwidth*
 -   GP name: *SetHoursToLimitForegroundDownloadBandwidth*
 -   GP path: *Windows Components/Delivery Optimization*
 -   GP ADMX file name: *DeliveryOptimization.admx*

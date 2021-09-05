@@ -5,8 +5,8 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: dansimp
-author: msfttracyp
+ms.author: greglin
+author: greg-lindsay
 ms.date: 09/14/2017
 ms.reviewer: 
 manager: dansimp
@@ -27,7 +27,7 @@ You can set the template service's **Startup Type** to **Disabled** to create pe
 > Carefully test any changes to the template service's Startup Type before deploying to a production environment. 
 
 Use the following information to understand per-user services, change the template service Startup Type, and manage per-user services through Group Policy and security templates. 
-For more information about disabling system services for Windows Server, see [Guidance on disabling system services on Windows Server with Desktop Experience](https://docs.microsoft.com/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server).
+For more information about disabling system services for Windows Server, see [Guidance on disabling system services on Windows Server with Desktop Experience](/windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server).
 
 ## Per-user services
 
@@ -102,19 +102,19 @@ If a per-user service can't be disabled using a the security template, you can d
 
 5. Right-click **Registry** > **New** > **Registry Item**.
 
-   ![Group Policy preferences disabling per-user services](media/gpp-per-user-services.png) 
+   ![Group Policy preferences disabling per-user services.](media/gpp-per-user-services.png) 
    
 6. Make sure that  HKEY_Local_Machine is selected for Hive and then click ... (the ellipses) next to Key Path.
 
-   ![Choose HKLM](media/gpp-hklm.png)  
+   ![Choose HKLM.](media/gpp-hklm.png)  
     
 7. Browse to **System\CurrentControlSet\Services\PimIndexMaintenanceSvc**. In the list of values, highlight **Start** and click **Select**.
 
-   ![Select Start](media/gpp-svc-start.png)   
+   ![Select Start.](media/gpp-svc-start.png)   
    
 8. Change **Value data** from **00000003** to **00000004** and click **OK**. Note setting the Value data to **4** = **Disabled**. 
 
-   ![Startup Type is Disabled](media/gpp-svc-disabled.png)   
+   ![Startup Type is Disabled.](media/gpp-svc-disabled.png)   
    
 9. To add the other services that cannot be managed with a Group Policy templates, edit the policy and repeat steps 5-8.  
 
@@ -140,14 +140,14 @@ REG.EXE ADD HKLM\System\CurrentControlSet\Services\WpnUserService /v Start /t RE
 
 If you cannot use Group Policy preferences to manage the per-user services, you can edit the registry with regedit.exe. To disable the template services, change the Startup Type for each service to 4 (disabled):
 
-![Using Regedit to change servive Starup Type](media/regedit-change-service-startup-type.png) 
+![Using Regedit to change servive Starup Type.](media/regedit-change-service-startup-type.png) 
 
 > [!CAUTION]
 > We recommend that you do not directly edit the registry unless there is no other alternative. Modifications to the registry are not validated by the Registry Editor or by the Windows operating system before they are applied. As a result, incorrect values can be stored, and this can result in unrecoverable errors in the system. When possible, instead of editing the registry directly, use Group Policy or other Windows tools such as the Microsoft Management Console (MMC) to accomplish tasks. If you must edit the registry, use extreme caution. 
 
 Beginning with Windows 10, version 1709 and Windows Server, version 1709, you can prevent the per-user service from being created by setting **UserServiceFlags** to 0 under the same service configuration in the registry:
 
-![Create per-user services in disabled state](media/user-service-flag.png)
+![Create per-user services in disabled state.](media/user-service-flag.png)
 
 ### Manage template services by modifying the Windows image
 
@@ -157,14 +157,14 @@ If you're using custom images to deploy Windows, you can modify the Startup Type
 
 You can create a script to change the Startup Type for the per-user services. Then use Group Policy or another management solution to deploy the script in your environment.
 
-Sample script using [sc.exe](https://technet.microsoft.com/library/cc990290%28v=ws.11%29.aspx?f=255&MSPPError=-2147217396):
+Sample script using [sc.exe](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc990290(v=ws.11)?f=255&MSPPError=-2147217396):
 
 ```
 sc.exe configure <service name> start= disabled
 ```
 Note that the space after "=" is intentional.
 
-Sample script using the [Set-Service PowerShell cmdlet](https://technet.microsoft.com/library/ee176963.aspx):
+Sample script using the [Set-Service PowerShell cmdlet](/previous-versions/windows/it-pro/windows-powershell-1.0/ee176963(v=technet.10)):
 
 ```powershell
 Set-Service <service name> -StartupType Disabled
@@ -186,4 +186,4 @@ For example, you might see the following per-user services listed in the Service
 
 You can query the service configuration from the command line. The **Type** value indicates whether the service is a user-service template or user-service instance.
 
-![Use sc.exe to view service type](media/cmd-type.png)
+![Use sc.exe to view service type.](media/cmd-type.png)

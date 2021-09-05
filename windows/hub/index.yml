@@ -1,11 +1,11 @@
 ### YamlMime:Landing
 
-title: Windows 10 resources and documentation for IT Pros # < 60 chars
-summary: Plan, deploy, secure, and manage devices running Windows 10.  # < 160 chars
+title: Windows client resources and documentation for IT Pros # < 60 chars
+summary: Plan, deploy, secure, and manage devices running Windows 10 and Windows 11.  # < 160 chars
 
 metadata:
-  title: Windows 10 documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Evaluate, plan, deploy, secure and manage devices running Windows 10. # Required; article description that is displayed in search results. < 160 chars.
+  title: Windows client documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
+  description: Evaluate, plan, deploy, secure, and manage devices running Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
   ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice
@@ -13,7 +13,7 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/20/2020 #Required; mm/dd/yyyy format.
+  ms.date: 06/01/2020 #Required; mm/dd/yyyy format.
   localization_priority: medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -26,21 +26,25 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What's new in Windows 10, version 20H2
-            url: /windows/whats-new/whats-new-windows-10-version-20H2
-          - text: What's new in Windows 10, version 2004
-            url: /windows/whats-new/whats-new-windows-10-version-2004
-          - text: What's new in Windows 10, version 1909
-            url: /windows/whats-new/whats-new-windows-10-version-1909
-          - text: Windows 10 release information
-            url:  https://docs.microsoft.com/windows/release-information/
+          - text: Windows 11 overview
+            url: /windows/whats-new/windows-11
+          - text: Windows 11 requirements
+            url: /windows/whats-new/windows-11-requirements
+          - text: Plan for Windows 11
+            url: /windows/whats-new/windows-11-plan
+          - text: Prepare for Windows 11
+            url: /windows/whats-new/windows-11-prepare
+          - text: What's new in Windows 10, version 21H1
+            url: /windows/whats-new/whats-new-windows-10-version-21H1
+          - text: Windows release information
+            url:  /windows/release-health/release-information
 
   # Card (optional)
   - title: Configuration
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Configure Windows 10
+          - text: Configure Windows
             url: /windows/configuration/index
           - text: Accessibility information for IT Pros
             url: /windows/configuration/windows-10-accessibility-for-itpros
@@ -54,13 +58,13 @@ landingContent:
     linkLists:
       - linkListType: deploy
         links:
-          - text: Deploy and update Windows 10
+          - text: Deploy and update Windows
             url: /windows/deployment/index
-          - text: Windows 10 deployment scenarios
+          - text: Windows deployment scenarios
             url: /windows/deployment/windows-10-deployment-scenarios
           - text: Create a deployment plan
             url: /windows/deployment/update/create-deployment-plan
-          - text: Prepare to deploy Windows 10
+          - text: Prepare to deploy Windows client
             url: /windows/deployment/update/prepare-deploy-windows
 
  
@@ -69,7 +73,7 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Windows 10 application management
+          - text: Windows application management
             url: /windows/application-management/index
           - text: Understand the different apps included in Windows 10
             url: /windows/application-management/apps-in-windows-10
@@ -83,21 +87,23 @@ landingContent:
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Windows 10 client management
+          - text: Windows client management
             url: /windows/client-management/index
-          - text: Administrative tools in Windows 10
+          - text: Administrative tools 
             url: /windows/client-management/administrative-tools-in-windows-10
           - text: Create mandatory user profiles
             url: /windows/client-management/mandatory-user-profile
           - text: New policies for Windows 10
             url: /windows/client-management/new-policies-for-windows-10
+          - text: Configuration service provider reference
+            url: /windows/client-management/mdm/configuration-service-provider-reference
 
   # Card (optional)
   - title: Security and Privacy
     linkLists:
       - linkListType: how-to-guide
         links:
-          - text: Windows 10 Enterprise Security
+          - text: Windows Enterprise Security
             url: /windows/security/index
           - text: Windows Privacy
             url: /windows/privacy/index

@@ -7,9 +7,9 @@ keywords: troubleshooting, wireless network connectivity, wireless, Wi-Fi
 ms.prod: w10
 ms.mktglfcycl: 
 ms.sitesec: library
-author: dansimp
+author: greg-lindsay
 ms.localizationpriority: medium
-ms.author: dansimp
+ms.author: greglin
 ms.topic: troubleshooting
 ---
 
@@ -29,7 +29,7 @@ This workflow involves knowledge and use of [TextAnalysisTool](https://github.co
 This article applies to any scenario in which Wi-Fi connections fail to establish. The troubleshooter is developed with Windows 10 clients in focus, but also may be useful with traces as far back as Windows 7.
 
 > [!NOTE]
-> This troubleshooter uses examples that demonstrate a general strategy for navigating and interpreting wireless component [Event Tracing for Windows](https://docs.microsoft.com/windows/desktop/etw/event-tracing-portal) (ETW). It is not meant to be representative of every wireless problem scenario.
+> This troubleshooter uses examples that demonstrate a general strategy for navigating and interpreting wireless component [Event Tracing for Windows](/windows/desktop/etw/event-tracing-portal) (ETW). It is not meant to be representative of every wireless problem scenario.
 
 Wireless ETW is incredibly verbose and calls out a lot of innocuous errors (rather flagged behaviors that have little or nothing to do with the problem scenario). Simply searching for or filtering on "err", "error", and "fail" will seldom lead you to the root cause of a problematic Wi-Fi scenario. Instead it will flood the screen with meaningless logs that will obfuscate the context of the actual problem.
 
@@ -86,14 +86,14 @@ See the [example ETW capture](#example-etw-capture) at the bottom of this articl
 The following is a high-level view of the main wifi components in Windows.
 
 <table>
-<tr><td><img src="images/wcm.png"></td><td>The <b>Windows Connection Manager</b> (Wcmsvc) is closely associated with the UI controls (taskbar icon) to connect to various networks, including wireless networks. It accepts and processes input from the user and feeds it to the core wireless service. </td></tr>
-<tr><td><img src="images/wlan.png"></td><td>The <b>WLAN Autoconfig Service</b> (WlanSvc) handles the following core functions of wireless networks in windows:
+<tr><td><img src="images/wcm.png" alt="Windows Connection Manager"></td><td>The <b>Windows Connection Manager</b> (Wcmsvc) is closely associated with the UI controls (taskbar icon) to connect to various networks, including wireless networks. It accepts and processes input from the user and feeds it to the core wireless service. </td></tr>
+<tr><td><img src="images/wlan.png" alt="WLAN Autoconfig Service"></td><td>The <b>WLAN Autoconfig Service</b> (WlanSvc) handles the following core functions of wireless networks in windows:
 
 - Scanning for wireless networks in range
 - Managing connectivity of wireless networks</td></tr>
-<tr><td><img src="images/msm.png"></td><td>The <b>Media Specific Module</b> (MSM) handles security aspects of connection being established.</td></tr>
-<tr><td><img src="images/wifi-stack.png"></td><td>The <b>Native WiFi stack</b> consists of drivers and wireless APIs to interact with wireless miniports and the supporting user-mode Wlansvc.</td></tr>
-<tr><td><img src="images/miniport.png"></td><td>Third-party <b>wireless miniport</b> drivers interface with the upper wireless stack to provide notifications to and receive commands from Windows.</td></tr>
+<tr><td><img src="images/msm.png" alt="Media Specific Module"></td><td>The <b>Media Specific Module</b> (MSM) handles security aspects of connection being established.</td></tr>
+<tr><td><img src="images/wifi-stack.png" alt="Native WiFi stack"></td><td>The <b>Native WiFi stack</b> consists of drivers and wireless APIs to interact with wireless miniports and the supporting user-mode Wlansvc.</td></tr>
+<tr><td><img src="images/miniport.png" alt="Wireless miniport"></td><td>Third-party <b>wireless miniport</b> drivers interface with the upper wireless stack to provide notifications to and receive commands from Windows.</td></tr>
 </table>
 
 
@@ -152,7 +152,7 @@ The important components of the MSM include:
 - Security Manager (SecMgr) - handles all pre and post-connection security operations.
 - Authentication Engine (AuthMgr) – Manages 802.1x auth requests
 
-    ![MSM details](images/msmdetails.png)
+    ![MSM details.](images/msmdetails.png)
 
 Each of these components has their own individual state machines which follow specific transitions.
 Enable the **FSM transition, SecMgr Transition,** and **AuthMgr Transition** filters in TextAnalysisTool for more detail.
@@ -237,8 +237,8 @@ This is followed by **PHY_STATE_CHANGE** and **PORT_DOWN** events due to a disas
 
 ### Resources
 
-[802.11 Wireless Tools and Settings](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc755892(v%3dws.10))<br>
-[Understanding 802.1X authentication for wireless networks](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2003/cc759077%28v%3dws.10%29)<br>
+[802.11 Wireless Tools and Settings](/previous-versions/windows/it-pro/windows-server-2003/cc755892(v%3dws.10))<br>
+[Understanding 802.1X authentication for wireless networks](/previous-versions/windows/it-pro/windows-server-2003/cc759077%28v%3dws.10%29)<br>
 
 ## Example ETW capture
 
@@ -327,4 +327,4 @@ Copy and paste all the lines below and save them into a text file named "wifi.ta
 
 In the following example, the **View** settings are configured to **Show Only Filtered Lines**.
 
-![TAT filter example](images/tat.png)
+![TAT filter example.](images/tat.png)

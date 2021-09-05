@@ -9,7 +9,7 @@ ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
-author: dulcemontemayor
+author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
@@ -42,7 +42,7 @@ You’ll need this software to run WIP in your enterprise:
 
 |Operating system | Management solution |
 |-----------------|---------------------|
-|Windows 10, version 1607 or later | Microsoft Intune<br><br>-OR-<br><br>Microsoft Endpoint Configuration Manager<br><br>-OR-<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt697634.aspx) documentation.|
+|Windows 10, version 1607 or later | Microsoft Intune<br><br>-OR-<br><br>Microsoft Endpoint Configuration Manager<br><br>-OR-<br><br>Your current company-wide 3rd party mobile device management (MDM) solution. For info about 3rd party MDM solutions, see the documentation that came with your product. If your 3rd party MDM does not have UI support for the policies, refer to the [EnterpriseDataProtection CSP](/windows/client-management/mdm/enterprisedataprotection-csp) documentation.|
 
 ## What is enterprise data control?
 Effective collaboration means that you need to share data with others in your enterprise. This sharing can be from one extreme where everyone has access to everything without any security, all the way to the other extreme where people can’t share anything and it’s all highly secured. Most enterprises fall somewhere in between the two extremes, where success is balanced between providing the necessary access with the potential for improper data disclosure.
@@ -110,7 +110,7 @@ WIP is the mobile application management (MAM) mechanism on Windows 10. WIP give
 -   **Remove access to enterprise data from enterprise-protected devices.** WIP gives admins the ability to revoke enterprise data from one or many MDM-enrolled devices, while leaving personal data alone. This is a benefit when an employee leaves your company, or in the case of a stolen device. After determining that the data access needs to be removed, you can use Microsoft Intune to unenroll the device so when it connects to the network, the user's encryption key for the device is revoked and the enterprise data becomes unreadable.
 
     >[!NOTE]
-    >For management of Surface devices it is recommended that you use the Current Branch of Microsoft Endpoint Configuration Manager.<br>Microsoft Endpoint Configuration Manager also allows you to revoke enterprise data. However, it does it by performing a factory reset of the device.
+    >For management of Surface devices it is recommended that you use the Current Branch of Microsoft Endpoint Configuration Manager.<br>Microsoft Endpoint Manager also allows you to revoke enterprise data. However, it does it by performing a factory reset of the device.
 
 ## How WIP works
 WIP helps address your everyday challenges in the enterprise. Including:

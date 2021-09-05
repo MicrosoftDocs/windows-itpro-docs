@@ -1,183 +1,148 @@
 ---
-title: Windows 10 - Apps
+title: Learn about the different app types in Windows 10 | Microsoft Docs
 ms.reviewer: 
-manager: dansimp
-description: Use this article to understand the different types of apps that run on Windows 10, such as UWP and Win32 apps.
+manager: dougeby
+description: Learn more and understand the different types of apps that run on Windows 10 and Windows 11. For example, learn more about UWP, WPF, Win32, and Windows Forms apps, including the best way to install these apps.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: dansimp
-author: msfttracyp
+ms.author: mandia
+author: MandiOhlinger
 ms.localizationpriority: medium
 ms.topic: article
 ---
-# Understand the different apps included in Windows 10
 
->Applies to: Windows 10
+# Overview of apps on Windows client devices
 
-The following types of apps run on Windows 10:
-- Windows apps - introduced in Windows 8, primarily installed from the Store app.
-- Universal Windows Platform (UWP) apps - designed to work across platforms, can be installed on multiple platforms including Windows client, Windows Phone, and Xbox. All UWP apps are also Windows apps, but not all Windows apps are UWP apps.
-- "Win32" apps - traditional Windows applications.
+> Applies to:
+>
+> - Windows 10
 
-Digging into the Windows apps, there are two categories:
-- Apps - All other apps, installed in C:\Program Files\WindowsApps. There are two classes of apps:
-   - Provisioned: Installed in user account the first time you sign in with a new user account.
-   - Installed: Installed as part of the OS.
-- System apps - Apps that are installed in the C:\Windows\* directory. These apps are integral to the OS.
+## Before you begin
 
-The following tables list the system apps, installed Windows apps, and provisioned Windows apps in a standard Windows 10 Enterprise installation. (If you have a custom image, your specific apps might differ.) The tables list the app, the full name, show the app's status in Windows 10 version 1709, 1803, and 1809 and indicate whether an app can be uninstalled through the UI.
+As organizations become more global, and to support employees working from anywhere, it's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. For Microsoft, that includes using Microsoft Endpoint Manager. Endpoint Manager includes Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
 
-Some of the apps show up in multiple tables - that's because their status changed between versions. Make sure to check the version column for the version you are currently running.
+In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
 
-## Provisioned Windows apps
+- [Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview)
+- [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
+- [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
 
-You can list all provisioned Windows apps with this PowerShell command:
+## App types
 
-```Powershell
-Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
-```
+There are different types of apps that can run on your Windows client devices. This section lists some of the common apps used on Windows devices.
 
-Here are the provisioned Windows apps in Windows 10 versions 1803, 1809, 1903, 1909, and 2004.
+- **Microsoft 365 apps**: These apps are used for business and productivity, and include Outlook, Word, Teams, OneNote, and more. Depending on the licenses your organization has, you may already have these apps. Using an MDM provider, these apps can also be deployed to mobile devices, including smartphones.
 
-| Package name                                 | App name                                                                                                           | 1803 | 1809 | 1903 | 1909 | 2004 | Uninstall through UI? |
-|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|:----:|:----:|:----:|:----:|:----:|:---------------------:|
-| Microsoft.3DBuilder                          | [3D Builder](ms-windows-store://pdp/?PFN=Microsoft.3DBuilder_8wekyb3d8bbwe)                                        |      |      |      |      |      |          Yes          |
-| Microsoft.BingWeather                        | [MSN Weather](ms-windows-store://pdp/?PFN=Microsoft.BingWeather_8wekyb3d8bbwe)                                     |   x  |   x  |   x  |   x  |   x  |          Yes          |
-| Microsoft.DesktopAppInstaller                | [App Installer](ms-windows-store://pdp/?PFN=Microsoft.DesktopAppInstaller_8wekyb3d8bbwe)                           |   x  |   x  |   x  |   x  |   x  |    Via Settings App   |
-| Microsoft.GetHelp                            | [Get Help](ms-windows-store://pdp/?PFN=Microsoft.Gethelp_8wekyb3d8bbwe)                                            |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Getstarted                         | [Microsoft Tips](ms-windows-store://pdp/?PFN=Microsoft.Getstarted_8wekyb3d8bbwe)                                   |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.HEIFImageExtension                 | [HEIF Image Extensions](ms-windows-store://pdp/?PFN=Microsoft.HEIFImageExtension_8wekyb3d8bbwe)                    |      |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Messaging                          | [Microsoft Messaging](ms-windows-store://pdp/?PFN=Microsoft.Messaging_8wekyb3d8bbwe)                               |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Microsoft3DViewer                  | [Mixed Reality Viewer](ms-windows-store://pdp/?PFN=Microsoft.Microsoft3DViewer_8wekyb3d8bbwe)                      |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.MicrosoftOfficeHub                 | [Office](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe)                                |   x  |   x  |   x  |   x  |   x  |          Yes          |
-| Microsoft.MicrosoftSolitaireCollection       | [Microsoft Solitaire Collection](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe) |   x  |   x  |   x  |   x  |   x  |          Yes          |
-| Microsoft.MicrosoftStickyNotes               | [Microsoft Sticky Notes](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe)                 |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.MixedReality.Portal                | [Mixed Reality Portal](ms-windows-store://pdp/?PFN=Microsoft.MixedReality.Portal_8wekyb3d8bbwe)                    |      |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.MSPaint                            | [Paint 3D](ms-windows-store://pdp/?PFN=Microsoft.MSPaint_8wekyb3d8bbwe)                                            |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Office.OneNote                     | [OneNote for Windows 10](ms-windows-store://pdp/?PFN=Microsoft.Office.OneNote_8wekyb3d8bbwe)                                      |   x  |   x  |   x  |   x  |   x  |          Yes          |
-| Microsoft.OneConnect                         | [Mobile Plans](ms-windows-store://pdp/?PFN=Microsoft.OneConnect_8wekyb3d8bbwe)                            |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Outlook.DesktopIntegrationServices |                                                                                                                    |      |      |      |   x  |   x  |                       |
-| Microsoft.People                             | [Microsoft People](ms-windows-store://pdp/?PFN=Microsoft.People_8wekyb3d8bbwe)                                     |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Print3D                            | [Print 3D](ms-windows-store://pdp/?PFN=Microsoft.Print3D_8wekyb3d8bbwe)                                            |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.ScreenSketch                       | [Snip & Sketch](ms-windows-store://pdp/?PFN=Microsoft.ScreenSketch_8wekyb3d8bbwe)                                  |      |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.SkypeApp                           | [Skype](ms-windows-store://pdp/?PFN=Microsoft.SkypeApp_kzf8qxf38zg5c)                                              |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.StorePurchaseApp                   | [Store Purchase App](ms-windows-store://pdp/?PFN=Microsoft.StorePurchaseApp_8wekyb3d8bbwe)                         |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.VP9VideoExtensions                 |                                                                                                                    |      |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Wallet                             | [Microsoft Pay](ms-windows-store://pdp/?PFN=Microsoft.Wallet_8wekyb3d8bbwe)                                        |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.WebMediaExtensions                 | [Web Media Extensions](ms-windows-store://pdp/?PFN=Microsoft.WebMediaExtensions_8wekyb3d8bbwe)                     |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.WebpImageExtension                 | [Webp Image Extension](ms-windows-store://pdp/?PFN=Microsoft.WebpImageExtension_8wekyb3d8bbwe)                     |      |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Windows.Photos                     | [Microsoft Photos](ms-windows-store://pdp/?PFN=Microsoft.Windows.Photos_8wekyb3d8bbwe)                             |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.WindowsAlarms                      | [Windows Alarms & Clock](ms-windows-store://pdp/?PFN=Microsoft.WindowsAlarms_8wekyb3d8bbwe)                        |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.WindowsCalculator                  | [Windows Calculator](ms-windows-store://pdp/?PFN=Microsoft.WindowsCalculator_8wekyb3d8bbwe)                        |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.WindowsCamera                      | [Windows Camera](ms-windows-store://pdp/?PFN=Microsoft.WindowsCamera_8wekyb3d8bbwe)                                |   x  |   x  |   x  |   x  |   x  |           No          |
-| microsoft.windowscommunicationsapps          | [Mail and Calendar](ms-windows-store://pdp/?PFN=microsoft.windowscommunicationsapps_8wekyb3d8bbwe)                 |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.WindowsFeedbackHub                 | [Feedback Hub](ms-windows-store://pdp/?PFN=Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe)                             |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.WindowsMaps                        | [Windows Maps](ms-windows-store://pdp/?PFN=Microsoft.WindowsMaps_8wekyb3d8bbwe)                                    |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.WindowsSoundRecorder               | [Windows Voice Recorder](ms-windows-store://pdp/?PFN=Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe)                 |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.WindowsStore                       | [Microsoft Store](ms-windows-store://pdp/?PFN=Microsoft.WindowsStore_8wekyb3d8bbwe)                                |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.Xbox.TCUI                          | [Xbox Live in-game experience](ms-windows-store://pdp/?PFN=Microsoft.Xbox.TCUI_8wekyb3d8bbwe)                                         |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.XboxApp                            | [Xbox Console Companion](ms-windows-store://pdp/?PFN=Microsoft.XboxApp_8wekyb3d8bbwe)                                                |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.XboxGameOverlay                    | [Xbox Game Bar Plugin](ms-windows-store://pdp/?PFN=Microsoft.XboxGameOverlay_8wekyb3d8bbwe)                               |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.XboxGamingOverlay                  | [Xbox Game Bar](ms-windows-store://pdp/?PFN=Microsoft.XboxGamingOverlay_8wekyb3d8bbwe)                       |   x  |   x  |   x  |   x  |   x  |          No          |
-| Microsoft.XboxIdentityProvider               | [Xbox Identity Provider](ms-windows-store://pdp/?PFN=Microsoft.XboxIdentityProvider_8wekyb3d8bbwe)                 |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.XboxSpeechToTextOverlay            |                                                                                                                    |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.YourPhone                          | [Your Phone](ms-windows-store://pdp/?PFN=Microsoft.YourPhone_8wekyb3d8bbwe)                                        |      |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.ZuneMusic                          | [Groove Music](ms-windows-store://pdp/?PFN=Microsoft.ZuneMusic_8wekyb3d8bbwe)                                      |   x  |   x  |   x  |   x  |   x  |           No          |
-| Microsoft.ZuneVideo                          | [Movies & TV](ms-windows-store://pdp/?PFN=Microsoft.ZuneVideo_8wekyb3d8bbwe)                                       |   x  |   x  |   x  |   x  |   x  |           No          |
+  For more information on the Microsoft 365 license options, and what you get, see [Transform your enterprise with Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
 
->[!NOTE]
->The Store app can't be removed. If you want to remove and reinstall the Store app, you can only bring Store back by either restoring your system from a backup or resetting your system. Instead of removing the Store app, you should use group policies to hide or disable it.
+- **Power Apps**: These apps connect to business data available online and on-premises, and can run in a web browser, and on mobile devices. They can be created by business analysts and professional developers. For more information, see [What is Power Apps?](/powerapps/powerapps-overview).
 
-## System apps
+- **.NET apps**: These apps can be desktop apps that run on the device, or web apps. Some common .NET apps include:
 
-System apps are integral to the operating system. Here are the typical system apps in Windows 10 versions 1709, 1803, and 1809.
+  - **Windows Presentation Foundation (WPF)**: Using .NET, you can create a WPF desktop app that runs on the device, or create a WPF web app. This app is commonly used by organizations that create line of business (LOB) desktop apps. For more information, see [WPF Application Development](/dotnet/desktop/wpf/app-development).
+  - **Windows Forms (WinForm)**: Using .NET, you can create a Windows Forms desktop app that runs on the device, and doesn't require a web browser or internet access. Just like Win32 apps, WinForm apps can access the local hardware and file system of the computer where the app is running. For more information, see [Desktop Guide (Windows Forms .NET)](/dotnet/desktop/winforms/overview).
 
-You can list all system apps with this PowerShell command:
+- **Windows apps**: 
 
-```Powershell
-Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | Sort Name | Format-Table Name, InstallLocation
-```
+  > [!TIP]
+  > Starting with Windows 10, you can use the **Windows UI Library (WinUI 3)** to create .NET, Win32 desktop, and UWP apps. This library includes native Windows UI controls and other user interface elements familiar to Windows users. For more information, see [Windows UI Library (WinUI)](/windows/apps/winui/).
 
-| Name                             | Package Name                                | 1709 | 1803 | 1809 |Uninstall through UI? |
-|----------------------------------|---------------------------------------------|:-----:|:----:|:----:|-----------------------|
-| File Picker                      | 1527c705-839a-4832-9118-54d4Bd6a0c89        |       | x    | x    | No                    |
-| File Explorer                    | c5e2524a-ea46-4f67-841f-6a9465d9d515        |       | x    | x    | No                    |
-| App Resolver UX                  | E2A4F912-2574-4A75-9BB0-0D023378592B        |       | x    | x    | No                    |
-| Add Suggested Folders To Library | F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE        |       | x    | x    | No                    |
-|                                  | InputApp                                    | x     | x    | x    | No                    |
-| Microsoft.AAD.Broker.Plugin      | Microsoft.AAD.Broker.Plugin                 | x     | x    | x    | No                    |
-| Microsoft.AccountsControl        | Microsoft.AccountsControl                   | x     | x    | x    | No                    |
-| Microsoft.AsyncTextService       | Microsoft.AsyncTextService                  |       | x    | x    | No                    |
-| Hello setup UI                   | Microsoft.BioEnrollment                     | x     | x    | x    | No                    |
-|                                  | Microsoft.CredDialogHost                    | x     | x    | x    | No                    |
-|                                  | Microsoft.ECApp                             | x     | x    | x    | No                    |
-|                                  | Microsoft.LockApp                           | x     | x    | x    | No                    |
-| Microsoft Edge                   | Microsoft.MicrosoftEdge                     | x     | x    | x    | No                    |
-|                                  | Microsoft.MicrosoftEdgeDevToolsClient       |       | x    | x    | No                    |
-|                                  | Microsoft.PPIProjection                     | x     | x    | x     | No                    |
-|                                  | Microsoft.Win32WebViewHost                  |       | x    | x    | No                    |
-|                                  | Microsoft.Windows.Apprep.ChxApp             | x     | x    | x    | No                    |
-|                                  | Microsoft.Windows.AssignedAccessLockApp     | x     | x    | x    | No                    |
-|                                  | Microsoft.Windows.CapturePicker             |       | x    | x    | No                    |
-|                                  | Microsoft.Windows.CloudExperienceHost       | x     | x    | x    | No                    |
-|                                  | Microsoft.Windows.ContentDeliveryManager    | x     | x    | x    | No                    |
-| Cortana                          | Microsoft.Windows.Cortana                   | x     | x    | x    | No                    |
-|                                  | Microsoft.Windows.Holographic.FirstRun      | x     | x    |      | No                    |
-|                                  | Microsoft.Windows.OOBENetworkCaptivePort    | x     | x    | x    | No                    |
-|                                  | Microsoft.Windows.OOBENetworkConnectionFlow | x     | x    | x    | No                    |
-|                                  | Microsoft.Windows.ParentalControls          | x     | x    | x    | No                    |
-| People Hub                       | Microsoft.Windows.PeopleExperienceHost      | x     | x    | x    | No                    |
-|                                  | Microsoft.Windows.PinningConfirmationDialog | x     | x    | x    | No                    |
-|                                  | Microsoft.Windows.SecHealthUI               | x     | x    | x    | No                    |
-|                                  | Microsoft.Windows.SecondaryTileExperience   | x     |      |      | No                    |
-|                                  | Microsoft.Windows.SecureAssessmentBrowser   | x     | x    | x    | No                    |
-| Start                            | Microsoft.Windows.ShellExperienceHost       | x     | x    | x    | No                    |
-| Windows Feedback                 | Microsoft.WindowsFeedback                   | *     |      |      | No                    |
-|                                  | Microsoft.XboxGameCallableUI                | x     | x    | x    | No                    |
-|                                  | Windows.CBSPreview                          |       | x    | x    | No                    |
-| Contact Support*                 | Windows.ContactSupport                      | *     |      |      | Via Settings App      |
-| Settings                         | Windows.immersivecontrolpanel               | x     | x    | x    | No                    |
-| Print 3D                         | Windows.Print3D                             |       | x    | x    | Yes                   |
-| Print UI                         | Windows.PrintDialog                         | x     | x    | x    | No                    |
+  - **Apps**: All apps installed in `C:\Program Files\WindowsApps`. There are two classes of apps:
 
+    - **Provisioned**: Installed in user account the first time you sign in with a new user account. For a list of some common provisioned apps, see [Provisioned apps installed with the Windows client OS](provisioned-apps-windows-client-os.md).
+    - **Installed**: Installed as part of the OS.
 
-> [!NOTE]
-> The Contact Support app changed to Get Help in version 1709. Get Help is a provisioned app (instead of system app like Contact Support).
+  - **Universal Windows Platform (UWP) apps**: These apps run and can be installed on many Windows platforms, including tablets, Microsoft HoloLens, Xbox, and more. All UWP apps are Windows apps. Not all Windows apps are UWP apps.
 
-## Installed Windows apps
+    For more information, see [What's a Universal Windows Platform (UWP) app?](/windows/uwp/get-started/universal-application-platform-guide).
 
-Here are the typical installed Windows apps in Windows 10 versions 1709, 1803, and 1809.
+  - **Win32 apps**: These apps are traditional Windows apps that run on the device, and are often called desktop apps. They require direct access to Windows and the device hardware, and typically don't require a web browser. These apps run in 32-bit mode on 64-bit devices, and don't depend on a managed runtime environment, like .NET.
+
+    For more information, see [Get started developing apps for Windows desktop](/windows/apps/get-started) and [Make your apps great on Windows 11](/windows/apps/get-started/make-apps-great-for-windows).
+
+  - **System apps**: Apps installed in the `C:\Windows\` directory. These apps are part of the Windows OS. For a list of some common system apps, see [System apps installed with the Windows client OS](system-apps-windows-client-os.md).
+
+- **Web apps** and **Progressive web apps (PWA)**: These apps run on a server, and don't run on the end user device. To use these apps, users must use a web browser and have internet access. **Progressive web apps** are designed to work for all users, work with any browser, and work on any platform.
+
+  Web apps are typically created in Visual Studio, and can be created with different languages. For more information, see [Create a Web App](https://azure.microsoft.com/get-started/web-app/). When the app is created and ready to be used, you deploy the web app to a web server. Using Azure, you can host your web apps in the cloud, instead of on-premises. For more information, see [App Service overview](/azure/app-service/overview).
+
+  Using an MDM provider, you can create shortcuts to your web apps and progressive web apps on devices.
+
+## Add or deploy apps to devices
+
+When your apps are ready, you can add or deploy these apps to your Windows devices. This section lists some common options.
+
+- **Manually install**: On your devices, users can install apps from the Microsoft Store, from the internet, and from an organization shared drive. These apps, and more, are listed in **Settings** > **Apps** > **Apps and Features**.
+
+  If you want to prevent users from downloading apps on organization owned devices, use an MDM provider, like Microsoft Intune. For example, you can create a policy that allows or prevents users from sideloading apps, only allow the private store, and more. For more information on the features you can restrict, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10).
+
+  For an overview of the different types of device policies you can create, see [Apply features and settings on your devices using device profiles in Microsoft Intune](/mem/intune/configuration/device-profiles).
+
+- **Mobile device management (MDM)**: Use an MDM provider, like Microsoft Intune (cloud) or Configuration Manager (on-premises), to deploy apps. For example, you can create app policies that deploy Microsoft 365 apps, deploy Win32 apps, create shortcuts to web apps, add Store apps, and more.
+
+  For more information, see:
+
+  - [Add apps to Microsoft Intune](/mem/intune/apps/apps-add)
+  - [Application management in Configuration Manager](/mem/configmgr/apps/understand/introduction-to-application-management)
+
+- **Microsoft Store**: Using the Microsoft Store app, Windows users can download apps from the public store. And, they can download apps provided by your organization, which is called the "private store". If your organization creates its own apps, you can use **[Windows Package Manager](/windows/package-manager)** to add apps to the private store.
+
+  To help manage the Microsoft Store on your devices, you can use policies:
+
+  - On premises, you can use Administrative Templates in Group Policy to control access to the Microsoft Store app:
+    - `User Configuration\Administrative Templates\Windows Components\Store`
+    - `Computer Configuration\Administrative Templates\Windows Components\Store`
+  - Using Microsoft Intune, you can use [Administrative Templates](/mem/intune/configuration/administrative-templates-windows) (opens another Microsoft web site) or the [Settings Catalog](/mem/intune/configuration/settings-catalog) (opens another Microsoft web site) to control access to the Microsoft Store app.
+
+  For more information, see:
+
+  - [Microsoft Store for Business and Education](/microsoft-store/)
+  - [Evolving the Microsoft Store for Business and Education](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-the-microsoft-store-for-business-and-education/ba-p/2569423)
+
+- **MSIX for desktop apps**: MSIX packages your UWP, Win32, WPF, and WinForm desktop application files. MSIX reliably installs apps, helps optimize disk storage space, and reduces duplicate files. If your organization typically uses `.EXE` or `.MSI` files to install desktop apps, then you should look into MSIX.
+
+  To deploy MSIX packages and their apps, you can:
+
+  - Use an MDM provider, like Microsoft Intune and Configuration Manager.
+  - Use an App Installer. User users double-click an installer file, or select a link on a web page.
+  - And more.
+
+  For more information, see:
+
+  - [What is MSIX?](/windows/msix/overview)
+  - [MSIX app distribution for enterprises](/windows/msix/desktop/managing-your-msix-deployment-enterprise)
+
+- **Windows Package Manager**: Windows Package Manager is a command line tool commonly used by developers to install Windows apps. Using the command line, you can get apps from the Microsoft Store or from GitHub (and more), and install these apps on Windows devices. It's helpful if you want to bypass user interfaces for getting apps from organizations and from developers.
+
+  If your organization uses `.EXE`, `.MSIX`, or `.MSI` files, then Windows Package Manager might be the right deployment option for your organization.
+
+  For more information, see [Windows Package Manager](/windows/package-manager).
+
+- **Azure Virtual desktop with MSIX app attach**: With Azure virtual desktop, you can virtualize the Windows client OS desktop, and use virtual apps on this desktop. With MSIX app attach, you dynamically deliver MSIX packaged apps to users and user groups.
+
+  The benefit is to use the cloud to deliver virtual apps in real time, and as-needed. Users use the apps as if they're installed locally.
+
+  If you currently use App-V, and want to reduce your on-premises footprint, then **Azure Virtual desktop with MSIX app attach** might be the right deployment for your organization.
+
+  For more information, see:
+
+  - [What is Azure Virtual Desktop?](/azure/virtual-desktop/overview)
+  - [Set up MSIX app attach with the Azure portal](/azure/virtual-desktop/app-attach-azure-portal)
+
+- **Application Virtualization (App-V)**: App-V allows Win32 apps to be used as virtual apps.
+
+  > [!NOTE]
+  > Application Virtualization will be [end of life in April 2026](/lifecycle/announcements/mdop-extended). We recommend looking at **Azure Virtual desktop with MSIX app attach**. For more information, see [What is Azure Virtual Desktop?](/azure/virtual-desktop/overview) and [Set up MSIX app attach with the Azure portal](/azure/virtual-desktop/app-attach-azure-portal).
+
+  On an on-premises server, you install and configure the App-V server components, and then install your Win32 apps. On Windows Enterprise client devices, you use the App-V client components to run the virtualized apps. They allow users to open the virtual apps using the icons and file names they're familiar with. Users use the apps as if they're installed locally.
+
+  The benefit is to deliver virtual apps in real time, and as-needed. For more information, see [Application Virtualization (App-V) for Windows overview](./app-v/appv-for-windows.md).
+
+  To help manage App-V on your devices, you can use policies:
+
+  - On premises, you can use Administrative Templates in Group Policy to deploy App-V policies (`Computer Configuration\Administrative Templates\System\App-V`).
+  - Using Microsoft Intune, you can use [Administrative Templates](/mem/intune/configuration/administrative-templates-windows) (opens another Microsoft web site) or the [Settings Catalog](/mem/intune/configuration/settings-catalog) (opens another Microsoft web site) to deploy App-V policies.
 
 
-|         Name          |                Full name                 | 1709 | 1803 | 1809 | Uninstall through UI? |
-|-----------------------|------------------------------------------|:----:|:----:|:----:|:---------------------:|
-|    Remote Desktop     |         Microsoft.RemoteDesktop          |  x   |      |  x   |          Yes          |
-|      Code Writer      |     ActiproSoftwareLLC.562882FEEB491     |  x   |  x   |      |          Yes          |
-|    Eclipse Manager    |        46928bounde.EclipseManager        |  x   |  x   |      |          Yes          |
-|        Pandora        |      PandoraMediaInc.29680B314EFC2       |  x   |  x   |      |          Yes          |
-|   Photoshop Express   | AdobeSystemIncorporated. AdobePhotoshop  |  x   |  x   |      |          Yes          |
-|       Duolingo        | D5EA27B7.Duolingo- LearnLanguagesforFree |  x   |  x   |      |          Yes          |
-|  Network Speed Test   |        Microsoft.NetworkSpeedTest        |  x   |  x   |  x   |          Yes          |
-|         News          |            Microsoft.BingNews            |  x   |  x   |  x   |          Yes          |
-|         Sway          |          Microsoft.Office.Sway           |  x   |  x   |  x   |          Yes          |
-| Microsoft.Advertising |        Microsoft.Advertising.Xaml        |  x   |  x   |  x   |          Yes          |
-|                       |    Microsoft.NET.Native.Framework.1.2    |  x   |  x   |      |          Yes          |
-|                       |    Microsoft.NET.Native.Framework.1.3    |  x   |  x   |      |          Yes          |
-|                       |    Microsoft.NET.Native.Framework.1.6    |  x   |  x   |  x   |          Yes          |
-|                       |    Microsoft.NET.Native.Framework.1.7    |      |  x   |  x   |          Yes          |
-|                       |    Microsoft.NET.Native.Framework.2.0    |  x   |  x   |      |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.1.1     |  x   |  x   |      |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.1.3     |  x   |      |      |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.1.4     |  x   |  x   |      |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.1.6     |  x   |  x   |  x   |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.1.7     |  x   |  x   |  x   |          Yes          |
-|                       |     Microsoft.NET.Native.Runtime.2.0     |  x   |  x   |      |          Yes          |
-|                       |   Microsoft.Services.Store.Engagement    |  x   |  x   |      |          Yes          |
-|                       |         Microsoft.VCLibs.120.00          |  x   |  x   |      |          Yes          |
-|                       |         Microsoft.VCLibs.140.00          |  x   |  x   |  x   |          Yes          |
-|                       |    Microsoft.VCLibs.120.00.Universal     |  x   |      |      |          Yes          |
-|                       |    Microsoft.VCLibs.140.00.UWPDesktop    |      |  x   |      |          Yes          |
-
----

@@ -2,7 +2,7 @@
 title: Windows security baselines
 description: Learn how to use Windows security baselines in your organization. Specific to Windows 10, Windows Server, and Microsoft 365 Apps for enterprise.
 keywords: virtualization, security, malware
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.author: dansimp
@@ -13,6 +13,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/25/2018
 ms.reviewer: 
+ms.technology: mde
 ---
 
 # Windows security baselines
@@ -32,7 +33,7 @@ Even though Windows and Windows Server are designed to be secure out-of-the-box,
 
 We recommend that you implement an industry-standard configuration that is broadly known and well-tested, such as Microsoft security baselines, as opposed to creating a baseline yourself. This helps increase flexibility and reduce costs. 
 
-Here is a good blog about [Sticking with Well-Known and Proven Solutions](https://blogs.technet.microsoft.com/fdcc/2010/10/06/sticking-with-well-known-and-proven-solutions/).
+Here is a good blog about [Sticking with Well-Known and Proven Solutions](/archive/blogs/fdcc/sticking-with-well-known-and-proven-solutions).
 
 ## What are security baselines? 
 
@@ -60,12 +61,12 @@ You can download the security baselines from the [Microsoft Download Center](htt
 
 The security baselines are included in the [Security Compliance Toolkit (SCT)](security-compliance-toolkit-10.md), which can be downloaded from the Microsoft Download Center. The SCT also includes tools to help admins manage the security baselines. 
 
-[![Security Compliance Toolkit](images/security-compliance-toolkit-1.png)](security-compliance-toolkit-10.md) 
-[![Get Support](images/get-support.png)](get-support-for-security-baselines.md) 
+[![Security Compliance Toolkit.](images/security-compliance-toolkit-1.png)](security-compliance-toolkit-10.md) 
+[![Get Support.](images/get-support.png)](get-support-for-security-baselines.md) 
 
 ## Community
 
-[![Microsoft Security Guidance Blog](images/community.png)](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bd-p/Security-Baselines) 
+[![Microsoft Security Guidance Blog.](images/community.png)](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bd-p/Security-Baselines) 
 
 ## Related Videos
 
@@ -76,7 +77,7 @@ You may also be interested in this msdn channel 9 video:
 
 - [Microsoft Endpoint Configuration Manager](https://www.microsoft.com/cloud-platform/system-center-configuration-manager)
 - [Operations Management Suite](https://www.microsoft.com/cloud-platform/operations-management-suite)
-- [Configuration Management for Nano Server](https://docs.microsoft.com/archive/blogs/grouppolicy/configuration-management-on-servers/)
+- [Configuration Management for Nano Server](/archive/blogs/grouppolicy/configuration-management-on-servers/)
 - [Microsoft Security Guidance Blog](https://techcommunity.microsoft.com/t5/microsoft-security-baselines/bg-p/Microsoft-Security-Baselines)
 - [Microsoft Security Compliance Toolkit Download](https://www.microsoft.com/download/details.aspx?id=55319)
-- [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319) 
+- [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319)

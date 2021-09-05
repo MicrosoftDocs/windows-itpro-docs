@@ -118,7 +118,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow all trusted apps to install*
+-   GP Friendly name: *Allow all trusted apps to install*
 -   GP name: *AppxDeploymentAllowAllTrustedApps*
 -   GP path: *Windows Components/App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
@@ -188,7 +188,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off Automatic Download and Install of updates*
+-   GP Friendly name: *Turn off Automatic Download and Install of updates*
 -   GP name: *DisableAutoInstall*
 -   GP path: *Windows Components/Store*
 -   GP ADMX file name: *WindowsStore.admx*
@@ -256,7 +256,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allows development of Windows Store apps and installing them from an integrated development environment (IDE)*
+-   GP Friendly name: *Allows development of Windows Store apps and installing them from an integrated development environment (IDE)*
 -   GP name: *AllowDevelopmentWithoutDevLicense*
 -   GP path: *Windows Components/App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
@@ -328,7 +328,7 @@ Most restricted value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Enables or disables Windows Game Recording and Broadcasting*
+-   GP Friendly name: *Enables or disables Windows Game Recording and Broadcasting*
 -   GP name: *AllowGameDVR*
 -   GP path: *Windows Components/Windows Game Recording and Broadcasting*
 -   GP ADMX file name: *GameDVR.admx*
@@ -390,12 +390,12 @@ The following list shows the supported values:
 <!--/Scope-->
 <!--Description-->
 
-[!INCLUDE [allow-windows-app-to-share-data-users-shortdesc](../../../browsers/edge/shortdesc/allow-windows-app-to-share-data-users-shortdesc.md)]
+[!INCLUDE [allow-windows-app-to-share-data-users-shortdesc](../includes/allow-windows-app-to-share-data-users-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow a Windows app to share application data between users*
+-   GP Friendly name: *Allow a Windows app to share application data between users*
 -   GP name: *AllowSharedLocalAppData*
 -   GP path: *Windows Components/App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
@@ -469,7 +469,7 @@ If you disable or do not configure this policy, all users will be able to initia
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent non-admin users from installing packaged Windows apps*
+-   GP Friendly name: *Prevent non-admin users from installing packaged Windows apps*
 -   GP name: *BlockNonAdminUserInstall*
 -   GP path: *Windows Components/App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
@@ -539,7 +539,7 @@ Added in Windows 10, version 1607. Boolean value that disables the launch of al
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable all apps from Microsoft Store*
+-   GP Friendly name: *Disable all apps from Microsoft Store*
 -   GP name: *DisableStoreApps*
 -   GP path: *Windows Components/Store*
 -   GP ADMX file name: *WindowsStore.admx*
@@ -684,7 +684,7 @@ This policy setting is designed for less restrictive environments. It can be use
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow user control over installs*
+-   GP Friendly name: *Allow user control over installs*
 -   GP name: *EnableUserControl*
 -   GP path: *Windows Components/Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -756,7 +756,7 @@ Caution: Skilled users can take advantage of the permissions this policy setting
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Always install with elevated privileges*
+-   GP Friendly name: *Always install with elevated privileges*
 -   GP name: *AlwaysInstallElevated*
 -   GP path: *Windows Components/Windows Installer*
 -   GP ADMX file name: *MSI.admx*
@@ -823,7 +823,7 @@ Most restricted value is 1.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Only display the private store within the Microsoft Store*
+-   GP Friendly name: *Only display the private store within the Microsoft Store*
 -   GP name: *RequirePrivateStoreOnly*
 -   GP path: *Windows Components/Store*
 -   GP ADMX file name: *WindowsStore.admx*
@@ -891,7 +891,7 @@ Most restricted value is 1.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent users' app data from being stored on non-system volumes*
+-   GP Friendly name: *Prevent users' app data from being stored on non-system volumes*
 -   GP name: *RestrictAppDataToSystemVolume*
 -   GP path: *Windows Components/App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*
@@ -959,7 +959,7 @@ Most restricted value is 1.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable installing Windows apps on non-system volumes*
+-   GP Friendly name: *Disable installing Windows apps on non-system volumes*
 -   GP name: *DisableDeploymentToNonSystemVolumes*
 -   GP path: *Windows Components/App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*

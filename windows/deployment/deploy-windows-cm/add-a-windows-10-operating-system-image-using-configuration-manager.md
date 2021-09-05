@@ -42,7 +42,7 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
 1.  Using File Explorer, in the **D:\\Sources\\OSD\\OS** folder, create a subfolder named **Windows 10 Enterprise x64 RTM**.
 2.  Copy the REFW10-X64-001.wim file to the **D:\\Sources\\OSD\\OS\\Windows 10 Enterprise x64 RTM** folder.
 
-    ![figure 17](../images/ref-image.png)
+    ![figure 17.](../images/ref-image.png)
 
     The Windows 10 image being copied to the Sources folder structure.
 
@@ -53,7 +53,7 @@ An existing Configuration Manager infrastructure that is integrated with MDT is 
 7.  In the Distribute Content Wizard, add the CM01 distribution point, click **Next** and click **Close**.
 8.  View the content status for the Windows 10 Enterprise x64 RTM package. Do not continue until the distribution is completed (it might take a few minutes). You also can review the D:\\Program Files\\Microsoft Configuration Manager\\Logs\\distmgr.log file and look for the **STATMSG: ID=2301** line.
 
-    ![figure 18](../images/fig18-distwindows.png)
+    ![figure 18.](../images/fig18-distwindows.png)
 
     The distributed Windows 10 Enterprise x64 RTM package.
 
@@ -65,7 +65,7 @@ Next, see [Create an application to deploy with Windows 10 using Configuration M
 [Create a custom Windows PE boot image with Configuration Manager](create-a-custom-windows-pe-boot-image-with-configuration-manager.md)<br>
 [Create an application to deploy with Windows 10 using Configuration Manager](create-an-application-to-deploy-with-windows-10-using-configuration-manager.md)<br>
 [Add drivers to a Windows 10 deployment with Windows PE using Configuration Manager](add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager.md)<br>
-[Create a task sequence with Configuration Manager and MDT](../deploy-windows-mdt/create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
+[Create a task sequence with Configuration Manager and MDT](./create-a-task-sequence-with-configuration-manager-and-mdt.md)<br>
 [Deploy Windows 10 using PXE and Configuration Manager](deploy-windows-10-using-pxe-and-configuration-manager.md)<br>
 [Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager](refresh-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>
 [Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager](replace-a-windows-7-client-with-windows-10-using-configuration-manager.md)<br>

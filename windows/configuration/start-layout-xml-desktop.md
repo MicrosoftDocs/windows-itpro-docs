@@ -5,8 +5,8 @@ keywords: ["start screen"]
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
-author: dansimp
-ms.author: dansimp
+author: greg-lindsay
+ms.author: greglin
 ms.topic: article
 ms.date: 10/02/2018
 ms.reviewer: 
@@ -33,7 +33,7 @@ On Windows 10 for desktop editions, the customized Start works by:
     - No limit to the number of apps that can be pinned. There is a theoretical limit of 24 tiles per group (4 small tiles per medium square x 3 columns x 2 rows). 
     
 >[!NOTE]
->To use the layout modification XML to configure Start with roaming user profiles, see [Deploying Roaming User Profiles](https://docs.microsoft.com/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#step-7-optionally-specify-a-start-layout-for-windows-10-pcs).
+>To use the layout modification XML to configure Start with roaming user profiles, see [Deploying Roaming User Profiles](/windows-server/storage/folder-redirection/deploy-roaming-user-profiles#step-7-optionally-specify-a-start-layout-for-windows-10-pcs).
 
 
 
@@ -84,7 +84,7 @@ start:Folder<br><br>Parent:<br>start:Group | Name (in Windows 10, version 1809 a
 | TopMFUApps</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add up to 3 default apps to the frequently used apps section in the system area.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
 | Tile</br></br>Parent:</br>TopMFUApps | AppUserModelID | Use with the TopMFUApps tags to specify an app with a known AppUserModelID. </br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
 | DesktopApplicationTile</br></br>Parent:</br>TopMFUApps | LinkFilePath | Use with the TopMFUApps tags to specify an app without a known AppUserModelID.</br></br>**Note**: Only applies to versions of Windows 10 earlier than version 1709. In Windows 10, version 1709, you can no longer pin apps to the Most Frequently Used apps list in Start. |
-| AppendOfficeSuite</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add the in-box installed Office suite to Start. For more information, see [Customize the Office suite of tiles](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).</br></br>Do not use this tag with AppendDownloadOfficeTile |
+| AppendOfficeSuite</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add the in-box installed Office suite to Start. For more information, see [Customize the Office suite of tiles](/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).</br></br>Do not use this tag with AppendDownloadOfficeTile |
 | AppendDownloadOfficeTile</br></br>Parent:</br>LayoutModificationTemplate | n/a | Use to add a specific **Download Office** tile to a specific location in Start</br></br>Do not use this tag with AppendOfficeSuite |
 
 ### LayoutOptions
@@ -213,7 +213,7 @@ You can use the **start:DesktopApplicationTile** tag to pin a Windows desktop ap
 - By using the application's application user model ID, if this is known. If the Windows desktop application doesn't have one, use the shortcut link option.
 
 
-  You can use the [Get-StartApps cmdlet](https://technet.microsoft.com/library/dn283402.aspx) on a PC that has the application pinned to Start to obtain the app ID.
+  You can use the [Get-StartApps cmdlet](/powershell/module/startlayout/get-startapps) on a PC that has the application pinned to Start to obtain the app ID.
 
   To pin a Windows desktop application through this method, you must set the **DesktopApplicationID** attribute to the application user model ID that's associated with the corresponding app. 
 
@@ -341,9 +341,9 @@ This tag is added in Windows 10, version 1803. You have two options in this tag:
 
 Use `Choice=DesktopBridgeSubscription` on devices running Windows 10, version 1803, that have Office 365 preinstalled. This will set the heading of the Office suite of tiles to **Office 365**, to highlight the Office 365 apps that you've made available on the device.
 
-Use `Choice=DesktopBridge` on devices running versions of Windows 10 earlier than version 1803, and on devices shipping with [perpetual licenses for Office](https://blogs.technet.microsoft.com/ausoemteam/2017/11/30/choosing-the-right-office-version-for-your-customers/). This will set the heading of the Office suite of tiles to **Create**.
+Use `Choice=DesktopBridge` on devices running versions of Windows 10 earlier than version 1803, and on devices shipping with [perpetual licenses for Office](/archive/blogs/ausoemteam/choosing-the-right-office-version-for-your-customers). This will set the heading of the Office suite of tiles to **Create**.
 
-For more information, see [Customize the Office suite of tiles](https://docs.microsoft.com/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).
+For more information, see [Customize the Office suite of tiles](/windows-hardware/customize/desktop/customize-start-layout#customize-the-office-suite-of-tiles).
 
 
 #### AppendDownloadOfficeTile
@@ -442,7 +442,7 @@ The following sample LayoutModification.xml shows how you can configure the Star
 
 ## Use Windows Provisioning multivariant support
 
-The Windows Provisioning multivariant capability allows you to declare target conditions that, when met, supply specific customizations for each variant condition. For Start customization, you can create specific layouts for each variant that you have. To do this, you must create a separate LayoutModification.xml file for each variant that you want to support and then include these in your provisioning package. For more information on how to do this, see [Create a provisioning package with multivariant settings](https://msdn.microsoft.com/library/windows/hardware/dn916108.aspx).
+The Windows Provisioning multivariant capability allows you to declare target conditions that, when met, supply specific customizations for each variant condition. For Start customization, you can create specific layouts for each variant that you have. To do this, you must create a separate LayoutModification.xml file for each variant that you want to support and then include these in your provisioning package. For more information on how to do this, see [Create a provisioning package with multivariant settings](./provisioning-packages/provisioning-multivariant.md).
 
 The provisioning engine chooses the right customization file based on the target conditions that were met, adds the file in the location that's specified for the setting, and then uses the specific file to customize Start. To differentiate between layouts, you can add modifiers to the LayoutModification.xml filename such as "LayoutCustomization1". Regardless of the modifier that you use, the provsioning engine will always output "LayoutCustomization.xml" so that the operating system has a consistent file name to query against.
 
@@ -547,10 +547,4 @@ Once you have created the LayoutModification.xml file and it is present in the d
 - [Start layout XML for mobile editions of Windows 10 (reference)](mobile-devices/start-layout-xml-mobile.md)
 
  
-
- 
-
-
-
-
 

@@ -78,13 +78,13 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines the cipher suites used by the Secure Socket Layer (SSL).
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines the cipher suites used by the Secure Socket Layer (SSL).
 
 If you enable this policy setting, SSL cipher suites are prioritized in the order specified.
 
 If you disable or do not configure this policy setting, default cipher suite order is used.
 
-For information about supported cipher suites, see [Cipher Suites in TLS/SSL (Schannel SSP)](https://go.microsoft.com/fwlink/?LinkId=517265).
+For information about supported cipher suites, see [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/win32/secauthn/cipher-suites-in-schannel).
 
 <!--/Description-->
 > [!TIP]
@@ -96,7 +96,7 @@ For information about supported cipher suites, see [Cipher Suites in TLS/SSL (Sc
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *SSL Cipher Suite Order*
+-   GP Friendly name: *SSL Cipher Suite Order*
 -   GP name: *SSLCipherSuiteOrder*
 -   GP path: *Network/SSL Configuration Settings*
 -   GP ADMX file name: *CipherSuiteOrder.admx*
@@ -151,7 +151,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in Windows 10 Insider Preview Build 20185. This policy setting determines the priority order of ECC curves used with ECDHE cipher suites.
+Available in the latest Windows 10 Insider Preview Build. This policy setting determines the priority order of ECC curves used with ECDHE cipher suites.
 
 If you enable this policy setting, ECC curves are prioritized in the order specified. Enter one curve name per line.
 
@@ -179,7 +179,7 @@ CertUtil.exe -DisplayEccCurve
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *ECC Curve Order*
+-   GP Friendly name: *ECC Curve Order*
 -   GP name: *SSLCurveOrder*
 -   GP path: *Network/SSL Configuration Settings*
 -   GP ADMX file name: *CipherSuiteOrder.admx*
@@ -188,16 +188,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
+> [!NOTE]
+> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
-

@@ -24,17 +24,19 @@ This topic describes how to deploy Windows 10 Enterprise E3 or E5 licenses with 
 >* Windows 10 Enterprise Subscription Activation (EA or MPSA) requires Windows 10 Pro, version 1703 or later.
 >* Windows 10 Enterprise E3 in CSP requires Windows 10 Pro, version 1607 or later.
 >* Automatic, non-KMS activation requires Windows 10, version 1803 or later, on a device with a firmware-embedded activation key.
+>* Windows 10 Enterprise Subscription Activation requires Windows 10 Enterprise per user licensing; it does not work on per device based licensing.
 
 >[!IMPORTANT]
->An issue has been identified where devices can lose activation status or be blocked from upgrading to Windows Enterprise if the device is not able to connect to Windows Update. A workaround is to ensure that devices do not have the REG_DWORD present HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations and set to 1.  If this REG_DWORD is present, it must be set to 0.<br> 
+>An issue has been identified where devices can lose activation status or be blocked from upgrading to Windows Enterprise if the device is not able to connect to Windows Update. A workaround is to ensure that devices do not have the REG_DWORD present HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations and set to 1.  If this REG_DWORD is present, it must be set to 0.
+> 
 >Also ensure that the Group Policy setting: Computer Configuration > Administrative Templates > Windows Components > Windows Update > "Do not connect to any Windows Update Internet locations" is set to "Disabled".
 
 ## Firmware-embedded activation key
 
-To determine if the computer has a firmware-embedded activation key, type the following command at an elevated Windows PowerShell prompt
+To determine if the computer has a firmware-embedded activation key, type the following command at an elevated Windows PowerShell prompt:
 
-```
-(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
+```PowerShell
+(Get-CimInstance -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
 ```
 
 If the device has a firmware-embedded activation key, it will be displayed in the output. If the output is blank, the device does not have a firmware embedded activation key. Most OEM-provided devices designed to run Windows 8 or later will have a firmware-embedded key.
@@ -44,19 +46,28 @@ If the device has a firmware-embedded activation key, it will be displayed in th
 If you are an EA customer with an existing Office 365 tenant, use the following steps to enable Windows 10 Subscription licenses on your existing tenant:
 
 1. Work with your reseller to place an order for one $0 SKU per user. There are two SKUs available, depending on their current Windows Enterprise SA license:
-2. **AAA-51069** - Win10UsrOLSActv Alng MonthlySub Addon E3
-3. **AAA-51068** - Win10UsrOLSActv Alng MonthlySub Addon E5
-4. After placing an order, the OLS admin on the agreement will receive a service activation email, indicating their subscription licenses have been provisioned on the tenant.
-5. The admin can now assign subscription licenses to users.
 
->Use the following process if you need to update contact information and retrigger activation in order to resend the activation email:
+   - **AAA-51069** - Win10UsrOLSActv Alng MonthlySub Addon E3
+   - **AAA-51068** - Win10UsrOLSActv Alng MonthlySub Addon E5
+   
+1. After placing an order, the OLS admin on the agreement will receive a service activation email, indicating their subscription licenses have been provisioned on the tenant.
+
+1. The admin can now assign subscription licenses to users.
+
+Use the following process if you need to update contact information and retrigger activation in order to resend the activation email:
 
 1. Sign in to the [Microsoft Volume Licensing Service Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
-2. Click on **Subscriptions**.
-3. Click on **Online Services Agreement List**.
+
+2. Click **Subscriptions**.
+
+3. Click **Online Services Agreement List**.
+
 4. Enter your agreement number, and then click **Search**.
+
 5. Click the **Service Name**.
+
 6. In the **Subscription Contact** section, click the name listed under **Last Name**.
+
 7. Update the contact information, then click **Update Contact Details**. This will trigger a new email.
 
 Also in this article:
@@ -71,13 +82,13 @@ You might ask why you need to synchronize these identities. The answer is so tha
 
 **Figure 1** illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](https://www.microsoft.com/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
 
-![Illustration of Azure Active Directory Connect](images/enterprise-e3-ad-connect.png)
+![Illustration of Azure Active Directory Connect.](images/enterprise-e3-ad-connect.png)
 
 **Figure 1. On-premises AD DS integrated with Azure AD**
 
 For more information about integrating on-premises AD DS domains with Azure AD, see the following resources:
 
--   [Integrating your on-premises identities with Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/)
+-   [Integrating your on-premises identities with Azure Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity)
 -   [Azure AD + Domain Join + Windows 10](https://blogs.technet.microsoft.com/enterprisemobility/2016/02/17/azure-ad-domain-join-windows-10/)
 
 >[!NOTE]
@@ -91,17 +102,21 @@ Devices must be running Windows 10 Pro, version 1703, and be Azure Active Direct
 
 Upon acquisition of Windows 10 subscription has been completed (Windows 10 Business, E3 or E5), customers will receive an email that will provide guidance on how to use Windows as an online service:
 
-![profile](images/al01.png)
+> [!div class="mx-imgBorder"]
+> ![profile.](images/al01.png)
 
 The following methods are available to assign licenses:
 
-1. When you have the required Azure AD subscription, [group-based licensing](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal) is the preferred method to assign Enterprise E3 or E5 licenses to users.
+1. When you have the required Azure AD subscription, [group-based licensing](/azure/active-directory/active-directory-licensing-whatis-azure-portal) is the preferred method to assign Enterprise E3 or E5 licenses to users.
+
 2. You can sign in to portal.office.com and manually assign licenses:
 
-    ![portal](images/al02.png)
+    ![portal.](images/al02.png)
 
 3. You can assign licenses by uploading a spreadsheet.
+
 4. A per-user [PowerShell scripted method](https://social.technet.microsoft.com/wiki/contents/articles/15905.how-to-use-powershell-to-automatically-assign-licenses-to-your-office-365-users.aspx) of assigning licenses is available.
+
 5. Organizations can use synchronized [AD groups](https://ronnydejong.com/2015/03/04/assign-ems-licenses-based-on-local-active-directory-group-membership/) to automatically assign licenses.
 
 ## Explore the upgrade experience
@@ -114,50 +129,50 @@ Users can join a Windows 10 Pro device to Azure AD the first time they start the
 
 **To join a device to Azure AD the first time the device is started**
 
-1.  During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then click **Next**, as illustrated in **Figure 2**.<br>
+1.  During the initial setup, on the **Who owns this PC?** page, select **My organization**, and then click **Next**, as illustrated in **Figure 2**.<br/><br/>
 
     <img src="images/enterprise-e3-who-owns.png" alt="Who owns this PC? page in Windows 10 setup" width="624" height="351" />
 
     **Figure 2. The “Who owns this PC?” page in initial Windows 10 setup**
 
-2.  On the **Choose how you’ll connect** page, select **Join Azure AD**, and then click **Next**, as illustrated in **Figure 3**.<br>
+2.  On the **Choose how you’ll connect** page, select **Join Azure AD**, and then click **Next**, as illustrated in **Figure 3**.<br/><br/>
 
     <img src="images/enterprise-e3-choose-how.png" alt="Choose how you'll connect - page in Windows 10 setup" width="624" height="351" />
 
     **Figure 3. The “Choose how you’ll connect” page in initial Windows 10 setup**
 
-3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 4**.<br>
+3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 4**.<br/><br/>
 
     <img src="images/enterprise-e3-lets-get.png" alt="Let's get you signed in - page in Windows 10 setup" width="624" height="351" />
 
     **Figure 4. The “Let’s get you signed in” page in initial Windows 10 setup**
 
-Now the device is Azure AD joined to the company’s subscription.
+Now the device is Azure AD–joined to the company’s subscription.
 
 **To join a device to Azure AD when the device already has Windows 10 Pro, version 1703 installed and set up**
 
 >[!IMPORTANT]
 >Make sure that the user you're signing in with is **not** a BUILTIN/Administrator. That user cannot use the `+ Connect` button to join a work or school account.
 
-1.  Go to **Settings &gt; Accounts &gt; Access work or school**, as illustrated in **Figure 5**.<br>
+1.  Go to **Settings &gt; Accounts &gt; Access work or school**, as illustrated in **Figure 5**.<br/><br/>
 
     <img src="images/enterprise-e3-connect-to-work-or-school.png" alt="Connect to work or school configuration" width="624" height="482" />
 
     **Figure 5. Connect to work or school configuration in Settings**
 
-2.  In **Set up a work or school account**, click **Join this device to Azure Active Directory**, as illustrated in **Figure 6**.<br>
+2.  In **Set up a work or school account**, click **Join this device to Azure Active Directory**, as illustrated in **Figure 6**.<br/><br/>
 
     <img src="images/enterprise-e3-set-up-work-or-school.png" alt="Set up a work or school account" width="624" height="603" />
 
     **Figure 6. Set up a work or school account**
 
-3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 7**.<br>
+3.  On the **Let’s get you signed in** page, enter the Azure AD credentials, and then click **Sign in**, as illustrated in **Figure 7**.<br/><br/>
 
     <img src="images/enterprise-e3-lets-get-2.png" alt="Let's get you signed in - dialog box" width="624" height="603" />
 
     **Figure 7. The “Let’s get you signed in” dialog box**
 
-Now the device is Azure AD joined to the company’s subscription.
+Now the device is Azure AD–joined to the company's subscription.
 
 ### Step 2: Pro edition activation
 
@@ -165,7 +180,7 @@ Now the device is Azure AD joined to the company’s subscription.
 >If your device is running Windows 10, version 1803 or later, this step is not needed. From Windows 10, version 1803, the device will automatically activate Windows 10 Enterprise using the firmware-embedded activation key.
 >If the device is running Windows 10, version 1703 or 1709, then Windows 10 Pro must be successfully activated in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 7a**.
 
-<span id="win-10-pro-activated"/>
+<br/><span id="win-10-pro-activated"/>
 <img src="images/sa-pro-activation.png" alt="Windows 10 Pro activated" width="710" height="440" />
 <br><strong>Figure 7a - Windows 10 Pro activation in Settings</strong> 
 
@@ -176,7 +191,7 @@ Windows 10 Pro activation is required before Enterprise E3 or E5 can be enabled 
 
 Once the device is joined to your Azure AD subscription, the user will sign in by using his or her Azure AD account, as illustrated in **Figure 8**. The Windows 10 Enterprise E3 or E5 license associated with the user will enable Windows 10 Enterprise edition capabilities on the device.
 
-<img src="images/enterprise-e3-sign-in.png" alt="Sign in, Windows 10" width="624" height="351" />
+<br/><img src="images/enterprise-e3-sign-in.png" alt="Sign in, Windows 10" width="624" height="351" />
 
 **Figure 8. Sign in by using Azure AD account**
 
@@ -184,7 +199,7 @@ Once the device is joined to your Azure AD subscription, the user will sign in b
 
 You can verify the Windows 10 Enterprise E3 or E5 subscription in **Settings &gt; Update & Security &gt; Activation**, as illustrated in **Figure 9**.
 
-<span id="win-10-activated-subscription-active"/>
+<br/><span id="win-10-activated-subscription-active"/>
 <img src="images/enterprise-e3-win-10-activated-enterprise-subscription-active.png" alt="Windows 10 activated and subscription active" width="624" height="407" />
 
 **Figure 9 - Windows 10 Enterprise subscription in Settings** 
@@ -200,7 +215,7 @@ If there are any problems with the Windows 10 Enterprise E3 or E5 license or th
 
 ## Virtual Desktop Access (VDA)
 
-Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://www.microsoft.com/CloudandHosting/licensing_sca.aspx).
+Subscriptions to Windows 10 Enterprise are also available for virtualized clients. Windows 10 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://aka.ms/qmth).
 
 Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Azure Active Directory-joined clients are supported. See [Enable VDA for Enterprise Subscription Activation](vda-subscription-activation.md).
 
@@ -218,25 +233,25 @@ Use the following figures to help you troubleshoot when users experience these c
 
 - [Figure 10](#win-10-not-activated) (below) illustrates a device on which Windows 10 Pro is not activated, but the Windows 10 Enterprise subscription is active.
 
-    <span id="win-10-not-activated"/>
+    <br/><span id="win-10-not-activated"/>
     <img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-active.png" alt="Windows 10 not activated and subscription active" width="624" height="407" />
     <br><strong>Figure 10 - Windows 10 Pro, version 1703 edition not activated in Settings</strong>
 
 - [Figure 11](#subscription-not-active) (below) illustrates a device on which Windows 10 Pro is activated, but the Windows 10 Enterprise subscription is lapsed or removed.
 
-    <span id="subscription-not-active"/>
+    <br/><span id="subscription-not-active"/>
     <img src="images/enterprise-e3-win-10-activated-enterprise-subscription-not-active.png" alt="Windows 10 activated and subscription not active" width="624" height="407" />
     <br><strong>Figure 11 - Windows 10 Enterprise subscription lapsed or removed in Settings</strong>
 
 - [Figure 12](#win-10-not-activated-subscription-not-active) (below) illustrates a device on which Windows 10 Pro license is not activated and the Windows 10 Enterprise subscription is lapsed or removed.
 
-    <span id="win-10-not-activated-subscription-not-active"/>
+    <br/><span id="win-10-not-activated-subscription-not-active"/>
     <img src="images/enterprise-e3-win-10-not-activated-enterprise-subscription-not-active.png" alt="Windows 10 not activated and subscription not active" width="624" height="407" />
     <br><strong>Figure 12 - Windows 10 Pro, version 1703 edition not activated and Windows 10 Enterprise subscription lapsed or removed in Settings</strong>
 
 ### Review requirements on devices
 
-Devices must be running Windows 10 Pro, version 1703, and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
+Devices must be running Windows 10 Pro, version 1703 (or later), and be Azure Active Directory joined, or hybrid domain joined with Azure AD Connect. Customers who are federated with Azure Active Directory are also eligible. You can use the following procedures to review whether a particular device meets requirements.
 
 **To determine if a device is Azure Active Directory joined:**
 
@@ -249,4 +264,4 @@ At a command prompt, type: **winver**
 
 A popup window will display the Windows 10 version number and detailed OS build information.
 
-If a device is running a previous version of Windows 10 Pro (for example, version 1511), it will not be upgraded to Windows 10 Enterprise when a user signs in, even if the user has been assigned a subscription in the CSP portal.
+If a device is running a version of Windows 10 Pro prior to version 1703 (for example, version 1511), it will not be upgraded to Windows 10 Enterprise when a user signs in, even if the user has been assigned a subscription in the CSP portal.
