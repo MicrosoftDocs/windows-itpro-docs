@@ -21,7 +21,7 @@ ms.technology: mde
 -   Windows Server 2016
 
 
-<img src="images/event-4768.png" alt="Event 4768 illustration" width="554" height="659" hspace="10" align="left" />
+:::image type="content" alt-text="Event 4768 illustration." source="images/event-4768.png":::
 
 ***Subcategory:***&nbsp;[Audit Kerberos Authentication Service](audit-kerberos-authentication-service.md)
 
@@ -35,12 +35,13 @@ If TGT issue fails then you will see Failure event with **Result Code** field no
 
 This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “[4771](event-4771.md): Kerberos pre-authentication failed.” generates instead.
 
-> **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
+> [!NOTE]
+> For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
 <br clear="all">
 
 ***Event XML:***
-```
+```xml
 - <Event xmlns="http://schemas.microsoft.com/win/2004/08/events/event">
 - <System>
  <Provider Name="Microsoft-Windows-Security-Auditing" Guid="{54849625-5478-4994-A5BA-3E3B0328C30D}" /> 
@@ -101,7 +102,8 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-> **Note**&nbsp;&nbsp;A **Kerberos Realm** is a set of managed nodes that share the same Kerberos database. The Kerberos database resides on the Kerberos master computer system, which should be kept in a physically secure room. Active Directory domain is the example of Kerberos Realm in the Microsoft Windows Active Directory world.
+    > [!NOTE]
+    > A **Kerberos Realm** is a set of managed nodes that share the same Kerberos database. The Kerberos database resides on the Kerberos master computer system, which should be kept in a physically secure room. Active Directory domain is the example of Kerberos Realm in the Microsoft Windows Active Directory world.
 
 -   **User ID** \[Type = SID\]**:** SID of account for which (TGT) ticket was requested. Event Viewer automatically tries to resolve SIDs and show the account name. If the SID cannot be resolved, you will see the source data in the event.
 
@@ -109,7 +111,8 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 
     -   **NULL SID** – this value shows in [4768](event-4768.md) Failure events.
 
-> **Note**&nbsp;&nbsp;A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
+    > [!NOTE]
+    > A **security identifier (SID)** is a unique value of variable length used to identify a trustee (security principal). Each account has a unique SID that is issued by an authority, such as an Active Directory domain controller, and stored in a security database. Each time a user logs on, the system retrieves the SID for that user from the database and places it in the access token for that user. The system uses the SID in the access token to identify the user in all subsequent interactions with Windows security. When a SID has been used as the unique identifier for a user or group, it cannot ever be used again to identify another user or group. For more information about SIDs, see [Security identifiers](/windows/access-protection/access-control/security-identifiers).
 
 **Service Information:**
 
@@ -149,7 +152,10 @@ This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “
 
     -   Using **MSB 0** bit numbering we have bit 1, 8, 15 and 27 set = Forwardable, Renewable, Canonicalize, Renewable-ok.
 
-> **Note**&nbsp;&nbsp;In the table below **“MSB 0”** bit numbering is used, because RFC documents use this style. In “MSB 0” style bit numbering begins from left.<br><img src="images/msb.png" alt="MSB illustration" width="224" height="57" />
+> [!NOTE]
+> In the table below **“MSB 0”** bit numbering is used, because RFC documents use this style. In “MSB 0” style bit numbering begins from left.
+> 
+> <img src="images/msb.png" alt="MSB illustration" width="224" height="57" />
 
 The most common values:
 
@@ -185,9 +191,10 @@ The most common values:
 | 30    | Renew                    | The RENEW option indicates that the present request is for a renewal. The ticket provided is encrypted in the secret key for the server on which it is valid. This option will only be honored if the ticket to be renewed has its RENEWABLE flag set and if the time in it’s renew-till field has not passed. The ticket to be renewed is passed in the padata field as part of the authentication header.                                                                                                                                                                                                                                                  |
 | 31    | Validate                 | This option is used only by the ticket-granting service. The VALIDATE option indicates that the request is to validate a postdated ticket. Should not be in use, because postdated tickets are not supported by KILE.                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 
-> Table 2. Kerberos ticket flags.
-> 
-> **Note**&nbsp;&nbsp;[KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) **(Microsoft Kerberos Protocol Extension)** – Kerberos protocol extensions used in Microsoft operating systems. These extensions provide additional capability for authorization information including group memberships, interactive logon information, and integrity levels.
+## Table 2. Kerberos ticket flags
+
+> [!NOTE]
+> [KILE](/openspecs/windows_protocols/ms-kile/2a32282e-dd48-4ad9-a542-609804b02cc9) **(Microsoft Kerberos Protocol Extension)** – Kerberos protocol extensions used in Microsoft operating systems. These extensions provide additional capability for authorization information including group memberships, interactive logon information, and integrity levels.
 
 -   **Result Code** \[Type = HexInt32\]**:** hexadecimal result code of TGT issue operation. The “Table 3. TGT/TGS issue error codes.” contains the list of the most common error codes for this event.
 
@@ -252,12 +259,15 @@ The most common values:
 | 0x43                                                       | KRB\_AP\_ERR\_NO\_TGT                  | No TGT was presented or available                                           | In user-to-user authentication if the service does not possess a ticket granting ticket, it should return the error KRB\_AP\_ERR\_NO\_TGT.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | 0x44                                                       | KDC\_ERR\_WRONG\_REALM                 | Incorrect domain or principal                                               | Although this error rarely occurs, it occurs when a client presents a cross-realm TGT to a realm other than the one specified in the TGT. Typically, this results from incorrectly configured DNS.                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
-> <span id="_Ref432868145" class="anchor"></span>Table 3. TGT/TGS issue error codes.
+<span id="_Ref432868145" class="anchor"></span>
+
+## Table 3. TGT/TGS issue error codes
 
 -   **Ticket Encryption Type** \[Type = HexInt32\]: the cryptographic suite that was used for issued TGT.
 
 
 <span id="kerberos-encryption-types" />
+
 ## Table 4. Kerberos encryption types
 
 | Type | Type Name               | Description                                                                       |
@@ -274,7 +284,8 @@ The most common values:
 -   **Pre-Authentication Type** \[Type = UnicodeString\]: the code number of [pre-Authentication](/previous-versions/windows/it-pro/windows-server-2003/cc772815(v=ws.10)) type which was used in TGT request.
 
 <span id="kerberos-preauthentication-types" />
-## Table 5. Kerberos Pre-Authentication types.
+
+## Table 5. Kerberos Pre-Authentication types
 
 | Type | Type Name              | Description                                                                                                                                                                                                                                                                                                                                                                                                      |
 |------------------------------------------------------------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -301,7 +312,7 @@ The most common values:
 
 For 4768(S, F): A Kerberos authentication ticket (TGT) was requested.
 
-| **Type of monitoring required**                                                                                                                                                                                                                                                                                   | **Recommendation**                                                                                                                                             |
+| Type of monitoring required | Recommendation |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **“User ID”** that corresponds to the high-value account or accounts.                                                              |
 | **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **“User ID”** (with other information) to monitor how or when a particular account is being used. |
@@ -310,7 +321,7 @@ For 4768(S, F): A Kerberos authentication ticket (TGT) was requested.
 | **External accounts**: You might be monitoring accounts from another domain, or “external” accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                     | Monitor this event for the **“Supplied Realm Name”** corresponding to another domain or “external” location.                                                   |
 | **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor “**User ID”** for names that don’t comply with naming conventions.                                                                                     |
 
--   You can track all [4768](event-4768.md) events where the **Client Address** is not from your internal IP range or not from private IP ranges.
+-   You can track all [4768](event-4768.md) events where the **Client Address** is not from your internal IP address range or not from private IP address ranges.
 
 -   If you know that **Account Name** should be used only from known list of IP addresses, track all **Client Address** values for this **Account Name** in [4768](event-4768.md) events. If **Client Address** is not from the allowlist, generate the alert.
 
@@ -320,7 +331,7 @@ For 4768(S, F): A Kerberos authentication ticket (TGT) was requested.
 
 -   Also consider monitoring the fields shown in the following table, to discover the issues listed:
 
-| **Field**                   | **Issue to discover**                                                                                                                                                                                                                                                                                                                                   |
+| Field | Issue to discover |
 |-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Certificate Issuer Name** | Certification authority name is not from your PKI.                                                                                                                                                                                                                                                                                       |
 | **Certificate Issuer Name** | Certification authority name is not authorized to issue smart card authentication certificates.                                                                                                                                                                                                                                                         |
