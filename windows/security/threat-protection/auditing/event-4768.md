@@ -321,7 +321,7 @@ For 4768(S, F): A Kerberos authentication ticket (TGT) was requested.
 | **External accounts**: You might be monitoring accounts from another domain, or “external” accounts that are not allowed to perform certain actions (represented by certain specific events).                                                                                                                     | Monitor this event for the **“Supplied Realm Name”** corresponding to another domain or “external” location.                                                   |
 | **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor “**User ID”** for names that don’t comply with naming conventions.                                                                                     |
 
--   You can track all [4768](event-4768.md) events where the **Client Address** is not from your internal IP range or not from private IP ranges.
+-   You can track all [4768](event-4768.md) events where the **Client Address** is not from your internal IP address range or not from private IP address ranges.
 
 -   If you know that **Account Name** should be used only from known list of IP addresses, track all **Client Address** values for this **Account Name** in [4768](event-4768.md) events. If **Client Address** is not from the allowlist, generate the alert.
 
