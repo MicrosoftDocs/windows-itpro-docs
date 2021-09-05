@@ -48,6 +48,8 @@
           items:
             - name: Using a proxy with Delivery Optimization
               href: update/delivery-optimization-proxy.md
+            - name: Delivery Optimization Client-Service Communication Explained
+              href: update/delivery-optimization-workflow.md
         - name: Best practices for feature updates on mission-critical devices
           href: update/feature-update-mission-critical.md
         - name: Windows 10 deployment considerations
