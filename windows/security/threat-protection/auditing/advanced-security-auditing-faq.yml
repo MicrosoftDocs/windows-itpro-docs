@@ -22,7 +22,7 @@ title: Advanced security auditing FAQ
 
 
 
-This topic for the IT professional lists questions and answers about understanding, deploying, and managing security audit policies.
+  This topic for the IT professional lists questions and answers about understanding, deploying, and managing security audit policies.
   
   -   [What is Windows security auditing and why might I want to use it?](#what-is-windows-security-auditing-and-why-might-i-want-to-use-it-)
   -   [What is the difference between audit policies located in Local Policies\\Audit Policy and audit policies located in Advanced Audit Policy Configuration?](#what-is-the-difference-between-audit-policies-located-in-local-policies--audit-policy-and-audit-policies-located-in-advanced-audit-policy-configuration-)
