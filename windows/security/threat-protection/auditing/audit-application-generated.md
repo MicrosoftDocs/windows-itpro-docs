@@ -11,15 +11,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit Application Generated
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 Audit Application Generated generates events for actions related to Authorization Manager [applications](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc770563(v=ws.11)).
 

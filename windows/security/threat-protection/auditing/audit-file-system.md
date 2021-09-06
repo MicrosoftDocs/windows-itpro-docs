@@ -11,15 +11,12 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit File System
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 > [!NOTE]
 > For more details about applicability on older operating system versions, read the article [Audit File System](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn319068(v=ws.11)).

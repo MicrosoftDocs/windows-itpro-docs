@@ -11,15 +11,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit Directory Service Access
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Directory Service Access determines whether the operating system generates audit events when an Active Directory Domain Services (AD DS) object is accessed.

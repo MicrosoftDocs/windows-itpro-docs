@@ -14,15 +14,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Advanced security audit policy settings
-
-**Applies to**
-- Windows 10
-- Windows 11
 
 This reference for IT professionals provides information about the advanced audit policy settings that are available in Windows and the audit events that they generate.
 

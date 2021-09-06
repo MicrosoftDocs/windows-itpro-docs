@@ -14,14 +14,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/6/2021
 ms.technology: mde
 ---
 
 # Advanced security audit policies
-
-**Applies to**
--   Windows 10
 
 Advanced security audit policy settings are found in **Security Settings\\Advanced Audit Policy Configuration\\System Audit Policies** and appear to overlap with basic security audit policies, but they are recorded and applied differently.
 When you apply basic audit policy settings to the local computer by using the Local Security Policy snap-in, you are editing the effective audit policy, so changes made to basic audit policy settings will appear exactly as configured in Auditpol.exe. In Windows 7 and later, advanced security audit policies can be controlled by using Group Policy.
