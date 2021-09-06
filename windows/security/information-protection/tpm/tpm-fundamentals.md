@@ -1,5 +1,5 @@
 ---
-title: TPM fundamentals (Windows 10)
+title: TPM fundamentals (Windows)
 description: Inform yourself about the components of the Trusted Platform Module (TPM 1.2 and TPM 2.0) and how they are used to mitigate dictionary attacks.
 ms.assetid: ac90f5f9-9a15-4e87-b00d-4adcf2ec3000
 ms.reviewer: 
@@ -13,14 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/16/2017
+ms.date: 09/06/2021
 ---
 
 # TPM fundamentals
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This topic for the IT professional provides a description of the components of the Trusted Platform Module (TPM 1.2 and TPM 2.0) and explains how they are used to mitigate dictionary attacks.
 
@@ -82,7 +83,7 @@ For TPM 1.2, the TCG specifications for TPMs require physical presence (typicall
 
 ## TPM 1.2 states and initialization
 
-For TPM 1.2, there are multiple possible states. Windows 10 automatically initializes the TPM, which brings it to an enabled, activated, and owned state.
+For TPM 1.2, there are multiple possible states. Windows automatically initializes the TPM, which brings it to an enabled, activated, and owned state.
 
 ## Endorsement keys
 
@@ -134,7 +135,7 @@ Increasing the PIN length requires a greater number of guesses for an attacker.
 In that case, the lockout duration between each guess can be shortened to allow legitimate users to retry a failed attempt sooner, while maintaining a similar level of protection.
 
 Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to 6 characters to better align with other Windows features that leverage TPM 2.0, including Windows Hello.
-To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703 with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is 6 characters by default, but it can be reduced to 4 characters.
+To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703, or Windows 11, with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is 6 characters by default, but it can be reduced to 4 characters.
 If the minimum PIN length is reduced from the default of six characters, then the TPM 2.0 lockout period will be extended.
 
 ### TPM-based smart cards

@@ -1,5 +1,5 @@
 ---
-title: TPM Group Policy settings (Windows 10)
+title: TPM Group Policy settings (Windows)
 description: This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 ms.assetid: 54ff1c1e-a210-4074-a44e-58fee26e4dbd
 ms.reviewer: 
@@ -13,14 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 10/02/2018
+ms.date: 09/06/2021
 ---
 
 # TPM Group Policy settings
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016 and later
+-   Windows 11
+-   Windows Server 2016 and above
 
 This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 
@@ -28,7 +29,7 @@ The Group Policy settings for TPM services are located at:
 
 **Computer Configuration\\Administrative Templates\\System\\Trusted Platform Module Services\\**
 
-The following Group Policy settings were introduced in Windows 10.
+The following Group Policy settings were introduced in Windows.
 
 ## Configure the level of TPM owner authorization information available to the operating system
 
@@ -119,7 +120,7 @@ If you do not configure this policy setting, a default value of 9 is used. A val
 
 ## Configure the system to use legacy Dictionary Attack Prevention Parameters setting for TPM 2.0
 
-Introduced in Windows 10, version 1703, this policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below. 
+Introduced in Windows 10, version 1703, or Windows 11, this policy setting configures the TPM to use the Dictionary Attack Prevention Parameters (lockout threshold and recovery time) to the values that were used for Windows 10 Version 1607 and below. 
 
 > [!IMPORTANT]
 > Setting this policy will take effect only if:  

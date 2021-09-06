@@ -1,5 +1,5 @@
 ---
-title: Manage TPM lockout (Windows 10)
+title: Manage TPM lockout (Windows)
 description: This topic for the IT professional describes how to manage the lockout feature for the Trusted Platform Module (TPM) in Windows.
 ms.assetid: bf27adbe-404c-4691-a644-29ec722a3f7b
 ms.reviewer: 
@@ -13,13 +13,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/02/2017
+ms.date: 09/06/2021
 ---
 # Manage TPM lockout
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This topic for the IT professional describes how to manage the lockout feature for the Trusted Platform Module (TPM) in Windows.
 
@@ -37,14 +38,14 @@ The industry standards from the Trusted Computing Group (TCG) specify that TPM m
 
 **TPM 2.0**
 
-TPM 2.0 devices have standardized lockout behavior which is configured by Windows. TPM 2.0 devices have a maximum count threshold and a healing time. Windows 10 configures the maximum count to be 32 and the healing time to be 10 minutes. This means that every continuous ten minutes of powered on operation without an event which increases the counter will cause the counter to decrease by 1.
+TPM 2.0 devices have standardized lockout behavior which is configured by Windows. TPM 2.0 devices have a maximum count threshold and a healing time. Windows configures the maximum count to be 32 and the healing time to be 10 minutes. This means that every continuous ten minutes of powered on operation without an event which increases the counter will cause the counter to decrease by 1.
 
-If your TPM has entered lockout mode or is responding slowly to commands, you can reset the lockout value by using the following procedures. Resetting the TPM lockout requires the TPM owner’s authorization. This value is no longer retained by default starting with Windows 10 version 1607.
+If your TPM has entered lockout mode or is responding slowly to commands, you can reset the lockout value by using the following procedures. Resetting the TPM lockout requires the TPM owner’s authorization. This value is no longer retained by default starting with Windows 10 version 1607 or Windows 11.
 
 ## Reset the TPM lockout by using the TPM MMC
 
 > [!NOTE]
-> This procedure is only available if you have configured Windows to retain the TPM Owner Password. By default, this password is not available in Windows 10 starting with version 1607.
+> This procedure is only available if you have configured Windows to retain the TPM Owner Password. By default, this password is not available in Windows 10 starting with version 1607 or Windows 11.
 
 The following procedure explains the steps to reset the TPM lockout by using the TPM MMC.
 

@@ -1,5 +1,5 @@
 ---
-title: Understanding PCR banks on TPM 2.0 devices (Windows 10)
+title: Understanding PCR banks on TPM 2.0 devices (Windows)
 description: This topic for the IT professional provides background about what happens when you switch PCR banks on TPM 2.0 devices.
 ms.assetid: 743FCCCB-99A9-4636-8F48-9ECB3A3D10DE
 ms.reviewer: 
@@ -13,14 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ---
 
 # Understanding PCR banks on TPM 2.0 devices
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 For steps on how to switch PCR banks on TPM 2.0 devices on your PC, you should contact your OEM or UEFI vendor. This topic provides background about what happens when you switch PCR banks on TPM 2.0 devices.
 
@@ -35,9 +36,9 @@ The [TCG PC Client Platform TPM Profile Specification](http://www.trustedcomputi
 
 Some TPM PCRs are used as checksums of log events. The log events are extended in the TPM as the events occur. Later, an auditor can validate the logs by computing the expected PCR values from the log and comparing them to the PCR values of the TPM. Since the first 16 TPM PCRs cannot be modified arbitrarily, a match between an expected PCR value in that range and the actual TPM PCR value provides assurance of an unmodified log.
 
-## How does Windows 10 use PCRs?
+## How does Windows use PCRs?
 
-To bind the use of a TPM based key to a certain state of the PC, the key can be sealed to an expected set of PCR values. For instance, PCRs 0 through 7 have a well-defined value after the boot process – when the OS is loaded. When the hardware, firmware, or boot loader of the machine changes, the change can be detected in the PCR values. Windows 10 uses this capability to make certain cryptographic keys only available at certain times during the boot process. For instance, the BitLocker key can be used at a certain point in the boot, but not before or after.
+To bind the use of a TPM based key to a certain state of the PC, the key can be sealed to an expected set of PCR values. For instance, PCRs 0 through 7 have a well-defined value after the boot process – when the OS is loaded. When the hardware, firmware, or boot loader of the machine changes, the change can be detected in the PCR values. Windows uses this capability to make certain cryptographic keys only available at certain times during the boot process. For instance, the BitLocker key can be used at a certain point in the boot, but not before or after.
 
 It is important to note that this binding to PCR values also includes the hashing algorithm used for the PCR. For instance, a key can be bound to a specific value of the SHA-1 PCR\[12\], if using SHA-256 PCR banks, even with the same system configuration. Otherwise, the PCR values will not match.
 
@@ -45,7 +46,7 @@ It is important to note that this binding to PCR values also includes the hashin
 
 When the PCR banks are switched, the algorithm used to compute the hashed values stored in the PCRs during extend operations is changed. Each hash algorithm will return a different cryptographic signature for the same inputs.
 
-As a result, if the currently used PCR bank is switched all keys that have been bound to the previous PCR values will no longer work. For example, if you had a key bound to the SHA-1 value of PCR\[12\] and subsequently changed the PCR banks to SHA-256, the banks wouldn’t match, and you would be unable to use that key. The BitLocker key is secured using the PCR banks and Windows 10 will not be able to unseal it if the PCR banks are switched while BitLocker is enabled.
+As a result, if the currently used PCR bank is switched all keys that have been bound to the previous PCR values will no longer work. For example, if you had a key bound to the SHA-1 value of PCR\[12\] and subsequently changed the PCR banks to SHA-256, the banks wouldn’t match, and you would be unable to use that key. The BitLocker key is secured using the PCR banks and Windows will not be able to unseal it if the PCR banks are switched while BitLocker is enabled.
 
 ## What can I do to switch PCRs when BitLocker is already active?
 
