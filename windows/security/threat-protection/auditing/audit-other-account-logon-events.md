@@ -24,7 +24,7 @@ This auditing subcategory does not contain any events. It is intended for future
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                   |
 |-------------------|-----------------|-----------------|------------------|------------------|----------------------------------------------------------------------------------------------------------------------------|
-| Domain Controller | No              | No              | No               | No               | This auditing subcategory does not contain any events. It is intended for future use, and there is no reason to enable it. |
-| Member Server     | No              | No              | No               | No               | This auditing subcategory does not contain any events. It is intended for future use, and there is no reason to enable it. |
-| Workstation       | No              | No              | No               | No               | This auditing subcategory does not contain any events. It is intended for future use, and there is no reason to enable it. |
+| Domain Controller | No              | No              | No               | No               | This auditing subcategory does not contain any events. Intended for future use, and there is no reason to enable it. |
+| Member Server     | No              | No              | No               | No               | This auditing subcategory does not contain any events. Intended for future use, and there is no reason to enable it. |
+| Workstation       | No              | No              | No               | No               | This auditing subcategory does not contain any events. Intended for future use, and there is no reason to enable it. |
 
