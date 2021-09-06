@@ -11,15 +11,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 05/29/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit Other Object Access Events
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Other Object Access Events allows you to monitor operations with scheduled tasks, COM+ objects and indirect object access requests.

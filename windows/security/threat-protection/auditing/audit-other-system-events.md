@@ -11,17 +11,13 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit Other System Events
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
-
-
+ 
 Audit Other System Events contains Windows Firewall Service and Windows Firewall driver start and stop events, failure events for these services and Windows Firewall Service policy processing failures.
 
 Audit Other System Events determines whether the operating system audits various system events.
