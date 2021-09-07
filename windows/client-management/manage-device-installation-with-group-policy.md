@@ -1,5 +1,5 @@
 ---
-title: Manage Device Installation with Group Policy (Windows 10)
+title: Manage Device Installation with Group Policy (Windows 10 and Windows 11)
 description: Find out how to manage Device Installation Restrictions with Group Policy.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -14,14 +14,13 @@ ms.topic: article
 
 # Manage Device Installation with Group Policy
 
-
 **Applies to**
 
 - Windows 10, Windows Server 2022
-
+- Windows 11
 
 ## Summary
-By using Windows 10 operating systems, administrators can determine what devices can be installed on computers they manage. This guide summarizes the device installation process and demonstrates several techniques for controlling device installation by using Group Policy.
+By using Windows 10 (and Windows 11) operating systems, administrators can determine what devices can be installed on computers they manage. This guide summarizes the device installation process and demonstrates several techniques for controlling device installation by using Group Policy.
 
 ## Introduction
 
@@ -44,7 +43,7 @@ It is important to understand that the Group Policies that are presented in this
 
 This guide is targeted at the following audiences:
 
-- Information technology planners and analysts who are evaluating Windows 10 and Windows Server 2022
+- Information technology planners and analysts who are evaluating Windows 10 (and Windows 11) and Windows Server 2022
 - Enterprise information technology planners and designers
 - Security architects who are responsible for implementing trustworthy computing in their organization
 - Administrators who want to become familiar with the technology
@@ -223,7 +222,7 @@ Some of these policies take precedence over other policies. The flowchart shown 
 
 To complete each of the scenarios, please ensure your have:
 
-- A client computer running Windows 10.
+- A client computer running Windows 10 (and Windows 11).
 
 - A USB thumb drive. The scenarios described in this guide use a USB thumb drive as the example device (also known as a “removable disk drive”, "memory drive," a "flash drive," or a "keyring drive"). Most USB thumb drives do not require any manufacturer-provided drivers, and these devices work with the inbox drivers provided with the Windows build.
 

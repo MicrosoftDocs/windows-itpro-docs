@@ -196,4 +196,4 @@ goto loop
 
 - [Port Exhaustion and You!](/archive/blogs/askds/port-exhaustion-and-you-or-why-the-netstat-tool-is-your-friend) - this article gives a detail on netstat states and how you can use netstat output to determine the port status
 
-- [Detecting ephemeral port exhaustion](/archive/blogs/yongrhee/windows-server-2012-r2-ephemeral-ports-a-k-a-dynamic-ports-hotfixes): this article has a script which will run in a loop to report the port status. (Applicable for Windows 2012 R2, Windows 8, Windows 10)
+- [Detecting ephemeral port exhaustion](/archive/blogs/yongrhee/windows-server-2012-r2-ephemeral-ports-a-k-a-dynamic-ports-hotfixes): this article has a script which will run in a loop to report the port status. (Applicable for Windows 2012 R2, Windows 8, Windows 10 and Windows 11)

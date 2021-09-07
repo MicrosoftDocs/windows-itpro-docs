@@ -21,6 +21,7 @@ ms.topic: reference
 **Applies to**
 
 -   Windows 10
+-   Windows 11
 
 As of September 2020 This page will no longer be updated. To find the Group Polices that ship in each version of Windows,  refer to the Group Policy Settings Reference Spreadsheet. You can always locate the most recent version of the Spreadsheet by searching the Internet for "Windows Version + Group Policy Settings Reference".
 

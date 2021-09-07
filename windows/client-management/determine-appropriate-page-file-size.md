@@ -74,7 +74,7 @@ By default, page files are system-managed. This means that the page files increa
 
 For example, when the system commit charge is more than 90 percent of the system commit limit, the page file is increased to back it. This continues to occur until the page file reaches three times the size of physical memory or 4 GB, whichever is larger. This all assumes that the logical disk that is hosting the page file is large enough to accommodate the growth.
 
-The following table lists the minimum and maximum page file sizes of system-managed page files in Windows 10.
+The following table lists the minimum and maximum page file sizes of system-managed page files in Windows 10 and Windows 11.
 
 |Minimum page file size	|Maximum page file size|
 |---------------|------------------|

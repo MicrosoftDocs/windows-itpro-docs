@@ -14,10 +14,10 @@ ms.topic: article
 
 # Manage the Settings app with Group Policy
 
-
 **Applies to**
 
 -   Windows 10, Windows Server 2016
+-   Windows 11
 
 You can now manage the pages that are shown in the Settings app by using Group Policy. When you use Group Policy to manage pages, you can hide specific pages from users. Before Windows 10, version 1703, you could either show everything in the Settings app or hide it completely.
 To make use of the Settings App group policies on Windows server 2016, install fix [4457127](https://support.microsoft.com/help/4457127/windows-10-update-kb4457127) or a later cumulative update. 
