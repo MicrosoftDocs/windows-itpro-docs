@@ -1,5 +1,5 @@
 ---
-title: Configure Group Policy to Autoenroll and Deploy Certificates (Windows 10)
+title: Configure Group Policy to Autoenroll and Deploy Certificates (Windows)
 description: Learn how to configure Group Policy to automatically enroll client computer certificates and deploy them to the workstations on your network.
 ms.assetid: faeb62b5-2cc3-42f7-bee5-53ba45d05c09
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 You can use this procedure to configure Group Policy to automatically enroll client computer certificates and deploy them to the workstations on your network. Follow this procedure for each GPO that contains IPsec connection security rules that require this certificate.
 

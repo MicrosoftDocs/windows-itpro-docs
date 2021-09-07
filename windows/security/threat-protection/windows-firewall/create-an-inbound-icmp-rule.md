@@ -1,5 +1,5 @@
 ---
-title: Create an Inbound ICMP Rule (Windows 10)
+title: Create an Inbound ICMP Rule (Windows)
 description: Learn how to allow inbound ICMP traffic by using the Group Policy Management MMC snap-in to create rules in Windows Defender Firewall with Advanced Security.
 ms.assetid: 267b940a-79d9-4322-b53b-81901e357344
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 To allow inbound Internet Control Message Protocol (ICMP) network traffic, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management MMC snap-in to create firewall rules. This type of rule allows ICMP requests and responses to be sent and received by computers on the network.
 

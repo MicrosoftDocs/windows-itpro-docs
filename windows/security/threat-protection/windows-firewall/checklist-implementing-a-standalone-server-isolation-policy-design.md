@@ -1,5 +1,5 @@
 ---
-title: Checklist Implementing a Standalone Server Isolation Policy Design (Windows 10)
+title: Checklist Implementing a Standalone Server Isolation Policy Design (Windows)
 description: Use these tasks to create a server isolation policy design that is not part of an isolated domain. See references to concepts and links to other checklists.
 ms.assetid: 50a997d8-f079-408c-8ac6-ecd02078ade3
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This checklist contains procedures for creating a server isolation policy design that is not part of an isolated domain. For the steps required to create an isolated server zone within an isolated domain, see [Checklist: Configuring Rules for an Isolated Server Zone](checklist-configuring-rules-for-an-isolated-server-zone.md).
 
