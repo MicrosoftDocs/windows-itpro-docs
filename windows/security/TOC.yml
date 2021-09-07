@@ -199,20 +199,14 @@
        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
    - name: Threat protection
      items: 
-    - name: Microsoft Defender Antivirus
-      href: microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows.md
-    - name: Attack surface reduction
-      href:
-    - name: Tamper protection
-      href:
-    - name: Network protection
-      href:
-    - name: Controlled folder access
-      href: 
-    - name: Exploit protection
-      href: 
-    - name: Microsoft Defender for Endpoint
-      href: 
+     - name: Microsoft Defender Antivirus
+       href: microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows.md
+     - name: Attack surface reduction
+     - name: Tamper protection
+     - name: Network protection
+     - name: Controlled folder access
+     - name: Exploit protection
+     - name: Microsoft Defender for Endpoint
 - name: Application protection
   items:
 - name: User protection
