@@ -1,6 +1,6 @@
 ---
 title: Passwordless Strategy
-description: Learn about the password-less strategy and how Windows Hello for Business implements this strategy in Windows 10.
+description: Learn about the password-less strategy and how Windows Hello for Business implements this strategy in Windows 10 and Windows 11.
 keywords: identity, PIN, biometric, Hello, passport, video, watch, passwordless
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -25,7 +25,7 @@ Over the past few years, Microsoft has continued their commitment to enabling a 
 
 
 ### 1. Develop a password replacement offering
-Before you move away from passwords, you need something to replace them. With Windows 10, Microsoft introduced Windows Hello for Business, a strong, hardware protected two-factor credential that enables single sign-on to Azure Active Directory and Active Directory.
+Before you move away from passwords, you need something to replace them. With Windows 10 and Windows 11, Microsoft introduced Windows Hello for Business, a strong, hardware protected two-factor credential that enables single sign-on to Azure Active Directory and Active Directory.
 
 Deploying Windows Hello for Business is the first step towards a passwordless environment. Windows Hello for Business coexists nicely with existing password-based security. Users are likely to use Windows Hello for Business because of its convenience, especially when combined with biometrics. However, some workflows and applications may still need passwords. This early stage is about implementing an alternative and getting users used to it.
 
@@ -38,7 +38,7 @@ Once the user-visible password surface has been eliminated, your organization ca
 - the users never change their password
 - the users do not know their password
 
-In this world, the user signs in to Windows 10 using Windows Hello for Business and enjoys single sign-on to Azure and Active Directory resources. If the user is forced to authenticate, their authentication uses Windows Hello for Business.
+In this world, the user signs in to Windows using Windows Hello for Business and enjoys single sign-on to Azure and Active Directory resources. If the user is forced to authenticate, their authentication uses Windows Hello for Business.
 
 ### 4. Eliminate passwords from the identity directory
 The final step of the passwordless story is where passwords simply do not exist. At this step, identity directories no longer persist any form of the password. This is where Microsoft achieves the long-term security promise of a truly passwordless environment.
@@ -139,7 +139,7 @@ The journey to password freedom is to take each work persona through each step o
 After successfully moving a work persona to password freedom, you can prioritize the remaining work personas and repeat the process.
 
 ### Passwordless replacement offering (Step 1)
-The first step to password freedom is providing an alternative to passwords. Windows 10 provides an affordable and easy in-box alternative to passwords, Windows Hello for Business, a strong, two-factor authentication to Azure Active Directory and Active Directory.
+The first step to password freedom is providing an alternative to passwords. Windows 10 and Windows 11 provide an affordable and easy in-box alternative to passwords, Windows Hello for Business, a strong, two-factor authentication to Azure Active Directory and Active Directory.
 
 #### Identify test users that represent the targeted work persona
 A successful transition relies on user acceptance testing. It is impossible for you to know how every work persona goes about their day-to-day activities, or how to accurately validate them. You need to enlist the help of users who fit the targeted work persona. You only need a few users from the targeted work persona. As you cycle through step 2, you may want to change a few of the users (or add a few) as part of your validation process.

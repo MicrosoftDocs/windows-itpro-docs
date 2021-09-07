@@ -20,12 +20,13 @@ ms.reviewer:
 
 **Applies to**
 -   Windows 10, version 1703 or later
+-   Windows 11
 -   On-premises deployment
 -   Key trust
 
 
-You need a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
-Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1703.
+You need at least a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows. You can download these tools from [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
+Install the Remote Server Administration Tools for Windows on a computer running Windows 10, version 1703 or later.
 
 Alternatively, you can create a copy of the .ADMX and .ADML files from a Windows 10, version 1703 installation setup template folder to their respective language folder on a Windows Server, or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
 
@@ -35,7 +36,7 @@ On-premises certificate-based deployments of Windows Hello for Business needs on
 
 The Group Policy setting determines whether users are allowed, and prompted, to enroll for Windows Hello for Business. It can be configured for computers or users. 
 
-If you configure the Group Policy for computers, all users that sign-in to those computers will be allowed and prompted to enroll for Windows Hello for Business. If you configure the Group Policy for users, only those users will be allowed and prompted to enroll for Windows Hello for Business. For these settings to be configured using GPO, you need to download and install the latest Administrative Templates (.admx) for Windows 10. 
+If you configure the Group Policy for computers, all users that sign-in to those computers will be allowed and prompted to enroll for Windows Hello for Business. If you configure the Group Policy for users, only those users will be allowed and prompted to enroll for Windows Hello for Business. For these settings to be configured using GPO, you need to download and install the latest Administrative Templates (.admx) for Windows.
 
 
 ## Create the Windows Hello for Business Group Policy object
@@ -92,9 +93,9 @@ The default Windows Hello for Business enables users to enroll and use biometric
 
 ### PIN Complexity
 
-PIN complexity is not specific to Windows Hello for Business. Windows 10 enables users to use PINs outside of Windows Hello for Business. PIN Complexity Group Policy settings apply to all uses of PINs, even when Windows Hello for Business is not deployed. 
+PIN complexity is not specific to Windows Hello for Business. Windows enables users to use PINs outside of Windows Hello for Business. PIN Complexity Group Policy settings apply to all uses of PINs, even when Windows Hello for Business is not deployed. 
 
-Windows 10 provides eight PIN Complexity Group Policy settings that give you granular control over PIN creation and management. You can deploy these policy settings to computers, where they affect all users creating PINs on that computer; or, you can deploy these settings to users, where they affect those users creating PINs regardless of the computer they use.  If you deploy both computer and user PIN complexity Group Policy settings, the user policy settings have precedence over computer policy settings. Also, this conflict resolution is based on the last applied policy. Windows does not merge the policy settings automatically; however, you can deploy Group Policy to provide to accomplish a variety of configurations.  The policy settings included are:
+Windows provides eight PIN Complexity Group Policy settings that give you granular control over PIN creation and management. You can deploy these policy settings to computers, where they affect all users creating PINs on that computer; or, you can deploy these settings to users, where they affect those users creating PINs regardless of the computer they use.  If you deploy both computer and user PIN complexity Group Policy settings, the user policy settings have precedence over computer policy settings. Also, this conflict resolution is based on the last applied policy. Windows does not merge the policy settings automatically; however, you can deploy Group Policy to provide to accomplish a variety of configurations.  The policy settings included are:
 * Require digits
 * Require lowercase letters
 * Maximum PIN length

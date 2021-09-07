@@ -21,6 +21,7 @@ ms.reviewer:
 **Applies to**
 
 - Windows 10
+- Windows 11
 
 Congratulations! You are taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
 
@@ -145,9 +146,9 @@ Modern management is an emerging device management paradigm that leverages the c
 
 ### Client
 
-Windows Hello for Business is an exclusive Windows 10 feature.  As part of the Windows as a Service strategy, Microsoft has improved the deployment, management, and user experience with each new release of Windows 10 and introduced support for new scenarios.
+Windows Hello for Business is an exclusive Windows 10 and Windows 11 feature. As part of the Windows as a Service strategy, Microsoft has improved the deployment, management, and user experience with each new release of Windows and introduced support for new scenarios.
 
-Most deployment scenarios require a minimum of Windows 10, version 1511, also known as the November Update.  The client requirement may change based on different components in your existing infrastructure, or other infrastructure choices made later in planning your deployment.  Those components and choices may require a minimum client running Windows 10, version 1703, also known as the Creators Update.
+Most deployment scenarios require a minimum of Windows 10, version 1511, also known as the November Update.  The client requirement may change based on different components in your existing infrastructure, or other infrastructure choices made later in planning your deployment. Those components and choices may require a minimum client running Windows 10, version 1703, also known as the Creators Update.
 
 
 ### Active Directory
@@ -156,7 +157,7 @@ Hybrid and on-premises deployments include Active Directory as part of their inf
 
 ### Public Key Infrastructure
 
-The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-premises deployments need a certificate in order for Windows 10 devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
+The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-premises deployments need a certificate in order for Windows devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
 
 ### Cloud
 
@@ -267,7 +268,7 @@ If you use modern management for both domain and non-domain joined devices, writ
 
 ### Client
 
-Windows Hello for Business is a feature exclusive to Windows 10.   Some deployments and features are available using earlier versions of Windows 10.  Others need the latest versions.
+Windows Hello for Business is a feature exclusive to Windows 10 and Windows 11. Some deployments and features are available using earlier versions of Windows 10. Others need the latest versions.
 
 If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **3a** on your planning worksheet.  Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
 > [!NOTE]

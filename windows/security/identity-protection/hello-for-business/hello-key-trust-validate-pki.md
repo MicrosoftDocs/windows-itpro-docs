@@ -21,6 +21,7 @@ ms.reviewer:
 
 **Applies to**
 -   Windows 10, version 1703 or later
+-   Windows 11
 -   On-premises deployment
 -   Key trust
 
@@ -114,7 +115,7 @@ The certificate template is configured to supersede all the certificate template
 
 ### Configure an Internal Web Server Certificate template
 
-Windows 10 clients use the https protocol when communicating with Active Directory Federation Services.  To meet this need, you must issue a server authentication certificate to all the nodes in the Active Directory Federation Services farm.  On-premises deployments can use a server authentication certificate issued by their enterprise PKI.  You must configure a server authentication certificate template so the host running the Active Directory Federation Service can request the certificate. 
+Windows clients use the https protocol when communicating with Active Directory Federation Services.  To meet this need, you must issue a server authentication certificate to all the nodes in the Active Directory Federation Services farm.  On-premises deployments can use a server authentication certificate issued by their enterprise PKI.  You must configure a server authentication certificate template so the host running the Active Directory Federation Service can request the certificate. 
 
 Sign-in to a certificate authority or management workstations with _Domain Admin_ equivalent credentials.
 

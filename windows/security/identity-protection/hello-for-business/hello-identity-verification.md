@@ -24,10 +24,10 @@ This article lists the infrastructure requirements for the different deployment 
 
 ## Cloud Only Deployment
 
-* Windows 10, version 1511 or later
+* Windows 10, version 1511 or later, or Windows 11
 * Microsoft Azure Account
 * Azure Active Directory
-* Azure AD Multi-Factor Authentication
+* Azure AD Multifactor Authentication
 * Modern Management (Intune or supported third-party MDM), *optional*
 * Azure AD Premium subscription - *optional*, needed for automatic MDM enrollment when the device joins Azure Active Directory
 
