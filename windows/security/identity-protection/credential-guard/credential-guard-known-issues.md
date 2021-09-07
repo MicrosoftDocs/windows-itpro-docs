@@ -1,6 +1,6 @@
 ---
-title: Windows Defender Credential Guard - Known issues (Windows 10)
-description: Windows Defender Credential Guard - Known issues in Windows 10 Enterprise
+title: Windows Defender Credential Guard - Known issues (Windows)
+description: Windows Defender Credential Guard - Known issues in Windows Enterprise
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -19,9 +19,10 @@ ms.reviewer:
 # Windows Defender Credential Guard: Known issues 
 
 **Applies to**
--   Windows 10
--   Windows Server 2016
--   Windows Server 2019
+- Windows 10
+- Windows 11
+- Windows Server 2016
+- Windows Server 2019
  
 Windows Defender Credential Guard has certain application requirements. Windows Defender Credential Guard blocks specific authentication capabilities. Therefore applications that require such capabilities will not function when it is enabled. For further information, see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements). 
 
@@ -51,12 +52,12 @@ The following known issue has been fixed in the [Cumulative Security Update for 
 
 The following known issues have been fixed by servicing releases made available in the Cumulative Security Updates for April 2017:
 
-- [KB4015217 Windows Defender Credential Guard generates double bad password count on Active Directory domain-joined Windows 10 machines](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217)
+- [KB4015217 Windows Defender Credential Guard generates double bad password count on Active Directory domain-joined Windows machines](https://support.microsoft.com/help/4015217/windows-10-update-kb4015217)
 
      This issue can potentially lead to unexpected account lockouts. See also Microsoft® Knowledge Base articles [KB4015219](https://support.microsoft.com/help/4015219/windows-10-update-kb4015219) and [KB4015221](https://support.microsoft.com/help/4015221/windows-10-update-kb4015221)
 
 
-- [KB4033236 Two incorrect logon attempts sent to Active Directory after Windows Defender Credential Guard installed on Windows 10](https://support.microsoft.com/help/4033236/two-incorrect-logon-attempts-sent-to-active-directory-after-credential?preview)
+- [KB4033236 Two incorrect logon attempts sent to Active Directory after Windows Defender Credential Guard installed on Windows](https://support.microsoft.com/help/4033236/two-incorrect-logon-attempts-sent-to-active-directory-after-credential?preview)
 
     This issue can potentially lead to unexpected account lockouts. The issue was fixed in servicing updates for each of the following operating systems:
 
@@ -69,30 +70,30 @@ The following known issues have been fixed by servicing releases made available 
 
 The following issue affects the Java GSS API. See the following Oracle bug database article: 
 
-- [JDK-8161921: Windows 10 Windows Defender Credential Guard does not allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
+- [JDK-8161921: Windows 10 or Windows 11 Windows Defender Credential Guard does not allow sharing of TGT with Java](http://bugs.java.com/bugdatabase/view_bug.do?bug_id=8161921)
 
-When Windows Defender Credential Guard is enabled on Windows 10, the Java GSS API will not authenticate. This is expected behavior because Windows Defender Credential Guard blocks specific application authentication capabilities and will not provide the TGT session key to applications regardless of registry key settings. For further information see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
+When Windows Defender Credential Guard is enabled on Windows, the Java GSS API will not authenticate. This is expected behavior because Windows Defender Credential Guard blocks specific application authentication capabilities and will not provide the TGT session key to applications regardless of registry key settings. For further information see [Application requirements](/windows/access-protection/credential-guard/credential-guard-requirements#application-requirements).
 
 The following issue affects Cisco AnyConnect Secure Mobility Client:
 
-- [Blue screen on Windows 10 computers running Hypervisor-Protected Code Integrity and Windows Defender Credential Guard with Cisco Anyconnect 4.3.04027](https://quickview.cloudapps.cisco.com/quickview/bug/CSCvc66692) \*
+- [Blue screen on Windows 10 and Windows 11 computers running Hypervisor-Protected Code Integrity and Windows Defender Credential Guard with Cisco Anyconnect 4.3.04027](https://quickview.cloudapps.cisco.com/quickview/bug/CSCvc66692) \*
 
 *Registration required to access this article. 
 
 The following issue affects McAfee Application and Change Control (MACC):
-- [KB88869 Windows 10 machines exhibit high CPU usage with McAfee Application and Change Control (MACC) installed when Windows Defender Credential Guard is enabled](https://kc.mcafee.com/corporate/index?page=content&id=KB88869) <sup>[1]</sup>
+- [KB88869 Windows 10 and Windows 11 machines exhibit high CPU usage with McAfee Application and Change Control (MACC) installed when Windows Defender Credential Guard is enabled](https://kc.mcafee.com/corporate/index?page=content&id=KB88869) <sup>[1]</sup>
    
 
 The following issue affects AppSense Environment Manager.
   For further information, see the following Knowledge Base article:
-- [Installing AppSense Environment Manager on Windows 10 machines causes LSAISO.exe to exhibit high CPU usage when Windows Defender Credential Guard is enabled](http://www.appsense.com/kb/160525073917945) <sup>[1]</sup> \**
+- [Installing AppSense Environment Manager on Windows 10 and Windows 11 machines causes LSAISO.exe to exhibit high CPU usage when Windows Defender Credential Guard is enabled](http://www.appsense.com/kb/160525073917945) <sup>[1]</sup> \**
 
 The following issue affects Citrix applications:
-- Windows 10 machines exhibit high CPU usage with Citrix applications installed when Windows Defender Credential Guard is enabled. <sup>[1]</sup>
+- Windows 10 and Windows 11 machines exhibit high CPU usage with Citrix applications installed when Windows Defender Credential Guard is enabled. <sup>[1]</sup>
 
-<sup>[1]</sup> Products that connect to Virtualization Based Security (VBS) protected processes can cause Windows Defender Credential Guard-enabled Windows 10 or Windows Server 2016 machines to exhibit high CPU usage. For technical and troubleshooting information, see the following Microsoft Knowledge Base article:
+<sup>[1]</sup> Products that connect to Virtualization Based Security (VBS) protected processes can cause Windows Defender Credential Guard-enabled Windows 10, Windows 11, Windows Server 2016 or Windows Server 2019 machines to exhibit high CPU usage. For technical and troubleshooting information, see the following Microsoft Knowledge Base article:
 
-- [KB4032786 High CPU usage in the LSAISO process on Windows 10 or Windows Server 2016](https://support.microsoft.com/help/4032786)
+- [KB4032786 High CPU usage in the LSAISO process on Windows](https://support.microsoft.com/help/4032786)
     
 For further technical information on LSAISO.exe, see the MSDN article: [Isolated User Mode (IUM) Processes](/windows/win32/procthread/isolated-user-mode--ium--processes)
     
@@ -107,21 +108,21 @@ See the following article on Citrix support for Secure Boot:
 
 Windows Defender Credential Guard is not supported by either these products, products versions, computer systems, or Windows 10 versions:
 
-- For Windows Defender Credential Guard on Windows 10 with McAfee Encryption products, see:
-  [Support for Hypervisor-Protected Code Integrity and Windows Defender Credential Guard on Windows 10 with McAfee encryption products](https://kc.mcafee.com/corporate/index?page=content&id=KB86009)
+- For Windows Defender Credential Guard on Windows with McAfee Encryption products, see:
+  [Support for Hypervisor-Protected Code Integrity and Windows Defender Credential Guard on Windows with McAfee encryption products](https://kc.mcafee.com/corporate/index?page=content&id=KB86009)
 
-- For Windows Defender Credential Guard on Windows 10 with Check Point Endpoint Security Client, see:
-  [Check Point Endpoint Security Client support for Microsoft Windows 10 Windows Defender Credential Guard and Hypervisor-Protected Code Integrity features](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk113912)
+- For Windows Defender Credential Guard on Windows with Check Point Endpoint Security Client, see:
+  [Check Point Endpoint Security Client support for Microsoft Windows Defender Credential Guard and Hypervisor-Protected Code Integrity features](https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doGoviewsolutiondetails=&solutionid=sk113912)
 
-- For Windows Defender Credential Guard on Windows 10 with VMWare Workstation
-  [Windows 10 host fails when running VMWare Workstation when Windows Defender Credential Guard is enabled](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2146361)
+- For Windows Defender Credential Guard on Windows with VMWare Workstation
+  [Windows host fails when running VMWare Workstation when Windows Defender Credential Guard is enabled](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=2146361)
 
-- For Windows Defender Credential Guard on Windows 10 with specific versions of the Lenovo ThinkPad
-  [ThinkPad support for Hypervisor-Protected Code Integrity and Windows Defender Credential Guard in Microsoft Windows 10 – ThinkPad](https://support.lenovo.com/in/en/solutions/ht503039)
+- For Windows Defender Credential Guard on Windows with specific versions of the Lenovo ThinkPad
+  [ThinkPad support for Hypervisor-Protected Code Integrity and Windows Defender Credential Guard in Microsoft Windows – ThinkPad](https://support.lenovo.com/in/en/solutions/ht503039)
 
-- For Windows Defender Credential Guard on Windows 10 with Symantec Endpoint Protection
-  [Windows 10 with Windows Defender Credential Guard and Symantec Endpoint Protection 12.1](https://www.symantec.com/connect/forums/windows-10-device-guard-credentials-guard-and-sep-121)
+- For Windows Defender Credential Guard on Windows with Symantec Endpoint Protection
+  [Windows 10 and Windows 11 with Windows Defender Credential Guard and Symantec Endpoint Protection 12.1](https://www.symantec.com/connect/forums/windows-10-device-guard-credentials-guard-and-sep-121)
 
-  This is not a comprehensive list. Check whether your product vendor, product version, or computer system, supports Windows Defender Credential Guard on systems that run Windows 10 or specific versions of Windows 10. Specific computer system models may be incompatible with Windows Defender Credential Guard. 
+  This is not a comprehensive list. Check whether your product vendor, product version, or computer system, supports Windows Defender Credential Guard on systems that run Windows or specific versions of Windows. Specific computer system models may be incompatible with Windows Defender Credential Guard. 
 
   Microsoft encourages third-party vendors to contribute to this page by providing relevant product support information and by adding links to their own product support statements.
