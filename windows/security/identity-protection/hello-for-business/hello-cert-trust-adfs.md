@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 01/14/2021
 ms.reviewer: 
 ---
-# Prepare and Deploy Windows Server 2016 Active Directory Federation Services
+# Prepare and Deploy Windows Server 2016 Active Directory Federation Services - Certificate Trust
 
 **Applies to**
 
