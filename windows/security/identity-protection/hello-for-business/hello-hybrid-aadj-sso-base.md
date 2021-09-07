@@ -21,6 +21,7 @@ ms.reviewer:
 **Applies to**
 
 - Windows 10
+- Windows 11
 - Azure Active Directory joined
 - Hybrid Deployment
 - Key trust model
@@ -50,7 +51,7 @@ You can use the **dsregcmd.exe** command to determine if your device is register
 
 ### CRL Distribution Point (CDP)
 
-Certificates issued by a certificate authority can be revoked.  When a certificate authority revokes as certificate, it writes information about the certificate into a revocation list.  During certificate validation, Windows 10 consults the CRL distribution point within the certificate to get a list of revoked certificates.  Validation compares the current certificate with information in the certificate revocation list to determine if the certificate remains valid.  
+Certificates issued by a certificate authority can be revoked.  When a certificate authority revokes as certificate, it writes information about the certificate into a revocation list.  During certificate validation, Windows consults the CRL distribution point within the certificate to get a list of revoked certificates.  Validation compares the current certificate with information in the certificate revocation list to determine if the certificate remains valid.  
 
 ![Domain Controller Certificate with LDAP CDP.](images/aadj/Certificate-CDP.png)
 
@@ -75,7 +76,7 @@ Certificate authorities write CRL distribution points in certificates as they ar
 
 #### Why does Windows need to validate the domain controller certificate?
 
-Windows Hello for Business enforces the strict KDC validation security feature when authenticating from an Azure AD joined device to a domain. This enforcement imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business on an Azure AD joined device, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
+Windows Hello for Business enforces the strict KDC validation security feature when authenticating from an Azure AD joined device to a domain. This enforcement imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business on an Azure AD joined device, the Windows client validates the reply from the domain controller by ensuring all of the following are met:
 
 - The domain controller has the private key for the certificate provided.
 - The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorities**.
@@ -315,7 +316,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 7. Select **Required** next to **Use a Trusted Platform Module (TPM)**. By default, Windows Hello for Business prefers TPM 2.0 or falls backs to software. Choosing **Required** forces Windows Hello for Business to only use TPM 2.0 or TPM 1.2 and does not allow fall back to software-based keys.
 8. Enter the desired **Minimum PIN length** and **Maximum PIN length**.
     > [!IMPORTANT]
-    > The default minimum PIN length for Windows Hello for Business on Windows 10 is six.  Microsoft Intune defaults the minimum PIN length to four, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to six.
+    > The default minimum PIN length for Windows Hello for Business on Windows 10 and Windows 11 is six.  Microsoft Intune defaults the minimum PIN length to four, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to six.
 
 9. Select the appropriate configuration for the following settings:
     * **Lowercase letters in PIN**
@@ -325,7 +326,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
     * **Remember PIN history**
     
     > [!NOTE]
-    > The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passwords.  Making the PIN as complex and changed frequently as a password increases the likelihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows 10 to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concerned with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
+    > The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passwords.  Making the PIN as complex and changed frequently as a password increases the likelihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concerned with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
 
 10. Select **Yes** next to **Allow biometric authentication** if you want to allow users to use biometrics (fingerprint and/or facial recognition) to unlock the device. To further secure the use of biometrics, select **Yes** to **Use enhanced anti-spoofing, when available**.
 11. Select **No** to **Allow phone sign-in**. This feature has been deprecated.

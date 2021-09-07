@@ -22,6 +22,7 @@ ms.reviewer:
 **Applies to**
 
 - Windows 10, version 1703 or later
+- Windows 11
 - Hybrid Deployment
 - Certificate Trust
 
@@ -164,7 +165,7 @@ Sign-in to a certificate authority or management workstation with *Domain Admin*
 
 ### Creating Windows Hello for Business authentication certificate template
 
-During Windows Hello for Business provisioning, a Windows 10 client requests an authentication certificate from the Active Directory Federation Service, which requests an authentication certificate on behalf of the user. This task configures the Windows Hello for Business authentication certificate template. You set the name of the certificate template when configuring it.
+During Windows Hello for Business provisioning, a Windows client requests an authentication certificate from the Active Directory Federation Service, which requests an authentication certificate on behalf of the user. This task configures the Windows Hello for Business authentication certificate template. You set the name of the certificate template when configuring it.
 
 Sign-in to a certificate authority or management workstation with _Domain Admin equivalent_ credentials.
 

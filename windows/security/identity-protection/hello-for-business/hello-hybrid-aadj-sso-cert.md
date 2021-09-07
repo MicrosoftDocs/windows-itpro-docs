@@ -20,7 +20,9 @@ ms.reviewer:
 # Using Certificates for AADJ On-premises Single-sign On
 
 **Applies to:**
+
 - Windows 10
+- Windows 11
 - Azure Active Directory joined
 - Hybrid Deployment
 - Certificate trust
@@ -205,7 +207,7 @@ Sign-in to the issuing certificate authority or management workstations with _Do
 10. Click on the **Apply** to save changes and close the console.
 
 ### Create an Azure AD joined Windows Hello for Business authentication certificate template
-During Windows Hello for Business provisioning,  Windows 10 requests an authentication certificate from Microsoft Intune, which requests the authentication certificate on behalf of the user.  This task configures the Windows Hello for Business authentication certificate template.  You use the name of the certificate template when configuring the NDES Server.
+During Windows Hello for Business provisioning,  Windows requests an authentication certificate from Microsoft Intune, which requests the authentication certificate on behalf of the user.  This task configures the Windows Hello for Business authentication certificate template.  You use the name of the certificate template when configuring the NDES Server.
 
 Sign in a certificate authority or management workstations with _Domain Admin equivalent_ credentials.
 

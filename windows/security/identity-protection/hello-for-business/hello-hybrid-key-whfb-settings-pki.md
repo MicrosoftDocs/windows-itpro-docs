@@ -22,6 +22,7 @@ ms.reviewer:
 **Applies to**
 
 - Windows 10, version 1703 or later
+- Windows 11
 - Hybrid Deployment
 - Key trust
 

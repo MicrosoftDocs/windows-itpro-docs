@@ -20,6 +20,7 @@ ms.reviewer:
 
 **Applies to**
 -   Windows 10
+-   Windows 11
 -   Azure Active Directory joined
 -   Hybrid deployment
 

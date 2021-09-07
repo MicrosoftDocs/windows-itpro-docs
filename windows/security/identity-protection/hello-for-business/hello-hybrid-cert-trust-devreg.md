@@ -20,6 +20,7 @@ ms.reviewer:
 
 **Applies to**
 -  Windows 10, version 1703 or later
+-  Windows 11
 -  Hybrid deployment
 -  Certificate trust
 
@@ -147,7 +148,7 @@ The above PSH creates the following objects:
 ![Device Registration.](images/hybridct/device5.png) 
 
 ### Create Service Connection Point (SCP) in Active Directory  
-If you plan to use Windows 10 domain join (with automatic registration to Azure AD) as described here, execute the following commands to create a service connection point in AD DS  
+If you plan to use Windows domain join (with automatic registration to Azure AD) as described here, execute the following commands to create a service connection point in AD DS  
 1.  Open Windows PowerShell and execute the following:
 
     `PS C:>Import-Module -Name "C:\Program Files\Microsoft Azure Active Directory Connect\AdPrep\AdSyncPrep.psm1"` 
@@ -169,7 +170,7 @@ If you plan to use Windows 10 domain join (with automatic registration to Azure 
 
 Where the [AD connector account name] is the name of the account you configured in Azure AD Connect when adding your on-premises AD DS directory.
 
-The above commands enable Windows 10 clients to find the correct Azure AD domain to join by creating the serviceConnectionpoint object in AD DS.  
+The above commands enable Windows clients to find the correct Azure AD domain to join by creating the serviceConnectionpoint object in AD DS.  
 
 ### Prepare AD for Device Write Back   
 To ensure AD DS objects and containers are in the correct state for write back of devices from Azure AD, do the following.
