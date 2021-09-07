@@ -47,7 +47,7 @@ You need to install and configure additional infrastructure to provide Azure AD 
 - An existing Windows Server 2012 R2 or later Enterprise Certificate Authority
 - A Windows Server 2012 R2 domain joined server that hosts the Network Device Enrollment Services role
 
-### High Availaibilty
+### High Availability
 The Network Device Enrollment Services (NDES) server role acts as a certificate registration authority.  Certificate registration servers enroll certificates on behalf of the user.  Users request certificates from the NDES service rather than directly from the issuing certificate authority.
 
 The architecture of the NDES server prevents it from being clustered or load balanced for high availability.  To provide high availability, you need to install more than one identically configured NDES servers and use Microsoft Intune to load balance then (in round-robin fashion).
@@ -416,11 +416,11 @@ Sign-in a workstation with access equivalent to a _domain user_.
 
 6. Start **AADApplicationProxyConnectorInstaller.exe**.
 7. Read the license terms and then select **I agree to the license terms and conditions**.  Click **Install**.
-   ![Azure Application Proxy Connector.](images/aadjcert/azureappproxyconnectorinstall-01.png)
+   ![Azure Application Proxy Connector: license terms](images/aadjcert/azureappproxyconnectorinstall-01.png)
 8. Sign-in to Microsoft Azure with access equivalent to **Global Administrator**.
-   ![Azure Application Proxy Connector.](images/aadjcert/azureappproxyconnectorinstall-02.png)
+   ![Azure Application Proxy Connector: sign-in](images/aadjcert/azureappproxyconnectorinstall-02.png)
 9. When the installation completes. Read the information regarding outbound proxy servers.  Click **Close**.
-   ![Azure Application Proxy Connector.](images/aadjcert/azureappproxyconnectorinstall-03.png)
+   ![Azure Application Proxy Connector: read](images/aadjcert/azureappproxyconnectorinstall-03.png)
 10. Repeat steps 5 - 10 for each device that will run the Azure AD Application Proxy connector for Windows Hello for Business certificate deployments.
 
 #### Create a Connector Group
@@ -480,12 +480,12 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 1. Start **Internet Information Services (IIS) Manager** from **Administrative Tools**.
 2. Expand the node that has the name of the NDES server.  Expand **Sites** and select **Default Web Site**.
-   ![NDES IIS Console.](images/aadjcert/ndes-iis-console.png)
+   ![NDES IIS Console](images/aadjcert/ndes-iis-console.png)
 3. Click **Bindings...*** under **Actions**.  Click **Add**.
-   ![NDES IIS Console.](images/aadjcert/ndes-iis-bindings.png)
+   ![NDES IIS Console: Add](images/aadjcert/ndes-iis-bindings.png)
 4. Select **https** from **Type**. Confirm the value for **Port** is **443**.
 5. Select the certificate you previously enrolled from the **SSL certificate** list.  Select **OK**.
-   ![NDES IIS Console.](images/aadjcert/ndes-iis-bindings-add-443.png)
+   ![NDES IIS Console: Certificate List](images/aadjcert/ndes-iis-bindings-add-443.png)
 6. Select **http** from the **Site Bindings** list.  Click **Remove**.
 7. Click **Close** on the **Site Bindings** dialog box.
 8. Close **Internet Information Services (IIS) Manager**.
@@ -511,10 +511,10 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 A web page similar to the following should appear in your web browser.  If you do not see a similar page, or you get a **503 Service unavailable** message, ensure the NDES Service account has the proper user rights.  You can also review the application event log for events with the **NetworkDeviceEnrollmentSerice** source.
 
-![NDES IIS Console.](images/aadjcert/ndes-https-website-test-01.png)
+![NDES IIS Console: Source](images/aadjcert/ndes-https-website-test-01.png)
 
 Confirm the web site uses the server authentication certificate.
-![NDES IIS Console.](images/aadjcert/ndes-https-website-test-01-show-cert.png)
+![NDES IIS Console: Confirm](images/aadjcert/ndes-https-website-test-01-show-cert.png)
 
 
 ## Configure Network Device Enrollment Services to work with Microsoft Intune

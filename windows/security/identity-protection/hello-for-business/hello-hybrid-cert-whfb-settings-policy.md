@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 4/30/2021
 ms.reviewer: 
 ---
-# Configure Hybrid Azure AD joined Windows Hello for Business: Group Policy
+# Configure Hybrid Azure AD joined Windows Hello for Business - Group Policy
 
 **Applies to**
 -   Windows 10, version 1703 or later

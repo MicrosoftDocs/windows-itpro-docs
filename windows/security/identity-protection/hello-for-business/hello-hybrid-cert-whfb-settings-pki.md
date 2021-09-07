@@ -17,7 +17,7 @@ ms.date: 4/30/2021
 ms.reviewer: 
 ---
 
-# Configure Hybrid Azure AD joined Windows Hello for Business: Public Key Infrastructure
+# Configure Hybrid Azure AD joined Windows Hello for Busines - Public Key Infrastructure
 
 **Applies to**
 

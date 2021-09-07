@@ -17,7 +17,7 @@ ms.date: 4/30/2021
 ms.reviewer: 
 ---
 
-# Configure Hybrid Azure AD joined Windows Hello for Business: Directory Synchronization
+# Configure Hybrid Azure AD joined Windows Hello for Business- Directory Synchronization
 
 **Applies to**
 - Windows 10, version 1703 or later

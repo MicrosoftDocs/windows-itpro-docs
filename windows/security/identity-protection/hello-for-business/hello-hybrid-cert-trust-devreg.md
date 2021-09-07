@@ -115,14 +115,14 @@ When you are ready to install, follow the **Configuring federation with AD FS** 
 ### Create AD objects for AD FS Device Authentication  
 If your AD FS farm is not already configured for Device Authentication (you can see this in the AD FS Management console under Service -> Device Registration), use the following steps to create the correct AD DS objects and configuration.  
 
-![Device Registration.](images/hybridct/device1.png)
+![Device Registration: AD FS](images/hybridct/device1.png)
 
 > [!NOTE]
 > The below commands require Active Directory administration tools, so if your federation server is not also a domain controller, first install the tools using step 1 below.  Otherwise you can skip step 1.  
 
 1.  Run the **Add Roles & Features** wizard and select feature **Remote Server Administration Tools** -> **Role Administration Tools** -> **AD DS and AD LDS Tools** -> Choose both the **Active Directory module for Windows PowerShell** and the **AD DS Tools**.
 
-![Device Registration.](images/hybridct/device2.png)
+![Device Registration: Overview](images/hybridct/device2.png)
 
 2. On your AD FS primary server, ensure you are logged in as AD DS user with enterprise administrator privileges and open an elevated Windows PowerShell prompt.  Then, run the following commands:  
 
@@ -133,7 +133,7 @@ If your AD FS farm is not already configured for Device Authentication (you can 
 > [!NOTE]
 > If your AD FS service is configured to use a GMSA account, enter the account name in the format "domain\accountname$"
 
-![Device Registration.](images/hybridct/device3.png)  
+![Device Registration: Domain](images/hybridct/device3.png)  
 
 The above PSH creates the following objects:  
 
@@ -141,11 +141,11 @@ The above PSH creates the following objects:
 - Device Registration Service container and object under Configuration --> Services --> Device Registration Configuration  
 - Device Registration Service DKM container and object under Configuration --> Services --> Device Registration Configuration  
 
-![Device Registration.](images/hybridct/device4.png)  
+![Device Registration: Tests](images/hybridct/device4.png)  
 
 4. Once this is done, you will see a successful completion message.
 
-![Device Registration.](images/hybridct/device5.png) 
+![Device Registration: Completion](images/hybridct/device5.png) 
 
 ### Create Service Connection Point (SCP) in Active Directory  
 If you plan to use Windows domain join (with automatic registration to Azure AD) as described here, execute the following commands to create a service connection point in AD DS  
@@ -156,13 +156,13 @@ If you plan to use Windows domain join (with automatic registration to Azure AD)
 > [!NOTE]
 > If necessary, copy the AdSyncPrep.psm1 file from your Azure AD Connect server.  This file is located in Program Files\Microsoft Azure Active Directory Connect\AdPrep
 
-![Device Registration.](images/hybridct/device6.png)   
+![Device Registration AdPrep](images/hybridct/device6.png)   
 
 2. Provide your Azure AD global administrator credentials  
 
     `PS C:>$aadAdminCred = Get-Credential`
 
-![Device Registration.](images/hybridct/device7.png) 
+![Device Registration: Credential](images/hybridct/device7.png) 
 
 3. Run the following PowerShell command 
 
@@ -239,6 +239,7 @@ The definition helps you to verify whether the values are present or if you need
 
 **`http://schemas.microsoft.com/ws/2012/01/accounttype`** - This claim must contain a value of **DJ**, which identifies the device as a domain-joined computer. In AD FS, you can add an issuance transform rule that looks like this:
 
+```
     @RuleName = "Issue account type for domain-joined computers"
     c:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
@@ -249,11 +250,13 @@ The definition helps you to verify whether the values are present or if you need
         Type = "http://schemas.microsoft.com/ws/2012/01/accounttype", 
         Value = "DJ"
     );
+```
 
 #### Issue objectGUID of the computer account on-premises
 
 **`http://schemas.microsoft.com/identity/claims/onpremobjectguid`** - This claim must contain the **objectGUID** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
 
+```
     @RuleName = "Issue object GUID for domain-joined computers"
     c1:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
@@ -271,11 +274,13 @@ The definition helps you to verify whether the values are present or if you need
         query = ";objectguid;{0}", 
         param = c2.Value
     );
+```
 
 #### Issue objectSID of the computer account on-premises
 
 **`http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid`** - This claim must contain the **objectSid** value of the on-premises computer account. In AD FS, you can add an issuance transform rule that looks like this:
 
+```
     @RuleName = "Issue objectSID for domain-joined computers"
     c1:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
@@ -288,11 +293,13 @@ The definition helps you to verify whether the values are present or if you need
         Issuer =~ "^(AD AUTHORITY|SELF AUTHORITY|LOCAL AUTHORITY)$"
     ]
     => issue(claim = c2);
+```
 
 #### Issue issuerID for computer when multiple verified domain names in Azure AD
 
 **`http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid`** - This claim must contain the Uniform Resource Identifier (URI) of any of the verified domain names that connect with the on-premises federation service (AD FS or 3rd party) issuing the token. In AD FS, you can add issuance transform rules that look like the ones below in that specific order after the ones above. Please note that one rule to explicitly issue the rule for users is necessary. In the rules below, a first rule identifying user vs. computer authentication is added.
 
+```
     @RuleName = "Issue account type with the value User when it is not a computer"
 
     NOT EXISTS(
@@ -334,7 +341,7 @@ The definition helps you to verify whether the values are present or if you need
         Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", 
         Value = "http://<verified-domain-name>/adfs/services/trust/"
     );
-
+```
 
 In the claim above,
 
@@ -342,12 +349,13 @@ In the claim above,
 - `<verified-domain-name>` is a placeholder you need to replace with one of your verified domain names in Azure AD
 
 For more details about verified domain names, see [Add a custom domain name to Azure Active Directory](/azure/active-directory/active-directory-add-domain).  
-To get a list of your verified company domains, you can use the [Get-MsolDomain](/powershell/module/msonline/get-msoldomain?view=azureadps-1.0) cmdlet. 
+To get a list of your verified company domains, you can use the [Get-MsolDomain](/powershell/module/msonline/get-msoldomain?view=azureadps-1.0&preserve-view=true) cmdlet.
 
 #### Issue ImmutableID for computer when one for users exist (e.g. alternate login ID is set)
 
 **`http://schemas.microsoft.com/LiveID/Federation/2008/05/ImmutableID`** - This claim must contain a valid value for computers. In AD FS, you can create an issuance transform rule as follows:
 
+```
     @RuleName = "Issue ImmutableID for computers"
     c1:[
         Type == "http://schemas.microsoft.com/ws/2008/06/identity/claims/groupsid", 
@@ -365,11 +373,13 @@ To get a list of your verified company domains, you can use the [Get-MsolDomain]
         query = ";objectguid;{0}", 
         param = c2.Value
     );
+```
 
 #### Helper script to create the AD FS issuance transform rules
 
 The following script helps you with the creation of the issuance transform rules described above.
 
+```
     $multipleVerifiedDomainNames = $false
     $immutableIDAlreadyIssuedforUsers = $false
     $oneOfVerifiedDomainNames = 'example.com'   # Replace example.com with one of your verified domains
@@ -488,9 +498,9 @@ The following script helps you with the creation of the issuance transform rules
     $crSet = New-ADFSClaimRuleSet -ClaimRule $updatedRules 
 
     Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $crSet.ClaimRulesString 
+```
 
-
-#### Remarks 
+#### Remarks
 
 - This script appends the rules to the existing rules. Do not run the script twice because the set of rules would be added twice. Make sure that no corresponding rules exist for these claims (under the corresponding conditions) before running the script again.
 
@@ -518,7 +528,7 @@ For your reference, below is a comprehensive list of the AD DS devices, containe
 - Container CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;
 - Container Device Registration Service DKM under the above container
 
-![Device Registration.](images/hybridct/device8.png) 
+![Device Registration: Container](images/hybridct/device8.png) 
 
 - object of type serviceConnectionpoint at CN=&lt;guid&gt;, CN=Device Registration Configuration,CN=Services,CN=Configuration,DC=&lt;domain&gt;  
   - read/write access to the specified AD connector account name on the new object 
