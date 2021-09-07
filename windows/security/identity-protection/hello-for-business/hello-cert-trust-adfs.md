@@ -1,6 +1,6 @@
 ---
-title: Prepare & Deploy Windows AD FS certificate trust (Windows Hello for Business)
-description: How to Prepare and Deploy Windows Server 2016 Active Directory Federation Services (AD FS) for Windows Hello for Business, using certificate trust.
+title: Prepare and Deploy Windows AD FS certificate trust (Windows Hello for Business)
+description: Learn how to Prepare and Deploy Windows Server 2016 Active Directory Federation Services (AD FS) for Windows Hello for Business, using certificate trust.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -124,7 +124,7 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
 8. Click **Next** on the **Active Directory Federation Service** page.
 9. Click **Install** to start the role installation.
 
-## Review
+## Review & validate
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 
@@ -266,7 +266,7 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials. Th
 3. In the details pane, click **Configure Device Registration**.
 4. In the **Configure Device Registration** dialog, click **OK**.
 
-## Review
+## Review to validate
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 * Confirm you followed the correct procedures based on the domain controllers used in your deployment. 

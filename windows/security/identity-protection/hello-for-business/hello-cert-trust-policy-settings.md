@@ -16,9 +16,10 @@ localizationpriority: medium
 ms.date: 08/20/2018
 ms.reviewer: 
 ---
-# Configure Windows Hello for Business Policy settings
+# Configure Windows Hello for Business Policy settings - Certificate Trust
 
 **Applies to**
+
 - Windows 10, version 1703 or later
 - Windows 11
 - On-premises deployment

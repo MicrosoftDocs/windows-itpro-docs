@@ -13,7 +13,7 @@ ms.reviewer:
 manager: dansimp
 ms.topic: article
 ---
-# How Windows Hello for Business works
+# How Windows Hello for Business works in Windows devices
 
 **Applies to**
 

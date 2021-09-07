@@ -49,7 +49,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 [Return to top](#windows-hello-for-business-provisioning)
 ## Azure AD joined provisioning in a Federated environment
-![Azure AD joined provisioning in a Managed environment.](images/howitworks/prov-aadj-federated.png)
+![Azure AD joined provisioning in Managed environment.](images/howitworks/prov-aadj-federated.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
