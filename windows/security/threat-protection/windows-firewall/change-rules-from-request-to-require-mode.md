@@ -1,5 +1,5 @@
 ---
-title: Change Rules from Request to Require Mode (Windows 10)
+title: Change Rules from Request to Require Mode (Windows)
 description: Learn how to convert a rule from request to require mode and apply the modified GPOs to the client devices.
 ms.assetid: ad969eda-c681-48cb-a2c4-0b6cae5f4cff
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 After you confirm that network traffic is being correctly protected by using IPsec, you can change the rules for the domain isolation and encryption zones to require, instead of request, authentication. Do not change the rules for the boundary zone; they must stay in request mode so that devices in the boundary zone can continue to accept connections from devices that are not part of the isolated domain.
 

@@ -1,5 +1,5 @@
 ---
-title: Basic Firewall Policy Design (Windows 10)
+title: Basic Firewall Policy Design (Windows)
 description: Protect the devices in your organization from unwanted network traffic that gets through the perimeter defenses by using basic firewall policy design.
 ms.assetid: 6f7af99e-6850-4522-b7f5-db98e6941418
 ms.reviewer: 
@@ -20,8 +20,9 @@ ms.technology: mde
 # Basic Firewall Policy Design
 
 **Applies to**
-- Windows 10
-- Windows Server 2016
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
 Many organizations have a network perimeter firewall that is designed to prevent the entry of malicious traffic in to the organization's network, but do not have a host-based firewall enabled on each device in the organization.
 
@@ -37,7 +38,7 @@ Many network administrators do not want to tackle the difficult task of determin
 
   For example, when you install a server role, the appropriate firewall rules are created and enabled automatically.
 
-- For other standard network behavior, the predefined rules that are built into Windows 10, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, and Windows 7 can easily be configured in a GPO and deployed to the devices in your organization.
+- For other standard network behavior, the predefined rules that are built into Windows 11, Windows 10, Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 8, and Windows 7 can easily be configured in a GPO and deployed to the devices in your organization.
 
   For example, by using the predefined groups for Core Networking and File and Printer Sharing you can easily configure GPOs with rules for those frequently used networking protocols.
 

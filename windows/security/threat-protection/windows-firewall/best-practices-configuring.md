@@ -20,9 +20,10 @@ ms.technology: mde
 
 **Applies to**
 
--   Windows operating systems including Windows 10
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
--   Windows Server Operating Systems
 
 Windows Defender Firewall with Advanced Security provides host-based, two-way
 network traffic filtering and blocks unauthorized network traffic flowing into

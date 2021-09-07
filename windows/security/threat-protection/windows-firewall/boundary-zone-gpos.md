@@ -1,5 +1,5 @@
 ---
-title: Boundary Zone GPOs (Windows 10)
+title: Boundary Zone GPOs (Windows)
 description: Learn about GPOs to create that must align with the group you create for the boundary zone in Windows Defender Firewall with Advanced Security.
 ms.assetid: 1ae66088-02c3-47e4-b7e8-74d0b8f8646e
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 All the devices in the boundary zone are added to the group CG\_DOMISO\_Boundary. You must create multiple GPOs to align with this group, one for each operating system that you have in your boundary zone. This group is granted Read and Apply permissions in Group Policy on the GPOs described in this section.
 
