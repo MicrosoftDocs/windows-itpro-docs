@@ -5,12 +5,13 @@ ms.assetid:
 ms.reviewer: 
 manager: dougeby
 ms.author: mandia
+ms.reviewer: ericpapa
 ms.prod: w11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/02/2021
+ms.date: 09/07/2021
 ms.localizationpriority: medium
 ---
 
@@ -58,7 +59,7 @@ For more general information, see [Configuration service provider reference](../
 
 ## Untested policies
 
-- [Start/HideFrequentlyUsedApps]((../client-management/mdm/policy-csp-start.md#start-hidefrequentlyusedapps)): What does this configure on Windows 10? How is it different than ShowOrHideMostUsedApps? 
+- [Start/HideFrequentlyUsedApps](../client-management/mdm/policy-csp-start.md#start-hidefrequentlyusedapps): What does this configure on Windows 10? How is it different than ShowOrHideMostUsedApps? 
 
 ## Existing CSP policies that don't support Windows 11
 

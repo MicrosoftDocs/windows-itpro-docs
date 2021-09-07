@@ -5,12 +5,13 @@ ms.assetid:
 ms.reviewer: 
 manager: dougeby
 ms.author: mandia
+ms.reviewer: ericpapa
 ms.prod: w11
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/02/2021
+ms.date: 09/07/2021
 ms.localizationpriority: medium
 ---
 
@@ -91,7 +92,7 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
 
 ### Get the pinnedList JSON syntax
 
-1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code. For more information, see [edit JSON with Visual Studio Code](https://code.visualstudio.com/docs/languages/json).
+1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code or the Notepad app. For more information, see [edit JSON with Visual Studio Code](https://code.visualstudio.com/docs/languages/json).
 2. In the file, you see the `pinnedList` section. This section includes all the apps that are pinned. Copy the syntax. You'll use it in the next section.
 
     In the following example, you see that Microsoft Edge, Microsoft Word, the Microsoft Store app, and Notepad are pinned:
