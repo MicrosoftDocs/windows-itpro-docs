@@ -2,16 +2,6 @@
 - name: Windows security
   href: index.yml
   expanded: true
-- name: Security foundations
-  items: 
-    - name: FIPS 140-2 Validation
-      href: threat-protection/fips-140-validation.md
-    - name: Common Criteria Certifications
-      href: threat-protection/windows-platform-common-criteria.md
-    - name: Microsoft Security Development Lifecycle
-      href: threat-protection/msft-security-dev-lifecycle.md
-    - name: Microsoft Bug Bounty Program
-      href: threat-protection/microsoft-bug-bounty-program.md
 - name: Hardware security
   items: 
     - name: Trusted Platform Module
@@ -313,6 +303,16 @@
                   href: identity-protection/virtual-smart-cards/virtual-smart-card-evaluate-security.md
             - name: Tpmvscmgr
               href: identity-protection/virtual-smart-cards/virtual-smart-card-tpmvscmgr.md
+- name: Security foundations
+  items: 
+    - name: FIPS 140-2 Validation
+      href: threat-protection/fips-140-validation.md
+    - name: Common Criteria Certifications
+      href: threat-protection/windows-platform-common-criteria.md
+    - name: Microsoft Security Development Lifecycle
+      href: threat-protection/msft-security-dev-lifecycle.md
+    - name: Microsoft Bug Bounty Program
+      href: threat-protection/microsoft-bug-bounty-program.md
 - name: Privacy controls
   items:
   - name: Windows Privacy controls
