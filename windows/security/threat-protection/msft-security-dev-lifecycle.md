@@ -28,4 +28,4 @@ The Microsoft SDL is based on three core concepts:
 
 To learn more about the SDL, visit the [Security Engineering site](https://www.microsoft.com/en-us/securityengineering/sdl).
 
-And, download the [Simplified Implementation of the Microsoft SDL whitepaper](http://go.microsoft.com/?linkid=9708425).
+And, download the [Simplified Implementation of the Microsoft SDL whitepaper](https://go.microsoft.com/?linkid=9708425).
