@@ -8,7 +8,7 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.author: greglin
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ---
 # Windows 10 features we’re no longer developing
@@ -26,6 +26,7 @@ The features described below are no longer being actively developed, and might b
 
 |Feature    |  Details and mitigation  | Announced in version |
 | ----------- | --------------------- | ---- |
+| BitLocker To Go Reader | Reading of BitLocker-protected removable drives ([BitLocker To Go](/windows/security/information-protection/bitlocker/bitlocker-to-go-faq)) from Windows XP or Windows Vista in later operating systems is deprecated and might be removed in a future release of Windows 10/11.<br>The following items might not be available in a future release of Windows client:<br>- ADMX policy: **Allow access to BitLocker-protected removable data drives from earlier versions of Windows**<br>- Command line parameter: [manage-bde -DiscoveryVolumeType](/windows-server/administration/windows-commands/manage-bde-on) (-dv)<br>- Catalog file: **c:\windows\BitLockerDiscoveryVolumeContents**<br>- BitLocker 2 Go Reader app: **bitlockertogo.exe** and associated files  | 21H1 |
 | Internet Explorer (IE) 11 | The IE11 desktop application will end support for certain operating systems starting June 15, 2022. For more information, see [Internet Explorer 11](/lifecycle/products/internet-explorer-11). | 21H1 |
 | Personalization roaming | Roaming of Personalization settings (including wallpaper, slideshow, accent colors, and lock screen images) is no longer being developed and might be removed in a future release. | 21H1 |
 | Windows Management Instrumentation Command line (WMIC) tool. | The WMIC tool is deprecated in Windows 10, version 21H1 and the 21H1 semi-annual channel release of Windows Server. This tool is superseded by [Windows PowerShell for WMI](/powershell/scripting/learn/ps101/07-working-with-wmi). Note: This deprecation only applies to the [command-line management tool](/windows/win32/wmisdk/wmic). WMI itself is not affected. | 21H1 |
