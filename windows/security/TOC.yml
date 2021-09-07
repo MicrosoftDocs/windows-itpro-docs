@@ -200,7 +200,7 @@
    - name: Threat protection
      items: 
     - name: Microsoft Defender Antivirus
-      href: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows.md
+      href: microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows.md
     - name: Attack surface reduction
       href:
     - name: Tamper protection
