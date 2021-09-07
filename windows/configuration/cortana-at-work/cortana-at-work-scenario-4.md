@@ -1,6 +1,6 @@
 ---
-title: Use Cortana at work to find your upcoming meetings (Windows 10)
-description: A test scenario about how to use Cortana at work to find your upcoming meetings.
+title: Use Cortana at work to find your upcoming meetings (Windows)
+description: A test scenario on how to use Cortana at work to find your upcoming meetings.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -12,7 +12,7 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Test scenario 4 - Use Cortana to find free time on your calendar
+# Test scenario 4 - Use Cortana to find free time on your calendar for your upcoming meetings.
 
 This scenario helps you find out if a time slot is free on your calendar.
 
