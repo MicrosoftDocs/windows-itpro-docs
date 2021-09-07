@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 08/19/2018
 ms.reviewer: 
 ---
-# Prepare and Deploy Windows Server 2016 Active Directory Federation Services
+# Prepare and Deploy Windows Server 2016 Active Directory Federation Services with Key Trust
 
 **Applies to**
 -   Windows 10, version 1703 or later

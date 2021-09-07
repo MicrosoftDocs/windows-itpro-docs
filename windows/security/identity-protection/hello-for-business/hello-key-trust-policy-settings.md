@@ -16,7 +16,7 @@ localizationpriority: medium
 ms.date: 08/19/2018
 ms.reviewer: 
 ---
-# Configure Windows Hello for Business Policy settings
+# Configure Windows Hello for Business Policy settings - Key Trust
 
 **Applies to**
 -   Windows 10, version 1703 or later
