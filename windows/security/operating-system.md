@@ -17,7 +17,7 @@ Security and privacy depend on an operating system that guards your system and i
 
 The following table summarizes the operating system security features and capabilities in Windows 11:<br/><br/>
 
-| Area | Features & Capabilities |
+| Security Measures | Features & Capabilities |
 |:---|:---|
 | System security | Trusted Boot (includes Secure Boot and Measured Boot) <br/>Cryptography and certificate management <br/>Windows Security app |
 | Encryption and data protection | BitLocker<br/>Encryption |
