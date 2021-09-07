@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 4616(S): The system time was changed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4616.png" alt="Event 4616 illustration" width="522" height="518" hspace="10" align="top" />

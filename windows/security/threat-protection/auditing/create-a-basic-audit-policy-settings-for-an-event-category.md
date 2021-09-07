@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
 # Create a basic audit policy for an event category
 
-**Applies to**
--   Windows 10
 
 By defining auditing settings for specific event categories, you can create an auditing policy that suits the security needs of your organization. On devices that are joined to a domain, auditing settings for the event categories are undefined by default. On domain controllers, auditing is turned on by default.
 

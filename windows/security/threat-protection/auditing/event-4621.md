@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -16,9 +16,6 @@ ms.technology: mde
 
 # 4621(S): Administrator recovered system from CrashOnAuditFail.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event is logged after a system reboots following [CrashOnAuditFail](/previous-versions/windows/it-pro/windows-2000-server/cc963220(v=technet.10)?f=255&MSPPError=-2147217396). It generates when CrashOnAuditFail = 2.
