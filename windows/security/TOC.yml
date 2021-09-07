@@ -37,6 +37,8 @@
      href: operating-system.md
    - name: System security   
      items:
+     - name: Trusted Boot
+       href: os-security/trusted-boot.md
      - name: Secure the Windows 10 boot process
        href: information-protection/secure-the-windows-10-boot-process.md
    - name: Encryption and data protection
