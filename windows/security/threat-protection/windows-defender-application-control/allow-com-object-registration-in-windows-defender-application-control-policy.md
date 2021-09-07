@@ -104,8 +104,7 @@ Date: 11/11/2020 1:18:11 PM<br/>
 Event ID: 8036<br/>
 Task Category: None<br/>
 Level: Error<br/>
-
-Keywords<br/>
+Keywords:<br/>
 User: S-1-5-21-3340858017-3068726007-3466559902-3647<br/>
 Computer: contoso.com<br/>
 Description: "{f8d253d9-89a4-4daa-87b6-1168369f0b21}" was prevented from running due to Config CI policy.<br/>
