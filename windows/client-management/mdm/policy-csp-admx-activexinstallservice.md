@@ -69,7 +69,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls the installation of ActiveX controls for sites in Trusted zone.
+This policy setting controls the installation of ActiveX controls for sites in Trusted zone.
 
 If you enable this policy setting, ActiveX controls are installed according to the settings defined by this policy setting.
 
