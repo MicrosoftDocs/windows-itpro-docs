@@ -32,8 +32,9 @@
     - name: Kernel DMA Protection
       href: information-protection/kernel-dma-protection-for-thunderbolt.md
 - name: Operating system security
-  href: operating-system.md
   items: 
+   - name: Overview
+     href: operating-system.md
    - name: System security   
      items:
      - name: Secure the Windows 10 boot process
