@@ -35,7 +35,7 @@ The [Microsoft Component Object Model (COM)](/windows/desktop/com/the-component-
 
 ### COM object configurability in WDAC policy
 
-Prior to the Windows 10 1903 update, Windows Defender Application Control (WDAC) enforced a built-in allowlist for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where additional COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
+Prior to the Windows 10 1903 update, Windows Defender Application Control (WDAC) enforced a built-in allow list for COM object registration. While this mechanism works for most common application usage scenarios, customers have provided feedback that there are cases where additional COM objects need to be allowed. The 1903 update to Windows 10 introduces the ability to specify allowed COM objects via their GUID in the WDAC policy.
 
 **NOTE**: To add this functionality to other versions of Windows 10, you can install the following or later updates:
 
@@ -48,19 +48,19 @@ Prior to the Windows 10 1903 update, Windows Defender Application Control (WDAC)
 ### Get COM object GUID
 
 Get GUID of application to allow in one of the following ways:
-- Finding block event in Event Viewer (Application and Service Logs > Microsoft > Windows > AppLocker > MSI and Script) and extracting GUID
-- Creating audit policy (using New-CIPolicy –Audit), potentially with specific provider, and use info from block events to get GUID
+- Finding a block event in Event Viewer (Application and Service Logs > Microsoft > Windows > AppLocker > MSI and Script), and extracting GUID
+- Creating an audit policy (using New-CIPolicy –Audit), potentially with a specific provider, and use the info from the block events to get the GUID
 
 ### Author policy setting to allow or deny COM object GUID
 
 Three elements:
 - Provider: platform on which code is running (values are  Powershell, WSH, IE, VBA, MSI, or a wildcard “AllHostIds”)
-- Key: GUID for the program you with to run, in the format Key="{33333333-4444-4444-1616-161616161616}"
+- Key: GUID for the program you wish to run, in the format Key="{33333333-4444-4444-1616-161616161616}"
 - ValueName: needs to be set to "EnterpriseDefinedClsId"
 
 One attribute:
-- Value: needs to be “true” for allow and “false” for deny
-  - Note that deny only works in base policies, not supplemental
+- Value: needs to be “true” for allow and “false” for deny<br/>
+  **Note**: Deny only works in base policies, not supplemental policies
 - The setting needs to be placed in the order of ASCII values (first by Provider, then Key, then ValueName)
 
 ### Examples
@@ -98,17 +98,17 @@ Example 3: Allows a specific COM object to register in PowerShell
 
 Given the following example of an error in the Event Viewer (**Application and Service Logs** > **Microsoft** > **Windows** > **AppLocker** > **MSI and Script**):
 
-Log Name:      Microsoft-Windows-AppLocker/MSI and Script
-Source:        Microsoft-Windows-AppLocker
-Date:          11/11/2020 1:18:11 PM
-Event ID:      8036
-Task Category: None
-Level:         Error
-Keywords:
-User:          S-1-5-21-3340858017-3068726007-3466559902-3647
-Computer:      contoso.com
-Description:
-{f8d253d9-89a4-4daa-87b6-1168369f0b21} was prevented from running due to Config CI policy.
+Log Name: Microsoft-Windows-AppLocker/MSI and Script<br/>
+Source: Microsoft-Windows-AppLocker<br/>
+Date: 11/11/2020 1:18:11 PM<br/>
+Event ID: 8036<br/>
+Task Category: None<br/>
+Level: Error<br/>
+
+Keywords<br/>
+User: S-1-5-21-3340858017-3068726007-3466559902-3647<br/>
+Computer: contoso.com<br/>
+Description: "{f8d253d9-89a4-4daa-87b6-1168369f0b21}" was prevented from running due to Config CI policy.<br/>
 
 Event XML:
 
@@ -122,7 +122,7 @@ Event XML:
     <Task>0</Task>
     <Opcode>0</Opcode>
     <Keywords>0x4000000000000000</Keywords>
-    <TimeCreated SystemTime="2020-11-11T19:18:11.4029179Z" />
+    <TimeCreated SystemTime="2020-11-11T13:18:11.4029179Z" />
     <EventRecordID>819347</EventRecordID>
     <Correlation ActivityID="{61e3e871-adb0-0047-c9cc-e761b0add601}" />
     <Execution ProcessID="21060" ThreadID="23324" />
@@ -132,7 +132,7 @@ Event XML:
   </System>
   <EventData>
     <Data Name="IsApproved">false</Data>
-    <Data Name="CLSID">{f8d253d9-89a4-4daa-87b6-1168369f0b21}</Data>
+    <Data Name="CLSID">"{f8d253d9-89a4-4daa-87b6-1168369f0b21}"</Data>
   </EventData>
 </Event>
 ```
@@ -143,14 +143,14 @@ To add this CLSID to the existing policy, use the following steps:
 2. Copy and edit this command, then run it from the admin PowerShell ISE. Consider the policy name to be `WDAC_policy.xml`.
 
 ```PowerShell
-PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\WDAC_policy.xml -Key 8856f961-340a-11d0-a96b-00c04fd705a2 -Provider WSH -Value True -ValueName EnterpriseDefinedClsId -ValueType Boolean
+PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\WDAC_policy.xml -Key "{f8d253d9-89a4-4daa-87b6-1168369f0b21}" -Provider WSH -Value true -ValueName EnterpriseDefinedClsId -ValueType Boolean
 ```
 
 Once the command has been run, you will find that the following section is added to the policy XML.
 
 ```XML
   <Settings>
-    <Setting Provider="WSH" Key="8856f961-340a-11d0-a96b-00c04fd705a2" ValueName="EnterpriseDefinedClsId">
+    <Setting Provider="WSH" Key="{f8d253d9-89a4-4daa-87b6-1168369f0b21}" ValueName="EnterpriseDefinedClsId">
       <Value>
         <Boolean>true</Boolean>
       </Value>
