@@ -17,28 +17,14 @@ Security and privacy depend on an operating system that guards your system and i
 
 The operating system security features in Windows 11 include:
 
-- System security
-    - Trusted Boot (includes Secure Boot and Measured Boot)
-    - Cryptography and certificate management
-    - Windows Security app
-- Encryption and data protection
-    - BitLocker
-    - Encryption
-- Network security
-    - Virtual Private Networks (VPNs)
-    - Windows Defender Firewall
-    - Bluetooth
-    - DSN security
-    - Windows Wi-Fi
-    - Transport Layer Security (TLS)
-- Protection from viruses and threats
-    - Microsoft Defender Antivirus
-    - Attack surface reduction
-    - Tamper protection
-    - Network protection
-    - Controlled folder access
-    - Exploit protection
-    - Microsoft Defender for Endpoint
+| Area | Features & Capabilities |
+|:---|:---|
+| System security | Trusted Boot (includes Secure Boot and Measured Boot) <br/>Cryptography and certificate management <br/>Windows Security app |
+| Encryption and data protection | BitLocker<br/>Encryption |
+| Network security | Virtual Private Networks (VPNs)<br/>Windows Defender Firewall<br/>Bluetooth<br/>DSN security<br/>Windows Wi-Fi<br/>Transport Layer Security (TLS) |
+| Protection from viruses and threats | Microsoft Defender Antivirus<br/>Attack surface reduction<br/>Tamper protection<br/>Network protection<br/>Controlled folder access<br/>Exploit protection<br/>Microsoft Defender for Endpoint |
+
+
 
 
 
