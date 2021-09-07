@@ -1,5 +1,5 @@
 ---
-title: Understand AppLocker rules and enforcement setting inheritance in Group Policy (Windows 10)
+title: Understand AppLocker rules and enforcement setting inheritance in Group Policy (Windows)
 description: This topic for the IT professional describes how application control policies configured in AppLocker are applied through Group Policy.
 ms.assetid: c1c5a3d3-540a-4698-83b5-0dab5d27d871
 ms.reviewer: 
@@ -21,12 +21,17 @@ ms.technology: mde
 # Understand AppLocker rules and enforcement setting inheritance in Group Policy
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes how application control policies configured in AppLocker are applied through Group Policy.
 
-Rule enforcement is applied only to collections of rules, not individual rules. AppLocker divides the rules into the following collections: executable files, Windows Installer files, scripts, packaged apps and packaged app installers, and DLL files. The options for rule enforcement are **Not configured**, **Enforce rules**, or **Audit only**. Together, all AppLocker rule collections compose the application control policy, or AppLocker policy.
+Rule enforcement is applied only to collections of rules, not individual rules. AppLocker divides the rules into the following collections: executable files, Windows Installer files, scripts, packaged apps, and packaged app installers, and DLL files. The options for rule enforcement are **Not configured**, **Enforce rules**, or **Audit only**. Together, all AppLocker rule collections compose the application control policy, or AppLocker policy.
 
 Group Policy merges AppLocker policy in two ways:
 
@@ -44,7 +49,7 @@ Because a computer's effective policy includes rules from each linked GPO, dupli
 
 The following figure demonstrates how AppLocker rule enforcement is applied through linked GPOs.
 
-![applocker rule enforcement inheritance chart](images/applocker-plan-inheritance.gif)
+![applocker rule enforcement inheritance chart.](images/applocker-plan-inheritance.gif)
 
 In the preceding illustration, note that all GPOs linked to Contoso are applied in order as configured. The rules that are not configured are also applied. For example, the result of the Contoso and Human Resources GPOs is 33 rules enforced, as shown in the client HR-Term1. The Human Resources GPO contains 10 non-configured rules. When the rule collection is configured for **Audit only**, no rules are enforced.
 

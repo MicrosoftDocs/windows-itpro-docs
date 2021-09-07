@@ -1,5 +1,5 @@
 ---
-title: Working with AppLocker policies (Windows 10)
+title: Working with AppLocker policies (Windows)
 description: This topic for IT professionals provides links to procedural topics about creating, maintaining, and testing AppLocker policies.
 ms.assetid: 7062d2e0-9cbb-4cb8-aa8c-b24945c3771d
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Working with AppLocker policies
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals provides links to procedural topics about creating, maintaining, and testing AppLocker policies.
 

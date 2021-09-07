@@ -120,7 +120,7 @@ In the core network, a centralized KMS solution is recommended. You can also use
 
 A typical core network that includes a KMS host is shown in Figure 1.
 
-![Typical core network](../images/volumeactivationforwindows81-01.jpg)
+![Typical core network.](../images/volumeactivationforwindows81-01.jpg)
 
 **Figure 1**. Typical core network
 
@@ -140,7 +140,7 @@ If the isolated network cannot communicate with the core network’s KMS server,
 
 If the network is fully isolated, MAK-independent activation would be the recommended choice, perhaps using the telephone option. But VAMT proxy activation may also be possible. You can also use MAKs to activate new computers during setup, before they are placed in the isolated network.
 
-![New KMS host in an isolated network](../images/volumeactivationforwindows81-02.jpg)
+![New KMS host in an isolated network.](../images/volumeactivationforwindows81-02.jpg)
 
 **Figure 2**. New KMS host in an isolated network
 
@@ -222,7 +222,7 @@ The flow of KMS activation is shown in Figure 3, and it follows this sequence:
 7.  If the KMS host has a KMS host key that matches the products in the GVLK, the KMS host sends a single packet back to the client. This packet contains a count of the number of computers that have requested activation from this KMS host.
 8.  If the count exceeds the activation threshold for the product that is being activated, the client is activated. If the activation threshold has not yet been met, the client will try again.
 
-![KMS activation flow](../images/volumeactivationforwindows81-03.jpg)
+![KMS activation flow.](../images/volumeactivationforwindows81-03.jpg)
 
 **Figure 3**. KMS activation flow
 

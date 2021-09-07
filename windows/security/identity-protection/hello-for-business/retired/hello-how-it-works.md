@@ -54,7 +54,7 @@ It’s important to keep in mind that there are no physical containers on disk, 
 
 The container actually contains a set of keys, some of which are used to protect other keys. The following image shows an example: the protector key is used to encrypt the authentication key, and the authentication key is used to encrypt the individual keys stored in the container.
  
-![Each logical container holds one or more sets of keys](../images/passport-fig3-logicalcontainer.png)
+![Each logical container holds one or more sets of keys.](../images/passport-fig3-logicalcontainer.png)
 
 Containers can contain several types of key material:
 

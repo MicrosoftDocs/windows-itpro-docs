@@ -1,5 +1,5 @@
 ---
-title: Deploy WDAC policies using Mobile Device Management (MDM) (Windows 10)
+title: Deploy WDAC policies using Mobile Device Management (MDM) (Windows)
 description: You can use an MDM like Microsoft Intune to configure Windows Defender Application Control (WDAC). Learn how with this step-by-step guide.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,13 +22,18 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 You can use a Mobile Device Management (MDM) solution, like Microsoft Endpoint Manager (MEM) Intune, to configure Windows Defender Application Control (WDAC) on client machines. Intune includes native support for WDAC which can be a helpful starting point, but customers may find the available circle-of-trust options too limiting. To deploy a custom policy through Intune and define your own circle of trust, you can configure a profile using Custom OMA-URI. If your organization uses another MDM solution, check with your solution provider for WDAC policy deployment steps.
 
 ## Use Intune's built-in policies
 
-Intune's built-in WDAC support allows you to configure Windows 10 client computers to only run:
+Intune's built-in WDAC support allows you to configure Windows client computers to only run:
 
 - Windows components
 - 3rd party hardware and software kernel drivers
@@ -36,7 +41,7 @@ Intune's built-in WDAC support allows you to configure Windows 10 client compute
 - [Optional] Reputable apps as defined by the Intelligent Security Graph (ISG)
 
 > [!NOTE]
-> Intune's built-in policies use the pre-1903 single-policy format version of the DefaultWindows policy. You can use Intune's custom OMA-URI feature to deploy your own multiple-policy format WDAC policies and leverage features available on Windows 10 1903+ as described later in this topic.
+> Intune's built-in policies use the pre-1903 single-policy format version of the DefaultWindows policy. You can use Intune's custom OMA-URI feature to deploy your own multiple-policy format WDAC policies and leverage features available on Windows 10 1903+ or Windows 11 as described later in this topic.
 
 > [!NOTE]
 > Intune currently uses the AppLocker CSP to deploy its built-in policies. The AppLocker CSP will always request a reboot when applying WDAC policies. You can use Intune's custom OMA-URI feature with the ApplicationControl CSP to deploy your own WDAC policies rebootlessly.
@@ -66,7 +71,7 @@ The steps to use Intune's custom OMA-URI functionality are:
     - **Certificate file**: upload your binary format policy file. You do not need to upload a Base64 file, as Intune will convert the uploaded .bin file to Base64 on your behalf.
 
     > [!div class="mx-imgBorder"]
-    > ![Configure custom WDAC](images/wdac-intune-custom-oma-uri.png)
+    > ![Configure custom WDAC.](images/wdac-intune-custom-oma-uri.png)
 
 > [!NOTE]
 > For the _Policy GUID_ value, do not include the curly brackets.

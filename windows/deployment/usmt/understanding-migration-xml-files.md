@@ -293,7 +293,7 @@ The MigDocs.xml file calls the **GenerateDocPatterns** function, which takes thr
 <td align="left"><p>ScanProgramFiles</p></td>
 <td align="left"><p>The <em>ScanProgramFiles</em> argument is valid only when the <strong>GenerateDocPatterns</strong> function is called in a system context. This argument determines whether or not to scan the Program Files directory to gather registered file name extensions for known applications.</p>
 <p>For example, when set to <strong>TRUE</strong>, the function discovers and migrates .doc files under the Microsoft Office directory, because .doc is a file name extension registered to a Microsoft Office application. The <strong>GenerateDocPatterns</strong> function generates this inclusion pattern for .doc files:</p>
-<pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;C:\Program Files\Microsoft Office<em>[</em>.doc]&lt;/pattern&gt;</code></pre>
+<pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;C:\Program Files\Microsoft Office<em>[</em>.doc]&lt;/pattern&gt;</code></pre>
 <p>If a child folder of an included folder contains an installed application, ScanProgramFiles will also create an exclusion rule for the child folder. All folders under the application folder will be scanned recursively for registered file name extensions.</p></td>
 <td align="left"><p>False</p></td>
 </tr>
@@ -424,11 +424,11 @@ In the examples below, the source computer has a .txt file called "new text docu
 <tbody>
 <tr class="odd">
 <td align="left"><p>Rule 1</p></td>
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;d:\new folder[new text document.txt]&lt;/pattern&gt;</code></pre></td>
+<td align="left"><pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;d:\new folder[new text document.txt]&lt;/pattern&gt;</code></pre></td>
 </tr>
 <tr class="even">
 <td align="left"><p>Rule 2</p></td>
-<td align="left"><pre class="syntax" space="preserve"><code>&lt;pattern type=&quot;File&quot;&gt;d:\new folder<em>[</em>]&lt;/pattern&gt;</code></pre></td>
+<td align="left"><pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;d:\new folder<em>[</em>]&lt;/pattern&gt;</code></pre></td>
 </tr>
 </tbody>
 </table>

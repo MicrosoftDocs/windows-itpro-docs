@@ -1,5 +1,5 @@
 ---
-title: Create a rule that uses a path condition (Windows 10)
+title: Create a rule that uses a path condition (Windows)
 description: This topic for IT professionals shows how to create an AppLocker rule with a path condition.
 ms.assetid: 9b2093f5-5976-45fa-90c3-da1e0e845d95
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Create a rule that uses a path condition
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals shows how to create an AppLocker rule with a path condition.
 

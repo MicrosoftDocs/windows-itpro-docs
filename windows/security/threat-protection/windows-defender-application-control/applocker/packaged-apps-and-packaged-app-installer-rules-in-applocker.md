@@ -1,5 +1,5 @@
 ---
-title: Packaged apps and packaged app installer rules in AppLocker (Windows 10)
+title: Packaged apps and packaged app installer rules in AppLocker (Windows)
 description: This topic explains the AppLocker rule collection for packaged app installers and packaged apps.
 ms.assetid: 8fd44d08-a0c2-4c5b-a91f-5cb9989f971d
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Packaged apps and packaged app installer rules in AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic explains the AppLocker rule collection for packaged app installers and packaged apps.
 

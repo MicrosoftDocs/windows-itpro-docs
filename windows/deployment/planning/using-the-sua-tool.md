@@ -42,7 +42,7 @@ Before you can use the SUA tool, you must install Application Verifier. You must
 
 The following flowchart shows the process of using the SUA tool.
 
-![act sua flowchart](images/dep-win8-l-act-suaflowchart.jpg)
+![act sua flowchart.](images/dep-win8-l-act-suaflowchart.jpg)
 
 **To collect UAC-related issues by using the SUA tool**
 
