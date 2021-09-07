@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 4765(S): SID History was added to an account.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event generates when [SID History](/windows/win32/adschema/a-sidhistory) was added to an account.
