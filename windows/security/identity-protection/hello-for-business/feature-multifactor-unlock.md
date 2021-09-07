@@ -1,6 +1,6 @@
 ---
 title: Multi-factor Unlock
-description: Learn how Windows 10 offers multifactor device unlock by extending Windows Hello with trusted signals. 
+description: Learn how Windows 10 and Windows 11 offer multi-factor device unlock by extending Windows Hello with trusted signals. 
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, multi, factor, multifactor, multi-factor
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -19,17 +19,19 @@ ms.reviewer:
 # Multi-factor Unlock
 
 **Applies to:**
--   Windows 10
+
+- Windows 10
+- Windows 11
 
 **Requirements:**
 * Windows Hello for Business deployment (Hybrid or On-premises)
 * Azure AD, Hybrid Azure AD, or Domain Joined (Cloud, Hybrid, or On-Premises deployments)
-* Windows 10, version 1709 or newer
+* Windows 10, version 1709 or newer, or Windows 11
 * Bluetooth, Bluetooth capable phone - optional
 
 Windows, today, natively only supports the use of a single credential (password, PIN, fingerprint, face, etc.) for unlocking a device. Therefore, if any of those credentials are compromised (shoulder surfed), an attacker could gain access to the system.
 
-Windows 10 offers Multi-factor device unlock by extending Windows Hello with trusted signals. Administrators can configure Windows 10 to request a combination of factors and trusted signals to unlock their devices. 
+Windows 10 and Windows 11 offer multi-factor device unlock by extending Windows Hello with trusted signals. Administrators can configure their Windows to request a combination of factors and trusted signals to unlock their devices.
 
 Which organizations can take advantage of Multi-factor unlock? Those who:
 * Have expressed that PINs alone do not meet their security needs.
@@ -92,7 +94,7 @@ You represent signal rules in XML.  Each signal rule has an starting and ending 
 ```
 
 ### Signal element
-Each rule element has a **signal** element.  All signal elements have a **type** element and value.  Windows 10, version 1709 supports the **ipConfig** and **bluetooth** type values.
+Each rule element has a **signal** element.  All signal elements have a **type** element and value. Windows 10, version 1709 supports the **ipConfig** and **bluetooth** type values.
 
 
 |Attribute|Value|
@@ -133,7 +135,7 @@ The **classofDevice** attribute defaults to Phone and uses the values from the f
 |Health|2304|
 |Uncategorized|7936|
 
-The **rssiMin** attribute value signal indicates the strength needed for the device to be considered "in-range".  The default value of **-10** enables a user to move about an average size office or cubicle without triggering Windows to lock the device.  The **rssiMaxDelta** has a default value of **-10**, which instruct Windows 10 to lock the device once the signal strength weakens by more than measurement of 10.  
+The **rssiMin** attribute value signal indicates the strength needed for the device to be considered "in-range".  The default value of **-10** enables a user to move about an average size office or cubicle without triggering Windows to lock the device.  The **rssiMaxDelta** has a default value of **-10**, which instruct Windows to lock the device once the signal strength weakens by more than measurement of 10.  
 
 RSSI measurements are relative and lower as the bluetooth signals between the two paired devices reduces. Therefore a measurement of 0 is stronger than -10, which is stronger than -60, which is an indicator the devices are moving further apart from each other.
 
@@ -343,10 +345,9 @@ This example configures Wi-Fi as a trusted signal (Windows 10, version 1803)
 
 ### How to configure Multifactor Unlock policy settings
 
-You need a Windows 10, version 1709 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business  Group Policy settings, which includes multi-factor unlock. To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows 10. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520). Install the Remote Server Administration Tools for Windows 10 on a computer running Windows 10, version 1709.
+You need at least a Windows 10, version 1709 or later workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business  Group Policy settings, which includes multi-factor unlock. To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520). Install the Remote Server Administration Tools for Windows on a computer running Windows 10, version 1709 or later.
 
 Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10, version 1703 to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
-
 
 ### Create the Multifactor Unlock Group Policy object
 

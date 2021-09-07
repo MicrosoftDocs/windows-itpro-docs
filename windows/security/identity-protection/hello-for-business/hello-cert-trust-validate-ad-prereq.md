@@ -19,10 +19,10 @@ ms.reviewer:
 # Validate Active Directory prerequisites
 
 **Applies to**
--   Windows 10, version 1703 or later
--   On-premises deployment
--   Certificate trust
-
+- Windows 10, version 1703 or later
+- Windows 11
+- On-premises deployment
+- Certificate trust
 
 The key registration process for the On-premises deployment of Windows Hello for Business needs the Windows Server 2016 Active Directory or later schema.  The key-trust model receives the schema extension when the first Windows Server 2016 or later domain controller is added to the forest.  The certificate trust model requires manually updating the current schema to the Windows Server 2016 or later schema. If you already have a Windows Server 2016 or later domain controller in your forest, you can skip the **Updating the Schema** and **Create the KeyCredential Admins Security Global Group** steps.
 

@@ -22,6 +22,7 @@ ms.reviewer:
 **Requirements**
 
 - Windows 10
+- Windows 11
 - Cloud only, Hybrid, and On-premises only  Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 
@@ -36,9 +37,9 @@ Microsoft continues to investigate supporting using keys trust for supplied cred
 - Cloud only, Hybrid, and On-premises only Windows Hello for Business deployments
 - Azure AD joined, Hybrid Azure AD joined, and Enterprise joined devices
 - Biometric enrollments
-- Windows 10, version 1809
+- Windows 10, version 1809 or later
 
-Users using earlier versions of Windows 10 could authenticate to a remote desktop using Windows Hello for Business but were limited to using their PIN as their authentication gesture.  Windows 10, version 1809 introduces the ability for users to authenticate to a remote desktop session using their Windows Hello for Business biometric gesture.  The feature is on by default, so your users can take advantage of it as soon as they upgrade to Windows 10, version 1809.
+Users using earlier versions of Windows 10 could authenticate to a remote desktop using Windows Hello for Business but were limited to using their PIN as their authentication gesture.  Windows 10, version 1809 or later introduces the ability for users to authenticate to a remote desktop session using their Windows Hello for Business biometric gesture.  The feature is on by default, so your users can take advantage of it as soon as they upgrade to Windows 10, version 1809.
 
 ### How does it work
 
@@ -48,7 +49,7 @@ A certificate on a smart card starts with creating an asymmetric key pair using 
 
 This same concept applies to Windows Hello for Business. Except, the keys are created using the Microsoft Passport KSP and the user's private key remains protected by the device's security module (TPM) and the user's gesture (PIN/biometric).  The certificate APIs hide this complexity.  When an application uses a certificate, the certificate APIs locate the keys using the saved key storage provider.  The key storage providers directs the certificate APIs on which provider they use to find the private key associated with the certificate.  This is how Windows knows you have a smart card certificate without the smart card inserted (and prompts you to insert the smart card).
 
-Windows Hello for Business emulates a smart card for application compatibility.  Versions of Windows 10 prior to version 1809, would redirect private key access for Windows Hello for Business certificate to use its emulated smart card using the Microsoft Smart Card KSP, which would enable the user to provide their PIN.  Windows 10, version 1809 no longer redirects private key access for Windows Hello for Business certificates to the Microsoft Smart Card KSP-- it continues using the Microsoft Passport KSP. The Microsoft Passport KSP enabled Windows 10 to prompt the user for their biometric gesture or PIN.
+Windows Hello for Business emulates a smart card for application compatibility.  Versions of Windows 10 prior to version 1809, would redirect private key access for Windows Hello for Business certificate to use its emulated smart card using the Microsoft Smart Card KSP, which would enable the user to provide their PIN.  Windows 10, version 1809 or later no longer redirects private key access for Windows Hello for Business certificates to the Microsoft Smart Card KSP-- it continues using the Microsoft Passport KSP. The Microsoft Passport KSP enabled Windows to prompt the user for their biometric gesture or PIN.
 
 ### Compatibility
 

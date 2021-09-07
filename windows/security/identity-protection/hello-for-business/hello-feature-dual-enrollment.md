@@ -23,7 +23,7 @@ ms.reviewer:
 
 * Hybrid and On-premises Windows Hello for Business deployments
 * Enterprise joined or Hybrid Azure joined devices
-* Windows 10, version 1709
+* Windows 10, version 1709 or later
 * Certificate trust
 
 > [!NOTE]
@@ -34,12 +34,12 @@ ms.reviewer:
 
 Dual enrollment enables administrators to perform elevated, administrative functions by enrolling both their non-privileged and privileged credentials on their device.
 
-By design, Windows 10 does not enumerate all Windows Hello for Business users from within a user's session.  Using the computer Group Policy setting, **Allow enumeration of emulated smart card for all users**, you can configure a device to enumerate all enrolled Windows Hello for Business credentials on selected devices.
+By design, Windows does not enumerate all Windows Hello for Business users from within a user's session.  Using the computer Group Policy setting, **Allow enumeration of emulated smart card for all users**, you can configure a device to enumerate all enrolled Windows Hello for Business credentials on selected devices.
 
-With this setting, administrative users can sign in to Windows 10, version 1709 using their non-privileged Windows Hello for Business credentials for normal work flow such as email, but can launch Microsoft Management Consoles (MMCs), Remote Desktop Services clients, and other applications by selecting **Run as different user** or **Run as administrator**, selecting the privileged user account, and providing their PIN.  Administrators can also take advantage of this feature with command-line applications by using **runas.exe** combined with the **/smartcard** argument.  This enables administrators to perform their day-to-day operations without needing to sign in and out, or use fast user switching when alternating between privileged and non-privileged workloads.
+With this setting, administrative users can sign in to Windows 10, version 1709 or later using their non-privileged Windows Hello for Business credentials for normal work flow such as email, but can launch Microsoft Management Consoles (MMCs), Remote Desktop Services clients, and other applications by selecting **Run as different user** or **Run as administrator**, selecting the privileged user account, and providing their PIN.  Administrators can also take advantage of this feature with command-line applications by using **runas.exe** combined with the **/smartcard** argument.  This enables administrators to perform their day-to-day operations without needing to sign in and out, or use fast user switching when alternating between privileged and non-privileged workloads.
 
 > [!IMPORTANT]
-> You must configure a Windows 10 computer for Windows Hello for Business dual enrollment before either user (privileged or non-privileged) provisions Windows Hello for Business.  Dual enrollment is a special setting that is configured on the Windows Hello container during creation.
+> You must configure a Windows computer for Windows Hello for Business dual enrollment before either user (privileged or non-privileged) provisions Windows Hello for Business.  Dual enrollment is a special setting that is configured on the Windows Hello container during creation.
 
 ## Configure Windows Hello for Business Dual Enrollment
 
@@ -69,7 +69,7 @@ where **DC=domain,DC=com** is the LDAP path of your Active Directory domain and 
 
 ### Configuring Dual Enrollment using Group Policy
 
-You configure Windows 10 to support dual enrollment using the computer configuration portion of a Group Policy object.
+You configure Windows 10 or Windows 11 to support dual enrollment using the computer configuration portion of a Group Policy object.
 
 1. Using the Group Policy Management Console (GPMC), create a new domain-based Group Policy object and link it to an organizational Unit that contains Active Directory computer objects used by privileged users.
 2. Edit the Group Policy object from step 1.

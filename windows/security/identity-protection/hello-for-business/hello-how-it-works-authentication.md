@@ -18,7 +18,9 @@ ms.reviewer:
 # Windows Hello for Business and Authentication
 
 **Applies to:**
--   Windows 10
+
+- Windows 10
+- Windows 11
 
 Windows Hello for Business authentication is passwordless, two-factor authentication.  Authenticating with Windows Hello for Business provides a convenient sign-in experience that authenticates the user to both Azure Active Directory and Active Directory resources.<br>
 Azure Active Directory joined devices authenticate to Azure during sign-in and can optional authenticate to Active Directory.  Hybrid Azure Active Directory joined devices authenticate to Active Directory during sign-in, and authenticate to Azure Active Directory in the background.<br>

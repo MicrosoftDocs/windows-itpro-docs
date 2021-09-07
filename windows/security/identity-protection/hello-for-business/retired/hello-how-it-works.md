@@ -1,5 +1,5 @@
 ---
-title: How Windows Hello for Business works (Windows 10)
+title: How Windows Hello for Business works (Windows)
 description: Learn about registration, authentication, key material, and infrastructure for Windows Hello for Business.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,8 +16,10 @@ ms.topic: article
 # How Windows Hello for Business works
 
 **Applies to**
--   Windows 10
--   Windows 10 Mobile
+
+- Windows 10
+- Windows 11
+- Windows 10 Mobile
 
 Windows Hello for Business requires a registered device. When the device is set up, its user can use the device to authenticate to services. This topic explains how device registration works, what happens when a user requests authentication, how key material is stored and processed, and which servers and infrastructure components are involved in different parts of this process.
 
@@ -30,15 +32,15 @@ A goal of device registration is to allow a user to open a brand-new device, sec
 
  The registration process works like this: 
  
-1. The user configures an account on the device. This account can be a local account on the device, a domain account stored in the on-premises Active Directory domain, a Microsoft account, or an Azure AD account. For a new device, this step may be as simple as signing in with a Microsoft account. Signing in with a Microsoft account on a Windows 10 device automatically sets up Windows Hello on the device; users don’t have to do anything extra to enable it. 
+1. The user configures an account on the device. This account can be a local account on the device, a domain account stored in the on-premises Active Directory domain, a Microsoft account, or an Azure AD account. For a new device, this step may be as simple as signing in with a Microsoft account. Signing in with a Microsoft account on a Windows 10 or Windows 11 device automatically sets up Windows Hello on the device; users don’t have to do anything extra to enable it. 
 2. To sign in using that account, the user has to enter the existing credentials for it. The identity provider (IDP) that “owns” the account receives the credentials and authenticates the user. This IDP authentication may include the use of an existing second authentication factor, or proof. For example, a user who registers a new device by using an Azure AD account will have to provide an SMS-based proof that Azure AD sends. 
 3. When the user has provided the proof to the IDP, the user enables PIN authentication. The PIN will be associated with this particular credential. When the user sets the PIN, it becomes usable immediately 
 
 The PIN chosen is associated with the combination of the active account and that specific device. The PIN must comply with whatever length and complexity policy the account administrator has configured; this policy is enforced on the device side. Other registration scenarios that Windows Hello supports are:
 
 - A user who upgrades from the Windows 8.1 operating system will sign in by using the existing enterprise password. That triggers a second authentication factor from the IDP side (if required); after receiving and returning a proof, such as a text message or voice code, the IDP authenticates the user to the upgraded Windows 10 device, and the user can set his or her PIN.
-- A user who typically uses a smart card to sign in will be prompted to set up a PIN the first time he or she signs in to a Windows 10 device the user has not previously signed in to.
-- A user who typically uses a virtual smart card to sign in will be prompted to set up a PIN the first time he or she signs in to a Windows 10 device the user has not previously signed in to.
+- A user who typically uses a smart card to sign in will be prompted to set up a PIN the first time he or she signs in to a Windows 10 or Windows 11 device the user has not previously signed in to.
+- A user who typically uses a virtual smart card to sign in will be prompted to set up a PIN the first time he or she signs in to a Windows 10 and Windows 11 device the user has not previously signed in to.
 
 When the user has completed this process, Windows Hello generates a new public–private key pair on the device. The TPM generates and protects this private key; if the device doesn’t have a TPM, the private key is encrypted and stored in software. This initial key is referred to as the protector key. It’s associated only with a single gesture; in other words, if a user registers a PIN, a fingerprint, and a face on the same device, each of those gestures will have a unique protector key. Each unique gesture generates a unique protector key. The protector key securely wraps the authentication key. The container has only one authentication key, but there can be multiple copies of that key wrapped with different unique protector keys. Windows Hello also generates an administrative key that the user or administrator can use to reset credentials, when necessary. In addition to the protector key, TPM-enabled devices generate a block of data that contains attestations from the TPM.
 
@@ -46,7 +48,7 @@ At this point, the user has a PIN gesture defined on the device and an associate
 
 ## What’s a container?
 
-You’ll often hear the term *container* used in reference to mobile device management (MDM) solutions. Windows Hello uses the term, too, but in a slightly different way. Container in this context is shorthand for a logical grouping of key material or data. Windows 10 Hello uses a single container that holds user key material for personal accounts, including key material associated with the user’s Microsoft account or with other consumer identity providers, and credentials associated with a workplace or school account.
+You’ll often hear the term *container* used in reference to mobile device management (MDM) solutions. Windows Hello uses the term, too, but in a slightly different way. Container in this context is shorthand for a logical grouping of key material or data. Windows 10 or Windows 11 Hello uses a single container that holds user key material for personal accounts, including key material associated with the user’s Microsoft account or with other consumer identity providers, and credentials associated with a workplace or school account.
 
 The container holds enterprise credentials only on devices that have been registered with an organization; it contains key material for the enterprise IDP, such as on-premises Active Directory or Azure AD. 
 
