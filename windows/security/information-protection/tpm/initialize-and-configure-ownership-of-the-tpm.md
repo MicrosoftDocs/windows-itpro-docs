@@ -108,7 +108,7 @@ Membership in the local Administrators group, or equivalent, is the minimum requ
 
 7.  After the PC restarts, your TPM will be automatically prepared for use by Windows.
 
-## <a href="" id="turn-on-or-turn-off"></a>Turn on or turn off the TPM (available only with TPM 1.2 with Windows 10, version 1507 or 1511, or Windows 11)
+## <a href="" id="turn-on-or-turn-off"></a>Turn on or turn off the TPM (available only with TPM 1.2 with Windows 10, version 1507 or 1511)
 
 Normally, the TPM is turned on as part of the TPM initialization process. You do not normally need to turn the TPM on or off. However, if necessary you can do so by using the TPM MMC.
 
@@ -116,7 +116,7 @@ Normally, the TPM is turned on as part of the TPM initialization process. You do
 
 If you want to use the TPM after you have turned it off, you can use the following procedure to turn on the TPM.
 
-**To turn on the TPM (TPM 1.2 with Windows 10, version 1507 or 1511, or Windows 11 only)**
+**To turn on the TPM (TPM 1.2 with Windows 10, version 1507 or 1511 only)**
 
 1.  Open the TPM MMC (tpm.msc).
 
@@ -130,7 +130,7 @@ If you want to use the TPM after you have turned it off, you can use the followi
 
 If you want to stop using the services that are provided by the TPM, you can use the TPM MMC to turn off the TPM.
 
-**To turn off the TPM (TPM 1.2 with Windows 10, version 1507 or 1511, or Windows 11 only)**
+**To turn off the TPM (TPM 1.2 with Windows 10, version 1507 or 1511 only)**
 
 1. Open the TPM MMC (tpm.msc).
 

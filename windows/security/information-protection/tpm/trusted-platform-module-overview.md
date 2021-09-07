@@ -54,7 +54,7 @@ Certificates can be installed or created on computers that are using the TPM. Af
 
 Automated provisioning in the TPM reduces the cost of TPM deployment in an enterprise. New APIs for TPM management can determine if TPM provisioning actions require physical presence of a service technician to approve TPM state change requests during the boot process.
 
-Antimalware software can use the boot measurements of the operating system start state to prove the integrity of a computer running Windows 10 and Windows 11, or Windows Server 2016. These measurements include the launch of Hyper-V to test that datacenters using virtualization are not running untrusted hypervisors. With BitLocker Network Unlock, IT administrators can push an update without concerns that a computer is waiting for PIN entry.
+Antimalware software can use the boot measurements of the operating system start state to prove the integrity of a computer running Windows 10 or Windows 11 or Windows Server 2016. These measurements include the launch of Hyper-V to test that datacenters using virtualization are not running untrusted hypervisors. With BitLocker Network Unlock, IT administrators can push an update without concerns that a computer is waiting for PIN entry.
 
 The TPM has several Group Policy settings that might be useful in certain enterprise scenarios. For more info, see [TPM Group Policy Settings](trusted-platform-module-services-group-policy-settings.md).
 
@@ -95,5 +95,5 @@ Some things that you can check on the device are:
 - [Prepare your organization for BitLocker: Planning and Policies - TPM configurations](../bitlocker/prepare-your-organization-for-bitlocker-planning-and-policies.md)
 - [Azure device provisioning: Identity attestation with TPM](https://azure.microsoft.com/blog/device-provisioning-identity-attestation-with-tpm/)
 - [Azure device provisioning: A manufacturing timeline for TPM devices](https://azure.microsoft.com/blog/device-provisioning-a-manufacturing-timeline-for-tpm-devices/)
-- [Windows 10 and Windows 11: Enabling vTPM (Virtual TPM)](https://social.technet.microsoft.com/wiki/contents/articles/34431.windows-10-enabling-vtpm-virtual-tpm.aspx)
+- [Windows 10: Enabling vTPM (Virtual TPM)](https://social.technet.microsoft.com/wiki/contents/articles/34431.windows-10-enabling-vtpm-virtual-tpm.aspx)
 - [How to Multiboot with Bitlocker, TPM, and a Non-Windows OS](https://social.technet.microsoft.com/wiki/contents/articles/9528.how-to-multiboot-with-bitlocker-tpm-and-a-non-windows-os.aspx)
