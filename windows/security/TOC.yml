@@ -116,7 +116,7 @@
                 - name: Decode Measured Boot logs to track PCR changes
                   href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
      - name: Configure S/MIME for Windows 10
-       href: configure-s-mime.md     
+       href: access-protection/configure-s-mime.md     
      - name: Windows Information Protection (WIP)
        href: information-protection/windows-information-protection/protect-enterprise-data-using-wip.md
        items: 
