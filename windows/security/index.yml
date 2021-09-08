@@ -46,8 +46,6 @@ landingContent:
         - text: Encryption and data protection
           url: encryption-data-protection.md
         - text: Network security
-          url: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
-        - text: Network security
           url: operating-system.md
         - text: Virus & threat protection
           url: operating-system.md
