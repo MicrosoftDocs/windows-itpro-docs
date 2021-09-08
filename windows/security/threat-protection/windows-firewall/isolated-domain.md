@@ -1,5 +1,5 @@
 ---
-title: Isolated Domain (Windows 10)
+title: Isolated Domain (Windows)
 description: Learn about the isolated domain, which is the primary zone for trusted devices, which use connection security and firewall rules to control communication.
 ms.assetid: d6fa8d67-0078-49f6-9bcc-db1f24816c5e
 ms.reviewer: 
@@ -14,16 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
 # Isolated Domain
 
 **Applies to:**
-- Windows 10
-- Windows Server 2016
-- Windows Server 2019
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
 The isolated domain is the primary zone for trusted devices. The devices in this zone use connection security and firewall rules to control the communications that can be sent between devices in the zone.
 

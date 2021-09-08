@@ -1,5 +1,5 @@
 ---
-title: GPO\_DOMISO\_IsolatedDomain\_Servers (Windows 10)
+title: GPO\_DOMISO\_IsolatedDomain\_Servers (Windows)
 description: Author this GPO by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools.
 ms.assetid: 33aed8f3-fdc3-4f96-985c-e9d2720015d3
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This GPO is authored by using the Windows Defender Firewall interface in the Group Policy editing tools. The User Configuration section of the GPO is disabled. It is intended to only apply to server devices that are running at least Windows Server 2008.
 
