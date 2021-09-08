@@ -1,5 +1,5 @@
 ---
-title: Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012 (Windows 10)
+title: Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012 (Windows)
 description: Securing End-to-End IPsec Connections by Using IKEv2 in Windows Server 2012
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 ms.author: dansimp
 ms.technology: mde
@@ -21,7 +21,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 IKEv2 offers the following:
 

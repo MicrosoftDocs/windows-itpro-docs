@@ -1,5 +1,5 @@
 ---
-title: Restrict Server Access to Members of a Group Only (Windows 10)
+title: Restrict Server Access to Members of a Group Only (Windows)
 description: Create a firewall rule to access isolated servers running Windows Server 2008 or later and restrict server access to members of a group.
 ms.assetid: ea51c55b-e1ed-44b4-82e3-3c4287a8628b
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 After you have configured the IPsec connection security rules that force client devices to authenticate their connections to the isolated server, you must configure the rules that restrict access to only those devices or users who have been identified through the authentication process as members of the isolated server’s access group.
 

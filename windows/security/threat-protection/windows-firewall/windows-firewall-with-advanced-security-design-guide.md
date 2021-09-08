@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Firewall with Advanced Security design guide (Windows 10)
+title: Windows Defender Firewall with Advanced Security design guide (Windows)
 description: Learn about common goals for using Windows Defender Firewall with Advanced Security to choose or create a design for deploying the firewall in your enterprise.
 ms.assetid: 5c631389-f232-4b95-9e48-ec02b8677d51
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 10/05/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 Windows Defender Firewall with Advanced Security is a host firewall that helps secure the device in two ways. First, it can filter the network traffic permitted to enter the device from the network, and also control what network traffic the device is allowed to send to the network. Second, Windows Defender Firewall supports IPsec, which enables you to require authentication from any device that is attempting to communicate with your device. When authentication is required, devices that cannot authenticate cannot communicate with your device. By using IPsec, you can also require that specific network traffic be encrypted to prevent it from being read or intercepted while in transit between devices.
 
@@ -87,7 +88,7 @@ The following table identifies and defines terms used throughout this guide.
 | Certificate-based isolation | A way to add devices that cannot use Kerberos V5 authentication to an isolated domain, by using an alternate authentication technique. Every device in the isolated domain and the devices that cannot use Kerberos V5 are provided with a device certificate that can be used to authenticate with each other. Certificate-based isolation requires a way to create and distribute an appropriate certificate (if you choose not to purchase one from a commercial certificate provider).| 
 | Domain isolation | A technique for helping protect the devices in an organization by requiring that the devices authenticate each other's identity before exchanging information, and refusing connection requests from devices that cannot authenticate. Domain isolation takes advantage of Active Directory domain membership and the Kerberos V5 authentication protocol available to all members of the domain. Also see &quot;Isolated domain&quot; in this table.| 
 | Encryption zone | A subset of the devices in an isolated domain that process sensitive data. Devices that are part of the encryption zone have all network traffic encrypted to prevent viewing by non-authorized users. Devices that are part of the encryption zone also typically are subject to the access control restrictions of server isolation.| 
-| Firewall rule | A rule in Windows Defender Firewall that contains a set of conditions used to determine whether a network packet is allowed to pass through the firewall.<br/>By default, the firewall rules in Windows Server 2016. Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 10, Windows 8, Windows 7, and Windows Vista block unsolicited inbound network traffic. Likewise, by default, all outbound network traffic is allowed. The firewall included in previous versions of Windows only filtered inbound network traffic. |
+| Firewall rule | A rule in Windows Defender Firewall that contains a set of conditions used to determine whether a network packet is allowed to pass through the firewall.<br/>By default, the firewall rules in Windows Server 2016. Windows Server 2012, Windows Server 2008 R2, Windows Server 2008, Windows 11, Windows 10, Windows 8, Windows 7, and Windows Vista block unsolicited inbound network traffic. Likewise, by default, all outbound network traffic is allowed. The firewall included in previous versions of Windows only filtered inbound network traffic. |
 | Internet Protocol security (IPsec) | A set of industry-standard, cryptography-based protection services and protocols. IPsec protects all protocols in the TCP/IP protocol suite except Address Resolution Protocol (ARP).| 
 | IPsec policy | A collection of connection security rules that provide the required protection to network traffic entering and leaving the device. The protection includes authentication of both the sending and receiving device, integrity protection of the network traffic exchanged between them, and can include encryption.| 
 | Isolated domain | An Active Directory domain (or an Active Directory forest, or set of domains with two-way trust relationships) that has Group Policy settings applied to help protect its member devices by using IPsec connection security rules. Members of the isolated domain require authentication on all unsolicited inbound connections (with exceptions handled by the other zones).<br/>In this guide, the term *isolated domain* refers to the IPsec concept of a group of devices that can share authentication. The term *Active Directory domain* refers to the group of devices that share a security database by using Active Directory.| 
