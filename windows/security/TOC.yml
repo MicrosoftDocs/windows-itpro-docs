@@ -201,7 +201,7 @@
           href: identity-protection/vpn/vpn-office-365-optimization.md
      - name: Windows Defender Firewall
        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
-   - name: Threat protection
+   - name: Virus & threat protection
      items: 
      - name: Microsoft Defender Antivirus
        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
