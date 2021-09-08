@@ -41,7 +41,7 @@
        href: os-security/trusted-boot.md
      - name: Cryptography and certificate management
        href: os-security/cryptography-certificate-mgmt.md
-     - name: Windows Security app
+     - name: Windows Security app in Windows 11
        href: os-security/windows-security-app.md
    - name: Encryption and data protection
      items:
