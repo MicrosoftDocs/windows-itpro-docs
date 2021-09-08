@@ -27,12 +27,15 @@ Windows 11 includes a management component that includes:
 
 ## MDM features and capabilities
 
-MDM includes several security features & capabilities. These include:
-- Remote wipe
-- Support for your work or school account
-- Config Lock
-- Remote device attestation
-- (other stuff coming soon): Device Installation, DMA Guard, Endpoint Detection and Response, the Microsoft Defender Security Center, Smartscreen, System Guard, and Windows Hello for Business
+MDM includes several security features & capabilities, as described in the following table:
+
+| Feature/capability | Description |
+|:---|:---|
+| Remote wipe | When a device is lost or stolen, IT admins can attempt to wipe it remotely and make the data stored in memory and hard disks difficult to recover. A help desk agent might also want to reset devices to fix issues encountered by remote workers. Windows 10 and Windows 11 supports the Remote Wipe configuration service provider (CSP) so that MDM solutions can remotely initiate any of the following operations: <br/>- Reset the device and remove user accounts and data <br/>- Reset the device and clean the drive <br/>- Reset the device but persist user accounts and data |
+| Support for your work or school account | Adding a work or school account enables devices to connect to your work environment. You can join the device to an Active Directory domain, an Azure Active Directory (Azure AD) domain, or by quickly provisioning corporate owned devices so they meet the policy and security guidelines for the company. Easily configure the devices with the apps and settings the person needs to do their work through management solutions such as Microsoft Endpoint Manager (MEM). <br/><br/>When a device is joined to Azure AD and managed with MDM, it will bring the following security values: <br/>- Default fully managed user and device settings and policies<br/>- Single Sign On to all Microsoft Online Services<br/>- Full suite of password management capabilities, using Windows Hello For Business<br/>- Authentication uses Tokens<br/>- No use of consumer Microsoft Account identity | 
+| Config Lock |  |
+| Remote device attestation |  |
+| (other stuff coming soon) | Device Installation, DMA Guard, Endpoint Detection and Response, the Microsoft Defender Security Center, Smartscreen, System Guard, and Windows Hello for Business |
 
 ## Support for non-Microsoft MDM servers
 
@@ -45,12 +48,12 @@ For details about the MDM protocols, the following resources:
 
 ## Security baselines
 
-Windows 11 can be configured with the Microsoft MDM security baseline backed by ADMX policies, which functions like the Microsoft GP-based security baseline. Security baseline enables IT admins to easily integrate this baseline into any MDM, addressing security concerns and compliance needs for modern cloud-managed devices.
+Windows 11 can be configured with the [Microsoft MDM security baseline](/mem/intune/protect/security-baseline-settings-mdm-all?pivots=mdm-december-2020) backed by ADMX policies, which functions like the Microsoft Group Policy security baseline. Security baselines enable security teams and IT admins to easily integrate this baseline into any MDM, addressing security concerns and compliance needs for modern cloud-managed devices.
 
 The MDM security baseline includes policies that cover the following areas:
 
-- Microsoft inbox security technology (not deprecated) such as BitLocker, Windows Defender SmartScreen, and Virtual-based security, Exploit Guard, Defender, and Firewall
+- Microsoft inbox security technology (such as BitLocker and Windows Defender SmartScreen), and Virtual-based security ( exploit protection, Microsoft Defender Antivirus, and Windows Defender Firewall)
 - Restricting remote access to devices
 - Setting credential requirements for passwords and PINs
-- Restricting use of legacy technology
+- Restricting the use of legacy technology
 - Legacy technology policies that offer alternative solutions with modern technology
