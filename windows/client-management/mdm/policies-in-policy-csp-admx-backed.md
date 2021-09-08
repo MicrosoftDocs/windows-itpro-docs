@@ -189,6 +189,7 @@ ms.date: 10/08/2020
 - [ADMX_DnsClient/DNS_UpdateTopLevelDomainZones](./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-updatetopleveldomainzones)
 - [ADMX_DnsClient/DNS_UseDomainNameDevolution](./policy-csp-admx-dnsclient.md#admx-dnsclient-dns-usedomainnamedevolution)
 - [ADMX_DnsClient/Turn_Off_Multicast](./policy-csp-admx-dnsclient.md#admx-dnsclient-turn-off-multicast)
+- [ADMX_DFS/DFSDiscoverDC](./policy-csp-admx-dfs.md#admx-dfs-dfsdiscoverdc)
 - [ADMX_DWM/DwmDefaultColorizationColor_1](./policy-csp-admx-dwm.md#admx-dwm-dwmdefaultcolorizationcolor-1)
 - [ADMX_DWM/DwmDefaultColorizationColor_2](./policy-csp-admx-dwm.md#admx-dwm-dwmdefaultcolorizationcolor-2)
 - [ADMX_DWM/DwmDisallowAnimations_1](./policy-csp-admx-dwm.md#admx-dwm-dwmdisallowanimations-1)
