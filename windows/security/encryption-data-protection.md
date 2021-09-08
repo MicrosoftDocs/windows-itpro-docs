@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: conceptual
-ms.date: 09/07/2021
+ms.date: 09/08/2021
 ms.prod: w11
 ms.localizationpriority: medium
 ms.collection: 
@@ -52,6 +52,6 @@ Windows consistently improves data protection by improving existing options and 
 
 ## See also
 
-- [Encrypted Hard Drive](../information-protection/encrypted-hard-drive.md)
-- [BitLocker](../information-protection/bitlocker/bitlocker-overview.md)
+- [Encrypted Hard Drive](information-protection/encrypted-hard-drive.md)
+- [BitLocker](information-protection/bitlocker/bitlocker-overview.md)
 
