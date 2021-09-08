@@ -46,6 +46,7 @@
    - name: Encryption and data protection
      items:
      - name: Overview 
+       href: encryption-data-protection.md
      - name: Encrypted Hard Drive
        href: information-protection/encrypted-hard-drive.md
      - name: Bitlocker 
