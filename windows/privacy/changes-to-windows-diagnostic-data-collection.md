@@ -19,6 +19,7 @@ ms.date: 09/08/2021
 # Changes to Windows diagnostic data collection
 
 **Applies to**
+- Windows 11
 - Windows 10, version 1903 and newer
 - Windows Server 2022
 

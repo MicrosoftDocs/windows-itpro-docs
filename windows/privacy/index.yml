@@ -14,7 +14,7 @@ metadata:
   author: dansimp
   ms.author: dansimp
   manager: dansimp
-  ms.date: 07/21/2020 #Required; mm/dd/yyyy format.
+  ms.date: 09/08/2021 #Required; mm/dd/yyyy format.
   ms.localizationpriority: high
 
 # highlightedContent section (optional)
@@ -50,7 +50,7 @@ productDirectory:
     - title: Windows 10 required diagnostic data
       imageSrc: https://docs.microsoft.com/media/common/i_build.svg
       summary: See what changes Windows is making to align to the new data collection taxonomy
-      url: required-windows-diagnostic-data-events-and-fields.md  
+      url: required-windows-diagnostic-data-events-and-fields-2004.md  
     # Card
     - title: Optional diagnostic data
       imageSrc: https://docs.microsoft.com/media/common/i_get-started.svg
