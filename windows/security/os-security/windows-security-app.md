@@ -1,6 +1,6 @@
 ---
-title: Trusted Boot
-description: Trusted Boot prevents corrupted components from loading during the boot-up process in Windows 11
+title: The Windows Security app in Windows 11
+description: Get an overview of the Windows Security app in Windows 11
 search.appverid: MET150 
 author: denisebmsft
 ms.author: deniseb
@@ -12,26 +12,15 @@ ms.prod: w11
 ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 
-ms.reviewer: jsuther
+ms.reviewer: kaeladawson, bmcneil
 f1.keywords: NOCSH  
 ---
 
-# Secure Boot and Trusted Boot
+# The Windows Security app
 
-This article describes Secure Boot and Trusted Boot, security measures built into Windows 11 to prevent malware and corrupted components from loading when a Windows 11 device is starting. Secure Boot starts with initial boot-up protection, and then Trusted Boot picks up where Secure Boot leaves off. Together, Secure Boot and Trusted Boot help to ensure your Windows 11 system boots up safely and securely.
+This article provides an overview of the Windows Security app in Windows 11.
 
-## Secure Boot
+:::image type="content" source="../images/windows-security-app-w11.png" alt-text="Windows Security app in Windows 11":::
 
-The first step in protecting the operating system is to ensure that it boots securely after the initial hardware and firmware boot sequences have safely finished their early boot sequences. Secure Boot makes a safe and trusted path from the Unified Extensible Firmware Interface (UEFI) through the Windows kernel's Trusted Boot sequence. Malware attacks on the Windows boot sequence are blocked by the signature-enforcement handshakes throughout the boot sequence between the UEFI, bootloader, kernel, and application environments.
+Visibility and awareness of device security and health is key to any action taken. The Windows built-in security app provides an at-a-glance view of the security status and health of your device. These insights help you identify issues and take action to make sure you’re protected. You can quickly see the status of your virus and threat protection, firewall and network security, device security controls, and more. 
 
-As the PC begins the boot process, it will first verify that the firmware is digitally signed, reducing the risk of firmware rootkits. Secure Boot then checks all code that runs before the operating system and checks the OS bootloader’s digital signature to ensure that it is trusted by the Secure Boot policy and hasn’t been tampered with. 
-
-## Trusted Boot
-
-Trusted Boot takes over where Secure Boot leaves off. The Windows bootloader verifies the digital signature of the Windows kernel before loading it. The Windows kernel, in turn, verifies every other component of the Windows startup process, including boot drivers, startup files, and your antimalware product’s early-launch antimalware (ELAM) driver. If any of these files were tampered, the bootloader detects the problem and refuses to load the corrupted component. Tampering or malware attacks on the Windows boot sequence are blocked by the signature-enforcement handshakes between the UEFI, bootloader, kernel, and application environments.
-
-Often, Windows can automatically repair the corrupted component, restoring the integrity of Windows and allowing the Windows 11 device to start normally.
-
-## See also
-
-[Secure the Windows boot process](../information-protection/secure-the-windows-10-boot-process.md)
