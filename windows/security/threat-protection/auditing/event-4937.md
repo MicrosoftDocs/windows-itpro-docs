@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 4937(S): A lingering object was removed from a replica.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event generates when a [lingering object](https://support.microsoft.com/kb/910205) was removed from a replica.
