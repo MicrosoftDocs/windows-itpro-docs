@@ -36,7 +36,7 @@ For more information about how Windows diagnostic data is used, see [Diagnostics
 
 ### Diagnostic data gives users a voice
 
-Diagnostic data gives every user a voice in the operating system’s development and ongoing improvement. It helps us understand how Windows 10 and Windows Server behave in the real world, focus on user priorities, and make informed decisions that benefit both consumer and enterprise customers. The following sections offer real examples of these benefits.
+Diagnostic data gives every user a voice in the operating system’s development and ongoing improvement. It helps us understand how Windows and Windows Server behave in the real world, focus on user priorities, and make informed decisions that benefit both consumer and enterprise customers. The following sections offer real examples of these benefits.
 
 ### _Improve app and driver quality_
 
@@ -157,8 +157,8 @@ Required diagnostic data includes:
 
 In Windows 10, version 20H2 and earlier as well as Windows Server 2019 and earlier, enhanced diagnostic data includes data about the websites you browse, how Windows and apps are used and how they perform, and device activity. The additional data helps Microsoft to fix and improve products and services for all users.
 
->[!Note]
->This diagnostic data setting has been is not available on Windows 11 and Windows Server 2022 and has been replaced with policies that can control the amount of optional diagnostic data that is sent. More information on these settings are avaialble in the Manage enterprise diagnostic data section of this document.
+>[!Important]
+>This diagnostic data setting is not available on Windows 11 and Windows Server 2022 and has been replaced with policies that can control the amount of optional diagnostic data that is sent. More information on these settings are avaialble in the Manage enterprise diagnostic data section of this document.
 
 When you choose to send enhanced diagnostic data, required diagnostic data will always be included, and we collect the following additional information:
 

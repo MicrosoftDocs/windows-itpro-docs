@@ -23,15 +23,12 @@ ms.date: 09/08/2021
 - Windows 10, version 1903 and newer
 - Windows Server 2022
 
-Microsoft is committed to providing you with effective controls over your data and ongoing transparency into our data handling practices. As part of this effort, we are moving our major products and services to a model where data sent back to Microsoft from customer devices will be classified as either **Required** or **Optional**. We believe this will provide our customers with a simpler experience – information should be easier to find, easier to understand, and easier to act upon through the tools we provide.
+Microsoft is committed to providing you with effective controls over your data and ongoing transparency into our data handling practices. As part of this effort, we have moved our major products and services to a model where data sent back to Microsoft from customer devices will be classified as either **Required** or **Optional**. We believe this will provide our customers with a simpler experience – information should be easier to find, easier to understand, and easier to act upon through the tools we provide.
 
 This article is meant for IT administrators and explains the changes Windows is making to align to the new data collection taxonomy. These changes are focused in two areas:
 
 - [Taxonomy changes](#taxonomy-changes)
 - [Behavioral changes](#behavioral-changes)
-
-> [!NOTE]
-> You can test the behavioral changes now in Windows 10 Insider Preview build 19577 and later.
 
 ## Summary of changes
 
