@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/07/2021
+ms.date: 09/08/2021
 ms.localizationpriority: medium
 ---
 
@@ -22,9 +22,11 @@ ms.localizationpriority: medium
 
 > **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
 
-On Windows 11 devices, you can pin apps to the taskbar. If your organization uses a common set of apps, or devices only run some apps, you may want to use this feature. You can pin more apps to the taskbar, and also remove the default pinned apps.
+On Windows 11 devices, you can pin apps you want to the taskbar. Use this feature if your organization uses a common set of apps, and or wants to bring attention to specific apps. You can also remove the default pinned apps.
 
-To add specific apps you want pinned to the taskbar, you use an XML file. You can use an existing XML file, or create a new file. If you have an XML file that's used on Windows 10 devices, you can also use it on Windows 11 devices. You may have to update the App IDs.
+For example, you can override the default set of apps with your own a set of pinned apps, and in the order you choose. As an administrator, use this feature to pin Win32 apps, remove default pinned apps, order the apps, and more.
+
+To add apps you want pinned to the taskbar, you use an XML file. You can use an existing XML file, or create a new file. If you have an XML file that's used on Windows 10 devices, you can also use it on Windows 11 devices. You may have to update the App IDs.
 
 This article shows you how to create the XML file, add apps to the XML, and deploy the XML file.
 
@@ -46,7 +48,7 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 ## Create the XML file
 
-1. In a text editor, such as Visual Studio Code, create a new XML file. To help you get started, you can copy and paste the following XML sample. The sample pins two apps to the taskbar: Microsoft Edge and File Explorer:
+1. In a text editor, such as Visual Studio Code, create a new XML file. To help you get started, you can copy and paste the following XML sample. The sample pins two apps to the taskbar - Microsoft Edge and File Explorer:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -184,7 +186,7 @@ Use the following steps to create an Intune policy that deploys your taskbar XML
 
 7. Select **Next**, and configure the rest of the policy settings. For more specific information, see [Configure device restriction settings in Microsoft Intune](/mem/intune/configuration/device-restrictions-configure).
 
-8. When the policy is created, you can deploy it now, or deploy it later. Since this policy is a customized taskbar, the policy can also be deployed before users sign in the first time. If you use [Windows Autopilot](/mem/autopilot/windows-autopilot) (opens another Microsoft web site), add the taskbar policy to your Windows Autopilot policy.
+8. When the policy is created, you can deploy it now, or deploy it later. Since this policy is a customized taskbar, the policy can also be deployed before users sign in the first time. 
 
     For more information and guidance on assigning policies using Microsoft Intune, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).
 
