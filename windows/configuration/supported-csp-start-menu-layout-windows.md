@@ -1,8 +1,7 @@
 ---
-title: Supported CSP policies to customize start menu layout on Windows 11 | Microsoft Docs
-description: See a list of the Policy CSP - Start items that are supported on Windows 11 to customize the Start menu layout.
+title: Supported CSP policies to customize Start menu on Windows 11 | Microsoft Docs
+description: See a list of the Policy CSP - Start items that are supported on Windows 11 to customize the Start menu.
 ms.assetid: 
-ms.reviewer: 
 manager: dougeby
 ms.author: mandia
 ms.reviewer: ericpapa
@@ -11,11 +10,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/07/2021
+ms.date: 09/08/2021
 ms.localizationpriority: medium
 ---
 
-# Supported configuration service provider (CSP) policies for Windows 11 Start menu layout
+# Supported configuration service provider (CSP) policies for Windows 11 Start menu
 
 **Applies to**:
 
@@ -23,11 +22,11 @@ ms.localizationpriority: medium
 
 The Windows OS exposes CSPs that are used by MDM providers, like [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). In an MDM policy, these CSPs are settings that you configure in a policy. When the policy is ready, you deploy the policy to your devices.
 
-This article lists the CSPs that are available to customize the Start menu layout for Windows 11 and later devices. Windows 11 uses the [Policy CSP - Start](../client-management/mdm/policy-csp-start.md).
+This article lists the CSPs that are available to customize the Start menu for Windows 11 devices. Windows 11 uses the [Policy CSP - Start](../client-management/mdm/policy-csp-start.md).
 
 For more general information, see [Configuration service provider reference](../client-management/mdm/configuration-service-provider-reference.md).
 
-## Existing Windows CSP policies that support Windows 11
+## Existing Windows CSP policies that Windows 11 supports
 
 - [Start/AllowPinnedFolderDocuments](../client-management/mdm/policy-csp-start.md#start-allowpinnedfolderdocuments)
 - [Start/AllowPinnedFolderDownloads](../client-management/mdm/policy-csp-start.md#start-allowpinnedfolderfileexplorer)
@@ -39,7 +38,7 @@ For more general information, see [Configuration service provider reference](../
 - [Start/AllowPinnedFolderPictures](../client-management/mdm/policy-csp-start.md#start-allowpinnedfolderpictures)
 - [Start/AllowPinnedFolderSettings](../client-management/mdm/policy-csp-start.md#start-allowpinnedfoldersettings)
 - [Start/AllowPinnedFolderVideos](../client-management/mdm/policy-csp-start.md#start-allowpinnedfoldervideos)
-- [Start/DisableContextMenus](../client-management/mdm/policy-csp-start.md#start-disablecontextmenus): Doesn't work for Pinned app lists or Recommended app lists. Works for all other apps list.
+- [Start/DisableContextMenus](../client-management/mdm/policy-csp-start.md#start-disablecontextmenus)
 - [Start/HideChangeAccountSettings](../client-management/mdm/policy-csp-start.md#start-hidechangeaccountsettings)
 - [Start/HideHibernate](../client-management/mdm/policy-csp-start.md#start-hidehibernate)
 - [Start/HideLock](../client-management/mdm/policy-csp-start.md#start-hidelock)
@@ -50,10 +49,7 @@ For more general information, see [Configuration service provider reference](../
 - [Start/HideSleep](../client-management/mdm/policy-csp-start.md#start-hidesleep)
 - [Start/HideSwitchAccount](../client-management/mdm/policy-csp-start.md#start-hideswitchaccount)
 - [Start/HideUserTile](../client-management/mdm/policy-csp-start.md#start-hideusertile)
-- [Start/HideRecentJumplists](../client-management/mdm/policy-csp-start.md#start-hiderecentjumplists): Also hides files from the Recommended section.
-
-  Note: Recent JLs never appear in Pinned (because the feature isn’t supported yet)
-
+- [Start/HideRecentJumplists](../client-management/mdm/policy-csp-start.md#start-hiderecentjumplists)
 - [Start/NoPinningToTaskbar](../client-management/mdm/policy-csp-start.md#start-nopinningtotaskbar)
 - Start/ShowOrHideMostUsedApps --> Need CSP link
 
@@ -61,7 +57,7 @@ For more general information, see [Configuration service provider reference](../
 
 - [Start/HideFrequentlyUsedApps](../client-management/mdm/policy-csp-start.md#start-hidefrequentlyusedapps): What does this configure on Windows 10? How is it different than ShowOrHideMostUsedApps? 
 
-## Existing CSP policies that don't support Windows 11
+## Existing CSP policies that Windows 11 doesn't support
 
 - [Start/StartLayout](../client-management/mdm/policy-csp-start.md#start-startlayout)
 - [Start/HideRecentlyAddedApps](../client-management/mdm/policy-csp-start.md#start-hiderecentlyaddedapps)
