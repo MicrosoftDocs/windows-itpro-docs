@@ -38,7 +38,6 @@ For more general information, see [Configuration service provider reference](../
 - [Start/AllowPinnedFolderPictures](../client-management/mdm/policy-csp-start.md#start-allowpinnedfolderpictures)
 - [Start/AllowPinnedFolderSettings](../client-management/mdm/policy-csp-start.md#start-allowpinnedfoldersettings)
 - [Start/AllowPinnedFolderVideos](../client-management/mdm/policy-csp-start.md#start-allowpinnedfoldervideos)
-- [Start/DisableContextMenus](../client-management/mdm/policy-csp-start.md#start-disablecontextmenus)
 - [Start/HideChangeAccountSettings](../client-management/mdm/policy-csp-start.md#start-hidechangeaccountsettings)
 - [Start/HideHibernate](../client-management/mdm/policy-csp-start.md#start-hidehibernate)
 - [Start/HideLock](../client-management/mdm/policy-csp-start.md#start-hidelock)
@@ -51,14 +50,13 @@ For more general information, see [Configuration service provider reference](../
 - [Start/HideUserTile](../client-management/mdm/policy-csp-start.md#start-hideusertile)
 - [Start/HideRecentJumplists](../client-management/mdm/policy-csp-start.md#start-hiderecentjumplists)
 - [Start/NoPinningToTaskbar](../client-management/mdm/policy-csp-start.md#start-nopinningtotaskbar)
-- Start/ShowOrHideMostUsedApps --> Need CSP link
+- Start/ShowOrHideMostUsedApps: New policy starting with Windows 11. This policy enforces always showing Most Used Apps, or always hiding Most Used Apps. If you use this policy, the [Start/HideFrequentlyUsedApps](../client-management/mdm/policy-csp-start.md#start-hidefrequentlyusedapps) policy is ignored.
 
-## Untested policies
-
-- [Start/HideFrequentlyUsedApps](../client-management/mdm/policy-csp-start.md#start-hidefrequentlyusedapps): What does this configure on Windows 10? How is it different than ShowOrHideMostUsedApps? 
+  The [Start/HideFrequentlyUsedApps](../client-management/mdm/policy-csp-start.md#start-hidefrequentlyusedapps) CSP is the previous version of this policy, and is available on Windows 10 and older devices. This policy enforces hiding Most Used Apps. You can't use this policy to enforce always showing Most Used Apps.
 
 ## Existing CSP policies that Windows 11 doesn't support
 
 - [Start/StartLayout](../client-management/mdm/policy-csp-start.md#start-startlayout)
 - [Start/HideRecentlyAddedApps](../client-management/mdm/policy-csp-start.md#start-hiderecentlyaddedapps)
 - [Start/HideAppList](../client-management/mdm/policy-csp-start.md#start-hideapplist)
+- [Start/DisableContextMenus](../client-management/mdm/policy-csp-start.md#start-disablecontextmenus)

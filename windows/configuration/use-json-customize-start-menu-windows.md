@@ -1,6 +1,6 @@
 ---
 title: Use JSON to customize Start menu layout on Windows 11 | Microsoft Docs
-description: Export start layout to LayoutModification.json that includes pinned apps. Add or remove apps, and use the JSON syntax in an MDM policy to deploy a custom Start menu layout to Windows 11 devices.
+description: Export start layout to LayoutModification.json that includes pinned apps. Add or remove apps, and use the JSON text in an MDM policy to deploy a custom Start menu layout to Windows 11 devices.
 ms.assetid: 
 manager: dougeby
 ms.author: mandia
@@ -22,17 +22,17 @@ ms.localizationpriority: medium
 
 > **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
 
-Your organization can deploy a customized Start layout to your Windows 11 devices. Customizing the Start layout is common when you have similar devices used by many users.
+Your organization can deploy a customized Start layout to your Windows 11 devices. Customizing the Start layout is common when you have similar devices used by many users, or you want to pin specific apps.
 
-For example, you can override the default set of apps with your own a set of pinned apps, and in the order you choose. As an administrator, use this feature to pin Win32 apps, remove default pinned apps, order the apps, and more.
+For example, you can override the default set of apps with your own a set of pinned apps, and in the order you choose. As an administrator, use this feature to pin apps, remove default pinned apps, order the apps, and more.
 
-This article shows you how to export an existing Start menu layout, and use the syntax in a Microsoft Intune MDM policy.
+To add apps you want pinned to the Start menu, you use a JSON file. In previous Windows versions, IT administrators used an XML file to customize the Start menu. The XML file isn't available on Windows 11 and later ***unless*** [you're an OEM](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
+
+This article shows you how to export an existing Start menu layout, and use the JSON in a Microsoft Intune MDM policy.
 
 ## Before you begin
 
-- Starting with Windows 11, IT administrators use JSON to customize the Start layout.
-
-  In previous Windows versions, IT administrators used an XML file to customize the Start layout. The XML file isn't available on Windows 11 and later. OEMs can use XML and JSON files. If you're an OEM, see [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
+- When you customize the Start layout, you overwrite the entire full layout. A partial Start layout isn't available. Users can pin and unpin apps, and uninstall apps from Start. You can't prevent users from changing the layout.
 
 - It's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. For Microsoft, that includes using Microsoft Endpoint Manager. Endpoint Manager includes Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
 
@@ -44,25 +44,20 @@ This article shows you how to export an existing Start menu layout, and use the 
 
 ## Start menu features and sections
 
-In Windows 11, the Start menu is redesigned with a simplified set of apps that are arranged in a grid of pages. There aren't folders, groups, or different sized app icons:
+In Windows 11, the Start menu is redesigned with a simplified set of apps that are arranged in a grid of pages. There aren't folders, groups, or different-sized app icons:
 
 :::image type="content" source="./images/use-json-customize-start-menu-windows/start-menu-layout.png" alt-text="Sample start menu layout on Windows 11 devices that shows pinned apps, access to all apps, and shows recommended files.":::
 
 Start has the following areas:
 
-- **Pinned**: This area shows pinned apps, or a subset of all of the apps installed on the device. You can create a list of pinned apps you want on the devices using the **ConfigureStartPins** policy. **ConfigureStartPins** overrides the entire layout, which also remove apps that are pinned by default.
+- **Pinned**: This area shows pinned apps, or a subset of all of the apps installed on the device. You can create a list of pinned apps you want on the devices using the **ConfigureStartPins** policy. **ConfigureStartPins** overrides the entire layout, which also removes apps that are pinned by default.
 
   This article shows you how to use the **ConfigureStartPins** policy.
 
-- **All apps**: Users can select this option to see an alphabetical list of all the apps on the device. This section can't be customized.
-- **Recommended**: This area shows recently opened files and recently installed apps. You can't hide this section, but you can prevent files from showing. The [Start/HideRecentJumplists CSP](../client-management/mdm/policy-csp-start.md#start-hiderecentjumplists) controls this setting, and can be set using an MDM provider, like Microsoft Intune.
+- **All apps**: Users select this option to see an alphabetical list of all the apps on the device. This section can't be customized using the JSON file. You can use the `Start/ShowOrHideMostUsedApps` CSP, which is a new policy available in Windows 11.
+- **Recommended**: Shows recently opened files and recently installed apps. This section can't be customized using the JSON file. To prevent files from showing in this section, you can use the [Start/HideRecentJumplists CSP](../client-management/mdm/policy-csp-start.md#start-hiderecentjumplists). This CSP also hides recent files that show from the taskbar.
 
-  For more information on the Start menu settings you can configure in a Microsoft Intune policy, see [Windows 10 (and later) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
-
-### What you need to know
-
-- When you customize the Start layout, you overwrite the entire full layout. A partial Start layout isn't available. Users can pin and unpin apps, and uninstall apps from Start. You can't prevent users from customizing the layout.
-- On Windows 11 and later devices, you must create a JSON file. You can't use an XML file from a previous OS, such as Windows 10.
+  You can use an MDM provider, like Microsoft Intune, to manage the `Start/HideRecentJumplists` CSP on your devices. For more information on the Start menu settings you can configure in a Microsoft Intune policy, see [Windows 10 (and later) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
 
 ## Create the JSON file
 
@@ -71,7 +66,7 @@ On an existing Windows 11 device, set up your own Start layout with the pinned a
 The JSON file controls the Start menu layout, and lists all the apps that are pinned. You can update the JSON file to:
 
 - Change the order of existing apps. The apps in the JSON file are shown on Start in the same order.
-- Add more apps by entering the app ID. For more information, see [Get the pinnedList JSON syntax](#get-the-pinnedlist-json-syntax) (in this article).
+- Add more apps by entering the app ID. For more information, see [Get the pinnedList JSON](#get-the-pinnedlist-json) (in this article).
 
 If you're familiar with creating JSON files, you can create your own `LayoutModification.json` file. But, it's easier and faster to export the layout from an existing device.
 
@@ -79,15 +74,13 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
 
 1. Create a folder to save the `.json` file. For example, create the `C:\Layouts` folder.
 2. On a Windows 11 device, open the Windows PowerShell app.
-3. Run the following cmdlet:
+3. Run the following cmdletBe sure to name the file `LayoutModification.json`.
 
     ```powershell
     Export-StartLayout -Path "C:\Layouts\LayoutModification.json" 
     ```
 
-    Be sure to name the file `LayoutModification.json`.
-
-### Get the pinnedList JSON syntax
+### Get the pinnedList JSON
 
 1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code or the Notepad app. For more information, see [edit JSON with Visual Studio Code](https://code.visualstudio.com/docs/languages/json).
 2. In the file, you see the `pinnedList` section. This section includes all the apps that are pinned. Copy the `pinnedList` content in the JSON file. You'll use it in the next section.
@@ -116,7 +109,7 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
 
 ## Use MDM to create and deploy a pinned list policy
 
-Now that you have the JSON syntax, you're ready to deploy your customized Start layout to devices in your organization.
+Now that you have the JSON, you're ready to deploy your customized Start layout to devices in your organization.
 
 MDM providers can deploy policies to devices managed by the organization, including organization-owned devices, and personal or bring your own device (BYOD).  Using an MDM provider, such as Microsoft Intune, you can deploy a policy that configures the pinned list.
 
@@ -146,7 +139,7 @@ To deploy this policy in Microsoft Intune, the devices must be enrolled in Micro
     - **Description**: Enter a description for the row. This setting is optional, and recommended.
     - **OMA-URI**: Enter `./Vendor/MSFT/Policy/Config/Start/ConfigureStartPins`.
     - **Data type**: Select **String**.
-    - **Value**: Paste the JSON syntax you created or updated in the previous section. For example, enter the following syntax:
+    - **Value**: Paste the JSON you created or updated in the previous section. For example, enter the following text:
 
       ```json
       { 

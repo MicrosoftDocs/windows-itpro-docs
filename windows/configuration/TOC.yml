@@ -6,7 +6,7 @@
       items:
         - name: Start layout
           href: use-json-customize-start-menu-windows.md
-        - name: Supported Start layout CSPs
+        - name: Supported Start menu CSPs
           href: supported-csp-start-menu-layout-windows.md
     - name: Windows 10 Start and taskbar
       items:
