@@ -799,7 +799,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-###_ADMX_DWM policies
+### ADMX_DWM policies
 <dl>
   <dd>
     <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdefaultcolorizationcolor-1" id="admx-dwm-dwmdefaultcolorizationcolor-1">ADMX_DWM/DwmDefaultColorizationColor_1</a>

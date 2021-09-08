@@ -449,6 +449,8 @@ items:
               href: policy-csp-admx-deviceinstallation.md
             - name: ADMX_DeviceSetup
               href: policy-csp-admx-devicesetup.md
+            - name: ADMX_DFS
+              href: policy-csp-admx-dfs.md
             - name: ADMX_DigitalLocker
               href: policy-csp-admx-digitallocker.md
             - name: ADMX_DistributedLinkTracking
