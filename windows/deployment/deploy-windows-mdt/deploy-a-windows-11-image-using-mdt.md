@@ -1,12 +1,12 @@
 ---
-title: Deploy a Windows 10 image using MDT (Windows 10)
-description: This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT).
+title: Deploy a Windows 11 image using MDT (Windows 11)
+description: This topic will show you how to take your reference image for Windows 11, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT).
 ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deployment, automate, tools, configure
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
@@ -16,12 +16,13 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Deploy a Windows 10 image using MDT
+# Deploy a Windows 11 image using MDT
 
 **Applies to**
--   Windows 10
+- Windows 10
+- Windows 11
 
-This topic will show you how to take your reference image for Windows 10 (that was just [created](create-a-windows-10-reference-image.md)), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
+This topic will show you how to take your reference image for Windows 11 (that was just [created](create-a-windows-11-reference-image.md)), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
 
 We will prepare for this by creating an MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. We will configure Active Directory permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
 

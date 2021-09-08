@@ -1,12 +1,12 @@
 ---
-title: Create a Windows 10 reference image (Windows 10)
+title: Create a Windows 11 reference image (Windows 11)
 description: Creating a reference image is important because that image serves as the foundation for the devices in your organization.
 ms.assetid: 9da2fb57-f2ff-4fce-a858-4ae4c237b5aa
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, deployment, configure, customize, install, installation
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
@@ -16,10 +16,11 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Create a Windows 10 reference image
+# Create a Windows 11 reference image
 
 **Applies to**
 - Windows 10
+- Windows 11
 
 Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this topic, you will learn how to create a Windows 10 reference image using the Microsoft Deployment Toolkit (MDT). You will create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image. After completing the steps outlined in this topic, you will have a Windows 10 reference image that can be used in your deployment solution.
 

@@ -1,9 +1,9 @@
 ---
-title: Perform an in-place upgrade to Windows 10 with MDT (Windows 10)
-description: The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade.
+title: Perform an in-place upgrade to Windows 11 with MDT (Windows 11)
+description: The simplest path to upgrade PCs that are currently running an earlier version of Windows client to Windows 11 is through an in-place upgrade.
 ms.assetid: B8993151-3C1E-4F22-93F4-2C5F2771A460
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
@@ -16,15 +16,16 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Perform an in-place upgrade to Windows 10 with MDT
+# Perform an in-place upgrade to Windows 11 with MDT
 
 **Applies to**
--   Windows 10
+- Windows 10
+- Windows 11
 
-The simplest path to upgrade PCs that are currently running Windows 7, Windows 8, or Windows 8.1 to Windows 10 is through an in-place upgrade. 
+The simplest path to upgrade PCs that are currently running an earlier version of Windows client to Windows 11 is through an in-place upgrade. 
 
->[!TIP]
->In-place upgrade is the preferred method to use when migrating from Windows 10 to a later release of Windows 10, and is also a preferred method for upgrading from Windows 7 or 8.1 if you do not plan to significantly change the device's configuration or applications. MDT includes an in-place upgrade task sequence template that makes the process really simple. 
+> [!TIP]
+> In-place upgrade is the preferred method to use when migrating from Windows 10 to a later release of Windows 10, and is also a preferred method for upgrading from Windows 7 or 8.1 if you do not plan to significantly change the device's configuration or applications. MDT includes an in-place upgrade task sequence template that makes the process really simple. 
 
 In-place upgrade differs from [computer refresh](refresh-a-windows-7-computer-with-windows-10.md) in that you cannot use a custom image to perform the in-place upgrade. In this article we will add a default Windows 10 image to the production deployment share specifically to perform an in-place upgrade.
 

@@ -1,9 +1,9 @@
 ---
-title: Refresh a Windows 7 computer with Windows 10 (Windows 10)
-description: This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the computer refresh process.
+title: Refresh a Windows 10 computer with Windows 11 (Windows 11)
+description: This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 10 computer to a Windows 11 computer using the computer refresh process.
 ms.assetid: 2866fb3c-4909-4c25-b083-6fc1f7869f6f
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: reinstallation, customize, template, script, restore
 ms.prod: w10
@@ -16,10 +16,11 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Refresh a Windows 7 computer with Windows 10
+# Refresh a Windows 10 computer with Windows 11
 
 **Applies to**
--   Windows 10
+- Windows 10
+- Windows 11
 
 This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the online computer refresh process. The computer refresh scenario is a reinstallation of an updated operating system on the same computer. You can also use this procedure to reinstall the same OS version. In this article, the computer refresh will be done while the computer is online. MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property on the [MDT resource page](/mem/configmgr/mdt/).
 

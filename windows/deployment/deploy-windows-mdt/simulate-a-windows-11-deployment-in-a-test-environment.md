@@ -1,12 +1,12 @@
 ---
-title: Simulate a Windows 10 deployment in a test environment (Windows 10)
-description: This topic will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT.
+title: Simulate a Windows 11 deployment in a test environment (Windows 11)
+description: This topic will walk you through the process of creating a simulated environment on which to test your Windows 11 deployment using MDT.
 ms.assetid: 2de86c55-ced9-4078-b280-35e0329aea9c
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, script
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
@@ -16,7 +16,11 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Simulate a Windows 10 deployment in a test environment
+# Simulate a Windows 11 deployment in a test environment
+
+**Applies to**
+- Windows 10
+- Windows 11
 
 This topic will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT. When working with advanced settings and rules, especially those like database calls, it is most efficient to be able to test the settings without having to run through a complete deployment. Luckily, MDT enables you to perform a simulated deployment by running the Gather process by itself. The simulation works best when you are using a domain-joined client.
 

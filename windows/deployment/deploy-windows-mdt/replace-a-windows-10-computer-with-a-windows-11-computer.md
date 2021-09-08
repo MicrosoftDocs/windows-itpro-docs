@@ -1,13 +1,13 @@
 ---
-title: Replace a Windows 7 computer with a Windows 10 computer (Windows 10)
-description: In this article, you will learn how to replace a Windows 7 device with a Windows 10 device.
+title: Replace a Windows 10 computer with a Windows 11 computer (Windows 11)
+description: In this article, you will learn how to replace a Windows 10 device with a Windows 11 device.
 ms.custom: seo-marvel-apr2020
 ms.assetid: acf091c9-f8f4-4131-9845-625691c09a2a
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, deployment, replace
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
@@ -17,10 +17,11 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Replace a Windows 7 computer with a Windows 10 computer
+# Replace a Windows 10 computer with a Windows 11 computer
 
 **Applies to**
--   Windows 10
+- Windows 10
+- Windows 11
 
 A computer replace scenario for Windows 10 is quite similar to a computer refresh for Windows 10. However, because you are replacing a device, you cannot store the backup on the old computer. Instead you need to store the backup to a location where the new computer can read it. The User State Migration Tool (USMT) will be used to back up and restore data and settings. 
 

@@ -1,9 +1,9 @@
 ---
-title: Prepare for deployment with MDT (Windows 10)
+title: Prepare for deployment with MDT (Windows 11)
 description: This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT).
 ms.assetid: 5103c418-0c61-414b-b93c-a8e8207d1226
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, system requirements
 ms.prod: w10
@@ -19,7 +19,8 @@ ms.topic: article
 # Prepare for deployment with MDT
 
 **Applies to**
--   Windows 10
+- Windows 10
+- Windows 11
 
 This article will walk you through the steps necessary to prepare your network and server infrastructure to deploy Windows 10 with the Microsoft Deployment Toolkit (MDT). It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the file system and in Active Directory.
 

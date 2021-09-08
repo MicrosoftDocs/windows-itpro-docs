@@ -1,12 +1,12 @@
 ---
-title: Build a distributed environment for Windows 10 deployment (Windows 10)
-description: In this topic, you will learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations.
+title: Build a distributed environment for Windows 11 deployment (Windows 11)
+description: In this topic, you will learn how to replicate your Windows 11 deployment shares to facilitate the deployment of Windows 11 in remote or branch locations.
 ms.assetid: a6cd5657-6a16-4fff-bfb4-44760902d00c
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: replication, replicate, deploy, configure, remote
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
@@ -16,10 +16,11 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Build a distributed environment for Windows 10 deployment
+# Build a distributed environment for Windows 11 deployment
 
 **Applies to**
--   Windows 10
+- Windows 10
+- Windows 11
 
 Perform the steps in this article to build a distributed environment for Windows 10 deployment. A distributed environment for deployment is useful when you have a segmented network, for example one that is segmented geographically into two branch locations. If you work in a distributed environment, replicating the deployment shares is an important part of a deployment solution because images of 5 GB or more in size can present bandwidth issues when deployed over the wire. Replicating this content enables clients to do local deployments.
 
