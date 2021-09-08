@@ -52,7 +52,7 @@ For more general information, see [Configuration service provider reference](../
 - [Start/NoPinningToTaskbar](../client-management/mdm/policy-csp-start.md#start-nopinningtotaskbar)
 - Start/ShowOrHideMostUsedApps: New policy starting with Windows 11. This policy enforces always showing Most Used Apps, or always hiding Most Used Apps. If you use this policy, the [Start/HideFrequentlyUsedApps](../client-management/mdm/policy-csp-start.md#start-hidefrequentlyusedapps) policy is ignored.
 
-  The [Start/HideFrequentlyUsedApps](../client-management/mdm/policy-csp-start.md#start-hidefrequentlyusedapps) CSP is the previous version of this policy, and is available on Windows 10 and older devices. This policy enforces hiding Most Used Apps. You can't use this policy to enforce always showing Most Used Apps.
+  The [Start/HideFrequentlyUsedApps](../client-management/mdm/policy-csp-start.md#start-hidefrequentlyusedapps) policy enforces hiding Most Used Apps. You can't use this policy to enforce always showing Most Used Apps.
 
 ## Existing CSP policies that Windows 11 doesn't support
 
