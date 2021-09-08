@@ -222,6 +222,7 @@
 - name: Secured identity
   items:
 - name: Cloud services
+  href: cloud.md
   items:
 - name: User protection
   items:
