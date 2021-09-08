@@ -162,6 +162,7 @@ ms.date: 10/08/2020
 - [ADMX_DeviceInstallation/DeviceInstall_Removable_Deny](./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-removable-deny)
 - [ADMX_DeviceInstallation/DeviceInstall_SystemRestore](./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-systemrestore)
 - [ADMX_DeviceInstallation/DriverInstall_Classes_AllowUser](./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-classes-allowuser)
+- [ADMX_DeviceGuard/ConfigCIPolicy](./policy-csp-admx-deviceguard.md#admx-deviceguard-configcipolicy)
 - [ADMX_DeviceSetup/DeviceInstall_BalloonTips](./policy-csp-admx-devicesetup.md#admx-devicesetup-deviceinstall-balloontips)
 - [ADMX_DeviceSetup/DriverSearchPlaces_SearchOrderConfiguration](./policy-csp-admx-devicesetup.md#admx-devicesetup-driversearchplaces-searchorderconfiguration)
 - [ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1](./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-1)

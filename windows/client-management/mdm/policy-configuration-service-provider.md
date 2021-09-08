@@ -669,7 +669,6 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 <dl>
 
-            
 ### ADMX_DeviceInstallation policies  
 
 <dl>
