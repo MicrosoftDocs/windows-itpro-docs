@@ -18,34 +18,27 @@ ms.technology: mde
 
 # Microsoft Virus Initiative
 
-The Microsoft Virus Initiative (MVI) helps organizations to get their products working and integrated with Windows.
-
-MVI members receive access to Windows APIs and other technologies including IOAV, AMSI, and Cloud files. Members also get malware telemetry and samples and invitations to security-related events and conferences.
+The Microsoft Virus Initiative (MVI) helps organizations develop better-together security solutions that are performant, reliable, and aligned with Microsoft technology & strategy.
 
 ## Become a member
 
-You can request membership if you're a representative for an organization that develops and produces antimalware or antivirus technology. Your organization must meet the following requirements to qualify for the MVI program:
+You can request membership if you're a representative for an organization that develops and produces antimalware or antivirus technology. 
 
-1. Offer an antimalware or antivirus product that meets one of the following criteria:
+To qualify for the MVI program, your organization must meet all the following requirements.
 
-   * Your organization's own creation.
-   * Developed by using an SDK (engine and other components) from another MVI Partner company and your organization adds a custom UI and/or other functionality.
+1)	Your security solution either replaces or compliments Microsoft Defender Antivirus.
 
-2. Have your own malware research team unless you build a product based on an SDK.
+2)	Your organization is responsible for both developing and distributing app updates to end-customers that address compatibility with Windows.
 
-3. Be active and have a positive reputation in the antimalware industry.
+3)	Your organization must be active in the antimalware industry and have a positive reputation, as evidenced by participation in industry conferences or being reviewed in an industry standard report such as AV Comparatives, OPSWAT, or Gartner.
 
-   * Activity can include participation in industry conferences or being reviewed in an industry standard report such as AV Comparatives, OPSWAT, or Gartner.
+4)	Your organization must sign a non-disclosure agreement (NDA) with Microsoft.
 
-4. Be willing to sign a non-disclosure agreement (NDA) with Microsoft.
+5)	Your organization must sign a program license agreement. Maintaining this license agreement requires that you adhere to all program requirements for antimalware apps. These requirements define the behavior of antimalware apps necessary to ensure proper interaction with Windows.
 
-5. Be willing to sign a program license agreement.
+6)	You must submit your app to Microsoft for periodic performance testing and feature review.
 
-6. Be willing to adhere to program requirements for antimalware apps. These requirements define the behavior of antimalware apps necessary to ensure proper interaction with Windows.
-
-7. Submit your app to Microsoft for periodic performance testing.
-
-8. Certified through independent testing by at least one industry standard organization.
+7)	Your solution must be certified through independent testing by at least one industry standard organization, and yearly certification must be maintained.
 
 Test Provider | Lab Test Type |	Minimum Level / Score
 ------------- |---------------|----------------------
@@ -60,4 +53,4 @@ West Coast Labs |	Checkmark Certified </br> http://www.checkmarkcertified.com/sm
 
 ## Apply now
 
-If your organization meets these criteria and is interested in joining, [apply for membership now](https://www.microsoft.com/wdsi/alliances/apply-alliance-membership). For questions, [contact us for more information](https://www.microsoft.com/wdsi/alliances/collaboration-inquiry).
+If your organization meets these criteria and is interested in joining, [apply for membership now](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRxusDUkejalGp0OAgRTWC7BUQVRYUEVMNlFZUjFaUDY2T1U1UDVVU1NKVi4u).
