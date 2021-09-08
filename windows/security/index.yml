@@ -79,11 +79,11 @@ landingContent:
         - text: MDM and Windows 11
           url: mdm-windows.md
         - text: Your Microsoft Account
-          url: 
+          url: identity-protection/access-control/microsoft-accounts.md
         - text: OneDrive
-          url: 
+          url: https://docs.microsoft.com/onedrive/onedrive
         - text: Family safety
-          url: 
+          url: threat-protection/windows-defender-security-center/wdsc-family-options.md
 
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
