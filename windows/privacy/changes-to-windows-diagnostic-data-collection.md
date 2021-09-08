@@ -13,14 +13,14 @@ author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 07/21/2020
+ms.date: 09/08/2021
 ---
 
 # Changes to Windows diagnostic data collection
 
 **Applies to**
 - Windows 10, version 1903 and newer
-- The next version of Windows Server
+- Windows Server 2022
 
 Microsoft is committed to providing you with effective controls over your data and ongoing transparency into our data handling practices. As part of this effort, we are moving our major products and services to a model where data sent back to Microsoft from customer devices will be classified as either **Required** or **Optional**. We believe this will provide our customers with a simpler experience – information should be easier to find, easier to understand, and easier to act upon through the tools we provide.
 
@@ -36,7 +36,7 @@ This article is meant for IT administrators and explains the changes Windows is 
 
 In Windows 10, version 1903 and newer, you will see taxonomy updates in both the **Out-of-box-experience** (OOBE) and the **Diagnostics & feedback** privacy settings page. These changes are explained in the section named **Taxonomy** changes.
 
-Additionally, in an upcoming release of Windows 10, we’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. We’re also clarifying the Security diagnostic data level to reflect its behavior more accurately by changing it to **Diagnostic data off**. All these changes are explained in the section named **Behavioral changes**.
+Additionally, starting in Windows 11 and Windows Server 2022, we’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. We’re also clarifying the Security diagnostic data level to reflect its behavior more accurately by changing it to **Diagnostic data off**. All these changes are explained in the section named **Behavioral changes**.
 
 ## Taxonomy changes
 
@@ -50,9 +50,9 @@ Starting in Windows 10, version 1903 and newer, both the **Out-of-Box-Experience
 
 ## Behavioral changes
 
-In an upcoming release of Windows 10, we’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. If your devices are set to **Enhanced** when they are upgraded, the device settings will be evaluated to be at the more privacy-preserving setting of **Required diagnostic data**, which means that analytic services that leverage enhanced data collection may not work properly. For a list of services, see [Services that rely on Enhanced diagnostic data](#services-that-rely-on-enhanced-diagnostic-data). Administrators should read through the details and determine whether to apply these new policies to restore the same collection settings as they had before this change. For a list of steps, see [Configure a Windows 11 device to limit crash dumps and logs](#configure-a-windows-11-device-to-limit-crash-dumps-and-logs). For more information on services that rely on Enhanced diagnostic data, see [Services that rely on Enhanced diagnostic data](#services-that-rely-on-enhanced-diagnostic-data).
+Starting in Windows 11 and Windows Server 2022, we’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. If your devices are set to **Enhanced** when they are upgraded, the device settings will be evaluated to be at the more privacy-preserving setting of **Required diagnostic data**, which means that analytic services that leverage enhanced data collection may not work properly. For a list of services, see [Services that rely on Enhanced diagnostic data](#services-that-rely-on-enhanced-diagnostic-data). Administrators should read through the details and determine whether to apply these new policies to restore the same collection settings as they had before this change. For a list of steps, see [Configure a Windows 11 device to limit crash dumps and logs](#configure-a-windows-11-device-to-limit-crash-dumps-and-logs). For more information on services that rely on Enhanced diagnostic data, see [Services that rely on Enhanced diagnostic data](#services-that-rely-on-enhanced-diagnostic-data).
 
-Additionally, you will see the following policy changes in an upcoming release of Windows 10:
+Additionally, you will see the following policy changes starting in Windows 11 and Windows Server 2022:
 
 | Policy type | Current policy | Renamed policy |
 | --- | --- | --- |
@@ -93,10 +93,7 @@ The following provides information on the current configurations:
 
 ## New Windows diagnostic data processor configuration
 
-**Applies to**
-- Windows 10 Edu, Pro, Enterprise editions, version 1809 with July 2021 update and newer
-
-Enterprise customers will now have a new option for controlling their Windows diagnostic data for their Azure Active Directory joined devices.
+Starting in Windows 10 Education, Professional, and Enterprise editions, version 1809 with July 2021 update and newer, enterprise customers will now have a new option for controlling their Windows diagnostic data for their Azure Active Directory joined devices.
 
 Previously, enterprise customers had two options in managing their Windows diagnostic data: 1) allow Microsoft to be the [controller](/compliance/regulatory/gdpr#terminology) of that data and responsible for determining the purposes and means of the processing of Windows diagnostic data in order to improve the Windows 10 operating system and deliver analytical services, or 2) turn off diagnostic data flows altogether.
 
