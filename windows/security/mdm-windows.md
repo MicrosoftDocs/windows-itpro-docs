@@ -27,11 +27,11 @@ Windows 11 includes a management component that includes:
 
 ## MDM features and capabilities
 
-MDM includes several security features & capabilities, as described in the following table:
+MDM includes several security features & capabilities, as described in the following table:<br/><br/>
 
 | Feature/capability | Description |
 |:---|:---|
-| Remote wipe | When a device is lost or stolen, IT admins can attempt to wipe it remotely and make the data stored in memory and hard disks difficult to recover. A help desk agent might also want to reset devices to fix issues encountered by remote workers. Windows 10 and Windows 11 supports the Remote Wipe configuration service provider (CSP) so that MDM solutions can remotely initiate any of the following operations: <br/>- Reset the device and remove user accounts and data <br/>- Reset the device and clean the drive <br/>- Reset the device but persist user accounts and data |
+| Remote wipe | When a device is lost or stolen, IT admins can attempt to wipe it remotely and make the data stored in memory and hard disks difficult to recover. Help desk agents can also reset devices to fix issues that are encountered by remote workers.<br/><br/>Windows 10 and Windows 11 supports the remote wipe configuration service provider (CSP) so that MDM solutions can remotely initiate any of the following operations: <br/>- Reset the device and remove user accounts and data <br/>- Reset the device and clean the drive <br/>- Reset the device but persist user accounts and data |
 | Support for your work or school account | Adding a work or school account enables devices to connect to your work environment. You can join the device to an Active Directory domain, an Azure Active Directory (Azure AD) domain, or by quickly provisioning corporate owned devices so they meet the policy and security guidelines for the company. Easily configure the devices with the apps and settings the person needs to do their work through management solutions such as Microsoft Endpoint Manager (MEM). <br/><br/>When a device is joined to Azure AD and managed with MDM, it will bring the following security values: <br/>- Default fully managed user and device settings and policies<br/>- Single Sign On to all Microsoft Online Services<br/>- Full suite of password management capabilities, using Windows Hello For Business<br/>- Authentication uses Tokens<br/>- No use of consumer Microsoft Account identity | 
 | Config Lock |  |
 | Remote device attestation |  |
