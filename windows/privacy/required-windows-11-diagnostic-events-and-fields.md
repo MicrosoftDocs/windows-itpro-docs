@@ -17,7 +17,7 @@ ms.date: 09/08/2021
 ---
 
 
-# Windows 11 required diagnostic events and fields
+# Required Windows 11 diagnostic events and fields
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
