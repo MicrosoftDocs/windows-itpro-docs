@@ -47,7 +47,13 @@ Windows 11 can be configured with the [Microsoft MDM security baseline](/mem/int
 
 The MDM security baseline includes policies that cover the following areas:
 
-- Microsoft inbox security technology (such as BitLocker and Windows Defender SmartScreen), and Virtual-based security (exploit protection, Microsoft Defender Antivirus, and Windows Defender Firewall)
+- Microsoft inbox security technology
+    - BitLocker
+    - Windows Defender SmartScreen
+- Virtual-based security
+    - Exploit protection
+    - Microsoft Defender Antivirus
+    - Windows Defender Firewall
 - Restricting remote access to devices
 - Setting credential requirements for passwords and PINs
 - Restricting the use of legacy technology
