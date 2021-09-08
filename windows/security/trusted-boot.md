@@ -7,7 +7,7 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: conceptual
-ms.date: 09/07/2021
+ms.date: 09/08/2021
 ms.prod: w11
 ms.localizationpriority: medium
 ms.collection: 
@@ -20,7 +20,7 @@ f1.keywords: NOCSH
 
 *This article describes Secure Boot and Trusted Boot, security measures built into Windows 11.*
 
-Secure Boot and Trusted Boot help prevent malware and corrupted components from loading when a Windows 11 device is starting. Secure Boot starts with initial boot-up protection, and then Trusted Boot picks up where Secure Boot leaves off. Together, Secure Boot and Trusted Boot help to ensure your Windows 11 system boots up safely and securely.
+Secure Boot and Trusted Boot help prevent malware and corrupted components from loading when a Windows 11 device is starting. Secure Boot starts with initial boot-up protection, and then Trusted Boot picks up the process. Together, Secure Boot and Trusted Boot help to ensure your Windows 11 system boots up safely and securely.
 
 ## Secure Boot
 
@@ -30,7 +30,7 @@ As the PC begins the boot process, it will first verify that the firmware is dig
 
 ## Trusted Boot
 
-Trusted Boot takes over where Secure Boot leaves off. The Windows bootloader verifies the digital signature of the Windows kernel before loading it. The Windows kernel, in turn, verifies every other component of the Windows startup process, including boot drivers, startup files, and your antimalware product’s early-launch antimalware (ELAM) driver. If any of these files were tampered, the bootloader detects the problem and refuses to load the corrupted component. Tampering or malware attacks on the Windows boot sequence are blocked by the signature-enforcement handshakes between the UEFI, bootloader, kernel, and application environments.
+Trusted Boot picks up the process that started with Secure Boot. The Windows bootloader verifies the digital signature of the Windows kernel before loading it. The Windows kernel, in turn, verifies every other component of the Windows startup process, including boot drivers, startup files, and your antimalware product’s early-launch antimalware (ELAM) driver. If any of these files were tampered, the bootloader detects the problem and refuses to load the corrupted component. Tampering or malware attacks on the Windows boot sequence are blocked by the signature-enforcement handshakes between the UEFI, bootloader, kernel, and application environments.
 
 Often, Windows can automatically repair the corrupted component, restoring the integrity of Windows and allowing the Windows 11 device to start normally.
 
