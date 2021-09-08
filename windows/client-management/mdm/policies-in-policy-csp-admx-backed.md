@@ -152,6 +152,8 @@ ms.date: 10/08/2020
 - [ADMX_Desktop/sz_DB_DragDropClose](./policy-csp-admx-desktop.md#admx-desktop-sz-db-dragdropclose)
 - [ADMX_Desktop/sz_DB_Moving](./policy-csp-admx-desktop.md#admx-desktop-sz-db-moving)
 - [ADMX_Desktop/sz_DWP_NoHTMLPaper](./policy-csp-admx-desktop.md#admx-desktop-sz-dwp-nohtmlpaper)
+- [ADMX_DeviceCompat/DeviceFlags](./policy-csp-admx-devicecompat.md#admx-devicecompat-deviceflags)
+- [ADMX_DeviceCompat/DriverShims](./policy-csp-admx-devicecompat.md#admx-devicecompat-drivershims)
 - [ADMX_DeviceInstallation/DeviceInstall_AllowAdminInstall](./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-allowadmininstall)
 - [ADMX_DeviceInstallation/DeviceInstall_DeniedPolicy_DetailText](./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-deniedpolicy-detailtext)
 - [ADMX_DeviceInstallation/DeviceInstall_DeniedPolicy_SimpleText](./policy-csp-admx-deviceinstallation.md#admx-deviceinstallation-deviceinstall-deniedpolicy-simpletext)
