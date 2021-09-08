@@ -218,8 +218,10 @@
      - name: Microsoft Defender for Endpoint
        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint
 - name: Application security
+  href: apps.md
   items:
 - name: Secured identity
+  href: identity.md
   items:
 - name: Cloud services
   href: cloud.md
