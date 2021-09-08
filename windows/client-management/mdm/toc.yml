@@ -443,6 +443,8 @@ items:
               href: policy-csp-admx-dcom.md
             - name: ADMX_Desktop
               href: policy-csp-admx-desktop.md
+            - name: ADMX_DeviceCompat
+              href: policy-csp-admx-devicecompat.md  
             - name: ADMX_DeviceInstallation
               href: policy-csp-admx-deviceinstallation.md
             - name: ADMX_DeviceSetup

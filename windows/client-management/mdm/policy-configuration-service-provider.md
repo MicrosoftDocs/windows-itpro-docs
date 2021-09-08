@@ -657,7 +657,19 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-desktop.md#admx-desktop-sz-dwp-nohtmlpaper" id="admx-desktop-sz-dwp-nohtmlpaper">ADMX_Desktop/sz_DWP_NoHTMLPaper</a>
   </dd>
 </dl>
-                                                                                                              
+
+### ADMX_DeviceCompat policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-devicecompat.md#admx-devicecompat-deviceflags" id="#admx-devicecompat-deviceflags">ADMX_DeviceCompat/DeviceFlags</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-devicecompat.md#admx-devicecompat-drivershims" id="#admx-devicecompat-drivershims">ADMX_DeviceCompat/DriverShims</a>
+  </dd>
+<dl>
+
+            
 ### ADMX_DeviceInstallation policies  
 
 <dl>
