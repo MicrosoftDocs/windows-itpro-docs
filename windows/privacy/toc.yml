@@ -15,8 +15,8 @@
           href: Microsoft-DiagnosticDataViewer.md
     - name: Required Windows diagnostic data events and fields
       items: 
-        - name: Windows 11, version xxxx required Windows diagnostic data events and fields
-          href: required-windows-diagnostic-data-events-and-fields-cobalt.md
+        - name: Windows 11 required diagnostic data events and fields
+          href: required-windows-11-diagnostic-events-and-fields.md
         - name: Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic data events and fields
           href: required-windows-diagnostic-data-events-and-fields-2004.md
         - name: Windows 10, version 1909 and Windows 10, version 1903 required level Windows diagnostic events and fields
