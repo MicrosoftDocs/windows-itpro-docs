@@ -16,9 +16,9 @@ ms.reviewer: jsuther
 f1.keywords: NOCSH  
 ---
 
-# Trusted Boot
+# Secure Boot and Trusted Boot
 
-This article describes Trusted Boot, a security measure built into Windows 11 to prevent malware and corrupted components from loading when a Windows 11 device is starting. Trusted Boot picks up where Secure Boot leaves off, helping to ensure your Windows 11 system boots up safely and securely.
+This article describes Secure Boot and Trusted Boot, security measures built into Windows 11 to prevent malware and corrupted components from loading when a Windows 11 device is starting. Secure Boot starts with initial boot-up protection, and then Trusted Boot picks up where Secure Boot leaves off. Together, Secure Boot and Trusted Boot help to ensure your Windows 11 system boots up safely and securely.
 
 ## Secure Boot
 
