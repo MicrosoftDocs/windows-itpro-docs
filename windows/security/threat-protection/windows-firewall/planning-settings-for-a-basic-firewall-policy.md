@@ -1,5 +1,5 @@
 ---
-title: Planning Settings for a Basic Firewall Policy (Windows 10)
+title: Planning Settings for a Basic Firewall Policy (Windows)
 description: Learn how to design a basic policy for Windows Defender Firewall with Advanced Security, the settings and rules that enforce your requirements on devices.
 ms.assetid: 4c90df5a-3cbc-4b85-924b-537c2422d735
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 After you have identified your requirements, and have the information about the network layout and devices available, you can begin to design the GPO settings and rules that will enable you to enforce your requirements on the devices.
 

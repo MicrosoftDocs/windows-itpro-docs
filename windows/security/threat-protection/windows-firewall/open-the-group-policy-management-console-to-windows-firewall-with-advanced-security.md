@@ -1,5 +1,5 @@
 ---
-title: Group Policy Management of Windows Firewall with Advanced Security (Windows 10)
+title: Group Policy Management of Windows Firewall with Advanced Security (Windows)
 description: Group Policy Management of Windows Firewall with Advanced Security
 ms.assetid: 28afab36-8768-4938-9ff2-9d6dab702e98
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 Most of the procedures in this guide instruct you to use Group Policy settings for Windows Firewall with Advanced Security.
 

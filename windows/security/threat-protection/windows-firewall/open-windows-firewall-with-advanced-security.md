@@ -1,5 +1,5 @@
 ---
-title: Open Windows Defender Firewall with Advanced Security (Windows 10)
+title: Open Windows Defender Firewall with Advanced Security (Windows)
 description: Learn how to open the Windows Defender Firewall with Advanced Security console. You must be a member of the Administrators group.
 ms.assetid: 788faff2-0f50-4e43-91f2-3e2595c0b6a1
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This procedure shows you how to open the Windows Defender Firewall with Advanced Security console.
 
