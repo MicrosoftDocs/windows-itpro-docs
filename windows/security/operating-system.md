@@ -22,8 +22,8 @@ Use the links in the following table to learn more about the operating system se
 | Security Measures | Features & Capabilities |
 |:---|:---|
 | System security | [Trusted Boot](os-security/trusted-boot.md) (includes Secure Boot and Measured Boot) <br/><br/>[Cryptography and certificate management](os-security/cryptography-certificate-mgmt.md) <br/><br/>[Windows Security app](os-security/windows-security-app.md) |
-| Encryption and data protection | [Encryption](os-security/encryption-data-protection.md)<br/><br/>[BitLocker](information-protection/bitlocker/bitlocker-overview.md) |
+| Encryption and data protection | [Encryption and data protection in Windows 11](os-security/encryption-data-protection.md)<br/><br/>[Encryption](os-security/encryption-data-protection.md)<br/><br/>[BitLocker](information-protection/bitlocker/bitlocker-overview.md) |
 | Network security | Virtual Private Networks (VPNs)<br/><br/>Windows Defender Firewall<br/><br/>Bluetooth<br/><br/>DSN security<br/><br/>Windows Wi-Fi<br/><br/>Transport Layer Security (TLS) |
-| Protection from viruses and threats | Microsoft Defender Antivirus<br/>Attack surface reduction<br/>Tamper protection<br/>Network protection<br/>Controlled folder access<br/>Exploit protection<br/>Additional protection with Microsoft Defender for Endpoint |
+| Protection from viruses and threats | Microsoft Defender Antivirus<br/><br/>Attack surface reduction<br/><br/>Tamper protection<br/><br/>Network protection<br/><br/>Controlled folder access<br/><br/>Exploit protection<br/><br/>Additional protection with Microsoft Defender for Endpoint |
 
 
