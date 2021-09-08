@@ -38,13 +38,13 @@
    - name: System security   
      items:
      - name: Trusted Boot
-       href: os-security/trusted-boot.md
+       href: trusted-boot.md
      - name: Cryptography and certificate management
-       href: os-security/cryptography-certificate-mgmt.md
+       href: cryptography-certificate-mgmt.md
      - name: Windows Security app in Windows 11
-       href: os-security/windows-security-app.md
+       href: windows-security-app.md
    - name: Encryption and data protection 
-     href: os-security/encryption-data-protection.md
+     href: encryption-data-protection.md
      items:
      
      - name: Encrypted Hard Drive
