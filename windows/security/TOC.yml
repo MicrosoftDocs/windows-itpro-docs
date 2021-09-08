@@ -45,6 +45,7 @@
        href: os-security/windows-security-app.md
    - name: Encryption and data protection
      items:
+     - name: Overview 
      - name: Encrypted Hard Drive
        href: information-protection/encrypted-hard-drive.md
      - name: Bitlocker 
