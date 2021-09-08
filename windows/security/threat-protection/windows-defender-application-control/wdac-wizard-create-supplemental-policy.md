@@ -22,12 +22,17 @@ ms.technology: mde
 # Creating a new Supplemental Policy with the Wizard
 
 **Applies to**
--   Windows 10
--   Windows Server 2016 and above
 
-Beginning in Windows 10 version 1903, WDAC supports the creation of multiple active policies on a device. One or more supplemental policies allow customers to expand a [WDAC base policy](wdac-wizard-create-base-policy.md) to increase the circle of trust of the policy. A supplemental policy can expand only one base policy, but multiple supplementals can expand the same base policy. When using supplemental policies, applications allowed by the base or its supplemental policy/policies will be allowed to execute. 
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
-Prerequisite information about application control can be accessed through the [WDAC design guide](windows-defender-application-control-design-guide.md). This page outlines the steps to create a supplemental application control policy, configure the policy options, and the signer and file rules. 
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+
+Beginning in Windows 10 version 1903, WDAC supports the creation of multiple active policies on a device. One or more supplemental policies allow customers to expand a [WDAC base policy](wdac-wizard-create-base-policy.md) to increase the circle of trust of the policy. A supplemental policy can expand only one base policy, but multiple supplementals can expand the same base policy. When using supplemental policies, applications allowed by the base or its supplemental policy/policies will be allowed to execute.
+
+Prerequisite information about application control can be accessed through the [WDAC design guide](windows-defender-application-control-design-guide.md). This page outlines the steps to create a supplemental application control policy, configure the policy options, and the signer and file rules.
 
 ## Expanding a Base Policy
 

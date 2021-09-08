@@ -45,68 +45,68 @@ EnterpriseAppVManagement
 ------------Policy
 ```
 **./Vendor/MSFT/EnterpriseAppVManagement**  
-<p style="margin-left: 20px">Root node for the EnterpriseAppVManagement configuration service provider.</p>
+<p>Root node for the EnterpriseAppVManagement configuration service provider.</p>
 
 **AppVPackageManagement**  
-<p style="margin-left: 20px">Used to query App-V package information (post-publish).</p> 
+<p>Used to query App-V package information (post-publish).</p> 
 
 **AppVPackageManagement/EnterpriseID**  
-<p style="margin-left: 20px">Used to query package information. Value is always &quot;HostedInstall&quot;.</p>
+<p>Used to query package information. Value is always &quot;HostedInstall&quot;.</p>
 
 **AppVPackageManagement/EnterpriseID/PackageFamilyName**  
-<p style="margin-left: 20px">Package ID of the published App-V package.</p>
+<p>Package ID of the published App-V package.</p>
 
 **AppVPackageManagement/*EnterpriseID*/*PackageFamilyName*/*PackageFullName***  
-<p style="margin-left: 20px">Version ID of the published App-V package.</p>
+<p>Version ID of the published App-V package.</p>
 
 **AppVPackageManagement/*EnterpriseID*/*PackageFamilyName*/*PackageFullName*/Name**  
-<p style="margin-left: 20px">Name specified in the published AppV package.</p>
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Name specified in the published AppV package.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPackageManagement/*EnterpriseID*/*PackageFamilyName*/*PackageFullName*/Version**  
-<p style="margin-left: 20px">Version specified in the published AppV package.</p>
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Version specified in the published AppV package.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPackageManagement/*EnterpriseID*/*PackageFamilyName*/*PackageFullName*/Publisher**  
-<p style="margin-left: 20px">Publisher as specified in the published asset information of the AppV package.</p>
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Publisher as specified in the published asset information of the AppV package.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPackageManagement/*EnterpriseID*/*PackageFamilyName*/*PackageFullName*/InstallLocation**  
-<p style="margin-left: 20px">Local package path specified in the published asset information of the AppV package.</p>
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Local package path specified in the published asset information of the AppV package.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPackageManagement/*EnterpriseID*/*PackageFamilyName*/*PackageFullName*/InstallDate**  
-<p style="margin-left: 20px">Date the app was installed, as specified in the published asset information of the AppV package.</p>
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Date the app was installed, as specified in the published asset information of the AppV package.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPackageManagement/*EnterpriseID*/*PackageFamilyName*/*PackageFullName*/Users**  
-<p style="margin-left: 20px">Registered users for app, as specified in the published asset information of the AppV package.</p>
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Registered users for app, as specified in the published asset information of the AppV package.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPackageManagement/*EnterpriseID*/*PackageFamilyName*/*PackageFullName*/AppVPackageId**  
-<p style="margin-left: 20px">   Package ID of the published App-V package.</p>
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>   Package ID of the published App-V package.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPackageManagement/*EnterpriseID*/*PackageFamilyName*/*PackageFullName*/AppVVersionId**  
-<p style="margin-left: 20px">Version ID of the published App-V package.</p>
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Version ID of the published App-V package.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPackageManagement/*EnterpriseID*/*PackageFamilyName*/*PackageFullName*/AppVPackageUri**  
-<p style="margin-left: 20px">Package URI of the published App-V package.</p>
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Package URI of the published App-V package.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPublishing**  
-<p style="margin-left: 20px">Used to monitor publishing operations on App-V.</p>
+<p>Used to monitor publishing operations on App-V.</p>
 
 **AppVPublishing/LastSync**  
-<p style="margin-left: 20px">Used to monitor publishing status of last sync operation.</p>
+<p>Used to monitor publishing status of last sync operation.</p>
 
 **AppVPublishing/LastSync/LastError**  
-<p style="margin-left: 20px">Error code and error description of last sync operation.</p>
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Error code and error description of last sync operation.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPublishing/LastSync/LastErrorDescription**  
-<p style="margin-left: 20px">Last sync error status. One of the following values may be returned:</p>
+<p>Last sync error status. One of the following values may be returned:</p>
 
 - SYNC\_ERR_NONE (0) - No errors during publish.
 - SYNC\_ERR\_UNPUBLISH_GROUPS (1) - Unpublish groups failed during publish.
@@ -116,10 +116,10 @@ EnterpriseAppVManagement
 - SYNC\_ERR\_NEW_POLICY_WRITE (5) - New policy write failed during publish.
 - SYNC\_ERR\_MULTIPLE\_DURING_PUBLISH (6) - Multiple non-fatal errors occurred during publish.
 
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPublishing/LastSync/SyncStatusDescription**  
-<p style="margin-left: 20px">Latest sync in-progress stage. One of the following values may be returned:</p>
+<p>Latest sync in-progress stage. One of the following values may be returned:</p>
 
 - SYNC\_PROGRESS_IDLE (0) - App-V publishing is idle.
 - SYNC\_PROGRESS\_UNPUBLISH_GROUPS (1) - App-V connection groups publish in progress.
@@ -127,9 +127,9 @@ EnterpriseAppVManagement
 - SYNC\_PROGRESS\_PUBLISH\_GROUP_PACKAGES (3) - App-V packages (connection group) publish in progress.
 - SYN\C_PROGRESS_UNPUBLISH_PACKAGES (4) - App-V packages unpublish in progress.
 
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
-<strong>AppVPublishing/LastSync/SyncProgress</strong><br/><p style="margin-left: 20px">Latest sync state. One of the following values may be returned:</p>
+<strong>AppVPublishing/LastSync/SyncProgress</strong><br/><p>Latest sync state. One of the following values may be returned:</p>
 
 - SYNC\_STATUS_IDLE (0) - App-V Sync is idle.
 - SYNC\_STATUS\_PUBLISH_STARTED (1) - App-V Sync is initializing.
@@ -137,22 +137,22 @@ EnterpriseAppVManagement
 - SYNC\_STATUS\_PUBLISH\_COMPLETED (3) - App-V Sync is complete.
 - SYNC\_STATUS\_PUBLISH\_REBOOT_REQUIRED (4) - App-V Sync requires device reboot.
 
-<p style="margin-left: 20px">Value type is string. Supported operation is Get.</p>
+<p>Value type is string. Supported operation is Get.</p>
 
 **AppVPublishing/Sync**  
-<p style="margin-left: 20px">Used to perform App-V synchronization.</p>
+<p>Used to perform App-V synchronization.</p>
 
 **AppVPublishing/Sync/PublishXML**  
-<p style="margin-left: 20px">Used to execute the App-V synchronization using the Publishing protocol. For more information about the protocol see <a href="/openspecs/windows_protocols/ms-vapr/a05e030d-4fb9-4c8d-984b-971253b62be8" data-raw-source="[[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol](/openspecs/windows_protocols/ms-vapr/a05e030d-4fb9-4c8d-984b-971253b62be8)">[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol</a>.</p>
-<p style="margin-left: 20px">Supported operations are Get, Delete, and Execute.</p>
+<p>Used to execute the App-V synchronization using the Publishing protocol. For more information about the protocol see <a href="/openspecs/windows_protocols/ms-vapr/a05e030d-4fb9-4c8d-984b-971253b62be8" data-raw-source="[[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol](/openspecs/windows_protocols/ms-vapr/a05e030d-4fb9-4c8d-984b-971253b62be8)">[MS-VAPR]: Virtual Application Publishing and Reporting (App-V) Protocol</a>.</p>
+<p>Supported operations are Get, Delete, and Execute.</p>
 
 
 **AppVDynamicPolicy**  
-<p style="margin-left: 20px">Used to set App-V Policy Configuration documents for publishing packages.</p>
+<p>Used to set App-V Policy Configuration documents for publishing packages.</p>
 
 **AppVDynamicPolicy/*ConfigurationId***  
-<p style="margin-left: 20px">ID for App-V Policy Configuration document for publishing packages (referenced in the Publishing protocol document).</p>
+<p>ID for App-V Policy Configuration document for publishing packages (referenced in the Publishing protocol document).</p>
 
 **AppVDynamicPolicy/*ConfigurationId*/Policy**  
-<p style="margin-left: 20px">XML for App-V Policy Configuration documents for publishing packages.</p>
-<p style="margin-left: 20px">Value type is xml. Supported operations are Add, Get, Delete, and Replace.</p>
+<p>XML for App-V Policy Configuration documents for publishing packages.</p>
+<p>Value type is xml. Supported operations are Add, Get, Delete, and Replace.</p>

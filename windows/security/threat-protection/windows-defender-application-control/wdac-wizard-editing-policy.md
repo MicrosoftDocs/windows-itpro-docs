@@ -22,8 +22,13 @@ ms.technology: mde
 # Editing existing base and supplemental WDAC policies with the Wizard
 
 **Applies to**
--   Windows 10
--   Windows Server 2016 and above
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 The WDAC Wizard makes editing and viewing WDAC policies easier than the PowerShell cmdlets or manually. The Wizard currently supports the following editing capabilities: 
 <ul>

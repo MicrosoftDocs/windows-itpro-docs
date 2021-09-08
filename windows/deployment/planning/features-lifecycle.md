@@ -1,5 +1,5 @@
 ---
-title: Windows 10 features lifecycle
+title: Windows client features lifecycle
 description: Learn about the lifecycle of Windows 10 features, as well as features that are no longer developed, removed features, and terminology assigned to a feature.
 ms.prod: w10
 ms.mktglfcycl: plan
@@ -14,9 +14,11 @@ ms.custom: seo-marvel-apr2020
 ---
 # Windows 10 features lifecycle
 
-- Applies to: Windows 10
+Applies to: 
+- Windows 10
+- Windows 11
 
-Each release of Windows 10 contains many new and improved features. Occasionally we also remove features and functionality, usually because there is a better option.
+Each release of Windows 10 and Windows 11 contains many new and improved features. Occasionally we also remove features and functionality, usually because there is a better option.
 
 ## Features no longer being developed
 
@@ -26,7 +28,7 @@ The following topic lists features that are no longer being developed. These fea
 
 ## Features removed
 
-The following topic has details about features that have been removed from Windows 10.
+The following topics have details about features that have been removed from Windows 10 or Windows 11. This includes features that are present in Windows 10, but are removed in Windows 11.
 
 [Windows 10 features we removed](windows-10-removed-features.md)
 

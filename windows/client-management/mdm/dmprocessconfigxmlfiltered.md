@@ -62,25 +62,25 @@ HRESULT STDAPICALLTYPE DMProcessConfigXMLFiltered(
 ## Parameters
 
 *pszXmlIn*
-<ul style="list-style-type:none">
+<ul>
 <li>[in] The null–terminated input XML buffer containing the configuration data. The parameter holds the XML that will be used to configure the phone. <strong>DMProcessConfigXMLFiltered</strong> accepts only OMA Client Provisioning XML (also known as WAP provisioning). It does not accept OMA DM SyncML XML (also known as SyncML).</li>
 </ul>
 <br>
 
 *rgszAllowedCspNode*
-<ul style="list-style-type:none">
+<ul>
 <li>[in] Array of <strong>WCHAR\</strong>* that specify which configuration service provider nodes are allowed to be invoked.</li>
 </ul>
 <br>
 
 *dwNumAllowedCspNodes*
-<ul style="list-style-type:none">
+<ul>
 <li>[in] Number of elements passed in <em>rgszAllowedCspNode</em>.</li>
 </ul>
 <br> 
 
 *pbstrXmlOut*
-<ul style="list-style-type:none">
+<ul>
 <li>[out] The resulting null–terminated XML from configuration. The caller of <strong>DMProcessConfigXMLFiltered</strong> is responsible for cleanup of the output buffer that the <em>pbstrXmlOut</em> parameter references. Use <a href="/windows/win32/api/oleauto/nf-oleauto-sysfreestring" data-raw-source="[**SysFreeString**](/windows/win32/api/oleauto/nf-oleauto-sysfreestring)"><strong>SysFreeString</strong></a> to free the memory.</li>
 </ul>
 <br>
@@ -104,24 +104,24 @@ Returns the standard **HRESULT** value **S\_OK** to indicate success. The follow
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p><strong>CONFIG_E_OBJECTBUSY</strong></p></td>
-<td style="vertical-align:top"><p>Another instance of the configuration management service is currently running.</p></td>
+<td><p><strong>CONFIG_E_OBJECTBUSY</strong></p></td>
+<td><p>Another instance of the configuration management service is currently running.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p><strong>CONFIG_E_ENTRYNOTFOUND</strong></p></td>
-<td style="vertical-align:top"><p>No metabase entry was found.</p></td>
+<td><p><strong>CONFIG_E_ENTRYNOTFOUND</strong></p></td>
+<td><p>No metabase entry was found.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p><strong>CONFIG_E_CSPEXCEPTION</strong></p></td>
-<td style="vertical-align:top"><p>An exception occurred in one of the configuration service providers.</p></td>
+<td><p><strong>CONFIG_E_CSPEXCEPTION</strong></p></td>
+<td><p>An exception occurred in one of the configuration service providers.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p><strong>CONFIG_E_TRANSACTIONINGFAILURE</strong></p></td>
-<td style="vertical-align:top"><p>A configuration service provider failed to roll back properly. The affected settings might be in an unknown state.</p></td>
+<td><p><strong>CONFIG_E_TRANSACTIONINGFAILURE</strong></p></td>
+<td><p>A configuration service provider failed to roll back properly. The affected settings might be in an unknown state.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p><strong>CONFIG_E_BAD_XML</strong></p></td>
-<td style="vertical-align:top"><p>The XML input is invalid or malformed.</p></td>
+<td><p><strong>CONFIG_E_BAD_XML</strong></p></td>
+<td><p>The XML input is invalid or malformed.</p></td>
 </tr>
 </tbody>
 </table>
@@ -196,28 +196,28 @@ if ( bstr != NULL )
 </colgroup>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>Minimum supported client</p></td>
-<td style="vertical-align:top"><p>None supported</p></td>
+<td><p>Minimum supported client</p></td>
+<td><p>None supported</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Minimum supported server</p></td>
-<td style="vertical-align:top"><p>None supported</p></td>
+<td><p>Minimum supported server</p></td>
+<td><p>None supported</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>Minimum supported phone</p></td>
-<td style="vertical-align:top"><p>Windows Phone 8.1</p></td>
+<td><p>Minimum supported phone</p></td>
+<td><p>Windows Phone 8.1</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Header</p></td>
-<td style="vertical-align:top"><p>Dmprocessxmlfiltered.h</p></td>
+<td><p>Header</p></td>
+<td><p>Dmprocessxmlfiltered.h</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>Library</p></td>
-<td style="vertical-align:top"><p>Dmprocessxmlfiltered.lib</p></td>
+<td><p>Library</p></td>
+<td><p>Dmprocessxmlfiltered.lib</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>DLL</p></td>
-<td style="vertical-align:top"><p>Dmprocessxmlfiltered.dll</p></td>
+<td><p>DLL</p></td>
+<td><p>Dmprocessxmlfiltered.dll</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,5 +1,5 @@
 ---
-title: Understand Windows Defender Application Control policy design decisions  (Windows 10)
+title: Understand Windows Defender Application Control policy design decisions  (Windows)
 description: Understand Windows Defender Application Control policy design decisions.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,8 +22,12 @@ ms.technology: mde
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 This topic is for the IT professional and lists the design questions, possible answers, and ramifications of the decisions when you plan a deployment of application control policies by using Windows Defender Application Control (WDAC) within a Windows operating system environment.
 
@@ -70,7 +74,7 @@ Traditional Win32 apps on Windows can run without being digitally signed. This p
 | Possible answers | Design considerations |
 | - | - |
 | All apps used in your organization must be signed. | Organizations that enforce [codesigning](use-code-signing-to-simplify-application-control-for-classic-windows-applications.md) for all executable code are best-positioned to protect their Windows computers from malicious code execution. WDAC rules can be created to authorize apps and binaries from the organization's internal development teams and from trusted independent software vendors (ISV). |
-| Apps used in your organization do not need to meet any codesigning requirements. | Organizations can  [use built-in Windows 10 tools](deploy-catalog-files-to-support-windows-defender-application-control.md) to add organization-specific App Catalog signatures to existing apps as a part of the app deployment process, which can be used to authorize code execution. Solutions like Microsoft Endpoint Manager offer multiple ways to distribute signed App Catalogs. | 
+| Apps used in your organization do not need to meet any codesigning requirements. | Organizations can  [use built-in Windows tools](deploy-catalog-files-to-support-windows-defender-application-control.md) to add organization-specific App Catalog signatures to existing apps as a part of the app deployment process, which can be used to authorize code execution. Solutions like Microsoft Endpoint Manager offer multiple ways to distribute signed App Catalogs. | 
  
 ### Are there specific groups in your organization that need customized application control policies?
 
@@ -79,7 +83,7 @@ Most business teams or departments have specific security requirements that pert
 | Possible answers | Design considerations |
 | - | - |
 | Yes | WDAC policies can be created unique per team, or team-specific supplemental policies can be used to expand what is allowed by a common, centrally defined base policy.|
-| No | WDAC policies can be applied globally to applications that are installed on PCs running Windows 10. Depending on the number of apps you need to control, managing all the rules and exceptions might be challenging.|
+| No | WDAC policies can be applied globally to applications that are installed on PCs running Windows 10 and Windows 11. Depending on the number of apps you need to control, managing all the rules and exceptions might be challenging.|
 
 ### Does your IT department have resources to analyze application usage, and to design and manage the policies?
 
@@ -88,7 +92,7 @@ The time and resources that are available to you to perform the research and ana
 | Possible answers | Design considerations |
 | - | - |
 | Yes | Invest the time to analyze your organization's application control requirements, and plan a complete deployment that uses rules that are constructed as simply as possible.|
-| No | Consider a focused and phased deployment for specific groups by using a small number of rules. As you apply controls to applications in a specific group, learn from that deployment to plan your next deployment. Alternatively, you can create a policy with a broad trust profile to authorize as many apps as possible. |
+| No | Consider a focused and phased deployment for specific groups by using few rules. As you apply controls to applications in a specific group, learn from that deployment to plan your next deployment. Alternatively, you can create a policy with a broad trust profile to authorize as many apps as possible. |
 
 ### Does your organization have Help Desk support?
 

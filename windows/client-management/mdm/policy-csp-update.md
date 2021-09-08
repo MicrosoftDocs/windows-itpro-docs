@@ -1747,7 +1747,7 @@ Other/cannot defer:
   Any update category not specifically enumerated above falls into this category.
       - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
 
-<!--<table style="margin-left: 20px">
+<!--<table>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1764,16 +1764,16 @@ Other/cannot defer:
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>OS upgrade</p></td>
-<td style="vertical-align:top"><p>8 months</p></td>
-<td style="vertical-align:top"><p>1 month</p></td>
-<td style="vertical-align:top"><p>Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</p></td>
+<td><p>OS upgrade</p></td>
+<td><p>8 months</p></td>
+<td><p>1 month</p></td>
+<td><p>Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Update</p></td>
-<td style="vertical-align:top"><p>1 month</p></td>
-<td style="vertical-align:top"><p>1 week</p></td>
-<td style="vertical-align:top"><div class="alert">
+<td><p>Update</p></td>
+<td><p>1 month</p></td>
+<td><p>1 week</p></td>
+<td><div class="alert">
 <strong>Note</strong>
 If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
 </div>
@@ -1789,10 +1789,10 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </ul></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>Other/cannot defer</p></td>
-<td style="vertical-align:top"><p>No deferral</p></td>
-<td style="vertical-align:top"><p>No deferral</p></td>
-<td style="vertical-align:top"><p>Any update category not specifically enumerated above falls into this category.</p>
+<td><p>Other/cannot defer</p></td>
+<td><p>No deferral</p></td>
+<td><p>No deferral</p></td>
+<td><p>Any update category not specifically enumerated above falls into this category.</p>
 <p>Definition Update - E0789628-CE08-4437-BE74-2495B842F43B</p></td>
 </tr>
 </tbody>

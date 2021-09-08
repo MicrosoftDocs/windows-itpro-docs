@@ -30,7 +30,7 @@ Welcome to Microsoft Education Trial in a Box. We built this trial to make it ea
 
 | [![Get started for Educators.](images/teacher_rotated_resized.png)](educator-tib-get-started.md) | [![Get started for IT Admins](images/itadmin_rotated_resized.png)](itadmin-tib-get-started.md) |
 | :---: | :---: | 
-| <span style="font-size: 1.5em">**Educator**</span></br>Enhance students of all abilities by unleashing their creativity, collaboration, and improving problem-solving skills. </br>[Get started](educator-tib-get-started.md) | <span style="font-size: 1.5em">**IT Admin**</span></br>Quickly implement and deploy a full cloud infrastructure that's secure and easy to manage. </br> [Get started](itadmin-tib-get-started.md) |
+| <span>**Educator**</span></br>Enhance students of all abilities by unleashing their creativity, collaboration, and improving problem-solving skills. </br>[Get started](educator-tib-get-started.md) | <span>**IT Admin**</span></br>Quickly implement and deploy a full cloud infrastructure that's secure and easy to manage. </br> [Get started](itadmin-tib-get-started.md) |
 
 
 

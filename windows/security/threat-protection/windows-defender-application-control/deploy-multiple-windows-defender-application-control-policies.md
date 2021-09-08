@@ -1,5 +1,5 @@
 ---
-title: Use multiple Windows Defender Application Control Policies  (Windows 10)
+title: Use multiple Windows Defender Application Control Policies  (Windows)
 description: Windows Defender Application Control supports multiple code integrity policies for one device.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,8 +22,12 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10 version 1903 and above
-- Windows Server 2022 and above
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 Prior to Windows 10 1903, WDAC only supported a single active policy on a system at any given time. This significantly limited customers in situations where multiple policies with different intents would be useful. Beginning with Windows 10 version 1903, WDAC supports up to 32 active policies on a device at once in order to enable the following scenarios:
 

@@ -1,6 +1,6 @@
 ---
 title: Windows Sandbox
-description: 
+description: Windows Sandbox overview
 ms.prod: m365-security
 audience: ITPro
 author: dansimp
@@ -36,7 +36,7 @@ The following video provides an overview of Windows Sandbox.
 
 ## Prerequisites
  
-- Windows 10 Pro, Enterprise or Education build 18305 or later (*Windows Sandbox is currently not supported on Home SKUs*)
+- Windows 10 Pro, Enterprise or Education build 18305 or Windows 11 (*Windows Sandbox is currently not supported on Windows Home edition*)
 - AMD64 architecture
 - Virtualization capabilities enabled in BIOS
 - At least 4 GB of RAM (8 GB recommended)
@@ -45,7 +45,7 @@ The following video provides an overview of Windows Sandbox.
 
 ## Installation
 
-1. Ensure that your machine is using Windows 10 Pro or Enterprise, build version 18305 or later.
+1. Ensure that your machine is using Windows 10 Pro or Enterprise, build version 18305 or Windows 11.
 
 2. Enable virtualization on the machine.
 

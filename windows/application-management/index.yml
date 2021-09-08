@@ -13,8 +13,8 @@ metadata:
   ms.collection: windows-10
   author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
   ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 04/30/2021 #Required; mm/dd/yyyy format.
-  localization_priority: medium
+  ms.date: 08/24/2021 #Required; mm/dd/yyyy format.
+  ms.localizationpriority : medium
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -26,11 +26,11 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: Understand apps in Windows 10
+          - text: Understand apps in Windows client OS
             url: apps-in-windows-10.md
-          - text: How to add apps and features to Windows 10
+          - text: How to add features
             url: add-apps-and-features.md
-          - text: Sideload LOB apps in Windows 10
+          - text: Sideload LOB apps
             url: sideload-apps-in-windows-10.md
           - text: Keep removed apps from returning during an update
             url: remove-provisioned-apps-during-update.md

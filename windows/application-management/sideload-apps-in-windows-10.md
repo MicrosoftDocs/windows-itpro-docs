@@ -1,93 +1,107 @@
 ---
-title: Sideload LOB apps in Windows 10 (Windows 10)
-description: Learn how to sideload line-of-business (LOB) apps in Windows 10. When you sideload an app, you deploy a signed app package to a device.
+title: Sideload LOB apps in Windows client OS | Microsoft Docs
+description: Learn how to sideload line-of-business (LOB) apps in Windows client operating systems, including Windows 10. When you sideload an app, you deploy a signed app package to a device.
 ms.assetid: C46B27D0-375B-4F7A-800E-21595CF1D53D
 ms.reviewer: 
-manager: dansimp
+manager: dougeby
 ms.author: greglin
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 05/20/2019
+ms.date: 08/31/2021
+ms.localizationpriority: medium
 ---
 
-# Sideload LOB apps in Windows 10
+# Sideload line of business (LOB) apps in Windows client devices
 
-**Applies to**
-
--   Windows 10
+> Applies to:
+>
+> - Windows 10
 
 > [!NOTE]
-> As of Windows Insider Build 18956, sideloading is enabled by default. Now, you can deploy a signed package onto a device without a special configuration. 
+> Starting with Windows 10 2004, sideloading is enabled by default. You can deploy a signed package onto a device without a special configuration.
 
-"Line-of-Business" (LOB) apps are present in a wide range of businesses and organizations. Organizations value these apps because they solve problems unique to each business.
+Sideloading apps is when you install apps that aren't from an official source, such as the Microsoft store. Your organization may create its own apps, including line-of-business (LOB) apps. Many organizations create their own apps to solve problems unique to their business.
 
 When you sideload an app, you deploy a signed app package to a device. You maintain the signing, hosting, and deployment of these apps. Sideloading was also available with Windows 8 and Windows 8.1
 
-In Windows 10, sideloading is different than in earlier versions of Windows:
+Starting with Windows 10, sideloading is different than earlier versions of Windows:
 
--   You can unlock a device for sideloading using an enterprise policy, or through **Settings**
+- You can unlock a device for sideloading using an enterprise policy, or through the **Settings** app.
+- License keys aren't required.
+- Devices don't have to be joined to a domain.
 
--   License keys are not required
+To allow these apps to run on your Windows devices, you might have to enable sideloading on your devices.
 
--   Devices do not have to be joined to a domain
+This article shows you how to:
 
-## Requirements
-Here's what you'll need to have:
+- **Turn on sideloading**: You can deploy using Group Policy or a mobile device management (MDM) provider. Or, you can use the **Settings** app to turn on sideloading.
+- **Install the app certificate**: Import the security certificate to the local device. This certificate tells the local device to trust the app.
+- **Install the app**: Use Windows PowerShell to install the app package.
 
--   Devices need to be unlocked for sideloading (unlock policy enabled)
+## Prerequisites
 
--   Certificate assigned to app
+- Windows devices that are unlocked for sideloading (unlock policy enabled). Meaning, sideloading isn't blocked by a policy.
+- A trusted certificate that's assigned to your app.
+- An app package that's signed with your certificate.
 
--   Signed app package
+## Step 1: Turn on sideloading
 
-And here's what you'll need to do:
-
--   Turn on sideloading - you can push a policy with an MDM provider, or you can use **Settings**.
-
--   Trust the app - import the security certificate to the local device.
-
--   Install the app - use PowerShell to install the app package.
-
-## How do I sideload an app on desktop
 You can sideload apps on managed or unmanaged devices.
 
->[!IMPORTANT]
-> To install an app on Windows 10, in addition to following [these procedures](/windows/msix/app-installer/installing-windows10-apps-web), users can also double-click any APPX/MSIX package.
+Managed devices are typically owned by your organization. They're managed by Group Policy (on-premises), or a Mobile Device Management (MDM) provider, such as Microsoft Intune (cloud). Bring your own devices (BYOD) and personal devices can also be managed by your organization. On managed devices, you can create a policy that turns on sideloading, and then deploy this policy to your Windows devices.
 
+Unmanaged devices are devices that are not managed by your organization. These devices are typically personal devices owned by users. Users can turn on sideloading using the Settings app.
 
-**To turn on sideloading for managed devices**
+> [!IMPORTANT]
+> To install an app on Windows 10 and later, you can:
+>
+> - [Install Windows 10 apps from a web page](/windows/msix/app-installer/installing-windows10-apps-web).
+> - Users can double-click any `.msix` or `.appx` package.
 
--   Deploy an enterprise policy.
+### User interface
 
+If you're working on your own device, or if devices are unmanaged, use the Settings app:
 
+1. Open the **Settings** app > **Update & Security** > **For developers**.
+2. Select **Sideload apps**.
 
-**To turn on sideloading for unmanaged devices**
+For more information, see [Enable your device for development](/windows/apps/get-started/enable-your-device-for-development) and [Developer Mode features and debugging](/windows/apps/get-started/developer-mode-features-and-debugging).
 
-1.  Open **Settings**.
+### Group Policy
 
-2.  Click **Update & Security** &gt; **For developers**.
+If you use Group Policy, use the `Computer Configuration\Administrative Templates\Windows Components\App Package Deployment` policies to enable or prevent sideloading apps:
 
-3.  On **Use developer features**, select **Sideload apps**.
+- `Allows development of Windows Store apps and installing them from an integrated development environment (IDE)`
+- `Allow all trusted apps to install`
 
-**To import the security certificate**
+By default, the OS might set these policies to **Not configured**, which means app sideloading is turned off. If you set these policies to **Enabled**, then users can sideload apps.
 
-1.  Open the security certificate for the appx package, and select **Install Certificate**.
+### MDM
 
-2.  On the **Certificate Import Wizard**, select **Local Machine**.
+Using Microsoft Intune, you can also enable sideloading apps on managed devices. For more information, see:
 
-3.  Import the certificate to the **Trusted Root Certification Authorities** folder.
+- [Sign line-of-business apps so they can be deployed to Windows devices with Intune](/mem/intune/apps/app-sideload-windows)
+- [App Store device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10#app-store)
+
+## Step 2: Import the security certificate
+
+This step installs the app certificate to the local device. Installing the certificate creates the trust between the app and the device.
+
+1. Open the security certificate for the `.msix` package, and select **Install Certificate**.
+
+2. On the **Certificate Import Wizard**, select **Local Machine**.
+
+3. Import the certificate to the **Trusted Root Certification Authorities** folder.
 
     -OR-
 
-    You can use a runtime provisioning package to import a security certificate. For information about applying a provisioning package to a Windows 10 device, see runtime instructions on [Build and apply a provisioning package]( https://go.microsoft.com/fwlink/p/?LinkId=619162).
+    You can use a runtime provisioning package to import a security certificate. For information about applying a provisioning package to a Windows 10 device, see runtime instructions on [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package).
 
-**To install the app**
--   From the folder with the appx package, run the PowerShell `Add-AppxPackage` command to install the appx package.
+## Step 3: Install the app
 
+From the folder with the `.msix` package, run the Windows PowerShell `Add-AppxPackage` command to install the `.msix` package.
 
- 
-
- 
+For more information on this command, see [Add-AppxPackage](/powershell/module/appx/add-appxpackage).
