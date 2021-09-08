@@ -42,7 +42,7 @@
      - name: Cryptography and certificate management
        href: cryptography-certificate-mgmt.md
      - name: Windows Security app in Windows 11
-       href: windows-security-app.md
+       href: threat-protection/windows-defender-security-center/windows-defender-security-center.md
    - name: Encryption and data protection 
      href: encryption-data-protection.md
      items:
