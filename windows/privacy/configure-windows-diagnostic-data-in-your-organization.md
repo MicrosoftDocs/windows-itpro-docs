@@ -100,7 +100,7 @@ There are four diagnostic data collection settings. Each setting is described in
 
 - Diagnostic data off (Security)
 - Required diagnostic data (Basic)
-- Enhanced (This setting is only available on devices running Windows 10, version 20H2 and earlier and Windows Server 2019 and earlier.)
+- Enhanced (This setting is only available on devices running Windows 10 and Windows Server 2019 and earlier. It is not supported on Windows 11 and Windows Server 2022.)
 - Optional diagnostic data (Full)
 
 Here’s a summary of the types of data that is included with each setting:
@@ -155,7 +155,7 @@ Required diagnostic data includes:
 
 ### Enhanced diagnostic data
 
-In Windows 10, version 20H2 and earlier as well as Windows Server 2019 and earlier, enhanced diagnostic data includes data about the websites you browse, how Windows and apps are used and how they perform, and device activity. The additional data helps Microsoft to fix and improve products and services for all users.
+In Windows 10 and Windows Server 2019, enhanced diagnostic data includes data about the websites you browse, how Windows and apps are used and how they perform, and device activity. The additional data helps Microsoft to fix and improve products and services for all users.
 
 >[!Important]
 >This diagnostic data setting is not available on Windows 11 and Windows Server 2022 and has been replaced with policies that can control the amount of optional diagnostic data that is sent. More information on these settings are avaialble in the Manage enterprise diagnostic data section of this document.
