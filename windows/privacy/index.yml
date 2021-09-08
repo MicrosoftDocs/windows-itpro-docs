@@ -37,25 +37,25 @@ highlightedContent:
 
 # productDirectory section (optional)
 productDirectory:
-  title: Understand Windows diagnostic data in Windows 10
-  summary: For the latest Windows 10 version, learn more about what Windows diagnostic data is collected at various diagnostics levels.
+  title: Understand Windows diagnostic data in Windows 10 and Windows 11
+  summary: For the latest Windows 10 version and Windows 11, learn more about what Windows diagnostic data is collected under the different settings.
   items:
     # Card
-    - title: Required diagnostic data
+    - title: Windows 11 required diagnostic data
       # imageSrc should be square in ratio with no whitespace
       imageSrc: https://docs.microsoft.com/media/common/i_extend.svg
       summary: Learn more about basic Windows diagnostic data events and fields collected.
-      url: required-windows-diagnostic-data-events-and-fields-2004.md
+      url: required-windows-11-diagnostic-events-and-fields.md
+    # Card
+    - title: Windows 10 required diagnostic data
+      imageSrc: https://docs.microsoft.com/media/common/i_build.svg
+      summary: See what changes Windows is making to align to the new data collection taxonomy
+      url: required-windows-diagnostic-data-events-and-fields.md  
     # Card
     - title: Optional diagnostic data
       imageSrc: https://docs.microsoft.com/media/common/i_get-started.svg
       summary: Get examples of the types of optional diagnostic data collected from Windows
       url: windows-diagnostic-data.md
-    # Card
-    - title: Changes to Windows diagnostic data collection
-      imageSrc: https://docs.microsoft.com/media/common/i_build.svg
-      summary: See what changes Windows is making to align to the new data collection taxonomy
-      url: changes-to-windows-diagnostic-data-collection.md  
 
 # conceptualContent section (optional)
 # conceptualContent:
