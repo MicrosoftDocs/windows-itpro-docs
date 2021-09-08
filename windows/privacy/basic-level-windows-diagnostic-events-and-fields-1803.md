@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 04/28/2021
+ms.date: 09/08/2021
 ms.reviewer:
 ---
 
@@ -33,7 +33,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
-- [Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 basic diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Windows 10, version 20H2 and Windows 10, version 2004 basic diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)
@@ -3007,6 +3007,32 @@ The following fields are available:
 - **WDDMVersion**  The Windows Display Driver Model version.
 
 
+### DxgKrnlTelemetry.GPUAdapterStop
+
+This event collects information about an adapter when it stops. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **AdapterLuid**  Local Identifier for the adapter.
+- **AdapterTypeValue**  Numeric value indicating the type of the adapter.
+- **DriverDate**  Date of the driver.
+- **DriverVersion**  Version of the driver.
+- **GPUDeviceID**  Device identifier for the adapter.
+- **GPUVendorID**  Vendor identifier for the adapter.
+- **InterfaceId**  Identifier for the adapter.
+- **IsDetachable**  Boolean value indicating whether the adapter is removable or detachable.
+- **IsDisplayDevice**  Boolean value indicating whether the adapter has display capabilities.
+- **IsHybridDiscrete**  Boolean value indicating whether the adapter is a discrete adapter in a hybrid configuration.
+- **IsHybridIntegrated**  Boolean value indicating whether the adapter is an integrated adapter in a hybrid configuration.
+- **IsRenderDevice**  Boolean value indicating whether the adapter has rendering capabilities.
+- **IsSoftwareDevice**  Boolean value indicating whether the adapter is implemented in software.
+- **IsSurpriseRemoved**  Boolean value indicating whether the adapter was surprise removed.
+- **SubSystemID**  Subsystem identifier for the adapter.
+- **SubVendorID**  Sub-vendor identifier for the adapter.
+- **version**  Version of the schema for this event.
+- **WDDMVersion**  Display driver model version for the driver.
+
+
 ## Failover Clustering events
 
 ### Microsoft.Windows.Server.FailoverClusteringCritical.ClusterSummary2
@@ -3455,7 +3481,7 @@ The following fields are available:
 - **Enumerator**  Identifies the bus that enumerated the device.
 - **HWID**  A list of hardware IDs for the device.
 - **Inf**  The name of the INF file (possibly renamed by the OS, such as oemXX.inf).
-- **InstallState**  The device installation state. For a list of values, see: [Device Install State](https://msdn.microsoft.com/library/windows/hardware/ff543130.aspx)
+- **InstallState**  The device installation state. For a list of values, see: https://msdn.microsoft.com/en-us/library/windows/hardware/ff543130.aspx
 - **InventoryVersion**  The version number of the inventory process generating the events.
 - **LowerClassFilters**  The identifiers of the Lower Class filters installed for the device.
 - **LowerFilters**  The identifiers of the Lower filters installed for the device.
@@ -3674,7 +3700,7 @@ The following fields are available:
 - **Slot**  Slot to which the DRAM is plugged into the motherboard.
 - **Speed**  The configured memory slot speed in MHz.
 - **Type**  Reports DDR as an enumeration value as per the DMTF SMBIOS standard version 3.3.0, section 7.18.2.
-- **TypeDetails**  Reports Non-volatile as a bit flag enumeration per the DMTF SMBIOS standard version 3.3.0, section 7.18.3.
+- **TypeDetails**  Reports Non-volatile as a bit flag enumeration as per the DMTF SMBIOS standard version 3.3.0, section 7.18.3.
 
 
 ### Microsoft.Windows.Inventory.General.InventoryMiscellaneousMemorySlotArrayInfoStartSync
@@ -4339,6 +4365,19 @@ This event determines the error code that was returned when verifying Internet c
 The following fields are available:
 
 - **winInetError**  The HResult of the operation.
+
+
+## Other events
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
+
+This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
+
+The following fields are available:
+
+- **pszBatteryDataXml**  Battery performance data.
+- **szBatteryInfo**  Battery performance data.
+
 
 ## Privacy consent logging events
 
@@ -5433,16 +5472,6 @@ The following fields are available:
 - **UpdateId**  The update ID for a specific piece of content.
 - **ValidityWindowInDays**  The validity window that's in effect when verifying the timestamp.
 
-## Surface events
-
-### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
-
-This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
-
-The following fields are available:
-
-- **pszBatteryDataXml**  Battery performance data.
-- **szBatteryInfo**  Battery performance data.
 
 ## Update Assistant events
 
@@ -8030,6 +8059,21 @@ The following fields are available:
 
 - **InteractionCampaignID**  GUID identifying the interaction campaign that became complete.
 - **ResultId**  The final result of the interaction campaign.
+
+
+### Microsoft.Windows.WindowsUpdate.RUXIM.ICSEvaluateInteractionCampaign
+
+This event is generated when the RUXIM Interaction Campaign Scheduler (RUXIMICS.EXE) finishes processing an interaction campaign. The data collected with this event is used to help keep Windows up to date and performing properly.
+
+The following fields are available:
+
+- **ControlId**  String identifying the control (if any) that was selected by the user during presentation.
+- **hrInteractionHandler**  The error (if any) reported by the RUXIM Interaction Handler while processing the interaction campaign.
+- **hrScheduler**  The error (if any) encountered by RUXIM Interaction Campaign Scheduler itself while processing the interaction campaign.
+- **InteractionCampaignID**  The ID of the interaction campaign that was processed.
+- **ResultId**  The result of the evaluation/presentation.
+- **WasCompleted**  True if the interaction campaign is complete.
+- **WasPresented**  True if the Interaction Handler displayed the interaction campaign to the user.
 
 
 ### Microsoft.Windows.WindowsUpdate.RUXIM.ICSExit
