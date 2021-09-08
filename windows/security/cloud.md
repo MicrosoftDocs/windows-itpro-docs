@@ -12,7 +12,6 @@ ms.date: 09/08/2021
 ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 
-ms.reviewer: 
 f1.keywords: NOCSH 
 ms.mktglfcycl: deploy
 ms.sitesec: library
