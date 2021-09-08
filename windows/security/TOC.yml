@@ -210,7 +210,11 @@
      - name: Controlled folder access
      - name: Exploit protection
      - name: Microsoft Defender for Endpoint
-- name: Application protection
+- name: Application security
+  items:
+- name: Secured identity
+  items:
+- name: Cloud services
   items:
 - name: User protection
   items:
