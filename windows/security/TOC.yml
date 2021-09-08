@@ -43,10 +43,10 @@
        href: os-security/cryptography-certificate-mgmt.md
      - name: Windows Security app in Windows 11
        href: os-security/windows-security-app.md
-   - name: Encryption and data protection
+   - name: Encryption and data protection 
+     href: os-security/encryption-data-protection.md
      items:
-     - name: Overview 
-       href: encryption-data-protection.md
+     
      - name: Encrypted Hard Drive
        href: information-protection/encrypted-hard-drive.md
      - name: Bitlocker 
