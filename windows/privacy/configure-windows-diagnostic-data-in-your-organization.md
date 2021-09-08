@@ -224,6 +224,8 @@ You can use Group Policy to set your organization’s diagnostic data setting:
 
 ### Use Group Policy to manage optional diagnostic data collection
 
+There were two new policies added in Windows 11 to help you further managed your optional diagnostic data collection. These policies are not supported on Windows 10.
+
 The following policy lets you limit the types of [crash dumps](/windows/win32/dxtecharts/crash-dump-analysis) that can be sent back to Microsoft. If this policy is enabled, Windows Error Reporting will send only kernel mini dumps and user mode triage dumps.
 
 1. From the Group Policy Management Console, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**.
@@ -245,8 +247,8 @@ You can also limit the number of diagnostic logs that are sent back to Microsoft
 Use [Policy Configuration Service Provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider) to apply the following MDM policies:
 
   - System/AllowTelemetry
-  - System/LimitDumpCollection 
-  - System/LimitDiagnosticLogCollection
+  - System/LimitDumpCollection (supported on Windows 11 only)
+  - System/LimitDiagnosticLogCollection (supported on Windows 11 only)
 
 ## Enable Windows diagnostic data processor configuration
 
