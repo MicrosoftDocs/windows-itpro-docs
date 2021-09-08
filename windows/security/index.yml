@@ -37,7 +37,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Overview of operating system security
+        - text: Operating system security
           url: operating-system.md
       - linkListType: concept
         links:
@@ -46,9 +46,9 @@ landingContent:
         - text: Encryption and data protection
           url: encryption-data-protection.md
         - text: Network security
-          url: operating-system.md
+          url: identity-protection/vpn/vpn-guide.md
         - text: Virus & threat protection
-          url: operating-system.md
+          url: https://docs.microsoft.com/microsoft-365/security/defender-endpoint
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
