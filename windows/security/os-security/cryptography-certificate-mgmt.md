@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Cryptography and Certificate Management
 
-This article describes cryptography and certificate management in Windows 11.
+*This article describes cryptography and certificate management in Windows 11.*
 
 ## Cryptography
 
