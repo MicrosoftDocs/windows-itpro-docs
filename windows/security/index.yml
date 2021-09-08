@@ -92,11 +92,17 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Windows 11 secured-core devices
-        - text: Windows 365 Cloud PCs
-        - text: Windows 365 for Business
-        - text: Windows 365 for Enterprise
-        - text: Azure Virtual Desktop
+        - text: Windows 11 secured-core devices (change link later)
+          url: https://docs.microsoft.com/windows/whats-new/windows-11
+        - text: Windows 365 Cloud PCs (change link later)
+          url: https://docs.microsoft.com/windows/whats-new/windows-11
+        - text: Windows 365 for Business (change link later)
+          url: https://docs.microsoft.com/windows/whats-new/windows-11
+        - text: Windows 365 for Enterprise (change link later)
+          url: https://docs.microsoft.com/windows/whats-new/windows-11
+        - text: Azure Virtual Desktop (change link later)
+          url: https://docs.microsoft.com/windows/whats-new/windows-11
+
           
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
