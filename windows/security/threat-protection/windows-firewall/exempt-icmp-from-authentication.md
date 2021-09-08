@@ -1,5 +1,5 @@
 ---
-title: Exempt ICMP from Authentication (Windows 10)
+title: Exempt ICMP from Authentication (Windows)
 description: Learn how to add exemptions for any network traffic that uses the ICMP protocol in Windows Defender Firewall with Advanced Security.
 ms.assetid: c086c715-8d0c-4eb5-9ea7-2f7635a55548
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This procedure shows you how to add exemptions for any network traffic that uses the ICMP protocol.
 
