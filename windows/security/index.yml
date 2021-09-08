@@ -85,12 +85,16 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: User protection
+  - title: Secured-core and cloud devices
     linkLists:
       - linkListType: overview
         links:
-        - text: article (change link later)
-          url: /windows/security/threat-protection/windows-security-baselines.md
+        - text: Windows 11 secured-core devices
+        - text: Windows 365 Cloud PCs
+        - text: Windows 365 for Business
+        - text: Windows 365 for Enterprise
+        - text: Azure Virtual Desktop
+          
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)

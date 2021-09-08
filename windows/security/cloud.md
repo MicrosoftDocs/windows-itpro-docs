@@ -2,13 +2,23 @@
 title: Windows and cloud security
 description: Get an overview of cloud services supported in Windows 11
 ms.reviewer: 
-manager: dansimp
-ms.author: dansimp
-ms.prod: w10
+author: denisebmsft
+ms.author: deniseb
+manager: dansimp 
+ms.prod: w11
+audience: ITPro
+ms.topic: conceptual
+ms.date: 09/08/2021
+ms.prod: w11
+ms.localizationpriority: medium
+ms.collection: 
+ms.custom: 
+ms.reviewer: 
+f1.keywords: NOCSH 
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: dansimp
+search.appverid: MET150 
 ---
 
 # Windows and cloud security
