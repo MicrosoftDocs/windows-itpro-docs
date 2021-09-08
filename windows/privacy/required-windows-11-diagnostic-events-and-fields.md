@@ -1,6 +1,6 @@
 ---
 description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
-title: Windows 11, version xxxxx required diagnostic data events and fields (Windows 11)
+title: Windows 11, required windows 11 diagnostic data events and fields 
 keywords: privacy, telemetry
 ms.prod: w11
 ms.mktglfcycl: manage
@@ -17,8 +17,7 @@ ms.date: 09/08/2021
 ---
 
 
-# Windows 11, version xxxxx required diagnostic data events and fields
-
+# Required Windows 11 diagnostic events and fields
 
 > [!IMPORTANT]
 > Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
@@ -26,7 +25,7 @@ ms.date: 09/08/2021
 
  **Applies to**
 
-- Windows 11, version xxxxx
+- Windows 11
 
 
 Required diagnostic data gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store.
