@@ -36,4 +36,4 @@ Often, Windows can automatically repair the corrupted component, restoring the i
 
 ## See also
 
-[Secure the Windows boot process](../information-protection/secure-the-windows-10-boot-process.md)
+[Secure the Windows boot process](information-protection/secure-the-windows-10-boot-process.md)
