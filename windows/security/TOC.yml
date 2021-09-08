@@ -32,14 +32,21 @@
     - name: Kernel DMA Protection
       href: information-protection/kernel-dma-protection-for-thunderbolt.md
 - name: Operating system security
-  href: operating-system.md
   items: 
+   - name: Overview
+     href: operating-system.md
    - name: System security   
      items:
-     - name: Secure the Windows 10 boot process
-       href: information-protection/secure-the-windows-10-boot-process.md
-   - name: Encryption and data protection
+     - name: Trusted Boot
+       href: trusted-boot.md
+     - name: Cryptography and certificate management
+       href: cryptography-certificate-mgmt.md
+     - name: The Windows Security app
+       href: threat-protection/windows-defender-security-center/windows-defender-security-center.md
+   - name: Encryption and data protection 
+     href: encryption-data-protection.md
      items:
+     
      - name: Encrypted Hard Drive
        href: information-protection/encrypted-hard-drive.md
      - name: Bitlocker 
@@ -194,12 +201,33 @@
           href: identity-protection/vpn/vpn-office-365-optimization.md
      - name: Windows Defender Firewall
        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
-- name: Threat protection
-  items: 
-    - name: Microsoft Defender Antivirus
-      href: /microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows.md
-- name: Application protection
+   - name: Threat protection
+     items: 
+     - name: Microsoft Defender Antivirus
+       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
+     - name: Attack surface reduction rules
+       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction
+     - name: Tamper protection
+       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+     - name: Network protection
+       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/network-protection
+     - name: Controlled folder access
+       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders
+     - name: Exploit protection
+       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection
+     - name: Microsoft Defender for Endpoint
+       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint
+- name: Application security
+  href: apps.md
   items:
+- name: Secured identity
+  href: identity.md
+  items:
+- name: Cloud services
+  href: cloud.md
+  items:
+    - name: MDM and Windows 11
+      href: mdm-windows.md
 - name: User protection
   items:
     - name: Technical support policy for lost or forgotten passwords
