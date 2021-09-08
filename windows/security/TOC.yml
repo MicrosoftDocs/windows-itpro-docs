@@ -39,8 +39,10 @@
      items:
      - name: Trusted Boot
        href: os-security/trusted-boot.md
-     - name: Secure the Windows 10 boot process
-       href: information-protection/secure-the-windows-10-boot-process.md
+     - name: Cryptography and certificate management
+       href: os-security/cryptography-certificate-mgmt.md
+     - name: Windows Security app
+       href: os-security/windows-security-app.md
    - name: Encryption and data protection
      items:
      - name: Encrypted Hard Drive
