@@ -710,8 +710,19 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### ADMX_DigitalLocker policies
+### ADMX_DFS policies
+
+</dl>
   <dd>
+    <a href="./policy-csp-admx-dfs.md#admx-dfs-dfsdiscoverdc"id="admx-devicesetup-
+dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
+  </dd>
+</dl>
+
+### ADMX_DigitalLocker policies
+
+</dl>  
+<dd>
     <a href="./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-1" id="admx-digitallocker-digitalx-diableapplication-titletext-1">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1</a>
   </dd>
   <dd>
