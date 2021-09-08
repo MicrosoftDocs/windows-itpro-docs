@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Credential Guard protection limits & mitigations (Windows
+title: Windows Defender Credential Guard protection limits & mitigations (Windows)
 description: Scenarios not protected by Windows Defender Credential Guard in Windows, and additional mitigations you can use.
 ms.prod: w10
 ms.mktglfcycl: explore
