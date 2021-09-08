@@ -66,7 +66,7 @@ To resolve this issue, follow these steps to troubleshoot the TPM:
 
 ## TPM 1.2 Error: Loading the management console failed. The device that is required by the cryptographic provider is not ready for use
 
-You have a Windows 10 version 1703-based computer that uses TPM version 1.2. When you try to open the TPM management console, you receive a message that resembles the following:
+You have a Windows 11 or Windows 10 version 1703-based computer that uses TPM version 1.2. When you try to open the TPM management console, you receive a message that resembles the following:
 
 > Loading the management console failed. The device that is required by the cryptographic provider is not ready for use.  
 > HRESULT 0x800900300x80090030 - NTE\_DEVICE\_NOT\_READY  
@@ -103,8 +103,8 @@ This issue may occur when the Windows operating system is not the owner of the T
 |Message |Reason | Resolution|
 | - | - | - |
 |NTE\_BAD\_KEYSET (0x80090016/-2146893802) |TPM operation failed or was invalid |This issue was probably caused by a corrupted sysprep image. Make sure that you create the sysprep image by using a computer that is not joined to or registered in Azure AD or hybrid Azure AD. |
-|TPM\_E\_PCP\_INTERNAL\_ERROR (0x80290407/-2144795641) |Generic TPM error. |If the device returns this error, disable its TPM. Windows 10, version 1809 and later versions automatically detect TPM failures and finish the hybrid Azure AD join without using the TPM. |
-|TPM\_E\_NOTFIPS (0x80280036/-2144862154) |The FIPS mode of the TPM is currently not supported. |If the device gives this error, disable its TPM. Windows 10, version 1809 and later versions automatically detect TPM failures and finish the hybrid Azure AD join without using the TPM. |
+|TPM\_E\_PCP\_INTERNAL\_ERROR (0x80290407/-2144795641) |Generic TPM error. |If the device returns this error, disable its TPM. Windows 10, version 1809 and later versions, or Windows 11 automatically detect TPM failures and finish the hybrid Azure AD join without using the TPM. |
+|TPM\_E\_NOTFIPS (0x80280036/-2144862154) |The FIPS mode of the TPM is currently not supported. |If the device gives this error, disable its TPM. Windows 10, version 1809 and later versions, or Windows 11 automatically detect TPM failures and finish the hybrid Azure AD join without using the TPM. |
 |NTE\_AUTHENTICATION\_IGNORED (0x80090031/-2146893775) |The TPM is locked out. |This error is transient. Wait for the cooldown period, and then retry the join operation. |
 
 For more information about TPM issues, see the following articles:
