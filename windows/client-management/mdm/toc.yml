@@ -439,6 +439,8 @@ items:
               href: policy-csp-admx-ctrlaltdel.md
             - name: ADMX_DataCollection
               href: policy-csp-admx-datacollection.md
+            - name: ADMX_DCOM
+              href: policy-csp-admx-dcom.md
             - name: ADMX_Desktop
               href: policy-csp-admx-desktop.md
             - name: ADMX_DeviceInstallation

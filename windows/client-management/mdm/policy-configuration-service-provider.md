@@ -555,6 +555,16 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_DCOM policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-dcom.md#admx-dcom-dcomactivationsecuritycheckallowlocallist" id="admx-dcom-dcomactivationsecuritycheckallowlocallist">ADMX_DCOM/DCOMActivationSecurityCheckAllowLocalList</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dcom.md#admx-dcom-dcomactivationsecuritycheckexemptionlist" id="admx-dcom-dcomactivationsecuritycheckexemptionlist">ADMX_DCOM/DCOMActivationSecurityCheckExemptionList</a>
+  </dd>
+</dl>
 ### ADMX_Desktop policies  
 
 <dl>

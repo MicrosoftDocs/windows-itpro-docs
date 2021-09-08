@@ -121,6 +121,8 @@ ms.date: 10/08/2020
 - [ADMX_CtrlAltDel/DisableTaskMgr](./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-disabletaskmgr)
 - [ADMX_CtrlAltDel/NoLogoff](./policy-csp-admx-ctrlaltdel.md#admx-ctrlaltdel-nologoff)
 - [ADMX_DataCollection/CommercialIdPolicy](./policy-csp-admx-datacollection.md#admx-datacollection-commercialidpolicy)
+- [ADMX_DCOM/DCOMActivationSecurityCheckAllowLocalList](./policy-csp-admx-dcom-dcomactivationsecuritycheckallowlocallist)
+- [ADMX_DCOM/DCOMActivationSecurityCheckExemptionList](./policy-csp-admx-dcom-dcomactivationsecuritycheckexemptionlist)
 - [ADMX_Desktop/AD_EnableFilter](./policy-csp-admx-desktop.md#admx-desktop-ad-enablefilter)
 - [ADMX_Desktop/AD_HideDirectoryFolder](./policy-csp-admx-desktop.md#admx-desktop-ad-hidedirectoryfolder)
 - [ADMX_Desktop/AD_QueryLimit](./policy-csp-admx-desktop.md#admx-desktop-ad-querylimit)
