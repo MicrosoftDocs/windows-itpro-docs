@@ -16,7 +16,7 @@ ms.topic: article
 ms.date: 07/21/2020
 ---
 
-# Windows 10 and Windows 11 & Privacy Compliance:<br />A Guide for IT and Compliance Professionals
+# Windows 10 and Windows 11 Privacy Compliance:<br />A Guide for IT and Compliance Professionals
 
 Applies to:
 
