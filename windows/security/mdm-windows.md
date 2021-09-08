@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # Modern device management and Windows 11
 
-Windows 11 supports MDM, an enterprise management solution to help you manage your organization's security policies and business applications. MDM enables your security team to manage devices without compromising people's privacy on their personal devices.
+Windows 11 supports modern device management (MDM), an enterprise management solution to help you manage your organization's security policies and business applications. MDM enables your security team to manage devices without compromising people's privacy on their personal devices.
 
 Windows 11 includes a management component that includes:
 
