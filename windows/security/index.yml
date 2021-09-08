@@ -47,24 +47,36 @@ landingContent:
           url: os-security/encryption-data-protection.md
         - text: Network security
           url: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
+        - text: Network security
+        - text: Virus & threat protection
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Threat protection
-    linkLists:
-      - linkListType: overview
-        links:
-        - text: Security baselines (more to follow)
-          url: /windows/security/threat-protection/windows-security-baselines.md
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Application protection
+  - title: Application security
     linkLists:
       - linkListType: overview
         links:
         - text: article (change link later, add more)
           url: /windows/security/threat-protection/windows-security-baselines.md
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Secured identity
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: article (change link later, add more)
+          url: /windows/security/threat-protection/windows-security-baselines.md
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Cloud services
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: article (change link later, add more)
+          url: /windows/security/threat-protection/windows-security-baselines.md
+
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
