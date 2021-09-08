@@ -1,5 +1,5 @@
 ---
-title: Windows 10 & Privacy Compliance Guide
+title: Windows 10 & Windows 11 Privacy Compliance Guide
 description: This article provides information to help IT and compliance professionals understand the personal data policies as related to Windows 10.
 keywords: privacy, GDPR, compliance
 ms.prod: w10
@@ -16,10 +16,11 @@ ms.topic: article
 ms.date: 07/21/2020
 ---
 
-# Windows 10 & Privacy Compliance:<br />A Guide for IT and Compliance Professionals
+# Windows 10 and Windows 11 & Privacy Compliance:<br />A Guide for IT and Compliance Professionals
 
 Applies to:
 
+- Windows 11
 - Windows 10 Enterprise
 - Windows 10 Education
 - Windows 10 Professional
@@ -27,15 +28,15 @@ Applies to:
 
 ## Overview
 
-At Microsoft, we are committed to data privacy across all our products and services. With this guide, we provide administrators and compliance professionals with data privacy considerations for Windows 10.
+At Microsoft, we are committed to data privacy across all our products and services. With this guide, we provide administrators and compliance professionals with data privacy considerations for Windows.
 
-Microsoft collects data through multiple interactions with users of Windows 10 devices. This information can contain personal data that may be used to provide, secure, and improve Windows 10 services. To help users and organizations control the collection of personal data, Windows 10 provides comprehensive transparency features, settings choices, controls, and support for data subject requests, all of which are detailed in this article.
+Microsoft collects data through multiple interactions with users of Windows devices. This information can contain personal data that may be used to provide, secure, and improve Windows services. To help users and organizations control the collection of personal data, Windows provides comprehensive transparency features, settings choices, controls, and support for data subject requests, all of which are detailed in this article.
 
 This information allows administrators and compliance professionals to work together to better manage personal data privacy considerations and related regulations, such as the General Data Protection Regulation (GDPR)
 
-## 1. Windows 10 data collection transparency
+## 1. Windows data collection transparency
 
-Transparency is an important part of the data collection process in Windows 10. Comprehensive information about the features and processes used to collect data is available to users and administrators directly within Windows, both during and after device set up.
+Transparency is an important part of the data collection process in Windows. Comprehensive information about the features and processes used to collect data is available to users and administrators directly within Windows, both during and after device set up.
 
 ### 1.1 Device set up experience and support for layered transparency
 
@@ -44,7 +45,7 @@ When setting up a device, a user can configure their privacy settings. Those pri
 The following table provides an overview of the Windows 10 privacy settings presented during the device setup experience that involve processing personal data and where to find additional information.
 
 > [!NOTE]
-> This table is limited to the privacy settings that are available as part of setting up a Windows 10 device (Windows 10, version 1809 and newer). For the full list of settings that involve data collection, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
+> This table is limited to the privacy settings that are available as part of setting up a Windows 10 (Windows 10, version 1809 and newer) or Windows 11 device. For the full list of settings that involve data collection, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
 
 | Feature/Setting | Description | Supporting Content | Privacy Statement |
 | --- | --- | --- | --- |
@@ -67,13 +68,13 @@ An administrator can also use the Diagnostic Data Viewer for PowerShell module t
 > [!Note]
 > If the Windows diagnostic data processor configuration is enabled, IT administrators should use the admin portal to fulfill data subject requests to access or export Windows diagnostic data associated with a particular user’s device usage. See [The process for exercising data subject rights](#3-the-process-for-exercising-data-subject-rights).
 
-## 2. Windows 10 data collection management
+## 2. Windows data collection management
 
-Windows 10 provides the ability to manage privacy settings through several different methods. Users can change their privacy settings using the Windows 10 settings (**Start > Settings > Privacy**). The organization can also manage the privacy settings using Group Policy or Mobile Device Management (MDM). The following sections provide an overview on how to manage the privacy settings previously discussed in this article.
+Windows provides the ability to manage privacy settings through several different methods. Users can change their privacy settings using Windows settings (**Start > Settings > Privacy**). The organization can also manage the privacy settings using Group Policy or Mobile Device Management (MDM). The following sections provide an overview on how to manage the privacy settings previously discussed in this article.
 
 ### 2.1 Privacy setting options for users
 
-Once a Windows 10 device is set up, a user can manage data collection settings by navigating to **Start > Settings > Privacy**. Administrators can control privacy settings via setting policy on the device (see Section 2.2 below). If this is the case, the user will see an alert that says **Some settings are hidden or managed by your organization** when they navigate to **Start > Settings > Privacy**. In this case, the user can only change settings in accordance with the policies that the administrator has applied to the device.
+Once a Windows device is set up, a user can manage data collection settings by navigating to **Start > Settings > Privacy**. Administrators can control privacy settings via setting policy on the device (see Section 2.2 below). If this is the case, the user will see an alert that says **Some settings are hidden or managed by your organization** when they navigate to **Start > Settings > Privacy**. In this case, the user can only change settings in accordance with the policies that the administrator has applied to the device.
 
 ### 2.2 Privacy setting controls for administrators
 
@@ -123,7 +124,7 @@ For more details, see [Manage connections from Windows operating system componen
 
 Some Windows components, apps, and related services transfer data to Microsoft network endpoints. An administrator may want to block these endpoints for their organization to meet their specific compliance objectives.
 
-[Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md) provides a list of endpoints for the latest Windows 10 release, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the Windows Privacy site under the **Manage Windows 10 connection endpoints** section of the left-hand navigation menu.
+[Manage connection endpoints for Windows 10, version 20H2](manage-windows-20H2-endpoints.md) provides a list of endpoints for the latest Windows 10 release, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the Windows Privacy site under the **Manage Windows 10 connection endpoints** section of the left-hand navigation menu.
 
 #### _2.3.4 Limited functionality baseline_
 
