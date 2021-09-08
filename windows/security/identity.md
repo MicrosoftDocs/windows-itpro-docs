@@ -1,6 +1,6 @@
 ---
 title: Windows identity security
-description: 
+description: Get an overview of identity security in Windows 11
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
