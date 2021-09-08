@@ -48,7 +48,9 @@ landingContent:
         - text: Network security
           url: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
         - text: Network security
+          url: operating-system.md
         - text: Virus & threat protection
+          url: operating-system.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
