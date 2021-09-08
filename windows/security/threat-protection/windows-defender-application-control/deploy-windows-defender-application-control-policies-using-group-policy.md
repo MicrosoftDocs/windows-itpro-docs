@@ -1,5 +1,5 @@
 ---
-title: Deploy WDAC policies via Group Policy (Windows 10)
+title: Deploy WDAC policies via Group Policy (Windows)
 description: Windows Defender Application Control (WDAC) policies can easily be deployed and managed with Group Policy. Learn how by following this step-by-step guide.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,11 +22,15 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 > [!NOTE]
-> Group Policy-based deployment of WDAC policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, we recommend using an alternative method for policy deployment. 
+> Group Policy-based deployment of WDAC policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for policy deployment.
 
 Single-policy format WDAC policies (pre-1903 policy schema) can be easily deployed and managed with Group Policy. The following procedure walks you through how to deploy a WDAC policy called **ContosoPolicy.bin** to a test OU called *WDAC Enabled PCs* by using a GPO called **Contoso GPO Test**.
 
@@ -61,4 +65,4 @@ To deploy and manage a WDAC policy with Group Policy:
     > [!NOTE]
     > You may have noticed that the GPO setting references a .p7b file and this example uses a .bin file for the policy. Regardless of the type of policy you deploy (.bin, .p7b, or .p7), they are all converted to SIPolicy.p7b when dropped on the client computer running Windows 10. Give your WDAC policies friendly names and allow the system to convert the policy names for you to ensure that the policies are easily distinguishable when viewed in a share or any other central repository.
 
-7. Close the Group Policy Management Editor, and then restart the Windows 10 test computer. Restarting the computer updates the WDAC policy.
+7. Close the Group Policy Management Editor, and then restart the Windows test computer. Restarting the computer updates the WDAC policy.

@@ -21,7 +21,10 @@ ms.custom: bitlocker
 # BitLocker: How to enable Network Unlock
 
 **Applies to**
--   Windows 10
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 This article for IT professionals describes how BitLocker Network Unlock works and how to configure it.
 

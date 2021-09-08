@@ -1,5 +1,5 @@
 ---
-title: Optimize AppLocker performance (Windows 10)
+title: Optimize AppLocker performance (Windows)
 description: This topic for IT professionals describes how to optimize AppLocker policy enforcement.
 ms.assetid: a20efa20-bc98-40fe-bd81-28ec4905e0f6
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Optimize AppLocker performance
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes how to optimize AppLocker policy enforcement.
 

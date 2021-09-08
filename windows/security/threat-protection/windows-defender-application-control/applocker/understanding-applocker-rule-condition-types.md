@@ -1,5 +1,5 @@
 ---
-title: Understanding AppLocker rule condition types (Windows 10)
+title: Understanding AppLocker rule condition types (Windows)
 description: This topic for the IT professional describes the three types of AppLocker rule conditions.
 ms.assetid: c21af67f-60a1-4f7d-952c-a6f769c74729
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Understanding AppLocker rule condition types
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes the three types of AppLocker rule conditions.
 

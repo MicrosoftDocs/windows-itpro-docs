@@ -1,5 +1,5 @@
 ---
-title: Create a list of apps deployed to each business group (Windows 10)
+title: Create a list of apps deployed to each business group (Windows)
 description: This topic describes the process of gathering app usage requirements from each business group to implement application control policies by using AppLocker.
 ms.assetid: d713aa07-d732-4bdc-8656-ba616d779321
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Create a list of apps deployed to each business group
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic describes the process of gathering app usage requirements from each business group in order to implement application control policies by using AppLocker.
 

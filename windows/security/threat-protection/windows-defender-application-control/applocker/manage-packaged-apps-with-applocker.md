@@ -1,5 +1,5 @@
 ---
-title: Manage packaged apps with AppLocker (Windows 10)
+title: Manage packaged apps with AppLocker (Windows)
 description: Learn concepts and lists procedures to help you manage packaged apps with AppLocker as part of your overall application control strategy.
 ms.assetid: 6d0c99e7-0284-4547-a30a-0685a9916650
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Manage packaged apps with AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for IT professionals describes concepts and lists procedures to help you manage Packaged apps with AppLocker as part of your overall application control strategy.
 

@@ -1,5 +1,5 @@
 ---
-title: Deploying Windows Defender Application Control (WDAC) policies (Windows 10)
+title: Deploying Windows Defender Application Control (WDAC) policies (Windows)
 description: Learn how to plan and implement a WDAC deployment.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -23,7 +23,11 @@ ms.technology: mde
 **Applies to**
 
 - Windows 10
+- Windows 11
 - Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 You should now have one or more WDAC policies ready to deploy. If you haven't yet completed the steps described in the [WDAC Design Guide](windows-defender-application-control-design-guide.md), do so now before proceeding.
 

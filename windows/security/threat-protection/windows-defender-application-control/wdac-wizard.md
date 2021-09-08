@@ -23,14 +23,18 @@ ms.technology: mde
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
-The Windows Defender Application Control (WDAC) policy Wizard is an open source Windows desktop application written in C# and bundled as an MSIX package. The Wizard was built to provide security architects, security and system administrators with a more user-friendly means to create, edit, and merge WDAC policies. The Wizard desktop application uses the [ConfigCI PowerShell Cmdlets](/powershell/module/configci) in the backend so the output policy of the Wizard and PowerShell cmdlets is identical. 
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+
+The Windows Defender Application Control (WDAC) policy Wizard is an open-source Windows desktop application written in C# and bundled as an MSIX package. The Wizard was built to provide security architects with security, and system administrators with a more user-friendly means to create, edit, and merge WDAC policies. The Wizard desktop application uses the [ConfigCI PowerShell Cmdlets](/powershell/module/configci) in the backend so the output policy of the Wizard and PowerShell cmdlets is identical.
 
 ## Downloading the application
 
-The WDAC Wizard can be downloaded from the official [Wizard installer website](https://bit.ly/3koHwYs) as an MSIX packaged application. The Wizard's source code is available as part of Microsoft's Open Source Software offerings on GitHub at the [WDAC Wizard Repo](https://github.com/MicrosoftDocs/WDAC-Toolkit). 
+The WDAC Wizard can be downloaded from the official [Wizard installer website](https://bit.ly/3koHwYs) as an MSIX packaged application. The Wizard's source code is available as part of Microsoft's Open Source Software offerings on GitHub at the [WDAC Wizard Repo](https://github.com/MicrosoftDocs/WDAC-Toolkit).
 
 **Supported Clients**
 

@@ -1,5 +1,5 @@
 ---
-title: Kernel DMA Protection (Windows 10)
+title: Kernel DMA Protection (Windows)
 description: Kernel DMA Protection protects PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to Thunderbolt™ 3 ports.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -19,6 +19,7 @@ ms.reviewer:
 
 **Applies to**
 -   Windows 10
+-   Windows 11
 
 In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA Protection to protect PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to externally accessible PCIe ports (e.g., Thunderbolt™ 3 ports and CFexpress). In Windows 10 version 1903, Microsoft expanded the Kernel DMA Protection support to cover internal PCIe ports (e.g., M.2 slots)
 
@@ -92,7 +93,7 @@ Beginning with Windows 10 version 1809, you can use Security Center to check if 
    - Reboot into BIOS settings
    - Turn on Intel Virtualization Technology.
    - Turn on Intel Virtualization Technology for I/O (VT-d). In Windows 10 version 1803, only Intel VT-d is supported. Other platforms can use DMA attack mitigations described in [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md).
-   - Reboot system into Windows 10.
+   - Reboot system into Windows.
 
    >[!NOTE]
    > **Hyper-V - Virtualization Enabled in Firmware** is not available when **A hypervisor has been detected. Features required for Hyper-V will not be displayed.** is displayed. This means that **Hyper-V - Virtualization Enabled in Firmware** is set to Yes and the **Hyper-V** Windows feature is enabled. Enabling Hyper-V virtualization in Firmware (IOMMU) is required to enable **Kernel DMA Protection**, even when the firmware has the flag of "ACPI Kernel DMA Protection Indicators" described in [Kernel DMA Protection (Memory Access Protection) for OEMs](/windows-hardware/design/device-experiences/oem-kernel-dma-protection).
@@ -121,7 +122,7 @@ Please check the driver instance for the device you are testing. Some drivers ma
 
 ### What should I do if the drivers for my PCI or Thunderbolt™ 3 peripherals do not support DMA-remapping?
 
-If the peripherals do have class drivers provided by Windows 10, please use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, please contact your peripheral vendor/driver vendor to update the driver to support [DMA Remapping](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers).
+If the peripherals do have class drivers provided by Windows, please use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, please contact your peripheral vendor/driver vendor to update the driver to support [DMA Remapping](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers).
 
 ### My system's Kernel DMA Protection is off. Can DMA-remapping for a specific device be turned on?
 

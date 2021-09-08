@@ -195,24 +195,24 @@ The following table shows the required information to create an entry in the Azu
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p><strong>Application ID</strong></p></td>
-<td style="vertical-align:top"><p>The client ID of your MDM app that is configured within your tenant. This is the unique identifier for your multi-tenant app.</p></td>
+<td><p><strong>Application ID</strong></p></td>
+<td><p>The client ID of your MDM app that is configured within your tenant. This is the unique identifier for your multi-tenant app.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p><strong>Publisher</strong></p></td>
-<td style="vertical-align:top"><p>A string that identifies the publisher of the app.</p></td>
+<td><p><strong>Publisher</strong></p></td>
+<td><p>A string that identifies the publisher of the app.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p><strong>Application URL</strong></p></td>
-<td style="vertical-align:top"><p>A URL to the landing page of your app where your administrators can get more information about the MDM app and contains a link to the landing page of your app. This URL is not used for the actual enrollment.</p></td>
+<td><p><strong>Application URL</strong></p></td>
+<td><p>A URL to the landing page of your app where your administrators can get more information about the MDM app and contains a link to the landing page of your app. This URL is not used for the actual enrollment.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p><strong>Description</strong></p></td>
-<td style="vertical-align:top"><p>A brief description of your MDM app, which must be under 255 characters.</p></td>
+<td><p><strong>Description</strong></p></td>
+<td><p>A brief description of your MDM app, which must be under 255 characters.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p><strong>Icons</strong></p></td>
-<td style="vertical-align:top"><p>A set of logo icons for the MDM app. Dimensions: 45 X 45, 150 X 122, 214 X 215</p></td>
+<td><p><strong>Icons</strong></p></td>
+<td><p>A set of logo icons for the MDM app. Dimensions: 45 X 45, 150 X 122, 214 X 215</p></td>
 </tr>
 </tbody>
 </table>
@@ -261,19 +261,19 @@ An MDM page must adhere to a predefined theme depending on the scenario that is 
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top">FRX</td>
-<td style="vertical-align:top">OOBE</td>
-<td style="vertical-align:top">Dark theme + blue background color</td>
-<td style="vertical-align:top">Filename: Ui-dark.css</td>
-<td style="vertical-align:top">Filename: oobe-dekstop.css</td>
+<td>FRX</td>
+<td>OOBE</td>
+<td>Dark theme + blue background color</td>
+<td>Filename: Ui-dark.css</td>
+<td>Filename: oobe-dekstop.css</td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">MOSET</td>
-<td style="vertical-align:top">Settings/
+<td>MOSET</td>
+<td>Settings/
 <p>Post OOBE</p></td>
-<td style="vertical-align:top">Light theme</td>
-<td style="vertical-align:top">Filename: Ui-light.css</td>
-<td style="vertical-align:top">Filename: settings-desktop.css</td>
+<td>Light theme</td>
+<td>Filename: Ui-light.css</td>
+<td>Filename: settings-desktop.css</td>
 </tr>
 </tbody>
 </table>
@@ -302,20 +302,20 @@ The following parameters are passed in the query string:
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>redirect_uri</p></td>
-<td style="vertical-align:top"><p>After the user accepts or rejects the Terms of Use, the user is redirected to this URL.</p></td>
+<td><p>redirect_uri</p></td>
+<td><p>After the user accepts or rejects the Terms of Use, the user is redirected to this URL.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>client-request-id</p></td>
-<td style="vertical-align:top"><p>A GUID that is used to correlate logs for diagnostic and debugging purposes. You use this parameter to log or trace the state of the enrollment request to help find the root cause in case of failures.</p></td>
+<td><p>client-request-id</p></td>
+<td><p>A GUID that is used to correlate logs for diagnostic and debugging purposes. You use this parameter to log or trace the state of the enrollment request to help find the root cause in case of failures.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>api-version</p></td>
-<td style="vertical-align:top"><p>Specifies the version of the protocol requested by the client. This provides a mechanism to support version revisions of the protocol.</p></td>
+<td><p>api-version</p></td>
+<td><p>Specifies the version of the protocol requested by the client. This provides a mechanism to support version revisions of the protocol.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>mode</p></td>
-<td style="vertical-align:top"><p>Specifies that the device is corporate owned when mode=azureadjoin. This parameter is not present for BYOD devices.</p></td>
+<td><p>mode</p></td>
+<td><p>Specifies that the device is corporate owned when mode=azureadjoin. This parameter is not present for BYOD devices.</p></td>
 </tr>
 </tbody>
 </table>
@@ -342,20 +342,20 @@ The following claims are expected in the access token passed by Windows to the T
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>Object ID</p></td>
-<td style="vertical-align:top"><p>Identifier of the user object corresponding to the authenticated user.</p></td>
+<td><p>Object ID</p></td>
+<td><p>Identifier of the user object corresponding to the authenticated user.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>UPN</p></td>
-<td style="vertical-align:top"><p>A claim containing the user principal name (UPN) of the authenticated user.</p></td>
+<td><p>UPN</p></td>
+<td><p>A claim containing the user principal name (UPN) of the authenticated user.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>TID</p></td>
-<td style="vertical-align:top"><p>A claim representing the tenant ID of the tenant. In the example above, it&#39;s Fabrikam.</p></td>
+<td><p>TID</p></td>
+<td><p>A claim representing the tenant ID of the tenant. In the example above, it&#39;s Fabrikam.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Resource</p></td>
-<td style="vertical-align:top"><p>A sanitized URL representing the MDM application. Example, https:<span></span>//fabrikam.contosomdm.com.</p></td>
+<td><p>Resource</p></td>
+<td><p>A sanitized URL representing the MDM application. Example, https:<span></span>//fabrikam.contosomdm.com.</p></td>
 </tr>
 </tbody>
 </table>
@@ -438,28 +438,28 @@ The following table shows the error codes.
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>api-version</p></td>
-<td style="vertical-align:top"><p>302</p></td>
-<td style="vertical-align:top"><p>invalid_request</p></td>
-<td style="vertical-align:top"><p>unsupported version</p></td>
+<td><p>api-version</p></td>
+<td><p>302</p></td>
+<td><p>invalid_request</p></td>
+<td><p>unsupported version</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Tenant or user data are missing or other required prerequisites for device enrollment are not met</p></td>
-<td style="vertical-align:top"><p>302</p></td>
-<td style="vertical-align:top"><p>unauthorized_client</p></td>
-<td style="vertical-align:top"><p>unauthorized user or tenant</p></td>
+<td><p>Tenant or user data are missing or other required prerequisites for device enrollment are not met</p></td>
+<td><p>302</p></td>
+<td><p>unauthorized_client</p></td>
+<td><p>unauthorized user or tenant</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>Azure AD token validation failed</p></td>
-<td style="vertical-align:top"><p>302</p></td>
-<td style="vertical-align:top"><p>unauthorized_client</p></td>
-<td style="vertical-align:top"><p>unauthorized_client</p></td>
+<td><p>Azure AD token validation failed</p></td>
+<td><p>302</p></td>
+<td><p>unauthorized_client</p></td>
+<td><p>unauthorized_client</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>internal service error</p></td>
-<td style="vertical-align:top"><p>302</p></td>
-<td style="vertical-align:top"><p>server_error</p></td>
-<td style="vertical-align:top"><p>internal service error</p></td>
+<td><p>internal service error</p></td>
+<td><p>302</p></td>
+<td><p>server_error</p></td>
+<td><p>internal service error</p></td>
 </tr>
 </tbody>
 </table>
@@ -486,104 +486,104 @@ With Azure integrated MDM enrollment, there is no discovery phase and the discov
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>MDM auto-discovery using email address to retrieve MDM discovery URL</p></td>
-<td style="vertical-align:top"><p>Enrollment</p></td>
-<td style="vertical-align:top"><p>Not applicable</p>
+<td><p>MDM auto-discovery using email address to retrieve MDM discovery URL</p></td>
+<td><p>Enrollment</p></td>
+<td><p>Not applicable</p>
 <p>Discovery URL provisioned in Azure</p></td>
-<td style="vertical-align:top"><p></p></td>
+<td><p></p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Uses MDM discovery URL</p></td>
-<td style="vertical-align:top"><p>Enrollment</p>
+<td><p>Uses MDM discovery URL</p></td>
+<td><p>Enrollment</p>
 <p>Enrollment renewal</p>
 <p>ROBO</p></td>
-<td style="vertical-align:top"><p>Enrollment</p>
+<td><p>Enrollment</p>
 <p>Enrollment renewal</p>
 <p>ROBO</p></td>
-<td style="vertical-align:top"><p>Enrollment</p>
+<td><p>Enrollment</p>
 <p>Enrollment renewal</p>
 <p>ROBO</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>Is MDM enrollment required?</p></td>
-<td style="vertical-align:top"><p>Yes</p></td>
-<td style="vertical-align:top"><p>Yes</p></td>
-<td style="vertical-align:top"><p>No</p>
+<td><p>Is MDM enrollment required?</p></td>
+<td><p>Yes</p></td>
+<td><p>Yes</p></td>
+<td><p>No</p>
 <p>User can decline.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Authentication type</p></td>
-<td style="vertical-align:top"><p>OnPremise</p>
+<td><p>Authentication type</p></td>
+<td><p>OnPremise</p>
 <p>Federated</p>
 <p>Certificate</p></td>
-<td style="vertical-align:top"><p>Federated</p></td>
-<td style="vertical-align:top"><p>Federated</p></td>
+<td><p>Federated</p></td>
+<td><p>Federated</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>EnrollmentPolicyServiceURL</p></td>
-<td style="vertical-align:top"><p>Optional (all auth)</p></td>
-<td style="vertical-align:top"><p>Optional (all auth)</p>
+<td><p>EnrollmentPolicyServiceURL</p></td>
+<td><p>Optional (all auth)</p></td>
+<td><p>Optional (all auth)</p>
 <p></p></td>
-<td style="vertical-align:top"><p>Optional (all auth)</p>
+<td><p>Optional (all auth)</p>
 <p></p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>EnrollmentServiceURL</p></td>
-<td style="vertical-align:top"><p>Required (all auth)</p></td>
-<td style="vertical-align:top"><p>Used (all auth)</p></td>
-<td style="vertical-align:top"><p>Used (all auth)</p></td>
+<td><p>EnrollmentServiceURL</p></td>
+<td><p>Required (all auth)</p></td>
+<td><p>Used (all auth)</p></td>
+<td><p>Used (all auth)</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>EnrollmentServiceURL includes OS Version, OS Platform, and other attributes provided by MDM discovery URL</p></td>
-<td style="vertical-align:top"><p>Highly recommended</p></td>
-<td style="vertical-align:top"><p>Highly recommended</p></td>
-<td style="vertical-align:top"><p>Highly recommended</p></td>
+<td><p>EnrollmentServiceURL includes OS Version, OS Platform, and other attributes provided by MDM discovery URL</p></td>
+<td><p>Highly recommended</p></td>
+<td><p>Highly recommended</p></td>
+<td><p>Highly recommended</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>AuthenticationServiceURL used</p></td>
-<td style="vertical-align:top"><p>Used (Federated auth)</p></td>
-<td style="vertical-align:top"><p>Skipped</p></td>
-<td style="vertical-align:top"><p>Skipped</p></td>
+<td><p>AuthenticationServiceURL used</p></td>
+<td><p>Used (Federated auth)</p></td>
+<td><p>Skipped</p></td>
+<td><p>Skipped</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>BinarySecurityToken</p></td>
-<td style="vertical-align:top"><p>Custom per MDM</p></td>
-<td style="vertical-align:top"><p>Azure AD issued token</p></td>
-<td style="vertical-align:top"><p>Azure AD issued token</p></td>
+<td><p>BinarySecurityToken</p></td>
+<td><p>Custom per MDM</p></td>
+<td><p>Azure AD issued token</p></td>
+<td><p>Azure AD issued token</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>EnrollmentType</p></td>
-<td style="vertical-align:top"><p>Full</p></td>
-<td style="vertical-align:top"><p>Device</p></td>
-<td style="vertical-align:top"><p>Full</p></td>
+<td><p>EnrollmentType</p></td>
+<td><p>Full</p></td>
+<td><p>Device</p></td>
+<td><p>Full</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>Enrolled certificate type</p></td>
-<td style="vertical-align:top"><p>User certificate</p></td>
-<td style="vertical-align:top"><p>Device certificate</p></td>
-<td style="vertical-align:top"><p>User certificate</p></td>
+<td><p>Enrolled certificate type</p></td>
+<td><p>User certificate</p></td>
+<td><p>Device certificate</p></td>
+<td><p>User certificate</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Enrolled certificate store</p></td>
-<td style="vertical-align:top"><p>My/User</p></td>
-<td style="vertical-align:top"><p>My/System</p></td>
-<td style="vertical-align:top"><p>My/User</p></td>
+<td><p>Enrolled certificate store</p></td>
+<td><p>My/User</p></td>
+<td><p>My/System</p></td>
+<td><p>My/User</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>CSR subject name</p></td>
-<td style="vertical-align:top"><p>User Principal Name</p></td>
-<td style="vertical-align:top"><p>Device ID</p></td>
-<td style="vertical-align:top"><p>User Principal Name</p></td>
+<td><p>CSR subject name</p></td>
+<td><p>User Principal Name</p></td>
+<td><p>Device ID</p></td>
+<td><p>User Principal Name</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>EnrollmentData Terms of Use binary blob as AdditionalContext for EnrollmentServiceURL</p></td>
-<td style="vertical-align:top"><p>Not supported</p></td>
-<td style="vertical-align:top"><p>Supported</p></td>
-<td style="vertical-align:top"><p>Supported</p></td>
+<td><p>EnrollmentData Terms of Use binary blob as AdditionalContext for EnrollmentServiceURL</p></td>
+<td><p>Not supported</p></td>
+<td><p>Supported</p></td>
+<td><p>Supported</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>CSPs accessible during enrollment</p></td>
-<td style="vertical-align:top"><p>Windows 10 support:</p>
+<td><p>CSPs accessible during enrollment</p></td>
+<td><p>Windows 10 support:</p>
 <ul>
 <li>DMClient</li>
 <li>CertificateStore</li>
@@ -598,8 +598,8 @@ With Azure integrated MDM enrollment, there is no discovery phase and the discov
 <ul>
 <li>EnterpriseAppManagement (Windows Phone 8.1)</li>
 </ul></td>
-<td style="vertical-align:top"><p>same as traditional MDM enrollment</p></td>
-<td style="vertical-align:top"><p>same as traditional MDM enrollment</p></td>
+<td><p>same as traditional MDM enrollment</p></td>
+<td><p>same as traditional MDM enrollment</p></td>
 </tr>
 </tbody>
 </table>
@@ -751,184 +751,184 @@ When a user is enrolled into MDM through Azure Active Directory Join and then di
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top">0x80180001</td>
-<td style="vertical-align:top">&quot;idErrorServerConnectivity&quot;, // MENROLL_E_DEVICE_MESSAGE_FORMAT_ERROR</td>
-<td style="vertical-align:top"><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
+<td>0x80180001</td>
+<td>&quot;idErrorServerConnectivity&quot;, // MENROLL_E_DEVICE_MESSAGE_FORMAT_ERROR</td>
+<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x80180002</td>
-<td style="vertical-align:top">&quot;idErrorAuthenticationFailure&quot;, // MENROLL_E_DEVICE_AUTHENTICATION_ERROR</td>
-<td style="vertical-align:top"><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x80180002</td>
+<td>&quot;idErrorAuthenticationFailure&quot;, // MENROLL_E_DEVICE_AUTHENTICATION_ERROR</td>
+<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x80180003</td>
-<td style="vertical-align:top">&quot;idErrorAuthorizationFailure&quot;, // MENROLL_E_DEVICE_AUTHORIZATION_ERROR</td>
-<td style="vertical-align:top"><p>This user is not authorized to enroll. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x80180003</td>
+<td>&quot;idErrorAuthorizationFailure&quot;, // MENROLL_E_DEVICE_AUTHORIZATION_ERROR</td>
+<td><p>This user is not authorized to enroll. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x80180004</td>
-<td style="vertical-align:top">&quot;idErrorMDMCertificateError&quot;, // MENROLL_E_DEVICE_CERTIFCATEREQUEST_ERROR</td>
-<td style="vertical-align:top"><p>There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x80180004</td>
+<td>&quot;idErrorMDMCertificateError&quot;, // MENROLL_E_DEVICE_CERTIFCATEREQUEST_ERROR</td>
+<td><p>There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x80180005</td>
-<td style="vertical-align:top">&quot;idErrorServerConnectivity&quot;, // MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR</td>
-<td style="vertical-align:top"><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
+<td>0x80180005</td>
+<td>&quot;idErrorServerConnectivity&quot;, // MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR</td>
+<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x80180006</td>
-<td style="vertical-align:top">&quot;idErrorServerConnectivity&quot;, // MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR</td>
-<td style="vertical-align:top"><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
+<td>0x80180006</td>
+<td>&quot;idErrorServerConnectivity&quot;, // MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR</td>
+<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x80180007</td>
-<td style="vertical-align:top">&quot;idErrorAuthenticationFailure&quot;, // MENROLL_E_DEVICE_INVALIDSECURITY_ERROR</td>
-<td style="vertical-align:top"><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x80180007</td>
+<td>&quot;idErrorAuthenticationFailure&quot;, // MENROLL_E_DEVICE_INVALIDSECURITY_ERROR</td>
+<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x80180008</td>
-<td style="vertical-align:top">&quot;idErrorServerConnectivity&quot;, // MENROLL_E_DEVICE_UNKNOWN_ERROR</td>
-<td style="vertical-align:top"><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
+<td>0x80180008</td>
+<td>&quot;idErrorServerConnectivity&quot;, // MENROLL_E_DEVICE_UNKNOWN_ERROR</td>
+<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x80180009</td>
-<td style="vertical-align:top">&quot;idErrorAlreadyInProgress&quot;, // MENROLL_E_ENROLLMENT_IN_PROGRESS</td>
-<td style="vertical-align:top"><p>Another enrollment is in progress. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x80180009</td>
+<td>&quot;idErrorAlreadyInProgress&quot;, // MENROLL_E_ENROLLMENT_IN_PROGRESS</td>
+<td><p>Another enrollment is in progress. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x8018000A</td>
-<td style="vertical-align:top">&quot;idErrorMDMAlreadyEnrolled&quot;, // MENROLL_E_DEVICE_ALREADY_ENROLLED</td>
-<td style="vertical-align:top"><p>This device is already enrolled. You can contact your system administrator with the error code {0}.</p></td>
+<td>0x8018000A</td>
+<td>&quot;idErrorMDMAlreadyEnrolled&quot;, // MENROLL_E_DEVICE_ALREADY_ENROLLED</td>
+<td><p>This device is already enrolled. You can contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x8018000D</td>
-<td style="vertical-align:top">&quot;idErrorMDMCertificateError&quot;, // MENROLL_E_DISCOVERY_SEC_CERT_DATE_INVALID</td>
-<td style="vertical-align:top"><p>There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x8018000D</td>
+<td>&quot;idErrorMDMCertificateError&quot;, // MENROLL_E_DISCOVERY_SEC_CERT_DATE_INVALID</td>
+<td><p>There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x8018000E</td>
-<td style="vertical-align:top">&quot;idErrorAuthenticationFailure&quot;, // MENROLL_E_PASSWORD_NEEDED</td>
-<td style="vertical-align:top"><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x8018000E</td>
+<td>&quot;idErrorAuthenticationFailure&quot;, // MENROLL_E_PASSWORD_NEEDED</td>
+<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x8018000F</td>
-<td style="vertical-align:top">&quot;idErrorAuthenticationFailure&quot;, // MENROLL_E_WAB_ERROR</td>
-<td style="vertical-align:top"><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x8018000F</td>
+<td>&quot;idErrorAuthenticationFailure&quot;, // MENROLL_E_WAB_ERROR</td>
+<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x80180010</td>
-<td style="vertical-align:top">&quot;idErrorServerConnectivity&quot;, // MENROLL_E_CONNECTIVITY</td>
-<td style="vertical-align:top"><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
+<td>0x80180010</td>
+<td>&quot;idErrorServerConnectivity&quot;, // MENROLL_E_CONNECTIVITY</td>
+<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x80180012</td>
-<td style="vertical-align:top">&quot;idErrorMDMCertificateError&quot;, // MENROLL_E_INVALIDSSLCERT</td>
-<td style="vertical-align:top"><p>There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x80180012</td>
+<td>&quot;idErrorMDMCertificateError&quot;, // MENROLL_E_INVALIDSSLCERT</td>
+<td><p>There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x80180013</td>
-<td style="vertical-align:top">&quot;idErrorDeviceLimit&quot;, // MENROLL_E_DEVICECAPREACHED</td>
-<td style="vertical-align:top"><p>Looks like there are too many devices or users for this account. Contact your system administrator with the error code {0}.</p></td>
+<td>0x80180013</td>
+<td>&quot;idErrorDeviceLimit&quot;, // MENROLL_E_DEVICECAPREACHED</td>
+<td><p>Looks like there are too many devices or users for this account. Contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x80180014</td>
-<td style="vertical-align:top">&quot;idErrorMDMNotSupported&quot;, // MENROLL_E_DEVICENOTSUPPORTED</td>
-<td style="vertical-align:top"><p>This feature is not supported. Contact your system administrator with the error code {0}.</p></td>
+<td>0x80180014</td>
+<td>&quot;idErrorMDMNotSupported&quot;, // MENROLL_E_DEVICENOTSUPPORTED</td>
+<td><p>This feature is not supported. Contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x80180015</td>
-<td style="vertical-align:top">&quot;idErrorMDMNotSupported&quot;, // MENROLL_E_NOTSUPPORTED</td>
-<td style="vertical-align:top"><p>This feature is not supported. Contact your system administrator with the error code {0}.</p></td>
+<td>0x80180015</td>
+<td>&quot;idErrorMDMNotSupported&quot;, // MENROLL_E_NOTSUPPORTED</td>
+<td><p>This feature is not supported. Contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x80180016</td>
-<td style="vertical-align:top">&quot;idErrorMDMRenewalRejected&quot;, // MENROLL_E_NOTELIGIBLETORENEW</td>
-<td style="vertical-align:top"><p>The server did not accept the request. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x80180016</td>
+<td>&quot;idErrorMDMRenewalRejected&quot;, // MENROLL_E_NOTELIGIBLETORENEW</td>
+<td><p>The server did not accept the request. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x80180017</td>
-<td style="vertical-align:top">&quot;idErrorMDMAccountMaintenance&quot;, // MENROLL_E_INMAINTENANCE</td>
-<td style="vertical-align:top"><p>The service is in maintenance. You can try to do this again later or contact your system administrator with the error code {0}.</p></td>
+<td>0x80180017</td>
+<td>&quot;idErrorMDMAccountMaintenance&quot;, // MENROLL_E_INMAINTENANCE</td>
+<td><p>The service is in maintenance. You can try to do this again later or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x80180018</td>
-<td style="vertical-align:top">&quot;idErrorMDMLicenseError&quot;, // MENROLL_E_USERLICENSE</td>
-<td style="vertical-align:top"><p>There was an error with your license. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x80180018</td>
+<td>&quot;idErrorMDMLicenseError&quot;, // MENROLL_E_USERLICENSE</td>
+<td><p>There was an error with your license. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x80180019</td>
-<td style="vertical-align:top">&quot;idErrorInvalidServerConfig&quot;, // MENROLL_E_ENROLLMENTDATAINVALID</td>
-<td style="vertical-align:top"><p>Looks like the server is not correctly configured. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x80180019</td>
+<td>&quot;idErrorInvalidServerConfig&quot;, // MENROLL_E_ENROLLMENTDATAINVALID</td>
+<td><p>Looks like the server is not correctly configured. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">&quot;rejectedTermsOfUse&quot;</td>
-<td style="vertical-align:top">&quot;idErrorRejectedTermsOfUse&quot;</td>
-<td style="vertical-align:top"><p>Your organization requires that you agree to the Terms of Use. Please try again or ask your support person for more information.</p></td>
+<td>&quot;rejectedTermsOfUse&quot;</td>
+<td>&quot;idErrorRejectedTermsOfUse&quot;</td>
+<td><p>Your organization requires that you agree to the Terms of Use. Please try again or ask your support person for more information.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x801c0001</td>
-<td style="vertical-align:top">&quot;idErrorServerConnectivity&quot;, // DSREG_E_DEVICE_MESSAGE_FORMAT_ERROR</td>
-<td style="vertical-align:top"><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
+<td>0x801c0001</td>
+<td>&quot;idErrorServerConnectivity&quot;, // DSREG_E_DEVICE_MESSAGE_FORMAT_ERROR</td>
+<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x801c0002</td>
-<td style="vertical-align:top">&quot;idErrorAuthenticationFailure&quot;, // DSREG_E_DEVICE_AUTHENTICATION_ERROR</td>
-<td style="vertical-align:top"><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x801c0002</td>
+<td>&quot;idErrorAuthenticationFailure&quot;, // DSREG_E_DEVICE_AUTHENTICATION_ERROR</td>
+<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x801c0003</td>
-<td style="vertical-align:top">&quot;idErrorAuthorizationFailure&quot;, // DSREG_E_DEVICE_AUTHORIZATION_ERROR</td>
-<td style="vertical-align:top"><p>This user is not authorized to enroll. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x801c0003</td>
+<td>&quot;idErrorAuthorizationFailure&quot;, // DSREG_E_DEVICE_AUTHORIZATION_ERROR</td>
+<td><p>This user is not authorized to enroll. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x801c0006</td>
-<td style="vertical-align:top">&quot;idErrorServerConnectivity&quot;, // DSREG_E_DEVICE_INTERNALSERVICE_ERROR</td>
-<td style="vertical-align:top"><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
+<td>0x801c0006</td>
+<td>&quot;idErrorServerConnectivity&quot;, // DSREG_E_DEVICE_INTERNALSERVICE_ERROR</td>
+<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x801c000B</td>
-<td style="vertical-align:top">&quot;idErrorUntrustedServer&quot;, // DSREG_E_DISCOVERY_REDIRECTION_NOT_TRUSTED</td>
-<td style="vertical-align:top">The server being contacted is not trusted. Contact your system administrator with the error code {0}.</td>
+<td>0x801c000B</td>
+<td>&quot;idErrorUntrustedServer&quot;, // DSREG_E_DISCOVERY_REDIRECTION_NOT_TRUSTED</td>
+<td>The server being contacted is not trusted. Contact your system administrator with the error code {0}.</td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x801c000C</td>
-<td style="vertical-align:top">&quot;idErrorServerConnectivity&quot;, // DSREG_E_DISCOVERY_FAILED</td>
-<td style="vertical-align:top"><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
+<td>0x801c000C</td>
+<td>&quot;idErrorServerConnectivity&quot;, // DSREG_E_DISCOVERY_FAILED</td>
+<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x801c000E</td>
-<td style="vertical-align:top">&quot;idErrorDeviceLimit&quot;, // DSREG_E_DEVICE_REGISTRATION_QUOTA_EXCCEEDED</td>
-<td style="vertical-align:top"><p>Looks like there are too many devices or users for this account. Contact your system administrator with the error code {0}.</p></td>
+<td>0x801c000E</td>
+<td>&quot;idErrorDeviceLimit&quot;, // DSREG_E_DEVICE_REGISTRATION_QUOTA_EXCCEEDED</td>
+<td><p>Looks like there are too many devices or users for this account. Contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x801c000F</td>
-<td style="vertical-align:top">&quot;idErrorDeviceRequiresReboot&quot;, // DSREG_E_DEVICE_REQUIRES_REBOOT</td>
-<td style="vertical-align:top"><p>A reboot is required to complete device registration.</p></td>
+<td>0x801c000F</td>
+<td>&quot;idErrorDeviceRequiresReboot&quot;, // DSREG_E_DEVICE_REQUIRES_REBOOT</td>
+<td><p>A reboot is required to complete device registration.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x801c0010</td>
-<td style="vertical-align:top">&quot;idErrorInvalidCertificate&quot;, // DSREG_E_DEVICE_AIK_VALIDATION_ERROR</td>
-<td style="vertical-align:top"><p>Looks like you have an invalid certificate. Contact your system administrator with the error code {0}.</p></td>
+<td>0x801c0010</td>
+<td>&quot;idErrorInvalidCertificate&quot;, // DSREG_E_DEVICE_AIK_VALIDATION_ERROR</td>
+<td><p>Looks like you have an invalid certificate. Contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x801c0011</td>
-<td style="vertical-align:top">&quot;idErrorAuthenticationFailure&quot;, // DSREG_E_DEVICE_ATTESTATION_ERROR</td>
-<td style="vertical-align:top"><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x801c0011</td>
+<td>&quot;idErrorAuthenticationFailure&quot;, // DSREG_E_DEVICE_ATTESTATION_ERROR</td>
+<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x801c0012</td>
-<td style="vertical-align:top">&quot;idErrorServerConnectivity&quot;, // DSREG_E_DISCOVERY_BAD_MESSAGE_ERROR</td>
-<td style="vertical-align:top"><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
+<td>0x801c0012</td>
+<td>&quot;idErrorServerConnectivity&quot;, // DSREG_E_DISCOVERY_BAD_MESSAGE_ERROR</td>
+<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top">0x801c0013</td>
-<td style="vertical-align:top">&quot;idErrorAuthenticationFailure&quot;, // DSREG_E_TENANTID_NOT_FOUND</td>
-<td style="vertical-align:top"><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x801c0013</td>
+<td>&quot;idErrorAuthenticationFailure&quot;, // DSREG_E_TENANTID_NOT_FOUND</td>
+<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top">0x801c0014</td>
-<td style="vertical-align:top">&quot;idErrorAuthenticationFailure&quot;, // DSREG_E_USERSID_NOT_FOUND</td>
-<td style="vertical-align:top"><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
+<td>0x801c0014</td>
+<td>&quot;idErrorAuthenticationFailure&quot;, // DSREG_E_USERSID_NOT_FOUND</td>
+<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
 </tr>
 </tbody>
 </table>

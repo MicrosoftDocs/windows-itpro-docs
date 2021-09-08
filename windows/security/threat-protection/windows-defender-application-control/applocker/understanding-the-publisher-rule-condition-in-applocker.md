@@ -1,5 +1,5 @@
 ---
-title: Understanding the publisher rule condition in AppLocker (Windows 10)
+title: Understanding the publisher rule condition in AppLocker (Windows)
 description: This topic explains the AppLocker publisher rule condition, what controls are available, and how it is applied.
 ms.assetid: df61ed8f-a97e-4644-9d0a-2169f18c1c4f
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Understanding the publisher rule condition in AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic explains the AppLocker publisher rule condition, what controls are available, and how it is applied.
 

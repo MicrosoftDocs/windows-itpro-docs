@@ -1,803 +1,148 @@
 ---
 title: Learn about the different app types in Windows 10 | Microsoft Docs
 ms.reviewer: 
-manager: dansimp
-description: Use this article to understand the different types of apps that run on Windows 10, such as UWP and Win32 apps.
+manager: dougeby
+description: Learn more and understand the different types of apps that run on Windows 10 and Windows 11. For example, learn more about UWP, WPF, Win32, and Windows Forms apps, including the best way to install these apps.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
-ms.author: greglin
-author: greg-lindsay
+ms.author: mandia
+author: MandiOhlinger
 ms.localizationpriority: medium
 ms.topic: article
 ---
-# Understand the different apps included in Windows 10
 
->Applies to: Windows 10
+# Overview of apps on Windows client devices
 
-On your Windows 10 devices, you can run the following app types:
+> Applies to:
+>
+> - Windows 10
 
-- **Windows apps**: These apps are included with the Windows OS, and are also installed from the Microsoft Store app. There are two categories:
+## Before you begin
+
+As organizations become more global, and to support employees working from anywhere, it's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. For Microsoft, that includes using Microsoft Endpoint Manager. Endpoint Manager includes Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
+
+In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
+
+- [Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview)
+- [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
+- [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
+
+## App types
+
+There are different types of apps that can run on your Windows client devices. This section lists some of the common apps used on Windows devices.
+
+- **Microsoft 365 apps**: These apps are used for business and productivity, and include Outlook, Word, Teams, OneNote, and more. Depending on the licenses your organization has, you may already have these apps. Using an MDM provider, these apps can also be deployed to mobile devices, including smartphones.
+
+  For more information on the Microsoft 365 license options, and what you get, see [Transform your enterprise with Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans).
+
+- **Power Apps**: These apps connect to business data available online and on-premises, and can run in a web browser, and on mobile devices. They can be created by business analysts and professional developers. For more information, see [What is Power Apps?](/powerapps/powerapps-overview).
+
+- **.NET apps**: These apps can be desktop apps that run on the device, or web apps. Some common .NET apps include:
+
+  - **Windows Presentation Foundation (WPF)**: Using .NET, you can create a WPF desktop app that runs on the device, or create a WPF web app. This app is commonly used by organizations that create line of business (LOB) desktop apps. For more information, see [WPF Application Development](/dotnet/desktop/wpf/app-development).
+  - **Windows Forms (WinForm)**: Using .NET, you can create a Windows Forms desktop app that runs on the device, and doesn't require a web browser or internet access. Just like Win32 apps, WinForm apps can access the local hardware and file system of the computer where the app is running. For more information, see [Desktop Guide (Windows Forms .NET)](/dotnet/desktop/winforms/overview).
+
+- **Windows apps**: 
+
+  > [!TIP]
+  > Starting with Windows 10, you can use the **Windows UI Library (WinUI 3)** to create .NET, Win32 desktop, and UWP apps. This library includes native Windows UI controls and other user interface elements familiar to Windows users. For more information, see [Windows UI Library (WinUI)](/windows/apps/winui/).
 
   - **Apps**: All apps installed in `C:\Program Files\WindowsApps`. There are two classes of apps:
 
-    - **Provisioned**: Installed in user account the first time you sign in with a new user account.
+    - **Provisioned**: Installed in user account the first time you sign in with a new user account. For a list of some common provisioned apps, see [Provisioned apps installed with the Windows client OS](provisioned-apps-windows-client-os.md).
     - **Installed**: Installed as part of the OS.
 
-  - **System apps**: Apps installed in the `C:\Windows\` directory. These apps are part of the Windows OS.
+  - **Universal Windows Platform (UWP) apps**: These apps run and can be installed on many Windows platforms, including tablets, Microsoft HoloLens, Xbox, and more. All UWP apps are Windows apps. Not all Windows apps are UWP apps.
 
-- **Universal Windows Platform (UWP) apps**: These apps run and can be installed on many Windows platforms, including tablets, Microsoft HoloLens, Xbox, and more. All UWP apps are Windows apps. But, not all Windows apps are UWP apps.
-- **Win32 apps**: These apps are traditional Windows applications.
+    For more information, see [What's a Universal Windows Platform (UWP) app?](/windows/uwp/get-started/universal-application-platform-guide).
 
-This article lists the provisioned Windows apps and system apps installed on a standard Windows 10 Enterprise device. If you use custom images, your specific apps might be different.
+  - **Win32 apps**: These apps are traditional Windows apps that run on the device, and are often called desktop apps. They require direct access to Windows and the device hardware, and typically don't require a web browser. These apps run in 32-bit mode on 64-bit devices, and don't depend on a managed runtime environment, like .NET.
 
-Some of the apps show up in multiple areas. That's because their status changed between versions. Make sure to check the version column for the version you're currently running.
+    For more information, see [Get started developing apps for Windows desktop](/windows/apps/get-started) and [Make your apps great on Windows 11](/windows/apps/get-started/make-apps-great-for-windows).
 
-## Provisioned Windows apps
+  - **System apps**: Apps installed in the `C:\Windows\` directory. These apps are part of the Windows OS. For a list of some common system apps, see [System apps installed with the Windows client OS](system-apps-windows-client-os.md).
 
-The first time a user signs into a Windows device, some apps are automatically provisioned. To get a list of all provisioned Windows apps, run the following Windows PowerShell command:
+- **Web apps** and **Progressive web apps (PWA)**: These apps run on a server, and don't run on the end user device. To use these apps, users must use a web browser and have internet access. **Progressive web apps** are designed to work for all users, work with any browser, and work on any platform.
 
-```Powershell
-Get-AppxProvisionedPackage -Online | Format-Table DisplayName, PackageName
-```
+  Web apps are typically created in Visual Studio, and can be created with different languages. For more information, see [Create a Web App](https://azure.microsoft.com/get-started/web-app/). When the app is created and ready to be used, you deploy the web app to a web server. Using Azure, you can host your web apps in the cloud, instead of on-premises. For more information, see [App Service overview](/azure/app-service/overview).
 
-The following information lists the provisioned apps on the supported Windows 10 OS versions:
+  Using an MDM provider, you can create shortcuts to your web apps and progressive web apps on devices.
 
-- [3D Builder](ms-windows-store://pdp/?PFN=Microsoft.3DBuilder_8wekyb3d8bbwe) | Package name: Microsoft.3DBuilder
-  - Supported versions:
+## Add or deploy apps to devices
 
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | | | | | |
+When your apps are ready, you can add or deploy these apps to your Windows devices. This section lists some common options.
 
-    ---
+- **Manually install**: On your devices, users can install apps from the Microsoft Store, from the internet, and from an organization shared drive. These apps, and more, are listed in **Settings** > **Apps** > **Apps and Features**.
 
-- [Bing Weather](ms-windows-store://pdp/?PFN=Microsoft.BingWeather_8wekyb3d8bbwe) | Package name: Microsoft.BingWeather
-  - Supported versions:
+  If you want to prevent users from downloading apps on organization owned devices, use an MDM provider, like Microsoft Intune. For example, you can create a policy that allows or prevents users from sideloading apps, only allow the private store, and more. For more information on the features you can restrict, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10).
 
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+  For an overview of the different types of device policies you can create, see [Apply features and settings on your devices using device profiles in Microsoft Intune](/mem/intune/configuration/device-profiles).
 
-    ---
+- **Mobile device management (MDM)**: Use an MDM provider, like Microsoft Intune (cloud) or Configuration Manager (on-premises), to deploy apps. For example, you can create app policies that deploy Microsoft 365 apps, deploy Win32 apps, create shortcuts to web apps, add Store apps, and more.
 
-- [Desktop App Installer](ms-windows-store://pdp/?PFN=Microsoft.DesktopAppInstaller_8wekyb3d8bbwe) | Package name: Microsoft.DesktopAppInstaller
-  - Supported versions:
+  For more information, see:
 
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | Use Settings App | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+  - [Add apps to Microsoft Intune](/mem/intune/apps/apps-add)
+  - [Application management in Configuration Manager](/mem/configmgr/apps/understand/introduction-to-application-management)
 
-    ---
+- **Microsoft Store**: Using the Microsoft Store app, Windows users can download apps from the public store. And, they can download apps provided by your organization, which is called the "private store". If your organization creates its own apps, you can use **[Windows Package Manager](/windows/package-manager)** to add apps to the private store.
 
-- [Get Help](ms-windows-store://pdp/?PFN=Microsoft.Gethelp_8wekyb3d8bbwe) | Package name: Microsoft.GetHelp
-  - Supported versions:
+  To help manage the Microsoft Store on your devices, you can use policies:
 
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+  - On premises, you can use Administrative Templates in Group Policy to control access to the Microsoft Store app:
+    - `User Configuration\Administrative Templates\Windows Components\Store`
+    - `Computer Configuration\Administrative Templates\Windows Components\Store`
+  - Using Microsoft Intune, you can use [Administrative Templates](/mem/intune/configuration/administrative-templates-windows) (opens another Microsoft web site) or the [Settings Catalog](/mem/intune/configuration/settings-catalog) (opens another Microsoft web site) to control access to the Microsoft Store app.
 
-    ---
+  For more information, see:
 
-- [Microsoft Tips](ms-windows-store://pdp/?PFN=Microsoft.Getstarted_8wekyb3d8bbwe) | Package name: Microsoft.Getstarted
-  - Supported versions:
+  - [Microsoft Store for Business and Education](/microsoft-store/)
+  - [Evolving the Microsoft Store for Business and Education](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/evolving-the-microsoft-store-for-business-and-education/ba-p/2569423)
 
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+- **MSIX for desktop apps**: MSIX packages your UWP, Win32, WPF, and WinForm desktop application files. MSIX reliably installs apps, helps optimize disk storage space, and reduces duplicate files. If your organization typically uses `.EXE` or `.MSI` files to install desktop apps, then you should look into MSIX.
 
-    ---
+  To deploy MSIX packages and their apps, you can:
 
-- [HEIF Image Extensions](ms-windows-store://pdp/?PFN=Microsoft.HEIFImageExtension_8wekyb3d8bbwe) | Package name: Microsoft.HEIFImageExtension
-  - Supported versions:
+  - Use an MDM provider, like Microsoft Intune and Configuration Manager.
+  - Use an App Installer. User users double-click an installer file, or select a link on a web page.
+  - And more.
 
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️|✔️ | ✔️| ✔️| ✔️|
+  For more information, see:
 
-    ---
+  - [What is MSIX?](/windows/msix/overview)
+  - [MSIX app distribution for enterprises](/windows/msix/desktop/managing-your-msix-deployment-enterprise)
 
-- [Microsoft Messaging](ms-windows-store://pdp/?PFN=Microsoft.Messaging_8wekyb3d8bbwe) | Package name:Microsoft.Messaging
-  - Supported versions:
+- **Windows Package Manager**: Windows Package Manager is a command line tool commonly used by developers to install Windows apps. Using the command line, you can get apps from the Microsoft Store or from GitHub (and more), and install these apps on Windows devices. It's helpful if you want to bypass user interfaces for getting apps from organizations and from developers.
 
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
+  If your organization uses `.EXE`, `.MSIX`, or `.MSI` files, then Windows Package Manager might be the right deployment option for your organization.
 
-    ---
+  For more information, see [Windows Package Manager](/windows/package-manager).
 
-- [Microsoft 3D Viewer](ms-windows-store://pdp/?PFN=Microsoft.Microsoft3DViewer_8wekyb3d8bbwe) | Package name: Microsoft.Microsoft3DViewer
-  - Supported versions:
+- **Azure Virtual desktop with MSIX app attach**: With Azure virtual desktop, you can virtualize the Windows client OS desktop, and use virtual apps on this desktop. With MSIX app attach, you dynamically deliver MSIX packaged apps to users and user groups.
 
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+  The benefit is to use the cloud to deliver virtual apps in real time, and as-needed. Users use the apps as if they're installed locally.
 
-    ---
+  If you currently use App-V, and want to reduce your on-premises footprint, then **Azure Virtual desktop with MSIX app attach** might be the right deployment for your organization.
 
-- [Office](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe) | Package name: Microsoft.MicrosoftOfficeHub
-  - Supported versions:
+  For more information, see:
 
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+  - [What is Azure Virtual Desktop?](/azure/virtual-desktop/overview)
+  - [Set up MSIX app attach with the Azure portal](/azure/virtual-desktop/app-attach-azure-portal)
 
-    ---
+- **Application Virtualization (App-V)**: App-V allows Win32 apps to be used as virtual apps.
 
-- [Microsoft Solitaire Collection](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftSolitaireCollection_8wekyb3d8bbwe) | Package name: Microsoft.MicrosoftSolitaireCollection
-  - Supported versions:
+  > [!NOTE]
+  > Application Virtualization will be [end of life in April 2026](/lifecycle/announcements/mdop-extended). We recommend looking at **Azure Virtual desktop with MSIX app attach**. For more information, see [What is Azure Virtual Desktop?](/azure/virtual-desktop/overview) and [Set up MSIX app attach with the Azure portal](/azure/virtual-desktop/app-attach-azure-portal).
 
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+  On an on-premises server, you install and configure the App-V server components, and then install your Win32 apps. On Windows Enterprise client devices, you use the App-V client components to run the virtualized apps. They allow users to open the virtual apps using the icons and file names they're familiar with. Users use the apps as if they're installed locally.
 
-    ---
+  The benefit is to deliver virtual apps in real time, and as-needed. For more information, see [Application Virtualization (App-V) for Windows overview](./app-v/appv-for-windows.md).
 
-- [Microsoft Sticky Notes](ms-windows-store://pdp/?PFN=Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe) | Package name: Microsoft.MicrosoftStickyNotes
-  - Supported versions:
+  To help manage App-V on your devices, you can use policies:
 
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
+  - On premises, you can use Administrative Templates in Group Policy to deploy App-V policies (`Computer Configuration\Administrative Templates\System\App-V`).
+  - Using Microsoft Intune, you can use [Administrative Templates](/mem/intune/configuration/administrative-templates-windows) (opens another Microsoft web site) or the [Settings Catalog](/mem/intune/configuration/settings-catalog) (opens another Microsoft web site) to deploy App-V policies.
 
-    ---
-
-- [Mixed Reality Portal](ms-windows-store://pdp/?PFN=Microsoft.MixedReality.Portal_8wekyb3d8bbwe) | Package name: Microsoft.MixedReality.Portal
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Paint 3D](ms-windows-store://pdp/?PFN=Microsoft.MSPaint_8wekyb3d8bbwe) | Package name: Microsoft.MSPaint
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [OneNote for Windows 10](ms-windows-store://pdp/?PFN=Microsoft.Office.OneNote_8wekyb3d8bbwe) | Package name: Microsoft.Office.OneNote
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ✔️ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Mobile Plans](ms-windows-store://pdp/?PFN=Microsoft.OneConnect_8wekyb3d8bbwe) | Package name: Microsoft.OneConnect
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
-
-    ---
-
-- Microsoft.Outlook.DesktopIntegrationServices
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    |  | ✔️ | ✔️| | ✔️| | |
-
-    ---
-
-- [Microsoft People](ms-windows-store://pdp/?PFN=Microsoft.People_8wekyb3d8bbwe) | Package name: Microsoft.People
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Print 3D](ms-windows-store://pdp/?PFN=Microsoft.Print3D_8wekyb3d8bbwe) | Package name: Microsoft.Print3D
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Snip & Sketch](ms-windows-store://pdp/?PFN=Microsoft.ScreenSketch_8wekyb3d8bbwe) | Package name: Microsoft.ScreenSketch
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Skype](ms-windows-store://pdp/?PFN=Microsoft.SkypeApp_kzf8qxf38zg5c) | Package name: Microsoft.SkypeApp
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Store Purchase App](ms-windows-store://pdp/?PFN=Microsoft.StorePurchaseApp_8wekyb3d8bbwe) | Package name: Microsoft.StorePurchaseApp
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- Microsoft.VP9VideoExtensions
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Microsoft Pay](ms-windows-store://pdp/?PFN=Microsoft.Wallet_8wekyb3d8bbwe) | Package name: Microsoft.Wallet
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Web Media Extensions](ms-windows-store://pdp/?PFN=Microsoft.WebMediaExtensions_8wekyb3d8bbwe) | Package name: Microsoft.WebMediaExtensions
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Webp Image Extension](ms-windows-store://pdp/?PFN=Microsoft.WebpImageExtension_8wekyb3d8bbwe) | Package name: Microsoft.WebpImageExtension
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Microsoft Photos](ms-windows-store://pdp/?PFN=Microsoft.Windows.Photos_8wekyb3d8bbwe) | Package name: Microsoft.Windows.Photos
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Windows Alarms & Clock](ms-windows-store://pdp/?PFN=Microsoft.WindowsAlarms_8wekyb3d8bbwe) | Package name: Microsoft.WindowsAlarms
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Windows Calculator](ms-windows-store://pdp/?PFN=Microsoft.WindowsCalculator_8wekyb3d8bbwe) | Package name: Microsoft.WindowsCalculator
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Windows Camera](ms-windows-store://pdp/?PFN=Microsoft.WindowsCamera_8wekyb3d8bbwe) | Package name: Microsoft.WindowsCamera
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Mail and Calendar](ms-windows-store://pdp/?PFN=microsoft.windowscommunicationsapps_8wekyb3d8bbwe) | Package name: microsoft.windowscommunicationsapps
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Feedback Hub](ms-windows-store://pdp/?PFN=Microsoft.WindowsFeedbackHub_8wekyb3d8bbwe) | Package name: Microsoft.WindowsFeedbackHub
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Windows Maps](ms-windows-store://pdp/?PFN=Microsoft.WindowsMaps_8wekyb3d8bbwe) | Package name: Microsoft.WindowsMaps
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Windows Voice Recorder](ms-windows-store://pdp/?PFN=Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe) | Package name: Microsoft.WindowsSoundRecorder
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Microsoft Store](ms-windows-store://pdp/?PFN=Microsoft.WindowsStore_8wekyb3d8bbwe) | Package name: Microsoft.WindowsStore
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-  - The Store app shouldn't be removed. If you remove the Store app, and want to reinstall it, you can restore your system from a backup, or reset your system. Instead of removing the Store app, use group policies to hide or disable it.
-
-- [Xbox Live in-game experience](ms-windows-store://pdp/?PFN=Microsoft.Xbox.TCUI_8wekyb3d8bbwe) | Package name: Microsoft.Xbox.TCUI
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Xbox Console Companion](ms-windows-store://pdp/?PFN=Microsoft.XboxApp_8wekyb3d8bbwe) | Package name: Microsoft.XboxApp
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Xbox Game Bar Plugin](ms-windows-store://pdp/?PFN=Microsoft.XboxGameOverlay_8wekyb3d8bbwe) | Package name: Microsoft.XboxGameOverlay
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Xbox Game Bar](ms-windows-store://pdp/?PFN=Microsoft.XboxGamingOverlay_8wekyb3d8bbwe) | Package name: Microsoft.XboxGamingOverlay
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Xbox Identity Provider](ms-windows-store://pdp/?PFN=Microsoft.XboxIdentityProvider_8wekyb3d8bbwe) | Package name: Microsoft.XboxIdentityProvider
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- Microsoft.XboxSpeechToTextOverlay
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Your Phone](ms-windows-store://pdp/?PFN=Microsoft.YourPhone_8wekyb3d8bbwe) | Package name: Microsoft.YourPhone
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Groove Music](ms-windows-store://pdp/?PFN=Microsoft.ZuneMusic_8wekyb3d8bbwe) | Package name: Microsoft.ZuneMusic
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-- [Movies & TV](ms-windows-store://pdp/?PFN=Microsoft.ZuneVideo_8wekyb3d8bbwe) | Package name: Microsoft.ZuneVideo
-  - Supported versions:
-
-    ---
-    | Uninstall through UI? | 21H1 | 20H2 | 2004 | 1909| 1903| 1809 |
-    | --- | --- | --- | --- | --- | --- |--- |
-    | ❌ | ✔️ | ✔️| ✔️ | ✔️| ✔️| ✔️|
-
-    ---
-
-## System apps
-
-System apps are used by the operating system. To get a list of all the system apps, run the following Windows PowerShell command:
-
-```Powershell
-Get-AppxPackage -PackageTypeFilter Main | ? { $_.SignatureKind -eq "System" } | Sort Name | Format-Table Name, InstallLocation
-```
-
-The following information lists the system apps on some Windows 10 OS versions:
-
-- File Picker | Package name: 1527c705-839a-4832-9118-54d4Bd6a0c89
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- File Explorer | Package name: c5e2524a-ea46-4f67-841f-6a9465d9d515
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- App Resolver UX | Package name: E2A4F912-2574-4A75-9BB0-0D023378592B
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Add Suggested Folders To Library | Package name: F46D4000-FD22-4DB4-AC8E-4E1DDDE828FE
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- InputApp
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ |  | | ✔️ |
-
-  ---
-
-- Microsoft.AAD.Broker.Plugin | Package name: Microsoft.AAD.Broker.Plugin
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.AccountsControl | Package name: Microsoft.AccountsControl
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.AsyncTextService | Package name: Microsoft.AsyncTextService
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Hello setup UI | Package name: Microsoft.BioEnrollment
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.CredDialogHost
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.ECApp
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.LockApp
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft Edge | Package name: Microsoft.MicrosoftEdge
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.MicrosoftEdgeDevToolsClient
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.PPIProjection
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ |  | | ✔️ |
-
-  ---
-
-- Microsoft.Win32WebViewHost
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.Windows.Apprep.ChxApp
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.Windows.AssignedAccessLockApp
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.Windows.CapturePicker
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.Windows.CloudExperienceHost
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.Windows.ContentDeliveryManager
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Cortana | Package name: Microsoft.Windows.Cortana
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ |  | | ✔️ |
-
-  ---
-
-- Microsoft.Windows.OOBENetworkCaptivePort
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.Windows.OOBENetworkConnectionFlow
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.Windows.ParentalControls
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- People Hub | Package name: Microsoft.Windows.PeopleExperienceHost
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.Windows.PinningConfirmationDialog
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.Windows.SecHealthUI
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.Windows.SecureAssessmentBrowser
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Start | Package name: Microsoft.Windows.ShellExperienceHost
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Microsoft.XboxGameCallableUI
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Windows.CBSPreview
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Settings | Package name: Windows.immersivecontrolpanel
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
-
-- Print 3D | Package name: Windows.Print3D
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ✔️ |  | | ✔️ |
-
-  ---
-
-- Print UI | Package name: Windows.PrintDialog
-
-  ---
-  | Uninstall through UI? | 21H1 | 20H2 | 1809 |
-  | --- | --- | --- | --- |
-  | ❌ | ✔️ | ✔️| ✔️ |
-
-  ---
 

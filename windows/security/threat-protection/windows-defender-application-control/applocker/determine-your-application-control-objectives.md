@@ -1,5 +1,5 @@
 ---
-title: Determine your application control objectives (Windows 10)
+title: Determine your application control objectives (Windows)
 description: Determine which applications to control and how to control them by comparing Software Restriction Policies (SRP) and AppLocker.
 ms.assetid: 0e84003e-6095-46fb-8c4e-2065869bb53b
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Determine your application control objectives
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This article helps with decisions you need to make to determine what applications to control and how to control them by comparing Software Restriction Policies (SRP) and AppLocker.
 

@@ -22,7 +22,7 @@ ms.custom: bitlocker
 
 **Applies to:**
 
-- Windows 10, Windows Server 2019, Windows Server 2016, Windows 8.1, and Windows Server 2012 R2
+- Windows 10, Windows 11, Windows Server 2019, Windows Server 2016, Windows 8.1, and Windows Server 2012 R2
 
 This topic for IT professionals describes the function, location, and effect of each Group Policy setting that is used to manage BitLocker Drive Encryption.
 
@@ -108,7 +108,7 @@ This policy setting allows users on devices that are compliant with Modern Stand
 |    | &nbsp; |
 |:---|:---|
 |**Policy description**|With this policy setting, you can allow TPM-only protection for newer, more secure devices, such as devices that support Modern Standby or HSTI, while requiring PIN on older devices.|
-|**Introduced**|Windows 10, version 1703|
+|**Introduced**|Windows 10, version 1703, or Windows 11|
 |**Drive type**|Operating system drives|
 |**Policy path**|Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption\Operating System Drives|
 |**Conflicts**|This setting overrides the **Require startup PIN with TPM** option of the [Require additional authentication at startup](#bkmk-unlockpol1) policy on compliant hardware.|
@@ -247,8 +247,8 @@ If the PIN is 4 digits, all 9999 possible PIN combinations could be attempted in
 Increasing the PIN length requires a greater number of guesses for an attacker.
 In that case, the lockout duration between each guess can be shortened to allow legitimate users to retry a failed attempt sooner, while maintaining a similar level of protection.
 
-Beginning with Windows 10, version 1703, the minimum length for the BitLocker PIN was increased to 6 characters to better align with other Windows features that leverage TPM 2.0, including Windows Hello.
-To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703 with the October 2017 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is 6 characters by default, but it can be reduced to 4 characters.
+Beginning with Windows 10, version 1703, or Windows 11, the minimum length for the BitLocker PIN was increased to 6 characters to better align with other Windows features that leverage TPM 2.0, including Windows Hello.
+To help organizations with the transition, beginning with Windows 10, version 1709 and Windows 10, version 1703 with the October 2017, or Windows 11 [cumulative update](https://support.microsoft.com/help/4018124) installed, the BitLocker PIN length is 6 characters by default, but it can be reduced to 4 characters.
 If the minimum PIN length is reduced from the default of six characters, then the TPM 2.0 lockout period will be extended.
 
 ### Disable new DMA devices when this computer is locked
@@ -258,7 +258,7 @@ This policy setting allows you to block direct memory access (DMA) for all hot p
 |    | &nbsp; |
 |:---|:---|
 |**Policy description**|This setting helps prevent attacks that use external PCI-based devices to access BitLocker keys.|
-|**Introduced**|Windows 10, version 1703|
+|**Introduced**|Windows 10, version 1703, or Windows 11|
 |**Drive type**|Operating system drives|
 |**Policy path**|Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption|
 |**Conflicts**|None|
@@ -612,7 +612,7 @@ This policy setting is used to control the encryption method and cipher strength
 |**Policy path**|Computer Configuration\Administrative Templates\Windows Components\BitLocker Drive Encryption|
 |**Conflicts**|None|
 |**When enabled**|You can choose an encryption algorithm and key cipher strength for BitLocker to use to encrypt drives.|
-|**When disabled or not configured**|Beginning with Windows 10, version 1511, BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script. Windows Phone does not support XTS; it uses AES-CBC 128-bit by default and supports AES-CBC 256-bit by policy.|
+|**When disabled or not configured**|Beginning with Windows 10, version 1511, or Windows 11,  BitLocker uses the default encryption method of XTS-AES 128-bit or the encryption method that is specified by the setup script. Windows Phone does not support XTS; it uses AES-CBC 128-bit by default and supports AES-CBC 256-bit by policy.|
 
 **Reference**
 
@@ -621,7 +621,7 @@ Enterprises may want to control the encryption level for increased security (AES
 
 If you enable this setting, you will be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually.
 For fixed and operating system drives, we recommend that you use the XTS-AES algorithm.
-For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10, version 1511 or later.
+For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive will be used in other devices that are not running Windows 10, version 1511 or later, or Windows 11.
 
 Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.
 
@@ -965,7 +965,7 @@ This policy setting is used to configure the entire recovery message and to repl
 |    | &nbsp; |
 |:---|:---|
 |**Policy description**|With this policy setting, you can configure the BitLocker recovery screen to display a customized message and URL.|
-|**Introduced**|Windows 10|
+|**Introduced**|Windows|
 |**Drive type**|Operating system drives|
 |**Policy path**|Computer Configuration \ Administrative Templates \ Windows Components \ BitLocker Drive Encryption \ Operating System Drives \ Configure pre-boot recovery message and URL|
 |**Conflicts**|None|

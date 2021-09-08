@@ -1,5 +1,5 @@
 ---
-title: Deploy Windows Defender Application Control (WDAC) policies using script (Windows 10)
+title: Deploy Windows Defender Application Control (WDAC) policies using script (Windows)
 description: Use scripts to deploy Windows Defender Application Control (WDAC) policies. Learn how with this step-by-step guide.
 keywords: security, malware
 ms.prod: m365-security
@@ -21,7 +21,11 @@ ms.localizationpriority: medium
 **Applies to:**
 
 - Windows 10
+- Windows 11
 - Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic describes how to deploy Windows Defender Application Control (WDAC) policies using script. The instructions below use PowerShell but can work with any scripting host.
 
