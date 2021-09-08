@@ -13,9 +13,7 @@ author: denisebmsft
 
 # Windows operating system security
 
-This article provides an overview of security measures built into Windows 11.
-
-## Operating system security
+This article provides an overview of operating system security in Windows 11.
 
 Security and privacy depend on an operating system that guards your system and information from the moment it starts up, providing fundamental chip-to-cloud protection. Windows 11 is the most secure Windows yet with extensive security measures designed to help keep you safe. These measures include built-in advanced encryption and data protection, robust network and system security, and intelligent safeguards against ever-evolving threats. 
 

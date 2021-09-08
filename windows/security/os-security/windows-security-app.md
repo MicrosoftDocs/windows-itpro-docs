@@ -18,7 +18,7 @@ f1.keywords: NOCSH
 
 # The Windows Security app
 
-This article provides an overview of the Windows Security app in Windows 11.
+*This article provides an overview of the Windows Security app in Windows 11.*
 
 :::image type="content" source="../images/windows-security-app-w11.png" alt-text="Windows Security app in Windows 11":::
 
