@@ -11,7 +11,7 @@ metadata:
   ms.collection: m365-security-compliance
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/01/2021
+  ms.date: 09/07/2021
   localization_priority: Priority
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -38,13 +38,13 @@ landingContent:
       - linkListType: overview
         links:
         - text: Overview of operating system security
-          url: /windows/security/information-protection/index.md
+          url: operating-system.md
       - linkListType: concept
         links:
         - text: System security
-          url: /windows/security/information-protection/secure-the-windows-10-boot-process.md
+          url: os-security/trusted-boot.md
         - text: Encryption and data protection
-          url: /windows/security/information-protection/encrypted-hard-drive.md
+          url: os-security/encryption-data-protection.md
         - text: Network security
           url: /windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
 # Cards and links should be based on top customer tasks or top subjects
