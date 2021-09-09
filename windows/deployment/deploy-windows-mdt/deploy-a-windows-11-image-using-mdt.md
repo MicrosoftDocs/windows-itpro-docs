@@ -22,7 +22,7 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-This topic will show you how to take your reference image for Windows 11 (that was just [created](create-a-windows-11-reference-image.md)), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
+This topic will show you how to take your reference image for Windows 11 that was just [created](create-a-windows-11-reference-image.md), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
 
 We will prepare for this by creating an MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. We will configure Active Directory permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
 
@@ -624,7 +624,7 @@ These steps will walk you through the process of using task sequences to deploy 
 
 ### Configure Windows Deployment Services
 
-You need to add the MDT Production Lite Touch x64 Boot image to WDS in preparation for the deployment. In this procedure, we assume that WDS is already installed and initialized on MDT01 as described in the [Prepare for Windows deployment](prepare-for-windows-deployment-with-mdt.md#install-and-initialize-windows-deployment-services-wds) article.
+You need to add the MDT Production Lite Touch x64 Boot image to WDS in preparation for the deployment. In this procedure, we assume that WDS is already installed and initialized on MDT01 as described in the [Prepare for Windows deployment](prepare-for-windows-deployment-with-mdt.md#install-and-initialize-wds) article. 
 
 On **MDT01**:
 

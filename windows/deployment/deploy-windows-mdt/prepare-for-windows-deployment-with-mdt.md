@@ -1,6 +1,6 @@
 ---
 title: Prepare for deployment with MDT (Windows 11)
-description: This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 10 operating system using the Microsoft Deployment Toolkit (MDT).
+description: This topic will walk you through the steps necessary to create the server structure required to deploy the Windows 11 operating system using the Microsoft Deployment Toolkit (MDT).
 ms.assetid: 5103c418-0c61-414b-b93c-a8e8207d1226
 ms.reviewer: 
 manager: dougeby

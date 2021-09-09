@@ -11,7 +11,7 @@
         - name: Deploy a Windows 11 image using MDT
           href: deploy-a-windows-11-image-using-mdt.md
         - name: Build a distributed environment for Windows 11 deployment
-          href: build-a-distributed-environment-for-windows-11-deployment.md
+          href: build-a-distributed-environment-for-windows-deployment.md
         - name: Refresh a Windows 10 computer with Windows 11
           href: refresh-a-windows-10-computer-with-windows-11.md
         - name: Replace a Windows 10 computer with a Windows 11 computer
