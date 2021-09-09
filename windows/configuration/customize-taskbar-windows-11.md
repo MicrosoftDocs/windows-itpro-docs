@@ -4,7 +4,7 @@ description: On Windows 11 devices devices, iin additional apps to the taskbar a
 ms.assetid: 
 manager: dougeby
 ms.author: mandia
-ms.reviewer: 
+ms.reviewer: chataylo
 ms.prod: w11
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -22,9 +22,9 @@ ms.localizationpriority: medium
 
 > **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
 
-On Windows 11 devices, you can pin apps you want to the taskbar. Use this feature if your organization uses a common set of apps, and or wants to bring attention to specific apps. You can also remove the default pinned apps.
+Your organization can deploy a customized taskbar to your Windows 11 devices. Customizing the taskbar is common when your organization uses a common set of apps, or wants to bring attention to specific apps. You can also remove the default pinned apps.
 
-For example, you can override the default set of apps with your own a set of pinned apps, and in the order you choose. As an administrator, use this feature to pin Win32 apps, remove default pinned apps, order the apps, and more.
+For example, you can override the default set of apps with your own a set of pinned apps, and in the order you choose. As an administrator, use this feature to pin apps, remove default pinned apps, order the apps, and more on the taskbar.
 
 To add apps you want pinned to the taskbar, you use an XML file. You can use an existing XML file, or create a new file. If you have an XML file that's used on Windows 10 devices, you can also use it on Windows 11 devices. You may have to update the App IDs.
 
@@ -134,7 +134,7 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 ## Use Group Policy or MDM to create and deploy a taskbar policy
 
-Now that you have the XML file with your customized task bar, you're ready to deploy it to devices in your organization. You can deploy your taskbar XML file using Group Policy, or using an MDM provider, like Microsoft Intune.
+Now that you have the XML file with your customized taskbar, you're ready to deploy it to devices in your organization. You can deploy your taskbar XML file using Group Policy, or using an MDM provider, like Microsoft Intune.
 
 This section shows you how to deploy the XML both ways.
 
@@ -148,9 +148,9 @@ Use the following steps to add your XML file to a group policy, and apply the po
     - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Start Layout`
     - `User Configuration\Administrative Templates\Start Menu and Taskbar\Start Layout`
 
-3. Double-select `Start Layout` > **Enable**. Enter the fully qualified path to your XML file, including the XML file name. You can enter a local path, like `C:\StartLayouts\CustomTaskbar.xml`, or a network path, like `\\Server\Share\CustomTaskbar.xml`. If the file isn't available when the user signs in, then the taskbar isn't changed. Users can't customize the taskbar when this setting is enabled. If using a network share, be sure to give users read access to the XML file.
+3. Double-select `Start Layout` > **Enable**. Enter the fully qualified path to your XML file, including the XML file name. You can enter a local path, like `C:\StartLayouts\CustomTaskbar.xml`, or a network path, like `\\Server\Share\CustomTaskbar.xml`. If using a network share, be sure to give users read access to the XML file. If the file isn't available when the user signs in, then the taskbar isn't changed. Users can't customize the taskbar when this setting is enabled.
 
-    You policy looks like the following policy:
+    Your policy looks like the following policy:
 
     :::image type="content" source="./images/customize-taskbar-windows-11/start-layout-group-policy.png" alt-text="Add your taskbar layout XML file to the Start Layout policy on Windows devices.":::
 
@@ -186,7 +186,7 @@ Use the following steps to create an Intune policy that deploys your taskbar XML
 
 7. Select **Next**, and configure the rest of the policy settings. For more specific information, see [Configure device restriction settings in Microsoft Intune](/mem/intune/configuration/device-restrictions-configure).
 
-8. When the policy is created, you can deploy it now, or deploy it later. Since this policy is a customized taskbar, the policy can also be deployed before users sign in the first time. 
+8. When the policy is created, you can deploy it now, or deploy it later. Since this policy is a customized taskbar, the policy can also be deployed before users sign in the first time.
 
     For more information and guidance on assigning policies using Microsoft Intune, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).
 
