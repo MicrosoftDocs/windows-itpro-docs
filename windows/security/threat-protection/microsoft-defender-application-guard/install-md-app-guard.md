@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/21/2020
+ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -18,7 +18,9 @@ ms.technology: mde
 # Prepare to install Microsoft Defender Application Guard
 
 **Applies to:**
-- - Windows 10
+
+- Windows 10
+- Windows 11
 
 ## Review system requirements
  

@@ -10,7 +10,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
-ms.date: 09/14/2020
+ms.date: 09/09/2021
 ms.custom: asr
 ms.technology: mde
 ---
@@ -20,6 +20,7 @@ ms.technology: mde
 **Applies to:**
 
 - Windows 10
+- Windows 11
 
 We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
 

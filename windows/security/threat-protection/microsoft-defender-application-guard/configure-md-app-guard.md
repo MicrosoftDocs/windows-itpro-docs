@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/24/2021
+ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -20,6 +20,7 @@ ms.technology: mde
 **Applies to:**
 
 - Windows 10
+- Windows 11
 
 Microsoft Defender Application Guard (Application Guard) works with Group Policy to help you manage your organization's computer settings. By using Group Policy, you can configure a setting once, and then copy it onto many computers. For example, you can set up multiple security settings in a Group Policy Object, which is linked to a domain, and then apply all those settings to every endpoint in the domain.
 
