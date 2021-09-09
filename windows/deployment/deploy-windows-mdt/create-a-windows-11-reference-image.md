@@ -22,10 +22,10 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this topic, you will learn how to create a Windows 10 reference image using the Microsoft Deployment Toolkit (MDT). You will create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 10 reference image. After completing the steps outlined in this topic, you will have a Windows 10 reference image that can be used in your deployment solution.
+Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this topic, you will learn how to create a Windows 11 reference image using the Microsoft Deployment Toolkit (MDT). You will create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 11 reference image. After completing the steps outlined in this topic, you will have a Windows 11 reference image that can be used in your deployment solution.
 
->[!NOTE]
->See [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) for more information about the server, client, and network infrastructure used in this guide.
+> [!NOTE]
+> See [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) for more information about the server, client, and network infrastructure used in this guide.
 
 For the purposes of this topic, we will use three computers: DC01, MDT01, and HV01.
    - DC01 is a domain controller for the contoso.com domain.
