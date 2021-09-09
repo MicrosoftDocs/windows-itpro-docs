@@ -6,7 +6,7 @@ ms.reviewer:
 manager: dougeby
 ms.author: greglin
 keywords: deploy, system requirements
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
@@ -22,9 +22,10 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-This article will walk you through the steps necessary to prepare your network and server infrastructure to deploy Windows 11 with the Microsoft Deployment Toolkit (MDT). It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the file system and in Active Directory.
 
-The following procedures are described in this article:
+This article will walk you through the steps necessary to prepare your network and server infrastructure to deploy Windows 11 with the Microsoft Deployment Toolkit (MDT). For an overview of the features, components, and capabilities of MDT, see [Get started with MDT](get-started-with-the-microsoft-deployment-toolkit.md).
+
+This article covers installation of necessary system prerequisites, creation of shared folders and service accounts, and configuration of security permissions in the file system and in Active Directory. Steps to complete the following procedures are provided:
 
 1. Install the Windows Assessment and Deployment Kit (ADK)
 2. Install and initialize Windows Deployment Services (WDS)
@@ -33,12 +34,12 @@ The following procedures are described in this article:
 5. Create the MDT service account
 6. Create and share the logs folder
 
+All procedures in this guide can also be used to deploy Windows 10. 
+
+After completing these steps, you can create a [Windows 11 reference image](create-a-windows-11-reference-image.md) that will be used to deploy Winodws 11. If you are installing Windows 10 instead of Windows 11, use [source media](create-a-windows-11-reference-image.md#add-setup-files) for Windows 10 instead of Windows 11 to create your reference image.
+
 > [!IMPORTANT]
-> Before deploying Windows 11, verify that the device meets or exceeds [requirements](../../whats-new/windows-11-requirements.md).
-
-All procedures in this guide can also be used to deploy Windows 10 by changing the source media that is used.
-
-For an overview of the features, components, and capabilities of MDT, see [Get started with MDT](get-started-with-the-microsoft-deployment-toolkit.md).
+> Before deploying Windows 11, verify that the device meets or exceeds [requirements](/windows/whats-new/windows-11-requirements).
 
 ## Infrastructure and requirements
 
