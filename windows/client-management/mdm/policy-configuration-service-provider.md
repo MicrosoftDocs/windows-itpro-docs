@@ -736,6 +736,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_DiskDiagnostic policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-diskdiagnostic.md#admx-diskdiagnostic-dfdalertpolicy" id="admx-diskdiagnostic-dfdalertpolicy">ADMX_DiskDiagnostic/DfdAlertPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskdiagnostic.md#admx-diskdiagnostic-wdiscenarioexecutionpolicy" id="admx-diskdiagnostic-wdiscenarioexecutionpolicy">ADMX_DiskDiagnostic/WdiScenarioExecutionPolicy</a>
+  </dd>
+</dl>
+
 ### ADMX_DistributedLinkTracking policies  
 
 <dl>
