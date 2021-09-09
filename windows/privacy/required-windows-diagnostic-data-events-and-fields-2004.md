@@ -38,7 +38,7 @@ Required diagnostic data helps to identify problems that can occur on a particul
 Use this article to learn about diagnostic events, grouped by event area, and the fields within each event. A brief description is provided for each field. Every event generated includes common data, which collects device data.
 
 You can learn more about Windows functional and diagnostic data through these articles:
-
+- [Required Windows 11 diagnostic events and fields](required-windows-11-diagnostic-events-and-fields.md)
 - [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
