@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/08/2021
+ms.date: 09/09/2021
 ms.localizationpriority: medium
 ---
 
@@ -55,9 +55,9 @@ Start has the following areas:
   This article shows you how to use the **ConfigureStartPins** policy.
 
 - **All apps**: Users select this option to see an alphabetical list of all the apps on the device. This section can't be customized using the JSON file. You can use the `Start/ShowOrHideMostUsedApps` CSP, which is a new policy available in Windows 11.
-- **Recommended**: Shows recently opened files and recently installed apps. This section can't be customized using the JSON file. To prevent files from showing in this section, you can use the [Start/HideRecentJumplists CSP](../client-management/mdm/policy-csp-start.md#start-hiderecentjumplists). This CSP also hides recent files that show from the taskbar.
+- **Recommended**: Shows recently opened files and recently installed apps. This section can't be customized using the JSON file. To prevent files from showing in this section, you can use the [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists). This CSP also hides recent files that show from the taskbar.
 
-  You can use an MDM provider, like Microsoft Intune, to manage the `Start/HideRecentJumplists` CSP on your devices. For more information on the Start menu settings you can configure in a Microsoft Intune policy, see [Windows 10 (and later) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
+  You can use an MDM provider, like Microsoft Intune, to manage the [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists) on your devices. For more information on the Start menu settings you can configure in a Microsoft Intune policy, see [Windows 10 (and later) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
 
 ## Create the JSON file
 
@@ -82,7 +82,7 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
 
 ### Get the pinnedList JSON
 
-1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code or the Notepad app. For more information, see [edit JSON with Visual Studio Code](https://code.visualstudio.com/docs/languages/json).
+1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code or Notepad. For more information, see [edit JSON with Visual Studio Code](https://code.visualstudio.com/docs/languages/json).
 2. In the file, you see the `pinnedList` section. This section includes all the apps that are pinned. Copy the `pinnedList` content in the JSON file. You'll use it in the next section.
 
     In the following example, you see that Microsoft Edge, Microsoft Word, the Microsoft Store app, and Notepad are pinned:
@@ -98,7 +98,7 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
     } 
     ```
 
-3. Starting with Windows 11, the **ConfigureStartPins** policy is available. This policy uses the LayoutModification.json file to add apps to the Pinned section. In your JSON file, you can add more apps to this section using the following keys:
+3. Starting with Windows 11, the **ConfigureStartPins** policy is available. This policy uses the `LayoutModification.json` file to add apps to the Pinned section. In your JSON file, you can add more apps to this section using the following keys:
 
     ---
     | Key | Description |
@@ -109,7 +109,7 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
 
 ## Use MDM to create and deploy a pinned list policy
 
-Now that you have the JSON, you're ready to deploy your customized Start layout to devices in your organization.
+Now that you have the JSON syntax, you're ready to deploy your customized Start layout to devices in your organization.
 
 MDM providers can deploy policies to devices managed by the organization, including organization-owned devices, and personal or bring your own device (BYOD).  Using an MDM provider, such as Microsoft Intune, you can deploy a policy that configures the pinned list.
 
