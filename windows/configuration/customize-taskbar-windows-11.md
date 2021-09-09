@@ -1,6 +1,6 @@
 ---
 title: Configure and customize Windows 11 taskbar | Microsoft Docs
-description: On Windows 11 devices devices, iin additional apps to the taskbar and remove default pinned apps from the taskbar by adding a section to a layout modification XML file. 
+description: On Windows 11 devices, pin and unpin default apps and organization apps on the taskbar using an XML file. Deploy the taskbar XML file using Group Policy or MDM and Microsoft Intune. See what happens to the taskbar when the Windows OS client is installed or upgraded.
 ms.assetid: 
 manager: dougeby
 ms.author: mandia
@@ -10,11 +10,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/08/2021
+ms.date: 09/09/2021
 ms.localizationpriority: medium
 ---
 
-# Pin apps to the Taskbar on Windows 11
+# Customize the Taskbar on Windows 11
 
 **Applies to**:
 
@@ -22,7 +22,7 @@ ms.localizationpriority: medium
 
 > **Looking for OEM information?** See [Customize the Taskbar](/windows-hardware/customize/desktop/customize-the-windows-11-taskbar) and [Customize the Start layout](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
 
-Your organization can deploy a customized taskbar to your Windows 11 devices. Customizing the taskbar is common when your organization uses a common set of apps, or wants to bring attention to specific apps. You can also remove the default pinned apps.
+Your organization can deploy a customized taskbar to your Windows devices. Customizing the taskbar is common when your organization uses a common set of apps, or wants to bring attention to specific apps. You can also remove the default pinned apps.
 
 For example, you can override the default set of apps with your own a set of pinned apps, and in the order you choose. As an administrator, use this feature to pin apps, remove default pinned apps, order the apps, and more on the taskbar.
 
@@ -48,7 +48,9 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 ## Create the XML file
 
-1. In a text editor, such as Visual Studio Code, create a new XML file. To help you get started, you can copy and paste the following XML sample. The sample pins two apps to the taskbar - Microsoft Edge and File Explorer:
+1. In a text editor, such as Visual Studio Code, create a new XML file. To help you get started, you can copy and paste the following XML sample. The sample pins 2 apps to the taskbar - Microsoft Edge and File Explorer:
+
+    ??Need to confirm XML syntax since start doesn't use XML anymore??
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -89,6 +91,8 @@ This article shows you how to create the XML file, add apps to the XML, and depl
     - If the `<TaskbarPinList>` node has a country or region, then the apps are pinned on devices configured for that country or region.
     - If the `<TaskbarPinList>` node doesn't have a region tag for the current region, then the first `<TaskbarPinList>` node with no region is applied.
     - ??What happens if only a region is added, and device is configured with a different region? I assume no apps are pinned (other than the default)??
+
+    ??Need to confirm XML syntax since start doesn't use XML anymore??
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -132,6 +136,8 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 5. Save the file, and name the file so you know what it is. For example, name the file something like `CustomTaskbar.xml`. Once you have the file, it's ready to be deployed to your Windows devices.
 
+    ??Can the XML file name be anything? Or does it have to be 
+
 ## Use Group Policy or MDM to create and deploy a taskbar policy
 
 Now that you have the XML file with your customized taskbar, you're ready to deploy it to devices in your organization. You can deploy your taskbar XML file using Group Policy, or using an MDM provider, like Microsoft Intune.
@@ -154,7 +160,7 @@ Use the following steps to add your XML file to a group policy, and apply the po
 
     :::image type="content" source="./images/customize-taskbar-windows-11/start-layout-group-policy.png" alt-text="Add your taskbar layout XML file to the Start Layout policy on Windows devices.":::
 
-    The `User Configuration\Administrative Templates\Start Menu and Taskbar` policy includes other settings that control the taskbar. Some policies may not work as expected on Windows 11. Be sure to test your policies before broadly deploying them across your devices.
+    The `User Configuration\Administrative Templates\Start Menu and Taskbar` policy includes other settings that control the taskbar. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices.
 
 4. When you apply the policy, the taskbar includes your changes. The next time users sign in, they'll see the changes.
 
@@ -195,7 +201,7 @@ Use the following steps to create an Intune policy that deploys your taskbar XML
 
 ## Get the AUMID and Desktop app link path
 
-In the layout modification XML file, you add apps in the XML markup. To pin an app, you enter the AUMID or Desktop Application Link Path. The easiest way to find this app information is to use the [Export-StartLayout](/powershell/module/startlayout/export-startlayout) Windows Powershell cmdlet:
+In the layout modification XML file, you add apps in the XML markup. To pin an app, you enter the AUMID or Desktop Application Link Path. The easiest way to find this app information is to use the [Export-StartLayout](/powershell/module/startlayout/export-startlayout) Windows PowerShell cmdlet:
 
 1. On an existing Windows 11 device, pin the app to the Start menu.
 2. Create a folder to save an output file. For example, create the `C:\Layouts` folder.
@@ -207,3 +213,38 @@ In the layout modification XML file, you add apps in the XML markup. To pin an a
 
 4. Open the generated GetIDorPath.xml file, and look for the app you pinned. When you find the app, get the AppID or Path. Add these properties to your XML file.
 
+## Pin order for all apps
+
+On a taskbar, the following apps are typically pinned:
+
+- Apps pinned by the user
+- Default Windows apps pinned during the OS installation, such as Microsoft Edge, File Explorer, and Store
+- Apps pinned by your organization, such as in an unattended Windows setup
+
+  In an unattended Windows setup file, use the XML file you created in this article. It's not recommended to use [TaskbarLinks](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks).
+
+Apps are pinned in the following order:
+
+1. Windows default apps are pinned first.
+2. User-pinned apps are pinned after the Windows default apps.
+3. XML-pinned apps are pinned after the user-pinned apps.
+
+If the OS is configured to use a right-to-left language, then the taskbar order is reversed.
+
+## OS install and upgrade
+
+- On a clean install of the Windows client, if you apply a taskbar layout, the following apps are pinned to the taskbar:
+
+  - Apps you specifically add
+  - Any default apps you don't remove
+
+  After the taskbar layout is applied, users can pin more apps, change the order, and unpin apps.
+
+- On a Windows client upgrade, apps are already pinned to the taskbar. Apps may have been pinned by a user, by an image, or by using Windows unattended setup. For upgrades, the taskbar layout applies the following behavior:
+
+  - If users pinned apps to the taskbar, then those pinned apps remain. New apps are pinned after the existing user-pinned apps.
+  - If the apps are pinned during the install or by a policy (not by a user), and the apps aren't pinned in an updated layout file, then the apps are unpinned.
+  - If a user didn't pin an app, and the same app is pinned in the updated layout file, then the app is pinned after any existing pinned apps.
+  - New apps in updated layout file are pinned after the user's pinned apps.
+
+  After the layout is applied, users can pin more apps, change the order, and unpin apps.
