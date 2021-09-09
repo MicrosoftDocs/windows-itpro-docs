@@ -6,7 +6,7 @@ ms.reviewer:
 manager: dougeby
 ms.author: greglin
 keywords: deploy, system requirements
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
@@ -22,13 +22,30 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-This article will walk you through the steps necessary to prepare your network and server infrastructure to deploy Windows 10 with the Microsoft Deployment Toolkit (MDT). It covers the installation of the necessary system prerequisites, the creation of shared folders and service accounts, and the configuration of security permissions in the file system and in Active Directory.
 
-## Infrastructure
+This article will walk you through the steps necessary to prepare your network and server infrastructure to deploy Windows 11 with the Microsoft Deployment Toolkit (MDT). For an overview of the features, components, and capabilities of MDT, see [Get started with MDT](get-started-with-the-microsoft-deployment-toolkit.md).
+
+This article covers installation of necessary system prerequisites, creation of shared folders and service accounts, and configuration of security permissions in the file system and in Active Directory. Steps to complete the following procedures are provided:
+
+1. Install the Windows Assessment and Deployment Kit (ADK)
+2. Install and initialize Windows Deployment Services (WDS)
+3. Install MDT
+4. Create an Active Directory Organizational Unit structure to support deployment
+5. Create the MDT service account
+6. Create and share the logs folder
+
+All procedures in this guide can also be used to deploy Windows 10. 
+
+After completing these steps, you can create a [Windows 11 reference image](create-a-windows-11-reference-image.md) that will be used to deploy Winodws 11. If you are installing Windows 10 instead of Windows 11, use [source media](create-a-windows-11-reference-image.md#add-setup-files) for Windows 10 instead of Windows 11 to create your reference image.
+
+> [!IMPORTANT]
+> Before deploying Windows 11, verify that the device meets or exceeds [requirements](/windows/whats-new/windows-11-requirements).
+
+## Infrastructure and requirements
 
 The procedures in this guide use the following names and infrastructure.
 
-### Network and servers
+#### Network and servers
 
 For the purposes of this topic, we will use three server computers: **DC01**, **MDT01**, and **HV01**.
 - All servers are running Windows Server 2019. 
@@ -36,35 +53,35 @@ For the purposes of this topic, we will use three server computers: **DC01**, **
     - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is required to perform the procedures in this guide.
 - **DC01** is a domain controller, DHCP server, and DNS server for <b>contoso.com</b>, representing the fictitious Contoso Corporation.
 - **MDT01** is a domain member server in contoso.com with a data (D:) drive that can store at least 200GB. MDT01 will host deployment shares and run the Windows Deployment Service. Optionally, MDT01 is also a WSUS server.
-    - A second MDT server (**MDT02**) configured identically to MDT01 is optionally used to [build a distributed environment](build-a-distributed-environment-for-windows-10-deployment.md) for Windows 10 deployment. This server is located on a different subnet than MDT01 and has a different default gateway.
-- **HV01** is a Hyper-V host computer that is used to build a Windows 10 reference image.
+    - A second MDT server (**MDT02**) configured identically to MDT01 is optionally used to [build a distributed environment](build-a-distributed-environment-for-windows-deployment.md) for Windows 11 deployment. This server is located on a different subnet than MDT01 and has a different default gateway.
+- **HV01** is a Hyper-V host computer that is used to build a Windows 11 reference image.
     - See [Hyper-V requirements](#hyper-v-requirements) below for more information about HV01.
 
-### Client computers
+#### Client computers
 
 Several client computers are referenced in this guide with hostnames of PC0001 to PC0007.
 
-- **PC0001**: A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain.
+- **PC0001**: A computer running Windows 11 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain.
   - Client name: PC0001
   - IP Address: DHCP
-- **PC0002**: A computer running Windows 7 SP1 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced during the migration scenarios.
+- **PC0002**: A computer running Windows 10 Enterprise x64, fully patched with the latest security updates, and configured as a member in the contoso.com domain. This computer is referenced during the migration scenarios.
   - Client name: PC0002
   - IP Address: DHCP
-- **PC0003 - PC0007**: These are other client computers similar to PC0001 and PC0002 that are used in this guide and another guide for various scenarios. The device names are incremented for clarity within each scenario. For example, PC0003 and PC0004 are running Windows 7 just like PC0002, but are used for Configuration Manager refresh and replace scenarios, respectively.
+- **PC0003 - PC0007**: These are other client computers similar to PC0001 and PC0002 that are used in this guide and another guide for various scenarios. The device names are incremented for clarity within each scenario. For example, PC0003 and PC0004 are running Windows 10 just like PC0002, but are used for Configuration Manager refresh and replace scenarios, respectively.
 
-### Storage requirements
+#### Storage requirements
 
 MDT01 and HV01 should have the ability to store up to 200 GB of files on a data drive (D:). If you use a computer with a single system partition (C:), you will need to adjust some procedures in this guide to specify the C: drive instead of the D: drive.
 
-### Hyper-V requirements
+#### Hyper-V requirements
 
-If you do not have access to a Hyper-V server, you can install Hyper-V on a Windows 10 or Windows 8.1 computer temporarily to use for building reference images. For instructions on how to enable Hyper-V on Windows 10, see the [Verify support and install Hyper-V](../windows-10-poc.md#verify-support-and-install-hyper-v) section in the Windows 10 deployment test lab guide. This guide is a proof-of-concept guide that has detailed instructions for installing Hyper-V.
+If you do not have access to a Hyper-V server, you can install Hyper-V on a Windows 8.1, Windows 10, or Windows 11 computer temporarily to use for building reference images. For instructions on how to enable Hyper-V on Windows 10, see the [Verify support and install Hyper-V](../windows-10-poc.md#verify-support-and-install-hyper-v) section in the Windows 10 deployment test lab guide. This guide is a proof-of-concept guide that has detailed instructions for installing Hyper-V.
 
-### Network requirements
+#### Network requirements
 
 All server and client computers referenced in this guide are on the same subnet. This is not required, but each server and client computer must be able to connect to each other to share files, and to resolve all DNS names and Active Directory information for the contoso.com domain.  Internet connectivity is also required to download OS and application updates.
 
-### Domain credentials
+#### Domain credentials
 
 The following generic credentials are used in this guide. You should replace these credentials as they appear in each procedure with your credentials.
 
@@ -72,7 +89,7 @@ The following generic credentials are used in this guide. You should replace the
 **Domain administrator username**: administrator<br>
 **Domain administrator password**: pass@word1
 
-### Organizational unit structure
+#### Organizational unit structure
 
 The following OU structure is used in this guide. Instructions are provided [below](#create-the-ou-structure) to help you create the required OUs.
 
@@ -102,7 +119,7 @@ Visit the [Download and install the Windows ADK](/windows-hardware/get-started/a
    - You can confirm that the update is applied by viewing properties of the ImageCat.exe and ImgMgr.exe files at **C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM** and verifying that the **Details** tab displays a **File version** of **10.0.18362.144** or later.
 5. If you downloaded the optional MDT_KB4564442 patch for BIOS based deployment, see [this support article](https://support.microsoft.com/en-us/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7) for instructions on how to install the patch.
 
-## Install and initialize Windows Deployment Services (WDS)
+## Install and initialize WDS
 
 On **MDT01**:
 
