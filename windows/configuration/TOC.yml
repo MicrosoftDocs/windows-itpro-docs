@@ -5,7 +5,7 @@
     - name: Windows 11
       items:
         - name: Start menu layout
-          href: use-json-customize-start-menu-windows.md
+          href: customize-the-start-menu-layout-on-windows-11.md
         - name: Supported Start menu CSPs
           href: supported-csp-start-menu-layout-windows.md
     - name: Windows 10 Start and taskbar
