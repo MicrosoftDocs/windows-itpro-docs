@@ -8,7 +8,7 @@ manager: dansimp
 ms.prod: w11
 audience: ITPro
 ms.topic: conceptual
-ms.date: 09/08/2021
+ms.date: 09/10/2021
 ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 
@@ -35,3 +35,7 @@ Windows 11 includes the cloud services that are listed in the following table:<b
 | OneDrive | OneDrive is your online storage for your files, photos, and data. OneDrive provides extra security, backup, and restore options for important files and photos. With options for both personal and business, people can use OneDrive to store and protect files in the cloud, allowing users to them on their laptops, desktops, and mobile devices. If a device is lost or stolen, people can quickly recover all their important files, photos, and data. <br/><br/>The OneDrive Personal Vault also provides protection for your most sensitive files without losing the convenience of anywhere access. Files are secured by identity verification, yet easily accessible to users across their devices. [Learn how to set up your Personal Vault](https://support.microsoft.com/office/protect-your-onedrive-files-in-personal-vault-6540ef37-e9bf-4121-a773-56f98dce78c4). <br/><br/>In the event of a ransomware attack, OneDrive can enable recovery. And if you’ve configured backups in OneDrive, you have more options to mitigate and recover from a ransomware attack. [Learn more about how to recover from a ransomware attack using Office 365](/microsoft-365/security/office-365-security/recover-from-ransomware). |
 | Family safety | Microsoft Family Safety empowers people and their family members to create healthy habits and protect their loved ones, both online and offline. People can use their Microsoft account to create a family group on Windows, Xbox, or your mobile devices, and then customize their family settings by using the `family.microsoft.com` website or the Microsoft Family Safety app on Android and iOS.<br/><br/>[Learn more about Microsoft Family Safety](https://www.microsoft.com/en-us/microsoft-365/family-safety).   |
 
+## Next steps
+
+- [Learn more about MDM and Windows 11](mdm-windows.md)
+- [Learn more about Windows security](index.yml)
