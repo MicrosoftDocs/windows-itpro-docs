@@ -113,7 +113,7 @@ If you use a third party or partner MDM provider, be sure to configure the setti
 
 ## Use Group Policy or MDM to block the Microsoft Store
 
-By default, the OS shows the Microsoft Store, and allows users to install the public and retail apps. To hide the Microsoft Store on your user devices, you can use Group Policy (on-premises), or use an MDM provider, such as Microsoft Intune (cloud).
+By default, the OS shows the Microsoft Store, and allows users to install the public and retail apps. If you want, you can hide the Microsoft Store on your user devices using Group Policy (on-premises), or using an MDM provider, such as Microsoft Intune (cloud).
 
 ### Group Policy
 
@@ -130,12 +130,14 @@ Using an MDM provider, you can deploy a policy that turns off or blocks the Micr
 
 Using Microsoft Intune, you can use [Administrative Templates](/mem/intune/configuration/administrative-templates-windows) (opens another Microsoft web site) or the [Settings Catalog](/mem/intune/configuration/settings-catalog) (opens another Microsoft web site) to turn off the Microsoft Store app.
 
+**--> Need to add more specific info. <--**
+
 ## Use Microsoft Defender Application Control or AppLocker
 
 The Microsoft Store app uses the `WinStore.App.exe` file. You can block access to this file using AppLocker or Microsoft Defender Application Control. For more information on these options, see:
 
 - [Windows Defender Application Control and AppLocker Overview](/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview)
-- [Block Microsoft Store using AppLocker](../configuration/stop-employees-from-using-microsoft-store.md#block-microsoft-store-using-applocker)
+- [Block Microsoft Store using AppLocker](/windows/configuration/stop-employees-from-using-microsoft-store#block-microsoft-store-using-applocker)
 
 ## Microsoft Store for Business
 
