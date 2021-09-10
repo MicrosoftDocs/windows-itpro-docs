@@ -4,6 +4,8 @@
   expanded: true
 - name: Hardware security
   items: 
+    - name: Overview
+      href: hardware.md
     - name: Trusted Platform Module
       href: information-protection/tpm/trusted-platform-module-top-node.md
       items: 
