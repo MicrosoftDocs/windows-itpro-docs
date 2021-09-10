@@ -30,7 +30,6 @@ ms.date: 09/08/2021
 - Windows 10, version 20H2
 - Windows 10, version 2004
 
-
 Required diagnostic data gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store.
 
 Required diagnostic data helps to identify problems that can occur on a particular device hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a particular driver version. This helps Microsoft fix operating system or app problems.
@@ -38,6 +37,7 @@ Required diagnostic data helps to identify problems that can occur on a particul
 Use this article to learn about diagnostic events, grouped by event area, and the fields within each event. A brief description is provided for each field. Every event generated includes common data, which collects device data.
 
 You can learn more about Windows functional and diagnostic data through these articles:
+
 - [Required Windows 11 diagnostic events and fields](required-windows-11-diagnostic-events-and-fields.md)
 - [Windows 10, version 1903 and Windows 10, version 1909 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1903.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
