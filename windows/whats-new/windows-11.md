@@ -89,3 +89,4 @@ When Windows 11 reaches general availability, important servicing-related announ
 ## Also see
 
 [What's new in Windows 11](/windows-hardware/get-started/what-s-new-in-windows)<br>
+[Windows 11 Security — Our Hacker-in-Chief Runs Attacks and Shows Solutions](https://www.youtube.com/watch?v=2RTwGNyhSy8)
