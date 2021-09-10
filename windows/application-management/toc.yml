@@ -11,6 +11,8 @@ items:
           href: provisioned-apps-windows-client-os.md
         - name: System apps in Windows client OS
           href: system-apps-windows-client-os.md
+        - name: Private store on Windows 11
+          href: private-store-mdm-company-portal-windows-11.md
     - name: Add features in Windows client
       href: add-apps-and-features.md
     - name: Sideload apps
