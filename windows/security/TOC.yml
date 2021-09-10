@@ -344,7 +344,5 @@
       href: threat-protection/msft-security-dev-lifecycle.md
     - name: Microsoft Bug Bounty Program
       href: threat-protection/microsoft-bug-bounty-program.md
-- name: Privacy controls
-  items:
-  - name: Windows Privacy controls
-    href: https://docs.microsoft.com/windows/privacy/windows-10-and-privacy-compliance
+- name: Windows Privacy
+  href: /windows/privacy/windows-10-and-privacy-compliance.md

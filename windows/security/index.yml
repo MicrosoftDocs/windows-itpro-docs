@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Windows security # < 60 chars
-summary: Learn about Windows security from chip to cloud.  # < 160 chars
+summary: Windows is a Zero Trust-ready operating system that provides security from chip to cloud.  # < 160 chars
 
 metadata:
   title: Windows security # Required; page title displayed in search results. Include the brand. < 60 chars.
