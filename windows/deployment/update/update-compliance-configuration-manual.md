@@ -67,7 +67,7 @@ To enable data sharing between devices, your network, and Microsoft's Diagnostic
 
 | **Endpoint**  | **Function**  |
 |---------------------------------------------------------|-----------|
-| `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1803 and later. Census.exe must run on a regular cadence and contact this endpoint in order to receive the majority of [WaaSUpdateStatus](update-compliance-schema-waasupdatestatus.md) information for Update Compliance. |
+| `https://v10c.events.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1803 and later. DeviceCensus.exe must run on a regular cadence and contact this endpoint in order to receive the majority of [WaaSUpdateStatus](update-compliance-schema-waasupdatestatus.md) information for Update Compliance. |
 | `https://v10.vortex-win.data.microsoft.com` | Connected User Experience and Diagnostic component endpoint for Windows 10, version 1709 or earlier. |
 | `https://settings-win.data.microsoft.com` | Required for Windows Update functionality. |
 | `http://adl.windows.com` | Required for Windows Update functionality. |
