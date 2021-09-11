@@ -708,22 +708,16 @@ The following diagram shows the Policy configuration service provider in tree fo
 ### ADMX_DiskNVCache policies  
 
 <dl>
-  <dd>
+  
+<dd>
     <a href="./policy-csp-admx-disknvcache-bootresumepolicy.md#admx-disknvcache-bootresumepolicy" id="admx-disknvcache-bootresumepolicy">ADMX_DiskNVCache/BootResumePolicy</a>
   </dd>
-
   <dd>
     <a href="./policy-csp-admx-disknvcache-cachepowermodepolicy.md#admx-disknvcache-cachepowermodepolicy" id="admx-disknvcache-cachepowermodepolicy">ADMX_DiskNVCache/CachePowerModePolicy</a>
   </dd>
-
   <dd>
     <a href="./policy-csp-admx-disknvcache-featureoffpolicy.md#admx-disknvcache-featureoffpolicy" id="admx-disknvcache-featureoffpolicy">ADMX_DiskNVCache/FeatureOffPolicy</a>
   </dd>
-
-  <dd>
-    <a href="./policy-csp-admx-disknvcache-featureoffpolicy.md#admx-disknvcache-featureoffpolicy" id="admx-disknvcache-featureoffpolicy">ADMX_DiskNVCache/FeatureOffPolicy</a>
-  </dd>
-
   <dd>
     <a href="./policy-csp-admx-disknvcache-solidstatepolicy.md#admx-disknvcache-solidstatepolicy" id="admx-disknvcache-solidstatepolicy">ADMX_DiskNVCache/SolidStatePolicy</a>
   </dd>
