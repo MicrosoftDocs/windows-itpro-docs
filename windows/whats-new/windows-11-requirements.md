@@ -82,7 +82,7 @@ Some features in Windows 11 have requirements beyond those listed above. See the
 
 ## Virtual machine support
 
-The following configuration requirements apply to VMs running Windows 11.
+The following configuration requirements apply to VMs running Windows 11. 
 
 -	Generation: 2
 -	Storage: 64 GB or greater
@@ -90,8 +90,10 @@ The following configuration requirements apply to VMs running Windows 11.
 -	Memory:  4 GB or greater
 -	Processor: 2 or more virtual processors
 
+The VM host CPU must also meet Windows 11 [processor requirements](/windows-hardware/design/minimum/windows-processor-requirements). 
+
 > [!NOTE]
-> Procedures to configure these settings depend on the VM host type. For VM hosts running Hyper-V, Virtualization Based Security must be enabled in BIOS and the OS. See [Enable Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage) for more information.
+> Procedures to configure required VM settings depend on the VM host type. For VM hosts running Hyper-V, Virtualization Based Security must be enabled in BIOS and the OS. See [Enable Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage) for more information.
 
 ## Next steps
 
