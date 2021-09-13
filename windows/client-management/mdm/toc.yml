@@ -469,6 +469,8 @@ items:
               href: policy-csp-admx-eventforwarding.md
             - name: ADMX_EventLog
               href: policy-csp-admx-eventlog.md
+            - name: ADMX_EventViewer
+              href: policy-csp-admx-eventviewer.md  
             - name: ADMX_Explorer
               href: policy-csp-admx-explorer.md
             - name: ADMX_FileRecovery

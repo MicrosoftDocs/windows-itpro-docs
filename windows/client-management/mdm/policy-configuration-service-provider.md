@@ -865,12 +865,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### ADMX_EncryptFilesonMove policies
+### ADMX_EventLogging policies
 <dl>
   <dd>
     <a href="./policy-csp-admx-eventlogging.md#admx-eventlogging-enableprotectedeventlogging" id="admx-eventlogging-enableprotectedeventlogging">ADMX_EventLogging/EnableProtectedEventLogging</a>
   </dd>
 </dl>
+
 ### ADMX_EnhancedStorage policies  
 
 <dl>
@@ -1064,7 +1065,18 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-retention-4" id="admx-eventlog-channel-log-retention-4">ADMX_EventLog/Channel_Log_Retention_4</a>
   </dd>
 </dl>
+### ADMX_EventViewer policies  
 
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_eventviewer_redirectionprogram" id="admx-eventviewer-eventviewer_eventviewer_redirectionprogram">ADMX_EventViewer/EventViewer_RedirectionProgram</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters" id="admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters">ADMX_EventViewer/EventViewer_RedirectionProgramCommandLineParameters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionurl" id="admx-eventviewer-eventviewer_redirectionurl">ADMX_EventViewer/EventViewer_RedirectionURL</a>
+  <dd>
 ### ADMX_Explorer policies  
 
 <dl>
