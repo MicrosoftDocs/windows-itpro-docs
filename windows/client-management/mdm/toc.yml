@@ -477,6 +477,8 @@ items:
               href: policy-csp-admx-externalboot.md  
             - name: ADMX_FileRecovery
               href: policy-csp-admx-filerecovery.md
+            - name: ADMX_FileRevocation
+              href: policy-csp-admx-filerevocation.md  
             - name: ADMX_FileServerVSSProvider
               href: policy-csp-admx-fileservervssprovider.md
             - name: ADMX_FileSys
