@@ -18,7 +18,7 @@ ms.technology: mde
 
 # Microsoft Virus Initiative
 
-The Microsoft Virus Initiative (MVI) helps organizations develop better-together security solutions that are performant, reliable, and aligned with Microsoft technology & strategy.
+The Microsoft Virus Initiative (MVI) helps organizations develop better-together security solutions that are performant, reliable, and aligned with Microsoft technology and strategy.
 
 ## Become a member
 
