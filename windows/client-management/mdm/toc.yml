@@ -449,8 +449,6 @@ items:
               href: policy-csp-admx-digitallocker.md
             - name: ADMX_DistributedLinkTracking
               href: policy-csp-admx-distributedlinktracking.md
-            - name: ADMX_DiskNVCache
-              href: policy-csp-admx-disknvcache.md
             - name: ADMX_DnsClient
               href: policy-csp-admx-dnsclient.md
             - name: ADMX_DWM
