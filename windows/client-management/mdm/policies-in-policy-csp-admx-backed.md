@@ -269,7 +269,7 @@ ms.date: 10/08/2020
 - [ADMX_EventLog/Channel_Log_Retention_4](./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-retention-4)
 - [ADMX_EventViewer/EventViewer_RedirectionProgram](./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionprogram)
 - [ADMX_EventViewer/EventViewer_RedirectionProgramCommandLineParameters](./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters)
-- [ADMX_EventViewer/EventViewer_RedirectionURL](./policy-csp-admx-eventviewer-eventviewer_redirectionurl)
+- [ADMX_EventViewer/EventViewer_RedirectionURL](./policy-csp-admx-eventviewer.md#admx-eventviewer_redirectionurl)
 - [ADMX_Explorer/AdminInfoUrl](./policy-csp-admx-explorer.md#admx-explorer-admininfourl)
 - [ADMX_Explorer/AlwaysShowClassicMenu](./policy-csp-admx-explorer.md#admx-explorer-alwaysshowclassicmenu)
 - [ADMX_Explorer/DisableRoamedProfileInit](./policy-csp-admx-explorer.md#admx-explorer-disableroamedprofileinit)
