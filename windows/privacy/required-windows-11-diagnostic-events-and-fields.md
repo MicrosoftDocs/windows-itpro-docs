@@ -4311,7 +4311,7 @@ This is the Event Start Activity event coming from the Manufacturing Platform. T
 
 The following fields are available:
 
-- **DeviceTargetInfo**  Describes general manufacturing and product information about the device and is retrieved using SMBIOS on the DUT (target device). See [DeviceTargetInfo](#devicetargetinfo).
+- **DeviceTargetInfo**  Describes general manufacturing and product information about the device and is retrieved using SMBIOS on the DUT (target device).
 - **m_Identifier** Indicates the phase in ManufacturingPlatform that we are in. In FlashingPlatform, this field is empty. In FlashingDevice, it includes the DeviceUniqueId, and in an activity, it also includes the operation name.
 
 
@@ -4321,7 +4321,7 @@ This is the Event Stop Activity event coming from the Manufacturing Platform. Th
 
 The following fields are available:
 
-- **DeviceTargetInfo**  Describes general manufacturing and product information about the device, retrieved using SMBIOS on the DUT (target device). See [DeviceTargetInfo](#devicetargetinfo).
+- **DeviceTargetInfo**  Describes general manufacturing and product information about the device, retrieved using SMBIOS on the DUT (target device).
 - **m_Identifier**  Indicates the phase in ManufacturingPlatform that we are in. In FlashingPlatform, this field is empty. In FlashingDevice, it includes the DeviceUniqueId, and in an activity, it also includes the operation name.
 
 
@@ -4331,15 +4331,15 @@ This is the manufacturing event coming from the Manufacturing Platform. The data
 
 The following fields are available:
 
-- **CurrentDUTTime**  Indicates the time on the DUT (or target device) using EFI protocols when the event was logged. See [CurrentDUTTime](#currentduttime).
-- **DeviceFriendlyName**  Friendly name of the device as retrieved from SMBIOS on the DUT (target device)
-- **DeviceTargetInfo**  Describes general manufacturing and product information about the device and is retrieved using SMBIOS on the DUT (target device). See [DeviceTargetInfo](#devicetargetinfo).
+- **CurrentDUTTime**  Indicates the time on the DUT (or target device) using EFI protocols when the event was logged.
+- **DeviceFriendlyName**  Friendly name of the device as retrieved from SMBIOS on the DUT (target device).
+- **DeviceTargetInfo**  Describes general manufacturing and product information about the device and is retrieved using SMBIOS on the DUT (target device).
 - **DUTActivityGuid**  The activity GUID that comes from TraceLoggingActivity associated with that operation on the DUT (target device).
 - **DUTDeviceUniqueId**  A GUID to uniquely describes a target device.
 - **DUTSessionGuid**  The session GUID given to the DUT (target device) when the host triggers an operation in the DUT.
 - **EventName**  Refers to the specific event occurring from ManufacturingPlatform. A list of all possible events can be found in ufptelemetryevents.h. An example is: "GetFlashingImageData" or "GetFlashingStatus"
 - **FieldName**  Describes the value field. If relevant it also includes the unit. Example: "ErrorMessage" or "TimeInSec"
-- **HostStartTime**  Indicates the UTC system time on the host, recorded when the host starts a telemetry logging session on the DUT (target device) See [HostStartTime](#hoststarttime).
+- **HostStartTime**  Indicates the UTC system time on the host, recorded when the host starts a telemetry logging session on the DUT (target device) 
 - **Identifier**  Indicates the phase the ManufacturingPlatform is in. In FlashingPlatform, this field is empty. In FlashingDevice, it includes the DeviceUniqueId, and in an activity, it also includes the operation name.
 - **MajorVersionUInt64**  Refers to the major version of the host UFP binaries.
 - **MinorVersionUInt64**  Refers to the minor version of the host UFP binaries.
