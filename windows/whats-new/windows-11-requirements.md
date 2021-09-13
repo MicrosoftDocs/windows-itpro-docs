@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 - Windows 11
 
-This article lists the system requirements for Windows 11. Windows 11 is also supported on a [virtual machine (VM)](#virtual-machine-requirements). 
+This article lists the system requirements for Windows 11. Windows 11 is also [supported on a virtual machine (VM)](#virtual-machine-support). 
 
 ## Hardware requirements
 
@@ -80,7 +80,7 @@ Some features in Windows 11 have requirements beyond those listed above. See the
 - **Windows Projection**: requires a display adapter that supports Windows Display Driver Model (WDDM) 2.0 and a Wi-Fi adapter that supports Wi-Fi Direct.
 - **Xbox app**: requires an Xbox Live account, which is not available in all regions. Please go to the Xbox Live Countries and Regions page for the most up-to-date information on availability. Some features in the Xbox app will require an active [Xbox Game Pass](https://www.xbox.com/xbox-game-pass) subscription.
 
-## Virtual Machine requirements
+## Virtual Machine support
 
 The following configuration requirements apply to virtual machines (VMs) running Windows 11.
 
@@ -91,7 +91,7 @@ The following configuration requirements apply to virtual machines (VMs) running
 -	Processor: 2 or more virtual processors
 
 > [!NOTE]
-> Requirements to enable virtual TPM support depend on the VM host type. For Hyper-V hosts, Virtualization Based Security must be enabled in BIOS and the OS. For more information, see [Enable Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
+> Procedures to enable these settings depend on the VM host type. For hosts running Hyper-V, the number of processors must be increased from the default setting of one, and Virtualization Based Security must be enabled in BIOS and the OS. For more information, see [Enable Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
 
 ## Next steps
 
