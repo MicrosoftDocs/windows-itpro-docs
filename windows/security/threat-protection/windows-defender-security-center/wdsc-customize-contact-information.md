@@ -58,7 +58,7 @@ This can only be done in Group Policy.
 
 3. Expand the tree to **Windows components > Windows Security > Enterprise Customization**.
 
-4. Enable the contact card and the customized notifications by configuring two separate Group Policy settings. They will both use the same source of information (explained in Steps 5 and 6). You can enable both, or slect one or the other:
+4. Enable the contact card and the customized notifications by configuring two separate Group Policy settings. They will both use the same source of information (explained in Steps 5 and 6). You can enable both, or select one or the other:
 
     1. To enable the contact card, open the **Configure customized contact information** setting and set it to **Enabled**. Click **OK**.
 
