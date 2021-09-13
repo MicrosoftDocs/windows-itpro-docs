@@ -1,7 +1,7 @@
 - name: Privacy
   href: index.yml
   items: 
-    - name: "Windows 10 & Windows 11 Privacy Compliance: A Guide for IT and Compliance Professionals"
+    - name: Windows 10 & Windows 11 Privacy Compliance: A Guide for IT and Compliance Professionals
       href: windows-10-and-privacy-compliance.md
     - name: Configure Windows diagnostic data in your organization
       href: configure-windows-diagnostic-data-in-your-organization.md
