@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/09/2021
+ms.date: 09/13/2021
 ms.localizationpriority: medium
 ---
 
@@ -46,7 +46,7 @@ This article shows you how to export an existing Start menu layout, and use the 
 
 In Windows 11, the Start menu is redesigned with a simplified set of apps that are arranged in a grid of pages. There aren't folders, groups, or different-sized app icons:
 
-:::image type="content" source="./images/customize-the-start-menu-layout-on-windows-11/start-menu-layout.png" alt-text="Sample start menu layout on Windows 11 devices that shows pinned apps, access to all apps, and shows recommended files.":::
+:::image type="content" source="./images/customize-start-menu-layout-windows-11/start-menu-layout.png" alt-text="Sample start menu layout on Windows 11 devices that shows pinned apps, access to all apps, and shows recommended files.":::
 
 Start has the following areas:
 
@@ -154,7 +154,7 @@ To deploy this policy in Microsoft Intune, the devices must be enrolled in Micro
 
     Your settings look similar to the following settings:
 
-    :::image type="content" source="./images/customize-the-start-menu-layout-on-windows-11/endpoint-manager-admin-center-custom-oma-uri-start-layout.png" alt-text="Custom OMA-URI settings to customize Start menu layout using pinnedList":::
+    :::image type="content" source="./images/customize-start-menu-layout-windows-11/endpoint-manager-admin-center-custom-oma-uri-start-layout.png" alt-text="Custom OMA-URI settings to customize Start menu layout using pinnedList":::
 
 8. Select **Save** > **Next** to save your changes.
 9. Configure the rest of the policy settings. For more specific information, see [Create a profile with custom settings in Intune](/mem/intune/configuration/custom-settings-configure).
