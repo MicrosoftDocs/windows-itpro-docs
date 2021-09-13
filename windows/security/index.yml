@@ -11,7 +11,7 @@ metadata:
   ms.collection: m365-security-compliance
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/07/2021
+  ms.date: 09/13/2021
   localization_priority: Priority
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -85,25 +85,6 @@ landingContent:
         - text: Family safety
           url: threat-protection/windows-defender-security-center/wdsc-family-options.md
 
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
-  - title: Secured-core and cloud devices
-    linkLists:
-      - linkListType: overview
-        links:
-        - text: Windows 11 secured-core devices (change link later)
-          url: https://docs.microsoft.com/windows/whats-new/windows-11
-        - text: Windows 365 Cloud PCs (change link later)
-          url: https://docs.microsoft.com/windows/whats-new/windows-11
-        - text: Windows 365 for Business (change link later)
-          url: https://docs.microsoft.com/windows/whats-new/windows-11
-        - text: Windows 365 for Enterprise (change link later)
-          url: https://docs.microsoft.com/windows/whats-new/windows-11
-        - text: Azure Virtual Desktop (change link later)
-          url: https://docs.microsoft.com/windows/whats-new/windows-11
-
-          
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
