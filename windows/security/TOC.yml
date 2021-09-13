@@ -204,6 +204,7 @@
      - name: Windows Defender Firewall
        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
    - name: Virus & threat protection
+     href: threat-protection/index.md
      items: 
      - name: Microsoft Defender Antivirus
        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
