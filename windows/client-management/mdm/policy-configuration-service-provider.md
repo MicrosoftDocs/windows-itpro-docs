@@ -1065,6 +1065,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-eventlog.md#admx-eventlog-channel-log-retention-4" id="admx-eventlog-channel-log-retention-4">ADMX_EventLog/Channel_Log_Retention_4</a>
   </dd>
 </dl>
+
 ### ADMX_EventViewer policies  
 
 <dl>
@@ -1077,6 +1078,7 @@ The following diagram shows the Policy configuration service provider in tree fo
   <dd>
     <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionurl" id="admx-eventviewer-eventviewer_redirectionurl">ADMX_EventViewer/EventViewer_RedirectionURL</a>
   <dd>
+
 ### ADMX_Explorer policies  
 
 <dl>
@@ -1096,6 +1098,19 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-explorer.md#admx-explorer-turnoffspianimations" id="admx-explorer-turnoffspianimations">ADMX_Explorer/TurnOffSPIAnimations</a>
   </dd>
 </dl>
+
+### ADMX_ExternalBoot policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_hibernate" id="admx-externalboot-portableoperatingsystem_hibernate">ADMX_ExternalBoot/PortableOperatingSystem_Hibernate</a>
+  </dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_sleep" id="admx-externalboot-portableoperatingsystem_sleep">ADMX_ExternalBoot/PortableOperatingSystem_Sleep</a>
+  </dd>
+  </dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_launcher" id="admx-externalboot-portableoperatingsystem_launcher">ADMX_ExternalBoot/PortableOperatingSystem_Launcher</a>
+  </dd>
+<dl>
 
 ### ADMX_FileRecovery policies
 <dl>

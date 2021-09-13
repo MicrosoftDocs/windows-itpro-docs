@@ -473,6 +473,8 @@ items:
               href: policy-csp-admx-eventviewer.md  
             - name: ADMX_Explorer
               href: policy-csp-admx-explorer.md
+            - name: ADMX_ExternalBoot
+              href: policy-csp-admx-externalboot.md  
             - name: ADMX_FileRecovery
               href: policy-csp-admx-filerecovery.md
             - name: ADMX_FileServerVSSProvider
