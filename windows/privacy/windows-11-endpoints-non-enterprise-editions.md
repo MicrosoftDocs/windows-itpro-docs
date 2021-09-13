@@ -1,6 +1,6 @@
 ---
-title: Windows 10, version 21H1, connection endpoints for non-Enterprise editions
-description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 21H1.
+title: Windows 11 connection endpoints for non-Enterprise editions
+description: Explains what Windows 11 endpoints are used in non-Enterprise editions. Specific to Windows 11.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -14,19 +14,17 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 12/17/2020
 ---
-# Windows 10, version 21H1, connection endpoints for non-Enterprise editions
+# Windows 11 connection endpoints for non-Enterprise editions
 
  **Applies to**
 
-- Windows 10 Home, version 21H1
-- Windows 10 Professional, version 21H1
-- Windows 10 Education, version 21H1
-
-In addition to the endpoints listed for [Windows 10 Enterprise](manage-windows-21H1-endpoints.md), the following endpoints are available on other non-Enterprise editions of Windows 10, version 21H1.
+- Windows 11
+- 
+In addition to the endpoints listed for [Windows 11 Enterprise](manage-windows-11-endpoints.md), the following endpoints are available on other non-Enterprise editions of Windows 11.
 
 The following methodology was used to derive the network endpoints:
 
-1. Set up the latest version of Windows 10 on a test virtual machine using the default settings.
+1. Set up the latest version of Windows 11 on a test virtual machine using the default settings.
 2. Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
 3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
 4. Compile reports on traffic going to public IP addresses.
@@ -38,7 +36,7 @@ The following methodology was used to derive the network endpoints:
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
 
-## Windows 10 Family
+## Windows 11 Family
 
 | **Area** | **Description** | **Protocol** | **Destination** |
 |-----------|--------------- |------------- |-----------------|
@@ -129,7 +127,7 @@ The following methodology was used to derive the network endpoints:
 |||HTTPS|www.xboxab.com|
 |
 
-## Windows 10 Pro
+## Windows 11 Pro
 
 | **Area** | **Description** | **Protocol** | **Destination** |
 | --- | --- | --- | ---|
@@ -200,7 +198,7 @@ The following methodology was used to derive the network endpoints:
 |||TLSv1.2/HTTPS|da.xboxservices.com|
 |
 
-## Windows 10 Education
+## Windows 11 Education
 
 | **Area** | **Description** | **Protocol** | **Destination** |
 | --- | --- | --- | ---|
