@@ -228,7 +228,7 @@
 - name: Cloud services
   href: cloud.md
   items:
-    - name: MDM and Windows 11
+    - name: Modern device management with Windows 11
       href: mdm-windows.md
 - name: User protection
   items:
