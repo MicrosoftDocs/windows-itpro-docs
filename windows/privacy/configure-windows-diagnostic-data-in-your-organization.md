@@ -13,13 +13,14 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 10/13/2020
+ms.date: 09/08/2021
 ---
 
 # Configure Windows diagnostic data in your organization
 
 **Applies to**
 
+- Windows 11
 - Windows 10 Enterprise
 - Windows 10 Education
 - Windows 10 Professional
@@ -27,18 +28,15 @@ ms.date: 10/13/2020
 
 This article applies to Windows 10, Windows Server, Surface Hub, and HoloLens diagnostic data only. It describes the types of diagnostic data sent back to Microsoft and the ways you can manage it within your organization. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
->[!IMPORTANT]
->Microsoft is [increasing transparency](https://blogs.microsoft.com/on-the-issues/2019/04/30/increasing-transparency-and-customer-control-over-data/) by categorizing the data we collect as required or optional. Windows 10 is in the process of updating devices to reflect this new categorization, and during this transition Basic diagnostic data will be recategorized as Required diagnostic data and Full diagnostic data will be recategorized as Optional diagnostic data. For more information, see [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md).
-
 ## Overview
 
 Microsoft collects Windows diagnostic data to solve problems and to keep Windows up to date, secure, and operating properly. It also helps us improve Windows and related Microsoft products and services and, for customers who have turned on the **Tailored experiences** setting, to provide more relevant tips and recommendations to enhance Microsoft and third-party products and services for each customer’s needs.
 
-For more information about how Windows diagnostic data is used, see [Diagnostics, feedback, and privacy in Windows 10](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy).
+For more information about how Windows diagnostic data is used, see [Diagnostics, feedback, and privacy in Windows](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy).
 
 ### Diagnostic data gives users a voice
 
-Diagnostic data gives every user a voice in the operating system’s development and ongoing improvement. It helps us understand how Windows 10 and Windows Server behave in the real world, focus on user priorities, and make informed decisions that benefit both consumer and enterprise customers. The following sections offer real examples of these benefits.
+Diagnostic data gives every user a voice in the operating system’s development and ongoing improvement. It helps us understand how Windows and Windows Server behave in the real world, focus on user priorities, and make informed decisions that benefit both consumer and enterprise customers. The following sections offer real examples of these benefits.
 
 ### _Improve app and driver quality_
 
@@ -66,7 +64,7 @@ Depending on the diagnostic data settings on the device, diagnostic data can be 
 
  - Small payloads of structured information referred to as diagnostic data events, managed by the Connected User Experiences and Telemetry component.
  
- - Diagnostic logs for additional troubleshooting, also managed by the Connected User Experience and Telemetry component.
+ - Diagnostic logs for additional troubleshooting, also managed by the Connected User Experiences and Telemetry component.
  
  - Crash reporting and crash dumps, managed by [Windows Error Reporting](/windows/win32/wer/windows-error-reporting).
 
@@ -78,7 +76,7 @@ All diagnostic data is encrypted using Transport Layer Security (TLS) and uses c
 
 ### Endpoints
 
-The following table lists the endpoints related to how you can manage the collection and control of diagnostic data. For more information around the endpoints that are used to send data back to Microsoft, see [Manage connection endpoints for Windows 10 Enterprise, version 1903](manage-windows-1903-endpoints.md).
+The following table lists the endpoints related to how you can manage the collection and control of diagnostic data. For more information around the endpoints that are used to send data back to Microsoft, see [Manage connection endpoints for Windows 10 Enterprise, version 20H2](manage-windows-20h2-endpoints.md).
 
 | Windows service | Endpoint |
 | - | - |
@@ -86,7 +84,7 @@ The following table lists the endpoints related to how you can manage the collec
 | [Windows Error Reporting](/windows/win32/wer/windows-error-reporting) | watson.telemetry.microsoft.com <br></br> watson.microsoft.com <br></br> umwatsonc.telemetry.microsoft.com <br></br> umwatsonc.events.data.microsoft.com <br></br> *-umwatsonc.events.data.microsoft.com <br></br> ceuswatcab01.blob.core.windows.net <br></br> ceuswatcab02.blob.core.windows.net <br></br> eaus2watcab01.blob.core.windows.net <br></br> eaus2watcab02.blob.core.windows.net <br></br> weus2watcab01.blob.core.windows.net <br></br> weus2watcab02.blob.core.windows.net |
 |Authentication | login.live.com <br></br> <br></br> IMPORTANT: This endpoint is used for device authentication. We do not recommend disabling this endpoint.|
 | [Online Crash Analysis](/windows/win32/dxtecharts/crash-dump-analysis) | oca.telemetry.microsoft.com <br></br> oca.microsoft.com <br></br> kmwatsonc.telemetry.microsoft.com <br></br> *-kmwatsonc.telemetry.microsoft.com |
-|Settings | settings-win.data.microsoft.com <br></br> <br></br> IMPORTANT: This endpoint is used to remotely configure diagnostics-related settings and data collection. For example, we use the settings endpoint to remotely block an event from being sent back to Microsoft. We do not recommend disabling this endpoint. This endpoint does not upload Windows diagnostic data |
+|Settings | settings-win.data.microsoft.com <br></br> <br></br> IMPORTANT: This endpoint is used to remotely configure diagnostics-related settings and data collection. For example, we use the settings endpoint to remotely block an event from being sent back to Microsoft. We do not recommend disabling this endpoint. This endpoint does not upload Windows diagnostic data. |
 
 ### Data access
 
@@ -102,7 +100,7 @@ There are four diagnostic data collection settings. Each setting is described in
 
 - Diagnostic data off (Security)
 - Required diagnostic data (Basic)
-- Enhanced
+- Enhanced (This setting is only available on devices running Windows 10 and Windows Server 2019 and earlier. It is not supported on Windows 11 and Windows Server 2022.)
 - Optional diagnostic data (Full)
 
 Here’s a summary of the types of data that is included with each setting:
@@ -157,10 +155,12 @@ Required diagnostic data includes:
 
 ### Enhanced diagnostic data
 
->[!NOTE]
->We’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. making changes to the enhanced diagnostic data level. For more info about this change, see [Changes to Windows diagnostic data](changes-to-windows-diagnostic-data-collection.md).
+In Windows 10 and Windows Server 2019, enhanced diagnostic data includes data about the websites you browse, how Windows and apps are used and how they perform, and device activity. The additional data helps Microsoft to fix and improve products and services for all users.
 
-Enhanced diagnostic data includes data about the websites you browse, how Windows and apps are used and how they perform, and device activity. The additional data helps Microsoft to fix and improve products and services for all users. When you choose to send enhanced diagnostic data, required diagnostic data will always be included, and we collect the following additional information:
+>[!Important]
+>This diagnostic data setting is not available on Windows 11 and Windows Server 2022 and has been replaced with policies that can control the amount of optional diagnostic data that is sent. More information on these settings are avaialble in the Manage enterprise diagnostic data section of this document.
+
+When you choose to send enhanced diagnostic data, required diagnostic data will always be included, and we collect the following additional information:
 
  - Operating system events that help to gain insights into different areas of the operating system, including networking, Hyper-V, Cortana, storage, file system, and other components.
 
@@ -221,9 +221,34 @@ You can use Group Policy to set your organization’s diagnostic data setting:
 
 3. In the **Options** box, choose the setting that you want to configure, and then click **OK**.
 
+
+### Use Group Policy to manage optional diagnostic data collection
+
+There were two new policies added in Windows 11 to help you further managed your optional diagnostic data collection. These policies are not supported on Windows 10.
+
+The following policy lets you limit the types of [crash dumps](/windows/win32/dxtecharts/crash-dump-analysis) that can be sent back to Microsoft. If this policy is enabled, Windows Error Reporting will send only kernel mini dumps and user mode triage dumps.
+
+1. From the Group Policy Management Console, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**.
+
+2.  Double-click **Limit dump collection**.
+
+3. In the **Options** box, choose the setting that you want to configure, and then click **OK**.
+
+You can also limit the number of diagnostic logs that are sent back to Microsoft. If this policy is enabled, diagnostic logs are not sent back to Microsoft.
+
+1. From the Group Policy Management Console, go to **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds**.
+
+2.  Double-click **Limit diagnostic log collection**.
+
+3. In the **Options** box, choose the setting that you want to configure, and then click **OK**.
+
 ### Use MDM to manage diagnostic data collection
 
-Use [Policy Configuration Service Provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider) to apply the System/AllowTelemetry MDM policy.
+Use [Policy Configuration Service Provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider) to apply the following MDM policies:
+
+  - System/AllowTelemetry
+  - System/LimitDumpCollection (supported on Windows 11 only)
+  - System/LimitDiagnosticLogCollection (supported on Windows 11 only)
 
 ## Enable Windows diagnostic data processor configuration
 
@@ -231,7 +256,7 @@ The Windows diagnostic data processor configuration enables you to be the contro
 
 ### Prerequisites
 
-- The device must have Windows 10 Pro, Education or Enterprise edition, version 1809 with July 2021 update or newer.
+- The device must have Windows 11, Windows 10 Professional, Education or Enterprise edition, version 1809 with July 2021 update or newer.
 - The device must be joined to Azure Active Directory.
 
 The diagnostic data setting on the device should be set to Required diagnostic data or higher, and the following endpoints need to be reachable:
