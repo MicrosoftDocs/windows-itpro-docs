@@ -4277,8 +4277,8 @@ The following fields are available:
 - **BootOptionDescription**  This field describes the boot option that is retrieved using EFI protocols from the DUT side.
 - **BootOptionDevicePath**  The device path for the boot option.
 - **ChunkSizeInBytes**  Indicates the chunk size, in bytes, of an FFU image.
-- **CurrentDUTTime**  Indicates the time on the DUT (or target device), using EFI protocols, when the event was logged. See [CurrentDUTTime](#currentduttime).
-- **DeviceTargetInfo**  Describes general manufacturing and product information about the device and is retrieved via SMBIOS on the DUT (target device). See [DeviceTargetInfo](#devicetargetinfo).
+- **CurrentDUTTime**  Indicates the time on the DUT (or target device), using EFI protocols, when the event was logged.
+- **DeviceTargetInfo**  Describes general manufacturing and product information about the device and is retrieved via SMBIOS on the DUT (target device).
 - **DUTActivityGuid**  The activity guid, from TraceLoggingActivity, that is associated with that operation on the DUT (target device).
 - **DUTDeviceUniqueId**  A GUID that uniquely identifies a target device.
 - **DUTSessionGuid**  A GUID that uniquely identifies a section on the DUT (target device).
@@ -4288,14 +4288,14 @@ The following fields are available:
 - **FFUPayloadSize**  Refers to the payload size of an FFU image.
 - **FieldName**  Provides a description of the value field. If relevant, it also includes the unit. Example: "ErrorMessage" or "TimeInSec".
 - **HeaderFileOffset**  Indicates the header file offset in an FFU image.
-- **HostStartTime**  Refers to the UTC system time on the host that is recorded when the host starts a telemetry logging session on the DUT (target device) See [HostStartTime](#hoststarttime).
+- **HostStartTime**  Refers to the UTC system time on the host that is recorded when the host starts a telemetry logging session on the DUT (target device).
 - **Identifier**  Identifies the phase in ManufacturingPlatform we are in. In FlashingPlatform, this field is empty. In FlashingDevice, it includes the DeviceUniqueId, and in an activity, it also includes the operation name.
-- **ImageDeviceTargetInfo**  Describes the device target information that has been included in the FFU image. These values can be found in the image header. See [ImageDeviceTargetInfo](#imagedevicetargetinfo).
-- **ImageHeaderData**  Describes critical data in the image header of an FFU image. See [ImageHeaderData](#imageheaderdata).
+- **ImageDeviceTargetInfo**  Describes the device target information that has been included in the FFU image. These values can be found in the image header.
+- **ImageHeaderData**  Describes critical data in the image header of an FFU image.
 - **OperationName**  The name of the operation the host is triggering a logging session on the DUT (target device) for.
 - **PayloadFileOffset**  Indicates the header file offset in an FFU image.
 - **SectorSize**  Indicates the sector size of the FFU image.
-- **StoreHeaderData**  Describes critical data of important fields found in the store header of an FFU image. See [StoreHeaderData](#storeheaderdata).
+- **StoreHeaderData**  Describes critical data of important fields found in the store header of an FFU image.
 - **UFPImplementationVersionMajor**  Implementation major version for the UFP binaries on the DUT (target device) side.
 - **UFPImplementationVersionMinor**  Implementation minor version for the UFP binaries on the DUT (target device) side.
 - **UFPProtocolVersionMajor**  Protocol major version for the UFP binaries on the DUT (target device) side.
@@ -4368,7 +4368,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event, where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **installSourceName**  A string representation of the installation source.
@@ -4398,7 +4398,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **installSourceName**  A string representation of the installation source.
@@ -4428,7 +4428,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **installSourceName**  A string representation of the installation source.
@@ -4458,7 +4458,7 @@ The following fields are available:
 - **container_session_id**  The session ID of the container, if in WDAG mode. This will be different from the UMA log session ID, which is the session ID of the host in WDAG mode.
 - **Etag**  Etag is an identifier representing all service applied configurations and experiments for the current browser session. This field is left empty when Windows diagnostic level is set to Basic or lower or when consent for diagnostic data has been denied.
 - **EventInfo.Level**  The minimum Windows diagnostic data level required for the event where 1 is basic, 2 is enhanced, and 3 is full.
-- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol for more details on this policy.
+- **experimentation_mode**  A number representing the value set for the ExperimentationAndConfigurationServiceControl group policy. See [Microsoft Edge - Policies](/DeployEdge/microsoft-edge-policies#experimentationandconfigurationservicecontrol) for more details on this policy.
 - **install_date**  The date and time of the most recent installation in seconds since midnight on January 1, 1970 UTC, rounded down to the nearest hour.
 - **installSource**  An enumeration representing the source of this installation: source was not retrieved (0), unspecified source (1), website installer (2), enterprise MSI (3), Windows update (4), Edge updater (5), scheduled or timed task (6, 7), uninstall (8), Edge about page (9), self-repair (10), other install command line (11), reserved (12), unknown source (13).
 - **installSourceName**  A string representation of the installation source.
