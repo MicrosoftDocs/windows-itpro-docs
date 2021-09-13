@@ -90,6 +90,9 @@ The following configuration requirements apply to virtual machines (VMs) running
 -	Memory:  4 GB or greater
 -	Processor: 2 or more virtual processors
 
+> [!NOTE]
+> Requirements to enable virtual TPM support depend on the VM host type. For Hyper-V hosts, Virtualization Based Security must be enabled in BIOS and the OS. For more information, see [Enable Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
+
 ## Next steps
 
 [Plan for Windows 11](windows-11-plan.md)<br>
