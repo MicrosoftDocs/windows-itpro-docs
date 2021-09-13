@@ -80,9 +80,9 @@ Some features in Windows 11 have requirements beyond those listed above. See the
 - **Windows Projection**: requires a display adapter that supports Windows Display Driver Model (WDDM) 2.0 and a Wi-Fi adapter that supports Wi-Fi Direct.
 - **Xbox app**: requires an Xbox Live account, which is not available in all regions. Please go to the Xbox Live Countries and Regions page for the most up-to-date information on availability. Some features in the Xbox app will require an active [Xbox Game Pass](https://www.xbox.com/xbox-game-pass) subscription.
 
-## Virtual Machine support
+## Virtual machine support
 
-The following configuration requirements apply to virtual machines (VMs) running Windows 11.
+The following configuration requirements apply to VMs running Windows 11.
 
 -	Generation: 2
 -	Storage: 64 GB or greater
