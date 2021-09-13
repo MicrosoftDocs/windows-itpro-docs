@@ -87,7 +87,7 @@ Example value: `Contoso.com,ContosoIT.HumanResourcesApp_m5g0r7arhahqy`
 Any other Windows Runtime application will only be able to revoke access to content it protected.  
 
 > [!NOTE]
-> Information the user should notice even if skimmingFile revocation applies to all content protected under the same second level domain as the provided enterprise identifier. Therefore, revoking an enterprise ID of `mail.contoso.com`will revoke the user’s access to all content protected under the contoso.com hierarchy.
+> Information the user should notice even if skimmingFile revocation applies to all content protected under the same second level domain as the provided enterprise identifier. Therefore, revoking an enterprise ID of `mail.contoso.com` will revoke the user’s access to all content protected under the contoso.com hierarchy.
 
 <!--/Description-->
 > [!TIP]
