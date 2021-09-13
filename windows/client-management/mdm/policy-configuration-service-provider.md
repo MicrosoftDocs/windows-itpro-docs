@@ -555,7 +555,18 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### ADMX_Desktop policies  
+### ADMX_DCOM policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-dcom.md#admx-dcom-dcomactivationsecuritycheckallowlocallist" id="admx-dcom-dcomactivationsecuritycheckallowlocallist">ADMX_DCOM/DCOMActivationSecurityCheckAllowLocalList</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dcom.md#admx-dcom-dcomactivationsecuritycheckexemptionlist" id="admx-dcom-dcomactivationsecuritycheckexemptionlist">ADMX_DCOM/DCOMActivationSecurityCheckExemptionList</a>
+  </dd>
+</dl>
+
+### ADMX_Desktop policies
 
 <dl>
   <dd>
@@ -647,6 +658,24 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_DeviceCompat policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-devicecompat.md#admx-devicecompat-deviceflags" id="#admx-devicecompat-deviceflags">ADMX_DeviceCompat/DeviceFlags</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-devicecompat.md#admx-devicecompat-drivershims" id="#admx-devicecompat-drivershims">ADMX_DeviceCompat/DriverShims</a>
+  </dd>
+<dl>
+
+### ADMX_DeviceGuard policies
+
+ <dd>
+    <a href="./policy-csp-admx-deviceguard.md#admx-deviceguard-configcipolicy" id="admx-deviceguard-configcipolicy">ADMX_DeviceGuard/ConfigCIPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_DeviceInstallation policies  
 
 <dl>
@@ -687,13 +716,34 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### ADMX_DigitalLocker policies
-<dl>
+### ADMX_DFS policies
+
+</dl>
   <dd>
+    <a href="./policy-csp-admx-dfs.md#admx-dfs-dfsdiscoverdc"id="admx-devicesetup-
+dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
+  </dd>
+</dl>
+
+### ADMX_DigitalLocker policies
+
+</dl>  
+<dd>
     <a href="./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-1" id="admx-digitallocker-digitalx-diableapplication-titletext-1">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-2" id="admx-digitallocker-digitalx-diableapplication-titletext-2">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_2</a>
+  </dd>
+</dl>
+
+### ADMX_DiskDiagnostic policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-diskdiagnostic.md#admx-diskdiagnostic-dfdalertpolicy" id="admx-diskdiagnostic-dfdalertpolicy">ADMX_DiskDiagnostic/DfdAlertPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskdiagnostic.md#admx-diskdiagnostic-wdiscenarioexecutionpolicy" id="admx-diskdiagnostic-wdiscenarioexecutionpolicy">ADMX_DiskDiagnostic/WdiScenarioExecutionPolicy</a>
   </dd>
 </dl>
 
@@ -778,7 +828,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 </dl>
 
 ### ADMX_DWM policies
-
 <dl>
   <dd>
     <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdefaultcolorizationcolor-1" id="admx-dwm-dwmdefaultcolorizationcolor-1">ADMX_DWM/DwmDefaultColorizationColor_1</a>
