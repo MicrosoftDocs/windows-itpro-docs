@@ -20,7 +20,7 @@ ms.date: 09/08/2021
 # Required Windows 11 diagnostic events and fields
 
 > [!IMPORTANT]
-> Some information relates to prereleased product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Windows is moving to classifying the data collected from customer’s devices as either Required or Optional.
 
 
  **Applies to**
@@ -5967,7 +5967,7 @@ The following fields are available:
 
 ### Setup360Telemetry.OsUninstall
 
-This event sends data regarding OS updates and upgrades from Windows 7, Windows 8, and Windows 10. Specifically, it indicates the outcome of an OS uninstall. The data collected with this event is used to help keep Windows secure and up to date.
+This event sends data regarding OS updates and upgrades from Windows 7, Windows 8, Windows 10, and Windows 11. Specifically, it indicates the outcome of an OS uninstall. The data collected with this event is used to help keep Windows secure and up to date.
 
 The following fields are available:
 
@@ -6033,7 +6033,7 @@ The following fields are available:
 
 ### Setup360Telemetry.PreDownloadUX
 
-This event sends data regarding OS Updates and Upgrades from Windows 7.X, Windows 8.X, Windows 10 and RS, to help keep Windows up-to-date and secure. Specifically, it indicates the outcome of the PredownloadUX portion of the update process.
+This event sends data regarding OS Updates and Upgrades from Windows 7.X, Windows 8.X, Windows 10, Windows 11 and RS, to help keep Windows up-to-date and secure. Specifically, it indicates the outcome of the PredownloadUX portion of the update process.
 
 The following fields are available:
 
@@ -6077,7 +6077,7 @@ The following fields are available:
 
 ### Setup360Telemetry.PreInstallUX
 
-This event sends data regarding OS updates and upgrades from Windows 7, Windows 8, and Windows 10, to help keep Windows up-to-date.  Specifically, it indicates the outcome of the PreinstallUX portion of the update process.
+This event sends data regarding OS updates and upgrades from Windows 7, Windows 8, Windows 10, and Windows 11, to help keep Windows up-to-date.  Specifically, it indicates the outcome of the PreinstallUX portion of the update process.
 
 The following fields are available:
 
