@@ -459,6 +459,8 @@ items:
               href: policy-csp-admx-eaime.md
             - name: ADMX_EncryptFilesonMove
               href: policy-csp-admx-encryptfilesonmove.md
+            - name: ADMX_EventLogging
+              href: policy-csp-admx-eventlogging.md  
             - name: ADMX_EnhancedStorage
               href: policy-csp-admx-enhancedstorage.md
             - name: ADMX_ErrorReporting

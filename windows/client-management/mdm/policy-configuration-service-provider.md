@@ -706,7 +706,7 @@ The following diagram shows the Policy configuration service provider in tree fo
 </dl>
 
 ### ADMX_DiskNVCache policies  
-
+                                    
 <dl>
   
 <dd>
@@ -865,6 +865,12 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_EncryptFilesonMove policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-eventlogging.md#admx-eventlogging-enableprotectedeventlogging" id="admx-eventlogging-enableprotectedeventlogging">ADMX_EventLogging/EnableProtectedEventLogging</a>
+  </dd>
+</dl>
 ### ADMX_EnhancedStorage policies  
 
 <dl>

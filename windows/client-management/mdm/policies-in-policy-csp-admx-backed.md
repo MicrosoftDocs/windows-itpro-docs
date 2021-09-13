@@ -207,6 +207,7 @@ ms.date: 10/08/2020
 - [ADMX_EAIME/L_TurnOnLexiconUpdate](./policy-csp-admx-eaime.md#admx-eaime-l-turnonlexiconupdate)
 - [ADMX_EAIME/L_TurnOnLiveStickers](./policy-csp-admx-eaime.md#admx-eaime-l-turnonlivestickers)
 - [ADMX_EAIME/L_TurnOnMisconversionLoggingForMisconversionReport](./policy-csp-admx-eaime.md#admx-eaime-l-turnonmisconversionloggingformisconversionreport)
+- [ADMX_EventLogging/EnableProtectedEventLogging](./policy-csp-admx-eventlogging.md#admx-eventlogging-enableprotectedeventlogging)
 - [ADMX_EncryptFilesonMove/NoEncryptOnMove](./policy-csp-admx-encryptfilesonmove.md#admx-encryptfilesonmove-noencryptonmove)
 - [ADMX_EnhancedStorage/ApprovedEnStorDevices](./policy-csp-admx-enhancedstorage.md#admx-enhancedstorage-approvedenstordevices)
 - [ADMX_EnhancedStorage/ApprovedSilos](./policy-csp-admx-enhancedstorage.md#admx-enhancedstorage-approvedsilos)
