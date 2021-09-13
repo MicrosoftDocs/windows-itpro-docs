@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 04/30/2018
+ms.date: 09/13/2021
 ms.reviewer: 
 manager: dansimp
 ms.technology: mde
@@ -36,8 +36,6 @@ You can add information about your organization in a contact card to the Windows
 
 This information will also be shown in some enterprise-specific notifications (including notifications for the [Block at first sight feature](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus), and [potentially unwanted applications](/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)).
 
-![A security center notification.](images/security-center-custom-notif.png)
-
 Users can select the displayed information to initiate a support request:
 
 - Select **Call** or the phone number to open Skype to start a call to the displayed number.
@@ -60,7 +58,7 @@ This can only be done in Group Policy.
 
 3. Expand the tree to **Windows components > Windows Security > Enterprise Customization**.
 
-4. Enable the contact card and the customized notifications by configuring two separate Group Policy settings. They will both use the same source of information (explained in Steps 5 and 6). You can enable both, or slect one or the other:
+4. Enable the contact card and the customized notifications by configuring two separate Group Policy settings. They will both use the same source of information (explained in Steps 5 and 6). You can enable both, or select one or the other:
 
     1. To enable the contact card, open the **Configure customized contact information** setting and set it to **Enabled**. Click **OK**.
 
