@@ -91,7 +91,7 @@ The following configuration requirements apply to VMs running Windows 11.
 -	Processor: 2 or more virtual processors
 
 > [!NOTE]
-> Procedures to enable these settings depend on the VM host type. For hosts running Hyper-V, the number of processors must be increased from the default setting of one, and Virtualization Based Security must be enabled in BIOS and the OS. For more information, see [Enable Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage).
+> Procedures to configure these settings depend on the VM host type. For VM hosts running Hyper-V, Virtualization Based Security must be enabled in BIOS and the OS. See [Enable Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage) for more information.
 
 ## Next steps
 
