@@ -5,7 +5,7 @@ ms.reviewer:
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.prod: w11
+ms.prod: w10
 audience: ITPro
 ms.topic: conceptual
 ms.date: 09/10/2021
@@ -17,6 +17,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 search.appverid: MET150 
+ms.collection: M365-security-compliance
+ms.prod: m365-security
+ms.technology: windows-sec
 ---
 
 # Windows and cloud security

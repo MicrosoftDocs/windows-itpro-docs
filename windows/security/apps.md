@@ -9,6 +9,9 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
 author: dansimp
+ms.collection: M365-security-compliance
+ms.prod: m365-security
+ms.technology: windows-sec
 ---
 
 # Windows application security
