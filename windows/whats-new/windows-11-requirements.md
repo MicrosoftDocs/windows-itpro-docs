@@ -95,7 +95,7 @@ The VM host CPU must also meet Windows 11 [processor requirements](/windows-hard
 <b>\*</b> In-place upgrade of existing generation 1 VMs to Windows 11 is not possible.
 
 > [!NOTE]
-> Procedures to configure required VM settings depend on the VM host type. For VM hosts running Hyper-V, Virtualization Based Security must be enabled in BIOS and the OS. See [Enable Windows Defender Credential Guard](/windows/security/identity-protection/credential-guard/credential-guard-manage) for more information.
+> Procedures to configure required VM settings depend on the VM host type. For VM hosts running Hyper-V, virtualization and TPM must be enabled in BIOS and the OS.
 
 ## Next steps
 
