@@ -20,7 +20,7 @@ ms.date: 09/08/2021
 
 **Applies to**
 - Windows 11
-- Windows 10, version 1903 and newer
+- Windows 10, version 1903 and later
 - Windows Server 2022
 
 Microsoft is committed to providing you with effective controls over your data and ongoing transparency into our data handling practices. As part of this effort, we have moved our major products and services to a model where data sent back to Microsoft from customer devices will be classified as either **Required** or **Optional**. We believe this will provide our customers with a simpler experience – information should be easier to find, easier to understand, and easier to act upon through the tools we provide.
@@ -32,13 +32,13 @@ This article is meant for IT administrators and explains the changes Windows is 
 
 ## Summary of changes
 
-In Windows 10, version 1903 and newer, you will see taxonomy updates in both the **Out-of-box-experience** (OOBE) and the **Diagnostics & feedback** privacy settings page. These changes are explained in the section named **Taxonomy** changes.
+In Windows 10, version 1903 and later, you will see taxonomy updates in both the **Out-of-box-experience** (OOBE) and the **Diagnostics & feedback** privacy settings page. These changes are explained in the section named **Taxonomy** changes.
 
 Additionally, starting in Windows 11 and Windows Server 2022, we’re simplifying your diagnostic data controls by moving from four diagnostic data controls to three: **Diagnostic data off**, **Required**, and **Optional**. We’re also clarifying the Security diagnostic data level to reflect its behavior more accurately by changing it to **Diagnostic data off**. All these changes are explained in the section named **Behavioral changes**.
 
 ## Taxonomy changes
 
-Starting in Windows 10, version 1903 and newer, both the **Out-of-Box-Experience** (OOBE) and the **Diagnostics & feedback** privacy setting pages will reflect the following changes:
+Starting in Windows 10, version 1903 and later, both the **Out-of-Box-Experience** (OOBE) and the **Diagnostics & feedback** privacy setting pages will reflect the following changes:
 
 - The **Basic** diagnostic data level is being labeled as **Required**.
 - The **Full** diagnostic data level is being labeled as **Optional**.
@@ -91,7 +91,7 @@ The following provides information on the current configurations:
 
 ## New Windows diagnostic data processor configuration
 
-Starting in Windows 10 Education, Professional, and Enterprise editions, version 1809 with July 2021 update and newer, enterprise customers will now have a new option for controlling their Windows diagnostic data for their Azure Active Directory joined devices.
+Starting in Windows 10 Education, Professional, and Enterprise editions, version 1809 with July 2021 update and later, enterprise customers will now have a new option for controlling their Windows diagnostic data for their Azure Active Directory joined devices.
 
 Previously, enterprise customers had two options in managing their Windows diagnostic data: 1) allow Microsoft to be the [controller](/compliance/regulatory/gdpr#terminology) of that data and responsible for determining the purposes and means of the processing of Windows diagnostic data in order to improve the Windows 10 operating system and deliver analytical services, or 2) turn off diagnostic data flows altogether.
 

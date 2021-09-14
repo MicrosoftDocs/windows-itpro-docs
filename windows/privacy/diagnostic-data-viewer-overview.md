@@ -21,7 +21,7 @@ ms.reviewer:
 
 **Applies to**
 
--   Windows 10, version 1803 and newer and Windows 11
+-   Windows 10, version 1803 and later and Windows 11
 
 ## Introduction
 

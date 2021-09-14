@@ -24,7 +24,7 @@ Applies to:
 - Windows 10 Enterprise
 - Windows 10 Education
 - Windows 10 Professional
-- Windows Server 2016 and newer
+- Windows Server 2016 and later
 
 ## Overview
 
@@ -45,7 +45,7 @@ When setting up a device, a user can configure their privacy settings. Those pri
 The following table provides an overview of the Windows 10 and Windows 11 privacy settings presented during the device setup experience that involve processing personal data and where to find additional information.
 
 > [!NOTE]
-> This table is limited to the privacy settings that are available as part of setting up a Windows 10 (Windows 10, version 1809 and newer) or Windows 11 device. For the full list of settings that involve data collection, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
+> This table is limited to the privacy settings that are available as part of setting up a Windows 10 (Windows 10, version 1809 and later) or Windows 11 device. For the full list of settings that involve data collection, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
 
 | Feature/Setting | Description | Supporting Content | Privacy Statement |
 | --- | --- | --- | --- |
@@ -61,7 +61,7 @@ The following table provides an overview of the Windows 10 and Windows 11 privac
 
 ### 1.2 Data collection monitoring
 
-[Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) is a Microsoft Store app (available in Windows 10, version 1803 and newer, and Windows 11) that lets a user review the Windows diagnostic data that is being collected on their Windows 10 device and sent to Microsoft in real-time. DDV groups the information into simple categories that describe the data that’s being collected.
+[Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) is a Microsoft Store app (available in Windows 10, version 1803 and later and Windows 11) that lets a user review the Windows diagnostic data that is being collected on their Windows 10 device and sent to Microsoft in real-time. DDV groups the information into simple categories that describe the data that’s being collected.
 
 An administrator can also use the Diagnostic Data Viewer for PowerShell module to view the diagnostic data collected from the device instead of using the Diagnostic Data Viewer UI. The [Diagnostic Data Viewer for PowerShell Overview](microsoft-diagnosticdataviewer.md) provides further information.
 
@@ -88,10 +88,10 @@ The following table provides an overview of the privacy settings discussed earli
 | Feature/Setting | GP/MDM Documentation | Default State if the Setup experience is suppressed | State to stop/minimize data collection |
 |---|---|---|---|
 | [Speech](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-speech) | Group Policy:<br />**Computer Configuration** > **Control Panel** > **Regional and Language Options** > **Allow users to enable online speech recognition services**<br /><br />MDM: [Privacy/AllowInputPersonalization](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | Off | Off |
-| [Location](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-location) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **App Privacy** > **Let Windows apps access location**<br /><br />MDM: [Privacy/LetAppsAccessLocation](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | Off (Windows 10, version 1903 and later, and Windows 11) | Off |
+| [Location](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-location) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **App Privacy** > **Let Windows apps access location**<br /><br />MDM: [Privacy/LetAppsAccessLocation](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | Off (Windows 10, version 1903 and later and Windows 11) | Off |
 | [Find my device](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#find-my-device) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Find My Device** > **Turn On/Off Find My Device**<br /><br />MDM: [Experience/AllFindMyDevice](/windows/client-management/mdm/policy-csp-experience#experience-allowfindmydevice) | Off | Off |
 | [Diagnostic Data](configure-windows-diagnostic-data-in-your-organization.md#manage-enterprise-diagnostic-data) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Data Collection and Preview Builds** > **Allow Telemetry**<br /><br />MDM: [System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)<br /><br />**Note**: If you are planning to configure devices, using the Windows diagnostic data processor configuration option, the state to minimize data collection is not recommended. See [Enabling the Windows diagnostic data processor configuration](#238-diagnostic-data-enabling-the-windows-diagnostic-data-processor-configuration) below for more information. | Required diagnostic data (Windows 10, version 1903 and later and Windows 11)<br /><br />Server editions:<br />Enhanced diagnostic data | Security (Off) and block endpoints |
-| [Inking and typing diagnostics](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-ink) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Text Input** > **Improve inking and typing recognition**<br /><br />MDM: [TextInput/AllowLinguisticDataCollection](/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection) | Off (Windows 10, version 1809 and later, and Windows 11) | Off |
+| [Inking and typing diagnostics](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-ink) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Text Input** > **Improve inking and typing recognition**<br /><br />MDM: [TextInput/AllowLinguisticDataCollection](/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection) | Off (Windows 10, version 1809 and later and Windows 11) | Off |
 | Tailored Experiences | Group Policy:<br />**User Configuration** > **Windows Components** > **Cloud Content** > **Do not use diagnostic data for tailored experiences**<br /><br />MDM: [Experience/AllowTailoredExperiencesWithDiagnosticData](/windows/client-management/mdm/policy-csp-experience#experience-allowtailoredexperienceswithdiagnosticdata) | Off | Off | 
 | Advertising ID | Group Policy:<br />**Computer Configuration** > **System** > **User Profile** > **Turn off the advertising Id**<br /><br />MDM: [Privacy/DisableAdvertisingId](/windows/client-management/mdm/policy-csp-privacy#privacy-disableadvertisingid) | Off | Off | 
 | Activity History/Timeline – Cloud Sync | Group Policy:<br />**Computer Configuration** > **System** > **OS Policies** > **Allow upload of User Activities**<br /><br />MDM: [Privacy/EnableActivityFeed](/windows/client-management/mdm/policy-csp-privacy#privacy-enableactivityfeed) | Off | Off | 
@@ -140,11 +140,11 @@ Starting with Windows 10, version 1803, if an administrator modifies the diagnos
 
 #### _2.3.6 Diagnostic data: Managing end user choice for changing the setting_
 
-Windows 10, version 1803 and newer allows users to change their diagnostic data level to a lower setting than what their administrator has set. For example, if you have configured the device to send optional diagnostic data, a user can change the setting so that only required diagnostic data is sent by going into **Settings** > **Privacy** > **Diagnostics & feedback**. Administrators can restrict a user’s ability to change the setting using **Setting** > **Privacy** by setting the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Configure telemetry opt-in setting user interface** or the MDM policy `ConfigureTelemetryOptInSettingsUx`.
+Windows 10, version 1803 and later allows users to change their diagnostic data level to a lower setting than what their administrator has set. For example, if you have configured the device to send optional diagnostic data, a user can change the setting so that only required diagnostic data is sent by going into **Settings** > **Privacy** > **Diagnostics & feedback**. Administrators can restrict a user’s ability to change the setting using **Setting** > **Privacy** by setting the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Configure telemetry opt-in setting user interface** or the MDM policy `ConfigureTelemetryOptInSettingsUx`.
 
 #### _2.3.7 Diagnostic data: Managing device-based data delete_
 
-Windows 10, version 1809 and newer, and Windows 11 allow a user to delete diagnostic data collected from their device by using **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button under the **Delete diagnostic data** heading. An administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData) PowerShell cmdlet.
+Windows 10, version 1809 and later and Windows 11 allow a user to delete diagnostic data collected from their device by using **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button under the **Delete diagnostic data** heading. An administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData) PowerShell cmdlet.
 
 An administrator can disable a user’s ability to delete their device’s diagnostic data by setting the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Disable deleting diagnostic data** or the MDM policy `DisableDeviceDelete`.
 
@@ -155,7 +155,7 @@ An administrator can disable a user’s ability to delete their device’s diagn
 
 **Applies to:**
 
-- Windows 10 (version 1809 with July 2021 update and newer) and Windows 11 Enterprise, Pro, Education editions
+- Windows 10 (version 1809 with July 2021 update and later) and Windows 11 Enterprise, Pro, Education editions
 
 The Windows diagnostic data processor configuration enables IT administrators to be the controller, as defined by the European Union General Data Protection Regulation (GDPR), for the Windows diagnostic data collected from Windows 10 and Windows 11 devices that are Azure Active Directory (AAD) joined and meet the configuration requirements. For more information, see [Enable Windows diagnostic data processor configuration](configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration) in [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md). Windows diagnostic data does not include data processed by Microsoft in connection with providing service-based capabilities.
 
@@ -215,7 +215,7 @@ Microsoft’s [Privacy Statement](https://privacy.microsoft.com/privacystatement
 
 The following sections provide details about how privacy data is collected and managed across related Windows products.
 
-### 5.1 Windows Server 2016 and newer
+### 5.1 Windows Server 2016 and later
 
 Windows Server follows the same mechanisms as Windows 10 for handling of personal data.
 

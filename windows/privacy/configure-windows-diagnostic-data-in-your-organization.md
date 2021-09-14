@@ -24,7 +24,7 @@ ms.date: 09/08/2021
 - Windows 10 Enterprise
 - Windows 10 Education
 - Windows 10 Professional
-- Windows Server 2016 and newer
+- Windows Server 2016 and later
 
 This article applies to Windows 11, Windows 10, Windows Server, Surface Hub, and HoloLens diagnostic data only. It describes the types of diagnostic data sent back to Microsoft and the ways you can manage it within your organization. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
@@ -217,7 +217,7 @@ You can use Group Policy to set your organization’s diagnostic data setting:
 2.  Double-click **Allow Telemetry**.
 
     > [!NOTE]
-    > If devices in your organization are running Windows 10, 1803 and newer, the user can still use Settings to set the diagnostic data setting to a more restrictive value, unless the **Configure diagnostic data opt-in settings user interface** policy is set.
+    > If devices in your organization are running Windows 10, 1803 and later, the user can still use Settings to set the diagnostic data setting to a more restrictive value, unless the **Configure diagnostic data opt-in settings user interface** policy is set.
 
 3. In the **Options** box, choose the setting that you want to configure, and then click **OK**.
 
@@ -256,7 +256,7 @@ The Windows diagnostic data processor configuration enables you to be the contro
 
 ### Prerequisites
 
-- The device must have Windows 11, Windows 10 Professional, Education or Enterprise edition, version 1809 with July 2021 update or newer.
+- The device must have Windows 11, Windows 10 Professional, Education or Enterprise edition, version 1809 with July 2021 update or later.
 - The device must be joined to Azure Active Directory.
 
 The diagnostic data setting on the device should be set to Required diagnostic data or higher, and the following endpoints need to be reachable:
