@@ -124,7 +124,7 @@ For more details, see [Manage connections from Windows operating system componen
 
 Some Windows components, apps, and related services transfer data to Microsoft network endpoints. An administrator may want to block these endpoints for their organization to meet their specific compliance objectives.
 
-[Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md) and [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md)provides a list of endpoints for the latest Windows 10 and Windows 11 releases, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the Windows Privacy site under the **Manage Windows connection endpoints** section of the left-hand navigation menu.
+[Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H1-endpoints.md) and [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md)provides a list of endpoints for the latest Windows 10 and Windows 11 releases, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the Windows Privacy site under the **Manage Windows connection endpoints** section of the left-hand navigation menu.
 
 #### _2.3.4 Limited functionality baseline_
 
