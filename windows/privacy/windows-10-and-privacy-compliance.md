@@ -61,7 +61,7 @@ The following table provides an overview of the Windows 10 and Windows 11 privac
 
 ### 1.2 Data collection monitoring
 
-[Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) is a Microsoft Store app (available in Windows 10, version 1803 and newer and Windows 11) that lets a user review the Windows diagnostic data that is being collected on their Windows 10 device and sent to Microsoft in real-time. DDV groups the information into simple categories that describe the data that’s being collected.
+[Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) is a Microsoft Store app (available in Windows 10, version 1803 and newer, and Windows 11) that lets a user review the Windows diagnostic data that is being collected on their Windows 10 device and sent to Microsoft in real-time. DDV groups the information into simple categories that describe the data that’s being collected.
 
 An administrator can also use the Diagnostic Data Viewer for PowerShell module to view the diagnostic data collected from the device instead of using the Diagnostic Data Viewer UI. The [Diagnostic Data Viewer for PowerShell Overview](microsoft-diagnosticdataviewer.md) provides further information.
 
@@ -88,10 +88,10 @@ The following table provides an overview of the privacy settings discussed earli
 | Feature/Setting | GP/MDM Documentation | Default State if the Setup experience is suppressed | State to stop/minimize data collection |
 |---|---|---|---|
 | [Speech](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-speech) | Group Policy:<br />**Computer Configuration** > **Control Panel** > **Regional and Language Options** > **Allow users to enable online speech recognition services**<br /><br />MDM: [Privacy/AllowInputPersonalization](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | Off | Off |
-| [Location](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-location) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **App Privacy** > **Let Windows apps access location**<br /><br />MDM: [Privacy/LetAppsAccessLocation](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | Off (Windows 10, version 1903 and later and Windows 11) | Off |
+| [Location](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-location) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **App Privacy** > **Let Windows apps access location**<br /><br />MDM: [Privacy/LetAppsAccessLocation](/windows/client-management/mdm/policy-csp-privacy#privacy-allowinputpersonalization) | Off (Windows 10, version 1903 and later, and Windows 11) | Off |
 | [Find my device](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#find-my-device) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Find My Device** > **Turn On/Off Find My Device**<br /><br />MDM: [Experience/AllFindMyDevice](/windows/client-management/mdm/policy-csp-experience#experience-allowfindmydevice) | Off | Off |
 | [Diagnostic Data](configure-windows-diagnostic-data-in-your-organization.md#manage-enterprise-diagnostic-data) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Data Collection and Preview Builds** > **Allow Telemetry**<br /><br />MDM: [System/AllowTelemetry](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)<br /><br />**Note**: If you are planning to configure devices, using the Windows diagnostic data processor configuration option, the state to minimize data collection is not recommended. See [Enabling the Windows diagnostic data processor configuration](#238-diagnostic-data-enabling-the-windows-diagnostic-data-processor-configuration) below for more information. | Required diagnostic data (Windows 10, version 1903 and later and Windows 11)<br /><br />Server editions:<br />Enhanced diagnostic data | Security (Off) and block endpoints |
-| [Inking and typing diagnostics](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-ink) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Text Input** > **Improve inking and typing recognition**<br /><br />MDM: [TextInput/AllowLinguisticDataCollection](/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection) | Off (Windows 10, version 1809 and later and Windows 11) | Off |
+| [Inking and typing diagnostics](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-ink) | Group Policy:<br />**Computer Configuration** > **Windows Components** > **Text Input** > **Improve inking and typing recognition**<br /><br />MDM: [TextInput/AllowLinguisticDataCollection](/windows/client-management/mdm/policy-csp-textinput#textinput-allowlinguisticdatacollection) | Off (Windows 10, version 1809 and later, and Windows 11) | Off |
 | Tailored Experiences | Group Policy:<br />**User Configuration** > **Windows Components** > **Cloud Content** > **Do not use diagnostic data for tailored experiences**<br /><br />MDM: [Experience/AllowTailoredExperiencesWithDiagnosticData](/windows/client-management/mdm/policy-csp-experience#experience-allowtailoredexperienceswithdiagnosticdata) | Off | Off | 
 | Advertising ID | Group Policy:<br />**Computer Configuration** > **System** > **User Profile** > **Turn off the advertising Id**<br /><br />MDM: [Privacy/DisableAdvertisingId](/windows/client-management/mdm/policy-csp-privacy#privacy-disableadvertisingid) | Off | Off | 
 | Activity History/Timeline – Cloud Sync | Group Policy:<br />**Computer Configuration** > **System** > **OS Policies** > **Allow upload of User Activities**<br /><br />MDM: [Privacy/EnableActivityFeed](/windows/client-management/mdm/policy-csp-privacy#privacy-enableactivityfeed) | Off | Off | 
@@ -109,7 +109,7 @@ If you want the ability to fully control and apply restrictions on data being se
 
 Alternatively, your administrators can also choose to use Windows Autopilot. Autopilot lessens the overall burden of deployment while allowing administrators to fully customize the out-of-box experience. However, since Windows Autopilot is a cloud-based solution, administrators should be aware that a minimal set of device identifiers are sent back to Microsoft during initial device boot up. This device-specific information is used to identify the device so that it can receive the administrator-configured Autopilot profile and policies.
 
-You can use the following articles to learn more about Autopilot and how to use Autopilot to deploy Windows 10:
+You can use the following articles to learn more about Autopilot and how to use Autopilot to deploy Windows 10 and Windows 11:
 
 - [Overview of Windows Autopilot](/windows/deployment/windows-Autopilot/windows-Autopilot)
 - [Windows Autopilot deployment process](/windows/deployment/windows-Autopilot/deployment-process)
@@ -120,11 +120,11 @@ Administrators can manage the data sent from their organization to Microsoft by 
 
 For more details, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). This topic includes the different methods available on how to configure each setting, the impact to functionality, and which versions of Windows that are applicable.
 
-#### _2.3.3 Managing Windows 10 connections_
+#### _2.3.3 Managing Windows 10 and Windows 11 connections_
 
 Some Windows components, apps, and related services transfer data to Microsoft network endpoints. An administrator may want to block these endpoints for their organization to meet their specific compliance objectives.
 
-[Manage connection endpoints for Windows 10, version 20H2](manage-windows-20H2-endpoints.md) provides a list of endpoints for the latest Windows 10 release, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the Windows Privacy site under the **Manage Windows 10 connection endpoints** section of the left-hand navigation menu.
+[Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H2-endpoints.md) and [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md)provides a list of endpoints for the latest Windows 10 and Windows 11 releases, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the Windows Privacy site under the **Manage Windows connection endpoints** section of the left-hand navigation menu.
 
 #### _2.3.4 Limited functionality baseline_
 
