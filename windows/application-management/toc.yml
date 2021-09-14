@@ -11,12 +11,12 @@ items:
           href: provisioned-apps-windows-client-os.md
         - name: System apps in Windows client OS
           href: system-apps-windows-client-os.md
-        - name: Private store on Windows 11
-          href: private-store-mdm-company-portal-windows-11.md
     - name: Add features in Windows client
       href: add-apps-and-features.md
     - name: Sideload apps
       href: sideload-apps-in-windows-10.md
+    - name: Private store on Windows 11
+      href: private-store-mdm-company-portal-windows-11.md
     - name: Remove background task resource restrictions
       href: enterprise-background-activity-controls.md
     - name: Enable or block Windows Mixed Reality apps in the enterprise
