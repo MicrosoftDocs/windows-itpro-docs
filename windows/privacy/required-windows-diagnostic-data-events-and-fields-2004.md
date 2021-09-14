@@ -1796,6 +1796,23 @@ The following fields are available:
 
 ## Audio endpoint events
 
+### MicArrayGeometry
+
+This event provides information about the layout of the individual microphone elements in the microphone array. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **MicCoords**  The location and orientation of the microphone element.
+- **usFrequencyBandHi**  The high end of the frequency range for the microphone.
+- **usFrequencyBandLo**  The low end of the frequency range for the microphone.
+- **usMicArrayType**  The type of the microphone array.
+- **usNumberOfMicrophones**  The number of microphones in the array.
+- **usVersion**  The version of the microphone array specification.
+- **wHorizontalAngleBegin**  The horizontal angle of the start of the working volume (reported as radians times 10,000).
+- **wHorizontalAngleEnd**  The horizontal angle of the end of the working volume (reported as radians times 10,000).
+- **wVerticalAngleBegin**  The vertical angle of the start of the working volume (reported as radians times 10,000).
+- **wVerticalAngleEnd**  The vertical angle of the end of the working volume (reported as radians times 10,000).
+
 ### Microsoft.Windows.Audio.EndpointBuilder.DeviceInfo
 
 This event logs the successful enumeration of an audio endpoint (such as a microphone or speaker) and provides information about the audio endpoint. The data collected with this event is used to keep Windows performing properly.
