@@ -203,22 +203,23 @@
      - name: Windows Defender Firewall
        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
    - name: Virus & threat protection
-     href: threat-protection/index.md
      items: 
-     - name: Microsoft Defender Antivirus
-       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
-     - name: Attack surface reduction rules
-       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction
-     - name: Tamper protection
-       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
-     - name: Network protection
-       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/network-protection
-     - name: Controlled folder access
-       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders
-     - name: Exploit protection
-       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection
-     - name: Microsoft Defender for Endpoint
-       href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint
+      - name: Overview
+        href: threat-protection/index.md
+      - name: Microsoft Defender Antivirus
+        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows
+      - name: Attack surface reduction rules
+        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction
+      - name: Tamper protection
+        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/prevent-changes-to-security-settings-with-tamper-protection
+      - name: Network protection
+        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/network-protection
+      - name: Controlled folder access
+        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/controlled-folders
+      - name: Exploit protection
+        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection
+      - name: Microsoft Defender for Endpoint
+        href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint
 - name: Application security
   href: apps.md
   items:
