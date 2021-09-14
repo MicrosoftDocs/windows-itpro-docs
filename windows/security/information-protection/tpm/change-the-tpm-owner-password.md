@@ -20,6 +20,7 @@ ms.date: 09/03/2021
 
 **Applies to**
 -   Windows 10
+-   TPM 1.2
 -   Windows 11
 -   Windows Server 2016 and above
 
