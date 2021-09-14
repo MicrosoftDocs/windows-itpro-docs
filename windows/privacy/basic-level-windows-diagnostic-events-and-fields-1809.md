@@ -4773,7 +4773,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceMediaClassSAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.De~iceInventoryChange](#msdevicede~iceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4887,7 +4887,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDeviceUsbHubClassAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.De~ice.DeviceInventoryChange](#msde~icedeviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -5159,7 +5159,7 @@ The following fields are available:
 
 This event represents the basic metadata about the OS indicators installed on the system. The data collected with this event helps ensure the device is up to date and keeps Windows performing properly.
 
-This event includes fields from [Ms.Device.DeviceInventoryChangd](#msdevicedeviceinventorychangd).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -7862,7 +7862,7 @@ The following fields are available:
 
 - **DPRange**  Maximum mean value range.
 - **DPValue**  Randomized bit value (0 or 1) that can be reconstituted over a large population to estimate the mean.
-- **Value**  Standard UTC emitted DP value structure See [Value](#value).
+- **Value**  Standard UTC emitted DP value structure. See [Value](#value).
 
 
 ## Windows Store events
