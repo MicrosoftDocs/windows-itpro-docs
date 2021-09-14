@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/09/2021
+ms.date: 09/13/2021
 ms.localizationpriority: medium
 ---
 
@@ -23,14 +23,6 @@ ms.localizationpriority: medium
 Starting with Windows 11, how administrators deploy apps to devices is updated. The Microsoft Store app is available on Windows 11, and allows users to install public and retail apps. The Microsoft Store app on Windows 11 doesn't have a private store for organization-specific apps.
 
 Instead of a private store in the Microsoft Store app, you install the Company Portal app on devices. The Company Portal app replaces the private store in Microsoft Store for Business. When the Company Portal app is installed, users open it, and see the apps your organization makes available. They select an app, and install it.
-
-The Company Portal app has many benefits, including:
-
-- On existing devices, users can enroll their devices, and be managed by your organization. When they enroll, they get access to organization resources, including apps.
-- Users can browse and install approved organization apps that you add.
-- You can personalize the Company Portal app by adding help desk details, and other information from your IT department.
-- Users can see all their enrolled devices, and see the device information.
-- Users can reset their devices, which is helpful if their device is lost or stolen.
 
 This article discusses the Company Portal app installation options, adding organization apps, and more.
 
@@ -56,6 +48,8 @@ To use the Company Portal app:
 To install the Company Portal app, you have some options:
 
 - **Use Microsoft Endpoint Manager**: Endpoint Manager includes Microsoft Intune (cloud) and Configuration Manager (on-premises). With both services, you can add Microsoft Store apps, like the Company Portal app. Once added, you create an app policy that deploys and installs the Company Portal app to your devices.
+
+  This option is preferred. Admins can makes sure the app is installed on organization-managed devices.
 
   - On co-managed devices, which are managed by Microsoft Intune + Configuration Manager together, the Company Portal app shows your Intune apps and your Configuration Manager apps. So, all apps are shown in one place.
 
@@ -111,37 +105,3 @@ When the apps are shown, users can select and download the apps on their devices
 
 If you use a third party or partner MDM provider, be sure to configure the settings that list your apps in the Company Portal app.
 
-## Use Group Policy or MDM to block the Microsoft Store
-
-By default, the OS shows the Microsoft Store, and allows users to install the public and retail apps. If you want, you can hide the Microsoft Store on your user devices using Group Policy (on-premises), or using an MDM provider, such as Microsoft Intune (cloud).
-
-### Group Policy
-
-If you use Group Policy, you can use the following policies:
-
-- `Computer configuration\Administrative templates\Windows Components\Store\Turn off the Store application`
-- `User configuration\Administrative templates\Windows Components\Store\Turn off the Store application`
-
-If you currently use the `Only display the private store within Microsoft Store app` and `To show private store only in Microsoft Store app` policies, then you should now use `Disable all apps from Microsoft Store` policy.
-
-### MDM
-
-Using an MDM provider, you can deploy a policy that turns off or blocks the Microsoft Store.
-
-Using Microsoft Intune, you can use [Administrative Templates](/mem/intune/configuration/administrative-templates-windows) (opens another Microsoft web site) or the [Settings Catalog](/mem/intune/configuration/settings-catalog) (opens another Microsoft web site) to turn off the Microsoft Store app.
-
-**--> Need to add more specific info. <--**
-
-## Use Microsoft Defender Application Control or AppLocker
-
-The Microsoft Store app uses the `WinStore.App.exe` file. You can block access to this file using AppLocker or Microsoft Defender Application Control. For more information on these options, see:
-
-- [Windows Defender Application Control and AppLocker Overview](/windows/security/threat-protection/windows-defender-application-control/wdac-and-applocker-overview)
-- [Block Microsoft Store using AppLocker](/windows/configuration/stop-employees-from-using-microsoft-store#block-microsoft-store-using-applocker)
-
-## Microsoft Store for Business
-
-> [!IMPORTANT]
-> Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
-
-In the Microsoft Store app, the private store includes apps used by our organization. On Windows 10 devices, users open the Microsoft Store app, go to your organization's tab, select an app, and install it.
