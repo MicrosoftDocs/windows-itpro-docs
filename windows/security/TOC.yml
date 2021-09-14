@@ -13,7 +13,7 @@
           href: information-protection/tpm/trusted-platform-module-overview.md
         - name: TPM fundamentals
           href: information-protection/tpm/tpm-fundamentals.md
-        - name: How Windows 10 uses the TPM
+        - name: How Windows uses the TPM
           href: information-protection/tpm/how-windows-uses-the-tpm.md
         - name: TPM Group Policy settings
           href: information-protection/tpm/trusted-platform-module-services-group-policy-settings.md
@@ -54,7 +54,7 @@
      - name: Bitlocker 
        href: information-protection/bitlocker/bitlocker-overview.md
        items: 
-        - name: Overview of BitLocker Device Encryption in Windows 10
+        - name: Overview of BitLocker Device Encryption in Windows
           href: information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10.md
         - name: BitLocker frequently asked questions (FAQ)
           href: information-protection/bitlocker/bitlocker-frequently-asked-questions.yml
@@ -125,7 +125,7 @@
                   href: information-protection/bitlocker/ts-bitlocker-tpm-issues.md
                 - name: Decode Measured Boot logs to track PCR changes
                   href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
-     - name: Configure S/MIME for Windows 10
+     - name: Configure S/MIME for Windows
        href: identity-protection/configure-s-mime.md     
      - name: Windows Information Protection (WIP)
        href: information-protection/windows-information-protection/protect-enterprise-data-using-wip.md
@@ -199,7 +199,7 @@
           href: identity-protection/vpn/how-to-configure-diffie-hellman-protocol-over-ikev2-vpn-connections.md
         - name: How to use single sign-on (SSO) over VPN and Wi-Fi connections
           href: identity-protection/vpn/how-to-use-single-sign-on-sso-over-vpn-and-wi-fi-connections.md
-        - name: Optimizing Office 365 traffic with the Windows 10 VPN client
+        - name: Optimizing Office 365 traffic with the Windows VPN client
           href: identity-protection/vpn/vpn-office-365-optimization.md
      - name: Windows Defender Firewall
        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
@@ -223,6 +223,25 @@
 - name: Application security
   href: apps.md
   items:
+   - name: Windows Defender Application Control and virtualization-based protection of code integrity
+     href: device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+   - name: Windows Defender Application Control
+     href: threat-protection\windows-defender-application-control\windows-defender-application-control.md
+   - name: Microsoft Defender Application Guard
+     href: threat-protection\microsoft-defender-application-guard\md-app-guard-overview.md
+   - name: Windows Sandbox
+     href: windows-sandbox/windows-sandbox-overview.md
+     items: 
+        - name: Windows Sandbox architecture
+          href: windows-sandbox/windows-sandbox-architecture.md
+        - name: Windows Sandbox configuration
+          href: windows-sandbox/windows-sandbox-configure-using-wsb-file.md
+   - name: Microsoft Defender SmartScreen overview
+     href: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
+   - name: Configure S/MIME for Windows
+     href: identity-protection\configure-s-mime.md
+   - name: Windows Credential Theft Mitigation Guide Abstract
+     href: identity-protection\windows-credential-theft-mitigation-guide-abstract.md 
 - name: Secured identity
   href: identity.md
   items:
