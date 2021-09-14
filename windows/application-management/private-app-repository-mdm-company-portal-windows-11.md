@@ -2,7 +2,6 @@
 title: Use the Company Portal app for your private app repo on Windows 11 devices | Microsoft Docs
 description: Use the Company Portal app in Windows 11 devices to access the private app repository for your organization or company apps. Add apps to an MDM/MAM provider, and deploy the apps to Windows devices using policies. The Company Portal app replaces Microsoft Store for Business private store on Windows 11 devices.
 ms.assetid: 
-ms.reviewer: 
 manager: dougeby
 ms.author: mandia
 ms.reviewer: amanh
@@ -23,7 +22,9 @@ ms.localizationpriority: medium
 
 Starting with Windows 11, how administrators deploy apps to devices is updated. The Microsoft Store app is available on Windows 11, and allows users to install public and retail apps. The Microsoft Store app on Windows 11 doesn't have a private store for organization-specific apps.
 
-Instead of a private store in the Microsoft Store app, you install the Company Portal app on devices. The Company Portal app replaces the private store in Microsoft Store for Business. When the Company Portal app is installed, users open it, and see the apps your organization makes available in your private app repository. Users select an app, and install it.
+Instead of a private store in the Microsoft Store app, you install the Company Portal app on devices. The Company Portal app replaces the private store in Microsoft Store for Business.
+
+When the Company Portal app is installed, users open it, and see the apps your organization makes available in your private app repository. Users select an app, and install it.
 
 This article discusses the Company Portal app installation options, adding organization apps, and more.
 
@@ -63,7 +64,7 @@ To install the Company Portal app, you have some options:
   - [What is co-management?](/mem/configmgr/comanage/overview)
   - [Use the Company Portal app on co-managed devices](/mem/configmgr/comanage/company-portal)
 
-- **Use Windows Autopilot**: Windows Autopilot automatically provisions devices, registers them in your organization in Azure AD, and gets them ready for production. If you're purchasing new devices, then we recommend using Windows Autopilot to preconfigure the devices, and get them ready for use.
+- **Use Windows Autopilot**: Windows Autopilot automatically provisions devices, registers them in your Azure AD organization (tenant), and gets them ready for production. If you're purchasing new devices, then we recommend using Windows Autopilot to preconfigure the devices, and get them ready for use.
 
   - In the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), you add the Company Portal app from the Microsoft Store. Once it's added, the app can be included in your Windows Autopilot deployment. When the device turns on and is getting ready, the Company Portal app is also installed, before users sign in.
 
