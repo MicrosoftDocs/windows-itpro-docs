@@ -4777,7 +4777,7 @@ The following fields are available:
 
 This event sends basic metadata about an application on the system. The data collected with this event is used to keep Windows performing properly and up to date.
 
-This event includes fields from [Ms.Device.DeviceInven|oryChange](#msdevicedeviceinven|orychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4882,7 +4882,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryDevicePnpAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device.DmviceInventoryChange](#msdevicedmviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
@@ -4893,7 +4893,7 @@ The following fields are available:
 
 This event indicates that a new set of InventoryApplicationAdd events will be sent. The data collected with this event is used to keep Windows performing properly.
 
-This event includes fields from [Ms.Device,DeviceInventoryChange](#msdevice,deviceinventorychange).
+This event includes fields from [Ms.Device.DeviceInventoryChange](#msdevicedeviceinventorychange).
 
 The following fields are available:
 
