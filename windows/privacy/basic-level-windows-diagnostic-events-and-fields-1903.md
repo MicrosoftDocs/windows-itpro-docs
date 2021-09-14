@@ -277,8 +277,6 @@ The following fields are available:
 - **DatasourceApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_21H1**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
-- **DatasourceApplicationFile_21H2**  The total number of objects of this type present on this device.
-- **DatasourceApplicationFile_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_CO21H2**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_CU22H2**  The total number of objects of this type present on this device.
@@ -296,8 +294,6 @@ The following fields are available:
 - **DatasourceDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_21H1**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
-- **DatasourceDevicePnp_21H2**  The total number of objects of this type present on this device.
-- **DatasourceDevicePnp_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_CO21H2**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_CU22H2**  The total number of objects of this type present on this device.
@@ -318,8 +314,6 @@ The following fields are available:
 - **DatasourceDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_21H1**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
-- **DatasourceDriverPackage_21H2**  The total number of objects of this type present on this device.
-- **DatasourceDriverPackage_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_CO21H2**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_CU22H2**  The total number of objects of this type present on this device.
@@ -340,8 +334,6 @@ The following fields are available:
 - **DataSourceMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoBlock_21H2**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoBlock_21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_CO21H2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_CU22H2**  The total number of objects of this type present on this device.
@@ -359,8 +351,6 @@ The following fields are available:
 - **DataSourceMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPassive_21H2**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPassive_21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_CO21H2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_CU22H2**  The total number of objects of this type present on this device.
@@ -378,8 +368,6 @@ The following fields are available:
 - **DataSourceMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_21H2**  The total number of objects of this type present on this device.
-- **DataSourceMatchingInfoPostUpgrade_21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_CO21H2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_CU22H2**  The total number of objects of this type present on this device.
@@ -398,8 +386,6 @@ The following fields are available:
 - **DatasourceSystemBios_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_21H1**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_21H1Setup**  The total number of objects of this type present on this device.
-- **DatasourceSystemBios_21H2**  The total number of objects of this type present on this device.
-- **DatasourceSystemBios_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_CO21H2**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_CU22H2**  The total number of objects of this type present on this device.
@@ -420,8 +406,6 @@ The following fields are available:
 - **DecisionApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_21H1**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionApplicationFile_21H2**  The total number of objects of this type present on this device.
-- **DecisionApplicationFile_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_CU22H2**  The total number of objects of this type present on this device.
@@ -439,8 +423,6 @@ The following fields are available:
 - **DecisionDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_21H1**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionDevicePnp_21H2**  The total number of objects of this type present on this device.
-- **DecisionDevicePnp_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_CU22H2**  The total number of objects of this type present on this device.
@@ -461,8 +443,6 @@ The following fields are available:
 - **DecisionDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_21H1**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionDriverPackage_21H2**  The total number of objects of this type present on this device.
-- **DecisionDriverPackage_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_CU22H2**  The total number of objects of this type present on this device.
@@ -483,8 +463,6 @@ The following fields are available:
 - **DecisionMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoBlock_21H2**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoBlock_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_CU22H2**  The total number of objects of this type present on this device.
@@ -502,8 +480,6 @@ The following fields are available:
 - **DecisionMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPassive_21H2**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPassive_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_CU22H2**  The total number of objects of this type present on this device.
@@ -521,8 +497,6 @@ The following fields are available:
 - **DecisionMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPostUpgrade_21H2**  The total number of objects of this type present on this device.
-- **DecisionMatchingInfoPostUpgrade_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_CU22H2**  The total number of objects of this type present on this device.
@@ -540,8 +514,6 @@ The following fields are available:
 - **DecisionMediaCenter_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_21H1**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionMediaCenter_21H2**  The total number of objects of this type present on this device.
-- **DecisionMediaCenter_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_CU22H2**  The total number of objects of this type present on this device.
@@ -557,8 +529,6 @@ The following fields are available:
 - **DecisionSModeState_20H1**  The total number of objects of this type present on this device.
 - **DecisionSModeState_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSModeState_21H1**  The total number of objects of this type present on this device.
-- **DecisionSModeState_21H2**  The total number of objects of this type present on this device.
-- **DecisionSModeState_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSModeState_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionSModeState_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSModeState_CU22H2**  The total number of objects of this type present on this device.
@@ -577,8 +547,6 @@ The following fields are available:
 - **DecisionSystemBios_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_21H1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionSystemBios_21H2**  The total number of objects of this type present on this device.
-- **DecisionSystemBios_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_CU22H2**  The total number of objects of this type present on this device.
@@ -597,8 +565,6 @@ The following fields are available:
 - **DecisionSystemDiskSize_20H1**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_21H1**  The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_21H2**  The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_CU22H2**  The total number of objects of this type present on this device.
@@ -614,8 +580,6 @@ The following fields are available:
 - **DecisionSystemMemory_20H1**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_21H1**  The total number of objects of this type present on this device.
-- **DecisionSystemMemory_21H2**  The total number of objects of this type present on this device.
-- **DecisionSystemMemory_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_CU22H2**  The total number of objects of this type present on this device.
@@ -632,8 +596,6 @@ The following fields are available:
 - **DecisionSystemProcessorCpuCores_20H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_21H1**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_21H2**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_CU22H2**  The total number of objects of this type present on this device.
@@ -649,8 +611,6 @@ The following fields are available:
 - **DecisionSystemProcessorCpuModel_20H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_21H1**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_21H2**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_CU22H2**  The total number of objects of this type present on this device.
@@ -666,8 +626,6 @@ The following fields are available:
 - **DecisionSystemProcessorCpuSpeed_20H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_21H1**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_21H2**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_CU22H2**  The total number of objects of this type present on this device.
@@ -684,8 +642,6 @@ The following fields are available:
 - **DecisionTest_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_21H1**  The total number of objects of this type present on this device.
 - **DecisionTest_21H1Setup**  The total number of objects of this type present on this device.
-- **DecisionTest_21H2**  The total number of objects of this type present on this device.
-- **DecisionTest_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionTest_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_CU22H2**  The total number of objects of this type present on this device.
@@ -701,8 +657,6 @@ The following fields are available:
 - **DecisionTpmVersion_20H1**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_21H1**  The total number of objects of this type present on this device.
-- **DecisionTpmVersion_21H2**  The total number of objects of this type present on this device.
-- **DecisionTpmVersion_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_CU22H2**  The total number of objects of this type present on this device.
@@ -718,8 +672,6 @@ The following fields are available:
 - **DecisionUefiSecureBoot_20H1**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_21H1**  The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_21H2**  The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_CO21H2**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_CO21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_CU22H2**  The total number of objects of this type present on this device.
@@ -760,8 +712,6 @@ The following fields are available:
 - **Wmdrm_20H1Setup**  The total number of objects of this type present on this device.
 - **Wmdrm_21H1**  The total number of objects of this type present on this device.
 - **Wmdrm_21H1Setup**  The total number of objects of this type present on this device.
-- **Wmdrm_21H2**  The total number of objects of this type present on this device.
-- **Wmdrm_21H2Setup**  The total number of objects of this type present on this device.
 - **Wmdrm_CO21H2**  The total number of objects of this type present on this device.
 - **Wmdrm_CO21H2Setup**  The total number of objects of this type present on this device.
 - **Wmdrm_CU22H2**  The total number of objects of this type present on this device.
