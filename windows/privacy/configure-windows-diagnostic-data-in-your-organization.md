@@ -1,6 +1,6 @@
 ---
 description: Use this article to make informed decisions about how you can configure diagnostic data in your organization.
-title: Configure Windows diagnostic data in your organization (Windows 10)
+title: Configure Windows diagnostic data in your organization (Windows 10 and Windows 11)
 keywords: privacy
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -26,7 +26,7 @@ ms.date: 09/08/2021
 - Windows 10 Professional
 - Windows Server 2016 and newer
 
-This article applies to Windows 10, Windows Server, Surface Hub, and HoloLens diagnostic data only. It describes the types of diagnostic data sent back to Microsoft and the ways you can manage it within your organization. Microsoft uses the data to quickly identify and address issues affecting its customers.
+This article applies to Windows 11, Windows 10, Windows Server, Surface Hub, and HoloLens diagnostic data only. It describes the types of diagnostic data sent back to Microsoft and the ways you can manage it within your organization. Microsoft uses the data to quickly identify and address issues affecting its customers.
 
 ## Overview
 
@@ -76,7 +76,7 @@ All diagnostic data is encrypted using Transport Layer Security (TLS) and uses c
 
 ### Endpoints
 
-The following table lists the endpoints related to how you can manage the collection and control of diagnostic data. For more information around the endpoints that are used to send data back to Microsoft, see [Manage connection endpoints for Windows 10 Enterprise, version 20H2](manage-windows-20h2-endpoints.md).
+The following table lists the endpoints related to how you can manage the collection and control of diagnostic data. For more information around the endpoints that are used to send data back to Microsoft, see [Manage connection endpoints for Windows 10 Enterprise, version 21H1](manage-windows-21h1-endpoints.md).
 
 | Windows service | Endpoint |
 | - | - |
