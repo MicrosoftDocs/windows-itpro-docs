@@ -27,7 +27,6 @@ Drive-by DMA attacks can lead to disclosure of sensitive information residing on
 
 This feature does not protect against DMA attacks via 1394/FireWire, PCMCIA, CardBus, ExpressCard, and so on.
 
-For Thunderbolt DMA protection on earlier Windows versions and platforms that lack support for Kernel DMA Protection, please refer to [Intel Thunderbolt™ 3 Security documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf).
 
 ## Background
 
