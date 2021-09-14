@@ -22,7 +22,7 @@ ms.date: 5/21/2021
 **Applies to**
 
 - Windows 11 Enterprise
-- Windows 10 Enterprise, version 1607 and newer
+- Windows 10 Enterprise, version 1607 and later
 - Windows Server 2016
 - Windows Server 2019
 
