@@ -124,7 +124,7 @@ For more details, see [Manage connections from Windows operating system componen
 
 Some Windows components, apps, and related services transfer data to Microsoft network endpoints. An administrator may want to block these endpoints for their organization to meet their specific compliance objectives.
 
-[Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H1-endpoints.md) and [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md)provides a list of endpoints for the latest Windows 10 and Windows 11 releases, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the Windows Privacy site under the **Manage Windows connection endpoints** section of the left-hand navigation menu.
+[Manage connection endpoints for Windows 10, version 21H2](manage-windows-21H1-endpoints.md) and [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md) provide a list of endpoints for the latest Windows 10 and Windows 11 releases, along with descriptions of any functionality that would be impacted by restricting data collection. Details for additional Windows versions can be found on the Windows Privacy site under the **Manage Windows connection endpoints** section of the left-hand navigation menu.
 
 #### _2.3.4 Limited functionality baseline_
 
@@ -144,7 +144,7 @@ Windows 10, version 1803 and newer allows users to change their diagnostic data 
 
 #### _2.3.7 Diagnostic data: Managing device-based data delete_
 
-Windows 10, version 1809 and newer allows a user to delete diagnostic data collected from their device by using **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button under the **Delete diagnostic data** heading. An administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData) PowerShell cmdlet.
+Windows 10, version 1809 and newer, and Windows 11 allow a user to delete diagnostic data collected from their device by using **Settings** > **Privacy** > **Diagnostic & feedback** and clicking the **Delete** button under the **Delete diagnostic data** heading. An administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData) PowerShell cmdlet.
 
 An administrator can disable a user’s ability to delete their device’s diagnostic data by setting the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Disable deleting diagnostic data** or the MDM policy `DisableDeviceDelete`.
 
@@ -155,9 +155,9 @@ An administrator can disable a user’s ability to delete their device’s diagn
 
 **Applies to:**
 
-- Windows 10 Enterprise, Pro, Education editions, version 1809 with July 2021 update and newer
+- Windows 10 (version 1809 with July 2021 update and newer) and Windows 11 Enterprise, Pro, Education editions
 
-The Windows diagnostic data processor configuration enables IT administrators to be the controller, as defined by the European Union General Data Protection Regulation (GDPR), for the Windows diagnostic data collected from Windows 10 devices that are Azure Active Directory (AAD) joined and meet the configuration requirements. For more information, see [Enable Windows diagnostic data processor configuration](configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration) in [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md). Windows diagnostic data does not include data processed by Microsoft in connection with providing service-based capabilities.
+The Windows diagnostic data processor configuration enables IT administrators to be the controller, as defined by the European Union General Data Protection Regulation (GDPR), for the Windows diagnostic data collected from Windows 10 and Windows 11 devices that are Azure Active Directory (AAD) joined and meet the configuration requirements. For more information, see [Enable Windows diagnostic data processor configuration](configure-windows-diagnostic-data-in-your-organization.md#enable-windows-diagnostic-data-processor-configuration) in [Configure Windows diagnostic data in your organization](configure-windows-diagnostic-data-in-your-organization.md). Windows diagnostic data does not include data processed by Microsoft in connection with providing service-based capabilities.
 
 The Windows diagnostic data collected from devices enabled with the Windows diagnostic data processor configuration may be associated with a specific AAD User ID or device ID. The Windows diagnostic data processor configuration provides you with controls that help respond to data subject requests (DSRs) to delete diagnostic data, at user account closure, for a specific AAD User ID. Additionally, you’re able to execute an export DSR for diagnostic data related to a specific AAD User ID. For more information, see [The process for exercising data subject rights](#3-the-process-for-exercising-data-subject-rights). Microsoft also will accommodate a tenant account closure, either because you decide to close your Azure or Azure AD tenant account, or because you decide you no longer wish to be the data controller for Windows diagnostic data, but still wish to remain an Azure customer.
 
@@ -175,7 +175,7 @@ For more information on how Microsoft can help you honor rights and fulfill obli
 
 ## 3. The process for exercising data subject rights
 
-This section discusses the different methods Microsoft provides for users and administrators to exercise data subject rights for data collected from a Windows 10 device.
+This section discusses the different methods Microsoft provides for users and administrators to exercise data subject rights for data collected from a Windows 10 or Windows 11 device.
 
 For IT administrators who have devices using the Windows diagnostic data processor configuration, refer to the [Data Subject Requests for the GDPR and CCPA](/compliance/regulatory/gdpr-dsr-windows). Otherwise proceed to the sections below.
 
@@ -188,7 +188,7 @@ Users can delete their device-based data by going to **Settings** > **Privacy** 
 
 ### 3.2 View
 
-The [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) provides a view into the diagnostic data being collected from a Windows 10 device. Administrators can also use the [Get-DiagnosticData](microsoft-diagnosticdataviewer.md#install-and-use-the-diagnostic-data-viewer-for-powershell) PowerShell cmdlet.
+The [Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) provides a view into the diagnostic data being collected from a Windows 10 or Windows 11 device. Administrators can also use the [Get-DiagnosticData](microsoft-diagnosticdataviewer.md#install-and-use-the-diagnostic-data-viewer-for-powershell) PowerShell cmdlet.
 
 >[!Note]
 >If the Windows diagnostic data processor configuration is enabled, IT administrators can view the diagnostic data that is associated with a user from the admin portal.
@@ -240,11 +240,11 @@ An administrator can configure privacy-related settings, such as choosing to onl
 
 ### 5.4 Microsoft Managed Desktop
 
-[Microsoft Managed Desktop (MMD)](/microsoft-365/managed-desktop/service-description/) is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows 10 Enterprise edition, Office 365 ProPlus, and Microsoft security services.
+[Microsoft Managed Desktop (MMD)](/microsoft-365/managed-desktop/service-description/) is a service that provides your users with a secure modern experience and always keeps devices up to date with the latest versions of Windows 10 and Windows 11 Enterprise edition, Office 365 ProPlus, and Microsoft security services.
 
 ### 5.5 Update Compliance
 
-[Update Compliance](/windows/deployment/update/update-compliance-monitor) is a service that enables organizations to monitor security, quality and feature updates for Windows 10 Professional, Education, and Enterprise editions, and view a report of device and update issues related to compliance that need attention. Update Compliance uses Windows 10 diagnostic data for all its reporting.
+[Update Compliance](/windows/deployment/update/update-compliance-monitor) is a service that enables organizations to monitor security, quality and feature updates for Windows 10 and Windows 11 Professional, Education, and Enterprise editions, and view a report of device and update issues related to compliance that need attention. Update Compliance uses Windows 10 and Windows 11 diagnostic data for all its reporting.
 
 ## Additional Resources
 
