@@ -94,13 +94,13 @@ You represent signal rules in XML.  Each signal rule has an starting and ending 
 ```
 
 ### Signal element
-Each rule element has a **signal** element.  All signal elements have a **type** element and value. Windows 10, version 1709 supports the **ipConfig** and **bluetooth** type values.
+Each rule element has a **signal** element.  All signal elements have a **type** element and value. Windows 10, version 1709 or later supports the **ipConfig** and **bluetooth** type values.
 
 
 |Attribute|Value|
 |---------|-----|
-| type| "bluetooth" or "ipConfig" (Windows 10, version 1709)| 
-| type| "wifi" (Windows 10, version 1803)
+| type| "bluetooth" or "ipConfig" (Windows 10, version 1709) or later| 
+| type| "wifi" (Windows 10, version 1803 or later) 
 
 #### Bluetooth
 You define the bluetooth signal with additional attributes in the signal element. The bluetooth configuration does not use any other elements. You can end the signal element with short ending tag "\/>".
@@ -222,7 +222,7 @@ The fully qualified domain name of your organization's internal DNS suffix where
 #### Wi-Fi
 
 **Applies to:**
--   Windows 10, version 1803
+-   Windows 10, version 1803 or later
 
 You define Wi-Fi signals using one or more wifi elements.  Each element has a string value.  Wifi elements do not have attributes or nested elements.
 
@@ -324,7 +324,7 @@ This example configures the same as example 2 using compounding And elements.  T
 ```
 
 #### Example 4 
-This example configures Wi-Fi as a trusted signal (Windows 10, version 1803)
+This example configures Wi-Fi as a trusted signal (Windows 10, version 1803 or later)
 
 ```xml
 <rule schemaVersion="1.0"> 
