@@ -5,12 +5,10 @@ ms.reviewer:
 author: denisebmsft
 ms.author: deniseb
 manager: dansimp 
-ms.prod: w10
 audience: ITPro
 ms.topic: conceptual
 ms.date: 09/10/2021
 ms.localizationpriority: medium
-ms.collection: 
 ms.custom: 
 f1.keywords: NOCSH 
 ms.mktglfcycl: deploy

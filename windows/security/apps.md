@@ -4,7 +4,6 @@ description: Get an overview of application security in Windows 11
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

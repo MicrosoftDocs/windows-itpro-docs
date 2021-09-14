@@ -5,7 +5,6 @@ ms.reviewer:
 ms.topic: article
 manager: dansimp
 ms.author: deniseb
-ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

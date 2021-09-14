@@ -8,7 +8,7 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.prod: w11
+ms.prod: w10
 ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 

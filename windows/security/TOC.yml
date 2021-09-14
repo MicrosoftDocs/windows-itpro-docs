@@ -242,9 +242,6 @@
      href: identity-protection\configure-s-mime.md
    - name: Windows Credential Theft Mitigation Guide Abstract
      href: identity-protection\windows-credential-theft-mitigation-guide-abstract.md 
-- name: Secured identity
-  href: identity.md
-  items:
 - name: Cloud services
   items:
    - name: Overview
@@ -263,7 +260,35 @@
      - name: Azure Virtual Desktop (need link)
        href: https://docs.microsoft.com/windows/whats-new/windows-11
 - name: User protection
+  href: identity.md
   items:
+    - name: Windows Hello for Business
+      href: identity-protection/hello-for-business/index.yml
+    - name: Windows credential theft mitigation guide
+      href: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
+    - name: Enterprise Certificate Pinning
+      href: identity-protection/enterprise-certificate-pinning.md
+    - name: Protect derived domain credentials with Credential Guard
+      href: identity-protection/credential-guard/credential-guard.md
+      items: 
+        - name: How Credential Guard works
+          href: identity-protection/credential-guard/credential-guard-how-it-works.md
+        - name: Credential Guard Requirements
+          href: identity-protection/credential-guard/credential-guard-requirements.md
+        - name: Manage Credential Guard
+          href: identity-protection/credential-guard/credential-guard-manage.md
+        - name: Hardware readiness tool
+          href: identity-protection/credential-guard/dg-readiness-tool.md
+        - name: Credential Guard protection limits
+          href: identity-protection/credential-guard/credential-guard-protection-limits.md
+        - name: Considerations when using Credential Guard
+          href: identity-protection/credential-guard/credential-guard-considerations.md
+        - name: "Credential Guard: Additional mitigations"
+          href: identity-protection/credential-guard/additional-mitigations.md
+        - name: "Credential Guard: Known issues"
+          href: identity-protection/credential-guard/credential-guard-known-issues.md
+    - name: Protect Remote Desktop credentials with Remote Credential Guard
+      href: identity-protection/remote-credential-guard.md
     - name: Technical support policy for lost or forgotten passwords
       href: identity-protection/password-support-policy.md
     - name: Access Control Overview
@@ -296,33 +321,6 @@
               href: identity-protection/user-account-control/user-account-control-security-policy-settings.md
             - name: User Account Control Group Policy and registry key settings
               href: identity-protection/user-account-control/user-account-control-group-policy-and-registry-key-settings.md
-    - name: Windows Hello for Business
-      href: identity-protection/hello-for-business/index.yml
-    - name: Windows credential theft mitigation guide
-      href: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
-    - name: Enterprise Certificate Pinning
-      href: identity-protection/enterprise-certificate-pinning.md
-    - name: Protect derived domain credentials with Credential Guard
-      href: identity-protection/credential-guard/credential-guard.md
-      items: 
-        - name: How Credential Guard works
-          href: identity-protection/credential-guard/credential-guard-how-it-works.md
-        - name: Credential Guard Requirements
-          href: identity-protection/credential-guard/credential-guard-requirements.md
-        - name: Manage Credential Guard
-          href: identity-protection/credential-guard/credential-guard-manage.md
-        - name: Hardware readiness tool
-          href: identity-protection/credential-guard/dg-readiness-tool.md
-        - name: Credential Guard protection limits
-          href: identity-protection/credential-guard/credential-guard-protection-limits.md
-        - name: Considerations when using Credential Guard
-          href: identity-protection/credential-guard/credential-guard-considerations.md
-        - name: "Credential Guard: Additional mitigations"
-          href: identity-protection/credential-guard/additional-mitigations.md
-        - name: "Credential Guard: Known issues"
-          href: identity-protection/credential-guard/credential-guard-known-issues.md
-    - name: Protect Remote Desktop credentials with Remote Credential Guard
-      href: identity-protection/remote-credential-guard.md
     - name: Smart Cards
       href: identity-protection/smart-cards/smart-card-windows-smart-card-technical-reference.md
       items: 
