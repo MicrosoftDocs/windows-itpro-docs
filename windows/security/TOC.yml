@@ -230,19 +230,18 @@
   items:
    - name: Overview
      href: cloud.md
-     items:
-     - name: Modern device management with Windows 11
-       href: mdm-windows.md
-     - name: Windows 11 secured-core devices (need link)
-       href: https://docs.microsoft.com/windows/whats-new/windows-11
-     - name: Windows 365 Cloud PCs (need link)
-       href: https://docs.microsoft.com/windows/whats-new/windows-11
-     - name: Windows 365 for Enterprise (need link)
-       href: https://docs.microsoft.com/windows/whats-new/windows-11
-     - name: Windows 365 for Business (need link)
-       href: https://docs.microsoft.com/windows/whats-new/windows-11
-     - name: Azure Virtual Desktop (need link)
-       href: https://docs.microsoft.com/windows/whats-new/windows-11
+   - name: Modern device management with Windows 11
+     href: mdm-windows.md
+   - name: Windows 11 secured-core devices (need link)
+     href: https://docs.microsoft.com/windows/whats-new/windows-11
+   - name: Windows 365 Cloud PCs (need link)
+     href: https://docs.microsoft.com/windows/whats-new/windows-11
+   - name: Windows 365 for Enterprise (need link)
+     href: https://docs.microsoft.com/windows/whats-new/windows-11
+   - name: Windows 365 for Business (need link)
+     href: https://docs.microsoft.com/windows/whats-new/windows-11
+   - name: Azure Virtual Desktop (need link)
+     href: https://docs.microsoft.com/windows/whats-new/windows-11
 - name: User protection
   items:
     - name: Technical support policy for lost or forgotten passwords
