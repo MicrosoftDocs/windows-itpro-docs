@@ -19,7 +19,7 @@ ms.date: 12/17/2020
  **Applies to**
 
 - Windows 11
-- 
+
 In addition to the endpoints listed for [Windows 11 Enterprise](manage-windows-11-endpoints.md), the following endpoints are available on other non-Enterprise editions of Windows 11.
 
 The following methodology was used to derive the network endpoints:

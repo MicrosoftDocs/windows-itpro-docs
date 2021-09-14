@@ -14,7 +14,7 @@ manager: robsize
 ms.date: 12/1/2020
 ---
 
-# Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server
+# Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services using Microsoft Intune MDM Server
 
 **Applies to**
 
