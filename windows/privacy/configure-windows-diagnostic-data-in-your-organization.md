@@ -116,7 +116,7 @@ Here’s a summary of the types of data that is included with each setting:
 
 ### Diagnostic data off
 
-This setting was previously labeled as **Security**. When you configure this setting, no Windows diagnostic data is sent from your device. This is only available on Windows Server, Windows 10 Enterprise, and Windows 10 Education. If you choose this setting, devices in your organization will still be secure.
+This setting was previously labeled as **Security**. When you configure this setting, no Windows diagnostic data is sent from your device. This is only available on Windows Server, Windows 10 Enterprise, and Windows 10 Education, and Windows 11. If you choose this setting, devices in your organization will still be secure.
 
 >[!NOTE]
 > If your organization relies on Windows Update, the minimum recommended setting is **Required diagnostic data**. Because no Windows Update information is collected when diagnostic data is off, important information about update failures is not sent. Microsoft uses this information to fix the causes of those failures and improve the quality of our updates.
@@ -125,7 +125,7 @@ This setting was previously labeled as **Security**. When you configure this set
 
 Required diagnostic data, previously labeled as **Basic**, gathers a limited set of data that’s critical for understanding the device and its configuration. This data helps to identify problems that can occur on a specific hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a specific driver version.
 
-This is the default setting for Windows 10 Education editions, as well as all desktop editions starting with Windows 10, version 1903.
+This is the default setting for Windows 10 Education editions, the desktop editions starting with Windows 10, version 1903, and Windows 11.
 
 Required diagnostic data includes:
 
