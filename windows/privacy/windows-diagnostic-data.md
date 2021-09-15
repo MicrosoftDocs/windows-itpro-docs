@@ -1,5 +1,5 @@
 ---
-title: Windows 10, version 1709 and Windows 11 and newer optional diagnostic data (Windows 10)
+title: Windows 10, version 1709 and Windows 11 and later optional diagnostic data (Windows 10)
 description: Use this article to learn about the types of optional diagnostic data that is collected.
 keywords: privacy,Windows 10
 ms.prod: w10
@@ -15,7 +15,7 @@ ms.topic: article
 ms.reviewer: 
 ---
 
-# Windows 10, version 1709 and newer and Windows 11 optional diagnostic data
+# Windows 10, version 1709 and later and Windows 11 optional diagnostic data
 
 Applies to:
 - Windows 11
