@@ -91,7 +91,7 @@ The following provides information on the current configurations:
 
 ## New Windows diagnostic data processor configuration
 
-Starting in Windows 10 Education, Professional, and Enterprise editions, version 1809 with July 2021 update and later, enterprise customers will now have a new option for controlling their Windows diagnostic data for their Azure Active Directory joined devices.
+Starting in Windows 10 Education, Professional, and Enterprise editions, version 1809 with July 2021 update and later and Windows 11 enterprise customers will now have a new option for controlling their Windows diagnostic data for their Azure Active Directory joined devices.
 
 Previously, enterprise customers had two options in managing their Windows diagnostic data: 1) allow Microsoft to be the [controller](/compliance/regulatory/gdpr#terminology) of that data and responsible for determining the purposes and means of the processing of Windows diagnostic data in order to improve the Windows 10 operating system and deliver analytical services, or 2) turn off diagnostic data flows altogether.
 

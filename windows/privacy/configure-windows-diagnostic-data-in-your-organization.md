@@ -76,7 +76,7 @@ All diagnostic data is encrypted using Transport Layer Security (TLS) and uses c
 
 ### Endpoints
 
-The following table lists the endpoints related to how you can manage the collection and control of diagnostic data. For more information around the endpoints that are used to send data back to Microsoft, see [Manage connection endpoints for Windows 10 Enterprise, version 21H1](manage-windows-21h1-endpoints.md).
+The following table lists the endpoints related to how you can manage the collection and control of diagnostic data. For more information around the endpoints that are used to send data back to Microsoft, see [Manage connection endpoints for Windows 10 Enterprise, version 21H1](manage-windows-21h1-endpoints.md) and and [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md).
 
 | Windows service | Endpoint |
 | - | - |
@@ -125,7 +125,7 @@ This setting was previously labeled as **Security**. When you configure this set
 
 Required diagnostic data, previously labeled as **Basic**, gathers a limited set of data that’s critical for understanding the device and its configuration. This data helps to identify problems that can occur on a specific hardware or software configuration. For example, it can help determine if crashes are more frequent on devices with a specific amount of memory or that are running a specific driver version.
 
-This is the default setting for Windows 10 Education editions, the desktop editions starting with Windows 10, version 1903, and Windows 11.
+This is the default setting for Windows 10 Education editions, the desktop editions starting with Windows 10, version 1903 and Windows 11.
 
 Required diagnostic data includes:
 
@@ -158,7 +158,7 @@ Required diagnostic data includes:
 In Windows 10 and Windows Server 2019, enhanced diagnostic data includes data about the websites you browse, how Windows and apps are used and how they perform, and device activity. The additional data helps Microsoft to fix and improve products and services for all users.
 
 >[!Important]
->This diagnostic data setting is not available on Windows 11 and Windows Server 2022 and has been replaced with policies that can control the amount of optional diagnostic data that is sent. More information on these settings are avaialble in the Manage enterprise diagnostic data section of this document.
+>This diagnostic data setting is not available on Windows 11 and Windows Server 2022 and has been replaced with policies that can control the amount of optional diagnostic data that is sent. More information on these settings are available in the Manage enterprise diagnostic data section of this document.
 
 When you choose to send enhanced diagnostic data, required diagnostic data will always be included, and we collect the following additional information:
 

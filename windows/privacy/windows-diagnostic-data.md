@@ -82,7 +82,7 @@ This type of data includes details about the device, its configuration and conne
 
 - Data about device properties, such as the operating system version and available memory, is used to determine whether the device is due to, and able to, receive a Windows update.
 - Data about device peripherals is used to determine whether a device has installed drivers that might be negatively impacted by a Windows update.
-- Data about which devices, peripherals, and settings are most-used by customers, is used to prioritize Windows 10  and Windows 11improvements to determine the greatest positive impact to the most Windows 10 users.  
+- Data about which devices, peripherals, and settings are most-used by customers, is used to prioritize Windows 10  and Windows 11 improvements to determine the greatest positive impact to the most Windows 10 and Windows 11 users.  
 
 **With (optional) Tailored experiences:**<br>
 If a user has enabled Tailored experiences on the device, [Pseudonymized](#pseudo) Device, Connectivity, and Configuration data from Windows 10 and Windows 11 is used by Microsoft to [personalize](#personalize), [recommend](#recommend), and [offer](#offer) Microsoft products and services to Windows 10 and Windows 11 users. Also, if a user has enabled Tailored experiences on the device, [Pseudonymized](#pseudo) Device, Connectivity, and Configuration data from Windows 10 and Windows 11 is used by Microsoft to [promote](#promote) third-party Windows apps, services, hardware, and peripherals to Windows 10  and Windows 11users. For example:
@@ -184,9 +184,9 @@ This type of data includes details about the usage of the device, operating syst
 ### Data Use for Product and Service Usage data
 
 **For Diagnostics:**<br>
-[Pseudonymized](#pseudo) Product and Service Usage data from Windows 10 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and related Microsoft product and services. For example:
+[Pseudonymized](#pseudo) Product and Service Usage data from Windows 10 and Windows 11 is used by Microsoft to [provide](#provide) and [improve](#improve) Windows 10 and Windows 11 and related Microsoft product and services. For example:
 
-- Data about the specific apps that are in-use when an error occurs is used to troubleshoot and repair issues with Windows features and Microsoft apps. 
+- Data about the specific apps that are in-use when an error occurs is used to troubleshoot and repair issues with Windows features and Microsoft apps.
 - Data about the specific apps that are most-used by customers, is used to prioritize Windows 10 and Windows 11 improvements to determine the greatest positive impact to the most Windows 10 and Windows 11 users.
 - Data about whether devices have Suggestions turned off from the **Settings Phone** screen is to improve the Suggestions feature.
 - Data about whether a user canceled the authentication process in their browser is used to help troubleshoot issues with and improve the authentication process.
@@ -441,7 +441,7 @@ This type of data gathers details about the voice, inking, and typing input feat
 - Data about alternate words shown and selected by the user after right-clicking is used to improve the word recommendation feature.
 - Data about autocorrected words that were restored back to the original word by the user is used to improve the autocorrect feature.
 - Data about whether Narrator detected and recognized a touch gesture is used to improve touch gesture recognition.
-- Data about handwriting samples sent from the Handwriting Panel is used to help Microsoft improve handwriting recognition. 
+- Data about handwriting samples sent from the Handwriting Panel is used to help Microsoft improve handwriting recognition.
 
 **With (optional) Tailored experiences:**
 

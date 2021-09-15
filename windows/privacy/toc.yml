@@ -31,7 +31,7 @@
           href: basic-level-windows-diagnostic-events-and-fields-1703.md
     - name: Optional Windows diagnostic data events and fields
       items:
-        - name: Windows 10, version 1709 and newer and Windows 11 optional diagnostic data
+        - name: Windows 10, version 1709 and later and Windows 11 optional diagnostic data
           href: windows-diagnostic-data.md
         - name: Windows 10, version 1703 optional diagnostic data
           href: windows-diagnostic-data-1703.md

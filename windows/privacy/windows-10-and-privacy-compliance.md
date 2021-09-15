@@ -61,7 +61,7 @@ The following table provides an overview of the Windows 10 and Windows 11 privac
 
 ### 1.2 Data collection monitoring
 
-[Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) is a Microsoft Store app (available in Windows 10, version 1803 and later and Windows 11) that lets a user review the Windows diagnostic data that is being collected on their Windows 10 device and sent to Microsoft in real-time. DDV groups the information into simple categories that describe the data that’s being collected.
+[Diagnostic Data Viewer (DDV)](diagnostic-data-viewer-overview.md) is a Microsoft Store app (available in Windows 10, version 1803 and later and Windows 11) that lets a user review the Windows diagnostic data that is being collected on their Windows 10 or Windows 11 device and sent to Microsoft in real-time. DDV groups the information into simple categories that describe the data that’s being collected.
 
 An administrator can also use the Diagnostic Data Viewer for PowerShell module to view the diagnostic data collected from the device instead of using the Diagnostic Data Viewer UI. The [Diagnostic Data Viewer for PowerShell Overview](microsoft-diagnosticdataviewer.md) provides further information.
 
