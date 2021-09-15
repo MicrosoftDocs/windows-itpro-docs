@@ -483,6 +483,8 @@ items:
               href: policy-csp-admx-filesys.md
             - name: ADMX_FolderRedirection
               href: policy-csp-admx-folderredirection.md
+            - name: ADMX_FramePanes
+              href: policy-csp-admx-framepanes.md
             - name: ADMX_Globalization
               href: policy-csp-admx-globalization.md
             - name: ADMX_GroupPolicy

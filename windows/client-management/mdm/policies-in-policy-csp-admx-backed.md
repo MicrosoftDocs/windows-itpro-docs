@@ -291,6 +291,8 @@ ms.date: 10/08/2020
 - [ADMX_FolderRedirection/LocalizeXPRelativePaths_2](./policy-csp-admx-folderredirection.md#admx-folderredirection-localizexprelativepaths-2)
 - [ADMX_FolderRedirection/PrimaryComputer_FR_1](./policy-csp-admx-folderredirection.md#admx-folderredirection-primarycomputer-fr-1)
 - [ADMX_FolderRedirection/PrimaryComputer_FR_2](./policy-csp-admx-folderredirection.md#admx-folderredirection-primarycomputer-fr-2)
+- [ADMX_FramePanes/NoReadingPane](./policy-csp-admx-framepanes.md#admx-framepanes-noreadingpane)
+- [ADMX_FramePanes/NoPreviewPane](./policy-csp-admx-framepanes.md#admx-framepanes-nopreviewpane)
 - [ADMX_Globalization/BlockUserInputMethodsForSignIn](./policy-csp-admx-globalization.md#admx-globalization-blockuserinputmethodsforsignin)
 - [ADMX_Globalization/CustomLocalesNoSelect_1](./policy-csp-admx-globalization.md#admx-globalization-customlocalesnoselect-1)
 - [ADMX_Globalization/CustomLocalesNoSelect_2](./policy-csp-admx-globalization.md#admx-globalization-customlocalesnoselect-2)
