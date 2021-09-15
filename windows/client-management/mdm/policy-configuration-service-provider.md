@@ -1177,6 +1177,16 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_FramePanes policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-framepanes.md#admx-framepanes-noreadingpane" id="admx-framepanes-noreadingpane">ADMX_FramePanes/NoReadingPane</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-framepanes.md#admx-framepanes-nopreviewpane" id="admx-framepanes-nopreviewpane">ADMX_FramePanes/NoPreviewPane</a>
+  </dd>
+<dl>
+
 ### ADMX_Help policies
 <dl>
   <dd>
