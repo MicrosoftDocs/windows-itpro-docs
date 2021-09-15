@@ -1187,6 +1187,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 <dl>
 
+### ADMX_FTHSVC policies
 ### ADMX_Help policies
 <dl>
   <dd>
