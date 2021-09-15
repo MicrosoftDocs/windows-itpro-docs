@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/14/2021
+ms.date: 09/15/2021
 ms.localizationpriority: medium
 ---
 
@@ -20,19 +20,19 @@ ms.localizationpriority: medium
 
 - Windows 11
 
-Starting with Windows 11, how administrators deploy apps to devices is updated. The Microsoft Store app is available on Windows 11, and allows users to install public and retail apps. The Microsoft Store app on Windows 11 doesn't have a private store for organization-specific apps.
+Starting in Windows 11, administrators have new options to deploy apps to devices. The Microsoft Store will continue to allow users to install public and retail apps.
 
-Instead of a private store in the Microsoft Store app, you install the Company Portal app on devices. The Company Portal app replaces the private store in Microsoft Store for Business.
+The Company Portal app is the private app repository for organizations and enterprises. It supports more app types and scenarios.
 
-When the Company Portal app is installed, users open it, and see the apps your organization makes available in your private app repository. Users select an app, and install it.
+When the Company Portal app is installed, users open it, and see the apps your organization makes available. Users select an app, and install it.
 
 This article discusses the Company Portal app installation options, adding organization apps, and more.
 
 ## Before you begin
 
-As organizations become more global, and to support employees working from anywhere, it's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. For Microsoft, that includes using Microsoft Endpoint Manager. Endpoint Manager includes Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
+The Company Portal app is included with Microsoft Endpoint Manager (MEM). Endpoint Manager is a Mobile Device Management (MDM) and Mobile Application manager (MAM) provider. It help manages your devices, and manage apps on your devices.
 
-In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
+If you're not managing your devices using an MDM provider, the following resources may help you get started:
 
 - [Microsoft Endpoint Manager overview](/mem/endpoint-manager-overview)
 - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
@@ -51,7 +51,7 @@ To install the Company Portal app, you have some options:
 
 - **Use Microsoft Endpoint Manager**: Endpoint Manager includes Microsoft Intune (cloud) and Configuration Manager (on-premises). With both services, you can add Microsoft Store apps, like the Company Portal app. Once added, you create an app policy that deploys and installs the Company Portal app to your devices.
 
-  - This option is preferred, and is the most scalable option, especially if you have many devices. When you create the app policy, the policy can be deployed to many users and many devices simultaneously. Admins can also use reporting to make sure the app is installed on organization-managed devices.
+  - This option is preferred, and is the most scalable, especially if you have many devices. When you create the app policy, the policy can be deployed to many users and many devices simultaneously. Admins can also use reporting to make sure the app is installed on organization-managed devices.
 
   - On co-managed devices, which are managed by Microsoft Intune + Configuration Manager together, the Company Portal app shows your Intune apps and your Configuration Manager apps. So, all apps are shown in one place.
 
@@ -77,7 +77,7 @@ To install the Company Portal app, you have some options:
 
 - **Use the Microsoft Store**: The Company Portal app is available in the Microsoft Store, and can be downloaded by your users. Users open the Microsoft Store app on their device, search for **Company Portal**, and install it. When it's installed, users might be prompted to sign in with their organization account (`user@contoso.com`). When the app opens, they see a list of approved organization apps that can be installed.
 
-  - This option requires users to install the app themselves. If you have many users, the recommended approach is to deploy the Company Portal app using Endpoint Manager or using Windows Autopilot.
+  - This option requires users to install the Company Portal app themselves. If you have many users, the recommended approach is to deploy the Company Portal app using Endpoint Manager or using Windows Autopilot.
 
   - When the Company Portal app is installed from the Microsoft Store app, by default, it's automatically updated. Users can also open the Microsoft Store, go to the **Library**, and check for updates. Within the Company Portal app, they can use the update feature to get app fixes and feature updates on the organization apps you added.
 
