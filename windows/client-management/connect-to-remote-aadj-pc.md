@@ -1,5 +1,5 @@
 ---
-title: Connect to remote Azure Active Directory-joined PC (Windows 10)
+title: Connect to remote Azure Active Directory-joined PC (Windows 10 and Windows 11)
 description: You can use Remote Desktop Connection to connect to an Azure AD-joined PC.
 keywords: ["MDM", "device management", "RDP", "AADJ"]
 ms.prod: w10
@@ -9,7 +9,7 @@ ms.pagetype: devices
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
-ms.date: 08/02/2018
+ms.date: 09/14/2021
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
@@ -21,6 +21,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
+- Windows 11
 
 From its release, Windows 10 has supported remote connections to PCs joined to Active Directory. Starting in Windows 10, version 1607, you can also connect to a remote PC that is [joined to Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join). Starting in Windows 10, version 1809, you can [use biometrics to authenticate to a remote desktop session](/windows/whats-new/whats-new-windows-10-version-1809#remote-desktop-with-biometrics).
 
@@ -28,7 +29,7 @@ From its release, Windows 10 has supported remote connections to PCs joined to A
 
 ## Set up
 
-- Both PCs (local and remote) must be running Windows 10, version 1607 or later. Remote connections to an Azure AD-joined PC running earlier versions of Windows 10 are not supported.
+- Both PCs (local and remote) must be running Windows 10, version 1607 or later or Windows 11. Remote connections to an Azure AD-joined PC running earlier versions of Windows 10 are not supported.
 - Your local PC (where you are connecting from) must be either Azure AD-joined or Hybrid Azure AD-joined if using Windows 10, version 1607 and above, or [Azure AD registered](/azure/active-directory/devices/concept-azure-ad-register) if using Windows 10, version 2004 and above. Remote connections to an Azure AD-joined PC from an unjoined device or a non-Windows 10 device are not supported. 
 - The local PC and remote PC must be in the same Azure AD tenant. Azure AD B2B guests are not supported for Remote desktop. 
 

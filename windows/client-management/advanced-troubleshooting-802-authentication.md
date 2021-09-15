@@ -21,7 +21,7 @@ This article includes general troubleshooting for 802.1X wireless and wired clie
  
 ## Scenarios
 
-This troubleshooting technique applies to any scenario in which wireless or wired connections with 802.1X authentication is attempted and then fails to establish. The workflow covers Windows 7 through Windows 10 for clients, and Windows Server 2008 R2 through Windows Server 2012 R2 for NPS.
+This troubleshooting technique applies to any scenario in which wireless or wired connections with 802.1X authentication is attempted and then fails to establish. The workflow covers Windows 7 through Windows 10 (and Windows 11) for clients, and Windows Server 2008 R2 through Windows Server 2012 R2 for NPS.
  
 ## Known issues
 
