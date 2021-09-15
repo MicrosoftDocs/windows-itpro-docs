@@ -1188,6 +1188,12 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
 
 ### ADMX_FTHSVC policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-fthsvc.md#admx-fthsvc-wdiscenarioexecutionpolicy" id="admx-fthsvc-wdiscenarioexecutionpolicy">ADMX_FTHSVC/WdiScenarioExecutionPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_Help policies
 <dl>
   <dd>
@@ -1201,6 +1207,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-help.md#admx-help-restrictrunfromhelp-comp" id="admx-help-restrictrunfromhelp-comp">ADMX_Help/RestrictRunFromHelp_Comp</a>
+  </dd>
+</dl>
+
+### ADMX_HotSpotAuth policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-hotspotauth.md#admx-hotspotauth-hotspotauth_enable" id="admx-hotspotauth-hotspotauth_enable">ADMX_HotSpotAuth/HotspotAuth_Enable</a>
   </dd>
 </dl>
 
