@@ -1,6 +1,6 @@
 ---
 title: Add or remove pinned apps on the Start menu in Windows 11 | Microsoft Docs
-description: Export start layout to LayoutModification.json that includes pinned apps. Add or remove pinned apps, and use the JSON text in an MDM policy to deploy a custom Start menu layout to Windows 11 devices.
+description: Export Start layout to LayoutModification.json with pinned apps, add or remove pinned apps, and use the JSON text in an MDM policy to deploy a custom Start menu layout to Windows 11 devices.
 ms.assetid: 
 manager: dougeby
 ms.author: mandia
@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/13/2021
+ms.date: 09/14/2021
 ms.localizationpriority: medium
 ---
 
@@ -42,7 +42,7 @@ This article shows you how to export an existing Start menu layout, and use the 
   - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
   - [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
 
-## Start menu features and sections
+## Start menu features and areas
 
 In Windows 11, the Start menu is redesigned with a simplified set of apps that are arranged in a grid of pages. There aren't folders, groups, or different-sized app icons:
 
@@ -50,11 +50,11 @@ In Windows 11, the Start menu is redesigned with a simplified set of apps that a
 
 Start has the following areas:
 
-- **Pinned**: This area shows pinned apps, or a subset of all of the apps installed on the device. You can create a list of pinned apps you want on the devices using the **ConfigureStartPins** policy. **ConfigureStartPins** overrides the entire layout, which also removes apps that are pinned by default.
+- **Pinned**: Shows pinned apps, or a subset of all of the apps installed on the device. You can create a list of pinned apps you want on the devices using the **ConfigureStartPins** policy. **ConfigureStartPins** overrides the entire layout, which also removes apps that are pinned by default.
 
   This article shows you how to use the **ConfigureStartPins** policy.
 
-- **All apps**: Users select this option to see an alphabetical list of all the apps on the device. This section can't be customized using the JSON file. You can use the `Start/ShowOrHideMostUsedApps` CSP, which is a new policy available in Windows 11.
+- **All apps**: Users select this option to see an alphabetical list of all the apps on the device. This section can't be customized using the JSON file. You can use the `Start/ShowOrHideMostUsedApps` CSP, which is a policy to configure the "Most used" section at the top of the all apps list.
 - **Recommended**: Shows recently opened files and recently installed apps. This section can't be customized using the JSON file. To prevent files from showing in this section, you can use the [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists). This CSP also hides recent files that show from the taskbar.
 
   You can use an MDM provider, like Microsoft Intune, to manage the [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists) on your devices. For more information on the Start menu settings you can configure in a Microsoft Intune policy, see [Windows 10 (and later) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
@@ -74,7 +74,7 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
 
 1. Create a folder to save the `.json` file. For example, create the `C:\Layouts` folder.
 2. On a Windows 11 device, open the Windows PowerShell app.
-3. Run the following cmdletBe sure to name the file `LayoutModification.json`.
+3. Run the following cmdlet. Name the file `LayoutModification.json`.
 
     ```powershell
     Export-StartLayout -Path "C:\Layouts\LayoutModification.json" 
@@ -83,7 +83,7 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
 ### Get the pinnedList JSON
 
 1. Open the `LayoutModification.json` file in a JSON editor, such as Visual Studio Code or Notepad. For more information, see [edit JSON with Visual Studio Code](https://code.visualstudio.com/docs/languages/json).
-2. In the file, you see the `pinnedList` section. This section includes all the apps that are pinned. Copy the `pinnedList` content in the JSON file. You'll use it in the next section.
+2. In the file, you see the `pinnedList` section. This section includes all of the pinned apps. Copy the `pinnedList` content in the JSON file. You'll use it in the next section.
 
     In the following example, you see that Microsoft Edge, Microsoft Word, the Microsoft Store app, and Notepad are pinned:
 
