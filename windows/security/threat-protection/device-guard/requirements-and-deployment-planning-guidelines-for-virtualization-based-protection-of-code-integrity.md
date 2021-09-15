@@ -1,6 +1,6 @@
 ---
 title: Deployment guidelines for Windows Defender Device Guard (Windows 10)
-description: Plan your deployment of Hypervisor Protected Code Integrity (aka Memory Integrity). Learn about hardware requirements, deployment approaches, code signing and code integrity policies.
+description: Plan your deployment of Hypervisor-Protected Code Integrity (aka Memory Integrity). Learn about hardware requirements, deployment approaches, code signing and code integrity policies.
 keywords: virtualization, security, malware
 ms.prod: m365-security
 ms.mktglfcycl: deploy
