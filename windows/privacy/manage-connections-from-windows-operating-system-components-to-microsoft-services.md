@@ -75,7 +75,7 @@ The following table lists management options for each setting,  For Windows 10 (
 | [15. Offline maps](#bkmk-offlinemaps) | ![Check mark.](images/checkmark.png) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [17. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | |
-| [18. Settings > Privacy and security](#bkmk-settingssection) | | | |
+| [18. Settings > Privacy & security](#bkmk-settingssection) | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.1 General](#bkmk-general) | ![Check mark.](images/checkmark.png) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.2 Location](#bkmk-priv-location) | ![Check mark.](images/checkmark.png) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.3 Camera](#bkmk-priv-camera) | ![Check mark.](images/checkmark.png) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -131,7 +131,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [12. Microsoft Account](#bkmk-microsoft-account) | | | ![Check mark](images/checkmark.png) |
 | [14. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [18. Settings > Privacy and security](#bkmk-settingssection) | | | |
+| [18. Settings > Privacy & security](#bkmk-settingssection) | | | |
 | [19. Software Protection Platform](#bkmk-spp) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [22. Teredo](#bkmk-teredo) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [24. Microsoft Defender Antivirus](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -187,7 +187,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [15. Offline maps](#bkmk-offlinemaps) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [17. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | |
-| [18. Settings > Privacy and security](#bkmk-settingssection) | | | |
+| [18. Settings > Privacy & security](#bkmk-settingssection) | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.1 General](#bkmk-general) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.2 Location](#bkmk-priv-location) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.3 Camera](#bkmk-priv-camera) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -806,9 +806,9 @@ To remove the Sticky notes app:
 
 - Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage**
 
-### <a href="" id="bkmk-settingssection"></a>18. Settings &gt; Privacy and security
+### <a href="" id="bkmk-settingssection"></a>18. Settings &gt; Privacy & security
 
-Use Settings &gt; Privacy and security to configure some settings that may be important to your organization. Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
+Use Settings &gt; Privacy & security to configure some settings that may be important to your organization. Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
 
 - [18.1 General](#bkmk-general)
 
@@ -1269,7 +1269,7 @@ In the **Other Devices** area, you can choose whether devices that aren't paired
 
 To turn off **Let apps automatically share and sync info with wireless devices that don't explicitly pair with your PC, tablet, or phone**:
 
-- Turn off the feature in the UI by going to Settings > Privacy and security > Other devices > "Communicate with unpaired devices. Let apps automatically share and sync info with wireless devices that don't explicitly pair with your PC, tablet, or phone" and **Turn it OFF**.
+- Turn off the feature in the UI by going to Settings > Privacy & security > Other devices > "Communicate with unpaired devices. Let apps automatically share and sync info with wireless devices that don't explicitly pair with your PC, tablet, or phone" and **Turn it OFF**.
 
   -or-
 
