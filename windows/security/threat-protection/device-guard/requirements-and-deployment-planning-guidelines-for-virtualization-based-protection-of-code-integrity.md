@@ -21,7 +21,7 @@ ms.technology: mde
 **Applies to** 
 - Windows 10
 
-Computers must meet certain hardware, firmware, and software requirements in order to take advantage of Hypervisor Protected Code Integrity (HVCI,) a  virtualization-based security (VBS) feature in Windows. HVCI is referred to as Memory Integrity under the Core Isolation section of the Windows security settings. Computers lacking these requirements can still be protected by Windows Defender Application Control (WDAC) policies—the difference is that those computers will not be as hardened against certain threats.
+Computers must meet certain hardware, firmware, and software requirements in order to take advantage of Hypervisor-Protected Code Integrity (HVCI), a  virtualization-based security (VBS) feature in Windows. HVCI is referred to as Memory Integrity under the Core Isolation section of the Windows security settings. Computers lacking these requirements can still be protected by Windows Defender Application Control (WDAC) policies—the difference is that those computers will not be as hardened against certain threats.
 
 For example, hardware that includes CPU virtualization extensions and SLAT will be hardened against malware that attempts to gain access to the kernel, but without protected BIOS options such as “Boot only from internal hard drive,” the computer could be booted (by a malicious person who has physical access) into an operating system on bootable media.
 
