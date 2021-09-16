@@ -125,7 +125,11 @@
                 - name: Decode Measured Boot logs to track PCR changes
                   href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
      - name: Configure S/MIME for Windows
-       href: identity-protection/configure-s-mime.md     
+       href: identity-protection/configure-s-mime.md    
+     - name: Security policy settings
+       href: threat-protection/security-policy-settings/security-policy-settings.md
+     - name: Security auditing
+       href: threat-protection/auditing/security-auditing-overview.md
      - name: Windows Information Protection (WIP)
        href: information-protection/windows-information-protection/protect-enterprise-data-using-wip.md
        items: 
@@ -173,6 +177,21 @@
               href: information-protection/windows-information-protection/using-owa-with-wip.md
         - name: Fine-tune WIP Learning
           href: information-protection/windows-information-protection/wip-learning.md
+        - name: Windows security baselines
+          href: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
+          items: 
+            - name: Security Compliance Toolkit
+              href: threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10.md
+            - name: Get support
+              href: threat-protection/windows-security-configuration-framework/get-support-for-security-baselines.md     
+     - name: More Windows security
+       items: 
+        - name: Override Process Mitigation Options to help enforce app-related security policies
+          href: threat-protection/override-mitigation-options-for-app-related-security-policies.md
+        - name: Use Windows Event Forwarding to help with intrusion detection
+          href: threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection.md
+        - name: Block untrusted fonts in an enterprise
+          href: threat-protection/block-untrusted-fonts-in-enterprise.md
    - name: Network security
      items:
      - name: VPN technical guide
@@ -220,6 +239,61 @@
         href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exploit-protection
       - name: Microsoft Defender for Endpoint
         href: https://docs.microsoft.com/microsoft-365/security/defender-endpoint
+      - name: Security intelligence
+        href: threat-protection/intelligence/index.md
+        items: 
+        - name: Understand malware & other threats
+          href: threat-protection/intelligence/understanding-malware.md
+          items: 
+            - name: Prevent malware infection
+              href: threat-protection/intelligence/prevent-malware-infection.md
+            - name: Malware names
+              href: threat-protection/intelligence/malware-naming.md
+            - name: Coin miners
+              href: threat-protection/intelligence/coinminer-malware.md
+            - name: Exploits and exploit kits
+              href: threat-protection/intelligence/exploits-malware.md
+            - name: Fileless threats
+              href: threat-protection/intelligence/fileless-threats.md
+            - name: Macro malware
+              href: threat-protection/intelligence/macro-malware.md
+            - name: Phishing
+              href: threat-protection/intelligence/phishing.md
+            - name: Ransomware
+              href: /security/compass/human-operated-ransomware
+            - name: Rootkits
+              href: threat-protection/intelligence/rootkits-malware.md
+            - name: Supply chain attacks
+              href: threat-protection/intelligence/supply-chain-malware.md
+            - name: Tech support scams
+              href: threat-protection/intelligence/support-scams.md
+            - name: Trojans
+              href: threat-protection/intelligence/trojans-malware.md
+            - name: Unwanted software
+              href: threat-protection/intelligence/unwanted-software.md
+            - name: Worms
+              href: threat-protection/intelligence/worms-malware.md
+        - name: How Microsoft identifies malware and PUA
+          href: threat-protection/intelligence/criteria.md
+        - name: Submit files for analysis
+          href: threat-protection/intelligence/submission-guide.md
+        - name: Safety Scanner download
+          href: threat-protection/intelligence/safety-scanner-download.md
+        - name: Industry collaboration programs
+          href: threat-protection/intelligence/cybersecurity-industry-partners.md
+          items: 
+            - name: Virus information alliance
+              href: threat-protection/intelligence/virus-information-alliance-criteria.md
+            - name: Microsoft virus initiative
+              href: threat-protection/intelligence/virus-initiative-criteria.md
+            - name: Coordinated malware eradication
+              href: threat-protection/intelligence/coordinated-malware-eradication.md
+        - name: Information for developers
+          items: 
+            - name: Software developer FAQ
+              href: threat-protection/intelligence/developer-faq.yml
+            - name: Software developer resources
+              href: threat-protection/intelligence/developer-resources.md
 - name: Application security
   href: apps.md
   items:

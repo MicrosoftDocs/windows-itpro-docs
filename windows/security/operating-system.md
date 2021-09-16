@@ -41,4 +41,3 @@ Windows Security app | The Windows built-in security application found in setitn
 | Exploit protection | Learn more about [Exploit protection](/microsoft-365/security/defender-endpoint/exploit-protection). | 
 | Microsoft Defender for Endpoint | Learn more about [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint). |
 
-<!-- DanSimp to follow on on Bluetooth, Domain Name System (DNS) security, Windows Wi-Fi, Transport Layer Security (TLS)-->
