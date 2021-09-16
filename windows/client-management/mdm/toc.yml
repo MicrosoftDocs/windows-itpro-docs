@@ -439,12 +439,20 @@ items:
               href: policy-csp-admx-ctrlaltdel.md
             - name: ADMX_DataCollection
               href: policy-csp-admx-datacollection.md
+            - name: ADMX_DCOM
+              href: policy-csp-admx-dcom.md
             - name: ADMX_Desktop
               href: policy-csp-admx-desktop.md
+            - name: ADMX_DeviceCompat
+              href: policy-csp-admx-devicecompat.md
+            - name: ADMX_DeviceGuard
+              href: policy-csp-admx-deviceguard.md   
             - name: ADMX_DeviceInstallation
               href: policy-csp-admx-deviceinstallation.md
             - name: ADMX_DeviceSetup
               href: policy-csp-admx-devicesetup.md
+            - name: ADMX_DFS
+              href: policy-csp-admx-dfs.md
             - name: ADMX_DigitalLocker
               href: policy-csp-admx-digitallocker.md
             - name: ADMX_DistributedLinkTracking
@@ -457,6 +465,8 @@ items:
               href: policy-csp-admx-eaime.md
             - name: ADMX_EncryptFilesonMove
               href: policy-csp-admx-encryptfilesonmove.md
+            - name: ADMX_EventLogging
+              href: policy-csp-admx-eventlogging.md  
             - name: ADMX_EnhancedStorage
               href: policy-csp-admx-enhancedstorage.md
             - name: ADMX_ErrorReporting
@@ -465,10 +475,16 @@ items:
               href: policy-csp-admx-eventforwarding.md
             - name: ADMX_EventLog
               href: policy-csp-admx-eventlog.md
+            - name: ADMX_EventViewer
+              href: policy-csp-admx-eventviewer.md  
             - name: ADMX_Explorer
               href: policy-csp-admx-explorer.md
+            - name: ADMX_ExternalBoot
+              href: policy-csp-admx-externalboot.md  
             - name: ADMX_FileRecovery
               href: policy-csp-admx-filerecovery.md
+            - name: ADMX_FileRevocation
+              href: policy-csp-admx-filerevocation.md  
             - name: ADMX_FileServerVSSProvider
               href: policy-csp-admx-fileservervssprovider.md
             - name: ADMX_FileSys
