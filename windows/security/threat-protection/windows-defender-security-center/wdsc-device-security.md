@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 10/02/2018
+ms.date: 
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Device security
 
 **Applies to**
 
-- Windows 10, version 1803 and later
+- Windows 10
+- Windows 11
 
 The **Device security** section contains information and settings for built-in device security.
 

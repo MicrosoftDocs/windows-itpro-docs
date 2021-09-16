@@ -45,6 +45,10 @@
        href: cryptography-certificate-mgmt.md
      - name: The Windows Security app
        href: threat-protection/windows-defender-security-center/windows-defender-security-center.md
+     - name: Security policy settings
+       href: threat-protection/security-policy-settings/security-policy-settings.md
+     - name: Security auditing
+       href: threat-protection/auditing/security-auditing-overview.md
    - name: Encryption and data protection 
      href: encryption-data-protection.md
      items:
@@ -126,72 +130,13 @@
                   href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
      - name: Configure S/MIME for Windows
        href: identity-protection/configure-s-mime.md    
-     - name: Security policy settings
-       href: threat-protection/security-policy-settings/security-policy-settings.md
-     - name: Security auditing
-       href: threat-protection/auditing/security-auditing-overview.md
-     - name: Windows Information Protection (WIP)
-       href: information-protection/windows-information-protection/protect-enterprise-data-using-wip.md
-       items: 
-        - name: Create a WIP policy using Microsoft Intune
-          href: information-protection/windows-information-protection/overview-create-wip-policy.md
-          items: 
-            - name: Create a WIP policy with MDM using the Azure portal for Microsoft Intune
-              href: information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md
-              items: 
-                - name: Deploy your WIP policy using the Azure portal for Microsoft Intune
-                  href: information-protection/windows-information-protection/deploy-wip-policy-using-intune-azure.md
-                - name: Associate and deploy a VPN policy for WIP using the Azure portal for Microsoft Intune
-                  href: information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure.md
-            - name: Create and verify an EFS Data Recovery Agent (DRA) certificate
-              href: information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md
-            - name: Determine the Enterprise Context of an app running in WIP
-              href: information-protection/windows-information-protection/wip-app-enterprise-context.md
-        - name: Create a WIP policy using Microsoft Endpoint Configuration Manager
-          href: information-protection/windows-information-protection/overview-create-wip-policy-configmgr.md
-          items: 
-            - name: Create and deploy a WIP policy using Microsoft Endpoint Configuration Manager
-              href: information-protection/windows-information-protection/create-wip-policy-using-configmgr.md
-            - name: Create and verify an EFS Data Recovery Agent (DRA) certificate
-              href: information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md
-            - name: Determine the Enterprise Context of an app running in WIP
-              href: information-protection/windows-information-protection/wip-app-enterprise-context.md
-        - name: Mandatory tasks and settings required to turn on WIP
-          href: information-protection/windows-information-protection/mandatory-settings-for-wip.md
-        - name: Testing scenarios for WIP
-          href: information-protection/windows-information-protection/testing-scenarios-for-wip.md
-        - name: Limitations while using WIP
-          href: information-protection/windows-information-protection/limitations-with-wip.md
-        - name: How to collect WIP audit event logs
-          href: information-protection/windows-information-protection/collect-wip-audit-event-logs.md
-        - name: General guidance and best practices for WIP
-          href: information-protection/windows-information-protection/guidance-and-best-practices-wip.md
-          items: 
-            - name: Enlightened apps for use with WIP
-              href: information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip.md
-            - name: Unenlightened and enlightened app behavior while using WIP
-              href: information-protection/windows-information-protection/app-behavior-with-wip.md
-            - name: Recommended Enterprise Cloud Resources and Neutral Resources network settings with WIP
-              href: information-protection/windows-information-protection/recommended-network-definitions-for-wip.md
-            - name: Using Outlook Web Access with WIP
-              href: information-protection/windows-information-protection/using-owa-with-wip.md
-        - name: Fine-tune WIP Learning
-          href: information-protection/windows-information-protection/wip-learning.md
-        - name: Windows security baselines
-          href: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
-          items: 
-            - name: Security Compliance Toolkit
-              href: threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10.md
-            - name: Get support
-              href: threat-protection/windows-security-configuration-framework/get-support-for-security-baselines.md     
-     - name: More Windows security
-       items: 
-        - name: Override Process Mitigation Options to help enforce app-related security policies
-          href: threat-protection/override-mitigation-options-for-app-related-security-policies.md
-        - name: Use Windows Event Forwarding to help with intrusion detection
-          href: threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection.md
-        - name: Block untrusted fonts in an enterprise
-          href: threat-protection/block-untrusted-fonts-in-enterprise.md
+   - name: Windows security baselines
+     href: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
+     items: 
+      - name: Security Compliance Toolkit
+        href: threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10.md
+      - name: Get support
+        href: threat-protection/windows-security-configuration-framework/get-support-for-security-baselines.md     
    - name: Network security
      items:
      - name: VPN technical guide
@@ -294,6 +239,61 @@
               href: threat-protection/intelligence/developer-faq.yml
             - name: Software developer resources
               href: threat-protection/intelligence/developer-resources.md
+   - name: More Windows security
+     items: 
+      - name: Override Process Mitigation Options to help enforce app-related security policies
+        href: threat-protection/override-mitigation-options-for-app-related-security-policies.md
+      - name: Use Windows Event Forwarding to help with intrusion detection
+        href: threat-protection/use-windows-event-forwarding-to-assist-in-intrusion-detection.md
+      - name: Block untrusted fonts in an enterprise
+        href: threat-protection/block-untrusted-fonts-in-enterprise.md
+      - name: Windows Information Protection (WIP)
+        href: information-protection/windows-information-protection/protect-enterprise-data-using-wip.md
+        items: 
+         - name: Create a WIP policy using Microsoft Intune
+           href: information-protection/windows-information-protection/overview-create-wip-policy.md
+           items: 
+            - name: Create a WIP policy with MDM using the Azure portal for Microsoft Intune
+              href: information-protection/windows-information-protection/create-wip-policy-using-intune-azure.md
+              items: 
+                - name: Deploy your WIP policy using the Azure portal for Microsoft Intune
+                  href: information-protection/windows-information-protection/deploy-wip-policy-using-intune-azure.md
+                - name: Associate and deploy a VPN policy for WIP using the Azure portal for Microsoft Intune
+                  href: information-protection/windows-information-protection/create-vpn-and-wip-policy-using-intune-azure.md
+            - name: Create and verify an EFS Data Recovery Agent (DRA) certificate
+              href: information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md
+            - name: Determine the Enterprise Context of an app running in WIP
+              href: information-protection/windows-information-protection/wip-app-enterprise-context.md
+         - name: Create a WIP policy using Microsoft Endpoint Configuration Manager
+           href: information-protection/windows-information-protection/overview-create-wip-policy-configmgr.md
+           items: 
+            - name: Create and deploy a WIP policy using Microsoft Endpoint Configuration Manager
+              href: information-protection/windows-information-protection/create-wip-policy-using-configmgr.md
+            - name: Create and verify an EFS Data Recovery Agent (DRA) certificate
+              href: information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate.md
+            - name: Determine the Enterprise Context of an app running in WIP
+              href: information-protection/windows-information-protection/wip-app-enterprise-context.md
+         - name: Mandatory tasks and settings required to turn on WIP
+           href: information-protection/windows-information-protection/mandatory-settings-for-wip.md
+         - name: Testing scenarios for WIP
+           href: information-protection/windows-information-protection/testing-scenarios-for-wip.md
+         - name: Limitations while using WIP
+           href: information-protection/windows-information-protection/limitations-with-wip.md
+         - name: How to collect WIP audit event logs
+           href: information-protection/windows-information-protection/collect-wip-audit-event-logs.md
+         - name: General guidance and best practices for WIP
+           href: information-protection/windows-information-protection/guidance-and-best-practices-wip.md
+           items: 
+            - name: Enlightened apps for use with WIP
+              href: information-protection/windows-information-protection/enlightened-microsoft-apps-and-wip.md
+            - name: Unenlightened and enlightened app behavior while using WIP
+              href: information-protection/windows-information-protection/app-behavior-with-wip.md
+            - name: Recommended Enterprise Cloud Resources and Neutral Resources network settings with WIP
+              href: information-protection/windows-information-protection/recommended-network-definitions-for-wip.md
+            - name: Using Outlook Web Access with WIP
+              href: information-protection/windows-information-protection/using-owa-with-wip.md
+         - name: Fine-tune WIP Learning
+           href: information-protection/windows-information-protection/wip-learning.md
 - name: Application security
   href: apps.md
   items:
