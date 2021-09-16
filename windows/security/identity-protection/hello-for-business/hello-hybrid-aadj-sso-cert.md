@@ -323,7 +323,7 @@ Sign-in a domain controller with a minimum access equivalent to _Domain Admins_.
 3. Select **Trust this user for delegation to specified services only**.
 4. Select **Use any authentication protocol**.
 5. Click **Add**.
-6. Click **Users or Computers...**  Type the name of the _NDES Server_ you use to issue Windows Hello for Business authentication certificates to Azure AD joined devices.  From the **Avaiable services** list, select **HOST**.  Click **OK**.
+6. Click **Users or Computers...**  Type the name of the _NDES Server_ you use to issue Windows Hello for Business authentication certificates to Azure AD joined devices.  From the **Available services** list, select **HOST**.  Click **OK**.
    ![NDES Service delegation to NDES host.](images/aadjcert/ndessvcdelegation-host-ndes-spn.png)
 7. Repeat steps 5 and 6 for each NDES server using this service account. Click **Add**.
 8. Click **Users or computers...**  Type the name of the issuing certificate authority this NDES service account uses to issue Windows Hello for Business authentication certificates to Azure AD joined devices.  From the **Available services** list, select **dcom**.  Hold the **CTRL** key and select **HOST**. Click **OK**.
@@ -509,7 +509,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
    ```
    where **[fqdnHostName]** is the fully qualified internal DNS host name of the NDES server.
 
-A web page similar to the following should appear in your web browser.  If you do not see a similar page, or you get a **503 Service unavailable** message, ensure the NDES Service account has the proper user rights.  You can also review the application event log for events with the **NetworkDeviceEnrollmentSerice** source.
+A web page similar to the following should appear in your web browser.  If you do not see a similar page, or you get a **503 Service unavailable** message, ensure the NDES Service account has the proper user rights.  You can also review the application event log for events with the **NetworkDeviceEnrollmentService** source.
 
 ![NDES IIS Console: Source](images/aadjcert/ndes-https-website-test-01.png)
 

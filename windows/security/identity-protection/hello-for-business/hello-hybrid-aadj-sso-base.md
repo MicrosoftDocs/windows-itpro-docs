@@ -213,8 +213,8 @@ The web server is ready to host the CRL distribution point.  Now, configure the 
 4. On the **Extensions** tab, click **Add**.  Type the computer and share name you create for your CRL distribution point in [Configure the CDP file share](#configure-the-cdp-file-share).  For example, **\\\app\cdp$\\** (do not forget the trailing backwards slash).
 5. Select **\<CaName>** from the **Variable** list and click **Insert**.  Select **\<CRLNameSuffix>** from the **Variable** list and click **Insert**.  Select **\<DeltaCRLAllowed>** from the **Variable** list and click **Insert**.
 6. Type **.crl** at the end of the text in **Location**. Click **OK**.
-7. Select the CDP you just created.
-   ![CDP publishing location.](images/aadj/cdp-extension-complete-unc.png)
+7. Select the CDP you just created. <br>
+![CDP publishing location.](images/aadj/cdp-extension-complete-unc.png)
 8. Select **Publish CRLs to this location**.
 9. Select **Publish Delta CRLs to this location**.
 10. Click **Apply** save your selections.  Click **Yes** when ask to restart the service.  Click **OK** to close the properties dialog box.
@@ -262,7 +262,6 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 5. Review the information below the list of fields to confirm the new URL for the CRL distribution point is present in the certificate.  Click **OK**.</br>
 ![New Certificate with updated CDP.](images/aadj/dc-cert-with-new-cdp.png)
 
-
 ## Configure and Assign a Trusted Certificate Device Configuration Profile
 
 Your domain controllers have new certificate that include the new CRL distribution point.  Next, you need your enterprise root certificate so you can deploy it to Azure AD joined devices.  Deploying the enterprise root certificates to the device, ensures the device trusts any certificates issued by the certificate authority.  Without the certificate, Azure AD joined devices do not trust domain controller certificates and authentication fails. 
@@ -282,7 +281,7 @@ Steps you will perform include:
 ![Details tab and copy to file.](images/aadj/certlm-root-cert-details-tab.png)
 6. In the **Certificate Export Wizard**, click **Next**.  
 7. On the **Export File Format** page of the wizard, click **Next**.  
-8. On the **File to Export** page in the wizard, type the name and location of the root certificate and click **Next**. Click **Finish** and then click **OK** to close the success dialog box.
+8. On the **File to Export** page in the wizard, type the name and location of the root certificate and click **Next**. Click **Finish** and then click **OK** to close the success dialog box. <br>
 ![Export root certificate.](images/aadj/certlm-export-root-certificate.png)
 9. Click **OK**  two times to return to the **Certificate Manager** for the local computer.  Close the **Certificate Manager**.
 
