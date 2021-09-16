@@ -95,7 +95,7 @@ The VM host CPU must also meet Windows 11 [processor requirements](/windows-hard
 <b>\*</b> In-place upgrade of existing generation 1 VMs to Windows 11 is not possible.
 
 > [!NOTE]
-> Procedures to configure required VM settings depend on the VM host type. For VM hosts running Hyper-V, virtualization and TPM must be enabled in BIOS and the OS.
+> Procedures to configure required VM settings depend on the VM host type. For VM hosts running Hyper-V, virtualization (VT-x, VT-d) must be enabled in BIOS. Virtual TPM 2.0 is emulated in the guest VM independent of the Hyper-V host TPM presence or version.
 
 ## Next steps
 
