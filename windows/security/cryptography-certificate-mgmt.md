@@ -1,6 +1,6 @@
 ---
 title: Cryptography and Certificate Management
-description: Get an overview of cryptography and certificate management in Windows 11
+description: Get an overview of cryptography and certificate management in Windows
 search.appverid: MET150  
 author: denisebmsft
 ms.author: deniseb
@@ -18,13 +18,12 @@ f1.keywords: NOCSH
 
 # Cryptography and Certificate Management
 
-*This article describes cryptography and certificate management in Windows 11.*
 
 ## Cryptography
 
 Cryptography uses code to convert data so that only a specific recipient can read it by using a key. Cryptography enforces privacy to prevent anyone except the intended recipient from reading data, integrity to ensure data is free of tampering, and authentication that verifies identity to ensure that communication is secure. The cryptography stack in Windows extends from the chip to the cloud enabling Windows, applications, and services protect system and user secrets. 
 
-All cryptography on Windows 11 is Federal Information Processing Standards (FIPS) 140 certified. FIPS 140 certification ensures that US government approved algorithms are being used (RSA for signing, ECDH with NIST curves for key agreement, AES for symmetric encryption, and SHA2 for hashing), tests module integrity to prove that no tampering has occurred and proves the randomness for entropy sources.
+Cryptography in Windows is Federal Information Processing Standards (FIPS) 140 certified. FIPS 140 certification ensures that US government approved algorithms are being used (RSA for signing, ECDH with NIST curves for key agreement, AES for symmetric encryption, and SHA2 for hashing), tests module integrity to prove that no tampering has occurred and proves the randomness for entropy sources.
 
 Windows cryptographic modules provide low-level primitives such as:
 

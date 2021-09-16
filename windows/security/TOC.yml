@@ -224,7 +224,7 @@
   href: apps.md
   items:
    - name: Windows Defender Application Control and virtualization-based protection of code integrity
-     href: device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
+     href: threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
    - name: Windows Defender Application Control
      href: threat-protection\windows-defender-application-control\windows-defender-application-control.md
    - name: Microsoft Defender Application Guard
@@ -374,4 +374,4 @@
     - name: Microsoft Bug Bounty Program
       href: threat-protection/microsoft-bug-bounty-program.md
 - name: Windows Privacy
-  href: windows/privacy/windows-10-and-privacy-compliance.md
+  href: /windows/privacy/windows-10-and-privacy-compliance.md
