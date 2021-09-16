@@ -213,8 +213,8 @@ The web server is ready to host the CRL distribution point.  Now, configure the 
 4. On the **Extensions** tab, click **Add**.  Type the computer and share name you create for your CRL distribution point in [Configure the CDP file share](#configure-the-cdp-file-share).  For example, **\\\app\cdp$\\** (do not forget the trailing backwards slash).
 5. Select **\<CaName>** from the **Variable** list and click **Insert**.  Select **\<CRLNameSuffix>** from the **Variable** list and click **Insert**.  Select **\<DeltaCRLAllowed>** from the **Variable** list and click **Insert**.
 6. Type **.crl** at the end of the text in **Location**. Click **OK**.
-7. Select the CDP you just created. <br>
-![CDP publishing location.](images/aadj/cdp-extension-complete-unc.png)
+7. Select the CDP you just created.
+   ![CDP publishing location.](images/aadj/cdp-extension-complete-unc.png)
 8. Select **Publish CRLs to this location**.
 9. Select **Publish Delta CRLs to this location**.
 10. Click **Apply** save your selections.  Click **Yes** when ask to restart the service.  Click **OK** to close the properties dialog box.
