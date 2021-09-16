@@ -1,7 +1,7 @@
 {
   "redirections": [
     {
-      "source_path": "windows/configuration/customize-the-start-menu-layout-on-windows-11.md",
+      "source_path": "windows/configuration/use-json-customize-start-menu-windows.md",
       "redirect_url": "/windows/configuration/customize-start-menu-layout-windows-11",
       "redirect_document_id": false  
     },
