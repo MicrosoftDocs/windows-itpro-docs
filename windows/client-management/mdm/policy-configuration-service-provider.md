@@ -1144,6 +1144,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 <dl>
 
+### ADMX_Feeds policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-feeds.md#admx-feeds-feedsenabled" id="admx-feeds-feedsenabled">ADMX_Feeds/FeedsEnabled</a>
+  </dd>
+</dl>
+
 ### ADMX_FileRecovery policies
 <dl>
   <dd>
@@ -6022,14 +6029,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings" id="exploitguard-exploitprotectionsettings">ExploitGuard/ExploitProtectionSettings</a>
-  </dd>
-</dl>
-
-### Feeds policies
-
-<dl>
-  <dd>
-    <a href="./policy-csp-feeds.md#feeds-feedsenabled" id="feeds-feedsenabled">Feeds/FeedsEnabled</a>
   </dd>
 </dl>
 
