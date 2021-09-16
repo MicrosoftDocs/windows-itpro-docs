@@ -511,10 +511,10 @@ The following script helps you with the creation of the issuance transform rules
 
 - If you have multiple verified domain names (as shown in the Azure AD portal or via the Get-MsolDomains cmdlet), set the value of **$multipleVerifiedDomainNames** in the script to **$true**. Also make sure that you remove any existing issuerid claim that might have been created by Azure AD Connect or via other means. Here is an example for this rule:
 
-  ~~~
+  ```Claims Rule Language
     c:[Type == "http://schemas.xmlsoap.org/claims/UPN"]
     => issue(Type = "http://schemas.microsoft.com/ws/2008/06/identity/claims/issuerid", Value = regexreplace(c.Value, ".+@(?<domain>.+)",  "http://${domain}/adfs/services/trust/")); 
-  ~~~
+  ```
 
 - If you have already issued an **ImmutableID** claim  for user accounts, set the value of **$immutableIDAlreadyIssuedforUsers** in the script to **$true**.
 
