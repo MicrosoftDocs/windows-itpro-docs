@@ -705,6 +705,8 @@ items:
               href: policy-csp-experience.md
             - name: ExploitGuard
               href: policy-csp-exploitguard.md
+            - name: Feeds
+              href: policy-csp-feeds.md  
             - name: FileExplorer
               href: policy-csp-fileexplorer.md
             - name: Games
