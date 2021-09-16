@@ -15,7 +15,7 @@ manager: dansimp
 # Enable ADMX policies in MDM
 
 
-This is a step-by-step guide to configuring ADMX policies in MDM.
+Here's how to configure Group Policy administrative templates (ADMX policies) in Mobile Device Management (MDM).
 
 Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX policies)](./policies-in-policy-csp-admx-backed.md) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
 
@@ -63,7 +63,7 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 
 3.  Create the SyncML to enable the policy that does not require any parameter.  
 
-    In this example you configure **Enable App-V Client** to **Enabled**.
+    In this example, you configure **Enable App-V Client** to **Enabled**.
 
     > [!NOTE]
     > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
@@ -109,12 +109,12 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
 
       ![Publishing server 2 policy description.](images/admx-appv-policy-description.png)
 
-   3. Navigate to **C:\Windows\PolicyDefinitions** (default location of the admx files) and open appv.admx.
+   3. Navigate to **C:\Windows\PolicyDefinitions** (default location of the ADMX files) and open appv.admx.
 
    4. Search for GP name **Publishing_Server2_policy**.
 
 
-   5. Under **policy name="Publishing_Server2_Policy"** you can see the \<elements> listed. The text id and enum id represents the data id you need to include in the SyncML data payload. They correspond to the fields you see in GP Editor.
+   5. Under **policy name="Publishing_Server2_Policy"** you can see the \<elements> listed. The *text id* and *enum id* represents the *data id* you need to include in the SyncML data payload. They correspond to the fields you see in the Group Policy Editor.
     
       Here is the snippet from appv.admx:
 
@@ -206,9 +206,9 @@ See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https:/
       </policy>
       ```
 
-   6. From the \<elements>  tag, copy all the text id and enum id and create an XML with data id and value fields. The value field contains the configuration settings you would enter in the GP Editor.
+   6. From the **\<elements>**  tag, copy all of the *text id* and *enum id* and create an XML with *data id* and *value* fields. The *value* field contains the configuration settings that you would enter in the Group Policy Editor.
 
-      Here is the example XML for Publishing_Server2_Policy :
+      Here is the example XML for Publishing_Server2_Policy:
         
       ```xml
       <data id="Publishing_Server2_Name_Prompt" value="Name"/>
