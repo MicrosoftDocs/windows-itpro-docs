@@ -29,8 +29,8 @@
       href: threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md
     - name: System Guard Secure Launch and SMM protection
       href: threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md
-    - name: Protect derived domain credentials with Windows Defender Credential Guard
-      href: identity-protection/credential-guard/credential-guard.md
+    - name: Enable virtualization-based protection of code integrity
+      href: threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md    
     - name: Kernel DMA Protection
       href: information-protection/kernel-dma-protection-for-thunderbolt.md
 - name: Operating system security
