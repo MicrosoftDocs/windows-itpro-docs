@@ -1,6 +1,8 @@
 
 - name: Windows security
   href: index.yml
+- name: Windows and Zero Trust
+  href: zero-trust-windows-device-health.md
   expanded: true
 - name: Hardware security
   items: 
