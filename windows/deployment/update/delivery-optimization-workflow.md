@@ -1,6 +1,6 @@
 ---
 title: Delivery Optimization client-service communication explained
-manager: laurawi
+manager: dougeby
 description: Details of how Delivery Optimization communicates with the server when content is requested to download
 keywords: updates, downloads, network, bandwidth
 ms.prod: w10
