@@ -763,3 +763,5 @@
                       href: registry-global-object-access-auditing.md
                     - name: File System (Global Object Access Auditing)
                       href: file-system-global-object-access-auditing.md
+        - name: Windows security
+          href: /windows/security/index.yml

@@ -23,7 +23,7 @@ The [Zero Trust Principles](https://www.microsoft.com/security/business/zero-tru
 
 **Use least-privileged access**. Limit user access with just-in-time and just-enough-access, risk-based adaptive polices, and data protection to help secure data and maintain productivity.
 
-**Assume breach**. Assume breach operates in a manner that minimizes blast radius and segments access. Verify end-to-end encryption and use analytics to get visibility, drive threat detection, and improve defenses.
+**Assume breach**. Prevent attackers from obtaining access to minimize potential damage to data and systems. Protect privileged roles, verify end-to-end encryption, use analytics to get visibility, and drive threat detection to improve defenses.
 
 For Windows 11, the Zero Trust concept of verify explicitly applies to the risks introduced by both devices and users. Windows 11 provides IT administrators the attestation and measurements to determine whether a device meets requirements and can be trusted. And Windows 11 works out of the box with Microsoft Intune and Azure Active Directory, so access decisions and enforcement are seamless. Plus, IT Administrators can easily customize Windows 11 to meet specific user and policy requirements for access, privacy, compliance, and more.
 
@@ -39,7 +39,7 @@ A summary of the steps involved in attestation and Zero Trust on the device side
 
 1. During each step of the boot process, such as a file load, update of special variables, and more, information such as file hashes and signature are measured in the TPM PCRs. The measurements are bound by a [Trusted Computing Group specification](https://trustedcomputinggroup.org/resource/pc-client-platform-tpm-profile-ptp-specification/) (TCG) that dictates what events can be recorded and the format of each event.
 2. Once Windows has booted, the attestor/verifier requests the TPM to fetch the measurements stored in its Platform Configuration Register (PCR) alongside a TCG log. Both of these together form the attestation evidence that’s sent to the attestation service (learn more about the attestation service below).
-3. The TPM is verified by using the keys/cryptographic material available on the chipset with an [Azure Certificate Service](/windows-server/identity/ad-ds/manage/component-updates/tpm-key-attestation). 
+3. The TPM is verified by using the keys/cryptographic material available on the chipset with an [Azure Certificate Service](/windows-server/identity/ad-ds/manage/component-updates/tpm-key-attestation).
 4. This information is then sent to the attestation service in the cloud to verify that the device is safe. Microsoft Endpoint Manger (MEM) integrates with Microsoft Azure Attestation to review device health comprehensively and connect this information with AAD conditional access. This integration is key for Zero Trust solutions that help bind trust to an untrusted device.
 5. The attestation service does the following:
 
@@ -50,3 +50,7 @@ A summary of the steps involved in attestation and Zero Trust on the device side
 6. The attestation service returns an attestation report that contains information about the security features based on the policy configured in the attestation service.
 7. The device then sends the report to the MEM cloud to assess the trustworthiness of the platform according to the admin-configured device compliance rules.
 8. Conditional access, along with device-compliance state then decides to grant access to protected resource or not.
+
+## Additional Resources
+
+Learn more about Microsoft Zero Trust solutions in the [Zero Trust Guidance Center](/security/zero-trust/)

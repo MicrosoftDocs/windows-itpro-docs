@@ -347,3 +347,5 @@
                       href: synchronize-directory-service-data.md
                     - name: Take ownership of files or other objects
                       href: take-ownership-of-files-or-other-objects.md
+        - name: Windows security
+          href: /windows/security/index.yml
