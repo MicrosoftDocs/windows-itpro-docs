@@ -71,7 +71,7 @@ Here are some things you can do with Windows SIM:
 
 For a list of settings you can change, see [Unattended Windows Setup Reference](/windows-hardware/customize/desktop/unattend/) on the MSDN Hardware Dev Center.
 
-### Create a Windows image using Windows ICD
+### Create a provisioning package using Windows ICD
 
 Introduced in Windows 10, [Windows Imaging and Configuration Designer (ICD)](/windows/configuration/provisioning-packages/provisioning-install-icd) streamlines the customizing and provisioning of a Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) or Windows 10 IoT Core (IoT Core) image.
 
@@ -79,7 +79,6 @@ Here are some things you can do with Windows ICD:
 
 -   [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
 -   [Export a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)
--   [Build and deploy an image for Windows 10 for desktop editions](https://msdn.microsoft.com/library/windows/hardware/dn916105.aspx)
 
 ### IT Pro Windows deployment tools
 
