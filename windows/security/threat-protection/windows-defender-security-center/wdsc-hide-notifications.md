@@ -10,25 +10,18 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 07/23/2020
+ms.date: 
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Hide Windows Security app notifications
 
 **Applies to**
 
-- Windows 10, version 1809 and above
-
-**Audience**
-
-- Enterprise security administrators
-
-**Manageability available with**
-
-- Group Policy
+- Windows 10
+- Windows 11
 
 The Windows Security app is used by a number of Windows security features to provide notifications about the health and security of the machine. These include notifications about firewalls, antivirus products, Windows Defender SmartScreen, and others.
 

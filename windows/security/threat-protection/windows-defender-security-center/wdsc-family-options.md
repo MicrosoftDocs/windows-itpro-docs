@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 04/30/2018
+ms.date: 
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 
@@ -21,8 +21,8 @@ ms.technology: mde
 
 **Applies to**
 
-- Windows 10, version 1703 and later
-
+- Windows 10
+- Windows 11
 
 The **Family options** section contains links to settings and further information for parents of a Windows 10 PC. It is not generally intended for enterprise or business environments.
 

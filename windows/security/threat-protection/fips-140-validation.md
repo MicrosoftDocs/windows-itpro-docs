@@ -6780,7 +6780,7 @@ Version 6.3.9600</td>
 
 #### SP 800-132 Password-Based Key Derivation Function (PBKDF)
 
-<table border="1" cellpadding="0" summary="table" xmlns="http://www.w3.org/1999/xhtml">
+<table border="1" cellpadding="0">
   <tr>
     <td>
       <b>Modes / States / Key Sizes</b>

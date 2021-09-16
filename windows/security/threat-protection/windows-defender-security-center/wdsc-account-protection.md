@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 04/30/2018
+ms.date:
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 
@@ -21,8 +21,8 @@ ms.technology: mde
 
 **Applies to**
 
-- Windows 10, version 1803 and later
-
+- Windows 10
+- Windows 11
 
 The **Account protection** section contains information and settings for account protection and sign in. IT administrators and IT pros can get more information and documentation about configuration from the following:
 

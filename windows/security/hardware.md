@@ -1,6 +1,6 @@
 ---
 title: Windows hardware security
-description: Get an overview of hardware security in Windows
+description: Get an overview of hardware security in Windows 11 and Windows 10
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
