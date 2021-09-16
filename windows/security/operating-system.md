@@ -24,7 +24,7 @@ Use the links in the following table to learn more about the operating system se
 
 | Security Measures | Features & Capabilities | Description |
 |:---|:---|
-| System security | [Trusted Boot](trusted-boot.md) (includes Secure Boot and Measured Boot) |    | 
+| System security | Secure Boot and Trusted Boot  | Secure Boot and Trusted Boot help prevent malware and corrupted components from loading when a Windows 11 device is starting. Secure Boot starts with initial boot-up protection, and then Trusted Boot picks up the process. Together, Secure Boot and Trusted Boot help to ensure your Windows 11 system boots up safely and securely. <br/><br/>To learn more, see [Secure Boot and Trusted Boot](trusted-boot.md).    | 
 |   | [Cryptography and certificate management](cryptography-certificate-mgmt.md) |   |
 |   | [Windows Security app](threat-protection/windows-defender-security-center/windows-defender-security-center.md) |  |
 | Encryption and data protection | [Encryption and data protection in Windows 11](encryption-data-protection.md) |  |
