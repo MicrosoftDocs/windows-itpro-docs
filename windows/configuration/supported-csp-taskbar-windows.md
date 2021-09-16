@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/09/2021
+ms.date: 09/16/2021
 ms.localizationpriority: medium
 ---
 
@@ -33,7 +33,9 @@ For more general information, see [Configuration service provider (CSP) referenc
   - Local setting: Settings > Personalization > Start > Show recently opened items in Jump Lists on Start or the taskbar
 
 - [Start/NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#start-nopinningtotaskbar)
-  - Group policy: User Configuration\Administrative Templates\Start Menu and Taskbar\Do not allow pinning programs to the Taskbar or Removed pinned programs from the Taskbar? Which one??
+  - Group policy: ??
+    User Configuration\Administrative Templates\Start Menu and Taskbar\Do not allow pinning programs to the Taskbar 
+    --OR--
+    User Configuration\Administrative Templates\Start Menu and Taskbar\Removed pinned programs from the Taskbar
   - Local setting: None
 
-## ??Add an unsupported section??

@@ -7,7 +7,7 @@
         - name: Start menu
           items:
           - name: Customize Start menu layout
-            href: use-json-customize-start-menu-windows.md
+            href: customize-start-menu-layout-windows-11.md
           - name: Supported Start menu CSPs
             href: supported-csp-start-menu-layout-windows.md
         - name: Taskbar
@@ -72,7 +72,7 @@
       href: set-up-shared-or-guest-pc.md
     - name: Set up a kiosk on Windows 10 Mobile 
       href: mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md 
-    - name: Additional kiosk reference information
+    - name: Kiosk reference information
       items:
         - name: More kiosk methods and reference information
           href: kiosk-additional-reference.md
@@ -137,7 +137,7 @@
           href: cortana-at-work/cortana-at-work-testing-scenarios.md
         - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
           href: cortana-at-work/cortana-at-work-scenario-1.md
-        - name: Test scenario 2 - Perform a Bing search with Cortana
+        - name: Test scenario 2 - Run a Bing search with Cortana
           href: cortana-at-work/cortana-at-work-scenario-2.md
         - name: Test scenario 3 - Set a reminder
           href: cortana-at-work/cortana-at-work-scenario-3.md
@@ -145,9 +145,9 @@
           href: cortana-at-work/cortana-at-work-scenario-4.md
         - name: Test scenario 5 - Find out about a person
           href: cortana-at-work/cortana-at-work-scenario-5.md
-        - name: Test scenario 6 - Change your language and perform a quick search with Cortana
+        - name: Test scenario 6 - Change your language and run a quick search with Cortana
           href: cortana-at-work/cortana-at-work-scenario-6.md
-    - name: Send feedback about Cortana back to Microsoftr
+    - name: Send feedback about Cortana back to Microsoft
       href: cortana-at-work/cortana-at-work-feedback.md
     - name: Testing scenarios using Cortana in Windows 10, versions 1909 and earlier, with Microsoft 365 in your organization
       items:
@@ -157,13 +157,13 @@
           href: cortana-at-work/testing-scenarios-using-cortana-in-business-org.md
         - name: Test scenario 1 - Sign into Azure AD, enable the wake word, and try a voice query
           href: cortana-at-work/test-scenario-1.md
-        - name: Test scenario 2 - Perform a quick search with Cortana at work
+        - name: Test scenario 2 - Run a quick search with Cortana at work
           href: cortana-at-work/test-scenario-2.md
         - name: Test scenario 3 - Set a reminder for a specific location using Cortana at work
           href: cortana-at-work/test-scenario-3.md
         - name: Test scenario 4 - Use Cortana at work to find your upcoming meetings
           href: cortana-at-work/test-scenario-4.md
-        - name: Test scenario 5 - Use Cortana to send email to a co-worker
+        - name: Test scenario 5 - Use Cortana to send email to a coworker
           href: cortana-at-work/test-scenario-5.md
         - name: Test scenario 6 - Review a reminder suggested by Cortana based on what you’ve promised in email
           href: cortana-at-work/test-scenario-6.md
@@ -349,7 +349,7 @@
               href: ue-v/uev-deploy-uev-for-custom-applications.md
         - name: Administer UE-V
           items:
-            - name: UE-V administion guide
+            - name: UE-V administration guide
               href: ue-v/uev-administering-uev.md
             - name: Manage Configurations for UE-V
               items:

@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/09/2021
+ms.date: 09/16/2021
 ms.localizationpriority: medium
 ---
 
@@ -32,11 +32,13 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 ## Before you begin
 
-- There isn't a limit on the number of apps that you can pin. ??OEM docs say a max of 3 pinned apps?? In the XML file, add apps using the [Application User Model ID (AUMID)](./find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path (the local path to the app).
+- There isn't a limit on the number of apps that you can pin. In the XML file, add apps using the [Application User Model ID (AUMID)](./find-the-application-user-model-id-of-an-installed-app.md) or Desktop Application Link Path (the local path to the app).
 
-- If you add an app that's not provisioned for the user on the device, the pinned icon won't show on the taskbar.??Is this still true??
+- There are some situations that an app pinned in your XML file won't be pinned in the taskbar. For example, if an app isn't approved or installed for a user, then the pinned icon won't show on the taskbar.
 
 - The order of apps in the XML file dictates the order of pinned apps on the taskbar, from left to right, and to the right of any existing apps pinned by the user. If the OS is configured to use a right-to-left language, then the taskbar order is reversed.
+
+- Some classic Windows applications are packaged differently than they were in previous versions of Windows, including Notepad and File Explorer. Be sure to enter the correct AppID. For more information, see [Application User Model ID (AUMID)](./find-the-application-user-model-id-of-an-installed-app.md) and [Get the AUMID and Desktop app link path](#get-the-aumid-and-desktop-app-link-path) (in this article).
 
 - It's recommended to use a Mobile Device Management (MDM) provider. MDM providers help manage your devices, and help manage apps on your devices. For Microsoft, that includes using Microsoft Endpoint Manager. Endpoint Manager includes Microsoft Intune, which is a cloud service, and Configuration Manager, which is on-premises.
 
@@ -48,20 +50,21 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 ## Create the XML file
 
-1. In a text editor, such as Visual Studio Code, create a new XML file. To help you get started, you can copy and paste the following XML sample. The sample pins 2 apps to the taskbar - Microsoft Edge and File Explorer:
-
-    ??Need to confirm XML syntax since start doesn't use XML anymore??
+1. In a text editor, such as Visual Studio Code, create a new XML file. To help you get started, you can copy and paste the following XML sample. The sample pins two apps to the taskbar - File Explorer and the Command Prompt:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
     <LayoutModificationTemplate
+        xmlns="http://schemas.microsoft.com/Start/2014/LayoutModification"
+        xmlns:defaultlayout="http://schemas.microsoft.com/Start/2014/FullDefaultLayout"
+        xmlns:start="http://schemas.microsoft.com/Start/2014/StartLayout"
         xmlns:taskbar="http://schemas.microsoft.com/Start/2014/TaskbarLayout"
         Version="1">
       <CustomTaskbarLayoutCollection>
         <defaultlayout:TaskbarLayout>
           <taskbar:TaskbarPinList>
-            <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
+            <taskbar:UWA AppUserModelID="Microsoft.Windows.Explorer"/>
+            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Windows System\Command Prompt.lnk"/>
           </taskbar:TaskbarPinList>
         </defaultlayout:TaskbarLayout>
      </CustomTaskbarLayoutCollection>
@@ -73,7 +76,7 @@ This article shows you how to create the XML file, add apps to the XML, and depl
     - `<taskbar:UWA>`: Select this option for UWP apps. Add the [AUMID](./find-the-application-user-model-id-of-an-installed-app.md) of the UWP app.
     - `<taskbar:DesktopApp>`: Select this option for desktop apps. Add the Desktop Application Link Path of the desktop app.
 
-    ??You can pin as many apps as you want. OEM docs say a max of 3 pinned apps??. Just keep adding them to the list. Remember, the app order in the list is the same order the apps are shown on the taskbar.
+    You can pin as many apps as you want.  Just keep adding them to the list. Remember, the app order in the list is the same order the apps are shown on the taskbar.
 
     For more information, see [Get the AUMID and Desktop app link path](#get-the-aumid-and-desktop-app-link-path) (in this article).
 
@@ -86,13 +89,7 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 4. In the `<defaultlayout:TaskbarLayout>` node, use `region=" | "` to use different taskbar configurations based on the device locale and region.
 
-    In the following XML example, two regions are added: `US|UK` and `DE|FR`. The taskbar applies when:
-
-    - If the `<TaskbarPinList>` node has a country or region, then the apps are pinned on devices configured for that country or region.
-    - If the `<TaskbarPinList>` node doesn't have a region tag for the current region, then the first `<TaskbarPinList>` node with no region is applied.
-    - ??What happens if only a region is added, and device is configured with a different region? I assume no apps are pinned (other than the default)??
-
-    ??Need to confirm XML syntax since start doesn't use XML anymore??
+    In the following XML example, two regions are added: `US|UK` and `DE|FR`:
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -106,37 +103,37 @@ This article shows you how to create the XML file, add apps to the XML, and depl
       <CustomTaskbarLayoutCollection PinListPlacement="Replace">
         <defaultlayout:TaskbarLayout region="US|UK">
           <taskbar:TaskbarPinList >
-            <taskbar:UWA AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
-            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
+            <taskbar:UWA AppUserModelID="MSEdge"/>
+            <taskbar:UWA AppUserModelID="Microsoft.Windows.Explorer"/>
             <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
-            <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"/>
-            <taskbar:UWA AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader" />
+            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Windows System\Command Prompt.lnk"/>
           </taskbar:TaskbarPinList>
         </defaultlayout:TaskbarLayout>
         <defaultlayout:TaskbarLayout region="DE|FR">
           <taskbar:TaskbarPinList>
-            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
+            <taskbar:UWA AppUserModelID="Microsoft.Windows.Explorer"/>
             <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
             <taskbar:UWA AppUserModelID="Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel" />
-            <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"/>
-            <taskbar:UWA AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader" />
+            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Windows System\Command Prompt.lnk"/>
           </taskbar:TaskbarPinList>
         </defaultlayout:TaskbarLayout>
         <defaultlayout:TaskbarLayout>
           <taskbar:TaskbarPinList>
-            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\File Explorer.lnk" />
+            <taskbar:UWA AppUserModelID="Microsoft.Windows.Explorer"/>
             <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
-            <taskbar:DesktopApp DesktopApplicationLinkPath="%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Accessories\Paint.lnk"/>
-            <taskbar:UWA AppUserModelID="Microsoft.Reader_8wekyb3d8bbwe!Microsoft.Reader" />
+            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Windows System\Command Prompt.lnk"/>
           </taskbar:TaskbarPinList>
         </defaultlayout:TaskbarLayout>
       </CustomTaskbarLayoutCollection>
     </LayoutModificationTemplate>
     ```
 
-5. Save the file, and name the file so you know what it is. For example, name the file something like `CustomTaskbar.xml`. Once you have the file, it's ready to be deployed to your Windows devices.
+    The taskbar applies when:
 
-    ??Can the XML file name be anything? Or does it have to be 
+    - If the `<TaskbarPinList>` node has a country or region, then the apps are pinned on devices configured for that country or region.
+    - If the `<TaskbarPinList>` node doesn't have a region tag for the current region, then the first `<TaskbarPinList>` node with no region is applied.
+
+5. Save the file, and name the file so you know what it is. For example, name the file something like `TaskbarLayoutModification.xml`. Once you have the file, it's ready to be deployed to your Windows devices.
 
 ## Use Group Policy or MDM to create and deploy a taskbar policy
 
@@ -154,7 +151,7 @@ Use the following steps to add your XML file to a group policy, and apply the po
     - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Start Layout`
     - `User Configuration\Administrative Templates\Start Menu and Taskbar\Start Layout`
 
-3. Double-select `Start Layout` > **Enable**. Enter the fully qualified path to your XML file, including the XML file name. You can enter a local path, like `C:\StartLayouts\CustomTaskbar.xml`, or a network path, like `\\Server\Share\CustomTaskbar.xml`. If using a network share, be sure to give users read access to the XML file. If the file isn't available when the user signs in, then the taskbar isn't changed. Users can't customize the taskbar when this setting is enabled.
+3. Double-select `Start Layout` > **Enable**. Enter the fully qualified path to your XML file, including the XML file name. You can enter a local path, like `C:\StartLayouts\TaskbarLayoutModification.xml`, or a network path, like `\\Server\Share\TaskbarLayoutModification.xml`. Be sure you enter the correct file path. If using a network share, be sure to give users read access to the XML file. If the file isn't available when the user signs in, then the taskbar isn't changed. Users can't customize the taskbar when this setting is enabled.
 
     Your policy looks like the following policy:
 
@@ -240,7 +237,7 @@ If the OS is configured to use a right-to-left language, then the taskbar order 
 
   After the taskbar layout is applied, users can pin more apps, change the order, and unpin apps.
 
-- On a Windows client upgrade, apps are already pinned to the taskbar. Apps may have been pinned by a user, by an image, or by using Windows unattended setup. For upgrades, the taskbar layout applies the following behavior:
+- On a Windows client upgrade, apps are already pinned to the taskbar. These apps may have been pinned by a user, by an image, or by using Windows unattended setup. For upgrades, the taskbar layout applies the following behavior:
 
   - If users pinned apps to the taskbar, then those pinned apps remain. New apps are pinned after the existing user-pinned apps.
   - If the apps are pinned during the install or by a policy (not by a user), and the apps aren't pinned in an updated layout file, then the apps are unpinned.
