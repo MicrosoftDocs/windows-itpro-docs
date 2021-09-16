@@ -1,5 +1,5 @@
 ---
-title: Understand the Delivery Optimization Client-Service Communication Explained
+title: Delivery Optimization Client-Service Communication Explained
 manager: laurawi
 description: Understand the details of Delivery Optimization client to service communication when content is requested to download.
 keywords: updates, downloads, network, bandwidth
