@@ -20,7 +20,7 @@ ms.technology: windows-sec
 
 Security and privacy depend on an operating system that guards your system and information from the moment it starts up, providing fundamental chip-to-cloud protection. Windows 11 is the most secure Windows yet with extensive security measures designed to help keep you safe. These measures include built-in advanced encryption and data protection, robust network and system security, and intelligent safeguards against ever-evolving threats. 
 
-Use the links in the following table to learn more about the operating system security features and capabilities in Windows 11: |  |
+Use the links in the following table to learn more about the operating system security features and capabilities in Windows 11: <br/><br/>
 
 | Security Measures | Features & Capabilities | Description |
 |:---|:---|
