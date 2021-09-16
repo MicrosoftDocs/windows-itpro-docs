@@ -6025,6 +6025,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### Feeds policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-feeds.md#feeds-feedsenabled" id="feeds-feedsenabled">Feeds/FeedsEnabled</a>
+  </dd>
+</dl>
+
 ### FileExplorer policies
 
 <dl>

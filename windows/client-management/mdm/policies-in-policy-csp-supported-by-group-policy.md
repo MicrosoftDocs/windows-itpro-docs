@@ -262,6 +262,7 @@ ms.date: 07/18/2019
 - [Experience/PreventUsersFromTurningOnBrowserSyncing](./policy-csp-experience.md#experience-preventusersfromturningonbrowsersyncing)
 - [Experience/ShowLockOnUserTile](policy-csp-experience.md#experience-showlockonusertile)
 - [ExploitGuard/ExploitProtectionSettings](./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings)
+- [Feeds/FeedsEnabled](./policy-csp-feeds-feedsenabled.md#feeds-feedsenabled)
 - [FileExplorer/TurnOffDataExecutionPreventionForExplorer](./policy-csp-fileexplorer.md#fileexplorer-turnoffdataexecutionpreventionforexplorer)
 - [FileExplorer/TurnOffHeapTerminationOnCorruption](./policy-csp-fileexplorer.md#fileexplorer-turnoffheapterminationoncorruption)
 - [Handwriting/PanelDefaultModeDocked](./policy-csp-handwriting.md#handwriting-paneldefaultmodedocked)
