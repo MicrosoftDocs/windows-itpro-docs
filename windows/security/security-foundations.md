@@ -1,0 +1,27 @@
+---
+title: Windows security foundations
+description: Get an overview of security foundations, including the security development lifecycle, common criteria, and the bug bounty program.
+ms.reviewer: 
+ms.topic: article
+manager: dansimp
+ms.author: deniseb
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+author: denisebmsft
+ms.collection: M365-security-compliance
+ms.prod: m365-security
+ms.technology: windows-sec
+---
+
+# Windows security foundations
+
+Microsoft is committed to continuously invest in improving our software development process, building highly secure-by-design software, and addressing security compliance requirements. At Microsoft, we embed security and privacy considerations from the earliest life-cycle phases of all our software development processes. We build in security from the ground for powerful defense in today’s threat environment.
+
+Our strong security foundation leverages Microsoft Security Development Lifecycle (SDL) Bug Bounty, support for product security standards and certifications, and Azure Code signing. As a result, we improve security by producing software with fewer defects and vulnerabilities instead of relying on applying updates after vulnerabilities have been identified. 
+
+Use the links in the following table to learn more about the security foundations:<br/><br/>
+
+| Concept | Description |
+|:---|:---|
+| FIBS 140-2 Validation | The Federal Information Processing Standard (FIPS) Publication 140-2 is a U.S. government standard. FIPS is based on Section 5131 of the Information Technology Management Reform Act of 1996. It defines the minimum security requirements for cryptographic modules in IT products. Microsoft maintains an active commitment to meeting the requirements of the FIPS 140-2 standard, having validated cryptographic modules against it since it was first established in 2001. <br/><br/>Learn more about [FIPS 140-2 Validation](threat-protection/fips-140-validation.md). |
