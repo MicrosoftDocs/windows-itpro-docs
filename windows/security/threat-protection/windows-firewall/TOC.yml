@@ -251,4 +251,4 @@
         - name: Firewall settings lost on upgrade
           href: firewall-settings-lost-on-upgrade.md
 - name: Windows security
-  href: /windows/security/index.yml
+  href: /windows/security/
