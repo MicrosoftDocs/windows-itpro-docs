@@ -79,8 +79,8 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: article (change link later, add more)
-          url: /windows/security/threat-protection/windows-security-baselines.md
+        - text: Overview
+          url: apps.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
