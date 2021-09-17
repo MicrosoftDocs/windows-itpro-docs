@@ -71,7 +71,7 @@ landingContent:
         - text: Windows Defender Firewall
           url: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
         - text: Virus & threat protection
-          url: https://docs.microsoft.com/microsoft-365/security/defender-endpoint
+          url: threat-protection/index.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
