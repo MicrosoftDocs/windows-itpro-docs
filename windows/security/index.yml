@@ -91,6 +91,8 @@ landingContent:
           url: threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md
         - text: Windows Sandbox
           url: threat-protection/windows-sandbox/windows-sandbox-overview.md
+        - text: Microsoft Defender SmartScreen
+          url: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
