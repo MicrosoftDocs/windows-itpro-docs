@@ -148,7 +148,7 @@ landingContent:
         links:
         - text: Security foundations
           url: security-foundations.md
-      - linkListType: concept
+      - linkListType: reference
         links:
           - text: Microsoft Security Development Lifecycle
             url: /windows/security/threat-protection/msft-security-dev-lifecycle.md
