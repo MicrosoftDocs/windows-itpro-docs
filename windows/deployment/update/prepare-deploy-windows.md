@@ -15,7 +15,12 @@ ms.collection: m365initiative-coredeploy
 
 # Prepare to deploy Windows
 
-Having worked through the activities in the planning phase, you should be in a good position to prepare your environment and process to deploy Windows 10. The planning phase will have left you with these useful items:
+**Applies to**
+
+-   Windows 10
+-   Windows 11
+
+Having worked through the activities in the planning phase, you should be in a good position to prepare your environment and process to deploy Windows client. The planning phase will have left you with these useful items:
 
 - A clear understanding of necessary personnel and their roles and criteria for [rating app readiness](plan-define-readiness.md)
 - A plan for [testing and validating](plan-determine-app-readiness.md) apps
@@ -114,7 +119,7 @@ Ensure that devices can reach necessary Windows Update endpoints through the fir
 > [!NOTE]
 > Be sure not to use HTTPS for those endpoints that specify HTTP, and vice versa. The connection will fail.
 
-The specific endpoints can vary between Windows 10 versions. See, for example, [Windows 10 2004 Enterprise connection endpoints](/windows/privacy/manage-windows-2004-endpoints). Similar articles for other Windows 10 versions are available in the table of contents nearby.
+The specific endpoints can vary between Windows versions. See, for example, [Windows 10 2004 Enterprise connection endpoints](/windows/privacy/manage-windows-2004-endpoints). Similar articles for other Windows client versions are available in the table of contents nearby.
 
 
 ### Optimize download bandwidth
@@ -124,7 +129,7 @@ Set up [Delivery Optimization](waas-delivery-optimization.md) for peer network s
 
 In the course of surveying your device population, either with Desktop Analytics or by some other means, you might find devices that have systemic problems that could interfere with update installation. Now is the time to fix those problems.
 
-- **Low disk space:** Quality updates require a minimum of 2 GB to successfully install. Feature updates require between 8 GB and 15 GB depending upon the configuration. On Windows 10, version 1903 and later you can proactively use the "reserved storage" feature (for wipe and loads, rebuilds, and new builds) to avoid running out of disk space. If you find a group of devices that don't have enough disk space, you can often resolve the problem by cleaning up log files and asking users to clean up data if necessary. A good place to start is to delete the following files:
+- **Low disk space:** Quality updates require a minimum of 2 GB to successfully install. Feature updates require between 8 GB and 15 GB depending upon the configuration. On Windows 10, version 1903 and later (and Windows 11) you can proactively use the "reserved storage" feature (for wipe and loads, rebuilds, and new builds) to avoid running out of disk space. If you find a group of devices that don't have enough disk space, you can often resolve the problem by cleaning up log files and asking users to clean up data if necessary. A good place to start is to delete the following files:
 
   - C:\Windows\temp
   - C:\Windows\cbstemp (though this file might be necessary to investigate update failures)
