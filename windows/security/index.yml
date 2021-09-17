@@ -66,8 +66,10 @@ landingContent:
           url: encryption-data-protection.md
         - text: Windows security baselines
           url: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
-        - text: Network security
+        - text: Virtual private network guide
           url: identity-protection/vpn/vpn-guide.md
+        - text: Windows Defender Firewall
+          url: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
         - text: Virus & threat protection
           url: https://docs.microsoft.com/microsoft-365/security/defender-endpoint
 # Cards and links should be based on top customer tasks or top subjects
