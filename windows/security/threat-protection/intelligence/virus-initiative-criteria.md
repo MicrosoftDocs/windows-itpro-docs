@@ -30,7 +30,7 @@ To qualify for the MVI program, your organization must meet all the following re
 
 2)	Your organization is responsible for both developing and distributing app updates to end-customers that address compatibility with Windows.
 
-3)	Your organization must be active in the antimalware industry and have a positive reputation, as evidenced by participation in industry conferences or being reviewed in an industry standard report such as AV Comparatives, OPSWAT, or Gartner.
+3)	Your organization must be active in the antimalware industry and have a positive reputation, as evidenced by participation in industry conferences or being reviewed in an industry-standard report such as AV-Comparatives, OPSWAT, or Gartner.
 
 4)	Your organization must sign a non-disclosure agreement (NDA) with Microsoft.
 
