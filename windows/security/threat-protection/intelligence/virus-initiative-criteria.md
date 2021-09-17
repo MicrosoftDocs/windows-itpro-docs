@@ -38,7 +38,7 @@ To qualify for the MVI program, your organization must meet all the following re
 
 6)	You must submit your app to Microsoft for periodic performance testing and feature review.
 
-7)	Your solution must be certified through independent testing by at least one industry standard organization, and yearly certification must be maintained.
+7)	Your solution must be certified through independent testing by at least one industry-standard organization, and yearly certification must be maintained.
 
 Test Provider | Lab Test Type |	Minimum Level / Score
 ------------- |---------------|----------------------
