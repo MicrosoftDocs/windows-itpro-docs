@@ -50,7 +50,7 @@ Starting in Windows 10, version 1903 and later, both the **Out-of-Box-Experience
 
 Starting in Windows 11 and Windows Server 2022, we’re simplifying the Windows diagnostic data controls by moving from four diagnostic data settings to three: **Diagnostic data off**, **Required**, and **Optional**. If your devices are set to **Enhanced** when they are upgraded to a supported version of the operating system, the device settings will be evaluated to be at the more privacy-preserving setting of **Required diagnostic data**, which means that analytic services that leverage enhanced data collection may not work properly. For a list of services, see [Services that rely on Enhanced diagnostic data](#services-that-rely-on-enhanced-diagnostic-data). Administrators should read through the details and determine whether to apply these new policies to restore the same collection settings as they had before this change.
 
-Additionally, you will see the following policy changes in an upcoming release of Windows Server 2022, Windows 11, and Windows Holographic, version 21H1 (HoloLens 2):
+Additionally, you will see the following policy changes in Windows Server 2022, Windows 11, and Windows Holographic, version 21H1 (HoloLens 2):
 
 | Policy type | Current policy | Renamed policy |
 | --- | --- | --- |
