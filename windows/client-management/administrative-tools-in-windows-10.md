@@ -1,5 +1,5 @@
 ---
-title: Administrative Tools in Windows 10 and Windows 11
+title: Administrative Tools in Windows 
 description: Administrative Tools is a folder in Control Panel that contains tools for system administrators and advanced users.
 ms.assetid: FDC63933-C94C-43CB-8373-629795926DC8
 ms.reviewer: 
@@ -55,7 +55,7 @@ These tools were included in previous versions of Windows. The associated docume
 -   [Windows Memory Diagnostic]( https://go.microsoft.com/fwlink/p/?LinkId=708507)
 
 > [!TIP]
-> If the content that is linked to a tool in the following list doesn't provide the information you need to use that tool, send us a comment by using the **Was this page helpful?** feature on this **Administrative Tools in Windows** page. Details about the information you want for a tool will help us plan future content. 
+> If the content that is linked to a tool in the following list doesn't provide the information you need to use that tool, send us a comment by using the **Was this page helpful?** feature on this **Administrative Tools in Windows 10** or **Administrative Tools in Windows 11** page. Details about the information you want for a tool will help us plan future content. 
 
 ## Related topics
 
