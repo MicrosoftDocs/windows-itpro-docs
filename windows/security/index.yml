@@ -45,8 +45,6 @@ landingContent:
           url: threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md
         - text: Virtualization-based protection of code integrity
           url: threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md
-        - text: Protect domain credentials
-          url: /windows/security/identity-protection/credential-guard/credential-guard.md
         - text: Kernel DMA Protection
           url: /windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md
 # Cards and links should be based on top customer tasks or top subjects
@@ -127,6 +125,8 @@ landingContent:
           url: identity-protection/hello-for-business/hello-overview.md
         - text: Windows Credential Theft Mitigation
           url: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
+        - text: Protect domain credentials
+          url: /windows/security/identity-protection/credential-guard/credential-guard.md
         - text: Windows Defender Credential Guard
           url: identity-protection/credential-guard/credential-guard.md
         - text: Lost or forgotten passwords
