@@ -104,10 +104,10 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Azure Active Directory
-          url: https://www.microsoft.com/security/business/identity-access-management/azure-active-directory
         - text: Modern device management with Windows 11
           url: mdm-windows.md
+        - text: Azure Active Directory
+          url: https://www.microsoft.com/security/business/identity-access-management/azure-active-directory
         - text: Your Microsoft Account
           url: identity-protection/access-control/microsoft-accounts.md
         - text: OneDrive
