@@ -89,6 +89,8 @@ landingContent:
           url: threat-protection/windows-defender-application-control/windows-defender-application-control.md
         - text: Application Guard
           url: threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md
+        - text: Windows Sandbox
+          url: threat-protection/windows-sandbox/windows-sandbox-overview.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
