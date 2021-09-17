@@ -163,7 +163,7 @@ landingContent:
   # Card (optional)
   - title: Privacy controls
     linkLists:
-      - linkListType: overview
+      - linkListType: reference
         links:
         - text: Windows and Privacy Compliance
           url: /windows/privacy/windows-10-and-privacy-compliance.md
