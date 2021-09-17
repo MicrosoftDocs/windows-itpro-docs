@@ -297,8 +297,9 @@
          - name: Fine-tune WIP Learning
            href: information-protection/windows-information-protection/wip-learning.md
 - name: Application security
-  href: apps.md
   items:
+   - name: Overview
+     href: apps.md
    - name: Windows Defender Application Control and virtualization-based protection of code integrity
      href: threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
    - name: Windows Defender Application Control
