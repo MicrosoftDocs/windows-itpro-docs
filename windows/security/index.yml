@@ -26,6 +26,8 @@ landingContent:
         links:
         - text: Trusted Platform Module
           url: /windows/security/information-protection/tpm/trusted-platform-module-top-node.md
+        - text: Hardware-based root of trust
+          url: threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md
         - text: Protect domain credentials
           url: /windows/security/identity-protection/credential-guard/credential-guard.md
         - text: Kernel DMA Protection
