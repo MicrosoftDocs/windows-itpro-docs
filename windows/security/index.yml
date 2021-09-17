@@ -102,7 +102,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-        - text: Modern device management with Windows 11
+        - text: Modern device management
           url: mdm-windows.md
         - text: Azure Active Directory
           url: https://www.microsoft.com/security/business/identity-access-management/azure-active-directory
