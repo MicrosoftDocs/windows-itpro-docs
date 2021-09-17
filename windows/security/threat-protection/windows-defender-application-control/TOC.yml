@@ -292,3 +292,6 @@
                   href: applocker\using-event-viewer-with-applocker.md
             - name: AppLocker Settings
               href: applocker\applocker-settings.md
+- name: Windows security
+  href: /windows/security/
+
