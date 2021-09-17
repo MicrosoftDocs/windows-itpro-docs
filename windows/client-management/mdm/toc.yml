@@ -497,6 +497,8 @@ items:
               href: policy-csp-admx-helpandsupport.md
             - name: ADMX_ICM
               href: policy-csp-admx-icm.md
+            - name: ADMX_IIS
+              href: policy-csp-admx-iis.md 
             - name: ADMX_kdc
               href: policy-csp-admx-kdc.md
             - name: ADMX_Kerberos
