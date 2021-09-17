@@ -16,7 +16,7 @@ ms.technology: windows-sec
 # Windows hardware security
 
 Modern threats require modern security with a strong alignment between hardware security and software security techniques to keep users, data and devices protected. The operating system alone cannot protect from the wide range of tools and techniques cybercriminals use to compromise a computer deep inside its silicon. Once inside, intruders can be difficult to detect while engaging in multiple nefarious activities from stealing important data to capturing email addresses and other sensitive pieces of information.
-These new threats call for computing hardware that is secure down to the very core, including hardware chips and processors. Microsoft and our partners, including chip and device manufacturers, have worked together to integrate powerful security capabilities across software, firmware, and hardware.
+These new threats call for computing hardware that is secure down to the very core, including hardware chips and processors. Microsoft and our partners, including chip and device manufacturers, have worked together to integrate powerful security capabilities across software, firmware, and hardware. <br/><br/>
 
 | Security Measures | Features & Capabilities |
 |:---|:---|
