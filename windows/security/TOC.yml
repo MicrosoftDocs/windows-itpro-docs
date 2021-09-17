@@ -341,15 +341,11 @@
    - name: Modern device management with Windows 11
      href: mdm-windows.md
    - name: Windows 11 secured-core devices (need link)
-     href: https://docs.microsoft.com/windows/whats-new/windows-11
-   - name: Windows 365 Cloud PCs (need link)
-     href: https://docs.microsoft.com/windows/whats-new/windows-11
-   - name: Windows 365 for Enterprise (need link)
-     href: https://docs.microsoft.com/windows/whats-new/windows-11
-   - name: Windows 365 for Business (need link)
-     href: https://docs.microsoft.com/windows/whats-new/windows-11
+     href: /windows-hardware/design/device-experiences/oem-highly-secure
+   - name: Windows 365 Cloud PCs
+     href: /windows-365/overview
    - name: Azure Virtual Desktop (need link)
-     href: https://docs.microsoft.com/windows/whats-new/windows-11
+     href: /azure/virtual-desktop/
 - name: User protection
   items:
     - name: Overview
