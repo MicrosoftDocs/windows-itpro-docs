@@ -666,7 +666,7 @@ For a computer to print to a shared printer, the driver for that shared printer 
 Default on servers: Enabled.
 Default on workstations: Disabled
 
-[!Note]
+>[!Note]
 >This setting does not affect the ability to add a local printer. This setting does not affect Administrators.
 
 <!--/Description-->
@@ -1420,7 +1420,7 @@ Default: Disabled.
 >- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. 
 >- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. 
 >
->SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://docs.microsoft.com/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
+>SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://github.com/MicrosoftDocs/SupportArticles-docs/blob/d3eb07e4942ef66cbb98d8e2a0df5cfb598230a7/support/windows-server/networking/reduced-performance-after-smb-encryption-signing.md) .
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1502,7 +1502,7 @@ Default: Enabled.
 >If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted.
 >
 >SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections.
-For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://docs.microsoft.com/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
+For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://github.com/MicrosoftDocs/SupportArticles-docs/blob/d3eb07e4942ef66cbb98d8e2a0df5cfb598230a7/support/windows-server/networking/reduced-performance-after-smb-encryption-signing.md).
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1737,7 +1737,7 @@ Default: Disabled for member servers. Enabled for domain controllers.
 >
 >Similarly, if client-side SMB signing is required, that client will not be able to establish a session with servers that do not have packet signing enabled. By default, server-side SMB signing is enabled only on domain controllers.
 >If server-side SMB signing is enabled, SMB packet signing will be negotiated with clients that have client-side SMB signing enabled.
->SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://docs.microsoft.com/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
+>SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://github.com/MicrosoftDocs/SupportArticles-docs/blob/d3eb07e4942ef66cbb98d8e2a0df5cfb598230a7/support/windows-server/networking/reduced-performance-after-smb-encryption-signing.md).
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1819,7 +1819,7 @@ Default: Enabled on domain controllers only.
 >If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted.
 >
 >SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections.
-For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://docs.microsoft.com/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
+For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://github.com/MicrosoftDocs/SupportArticles-docs/blob/d3eb07e4942ef66cbb98d8e2a0df5cfb598230a7/support/windows-server/networking/reduced-performance-after-smb-encryption-signing.md).
 
 <!--/Description-->
 <!--RegistryMapped-->
