@@ -20,7 +20,7 @@ ms.collection: M365-modern-desktop
 
 -   Windows 10
 -   Windows 11
-- 
+
 Keeping devices up to date is the best way to keep them working smoothly and securely. 
 
 ## Deadlines for update compliance
@@ -46,7 +46,7 @@ restarts for maximum update velocity).
 We recommend you set deadlines as follows:
 - Quality update deadline, in days: 3
 - Feature update deadline, in days: 7
-- 
+
 Notifications are automatically presented to the user at appropriate times, and users can choose to be reminded
 later, to reschedule, or to restart immediately, depending on how close the deadline is. We recommend that you
 do **not** set any notification policies, because they are automatically configured with appropriate defaults. An exception is if you
