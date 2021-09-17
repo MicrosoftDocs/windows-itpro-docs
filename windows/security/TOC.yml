@@ -312,8 +312,9 @@
          - name: Fine-tune WIP Learning
            href: information-protection/windows-information-protection/wip-learning.md
 - name: Application security
-  href: apps.md
   items:
+   - name: Overview
+     href: apps.md
    - name: Windows Defender Application Control and virtualization-based protection of code integrity
      href: threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md
    - name: Windows Defender Application Control
@@ -350,8 +351,9 @@
    - name: Azure Virtual Desktop (need link)
      href: https://docs.microsoft.com/windows/whats-new/windows-11
 - name: User protection
-  href: identity.md
   items:
+    - name: Overview
+      href: identity.md
     - name: Windows Hello for Business
       href: identity-protection/hello-for-business/index.yml
     - name: Windows credential theft mitigation guide
