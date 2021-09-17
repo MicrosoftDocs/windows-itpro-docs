@@ -114,7 +114,15 @@ landingContent:
           url: https://docs.microsoft.com/onedrive/onedrive
         - text: Family safety
           url: threat-protection/windows-defender-security-center/wdsc-family-options.md
-
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: User protection
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Windows identity security
+          url: identity.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
