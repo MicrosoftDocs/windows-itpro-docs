@@ -12,7 +12,7 @@ manager: laurawi
 
 # Use Quick Assist to help users
 
-Quick Assist is a Windows 10 application that enables a person to share their device with another person over a remote connection. Your support staff can use it to remotely connect to a user’s device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
+Quick Assist is a Windows application that enables a person to share their device with another person over a remote connection. Your support staff can use it to remotely connect to a user’s device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
 
 ## Before you begin
 
