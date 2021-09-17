@@ -35,6 +35,8 @@
       href: threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md    
     - name: Kernel DMA Protection
       href: information-protection/kernel-dma-protection-for-thunderbolt.md
+    - name: Windows 11 secured-core devices
+      href: /windows-hardware/design/device-experiences/oem-highly-secure
 - name: Operating system security
   items: 
    - name: Overview
@@ -334,19 +336,7 @@
      href: identity-protection\configure-s-mime.md
    - name: Windows Credential Theft Mitigation Guide Abstract
      href: identity-protection\windows-credential-theft-mitigation-guide-abstract.md 
-- name: Cloud services
-  items:
-   - name: Overview
-     href: cloud.md
-   - name: Modern device management with Windows 11
-     href: mdm-windows.md
-   - name: Windows 11 secured-core devices
-     href: /windows-hardware/design/device-experiences/oem-highly-secure
-   - name: Windows 365 Cloud PCs
-     href: /windows-365/overview
-   - name: Azure Virtual Desktop
-     href: /azure/virtual-desktop/
-- name: identity protection
+- name: Identity and user security
   items:
     - name: Overview
       href: identity.md
@@ -452,6 +442,16 @@
                   href: identity-protection/virtual-smart-cards/virtual-smart-card-evaluate-security.md
             - name: Tpmvscmgr
               href: identity-protection/virtual-smart-cards/virtual-smart-card-tpmvscmgr.md
+- name: Cloud services
+  items:
+   - name: Overview
+     href: cloud.md
+   - name: Modern device management with Windows 11
+     href: mdm-windows.md
+   - name: Windows 365 Cloud PCs
+     href: /windows-365/overview
+   - name: Azure Virtual Desktop
+     href: /azure/virtual-desktop/
 - name: Security foundations
   items: 
     - name: Overview
