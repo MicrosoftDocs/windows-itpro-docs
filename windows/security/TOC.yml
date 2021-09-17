@@ -340,13 +340,13 @@
      href: cloud.md
    - name: Modern device management with Windows 11
      href: mdm-windows.md
-   - name: Windows 11 secured-core devices (need link)
+   - name: Windows 11 secured-core devices
      href: /windows-hardware/design/device-experiences/oem-highly-secure
    - name: Windows 365 Cloud PCs
      href: /windows-365/overview
-   - name: Azure Virtual Desktop (need link)
+   - name: Azure Virtual Desktop
      href: /azure/virtual-desktop/
-- name: User protection
+- name: identity protection
   items:
     - name: Overview
       href: identity.md
