@@ -95,8 +95,6 @@ landingContent:
           url: threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md
         - text: S/MIME for Windows
           url: identity-protection/configure-s-mime.md
-        - text: Windows Credential Theft Mitigation
-          url: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
@@ -123,6 +121,14 @@ landingContent:
         links:
         - text: Windows identity security
           url: identity.md
+      - linkListType: concept
+        links:
+        - text: Windows Hello for Business
+          url: identity-protection/hello-for-business/hello-overview.md
+        - text: Windows Credential Theft Mitigation
+          url: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
+        - text: Windows Defender Credential Guard
+          url: identity-protection/credential-guard/credential-guard.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
