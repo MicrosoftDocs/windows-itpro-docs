@@ -446,8 +446,8 @@
   items:
    - name: Overview
      href: cloud.md
-   - name: Modern device management with Windows 11
-     href: mdm-windows.md
+   - name: Mobile device management
+     href: client-management/mdm.md
    - name: Windows 365 Cloud PCs
      href: /windows-365/overview
    - name: Azure Virtual Desktop

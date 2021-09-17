@@ -11,7 +11,7 @@ metadata:
   ms.collection: m365-security-compliance
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/16/2021
+  ms.date: 09/17/2021
   localization_priority: Priority
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -104,8 +104,8 @@ landingContent:
           url: cloud.md
       - linkListType: concept
         links:
-        - text: Modern device management
-          url: mdm-windows.md
+        - text: Mobile device management
+          url: client-management/mdm.md
         - text: Azure Active Directory
           url: https://www.microsoft.com/security/business/identity-access-management/azure-active-directory
         - text: Your Microsoft Account
