@@ -1,8 +1,8 @@
 ---
-title: Policies for update compliance, activity, and end-user experience
+title: Policies for update compliance, activity, and user experience
 ms.reviewer: 
 manager: laurawi
-description: 
+description: Explanation and recommendations for settings
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -14,7 +14,7 @@ ms.topic: article
 ms.collection: M365-modern-desktop
 ---
 
-# Policies for update compliance, activity, and end-user experience
+# Policies for update compliance, activity, and user experience
 
 **Applies to**
 
