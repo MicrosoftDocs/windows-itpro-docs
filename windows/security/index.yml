@@ -131,6 +131,8 @@ landingContent:
           url: identity-protection/credential-guard/credential-guard.md
         - text: Lost or forgotten passwords
           url: identity-protection/password-support-policy.md
+        - text: Access control
+          url: identity-protection/access-control/access-control.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
