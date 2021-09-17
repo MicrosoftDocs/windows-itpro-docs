@@ -11,7 +11,7 @@ metadata:
   ms.collection: m365-security-compliance
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/14/2021
+  ms.date: 09/16/2021
   localization_priority: Priority
     
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -26,6 +26,8 @@ landingContent:
         links:
         - text: Trusted Platform Module
           url: /windows/security/information-protection/tpm/trusted-platform-module-top-node.md
+        - text: Hardware-based root of trust
+          url: threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md
         - text: Protect domain credentials
           url: /windows/security/identity-protection/credential-guard/credential-guard.md
         - text: Kernel DMA Protection
@@ -90,16 +92,20 @@ landingContent:
   # Card (optional)
   - title: Security foundations
     linkLists:
+      - linkListType: overview
+        links:
+        - text: Security foundations
+          url: security-foundations.md
       - linkListType: concept
         links:
-          - text: Federal Information Processing Standard (FIPS) 140 Validation
-            url: /windows/security/threat-protection/fips-140-validation.md
-          - text: Common Criteria Certifications
-            url: /windows/security/threat-protection/windows-platform-common-criteria.md
           - text: Microsoft Security Development Lifecycle
             url: /windows/security/threat-protection/msft-security-dev-lifecycle.md
           - text: Microsoft Bug Bounty
             url: /windows/security/threat-protection/microsoft-bug-bounty-program.md
+          - text: Common Criteria Certifications
+            url: /windows/security/threat-protection/windows-platform-common-criteria.md
+          - text: Federal Information Processing Standard (FIPS) 140 Validation
+            url: /windows/security/threat-protection/fips-140-validation.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
