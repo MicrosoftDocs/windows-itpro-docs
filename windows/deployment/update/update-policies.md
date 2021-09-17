@@ -20,7 +20,7 @@ ms.collection: M365-modern-desktop
 
 -   Windows 10
 -   Windows 11
-- 
+
 Keeping devices up to date is the best way to keep them working smoothly and securely. 
 
 ## Deadlines for update compliance
