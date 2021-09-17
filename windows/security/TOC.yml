@@ -336,8 +336,9 @@
    - name: Azure Virtual Desktop (need link)
      href: https://docs.microsoft.com/windows/whats-new/windows-11
 - name: User protection
-  href: identity.md
   items:
+    - name: Overview
+      href: identity.md
     - name: Windows Hello for Business
       href: identity-protection/hello-for-business/index.yml
     - name: Windows credential theft mitigation guide
