@@ -666,9 +666,8 @@ For a computer to print to a shared printer, the driver for that shared printer 
 Default on servers: Enabled.
 Default on workstations: Disabled
 
-Note
-
-This setting does not affect the ability to add a local printer. This setting does not affect Administrators.
+[!Note]
+>This setting does not affect the ability to add a local printer. This setting does not affect Administrators.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1412,21 +1411,16 @@ This security setting determines whether packet signing is required by the SMB c
 
 If this setting is enabled, the Microsoft network client will not communicate with a Microsoft network server unless that server agrees to perform SMB packet signing. If this policy is disabled, SMB packet signing is negotiated between the client and server. 
  
-Default: Disabled.  
-
->[!Important] 
->For this policy to take effect on computers running Windows 2000, client-side packet signing must also be enabled. To enable client-side SMB packet signing, set Microsoft network client: Digitally sign communications (if server agrees). 
+Default: Disabled.   
 
 >[!Note] 
->All Windows operating systems support both a client-side SMB component and a server-side SMB component.
-
-On Windows 2000 and later operating systems, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings: 
-- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. 
-- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
-- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. 
-- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. 
-
-SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136."
+>All Windows operating systems support both a client-side SMB component and a server-side SMB component.Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+>- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. 
+>- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+>- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. 
+>- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. 
+>
+>SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://docs.microsoft.com/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1500,17 +1494,15 @@ If this setting is enabled, the Microsoft network client will ask the server to 
 Default: Enabled.
 
 >[!Note]
->All Windows operating systems support both a client-side SMB component and a server-side SMB component. 
-
-On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
-- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
-- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
-- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
-- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
-If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted.
-
-SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections.
-For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
+>All Windows operating systems support both a client-side SMB component and a server-side SMB component. Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+>- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
+>- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+>- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
+>- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
+>If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted.
+>
+>SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections.
+For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://docs.microsoft.com/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1734,30 +1726,18 @@ The server message block (SMB) protocol provides the basis for Microsoft file an
 
 If this setting is enabled, the Microsoft network server will not communicate with a Microsoft network client unless that client agrees to perform SMB packet signing. If this setting is disabled, SMB packet signing is negotiated between the client and server.
 
-Default:
-
-Disabled for member servers.
-Enabled for domain controllers.
+Default: Disabled for member servers. Enabled for domain controllers.
 
 >[!Note]
->All Windows operating systems support both a client-side SMB component and a server-side SMB component. 
-
-On Windows 2000 and later, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
-- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
-- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
-- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
-- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
-
-Similarly, if client-side SMB signing is required, that client will not be able to establish a session with servers that do not have packet signing enabled. By default, server-side SMB signing is enabled only on domain controllers.
-If server-side SMB signing is enabled, SMB packet signing will be negotiated with clients that have client-side SMB signing enabled.
-SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors.
-
->[!Important]
->For this policy to take effect on computers running Windows 2000, server-side packet signing must also be enabled. To enable server-side SMB packet signing, set the following policy: Microsoft network server: Digitally sign communications (if server agrees)
-
-For Windows 2000 servers to negotiate signing with Windows NT 4.0 clients, the following registry value must be set to 1 on the Windows 2000 server:
-HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecuritysignature
-For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
+>All Windows operating systems support both a client-side SMB component and a server-side SMB component. Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+>- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
+>- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+>- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
+>- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
+>
+>Similarly, if client-side SMB signing is required, that client will not be able to establish a session with servers that do not have packet signing enabled. By default, server-side SMB signing is enabled only on domain controllers.
+>If server-side SMB signing is enabled, SMB packet signing will be negotiated with clients that have client-side SMB signing enabled.
+>SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://docs.microsoft.com/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1830,21 +1810,16 @@ If this setting is enabled, the Microsoft network server will negotiate SMB pack
 
 Default: Enabled on domain controllers only.
 
->[!Important]
->For Windows 2000 servers to negotiate signing with Windows NT 4.0 clients, the following registry value must be set to 1 on the server running Windows 2000: HKLM\System\CurrentControlSet\Services\lanmanserver\parameters\enableW9xsecuritysignature
-
 >[!Note]
-> All Windows operating systems support both a client-side SMB component and a server-side SMB component. 
-
-For Windows 2000 and above, enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
-- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
-- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
-- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
-- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
-If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted.
-
-SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections.
-For more information, reference: https://go.microsoft.com/fwlink/?LinkID=787136.
+> All Windows operating systems support both a client-side SMB component and a server-side SMB component. Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+>- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
+>- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+>- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
+>- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
+>If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted.
+>
+>SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections.
+For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](https://docs.microsoft.com/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -2347,11 +2322,6 @@ This security setting determines if, at the next password change, the LAN Manage
 Default on Windows Vista and above: Enabled
 Default on Windows XP: Disabled.
 
-Important
-
-Windows 2000 Service Pack 2 (SP2) and above offer compatibility with authentication to previous versions of Windows, such as Microsoft Windows NT 4.0.
-This setting can affect the ability of computers running Windows 2000 Server, Windows 2000 Professional, Windows XP, and the Windows Server 2003 family to communicate with computers running Windows 95 and Windows 98.
-
 <!--/Description-->
 <!--RegistryMapped-->
 GP Info:  
@@ -2429,12 +2399,9 @@ Send NTLMv2 response only\refuse LM: Clients use NTLMv2 authentication only and 
 
 Send NTLMv2 response only\refuse LM and NTLM: Clients use NTLMv2 authentication only and use NTLMv2 session security if the server supports it; domain controllers refuse LM and NTLM (accept only NTLMv2 authentication).
 
->[!Important]
->This setting can affect the ability of computers running Windows 2000 Server, Windows 2000 Professional, Windows XP Professional, and the Windows Server 2003 family to communicate with computers running Windows NT 4.0 and earlier over the network. For example, at the time of this writing, computers running Windows NT 4.0 SP4 and earlier did not support NTLMv2. Computers running Windows 95 and Windows 98 did not support NTLM.
-
 Default:
 
-Windows 2000 and windows XP: send LM and NTLM responses
+windows XP: send LM and NTLM responses
 
 Windows Server 2003: Send NTLM response only
 
@@ -2510,7 +2477,7 @@ This security setting allows a client device to require the negotiation of 128-b
 
 Default:
 
-Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
+Windows XP, Windows Vista, Windows Server 2003, and Windows Server 2008: No requirements.
 
 Windows 7 and Windows Server 2008 R2: Require 128-bit encryption.
 
@@ -2584,7 +2551,7 @@ Require 128-bit encryption. The connection will fail if strong encryption (128-b
 
 Default:
 
-Windows XP, Windows Vista, Windows 2000 Server, Windows Server 2003, and Windows Server 2008: No requirements.
+Windows XP, Windows Vista, Windows Server 2003, and Windows Server 2008: No requirements.
 
 Windows 7 and Windows Server 2008 R2: Require 128-bit encryption
 
