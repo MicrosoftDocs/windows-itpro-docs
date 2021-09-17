@@ -24,7 +24,7 @@ The Microsoft Virus Initiative (MVI) helps organizations develop better-together
 
 You can request membership if you're a representative for an organization that develops and produces antimalware or antivirus technology. 
 
-To qualify for the MVI program, your organization must meet all the following requirements.
+To qualify for the MVI program, your organization must meet all the following requirements:
 
 1)	Your security solution either replaces or compliments Microsoft Defender Antivirus.
 
