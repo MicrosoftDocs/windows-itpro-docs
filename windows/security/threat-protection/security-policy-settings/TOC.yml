@@ -348,4 +348,4 @@
                     - name: Take ownership of files or other objects
                       href: take-ownership-of-files-or-other-objects.md
         - name: Windows security
-          href: /windows/security/index.yml
+          href: /windows/security/
