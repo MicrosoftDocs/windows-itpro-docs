@@ -35,7 +35,7 @@
       href: threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md    
     - name: Kernel DMA Protection
       href: information-protection/kernel-dma-protection-for-thunderbolt.md
-    - name: Windows 11 secured-core devices
+    - name: Windows secured-core devices
       href: /windows-hardware/design/device-experiences/oem-highly-secure
 - name: Operating system security
   items: 
