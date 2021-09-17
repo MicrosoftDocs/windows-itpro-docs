@@ -29,13 +29,9 @@ For more general information, see [Configuration service provider (CSP) referenc
 ## Existing CSP policies that Windows 11 taskbar supports
 
 - [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start.mdstart-hiderecentjumplists)
-  - Group policy: User Configuration\Administrative Templates\Start Menu and Taskbar\Do not keep history of recently opened documents
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Do not keep history of recently opened documents`
   - Local setting: Settings > Personalization > Start > Show recently opened items in Jump Lists on Start or the taskbar
 
 - [Start/NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#start-nopinningtotaskbar)
-  - Group policy: ??
-    User Configuration\Administrative Templates\Start Menu and Taskbar\Do not allow pinning programs to the Taskbar 
-    --OR--
-    User Configuration\Administrative Templates\Start Menu and Taskbar\Removed pinned programs from the Taskbar
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Do not allow pinning programs to the Taskbar`
   - Local setting: None
-

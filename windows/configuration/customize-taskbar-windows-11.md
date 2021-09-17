@@ -215,8 +215,8 @@ In the layout modification XML file, you add apps in the XML markup. To pin an a
 On a taskbar, the following apps are typically pinned:
 
 - Apps pinned by the user
-- Default Windows apps pinned during the OS installation, such as Microsoft Edge, File Explorer, and Store
-- Apps pinned by your organization, such as in an unattended Windows setup
+- Default Windows apps pinned during the OS installation, such as Microsoft Edge, File Explorer, and Microsoft Store.
+- Apps pinned by your organization, such as in an unattended Windows setup.
 
   In an unattended Windows setup file, use the XML file you created in this article. It's not recommended to use [TaskbarLinks](/windows-hardware/customize/desktop/unattend/microsoft-windows-shell-setup-taskbarlinks).
 
