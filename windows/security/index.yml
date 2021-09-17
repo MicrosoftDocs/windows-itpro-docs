@@ -28,6 +28,10 @@ landingContent:
           url: /windows/security/information-protection/tpm/trusted-platform-module-top-node.md
         - text: Hardware-based root of trust
           url: threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md
+        - text: System Guard Secure Launch and SMM protection
+          url: threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md
+        - text: Virtualization-based protection of code integrity
+          url: threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md
         - text: Protect domain credentials
           url: /windows/security/identity-protection/credential-guard/credential-guard.md
         - text: Kernel DMA Protection
