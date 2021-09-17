@@ -47,6 +47,21 @@
        href: cryptography-certificate-mgmt.md
      - name: The Windows Security app
        href: threat-protection/windows-defender-security-center/windows-defender-security-center.md
+       items:
+       - name: Virus & threat protection
+         href: threat-protection\windows-defender-security-center\wdsc-virus-threat-protection.md
+       - name: Account protection
+         href: threat-protection\windows-defender-security-center\wdsc-account-protection.md
+       - name: Firewall & network protection
+         href: threat-protection\windows-defender-security-center\wdsc-firewall-network-protection.md
+       - name: App & browser control
+         href: threat-protection\windows-defender-security-center\wdsc-app-browser-control.md
+       - name: Device security
+         href: threat-protection\windows-defender-security-center\wdsc-device-security.md
+       - name: Device performance & health
+         href: threat-protection\windows-defender-security-center\wdsc-device-performance-health.md
+       - name: Family options
+         href: threat-protection\windows-defender-security-center\wdsc-family-options.md
      - name: Security policy settings
        href: threat-protection/security-policy-settings/security-policy-settings.md
      - name: Security auditing
