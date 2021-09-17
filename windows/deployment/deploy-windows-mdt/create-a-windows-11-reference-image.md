@@ -22,17 +22,19 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-Creating a reference image is important because that image serves as the foundation for the devices in your organization. In this topic, you will learn how to create a Windows 11 reference image using the Microsoft Deployment Toolkit (MDT). You will create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 11 reference image. After completing the steps outlined in this topic, you will have a Windows 11 reference image that can be used in your deployment solution.
+In this topic, you will learn how to create a Windows 11 reference image using the Microsoft Deployment Toolkit (MDT). You will create a deployment share, configure rules and settings, and import all the applications and operating system files required to build a Windows 11 reference image. After completing the steps outlined in this topic, you will have a Windows 11 reference image that can be used in your deployment solution.
+
+All procedures in this article can also be used to create a Windows 10 reference image by using Windows 10 media instead of Windows 11 media in the [Add setup files](#add-setup-files) section below.
 
 > [!NOTE]
-> See [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) for more information about the server, client, and network infrastructure used in this guide.
+> This guide assumes that you have already installed and configured deployment tools. See [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md) for more information.  
 
 For the purposes of this topic, we will use three computers: DC01, MDT01, and HV01.
    - DC01 is a domain controller for the contoso.com domain.
    - MDT01 is a contoso.com domain member server.
    - HV01 is a Hyper-V server that will be used to build the reference image.
  
-   ![devices.](../images/mdt-08-fig01.png)
+&nbsp;&nbsp;![devices.](../images/mdt-08-fig01.png)
 
    Computers used in this topic.
 
@@ -46,14 +48,14 @@ The reference image described in this guide is designed primarily for deployment
 
 ## Set up the MDT build lab deployment share
 
-With Windows 10, there is no hard requirement to create reference images. However, to reduce the time needed for deployment, you might want to create a reference image that contains a few base applications as well as all of the latest updates. This section will show you how to create and configure the MDT Build Lab deployment share to create a Windows 10 reference image. Because reference images will be deployed only to virtual machines during the creation process and have specific settings (rules), you should always create a separate deployment share specifically for this process.
+With Windows 10 and Windows 11, there is no hard requirement to create reference images. However, to reduce the time needed for deployment, you might want to create a reference image that contains a few base applications as well as all of the latest updates. This section will show you how to create and configure the MDT Build Lab deployment share to create a Windows 11 reference image. Because reference images will be deployed only to virtual machines during the creation process and have specific settings (rules), you should always create a separate deployment share specifically for this process.
 
 ### Create the MDT build lab deployment share
 
 On **MDT01**:
 
 - Sign in as contoso\\administrator using a password of <b>pass@word1</b> (credentials from the [prepare for deployment](prepare-for-windows-deployment-with-mdt.md) topic).
-- Start the MDT deployment workbench, and pin this to the taskbar for easy access.
+- Start the MDT deployment workbench, and pin the console to the taskbar for easy access.
 - Using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**.
 - Use the following settings for the New Deployment Share Wizard:
   - Deployment share path: **D:\\MDTBuildLab**
@@ -69,7 +71,7 @@ On **MDT01**:
 
 ### Enable monitoring
 
-To monitor the task sequence as it happens, right-click the **MDT Build Lab** deployment share, click **Properties**, click the **Monitoring** tab, and select **Enable monitoring for this deployment share**.  This step is optional.
+To monitor the task sequence as it happens, right-click the **MDT Build Lab** deployment share in the Deployment Workbench, click **Properties**, click the **Monitoring** tab, and select **Enable monitoring for this deployment share**.  This step is optional.
 
 ### Configure permissions for the deployment share
 
@@ -87,34 +89,41 @@ On **MDT01**:
 
 ## Add setup files
 
-This section will show you how to populate the MDT deployment share with the Windows 10 operating system source files, commonly referred to as setup files, which will be used to create a reference image. Setup files are used during the reference image creation process and are the foundation for the reference image.
+This section will show you how to populate the MDT deployment share with the Windows 11 operating system source files, commonly referred to as setup files, which will be used to create a reference image. Setup files are used during the reference image creation process and are the foundation for the reference image.
 
-### Add the Windows 10 installation files
+### Add the Windows 11 installation files
 
-MDT supports adding both full source Windows 10 DVDs (ISOs) and custom images that you have created. In this case, you create a reference image, so you add the full source setup files from Microsoft.
+MDT supports adding both full source Windows 11 DVDs (ISOs) and custom images that you have created. In this case, you create a reference image, so you add the full source setup files from Microsoft.
 
->[!NOTE]
->Due to the Windows limits on path length, we are purposely keeping the operating system destination directory short, using the folder name W10EX64RTM rather than a more descriptive name like Windows 10 Enterprise x64 RTM.
+> [!NOTE]
+> Windows 11 media is pre-release as of the date this article was last updated. To obtain Windows 11 pre-release media, join the Windows Insider program and visit [Windows Insider Preview Downloads](https://www.microsoft.com/software-download/windowsinsiderpreviewiso).<br>
+> The build selected in this example is **Windows 11 Insider Preview Enterprise (Dev Channel) - Build 22454**. 
  
-### Add Windows 10 Enterprise x64 (full source)
+### Add Windows 11 Enterprise x64 (full source)
 
 On **MDT01**:
 
-1. Sign in as **contoso\\administrator** and copy the content of a Windows 10 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 10 Enterprise x64** folder on MDT01, or just insert the DVD or mount an ISO on MDT01. The following example shows the files copied to the D:\\Downloads folder, but you can also choose to import the OS directly from an ISO or DVD.
+1. Sign in as **contoso\\administrator** and copy the content of a Windows 11 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 11 Enterprise x64** folder on MDT01, or just insert the DVD or mount an ISO on MDT01. The following example shows the files copied to the D:\\Downloads folder, but you can also choose to import the OS directly from an ISO or DVD.
 
     ![ISO.](../images/iso-data.png)
 
 2. Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Build Lab**.
-3. Right-click the **Operating Systems** node, and create a new folder named **Windows 10**.
-4. Expand the **Operating Systems** node, right-click the **Windows 10** folder, and select **Import Operating System**. Use the following settings for the Import Operating System Wizard:
+3. Right-click the **Operating Systems** node, and create a new folder named **Windows 11**.
+4. Expand the **Operating Systems** node, right-click the **Windows 11** folder, and select **Import Operating System**. Use the following settings for the Import Operating System Wizard:
     - Full set of source files
     - Source directory: (location of your source files)
-    - Destination directory name: <b>W10EX64RTM</b>
-5. After adding the operating system, in the **Operating Systems / Windows 10** folder, double-click it and change the name to: **Windows 10 Enterprise x64 RTM Default Image**. See the following example.
+    - Destination directory name: <b>W11EX64</b>
+
+ > [!NOTE]
+ > Due to the Windows limits on path length, we are purposely keeping the operating system destination directory short, using the folder name W11EX64 rather than a more descriptive name like Windows 11 Enterprise x64.<br>
+ > Depending on the DVD or ISO you used, there might be multiple editions added by the import process. For the purposes of this guide, we are using the Windows 11 Enterprise image, but other images will also work. In the example shown, editions that will not be used are deleted from the list.
+
+5. After adding the operating system, in the **Operating Systems / Windows 11** folder, double-click it and change the name to: **Windows 11 Enterprise x64 Default Image**. See the following example.
 
     ![Default image.](../images/deployment-workbench01.png)
 
->Depending on the DVD you used, there might be multiple editions available. For the purposes of this guide, we are using the Windows 10 Enterprise image, but other images will also work.
+ > [!NOTE]
+ > The pre-release version of Windows 11 used here still has some references to Windows 10 in the description.    
 
 ## Add applications
 
@@ -298,7 +307,7 @@ On **MDT01**:
 
 ## Create the reference image task sequence
 
-In order to build and capture your Windows 10 reference image for deployment using MDT, you will create a task sequence. The task sequence will reference the operating system and applications that you previously imported into the MDT Build Lab deployment share to build a Windows 10 reference image.
+In order to build and capture your Windows 11 reference image for deployment using MDT, you will create a task sequence. The task sequence will reference the operating system and applications that you previously imported into the MDT Build Lab deployment share to build a Windows 11 reference image.
 After creating the task sequence, you configure it to enable patching against the Windows Server Update Services (WSUS) server. The Task Sequence Windows Update action supports getting updates directly from Microsoft Update, but you get more stable patching if you use a local WSUS server. WSUS also allows for an easy process of approving the patches that you are deploying.
 
 ### Drivers and the reference image
@@ -307,31 +316,31 @@ Because we use modern virtual platforms for creating our reference images, we do
 
 ### Create a task sequence for Windows 10 Enterprise
 
-To create a Windows 10 reference image task sequence, the process is as follows:
+To create a Windows 11 reference image task sequence, the process is as follows:
 
 On **MDT01**:
 
-1. Using the Deployment Workbench, under **Deployment Shares > MDT Build Lab** right-click **Task Sequences**, and create a **New Folder** named **Windows 10**.
-2. Right-click the new **Windows 10** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
-   1. Task sequence ID: REFW10X64-001
-   2. Task sequence name: Windows 10 Enterprise x64 RTM Default Image
+1. Using the Deployment Workbench, under **Deployment Shares > MDT Build Lab** right-click **Task Sequences**, and create a **New Folder** named **Windows 11**.
+2. Right-click the new **Windows 11** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
+   1. Task sequence ID: REFW11X64-001
+   2. Task sequence name: Windows 11 Enterprise x64 Default Image
    3. Task sequence comments: Reference Build
    4. Template: Standard Client Task Sequence
-   5. Select OS: Windows 10 Enterprise x64 RTM Default Image
+   5. Select OS: Windows 11 Enterprise x64 Default Image
    6. Specify Product Key: Do not specify a product key at this time
    7. Full Name: Contoso
    8. Organization: Contoso
-   9. Internet Explorer home page: http://www.contoso.com
+   9. Internet Explorer home page: https://www.contoso.com
    10. Admin Password: Do not specify an Administrator Password at this time
 
-### Edit the Windows 10 task sequence
+### Edit the Windows 11 task sequence
 
 The steps below walk you through the process of editing the Windows 10 reference image task sequence to include the actions required to update the reference image with the latest updates from WSUS, install roles and features, and utilities, and install Microsoft Office365 ProPlus x64.
 
 On **MDT01**:
 
-1. In the **Task Sequences / Windows 10** folder, right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence, and select **Properties**.
-2. On the **Task Sequence** tab, configure the Windows 10 Enterprise x64 RTM Default Image task sequence with the following settings:
+1. In the **Task Sequences / Windows 11** folder, right-click the **Windows 11 Enterprise x64 Default Image** task sequence, and select **Properties**.
+2. On the **Task Sequence** tab, configure the Windows 11 Enterprise x64 Default Image task sequence with the following settings:
     1. **State Restore > Windows Update (Pre-Application Installation)** action: Enable this action by clicking the **Options** tab and clearing the **Disable this step** check box.
          
     2. **State Restore > Windows Update (Post-Application Installation)** action: Also enable this action.
@@ -341,7 +350,7 @@ On **MDT01**:
         - **Note**: The reason for adding the applications after the Tattoo action but before running Windows Update is simply to save time during the deployment. This way we can add all applications that will upgrade some of the built-in components and avoid unnecessary updating.
     5. **State Restore > Custom Tasks (Pre-Windows Update)**: Add a new **Install Roles and Features** action with the following settings:
         1. Name: Install - Microsoft NET Framework 3.5.1
-        2. Select the operating system for which roles are to be installed: Windows 10
+        2. Select the operating system for which roles are to be installed: Windows 10 (this also works for Windows 11)
         3. Select the roles and features that should be installed: .NET Framework 3.5 (includes .NET 2.0 and 3.0)
         
         >[!IMPORTANT]
@@ -354,7 +363,7 @@ On **MDT01**:
     6. **State Restore > Custom Tasks (Pre-Windows Update)**: After the **Install - Microsoft NET Framework 3.5.1** action, add a new **Install Application** action (selected from the **General** group) with the following settings:
         1. Name: Microsoft Visual C++ Redistributable 2019 - x86
         2. Install a Single Application: browse to **Install - MSVC 2019 - x86**
-    7.  Repeat these steps (add a new **Install Application**) to add Microsoft Visual C++ Redistributable 2019 - x64 and Microsoft 365 Apps for enterprise as well.
+    7.  Repeat these steps (add a new **Install Application**) to add Microsoft Visual C++ Redistributable 2019 - x64 and Office 365 ProPlus - x64 as well.
 3. Click **OK**.
 
  ![apps.](../images/mdt-apps.png) 
@@ -386,22 +395,14 @@ Follow these steps to configure Internet Explorer settings in Unattend.xml for t
 
 On **MDT01**:
 
-1. Using the Deployment Workbench, under **Deployment Shares > MDT Build Lab > Task Sequences** right-click the **Windows 10 Enterprise x64 RTM Default Image** task sequence and select **Properties**.
+1. Using the Deployment Workbench, under **Deployment Shares > MDT Build Lab > Task Sequences** right-click the **Windows 11 Enterprise x64 Default Image** task sequence and select **Properties**.
 2. In the **OS Info** tab, click **Edit Unattend.xml**. MDT now generates a catalog file. This will take a few minutes, and then Windows System Image Manager (Windows SIM) will start.
-
- > [!IMPORTANT]
- > The ADK version 1903 has a [known issue](/windows-hardware/get-started/what-s-new-in-kits-and-tools#whats-new-in-the-windows-adk-for-windows-10-version-1903) generating a catalog file for Windows 10, version 1903 or 1909 X64 install.wim. You might see the error "Could not load file or assembly" in in the console output. To avoid this issue, [install the ADK, version 2004 or a later version](/windows-hardware/get-started/adk-install). A workaround is also available for the ADK version 1903:
- > - Close the Deployment Workbench and install the [WSIM 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334). This will update imagecat.exe and imgmgr.exe to version 10.0.18362.144.
- > - Manually run imgmgr.exe (C:\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM\\imgmgr.exe).
- > - Generate a catalog (Tools/Create Catalog) for the selected install.wim (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install.wim). 
- > - After manually creating the catalog file (ex: D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM\\sources\\install_Windows 10 Enterprise.clg), open the Deployment Workbench and proceed to edit unattend.xml.
-
 3. In Windows SIM, expand the **4 specialize** node in the **Answer File** pane and select the amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral entry.
 4. In the **amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral properties** window (right-hand window), set the following values:
   - DisableDevTools: true
 5. Save the Unattend.xml file, and close Windows SIM.
      - Note: If errors are reported that certain display values are incorrect, you can ignore this or browse to **7oobeSystem\\amd64_Microsoft-Windows-Shell-Setup__neutral\\Display** and enter the following: ColorDepth 32, HorizontalResolution 1, RefreshRate 60, VerticalResolution 1.
-6. On the Windows 10 Enterprise x64 RTM Default Image Properties, click **OK**.
+6. On the Windows 11 Enterprise x64 Default Image Properties, click **OK**.
 
     ![figure 10.](../images/fig10-unattend.png)
 

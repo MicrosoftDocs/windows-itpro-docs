@@ -23,7 +23,7 @@ ms.topic: article
 - Windows 11
 
 
-This article will walk you through the steps necessary to prepare your network and server infrastructure to deploy Windows 11 with the Microsoft Deployment Toolkit (MDT). For an overview of the features, components, and capabilities of MDT, see [Get started with MDT](get-started-with-the-microsoft-deployment-toolkit.md).
+This article will walk you through the steps necessary to prepare your network and server infrastructure to deploy Windows 11 with the Microsoft Deployment Toolkit (MDT). All procedures in this guide can also be used to deploy Windows 10.  For an overview of the features, components, and capabilities of MDT, see [Get started with MDT](get-started-with-the-microsoft-deployment-toolkit.md).
 
 This article covers installation of necessary system prerequisites, creation of shared folders and service accounts, and configuration of security permissions in the file system and in Active Directory. Steps to complete the following procedures are provided:
 
@@ -34,12 +34,10 @@ This article covers installation of necessary system prerequisites, creation of 
 5. Create the MDT service account
 6. Create and share the logs folder
 
-All procedures in this guide can also be used to deploy Windows 10. 
-
-After completing these steps, you can create a [Windows 11 reference image](create-a-windows-11-reference-image.md) that will be used to deploy Winodws 11. If you are installing Windows 10 instead of Windows 11, use [source media](create-a-windows-11-reference-image.md#add-setup-files) for Windows 10 instead of Windows 11 to create your reference image.
+After completing these steps, you can create a [Windows 11 reference image](create-a-windows-11-reference-image.md) that will be used to deploy Windows 11. If you are installing Windows 10 instead of Windows 11, use [source media](create-a-windows-11-reference-image.md#add-setup-files) for Windows 10 instead of Windows 11 to create your reference image.
 
 > [!IMPORTANT]
-> Before deploying Windows 11, verify that the device meets or exceeds [requirements](/windows/whats-new/windows-11-requirements).
+> Before deploying Windows 11, verify that the device meets [requirements](/windows/whats-new/windows-11-requirements).
 
 ## Infrastructure and requirements
 
@@ -102,10 +100,8 @@ These steps assume that you have the MDT01 member server running and configured 
 On **MDT01**:
 
 Visit the [Download and install the Windows ADK](/windows-hardware/get-started/adk-install) page and download the following items to the **D:\\Downloads\\ADK** folder on MDT01 (you will need to create this folder):
-- [The Windows ADK for Windows 10](https://go.microsoft.com/fwlink/?linkid=2086042)
-- [The Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2087112)
-- [The Windows System Image Manager (WSIM) 1903 update](https://go.microsoft.com/fwlink/?linkid=2095334)
-- (Optional) [The MDT_KB4564442 patch for BIOS firmware](https://download.microsoft.com/download/3/0/6/306AC1B2-59BE-43B8-8C65-E141EF287A5E/KB4564442/MDT_KB4564442.exe)
+- [The Windows ADK](https://go.microsoft.com/fwlink/?linkid=2165884)
+- [The Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2166133)
   - This patch is needed to resolve a bug that causes detection of BIOS-based machines as UEFI-based machines.  If you have a UEFI deployment, you do not need this patch.
 
 >[!TIP]
@@ -114,10 +110,7 @@ Visit the [Download and install the Windows ADK](/windows-hardware/get-started/a
 1. On **MDT01**, ensure that you are signed in as an administrator in the CONTOSO domain.
     - For the purposes of this guide, we are using a Domain Admin account of **administrator** with a password of <b>pass@word1</b>. You can use your own administrator username and password as long as you properly adjust all steps in this guide that use these login credentials.
 2. Start the **ADK Setup** (D:\\Downloads\\ADK\\adksetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page accept the default list of features by clicking **Install**. This will install deployment tools and the USMT. Verify that the installation completes successfully before moving to the next step.
-3. Start the **WinPE Setup** (D:\\Downloads\\ADK\\adkwinpesetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page click **Install**. This will install Windows PE for x86, AMD64, ARM, and ARM64. Verify that the installation completes successfully before moving to the next step.
-4. Extract the **WSIM 1903 update** (D:\\Downloads\ADK\\WSIM1903.zip) and then run the **UpdateWSIM.bat** file.
-   - You can confirm that the update is applied by viewing properties of the ImageCat.exe and ImgMgr.exe files at **C:\\Program Files (x86)\\Windows Kits\\10\\Assessment and Deployment Kit\\Deployment Tools\\WSIM** and verifying that the **Details** tab displays a **File version** of **10.0.18362.144** or later.
-5. If you downloaded the optional MDT_KB4564442 patch for BIOS based deployment, see [this support article](https://support.microsoft.com/en-us/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7) for instructions on how to install the patch.
+3. Start the **WinPE Setup** (D:\\Downloads\\ADK\\adkwinpesetup.exe), click **Next** twice to accept the default installation parameters, click **Accept** to accept the license agreement, and then on the **Select the features you want to install** page click **Install**. This will install Windows PE for x86, AMD64, ARM, and ARM64. Verify that the installation completes successfully.
 
 ## Install and initialize WDS
 
@@ -148,7 +141,7 @@ To install WSUS on MDT01, enter the following at an elevated Windows PowerShell 
 
 >[!NOTE]
 >MDT installation requires the following:
->-   The Windows ADK for Windows 10 (installed in the previous procedure)
+>-   The Windows ADK (installed in the previous procedure)
 >-   Windows PowerShell ([version 5.1](https://www.microsoft.com/download/details.aspx?id=54616) is recommended; type **$host** to check)
 >-   Microsoft .NET Framework
 
@@ -268,13 +261,5 @@ After installing the ConfigMgrTools.msi file, you can search for **cmtrace** and
 
 ## Next steps
 
-When you have completed all the steps in this section to prepare for deployment, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
+When you have completed all the steps in this section to prepare for deployment, see [Create a Windows 11 reference image](create-a-windows-11-reference-image.md).
 
-## Appendix
-
-**Sample files**
-
-The following sample files are also available to help automate some MDT deployment tasks. This guide does not use these files, but they are made available here so you can see how some tasks can be automated with Windows PowerShell.
-- [Gather.ps1](/samples/browse/?redirectedfrom=TechNet-Gallery). This sample Windows PowerShell script performs the MDT Gather process in a simulated MDT environment. This allows you to test the MDT gather process and check to see if it is working correctly without performing a full Windows deployment.
-- [Set-OUPermissions.ps1](https://go.microsoft.com/fwlink/p/?LinkId=619362). This sample Windows PowerShell script creates a domain account and then configures OU permissions to allow the account to join machines to the domain in the specified OU.
-- [MDTSample.zip](https://go.microsoft.com/fwlink/p/?LinkId=619363). This sample web service shows you how to configure a computer name dynamically using MDT.
