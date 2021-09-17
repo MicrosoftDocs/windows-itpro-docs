@@ -1144,13 +1144,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 <dl>
 
-### ADMX_Feeds policies
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-feeds.md#admx-feeds-feedsenabled" id="admx-feeds-feedsenabled">ADMX_Feeds/FeedsEnabled</a>
-  </dd>
-</dl>
-
 ### ADMX_FileRecovery policies
 <dl>
   <dd>

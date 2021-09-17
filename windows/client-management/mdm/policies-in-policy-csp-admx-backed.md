@@ -280,7 +280,6 @@ ms.date: 10/08/2020
 - [ADMX_ExternalBoot/PortableOperatingSystem_Hibernate](./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_hibernate)
 - [ADMX_ExternalBoot/PortableOperatingSystem_Sleep](./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_sleep)
 - [ADMX_ExternalBoot/PortableOperatingSystem_Launcher](./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_launcher)
-- [ADMX_Feeds/FeedsEnabled](./policy-csp-admx-feeds.md#admx-feeds-feedsenabled)
 - [ADMX_FileRecovery/WdiScenarioExecutionPolicy](./policy-csp-admx-filerecovery.md#admx-filerecovery-wdiscenarioexecutionpolicy)
 - [ADMX_FileServerVSSProvider/Pol_EncryptProtocol](./policy-csp-admx-fileservervssprovider.md#admx-fileservervssprovider-pol-encryptprotocol)
 - [ADMX_FileSys/DisableCompression](./policy-csp-admx-filesys.md#admx-filesys-disablecompression)
