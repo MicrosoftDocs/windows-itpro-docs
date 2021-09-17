@@ -441,6 +441,8 @@
               href: identity-protection/virtual-smart-cards/virtual-smart-card-tpmvscmgr.md
 - name: Security foundations
   items: 
+    - name: Overview
+      href: security-foundations.md
     - name: FIPS 140-2 Validation
       href: threat-protection/fips-140-validation.md
     - name: Common Criteria Certifications
