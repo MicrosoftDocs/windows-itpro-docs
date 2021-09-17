@@ -22,6 +22,10 @@ landingContent:
   # Card (optional)
   - title: Hardware security
     linkLists:
+      - linkListType: overview
+        links:
+        - text: Overview
+          url: hardware.md
       - linkListType: concept
         links:
         - text: Trusted Platform Module
