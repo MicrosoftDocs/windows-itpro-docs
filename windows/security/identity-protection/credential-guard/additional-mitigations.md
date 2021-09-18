@@ -43,7 +43,7 @@ Domain-joined device certificate authentication has the following requirements:
 -   All domain controllers in those domains have KDC certificates which satisfy strict KDC validation certificate requirements:
     -   KDC EKU present
     -   DNS domain name matches the DNSName field of the SubjectAltName (SAN) extension
--   Windows 10 devices have the CA issuing the domain controller certificates in the enterprise store.
+-   Windows devices have the CA issuing the domain controller certificates in the enterprise store.
 -   A process is established to ensure the identity and trustworthiness of the device in a similar manner as you would establish the identity and trustworthiness of a user before issuing them a smartcard.
 
 #### Deploying domain-joined device certificates

@@ -15,6 +15,11 @@ ms.collection: m365initiative-coredeploy
 
 # Define readiness criteria
 
+**Applies to**
+
+-   Windows 10
+-   Windows 11
+
 ## Figure out roles and personnel
 
 Planning and managing a deployment involves a variety of distinct activities and roles best suited to each. As you plan, it's worth figuring out which roles you'll need to carry out the deployment and who should fill them. Different roles are active at various phases of a deployment. Depending on the size and complexity of your organization, some of the roles could be filled by the same person. However, it's best to have an established *process manager*, who will oversee all of the tasks for the deployment.
