@@ -16,7 +16,12 @@ author: jaimeo
 
 # Determine application readiness
 
-Before you deploy a Windows 10 update, you should know which apps will continue to work without problems, which need their own updates, and which just won't work and must be replaced. If you haven't already, it's worth [classifying your apps]<link to plan-define-readiness> with respect to their criticality in your organization.
+**Applies to**
+
+-   Windows 10
+-   Windows 11
+
+Before you deploy a Windows client update, you should know which apps will continue to work without problems, which need their own updates, and which just won't work and must be replaced. If you haven't already, it's worth [classifying your apps](plan-define-readiness.md) with respect to their criticality in your organization.
 
 ## Validation methods
 
