@@ -21,13 +21,12 @@ ms.reviewer:
 -   Windows 10
 -   Windows 11
 
-In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA Protection to protect PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to externally accessible PCIe ports (e.g., Thunderbolt™ 3 ports and CFexpress). In Windows 10 version 1903, Microsoft expanded the Kernel DMA Protection support to cover internal PCIe ports (e.g., M.2 slots)
+In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA Protection to protect PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to externally accessible PCIe ports (for example, Thunderbolt™ 3 ports and CFexpress). In Windows 10 version 1903, Microsoft expanded the Kernel DMA Protection support to cover internal PCIe ports (for example, M.2 slots)
 
 Drive-by DMA attacks can lead to disclosure of sensitive information residing on a PC, or even injection of malware that allows attackers to bypass the lock screen or control PCs remotely.
 
-This feature does not protect against DMA attacks via 1394/FireWire, PCMCIA, CardBus, ExpressCard, and so on.
+This feature doesn't protect against DMA attacks via 1394/FireWire, PCMCIA, CardBus, ExpressCard, and so on.
 
-For Thunderbolt DMA protection on earlier Windows versions and platforms that lack support for Kernel DMA Protection, please refer to [Intel Thunderbolt™ 3 Security documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf).
 
 ## Background
 
@@ -36,19 +35,19 @@ The DMA capability is what makes PCI devices the highest performing devices avai
 These devices have historically existed only inside the PC chassis, either connected as a card or soldered on the motherboard. 
 Access to these devices required the user to turn off power to the system and disassemble the chassis. 
 
-Today, this is no longer the case with hot plug PCIe ports (e.g., Thunderbolt™ and CFexpress). 
+Today, this is no longer the case with hot plug PCIe ports (for example, Thunderbolt™ and CFexpress). 
 
-Hot plug PCIe ports such as Thunderbolt™ technology have provided modern PCs with extensibility that was not available before for PCs. 
+Hot plug PCIe ports such as Thunderbolt™ technology have provided modern PCs with extensibility that wasn't available before for PCs. 
 It allows users to attach new classes of external peripherals, such as graphics cards or other PCI devices, to their PCs with a hot plug experience identical to USB. 
 Having PCI hot plug ports externally and easily accessible makes PCs susceptible to drive-by DMA attacks.
 
 Drive-by DMA attacks are attacks that occur while the owner of the system is not present and usually take less than 10 minutes, with simple to moderate attacking tools (affordable, off-the-shelf hardware and software) that do not require the disassembly of the PC. 
-A simple example would be a PC owner leaves the PC for a quick coffee break, and within the break, and attacker steps in, plugs in a USB-like device and walks away with all the secrets on the machine, or injects a malware that allows them to have full control over the PC remotely.
+A simple example would be a PC owner leaves the PC for a quick coffee break, and within the break, an attacker steps in, plugs in a USB-like device and walks away with all the secrets on the machine, or injects a malware that allows them to have full control over the PC remotely.
 
 ## How Windows protects against DMA drive-by attacks
 
 Windows leverages the system Input/Output Memory Management Unit (IOMMU) to block external peripherals from starting and performing DMA unless the drivers for these peripherals support memory isolation (such as DMA-remapping). 
-Peripherals with [DMA Remapping compatible drivers](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers) will be automatically enumerated, started and allowed to perform DMA to their assigned memory regions. 
+Peripherals with [DMA Remapping compatible drivers](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers) will be automatically enumerated, started, and allowed to perform DMA to their assigned memory regions. 
 
 By default, peripherals with DMA Remapping incompatible drivers will be blocked from starting and performing DMA until an authorized user signs into the system or unlocks the screen. IT administrators can modify the default behavior applied to devices with DMA Remapping incompatible drivers using the [DmaGuard MDM policies](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-policies).
 
@@ -62,7 +61,7 @@ The peripheral will continue to function normally if the user locks the screen o
 ## System compatibility
 
 Kernel DMA Protection requires new UEFI firmware support. 
-This support is anticipated only on newly-introduced, Intel-based systems shipping with Windows 10 version 1803 (not all systems). Virtualization-based Security (VBS) is not required.
+This support is anticipated only on newly introduced, Intel-based systems shipping with Windows 10 version 1803 (not all systems). Virtualization-based Security (VBS) is not required.
 
 To see if a system supports Kernel DMA Protection, check the System Information desktop app (MSINFO32). 
 Systems released prior to Windows 10 version 1803 do not support Kernel DMA Protection, but they can leverage other DMA attack mitigations as described in [BitLocker countermeasures](bitlocker/bitlocker-countermeasures.md).
@@ -111,8 +110,8 @@ In-market systems, released with Windows 10 version 1709 or earlier, will not su
 No, Kernel DMA Protection only protects against drive-by DMA attacks after the OS is loaded. It is the responsibility of the system firmware/BIOS to protect against attacks via the Thunderbolt™ 3 ports during boot. 
 
 ### How can I check if a certain driver supports DMA-remapping?
-DMA-remapping is supported for specific device drivers, and is not universally supported by all devices and drivers on a platform. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the DMA Remapping Policy property in the Details tab of a device in Device Manager*. A value of 0 or 1 means that the device driver does not support DMA-remapping. A value of 2 means that the device driver supports DMA-remapping. If the property is not available, then the policy is not set by the device driver (i.e. the device driver does not support DMA-remapping).
-Please check the driver instance for the device you are testing. Some drivers may have varying values depending on the location of the device (internal vs. external).
+DMA-remapping is supported for specific device drivers, and is not universally supported by all devices and drivers on a platform. To check if a specific driver is opted into DMA-remapping, check the values corresponding to the DMA Remapping Policy property in the Details tab of a device in Device Manager*. A value of 0 or 1 means that the device driver does not support DMA-remapping. A value of two means that the device driver supports DMA-remapping. If the property is not available, then the policy is not set by the device driver (that is, the device driver does not support DMA-remapping).
+Check the driver instance for the device you are testing. Some drivers may have varying values depending on the location of the device (internal vs. external).
 
 ![Kernel DMA protection user experience.](images/device_details_tab_1903.png)
 
@@ -120,9 +119,9 @@ Please check the driver instance for the device you are testing. Some drivers ma
 
 ![Kernel DMA protection user experience.](images/device-details-tab.png)
 
-### What should I do if the drivers for my PCI or Thunderbolt™ 3 peripherals do not support DMA-remapping?
+### When the drivers for PCI or Thunderbolt™ 3 peripherals do not support DMA-remapping?
 
-If the peripherals do have class drivers provided by Windows, please use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, please contact your peripheral vendor/driver vendor to update the driver to support [DMA Remapping](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers).
+If the peripherals do have class drivers provided by Windows, use these drivers on your systems. If there are no class drivers provided by Windows for your peripherals, contact your peripheral vendor/driver vendor to update the driver to support [DMA Remapping](/windows-hardware/drivers/pci/enabling-dma-remapping-for-device-drivers).
 
 ### My system's Kernel DMA Protection is off. Can DMA-remapping for a specific device be turned on?
 
@@ -131,13 +130,13 @@ Yes. DMA remapping for a specific device can be turned on independent from Kerne
 Kernel DMA Protection is a policy that allows or blocks devices to perform DMA, based on their remapping state and capabilities.
 
 ### Do Microsoft drivers support DMA-remapping?
-In Windows 10 1803 and beyond, the Microsoft inbox drivers for USB XHCI (3.x) Controllers, Storage AHCI/SATA Controllers and Storage NVMe Controllers support DMA Remapping.
+In Windows 10 1803 and beyond, the Microsoft inbox drivers for USB XHCI (3.x) Controllers, Storage AHCI/SATA Controllers, and Storage NVMe Controllers support DMA Remapping.
 
 ### Do drivers for non-PCI devices need to be compatible with DMA-remapping?
 No. Devices for non-PCI peripherals, such as USB devices, do not perform DMA, thus no need for the driver to be compatible with DMA Remapping.
 
 ### How can an enterprise enable the External device enumeration policy?
-The External device enumeration policy controls whether to enumerate external peripherals that are not compatible with DMA-remapping. Peripherals that are compatible with DMA-remapping are always enumerated. Peripherals that don't can be blocked, allowed, or allowed only after the user signs in (default).
+The External device enumeration policy controls whether to enumerate external peripherals that are not compatible with DMA-remapping. Peripherals that are compatible with DMA-remapping are always enumerated. Peripherals that aren't, can be blocked, allowed, or allowed only after the user signs in (default).
 
 The policy can be enabled by using: 
 
