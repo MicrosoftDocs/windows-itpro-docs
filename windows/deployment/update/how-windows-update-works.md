@@ -15,9 +15,12 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# How does Windows Update work?
+# How Windows Update works
 
-> Applies to: Windows 10
+**Applies to**
+
+-   Windows 10
+-   Windows 11
 
 The Windows Update workflow has four core areas of functionality: 
 
