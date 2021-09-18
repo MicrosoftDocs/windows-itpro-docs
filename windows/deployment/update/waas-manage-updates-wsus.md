@@ -1,5 +1,5 @@
 ---
-title: Deploy Windows 10 updates using Windows Server Update Services (Windows 10)
+title: Deploy Windows client updates using Windows Server Update Services
 description: WSUS allows companies to defer, selectively approve, choose when delivered, and determine which devices receive updates.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -11,12 +11,13 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Deploy Windows 10 updates using Windows Server Update Services (WSUS)
+# Deploy Windows client updates using Windows Server Update Services (WSUS)
 
 
 **Applies to**
 
-- Windows 10
+-   Windows 10
+-   Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -329,33 +330,16 @@ Now that you have the **All Windows 10 Upgrades** view, complete the following s
 
 </br>
 
-## Steps to manage updates for Windows 10
+## Steps to manage updates for Windows client
 
 |&nbsp; |&nbsp; |
 | --- | --- |
 | ![done.](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
-| ![done.](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or Deploy Windows 10 updates using Windows Server Update Services (this topic)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
+| ![done.](images/checklistdone.png) | [Prepare servicing strategy for Windows client updates](waas-servicing-strategy-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Build deployment rings for Windows client updates](waas-deployment-rings-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Assign devices to servicing channels for Windows client updates](waas-servicing-channels-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Optimize update delivery for Windows client updates](waas-optimize-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or Deploy Windows client updates using Windows Server Update Services (this topic)</br>or [Deploy Windows client updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
 
 
 
-## Related topics
-
-- [Update Windows 10 in the enterprise](index.md)
-- [Overview of Windows as a service](waas-overview.md)
-- [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
-- [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
-- [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
-- [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
-- [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md) 
-- [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
-- [Configure Windows Update for Business](waas-configure-wufb.md)
-- [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
-- [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
-- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service)
-- [Manage device restarts after updates](waas-restart.md)

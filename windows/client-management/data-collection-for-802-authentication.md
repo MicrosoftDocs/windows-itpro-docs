@@ -24,7 +24,7 @@ Use the following steps to collect wireless and wired logs on Windows and Window
 1. Create C:\MSLOG on the client machine to store captured logs.
 2. Launch an elevated command prompt on the client machine, and run the following commands to start a RAS trace log and a Wireless/Wired scenario log.
 
-   **Wireless Windows 8.1 and Windows 10:**
+   **Wireless Windows 8.1, Windows 10, and Windows 11:**
    ```
    netsh ras set tracing * enabled
    netsh trace start scenario=wlan,wlan_wpp,wlan_dbg,wireless_dbg globallevel=0xff capture=yes maxsize=1024 tracefile=C:\MSLOG\%COMPUTERNAME%_wireless_cli.etl
