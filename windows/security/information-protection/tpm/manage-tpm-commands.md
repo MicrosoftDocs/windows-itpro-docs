@@ -1,5 +1,5 @@
 ---
-title: Manage TPM commands (Windows 10)
+title: Manage TPM commands (Windows)
 description: This topic for the IT professional describes how to manage which Trusted Platform Module (TPM) commands are available to domain users and to local users.
 ms.assetid: a78e751a-2806-43ae-9c20-2e7ca466b765
 ms.reviewer: 
@@ -13,14 +13,15 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 11/30/2017
+ms.date: 09/06/2021
 ---
 
 # Manage TPM commands
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This topic for the IT professional describes how to manage which Trusted Platform Module (TPM) commands are available to domain users and to local users.
 
@@ -78,7 +79,7 @@ The following procedures describe how to manage the TPM command lists. You must 
 
 ## Use the TPM cmdlets
 
-You can manage the TPM using Windows PowerShell. For details, see [TrustedPlatformModule PowerShell cmdlets](/powershell/module/trustedplatformmodule/?view=win10-ps).
+You can manage the TPM using Windows PowerShell. For details, see [TrustedPlatformModule PowerShell cmdlets](/powershell/module/trustedplatformmodule/?view=win10-ps&preserve-view=true).
 
 ## Related topics
 
