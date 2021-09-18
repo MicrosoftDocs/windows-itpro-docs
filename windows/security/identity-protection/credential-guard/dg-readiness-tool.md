@@ -18,7 +18,10 @@ ms.reviewer:
 # Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
 
 **Applies to:**
-- Windows 10 Enterprise Edition
+- Windows 10
+- Windows 11
+- Windows Server 2016
+- Windows Server 2019
 
 ```powershell
 # Script to find out if a machine is Device Guard compliant.
