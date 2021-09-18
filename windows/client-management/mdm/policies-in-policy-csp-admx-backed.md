@@ -417,6 +417,7 @@ ms.date: 10/08/2020
 - [ADMX_LanmanWorkstation/Pol_CipherSuiteOrder](./policy-csp-admx-lanmanworkstation.md#admx-lanmanworkstation-pol-ciphersuiteorder)
 - [ADMX_LanmanWorkstation/Pol_EnableHandleCachingForCAFiles](./policy-csp-admx-lanmanworkstation.md#admx-lanmanworkstation-pol-enablehandlecachingforcafiles)
 - [ADMX_LanmanWorkstation/Pol_EnableOfflineFilesforCAShares](./policy-csp-admx-lanmanworkstation.md#admx-lanmanworkstation-pol-enableofflinefilesforcashares)
+- [ADMX_LeakDiagnostic/WdiScenarioExecutionPolicy](./policy-csp-admx-leakdiagnostic.md#admx-leakdiagnostic-wdiscenarioexecutionpolicy)
 - [ADMX_LinkLayerTopologyDiscovery/LLTD_EnableLLTDIO](./policy-csp-admx-linklayertopologydiscovery.md#admx-linklayertopologydiscovery-lltd-enablelltdio)
 - [ADMX_LinkLayerTopologyDiscovery/LLTD_EnableRspndr](./policy-csp-admx-linklayertopologydiscovery.md#admx-linklayertopologydiscovery-lltd-enablerspndr)
 - [ADMX_Logon/BlockUserFromShowingAccountDetailsOnSignin](./policy-csp-admx-logon.md#admx-logon-blockuserfromshowingaccountdetailsonsignin)
