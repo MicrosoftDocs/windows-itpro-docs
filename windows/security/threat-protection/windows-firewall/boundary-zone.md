@@ -31,7 +31,7 @@ Devices in the boundary zone are trusted devices that can accept communication r
 
 The GPOs you build for the boundary zone include IPsec or connection security rules that request authentication for both inbound and outbound network connections, but don't require it.
 
-These boundary zone devices receive unsolicited inbound communications from untrusted devices that use plaintext. Therefore, they must be carefully managed and secured in other ways. Mitigating this extra risk is an important part of deciding whether to add a device to the boundary zone. For example, completing a formal business justification process before adding each device to the boundary zone minimizes the additional risk. The following illustration shows a sample process that can help make such a decision.
+These boundary zone devices might receive unsolicited inbound communications from untrusted devices that use plaintext and must be carefully managed and secured in other ways. Mitigating this extra risk is an important part of deciding whether to add a device to the boundary zone. For example, completing a formal business justification process before adding each device to the boundary zone minimizes the additional risk. The following illustration shows a sample process that can help make such a decision.
 
 ![design flowchart.](images/wfas-designflowchart1.gif)
 
