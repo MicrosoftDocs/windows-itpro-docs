@@ -138,6 +138,7 @@ If automatic updates are turned off, applications and websites may stop working 
 
 To view endpoints for other versions of Windows 10 Enterprise, see:
 
+- [Manage connection endpoints for Windows 10, version 20H2](manage-windows-20H2-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 2004](manage-windows-2004-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
@@ -147,6 +148,7 @@ To view endpoints for other versions of Windows 10 Enterprise, see:
 
 To view endpoints for non-Enterprise Windows 10 editions, see:
 
+- [Windows 10, version 20H2, connection endpoints for non-Enterprise editions](windows-endpoints-20H2-non-enterprise-editions.md)
 - [Windows 10, version 2004, connection endpoints for non-Enterprise editions](windows-endpoints-2004-non-enterprise-editions.md)
 - [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
 - [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
