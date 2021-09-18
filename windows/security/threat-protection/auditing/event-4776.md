@@ -145,5 +145,5 @@ For 4776(S, F): The computer attempted to validate the credentials for an accoun
 | **User logon outside authorized hours**             | Can indicate a compromised account; especially relevant for highly critical accounts.                                                               |
 | **User logon from unauthorized workstation**        | Can indicate a compromised account; especially relevant for highly critical accounts.                                                               |
 | **User logon to account disabled by administrator** | For example, N events in last N minutes can be an indicator of an account compromise attempt, especially relevant for highly critical accounts.     |
-| **User logon with expired account**                 | Can indicate an account compromise attempt; especially relevant for highly critical accounts.                                                       |
-| **User logon with account locked**                  | Can indicate a brute-force password attack; especially relevant for highly critical accounts.                                                       |
+| **User logon with expired account**                 | Can indicate an account compromise attempt; especially relevant for highly critical accounts.                             |
+| **User logon with account locked**                  | Can indicate a brute-force password attack; especially relevant for highly critical accounts.                             |
