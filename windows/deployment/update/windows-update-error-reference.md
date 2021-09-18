@@ -17,7 +17,10 @@ ms.custom: seo-marvel-apr2020
 
 # Windows Update error codes by component
 
-> Applies to: Windows 10
+**Applies to**
+
+-   Windows 10
+-   Windows 11
 
 
 This section lists the error codes for Microsoft Windows Update. 
