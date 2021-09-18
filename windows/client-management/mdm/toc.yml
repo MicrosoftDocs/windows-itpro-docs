@@ -507,6 +507,8 @@ items:
               href: policy-csp-admx-lanmanserver.md
             - name: ADMX_LanmanWorkstation
               href: policy-csp-admx-lanmanworkstation.md
+            - name: ADMX_LeakDiagnostic
+              href: policy-csp-admx-leakdiagnostic.md  
             - name: ADMX_LinkLayerTopologyDiscovery
               href: policy-csp-admx-linklayertopologydiscovery.md
             - name: ADMX_Logon

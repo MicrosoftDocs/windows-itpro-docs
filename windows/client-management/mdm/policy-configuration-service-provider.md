@@ -1618,6 +1618,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_LeakDiagnostic policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-leakdiagnostic.md#admx-leakdiagnostic-wdiscenarioexecutionpolicy" id="admx-leakdiagnostic-wdiscenarioexecutionpolicy">ADMX_LeakDiagnostic/WdiScenarioExecutionPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_LinkLayerTopologyDiscovery policies
 <dl>
   <dd>
