@@ -480,9 +480,7 @@ items:
             - name: ADMX_Explorer
               href: policy-csp-admx-explorer.md
             - name: ADMX_ExternalBoot
-              href: policy-csp-admx-externalboot.md
-            - name: Feeds
-              href: policy-csp-admx-feeds.md    
+              href: policy-csp-admx-externalboot.md 
             - name: ADMX_FileRecovery
               href: policy-csp-admx-filerecovery.md
             - name: ADMX_FileRevocation
@@ -708,7 +706,7 @@ items:
             - name: ExploitGuard
               href: policy-csp-exploitguard.md
             - name: Feeds
-              href: policy-csp-feedsenabled.md
+              href: policy-csp-feeds.md
             - name: FileExplorer
               href: policy-csp-fileexplorer.md
             - name: Games
