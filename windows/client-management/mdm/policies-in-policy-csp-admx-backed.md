@@ -1431,6 +1431,7 @@ ms.date: 10/08/2020
 - [EventLogService/SpecifyMaximumFileSizeApplicationLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizeapplicationlog)
 - [EventLogService/SpecifyMaximumFileSizeSecurityLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizesecuritylog)
 - [EventLogService/SpecifyMaximumFileSizeSystemLog](./policy-csp-eventlogservice.md#eventlogservice-specifymaximumfilesizesystemlog)
+- [Feeds/FeedsEnabled](./policy-csp-feeds.md#feeds-feedsenabled)
 - [FileExplorer/TurnOffDataExecutionPreventionForExplorer](./policy-csp-fileexplorer.md#fileexplorer-turnoffdataexecutionpreventionforexplorer)
 - [FileExplorer/TurnOffHeapTerminationOnCorruption](./policy-csp-fileexplorer.md#fileexplorer-turnoffheapterminationoncorruption)
 - [InternetExplorer/AddSearchProvider](./policy-csp-internetexplorer.md#internetexplorer-addsearchprovider)

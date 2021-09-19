@@ -1192,22 +1192,22 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td>Yes</td>
+    <td>No</td>
     <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td>Yes</td>
+    <td>No</td>
     <td>Yes</td>
 </tr>
 </table>
