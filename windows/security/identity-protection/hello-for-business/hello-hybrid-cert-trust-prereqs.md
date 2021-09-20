@@ -20,6 +20,7 @@ ms.reviewer:
 
 **Applies to**
 -   Windows 10, version 1703 or later
+-   Windows 11
 -   Hybrid deployment
 -   Certificate trust
 
@@ -56,7 +57,7 @@ Review these requirements and those from the Windows Hello for Business planning
 <br>
 
 ## Public Key Infrastructure ##
-The Windows Hello for Business deployment depends on an enterprise public key infrastructure as trust anchor for authentication. Domain controllers for hybrid deployments need a certificate in order for Windows 10 devices to trust the domain controller.
+The Windows Hello for Business deployment depends on an enterprise public key infrastructure as trust anchor for authentication. Domain controllers for hybrid deployments need a certificate in order for Windows devices to trust the domain controller.
  
 Certificate trust deployments need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  When using Group Policy, hybrid certificate trust deployment uses the Windows Server 2016 Active Directory Federation Server (AD FS) as a certificate registration authority.
 
