@@ -149,13 +149,6 @@
                   href: information-protection/bitlocker/ts-bitlocker-decode-measured-boot-logs.md
      - name: Configure S/MIME for Windows
        href: identity-protection/configure-s-mime.md    
-   - name: Windows security baselines
-     href: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
-     items: 
-      - name: Security Compliance Toolkit
-        href: threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10.md
-      - name: Get support
-        href: threat-protection/windows-security-configuration-framework/get-support-for-security-baselines.md     
    - name: Network security
      items:
      - name: VPN technical guide
@@ -185,6 +178,13 @@
           href: identity-protection/vpn/vpn-office-365-optimization.md
      - name: Windows Defender Firewall
        href: threat-protection/windows-firewall/windows-firewall-with-advanced-security.md
+   - name: Windows security baselines
+     href: threat-protection/windows-security-configuration-framework/windows-security-baselines.md
+     items: 
+      - name: Security Compliance Toolkit
+        href: threat-protection/windows-security-configuration-framework/security-compliance-toolkit-10.md
+      - name: Get support
+        href: threat-protection/windows-security-configuration-framework/get-support-for-security-baselines.md     
    - name: Virus & threat protection
      items: 
       - name: Overview
