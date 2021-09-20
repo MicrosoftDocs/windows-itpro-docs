@@ -1,5 +1,5 @@
 ---
-title: Windows Hello errors during PIN creation (Windows 10)
+title: Windows Hello errors during PIN creation (Windows)
 description: When you set up Windows Hello in Windows 10, you may get an error during the Create a work PIN step.
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
 ms.reviewer: 
@@ -21,7 +21,9 @@ ms.date: 05/05/2018
 # Windows Hello errors during PIN creation
 
 **Applies to**
--   Windows 10
+
+- Windows 10
+- Windows 11
 
 When you set up Windows Hello in Windows 10, you may get an error during the **Create a PIN** step. This topic lists some of the error codes with recommendations for mitigating the problem. If you get an error code that is not listed here, contact Microsoft Support.
 
