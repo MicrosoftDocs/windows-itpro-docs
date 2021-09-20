@@ -511,6 +511,8 @@ items:
               href: policy-csp-admx-lanmanworkstation.md
             - name: ADMX_LinkLayerTopologyDiscovery
               href: policy-csp-admx-linklayertopologydiscovery.md
+            - name: ADMX_LocationProviderAdm
+              href: policy-csp-admx-locationprovideradm.md  
             - name: ADMX_Logon
               href: policy-csp-admx-logon.md
             - name: ADMX_MicrosoftDefenderAntivirus

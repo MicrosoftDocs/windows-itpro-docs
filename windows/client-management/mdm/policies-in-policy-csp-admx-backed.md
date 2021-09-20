@@ -423,6 +423,7 @@ ms.date: 10/08/2020
 - [ADMX_LanmanWorkstation/Pol_EnableOfflineFilesforCAShares](./policy-csp-admx-lanmanworkstation.md#admx-lanmanworkstation-pol-enableofflinefilesforcashares)
 - [ADMX_LinkLayerTopologyDiscovery/LLTD_EnableLLTDIO](./policy-csp-admx-linklayertopologydiscovery.md#admx-linklayertopologydiscovery-lltd-enablelltdio)
 - [ADMX_LinkLayerTopologyDiscovery/LLTD_EnableRspndr](./policy-csp-admx-linklayertopologydiscovery.md#admx-linklayertopologydiscovery-lltd-enablerspndr)
+- [ADMX_LocationProviderAdm/DisableWindowsLocationProvider_1](./policy-csp-admx-locationprovideradm.md#admx-locationprovideradm-disablewindowslocationprovider_1)
 - [ADMX_Logon/BlockUserFromShowingAccountDetailsOnSignin](./policy-csp-admx-logon.md#admx-logon-blockuserfromshowingaccountdetailsonsignin)
 - [ADMX_Logon/DisableAcrylicBackgroundOnLogon](./policy-csp-admx-logon.md#admx-logon-disableacrylicbackgroundonlogon)
 - [ADMX_Logon/DisableExplorerRunLegacy_1](./policy-csp-admx-logon.md#admx-logon-disableexplorerrunlegacy-1)
