@@ -16,6 +16,9 @@ ms.topic: article
 
 >Applies to: Windows 10, version 1607
 
+> [!NOTE]
+> [!INCLUDE [Application Virtualization will be end of life in April 2026](../includes/app-v-end-life-statement.md)]
+
 Use the following information to plan to deploy App-V without disrupting your existing network or user experience.
 
 ## Planning information

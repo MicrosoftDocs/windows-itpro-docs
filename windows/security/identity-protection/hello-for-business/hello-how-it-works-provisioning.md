@@ -16,9 +16,10 @@ ms.date: 08/19/2018
 ms.reviewer: 
 ---
 # Windows Hello for Business Provisioning
-<span id="windows-hello-for-business-provisioning" />
-<b>Applies to:</b>
--   Windows 10
+
+**Applies to:**
+- Windows 10
+- Windows 11
 
 Windows Hello for Business provisioning enables a user to enroll a new, strong, two-factor credential that they can use for passwordless authentication.  Provisioning experience vary based on:
 - How the device is joined to Azure Active Directory
@@ -48,7 +49,7 @@ Windows Hello for Business provisioning enables a user to enroll a new, strong, 
 
 [Return to top](#windows-hello-for-business-provisioning)
 ## Azure AD joined provisioning in a Federated environment
-![Azure AD joined provisioning in a Managed environment.](images/howitworks/prov-aadj-federated.png)
+![Azure AD joined provisioning in Managed environment.](images/howitworks/prov-aadj-federated.png)
 
 | Phase  | Description  |
 | :----: | :----------- |
