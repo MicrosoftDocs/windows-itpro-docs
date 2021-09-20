@@ -105,7 +105,7 @@ landingContent:
       - linkListType: concept
         links:
         - text: Mobile device management
-          url: client-management/mdm.md
+          url: client-management/mdm/index.md
         - text: Azure Active Directory
           url: https://www.microsoft.com/security/business/identity-access-management/azure-active-directory
         - text: Your Microsoft Account
