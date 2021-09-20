@@ -2316,6 +2316,16 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 <dl>
 
+### ADMX_MobilePCPresentationSettings policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-mobilepcpresentationsettings.md#admx-mobilepcpresentationsettings-presentationsettingsenable_1" id="admx-mobilepcpresentationsettings-presentationsettingsenable_1">ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mobilepcpresentationsettings.md#admx-mobilepcpresentationsettings-presentationsettingsenable_2" id="admx-mobilepcpresentationsettings-presentationsettingsenable_2">ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_2</a>
+  </dd>
+<dl>
+
 ### ADMX_MSAPolicy policies
 <dl>
   <dd>
