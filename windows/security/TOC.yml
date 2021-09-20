@@ -336,7 +336,7 @@
      href: identity-protection\configure-s-mime.md
    - name: Windows Credential Theft Mitigation Guide Abstract
      href: identity-protection\windows-credential-theft-mitigation-guide-abstract.md 
-- name: Identity and user security
+- name: User security and secured identity
   items:
     - name: Overview
       href: identity.md
