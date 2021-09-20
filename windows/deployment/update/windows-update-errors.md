@@ -15,7 +15,10 @@ ms.custom: seo-marvel-apr2020
 
 # Windows Update common errors and mitigation
 
->Applies to: Windows 10
+**Applies to**
+
+-   Windows 10
+-   Windows 11
 
 The following table provides information about common errors you might run into with Windows Update, as well as steps to help you mitigate them.
 
