@@ -36,6 +36,7 @@ Before you can install and use Microsoft Defender Application Guard, you must de
 Applies to:
 - Windows 10 Enterprise edition, version 1709 or higher
 - Windows 10 Pro edition, version 1803
+- Windows 11
 
 Employees can use hardware-isolated browsing sessions without any administrator or management policy configuration. In this mode,   you must install Application Guard and then the employee must manually start Microsoft Edge in Application Guard while browsing untrusted sites. For an example of how this works, see the [Application Guard in standalone mode](test-scenarios-md-app-guard.md) testing scenario.
 
@@ -43,6 +44,7 @@ Employees can use hardware-isolated browsing sessions without any administrator 
 
 Applies to:
 - Windows 10 Enterprise edition, version 1709 or higher
+- Windows 11
 
 You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests to add non-enterprise domain(s) in the container.
 
@@ -68,7 +70,7 @@ Application Guard functionality is turned off by default. However, you can quick
 >[!NOTE]
 >Ensure your devices have met all system requirements prior to this step. PowerShell will install the feature without checking system requirements. If your devices don't meet the system requirements, Application Guard may not work. This step is recommended for enterprise managed scenarios only.
 
-1. Click the **Search** or **Cortana** icon in the Windows 10 taskbar and type **PowerShell**.
+1. Click the **Search** or **Cortana** icon in the Windows 10 or Windows 11 taskbar and type **PowerShell**.
    
 2. Right-click **Windows PowerShell**, and then click **Run as administrator**.
 
