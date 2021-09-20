@@ -14,14 +14,11 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 07/25/2018
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Apply a basic audit policy on a file or folder
-
-**Applies to**
--   Windows 10
 
 You can apply audit policies to individual files and folders on your computer by setting the permission type to record successful access attempts or failed access attempts in the security log.
 
