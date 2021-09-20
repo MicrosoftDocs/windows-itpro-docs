@@ -16,10 +16,11 @@ localizationpriority: medium
 ms.date: 08/19/2018
 ms.reviewer: 
 ---
-# Validate Active Directory prerequisites
+# Validate Active Directory prerequisites - Key Trust
 
 **Applies to**
 -   Windows 10, version 1703 or later
+-   Windows 11
 -   On-premises deployment
 -   Key trust
 
