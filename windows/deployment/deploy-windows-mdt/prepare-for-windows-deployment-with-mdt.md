@@ -50,6 +50,7 @@ For the purposes of this topic, we will use three server computers: **DC01**, **
     - You can use an earlier version of Windows Server with minor modifications to some procedures.
     - Note: Although MDT supports Windows Server 2008 R2, at least Windows Server 2012 R2 or later is required to perform the procedures in this guide.
 - **DC01** is a domain controller, DHCP server, and DNS server for <b>contoso.com</b>, representing the fictitious Contoso Corporation.
+    - The DHCP scope used in this lab is 10.10.10.0/24 with a gateway of 10.10.10.1. but you can adjust the scope settings to your environment.
 - **MDT01** is a domain member server in contoso.com with a data (D:) drive that can store at least 200GB. MDT01 will host deployment shares and run the Windows Deployment Service. Optionally, MDT01 is also a WSUS server.
     - A second MDT server (**MDT02**) configured identically to MDT01 is optionally used to [build a distributed environment](build-a-distributed-environment-for-windows-deployment.md) for Windows 11 deployment. This server is located on a different subnet than MDT01 and has a different default gateway.
 - **HV01** is a Hyper-V host computer that is used to build a Windows 11 reference image.
@@ -149,8 +150,10 @@ On **MDT01**:
 
 1. Visit the [MDT resource page](/mem/configmgr/mdt/) and click **Download MDT**. 
 2. Save the **MicrosoftDeploymentToolkit_x64.msi** file to the D:\\Downloads\\MDT folder on MDT01. 
+3. Save the [MDT update](https://support.microsoft.com/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7) to D:\\Downloads\\MDT folder on MDT01.
     - **Note**: As of the publishing date for this guide, the current version of MDT is 8456 (6.3.8456.1000), but a later version will also work.
-3. Install **MDT** (D:\\Downloads\\MDT\\MicrosoftDeploymentToolkit_x64.exe) with the default settings.
+4. Install **MDT** (D:\\Downloads\\MDT\\MicrosoftDeploymentToolkit_x64.exe) with the default settings.
+5. Extract the MDT update and install it per the instructions on [Windows 10 deployments fail with Microsoft Deployment Toolkit on computers with BIOS type firmware](https://support.microsoft.com/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7).  This will update **Microsoft.BDD.Utility.dll** from version 6.3.8456.1000 to 6.3.8456.1001.
 
 ## Create the OU structure
 

@@ -400,13 +400,13 @@ On **MDT01**:
 3. In Windows SIM, expand the **4 specialize** node in the **Answer File** pane and select the amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral entry.
 4. In the **amd64\_Microsoft-Windows-IE-InternetExplorer\_neutral properties** window (right-hand window), set the following values:
   - DisableDevTools: true
-5. Save the Unattend.xml file, and close Windows SIM.
-     - Note: If errors are reported that certain display values are incorrect, you can ignore this or browse to **7oobeSystem\\amd64_Microsoft-Windows-Shell-Setup__neutral\\Display** and enter the following: ColorDepth 32, HorizontalResolution 1, RefreshRate 60, VerticalResolution 1.
+5. Save the Answer File, and close Windows SIM.
+     - Note: If validation errors are reported that certain display values are incorrect, you can ignore this or browse to **7oobeSystem\\amd64_Microsoft-Windows-Shell-Setup__neutral\\Display** and enter the following: ColorDepth 32, HorizontalResolution 1, RefreshRate 60, VerticalResolution 1.
 6. On the Windows 11 Enterprise x64 Default Image Properties, click **OK**.
 
     ![figure 10.](../images/fig10-unattend.png)
 
-    Windows System Image Manager with the Windows 10 Unattend.xml.
+    Windows System Image Manager with the Windows 11 Unattend.xml.
 
 ## Configure the MDT deployment share rules
 
@@ -477,7 +477,7 @@ On **MDT01**:
     ```
 
     >[!NOTE]
-    >For security reasons, you normally don't add the password to the Bootstrap.ini file; however, because this deployment share is for creating reference image builds only, and should not be published to the production network, it is acceptable to do so in this situation. Obviously if you are not using the same password (pass@word3) that is provided in this lab, you must enter your own custom password on the Rules tab and in Bootstrap.ini.
+    >For security reasons, you normally don't add the password to the Bootstrap.ini file; however, because this deployment share is for creating reference image builds only, and should not be published to the production network, it is acceptable to do so in this situation. Obviously if you are not using the same password (pass@word1) that is provided in this lab, you must enter your own custom password on the Rules tab and in Bootstrap.ini.
      
 4. On the **Windows PE** tab, in the **Platform** drop-down list, select **x86**.
 5. In the **Lite Touch Boot Image Settings** area, configure the following settings:
@@ -608,11 +608,11 @@ SkipFinalSummary=YES
 - **SkipCapture.** Skips the Capture pane.
 - **SkipFinalSummary.** Skips the final Windows Deployment Wizard summary. Because you use FinishAction=Shutdown, you don't want the wizard to stop in the end so that you need to click OK before the machine shuts down.
 
-## Build the Windows 10 reference image
+## Build the Windows 11 reference image
 
 As previously described, this section requires a Hyper-V host. See [Hyper-V requirements](prepare-for-windows-deployment-with-mdt.md#hyper-v-requirements) for more information.
 
-Once you have created your task sequence, you are ready to create the Windows 10 reference image. This will be performed by launching the task sequence from a virtual machine which will then automatically perform the reference image creation and capture process. 
+Once you have created your task sequence, you are ready to create the Windows 11 reference image. This will be performed by launching the task sequence from a virtual machine which will then automatically perform the reference image creation and capture process. 
 
 The steps below outline the process used to boot a virtual machine using an ISO boot image created by MDT, and then run the reference image task sequence image to create and capture the Windows 10 reference image.
 
@@ -623,41 +623,43 @@ The steps below outline the process used to boot a virtual machine using an ISO 
 On **HV01**:
      
 2. Create a new virtual machine with the following settings:
-   1. Name: REFW10X64-001
+   1. Name: REFW11X64-001
    2. Store the virtual machine in a different location: C:\VM
    3. Generation 1
    4. Memory: 1024 MB
    5. Network: Must be able to connect to \\MDT01\MDTBuildLab$
    7. Hard disk: 60 GB (dynamic disk)
    8. Install OS with image file: C:\\ISO\\MDT Build Lab x86.iso
-1. Before you start the VM, add a checkpoint for REFW10X64-001, and name it **Clean with MDT Build Lab x86 ISO**.
+1. Before you start the VM, add a checkpoint for REFW11X64-001, and name it **Clean with MDT Build Lab x86 ISO**.
 
     **Note**: Checkpoints are useful if you need to restart the process and want to make sure you can start clean.
      
-4. Start the REFW10X64-001 virtual machine and connect to it.
+4. Start the REFW11X64-001 virtual machine and connect to it.
 
-    **Note**: Up to this point we have not discussed IP addressing or DHCP. In the initial setup for this guide, DC01 was provisioned as a DHCP server to provide IP address leases to client computers.  You might have a different DHCP server on your network that you wish to use. The REFW10X64-001 virtual machine requires an IP address lease that provides it with connectivity to MDT01 so that it can connect to the \\MDT01\MDTBuildLab$ share. In the current scenario this is accomplished with a DHCP scope that provides IP addresses in the 10.10.10.100 - 10.10.10.200 range, as part of a /24 subnet so that the client can connect to MDT01 at 10.10.10.11.
+    **Note**: Up to this point we have not discussed IP addressing or DHCP. In the initial setup for this guide, DC01 was provisioned as a DHCP server to provide IP address leases to client computers.  You might have a different DHCP server on your network that you wish to use. The REFW10X64-001 virtual machine requires an IP address lease that provides it with connectivity to MDT01 so that it can connect to the \\MDT01\MDTBuildLab$ share, and optionally the WSUS server on your network. In the current scenario this is accomplished with a DHCP scope that provides IP addresses in the 10.10.10.100 - 10.10.10.200 range, with a 10.10.10.1 gateway, as part of a /24 subnet so that the client can connect to MDT01 at 10.10.10.11.
+
+    If you receive a message that "A connection to the deployment share could not be made, check that the DHCP service is available to the REFW11X64-001 VM, and it has been issued a valid IP address.
 
     After booting into Windows PE, complete the Windows Deployment Wizard with the following settings:
-    1. Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Default Image
+    1. Select a task sequence to execute on this computer: Windows 11 Enterprise x64 Default Image
     2. Specify whether to capture an image: Capture an image of this reference computer
        -   Location: \\\\MDT01\\MDTBuildLab$\\Captures
-    3. File name: REFW10X64-001.wim
+    3. File name: REFW11X64-001.wim
 
         ![capture image.](../images/captureimage.png)
 
-        The Windows Deployment Wizard for the Windows 10 reference image.
+        The Windows Deployment Wizard for the Windows 11 reference image.
 
 5. The setup now starts and does the following:
-    1. Installs the Windows 10 Enterprise operating system.
+    1. Installs the Windows 11 Enterprise operating system.
     2. Installs the added applications, roles, and features.
-    3. Updates the operating system via your local Windows Server Update Services (WSUS) server.
+    3. Updates the operating system via your local Windows Server Update Services (WSUS) server (if provisioned).
     4. Stages Windows PE on the local disk.
     5. Runs System Preparation (Sysprep) and reboots into Windows PE.
     6. Captures the installation to a Windows Imaging (WIM) file.
     7. Turns off the virtual machine.
 
-After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
+After some time, you will have a Windows 11 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW11X64-001.wim.
 
    ![image.](../images/image-captured.png)
 
@@ -670,9 +672,23 @@ If you [enabled monitoring](#enable-monitoring), you can check the progress of t
 
    ![monitoring.](../images/mdt-monitoring.png)
 
-If there are problems with your task sequence, you can troubleshoot in Windows PE by pressing F8 to open a command prompt. There are several [MDT log files](/configmgr/mdt/troubleshooting-reference#mdt-logs) created that can be helpful determining the origin of an error, such as BDD.log.  From the command line in Windows PE you can copy these logs from the client to your MDT server for viewing with CMTrace. For example: copy BDD.log \\\\mdt01\\logs$.
+If monitoring is not working, check that http://localhost:9801/MDTMonitorData/ loads on MDT01, and try turning monitoring off and on again.
 
-After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
+If there are problems with your task sequence, you can troubleshoot in Windows PE by pressing F8 to open a command prompt. There are several [MDT log files](/configmgr/mdt/troubleshooting-reference#mdt-logs) created that can be helpful determining the origin of an error, such as BDD.log.  From the command line in Windows PE you can copy these logs from the client to your MDT server for viewing with CMTrace. For example: copy BDD.log \\\\mdt01\\logs$. An example is shown below.
+
+```cmd
+X:\>net use G: \\mdt01\c$\tmp /user:contoso\administrator pass@word1
+The command completed successfully.
+
+X:\>copy X:\MININT\SMSOSD\OSDLOGS\*.log G:
+        6 files copied.
+X:\>copp X:\Windows\Temp\SMSTSLog\smsts.log G:
+        1 file copied.
+```
+
+If you have trouble connecting to the deployment share, verify that your DHCP server (DC01 in this lab) has issued a lease to the VM. The DHCP client name will be something like minint-p1st75s.contoso.com.
+
+After some time, you will have a Windows 11 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW11X64-001.wim.
 
 ## Related topics
 
