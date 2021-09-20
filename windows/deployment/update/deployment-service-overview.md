@@ -16,7 +16,10 @@ ms.topic: article
 
 # Windows Update for Business deployment service
 
-> Applies to: Windows 10
+**Applies to**
+
+-   Windows 10
+-   Windows 11
 
 The Windows Update for Business deployment service is a cloud service within the Windows Update for Business product family. It provides control over the approval, scheduling, and safeguarding of updates delivered from Windows Update. It's designed to work in harmony with your existing Windows Update for Business policies.
 
@@ -56,18 +59,18 @@ The deployment service exposes these capabilities through Microsoft [Graph REST 
 
 To work with the deployment service, devices must meet all these requirements:
 
-- Be running Windows 10, version 1709 or later
+- Be running Windows 10, version 1709 or later (or Windows 11)
 - Be joined to Azure Active Directory (AD) or Hybrid AD
-- Have one of the following Windows 10 editions installed:
-    - Windows 10 Pro
-    - Windows 10 Enterprise
-    - Windows 10 Education
-    - Windows 10 Pro Education
-    - Windows 10 Pro for Workstations
+- Have one of the following Windows 10 or Windows 11 editions installed:
+    - Pro
+    - Enterprise
+    - Education
+    - Pro Education
+    - Pro for Workstations
 
 Additionally, your organization must have one of the following subscriptions:
-- Windows 10 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
-- Windows 10 Education A3 or A5 (included in Microsoft 365 A3 or A5)
+- Windows 10/11 Enterprise E3 or E5 (included in Microsoft 365 F3, E3, or E5)
+- Windows 10/11 Education A3 or A5 (included in Microsoft 365 A3 or A5)
 - Windows Virtual Desktop Access E3 or E5
 - Microsoft 365 Business Premium
 
@@ -78,7 +81,7 @@ To use the deployment service, you use a management tool built on the platform, 
 
 ### Using Microsoft Endpoint Manager
 
-Microsoft Endpoint Manager integrates with the deployment service to provide Windows 10 update management capabilities. For more information, see [Windows 10 feature updates policy in Intune](/mem/intune/protect/windows-10-feature-updates).
+Microsoft Endpoint Manager integrates with the deployment service to provide Windows client update management capabilities. For more information, see [Windows 10 feature updates policy in Intune](/mem/intune/protect/windows-10-feature-updates).
 
 ### Scripting common actions using PowerShell
 
