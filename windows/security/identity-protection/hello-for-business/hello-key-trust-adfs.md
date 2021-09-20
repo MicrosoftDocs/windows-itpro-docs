@@ -16,10 +16,11 @@ localizationpriority: medium
 ms.date: 08/19/2018
 ms.reviewer: 
 ---
-# Prepare and Deploy Windows Server 2016 Active Directory Federation Services
+# Prepare and Deploy Windows Server 2016 Active Directory Federation Services with Key Trust
 
 **Applies to**
 -   Windows 10, version 1703 or later
+-   Windows 11
 -   On-premises deployment
 -   Key trust
 
@@ -101,7 +102,7 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials.
 8. Click **Next** on the **Active Directory Federation Service** page.
 9. Click **Install** to start the role installation.
 
-## Review
+## Review to validate
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 * Confirm the AD FS farm uses the correct database configuration.
@@ -213,7 +214,7 @@ Sign-in the federation server with _Enterprise Admin_ equivalent credentials. Th
 3. In the details pane, click **Configure Device Registration**.
 4. In the **Configure Device Registration** dialog, click **OK**.
 
-## Review
+## Review and validate
 
 Before you continue with the deployment, validate your deployment progress by reviewing the following items:
 * Confirm you followed the correct procedures based on the domain controllers used in your deployment   
