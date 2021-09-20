@@ -531,6 +531,8 @@ items:
               href: policy-csp-admx-msdt.md
             - name: ADMX_MSI
               href: policy-csp-admx-msi.md
+           - name: ADMX_MsiFileRecovery
+              href: policy-csp-admx-msifilerecovery.md 
             - name: ADMX_nca
               href: policy-csp-admx-nca.md
             - name: ADMX_NCSI

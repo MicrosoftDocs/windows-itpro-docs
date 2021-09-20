@@ -2435,6 +2435,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_MsiFileRecovery policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-msifilerecovery.md#admx-msifilerecovery-wdiscenarioexecutionpolicy" id="admx-msifilerecovery-wdiscenarioexecutionpolicy">ADMX_MsiFileRecovery/WdiScenarioExecutionPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_nca policies
 <dl>
   <dd>

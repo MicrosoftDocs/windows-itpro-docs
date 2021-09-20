@@ -674,6 +674,7 @@ ms.date: 10/08/2020
 - [ADMX_MSI/SafeForScripting](./policy-csp-admx-msi.md#admx-msi-safeforscripting)
 - [ADMX_MSI/SearchOrder](./policy-csp-admx-msi.md#admx-msi-searchorder)
 - [ADMX_MSI/TransformsSecure](./policy-csp-admx-msi.md#admx-msi-transformssecure)
+- [ADMX_MsiFileRecovery/WdiScenarioExecutionPolicy](./policy-csp-admx-msifilerecovery.md#admx-msifilerecovery-wdiscenarioexecutionpolicy)
 - [ADMX_nca/CorporateResources](./policy-csp-admx-nca.md#admx-nca-corporateresources)
 - [ADMX_nca/CustomCommands](./policy-csp-admx-nca.md#admx-nca-customcommands)
 - [ADMX_nca/DTEs](./policy-csp-admx-nca.md#admx-nca-dtes)
