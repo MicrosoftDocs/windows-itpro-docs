@@ -447,7 +447,7 @@
    - name: Overview
      href: cloud.md
    - name: Mobile device management
-     href: client-management/mdm.md
+     href: client-management/mdm/index.md
    - name: Windows 365 Cloud PCs
      href: /windows-365/overview
    - name: Azure Virtual Desktop
