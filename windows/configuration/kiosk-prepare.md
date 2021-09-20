@@ -169,6 +169,6 @@ When you connect to a VM configured as a single-app kiosk, you need a *basic* se
 
 :::image type="content" source="images/vm-kiosk.png" alt-text="Use a basic session to connect a virtual machine. In the View menu, Extended session is not selected, which means basic is used.":::
 
-To connect to a VM in a basic session, do not select **Connect** in the connection dialog, as shown in the following image, but instead, select the **X** button in the upper-right corner to cancel the dialog. 
+To connect to a VM in a basic session, do not select **Connect** in the connection dialog, as shown in the following image, but instead, select the **X** button in the upper-right corner to cancel the dialog:
 
 :::image type="content" source="images/vm-kiosk-connect.png" alt-text="Do not select the connect button. Use "close X" in the top corner to connect to a VM in basic session":::

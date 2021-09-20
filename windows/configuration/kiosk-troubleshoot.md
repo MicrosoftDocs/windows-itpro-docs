@@ -26,7 +26,7 @@ ms.topic: article
 ## Single-app kiosk issues
 
 >[!TIP]
->We recommend that you [enable logging for kiosk issues](kiosk-prepare.md#enable-logging). For some failures, events are only captured once. If you enable logging after an issue occurs with your kiosk, the logs may not capture those one-time events. In that case, prepare a new kiosk environment (such as a [virtual machine (VM)](kiosk-prepare.md#test-vm)), set up your kiosk account and configuration, and try to reproduce the problem.
+>We recommend that you [enable logging for kiosk issues](kiosk-prepare.md#enable-logging). For some failures, events are only captured once. If you enable logging after an issue occurs with your kiosk, the logs may not capture those one-time events. In that case, prepare a new kiosk environment (such as a [virtual machine (VM)](kiosk-prepare.md#testing-your-kiosk-in-a-virtual-machine-vm)), set up your kiosk account and configuration, and try to reproduce the problem.
 
 ### Sign-in issues 
 

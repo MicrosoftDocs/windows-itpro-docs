@@ -541,7 +541,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 Provisioning packages can be applied to a device during the first-run experience (out-of-box experience or "OOBE") and after ("runtime").
 
 >[!TIP]
->In addition to the methods below, you can use the PowerShell comdlet [install-provisioningpackage](/powershell/module/provisioning/Install-ProvisioningPackage?view=win10-ps) with `-LogsDirectoryPath` to get logs for the operation.
+>In addition to the methods below, you can use the PowerShell comdlet [install-provisioningpackage](/powershell/module/provisioning/Install-ProvisioningPackage) with `-LogsDirectoryPath` to get logs for the operation.
 
 #### During initial setup, from a USB drive
 
