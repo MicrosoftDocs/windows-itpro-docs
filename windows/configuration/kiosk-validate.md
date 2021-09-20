@@ -1,6 +1,6 @@
 ---
-title: Validate kiosk configuration (Windows 10)
-description: In this article, learn what to expect on a multi-app kiosk in Windows 10 Pro, Enterprise, and Education.
+title: Validate kiosk configuration (Windows 10/11)
+description: In this article, learn what to expect on a multi-app kiosk in Windows 10/11 Pro, Enterprise, and Education.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 ms.reviewer: 
 manager: dansimp
@@ -20,7 +20,8 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10 Pro, Enterprise, and Education
+- Windows 10 Pro, Enterprise, and Education
+- Windows 11
 
 To identify the provisioning packages applied to a device, go to **Settings** > **Accounts** > **Access work or school**, and then click **Add or remove a provisioning package**. You should see a list of packages that were applied to the device.
 

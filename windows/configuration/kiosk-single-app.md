@@ -1,5 +1,5 @@
 ---
-title: Set up a single-app kiosk (Windows 10)
+title: Set up a single-app kiosk (Windows 10/11)
 description: A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education).
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 ms.reviewer: 
@@ -11,7 +11,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: greg-lindsay
 ms.localizationpriority: medium
-ms.date: 01/09/2019
+ms.date: 09/20/2021
 ms.topic: article
 ---
 
@@ -20,7 +20,8 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10 Pro, Enterprise, and Education
+- Windows 10 Pro, Enterprise, and Education
+- Windows 11
 
 A single-app kiosk uses the Assigned Access feature to run a single app above the lockscreen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk cannot do anything on the device outside of the kiosk app.
 
@@ -35,11 +36,10 @@ You have several options for configuring your single-app kiosk.
 
 Method | Description
 --- | ---
-[Locally, in Settings](#local) | The **Set up a kiosk** (previously named **Set up assigned access**) option in **Settings** is a quick and easy method to set up a single device as a kiosk for a local standard user account. <br><br>This method is supported on Windows 10 Pro, Enterprise, and Education.
-[PowerShell](#powershell) | You can use Windows PowerShell cmdlets to set up a single-app kiosk. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account.<br><br>This method is supported on Windows 10 Pro, Enterprise, and Education.
-[The kiosk wizard in Windows Configuration Designer](#wizard) | Windows Configuration Designer is a tool that produces a *provisioning package*, which is a package of configuration settings that can be applied to one or more devices during the first-run experience (OOBE) or after OOBE is done (runtime). You can also create the kiosk user account and install the kiosk app, as well as other useful settings, using the kiosk wizard.<br><br>This method is supported on Windows 10 Pro (version 1709 and later), Enterprise, and Education.
-[Microsoft Intune or other mobile device management (MDM) provider](#mdm) | For managed devices, you can use MDM to set up a kiosk configuration.<br><br>This method is supported on Windows 10 Pro (version 1709 and later), Enterprise, and Education.
-
+[Locally, in Settings](#local) | The **Set up a kiosk** (previously named **Set up assigned access**) option in **Settings** is a quick and easy method to set up a single device as a kiosk for a local standard user account. <br><br>This method is supported on Windows client Pro, Enterprise, and Education.
+[PowerShell](#powershell) | You can use Windows PowerShell cmdlets to set up a single-app kiosk. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account.<br><br>This method is supported on Windows client Pro, Enterprise, and Education.
+[The kiosk wizard in Windows Configuration Designer](#wizard) | Windows Configuration Designer is a tool that produces a *provisioning package*, which is a package of configuration settings that can be applied to one or more devices during the first-run experience (OOBE) or after OOBE is done (runtime). You can also create the kiosk user account and install the kiosk app, as well as other useful settings, using the kiosk wizard.<br><br>This method is supported on Windows 10 Pro version 1709+, Enterprise, and Education / Windows 11.
+[Microsoft Intune or other mobile device management (MDM) provider](#mdm) | For managed devices, you can use MDM to set up a kiosk configuration.<br><br>This method is supported on Windows 10 Pro version 1709+, Enterprise, and Education / Windows 11.
 
 >[!TIP]
 >You can also configure a kiosk account and app for single-app kiosk within [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) by using a [kiosk profile](lock-down-windows-10-to-specific-apps.md#profile).  
@@ -52,11 +52,14 @@ Method | Description
 
 ## Set up a kiosk in local Settings
 
->App type: UWP
+>App type: 
+> - UWP
 >
->OS edition: Windows 10 Pro, Ent, Edu
+>OS edition: 
+> - Windows client Pro, Ent, Edu
 >
->Account type: Local standard user
+>Account type:
+> - Local standard user
 
 You can use **Settings** to quickly configure one or a few devices as a kiosk. 
 
@@ -68,11 +71,9 @@ When your kiosk is a local device that is not managed by Active Directory or Azu
 
 ![Screenshot of automatic sign-in setting.](images/auto-signin.png)
 
-### Instructions for Windows 10, version 1809
+### Windows 10 version 1809 / Windows 11
 
-When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows 10, version 1809, you create the kiosk user account at the same time.
-
-**To set up assigned access in PC settings**
+When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows client, you create the kiosk user account at the same time. To set up assigned access in PC settings:
 
 1.  Go to **Start** &gt; **Settings** &gt; **Accounts** &gt; **Other users**.
 
@@ -94,9 +95,9 @@ When you set up a kiosk (also known as *assigned access*) in **Settings** for Wi
 To remove assigned access, select the account tile on the **Set up a kiosk** page, and then select **Remove kiosk**.
 
 
-### Instructions for Windows 10, version 1803 and earlier
+### Instructions for Windows 10 version 1803 and earlier
 
-When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows 10, version 1803 and earlier, you must select an existing local standard user account. [Learn how to create a local standard user account.](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10)
+When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows 10 version 1803 and earlier, you must select an existing local standard user account. [Learn how to create a local standard user account.](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10)
 
 ![The Set up assigned access page in Settings.](images/kiosk-settings.png)
 
@@ -114,22 +115,19 @@ When you set up a kiosk (also known as *assigned access*) in **Settings** for Wi
 
 To remove assigned access, choose **Turn off assigned access and sign out of the selected account**.
 
-
-
-
-
-
-
 <span id="powershell"/>
 
 ## Set up a kiosk using Windows PowerShell
 
  
->App type: UWP
+>App type: 
+> - UWP
 >
->OS edition: Windows 10 Pro, Ent, Edu
+>OS edition: 
+> - Windows client Pro, Ent, Edu
 >
->Account type: Local standard user
+>Account type: 
+> - Local standard user
 
 ![PowerShell windows displaying Set-AssignedAccess cmdlet.](images/set-assignedaccess.png)
 
@@ -144,28 +142,12 @@ Before you run the cmdlet:
 5. Log out as the Assigned Access user account.
 6. Log in as administrator.
 
-To open PowerShell on Windows 10, search for PowerShell and find **Windows PowerShell Desktop app** in the results. Run PowerShell as administrator.
+To open PowerShell on Windows client, search for PowerShell, and find **Windows PowerShell Desktop app** in the results. Run PowerShell as administrator.
 
-**Configure assigned access by AppUserModelID and user name**
-
-```
-Set-AssignedAccess -AppUserModelId <AUMID> -UserName <username>
-```
-**Configure assigned access by AppUserModelID and user SID**
-
-```
-Set-AssignedAccess -AppUserModelId <AUMID> -UserSID <usersid>
-```
-**Configure assigned access by app name and user name**
-
-```
-Set-AssignedAccess -AppName <CustomApp> -UserName <username>
-```
-**Configure assigned access by app name and user SID**
-
-```
-Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
-```
+- **Configure assigned access by AppUserModelID and user name**: `Set-AssignedAccess -AppUserModelId <AUMID> -UserName <username>`
+- **Configure assigned access by AppUserModelID and user SID**: `Set-AssignedAccess -AppUserModelId <AUMID> -UserSID <usersid>`
+- **Configure assigned access by app name and user name**: `Set-AssignedAccess -AppName <CustomApp> -UserName <username>`
+- **Configure assigned access by app name and user SID**: `Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>`
 
 > [!NOTE]
 > To set up assigned access using `-AppName`, the user account that you specify for assigned access must have logged on at least once. 
@@ -174,22 +156,27 @@ Set-AssignedAccess -AppName <CustomApp> -UserSID <usersid>
 
 [Learn how to get the AppName](/powershell/module/assignedaccess/set-assignedaccess) (see **Parameters**).
 
-To remove assigned access, using PowerShell, run the following cmdlet.
+To remove assigned access, using PowerShell, run the following cmdlet:
 
-```
+```powershell
 Clear-AssignedAccess
 ```
-
 
 <span id="wizard" />
 
 ## Set up a kiosk using the kiosk wizard in Windows Configuration Designer
 
->App type: UWP or Windows desktop application
+>App type:
+> - UWP 
+> - Windows desktop application
 >
->OS edition: Windows 10 Pro (version 1709 and later) for UWP only; Ent, Edu for both app types
+>OS edition:
+> - Windows 10 Pro version 1709+ for UWP only; Ent, Edu for both app types
+> - Windows 11
 >
->Account type: Local standard user, Active Directory 
+>Account type:
+> - Local standard user
+> - Active Directory 
 
 ![Kiosk wizard option in Windows Configuration Designer.](images/kiosk-wizard.png)
 
@@ -202,12 +189,10 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 
 [Install Windows Configuration Designer](provisioning-packages/provisioning-install-icd.md), then open Windows Configuration Designer and select **Provision kiosk devices**. After you name your project, and click **Next**, configure the settings as shown in the following table.
 
-
-
 <table>
-<tr><td valign="top"><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Enable device setup if you want to configure settings on this page.</br></br><strong>If enabled:</strong></br></br>Enter a name for the device.</br></br>(Optional) Select a license file to upgrade Windows 10 to a different edition. <a href="/windows/deployment/upgrade/windows-10-edition-upgrades" data-raw-source="[See the permitted upgrades.](/windows/deployment/upgrade/windows-10-edition-upgrades)">See the permitted upgrades.</a></br></br>Toggle <strong>Configure devices for shared use</strong> off. This setting optimizes Windows 10 for shared use scenarios and isn&#39;t necessary for a kiosk scenario.</br></br>You can also select to remove pre-installed software from the device. </td><td><img src="images/set-up-device-details.png" alt="device name, upgrade to enterprise, shared use, remove pre-installed software"/></td></tr>
+<tr><td valign="top"><img src="images/one.png" alt="step one"/><img src="images/set-up-device.png" alt="set up device"/></br></br>Enable device setup if you want to configure settings on this page.</br></br><strong>If enabled:</strong></br></br>Enter a name for the device.</br></br>(Optional) Select a license file to upgrade Windows client to a different edition. <a href="/windows/deployment/upgrade/windows-10-edition-upgrades" data-raw-source="[See the permitted upgrades.](/windows/deployment/upgrade/windows-10-edition-upgrades)">See the permitted upgrades.</a></br></br>Toggle <strong>Configure devices for shared use</strong> off. This setting optimizes Windows client for shared use scenarios and isn&#39;t necessary for a kiosk scenario.</br></br>You can also select to remove pre-installed software from the device. </td><td><img src="images/set-up-device-details.png" alt="device name, upgrade to enterprise, shared use, remove pre-installed software"/></td></tr>
 <tr><td valign="top"><img src="images/two.png" alt="step two"/>  <img src="images/set-up-network.png" alt="set up network"/></br></br>Enable network setup if you want to configure settings on this page.</br></br><strong>If enabled:</strong></br></br>Toggle <strong>On</strong> or <strong>Off</strong> for wireless network connectivity. If you select <strong>On</strong>, enter the SSID, the network type (<strong>Open</strong> or <strong>WPA2-Personal</strong>), and (if <strong>WPA2-Personal</strong>) the password for the wireless network.</td><td><img src="images/set-up-network-details.png" alt="Enter network SSID and type"/></td></tr>
-<tr><td valign="top"><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Enable account management if you want to configure settings on this page. </br></br><strong>If enabled:</strong></br></br>You can enroll the device in Active Directory, enroll in Azure Active Directory, or create a local administrator account on the device</br></br>To enroll the device in Active Directory, enter the credentials for a least-privileged user account to join the device to the domain.</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, <a href="/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup)">set up Azure AD join in your organization</a>. The <strong>maximum number of devices per user</strong> setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. Set an expiration date for the token (maximum is 180 days from the date you get the token). Click <strong>Get bulk token</strong>. In the <strong>Let&#39;s get you signed in</strong> window, enter an account that has permissions to join a device to Azure AD, and then the password. Click <strong>Accept</strong> to give Windows Configuration Designer the necessary permissions.</br></br><strong>Warning:</strong> You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.</br></br>To create a local administrator account, select that option and enter a user name and password. </br></br><strong>Important:</strong> If you create a local account in the provisioning package, you must change the password using the <strong>Settings</strong> app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in.  </td><td><img src="images/account-management-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
+<tr><td valign="top"><img src="images/three.png" alt="step three"/>  <img src="images/account-management.png" alt="account management"/></br></br>Enable account management if you want to configure settings on this page. </br></br><strong>If enabled:</strong></br></br>You can enroll the device in Active Directory, enroll in Azure Active Directory, or create a local administrator account on the device</br></br>To enroll the device in Active Directory, enter the credentials for a least-privileged user account to join the device to the domain.</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, <a href="/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup)">set up Azure AD join in your organization</a>. The <strong>maximum number of devices per user</strong> setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. Set an expiration date for the token (maximum is 180 days from the date you get the token). Click <strong>Get bulk token</strong>. In the <strong>Let&#39;s get you signed in</strong> window, enter an account that has permissions to join a device to Azure AD, and then the password. Click <strong>Accept</strong> to give Windows Configuration Designer the necessary permissions.</br></br><strong>Warning:</strong> You must run Windows Configuration Designer on Windows client to configure Azure Active Directory enrollment using any of the wizards.</br></br>To create a local administrator account, select that option and enter a user name and password. </br></br><strong>Important:</strong> If you create a local account in the provisioning package, you must change the password using the <strong>Settings</strong> app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in.  </td><td><img src="images/account-management-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
 <tr><td valign="top"><img src="images/four.png" alt="step four"/> <img src="images/add-applications.png" alt="add applications"/></br></br>You can provision the kiosk app in the <strong>Add applications</strong> step. You can install multiple applications, both Windows desktop applications (Win32) and Universal Windows Platform (UWP) apps, in a provisioning package. The settings in this step vary according to the application that you select. For help with the settings, see <a href="provisioning-packages/provision-pcs-with-apps.md" data-raw-source="[Provision PCs with apps](provisioning-packages/provision-pcs-with-apps.md)">Provision PCs with apps</a></br></br><strong>Warning:</strong> If you click the plus button to add an application, you must specify an application for the provisioning package to validate. If you click the plus button in error, select any executable file in <strong>Installer Path</strong>, and then a <strong>Cancel</strong> button becomes available, allowing you to complete the provisioning package without an application. </td><td><img src="images/add-applications-details.png" alt="add an application"/></td></tr>
 <tr><td valign="top"><img src="images/five.png" alt="step five"/> <img src="images/add-certificates.png" alt="add certificates"/></br></br>To provision the device with a certificate for the kiosk app, click <strong>Add a certificate</strong>. Enter a name for the certificate, and then browse to and select the certificate to be used.</td><td><img src="images/add-certificates-details.png" alt="add a certificate"/></td></tr> 
 <tr><td valign="top"><img src="images/six.png" alt="step six"/>  <img src="images/kiosk-account.png" alt="Configure kiosk account and app"/></br></br>You can create a local standard user account that will be used to run the kiosk app. If you toggle <strong>No</strong>, make sure that you have an existing user account to run the kiosk app.</br></br>If you want to create an account, enter the user name and password, and then toggle <strong>Yes</strong> or <strong>No</strong> to automatically sign in the account when the device starts. (If you encounter issues with auto sign-in after you apply the provisioning package, check the Event Viewer logs for auto logon issues under <strong>Applications and Services Logs\Microsoft\Windows\Authentication User Interface\Operational</strong>.)</br></br>In <strong>Configure the kiosk mode app</strong>, enter the name of the user account that will run the kiosk mode app. Select the type of app to run in kiosk mode, and then enter the path or filename (for a Windows desktop application) or the AUMID (for a Universal Windows app). For a Windows desktop application, you can use the filename if the path to the file is in the PATH environment variable, otherwise the full path is required.</td><td><img src="images/kiosk-account-details.png" alt="The 'Configure kiosk common settings' button as displayed while provisioning a kiosk device in Windows Configuration Designer."/></td></tr>
@@ -222,36 +207,31 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 >[!IMPORTANT]
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
 
-
-
-
 [Learn how to apply a provisioning package.](provisioning-packages/provisioning-apply-package.md)
-
-
-
-
-
- 
-
 
 <span id="mdm" />
 
 ## Set up a kiosk or digital sign using Microsoft Intune or other MDM service
 
->App type: UWP 
+>App type: 
+> - UWP
 >
->OS edition: Windows 10 Pro (version 1709), Ent, Edu
+>OS edition: 
+> - Windows 10 Pro version 1709+, Ent, Edu
+> - Windows 11
 >
->Account type: Local standard user, Azure AD
+>Account type:
+> - Local standard user
+> - Azure AD
 
 
 
 Microsoft Intune and other MDM services enable kiosk configuration through the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp). Assigned Access has a `KioskModeApp` setting. In the `KioskModeApp` setting, you enter the user account name and the [AUMID](/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) for the app to run in kiosk mode.
 
 >[!TIP]
->Starting in Windows 10, version 1803, a ShellLauncher node has been added to the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). 
+>A ShellLauncher node has been added to the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). 
 
-To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings). For other MDM services, see the documentation for your provider.
+To configure a kiosk in Microsoft Intune, see [Windows client and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings). For other MDM services, see the documentation for your provider.
 
 
 
@@ -261,7 +241,6 @@ To exit the assigned access (kiosk) app, press **Ctrl + Alt + Del**, and then si
 
 If you press **Ctrl + Alt + Del** and do not sign in to another account, after a set time, assigned access will resume. The default time is 30 seconds, but you can change that in the following registry key:
 
-**HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI**
+`HKEY\_LOCAL\_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI`
 
 To change the default time for assigned access to resume, add *IdleTimeOut* (DWORD) and enter the value data as milliseconds in hexadecimal.
-

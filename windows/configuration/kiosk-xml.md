@@ -1,6 +1,6 @@
 ---
-title: Assigned Access configuration kiosk XML reference (Windows 10)
-description: Learn about the assigned access configuration (kiosk) for XML and XSD for kiosk device configuration in Windows 10.
+title: Assigned Access configuration kiosk XML reference (Windows 10/11)
+description: Learn about the assigned access configuration (kiosk) for XML and XSD for kiosk device configuration in Windows 10/11.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 ms.reviewer: 
 manager: dansimp
@@ -21,7 +21,8 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
+- Windows 10
+- Windwos 11
 
 ## Full XML sample
 
@@ -255,9 +256,10 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 ```
 
 ## Global Profile Sample XML
-Global Profile is currently supported in Windows 10, version 2004. Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lockdown mode, or used as mitigation when a profile cannot be determined for a user.
+Global Profile is currently supported in Windows 10 version 2004 / Windows 11. Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lockdown mode, or used as mitigation when a profile cannot be determined for a user.
 
-This sample demonstrates that only a global profile is used, no active user configured. Global profile will be applied when every non-admin account logs in 
+This sample demonstrates that only a global profile is used, no active user configured. Global profile will be applied when every non-admin account logs in.
+
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <AssignedAccessConfiguration
@@ -394,7 +396,7 @@ Below sample shows dedicated profile and global profile mixed usage, a user woul
 ```
 
 ## Folder Access sample xml
-In Windows 10, version 1809, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granularity and easier use, and is available in Windows 10 version 2009 and later.
+Starting with Windows 10 version 1809 +, folder access is locked down so that when common file dialog is opened, IT Admin can specify if the user has access to the Downloads folder, or no access to any folder at all. This restriction has been redesigned for finer granularity and easier use, and is available in Windows 10 version 2009+.
 
 IT Admin now can specify user access to Downloads folder, Removable drives, or no restrictions at all. Downloads and Removable Drives can be allowed at the same time.
 
@@ -636,8 +638,9 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
 ## XSD for AssignedAccess configuration XML
 
 >[!NOTE]
->Updated for Windows 10, version 1903 and later.
-Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
+>Updated for Windows 10, version 1903+.
+
+The following XML schema is for AssignedAccess Configuration up to Windows 10 1803 release.:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -814,7 +817,8 @@ Below schema is for AssignedAccess Configuration up to Windows 10 1803 release.
 </xs:schema>
 ```
 
-Here is the schema for new features introduced in Windows 10 1809 release
+The following XML is the schema for new features introduced in Windows 10 1809 release:
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
@@ -859,7 +863,8 @@ Here is the schema for new features introduced in Windows 10 1809 release
 </xs:schema>
 ```
 
-Schema for Windows 10, version 1909 and later
+The following XML is the schema for Windows 10 version 1909+:
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema
@@ -889,7 +894,8 @@ Schema for Windows 10, version 1909 and later
 </xs:schema>
 ```
 
-To authorize a compatible configuration XML that includes elements and attributes from Windows 10, version 1809 or newer, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the autolaunch feature that was added in Windows 10, version 1809, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10, version 1809, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
+To authorize a compatible configuration XML that includes elements and attributes from Windows 10 version 1809 or newer / Windows 11, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the autolaunch feature that was added in Windows 10 version 1809 / Windows 11, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10 version 1809 / Windows 11, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
+
 ```xml
 <AssignedAccessConfiguration
     xmlns="http://schemas.microsoft.com/AssignedAccess/2017/config"

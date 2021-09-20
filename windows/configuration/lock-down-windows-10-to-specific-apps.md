@@ -1,5 +1,5 @@
 ---
-title: Set up a multi-app kiosk  (Windows 10)
+title: Set up a multi-app kiosk  (Windows 10) | Microsoft Docs
 description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 ms.reviewer: 
@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: greg-lindsay
 ms.localizationpriority: medium
-ms.date: 01/09/2019
+ms.date: 09/20/2021
 ms.author: greglin
 ms.topic: article
 ---
@@ -22,13 +22,16 @@ ms.topic: article
 
 - Windows 10 Pro, Enterprise, and Education
 
+> [!NOTE]
+> Currently, multi-app kiosk is only supported on Windows 10. It's not supported on Windows 11.
+
 A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access.
 
 The following table lists changes to multi-app kiosk in recent updates.
 
-|                                                                                                                            New features and improvements                                                                                                                             |                                                                                                           In update                                                                                                           |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                     - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account)                     |                                                                                                   Windows 10, version 1803                                                                                                    |
+| New features and improvements |  In update |
+| --- | ---|
+| - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account) | Windows 10, version 1803 |
 | - Explicitly allow [some known folders when user opens file dialog box](#fileexplorernamespacerestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `https://schemas.microsoft.com/AssignedAccess/201810/config`. |
 
 >[!WARNING]
@@ -43,7 +46,7 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 
 ## Configure a kiosk in Microsoft Intune
 
-To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings). For explanations of the specific settings, see [Windows 10 and later device settings to run as a kiosk in Intune](/intune/kiosk-settings-windows).
+To configure a kiosk in Microsoft Intune, see [Windows client and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings). For explanations of the specific settings, see [Windows client device settings to run as a kiosk in Intune](/intune/kiosk-settings-windows).
 
 <span id="provision" />
 
