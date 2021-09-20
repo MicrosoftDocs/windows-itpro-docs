@@ -1,5 +1,5 @@
 ---
-title: Windows Hello and password changes (Windows 10)
+title: Windows Hello and password changes (Windows)
 description: When you change your password on a device, you may need to sign in with a password on other devices to reset Hello.
 ms.assetid: 83005FE4-8899-47A6-BEA9-C17CCA0B6B55
 ms.reviewer: 
@@ -19,7 +19,9 @@ ms.date: 07/27/2017
 # Windows Hello and password changes
 
 **Applies to**
--   Windows 10
+
+- Windows 10
+- Windows 11
 
 When you set up Windows Hello, the PIN or biometric gesture that you use is specific to that device. You can set up Hello for the same account on multiple devices. If the PIN or biometric is configured as part of Windows Hello for Business, changing the account password will not impact sign-in or unlock with these gestures since it uses a key or certificate. However, if Windows Hello for Business is not deployed and the password for that account changes, you must provide the new password on each device to continue to use Hello.
 
