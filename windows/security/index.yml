@@ -96,27 +96,6 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Cloud services
-    linkLists:
-      - linkListType: overview
-        links:
-        - text: Overview
-          url: cloud.md
-      - linkListType: concept
-        links:
-        - text: Mobile device management
-          url: https://docs.microsoft.com/windows/client-management/mdm/
-        - text: Azure Active Directory
-          url: https://www.microsoft.com/security/business/identity-access-management/azure-active-directory
-        - text: Your Microsoft Account
-          url: identity-protection/access-control/microsoft-accounts.md
-        - text: OneDrive
-          url: https://docs.microsoft.com/onedrive/onedrive
-        - text: Family safety
-          url: threat-protection/windows-defender-security-center/wdsc-family-options.md
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
-  # Card (optional)
   - title: User security and secured identity
     linkLists:
       - linkListType: overview
@@ -139,6 +118,27 @@ landingContent:
           url: identity-protection/access-control/access-control.md
         - text: Smart cards
           url: identity-protection/smart-cards/smart-card-windows-smart-card-technical-reference.md
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Cloud services
+    linkLists:
+      - linkListType: overview
+        links:
+        - text: Overview
+          url: cloud.md
+      - linkListType: concept
+        links:
+        - text: Mobile device management
+          url: https://docs.microsoft.com/windows/client-management/mdm/
+        - text: Azure Active Directory
+          url: https://www.microsoft.com/security/business/identity-access-management/azure-active-directory
+        - text: Your Microsoft Account
+          url: identity-protection/access-control/microsoft-accounts.md
+        - text: OneDrive
+          url: https://docs.microsoft.com/onedrive/onedrive
+        - text: Family safety
+          url: threat-protection/windows-defender-security-center/wdsc-family-options.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
