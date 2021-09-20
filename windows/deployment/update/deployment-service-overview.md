@@ -136,10 +136,10 @@ To enroll devices in Windows Update for Business cloud processing, set the **All
 
 > [!NOTE]
 > Setting this policy by using Group Policy isn't currently supported.
->
-> | Policy                                                                                                       | Sets registry key under **HKLM\\Software**                                |
-> |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-> | MDM for Windows 10, version 1809 or later: ../Vendor/MSFT/ Policy/Config/System/**AllowWUfBCloudProcessing** | \\Microsoft\\PolicyManager\\default\\System\\AllowWUfBCloudProcessing |
+
+| Policy                                                                                                       | Sets registry key under **HKLM\\Software**                                |
+|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| MDM for Windows 10, version 1809 or later: ../Vendor/MSFT/ Policy/Config/System/**AllowWUfBCloudProcessing** | \\Microsoft\\PolicyManager\\default\\System\\AllowWUfBCloudProcessing |
 
 Following is an example of setting the policy using Microsoft Endpoint Manager:
 
