@@ -755,6 +755,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+
 ### ADMX_DnsClient policies
 
 <dl>
@@ -893,6 +894,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-admx-encryptfilesonmove.md#admx-encryptfilesonmove-noencryptonmove" id="admx-encryptfilesonmove-noencryptonmove">ADMX_EncryptFilesonMove/NoEncryptOnMove</a>
+  </dd>
+</dl>
+
+### ADMX_EventLogging policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-eventlogging.md#admx-eventlogging-enableprotectedeventlogging" id="admx-eventlogging-enableprotectedeventlogging">ADMX_EventLogging/EnableProtectedEventLogging</a>
   </dd>
 </dl>
 
@@ -1090,6 +1098,19 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_EventViewer policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionprogram" id="admx-eventviewer-eventviewer_redirectionprogram">ADMX_EventViewer/EventViewer_RedirectionProgram</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters" id="admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters">ADMX_EventViewer/EventViewer_RedirectionProgramCommandLineParameters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionurl" id="admx-eventviewer-eventviewer_redirectionurl">ADMX_EventViewer/EventViewer_RedirectionURL</a>
+  <dd>
+
 ### ADMX_Explorer policies  
 
 <dl>
@@ -1110,10 +1131,30 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_ExternalBoot policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_hibernate" id="admx-externalboot-portableoperatingsystem_hibernate">ADMX_ExternalBoot/PortableOperatingSystem_Hibernate</a>
+  </dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_sleep" id="admx-externalboot-portableoperatingsystem_sleep">ADMX_ExternalBoot/PortableOperatingSystem_Sleep</a>
+  </dd>
+  </dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_launcher" id="admx-externalboot-portableoperatingsystem_launcher">ADMX_ExternalBoot/PortableOperatingSystem_Launcher</a>
+  </dd>
+<dl>
+
 ### ADMX_FileRecovery policies
 <dl>
   <dd>
     <a href="./policy-csp-admx-filerecovery.md#admx-filerecovery-wdiscenarioexecutionpolicy" id="admx-filerecovery-wdiscenarioexecutionpolicy">ADMX_FileRecovery/WdiScenarioExecutionPolicy</a>
+  </dd>
+</dl>
+
+### ADMX_FileRevocation policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-filerevocation.md#admx-filerevocation-delegatedpackagefamilynames" id="admx-filerevocation-delegatedpackagefamilynames">ADMX_FileRevocation/DelegatedPackageFamilyNames</a>
   </dd>
 </dl>
 
