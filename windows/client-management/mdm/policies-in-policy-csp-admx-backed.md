@@ -284,7 +284,7 @@ ms.date: 10/08/2020
 - [ADMX_FileServerVSSProvider/Pol_EncryptProtocol](./policy-csp-admx-fileservervssprovider.md#admx-fileservervssprovider-pol-encryptprotocol)
 - [ADMX_FileSys/DisableCompression](./policy-csp-admx-filesys.md#admx-filesys-disablecompression)
 - [ADMX_FileSys/DisableDeleteNotification](./policy-csp-admx-filesys.md#admx-filesys-disabledeletenotification)
-- ADMX_FileSys/DisableEncryption](./policy-csp-admx-filesys.md#admx-filesys-disableencryption)
+- [ADMX_FileSys/DisableEncryption](./policy-csp-admx-filesys.md#admx-filesys-disableencryption)
 - [ADMX_FileSys/EnablePagefileEncryption](./policy-csp-admx-filesys.md#admx-filesys-enablepagefileencryption)
 - [ADMX_FileSys/LongPathsEnabled](./policy-csp-admx-filesys.md#admx-filesys-longpathsenabled)
 - [ADMX_FileSys/ShortNameCreationSettings](./policy-csp-admx-filesys.md#admx-filesys-shortnamecreationsettings)
