@@ -134,7 +134,7 @@ When your apps are ready, you can add or deploy these apps to your Windows devic
 - **Application Virtualization (App-V)**: App-V allows Win32 apps to be used as virtual apps.
 
   > [!NOTE]
-  > Application Virtualization will be [end of life in April 2026](/lifecycle/announcements/mdop-extended). We recommend looking at **Azure Virtual desktop with MSIX app attach**. For more information, see [What is Azure Virtual Desktop?](/azure/virtual-desktop/overview) and [Set up MSIX app attach with the Azure portal](/azure/virtual-desktop/app-attach-azure-portal).
+  > [!INCLUDE [Application Virtualization will be end of life in April 2026](./includes/app-v-end-life-statement.md)]
 
   On an on-premises server, you install and configure the App-V server components, and then install your Win32 apps. On Windows Enterprise client devices, you use the App-V client components to run the virtualized apps. They allow users to open the virtual apps using the icons and file names they're familiar with. Users use the apps as if they're installed locally.
 
