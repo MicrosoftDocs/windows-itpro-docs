@@ -2306,6 +2306,16 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_MobilePCMobilityCenter policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-mobilepcmobilitycenter.md#admx-mobilepcmobilitycenter-mobilitycenterenable_1" id="admx-mobilepcmobilitycenter-mobilitycenterenable_1">ADMX_MobilePCMobilityCenter/MobilityCenterEnable_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mobilepcmobilitycenter.md#admx-mobilepcmobilitycenter-mobilitycenterenable_2" id="admx-mobilepcmobilitycenter-mobilitycenterenable_2">ADMX_MobilePCMobilityCenter/MobilityCenterEnable_2</a>
+  </dd>
+<dl>
+
 ### ADMX_MSAPolicy policies
 <dl>
   <dd>

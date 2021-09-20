@@ -519,6 +519,8 @@ items:
               href: policy-csp-admx-mmc.md
             - name: ADMX_MMCSnapins
               href: policy-csp-admx-mmcsnapins.md
+            - name: ADMX_MobilePCMobilityCenter
+              href: policy-csp-admx-mobilepcmobilitycenter.md
             - name: ADMX_MSAPolicy
               href: policy-csp-admx-msapolicy.md
             - name: ADMX_msched
