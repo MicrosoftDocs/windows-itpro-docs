@@ -24,7 +24,7 @@ ms.technology: mde
 
 [Microsoft Defender Application Guard Extension](https://www.microsoft.com/security/blog/2019/05/23/new-browser-extensions-for-integrating-microsofts-hardware-based-isolation/) is a web browser add-on available for [Chrome](https://chrome.google.com/webstore/detail/application-guard-extensi/mfjnknhkkiafjajicegabkbimfhplplj/) and [Firefox](https://addons.mozilla.org/en-US/firefox/addon/application-guard-extension/).
 
-[Microsoft Defender Application Guard](md-app-guard-overview.md) provides Hyper-V isolation on Windows 10, to protect users from potentially harmful content on the web. The extension helps Application Guard protect users running other web browsers.
+[Microsoft Defender Application Guard](md-app-guard-overview.md) provides Hyper-V isolation on Windows 10 and Windows 11, to protect users from potentially harmful content on the web. The extension helps Application Guard protect users running other web browsers.
 
 > [!TIP]
 > Application Guard, by default, offers [native support](/deployedge/microsoft-edge-security-windows-defender-application-guard) to both Microsoft Edge and Internet Explorer. These browsers do not need the extension described here for Application Guard to protect them.
@@ -38,6 +38,7 @@ Microsoft Defender Application Guard Extension works with the following editions
 - Windows 10 Professional
 - Windows 10 Enterprise
 - Windows 10 Education
+- Windows 11
 
 Application Guard itself is required for the extension to work. It has its own set of [requirements](reqs-md-app-guard.md). Check the Application Guard [installation guide](install-md-app-guard.md) for further steps, if you don't have it installed already.
 
