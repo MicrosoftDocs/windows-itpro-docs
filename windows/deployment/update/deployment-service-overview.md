@@ -136,26 +136,35 @@ To enroll devices in Windows Update for Business cloud processing, set the **All
 
 > [!NOTE]
 > Setting this policy by using Group Policy isn't currently supported.
-
-| Policy                                                                                                       | Sets registry key under **HKLM\\Software**                                |
-|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
-| MDM for Windows 10, version 1809 or later: ../Vendor/MSFT/ Policy/Config/System/**AllowWUfBCloudProcessing** | \\Microsoft\\PolicyManager\\default\\System\\AllowWUfBCloudProcessing |
+>
+> | Policy                                                                                                       | Sets registry key under **HKLM\\Software**                                |
+> |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+> | MDM for Windows 10, version 1809 or later: ../Vendor/MSFT/ Policy/Config/System/**AllowWUfBCloudProcessing** | \\Microsoft\\PolicyManager\\default\\System\\AllowWUfBCloudProcessing |
 
 Following is an example of setting the policy using Microsoft Endpoint Manager:
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
+
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
+
 3. Select **Windows 10 and later** in **Platform**, select **Templates** in **Profile type**, select **Custom** in **Template name**, and then select **Create**.
+
 4. In **Basics**, enter a meaningful name and a description for the policy, and then select **Next**.
+
 5. In **Configuration settings**, select **Add**, enter the following settings, select **Save**, and then select **Next**.
     - Name: **AllowWUfBCloudProcessing**
     - Description: Enter a description.
     - OMA-URI: `./Vendor/MSFT/Policy/Config/System/AllowWUfBCloudProcessing`
     - Data type: **Integer**
     - Value: **8**
+
 6. In **Assignments**, select the groups that will receive the profile, and then select **Next**.
+
 7. In **Review + create**, review your settings, and then select **Create**.
-8. (Optional) To verify that the policy reached the client, check the value of the following registry entry: **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager \\default\\System\\AllowWUfBCloudProcessing**.
+
+8. (Optional) To verify that the policy reached the client, check the value of the following registry entry: 
+
+   **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Microsoft\\PolicyManager \\default\\System\\AllowWUfBCloudProcessing**
 
 ## Best practices
 Follow these suggestions for the best results with the service.
@@ -163,6 +172,7 @@ Follow these suggestions for the best results with the service.
 ### Device onboarding 
 
 - Wait until devices finish provisioning before managing with the service. If a device is being provisioned by Autopilot, it can only be managed by the deployment service after it finishes provisioning (typically one day).
+
 - Use the deployment service for feature update management without feature update deferral policy. If you want to use the deployment service to manage feature updates on a device that previously used a feature update deferral policy, it's best to set the feature update deferral policy to **0** days to avoid having multiple conditions governing feature updates. You should only change the feature update deferral policy value to 0 days after you've confirmed that the device was enrolled in the service with no errors.
 
 ### General
