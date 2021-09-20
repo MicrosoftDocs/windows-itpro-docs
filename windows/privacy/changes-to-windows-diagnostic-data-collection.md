@@ -20,7 +20,7 @@ ms.date: 09/17/2021
 
 **Applies to**
 - Windows 11
-- Windows 10, version 1903 and newer
+- Windows 10, version 1903 and later
 - Windows Server 2022
 
 Microsoft is committed to providing you with effective controls over your data and ongoing transparency into our data handling practices. As part of this effort, we have moved our major products and services to a model where data sent back to Microsoft from customer devices will be classified as either **Required** or **Optional**. We believe this will provide our customers with a simpler experience – information should be easier to find, easier to understand, and easier to act upon through the tools we provide.
