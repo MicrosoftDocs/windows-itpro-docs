@@ -16,6 +16,9 @@ ms.topic: article
 
 >Applies to: Windows 10, version 1607
 
+> [!NOTE]
+> [!INCLUDE [Application Virtualization will be end of life in April 2026](../includes/app-v-end-life-statement.md)]
+
 The topics in this section provide information and instructions to help you administer App-V and its components. This information is for system administrators who manage large installations with many servers and clients, and for support personnel who interact directly with the computers or users.
 
 [Getting started with App-V](appv-getting-started.md)  
