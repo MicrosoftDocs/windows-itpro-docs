@@ -15,14 +15,13 @@ metadata:
   audience: ITPro
   ms.collection: M365-security-compliance
   ms.topic: conceptual
-  ms.date: 04/19/2017
+  ms.date: 09/06/2021
   ms.technology: mde
     
 title: Advanced security auditing FAQ
-summary: |
-  **Applies to**
-  -   Windows 10
-  
+
+
+
   This topic for the IT professional lists questions and answers about understanding, deploying, and managing security audit policies.
   
   -   [What is Windows security auditing and why might I want to use it?](#what-is-windows-security-auditing-and-why-might-i-want-to-use-it-)
