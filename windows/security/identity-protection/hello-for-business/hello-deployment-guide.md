@@ -21,6 +21,7 @@ ms.reviewer:
 **Applies to**
 
 - Windows 10, version 1703 or later
+- Windows 11
 
 Windows Hello for Business is the springboard to a world without passwords. It replaces username and password sign-in to Windows with strong user authentication based on an asymmetric key pair.
 
@@ -41,7 +42,7 @@ This guide assumes that baseline infrastructure exists which meets the requireme
 - Proper name resolution, both internal and external names
 - Active Directory and an adequate number of domain controllers per site to support authentication
 - Active Directory Certificate Services 2012 or later
-- One or more workstation computers running Windows 10, version 1703
+- One or more workstation computers running Windows 10, version 1703 or later
 
 If you are installing a server role for the first time, ensure the appropriate server operating system is installed, updated with the latest patches, and joined to the domain. This document provides guidance to install and configure the specific roles on that server.  
 

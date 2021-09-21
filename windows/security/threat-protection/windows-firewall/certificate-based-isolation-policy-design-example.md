@@ -1,5 +1,5 @@
 ---
-title: Certificate-based Isolation Policy Design Example (Windows 10)
+title: Certificate-based Isolation Policy Design Example (Windows)
 description: This example uses a fictitious company to illustrate certificate-based isolation policy design in Windows Defender Firewall with Advanced Security.
 ms.assetid: 509b513e-dd49-4234-99f9-636fd2f749e3
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This design example continues to use the fictitious company Woodgrove Bank, as described in the sections [Firewall Policy Design Example](firewall-policy-design-example.md), [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md), and [Server Isolation Policy Design Example](server-isolation-policy-design-example.md).
 
