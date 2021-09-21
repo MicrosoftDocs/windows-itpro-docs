@@ -8,7 +8,8 @@ manager: dansimp
 audience: ITPro
 ms.topic: conceptual
 ms.date: 09/21/2021
-ms.prod: w10
+ms.prod: m365-security
+ms.technology: windows-sec
 ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 
