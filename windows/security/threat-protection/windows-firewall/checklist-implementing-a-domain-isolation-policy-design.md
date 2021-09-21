@@ -1,5 +1,5 @@
 ---
-title: Checklist Implementing a Domain Isolation Policy Design (Windows 10)
+title: Checklist Implementing a Domain Isolation Policy Design (Windows)
 description: Use these references to learn about the domain isolation policy design and links to other checklists to complete tasks require to implement this design.
 ms.assetid: 76586eb3-c13c-4d71-812f-76bff200fc20
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This parent checklist includes cross-reference links to important concepts about the domain isolation policy design. It also contains links to subordinate checklists that will help you complete the tasks that are required to implement this design.
 
