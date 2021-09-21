@@ -19,18 +19,18 @@ Today’s organizations need a new security model that more effectively adapts t
 
 The [Zero Trust Principles](https://www.microsoft.com/security/business/zero-trust) are threefold.
 
-**Verify explicitly**. Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and monitor anomalies.
+- **Verify explicitly**. Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and monitor anomalies.
 
-**Use least-privileged access**. Limit user access with just-in-time and just-enough-access, risk-based adaptive polices, and data protection to help secure data and maintain productivity.
+- **Use least-privileged access**. Limit user access with just-in-time and just-enough-access, risk-based adaptive policies, and data protection to help secure data and maintain productivity.
 
-**Assume breach**. Prevent attackers from obtaining access to minimize potential damage to data and systems. Protect privileged roles, verify end-to-end encryption, use analytics to get visibility, and drive threat detection to improve defenses.
+- **Assume breach**. Prevent attackers from obtaining access to minimize potential damage to data and systems. Protect privileged roles, verify end-to-end encryption, use analytics to get visibility, and drive threat detection to improve defenses.
 
 For Windows 11, the Zero Trust concept of verify explicitly applies to the risks introduced by both devices and users. Windows 11 provides IT administrators the attestation and measurements to determine whether a device meets requirements and can be trusted. And Windows 11 works out of the box with Microsoft Intune and Azure Active Directory, so access decisions and enforcement are seamless. Plus, IT Administrators can easily customize Windows 11 to meet specific user and policy requirements for access, privacy, compliance, and more.
 
 ## Device health attestation on Windows
 Zero Trust principles state that all endpoints are untrusted unless they are verified. The verification process uses remote attestation as the secure channel to determine and present the device’s health. Remote attestation determines:
 
-- If the device can be trusted. This is determined with the help of a secure root of trust (Trusted Platform Module). Devices can attest that the TPM is enabled and in the attestation flow.
+- If the device can be trusted. The determination is made with the help of a secure root of trust (Trusted Platform Module). Devices can attest that the TPM is enabled and in the attestation flow.
 - If the OS booted correctly. Many security risks can emerge during the boot process as this process can be the most privileged component of the whole system.
 - If the OS has the right set of security features enabled.
 Windows includes many security features to help protect users from malware and attacks. However, trusting the Windows security components can only be achieved if the platform boots as expected and was not tampered with. Windows relies on Unified Extensible Firmware Interface (UEFI) Secure Boot, ELAM, DRTM, Trusted Boot and other low-level hardware and firmware security features to protect your PC from attacks. When you power on your PC until your anti-malware starts, Windows is backed with the appropriate hardware configurations helps keep you safe. [Measured and Trusted boot](information-protection/secure-the-windows-10-boot-process.md), implemented by bootloaders and BIOS, verifies and cryptographically records each step of the boot in a chained manner. These events are bound to a security coprocessor (TPM) that acts as the Root of Trust. Remote Attestation is the mechanism by which these events are read and verified by a service to provide a verifiable, unbiased, and tamper resilient report. Remote attestation is the trusted auditor of your systems boot, allowing relying parties to bind trust to the device and its security. 
