@@ -1,5 +1,5 @@
 ---
-title: GPO\_DOMISO\_Boundary (Windows 10)
+title: GPO\_DOMISO\_Boundary (Windows)
 description: This example GPO supports devices that are not part of the isolated domain to access specific servers that must be available to those untrusted devices.
 ms.assetid: ead3a510-c329-4c2a-9ad2-46a3b4975cfd
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This GPO is authored by using the Windows Defender Firewall with Advanced Security interface in the Group Policy editing tools. Woodgrove Bank began by copying and pasting the GPO for the Windows Server 2008 version of the isolated domain GPO, and then renamed the copy to reflect its new purpose.
 
