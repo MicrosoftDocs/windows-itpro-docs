@@ -39,28 +39,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -77,7 +83,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure Automatic Maintenance activation boundary. The maintenance activation boundary is the daily scheduled time at which Automatic Maintenance starts.
+This policy setting allows you to configure Automatic Maintenance activation boundary. The maintenance activation boundary is the daily scheduled time at which Automatic Maintenance starts.
 
 If you enable this policy setting, this will override the default daily scheduled time as specified in Security and Maintenance/Automatic Maintenance Control Panel.
 
@@ -108,28 +114,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -146,7 +158,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting allows you to configure Automatic Maintenance activation random delay.
+This policy setting allows you to configure Automatic Maintenance activation random delay.
 
 The maintenance random delay is the amount of time up to which Automatic Maintenance will delay starting from its Activation Boundary.
 
