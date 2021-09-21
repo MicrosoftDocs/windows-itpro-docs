@@ -491,6 +491,10 @@ items:
               href: policy-csp-admx-filesys.md
             - name: ADMX_FolderRedirection
               href: policy-csp-admx-folderredirection.md
+            - name: ADMX_FramePanes
+              href: policy-csp-admx-framepanes.md
+            - name: ADMX_FTHSVC
+              href: policy-csp-admx-fthsvc.md 
             - name: ADMX_Globalization
               href: policy-csp-admx-globalization.md
             - name: ADMX_GroupPolicy
@@ -501,6 +505,8 @@ items:
               href: policy-csp-admx-helpandsupport.md
             - name: ADMX_ICM
               href: policy-csp-admx-icm.md
+            - name: ADMX_IIS
+              href: policy-csp-admx-iis.md 
             - name: ADMX_kdc
               href: policy-csp-admx-kdc.md
             - name: ADMX_Kerberos
@@ -509,6 +515,8 @@ items:
               href: policy-csp-admx-lanmanserver.md
             - name: ADMX_LanmanWorkstation
               href: policy-csp-admx-lanmanworkstation.md
+            - name: ADMX_LeakDiagnostic
+              href: policy-csp-admx-leakdiagnostic.md  
             - name: ADMX_LinkLayerTopologyDiscovery
               href: policy-csp-admx-linklayertopologydiscovery.md
             - name: ADMX_Logon

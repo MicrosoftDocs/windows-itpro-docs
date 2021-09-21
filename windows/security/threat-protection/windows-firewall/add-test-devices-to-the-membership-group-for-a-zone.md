@@ -1,5 +1,5 @@
 ---
-title: Add Test Devices to the Membership Group for a Zone (Windows 10)
+title: Add Test Devices to the Membership Group for a Zone (Windows)
 description: Learn how to add devices to the group for a zone to test whether your Windows Defender Firewall with Advanced Security implementation works as expected.
 ms.assetid: 47057d90-b053-48a3-b881-4f2458d3e431
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 Before you deploy your rules to large numbers of devices, you must thoroughly test the rules to make sure that communications are working as expected. A misplaced WMI filter or an incorrectly typed IP address in a filter list can easily block communications between devices. Although we recommend that you set your rules to request mode until testing and deployment is complete, we also recommend that you initially deploy the rules to a small number of devices only to be sure that the correct GPOs are being processed by each device.
 
