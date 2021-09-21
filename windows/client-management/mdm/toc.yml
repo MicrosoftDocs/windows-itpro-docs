@@ -629,6 +629,8 @@ items:
               href: policy-csp-admx-winsrv.md
             - name: ADMX_wlansvc
               href: policy-csp-admx-wlansvc.md
+            - name: ADMX_WordWheel
+              href: policy-csp-admx-wordwheel.md  
             - name: ADMX_WPN
               href: policy-csp-admx-wpn.md
             - name: ApplicationDefaults

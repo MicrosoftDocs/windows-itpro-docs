@@ -4745,6 +4745,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_WordWheel policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-wordwheel.md#admx-wordwheel-customsearch" id="admx-wordwheel-customsearch">ADMX_WordWheel/CustomSearch</a>
+  </dd>
+<dl>
+
 ### ADMX_WPN policies  
 
 <dl>
