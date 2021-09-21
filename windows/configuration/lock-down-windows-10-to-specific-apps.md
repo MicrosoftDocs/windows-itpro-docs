@@ -64,7 +64,7 @@ Watch how to use a provisioning package to configure a multi-app kiosk.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
 
-If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#alternate-methods) or you can configure assigned access using the [MDM Bridge WMI Provider](kiosk-mdm-bridge.md).
+If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#use-mdm-to-deploy-the-multi-app configuration), or you can configure assigned access using the [MDM Bridge WMI Provider](kiosk-mdm-bridge.md).
 
 ### Prerequisites
 

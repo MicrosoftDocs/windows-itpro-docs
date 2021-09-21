@@ -4,7 +4,7 @@ ms.reviewer:
 manager: dansimp
 ms.author: greglin
 description: In this article, learn about the methods for configuring kiosks and digital signs on Windows 10 or Windows 11 desktop editions.
-ms.prod: w10, w11
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -54,7 +54,7 @@ There are several kiosk configuration methods that you can choose from, dependin
 
     ![icon that represents a kiosk.](images/kiosk.png)
 
-    If you want your kiosk to run a single app for anyone to see or use, consider a single-app kiosk that runs either a [Universal Windows Platform (UWP) app](#uwp) or a [Windows desktop application](#classic). For a kiosk that people can sign in to with their accounts or that runs more than one app, choose [a multi-app kiosk](#desktop).
+    If you want your kiosk to run a single app for anyone to see or use, consider a single-app kiosk that runs either a [Universal Windows Platform (UWP) app](#methods-for-a-single-app-kiosk-running-a-UWP-app) or a [Windows desktop application](#classic). For a kiosk that people can sign in to with their accounts or that runs more than one app, choose [a multi-app kiosk](#desktop).
 
 - **Which edition of Windows client will the kiosk run?**
 

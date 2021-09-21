@@ -2,7 +2,7 @@
 title: Set up a shared or guest PC with Windows 10/11
 description: Windows 10 and Windows has shared PC mode, which optimizes Windows client for shared use scenarios.
 keywords: ["shared pc mode"]
-ms.prod: w10, w11
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: greg-lindsay

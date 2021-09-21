@@ -6,7 +6,7 @@ ms.reviewer:
 manager: dansimp
 ms.author: greglin
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
-ms.prod: w10, w11
+ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: greg-lindsay
