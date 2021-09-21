@@ -20,7 +20,7 @@ ms.reviewer:
 
 **Applies to**
 
-- Windows 10, version 1703 or later
+- Windows 10, version 1703 or later, or Windows 11
 - Windows Server, versions 2016 or later
 - Hybrid or On-Premises deployment
 - Key trust
@@ -32,7 +32,7 @@ ms.reviewer:
 
 How can you find out how many domain controllers are needed? You can use performance monitoring on your domain controllers to determine existing authentication traffic.  Windows Server 2016 and above includes the KDC AS Requests performance counter. You can use this counter to determine how much of a domain controller's load is due to initial Kerberos authentication. It's important to remember that authentication for a Windows Hello for Business key trust deployment does not affect Kerberos authentication - it remains unchanged.
 
-Windows 10 accomplishes Windows Hello for Business key trust authentication by mapping an Active Directory user account to one or more public keys. This mapping occurs on the domain controller, which is why the deployment needs Windows Server 2016 or later domain controllers. Public key mapping is only supported by Windows Server 2016 domain controllers and above. Therefore, users in a key trust deployment must authenticate to a Windows Server 2016 and above domain controller.
+Windows 10 or Windows 11 accomplishes Windows Hello for Business key trust authentication by mapping an Active Directory user account to one or more public keys. This mapping occurs on the domain controller, which is why the deployment needs Windows Server 2016 or later domain controllers. Public key mapping is only supported by Windows Server 2016 domain controllers and above. Therefore, users in a key trust deployment must authenticate to a Windows Server 2016 and above domain controller.
   
 Determining an adequate number of Windows Server domain controllers is important to ensure you have enough domain controllers to satisfy all authentication requests, including users mapped with public key trust. What many administrators do not realize is that adding a domain controller that supports public key mapping (in this case Windows Server 2016 or later) to a deployment of existing domain controllers which do not support public key mapping (Windows Server 2008R2, Windows Server 2012R2) instantly makes that single domain controller susceptible to carrying the most load, or what is commonly referred to as "piling on". To illustrate the "piling on" concept, consider the following scenario:
 
