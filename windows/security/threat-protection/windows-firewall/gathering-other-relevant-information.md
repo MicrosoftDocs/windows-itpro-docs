@@ -1,5 +1,5 @@
 ---
-title: Gathering Other Relevant Information (Windows 10)
+title: Gathering Other Relevant Information (Windows)
 description: Learn about additional information you may need to gather to deploy Windows Defender Firewall with Advanced Security policies in your organization.
 ms.assetid: 87ccca07-4346-496b-876d-cdde57d0ce17
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This topic discusses several other things that you should examine to see whether they will cause any complications in your ability to deploy Windows Defender Firewall with Advanced Security policies in your organization.
 
