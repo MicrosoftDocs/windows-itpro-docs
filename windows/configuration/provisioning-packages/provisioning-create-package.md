@@ -1,6 +1,6 @@
 ---
-title: Create a provisioning package (Windows 10)
-description: Learn how to create a provisioning package for Windows 10, which lets you quickly configure a device without having to install a new image.
+title: Create a provisioning package (Windows 10/11)
+description: Learn how to create a provisioning package for Windows 10/11, which lets you quickly configure a device without having to install a new image.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -8,20 +8,19 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2017
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Create a provisioning package for Windows 10
+# Create a provisioning package for Windows 10/11
 
 
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
+-   Windows 11
 
-You can use Windows Configuration Designer to create a provisioning package (.ppkg) that contains customization settings, and then apply the provisioning package to a device running Windows 10 or Windows 10 Mobile. 
+You can use Windows Configuration Designer to create a provisioning package (`.ppkg`) that contains customization settings, and then apply the provisioning package to a device running Windows client.
 
 >[Learn how to install Windows Configuration Designer.](provisioning-install-icd.md)
 
@@ -41,15 +40,14 @@ You can use Windows Configuration Designer to create a provisioning package (.pp
 
     ![Configuration Designer wizards.](../images/icd-create-options-1703.png)
 
-    - The following wizard options provide a simple interface for configuring common settings for desktop, mobile, and kiosk devices: 
+    - The following wizard options provide a simple interface for configuring common settings for desktop and kiosk devices: 
 
         - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
-        - [Instructions for the mobile wizard](../mobile-devices/provisioning-configure-mobile.md)
         - [Instructions for the kiosk wizard](../kiosk-single-app.md#wizard)
         - [Instructions for HoloLens wizard](/hololens/hololens-provisioning)
         - [Instructions for Surface Hub wizard](/surface-hub/provisioning-packages-for-surface-hub)
-        
-      Wizards are also available for creating provisioning packages for Microsoft Surface Hub and Microsoft HoloLens devices. For a summary of the settings available in the desktop, mobile, and kiosk devices, see [What you can configure using Configuration Designer wizards](provisioning-packages.md#configuration-designer-wizards).
+
+      Wizards are also available for creating provisioning packages for Microsoft Surface Hub and Microsoft HoloLens devices. For a summary of the settings available in the desktop and kiosk devices, see [What you can configure using Configuration Designer wizards](provisioning-packages.md#configuration-designer-wizards).
 
     - The **Advanced provisioning** option opens a new project with all the runtime settings available. (The rest of this procedure uses advanced provisioning.)
 
@@ -63,14 +61,13 @@ You can use Windows Configuration Designer to create a provisioning package (.pp
 4. Select the settings you want to configure, based on the type of device, and then select **Next**. The following table describes the options.
 
 
-   |          Windows edition          |              Settings available for customization               |                                              Provisioning package can apply to                                              |
-   |-----------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-   |       All Windows editions        |                         Common settings                         |                                                   All Windows 10 devices                                                    |
-   |   All Windows desktop editions    |    Common settings and settings specific to desktop devices     |                All Windows 10 desktop editions (Home, Pro, Enterprise, Pro Education, Enterprise Education)                 |
-   |    All Windows mobile editions    |     Common settings and settings specific to mobile devices     |                                                All Windows 10 Mobile devices                                                |
-   |        Windows 10 IoT Core        |  Common settings and settings specific to Windows 10 IoT Core   |                                               All Windows 10 IoT Core devices                                               |
-   |      Windows 10 Holographic       | Common settings and settings specific to Windows 10 Holographic |                  [Microsoft HoloLens](/hololens/hololens-provisioning)                   |
-   | Common to Windows 10 Team edition |    Common settings and settings specific to Windows 10 Team     | [Microsoft Surface Hub](/surface-hub/provisioning-packages-for-surface-hub) |
+    | Windows edition | Settings available for customization | Provisioning package can apply to |
+    |---|---|---|
+    |  All Windows editions | Common settings  | All Windows client devices |
+    | All Windows desktop editions    |    Common settings and settings specific to desktop devices |  All Windows client desktop editions (Home, Pro, Enterprise, Pro Education, Enterprise Education) |
+    | Windows 10 IoT Core        |  Common settings and settings specific to Windows 10 IoT Core   | All Windows 10 IoT Core devices |
+    | Windows 10 Holographic       | Common settings and settings specific to Windows 10 Holographic | [Microsoft HoloLens](/hololens/hololens-provisioning) |
+    | Common to Windows 10 Team edition |    Common settings and settings specific to Windows 10 Team  | [Microsoft Surface Hub](/surface-hub/provisioning-packages-for-surface-hub) |
 
 
 5. On the **Import a provisioning package (optional)** page, you can select **Finish** to create your project, or browse to and select an existing provisioning package to import to your project, and then select **Finish**.
@@ -89,21 +86,33 @@ For an advanced provisioning project, Windows Configuration Designer opens the *
 
 ![What the ICD interface looks like.](../images/icd-runtime.png)
 
-The settings in Windows Configuration Designer are based on Windows 10 configuration service providers (CSPs). To learn more about CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](./how-it-pros-can-use-configuration-service-providers.md).
+The settings in Windows Configuration Designer are based on Windows client configuration service providers (CSPs). To learn more about CSPs, see [Introduction to configuration service providers (CSPs) for IT pros](./how-it-pros-can-use-configuration-service-providers.md).
 
 The process for configuring settings is similar for all settings. The following table shows an example.
 
-<table>
-<tr><td><img src="../images/one.png" alt="step one"/></br>Expand a category.</td><td><img src="../images/icd-step1.png" alt="Expand Certificates category"/></td></tr>
-<tr><td><img src="../images/two.png" alt="step two"/></br>Select a setting.</td><td><img src="../images/icd-step2.png" alt="Select ClientCertificates"/></td></tr>
-<tr><td><img src="../images/three.png" alt="step three"/></br>Enter a value for the setting. Select <strong>Add</strong> if the button is displayed.</td><td><img src="../images/icd-step3.png" alt="Enter a name for the certificate"/></td></tr>
-<tr><td><img src="../images/four.png" alt="step four"/></br>Some settings, such as this example, require additional information. In <strong>Available customizations</strong>, select the value you just created, and additional settings are displayed.</td><td><img src="../images/icd-step4.png" alt="Additional settings for client certificate"/></td></tr> 
-<tr><td><img src="../images/five.png" alt="step five"/></br>When the setting is configured, it is displayed in the <strong>Selected customizations</strong> pane.</td><td><img src="../images/icd-step5.png" alt="Selected customizations pane"/></td></tr>
-</table>
+1. Expand a category:
 
-For details on each specific setting, see [Windows Provisioning settings reference](../wcd/wcd.md). The reference topic for a setting is also displayed in Windows Configuration Designer when you select the setting, as shown in the following image.
+    :::image type="content" source="../images/icd-step1.png" alt-text="In Windows Configuration Designer, expand the Certificates category.":::
 
-![Windows Configuration Designer opens the reference topic when you select a setting.](../images/icd-setting-help.png) 
+2. Select a setting:
+
+    :::image type="content" source="../images/icd-step2.png" alt-text="In Windows Configuration Designer, select ClientCertificates.":::
+
+3. Enter a value for the setting. Select **Add** if the button is displayed:
+
+    :::image type="content" source="../images/icd-step3.png" alt-text="In Windows Configuration Designer, enter a name for the certificate.":::
+
+4. Some settings, such as this example, require additional information. In **Available customizations**, select the value you just created, and more settings are displayed:
+
+    :::image type="content" source="../images/icd-step4.png" alt-text="In Windows Configuration Designer, additional settings for client certificate are available.":::
+
+5. When the setting is configured, it is displayed in the **Selected customizations** pane:
+
+    :::image type="content" source="../images/icd-step5.png" alt-text="In Windows Configuration Designer, the selected customizations pane shows your settings.":::
+
+For details on each specific setting, see [Windows Provisioning settings reference](../wcd/wcd.md). The reference article for a setting is also displayed in Windows Configuration Designer when you select the setting, as shown in the following image.
+
+![Windows Configuration Designer opens the reference topic when you select a setting.](../images/icd-setting-help.png)
 
 
  ## Build package
@@ -120,7 +129,7 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
 3. In the **Select security details for the provisioning package** window, you can select to encrypt and/or sign a provisioning package with a selected certificate, and then select **Next**. Both selections are optional:
 
-   - **Encrypt package** -  If you select this option, an auto-generated password will be shown on the screen.
+   - **Encrypt package** -  If you select this option, an autogenerated password will be shown on the screen.
    - **Sign package** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by selecting **Select** and choosing the certificate you want to use to sign the package.
 
      >[!NOTE]
@@ -148,19 +157,17 @@ For details on each specific setting, see [Windows Provisioning settings referen
 
 - Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
-- Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
-
 - [How to bulk-enroll devices with On-premises Mobile Device Management in Microsoft Endpoint Configuration Manager](/configmgr/mdm/deploy-use/bulk-enroll-devices-on-premises-mdm)
 
-## Related topics
+## Related articles
 
-- [Provisioning packages for Windows 10](provisioning-packages.md)
-- [How provisioning works in Windows 10](provisioning-how-it-works.md)
+- [Provisioning packages for Windows client](provisioning-packages.md)
+- [How provisioning works in Windows client](provisioning-how-it-works.md)
 - [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
+- [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)

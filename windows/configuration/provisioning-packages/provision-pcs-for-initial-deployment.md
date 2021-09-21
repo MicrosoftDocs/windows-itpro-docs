@@ -1,8 +1,8 @@
 ---
-title: Provision PCs with common settings (Windows 10)
+title: Provision PCs with common settings (Windows 10/11)
 description: Create a provisioning package to apply common settings to a PC running Windows 10. 
 ms.assetid: 66D14E97-E116-4218-8924-E2A326C9367E
-ms.reviewer: 
+ms.reviewer: gkomatsu
 manager: dansimp
 keywords: ["runtime provisioning", "provisioning package"]
 ms.prod: w10
@@ -12,7 +12,6 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2017
 ---
 
 # Provision PCs with common settings for initial deployment (desktop wizard)
@@ -20,16 +19,17 @@ ms.date: 07/27/2017
 
 **Applies to**
 
--   Windows 10
+- Windows 10
+- Windows 11
 
-This topic explains how to create and apply a provisioning package that contains common enterprise settings to a device running all desktop editions of Windows 10 except Windows 10 Home.
+This topic explains how to create and apply a provisioning package that contains common enterprise settings to a device running all desktop editions of Windows client except Home.
 
 You can apply a provisioning package on a USB drive to off-the-shelf devices during setup, making it fast and easy to configure new devices. 
 
 ## Advantages
 -   You can configure new devices without reimaging.
 
--   Works on both mobile and desktop devices.
+-   Works on desktop devices.
 
 -   No network connectivity required.
 
@@ -51,7 +51,7 @@ The desktop wizard helps you configure the following settings in a provisioning 
 - Add applications and certificates
 
 >[!WARNING]
->You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
+>You must run Windows Configuration Designer on Windows client to configure Azure Active Directory enrollment using any of the wizards.
 
 Provisioning packages can include management instructions and policies, installation of specific apps, customization of network connections and policies, and more. 
 
@@ -81,7 +81,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 
 <table>
-<tr><td valign="top"><img src="../images/one.png" alt="step one"/><img src="../images/set-up-device.png" alt="set up device"/></br></br>Enter a name for the device.</br></br>(Optional) Select a license file to upgrade Windows 10 to a different edition. <a href="/windows/deployment/upgrade/windows-10-edition-upgrades" data-raw-source="[See the permitted upgrades.](/windows/deployment/upgrade/windows-10-edition-upgrades)">See the permitted upgrades.</a></br></br>Toggle <strong>Yes</strong> or <strong>No</strong> to <strong>Configure devices for shared use</strong>. This setting optimizes Windows 10 for shared use scenarios. <a href="../set-up-shared-or-guest-pc.md" data-raw-source="[Learn more about shared PC configuration.](../set-up-shared-or-guest-pc.md)">Learn more about shared PC configuration.</a></br></br>You can also select to remove pre-installed software from the device. </td><td><img src="../images/set-up-device-details-desktop.png" alt="device name, upgrade to enterprise, shared use, remove pre-installed software"/></td></tr>
+<tr><td valign="top"><img src="../images/one.png" alt="step one"/><img src="../images/set-up-device.png" alt="set up device"/></br></br>Enter a name for the device.</br></br>(Optional) Select a license file to upgrade Windows client to a different edition. <a href="/windows/deployment/upgrade/windows-10-edition-upgrades" data-raw-source="[See the permitted upgrades.](/windows/deployment/upgrade/windows-10-edition-upgrades)">See the permitted upgrades.</a></br></br>Toggle <strong>Yes</strong> or <strong>No</strong> to <strong>Configure devices for shared use</strong>. This setting optimizes Windows client for shared use scenarios. <a href="../set-up-shared-or-guest-pc.md" data-raw-source="[Learn more about shared PC configuration.](../set-up-shared-or-guest-pc.md)">Learn more about shared PC configuration.</a></br></br>You can also select to remove pre-installed software from the device. </td><td><img src="../images/set-up-device-details-desktop.png" alt="device name, upgrade to enterprise, shared use, remove pre-installed software"/></td></tr>
 <tr><td valign="top"><img src="../images/two.png" alt="step two"/>  <img src="../images/set-up-network.png" alt="set up network"/></br></br>Toggle <strong>On</strong> or <strong>Off</strong> for wireless network connectivity. If you select <strong>On</strong>, enter the SSID, the network type (<strong>Open</strong> or <strong>WPA2-Personal</strong>), and (if <strong>WPA2-Personal</strong>) the password for the wireless network.</td><td><img src="../images/set-up-network-details-desktop.png" alt="Enter network SSID and type"/></td></tr>
 <tr><td valign="top"><img src="../images/three.png" alt="step three"/>  <img src="../images/account-management.png" alt="account management"/></br></br>Enable account management if you want to configure settings on this page. </br></br>You can enroll the device in Active Directory, enroll in Azure Active Directory, or create a local administrator account on the device</br></br>To enroll the device in Active Directory, enter the credentials for a least-privileged user account to join the device to the domain.</br></br>Before you use a Windows Configuration Designer wizard to configure bulk Azure AD enrollment, <a href="/azure/active-directory/active-directory-azureadjoin-setup" data-raw-source="[set up Azure AD join in your organization](/azure/active-directory/active-directory-azureadjoin-setup)">set up Azure AD join in your organization</a>. The <strong>maximum number of devices per user</strong> setting in your Azure AD tenant determines how many times the bulk token that you get in the wizard can be used. To enroll the device in Azure AD, select that option and enter a friendly name for the bulk token you will get using the wizard. Set an expiration date for the token (maximum is 180 days from the date you get the token). Click <strong>Get bulk token</strong>. In the <strong>Let&#39;s get you signed in</strong> window, enter an account that has permissions to join a device to Azure AD, and then the password. Click <strong>Accept</strong> to give Windows Configuration Designer the necessary permissions. </br></br>To create a local administrator account, select that option and enter a user name and password. </br></br><strong>Important:</strong> If you create a local account in the provisioning package, you must change the password using the <strong>Settings</strong> app every 42 days. If the password is not changed during that period, the account might be locked out and unable to sign in.  </td><td><img src="../images/account-management-details.png" alt="join Active Directory, Azure AD, or create a local admin account"/></td></tr>
 <tr><td valign="top"><img src="../images/four.png" alt="step four"/> <img src="../images/add-applications.png" alt="add applications"/></br></br>You can install multiple applications, both Windows desktop applications (Win32) and Universal Windows Platform (UWP) apps, in a provisioning package. The settings in this step vary according to the application that you select. For help with the settings, see <a href="provision-pcs-with-apps.md" data-raw-source="[Provision PCs with apps](provision-pcs-with-apps.md)">Provision PCs with apps</a>. </td><td><img src="../images/add-applications-details.png" alt="add an application"/></td></tr>
@@ -98,19 +98,17 @@ After you're done, click **Create**. It only takes a few seconds. When the packa
 
 -   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
-
  
-## Related topics
+## Related articles
 
-- [Provisioning packages for Windows 10](provisioning-packages.md)
-- [How provisioning works in Windows 10](provisioning-how-it-works.md)
+- [Provisioning packages for Windows client](provisioning-packages.md)
+- [How provisioning works in Windows client](provisioning-how-it-works.md)
 - [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Create a provisioning package](provisioning-create-package.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
+- [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
 - [NFC-based device provisioning](../mobile-devices/provisioning-nfc.md)
 - [Use the package splitter tool](../mobile-devices/provisioning-package-splitter.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)

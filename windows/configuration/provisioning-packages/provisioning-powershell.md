@@ -1,5 +1,5 @@
 ---
-title: PowerShell cmdlets for provisioning Windows 10 (Windows 10)
+title: PowerShell cmdlets for provisioning Windows 10/11 (Windows 10/11)
 description: 
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -8,32 +8,68 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer: gkomatsu
 manager: dansimp
 ---
 
-# PowerShell cmdlets for provisioning Windows 10 (reference)
+# PowerShell cmdlets for provisioning Windows client (reference)
 
 
 **Applies to**
 
 - Windows 10
-- Windows 10 Mobile
+- Windows 11
 
-Windows 10, version 1703, ships with Windows Provisioning PowerShell cmdlets. These cmdlets make it easy to script the following functions.
+Windows client includes Provisioning PowerShell cmdlets. These cmdlets make it easy to script the following functions.
 
+## cmdlets
 
+- **Add-ProvisioningPackage**: Applies a provisioning package.
 
-<table><tr><th>Cmdlet</th><th>Use this cmdlet to</th><th>Syntax</th></tr>
-<tr><td>Add-ProvisioningPackage</td><td> Apply a provisioning package</td><td><code>Add-ProvisioningPackage [-Path] &lt;string&gt; [-ForceInstall] [-LogsFolder &lt;string&gt;] [-QuietInstall] [-WprpFile &lt;string&gt;] [&lt;CommonParameters&gt;]</code></td></tr>
-<tr><td rowspan="3">Remove-ProvisioningPackage</td><td rowspan="3">Remove a provisioning package</td><td>   <code>Remove-ProvisioningPackage -PackageId &lt;string&gt; [-LogsFolder &lt;string&gt;] [-WprpFile &lt;string&gt;]  [&lt;CommonParameters&gt;]</code> </td></tr><tr><td> <code>Remove-ProvisioningPackage -Path &lt;string&gt; [-LogsFolder &lt;string&gt;] [-WprpFile &lt;string&gt;]  [&lt;CommonParameters&gt;]</code> </td></tr><tr><td> <code>Remove-ProvisioningPackage -AllInstalledPackages [-LogsFolder &lt;string&gt;] [-WprpFile &lt;string&gt;]  [&lt;CommonParameters&gt;]</code> </td></tr>
-<tr><td rowspan="3">Get-ProvisioningPackage </td><td rowspan="3">   Get information about an installed provisioning package </td><td> <code>Get-ProvisioningPackage -PackageId &lt;string&gt; [-LogsFolder &lt;string&gt;] [-WprpFile &lt;string&gt;]  [&lt;CommonParameters&gt;]</code> </td></tr><tr><td><code>Get-ProvisioningPackage -Path &lt;string&gt; [-LogsFolder &lt;string&gt;] [-WprpFile &lt;string&gt;] [&lt;CommonParameters&gt;]</code> </td></tr><tr><td> <code>Get-ProvisioningPackage -AllInstalledPackages [-LogsFolder &lt;string&gt;] [-WprpFile &lt;string&gt;]  [&lt;CommonParameters&gt;]</code> </td></tr>
-<tr><td rowspan="2"> Export-ProvisioningPackage</td><td rowspan="2">    Extract the contents of a provisioning package</td><td> <code>Export-ProvisioningPackage -PackageId &lt;string&gt; -OutputFolder &lt;string&gt; [-Overwrite] [-AnswerFileOnly] [-LogsFolder &lt;string&gt;] [-WprpFile &lt;string&gt;]  [&lt;CommonParameters&gt;]</code> </td></tr><tr><td> <code>Export-ProvisioningPackage -Path &lt;string&gt; -OutputFolder &lt;string&gt; [-Overwrite] [-AnswerFileOnly] [-LogsFolder &lt;string&gt;] [-WprpFile &lt;string&gt;]  [&lt;CommonParameters&gt;]</code> </td></tr>
-<tr><td> Install-TrustedProvisioningCertificate </td><td>   Adds a certificate to the Trusted Certificate store </td><td><code>Install-TrustedProvisioningCertificate &lt;path to local certificate file on disk&gt;</code>  </td></tr>
-<tr><td>Get-TrustedProvisioningCertificate</td><td> List all installed trusted provisioning certificates; use this cmdlet to get the certificate thumbprint to use with the <strong>Uninstall-TrustedProvisioningCertificate</strong> cmdlet</td><td><code>Get-TrustedProvisioningCertificate</code></td></tr>
-<tr><td>Uninstall-TrustedProvisioningCertificate </td><td> Remove a previously installed provisioning certificate</td><td><code>Uninstall-TrustedProvisioningCertificate &lt;thumbprint&gt;</code></td></tr>
-</table>	
+  Syntax:
+
+  - `Add-ProvisioningPackage [-Path] <string> [-ForceInstall] [-LogsFolder <string>] [-QuietInstall] [-WprpFile <string>] [<CommonParameters>]`
+
+- **Remove-ProvisioningPackage**: Removes a provisioning package.
+
+  Syntax:
+
+  - `Remove-ProvisioningPackage -PackageId <string> [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]`
+  - `Remove-ProvisioningPackage -Path <string> [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]`
+  - `Remove-ProvisioningPackage -AllInstalledPackages [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]`
+
+- **Get-ProvisioningPackage**: Gets information about an installed provisioning package.
+
+  Syntax:
+
+  - `Get-ProvisioningPackage -PackageId <string> [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]`
+  - `Get-ProvisioningPackage -Path <string> [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]`
+  - `Get-ProvisioningPackage -AllInstalledPackages [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]`
+
+- **Export-ProvisioningPackage**: Extracts the contents of a provisioning package.
+
+  Syntax:
+
+  - `Export-ProvisioningPackage -PackageId <string> -OutputFolder <string> [-Overwrite] [-AnswerFileOnly] [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]`
+  - `Export-ProvisioningPackage -Path <string> -OutputFolder <string> [-Overwrite] [-AnswerFileOnly] [-LogsFolder <string>] [-WprpFile <string>] [<CommonParameters>]`
+
+- **Install-TrustedProvisioningCertificate**: Adds a certificate to the Trusted Certificate store.
+
+  Syntax:
+
+  - `Install-TrustedProvisioningCertificate <path to local certificate file on disk>`
+
+- **Get-TrustedProvisioningCertificate**: Lists all installed trusted provisioning certificates. Use this cmdlet to get the certificate thumbprint to use with the `Uninstall-TrustedProvisioningCertificate` cmdlet. 
+
+  Syntax:
+
+  - `Get-TrustedProvisioningCertificate`
+
+- **Uninstall-TrustedProvisioningCertificate**: Removes a previously installed provisioning certificate.
+
+  Syntax:
+
+  - `Uninstall-TrustedProvisioningCertificate <thumbprint>`
 
 >[!NOTE]
 > You can use Get-Help to get usage help on any command. For example: `Get-Help Add-ProvisioningPackage`
@@ -51,9 +87,9 @@ Trace logs are captured when using cmdlets. The following logs are available in 
 >When applying provisioning packages using Powershell cmdlets, the default behavior is to suppress the prompt that appears when applying an unsigned provisioning package. This is by design so that provisioning packages can be applied as part of existing scripts.
 
 
-## Related topics
+## Related articles
 
-- [How provisioning works in Windows 10](provisioning-how-it-works.md)
+- [How provisioning works in Windows client](provisioning-how-it-works.md)
 - [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Create a provisioning package](provisioning-create-package.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
@@ -62,16 +98,4 @@ Trace logs are captured when using cmdlets. The following logs are available in 
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
-
-
-
-
-
- 
-
- 
-
-
-
-
 

@@ -1,6 +1,6 @@
 ---
-title: Install Windows Configuration Designer (Windows 10)
-description: Learn how to install and use Windows Configuration Designer so you can easily configure devices running Windows 10. 
+title: Install Windows Configuration Designer (Windows 10/11)
+description: Learn how to install and use Windows Configuration Designer so you can easily configure devices running Windows 10/11. 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -8,7 +8,6 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 10/16/2017
 ms.reviewer: 
 manager: dansimp
 ---
@@ -19,13 +18,13 @@ manager: dansimp
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
+-   Windows 11
 
-Use the Windows Configuration Designer tool to create provisioning packages to easily configure devices running Windows 10. Windows Configuration Designer is primarily designed for use by IT departments for business and educational institutions who need to provision bring-your-own-device (BYOD) and business-supplied devices.
+Use the Windows Configuration Designer tool to create provisioning packages to easily configure devices running Windows client. Windows Configuration Designer is primarily designed for use by IT departments for business and educational institutions who need to provision bring-your-own-device (BYOD) and business-supplied devices.
 
 ## Supported platforms
 
-Windows Configuration Designer can create provisioning packages for Windows 10 desktop and mobile editions, including Windows 10 IoT Core, as well as Microsoft Surface Hub and Microsoft HoloLens. You can run Windows Configuration Designer on the following operating systems:
+Windows Configuration Designer can create provisioning packages for Windows client desktop, including Windows IoT Core, as well as Microsoft Surface Hub and Microsoft HoloLens. You can run Windows Configuration Designer on the following operating systems:
 
 - Windows 10 - x86 and amd64
 - Windows 8.1 Update - x86 and amd64
@@ -39,18 +38,18 @@ Windows Configuration Designer can create provisioning packages for Windows 10 d
 - Windows Server 2008 R2
 
 >[!WARNING]
->You must run Windows Configuration Designer on Windows 10 to configure Azure Active Directory enrollment using any of the wizards.
+>You must run Windows Configuration Designer on Windows client to configure Azure Active Directory enrollment using any of the wizards.
 
 ## Install Windows Configuration Designer
 
-On devices running Windows 10, you can install [the Windows Configuration Designer app from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). To run Windows Configuration Designer on other operating systems or in languages other than English, install it from the [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
+On devices running Windows client, you can install [the Windows Configuration Designer app from the Microsoft Store](https://www.microsoft.com/store/apps/9nblggh4tx22). To run Windows Configuration Designer on other operating systems or in languages other than English, install it from the [Windows Assessment and Deployment Kit (ADK) for Windows](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit).
 
 >[!NOTE]
 >If you install Windows Configuration Designer from both the ADK and Microsoft Store, the Store app will not open.
 >
 >The Windows Configuration Designer App from Microsoft Store currently supports only English. For a localized version of the Windows Configuration Designer, install it from the Windows ADK. 
 
-1. Go to [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) and select **Get Windows ADK** for the version of Windows 10 that you want to create provisioning packages for (version 1511, 1607, or 1703).
+1. Go to [Download the Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) and select **Get Windows ADK** for the version of Windows client that you want to create provisioning packages for (version 1511, 1607, or 1703).
 
     >[!NOTE]
     >The rest of this procedure uses Windows ADK for Windows 10, version 1703 as an example.
@@ -94,27 +93,15 @@ On devices running Windows 10, you can install [the Windows Configuration Design
 
 -   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
+## Related articles
 
-## Related topics
-
-- [Provisioning packages for Windows 10](provisioning-packages.md)
-- [How provisioning works in Windows 10](provisioning-how-it-works.md)
+- [Provisioning packages for Windows client](provisioning-packages.md)
+- [How provisioning works in Windows client](provisioning-how-it-works.md)
 - [Create a provisioning package](provisioning-create-package.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
+- [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
-
-
- 
-
- 
-
-
-
-
-
