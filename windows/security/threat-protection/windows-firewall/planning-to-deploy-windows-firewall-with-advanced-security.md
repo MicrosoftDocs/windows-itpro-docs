@@ -1,5 +1,5 @@
 ---
-title: Plan to Deploy Windows Defender Firewall with Advanced Security (Windows 10)
+title: Plan to Deploy Windows Defender Firewall with Advanced Security (Windows)
 description: Use the design information in this article to plan for the deployment of Windows Defender Firewall with Advanced Security in your organization.
 ms.assetid: 891a30c9-dbf5-4a88-a279-00662b9da48e
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 After you collect information about your environment and decide on a design by following the guidance in the [Windows Defender Firewall with Advanced Security Design Guide](windows-firewall-with-advanced-security-design-guide.md), you can begin to plan the deployment of your design. With the completed design and the information in this topic, you can determine which tasks to perform to deploy Windows Defender Firewall with Advanced Security in your organization.
 
