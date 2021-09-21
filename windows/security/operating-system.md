@@ -12,7 +12,7 @@ author: denisebmsft
 ms.collection: M365-security-compliance
 ms.prod: m365-security
 ms.technology: windows-sec
-ms.date: 
+ms.date: 09/21/2021
 ---
 
 # Windows operating system security
