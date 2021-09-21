@@ -23,22 +23,25 @@ manager: dansimp
 
 <dl>
   <dd>
-    <a href="#admx-pca-corporateresources">ADMX_pca/CorporateResources</a>
+    <a href="#admx-pca-detectdeprecatedcomcomponentfailurespolicy">ADMX_pca/DetectDeprecatedCOMComponentFailuresPolicy</a>
   </dd>
   <dd>
-    <a href="#admx-pca-customcommands">ADMX_pca/CustomCommands</a>
+    <a href="#admx-pca-detectdeprecatedcomponentfailurespolicy">ADMX_pca/DetectDeprecatedComponentFailuresPolicy</a>
   </dd>
   <dd>
-    <a href="#admx-pca-dtes">ADMX_pca/DTEs</a>
+    <a href="#admx-pca-detectinstallfailurespolicy">ADMX_pca/DetectInstallFailuresPolicy</a>
   </dd>
   <dd>
-    <a href="#admx-pca-friendlyname">ADMX_pca/FriendlyName</a>
+    <a href="#admx-pca-detectundetectedinstallerspolicy">ADMX_pca/DetectUndetectedInstallersPolicy</a>
   </dd>
   <dd>
-    <a href="#admx-pca-localnameson">ADMX_pca/LocalNamesOn</a>
+    <a href="#admx-pca-detectupdatefailurespolicy">ADMX_pca/DetectUpdateFailuresPolicy</a>
   </dd>
   <dd>
-    <a href="#admx-pca-passivemode">ADMX_pca/PassiveMode</a>
+    <a href="#admx-pca-disablepcauipolicy">ADMX_pca/DisablePcaUIPolicy</a>
+  </dd>
+  <dd>
+    <a href="#admx-pca-detectblockeddriverspolicy">ADMX_pca/DetectBlockedDriversPolicy</a>
   </dd>
 </dl>
 
@@ -51,8 +54,9 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
