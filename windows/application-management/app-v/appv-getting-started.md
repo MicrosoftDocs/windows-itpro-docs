@@ -16,6 +16,9 @@ ms.topic: article
 
 >Applies to: Windows 10, version 1607
 
+> [!NOTE]
+> [!INCLUDE [Application Virtualization will be end of life in April 2026](../includes/app-v-end-life-statement.md)]
+
 Microsoft Application Virtualization (App-V) for Windows 10 delivers Win32 applications to users as virtual applications. Virtual applications are installed on centrally managed servers and delivered to users as a service in real time and on an as-needed basis. Users launch virtual applications from familiar access points and interact with them as if they were installed locally.
 
 With the release of Windows 10, version 1607, App-V is included with the [Windows 10 for Enterprise edition](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise). If you're new to Windows 10 and App-V, you’ll need to download, activate, and install server- and client-side components to start delivering virtual applications to users. To learn what you need to know before getting started with App-V, see the [Application Virtualization (App-V) overview](appv-for-windows.md).

@@ -1,5 +1,5 @@
 ---
-title: Restrict Access to Only Specified Users or Devices (Windows 10)
+title: Restrict Access to Only Specified Users or Devices (Windows)
 description: Restrict access to devices and users that are members of domain groups authorized to access that device using Windows Defender Firewall with Advanced Security.
 ms.assetid: a6106a07-f9e5-430f-8dbd-06d3bf7406df
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 Domain isolation (as described in the previous goal [Restrict Access to Only Trusted Devices](restrict-access-to-only-trusted-devices.md)) prevents devices that are members of the isolated domain from accepting network traffic from untrusted devices. However, some devices on the network might host sensitive data that must be additionally restricted to only those users and computers that have a business requirement to access the data.
 
