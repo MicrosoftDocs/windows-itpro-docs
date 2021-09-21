@@ -1,5 +1,5 @@
 ---
-title: Copy a GPO to Create a New GPO (Windows 10)
+title: Copy a GPO to Create a New GPO (Windows)
 description: Learn how to make a copy of a GPO by using the Active Directory Users and devices MMC snap-in to create a GPO for boundary zone devices.
 ms.assetid: 7f6a23e5-4b3f-40d6-bf6d-7895558b1406
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 To create the GPO for the boundary zone devices, make a copy of the main domain isolation GPO, and then change the settings to request, instead of require, authentication. To make a copy of a GPO, use the Active Directory Users and devices MMC snap-in.
 
@@ -56,4 +57,4 @@ To complete this procedure, you must be a member of the Domain Administrators gr
 
 12. Type the name of the group that contains members of the boundary zone, for example **CG\_DOMISO\_Boundary**, and then click **OK**.
 
-13. If required, change the WMI filter to one appropriate for the new GPO. For example, if the original GPO is for client devices running Windows 10, and the new boundary zone GPO is for devices running Windows Server 2016, then select a WMI filter that allows only those devices to read and apply the GPO.
+13. If required, change the WMI filter to one appropriate for the new GPO. For example, if the original GPO is for client devices running Windows 10 or Windows 11, and the new boundary zone GPO is for devices running Windows Server 2016, then select a WMI filter that allows only those devices to read and apply the GPO.
