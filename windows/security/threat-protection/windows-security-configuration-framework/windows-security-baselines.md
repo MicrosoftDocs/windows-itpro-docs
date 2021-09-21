@@ -11,22 +11,17 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 06/25/2018
+ms.date: 
 ms.reviewer: 
 ms.technology: mde
 ---
 
 # Windows security baselines
 
-**Applies to**  
-
--   Windows 10
--   Windows Server 2016 
--   Office 2016 
 
 ## Using security baselines in your organization 
 
-Microsoft is dedicated to providing its customers with secure operating systems, such as Windows 10 and Windows Server, and secure apps, such as Microsoft Edge. In addition to the security assurance of its products, Microsoft also enables you to have fine control over your environments by providing various configuration capabilities. 
+Microsoft is dedicated to providing its customers with secure operating systems, such as Windows and Windows Server, and secure apps, such as Microsoft Edge. In addition to the security assurance of its products, Microsoft also enables you to have fine control over your environments by providing various configuration capabilities. 
 
 Even though Windows and Windows Server are designed to be secure out-of-the-box, many organizations still want more granular control over their security configurations. To navigate the large number of controls, organizations need guidance on configuring various security features. Microsoft provides this guidance in the form of security baselines.
 
@@ -55,6 +50,10 @@ You can use security baselines to:
 -   Set configuration settings. For example, you can use Group Policy, Microsoft Endpoint Configuration Manager, or Microsoft Intune to configure a device with the setting values specified in the baseline. 
 
 ## Where can I get the security baselines? 
+
+[Windows MDM (Mobile Device Management) baselines](/mem/intune/protect/security-baseline-settings-mdm-all.md) are the settings that Microsoft Intune supports for devices that run Windows 10 and Windows 11. The default values for settings represent the recommended configuration for applicable devices.
+
+[MDM (Mobile Device Management) security baselines](/windows/client-management/mdm/#mdm-security-baseline.md) function like the Microsoft group policy-based security baselines and can easily integrate this into an existing MDM management tool. 
 
 You can download the security baselines from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=55319). This download page is for the Security Compliance Toolkit (SCT), which comprises tools that can assist admins in managing  baselines in addition to the security baselines.
 
