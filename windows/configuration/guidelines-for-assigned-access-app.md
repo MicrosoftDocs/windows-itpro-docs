@@ -2,7 +2,7 @@
 title: Guidelines for choosing an app for assigned access (Windows 10/11)
 description: The following guidelines may help you choose an appropriate Windows app for your assigned access experience.
 keywords: ["kiosk", "lockdown", "assigned access"]
-ms.prod: w10
+ms.prod: w10, w11
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: greg-lindsay
@@ -56,7 +56,7 @@ In Windows client, you can install the **Kiosk Browser** app from Microsoft to u
 >Kiosk Browser cannot access intranet websites.
 
 
-**Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education) / Windows 11.
+**Kiosk Browser** must be downloaded for offline licensing using Microsoft Store For Business. You can deploy **Kiosk Browser** to devices running Windows 10, version 1803 (Pro, Business, Enterprise, and Education) and Windows 11.
 
 1. [Get **Kiosk Browser** in Microsoft Store for Business with offline license type.](/microsoft-store/acquire-apps-microsoft-store-for-business#acquire-apps)
 2. [Deploy **Kiosk Browser** to kiosk devices.](/microsoft-store/distribute-offline-apps)

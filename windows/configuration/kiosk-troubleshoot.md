@@ -5,7 +5,7 @@ ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 ms.reviewer: 
 manager: dansimp
 keywords: ["lockdown", "app restrictions"]
-ms.prod: w10
+ms.prod: w10, w11
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
@@ -38,6 +38,9 @@ ms.topic: article
 Check the Event Viewer logs for auto logon issues under **Applications and Services Logs\Microsoft\Windows\Authentication User Interface\Operational**.
 
 ## Multi-app kiosk issues
+
+> [!NOTE]
+> [!INCLUDE [Multi-app kiosk mode not supported on Windows 11](./includes/multi-app-kiosk-support-windows11.md)]
 
 ### Unexpected results 
 

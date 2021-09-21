@@ -6,7 +6,7 @@ ms.reviewer:
 manager: dansimp
 ms.author: greglin
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
-ms.prod: w10
+ms.prod: w10, w11
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: greg-lindsay
@@ -31,7 +31,7 @@ Using Shell Launcher, you can configure a device that runs an application as the
 >- [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview) - Application control policies
 >- [Mobile Device Management](/windows/client-management/mdm) - Enterprise management of device security policies
 
-You can apply a custom shell through Shell Launcher [by using PowerShell](#configure-a-custom-shell-using-powershell). In Windows 10 version 1803+ / Windows 11, you can also [use mobile device management (MDM)](#configure-a-custom-shell-in-mdm) to apply a custom shell through Shell Launcher.
+You can apply a custom shell through Shell Launcher [by using PowerShell](#configure-a-custom-shell-using-powershell). Starting with Windows 10 version 1803+, you can also [use mobile device management (MDM)](#configure-a-custom-shell-in-mdm) to apply a custom shell through Shell Launcher.
 
 
 ## Differences between Shell Launcher v1 and Shell Launcher v2

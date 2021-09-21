@@ -1,10 +1,10 @@
 ---
-title: Configure kiosks and digital signs on Windows desktop editions (Windows 10/11)
+title: Configure kiosks and digital signs on Windows 10/11 desktop editions
 ms.reviewer: 
 manager: dansimp
 ms.author: greglin
 description: In this article, learn about the methods for configuring kiosks and digital signs on Windows 10 or Windows 11 desktop editions.
-ms.prod: w10
+ms.prod: w10, w11
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -34,7 +34,7 @@ Some desktop devices in an enterprise serve a special purpose. For example, a PC
 - **A multi-app kiosk**: Runs one or more apps from the desktop. People using the kiosk see a customized Start that shows only the tiles for the apps that are allowed. With this approach, you can configure a locked-down experience for different account types. 
 
   > [!NOTE]
-  > Currently, multi-app kiosk is only supported on Windows 10. It's not supported on Windows 11.
+  > [!INCLUDE [Multi-app kiosk mode not supported on Windows 11](./includes/multi-app-kiosk-support-windows11.md)]
 
   A multi-app kiosk is appropriate for devices that are shared by multiple people. When you configure a multi-app kiosk, [specific policies are enforced](kiosk-policies.md) that will affect **all** non-administrator users on the device. 
 
@@ -72,8 +72,6 @@ There are several kiosk configuration methods that you can choose from, dependin
 >[!IMPORTANT]
 >Single-app kiosk mode isn't supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
 
-<span id="uwp" />
-
 ## Methods for a single-app kiosk running a UWP app
 
 You can use this method | For this edition | For this kiosk account type 
@@ -108,13 +106,13 @@ You can use this method | For this edition | For this kiosk account type
 
 Method | App type | Account type | Single-app kiosk | Multi-app kiosk
 --- | --- | --- | :---: | :---:
-[Assigned access in Settings](kiosk-single-app.md#local) | UWP | Local account | X  |
-[Assigned access cmdlets](kiosk-single-app.md#powershell) | UWP | Local account | X |
-[The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) | UWP, Windows desktop app | Local standard user, Active Directory, Azure AD | X  |
-[XML in a provisioning package](lock-down-windows-10-to-specific-apps.md)  | UWP, Windows desktop app | Local standard user, Active Directory, Azure AD | X  | X
-Microsoft Intune or other MDM [for full-screen single-app kiosk](kiosk-single-app.md#mdm) or [for multi-app kiosk with desktop](lock-down-windows-10-to-specific-apps.md) | UWP, Windows desktop app | Local standard user, Azure AD | X | X
-[Shell Launcher](kiosk-shelllauncher.md) |Windows desktop app | Local standard user, Active Directory, Azure AD | X | 
-[MDM Bridge WMI Provider](kiosk-mdm-bridge.md) | UWP, Windows desktop app | Local standard user, Active Directory, Azure AD |  | X
+[Assigned access in Settings](kiosk-single-app.md#local) | UWP | Local account | ✔️  |
+[Assigned access cmdlets](kiosk-single-app.md#powershell) | UWP | Local account | ✔️ |
+[The kiosk wizard in Windows Configuration Designer](kiosk-single-app.md#wizard) | UWP, Windows desktop app | Local standard user, Active Directory, Azure AD | ✔️  |
+[XML in a provisioning package](lock-down-windows-10-to-specific-apps.md)  | UWP, Windows desktop app | Local standard user, Active Directory, Azure AD | ✔️  | ✔️
+Microsoft Intune or other MDM [for full-screen single-app kiosk](kiosk-single-app.md#mdm) or [for multi-app kiosk with desktop](lock-down-windows-10-to-specific-apps.md) | UWP, Windows desktop app | Local standard user, Azure AD | ✔️ | ✔️
+[Shell Launcher](kiosk-shelllauncher.md) |Windows desktop app | Local standard user, Active Directory, Azure AD | ✔️ | 
+[MDM Bridge WMI Provider](kiosk-mdm-bridge.md) | UWP, Windows desktop app | Local standard user, Active Directory, Azure AD |  | ✔️
 
 
 >[!NOTE]

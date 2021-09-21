@@ -1,21 +1,21 @@
 ---
-title: Set up a single-app kiosk (Windows 10/11)
-description: A single-use device is easy to set up in Windows 10 for desktop editions (Pro, Enterprise, and Education).
+title: Set up a single-app kiosk on Windows 10/11
+description: A single-use device is easy to set up in Windows 10 and Windows 11 for desktop editions (Pro, Enterprise, and Education).
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
 ms.reviewer: 
 manager: dansimp
 ms.author: greglin
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
-ms.prod: w10
+ms.prod: w10, w11
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: greg-lindsay
 ms.localizationpriority: medium
-ms.date: 09/20/2021
+ms.date: 09/21/2021
 ms.topic: article
 ---
 
-# Set up a single-app kiosk
+# Set up a single-app kiosk on Windows 10/11
 
 
 **Applies to**
@@ -34,12 +34,12 @@ A single-app kiosk uses the Assigned Access feature to run a single app above th
 
 You have several options for configuring your single-app kiosk. 
 
-| Method | Description |
+| Option | Description |
 | --- | --- |
-| [Locally, in Settings](#local) | The **Set up a kiosk** (previously named **Set up assigned access**) option in **Settings** is a quick and easy method to set up a single device as a kiosk for a local standard user account. <br><br>This method is supported on Windows client Pro, Enterprise, and Education. |
-| [PowerShell](#powershell) | You can use Windows PowerShell cmdlets to set up a single-app kiosk. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account.<br><br>This method is supported on Windows client Pro, Enterprise, and Education. |
-| [The kiosk wizard in Windows Configuration Designer](#wizard) | Windows Configuration Designer is a tool that produces a *provisioning package*. A provisioning package includes configuration settings that can be applied to one or more devices during the first-run experience (OOBE), or after OOBE is done (runtime). Using the kiosk wizard, you can also create the kiosk user account, install the kiosk app, and configure more useful settings.<br><br>This method is supported on Windows 10 Pro version 1709+, Enterprise, and Education. |
-| [Microsoft Intune or other mobile device management (MDM) provider](#mdm) | For managed devices, you can use MDM to set up a kiosk configuration.<br><br>This method is supported on Windows 10 Pro version 1709+, Enterprise, and Education / Windows 11. |
+| [Locally, in Settings](#local) | The **Set up a kiosk** (previously named **Set up assigned access**) option in **Settings** is a quick and easy method to set up a single device as a kiosk for a local standard user account. <br><br>This option is supported on: <br>- Windows 10 Pro, Enterprise, and Education<br>- Windows 11 |
+| [PowerShell](#powershell) | You can use Windows PowerShell cmdlets to set up a single-app kiosk. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account.<br><br>This option is supported on: <br>- Windows 10 Pro, Enterprise, and Education<br>- Windows 11 |
+| [The kiosk wizard in Windows Configuration Designer](#wizard) | Windows Configuration Designer is a tool that produces a *provisioning package*. A provisioning package includes configuration settings that can be applied to one or more devices during the first-run experience (OOBE), or after OOBE is done (runtime). Using the kiosk wizard, you can also create the kiosk user account, install the kiosk app, and configure more useful settings.<br><br>This option is supported on: <br>- Windows 10 Pro version 1709+, Enterprise, and Education<br>- Windows 11 |
+| [Microsoft Intune or other mobile device management (MDM) provider](#mdm) | For managed devices, you can use MDM to set up a kiosk configuration.<br><br>This option is supported on: <br>- Windows 10 Pro version 1709+, Enterprise, and Education<br>- Windows 11 |
 
 >[!TIP]
 >You can also configure a kiosk account and app for single-app kiosk within [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) by using a [kiosk profile](lock-down-windows-10-to-specific-apps.md#profile).  
@@ -55,8 +55,9 @@ You have several options for configuring your single-app kiosk.
 >App type: 
 > - UWP
 >
->OS edition: 
-> - Windows client Pro, Ent, Edu
+>OS:
+> - Windows 10 Pro, Ent, Edu
+> - Windows 11
 >
 >Account type:
 > - Local standard user
@@ -69,9 +70,9 @@ When your kiosk is a local device that isn't managed by Active Directory or Azur
 
 - If you don't want the kiosk account to sign in automatically when the device restarts, then you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account, go to **Settings** > **Accounts** > **Sign-in options**, and set the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
 
-![Screenshot of automatic sign-in setting.](images/auto-signin.png)
+  ![Screenshot of automatic sign-in setting.](images/auto-signin.png)
 
-### Windows 10 version 1809 / Windows 11
+### Windows 10 version 1809+ / Windows 11
 
 When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows client, you create the kiosk user account at the same time. To set up assigned access in PC settings:
 
@@ -123,8 +124,9 @@ To remove assigned access, choose **Turn off assigned access and sign out of the
 >App type: 
 > - UWP
 >
->OS edition: 
-> - Windows client Pro, Ent, Edu
+>OS: 
+> - Windows 10 Pro, Ent, Edu
+> - Windows 11
 >
 >Account type: 
 > - Local standard user
@@ -170,8 +172,10 @@ Clear-AssignedAccess
 > - UWP 
 > - Windows desktop application
 >
->OS edition:
-> - Windows 10 Pro version 1709+ for UWP only; Ent, Edu for both app types
+>OS:
+> - Windows 10 Pro version 1709+ for UWP only
+> - Windows 10 Ent, Edu for UWP and Windows desktop applications
+> - Windows 11
 >
 >Account type:
 > - Local standard user

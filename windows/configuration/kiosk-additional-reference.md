@@ -6,7 +6,7 @@ ms.reviewer:
 manager: dansimp
 ms.author: greglin
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
-ms.prod: w10
+ms.prod: w10, w11
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: greg-lindsay
@@ -32,7 +32,7 @@ Topic | Description
 [Guidelines for choosing an app for assigned access (kiosk mode)](guidelines-for-assigned-access-app.md) | These guidelines will help you choose an appropriate Windows app for your assigned access experience.
 [Policies enforced on kiosk devices](kiosk-policies.md) | Learn about the policies enforced on a device when you configure it as a kiosk.
 [Assigned access XML reference](kiosk-xml.md) | The XML and XSD for kiosk device configuration.
-[Use AppLocker to create a Windows client kiosk](lock-down-windows-10-applocker.md) | Learn how to use AppLocker to configure a kiosk device running Windows 10 Enterprise or Windows 10 Education, version 1703 and earlier, so that users can only run a few specific apps.
+[Use AppLocker to create a Windows client kiosk](lock-down-windows-10-applocker.md) | Learn how to use AppLocker to configure a Windows client kiosk device running Enterprise or Education so that users can only run a few specific apps.
 [Use Shell Launcher to create a Windows client kiosk](kiosk-shelllauncher.md) |  Using Shell Launcher, you can configure a kiosk device that runs a Windows application as the user interface.
 [Use MDM Bridge WMI Provider to create a Windows client kiosk](kiosk-mdm-bridge.md) | Environments that use Windows Management Instrumentation (WMI) can use the MDM Bridge WMI Provider to configure the MDM_AssignedAccess class.
 [Troubleshoot kiosk mode issues](kiosk-troubleshoot.md) | Tips for troubleshooting multi-app kiosk configuration.

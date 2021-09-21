@@ -1,8 +1,8 @@
 ---
-title: Set up a shared or guest PC with Windows 10/11 (Windows 10/11)
-description: Windows 10, version 1607, introduces *shared PC mode*, which optimizes Windows client for shared use scenarios.
+title: Set up a shared or guest PC with Windows 10/11
+description: Windows 10 and Windows has shared PC mode, which optimizes Windows client for shared use scenarios.
 keywords: ["shared pc mode"]
-ms.prod: w10
+ms.prod: w10, w11
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: greg-lindsay
@@ -113,7 +113,7 @@ You can configure Windows to be in shared PC mode in a couple different ways:
 
   11. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 6**.
 
-- A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp), exposed in Windows Configuration Designer as **SharedPC**.
+- A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows client that's already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp), exposed in Windows Configuration Designer as **SharedPC**.
 
      ![Shared PC settings in ICD.](images/icd-adv-shared-pc.png)
 

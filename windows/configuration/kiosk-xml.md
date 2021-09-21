@@ -5,7 +5,7 @@ ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
 ms.reviewer: 
 manager: dansimp
 keywords: ["lockdown", "app restrictions", "applocker"]
-ms.prod: w10
+ms.prod: w10, w11
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: edu, security
@@ -256,7 +256,13 @@ This sample demonstrates that both UWP and Win32 apps can be configured to autom
 ```
 
 ## Global Profile Sample XML
-Global Profile is currently supported in Windows 10 version 2004 / Windows 11. Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lockdown mode, or used as mitigation when a profile cannot be determined for a user.
+
+Global Profile is supported on:
+
+- Windows 10 version 2004+
+- Windows 11
+
+Global Profile is designed for scenarios where a user does not have a designated profile, yet IT Admin still wants the user to run in lockdown mode, or used as mitigation when a profile cannot be determined for a user.
 
 This sample demonstrates that only a global profile is used, no active user configured. Global profile will be applied when every non-admin account logs in.
 
@@ -894,7 +900,9 @@ The following XML is the schema for Windows 10 version 1909+:
 </xs:schema>
 ```
 
-To authorize a compatible configuration XML that includes elements and attributes from Windows 10 version 1809 or newer / Windows 11, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias. For example, to configure the autolaunch feature that was added in Windows 10 version 1809 / Windows 11, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10 version 1809 / Windows 11, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
+To authorize a compatible configuration XML that includes elements and attributes from Windows 10 version 1809 or newer / Windows 11, always include the namespace of these add-on schemas, and decorate the attributes and elements accordingly with the namespace alias.
+
+For example, to configure the autolaunch feature that was added in Windows 10 version 1809 / Windows 11, use the following sample. Notice an alias r1809 is given to the 201810 namespace for Windows 10 version 1809 / Windows 11, and the alias is tagged on AutoLaunch and AutoLaunchArguments inline.
 
 ```xml
 <AssignedAccessConfiguration
