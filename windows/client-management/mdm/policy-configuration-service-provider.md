@@ -2833,6 +2833,32 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_pca policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectdeprecatedcomcomponentfailurespolicy" id="admx-pca-detectdeprecatedcomcomponentfailurespolicy">ADMX_pca/DetectDeprecatedCOMComponentFailuresPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectdeprecatedcomponentfailurespolicy" id="admx-pca-detectdeprecatedcomponentfailurespolicy">ADMX_pca/DetectDeprecatedComponentFailuresPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectinstallfailurespolicy" id="admx-pca-detectinstallfailurespolicy">ADMX_pca/DetectInstallFailuresPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectundetectedinstallerspolicy" id="admx-pca-detectundetectedinstallerspolicy">ADMX_pca/DetectUndetectedInstallersPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectupdatefailurespolicy" id="admx-pca-detectupdatefailurespolicy">ADMX_pca/DetectUpdateFailuresPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-disablepcauipolicy" id="admx-pca-disablepcauipolicy">ADMX_pca/DisablePcaUIPolicy</a>
+  </dd>
+<dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectblockeddriverspolicy" id="admx-pca-detectblockeddriverspolicy">ADMX_pca/DetectBlockedDriversPolicy</a>
+</dd>
+<dl>
+
 ### ADMX_PeerToPeerCaching policies
 
 <dl>
@@ -3423,14 +3449,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disablecmd" id="admx-shellcommandpromptregedittools-restrictapps">ADMX_ShellCommandPromptRegEditTools/RestrictApps</a>
-  </dd>
-</dl>
-
-### ADMX_SkyDrive policies  
-
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-skydrive.md#admx-skydrive-preventnetworktrafficpreusersignin" id="admx-skydrive-preventnetworktrafficpreusersignin">ADMX_SkyDrive/PreventNetworkTrafficPreUserSignIn</a>
   </dd>
 </dl>
 
@@ -4330,14 +4348,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-wincal.md#admx-wincal-turnoffwincal-2" id="admx-wincal-turnoffwincal-2">ADMX_WinCal/TurnOffWinCal_2</a>
-  </dd>
-</dl>
-
-### ADMX_WindowsAnytimeUpgrade policies  
-
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-windowsanytimeupgrade.md#admx-windowsanytimeupgrade-disabled" id="admx-windowsanytimeupgrade-disabled">ADMX_WindowsAnytimeUpgrade/Disabled</a>
   </dd>
 </dl>
 
@@ -8608,23 +8618,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-url" id="windowsdefendersecuritycenter-url">WindowsDefenderSecurityCenter/URL</a>
-  </dd>
-</dl>
-
-### ADMX_WindowsFileProtection policies  
-
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpshowprogress" id="admx-windowsfileprotection-wfpshowprogress">ADMX_WindowsFileProtection/WFPShowProgress</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpquota" id="admx-windowsfileprotection-wfpquota">ADMX_WindowsFileProtection/WFPQuota</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpscan" id="admx-windowsfileprotection-wfpscan">ADMX_WindowsFileProtection/WFPScan</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpdllcachedir" id="admx-windowsfileprotection-wfpdllcachedir">ADMX_WindowsFileProtection/WFPDllCacheDir</a>
   </dd>
 </dl>
 
