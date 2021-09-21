@@ -1,5 +1,5 @@
 ---
-title: Create Inbound Rules to Support RPC (Windows 10)
+title: Create Inbound Rules to Support RPC (Windows)
 description: Learn how to allow RPC network traffic by using the Group Policy Management MMC snap-in to create rules in Windows Defender Firewall with Advanced Security.
 ms.assetid: 0b001c2c-12c1-4a30-bb99-0c034d7e6150
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 To allow inbound remote procedure call (RPC) network traffic, use the Windows Defender Firewall with Advanced Security node in the Group Policy Management console to create two firewall rules. The first rule allows incoming network packets on TCP port 135 to the RPC Endpoint Mapper service. The incoming traffic consists of requests to communicate with a specified network service. The RPC Endpoint Mapper replies with a dynamically-assigned port number that the client must use to communicate with the service. The second rule allows the network traffic that is sent to the dynamically-assigned port number. Using the two rules configured as described in this topic helps to protect your device by allowing network traffic only from devices that have received RPC dynamic port redirection and to only those TCP port numbers assigned by the RPC Endpoint Mapper.
 

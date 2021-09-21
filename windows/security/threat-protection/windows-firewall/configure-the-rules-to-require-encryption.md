@@ -1,5 +1,5 @@
 ---
-title: Configure the Rules to Require Encryption (Windows 10)
+title: Configure the Rules to Require Encryption (Windows)
 description: Learn how to configure rules to add encryption algorithms and delete the algorithm combinations that do not use encryption for zones that require encryption.
 ms.assetid: 07b7760f-3225-4b4b-b418-51787b0972a0
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
