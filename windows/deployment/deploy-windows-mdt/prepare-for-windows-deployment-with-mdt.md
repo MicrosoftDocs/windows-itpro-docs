@@ -103,7 +103,6 @@ On **MDT01**:
 Visit the [Download and install the Windows ADK](/windows-hardware/get-started/adk-install) page and download the following items to the **D:\\Downloads\\ADK** folder on MDT01 (you will need to create this folder):
 - [The Windows ADK](https://go.microsoft.com/fwlink/?linkid=2165884)
 - [The Windows PE add-on for the ADK](https://go.microsoft.com/fwlink/?linkid=2166133)
-  - This patch is needed to resolve a bug that causes detection of BIOS-based machines as UEFI-based machines.  If you have a UEFI deployment, you do not need this patch.
 
 >[!TIP]
 >You might need to temporarily disable IE Enhanced Security Configuration for administrators in order to download files from the Internet to the server. This setting can be disabled by using Server Manager (Local Server/Properties).
@@ -153,7 +152,7 @@ On **MDT01**:
 3. Save the [MDT update](https://support.microsoft.com/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7) to D:\\Downloads\\MDT folder on MDT01.
     - **Note**: As of the publishing date for this guide, the current version of MDT is 8456 (6.3.8456.1000), but a later version will also work.
 4. Install **MDT** (D:\\Downloads\\MDT\\MicrosoftDeploymentToolkit_x64.exe) with the default settings.
-5. Extract the MDT update and install it per the instructions on [Windows 10 deployments fail with Microsoft Deployment Toolkit on computers with BIOS type firmware](https://support.microsoft.com/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7).  This will update **Microsoft.BDD.Utility.dll** from version 6.3.8456.1000 to 6.3.8456.1001.
+5. If you are using MDT version 8456, download, extract, and update MDT per the instructions on [Windows 10 deployments fail with Microsoft Deployment Toolkit on computers with BIOS type firmware](https://support.microsoft.com/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7).  This will update **Microsoft.BDD.Utility.dll** from version 6.3.8456.1000 to 6.3.8456.1001.
 
 ## Create the OU structure
 
