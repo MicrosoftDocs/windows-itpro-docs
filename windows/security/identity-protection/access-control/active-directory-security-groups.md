@@ -1885,7 +1885,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-498</p></td>
+<td><p>S-1-5-21-&lt;root domain&gt;-498</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
