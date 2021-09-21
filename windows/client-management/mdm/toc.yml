@@ -545,7 +545,7 @@ items:
               href: policy-csp-admx-offlinefiles.md
             - name: ADMX_PeerToPeerCaching
               href: policy-csp-admx-peertopeercaching.md
-           - name: ADMX_PenTraining
+            - name: ADMX_PenTraining
               href: policy-csp-admx-pentraining.md 
             - name: ADMX_PerformanceDiagnostics
               href: policy-csp-admx-performancediagnostics.md
