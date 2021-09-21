@@ -583,8 +583,6 @@ items:
               href: policy-csp-admx-sharedfolders.md
             - name: ADMX_Sharing
               href: policy-csp-admx-sharing.md
-            - name: ADMX_ShellCommandPromptRegEditTools
-              href: policy-csp-admx-shellcommandpromptregedittools.md
             - name: ADMX_Smartcard
               href: policy-csp-admx-smartcard.md
             - name: ADMX_Snmp
@@ -615,8 +613,6 @@ items:
               href: policy-csp-admx-windowsconnectnow.md
             - name: ADMX_WindowsExplorer
               href: policy-csp-admx-windowsexplorer.md
-            - name: ADMX_WindowsFileProtection
-              href: policy-csp-admx-windowsfileprotection.md
             - name: ADMX_WindowsMediaDRM
               href: policy-csp-admx-windowsmediadrm.md
             - name: ADMX_WindowsMediaPlayer
