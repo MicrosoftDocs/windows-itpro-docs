@@ -14,7 +14,7 @@ ms.localizationpriority: normal
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 11/17/2020
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
