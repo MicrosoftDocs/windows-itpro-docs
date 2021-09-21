@@ -42,7 +42,7 @@ For a more secure kiosk experience, we recommend that you make the following con
 | Enable and schedule automatic updates | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Configure Automatic Updates**, and select `option 4 (Auto download and schedule the install)`<br>-or-<br>Use the MDM setting **Update/AllowAutoUpdate** from the [**Policy/Update** configuration service provider](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate), and select `option 3 (Auto install and restart at a specified time)`<br><br>**Note:** Installations can take from between 30 minutes and 2 hours, depending on the device, so you should schedule updates to occur when a block of 3-4 hours is available.<br><br>To schedule the automatic update, configure **Schedule Install Day**, **Schedule Install Time**, and **Schedule Install Week**. |
 | Enable automatic restart at the scheduled time | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Always automatically restart at the scheduled time** |
 | Replace "blue screen" with blank screen for OS errors   | Add the following registry key as DWORD (32-bit) type with a value of `1`:</br></br>**HKLM\SYSTEM\CurrentControlSet\Control\CrashControl\DisplayDisabled** |
-| Put device in **Tablet mode**. | If you want users to be able to use the touch (on screen) keyboard, go to **Settings** &gt; **System** &gt; **Tablet mode** and choose **On.** Do not turn on this setting if users will not interact with the kiosk, such as for a digital sign.
+| Put device in **Tablet mode**. | If you want users to be able to use the touch (on screen) keyboard, go to **Settings** &gt; **System** &gt; **Tablet mode** and choose **On.** Don't turn on this setting if users will not interact with the kiosk, such as for a digital sign.
 Hide **Ease of access** feature on the sign-in screen. |     See [how to disable the Ease of Access button in the registry.](/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen)
 | Disable the hardware power button. |     Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**. |
 | Remove the power button from the sign-in screen. |     Go to **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt;**Security Options** &gt; **Shutdown: Allow system to be shut down without having to log on** and select **Disabled.** |
@@ -59,7 +59,7 @@ Logs can help you [troubleshoot issues](./kiosk-troubleshoot.md) kiosk issues. L
 
 ## Automatic logon
 
-In addition to the settings in the table, you may want to set up **automatic logon** for your kiosk device. When your kiosk device restarts, whether from an update or power outage, you can sign in the assigned access account manually or you can configure the device to sign in to the assigned access account automatically. Make sure that Group Policy settings applied to the device do not prevent automatic sign in.
+You may also want to set up **automatic logon** for your kiosk device. When your kiosk device restarts, from an update or power outage, you can sign in the assigned access account manually. Or, you can configure the device to sign in to the assigned access account automatically. Make sure that Group Policy settings applied to the device don't prevent automatic sign in.
 
 > [!NOTE]
 > If you are using a Windows client device restriction CSP to set "Preferred Azure AD tenant domain", this will break the "User logon type" auto-login feature of the Kiosk profile.
@@ -105,9 +105,6 @@ In addition to the settings in the table, you may want to set up **automatic log
 
 The following table describes some features that have interoperability issues we recommend that you consider when running assigned access.
 
-> [!Note]
-> Where applicable, the table notes which features are optional that you can configure for assigned access.
-
 - **Accessibility**: Assigned access does not change Ease of Access settings. We recommend that you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block the following key combinations that bring up accessibility features:
 
   | Key combination | Blocked behavior |
@@ -120,18 +117,18 @@ The following table describes some features that have interoperability issues we
 
 - **Key sequences blocked by assigned access**: When in assigned access, some key combinations are blocked for assigned access users.
 
-  Alt+F4, Alt+Shift+Tab, Alt+Tab are not blocked by Assigned Access, it is recommended you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations.
+  Alt + F4, Alt + Shift + Tab, Alt + Tab are not blocked by Assigned Access, it's recommended you use [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) to block these key combinations.
 
-  Ctrl+Alt+Delete is the key to break out of Assigned Access. If needed, you can use Keyboard Filter to configure a different key combination to break out of assigned access by setting BreakoutKeyScanCode as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
+  Ctrl + Alt + Delete is the key to break out of Assigned Access. If needed, you can use Keyboard Filter to configure a different key combination to break out of assigned access by setting BreakoutKeyScanCode as described in [WEKF_Settings](/windows-hardware/customize/enterprise/wekf-settings).
 
   | Key combination | Blocked behavior for assigned access users |
   | --- | --- | 
-  | Alt+Esc | Cycle through items in the reverse order from which they were opened. |
-  | Ctrl+Alt+Esc | Cycle through items in the reverse order from which they were opened. |
-  | Ctrl+Esc | Open the Start screen. |
-  | Ctrl+F4 | Close the window. |
-  | Ctrl+Shift+Esc | Open Task Manager. |
-  | Ctrl+Tab | Switch windows within the application currently open. |
+  | Alt + Esc | Cycle through items in the reverse order from which they were opened. |
+  | Ctrl + Alt + Esc | Cycle through items in the reverse order from which they were opened. |
+  | Ctrl + Esc | Open the Start screen. |
+  | Ctrl + F4 | Close the window. |
+  | Ctrl + Shift + Esc | Open Task Manager. |
+  | Ctrl + Tab | Switch windows within the application currently open. |
   | LaunchApp1 | Open the app that is assigned to this key. |
   | LaunchApp2 | Open the app that is assigned to this key, which on many Microsoft keyboards is Calculator. |
   | LaunchMail | Open the default mail client. |
@@ -143,15 +140,15 @@ The following table describes some features that have interoperability issues we
 
   [Keyboard Filter](/windows-hardware/customize/enterprise/keyboardfilter) is only available on Windows client Enterprise or Education.
 
-- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user cannot turn off the device when it is in assigned access.
+- **Power button**: Customizations for the Power button complement assigned access, letting you implement features such as removing the power button from the Welcome screen. Removing the power button ensures the user cannot turn off the device when it's in assigned access.
 
   For more information on removing the power button or disabling the physical power button, see [Custom Logon](/windows-hardware/customize/enterprise/custom-logon).
 
-- **Unified Write Filter (UWF)**: UWFsettings apply to all users, including those with assigned access.
+- **Unified Write Filter (UWF)**: UWFsettings apply to all users, including users with assigned access.
 
   For more information, see [Unified Write Filter](/windows-hardware/customize/enterprise/unified-write-filter).
 
-- **WEDL_AssignedAccess class**: Although you can use this class to configure and manage basic lockdown features for assigned access, we recommend that you use the Windows PowerShell cmdlets instead.
+- **WEDL_AssignedAccess class**: You can use this class to configure and manage basic lockdown features for assigned access. It's recommended to you use the Windows PowerShell cmdlets instead.
 
   If you need to use assigned access API, see [WEDL_AssignedAccess](/windows-hardware/customize/enterprise/wedl-assignedaccess).
 
@@ -167,8 +164,8 @@ A single-app kiosk configuration runs an app above the lock screen. It doesn't w
 
 When you connect to a VM configured as a single-app kiosk, you need a *basic* session rather than an enhanced session. In the following image, notice that **Enhanced session** is not selected in the **View** menu; that means it's a basic session.
 
-:::image type="content" source="images/vm-kiosk.png" alt-text="Use a basic session to connect a virtual machine. In the View menu, Extended session is not selected, which means basic is used.":::
+:::image type="content" source="images/vm-kiosk.png" alt-text="Use a basic session to connect a virtual machine. In the View menu, Extended session isn't selected, which means basic is used.":::
 
-To connect to a VM in a basic session, do not select **Connect** in the connection dialog, as shown in the following image, but instead, select the **X** button in the upper-right corner to cancel the dialog:
+To connect to a VM in a basic session, don't select **Connect** in the connection dialog, as shown in the following image, but instead, select the **X** button in the upper-right corner to cancel the dialog:
 
-:::image type="content" source="images/vm-kiosk-connect.png" alt-text="Do not select the connect button. Use the close X in the top corner to connect to a VM in basic session.":::
+:::image type="content" source="images/vm-kiosk-connect.png" alt-text="Don't select the connect button. Use the close X in the top corner to connect to a VM in basic session.":::
