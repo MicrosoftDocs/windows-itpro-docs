@@ -2891,6 +2891,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_PenTraining policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-pentraining.md#admx-pentraining-pentrainingoff_1" id="admx-pentraining-pentrainingoff_1">ADMX_PenTraining/PenTrainingOff_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pentraining.md#admx-pentraining-pentrainingoff_2" id="admx-pentraining-pentrainingoff_2">ADMX_PenTraining/PenTrainingOff_2</a>
+  </dd>
+<dl>
+
 ### ADMX_PerformanceDiagnostics policies
 
 <dl>

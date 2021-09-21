@@ -814,6 +814,8 @@ ms.date: 10/08/2020
 - [ADMX_PeerToPeerCaching/SetCachePercent](./policy-csp-admx-peertopeercaching.md#admx-peertopeercaching-setcachepercent)
 - [ADMX_PeerToPeerCaching/SetDataCacheEntryMaxAge](./policy-csp-admx-peertopeercaching.md#admx-peertopeercaching-setdatacacheentrymaxage)
 - [ADMX_PeerToPeerCaching/SetDowngrading](./policy-csp-admx-peertopeercaching.md#admx-peertopeercaching-setdowngrading)
+- [ADMX_PenTraining/PenTrainingOff_1](./policy-csp-admx-pentraining.md#admx-pentraining-pentrainingoff_1)
+- [ADMX_PenTraining/PenTrainingOff_2](./policy-csp-admx-pentraining.md#admx-pentraining-pentrainingoff_2)
 - [ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_1](./policy-csp-admx-performancediagnostics.md#admx-performancediagnostics-wdiscenarioexecutionpolicy-1)
 - [ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_2](./policy-csp-admx-performancediagnostics.md#admx-performancediagnostics-wdiscenarioexecutionpolicy-2)
 - [ADMX_PerformanceDiagnostics/WdiScenarioExecutionPolicy_3](./policy-csp-admx-performancediagnostics.md#admx-performancediagnostics-wdiscenarioexecutionpolicy-3)
