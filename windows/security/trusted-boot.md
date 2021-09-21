@@ -1,5 +1,5 @@
 ---
-title: Trusted Boot
+title: Secure Boot and Trusted Boot
 description: Trusted Boot prevents corrupted components from loading during the boot-up process in Windows 11
 search.appverid: MET150 
 author: denisebmsft
@@ -7,8 +7,9 @@ ms.author: deniseb
 manager: dansimp 
 audience: ITPro
 ms.topic: conceptual
-ms.date: 09/08/2021
-ms.prod: w10
+ms.date: 09/21/2021
+ms.prod: m365-security
+ms.technology: windows-sec
 ms.localizationpriority: medium
 ms.collection: 
 ms.custom: 
