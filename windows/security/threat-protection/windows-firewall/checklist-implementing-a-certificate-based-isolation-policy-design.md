@@ -1,5 +1,5 @@
 ---
-title: Checklist Implementing a Certificate-based Isolation Policy Design (Windows 10)
+title: Checklist Implementing a Certificate-based Isolation Policy Design (Windows)
 description: Use these references to learn about using certificates as an authentication option and configure a certificate-based isolation policy design.
 ms.assetid: 1e34b5ea-2e77-4598-a765-550418d33894
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This parent checklist includes cross-reference links to important concepts about using certificates as an authentication option in either a domain isolation or server isolation design.
 
