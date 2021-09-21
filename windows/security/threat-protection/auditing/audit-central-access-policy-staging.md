@@ -11,16 +11,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit Central Access Policy Staging
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
-
 
 Audit Central Access Policy Staging allows you to audit access requests where a permission granted or denied by a proposed policy differs from the current central access policy on an object.
 
