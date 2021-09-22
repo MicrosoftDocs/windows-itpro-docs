@@ -10,7 +10,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/14/2021
 ms.localizationpriority: medium
 ---
 
@@ -54,10 +53,25 @@ Start has the following areas:
 
   This article shows you how to use the **ConfigureStartPins** policy.
 
-- **All apps**: Users select this option to see an alphabetical list of all the apps on the device. This section can't be customized using the JSON file. You can use the `Start/ShowOrHideMostUsedApps` CSP, which is a policy to configure the "Most used" section at the top of the all apps list.
-- **Recommended**: Shows recently opened files and recently installed apps. This section can't be customized using the JSON file. To prevent files from showing in this section, you can use the [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists). This CSP also hides recent files that show from the taskbar.
+- **All apps**: Users select this option to see an alphabetical list of all the apps on the device. This section can't be customized using the JSON file.
 
-  You can use an MDM provider, like Microsoft Intune, to manage the [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists) on your devices. For more information on the Start menu settings you can configure in a Microsoft Intune policy, see [Windows 10 (and later) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
+  The `[Start/HideFrequentlyUsedApps CSP](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps)` exposes settings that configure the "Most used" section, which is at the top of the all apps list.
+
+  In Endpoint Manager, you can configure this Start menu layout feature, and more. For more information on the Start menu settings you can configure in an Endpoint Manager policy, see [Windows 10/11 device settings to allow or restrict features](/mem/intune/configuration/device-restrictions-windows-10#start).
+
+  In Group Policy, there are policies that include settings that control the Start menu layout. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices:
+
+  - `Computer Configuration\Administrative Templates\Start Menu and Taskbar`
+  - `User Configuration\Administrative Templates\Start Menu and Taskbar`
+
+- **Recommended**: Shows recently opened files and recently installed apps. This section can't be customized using the JSON file.
+
+  The  [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists) exposes settings that prevent files from showing in this section. This CSP also hides recent files that show from the taskbar. In Endpoint Manager, you can configure this feature, and more. For more information on the Start menu settings you can configure in an Endpoint Manager policy, see [Windows 10/11 device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
+
+  In Group Policy, there are policies that include settings that control the Start menu layout. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices:
+
+  - `Computer Configuration\Administrative Templates\Start Menu and Taskbar`
+  - `User Configuration\Administrative Templates\Start Menu and Taskbar`
 
 ## Create the JSON file
 
@@ -111,13 +125,13 @@ If you're familiar with creating JSON files, you can create your own `LayoutModi
 
 Now that you have the JSON syntax, you're ready to deploy your customized Start layout to devices in your organization.
 
-MDM providers can deploy policies to devices managed by the organization, including organization-owned devices, and personal or bring your own device (BYOD).  Using an MDM provider, such as Microsoft Intune, you can deploy a policy that configures the pinned list.
+MDM providers can deploy policies to devices managed by the organization, including organization-owned devices, and personal or bring your own device (BYOD).  Using an MDM provider, such as Microsoft Endpoint Manager, you can deploy a policy that configures the pinned list.
 
-This section shows you how to create a pinned list policy in Microsoft Intune. There isn't a Group Policy to create a pinned list.
+This section shows you how to create a pinned list policy in Endpoint Manager. There isn't a Group Policy to create a pinned list.
 
-### Create a pinned list using a Microsoft Intune policy
+### Create a pinned list using an Endpoint Manager policy
 
-To deploy this policy in Microsoft Intune, the devices must be enrolled in Microsoft Intune, and managed by your organization. For more information, see [What is device enrollment in Intune?](/mem/intune/enrollment/device-enrollment).
+To deploy this policy, the devices must be enrolled, and managed by your organization. For more information, see [What is device enrollment?](/mem/intune/enrollment/device-enrollment).
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Select **Devices** > **Configuration profiles** > **Create profile**.
@@ -159,11 +173,10 @@ To deploy this policy in Microsoft Intune, the devices must be enrolled in Micro
 8. Select **Save** > **Next** to save your changes.
 9. Configure the rest of the policy settings. For more specific information, see [Create a profile with custom settings in Intune](/mem/intune/configuration/custom-settings-configure).
 
-The Windows OS has many CSPs that apply to the Start menu. Using an MDM provider, like Intune, you can use these CSPs to customize Start even more. For a list, see [Supported CSP policies for Windows 11 Start menu](supported-csp-start-menu-layout-windows.md).
+The Windows OS has exposes many CSPs that apply to the Start menu. For a list, see [Supported CSP policies for Windows 11 Start menu](supported-csp-start-menu-layout-windows.md).
 
 ### Deploy the policy using Microsoft Intune
 
-When the policy is created, you can deploy it now, or deploy it later. Since this policy is a customized Start layout, the policy can be deployed before users sign in the first time.
+When the policy is created, you can deploy it now, or deploy it later. Since this policy is a customized Start layout, the policy can be deployed anytime, including before users sign in the first time.
 
-For more information on assigning policies using Microsoft Intune, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).
-
+For more information and guidance on assigning policies, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
