@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # Appendix A: Security monitoring recommendations for many audit events
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This document, the [Advanced security audit policy settings](advanced-security-audit-policy-settings.md) reference, provides information about individual audit events, and lists them within audit categories and subcategories. However, there are many events for which the following overall recommendations apply. There are links throughout this document from the “Recommendations” sections of the relevant events to this appendix.

@@ -20,6 +20,7 @@ ms.reviewer:
 
 **Applies to**
 -   Windows 10, version 1703 or later
+-   Windows 11
 -   Hybrid deployment
 -   Key trust
 
@@ -31,7 +32,7 @@ The distributed systems on which these technologies were built involved several 
 * [Public Key Infrastructure](#public-key-infrastructure)
 * [Directory Synchronization](#directory-synchronization)
 * [Federation](#federation-with-azure)
-* [MultiFactor Authentication](#multifactor-authentication)
+* [Multifactor authentication](#multifactor-authentication)
 * [Device Registration](#device-registration)
   
 ## Directories
@@ -61,7 +62,7 @@ Review these requirements and those from the Windows Hello for Business planning
 <br>
 
 ## Public Key Infrastructure
-The Windows Hello for Business deployment depends on an enterprise public key infrastructure as trust anchor for authentication. Domain controllers for hybrid deployments need a certificate in order for Windows 10 devices to trust the domain controller.
+The Windows Hello for Business deployment depends on an enterprise public key infrastructure as trust anchor for authentication. Domain controllers for hybrid deployments need a certificate in order for Windows devices to trust the domain controller.
 
 Key trust deployments do not need client issued certificates for on-premises authentication.  Active Directory user accounts are automatically configured for public key mapping by Azure AD Connect synchronizing the public key of the registered Windows Hello for Business credential to an attribute on the user's Active Directory object.
 

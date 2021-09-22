@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/09/2021
 ms.technology: mde
 ---
 
 # Monitor the central access policies that apply on a file server
 
-**Applies to**
--   Windows 10
 
 This article describes how to monitor changes to the central access policies (CAPs) that apply to a file server when using advanced security auditing options to monitor dynamic access control objects. CAPs are created on a domain controller and then applied to file servers through Group Policy management.
 

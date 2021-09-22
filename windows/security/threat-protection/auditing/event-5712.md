@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 5712(S): A Remote Procedure Call (RPC) was attempted.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 It appears that this event never occurs.

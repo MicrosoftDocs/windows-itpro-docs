@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 6144(S): Security policy in the group policy objects has been applied successfully.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-6144.png" alt="Event 6144 illustration" width="449" height="347" hspace="10" align="left" />

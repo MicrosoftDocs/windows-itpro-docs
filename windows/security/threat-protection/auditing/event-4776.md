@@ -16,10 +16,6 @@ ms.technology: mde
 
 # 4776(S, F): The computer attempted to validate the credentials for an account.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
-
 
 <img src="images/event-4776.png" alt="Event 4776 illustration" width="459" height="336" hspace="10" align="left" />
 
