@@ -1,6 +1,6 @@
 ---
-title: Configure authorized apps deployed with a WDAC-managed installer (Windows)
-description: Explains about how to configure a custom Manged Installer.
+title: Allow apps deployed with a WDAC managed installer (Windows)
+description: Explains how to configure a custom Managed Installer.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -11,33 +11,31 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jsuther1974
-ms.reviewer: isbrahm
+ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
-ms.date: 08/10/2021
+ms.date: 09/22/2021
 ms.technology: mde
 ---
 
-# Configuring authorized apps deployed by a managed installer with AppLocker and Windows Defender Application Control
+# Automatically allow apps deployed by a managed installer with Windows Defender Application Control
 
 **Applies to:**
 
--   Windows 10
--   Windows 11
--   Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2019 and above
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
-
-Windows 10, version 1703 introduced a new option for Windows Defender Application Control (WDAC), called _managed installer_, that helps balance security and manageability when enforcing application control policies. This option lets you automatically allow applications installed by a designated software distribution solution such as Microsoft Endpoint Configuration Manager.
+With Windows Defender Application Control (WDAC), you can automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, using a feature called _managed installer_. Managed installer can help you balance security and manageability when enforcing application control policies. 
 
 ## How does a managed installer work?
 
-A new rule collection in AppLocker specifies binaries that are trusted by the organization as an authorized source for application deployment. When one of these trusted binaries runs, Windows will monitor the binary's process (and processes it launches), and then tag all files it writes as having originated from a managed installer. The managed installer rule collection is configured using Group Policy and can be applied with the Set-AppLockerPolicy PowerShell cmdlet. You can't currently set managed installers with the AppLocker CSP through MDM.
+Managed installer uses a special rule collection in AppLocker to designate binaries that are trusted by your organization as an authorized source for application deployment. When one of these trusted binaries runs, Windows monitors the binary's process (and processes it launches) and watches for files being written to disk. As files are written, they are tagged as originating from a managed installer. The managed installer rule collection must be added to your AppLocker policy XML using an XML or text editor, such as Notepad. You can import and deploy your managed installer AppLocker policy XML with Group Policy or apply it using the Set-AppLockerPolicy PowerShell cmdlet. You can't currently set managed installers with the AppLocker CSP through MDM.
 
-Having defined your managed installers by using AppLocker, you can then configure WDAC to trust files that are installed by a managed installer. You do so by adding the "Enabled:Managed Installer" option to your WDAC policy. When that option is set, WDAC will check for managed installer origin information when determining whether or not to allow a binary to run. As long as there are no deny rules present for the file, WDAC will allow a file to run based on its managed installer origin.
+After setting your managed installer rules in AppLocker, you can then configure WDAC to trust files that are installed by a managed installer. You do so by adding the "Enabled:Managed Installer" option to your WDAC policy. When that option is set, WDAC will check for managed installer origin information when determining whether or not to allow a binary to run. As long as there are no deny rules present for the file, WDAC will allow a file to run based purely on its managed installer origin.
 
-Ensure that the WDAC policy allows the system/boot components and any other authorized applications that can't be deployed through a managed installer.
+> [!NOTE]
+> Your WDAC policy must include rules for all system/boot components, kernel drivers, and any other authorized applications that can't be deployed through a managed installer.
 
 ## Security considerations with managed installer
 
