@@ -333,6 +333,10 @@ Sample value for this node to enable this policy is:
 <enabled/><data id="IdentificationField" value="BitLockerSelfhostingRing21"/><data id="SecIdentificationField" value="BitLockerSelfhostingRing22"/>
 ```
 
+Data Id:
+- IdentificationField: BitLocker identification field
+- SecIdentificationField: Allowed BitLocker identification field
+
 If you disable or do not configure this setting, the identification field is not required.
 
 >[!Note]
@@ -426,7 +430,7 @@ ADMX Info:
 <li>GP English name: <em>Allow enhanced PINs for startup</em></li>
 <li>GP name: <em>UseEnhancedPin</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Operating System Drives</em></li>
-<li>GP ADMX file name: <em>BitLockerManagement.admx</em></li>
+<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
 
@@ -1401,7 +1405,7 @@ ADMX Info:
 <li>GP English name: <em>Control use of BitLocker on removable drives</em></li>
 <li>GP name: <em>RDVConfigureBDE</em></li>
 <li>GP path: <em>Windows Components/BitLocker Drive Encryption/Removable Data Drives</em></li>
-<li>GP ADMX file name: <em>BitLockerManagement.admx</em></li>
+<li>GP ADMX file name: <em>VolumeEncryption.admx</em></li>
 </ul>
 <!--/ADMXMapped-->
 
@@ -1424,6 +1428,9 @@ Sample value for this node to enable this policy is:
 ```xml
 <enabled/><data id="RDVAllowBDE_Name" value="true"/><data id="RDVDisableBDE_Name" value="true"/>
 ```
+Data id:
+- RDVAllowBDE_Name: Allow users to apply BitLocker protection on removable data drives
+- RDVDisableBDE_Name: Allow users to suspend and decrypt BitLocker on removable data drives
 
 If this policy is disabled,users cannot use BitLocker on removable disk drives.
 
