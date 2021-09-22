@@ -20,9 +20,7 @@ manager: dansimp
 -   Windows 10
 -   Windows 11
 
-This walkthrough describes how to include scripts in a Windows client provisioning package to install Win32 applications. Scripted operations other than installing apps can also be performed, however, some care is needed in order to avoid unintended behavior during script execution (see [Remarks](#remarks) below). 
-
->**Prerequisite**: [Windows Assessment and Deployment Kit (ADK) for Windows](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit)
+This walkthrough describes how to include scripts in a Windows client provisioning package to install Win32 applications. Scripted operations other than installing apps can also be performed. However, some care is needed to avoid unintended behavior during script execution (see [Remarks](#remarks) below).
 
 ## Assemble the application assets
 

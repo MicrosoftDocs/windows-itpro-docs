@@ -12,7 +12,7 @@ ms.reviewer: gkomatsu
 manager: dansimp
 ---
 
-# Create a provisioning package for Windows 10/11
+# Create a provisioning package
 
 
 **Applies to**
@@ -29,12 +29,7 @@ You can use Windows Configuration Designer to create a provisioning package (`.p
 
 ## Start a new project
 
-1. Open Windows Configuration Designer:
-   - From either the Start screen or Start menu search, type **Windows Configuration Designer**, and then select the **Windows Configuration Designer** shortcut. 
-
-     or
-
-   - If you installed Windows Configuration Designer from the ADK, navigate to `C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86` (on an x64 computer) or `C:\Program Files\Windows Kits\10\Assessment and Deployment Kit\Imaging and Configuration Designer\x86\ICD.exe` (on an x86 computer), and then select **ICD.exe**.
+1. Open Windows Configuration Designer: From either the Start menu or Start menu search, type **Windows Configuration Designer**, and then select the **Windows Configuration Designer** shortcut.
 
 2. Select your desired option on the **Start** page, which offers multiple options for creating a provisioning package, as shown in the following image:
 
@@ -76,9 +71,6 @@ You can use Windows Configuration Designer to create a provisioning package (`.p
 >**Import a provisioning package** can make it easier to create different provisioning packages that all have certain settings in common. For example, you could create a provisioning package that contains the settings for your organization's network, and then import it into other packages that you create so you don't have to reconfigure those common settings repeatedly.
 
 6. In the **Available customizations** pane, you can now configure settings for the package. 
-
-
-
 
 ## Configure settings
 

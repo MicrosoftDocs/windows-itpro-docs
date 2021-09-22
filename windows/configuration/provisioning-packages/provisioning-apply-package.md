@@ -12,7 +12,7 @@ ms.reviewer: gkomatsu
 manager: dansimp
 ---
 
-# Apply a provisioning package on Windows 10/11
+# Apply a provisioning package
 
 
 **Applies to**
@@ -40,7 +40,7 @@ Provisioning packages can be applied to client devices during the first-run expe
 3. The next screen asks you to select a provisioning source. Select **Removable Media** and select **Next**.
 
     ![Provision this device.](../images/prov.jpg)
-    
+
 4. Select the provisioning package (`.ppkg`) that you want to apply, and select **Next**.
 
     ![Choose a package.](../images/choose-package.png)

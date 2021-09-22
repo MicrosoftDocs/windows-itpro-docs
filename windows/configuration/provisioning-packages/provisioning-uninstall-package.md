@@ -12,7 +12,7 @@ ms.reviewer: gkomatsu
 manager: dansimp
 ---
 
-# Settings changed when you uninstall a provisioning package on Windows 10/11
+# Settings changed when you uninstall a provisioning package
 
 
 **Applies to**
