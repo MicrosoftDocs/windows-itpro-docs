@@ -1,6 +1,6 @@
 ---
 title: Configure and customize Windows 11 taskbar | Microsoft Docs
-description: On Windows 11 devices, pin and unpin default apps and organization apps on the taskbar using an XML file. Deploy the taskbar XML file using Group Policy or MDM and Microsoft Intune. See what happens to the taskbar when the Windows OS client is installed or upgraded.
+description: On Windows 11 devices, pin and unpin default apps and organization apps on the taskbar using an XML file. Deploy the taskbar XML file using Group Policy or MDM and Microsoft Endpoint Manager. See what happens to the taskbar when the Windows OS client is installed or upgraded.
 ms.assetid: 
 manager: dougeby
 ms.author: mandia
@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/16/2021
+ms.date: 09/21/2021
 ms.localizationpriority: medium
 ---
 
@@ -137,7 +137,7 @@ This article shows you how to create the XML file, add apps to the XML, and depl
 
 ## Use Group Policy or MDM to create and deploy a taskbar policy
 
-Now that you have the XML file with your customized taskbar, you're ready to deploy it to devices in your organization. You can deploy your taskbar XML file using Group Policy, or using an MDM provider, like Microsoft Intune.
+Now that you have the XML file with your customized taskbar, you're ready to deploy it to devices in your organization. You can deploy your taskbar XML file using Group Policy, or using an MDM provider, like Microsoft Endpoint Manager.
 
 This section shows you how to deploy the XML both ways.
 
@@ -163,11 +163,11 @@ Use the following steps to add your XML file to a group policy, and apply the po
 
     For more information on using group policies, see [Implement Group Policy Objects](/learn/modules/implement-group-policy-objects/).
 
-### Create a Microsoft Intune policy to deploy your XML file
+### Create a Microsoft Endpoint Manager policy to deploy your XML file
 
-MDM providers can deploy policies to devices managed by the organization, including organization-owned devices, and personal or bring your own device (BYOD). Using an MDM provider, such as Microsoft Intune, you can deploy a policy that configures the pinned list.
+MDM providers can deploy policies to devices managed by the organization, including organization-owned devices, and personal or bring your own device (BYOD). Using an MDM provider, such as Microsoft Endpoint Manager, you can deploy a policy that configures the pinned list.
 
-Use the following steps to create an Intune policy that deploys your taskbar XML file:
+Use the following steps to create an Endpoint Manager policy that deploys your taskbar XML file:
 
 1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 
@@ -187,11 +187,11 @@ Use the following steps to create an Intune policy that deploys your taskbar XML
 
 6. In **Configuration settings**, select **Start** > **Start menu layout**. Browse to, and select your taskbar XML file.
 
-7. Select **Next**, and configure the rest of the policy settings. For more specific information, see [Configure device restriction settings in Microsoft Intune](/mem/intune/configuration/device-restrictions-configure).
+7. Select **Next**, and configure the rest of the policy settings. For more specific information, see [Configure device restriction settings](/mem/intune/configuration/device-restrictions-configure).
 
 8. When the policy is created, you can deploy it now, or deploy it later. Since this policy is a customized taskbar, the policy can also be deployed before users sign in the first time.
 
-    For more information and guidance on assigning policies using Microsoft Intune, see [Assign user and device profiles in Microsoft Intune](/mem/intune/configuration/device-profile-assign).
+    For more information and guidance on assigning policies using Microsoft Endpoint Manager, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
 
 > [!NOTE]
 > For third party partner MDM solutions, you may need to use an OMA-URI setting for Start layout, based on the [Policy configuration service provider (CSP)](/windows/client-management/mdm/policy-configuration-service-provider). The OMA-URI setting is `./User/Vendor/MSFT/Policy/Config/Start/StartLayout`.
