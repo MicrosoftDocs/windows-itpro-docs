@@ -12,7 +12,7 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# Build deployment rings for Windows 10 updates
+# Build deployment rings for Windows client updates
 
 **Applies to**
 
