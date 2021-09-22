@@ -1,5 +1,5 @@
 ---
-title: Customize Windows 10 Start and tasbkar with provisioning packages (Windows 10)
+title: Customize Windows 10 Start and taskbar with provisioning packages (Windows 10)
 description: In Windows 10, you can use a provisioning package to deploy a customized Start layout to users.
 ms.assetid: AC952899-86A0-42FC-9E3C-C25F45B1ACAC
 ms.reviewer: 
@@ -138,5 +138,5 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 - [Add image for secondary tiles](start-secondary-tiles.md)
 - [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-- [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)
