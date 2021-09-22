@@ -4753,6 +4753,20 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 <dl>
 
+### ADMX_WorkFoldersClient policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-workfoldersclient.md#admx-workfoldersclient-pol_userenabletokenbroker" id="admx-workfoldersclient-pol_userenabletokenbroker">ADMX_WorkFoldersClient/Pol_UserEnableTokenBroker</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-workfoldersclient.md#admx-workfoldersclient-pol_userenableworkfolders" id="admx-workfoldersclient-pol_userenableworkfolders">ADMX_WorkFoldersClient/Pol_UserEnableWorkFolders</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-workfoldersclient.md#admx-workfoldersclient-pol_machineenableworkfolders" id="admx-workfoldersclient-pol_machineenableworkfolders">ADMX_WorkFoldersClient/Pol_MachineEnableWorkFolders</a>
+  </dd>
+<dl>
+
 ### ADMX_WPN policies  
 
 <dl>
