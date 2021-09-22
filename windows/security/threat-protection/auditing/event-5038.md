@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -16,10 +16,6 @@ ms.technology: mde
 
 # 5038(F): Code integrity determined that the image hash of a file is not valid. The file could be corrupt due to unauthorized modification or the invalid hash could indicate a potential disk device error.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
- 
 
 The file could be corrupt due to unauthorized modification or the invalid hash could indicate a potential disk device error.
 
