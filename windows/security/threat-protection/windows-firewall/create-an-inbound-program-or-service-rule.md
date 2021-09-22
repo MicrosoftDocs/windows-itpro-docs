@@ -1,5 +1,5 @@
 ---
-title: Create an Inbound Program or Service Rule (Windows 10)
+title: Create an Inbound Program or Service Rule (Windows)
 description: Learn how to allow inbound traffic to a program or service by using the Group Policy Management MMC snap-in to create firewall rules.
 ms.assetid: 00b7fa60-7c64-4ba5-ba95-c542052834cf
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 To allow inbound network traffic to a specified program or service, use the Windows Defender Firewall with Advanced Securitynode in the Group Policy Management MMC snap-in to create firewall rules. This type of rule allows the program to listen and receive inbound network traffic on any port.
 

@@ -1,6 +1,6 @@
 ---
 title: Reset-security-key 
-description: Windows�10 enables users to sign in to their device using a security key. How to reset a security key
+description: Windows 10 and Windows 11 enables users to sign in to their device using a security key. How to reset a security key
 keywords: FIDO2, security key, CTAP, Microsoft-compatible security key
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -24,14 +24,14 @@ ms.reviewer:
 >This operation will wipe everything from your security key and reset it to factory defaults.</br> **All data and credentials will be cleared.** 
 
 
-A [Microsoft-compatible security key](./microsoft-compatible-security-key.md) can be reset via Settings app ( Settings > Accounts > Sign-in options > Security key  ).
+A [Microsoft-compatible security key](./microsoft-compatible-security-key.md) can be reset via Settings app (Settings > Accounts > Sign-in options > Security key).
 </br>
 Follow the instructions in the Settings app and look for specific instructions based on your security key manufacturer below:
 
 
 |Security key manufacturer</br> | Reset instructions </br> |
 | --- | --- | 
-|Yubico | **USB:** Remove and re-insert the security key. When the LED on the security key begins flashing, touch the metal contact  <br> **NFC:** Tap the security key on the reader <br>|
+|Yubico | **USB:** Remove and reinsert the security key. When the LED on the security key begins flashing, touch the metal contact  <br> **NFC:** Tap the security key on the reader <br>|
 |Feitian | Touch the blinking fingerprint sensor twice to reset the key|
 |HID | Tap the card on the reader twice to reset it |
 
