@@ -10,7 +10,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/16/2021
+ms.date: 09/22/2021
 ms.localizationpriority: medium
 ---
 
@@ -20,7 +20,7 @@ ms.localizationpriority: medium
 
 - Windows 11
 
-The Windows OS exposes CSPs that are used by MDM providers, like [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). In an MDM policy, these CSPs are settings that you configure in a policy. When the policy is ready, you deploy the policy to your devices.
+The Windows OS exposes CSPs that are used by MDM providers, like [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). In an MDM policy, these CSPs are settings that you configure. When the policy is ready, you deploy the policy to your devices.
 
 This article lists the CSPs that are available to customize the Taskbar for Windows 11 devices. Windows 11 uses the [Policy CSP - Start](/windows/client-management/mdm/policy-csp-start).
 
