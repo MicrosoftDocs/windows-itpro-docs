@@ -120,7 +120,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
     :::image type="content" source="../images/add-applications-details.png" alt-text="In Windows Configuration Designer, add an application.":::
 
-    To add applications to the devices, select **Add applications**. You can install multiple applications, including Windows desktop applications (Win32) and Universal Windows Platform (UWP) apps. The settings in this step vary depending on the application you select. For help with the settings, see [Provision PCs with apps](provisioning-packages/provision-pcs-with-apps.md).
+    To add applications to the devices, select **Add applications**. You can install multiple applications, including Windows desktop applications (Win32) and Universal Windows Platform (UWP) apps. The settings in this step vary depending on the application you select. For help with the settings, see [Provision PCs with apps](provision-pcs-with-apps.md).
 
 5. Add certificates:
 

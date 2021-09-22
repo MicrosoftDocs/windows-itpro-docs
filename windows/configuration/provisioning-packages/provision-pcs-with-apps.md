@@ -50,7 +50,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 - **Restart required**: Optionally, specify if you want to reboot after a successful install of this app 
 
-- **Required win32 app dependencies**: Optionally, specify more files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#cab-extract).
+- **Required win32 app dependencies**: Optionally, specify more files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab-the-application-assets). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#cab-extract).
 
 ### Exe or other installer
 
@@ -62,7 +62,7 @@ When you add an app in a Windows Configuration Designer wizard, the appropriate 
 
 - **Restart required**: Optionally, specify if you want to reboot after a successful install of this app 
 
-- **Required win32 app dependencies**: Optionally, specify more files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#cab-extract).
+- **Required win32 app dependencies**: Optionally, specify more files that are required for the installation of the app. For installers that have multiple file dependencies or have directory structures, [create a cab file of the assets](provisioning-script-to-install-app.md#cab-the-application-assets). The installation script should [include expansion of the .cab file](provisioning-script-to-install-app.md#cab-extract).
 
 
 <span id="adv" />
