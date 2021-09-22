@@ -139,7 +139,8 @@ For details about the settings you can customize in provisioning packages, see [
 1. When you are done configuring the provisioning package, on the **File** menu, select **Save**.
 
 2. Read the warning that project files may contain sensitive information, and select **OK**.
-   > **Important**  When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
+
+    When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location, and delete the project files when they're no longer needed.
 
 3. On the **Export** menu, select **Provisioning package**.
 
@@ -156,8 +157,8 @@ For details about the settings you can customize in provisioning packages, see [
 
    -   **Enable package signing** - If you select this option, you must select a valid certificate to use for signing the package. You can specify the certificate by selecting **Select...** and choosing the certificate you want to use to sign the package.
 
-       **Important**  
-       We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store and any package signed with that certificate thereafter can be applied silently. 
+    > [!TIP]
+    > We recommend that you include a trusted provisioning certificate in your provisioning package. When the package is applied to a device, the certificate is added to the system store. Any package signed with that certificate can be applied silently. 
 
 7. Select **Next** to specify the output location where you want the provisioning package to go once it's built. By default, Windows ICD uses the project folder as the output location.<p>
    Optionally, you can select **Browse** to change the default output location.
