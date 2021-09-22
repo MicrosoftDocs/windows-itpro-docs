@@ -11,15 +11,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit Sensitive Privilege Use
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Sensitive Privilege Use contains events that show the usage of sensitive privileges. This is the list of sensitive privileges:
