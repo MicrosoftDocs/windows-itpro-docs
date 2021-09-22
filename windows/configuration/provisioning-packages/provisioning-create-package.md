@@ -67,8 +67,8 @@ You can use Windows Configuration Designer to create a provisioning package (`.p
 
 5. On the **Import a provisioning package (optional)** page, you can select **Finish** to create your project, or browse to and select an existing provisioning package to import to your project, and then select **Finish**.
 
->[!TIP]
->**Import a provisioning package** can make it easier to create different provisioning packages that all have certain settings in common. For example, you could create a provisioning package that contains the settings for your organization's network, and then import it into other packages that you create so you don't have to reconfigure those common settings repeatedly.
+    >[!TIP]
+    >**Import a provisioning package** can make it easier to create different provisioning packages that all have certain settings in common. For example, you could create a provisioning package that includes the settings for your organization's network. Then, import that package into other packages that you create so you don't have to reconfigure those common settings repeatedly.
 
 6. In the **Available customizations** pane, you can now configure settings for the package. 
 
