@@ -2,7 +2,7 @@
 title: Provisioning packages overview on Windows 10/11
 description: With Windows 10 and Windows 11, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image. Learn about what provisioning packages, are and what they do.
 ms.assetid: 287706E5-063F-4AB5-902C-A0DF6D0730BC
-ms.reviewer: 
+ms.reviewer: gkomatsu
 manager: dansimp
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -100,7 +100,6 @@ The following table describes settings that you can configure using the wizards 
 <!-- <tr><td valign="top">Developer Setup</td><td valign="top">Enable Developer Mode.</td><td align="center" valign="top"><img src="../images/crossmark.png" alt="n777o"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no444"/></td><td align="center" valign="top"><img src="../images/crossmark.png" alt="no888"/></td><td align="center" valign="top"><img src="../images/checkmark.png" alt="yes"/></td></tr></table> -->
 
 - [Instructions for the desktop wizard](provision-pcs-for-initial-deployment.md)
-- [Instructions for the mobile wizard](../mobile-devices/provisioning-configure-mobile.md)
 - [Instructions for the kiosk wizard](../kiosk-single-app.md#wizard)
 - [Instructions for the HoloLens wizard](/hololens/hololens-provisioning#wizard)
 
@@ -134,7 +133,7 @@ For details about the settings you can customize in provisioning packages, see [
 
 WCD, simplified common provisioning scenarios. 
 
-![Configuration Designer options.](../images/icd.png)
+:::image type="content" source="../images/icd.png" alt-text="Configuration Designer options":::
 
 WCD supports the following scenarios for IT administrators:
 
@@ -148,7 +147,7 @@ WCD supports the following scenarios for IT administrators:
 
   - Microsoft Intune (certificate-based enrollment) 
   - AirWatch (password-string based enrollment) 
-  - Mobile Iron (password-string based enrollment) 
+  - MobileIron (password-string based enrollment) 
   - Other MDMs (cert-based enrollment) 
 
 <!--  > [!NOTE] -->

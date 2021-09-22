@@ -30,7 +30,6 @@ This walkthrough describes how to include scripts in a Windows client provisioni
 
 2. If you need to include a directory structure of files, you will need to cab the assets for easy inclusion in the provisioning packages.
 
-<span id="cab" />
 ## Cab the application assets
 
 1. Create a `.DDF` file as below, replacing *file1* and *file2* with the files you want to package, and adding the name of file/directory.

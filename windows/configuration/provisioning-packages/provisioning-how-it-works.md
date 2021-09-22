@@ -8,7 +8,7 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.reviewer: 
+ms.reviewer: gkomatsu
 manager: dansimp
 ---
 

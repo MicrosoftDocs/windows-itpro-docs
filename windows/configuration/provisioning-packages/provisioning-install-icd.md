@@ -8,7 +8,7 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.reviewer: 
+ms.reviewer: gkomatsu
 manager: dansimp
 ---
 
@@ -26,6 +26,7 @@ Use the Windows Configuration Designer tool to create provisioning packages to e
 
 Windows Configuration Designer can create provisioning packages for Windows client desktop, including Windows IoT Core, as well as Microsoft Surface Hub and Microsoft HoloLens. You can run Windows Configuration Designer on the following operating systems:
 
+- Windows 11
 - Windows 10 - x86 and amd64
 - Windows 8.1 Update - x86 and amd64
 - Windows 8.1 - x86 and amd64

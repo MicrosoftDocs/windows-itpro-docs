@@ -36,10 +36,15 @@ A **Target** can have more than one **TargetState**, and a **TargetState** can h
 
 ![Target with multiple target states and conditions.](../images/multi-target.png)
 
-The following table describes the logic for the target definition.
+The following information describes the logic for the target definition:
 
-<table><tr><td>When all <strong>Condition</strong> elements are TRUE, <strong>TargetState</strong> is TRUE.</td><td><img src="../images/icd-multi-targetstate-true.png" alt="Target state is true when all conditions are true"/></td></tr>
-<tr><td>If any of the <strong>TargetState</strong> elements is TRUE, <strong>Target</strong> is TRUE, and the <strong>ID</strong> can be used for setting customizations.</td><td><img src="../images/icd-multi-target-true.png" alt="Target is true if any target state is true"/></td></tr></table>
+- When all **Condition** elements are TRUE, **TargetState** is TRUE:
+
+  :::image type="content" source="../images/icd-multi-targetstate-true.png" alt-text="Target state is true when all conditions are true.":::
+
+- If any of the **TargetState** elements is TRUE, **Target** is TRUE, and the **ID** can be used for setting customizations:
+
+  :::image type="content" source="../images/icd-multi-target-true.png" alt-text="Target is true if any target state is true":::
 
 ### Conditions
 
@@ -291,7 +296,7 @@ The following events trigger provisioning on Windows client devices:
 | Package installation during device first run experience | Supported |
 | Detection of SIM presence or update | Supported |
 | Package installation at runtime | Supported |
-| Roaming detected Not supported |
+| Roaming detected | Not supported |
  
 ## Related articles
 

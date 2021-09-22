@@ -1,6 +1,6 @@
 ---
 title: Windows Configuration Designer command-line interface (Windows 10/11)
-description: 
+description: Learn more about the ICD syntax, switches, and arguments that you can use in the Windows Configuration Designer command-line interface for Windows10/11 client devices.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -30,7 +30,7 @@ You can use the Windows Configuration Designer command-line interface (CLI) to a
 
 ## Syntax
 
-``` icd
+``` cmd
 icd.exe /Build-ProvisioningPackage /CustomizationXML:<path_to_xml> /PackagePath:<path_to_ppkg> 
 [/StoreFile:<path_to_storefile>]  [/MSPackageRoot:<path_to_mspackage_directory>]  [/OEMInputXML:<path_to_xml>]
 [/ProductName:<product_name>]  [/Variables:<name>:<value>] [[+|-]Encrypted] [[+|-]Overwrite] [/?]
