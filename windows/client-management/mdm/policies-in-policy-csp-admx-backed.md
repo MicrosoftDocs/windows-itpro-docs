@@ -1362,6 +1362,7 @@ ms.date: 10/08/2020
 - [ADMX_wlansvc/SetCost](./policy-csp-admx-wlansvc.md#admx-wlansvc-setcost)
 - [ADMX_wlansvc/SetPINEnforced](./policy-csp-admx-wlansvc.md#admx-wlansvc-setpinenforced)
 - [ADMX_wlansvc/SetPINPreferred](./policy-csp-admx-wlansvc.md#admx-wlansvc-setpinpreferred)
+- [ADMX_WordWheel/CustomSearch](./policy-csp-admx-wordwheel.md#admx-wordwheelcustomsearch)
 - [ADMX_WPN/NoCallsDuringQuietHours](./policy-csp-admx-wpn.md#admx-wpn-nocallsduringquiethours)
 - [ADMX_WPN/NoLockScreenToastNotification](./policy-csp-admx-wpn.md#admx-wpn-nolockscreentoastnotification)
 - [ADMX_WPN/NoQuietHours](./policy-csp-admx-wpn.md#admx-wpn-noquiethours)
