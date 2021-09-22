@@ -1,5 +1,5 @@
 ---
-title: Active Directory Security Groups (Windows 10)
+title: Active Directory Security Groups
 description: Active Directory Security Groups
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,14 +12,15 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 09/21/2021
 ms.reviewer: 
 ---
 
 # Active Directory Security Groups
 
 **Applies to**
--   Windows Server 2016
+-   Windows Server 2016 or later
+-   Windows 10 or later
 
 This reference topic for the IT professional describes the default Active Directory security groups.
 
@@ -1489,7 +1490,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-512</p></td>
+<td><p>S-1-5-21-&lt;domain&gt;-512</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
@@ -1885,7 +1886,7 @@ This security group has not changed since Windows Server 2008.
 <tbody>
 <tr class="odd">
 <td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-21-&lt;domain&gt;-498</p></td>
+<td><p>S-1-5-21-&lt;root domain&gt;-498</p></td>
 </tr>
 <tr class="even">
 <td><p>Type</p></td>
