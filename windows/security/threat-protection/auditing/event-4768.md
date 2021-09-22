@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 4768(S, F): A Kerberos authentication ticket (TGT) was requested.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 :::image type="content" alt-text="Event 4768 illustration." source="images/event-4768.png":::
