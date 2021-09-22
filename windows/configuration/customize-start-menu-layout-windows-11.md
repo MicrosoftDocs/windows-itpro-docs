@@ -1,6 +1,6 @@
 ---
 title: Add or remove pinned apps on the Start menu in Windows 11 | Microsoft Docs
-description: Export Start layout to LayoutModification.json with pinned apps, add or remove pinned apps, and use the JSON text in an MDM policy to deploy a custom Start menu layout to Windows 11 devices.
+description: Export Start layout to LayoutModification.json with pinned apps, and add or remove pinned apps. Use the JSON text in an MDM policy to deploy a custom Start menu layout to Windows 11 devices.
 ms.assetid: 
 manager: dougeby
 ms.author: mandia
@@ -27,7 +27,7 @@ For example, you can override the default set of apps with your own a set of pin
 
 To add apps you want pinned to the Start menu, you use a JSON file. In previous Windows versions, IT administrators used an XML file to customize the Start menu. The XML file isn't available on Windows 11 and later ***unless*** [you're an OEM](/windows-hardware/customize/desktop/customize-the-windows-11-start-menu).
 
-This article shows you how to export an existing Start menu layout, and use the JSON in a Microsoft Intune MDM policy.
+This article shows you how to export an existing Start menu layout, and use the JSON in a Microsoft Endpoint Manager policy.
 
 ## Before you begin
 
@@ -51,24 +51,26 @@ Start has the following areas:
 
 - **Pinned**: Shows pinned apps, or a subset of all of the apps installed on the device. You can create a list of pinned apps you want on the devices using the **ConfigureStartPins** policy. **ConfigureStartPins** overrides the entire layout, which also removes apps that are pinned by default.
 
-  This article shows you how to use the **ConfigureStartPins** policy.
+  This article shows you [how to use the **ConfigureStartPins** policy](#get-the-pinnedlist-json).
 
 - **All apps**: Users select this option to see an alphabetical list of all the apps on the device. This section can't be customized using the JSON file.
 
-  The `[Start/HideFrequentlyUsedApps CSP](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps)` exposes settings that configure the "Most used" section, which is at the top of the all apps list.
+  The [Start/HideFrequentlyUsedApps CSP](/windows/client-management/mdm/policy-csp-start#start-hidefrequentlyusedapps) exposes settings that configure the "Most used" section, which is at the top of the all apps list.
 
-  In Endpoint Manager, you can configure this Start menu layout feature, and more. For more information on the Start menu settings you can configure in an Endpoint Manager policy, see [Windows 10/11 device settings to allow or restrict features](/mem/intune/configuration/device-restrictions-windows-10#start).
+  In **Endpoint Manager**, you can configure this Start menu layout feature, and more. For more information on the Start menu settings you can configure in an Endpoint Manager policy, see [Windows 10/11 device settings to allow or restrict features](/mem/intune/configuration/device-restrictions-windows-10#start).
 
-  In Group Policy, there are policies that include settings that control the Start menu layout. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices:
+  In **Group Policy**, there are policies that include settings that control the Start menu layout. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices:
 
   - `Computer Configuration\Administrative Templates\Start Menu and Taskbar`
   - `User Configuration\Administrative Templates\Start Menu and Taskbar`
 
 - **Recommended**: Shows recently opened files and recently installed apps. This section can't be customized using the JSON file.
 
-  The  [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists) exposes settings that prevent files from showing in this section. This CSP also hides recent files that show from the taskbar. In Endpoint Manager, you can configure this feature, and more. For more information on the Start menu settings you can configure in an Endpoint Manager policy, see [Windows 10/11 device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10#start).
+  The  [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists) exposes settings that prevent files from showing in this section. This CSP also hides recent files that show from the taskbar.
 
-  In Group Policy, there are policies that include settings that control the Start menu layout. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices:
+  In **Endpoint Manager**, you can configure this feature, and more. For more information on the Start menu settings you can configure in an Endpoint Manager policy, see [Windows 10/11 device settings to allow or restrict features](/mem/intune/configuration/device-restrictions-windows-10#start).
+
+  In **Group Policy**, there are policies that include settings that control the Start menu layout. Some policies may not work as expected. Be sure to test your policies before broadly deploying them across your devices:
 
   - `Computer Configuration\Administrative Templates\Start Menu and Taskbar`
   - `User Configuration\Administrative Templates\Start Menu and Taskbar`
@@ -171,12 +173,12 @@ To deploy this policy, the devices must be enrolled, and managed by your organiz
     :::image type="content" source="./images/customize-start-menu-layout-windows-11/endpoint-manager-admin-center-custom-oma-uri-start-layout.png" alt-text="Custom OMA-URI settings to customize Start menu layout using pinnedList":::
 
 8. Select **Save** > **Next** to save your changes.
-9. Configure the rest of the policy settings. For more specific information, see [Create a profile with custom settings in Intune](/mem/intune/configuration/custom-settings-configure).
+9. Configure the rest of the policy settings. For more specific information, see [Create a profile with custom settings](/mem/intune/configuration/custom-settings-configure).
 
-The Windows OS has exposes many CSPs that apply to the Start menu. For a list, see [Supported CSP policies for Windows 11 Start menu](supported-csp-start-menu-layout-windows.md).
+The Windows OS exposes many CSPs that apply to the Start menu. For a list, see [Supported CSP policies for Windows 11 Start menu](supported-csp-start-menu-layout-windows.md).
 
-### Deploy the policy using Microsoft Intune
+### Deploy the policy using Endpoint Manager
 
 When the policy is created, you can deploy it now, or deploy it later. Since this policy is a customized Start layout, the policy can be deployed anytime, including before users sign in the first time.
 
-For more information and guidance on assigning policies, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
+For more information and guidance on assigning policies to devices in your organization, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
