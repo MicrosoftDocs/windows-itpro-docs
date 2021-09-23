@@ -642,10 +642,10 @@ On **HV01**:
  > If you receive a message that "A connection to the deployment share could not be made, check that the DHCP service is available to the REFW11X64-001 VM, and it has been issued a valid IP address lease (check your DHCP server).
 
 5. After booting into Windows PE, complete the Windows Deployment Wizard with the following settings:
-  1. Select a task sequence to execute on this computer: Windows 11 Enterprise x64 Default Image
-  2. Specify whether to capture an image: Capture an image of this reference computer
+ - Select a task sequence to execute on this computer: Windows 11 Enterprise x64 Default Image
+ - Specify whether to capture an image: Capture an image of this reference computer
     -   Location: \\\\MDT01\\MDTBuildLab$\\Captures
-  3. File name: REFW11X64-001.wim
+ -  File name: REFW11X64-001.wim
 
   ![capture image.](../images/captureimage.png)
 
