@@ -1,5 +1,5 @@
 ---
-title: Planning the GPOs (Windows 10)
+title: Planning the GPOs (Windows)
 description: Learn about planning Group Policy Objects for your isolation zones in Windows Defender Firewall with Advanced Security, after you design the zone layout.
 ms.assetid: 11949ca3-a11c-4a16-b297-0862432eb5b4
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 When you plan the GPOs for your different isolation zones, you must complete the layout of the required zones and their mappings to the groups that link the devices to the zones.
 
@@ -42,7 +43,7 @@ A few things to consider as you plan the GPOs:
 
 -   Windows Defender Firewall* in Windows Vista and Windows Server 2008 only support one network location profile at a time. If you add a second network adapter that is connected to a different network, or not connected at all, you could unintentionally change the profile that is currently active on the device. If your GPO specifies different firewall and connection security rules based on the current network location profile, the behavior of how the device handles network traffic will change accordingly. We recommend for stationary devices, such as desktops and servers, that you assign any rule for the device to all profiles. Apply GPOs that change rules per network location to devices that must move between networks, such as your portable devices. Consider creating a separate domain isolation GPO for your servers that uses the same settings as the GPO for the clients, except that the server GPO specifies the same rules for all network location profiles.
 
-*Windows Defender Firewall is now called Windows Defender Firewall with Advanced Security in Windows 10.
+*Windows Defender Firewall is now called Windows Defender Firewall with Advanced Security in Windows 10 and Windows 11.
 
    > [!NOTE]
    > Devices running Windows 7, Windows Server 2008 R2, and later support different network location types, and therefore profiles, for each network adapter at the same time. Each network adapter is assigned the network location appropriate for the network to which it is connected. Windows Defender Firewall then enforces only those rules that apply to that network type’s profile. So certain types of traffic are blocked when coming from a network adapter connected to a public network, but those same types might be permitted when coming from a private or domain network.

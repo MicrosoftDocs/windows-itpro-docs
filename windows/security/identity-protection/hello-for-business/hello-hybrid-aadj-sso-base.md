@@ -21,6 +21,7 @@ ms.reviewer:
 **Applies to**
 
 - Windows 10
+- Windows 11
 - Azure Active Directory joined
 - Hybrid Deployment
 - Key trust model
@@ -50,7 +51,7 @@ You can use the **dsregcmd.exe** command to determine if your device is register
 
 ### CRL Distribution Point (CDP)
 
-Certificates issued by a certificate authority can be revoked.  When a certificate authority revokes as certificate, it writes information about the certificate into a revocation list.  During certificate validation, Windows 10 consults the CRL distribution point within the certificate to get a list of revoked certificates.  Validation compares the current certificate with information in the certificate revocation list to determine if the certificate remains valid.  
+Certificates issued by a certificate authority can be revoked.  When a certificate authority revokes as certificate, it writes information about the certificate into a revocation list.  During certificate validation, Windows consults the CRL distribution point within the certificate to get a list of revoked certificates.  Validation compares the current certificate with information in the certificate revocation list to determine if the certificate remains valid.  
 
 ![Domain Controller Certificate with LDAP CDP.](images/aadj/Certificate-CDP.png)
 
@@ -75,7 +76,7 @@ Certificate authorities write CRL distribution points in certificates as they ar
 
 #### Why does Windows need to validate the domain controller certificate?
 
-Windows Hello for Business enforces the strict KDC validation security feature when authenticating from an Azure AD joined device to a domain. This enforcement imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business on an Azure AD joined device, the Windows 10 client validates the reply from the domain controller by ensuring all of the following are met:
+Windows Hello for Business enforces the strict KDC validation security feature when authenticating from an Azure AD joined device to a domain. This enforcement imposes more restrictive criteria that must be met by the Key Distribution Center (KDC). When authenticating using Windows Hello for Business on an Azure AD joined device, the Windows client validates the reply from the domain controller by ensuring all of the following are met:
 
 - The domain controller has the private key for the certificate provided.
 - The root CA that issued the domain controller's certificate is in the device's **Trusted Root Certificate Authorities**.
@@ -212,7 +213,7 @@ The web server is ready to host the CRL distribution point.  Now, configure the 
 4. On the **Extensions** tab, click **Add**.  Type the computer and share name you create for your CRL distribution point in [Configure the CDP file share](#configure-the-cdp-file-share).  For example, **\\\app\cdp$\\** (do not forget the trailing backwards slash).
 5. Select **\<CaName>** from the **Variable** list and click **Insert**.  Select **\<CRLNameSuffix>** from the **Variable** list and click **Insert**.  Select **\<DeltaCRLAllowed>** from the **Variable** list and click **Insert**.
 6. Type **.crl** at the end of the text in **Location**. Click **OK**.
-7. Select the CDP you just created.
+7. Select the CDP you just created. <br/>
    ![CDP publishing location.](images/aadj/cdp-extension-complete-unc.png)
 8. Select **Publish CRLs to this location**.
 9. Select **Publish Delta CRLs to this location**.
@@ -261,7 +262,6 @@ With the CA properly configured with a valid HTTP-based CRL distribution point, 
 5. Review the information below the list of fields to confirm the new URL for the CRL distribution point is present in the certificate.  Click **OK**.</br>
 ![New Certificate with updated CDP.](images/aadj/dc-cert-with-new-cdp.png)
 
-
 ## Configure and Assign a Trusted Certificate Device Configuration Profile
 
 Your domain controllers have new certificate that include the new CRL distribution point.  Next, you need your enterprise root certificate so you can deploy it to Azure AD joined devices.  Deploying the enterprise root certificates to the device, ensures the device trusts any certificates issued by the certificate authority.  Without the certificate, Azure AD joined devices do not trust domain controller certificates and authentication fails. 
@@ -281,7 +281,7 @@ Steps you will perform include:
 ![Details tab and copy to file.](images/aadj/certlm-root-cert-details-tab.png)
 6. In the **Certificate Export Wizard**, click **Next**.  
 7. On the **Export File Format** page of the wizard, click **Next**.  
-8. On the **File to Export** page in the wizard, type the name and location of the root certificate and click **Next**. Click **Finish** and then click **OK** to close the success dialog box.
+8. On the **File to Export** page in the wizard, type the name and location of the root certificate and click **Next**. Click **Finish** and then click **OK** to close the success dialog box. <br>
 ![Export root certificate.](images/aadj/certlm-export-root-certificate.png)
 9. Click **OK**  two times to return to the **Certificate Manager** for the local computer.  Close the **Certificate Manager**.
 
@@ -315,7 +315,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
 7. Select **Required** next to **Use a Trusted Platform Module (TPM)**. By default, Windows Hello for Business prefers TPM 2.0 or falls backs to software. Choosing **Required** forces Windows Hello for Business to only use TPM 2.0 or TPM 1.2 and does not allow fall back to software-based keys.
 8. Enter the desired **Minimum PIN length** and **Maximum PIN length**.
     > [!IMPORTANT]
-    > The default minimum PIN length for Windows Hello for Business on Windows 10 is six.  Microsoft Intune defaults the minimum PIN length to four, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to six.
+    > The default minimum PIN length for Windows Hello for Business on Windows 10 and Windows 11 is six.  Microsoft Intune defaults the minimum PIN length to four, which reduces the security of the user's PIN.  If you do not have a desired PIN length, set the minimum PIN length to six.
 
 9. Select the appropriate configuration for the following settings:
     * **Lowercase letters in PIN**
@@ -325,7 +325,7 @@ Sign-in a workstation with access equivalent to a _domain user_.
     * **Remember PIN history**
     
     > [!NOTE]
-    > The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passwords.  Making the PIN as complex and changed frequently as a password increases the likelihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows 10 to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concerned with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
+    > The Windows Hello for Business PIN is not a symmetric key (a password).  A copy of the current PIN is not stored locally or on a server like in the case of passwords.  Making the PIN as complex and changed frequently as a password increases the likelihood of forgotten PINs.  Additionally, enabling PIN history is the only scenario that requires Windows to store older PIN combinations (protected to the current PIN). Windows Hello for Business combined with a TPM provides anti-hammering functionality that prevents brute force attacks of the user's PIN.  If you are concerned with user-to-user shoulder surfacing, rather that forcing complex PIN that change frequently, consider using the [Multifactor Unlock](feature-multifactor-unlock.md) feature.
 
 10. Select **Yes** next to **Allow biometric authentication** if you want to allow users to use biometrics (fingerprint and/or facial recognition) to unlock the device. To further secure the use of biometrics, select **Yes** to **Use enhanced anti-spoofing, when available**.
 11. Select **No** to **Allow phone sign-in**. This feature has been deprecated.

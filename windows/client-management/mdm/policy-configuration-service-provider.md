@@ -555,7 +555,18 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### ADMX_Desktop policies  
+### ADMX_DCOM policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-dcom.md#admx-dcom-dcomactivationsecuritycheckallowlocallist" id="admx-dcom-dcomactivationsecuritycheckallowlocallist">ADMX_DCOM/DCOMActivationSecurityCheckAllowLocalList</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-dcom.md#admx-dcom-dcomactivationsecuritycheckexemptionlist" id="admx-dcom-dcomactivationsecuritycheckexemptionlist">ADMX_DCOM/DCOMActivationSecurityCheckExemptionList</a>
+  </dd>
+</dl>
+
+### ADMX_Desktop policies
 
 <dl>
   <dd>
@@ -647,6 +658,24 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_DeviceCompat policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-devicecompat.md#admx-devicecompat-deviceflags" id="#admx-devicecompat-deviceflags">ADMX_DeviceCompat/DeviceFlags</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-devicecompat.md#admx-devicecompat-drivershims" id="#admx-devicecompat-drivershims">ADMX_DeviceCompat/DriverShims</a>
+  </dd>
+<dl>
+
+### ADMX_DeviceGuard policies
+
+ <dd>
+    <a href="./policy-csp-admx-deviceguard.md#admx-deviceguard-configcipolicy" id="admx-deviceguard-configcipolicy">ADMX_DeviceGuard/ConfigCIPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_DeviceInstallation policies  
 
 <dl>
@@ -687,13 +716,34 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
-### ADMX_DigitalLocker policies
-<dl>
+### ADMX_DFS policies
+
+</dl>
   <dd>
+    <a href="./policy-csp-admx-dfs.md#admx-dfs-dfsdiscoverdc"id="admx-devicesetup-
+dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
+  </dd>
+</dl>
+
+### ADMX_DigitalLocker policies
+
+</dl>  
+<dd>
     <a href="./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-1" id="admx-digitallocker-digitalx-diableapplication-titletext-1">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-2" id="admx-digitallocker-digitalx-diableapplication-titletext-2">ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_2</a>
+  </dd>
+</dl>
+
+### ADMX_DiskDiagnostic policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-diskdiagnostic.md#admx-diskdiagnostic-dfdalertpolicy" id="admx-diskdiagnostic-dfdalertpolicy">ADMX_DiskDiagnostic/DfdAlertPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskdiagnostic.md#admx-diskdiagnostic-wdiscenarioexecutionpolicy" id="admx-diskdiagnostic-wdiscenarioexecutionpolicy">ADMX_DiskDiagnostic/WdiScenarioExecutionPolicy</a>
   </dd>
 </dl>
 
@@ -704,6 +754,7 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-distributedlinktracking.md#admx-distributedlinktracking-dlt_allowdomainmode" id="admx-distributedlinktracking-dlt_allowdomainmode">ADMX_DistributedLinkTracking/DLT_AllowDomainMode</a>
   </dd>
 </dl>
+
 
 ### ADMX_DnsClient policies
 
@@ -777,7 +828,6 @@ The following diagram shows the Policy configuration service provider in tree fo
 </dl>
 
 ### ADMX_DWM policies
-
 <dl>
   <dd>
     <a href="./policy-csp-admx-dwm.md#admx-dwm-dwmdefaultcolorizationcolor-1" id="admx-dwm-dwmdefaultcolorizationcolor-1">ADMX_DWM/DwmDefaultColorizationColor_1</a>
@@ -844,6 +894,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-admx-encryptfilesonmove.md#admx-encryptfilesonmove-noencryptonmove" id="admx-encryptfilesonmove-noencryptonmove">ADMX_EncryptFilesonMove/NoEncryptOnMove</a>
+  </dd>
+</dl>
+
+### ADMX_EventLogging policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-eventlogging.md#admx-eventlogging-enableprotectedeventlogging" id="admx-eventlogging-enableprotectedeventlogging">ADMX_EventLogging/EnableProtectedEventLogging</a>
   </dd>
 </dl>
 
@@ -1041,6 +1098,19 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_EventViewer policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionprogram" id="admx-eventviewer-eventviewer_redirectionprogram">ADMX_EventViewer/EventViewer_RedirectionProgram</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters" id="admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters">ADMX_EventViewer/EventViewer_RedirectionProgramCommandLineParameters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionurl" id="admx-eventviewer-eventviewer_redirectionurl">ADMX_EventViewer/EventViewer_RedirectionURL</a>
+  <dd>
+
 ### ADMX_Explorer policies  
 
 <dl>
@@ -1061,10 +1131,30 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_ExternalBoot policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_hibernate" id="admx-externalboot-portableoperatingsystem_hibernate">ADMX_ExternalBoot/PortableOperatingSystem_Hibernate</a>
+  </dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_sleep" id="admx-externalboot-portableoperatingsystem_sleep">ADMX_ExternalBoot/PortableOperatingSystem_Sleep</a>
+  </dd>
+  </dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_launcher" id="admx-externalboot-portableoperatingsystem_launcher">ADMX_ExternalBoot/PortableOperatingSystem_Launcher</a>
+  </dd>
+<dl>
+
 ### ADMX_FileRecovery policies
 <dl>
   <dd>
     <a href="./policy-csp-admx-filerecovery.md#admx-filerecovery-wdiscenarioexecutionpolicy" id="admx-filerecovery-wdiscenarioexecutionpolicy">ADMX_FileRecovery/WdiScenarioExecutionPolicy</a>
+  </dd>
+</dl>
+
+### ADMX_FileRevocation policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-filerevocation.md#admx-filerevocation-delegatedpackagefamilynames" id="admx-filerevocation-delegatedpackagefamilynames">ADMX_FileRevocation/DelegatedPackageFamilyNames</a>
   </dd>
 </dl>
 
@@ -1128,6 +1218,23 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_FramePanes policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-framepanes.md#admx-framepanes-noreadingpane" id="admx-framepanes-noreadingpane">ADMX_FramePanes/NoReadingPane</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-framepanes.md#admx-framepanes-nopreviewpane" id="admx-framepanes-nopreviewpane">ADMX_FramePanes/NoPreviewPane</a>
+  </dd>
+<dl>
+
+### ADMX_FTHSVC policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-fthsvc.md#admx-fthsvc-wdiscenarioexecutionpolicy" id="admx-fthsvc-wdiscenarioexecutionpolicy">ADMX_FTHSVC/WdiScenarioExecutionPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_Help policies
 <dl>
   <dd>
@@ -1141,6 +1248,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
   <dd>
     <a href="./policy-csp-admx-help.md#admx-help-restrictrunfromhelp-comp" id="admx-help-restrictrunfromhelp-comp">ADMX_Help/RestrictRunFromHelp_Comp</a>
+  </dd>
+</dl>
+
+### ADMX_HotSpotAuth policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-hotspotauth.md#admx-hotspotauth-hotspotauth_enable" id="admx-hotspotauth-hotspotauth_enable">ADMX_HotSpotAuth/HotspotAuth_Enable</a>
   </dd>
 </dl>
 
@@ -1455,6 +1569,15 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_IIS policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-iis.md#admx-iis-preventiisinstall
+" id="admx-iis-preventiisinstall
+">ADMX_IIS/PreventIISInstall</a>
+  </dd>
+<dl>
+
 ### ADMX_kdc policies
 <dl>
   <dd>
@@ -1536,6 +1659,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_LeakDiagnostic policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-leakdiagnostic.md#admx-leakdiagnostic-wdiscenarioexecutionpolicy" id="admx-leakdiagnostic-wdiscenarioexecutionpolicy">ADMX_LeakDiagnostic/WdiScenarioExecutionPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_LinkLayerTopologyDiscovery policies
 <dl>
   <dd>
@@ -1545,6 +1675,14 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-linklayertopologydiscovery.md#admx-linklayertopologydiscovery-lltd-enablerspndr" id="admx-linklayertopologydiscovery-lltd-enablerspndr">ADMX_LinkLayerTopologyDiscovery/LLTD_EnableRspndr</a>
   </dd>
 </dl>
+
+### ADMX_LocationProviderAdm policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-locationprovideradm.md#admx-locationprovideradm-disablewindowslocationprovider_1" id="admx-locationprovideradm-disablewindowslocationprovider_1">ADMX_LocationProviderAdm/BlockUserFromShowingAccountDetailsOnSignin</a>
+  </dd>
+<dl>
 
 ### ADMX_Logon policies  
 
@@ -5932,6 +6070,13 @@ The following diagram shows the Policy configuration service provider in tree fo
 <dl>
   <dd>
     <a href="./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings" id="exploitguard-exploitprotectionsettings">ExploitGuard/ExploitProtectionSettings</a>
+  </dd>
+</dl>
+
+### Feeds policies
+<dl>
+  <dd>
+    <a href="./policy-csp-feeds.md#feeds-feedsenabled" id="feeds-feedsenabled">Feeds/FeedsEnabled</a>
   </dd>
 </dl>
 
