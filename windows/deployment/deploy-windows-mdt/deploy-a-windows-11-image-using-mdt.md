@@ -90,11 +90,8 @@ The steps for creating the deployment share for production are the same as when 
 1. Ensure you are signed on as: contoso\administrator.
 2. In the Deployment Workbench console, right-click **Deployment Shares** and select **New Deployment Share**.
 3. On the **Path** page, in the **Deployment share path** text box, type **D:\\MDTProduction** and click **Next**.
-
 4. On the **Share** page, in the **Share name** text box, type **MDTProduction$** and click **Next**.
-
 5. On the **Descriptive Name** page, in the **Deployment share description** text box, type **MDT Production** and click **Next**.
-
 6. On the **Options** page, accept the default settings and click **Next** twice, and then click **Finish**.
 7. Using File Explorer, verify that you can access the **\\\\MDT01\\MDTProduction$** share.
 
@@ -129,7 +126,7 @@ In these steps, we assume that you have completed the steps in the [Create a Win
 7.  After adding the operating system, double-click the added operating system name in the **Operating Systems / Windows 11** node and change the name to **Windows 11 Enterprise x64 Custom Image**.
 
 > [!NOTE]
-> The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
+> The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT now uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
  
 
 ![imported OS.](../images/fig2-importedos.png)
