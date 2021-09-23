@@ -23,15 +23,15 @@ ms.technology: mde
 
 -   Windows 10
 -   Windows 11
--   Windows Server 2016 and above
+-   Windows Server 2016 and later
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
-
->[!IMPORTANT]
->Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 The [Microsoft Component Object Model (COM)](/windows/desktop/com/the-component-object-model) is a platform-independent, distributed, object-oriented system for creating binary software components that can interact. COM specifies an object model and programming requirements that enable COM objects to interact with other objects.
+
+> [!IMPORTANT]
+> Some information relates to pre-released product which may be substantially modified before it's commercially released. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ### COM object configurability in WDAC policy
 
@@ -54,11 +54,13 @@ Get GUID of application to allow in one of the following ways:
 ### Author policy setting to allow or deny COM object GUID
 
 Three elements:
+
 - Provider: platform on which code is running (values are  Powershell, WSH, IE, VBA, MSI, or a wildcard “AllHostIds”)
 - Key: GUID for the program you wish to run, in the format Key="{33333333-4444-4444-1616-161616161616}"
 - ValueName: needs to be set to "EnterpriseDefinedClsId"
 
 One attribute:
+
 - Value: needs to be “true” for allow and “false” for deny<br/>
   **Note**: Deny only works in base policies, not supplemental policies
 - The setting needs to be placed in the order of ASCII values (first by Provider, then Key, then ValueName)
@@ -96,7 +98,7 @@ Example 3: Allows a specific COM object to register in PowerShell
 ```
 ### How to configure settings for the CLSIDs
 
-Given the following example of an error in the Event Viewer (**Application and Service Logs** > **Microsoft** > **Windows** > **AppLocker** > **MSI and Script**):
+Here's an example of an error in the Event Viewer (**Application and Service Logs** > **Microsoft** > **Windows** > **AppLocker** > **MSI and Script**):
 
 Log Name: Microsoft-Windows-AppLocker/MSI and Script<br/>
 Source: Microsoft-Windows-AppLocker<br/>
@@ -136,7 +138,7 @@ Event XML:
 </Event>
 ```
 
-To add this CLSID to the existing policy, use the following steps:
+To add this CLSID to the existing policy, follow these steps:
 
 1. Open PowerShell ISE with Administrative privileges.
 2. Copy and edit this command, then run it from the admin PowerShell ISE. Consider the policy name to be `WDAC_policy.xml`.
