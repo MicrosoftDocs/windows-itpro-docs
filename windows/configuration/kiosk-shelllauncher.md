@@ -293,7 +293,7 @@ Value|Description
 
 These action can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to see how these codes with Shell Launcher WMI.
 
-To configure these action with Shell Launcher CSP, use below syntax in the shell launcher configuration xml. You can specify at most 4 custom actions mapping to 4 exit codes, and one default action for all other exit codes. When app exits and if the exit code is not found in the custom action mapping, or there is no default action defined, it will be no-op, i.e. nothing happens. So it's recommeded to at least define DefaultAction. [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
+To configure these action with Shell Launcher CSP, use below syntax in the shell launcher configuration xml. You can specify at most 4 custom actions mapping to 4 exit codes, and one default action for all other exit codes. When app exits and if the exit code is not found in the custom action mapping, or there is no default action defined, it will be no-op, i.e. nothing happens. So it's recommended to at least define DefaultAction. [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
 ``` xml
 <ReturnCodeActions>
     <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>

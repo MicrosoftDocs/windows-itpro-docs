@@ -21,7 +21,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10
-- Windwos 11
+- Windows 11
 
 ## Full XML sample
 
@@ -645,7 +645,7 @@ IT Admin now can specify user access to Downloads folder, Removable drives, or n
 >[!NOTE]
 >Updated for Windows 10, version 1903+.
 
-The following XML schema is for AssignedAccess Configuration up to Windows 10 1803 release.:
+The following XML schema is for AssignedAccess Configuration up to Windows 10 1803 release:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

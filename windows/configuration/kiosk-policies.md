@@ -21,7 +21,7 @@ ms.topic: article
 **Applies to**
 
 - Windows 10 Pro, Enterprise, and Education
-- Windwos 11
+- Windows 11
 
 
 
