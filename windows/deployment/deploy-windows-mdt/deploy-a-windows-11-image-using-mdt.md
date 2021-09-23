@@ -22,7 +22,7 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-This topic will show you how to take your reference image for Windows 11 that was just [created](create-a-windows-11-reference-image.md), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
+This topic will show you how to take your reference image for Windows 11 [that was just created](create-a-windows-11-reference-image.md), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
 
 We will prepare for this by creating an MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. We will configure Active Directory permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
 
@@ -31,7 +31,7 @@ For the purposes of this topic, we will use four computers: DC01, MDT01, HV01 an
 - DC01 is a domain controller 
 - MDT01 is a domain member server 
 - HV01 is a Hyper-V server 
-- PC0005 is a blank device to which we will deploy Windows 10
+- PC0005 is a blank device to which we will deploy Windows 11
 
 MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.  HV01 used to test deployment of PC0005 in a virtual environment.
 
@@ -114,26 +114,22 @@ On **MDT01**:
 
 ## Step 3: Add a custom image
 
-The next step is to add a reference image into the deployment share with the setup files required to successfully deploy Windows 10. When adding a custom image, you still need to copy setup files (an option in the wizard) because Windows 10 stores additional components in the Sources\\SxS folder which is outside the image and may be required when installing components.
+The next step is to add a reference image into the deployment share with the setup files required to successfully deploy Windows 11. When adding a custom image, you still need to copy setup files (an option in the wizard) because Windows 10/11 stores additional components in the Sources\\SxS folder which is outside the image and may be required when installing components.
 
-### Add the Windows 10 Enterprise x64 RTM custom image
+### Add the Windows 11 Enterprise x64 custom image
 
-In these steps, we assume that you have completed the steps in the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic, so you have a Windows 10 reference image at **D:\\MDTBuildLab\\Captures\REFW10X64-001.wim** on MDT01.
+In these steps, we assume that you have completed the steps in the [Create a Windows 11 reference image](create-a-windows-11-reference-image.md) topic, so you have a Windows 11 reference image at **D:\\MDTBuildLab\\Captures\REFW11X64-001.wim** on MDT01.
 
-1.  Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Production**; select the **Operating Systems** node, and create a folder named **Windows 10**.
+1.  Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Production**; select the **Operating Systems** node, and create a folder named **Windows 11**.
 2.  Right-click the **Windows 10** folder and select **Import Operating System**.
-
 3.  On the **OS Type** page, select **Custom image file** and click **Next**.
+4.  On the **Image** page, in the **Source file** text box, browse to **D:\\MDTBuildLab\\Captures\\REFW11X64-001.wim** and click **Next**.
+5.  On the **Setup** page, select the **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path** option; in the **Setup source directory** text box, browse to **D:\\MDTBuildLab\\Operating Systems\\W11EX64** and click **Next**.
+6.  On the **Destination** page, in the **Destination directory name** text box, type **W11EX64**, click **Next** twice, and then click **Finish**.
+7.  After adding the operating system, double-click the added operating system name in the **Operating Systems / Windows 11** node and change the name to **Windows 11 Enterprise x64 Custom Image**.
 
-4.  On the **Image** page, in the **Source file** text box, browse to **D:\\MDTBuildLab\\Captures\\REFW10X64-001.wim** and click **Next**.
-
-5.  On the **Setup** page, select the **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path** option; in the **Setup source directory** text box, browse to **D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM** and click **Next**.
-
-6.  On the **Destination** page, in the **Destination directory name** text box, type **W10EX64RTM**, click **Next** twice, and then click **Finish**.
-7.  After adding the operating system, double-click the added operating system name in the **Operating Systems / Windows 10** node and change the name to **Windows 10 Enterprise x64 RTM Custom Image**.
-
->[!NOTE]
->The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
+> [!NOTE]
+> The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
  
 
 ![imported OS.](../images/fig2-importedos.png)
