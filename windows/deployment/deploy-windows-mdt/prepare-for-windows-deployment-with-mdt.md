@@ -231,6 +231,8 @@ If you have the Active Directory Users and Computers console open you can refres
 
 ## Create and share the logs folder
 
+Switch back to the MDT01 computer.
+
 By default MDT stores the log files locally on the client. In order to capture a reference image, you will need to enable server-side logging and, to do that, you will need to have a folder in which to store the logs. For more information, see [Create a Windows 10 reference image](create-a-windows-10-reference-image.md).
 
 On **MDT01**:

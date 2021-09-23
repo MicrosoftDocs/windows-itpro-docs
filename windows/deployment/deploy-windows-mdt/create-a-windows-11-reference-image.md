@@ -56,11 +56,12 @@ On **MDT01**:
 
 - Sign in as contoso\\administrator using a password of <b>pass@word1</b> (credentials from the [prepare for deployment](prepare-for-windows-deployment-with-mdt.md) topic).
 - Start the MDT deployment workbench, and pin the console to the taskbar for easy access.
+  - If it is your first time starting the console, search for **Deployment Workbench**. 
 - Using the Deployment Workbench, right-click **Deployment Shares** and select **New Deployment Share**.
 - Use the following settings for the New Deployment Share Wizard:
   - Deployment share path: **D:\\MDTBuildLab**
   - Share name: **MDTBuildLab$**
-  - Deployment share description: **MDT Build Lab**
+  - Descriptive name: **MDT Build Lab**
 - Accept the default selections on the Options page and click **Next**.
 - Review the Summary page, click **Next**, wait for the deployment share to be created, then click **Finish**.
 - Verify that you can access the <b>\\\\MDT01\\MDTBuildLab$</b> share.
@@ -115,7 +116,7 @@ On **MDT01**:
     - Destination directory name: <b>W11EX64</b>
 
  > [!NOTE]
- > Due to the Windows limits on path length, we are purposely keeping the operating system destination directory short, using the folder name W11EX64 rather than a more descriptive name like Windows 11 Enterprise x64.<br>
+ > Due to the Windows limits on path length, we are purposely keeping the operating system destination directory short, using the folder name W11EX64 rather than a more descriptive name like Windows 11 Enterprise x64.<br><br>
  > Depending on the DVD or ISO you used, there might be multiple editions added by the import process. For the purposes of this guide, we are using the Windows 11 Enterprise image, but other images will also work. In the example shown, editions that will not be used are deleted from the list.
 
 5. After adding the operating system, in the **Operating Systems / Windows 11** folder, double-click it and change the name to: **Windows 11 Enterprise x64 Default Image**. See the following example.
@@ -123,7 +124,7 @@ On **MDT01**:
     ![Default image.](../images/deployment-workbench01.png)
 
  > [!NOTE]
- > The pre-release version of Windows 11 used here still has some references to Windows 10 in the description.    
+ > The pre-release version of Windows 11 used here has "Windows 10" in the description. You can ignore this.  
 
 ## Add applications
 
@@ -664,9 +665,6 @@ After some time, you will have a Windows 11 Enterprise x64 image that is fully 
    ![image.](../images/image-captured.png)
 
 ## Troubleshooting
-
-> [!IMPORTANT]
-> If you encounter errors applying the image when using a BIOS firmware type, see [Windows 10 deployments fail with Microsoft Deployment Toolkit on computers with BIOS type firmware](https://support.microsoft.com/topic/windows-10-deployments-fail-with-microsoft-deployment-toolkit-on-computers-with-bios-type-firmware-70557b0b-6be3-81d2-556f-b313e29e2cb7). This 
 
 If you [enabled monitoring](#enable-monitoring), you can check the progress of the task sequence.
 
