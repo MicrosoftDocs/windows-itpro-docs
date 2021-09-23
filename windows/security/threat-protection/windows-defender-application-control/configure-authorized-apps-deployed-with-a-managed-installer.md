@@ -34,9 +34,6 @@ Managed installer uses a special rule collection in **AppLocker** to designate b
 
 You can then configure WDAC to trust files that are installed by a managed installer by adding the "Enabled:Managed Installer" option to your WDAC policy. When that option is set, WDAC will check for managed installer origin information when determining whether or not to allow a binary to run. As long as there are no deny rules for the binary, WDAC will allow it to run based purely on its managed installer origin.
 
-> [!NOTE]
-> Your WDAC policy must include rules for all system/boot components, kernel drivers, and any other authorized applications that can't be deployed through a managed installer.
-
 ## Security considerations with managed installer
 
 Since managed installer is a heuristic-based mechanism, it doesn't provide the same security guarantees that explicit allow or deny rules do.
@@ -92,7 +89,39 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
     <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
     ```
 
-An example of a valid Managed Installer rule collection, using Microsoft Endpoint Config Manager (MEMCM), MEM (Intune), Powershell, and PowerShell ISE, is shown below. Remove any rules that you do not wish to designate as a Managed Installer.
+3. Manually edit your AppLocker policy and add the EXE and DLL rule collections with at least one rule for each. To ensure your policy can be safely applied on systems that may already have an active AppLocker policy, we recommend using a benign DENY rule to block a fake binary and set the rule collection's EnforcementMode to AuditOnly. Additionally, since many installation processes rely on services, you need to enable services tracking for each of those rule collections. The following example shows a partial AppLocker policy with the EXE and DLL rule collection configured as recommended.
+  
+    ```xml
+    <RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
+      <FilePathRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+          <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.dll" />
+        </Conditions>
+      </FilePathRule>
+      <RuleCollectionExtensions>
+        <ThresholdExtensions>
+          <Services EnforcementMode="Enabled" />
+        </ThresholdExtensions>
+      </RuleCollectionExtensions>
+    </RuleCollection>
+    <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
+      <FilePathRule Id="9420c496-046d-45ab-bd0e-455b2649e41e" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+        <Conditions>
+          <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.exe" />
+        </Conditions>
+      </FilePathRule>
+      <RuleCollectionExtensions>
+        <ThresholdExtensions>
+          <Services EnforcementMode="Enabled" />
+        </ThresholdExtensions>
+        <RedstoneExtensions>
+          <SystemApps Allow="Enabled"/>
+         </RedstoneExtensions>
+      </RuleCollectionExtensions>
+    </RuleCollection>
+    ```
+
+4. Deploy your AppLocker managed installer configuration policy. You can either import your AppLocker policy and deploy with Group Policy or use a script to deploy the policy with the Set-AppLockerPolicy cmdlet. An example of a valid Managed Installer rule collection, using Microsoft Endpoint Config Manager (MEMCM), MEM (Intune), Powershell, and PowerShell ISE, is shown below. Remove any rules that you do not wish to designate as a Managed Installer.
 
 ```xml
 <AppLockerPolicy Version="1">
@@ -173,45 +202,17 @@ An example of a valid Managed Installer rule collection, using Microsoft Endpoin
 </AppLockerPolicy>
 ```
 
-### Enable service enforcement in AppLocker policy
+## Set the AppLocker filter driver to autostart
 
-Since many installation processes rely on services, it is typically necessary to enable tracking of services.
-Correct tracking of services requires the presence of at least one rule in the rule collection. So, a simple audit-only rule will suffice. The audit rule can be added to the policy created above, which specifies the rule collection of your managed installer.
+To enable the managed installer, you need to set the AppLocker filter driver to autostart, and start it.
 
-For example:
+To do so, run the following command as an Administrator:
 
-```xml
-<RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
-    <FilePathRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.dll" />
-      </Conditions>
-    </FilePathRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
-  <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
-    <FilePathRule Id="9420c496-046d-45ab-bd0e-455b2649e41e" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.exe" />
-      </Conditions>
-    </FilePathRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
+```console
+appidtel.exe start [-mionly]
 ```
+
+Specify "-mionly" if you will not use the Intelligent Security Graph (ISG).
 
 ## Enable the managed installer option in WDAC policy
 
@@ -236,17 +237,8 @@ Below are steps to create a WDAC policy that allows Windows to boot and enables 
     Set-RuleOption -FilePath <XML filepath> -Option 13
     ```
 
-## Set the AppLocker filter driver to autostart
-
-To enable the managed installer, you need to set the AppLocker filter driver to autostart, and start it.
-
-To do so, run the following command as an Administrator:
-
-```console
-appidtel.exe start [-mionly]
-```
-
-Specify "-mionly" if you will not use the Intelligent Security Graph (ISG).
+> [!NOTE]
+> Your WDAC policy must include rules for all system/boot components, kernel drivers, and any other authorized applications that can't be deployed through a managed installer.
 
 ## Using fsutil to query SmartLocker EA
 
