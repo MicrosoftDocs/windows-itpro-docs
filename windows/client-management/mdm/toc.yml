@@ -577,6 +577,8 @@ items:
               href: policy-csp-admx-tcpip.md
             - name: ADMX_Thumbnails
               href: policy-csp-admx-thumbnails.md
+            - name: ADMX_TouchInput
+              href: policy-csp-admx-touchinput.md  
             - name: ADMX_TPM
               href: policy-csp-admx-tpm.md
             - name: ADMX_UserExperienceVirtualization
@@ -587,10 +589,14 @@ items:
               href: policy-csp-admx-w32time.md
             - name: ADMX_WCM
               href: policy-csp-admx-wcm.md
+            - name: ADMX_WDI
+              href: policy-csp-admx-wdi.md  
             - name: ADMX_WinCal
               href: policy-csp-admx-wincal.md
             - name: ADMX_WindowsAnytimeUpgrade
               href: policy-csp-admx-windowsanytimeupgrade.md
+            - name: ADMX_WindowsColorSystem
+              href: policy-csp-admx-windowscolorsystem.md
             - name: ADMX_WindowsConnectNow
               href: policy-csp-admx-windowsconnectnow.md
             - name: ADMX_WindowsExplorer
