@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -16,9 +16,6 @@ ms.technology: mde
 
 # 4774(S, F): An account was mapped for logon.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 Success events do not appear to occur. Failure event [has been reported](http://forum.ultimatewindowssecurity.com/Topic7313-282-1.aspx). 
 

@@ -1,11 +1,11 @@
 ---
-title: Manage Device Installation with Group Policy (Windows 10)
+title: Manage Device Installation with Group Policy (Windows 10 and Windows 11)
 description: Find out how to manage Device Installation Restrictions with Group Policy.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
 author: barakm
-ms.date: 07/05/2021
+ms.date: 09/14/2021
 ms.reviewer: 
 manager: barakm
 ms.author: barakm
@@ -17,16 +17,18 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10, Windows Server 2022
+- Windows 10
+- Windows 11
+- Windows Server 2022
 
 
 ## Summary
-By using Windows 10 operating systems, administrators can determine what devices can be installed on computers they manage. This guide summarizes the device installation process and demonstrates several techniques for controlling device installation by using Group Policy.
+By using Windows operating systems, administrators can determine what devices can be installed on computers they manage. This guide summarizes the device installation process and demonstrates several techniques for controlling device installation by using Group Policy.
 
 ## Introduction
 
 ### General
-This step-by-step guide describes how you can control device installation on the computers that you manage, including designating which devices users can and cannot install. This guide applies to all Windows 10 versions starting with RS5 (1809). The guide includes the following scenarios:
+This step-by-step guide describes how you can control device installation on the computers that you manage, including designating which devices users can and cannot install. This guide applies to all Windows versions starting with RS5 (1809). The guide includes the following scenarios:
 
 - Prevent users from installing devices that are on a "prohibited" list. If a device is not on the list, then the user can install it.
 - Allow users to install only devices that are on an "approved" list. If a device is not on the list, then the user cannot install it.
@@ -44,7 +46,7 @@ It is important to understand that the Group Policies that are presented in this
 
 This guide is targeted at the following audiences:
 
-- Information technology planners and analysts who are evaluating Windows 10 and Windows Server 2022
+- Information technology planners and analysts who are evaluating Windows 10, Windows 11 or Windows Server 2022
 - Enterprise information technology planners and designers
 - Security architects who are responsible for implementing trustworthy computing in their organization
 - Administrators who want to become familiar with the technology
@@ -102,7 +104,7 @@ A device is a piece of hardware with which Windows interacts to perform some fun
 
 When Windows detects a device that has never been installed on the computer, the operating system queries the device to retrieve its list of device identification strings. A device usually has multiple device identification strings, which the device manufacturer assigns. The same device identification strings are included in the .inf file (also known as an _INF_) that is part of the driver package. Windows chooses which driver package to install by matching the device identification strings retrieved from the device to those included with the driver packages.
 
-Windows uses four types of identifiers to control device installation and configuration. You can use the Group Policy settings in Windows 10 to specify which of these identifiers to allow or block.
+Windows uses four types of identifiers to control device installation and configuration. You can use the Group Policy settings in Windows to specify which of these identifiers to allow or block.
 
 The four types of identifiers are:
 
@@ -223,7 +225,7 @@ Some of these policies take precedence over other policies. The flowchart shown 
 
 To complete each of the scenarios, please ensure your have:
 
-- A client computer running Windows 10.
+- A client computer running Windows.
 
 - A USB thumb drive. The scenarios described in this guide use a USB thumb drive as the example device (also known as a “removable disk drive”, "memory drive," a "flash drive," or a "keyring drive"). Most USB thumb drives do not require any manufacturer-provided drivers, and these devices work with the inbox drivers provided with the Windows build.
 

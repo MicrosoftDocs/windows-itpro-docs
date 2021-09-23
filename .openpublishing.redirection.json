@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "windows/configuration/use-json-customize-start-menu-windows.md",
+      "redirect_url": "/windows/configuration/customize-start-menu-layout-windows-11",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "windows/application-management/msix-app-packaging-tool.md",
       "redirect_url": "/windows/application-management/apps-in-windows-10",
       "redirect_document_id": false  

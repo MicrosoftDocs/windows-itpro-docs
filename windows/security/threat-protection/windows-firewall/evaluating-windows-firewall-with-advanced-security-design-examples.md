@@ -1,5 +1,5 @@
 ---
-title: Evaluating Windows Defender Firewall with Advanced Security Design Examples (Windows 10)
+title: Evaluating Windows Defender Firewall with Advanced Security Design Examples (Windows)
 description: Evaluating Windows Defender Firewall with Advanced Security Design Examples
 ms.assetid: a591389b-18fa-4a39-ba07-b6fb61961cbd
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 The following Windows Defender Firewall with Advanced Security design examples illustrate how you can use Windows Defender Firewall to improve the security of the devices connected to the network. You can use these topics to evaluate how the firewall and connection security rules work across all Windows Defender Firewall designs and to determine which design or combination of designs best suits the goals of your organization.
 

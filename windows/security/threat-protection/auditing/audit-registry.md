@@ -11,15 +11,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit Registry
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Registry allows you to audit attempts to access registry objects. A security audit event is generated only for objects that have system access control lists ([SACL](/windows/win32/secauthz/access-control-lists)s) specified, and only if the type of access requested, such as Read, Write, or Modify, and the account making the request match the settings in the SACL.
