@@ -16,7 +16,10 @@ ms.topic: article
 
 # Update Windows installation media with Dynamic Update
 
-**Applies to**: Windows 10, Windows 11
+**Applies to**
+
+-   Windows 10
+-   Windows 11
 
 This topic explains how to acquire and apply Dynamic Update packages to existing Windows images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.
 

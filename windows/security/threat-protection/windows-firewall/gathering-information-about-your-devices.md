@@ -1,5 +1,5 @@
 ---
-title: Gathering Information about Your Devices (Windows 10)
+title: Gathering Information about Your Devices (Windows)
 description: Learn what information to gather about the devices in your enterprise to plan your Windows Defender Firewall with Advanced Security deployment.
 ms.assetid: 7f7cd3b9-de8e-4fbf-89c6-3d1a47bc2beb
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 One of the most valuable benefits of conducting an asset discovery project is the large amount of data that is obtained about the client and server devices on the network. When you start designing and planning your isolation zones, you must make decisions that require accurate information about the state of all hosts to ensure that they can use IPsec as planned.
 

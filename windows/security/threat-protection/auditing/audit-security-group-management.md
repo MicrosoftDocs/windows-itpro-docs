@@ -11,15 +11,12 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 02/28/2019
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit Security Group Management
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 Audit Security Group Management determines whether the operating system generates audit events when specific security group management tasks are performed.
 
