@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 
+ms.date: 09/09/2021
 ms.technology: mde
 ---
 
 # Monitor the use of removable storage devices
 
-**Applies to**
--   Windows 10
 
 This topic for the IT professional describes how to monitor attempts to use removable storage devices to access network resources. It describes how to use advanced security auditing options to monitor dynamic access control objects.
 

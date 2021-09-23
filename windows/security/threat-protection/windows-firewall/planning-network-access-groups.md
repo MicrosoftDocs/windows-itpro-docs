@@ -1,5 +1,5 @@
 ---
-title: Planning Network Access Groups (Windows 10)
+title: Planning Network Access Groups (Windows)
 description: Learn how to implement a network access group for users and devices that can access an isolated server in Windows Defender Firewall with Advanced Security.
 ms.assetid: 56ea1717-1731-4a5d-b277-5a73eb86feb0
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 A network access group (NAG) is used to identify users and devices that have permission to access an isolated server. The server is configured with firewall rules that allow only network connections that are authenticated as originating from a device, and optionally a user, whose accounts are members of its NAG. A member of the isolated domain can belong to as many NAGs as required.
 
