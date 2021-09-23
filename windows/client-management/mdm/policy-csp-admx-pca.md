@@ -49,8 +49,8 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href=""id="admx-pca-detectdeprecatedcomcomponentfailurespolicy"></a>**ADMX_pca/DetectDeprecatedCOMComponentFailuresPolicy**  
-
+<a href="" id="admx-pca-detectdeprecatedcomcomponentfailurespolicy"></a>**ADMX_pca/DetectDeprecatedCOMComponentFailuresPolicy**
+ 
 <!--SupportedSKUs-->
 <table>
 <tr>

@@ -553,6 +553,8 @@ items:
               href: policy-csp-admx-networkconnections.md
             - name: ADMX_OfflineFiles
               href: policy-csp-admx-offlinefiles.md
+            - name: ADMX_pca
+              href: policy-csp-admx-pca.md  
             - name: ADMX_PeerToPeerCaching
               href: policy-csp-admx-peertopeercaching.md
             - name: ADMX_PenTraining

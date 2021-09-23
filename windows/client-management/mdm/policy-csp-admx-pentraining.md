@@ -107,7 +107,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-<<!--Policy-->
+<!--Policy-->
 <a href="" id="admx-pentraining-pentrainingoff_2"></a>**ADMX_PenTraining/PenTrainingOff_2**  
 
 <!--SupportedSKUs-->
