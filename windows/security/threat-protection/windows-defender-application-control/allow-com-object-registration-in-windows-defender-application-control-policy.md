@@ -145,19 +145,20 @@ Event XML:
 To add this CLSID to the existing policy, follow these steps:
 
 1. Open PowerShell ISE with Administrative privileges.
+
 2. Copy and edit this command, then run it from the admin PowerShell ISE. Consider the policy name to be `WDAC_policy.xml`.
 
-```PowerShell
-PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\WDAC_policy.xml -Key "{f8d253d9-89a4-4daa-87b6-1168369f0b21}" -Provider WSH -Value true -ValueName EnterpriseDefinedClsId -ValueType Boolean
-```
-
-Once the command has been run, you will find that the following section is added to the policy XML.
-
-```XML
-  <Settings>
-    <Setting Provider="WSH" Key="{f8d253d9-89a4-4daa-87b6-1168369f0b21}" ValueName="EnterpriseDefinedClsId">
-      <Value>
-        <Boolean>true</Boolean>
-      </Value>
-    </Setting>
-```
+    ```PowerShell
+    PS C:\WINDOWS\system32> Set-CIPolicySetting -FilePath <path to policy xml>\WDAC_policy.xml -Key "{f8d253d9-89a4-4daa-87b6-1168369f0b21}" -Provider WSH -Value true -ValueName EnterpriseDefinedClsId -ValueType Boolean
+    ```
+    
+    Once the command has been run, you will find that the following section is added to the policy XML.
+    
+    ```XML
+      <Settings>
+        <Setting Provider="WSH" Key="{f8d253d9-89a4-4daa-87b6-1168369f0b21}" ValueName="EnterpriseDefinedClsId">
+          <Value>
+            <Boolean>true</Boolean>
+          </Value>
+        </Setting>
+    ```
