@@ -455,6 +455,8 @@ items:
               href: policy-csp-admx-dfs.md
             - name: ADMX_DigitalLocker
               href: policy-csp-admx-digitallocker.md
+            - name: ADMX_DiskDiagnostic
+              href: policy-csp-admx-diskdiagnostic.md  
             - name: ADMX_DistributedLinkTracking
               href: policy-csp-admx-distributedlinktracking.md
             - name: ADMX_DnsClient
@@ -503,6 +505,8 @@ items:
               href: policy-csp-admx-help.md
             - name: ADMX_HelpAndSupport
               href: policy-csp-admx-helpandsupport.md
+            - name: ADMX_HotSpotAuth
+              href: policy-csp-admx-hotspotauth.md
             - name: ADMX_ICM
               href: policy-csp-admx-icm.md
             - name: ADMX_IIS
