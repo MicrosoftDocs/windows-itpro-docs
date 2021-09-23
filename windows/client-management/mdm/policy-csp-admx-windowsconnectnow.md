@@ -231,7 +231,7 @@ ADMX Info:
 <!--Description-->
 This policy setting allows the configuration of wireless settings using Windows Connect Now (WCN). The WCN Registrar enables the discovery and configuration of devices over Ethernet (UPnP), over In-band 802.11 WLAN, through the Windows Portable Device API (WPD), and via USB Flash drives.
 
-Additional options are available to allow discovery and configuration over a specific medium. 
+More options are available to allow discovery and configuration over a specific medium. 
 
 If you enable this policy setting, additional choices are available to turn off the operations over a specific medium. 
 
