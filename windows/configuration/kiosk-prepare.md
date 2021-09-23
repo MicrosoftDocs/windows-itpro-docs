@@ -22,34 +22,190 @@ ms.topic: article
 - Windows 10 Pro, Enterprise, and Education
 - Windows 11
 
-> [!WARNING]
-> For kiosks in public-facing environments with auto sign-in enabled, you should use a user account with the least privileges, such as a local standard user account.
->
-> Assigned access can be configured via Windows Management Instrumentation (WMI) or configuration service provider (CSP) to run its applications under a domain user or service account, rather than a local account. However, use of domain user or service accounts introduces risks that might allow an attacker subverting the assigned access application to gain access to sensitive domain resources that have been inadvertently left accessible to any domain account. We recommend that customers proceed with caution when using domain accounts with assigned access, and consider the domain resources potentially exposed by the decision to do so.
 
-> [!IMPORTANT]
-> [User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
->
-> Kiosk mode is not supported over a remote desktop connection. Your kiosk users must sign in on the physical device that is set up as a kiosk.
+
+## Before you begin
+
+- [User account control (UAC)](/windows/security/identity-protection/user-account-control/user-account-control-overview) must be turned on to enable kiosk mode.
+- Kiosk mode isn't supported over a remote desktop connection. Your kiosk users must sign in on the physical device that's set up as a kiosk.
+- For kiosks in public-facing environments with auto sign-in enabled, you should use a user account with the least privileges, such as a local standard user account.
+
+  Assigned access can be configured using Windows Management Instrumentation (WMI) or configuration service provider (CSP). Assigned access runs an application using a domain user or service account, not a local account. Using a domain user or service accounts has risks, and might allow an attacker to gain access to domain resources that are accessible to any domain account. When using domain accounts with assigned access, proceed with caution. Consider the domain resources potentially exposed by using a domain account.
+
+- MDM providers, such as [Microsoft Endpoint Manager](/mem/endpoint-manager-getting-started), use the configuration service providers (CSP) exposed by the Windows OS to manage settings on devices. In this article, we mention these services. If you're not managing your devices using an MDM provider, the following resources may help you get started:
+
+  - [Microsoft Endpoint Manager](/mem/endpoint-manager-getting-started)
+  - [What is Microsoft Intune](/mem/intune/fundamentals/what-is-intune) and [Microsoft Intune planning guide](/mem/intune/fundamentals/intune-planning-guide)
+  - [What is Configuration Manager?](/mem/configmgr/core/understand/introduction)
 
 ## Configuration recommendations
 
-For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk: 
+For a more secure kiosk experience, we recommend that you make the following configuration changes to the device before you configure it as a kiosk:
 
-| Recommendation | How to |
-| --- | --- |
-|Hide update notifications<br>(New starting in Windows 10, version 1809)   | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Display options for update notifications**<br>-or-<br>Use the MDM setting **Update/UpdateNotificationLevel** from the [**Policy/Update** configuration service provider](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)<br>-or-<br>Add the following registry keys as type DWORD (32-bit) in the path of **HKLM\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate**:<br>**\SetUpdateNotificationLevel** with a value of `1`, and **\UpdateNotificationLevel** with a value of `1` to hide all notifications except restart warnings, or value of `2` to hide all notifications, including restart warnings. |
-| Enable and schedule automatic updates | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Configure Automatic Updates**, and select `option 4 (Auto download and schedule the install)`<br>-or-<br>Use the MDM setting **Update/AllowAutoUpdate** from the [**Policy/Update** configuration service provider](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate), and select `option 3 (Auto install and restart at a specified time)`<br><br>**Note:** Installations can take from between 30 minutes and 2 hours, depending on the device, so you should schedule updates to occur when a block of 3-4 hours is available.<br><br>To schedule the automatic update, configure **Schedule Install Day**, **Schedule Install Time**, and **Schedule Install Week**. |
-| Enable automatic restart at the scheduled time | Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\Windows Components\\Windows Update\\Always automatically restart at the scheduled time** |
-| Replace "blue screen" with blank screen for OS errors   | Add the following registry key as DWORD (32-bit) type with a value of `1`:</br></br>**HKLM\SYSTEM\CurrentControlSet\Control\CrashControl\DisplayDisabled** |
-| Put device in **Tablet mode**. | If you want users to be able to use the touch (on screen) keyboard, go to **Settings** &gt; **System** &gt; **Tablet mode** and choose **On.** Don't turn on this setting if users will not interact with the kiosk, such as for a digital sign.
-Hide **Ease of access** feature on the sign-in screen. |     See [how to disable the Ease of Access button in the registry.](/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen)
-| Disable the hardware power button. |     Go to **Power Options** &gt; **Choose what the power button does**, change the setting to **Do nothing**, and then **Save changes**. |
-| Remove the power button from the sign-in screen. |     Go to **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Local Policies** &gt;**Security Options** &gt; **Shutdown: Allow system to be shut down without having to log on** and select **Disabled.** |
-| Disable the camera. |     Go to **Settings** &gt; **Privacy** &gt; **Camera**, and turn off **Let apps use my camera**. |
-| Turn off app notifications on the lock screen. |     Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Logon\\Turn off app notifications on the lock screen**. |
-| Disable removable media. |     Go to **Group Policy Editor** &gt; **Computer Configuration** &gt; **Administrative Templates\\System\\Device Installation\\Device Installation Restrictions**. Review the policy settings available in **Device Installation Restrictions** for the settings applicable to your situation.</br></br>**NOTE**: To prevent this policy from affecting a member of the Administrators group, in **Device Installation Restrictions**, enable **Allow administrators to override Device Installation Restriction policies**. |
+- **Hide update notifications**. Starting with Windows 10 version 1809, you can hide notifications from showing on the devices. To enable this feature, you have the following options:
 
+  - **Use Group policy**: `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Display options for update notifications`
+
+  - **Use an MDM provider**: This feature uses the [Update/UpdateNotificationLevel CSP](/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel). In Endpoint Manager, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
+
+  - **Use the registry**:
+
+    1. Open Registry Editor (regedit).
+    2. Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate`.
+    3. Create a **New** > **DWORD (32-bit) Value**. Enter `SetUpdateNotificationLevel`, and set its value to `1`.
+    4. Create a **New** > **DWORD (32-bit) Value**. Enter `UpdateNotificationLevel`. For value, you can enter:
+
+        - `1`: Hides all notifications except restart warnings.
+        - `2`: Hides all notifications, including restart warnings.
+
+- **Enable and schedule automatic updates**. To enable this feature, you have the following options:
+
+  - **Use Group policy**: `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Configure Automatic Updates`. Select `4 - Auto download and schedule the install`.
+  - **Use an MDM provider**: This feature uses the [Update/AllowAutoUpdate CSP](/windows/client-management/mdm/policy-csp-update#update-allowautoupdate). Select `3 - Auto install and restart at a specified time`. In Endpoint Manager, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
+
+  You can also schedule automatic updates, including **Schedule Install Day**, **Schedule Install Time**, and **Schedule Install Week**. Installations can take between 30 minutes and 2 hours, depending on the device. Schedule updates to occur when a block of 3-4 hours is available.
+
+- **Enable automatic restart at the scheduled time**. To enable this feature, you have the following options:
+
+  - **Use Group policy**: `Computer Configuration\Administrative Templates\Windows Components\Windows Update\Always automatically restart at the scheduled time`. Select `4 - Auto download and schedule the install`.
+
+  - **Use an MDM provider**: This feature uses the [Update/ActiveHoursStart](/windows/client-management/mdm/policy-csp-update#update-activehoursstart) and [Update/ActiveHoursEnd](/windows/client-management/mdm/policy-csp-update#update-activehoursend) CSPs. In Endpoint Manager, you can use the [Windows update settings](/mem/intune/protect/windows-update-settings) to manage this feature.
+
+- **Replace "blue screen" with blank screen for OS errors**. To enable this feature, use the Registry Editor:
+
+  1. Open Registry Editor (regedit).
+  2. Go to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\CrashControl`.
+  3. Create a **New** > **DWORD (32-bit) Value**. Enter `DisplayDisabled`, and set its value to `1`.
+
+- **Put device in "Tablet mode"**. If you want users to use the touch screen, without using a keyboard or mouse, then turn on tablet mode using the Settings app. If users won't interact with the kiosk, such as for a digital sign, then don't turn on this setting.
+
+  Applies to Windows 10 only. Currently, Tablet mode isn't supported on Windows 11.
+
+  Your options:
+
+  - Use the **Settings** app:
+    1. Open the **Settings** app.
+    2. Go to **System** > **Tablet mode**.
+    3. Configure the settings you want.
+
+  - Use the **Action Center**:
+    1. On your device, swipe in from the left.
+    2. Select **Tablet mode**.
+
+- **Hide "Ease of access" feature on the sign-in screen**: To enable this feature, you have the following options:
+
+  - **Use an MDM provider**: In Endpoint Manager, you can use the [Control Panel and Settings](/mem/intune/configuration/device-restrictions-windows-10#control-panel-and-settings) to manage this feature.
+  - **Use the registry**: For more information, see [how to disable the Ease of Access button in the registry](/windows-hardware/customize/enterprise/complementary-features-to-custom-logon#welcome-screen).
+
+- **Disable the hardware power button**: To enable this feature, you have the following options:
+
+  - **Use the Settings app**:
+    1. Open the **Settings** app.
+    2. Go to **System** > **Power & Sleep** > **Additional power settings** > **Choose what the power button does**.
+    3. Select **Do nothing**.
+    4. **Save changes**.
+
+  - **Use Group Policy**: Your options:
+
+    - `Computer Configuration\Administrative Templates\System\Power Management\Button Settings`: Set `Select Power Button Action on Battery` and `Select Power Button Action on Plugged In` to **Take no action**.
+    - `User Configuration\Administrative Templates\Start Menu and Taskbar\Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands`: This policy hides the buttons, but doesn't disable them.
+    - `Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment\Shut down the system`: Remove the users or groups from this policy.
+
+      To prevent this policy from affecting a member of the Administrators group, be sure to keep the Administrators group.
+
+  - **Use an MDM provider**: In Endpoint Manager, you have some options:
+
+    - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following settings:
+
+      - `Power\Select Power Button Action on Battery`: Set to **Take no action**.
+      - `Power\Select Power Button Action on Plugged In`: Set to **Take no action**.
+      - `Start\Hide Power Button`: Set to **Enabled**. This policy hides the button, but doesn't disable it.
+
+    - [Administrative templates](/mem/intune/configuration/administrative-templates-windows): These templates are the administrative templates used in on-premises Group Policy. Configure the following setting:
+
+      - `\Start menu and Taskbar\Remove and prevent access to the Shut Down, Restart, Sleep, and Hibernate commands`: This policy hides the buttons, but doesn't disable them.
+
+      When looking at settings, check the supported OS for each setting to make sure it applies.
+
+    - [Start settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#start): This option shows this setting, and all the Start menu settings you can manage.
+
+- **Remove the power button from the sign-in screen**. To enable this feature, you have the following options:
+
+  - **Use Group Policy**: `Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options\Shutdown: Allow system to be shut down without having to log on`. Select **Disabled**.
+
+  - **Use MDM**: In Endpoint Manager, you have the following option:
+
+    - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following setting:
+
+      - `Local Policies Security Options\Shutdown Allow System To Be Shut Down Without Having To Log On`: Set to **Disabled**.
+
+- **Disable the camera**: To enable this feature, you have the following options:
+
+  - **Use the Settings app**: 
+    1. Open the **Settings** app.
+    2. Go to **Privacy** > **Camera**.
+    3. Select **Allow apps use my camera** > **Off**.
+
+  - **Use Group Policy**: `Computer Configuration\Administrative Templates\Windows Components\Camera: Allow use of camera`: Select **Disabled**.
+
+  - **Use an MDM provider**: This feature uses the [Policy CSP - Camera](/windows/client-management/mdm/policy-csp-camera). In Endpoint Manager, you have the following options:
+
+    - [General settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#general): This option shows this setting, and more settings you can manage.
+    - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following setting:
+
+      - `Camera\Allow camera`: Set to **Not allowed**.
+
+- **Turn off app notifications on the lock screen**: To enable this feature, you have the following options:
+
+  - **Use the Settings app**:
+
+    1. Open the **Settings** app.
+    2. Go to **System** > **Notifications & actions**.
+    3. In **Show notifications on the lock screen**, select **Off**.
+
+  - **Use Group policy**:
+    - `Computer Configuration\Administrative Templates\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
+    - `User Configuration\Administrative Templates\Start Menu and Taskbar\Notifications\Turn off toast notifications on the lock screen`: Select **Enabled**.
+
+  - **Use an MDM provider**: This feature uses the [AboveLock/AllowToasts CSP](/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowtoasts). In Endpoint Manager, you have the following options:
+
+    - [Locked screen experience device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#locked-screen-experience): See this setting, and more settings you can manage.
+
+    - [Administrative templates](/mem/intune/configuration/administrative-templates-windows): These templates are the administrative templates used in on-premises Group Policy. Configure the following settings:
+
+      - `\Start Menu and Taskbar\Notifications\Turn off toast notifications on the lock screen`: Select **Enabled**.
+      - `\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
+
+      When looking at settings, check the supported OS for each setting to make sure it applies.
+
+    - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following settings:
+
+      - `\Start Menu and Taskbar\Notifications\Turn off toast notifications on the lock screen`: Select **Enabled**.
+      - `\System\Logon\Turn off app notifications on the lock screen`: Select **Enabled**.
+
+- **Disable removable media**:  To enable this feature, you have the following options:
+
+  - **Use Group policy**: `Computer Configuration\Administrative Templates\System\Device Installation\Device Installation Restrictions`. Review the available settings that apply to your situation.
+
+    To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**.
+
+  - **Use an MDM provider**: In Endpoint Manager, you have the following options:
+
+    - [General settings in a device configuration profile](/mem/intune/configuration/device-restrictions-windows-10#general): See the **Removable storage** setting, and more settings you can manage.
+
+    - [Administrative templates](/mem/intune/configuration/administrative-templates-windows): These templates are the administrative templates used in on-premises Group Policy. Configure the following settings:
+
+      - `\System\Device Installation`: There are several policies you can manage, including restrictions in `\System\Device Installation\Device Installation Restrictions`.
+
+        To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**.
+
+      When looking at settings, check the supported OS for each setting to make sure it applies.
+
+    - [Settings Catalog](/mem/intune/configuration/settings-catalog): This option lists all the settings you can configure, including the administrative templates used in on-premises Group Policy. Configure the following settings:
+
+      - `\Administrative Templates\System\Device Installation`: There are several policies you can manage, including restrictions in `\System\Device Installation\Device Installation Restrictions`. 
+
+        To prevent this policy from affecting a member of the Administrators group, select `Allow administrators to override Device Installation Restriction policies` > **Enabled**.
 
 ## Enable logging
 
@@ -89,7 +245,7 @@ You may also want to set up **automatic logon** for your kiosk device. When your
    - *DefaultPassword*: set value as the password for the account.
 
      > [!NOTE]
-     > If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** &gt; **String Value**.
+     > If *DefaultUserName* and *DefaultPassword* aren't there, add them as **New** > **String Value**.
 
    - *DefaultDomainName*: set value for domain, only for domain accounts. For local accounts, do not add this key.
 

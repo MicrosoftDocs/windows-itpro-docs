@@ -11,7 +11,6 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: greg-lindsay
 ms.localizationpriority: medium
-ms.date: 09/21/2021
 ms.topic: article
 ---
 
@@ -34,18 +33,38 @@ A single-app kiosk uses the Assigned Access feature to run a single app above th
 
 You have several options for configuring your single-app kiosk. 
 
-| Option | Description |
-| --- | --- |
-| [Locally, in Settings](#local) | The **Set up a kiosk** (previously named **Set up assigned access**) option in **Settings** is a quick and easy method to set up a single device as a kiosk for a local standard user account. <br><br>This option is supported on: <br>- Windows 10 Pro, Enterprise, and Education<br>- Windows 11 |
-| [PowerShell](#powershell) | You can use Windows PowerShell cmdlets to set up a single-app kiosk. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account.<br><br>This option is supported on: <br>- Windows 10 Pro, Enterprise, and Education<br>- Windows 11 |
-| [The kiosk wizard in Windows Configuration Designer](#wizard) | Windows Configuration Designer is a tool that produces a *provisioning package*. A provisioning package includes configuration settings that can be applied to one or more devices during the first-run experience (OOBE), or after OOBE is done (runtime). Using the kiosk wizard, you can also create the kiosk user account, install the kiosk app, and configure more useful settings.<br><br>This option is supported on: <br>- Windows 10 Pro version 1709+, Enterprise, and Education<br>- Windows 11 |
-| [Microsoft Intune or other mobile device management (MDM) provider](#mdm) | For managed devices, you can use MDM to set up a kiosk configuration.<br><br>This option is supported on: <br>- Windows 10 Pro version 1709+, Enterprise, and Education<br>- Windows 11 |
+- [Locally, in Settings](#local):  The **Set up a kiosk** (previously named **Set up assigned access**) option in **Settings** is a quick and easy method to set up a single device as a kiosk for a local standard user account. 
 
->[!TIP]
->You can also configure a kiosk account and app for single-app kiosk within [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) by using a [kiosk profile](lock-down-windows-10-to-specific-apps.md#profile).  
+  This option supports:
+
+  - Windows 10 Pro, Enterprise, and Education
+  - Windows 11
+
+- [PowerShell](#powershell): You can use Windows PowerShell cmdlets to set up a single-app kiosk. First, you need to [create the user account](https://support.microsoft.com/help/4026923/windows-create-a-local-user-or-administrator-account-in-windows-10) on the device and install the kiosk app for that account.
+
+  This option supports:
+
+  - Windows 10 Pro, Enterprise, and Education
+  - Windows 11
+
+- [The kiosk wizard in Windows Configuration Designer](#wizard): Windows Configuration Designer is a tool that produces a *provisioning package*. A provisioning package includes configuration settings that can be applied to one or more devices during the first-run experience (OOBE), or after OOBE is done (runtime). Using the kiosk wizard, you can also create the kiosk user account, install the kiosk app, and configure more useful settings.
+
+  This option supports:
+
+  - Windows 10 Pro version 1709+, Enterprise, and Education
+  - Windows 11
+
+- [Microsoft Intune or other mobile device management (MDM) provider](#mdm): For devices managed by your organization, you can use MDM to set up a kiosk configuration.
+
+  This option supports:
+
+  - Windows 10 Pro version 1709+, Enterprise, and Education
+  - Windows 11
+
+> [!TIP]
+> You can also configure a kiosk account and app for single-app kiosk within [XML in a provisioning package](lock-down-windows-10-to-specific-apps.md) by using a [kiosk profile](lock-down-windows-10-to-specific-apps.md#profile).  
 >
->Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
-
+> Be sure to check the [configuration recommendations](kiosk-prepare.md) before you set up your kiosk.
 
 
 <span id="local"/>
@@ -66,9 +85,9 @@ You can use **Settings** to quickly configure one or a few devices as a kiosk.
 
 When your kiosk is a local device that isn't managed by Active Directory or Azure Active Directory, there is a default setting that enables automatic sign-in after a restart. That means that when the device restarts, the last signed-in user will be signed in automatically. If the last signed-in user is the kiosk account, the kiosk app will be launched automatically after the device restarts.
 
-- If you want the kiosk account to sign in automatically and the kiosk app launched when the device restarts, then you don't need to do anything.
+- If you want the kiosk account to sign in automatically, and the kiosk app launched when the device restarts, then you don't need to do anything.
 
-- If you don't want the kiosk account to sign in automatically when the device restarts, then you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account, go to **Settings** > **Accounts** > **Sign-in options**, and set the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
+- If you don't want the kiosk account to sign in automatically when the device restarts, then you must change the default setting before you configure the device as a kiosk. Sign in with the account that you will assign as the kiosk account. Open the **Settings** app > **Accounts** > **Sign-in options**. Set the **Use my sign-in info to automatically finish setting up my device after an update or restart** setting to **Off**. After you change the setting, you can apply the kiosk configuration to the device.
 
   ![Screenshot of automatic sign-in setting.](images/auto-signin.png)
 
@@ -76,7 +95,7 @@ When your kiosk is a local device that isn't managed by Active Directory or Azur
 
 When you set up a kiosk (also known as *assigned access*) in **Settings** for Windows client, you create the kiosk user account at the same time. To set up assigned access in PC settings:
 
-1.  Go to **Start** &gt; **Settings** &gt; **Accounts** &gt; **Other users**.
+1.  Open the **Settings** app > **Accounts**. Select **Other users** or **Family and other users**.
 
 2.  Select **Set up a kiosk > Assigned access**, and then select **Get started**.
 
@@ -104,7 +123,7 @@ When you set up a kiosk (also known as *assigned access*) in **Settings** for Wi
 
 **To set up assigned access in PC settings**
 
-1.  Go to **Start** &gt; **Settings** &gt; **Accounts** &gt; **Other people**.
+1.  Go to **Start** > **Settings** > **Accounts** > **Other people**.
 
 2.  Select **Set up assigned access**.
 
@@ -209,7 +228,7 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
     If you want to enable network setup, select **Set up network**, and configure the following settings:
 
     - **Set up network**: To enable wireless connectivity, select **On**.
-    - **Network SSID**: Enter the Service Set IDentifier (SSID) of the network.
+    - **Network SSID**: Enter the Service Set Identifier (SSID) of the network.
     - **Network type**: Select **Open** or **WPA2-Personal**. If you select **WPA2-Personal**, enter the password for the wireless network.
 
 3. Enable account management:
@@ -282,7 +301,7 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
     - **Protect your package**: Select **Yes** to password protect your provisioning package. When you apply the provisioning package to a device, you must enter this password.
 
 >[!NOTE]
->If you want to use [the advanced editor in Windows Configuration Designer](provisioning-packages/provisioning-create-package.md#configure-settings), specify the user account and app (by AUMID) in **Runtime settings** &gt; **AssignedAccess** &gt; **AssignedAccessSettings**
+>If you want to use [the advanced editor in Windows Configuration Designer](provisioning-packages/provisioning-create-package.md#configure-settings), specify the user account and app (by AUMID) in **Runtime settings** > **AssignedAccess** > **AssignedAccessSettings**
 
 >[!IMPORTANT]
 >When you build a provisioning package, you may include sensitive information in the project files and in the provisioning package (.ppkg) file. Although you have the option to encrypt the .ppkg file, project files are not encrypted. You should store the project files in a secure location and delete the project files when they are no longer needed.
@@ -296,7 +315,7 @@ When you use the **Provision kiosk devices** wizard in Windows Configuration Des
 >App type: 
 > - UWP
 >
->OS edition: 
+>OS: 
 > - Windows 10 Pro version 1709+, Ent, Edu
 > - Windows 11
 >
