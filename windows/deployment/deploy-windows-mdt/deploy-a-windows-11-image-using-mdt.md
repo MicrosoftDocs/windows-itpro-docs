@@ -139,21 +139,15 @@ When you configure your MDT Build Lab deployment share, you can also add applica
 
 On **MDT01**:
 
-1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2100520060_en_US.exe) to **D:\\setup\\adobe** on MDT01.
-2. Extract the .exe file that you downloaded to an .msi (ex: .\AcroRdrDC2100520060_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
+1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2100720091_en_US.exe) to **D:\\setup\\adobe** on MDT01.
+2. Extract the .exe file that you downloaded to an .msi (ex: .\AcroRdrDC2100720091_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
 3. In the Deployment Workbench, expand the **MDT Production** node and navigate to the **Applications** node.
 4. Right-click the **Applications** node, and create a new folder named **Adobe**.
-
 5. In the **Applications** node, right-click the **Adobe** folder and select **New Application**.
-
 6. On the **Application Type** page, select the **Application with source files** option and click **Next**.
-
 7. On the **Details** page, in the **Application Name** text box, type **Install - Adobe Reader** and click *Next**.
-
 8. On the **Source** page, in the **Source Directory** text box, browse to **D:\\setup\\adobe\\install** and click **Next**.
-
 9. On the **Destination** page, in the **Specify the name of the directory that should be created** text box, type **Install - Adobe Reader** and click **Next**.
-
 10. On the **Command Details** page, in the **Command Line** text box, type **msiexec /i AcroRead.msi /q**, click **Next** twice, and then click **Finish**.
 
     ![acroread image.](../images/acroread.png)
@@ -162,7 +156,10 @@ On **MDT01**:
 
 ## Step 5: Prepare the drivers repository
 
-In order to deploy Windows 10 with MDT successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
+> [!IMPORTANT]
+> The section below on preparing the drivers repository uses Windows 10-compatible devices and drivers. These examples do not infer Windows 11 compatibility. Check with your device manufacturer before deploying drivers, and verify that the device meets Windows 11 hardware requirements. For more information, see [Windows 11 requirements](/windows/whats-new/windows-11-requirements).
+
+In order to deploy Windows 10 or Windows 11 with MDT successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
 -   Lenovo ThinkPad T420
 -   Dell Latitude 7390
 -   HP EliteBook 8560w
@@ -170,8 +167,8 @@ In order to deploy Windows 10 with MDT successfully, you need drivers for the b
 
 For boot images, you need to have storage and network drivers; for the operating system, you need to have the full suite of drivers.
 
->[!NOTE]
->You should only add drivers to the Windows PE images if the default drivers don't work. Adding drivers that are not necessary will only make the boot image larger and potentially delay the download time.
+> [!NOTE]
+> You should only add drivers to the Windows PE images if the default drivers don't work. Adding drivers that are not necessary will only make the boot image larger and potentially delay the download time.
  
 ### Create the driver source structure in the file system
 
@@ -186,8 +183,8 @@ On **MDT01**:
 2.  In the **D:\\drivers** folder, create the following folder structure:
     1.  WinPE x86
     2.  WinPE x64
-    3.  Windows 10 x64
-3.  In the new Windows 10 x64 folder, create the following folder structure:
+    3.  Windows 11 x64
+3.  In the new Windows 11 x64 folder, create the following folder structure:
     -   Dell Inc.
         -   Latitude E7450
     -   Hewlett-Packard
@@ -207,8 +204,8 @@ When you import drivers to the MDT driver repository, MDT creates a single insta
 2.  In the **Out-Of-Box Drivers** node, create the following folder structure:
     1.  WinPE x86
     2.  WinPE x64
-    3.  Windows 10 x64
-3.  In the **Windows 10 x64** folder, create the following folder structure:
+    3.  Windows 11 x64
+3.  In the **Windows 11 x64** folder, create the following folder structure:
     -   Dell Inc.
         -   Latitude E7450
     -   Hewlett-Packard
