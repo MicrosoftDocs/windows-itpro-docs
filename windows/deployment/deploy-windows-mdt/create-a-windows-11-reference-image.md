@@ -637,9 +637,9 @@ On **HV01**:
      
 4. Start the REFW11X64-001 virtual machine and connect to it.
 
-    **Note**: Up to this point we have not discussed IP addressing or DHCP. In the initial setup for this guide, DC01 was provisioned as a DHCP server to provide IP address leases to client computers.  You might have a different DHCP server on your network that you wish to use. The REFW10X64-001 virtual machine requires an IP address lease that provides it with connectivity to MDT01 so that it can connect to the \\MDT01\MDTBuildLab$ share, and optionally the WSUS server on your network. In the current scenario this is accomplished with a DHCP scope that provides IP addresses in the 10.10.10.100 - 10.10.10.200 range, with a 10.10.10.1 gateway, as part of a /24 subnet so that the client can connect to MDT01 at 10.10.10.11.
-
-    If you receive a message that "A connection to the deployment share could not be made, check that the DHCP service is available to the REFW11X64-001 VM, and it has been issued a valid IP address.
+> [!IMPORTANT]
+> Up to this point we have not discussed IP addressing or DHCP. In the initial setup for this guide, DC01 was provisioned as a DHCP server to provide IP address leases to client computers.  You might have a different DHCP server on your network that you wish to use. The REFW11X64-001 virtual machine requires an IP address lease that provides it with connectivity to MDT01 so that it can connect to the \\MDT01\MDTBuildLab$ share, and optionally the WSUS server on your network. A connection to the Internet is also used to download and updates during the image creation process. In the current scenario, this is accomplished with a DHCP scope that provides IP addresses in the 10.10.10.100 - 10.10.10.200 range, with a 10.10.10.1 gateway, as part of a /24 subnet so that the client can connect to MDT01 at 10.10.10.11, and also connect to external networks.<br><br>
+> If you receive a message that "A connection to the deployment share could not be made, check that the DHCP service is available to the REFW11X64-001 VM, and it has been issued a valid IP address lease (check your DHCP server).
 
     After booting into Windows PE, complete the Windows Deployment Wizard with the following settings:
     1. Select a task sequence to execute on this computer: Windows 11 Enterprise x64 Default Image
@@ -660,7 +660,7 @@ On **HV01**:
     6. Captures the installation to a Windows Imaging (WIM) file.
     7. Turns off the virtual machine.
 
-After some time, you will have a Windows 11 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW11X64-001.wim.
+After some time (30-90 minutes depending on resources available), you will have a Windows 11 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is **REFW11X64-001.wim**.
 
    ![image.](../images/image-captured.png)
 
@@ -685,8 +685,6 @@ X:\>copp X:\Windows\Temp\SMSTSLog\smsts.log G:
 ```
 
 If you have trouble connecting to the deployment share, verify that your DHCP server (DC01 in this lab) has issued a lease to the VM. The DHCP client name will be something like minint-p1st75s.contoso.com.
-
-After some time, you will have a Windows 11 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW11X64-001.wim.
 
 ## Related topics
 
