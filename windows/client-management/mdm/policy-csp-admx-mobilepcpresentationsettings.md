@@ -23,13 +23,12 @@ manager: dansimp
 
 <dl>
   <dd>
-    <a href="#admx-mobilepcpresentationsettings-presentationsettingsenable_1">ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1</a>
+    <a href="#admx-mobilepcpresentationsettings-presentationsettingsenable_1"></a>ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1</a>
   </dd>
   <dd>
-    <a href="#admx-mobilepcpresentationsettings-presentationsettingsenable_2">ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_2/a>
+    <a href="#admx-mobilepcpresentationsettings-presentationsettingsenable_2"></a>ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_2</a>
   </dd>
 </dl>
-
 
 <hr/>
 

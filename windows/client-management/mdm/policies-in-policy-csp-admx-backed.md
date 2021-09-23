@@ -648,7 +648,7 @@ ms.date: 10/08/2020
 - [ADMX_MMCSnapins/MMC_WirelessNetworkPolicy](./policy-csp-admx-mmcsnapins.md#admx-mmcsnapins-mmc-wirelessnetworkpolicy)
 - [ADMX_MobilePCMobilityCenter/MobilityCenterEnable_1](./policy-csp-admx-mobilepcmobilitycenter.md#admx-mobilepcmobilitycenter-mobilitycenterenable_1)
 - [ADMX_MobilePCMobilityCenter/MobilityCenterEnable_2](./policy-csp-admx-mobilepcmobilitycenter.md#admx-mobilepcmobilitycenter-mobilitycenterenable_2)
-- - [ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1](./policy-csp-admx-mobilepcpresentationsettings.md#admx-mobilepcpresentationsettings-presentationsettingsenable_1)
+- [ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1](./policy-csp-admx-mobilepcpresentationsettings.md#admx-mobilepcpresentationsettings-presentationsettingsenable_1)
 - [ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_2](./policy-csp-admx-mobilepcpresentationsettings.md#admx-mobilepcpresentationsettings-presentationsettingsenable_2)
 - [ADMX_MSAPolicy/IncludeMicrosoftAccount_DisableUserAuthCmdLine](./policy-csp-admx-msapolicy.md#admx-msapolicy-microsoftaccount-disableuserauth)
 - [ADMX_msched/ActivationBoundaryPolicy](./policy-csp-admx-msched.md#admx-msched-activationboundarypolicy)
