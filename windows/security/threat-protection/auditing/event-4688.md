@@ -154,7 +154,7 @@ This event generates every time a new process starts.
 
 -   **Token Elevation Type** \[Type = UnicodeString\]**:**
 
-    -   **%%1936:** Type 1 is a full token with no privileges removed or groups disabled. A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account (for which UAC disabled by default), service account or local system account.
+    -   **%%1936:** Type 1 is a full token with no privileges removed or groups disabled. A full token is only used if User Account Control is disabled or if the user is the built-in Administrator account (for which UAC is disabled by default), service account, or local system account.
 
     -   **%%1937:** Type 2 is an elevated token with no privileges removed or groups disabled. An elevated token is used when User Account Control is enabled and the user chooses to start the program using Run as administrator. An elevated token is also used when an application is configured to always require administrative privilege or to always require maximum privilege, and the user is a member of the Administrators group.
 
