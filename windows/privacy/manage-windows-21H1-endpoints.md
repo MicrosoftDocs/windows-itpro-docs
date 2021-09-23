@@ -70,7 +70,7 @@ If automatic updates are turned off, applications and websites may stop working 
 |||TLSv1.2/HTTPS/HTTP|v10.events.data.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|v20.events.data.microsoft.com|
 |||HTTP|www.microsoft.com|
-||The following endpoints are used by Windows Error Reporting. To turn off traffic for these endpoints, enable the following Group Policy: Administrative Templates > Windows Components > Windows Error Reporting > Disable Windows Error Reporting. This means error reporting information will not be sent back to Microsoft.|TLSv1.2|telecommand.telemetry.microsoft.com|
+||The following endpoints are used by Windows Error Reporting. To turn off traffic for these endpoints, enable the following Group Policy: **Administrative Templates** > **Windows Components** > **Windows Error Reporting** > **Disable Windows Error Reporting**. This means error reporting information will not be sent back to Microsoft.|TLSv1.2|telecommand.telemetry.microsoft.com|
 |||TLS v1.2/HTTPS/HTTP|watson.*.microsoft.com|
 |Font Streaming|The following endpoints are used to download fonts on demand. If you turn off traffic for these endpoints, you will not be able to download fonts on demand.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#6-font-streaming)|
 |||HTTPS|fs.microsoft.com|
