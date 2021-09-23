@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 08/20/2018
+ms.date: 09/23/2021
 ms.technology: mde
 ---
 
@@ -31,7 +31,7 @@ Dynamic Code Security is not enabled by default because existing policies may no
 Additionally, a few .NET loading features, including loading unsigned assemblies built with System.Reflection.Emit, are not currently supported with Dynamic Code Security enabled. 
 Microsoft recommends testing Dynamic Code Security in audit mode before enforcing it to discover whether any new libraries should be included in the policy. 
 
-Additionally, customers can precompile for deployment only to prevent an allowed executable from being terminated because it tries to load unsigned dynamically generated code. See the "Precompiling for Deployment Only" section in the [ASP.NET Precompilation Overview](https://docs.microsoft.com/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/precompiling-your-website-cs) document for how to fix that.
+Additionally, customers can precompile for deployment only to prevent an allowed executable from being terminated because it tries to load unsigned dynamically generated code. See the "Precompiling for Deployment Only" section in the [ASP.NET Precompilation Overview](/aspnet/web-forms/overview/older-versions-getting-started/deploying-web-site-projects/precompiling-your-website-cs) document for how to fix that.
 
 To enable Dynamic Code Security, add the following option to the `<Rules>` section of your policy: 
 
