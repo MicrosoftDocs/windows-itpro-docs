@@ -537,6 +537,8 @@ items:
               href: policy-csp-admx-printing2.md
             - name: ADMX_Programs
               href: policy-csp-admx-programs.md
+            - name: ADMX_PushToInstall
+              href: policy-csp-admx-pushtoinstall.md  
             - name: ADMX_Reliability
               href: policy-csp-admx-reliability.md
             - name: ADMX_RemoteAssistance

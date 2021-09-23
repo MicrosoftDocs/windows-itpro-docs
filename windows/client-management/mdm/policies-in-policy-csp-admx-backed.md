@@ -872,6 +872,7 @@ ms.date: 10/08/2020
 - [ADMX_Programs/NoProgramsCPL](./policy-csp-admx-programs.md#admx-programs-noprogramscpl)
 - [ADMX_Programs/NoWindowsFeatures](./policy-csp-admx-programs.md#admx-programs-nowindowsfeatures)
 - [ADMX_Programs/NoWindowsMarketplace](./policy-csp-admx-programs.md#admx-programs-nowindowsmarketplace)
+- [ADMX_PushToInstall/DisablePushToInstall](./policy-csp-admx-pushtoinstall.md#admx-pushtoinstall-disablepushtoinstall)
 - [ADMX_Reliability/EE_EnablePersistentTimeStamp](./policy-csp-admx-reliability.md#admx-reliability-ee-enablepersistenttimestamp)
 - [ADMX_Reliability/PCH_ReportShutdownEvents](./policy-csp-admx-reliability.md#admx-reliability-pch-reportshutdownevents)
 - [ADMX_Reliability/ShutdownEventTrackerStateFile](./policy-csp-admx-reliability.md#admx-reliability-shutdowneventtrackerstatefile)

@@ -3033,6 +3033,13 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_PushToInstall policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-pushtoinstall.md#admx-pushtoinstall-disablepushtoinstall" id="admx-pushtoinstall-disablepushtoinstall">ADMX_PushToInstall/DisablePushToInstall</a>
+  </dd>
+
 ### ADMX_Reliability policies
 
 <dl>
