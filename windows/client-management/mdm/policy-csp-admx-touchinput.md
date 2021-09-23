@@ -36,7 +36,7 @@ manager: dansimp
     <a href="#admx-touchinput-touchinputoff_2">ADMX_TouchInput/TouchInputOff_2</a>
   </dd>
   <dd>
-    <a href="#admx-touchinput-panningeverywhereoff_1l">ADMX_TouchInput/PanningEverywhereOff_1</a>
+    <a href="#admx-touchinput-panningeverywhereoff_1">ADMX_TouchInput/PanningEverywhereOff_1</a>
   </dd>
   <dd>
     <a href="#admx-touchinput-panningeverywhereoff_2">ADMX_TouchInput/PanningEverywhereOff_2</a>
