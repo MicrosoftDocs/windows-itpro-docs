@@ -2862,6 +2862,35 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_PreviousVersions policies
+
+</dl>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalpage_1" id="admx-previousversions-disablelocalpage_1">ADMX_PreviousVersions/DisableLocalPage_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalpage_2" id="admx-previousversions-disablelocalpage_2">ADMX_PreviousVersions/DisableLocalPage_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disableremotepage_1" id="admx-previousversions-disableremotepage_1">ADMX_PreviousVersions/DisableRemotePage_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disableremotepage_2" id="admx-previousversions-disableremotepage_2">ADMX_PreviousVersions/DisableRemotePage_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-hidebackupentries_1" id="admx-previousversions-hidebackupentries_1">ADMX_PreviousVersions/HideBackupEntries_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-hidebackupentries_2" id="admx-previousversions-hidebackupentries_2">ADMX_PreviousVersions/HideBackupEntries_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalrestore_1" id="admx-previousversions-disablelocalrestore_1">ADMX_PreviousVersions/DisableLocalRestore_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalrestore_2" id="admx-previousversions-disablelocalrestore_2">ADMX_PreviousVersions/DisableLocalRestore_2</a>
+  </dd>
+</dl>
+
 ### ADMX_Printing policies  
 
 <dl>

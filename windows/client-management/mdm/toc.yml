@@ -529,6 +529,8 @@ items:
               href: policy-csp-admx-power.md
             - name: ADMX_PowerShellExecutionPolicy
               href: policy-csp-admx-powershellexecutionpolicy.md
+            - name: ADMX_PreviousVersions
+              href: policy-csp-admx-previousversions.md  
             - name: ADMX_Printing
               href: policy-csp-admx-printing.md
             - name: ADMX_Printing2
