@@ -2,7 +2,7 @@
 title: Validate kiosk configuration (Windows 10/11)
 description: In this article, learn what to expect on a multi-app kiosk in Windows 10/11 Pro, Enterprise, and Education.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
-ms.reviewer: 
+ms.reviewer: sybruckm
 manager: dansimp
 ms.author: greglin
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
@@ -11,7 +11,6 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: greg-lindsay
 ms.localizationpriority: medium
-ms.date: 07/30/2018
 ms.topic: article
 ---
 

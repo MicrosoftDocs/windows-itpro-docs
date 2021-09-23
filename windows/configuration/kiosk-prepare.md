@@ -2,7 +2,7 @@
 title: Prepare a device for kiosk configuration on Windows 10/11 | Microsoft Docs
 description: Learn how to prepare a device for kiosk configuration. Also, learn about the recommended kiosk configuration changes.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
-ms.reviewer: 
+ms.reviewer: sybruckm
 manager: dansimp
 ms.author: greglin
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
