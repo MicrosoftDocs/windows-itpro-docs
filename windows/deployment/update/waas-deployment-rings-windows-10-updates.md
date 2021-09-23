@@ -12,7 +12,7 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# Build deployment rings for Windows 10 updates
+# Build deployment rings for Windows client updates
 
 **Applies to**
 
@@ -37,15 +37,15 @@ Table 1 provides an example of the deployment rings you might use.
 
 | Deployment ring | Servicing channel | Deferral for feature updates | Deferral for quality updates | Example |
 | --- | --- | --- | --- | --- |
-| Preview | Windows Insider Program | None | None | A few machines to evaluate early builds prior to their arrival to the semi-annual channel |
-| Broad | Semi-annual channel | 120 days | 7-14 days | Broadly deployed to most of the organization and monitored for feedback</br>Pause updates if there are critical issues |
-| Critical | Semi-annual channel | 180 days | 30 days | Devices that are critical and will only receive updates once they've been vetted for a period of time by the majority of the organization |
+| Preview | Windows Insider Program | None | None | A few machines to evaluate early builds prior to their arrival to the Semi-Annual channel |
+| Broad | Semi-Annual channel | 120 days | 7-14 days | Broadly deployed to most of the organization and monitored for feedback</br>Pause updates if there are critical issues |
+| Critical | Semi-Annual channel | 180 days | 30 days | Devices that are critical and will only receive updates once they've been vetted for some time by most of the organization |
 
 >[!NOTE]
 >In this example, there are no rings made up of the long-term servicing channel (LTSC). The LTSC does not receive feature updates. 
 
 
-As Table 1 shows, each combination of servicing channel and deployment group is tied to a specific deployment ring. As you can see, the associated groups of devices are combined with a servicing channel to specify which deployment ring those devices and their users fall into. The naming convention used to identify the rings is completely customizable as long as the name clearly identifies the sequence. Deployment rings represent a sequential deployment timeline, regardless of the servicing channel they contain. Deployment rings will likely rarely change for an organization, but they should be periodically assessed to ensure that the deployment cadence still makes sense. 
+As Table 1 shows, each combination of servicing channel and deployment group is tied to a specific deployment ring. As you can see, the associated groups of devices are combined with a servicing channel to specify which deployment ring those devices and their users fall into. The naming convention used to identify the rings is customizable as long as the name clearly identifies the sequence. Deployment rings represent a sequential deployment timeline, regardless of the servicing channel they contain. Deployment rings will likely rarely change for an organization, but they should be periodically assessed to ensure that the deployment cadence still makes sense. 
 
 
 ## Steps to manage updates for Windows client
@@ -54,7 +54,7 @@ As Table 1 shows, each combination of servicing channel and deployment group is 
 | --- | --- |
 | ![done.](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
 | ![done.](images/checklistdone.png) | [Prepare servicing strategy for Windows client updates](waas-servicing-strategy-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | Build deployment rings for Windows client updates (this topic) |
+| ![done.](images/checklistdone.png) | Build deployment rings for Windows client updates (this article) |
 | ![to do.](images/checklistbox.gif) | [Assign devices to servicing channels for Windows client updates](waas-servicing-channels-windows-10-updates.md) |
 | ![to do.](images/checklistbox.gif) | [Optimize update delivery for Windows client updates](waas-optimize-windows-10-updates.md) |
 | ![to do.](images/checklistbox.gif) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or [Deploy Windows client updates using Windows Server Update Services](waas-manage-updates-wsus.md)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
