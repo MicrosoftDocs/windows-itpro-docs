@@ -10,7 +10,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/22/2021
 ms.localizationpriority: medium
 ---
 
@@ -28,10 +27,41 @@ For more general information, see [Configuration service provider (CSP) referenc
 
 ## Existing CSP policies that Windows 11 taskbar supports
 
-- [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start.mdstart-hiderecentjumplists)
+- [Start/HideRecentJumplists CSP](/windows/client-management/mdm/policy-csp-start#start-hiderecentjumplists)
   - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Do not keep history of recently opened documents`
   - Local setting: Settings > Personalization > Start > Show recently opened items in Jump Lists on Start or the taskbar
 
 - [Start/NoPinningToTaskbar](/windows/client-management/mdm/policy-csp-start#start-nopinningtotaskbar)
   - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Do not allow pinning programs to the Taskbar`
   - Local setting: None
+
+## Existing CSP policies that Windows 11 doesn't support
+
+The following list includes some of the CSP policies that aren't supported on Windows 11:
+
+- [TaskbarLockAll CSP](/windows/client-management/mdm/policy-csp-admx-taskbar#admx-taskbar-taskbarlockall)
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Lock all taskbar settings`
+
+- [TaskbarNoAddRemoveToolbar CSP](/windows/client-management/mdm/policy-csp-admx-taskbar#admx-taskbar-taskbarnoaddremovetoolbar)
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Prevent users from adding or removing toolbars`
+
+- [TaskbarNoDragToolbar CSP](/windows/client-management/mdm/policy-csp-admx-taskbar#admx-taskbar-taskbarnodragtoolbar)
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Prevent users from rearranging toolbars`
+
+- [TaskbarNoRedock CSP](/windows/client-management/mdm/policy-csp-admx-taskbar#admx-taskbar-taskbarnoredock)
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Prevent users from moving taskbar to another screen dock location`
+
+- [TaskbarNoResize CSP](/windows/client-management/mdm/policy-csp-admx-taskbar#admx-taskbar-taskbarnoresize)
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Prevent users from resizing the taskbar`
+
+- [NoToolbarsOnTaskbar CSP](/windows/client-management/mdm/policy-csp-admx-startmenu#admx-startmenu-notoolbarsontaskbar)
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Do not display any custom toolbars in the taskbar`
+
+- [NoTaskGrouping CSP](/windows/client-management/mdm/policy-csp-admx-startmenu#admx-startmenu-notaskgrouping)
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Prevent grouping of taskbar items`
+
+- [HidePeopleBar CSP](/windows/client-management/mdm/policy-csp-start#start-hidepeoplebar)
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Remove the People Bar from the taskbar`
+
+- [QuickLaunchEnabled CSP](/windows/client-management/mdm/policy-csp-admx-startmenu#admx-startmenu-quicklaunchenabled)
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Show QuickLaunch on Taskbar`

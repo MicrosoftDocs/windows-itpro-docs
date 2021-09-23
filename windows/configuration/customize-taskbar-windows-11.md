@@ -10,7 +10,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/21/2021
 ms.localizationpriority: medium
 ---
 
