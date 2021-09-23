@@ -1,5 +1,5 @@
 ---
-title: Isolated Domain GPOs (Windows 10)
+title: Isolated Domain GPOs (Windows)
 description: Learn about GPOs for isolated domains in this example configuration of Windows Defender Firewall with Advanced Security.
 ms.assetid: e254ce4a-18c6-4868-8179-4078d9de215f
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 All of the devices in the isolated domain are added to the group CG\_DOMISO\_IsolatedDomain. You must create multiple GPOs to align with this group, one for each Windows operating system that must have different rules or settings to implement the basic isolated domain functionality that you have in your isolated domain. This group is granted Read and Apply Group Policy permissions on all the GPOs described in this section.
 
