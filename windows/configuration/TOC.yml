@@ -90,9 +90,9 @@
 
 - name: Use provisioning packages
   items:
-    - name: Provisioning packages for Windows 10
+    - name: Provisioning packages for Windows client
       href: provisioning-packages/provisioning-packages.md
-    - name: How provisioning works in Windows 10
+    - name: How provisioning works in Windows client
       href: provisioning-packages/provisioning-how-it-works.md
     - name: Introduction to configuration service providers (CSPs)
       href: provisioning-packages/how-it-pros-can-use-configuration-service-providers.md
@@ -112,7 +112,7 @@
       href: provisioning-packages/provisioning-script-to-install-app.md
     - name: Create a provisioning package with multivariant settings
       href: provisioning-packages/provisioning-multivariant.md
-    - name: PowerShell cmdlets for provisioning Windows 10 (reference)
+    - name: PowerShell cmdlets for provisioning Windows client (reference)
       href: provisioning-packages/provisioning-powershell.md
     - name: Windows Configuration Designer command-line interface (reference)
       href: provisioning-packages/provisioning-command-line.md

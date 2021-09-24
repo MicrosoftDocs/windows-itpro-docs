@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/09/2021
 ms.technology: mde
 ---
 
 # View the security event log
 
-**Applies to**
--   Windows 10
 
 The security log records each event as defined by the audit policies you set on each object.
 

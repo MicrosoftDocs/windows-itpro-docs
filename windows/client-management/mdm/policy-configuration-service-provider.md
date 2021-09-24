@@ -1676,6 +1676,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_LocationProviderAdm policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-locationprovideradm.md#admx-locationprovideradm-disablewindowslocationprovider_1" id="admx-locationprovideradm-disablewindowslocationprovider_1">ADMX_LocationProviderAdm/BlockUserFromShowingAccountDetailsOnSignin</a>
+  </dd>
+<dl>
+
 ### ADMX_Logon policies  
 
 <dl>
@@ -6062,6 +6070,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings" id="exploitguard-exploitprotectionsettings">ExploitGuard/ExploitProtectionSettings</a>
+  </dd>
+</dl>
+
+### Feeds policies
+<dl>
+  <dd>
+    <a href="./policy-csp-feeds.md#feeds-feedsenabled" id="feeds-feedsenabled">Feeds/FeedsEnabled</a>
   </dd>
 </dl>
 

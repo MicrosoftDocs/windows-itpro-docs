@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 6424(S): The installation of this device was allowed, after having previously been forbidden by policy.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event occurs rarely, and in some situations may be difficult to reproduce.
