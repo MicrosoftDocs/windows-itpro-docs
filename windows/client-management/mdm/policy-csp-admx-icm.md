@@ -13,8 +13,12 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_ICM
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+>[!TIP]
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
@@ -164,12 +168,7 @@ If you disable this policy setting, all users are opted into the Windows Custome
 If you do not configure this policy setting, the administrator can use the Problem Reports and Solutions component in Control Panel to enable Windows Customer Experience Improvement Program for all users.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -241,12 +240,7 @@ If you enable this policy setting, when you are presented with a certificate iss
 If you disable or do not configure this policy setting, your computer will contact the Windows Update website.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -321,12 +315,7 @@ If you enable this policy setting, it prevents this client from printing to Inte
 If you disable or do not configure this policy setting, users can choose to print to Internet printers over HTTP.  Also, see the "Web-based printing" policy setting in Computer Configuration/Administrative Templates/Printers.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -403,12 +392,7 @@ If you enable this policy setting, print drivers cannot be downloaded over HTTP.
 If you disable or do not configure this policy setting, users can download print drivers over HTTP.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -485,12 +469,7 @@ Also see "Turn off Windows Update device driver search prompt" in "Administrativ
 > This policy setting is replaced by "Specify Driver Source Search Order" in "Administrative Templates/System/Device Installation" on newer versions of Windows.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -564,12 +543,7 @@ If you disable or do not configure this policy setting, the user can click the h
 Also, see "Events.asp URL", "Events.asp program", and "Events.asp Program Command Line Parameters" settings in "Administrative Templates/Windows Components/Event Viewer".
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -643,12 +617,7 @@ If you disable or do not configure this policy setting, the Help and Support Cen
 You might want to enable this policy setting for users who do not have Internet access, because the content in the "Did you know?" section will remain static indefinitely without an Internet connection.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -720,12 +689,7 @@ If you enable this policy setting, it removes the Knowledge Base section from th
 If you disable or do not configure this policy setting, the Knowledge Base is searched if the user has a connection to the Internet and has not disabled the Knowledge Base search from the Search Options page.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -797,12 +761,7 @@ If you disable this policy setting, all of the the policy settings listed in the
 If you do not configure this policy setting, all of the the policy settings in the "Internet Communication settings" section are set to not configured.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -873,12 +832,7 @@ If you disable this policy setting, all of the the policy settings listed in the
 
 If you do not configure this policy setting, all of the the policy settings in the "Internet Communication settings" section are set to not configured.
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -948,12 +902,7 @@ If you enable this policy setting, the "Choose a list of Internet Service Provid
 If you disable or do not configure this policy setting, users can connect to Microsoft to download a list of ISPs for their area.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1025,12 +974,7 @@ If you disable or do not configure this policy setting, users can connect to Mic
 Note that registration is optional and involves submitting some personal information to Microsoft. However, Windows Product Activation is required but does not involve submitting any personal information (except the country/region you live in).
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1106,12 +1050,7 @@ This policy setting overrides any user setting made from the Control Panel for e
 Also see the "Configure Error Reporting", "Display Error Notification" and "Disable Windows Error Reporting" policy settings under Computer Configuration/Administrative Templates/Windows Components/Windows Error Reporting.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1184,12 +1123,7 @@ If you disable or do not configure this policy setting, users can access the Win
 > This policy applies only when this PC is configured to connect to an intranet update service using the "Specify intranet Microsoft update service location" policy.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1264,12 +1198,7 @@ If you disable or do not configure this policy setting, Search Companion downloa
 > Internet searches still send the search text and information about the search to Microsoft and the chosen search provider. Choosing Classic Search turns off the Search Companion feature completely.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1341,12 +1270,7 @@ If you enable this policy setting, the link and the dialog for using the Web ser
 If you disable or do not configure this policy setting, the user is allowed to use the Web service.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1418,12 +1342,7 @@ If you enable this policy setting, the link and the dialog for using the Web ser
 If you disable or do not configure this policy setting, the user is allowed to use the Web service.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1495,12 +1414,7 @@ If you enable this policy setting, the "Look for an app in the Store" item in th
 If you disable or do not configure this policy setting, the user is allowed to use the Store service and the Store item is available in the Open With dialog.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1572,12 +1486,7 @@ If you enable this policy setting, the "Look for an app in the Store" item in th
 If you disable or do not configure this policy setting, the user is allowed to use the Store service and the Store item is available in the Open With dialog.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1649,12 +1558,7 @@ If you disable or do not configure this policy setting, a list of providers are 
 See the documentation for the web publishing and online ordering wizards for more information, including details on specifying service providers in the registry.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1724,12 +1628,7 @@ The Order Prints Online Wizard is used to download a list of providers and allow
 If you disable or do not configure this policy setting, the task is displayed.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1801,12 +1700,7 @@ If you enable this policy setting, the task "Order Prints Online" is removed fro
 If you disable or do not configure this policy setting, the task is displayed.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1876,12 +1770,7 @@ The Web Publishing Wizard is used to download a list of providers and allow user
 If you enable this policy setting, these tasks are removed from the File and Folder tasks in Windows folders. If you disable or do not configure this policy setting, the tasks are shown.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1953,12 +1842,7 @@ If you enable this policy setting, these tasks are removed from the File and Fol
 If you disable or do not configure this policy setting, the tasks are shown.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -2032,12 +1916,7 @@ If you enable this policy setting, Windows Messenger does not collect usage info
 If you disable this policy setting, Windows Messenger collects anonymous usage information, and the setting is not shown.  If you do not configure this policy setting, users have the choice to opt in and allow information to be collected.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -2113,12 +1992,7 @@ If you disable this policy setting, Windows Messenger collects anonymous usage i
 If you do not configure this policy setting, users have the choice to opt in and allow information to be collected.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -2131,8 +2005,6 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-> [!NOTE]
-> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 
