@@ -1,8 +1,8 @@
 ---
-title: Use Shell Launcher to create a Windows 10 kiosk (Windows 10)
+title: Use Shell Launcher to create a Windows 10/11 kiosk (Windows 10/11)
 description: Shell Launcher lets you change the default shell that launches when a user signs in to a device.
 ms.assetid: 428680AE-A05F-43ED-BD59-088024D1BFCC
-ms.reviewer: 
+ms.reviewer: sybruckm
 manager: dansimp
 ms.author: greglin
 keywords: ["assigned access", "kiosk", "lockdown", "digital sign", "digital signage"]
@@ -14,13 +14,14 @@ ms.localizationpriority: medium
 ms.topic: article
 ---
 
-# Use Shell Launcher to create a Windows 10 kiosk
+# Use Shell Launcher to create a Windows client kiosk
 
 
 **Applies to**
 - Windows 10 Ent, Edu
+- Windows 11
 
-Using Shell Launcher, you can configure a device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows 10, you can only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in Windows 10, version 1809 and above, you can also specify a UWP app as the replacement shell. To use **Shell Launcher v2** in version 1809, you need to install the [KB4551853](https://support.microsoft.com/help/4551853) update. 
+Using Shell Launcher, you can configure a device that runs an application as the user interface, replacing the default shell (explorer.exe). In **Shell Launcher v1**, available in Windows client, you can only specify a Windows desktop application as the replacement shell. In **Shell Launcher v2**, available in Windows 10 version 1809+ / Windows 11, you can also specify a UWP app as the replacement shell. To use **Shell Launcher v2** in Windows 10 version 1809, you need to install the [KB4551853](https://support.microsoft.com/help/4551853) update. 
 
 >[!NOTE]
 >Shell Launcher controls which application the user sees as the shell after sign-in. It does not prevent the user from accessing other desktop applications and system components. 
@@ -30,7 +31,7 @@ Using Shell Launcher, you can configure a device that runs an application as the
 >- [AppLocker](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-overview) - Application control policies
 >- [Mobile Device Management](/windows/client-management/mdm) - Enterprise management of device security policies
 
-You can apply a custom shell through Shell Launcher [by using PowerShell](#configure-a-custom-shell-using-powershell). In Windows 10, version 1803 and later, you can also [use mobile device management (MDM)](#configure-a-custom-shell-in-mdm) to apply a custom shell through Shell Launcher.
+You can apply a custom shell through Shell Launcher [by using PowerShell](#configure-a-custom-shell-using-powershell). Starting with Windows 10 version 1803+, you can also [use mobile device management (MDM)](#configure-a-custom-shell-in-mdm) to apply a custom shell through Shell Launcher.
 
 
 ## Differences between Shell Launcher v1 and Shell Launcher v2
@@ -292,7 +293,7 @@ Value|Description
 
 These action can be used as default action, or can be mapped to a specific exit code. Refer to [Shell Launcher](/windows-hardware/customize/enterprise/wesl-usersettingsetcustomshell) to see how these codes with Shell Launcher WMI.
 
-To configure these action with Shell Launcher CSP, use below syntax in the shell launcher configuration xml. You can specify at most 4 custom actions mapping to 4 exit codes, and one default action for all other exit codes. When app exits and if the exit code is not found in the custom action mapping, or there is no default action defined, it will be no-op, i.e. nothing happens. So it's recommeded to at least define DefaultAction. [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
+To configure these action with Shell Launcher CSP, use below syntax in the shell launcher configuration xml. You can specify at most 4 custom actions mapping to 4 exit codes, and one default action for all other exit codes. When app exits and if the exit code is not found in the custom action mapping, or there is no default action defined, it will be no-op, i.e. nothing happens. So it's recommended to at least define DefaultAction. [Get XML examples for different Shell Launcher v2 configurations.](https://github.com/Microsoft/Windows-iotcore-samples/tree/develop/Samples/ShellLauncherV2)
 ``` xml
 <ReturnCodeActions>
     <ReturnCodeAction ReturnCode="0" Action="RestartShell"/>
