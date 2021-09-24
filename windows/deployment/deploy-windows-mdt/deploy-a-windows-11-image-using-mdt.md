@@ -305,7 +305,7 @@ On **MDT01**:
 
 For the HP EliteBook 8560w, you use HP Image Assistant to get the drivers. The HP Image Assistant can be accessed on the [HP Support site](https://ftp.ext.hp.com/pub/caps-softpaq/cmit/HPIA.html).
 
-In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w** folder.
+In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the **D:\\Drivers\\Windows 11 x64\\Hewlett-Packard\\HP EliteBook 8560w** folder.
 
 On **MDT01**:
 
@@ -317,7 +317,7 @@ On **MDT01**:
 
 ### For the Microsoft Surface Laptop
 
-For the Microsoft Surface Laptop model, you find the drivers on the Microsoft website. In these steps we assume you have downloaded and extracted the Surface Laptop drivers to the **D:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Laptop** folder.
+For the Microsoft Surface Laptop model, you find the drivers on the Microsoft website. In these steps we assume you have downloaded and extracted the Surface Laptop drivers to the **D:\\Drivers\\Windows 11 x64\\Microsoft\\Surface Laptop** folder.
 
 On **MDT01**:
 
@@ -473,7 +473,7 @@ On **MDT01**:
 11. Click **OK**.
 
     >[!NOTE]
-    >It will take a while for the Deployment Workbench to create the monitoring database and web service.
+    >It might take a while for the Deployment Workbench to create the monitoring database and web service.
  
     ![figure 8.](../images/mdt-07-fig08.png)
 
@@ -604,7 +604,7 @@ Like the MDT Build Lab deployment share, the MDT Production deployment share nee
 >[!NOTE]
 >The update process will take 5 to 10 minutes.
 
-## Step 8: Deploy the Windows 10 client image
+## Step 8: Deploy the Windows 11 client image
 
 These steps will walk you through the process of using task sequences to deploy Windows 10 images through a fully automated process. First, you need to add the boot image to Windows Deployment Services (WDS) and then start the deployment. In contrast with deploying images from the MDT Build Lab deployment share, we recommend using the Pre-Installation Execution Environment (PXE) to start the full deployments in the datacenter, even though you technically can use an ISO/CD or USB to start the process.
 
@@ -624,7 +624,7 @@ On **MDT01**:
 
    The boot image added to the WDS console.
 
-### Deploy the Windows 10 client
+### Deploy the Windows 11 client
 
 At this point, you should have a solution ready for deploying the Windows 10 client. We recommend starting by trying a few deployments at a time until you are confident that your configuration works as expected. We find it useful to try some initial tests on virtual machines before testing on physical hardware. This helps rule out hardware issues when testing or troubleshooting. Here are the steps to deploy your Windows 10 image to a virtual machine:
 
@@ -654,9 +654,9 @@ On **HV01**:
 
 4.  Setup now begins and does the following:
 
-    - Installs the Windows 10 Enterprise operating system.
+    - Installs the Windows 11 Enterprise operating system.
     - Installs the added application.
-    - Updates the operating system via your local Windows Server Update Services (WSUS) server.
+    - Updates the operating system via your local Windows Server Update Services (WSUS) server (if configured).
 
     ![pc0005 image1.](../images/pc0005-vm.png)
 
@@ -714,9 +714,9 @@ On **MDT01**:
 
     The newly created multicast namespace.
 
-## Use offline media to deploy Windows 10
+## Use offline media to deploy Windows 11
 
-In addition to network-based deployments, MDT supports the use of offline media-based deployments of Windows 10. You can very easily generate an offline version of your deployment share - either the full deployment share or a subset of it - through the use of selection profiles. The generated offline media can be burned to a DVD or copied to a USB stick for deployment.
+In addition to network-based deployments, MDT supports the use of offline media-based deployments of Windows 11. You can very easily generate an offline version of your deployment share - either the full deployment share or a subset of it - through the use of selection profiles. The generated offline media can be burned to a DVD or copied to a USB stick for deployment.
 
 Offline media are useful not only when you do not have network connectivity to the deployment share, but also when you have limited connection to the deployment share and do not want to copy 5 GB of data over the wire. Offline media can still join the domain, but you save the transfer of operating system images, drivers, and applications over the wire.
 
@@ -735,10 +735,10 @@ On **MDT01**:
 
     - Folders
       - Applications / Adobe
-      - Operating Systems / Windows 10
+      - Operating Systems / Windows 11
       - Out-Of-Box Drivers / WinPE x64
-      - Out-Of-Box Drivers / Windows 10 x64
-      - Task Sequences / Windows 10
+      - Out-Of-Box Drivers / Windows 11 x64
+      - Task Sequences / Windows 11
 
       ![offline media.](../images/mdt-offline-media.png)
 
@@ -756,7 +756,7 @@ In these steps, you generate offline media from the MDT Production deployment sh
 3.  Use the following settings for the New Media Wizard:
     -   General Settings
         - Media path: **D:\\MDTOfflineMedia**
-        - Selection profile: **Windows 10 Offline Media**
+        - Selection profile: **Windows 11 Offline Media**
 
 ### Configure the offline media
 
@@ -770,7 +770,7 @@ On **MDT01**:
 
 3.  In the **General** tab, configure the following:
     - Clear the Generate x86 boot image check box.
-    - ISO file name: Windows 10 Offline Media.iso
+    - ISO file name: Windows 11 Offline Media.iso
 
 4.  On the **Windows PE** tab, in the **Platform** drop-down list, select **x64**.
 
@@ -803,15 +803,10 @@ The ISO that you got when updating the offline media item can be burned to a DVD
 Follow these steps to create a bootable USB stick from the offline media content:
 
 1.  On a physical machine running Windows 7 or later, insert the USB stick you want to use.
-
 2.  Copy the content of the **MDTOfflineMedia\\Content** folder to the root of the USB stick.
-
 3.  Start an elevated command prompt (run as Administrator), and start the Diskpart utility by typing **Diskpart** and pressing **Enter**.
-
 4.  In the Diskpart utility, you can type **list volume** (or the shorter **list vol**) to list the volumes, but you really only need to remember the drive letter of the USB stick to which you copied the content. In our example, the USB stick had the drive letter F.
-
 5.  In the Diskpart utility, type **select volume F** (replace F with your USB stick drive letter).
-
 6.  In the Diskpart utility, type **active**, and then type **exit**.
 
 ## Unified Extensible Firmware Interface (UEFI)-based deployments
