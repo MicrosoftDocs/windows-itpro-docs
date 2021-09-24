@@ -83,7 +83,6 @@ Allows the administrator to require storage card encryption on the device. This 
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
 </tr>
 </table> 
 <!--/SupportedSKUs-->
@@ -135,7 +134,6 @@ Allows the administrator to require encryption to be turned on by using BitLocke
 </tr>
 <tr>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
@@ -209,7 +207,6 @@ Allows you to set the default encryption method for each of the different drive 
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
     <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
     <td><img src="images/crossmark.png" alt="cross mark" /></td>
 </tr>
 </table> 
