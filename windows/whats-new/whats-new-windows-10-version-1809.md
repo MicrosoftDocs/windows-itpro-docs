@@ -7,7 +7,7 @@ ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 ms.localizationpriority: high
 ms.topic: article
@@ -247,7 +247,7 @@ Do you have shared devices deployed in your work place? **Fast sign-in** enables
 >[!IMPORTANT]
 >This is a private preview feature and therefore not meant or recommended for production purposes.
 
-Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing **web sign-in**, a new way of signing into your Windows PC. Web sign-in enables Windows logon support for credentials not available on Windows and it´s restricted to only support Azure AD temporary access pass.
+Until now, Windows logon only supported the use of identities federated to ADFS or other providers that support the WS-Fed protocol. We are introducing **web sign-in**, a new way of signing into your Windows PC. Web sign-in enables Windows logon support for credentials not available on Windows. Web sign-in is restricted to only support Azure AD temporary access pass.
 
 **To try out web sign-in:**
 1. Azure AD Join your Windows 10 PC. (Web sign-in is only supported on Azure AD Joined PCs).
