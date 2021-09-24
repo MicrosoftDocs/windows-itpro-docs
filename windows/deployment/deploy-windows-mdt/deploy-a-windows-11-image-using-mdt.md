@@ -157,7 +157,7 @@ On **MDT01**:
 ## Step 5: Prepare the drivers repository
 
 > [!IMPORTANT]
-> The section below on preparing the drivers repository uses Windows 10-compatible devices and drivers. These examples do not infer Windows 11 compatibility. Check with your device manufacturer before deploying drivers, and verify that the device meets Windows 11 hardware requirements. For more information, see [Windows 11 requirements](/windows/whats-new/windows-11-requirements).
+> The section below on preparing the drivers repository uses Windows 10-compatible devices and drivers as examples. These examples do not infer Windows 11 compatibility. Check with your device manufacturer before deploying drivers, and verify that the device meets Windows 11 hardware requirements. For more information, see [Windows 11 requirements](/windows/whats-new/windows-11-requirements).
 
 In order to deploy Windows 10 or Windows 11 with MDT successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
 -   Lenovo ThinkPad T420
@@ -236,24 +236,20 @@ The Out-of-Box Drivers structure in the Deployment Workbench.
 ### Create the selection profiles for boot image drivers
 
 By default, MDT adds any storage and network drivers that you import to the boot images. However, you should add only the drivers that are necessary to the boot image. You can control which drivers are added by using selection profiles.
-The drivers that are used for the boot images (Windows PE) are Windows 10 drivers. If you can’t locate Windows 10 drivers for your device, a Windows 7 or Windows 8.1 driver will most likely work, but Windows 10 drivers should be your first choice.
+The drivers that are used for the boot images (Windows PE) are Windows 11 drivers. If you can’t locate Windows 11 drivers for your device, a Windows 10, Windows 8.1 or Windows 7 driver will most likely work, but Windows 11 drivers should be your first choice.
 
 On **MDT01**:
 
 1.  In the Deployment Workbench, under the **MDT Production** node, expand the **Advanced Configuration** node, right-click the **Selection Profiles** node, and select **New Selection Profile**.
 2.  In the New Selection Profile Wizard, create a selection profile with the following settings:
-    1.  Selection Profile name: WinPE x86
+    1.  Selection Profile name: **WinPE x86**
     2.  Folders: Select the WinPE x86 folder in Out-of-Box Drivers.
     3. Click **Next**, **Next** and **Finish**.
 3.  Right-click the **Selection Profiles** node again, and select **New Selection Profile**.
 4.  In the New Selection Profile Wizard, create a selection profile with the following settings:
-    1.  Selection Profile name: WinPE x64
+    1.  Selection Profile name: **WinPE x64**
     2.  Folders: Select the WinPE x64 folder in Out-of-Box Drivers.
     3.  Click **Next**, **Next** and **Finish**.
-
-    ![figure 5.](../images/fig5-selectprofile.png)
-
-    Creating the WinPE x64 selection profile.
 
 ### Extract and import drivers for the x64 boot image
 
@@ -261,7 +257,7 @@ Windows PE supports all the hardware models that we have, but here you learn to 
 
 On **MDT01**:
 
-1. Download **PROWinx64.exe** from Intel.com (ex: [PROWinx64.exe](https://downloadcenter.intel.com/downloads/eula/25016/Intel-Network-Adapter-Driver-for-Windows-10?httpDown=https%3A%2F%2Fdownloadmirror.intel.com%2F25016%2Feng%2FPROWinx64.exe)).
+1. Download **PROWinx64.exe** from Intel.com (ex: [Intel® Network Adapter Driver](https://www.intel.com/content/www/us/en/download/16765/intel-network-adapter-driver-for-windows-8-final-release.html)).
 2.  Extract PROWinx64.exe to a temporary folder - in this example to the **C:\\Tmp\\ProWinx64** folder.
     a. **Note**: Extracting the .exe file manually requires an extraction utility. You can also run the .exe and it will self-extract files to the **%userprofile%\AppData\Local\Temp\RarSFX0** directory. This directory is temporary and will be deleted when the .exe terminates. 
 3.  Using File Explorer, create the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
@@ -283,11 +279,11 @@ In this example, we assume you have downloaded and extracted the drivers using T
 
 On **MDT01**:
 
-1. In the Deployment Workbench, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Lenovo** node.
+1. In the Deployment Workbench, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 11 x64** node, expand the **Lenovo** node.
 
 2.  Right-click the **30A6003TUS** folder and select **Import Drivers** and use the following Driver source directory to import drivers: 
 
-    **D:\\Drivers\\Windows 10 x64\\Lenovo\\ThinkStation P500 (30A6003TUS)**
+    **D:\\Drivers\\Windows 11 x64\\Lenovo\\ThinkStation P500 (30A6003TUS)**
 
     The folder you select and all sub-folders will be checked for drivers, expanding any .cab files that are present and searching for drivers.
 
@@ -299,11 +295,11 @@ In these steps, we assume you have downloaded and extracted the CAB file for the
 
 On **MDT01**:
 
-1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Dell Inc.** node.
+1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 11 x64** node, expand the **Dell Inc.** node.
 
 2.  Right-click the **Latitude E7450** folder and select **Import Drivers** and use the following Driver source directory to import drivers: 
 
-    **D:\\Drivers\\Windows 10 x64\\Dell Inc.\\Latitude E7450**
+    **D:\\Drivers\\Windows 11 x64\\Dell Inc.\\Latitude E7450**
 
 ### For the HP EliteBook 8560w
 
@@ -313,11 +309,11 @@ In these steps, we assume you have downloaded and extracted the drivers for the 
 
 On **MDT01**:
 
-1.  In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Hewlett-Packard** node.
+1.  In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 11 x64** node, expand the **Hewlett-Packard** node.
 
 2.  Right-click the **HP EliteBook 8560w** folder and select **Import Drivers** and use the following Driver source directory to import drivers: 
 
-    **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w**
+    **D:\\Drivers\\Windows 11 x64\\Hewlett-Packard\\HP EliteBook 8560w**
 
 ### For the Microsoft Surface Laptop
 
@@ -329,40 +325,40 @@ On **MDT01**:
 
 2.  Right-click the **Surface Laptop** folder and select **Import Drivers**; and use the following Driver source directory to import drivers: 
 
-    **D:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Laptop**
+    **D:\\Drivers\\Windows 11 x64\\Microsoft\\Surface Laptop**
 
 ## Step 6: Create the deployment task sequence
 
-This section will show you how to create the task sequence used to deploy your production Windows 10 reference image. You will then configure the task sequence to enable patching via a Windows Server Update Services (WSUS) server.
+This section will show you how to create the task sequence used to deploy your production Windows 11 reference image. You will then configure the task sequence to enable patching via a Windows Server Update Services (WSUS) server.
 
-### Create a task sequence for Windows 10 Enterprise
+### Create a task sequence for Windows 11 Enterprise
 
 On **MDT01**:
 
-1. In the Deployment Workbench, under the **MDT Production** node, right-click **Task Sequences**, and create a folder named **Windows 10**.
+1. In the Deployment Workbench, under the **MDT Production** node, right-click **Task Sequences**, and create a folder named **Windows 11**.
 
-2. Right-click the new **Windows 10** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
-   - Task sequence ID: W10-X64-001
-   - Task sequence name: Windows 10 Enterprise x64 RTM Custom Image
+2. Right-click the new **Windows 11** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
+   - Task sequence ID: W11-X64-001
+   - Task sequence name: Windows 11 Enterprise x64 Custom Image
    - Task sequence comments: Production Image
    - Template: Standard Client Task Sequence
-   - Select OS: Windows 10 Enterprise x64 RTM Custom Image
+   - Select OS: Windows 11 Enterprise x64 Custom Image
    - Specify Product Key: Do not specify a product key at this time
    - Full Name: Contoso
    - Organization: Contoso
    - Internet Explorer home page: https://www.contoso.com
    - Admin Password: Do not specify an Administrator Password at this time
 
-### Edit the Windows 10 task sequence
+### Edit the Windows 11 task sequence
 
-1. Continuing from the previous procedure, right-click the **Windows 10 Enterprise x64 RTM Custom Image** task sequence, and select **Properties**.
+1. Continuing from the previous procedure, right-click the **Windows 11 Enterprise x64 Custom Image** task sequence, and select **Properties**.
 
-2. On the **Task Sequence** tab, configure the **Windows 10 Enterprise x64 RTM Custom Image** task sequence with the following settings:
+2. On the **Task Sequence** tab, configure the **Windows 11 Enterprise x64 Custom Image** task sequence with the following settings:
 
    1.  Preinstall: After the **Enable BitLocker (Offline)** action, add a **Set Task Sequence Variable** action with the following settings:
        1.  Name: Set DriverGroup001
        2.  Task Sequence Variable: DriverGroup001
-       3.  Value: Windows 10 x64\\%Manufacturer%\\%Model%
+       3.  Value: Windows 11 x64\\%Manufacturer%\\%Model%
 
    2.  Configure the **Inject Drivers** action with the following settings:
        - Choose a selection profile: Nothing
