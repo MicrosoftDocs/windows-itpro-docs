@@ -1,5 +1,5 @@
 ---
-title: Servicing stack updates (Windows 10)
+title: Servicing stack updates
 description: In this article, learn how servicing stack updates improve the code that installs the other updates.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -20,7 +20,8 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**
 
-- Windows 10, Windows 8.1, Windows 8, Windows 7
+-   Windows 10
+-   Windows 11
 
 ## What is a servicing stack update?
 Servicing stack updates provide fixes to the servicing stack, the component that installs Windows updates. Additionally, it contains the "component-based servicing stack" (CBS), which is a key underlying component for several elements of Windows deployment, such as DISM, SFC, changing Windows features or roles, and repairing components. The CBS is a small component that typically does not have updates released every month.
@@ -38,7 +39,7 @@ Servicing stack update are released depending on new issues or vulnerabilities. 
 
 ## What's the difference between a servicing stack update and a cumulative update?
 
-Both Windows 10 and Windows Server use the cumulative update mechanism, in which many fixes to improve the quality and security of Windows are packaged into a single update. Each cumulative update includes the changes and fixes from all previous updates.
+Both Windows client and Windows Server use the cumulative update mechanism, in which many fixes to improve the quality and security of Windows are packaged into a single update. Each cumulative update includes the changes and fixes from all previous updates.
 
 Servicing stack updates must ship separately from the cumulative updates because they modify the component that installs Windows updates. The servicing stack is released separately because the servicing stack itself requires an update. For example, the cumulative update [KB4284880](https://support.microsoft.com/help/4284880/windows-10-update-kb4284880) requires the [May 17, 2018 servicing stack update](https://support.microsoft.com/help/4132216), which includes updates to Windows Update.
 

@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit system events
 
-**Applies to**
--   Windows 10
 
 Determines whether to audit when a user restarts or shuts down the computer or when an event occurs that affects either the system security or the security log.
 
