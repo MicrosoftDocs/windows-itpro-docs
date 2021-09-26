@@ -456,7 +456,9 @@ items:
             - name: ADMX_DigitalLocker
               href: policy-csp-admx-digitallocker.md
             - name: ADMX_DiskNVCache
-              href: policy-csp-admx-disknvcache.md  
+              href: policy-csp-admx-disknvcache.md
+            - name: ADMX_DiskQuota
+              href: policy-csp-admx-diskquota.md    
             - name: ADMX_DistributedLinkTracking
               href: policy-csp-admx-distributedlinktracking.md
             - name: ADMX_DnsClient
@@ -508,7 +510,9 @@ items:
             - name: ADMX_ICM
               href: policy-csp-admx-icm.md
             - name: ADMX_IIS
-              href: policy-csp-admx-iis.md 
+              href: policy-csp-admx-iis.md
+            - name: ADMX_iSCSI
+              href: policy-csp-admx-iscsi.md  
             - name: ADMX_kdc
               href: policy-csp-admx-kdc.md
             - name: ADMX_Kerberos
