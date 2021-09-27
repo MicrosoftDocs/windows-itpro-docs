@@ -36,7 +36,7 @@ landingContent:
             url: use-code-signing-to-simplify-application-control-for-classic-windows-applications.md
           - text: Recommended blocks 
             url: microsoft-recommended-block-rules.md
-          - text: Recommended driver blocks 
+          - text: Microsoft's Recommended Driver Blocklist
             url: microsoft-recommended-driver-block-rules.md
           - text: Example WDAC policies
             url: example-wdac-base-policies.md
