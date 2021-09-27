@@ -39,11 +39,11 @@ highlightedContent:
 
 # productDirectory section (optional)
 productDirectory:
-  title: Windows 11 client # < 60 chars (optional)
-  summary: Discover cool stuff about Windows 11 # < 160 chars (optional)
+  title: Discover Windows 11 # < 60 chars (optional)
+  summary: Use the following information to learn, plan, and get started with Windows 11 # < 160 chars (optional)
   items:
     # Card
-    - title: Windows 11 client
+    - title: Learn about Windows 11
       # imageSrc should be square in ratio with no whitespace
       imageSrc: /windows/resources/images/winlogo.svg
       links:
@@ -52,7 +52,7 @@ productDirectory:
         - url: /windows/whats-new/windows-11-overview
           text: Windows 11 overview
     # Card
-    - title: Windows 11 client
+    - title: What else about Windows 11 
       # imageSrc should be square in ratio with no whitespace
       imageSrc: /windows/resources/images/winlogo.svg
       links:
