@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 4649(S): A replay attack was detected.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 This event generates on domain controllers when **KRB\_AP\_ERR\_REPEAT** Kerberos response was sent to the client.

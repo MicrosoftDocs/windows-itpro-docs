@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/09/2021
 ms.technology: mde
 ---
 
 # Monitor the resource attributes on files and folders
 
-**Applies to**
--   Windows 10
 
 This topic for the IT professional describes how to monitor attempts to change settings to the resource attributes on files when you are using advanced security auditing options to monitor dynamic access control objects.
 
