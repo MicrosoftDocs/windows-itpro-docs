@@ -76,6 +76,9 @@ manager: dansimp
 <!--Description-->
 Specifies the time zone to be applied to the device. This is the standard Windows name for the target time zone.
 
+> [!TIP]
+> To get the list of available time zones, run `Get-TimeZone -ListAvailable` in PowerShell.
+
 <!--/Description-->
 <!--SupportedValues-->
 
