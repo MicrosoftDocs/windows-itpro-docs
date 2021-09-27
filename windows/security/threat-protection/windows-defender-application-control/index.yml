@@ -52,7 +52,7 @@ landingContent:
             url: create-wdac-policy-for-fully-managed-devices.md
           - text: Create a WDAC policy for a fixed-workload
             url: create-initial-default-policy.md
-          - text: Using catalog files
+          - text: Deploying catalog files for WDAC management
             url: deploy-catalog-files-to-support-windows-defender-application-control.md
           - text: WDAC Wizard tool
             url: wdac-wizard.md
