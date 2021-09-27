@@ -13,8 +13,6 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_TouchInput
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
