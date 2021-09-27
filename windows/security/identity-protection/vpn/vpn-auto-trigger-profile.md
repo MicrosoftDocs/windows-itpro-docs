@@ -31,7 +31,7 @@ In Windows 10 and Windows 11, a number of features have been added to auto-trigg
 
 ## App trigger
 
-VPN profiles in Windows 10 and Windows 11 can be configured to connect automatically on the launch of a specified set of applications. You can configure desktop or Universal Windows Platform (UWP) apps to trigger a VPN connection. You can also configure per-app VPN and specify traffic rules for each app. See [Traffic filters](vpn-security-features.md#traffic-filters) for more details.
+VPN profiles in Windows 10 or Windows 11 can be configured to connect automatically on the launch of a specified set of applications. You can configure desktop or Universal Windows Platform (UWP) apps to trigger a VPN connection. You can also configure per-app VPN and specify traffic rules for each app. See [Traffic filters](vpn-security-features.md#traffic-filters) for more details.
 
 The app identifier for a desktop app is a file path. The app identifier for a UWP app is a package family name.
 
