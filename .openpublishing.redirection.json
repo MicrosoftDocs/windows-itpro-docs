@@ -18960,7 +18960,11 @@
       "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
       "redirect_document_id": false
     },
-    
+    {
+      "source_path": "windows/deploy-windows-cm/upgrade-to-windows-with-configuraton-manager.md",
+      "redirect_url": "/windows/deploy-windows-cm/upgrade-to-windows-with-configuration-manager",
+      "redirect_document_id": false
+    }    
 
-	    ]
+	]
 }
