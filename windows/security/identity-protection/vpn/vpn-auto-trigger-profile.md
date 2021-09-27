@@ -19,7 +19,7 @@ ms.author: dansimp
 -   Windows 10
 -   Windows 11
 
-In Windows 10 and Windows 11, a number of features were added to auto-trigger VPN so users won’t have to manually connect when VPN is needed to access necessary resources. There are three different types of auto-trigger rules: 
+In Windows 10 and Windows 11, a number of features have been added to auto-trigger VPN so users won’t have to manually connect when VPN is needed to access necessary resources. There are three different types of auto-trigger rules: 
 
 - App trigger
 - Name-based trigger
