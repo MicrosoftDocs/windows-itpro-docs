@@ -605,10 +605,14 @@ items:
               href: policy-csp-admx-startmenu.md
             - name: ADMX_SystemRestore
               href: policy-csp-admx-systemrestore.md
+            - name: ADMX_TabletShell
+              href: policy-csp-admx-tabletshell.md
             - name: ADMX_Taskbar
               href: policy-csp-admx-taskbar.md
             - name: ADMX_tcpip
               href: policy-csp-admx-tcpip.md
+            - name: ADMX_TerminalServer
+              href: policy-csp-admx-terminalserver.md 
             - name: ADMX_Thumbnails
               href: policy-csp-admx-thumbnails.md
             - name: ADMX_TPM
