@@ -113,5 +113,5 @@ landingContent:
             url: event-tag-explanations.md
       - linkListType: how-to-guide
         links:
-          - text: Querying using advanced hunting
+          - text: Querying events using advanced hunting
             url: querying-application-control-events-centrally-using-advanced-hunting.md
