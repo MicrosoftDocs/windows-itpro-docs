@@ -48,27 +48,33 @@ manager: dansimp
 </tr>
 <tr>
     <td>Home</td>
-    <td>No</td><td>No</td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Mobile</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Mobile Enterprise</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -121,27 +127,33 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Mobile</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Mobile Enterprise</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -191,27 +203,33 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Pro</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Mobile</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Mobile Enterprise</td>
-    <td>Yes, starting in Windows 10, version 1607</td><td>Yes</td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
