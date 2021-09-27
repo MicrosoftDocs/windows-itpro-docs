@@ -38,7 +38,7 @@ landingContent:
       - linkListType: concept
         links:
         - text: Trusted Platform Module
-          url: /windows/security/information-protection/tpm/trusted-platform-module-top-node.md
+          url: information-protection/tpm/trusted-platform-module-top-node.md
         - text: Hardware-based root of trust
           url: threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md
         - text: System Guard Secure Launch and SMM protection
@@ -46,7 +46,7 @@ landingContent:
         - text: Virtualization-based protection of code integrity
           url: threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md
         - text: Kernel DMA Protection
-          url: /windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md
+          url: information-protection/kernel-dma-protection-for-thunderbolt.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
@@ -109,7 +109,7 @@ landingContent:
         - text: Windows Credential Theft Mitigation
           url: identity-protection/windows-credential-theft-mitigation-guide-abstract.md
         - text: Protect domain credentials
-          url: /windows/security/identity-protection/credential-guard/credential-guard.md
+          url: identity-protection/credential-guard/credential-guard.md
         - text: Windows Defender Credential Guard
           url: identity-protection/credential-guard/credential-guard.md
         - text: Lost or forgotten passwords
@@ -151,13 +151,13 @@ landingContent:
       - linkListType: reference
         links:
           - text: Microsoft Security Development Lifecycle
-            url: /windows/security/threat-protection/msft-security-dev-lifecycle.md
+            url: threat-protection/msft-security-dev-lifecycle.md
           - text: Microsoft Bug Bounty
-            url: /windows/security/threat-protection/microsoft-bug-bounty-program.md
+            url: threat-protection/microsoft-bug-bounty-program.md
           - text: Common Criteria Certifications
-            url: /windows/security/threat-protection/windows-platform-common-criteria.md
+            url: threat-protection/windows-platform-common-criteria.md
           - text: Federal Information Processing Standard (FIPS) 140 Validation
-            url: /windows/security/threat-protection/fips-140-validation.md
+            url: threat-protection/fips-140-validation.md
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
@@ -166,5 +166,5 @@ landingContent:
       - linkListType: reference
         links:
         - text: Windows and Privacy Compliance
-          url: /windows/privacy/windows-10-and-privacy-compliance.md
+          url: /windows/privacy/windows-10-and-privacy-compliance
 
