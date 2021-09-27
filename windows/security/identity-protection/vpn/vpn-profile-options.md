@@ -56,7 +56,7 @@ The ProfileXML node was added to the VPNv2 CSP to allow users to deploy VPN prof
 
 The following is a sample Native VPN profile. This blob would fall under the ProfileXML node. 
 
-```
+```xml
 <VPNProfile>  
   <ProfileName>TestVpnProfile</ProfileName>  
   <NativeProfile>  
@@ -222,7 +222,7 @@ The following is a sample Native VPN profile. This blob would fall under the Pro
 
 The following is a sample plug-in VPN profile. This blob would fall under the ProfileXML node. 
 
-```
+```xml
 <VPNProfile>
 	<ProfileName>TestVpnProfile</ProfileName>
 	<PluginProfile>
@@ -294,7 +294,6 @@ The following is a sample plug-in VPN profile. This blob would fall under the Pr
 		<AutoConfigUrl>Helloworld.Com</AutoConfigUrl>
 	</Proxy>
 </VPNProfile>  
-
 ```
 
 ## Apply ProfileXML using Intune
@@ -302,18 +301,31 @@ The following is a sample plug-in VPN profile. This blob would fall under the Pr
 After you configure the settings that you want using ProfileXML, you can apply it using Intune and a **Custom Configuration (Windows 10 or Windows 11 Desktop and Mobile and later)** policy.
 
 1. Sign into the [Azure portal](https://portal.azure.com).
+
 2. Go to **Intune** > **Device Configuration** > **Profiles**.
+
 3. Click **Create Profile**.
+
 4. Enter a name and (optionally) a description.
+
 5. Choose **Windows 10 and later** as the platform.
+
 6. Choose **Custom** as the profile type and click **Add**.
+
 8. Enter a name and (optionally) a description.
+
 9. Enter the OMA-URI **./user/vendor/MSFT/VPNv2/_VPN profile name_/ProfileXML**.
+
 10. Set Data type to **String (XML file)**.
+
 11. Upload the profile XML file.
+
 12. Click **OK**.
+
     ![Custom VPN profile.](images/custom-vpn-profile.png)
+
 13. Click **OK**, then **Create**.
+
 14. Assign the profile.
 
 
