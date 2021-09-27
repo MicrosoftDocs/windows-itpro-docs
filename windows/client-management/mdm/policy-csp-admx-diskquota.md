@@ -174,7 +174,7 @@ This policy setting turns on and turns off disk quota management on all NTFS vol
 
 If you enable this policy setting, disk quota management is turned on, and users cannot turn it off.  
 
-If you disable the policy setting, disk quota management is turned off, and users cannot turn it on. If this policy setting is not configured, disk quota management is turned off by default, but administrators can turn it on. 
+If you disable the policy setting, disk quota management is turned off, and users cannot turn it on. This policy setting is not configured, disk quota management is turned off by default, but administrators can turn it on. 
 
 To prevent users from changing the setting while a setting is in effect, the system disables the "Enable quota management" option on the Quota tab of NTFS volumes.
 
@@ -252,7 +252,7 @@ This policy setting determines whether disk quota limits are enforced and preven
 
 If you enable this policy setting, disk quota limits are enforced. 
 
-If you disable this policy setting, disk quota limits are not enforced. When you enable or disable this policy setting, the system disables the "Deny disk space to users exceeding quota limit" option on the Quota tab. Therefore, the administrators cannot make changes while the setting is in effect. 
+If you disable this policy setting, disk quota limits are not enforced. When you enable or disable this policy setting, the system disables the "Deny disk space to users exceed quota limit" option on the Quota tab. Therefore, the administrators cannot make changes while the setting is in effect. 
 
 If you do not configure this policy setting, the disk quota limit is not enforced by default, but administrators can change the setting. Enforcement is optional. When users reach an enforced disk quota limit, the system responds as though the physical space on the volume were exhausted. When users reach an unenforced limit, their status in the Quota Entries window changes, but they can continue to write to the volume as long as physical space is available. 
 
