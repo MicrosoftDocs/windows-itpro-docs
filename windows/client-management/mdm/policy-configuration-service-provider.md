@@ -3582,6 +3582,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_srmfci policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-srmfci.md#admx-srmfci-enableshellaccesscheck" id="admx-srmfci-enableshellaccesscheck">ADMX_srmfci/EnableShellAccessCheck</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-srmfci.md#admx-srmfci-accessdeniedconfiguration" id="admx-srmfci-accessdeniedconfiguration">ADMX_srmfci/AccessDeniedConfiguration</a>
+  </dd>
+<dl>
+
 ### ADMX_StartMenu policies  
 
 <dl>

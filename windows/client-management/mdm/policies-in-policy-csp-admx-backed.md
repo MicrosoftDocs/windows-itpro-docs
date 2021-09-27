@@ -997,6 +997,8 @@ ms.date: 10/08/2020
 - [ADMX_Snmp/SNMP_Communities](./policy-csp-admx-snmp.md#admx-snmp-snmp-communities)
 - [ADMX_Snmp/SNMP_PermittedManagers](./policy-csp-admx-snmp.md#admx-snmp-snmp-permittedmanagers)
 - [ADMX_Snmp/SNMP_Traps_Public](./policy-csp-admx-snmp.md#admx-snmp-snmp-traps-public)
+- [ADMX_srmfci/EnableShellAccessCheck](./policy-csp-admx-srmfci.md#admx-srmfci-enableshellaccesscheck)
+- [ADMX_srmfci/AccessDeniedConfiguration](./policy-csp-admx-srmfci.md#admx-srmfci-accessdeniedconfiguration)
 - [ADMX_StartMenu/AddSearchInternetLinkInStartMenu](./policy-csp-admx-startmenu.md#admx-startmenu-addsearchinternetlinkinstartmenu)
 - [ADMX_StartMenu/ClearRecentDocsOnExit](./policy-csp-admx-startmenu.md#admx-startmenu-clearrecentdocsonexit)
 - [ADMX_StartMenu/ClearRecentProgForNewUserInStartMenu](./policy-csp-admx-startmenu.md#admx-startmenu-clearrecentprogfornewuserinstartmenu)

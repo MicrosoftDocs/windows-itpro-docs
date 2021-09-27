@@ -599,6 +599,8 @@ items:
               href: policy-csp-admx-smartcard.md
             - name: ADMX_Snmp
               href: policy-csp-admx-snmp.md
+            - name: ADMX_srmfci
+              href: policy-csp-admx-srmfci.md  
             - name: ADMX_StartMenu
               href: policy-csp-admx-startmenu.md
             - name: ADMX_SystemRestore
