@@ -119,7 +119,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-disknvcache-featureoffpolicy"></a>**ADMX_DiskNVCache/FeatureOffPolicy**  
+<a href="" id="admx-admx-disknvcache-cachepowermodepolicy"></a>**ADMX_DiskNVCache/CachePowerModePolicy**  
 <!--SupportedSKUs-->
 <table>
 <tr>
@@ -175,6 +175,78 @@ To check if you have hybrid hard disks in the system, from Device Manager, right
 If you disable this policy setting, the system will manage the NV cache on the disks if the other policy settings for the NV cache are appropriately configured. 
 
 This policy setting will take effect on next boot.  If you do not configure this policy setting, the default behavior is to turn on support for the NV cache.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Turn off non-volatile cache feature*
+-   GP name: *FeatureOffPolicy*
+-   GP path: *System\Disk NV Cache*
+-   GP ADMX file name: *DiskNVCache.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+<a href="" id="admx-disknvcache-featureoffpolicy"></a>**ADMX_DiskNVCache/FeatureOffPolicy**  
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting turns off all support for the non-volatile (NV) cache on all hybrid hard disks in the system. 
+
+To check if you have hybrid hard disks in the system, from Device Manager, right-click the disk drive and select Properties. The NV cache can be used to optimize boot and resume by reading data from the cache while the disks are spinning up. The NV cache can also be used to reduce the power consumption of the system by keeping the disks spun down while satisfying reads and writes from the cache.  
+
+If you enable this policy setting, the system will not manage the NV cache and will not enable NV cache power saving mode.  
+
+If you disable this policy setting, the system will manage the NV cache on the disks if the other policy settings for the NV cache are appropriately configured. 
+
+This policy setting will take effect on next boot.  If you do not configure this policy setting, the default behavior is to turn on support for the NV cache.
+
+
 
 <!--/Description-->
 
@@ -259,6 +331,8 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
+<hr/>
 
 
 <!--/Policies-->

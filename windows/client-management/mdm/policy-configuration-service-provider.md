@@ -759,7 +759,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
     <a href="./policy-csp-admx-disknvcache.md#admx-disknvcache-featureoffpolicy" id="admx-disknvcache-featureoffpolicy">ADMX_DiskNVCache/FeatureOffPolicy</a>
   </dd>
-  <dd>
+  <dd>1
     <a href="./policy-csp-admx-disknvcache.md#admx-disknvcache-solidstatepolicy" id="admx-disknvcache-solidstatepolicy">ADMX_DiskNVCache/SolidStatePolicy</a>
   </dd>
 <dl>
