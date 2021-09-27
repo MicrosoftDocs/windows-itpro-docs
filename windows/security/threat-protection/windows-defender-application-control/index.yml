@@ -54,7 +54,7 @@ landingContent:
             url: create-initial-default-policy.md
           - text: Deploying catalog files for WDAC management
             url: deploy-catalog-files-to-support-windows-defender-application-control.md
-          - text: WDAC Wizard tool
+          - text: Using the WDAC Wizard
             url: wdac-wizard.md
       #- linkListType: Tutorial (videos)
       #  links:
