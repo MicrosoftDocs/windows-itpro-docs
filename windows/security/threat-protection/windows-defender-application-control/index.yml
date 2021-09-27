@@ -21,7 +21,7 @@ landingContent:
     linkLists:
       - linkListType: overview
         links:
-          - text: What is WDAC (WDAC Overview)?
+          - text: What is Windows Defender Application Control (WDAC)?
             url: wdac-and-applocker-overview.md
           - text: What is AppLocker?
             url: applocker\applocker-overview.md
