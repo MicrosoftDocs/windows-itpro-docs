@@ -186,3 +186,38 @@ conceptualContent:
         - url: /windows/privacy/changes-to-windows-diagnostic-data-collection
           itemType: overview
           text: Changes to Windows diagnostic data collection
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 4 subsections
+  sections:
+    - title: Additional Windows resources # < 60 chars (optional)
+      items:
+        # Card
+        - title: Something here
+          summary: cardsummary1
+          url: /windows/deployment/deploy-whats-new.md
+        # Card
+        - title: Something else here
+          summary: cardsummary2
+          url: /windows/deployment/deploy-whats-new.md
+        # Card
+        - title: How about here?
+          summary: cardsummary3
+          url: /windows/deployment/deploy-whats-new.md
+
+    - title: Additional resources (option 2)
+      items:
+        - title: Something here like blogs? Other?
+          links:
+            - text: First link here
+              url: /windows/deployment/deploy-whats-new.md
+            - text: second link here
+              url: /windows/deployment/deploy-whats-new.md
+        - title: Something else here
+          links:
+            - text: First link here
+              url: /windows/deployment/deploy-whats-new.md
+            - text: second link here
+              url: /windows/deployment/deploy-whats-new.md
