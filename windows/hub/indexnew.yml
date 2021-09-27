@@ -45,20 +45,20 @@ productDirectory:
     # Card
     - title: Windows 11 client
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./images/winlogo.svg
+      imageSrc: /images/winlogo.svg
       links:
-        - url: ../whats-new/whats-new-in-windows-11
+        - url: /windows/whats-new/whats-new-in-windows-11
           text: What's new in Windows 11
-        - url: ../whats-new/windows-11-overview
+        - url: /windows/whats-new/windows-11-overview
           text: Windows 11 overview
     # Card
     - title: Windows 11 client
       # imageSrc should be square in ratio with no whitespace
-      imageSrc: ./images/winlogo.svg
+      imageSrc: /images/winlogo.svg
       links:
-        - url: ../whats-new/whats-new-in-windows-11
+        - url: /windows/whats-new/whats-new-in-windows-11
           text: What's new in Windows 11
-        - url: ../whats-new/windows-11-overview
+        - url: /windows/whats-new/windows-11-overview
           text: Windows 11 overview
 
 # conceptualContent section (optional)
