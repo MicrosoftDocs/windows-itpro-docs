@@ -24,15 +24,15 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: Highlighted 1
+    - title: What's new in Windows 11 (or something else if next section stays)
       itemType: overview
       url: /windows/deployment/deploy-whats-new.md
     # Card
-    - title: Highlighted 2
+    - title: What's new in Windows 10, version X
       itemType: overview
       url: /windows/deployment/deploy-whats-new.md
     # Card
-    - title: Highlighted 3
+    - title: Learn more about Hybrid Work
       itemType: overview
       url: /windows/deployment/deploy-whats-new.md
 
@@ -56,10 +56,12 @@ productDirectory:
       # imageSrc should be square in ratio with no whitespace
       imageSrc: /windows/resources/images/winlogo.svg
       links:
-        - url: /windows/whats-new/whats-new-in-windows-11
-          text: What's new in Windows 11
-        - url: /windows/whats-new/windows-11-overview
-          text: Windows 11 overview
+        - url: /windows/whats-new/windows-11-requirements
+          text: Windows 11 requirements
+        - url: /windows/whats-new/windows-11-plan
+          text: Plan for Windows 11
+        - url: /windows/whats-new/windows-11-prepare
+          text: Prepare for Windows 11          
 
 # conceptualContent section (optional)
 conceptualContent:
