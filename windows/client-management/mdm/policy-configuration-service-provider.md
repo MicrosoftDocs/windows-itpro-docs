@@ -754,9 +754,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-disknvcache.md#admx-disknvcache-bootresumepolicy" id="admx-disknvcache-bootresumepolicy">ADMX_DiskNVCache/BootResumePolicy</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-disknvcache.md#admx-disknvcache-cachepowermodepolicy" id="admx-disknvcache-cachepowermodepolicy">ADMX_DiskNVCache/CachePowerModePolicy</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-disknvcache.md#admx-disknvcache-featureoffpolicy" id="admx-disknvcache-featureoffpolicy">ADMX_DiskNVCache/FeatureOffPolicy</a>
   </dd>
   <dd>1

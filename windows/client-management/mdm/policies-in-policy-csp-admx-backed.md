@@ -168,7 +168,6 @@ ms.date: 10/08/2020
 - [ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_1](./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-1)
 - [ADMX_DigitalLocker/Digitalx_DiableApplication_TitleText_2](./policy-csp-admx-digitallocker.md#admx-digitallocker-digitalx-diableapplication-titletext-2)
 - [ADMX_DiskNVCache/BootResumePolicy](./policy-csp-admx-disknvcache.md#admx-disknvcache-bootresumepolicy)
-- [ADMX_DiskNVCache/CachePowerModePolicy](./policy-csp-admx-disknvcache.md#admx-disknvcache-cachepowermodepolicy)
 - [ADMX_DiskNVCache/FeatureOffPolicy](./policy-csp-admx-disknvcache.md#admx-disknvcache-featureoffpolicy)
 - [ADMX_DiskNVCache/SolidStatePolicy](./policy-csp-admx-disknvcache.md#admx-disknvcache-solidstatepolicy)
 - [ADMX_DiskQuota/DQ_RemovableMedia](./policy-csp-admx-diskquota.md#admx-diskquota-dq_removablemedia)
