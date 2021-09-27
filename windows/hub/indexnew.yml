@@ -24,17 +24,17 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: cardtitle1
-      itemType: itemType
-      url: file1.md
+    - title: Highlighted 1
+      itemType: overview
+      url: /windows/deployment/deploy-whats-new.md
     # Card
-    - title: cardtitle2
-      itemType: itemType
-      url: file2.md
+    - title: Highlighted 2
+      itemType: overview
+      url: /windows/deployment/deploy-whats-new.md
     # Card
-    - title: cardtitle3
-      itemType: itemType
-      url: file3.md
+    - title: Highlighted 3
+      itemType: overview
+      url: /windows/deployment/deploy-whats-new.md
 
 
 # productDirectory section (optional)
