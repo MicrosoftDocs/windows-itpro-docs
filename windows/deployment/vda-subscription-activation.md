@@ -20,7 +20,7 @@ ms.collection: M365-modern-desktop
 
 # Configure VDA for Windows 10 Subscription Activation
 
-This document describes how to configure virtual machines (VMs) to enable [Windows 10 Subscription Activation](windows-10-subscription-activation.md) in a Windows Virtual Desktop Access (VDA) scenario. Windows VDA is a device or user-based licensing mechanism for managing access to virtual desktops.
+This document describes how to configure virtual machines (VMs) to enable [Windows 10/11 Subscription Activation](windows-10-subscription-activation.md) in a Windows Virtual Desktop Access (VDA) scenario. Windows VDA is a device or user-based licensing mechanism for managing access to virtual desktops.
 
 Deployment instructions are provided for the following scenarios:
 1. [Active Directory-joined VMs](#active-directory-joined-vms)
@@ -29,7 +29,7 @@ Deployment instructions are provided for the following scenarios:
 
 ## Requirements
 
-- VMs must be running Windows 10 Pro, version 1703 (also known as the Creator's Update) or later.
+- VMs must be running Windows 10 Pro, version 1703 (also known as the Creator's Update) or later. 
 - VMs must be Active Directory-joined or Azure Active Directory (AAD)-joined.
 - VMs must be generation 1.
 - VMs must be hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
