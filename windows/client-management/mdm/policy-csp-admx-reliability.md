@@ -256,8 +256,6 @@ If you disable this policy setting, the System State Data feature is never activ
 
 If you do not configure this policy setting, the default behavior for the System State Data feature occurs.
 
-> [!NOTE]
-> By default, the System State Data feature is always enabled on Windows Server 2003.
 
 <!--/Description-->
 

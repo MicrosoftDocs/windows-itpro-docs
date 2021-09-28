@@ -792,14 +792,13 @@ This policy setting determines whether settings that existed in Windows 2000 Ser
 
 The set of Network Connections group settings that existed in Windows 2000 Professional also exists in Windows XP Professional. In Windows 2000 Professional, all of these settings had the ability to prohibit the use of certain features from Administrators.
 
-By default, Network Connections group settings in Windows XP Professional do not have the ability to prohibit the use of features from Administrators.
+By default, Network Connections group settings in Windows do not have the ability to prohibit the use of features from Administrators.
 
-If you enable this setting, the Windows XP settings that existed in Windows 2000 Professional will have the ability to prohibit Administrators from using certain features. These settings are "Ability to rename LAN connections or remote access connections available to all users", "Prohibit access to properties of components of a LAN connection", "Prohibit access to properties of components of a remote access connection", "Ability to access TCP/IP advanced configuration", "Prohibit access to the Advanced Settings Item on the Advanced Menu", "Prohibit adding and removing components for a LAN or remote access connection", "Prohibit access to properties of a LAN connection", "Prohibit Enabling/Disabling components of a LAN connection", "Ability to change properties of an all user remote access connection", "Prohibit changing properties of a private remote access connection", "Prohibit deletion of remote access connections", "Ability to delete all user remote access connections", "Prohibit connecting and disconnecting a remote access connection", "Ability to Enable/Disable a LAN connection", "Prohibit access to the New Connection Wizard", "Prohibit renaming private remote access connections", "Prohibit access to the Remote Access Preferences item on the Advanced menu", "Prohibit viewing of status for an active connection". When this setting is enabled, settings that exist in both Windows 2000 Professional and Windows XP Professional behave the same for administrators.
+If you enable this setting, the Windows XP settings that existed in Windows 2000 Professional will have the ability to prohibit Administrators from using certain features. These settings are "Ability to rename LAN connections or remote access connections available to all users", "Prohibit access to properties of components of a LAN connection", "Prohibit access to properties of components of a remote access connection", "Ability to access TCP/IP advanced configuration", "Prohibit access to the Advanced Settings Item on the Advanced Menu", "Prohibit adding and removing components for a LAN or remote access connection", "Prohibit access to properties of a LAN connection", "Prohibit Enabling/Disabling components of a LAN connection", "Ability to change properties of an all user remote access connection", "Prohibit changing properties of a private remote access connection", "Prohibit deletion of remote access connections", "Ability to delete all user remote access connections", "Prohibit connecting and disconnecting a remote access connection", "Ability to Enable/Disable a LAN connection", "Prohibit access to the New Connection Wizard", "Prohibit renaming private remote access connections", "Prohibit access to the Remote Access Preferences item on the Advanced menu", "Prohibit viewing of status for an active connection". When this setting is enabled, settings that exist in both Windows 2000 Professional and Windows behave the same for administrators.
 
-If you disable this setting or do not configure it, Windows XP settings that existed in Windows 2000 will not apply to administrators.
+If you disable this setting or do not configure it, Windows settings that existed in Windows 2000 will not apply to administrators.
 
-> [!NOTE]
-> This setting is intended to be used in a situation in which the Group Policy object that these settings are being applied to contains both Windows 2000 Professional and Windows XP Professional computers, and identical Network Connections policy behavior is required between all Windows 2000 Professional and Windows XP Professional computers.
+
 
 <!--/Description-->
 
@@ -1501,7 +1500,7 @@ If you disable this setting or do not configure it, the Properties button is ena
 
 The Networking tab of the Remote Access Connection Properties dialog box includes a list of the network components that the connection uses. To view or change the properties of a component, click the name of the component, and then click the Properties button beneath the component list.
 
-> [NOTE]
+> [!NOTE]
 > Not all network components have configurable properties. For components that are not configurable, the Properties button is always disabled.
 >
 > When the "Ability to change properties of an all user remote access connection" or "Prohibit changing properties of a private remote access connection" settings are set to deny access to the Remote Access Connection Properties dialog box, the Properties button for remote access connection components is blocked.
@@ -2045,7 +2044,7 @@ ICS lets administrators configure their system as an Internet gateway for a smal
 
 If you enable this setting, ICS cannot be enabled or configured by administrators, and the ICS service cannot run on the computer. The Advanced tab in the Properties dialog box for a LAN or remote access connection is removed. The Internet Connection Sharing page is removed from the New Connection Wizard. The Network Setup Wizard is disabled.
 
-If you disable this setting or do not configure it and have two or more connections, administrators can enable ICS. The Advanced tab in the properties dialog box for a LAN or remote access connection is available. In addition, the user is presented with the option to enable Internet Connection Sharing in the Network Setup Wizard and Make New Connection Wizard. (The Network Setup Wizard is available only in Windows XP Professional.)
+If you disable this setting or do not configure it and have two or more connections, administrators can enable ICS. The Advanced tab in the properties dialog box for a LAN or remote access connection is available. In addition, the user is presented with the option to enable Internet Connection Sharing in the Network Setup Wizard and Make New Connection Wizard. 
 
 By default, ICS is disabled when you create a remote access connection, but administrators can use the Advanced tab to enable it. When running the New Connection Wizard or Network Setup Wizard, administrators can choose to enable ICS.
 
