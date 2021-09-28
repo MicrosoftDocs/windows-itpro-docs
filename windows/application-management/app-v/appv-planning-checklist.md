@@ -5,7 +5,7 @@ author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
 ms.sitesec: library
-ms.prod: w10/11
+ms.prod: w10
 ms.date: 04/18/2018
 ms.reviewer: 
 manager: dansimp
