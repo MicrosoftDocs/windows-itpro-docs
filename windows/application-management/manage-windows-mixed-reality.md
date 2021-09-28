@@ -15,7 +15,7 @@ ms.topic: article
 
 # Enable or block Windows Mixed Reality apps in enterprises
 
-[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
+[!INCLUDE [Applies to Windows client versions](./includes/applies-to-windows-client-versions.md)]
 
 
 [Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/) was introduced in Windows 10, version 1709 (also known as the Fall Creators Update), as a [Windows Feature on Demand (FOD)](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). Features on Demand are Windows feature packages that can be added at any time. When a Windows client needs a new feature, it can request the feature package from Windows Update.
