@@ -23,7 +23,204 @@ The following is a list of functions performed by the Device HealthAttestation C
 -   Receives an encrypted blob (DHA-EncBlob) from DHA-Service, and stores it in a local cache on the device
 -   Receives attestation requests (DHA-Requests) from a DHA-Enabled MDM, and replies with Device Health Attestation data (DHA-Data
 
-## Terms
+## Windhows 11 Device HealthAttestation
+
+>Windows 11 introduces an update to the device health attestation feature bringing in support for deeper insights into windows boot security, enhancing zero trust solutions. Device health attestation on windows can be accessed via the HealthAttestation CSP which enables enterprise device managers to assess if a device is booted to a trusted and compliant state and take enterprise policy actions. Windows 11 introduces additional child nodes to the HealthAttestation node for the MDM providers to connect to the Microsoft Azure Attestation service which provides a simplified approach to attestation.
+The attested report provides a health assessment of the boot time properties of the device to ensure that the devices are automatically secure from the first power on. The health attestation result can then be used to allow or deny access to networks, apps, or services, based on whether devices prove to be healthy.
+
+### Terms
+**TPM (Trusted Platform Module)**
+<p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption and signing.</p>
+
+**DHA (Device HealthAttestation) feature**
+<p>The Device HealthAttestation (DHA) feature enables enterprise IT administrators to monitor the security posture of managed devices remotely by using hardware (TPM) protected and attested data via a tamper-resistant and tamper-evident communication channel.</p>
+
+**MAA-Session (Microsoft Azure Attestaiton service based device HealthAttestation session)**
+<p>The Microsoft Azure Attestaiton service based device HealthAttestation session (MAA-Session) describes the end-to-end communication flow that is performed in one device health attestation session.</p>
+
+**MAA-CSP (Microsoft Azure Attestaiton based Configuration Service Provider)**
+<p>The Configuration Service Provider nodes added to Windhows 11 to integrate with Microsoft Azure Attestation Service.</p>
+<p>The following list of operations is performed by MAA-CSP:</p>
+<ul>
+<li>Receives attestation trigger requests from a HealthAttestation enabled MDM provider.</li>
+<li>The device collects Attestation Evidence (device boot logs, TPM audit trails and the TPM certificate) from a managed device.</li>
+<li>Forwards the Attestation Evidence to the Azure Attestation Service instance as configured by the MDM provider.</li>
+<li>Receives a signed report from the Azure Attestation Service instance and stores it in a local cache on the device.</li>
+</ul>
+
+### Attestation Flow with Microsoft Azure Attestation Service
+
+
+### Configuration Service Provider Nodes
+Windows 11 introduces additions to the HealthAttestation CSP node to integrate with Microsoft Azure Attestaiton service.
+```
+./Vendor/MSFT
+HealthAttestation
+----...
+----TriggerAttestation
+----CurrentProtocolVersion
+----PreferredMaxProtocolVersion
+----MaxSupportedProtocolVersion
+```
+
+<a href="" id="healthattestation"></a>**./Vendor/MSFT/HealthAttestation**  
+<p>The root node for the device HealthAttestation configuration service provider.</p>
+
+<a href="" id="triggerAttestation"></a>**TriggerAttestation** (Required)  
+<p>Node type: EXECUTE
+This node will trigger attestation flow by launching an attestation process. If a process is already running, this node will return code 202 indicating the request is received and being processed. Otherwise, an error will be returned.
+</p>
+
+<p>Templated SyncML Call:</p>
+
+    <SyncML xmlns="SYNCML:SYNCML1.2">
+        <SyncBody>
+            <Exec>
+                <CmdID>VERIFYHEALTHV2</CmdID>
+                <Item>
+                    <Target>
+                        <LocURI>
+                            ./Vendor/MSFT/HealthAttestation/TriggerAttestation
+                        </LocURI>
+                    </Target>
+                    <Data>
+                        {
+                        rpID : "rpID", serviceEndpoint : “MAA endpoint”,
+                        nonce : “nonce”, aadToken : “aadToken”, "cv" : "CorrelationVector"
+                        }                    
+                    </Data>
+                </Item>
+            </Exec>
+            <Final/>
+        </SyncBody>
+    </SyncML>
+
+<p>Data fields:</p>
+<ul>
+<li>rpID (Relying Party Identifier): This field contains an identifier that can be used to help determine the caller.</li>
+<li>serviceEndpoint : This field contains the complete URL of the Microsoft Azure Attestation provider instance to be used for evaluation.</li>
+<li>nonce : This field contains an arbitrary number that can be used just once in a cryptographic communication. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in replay attacks.</li>
+<li>aadToken : The AAD token to used for authentication against the Microsoft Azure Attestation service.</li>
+<li>cv : This field contains an identifier(Correlation Vector) that will passed in to the service call, that can be used for diagnostics purposes.</li>
+</ul>
+
+<p>Sample Data:</p>
+
+     <Data>
+     { 
+     "rpid" : "https://www.contoso.com/attestation",
+      "endpoint" : "https://contoso.eus.attest.azure.net/attest/tpm?api-version=2020-10-01",
+      "nonce" : "5468697320697320612054657374204e6f6e6365",
+      "aadToken" : "dummytokenstring",
+      "cv" : "testonboarded" 
+     }
+     </Data>
+
+<a href="" id="AttestStatus"></a>**AttestStatus**
+<p>Node type: GET
+This node will retrieve the status(HRESULT value) stored in registry updated by the attestation process triggered in the previous step.
+The status is always cleared prior to making the attest service call.
+</p>
+
+<p>Templated SyncML Call:</p>
+
+    <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+        <Get>
+          <Item>
+            <Target>
+              <LocURI>
+                ./Device/Vendor/MSFT/HealthAttestation/AttestStatus
+              </LocURI>
+            </Target>
+          </Item>
+        </Get>
+        <Final/> 
+      </SyncBody>
+    </SyncML>
+
+<p>Sample Data:</p>
+
+     If Successful: 0
+     If Failed: A corresponding HRESULT error code
+     Example: 0x80072efd,  WININET_E_CANNOT_CONNECT
+
+<a href="" id="getAttestReport"></a>**GetAttestReport**
+<p>Node type: GET
+This node will retrieve the attestation report per the call made by the TriggerAttestation, if there is any, for the given MDM provider. The report is stored in a registry key in the respective MDM enrollment store.
+</p>
+
+<p>Templated SyncML Call:</p>
+
+     <SyncML xmlns="SYNCML:SYNCML1.2">
+       <SyncBody>
+         <Get>
+           <Item>
+             <Target>
+               <LocURI>
+                 ./Device/Vendor/MSFT/HealthAttestation/GetAttestReport
+               </LocURI>
+             </Target>
+           </Item>
+         </Get>
+         <Final/> 
+       </SyncBody>
+     </SyncML>
+
+<p>Sample data:</p>
+
+     If Success:
+     JWT token: aaaaaaaaaaaaa.bbbbbbbbbbbbb.cccccccccc
+     If failed:
+     Previously cached report if available (the token may have already expired per the attestation policy).
+     OR Sync ML 404 error if not cached report available.
+
+<a href="" id="getServiceCorrelationIDs"></a>**GetServiceCorrelationIDs**
+<p>Node type: GET
+This node will retrieve the service generated correlation IDs for the given MDM provider. If there are more than one correlation id, they are separated by “;” in the string.
+</p>
+<p>Templated SyncML Call:</p>
+
+     <SyncML xmlns="SYNCML:SYNCML1.2">
+       <SyncBody>
+         <Get>
+           <Item>
+             <Target>
+               <LocURI>
+                 ./Device/Vendor/MSFT/HealthAttestation/GetServiceCorrelationIDs
+               </LocURI>
+             </Target>
+           </Item>
+         </Get>
+         <Final/> 
+       </SyncBody>
+     </SyncML>
+
+<p>Sample data:</p>
+
+    If success:
+    GUID returned by the attestation service: 1k9+vQOn00S8ZK33;CMc969r1JEuHwDpM
+    If Trigger Attestation call failed and no previous data is present. The field remains empty.
+    Otherwise, the last service correlation id will be returned.
+
+### MAA CSP Intergation Steps
+<ol>
+<li>Setup a MAA provider instance:
+MAA instance can be created following the steps here Quickstart: Set up Azure Attestation by using the Azure portal | Microsoft Docs.</li>
+<li>Update the provider with an appropriate policy:
+The MAA instance should be updated with an appropriate policy. How to author an Azure Attestation policy | Microsoft Docs
+A Sample attestation policy that only checks for secureboot is here:
+TODO</li>
+<li>Call TriggerAttestation with your rpid, AAD token and the attestURI:
+Use the Attestation URL generated in step 1, and append the appropriate api version you want to hit. More information about the api version can be found here Attestation - Attest Tpm - REST API (Azure Azure Attestation) | Microsoft Docs</li>
+<li>Call GetAttestReport and decode and parse the report to ensure the attested report contains the required properties:
+The decoded JWT token contains information per the attestation policy.
+{ "typ": "JWT", "alg": "RS256", "x5c": [ "MIIDcDCCAligAwIBAgIQOLMUhXOEQ2axV6zXp/KvnzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDEypBdHRlc3RhdGlvblNlcnZpY2UtTG9jYWxUZXN0LVJlcG9ydFNpZ25pbmcwHhcNMjAxMTI5MTExMjUyWhcNMjIxMTI5MTEyMjUyWjA1MTMwMQYDVQQDEypBdHRlc3RhdGlvblNlcnZpY2UtTG9jYWxUZXN0LVJlcG9ydFNpZ25pbmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCsuOlDyU1sYAuAV53n7TrmTU180bOREgfZoTsdOyllMcsKciTUWkTO0vKDa8CFwGEHmSVTAEngDIHw1putio84HKZdcI6nPt2B74kJ/+5ut8KGMWtBm6GFWwS0TXti1rE4Os1mPpCYAsUyKxaEw4lBbEzGa5mGx0SGLdseuUIiw23S695RLVCciDaAvf+q/gBScFgZJm2ZxgkyNF7+MSvnDMU1xv5YLDQeh3j5vZlstSq+rrRbB5SVnuD4cFBjvGW5lXBLxMEjpBXI6yzFmFuw/OjZ7VClk6HSNjvvhSwJu4F1oHuJ0oAuABOtPpRK/898Ru+9qS5ZMm79775nZK75AgMBAAGjfDB6MA4GA1UdDwEB/wQEAwIFoDAJBgNVHRMEAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAfBgNVHSMEGDAWgBR/8W25+uWj5sg8lEKKYy1gdCqWUTAdBgNVHQ4EFgQUf/Ftufrlo+bIPJRCimMtYHQqllEwDQYJKoZIhvcNAQELBQADggEBAJGfbRRvF3EpG6ZsOcSmWtu/1LDVZq+fGspjK/7+ImybEY/zC2CsWWpz7pT54KEGYe91q67nV5GZoSz7+O4A4A5QtMDFzOnrFVicDo5Cg2EDU4YQDN4j4DyrbttkQYiEiBFexJImrjIk4bfW2YqZjtzR7XFDsCsOAUHNY8cnnKaZCRbXrLwP/LUYAz/NVkttO4CW4U/8OZygrarfAsVrsCsx5o2mXBlaRYl5xECWfvT2YbCFuIt3gZR9sau65uMWthgyV0XAR7farxycfMEuBkyb+IVPwYW5QGFo5M8a78r/rFPdczGPlv0Qvg7zrBm775xs8O33V4nOmC1tfsxXUgw=" ], "kid": "e5j-rIjIITYTB9RQSgM-OzOWjXM" }.{ "nbf": 1629758941, "exp": 1630104841, "iat": 1629759241, "iss": "https://ulptestwin.eus.test.attest.azure.net", "jti": "e325dad03894f09b12c53f3b5eac5e36824c89ae", "ver": "1.0", "x-ms-ver": "1.0", "rp_data": "AQIDBA", "nonce": "AQIDBA", "cnf": { "jwk": { "kty": "RSA", "n": "vTCRaX0IZMsNHfJPOVyiYSCM2WABZmNo3PSVTOt9mh0vR4Mon080EGHM_V3afjKJ4NxmEZ01XeB-1TsuNM2-19_JMWZF-wiBTrBWEjcUQ84AxzukaWD1sMsH2kiqjaxXBHEUl8Hhq9SRjVEEdT-fKLOzBO070TffvRCKVxZIRI9Ry6E6K8gMEX3CH6Yk9b7clAua0MrUxd28hMxwx4hy1HyCsFSnXb_bIaqxLYjCxisc9mRx2vO6IuEqEVskSYDc-5f8u2G98ld6PuiMkAhvOOEBmaDlEksvUpnA8e9nWO98rg17pjyOms9GLvgKkSgOKbK8wQ-NuUyXutQfaN2MbQ", "e": "AQAB" } }, "x-ms-policy-hash": "BpV0Jxx6oZ2AjkgXx3Gj7JiJ1NpZWGppjdT2OTtBR4g", "AIKPresent": true, "BitlockerStatus": 1, "CodeIntegrityEnabled": true, "SafeMode": false, "SecureBootEnabled": true, "TpmVersion": 2, "VSMEnabled": true, "WinPE": false }.[Signature]</li>
+</ol>
+
+## Windhows 10 Device HealthAttestation
+
+### Terms
 
 **TPM (Trusted Platform Module)**
 <p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption and signing. </p>
@@ -173,7 +370,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 </tbody>
 </table>
 
-## CSP diagram and node descriptions  
+### CSP diagram and node descriptions  
 
 
 The following shows the Device HealthAttestation configuration service provider in tree format.  
@@ -243,7 +440,7 @@ HealthAttestation
 <p>Added in Windows 10, version 1607 March service release. Returns a bitmask of information describing the state of TPM. It indicates whether the TPM of the device is in a ready and trusted state.</p>
 <p>Value type is integer. The supported operation is Get.</p>
 
-## **DHA-CSP integration steps**
+### **DHA-CSP integration steps**
 
 
 The following list of validation and development tasks are required for integrating the Microsoft Device Health Attestation feature with a Windows Mobile device management solution (MDM):
@@ -260,7 +457,7 @@ The following list of validation and development tasks are required for integrat
 
 Each step is described in detail in the following sections of this topic.
 
-## <a href="" id="verify-access"></a>**Step 1: Verify HTTPS access**
+### <a href="" id="verify-access"></a>**Step 1: Verify HTTPS access**
 
 
 Validate that both the MDM server and the device (MDM client) can access has.spserv.microsoft.com using the TCP protocol over port 443 (HTTPS).
@@ -313,7 +510,7 @@ SSL-Session:
 ```
 
 
-## <a href="" id="assign-trusted-dha-service"></a>**Step 2: Assign an enterprise trusted DHA-Service**
+### <a href="" id="assign-trusted-dha-service"></a>**Step 2: Assign an enterprise trusted DHA-Service**
 
 There are three types of DHA-Service:
 - Device Health Attestation – Cloud (owned and operated by Microsoft)
@@ -339,7 +536,7 @@ The following example shows a sample call that instructs a managed device to com
 ```
 
 
-## <a href="" id="prepare-health-data"></a>**Step 3: Instruct client to prepare health data for verification**
+### <a href="" id="prepare-health-data"></a>**Step 3: Instruct client to prepare health data for verification**
 
 
 Send a SyncML call to start collection of the DHA-Data.
@@ -366,7 +563,7 @@ The following example shows a sample call that triggers collection and verificat
 </Get>
 ```
 
-## <a href="" id="take-action-client-response"></a>**Step 4: Take action based on the clients response**
+### <a href="" id="take-action-client-response"></a>**Step 4: Take action based on the clients response**
 
 
 After the client receives the health attestation request, it sends a response. The following list describes the responses, along with a recommended action to take.
@@ -394,7 +591,7 @@ Here is a sample alert that is issued by DHA_CSP:
 ```
 - If the response to the status node is not 0, 1 or 3, then troubleshoot the issue. For the complete list of status codes see [Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes).
 
-## <a href="" id="forward-health-attestation"></a>**Step 5: Instruct the client to forward health attestation data for verification**
+### <a href="" id="forward-health-attestation"></a>**Step 5: Instruct the client to forward health attestation data for verification**
 
 
 Create a call to the **Nonce**, **Certificate** and **CorrelationId** nodes, and pick up an encrypted payload that includes a health certificate and related data from the device.
@@ -431,7 +628,7 @@ Here is an example:
 </Get>
 ```
 
-## <a href="" id="forward-data-to-has"></a>**Step 6: Forward device health attestation data to DHA-service**
+### <a href="" id="forward-data-to-has"></a>**Step 6: Forward device health attestation data to DHA-service**
 
 
 In response to the request that was sent in the previous step, the MDM client forwards an XML formatted blob (response from ./Vendor/MSFT/HealthAttestation/Certificate node) and a call identifier called CorrelationId (response  to ./Vendor/MSFT/HealthAttestation/CorrelationId node).
@@ -455,14 +652,14 @@ When the MDM-Server receives the above data, it must:
     - DHA-OnPrem or DHA-EMC: https://FullyQualifiedDomainName-FDQN/DeviceHealthAttestation/ValidateHealthCertificate/v3
 
 
-## <a href="" id="receive-has-response"></a>**Step 7: Receive response from the DHA-service**
+### <a href="" id="receive-has-response"></a>**Step 7: Receive response from the DHA-service**
 
 When the Microsoft Device Health Attestation Service receives a request for verification, it performs the following steps:
 - Decrypts the encrypted data it receives.
 - Validates the data it has received 
 - Creates a report, and shares the evaluation results to the MDM server via SSL in XML format 
 
-## <a href="" id="take-policy-action"></a>**Step 8: Take appropriate policy action based on evaluation results**
+### <a href="" id="take-policy-action"></a>**Step 8: Take appropriate policy action based on evaluation results**
 
 
 After the MDM server receives the verified data, the information can be used to make policy decisions by evaluating the data. Some possible actions would be:
@@ -816,7 +1013,7 @@ Each of these are described in further detail in the following sections, along w
 
 <p>In case of a detected issue a list of impacted DHA-report elements will be listed under the HealthStatusMismatchFlags attribute.</p>
 
-## **Device HealthAttestation CSP status and error codes**
+### **Device HealthAttestation CSP status and error codes**
 
 <table>
     <tr>
@@ -1027,7 +1224,7 @@ Each of these are described in further detail in the following sections, along w
 
 </table>
 
-## DHA-Report V3 schema
+### DHA-Report V3 schema
 
 
 ```xml
@@ -1131,7 +1328,7 @@ Each of these are described in further detail in the following sections, along w
 </xs:schema>
 ```
 
-## DHA-Report example
+### DHA-Report example
 
 
 ```xml
