@@ -8,25 +8,26 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
-ms.date: 06/26/2017
+author: dansimp
+ms.date: 
 ---
 
 # Device HealthAttestation CSP
 
-The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT managers to assess if a device is booted to a trusted and compliant state, and take enterprise policy actions.
+The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT admins to assess if a device is booted to a trusted and compliant state, and to take enterprise policy actions.
 
 The following is a list of functions performed by the Device HealthAttestation CSP:
 
--   Collects device boot logs, TPM audit trails and the TPM certificate (DHA-BootData) from a managed device
--   Forwards DHA-BootData to Device Health Attestation Service (DHA-Service)
+-   Collects device boot logs, Trusted Platform Module (TPM) audit trails and the TPM certificate (DHA-BootData) from a managed device
+-   Forwards DHA-BootData to a Device Health Attestation Service (DHA-Service)
 -   Receives an encrypted blob (DHA-EncBlob) from DHA-Service, and stores it in a local cache on the device
--   Receives attestation requests (DHA-Requests) from a DHA-Enabled MDM, and replies with Device Health Attestation data (DHA-Data
+-   Receives attestation requests (DHA-Requests) from a DHA-Enabled MDM, and replies with Device Health Attestation data (DHA-Data)
 
-## Windhows 11 Device HealthAttestation
+## Windows 11 Device health attestation
 
->Windows 11 introduces an update to the device health attestation feature bringing in support for deeper insights into windows boot security, enhancing zero trust solutions. Device health attestation on windows can be accessed via the HealthAttestation CSP which enables enterprise device managers to assess if a device is booted to a trusted and compliant state and take enterprise policy actions. Windows 11 introduces additional child nodes to the HealthAttestation node for the MDM providers to connect to the Microsoft Azure Attestation service which provides a simplified approach to attestation.
-The attested report provides a health assessment of the boot time properties of the device to ensure that the devices are automatically secure from the first power on. The health attestation result can then be used to allow or deny access to networks, apps, or services, based on whether devices prove to be healthy.
+Windows 11 introduces an update to the device health attestation feature. This helps add support for deeper insights to Windows boot security, supporting a zero trust approach to device security. Device health attestation on Windows can be accessed by using the HealthAttestation CSP. This CSP helps assess if a device is booted to a trusted and compliant state and then to take appropriate action. Windows 11 introduces additional child nodes to the HealthAttestation node for the MDM providers to connect to the Microsoft Azure Attestation service which provides a simplified approach to attestation.
+
+The attestation report provides a health assessment of the boot-time properties of the device to ensure that the devices are automatically secure as soon as they power on. The health attestation result can then be used to allow or deny access to networks, apps, or services, depending on the health of the device.
 
 ### Terms
 **TPM (Trusted Platform Module)**
