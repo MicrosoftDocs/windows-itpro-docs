@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # How to create a virtual application package using an App-V Package Accelerator
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Use the following procedure to create a virtual application package with the App-V Package Accelerator.
 

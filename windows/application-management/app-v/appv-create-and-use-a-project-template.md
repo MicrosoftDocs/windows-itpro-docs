@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # Create and apply an App-V project template to a sequenced App-V package
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 You can use an App-V Project Template (.appvt) file to save commonly applied settings associated with an existing virtual application package. You can then apply these settings whenever you create new virtual application packages in your environment, streamlining the package creation process. App-V Project Templates differ from App-V Package Accelerators because App-V Package Accelerators are application-specific, while App-V Project Templates can be applied to multiple applications. To learn more about package accelerators, see [How to create a package accelerator](appv-create-a-package-accelerator.md).
 
