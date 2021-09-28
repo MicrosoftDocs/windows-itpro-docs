@@ -281,7 +281,7 @@ To find device identification strings using Device Manager
 ### Getting device identifiers using PnPUtil
 
 ```console
-pnputil /enum-devices /deviceids
+pnputil /enum-devices /ids
 ```
 
 Here is an example of an output for a single device on a machine:

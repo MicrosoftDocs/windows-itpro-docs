@@ -45,7 +45,7 @@ For the most efficient deployment, configure these technologies in order beginni
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
-1. [Overview](hello-hybrid-cert-trust.md)
+1. [Overview](hello-hybrid-key-trust.md)
 2. [Prerequisites](hello-hybrid-key-trust-prereqs.md)
 3. [New Installation Baseline](hello-hybrid-key-new-install.md)
 4. [Configure Directory Synchronization](hello-hybrid-key-trust-dirsync.md)
