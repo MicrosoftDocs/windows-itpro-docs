@@ -18,7 +18,7 @@ ms.author: greglin
 
 If you’re already using App-V and you’re planning to upgrade user devices to Windows 10/11, you need to make only the following few adjustments to your existing environment to start using App-V for Windows client. 
 
-1. [Upgrade user devices to Windows 10/11](#upgrade-user-devices-to-windows-10-11). Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings.
+1. [Upgrade user devices to Windows 10/11](#upgrade-user-devices-to-windows-1011). Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings.
 
 2. [Verify that App-V applications and settings were migrated correctly](#verify-that-app-v-applications-and-settings-were-migrated-correctly).
 
