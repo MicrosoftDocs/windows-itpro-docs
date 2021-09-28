@@ -33,7 +33,7 @@ In Windows 10, version 1709, the section can be hidden from users of the machine
 
 ## Hide the Family options section
 
-You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigiation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigation bar on the side of the app.
 
 This can only be done in Group Policy.
 
