@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # App-V Planning Checklist
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 This checklist can be used to help you plan for preparing your organization for an App-V deployment.
 

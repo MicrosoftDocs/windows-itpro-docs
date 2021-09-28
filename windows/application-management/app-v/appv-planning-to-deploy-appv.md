@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # Planning to Deploy App-V for Windows client
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 There are several different deployment configurations and requirements to consider before you deploy App-V for Windows client. Review this topic for information about what you'll need to make a deployment plan that best meets your needs.
 

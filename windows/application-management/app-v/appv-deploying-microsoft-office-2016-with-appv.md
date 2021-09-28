@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # Deploying Microsoft Office 2016 by using App-V
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Use the information in this article to use Application Virtualization (App-V) to deliver Microsoft Office 2016 as a virtualized application to computers in your organization. For information about using App-V to deliver Office 2013, see [Deploying Microsoft Office 2013 by using App-V](appv-deploying-microsoft-office-2013-with-appv.md). For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2010 by using App-V](appv-deploying-microsoft-office-2010-wth-appv.md).
 

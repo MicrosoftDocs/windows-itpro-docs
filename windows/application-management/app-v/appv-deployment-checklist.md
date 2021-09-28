@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # App-V Deployment Checklist
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 This checklist outlines the recommended steps and items to consider when deploying App-V features. Use it to organize your priorities while you deploy App-V. You can copy this checklist into a spreadsheet program and customize it for your use.
 

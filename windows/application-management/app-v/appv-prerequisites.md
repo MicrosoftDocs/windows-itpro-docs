@@ -15,10 +15,7 @@ ms.topic: article
 
 # App-V for Windows client prerequisites
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Before installing App-V for Windows client, ensure that you have installed all of the following required prerequisite software.
 

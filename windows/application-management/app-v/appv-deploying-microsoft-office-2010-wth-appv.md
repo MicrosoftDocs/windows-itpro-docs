@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # Deploying Microsoft Office 2010 by Using App-V
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 You can create Office 2010 packages for Microsoft Application Virtualization (App-V) using one of the following methods:
 

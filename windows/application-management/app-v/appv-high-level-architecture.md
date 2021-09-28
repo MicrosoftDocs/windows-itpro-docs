@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # High-level architecture for App-V
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Use the following information to simplify your Microsoft Application Virtualization (App-V) deployment.
 

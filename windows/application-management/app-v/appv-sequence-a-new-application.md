@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # Manually sequence a new app using the Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Starting with Windows 10 version 1607, the App-V Sequencer is included with the Windows ADK. For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
 

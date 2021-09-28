@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # Preparing your environment for App-V
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 There are several different deployment configurations and prerequisites that you must consider before creating your deployment plan for Microsoft App-V. The following articles will help you gather the information you need to set up a deployment plan that best suits your business’ needs.
 
