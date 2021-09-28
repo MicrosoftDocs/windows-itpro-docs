@@ -1,5 +1,5 @@
 ---
-title: Create and apply an App-V project template to a sequenced App-V package (Windows 10)
+title: Create and apply an App-V project template to a sequenced App-V package (Windows 10/11)
 description: Steps for how to create and apply an App-V project template (.appvt) to a sequenced App-V package.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,12 +14,15 @@ ms.topic: article
 ---
 # Create and apply an App-V project template to a sequenced App-V package
 
->Applies to: Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 You can use an App-V Project Template (.appvt) file to save commonly applied settings associated with an existing virtual application package. You can then apply these settings whenever you create new virtual application packages in your environment, streamlining the package creation process. App-V Project Templates differ from App-V Package Accelerators because App-V Package Accelerators are application-specific, while App-V Project Templates can be applied to multiple applications. To learn more about package accelerators, see [How to create a package accelerator](appv-create-a-package-accelerator.md).
 
 >[!IMPORTANT]
->In Windows 10, version 1703, running the **New-AppvSequencerPackage** or the **Update-AppvSequencerPackage** cmdlets will automatically capture and store your customizations as an App-V Project Template. If you want to make changes to this package later, you can automatically load your customizations from this template file. If you have an auto-saved template and you attempt to load another template through the *TemplateFilePath* parameter, the customization value from the parameter will override the auto-saved template.
+>Starting with Windows 10 version 1703, running the **New-AppvSequencerPackage** or the **Update-AppvSequencerPackage** cmdlets will automatically capture and store your customizations as an App-V Project Template. If you want to make changes to this package later, you can automatically load your customizations from this template file. If you have an auto-saved template and you attempt to load another template through the *TemplateFilePath* parameter, the customization value from the parameter will override the auto-saved template.
 
 ## Create a project template
 

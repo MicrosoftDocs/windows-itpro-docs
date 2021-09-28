@@ -1,5 +1,5 @@
 ---
-title: Application Virtualization (App-V) (Windows 10)
+title: Application Virtualization (App-V) (Windows 10/11)
 description: See various topics that can help you administer Application Virtualization (App-V) and its components.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -12,9 +12,12 @@ manager: dansimp
 ms.author: greglin
 ms.topic: article
 ---
-# Application Virtualization (App-V) for Windows 10 overview
+# Application Virtualization (App-V) for Windows client overview
 
->Applies to: Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 > [!NOTE]
 > [!INCLUDE [Application Virtualization will be end of life in April 2026](../includes/app-v-end-life-statement.md)]

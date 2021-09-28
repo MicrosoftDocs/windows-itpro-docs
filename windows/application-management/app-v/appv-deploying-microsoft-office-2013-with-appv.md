@@ -1,5 +1,5 @@
 ---
-title: Deploying Microsoft Office 2013 by Using App-V (Windows 10)
+title: Deploying Microsoft Office 2013 by Using App-V (Windows 10/11)
 description: Use Application Virtualization (App-V) to deliver Microsoft Office 2013 as a virtualized application to computers in your organization.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,10 @@ ms.topic: article
 ---
 # Deploying Microsoft Office 2013 by Using App-V
 
->Applies to: Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 Use the information in this article to use Application Virtualization (App-V) to deliver Microsoft Office 2013 as a virtualized application to computers in your organization. For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2010 by Using App-V](appv-deploying-microsoft-office-2010-wth-appv.md). To successfully deploy Office 2013 with App-V, you need to be familiar with Office 2013 and App-V.
 
@@ -73,7 +76,7 @@ Before you start, make sure that the computer on which you are installing the Of
 
 You create Office 2013 App-V packages with the Office Deployment Tool. The following instructions explain how to create an Office 2013 App-V package with Volume Licensing or Subscription Licensing.
 
-Create Office 2013 App-V packages on 64-bit Windows computers. Once created, the Office 2013 App-V package will run on 32-bit and 64-bit Windows 7, Windows 8.1, and Windows 10 computers.
+Create Office 2013 App-V packages on 64-bit Windows computers. Once created, the Office 2013 App-V package will run on 32-bit and 64-bit Windows 7, Windows 8.1, and Windows 10/11 computers.
 
 ### Download the Office Deployment Tool
 
@@ -148,7 +151,7 @@ After you download the Office 2013 applications through the Office Deployment To
 
 #### What you'll need to do
 
-* Create the Office 2013 App-V packages on 64-bit Windows computers. However, the package will run on 32-bit and 64-bit Windows 7, Windows 8, and Windows 10 computers.
+* Create the Office 2013 App-V packages on 64-bit Windows computers. However, the package will run on 32-bit and 64-bit Windows 7, Windows 8, and Windows 10/11 computers.
 * Create an Office App-V package for either the Subscription Licensing package or Volume Licensing by using the Office Deployment Tool, then modify the **Customconfig.xml** configuration file.
 
     The following table summarizes the values you need to enter in the **Customconfig.xml** file for the licensing model you’re using. The steps in the sections that follow the table will specify the exact entries you need to make.

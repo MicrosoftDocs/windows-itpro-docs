@@ -1,5 +1,5 @@
 ---
-title: How to create a package accelerator (Windows 10)
+title: How to create a package accelerator (Windows 10/11)
 description: Learn how to create App-V Package Accelerators to automatically generate new virtual application packages.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,10 @@ ms.topic: article
 ---
 # How to create a package accelerator
 
->Applies to: Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 App-V Package Accelerators automatically generate new virtual application packages.
 

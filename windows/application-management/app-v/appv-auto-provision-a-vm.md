@@ -1,5 +1,5 @@
 ---
-title: Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
+title: Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10/11)
 description: How to automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer) PowerShell cmdlet or the user interface.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,9 +14,12 @@ ms.topic: article
 ---
 # Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
->Applies to: Windows 10, version 1703
+**Applies to**:
 
-Previous versions of the App-V Sequencer have required you to manually create your sequencing environment. Windows 10, version 1703 introduces two new PowerShell cmdlets, New-AppVSequencerVM and Connect-AppvSequencerVM, which automatically create your sequencing environment for you, including provisioning your virtual machine.
+- Windows 10
+- Windows 11
+
+Previous versions of the App-V Sequencer have required you to manually create your sequencing environment. Starting with Windows 10 version 1703, the `New-AppVSequencerVM` and `Connect-AppvSequencerVM` Windows PowerShell cmdlets are available, which automatically create your sequencing environment for you, including provisioning your virtual machine.
 
 ## Automatic VM provisioning of the sequencing environment
 
@@ -54,7 +57,7 @@ For this process to work, you must have a base operating system available as a V
 
 After you have a VHD file, you must provision your VM for auto-sequencing.
 
-1. On the Host device, install Windows 10, version 1703 and the **Microsoft Application Virtualization (App-V) Auto Sequencer** component from the matching version of the Windows Assessment and Deployment Kit (ADK). For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
+1. On the Host device, install the Windows client and the **Microsoft Application Virtualization (App-V) Auto Sequencer** component from the matching version of the Windows Assessment and Deployment Kit (ADK). For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
 2. Make sure that Hyper-V is turned on. For more info about turning on and using Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/Hyper-V-on-Windows-Server).
 3. Open PowerShell as an admin and run the **New-AppVSequencerVM** cmdlet, using the following parameters:
 
@@ -93,7 +96,7 @@ If your apps require custom prerequisites, such as Microsoft SQL Server, we reco
 
 #### Provision an existing VM
 
-1. On the Host device, install Windows 10, version 1703 and the **Microsoft Application Virtualization (App-V) Auto Sequencer** component from the matching version of the Windows Assessment and Deployment Kit (ADK). For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
+1. On the Host device, install the Windows client and the **Microsoft Application Virtualization (App-V) Auto Sequencer** component from the matching version of the Windows Assessment and Deployment Kit (ADK). For more info on how to install the App-V Sequencer, see [Install the App-V Sequencer](appv-install-the-sequencer.md).
 
 2. Open PowerShell as an admin and run the **Connect-AppvSequencerVM** cmdlet, using the following parameters:
 

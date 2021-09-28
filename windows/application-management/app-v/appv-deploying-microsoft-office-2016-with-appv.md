@@ -1,5 +1,5 @@
 ---
-title: Deploying Microsoft Office 2016 by using App-V (Windows 10)
+title: Deploying Microsoft Office 2016 by using App-V (Windows 10/11)
 description: Use Application Virtualization (App-V) to deliver Microsoft Office 2016 as a virtualized application to computers in your organization.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,10 @@ ms.topic: article
 ---
 # Deploying Microsoft Office 2016 by using App-V
 
->Applies to: Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 Use the information in this article to use Application Virtualization (App-V) to deliver Microsoft Office 2016 as a virtualized application to computers in your organization. For information about using App-V to deliver Office 2013, see [Deploying Microsoft Office 2013 by using App-V](appv-deploying-microsoft-office-2013-with-appv.md). For information about using App-V to deliver Office 2010, see [Deploying Microsoft Office 2010 by using App-V](appv-deploying-microsoft-office-2010-wth-appv.md).
 
@@ -64,7 +67,7 @@ The computer on which you are installing the Office Deployment Tool must have th
 | Prerequisite     | Description    |
 |----------------------|--------------------|
 | Prerequisite software    | .Net Framework 4    |
-| Supported operating systems | 64-bit version of Windows 10<br>64-bit version of Windows 8 or 8.1<br>64-bit version of Windows 7 |
+| Supported operating systems | 64-bit version of Windows 10/11<br>64-bit version of Windows 8 or 8.1<br>64-bit version of Windows 7 |
 
 >[!NOTE]
 >In this topic, the term “Office 2016 App-V package” refers to subscription licensing.
@@ -73,7 +76,7 @@ The computer on which you are installing the Office Deployment Tool must have th
 
 You create Office 2016 App-V packages by using the Office Deployment Tool. The following instructions explain how to create an Office 2016 App-V package with subscription licensing.
 
-Create Office 2016 App-V packages on 64-bit Windows computers. Once created, the Office 2016 App-V package will run on 32-bit and 64-bit Windows 7, Windows 8.1, and Windows 10 computers.
+Create Office 2016 App-V packages on 64-bit Windows computers. Once created, the Office 2016 App-V package will run on 32-bit and 64-bit Windows 7, Windows 8.1, and Windows 10/11 computers.
 
 ### Download the Office Deployment Tool
 
@@ -146,7 +149,7 @@ After you download the Office 2016 applications through the Office Deployment To
 
 #### What you’ll need to do
 
-* Create the Office 2016 App-V packages on 64-bit Windows computers. However, the package will run on 32-bit and 64-bit Windows 7, Windows 8 or 8.1, and Windows 10 computers.
+* Create the Office 2016 App-V packages on 64-bit Windows computers. However, the package will run on 32-bit and 64-bit Windows 7, Windows 8 or 8.1, and Windows 10/11 computers.
 * Create an Office App-V package for either Subscription Licensing package by using the Office Deployment Tool, and then modify the **Customconfig.xml** configuration file.
 
     The following table summarizes the values you need to enter in the **Customconfig.xml** file. The steps in the sections that follow the table will specify the exact entries you need to make.
@@ -377,7 +380,7 @@ The following table describes the requirements and options for deploying Visio 2
 
 ## Related topics
 
-* [Deploying App-V for Windows 10](appv-deploying-appv.md)
+* [Deploying App-V for Windows client](appv-deploying-appv.md)
 * [Deploying Microsoft Office 2013 by using App-V](appv-deploying-microsoft-office-2013-with-appv.md)
 * [Deploying Microsoft Office 2010 by using App-V](appv-deploying-microsoft-office-2010-wth-appv.md)
 * [Office 2016 Deployment Tool for Click-to-Run](https://www.microsoft.com/download/details.aspx?id=49117)

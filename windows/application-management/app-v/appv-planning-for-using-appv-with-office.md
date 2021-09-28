@@ -1,5 +1,5 @@
 ---
-title: Planning for Deploying App-V with Office (Windows 10)
+title: Planning for Deploying App-V with Office (Windows 10/11)
 description: Use the information in this article to plan how to deploy Office within Microsoft Application Virtualization (App-V).
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,10 @@ ms.topic: article
 ---
 # Planning for deploying App-V with Office
 
->Applies to: Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 Use the following information to plan how to deploy Office within Microsoft Application Virtualization (App-V).
 
@@ -92,7 +95,7 @@ To bypass the auto-registration operation for native Word 2010, follow these ste
 
    * In Windows 7k, select **Start**, type **regedit** in the Start Search box, then select the Enter key.
 
-   * In Windows 8.1 or Windows 10, enter **regedit**, select **Enter** on the Start page, then select the Enter key.
+   * In Windows client, enter **regedit**, select **Enter** on the Start page, then select the Enter key.
 
      If you're prompted for an administrator password, enter the password. If you're prompted for a confirmation, select **Continue**.
 3. Locate and then select the following registry subkey:
