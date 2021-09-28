@@ -1,5 +1,5 @@
 ---
-title: App-V Prerequisites (Windows 10)
+title: App-V Prerequisites (Windows 10/11)
 description: Learn about the prerequisites you need before you begin installing Application Virtualization (App-V).
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -12,11 +12,15 @@ manager: dansimp
 ms.author: greglin
 ms.topic: article
 ---
-# App-V for Windows 10 prerequisites
 
->Applies to: Windows 10, version 1607
+# App-V for Windows client prerequisites
 
-Before installing App-V for Windows 10, ensure that you have installed all of the following required prerequisite software.
+**Applies to**:
+
+- Windows 10
+- Windows 11
+
+Before installing App-V for Windows client, ensure that you have installed all of the following required prerequisite software.
 
 For a list of supported operating systems and hardware requirements for the App-V server, sequencer, and client, see [App-V Supported Configurations](appv-supported-configurations.md).
 
@@ -26,7 +30,7 @@ The following table indicates the software that is already installed for differe
 
 |Operating system|Prerequisite description|
 |---|---|
-|Windows 10|All prerequisite software is already installed.|
+|Windows 10/11|All prerequisite software is already installed.|
 |Windows 8.1|All prerequisite software is already installed.<br>If you're running Windows 8, upgrade to Windows 8.1 before using App-V.|
 |Windows Server 2016|The following prerequisite software is already installed:<br>- Microsoft .NET Framework 4.5<br>- Windows PowerShell 3.0<br><br>Installing Windows PowerShell requires a restart.|
 |Windows 7|No prerequisite software is installed. You must install the software before you can install App-V.|

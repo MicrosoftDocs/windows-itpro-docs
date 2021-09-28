@@ -1,5 +1,5 @@
 ---
-title: App-V Security Considerations (Windows 10)
+title: App-V Security Considerations (Windows 10/11)
 description: Learn about accounts and groups, log files, and other security-related considerations for Microsoft Application Virtualization (App-V).
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,10 @@ ms.topic: article
 ---
 # App-V security considerations
 
->Applies to: Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 This topic contains a brief overview of the accounts and groups, log files, and other security-related considerations for Microsoft Application Virtualization (App-V).
 

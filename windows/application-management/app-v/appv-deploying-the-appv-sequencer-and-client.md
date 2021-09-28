@@ -1,5 +1,5 @@
 ---
-title: Deploying the App-V Sequencer and configuring the client (Windows 10)
+title: Deploying the App-V Sequencer and configuring the client (Windows 10/11)
 description: Learn how to deploy the App-V Sequencer and configure the client by using the ADMX template and Group Policy.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,10 @@ ms.topic: article
 ---
 # Deploying the App-V Sequencer and configuring the client
 
->Applies to: Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 The App-V Sequencer and client let administrators to virtualize and run virtual applications.
 
@@ -23,7 +26,7 @@ The App-V Sequencer and client let administrators to virtualize and run virtual 
 The App-V client is the component that runs a virtualized application on a target computer. The client lets users interact with icons and file types, starting virtualized applications. The client can also get the virtual application content from the management server.
 
 >[!NOTE]
->In Windows 10, version 1607, App-V is included with the operating system. You only need to enable it.
+>Starting with Windows 10 version 1607, App-V is included with the operating system. You only need to enable it.
 
 [Enable the App-V desktop client](appv-enable-the-app-v-desktop-client.md)
 

@@ -1,5 +1,5 @@
 ---
-title: Planning to Deploy App-V (Windows 10)
+title: Planning to Deploy App-V (Windows 10/11)
 description: Learn about the different deployment configurations and requirements to consider before you deploy App-V for Windows 10.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -12,11 +12,14 @@ manager: dansimp
 ms.author: greglin
 ms.topic: article
 ---
-# Planning to Deploy App-V for Windows 10
+# Planning to Deploy App-V for Windows client
 
->Applies to: Windows 10, version 1607
+**Applies to**:
 
-There are several different deployment configurations and requirements to consider before you deploy App-V for Windows 10. Review this topic for information about what you'll need to make a deployment plan that best meets your needs.
+- Windows 10
+- Windows 11
+
+There are several different deployment configurations and requirements to consider before you deploy App-V for Windows client. Review this topic for information about what you'll need to make a deployment plan that best meets your needs.
 
 ## App-V supported configurations
 

@@ -1,5 +1,5 @@
 ---
-title: Creating and managing App-V virtualized applications (Windows 10)
+title: Creating and managing App-V virtualized applications (Windows 10/11)
 description: Create and manage App-V virtualized applications to monitor and record the installation process for an application to be run as a virtualized application.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,10 @@ ms.topic: article
 ---
 # Creating and managing App-V virtualized applications
 
->Applies to: Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 After you have properly deployed the Microsoft Application Virtualization (App-V) sequencer, you can use it to monitor and record the installation and setup process for an application to be run as a virtualized application.
 
@@ -119,7 +122,7 @@ A template can specify and store multiple settings as follows:
 - **General Options**. Enables the use of **Windows Installer**, **Append Package Version to Filename**.
 - **Exclusion Items.** Contains the Exclusion pattern list.
 
-In Windows 10, version 1703, running the **new-appvsequencerpackage** or **update-appvsequencepackage** cmdlets automatically captures and stores all of your customizations as an App-V project template. If you want to make changes to this package later, your customizations are automatically loaded from this template file.
+Starting with Windows 10 version 1703, running the **new-appvsequencerpackage** or **update-appvsequencepackage** cmdlets automatically captures and stores all of your customizations as an App-V project template. If you want to make changes to this package later, your customizations are automatically loaded from this template file.
 
 >[!IMPORTANT]
 >If you attempt to load another template through the *_TemplateFilePath_* parameter while already having an auto-saved template, the customization value from the parameter will override the auto-saved template.

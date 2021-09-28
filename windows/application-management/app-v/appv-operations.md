@@ -1,5 +1,5 @@
 ---
-title: Operations for App-V (Windows 10)
+title: Operations for App-V (Windows 10/11)
 description: Learn about the various types of App-V administration and operating tasks that are typically performed by an administrator.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,10 @@ ms.topic: article
 ---
 # Operations for App-V
 
->Applies to: Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 This section of the Microsoft Application Virtualization (App-V) Administrator’s Guide includes information about the various types of App-V administration and operating tasks that are typically performed by an administrator. This section also includes step-by-step procedures to help you successfully perform those tasks.
 

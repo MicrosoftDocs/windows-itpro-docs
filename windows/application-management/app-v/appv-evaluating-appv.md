@@ -1,6 +1,6 @@
 ---
-title: Evaluating App-V (Windows 10)
-description: Learn how to evaluate App-V for Windows 10 in a lab environment before deploying into a production environment.
+title: Evaluating App-V (Windows 10/11)
+description: Learn how to evaluate App-V for Windows 10/11 in a lab environment before deploying into a production environment.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -15,8 +15,10 @@ ms.author: greglin
 
 # Evaluating App-V
 
-**Applies to**
--   Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 > [!NOTE]
 > [!INCLUDE [Application Virtualization will be end of life in April 2026](../includes/app-v-end-life-statement.md)]

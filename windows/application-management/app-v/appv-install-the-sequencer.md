@@ -1,5 +1,5 @@
 ---
-title: Install the App-V Sequencer (Windows 10)
+title: Install the App-V Sequencer (Windows 10/11)
 description: Learn how to install the App-V Sequencer to convert Win32 applications into virtual packages for deployment to user devices.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,11 +14,14 @@ ms.topic: article
 ---
 # Install the App-V Sequencer
 
->Applies to: Windows 10, version 1607
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 Use the App-V Sequencer to convert Win32 applications into virtual packages for deployment to user devices. Those devices must be running the App-V client to allow users to interact with virtual applications.
 
-The App-V Sequencer is included in the Windows 10 Assessment and Deployment Kit (Windows ADK).
+The App-V Sequencer is included in the Windows client Assessment and Deployment Kit (Windows ADK).
 
 >[!NOTE]
 >The computer that will run the sequencer must not have the App-V client enabled. As a best practice, choose a computer with the same hardware and software configurations as the computers that will run the virtual applications. The sequencing process is resource-intensive, so make sure the computer that will run the Sequencer has plenty of memory, a fast processor, and a fast hard drive.

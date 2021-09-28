@@ -1,5 +1,5 @@
 ---
-title: Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
+title: Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10/11)
 description: How to automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer).
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,11 +14,14 @@ ms.topic: article
 ---
 # Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
->Applies to: Windows 10, version 1703
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 Sequencing multiple apps at the same time requires you to install and start Microsoft Application Virtualization Sequencer (App-V Sequencer), and to install the necessary apps to collect any changes made to the operating system during the installation and building of the App-V package.
 
-In Windows 10, version 1703, running the App-V Sequencer automatically captures and stores your customizations as an App-V project template (.appvt) file. If you want to make changes to this package later, your customizations will be automatically loaded from this template file. This is applicable to all of the sequencing scenarios:
+Starting with Windows 10 version 1703, running the App-V Sequencer automatically captures and stores your customizations as an App-V project template (.appvt) file. If you want to make changes to this package later, your customizations will be automatically loaded from this template file. This is applicable to all of the sequencing scenarios:
 
 - Using the **New-BatchAppVSequencerPackages** cmdlet
 - Using the App-V Sequencer interface

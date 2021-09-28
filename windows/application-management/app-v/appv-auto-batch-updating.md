@@ -1,5 +1,5 @@
 ---
-title: Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10)
+title: Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer) (Windows 10/11)
 description: How to automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer).
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,11 +14,14 @@ ms.topic: article
 ---
 # Automatically update multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
->Applies to: Windows 10, version 1703
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 Updating multiple apps at the same time follows a similar process to the one used for [automatically sequencing multiple apps at the same time](appv-auto-batch-sequencing.md). However, when updating, you'll also have to pass your previously created app package files to the App-V Sequencer cmdlet.
 
-Starting with Windows 10, version 1703, running the New-BatchAppVSequencerPackages cmdlet or the App-V Sequencer interface captures and stores all of your customizations as an App-V project template. If you want to make changes to this package later, your customizations are automatically loaded from this template file.
+Starting with Windows 10 version 1703, running the New-BatchAppVSequencerPackages cmdlet or the App-V Sequencer interface captures and stores all of your customizations as an App-V project template. If you want to make changes to this package later, your customizations are automatically loaded from this template file.
 
 >[!NOTE]
 >If you're trying to sequence multiple apps at the same time, see [Automatically sequence multiple apps at the same time using Microsoft Application Virtualization Sequencer (App-V Sequencer)](appv-auto-batch-sequencing.md).
