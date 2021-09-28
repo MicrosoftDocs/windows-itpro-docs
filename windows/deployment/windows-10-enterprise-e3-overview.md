@@ -1,6 +1,6 @@
 ---
 title: Windows 10/11 Enterprise E3 in CSP
-description: Describes Windows 10 Enterprise E3, an offering that delivers, by subscription, the features of Windows 10 Enterprise edition.
+description: Describes Windows 10/11 Enterprise E3, an offering that delivers, by subscription, the features of Windows 10/11 Enterprise edition.
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -18,6 +18,10 @@ ms.topic: article
 ---
 
 # Windows 10/11 Enterprise E3 in CSP
+
+Applies to:
+- Windows 10
+- Windows 11
 
 Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. Windows 10/11 Enterprise E3 in CSP is available now for both Windows 10 and Windows 11.  It delivers, by subscription, exclusive features reserved for Windows 10 or Windows 11 Enterprise editions. This offering is available through the Cloud Solution Provider (CSP) channel via the Partner Center as an online service. Windows 10/11 Enterprise E3 in CSP provides a flexible, per-user subscription for small- and medium-sized organizations (from one to hundreds of users). To take advantage of this offering, you must have the following:
 
