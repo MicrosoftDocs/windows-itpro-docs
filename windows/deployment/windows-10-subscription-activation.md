@@ -29,6 +29,19 @@ With Windows 10, version 1903 and later, the Subscription Activation feature als
 
 The Subscription Activation feature eliminates the need to manually deploy Enterprise or Education edition images on each target device, then later standing up on-prem key management services such as KMS or MAK based activation, entering Generic Volume License Keys (GVLKs), and subsequently rebooting client devices.
 
+See the following topics:
+
+- [Subscription Activation](#subscription-activation-for-windows-1011-enterprise): An introduction to Subscription Activation for Windows 10/11 Enterprise.
+- [Subscription Activation for Education](#subscription-activation-for-windows-1011-enterprise): Information about Subscription Activation for Windows 10/11 Education.
+- [Inherited Activation](#inherited-activation): Description of a new feature available in Windows 10, version 1803 and later.
+- [The evolution of deployment](#the-evolution-of-deployment): A short history of Windows deployment.
+- [Requirements](#requirements): Prerequisites to use the Windows 10/11 Subscription Activation model.
+- [Benefits](#benefits): Advantages of subscription-based licensing.
+- [How it works](#how-it-works): A summary of the subscription-based licensing option.
+- [Virtual Desktop Access (VDA)](#virtual-desktop-access-vda): How to enable Windows 10 Subscription Activation for VMs in the cloud.
+
+For information on how to deploy Enterprise licenses, see [Deploy Windows 10/11 Enterprise licenses](deploy-enterprise-licenses.md).
+
 ## Subscription Activation for Windows 10/11 Enterprise
 
 With Windows 10, version 1703 and later both Windows 10/11 Enterprise E3 and Windows 10/11 Enterprise E5 are available as online services via subscription. Deploying Windows 10 Enterprise or Windows 11 Enterprise in your organization can now be accomplished with no keys and no reboots.
@@ -46,17 +59,6 @@ Organizations that have an Enterprise agreement can also benefit from the new se
 ## Subscription Activation for Education
 
 Subscription Activation for Education works the same as the Enterprise version, but in order to use Subscription Activation for Education, you must have a device running Windows 10 Pro Education, version 1903 or later (or Windows 11) and an active subscription plan with a Windows 10/11 Enterprise license. For more information, see the [requirements](#windows-1011-education-requirements) section.
-
-## Article summary
-
-- [Inherited Activation](#inherited-activation): Description of a new feature available in Windows 10, version 1803 and later.
-- [The evolution of deployment](#the-evolution-of-deployment): A short history of Windows deployment.
-- [Requirements](#requirements): Prerequisites to use the Windows 10/11 Subscription Activation model.
-- [Benefits](#benefits): Advantages of subscription-based licensing.
-- [How it works](#how-it-works): A summary of the subscription-based licensing option.
-- [Virtual Desktop Access (VDA)](#virtual-desktop-access-vda): Enable Windows 10 Subscription Activation for VMs in the cloud.
-
-For information on how to deploy Enterprise licenses, see [Deploy Windows 10/11 Enterprise licenses](deploy-enterprise-licenses.md).
 
 ## Inherited Activation
 
