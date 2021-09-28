@@ -24,13 +24,13 @@ highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
   items:
     # Card
-    - title: What's new in Windows 11 (or something else if next section stays)
+    - title: Become a Windows Insider
       itemType: overview
-      url: /windows/deployment/deploy-whats-new.md
+      url: https://insider.windows.com
     # Card
-    - title: What's new in Windows 10, version X
+    - title: See what's new in Windows release health
       itemType: overview
-      url: /windows/deployment/deploy-whats-new.md
+      url: /windows/release-health/
     # Card
     - title: Learn more about Hybrid Work
       itemType: overview
