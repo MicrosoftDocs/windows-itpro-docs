@@ -1,6 +1,6 @@
 ---
-title: Manage corporate devices (Windows 10)
-description: You can use the same management tools to manage all device types running Windows 10 desktops, laptops, tablets, and phones.
+title: Manage corporate devices (Windows)
+description: You can use the same management tools to manage all device types running Windows 10 or Windows 11 desktops, laptops, tablets, and phones.
 ms.assetid: 62D6710C-E59C-4077-9C7E-CE0A92DFC05D
 ms.reviewer: 
 manager: dansimp
@@ -12,7 +12,7 @@ ms.sitesec: library
 ms.pagetype: devices
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 09/21/2017
+ms.date: 09/14/2021
 ms.topic: article
 ---
 
@@ -21,10 +21,10 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
--   Windows 10 Mobile
+- Windows 10
+- Windows 11
 
-You can use the same management tools to manage all device types running Windows 10 : desktops, laptops, tablets, and phones. And your current management tools, such as Group Policy, Windows Management Instrumentation (WMI), PowerShell scripts, System Center tools, and so on, will continue to work for Windows 10.
+You can use the same management tools to manage all device types running Windows 10 or Windows 11 desktops, laptops, tablets, and phones. And your current management tools, such as Group Policy, Windows Management Instrumentation (WMI), PowerShell scripts, System Center tools, and so on, will continue to work for Windows 10 and Windows 11.
 
 ## In this section
 
@@ -36,7 +36,7 @@ You can use the same management tools to manage all device types running Windows
 | [New policies for Windows 10](new-policies-for-windows-10.md) | New Group Policy settings added in Windows 10 |
 | [Group Policies that apply only to Windows 10 Enterprise and Windows 10 Education](group-policies-for-enterprise-and-education-editions.md) | Group Policy settings that apply only to Windows 10 Enterprise and Windows 10 Education |
 | [Changes to Group Policy settings for Start in Windows 10](/windows/configuration/changes-to-start-policies-in-windows-10) | Changes to the Group Policy settings that you use to manage Start |
-| [Introduction to configuration service providers (CSPs) for IT pros](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) | How IT pros and system administrators can take advantage of many settings available through CSPs to configure devices running Windows 10 and Windows 10 Mobile in their organizations |
+| [Introduction to configuration service providers (CSPs) for IT pros](/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) | How IT pros and system administrators can take advantage of many settings available through CSPs to configure devices running Windows 10 or Windows 11 in their organizations |
 
 
 ## Learn more

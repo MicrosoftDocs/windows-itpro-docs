@@ -143,7 +143,7 @@ Value type is string. Supported operations are Add, Get, Replace and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify contact company name*
+-   GP Friendly name: *Specify contact company name*
 -   GP name: *EnterpriseCustomization_CompanyName*
 -   GP element: *Presentation_EnterpriseCustomization_CompanyName*
 -   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
@@ -203,7 +203,7 @@ Added in Windows 10, next major release. Use this policy setting to specify if t
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide the Account protection area*
+-   GP Friendly name: *Hide the Account protection area*
 -   GP name: *AccountProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Account protection*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -271,7 +271,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide the App and browser protection area*
+-   GP Friendly name: *Hide the App and browser protection area*
 -   GP name: *AppBrowserProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/App and browser protection*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -351,7 +351,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable the Clear TPM button*
+-   GP Friendly name: *Disable the Clear TPM button*
 -   GP name: *DeviceSecurity_DisableClearTpmButton*
 -   GP path: *Windows Components/Windows Security/Device security*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -419,7 +419,7 @@ Added in Windows 10, next major release. Use this policy setting if you want to 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide the Device security area*
+-   GP Friendly name: *Hide the Device security area*
 -   GP name: *DeviceSecurity_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Device security*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -490,7 +490,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide non-critical notifications*
+-   GP Friendly name: *Hide non-critical notifications*
 -   GP name: *Notifications_DisableEnhancedNotifications*
 -   GP path: *Windows Components/Windows Defender Security Center/Notifications*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -558,7 +558,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide the Family options area*
+-   GP Friendly name: *Hide the Family options area*
 -   GP name: *FamilyOptions_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Family options*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -626,7 +626,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide the Device performance and health area*
+-   GP Friendly name: *Hide the Device performance and health area*
 -   GP name: *DevicePerformanceHealth_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Device performance and health*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -694,7 +694,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide the Firewall and network protection area*
+-   GP Friendly name: *Hide the Firewall and network protection area*
 -   GP name: *FirewallNetworkProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Firewall and network protection*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -762,7 +762,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide all notifications*
+-   GP Friendly name: *Hide all notifications*
 -   GP name: *Notifications_DisableNotifications*
 -   GP path: *Windows Components/Windows Defender Security Center/Notifications*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -842,7 +842,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide the TPM Firmware Update recommendation.*
+-   GP Friendly name: *Hide the TPM Firmware Update recommendation.*
 -   GP name: *DeviceSecurity_DisableTpmFirmwareUpdateWarning*
 -   GP path: *Windows Components/Windows Security/Device security*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -912,7 +912,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide the Virus and threat protection area*
+-   GP Friendly name: *Hide the Virus and threat protection area*
 -   GP name: *VirusThreatProtection_UILockdown*
 -   GP path: *Windows Components/Windows Defender Security Center/Virus and threat protection*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -980,7 +980,7 @@ Value type is integer. Supported operations are Add, Get, Replace and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent users from modifying settings*
+-   GP Friendly name: *Prevent users from modifying settings*
 -   GP name: *AppBrowserProtection_DisallowExploitProtectionOverride*
 -   GP path: *Windows Components/Windows Defender Security Center/App and browser protection*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -1048,7 +1048,7 @@ Value type is string. Supported operations are Add, Get, Replace and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify contact email address or Email ID*
+-   GP Friendly name: *Specify contact email address or Email ID*
 -   GP name: *EnterpriseCustomization_Email*
 -   GP element: *Presentation_EnterpriseCustomization_Email*
 -   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
@@ -1110,7 +1110,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure customized notifications*
+-   GP Friendly name: *Configure customized notifications*
 -   GP name: *EnterpriseCustomization_EnableCustomizedToasts*
 -   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -1178,7 +1178,7 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure customized contact information*
+-   GP Friendly name: *Configure customized contact information*
 -   GP name: *EnterpriseCustomization_EnableInAppCustomization*
 -   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -1244,7 +1244,7 @@ Added in Windows 10, version 1803. Use this policy setting to hide the Ransomwar
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide the Ransomware data recovery area*
+-   GP Friendly name: *Hide the Ransomware data recovery area*
 -   GP name: *VirusThreatProtection_HideRansomwareRecovery*
 -   GP path: *Windows Components/Windows Defender Security Center/Virus and threat protection*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -1310,7 +1310,7 @@ Added in Windows 10, version 1803. Use this policy to hide the Secure boot area 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide the Secure boot area*
+-   GP Friendly name: *Hide the Secure boot area*
 -   GP name: *DeviceSecurity_HideSecureBoot*
 -   GP path: *Windows Components/Windows Defender Security Center/Device security*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -1376,7 +1376,7 @@ Added in Windows 10, version 1803. Use this policy to hide the Security processo
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide the Security processor (TPM) troubleshooter page*
+-   GP Friendly name: *Hide the Security processor (TPM) troubleshooter page*
 -   GP name: *DeviceSecurity_HideTPMTroubleshooting*
 -   GP path: *Windows Components/Windows Defender Security Center/Device security*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -1458,7 +1458,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Hide Windows Security Systray*
+-   GP Friendly name: *Hide Windows Security Systray*
 -   GP name: *Systray_HideSystray*
 -   GP path: *Windows Components/Windows Security/Systray*
 -   GP ADMX file name: *WindowsDefenderSecurityCenter.admx*
@@ -1528,7 +1528,7 @@ Value type is string. Supported operations are Add, Get, Replace, and Delete.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify contact phone number or Skype ID*
+-   GP Friendly name: *Specify contact phone number or Skype ID*
 -   GP name: *EnterpriseCustomization_Phone*
 -   GP element: *Presentation_EnterpriseCustomization_Phone*
 -   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*
@@ -1590,7 +1590,7 @@ Value type is Value type is string. Supported operations are Add, Get, Replace, 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify contact website*
+-   GP Friendly name: *Specify contact website*
 -   GP name: *EnterpriseCustomization_URL*
 -   GP element: *Presentation_EnterpriseCustomization_URL*
 -   GP path: *Windows Components/Windows Defender Security Center/Enterprise Customization*

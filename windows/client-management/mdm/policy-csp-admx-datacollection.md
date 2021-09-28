@@ -90,7 +90,7 @@ If you disable or do not configure this policy setting, then Microsoft will not 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure the Commercial ID*
+-   GP Friendly name: *Configure the Commercial ID*
 -   GP name: *CommercialIdPolicy*
 -   GP path: *Windows Components\Data Collection and Preview Builds*
 -   GP ADMX file name: *DataCollection.admx*

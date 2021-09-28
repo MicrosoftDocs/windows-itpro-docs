@@ -41,7 +41,7 @@ The diagram below illustrates how UE-V components work together to synchronize u
 <img src="images/uev-archdiagram.png" alt="UE-V architecture, with server share, desktop, and UE-V service" width="625" height="351" />
 
 <!--  SIMPLER METHOD FOR CODING IMAGE
-![UE-V architecture, with server share, desktop, and UE-V service](images/uev-archdiagram.png)
+![UE-V architecture, with server share, desktop, and UE-V service.](images/uev-archdiagram.png)
 -->
 
 | **Component**            | **Function**     |
@@ -65,7 +65,7 @@ Use these UE-V components to create and manage custom templates for your third-p
 <img src="media/image2.gif" width="595" height="330" />
 -->
 
-![UE-V template generator process](images/uev-generator-process.png)
+![UE-V template generator process.](images/uev-generator-process.png)
 
 ## Settings synchronized by default
 

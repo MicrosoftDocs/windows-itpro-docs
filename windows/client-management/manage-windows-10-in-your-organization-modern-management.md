@@ -92,7 +92,7 @@ For more information about how Windows 10 and Azure AD optimize access to work r
 
 As you review the roles in your organization, you can use the following generalized decision tree to begin to identify users or devices that require domain join. Consider switching the remaining users to Azure AD.
 
-![Decision tree for device authentication options](images/windows-10-management-cyod-byod-flow.png)
+![Decision tree for device authentication options.](images/windows-10-management-cyod-byod-flow.png)
 
 ## Settings and Configuration
 

@@ -1,5 +1,5 @@
 ---
-title: Domain Isolation Policy Design Example (Windows 10)
+title: Domain Isolation Policy Design Example (Windows)
 description: This example uses a fictitious company to illustrate domain isolation policy design in Windows Defender Firewall with Advanced Security.
 ms.assetid: 704dcf58-286f-41aa-80af-c81720aa7fc5
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This design example continues to use the fictitious company Woodgrove Bank, and builds on the example described in the [Firewall Policy Design Example](firewall-policy-design-example.md) section. See that example for an explanation of the basic corporate network infrastructure at Woodgrove Bank with diagrams.
 
@@ -32,7 +33,7 @@ In addition to the basic protection provided by the firewall rules in the previo
 
 The following illustration shows the traffic protection needed for this design example.
 
-![domain isolation policy design](images/wfas-design2example1.gif)
+![domain isolation policy design.](images/wfas-design2example1.gif)
 
 1.  All devices on the Woodgrove Bank corporate network that are Active Directory domain members must authenticate inbound network traffic as coming from another computer that is a member of the domain. Unless otherwise specified in this section, Woodgrove Bank's devices reject all unsolicited inbound network traffic that is not authenticated. If the basic firewall design is also implemented, even authenticated inbound network traffic is dropped unless it matches an inbound firewall rule.
 

@@ -145,7 +145,7 @@ After the policy is applied, you can verify the settings in the user interface i
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off Automatic Download and Update of Map Data*
+-   GP Friendly name: *Turn off Automatic Download and Update of Map Data*
 -   GP name: *TurnOffAutoUpdate*
 -   GP path: *Windows Components/Maps*
 -   GP ADMX file name: *WinMaps.admx*

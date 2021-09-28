@@ -45,7 +45,7 @@ Applies to:
 You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests to add non-enterprise domain(s) in the container.
 
 The following diagram shows the flow between the host PC and the isolated container.
-![Flowchart for movement between Microsoft Edge and Application Guard](images/application-guard-container-v-host.png)
+![Flowchart for movement between Microsoft Edge and Application Guard.](images/application-guard-container-v-host.png)
 
 ## Install Application Guard
 
@@ -55,7 +55,7 @@ Application Guard functionality is turned off by default. However, you can quick
 
 1. Open the **Control Panel**, click **Programs,** and then click **Turn Windows features on or off**.
 
-    ![Windows Features, turning on Microsoft Defender Application Guard](images/turn-windows-features-on-off.png)
+    ![Windows Features, turning on Microsoft Defender Application Guard.](images/turn-windows-features-on-off.png)
 
 2. Select the check box next to **Microsoft Defender Application Guard** and then click **OK**.
 
@@ -86,7 +86,7 @@ Application Guard functionality is turned off by default. However, you can quick
 > [!IMPORTANT]
 > Make sure your organization's devices meet [requirements](reqs-md-app-guard.md) and are [enrolled in Intune](/mem/intune/enrollment/device-enrollment).
 
-:::image type="content" source="images/MDAG-EndpointMgr-newprofile.jpg" alt-text="Enroll devices in Intune":::
+:::image type="content" source="images/MDAG-EndpointMgr-newprofile.jpg" alt-text="Enroll devices in Intune.":::
 
 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in.
 

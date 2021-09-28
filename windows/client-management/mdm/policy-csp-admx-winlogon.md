@@ -108,7 +108,7 @@ If you disable this setting or do not configure it, the setting is ignored and t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Custom User Interface*
+-   GP Friendly name: *Custom User Interface*
 -   GP name: *CustomShell*
 -   GP path: *System*
 -   GP ADMX file name: *WinLogon.admx*
@@ -179,7 +179,7 @@ If you disable or do not configure this setting, messages about the previous log
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Display information about previous logons during user logon*
+-   GP Friendly name: *Display information about previous logons during user logon*
 -   GP name: *DisplayLastLogonInfoDescription*
 -   GP path: *Windows Components\Windows Logon Options*
 -   GP ADMX file name: *WinLogon.admx*
@@ -252,7 +252,7 @@ If you disable or do not configure this setting, users receive warnings before t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove logon hours expiration warnings*
+-   GP Friendly name: *Remove logon hours expiration warnings*
 -   GP name: *LogonHoursNotificationPolicyDescription*
 -   GP path: *Windows Components\Windows Logon Options*
 -   GP ADMX file name: *WinLogon.admx*
@@ -326,7 +326,7 @@ If you disable or do not configure this setting, the system takes no action when
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set action to take when logon hours expire*
+-   GP Friendly name: *Set action to take when logon hours expire*
 -   GP name: *LogonHoursPolicyDescription*
 -   GP path: *Windows Components\Windows Logon Options*
 -   GP ADMX file name: *WinLogon.admx*
@@ -396,7 +396,7 @@ If disabled or not configured, no popup will be displayed to the user.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Report when logon server was not available during user logon*
+-   GP Friendly name: *Report when logon server was not available during user logon*
 -   GP name: *ReportCachedLogonPolicyDescription*
 -   GP path: *Windows Components\Windows Logon Options*
 -   GP ADMX file name: *WinLogon.admx*
@@ -470,7 +470,7 @@ If you disable or do not configure this setting, only Ease of Access application
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable or enable software Secure Attention Sequence*
+-   GP Friendly name: *Disable or enable software Secure Attention Sequence*
 -   GP name: *SoftwareSASGeneration*
 -   GP path: *Windows Components\Windows Logon Options*
 -   GP ADMX file name: *WinLogon.admx*

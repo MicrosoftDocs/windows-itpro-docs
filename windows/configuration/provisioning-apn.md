@@ -53,11 +53,11 @@ For users who work in different locations, you can configure one APN to connect 
 
 5. Enter a name for the connection, and then click **Add**.
 
-    ![Example of APN connection name](images/apn-add.png)
+    ![Example of APN connection name.](images/apn-add.png)
     
 6. The connection appears in the **Available customizations** pane. Select it to view the settings that you can configure for the connection.
 
-    ![settings for new connection](images/apn-add-details.png)
+    ![settings for new connection.](images/apn-add-details.png)
     
 7. The following table describes the settings available for the connection.
 

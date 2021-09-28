@@ -22,7 +22,7 @@ Debugging packet drops is a continuous issue to Windows customers. In the past, 
 
 Typically, when investigating packet drop events, a customer would use the field `Filter Run-Time ID` from Windows Filtering Platform (WFP) audits 5157 or 5152. 
 
-![Event properties](images/event-properties-5157.png)
+![Event properties.](images/event-properties-5157.png)
 
 The filter ID uniquely identifies the filter that caused the packet drop. The filter ID can be searched in the WFP state dump output to trace back to the Firewall rule where the filter originated from. 
 
@@ -73,7 +73,7 @@ To enable a specific audit event, run the corresponding command in an administra
 
 As the audit surfaces `Filter Origin` and `Interface Index`, the network admin can determine the root cause of the network packet drop and the interface it happened on.
 
-![Event audit](images/event-audit-5157.png)
+![Event audit.](images/event-audit-5157.png)
 
 The next sections are divided by `Filter Origin` type, the value is either a rule name or the name of one of the default block filters. If the filter origin is one of the default block filters, skip to the section, **Firewall default block filters**. Otherwise, continue to the section **Firewall rules**.
 
@@ -86,7 +86,7 @@ Get-NetFirewallRule -Name “<Filter Origin>”
 Get-NetFirewallRule -Name " {A549B7CF-0542-4B67-93F9-EEBCDD584377} "
 ```
 
-![Firewall rule](images/firewallrule.png)
+![Firewall rule.](images/firewallrule.png)
 
 After identifying the rule that caused the drop, the network admin can now modify/disable the rule to allow the traffic they want through command prompt or using the Windows Defender UI. The network admin can find the rule in the UI with the rule’s `DisplayName`.
 
@@ -118,7 +118,7 @@ Get-NetIPInterface –InterfaceIndex <Interface Index>
 Get-NetIPInterface –InterfaceIndex 5
 ```
 
-![Quarantine default block filter](images/quarantine-default-block-filter.png)
+![Quarantine default block filter.](images/quarantine-default-block-filter.png)
 
 To learn more about the quarantine feature, see [Quarantine behavior](quarantine.md).
 
@@ -139,7 +139,7 @@ To generate a list of all the query user block rules, you can run the following 
 Get-NetFirewallRule | Where {$_.Name -like "*Query User*"}
 ```
 
-![Query user default block filter](images/query-user-default-block-filters.png)
+![Query user default block filter.](images/query-user-default-block-filters.png)
 
 The query user pop-up feature is enabled by default. 
 

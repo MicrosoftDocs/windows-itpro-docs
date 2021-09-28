@@ -1,5 +1,5 @@
 ---
-title: Server Isolation Policy Design Example (Windows 10)
+title: Server Isolation Policy Design Example (Windows)
 description: Learn about server isolation policy design in Windows Defender Firewall with Advanced Security by referring to this example of a fictitious company.
 ms.assetid: 337e5f6b-1ec5-4b83-bee5-d0aea1fa5fc6
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This design example continues to use the fictitious company Woodgrove Bank, as described in the [Firewall Policy Design Example](firewall-policy-design-example.md) section and the [Domain Isolation Policy Design Example](domain-isolation-policy-design-example.md) section.
 
@@ -46,7 +47,7 @@ In addition to the protection provided by the firewall rules and domain isolatio
 
 The following illustration shows the traffic protection needs for this design example.
 
-![isolated server example](images/wfas-design3example1.gif)
+![isolated server example.](images/wfas-design3example1.gif)
 
 1.  Access to the SQL Server devices must be restricted to only those computer or user accounts that have a business requirement to access the data. This includes the service accounts that are used by the WGBank front-end servers, and administrators of the SQL Server devices. In addition, access is only granted when it is sent from an authorized computer. Authorization is determined by membership in a network access group (NAG).
 

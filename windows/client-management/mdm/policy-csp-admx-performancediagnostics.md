@@ -107,7 +107,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Scenario Execution Level*
+-   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_1*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows Boot Performance Diagnostics*
 -   GP ADMX file name: *PerformanceDiagnostics.admx*
@@ -184,7 +184,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Scenario Execution Level*
+-   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_2*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows System Responsiveness Performance Diagnostics*
 -   GP ADMX file name: *PerformanceDiagnostics.admx*
@@ -261,7 +261,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Scenario Execution Level*
+-   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_3*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows Shutdown Performance Diagnostics*
 -   GP ADMX file name: *PerformanceDiagnostics.admx*
@@ -338,7 +338,7 @@ This policy setting will only take effect when the Diagnostic Policy Service is 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Scenario Execution Level*
+-   GP Friendly name: *Configure Scenario Execution Level*
 -   GP name: *WdiScenarioExecutionPolicy_4*
 -   GP path: *System\Troubleshooting and Diagnostics\Windows Standby/Resume Performance Diagnostics*
 -   GP ADMX file name: *PerformanceDiagnostics.admx*

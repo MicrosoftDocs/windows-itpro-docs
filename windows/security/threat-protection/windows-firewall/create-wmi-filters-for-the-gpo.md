@@ -1,5 +1,5 @@
 ---
-title: Create WMI Filters for the GPO (Windows 10)
+title: Create WMI Filters for the GPO (Windows)
 description: Learn how to use WMI filters on a GPO to make sure that each GPO for a group can only be applied to devices running the correct version of Windows.
 ms.assetid: b1a6d93d-a3c8-4e61-a388-4a3323f0e74e
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 05/25/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 To make sure that each GPO associated with a group can only be applied to devices running the correct version of Windows, use the Group Policy Management MMC snap-in to create and assign WMI filters to the GPO. Although you can create a separate membership group for each GPO, you would then have to manage the memberships of the different groups. Instead, use only a single membership group, and let WMI filters automatically ensure the correct GPO is applied to each device.
 
@@ -40,17 +41,15 @@ First, create the WMI filter and configure it to look for a specified version (o
 
 1.  Open the Group Policy Management console.
 
-2.  In the navigation pane, expand **Forest:** *YourForestName*, expand **Domains**, expand *YourDomainName*, and then click **WMI Filters**.
+2.  In the navigation pane, expand **Forest:** *YourForestName*, expand **Domains**, expand *YourDomainName*, and then select **WMI Filters**.
 
-3.  Click **Action**, and then click **New**.
+3.  Select **Action**, and then select **New**.
 
-4.  In the **Name** text box, type the name of the WMI filter.
-
-    >**Note:**  Be sure to use a name that clearly indicates the purpose of the filter. Check to see if your organization has a naming convention.
+4.  In the **Name** text box, type the name of the WMI filter. Be sure to use a name that clearly indicates the purpose of the filter. Check to see if your organization has a naming convention.
 
 5.  In the **Description** text box, type a description for the WMI filter. For example, if the filter excludes domain controllers, you might consider stating that in the description.
 
-6.  Click **Add**.
+6.  Select **Add**.
 
 7.  Leave the **Namespace** value set to **root\\CIMv2**.
 
@@ -60,13 +59,13 @@ First, create the WMI filter and configure it to look for a specified version (o
     select * from Win32_OperatingSystem where Version like "6.%"
     ```
 
-    This query will return **true** for devices running at least Windows Vista and Windows Server 2008. To set a filter for just Windows 8 and Windows Server 2012, use "6.2%". For Windows 10 and Windows Server 2016, use "10.%". To specify multiple versions, combine them with or, as shown in the following:
+    This query will return **true** for devices running at least Windows Vista and Windows Server 2008. To set a filter for just Windows 8 and Windows Server 2012, use "6.2%". For Windows 11, Windows 10, and Windows Server 2016, use "10.%". To specify multiple versions, combine them with or, as shown in the following:
 
     ``` syntax
     ... where Version like "6.1%" or Version like "6.2%"
     ```
 
-    To restrict the query to only clients or only servers, add a clause that includes the ProductType parameter. To filter for client operating systems only, such as Windows 8 or Windows 7, use only ProductType="1". For server operating systems that are not domain controllers, use ProductType="3". For domain controllers only, use ProductType="2". This is a useful distinction, because you often want to prevent your GPOs from being applied to the domain controllers on your network.
+    To restrict the query to only clients or only servers, add a clause that includes the ProductType parameter. To filter for client operating systems only, such as Windows 8 or Windows 7, use only ProductType="1". For server operating systems that are not domain controllers and for Windows 10 and Windows 11 multi-session, use ProductType="3". For domain controllers only, use ProductType="2". This is a useful distinction, because you often want to prevent your GPOs from being applied to the domain controllers on your network.
 
     The following clause returns **true** for all devices that are not domain controllers:
 
@@ -74,7 +73,7 @@ First, create the WMI filter and configure it to look for a specified version (o
     ... where ProductType="1" or ProductType="3"
     ```
 
-    The following complete query returns **true** for all devices running Windows 10, and returns **false** for any server operating system or any other client operating system.
+    The following complete query returns **true** for all devices running Windows 10 and Windows 11, and returns **false** for any server operating system or any other client operating system.
 
     ``` syntax
     select * from Win32_OperatingSystem where Version like "10.%" and ProductType="1"
@@ -92,9 +91,9 @@ First, create the WMI filter and configure it to look for a specified version (o
     select * from Win32_OperatingSystem where Version like "10.%" and ProductType="3"
     ```
 
-9.  Click **OK** to save the query to the filter.
+9.  Select **OK** to save the query to the filter.
 
-10. Click **Save** to save your completed filter.
+10. Select **Save** to save your completed filter.
 
 > [!NOTE]
 > If you're using multiple queries in the same WMI filter, these queries must all return **TRUE** for the filter requirements to be met and for the GPO to be applied.
@@ -105,8 +104,8 @@ After you have created a filter with the correct query, link the filter to the G
 
 1.  Open the Group Policy Management console.
 
-2.  In the navigation pane, find and then click the GPO that you want to modify.
+2.  In the navigation pane, find and then select the GPO that you want to modify.
 
 3.  Under **WMI Filtering**, select the correct WMI filter from the list.
 
-4.  Click **Yes** to accept the filter.
+4.  Select **Yes** to accept the filter.

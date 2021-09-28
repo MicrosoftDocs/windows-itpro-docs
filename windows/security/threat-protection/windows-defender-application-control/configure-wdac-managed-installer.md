@@ -1,5 +1,5 @@
 ---
-title: Configure a WDAC managed installer (Windows 10)
+title: Configure a WDAC managed installer (Windows)
 description: Explains how to configure a custom Manged Installer.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,8 +22,12 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2019
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 Setting up managed installer tracking and application execution enforcement requires applying both an AppLocker and WDAC policy with specific rules and options enabled.
 There are three primary steps to keep in mind:
@@ -40,7 +44,7 @@ The identity of the managed installer executable(s) is specified in an AppLocker
 
 Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerShell cmdlets allow for directly specifying rules for the Managed Installer rule collection. However, a text editor can be used to make the simple changes needed to an EXE or DLL rule collection policy to specify Type="ManagedInstaller", so that the new rule can be imported into a GPO.
 
-1. Use [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy?view=win10-ps) to make an EXE rule for the file you are designating as a managed installer. Note that only EXE file types can be designated as managed installers. Below is an example using the rule type Publisher with a hash fallback, but other rule types can be used as well. You may need to reformat the output for readability.
+1. Use [New-AppLockerPolicy](/powershell/module/applocker/new-applockerpolicy?view=win10-ps&preserve-view=true) to make an EXE rule for the file you are designating as a managed installer. Note that only EXE file types can be designated as managed installers. Below is an example using the rule type Publisher with a hash fallback, but other rule types can be used as well. You may need to reformat the output for readability.
 
     ```powershell
     Get-ChildItem <exe filepath> | Get-AppLockerFileInformation | New-AppLockerPolicy -RuleType Publisher, Hash -User Everyone -Xml > AppLocker_MI_PS_ISE.xml
@@ -126,7 +130,7 @@ For example:
 In order to enable trust for the binaries laid down by managed installers, the Enabled: Managed Installer option must be specified in your WDAC policy.
 This can be done by using the [Set-RuleOption cmdlet](/powershell/module/configci/set-ruleoption) with Option 13.
 
-Below are steps to create a WDAC policy which allows Windows to boot and enables the managed installer option.
+Below are steps to create a WDAC policy that allows Windows to boot and enables the managed installer option.
 
 1. Copy the DefaultWindows_Audit policy into your working folder from C:\Windows\schemas\CodeIntegrity\ExamplePolicies\DefaultWindows_Audit.xml
 

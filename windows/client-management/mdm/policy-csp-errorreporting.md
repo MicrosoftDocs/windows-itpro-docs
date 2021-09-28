@@ -112,7 +112,7 @@ If you disable or do not configure this policy setting, then the default consent
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Customize consent settings*
+-   GP Friendly name: *Customize consent settings*
 -   GP name: *WerConsentCustomize_2*
 -   GP path: *Windows Components/Windows Error Reporting/Consent*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -182,7 +182,7 @@ If you disable or do not configure this policy setting, the Turn off Windows Err
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Disable Windows Error Reporting*
+-   GP Friendly name: *Disable Windows Error Reporting*
 -   GP name: *WerDisable_2*
 -   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -256,7 +256,7 @@ See also the Configure Error Reporting policy setting.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Display Error Notification*
+-   GP Friendly name: *Display Error Notification*
 -   GP name: *PCH_ShowUI*
 -   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -326,7 +326,7 @@ If you disable or do not configure this policy setting, then consent policy sett
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not send additional data*
+-   GP Friendly name: *Do not send additional data*
 -   GP name: *WerNoSecondLevelData_2*
 -   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*
@@ -396,7 +396,7 @@ If you disable or do not configure this policy setting, Windows Error Reporting 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent display of the user interface for critical errors*
+-   GP Friendly name: *Prevent display of the user interface for critical errors*
 -   GP name: *WerDoNotShowUI*
 -   GP path: *Windows Components/Windows Error Reporting*
 -   GP ADMX file name: *ErrorReporting.admx*

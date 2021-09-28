@@ -28,7 +28,7 @@ This topic will show you how to add applications to a role in the MDT database a
     2.  Applications / Lite Touch Applications:
     3.  Install - Adobe Reader XI - x86
 
-![figure 12](../images/mdt-09-fig12.png)
+![figure 12.](../images/mdt-09-fig12.png)
 
 Figure 12. The Standard PC role with the application added
 
@@ -39,7 +39,7 @@ After creating the role, you can associate it with one or more computer entries.
 2.  In the **Computers** node, double-click the **PC00075** entry, and add the following setting:
     -   Roles: Standard PC
 
-![figure 13](../images/mdt-09-fig13.png)
+![figure 13.](../images/mdt-09-fig13.png)
 
 Figure 13. The Standard PC role added to PC00075 (having ID 1 in the database).
 
@@ -120,7 +120,7 @@ When the database is populated, you can use the MDT simulation environment to si
 
     ```
 
-![figure 14](../images/mdt-09-fig14.png)
+![figure 14.](../images/mdt-09-fig14.png)
 
 Figure 14. ZTIGather.log displaying the application GUID belonging to the Adobe Reader XI application that would have been installed if you deployed this machine.
 

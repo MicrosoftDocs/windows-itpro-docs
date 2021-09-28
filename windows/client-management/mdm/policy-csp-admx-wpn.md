@@ -107,7 +107,7 @@ If you do not configure this policy setting, voice and video calls will be allow
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off calls during Quiet Hours*
+-   GP Friendly name: *Turn off calls during Quiet Hours*
 -   GP name: *NoCallsDuringQuietHours*
 -   GP path: *Start Menu and Taskbar\Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -178,7 +178,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off toast notifications on the lock screen*
+-   GP Friendly name: *Turn off toast notifications on the lock screen*
 -   GP name: *NoLockScreenToastNotification*
 -   GP path: *Start Menu and Taskbar\Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -249,7 +249,7 @@ If you do not configure this policy setting, Quiet Hours are enabled by default 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Quiet Hours*
+-   GP Friendly name: *Turn off Quiet Hours*
 -   GP name: *NoQuietHours*
 -   GP path: *Start Menu and Taskbar\Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -324,7 +324,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off toast notifications*
+-   GP Friendly name: *Turn off toast notifications*
 -   GP name: *NoToastNotification*
 -   GP path: *Start Menu and Taskbar\Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -395,7 +395,7 @@ If you do not configure this policy setting, a default value will be used, which
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set the time Quiet Hours begins each day*
+-   GP Friendly name: *Set the time Quiet Hours begins each day*
 -   GP name: *QuietHoursDailyBeginMinute*
 -   GP path: *Start Menu and Taskbar\Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -466,7 +466,7 @@ If you do not configure this policy setting, a default value will be used, which
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set the time Quiet Hours ends each day*
+-   GP Friendly name: *Set the time Quiet Hours ends each day*
 -   GP name: *QuietHoursDailyEndMinute*
 -   GP path: *Start Menu and Taskbar\Notifications*
 -   GP ADMX file name: *WPN.admx*

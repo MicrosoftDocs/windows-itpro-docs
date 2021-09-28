@@ -95,7 +95,7 @@ If you disable this policy setting, users cannot publish DFS roots in AD DS and 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow DFS roots to be published*
+-   GP Friendly name: *Allow DFS roots to be published*
 -   GP name: *PublishDfsRoots*
 -   GP path: *Shared Folders*
 -   GP ADMX file name: *SharedFolders.admx*
@@ -168,7 +168,7 @@ If you disable this policy setting, users cannot publish shared folders in AD DS
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow shared folders to be published*
+-   GP Friendly name: *Allow shared folders to be published*
 -   GP name: *PublishSharedFolders*
 -   GP path: *Shared Folders*
 -   GP ADMX file name: *SharedFolders.admx*

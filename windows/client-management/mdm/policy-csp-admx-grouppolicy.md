@@ -225,7 +225,7 @@ If you disable this policy setting, the behavior is the same as if it is not con
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow cross-forest user policy and roaming user profiles*
+-   GP Friendly name: *Allow cross-forest user policy and roaming user profiles*
 -   GP name: *AllowX-ForestPolicy-and-RUP*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -300,7 +300,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure software Installation policy processing*
+-   GP Friendly name: *Configure software Installation policy processing*
 -   GP name: *CSE_AppMgmt*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -377,7 +377,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure disk quota policy processing*
+-   GP Friendly name: *Configure disk quota policy processing*
 -   GP name: *CSE_DiskQuota*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -454,7 +454,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure EFS recovery policy processing*
+-   GP Friendly name: *Configure EFS recovery policy processing*
 -   GP name: *CSE_EFSRecovery*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -529,7 +529,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure folder redirection policy processing*
+-   GP Friendly name: *Configure folder redirection policy processing*
 -   GP name: *CSE_FolderRedirection*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -606,7 +606,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Internet Explorer Maintenance policy processing*
+-   GP Friendly name: *Configure Internet Explorer Maintenance policy processing*
 -   GP name: *CSE_IEM*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -683,7 +683,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure IP security policy processing*
+-   GP Friendly name: *Configure IP security policy processing*
 -   GP name: *CSE_IPSecurity*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -756,7 +756,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure registry policy processing*
+-   GP Friendly name: *Configure registry policy processing*
 -   GP name: *CSE_Registry*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -831,7 +831,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure scripts policy processing*
+-   GP Friendly name: *Configure scripts policy processing*
 -   GP name: *CSE_Scripts*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -906,7 +906,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure security policy processing*
+-   GP Friendly name: *Configure security policy processing*
 -   GP name: *CSE_Security*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -985,7 +985,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure wired policy processing*
+-   GP Friendly name: *Configure wired policy processing*
 -   GP name: *CSE_Wired*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1064,7 +1064,7 @@ The "Process even if the Group Policy objects have not changed" option updates a
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure wireless policy processing*
+-   GP Friendly name: *Configure wireless policy processing*
 -   GP name: *CSE_Wireless*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1133,7 +1133,7 @@ If you disable or do not configure this policy setting, Group Policy will use th
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify workplace connectivity wait time for policy processing*
+-   GP Friendly name: *Specify workplace connectivity wait time for policy processing*
 -   GP name: *CorpConnSyncWaitTime*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1211,7 +1211,7 @@ If you disable or do not configure this policy setting, interactive users can ge
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Determine if interactive users can generate Resultant Set of Policy data*
+-   GP Friendly name: *Determine if interactive users can generate Resultant Set of Policy data*
 -   GP name: *DenyRsopToInteractiveUser_1*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1289,7 +1289,7 @@ If you disable or do not configure this policy setting, interactive users can ge
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Determine if interactive users can generate Resultant Set of Policy data*
+-   GP Friendly name: *Determine if interactive users can generate Resultant Set of Policy data*
 -   GP name: *DenyRsopToInteractiveUser_2*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1354,7 +1354,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting pr
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Group Policy Client Service AOAC optimization*
+-   GP Friendly name: *Turn off Group Policy Client Service AOAC optimization*
 -   GP name: *DisableAOACProcessing*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1434,7 +1434,7 @@ Files will always be copied to the GPO if they have a later timestamp.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off automatic update of ADM files*
+-   GP Friendly name: *Turn off automatic update of ADM files*
 -   GP name: *DisableAutoADMUpdate*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1506,7 +1506,7 @@ If you disable or do not configure this policy setting, updates can be applied w
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off background refresh of Group Policy*
+-   GP Friendly name: *Turn off background refresh of Group Policy*
 -   GP name: *DisableBackgroundPolicy*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1580,7 +1580,7 @@ If you disable or do not configure this policy setting, Local GPOs continue to b
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Local Group Policy Objects processing*
+-   GP Friendly name: *Turn off Local Group Policy Objects processing*
 -   GP name: *DisableLGPOProcessing*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1656,7 +1656,7 @@ Also, see the "Set Group Policy refresh interval for computers" policy setting t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Remove users' ability to invoke machine policy refresh*
+-   GP Friendly name: *Remove users' ability to invoke machine policy refresh*
 -   GP name: *DisableUsersFromMachGP*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1727,7 +1727,7 @@ If you do not configure this policy setting, the default behavior depends on the
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Continue experiences on this device*
+-   GP Friendly name: *Continue experiences on this device*
 -   GP name: *EnableCDP*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1800,7 +1800,7 @@ If you disable this policy setting, the Group Policy client will not cache appli
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Group Policy Caching*
+-   GP Friendly name: *Configure Group Policy Caching*
 -   GP name: *EnableLogonOptimization*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1873,7 +1873,7 @@ If you disable or do not configure this policy setting, the Group Policy client 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Group Policy Caching for Servers*
+-   GP Friendly name: *Enable Group Policy Caching for Servers*
 -   GP name: *EnableLogonOptimizationOnServerSKU*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -1944,7 +1944,7 @@ If you do not configure this policy setting, the default behavior depends on the
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Phone-PC linking on this device*
+-   GP Friendly name: *Phone-PC linking on this device*
 -   GP name: *EnableMMX*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2020,7 +2020,7 @@ In Group Policy Object Editor, preferences have a red icon to distinguish them f
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enforce Show Policies Only*
+-   GP Friendly name: *Enforce Show Policies Only*
 -   GP name: *EnforcePoliciesOnly*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2087,7 +2087,7 @@ This feature can be configured to be in 3 modes: On, Off, and Audit. By default,
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Untrusted Font Blocking*
+-   GP Friendly name: *Untrusted Font Blocking*
 -   GP name: *DisableUsersFromMachGP*
 -   GP path: *System\Mitigation Options*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2165,7 +2165,7 @@ If you disable this setting or do not configure it, the Group Policy Object Edit
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Group Policy domain controller selection*
+-   GP Friendly name: *Configure Group Policy domain controller selection*
 -   GP name: *GPDCOptions*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2242,7 +2242,7 @@ Also, see the "Do not detect slow network connections" and related policies in C
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Group Policy slow link detection*
+-   GP Friendly name: *Configure Group Policy slow link detection*
 -   GP name: *GPTransferRate_1*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2319,7 +2319,7 @@ Also, see the "Do not detect slow network connections" and related policies in C
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Group Policy slow link detection*
+-   GP Friendly name: *Configure Group Policy slow link detection*
 -   GP name: *GPTransferRate_2*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2401,7 +2401,7 @@ This setting is only used when the "Turn off background refresh of Group Policy"
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Group Policy refresh interval for computers*
+-   GP Friendly name: *Set Group Policy refresh interval for computers*
 -   GP name: *GroupPolicyRefreshRate*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2477,7 +2477,7 @@ This setting also lets you specify how much the actual update interval varies. T
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Group Policy refresh interval for domain controllers*
+-   GP Friendly name: *Set Group Policy refresh interval for domain controllers*
 -   GP name: *GroupPolicyRefreshRateDC*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2561,7 +2561,7 @@ This setting also lets you specify how much the actual update interval varies. T
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Group Policy refresh interval for users*
+-   GP Friendly name: *Set Group Policy refresh interval for users*
 -   GP name: *GroupPolicyRefreshRateUser*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2636,7 +2636,7 @@ If you do not configure this policy setting, Group Policy will wait five minutes
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Logon Script Delay*
+-   GP Friendly name: *Configure Logon Script Delay*
 -   GP name: *LogonScriptDelay*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2707,7 +2707,7 @@ If this setting is Disabled or Not Configured, the default display name of New G
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set default name for new Group Policy objects*
+-   GP Friendly name: *Set default name for new Group Policy objects*
 -   GP name: *NewGPODisplayName*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2776,7 +2776,7 @@ If you disable this setting or do not configure it, new Group Policy object link
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Create new Group Policy Object links disabled by default*
+-   GP Friendly name: *Create new Group Policy Object links disabled by default*
 -   GP name: *NewGPOLinksDisabled*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2862,7 +2862,7 @@ If you disable or do not configure this setting, the Group Policy Object Editor 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Always use local ADM files for Group Policy Object Editor*
+-   GP Friendly name: *Always use local ADM files for Group Policy Object Editor*
 -   GP name: *OnlyUseLocalAdminFiles*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -2949,7 +2949,7 @@ Setting flags not specified here to any value other than ? results in undefined 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Process Mitigation Options*
+-   GP Friendly name: *Process Mitigation Options*
 -   GP name: *ProcessMitigationOptions*
 -   GP path: *System\Mitigation Options*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -3023,7 +3023,7 @@ If you disable or do not configure this setting, RSoP logging is turned on. By d
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Resultant Set of Policy logging*
+-   GP Friendly name: *Turn off Resultant Set of Policy logging*
 -   GP name: *RSoPLogging*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -3088,7 +3088,7 @@ Available in the latest Windows 10 Insider Preview Build. Enabling this setting 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable AD/DFS domain controller synchronization during policy refresh*
+-   GP Friendly name: *Enable AD/DFS domain controller synchronization during policy refresh*
 -   GP name: *ResetDfsClientInfoDuringRefreshPolicy*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -3162,7 +3162,7 @@ If you disable this setting or do not configure it, Group Policy will evaluate t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Direct Access connections as a fast network connection*
+-   GP Friendly name: *Configure Direct Access connections as a fast network connection*
 -   GP name: *SlowLinkDefaultForDirectAccess*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -3241,7 +3241,7 @@ If you disable or do not configure this policy setting, detecting a slow network
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Change Group Policy processing to run asynchronously when a slow network connection is detected.*
+-   GP Friendly name: *Change Group Policy processing to run asynchronously when a slow network connection is detected.*
 -   GP name: *SlowlinkDefaultToAsync*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -3310,7 +3310,7 @@ If you disable or do not configure this policy setting, Group Policy will use th
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify startup policy processing wait time*
+-   GP Friendly name: *Specify startup policy processing wait time*
 -   GP name: *SyncWaitTime*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -3388,7 +3388,7 @@ If you disable this setting or do not configure it, the user's Group Policy Obje
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure user Group Policy loopback processing mode*
+-   GP Friendly name: *Configure user Group Policy loopback processing mode*
 -   GP name: *UserPolicyMode*
 -   GP path: *System\Group Policy*
 -   GP ADMX file name: *GroupPolicy.admx*

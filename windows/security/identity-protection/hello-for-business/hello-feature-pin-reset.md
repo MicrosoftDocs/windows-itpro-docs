@@ -22,6 +22,7 @@ ms.reviewer:
 **Applies to:**
 
 - Windows 10, version 1709 or later
+- Windows 11
 
 Windows Hello for Business provides the capability for users to reset forgotten PINs using the "I forgot my PIN link" from the Sign-in options page in Settings or from above the lock screen. User's are required to authenticate and complete multifactor authentication to reset their PIN.
 
@@ -81,7 +82,7 @@ Visit the [Windows Hello for Business Videos](./hello-videos.md) page and watch 
 
 When non-destructive PIN reset is enabled on a client, a 256-bit AES key is generated locally and added to a user's Windows Hello for Business container and keys as the PIN reset protector. This PIN reset protector is encrypted using a public key retrieved from the Microsoft PIN reset service and then stored on the client for later use during PIN reset. After a user initiates a PIN reset, completes authentication to Azure, and completes multifactor authentication, the encrypted PIN reset protector is sent to the Microsoft PIN reset service, decrypted, and returned to the client. The decrypted PIN reset protector is used to change the PIN used to authorize Windows Hello for Business keys and it is then cleared from memory.
 
-Using Group Policy, Microsoft Intune or a compatible MDM, you can configure Windows 10 devices to securely use the Microsoft PIN reset service that enables users to reset their forgotten PIN through settings or above the lock screen without requiring re-enrollment.
+Using Group Policy, Microsoft Intune or a compatible MDM, you can configure Windows devices to securely use the Microsoft PIN reset service that enables users to reset their forgotten PIN through settings or above the lock screen without requiring re-enrollment.
 
 >[!IMPORTANT]
 > The Microsoft PIN Reset service only works with **Enterprise Edition** for Windows 10, version 1709 to 1809.  The feature works with **Enterprise Edition** and **Pro** edition with Windows 10, version 1903 and newer.
@@ -97,24 +98,24 @@ Before you can remotely reset PINs, you must on-board the Microsoft PIN reset se
 
 1. After you have logged in, choose **Accept** to give consent for the PIN reset service to access your account.
 
-   ![PIN reset service application in Azure](images/pinreset/pin-reset-service-prompt.png)
+   ![PIN reset service application in Azure.](images/pinreset/pin-reset-service-prompt.png)
 
 1. Go to the [Microsoft PIN Reset Client Production website](https://login.windows.net/common/oauth2/authorize?response_type=code&client_id=9115dd05-fad5-4f9c-acc7-305d08b1b04e&resource=https%3A%2F%2Fcred.microsoft.com%2F&redirect_uri=ms-appx-web%3A%2F%2FMicrosoft.AAD.BrokerPlugin%2F9115dd05-fad5-4f9c-acc7-305d08b1b04e&state=6765f8c5-f4a7-4029-b667-46a6776ad611&prompt=admin_consent), and sign in using the Global administrator account you use to manage your Azure Active Directory tenant.
 
 1. After you have logged in, choose **Accept** to give consent for the PIN reset client to access your account.
 
-   ![PIN reset client application in Azure](images/pinreset/pin-reset-client-prompt.png)
+   ![PIN reset client application in Azure.](images/pinreset/pin-reset-client-prompt.png)
 
    > [!NOTE]
    > After you have accepted the PIN reset service and client requests, you will land on a page that states "You do not have permission to view this directory or page." This behavior is expected. Be sure to confirm that the two PIN reset applications are listed for your tenant.
 
 1. In the [Azure portal](https://portal.azure.com), verify that the Microsoft PIN Reset Service and Microsoft PIN Reset Client are integrated from the **Enterprise applications** blade. Filter to application status "Enabled" and both Microsoft Pin Reset Service Production and Microsoft Pin Reset Client Production will show up in your tenant.
 
-   :::image type="content" alt-text="PIN reset service permissions page" source="images/pinreset/pin-reset-applications.png" lightbox="images/pinreset/pin-reset-applications.png":::
+   :::image type="content" alt-text="PIN reset service permissions page." source="images/pinreset/pin-reset-applications.png" lightbox="images/pinreset/pin-reset-applications.png":::
 
 ### Configure Windows devices to use PIN reset using Group Policy
 
-You configure Windows 10 to use the Microsoft PIN Reset service using the computer configuration portion of a Group Policy object.
+You can configure Windows to use the Microsoft PIN Reset service using the computer configuration portion of a Group Policy object.
 
 1. Using the Group Policy Management Console (GPMC), scope a domain-based Group Policy to computer accounts in Active Directory.
 1. Edit the Group Policy object from Step 1.
@@ -188,6 +189,7 @@ The PIN reset configuration for a user can be viewed by running [**dsregcmd /sta
 **Applies to:**
 
 - Windows 10, version 1803 or later
+- Windows 11
 - Azure AD joined
 
 The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-authentication#authentication-configurewebsigninallowedurls) policy allows you to specify a list of domains that are allowed to be navigated to during PIN reset flows on Azure AD joined devices. If you have a federated environment and authentication is handled using AD FS or a third-party identity provider, this policy should be set to ensure that authentication pages from that identity provider can be used during Azure AD joined PIN reset.
@@ -210,7 +212,7 @@ The [ConfigureWebSignInAllowedUrls](/windows/client-management/mdm/policy-csp-au
     - **Data type:** String
     - **Value**: Provide a semicolon delimited list of domains needed for authentication during the PIN reset scenario. An example value would be _signin.contoso.com;portal.contoso.com_ (without quotation marks)
 
-    :::image type="content" alt-text="Custom Configuration for ConfigureWebSignInAllowedUrls policy" source="images/pinreset/allowlist.png" lightbox="images/pinreset/allowlist.png":::
+    :::image type="content" alt-text="Custom Configuration for ConfigureWebSignInAllowedUrls policy." source="images/pinreset/allowlist.png" lightbox="images/pinreset/allowlist.png":::
 
 1. Click the Save button to save the custom configuration.
 

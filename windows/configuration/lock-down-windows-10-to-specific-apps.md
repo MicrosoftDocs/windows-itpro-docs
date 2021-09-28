@@ -1,8 +1,8 @@
 ---
-title: Set up a multi-app kiosk  (Windows 10)
+title: Set up a multi-app kiosk on Windows 10 | Microsoft Docs
 description: Learn how to configure a kiosk device running Windows 10 so that users can only run a few specific apps.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
-ms.reviewer: 
+ms.reviewer: sybruckm
 manager: dansimp
 keywords: ["lockdown", "app restrictions", "applocker"]
 ms.prod: w10
@@ -11,24 +11,26 @@ ms.sitesec: library
 ms.pagetype: edu, security
 author: greg-lindsay
 ms.localizationpriority: medium
-ms.date: 01/09/2019
 ms.author: greglin
 ms.topic: article
 ---
 
-# Set up a multi-app kiosk
+# Set up a multi-app kiosk on Windows 10 devices
 
 **Applies to**
 
 - Windows 10 Pro, Enterprise, and Education
 
+> [!NOTE]
+> [!INCLUDE [Multi-app kiosk mode not supported on Windows 11](./includes/multi-app-kiosk-support-windows11.md)]
+
 A [kiosk device](./kiosk-single-app.md) typically runs a single app, and users are prevented from accessing any features or functions on the device outside of the kiosk app. In Windows 10, version 1709, the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp) was expanded to make it easy for administrators to create kiosks that run more than one app. The benefit of a kiosk that runs only one or more specified apps is to provide an easy-to-understand experience for individuals by putting in front of them only the things they need to use, and removing from their view the things they don’t need to access.
 
 The following table lists changes to multi-app kiosk in recent updates.
 
-|                                                                                                                            New features and improvements                                                                                                                             |                                                                                                           In update                                                                                                           |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                     - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account)                     |                                                                                                   Windows 10, version 1803                                                                                                    |
+| New features and improvements |  In update |
+| --- | ---|
+| - Configure [a single-app kiosk profile](#profile) in your XML file<br><br>- Assign [group accounts to a config profile](#config-for-group-accounts)<br><br>- Configure [an account to sign in automatically](#config-for-autologon-account) | Windows 10, version 1803 |
 | - Explicitly allow [some known folders when user opens file dialog box](#fileexplorernamespacerestrictions)<br><br>- [Automatically launch an app](#allowedapps) when the user signs in<br><br>- Configure a [display name for the autologon account](#config-for-autologon-account) | Windows 10, version 1809<br><br>**Important:** To use features released in Windows 10, version 1809, make sure that [your XML file](#create-xml-file) references `https://schemas.microsoft.com/AssignedAccess/201810/config`. |
 
 >[!WARNING]
@@ -43,7 +45,10 @@ You can configure multi-app kiosks using [Microsoft Intune](#intune) or a [provi
 
 ## Configure a kiosk in Microsoft Intune
 
-To configure a kiosk in Microsoft Intune, see [Windows 10 and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings). For explanations of the specific settings, see [Windows 10 and later device settings to run as a kiosk in Intune](/intune/kiosk-settings-windows).
+To configure a kiosk in Microsoft Intune, see:
+
+- [Windows client and Windows Holographic for Business device settings to run as a dedicated kiosk using Intune](/intune/kiosk-settings)
+- [Windows client device settings to run as a kiosk in Intune](/intune/kiosk-settings-windows)
 
 <span id="provision" />
 
@@ -59,7 +64,7 @@ Watch how to use a provisioning package to configure a multi-app kiosk.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/fa125d0f-77e4-4f64-b03e-d634a4926884?autoplay=false]
 
-If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#alternate-methods) or you can configure assigned access using the [MDM Bridge WMI Provider](kiosk-mdm-bridge.md).
+If you don't want to use a provisioning package, you can deploy the configuration XML file using [mobile device management (MDM)](#use-mdm-to-deploy-the-multi-app-configuration), or you can configure assigned access using the [MDM Bridge WMI Provider](kiosk-mdm-bridge.md).
 
 ### Prerequisites
 
@@ -81,7 +86,7 @@ Let's start by looking at the basic structure of the XML file.
 
 - A profile has no effect if it’s not associated to a config section.
 
-    ![profile = app and config = account](images/profile-config.png)
+    ![profile = app and config = account.](images/profile-config.png)
 
 You can start your file by pasting the following XML (or any other examples in this topic) into a XML editor, and saving the file as *filename*.xml. Each section of this XML is explained in this topic. You can see a full sample version in the [Assigned access XML reference.](kiosk-xml.md)
 
@@ -114,7 +119,7 @@ You can start your file by pasting the following XML (or any other examples in t
 There are two types of profiles that you can specify in the XML:
 
 - **Lockdown profile**: Users assigned a lockdown profile will see the desktop in tablet mode with the specific apps on the Start screen.
-- **Kiosk profile**: New in Windows 10, version 1803, this profile replaces the KioskModeApp node of the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile will not see the desktop, but only the kiosk app running in full-screen mode.
+- **Kiosk profile**: Starting with Windows 10 version 1803, this profile replaces the KioskModeApp node of the [AssignedAccess CSP](/windows/client-management/mdm/assignedaccess-csp). Users assigned a kiosk profile will not see the desktop, but only the kiosk app running in full-screen mode.
 
 A lockdown profile section in the XML has the following entries:
 
@@ -146,7 +151,7 @@ The profile **Id** is a GUID attribute to uniquely identify the profile. You can
 
 ##### AllowedApps
 
-**AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Windows desktop applications. In Windows 10, version 1809, you can configure a single app in the **AllowedApps** list to run automatically when the assigned access user account signs in.
+**AllowedApps** is a list of applications that are allowed to run. Apps can be Universal Windows Platform (UWP) apps or Windows desktop applications. Starting with Windows 10 version 1809, you can configure a single app in the **AllowedApps** list to run automatically when the assigned access user account signs in.
 
 - For UWP apps, you need to provide the App User Model ID (AUMID). [Learn how to get the AUMID](./find-the-application-user-model-id-of-an-installed-app.md), or [get the AUMID from the Start Layout XML](#startlayout).
 - For desktop apps, you need to specify the full path of the executable, which can contain one or more system environment variables in the form of %variableName% (i.e. %systemroot%, %windir%).
@@ -189,7 +194,7 @@ The following example allows Groove Music, Movies & TV, Photos, Weather, Calcula
 
 ##### FileExplorerNamespaceRestrictions
 
-Starting in Windows 10, version 1809, you can explicitly allow some known folders to be accessed when the user tries to open the file dialog box in multi-app assigned access by including **FileExplorerNamespaceRestrictions** in your XML file. Currently, **Downloads** is the only folder supported.  This can also be set using Microsoft Intune.
+Starting in Windows 10 version 1809, you can explicitly allow some known folders to be accessed when the user tries to open the file dialog box in multi-app assigned access by including **FileExplorerNamespaceRestrictions** in your XML file. Currently, **Downloads** is the only folder supported.  This can also be set using Microsoft Intune.
 
 The following example shows how to allow user access to the Downloads folder in the common file dialog box.
 
@@ -231,7 +236,7 @@ FileExplorerNamespaceRestriction has been extended in current Windows 10 Prerele
 
 After you define the list of allowed applications, you can customize the Start layout for your kiosk experience. You can choose to pin all the allowed apps on the Start screen or just a subset, depending on whether you want the end user to directly access them on the Start screen.
 
-The easiest way to create a customized Start layout to apply to other Windows 10 devices is to set up the Start screen on a test device and then export the layout. For detailed steps, see [Customize and export Start layout](customize-and-export-start-layout.md).
+The easiest way to create a customized Start layout to apply to other Windows client devices is to set up the Start screen on a test device and then export the layout. For detailed steps, see [Customize and export Start layout](customize-and-export-start-layout.md).
 
 A few things to note here:
 
@@ -269,9 +274,9 @@ This example pins Groove Music, Movies & TV, Photos, Weather, Calculator, Paint,
 ```
 
 >[!NOTE]
->If an app is not installed for the user but is included in the Start layout XML, the app will not be shown on the Start screen.
+>If an app isn't installed for the user, but is included in the Start layout XML, the app isn't shown on the Start screen.
 
-![What the Start screen looks like when the XML sample is applied](images/sample-start.png)
+![What the Start screen looks like when the XML sample is applied.](images/sample-start.png)
 
 ##### Taskbar
 
@@ -333,7 +338,7 @@ The following example shows how to specify an account to sign in automatically.
 </Configs>
 ```
 
-In Windows 10, version 1809, you can configure the display name that will be shown when the user signs in. The following example shows how to create an AutoLogon Account that shows the name "Hello World".
+Starting with Windows 10 version 1809, you can configure the display name that will be shown when the user signs in. The following example shows how to create an AutoLogon Account that shows the name "Hello World".
 
 ```xml
 <Configs>
@@ -411,7 +416,7 @@ Group accounts are specified using `<UserGroup>`. Nested groups are not supporte
 <span id="add-xml" />
 
 #### [Preview] Global Profile
-Global profile is added in current Windows 10 Prerelease. There are times when IT Admin wants to everyone who logging into a specific devices are assigned access users, even there is no dedicated profile for that user, or there are times that Assigned Access could not identify a profile for the user and a fallback profile is wished to use. Global Profile is designed for these scenarios.
+Global profile is added in Windows 10. There are times when IT Admin wants to everyone who logging into a specific devices are assigned access users, even there is no dedicated profile for that user, or there are times that Assigned Access could not identify a profile for the user and a fallback profile is wished to use. Global Profile is designed for these scenarios.
 
 Usage is demonstrated below, by using the new xml namespace and specify GlobalProfile from that namespace. When GlobalProfile is configured, a non-admin account logs in, if this user does not have designated profile in Assigned Access, or Assigned Access fails to determine a profile for current user, global profile will be applied for the user.
 
@@ -494,7 +499,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 7. In the center pane, click **Browse** to locate and select the assigned access configuration XML file that you created.
 
-   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer](images/multiappassignedaccesssettings.png)
+   ![Screenshot of the MultiAppAssignedAccessSettings field in Windows Configuration Designer.](images/multiappassignedaccesssettings.png)
 
 8. (**Optional**: If you want to apply the provisioning package after device initial setup and there is an admin user already available on the kiosk device, skip this step.) Create an admin user account in **Runtime settings** &gt; **Accounts** &gt; **Users**. Provide a **UserName** and **Password**, and select **UserGroup** as **Administrators**. With this account, you can view the provisioning status and logs if needed.
 
@@ -538,13 +543,13 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 Provisioning packages can be applied to a device during the first-run experience (out-of-box experience or "OOBE") and after ("runtime").
 
 >[!TIP]
->In addition to the methods below, you can use the PowerShell comdlet [install-provisioningpackage](/powershell/module/provisioning/Install-ProvisioningPackage?view=win10-ps) with `-LogsDirectoryPath` to get logs for the operation.
+>In addition to the methods below, you can use the PowerShell comdlet [install-provisioningpackage](/powershell/module/provisioning/Install-ProvisioningPackage) with `-LogsDirectoryPath` to get logs for the operation.
 
 #### During initial setup, from a USB drive
 
 1. Start with a computer on the first-run setup screen. If the PC has gone past this screen, reset the PC to start over. To reset the PC, go to **Settings** > **Update & security** > **Recovery** > **Reset this PC**.
 
-    ![The first screen to set up a new PC](images/oobe.jpg)
+    ![The first screen to set up a new PC.](images/oobe.jpg)
 
 2. Insert the USB drive. Windows Setup will recognize the drive and ask if you want to set up the device. Select **Set up**.
 
@@ -552,11 +557,11 @@ Provisioning packages can be applied to a device during the first-run experience
 
 3. The next screen asks you to select a provisioning source. Select **Removable Media** and tap **Next**.
 
-    ![Provision this device](images/prov.jpg)
+    ![Provision this device.](images/prov.jpg)
 
 4. Select the provisioning package (\*.ppkg) that you want to apply, and tap **Next**.
 
-    ![Choose a package](images/choose-package.png)
+    ![Choose a package.](images/choose-package.png)
 
 5. Select **Yes, add it**.
 
@@ -570,9 +575,8 @@ Provisioning packages can be applied to a device during the first-run experience
 >[!NOTE]
 >if your provisioning package doesn’t include the assigned access user account creation, make sure the account you specified in the multi-app configuration XML exists on the device.
 
-![add a package option](images/package.png)
+![add a package option.](images/package.png)
 
-<span id="alternate-methods" />
 ### Use MDM to deploy the multi-app configuration
 
 Multi-app kiosk mode is enabled by the [AssignedAccess configuration service provider (CSP)](/windows/client-management/mdm/assignedaccess-csp). Your MDM policy can contain the assigned access configuration XML.

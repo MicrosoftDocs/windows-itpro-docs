@@ -1,5 +1,5 @@
 ---
-title: Query Application Control events with Advanced Hunting (Windows 10)
+title: Query Application Control events with Advanced Hunting (Windows)
 description: Learn how to query Windows Defender Application Control events across your entire organization by using Advanced Hunting.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb

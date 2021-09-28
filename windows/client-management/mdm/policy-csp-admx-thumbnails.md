@@ -97,7 +97,7 @@ If you disable or do not configure this policy setting, File Explorer displays o
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the display of thumbnails and only display icons.*
+-   GP Friendly name: *Turn off the display of thumbnails and only display icons.*
 -   GP name: *DisableThumbnails*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *Thumbnails.admx*
@@ -168,7 +168,7 @@ If you disable or do not configure this policy setting, File Explorer displays o
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the display of thumbnails and only display icons on network folders*
+-   GP Friendly name: *Turn off the display of thumbnails and only display icons on network folders*
 -   GP name: *DisableThumbnailsOnNetworkFolders*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *Thumbnails.admx*
@@ -239,7 +239,7 @@ If you disable or do not configure this policy setting, File Explorer creates, r
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the caching of thumbnails in hidden thumbs.db files*
+-   GP Friendly name: *Turn off the caching of thumbnails in hidden thumbs.db files*
 -   GP name: *DisableThumbsDBOnNetworkFolders*
 -   GP path: *Windows Components\File Explorer*
 -   GP ADMX file name: *Thumbnails.admx*

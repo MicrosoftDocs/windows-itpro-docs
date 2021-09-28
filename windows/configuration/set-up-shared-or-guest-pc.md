@@ -1,6 +1,6 @@
 ---
-title: Set up a shared or guest PC with Windows 10 (Windows 10)
-description: Windows 10, version 1607, introduces *shared PC mode*, which optimizes Windows 10 for shared use scenarios.
+title: Set up a shared or guest PC with Windows 10/11
+description: Windows 10 and Windows has shared PC mode, which optimizes Windows client for shared use scenarios.
 keywords: ["shared pc mode"]
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -9,30 +9,31 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.reviewer: 
+ms.reviewer: sybruckm
 manager: dansimp
 ---
 
-# Set up a shared or guest PC with Windows 10
+# Set up a shared or guest PC with Windows 10/11
 
 
 **Applies to**
 
--   Windows 10
+- Windows 10
+- Windows 11
 
-Windows 10, version 1607, introduced *shared PC mode*, which optimizes Windows 10 for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows 10 Pro, Pro Education, Education, and Enterprise.
+Windows client has a *shared PC mode*, which optimizes Windows client for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows client Pro, Pro Education, Education, and Enterprise.
 
 > [!NOTE]
-> If you're interested in using Windows 10 for shared PCs in a school, see [Use Set up School PCs app](/education/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
+> If you're interested in using Windows client for shared PCs in a school, see [Use Set up School PCs app](/education/windows/use-set-up-school-pcs-app) which provides a simple way to configure PCs with shared PC mode plus additional settings specific for education.
 
 ## Shared PC mode concepts
-A Windows 10 PC in shared PC mode is designed to be management- and maintenance-free with high reliability. In shared PC mode, only one user can be signed in at a time. When the PC is locked, the currently signed in user can always be signed out at the lock screen. 
+A Windows client PC in shared PC mode is designed to be management- and maintenance-free with high reliability. In shared PC mode, only one user can be signed in at a time. When the PC is locked, the currently signed in user can always be signed out at the lock screen. 
 
 ### Account models
-It is intended that shared PCs are joined to an Active Directory or Azure Active Directory domain by a user with the necessary rights to perform a domain join as part of a setup process. This enables any user that is part of the directory to sign-in to the PC. If using Azure Active Directory Premium, any domain user can also be configured to sign in with administrative rights. Additionally, shared PC mode can be configured to enable a **Guest** option on the sign-in screen, which doesn't require any user credentials or authentication, and creates a new local account each time it is used. Windows 10, version 1703, introduces a **kiosk mode** account. Shared PC mode can be configured to enable a **Kiosk** option on the sign-in screen, which doesn't require any user credentials or authentication, and creates a new local account each time it is used to run a specified app in assigned access (kiosk) mode.
+It is intended that shared PCs are joined to an Active Directory or Azure Active Directory domain by a user with the necessary rights to perform a domain join as part of a setup process. This enables any user that is part of the directory to sign-in to the PC. If using Azure Active Directory Premium, any domain user can also be configured to sign in with administrative rights. Additionally, shared PC mode can be configured to enable a **Guest** option on the sign-in screen, which doesn't require any user credentials or authentication, and creates a new local account each time it is used. Windows client has a **kiosk mode** account. Shared PC mode can be configured to enable a **Kiosk** option on the sign-in screen, which doesn't require any user credentials or authentication, and creates a new local account each time it is used to run a specified app in assigned access (kiosk) mode.
 
 ### Account management
-When the account management service is turned on in shared PC mode, accounts are automatically deleted. Account deletion applies to Active Directory, Azure Active Directory, and local accounts that are created by the **Guest** and **Kiosk** options. Account management is performed both at sign-off time (to make sure there is enough disk space for the next user) as well as during system maintenance time periods. Shared PC mode can be configured to delete accounts immediately at sign-out or when disk space is low. In Windows 10, version 1703, an inactive option is added which deletes accounts if they haven't signed in after a specified number of days.
+When the account management service is turned on in shared PC mode, accounts are automatically deleted. Account deletion applies to Active Directory, Azure Active Directory, and local accounts that are created by the **Guest** and **Kiosk** options. Account management is performed both at sign-off time (to make sure there is enough disk space for the next user) as well as during system maintenance time periods. Shared PC mode can be configured to delete accounts immediately at sign-out or when disk space is low. In Windows client, an inactive option is added which deletes accounts if they haven't signed in after a specified number of days.
 
 ### Maintenance and sleep
 Shared PC mode is configured to take advantage of maintenance time periods which run while the PC is not in use. Therefore, sleep is strongly recommended so that the PC can wake up when it is not in use to perform maintenance, clean up accounts, and run Windows Update. The recommended settings can be set by choosing **SetPowerPolicies** in the list of shared PC options. Additionally, on devices without Advanced Configuration and Power Interface (ACPI) wake alarms, shared PC mode will always override real-time clock (RTC) wake alarms to be allowed to wake the PC from sleep (by default, RTC wake alarms are off). This ensures that the widest variety of hardware will take advantage of maintenance periods.
@@ -73,7 +74,7 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 | Customization: MaintenanceStartTime | By default, the maintenance start time (which is when automatic maintenance tasks run, such as Windows Update) is midnight. You can adjust the start time in this setting by entering a new start time in minutes from midnight. For example, if you want maintenance to begin at 2 AM, enter `120` as the value.   |
 | Customization: MaxPageFileSizeMB | Adjusts the maximum page file size in MB. This can be used to fine-tune page file behavior, especially on low end PCs.  |  
 | Customization: RestrictLocalStorage | Set as **True** to restrict the user from saving or viewing local storage when using File Explorer. This setting controls this API: [ShouldAvoidLocalStorage](/uwp/api/windows.system.profile.sharedmodesettings)  | 
-| Customization: SetEduPolicies | Set to **True** for PCs that will be used in a school. For more information, see [Windows 10 configuration recommendations for education customers](/education/windows/configure-windows-for-education). This setting controls this API: [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings) |
+| Customization: SetEduPolicies | Set to **True** for PCs that will be used in a school. For more information, see [Windows client configuration recommendations for education customers](/education/windows/configure-windows-for-education). This setting controls this API: [IsEducationEnvironment](/uwp/api/windows.system.profile.educationsettings) |
 | Customization: SetPowerPolicies |  When set as **True**:<br/>- Prevents users from changing power settings<br/>- Turns off hibernate<br/>- Overrides all power state transitions to sleep (e.g. lid close)  |
 | Customization: SignInOnResume | This setting specifies if the user is required to sign in with a password when the PC wakes from sleep.     |
 | Customization: SleepTimeout | Specifies all timeouts for when the PC should sleep. Enter the amount of idle time in seconds. If you don't set sleep timeout, the default of 1 hour applies.     |
@@ -83,7 +84,7 @@ Shared PC mode exposes a set of customizations to tailor the behavior to your re
 
 You can configure Windows to be in shared PC mode in a couple different ways:
 
-- Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp). To setup a shared device policy for Windows 10 in Intune, complete the following steps:
+- Mobile device management (MDM): Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp). To setup a shared device policy for Windows client in Intune, complete the following steps:
 
   1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
   
@@ -108,16 +109,16 @@ You can configure Windows to be in shared PC mode in a couple different ways:
   8. On the **Configuration settings** page, set the ‘Shared PC Mode’ value to **Enabled**.
 
      > [!div class="mx-imgBorder"]
-     > ![Shared PC mode in the Configuration settings page](images/shared_pc_3.png) 
+     > ![Shared PC mode in the Configuration settings page.](images/shared_pc_3.png) 
 
   11. From this point on, you can configure any additional settings you’d like to be part of this policy, and then follow the rest of the set-up flow to its completion by selecting **Create** after **Step 6**.
 
-- A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows 10 PC that is already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp), exposed in Windows Configuration Designer as **SharedPC**.
+- A provisioning package created with the Windows Configuration Designer: You can apply a provisioning package when you initially set up the PC (also known as the out-of-box-experience or OOBE), or you can apply the provisioning package to a Windows client that's already in use. The provisioning package is created in Windows Configuration Designer. Shared PC mode is enabled by the [SharedPC configuration service provider (CSP)](/windows/client-management/mdm/sharedpc-csp), exposed in Windows Configuration Designer as **SharedPC**.
 
-     ![Shared PC settings in ICD](images/icd-adv-shared-pc.png)
+     ![Shared PC settings in ICD.](images/icd-adv-shared-pc.png)
 
 - WMI bridge: Environments that use Group Policy can use the [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal) to configure the [MDM_SharedPC class](/windows/win32/dmwmibridgeprov/mdm-sharedpc). For all device settings, the WMI Bridge client must be executed under local system user; for more information, see [Using PowerShell scripting with the WMI Bridge Provider](/windows/client-management/mdm/using-powershell-scripting-with-the-wmi-bridge-provider). For example, open PowerShell as an administrator and enter the following:
-    
+
   ```powershell
   $sharedPC = Get-CimInstance -Namespace "root\cimv2\mdm\dmmap" -ClassName "MDM_SharedPC"
   $sharedPC.EnableSharedPCMode = $True
@@ -189,7 +190,7 @@ You can apply the provisioning package to a PC during initial setup or to a PC t
 
 1. Start with a PC on the setup screen. 
 
-    ![The first screen to set up a new PC](images/oobe.jpg)
+    ![The first screen to set up a new PC.](images/oobe.jpg)
 
 2. Insert the USB drive. If nothing happens when you insert the USB drive, press the Windows key five times.
 
@@ -206,7 +207,7 @@ You can apply the provisioning package to a PC during initial setup or to a PC t
 
 On a desktop computer, navigate to **Settings** &gt; **Accounts** &gt; **Work access** &gt; **Add or remove a management package** &gt; **Add a package**, and selects the package to install. 
 
-![add a package option](images/package.png)
+![add a package option.](images/package.png)
 
 > [!NOTE]
 > If you apply the setup file to a computer that has already been set up, existing accounts and data might be lost.

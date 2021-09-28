@@ -1,5 +1,5 @@
 ---
-title: VPN routing decisions (Windows 10)
+title: VPN routing decisions (Windows 10 and Windows 10)
 description: Learn about approaches that either send all data through a VPN or only selected data. The one you choose impacts capacity planning and security expectations.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security, networking
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 09/23/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -17,7 +17,7 @@ ms.author: dansimp
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
+-   Windows 11
 
 Network routes are required for the stack to understand which interface to use for outbound traffic. One of the most important decision points for VPN configuration is whether you want to send all the data through VPN (*force tunnel*) or only some data through the VPN (*split tunnel*). This decision impacts the configuration and the capacity planning, as well as security expectations from the connection. 
 
@@ -53,11 +53,11 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 
 When you configure a VPN profile in Microsoft Intune, you select a checkbox to enable split tunnel configuration.
 
-![split tunnel](images/vpn-split.png)
+![split tunnel.](images/vpn-split.png)
 
 Next, in **Corporate Boundaries**, you add the routes that should use the VPN connection.   
   
-![add route for split tunnel](images/vpn-split-route.png)
+![add route for split tunnel.](images/vpn-split-route.png)
 
 
 ## Related topics

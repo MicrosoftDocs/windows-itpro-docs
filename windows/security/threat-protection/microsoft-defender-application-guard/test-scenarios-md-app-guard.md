@@ -33,7 +33,7 @@ You can see how an employee would use standalone mode with Application Guard.
 
 2. Restart the device, start Microsoft Edge, and then select **New Application Guard window** from the menu.
 
-    ![New Application Guard window setting option](images/appguard-new-window.png)
+    ![New Application Guard window setting option.](images/appguard-new-window.png)
 
 3. Wait for Application Guard to set up the isolated environment.
 
@@ -42,7 +42,7 @@ You can see how an employee would use standalone mode with Application Guard.
 
 4. Go to an untrusted, but safe URL (for this example, we used msn.com) and view the new Microsoft Edge window, making sure you see the Application Guard visual cues.
 
-    ![Untrusted website running in Application Guard](images/appguard-visual-cues.png)
+    ![Untrusted website running in Application Guard.](images/appguard-visual-cues.png)
 
 ## Application Guard in Enterprise-managed mode
 
@@ -64,19 +64,19 @@ Before you can use Application Guard in managed mode, you must install Windows 1
 
    c.  For the purposes of this scenario, type `.microsoft.com` into the **Enterprise cloud resources** box.
 
-   ![Group Policy editor with Enterprise cloud resources setting](images/appguard-gp-network-isolation.png)
+   ![Group Policy editor with Enterprise cloud resources setting.](images/appguard-gp-network-isolation.png)
 
    d. Go to the **Administrative Templates\Network\Network Isolation\Domains categorized as both work and personal** setting.
 
    e. For the purposes of this scenario, type `bing.com` into the **Neutral resources** box.
 
-   ![Group Policy editor with Neutral resources setting](images/appguard-gp-network-isolation-neutral.png)
+   ![Group Policy editor with Neutral resources setting.](images/appguard-gp-network-isolation-neutral.png)
 
 4. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Turn on Microsoft Defender Application Guard in Managed Mode** setting.
 
 5. Click **Enabled**, choose Option **1**, and click **OK**.
 
-   ![Group Policy editor with Turn On/Off setting](images/appguard-gp-turn-on.png)
+   ![Group Policy editor with Turn On/Off setting.](images/appguard-gp-turn-on.png)
 
    >[!NOTE]
    >Enabling this setting verifies that all the necessary settings are properly configured on your employee devices, including the network isolation settings set earlier in this scenario.
@@ -85,13 +85,13 @@ Before you can use Application Guard in managed mode, you must install Windows 1
 
     After you submit the URL, Application Guard determines the URL is trusted because it uses the domain you've marked as trusted and shows the site directly on the host PC instead of in Application Guard.
 
-    ![Trusted website running on Microsoft Edge](images/appguard-turned-on-with-trusted-site.png)
+    ![Trusted website running on Microsoft Edge.](images/appguard-turned-on-with-trusted-site.png)
 
 7. In the same Microsoft Edge browser, type any URL that isn't part of your trusted or neutral site lists.
 
    After you submit the URL, Application Guard determines the URL is untrusted and redirects the request to the hardware-isolated environment.
 
-   ![Untrusted website running in Application Guard](images/appguard-visual-cues.png)
+   ![Untrusted website running in Application Guard.](images/appguard-visual-cues.png)
 
 ### Customize Application Guard
 
@@ -118,7 +118,7 @@ You have the option to change each of these settings to work with your enterpris
 
 2. Click **Enabled** and click **OK**.
 
-    ![Group Policy editor clipboard options](images/appguard-gp-clipboard.png)
+    ![Group Policy editor clipboard options.](images/appguard-gp-clipboard.png)
 
 3. Choose how the clipboard works:
 
@@ -144,7 +144,7 @@ You have the option to change each of these settings to work with your enterpris
 
 2. Click **Enabled** and click **OK**.
 
-    ![Group Policy editor Print options](images/appguard-gp-print.png)
+    ![Group Policy editor Print options.](images/appguard-gp-print.png)
 
 3. Based on the list provided in the setting, choose the number that best represents what type of printing should be available to your employees. You can allow any combination of local, network, PDF, and XPS printing.
 
@@ -156,7 +156,7 @@ You have the option to change each of these settings to work with your enterpris
 
 2. Click **Enabled** and click **OK**.
 
-    ![Group Policy editor Data Persistence options](images/appguard-gp-persistence.png)
+    ![Group Policy editor Data Persistence options.](images/appguard-gp-persistence.png)
 
 3. Open Microsoft Edge and browse to an untrusted, but safe URL.
 
@@ -186,7 +186,7 @@ You have the option to change each of these settings to work with your enterpris
 
 2. Click **Enabled** and click **OK**.
 
-    ![Group Policy editor Download options](images/appguard-gp-download.png)
+    ![Group Policy editor Download options.](images/appguard-gp-download.png)
 
 3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
 
@@ -200,7 +200,7 @@ You have the option to change each of these settings to work with your enterpris
 
 2. Click **Enabled** and click **OK**.
 
-    ![Group Policy editor hardware acceleration options](images/appguard-gp-vgpu.png)
+    ![Group Policy editor hardware acceleration options.](images/appguard-gp-vgpu.png)
 
 3. Once you have enabled this feature, open Microsoft Edge and browse to an untrusted, but safe URL with video, 3D, or other graphics-intensive content. The website opens in an isolated session.
 
@@ -217,7 +217,7 @@ You have the option to change each of these settings to work with your enterpris
 
 2. Click **Enabled**, set **Options** to 2, and click **OK**.
 
-    ![Group Policy editor File trust options](images/appguard-gp-allow-users-to-trust-files-that-open-in-appguard.png)
+    ![Group Policy editor File trust options.](images/appguard-gp-allow-users-to-trust-files-that-open-in-appguard.png)
 
 3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
 
@@ -231,7 +231,7 @@ You have the option to change each of these settings to work with your enterpris
 
 2. Click **Enabled** and click **OK**.
 
-    ![Group Policy editor Camera and microphone options](images/appguard-gp-allow-camera-and-mic.png)
+    ![Group Policy editor Camera and microphone options.](images/appguard-gp-allow-camera-and-mic.png)
 
 3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
 
@@ -245,7 +245,7 @@ You have the option to change each of these settings to work with your enterpris
 
 2. Click **Enabled**, copy the thumbprint of each certificate to share, separated by a comma, and click **OK**.
 
-    ![Group Policy editor Root certificate options](images/appguard-gp-allow-root-certificates.png)
+    ![Group Policy editor Root certificate options.](images/appguard-gp-allow-root-certificates.png)
 
 3. Log out and back on to your device, opening Microsoft Edge in Application Guard again.
 
@@ -258,10 +258,10 @@ Once a user has the extension and its companion app installed on their enterpris
 1. Open either Firefox or Chrome — whichever browser you have the extension installed on.
 
 2. Navigate to an enterprise website, i.e. an internal website maintained by your organization. You might see this evaluation page for an instant before the site is fully loaded.
-   ![The evaluation page displayed while the page is being loaded, explaining that the user must wait](images/app-guard-chrome-extension-evaluation-page.png)
+   ![The evaluation page displayed while the page is being loaded, explaining that the user must wait.](images/app-guard-chrome-extension-evaluation-page.png)
 
 3. Navigate to a non-enterprise, external website site, such as [www.bing.com](https://www.bing.com). The site should be redirected to Microsoft Defender Application Guard Edge.
-   ![A non-enterprise website being redirected to an Application Guard container -- the text displayed explains that the page is being opened in Application Guard for Microsoft Edge](images/app-guard-chrome-extension-launchIng-edge.png)
+   ![A non-enterprise website being redirected to an Application Guard container -- the text displayed explains that the page is being opened in Application Guard for Microsoft Edge.](images/app-guard-chrome-extension-launchIng-edge.png)
 
 4. Open a new Application Guard window, by select the Microsoft Defender Application Guard icon, then **New Application Guard Window**
    ![The "New Application Guard Window" option is highlighted in red](images/app-guard-chrome-extension-new-app-guard-page.png)

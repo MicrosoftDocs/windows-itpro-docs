@@ -58,7 +58,7 @@ You can use Get-WinEvent in an elevated PowerShell window to display filtered in
 
    The output of such a command resembles the following.
 
-   ![Display of events that is produced by using Get-WinEvent and a BitLocker filter](./images/psget-winevent-1.png)
+   ![Display of events that is produced by using Get-WinEvent and a BitLocker filter.](./images/psget-winevent-1.png)
 
 - To export BitLocker-related information:
    ```ps
@@ -77,7 +77,7 @@ You can use Get-WinEvent in an elevated PowerShell window to display filtered in
 
    The output of such a command resembles the following.
 
-   ![Display of events that is produced by using Get-WinEvent and a TPM filter](./images/psget-winevent-2.png)
+   ![Display of events that is produced by using Get-WinEvent and a TPM filter.](./images/psget-winevent-2.png)
 
 > [!NOTE]
 > If you intend to contact Microsoft Support, we recommend that you export the logs listed in this section.

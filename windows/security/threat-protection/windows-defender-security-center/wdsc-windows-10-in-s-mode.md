@@ -34,7 +34,7 @@ Windows 10 in S mode is streamlined for tighter security and superior performanc
 
 The Windows Security interface is a little different in Windows 10 in S mode. The **Virus & threat protection** area has fewer options, because the built-in security of Windows 10 in S mode prevents viruses and other threats from running on devices in your organization. In addition, devices running Windows 10 in S mode receive security updates automatically.
 
-![Screen shot of the Windows Security app Virus & threat protection area in Windows 10 in S mode](images/security-center-virus-and-threat-protection-windows-10-in-s-mode.png)
+![Screen shot of the Windows Security app Virus & threat protection area in Windows 10 in S mode.](images/security-center-virus-and-threat-protection-windows-10-in-s-mode.png)
 
 For more information about Windows 10 in S mode, including how to switch out of S mode, see [Windows 10 Pro/Enterprise in S mode](/windows/deployment/windows-10-pro-in-s-mode).
 

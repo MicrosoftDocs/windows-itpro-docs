@@ -87,11 +87,11 @@ $path="file path"
 
 The following images show snippets of the ADMX file for Office 16 that are used in the examples in the procedures above. The first image highlights the category names.
 
-![Snippet of ADMX shows category names highlighted](../images/admx-category.png)
+![Snippet of ADMX shows category names highlighted.](../images/admx-category.png)
 
 The next image highlights the specific policy.
 
-![Snipped of ADMX shows policy setting highlighted](../images/admx-policy.png)
+![Snipped of ADMX shows policy setting highlighted.](../images/admx-policy.png)
 
 
 ## Related topics

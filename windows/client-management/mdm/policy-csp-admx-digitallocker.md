@@ -95,7 +95,7 @@ If you disable or do not configure this setting, Digital Locker can be run.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow Digital Locker to run*
+-   GP Friendly name: *Do not allow Digital Locker to run*
 -   GP name: *Digitalx_DiableApplication_TitleText_1*
 -   GP path: *Windows Components/Digital Locker*
 -   GP ADMX file name: *DigitalLocker.admx*
@@ -166,7 +166,7 @@ If you disable or do not configure this setting, Digital Locker can be run.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not allow Digital Locker to run*
+-   GP Friendly name: *Do not allow Digital Locker to run*
 -   GP name: *Digitalx_DiableApplication_TitleText_2*
 -   GP path: *Windows Components/Digital Locker*
 -   GP ADMX file name: *DigitalLocker.admx*

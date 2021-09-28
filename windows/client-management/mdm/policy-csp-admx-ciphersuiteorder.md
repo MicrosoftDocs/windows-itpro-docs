@@ -96,7 +96,7 @@ For information about supported cipher suites, see [Cipher Suites in TLS/SSL (Sc
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *SSL Cipher Suite Order*
+-   GP Friendly name: *SSL Cipher Suite Order*
 -   GP name: *SSLCipherSuiteOrder*
 -   GP path: *Network/SSL Configuration Settings*
 -   GP ADMX file name: *CipherSuiteOrder.admx*
@@ -179,7 +179,7 @@ CertUtil.exe -DisplayEccCurve
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *ECC Curve Order*
+-   GP Friendly name: *ECC Curve Order*
 -   GP name: *SSLCurveOrder*
 -   GP path: *Network/SSL Configuration Settings*
 -   GP ADMX file name: *CipherSuiteOrder.admx*

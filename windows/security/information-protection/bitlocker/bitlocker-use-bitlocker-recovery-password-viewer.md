@@ -21,7 +21,10 @@ ms.custom: bitlocker
 # BitLocker: Use BitLocker Recovery Password Viewer
 
 **Applies to**
--   Windows 10
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
 This topic for the IT professional describes how to use the BitLocker Recovery Password Viewer.
 

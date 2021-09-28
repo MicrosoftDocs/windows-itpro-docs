@@ -8,7 +8,7 @@ metadata:
   title: Windows Privacy
   description: Learn about how privacy is managed in Windows.
   services: windows
-  ms.product: windows
+  ms.prod: windows
   ms.topic: hub-page # Required
   ms.collection: M365-security-compliance
   author: dansimp

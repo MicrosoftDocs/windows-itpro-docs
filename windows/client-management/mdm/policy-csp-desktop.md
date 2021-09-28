@@ -90,7 +90,7 @@ If you enable this setting, users are unable to type a new location in the Targe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit User from manually redirecting Profile Folders*
+-   GP Friendly name: *Prohibit User from manually redirecting Profile Folders*
 -   GP name: *DisablePersonalDirChange*
 -   GP path: *Desktop*
 -   GP ADMX file name: *desktop.admx*

@@ -46,7 +46,7 @@ Topics and procedures in this guide are summarized in the following table. An es
 
 <br>
 
-<div style='font-size:9.0pt'>
+<div>
 
 <table border="1" cellspacing="0" cellpadding="0">
 <tr><td BGCOLOR="#a0e4fa"><B>Topic</B><td BGCOLOR="#a0e4fa"><B>Description</B><td BGCOLOR="#a0e4fa"><B>Time</B>
@@ -226,8 +226,8 @@ A reference image serves as the foundation for Windows 10 devices in your organi
 
 26. Open a Windows PowerShell prompt on the Hyper-V host computer and type the following commands:
 
-    <div style='font-size:8.0pt'>
-    <pre style="overflow-y: visible">
+    <div>
+    <pre>
 
     New-VM REFW10X64-001 -SwitchName poc-internal -NewVHDPath "c:\VHD\REFW10X64-001.vhdx" -NewVHDSizeBytes 60GB
     Set-VMMemory REFW10X64-001 -DynamicMemoryEnabled $true -MinimumBytes 1024MB -MaximumBytes 1024MB -Buffer 20
@@ -284,7 +284,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
 10. In the **Operating Systems** > **Windows 10** node, double-click the operating system that was added to view its properties. Change the operating system name to **Windows 10 Enterprise x64 Custom Image** and then click **OK**. See the following example:
 
-    ![custom image](images/image.png)
+    ![custom image.](images/image.png)
 
 
 ### Create the deployment task sequence
@@ -459,7 +459,7 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 7. On SRV1, in the Deployment Workbench console, click on **Monitoring** and view the status of installation. Right-click **Monitoring** and click **Refresh** if no data is displayed.
 8. OS installation requires about 10 minutes. When the installation is complete, the system will reboot automatically, configure devices, and install updates, requiring another 10-20 minutes.  When the new client computer is finished updating, click **Finish**. You will be automatically signed in to the local computer as administrator.
     
-    ![finish](images/deploy-finish.png)
+    ![finish.](images/deploy-finish.png)
 
 
 This completes the demonstration of how to deploy a reference image to the network. To conserve resources, turn off the PC2 VM before starting the next section.

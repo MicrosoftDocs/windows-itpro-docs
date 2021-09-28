@@ -3465,7 +3465,7 @@ Syntax:
 <li><p>Specify up to three &lt;role&gt; elements within a &lt;component&gt; — one "Binaries" role element, one "Settings" role element and one "Data" role element. These parameters do not change the migration behavior — their only purpose is to help you categorize the settings that you are migrating. You can nest these &lt;role&gt; elements, but each nested element must be of the same role parameter.</p></li>
 <li><p>Specify one "Container" &lt;role&gt; element within a &lt;component&gt; element. In this case, you cannot specify any child &lt;rules&gt; elements, only other &lt;component&gt; elements. And each child &lt;component&gt; element must have the same type as that of parent &lt;component&gt; element. For example:</p></li>
 </ol>
-<pre class="syntax" space="preserve"><code>&lt;component context=&quot;UserAndSystem&quot; type=&quot;Application&quot;&gt;
+<pre class="syntax"><code>&lt;component context=&quot;UserAndSystem&quot; type=&quot;Application&quot;&gt;
   &lt;displayName _locID=&quot;migapp.msoffice2003&quot;&gt;Microsoft Office 2003&lt;/displayName&gt; 
   &lt;environment name=&quot;GlobalEnv&quot; /&gt; 
   &lt;role role=&quot;Container&quot;&gt;

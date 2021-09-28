@@ -1,6 +1,6 @@
 ---
-title: Advice while using Windows Defender Credential Guard (Windows 10)
-description: Considerations and recommendations for certain scenarios when using Windows Defender Credential Guard in Windows 10.
+title: Advice while using Windows Defender Credential Guard (Windows)
+description: Considerations and recommendations for certain scenarios when using Windows Defender Credential Guard in Windows.
 ms.prod: w10
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -19,8 +19,10 @@ ms.reviewer:
 # Considerations when using Windows Defender Credential Guard
 
 **Applies to**
--   Windows 10
--   Windows Server 2016
+- Windows 10
+- Windows 11
+- Windows Server 2016
+- Windows Server 2019
 
 Passwords are still weak. We recommend that in addition to deploying Windows Defender Credential Guard, organizations move away from passwords to other authentication methods, such as physical smart cards, virtual smart cards, or Windows Hello for Business.
 
@@ -79,7 +81,7 @@ If you must clear the TPM on a domain-joined device without connectivity to doma
 
 Domain user sign-in on a domain-joined device after clearing a TPM for as long as there is no connectivity to a domain controller:
 
-|Credential Type | Windows 10 version | Behavior
+|Credential Type | Windows version | Behavior
 |---|---|---|
 | Certificate (smart card or Windows Hello for Business) | All | All data protected with user DPAPI is unusable and user DPAPI does not work at all. |
 | Password | Windows 10 v1709 or later | If the user signed-in with a certificate or password prior to clearing the TPM, then they can sign-in with password and user DPAPI is unaffected.

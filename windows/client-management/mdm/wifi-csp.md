@@ -31,7 +31,7 @@ Programming considerations:
 
 The following image shows the WiFi configuration service provider in tree format.
 
-![wi-fi csp diagram](images/provisioning-csp-wifi.png)
+![wi-fi csp diagram.](images/provisioning-csp-wifi.png)
 
 The following list shows the characteristics and parameters.
 

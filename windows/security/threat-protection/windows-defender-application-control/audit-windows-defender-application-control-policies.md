@@ -1,5 +1,5 @@
 ---
-title: Use audit events to create WDAC policy rules (Windows 10)
+title: Use audit events to create WDAC policy rules (Windows)
 description: Audits allow admins to discover apps, binaries, and scripts that should be added to the WDAC policy.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -22,8 +22,12 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 Running Application Control in audit mode lets you discover applications, binaries, and scripts that are missing from your WDAC policy but should be included.
 
@@ -41,7 +45,7 @@ To familiarize yourself with creating WDAC rules from audit events, follow these
 2. Review the **CodeIntegrity - Operational** and **AppLocker - MSI and Script** event logs to confirm events, like those shown in Figure 1, are generated related to the application. For information about the types of events you should see, refer to [Understanding Application Control events](event-id-explanations.md).
 
    **Figure 1. Exceptions to the deployed WDAC policy**
-   ![Event showing exception to WDAC policy](images/dg-fig23-exceptionstocode.png)
+   ![Event showing exception to WDAC policy.](images/dg-fig23-exceptionstocode.png)
 
 3. In an elevated PowerShell session, run the following commands to initialize variables used by this procedure. This procedure builds upon the **Lamna_FullyManagedClients_Audit.xml** policy introduced in [Create a WDAC policy for fully managed devices](create-wdac-policy-for-fully-managed-devices.md) and will produce a new policy called **EventsPolicy.xml**.
 

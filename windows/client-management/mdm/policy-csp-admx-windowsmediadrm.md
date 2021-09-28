@@ -92,7 +92,7 @@ When this policy is either disabled or not configured, Windows Media DRM functio
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent Windows Media DRM Internet Access*
+-   GP Friendly name: *Prevent Windows Media DRM Internet Access*
 -   GP name: *DisableOnline*
 -   GP path: *Windows Components\Windows Media Digital Rights Management*
 -   GP ADMX file name: *WindowsMediaDRM.admx*

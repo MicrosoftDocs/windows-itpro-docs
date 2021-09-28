@@ -94,7 +94,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
--   GP English name: *HomeGroup Listener*
+-   GP Friendly name: *HomeGroup Listener*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
 <!--/DbMapped-->
@@ -151,7 +151,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
--   GP English name: *HomeGroup Provider*
+-   GP Friendly name: *HomeGroup Provider*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
 <!--/DbMapped-->
@@ -208,7 +208,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
--   GP English name: *Xbox Accessory Management Service*
+-   GP Friendly name: *Xbox Accessory Management Service*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
 <!--/DbMapped-->
@@ -265,7 +265,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
--   GP English name: *Xbox Live Auth Manager*
+-   GP Friendly name: *Xbox Live Auth Manager*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
 <!--/DbMapped-->
@@ -322,7 +322,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
--   GP English name: *Xbox Live Game Save*
+-   GP Friendly name: *Xbox Live Game Save*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
 <!--/DbMapped-->
@@ -379,7 +379,7 @@ Added in Windows 10, version 1803. This setting determines whether the service's
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
--   GP English name: *Xbox Live Networking Service*
+-   GP Friendly name: *Xbox Live Networking Service*
 -   GP path: *Windows Settings/Security Settings/System Services*
 
 <!--/DbMapped-->

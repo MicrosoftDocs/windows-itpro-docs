@@ -22,8 +22,13 @@ ms.technology: mde
 # Creating a new Base Policy with the Wizard
 
 **Applies to**
--   Windows 10
--   Windows Server 2016 and above
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 When creating policies for use with Windows Defender Application Control (WDAC), it is recommended to start with a template policy and then add or remove rules to suit your application control scenario. For this reason, the WDAC Wizard offers three template policies to start from and customize during the base policy creation workflow. Prerequisite information about application control can be accessed through the [WDAC design guide](windows-defender-application-control-design-guide.md). This page outlines the steps to create a new application control policy from a template, configure the policy options, and the signer and file rules. 
 
@@ -43,7 +48,7 @@ Each of the template policies has a unique set of policy allow list rules that w
 
 More information about the Default Windows Mode and Allow Microsoft Mode policies can be accessed through the [Example WDAC base policies article](example-wdac-base-policies.md). 
 
-![Selecting a base template for the policy](images/wdac-wizard-template-selection.png)
+![Selecting a base template for the policy.](images/wdac-wizard-template-selection.png)
 
 Once the base template is selected, give the policy a name and choose where to save the application control policy on disk.
 
@@ -63,13 +68,13 @@ A description of each policy rule, beginning with the left-most column, is provi
 |**[Hypervisor-protected code integrity (HVCI)](../device-guard/enable-virtualization-based-protection-of-code-integrity.md)**| When enabled, policy enforcement uses virtualization-based security to run the code integrity service inside a secure environment. HVCI provides stronger protections against kernel malware.|
 | **Intelligent Security Graph Authorization** | Use this option to automatically allow applications with "known good" reputation as defined by Microsoft’s Intelligent Security Graph (ISG). |
 | **Managed Installer** | Use this option to automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, that has been defined as a managed installer. |
-| **Require WHQL** | By default, legacy drivers that are not Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Going forward, every new Windows 10–compatible driver must be WHQL certified. |
+| **Require WHQL** | By default, legacy drivers that are not Windows Hardware Quality Labs (WHQL) signed are allowed to execute. Enabling this rule requires that every executed driver is WHQL signed and removes legacy driver support. Going forward, every new Windows–compatible driver must be WHQL certified. |
 | **Update Policy without Rebooting** | Use this option to allow future WDAC policy updates to apply without requiring a system reboot. |
 | **Unsigned System Integrity Policy** | Allows the policy to remain unsigned. When this option is removed, the policy must be signed and have UpdatePolicySigners added to the policy to enable future policy modifications. |
 | **User Mode Code Integrity** | WDAC policies restrict both kernel-mode and user-mode binaries. By default, only kernel-mode binaries are restricted. Enabling this rule option validates user mode executables and scripts. |
 
 > [!div class="mx-imgBorder"]
-> ![Rule options UI for Windows Allowed mode policy](images/wdac-wizard-rule-options-UI-advanced-collapsed.png)
+> ![Rule options UI for Windows Allowed mode policy.](images/wdac-wizard-rule-options-UI-advanced-collapsed.png)
 
 ### Advanced Policy Rules Description
 
@@ -82,9 +87,9 @@ Selecting the **+ Advanced Options** label will show another column of policy ru
 | **Disable Runtime FilePath Rule Protection** | Disable default FilePath rule protection (apps and executables allowed based on file path rules must come from a file path that’s only writable by an administrator) for any FileRule that allows a file based on FilePath. |
 | **Dynamic Code Security** | Enables policy enforcement for .NET applications and dynamically loaded libraries (DLLs). |
 | **Invalidate EAs on Reboot** | When the Intelligent Security Graph option (14) is used, WDAC sets an extended file attribute that indicates that the file was authorized to run. This option will cause WDAC to periodically revalidate the reputation for files that were authorized by the ISG.| 
-| **Require EV Signers** | In addition to being WHQL signed, this rule requires that drivers must have been submitted by a partner that has an Extended Verification (EV) certificate. All Windows 10 and later drivers will meet this requirement. |
+| **Require EV Signers** | In addition to being WHQL signed, this rule requires that drivers must have been submitted by a partner that has an Extended Verification (EV) certificate. All Windows 10 and later, or Windows 11 drivers will meet this requirement. |
 
-![Rule options UI for Windows Allowed mode](images/wdac-wizard-rule-options-UI.png)
+![Rule options UI for Windows Allowed mode.](images/wdac-wizard-rule-options-UI.png)
 
 > [!NOTE]
 > We recommend that you **enable Audit Mode** initially because it allows you to test new WDAC policies before you enforce them. With audit mode, no application is blocked—instead the policy logs an event whenever an application outside the policy is started. For this reason, all templates have Audit Mode enabled by default. 
@@ -105,7 +110,7 @@ The Publisher file rule type uses properties in the code signing certificate cha
 | **File name** | FilePublisher | Most specific. Combination of the file name, publisher, and PCA certificate as well as a minimum version number. Files from the publisher with the specified name and greater or equal to the specified version are affected. |
 
 
-![Custom filepublisher file rule creation](images/wdac-wizard-custom-publisher-rule.png)
+![Custom filepublisher file rule creation.](images/wdac-wizard-custom-publisher-rule.png)
 
 ### Filepath Rules
 
@@ -123,7 +128,7 @@ The Wizard supports the creation of [file name rules](select-types-of-rules-to-c
 | **Internal name** | Specifies the internal name of the binary. |
 
 > [!div class="mx-imgBorder"]
-> ![Custom file attributes rule](images/wdac-wizard-custom-file-attribute-rule.png)
+> ![Custom file attributes rule.](images/wdac-wizard-custom-file-attribute-rule.png)
 
 ### File Hash Rules
 

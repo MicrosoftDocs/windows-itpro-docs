@@ -1,6 +1,6 @@
 ---
 title: Dynamic lock
-description: Learn how to set Dynamic lock on Windows 10 devices, by configuring group policies. This feature locks a device when a Bluetooth signal falls below a set value.
+description: Learn how to set Dynamic lock on Windows 10 and Windows 11 devices, by configuring group policies. This feature locks a device when a Bluetooth signal falls below a set value.
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, cert-trust, device, registration, unlock, conditional access
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,9 +21,9 @@ ms.reviewer:
 
 **Requirements:**
 
-* Windows 10, version 1703
+* Windows 10, version 1703 or later
 
-Dynamic lock enables you to configure Windows 10 devices to automatically lock when Bluetooth paired device signal falls below the maximum Received Signal Strength Indicator (RSSI) value. This makes it more difficult for someone to gain access to your device if you step away from your PC and forget to lock it.
+Dynamic lock enables you to configure Windows devices to automatically lock when Bluetooth paired device signal falls below the maximum Received Signal Strength Indicator (RSSI) value. This makes it more difficult for someone to gain access to your device if you step away from your PC and forget to lock it.
 
 You configure the dynamic lock policy using Group Policy.  You can locate the policy setting at **Computer Configuration\Administrative Templates\Windows Components\Windows Hello for Business**.  The name of the policy is **Configure dynamic lock factors**.
 
@@ -54,7 +54,7 @@ For this policy setting, the **type** and **scenario** attribute values are stat
 |Health|2304|
 |Uncategorized|7936|
 
-The **rssiMin** attribute value signal indicates the strength needed for the device to be considered "in-range".  The default value of **-10** enables a user to move about an average size office or cubicle without triggering Windows to lock the device.  The **rssiMaxDelta** has a default value of **-10**, which instruct Windows 10 to lock the device once the signal strength weakens by more than measurement of 10.  
+The **rssiMin** attribute value signal indicates the strength needed for the device to be considered "in-range".  The default value of **-10** enables a user to move about an average size office or cubicle without triggering Windows to lock the device.  The **rssiMaxDelta** has a default value of **-10**, which instruct Windows to lock the device once the signal strength weakens by more than measurement of 10.  
 
 RSSI measurements are relative and lower as the bluetooth signals between the two paired devices reduces. Therefore a measurement of 0 is stronger than -10, which is stronger than -60, which is an indicator the devices are moving further apart from each other.
 

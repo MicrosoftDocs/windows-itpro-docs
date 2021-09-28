@@ -161,7 +161,7 @@ When you have the Start layout that you want your users to see, use the [Export-
 
 A partial Start layout enables you to add one or more customized tile groups to users' Start screens or menus, while still allowing users to make changes to other parts of the Start layout. All groups that you add are *locked*, meaning users cannot change the contents of those tile groups, however users can change the location of those groups. Locked groups are identified with an icon, as shown in the following image.
 
-![locked tile group](images/start-pinned-app.png)
+![locked tile group.](images/start-pinned-app.png)
 
 When a partial Start layout is applied for the first time, the new groups are added to the users' existing Start layouts. If an app tile is in both an existing group and in a new locked group, the duplicate app tile is removed from the existing (unlocked) group.
 

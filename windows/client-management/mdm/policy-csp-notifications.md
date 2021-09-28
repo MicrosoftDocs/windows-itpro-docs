@@ -96,7 +96,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off notifications network usage*
+-   GP Friendly name: *Turn off notifications network usage*
 -   GP name: *NoCloudNotification*
 -   GP path: *Start Menu and Taskbar/Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -170,7 +170,7 @@ No reboot or service restart is required for this policy to take effect.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off notification mirroring*
+-   GP Friendly name: *Turn off notification mirroring*
 -   GP name: *NoNotificationMirroring*
 -   GP path: *Start Menu and Taskbar/Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -242,7 +242,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off tile notifications*
+-   GP Friendly name: *Turn off tile notifications*
 -   GP name: *NoTileNotification*
 -   GP path: *Start Menu and Taskbar/Notifications*
 -   GP ADMX file name: *WPN.admx*

@@ -41,7 +41,7 @@ These classifications are represented as nodes in the EnterpriseModernAppManagem
 
 The following diagram shows the EnterpriseModernAppManagement CSP in a tree format.
 
-![enterprisemodernappmanagement csp diagram](images/provisioning-csp-enterprisemodernappmanagement.png)
+![enterprisemodernappmanagement csp diagram.](images/provisioning-csp-enterprisemodernappmanagement.png)
 
 Each app displays one package family name and 1-n package full names for installed apps. The apps are categorized based on their origin (Store, nonStore, System).
 

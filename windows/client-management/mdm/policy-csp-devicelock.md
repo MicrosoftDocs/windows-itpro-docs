@@ -761,7 +761,7 @@ PIN enforces the following behavior for desktop and mobile devices:
 
 The default value is 1. The following list shows the supported values and actual enforced values:
 
-<table style="margin-left: 20px">
+<table>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -777,24 +777,24 @@ The default value is 1. The following list shows the supported values and actual
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>Mobile</p></td>
-<td style="vertical-align:top"><p>1,2,3,4</p></td>
-<td style="vertical-align:top"><p>Same as the value set</p></td>
+<td><p>Mobile</p></td>
+<td><p>1,2,3,4</p></td>
+<td><p>Same as the value set</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Desktop Local Accounts</p></td>
-<td style="vertical-align:top"><p> 1,2,3</p></td>
-<td style="vertical-align:top"><p>3</p></td>
+<td><p>Desktop Local Accounts</p></td>
+<td><p> 1,2,3</p></td>
+<td><p>3</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>Desktop Microsoft Accounts</p></td>
-<td style="vertical-align:top"><p>1,2</p></td>
-<td style="vertical-align:top">&lt;p2</p></td>
+<td><p>Desktop Microsoft Accounts</p></td>
+<td><p>1,2</p></td>
+<td>&lt;p2</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Desktop Domain Accounts</p></td>
-<td style="vertical-align:top"><p>Not supported</p></td>
-<td style="vertical-align:top">Not supported</p></td>
+<td><p>Desktop Domain Accounts</p></td>
+<td><p>Not supported</p></td>
+<td>Not supported</p></td>
 </tr>
 </tbody>
 </table>
@@ -969,7 +969,7 @@ Configure the minimum password age to be more than 0 if you want Enforce passwor
 <!--/Description-->
 <!--DbMapped-->
 GP Info:  
--   GP English name: *Minimum password age*
+-   GP Friendly name: *Minimum password age*
 -   GP path: *Windows Settings/Security Settings/Account Policies/Password Policy*
 
 <!--/DbMapped-->
@@ -1037,7 +1037,7 @@ If you enable this setting, users will no longer be able to enable or disable lo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent enabling lock screen camera*
+-   GP Friendly name: *Prevent enabling lock screen camera*
 -   GP name: *CPL_Personalization_NoLockScreenCamera*
 -   GP path: *Control Panel/Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*
@@ -1107,7 +1107,7 @@ If you enable this setting, users will no longer be able to modify slide show se
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prevent enabling lock screen slide show*
+-   GP Friendly name: *Prevent enabling lock screen slide show*
 -   GP name: *CPL_Personalization_NoLockScreenSlideshow*
 -   GP path: *Control Panel/Personalization*
 -   GP ADMX file name: *ControlPanelDisplay.admx*

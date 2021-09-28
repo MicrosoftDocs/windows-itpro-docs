@@ -119,7 +119,7 @@ To verify the BCD entries:
    > [!NOTE]
    > If the computer is UEFI-based, the file path value that's specified in the **path** parameter of **{bootmgr}** and **{default}** contains an **.efi** extension.
 
-   ![bcdedit](images/screenshot1.png)
+   ![bcdedit.](images/screenshot1.png)
 
 If any of the information is wrong or missing, we recommend that you create a backup of the BCD store. To do this, run `bcdedit /export C:\temp\bcdbackup`. This command creates a backup in **C:\\temp\\** that's named **bcdbackup**. To restore the backup, run `bcdedit /import C:\temp\bcdbackup`. This command overwrites all BCD settings by using the settings in **bcdbackup**.
 
@@ -179,11 +179,11 @@ Dism /Image:<Specify the OS drive>: /Get-packages
 
 After you run this command, you'll see the **Install pending** and **Uninstall Pending** packages:
 
-![Dism output pending update](images/pendingupdate.png)
+![Dism output pending update.](images/pendingupdate.png)
 
 1. Run the `dism /Image:C:\ /Cleanup-Image /RevertPendingActions` command. Replace **C:** with the system partition for your computer.
 
-    ![Dism output revert pending](images/revertpending.png)
+    ![Dism output revert pending.](images/revertpending.png)
 
 2. Navigate to ***OSdriveLetter*:\Windows\WinSxS**, and then check whether the **pending.xml** file exists. If it does, rename it to **pending.xml.old**.
 
@@ -193,14 +193,14 @@ After you run this command, you'll see the **Install pending** and **Uninstall P
 
 5. Navigate to ***OSdriveLetter*:\Windows\System32\config**, select the file that's named **COMPONENT** (with no extension), and then select **Open**. When you're prompted, enter the name **OfflineComponentHive** for the new hive.
     
-    ![Load Hive](images/loadhive.png)
+    ![Load Hive.](images/loadhive.png)
 
 6. Expand **HKEY_LOCAL_MACHINE\OfflineComponentHive**, and check whether the **PendingXmlIdentifier** key exists. Create a backup of the **OfflineComponentHive** key, and then delete the **PendingXmlIdentifier** key.
 
 7. Unload the hive. To do this, highlight **OfflineComponentHive**, and then select **File** > **Unload hive**.
 
    > [!div class="mx-imgBorder"]
-   > ![Unload Hive](images/unloadhive.png)![Unload Hive](images/unloadhive1.png)
+   > ![Unload Hive.](images/unloadhive.png)![Unload Hive](images/unloadhive1.png)
 
 8. Select **HKEY_LOCAL_MACHINE**, go to **File** > **Load Hive**, navigate to ***OSdriveLetter*:\Windows\System32\config**, select the file that's named **SYSTEM** (with no extension), and then select **Open**. When you're prompted, enter the name **OfflineSystemHive** for the new hive.
 
@@ -256,7 +256,7 @@ Check whether there are any non-Microsoft upper and lower filter drivers on the 
    \Control\Class\\{71A27CDD-812A-11D0-BEC7-08002BE2092F}
 
    > [!div class="mx-imgBorder"]
-   > ![Registry](images/controlset.png) 
+   > ![Registry.](images/controlset.png) 
 
    If an **UpperFilters**  or **LowerFilters**  entry is non-standard (for example, it's not a Windows default filter driver, such as PartMgr), remove the entry. To remove it, double-click it in the right pane, and then delete only that value.
 
@@ -274,8 +274,8 @@ Check whether there are any non-Microsoft upper and lower filter drivers on the 
 
 *	`chkdsk /f /r OsDrive:`
 
-    ![Check disk](images/check-disk.png)
+    ![Check disk.](images/check-disk.png)
 
 *	`sfc /scannow /offbootdir=OsDrive:\ /offwindir=OsDrive:\Windows`
 
-    ![SFC scannow](images/sfc-scannow.png)
+    ![SFC scannow.](images/sfc-scannow.png)

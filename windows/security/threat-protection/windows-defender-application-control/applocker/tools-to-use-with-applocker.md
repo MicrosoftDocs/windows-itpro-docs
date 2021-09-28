@@ -1,5 +1,5 @@
 ---
-title: Tools to use with AppLocker (Windows 10)
+title: Tools to use with AppLocker (Windows)
 description: This topic for the IT professional describes the tools available to create and administer AppLocker policies.
 ms.assetid: db2b7cb3-7643-4be5-84eb-46ba551e1ad1
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Tools to use with AppLocker
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This topic for the IT professional describes the tools available to create and administer AppLocker policies.
 

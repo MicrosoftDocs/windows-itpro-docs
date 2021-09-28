@@ -105,7 +105,7 @@ To add modules and snap-ins to the policy setting list, click Show, and then typ
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Module Logging*
+-   GP Friendly name: *Turn on Module Logging*
 -   GP name: *EnableModuleLogging*
 -   GP path: *Windows Components\Windows PowerShell*
 -   GP ADMX file name: *PowerShellExecutionPolicy.admx*
@@ -180,7 +180,7 @@ If you disable this policy setting, no scripts are allowed to run.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on Script Execution*
+-   GP Friendly name: *Turn on Script Execution*
 -   GP name: *EnableScripts*
 -   GP path: *Windows Components\Windows PowerShell*
 -   GP ADMX file name: *PowerShellExecutionPolicy.admx*
@@ -255,7 +255,7 @@ If you use the OutputDirectory setting to enable transcript logging to a shared 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on PowerShell Transcription*
+-   GP Friendly name: *Turn on PowerShell Transcription*
 -   GP name: *EnableTranscripting*
 -   GP path: *Windows Components\Windows PowerShell*
 -   GP ADMX file name: *PowerShellExecutionPolicy.admx*
@@ -328,7 +328,7 @@ If this policy setting is disabled or not configured, this policy setting does n
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set the default source path for Update-Help*
+-   GP Friendly name: *Set the default source path for Update-Help*
 -   GP name: *EnableUpdateHelpDefaultSourcePath*
 -   GP path: *Windows Components\Windows PowerShell*
 -   GP ADMX file name: *PowerShellExecutionPolicy.admx*

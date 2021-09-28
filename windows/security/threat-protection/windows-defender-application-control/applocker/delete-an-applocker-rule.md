@@ -1,5 +1,5 @@
 ---
-title: Delete an AppLocker rule (Windows 10)
+title: Delete an AppLocker rule (Windows)
 description: This article for IT professionals describes the steps to delete an AppLocker rule.
 ms.assetid: 382b4be3-0df9-4308-89b2-dcf9df351eb5
 ms.reviewer: 
@@ -21,8 +21,13 @@ ms.technology: mde
 # Delete an AppLocker rule
 
 **Applies to**
-- Windows 10
-- Windows Server
+
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](/windows/security/threat-protection/windows-defender-application-control/feature-availability).
 
 This article for IT professionals describes the steps to delete an AppLocker rule. 
 

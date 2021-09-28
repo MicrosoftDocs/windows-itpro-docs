@@ -94,7 +94,7 @@ By default, such applications are automatically terminated if they attempt to ca
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off automatic termination of applications that block or cancel shutdown*
+-   GP Friendly name: *Turn off automatic termination of applications that block or cancel shutdown*
 -   GP name: *AllowBlockingAppsAtShutdown*
 -   GP path: *System\Shutdown Options*
 -   GP ADMX file name: *Winsrv.admx*

@@ -93,11 +93,11 @@ Once the device is in the pending restart state, it will attempt to restart the 
 
 Notification users get for a quality update deadline:
 
-![The notification users get for an impending quality update deadline](images/wufb-quality-notification.png)
+![The notification users get for an impending quality update deadline.](images/wufb-quality-notification.png)
 
 Notification users get for a feature update deadline:
 
-![The notification users get for an impending feature update deadline](images/wufb-feature-notification.png)
+![The notification users get for an impending feature update deadline.](images/wufb-feature-notification.png)
 
 ### Deadline with user engagement
 
@@ -130,17 +130,17 @@ Before the deadline the device will be in two states: auto-restart period and en
 
 Notification users get for quality update engaged deadline:
 
-![The notification users get for an impending engaged quality update deadline example](images/wufb-quality-engaged-notification.png)
+![The notification users get for an impending engaged quality update deadline example.](images/wufb-quality-engaged-notification.png)
 
 Notification users get for a quality update deadline:
 
-![The notification users get for an impending quality update deadline example](images/wufb-quality-notification.png)
+![The notification users get for an impending quality update deadline example.](images/wufb-quality-notification.png)
 
 Notification users get for a feature update engaged deadline:
 
-![The notification users get for an impending feature update engaged deadline example](images/wufb-feature-update-engaged-notification.png)
+![The notification users get for an impending feature update engaged deadline example.](images/wufb-feature-update-engaged-notification.png)
 
 Notification users get for a feature update deadline:
 
-![The notification users get for an impending feature update deadline example](images/wufb-feature-update-deadline-notification.png)
+![The notification users get for an impending feature update deadline example.](images/wufb-feature-update-deadline-notification.png)
 

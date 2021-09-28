@@ -1,5 +1,5 @@
 ---
-title: Create a provisioning package with multivariant settings (Windows 10)
+title: Create a provisioning package with multivariant settings (Windows 10/11)
 description: Create a provisioning package with multivariant settings to customize the provisioned settings for defined conditions.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -7,8 +7,7 @@ ms.sitesec: library
 author: greg-lindsay
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 11/08/2017
-ms.reviewer: 
+ms.reviewer: gkomatsu
 manager: dansimp
 ms.author: greglin
 ---
@@ -19,7 +18,7 @@ ms.author: greglin
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
+-   Windows 11
 
 
 In your organization, you might have different configuration requirements for devices that you manage. You can create separate provisioning packages for each group of devices in your organization that have different requirements. Or, you can create a multivariant provisioning package, a single provisioning package that can work for multiple conditions. For example, in a single provisioning package, you can define one set of customization settings that will apply to devices set up for French and a different set of customization settings for devices set up for Japanese. 
@@ -35,40 +34,45 @@ In the XML file, you provide an **Id**, or friendly name, for each **Target**. E
 
 A **Target** can have more than one **TargetState**, and a **TargetState** can have more than one **Condition**. 
 
-![Target with multiple target states and conditions](../images/multi-target.png)
+![Target with multiple target states and conditions.](../images/multi-target.png)
 
-The following table describes the logic for the target definition.
+The following information describes the logic for the target definition:
 
-<table><tr><td>When all <strong>Condition</strong> elements are TRUE, <strong>TargetState</strong> is TRUE.</td><td><img src="../images/icd-multi-targetstate-true.png" alt="Target state is true when all conditions are true"/></td></tr>
-<tr><td>If any of the <strong>TargetState</strong> elements is TRUE, <strong>Target</strong> is TRUE, and the <strong>Id</strong> can be used for setting customizations.</td><td><img src="../images/icd-multi-target-true.png" alt="Target is true if any target state is true"/></td></tr></table>
+- When all **Condition** elements are TRUE, **TargetState** is TRUE:
+
+  :::image type="content" source="../images/icd-multi-targetstate-true.png" alt-text="Target state is true when all conditions are true.":::
+
+- If any of the **TargetState** elements is TRUE, **Target** is TRUE, and the **ID** can be used for setting customizations:
+
+  :::image type="content" source="../images/icd-multi-target-true.png" alt-text="Target is true if any target state is true":::
 
 ### Conditions
 
-The following table shows the conditions supported in Windows 10 provisioning for a **TargetState**:
+The following table shows the conditions supported in Windows client provisioning for a **TargetState**:
 
 
-| Condition Name | Condition priority | Windows 10 Mobile | Windows 10 for desktop editions | Value type | Value description |
-| --- | --- | --- | --- | --- | --- |
-| MNC | P0 | Supported | Supported | Digit string | Use to target settings based on the Mobile Network Code (MNC) value. |
-| MCC | P0 | Supported | Supported | Digit string | Use to target settings based on the Mobile Country Code (MCC) value. |
-| SPN | P0 | Supported | Supported | String | Use to target settings based on the Service Provider Name (SPN) value. |
-| PNN | P0 | Supported | Supported | String | Use to target settings based on public land mobile network (PLMN) Network Name value. |
-| GID1 | P0 | Supported | Supported | Digit string | Use to target settings based on the Group Identifier (level 1) value. |
-| ICCID | P0 | Supported | Supported | Digit string | Use to target settings based on the Integrated Circuit Card Identifier (ICCID) value. |
-| Roaming | P0 | Supported | N/A | Boolean | Use to specify roaming. Set the value to **1** (roaming) or **0** (non-roaming). | 
-| UICC | P0 | Supported | N/A | Enumeration | Use to specify the Universal Integrated Circuit Card (UICC) state. Set the value to one of the following:</br></br></br>- 0 - Empty</br>- 1 - Ready</br>- 2 - Locked |
-| UICCSLOT | P0 | Supported | N/A | Digit string | Use to specify the UICC slot. Set the value one of the following:</br></br></br>- 0 - Slot 0</br>- 1 - Slot 1 |
-| ProcessorType | P1 | Supported | Supported | String | Use to target settings based on the processor type. |
-| ProcessorName | P1 | Supported | Supported | String | Use to target settings based on the processor name. |
-| AoAc ("Always On, Always Connected") | P1 | Supported | Supported | Boolean | Set the value to **0** (false) or **1** (true). If this condition is TRUE, the system supports the S0 low power idle model. |
-| PowerPlatformRole | P1 | Supported | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the [POWER_PLATFORM_ROLE enumeration](/windows/win32/api/winnt/ne-winnt-power_platform_role).  |
-| Architecture | P1 | Supported | Supported | String | Matches the PROCESSOR_ARCHITECTURE environment variable. |
-| Server | P1 | Supported | Supported | Boolean | Set the value to **0** (false) or **1** (true) to identify a server. |
-| Region | P1 | Supported | Supported | Enumeration | Use to target settings based on country/region, using the 2-digit alpha ISO code per [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). |
-| Lang | P1 | Supported | Supported | Enumeration | Use to target settings based on language code, using the 2-digit [ISO 639 alpha-2 code](https://en.wikipedia.org/wiki/ISO_639).  |
+| Condition Name | Condition priority | Windows client for desktop editions | Value type | Value description |
+| --- | --- | --- | --- | --- |
+| MNC | P0 | Supported | Digit string | Use to target settings based on the Mobile Network Code (MNC) value. |
+| MCC | P0 | Supported | Digit string | Use to target settings based on the Mobile Country Code (MCC) value. |
+| SPN | P0 | Supported | String | Use to target settings based on the Service Provider Name (SPN) value. |
+| PNN | P0 |  Supported | String | Use to target settings based on public land mobile network (PLMN) Network Name value. |
+| GID1 | P0 | Supported | Digit string | Use to target settings based on the Group Identifier (level 1) value. |
+| ICCID | P0 | Supported | Digit string | Use to target settings based on the Integrated Circuit Card Identifier (ICCID) value. |
+| Roaming | P0 | N/A | Boolean | Use to specify roaming. Set the value to **1** (roaming) or **0** (non-roaming). | 
+| UICC | P0 | N/A | Enumeration | Use to specify the Universal Integrated Circuit Card (UICC) state. Set the value to one of the following:</br></br></br>- 0 - Empty</br>- 1 - Ready</br>- 2 - Locked |
+| UICCSLOT | P0 | N/A | Digit string | Use to specify the UICC slot. Set the value one of the following:</br></br></br>- 0 - Slot 0</br>- 1 - Slot 1 |
+| ProcessorType | P1 | Supported | String | Use to target settings based on the processor type. |
+| ProcessorName | P1 | Supported | String | Use to target settings based on the processor name. |
+| AoAc ("Always On, Always Connected") | P1 | Supported | Boolean | Set the value to **0** (false) or **1** (true). If this condition is TRUE, the system supports the S0 low power idle model. |
+| PowerPlatformRole | P1 | Supported | Enumeration | Indicates the preferred power management profile. Set the value based on the [POWER_PLATFORM_ROLE enumeration](/windows/win32/api/winnt/ne-winnt-power_platform_role).  |
+| Architecture | P1 | Supported | String | Matches the PROCESSOR_ARCHITECTURE environment variable. |
+| Server | P1 | Supported | Boolean | Set the value to **0** (false) or **1** (true) to identify a server. |
+| Region | P1 | Supported | Enumeration | Use to target settings based on country/region, using the 2-digit alpha ISO code per [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2). |
+| Lang | P1 | Supported | Enumeration | Use to target settings based on language code, using the 2-digit [ISO 639 alpha-2 code](https://en.wikipedia.org/wiki/ISO_639).  |
 
 
-The matching types supported in Windows 10 are:
+The matching types supported in Windows client are:
 
 | Matching type | Syntax | Example |
 | --- | --- | --- |
@@ -79,7 +83,7 @@ The matching types supported in Windows 10 are:
 
 ### TargetState priorities
 
-You can define more than one **TargetState** within a provisioning package to apply settings to devices that match device conditions. When the provisioning engine evalues each **TargetState**, more than one **TargetState** may fit current device conditions. To determine the order in which the settings are applied, the system assigns a priority to every **TargetState**. 
+You can define more than one **TargetState** within a provisioning package to apply settings to devices that match device conditions. When the provisioning engine evaluates each **TargetState**, more than one **TargetState** may fit current device conditions. To determine the order in which the settings are applied, the system assigns a priority to every **TargetState**. 
 
 A setting that matches a **TargetState** with a lower priority is applied before the setting that matches a **TargetState** with a higher priority. This means that a setting for the **TargetState** with the higher priority can overwrite a setting for the **TargetState** with the lower priority.
 
@@ -281,38 +285,29 @@ In this example, the **StoreFile** corresponds to the location of the settings s
 
 ## Events that trigger provisioning
 
-When you install the multivariant provisioning package on a Windows 10 device, the provisioning engine applies the matching condition settings at every event and triggers provisioning.
+When you install the multivariant provisioning package on a Windows client device, the provisioning engine applies the matching condition settings at every event and triggers provisioning.
 
-The following events trigger provisioning on Windows 10 devices:
+The following events trigger provisioning on Windows client devices:
 
-| Event | Windows 10 Mobile | Windows 10 for desktop editions |
-| --- | --- | --- |
-| System boot | Supported | Supported |
-| Operating system update | Supported | Planned |
-| Package installation during device first run experience | Supported | Supported |
-| Detection of SIM presence or update | Supported | Supported |
-| Package installation at runtime | Supported | Supported |
-| Roaming detected | Supported | Not supported |
+| Event | Windows client for desktop editions |
+| --- | --- | 
+| System boot | Supported |
+| Operating system update | Planned |
+| Package installation during device first run experience | Supported |
+| Detection of SIM presence or update | Supported |
+| Package installation at runtime | Supported |
+| Roaming detected | Not supported |
  
+## Related articles
 
- 
-
-
-
-
-
- 
-
-## Related topics
-
-- [Provisioning packages for Windows 10](provisioning-packages.md)
-- [How provisioning works in Windows 10](provisioning-how-it-works.md)
+- [Provisioning packages for Windows client](provisioning-packages.md)
+- [How provisioning works in Windows client](provisioning-how-it-works.md)
 - [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Create a provisioning package](provisioning-create-package.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
+- [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 

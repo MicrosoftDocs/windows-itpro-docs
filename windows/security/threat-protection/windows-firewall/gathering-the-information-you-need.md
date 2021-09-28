@@ -1,5 +1,5 @@
 ---
-title: Gathering the Information You Need (Windows 10)
+title: Gathering the Information You Need (Windows)
 description: Collect and analyze information about your network, directory services, and devices to prepare for Windows Defender Firewall with Advanced Security deployment.
 ms.assetid: 545fef02-5725-4b1e-b67a-a32d94c27d15
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 Before starting the planning process for a Windows Defender Firewall with Advanced Security deployment, you must collect and analyze up-to-date information about the network, the directory services, and the devices that are already deployed in the organization. This information enables you to create a design that accounts for all possible elements of the existing infrastructure. If the gathered information is not accurate, problems can occur when devices and devices that were not considered during the planning phase are encountered during implementation.
 

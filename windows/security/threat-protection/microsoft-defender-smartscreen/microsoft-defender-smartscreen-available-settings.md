@@ -1,7 +1,6 @@
 ---
-title: Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings (Windows 10)
+title: Available Microsoft Defender SmartScreen Group Policy and mobile device management (MDM) settings (Windows)
 description: A list of all available settings for Microsoft Defender SmartScreen using Group Policy and mobile device management (MDM) settings.
-keywords: SmartScreen Filter, Windows SmartScreen, Microsoft Defender SmartScreen
 ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
@@ -18,10 +17,11 @@ ms.technology: mde
 **Applies to:**
 
 - Windows 10
+- Windows 11
 
 Microsoft Defender SmartScreen works with Intune, Group Policy, and mobile device management (MDM) settings to help you manage your organization's computer settings. Based on how you set up Microsoft Defender SmartScreen, you can show employees a warning page and let them continue to the site, or you can block the site entirely.
 
-See [Windows 10 (and later) settings to protect devices using Intune](/intune/endpoint-protection-windows-10#windows-defender-smartscreen-settings) for the controls you can use in Intune.
+See [Windows 10 (and Windows 11) settings to protect devices using Intune](/intune/endpoint-protection-windows-10#windows-defender-smartscreen-settings) for the controls you can use in Intune.
 
 
 ## Group Policy settings
@@ -45,7 +45,7 @@ SmartScreen uses registry-based Administrative Template policy settings.
 </tr>
 <tr>
 <td><b>Windows 10, version 2004:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen (Microsoft Edge version 45 and earlier)<p>Administrative Templates\Microsoft Edge\SmartScreen settings\Configure Microsoft Defender SmartScreen (Microsoft Edge version 77 or later)<p><b>Windows 10, version 1703:</b><br>Administrative Templates\Windows Components\Windows Defender SmartScreen\Microsoft Edge\Configure Windows Defender SmartScreen (Microsoft Edge version 45 and earlier)<p>Administrative Templates\Microsoft Edge\SmartScreen settings\Configure Microsoft Defender SmartScreen (Microsoft Edge version 77 or later)<p><b>Windows 10, Version 1607 and earlier:</b><br>Administrative Templates\Windows Components\Microsoft Edge\Configure Windows SmartScreen</td>
-<td>Microsoft Edge on Windows 10 or later</td>
+<td>Microsoft Edge on Windows 10 or Windows 11</td>
 <td>This policy setting turns on Microsoft Defender SmartScreen.<p>If you enable this setting, it turns on Microsoft Defender SmartScreen and your employees are unable to turn it off.<p>If you disable this setting, it turns off Microsoft Defender SmartScreen and your employees are unable to turn it on.<p>If you don't configure this setting, your employees can decide whether to use Microsoft Defender SmartScreen.</td>
 </tr>
 <tr>
@@ -134,7 +134,7 @@ For Microsoft Defender SmartScreen Edge MDM policies, see [Policy CSP - Browser]
 </tr>
 <tr>
 <td>PreventSmartScreenPromptOverride</td>
-<td>Windows 10, Version 1511 and later</td>
+<td>Windows 10, Version 1511 and Windows 11</td>
 <td>
 <ul>
 <li><b>URI full path.</b> ./Vendor/MSFT/Policy/Config/Browser/PreventSmartscreenPromptOverride</li>
@@ -146,7 +146,7 @@ For Microsoft Defender SmartScreen Edge MDM policies, see [Policy CSP - Browser]
 </tr>
 <tr>
 <td>PreventSmartScreenPromptOverrideForFiles</td>
-<td>Windows 10, Version 1511 and later</td>
+<td>Windows 10, Version 1511 and Windows 11</td>
 <td>
 <ul>
 <li><b>URI full path.</b> ./Vendor/MSFT/Policy/Config/Browser/PreventSmartScreenPromptOverrideForFiles</li>

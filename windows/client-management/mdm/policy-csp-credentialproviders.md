@@ -100,7 +100,7 @@ To configure Windows Hello for Business, use the Administrative Template policie
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on convenience PIN sign-in*
+-   GP Friendly name: *Turn on convenience PIN sign-in*
 -   GP name: *AllowDomainPINLogon*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *credentialproviders.admx*
@@ -172,7 +172,7 @@ Note that the user's domain password will be cached in the system vault when usi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off picture password sign-in*
+-   GP Friendly name: *Turn off picture password sign-in*
 -   GP name: *BlockDomainPicturePassword*
 -   GP path: *System/Logon*
 -   GP ADMX file name: *credentialproviders.admx*

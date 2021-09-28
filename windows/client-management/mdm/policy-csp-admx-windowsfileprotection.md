@@ -99,7 +99,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting hi
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide the file scan progress window*
+-   GP Friendly name: *Hide the file scan progress window*
 -   GP name: *WFPShowProgress*
 -   GP path: *Windows File Protection!SfcShowProgress*
 -   GP ADMX file name: *WindowsFileProtection.admx*
@@ -173,7 +173,7 @@ To indicate that the cache size is unlimited, select "4294967295" as the maximum
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Limit Windows File Protection cache size*
+-   GP Friendly name: *Limit Windows File Protection cache size*
 -   GP name: *WFPQuota*
 -   GP path: *System\Windows File Protection*
 -   GP ADMX file name: *WindowsFileProtection.admx*
@@ -251,7 +251,7 @@ This setting delays each startup.
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Windows File Protection scanning*
+-   GP Friendly name: *Set Windows File Protection scanning*
 -   GP name: *WFPScan*
 -   GP path: *System\Windows File Protection*
 -   GP ADMX file name: *WindowsFileProtection.admx*
@@ -333,7 +333,7 @@ If both the "Hide specified Control Panel items" setting and the "Show only spec
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify Windows File Protection cache location*
+-   GP Friendly name: *Specify Windows File Protection cache location*
 -   GP name: *WFPDllCacheDir*
 -   GP path: *System\Windows File Protection*
 -   GP ADMX file name: *WindowsFileProtection.admx*

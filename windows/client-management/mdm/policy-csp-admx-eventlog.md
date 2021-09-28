@@ -150,7 +150,7 @@ If the policy setting is disabled, then no new events can be logged. Events can 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on logging*
+-   GP Friendly name: *Turn on logging*
 -   GP name: *Channel_LogEnabled*
 -   GP path: *Windows Components\Event Log Service\Setup*
 -   GP ADMX file name: *EventLog.admx*
@@ -219,7 +219,7 @@ If you disable or do not configure this policy setting, the Event Log uses the f
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Control the location of the log file*
+-   GP Friendly name: *Control the location of the log file*
 -   GP name: *Channel_LogFilePath_1*
 -   GP path: *Windows Components\Event Log Service\Application*
 -   GP ADMX file name: *EventLog.admx*
@@ -288,7 +288,7 @@ If you disable or do not configure this policy setting, the Event Log uses the f
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Control the location of the log file*
+-   GP Friendly name: *Control the location of the log file*
 -   GP name: *Channel_LogFilePath_2*
 -   GP path: *Windows Components\Event Log Service\Security*
 -   GP ADMX file name: *EventLog.admx*
@@ -357,7 +357,7 @@ If you disable or do not configure this policy setting, the Event Log uses the f
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Control the location of the log file*
+-   GP Friendly name: *Control the location of the log file*
 -   GP name: *Channel_LogFilePath_3*
 -   GP path: *Windows Components\Event Log Service\Setup*
 -   GP ADMX file name: *EventLog.admx*
@@ -426,7 +426,7 @@ If you disable or do not configure this policy setting, the Event Log uses the f
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on logging*
+-   GP Friendly name: *Turn on logging*
 -   GP name: *Channel_LogFilePath_4*
 -   GP path: *Windows Components\Event Log Service\System*
 -   GP ADMX file name: *EventLog.admx*
@@ -495,7 +495,7 @@ If you disable or do not configure this policy setting, the maximum size of the 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify the maximum log file size (KB)*
+-   GP Friendly name: *Specify the maximum log file size (KB)*
 -   GP name: *Channel_LogMaxSize_3*
 -   GP path: *Windows Components\Event Log Service\Setup*
 -   GP ADMX file name: *EventLog.admx*
@@ -566,7 +566,7 @@ If you do not configure this policy setting and the "Retain old events" policy s
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Back up log automatically when full*
+-   GP Friendly name: *Back up log automatically when full*
 -   GP name: *Channel_Log_AutoBackup_1*
 -   GP path: *Windows Components\Event Log Service\Application*
 -   GP ADMX file name: *EventLog.admx*
@@ -637,7 +637,7 @@ If you do not configure this policy setting and the "Retain old events" policy s
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Back up log automatically when full*
+-   GP Friendly name: *Back up log automatically when full*
 -   GP name: *Channel_Log_AutoBackup_2*
 -   GP path: *Windows Components\Event Log Service\Security*
 -   GP ADMX file name: *EventLog.admx*
@@ -708,7 +708,7 @@ If you do not configure this policy setting and the "Retain old events" policy s
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Back up log automatically when full*
+-   GP Friendly name: *Back up log automatically when full*
 -   GP name: *Channel_Log_AutoBackup_3*
 -   GP path: *Windows Components\Event Log Service\Setup*
 -   GP ADMX file name: *EventLog.admx*
@@ -779,7 +779,7 @@ If you do not configure this policy setting and the "Retain old events" policy s
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Back up log automatically when full*
+-   GP Friendly name: *Back up log automatically when full*
 -   GP name: *Channel_Log_AutoBackup_4*
 -   GP path: *Windows Components\Event Log Service\System*
 -   GP ADMX file name: *EventLog.admx*
@@ -851,7 +851,7 @@ If you disable or do not configure this policy setting, all authenticated users 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure log access*
+-   GP Friendly name: *Configure log access*
 -   GP name: *Channel_Log_FileLogAccess_1*
 -   GP path: *Windows Components\Event Log Service\Application*
 -   GP ADMX file name: *EventLog.admx*
@@ -923,7 +923,7 @@ If you disable or do not configure this policy setting, only system software and
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure log access*
+-   GP Friendly name: *Configure log access*
 -   GP name: *Channel_Log_FileLogAccess_2*
 -   GP path: *Windows Components\Event Log Service\Security*
 -   GP ADMX file name: *EventLog.admx*
@@ -995,7 +995,7 @@ If you disable or do not configure this policy setting, all authenticated users 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure log access*
+-   GP Friendly name: *Configure log access*
 -   GP name: *Channel_Log_FileLogAccess_3*
 -   GP path: *Windows Components\Event Log Service\Setup*
 -   GP ADMX file name: *EventLog.admx*
@@ -1067,7 +1067,7 @@ If you disable or do not configure this policy setting, only system software and
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure log access*
+-   GP Friendly name: *Configure log access*
 -   GP name: *Channel_Log_FileLogAccess_4*
 -   GP path: *Windows Components\Event Log Service\System*
 -   GP ADMX file name: *EventLog.admx*
@@ -1138,7 +1138,7 @@ If you do not configure this policy setting, the previous policy setting configu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure log access (legacy)*
+-   GP Friendly name: *Configure log access (legacy)*
 -   GP name: *Channel_Log_FileLogAccess_5*
 -   GP path: *Windows Components\Event Log Service\Application*
 -   GP ADMX file name: *EventLog.admx*
@@ -1209,7 +1209,7 @@ If you do not configure this policy setting, the previous policy setting configu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure log access (legacy)*
+-   GP Friendly name: *Configure log access (legacy)*
 -   GP name: *Channel_Log_FileLogAccess_6*
 -   GP path: *Windows Components\Event Log Service\Security*
 -   GP ADMX file name: *EventLog.admx*
@@ -1280,7 +1280,7 @@ If you do not configure this policy setting, the previous policy setting configu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure log access (legacy)*
+-   GP Friendly name: *Configure log access (legacy)*
 -   GP name: *Channel_Log_FileLogAccess_7*
 -   GP path: *Windows Components\Event Log Service\Setup*
 -   GP ADMX file name: *EventLog.admx*
@@ -1351,7 +1351,7 @@ If you do not configure this policy setting, the previous policy setting configu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure log access (legacy)*
+-   GP Friendly name: *Configure log access (legacy)*
 -   GP name: *Channel_Log_FileLogAccess_8*
 -   GP path: *Windows Components\Event Log Service\System*
 -   GP ADMX file name: *EventLog.admx*
@@ -1422,7 +1422,7 @@ Note: Old events may or may not be retained according to the "Backup log automat
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Control Event Log behavior when the log file reaches its maximum size*
+-   GP Friendly name: *Control Event Log behavior when the log file reaches its maximum size*
 -   GP name: *Channel_Log_Retention_2*
 -   GP path: *Windows Components\Event Log Service\Security*
 -   GP ADMX file name: *EventLog.admx*
@@ -1493,7 +1493,7 @@ Note: Old events may or may not be retained according to the "Backup log automat
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Control Event Log behavior when the log file reaches its maximum size*
+-   GP Friendly name: *Control Event Log behavior when the log file reaches its maximum size*
 -   GP name: *Channel_Log_Retention_3*
 -   GP path: *Windows Components\Event Log Service\Setup*
 -   GP ADMX file name: *EventLog.admx*
@@ -1564,7 +1564,7 @@ Note: Old events may or may not be retained according to the "Backup log automat
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Control Event Log behavior when the log file reaches its maximum size*
+-   GP Friendly name: *Control Event Log behavior when the log file reaches its maximum size*
 -   GP name: *Channel_Log_Retention_4*
 -   GP path: *Windows Components\Event Log Service\System*
 -   GP ADMX file name: *EventLog.admx*

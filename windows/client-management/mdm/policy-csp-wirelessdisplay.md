@@ -334,7 +334,7 @@ Value type is integer.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Don't allow this PC to be projected to*
+-   GP Friendly name: *Don't allow this PC to be projected to*
 -   GP name: *AllowProjectionToPC*
 -   GP path: *Windows Components/Connect*
 -   GP ADMX file name: *WirelessDisplay.admx*
@@ -520,7 +520,7 @@ Value type is integer.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Require pin for pairing*
+-   GP Friendly name: *Require pin for pairing*
 -   GP name: *RequirePinForPairing*
 -   GP path: *Windows Components/Connect*
 -   GP ADMX file name: *WirelessDisplay.admx*

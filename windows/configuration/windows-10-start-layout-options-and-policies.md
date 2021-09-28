@@ -71,7 +71,7 @@ For more information, see [Use MDM to customize Windows 10 Start and taskbar](cu
 
 ## Start menu policy settings
 
-![start layout sections](images/startannotated.png)
+![start layout sections.](images/startannotated.png)
 
 The following list includes the different Start options, and any policy or local settings. The settings in the list can also be used in a provisioning package. If you use a provisioning package, see the [Windows Configuration Designer reference](./wcd/wcd-policies.md#start).
 
@@ -180,7 +180,7 @@ The following example shows how apps are pinned. In OS configured to use a right
 - Apps pinned by the user in the center (orange triangle)
 - Apps that you pin using XML to the right (green square)
 
-![Windows left, user center, enterprise to the right](images/taskbar-generic.png)
+![Windows left, user center, enterprise to the right.](images/taskbar-generic.png)
 
 If you apply the taskbar configuration to a clean install or an update, users can still:
 

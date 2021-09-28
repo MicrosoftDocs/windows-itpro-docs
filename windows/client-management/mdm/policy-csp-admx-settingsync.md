@@ -116,7 +116,7 @@ If you do not set or disable this setting, syncing of the "AppSync" group is on 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not sync Apps*
+-   GP Friendly name: *Do not sync Apps*
 -   GP name: *DisableAppSyncSettingSync*
 -   GP path: *Windows Components\Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -187,7 +187,7 @@ If you do not set or disable this setting, syncing of the "app settings" group i
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not sync app settings*
+-   GP Friendly name: *Do not sync app settings*
 -   GP name: *DisableApplicationSettingSync*
 -   GP path: *Windows Components\Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -258,7 +258,7 @@ If you do not set or disable this setting, syncing of the "passwords" group is o
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not sync passwords*
+-   GP Friendly name: *Do not sync passwords*
 -   GP name: *DisableCredentialsSettingSync*
 -   GP path: *Windows Components\Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -329,7 +329,7 @@ If you do not set or disable this setting, syncing of the "desktop personalizati
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not sync desktop personalization*
+-   GP Friendly name: *Do not sync desktop personalization*
 -   GP name: *DisableDesktopThemeSettingSync*
 -   GP path: *Windows Components\Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -400,7 +400,7 @@ If you do not set or disable this setting, syncing of the "personalize" group is
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not sync personalize*
+-   GP Friendly name: *Do not sync personalize*
 -   GP name: *DisablePersonalizationSettingSync*
 -   GP path: *Windows Components\Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -471,7 +471,7 @@ If you do not set or disable this setting, "sync your settings" is on by default
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not sync*
+-   GP Friendly name: *Do not sync*
 -   GP name: *DisableSettingSync*
 -   GP path: *Windows Components\Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -542,7 +542,7 @@ If you do not set or disable this setting, syncing of the "Start layout" group i
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not sync start settings*
+-   GP Friendly name: *Do not sync start settings*
 -   GP name: *DisableStartLayoutSettingSync*
 -   GP path: *Windows Components\Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -611,7 +611,7 @@ If you do not set or disable this setting, syncing on metered connections is con
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not sync on metered connections*
+-   GP Friendly name: *Do not sync on metered connections*
 -   GP name: *DisableSyncOnPaidNetwork*
 -   GP path: *Windows Components\Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*
@@ -682,7 +682,7 @@ If you do not set or disable this setting, syncing of the "Other Windows setting
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not sync other Windows settings*
+-   GP Friendly name: *Do not sync other Windows settings*
 -   GP name: *DisableWindowsSettingSync*
 -   GP path: *Windows Components\Sync your settings*
 -   GP ADMX file name: *SettingSync.admx*

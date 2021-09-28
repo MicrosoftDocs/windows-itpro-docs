@@ -25,7 +25,7 @@ For the SecurityPolicy CSP, you cannot use the Replace command unless the node a
 
 The following diagram shows the SecurityPolicy configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning.
 
-![securitypolicy csp (dm,cp)](images/provisioning-csp-securitypolicy-dmandcp.png)
+![securitypolicy csp (dm,cp).](images/provisioning-csp-securitypolicy-dmandcp.png)
 
 <a href="" id="policyid"></a>***PolicyID***  
 Defines the security policy identifier as a decimal value.

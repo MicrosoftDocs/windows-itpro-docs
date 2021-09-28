@@ -93,7 +93,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Enumeration policy for external devices incompatible with Kernel DMA Protection*
+-   GP Friendly name: *Enumeration policy for external devices incompatible with Kernel DMA Protection*
 -   GP name: *DmaGuardEnumerationPolicy*
 -   GP path: *System/Kernel DMA Protection*
 -   GP ADMX file name: *dmaguard.admx*

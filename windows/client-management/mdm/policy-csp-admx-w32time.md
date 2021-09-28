@@ -175,7 +175,7 @@ This parameter controls the frequency at which an event that indicates the numbe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Global Configuration Settings*
+-   GP Friendly name: *Global Configuration Settings*
 -   GP name: *W32TIME_POLICY_CONFIG*
 -   GP path: *System\Windows Time Service*
 -   GP ADMX file name: *W32Time.admx*
@@ -265,7 +265,7 @@ This value is a bitmask that controls events that may be logged to the System lo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Configure Windows NTP Client*
+-   GP Friendly name: *Configure Windows NTP Client*
 -   GP name: *W32TIME_POLICY_CONFIGURE_NTPCLIENT*
 -   GP path: *System\Windows Time Service\Time Providers*
 -   GP ADMX file name: *W32Time.admx*
@@ -336,7 +336,7 @@ If you disable or do not configure this policy setting, the local computer clock
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Windows NTP Client*
+-   GP Friendly name: *Enable Windows NTP Client*
 -   GP name: *W32TIME_POLICY_ENABLE_NTPCLIENT*
 -   GP path: *System\Windows Time Service\Time Providers*
 -   GP ADMX file name: *W32Time.admx*
@@ -405,7 +405,7 @@ If you disable or do not configure this policy setting, your computer cannot ser
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enable Windows NTP Server*
+-   GP Friendly name: *Enable Windows NTP Server*
 -   GP name: *W32TIME_POLICY_ENABLE_NTPSERVER*
 -   GP path: *System\Windows Time Service\Time Providers*
 -   GP ADMX file name: *W32Time.admx*

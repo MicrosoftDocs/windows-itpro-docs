@@ -98,7 +98,7 @@ The policy applies to all Windows components and applications that use the Windo
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not display the password reveal button*
+-   GP Friendly name: *Do not display the password reveal button*
 -   GP name: *DisablePasswordReveal*
 -   GP path: *Windows Components/Credential User Interface*
 -   GP ADMX file name: *credui.admx*
@@ -168,7 +168,7 @@ If you disable this policy setting, users will always be required to type a user
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Enumerate administrator accounts on elevation*
+-   GP Friendly name: *Enumerate administrator accounts on elevation*
 -   GP name: *EnumerateAdministrators*
 -   GP path: *Windows Components/Credential User Interface*
 -   GP ADMX file name: *credui.admx*

@@ -79,7 +79,7 @@ Added in Windows 10, version 1607. Specifies whether the device will receive up
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Automatic Update of Speech Data*
+-   GP Friendly name: *Allow Automatic Update of Speech Data*
 -   GP name: *AllowSpeechModelUpdate*
 -   GP path: *Windows Components/Speech*
 -   GP ADMX file name: *Speech.admx*

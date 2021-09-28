@@ -88,7 +88,7 @@ Added in Windows 10, version 1703. Allows IT Admins to control whether users ar
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure App Install Control*
+-   GP Friendly name: *Configure App Install Control*
 -   GP name: *ConfigureAppInstallControl*
 -   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
 -   GP ADMX file name: *SmartScreen.admx*
@@ -154,7 +154,7 @@ Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen fo
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Windows Defender SmartScreen*
+-   GP Friendly name: *Configure Windows Defender SmartScreen*
 -   GP name: *ShellConfigureSmartScreen*
 -   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
 -   GP ADMX file name: *SmartScreen.admx*
@@ -220,7 +220,7 @@ Added in Windows 10, version 1703. Allows IT Admins to control whether users ca
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Windows Defender SmartScreen*
+-   GP Friendly name: *Configure Windows Defender SmartScreen*
 -   GP name: *ShellConfigureSmartScreen*
 -   GP element: *ShellConfigureSmartScreen_Dropdown*
 -   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*

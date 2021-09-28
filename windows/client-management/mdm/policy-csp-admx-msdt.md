@@ -102,7 +102,7 @@ No reboots or service restarts are required for this policy setting to take effe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Support Diagnostic Tool: Turn on MSDT interactive communication with support provider*
+-   GP Friendly name: *Microsoft Support Diagnostic Tool: Turn on MSDT interactive communication with support provider*
 -   GP name: *MsdtSupportProvider*
 -   GP path: *System\Troubleshooting and Diagnostics\Microsoft Support Diagnostic Tool*
 -   GP ADMX file name: *MSDT.admx*
@@ -189,7 +189,7 @@ The DPS can be configured with the Services snap-in to the Microsoft Management 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Support Diagnostic Tool: Restrict tool download*
+-   GP Friendly name: *Microsoft Support Diagnostic Tool: Restrict tool download*
 -   GP name: *MsdtToolDownloadPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Microsoft Support Diagnostic Tool*
 -   GP ADMX file name: *MSDT.admx*
@@ -264,7 +264,7 @@ This policy setting will only take effect when the Diagnostic Policy Service (DP
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Microsoft Support Diagnostic Tool: Configure execution level*
+-   GP Friendly name: *Microsoft Support Diagnostic Tool: Configure execution level*
 -   GP name: *WdiScenarioExecutionPolicy*
 -   GP path: *System\Troubleshooting and Diagnostics\Microsoft Support Diagnostic Tool*
 -   GP ADMX file name: *MSDT.admx*

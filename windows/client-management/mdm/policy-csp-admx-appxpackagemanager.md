@@ -97,7 +97,7 @@ If you disable or do not configure this policy setting, Group Policy blocks depl
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow deployment operations in special profiles*
+-   GP Friendly name: *Allow deployment operations in special profiles*
 -   GP name: *AllowDeploymentInSpecialProfiles*
 -   GP path: *Windows Components\App Package Deployment*
 -   GP ADMX file name: *AppxPackageManager.admx*

@@ -16,15 +16,18 @@ ms.custom: seo-marvel-apr2020
 ---
 # How to make Features on Demand and language packs available when you're using WSUS or Configuration Manager
 
-> Applies to: Windows 10
+**Applies to**
 
-In Windows 10 version 21H2, non-Administrator user accounts can add both a display language and its corresponding language features.
+-   Windows 10
+-   Windows 11
+
+In Windows 10 version 21H2 and later, non-Administrator user accounts can add both a display language and its corresponding language features.
 
 As of Windows 10 version 1709, you can't use Windows Server Update Services (WSUS) to host [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) (FODs) locally. Starting with Windows 10 version 1803, language packs can no longer be hosted on WSUS.
 
 The **Specify settings for optional component installation and component repair** policy, located under `Computer Configuration\Administrative Templates\System` in the Group Policy Editor, can be used to specify alternate ways to acquire FOD packages, language packages, and content for corruption repair. However, it's important to note this policy only allows specifying one alternate location and behaves differently across OS versions.
 
-In Windows 10 version 1709 and 1803, changing the **Specify settings for optional component installation and component repair** policy to download content from Windows Update enables acquisition of FOD packages while also enabling corruption repair. Specifying a network location works for either, depending on the content is found at that location.  Changing this policy on these OS versions does not influence how language packs are acquired.
+In Windows 10 versions 1709 and 1803, changing the **Specify settings for optional component installation and component repair** policy to download content from Windows Update enables acquisition of FOD packages while also enabling corruption repair. Specifying a network location works for either, depending on the content is found at that location.  Changing this policy on these OS versions does not influence how language packs are acquired.
 
 In Windows 10 version 1809 and beyond, changing the **Specify settings for optional component installation and component repair** policy also influences how language packs are acquired, however language packs can only be acquired directly from Windows Update. It's currently not possible to acquire them from a network share. Specifying a network location works for FOD packages or corruption repair, depending on the content at that location.
 

@@ -104,7 +104,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting  e
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify corporate DNS probe host address*
+-   GP Friendly name: *Specify corporate DNS probe host address*
 -   GP name: *NCSI_CorpDnsProbeContent*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
@@ -169,7 +169,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting en
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify corporate DNS probe host name*
+-   GP Friendly name: *Specify corporate DNS probe host name*
 -   GP name: *NCSI_CorpDnsProbeHost*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
@@ -234,7 +234,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting en
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify corporate site prefix list*
+-   GP Friendly name: *Specify corporate site prefix list*
 -   GP name: *NCSI_CorpSitePrefixes*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
@@ -299,7 +299,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting en
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify corporate Website probe URL*
+-   GP Friendly name: *Specify corporate Website probe URL*
 -   GP name: *NCSI_CorpWebProbeUrl*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
@@ -367,7 +367,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting en
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify domain location determination URL*
+-   GP Friendly name: *Specify domain location determination URL*
 -   GP name: *NCSI_DomainLocationDeterminationUrl*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
@@ -432,7 +432,7 @@ Available in the latest Windows 10 Insider Preview Build. This policy setting en
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify global DNS*
+-   GP Friendly name: *Specify global DNS*
 -   GP name: *NCSI_GlobalDns*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*
@@ -497,7 +497,7 @@ Available in the latest Windows 10 Insider Preview Build. This Policy setting en
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify passive polling*
+-   GP Friendly name: *Specify passive polling*
 -   GP name: *NCSI_PassivePolling*
 -   GP path: *Network\Network Connectivity Status Indicator*
 -   GP ADMX file name: *NCSI.admx*

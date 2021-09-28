@@ -46,7 +46,7 @@ You'll need to set up:
 -   LOB publishers need to have an app in Microsoft Store, or have an app ready to submit to the Store.
 
 The process and timing look like this:
-![Process showing LOB workflow in Microsoft Store for Business. Includes workflow for MSFB admin, LOB publisher, and Developer](images/lob-workflow.png)
+![Process showing LOB workflow in Microsoft Store for Business. Includes workflow for MSFB admin, LOB publisher, and Developer.](images/lob-workflow.png)
 
 ## <a href="" id="add-lob-publisher"></a>Add an LOB publisher (Admin)
 Admins need to invite developer or ISVs to become an LOB publisher.

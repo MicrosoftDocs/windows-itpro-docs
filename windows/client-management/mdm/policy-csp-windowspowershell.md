@@ -95,7 +95,7 @@ Note: This policy setting exists under both Computer Configuration and User Conf
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn on PowerShell Script Block Logging*
+-   GP Friendly name: *Turn on PowerShell Script Block Logging*
 -   GP name: *EnableScriptBlockLogging*
 -   GP path: *Windows Components/Windows PowerShell*
 -   GP ADMX file name: *PowerShellExecutionPolicy.admx*

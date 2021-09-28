@@ -85,7 +85,7 @@ Insecure guest logons are used by file servers to allow unauthenticated access t
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Enable insecure guest logons*
+-   GP Friendly name: *Enable insecure guest logons*
 -   GP name: *Pol_EnableInsecureGuestLogons*
 -   GP path: *Network/Lanman Workstation*
 -   GP ADMX file name: *LanmanWorkstation.admx*

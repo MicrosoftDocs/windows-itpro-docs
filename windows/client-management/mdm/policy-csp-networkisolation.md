@@ -100,7 +100,7 @@ Contains a list of Enterprise resource domains hosted in the cloud that need to 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Enterprise resource domains hosted in the cloud*
+-   GP Friendly name: *Enterprise resource domains hosted in the cloud*
 -   GP name: *WF_NetIsolation_EnterpriseCloudResources*
 -   GP element: *WF_NetIsolation_EnterpriseCloudResourcesBox*
 -   GP path: *Network/Network Isolation*
@@ -160,7 +160,7 @@ Sets the enterprise IP ranges that define the computers in the enterprise networ
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Private network ranges for  apps*
+-   GP Friendly name: *Private network ranges for  apps*
 -   GP name: *WF_NetIsolation_PrivateSubnet*
 -   GP element: *WF_NetIsolation_PrivateSubnetBox*
 -   GP path: *Network/Network Isolation*
@@ -233,7 +233,7 @@ Integer value that tells the client to accept the configured list and not to use
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Subnet definitions are authoritative*
+-   GP Friendly name: *Subnet definitions are authoritative*
 -   GP name: *WF_NetIsolation_Authoritative_Subnet*
 -   GP path: *Network/Network Isolation*
 -   GP ADMX file name: *NetworkIsolation.admx*
@@ -292,7 +292,7 @@ This is the comma-separated list of internal proxy servers. For example "157.54.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Intranet proxy servers for  apps*
+-   GP Friendly name: *Intranet proxy servers for  apps*
 -   GP name: *WF_NetIsolation_Intranet_Proxies*
 -   GP element: *WF_NetIsolation_Intranet_ProxiesBox*
 -   GP path: *Network/Network Isolation*
@@ -413,7 +413,7 @@ This is a comma-separated list of proxy servers. Any server on this list is cons
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Internet proxy servers for apps*
+-   GP Friendly name: *Internet proxy servers for apps*
 -   GP name: *WF_NetIsolation_Domain_Proxies*
 -   GP element: *WF_NetIsolation_Domain_ProxiesBox*
 -   GP path: *Network/Network Isolation*
@@ -473,7 +473,7 @@ Integer value that tells the client to accept the configured list of proxies and
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Proxy definitions are authoritative*
+-   GP Friendly name: *Proxy definitions are authoritative*
 -   GP name: *WF_NetIsolation_Authoritative_Proxies*
 -   GP path: *Network/Network Isolation*
 -   GP ADMX file name: *NetworkIsolation.admx*
@@ -532,7 +532,7 @@ List of domain names that can used for work or personal resource.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Domains categorized as both work and personal*
+-   GP Friendly name: *Domains categorized as both work and personal*
 -   GP name: *WF_NetIsolation_NeutralResources*
 -   GP element: *WF_NetIsolation_NeutralResourcesBox*
 -   GP path: *Network/Network Isolation*

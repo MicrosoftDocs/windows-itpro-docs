@@ -31,7 +31,7 @@ For the purposes of this topic, we will use three computers: DC01, MDT01, and HV
    - MDT01 is a contoso.com domain member server.
    - HV01 is a Hyper-V server that will be used to build the reference image.
  
-   ![devices](../images/mdt-08-fig01.png)
+   ![devices.](../images/mdt-08-fig01.png)
 
    Computers used in this topic.
 
@@ -62,7 +62,7 @@ On **MDT01**:
 - Review the Summary page, click **Next**, wait for the deployment share to be created, then click **Finish**.
 - Verify that you can access the <b>\\\\MDT01\\MDTBuildLab$</b> share.
 
-   ![figure 2](../images/mdt-08-fig02.png)
+   ![figure 2.](../images/mdt-08-fig02.png)
 
    The Deployment Workbench with the MDT Build Lab deployment share.
 
@@ -101,7 +101,7 @@ On **MDT01**:
 
 1. Sign in as **contoso\\administrator** and copy the content of a Windows 10 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 10 Enterprise x64** folder on MDT01, or just insert the DVD or mount an ISO on MDT01. The following example shows the files copied to the D:\\Downloads folder, but you can also choose to import the OS directly from an ISO or DVD.
 
-    ![ISO](../images/iso-data.png)
+    ![ISO.](../images/iso-data.png)
 
 2. Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Build Lab**.
 3. Right-click the **Operating Systems** node, and create a new folder named **Windows 10**.
@@ -111,7 +111,7 @@ On **MDT01**:
     - Destination directory name: <b>W10EX64RTM</b>
 5. After adding the operating system, in the **Operating Systems / Windows 10** folder, double-click it and change the name to: **Windows 10 Enterprise x64 RTM Default Image**. See the following example.
 
-    ![Default image](../images/deployment-workbench01.png)
+    ![Default image.](../images/deployment-workbench01.png)
 
 >Depending on the DVD you used, there might be multiple editions available. For the purposes of this guide, we are using the Windows 10 Enterprise image, but other images will also work.
 
@@ -188,7 +188,7 @@ Download all three items in this list to the D:\\Downloads folder on MDT01.
 
 3. Ensure the configuration.xml file is in the D:\\Downloads\\Office365 folder. See the following example of the extracted files plus the configuration.xml file in the Downloads\\Office365 folder:
 
-    ![folder](../images/office-folder.png)
+    ![folder.](../images/office-folder.png)
 
   Assuming you have named the file "configuration.xml" as shown above, we will use the command "**setup.exe /configure configuration.xml**" when we create the application in MDT. This will perform the installation of Microsoft 365 Apps for enterprise using the configuration settings in the configuration.xml file. Do not perform this step yet.
 
@@ -346,7 +346,7 @@ On **MDT01**:
         >[!IMPORTANT]
         >This is probably the most important step when creating a reference image. Many applications need the .NET Framework, and we strongly recommend having it available in the image. The one thing that makes this different from other components is that .NET Framework 3.5.1 is not included in the WIM file. It is installed from the **Sources\\SxS** folder on the media, and that makes it more difficult to add after the image has been deployed.
          
-        ![task sequence](../images/fig8-cust-tasks.png)
+        ![task sequence.](../images/fig8-cust-tasks.png)
 
         The task sequence after creating the Custom Tasks (Pre-Windows Update) group and adding the Install - Microsoft NET Framework 3.5.1 action.
 
@@ -356,18 +356,18 @@ On **MDT01**:
     7.  Repeat these steps (add a new **Install Application**) to add Microsoft Visual C++ Redistributable 2019 - x64 and Microsoft 365 Apps for enterprise as well.
 3. Click **OK**.
 
- ![apps](../images/mdt-apps.png) 
+ ![apps.](../images/mdt-apps.png) 
 
 
 ### Optional configuration: Add a suspend action
 
 The goal when creating a reference image is of course to automate everything. But sometimes you have a special configuration or application setup that is too time-consuming to automate. If you need to do some manual configuration, you can add a little-known feature called Lite Touch Installation (LTI) Suspend. If you add the LTISuspend.wsf script as a custom action in the task sequence, it will suspend the task sequence until you click the Resume Task Sequence shortcut icon on the desktop. In addition to using the LTI Suspend feature for manual configuration or installation, you can also use it simply for verifying a reference image before you allow the task sequence to continue and use Sysprep and capture the virtual machine.
 
-   ![figure 8](../images/fig8-suspend.png)
+   ![figure 8.](../images/fig8-suspend.png)
 
    A task sequence with optional Suspend action (LTISuspend.wsf) added.
 
-   ![figure 9](../images/fig9-resumetaskseq.png)
+   ![figure 9.](../images/fig9-resumetaskseq.png)
 
    The Windows 10 desktop with the Resume Task Sequence shortcut.
 
@@ -402,7 +402,7 @@ On **MDT01**:
      - Note: If errors are reported that certain display values are incorrect, you can ignore this or browse to **7oobeSystem\\amd64_Microsoft-Windows-Shell-Setup__neutral\\Display** and enter the following: ColorDepth 32, HorizontalResolution 1, RefreshRate 60, VerticalResolution 1.
 6. On the Windows 10 Enterprise x64 RTM Default Image Properties, click **OK**.
 
-    ![figure 10](../images/fig10-unattend.png)
+    ![figure 10.](../images/fig10-unattend.png)
 
     Windows System Image Manager with the Windows 10 Unattend.xml.
 
@@ -455,7 +455,7 @@ On **MDT01**:
     SkipFinalSummary=YES
     ```
 
-    ![figure 11](../images/mdt-rules.png)
+    ![figure 11.](../images/mdt-rules.png)
 
     The server-side rules for the MDT Build Lab deployment share.
  
@@ -642,7 +642,7 @@ On **HV01**:
        -   Location: \\\\MDT01\\MDTBuildLab$\\Captures
     3. File name: REFW10X64-001.wim
 
-        ![capture image](../images/captureimage.png)
+        ![capture image.](../images/captureimage.png)
 
         The Windows Deployment Wizard for the Windows 10 reference image.
 
@@ -657,7 +657,7 @@ On **HV01**:
 
 After some time, you will have a Windows 10 Enterprise x64 image that is fully patched and has run through Sysprep, located in the D:\\MDTBuildLab\\Captures folder on your deployment server. The file name is REFW10X64-001.wim.
 
-   ![image](../images/image-captured.png)
+   ![image.](../images/image-captured.png)
 
 ## Troubleshooting
 
@@ -666,7 +666,7 @@ After some time, you will have a Windows 10 Enterprise x64 image that is fully 
 
 If you [enabled monitoring](#enable-monitoring), you can check the progress of the task sequence.
 
-   ![monitoring](../images/mdt-monitoring.png)
+   ![monitoring.](../images/mdt-monitoring.png)
 
 If there are problems with your task sequence, you can troubleshoot in Windows PE by pressing F8 to open a command prompt. There are several [MDT log files](/configmgr/mdt/troubleshooting-reference#mdt-logs) created that can be helpful determining the origin of an error, such as BDD.log.  From the command line in Windows PE you can copy these logs from the client to your MDT server for viewing with CMTrace. For example: copy BDD.log \\\\mdt01\\logs$.
 

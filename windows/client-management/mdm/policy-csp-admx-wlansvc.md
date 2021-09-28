@@ -98,7 +98,7 @@ If this policy setting is enabled, a drop-down list box presenting possible cost
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set Cost*
+-   GP Friendly name: *Set Cost*
 -   GP name: *IncludeCmdLine*
 -   GP path: *Network\WLAN Service\WLAN Media Cost*
 -   GP ADMX file name: *wlansvc.admx*
@@ -167,7 +167,7 @@ If this policy setting is disabled or is not configured, by default Push Button 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require PIN pairing*
+-   GP Friendly name: *Require PIN pairing*
 -   GP name: *SetPINEnforced*
 -   GP path: *Network\Wireless Display*
 -   GP ADMX file name: *wlansvc.admx*
@@ -236,7 +236,7 @@ If this policy setting is disabled or is not configured, by default Push Button 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prefer PIN pairing*
+-   GP Friendly name: *Prefer PIN pairing*
 -   GP name: *SetPINPreferred*
 -   GP path: *Network\Wireless Display*
 -   GP ADMX file name: *wlansvc.admx*

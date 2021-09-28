@@ -23,15 +23,15 @@ If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Ent
 
 1.  Sign in to the Microsoft 365 admin center at <https://portal.office.com> using your organization's account.
 
-    ![register azuread](images/azure-ad-add-tenant10.png)
+    ![register azuread.](images/azure-ad-add-tenant10.png)
 
 2.  On the **Home** page, click on the Admin tools icon.
 
-    ![register azuread](images/azure-ad-add-tenant11.png)
+    ![register azuread.](images/azure-ad-add-tenant11.png)
 
 3.  On the **Admin center** page, under Admin Centers on the left, click **Azure Active Directory**. This will take you to the Azure Active Directory portal.
 
-    ![Azure-AD-updated](https://user-images.githubusercontent.com/41186174/71594506-e4845300-2b40-11ea-9a08-c21c824e12a4.png)
+    ![Azure-AD-updated.](https://user-images.githubusercontent.com/41186174/71594506-e4845300-2b40-11ea-9a08-c21c824e12a4.png)
 
 
 

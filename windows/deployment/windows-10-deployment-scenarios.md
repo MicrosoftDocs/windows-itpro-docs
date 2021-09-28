@@ -30,109 +30,109 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
 - Traditional deployment methods use existing tools to deploy operating system images.<br>&nbsp;
 
 <table border="0">
-  <tr><td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Category</b></td>
-     <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Scenario</b></td>
-     <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>Description</b></td>
-     <td align="center" style="width:16%; border:1;" bgcolor='#a0e4fa'><b>More information</b></td></tr>
+  <tr><td align="center" bgcolor='#a0e4fa'><b>Category</b></td>
+     <td align="center" bgcolor='#a0e4fa'><b>Scenario</b></td>
+     <td align="center" bgcolor='#a0e4fa'><b>Description</b></td>
+     <td align="center" bgcolor='#a0e4fa'><b>More information</b></td></tr>
   <tr><td align='center' valign='middle' style='width:16%; border:1;' rowspan="2">Modern</td>
     <td align="center">
 
 [Windows Autopilot](#windows-autopilot)</td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
       Customize the out-of-box-experience (OOBE) for your organization, and deploy a new system with apps and settings already configured.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
 <a href="/windows/deployment/windows-autopilot/windows-10-autopilot">Overview of Windows Autopilot</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
 
 [In-place upgrade](#in-place-upgrade)
 
  </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
       Use Windows Setup to update your OS and migrate apps and settings. Rollback data is saved in Windows.old.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
 <a href="/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit">Perform an in-place upgrade to Windows 10 with MDT</a><br><a href="/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager">Perform an in-place upgrade to Windows 10 using Configuration Manager</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;" rowspan="3"> 
+    <td align="center" rowspan="3"> 
       Dynamic
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
 
 [Subscription Activation](#windows-10-subscription-activation)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
       Switch from Windows 10 Pro to Enterprise when a subscribed user signs in. 
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
 <a href="/windows/deployment/windows-10-enterprise-subscription-activation">Windows 10 Subscription Activation</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
 
  [AAD / MDM](#dynamic-provisioning)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
       The device is automatically joined to AAD and configured by MDM.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
 <a href="/windows/client-management/mdm/azure-active-directory-integration-with-mdm">Azure Active Directory integration with MDM</a>
     </td>
    </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
 
    [Provisioning packages](#dynamic-provisioning)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
       Using the Windows Imaging and Configuration Designer tool, create provisioning packages that can be applied to devices.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
 <a href="/windows/configuration/configure-devices-without-mdm">Configure devices without MDM</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;" rowspan="3"> 
+    <td align="center" rowspan="3"> 
       Traditional
     </td>
-    <td align="center" style="width:16%; border:1;">
+    <td align="center">
 
    [Bare metal](#new-computer)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
       Deploy a new device, or wipe an existing device and deploy with a fresh image. 
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
  <a href="/windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt">Deploy a Windows 10 image using MDT</a><br><a href="/windows/deployment/deploy-windows-cm/deploy-windows-10-using-pxe-and-configuration-manager">Deploy Windows 10 using PXE and Configuration Manager</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
 
    [Refresh](#computer-refresh)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
       Also called wipe and load. Redeploy a device by saving the user state, wiping the disk, then restoring the user state. 
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
  <a href="/windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10">Refresh a Windows 7 computer with Windows 10</a><br><a href="/windows/deployment/deploy-windows-cm/refresh-a-windows-7-client-with-windows-10-using-configuration-manager">Refresh a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
     </td>
   </tr>
   <tr>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
 
   [Replace](#computer-replace)
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
       Replace an existing device with a new one by saving the user state on the old device and then restoring it to the new device.
     </td>
-    <td align="center" style="width:16%; border:1;"> 
+    <td align="center"> 
  <a href="/windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer">Replace a Windows 7 computer with a Windows 10 computer</a><br><a href="/windows/deployment/deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager">Replace a Windows 7 SP1 client with Windows 10 using Configuration Manager</a>
     </td>
   </tr>

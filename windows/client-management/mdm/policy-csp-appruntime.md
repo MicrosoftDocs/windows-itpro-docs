@@ -90,7 +90,7 @@ If you disable or do not configure this policy setting, users will need to sign 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow Microsoft accounts to be optional*
+-   GP Friendly name: *Allow Microsoft accounts to be optional*
 -   GP name: *AppxRuntimeMicrosoftAccountsOptional*
 -   GP path: *Windows Components/App runtime*
 -   GP ADMX file name: *AppXRuntime.admx*

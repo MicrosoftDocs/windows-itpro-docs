@@ -27,7 +27,7 @@ Four computers are used in this topic: DC01, MDT01, MDT02, and PC0006. DC01 is a
 
 For the purposes of this article, we assume that MDT02 is prepared with the same network and storage capabilities that were specified for MDT01, except that MDT02 is located on a different subnet than MDT01. For more details on the infrastructure setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
-![figure 1](../images/mdt-10-fig01.png)
+![figure 1.](../images/mdt-10-fig01.png)
 
 Computers used in this topic.
 
@@ -149,7 +149,7 @@ On **MDT01**:
 4. After the update is complete, use the Windows Deployment Services console on MDT01. In the **Boot Images** node, right-click the **MDT Production x64** boot image and select **Replace Image**.
 5. Browse and select the **D:\\MDTProduction\\Boot\\LiteTouchPE\_x64.wim** boot image, and then complete Replace Boot Image Wizard using the default settings.
 
-   ![figure 5](../images/mdt-10-fig05.png)
+   ![figure 5.](../images/mdt-10-fig05.png)
 
    Replacing the updated boot image in WDS.
 
@@ -167,7 +167,7 @@ On **MDT01**:
 8. On the **Name and Domain** page, assign the **MDTProduction** name, and click **Next**.
 9. On the **Replication Group Members** page, click **Add**, add **MDT01** and **MDT02**, and then click **Next**.
 
-    ![figure 6](../images/mdt-10-fig06.png)
+    ![figure 6.](../images/mdt-10-fig06.png)
 
     Adding the Replication Group Members.
 
@@ -223,7 +223,7 @@ On **MDT02**:
 7. On the **Review Settings and Create Report** page, click **Create**.
 8. Open the report in Internet Explorer, and if necessary, select the **Allow blocked content** option.
 
-![figure 9](../images/mdt-10-fig09.png)
+![figure 9.](../images/mdt-10-fig09.png)
 
 The DFS Replication Health Report.
 
@@ -258,7 +258,7 @@ Now you should have a solution ready for deploying the Windows 10 client to the
     2.  Install applications.
     3.  Update the operating system using your local Windows Server Update Services (WSUS) server.
 
-![pc0001](../images/pc0006.png)
+![pc0001.](../images/pc0006.png)
 
 ## Related topics
 

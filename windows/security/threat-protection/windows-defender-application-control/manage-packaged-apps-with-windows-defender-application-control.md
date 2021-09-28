@@ -1,5 +1,5 @@
 ---
-title: Manage packaged apps with WDAC  (Windows 10)
+title: Manage packaged apps with WDAC  (Windows)
 description: Packaged apps, also known as Universal Windows apps, allow you to control the entire app by using a single Windows Defender Application Control (WDAC) rule.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
@@ -23,7 +23,11 @@ ms.technology: mde
 **Applies to:**
 
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
+
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 This topic for IT professionals describes concepts and lists procedures to help you manage packaged apps with Windows Defender Application Control (WDAC) as part of your overall application control strategy.
 

@@ -1,6 +1,6 @@
 ---
-title: Enable ADMX-backed policies in MDM
-description: Use this step-by-step guide to configure a selected set of Group Policy administrative templates (ADMX-backed policies) in Mobile Device Management (MDM).
+title: Enable ADMX policies in MDM
+description: Use this step-by-step guide to configure a selected set of Group Policy administrative templates (ADMX policies) in Mobile Device Management (MDM).
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -12,30 +12,30 @@ ms.reviewer:
 manager: dansimp
 ---
 
-# Enable ADMX-backed policies in MDM
+# Enable ADMX policies in MDM
 
 
-This is a step-by-step guide to configuring ADMX-backed policies in MDM.
+Here's how to configure Group Policy administrative templates (ADMX policies) in Mobile Device Management (MDM).
 
-Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX-backed policies)](./policies-in-policy-csp-admx-backed.md) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX-backed policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
+Starting in Windows 10 version 1703, Mobile Device Management (MDM) policy configuration support was expanded to allow access of [selected set of Group Policy administrative templates (ADMX policies)](./policies-in-policy-csp-admx-backed.md) for Windows PCs via the [Policy configuration service provider (CSP)](policy-configuration-service-provider.md). Configuring ADMX policies in Policy CSP is different from the typical way you configure a traditional MDM policy. 
 
 Summary of steps to enable a policy:
-- Find the policy from the list ADMX-backed policies. 
+- Find the policy from the list ADMX policies. 
 - Find the Group Policy related information from the MDM policy description.
 - Use the Group Policy Editor to determine whether there are parameters necessary to enable the policy.
 - Create the data payload for the SyncML.
 
-See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Ingesting-Office-ADMX-Backed-policies-using/ba-p/354824) and [Deploying ADMX-Backed policies using Microsoft Intune](/archive/blogs/senthilkumar/intune-deploying-admx-backed-policies-using-microsoft-intune) for a walk-through using Intune.
+See [Support Tip: Ingesting Office ADMX policies using Microsoft Intune](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Ingesting-Office-ADMX-Backed-policies-using/ba-p/354824) and [Deploying ADMX policies using Microsoft Intune](/archive/blogs/senthilkumar/intune-deploying-admx-backed-policies-using-microsoft-intune) for a walk-through using Intune.
 
->[!TIP]
->Intune has added a number of ADMX-backed administrative templates in public preview. Check if the policy settings you need are available in a template before using the SyncML method described below. [Learn more about Intune's administrative templates.](/intune/administrative-templates-windows)
+<!-- >[!TIP] -->
+<!--  >Intune has added a number of ADMX administrative templates in public preview. Check if the policy settings you need are available in a template before using the SyncML method described below. [Learn more about Intune's administrative templates.](/intune/administrative-templates-windows) -->
 
 ## Enable a policy
 
 > [!NOTE]
-> See [Understanding ADMX-backed policies in Policy CSP](./understanding-admx-backed-policies.md).
+> See [Understanding ADMX policies in Policy CSP](./understanding-admx-backed-policies.md).
 
-1.  Find the policy from the list [ADMX-backed policies](./policies-in-policy-csp-admx-backed.md). You need the following information listed in the policy description.  
+1.  Find the policy from the list [ADMX policies](./policies-in-policy-csp-admx-backed.md). You need the following information listed in the policy description.  
     - GP English name
     - GP name
     - GP ADMX file name
@@ -47,23 +47,23 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
     2. Under **Best match**, click **Edit group policy** to launch it.  
        
-       ![GPEdit search](images/admx-gpedit-search.png)
+       ![GPEdit search.](images/admx-gpedit-search.png)
 
     3. In **Local Computer Policy** navigate to the policy you want to configure.  
     
        In this example, navigate to **Administrative Templates >  System > App-V**.
 
-       ![App-V policies](images/admx-appv.png)
+       ![App-V policies.](images/admx-appv.png)
 
     4. Double-click **Enable App-V Client**.  
 
        The **Options** section is empty, which means there are no parameters necessary to enable the policy. If the **Options** section is not empty, follow the procedure in [Enable a policy that requires parameters](#enable-a-policy-that-requires-parameters)
 
-       ![Enable App-V client](images/admx-appv-enableapp-vclient.png)
+       ![Enable App-V client.](images/admx-appv-enableapp-vclient.png)
 
 3.  Create the SyncML to enable the policy that does not require any parameter.  
 
-    In this example you configure **Enable App-V Client** to **Enabled**.
+    In this example, you configure **Enable App-V Client** to **Enabled**.
 
     > [!NOTE]
     > The \<Data> payload must be XML encoded. To avoid encoding, you can use CData if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect). If you are using Intune, select String as the data type.
@@ -99,22 +99,22 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
 
    1. Double-click **Publishing Server 2 Settings** to see the parameters you need to configure when you enable this policy.
 
-      ![Enable publishing server 2 policy](images/admx-appv-publishingserver2.png)
+      ![Enable publishing server 2 policy.](images/admx-appv-publishingserver2.png)
 
-      ![Enable publishing server 2 settings](images/admx-app-v-enablepublishingserver2settings.png)
+      ![Enable publishing server 2 settings.](images/admx-app-v-enablepublishingserver2settings.png)
 
    2. Find the variable names of the parameters in the ADMX file.
 
       You can find the ADMX file name in the policy description in Policy CSP. In this example, the filename appv.admx is listed in [AppVirtualization/PublishingAllowServer2](policy-configuration-service-provider.md#appvirtualization-publishingallowserver2).
 
-      ![Publishing server 2 policy description](images/admx-appv-policy-description.png)
+      ![Publishing server 2 policy description.](images/admx-appv-policy-description.png)
 
-   3. Navigate to **C:\Windows\PolicyDefinitions** (default location of the admx files) and open appv.admx.
+   3. Navigate to **C:\Windows\PolicyDefinitions** (default location of the ADMX files) and open appv.admx.
 
    4. Search for GP name **Publishing_Server2_policy**.
 
 
-   5. Under **policy name="Publishing_Server2_Policy"** you can see the \<elements> listed. The text id and enum id represents the data id you need to include in the SyncML data payload. They correspond to the fields you see in GP Editor.
+   5. Under **policy name="Publishing_Server2_Policy"** you can see the \<elements> listed. The *text id* and *enum id* represents the *data id* you need to include in the SyncML data payload. They correspond to the fields you see in the Group Policy Editor.
     
       Here is the snippet from appv.admx:
 
@@ -206,9 +206,9 @@ See [Support Tip: Ingesting Office ADMX-backed policies using Microsoft Intune](
       </policy>
       ```
 
-   6. From the \<elements>  tag, copy all the text id and enum id and create an XML with data id and value fields. The value field contains the configuration settings you would enter in the GP Editor.
+   6. From the **\<elements>**  tag, copy all of the *text id* and *enum id* and create an XML with *data id* and *value* fields. The *value* field contains the configuration settings that you would enter in the Group Policy Editor.
 
-      Here is the example XML for Publishing_Server2_Policy :
+      Here is the example XML for Publishing_Server2_Policy:
         
       ```xml
       <data id="Publishing_Server2_Name_Prompt" value="Name"/>

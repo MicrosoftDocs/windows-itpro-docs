@@ -64,7 +64,7 @@ Note that this setting does not control whether your device sends diagnostic dat
 
 2. Under **Diagnostic data**, turn on the **If data viewing is enabled, you can see your diagnostics data** option.
 
-    ![Location to turn on data viewing](images/ddv-data-viewing.png)
+    ![Location to turn on data viewing.](images/ddv-data-viewing.png)
 
 **To turn on data viewing through PowerShell**
 
@@ -134,7 +134,7 @@ When you're done reviewing your diagnostic data, we recommend turning off data v
 
 2. Under **Diagnostic data**, turn off the **If data viewing is enabled, you can see your diagnostics data** option.
 
-    ![Location to turn off data viewing](images/ddv-settings-off.png)
+    ![Location to turn off data viewing.](images/ddv-settings-off.png)
 
 **To turn off data viewing through PowerShell** 
 

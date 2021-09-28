@@ -186,7 +186,7 @@ If you disable or do not configure this setting, the operating system does not f
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set time (in seconds) to force reboot*
+-   GP Friendly name: *Set time (in seconds) to force reboot*
 -   GP name: *AccessRights_RebootTime_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -258,7 +258,7 @@ If you disable or do not configure this setting, the operating system does not f
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set time (in seconds) to force reboot*
+-   GP Friendly name: *Set time (in seconds) to force reboot*
 -   GP name: *AccessRights_RebootTime_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -327,7 +327,7 @@ If you disable or do not configure this policy setting, execute access is allowe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *CD and DVD: Deny execute access*
+-   GP Friendly name: *CD and DVD: Deny execute access*
 -   GP name: *CDandDVD_DenyExecute_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -395,7 +395,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *CD and DVD: Deny read access*
+-   GP Friendly name: *CD and DVD: Deny read access*
 -   GP name: *CDandDVD_DenyRead_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -464,7 +464,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *CD and DVD: Deny read access*
+-   GP Friendly name: *CD and DVD: Deny read access*
 -   GP name: *CDandDVD_DenyRead_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -533,7 +533,7 @@ If you disable or do not configure this policy setting, write access is allowed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *CD and DVD: Deny write access*
+-   GP Friendly name: *CD and DVD: Deny write access*
 -   GP name: *CDandDVD_DenyWrite_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -602,7 +602,7 @@ If you disable or do not configure this policy setting, write access is allowed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *CD and DVD: Deny write access*
+-   GP Friendly name: *CD and DVD: Deny write access*
 -   GP name: *CDandDVD_DenyWrite_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -671,7 +671,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Custom Classes: Deny read access*
+-   GP Friendly name: *Custom Classes: Deny read access*
 -   GP name: *CustomClasses_DenyRead_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -740,7 +740,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Custom Classes: Deny read access*
+-   GP Friendly name: *Custom Classes: Deny read access*
 -   GP name: *CustomClasses_DenyRead_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -809,7 +809,7 @@ If you disable or do not configure this policy setting, write access is allowed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Custom Classes: Deny write access*
+-   GP Friendly name: *Custom Classes: Deny write access*
 -   GP name: *CustomClasses_DenyWrite_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -877,7 +877,7 @@ If you disable or do not configure this policy setting, write access is allowed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Custom Classes: Deny write access*
+-   GP Friendly name: *Custom Classes: Deny write access*
 -   GP name: *CustomClasses_DenyWrite_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -945,7 +945,7 @@ If you disable or do not configure this policy setting, execute access is allowe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Floppy Drives: Deny execute access*
+-   GP Friendly name: *Floppy Drives: Deny execute access*
 -   GP name: *FloppyDrives_DenyExecute_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1013,7 +1013,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Floppy Drives: Deny read access*
+-   GP Friendly name: *Floppy Drives: Deny read access*
 -   GP name: *FloppyDrives_DenyRead_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1081,7 +1081,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Floppy Drives: Deny read access*
+-   GP Friendly name: *Floppy Drives: Deny read access*
 -   GP name: *FloppyDrives_DenyRead_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1148,7 +1148,7 @@ If you disable or do not configure this policy setting, write access is allowed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Floppy Drives: Deny write access*
+-   GP Friendly name: *Floppy Drives: Deny write access*
 -   GP name: *FloppyDrives_DenyWrite_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1216,7 +1216,7 @@ If you disable or do not configure this policy setting, write access is allowed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Floppy Drives: Deny write access*
+-   GP Friendly name: *Floppy Drives: Deny write access*
 -   GP name: *FloppyDrives_DenyWrite_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1283,7 +1283,7 @@ If you disable or do not configure this policy setting, execute access is allowe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Removable Disks: Deny execute access*
+-   GP Friendly name: *Removable Disks: Deny execute access*
 -   GP name: *RemovableDisks_DenyExecute_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1351,7 +1351,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Removable Disks: Deny read access*
+-   GP Friendly name: *Removable Disks: Deny read access*
 -   GP name: *RemovableDisks_DenyRead_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1418,7 +1418,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Removable Disks: Deny read access*
+-   GP Friendly name: *Removable Disks: Deny read access*
 -   GP name: *RemovableDisks_DenyRead_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1489,7 +1489,7 @@ If you disable or do not configure this policy setting, write access is allowed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Removable Disks: Deny write access*
+-   GP Friendly name: *Removable Disks: Deny write access*
 -   GP name: *RemovableDisks_DenyWrite_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1559,7 +1559,7 @@ If you disable or do not configure this policy setting, write and read accesses 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *All Removable Storage classes: Deny all access*
+-   GP Friendly name: *All Removable Storage classes: Deny all access*
 -   GP name: *RemovableStorageClasses_DenyAll_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1629,7 +1629,7 @@ If you disable or do not configure this policy setting, write and read accesses 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *All Removable Storage classes: Deny all access*
+-   GP Friendly name: *All Removable Storage classes: Deny all access*
 -   GP name: *RemovableStorageClasses_DenyAll_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1697,7 +1697,7 @@ If you disable or do not configure this policy setting, remote users cannot open
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *All Removable Storage: Allow direct access in remote sessions*
+-   GP Friendly name: *All Removable Storage: Allow direct access in remote sessions*
 -   GP name: *Removable_Remote_Allow_Access*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1765,7 +1765,7 @@ If you disable or do not configure this policy setting, execute access is allowe
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Tape Drives: Deny execute access*
+-   GP Friendly name: *Tape Drives: Deny execute access*
 -   GP name: *TapeDrives_DenyExecute_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1832,7 +1832,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Tape Drives: Deny read access*
+-   GP Friendly name: *Tape Drives: Deny read access*
 -   GP name: *TapeDrives_DenyRead_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1900,7 +1900,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Tape Drives: Deny read access*
+-   GP Friendly name: *Tape Drives: Deny read access*
 -   GP name: *TapeDrives_DenyRead_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -1967,7 +1967,7 @@ If you disable or do not configure this policy setting, write access is allowed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Tape Drives: Deny write access*
+-   GP Friendly name: *Tape Drives: Deny write access*
 -   GP name: *TapeDrives_DenyWrite_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -2035,7 +2035,7 @@ If you disable or do not configure this policy setting, write access is allowed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Tape Drives: Deny write access*
+-   GP Friendly name: *Tape Drives: Deny write access*
 -   GP name: *TapeDrives_DenyWrite_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -2103,7 +2103,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *WPD Devices: Deny read access*
+-   GP Friendly name: *WPD Devices: Deny read access*
 -   GP name: *WPDDevices_DenyRead_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -2170,7 +2170,7 @@ If you disable or do not configure this policy setting, read access is allowed t
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *WPD Devices: Deny read access*
+-   GP Friendly name: *WPD Devices: Deny read access*
 -   GP name: *WPDDevices_DenyRead_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -2238,7 +2238,7 @@ If you disable or do not configure this policy setting, write access is allowed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *WPD Devices: Deny write access*
+-   GP Friendly name: *WPD Devices: Deny write access*
 -   GP name: *WPDDevices_DenyWrite_Access_1*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
@@ -2306,7 +2306,7 @@ If you disable or do not configure this policy setting, write access is allowed 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *WPD Devices: Deny write access*
+-   GP Friendly name: *WPD Devices: Deny write access*
 -   GP name: *WPDDevices_DenyWrite_Access_2*
 -   GP path: *System\Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*

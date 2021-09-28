@@ -54,4 +54,4 @@ To change the policy for an external storage device:
   
 7. Select the policy that you want to use.
   
-   ![Policy options for disk management](./images/change-def-rem-policy-2.png)
+   ![Policy options for disk management.](./images/change-def-rem-policy-2.png)

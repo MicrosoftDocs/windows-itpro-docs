@@ -79,7 +79,7 @@ Added in Windows 10, version 1607. Enables text message back up and restore and
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Message Service Cloud Sync*
+-   GP Friendly name: *Allow Message Service Cloud Sync*
 -   GP name: *AllowMessageSync*
 -   GP path: *Windows Components/Messaging*
 -   GP ADMX file name: *messaging.admx*

@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
-ms.date: 10/22/2018
+ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -16,8 +16,6 @@ ms.technology: mde
 
 # How to get a list of XML data name elements in EventData
 
-**Applies to**
--   Windows 10
 
 The Security log uses a manifest where you can get all of the event schema.
 

@@ -1,6 +1,16 @@
 {
   "redirections": [
     {
+      "source_path": "windows/configuration/use-json-customize-start-menu-windows.md",
+      "redirect_url": "/windows/configuration/customize-start-menu-layout-windows-11",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/application-management/msix-app-packaging-tool.md",
+      "redirect_url": "/windows/application-management/apps-in-windows-10",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "browsers/edge/about-microsoft-edge.md",
       "redirect_url": "/previous-versions/windows/edge-legacy/about-microsoft-edge",
       "redirect_document_id": false
@@ -213,6 +223,11 @@
     {
       "source_path": "devices/surface/update.md",
       "redirect_url": "/surface/manage-surface-driver-and-firmware-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-how-it-works-device-registration.md",
+      "redirect_url": "/azure/active-directory/devices/device-registration-how-it-works",
       "redirect_document_id": false
     },
     {
@@ -8441,8 +8456,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/deploy/upgrade-windows-phone-8-1-to-10.md",
-      "redirect_url": "/windows/deployment/upgrade/upgrade-windows-phone-8-1-to-10",
+      "source_path": "windows/deployment/upgrade/upgrade-windows-phone-8-1-to-10.md",
+      "redirect_url": "/windows/deployment/upgrade/windows-10-edition-upgrades",
       "redirect_document_id": false
     },
     {
@@ -18944,6 +18959,8 @@
       "source_path": "windows/privacy/data-processor-service-for-windows-enterprise-public-preview-terms.md",
       "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
       "redirect_document_id": false
-    }
+    },
+    
+
 	    ]
 }

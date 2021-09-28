@@ -107,7 +107,7 @@ If both the "Hide specified Control Panel items" setting and the "Show only spec
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide specified Control Panel items*
+-   GP Friendly name: *Hide specified Control Panel items*
 -   GP name: *DisallowCpls*
 -   GP path: *Control Panel*
 -   GP ADMX file name: *ControlPanel.admx*
@@ -181,7 +181,7 @@ If this policy setting is not configured, the Control Panel opens to the view us
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Always open All Control Panel Items when opening Control Panel*
+-   GP Friendly name: *Always open All Control Panel Items when opening Control Panel*
 -   GP name: *ForceClassicControlPanel*
 -   GP path: *Control Panel*
 -   GP ADMX file name: *ControlPanel.admx*
@@ -262,7 +262,7 @@ If users try to select a Control Panel item from the Properties item on a contex
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Prohibit access to Control Panel and PC settings*
+-   GP Friendly name: *Prohibit access to Control Panel and PC settings*
 -   GP name: *NoControlPanel*
 -   GP path: *Control Panel*
 -   GP ADMX file name: *ControlPanel.admx*
@@ -339,7 +339,7 @@ If both the "Hide specified Control Panel items" setting and the "Show only spec
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Show only specified Control Panel items*
+-   GP Friendly name: *Show only specified Control Panel items*
 -   GP name: *RestrictCpls*
 -   GP path: *Control Panel*
 -   GP ADMX file name: *ControlPanel.admx*

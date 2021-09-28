@@ -1,5 +1,5 @@
 ---
-title: Implementing Your Windows Defender Firewall with Advanced Security Design Plan (Windows 10)
+title: Implementing Your Windows Defender Firewall with Advanced Security Design Plan (Windows)
 description: Implementing Your Windows Defender Firewall with Advanced Security Design Plan
 ms.assetid: 15f609d5-5e4e-4a71-9eff-493a2e3e40f9
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 The following are important factors in the implementation of your Windows Defender Firewall design plan:
 
@@ -41,7 +42,7 @@ The following are important factors in the implementation of your Windows Defend
 
 The next step in implementing your design is to determine in what order each of the deployment steps must be performed. This guide uses checklists to help you accomplish the various deployment tasks that are required to implement your design plan. As the following diagram shows, checklists and subchecklists are used as necessary to provide the end-to-end procedure for deploying a design.
 
-![wfas implementation](images/wfas-implement.gif)
+![wfas implementation.](images/wfas-implement.gif)
 
 Use the following parent checklists in this section of the guide to become familiar with the deployment tasks for implementing your organization's Windows Defender Firewall with Advanced Security design.
 

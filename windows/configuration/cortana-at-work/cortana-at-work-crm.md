@@ -1,5 +1,5 @@
 ---
-title: Set up and test Cortana with Microsoft Dynamics CRM (Preview feature) in your organization (Windows 10)
+title: Set up and test Cortana with Microsoft Dynamics CRM (Preview feature) in Windows
 description: How to set up Cortana to give salespeople insights on important CRM activities, including sales leads, accounts, and opportunities.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -19,7 +19,7 @@ Cortana integration is a Preview feature that's available for your test or dev e
 >[!NOTE]
 >For more info about Dynamics CRM integration, how to turn on Cortana, and how to provide feedback, see [Preview feature: Set up Cortana integration](https://go.microsoft.com/fwlink/p/?LinkId=746819).
 
-![Cortana at work, showing the sales data pulled from Dynamics CRM](../images/cortana-crm-screen.png)
+![Cortana at work, showing the sales data pulled from Dynamics CRM.](../images/cortana-crm-screen.png)
 
 ## Turn on Cortana with Dynamics CRM in your organization
 You must be a CRM administrator to turn on and use Preview features. For more info about what Preview features are and how to use them, see [What are Preview features and how do I enable them](https://go.microsoft.com/fwlink/p/?LinkId=746817)?
@@ -43,7 +43,7 @@ You must tell your employees to turn on Cortana, before they’ll be able to use
 
 2. Click on **Connected Services**, click **Dynamics CRM**, and then click **Connect**.
 
-    ![Cotana at work, showing how to turn on the connected services for Dynamics CRM](../images/cortana-connect-crm.png)
+    ![Cotana at work, showing how to turn on the connected services for Dynamics CRM.](../images/cortana-connect-crm.png)
 
     The employee can also disconnect by clicking **Disconnect** from the **Dynamics CRM** screen.
 

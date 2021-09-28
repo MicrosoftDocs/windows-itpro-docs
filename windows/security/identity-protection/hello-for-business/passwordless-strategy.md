@@ -1,6 +1,6 @@
 ---
 title: Passwordless Strategy
-description: Learn about the password-less strategy and how Windows Hello for Business implements this strategy in Windows 10.
+description: Learn about the password-less strategy and how Windows Hello for Business implements this strategy in Windows 10 and Windows 11.
 keywords: identity, PIN, biometric, Hello, passport, video, watch, passwordless
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,11 +21,11 @@ ms.reviewer:
 ## Four steps to password freedom
 
 Over the past few years, Microsoft has continued their commitment to enabling a world without passwords. At Microsoft Ignite 2017, we shared our four-step approach to password freedom.
-![Passwordless approach](images/four-steps-passwordless.png)
+![Passwordless approach.](images/four-steps-passwordless.png)
 
 
 ### 1. Develop a password replacement offering
-Before you move away from passwords, you need something to replace them. With Windows 10, Microsoft introduced Windows Hello for Business, a strong, hardware protected two-factor credential that enables single sign-on to Azure Active Directory and Active Directory.
+Before you move away from passwords, you need something to replace them. With Windows 10 and Windows 11, Microsoft introduced Windows Hello for Business, a strong, hardware protected two-factor credential that enables single sign-on to Azure Active Directory and Active Directory.
 
 Deploying Windows Hello for Business is the first step towards a passwordless environment. Windows Hello for Business coexists nicely with existing password-based security. Users are likely to use Windows Hello for Business because of its convenience, especially when combined with biometrics. However, some workflows and applications may still need passwords. This early stage is about implementing an alternative and getting users used to it.
 
@@ -38,7 +38,7 @@ Once the user-visible password surface has been eliminated, your organization ca
 - the users never change their password
 - the users do not know their password
 
-In this world, the user signs in to Windows 10 using Windows Hello for Business and enjoys single sign-on to Azure and Active Directory resources. If the user is forced to authenticate, their authentication uses Windows Hello for Business.
+In this world, the user signs in to Windows using Windows Hello for Business and enjoys single sign-on to Azure and Active Directory resources. If the user is forced to authenticate, their authentication uses Windows Hello for Business.
 
 ### 4. Eliminate passwords from the identity directory
 The final step of the passwordless story is where passwords simply do not exist. At this step, identity directories no longer persist any form of the password. This is where Microsoft achieves the long-term security promise of a truly passwordless environment.
@@ -139,7 +139,7 @@ The journey to password freedom is to take each work persona through each step o
 After successfully moving a work persona to password freedom, you can prioritize the remaining work personas and repeat the process.
 
 ### Passwordless replacement offering (Step 1)
-The first step to password freedom is providing an alternative to passwords. Windows 10 provides an affordable and easy in-box alternative to passwords, Windows Hello for Business, a strong, two-factor authentication to Azure Active Directory and Active Directory.
+The first step to password freedom is providing an alternative to passwords. Windows 10 and Windows 11 provide an affordable and easy in-box alternative to passwords, Windows Hello for Business, a strong, two-factor authentication to Azure Active Directory and Active Directory.
 
 #### Identify test users that represent the targeted work persona
 A successful transition relies on user acceptance testing. It is impossible for you to know how every work persona goes about their day-to-day activities, or how to accurately validate them. You need to enlist the help of users who fit the targeted work persona. You only need a few users from the targeted work persona. As you cycle through step 2, you may want to change a few of the users (or add a few) as part of your validation process.
@@ -203,24 +203,24 @@ Windows provides two ways to prevent your users from using passwords. You can us
 
 ##### Security Policy
 You can use Group Policy to deploy an interactive logon security policy setting to the computer. This policy setting is found under **Computer Configuration > Policies > Windows Settings > Local Policy > Security Options**.  The name of the policy setting depends on the version of the operating systems you use to configure Group Policy.
-![securityPolicyLocation](images/passwordless/00-securityPolicy.png)
+![securityPolicyLocation.](images/passwordless/00-securityPolicy.png)
 
 **Windows Server 2016 and earlier**
 The policy name for these operating systems is **Interactive logon: Require smart card**.
-![securityPolicyBefore2016](images/passwordless/00-securitypolicy-2016.png)
+![securityPolicyBefore2016.](images/passwordless/00-securitypolicy-2016.png)
 
 **Windows 10, version 1703 or later using Remote Server Administrator Tools**
 The policy name for these operating systems is **Interactive logon: Require Windows Hello for Business or smart card**.
-![securityPolicyRSAT](images/passwordless/00-updatedsecuritypolicytext.png)
+![securityPolicyRSAT.](images/passwordless/00-updatedsecuritypolicytext.png)
 
 When you enable this security policy setting, Windows prevents users from signing in or unlocking with a password. The password credential provider remains visible to the user. If a user tries to use a password, Windows informs the user they must use Windows Hello for Business or a smart card.
 
 #### Excluding the password credential provider
 You can use Group Policy to deploy an administrative template policy setting to the computer. This policy setting is found under **Computer Configuration > Policies > Administrative Templates > System > Logon**
-![HideCredProvPolicy](images/passwordless/00-hidecredprov.png)
+![HideCredProvPolicy.](images/passwordless/00-hidecredprov.png)
 
 The name of the policy setting is **Exclude credential providers**. The value to enter in the policy to hide the password credential provider is **60b78e88-ead8-445c-9cfd-0b87f74ea6cd**.
-![HideCredProvPolicy2](images/passwordless/01-hidecredprov.png)
+![HideCredProvPolicy2.](images/passwordless/01-hidecredprov.png)
 
 Excluding the password credential provider hides the password credential provider from Windows and any application that attempts to load it. This prevents the user from entering a password using the credential provider. However, this does not prevent applications from creating their own password collection dialogs and prompting the user for a password using custom dialogs.
 
@@ -261,7 +261,7 @@ The account options on a user account includes an option -- **Smart card is requ
 > [!NOTE]
 > Do not confuse the Interactive Logon security policy for SCRIL. Security policies are enforced on the client (locally). A user account configured for SCRIL is enforced at the domain controller.
 
-![SCRIL setting on AD Users and Computers](images/passwordless/00-scril-dsa.png)
+![SCRIL setting on AD Users and Computers.](images/passwordless/00-scril-dsa.png)
 **SCRIL setting for a user on Active Directory Users and Computers.**
 
 When you configure a user account for SCRIL, Active Directory changes the affected user's password to a random 128 bits of data. Additionally, domain controllers hosting the user account do not allow the user to sign-in interactively with a password. Also, users will no longer be troubled with needing to change their password when it expires, because passwords for SCRIL users in domains with a Windows Server 2012 R2 or early domain functional level do not expire. The users are effectively passwordless because:
@@ -270,13 +270,13 @@ When you configure a user account for SCRIL, Active Directory changes the affect
 - the user is not asked to change their password
 - domain controllers do not allow passwords for interactive authentication
 
-![SCRIL setting from ADAC on Windows Server 2012](images/passwordless/01-scril-adac-2012.png)
+![SCRIL setting from ADAC on Windows Server 2012.](images/passwordless/01-scril-adac-2012.png)
 **SCRIL setting for a user in Active Directory Administrative Center on Windows Server 2012.**
 
 > [!NOTE]
 > Although a SCRIL user's password never expires in early domains, you can toggle the SCRIL configuration on a user account (clear the check box, save the settings, select the check box and save the settings) to generate a new random 128 bit password. However, you should consider upgrading the domain to Windows Server 2016 domain forest functional level and allow the domain controller to do this for you automatically.
 
-![SCRIL setting from ADAC on Windows Server 2016](images/passwordless/01-scril-adac-2016.png)
+![SCRIL setting from ADAC on Windows Server 2016.](images/passwordless/01-scril-adac-2016.png)
 **SCRIL setting for a user in Active Directory Administrative Center on Windows Server 2016.**
 
 > [!NOTE]
@@ -286,7 +286,7 @@ When you configure a user account for SCRIL, Active Directory changes the affect
 Domains configured for Windows Server 2016 domain functional level can further secure the unknown password for SCRIL-enabled users by configuring the domain to automatically change the password for SCRIL users.
 
 In this configuration, passwords for SCRIL-configured users expire based on Active Directory password policy settings. When the SCRIL user authenticates from a domain controller, the domain controller recognizes the password has expired, and automatically generates a new random 128 bit password for the user as part of the authentication. What is great about this feature is your users do not experience any change password notifications or any authentication outages.
-![Rotate Password 2016](images/passwordless/02-rotate-scril-2016.png)
+![Rotate Password 2016.](images/passwordless/02-rotate-scril-2016.png)
 
 > [!NOTE]
 > Some components within Windows 10, such as Data Protection APIs and NTLM authentication, still need artifacts of a user possessing a password. This configuration provides interoperability by reducing the usage surface while Microsoft continues to close the gaps to remove the password completely.

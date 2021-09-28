@@ -109,7 +109,7 @@ If audio input is enabled, a user will be able to disable audio input from their
 <!--ADMXMapped-->
 ADMX Info:
 
-- GP English Name: *Allow audio input in Windows Sandbox*
+- GP Friendly name: *Allow audio input in Windows Sandbox*
 - GP name: *AllowAudioInput*
 - GP path: *Windows Components/Windows Sandbox* 
 - GP ADMX file name: *WindowsSandbox.admx*
@@ -194,7 +194,7 @@ If clipboard sharing is enabled, a user will be able to disable clipboard sharin
 <!--ADMXMapped-->
 ADMX Info:
 
-- GP English Name: *Allow clipboard sharing with Windows Sandbox*
+- GP Friendly name: *Allow clipboard sharing with Windows Sandbox*
 - GP name: *AllowClipboardRedirection*
 - GP path: *Windows Components/Windows Sandbox*
 - GP ADMX file name: *WindowsSandbox.admx*
@@ -279,7 +279,7 @@ If networking is enabled, a user will be able to disable networking from their o
 <!--ADMXMapped-->
 ADMX Info:
 
-- GP English Name: *Allow networking in Windows Sandbox*
+- GP Friendly name: *Allow networking in Windows Sandbox*
 - GP name: *AllowNetworking*
 - GP path: *Windows Components/Windows Sandbox*
 - GP ADMX file name: *WindowsSandbox.admx*
@@ -362,7 +362,7 @@ If printer sharing is enabled, a user will be able to disable printer sharing fr
 <!--ADMXMapped-->
 ADMX Info:
 
-- GP English Name: *Allow printer sharing with Windows Sandbox*
+- GP Friendly name: *Allow printer sharing with Windows Sandbox*
 - GP name: *AllowPrinterRedirection*
 - GP path: *Windows Components/Windows Sandbox* 
 - GP ADMX file name: *WindowsSandbox.admx*
@@ -449,7 +449,7 @@ If vGPU is enabled, a user will be able to disable vGPU support from their own c
 <!--ADMXMapped-->
 ADMX Info:
 
-- GP English Name: *Allow vGPU sharing for Windows Sandbox*
+- GP Friendly name: *Allow vGPU sharing for Windows Sandbox*
 - GP name: *AllowVGPU*
 - GP path: *Windows Components/Windows Sandbox*
 - GP ADMX file name: *WindowsSandbox.admx*
@@ -535,7 +535,7 @@ If video input is enabled, users will be able to disable video input from their 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info: 
-- GP English Name: *Allow video input in Windows Sandbox*
+- GP Friendly name: *Allow video input in Windows Sandbox*
 - GP name: *AllowVideoInput*
 - GP path: *Windows Components/Windows Sandbox*
 - GP ADMX file name: *WindowsSandbox.admx*

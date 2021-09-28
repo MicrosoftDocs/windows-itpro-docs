@@ -1,5 +1,5 @@
 ---
-title: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell (Windows 10)
+title: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell (Windows)
 description: Windows Defender Firewall with Advanced Security Administration with Windows PowerShell
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -11,7 +11,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 ms.author: dansimp
 ms.technology: mde
@@ -21,7 +21,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 The Windows Defender Firewall with Advanced Security Administration with Windows PowerShell Guide provides essential scriptlets for automating Windows Defender Firewall management. It is designed for IT pros, system administrators, IT managers, and others who use and need to automate Windows Defender Firewall management in Windows.
 
@@ -328,7 +329,7 @@ Windows PowerShell can create powerful, complex IPsec policies like in Netsh and
 
 In Netsh, the authentication and cryptographic sets were specified as a list of comma-separated tokens in a specific format. In Windows PowerShell, rather than using default settings, you first create your desired authentication or cryptographic proposal objects and bundle them into lists in your preferred order. Then, you create one or more IPsec rules that reference these sets. The benefit of this model is that programmatic access to the information in the rules is much easier. See the following sections for clarifying examples.
 
-![object model for creating a single ipsec rule](images/createipsecrule.gif)
+![object model for creating a single ipsec rule.](images/createipsecrule.gif)
 
 ### Create IPsec rules
 
@@ -353,7 +354,7 @@ If you want to create a custom set of quick-mode proposals that includes both AH
 
 You can then use the newly created custom quick-mode policies when you create IPsec rules. The cryptography set object is linked to an IPsec rule object.
 
-![crypto set object](images/qmcryptoset.gif)
+![crypto set object.](images/qmcryptoset.gif)
 
 In this example, we build on the previously created IPsec rule by specifying a custom quick-mode crypto set. The final IPsec rule requires outbound traffic to be authenticated by the specified cryptography method.
 

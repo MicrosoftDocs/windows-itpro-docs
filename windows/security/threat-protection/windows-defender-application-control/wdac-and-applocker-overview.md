@@ -23,14 +23,18 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
-Windows 10 includes two technologies that can be used for application control, depending on your organization's specific scenarios and requirements: Windows Defender Application Control (WDAC) and AppLocker.
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+
+Windows 10 and Windows 11 include two technologies that can be used for application control, depending on your organization's specific scenarios and requirements: Windows Defender Application Control (WDAC) and AppLocker.
 
 ## Windows Defender Application Control
 
-WDAC was introduced with Windows 10 and allows organizations to control which drivers and applications are allowed to run on their Windows 10 clients. It was designed as a security feature under the [servicing criteria](https://www.microsoft.com/msrc/windows-security-servicing-criteria), defined by the Microsoft Security Response Center (MSRC).
+WDAC was introduced with Windows 10 and allows organizations to control which drivers and applications are allowed to run on their Windows clients. It was designed as a security feature under the [servicing criteria](https://www.microsoft.com/msrc/windows-security-servicing-criteria), defined by the Microsoft Security Response Center (MSRC).
 
 WDAC policies apply to the managed computer as a whole and affects all users of the device. WDAC rules can be defined based on:
 
@@ -45,9 +49,9 @@ Note that prior to Windows 10 version 1709, Windows Defender Application Control
 
 ### WDAC System Requirements
 
-WDAC policies can be created on any client edition of Windows 10 build 1903+, or on Windows Server 2016 and above.
+WDAC policies can be created on any client edition of Windows 10 build 1903+, or Windows 11, or on Windows Server 2016 and above.
 
-WDAC policies can be applied to devices running any edition of Windows 10, or Windows Server 2016 and above, via a Mobile Device Management (MDM) solution, for example, Intune; a management interface such as Configuration Manager; or a script host such as PowerShell. Group Policy can also be used to deploy WDAC policies to Windows 10 Enterprise edition, or Windows Server 2016 and above, but cannot deploy policies to devices running non-Enterprise SKUs of Windows 10.
+WDAC policies can be applied to devices running any edition of Windows 10, Windows 11, or Windows Server 2016 and above, via a Mobile Device Management (MDM) solution, for example, Intune; a management interface such as Configuration Manager; or a script host such as PowerShell. Group Policy can also be used to deploy WDAC policies to Windows 10 and Windows 11 Enterprise edition, or Windows Server 2016 and above, but cannot deploy policies to devices running non-Enterprise SKUs of Windows 10.
 
 For more information on which individual WDAC features are available on specific WDAC builds, see [WDAC feature availability](feature-availability.md).
 

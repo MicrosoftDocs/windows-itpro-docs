@@ -69,7 +69,7 @@ On **CM01**:
     >[!NOTE]
     >This task sequence has many fewer actions than the normal client task sequence. If it doesn't seem different, make sure you selected the **Client Replace Task Sequence** template when creating the task sequence.
 
-![The back-up only task sequence](../images/mdt-06-fig42.png "The back-up only task sequence")
+![The back-up only task sequence.](../images/mdt-06-fig42.png "The back-up only task sequence")
 
 The backup-only task sequence (named Replace Task Sequence).
 
@@ -91,7 +91,7 @@ On **CM01**:
     * MAC Address: &lt;the mac address that you wrote down&gt;
     * Source Computer: PC0004
 
-    ![Create the computer association](../images/mdt-06-fig43.png "Create the computer association")
+    ![Create the computer association.](../images/mdt-06-fig43.png "Create the computer association")
 
     Creating the computer association between PC0004 and PC0006.
 
@@ -160,7 +160,7 @@ On **PC0004**:
 4.  Confirm you want to upgrade the operating system on this computer by clicking **Install** again.
 5.  Allow the Replace Task Sequence to complete. The PC0004 computer will gather user data, boot into Windows PE and gather more data, then boot back to the full OS. The entire process should only take a few minutes.
 
-![Task sequence example](../images/pc0004b.png)
+![Task sequence example.](../images/pc0004b.png)
 
 Capturing the user state
 
@@ -191,15 +191,15 @@ On **PC0006**:
 
 When the process is complete, you will have a new Windows 10 computer in your domain with user data and settings restored. See the following examples:
 
-![User data and setting restored example 1](../images/pc0006a.png)<br>
-![User data and setting restored example 2](../images/pc0006b.png)<br>
-![User data and setting restored example 3](../images/pc0006c.png)<br>
-![User data and setting restored example 4](../images/pc0006d.png)<br>
-![User data and setting restored example 5](../images/pc0006e.png)<br>
-![User data and setting restored example 6](../images/pc0006f.png)<br>
-![User data and setting restored example 7](../images/pc0006g.png)<br>
-![User data and setting restored example 8](../images/pc0006h.png)<br>
-![User data and setting restored example 9](../images/pc0006i.png)
+![User data and setting restored example 1.](../images/pc0006a.png)<br>
+![User data and setting restored example 2.](../images/pc0006b.png)<br>
+![User data and setting restored example 3.](../images/pc0006c.png)<br>
+![User data and setting restored example 4.](../images/pc0006d.png)<br>
+![User data and setting restored example 5.](../images/pc0006e.png)<br>
+![User data and setting restored example 6.](../images/pc0006f.png)<br>
+![User data and setting restored example 7.](../images/pc0006g.png)<br>
+![User data and setting restored example 8.](../images/pc0006h.png)<br>
+![User data and setting restored example 9.](../images/pc0006i.png)
 
 Next, see [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade-to-windows-10-with-configuraton-manager.md).
 

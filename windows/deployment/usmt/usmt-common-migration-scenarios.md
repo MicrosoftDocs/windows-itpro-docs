@@ -49,7 +49,7 @@ The following diagram shows a PC-refresh migration, also known as a computer ref
 
  
 
-![usmt pc refresh scenario](images/dep-win8-l-usmt-pcrefresh.jpg)
+![usmt pc refresh scenario.](images/dep-win8-l-usmt-pcrefresh.jpg)
 
  
 
@@ -100,7 +100,7 @@ The following diagram shows a PC-replacement migration. First, the administrator
 
  
 
-![usmt pc replace scenario](images/dep-win8-l-usmt-pcreplace.jpg)
+![usmt pc replace scenario.](images/dep-win8-l-usmt-pcreplace.jpg)
 
  
 

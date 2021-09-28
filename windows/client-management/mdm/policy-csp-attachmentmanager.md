@@ -98,7 +98,7 @@ If you do not configure this policy setting, Windows marks file attachments with
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Do not preserve zone information in file attachments*
+-   GP Friendly name: *Do not preserve zone information in file attachments*
 -   GP name: *AM_MarkZoneOnSavedAtttachments*
 -   GP path: *Windows Components/Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*
@@ -170,7 +170,7 @@ If you do not configure this policy setting, Windows hides the check box and Unb
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Hide mechanisms to remove zone information*
+-   GP Friendly name: *Hide mechanisms to remove zone information*
 -   GP name: *AM_RemoveZoneInfo*
 -   GP path: *Windows Components/Attachment Manager*
 -   GP ADMX file name: *AttachmentManager.admx*

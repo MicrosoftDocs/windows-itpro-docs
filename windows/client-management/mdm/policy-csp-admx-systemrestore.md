@@ -96,7 +96,7 @@ Also, see the "Turn off System Restore" policy setting. If the "Turn off System 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Configuration*
+-   GP Friendly name: *Turn off Configuration*
 -   GP name: *SR_DisableConfig*
 -   GP path: *System\System Restore*
 -   GP ADMX file name: *SystemRestore.admx*

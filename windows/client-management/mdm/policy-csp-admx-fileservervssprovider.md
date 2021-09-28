@@ -93,7 +93,7 @@ By default, the RPC protocol message between File Server VSS provider and File S
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow or Disallow use of encryption to protect the RPC protocol messages between File Share Shadow Copy Provider running on application server and File Share Shadow Copy Agent running on the file servers.*
+-   GP Friendly name: *Allow or Disallow use of encryption to protect the RPC protocol messages between File Share Shadow Copy Provider running on application server and File Share Shadow Copy Agent running on the file servers.*
 -   GP name: *Pol_EncryptProtocol*
 -   GP path: *System/File Share Shadow Copy Provider*
 -   GP ADMX file name: *FileServerVSSProvider.admx*

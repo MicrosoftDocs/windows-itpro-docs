@@ -82,7 +82,7 @@ You might ask why you need to synchronize these identities. The answer is so tha
 
 **Figure 1** illustrates the integration between the on-premises AD DS domain with Azure AD. [Microsoft Azure Active Directory Connect](https://www.microsoft.com/download/details.aspx?id=47594) (Azure AD Connect) is responsible for synchronization of identities between the on-premises AD DS domain and Azure AD. Azure AD Connect is a service that you can install on-premises or in a virtual machine in Azure.
 
-![Illustration of Azure Active Directory Connect](images/enterprise-e3-ad-connect.png)
+![Illustration of Azure Active Directory Connect.](images/enterprise-e3-ad-connect.png)
 
 **Figure 1. On-premises AD DS integrated with Azure AD**
 
@@ -103,7 +103,7 @@ Devices must be running Windows 10 Pro, version 1703, and be Azure Active Direct
 Upon acquisition of Windows 10 subscription has been completed (Windows 10 Business, E3 or E5), customers will receive an email that will provide guidance on how to use Windows as an online service:
 
 > [!div class="mx-imgBorder"]
-> ![profile](images/al01.png)
+> ![profile.](images/al01.png)
 
 The following methods are available to assign licenses:
 
@@ -111,7 +111,7 @@ The following methods are available to assign licenses:
 
 2. You can sign in to portal.office.com and manually assign licenses:
 
-    ![portal](images/al02.png)
+    ![portal.](images/al02.png)
 
 3. You can assign licenses by uploading a spreadsheet.
 

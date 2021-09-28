@@ -92,7 +92,7 @@ By default, this setting is Disabled. This setting does not affect whether users
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Block all consumer Microsoft account user authentication*
+-   GP Friendly name: *Block all consumer Microsoft account user authentication*
 -   GP name: *MicrosoftAccount_DisableUserAuth*
 -   GP path: *Windows Components\Microsoft account*
 -   GP ADMX file name: *MSAPolicy.admx*

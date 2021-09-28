@@ -102,7 +102,7 @@ If you don't configure this setting, the automatic download of app updates is de
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off Automatic Download of updates on Win8 machines*
+-   GP Friendly name: *Turn off Automatic Download of updates on Win8 machines*
 -   GP name: *DisableAutoDownloadWin8*
 -   GP path: *Windows Components\Store*
 -   GP ADMX file name: *WindowsStore.admx*
@@ -173,7 +173,7 @@ If you disable or do not configure this setting the Store application will offer
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the offer to update to the latest version of Windows*
+-   GP Friendly name: *Turn off the offer to update to the latest version of Windows*
 -   GP name: *DisableOSUpgrade_1*
 -   GP path: *Windows Components\Store*
 -   GP ADMX file name: *WindowsStore.admx*
@@ -244,7 +244,7 @@ If you disable or do not configure this setting the Store application will offer
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the offer to update to the latest version of Windows*
+-   GP Friendly name: *Turn off the offer to update to the latest version of Windows*
 -   GP name: *DisableOSUpgrade_2*
 -   GP path: *Windows Components\Store*
 -   GP ADMX file name: *WindowsStore.admx*
@@ -315,7 +315,7 @@ If you disable or don't configure this setting, access to the Store application 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the Store application*
+-   GP Friendly name: *Turn off the Store application*
 -   GP name: *RemoveWindowsStore_1*
 -   GP path: *Windows Components\Store*
 -   GP ADMX file name: *WindowsStore.admx*
@@ -386,7 +386,7 @@ If you disable or don't configure this setting, access to the Store application 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the Store application*
+-   GP Friendly name: *Turn off the Store application*
 -   GP name: *RemoveWindowsStore_2*
 -   GP path: *Windows Components\Store*
 -   GP ADMX file name: *WindowsStore.admx*

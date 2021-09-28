@@ -344,7 +344,7 @@ In the next major release of Windows 10, the default for this policy for consume
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow companion device for secondary authentication*
+-   GP Friendly name: *Allow companion device for secondary authentication*
 -   GP name: *MSSecondaryAuthFactor_AllowSecondaryAuthenticationDevice*
 -   GP path: *Windows Components/Microsoft Secondary Authentication Factor*
 -   GP ADMX file name: *DeviceCredential.admx*

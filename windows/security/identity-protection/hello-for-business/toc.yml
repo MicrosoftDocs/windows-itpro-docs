@@ -17,8 +17,6 @@
     href: hello-how-it-works.md
   - name: Technical Deep Dive
     items:
-    - name: Device Registration
-      href: hello-how-it-works-device-registration.md 
     - name: Provisioning
       href: hello-how-it-works-provisioning.md
     - name: Authentication

@@ -23,8 +23,12 @@ ms.technology: mde
 
 **Applies to:**
 
-- Windows 10
-- Windows Server 2016 and above
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
+
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
 
 With thousands of new malicious files created every day, using traditional methods like antivirus solutions—signature-based detection to fight against malware—provides an inadequate defense against new attacks.
 
@@ -37,7 +41,7 @@ Application control is a crucial line of defense for protecting enterprises give
 > [!NOTE]
 > Although application control can significantly harden your computers against malicious code, we recommend that you continue to maintain an enterprise antivirus solution for a well-rounded enterprise security portfolio.
 
-Windows 10 includes two technologies that can be used for application control depending on your organization's specific scenarios and requirements:
+Windows 10 and Windows 11 include two technologies that can be used for application control depending on your organization's specific scenarios and requirements:
 
 - **Windows Defender Application Control**; and
 - **AppLocker**

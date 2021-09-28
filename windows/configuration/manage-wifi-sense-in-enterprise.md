@@ -46,7 +46,7 @@ You can manage your Wi-Fi Sense settings by using Group Policy and your Group Po
 
 1.  Open your Group Policy editor and go to the `Computer Configuration\Administrative Templates\Network\WLAN Service\WLAN Settings\Allow Windows to automatically connect to suggested open hotspots, to networks shared by contacts, and to hotspots offering paid services` setting.
 
-    ![Group Policy Editor, showing the Wi-Fi Sense setting](images/wifisense-grouppolicy.png)
+    ![Group Policy Editor, showing the Wi-Fi Sense setting.](images/wifisense-grouppolicy.png)
 
 2.  Turn Wi-Fi Sense on (enabled) or off (disabled), based on your company's environment.
 
@@ -60,7 +60,7 @@ You can manage your Wi-Fi Sense settings by using registry keys and the Registry
 2. Create and set a new **DWORD (32-bit) Value** named, **AutoConnectAllowedOEM**, with a **Value data** of **0 (zero)**.
    <p>Setting this value to <strong>0</strong> turns off Wi-Fi Sense and all Wi-Fi sense features. When turned off, the Wi-Fi Sense settings still appear on the <strong>Wi-Fi Settings</strong> screen, but can&#39;t be controlled by the employee and all of the Wi-Fi Sense features are turned off. For more info, see <a href="/troubleshoot/windows-client/networking/configure-wifi-sense-and-paid-wifi-service" data-raw-source="[How to configure Wi-Fi Sense on Windows 10 in an enterprise](/troubleshoot/windows-client/networking/configure-wifi-sense-and-paid-wifi-service)">How to configure Wi-Fi Sense on Windows 10 in an enterprise</a>.
 
-   ![Registry Editor, showing the creation of a new DWORD value](images/wifisense-registry.png)
+   ![Registry Editor, showing the creation of a new DWORD value.](images/wifisense-registry.png)
 
 ### Using the Windows Provisioning settings
 You can manage your Wi-Fi Sense settings by changing the Windows provisioning setting, **WiFISenseAllowed**.
@@ -81,7 +81,7 @@ If your company still uses Unattend, you can manage your Wi-Fi Sense settings by
 ### How employees can change their own Wi-Fi Sense settings
 If you don’t turn off the ability for your employees to use Wi-Fi Sense, they can turn it on locally by selecting **Settings &gt; Network & Internet &gt; Wi-Fi &gt; Manage Wi-Fi settings**, and then turning on **Connect to suggested open hotspots**.
 
-![Wi-Fi Sense options shown to employees if it's not turned off](images/wifisense-settingscreens.png)
+![Wi-Fi Sense options shown to employees if it's not turned off.](images/wifisense-settingscreens.png)
 
 **Important**<br>The service that was used to share networks with Facebook friends, Outlook.com contacts, or Skype contacts is no longer available. This means:
 
