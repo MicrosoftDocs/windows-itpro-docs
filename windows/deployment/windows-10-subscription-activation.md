@@ -10,7 +10,7 @@ ms.sitesec: library
 ms.pagetype: mdt
 audience: itpro
 author: greg-lindsay
-manager: laurawi
+manager: dougeby
 ms.collection: M365-modern-desktop
 search.appverid:
 - MET150
@@ -47,7 +47,7 @@ Organizations that have an Enterprise agreement can also benefit from the new se
 
 Subscription Activation for Education works the same as the Enterprise version, but in order to use Subscription Activation for Education, you must have a device running Windows 10 Pro Education, version 1903 or later (or Windows 11) and an active subscription plan with a Windows 10/11 Enterprise license. For more information, see the [requirements](#windows-1011-education-requirements) section.
 
-## In this article
+## Article summary
 
 - [Inherited Activation](#inherited-activation): Description of a new feature available in Windows 10, version 1803 and later.
 - [The evolution of deployment](#the-evolution-of-deployment): A short history of Windows deployment.
@@ -56,7 +56,7 @@ Subscription Activation for Education works the same as the Enterprise version, 
 - [How it works](#how-it-works): A summary of the subscription-based licensing option.
 - [Virtual Desktop Access (VDA)](#virtual-desktop-access-vda): Enable Windows 10 Subscription Activation for VMs in the cloud.
 
-For information on how to deploy Windows 10 Enterprise licenses, see [Deploy Windows 10/11 Enterprise licenses](deploy-enterprise-licenses.md).
+For information on how to deploy Enterprise licenses, see [Deploy Windows 10/11 Enterprise licenses](deploy-enterprise-licenses.md).
 
 ## Inherited Activation
 
