@@ -27,7 +27,7 @@ Starting with Windows 10, version 1703 Windows 10 Pro supports the Subscription 
 
 With Windows 10, version 1903 and later, the Subscription Activation feature also supports the ability to step-up from Windows 10 Pro Education or Windows 11 Pro Education to the Enterprise grade editions for educational institutions—**Windows 10 Education** or **Windows 11 Education**.
 
-The Subscription Activation feature eliminates the need to manually deploy Windows 10 Enterprise or Education images on each target device, then later standing up on-prem key management services such as KMS or MAK based activation, entering Generic Volume License Keys (GVLKs), and subsequently rebooting client devices.
+The Subscription Activation feature eliminates the need to manually deploy Enterprise or Education edition images on each target device, then later standing up on-prem key management services such as KMS or MAK based activation, entering Generic Volume License Keys (GVLKs), and subsequently rebooting client devices.
 
 ## Subscription Activation for Windows 10 Enterprise and Windows 11 Enterprise
 
@@ -42,7 +42,7 @@ Organizations that have an Enterprise agreement can also benefit from the new se
 
 ## Subscription Activation for Windows 10 Education and Windows 11 Education
 
-Subscription Activation for Education works the same as the Enterprise version, but in order to use Subscription Activation for Education, you must have a device running Windows 10 Pro Education, version 1903 or later and an active subscription plan with a Windows 10 Enterprise or Windows 11 Enterprise license. For more information, see the [requirements](#windows-10-education-requirements) section.
+Subscription Activation for Education works the same as the Enterprise version, but in order to use Subscription Activation for Education, you must have a device running Windows 10 Pro Education, version 1903 or later and an active subscription plan with a Windows 10 Enterprise or Windows 11 Enterprise license. For more information, see the [requirements](#windows-10-11-education-requirements) section.
 
 ## Summary
 
@@ -59,7 +59,7 @@ For information on how to deploy Windows 10 Enterprise licenses, see [Deploy Win
 
 Inherited Activation is a new feature available in Windows 10, version 1803 or later that allows Windows 10/11 virtual machines to inherit activation state from their Windows 10/11 host.
 
-When a user with Windows 10/11 E3/E5 or A3/A5 license assigned creates a new Windows 10 virtual machine (VM) using a Windows 10/11 local host, the VM inherits the activation state from a host machine independent of whether user signs on with a local account or using an Azure Active Directory (AAD) account on a VM.
+When a user with Windows 10/11 E3/E5 or A3/A5 license assigned creates a new Windows 10 or Windows 11 virtual machine (VM) using a Windows 10/11 local host, the VM inherits the activation state from a host machine independent of whether user signs on with a local account or using an Azure Active Directory (AAD) account on a VM.
 
 To support Inherited Activation, both the host computer and the VM must be running Windows 10, version 1803 or later. The hypervisor platform must also be Windows Hyper-V.
 
@@ -72,37 +72,28 @@ The following figure illustrates how deploying Windows 10 has evolved with each 
 ![Illustration of how Windows 10 deployment has evolved.](images/sa-evolution.png)
 
 - **Windows 7** required you to redeploy the operating system using a full wipe-and-load process if you wanted to change from Windows 7 Professional to Windows 10 Enterprise.<br>
-
 - **Windows 8.1** added support for a Windows 8.1 Pro to Windows 8.1 Enterprise in-place upgrade (considered a “repair upgrade” because the OS version was the same before and after).  This was a lot easier than wipe-and-load, but it was still time-consuming.<br>
-
 - **Windows 10, version 1507** added the ability to install a new product key using a provisioning package or using MDM to change the SKU.  This required a reboot, which would install the new OS components, and took several minutes to complete. However, it was a lot quicker than in-place upgrade.<br>
-
 - **Windows 10, version 1607** made a big leap forward. Now you can just change the product key and the SKU instantly changes from Windows 10 Pro to Windows 10 Enterprise.  In addition to provisioning packages and MDM, you can just inject a key using SLMGR.VBS (which injects the key into WMI), so it became trivial to do this using a command line.<br>
-
 - **Windows 10, version 1703** made this “step-up” from Windows 10 Pro to Windows 10 Enterprise automatic for those that subscribed to Windows 10 Enterprise E3 or E5 via the CSP program.<br>
-
 - **Windows 10, version 1709** adds support for Windows 10 Subscription Activation, very similar to the CSP support but for large enterprises, enabling the use of Azure AD for assigning licenses to users. When those users sign in on an AD or Azure AD-joined machine, it automatically steps up from Windows 10 Pro to Windows 10 Enterprise.<br>
-
 - **Windows 10, version 1803** updates Windows 10 Subscription Activation to enable pulling activation keys directly from firmware for devices that support firmware-embedded keys. It is no longer necessary to run a script to perform the activation step on Windows 10 Pro prior to activating Enterprise. For virtual machines and hosts running Windows 10, version 1803 [Inherited Activation](#inherited-activation) is also enabled.<br>
-
 - **Windows 10, version 1903** updates Windows 10 Subscription Activation to enable step up from Windows 10 Pro Education to Windows 10 Education for those with a qualifying Windows 10 or Microsoft 365 subscription.
-
-> [!NOTE]
-> All the benefits of Windows 10 Subscription Activation are carried forward with Windows 11 and Windows 10/11 Subscription Activation.
+- **Windows 11** updates Subscription Activation to work on both Windows 10 and Windows 11 devices. **Important**: Subscription activation does not update a device from Windows 10 to Windows 11. Only the edition is updated.
 
 ## Requirements
 
 ### Windows 10/11 Enterprise requirements
 
 > [!NOTE]
-> The following requirements do not apply to general Windows 10/11 activation on Azure. Azure activation requires a connection to Azure KMS only, and supports workgroup, Hybrid, and Azure AD-joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure Virtual Machines](/azure/virtual-machines/troubleshooting/troubleshoot-activation-problems#understanding-azure-kms-endpoints-for-windows-product-activation-of-azure-virtual-machines).
+> The following requirements do not apply to general Windows client activation on Azure. Azure activation requires a connection to Azure KMS only, and supports workgroup, Hybrid, and Azure AD-joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure Virtual Machines](/azure/virtual-machines/troubleshooting/troubleshoot-activation-problems#understanding-azure-kms-endpoints-for-windows-product-activation-of-azure-virtual-machines).
 
 > [!NOTE]
 > Currently, Subscription Activation is only available on commercial tenants and is currently not available on US GCC, GCC High, or DoD tenants.
 
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following:
 
-- Windows 10 (Pro or Enterprise) version 1703 or later installed on the devices to be upgraded.
+- Windows 10 (Pro or Enterprise) version 1703 or later installed on the devices to be upgraded. Windows 11 is considered a "later" version in this context.
 - Azure Active Directory (Azure AD) available for identity management.
 - Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
 
@@ -133,11 +124,8 @@ If the device is running Windows 10, version 1809 or later:
 ### Windows 10/11 Education requirements
 
 - Windows 10 Pro Education, version 1903 or later installed on the devices to be upgraded.
-
 - A device with a Windows 10 Pro Education digital license. You can confirm this information in **Settings > Update & Security > Activation**.
-
 - The Education tenant must have an active subscription to Microsoft 365 with a Windows 10 Enterprise license or a Windows 10 Enterprise or Education subscription.
-
 - Devices must be Azure AD-joined or Hybrid Azure AD joined. Workgroup-joined or Azure AD registered devices are not supported.
 
 > [!IMPORTANT]
