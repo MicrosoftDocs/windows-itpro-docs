@@ -75,7 +75,7 @@
      items:
      - name: Encrypted Hard Drive
        href: information-protection/encrypted-hard-drive.md
-     - name: Bitlocker 
+     - name: BitLocker 
        href: information-protection/bitlocker/bitlocker-overview.md
        items: 
         - name: Overview of BitLocker Device Encryption in Windows
