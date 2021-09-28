@@ -31,7 +31,7 @@ The Subscription Activation feature eliminates the need to manually deploy Enter
 
 ## Subscription Activation for Windows 10/11 Enterprise
 
-With Windows 10, version 1703 and later both Windows 10/11 Enterprise E3 and Windows 10/11 Enterprise E5 are available as online services via subscription. Deploying [Windows 10 Enterprise or Windows 11 Enterprise](planning/windows-10-enterprise-faq-itpro.yml) in your organization can now be accomplished with no keys and no reboots.
+With Windows 10, version 1703 and later both Windows 10/11 Enterprise E3 and Windows 10/11 Enterprise E5 are available as online services via subscription. Deploying Windows 10 Enterprise or Windows 11 Enterprise in your organization can now be accomplished with no keys and no reboots.
 
  If you are running Windows 10, version 1703 or later:
 
@@ -40,24 +40,27 @@ With Windows 10, version 1703 and later both Windows 10/11 Enterprise E3 and Win
 
 Organizations that have an Enterprise agreement can also benefit from the new service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Azure AD using [Azure AD Connect Sync](/azure/active-directory/connect/active-directory-aadconnectsync-whatis).
 
-## Subscription Activation for Windows 10/11 Education
+> [!NOTE]
+> You cannot use Subscripton Activation to upgrade from Windows 10 to Windows 11. The operating system version does not change when you switch to Enterprise edition.
 
-Subscription Activation for Education works the same as the Enterprise version, but in order to use Subscription Activation for Education, you must have a device running Windows 10 Pro Education, version 1903 or later and an active subscription plan with a Windows 10 Enterprise or Windows 11 Enterprise license. For more information, see the [requirements](#windows-1011-education-requirements) section.
+## Subscription Activation for Education
 
-## Summary
+Subscription Activation for Education works the same as the Enterprise version, but in order to use Subscription Activation for Education, you must have a device running Windows 10 Pro Education, version 1903 or later (or Windows 11) and an active subscription plan with a Windows 10/11 Enterprise license. For more information, see the [requirements](#windows-1011-education-requirements) section.
+
+## In this article
 
 - [Inherited Activation](#inherited-activation): Description of a new feature available in Windows 10, version 1803 and later.
-- [The evolution of Windows 10 deployment](#the-evolution-of-deployment): A short history of Windows deployment.
-- [Requirements](#requirements): Prerequisites to use the Windows 10 Subscription Activation model.
-- [Benefits](#benefits): Advantages of Windows 10/11 subscription-based licensing.
+- [The evolution of deployment](#the-evolution-of-deployment): A short history of Windows deployment.
+- [Requirements](#requirements): Prerequisites to use the Windows 10/11 Subscription Activation model.
+- [Benefits](#benefits): Advantages of subscription-based licensing.
 - [How it works](#how-it-works): A summary of the subscription-based licensing option.
-- [Virtual Desktop Access (VDA)](#virtual-desktop-access-vda): Enable Windows 10/11 Subscription Activation for VMs in the cloud.
+- [Virtual Desktop Access (VDA)](#virtual-desktop-access-vda): Enable Windows 10 Subscription Activation for VMs in the cloud.
 
 For information on how to deploy Windows 10 Enterprise licenses, see [Deploy Windows 10/11 Enterprise licenses](deploy-enterprise-licenses.md).
 
 ## Inherited Activation
 
-Inherited Activation is a new feature available in Windows 10, version 1803 or later that allows Windows 10/11 virtual machines to inherit activation state from their Windows 10/11 host.
+Inherited Activation is a new feature available in Windows 10, version 1803 or later (Windows 11 is considered "later" here) that allows Windows 10/11 virtual machines to inherit activation state from their Windows 10/11 host.
 
 When a user with Windows 10/11 E3/E5 or A3/A5 license assigned creates a new Windows 10 or Windows 11 virtual machine (VM) using a Windows 10/11 local host, the VM inherits the activation state from a host machine independent of whether user signs on with a local account or using an Azure Active Directory (AAD) account on a VM.
 
@@ -154,7 +157,7 @@ You can benefit by moving to Windows as an online service in the following ways:
 ## How it works
 
 > [!NOTE]
-. The following Windows 10 examples and scenarios also apply to Windows 11.
+> The following Windows 10 examples and scenarios also apply to Windows 11.
 
 The device is AAD joined from **Settings > Accounts > Access work or school**.
 
