@@ -1,5 +1,5 @@
 ---
-title: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help (Windows 10)
+title: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help (Windows 10/11)
 description: How to Load the Windows PowerShell Cmdlets for App-V and Get Cmdlet Help
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # How to load the Windows PowerShell cmdlets for App-V and get cmdlet help
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 ## Requirements for using Windows PowerShell cmdlets
 

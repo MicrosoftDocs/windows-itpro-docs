@@ -1,6 +1,6 @@
 ---
-title: Upgrading to App-V for Windows 10 from an existing installation (Windows 10)
-description: Learn about upgrading to Application Virtualization (App-V) for Windows 10 from an existing installation.
+title: Upgrading to App-V for Windows 10/11 from an existing installation (Windows 10/11)
+description: Learn about upgrading to Application Virtualization (App-V) for Windows 10/11 from an existing installation.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -12,14 +12,13 @@ manager: dansimp
 ms.author: greglin
 ---
 
-# Upgrading to App-V for Windows 10 from an existing installation
+# Upgrading to App-V for Windows client from an existing installation
 
-**Applies to**
--   Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
-If you’re already using App-V and you’re planning to upgrade user devices to Windows 10, you need to make only the following few adjustments to your existing environment to start using App-V for Windows 10. 
+If you’re already using App-V and you’re planning to upgrade user devices to Windows 10/11, you need to make only the following few adjustments to your existing environment to start using App-V for Windows client. 
 
-1. [Upgrade user devices to Windows 10](#upgrade-user-devices-to-windows-10). Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings.
+1. [Upgrade user devices to Windows 10/11](#upgrade-user-devices-to-windows-10). Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings.
 
 2. [Verify that App-V applications and settings were migrated correctly](#verify-that-app-v-applications-and-settings-were-migrated-correctly).
 
@@ -31,13 +30,13 @@ If you’re already using App-V and you’re planning to upgrade user devices to
 
 These steps are explained in more detail below.
 
-## Upgrade user devices to Windows 10
+## Upgrade user devices to Windows 10/11
 
-Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings. See the [Windows 10 and Windows 10 Mobile document set](/windows/windows-10/) for information about upgrading user devices to Windows 10. 
+Performing an in-place upgrade automatically installs the App-V client and migrates users’ App-V applications and settings. See the [Windows document set](/windows/windows-10/) for information about upgrading user devices. 
 
 ## Verify that App-V applications and settings were migrated correctly
 
-After upgrading a user device to Windows 10, it’s important to verify that App-V applications and settings were migrated correctly during the upgrade. 
+After upgrading a user device, it’s important to verify that App-V applications and settings were migrated correctly during the upgrade. 
 
 To verify that the user’s App-V application packages were migrated correctly, type `Get-AppvClientPackage` in Windows PowerShell.
 
@@ -45,7 +44,7 @@ To verify that the user’s App-V settings were migrated correctly, type `Get-Ap
 
 ## Enable the in-box App-V client
 
-With Windows 10, the App-V client is installed automatically. You need to enable the client to allow user devices to access and run virtual applications. You can enable the client with the Group Policy editor or with Windows PowerShell. 
+With Windows 10/11, the App-V client is installed automatically. You need to enable the client to allow user devices to access and run virtual applications. You can enable the client with the Group Policy editor or with Windows PowerShell. 
 
 **To enable the App-V client with Group Policy**
 

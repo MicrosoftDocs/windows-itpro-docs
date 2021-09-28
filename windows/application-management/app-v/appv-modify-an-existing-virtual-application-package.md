@@ -15,10 +15,7 @@ ms.author: greglin
 
 # How to Modify an Existing Virtual Application Package
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 This topic explains how to:
 

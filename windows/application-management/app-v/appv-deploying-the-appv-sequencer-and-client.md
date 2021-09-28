@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # Deploying the App-V Sequencer and configuring the client
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 The App-V Sequencer and client let administrators to virtualize and run virtual applications.
 

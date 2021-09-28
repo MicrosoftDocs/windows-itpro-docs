@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # Planning for deploying App-V with Office
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Use the following information to plan how to deploy Office within Microsoft Application Virtualization (App-V).
 

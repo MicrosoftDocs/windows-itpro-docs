@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # Deploying App-V for Windows client
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 App-V supports several different deployment options. Review this topic for information about the tasks that you must complete at different stages in your deployment.
 
