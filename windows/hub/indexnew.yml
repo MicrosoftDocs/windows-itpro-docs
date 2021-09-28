@@ -51,13 +51,13 @@ productDirectory:
           text: What's new in Windows 11
         - url: /windows/whats-new/windows-11-overview
           text: Windows 11 overview
+        - url: /windows/whats-new/windows-11-requirements
+          text: Windows 11 requirements
     # Card
-    - title: What else about Windows 11 
+    - title: Get started with Windows 11 
       # imageSrc should be square in ratio with no whitespace
       imageSrc: /windows/resources/images/winlogo.svg
       links:
-        - url: /windows/whats-new/windows-11-requirements
-          text: Windows 11 requirements
         - url: /windows/whats-new/windows-11-plan
           text: Plan for Windows 11
         - url: /windows/whats-new/windows-11-prepare
@@ -72,7 +72,7 @@ conceptualContent:
   summary: Plan, deploy, secure, and manage devices running Windows 10 and Windows 11.
   items:
   # card
-    - title: overview
+    - title: Overview
       links:
         - url: /windows/whats-new/windows-11
           itemType: overview
@@ -165,29 +165,26 @@ conceptualContent:
     - title: Security and Privacy
       links:
         - url: /windows/security/index    
-          itemType: get-started
+          itemType: overview
           text: Windows Enterprise Security
         - url: /windows/privacy/index
-          itemType: get-started
+          itemType: overview
           text: Windows Privacy
-        - url: /windows/security/identity-protection/index
-          itemType: get-started
-          text: Identity and access management
-        - url: /windows/security/threat-protection/index
-          itemType: get-started
-          text: Threat protection
-        - url: /windows/security/information-protection/index          
-          itemType: get-started
-          text: Information protection
-        - url: /windows/privacy/required-windows-diagnostic-data-events-and-fields-2004
+        - url: /windows/security/hardware
           itemType: overview
-          text: Required diagnostic data
-        - url: /windows/privacy/windows-diagnostic-data
+          text: Hardware security
+        - url: /windows/security/operating-system
           itemType: overview
-          text: Optional diagnostic data
-        - url: /windows/privacy/changes-to-windows-diagnostic-data-collection
+          text: Operating system security
+        - url: /windows/security/apps         
           itemType: overview
-          text: Changes to Windows diagnostic data collection
+          text: Application security
+        - url: /windows/security/identity
+          itemType: overview
+          text: User and identity security
+        - url: /windows/security/cloud
+          itemType: overview
+          text: Cloud services
 
 # additionalContent section (optional)
 # Card with summary style
@@ -197,17 +194,17 @@ additionalContent:
     - title: Additional Windows resources # < 60 chars (optional)
       items:
         # Card
-        - title: Something here
-          summary: cardsummary1
-          url: /windows/deployment/deploy-whats-new.md
+        - title: Windows blogs
+          summary: Keep up with the latest news about Windows
+          url: https://blogs.windows.com/
         # Card
-        - title: Something else here
-          summary: cardsummary2
-          url: /windows/deployment/deploy-whats-new.md
+        - title: Participate in the Tech Community
+          summary: Be a part of the Windows Tech Community
+          url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
         # Card
-        - title: How about here?
-          summary: cardsummary3
-          url: /windows/deployment/deploy-whats-new.md
+        - title: Ask the community
+          summary: Get help, and help others
+          url: https://answers.microsoft.com/windows/forum
 
     - title: Additional resources (option 2)
       items:
