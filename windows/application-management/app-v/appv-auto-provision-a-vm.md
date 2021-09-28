@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # Automatically provision your sequencing environment using Microsoft Application Virtualization Sequencer (App-V Sequencer)
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Previous versions of the App-V Sequencer have required you to manually create your sequencing environment. Starting with Windows 10 version 1703, the `New-AppVSequencerVM` and `Connect-AppvSequencerVM` Windows PowerShell cmdlets are available, which automatically create your sequencing environment for you, including provisioning your virtual machine.
 

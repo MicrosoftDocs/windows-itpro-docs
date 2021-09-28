@@ -14,10 +14,7 @@ ms.topic: article
 ---
 # How to create a package accelerator
 
-**Applies to**:
-
-- Windows 10
-- Windows 11
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 App-V Package Accelerators automatically generate new virtual application packages.
 
