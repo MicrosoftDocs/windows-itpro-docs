@@ -584,7 +584,7 @@ This feature ensures the device checks in real time with the Microsoft Active Pr
 Enabled – The Block at First Sight setting is turned on.
 Disabled – The Block at First Sight setting is turned off.
     
-This feature requires these Group Policy settings to be set as follows:
+This feature requires these Policy settings to be set as follows:
 
 - MAPS -> The “Join Microsoft MAPS” must be enabled or the “Block at First Sight” feature will not function.
 - MAPS -> The “Send file samples when further analysis is required” should be set to 1 (Send safe samples) or 3 (Send all samples). Setting to 0 (Always Prompt) will lower the protection state of the device. Setting to 2 (Never send) means the “Block at First Sight” feature will not function.
@@ -655,11 +655,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting controls whether or not complex list settings configured by a local administrator are merged with Group Policy settings. This setting applies to lists such as threats and Exclusions.
+This policy setting controls whether or not complex list settings configured by a local administrator are merged with Policy settings. This setting applies to lists such as threats and Exclusions.
 
-If you enable or do not configure this setting, unique items defined in Group Policy and in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, Group policy Settings will override preference settings.
+If you enable or do not configure this setting, unique items defined in Policy and in preference settings configured by the local administrator will be merged into the resulting effective policy. In the case of conflicts, Policy Settings will override preference settings.
 
-If you disable this setting, only items defined by Group Policy will be used in the resulting effective policy. Group Policy settings will override preference settings configured by the local administrator.
+If you disable this setting, only items defined by Policy will be used in the resulting effective policy. Policy settings will override preference settings configured by the local administrator.
 
 <!--/Description-->
 
@@ -1915,11 +1915,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration of the number of days items should be kept in the Quarantine folder before being removed. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration of the number of days items should be kept in the Quarantine folder before being removed. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -2545,11 +2545,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration of behavior monitoring. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration of behavior monitoring. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -2615,11 +2615,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration of scanning for all downloaded files and attachments. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration of scanning for all downloaded files and attachments. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -2685,11 +2685,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration of monitoring for file and program activity on your computer. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration of monitoring for file and program activity on your computer. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -2755,11 +2755,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration to turn on real-time protection. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration to turn on real-time protection. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -2825,11 +2825,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration of monitoring for incoming and outgoing file activity. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration of monitoring for incoming and outgoing file activity. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -2895,11 +2895,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration of the time to run a scheduled full scan to complete remediation. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration of the time to run a scheduled full scan to complete remediation. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -4497,11 +4497,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration of maximum percentage of CPU utilization during scan. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration of maximum percentage of CPU utilization during scan. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -4567,11 +4567,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration of the scan type to use during a scheduled scan. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration of the scan type to use during a scheduled scan. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -4637,11 +4637,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration of scheduled scan day. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration of scheduled scan day. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -4707,11 +4707,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration of scheduled quick scan time. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration of scheduled quick scan time. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -4777,11 +4777,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting configures a local override for the configuration of scheduled scan time. This setting can only be set by Group Policy.
+This policy setting configures a local override for the configuration of scheduled scan time. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 
@@ -6565,11 +6565,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
- This policy setting configures a local override for the configuration to join Microsoft MAPS. This setting can only be set by Group Policy.
+ This policy setting configures a local override for the configuration to join Microsoft MAPS. This setting can only be set by Policy.
 
-If you enable this setting, the local preference setting will take priority over Group Policy.
+If you enable this setting, the local preference setting will take priority over Policy.
 
-If you disable or do not configure this setting, Group Policy will take priority over the local preference setting.
+If you disable or do not configure this setting, Policy will take priority over the local preference setting.
 
 <!--/Description-->
 

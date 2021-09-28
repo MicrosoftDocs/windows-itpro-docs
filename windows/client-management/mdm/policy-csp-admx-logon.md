@@ -268,11 +268,7 @@ ADMX Info:
 <!--Description-->
 This policy setting ignores the customized run list.
 
-You can create a customized list of additional programs and documents that the system starts automatically when it runs on Windows Vista, Windows XP Professional, and Windows 2000 Professional. These programs are added to the standard run list of programs and services that the system starts.
-
-If you enable this policy setting, the system ignores the run list for Windows Vista, Windows XP Professional, and Windows 2000 Professional.
-
-If you disable or do not configure this policy setting, Windows Vista adds any customized run list configured to its run list.
+These programs are added to the standard run list of programs and services that the system starts.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
@@ -345,11 +341,7 @@ ADMX Info:
 <!--Description-->
 This policy setting ignores the customized run list.
 
-You can create a customized list of additional programs and documents that the system starts automatically when it runs on Windows Vista, Windows XP Professional, and Windows 2000 Professional. These programs are added to the standard run list of programs and services that the system starts.
-
-If you enable this policy setting, the system ignores the run list for Windows Vista, Windows XP Professional, and Windows 2000 Professional.
-
-If you disable or do not configure this policy setting, Windows Vista adds any customized run list configured to its run list.
+These programs are added to the standard run list of programs and services that the system starts.
 
 This policy setting appears in the Computer Configuration and User Configuration folders. If both policy settings are configured, the policy setting in Computer Configuration takes precedence over the policy setting in User Configuration.
 
@@ -714,7 +706,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting hides the welcome screen that is displayed on Windows 2000 Professional each time the user logs on.
+This policy setting hides the welcome screen that is displayed on Windows each time the user logs on.
 
 If you enable this policy setting, the welcome screen is hidden from the user logging on to a computer where this policy is applied.
 
@@ -722,7 +714,7 @@ Users can still display the welcome screen by selecting it on the Start menu or 
 
 If you disable or do not configure this policy, the welcome screen is displayed each time a user logs on to the computer.
 
-This setting applies only to Windows 2000 Professional. It does not affect the "Configure Your Server on a Windows 2000 Server" screen on Windows 2000 Server.
+This setting applies only to Windows. It does not affect the "Configure Your Server on a Windows Server" screen on Windows Server.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.
@@ -795,13 +787,13 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting hides the welcome screen that is displayed on Windows 2000 Professional each time the user logs on.
+This policy setting hides the welcome screen that is displayed on Windows each time the user logs on.
 
 If you enable this policy setting, the welcome screen is hidden from the user logging on to a computer where this policy is applied.
 
 Users can still display the welcome screen by selecting it on the Start menu or by typing "Welcome" in the Run dialog box.
 
-If you disable or do not configure this policy, the welcome screen is displayed each time a user logs on to the computer.  This setting applies only to Windows 2000 Professional. It does not affect the "Configure Your Server on a Windows 2000 Server" screen on Windows 2000 Server.
+If you disable or do not configure this policy, the welcome screen is displayed each time a user logs on to the computer.  This setting applies only to Windows. It does not affect the "Configure Your Server on a Windows Server" screen on Windows Server.
 
 > [!NOTE]
 > This setting appears in the Computer Configuration and User Configuration folders. If both settings are configured, the setting in Computer Configuration takes precedence over the setting in User Configuration.

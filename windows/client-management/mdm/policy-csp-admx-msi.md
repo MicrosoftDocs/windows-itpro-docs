@@ -678,7 +678,7 @@ This policy setting restricts the use of Windows Installer.
 
 If you enable this policy setting, you can prevent users from installing software on their systems or permit users to install only those programs offered by a system administrator. You can use the options in the Disable Windows Installer box to establish an installation setting.
 
-- The "Never" option indicates Windows Installer is fully enabled. Users can install and upgrade software. This is the default behavior for Windows Installer on Windows 2000 Professional, Windows XP Professional and Windows Vista when the policy is not configured.
+- The "Never" option indicates Windows Installer is fully enabled. Users can install and upgrade software. 
 
 - The "For non-managed applications only" option permits users to install only those programs that a system administrator assigns (offers on the desktop) or publishes (adds them to Add or Remove Programs). This is the default behavior of Windows Installer on Windows Server 2003 family when the policy is not configured.
 
@@ -1870,8 +1870,6 @@ If you do not configure this policy setting on Windows Server 2003, Windows Inst
 This policy setting is designed for enterprises to prevent unauthorized or malicious editing of transform files.
 
 If you disable this policy setting, Windows Installer stores transform files in the Application Data directory in the user's profile.
-
-If you do not configure this policy setting on Windows 2000 Professional, Windows XP Professional and Windows Vista, when a user reinstalls, removes, or repairs an installation, the transform file is available, even if the user is on a different computer or is not connected to the network.
 
 <!--/Description-->
 

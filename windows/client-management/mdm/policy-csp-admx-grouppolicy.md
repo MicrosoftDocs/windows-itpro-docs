@@ -205,6 +205,7 @@ manager: dansimp
 
 > [!div class = "checklist"]
 > * Device
+> * User
 
 <hr/>
 
