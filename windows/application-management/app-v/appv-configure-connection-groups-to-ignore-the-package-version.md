@@ -1,5 +1,5 @@
 ---
-title: How to make a connection group ignore the package version (Windows 10)
+title: How to make a connection group ignore the package version (Windows 10/11)
 description: Learn how to make a connection group ignore the package version with the App-V Server Management Console.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # How to make a connection group ignore the package version
 
-> Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 You can use Application Virtualization (App-V) to configure a connection group to use any version of a package, simplifying package upgrades and reducing the number of connection groups you need to create.
 

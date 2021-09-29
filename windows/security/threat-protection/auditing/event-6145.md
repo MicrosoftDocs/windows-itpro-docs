@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 6145(F): One or more errors occurred while processing security policy in the group policy objects.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-6145.png" alt="Event 6145 illustration" width="464" height="361" hspace="10" align="left" />

@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 5157(F): The Windows Filtering Platform has blocked a connection.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-5157.png" alt="Event 5157 illustration" width="491" height="503" hspace="10" align="left" />

@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 4706(S): A new trust was created to a domain.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4706.png" alt="Event 4706 illustration" width="449" height="489" hspace="10" align="left" />

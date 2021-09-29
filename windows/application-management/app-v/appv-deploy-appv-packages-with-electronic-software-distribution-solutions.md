@@ -1,5 +1,5 @@
 ---
-title: How to deploy App-V packages using electronic software distribution (Windows 10)
+title: How to deploy App-V packages using electronic software distribution (Windows 10/11)
 description: Learn how use an electronic software distribution (ESD) system to deploy App-V virtual applications to App-V clients.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # How to deploy App-V packages using electronic software distribution
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 You can use an electronic software distribution (ESD) system to deploy App-V virtual applications to App-V clients.
 

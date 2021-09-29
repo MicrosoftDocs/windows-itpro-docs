@@ -151,7 +151,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <Deny ID="ID_DENY_BGINFO" FriendlyName="bginfo.exe" FileName="BGINFO.Exe" MinimumFileVersion="4.21.0.0"/> 
   <Deny ID="ID_DENY_CBD" FriendlyName="cdb.exe" FileName="CDB.Exe" MinimumFileVersion="65535.65535.65535.65535"/>
   <Deny ID="ID_DENY_CSI" FriendlyName="csi.exe" FileName="csi.Exe" MinimumFileVersion="65535.65535.65535.65535"/>
-  <Deny ID="ID_DENY_CSCRIPT" FriendlyName="cscript.exe" FileName="cscript.exe" MinimumFileVersion = "10.0.0.0" />
+  <Deny ID="ID_DENY_CSCRIPT" FriendlyName="cscript.exe" FileName="cscript.exe" MinimumFileVersion = "5.812.10240.0" />
   <Deny ID="ID_DENY_DBGHOST" FriendlyName="dbghost.exe" FileName="DBGHOST.Exe" MinimumFileVersion="2.3.0.0"/> 
   <Deny ID="ID_DENY_DBGSVC" FriendlyName="dbgsvc.exe" FileName="DBGSVC.Exe" MinimumFileVersion="2.3.0.0"/>
   <Deny ID="ID_DENY_DNX" FriendlyName="dnx.exe" FileName="dnx.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
@@ -181,7 +181,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />   
   <Deny ID="ID_DENY_WINDBG" FriendlyName="windbg.exe" FileName="windbg.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="65535.65535.65535.65535"/>
-  <Deny ID="ID_DENY_WSCRIPT" FriendlyName="wscript.exe"  FileName="wscript.exe" MinimumFileVersion = "10.0.0.0" />
+  <Deny ID="ID_DENY_WSCRIPT" FriendlyName="wscript.exe"  FileName="wscript.exe" MinimumFileVersion = "5.812.10240.0" />
   <Deny ID="ID_DENY_WSL" FriendlyName="wsl.exe" FileName="wsl.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WSLCONFIG" FriendlyName="wslconfig.exe" FileName="wslconfig.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WSLHOST" FriendlyName="wslhost.exe" FileName="wslhost.exe" MinimumFileVersion="65535.65535.65535.65535"/> 

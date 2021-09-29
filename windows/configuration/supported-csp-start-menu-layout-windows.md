@@ -10,7 +10,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
-ms.date: 09/13/2021
 ms.localizationpriority: medium
 ---
 
@@ -57,6 +56,17 @@ For information on customizing the Start menu layout using policy, see [Customiz
 ## Existing CSP policies that Windows 11 doesn't support
 
 - [Start/StartLayout](/windows/client-management/mdm/policy-csp-start#start-startlayout)
+  - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Start Layout`
+
 - [Start/HideRecentlyAddedApps](/windows/client-management/mdm/policy-csp-start#start-hiderecentlyaddedapps)
+  - Group policy: `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove "Recently added" list from Start Menu`
+
 - [Start/HideAppList](/windows/client-management/mdm/policy-csp-start#start-hideapplist)
+  - Group policy:
+    - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Remove All Programs list from the Start menu`
+    - `User Configuration\Administrative Templates\Start Menu and Taskbar\Remove All Programs list from the Start menu`
+
 - [Start/DisableContextMenus](/windows/client-management/mdm/policy-csp-start#start-disablecontextmenus)
+  - Group policy: 
+    - `Computer Configuration\Administrative Templates\Start Menu and Taskbar\Disable context menus in the Start Menu`
+    - `User Configuration\Administrative Templates\Start Menu and Taskbar\Disable context menus in the Start Menu`
