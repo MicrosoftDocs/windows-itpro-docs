@@ -20,6 +20,7 @@ ms.custom: seo-marvel-apr2020
 **Applies to**
 
 - Windows 10
+- Windows 11
 
 > **Looking for more Group Policy settings?** See the master spreadsheet available at the [Download Center](https://www.microsoft.com/download/details.aspx?id=102158).
 
@@ -116,6 +117,9 @@ Download mode dictates which download sources clients are allowed to use when do
 | Simple (99) | Simple mode disables the use of Delivery Optimization cloud services completely (for offline environments). Delivery Optimization switches to this mode automatically when the Delivery Optimization cloud services are unavailable, unreachable or when the content file size is less than 10 MB. In this mode, Delivery Optimization provides a reliable download experience, with no peer-to-peer caching. |
 |Bypass (100) |	Bypass Delivery Optimization and use BITS, instead. You should only select this mode if you use WSUS and prefer to use BranchCache. You do not need to set this option if you are using Configuration Manager. If you want to disable peer-to-peer functionality, it's best to set **DownloadMode** to **0** or **99**. |
 
+> [!NOTE]
+> Starting with Windows 10, version 2006 (and in Windows 11), the Bypass option of Download Mode is no longer used.
+
 >[!NOTE]
 >Group mode is a best-effort optimization and should not be relied on for an authentication of identity of devices participating in the group.
 
@@ -160,7 +164,7 @@ In environments configured for Delivery Optimization, you might want to set an e
 
 ### Max Cache Size
 
-This setting limits the maximum amount of space the Delivery Optimization cache can use as a percentage of the available drive space, from 1 to 100. For example, if you set this value to 10 on a Windows 10 client device that has 100 GB of available drive space, then Delivery Optimization will use up to 10 GB of that space. Delivery Optimization will constantly assess the available drive space and automatically clear the cache to keep the maximum cache size under the set percentage. The default value for this setting is 20.
+This setting limits the maximum amount of space the Delivery Optimization cache can use as a percentage of the available drive space, from 1 to 100. For example, if you set this value to 10 on a Windows client device that has 100 GB of available drive space, then Delivery Optimization will use up to 10 GB of that space. Delivery Optimization will constantly assess the available drive space and automatically clear the cache to keep the maximum cache size under the set percentage. The default value for this setting is 20.
 
 ### Absolute Max Cache Size
 
@@ -197,8 +201,9 @@ Starting in Windows 10, version 1803, specifies the maximum background download 
 Starting in Windows 10, version 1803, specifies the maximum foreground download bandwidth that Delivery Optimization uses during and outside business hours across all concurrent download activities as a percentage of available download bandwidth.
 
 ### Select a method to restrict peer selection
-Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option.  
-Currently the only available option is **1 = Subnet mask**. The subnet mask option applies to both Download Modes LAN (1) and Group (2).  
+Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option. Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. The subnet mask option applies to both Download Modes LAN (1) and Group (2).
+
+When you set option 0, Delivery Optimization will find peers behind the same NAT (same public IP) but still prioritize same subnet peers. When you set option 2, Delivery Optimization will restrict peer selection to peers that are locally discovered (using DNS-SD). When GroupID mode is set, it will default to using the same subnet. If you want to use the GroupID across subnets, use the NAT option = 0. 
 
 ### Delay background download from http (in secs)
 Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer.
