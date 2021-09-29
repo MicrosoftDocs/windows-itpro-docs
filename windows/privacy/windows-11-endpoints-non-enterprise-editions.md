@@ -103,15 +103,14 @@ The following methodology was used to derive the network endpoints:
 | Teams Chat integration with Windows  | The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. <br/>If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.  | | |
 | | | HTTP | www.microsoft.com <br/>*.watson.telemetry.microsoft.com/telemetry.request  |
 | | | TLSv1.2/HTTPS | *.v10.events.data.microsoft.com <br/> *.telecommand.telemetry.microsoft.com <br/> *.co4.telecommand.telemetry.microsoft.com <br/> *.watson.telemetry.microsoft.com |
-| Widgets | | | How to turn off  |
-| | MSN news feed | The windows feeds endpoint on msn.com is used to download news headlines to the dashboard. | Sign out of dashboard |
-| | Calendar | The calendar endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
+| Widgets <br/> To turn a widget off locally, right click on the widget to it unpin from dashboard.<br/> Disable the connection point below to turn off for an organization. | |TLSv1.2/HTTPS/HTTP | https://www.msn.com/pcs/api/widget/newsplus/widget |
+| | MSN news feed <br/> The Windows feeds endpoint on msn.com is used to download news headlines to the dashboard. |||
+| | Calendar <br/>  The calendar endpoint is used to download content for the widget. |||
 | | ToDo | The ToDo endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
 | | Microsoft 365 recommendations | The Microsoft 365 recommendations endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
 | | Photos | The photos endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
 | | Family | The family endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
 | | Finance, Sports, Weather, Traffic, eSports | The WebXT endpoint is used to download content for all WebXT widgets. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | | TLSv1.2/HTTPS/HTTP | https://www.msn.com/pcs/api/widget/newsplus/widget |
 |Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
 ||||wdcpalt.microsoft.com|
 |||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
