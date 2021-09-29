@@ -39,9 +39,9 @@ landingContent:
         links:
         - text: Trusted Platform Module
           url: information-protection/tpm/trusted-platform-module-top-node.md
-        - text: Hardware-based root of trust
+        - text: Windows Defender System Guard firmware protection
           url: threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows.md
-        - text: System Guard Secure Launch and SMM protection
+        - text: System Guard Secure Launch and SMM protection enablement
           url: threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md
         - text: Virtualization-based protection of code integrity
           url: threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity.md
