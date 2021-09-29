@@ -1,5 +1,5 @@
 ---
-title: Learn about the different app types in Windows 10 | Microsoft Docs
+title: Learn about the different app types in Windows 10/11 | Microsoft Docs
 ms.reviewer: 
 manager: dougeby
 description: Learn more and understand the different types of apps that run on Windows 10 and Windows 11. For example, learn more about UWP, WPF, Win32, and Windows Forms apps, including the best way to install these apps.
@@ -15,9 +15,10 @@ ms.topic: article
 
 # Overview of apps on Windows client devices
 
-> Applies to:
->
-> - Windows 10
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 ## Before you begin
 
@@ -76,7 +77,7 @@ When your apps are ready, you can add or deploy these apps to your Windows devic
 
 - **Manually install**: On your devices, users can install apps from the Microsoft Store, from the internet, and from an organization shared drive. These apps, and more, are listed in **Settings** > **Apps** > **Apps and Features**.
 
-  If you want to prevent users from downloading apps on organization owned devices, use an MDM provider, like Microsoft Intune. For example, you can create a policy that allows or prevents users from sideloading apps, only allow the private store, and more. For more information on the features you can restrict, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10).
+  If you want to prevent users from downloading apps on organization owned devices, use an MDM provider, like Microsoft Intune. For example, you can create a policy that allows or prevents users from sideloading apps, only allow the private store, and more. For more information on the features you can restrict, see [Windows client device settings to allow or restrict features using Intune](/mem/intune/configuration/device-restrictions-windows-10).
 
   For an overview of the different types of device policies you can create, see [Apply features and settings on your devices using device profiles in Microsoft Intune](/mem/intune/configuration/device-profiles).
 

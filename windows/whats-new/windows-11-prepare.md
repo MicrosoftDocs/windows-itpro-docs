@@ -50,7 +50,7 @@ The tools that you use for core workloads during Windows 10 deployments can stil
     - The product field must specify Windows 11 in order for devices to upgrade to Windows 11. If only the target version field is configured, the device will be offered matching versions of the same product. 
     - For example, if a device is running <i>Windows 10, version 2004</i> and only the target version is configured to 21H1, this device will be offered version <i>Windows 10, version 21H1</i>, even if multiple products have a 21H1 version.
 - Quality update deferrals will continue to work the same across both Windows 10 and Windows 11. This is true regardless of which management tool you use to configure Windows Update for Business policies.
-- If you use Microsoft Intune and have a Microsoft 365 E3 license, you will be able to use feature update deployments to easily update devices from one release of Windows 10 to another, or to upgrade Windows 10 devices to Windows 11. You can also continue using the same update experience controls to manage Windows 10 and Windows 11. 
+- If you use Microsoft Intune and have a Microsoft 365 E3 license, you will be able to use [feature update deployments](/mem/intune/protect/windows-10-feature-updates) to easily update devices from one release of Windows 10 to another, or to upgrade Windows 10 devices to Windows 11. You can also continue using the same update experience controls to manage Windows 10 and Windows 11. If you aren’t ready to move to Windows 11, keep the feature update version set at the version you are currently on. When you are ready to start upgrading devices, change the feature update deployment setting to specify Windows 11. 
 
 ## Cloud-based management
 

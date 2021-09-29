@@ -1,5 +1,5 @@
 ---
-title: Viewing App-V Server Publishing Metadata (Windows 10)
+title: Viewing App-V Server Publishing Metadata (Windows 10/11)
 description: Use this procedure to view App-V Server publishing metadata, which can help you resolve publishing-related issues.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -42,7 +42,7 @@ You can view the metadata for each request in an Internet browser by using a que
 
 ## <a href="" id="bkmk-syntax-view-pub-meta"></a>Query syntax for viewing publishing metadata
 
-This section provides information about queries for viewing publishing metadata for App-V 5.0 SP3 Server and App-V 5.1 server. The App-V server components have not changed since App-V 5.0 was released, so App-V 5.x Server is the version of the server used with App-V for Windows 10.
+This section provides information about queries for viewing publishing metadata for App-V 5.0 SP3 Server and App-V 5.1 server. The App-V server components have not changed since App-V 5.0 was released, so App-V 5.x Server is the version of the server used with App-V for Windows client.
 
 **Query syntax**
 
@@ -58,7 +58,7 @@ In this example:
 
 - A computer running Windows Server 2016 named “pubsvr01” hosts the Publishing service.
 
-- The Windows client is Windows 10, 64-bit.
+- The Windows client is 64-bit.
 
 **Query parameter descriptions**
 
@@ -68,7 +68,7 @@ The following table describes the parameters shown in the preceding **Query synt
 |------------|---------------|
 | `<PubServer>`  |  Name of the App-V Publishing server. |
 | `<Publishing Port#>` | Port to the App-V Publishing server, which you defined when you configured the Publishing server. |
-| `ClientVersion=<BuildNumber>` | Windows 10 build number. You can obtain this number by running the following Windows PowerShell command:<br>`(Get-CimInstance Win32_OperatingSystem).version`  |
+| `ClientVersion=<BuildNumber>` | Windows client build number. You can obtain this number by running the following Windows PowerShell command:<br>`(Get-CimInstance Win32_OperatingSystem).version`  |
 | `ClientOS=<OSStringValue>` | Operating system of the computer that is running the App-V client. Refer to the table that follows for the correct value.<br>You can omit this parameter, with the result that only the packages that were sequenced to support all operating systems will appear in the metadata. |
 
 To get the name of the Publishing server and the port number (`http://<PubServer>:<Publishing Port#>`) from the App-V client, look at the URL configuration of the <strong>Get-AppvPublishingServer</strong> Windows PowerShell cmdlet.
@@ -92,12 +92,12 @@ In your publishing metadata query, enter the string values that correspond to th
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>Windows 10/11</p></td>
 <td align="left"><p>64-bit</p></td>
 <td align="left"><p>WindowsClient_10.0_x64</p></td>
 </tr>
 <tr class="even">
-<td align="left"><p>Windows 10</p></td>
+<td align="left"><p>Windows 10/11</p></td>
 <td align="left"><p>32-bit</p></td>
 <td align="left"><p>WindowsClient_10.0_x86</p></td>
 </tr>
