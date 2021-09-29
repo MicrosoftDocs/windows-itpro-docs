@@ -1,5 +1,5 @@
 ---
-title: How to Move the App-V Server to Another Computer (Windows 10)
+title: How to Move the App-V Server to Another Computer (Windows 10/11)
 description: Learn how to create a new management server console in your environment and learn how to connect it to the App-V database.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
