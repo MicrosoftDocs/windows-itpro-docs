@@ -40,7 +40,7 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Discover Windows 11 # < 60 chars (optional)
-  summary: Use the following information to learn more about Windows 11 # < 160 chars (optional)
+  summary: Use the following information to discover what's been updated in Windows 11 # < 160 chars (optional)
   items:
   # Card
     - title: What's new in Windows 11
@@ -49,11 +49,11 @@ productDirectory:
       url: /windows/whats-new/whats-new-in-windows-11
     - title: Windows 11 overview
       imageSrc: /windows/resources/images/winlogo.svg
-      summary: Learn more about Windows 11
+      summary: Get an overview for the Windows 11 updates that will help you be more 
       url: /windows/whats-new/windows-11-overview
     - title: Windows 11 requirements
       imageSrc: /windows/resources/images/winlogo.svg
-      summary: Learn about the system requirements for Windows 11 and the requirements to run Windows 11 on a virtual machine (VM).
+      summary: Learn about the system requirements for Windows 11 and the requirements to run Windows 11 on a virtual machine
       url: /windows/whats-new/windows-11-requirements
       
 # conceptualContent section (optional)
@@ -70,9 +70,6 @@ conceptualContent:
         - url: /windows/whats-new/windows-11
           itemType: overview
           text: Windows 11 overview
-        - url: /windows/whats-new/windows-11-requirements                
-          itemType: overview
-          text: Windows 11 requirements
         - url: /windows/whats-new/windows-11-plan
           itemType: overview
           text: Plan for Windows 11
