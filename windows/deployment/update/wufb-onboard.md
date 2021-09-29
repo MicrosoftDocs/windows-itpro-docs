@@ -13,6 +13,7 @@ ms.topic: article
 ---
 
 # Onboarding to Windows Update for Business in Windows 10
+{DELETE}
 
 >Applies to: Windows 10
 

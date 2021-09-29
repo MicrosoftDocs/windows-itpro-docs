@@ -13,7 +13,7 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
-
+{DELETE}
 # Deploy feature updates during maintenance windows
 
 **Applies to**: Windows 10
@@ -105,7 +105,7 @@ or documentation, even if Microsoft has been advised of the possibility of such 
 ```
 
 > [!NOTE]
-> If you elect not to override the default setup priority, you will need to increase the [maximum run time](/sccm/sum/get-started/manage-settings-for-software-updates#BKMK_SetMaxRunTime) value for Feature Update to Windows 10, version 1709 or higher from the default of 60 minutes. A value of 240 minutes may be required. Remember to ensure that your maintenance window duration is larger than your defined maximum run time value.
+> If you elect not to override the default setup priority, you will need to increase the [maximum run time](/sccm/sum/get-started/manage-settings-for-software-updates#BKMK_SetMaxRunTime) value for feature update to Windows 10, version 1709 or higher from the default of 60 minutes. A value of 240 minutes may be required. Remember to ensure that your maintenance window duration is larger than your defined maximum run time value.
 
 ## Manually deploy feature updates
 

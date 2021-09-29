@@ -12,6 +12,8 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
+{DELETE ALTOGETHER??}
+
 # Build deployment rings for Windows client updates
 
 **Applies to**

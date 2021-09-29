@@ -12,7 +12,7 @@ ms.reviewer:
 manager: laurawi
 ms.topic: article
 ---
-
+{DELETE}
 # Set up Automatic Update in Windows Update for Business with group policies
 
 >Applies to: Windows 10

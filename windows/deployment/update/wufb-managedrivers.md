@@ -13,7 +13,7 @@ manager: laurawi
 ms.topic: article
 ---
 # Managing drivers, dual-managed environments, and Delivery Optimization with group policies
-
+{DELETE}
 >Applies to: Windows 10
 
 Use the following group policy information to manage drivers, to manage environments using both Windows Update for Business and Windows Server Update Services, and to manage the bandwidth required for updates with Delivery Optimization.

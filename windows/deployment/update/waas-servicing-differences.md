@@ -15,6 +15,7 @@ ms.collection: M365-modern-desktop
 ms.custom: seo-marvel-apr2020
 ---
 # Understanding the differences between servicing Windows 10-era and legacy Windows operating systems 
+{DELETE}
 
 > Applies to: Windows 10 
 > 

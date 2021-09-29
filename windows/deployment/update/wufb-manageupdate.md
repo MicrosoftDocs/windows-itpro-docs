@@ -15,6 +15,8 @@ ms.topic: article
 
 # Manage feature and quality updates with group policies
 
+{dELETE}
+
 >Applies to: Windows 10
 
 Windows Update for Business allows users to control when devices should receive a feature or quality update from Windows Update. Depending on the size of your organization you may want to do a wave deployment of updates. The first step in this process is to determine which Branch Readiness Level you want your organization on. For more information on which level is right for your organization review [Overview of Windows as a service](waas-overview.md). 
