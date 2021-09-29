@@ -9,7 +9,7 @@ metadata:
   ms.localizationpriority: medium
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 07/23/2021
+  ms.date: 09/29/2021
   ms.reviewer:
   manager: dansimp
   ms.custom: asr
@@ -216,6 +216,16 @@ sections:
           
           Policy: Allow installation of devices using drivers that match these device setup classes
           - `{71a27cdd-812a-11d0-bec7-08002be2092f}`
+
+      - question: |
+          I'm encountering TCP fragmentation issues, and cannot enable my VPN connection. How do I fix this?
+        answer: |
+          WinNAT drops ICMP/UDP messages with packets greater than MTU when using Default Switch or Docker NAT network. Support for this has been added in [KB4571744](https://www.catalog.update.microsoft.com/Search.aspx?q=4571744). To fix the issue, install the update and enable the fix by following these steps:
+
+          1. Ensure that the FragmentAware DWORD is set to 1 in this registry setting: `\Registry\Machine\SYSTEM\CurrentControlSet\Services\Winnat`.
+
+          2. Reboot the device.
+
 
 additionalContent: |
 
