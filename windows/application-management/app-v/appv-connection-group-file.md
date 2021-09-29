@@ -1,5 +1,5 @@
 ---
-title: About the connection group file (Windows 10)
+title: About the connection group file (Windows 10/11)
 description: A summary of what the connection group file is and how to configure it.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # About the connection group file
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 ## Connection group file overview
 
