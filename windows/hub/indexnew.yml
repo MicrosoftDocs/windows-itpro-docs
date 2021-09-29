@@ -49,7 +49,7 @@ productDirectory:
       url: /windows/whats-new/whats-new-in-windows-11
     - title: Windows 11 overview
       imageSrc: /windows/resources/images/winlogo.svg
-      summary: Get an overview for the Windows 11 updates that will help you be more 
+      summary: Get an overview of the updates in Windows 11
       url: /windows/whats-new/windows-11-overview
     - title: Windows 11 requirements
       imageSrc: /windows/resources/images/winlogo.svg
