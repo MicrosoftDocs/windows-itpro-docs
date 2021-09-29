@@ -302,9 +302,8 @@ This security setting determines whether local accounts that are not password pr
 
 Default: Enabled.
 
-Warning:
-
-Computers that are not in physically secure locations should always enforce strong password policies for all local user accounts. Otherwise, anyone with physical access to the computer can log on by using a user account that does not have a password. This is especially important for portable computers.
+> [!WARNING]
+> Computers that are not in physically secure locations should always enforce strong password policies for all local user accounts. Otherwise, anyone with physical access to the computer can log on by using a user account that does not have a password. This is especially important for portable computers.
 If you apply this security policy to the Everyone group, no one will be able to log on through Remote Desktop Services.
 
 This setting does not affect logons that use domain accounts.
