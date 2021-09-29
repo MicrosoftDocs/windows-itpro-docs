@@ -184,12 +184,21 @@ additionalContent:
     - title: More Windows resources # < 60 chars (optional)
       items:
         # Card
+        - title: Windows 11 product site
+          summary: Find out more about Windows 11 for enterprise and Windows 11 for business
+          url: https://www.microsoft.com/microsoft-365/windows
         - title: Windows blogs
           summary: Keep up with the latest news about Windows
           url: https://blogs.windows.com/
+        - title: "Planning for Windows 11: best practices for organizations"
+          summary: Blog article with best practices to help you plan for Windows 11
+          url: https://aka.ms/Windows/blog002
+        - title: Windows 11 security explained
+          summary: Blog article to learn how Windows 11 enables security by design from the chip to the cloud
+          url: https://aka.ms/Windows/blog010
         # Card
         - title: Participate in the Tech Community
-          summary: Be a part of the Windows Tech Community
+          summary: Learn how to be part of the Windows Tech Community
           url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
         # Card
         - title: Ask the community
@@ -206,6 +215,8 @@ additionalContent:
               url: /mem/endpoint-manager-overview.md
             - text: Getting started with Microsoft Endpoint Manager
               url: /mem/endpoint-manager-getting-started.md
+            - text: Microsoft Endpoint Manager blog
+              url: https://aka.ms/memblog
         - title: Windows 365
           links:
             - text: Windows 365 documentation
@@ -214,6 +225,8 @@ additionalContent:
               url: /windows-365/overview.md
             - text: Planning guide for Windows 365
               url: /windows-365/planning-guide.md
+            - text: Windows 365 blog
+              url: https://www.microsoft.com/microsoft-365/blog/
         - title: Windows Server
           links:
             - text: Windows Server documentation
@@ -222,3 +235,5 @@ additionalContent:
               url: /windows-server/get-started/whats-new-in-windows-server-2022.md
             - text: Get started with Windows Server
               url: /windows-server/get-started/get-started-with-windows-server.md
+            - text: Windows Server blog
+              url: https://cloudblogs.microsoft.com/windowsserver/
