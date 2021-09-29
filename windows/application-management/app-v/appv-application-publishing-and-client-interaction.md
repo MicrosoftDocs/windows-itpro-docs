@@ -1,5 +1,5 @@
 ---
-title: Application Publishing and Client Interaction (Windows 10)
+title: Application Publishing and Client Interaction (Windows 10/11)
 description: Learn technical information about common App-V Client operations and their integration with the local operating system.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # Application publishing and client interaction
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 This article provides technical information about common App-V Client operations and their integration with the local operating system.
 

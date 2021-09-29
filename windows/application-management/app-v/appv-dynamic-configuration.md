@@ -1,5 +1,5 @@
 ---
-title: About App-V Dynamic Configuration (Windows 10)
+title: About App-V Dynamic Configuration (Windows 10/11)
 description: Learn how to create or edit an existing Application Virtualization (App-V) dynamic configuration file.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # About App-V dynamic configuration
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 You can use dynamic configuration to customize an App-V package for a user. This article will tell you how to create or edit an existing dynamic configuration file.
 
@@ -562,7 +562,7 @@ The following table describes the various script events and the context under wh
 
 ### Using multiple scripts on a single event trigger
 
-App-V supports the use of multiple scripts on a single event trigger for App-V packages, including packages that you convert from App-V 4.6 to App-V for Windows 10. To enable the use of multiple scripts, App-V uses a script launcher application, named ScriptRunner.exe, which is included in the App-V client.
+App-V supports the use of multiple scripts on a single event trigger for App-V packages, including packages that you convert from App-V 4.6 to App-V for Windows client. To enable the use of multiple scripts, App-V uses a script launcher application, named ScriptRunner.exe, which is included in the App-V client.
 
 #### How to use multiple scripts on a single event trigger
 
