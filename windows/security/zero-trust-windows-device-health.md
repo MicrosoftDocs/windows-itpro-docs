@@ -15,9 +15,9 @@ ms.technology: windows-sec
 ---
 
 # Zero Trust and Windows device health
-Today’s organizations need a new security model that more effectively adapts to the complexity of the modern environment, embraces the hybrid workplace, and protects people, devices, apps, and data wherever they’re located. Implementing a Zero Trust model for security addresses today's complex work environments.
+Organizations need a security model that more effectively adapts to the complexity of the modern work environment. IT admins need to embrace the hybrid workplace, while protecting people, devices, apps, and data wherever they’re located. Implementing a Zero Trust model for security helps addresses today's complex environments.
 
-The [Zero Trust Principles](https://www.microsoft.com/security/business/zero-trust) are threefold.
+The [Zero Trust](https://www.microsoft.com/security/business/zero-trust) principles are:
 
 - **Verify explicitly**. Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and monitor anomalies.
 
@@ -25,18 +25,24 @@ The [Zero Trust Principles](https://www.microsoft.com/security/business/zero-tru
 
 - **Assume breach**. Prevent attackers from obtaining access to minimize potential damage to data and systems. Protect privileged roles, verify end-to-end encryption, use analytics to get visibility, and drive threat detection to improve defenses.
 
-The Zero Trust concept of **verify explicitly** applies to the risks introduced by both devices and users. Windows provides IT administrators the attestation and measurements to determine whether a device meets requirements and can be trusted. Microsoft Intune and Azure Active Directory can be used to manage and enforce access. Plus, IT Administrators can easily customize Windows to meet specific user and policy requirements for access, privacy, compliance, and more.
+The Zero Trust concept of **verify explicitly** applies to the risks introduced by both devices and users. Windows enables **device health attestation** and **conditional access** capabilities, which are used to grant access to corporate resources. 
+
+[Conditional access](/azure/active-directory/conditional-access/overview) evaluates identity signals to confirm that users are who they say they are before they are granted access to corporate resources. 
+
+Windows 11 supports device health attestation, helping to confirm that devices are in a good state and have not been tampered with. This capability helps users access corporate resources whether they’re in the office, at home, or when they’re traveling.
+
+Attestation helps verify the identity and status of essential components and that the device, firmware, and boot process have not been altered. Information about the firmware, boot process, and software, is used to validate the security state of the device. This information is cryptographically stored in the security co-processor Trusted Platform Module (TPM). Once the device is attested, it can be granted access to resources.
 
 ## Device health attestation on Windows
- Many security risks can emerge during the boot process as this process can be the most privileged component of the whole system. Zero Trust principles state that all endpoints are untrusted unless they are verified. The verification process uses remote attestation as the secure channel to determine and present the device’s health. Remote attestation determines:
+ Many security risks can emerge during the boot process as this process can be the most privileged component of the whole system. The verification process uses remote attestation as the secure channel to determine and present the device’s health. Remote attestation determines:
 
-- If the device can be trusted.
-- If the operating system booted correctly.
-- If the OS has the right set of security features enabled.
+- If the device can be trusted
+- If the operating system booted correctly
+- If the OS has the right set of security features enabled
 
-These determinations are made with the help of a secure root of trust using the Trusted Platform Module (TPM). Devices can attest that the TPM is enabled in the attestation flow, and that the device has not been tampered with. 
+These determinations are made with the help of a secure root of trust using the Trusted Platform Module (TPM). Devices can attest that the TPM is enabled, and that the device has not been tampered with.
 
-Windows includes many security features to help protect users from malware and attacks. However, trusting the Windows security components can only be achieved if the platform boots as expected and was not tampered with. Windows relies on Unified Extensible Firmware Interface (UEFI) Secure Boot, Early-launch antimalware (ELAM), Dynamic Root of Trust for Measurement (DRTM), Trusted Boot, and other low-level hardware and firmware security features. When you power on your PC until your anti-malware starts, Windows is backed with the appropriate hardware configuration to help keep you safe. [Measured and Trusted boot](information-protection/secure-the-windows-10-boot-process.md), implemented by bootloaders and BIOS, verifies and cryptographically records each step of the boot in a chained manner. These events are bound to a security coprocessor (TPM) that acts as the Root of Trust. Remote Attestation is the mechanism by which these events are read and verified by a service to provide a verifiable, unbiased, and tamper resilient report. Remote attestation is the trusted auditor of your system's boot, allowing specific entities to trust the device. 
+Windows includes many security features to help protect users from malware and attacks. However, trusting the Windows security components can only be achieved if the platform boots as expected and was not tampered with. Windows relies on Unified Extensible Firmware Interface (UEFI) Secure Boot, Early-launch antimalware (ELAM), Dynamic Root of Trust for Measurement (DRTM), Trusted Boot, and other low-level hardware and firmware security features. When you power on your PC until your anti-malware starts, Windows is backed with the appropriate hardware configuration to help keep you safe. [Measured and Trusted boot](information-protection/secure-the-windows-10-boot-process.md), implemented by bootloaders and BIOS, verifies and cryptographically records each step of the boot in a chained manner. These events are bound to a security coprocessor (TPM) that acts as the Root of Trust. Remote Attestation is the mechanism by which these events are read and verified by a service to provide a verifiable, unbiased, and tamper resilient report. Remote attestation is the trusted auditor of your system's boot, allowing specific entities to trust the device.
 
 A summary of the steps involved in attestation and Zero Trust on the device side are as follows:
 
@@ -60,6 +66,6 @@ A summary of the steps involved in attestation and Zero Trust on the device side
 
 8. Conditional access, along with device-compliance state then decides to allow or deny access.
 
-## Additional Resources
+## Other Resources
 
 Learn more about Microsoft Zero Trust solutions in the [Zero Trust Guidance Center](/security/zero-trust/).
