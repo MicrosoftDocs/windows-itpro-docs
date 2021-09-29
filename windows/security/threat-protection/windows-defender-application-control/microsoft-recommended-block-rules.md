@@ -88,6 +88,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 | `Alex Ionescu` | `@aionescu`|
 | `Brock Mammen`| |
 | `Casey Smith` | `@subTee` | 
+| `James Forshaw` | `@tiraniddo` |
 | `Jimmy Bayne` | `@bohops` |
 | `Lasse Trolle Borup` | `Langkjaer Cyber Defence` |
 | `Lee Christensen` | `@tifkin_` |
