@@ -50,25 +50,27 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
    ```
 
 3. Repeat steps 1-2 as appropriate to deploy additional WDAC policies.
-4. Run RefreshPolicy.exe to activate and refresh all WDAC policies on the managed endpoint.
+4. The binary policy file must also be copied to the device's EFI partition:
+
+   ```powershell
+   $MountPoint = 'C:\EFI'
+   $EFIDestinationFolder = "$MountPoint\Microsoft\Boot\CiPolicies\Active"
+   mkdir $EFIDestinationFolder
+   mountvol $MountPoint /s
+   Copy-Item -Path $PolicyBinary -Destination $EFIDestinationFolder -Force
+   mountvol $MountPoint /d
+   ```
+   
+5. Run RefreshPolicy.exe to activate and refresh all WDAC policies on the managed endpoint.
 
    ```powershell
    & $RefreshPolicyTool
    ```
 
-### Deploying signed policies
+6. Reboot the system
 
-In addition to the steps outlined above, the binary policy file must also be copied to the device's EFI partition. Deploying your policy via [MEM](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle this step automatically. 
-
-1. Mount the EFI volume and make the directory, if it does not exist, in an elevated PowerShell prompt: 
-```powershell
-mountvol J: /S
-J:
-mkdir J:\EFI\Microsoft\Boot\CiPolicies\Active
-```
-
-2. Copy the signed policy binary as `{PolicyGUID}.cip` to J:\EFI\Microsoft\Boot\CiPolicies\Active
-3. Reboot the system.
+> [!NOTE]
+> Deploying your policy via [MEM](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle step 4 automatically. 
 
 ## Script-based deployment process for Windows 10 versions earlier than 1903
 
