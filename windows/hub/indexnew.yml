@@ -184,7 +184,7 @@ conceptualContent:
 additionalContent:
   # Supports up to 4 subsections
   sections:
-    - title: Additional Windows resources # < 60 chars (optional)
+    - title: More Windows resources # < 60 chars (optional)
       items:
         # Card
         - title: Windows blogs
@@ -199,7 +199,7 @@ additionalContent:
           summary: Get help, and help others
           url: https://answers.microsoft.com/windows/forum
 
-    - title: Additional resources
+    - title: Other resources
       items:
         - title: Microsoft Endpoint Manager
           links:
