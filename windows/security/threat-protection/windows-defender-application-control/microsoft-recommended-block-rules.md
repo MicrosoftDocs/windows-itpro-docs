@@ -15,7 +15,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 08/23/2021
+ms.date: 09/29/2021
 ---
 
 # Microsoft recommended block rules
