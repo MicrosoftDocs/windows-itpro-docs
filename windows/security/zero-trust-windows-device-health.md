@@ -15,9 +15,9 @@ ms.technology: windows-sec
 ---
 
 # Zero Trust and Windows device health
-Today’s organizations need a new security model that more effectively adapts to the complexity of the modern environment, embraces the hybrid workplace, and protects people, devices, apps, and data wherever they’re located. Implementing a Zero Trust model for security addresses today's complex work environments.
+Today’s organizations need a new security model that more effectively adapts to the complexity of the modern environment, embraces the hybrid workplace, and protects people, devices, apps, and data wherever they’re located. Implementing a Zero Trust model for security helps addresses today's complex environments.
 
-The [Zero Trust Principles](https://www.microsoft.com/security/business/zero-trust) are threefold.
+The [Zero Trust Principles](https://www.microsoft.com/security/business/zero-trust) are:
 
 - **Verify explicitly**. Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and monitor anomalies.
 
@@ -25,9 +25,7 @@ The [Zero Trust Principles](https://www.microsoft.com/security/business/zero-tru
 
 - **Assume breach**. Prevent attackers from obtaining access to minimize potential damage to data and systems. Protect privileged roles, verify end-to-end encryption, use analytics to get visibility, and drive threat detection to improve defenses.
 
-The Zero Trust concept of **verify explicitly** applies to the risks introduced by both devices and users. Windows provides IT administrators the attestation and measurements to determine whether a device meets requirements and can be trusted. Microsoft Intune and Azure Active Directory can be used to manage and enforce access. Plus, IT Administrators can easily customize Windows to meet specific user and policy requirements for access, privacy, compliance, and more.
-
-**Device health attestation** and **conditional access** are used to grant access to corporate resources. This helps reinforce a Zero Trust paradigm that moves enterprise defenses from static, network- based perimeters to focus on users, assets, and resources.
+The Zero Trust concept of **verify explicitly** applies to the risks introduced by both devices and users. Windows enables **device health attestation** and **conditional access** capabilities, which are used to grant access to corporate resources. 
 
 [Conditional access](/azure/active-directory/conditional-access/overview) evaluates identity signals to confirm that users are who they say they are before they are granted access to corporate resources. 
 
@@ -36,7 +34,7 @@ Windows 11 supports device health attestation to confirm that devices are in a g
 Attestation provides assurance of trust as it can verify the identity and status of essential components and that the device, firmware, and boot process has not been altered. Information about the firmware, boot process, and software, which is cryptographically stored in the security co-processor (TPM), is used to validate the security state of the device. Once the device is attested it can be granted access to resources.
 
 ## Device health attestation on Windows
- Many security risks can emerge during the boot process as this process can be the most privileged component of the whole system. Zero Trust principles state that all endpoints are untrusted unless they are verified. The verification process uses remote attestation as the secure channel to determine and present the device’s health. Remote attestation determines:
+ Many security risks can emerge during the boot process as this process can be the most privileged component of the whole system. The verification process uses remote attestation as the secure channel to determine and present the device’s health. Remote attestation determines:
 
 - If the device can be trusted.
 - If the operating system booted correctly.
