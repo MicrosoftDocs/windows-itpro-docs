@@ -15,7 +15,7 @@ metadata:
   ms.collection: windows-10 # Optional; Remove if no collection is used.
   author: dougeby #Required; your GitHub user alias, with correct capitalization.
   ms.author: dougeby #Required; microsoft alias of author; optional team alias.
-  ms.date: 09/22/2021 #Required; mm/dd/yyyy format.
+  ms.date: 09/28/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
 
 # highlightedContent section (optional)
@@ -40,7 +40,7 @@ highlightedContent:
 # productDirectory section (optional)
 productDirectory:
   title: Discover Windows 11 # < 60 chars (optional)
-  summary: Use the following information to learn, plan, and get started with Windows 11 # < 160 chars (optional)
+  summary: Use the following information to learn more about Windows 11 # < 160 chars (optional)
   items:
     # Card
     - title: Learn about Windows 11
@@ -52,16 +52,7 @@ productDirectory:
         - url: /windows/whats-new/windows-11-overview
           text: Windows 11 overview
         - url: /windows/whats-new/windows-11-requirements
-          text: Windows 11 requirements
-    # Card
-    - title: Get started with Windows 11 
-      # imageSrc should be square in ratio with no whitespace
-      imageSrc: /windows/resources/images/winlogo.svg
-      links:
-        - url: /windows/whats-new/windows-11-plan
-          text: Plan for Windows 11
-        - url: /windows/whats-new/windows-11-prepare
-          text: Prepare for Windows 11          
+          text: Windows 11 requirements        
 
 # conceptualContent section (optional)
 conceptualContent:
@@ -206,17 +197,29 @@ additionalContent:
           summary: Get help, and help others
           url: https://answers.microsoft.com/windows/forum
 
-    - title: Additional resources (option 2)
+    - title: Additional resources
       items:
-        - title: Something here like blogs? Other?
+        - title: Microsoft Endpoint Manager
           links:
-            - text: First link here
-              url: /windows/deployment/deploy-whats-new.md
-            - text: second link here
-              url: /windows/deployment/deploy-whats-new.md
-        - title: Something else here
+            - text: Microsoft Endpoint Manager documentation
+              url: /mem/index
+            - text: Overview of Microsoft Endpoint Manager
+              url: /mem/endpoint-manager-overview.md
+            - text: Getting started with Microsoft Endpoint Manager
+              url: /mem/endpoint-manager-getting-started.md
+        - title: Windows 365
           links:
-            - text: First link here
-              url: /windows/deployment/deploy-whats-new.md
-            - text: second link here
-              url: /windows/deployment/deploy-whats-new.md
+            - text: Windows 365 documentation
+              url: /windows-365/index
+            - text: What is Windows 365
+              url: /windows-365/overview.md
+            - text: Planning guide for Windows 365
+              url: /windows-365/planning-guide.md
+        - title: Windows Server
+          links:
+            - text: Windows Server documentation
+              url: /windows-server/index
+            - text: What's new in Windows Server 2022?
+              url: /windows-server/get-started/whats-new-in-windows-server-2022.md
+            - text: Get started with Windows Server
+              url: /windows-server/get-started/get-started-with-windows-server.md
