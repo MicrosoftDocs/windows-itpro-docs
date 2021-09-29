@@ -53,7 +53,7 @@ productDirectory:
       url: /windows/whats-new/windows-11-overview
     - title: Windows 11 requirements
       imageSrc: /windows/resources/images/winlogo.svg
-      summary: Learn more about the Windows 11 requirements
+      summary: Learn about the system requirements for Windows 11, as well as the requirements to run Windows 11 on a virtual machine (VM).
       url: /windows/whats-new/windows-11-requirements
       
 # conceptualContent section (optional)
