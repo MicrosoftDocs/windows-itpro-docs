@@ -14,7 +14,6 @@ manager: dansimp
 
 # Policy CSP - LocalPoliciesSecurityOptions
 
-
 <hr/>
 
 <!--Policies-->
@@ -164,11 +163,10 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 > [!NOTE]
-> To find data formats (and other policy-related details), see [Policy DDF file](./policy-ddf-file.md). 
+> To find data formats (and other policy-related details), see [Policy DDF file](./policy-ddf-file.md).
 
 <!--Policy-->
 <a href="" id="localpoliciessecurityoptions-accounts-blockmicrosoftaccounts"></a>**LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts**  
@@ -3189,8 +3187,9 @@ This policy setting controls the behavior of the elevation prompt for administra
 The options are:
 
 - 0 - Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials.
-      > [!NOTE]
-      > Use this option only in the most constrained environments.
+
+  > [!NOTE]
+  > Use this option only in the most constrained environments.
 
 - 1 - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
 
@@ -3565,8 +3564,10 @@ This policy setting controls the behavior of all User Account Control (UAC) poli
 
 The options are:
 - 0 - Disabled: Admin Approval Mode and all related UAC policy settings are disabled.
-      > [!NOTE]
-      > If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
+
+  > [!NOTE]
+  > If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
+
 - 1 - Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
 
 
