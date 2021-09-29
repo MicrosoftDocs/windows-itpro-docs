@@ -63,13 +63,11 @@ The following methodology was used to derive these network endpoints:
 |||TLSv1.2|I-ring.msedge.net|
 |||HTTPS|s-ring.msedge.net|
 |Device authentication|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
-||The following endpoint is used to authenticate a device. If you  turn off traffic for this endpoint, the device will not be authenticated.|HTTPS|login.live.com*|
+||The following endpoint is used to authenticate a device. If you turn off traffic for this endpoint, the device will not be authenticated.|HTTPS|login.live.com*|
 |Device metadata|The following endpoint is used to retrieve device metadata. If you turn off traffic for this endpoint, metadata will not be updated for the device.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#4-device-metadata-retrieval)|
 |||HTTP|dmd.metaservices.microsoft.com|
 |Diagnostic Data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft. ||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-priv-feedback)|
 |||TLSv1.2/HTTPS/HTTP|v10.events.data.microsoft.com|
-|||TLSv1.2/HTTPS/HTTP|v20.events.data.microsoft.com|
-|||HTTP|www.microsoft.com|
 ||The following endpoints are used by Windows Error Reporting. To turn off traffic for these endpoints, enable the following Group Policy: Administrative Templates > Windows Components > Windows Error Reporting > Disable Windows Error Reporting. This means error reporting information will not be sent back to Microsoft.|TLSv1.2|telecommand.telemetry.microsoft.com|
 |||TLS v1.2/HTTPS/HTTP|watson.*.microsoft.com|
 |Font Streaming|The following endpoints are used to download fonts on demand. If you turn off traffic for these endpoints, you will not be able to download fonts on demand.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#6-font-streaming)|
@@ -81,9 +79,8 @@ The following methodology was used to derive these network endpoints:
 |Microsoft Account|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-microsoft-account)|
 ||The following endpoints are used for Microsoft accounts to sign in. If you turn off traffic for these endpoints, users cannot sign in with Microsoft accounts. |TLSv1.2/HTTPS|login.live.com|
 |Microsoft Edge|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#13-microsoft-edge)|
-||This traffic is related to the Microsoft Edge browser.|HTTPS|iecvlist.microsoft.com|
+||This traffic is related to the Microsoft Edge browser. This encapsulates all network traffic that supports edge. Edge cannot contact the outside world and thus ceases to function other than as a local PDF viewer.|HTTPS|iecvlist.microsoft.com|
 ||The following endpoint is used by Microsoft Edge Update service to check for new updates. If you disable this endpoint, Microsoft Edge won’t be able to check for and apply new edge updates.|TLSv1.2/HTTPS/HTTP|msedge.api.cdp.microsoft.com|
-|Microsoft forward link redirection service (FWLink)|The following endpoint is used by the Microsoft forward link redirection service (FWLink) to redirect permanent web links to their actual, sometimes transitory, URL. FWlinks are similar to URL shorteners, just longer. If you disable this endpoint, Windows Defender won't be able to update its malware definitions; links from Windows and other Microsoft products to the Web won't work; and PowerShell updateable Help won't update. To disable the traffic, instead disable the traffic that's getting forwarded.|HTTP|go.microsoft.com|
 |Microsoft Store|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 ||The following endpoint is used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps). If you turn off traffic for these endpoints, the image files won't be downloaded, and apps cannot be installed or updated from the Microsoft Store. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.|HTTPS|img-prod-cms-rt-microsoft-com.akamaized.net|
 ||The following endpoint is needed to load the content in the Microsoft Store app.|HTTPS|livetileedge.dsx.mp.microsoft.com|
@@ -114,6 +111,19 @@ The following methodology was used to derive these network endpoints:
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.||[Learn how to turn off traffic to all of the following endpoint(s).]( manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 |||TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
+| Teams Chat integration with Windows   | The following endpoints are used to configure Microsoft Teams Chat integration with Windows. | | |
+| | | HTTP | www.microsoft.com <br/>*.watson.telemetry.microsoft.com/telemetry.request |
+| | | TLSv1.2/HTTPS | *.v10.events.data.microsoft.com <br/> *.telecommand.telemetry.microsoft.com <br/> *.co4.telecommand.telemetry.microsoft.com <br/> *.watson.telemetry.microsoft.com |
+| Widgets    | | | How to turn off |
+| The following endpoints are used for Widgets. | MSN news feed | The windows feeds endpoint on msn.com is used to download news headlines to the dashboard. | Sign out of dashboard |
+| | Calendar | The calendar endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
+| | ToDo | The ToDo endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
+| | Microsoft 365 recommendations | The Microsoft 365 recommendations endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
+| | Photos | The photos endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
+| | Family | The family endpoint is used to download content for the widget | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
+| | Finance, Sports, Weather, Traffic, eSports | The WebXT endpoint is used to download content for all WebXT widgets. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
+| | Tips | The Tips endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
+| | | TLSv1.2/HTTPS/HTTP | https://www.msn.com/pcs/api/widget/newsplus/widget |
 |Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled. If you turn off traffic for this endpoint, the device will not use Cloud-based Protection.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender)|
 |||HTTPS/TLSv1.2|wdcp.microsoft.com|
 ||The following endpoints are used for Windows Defender SmartScreen reporting and notifications. If you turn off traffic for these endpoints, SmartScreen notifications will not appear.|HTTPS|*smartscreen-prod.microsoft.com|
