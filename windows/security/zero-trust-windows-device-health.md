@@ -27,11 +27,13 @@ The [Zero Trust Principles](https://www.microsoft.com/security/business/zero-tru
 
 The Zero Trust concept of **verify explicitly** applies to the risks introduced by both devices and users. Windows provides IT administrators the attestation and measurements to determine whether a device meets requirements and can be trusted. Microsoft Intune and Azure Active Directory can be used to manage and enforce access. Plus, IT Administrators can easily customize Windows to meet specific user and policy requirements for access, privacy, compliance, and more.
 
-Zero Trust moves enterprise defenses from static, network-based perimeters to focus on users, assets, and resources. Both [Conditional access](/azure/active-directory/conditional-access/overview) and Device health attestation are used to help grant access to corporate resources.
+**Device health attestation** and **conditional access** are used to grant access to corporate resources. This helps reinforce a Zero Trust paradigm that moves enterprise defenses from static, network- based perimeters to focus on users, assets, and resources.
 
-[Conditional access](/azure/active-directory/conditional-access/overview) evaluates identity signals to confirm that users are who they say they are. Access can then be allowed or blocked based on this information.
+[Conditional access](/azure/active-directory/conditional-access/overview) evaluates identity signals to confirm that users are who they say they are before they are granted access to corporate resources. 
 
-For devices, each device needs to prove that it hasn't been tampered with and is in a good state. Windows 11 supports remote attestation to help confirm device compliance. This helps users access corporate resources whether they’re in the office, at home, or when they’re traveling. This capability is critical part of enabling hybrid, modern work environment.
+Windows 11 supports device health attestation to confirm that devices are in a good state and have not been tampered with. This helps users access corporate resources whether they’re in the office, at home, or when they’re traveling.
+
+Attestation provides assurance of trust as it can verify the identity and status of essential components and that the device, firmware, and boot process has not been altered. Information about the firmware, boot process, and software, which is cryptographically stored in the security co-processor (TPM), is used to validate the security state of the device. Once the device is attested it can be granted access to resources.
 
 ## Device health attestation on Windows
  Many security risks can emerge during the boot process as this process can be the most privileged component of the whole system. Zero Trust principles state that all endpoints are untrusted unless they are verified. The verification process uses remote attestation as the secure channel to determine and present the device’s health. Remote attestation determines:
