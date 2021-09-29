@@ -104,13 +104,13 @@ The following methodology was used to derive the network endpoints:
 | | | HTTP | www.microsoft.com <br/>*.watson.telemetry.microsoft.com/telemetry.request  |
 | | | TLSv1.2/HTTPS | *.v10.events.data.microsoft.com <br/> *.telecommand.telemetry.microsoft.com <br/> *.co4.telecommand.telemetry.microsoft.com <br/> *.watson.telemetry.microsoft.com |
 | Widgets | To turn off a widget locally, right click on the widget to it unpin from the dashboard.<br/> Disable the connection point to turn off for an organization. <br/> See below for a list of available widgets.|TLSv1.2/HTTPS/HTTP | https://www.msn.com/pcs/api/widget/newsplus/widget |
-| | MSN news feed <br/> The Windows feeds endpoint on msn.com is used to download news headlines to the dashboard. |||
-| | Calendar <br/>  The calendar endpoint is used to download content for the widget. |||
-| | ToDo <br/> The ToDo endpoint is used to download content for the widget. |||
-| | Microsoft 365 recommendations <br/> The Microsoft 365 recommendations endpoint is used to download content for the widget. |||
-| | Photos <br/> The photos endpoint is used to download content for the widget. |||
-| | Family <br/> The family endpoint is used to download content for the widget. |||
-| | Finance, Sports, Weather, Traffic, eSports <br/> The WebXT endpoint is used to download content for all WebXT widgets. |||
+| | **MSN news feed** <br/> The Windows feeds endpoint on msn.com is used to download news headlines to the dashboard. |||
+| | **Calendar** <br/>  This endpoint downloads calender content for the widget. |||
+| | **ToDo** <br/> This endpoint downloads ToDo content for the widget. |||
+| | **Microsoft 365 recommendations** <br/> This endpoint downloads Microsoft 365 recommendations for the widget. |||
+| | **Photos** <br/> This endpoint downloads photo content for the widget. |||
+| | **Family** <br/> This endpoint downloads family content for the widget. |||
+| | **Finance, Sports, Weather, Traffic, eSports** <br/> The WebXT endpoint is used to download content for all WebXT widgets. |||
 |Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
 ||||wdcpalt.microsoft.com|
 |||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
