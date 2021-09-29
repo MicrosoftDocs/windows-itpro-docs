@@ -1,5 +1,5 @@
 ---
-title: Enable or block Windows Mixed Reality apps in the enterprise (Windows 10)
+title: Enable or block Windows Mixed Reality apps in the enterprise (Windows 10/11)
 description: Learn how to enable Windows Mixed Reality apps in WSUS or block the Windows Mixed Reality portal in enterprises.
 ms.reviewer: 
 manager: dansimp
@@ -15,37 +15,41 @@ ms.topic: article
 
 # Enable or block Windows Mixed Reality apps in enterprises
 
-**Applies to**
-
--   Windows 10
+[!INCLUDE [Applies to Windows client versions](./includes/applies-to-windows-client-versions.md)]
 
 
-[Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/) was introduced in Windows 10, version 1709 (also known as the Fall Creators Update), as a [Windows 10 Feature on Demand (FOD)](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). Features on Demand are Windows feature packages that can be added at any time. When a Windows 10 PC needs a new feature, it can request the feature package from Windows Update.
+[Windows Mixed Reality](https://blogs.windows.com/windowsexperience/2017/10/03/the-era-of-windows-mixed-reality-begins-october-17/) was introduced in Windows 10, version 1709 (also known as the Fall Creators Update), as a [Windows Feature on Demand (FOD)](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities). Features on Demand are Windows feature packages that can be added at any time. When a Windows client needs a new feature, it can request the feature package from Windows Update.
 
 Organizations that use Windows Server Update Services (WSUS) must take action to [enable Windows Mixed Reality](#enable-windows-mixed-reality-in-wsus). Any organization that wants to prohibit use of Windows Mixed Reality can [block the installation of the Mixed Reality Portal](#block-the-mixed-reality-portal).
 
 ## Enable Windows Mixed Reality in WSUS
 
-1. [Check your version of Windows 10.](https://support.microsoft.com/help/13443/windows-which-operating-system)
+1. [Check your version of Windows.](https://support.microsoft.com/help/13443/windows-which-operating-system)
 
    >[!NOTE]
    >You must be on at least Windows 10, version 1709, to run Windows Mixed Reality.
 
 2. Windows Mixed Reality Feature on Demand (FOD) is downloaded from Windows Update. If access to Windows Update is blocked, you must manually install the Windows Mixed Reality FOD.
 
-   1. Download the FOD .cab file for [Windows 10, version 2004](https://software-download.microsoft.com/download/pr/6cf73b63/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab), [Windows 10, version 1903 and 1909](https://software-download.microsoft.com/download/pr/Microsoft-Windows-Holographic-Desktop-FOD-Package-31bf3856ad364e35-amd64.cab), [Windows 10, version 1809](https://software-download.microsoft.com/download/pr/microsoft-windows-holographic-desktop-fod-package31bf3856ad364e35amd64_1.cab), [Windows 10, version 1803](https://download.microsoft.com/download/9/9/3/9934B163-FA01-4108-A38A-851B4ACD1244/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab), or [Windows 10, version 1709](https://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab).
+   1. Download the FOD .cab file:
 
-      > [!NOTE]
-      > You must download the FOD .cab file that matches your operating system version.
+        - [Windows 10, version 2004](https://software-download.microsoft.com/download/pr/6cf73b63/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab)
+        - [Windows 10, version 1903 and 1909](https://software-download.microsoft.com/download/pr/Microsoft-Windows-Holographic-Desktop-FOD-Package-31bf3856ad364e35-amd64.cab)
+        - [Windows 10, version 1809](https://software-download.microsoft.com/download/pr/microsoft-windows-holographic-desktop-fod-package31bf3856ad364e35amd64_1.cab)
+        - [Windows 10, version 1803](https://download.microsoft.com/download/9/9/3/9934B163-FA01-4108-A38A-851B4ACD1244/Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab)
+        - [Windows 10, version 1709](https://download.microsoft.com/download/6/F/8/6F816172-AC7D-4F45-B967-D573FB450CB7/Microsoft-Windows-Holographic-Desktop-FOD-Package.cab)
+
+        > [!NOTE]
+        > You must download the FOD .cab file that matches your operating system version.
 
    1. Use `Dism` to add Windows Mixed Reality FOD to the image.
 
-      ```powershell
-      Dism /Online /Add-Package /PackagePath:(path)
-      ```
+        ```powershell
+        Dism /Online /Add-Package /PackagePath:(path)
+        ```
       
-      > [!NOTE]
-      > You must rename the FOD .CAB file to : **Microsoft-Windows-Holographic-Desktop-FOD-Package\~31bf3856ad364e35\~amd64\~\~.cab**
+        > [!NOTE]
+        > You must rename the FOD .CAB file to : **Microsoft-Windows-Holographic-Desktop-FOD-Package\~31bf3856ad364e35\~amd64\~\~.cab**
 
    1. In **Settings** > **Update & Security** > **Windows Update**, select **Check for updates**.
 
