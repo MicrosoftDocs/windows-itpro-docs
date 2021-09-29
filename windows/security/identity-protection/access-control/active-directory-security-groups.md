@@ -2435,6 +2435,9 @@ Members of the Performance Log Users group can manage performance counters, logs
     > [!WARNING]
     > If you are a member of the Performance Log Users group, you must configure Data Collector Sets that you create to run under your credentials.
 
+    > [!NOTE]
+    > Windows Server 2016 or later, you cannot create Data Collector Sets by a member of the Performance Log Users group.
+    > If a member of the Performance Log Users group tries to create Data Collector Sets, they cannot complete creation because of Access Denied. 
 
 -   Cannot use the Windows Kernel Trace event provider in Data Collector Sets.
 
