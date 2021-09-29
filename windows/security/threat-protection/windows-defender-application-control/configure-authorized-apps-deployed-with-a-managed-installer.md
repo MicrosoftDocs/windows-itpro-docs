@@ -61,7 +61,6 @@ To turn on managed installer tracking, you must:
 
 - Create and deploy an AppLocker policy that defines your managed installer rules and enables services enforcement for executables and DLLs.
 - Enable AppLocker's Application Identity and AppLockerFltr services.
-- Enable managed installer trust in your WDAC policy.
 
 ### Create and deploy an AppLocker policy that defines your managed installer rules and enables services enforcement for executables and DLLs
 
@@ -93,7 +92,7 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
   
     ```xml
     <RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
-      <FilePathRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <FilePathRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Benign DENY Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
         <Conditions>
           <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.dll" />
         </Conditions>
@@ -105,7 +104,7 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
       </RuleCollectionExtensions>
     </RuleCollection>
     <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
-      <FilePathRule Id="9420c496-046d-45ab-bd0e-455b2649e41e" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+      <FilePathRule Id="9420c496-046d-45ab-bd0e-455b2649e41e" Name="Benign DENY Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
         <Conditions>
           <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.exe" />
         </Conditions>
@@ -114,105 +113,77 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
         <ThresholdExtensions>
           <Services EnforcementMode="Enabled" />
         </ThresholdExtensions>
-        <RedstoneExtensions>
-          <SystemApps Allow="Enabled"/>
-         </RedstoneExtensions>
       </RuleCollectionExtensions>
     </RuleCollection>
     ```
 
-4. Deploy your AppLocker managed installer configuration policy. You can either import your AppLocker policy and deploy with Group Policy or use a script to deploy the policy with the Set-AppLockerPolicy cmdlet. An example of a valid Managed Installer rule collection, using Microsoft Endpoint Config Manager (MEMCM), MEM (Intune), Powershell, and PowerShell ISE, is shown below. Remove any rules that you do not wish to designate as a Managed Installer.
+4. Verify your AppLocker policy. The following example shows a complete AppLocker policy that sets Microsoft Endpoint Config Manager (MEMCM)and Microsoft Endpoint Manager Intune as managed installers. Only those AppLocker rule collections that have actual rules defined are included in the final XML. This ensures the policy will merge successfully on devices which may already have an AppLocker policy in place.
 
-```xml
-<AppLockerPolicy Version="1">
-  <RuleCollection Type="Appx" EnforcementMode="NotConfigured" />
-  <RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
-    <FilePublisherRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Allow all" Description="Allow all" UserOrGroupSid="S-1-1-0" Action="Allow">
-      <Conditions>
-        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
-  <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
-    <FilePublisherRule Id="9420c496-046d-45ab-bd0e-455b2649e41e" Name="Allow all" Description="Allow all" UserOrGroupSid="S-1-1-0" Action="Allow">
-      <Conditions>
-        <FilePublisherCondition PublisherName="*" ProductName="*" BinaryName="*">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
-  <RuleCollection Type="Msi" EnforcementMode="NotConfigured" />
-  <RuleCollection Type="Script" EnforcementMode="NotConfigured" />
-  <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
-    <FilePublisherRule Id="55932f09-04b8-44ec-8e2d-3fc736500c56" Name="MICROSOFT.MANAGEMENT.SERVICES.INTUNEWINDOWSAGENT.EXE version 1.39.200.2 or greater in MICROSOFTÂ® INTUNEâ„¢ from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="MICROSOFTÂ® INTUNEâ„¢" BinaryName="MICROSOFT.MANAGEMENT.SERVICES.INTUNEWINDOWSAGENT.EXE">
-          <BinaryVersionRange LowSection="1.39.200.2" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-      <FilePublisherRule Id="6ead5a35-5bac-4fe4-a0a4-be8885012f87" Name="CMM - CCMEXEC.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
-        <Conditions>
-          <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="CCMEXEC.EXE">
-            <BinaryVersionRange LowSection="5.0.0.0" HighSection="*" />
-          </FilePublisherCondition>
+    ```xml
+    <AppLockerPolicy Version="1">
+      <RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
+        <FilePathRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Benign DENY Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+          <Conditions>
+            <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.dll" />
+          </Conditions>
+        </FilePathRule>
+        <RuleCollectionExtensions>
+          <ThresholdExtensions>
+            <Services EnforcementMode="Enabled" />
+          </ThresholdExtensions>
+        </RuleCollectionExtensions>
+      </RuleCollection>
+      <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
+        <FilePathRule Id="9420c496-046d-45ab-bd0e-455b2649e41e" Name="Benign DENY Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
+          <Conditions>
+            <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.exe" />
+          </Conditions>
+        </FilePathRule>
+        <RuleCollectionExtensions>
+          <ThresholdExtensions>
+            <Services EnforcementMode="Enabled" />
+          </ThresholdExtensions>
+        </RuleCollectionExtensions>
+      </RuleCollection>
+      <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
+        <FilePublisherRule Id="55932f09-04b8-44ec-8e2d-3fc736500c56" Name="MICROSOFT.MANAGEMENT.SERVICES.INTUNEWINDOWSAGENT.EXE version 1.39.200.2 or greater in MICROSOFT® INTUNE™ from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+          <Conditions>
+              <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="MICROSOFT.MANAGEMENT.SERVICES.INTUNEWINDOWSAGENT.EXE">
+                <BinaryVersionRange LowSection="1.39.200.2" HighSection="*" />
+              </FilePublisherCondition>
         </Conditions>
-      </FilePublisherRule>
-    <FilePublisherRule Id="8e23170d-e0b7-4711-b6d0-d208c960f30e" Name="CCM - CCMSETUP.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="CCMSETUP.EXE">
-          <BinaryVersionRange LowSection="5.0.0.0" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="a8cb325e-b26e-4f52-b528-a137764cae42" Name="POWERSHELL.EXE, version 10.0.0.0 and above, in MICROSOFTÂ® WINDOWSÂ® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="POWERSHELL.EXE">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-    <FilePublisherRule Id="a8cb325e-b26e-4f52-b528-a137764cae54" Name="POWERSHELL_ISE.EXE, version 10.0.0.0 and above, in MICROSOFTÂ® WINDOWSÂ® OPERATING SYSTEM, from O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
-      <Conditions>
-        <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="POWERSHELL_ISE.EXE">
-          <BinaryVersionRange LowSection="*" HighSection="*" />
-        </FilePublisherCondition>
-      </Conditions>
-    </FilePublisherRule>
-  </RuleCollection>
-</AppLockerPolicy>
-```
+        </FilePublisherRule>
+        <FilePublisherRule Id="6ead5a35-5bac-4fe4-a0a4-be8885012f87" Name="CMM - CCMEXEC.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+          <Conditions>
+            <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="CCMEXEC.EXE">
+              <BinaryVersionRange LowSection="5.0.0.0" HighSection="*" />
+            </FilePublisherCondition>
+          </Conditions>
+        </FilePublisherRule>
+        <FilePublisherRule Id="8e23170d-e0b7-4711-b6d0-d208c960f30e" Name="CCM - CCMSETUP.EXE, 5.0.0.0+, Microsoft signed" Description="" UserOrGroupSid="S-1-1-0" Action="Allow">
+          <Conditions>
+            <FilePublisherCondition PublisherName="O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US" ProductName="*" BinaryName="CCMSETUP.EXE">
+              <BinaryVersionRange LowSection="5.0.0.0" HighSection="*" />
+              </FilePublisherCondition>
+            </Conditions>
+          </FilePublisherRule>
+        </RuleCollection>
+      </AppLockerPolicy>
+      ```
 
-## Set the AppLocker filter driver to autostart
+5. Deploy your AppLocker managed installer configuration policy. You can either import your AppLocker policy and deploy with Group Policy or use a script to deploy the policy with the Set-AppLockerPolicy cmdlet as shown in the following PowerShell command.
 
-To enable the managed installer, you need to set the AppLocker filter driver to autostart, and start it.
+   ```powershell
+   Set-AppLockerPolicy -XmlPolicy <AppLocker XML FilePath> -Merge -ErrorAction SilentlyContinue
+   ```
 
-To do so, run the following command as an Administrator:
+6. If deploying your AppLocker policy via script, use appidtel.exe to configure the AppLocker Application Identity service and AppLocker filter driver.
 
-```console
-appidtel.exe start [-mionly]
-```
-
-Specify "-mionly" if you will not use the Intelligent Security Graph (ISG).
+    ```console
+    appidtel.exe start [-mionly]
+    ```
+  
+    Specify "-mionly" if you don't plan to use the Intelligent Security Graph (ISG).
 
 ## Enable the managed installer option in WDAC policy
 
@@ -237,67 +208,11 @@ Below are steps to create a WDAC policy that allows Windows to boot and enables 
     Set-RuleOption -FilePath <XML filepath> -Option 13
     ```
 
+4. Deploy your WDAC policy. See [Deploying Windows Defender Application Control (WDAC) policies](windows-defender-application-control-deployment-guide.md).
+
 > [!NOTE]
 > Your WDAC policy must include rules for all system/boot components, kernel drivers, and any other authorized applications that can't be deployed through a managed installer.
 
-## Using fsutil to query SmartLocker EA
+## Related articles
 
-Customers using Windows Defender Application Control (WDAC) with Managed Installer (MI) or Intelligent Security Graph enabled can use fsutil to determine whether a file was allowed to run by one of these features. This can be achieved by querying the EAs on a file using fsutil and looking for the KERNEL.SMARTLOCKER.ORIGINCLAIM EA. The presence of this EA indicates that either MI or ISG allowed the file to run. This can be used in conjunction with enabling the MI and ISG logging events.
-
-**Example:**
-
-```powershell
-fsutil file queryEA C:\Users\Temp\Downloads\application.exe
-
-Extended Attributes (EA) information for file C:\Users\Temp\Downloads\application.exe:
-
-Ea Buffer Offset: 410
-Ea Name: $KERNEL.SMARTLOCKER.ORIGINCLAIM
-Ea Value Length: 7e
-0000: 01 00 00 00 01 00 00 00 00 00 00 00 01 00 00 00 ................
-0010: b2 ff 10 66 bc a8 47 c7 00 d9 56 9d 3d d4 20 2a ...f..G...V.=. *
-0020: 63 a3 80 e2 d8 33 8e 77 e9 5c 8d b0 d5 a7 a3 11 c....3.w.\......
-0030: 83 00 00 00 00 00 00 00 5c 00 00 00 43 00 3a 00 ........\...C.:.
-0040: 5c 00 55 00 73 00 65 00 72 00 73 00 5c 00 6a 00 \.U.s.e.r.s.\.T.
-0050: 6f 00 67 00 65 00 75 00 72 00 74 00 65 00 2e 00 e.m.p..\D.o.w.n...
-0060: 52 00 45 00 44 00 4d 00 4f 00 4e 00 44 00 5c 00 l.o.a.d.\a.p.p.l.
-0070: 44 00 6f 00 77 00 6e 00 6c 00 6f 00 61 00 64 i.c.a.t.i.o.n..e.x.e
-```
-
-## Enabling managed installer logging events
-
-Refer to [Understanding Application Control Events](event-id-explanations.md#optional-intelligent-security-graph-isg-or-managed-installer-mi-diagnostic-events) for information on enabling optional managed installer diagnostic events.
-
-## Deploying the Managed Installer rule collection
-
-Once you've completed configuring your chosen Managed Installer, by specifying which option to use in the AppLocker policy, enabling the service enforcement of it, and by enabling the Managed Installer option in a WDAC policy, you'll need to deploy it.
-
-1. Use the following command to deploy the policy.
-
-   ```powershell
-   $policyFile=
-   @"
-   Raw_AppLocker_Policy_XML
-   "@
-   Set-AppLockerPolicy -XmlPolicy $policyFile -Merge -ErrorAction SilentlyContinue
-   ```
-
-2. Verify Deployment of the ruleset was successful
-
-   ```powershell
-   Get-AppLockerPolicy -Local
-   
-   Version RuleCollections RuleCollectionTypes
-   ------- --------------- -------------------
-   1 {0, 0, 0, 0...} {Appx, Dll, Exe, ManagedInstaller...}
-   ```
-
-   Verify the output shows the ManagedInstaller rule set.
-
-3. Get the policy XML (optional) using PowerShell:
-
-   ```powershell
-   Get-AppLockerPolicy -Effective -Xml -ErrorVariable ev -ErrorAction SilentlyContinue
-   ```
-
-   This command will show the raw XML to verify the individual rules that were set.
+- [Managed installer and ISG technical reference and troubleshooting guide](configure-wdac-managed-installer.md)
