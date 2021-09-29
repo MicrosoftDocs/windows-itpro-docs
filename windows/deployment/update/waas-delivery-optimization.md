@@ -21,7 +21,8 @@ ms.custom: seo-marvel-apr2020
 
 **Applies to**
 
-- Windows 10
+-   Windows 10
+-   Windows 11
 
 > **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the [Download Center](https://www.microsoft.com/download/details.aspx?id=102158).
 
