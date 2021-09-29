@@ -37,7 +37,7 @@ When you purchase Windows 10/11 Enterprise E3 via a partner, you get the follo
 -   **Windows 10/11 Enterprise edition**. Devices currently running Windows 10 Pro or Windows 11 Pro can get Windows 10/11 Enterprise Current Branch (CB) or Current Branch for Business (CBB). This benefit does not include Long Term Service Branch (LTSB).
 -   **Support from one to hundreds of users**. Although the Windows 10/11 Enterprise E3 in CSP program does not have a limitation on the number of licenses an organization can have, the program is designed for small- and medium-sized organizations.
 -   **Deploy on up to five devices**. For each user covered by the license, you can deploy Windows 10 Enterprise edition on up to five devices.
--   **Roll back to Windows 10 Pro at any time**. When a user’s subscription expires or is transferred to another user, the Windows 10/11 Enterprise device reverts seamlessly to Windows 10/11 Pro edition (after a grace period of up to 90 days).
+-   **Roll back to Windows 10/11 Pro at any time**. When a user’s subscription expires or is transferred to another user, the Windows 10/11 Enterprise device reverts seamlessly to Windows 10/11 Pro edition (after a grace period of up to 90 days).
 -   **Monthly, per-user pricing model**. This makes Windows 10/11 Enterprise E3 affordable for any organization.
 -   **Move licenses between users**. Licenses can be quickly and easily reallocated from one user to another user, allowing you to optimize your licensing investment against changing needs.
 
