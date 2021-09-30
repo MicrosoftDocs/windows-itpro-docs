@@ -23,8 +23,12 @@ Applies to:
 - Windows 10
 - Windows 11
 
-Starting with Windows 10, version 1703 Windows 10 Pro supports the Subscription Activation feature, enabling users to “step-up” from Windows 10 Pro or Windows 11 Pro to **Windows 10 Enterprise** or **Windows 11 Enterprise**, respectively, if they are subscribed to Windows 10/11 Enterprise E3 or E5.
+> [!NOTE]
+> The Subscription Activation feature is available for qualifying devices running Windows 10 or Windows 11. This feature enables you to "step-up" from a Pro edition to the Enterprise or Education edition of Windows client. You cannot use Subscripton Activation to upgrade from Windows 10 to Windows 11, for example. The operating system version does not change when you switch to Enterprise edition.
 
+Starting with Windows 10, version 1703, Windows 10 Pro supports the Subscription Activation feature, enabling users to “step-up” from Windows 10 Pro or Windows 11 Pro to **Windows 10 Enterprise** or **Windows 11 Enterprise**, respectively, if they are subscribed to Windows 10/11 Enterprise E3 or E5.
+
+**Education edition**<br>
 With Windows 10, version 1903 and later, the Subscription Activation feature also supports the ability to step-up from Windows 10 Pro Education or Windows 11 Pro Education to the Enterprise grade editions for educational institutions—**Windows 10 Education** or **Windows 11 Education**.
 
 The Subscription Activation feature eliminates the need to manually deploy Enterprise or Education edition images on each target device, then later standing up on-prem key management services such as KMS or MAK based activation, entering Generic Volume License Keys (GVLKs), and subsequently rebooting client devices.
@@ -52,9 +56,6 @@ With Windows 10, version 1703 and later both Windows 10/11 Enterprise E3 and Win
 - Product key-based Windows 10 Enterprise or Windows 11 Enterpise software licenses can be transitioned to Windows 10 Enterprise and Windows 11 Enterprise subscriptions.
 
 Organizations that have an Enterprise agreement can also benefit from the new service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Azure AD using [Azure AD Connect Sync](/azure/active-directory/connect/active-directory-aadconnectsync-whatis).
-
-> [!NOTE]
-> You cannot use Subscripton Activation to upgrade from Windows 10 to Windows 11. The operating system version does not change when you switch to Enterprise edition.
 
 ## Subscription Activation for Education
 
