@@ -1,7 +1,7 @@
 ---
-title: Configure VDA for Windows 10 Subscription Activation
+title: Configure VDA for Windows 10/11 Subscription Activation
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
 ms.author: greglin
 author: greg-lindsay
@@ -18,7 +18,11 @@ ms.topic: article
 ms.collection: M365-modern-desktop
 ---
 
-# Configure VDA for Windows 10 Subscription Activation
+# Configure VDA for Windows 10/11 Subscription Activation
+
+Applies to:
+- Windows 10
+- Windows 11
 
 This document describes how to configure virtual machines (VMs) to enable [Windows 10/11 Subscription Activation](windows-10-subscription-activation.md) in a Windows Virtual Desktop Access (VDA) scenario. Windows VDA is a device or user-based licensing mechanism for managing access to virtual desktops.
 
@@ -29,17 +33,18 @@ Deployment instructions are provided for the following scenarios:
 
 ## Requirements
 
-- VMs must be running Windows 10 Pro, version 1703 (also known as the Creator's Update) or later. 
+- VMs must be running Windows 10 Pro, version 1703 or later (Windows 11 is "later"). 
 - VMs must be Active Directory-joined or Azure Active Directory (AAD)-joined.
-- VMs must be generation 1.
-- VMs must be hosted by a [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
+- VMs must be hosted by a Qualified Multitenant Hoster (QMTH). 
+    - For more information, see (Qualified Multitenant Hoster (QMTH)
+Program)[https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf]
 
 ## Activation
 
 ### Scenario 1
 
-- The VM is running Windows 10, version 1803 or later.
-- The VM is hosted in Azure or another [Qualified Multitenant Hoster](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) (QMTH).
+- The VM is running Windows 10, version 1803 or later (ex: Windows 11).
+- The VM is hosted in Azure or another Qualified Multitenant Hoster (QMTH).
 
     When a user with VDA rights signs in to the VM using their AAD credentials, the VM is automatically stepped-up to Enterprise and activated. There is no need to perform Windows 10 Pro activation. This eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
 
@@ -51,9 +56,9 @@ Deployment instructions are provided for the following scenarios:
 
 ### Scenario 3
 
-- The VM is running Windows 10, version 1703 or 1709, or the hoster is not an authorized [QMTH](https://www.microsoft.com/en-us/CloudandHosting/licensing_sca.aspx) partner.
+- The VM is running Windows 10, version 1703 or 1709, or the hoster is not an authorized [QMTH](https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf) partner.
 
-    In this scenario, the underlying Windows 10 Pro license must be activated prior to Subscription Activation of Windows 10 Enterprise. Activation is accomplished using a Windows 10 Pro Generic Volume License Key (GVLK) and a Volume License KMS activation server provided by the hoster. Alternatively, a KMS activation server can be used. KMS activation is provided for Azure VMs. For more information, see [Troubleshoot Azure Windows virtual machine activation problems](/azure/virtual-machines/troubleshooting/troubleshoot-activation-problems).
+    In this scenario, the underlying Windows 10/11 Pro license must be activated prior to Subscription Activation of Windows 10/11 Enterprise. Activation is accomplished using a Generic Volume License Key (GVLK) and a Volume License KMS activation server provided by the hoster. Alternatively, a KMS activation server can be used. KMS activation is provided for Azure VMs. For more information, see [Troubleshoot Azure Windows virtual machine activation problems](/azure/virtual-machines/troubleshooting/troubleshoot-activation-problems).
 
 For examples of activation issues, see [Troubleshoot the user experience](./deploy-enterprise-licenses.md#troubleshoot-the-user-experience).
 
@@ -147,6 +152,6 @@ To create custom RDP settings for Azure:
 
 ## Related topics
 
-[Windows 10 Subscription Activation](windows-10-subscription-activation.md)
+[Windows 10/11 Subscription Activation](windows-10-subscription-activation.md)
 <BR>[Recommended settings for VDI desktops](/windows-server/remote/remote-desktop-services/rds-vdi-recommendations)
 <BR>[Licensing the Windows Desktop for VDI Environments](https://download.microsoft.com/download/1/1/4/114A45DD-A1F7-4910-81FD-6CAF401077D0/Microsoft%20VDI%20and%20VDA%20FAQ%20v3%200.pdf)
