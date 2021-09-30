@@ -1,5 +1,5 @@
 ---
-title: Performance Guidance for Application Virtualization (Windows 10)
+title: Performance Guidance for Application Virtualization (Windows 10/11)
 description: Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -15,11 +15,13 @@ ms.author: greglin
 
 # Performance Guidance for Application Virtualization
 
-**Applies to**
--   Windows 7 SP1
--   Windows 10 
--   Server 2012 R2
--   Server 2016
+**Applies to**:
+
+- Windows 7 SP1
+- Windows 10 
+- Windows 11
+- Server 2012 R2
+- Server 2016
 
 Learn how to configure App-V for optimal performance, optimize virtual app packages, and provide a better user experience with RDS and VDI.
 
@@ -270,11 +272,11 @@ We recommend using User Experience Virtualization (UE-V) to capture and centrali
 
 For more information, see:
 
-- [User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows)
+- [User Experience Virtualization (UE-V) for Windows client overview](/windows/configuration/ue-v/uev-for-windows)
 
 - [Get Started with UE-V](/windows/configuration/ue-v/uev-getting-started)
 
-In essence all that is required is to enable the UE-V service and download the following Microsoft authored App-V settings template from the [Microsoft User Experience Virtualization (UE-V) template gallery](https://gallery.technet.microsoft.com/Authored-UE-V-Settings-bb442a33). Register the template. For more information about UE-V templates, see [User Experience Virtualization (UE-V) for Windows 10 overview](/windows/configuration/ue-v/uev-for-windows).
+In essence all that is required is to enable the UE-V service and download the following Microsoft authored App-V settings template from the [Microsoft User Experience Virtualization (UE-V) template gallery](https://gallery.technet.microsoft.com/Authored-UE-V-Settings-bb442a33). Register the template. For more information about UE-V templates, see [User Experience Virtualization (UE-V) for Windows client overview](/windows/configuration/ue-v/uev-for-windows).
 
 **Note**  
 Without performing an additional configuration step, User Environment Virtualization (UE-V) will not be able to synchronize the Start menu shortcuts (.lnk files) on the target computer. The .lnk file type is excluded by default.
