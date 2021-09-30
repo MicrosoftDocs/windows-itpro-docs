@@ -28,7 +28,7 @@ ms.technology: mde
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 The Windows Defender Application Control (WDAC) policy Wizard is an open-source Windows desktop application written in C# and bundled as an MSIX package. The Wizard was built to provide security architects with security, and system administrators with a more user-friendly means to create, edit, and merge WDAC policies. The Wizard desktop application uses the [ConfigCI PowerShell Cmdlets](/powershell/module/configci) in the backend so the output policy of the Wizard and PowerShell cmdlets is identical.
 

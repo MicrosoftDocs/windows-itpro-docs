@@ -16,9 +16,10 @@ ms.topic: article
 
 # Add or hide features on the Windows client OS
 
-> Applies to:
-> 
-> - Windows 10
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 The Windows client operating systems include more features that you and your users can install. These features are called [Features on Demand](/windows-hardware/manufacture/desktop/features-on-demand-v2--capabilities) (opens another Microsoft web site), and can be installed at any time. On your organization-owned devices, you may want to control access to these other features.
 
