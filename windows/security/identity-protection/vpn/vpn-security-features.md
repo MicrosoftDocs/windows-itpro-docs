@@ -1,5 +1,5 @@
 ---
-title: VPN security features (Windows 10)
+title: VPN security features (Windows 10 and Windows 11)
 description: Learn about security features for VPN, including LockDown VPN, Windows Information Protection integration with VPN, and traffic filters.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security, networking
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 09/03/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -17,14 +17,14 @@ ms.author: dansimp
 
 **Applies to**
 - Windows 10
-- Windows 10 Mobile
+- Windows 11
 
 
 ## Windows Information Protection (WIP) integration with VPN
 
 Windows Information Protection provides capabilities allowing the separation and protection of enterprise data against disclosure across both company and personally owned devices, without requiring additional changes to the environments or the apps themselves. Additionally, when used with Rights Management Services (RMS), WIP can help to protect enterprise data locally.
 
-The **EdpModeId** node in the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp) allows a Windows 10 VPN client to integrate with WIP, extending its functionality to remote devices. Use case scenarios for WIP include:
+The **EdpModeId** node in the [VPNv2 Configuration Service Provider (CSP)](/windows/client-management/mdm/vpnv2-csp) allows a Windows 10 or Windows 11 VPN client to integrate with WIP, extending its functionality to remote devices. Use case scenarios for WIP include:
 
 - Core functionality: File encryption and file access blocking
 - UX policy enforcement: Restricting copy/paste, drag/drop, and sharing operations

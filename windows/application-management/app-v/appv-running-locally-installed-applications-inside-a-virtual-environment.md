@@ -1,5 +1,5 @@
 ---
-title: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications (Windows 10)
+title: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications (Windows 10/11)
 description: Running a Locally Installed Application Inside a Virtual Environment with Virtualized Applications
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -18,6 +18,7 @@ ms.author: greglin
 **Applies to**
 -   Windows 7 SP1
 -   Windows 10
+- Windows 11
 -   Windows Server 2012 R2
 -   Windows Server 2016
 

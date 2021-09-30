@@ -4,10 +4,18 @@
   items:
     - name: Windows 11
       items:
-        - name: Start menu layout
-          href: customize-start-menu-layout-windows-11.md
-        - name: Supported Start menu CSPs
-          href: supported-csp-start-menu-layout-windows.md
+        - name: Start menu
+          items:
+          - name: Customize Start menu layout
+            href: customize-start-menu-layout-windows-11.md
+          - name: Supported Start menu CSPs
+            href: supported-csp-start-menu-layout-windows.md
+        - name: Taskbar
+          items:
+          - name: Customize Taskbar
+            href: customize-taskbar-windows-11.md
+          - name: Supported Taskbar CSPs
+            href: supported-csp-taskbar-windows.md
     - name: Windows 10 Start and taskbar
       items:
         - name: Start layout and taskbar
@@ -54,16 +62,14 @@
       href: kiosk-methods.md
     - name: Prepare a device for kiosk configuration
       href: kiosk-prepare.md
-    - name: Set up digital signs on Windows 10
+    - name: Set up digital signs
       href: setup-digital-signage.md
     - name: Set up a single-app kiosk
       href: kiosk-single-app.md
     - name: Set up a multi-app kiosk
       href: lock-down-windows-10-to-specific-apps.md
-    - name: Set up a shared or guest PC with Windows 10
+    - name: Set up a shared or guest PC
       href: set-up-shared-or-guest-pc.md
-    - name: Set up a kiosk on Windows 10 Mobile 
-      href: mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md 
     - name: Kiosk reference information
       items:
         - name: More kiosk methods and reference information
@@ -80,9 +86,9 @@
           href: kiosk-xml.md
         - name: Use AppLocker to create a Windows 10 kiosk
           href: lock-down-windows-10-applocker.md
-        - name: Use Shell Launcher to create a Windows 10 kiosk
+        - name: Use Shell Launcher to create a Windows client kiosk
           href: kiosk-shelllauncher.md
-        - name: Use MDM Bridge WMI Provider to create a Windows 10 kiosk
+        - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
           href: kiosk-mdm-bridge.md
         - name: Troubleshoot kiosk mode issues
           href: kiosk-troubleshoot.md
