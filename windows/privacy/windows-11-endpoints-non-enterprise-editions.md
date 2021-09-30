@@ -66,9 +66,9 @@ The following methodology was used to derive the network endpoints:
 |||HTTPS/HTTP|ecn.dev.virtualearth.net|
 |||HTTPS/HTTP|ssl.bing.com|
 |Microsoft Account|The following endpoints are used for Microsoft accounts to sign in|TLSv1.2/HTTPS/HTTP|*login.live.com|
-|Microsoft Edge|The following endpoints are used for Microsoft Edge Browser Services. <br/>This encapsulates all network traffic that supports edge. Edge cannot contact the outside world and thus ceases to function other than as a local PDF viewer.|HTTPS/HTTP|edge.activity.windows.com|
+|Microsoft Edge| <br/>This network traffic is related to the Microsoft Edge browser. The Microsoft Edge browser requires this endpoint to contact external websites.|HTTPS/HTTP|edge.activity.windows.com|
 |||HTTPS/HTTP|edge.microsoft.com|
-|Microsoft Edge|The following endpoint is used by Microsoft Edge Update service to check for new updates. <br/>This encapsulates all network traffic that supports edge. Edge cannot contact the outside world and thus ceases to function other than as a local PDF viewer.|HTTPS/HTTP|msedge.api.cdp.microsoft.com|
+|Microsoft Edge|The following endpoint is used by Microsoft Edge Update service to check for new updates. If you disable this endpoint, Microsoft Edge won’t be able to check for and apply new edge updates.|HTTPS/HTTP|msedge.api.cdp.microsoft.com|
 |Microsoft Store|The following endpoint is used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps)|TLSv1.2/HTTPS/HTTP|img-prod-cms-rt-microsoft-com.akamaized.net|
 ||The following endpoint is used for the Windows Push Notification Services (WNS). WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to your users in a power-efficient and dependable way.|TLSv1.2/HTTPS|*.wns.windows.com|
 ||The following endpoint is used to revoke licenses for malicious apps in the Microsoft Store.|TLSv1.2/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
@@ -100,18 +100,7 @@ The following methodology was used to derive the network endpoints:
 |Skype|The following endpoint is used to retrieve Skype configuration values.|TLSv1.2/HTTPS/HTTP|*.pipe.aria.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
-| Teams Chat integration with Windows  | The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. <br/>If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.  | | |
-| | | HTTP | www.microsoft.com <br/>*.watson.telemetry.microsoft.com/telemetry.request  |
-| | | TLSv1.2/HTTPS | *.v10.events.data.microsoft.com <br/> *.telecommand.telemetry.microsoft.com <br/> *.co4.telecommand.telemetry.microsoft.com <br/> *.watson.telemetry.microsoft.com |
-| Widgets | To turn off a widget locally, right click on the widget to remove it from the widgets board.<br/> Disable the connection point to turn off for an organization. <br/> See below for a list of available widgets.|TLSv1.2/HTTPS/HTTP | https://www.msn.com/pcs/api/widget/newsplus/widget |
-| | **MSN news feed** <br/> The Windows feeds endpoint on msn.com is used to download news headlines to the dashboard. |||
-| | **Calendar** <br/>  This endpoint downloads calender content for the widget. |||
-| | **ToDo** <br/> This endpoint downloads ToDo content for the widget. |||
-| | **Microsoft 365 recommendations** <br/> This endpoint downloads Microsoft 365 recommendations for the widget. |||
-| | **Photos** <br/> This endpoint downloads photo content for the widget. |||
-| | **Family** <br/> This endpoint downloads family content for the widget. |||
-| | **Finance, Sports, Weather, Traffic, eSports** <br/> The WebXT endpoint is used to download content for all WebXT widgets. |||
-|Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
+|Microsoft Defender Antivirus|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
 ||||wdcpalt.microsoft.com|
 |||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
 |||TLSv1.2|definitionupdates.microsoft.com|
@@ -153,7 +142,7 @@ The following methodology was used to derive the network endpoints:
 |Licensing|The following endpoint is used for online activation and some app licensing.|HTTPS/HTTP|*licensing.mp.microsoft.com|
 |Maps|The following endpoints are used to check for updates to maps that have been downloaded for offline use.|HTTPS/HTTP|maps.windows.com|
 |Microsoft Account|The following endpoints are used for Microsoft accounts to sign in. |TLSv1.2/HTTPS/HTTP|*login.live.com|
-|Microsoft Edge|The following endpoint is used by Microsoft Edge Update service to check for new updates. <br/>This encapsulates all network traffic that supports edge. Edge cannot contact the outside world and thus ceases to function other than as a local PDF viewer. |HTTPS/HTTP|msedge.api.cdp.microsoft.com|
+|Microsoft Edge|The following endpoint is used by Microsoft Edge Update service to check for new updates. If you disable this endpoint, Microsoft Edge won’t be able to check for and apply new edge updates. |HTTPS/HTTP|msedge.api.cdp.microsoft.com|
 |Microsoft Store|The following endpoint is used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps)|TLSv1.2/HTTPS/HTTP|img-prod-cms-rt-microsoft-com.akamaized.net|
 ||The following endpoint is used for the Windows Push Notification Services (WNS). WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to your users in a power-efficient and dependable way.|TLSv1.2/HTTPS|*.wns.windows.com|
 ||The following endpoint is used to revoke licenses for malicious apps in the Microsoft Store.|TLSv1.2/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
@@ -182,19 +171,7 @@ The following methodology was used to derive the network endpoints:
 |Skype|The following endpoint is used to retrieve Skype configuration values.|TLSv1.2/HTTPS/HTTP|*.pipe.aria.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
-| Teams Chat integration with Windows | The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. <br/>If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.| | |
-|||HTTP|www.microsoft.com <br/>*.watson.telemetry.microsoft.com/telemetry.request|
-|||TLSv1.2/HTTPS| *.v10.events.data.microsoft.com <br/> *.telecommand.telemetry.microsoft.com <br/> *.co4.telecommand.telemetry.microsoft.com <br/> *.watson.telemetry.microsoft.com|
-|Widgets|||How to turn off |
-||MSN news feed |The windows feeds endpoint on msn.com is used to download news headlines to the dashboard.|Sign out of dashboard|
-||Calendar|The calendar endpoint is used to download content for the widget.|Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization.|
-||ToDo|The ToDo endpoint is used to download content for the widget.|Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization.|
-||Microsoft 365 recommendations|The Microsoft 365 recommendations endpoint is used to download content for the widget.|Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization.|
-||Photos|The photos endpoint is used to download content for the widget.|Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization.|
-||Family|The family endpoint is used to download content for the widget.|Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization.|
-||Finance, Sports, Weather, Traffic, eSports|The WebXT endpoint is used to download content for all WebXT widgets.|Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization.|
-|||TLSv1.2/HTTPS/HTTP|https://www.msn.com/pcs/api/widget/newsplus/widget|
-|Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
+|Microsoft Defender Antivirus|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
 ||||wdcpalt.microsoft.com|
 |||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
 ||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|
@@ -236,7 +213,7 @@ The following methodology was used to derive the network endpoints:
 |Location|The following endpoints are used for location data.|TLSV1.2|inference.location.live.net|
 |Maps|The following endpoints are used to check for updates to maps that have been downloaded for offline use.|HTTPS/HTTP|maps.windows.com|
 |Microsoft Account|The following endpoints are used for Microsoft accounts to sign in|TLSv1.2/HTTPS/HTTP|*login.live.com|
-|Microsoft Edge|The following endpoint is used by Microsoft Edge Update service to check for new updates. <br/>This encapsulates all network traffic that supports edge. Edge cannot contact the outside world and thus ceases to function other than as a local PDF viewer.|HTTPS/HTTP|msedge.api.cdp.microsoft.com|
+|Microsoft Edge|The following endpoint is used by Microsoft Edge Update service to check for new updates. If you disable this endpoint, Microsoft Edge won’t be able to check for and apply new edge updates.|HTTPS/HTTP|msedge.api.cdp.microsoft.com|
 |Microsoft Store|The following endpoint is used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps)|TLSv1.2/HTTPS/HTTP|img-prod-cms-rt-microsoft-com.akamaized.net|
 ||The following endpoint is used for the Windows Push Notification Services (WNS). WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to your users in a power-efficient and dependable way.|TLSv1.2/HTTPS|*.wns.windows.com|
 ||The following endpoint is used to revoke licenses for malicious apps in the Microsoft Store.|TLSv1.2/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
@@ -257,19 +234,7 @@ The following methodology was used to derive the network endpoints:
 |Skype|The following endpoint is used to retrieve Skype configuration values.|TLSv1.2/HTTPS/HTTP|*.pipe.aria.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
-| Teams Chat integration with Windows  | The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. <br/>If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft. | | |
-| | | HTTP | www.microsoft.com <br/>*.watson.telemetry.microsoft.com/telemetry.request  |
-| | | TLSv1.2/HTTPS | *.v10.events.data.microsoft.com <br/> *.telecommand.telemetry.microsoft.com <br/> *.co4.telecommand.telemetry.microsoft.com <br/> *.watson.telemetry.microsoft.com |
-| Widgets | | | How to turn off  |
-| | MSN news feed | The windows feeds endpoint on msn.com is used to download news headlines to the dashboard. | Sign out of dashboard |
-| | Calendar | The calendar endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | ToDo | The ToDo endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | Microsoft 365 recommendations | The Microsoft 365 recommendations endpoint is used to download content for the widget.| Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | Photos | The photos endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | Family | The family endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | Finance, Sports, Weather, Traffic, eSports | The WebXT endpoint is used to download content for all WebXT widgets. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | | TLSv1.2/HTTPS/HTTP | https://www.msn.com/pcs/api/widget/newsplus/widget |
-|Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
+|Microsoft Defender Antivirus|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
 ||||wdcpalt.microsoft.com|
 |||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
 ||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|

@@ -79,7 +79,7 @@ The following methodology was used to derive these network endpoints:
 |Microsoft Account|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-microsoft-account)|
 ||The following endpoints are used for Microsoft accounts to sign in. If you turn off traffic for these endpoints, users cannot sign in with Microsoft accounts. |TLSv1.2/HTTPS|login.live.com|
 |Microsoft Edge|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#13-microsoft-edge)|
-||This traffic is related to the Microsoft Edge browser. This encapsulates all network traffic that supports edge. Edge cannot contact the outside world and thus ceases to function other than as a local PDF viewer.|HTTPS|iecvlist.microsoft.com|
+||This network traffic is related to the Microsoft Edge browser. The Microsoft Edge browser requires this endpoint to contact external websites.|HTTPS|iecvlist.microsoft.com|
 ||The following endpoint is used by Microsoft Edge Update service to check for new updates. If you disable this endpoint, Microsoft Edge won’t be able to check for and apply new edge updates.|TLSv1.2/HTTPS/HTTP|msedge.api.cdp.microsoft.com|
 |Microsoft Store|||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 ||The following endpoint is used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps). If you turn off traffic for these endpoints, the image files won't be downloaded, and apps cannot be installed or updated from the Microsoft Store. Additionally, the Microsoft Store won't be able to revoke malicious apps and users will still be able to open them.|HTTPS|img-prod-cms-rt-microsoft-com.akamaized.net|
@@ -111,20 +111,7 @@ The following methodology was used to derive these network endpoints:
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.||[Learn how to turn off traffic to all of the following endpoint(s).]( manage-connections-from-windows-operating-system-components-to-microsoft-services.md#26-microsoft-store)|
 |||TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
-| Teams Chat integration with Windows   | The following endpoints are used to configure Microsoft Teams Chat integration with Windows. | | |
-| | | HTTP | www.microsoft.com <br/>*.watson.telemetry.microsoft.com/telemetry.request |
-| | | TLSv1.2/HTTPS | *.v10.events.data.microsoft.com <br/> *.telecommand.telemetry.microsoft.com <br/> *.co4.telecommand.telemetry.microsoft.com <br/> *.watson.telemetry.microsoft.com |
-| Widgets    | | | How to turn off |
-| The following endpoints are used for Widgets. | MSN news feed | The windows feeds endpoint on msn.com is used to download news headlines to the dashboard. | Sign out of dashboard |
-| | Calendar | The calendar endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | ToDo | The ToDo endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | Microsoft 365 recommendations | The Microsoft 365 recommendations endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | Photos | The photos endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | Family | The family endpoint is used to download content for the widget | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | Finance, Sports, Weather, Traffic, eSports | The WebXT endpoint is used to download content for all WebXT widgets. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | Tips | The Tips endpoint is used to download content for the widget. | Unpin widget from dashboard through context menu to turn off locally. Disable the connection point below to turn off for an organization. |
-| | | TLSv1.2/HTTPS/HTTP | https://www.msn.com/pcs/api/widget/newsplus/widget |
-|Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled. If you turn off traffic for this endpoint, the device will not use Cloud-based Protection.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender)|
+|Microsoft Defender Antivirus|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled. If you turn off traffic for this endpoint, the device will not use Cloud-based Protection.||[Learn how to turn off traffic to all of the following endpoint(s).](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-defender)|
 |||HTTPS/TLSv1.2|wdcp.microsoft.com|
 ||The following endpoints are used for Windows Defender SmartScreen reporting and notifications. If you turn off traffic for these endpoints, SmartScreen notifications will not appear.|HTTPS|*smartscreen-prod.microsoft.com|
 |||HTTPS/HTTP|checkappexec.microsoft.com|
