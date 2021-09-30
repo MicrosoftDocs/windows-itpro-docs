@@ -4352,7 +4352,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--SupportedValues-->
-Value type is a string containing a Windows product, forexample, “Windows 11” or “11” or “Windows 10”.
+Value type is a string containing a Windows product, for example, “Windows 11” or “11” or “Windows 10”.
 <!--/SupportedValues-->
 <!--Example-->
 
