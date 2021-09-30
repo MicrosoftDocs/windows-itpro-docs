@@ -48,7 +48,7 @@ With Windows 10, version 1703 and later both Windows 10/11 Enterprise E3 and Win
 
  If you are running Windows 10, version 1703 or later:
 - Devices with a current Windows 10 Pro license or Windows 11 Pro license can be seamlessly upgraded to Windows 10 Enterprise or Windows 11 Enterprise, respectively.
-- Product key-based Windows 10 Enterprise or Windows 11 Enterpise software licenses can be transitioned to Windows 10 Enterprise and Windows 11 Enterprise subscriptions.
+- Product key-based Windows 10 Enterprise or Windows 11 Enterprise software licenses can be transitioned to Windows 10 Enterprise and Windows 11 Enterprise subscriptions.
 
 Organizations that have an Enterprise agreement can also benefit from the new service, using traditional Active Directory-joined devices. In this scenario, the Active Directory user that signs in on their device must be synchronized with Azure AD using [Azure AD Connect Sync](/azure/active-directory/connect/active-directory-aadconnectsync-whatis).
 
