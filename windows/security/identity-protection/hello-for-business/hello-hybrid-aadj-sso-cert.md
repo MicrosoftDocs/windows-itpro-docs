@@ -675,7 +675,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
    ![NDES IIS Console](images/aadjcert/ndes-iis-console.png)
 
-3. Click **Bindings...*** under **Actions**.  Click **Add**.
+3. Click **Bindings...** under **Actions**.  Click **Add**.
 
    ![NDES IIS Console: Add](images/aadjcert/ndes-iis-bindings.png)
 
