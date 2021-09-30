@@ -3,10 +3,8 @@
 - name: Windows 11
   expanded: true
   items:
-    - name: Windows 11 overview
-      href: windows-11-features-overview.md
-    - name: ORIG overview-DELETE
-      href: windows-11.md
+    - name: What's new in Windows 11
+      href: windows-11-whats-new.md
     - name: Windows 11 requirements
       href: windows-11-requirements.md
     - name: Plan for Windows 11

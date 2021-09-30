@@ -1,6 +1,6 @@
 ---
 title: Windows 11, what's new and overview for administrators
-description: Learn more about what's new in Windows 11. Also see the features IT professionals and administrators should know about Windows 11, including security, using apps, the new desktop, and deploying and servicing PCs.
+description: Learn more about what's new in Windows 11. Read about see the features IT professionals and administrators should know about Windows 11, including security, using apps, the new desktop, and deploying and servicing PCs.
 ms.reviewer: 
 manager: dougeby
 ms.audience: itpro
@@ -15,13 +15,13 @@ ms.topic: article
 ms.custom: 
 ---
 
-# What's new in Windows 11, and what administrators should know
+# What's new in Windows 11
 
 **Applies to**:
 
 - Windows 11
 
-Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition and update to what you know, and what you're familiar with".
+Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition and update to what you know, and what you're familiar with.
 
 It offers innovations focused on enhancing end-user productivity, and is designed to support today's hybrid work environment.
 
@@ -69,15 +69,13 @@ For more information on the security features you can configure, manage, and enf
 
 - **Microsoft Teams** is included with the OS, and is automatically available on the taskbar. Users select the chat icon, sign in with their personal Microsoft account, and start a call:
 
-  :::image type="content" source="./images/windows-11-features-overview/windows-11-taskbar-microsoft-teams.png" alt-text="On the Windows 11 taskbar, select the camera chat icon to start a Microsoft Teams call.":::
+  :::image type="content" source="./images/windows-11-whats-new/windows-11-taskbar-microsoft-teams.png" alt-text="On the Windows 11 taskbar, select the camera chat icon to start a Microsoft Teams call.":::
 
   This version of Microsoft Teams is for personal accounts. For organization accounts, such as `user@contoso.com`, you can deploy the Microsoft Teams app using MDM policy, such as Endpoint Manager. For more information, see:
 
   - [Get started with Microsoft Endpoint Manager](/mem/endpoint-manager-getting-started)
   - [Add Microsoft 365 apps to Windows 10 devices with Microsoft Intune](/mem/intune/apps/apps-add-office365)
   - [Install Microsoft Teams using Microsoft Endpoint Configuration Manager](/microsoftteams/msi-deployment)
-
-  ??9.27.2021: Messaged Adesuwa Joseph (OOF until 9.30.2021), as she's writing MS Teams doc for IT Pro. Will link to her doc??
 
   Users can manage preinstalled apps using the **Settings** app > **Apps** > **Apps & Features**. Admins can [create a policy that pins apps, or removes the default pinned apps from the Taskbar](/windows/configuration/customize-taskbar-windows-11).
 
@@ -91,7 +89,7 @@ For more information on the security features you can configure, manage, and enf
 
 - **Snap Layouts, Snap Groups**: When you open an app, hover your mouse over the minimize/maximize option. When you do, you can select a different layout for the app:
 
-  :::image type="content" source="./images/windows-11-features-overview/windows-11-snap-layouts.png" alt-text="In Windows 11, use the minimize or maximize button on an app to see the available snap layouts.":::
+  :::image type="content" source="./images/windows-11-whats-new/windows-11-snap-layouts.png" alt-text="In Windows 11, use the minimize or maximize button on an app to see the available snap layouts.":::
 
   This feature allows users to customize the sizes of apps on their desktop. And, when you add other apps to the layout, the snapped layout stays in place.
 
@@ -118,7 +116,7 @@ For more information on the security features you can configure, manage, and enf
 
 - **Widgets**: Widgets are available on the Taskbar. It includes a personalized feed that could be weather, calendar, stock prices, news, and more:
 
-  :::image type="content" source="./images/windows-11-features-overview/windows-11-taskbar-widgets.png" alt-text="On the Windows 11 taskbar, select the widgets icon to open and see the available widgets.":::
+  :::image type="content" source="./images/windows-11-whats-new/windows-11-taskbar-widgets.png" alt-text="On the Windows 11 taskbar, select the widgets icon to open and see the available widgets.":::
 
   You can enable/disable this feature using the `Computer Configuration\Administrative Templates\Windows Components\widgets` Group Policy. You can also deploy a customized Taskbar to devices in your organization. For more information, see [Customize the Taskbar on Windows 11](/windows/configuration/customize-taskbar-windows-11).
 
@@ -126,7 +124,7 @@ For more information on the security features you can configure, manage, and enf
 
 - **Virtual desktops**: On the Taskbar, you can select the Desktops icon to create a new desktop:
 
-  :::image type="content" source="./images/windows-11-features-overview/windows-11-taskbar-virtual-desktops.png" alt-text="On the Windows 11 taskbar, select the desktop icon to create many virtual desktops.":::
+  :::image type="content" source="./images/windows-11-whats-new/windows-11-taskbar-virtual-desktops.png" alt-text="On the Windows 11 taskbar, select the desktop icon to create many virtual desktops.":::
 
   Use the desktop to open different apps depending on what you're doing. For example, you can create a Travel desktop that includes web sites and apps that are focused on travel.
 
@@ -152,7 +150,7 @@ For more information on the security features you can configure, manage, and enf
 
   This app combines Windows PowerShell, a command prompt, and Azure Cloud Shell all within the same terminal window. You don't need to open separate apps to use these command-line applications. It has tabs. And when you open a new tab, you can choose your command-line application:
 
-    :::image type="content" source="./images/windows-11-features-overview/windows-terminal-app.png" alt-text="On Windows 11, open the Windows Terminal app to use Windows PowerShell, the command prompt, or Azure Cloud Shell to run commands.":::
+    :::image type="content" source="./images/windows-11-whats-new/windows-terminal-app.png" alt-text="On Windows 11, open the Windows Terminal app to use Windows PowerShell, the command prompt, or Azure Cloud Shell to run commands.":::
 
   If users or groups in your organization do a lot with Windows PowerShell or the command prompt, then use policy to add the Windows Terminal app to the [Start menu layout](/windows/configuration/customize-start-menu-layout-windows-11) or the [Taskbar](/windows/configuration/customize-taskbar-windows-11).
 
