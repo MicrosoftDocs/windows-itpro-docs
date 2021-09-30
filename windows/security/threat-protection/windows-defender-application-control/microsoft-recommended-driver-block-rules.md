@@ -28,20 +28,20 @@ ms.date:
 >[!NOTE]
 >Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they're patched and rolled out to the ecosystem in an expedited manner. Microsoft then adds the vulnerable versions of the drivers to our ecosystem block policy, which is applied to the following sets of devices:
+Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they're quickly patched and rolled out to the ecosystem. Microsoft then adds the vulnerable versions of the drivers to our ecosystem block policy, which is applied to the following sets of devices:
 
 - Hypervisor-protected code integrity (HVCI) enabled devices
 - Windows 10 in S mode (S mode) devices
 
-The vulnerable driver blocklist is designed to harden systems against 3rd party-developed drivers across the Windows ecosystem with any of the following: 
+The vulnerable driver blocklist is designed to harden systems against third party-developed drivers across the Windows ecosystem with any of the following attributes: 
 
-- Known security vulnerabilities which can be exploited by attackers to elevate privileges in the Windows kernel
-- Malicious behaviors (i.e. malware) or certificates used to sign malware
-- Behaviors which are not malicious but circumvent the Windows Security Model and can be exploited by attackers to elevate privileges in the Windows kernel
+- Known security vulnerabilities that can be exploited by attackers to elevate privileges in the Windows kernel
+- Malicious behaviors (malware) or certificates used to sign malware
+- Behaviors that are not malicious but circumvent the Windows Security Model and can be exploited by attackers to elevate privileges in the Windows kernel
 
-Drivers can be submitted by IHVs, OEMs and Windows customers to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission).
+Drivers can be submitted to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission). To dispute a block or request a change to the vulnerable driver blocklist, including updating a block rule once a driver vulnerability has been patched, visit the [Microsoft Security Intelligence portal](https://www.microsoft.com/en-us/wdsi) or submit feedback on this article. 
 
-Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this isn't possible, Microsoft recommends blocking the following list of drivers by merging this policy with your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
+Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this isn't possible, Microsoft recommends blocking this list of drivers within your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
