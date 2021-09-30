@@ -199,6 +199,9 @@ manager: dansimp
     <a href="#update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
   </dd>
   <dd> 
+    <a href="#update-targetproductversion">Update/TargetProductVersion</a> 
+  </dd>
+  <dd> 
     <a href="#update-targetreleaseversion">Update/TargetReleaseVersion</a> 
   </dd>
   <dd>
@@ -4281,6 +4284,85 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-targetproductversion"></a>**Update/TargetProductVersion**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 2004 and later. Enables IT administrators to specify which product they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy to target a new product. 
+
+If no product is specified, the device will continue receiving newer versions of the Windows product it is currently on. For details about different Windows 10 versions, see [https://docs.microsoft.com/windows/release-health/release-information](https://docs.microsoft.com/windows/release-health/release-information).
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Select the target Feature Update version*
+-   GP name: *TargetProductVersion*
+-   GP element: *TargetProductVersionId*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Value type is a string containing a Windows product, forexample, “Windows 11” or “11” or “Windows 10”.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+By using this Windows Update for Business policy to upgrade devices to a new product (ex. Windows 11) you are agreeing that when applying this operating system to a device either 
+(1) The applicable Windows license was purchased though volume licensing, or 
+(2) That you are authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: (https://www.microsoft.com/Useterms).
 
 <hr/>
 
