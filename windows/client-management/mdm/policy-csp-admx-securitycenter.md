@@ -94,13 +94,6 @@ If you enable this policy setting, Security Center is turned on for all users.
 
 If you disable this policy setting, Security Center is turned off for domain members.
 
-**Windows XP SP2**
-
-In Windows XP SP2, the essential security settings that are monitored by Security Center include firewall, antivirus, and Automatic Updates.  Note that Security Center might not be available following a change to this policy setting until after the computer is restarted for Windows XP SP2 computers. 
-
-**Windows Vista**
-
-In Windows Vista, this policy setting monitors essential security settings to include firewall, antivirus, antispyware, Internet security settings, User Account Control, and Automatic Updates. Windows Vista computers do not require a reboot for this policy setting to take effect.
 
 <!--/Description-->
 

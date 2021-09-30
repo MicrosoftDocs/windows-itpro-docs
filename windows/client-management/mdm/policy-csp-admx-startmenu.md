@@ -3762,9 +3762,9 @@ ADMX Info:
 <!--Description-->
 This setting affects the presentation of the Start menu.
 
-The classic Start menu in Windows 2000 Professional allows users to begin common tasks, while the new Start menu consolidates common items onto one menu. When the classic Start menu is used, the following icons are placed on the desktop: Documents, Pictures, Music, Computer, and Network. The new Start menu starts them directly.
+The classic Start menu in Windows allows users to begin common tasks, while the new Start menu consolidates common items onto one menu. When the classic Start menu is used, the following icons are placed on the desktop: Documents, Pictures, Music, Computer, and Network. The new Start menu starts them directly.
 
-If you enable this setting, the Start menu displays the classic Start menu in the Windows 2000 style and displays the standard desktop icons.
+If you enable this setting, the Start menu displays the classic Start menu and displays the standard desktop icons.
 
 If you disable this setting, the Start menu only displays in the new style, meaning the desktop icons are now on the Start page.
 
@@ -4331,13 +4331,11 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to remove the user name label from the Start Menu in Windows XP and Windows Server 2003.
+This policy setting allows you to remove the user name label from the Start Menu.
 
-If you enable this policy setting, the user name label is removed from the Start Menu in Windows XP and Windows Server 2003.
+If you enable this policy setting, the user name label is removed from the Start Menu.
 
-To remove the user name folder on Windows Vista, set the "Remove user folder link from Start Menu" policy setting.
-
-If you disable or do not configure this policy setting, the user name label appears on the Start Menu in Windows XP and Windows Server 2003.
+If you disable or do not configure this policy setting, the user name label appears on the Start Menu.
 
 <!--/Description-->
 
