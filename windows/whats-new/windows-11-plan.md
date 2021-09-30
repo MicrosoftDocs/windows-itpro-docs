@@ -7,7 +7,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.author: greglin
-ms.date: 08/18/2021
 ms.reviewer: 
 manager: laurawi
 ms.localizationpriority: high
@@ -57,8 +56,7 @@ If you manage devices on behalf of your organization, you will be able to upgrad
 - Additional insight into safeguard holds. While safeguard holds will function for Windows 11 devices just as they do for Windows 10 today, administrators using Windows Update for Business will have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows 11. 
 
 > [!NOTE]
-> If you use Windows Update for Business to manage feature update deployments today, you will need to leverage the **Target Version** policy rather than **Feature Update deferrals** to move from Windows 10 to Windows 11. Deferrals are great for quality updates or to move to newer version of the same product (from example, from Windows 10, version 20H2 to 21H1), but they cannot migrate a device between products (from Windows 10 to Windows 11). <br>
-> Also, Windows 11 has a new End User License Agreement. If you are deploying with Windows Update for Business **Target Version** or with Windows Server Update Services, you are accepting this new End User License Agreement on behalf of the end-users within your organization. 
+> Also, Windows 11 has new Microsoft Software License Terms. If you are deploying with Windows Update for Business **Target Version** or with Windows Server Update Services, you are accepting these new license terms on behalf of the users in your organization. 
 
 ##### Unmanaged devices
 
