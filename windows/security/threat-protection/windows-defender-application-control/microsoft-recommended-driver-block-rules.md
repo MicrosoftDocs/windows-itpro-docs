@@ -39,7 +39,7 @@ The vulnerable driver blocklist is designed to harden systems against 3rd party-
 - Malicious behaviors (i.e. malware) or certificates used to sign malware
 - Behaviors which are not malicious but circumvent the Windows Security Model and can be exploited by attackers to elevate privileges in the Windows kernel
 
-Drivers can be submitted by IHVs, OEMs and Windows customers to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/wdsi/driversubmission).
+Drivers can be submitted by IHVs, OEMs and Windows customers to Microsoft for security analysis at the [Microsoft Security Intelligence Driver Submission page](https://www.microsoft.com/en-us/wdsi/driversubmission).
 
 Microsoft recommends enabling [HVCI](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity) or S mode to protect your devices against security threats. If this isn't possible, Microsoft recommends blocking the following list of drivers by merging this policy with your existing Windows Defender Application Control policy. Blocking kernel drivers without sufficient testing can result in devices or software to malfunction, and in rare cases, blue screen. It's recommended to first validate this policy in [audit mode](audit-windows-defender-application-control-policies.md) and review the audit block events.
 
