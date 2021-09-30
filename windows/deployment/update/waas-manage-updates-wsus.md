@@ -1,5 +1,5 @@
 ---
-title: Deploy Windows 10 updates using Windows Server Update Services (Windows 10)
+title: Deploy Windows client updates using Windows Server Update Services
 description: WSUS allows companies to defer, selectively approve, choose when delivered, and determine which devices receive updates.
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -11,12 +11,13 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Deploy Windows 10 updates using Windows Server Update Services (WSUS)
+# Deploy Windows client updates using Windows Server Update Services (WSUS)
 
 
 **Applies to**
 
-- Windows 10
+-   Windows 10
+-   Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -26,13 +27,13 @@ ms.topic: article
 
 WSUS is a Windows Server role available in the Windows Server operating systems. It provides a single hub for Windows updates within an organization. WSUS allows companies not only to defer updates but also to selectively approve them, choose when they’re delivered, and determine which individual devices or groups of devices receive them. WSUS provides additional control over Windows Update for Business but does not provide all the scheduling options and deployment flexibility that Microsoft Endpoint Manager provides.
 
-When you choose WSUS as your source for Windows updates, you use Group Policy to point Windows 10 client devices to the WSUS server for their updates. From there, updates are periodically downloaded to the WSUS server and managed, approved, and deployed through the WSUS administration console or Group Policy, streamlining enterprise update management. If you’re currently using WSUS to manage Windows updates in your environment, you can continue to do so in Windows 10. 
+When you choose WSUS as your source for Windows updates, you use Group Policy to point Windows client devices to the WSUS server for their updates. From there, updates are periodically downloaded to the WSUS server and managed, approved, and deployed through the WSUS administration console or Group Policy, streamlining enterprise update management. If you’re currently using WSUS to manage Windows updates in your environment, you can continue to do so in Windows 11. 
 
 
 
-## Requirements for Windows 10 servicing with WSUS
+## Requirements for Windows client servicing with WSUS
 
-To be able to use WSUS to manage and deploy Windows 10 feature updates, you must use a supported WSUS version: 
+To be able to use WSUS to manage and deploy Windows feature updates, you must use a supported WSUS version: 
 - WSUS 10.0.14393 (role in Windows Server 2016)
 - WSUS 10.0.17763 (role in Windows Server 2019) 
 - WSUS 6.2 and 6.3 (role in Windows Server 2012 and Windows Server 2012 R2)
@@ -108,7 +109,7 @@ As Windows clients refresh their computer policies (the default Group Policy ref
 ## Create computer groups in the WSUS Administration Console
 
 >[!NOTE]
->The following procedures use the groups from Table 1 in [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) as examples.
+>The following procedures use the groups from Table 1 in [Build deployment rings for Windows client updates](waas-deployment-rings-windows-10-updates.md) as examples.
 
 You can use computer groups to target a subset of devices that have specific quality and feature updates. These groups represent your deployment rings, as controlled by WSUS. You can populate the groups either manually by using the WSUS Administration Console or automatically through Group Policy. Regardless of the method you choose, you must first create the groups in the WSUS Administration Console. 
 
@@ -241,10 +242,11 @@ The next time the clients in the **Ring 4 Broad Business Users** security group 
 For clients that should have their feature updates approved as soon as they’re available, you can configure Automatic Approval rules in WSUS.
 
 >[!NOTE]
->WSUS respects the client device's servicing branch. If you approve a feature update while it is still in one branch, such as Insider Preview, WSUS will install the update only on devices that are in that servicing branch. When Microsoft releases the build for Semi-Annual Channel, the devices in the Semi-Annual Channel will install it. Windows Update for Business branch settings do not apply to feature updates through WSUS.
+>WSUS respects the client device's servicing branch. If you approve a feature update while it is still in one branch, such as Insider Preview, WSUS will install the update only on devices that are in that servicing branch. When Microsoft releases the build for Semi-Annual Channel (or General Availability Channel), the devices in that will install it. Windows Update for Business branch settings do not apply to feature updates through WSUS.
 
 
-**To configure an Automatic Approval rule for Windows 10 feature updates and approve them for the Ring 3 Broad IT deployment ring**
+**To configure an Automatic Approval rule for Windows client feature updates and approve them for the Ring 3 Broad IT deployment ring**
+This example uses Windows 10, but the process is the same for Windows 11.
 
 1. In the WSUS Administration Console, go to Update Services\\*Server_Name*\Options, and then select **Automatic Approvals**.
 
@@ -273,16 +275,16 @@ For clients that should have their feature updates approved as soon as they’re
     >[!NOTE]
     >WSUS does not honor any existing month/week/day [deferral settings](waas-configure-wufb.md#configure-when-devices-receive-feature-updates). That said, if you’re using Windows Update for Business for a computer for which WSUS is also managing updates, when WSUS approves the update, it will be installed on the computer regardless of whether you configured Group Policy to wait.
 
-Now, whenever Windows 10 feature updates are published to WSUS, they will automatically be approved for the **Ring 3 Broad IT** deployment ring with an installation deadline of 1 week.
+Now, whenever Windows client feature updates are published to WSUS, they will automatically be approved for the **Ring 3 Broad IT** deployment ring with an installation deadline of 1 week.
 
 > [!WARNING]
-> The auto approval rule runs after synchronization occurs. This means that the *next* upgrade for each Windows 10 version will be approved. If you select **Run Rule**, all possible updates that meet the criteria will be approved, potentially including older updates that you don't actually want--which can be a problem when the download sizes are very large.
+> The auto approval rule runs after synchronization occurs. This means that the *next* upgrade for each Windows client version will be approved. If you select **Run Rule**, all possible updates that meet the criteria will be approved, potentially including older updates that you don't actually want--which can be a problem when the download sizes are very large.
 
 ## Manually approve and deploy feature updates
 
 You can manually approve updates and set deadlines for installation within the WSUS Administration Console, as well. It might be best to approve update rules manually after your pilot deployment has been updated.
 
-To simplify the manual approval process, start by creating a software update view that contains only Windows 10 updates.
+To simplify the manual approval process, start by creating a software update view that contains only Windows 10 (in this example) updates. The process is the same for Windows 11 updates.
 
 > [!NOTE]
 > If you approve more than one feature update for a computer, an error can result with the client. Approve only one feature update per computer.  
@@ -329,33 +331,16 @@ Now that you have the **All Windows 10 Upgrades** view, complete the following s
 
 </br>
 
-## Steps to manage updates for Windows 10
+## Steps to manage updates for Windows client
 
 |&nbsp; |&nbsp; |
 | --- | --- |
 | ![done.](images/checklistdone.png) | [Learn about updates and servicing channels](waas-overview.md) |
-| ![done.](images/checklistdone.png) | [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md) |
-| ![done.](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or Deploy Windows 10 updates using Windows Server Update Services (this topic)</br>or [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
+| ![done.](images/checklistdone.png) | [Prepare servicing strategy for Windows client updates](waas-servicing-strategy-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Build deployment rings for Windows client updates](waas-deployment-rings-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Assign devices to servicing channels for Windows client updates](waas-servicing-channels-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Optimize update delivery for Windows client updates](waas-optimize-windows-10-updates.md) |
+| ![done.](images/checklistdone.png) | [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)</br>or Deploy Windows client updates using Windows Server Update Services (this topic)</br>or [Deploy Windows client updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service) |
 
 
 
-## Related topics
-
-- [Update Windows 10 in the enterprise](index.md)
-- [Overview of Windows as a service](waas-overview.md)
-- [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
-- [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
-- [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
-- [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
-- [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md) 
-- [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
-- [Configure Windows Update for Business](waas-configure-wufb.md)
-- [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
-- [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
-- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service)
-- [Manage device restarts after updates](waas-restart.md)

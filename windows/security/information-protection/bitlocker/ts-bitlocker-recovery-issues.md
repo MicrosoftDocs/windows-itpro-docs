@@ -23,9 +23,9 @@ This article describes common issues that may prevent BitLocker from behaving as
 > [!NOTE]
 > In this article, "recovery password" refers to the 48-digit recovery password and "recovery key" refers to 32-digit recovery key. For more information, see [BitLocker key protectors](./prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-key-protectors).
 
-## Windows 10 prompts for a non-existing BitLocker recovery password
+## Windows prompts for a non-existing BitLocker recovery password
 
-Windows 10 prompts you for a BitLocker recovery password. However, you did not configure a BitLocker recovery password.
+Windows prompts you for a BitLocker recovery password. However, you did not configure a BitLocker recovery password.
 
 ### Resolution
 
@@ -37,7 +37,7 @@ The BitLocker and Active Directory Domain Services (AD DS) FAQ addresses situati
 
 ## The recovery password for a laptop was not backed up, and the laptop is locked
 
-You have a Windows 10 Home-based laptop, and you have to recover its hard disk. The disk was encrypted by using BitLocker Driver Encryption. However, the BitLocker recovery password was not backed up, and the usual user of the laptop is not available to provide the password.
+You have a Windows 11 or Windows 10 Home-based laptop, and you have to recover its hard disk. The disk was encrypted by using BitLocker Driver Encryption. However, the BitLocker recovery password was not backed up, and the usual user of the laptop is not available to provide the password.
 
 ### Resolution
 
@@ -223,7 +223,7 @@ To re-enable BitLocker Drive Encryption, select **Start**, type **Manage BitLock
 
 ## After you install an update to a Hyper V-enabled computer, BitLocker prompts for the recovery password and returns error 0xC0210000
 
-You have a device that runs Windows 10, version 1703, Windows 10, version 1607, or Windows Server 2016. Also, Hyper-V is enabled on the device. After you install an affected update and restart the device, the device enters BitLocker Recovery mode and you see error code 0xC0210000.
+You have a device that runs Windows 11, Windows 10, version 1703, Windows 10, version 1607, or Windows Server 2016. Also, Hyper-V is enabled on the device. After you install an affected update and restart the device, the device enters BitLocker Recovery mode and you see error code 0xC0210000.
 
 ### Workaround
 
@@ -262,12 +262,12 @@ Manage-bde -protectors -disable c: -rc 1
 
 To resolve this issue, install the appropriate update on the affected device:  
 
-- For Windows 10, version 1703: [July 9, 2019—KB4507450 (OS Build 15063.1928)](https://support.microsoft.com/help/4507450/windows-10-update-kb4507450)
-- For Windows 10, version 1607 and Windows Server 2016: [July 9, 2019—KB4507460 (OS Build 14393.3085)](https://support.microsoft.com/help/4507460/windows-10-update-kb4507460)
+- For Windows 10, version 1703, or Windows 11: [July 9, 2019—KB4507450 (OS Build 15063.1928)](https://support.microsoft.com/help/4507450/windows-10-update-kb4507450)
+- For Windows 11, Windows 10, version 1607 and Windows Server 2016: [July 9, 2019—KB4507460 (OS Build 14393.3085)](https://support.microsoft.com/help/4507460/windows-10-update-kb4507460)
 
 ## Credential Guard/Device Guard on TPM 1.2: At every restart, BitLocker prompts for the recovery password and returns error 0xC0210000
 
-You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the device uses [Virtualization-based Security](/windows-hardware/design/device-experiences/oem-vbs) features such as [Device Guard and Credential Guard](/windows-hardware/drivers/bringup/device-guard-and-credential-guard). Every time that you start the device, the device enters BitLocker Recovery mode and you see error code 0xc0210000, and a message that resembles the following.
+You have a device that uses TPM 1.2 and runs Windows 10, version 1809, or Windows 11. Also, the device uses [Virtualization-based Security](/windows-hardware/design/device-experiences/oem-vbs) features such as [Device Guard and Credential Guard](/windows-hardware/drivers/bringup/device-guard-and-credential-guard). Every time that you start the device, the device enters BitLocker Recovery mode and you see error code 0xc0210000, and a message that resembles the following.
 
 > Recovery
 > 
@@ -282,7 +282,7 @@ You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the
 
 TPM 1.2 does not support Secure Launch. For more information, see [System Guard Secure Launch and SMM protection: Requirements Met by System Guard Enabled Machines](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 
-For more information about this technology, see [Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10](../../threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
+For more information about this technology, see [Windows Defender System Guard: How a hardware-based root of trust helps protect Windows](../../threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
 
 ### Resolution
 
