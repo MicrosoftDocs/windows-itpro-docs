@@ -103,7 +103,7 @@ The following methodology was used to derive the network endpoints:
 | Teams Chat integration with Windows  | The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. <br/>If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.  | | |
 | | | HTTP | www.microsoft.com <br/>*.watson.telemetry.microsoft.com/telemetry.request  |
 | | | TLSv1.2/HTTPS | *.v10.events.data.microsoft.com <br/> *.telecommand.telemetry.microsoft.com <br/> *.co4.telecommand.telemetry.microsoft.com <br/> *.watson.telemetry.microsoft.com |
-| Widgets | To turn off a widget locally, right click on the widget to remove it from the widgets board.<br/> Disable the connection point to turn off for an organization. <br/> See below for a list of available widgets.|TLSv1.2/HTTPS/HTTP | https://www.msn.com/pcs/api/widget/newsplus/widget |
+| Widgets | To turn off a widget locally, right click on the widget to it unpin from the dashboard.<br/> Disable the connection point to turn off for an organization. <br/> See below for a list of available widgets.|TLSv1.2/HTTPS/HTTP | https://www.msn.com/pcs/api/widget/newsplus/widget |
 | | **MSN news feed** <br/> The Windows feeds endpoint on msn.com is used to download news headlines to the dashboard. |||
 | | **Calendar** <br/>  This endpoint downloads calender content for the widget. |||
 | | **ToDo** <br/> This endpoint downloads ToDo content for the widget. |||
