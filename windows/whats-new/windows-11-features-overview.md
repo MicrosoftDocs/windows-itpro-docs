@@ -21,7 +21,7 @@ ms.custom:
 
 - Windows 11
 
-Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition and update to what you know, and what you're familiar.
+Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition and update to what you know, and what you're familiar with".
 
 It offers innovations focused on enhancing end-user productivity, and is designed to support today's hybrid work environment.
 
@@ -171,7 +171,7 @@ For more information on the security features you can configure, manage, and enf
 
 ## Deployment and servicing
 
-- **Install Windows 11**: The same methods you used to install Windows 10, can also be used to install Windows 11. For example, you can deploy Windows to your devices using Windows Autopilot, Microsoft Deployment Toolkit (MDT), Configuration Manager, and more. Windows 11 will be delivered as an upgrade to eligible devices running Windows 10.
+- **Install Windows 11**: The same methods you use to install Windows 10 can also be used to install Windows 11. For example, you can deploy Windows to your devices using Windows Autopilot, Microsoft Deployment Toolkit (MDT), Configuration Manager, and more. Windows 11 will be delivered as an upgrade to eligible devices running Windows 10.
 
   For more information on getting started, see [Windows client deployment resources and documentation](/windows/deployment/) and [Plan for Windows 11](windows-11-plan.md).
 
@@ -185,7 +185,7 @@ For more information on the security features you can configure, manage, and enf
 
   If you currently use Group Policy to manage your Windows 10 devices, you can also use Group Policy to manage Windows 11 devices. In Endpoint Manager, there are [administrative templates](/mem/intune/configuration/administrative-templates-windows) and the [settings catalog](/mem/intune/configuration/settings-catalog) that include many of the same policies. [Group Policy analytics](/mem/intune/configuration/group-policy-analytics) analyze your on-premises group policy objects.
 
-- **Updates and Delivery optimization** helps manage updates, and manage features on your devices. Starting with Windows 11, the OS feature updates are installed annually. In Windows 10, it was semiannually. For more information on servicing channels, and what they are, see [Servicing channels](/windows/deployment/update/waas-overview#servicing-channels).
+- **Windows Updates and Delivery optimization** helps manage updates, and manage features on your devices. Starting with Windows 11, the OS feature updates are installed annually. For more information on servicing channels, and what they are, see [Servicing channels](/windows/deployment/update/waas-overview#servicing-channels).
 
   Like Windows 10, Windows 11 will receive monthly quality updates.
 
