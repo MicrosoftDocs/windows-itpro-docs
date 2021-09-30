@@ -26,7 +26,7 @@ The Smart Cards for Windows service provides the basic infrastructure for all ot
 
 The Smart Cards for Windows service runs in the context of a local service, and it is implemented as a shared service of the services host (svchost) process. The Smart Cards for Windows service, Scardsvr, has the following service description:
 
-```
+```PowerShell
 <serviceData
     dependOnService="PlugPlay"
     description="@%SystemRoot%\System32\SCardSvr.dll,-5"
