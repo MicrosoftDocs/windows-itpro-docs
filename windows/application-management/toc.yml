@@ -15,6 +15,8 @@ items:
       href: add-apps-and-features.md
     - name: Sideload apps
       href: sideload-apps-in-windows-10.md
+    - name: Private app repo on Windows 11
+      href: private-app-repository-mdm-company-portal-windows-11.md
     - name: Remove background task resource restrictions
       href: enterprise-background-activity-controls.md
     - name: Enable or block Windows Mixed Reality apps in the enterprise
@@ -199,7 +201,7 @@ items:
               items: 
                 - name: Using the App-V client management console
                   href: app-v/appv-using-the-client-management-console.md
-                - name: Automatically clean-up unpublished packages on the App-V client
+                - name: Automatically clean up unpublished packages on the App-V client
                   href: app-v/appv-auto-clean-unpublished-packages.md
             - name: Migrating
               items: 

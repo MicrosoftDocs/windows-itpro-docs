@@ -1,5 +1,5 @@
 ---
-title: Checklist Configuring Rules for an Isolated Server Zone (Windows 10)
+title: Checklist Configuring Rules for an Isolated Server Zone (Windows)
 description: Use these tasks to configure connection security rules and IPsec settings in GPOs for servers in an isolated server zone that are part of an isolated domain.
 ms.assetid: 67c50a91-e71e-4f1e-a534-dad2582e311c
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 The following checklists include tasks for configuring connection security rules and IPsec settings in your GPOs for servers in an isolated server zone that are part of an isolated domain. For information about creating a standalone isolated server zone that is not part of an isolated domain, see [Checklist: Implementing a Standalone Server Isolation Policy Design](checklist-implementing-a-standalone-server-isolation-policy-design.md).
 

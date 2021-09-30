@@ -1,5 +1,5 @@
 ---
-title: Planning Server Isolation Zones (Windows 10)
+title: Planning Server Isolation Zones (Windows)
 description: Learn how to restrict access to a server to approved users by using a server isolation zone in Windows Defender Firewall with Advanced Security.
 ms.assetid: 5f63c929-589e-4b64-82ea-515d62765b7b
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 Sometimes a server hosts data that is sensitive. If your servers host data that must not be compromised, you have several options to help protect that data. One was already addressed: adding the server to the encryption zone. Membership in that zone prevents the server from being accessed by any devices that are outside the isolated domain, and encrypts all network connections to server.
 
