@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/13/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -15,10 +15,6 @@ ms.technology: mde
 ---
 
 # 4776(S, F): The computer attempted to validate the credentials for an account.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-4776.png" alt="Event 4776 illustration" width="459" height="336" hspace="10" align="left" />
@@ -116,7 +112,7 @@ This event does *not* generate when a domain account logs on locally to a domain
 | 0xC0000193 | Account logon with expired account.                                                                                                                                                                                                                                                       |
 | 0xC0000224 | Account logon with "Change Password at Next Logon" flagged.                                                                                                                                                                                                                               |
 | 0xC0000234 | Account logon with account locked.                                                                                                                                                                                                                                                        |
-| 0xc0000371 | The local account store does not contain secret material for the specified account.                                                                                                                                                                                                       |
+| 0xC0000371 | The local account store does not contain secret material for the specified account.                                                                                                                                                                                                       |
 | 0x0        | No errors.                                                                                                                                                                                                                                                                                |
 
 > Table 1. Winlogon Error Codes.
@@ -125,14 +121,14 @@ This event does *not* generate when a domain account logs on locally to a domain
 
 For 4776(S, F): The computer attempted to validate the credentials for an account.
 
-| **Type of monitoring required**                                                                                                                                                                                                                                                                                   | **Recommendation**                                                                                                                                                                                                                                                                                                                |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **“Logon Account”** that corresponds to the high-value account or accounts.                                                                                                                                                                                                                           |
+| **Type of monitoring required**     | **Recommendation**          |
+|-----------------|---------|
+| **High-value accounts**: You might have high-value domain or local accounts for which you need to monitor each action.<br>Examples of high-value accounts are database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts and so on. | Monitor this event with the **“Logon Account”** that corresponds to the high-value account or accounts.        |
 | **Anomalies or malicious actions**: You might have specific requirements for detecting anomalies or monitoring potential malicious actions. For example, you might need to monitor for use of an account outside of working hours.                                                                                | When you monitor for anomalies or malicious actions, use the **“Logon Account”** value (with other information) to monitor how or when a particular account is being used.<br>To monitor activity of specific user accounts outside of working hours, monitor the appropriate **Logon Account + Source Workstation** pairs. |
-| **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used.                                                                                                                                                                                     | Monitor this event with the **“Logon Account”** that should never be used.                                                                                                                                                                                                                                                        |
-| **Account allow list**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.                                                                                                                                                      | If this event corresponds to a “allow list-only” action, review the **“Logon Account”** for accounts that are outside the allow list.                                                                                                                                                                                               |
-| **Restricted-use computers**: You might have certain computers from which certain people (accounts) should not log on.                                                                                                                                                                                            | Monitor the target **Source Workstation** for credential validation requests from the **“Logon Account”** that you are concerned about.                                                                                                                                                                                           |
-| **Account naming conventions**: Your organization might have specific naming conventions for account names.                                                                                                                                                                                                       | Monitor “**Logon Account”** for names that don’t comply with naming conventions.                                                                                                                                                                                                                                                  |
+| **Non-active accounts**: You might have non-active, disabled, or guest accounts, or other accounts that should never be used. | Monitor this event with the **“Logon Account”** that should never be used.   |
+| **Account allow list**: You might have a specific allow list of accounts that are the only ones allowed to perform actions corresponding to particular events.   | If this event corresponds to a “allow list-only” action, review the **“Logon Account”** for accounts that are outside the allow list.     |
+| **Restricted-use computers**: You might have certain computers from which certain people (accounts) should not log on.   | Monitor the target **Source Workstation** for credential validation requests from the **“Logon Account”** that you are concerned about.  |
+| **Account naming conventions**: Your organization might have specific naming conventions for account names.  | Monitor “**Logon Account”** for names that don’t comply with naming conventions. |
 
 -   If NTLM authentication should not be used for a specific account, monitor for that account. Don’t forget that local logon will always use NTLM authentication if an account logs on to a device where its user account is stored.
 
@@ -142,12 +138,12 @@ For 4776(S, F): The computer attempted to validate the credentials for an accoun
 
 -   Consider tracking the following errors for the reasons listed:
 
-| **Error to track**                                  | **What the error might indicate**                                                                                                                   |
-|-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Error to track**  | **What the error might indicate**   |
+|----------|----------------|
 | **User logon with misspelled or bad user account**  | For example, N events in the last N minutes can be an indicator of an account enumeration attack, especially relevant for highly critical accounts. |
 | **User logon with misspelled or bad password**      | For example, N events in the last N minutes can be an indicator of a brute-force password attack, especially relevant for highly critical accounts. |
-| **User logon outside authorized hours**             | Can indicate a compromised account; especially relevant for highly critical accounts.                                                               |
-| **User logon from unauthorized workstation**        | Can indicate a compromised account; especially relevant for highly critical accounts.                                                               |
+| **User logon outside authorized hours**             | Can indicate a compromised account; especially relevant for highly critical accounts.  |
+| **User logon from unauthorized workstation**        | Can indicate a compromised account; especially relevant for highly critical accounts.    |
 | **User logon to account disabled by administrator** | For example, N events in last N minutes can be an indicator of an account compromise attempt, especially relevant for highly critical accounts.     |
-| **User logon with expired account**                 | Can indicate an account compromise attempt; especially relevant for highly critical accounts.                                                       |
-| **User logon with account locked**                  | Can indicate a brute-force password attack; especially relevant for highly critical accounts.                                                       |
+| **User logon with expired account**                 | Can indicate an account compromise attempt; especially relevant for highly critical accounts.   |
+| **User logon with account locked**                  | Can indicate a brute-force password attack; especially relevant for highly critical accounts.  |

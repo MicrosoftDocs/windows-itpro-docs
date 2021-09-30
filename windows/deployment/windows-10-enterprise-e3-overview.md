@@ -1,15 +1,15 @@
 ---
-title: Windows 10 Enterprise E3 in CSP
-description: Describes Windows 10 Enterprise E3, an offering that delivers, by subscription, the features of Windows 10 Enterprise edition.
+title: Windows 10/11 Enterprise E3 in CSP
+description: Describes Windows 10/11 Enterprise E3, an offering that delivers, by subscription, the features of Windows 10/11 Enterprise edition.
 keywords: upgrade, update, task sequence, deploy
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
-ms.date: 08/24/2017
+ms.date: 09/28/2021
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
 author: greg-lindsay
 audience: itpro
@@ -17,50 +17,50 @@ ms.collection: M365-modern-desktop
 ms.topic: article
 ---
 
-# Windows 10 Enterprise E3 in CSP
+# Windows 10/11 Enterprise E3 in CSP
 
-Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. Windows 10 Enterprise E3 in CSP is a new offering that delivers, by subscription, exclusive features reserved for Windows 10 Enterprise edition. This offering is available through the Cloud Solution Provider (CSP) channel via the Partner Center as an online service. Windows 10 Enterprise E3 in CSP provides a flexible, per-user subscription for small- and medium-sized organizations (from one to hundreds of users). To take advantage of this offering, you must have the following:
+Applies to:
+- Windows 10
+- Windows 11
 
--   Windows 10 Pro, version 1607 (Windows 10 Anniversary Update) or later, installed and activated, on the devices to be upgraded
+Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. With the release of Windows 11, Windows 10/11 Enterprise E3 in CSP is available.  
+
+Windows 10/11 Enterprise E3 in CSP delivers, by subscription, exclusive features reserved for Windows 10 or Windows 11 Enterprise editions. This offering is available through the Cloud Solution Provider (CSP) channel via the Partner Center as an online service. Windows 10/11 Enterprise E3 in CSP provides a flexible, per-user subscription for small- and medium-sized organizations (from one to hundreds of users). To take advantage of this offering, you must have the following:
+
+-   Windows 10 Pro, version 1607 (Windows 10 Anniversary Update) or later (or Windows 11), installed and activated, on the devices to be upgraded.
 -   Azure Active Directory (Azure AD) available for identity management
 
-Starting with Windows 10, version 1607 (Windows 10 Anniversary Update), you can move from Windows 10 Pro to Windows 10 Enterprise more easily than ever before—no keys and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10 Enterprise E3 license, the operating system turns from Windows 10 Pro to Windows 10 Enterprise and all the appropriate Windows 10 Enterprise features are unlocked. When a subscription license expires or is transferred to another user, the Windows 10 Enterprise device seamlessly steps back down to Windows 10 Pro.
+You can move from Windows 10 Pro or Windows 11 Pro to Windows 10 Enterprise or Windows 11 Enterprise more easily than ever before — with no keys, and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10/11 Enterprise E3 license, the operating system turns from Windows 10 Pro to Windows 10 Enterprise or Windows 11 Pro to Windows 11 Enterprise, and all the appropriate Enterprise features are unlocked. When a subscription license expires or is transferred to another user, the Enterprise device seamlessly steps back down to Windows 10 Pro or Windows 11 Pro.
 
-Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise to their users. Now, with Windows 10 Enterprise E3 in CSP, small- and medium-sized organizations can more easily take advantage of Windows 10 Enterprise features.
+Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise or Windows 11 Enterprise to their users. Now, with Windows 10/11 Enterprise E3 in CSP, small- and medium-sized organizations can more easily take advantage of Enterprise edition features.
 
-When you purchase Windows 10 Enterprise E3 via a partner, you get the following benefits:
+When you purchase Windows 10/11 Enterprise E3 via a partner, you get the following benefits:
 
--   **Windows 10 Enterprise edition**. Devices currently running Windows 10 Pro, version 1607 can get Windows 10 Enterprise Current Branch (CB) or Current Branch for Business (CBB). This benefit does not include Long Term Service Branch (LTSB).
-
--   **Support from one to hundreds of users**. Although the Windows 10 Enterprise E3 in CSP program does not have a limitation on the number of licenses an organization can have, the program is designed for small- and medium-sized organizations.
-
+-   **Windows 10/11 Enterprise edition**. Devices currently running Windows 10 Pro or Windows 11 Pro can get Windows 10/11 Enterprise Current Branch (CB) or Current Branch for Business (CBB). This benefit does not include Long Term Service Branch (LTSB).
+-   **Support from one to hundreds of users**. Although the Windows 10/11 Enterprise E3 in CSP program does not have a limitation on the number of licenses an organization can have, the program is designed for small- and medium-sized organizations.
 -   **Deploy on up to five devices**. For each user covered by the license, you can deploy Windows 10 Enterprise edition on up to five devices.
-
--   **Roll back to Windows 10 Pro at any time**. When a user’s subscription expires or is transferred to another user, the Windows 10 Enterprise device reverts seamlessly to Windows 10 Pro edition (after a grace period of up to 90 days).
-
--   **Monthly, per-user pricing model**. This makes Windows 10 Enterprise E3 affordable for any organization.
-
+-   **Roll back to Windows 10/11 Pro at any time**. When a user’s subscription expires or is transferred to another user, the Windows 10/11 Enterprise device reverts seamlessly to Windows 10/11 Pro edition (after a grace period of up to 90 days).
+-   **Monthly, per-user pricing model**. This makes Windows 10/11 Enterprise E3 affordable for any organization.
 -   **Move licenses between users**. Licenses can be quickly and easily reallocated from one user to another user, allowing you to optimize your licensing investment against changing needs.
 
-How does the Windows 10 Enterprise E3 in CSP program compare with Microsoft Volume Licensing Agreements and Software Assurance?
+How does the Windows 10/11 Enterprise E3 in CSP program compare with Microsoft Volume Licensing Agreements and Software Assurance?
 
 -   [Microsoft Volume Licensing](https://www.microsoft.com/licensing/default.aspx) programs are broader in scope, providing organizations with access to licensing for all Microsoft products.
-
 -   [Software Assurance](https://www.microsoft.com/Licensing/licensing-programs/software-assurance-default.aspx) provides organizations with the following categories of benefits:
 
     -   **Deployment and management**. These benefits include planning services, Microsoft Desktop Optimization (MDOP), Windows Virtual Desktop Access Rights, Windows-To-Go Rights, Windows Roaming Use Rights, Windows Thin PC, Windows RT Companion VDA Rights, and other benefits.
-
     -   **Training**. These benefits include training vouchers, online e-learning, and a home use program.
-
     -   **Support**. These benefits include 24x7 problem resolution support, backup capabilities for disaster recovery, System Center Global Service Monitor, and a passive secondary instance of SQL Server.
-
     -   **Specialized**. These benefits include step-up licensing availability (which enables you to migrate software from an earlier edition to a higher-level edition) and to spread license and Software Assurance payments across three equal, annual sums.
 
-    In addition, in Windows 10 Enterprise E3 in CSP, a partner can manage your licenses for you. With Software Assurance, you, the customer, manage your own licenses.
+    In addition, in Windows 10/11 Enterprise E3 in CSP, a partner can manage your licenses for you. With Software Assurance, you, the customer, manage your own licenses.
 
-In summary, the Windows 10 Enterprise E3 in CSP program is an upgrade offering that provides small- and medium-sized organizations easier, more flexible access to the benefits of Windows 10 Enterprise edition, whereas Microsoft Volume Licensing programs and Software Assurance are broader in scope and provide benefits beyond access to Windows 10 Enterprise edition.
+In summary, the Windows 10/11 Enterprise E3 in CSP program is an upgrade offering that provides small- and medium-sized organizations easier, more flexible access to the benefits of Windows 10 Enterprise edition, whereas Microsoft Volume Licensing programs and Software Assurance are broader in scope and provide benefits beyond access to the Enterprise edition of Windows 10 or Windows 11.
 
 ## Compare Windows 10 Pro and Enterprise editions
+
+> [!NOTE]
+> The following table only lists Windows 10. More information will be available about differences between Windows 11 editions after Windows 11 is generally available.
 
 Windows 10 Enterprise edition has a number of features that are unavailable in Windows 10 Pro. Table 1 lists the Windows 10 Enterprise features not found in Windows 10 Pro. Many of these features are security-related, whereas others enable finer-grained device management.
 
@@ -140,19 +140,19 @@ Windows 10 Enterprise edition has a number of features that are unavailable in 
 </tbody>
 </table>
 
-## Deployment of Windows 10 Enterprise E3 licenses
+## Deployment of Windows 10/11 Enterprise E3 licenses
 
 See [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md).
 
-## Deploy Windows 10 Enterprise features
+## Deploy Windows 10/11 Enterprise features
 
-Now that you have Windows 10 Enterprise edition running on devices, how do you take advantage of the Enterprise edition features and capabilities? What are the next steps that need to be taken for each of the features discussed in [Table 1](#compare-windows10-pro-and-enterprise-editions)?
+Now that you have Windows 10/11 Enterprise edition running on devices, how do you take advantage of the Enterprise edition features and capabilities? What are the next steps that need to be taken for each of the features discussed in [Table 1](#compare-windows10-pro-and-enterprise-editions)?
 
-The following sections provide you with the high-level tasks that need to be performed in your environment to help users take advantage of the Windows 10 Enterprise edition features.
+The following sections provide you with the high-level tasks that need to be performed in your environment to help users take advantage of the Windows 10/11 Enterprise edition features.
 
 ### Credential Guard\*
 
-You can implement Credential Guard on Windows 10 Enterprise devices by turning on Credential Guard on these devices. Credential Guard uses Windows 10 virtualization-based security features (Hyper-V features) that must be enabled on each device before you can turn on Credential Guard. You can turn on Credential Guard by using one of the following methods:
+You can implement Credential Guard on Windows 10 Enterprise devices by turning on Credential Guard on these devices. Credential Guard uses Windows 10/11 virtualization-based security features (Hyper-V features) that must be enabled on each device before you can turn on Credential Guard. You can turn on Credential Guard by using one of the following methods:
 
 -   **Automated**. You can automatically turn on Credential Guard for one or more devices by using Group Policy. The Group Policy settings automatically add the virtualization-based security features and configure the Credential Guard registry settings on managed devices.
 
@@ -174,7 +174,7 @@ For more information about implementing Credential Guard, see the following reso
 
 ### Device Guard
 
-Now that the devices have Windows 10 Enterprise, you can implement Device Guard on the Windows 10 Enterprise devices by performing the following steps:
+Now that the devices have Windows 10/11 Enterprise, you can implement Device Guard on the Windows 10 Enterprise devices by performing the following steps:
 
 1.  **Optionally, create a signing certificate for code integrity policies**. As you deploy code integrity policies, you might need to sign catalog files or code integrity policies internally. To do this, you will either need a publicly issued code signing certificate (that you purchase) or an internal certificate authority (CA). If you choose to use an internal CA, you will need to create a code signing certificate.
 
@@ -197,7 +197,7 @@ For more information about implementing Device Guard, see:
 
 ### AppLocker management
 
-You can manage AppLocker in Windows 10 Enterprise by using Group Policy. Group Policy requires that the you have AD DS and that the Windows 10 Enterprise devices are joined to the your AD DS domain. You can create AppLocker rules by using Group Policy, and then target those rules to the appropriate devices.
+You can manage AppLocker in Windows 10 Enterprise by using Group Policy. Group Policy requires that the you have AD DS and that the Windows 10/11 Enterprise devices are joined to the your AD DS domain. You can create AppLocker rules by using Group Policy, and then target those rules to the appropriate devices.
 
 For more information about AppLocker management by using Group Policy, see [AppLocker deployment guide](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-policies-deployment-guide).
 
@@ -209,7 +209,7 @@ App-V requires an App-V server infrastructure to support App-V clients. The prim
 
 -   **App-V sequencer**. The App-V sequencer is a typical client device that is used to sequence (capture) apps and prepare them for hosting from the App-V server. You install apps on the App-V sequencer, and the App-V sequencer software determines the files and registry settings that are changed during app installation. Then the sequencer captures these settings to create a virtualized app.
 
--   **App-V client**. The App-V client must be enabled on any client device on which apps will be run from the App-V server. These will be the Windows 10 Enterprise E3 devices.
+-   **App-V client**. The App-V client must be enabled on any client device on which apps will be run from the App-V server. These will be the Windows 10/11 Enterprise E3 devices.
 
 For more information about implementing the App-V server, App-V sequencer, and App-V client, see the following resources:
 
@@ -253,7 +253,7 @@ The Managed User Experience feature is a set of Windows 10 Enterprise edition f
 
 ## Related topics
 
-[Windows 10 Enterprise Subscription Activation](windows-10-subscription-activation.md)
-<BR>[Connect domain-joined devices to Azure AD for Windows 10 experiences](/azure/active-directory/devices/hybrid-azuread-join-plan)
-<BR>[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)
-<BR>[Windows for business](https://www.microsoft.com/windowsforbusiness/default.aspx)
+[Windows 10/11 Enterprise Subscription Activation](windows-10-subscription-activation.md)<br>
+[Connect domain-joined devices to Azure AD for Windows 10 experiences](/azure/active-directory/devices/hybrid-azuread-join-plan)<br>
+[Compare Windows 10 editions](https://www.microsoft.com/WindowsForBusiness/Compare)<br>
+[Windows for business](https://www.microsoft.com/windowsforbusiness/default.aspx)<br>

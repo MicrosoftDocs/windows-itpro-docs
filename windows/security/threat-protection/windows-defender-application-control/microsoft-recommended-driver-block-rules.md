@@ -26,7 +26,7 @@ ms.date:
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 Microsoft has strict requirements for code running in kernel. So, malicious actors are turning to exploit vulnerabilities in legitimate and signed kernel drivers to run malware in kernel. One of the many strengths of the Windows platform is our strong collaboration with independent hardware vendors (IHVs) and OEMs. Microsoft works closely with our IHVs and security community to ensure the highest level of driver security for our customers and when vulnerabilities in drivers do arise, that they're patched and rolled out to the ecosystem in an expedited manner. Microsoft then adds the vulnerable versions of the drivers to our ecosystem block policy, which is applied to the following sets of devices:
 

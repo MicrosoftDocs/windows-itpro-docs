@@ -52,6 +52,8 @@
           items:
             - name: Using a proxy with Delivery Optimization
               href: update/delivery-optimization-proxy.md
+            - name: Delivery Optimization client-service communication
+              href: update/delivery-optimization-workflow.md
         - name: Best practices for feature updates on mission-critical devices
           href: update/feature-update-mission-critical.md
         - name: Windows 10 deployment considerations
@@ -62,12 +64,16 @@
           href: volume-activation/plan-for-volume-activation-client.md
         - name: Features removed or planned for replacement
           items:
-            - name: Windows 10 features lifecycle
+            - name: Windows client features lifecycle
               href: planning/features-lifecycle.md
             - name: Features we're no longer developing
-              href: planning/windows-10-deprecated-features.md
+              items:
+                - name: Windows 10 deprecated features
+                  href: planning/windows-10-deprecated-features.md
             - name: Features we removed
-              href: planning/windows-10-removed-features.md         
+              items:
+                - name: Windows 10 features removed
+                  href: planning/windows-10-removed-features.md       
 
     - name: Prepare
       items: 
@@ -128,13 +134,13 @@
                   href: deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md
             - name: Subscription Activation
               items:
-                - name: Windows 10 Subscription Activation
+                - name: Windows 10/11 Subscription Activation
                   href: windows-10-subscription-activation.md
-                - name: Windows 10 Enterprise E3 in CSP
+                - name: Windows 10/11 Enterprise E3 in CSP
                   href: windows-10-enterprise-e3-overview.md
                 - name: Configure VDA for Subscription Activation
                   href: vda-subscription-activation.md
-                - name: Deploy Windows 10 Enterprise licenses
+                - name: Deploy Windows 10/11 Enterprise licenses
                   href: deploy-enterprise-licenses.md
         - name: Deploy Windows 10 updates
           items:
@@ -289,8 +295,10 @@
           href: windows-10-pro-in-s-mode.md
         - name: Windows 10 deployment tools
           items:
-            - name: Windows 10 deployment scenarios and tools
+            - name: Windows client deployment scenarios and tools
               items:
+                - name: Windows Deployment Services (WDS) boot.wim support
+                  href: wds-boot-support.md
                 - name: Convert MBR partition to GPT
                   href: mbr-to-gpt.md
                 - name: Configure a PXE server to load Windows PE

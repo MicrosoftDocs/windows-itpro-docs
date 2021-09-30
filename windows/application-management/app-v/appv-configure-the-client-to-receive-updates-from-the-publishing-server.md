@@ -1,5 +1,5 @@
 ---
-title: How to configure the client to receive package and connection groups updates from the publishing server (Windows 10)
+title: How to configure the client to receive package and connection groups updates from the publishing server (Windows 10/11)
 description: How to configure the client to receive package and connection groups updates from the publishing server.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # How to configure the client to receive package and connection groups updates from the publishing server
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 The App-V publishing server's single-point management and high scalability lets you deploy packages and connection groups and keep them up to date.
 
