@@ -99,7 +99,7 @@ The following methodology was used to derive the network endpoints:
 |Skype|The following endpoint is used to retrieve Skype configuration values.|TLSv1.2/HTTPS/HTTP|*.pipe.aria.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
-|Microsoft Defender Antivirus|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com </br>wdcpalt.microsoft.com|
+|Microsoft Defender Antivirus|The following endpoints are used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com </br>wdcpalt.microsoft.com|
 |||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
 |||TLSv1.2|definitionupdates.microsoft.com|
 ||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|
@@ -167,7 +167,7 @@ The following methodology was used to derive the network endpoints:
 |Skype|The following endpoint is used to retrieve Skype configuration values.|TLSv1.2/HTTPS/HTTP|*.pipe.aria.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
-|Microsoft Defender Antivirus|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com</br>wdcpalt.microsoft.com|
+|Microsoft Defender Antivirus|The following endpoints are used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com</br>wdcpalt.microsoft.com|
 |||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
 ||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|
 |||TLSv1.2/HTTP|checkappexec.microsoft.com|
@@ -180,8 +180,10 @@ The following methodology was used to derive the network endpoints:
 ||The following endpoints enable connections to Windows Update, Microsoft Update, and the online services of the Store to help keep the device secure.|TLSv1.2/HTTPS/HTTP|*.update.microsoft.com|
 ||The following endpoint is used for compatibility database updates for Windows.|HTTP/HTTPS|adl.windows.com|
 ||The following endpoint is used for content regulation.|TLSv1.2/HTTPS/HTTP|tsfe.trafficshaping.dsp.mp.microsoft.com|
-|Xbox Live|The following endpoints are used for Xbox Live.</br>TLSv1.2/HTTPS/HTTP|dlassets-ssl.xboxlive.com|
+|Xbox Live|The following endpoints are used for Xbox Live.|TLSv1.2/HTTPS/HTTP|dlassets-ssl.xboxlive.com|
 |||TLSv1.2/HTTPS|da.xboxservices.com|
+
+
 
 
 ## Windows 11 Education
@@ -227,7 +229,7 @@ The following methodology was used to derive the network endpoints:
 |Skype|The following endpoint is used to retrieve Skype configuration values.|TLSv1.2/HTTPS/HTTP|*.pipe.aria.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
-|Microsoft Defender Antivirus|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com</br>wdcpalt.microsoft.com|
+|Microsoft Defender Antivirus|The following endpoints are used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com</br>wdcpalt.microsoft.com|
 |||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
 ||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|
 |||TLSv1.2/HTTP|checkappexec.microsoft.com|
