@@ -125,7 +125,7 @@ Sign-in to a domain controller or management workstation with access equivalent 
 
 2. Expand the domain node from the navigation pane.
 
-3. Click **Computers** from the navigation pane. Right-click the name of the NDES server that will host the NDES server role.  Click **Add to a group...**.
+3. Click **Computers** from the navigation pane. Right-click the name of the NDES server that will host the NDES server role.  Click **Add to a group**.
 
 4. Type **NDES Servers** in **Enter the object names to select**.  Click **OK**.  Click **OK** on the **Active Directory Domain Services** success dialog.
 
@@ -351,7 +351,7 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
 
    Click **Add Features** on the **Add Roles and Feature Wizard** dialog box.  Click **Next**.
 
-   ![Server Manager Add Features.](images/aadjcert/serverManager-adcs-add-features.png)
+   ![Server Manager Add Features.](images/aadjcert/servermanager-adcs-add-features.png)
 
 5. On the **Features** page, expand **.NET Framework 3.5 Features**.  Select **HTTP Activation**.  Click **Add Features** on the **Add Roles and Feature Wizard** dialog box.  Expand **.NET Framework 4.5 Features**.  Expand **WCF Services**.  Select **HTTP Activation**.  Click **Add Features** on the **Add Roles and Feature Wizard** dialog box.  Click **Next**.
 
@@ -378,7 +378,7 @@ Sign-in to the certificate authority or management workstations with an _Enterpr
    > [!IMPORTANT]
    > .NET Framework 3.5 is not included in the typical installation.  If the server is connected to the Internet, the installation attempts to get the files using Windows Update.  If the server is not connected to the Internet, you need to **Specify an alternate source path** such as \<driveLetter>:\\Sources\SxS\
 
-   ![.NET Side by Side.](images/aadjcert/dotNet35sidebyside.png)
+   ![.NET Side by Side.](images/aadjcert/dotnet35sidebyside.png)
 
 ### Configure the NDES service account
 
