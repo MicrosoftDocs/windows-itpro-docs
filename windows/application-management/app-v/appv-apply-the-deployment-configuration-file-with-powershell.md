@@ -1,6 +1,6 @@
 ---
-title: Apply deployment config file via Windows PowerShell (Windows 10)
-description: How to apply the deployment configuration file by using Windows PowerShell for Windows 10.
+title: Apply deployment config file via Windows PowerShell (Windows 10/11)
+description: How to apply the deployment configuration file by using Windows PowerShell for Windows 10/11.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # How to apply the deployment configuration file by using Windows PowerShell
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 When you add or set a package to a computer running the App-V client before it's been published, a dynamic deployment configuration file is applied to it. The dynamic deployment configuration file configures the default settings for the package that all users share on the computer running the App-V client. This section will tell you how to use a deployment configuration file.
 
