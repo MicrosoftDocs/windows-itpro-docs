@@ -1,6 +1,6 @@
 ---
 title: Sideload LOB apps in Windows client OS | Microsoft Docs
-description: Learn how to sideload line-of-business (LOB) apps in Windows client operating systems, including Windows 10. When you sideload an app, you deploy a signed app package to a device.
+description: Learn how to sideload line-of-business (LOB) apps in Windows client operating systems, including Windows 10/11. When you sideload an app, you deploy a signed app package to a device.
 ms.assetid: C46B27D0-375B-4F7A-800E-21595CF1D53D
 ms.reviewer: 
 manager: dougeby
@@ -10,15 +10,15 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
-ms.date: 08/31/2021
 ms.localizationpriority: medium
 ---
 
 # Sideload line of business (LOB) apps in Windows client devices
 
-> Applies to:
->
-> - Windows 10
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 > [!NOTE]
 > Starting with Windows 10 2004, sideloading is enabled by default. You can deploy a signed package onto a device without a special configuration.
@@ -56,9 +56,9 @@ Managed devices are typically owned by your organization. They're managed by Gro
 Unmanaged devices are devices that are not managed by your organization. These devices are typically personal devices owned by users. Users can turn on sideloading using the Settings app.
 
 > [!IMPORTANT]
-> To install an app on Windows 10 and later, you can:
+> To install an app on Windows client, you can:
 >
-> - [Install Windows 10 apps from a web page](/windows/msix/app-installer/installing-windows10-apps-web).
+> - [Install Windows apps from a web page](/windows/msix/app-installer/installing-windows10-apps-web).
 > - Users can double-click any `.msix` or `.appx` package.
 
 ### User interface
@@ -98,7 +98,7 @@ This step installs the app certificate to the local device. Installing the certi
 
     -OR-
 
-    You can use a runtime provisioning package to import a security certificate. For information about applying a provisioning package to a Windows 10 device, see runtime instructions on [Create a provisioning package for Windows 10](/windows/configuration/provisioning-packages/provisioning-create-package).
+    You can use a runtime provisioning package to import a security certificate. For information about applying a provisioning package, see runtime instructions on [Create a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package).
 
 ## Step 3: Install the app
 
