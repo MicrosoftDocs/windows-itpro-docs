@@ -114,9 +114,9 @@ The following methods are available to assign licenses:
 
 ## Explore the upgrade experience
 
-Now that your subscription has been established and Windows 10 Enterprise E3 or E5 licenses have been assigned to users, the users are ready to upgrade their devices running Windows 10 Pro, (version 1703 or later) to Windows 10/11 Enterprise. What will the users experience? How will they upgrade their devices?
+Now that your subscription has been established and Windows 10/11 Enterprise E3 or E5 licenses have been assigned to users, the users are ready to upgrade their devices running Windows 10 Pro, (version 1703 or later) to Windows 10/11 Enterprise. What will the users experience? How will they upgrade their devices?
 
-### Step 1: Join Windows 10 Pro devices to Azure AD
+### Step 1: Join Windows 10/11 Pro devices to Azure AD
 
 Users can join a Windows 10/11 Pro device to Azure AD the first time they start the device (during setup), or they can join a device that they already use running Windows 10 Pro, version 1703 or later.
 
@@ -206,7 +206,7 @@ If there are any problems with the Windows 10/11 Enterprise E3 or E5 license or
 
 ## Virtual Desktop Access (VDA)
 
-Subscriptions to Windows 10/11 Enterprise are also available for virtualized clients. Windows 10/11 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [qualified multitenant hoster](https://aka.ms/qmth).
+Subscriptions to Windows 10/11 Enterprise are also available for virtualized clients. Windows 10/11 Enterprise E3 and E5 are available for Virtual Desktop Access (VDA) in Windows Azure or in another [Qualified Multitenant Hoster](https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf) (PDF download).
 
 Virtual machines (VMs) must be configured to enable Windows 10 Enterprise subscriptions for VDA. Active Directory-joined and Azure Active Directory-joined clients are supported. See [Enable VDA for Enterprise Subscription Activation](vda-subscription-activation.md).
 
