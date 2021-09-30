@@ -3142,6 +3142,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_Radar policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-radar.md#admx-radar-wdiscenarioexecutionpolicy" id="admx-radar-wdiscenarioexecutionpolicy">ADMX_Radar/WdiScenarioExecutionPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_Reliability policies
 
 <dl>
@@ -3329,6 +3336,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_sdiagschd policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-sdiagschd.md#admx-sdiagschd-scheduleddiagnosticsexecutionpolicy" id="admx-sdiagschd-scheduleddiagnosticsexecutionpolicy">ADMX_sdiagschd/ScheduledDiagnosticsExecutionPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_sdiageng policies
 
 <dl>
@@ -3368,6 +3383,23 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-sensors.md#admx-sensors-disablesensors-2" id="admx-sensors-disablesensors-2">ADMX_Sensors/DisableSensors_2</a>
+  </dd>
+</dl>
+
+### ADMX_ServerManager policies
+
+</dl>
+  <dd>
+    <a href="./policy-csp-admx-servermanager.md#admx-servermanager-do_not_display_manage_your_server_page" id="admx-servermanager-do_not_display_manage_your_server_page">ADMX_ServerManager/Do_not_display_Manage_Your_Server_page</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-servermanager.md#admx-servermanager-servermanagerautorefreshrate" id="admx-servermanager-servermanagerautorefreshrate">ADMX_ServerManager/ServerManagerAutoRefreshRate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-servermanager.md#admx-servermanager-donotlaunchinitialconfigurationtasks" id="admx-servermanager-donotlaunchinitialconfigurationtasks">ADMX_ServerManager/DoNotLaunchInitialConfigurationTasks</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-servermanager.md#admx-servermanager-donotlaunchservermanager" id="admx-servermanager-donotlaunchservermanager">ADMX_ServerManager/DoNotLaunchServerManager</a>
   </dd>
 </dl>
 
@@ -3521,6 +3553,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-snmp.md#admx-snmp-snmp-traps-public" id="admx-snmp-snmp-traps-public">ADMX_Snmp/SNMP_Traps_Public</a>
   </dd>
 </dl>
+
+### ADMX_SoundRec policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-soundrec.md#admx-soundrec-soundrec_diableapplication_titletext_1" id="admx-soundrec-soundrec_diableapplication_titletext_1">ADMX_SoundRec/Soundrec_DiableApplication_TitleText_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-soundrec.md#admx-soundrec-soundrec_diableapplication_titletext_2" id="admx-soundrec-soundrec_diableapplication_titletext_2">ADMX_SoundRec/Soundrec_DiableApplication_TitleText_2</a>
+  </dd>
+<dl>
 
 ### ADMX_StartMenu policies  
 
