@@ -3807,8 +3807,6 @@ If you enable this policy setting, the Shared Documents folder is not displayed 
 
 If you disable or do not configure this policy setting, the Shared Documents folder is displayed in Web view and also in My Computer when the client is part of a workgroup.
 
-> [!NOTE]
-> The ability to remove the Shared Documents folder via MDM Policy is only available on Windows XP Professional.
 
 <!--/Description-->
 
