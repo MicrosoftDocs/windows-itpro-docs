@@ -230,7 +230,7 @@ Sign-in to the issuing certificate authority with access equivalent to _local ad
 
 1. Open an elevated command prompt and type the following command:
 
-   ```
+   ```console
    certutil -setreg Policy\EditFlags +EDITF_ATTRIBUTEENDDATE
    ```
 
@@ -404,11 +404,13 @@ Sign-in the NDES server with access equivalent to _Domain Admins_.
 
 2. Type the following command to register the service principal name
 
-   ```
+   ```console
    setspn -s http/[FqdnOfNdesServer] [DomainName\\NdesServiceAccount]
    ```
+
    where **[FqdnOfNdesServer]** is the fully qualified domain name of the NDES server and **[DomainName\NdesServiceAccount]** is the domain name and NDES service account name separated by a backslash (\\).  An example of the command looks like the following:
-   ```
+
+   ```console
    setspn -s http/ndes.corp.contoso.com contoso\ndessvc
    ```
 
@@ -518,13 +520,13 @@ Sign-in to the NDES Server with _local administrator_ equivalent credentials.
 
 3. Type the following command:
 
-   ```
+   ```console
    reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v [registryValueName] /t REG_SZ /d [certificateTemplateName]
    ```
 
    where **registryValueName** is one of the three value names from the above table and where **certificateTemplateName** is the name of the certificate template you created for Windows Hello for Business Azure AD joined devices.  Example:
 
-   ```
+   ```console
    reg add HKLM\Software\Microsoft\Cryptography\MSCEP /v SignatureTemplate /t REG_SZ /d AADJWHFBAuthentication
    ```
 
@@ -713,9 +715,10 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 2. In the navigation bar, type
 
-   ```
+   ```https
    https://[fqdnHostName]/certsrv/mscep/mscep.dll
    ```
+
    where **[fqdnHostName]** is the fully qualified internal DNS host name of the NDES server.
 
 A web page similar to the following should appear in your web browser.  If you do not see a similar page, or you get a **503 Service unavailable** message, ensure the NDES Service account has the proper user rights.  You can also review the application event log for events with the **NetworkDeviceEnrollmentService** source.
@@ -766,7 +769,7 @@ Sign-in the NDES server with access equivalent to _local administrator_.
 
 2. Run the following commands:
 
-   ```
+   ```console
    reg add HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters /v MaxFieldLength /t REG_DWORD /d 65534
    reg add HKLM\SYSTEM\CurrentControlSet\Services\HTTP\Parameters /v MaxRequestBytes /t REG_DWORD /d 65534
    ```
@@ -894,7 +897,7 @@ Sign-in the NDES server with access equivalent to _domain admin_.
 
 2. Type the following command to confirm the NDES Connector's last connection time is current.
 
-   ```
+   ```console
    reg query hklm\software\Microsoft\MicrosoftIntune\NDESConnector\ConnectionStatus
    ```
 
@@ -904,7 +907,7 @@ Sign-in the NDES server with access equivalent to _domain admin_.
 
 5. In the navigation bar, type:
 
-   ```
+   ```console
    https://[fqdnHostName]/certsrv/mscep/mscep.dll
    ```
 
