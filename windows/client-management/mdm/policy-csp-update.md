@@ -4339,7 +4339,8 @@ The following list shows the supported values:
 <!--Description-->
 Available in Windows 10, version 2004 and later. Enables IT administrators to specify which product they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy to target a new product. 
 
-If no product is specified, the device will continue receiving newer versions of the Windows product it is currently on. For details about different Windows 10 versions, see [https://docs.microsoft.com/windows/release-health/release-information](https://docs.microsoft.com/windows/release-health/release-information).
+If no product is specified, the device will continue receiving newer versions of the Windows product it is currently on. For details about different Windows 10 versions, see [release information](/windows/release-health/release-information).
+
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
