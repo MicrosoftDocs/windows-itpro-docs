@@ -26,7 +26,7 @@ ms.technology: mde
 -   Windows 11
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 Beginning with the Windows 10 November 2019 update (build 18363), Microsoft Intune enables customers to deploy and run business critical Win32 applications and Windows components that are normally blocked in S mode (ex. PowerShell.exe) on their Intune-managed Windows in S mode devices.
 
