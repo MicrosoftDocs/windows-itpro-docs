@@ -171,7 +171,7 @@ sections:
           
           10. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
           
-       - question: |
+      - question: |
           How can I disable portions of ICS without breaking Application Guard?
         answer: |
           ICS is enabled by default in Windows, and ICS must be enabled in order for Application Guard to function correctly. We do not recommend disabling ICS; however, you can disable ICS in part by using a Group Policy and editing registry keys.
