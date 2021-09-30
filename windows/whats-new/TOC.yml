@@ -4,6 +4,8 @@
   expanded: true
   items:
     - name: Windows 11 overview
+      href: windows-11-features-overview.md
+    - name: ORIG overview
       href: windows-11.md
     - name: Windows 11 requirements
       href: windows-11-requirements.md
