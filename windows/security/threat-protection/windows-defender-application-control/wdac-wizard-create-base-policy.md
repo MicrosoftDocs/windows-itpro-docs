@@ -28,7 +28,7 @@ ms.technology: mde
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 When creating policies for use with Windows Defender Application Control (WDAC), it is recommended to start with a template policy and then add or remove rules to suit your application control scenario. For this reason, the WDAC Wizard offers three template policies to start from and customize during the base policy creation workflow. Prerequisite information about application control can be accessed through the [WDAC design guide](windows-defender-application-control-design-guide.md). This page outlines the steps to create a new application control policy from a template, configure the policy options, and the signer and file rules. 
 
