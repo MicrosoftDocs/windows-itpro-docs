@@ -1,7 +1,7 @@
 ---
-title: Secure the Windows 10 boot process
-description: This article describes how Windows 10 security features helps protect your PC from malware, including rootkits and other applications
-keywords: trusted boot, windows 10 boot process
+title: Secure the Windows boot process
+description: This article describes how Windows security features helps protect your PC from malware, including rootkits and other applications
+keywords: trusted boot, windows boot process
 ms.prod: w10
 ms.mktglfcycl: Explore
 ms.pagetype: security
@@ -12,12 +12,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 11/16/2018
+ms.date: 
 ms.reviewer: 
 ms.author: dansimp
 ---
 
-# Secure the Windows 10 boot process
+# Secure the Windows boot process
 
 **Applies to:**
 -  Windows 11
@@ -27,11 +27,11 @@ ms.author: dansimp
 
 The Windows operating system has many features to help protect you from malware, and it does an amazingly good job. Except for apps that businesses develop and use internally, all Microsoft Store apps must meet a series of requirements to be certified and included in the Microsoft Store. This certification process examines several criteria, including security, and is an effective means of preventing malware from entering the Microsoft Store. Even if a malicious app does get through, the Windows 10 operating system includes a series of security features that can mitigate the impact. For instance, Microsoft Store apps are sandboxed and lack the privileges necessary to access user data or change system settings.
 
-Windows has multiple levels of protection for desktop apps and data, too. Windows Defender uses signatures to detect and quarantine apps that are known to be malicious. Windows Defender SmartScreen warns users before allowing them to run an untrustworthy app, even if it’s recognized as malware. Before an app can change system settings, the user would have to grant the app administrative privileges by using User Account Control.
+Windows has multiple levels of protection for desktop apps and data, too. Windows Defender Antivirus uses cloud-powered real-time detection to identify and quarantine apps that are known to be malicious. Windows Defender SmartScreen warns users before allowing them to run an untrustworthy app, even if it’s recognized as malware. Before an app can change system settings, the user would have to grant the app administrative privileges by using User Account Control.
 
 Those are just some of the ways that Windows protects you from malware. However, those security features protect you only after Windows starts. Modern malware—and bootkits specifically—are capable of starting before Windows, completely bypassing operating system security, and remaining completely hidden.
 
-When you run Windows 10 on a PC or any PC that supports Unified Extensible Firmware Interface (UEFI), Trusted Boot protects your PC from malware from the moment you power on your PC until your anti-malware starts. In the unlikely event that malware does infect a PC, it can’t remain hidden; Trusted Boot can prove the system’s integrity to your infrastructure in a way that malware can’t disguise. Even on PCs without UEFI, Windows provides even better startup security than previous versions of Windows.
+When you run Windows 10 or Windows 11 on a PC or any PC that supports Unified Extensible Firmware Interface (UEFI), Trusted Boot protects your PC from malware from the moment you power on your PC until your anti-malware starts. In the unlikely event that malware does infect a PC, it can’t remain hidden; Trusted Boot can prove the system’s integrity to your infrastructure in a way that malware can’t disguise. Even on PCs without UEFI, Windows provides even better startup security than previous versions of Windows.
 
 First, let’s examine what rootkits are and how they work. Then, we’ll show you how Windows can protect you.
 
@@ -61,7 +61,7 @@ Figure 1 shows the Windows startup process.
 
 **Figure 1. Secure Boot, Trusted Boot, and Measured Boot block malware at every stage**
 
-Secure Boot and Measured Boot are only possible on PCs with UEFI 2.3.1 and a TPM chip. Fortunately, all Windows 10 PCs that meet Windows Hardware Compatibility Program requirements have these components, and many PCs designed for earlier versions of Windows have them as well.
+Secure Boot and Measured Boot are only possible on PCs with UEFI 2.3.1 and a TPM chip. Fortunately, all Windows 10 and Windows 11 PCs that meet Windows Hardware Compatibility Program requirements have these components, and many PCs designed for earlier versions of Windows have them as well.
 
 The sections that follow describe Secure Boot, Trusted Boot, ELAM, and Measured Boot.
 
@@ -131,4 +131,4 @@ Measured Boot uses the power of UEFI, TPM, and Windows to give you a way to conf
 Secure Boot, Trusted Boot, and Measured Boot create an architecture that is fundamentally resistant to bootkits and rootkits. In Windows, these features have the potential to eliminate kernel-level malware from your network. This is the most ground-breaking anti-malware solution that Windows has ever had; it’s leaps and bounds ahead of everything else. With Windows, you can truly trust the integrity of your operating system.
 
 ## Additional resources
--  [Windows 10 Enterprise LTSC 2019 or v2004 Evaluation](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)
+-  [Windows Enterprise Evaluation](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise)
