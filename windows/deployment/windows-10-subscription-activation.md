@@ -71,9 +71,7 @@ To support Inherited Activation, both the host computer and the VM must be runni
 
 > The original version of this section can be found at [Changing between Windows SKUs](/archive/blogs/mniehaus/changing-between-windows-skus).
 
-The following figure illustrates how deploying Windows 10 has evolved with each release. With this release, deployment is automatic.
-
-![Illustration of how Windows 10 deployment has evolved.](images/sa-evolution.png)
+The following list illustrates how deploying Windows client has evolved with each release:
 
 - **Windows 7** required you to redeploy the operating system using a full wipe-and-load process if you wanted to change from Windows 7 Professional to Windows 10 Enterprise.<br>
 - **Windows 8.1** added support for a Windows 8.1 Pro to Windows 8.1 Enterprise in-place upgrade (considered a “repair upgrade” because the OS version was the same before and after).  This was a lot easier than wipe-and-load, but it was still time-consuming.<br>
@@ -92,7 +90,7 @@ The following figure illustrates how deploying Windows 10 has evolved with each 
 > [!NOTE]
 > The following requirements do not apply to general Windows client activation on Azure. Azure activation requires a connection to Azure KMS only, and supports workgroup, Hybrid, and Azure AD-joined VMs. In most scenarios, activation of Azure VMs happens automatically. For more information, see [Understanding Azure KMS endpoints for Windows product activation of Azure Virtual Machines](/azure/virtual-machines/troubleshooting/troubleshoot-activation-problems#understanding-azure-kms-endpoints-for-windows-product-activation-of-azure-virtual-machines).
 
-> [!NOTE]
+> [!IMPORTANT]
 > Currently, Subscription Activation is only available on commercial tenants and is currently not available on US GCC, GCC High, or DoD tenants.
 
 For Microsoft customers with Enterprise Agreements (EA) or Microsoft Products & Services Agreements (MPSA), you must have the following:

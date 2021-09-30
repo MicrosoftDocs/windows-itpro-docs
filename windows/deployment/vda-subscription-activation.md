@@ -33,11 +33,10 @@ Deployment instructions are provided for the following scenarios:
 
 ## Requirements
 
-- VMs must be running Windows 10 Pro, version 1703 or later (Windows 11 is "later"). 
+- VMs must be running Windows 10 Pro, version 1703 or later. Windows 11 is "later" in this context. 
 - VMs must be Active Directory-joined or Azure Active Directory (AAD)-joined.
 - VMs must be hosted by a Qualified Multitenant Hoster (QMTH). 
-    - For more information, see (Qualified Multitenant Hoster (QMTH)
-Program)[https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf]
+    - For more information, see [Qualified Multitenant Hoster Program](https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D35D2E1BC095/QMTH%20Authorized%20Partner%20List.pdf) (PDF download).
 
 ## Activation
 
@@ -46,13 +45,13 @@ Program)[https://download.microsoft.com/download/3/D/4/3D445779-2870-4E3D-AFCB-D
 - The VM is running Windows 10, version 1803 or later (ex: Windows 11).
 - The VM is hosted in Azure or another Qualified Multitenant Hoster (QMTH).
 
-    When a user with VDA rights signs in to the VM using their AAD credentials, the VM is automatically stepped-up to Enterprise and activated. There is no need to perform Windows 10 Pro activation. This eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
+    When a user with VDA rights signs in to the VM using their AAD credentials, the VM is automatically stepped-up to Enterprise and activated. There is no need to perform Windows 10/11 Pro activation. This eliminates the need to maintain KMS or MAK in the qualifying cloud infrastructure.
 
 ### Scenario 2
 
 - The Hyper-V host and the VM are both running Windows 10, version 1803 or later.
 
-    [Inherited Activation](./windows-10-subscription-activation.md#inherited-activation) is enabled. All VMs created by a user with a Windows 10 E3 or E5 license are automatically activated independent of whether a user signs in with a local account or using an Azure Active Directory account.
+    [Inherited Activation](./windows-10-subscription-activation.md#inherited-activation) is enabled. All VMs created by a user with a Windows 10/11 E3 or E5 license are automatically activated independent of whether a user signs in with a local account or using an Azure Active Directory account.
 
 ### Scenario 3
 

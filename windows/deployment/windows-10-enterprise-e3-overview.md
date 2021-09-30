@@ -23,12 +23,14 @@ Applies to:
 - Windows 10
 - Windows 11
 
-Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. With the release of Windows 11, Windows 10/11 Enterprise E3 in CSP is available.  It delivers, by subscription, exclusive features reserved for Windows 10 or Windows 11 Enterprise editions. This offering is available through the Cloud Solution Provider (CSP) channel via the Partner Center as an online service. Windows 10/11 Enterprise E3 in CSP provides a flexible, per-user subscription for small- and medium-sized organizations (from one to hundreds of users). To take advantage of this offering, you must have the following:
+Windows 10 Enterprise E3 launched in the Cloud Solution Provider (CSP) channel on September 1, 2016. With the release of Windows 11, Windows 10/11 Enterprise E3 in CSP is available.  
+
+Windows 10/11 Enterprise E3 in CSP delivers, by subscription, exclusive features reserved for Windows 10 or Windows 11 Enterprise editions. This offering is available through the Cloud Solution Provider (CSP) channel via the Partner Center as an online service. Windows 10/11 Enterprise E3 in CSP provides a flexible, per-user subscription for small- and medium-sized organizations (from one to hundreds of users). To take advantage of this offering, you must have the following:
 
 -   Windows 10 Pro, version 1607 (Windows 10 Anniversary Update) or later (or Windows 11), installed and activated, on the devices to be upgraded.
 -   Azure Active Directory (Azure AD) available for identity management
 
-You can move from Windows 10 Pro or Windows 11 Pro to Windows 10 Enterprise or Windows 11 Enterprise more easily than ever before — with no keys, and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10/11 Enterprise E3 license, the operating system turns from Windows 10 Pro to Windows 10 Enterprise or Windows 11 Pro to Windows 11 Enterprise and all the appropriate Enterprise features are unlocked. When a subscription license expires or is transferred to another user, the Enterprise device seamlessly steps back down to Windows 10 Pro or Windows 11 Pro.
+You can move from Windows 10 Pro or Windows 11 Pro to Windows 10 Enterprise or Windows 11 Enterprise more easily than ever before — with no keys, and no reboots. After one of your users enters the Azure AD credentials associated with a Windows 10/11 Enterprise E3 license, the operating system turns from Windows 10 Pro to Windows 10 Enterprise or Windows 11 Pro to Windows 11 Enterprise, and all the appropriate Enterprise features are unlocked. When a subscription license expires or is transferred to another user, the Enterprise device seamlessly steps back down to Windows 10 Pro or Windows 11 Pro.
 
 Previously, only organizations with a Microsoft Volume Licensing Agreement could deploy Windows 10 Enterprise or Windows 11 Enterprise to their users. Now, with Windows 10/11 Enterprise E3 in CSP, small- and medium-sized organizations can more easily take advantage of Enterprise edition features.
 
@@ -44,7 +46,6 @@ When you purchase Windows 10/11 Enterprise E3 via a partner, you get the follo
 How does the Windows 10/11 Enterprise E3 in CSP program compare with Microsoft Volume Licensing Agreements and Software Assurance?
 
 -   [Microsoft Volume Licensing](https://www.microsoft.com/licensing/default.aspx) programs are broader in scope, providing organizations with access to licensing for all Microsoft products.
-
 -   [Software Assurance](https://www.microsoft.com/Licensing/licensing-programs/software-assurance-default.aspx) provides organizations with the following categories of benefits:
 
     -   **Deployment and management**. These benefits include planning services, Microsoft Desktop Optimization (MDOP), Windows Virtual Desktop Access Rights, Windows-To-Go Rights, Windows Roaming Use Rights, Windows Thin PC, Windows RT Companion VDA Rights, and other benefits.
@@ -58,7 +59,7 @@ In summary, the Windows 10/11 Enterprise E3 in CSP program is an upgrade offeri
 
 ## Compare Windows 10 Pro and Enterprise editions
 
-> [NOTE!]
+> [!NOTE]
 > The following table only lists Windows 10. More information will be available about differences between Windows 11 editions after Windows 11 is generally available.
 
 Windows 10 Enterprise edition has a number of features that are unavailable in Windows 10 Pro. Table 1 lists the Windows 10 Enterprise features not found in Windows 10 Pro. Many of these features are security-related, whereas others enable finer-grained device management.
