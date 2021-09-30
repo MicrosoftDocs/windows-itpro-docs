@@ -17,11 +17,17 @@ ms.custom:
 
 # What's new in Windows 11, and what administrators should know
 
-Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition and update to what you know, and what you're familiar. It offers innovations focused on enhancing end-user productivity, and is designed to support today's hybrid work environment.
+**Applies to**:
 
-Your investments in tools for update and device management are carried forward. For example, many of the same apps and tools can be used in Windows 11. Many of the same security settings and policies can be applied to Windows 11 devices, including PCs. You can use Windows Autopilot with a zero touch deployment to enroll your Windows devices in Microsoft Endpoint Manager. You can also use newer features, such as Azure Virtual Desktop and Windows 365 on your Windows 11 devices.
+- Windows 11
 
-This article lists what's new, and some of the features & improvements.
+Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition and update to what you know, and what you're familiar.
+
+It offers innovations focused on enhancing end-user productivity, and is designed to support today's hybrid work environment.
+
+Your investments in update and device management are carried forward. For example, many of the same apps and tools can be used in Windows 11. Many of the same security settings and policies can be applied to Windows 11 devices, including PCs. You can use Windows Autopilot with a zero touch deployment to enroll your Windows devices in Microsoft Endpoint Manager. You can also use newer features, such as Azure Virtual Desktop and Windows 365 on your Windows 11 devices.
+
+This article lists what's new, and some of the features & improvements. For more information on what's new for OEMs, see [What's new in manufacturing, customization, and design](/windows-hardware/get-started/what-s-new-in-windows).
 
 ## Security and scanning
 
@@ -39,7 +45,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 
   For more information, see [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
 
-- The Application Security features help prevent unwanted or malicious code from running, isolate untrusted websites and untrusted Office files, protect against phishing or malware websites, and more.
+- The Application Security features help prevent unwanted or malicious code from running, isolate untrusted websites & untrusted Office files, protect against phishing or malware websites, and more.
   
   For more information, see  [Windows application security](/windows/security/apps).
 
@@ -51,7 +57,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
 
   - [Windows Hello for Business Overview](/windows/security/identity-protection/hello-for-business/hello-overview)
   - [Trusted Platform Module Technology Overview](/windows/security/information-protection/tpm/trusted-platform-module-overview)
-  - [Integrate Windows Hello for Business with Endpoint Manager](/mem/intune/protect/windows-hello).
+  - [Integrate Windows Hello for Business with Endpoint Manager](/mem/intune/protect/windows-hello)
 
 For more information on the security features you can configure, manage, and enforce using Endpoint Manager, see [Protect data and devices with Microsoft Endpoint Manager](/mem/intune/protect/device-protect).
 
@@ -103,7 +109,7 @@ For more information on the security features you can configure, manage, and enf
 
 - **Taskbar**: You can also pin (and unpin) apps on the Taskbar. For example, you can pin commonly used apps in your organization, such as Outlook, Microsoft Teams, apps your organization creates, and more.
 
-  Using policy, you can deploy your customize Taskbar to devices in your organization. For more information, see [Customize the Taskbar on Windows 11](/windows/configuration/customize-taskbar-windows-11).
+  Using policy, you can deploy your customized Taskbar to devices in your organization. For more information, see [Customize the Taskbar on Windows 11](/windows/configuration/customize-taskbar-windows-11).
 
   Users can manage some Taskbar features using the **Settings** app > **Personalization**. For more information on the end user experience, see:
 
@@ -132,7 +138,7 @@ For more information on the security features you can configure, manage, and enf
 
 - Your Windows 10 apps will also work on Windows 11. **[App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure)** is also available if there are some issues.
 
-  You can continue to use **MSIX packages** for your UWP, Win32, WPF, and WinForm desktop application files. Continue to use **Windows Package Manager** to install Windows apps. You can also use **Azure Virtual desktop with MSIX app attach** to virtualize desktops and apps. For more information, see [Overview of apps on Windows client devices](/windows/application-management/apps-in-windows-10).
+  You can continue to use **MSIX packages** for your UWP, Win32, WPF, and WinForm desktop application files. Continue to use **Windows Package Manager** to install Windows apps. Use **Azure Virtual desktop with MSIX app attach** to virtualize desktops and apps. For more information on these features, see [Overview of apps on Windows client devices](/windows/application-management/apps-in-windows-10).
 
   In the **Settings** app > **Apps**, users can manage some of the app settings. For example, they can get apps anywhere, but let the user know if there's a comparable app in the Microsoft Store. They can also choose which apps start when they sign in.
 
@@ -177,7 +183,7 @@ For more information on the security features you can configure, manage, and enf
 
 - **Microsoft Endpoint Manager** is a mobile application management (MAM) and mobile device management (MDM) provider. It helps manage devices, and manage apps on devices in your organization. You configure policies, and then deploy these policies to users and groups. You can create and deploy policies that install apps, configure device features, enforce PIN requirements, block compromised devices, and more.
 
-  If you currently use Group Policy to manage your Windows 10 devices, you can also use Group Policy to manage Windows 11 devices. In Endpoint Manager, there are [administrative templates](/mem/intune/configuration/administrative-templates-windows) and the [settings catalog](mem/intune/configuration/settings-catalog) that include many of the same policies. [Group Policy analytics](/mem/intune/configuration/group-policy-analytics) analyze your on-premises group policy objects.
+  If you currently use Group Policy to manage your Windows 10 devices, you can also use Group Policy to manage Windows 11 devices. In Endpoint Manager, there are [administrative templates](/mem/intune/configuration/administrative-templates-windows) and the [settings catalog](/mem/intune/configuration/settings-catalog) that include many of the same policies. [Group Policy analytics](/mem/intune/configuration/group-policy-analytics) analyze your on-premises group policy objects.
 
 - **Updates and Delivery optimization** helps manage updates, and manage features on your devices. Starting with Windows 11, the OS feature updates are installed annually. In Windows 10, it was semiannually. For more information on servicing channels, and what they are, see [Servicing channels](/windows/deployment/update/waas-overview#servicing-channels).
 
