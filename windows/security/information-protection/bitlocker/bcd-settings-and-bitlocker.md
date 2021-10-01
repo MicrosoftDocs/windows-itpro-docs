@@ -72,7 +72,8 @@ For example, either “`winload:hypervisordebugport`” or “`winload:0x250000f
 
 Setting that applies to all boot applications may be applied only to an individual application, however the reverse is not true. For example, one can specify either: “`all:locale`” or “`winresume:locale`”, but as the bcd setting “`win-pe`” does not apply to all boot applications, “`winload:winpe`” is valid, but “`all:winpe`” is not valid. The setting that controls boot debugging (“`bootdebug`” or 0x16000010) will always be validated and will have no effect if it is included in the provided fields.
 
-> **Note:**  Take care when configuring BCD entries in the Group Policy setting. The Local Group Policy Editor does not validate the correctness of the BCD entry. BitLocker will fail to be enabled if the Group Policy setting specified is invalid.
+> [!NOTE]
+> Take care when configuring BCD entries in the Group Policy setting. The Local Group Policy Editor does not validate the correctness of the BCD entry. BitLocker will fail to be enabled if the Group Policy setting specified is invalid.
  
 ### Default BCD validation profile
 
@@ -109,7 +110,9 @@ The following table contains the default BCD validation profile used by BitLocke
 ### Full list of friendly names for ignored BCD settings
 
 This following is a full list of BCD settings with friendly names, which are ignored by default. These settings are not part of the default BitLocker validation profile, but can be added if you see a need to validate any of these settings before allowing a BitLocker–protected operating system drive to be unlocked.
-> **Note:**  Additional BCD settings exist that have hex values but do not have friendly names. These settings are not included in this list.
+
+> [!NOTE]
+> Additional BCD settings exist that have hex values but do not have friendly names. These settings are not included in this list.
 
 | Hex Value | Prefix | Friendly Name |
 | - | - | - |

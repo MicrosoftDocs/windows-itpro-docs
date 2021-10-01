@@ -1,5 +1,5 @@
 ---
-title: How to Install the Management and Reporting Databases on separate computers from the Management and Reporting Services (Windows 10)
+title: How to Install the Management and Reporting Databases on separate computers from the Management and Reporting Services (Windows 10/11)
 description: How to install the Management and Reporting Databases on separate computers from the Management and Reporting Services.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
