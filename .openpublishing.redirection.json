@@ -18963,7 +18963,7 @@
     {
       "source_path": "windows/deployment/update/waas-deployment-rings-windows-10-updates.md",
       "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/waas-servicing-differences.md",
@@ -18973,7 +18973,7 @@
     {
       "source_path": "windows/deployment/update/wufb-autoupdate.md",
       "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb",
-      "redirect_document_id": true
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/wufb-basics.md",
