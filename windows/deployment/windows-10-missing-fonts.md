@@ -46,13 +46,17 @@ If you want to use the fonts from the optional feature and you know that you wil
 For example, here are the steps to install the fonts associated with the Hebrew language:
 
 1. Select **Start > Settings**.
+
 2. In **Settings**, select **Time & language**, and then select **Region & language**.
+
 3. If Hebrew is not included in the list of languages, select the plus sign (**+**) to add a language.
+
 4. Find **Hebrew**, and then select it to add it to your language list.
 
 Once you have added Hebrew to your language list, then the optional Hebrew font feature and other optional features for Hebrew language support are installed. This process should only take a few minutes.
 
-> Note: The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
+> [!NOTE]
+> The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
 
 ## Install optional fonts manually without changing language settings:
 
@@ -61,12 +65,15 @@ If you want to use fonts in an optional feature but don't need to search web pag
 For example, here are the steps to install the fonts associated with the Hebrew language without adding the Hebrew language itself to your language preferences:
 
 1. Select **Start > Settings**.
+
 2. In **Settings**, select **Apps**, select **Apps & features**, and then select **Manage optional features**.
 
 3. If you don't see **Hebrew Supplemental Fonts** in the list of installed features, select the plus sign (**+**) to add a feature.
+
 4. Select **Hebrew Supplemental Fonts** in the list, and then clselectick **Install**.
 
-> Note: The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
+> [!NOTE]
+> The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
 
 ## Fonts included in optional font features
 
