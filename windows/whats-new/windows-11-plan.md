@@ -38,7 +38,7 @@ If you are looking for ways to optimize your approach to deploying Windows 11, o
 
 As a first step, you will need to know which of your current devices meet the Windows 11 hardware requirements. Most devices purchased in the last 18-24 months will be compatible with Windows 11. Verify that your device meets or exceeds [Windows 11 requirements](windows-11-requirements.md) to ensure it is compatible.
 
-Microsoft is currently developing analysis tools to help you evaluate your devices against the Windows 11 hardware requirements. When Windows 11 reaches general availability, users running Windows 10 Home, Pro, and Pro for Workstations will be able to use the [PC Health Check](https://www.microsoft.com/windows/windows-11#pchealthcheck) app to determine their eligibility for Windows 11. End-users running Windows 10 Enterprise and Education editions should rely on their IT administrators to let them know when they are eligible for the upgrade.  
+Microsoft is currently developing analysis tools to help you evaluate your devices against the Windows 11 hardware requirements. When Windows 11 reaches general availability, users running Windows 10 Home, Pro, and Pro for Workstations will be able to use the [PC Health Check](https://www.microsoft.com/windows/windows-11#pchealthcheck) app to determine their eligibility for Windows 11. Users running Windows 10 Enterprise and Education editions should rely on their IT administrators to let them know when they are eligible for the upgrade.  
  
 Enterprise organizations looking to evaluate device readiness in their environments can expect this capability to be integrated into existing Microsoft tools, such as Endpoint analytics and Update Compliance. This capability will be available when Windows 11 is generally available. Microsoft is also working with software publishing partners to facilitate adding Windows 11 device support into their solutions. 
 
@@ -83,7 +83,7 @@ The introduction of Windows 11 is also a good time to review your hardware refre
 
 ## Servicing and support
 
-Along with end-user experience and security improvements, Windows 11 introduces enhancements to Microsoft's servicing approach based on your suggestions and feedback. 
+Along with user experience and security improvements, Windows 11 introduces enhancements to Microsoft's servicing approach based on your suggestions and feedback. 
 
 **Quality updates**: Windows 11 and Windows 10 devices will receive regular monthly quality updates to provide security updates and bug fixes. 
 
