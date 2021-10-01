@@ -22,12 +22,12 @@ ms.topic: article
 - Windows 10
 - Windows 11
 
-This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 7 computer to a Windows 10 computer using the online computer refresh process. The computer refresh scenario is a reinstallation of an updated operating system on the same computer. You can also use this procedure to reinstall the same OS version. In this article, the computer refresh will be done while the computer is online. MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property on the [MDT resource page](/mem/configmgr/mdt/).
+This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade a Windows 10 computer to a Windows 11 computer using the online computer refresh process. The computer refresh scenario is a reinstallation of an updated operating system on the same computer. You can also use this procedure to reinstall the same OS version. In this article, the computer refresh will be done while the computer is online. MDT also supports an offline computer refresh. For more info on that scenario, see the USMTOfflineMigration property on the [MDT resource page](/mem/configmgr/mdt/).
 
 For the purposes of this topic, we will use three computers: DC01, MDT01, and PC0001. 
 - DC01 is a domain controller for the contoso.com domain.
 - MDT01 is domain member server that hosts your deployment share.
-- PC0001 is a domain member computer running a previous version of Windows that is going to be refreshed to a new version of Windows 10, with data and settings restored. The example used here is a computer running Windows 7 SP1.
+- PC0001 is a domain member computer running a previous version of Windows that is going to be refreshed to a new version of Windows 10, with data and settings restored. The example used here is a computer running Windows 10, version 1909.
 
 Both DC01 and MDT01 are running Windows Server 2019; however any supported version of Windows Server can be used. For more details on the setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
@@ -39,7 +39,7 @@ The computers used in this topic.
 
 A computer refresh is not the same as an in-place upgrade because a computer refresh involves exporting user data and settings then wiping the device before installing a fresh OS and restoring the user's data and settings.
 
-For a computer refresh with MDT, you use the User State Migration Tool (USMT), which is part of the Windows Assessment and Deployment Kit (ADK) for Windows 10, to migrate user data and settings. To complete a computer refresh you will:
+For a computer refresh with MDT, you use the User State Migration Tool (USMT), which is part of the Windows Assessment and Deployment Kit (ADK), to migrate user data and settings. To complete a computer refresh you will:
 
 1.  Back up data and settings locally, in a backup folder.
 2.  Wipe the partition, except for the backup folder.
@@ -69,15 +69,18 @@ In addition to the command-line switches that control which profiles to migrate,
 
 Multicast is a technology designed to optimize simultaneous deployment to multiple devices. If you have a limited number of simultaneous deployments, you should disable multicast which was [configured in a previous procedure](deploy-a-windows-10-image-using-mdt.md#set-up-mdt-for-multicast) in this guide. Disabling multicast will speed up deployment for a small number of computers. You will need to update the deployment share after changing this setting.
 
-## Refresh a Windows 7 SP1 client
+## Refresh a Windows 10 client
 
 In these section, we assume that you have already performed the prerequisite procedures in the following topics, so that you have a deployment share named **MDTProduction$** on MDT01:
 
 - [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md)
-- [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
-- [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
+- [Create a Windows 11 reference image](create-a-windows-11-reference-image.md)
+- [Deploy a Windows 11 image using MDT](deploy-a-windows-11-image-using-mdt.md)
 
-It is also assumed that you have a domain member client computer named PC0001 in your environment running Windows 7, 8.1 or 10 that is ready for a refresh to the latest version of Windows 10.  For demonstration purposes, we will refreshing a Windows 7 SP1 PC to Windows 10, version 1909.
+It is also assumed that you have a domain member client computer named PC0001 in your environment running Windows 7, 8.1 or 10 that is ready for a refresh to Windows 11.  For demonstration purposes, we will refreshing a Windows 10 PC to Windows 11.
+
+> [!IMPORTANT]
+> Using a Windows 11 image, it is possible to install Windows 11 on a device that doesn't meet Windows 11 hardware requirements.
  
 ### Upgrade (refresh) a Windows 7 SP1 client
 
