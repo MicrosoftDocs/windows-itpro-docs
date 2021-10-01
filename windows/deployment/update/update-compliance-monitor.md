@@ -1,5 +1,5 @@
 ---
-title: Monitor Windows Updates and Microsoft Defender AV with Update Compliance (Windows 10)
+title: Monitor Windows Updates and Microsoft Defender AV with Update Compliance
 ms.reviewer: 
 manager: laurawi
 description: You can use Update Compliance in Azure Portal to monitor the progress of updates and key antimalware protection features on devices in your network.
@@ -18,17 +18,22 @@ ms.custom: seo-marvel-apr2020
 
 # Monitor Windows Updates with Update Compliance
 
+**Applies to**
+
+- Windows 10
+- Windows 11
+
 ## Introduction
 
 Update Compliance enables organizations to:
 
-* Monitor security, quality, and feature updates for Windows 10 Professional, Education, and Enterprise editions.
+* Monitor security, quality, and feature updates for Windows 10 or Windows 11 Professional, Education, and Enterprise editions.
 * View a report of device and update issues related to compliance that need attention.
 * Check bandwidth savings incurred across multiple content types by using [Delivery Optimization](waas-delivery-optimization.md).
 
-Update Compliance is offered through the Azure portal, and is included as part of Windows 10 licenses listed in the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites). Azure Log Analytics ingestion and retention charges are not incurred on your Azure subscription for Update Compliance data.
+Update Compliance is offered through the Azure portal, and is included as part of Windows 10 or Windows 11 licenses listed in the [prerequisites](update-compliance-get-started.md#update-compliance-prerequisites). Azure Log Analytics ingestion and retention charges are not incurred on your Azure subscription for Update Compliance data.
 
-Update Compliance uses Windows 10 diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, and Delivery Optimization usage data, and then sends this data to a customer-owned [Azure Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) workspace to power the experience.
+Update Compliance uses Windows client diagnostic data for all of its reporting. It collects system data including update deployment progress, [Windows Update for Business](waas-manage-updates-wufb.md) configuration data, and Delivery Optimization usage data, and then sends this data to a customer-owned [Azure Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) workspace to power the experience.
 
 See the following topics in this guide for detailed information about configuring and using the Update Compliance solution:
 
