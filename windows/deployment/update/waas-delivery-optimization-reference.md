@@ -121,7 +121,7 @@ Download mode dictates which download sources clients are allowed to use when do
 > Starting with Windows 10, version 2006 (and in Windows 11), the Bypass option of Download Mode is no longer used.
 
 >[!NOTE]
->Group mode is a best-effort optimization and should not be relied on for an authentication of identity of devices participating in the group.
+>When you use AAD tenant, AD Site, or AD Domain as source of group IDs, that the association of devices participating in the group should not be relied on for an authentication of identity of those devices.
 
 ### Group ID
 
@@ -203,7 +203,7 @@ Starting in Windows 10, version 1803, specifies the maximum foreground download 
 ### Select a method to restrict peer selection
 Starting in Windows 10, version 1803, set this policy to restrict peer selection via selected option. Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. The subnet mask option applies to both Download Modes LAN (1) and Group (2).
 
-When you set option 0, Delivery Optimization will find peers behind the same NAT (same public IP) but still prioritize same subnet peers. When you set option 2, Delivery Optimization will restrict peer selection to peers that are locally discovered (using DNS-SD). When GroupID mode is set, it will default to using the same subnet. If you want to use the GroupID across subnets, use the NAT option = 0. 
+If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID).
 
 ### Delay background download from http (in secs)
 Starting in Windows 10, version 1803, this allows you to delay the use of an HTTP source in a background download that is allowed to use peer-to-peer.
