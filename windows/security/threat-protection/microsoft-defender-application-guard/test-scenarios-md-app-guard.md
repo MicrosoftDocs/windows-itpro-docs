@@ -1,5 +1,5 @@
 ---
-title: Testing scenarios with Microsoft Defender Application Guard (Windows 10)
+title: Testing scenarios with Microsoft Defender Application Guard (Windows 10 or Windows 11)
 description: Suggested testing scenarios for Microsoft Defender Application Guard, showing how it works in both Standalone and Enterprise-managed mode.
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -10,7 +10,7 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: 
 manager: dansimp
-ms.date: 09/14/2020
+ms.date: 09/09/2021
 ms.custom: asr
 ms.technology: mde
 ---
@@ -20,6 +20,7 @@ ms.technology: mde
 **Applies to:**
 
 - Windows 10
+- Windows 11
 
 We've come up with a list of scenarios that you can use to test hardware-based isolation in your organization.
 
@@ -50,7 +51,7 @@ How to install, set up, turn on, and configure Application Guard for Enterprise-
 
 ### Install, set up, and turn on Application Guard
 
-Before you can use Application Guard in managed mode, you must install Windows 10 Enterprise edition, version 1709, which includes the functionality. Then, you must use Group Policy to set up the required settings.
+Before you can use Application Guard in managed mode, you must install Windows 10 Enterprise edition, version 1709, and Windows 11 which includes the functionality. Then, you must use Group Policy to set up the required settings.
 
 1. [Install Application Guard](./install-md-app-guard.md#install-application-guard).
 
@@ -111,6 +112,7 @@ You have the option to change each of these settings to work with your enterpris
 
 - Windows 10 Enterprise edition, version 1709 or higher
 - Windows 10 Professional edition, version 1803
+- Windows 11
 
 #### Copy and paste options
 
@@ -169,7 +171,7 @@ You have the option to change each of these settings to work with your enterpris
     The previously added site should still appear in your **Favorites** list.
 
     > [!NOTE]
-    > If you don't allow or turn off data persistence, restarting a device or logging in and out of the isolated container triggers a recycle event that discards all generated data, including session cookies, Favorites, and so on, removing the data from Application Guard. If you turn on data persistence, all employee-generated artifacts are preserved across container recycle events. However, these artifacts only exist in the isolated container and aren't shared with the host PC. This data persists after restarts and even through build-to-build upgrades of Windows 10.
+    > If you don't allow or turn off data persistence, restarting a device or logging in and out of the isolated container triggers a recycle event that discards all generated data, including session cookies, Favorites, and so on, removing the data from Application Guard. If you turn on data persistence, all employee-generated artifacts are preserved across container recycle events. However, these artifacts only exist in the isolated container and aren't shared with the host PC. This data persists after restarts and even through build-to-build upgrades of Windows 10 and Windows 11.
     >
     > If you turn on data persistence, but later decide to stop supporting it for your employees, you can use our Windows-provided utility to reset the container and to discard any personal data.
     > <!--- Inline HTML is used on the next several lines so that the ordinal numbers will be rendered correctly; Markdown would otherwise try to render them as letters (a, b, c...) because they would be treated as a nested list --->
@@ -179,6 +181,7 @@ You have the option to change each of these settings to work with your enterpris
 
 - Windows 10 Enterprise edition, version 1803
 - Windows 10 Professional edition, version 1803
+- Windows 11
 
 #### Download options
 
@@ -210,12 +213,13 @@ You have the option to change each of these settings to work with your enterpris
 
 - Windows 10 Enterprise edition, version 1809
 - Windows 10 Professional edition, version 1809
+- Windows 11
 
 #### File trust options
 
 1. Go to the **Computer Configuration\Administrative Templates\Windows Components\Microsoft Defender Application Guard\Allow users to trust files that open in Microsoft Defender Application Guard** setting.
 
-2. Click **Enabled**, set **Options** to 2, and click **OK**.
+2. Click **Enabled**, set **Options** to **2**, and click **OK**.
 
     ![Group Policy editor File trust options.](images/appguard-gp-allow-users-to-trust-files-that-open-in-appguard.png)
 
