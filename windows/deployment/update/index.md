@@ -1,6 +1,6 @@
 ---
-title: Update Windows 10 in enterprise deployments (Windows 10)
-description: Windows as a service provides an all-new way to think about building, deploying, and servicing Windows 10.
+title: Update Windows client in enterprise deployments
+description: Windows as a service provides an all-new way to think about building, deploying, and servicing Windows client.
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo
@@ -10,12 +10,13 @@ ms.author: jaimeo
 ms.topic: article
 ---
 
-# Update Windows 10 in enterprise deployments
+# Update Windows client in enterprise deployments
 
 
 **Applies to**
 
 - Windows 10
+- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
