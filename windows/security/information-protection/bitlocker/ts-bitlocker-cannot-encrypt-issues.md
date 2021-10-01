@@ -41,6 +41,7 @@ This issue may be caused by settings that are controlled by Group Policy Objects
 To resolve this issue, follow these steps:
 
 1. Start Registry Editor, and navigate to the following subkey:
+
    **HKEY\_LOCAL\_MACHINE\\SOFTWARE\\Policies\\Microsoft\\FVE**
 
 1. Delete the following entries:
@@ -55,9 +56,13 @@ To resolve this issue, follow these steps:
 You have a computer that is running Windows 10, version 1709 or version 1607, or Windows 11. You try to encrypt a USB drive by following these steps:
 
 1. In Windows Explorer, right-click the USB drive and select **Turn on BitLocker**.
+
 1. On the **Choose how you want to unlock this drive** page, select **Use a password to unlock the drive**.
+
 1. Follow the instructions on the page to enter your password.
+
 1. On the **Are you ready to encrypt this drive?** page, select **Start encrypting**.
+
 1. The **Starting encryption** page displays the message "Access is denied."
 
 You receive this message on any computer that runs Windows 10 version 1709 or version 1607, or Windows 11, when you use any USB drive.
@@ -72,13 +77,13 @@ To verify that this issue has occurred, follow these steps:
 
 1. At the command prompt, enter the following command:
 
-   ```cmd
+   ```console
    C:\>sc sdshow bdesvc
    ```
 
    The output of this command resembles the following:
 
-   > D:(A;;CCDCLCSWRPWPDTLORCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLORCWDWO;;;BA)(A;;CCLCSWRPLORC;;;BU)(A;;CCLCSWRPLORC;;;AU)S:(AU;FA;CCDCLCSWRPWPDTLOSDRCWDWO;;;WD)
+   > `D:(A;;CCDCLCSWRPWPDTLORCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLORCWDWO;;;BA)(A;;CCLCSWRPLORC;;;BU)(A;;CCLCSWRPLORC;;;AU)S:(AU;FA;CCDCLCSWRPWPDTLOSDRCWDWO;;;WD)`
 
 1. Copy this output, and use it as part of the [**ConvertFrom-SddlString**](/powershell/module/microsoft.powershell.utility/convertfrom-sddlstring) command in the PowerShell window, as follows.
 
@@ -95,7 +100,7 @@ To verify that this issue has occurred, follow these steps:
 
 1. To repair the security descriptor of BDESvc, open an elevated PowerShell window and enter the following command:
 
-   ```ps
+   ```powershell
    sc sdset bdesvc D:(A;;CCDCLCSWRPWPDTLORCWDWO;;;SY)(A;;CCDCLCSWRPWPDTLORCWDWO;;;BA)(A;;CCLCSWRPLORC;;;BU)(A;;CCLCSWRPLORC;;;AU)S:(AU;FA;CCDCLCSWRPWPDTLOSDRCWDWO;;;WD)
    ```
 
