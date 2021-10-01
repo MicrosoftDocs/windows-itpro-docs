@@ -63,9 +63,11 @@ To use TBSLogGenerator, follow these steps:
    ![Properties and location of the TBSLogGenerator.exe file.](./images/ts-tpm-3.png)
 
 1. Run the following command:
-   ```cmd
+
+   ```console
    TBSLogGenerator.exe -LF <LogFolderName>\<LogFileName>.log > <DestinationFolderName>\<DecodedFileName>.txt
    ```
+
    where the variables represent the following values:
    - \<*LogFolderName*> = the name of the folder that contains the file to be decoded
    - \<*LogFileName*> = the name of the file to be decoded
@@ -74,7 +76,7 @@ To use TBSLogGenerator, follow these steps:
 
    For example, the following figure shows Measured Boot logs that were collected from a Windows 10 computer and put into the C:\\MeasuredBoot\\ folder. The figure also shows a Command Prompt window and the command to decode the **0000000005-0000000000.log** file:
 
-    ```cmd
+    ```console
     TBSLogGenerator.exe -LF C:\MeasuredBoot\0000000005-0000000000.log > C:\MeasuredBoot\0000000005-0000000000.txt
     ```
 
@@ -90,7 +92,7 @@ The content of this text file resembles the following.
 
 To find the PCR information, go to the end of the file.
 
-   ![View of NotePad that shows the PCR information at the end of the text file.](./images/ts-tpm-7.png)
+![View of NotePad that shows the PCR information at the end of the text file.](./images/ts-tpm-7.png)
 
 ## Use PCPTool to decode Measured Boot logs
 
@@ -102,7 +104,8 @@ PCPTool is part of the [TPM Platform Crypto-Provider Toolkit](https://www.micros
 To download and install PCPTool, go to the Toolkit page, select **Download**, and follow the instructions.
 
 To decode a log, run the following command:
-```cmd
+
+```console
 PCPTool.exe decodelog <LogFolderPath>\<LogFileName>.log > <DestinationFolderName>\<DecodedFileName>.xml
 ```  
 

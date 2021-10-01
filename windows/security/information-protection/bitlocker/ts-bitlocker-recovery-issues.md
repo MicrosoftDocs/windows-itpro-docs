@@ -49,7 +49,7 @@ You can use either of the following methods to manually back up or synchronize a
 
    For example, to back up all of the recovery information for the C: drive to AD DS, open an elevated Command Prompt window and run the following command:
 
-   ```cmd
+   ```console
    manage-bde -protectors -adbackup C:
    ```
 
@@ -60,7 +60,7 @@ You can use either of the following methods to manually back up or synchronize a
 
 You have a tablet or slate device, and you try to test BitLocker Recovery by running the following command:
 
-```cmd
+```console
 Manage-bde -forcerecovery
 ```
 
@@ -83,8 +83,8 @@ To resolve the restart loop, follow these steps:
 
 1. On the BitLocker Recovery screen, select **Skip this drive**.
 1. Select **Troubleshoot** \> **Advanced Options** \> **Command Prompt**.
-1. In the Command Prompt window, run the following commands :
-   ```cmd
+1. In the Command Prompt window, run the following commands:
+   ```console
    manage-bde –unlock C: -rp <48-digit BitLocker recovery password>
    manage-bde -protectors -disable C:
    ```
@@ -115,7 +115,7 @@ Devices that support Connected Standby (also known as *InstantGO* or *Always On,
 
 To verify the PCR values that are in use on a device, open and elevated Command Prompt window and run the following command:
 
-```cmd
+```console
 manage-bde.exe -protectors -get <OSDriveLetter>:
 ```
 
@@ -137,7 +137,7 @@ To do this, follow these steps:
    1. Your keyboard layout.
 1. Select **Troubleshoot** > **Advanced Options** > **Command Prompt**.
 1. In the Command Prompt window, run the following commands:  
-   ```cmd
+   ```console
    manage-bde -unlock -recoverypassword <Password> <DriveLetter>:  
    manage-bde -protectors -disable <DriveLetter>:  
    ```
@@ -155,7 +155,7 @@ To do this, follow these steps:
 To recover data from your Surface device if you cannot start Windows, follow steps 1 through 5 of [Step 1](#step-1) to return to the Command Prompt window, and then follow these steps:
 
 1. At the command prompt, run the following command:  
-   ```cmd
+   ```console
    manage-bde -unlock -recoverypassword <Password> <DriveLetter>:  
    ```
    In this command, \<*Password*\> is the BitLocker recovery password that you obtained in step 1 of [Step 1](#step-1), and \<*DriveLetter*> is the drive letter that is assigned to your operating system drive.  
@@ -172,14 +172,14 @@ To prevent this issue from recurring, we strongly recommend that you restore t
 To enable Secure Boot on a Surface device, follow these steps:
 
 1. Suspend BitLocker. to do this, open an elevated Windows PowerShell window, and run the following cmdlet:
-   ```ps
+   ```powershell
    Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
    ```
    In this command, <*DriveLetter*> is the letter that is assigned to your drive.
 1. Restart the device, and then edit the BIOS to set the **Secure Boot** option to **Microsoft Only**.
 1. Restart the device.
 1. Open an elevated PowerShell window, and run the following cmdlet:  
-   ```ps
+   ```powershell
    Resume-BitLocker -MountPoint "<DriveLetter>:"
    ```
 
@@ -188,13 +188,13 @@ To reset the PCR settings on the TPM, follow these steps:
 1. Disable any Group Policy Objects that configure the PCR settings, or remove the device from any groups that enforce such policies.  
    For more information, see [BitLocker Group Policy settings](./bitlocker-group-policy-settings.md).
 1. Suspend BitLocker. To do this, open an elevated Windows PowerShell window, and run the following cmdlet:
-   ```ps
+   ```powershell
    Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
    ```
    
    where <*DriveLetter*> is the letter assigned to your drive.
 1. Run the following cmdlet:  
-   ```ps
+   ```powershell
    Resume-BitLocker -MountPoint "<DriveLetter>:"
 
 #### Step 4: Suspend BitLocker during TPM or UEFI firmware updates
@@ -209,13 +209,13 @@ You can avoid this scenario when you install updates to system firmware or TPM f
 To suspend BitLocker while you install TPM or UEFI firmware updates:
 
 1. Open an elevated Windows PowerShell window, and run the following cmdlet:
-   ```ps
+   ```powershell
    Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
    ```
    In this cmdlet <*DriveLetter*> is the letter that is assigned to your drive.
 1. Install the Surface device driver and firmware updates.
 1. After you install the firmware updates, restart the computer, open an elevated PowerShell window, and then run the following cmdlet:  
-   ```ps
+   ```powershell
    Resume-BitLocker -MountPoint "<DriveLetter>:"
    ```
 
@@ -234,7 +234,7 @@ If your device is already in this state, you can successfully start Windows afte
 1. If your device starts in the (WinRE) and prompts you for the recovery password again, select **Skip the drive**.
 1. Select **Advanced options** > **Troubleshoot** > **Advanced options** > **Command Prompt**.
 1. In the Command Prompt window, run the following commands:
-   ```cmd
+   ```console
    Manage-bde -unlock c: -rp <48 digit numerical recovery password separated by “-“ in 6 digit group>
    Manage-bde -protectors -disable c:
    exit
@@ -245,7 +245,7 @@ If your device is already in this state, you can successfully start Windows afte
    > These commands suspend BitLocker for one restart of the device. The **-rc 1** option works only inside the operating system and does not work in the recovery environment.
 1. Select **Continue**. Windows should start.
 1. After Windows has started, open an elevated Command Prompt window and run the following command:
-   ```cmd
+   ```console
    Manage-bde -protectors -enable c:
    ```
 
@@ -254,7 +254,7 @@ If your device is already in this state, you can successfully start Windows afte
 
 To temporarily suspend BitLocker just before you restart the device, open an elevated Command Prompt window and run the following command:
 
-```cmd
+```console
 Manage-bde -protectors -disable c: -rc 1
 ```
 

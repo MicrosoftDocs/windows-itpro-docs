@@ -104,10 +104,11 @@ The procedures described in this section depend on the default disk partitions t
 
 To verify the configuration of the disk partitions, open an elevated Command Prompt window, and run the following commands:
 
-```
+```console
 diskpart 
 list volume
 ```
+
 ![Output of the list volume command in the Diskpart app.](./images/4509195-en-1.png)
 
 If the status of any of the volumes is not healthy or if the recovery partition is missing, you may have to reinstall Windows. Before you do this, check the configuration of the Windows image that you are using for provisioning. Make sure that the image uses the correct disk configuration. The image configuration should resemble the following (this example is from Microsoft Endpoint Configuration Manager).
@@ -118,7 +119,7 @@ If the status of any of the volumes is not healthy or if the recovery partition 
 
 To verify the status of WinRE on the device, open an elevated Command Prompt window and run the following command:
 
-```cmd
+```console
 reagentc /info
 ```
 The output of this command resembles the following.
@@ -127,7 +128,7 @@ The output of this command resembles the following.
 
 If the **Windows RE status** is not **Enabled**, run the following command to enable it:
 
-```cmd
+```console
 reagentc /enable
 ```
 
@@ -135,7 +136,7 @@ reagentc /enable
 
 If the partition status is healthy, but the **reagentc /enable** command results in an error, verify that Windows Boot Loader contains the recovery sequence GUID. To do this, run the following command in an elevated Command Prompt window:
 
-```cmd
+```console
 bcdedit /enum all
 ```
 
