@@ -18972,42 +18972,42 @@
     },
     {
       "source_path": "windows/deployment/update/wufb-autoupdate.md",
-      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/wufb-basics.md",
-      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/wufb-managedrivers.md",
-      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/wufb-manageupdate.md",
-      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/wwufb-onboard.md",
-      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/feature-update-conclusion.md",
-      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/waas-wufb-intune.md",
-      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/deployment/update/feature-update-maintenance-window.md",
-      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
       "redirect_document_id": false
     },
     {
