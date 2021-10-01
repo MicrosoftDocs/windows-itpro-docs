@@ -33,7 +33,7 @@ Microsoft has strict requirements for code running in kernel. So, malicious acto
 - Hypervisor-protected code integrity (HVCI) enabled devices
 - Windows 10 in S mode (S mode) devices
 
-The vulnerable driver blocklist is designed to harden systems against third party-developed drivers across the Windows ecosystem with any of the following attributes: 
+The vulnerable driver blocklist is designed to help harden systems against third party-developed drivers across the Windows ecosystem with any of the following attributes: 
 
 - Known security vulnerabilities that can be exploited by attackers to elevate privileges in the Windows kernel
 - Malicious behaviors (malware) or certificates used to sign malware
