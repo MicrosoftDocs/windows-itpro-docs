@@ -40,7 +40,7 @@ manager: dansimp
     <a href="#admx-previousversions-disableremotepage_2">ADMX_PreviousVersions/DisableRemotePage_2</a>
   </dd>
   <dd>
-    <a href="#admx-previousversions-hidebackupentries_1">ADMX_PreviousVersions/HideBackupEntries_1/a>
+    <a href="#admx-previousversions-hidebackupentries_1">ADMX_PreviousVersions/HideBackupEntries_1/</a>
   </dd>
   <dd>
     <a href="#admx-previousversions-hidebackupentries_2">ADMX_PreviousVersions/HideBackupEntries_2</a>

@@ -906,7 +906,6 @@ If you enable this policy setting, WER does not throttle data; that is, WER uplo
 If you disable or do not configure this policy setting, WER throttles data by default; that is, WER does not upload more than one CAB file for a report that contains data about the same event types.
 
 <!--/Description-->
-> [!TIP]
 
 <!--ADMXBacked-->
 ADMX Info:  

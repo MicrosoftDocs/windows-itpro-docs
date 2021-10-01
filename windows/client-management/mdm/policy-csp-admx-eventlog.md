@@ -1505,7 +1505,8 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-eventlog-channel-log-retention-4"></a>**ADMX_EventLog/Channel_Log_Retention_4**  
+<a href="" id="admx-eventlog-channel-log-retention-4"></a>**ADMX_EventLog/Channel_Log_Retention_4** 
+
 
 <!--SupportedSKUs-->
 <table>
