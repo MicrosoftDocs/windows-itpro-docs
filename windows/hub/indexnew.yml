@@ -229,8 +229,6 @@ additionalContent:
               url: /windows-365/index
             - text: What is Windows 365
               url: /windows-365/overview.md
-            - text: Planning guide for Windows 365
-              url: /windows-365/planning-guide.md
             - text: Windows 365 blog
               url: https://www.microsoft.com/microsoft-365/blog/
         - title: Windows Server
