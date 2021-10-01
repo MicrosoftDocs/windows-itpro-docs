@@ -1,6 +1,6 @@
 ---
-title: How to install fonts missing after upgrading to Windows 10
-description: Some of the fonts are missing from the system after you upgrade to Windows 10.
+title: How to install fonts missing after upgrading to Windows client
+description: Some of the fonts are missing from the system after you upgrade to Windows client.
 keywords: deploy, upgrade, FoD, optional feature
 ms.prod: w10
 ms.mktglfcycl: plan
@@ -9,18 +9,20 @@ ms.localizationpriority: medium
 audience: itpro
 author: greg-lindsay
 ms.audience: itpro
-ms.date: 10/31/2017
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
 ---
-# How to install fonts that are missing after upgrading to Windows 10
+# How to install fonts that are missing after upgrading to Windows client
 
-> Applies to: Windows 10
+**Applies to**
 
-When you upgrade from the Windows 7, Windows 8, or Windows 8.1 operating system to Windows 10, certain fonts are no longer available by default post-upgrade. To reduce the operating system footprint, improve performance, and optimize disk space usage, we moved many of the fonts that were previously shipped with prior versions of Windows to the optional features of Windows 10. If you install a fresh instance of Windows 10, or upgrade an older version of Windows to Windows 10, these optional features are not enabled by default. As a result, these fonts appear to be missing from the system.
+- Windows 10
+- Windows 11
 
-If you have documents created using the missing fonts, these documents might display differently on Windows 10.
+When you upgrade from the Windows 7, Windows 8, or Windows 8.1 operating system to Windows 10 or Windows 11, certain fonts are no longer available by default post-upgrade. To reduce the operating system footprint, improve performance, and optimize disk space usage, we moved many of the fonts that were previously shipped with prior versions of Windows to the optional features of Windows client. If you install a fresh instance of Windows client, or upgrade an older version of Windows to Windows client, these optional features are not enabled by default. As a result, these fonts appear to be missing from the system.
+
+If you have documents created using the missing fonts, these documents might display differently on Windows client.
 
 For example, if you have an English (or French, German, or Spanish) version of Windows 10 installed, you might notice that fonts such as the following are appear to be missing:
 
@@ -35,22 +37,26 @@ For example, if you have an English (or French, German, or Spanish) version of W
 - Gungsuh
 - GungsuhChe
 
-If you want to use these fonts, you can enable the optional feature to add these back to your system. Be aware that this is a permanent change in behavior for Windows 10, and it will remain this way in future releases.
+If you want to use these fonts, you can enable the optional feature to add them back to your system. This is a permanent change in behavior for Windows client, and it will remain this way in future releases.
 
 ## Installing language-associated features via language settings:
 
-If you want to use the fonts from the optional feature and you know that you will want to view Web pages, edit documents, or use apps in the language associated with that feature, add that language into your user profile. You do this the Settings app.
+If you want to use the fonts from the optional feature and you know that you will want to view Web pages, edit documents, or use apps in the language associated with that feature, add that language into your user profile. Use the Settings app.
 
 For example, here are the steps to install the fonts associated with the Hebrew language:
 
-1. Click **Start > Settings**.
-2. In Settings, click **Time & language**, and then click **Region & language**.
-3. If Hebrew is not included in the list of languages, click the plus sign (**+**) to add a language.
-4. Find Hebrew, and then click it to add it to your language list.
+1. Select **Start > Settings**.
 
-Once you have added Hebrew to your language list, then the optional Hebrew font feature and other optional features for Hebrew language support are installed. This should only take a few minutes.
+2. In **Settings**, select **Time & language**, and then select **Region & language**.
 
-> Note: The optional features are installed by Windows Update. This means you need to be online for the Windows Update service to work.
+3. If Hebrew is not included in the list of languages, select the plus sign (**+**) to add a language.
+
+4. Find **Hebrew**, and then select it to add it to your language list.
+
+Once you have added Hebrew to your language list, then the optional Hebrew font feature and other optional features for Hebrew language support are installed. This process should only take a few minutes.
+
+> [!NOTE]
+> The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
 
 ## Install optional fonts manually without changing language settings:
 
@@ -58,13 +64,16 @@ If you want to use fonts in an optional feature but don't need to search web pag
 
 For example, here are the steps to install the fonts associated with the Hebrew language without adding the Hebrew language itself to your language preferences:
 
-1. Click **Start > Settings**.
-2. In Settings, click **Apps**, click **Apps & features**, and then click **Manage optional features**.
+1. Select **Start > Settings**.
 
-3. If you don't see **Hebrew Supplemental Fonts** in the list of installed features, click the plus sign (**+**) to add a feature.
-4. Select **Hebrew Supplemental Fonts** in the list, and then click **Install**.
+2. In **Settings**, select **Apps**, select **Apps & features**, and then select **Manage optional features**.
 
-> Note: The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
+3. If you don't see **Hebrew Supplemental Fonts** in the list of installed features, select the plus sign (**+**) to add a feature.
+
+4. Select **Hebrew Supplemental Fonts** in the list, and then clselectick **Install**.
+
+> [!NOTE]
+> The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
 
 ## Fonts included in optional font features
 
@@ -95,7 +104,7 @@ Here is a comprehensive list of the font families in each of the optional featur
 - Telugu Supplemental Fonts: Gautami, Vani
 - Thai Supplemental Fonts: Angsana New, AngsanaUPC, Browallia New, BrowalliaUPC, Cordia New, CordiaUPC, DilleniaUPC, EucrosiaUPC, FreesiaUPC, IrisUPC, JasmineUPC, KodchiangUPC, Leelawadee, LilyUPC
 
-## Related Topics
+## Related articles
 
 [Download the list of all available language FODs](https://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
 
