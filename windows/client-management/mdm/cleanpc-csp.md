@@ -23,14 +23,14 @@ CleanPC
 ----CleanPCRetainingUserData
 ```
 <a href="" id="--device-vendor-msft-cleanpc"></a>**./Device/Vendor/MSFT/CleanPC**  
-<p style="margin-left: 20px">The root node for the CleanPC configuration service provider.</p>
+<p>The root node for the CleanPC configuration service provider.</p>
 
 <a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCWithoutRetainingUserData**  
-<p style="margin-left: 20px">An integer specifying a CleanPC operation without any retention of user data.
+<p>An integer specifying a CleanPC operation without any retention of user data.
 
-<p style="margin-left: 20px">The only supported operation is Execute.
+<p>The only supported operation is Execute.
 
 <a href="" id="cleanpcwithoutretaininguserdata"></a>**CleanPCRetainingUserData**  
-<p style="margin-left: 20px">An integer specifying a CleanPC operation with retention of user data. 
+<p>An integer specifying a CleanPC operation with retention of user data. 
 
-<p style="margin-left: 20px">The only supported operation is Execute.
+<p>The only supported operation is Execute.

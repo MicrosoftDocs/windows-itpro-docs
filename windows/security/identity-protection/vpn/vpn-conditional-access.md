@@ -1,5 +1,5 @@
 ---
-title: VPN and conditional access (Windows 10)
+title: VPN and conditional access (Windows 10 and Windows 11)
 description: Learn how to integrate the VPN client with the Conditional Access Platform, so you can create access rules for Azure Active Directory (Azure AD) connected apps.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -10,12 +10,12 @@ ms.author: dansimp
 manager: dansimp
 ms.reviewer: 
 ms.localizationpriority: medium
-ms.date: 03/21/2019
+ms.date: 09/23/2021
 ---
 
 # VPN and conditional access
 
->Applies to: Windows 10 and Windows 10 Mobile
+>Applies to: Windows 10 and Windows 11
 
 The VPN client is now able to integrate with the cloud-based Conditional Access Platform to provide a device compliance option for remote clients. Conditional Access is a policy-based evaluation engine that lets you create access rules for any Azure Active Directory (Azure AD) connected application.  
 
@@ -91,7 +91,7 @@ The VPN client side connection flow works as follows:
  
 When a VPNv2 Profile is configured with \<DeviceCompliance> \<Enabled>true<\/Enabled> the VPN client uses this connection flow:
 
-1.	 The VPN client calls into Windows 10’s Azure AD Token Broker, identifying itself as a VPN client.
+1.	 The VPN client calls into Windows 10’s or Windows 11’s Azure AD Token Broker, identifying itself as a VPN client.
 
 2.	 The Azure AD Token Broker authenticates to Azure AD and provides it with information about the device trying to connect. The Azure AD Server checks if the device is in compliance with the policies.
 
@@ -110,6 +110,7 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 - [Azure Active Directory conditional access](/azure/active-directory/conditional-access/overview)
 - [Getting started with Azure Active Directory Conditional Access](/azure/active-directory/authentication/tutorial-enable-azure-mfa)
 - [Control the health of Windows 10-based devices](../../threat-protection/protect-high-value-assets-by-controlling-the-health-of-windows-10-based-devices.md)
+- Control the health of Windows 11-based devices
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 1)](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn)
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 2)](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-2)
 - [Tip of the Day: The Conditional Access Framework and Device Compliance for VPN (Part 3)](/archive/blogs/tip_of_the_day/tip-of-the-day-the-conditional-access-framework-and-device-compliance-for-vpn-part-3)

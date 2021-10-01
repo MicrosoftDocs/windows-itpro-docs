@@ -23,9 +23,9 @@ This article describes common issues that may prevent BitLocker from behaving as
 > [!NOTE]
 > In this article, "recovery password" refers to the 48-digit recovery password and "recovery key" refers to 32-digit recovery key. For more information, see [BitLocker key protectors](./prepare-your-organization-for-bitlocker-planning-and-policies.md#bitlocker-key-protectors).
 
-## Windows 10 prompts for a non-existing BitLocker recovery password
+## Windows prompts for a non-existing BitLocker recovery password
 
-Windows 10 prompts you for a BitLocker recovery password. However, you did not configure a BitLocker recovery password.
+Windows prompts you for a BitLocker recovery password. However, you did not configure a BitLocker recovery password.
 
 ### Resolution
 
@@ -37,7 +37,7 @@ The BitLocker and Active Directory Domain Services (AD DS) FAQ addresses situati
 
 ## The recovery password for a laptop was not backed up, and the laptop is locked
 
-You have a Windows 10 Home-based laptop, and you have to recover its hard disk. The disk was encrypted by using BitLocker Driver Encryption. However, the BitLocker recovery password was not backed up, and the usual user of the laptop is not available to provide the password.
+You have a Windows 11 or Windows 10 Home-based laptop, and you have to recover its hard disk. The disk was encrypted by using BitLocker Driver Encryption. However, the BitLocker recovery password was not backed up, and the usual user of the laptop is not available to provide the password.
 
 ### Resolution
 
@@ -49,7 +49,7 @@ You can use either of the following methods to manually back up or synchronize a
 
    For example, to back up all of the recovery information for the C: drive to AD DS, open an elevated Command Prompt window and run the following command:
 
-   ```cmd
+   ```console
    manage-bde -protectors -adbackup C:
    ```
 
@@ -60,7 +60,7 @@ You can use either of the following methods to manually back up or synchronize a
 
 You have a tablet or slate device, and you try to test BitLocker Recovery by running the following command:
 
-```cmd
+```console
 Manage-bde -forcerecovery
 ```
 
@@ -82,14 +82,21 @@ This behavior is by design for all versions of Windows.
 To resolve the restart loop, follow these steps:
 
 1. On the BitLocker Recovery screen, select **Skip this drive**.
+
 1. Select **Troubleshoot** \> **Advanced Options** \> **Command Prompt**.
-1. In the Command Prompt window, run the following commands :
-   ```cmd
+
+1. In the Command Prompt window, run the following commands:
+
+   ```console
    manage-bde –unlock C: -rp <48-digit BitLocker recovery password>
    manage-bde -protectors -disable C:
+
    ```
+
 1. Close the Command Prompt window.
+
 1. Shut down the device.
+
 1. Start the device. Windows should start as usual.
 
 ## After you install UEFI or TPM firmware updates on Surface, BitLocker prompts for the recovery password
@@ -115,7 +122,7 @@ Devices that support Connected Standby (also known as *InstantGO* or *Always On,
 
 To verify the PCR values that are in use on a device, open and elevated Command Prompt window and run the following command:
 
-```cmd
+```console
 manage-bde.exe -protectors -get <OSDriveLetter>:
 ```
 
@@ -130,21 +137,34 @@ If you have installed a TPM or UEFI update and your device cannot start, even if
 To do this, follow these steps:
 
 1. Obtain your BitLocker recovery password from [your Microsoft.com account](https://account.microsoft.com/devices/recoverykey). If BitLocker is managed by a different method, such as Microsoft BitLocker Administration and Monitoring (MBAM), contact your administrator for help.
+
 1. Use another computer to download the Surface recovery image from [Download a recovery image for your Surface](https://support.microsoft.com/surfacerecoveryimage). Use the downloaded image to create a USB recovery drive.
+
 1. Insert the USB Surface recovery image drive into the Surface device, and start the device.
+
 1. When you are prompted, select the following items:
+
    1. Your operating system language.
+
    1. Your keyboard layout.
+
 1. Select **Troubleshoot** > **Advanced Options** > **Command Prompt**.
+
 1. In the Command Prompt window, run the following commands:  
-   ```cmd
+
+   ```console
    manage-bde -unlock -recoverypassword <Password> <DriveLetter>:  
    manage-bde -protectors -disable <DriveLetter>:  
+
    ```
+
    In these commands, \<*Password*\> is the BitLocker recovery password that you obtained in step 1, and \<*DriveLetter*> is the drive letter that is assigned to your operating system drive.  
+
    > [!NOTE]
    > For more information about how to use this command, see [manage-bde: unlock](/windows-server/administration/windows-commands/manage-bde-unlock).
+
 1. Restart the computer.
+
 1. When you are prompted, enter the BitLocker recovery password that you obtained in step 1.
 
 > [!NOTE]
@@ -155,11 +175,15 @@ To do this, follow these steps:
 To recover data from your Surface device if you cannot start Windows, follow steps 1 through 5 of [Step 1](#step-1) to return to the Command Prompt window, and then follow these steps:
 
 1. At the command prompt, run the following command:  
-   ```cmd
+
+   ```console
    manage-bde -unlock -recoverypassword <Password> <DriveLetter>:  
    ```
+
    In this command, \<*Password*\> is the BitLocker recovery password that you obtained in step 1 of [Step 1](#step-1), and \<*DriveLetter*> is the drive letter that is assigned to your operating system drive.  
+
 1. After the drive is unlocked, use the **copy** or **xcopy** command to copy the user data to another drive.  
+
    > [!NOTE]
    > For more information about the these commands, see the [Windows commands](/windows-server/administration/windows-commands/windows-commands).
   
@@ -172,30 +196,42 @@ To prevent this issue from recurring, we strongly recommend that you restore t
 To enable Secure Boot on a Surface device, follow these steps:
 
 1. Suspend BitLocker. to do this, open an elevated Windows PowerShell window, and run the following cmdlet:
-   ```ps
+
+   ```powershell
    Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
    ```
+
    In this command, <*DriveLetter*> is the letter that is assigned to your drive.
+
 1. Restart the device, and then edit the BIOS to set the **Secure Boot** option to **Microsoft Only**.
+
 1. Restart the device.
+
 1. Open an elevated PowerShell window, and run the following cmdlet:  
-   ```ps
+
+   ```powershell
    Resume-BitLocker -MountPoint "<DriveLetter>:"
    ```
 
 To reset the PCR settings on the TPM, follow these steps:
 
 1. Disable any Group Policy Objects that configure the PCR settings, or remove the device from any groups that enforce such policies.  
+
    For more information, see [BitLocker Group Policy settings](./bitlocker-group-policy-settings.md).
+
 1. Suspend BitLocker. To do this, open an elevated Windows PowerShell window, and run the following cmdlet:
-   ```ps
+
+   ```powershell
    Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
    ```
    
    where <*DriveLetter*> is the letter assigned to your drive.
+
 1. Run the following cmdlet:  
-   ```ps
+
+   ```powershell
    Resume-BitLocker -MountPoint "<DriveLetter>:"
+   ```
 
 #### Step 4: Suspend BitLocker during TPM or UEFI firmware updates
 
@@ -209,13 +245,19 @@ You can avoid this scenario when you install updates to system firmware or TPM f
 To suspend BitLocker while you install TPM or UEFI firmware updates:
 
 1. Open an elevated Windows PowerShell window, and run the following cmdlet:
-   ```ps
+
+   ```powershell
    Suspend-BitLocker -MountPoint "<DriveLetter>:" -RebootCount 0  
+
    ```
+
    In this cmdlet <*DriveLetter*> is the letter that is assigned to your drive.
+
 1. Install the Surface device driver and firmware updates.
+
 1. After you install the firmware updates, restart the computer, open an elevated PowerShell window, and then run the following cmdlet:  
-   ```ps
+
+   ```powershell
    Resume-BitLocker -MountPoint "<DriveLetter>:"
    ```
 
@@ -223,29 +265,38 @@ To re-enable BitLocker Drive Encryption, select **Start**, type **Manage BitLock
 
 ## After you install an update to a Hyper V-enabled computer, BitLocker prompts for the recovery password and returns error 0xC0210000
 
-You have a device that runs Windows 10, version 1703, Windows 10, version 1607, or Windows Server 2016. Also, Hyper-V is enabled on the device. After you install an affected update and restart the device, the device enters BitLocker Recovery mode and you see error code 0xC0210000.
+You have a device that runs Windows 11, Windows 10, version 1703, Windows 10, version 1607, or Windows Server 2016. Also, Hyper-V is enabled on the device. After you install an affected update and restart the device, the device enters BitLocker Recovery mode and you see error code 0xC0210000.
 
 ### Workaround
 
 If your device is already in this state, you can successfully start Windows after suspending BitLocker from the Windows Recovery Environment (WinRE). To do this, follow these steps:
 
 1. Retrieve the 48-digit BitLocker recovery password for the operating system drive from your organization's portal or from wherever the password was stored when BitLocker Drive Encryption was first turned on.
+
 1. On the Recovery screen, press Enter. When you are prompted, enter the recovery password.
+
 1. If your device starts in the (WinRE) and prompts you for the recovery password again, select **Skip the drive**.
+
 1. Select **Advanced options** > **Troubleshoot** > **Advanced options** > **Command Prompt**.
+
 1. In the Command Prompt window, run the following commands:
-   ```cmd
+
+   ```console
    Manage-bde -unlock c: -rp <48 digit numerical recovery password separated by “-“ in 6 digit group>
    Manage-bde -protectors -disable c:
    exit
    ```
    
    These commands unlock the drive and then suspend BitLocker by disabling the TPM protectors on the drive. The final command closes the Command Prompt window.
+
    > [!NOTE]
    > These commands suspend BitLocker for one restart of the device. The **-rc 1** option works only inside the operating system and does not work in the recovery environment.
+
 1. Select **Continue**. Windows should start.
+
 1. After Windows has started, open an elevated Command Prompt window and run the following command:
-   ```cmd
+
+   ```console
    Manage-bde -protectors -enable c:
    ```
 
@@ -254,7 +305,7 @@ If your device is already in this state, you can successfully start Windows afte
 
 To temporarily suspend BitLocker just before you restart the device, open an elevated Command Prompt window and run the following command:
 
-```cmd
+```console
 Manage-bde -protectors -disable c: -rc 1
 ```
 
@@ -262,12 +313,12 @@ Manage-bde -protectors -disable c: -rc 1
 
 To resolve this issue, install the appropriate update on the affected device:  
 
-- For Windows 10, version 1703: [July 9, 2019—KB4507450 (OS Build 15063.1928)](https://support.microsoft.com/help/4507450/windows-10-update-kb4507450)
-- For Windows 10, version 1607 and Windows Server 2016: [July 9, 2019—KB4507460 (OS Build 14393.3085)](https://support.microsoft.com/help/4507460/windows-10-update-kb4507460)
+- For Windows 10, version 1703, or Windows 11: [July 9, 2019—KB4507450 (OS Build 15063.1928)](https://support.microsoft.com/help/4507450/windows-10-update-kb4507450)
+- For Windows 11, Windows 10, version 1607 and Windows Server 2016: [July 9, 2019—KB4507460 (OS Build 14393.3085)](https://support.microsoft.com/help/4507460/windows-10-update-kb4507460)
 
 ## Credential Guard/Device Guard on TPM 1.2: At every restart, BitLocker prompts for the recovery password and returns error 0xC0210000
 
-You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the device uses [Virtualization-based Security](/windows-hardware/design/device-experiences/oem-vbs) features such as [Device Guard and Credential Guard](/windows-hardware/drivers/bringup/device-guard-and-credential-guard). Every time that you start the device, the device enters BitLocker Recovery mode and you see error code 0xc0210000, and a message that resembles the following.
+You have a device that uses TPM 1.2 and runs Windows 10, version 1809, or Windows 11. Also, the device uses [Virtualization-based Security](/windows-hardware/design/device-experiences/oem-vbs) features such as [Device Guard and Credential Guard](/windows-hardware/drivers/bringup/device-guard-and-credential-guard). Every time that you start the device, the device enters BitLocker Recovery mode and you see error code 0xc0210000, and a message that resembles the following.
 
 > Recovery
 > 
@@ -282,7 +333,7 @@ You have a device that uses TPM 1.2 and runs Windows 10, version 1809. Also, the
 
 TPM 1.2 does not support Secure Launch. For more information, see [System Guard Secure Launch and SMM protection: Requirements Met by System Guard Enabled Machines](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md)
 
-For more information about this technology, see [Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10](../../threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
+For more information about this technology, see [Windows Defender System Guard: How a hardware-based root of trust helps protect Windows](../../threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md)
 
 ### Resolution
 

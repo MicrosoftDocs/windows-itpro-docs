@@ -199,6 +199,9 @@ manager: dansimp
     <a href="#update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
   </dd>
   <dd> 
+    <a href="#update-targetproductversion">Update/TargetProductVersion</a> 
+  </dd>
+  <dd> 
     <a href="#update-targetreleaseversion">Update/TargetReleaseVersion</a> 
   </dd>
   <dd>
@@ -1747,7 +1750,7 @@ Other/cannot defer:
   Any update category not specifically enumerated above falls into this category.
       - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
 
-<!--<table style="margin-left: 20px">
+<!--<table>
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -1764,16 +1767,16 @@ Other/cannot defer:
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>OS upgrade</p></td>
-<td style="vertical-align:top"><p>8 months</p></td>
-<td style="vertical-align:top"><p>1 month</p></td>
-<td style="vertical-align:top"><p>Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</p></td>
+<td><p>OS upgrade</p></td>
+<td><p>8 months</p></td>
+<td><p>1 month</p></td>
+<td><p>Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>Update</p></td>
-<td style="vertical-align:top"><p>1 month</p></td>
-<td style="vertical-align:top"><p>1 week</p></td>
-<td style="vertical-align:top"><div class="alert">
+<td><p>Update</p></td>
+<td><p>1 month</p></td>
+<td><p>1 week</p></td>
+<td><div class="alert">
 <strong>Note</strong>
 If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
 </div>
@@ -1789,10 +1792,10 @@ If a machine has Microsoft Update enabled, any Microsoft Updates in these catego
 </ul></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>Other/cannot defer</p></td>
-<td style="vertical-align:top"><p>No deferral</p></td>
-<td style="vertical-align:top"><p>No deferral</p></td>
-<td style="vertical-align:top"><p>Any update category not specifically enumerated above falls into this category.</p>
+<td><p>Other/cannot defer</p></td>
+<td><p>No deferral</p></td>
+<td><p>No deferral</p></td>
+<td><p>Any update category not specifically enumerated above falls into this category.</p>
 <p>Definition Update - E0789628-CE08-4437-BE74-2495B842F43B</p></td>
 </tr>
 </tbody>
@@ -4281,6 +4284,86 @@ The following list shows the supported values:
 
 <!--/SupportedValues-->
 <!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="update-targetproductversion"></a>**Update/TargetProductVersion**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+Available in Windows 10, version 2004 and later. Enables IT administrators to specify which product they would like their device(s) to move to and/or stay on until they reach end of service or reconfigure the policy to target a new product. 
+
+If no product is specified, the device will continue receiving newer versions of the Windows product it is currently on. For details about different Windows 10 versions, see [release information](/windows/release-health/release-information).
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *Select the target Feature Update version*
+-   GP name: *TargetProductVersion*
+-   GP element: *TargetProductVersionId*
+-   GP path: *Windows Components/Windows Update/Windows Update for Business*
+-   GP ADMX file name: *WindowsUpdate.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+Value type is a string containing a Windows product, for example, “Windows 11” or “11” or “Windows 10”.
+<!--/SupportedValues-->
+<!--Example-->
+
+<!--/Example-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+By using this Windows Update for Business policy to upgrade devices to a new product (ex. Windows 11) you are agreeing that when applying this operating system to a device either 
+(1) The applicable Windows license was purchased though volume licensing, or 
+(2) That you are authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: (https://www.microsoft.com/Useterms).
 
 <hr/>
 

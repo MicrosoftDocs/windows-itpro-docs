@@ -1,6 +1,6 @@
 ---
-title: How provisioning works in Windows 10 (Windows 10)
-description: A provisioning package (.ppkg) is a container for a collection of configuration settings. 
+title: How provisioning works in Windows 10/11
+description: Learn more about how provisioning package work on Windows client devices. A provisioning package (.ppkg) is a container for a collection of configuration settings. 
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -8,24 +8,23 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer: gkomatsu
 manager: dansimp
 ---
 
-# How provisioning works in Windows 10
+# How provisioning works in Windows
 
 
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
+-   Windows 11
 
-Provisioning packages in Windows 10 provide IT administrators with a simplified way to apply configuration settings to Windows 10 devices. Windows Configuration Designer is a tool that makes it easy to create a provisioning package. Windows Configuration Designer can be installed from the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) or through the Microsoft Store.
+Provisioning packages in Windows client provide IT administrators with a simplified way to apply configuration settings to Windows client devices. Windows Configuration Designer is a tool that makes it easy to create a provisioning package. Windows Configuration Designer can be installed from <!-- the [Windows Assessment and Deployment Kit (ADK)](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) or through the --> Microsoft Store.
 
 ## Provisioning packages
 
-A provisioning package contains specific configurations/settings and assets that can be provided through a removable media or simply downloaded to the device.
+A provisioning package contains specific configurations/settings and assets that can be provided through a removable media or downloaded to the device.
 
 To enable adding multiple sets of settings or configurations, the configuration data used by the provisioning engine is built out of multiple configuration sources that consist of separate provisioning packages. Each provisioning package contains the provisioning data from a different source.
 
@@ -69,7 +68,7 @@ When the provisioning engine selects a configuration, the Windows provisioning X
 
 ## Provisioning engine
 
-The provisioning engine is the core component for managing provisioning and configuration at runtime in a device running Windows 10. 
+The provisioning engine is the core component for managing provisioning and configuration at runtime in a device running Windows 10/11. 
 
 The provisioning engine provides the following functionality:
 
@@ -82,7 +81,7 @@ The provisioning engine provides the following functionality:
 
 ## Configuration manager
 
-The configuration manager provides the unified way of managing Windows 10 devices. Configuration is mainly done through the Open Mobile Alliance (OMA) Device Management (DM) and Client Provisioning (CP) protocols. The configuration manager handles and parses these protocol requests from different channels and passes them down to [Configuration Service Providers (CSPs)](/windows/client-management/mdm/configuration-service-provider-reference) to perform the specific management requests and settings. 
+The configuration manager provides the unified way of managing Windows 10/11 devices. Configuration is mainly done through the Open Mobile Alliance (OMA) Device Management (DM) and Client Provisioning (CP) protocols. The configuration manager handles and parses these protocol requests from different channels and passes them down to [Configuration Service Providers (CSPs)](/windows/client-management/mdm/configuration-service-provider-reference) to perform the specific management requests and settings. 
 
 The provisioning engine relies on configuration manager for all of the actual processing and application of a chosen configuration. The provisioning engine determines the stage of provisioning and, based on a set of keys, determines the set of configuration to send to the configuration manager. The configuration manager in turn parses and calls into the CSPs for the setting to be applied. 
 
@@ -110,14 +109,6 @@ When a trigger occurs, provisioning is initiated for a particular provisioning s
 - **Update**: Runs after an update to apply potential updated settings changes.
 - **User**: runs during a user account first run to configure per-user settings.
 
-
-
-
-
-
-
-
-
 ## Device provisioning during OOBE
 
 The provisioning engine always applies provisioning packages persisted in the `C:\Recovery\Customizations` folder on the OS partition. When the provisioning engine applies provisioning packages in the `%ProgramData%\Microsoft\Provisioning` folder, certain runtime setting applications, such as the setting to install and configure Windows apps, may be extended past the OOBE pass and continually be processed in the background when the device gets to the desktop. Settings for configuring policies and certain crucial system configurations are always be completed before the first point at which they must take effect. 
@@ -129,8 +120,8 @@ The following table shows how device provisioning can be initiated when a user f
 
 | Package delivery | Initiation method | Supported device |
 | --- | --- | --- |
-| Removable media - USB drive or SD card</br> (Packages must be placed at media root) | 5 fast taps on the Windows key to launch the provisioning UI |All Windows devices |
-| From an administrator device through machine-to-machine NFC or NFC tag</br>(The administrator device must run an app that can transfer the package over NFC) | 5 fast taps on the Windows key to launch the provisioning UI | Windows 10 Mobile devices and IoT Core devices |
+| Removable media - USB drive or SD card</br> (Packages must be placed at media root) | Five fast taps on the Windows key to launch the provisioning UI |All Windows devices |
+| From an administrator device through machine-to-machine NFC or NFC tag</br>(The administrator device must run an app that can transfer the package over NFC) | Five fast taps on the Windows key to launch the provisioning UI | Windows IoT Core devices |
  
 The provisioning engine always copies the acquired provisioning packages to the `%ProgramData%\Microsoft\Provisioning` folder before processing them during OOBE. The provisioning engine always applies provisioning packages embedded in the installed Windows image during Windows Setup OOBE pass regardless of whether the package is signed and trusted. When the provisioning engine applies an encrypted provisioning package on an end-user device during OOBE, users must first provide a valid password to decrypt the package. The provisioning engine also checks whether a provisioning package is signed and trusted; if it's not, the user must provide consent before the package is applied to the device. 
 
@@ -143,8 +134,8 @@ At device runtime, stand-alone provisioning packages can be applied by user init
 | Package delivery | Initiation method | Supported device |
 | --- | --- | --- |
 | Removable media - USB drive or SD card</br>(Packages must be placed at media root) | **Settings** > **Accounts** > **Access work or school** > **Add or remove a provisioning package** | All Windows devices |
-| Downloaded from a network connection and copied to a local folder | Double-click the package file | Windows 10 for desktop editions devices |
-| From an administrator device connected to the target device through USB tethering | Drag and drop the package file onto the target device | Windows 10 Mobile devices and IoT Core devices |
+| Downloaded from a network connection and copied to a local folder | Double-click the package file | Windows client for desktop editions devices |
+| From an administrator device connected to the target device through USB tethering | Drag and drop the package file onto the target device | Windows IoT Core devices |
 
 When applying provisioning packages from a removable media attached to the device, the Settings UI allows viewing contents of a package before selecting the package for provisioning. To minimize the risk of the device being spammed by applying provisioning packages from unknown sources, a provisioning package can be signed and encrypted. Partners can also set policies to limit the application of provisioning packages at device runtime. Applying provisioning packages at device runtime requires administrator privilege. If the package is not signed or trusted, a user must provide consent before the package is applied to the device. If the package is encrypted, a valid password is needed to decrypt the package before it can be applied to the device.
 
@@ -157,25 +148,16 @@ After a stand-alone provisioning package is applied to the device, the package i
 
 -   Watch the video: [Provisioning Windows 10 Devices with New Tools](https://go.microsoft.com/fwlink/p/?LinkId=615921)
 
--   Watch the video: [Windows 10 for Mobile Devices: Provisioning Is Not Imaging](https://go.microsoft.com/fwlink/p/?LinkId=615922)
 
+## Related articles
 
-## Related topics
-
-- [Provisioning packages for Windows 10](provisioning-packages.md)
+- [Provisioning packages for Windows client](provisioning-packages.md)
 - [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Create a provisioning package](provisioning-create-package.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
-- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
+- [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)
-
-
-
-
- 
-
- 

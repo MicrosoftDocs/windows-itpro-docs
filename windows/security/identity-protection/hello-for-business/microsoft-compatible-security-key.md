@@ -1,6 +1,6 @@
 ---
 title: Microsoft-compatible security key 
-description: Learn how a Microsoft-compatible security key for Windows 10 is different (and better) than any other FIDO2 security key.
+description: Learn how a Microsoft-compatible security key for Windows is different (and better) than any other FIDO2 security key.
 keywords: FIDO2, security key, CTAP, Hello, WHFB
 ms.prod: w10
 ms.mktglfcycl: deploy

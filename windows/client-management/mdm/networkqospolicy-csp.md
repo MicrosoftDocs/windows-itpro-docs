@@ -45,79 +45,79 @@ NetworkQoSPolicy
 --------DSCPAction
 ```
 <a href="" id="networkqospolicy"></a>**NetworkQoSPolicy**   
-<p style="margin-left: 20px">The root node for the NetworkQoSPolicy configuration service provider.</p>
+<p>The root node for the NetworkQoSPolicy configuration service provider.</p>
 
 <a href="" id="version"></a>**Version**  
-<p style="margin-left: 20px">Specifies the version information.
+<p>Specifies the version information.
 
-<p style="margin-left: 20px">The data type is int. 
+<p>The data type is int. 
 
-<p style="margin-left: 20px">The only supported operation is Get.
+<p>The only supported operation is Get.
 
 <a href="" id="name"></a>***Name***  
-<p style="margin-left: 20px">Node for the QoS policy name.
+<p>Node for the QoS policy name.
 
 <a href="" id="name-ipprotocolmatchcondition"></a>***Name*/IPProtocolMatchCondition**  
-<p style="margin-left: 20px">Specifies the IP protocol used to match the network traffic. 
+<p>Specifies the IP protocol used to match the network traffic. 
 
-<p style="margin-left: 20px">Valid values are:
+<p>Valid values are:
 
 - 0 (default) - Both TCP and UDP 
 - 1 - TCP
 - 2 - UDP
 
-<p style="margin-left: 20px">The data type is int. 
+<p>The data type is int. 
 
-<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+<p>The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-apppathnamematchcondition"></a>***Name*/AppPathNameMatchCondition**  
-<p style="margin-left: 20px">Specifies the name of an application to be used to match the network traffic, such as application.exe or %ProgramFiles%\application.exe.
+<p>Specifies the name of an application to be used to match the network traffic, such as application.exe or %ProgramFiles%\application.exe.
 
-<p style="margin-left: 20px">The data type is char. 
+<p>The data type is char. 
 
-<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+<p>The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-sourceportmatchcondition"></a>***Name*/SourcePortMatchCondition**  
-<p style="margin-left: 20px">Specifies a single port or a range of ports to be used to match the network traffic source. 
+<p>Specifies a single port or a range of ports to be used to match the network traffic source. 
 
-<p style="margin-left: 20px">Valid values are: 
+<p>Valid values are: 
 
 -   A range of source ports: _[first port number]_-_[last port number]_
 -   A single source port: _[port number]_
    
-<p style="margin-left: 20px">The data type is char. 
+<p>The data type is char. 
 
-<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+<p>The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-destinationportmatchcondition"></a>***Name*/DestinationPortMatchCondition**  
-<p style="margin-left: 20px">Specifies a single source port or a range of ports to be used to match the network traffic destination.
+<p>Specifies a single source port or a range of ports to be used to match the network traffic destination.
 
-<p style="margin-left: 20px">Valid values are: 
+<p>Valid values are: 
 
 -   A range of destination ports: _[first port number]_-_[last port number]_
 -   A single destination port: _[port number]_
    
-<p style="margin-left: 20px">The data type is char. 
+<p>The data type is char. 
 
-<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+<p>The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-priorityvalue8021action"></a>***Name*/PriorityValue8021Action**  
-<p style="margin-left: 20px">Specifies the IEEE 802.1p priority value to apply to matching network traffic.
+<p>Specifies the IEEE 802.1p priority value to apply to matching network traffic.
 
-<p style="margin-left: 20px">Valid values are 0-7.
+<p>Valid values are 0-7.
 
-<p style="margin-left: 20px">The data type is int.
+<p>The data type is int.
 
-<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+<p>The supported operations are Add, Get, Delete, and Replace.
 
 <a href="" id="name-dscpaction"></a>***Name*/DSCPAction**  
-<p style="margin-left: 20px">The differentiated services code point (DSCP) value to apply to matching network traffic.
+<p>The differentiated services code point (DSCP) value to apply to matching network traffic.
 
-<p style="margin-left: 20px">Valid values are 0-63.
+<p>Valid values are 0-63.
 
-<p style="margin-left: 20px">The data type is int.
+<p>The data type is int.
 
-<p style="margin-left: 20px">The supported operations are Add, Get, Delete, and Replace.
+<p>The supported operations are Add, Get, Delete, and Replace.
 
 
 ## Related topics

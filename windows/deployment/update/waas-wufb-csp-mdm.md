@@ -16,7 +16,8 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+-   Windows 10
+-   Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
 
@@ -29,7 +30,7 @@ An IT administrator can set policies for Windows Update for Business by using Mi
 
 To manage updates with Windows Update for Business, you should prepare with these steps, if you haven't already:
 
-- Create Active Directory security groups that align with the deployment rings you use to phase deployment of updates. See [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md) to learn more about deployment rings in Windows 10.
+- Create Active Directory security groups that align with the deployment rings you use to phase deployment of updates. See [Build deployment rings for Windows client updates](waas-deployment-rings-windows-10-updates.md) to learn more about deployment rings in Windows client.
 - Allow access to the Windows Update service.
 
 
@@ -39,7 +40,7 @@ You can control when updates are applied, for example by deferring when an updat
 
 ### Determine which updates you want offered to your devices
 
-Both Windows 10 feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update for Business policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
+Both feature and quality updates are automatically offered to devices that are connected to Windows Update using Windows Update for Business policies. However, you can choose whether you want the devices to additionally receive other Microsoft Updates or drivers that are applicable to that device.
 
 To enable Microsoft Updates use [Update/AllwMUUpdateService](/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice).
 
@@ -194,22 +195,3 @@ When you disable this setting, users will see **Some settings are managed by you
 If you use Windows Server Update Server (WSUS), you can prevent users from scanning Windows Update. To do this, use [Update/SetDisableUXWUAccess](/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess).
 
 
-
-
-## Related topics
-
-- [Update Windows 10 in the enterprise](index.md)
-- [Overview of Windows as a service](waas-overview.md)
-- [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
-- [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
-- [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
-- [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
-- [Configure Delivery Optimization for Windows 10 updates](waas-delivery-optimization.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md) 
-- [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
-- [Configure Windows Update for Business](waas-configure-wufb.md)
-- [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
-- [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
-- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service)
-- [Manage device restarts after updates](waas-restart.md)

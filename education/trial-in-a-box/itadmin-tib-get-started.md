@@ -20,7 +20,7 @@ manager: dansimp
 
 ![Welcome, IT Admins!](images/Welcome-IT-Admins.png)
 
-<span style="font-size: 1.5em">Learn how to quickly deploy and manage devices for your school in 5 quick steps.</span>
+<span>Learn how to quickly deploy and manage devices for your school in 5 quick steps.</span>
 
 |&nbsp;  |&nbsp;  |
 | :---: |:--- |

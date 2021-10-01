@@ -21,7 +21,10 @@ ms.custom: bitlocker
 # BitLocker Countermeasures
 
 **Applies to**
--   Windows 10
+
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
 Windows uses technologies including Trusted Platform Module (TPM), Secure Boot, and Measured Boot to help protect BitLocker encryption keys against attacks. 
 BitLocker is part of a strategic approach to securing data against offline attacks through encryption technology. 
@@ -33,9 +36,9 @@ BitLocker helps mitigate unauthorized data access on lost or stolen computers be
 - **Encrypting volumes on your computer.** For example, you can turn on BitLocker for your operating system volume, or a volume on a fixed or removable data drive (such as a USB flash drive, SD card, and so on). Turning on BitLocker for your operating system volume encrypts all system files on the volume, including the paging files and hibernation files. The only exception is for the System partition, which includes the Windows Boot Manager and minimal boot collateral required for decryption of the operating system volume after the key is unsealed.
 - **Ensuring the integrity of early boot components and boot configuration data.** On devices that have a TPM version 1.2 or higher, BitLocker uses the enhanced security capabilities of the TPM to make data accessible only if the computer’s BIOS firmware code and configuration, original boot sequence, boot components, and BCD configuration all appear unaltered and the encrypted disk is located in the original computer. On systems that leverage TPM PCR[7], BCD setting changes deemed safe are permitted to improve usability.
  
-The next sections provide more details about how Windows protects against various attacks on the BitLocker encryption keys in Windows 10, Windows 8.1, and Windows 8.
+The next sections provide more details about how Windows protects against various attacks on the BitLocker encryption keys in Windows 11, Windows 10, Windows 8.1, and Windows 8.
 
-For more information about how to enable the best overall security configuration for devices beginning with Windows 10 version 1803, see [Standards for a highly secure Windows 10 device](/windows-hardware/design/device-experiences/oem-highly-secure). 
+For more information about how to enable the best overall security configuration for devices beginning with Windows 10 version 1803 or Windows 11, see [Standards for a highly secure Windows device](/windows-hardware/design/device-experiences/oem-highly-secure).
 
 ## Protection before startup
 
@@ -105,8 +108,8 @@ It requires direct ethernet connectivity to an enterprise Windows Deployment Ser
 ### Protecting Thunderbolt and other DMA ports
 
 There are a few different options to protect DMA ports, such as Thunderbolt™3. 
-Beginning with Windows 10 version 1803, new Intel-based devices have kernel protection against DMA attacks via Thunderbolt™ 3 ports enabled by default. 
-This Kernel DMA Protection is available only for new systems beginning with Windows 10 version 1803, as it requires changes in the system firmware and/or BIOS.  
+Beginning with Windows 10 version 1803 or Windows 11, new Intel-based devices have kernel protection against DMA attacks via Thunderbolt™ 3 ports enabled by default. 
+This Kernel DMA Protection is available only for new systems beginning with Windows 10 version 1803 or Windows 11, as it requires changes in the system firmware and/or BIOS.  
 
 You can use the System Information desktop app (MSINFO32) to check if a device has kernel DMA protection enabled: 
 
@@ -116,7 +119,7 @@ If kernel DMA protection *not* enabled, follow these steps to protect Thunderbol
 
 1. Require a password for BIOS changes 
 2. Intel Thunderbolt Security must be set to User Authorization in BIOS settings. Please refer to [Intel Thunderbolt™ 3 and Security on Microsoft Windows® 10 Operating System documentation](https://thunderbolttechnology.net/security/Thunderbolt%203%20and%20Security.pdf)
-3. Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607):
+3. Additional DMA security may be added by deploying policy (beginning with Windows 10 version 1607 or Windows 11):
 
     - MDM: [DataProtection/AllowDirectMemoryAccess](/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) policy 
     - Group Policy: [Disable new DMA devices when this computer is locked](./bitlocker-group-policy-settings.md#disable-new-dma-devices-when-this-computer-is-locked) (This setting is not configured by default.)
@@ -136,7 +139,7 @@ This is the default configuration.
 
 A BIOS password is recommended for defense-in-depth in case a BIOS exposes settings that may weaken the BitLocker security promise. 
 Intel Boot Guard and AMD Hardware Verified Boot support stronger implementations of Secure Boot that provide additional resilience against malware and physical attacks. 
-Intel Boot Guard and AMD Hardware Verified Boot are part of platform boot verification [standards for a highly secure Windows 10 device](/windows-hardware/design/device-experiences/oem-highly-secure).
+Intel Boot Guard and AMD Hardware Verified Boot are part of platform boot verification [standards for a highly secure Windows device](/windows-hardware/design/device-experiences/oem-highly-secure).
 
 ### Brute force attacks against a PIN
 Require TPM + PIN for anti-hammering protection. 

@@ -140,53 +140,53 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>s:</p></td>
-<td style="vertical-align:top"><p>MessageFormat</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_DEVICE_MESSAGE_FORMAT_ERROR</p></td>
-<td style="vertical-align:top"><p>Message format is bad</p></td>
-<td style="vertical-align:top"><p>80180001</p></td>
+<td><p>s:</p></td>
+<td><p>MessageFormat</p></td>
+<td><p>MENROLL_E_DEVICE_MESSAGE_FORMAT_ERROR</p></td>
+<td><p>Message format is bad</p></td>
+<td><p>80180001</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>s:</p></td>
-<td style="vertical-align:top"><p>Authentication</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_DEVICE_AUTHENTICATION_ERROR</p></td>
-<td style="vertical-align:top"><p>User not recognized</p></td>
-<td style="vertical-align:top"><p>80180002</p></td>
+<td><p>s:</p></td>
+<td><p>Authentication</p></td>
+<td><p>MENROLL_E_DEVICE_AUTHENTICATION_ERROR</p></td>
+<td><p>User not recognized</p></td>
+<td><p>80180002</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>s:</p></td>
-<td style="vertical-align:top"><p>Authorization</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_DEVICE_AUTHORIZATION_ERROR</p></td>
-<td style="vertical-align:top"><p>User not allowed to enroll</p></td>
-<td style="vertical-align:top"><p>80180003</p></td>
+<td><p>s:</p></td>
+<td><p>Authorization</p></td>
+<td><p>MENROLL_E_DEVICE_AUTHORIZATION_ERROR</p></td>
+<td><p>User not allowed to enroll</p></td>
+<td><p>80180003</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>s:</p></td>
-<td style="vertical-align:top"><p>CertificateRequest</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_DEVICE_CERTIFCATEREQUEST_ERROR</p></td>
-<td style="vertical-align:top"><p>Failed to get certificate</p></td>
-<td style="vertical-align:top"><p>80180004</p></td>
+<td><p>s:</p></td>
+<td><p>CertificateRequest</p></td>
+<td><p>MENROLL_E_DEVICE_CERTIFCATEREQUEST_ERROR</p></td>
+<td><p>Failed to get certificate</p></td>
+<td><p>80180004</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>s:</p></td>
-<td style="vertical-align:top"><p>EnrollmentServer</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR</p></td>
-<td style="vertical-align:top"></td>
-<td style="vertical-align:top"><p>80180005</p></td>
+<td><p>s:</p></td>
+<td><p>EnrollmentServer</p></td>
+<td><p>MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR</p></td>
+<td></td>
+<td><p>80180005</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>a:</p></td>
-<td style="vertical-align:top"><p>InternalServiceFault</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_DEVICE_INTERNALSERVICE_ERROR</p></td>
-<td style="vertical-align:top"><p>The server hit an unexpected issue</p></td>
-<td style="vertical-align:top"><p>80180006</p></td>
+<td><p>a:</p></td>
+<td><p>InternalServiceFault</p></td>
+<td><p>MENROLL_E_DEVICE_INTERNALSERVICE_ERROR</p></td>
+<td><p>The server hit an unexpected issue</p></td>
+<td><p>80180006</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>a:</p></td>
-<td style="vertical-align:top"><p>InvalidSecurity</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_DEVICE_INVALIDSECURITY_ERROR</p></td>
-<td style="vertical-align:top"><p>Cannot parse the security header</p></td>
-<td style="vertical-align:top"><p>80180007</p></td>
+<td><p>a:</p></td>
+<td><p>InvalidSecurity</p></td>
+<td><p>MENROLL_E_DEVICE_INVALIDSECURITY_ERROR</p></td>
+<td><p>Cannot parse the security header</p></td>
+<td><p>80180007</p></td>
 </tr>
 </tbody>
 </table>
@@ -240,46 +240,46 @@ In Windows 10, version 1507, we added the deviceenrollmentserviceerror element.
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>DeviceCapReached</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_DEVICECAPREACHED</p></td>
-<td style="vertical-align:top"><p>User already enrolled in too many devices. Delete or unenroll old ones to fix this error. The user can fix it without admin help.</p></td>
-<td style="vertical-align:top"><p>80180013</p></td>
+<td><p>DeviceCapReached</p></td>
+<td><p>MENROLL_E_DEVICECAPREACHED</p></td>
+<td><p>User already enrolled in too many devices. Delete or unenroll old ones to fix this error. The user can fix it without admin help.</p></td>
+<td><p>80180013</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>DeviceNotSupported</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_DEVICENOTSUPPORTED</p></td>
-<td style="vertical-align:top"><p>Specific platform (e.g. Windows) or version is not supported. There is no point retrying or calling admin. User could upgrade device.</p></td>
-<td style="vertical-align:top"><p>80180014</p></td>
+<td><p>DeviceNotSupported</p></td>
+<td><p>MENROLL_E_DEVICENOTSUPPORTED</p></td>
+<td><p>Specific platform (e.g. Windows) or version is not supported. There is no point retrying or calling admin. User could upgrade device.</p></td>
+<td><p>80180014</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>NotSupported</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_NOTSUPPORTED</p></td>
-<td style="vertical-align:top"><p>Mobile device management generally not supported (would save an admin call)</p></td>
-<td style="vertical-align:top"><p>80180015</p></td>
+<td><p>NotSupported</p></td>
+<td><p>MENROLL_E_NOTSUPPORTED</p></td>
+<td><p>Mobile device management generally not supported (would save an admin call)</p></td>
+<td><p>80180015</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>NotEligibleToRenew</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_NOTELIGIBLETORENEW</p></td>
-<td style="vertical-align:top"><p>Device is trying to renew but server rejects the request. Client might show notification for this if Robo fails. Check time on device. The user can fix it by re-enrolling.</p></td>
-<td style="vertical-align:top"><p>80180016</p></td>
+<td><p>NotEligibleToRenew</p></td>
+<td><p>MENROLL_E_NOTELIGIBLETORENEW</p></td>
+<td><p>Device is trying to renew but server rejects the request. Client might show notification for this if Robo fails. Check time on device. The user can fix it by re-enrolling.</p></td>
+<td><p>80180016</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>InMaintenance</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_INMAINTENANCE</p></td>
-<td style="vertical-align:top"><p>Account is in maintenance, retry later. The user can retry later, but they may need to contact the admin because they would not know when problem is solved.</p></td>
-<td style="vertical-align:top"><p>80180017</p></td>
+<td><p>InMaintenance</p></td>
+<td><p>MENROLL_E_INMAINTENANCE</p></td>
+<td><p>Account is in maintenance, retry later. The user can retry later, but they may need to contact the admin because they would not know when problem is solved.</p></td>
+<td><p>80180017</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>UserLicense</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_USERLICENSE</p></td>
-<td style="vertical-align:top"><p>License of user is in bad state and blocking the enrollment. The user needs to call the admin.</p></td>
-<td style="vertical-align:top"><p>80180018</p></td>
+<td><p>UserLicense</p></td>
+<td><p>MENROLL_E_USERLICENSE</p></td>
+<td><p>License of user is in bad state and blocking the enrollment. The user needs to call the admin.</p></td>
+<td><p>80180018</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>InvalidEnrollmentData</p></td>
-<td style="vertical-align:top"><p>MENROLL_E_ENROLLMENTDATAINVALID</p></td>
-<td style="vertical-align:top"><p>The server rejected the enrollment data. The server may not be configured correctly.</p></td>
-<td style="vertical-align:top"><p>80180019</p></td>
+<td><p>InvalidEnrollmentData</p></td>
+<td><p>MENROLL_E_ENROLLMENTDATAINVALID</p></td>
+<td><p>The server rejected the enrollment data. The server may not be configured correctly.</p></td>
+<td><p>80180019</p></td>
 </tr>
 </tbody>
 </table>
