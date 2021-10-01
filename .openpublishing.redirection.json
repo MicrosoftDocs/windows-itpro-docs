@@ -19014,12 +19014,12 @@
       "source_path": "windows/deployment/update/feature-update-mission-critical.md",
       "redirect_url": "/windows/deployment/waas-manage-updates-wufb.md",
       "redirect_document_id": false
+    },
     {
       "source_path": "windows/deployment/update/change-history-for-update-windows-10.md",
       "redirect_url": "/windows/deployment/deploy-whats-new.md",
       "redirect_document_id": true
-    }
-    
+    }    
 
-	    ]
+	]
 }
