@@ -67,7 +67,7 @@ conceptualContent:
   # card
     - title: Overview
       links:
-        - url: /windows/whats-new/windows-11
+        - url: /windows/whats-new/windows-11-whats-new
           itemType: overview
           text: What's new in Windows 11
         - url: /windows/whats-new/windows-11-plan
