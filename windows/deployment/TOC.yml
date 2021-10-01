@@ -17,7 +17,6 @@
           href: update/get-started-updates-channels-tools.md
         - name: Prepare servicing strategy for Windows client updates
           href: update/waas-servicing-strategy-windows-10-updates.md
-
         - name: Deployment proof of concept
           items: 
             - name: Demonstrate Autopilot deployment on a VM

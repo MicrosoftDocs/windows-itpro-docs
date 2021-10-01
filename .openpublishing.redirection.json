@@ -18971,49 +18971,53 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/deployment/update/waas-deployment-rings-windows-10-updates.md",
-      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "source_path": "windows/deployment/update/wufb-autoupdate.md",
+      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb.md",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/update/waas-servicing-differences.md",
-      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "source_path": "windows/deployment/update/wufb-basics.md",
+      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb.md",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/update/waas-servicing-differences.md",
-      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "source_path": "windows/deployment/update/wufb-managedrivers.md",
+      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb.md",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/update/waas-servicing-differences.md",
-      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "source_path": "windows/deployment/update/wufb-manageupdate.md",
+      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb.md",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/update/waas-servicing-differences.md",
-      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "source_path": "windows/deployment/update/wwufb-onboard.md",
+      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb.md",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/update/waas-servicing-differences.md",
-      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "source_path": "windows/deployment/update/feature-update-conclusion.md",
+      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb.md",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/update/waas-servicing-differences.md",
-      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "source_path": "windows/deployment/update/waas-wufb-intune.md",
+      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb.md",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/update/waas-servicing-differences.md",
-      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "source_path": "windows/deployment/update/feature-update-maintenance-window.md",
+      "redirect_url": "/windows/deployment/update/update/waas-manage-updates-wufb.md",
       "redirect_document_id": true
     },
     {
-      "source_path": "windows/deployment/update/waas-servicing-differences.md",
-      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "source_path": "windows/deployment/update/feature-update-mission-critical.md",
+      "redirect_url": "/windows/deployment/waas-manage-updates-wufb.md",
       "redirect_document_id": false
+    {
+      "source_path": "windows/deployment/update/change-history-for-update-windows-10.md",
+      "redirect_url": "/windows/deployment/deploy-whats-new.md",
+      "redirect_document_id": true
     }
     
 
