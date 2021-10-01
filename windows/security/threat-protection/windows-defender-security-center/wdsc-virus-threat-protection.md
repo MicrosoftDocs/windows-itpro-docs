@@ -12,16 +12,15 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
-
 
 # Virus and threat protection
 
 **Applies to**
 
-- Windows 10, version 1703 and later
-
+- Windows 10
+- Windows 11
 
 The **Virus & threat protection** section contains information and settings for antivirus protection from Microsoft Defender Antivirus and third-party AV products.
 

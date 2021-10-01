@@ -18956,10 +18956,10 @@
       "redirect_document_id": false
     }, 
     {
-      "source_path": "windows/privacy/data-processor-service-for-windows-enterprise-public-preview-terms.md",
-      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "source_path": "windows/security/identity-protection/change-history-for-access-protection.md",
+      "redirect_url": "/windows/security/",
       "redirect_document_id": false
-    },
+    }
     
 
 	    ]

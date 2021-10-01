@@ -1,6 +1,6 @@
 ---
-title: Migrating to App-V from a Previous Version (Windows 10)
-description: Learn how to migrate to Microsoft Application Virtualization (App-V) for Windows 10 from a previous version.
+title: Migrating to App-V from a Previous Version (Windows 10/11)
+description: Learn how to migrate to Microsoft Application Virtualization (App-V) for Windows 10/11 from a previous version.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -15,10 +15,9 @@ ms.author: greglin
 
 # Migrating to App-V from previous versions
 
-**Applies to**
--   Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
-To migrate from App-V 4.x to App-V for Windows 10, you must upgrade to App-V 5.x first. 
+To migrate from App-V 4.x to App-V for Windows 10/11, you must upgrade to App-V 5.x first. 
 
 ## <a href="" id="bkmk-pkgconvimprove"></a>Improvements to the App-V Package Converter
 
@@ -34,7 +33,7 @@ You can also use the `–OSDsToIncludeInPackage` parameter with the `ConvertFrom
 </colgroup>
 <thead>
 <tr class="header">
-<th align="left">New in App-V for Windows 10</th>
+<th align="left">New in App-V for Windows client</th>
 <th align="left">Prior to App-V for Windows 10</th>
 </tr>
 </thead>

@@ -1,5 +1,5 @@
 ---
-title: How to configure access to packages by using the Management Console (Windows 10)
+title: How to configure access to packages by using the Management Console (Windows 10/11)
 description: How to configure access to packages by using the App-V Management Console.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # How to configure access to packages by using the Management Console
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 Before you deploy an App-V virtualized package, you must configure the Active Directory Domain Services (AD DS) security groups that will be allowed to access and run the applications. The security groups may contain computers or users. Entitling a package to a computer group publishes the package globally to all computers in the group.
 

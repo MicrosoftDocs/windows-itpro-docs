@@ -1,5 +1,5 @@
 ---
-title: Technical Reference for App-V (Windows 10)
+title: Technical Reference for App-V (Windows 10/11)
 description: Learn strategy and context for many performance optimization practices in this technical reference for Application Virtualization (App-V).
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -15,8 +15,7 @@ ms.author: greglin
 
 # Technical Reference for App-V
 
-**Applies to**
--   Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 This section provides reference information related to managing App-V.
 
