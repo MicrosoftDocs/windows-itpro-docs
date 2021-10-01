@@ -1,6 +1,6 @@
 ---
-title: TPM recommendations (Windows 10)
-description: This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows 10.
+title: TPM recommendations (Windows)
+description: This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows.
 ms.assetid: E85F11F5-4E6A-43E7-8205-672F77706561
 ms.reviewer: 
 ms.prod: w10
@@ -14,27 +14,28 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 11/29/2018
+ms.date: 09/06/2021
 ---
 
 # TPM recommendations
 
 **Applies to**
 
-- Windows 10
-- Windows Server 2016
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
-This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows 10.
+This topic provides recommendations for Trusted Platform Module (TPM) technology for Windows.
 
 For a basic feature description of TPM, see the [Trusted Platform Module Technology Overview](trusted-platform-module-overview.md).
 
 ## TPM design and implementation
 
-Traditionally, TPMs have been discrete chips soldered to a computer’s motherboard. Such implementations allow the computer’s original equipment manufacturer (OEM) to evaluate and certify the TPM separate from the rest of the system. Although discrete TPM implementations are still common, they can be problematic for integrated devices that are small or have low power consumption. Some newer TPM implementations integrate TPM functionality into the same chipset as other platform components while still providing logical separation similar to discrete TPM chips.
+Traditionally, TPMs are discrete chips soldered to a computer’s motherboard. Such implementations allow the computer’s original equipment manufacturer (OEM) to evaluate and certify the TPM separate from the rest of the system. Discrete TPM implementations are common. However, they can be problematic for integrated devices that are small or have low power consumption. Some newer TPM implementations integrate TPM functionality into the same chipset as other platform components while still providing logical separation similar to discrete TPM chips.
 
-TPMs are passive: they receive commands and return responses. To realize the full benefit of a TPM, the OEM must carefully integrate system hardware and firmware with the TPM to send it commands and react to its responses. TPMs were originally designed to provide security and privacy benefits to a platform’s owner and users, but newer versions can provide security and privacy benefits to the system hardware itself. Before it can be used for advanced scenarios, however, a TPM must be provisioned. Windows 10 automatically provisions a TPM, but if the user is planning to reinstall the operating system, he or she may need to clear the TPM before reinstalling so that Windows can take full advantage of the TPM.
+TPMs are passive: they receive commands and return responses. To realize the full benefit of a TPM, the OEM must carefully integrate system hardware and firmware with the TPM to send it commands and react to its responses. TPMs were originally designed to provide security and privacy benefits to a platform’s owner and users, but newer versions can provide security and privacy benefits to the system hardware itself. Before it can be used for advanced scenarios, however, a TPM must be provisioned. Windows automatically provisions a TPM, but if the user is planning to reinstall the operating system, he or she may need to clear the TPM before reinstalling so that Windows can take full advantage of the TPM.
 
-The Trusted Computing Group (TCG) is the nonprofit organization that publishes and maintains the TPM specification. The TCG exists to develop, define, and promote vendor-neutral, global industry standards that support a hardware-based root of trust for interoperable trusted computing platforms. The TCG also publishes the TPM specification as the international standard ISO/IEC 11889, using the Publicly Available Specification Submission Process that the Joint Technical Committee 1 defines between the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).
+The Trusted Computing Group (TCG) is the nonprofit organization that publishes and maintains the TPM specification. The TCG exists to develop, define, and promote vendor-neutral, global industry standards. These standards support a hardware-based root of trust for interoperable trusted computing platforms. The TCG also publishes the TPM specification as the international standard ISO/IEC 11889, using the Publicly Available Specification Submission Process that the Joint Technical Committee 1 defines between the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).
 
 OEMs implement the TPM as a component in a trusted computing platform, such as a PC, tablet, or phone. Trusted computing platforms use the TPM to support privacy and security scenarios that software alone cannot achieve. For example, software alone cannot reliably report whether malware is present during the system startup process. The close integration between TPM and platform increases the transparency of the startup process and supports evaluating device health by enabling reliable measuring and reporting of the software that starts the device. Implementation of a TPM as part of a trusted computing platform provides a hardware root of trust—that is, it behaves in a trusted way. For example, if a key stored in a TPM has properties that disallow exporting the key, that key truly cannot leave the TPM.
 
@@ -54,7 +55,7 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 
 - TPM 2.0 **enables greater crypto agility** by being more flexible with respect to cryptographic algorithms.
 
-  - TPM 2.0 supports newer algorithms, which can improve drive signing and key generation performance. For the full list of supported algorithms, see the [TCG Algorithm Registry](http://www.trustedcomputinggroup.org/tcg-algorithm-registry/). Some TPMs do not support all algorithms.
+  - TPM 2.0 supports newer algorithms, which can improve drive signing and key generation performance. For the full list of supported algorithms, see the [TCG Algorithm Registry](http://www.trustedcomputinggroup.org/tcg-algorithm-registry/). Some TPMs don't support all algorithms.
 
   - For the list of algorithms that Windows supports in the platform cryptographic storage provider, see [CNG Cryptographic Algorithm Providers](/windows/win32/seccertenroll/cng-cryptographic-algorithm-providers).
 
@@ -68,14 +69,14 @@ TPM 2.0 products and systems have important security advantages over TPM 1.2, in
 
   - TPM 2.0 lockout policy is configured by Windows, ensuring a consistent dictionary attack protection guarantee.
 
-- While TPM 1.2 parts are discrete silicon components which are typically soldered on the motherboard, TPM 2.0 is available as a **discrete (dTPM)** silicon component in a single semiconductor package, an **integrated** component incorporated in one or more semiconductor packages - alongside other logic units in the same package(s) - and as a **firmware (fTPM)** based component running in a trusted execution environment (TEE) on a general purpose SoC.
+- While TPM 1.2 parts are discrete silicon components, which are typically soldered on the motherboard, TPM 2.0 is available as a **discrete (dTPM)** silicon component in a single semiconductor package, an **integrated** component incorporated in one or more semiconductor packages - alongside other logic units in the same package(s), and as a **firmware (fTPM)** based component running in a trusted execution environment (TEE) on a general purpose SoC.
 
 > [!NOTE]
 > TPM 2.0 is not supported in Legacy and CSM Modes of the BIOS. Devices with TPM 2.0 must have their BIOS mode configured as Native UEFI only. The Legacy and Compatibility Support Module (CSM) options must be disabled. For added security Enable the Secure Boot feature.
 >
 > Installed Operating System on hardware in legacy mode will stop the OS from booting when the BIOS mode is changed to UEFI. Use the tool [MBR2GPT](/windows/deployment/mbr-to-gpt) before changing the BIOS mode which will prepare the OS and the disk to support UEFI.
 
-## Discrete, Integrated or Firmware TPM?
+## Discrete, Integrated, or Firmware TPM?
 
 There are three implementation options for TPMs:
 
@@ -85,17 +86,17 @@ There are three implementation options for TPMs:
 
 - Firmware TPM solution, running the TPM in firmware in a Trusted Execution mode of a general purpose computation unit
 
-Windows uses any compatible TPM in the same way. Microsoft does not take a position on which way a TPM should be implemented and there is a wide ecosystem of available TPM solutions which should suit all needs.
+Windows uses any compatible TPM in the same way. Microsoft does not take a position on which way a TPM should be implemented and there is a wide ecosystem of available TPM solutions, which should suit all needs.
 
 ## Is there any importance for TPM for consumers?
 
-For end consumers, TPM is behind the scenes but is still very relevant. TPM is used for Windows Hello, Windows Hello for Business and in the future, will be a component of many other key security features in Windows. TPM secures the PIN, helps encrypt passwords, and builds on our overall Windows 10 experience story for security as a critical pillar. Using Windows on a system with a TPM enables a deeper and broader level of security coverage.
+For end consumers, TPM is behind the scenes but is still relevant. TPM is used for Windows Hello, Windows Hello for Business and in the future, will be a component of many other key security features in Windows. TPM secures the PIN, helps encrypt passwords, and builds on our overall Windows experience story for security as a critical pillar. Using Windows on a system with a TPM enables a deeper and broader level of security coverage.
 
-## TPM 2.0 Compliance for Windows 10
+## TPM 2.0 Compliance for Windows
 
-### Windows 10 for desktop editions (Home, Pro, Enterprise, and Education)
+### Windows for desktop editions (Home, Pro, Enterprise, and Education)
 
-- Since July 28, 2016, all new device models, lines or series (or if you are updating the hardware configuration of an existing model, line or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7 of the [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview) page). The requirement to enable TPM 2.0 only applies to the manufacturing of new devices. For TPM recommendations for specific Windows features, see [TPM and Windows Features](#tpm-and-windows-features).
+- Since July 28, 2016, all new device models, lines, or series (or if you're updating the hardware configuration of an existing model, line, or series with a major update, such as CPU, graphic cards) must implement and enable by default TPM 2.0 (details in section 3.7 of the [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview) page). The requirement to enable TPM 2.0 only applies to the manufacturing of new devices. For TPM recommendations for specific Windows features, see [TPM and Windows Features](#tpm-and-windows-features).
 
 ### IoT Core
 
@@ -103,7 +104,7 @@ For end consumers, TPM is behind the scenes but is still very relevant. TPM is u
 
 ### Windows Server 2016
 
-- TPM is optional for Windows Server SKUs unless the SKU meets the additional qualification (AQ) criteria for the Host Guardian Services scenario in which case TPM 2.0 is required.
+- TPM is optional for Windows Server SKUs unless the SKU meets the other qualification (AQ) criteria for the Host Guardian Services scenario in which case TPM 2.0 is required.
 
 ## TPM and Windows Features
 

@@ -1,5 +1,5 @@
 ---
-title: VPN name resolution (Windows 10)
+title: VPN name resolution (Windows 10 and Windows 11)
 description: Learn how the name resolution setting in the VPN profile configures how name resolution works when a VPN client connects to a VPN server.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security, networking
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 07/27/2017
+ms.date: 09/23/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -17,7 +17,7 @@ ms.author: dansimp
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
+-   Windows 11
 
 When the VPN client connects to the VPN server, the VPN client receives the client IP address. The client may also receive the IP address of the Domain Name System (DNS) server and the IP address of the Windows Internet Name Service (WINS) server.
 

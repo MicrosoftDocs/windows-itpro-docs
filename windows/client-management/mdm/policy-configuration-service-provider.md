@@ -747,6 +747,43 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_DiskNVCache policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-disknvcache.md#admx-disknvcache-bootresumepolicy" id="admx-disknvcache-bootresumepolicy">ADMX_DiskNVCache/BootResumePolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-disknvcache.md#admx-disknvcache-featureoffpolicy" id="admx-disknvcache-featureoffpolicy">ADMX_DiskNVCache/FeatureOffPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-disknvcache.md#admx-disknvcache-solidstatepolicy" id="admx-disknvcache-solidstatepolicy">ADMX_DiskNVCache/SolidStatePolicy</a>
+  </dd>
+<dl>
+
+### ADMX_DiskQuota policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_removablemedia" id="admx-diskquota-dq_removablemedia">ADMX_DiskQuota/DQ_RemovableMedia</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_enable" id="admx-diskquota-dq_enable">ADMX_DiskQuota/DQ_Enable</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_enforce" id="admx-diskquota-dq_enforce">ADMX_DiskQuota/DQ_Enforce</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_logeventoverlimit" id="admx-diskquota-dq_logeventoverlimit">ADMX_DiskQuota/DQ_LogEventOverLimit</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_logeventoverthreshold" id="admx-diskquota-dq_logeventoverthreshold">ADMX_DiskQuota/DQ_LogEventOverThreshold</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_limit" id="admx-diskquota-dq_limit">ADMX_DiskQuota/DQ_Limit</a>
+  </dd>
+<dl>
+
 ### ADMX_DistributedLinkTracking policies  
 
 <dl>
@@ -754,6 +791,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-distributedlinktracking.md#admx-distributedlinktracking-dlt_allowdomainmode" id="admx-distributedlinktracking-dlt_allowdomainmode">ADMX_DistributedLinkTracking/DLT_AllowDomainMode</a>
   </dd>
 </dl>
+
 
 ### ADMX_DnsClient policies
 
@@ -893,6 +931,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-admx-encryptfilesonmove.md#admx-encryptfilesonmove-noencryptonmove" id="admx-encryptfilesonmove-noencryptonmove">ADMX_EncryptFilesonMove/NoEncryptOnMove</a>
+  </dd>
+</dl>
+
+### ADMX_EventLogging policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-eventlogging.md#admx-eventlogging-enableprotectedeventlogging" id="admx-eventlogging-enableprotectedeventlogging">ADMX_EventLogging/EnableProtectedEventLogging</a>
   </dd>
 </dl>
 
@@ -1090,6 +1135,19 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_EventViewer policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionprogram" id="admx-eventviewer-eventviewer_redirectionprogram">ADMX_EventViewer/EventViewer_RedirectionProgram</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters" id="admx-eventviewer-eventviewer_redirectionprogramcommandlineparameters">ADMX_EventViewer/EventViewer_RedirectionProgramCommandLineParameters</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-eventviewer.md#admx-eventviewer-eventviewer_redirectionurl" id="admx-eventviewer-eventviewer_redirectionurl">ADMX_EventViewer/EventViewer_RedirectionURL</a>
+  <dd>
+
 ### ADMX_Explorer policies  
 
 <dl>
@@ -1110,10 +1168,30 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_ExternalBoot policies  
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_hibernate" id="admx-externalboot-portableoperatingsystem_hibernate">ADMX_ExternalBoot/PortableOperatingSystem_Hibernate</a>
+  </dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_sleep" id="admx-externalboot-portableoperatingsystem_sleep">ADMX_ExternalBoot/PortableOperatingSystem_Sleep</a>
+  </dd>
+  </dd>
+    <a href="./policy-csp-admx-externalboot.md#admx-externalboot-portableoperatingsystem_launcher" id="admx-externalboot-portableoperatingsystem_launcher">ADMX_ExternalBoot/PortableOperatingSystem_Launcher</a>
+  </dd>
+<dl>
+
 ### ADMX_FileRecovery policies
 <dl>
   <dd>
     <a href="./policy-csp-admx-filerecovery.md#admx-filerecovery-wdiscenarioexecutionpolicy" id="admx-filerecovery-wdiscenarioexecutionpolicy">ADMX_FileRecovery/WdiScenarioExecutionPolicy</a>
+  </dd>
+</dl>
+
+### ADMX_FileRevocation policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-filerevocation.md#admx-filerevocation-delegatedpackagefamilynames" id="admx-filerevocation-delegatedpackagefamilynames">ADMX_FileRevocation/DelegatedPackageFamilyNames</a>
   </dd>
 </dl>
 
@@ -1177,6 +1255,23 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_FramePanes policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-framepanes.md#admx-framepanes-noreadingpane" id="admx-framepanes-noreadingpane">ADMX_FramePanes/NoReadingPane</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-framepanes.md#admx-framepanes-nopreviewpane" id="admx-framepanes-nopreviewpane">ADMX_FramePanes/NoPreviewPane</a>
+  </dd>
+<dl>
+
+### ADMX_FTHSVC policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-fthsvc.md#admx-fthsvc-wdiscenarioexecutionpolicy" id="admx-fthsvc-wdiscenarioexecutionpolicy">ADMX_FTHSVC/WdiScenarioExecutionPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_Help policies
 <dl>
   <dd>
@@ -1190,6 +1285,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-help.md#admx-help-restrictrunfromhelp-comp" id="admx-help-restrictrunfromhelp-comp">ADMX_Help/RestrictRunFromHelp_Comp</a>
+  </dd>
+</dl>
+
+### ADMX_HotSpotAuth policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-hotspotauth.md#admx-hotspotauth-hotspotauth_enable" id="admx-hotspotauth-hotspotauth_enable">ADMX_HotSpotAuth/HotspotAuth_Enable</a>
   </dd>
 </dl>
 
@@ -1504,6 +1606,35 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_IIS policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-iis.md#admx-iis-preventiisinstall
+" id="admx-iis-preventiisinstall
+">ADMX_IIS/PreventIISInstall</a>
+  </dd>
+<dl>
+
+### ADMX_iSCSI policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-iscsi.md#admx-iscsi-iscsigeneral_restrictadditionallogins
+" id="admx-iscsi-iscsigeneral_restrictadditionallogins
+">ADMX_iSCSI/iSCSIGeneral_RestrictAdditionalLogins</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-iscsi.md#admx-iscsi-iscsigeneral_changeiqnname
+" id="admx-iscsi-iscsigeneral_changeiqnname
+">ADMX_iSCSI/iSCSIGeneral_ChangeIQNName</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-iscsi.md#admx-iscsi-iscsisecurity_changechapsecret
+" id="admx-iscsi-iscsisecurity_changechapsecret
+">ADMX_iSCSI/iSCSISecurity_ChangeCHAPSecret</a>
+  </dd>
+<dl>
+
 ### ADMX_kdc policies
 <dl>
   <dd>
@@ -1585,6 +1716,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_LeakDiagnostic policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-leakdiagnostic.md#admx-leakdiagnostic-wdiscenarioexecutionpolicy" id="admx-leakdiagnostic-wdiscenarioexecutionpolicy">ADMX_LeakDiagnostic/WdiScenarioExecutionPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_LinkLayerTopologyDiscovery policies
 <dl>
   <dd>
@@ -1594,6 +1732,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-linklayertopologydiscovery.md#admx-linklayertopologydiscovery-lltd-enablerspndr" id="admx-linklayertopologydiscovery-lltd-enablerspndr">ADMX_LinkLayerTopologyDiscovery/LLTD_EnableRspndr</a>
   </dd>
 </dl>
+
+### ADMX_LocationProviderAdm policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-locationprovideradm.md#admx-locationprovideradm-disablewindowslocationprovider_1" id="admx-locationprovideradm-disablewindowslocationprovider_1">ADMX_LocationProviderAdm/BlockUserFromShowingAccountDetailsOnSignin</a>
+  </dd>
+<dl>
 
 ### ADMX_Logon policies  
 
@@ -2911,6 +3057,35 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_PreviousVersions policies
+
+</dl>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalpage_1" id="admx-previousversions-disablelocalpage_1">ADMX_PreviousVersions/DisableLocalPage_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalpage_2" id="admx-previousversions-disablelocalpage_2">ADMX_PreviousVersions/DisableLocalPage_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disableremotepage_1" id="admx-previousversions-disableremotepage_1">ADMX_PreviousVersions/DisableRemotePage_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disableremotepage_2" id="admx-previousversions-disableremotepage_2">ADMX_PreviousVersions/DisableRemotePage_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-hidebackupentries_1" id="admx-previousversions-hidebackupentries_1">ADMX_PreviousVersions/HideBackupEntries_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-hidebackupentries_2" id="admx-previousversions-hidebackupentries_2">ADMX_PreviousVersions/HideBackupEntries_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalrestore_1" id="admx-previousversions-disablelocalrestore_1">ADMX_PreviousVersions/DisableLocalRestore_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalrestore_2" id="admx-previousversions-disablelocalrestore_2">ADMX_PreviousVersions/DisableLocalRestore_2</a>
+  </dd>
+</dl>
+
 ### ADMX_Printing policies  
 
 <dl>
@@ -3240,6 +3415,14 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_sdiagschd policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-sdiagschd.md#admx-sdiagschd-scheduleddiagnosticsexecutionpolicy" id="admx-sdiagschd-scheduleddiagnosticsexecutionpolicy">ADMX_sdiagschd/ScheduledDiagnosticsExecutionPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_sdiageng policies
 
 <dl>
@@ -3279,6 +3462,23 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-sensors.md#admx-sensors-disablesensors-2" id="admx-sensors-disablesensors-2">ADMX_Sensors/DisableSensors_2</a>
+  </dd>
+</dl>
+
+### ADMX_ServerManager policies
+
+</dl>
+  <dd>
+    <a href="./policy-csp-admx-servermanager.md#admx-servermanager-do_not_display_manage_your_server_page" id="admx-servermanager-do_not_display_manage_your_server_page">ADMX_ServerManager/Do_not_display_Manage_Your_Server_page</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-servermanager.md#admx-servermanager-servermanagerautorefreshrate" id="admx-servermanager-servermanagerautorefreshrate">ADMX_ServerManager/ServerManagerAutoRefreshRate</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-servermanager.md#admx-servermanager-donotlaunchinitialconfigurationtasks" id="admx-servermanager-donotlaunchinitialconfigurationtasks">ADMX_ServerManager/DoNotLaunchInitialConfigurationTasks</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-servermanager.md#admx-servermanager-donotlaunchservermanager" id="admx-servermanager-donotlaunchservermanager">ADMX_ServerManager/DoNotLaunchServerManager</a>
   </dd>
 </dl>
 
@@ -3432,6 +3632,8 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-snmp.md#admx-snmp-snmp-traps-public" id="admx-snmp-snmp-traps-public">ADMX_Snmp/SNMP_Traps_Public</a>
   </dd>
 </dl>
+  </dd>
+<dl>
 
 ### ADMX_StartMenu policies  
 
@@ -3647,6 +3849,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_TabletShell policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-tabletshell.md#admx-tabletshell-disableinkball_1" ID="admx-tabletshell-disableinkball_1">ADMX_TabletShell/DisableInkball_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-tabletshell.md#admx-tabletshell-disablenotewriterprinting_1" ID="admx-tabletshell-disablenotewriterprinting_1">ADMX_TabletShell/DisableNoteWriterPrinting_1</a>
+  </dd>
+<dl>
+
 ### ADMX_Taskbar policies  
 
 <dl>
@@ -3762,6 +3975,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_TerminalServer policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_gateway_policy_enable" id="admx-terminalserver-ts_gateway_policy_enable">ADMX_TerminalServer/TS_GATEWAY_POLICY_ENABLE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_gateway_policy_auth_method" id="admx-terminalserver-ts_gateway_policy_auth_method">ADMX_TerminalServer/TS_GATEWAY_POLICY_AUTH_METHOD</a>
+  </dd> 
+<dl>
+
 ### ADMX_Thumbnails policies  
 
 <dl>
@@ -3773,6 +3997,23 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-thumbnails.md#admx-thumbnails-disablethumbsdbonnetworkfolders" id="admx-thumbnails-disablethumbsdbonnetworkfolders">ADMX_Thumbnails/DisableThumbsDBOnNetworkFolders</a>
+  </dd>
+</dl>
+
+### ADMX_TouchInput policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-touchinput.md#admx-touchinput-touchinputoff_1" id="admx-touchinput-touchinputoff_1">ADMX_TouchInput/TouchInputOff_1</a>
+  </dd>  
+  <dd>
+    <a href="./policy-csp-admx-touchinput.md#admx-touchinput-touchinputoff_2" id="admx-touchinput-touchinputoff_2">ADMX_TouchInput/TouchInputOff_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-touchinput.md#admx-touchinput-panningeverywhereoff_1" id="admx-touchinput-panningeverywhereoff_1">ADMX_TouchInput/PanningEverywhereOff_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-touchinput.md#admx-touchinput-panningeverywhereoff_2" id="admx-touchinput-panningeverywhereoff_2">ADMX_TouchInput/PanningEverywhereOff_2</a>
   </dd>
 </dl>
 
@@ -4254,6 +4495,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_WDI Policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-wdi.md#admx-wdi-wdidpsscenarioexecutionpolicy" id="admx-wdi-wdidpsscenarioexecutionpolicy">ADMX_WDI/WdiDpsScenarioExecutionPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wdi.md#admx-wdi-wdidpsscenariodatasizelimitpolicy" id="admx-wdi-wdidpsscenariodatasizelimitpolicy">ADMX_WDI/WdiDpsScenarioDataSizeLimitPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_WinCal policies  
 
 <dl>
@@ -4270,6 +4522,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-admx-windowsanytimeupgrade.md#admx-windowsanytimeupgrade-disabled" id="admx-windowsanytimeupgrade-disabled">ADMX_WindowsAnytimeUpgrade/Disabled</a>
+  </dd>
+</dl>
+
+### ADMX_WindowsColorSystem policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowscolorsystem.md#admx-windowscolorsystem-prohibitchanginginstalledprofilelist_1" id="admx-windowscolorsystem-prohibitchanginginstalledprofilelist_1">ADMX_WindowsColorSystem/ProhibitChangingInstalledProfileList_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowscolorsystem.md#admx-windowscolorsystem-prohibitchanginginstalledprofilelist_2" id="admx-windowscolorsystem-prohibitchanginginstalledprofilelist_2">ADMX_WindowsColorSystem/ProhibitChangingInstalledProfileList_2</a>
   </dd>
 </dl>
 
@@ -5981,6 +6244,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-exploitguard.md#exploitguard-exploitprotectionsettings" id="exploitguard-exploitprotectionsettings">ExploitGuard/ExploitProtectionSettings</a>
+  </dd>
+</dl>
+
+### Feeds policies
+<dl>
+  <dd>
+    <a href="./policy-csp-feeds.md#feeds-feedsenabled" id="feeds-feedsenabled">Feeds/FeedsEnabled</a>
   </dd>
 </dl>
 
