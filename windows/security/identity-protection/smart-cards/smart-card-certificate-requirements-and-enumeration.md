@@ -1,5 +1,5 @@
 ---
-title: Certificate Requirements and Enumeration (Windows 10)
+title: Certificate Requirements and Enumeration (Windows)
 description: This topic for the IT professional and smart card developers describes how certificates are managed and used for smart card sign-in.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,13 +12,13 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 09/24/2021
 ms.reviewer: 
 ---
 
 # Certificate Requirements and Enumeration
 
-Applies To: Windows 10, Windows Server 2016
+Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for the IT professional and smart card developers describes how certificates are managed and used for smart card sign-in.
 
@@ -185,7 +185,7 @@ Certificate requirements are listed by versions of the Windows operating system.
 The smart card certificate has specific format requirements when it is used with Windows XP and earlier operating systems. You can enable any certificate to be visible for the smart card credential provider.
 
 
-|            **Component**             |                                                                **Requirements for Windows 8.1, Windows 8, Windows 7, Windows Vista, and Windows 10**                                                                 |                                                                                                **Requirements for Windows XP**                                                                                                 |
+|            **Component**             |                                                                **Requirements for Windows 8.1, Windows 8, Windows 7, Windows Vista, Windows 10, and Windows 11**                                                                 |                                                                                                **Requirements for Windows XP**                                                                                                 |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |   CRL distribution point location    |                                                                                               Not required                                                                                               |             The location must be specified, online, and available, for example:<br>\[1\]CRL Distribution Point<br>Distribution Point Name:<br>Full Name:<br>URL=<http://server1.contoso.com/CertEnroll/caname.crl>             |
 |              Key usage               |                                                                                            Digital signature                                                                                             |                                                                                                       Digital signature                                                                                                        |

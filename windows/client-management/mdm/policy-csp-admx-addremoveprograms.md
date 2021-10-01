@@ -81,24 +81,7 @@ manager: dansimp
      <td>No</td>
      <td>No</td>
 </tr>
-<tr>
-    <td>Pro</td>
-     <td>No</td>
-     <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-     <td>No</td>
-     <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-     <td>Yes</td>
-     <td>Yes</td>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
+
 </tr>
 </table>
 
@@ -170,8 +153,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
@@ -180,8 +161,6 @@ ADMX Info:
 </tr>
 <tr>
     <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
 </tr>
 </table>
 
