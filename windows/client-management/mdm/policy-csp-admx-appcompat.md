@@ -75,8 +75,6 @@ manager: dansimp
 <table>
 <tr>
     <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
