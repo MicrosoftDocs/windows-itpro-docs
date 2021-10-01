@@ -39,22 +39,22 @@ highlightedContent:
 
 # productDirectory section (optional)
 productDirectory:
-  title: Discover Windows 11 # < 60 chars (optional)
-  summary: Use the following information to discover what's been updated in Windows 11 # < 160 chars (optional)
+  title: Get to know Windows 11 # < 60 chars (optional)
+  summary: Learn more about what's new, what's updated, and what you get in Windows 11 # < 160 chars (optional)
   items:
   # Card
     - title: What's new in Windows 11
       imageSrc: /windows/resources/images/winlogo.svg
-      summary: Discover what's new in Windows 11
-      url: /windows/whats-new/whats-new-in-windows-11
-    - title: Windows 11 overview
-      imageSrc: /windows/resources/images/winlogo.svg
-      summary: Get an overview of the updates in Windows 11
-      url: /windows/whats-new/windows-11-overview
+      summary: Get more information about features and improvements that are important to admins
+      url: /windows/whats-new/windows-11-whats-new
     - title: Windows 11 requirements
       imageSrc: /windows/resources/images/winlogo.svg
-      summary: Learn about the system requirements for Windows 11 and the requirements to run Windows 11 on a virtual machine
+      summary: See the system requirements for Windows 11, including running Windows 11 on a virtual machine
       url: /windows/whats-new/windows-11-requirements
+    - title: Trusted Platform Module (TPM)
+      imageSrc: /windows/resources/images/winlogo.svg
+      summary: Learn more about TPM, and why it's a good thing
+      url: /windows/security/information-protection/tpm/trusted-platform-module-overview
       
 # conceptualContent section (optional)
 conceptualContent:
@@ -67,9 +67,9 @@ conceptualContent:
   # card
     - title: Overview
       links:
-        - url: /windows/whats-new/windows-11
+        - url: /windows/whats-new/windows-11-whats-new
           itemType: overview
-          text: Windows 11 overview
+          text: What's new in Windows 11
         - url: /windows/whats-new/windows-11-plan
           itemType: overview
           text: Plan for Windows 11
@@ -89,12 +89,18 @@ conceptualContent:
         - url: /windows/configuration/index
           itemType: overview
           text: Configure Windows
+        - url: /windows/configuration/provisioning-packages/provisioning-packages
+          itemType: how-to-guide
+          text: Use Provisioning packages to configure new devices
         - url: /windows/configuration/windows-10-accessibility-for-itpros
           itemType: overview
           text: Accessibility information for IT Pros
+        - url: /windows/configuration/customize-start-menu-layout-windows-11
+          itemType: how-to-guide
+          text: Customize the Start menu layout
         - url: /windows/configuration/stop-employees-from-using-microsoft-store
           itemType: how-to-guide
-          text: Configure access to Microsoft Store
+          text: Control access to Microsoft Store
         - url: /windows/configuration/set-up-shared-or-guest-pc
           itemType: how-to-guide
           text: Set up a shared or guest PC
@@ -123,10 +129,10 @@ conceptualContent:
           text: Windows application management
         - url: /windows/application-management/apps-in-windows-10
           itemType: overview
-          text: Understand the different apps included in Windows 10
-        - url:  /windows/application-management/app-v/appv-getting-started
-          itemType: get-started
-          text: Get started with App-V for Windows 10
+          text: Learn more about the different apps types for Windows
+        - url: /windows/application-management/private-app-repository-mdm-company-portal-windows-11
+          itemType: how-to-guide
+          text: Use the private app repo on Windows 11
         - url:  /windows/application-management/remove-provisioned-apps-during-update
           itemType: how-to-guide
           text: Keep removed apps from returning during an update
