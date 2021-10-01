@@ -1,6 +1,6 @@
 ---
-title: How to install fonts missing after upgrading to Windows 10
-description: Some of the fonts are missing from the system after you upgrade to Windows 10.
+title: How to install fonts missing after upgrading to Windows client
+description: Some of the fonts are missing from the system after you upgrade to Windows client.
 keywords: deploy, upgrade, FoD, optional feature
 ms.prod: w10
 ms.mktglfcycl: plan
@@ -9,18 +9,20 @@ ms.localizationpriority: medium
 audience: itpro
 author: greg-lindsay
 ms.audience: itpro
-ms.date: 10/31/2017
 ms.reviewer: 
 manager: laurawi
 ms.topic: article
 ---
-# How to install fonts that are missing after upgrading to Windows 10
+# How to install fonts that are missing after upgrading to Windows client
 
-> Applies to: Windows 10
+**Applies to**
 
-When you upgrade from the Windows 7, Windows 8, or Windows 8.1 operating system to Windows 10, certain fonts are no longer available by default post-upgrade. To reduce the operating system footprint, improve performance, and optimize disk space usage, we moved many of the fonts that were previously shipped with prior versions of Windows to the optional features of Windows 10. If you install a fresh instance of Windows 10, or upgrade an older version of Windows to Windows 10, these optional features are not enabled by default. As a result, these fonts appear to be missing from the system.
+- Windows 10
+- Windows 11
 
-If you have documents created using the missing fonts, these documents might display differently on Windows 10.
+When you upgrade from the Windows 7, Windows 8, or Windows 8.1 operating system to Windows 10 or Windows 11, certain fonts are no longer available by default post-upgrade. To reduce the operating system footprint, improve performance, and optimize disk space usage, we moved many of the fonts that were previously shipped with prior versions of Windows to the optional features of Windows client. If you install a fresh instance of Windows client, or upgrade an older version of Windows to Windows client, these optional features are not enabled by default. As a result, these fonts appear to be missing from the system.
+
+If you have documents created using the missing fonts, these documents might display differently on Windows client.
 
 For example, if you have an English (or French, German, or Spanish) version of Windows 10 installed, you might notice that fonts such as the following are appear to be missing:
 
@@ -35,7 +37,7 @@ For example, if you have an English (or French, German, or Spanish) version of W
 - Gungsuh
 - GungsuhChe
 
-If you want to use these fonts, you can enable the optional feature to add these back to your system. Be aware that this is a permanent change in behavior for Windows 10, and it will remain this way in future releases.
+If you want to use these fonts, you can enable the optional feature to add these back to your system. Be aware that this is a permanent change in behavior for Windows client, and it will remain this way in future releases.
 
 ## Installing language-associated features via language settings:
 

@@ -54,8 +54,6 @@
               href: update/delivery-optimization-proxy.md
             - name: Delivery Optimization client-service communication
               href: update/delivery-optimization-workflow.md
-        - name: Best practices for feature updates on mission-critical devices
-          href: update/feature-update-mission-critical.md
         - name: Windows 10 deployment considerations
           href: planning/windows-10-deployment-considerations.md
         - name: Windows 10 infrastructure requirements
@@ -79,7 +77,7 @@
       items: 
         - name: Prepare for Windows 11
           href: /windows/whats-new/windows-11-prepare
-        - name: Prepare to deploy Windows 10 updates
+        - name: Prepare to deploy Windows client updates
           href: update/prepare-deploy-windows.md
         - name: Evaluate and update infrastructure
           href: update/update-policies.md
@@ -97,8 +95,6 @@
               href: deploy-windows-cm/prepare-for-zero-touch-installation-of-windows-10-with-configuration-manager.md
         - name: Build a successful servicing strategy
           items:
-            - name: Build deployment rings for Windows 10 updates
-              href: update/waas-deployment-rings-windows-10-updates.md
             - name: Check release health
               href: update/check-release-health.md
             - name: Prepare updates using Windows Update for Business
@@ -142,7 +138,7 @@
                   href: vda-subscription-activation.md
                 - name: Deploy Windows 10/11 Enterprise licenses
                   href: deploy-enterprise-licenses.md
-        - name: Deploy Windows 10 updates
+        - name: Deploy Windows client updates
           items:
             - name: Assign devices to servicing channels
               href: update/waas-servicing-channels-windows-10-updates.md
@@ -154,20 +150,18 @@
               href: update/waas-manage-updates-wsus.md
             - name: Deploy updates with Group Policy
               href: update/waas-wufb-group-policy.md
-            - name: Update Windows 10 media with Dynamic Update
+            - name: Update Windows client media with Dynamic Update
               href: update/media-dynamic-update.md
             - name: Migrating and acquiring optional Windows content
               href: update/optional-content.md
             - name: Safeguard holds
               href: update/safeguard-holds.md
-            - name: Manage the Windows 10 update experience
+            - name: Manage the Windows client update experience
               items:              
                 - name: Manage device restarts after updates
                   href: update/waas-restart.md
                 - name: Manage additional Windows Update settings
                   href: update/waas-wu-settings.md 
-                - name: Deploy feature updates during maintenance windows
-                  href: update/feature-update-maintenance-window.md  
                 - name: Deploy feature updates for user-initiated installations
                   href: update/feature-update-user-install.md        
         - name: Use Windows Update for Business
@@ -189,7 +183,7 @@
               href: update/waas-wufb-group-policy.md
             - name: 'Walkthrough: use Intune to configure Windows Update for Business'
               href: update/deploy-updates-intune.md
-        - name: Monitor Windows 10 updates
+        - name: Monitor Windows client updates
           items:
             - name: Monitor Delivery Optimization
               href: update/waas-delivery-optimization-setup.md#monitor-delivery-optimization
@@ -238,7 +232,7 @@
           items:
             - name: Resolve upgrade errors
               items:
-                - name: Resolve Windows 10 upgrade errors
+                - name: Resolve Windows client upgrade errors
                   href: upgrade/resolve-windows-10-upgrade-errors.md
                 - name: Quick fixes
                   href: upgrade/quick-fixes.md
@@ -254,7 +248,7 @@
                   href: upgrade/log-files.md
                 - name: Resolution procedures
                   href: upgrade/resolution-procedures.md
-                - name: Submit Windows 10 upgrade errors
+                - name: Submit Windows client upgrade errors
                   href: upgrade/submit-errors.md
             - name: Troubleshoot Windows Update
               items:
@@ -275,9 +269,9 @@
       items:
         - name: How does Windows Update work?
           href: update/how-windows-update-works.md
-        - name: Windows 10 upgrade paths
+        - name: Windows client upgrade paths
           href: upgrade/windows-10-upgrade-paths.md
-        - name: Windows 10 edition upgrade
+        - name: Windows client edition upgrade
           href: upgrade/windows-10-edition-upgrades.md
         - name: Deploy Windows 10 with Microsoft 365
           href: deploy-m365.md
@@ -289,11 +283,11 @@
           href: update/waas-wu-settings.md
         - name: Delivery Optimization reference
           href: update/waas-delivery-optimization-reference.md
-        - name: Windows 10 in S mode
+        - name: Windows client in S mode
           href: s-mode.md
-        - name: Switch to Windows 10 Pro or Enterprise from S mode
+        - name: Switch to Windows client Pro or Enterprise from S mode
           href: windows-10-pro-in-s-mode.md
-        - name: Windows 10 deployment tools
+        - name: Windows client deployment tools
           items:
             - name: Windows client deployment scenarios and tools
               items:
@@ -580,5 +574,5 @@
                 - name: "Appendix: Information sent to Microsoft during activation "
                   href: volume-activation/appendix-information-sent-to-microsoft-during-activation-client.md
 
-        - name: Install fonts in Windows 10
+        - name: Install fonts in Windows client
           href: windows-10-missing-fonts.md

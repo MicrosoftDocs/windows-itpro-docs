@@ -18959,6 +18959,61 @@
       "source_path": "windows/security/identity-protection/change-history-for-access-protection.md",
       "redirect_url": "/windows/security/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-deployment-rings-windows-10-updates.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-differences.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-deployment-rings-windows-10-updates.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-differences.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-differences.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-differences.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-differences.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-differences.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-differences.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-differences.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-differences.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates.md",
+      "redirect_document_id": false
     }
     
 
