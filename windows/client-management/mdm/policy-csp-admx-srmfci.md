@@ -1,18 +1,18 @@
 ---
-title: Policy CSP - ADMX_DeviceSetup
-description: Policy CSP - ADMX_DeviceSetup
+title: Policy CSP - ADMX_srmfci
+description: Policy CSP - ADMX_srmfci
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 11/19/2020
+ms.date: 09/18/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - ADMX_DeviceSetup
+# Policy CSP - ADMX_srmfci
 
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -24,14 +24,14 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## ADMX_DeviceSetup policies  
+## ADMX_srmfci policies  
 
 <dl>
   <dd>
-    <a href="#admx-devicesetup-deviceinstall-balloontips">ADMX_DeviceSetup/DeviceInstall_BalloonTips</a>
+    <a href="#admx-srmfci-enableshellaccesscheck">ADMX_srmfci/EnableShellAccessCheck</a>
   </dd>
   <dd>
-    <a href="#admx-devicesetup-driversearchplaces-searchorderconfiguration">ADMX_DeviceSetup/DriverSearchPlaces_SearchOrderConfiguration</a>
+    <a href="#admx-srmfci-accessdeniedconfiguration">ADMX_srmfci/AccessDeniedConfiguration</a>
   </dd>
 </dl>
 
@@ -39,7 +39,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-devicesetup-deviceinstall-balloontips"></a>**ADMX_DeviceSetup/DeviceInstall_BalloonTips**  
+<a href="" id="admx-srmfci-enableshellaccesscheck"></a>**ADMX_srmfci/EnableShellAccessCheck**  
 
 <!--SupportedSKUs-->
 <table>
@@ -88,28 +88,24 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to turn off "Found New Hardware" balloons during device installation.
-
-If you enable this policy setting, "Found New Hardware" balloons do not appear while a device is being installed.
-
-If you disable or do not configure this policy setting, "Found New Hardware" balloons appear while a device is being installed, unless the driver for the device suppresses the balloons.
+This Group Policy Setting should be set on Windows clients  to enable access-denied assistance for all file types.
 
 <!--/Description-->
 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Turn off "Found New Hardware" balloons during device installation*
--   GP name: *DeviceInstall_BalloonTips*
--   GP path: *System\Device Installation*
--   GP ADMX file name: *DeviceSetup.admx*
+-   GP Friendly name: *Enable access-denied assistance on client for all file types*
+-   GP name: *EnableShellAccessCheck*
+-   GP path: *System\Access-Denied Assistance*
+-   GP ADMX file name: *srmfci.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-devicesetup-driversearchplaces-searchorderconfiguration"></a>**ADMX_DeviceSetup/DriverSearchPlaces_SearchOrderConfiguration**  
+<a href="" id="admx-srmfci-accessdeniedconfiguration"></a>**ADMX_srmfci/AccessDeniedConfiguration**  
 
 <!--SupportedSKUs-->
 <table>
@@ -158,26 +154,27 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows you to specify the order in which Windows searches source locations for device drivers.
+This policy setting specifies the message that users see when they are denied access to a file or folder. You can customize the Access Denied message to include additional text and links. You can also provide users with the ability to send an email to request access to the file or folder to which they were denied access.  
 
-If you enable this policy setting, you can select whether Windows searches for drivers on Windows Update unconditionally, only if necessary, or not at all.
+If you enable this policy setting, users receive a customized Access Denied message from the file servers on which this policy setting is applied.  
 
-Note that searching always implies that Windows will attempt to search Windows Update exactly one time. With this setting, Windows will not continually search for updates. This setting is used to ensure that the best software will be found for the device, even if the network is temporarily available. If the setting for searching only if needed is specified, then Windows will search for a driver only if a driver is not locally available on the system.
+If you disable this policy setting, users see a standard Access Denied message that doesn't provide any of the functionality controlled by this policy setting, regardless of the file server configuration.  
 
-If you disable or do not configure this policy setting, members of the Administrators group can determine the priority order in which Windows searches source locations for device drivers.
+If you do not configure this policy setting, users see a standard Access Denied message unless the file server is configured to display the customized Access Denied message. By default, users see the standard Access Denied message.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Specify search order for device driver source locations*
--   GP name: *DriverSearchPlaces_SearchOrderConfiguration*
--   GP path: *System\Device Installation*
--   GP ADMX file name: *DeviceSetup.admx*
+-   GP Friendly name: *Customize message for Access Denied errors*
+-   GP name: *AccessDeniedConfiguration*
+-   GP path: *System\Access-Denied Assistance*
+-   GP ADMX file name: *srmfci.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
+
 
 <!--/Policies-->
 

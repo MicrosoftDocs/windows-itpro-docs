@@ -158,7 +158,7 @@ For more information and recommendations about backing up virtualized domain con
 
 When the VSS NTDS writer requests access to the encrypted drive, the Local Security Authority Subsystem Service (LSASS) generates an error entry that resembles the following:
 
-```
+```console
 \# for hex 0xc0210000 / decimal -1071579136
 ‎ STATUS\_FVE\_LOCKED\_VOLUME ntstatus.h
 ‎ \# This volume is locked by BitLocker Drive Encryption.
@@ -166,7 +166,7 @@ When the VSS NTDS writer requests access to the encrypted drive, the Local Secur
 
 The operation produces the following call stack:
 
-```
+```console
 \# Child-SP RetAddr Call Site
 ‎ 00 00000086\`b357a800 00007ffc\`ea6e7a4c KERNELBASE\!FindFirstFileExW+0x1ba \[d:\\rs1\\minkernel\\kernelbase\\filefind.c @ 872\]
 ‎ 01 00000086\`b357abd0 00007ffc\`e824accb KERNELBASE\!FindFirstFileW+0x1c \[d:\\rs1\\minkernel\\kernelbase\\filefind.c @ 208\]
