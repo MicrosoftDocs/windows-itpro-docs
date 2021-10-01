@@ -55,7 +55,8 @@ To install the tool, follow these steps:
 
 To use TBSLogGenerator, follow these steps:
 
-1. After the installation finishes, open an elevated Command Prompt window and navigate to the following folder:  
+1. After the installation finishes, open an elevated Command Prompt window and navigate to the following folder:
+
    **C:\\Program Files (x86)\\Windows Kits\\10\\Hardware Lab Kit\\Tests\\amd64\\NTTEST\\BASETEST\\ngscb**
 
    This folder contains the TBSLogGenerator.exe file.
