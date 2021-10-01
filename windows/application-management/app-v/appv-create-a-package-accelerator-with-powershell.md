@@ -1,5 +1,5 @@
 ---
-title: How to create a package accelerator by using Windows PowerShell (Windows 10)
+title: How to create a package accelerator by using Windows PowerShell (Windows 10/11)
 description: Learn how to create an App-v Package Accelerator by using Windows PowerShell. App-V Package Accelerators automatically sequence large, complex applications.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # How to create a package accelerator by using Windows PowerShell
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 App-V Package Accelerators automatically sequence large, complex applications. Also, when you apply an App-V Package Accelerator, you don't have to manually install an application to create the virtualized package.
 

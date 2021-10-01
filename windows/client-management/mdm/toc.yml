@@ -480,7 +480,7 @@ items:
             - name: ADMX_Explorer
               href: policy-csp-admx-explorer.md
             - name: ADMX_ExternalBoot
-              href: policy-csp-admx-externalboot.md  
+              href: policy-csp-admx-externalboot.md 
             - name: ADMX_FileRecovery
               href: policy-csp-admx-filerecovery.md
             - name: ADMX_FileRevocation
@@ -519,6 +519,8 @@ items:
               href: policy-csp-admx-leakdiagnostic.md  
             - name: ADMX_LinkLayerTopologyDiscovery
               href: policy-csp-admx-linklayertopologydiscovery.md
+            - name: ADMX_LocationProviderAdm
+              href: policy-csp-admx-locationprovideradm.md  
             - name: ADMX_Logon
               href: policy-csp-admx-logon.md
             - name: ADMX_MicrosoftDefenderAntivirus
@@ -559,6 +561,8 @@ items:
               href: policy-csp-admx-printing2.md
             - name: ADMX_Programs
               href: policy-csp-admx-programs.md
+            - name: ADMX_Radar
+              href: policy-csp-admx-radar.md  
             - name: ADMX_Reliability
               href: policy-csp-admx-reliability.md
             - name: ADMX_RemoteAssistance
@@ -571,10 +575,14 @@ items:
               href: policy-csp-admx-scripts.md
             - name: ADMX_sdiageng
               href: policy-csp-admx-sdiageng.md
+            - name: ADMX_sdiagschd
+              href: policy-csp-admx-sdiagschd.md  
             - name: ADMX_Securitycenter
               href: policy-csp-admx-securitycenter.md
             - name: ADMX_Sensors
               href: policy-csp-admx-sensors.md
+            - name: ADMX_ServerManager
+              href: policy-csp-admx-servermanager.md  
             - name: ADMX_Servicing
               href: policy-csp-admx-servicing.md
             - name: ADMX_SettingSync
@@ -591,6 +599,8 @@ items:
               href: policy-csp-admx-smartcard.md
             - name: ADMX_Snmp
               href: policy-csp-admx-snmp.md
+            - name: ADMX_SoundRec
+              href: policy-csp-admx-soundrec.md  
             - name: ADMX_StartMenu
               href: policy-csp-admx-startmenu.md
             - name: ADMX_SystemRestore
@@ -713,6 +723,8 @@ items:
               href: policy-csp-experience.md
             - name: ExploitGuard
               href: policy-csp-exploitguard.md
+            - name: Feeds
+              href: policy-csp-feeds.md
             - name: FileExplorer
               href: policy-csp-fileexplorer.md
             - name: Games
