@@ -1,21 +1,21 @@
 ---
-title: Policy CSP - ADMX_CredUI
-description: Policy CSP - ADMX_CredUI
+title: Policy CSP - ADMX_TabletShell
+description: Policy CSP - ADMX_TabletShell
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 11/09/2020
+ms.date: 09/23/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - ADMX_CredUI
+# Policy CSP - ADMX_TabletShell
 
 > [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
@@ -24,14 +24,14 @@ manager: dansimp
 <hr/>
 
 <!--Policies-->
-## ADMX_CredUI policies  
+## ADMX_TabletShell policies  
 
 <dl>
   <dd>
-    <a href="#admx-credui-enablesecurecredentialprompting">ADMX_CredUI/EnableSecureCredentialPrompting</a>
+    <a href="#admx-tabletshell-disableinkball_1">ADMX_TabletShell/DisableInkball_1</a>
   </dd>
   <dd>
-    <a href="#admx-credui-nolocalpasswordresetquestions">ADMX_CredUI/NoLocalPasswordResetQuestions</a>
+    <a href="#admx-tabletshell-disablenotewriterprinting_1">ADMX_TabletShell/DisableNoteWriterPrinting_1</a>
   </dd>
 </dl>
 
@@ -39,7 +39,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credui-enablesecurecredentialprompting"></a>**ADMX_CredUI/EnableSecureCredentialPrompting**  
+<a href="" id="admx-tabletshell-disableinkball_1"></a>**ADMX_TabletShell/DisableInkball_1**  
 
 <!--SupportedSKUs-->
 <table>
@@ -53,30 +53,25 @@ manager: dansimp
     <td>No</td>
     <td>No</td>
 </tr>
-</tr>
 <tr>
     <td>Pro</td>
     <td>No</td>
     <td>No</td>
-</tr>
 </tr>
 <tr>
     <td>Business</td>
     <td>No</td>
     <td>No</td>
 </tr>
-</tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
     <td>Yes</td>
 </tr>
-</tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
     <td>Yes</td>
-</tr>
 </tr>
 </table>
 
@@ -93,30 +88,29 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting requires the user to enter Microsoft Windows credentials using a trusted path, to prevent a Trojan horse or other types of malicious code from stealing the user’s Windows credentials.
+Prevents start of InkBall game.  
 
-> [!NOTE]
-> This policy affects nonlogon authentication tasks only. As a security best practice, this policy should be enabled.
+If you enable this policy, the InkBall game will not run.  
 
-If you enable this policy setting, users will be required to enter Windows credentials on the Secure Desktop by means of the trusted path mechanism.
-
-If you disable or do not configure this policy setting, users will enter Windows credentials within the user’s desktop session, potentially allowing malicious code access to the user’s Windows credentials.
+If you disable this policy, the InkBall game will run.  If you do not configure this policy, the InkBall game will run.
 
 <!--/Description-->
 
+
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Require trusted path for credential entry*
--   GP name: *EnableSecureCredentialPrompting*
--   GP path: *Windows Components\Credential User Interface*
--   GP ADMX file name: *CredUI.admx*
+-   GP Friendly name: *Do not allow Inkball to run*
+-   GP name: *DisableInkball_1*
+-   GP path: *Windows Components\Tablet PC\Accessories*
+-   GP ADMX file name: *TabletShell.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
+
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-credui-nolocalpasswordresetquestions"></a>**ADMX_CredUI/NoLocalPasswordResetQuestions**  
+<a href="" id="admx-tabletshell-disablenotewriterprinting_1"></a>**ADMX_TabletShell/DisableNoteWriterPrinting_1**  
 
 <!--SupportedSKUs-->
 <table>
@@ -130,30 +124,25 @@ ADMX Info:
     <td>No</td>
     <td>No</td>
 </tr>
-</tr>
 <tr>
     <td>Pro</td>
     <td>No</td>
     <td>No</td>
-</tr>
 </tr>
 <tr>
     <td>Business</td>
     <td>No</td>
     <td>No</td>
 </tr>
-</tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
     <td>Yes</td>
 </tr>
-</tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
     <td>Yes</td>
-</tr>
 </tr>
 </table>
 
@@ -164,26 +153,34 @@ ADMX Info:
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
-> * Device
+> * User
 
 <hr/>
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. If you turn this policy setting on, local users won’t be able to set up and use security questions to reset their passwords.
+Prevents printing to Journal Note Writer.  
+
+If you enable this policy, the Journal Note Writer printer driver will not allow printing to it. It will remain displayed in the list of available printers, but attempts to print to it will fail.  
+
+If you disable this policy, you will be able to use this feature to print to a Journal Note.  If you do not configure this policy, users will be able to use this feature to print to a Journal Note.
+
 
 <!--/Description-->
 
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Prevent the use of security questions for local accounts*
--   GP name: *NoLocalPasswordResetQuestions*
--   GP path: *Windows Components\Credential User Interface*
--   GP ADMX file name: *CredUI.admx*
+-   GP Friendly name: *Do not allow printing to Journal Note Writer*
+-   GP name: *DisableNoteWriterPrinting_1*
+-   GP path: *Windows Components\Tablet PC\Accessories*
+-   GP ADMX file name: *TabletShell.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
-<
+<hr/>
+
+
+
 <!--/Policies-->
 
