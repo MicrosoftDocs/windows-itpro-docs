@@ -38,7 +38,7 @@ If you are looking for ways to optimize your approach to deploying Windows 11, o
 
 As a first step, you will need to know which of your current devices meet the Windows 11 hardware requirements. Most devices purchased in the last 18-24 months will be compatible with Windows 11. Verify that your device meets or exceeds [Windows 11 requirements](windows-11-requirements.md) to ensure it is compatible.
 
-Microsoft is currently developing analysis tools to help you evaluate your devices against the Windows 11 hardware requirements. When Windows 11 reaches general availability, end-users running Windows 10 Home, Pro, and Pro for Workstations will be able to use the [PC Health Check](https://www.microsoft.com/windows/windows-11#pchealthcheck) app to determine their eligibility for Windows 11. End-users running Windows 10 Enterprise and Education editions should rely on their IT administrators to let them know when they are eligible for the upgrade.  
+Microsoft is currently developing analysis tools to help you evaluate your devices against the Windows 11 hardware requirements. When Windows 11 reaches general availability, users running Windows 10 Home, Pro, and Pro for Workstations will be able to use the [PC Health Check](https://www.microsoft.com/windows/windows-11#pchealthcheck) app to determine their eligibility for Windows 11. End-users running Windows 10 Enterprise and Education editions should rely on their IT administrators to let them know when they are eligible for the upgrade.  
  
 Enterprise organizations looking to evaluate device readiness in their environments can expect this capability to be integrated into existing Microsoft tools, such as Endpoint analytics and Update Compliance. This capability will be available when Windows 11 is generally available. Microsoft is also working with software publishing partners to facilitate adding Windows 11 device support into their solutions. 
 
@@ -56,7 +56,7 @@ If you manage devices on behalf of your organization, you will be able to upgrad
 - Additional insight into safeguard holds. While safeguard holds will function for Windows 11 devices just as they do for Windows 10 today, administrators using Windows Update for Business will have access to information on which safeguard holds are preventing individual devices from taking the upgrade to Windows 11. 
 
 > [!NOTE]
-> Also, Windows 11 has new Microsoft Software License Terms. If you are deploying with Windows Update for Business **Target Version** or with Windows Server Update Services, you are accepting these new license terms on behalf of the users in your organization. 
+> Also, Windows 11 has new Microsoft Software License Terms. If you are deploying with Windows Update for Business or Windows Server Update Services, you are accepting these new license terms on behalf of the users in your organization. 
 
 ##### Unmanaged devices
 
