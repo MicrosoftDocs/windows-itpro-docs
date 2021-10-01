@@ -41,9 +41,13 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
   
   For more information, see [Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines).
 
-- **Microsoft Defender** is an endpoint security platform that helps organizations prevent, detect, investigate, and respond to advanced threats. The portal includes helpful information on threats and remediation. If your devices are managed with Endpoint Manager, you can create policies based on threat levels found in Microsoft Defender.
+- **Microsoft Defender Antivirus** is built into Windows, and helps protect devices using next-generation security. When used with Microsoft Defender for Endpoint, your organization gets strong endpoint protection, and advanced endpoint protection & response. If your devices are managed with Endpoint Manager, you can create policies based on threat levels found in Microsoft Defender for Endpoint.
 
-  For more information, see [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint).
+  For more information, see:
+
+  - [Microsoft Defender Antivirus](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-windows)
+  - [Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)
+  - [Enforce compliance for Microsoft Defender for Endpoint](/mem/intune/protect/advanced-threat-protection)
 
 - The Application Security features help prevent unwanted or malicious code from running, isolate untrusted websites & untrusted Office files, protect against phishing or malware websites, and more.
   
