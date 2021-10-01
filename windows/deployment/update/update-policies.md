@@ -18,8 +18,8 @@ ms.collection: M365-modern-desktop
 
 **Applies to**
 
--   Windows 10
--   Windows 11
+- Windows 10
+- Windows 11
 
 Keeping devices up to date is the best way to keep them working smoothly and securely. 
 
@@ -38,10 +38,6 @@ an update. The new policy starts the countdown for the update installation deadl
 update is published plus any deferral. In addition, this policy includes a configurable grace period and the option
 to opt out of automatic restarts until the deadline is reached (although we recommend always allowing automatic
 restarts for maximum update velocity).
-
-> [!IMPORTANT]
-> If you use the new **Specify deadlines for automatic updates and restarts** setting in Windows 10,
-> version 1903, you must disable the [older deadline policies](wufb-compliancedeadlines.md#prior-to-windows-10-version-1709) because they could conflict.
 
 We recommend you set deadlines as follows:
 - Quality update deadline, in days: 3

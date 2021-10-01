@@ -27,7 +27,7 @@ ms.technology: mde
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 Signed WDAC policies give organizations the highest level of malware protection available in Windows—must be signed with [PKCS #7](https://datatracker.ietf.org/doc/html/rfc5652). In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the computer. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this in mind, it is much more difficult to remove signed WDAC policies. Note that SecureBoot must be enabled in order to restrict users from updating or removing signed WDAC policies.
 

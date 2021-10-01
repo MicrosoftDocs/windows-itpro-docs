@@ -1,5 +1,5 @@
 ---
-title: Planning for the App-V Server Deployment (Windows 10)
+title: Planning for the App-V Server Deployment (Windows 10/11)
 description: Learn what you need to know so you can plan for the Microsoft Application Virtualization (App-V) 5.1 server deployment.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
