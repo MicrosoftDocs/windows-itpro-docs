@@ -216,28 +216,28 @@ additionalContent:
         - title: Microsoft Endpoint Manager
           links:
             - text: Microsoft Endpoint Manager documentation
-              url: /mem/index
+              url: /mem
             - text: Overview of Microsoft Endpoint Manager
-              url: /mem/endpoint-manager-overview.md
+              url: /mem/endpoint-manager-overview
             - text: Getting started with Microsoft Endpoint Manager
-              url: /mem/endpoint-manager-getting-started.md
+              url: /mem/endpoint-manager-getting-started
             - text: Microsoft Endpoint Manager blog
               url: https://aka.ms/memblog
         - title: Windows 365
           links:
             - text: Windows 365 documentation
-              url: /windows-365/index
+              url: /windows-365
             - text: What is Windows 365
-              url: /windows-365/overview.md
+              url: /windows-365/overview
             - text: Windows 365 blog
               url: https://www.microsoft.com/microsoft-365/blog/
         - title: Windows Server
           links:
             - text: Windows Server documentation
-              url: /windows-server/index
+              url: /windows-server
             - text: What's new in Windows Server 2022?
-              url: /windows-server/get-started/whats-new-in-windows-server-2022.md
+              url: /windows-server/get-started/whats-new-in-windows-server-2022
             - text: Get started with Windows Server
-              url: /windows-server/get-started/get-started-with-windows-server.md
+              url: /windows-server/get-started/get-started-with-windows-server
             - text: Windows Server blog
               url: https://cloudblogs.microsoft.com/windowsserver/
