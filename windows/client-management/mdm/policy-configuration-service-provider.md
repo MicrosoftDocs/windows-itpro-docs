@@ -747,6 +747,43 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_DiskNVCache policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-disknvcache.md#admx-disknvcache-bootresumepolicy" id="admx-disknvcache-bootresumepolicy">ADMX_DiskNVCache/BootResumePolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-disknvcache.md#admx-disknvcache-featureoffpolicy" id="admx-disknvcache-featureoffpolicy">ADMX_DiskNVCache/FeatureOffPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-disknvcache.md#admx-disknvcache-solidstatepolicy" id="admx-disknvcache-solidstatepolicy">ADMX_DiskNVCache/SolidStatePolicy</a>
+  </dd>
+<dl>
+
+### ADMX_DiskQuota policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_removablemedia" id="admx-diskquota-dq_removablemedia">ADMX_DiskQuota/DQ_RemovableMedia</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_enable" id="admx-diskquota-dq_enable">ADMX_DiskQuota/DQ_Enable</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_enforce" id="admx-diskquota-dq_enforce">ADMX_DiskQuota/DQ_Enforce</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_logeventoverlimit" id="admx-diskquota-dq_logeventoverlimit">ADMX_DiskQuota/DQ_LogEventOverLimit</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_logeventoverthreshold" id="admx-diskquota-dq_logeventoverthreshold">ADMX_DiskQuota/DQ_LogEventOverThreshold</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-diskquota.md#admx-diskquota-dq_limit" id="admx-diskquota-dq_limit">ADMX_DiskQuota/DQ_Limit</a>
+  </dd>
+<dl>
+
 ### ADMX_DistributedLinkTracking policies  
 
 <dl>
@@ -1575,6 +1612,26 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-iis.md#admx-iis-preventiisinstall
 " id="admx-iis-preventiisinstall
 ">ADMX_IIS/PreventIISInstall</a>
+  </dd>
+<dl>
+
+### ADMX_iSCSI policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-iscsi.md#admx-iscsi-iscsigeneral_restrictadditionallogins
+" id="admx-iscsi-iscsigeneral_restrictadditionallogins
+">ADMX_iSCSI/iSCSIGeneral_RestrictAdditionalLogins</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-iscsi.md#admx-iscsi-iscsigeneral_changeiqnname
+" id="admx-iscsi-iscsigeneral_changeiqnname
+">ADMX_iSCSI/iSCSIGeneral_ChangeIQNName</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-iscsi.md#admx-iscsi-iscsisecurity_changechapsecret
+" id="admx-iscsi-iscsisecurity_changechapsecret
+">ADMX_iSCSI/iSCSISecurity_ChangeCHAPSecret</a>
   </dd>
 <dl>
 
@@ -3575,15 +3632,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-snmp.md#admx-snmp-snmp-traps-public" id="admx-snmp-snmp-traps-public">ADMX_Snmp/SNMP_Traps_Public</a>
   </dd>
 </dl>
-
-### ADMX_SoundRec policies
-
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-soundrec.md#admx-soundrec-soundrec_diableapplication_titletext_1" id="admx-soundrec-soundrec_diableapplication_titletext_1">ADMX_SoundRec/Soundrec_DiableApplication_TitleText_1</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-soundrec.md#admx-soundrec-soundrec_diableapplication_titletext_2" id="admx-soundrec-soundrec_diableapplication_titletext_2">ADMX_SoundRec/Soundrec_DiableApplication_TitleText_2</a>
   </dd>
 <dl>
 
@@ -3801,6 +3849,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_TabletShell policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-tabletshell.md#admx-tabletshell-disableinkball_1" ID="admx-tabletshell-disableinkball_1">ADMX_TabletShell/DisableInkball_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-tabletshell.md#admx-tabletshell-disablenotewriterprinting_1" ID="admx-tabletshell-disablenotewriterprinting_1">ADMX_TabletShell/DisableNoteWriterPrinting_1</a>
+  </dd>
+<dl>
+
 ### ADMX_Taskbar policies  
 
 <dl>
@@ -3915,6 +3974,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-tcpip.md#admx-tcpip-windows-scaling-heuristics-state" id="admx-tcpip-windows-scaling-heuristics-state">ADMX_tcpip/Windows_Scaling_Heuristics_State</a>
   </dd>
 </dl>
+
+### ADMX_TerminalServer policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_gateway_policy_enable" id="admx-terminalserver-ts_gateway_policy_enable">ADMX_TerminalServer/TS_GATEWAY_POLICY_ENABLE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_gateway_policy_auth_method" id="admx-terminalserver-ts_gateway_policy_auth_method">ADMX_TerminalServer/TS_GATEWAY_POLICY_AUTH_METHOD</a>
+  </dd> 
+<dl>
 
 ### ADMX_Thumbnails policies  
 
