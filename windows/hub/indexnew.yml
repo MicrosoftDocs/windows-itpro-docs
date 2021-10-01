@@ -34,7 +34,7 @@ highlightedContent:
     # Card
     - title: Learn more about Hybrid Work
       itemType: overview
-      url: /windows/deployment/deploy-whats-new.md
+      url: https://www.microsoft.com/hybridwork/
 
 
 # productDirectory section (optional)
