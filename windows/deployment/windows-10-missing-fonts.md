@@ -37,22 +37,22 @@ For example, if you have an English (or French, German, or Spanish) version of W
 - Gungsuh
 - GungsuhChe
 
-If you want to use these fonts, you can enable the optional feature to add these back to your system. Be aware that this is a permanent change in behavior for Windows client, and it will remain this way in future releases.
+If you want to use these fonts, you can enable the optional feature to add them back to your system. This is a permanent change in behavior for Windows client, and it will remain this way in future releases.
 
 ## Installing language-associated features via language settings:
 
-If you want to use the fonts from the optional feature and you know that you will want to view Web pages, edit documents, or use apps in the language associated with that feature, add that language into your user profile. You do this the Settings app.
+If you want to use the fonts from the optional feature and you know that you will want to view Web pages, edit documents, or use apps in the language associated with that feature, add that language into your user profile. Use the Settings app.
 
 For example, here are the steps to install the fonts associated with the Hebrew language:
 
-1. Click **Start > Settings**.
-2. In Settings, click **Time & language**, and then click **Region & language**.
-3. If Hebrew is not included in the list of languages, click the plus sign (**+**) to add a language.
-4. Find Hebrew, and then click it to add it to your language list.
+1. Select **Start > Settings**.
+2. In **Settings**, select **Time & language**, and then select **Region & language**.
+3. If Hebrew is not included in the list of languages, select the plus sign (**+**) to add a language.
+4. Find **Hebrew**, and then select it to add it to your language list.
 
-Once you have added Hebrew to your language list, then the optional Hebrew font feature and other optional features for Hebrew language support are installed. This should only take a few minutes.
+Once you have added Hebrew to your language list, then the optional Hebrew font feature and other optional features for Hebrew language support are installed. This process should only take a few minutes.
 
-> Note: The optional features are installed by Windows Update. This means you need to be online for the Windows Update service to work.
+> Note: The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
 
 ## Install optional fonts manually without changing language settings:
 
@@ -60,11 +60,11 @@ If you want to use fonts in an optional feature but don't need to search web pag
 
 For example, here are the steps to install the fonts associated with the Hebrew language without adding the Hebrew language itself to your language preferences:
 
-1. Click **Start > Settings**.
-2. In Settings, click **Apps**, click **Apps & features**, and then click **Manage optional features**.
+1. Select **Start > Settings**.
+2. In **Settings**, select **Apps**, select **Apps & features**, and then select **Manage optional features**.
 
-3. If you don't see **Hebrew Supplemental Fonts** in the list of installed features, click the plus sign (**+**) to add a feature.
-4. Select **Hebrew Supplemental Fonts** in the list, and then click **Install**.
+3. If you don't see **Hebrew Supplemental Fonts** in the list of installed features, select the plus sign (**+**) to add a feature.
+4. Select **Hebrew Supplemental Fonts** in the list, and then clselectick **Install**.
 
 > Note: The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.
 
@@ -97,7 +97,7 @@ Here is a comprehensive list of the font families in each of the optional featur
 - Telugu Supplemental Fonts: Gautami, Vani
 - Thai Supplemental Fonts: Angsana New, AngsanaUPC, Browallia New, BrowalliaUPC, Cordia New, CordiaUPC, DilleniaUPC, EucrosiaUPC, FreesiaUPC, IrisUPC, JasmineUPC, KodchiangUPC, Leelawadee, LilyUPC
 
-## Related Topics
+## Related articles
 
 [Download the list of all available language FODs](https://download.microsoft.com/download/0/A/A/0AA4342D-3933-4216-A90D-3BA8392FB1D1/Windows%2010%201703%20FOD%20to%20LP%20Mapping%20Table.xlsx)
 
