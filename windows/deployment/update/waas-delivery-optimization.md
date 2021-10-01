@@ -1,5 +1,5 @@
 ---
-title: Delivery Optimization for Windows 10 updates
+title: Delivery Optimization for Windows client updates
 manager: laurawi
 description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
@@ -16,12 +16,12 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Delivery Optimization for Windows 10 updates
-
+# Delivery Optimization for Windows client updates
 
 **Applies to**
 
 - Windows 10
+- Windows 11
 
 > **Looking for Group Policy objects?** See [Delivery Optimization reference](waas-delivery-optimization-reference.md) or the master spreadsheet available at the [Download Center](https://www.microsoft.com/download/details.aspx?id=102158).
 
@@ -29,44 +29,17 @@ Windows updates, upgrades, and applications can contain packages with very large
 
 Delivery Optimization is a cloud-managed solution. Access to the Delivery Optimization cloud services is a requirement. This means that in order to use the peer-to-peer functionality of Delivery Optimization, devices must have access to the internet.
 
-For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization for Windows 10 updates](waas-delivery-optimization-setup.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
+For information about setting up Delivery Optimization, including tips for the best settings in different scenarios, see [Set up Delivery Optimization](waas-delivery-optimization-setup.md). For a comprehensive list of all Delivery Optimization settings, see [Delivery Optimization reference](waas-delivery-optimization-reference.md).
 
 
 >[!NOTE]
 >WSUS can also use [BranchCache](waas-branchcache.md) for content sharing and caching. If Delivery Optimization is enabled on devices that use BranchCache, Delivery Optimization will be used instead. 
 
-## New in Windows 10, version 2004
+## New in Windows 10, version 20H2 and Windows 11
 
-- Enterprise network throttling: new settings have been added in Group Policy and mobile device management (MDM) to control foreground and background throttling as absolute values (Maximum Background Download Bandwidth in (in KB/s)). These settings are also available in the Windows user interface:
-
-  ![absolute bandwidth settings in delivery optimization interface.](images/DO-absolute-bandwidth.png)
-
-- Activity Monitor now identifies the cache server used for as the source for Microsoft Connected Cache. For more information about using Microsoft Connected Cache with Configuration Manager, see [Microsoft Connected Cache](/mem/configmgr/core/plan-design/hierarchy/microsoft-connected-cache).
-
-- New options for [`Get-DeliveryOptimizationPerfSnap`](waas-delivery-optimization-setup.md#analyze-usage).
-
-- New cmdlets:
-    - `Enable-DeliveryOptimizationVerboseLogs`
-    - `Disable-DeliveryOptimizationVerboseLogs`
-    - `Get-DeliveryOptimizationLogAnalysis [ETL Logfile path] [-ListConnections]`
-    
-- New policy settings:
-    - [DOCacheHost](waas-delivery-optimization-reference.md#cache-server-hostname)
-    - [DOCacheHostSource](waas-delivery-optimization-reference.md#cache-server-hostname-source)
-    - [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs); replaces DOPercentageMaxDownloadBandwidth
-    - [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs)
-    
-- Removed policy settings (if you set these policies in Windows 10, 2004, they will have no effect):
-    - DOMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs) or [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
-    - DOPercentageMaxDownloadBandwidth; use [DOMaxBackgroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-background-download-bandwidth-in-kbs) or [DOMaxForegroundDownloadBandwidth](waas-delivery-optimization-reference.md#maximum-foreground-download-bandwidth-in-kbs) instead.
-    - DOMaxUploadBandwidth
-    
-- Support for new types of downloads:
-    - Office installs and updates
-    - Xbox game pass games
-    - MSIX apps (HTTP downloads only)
-    - Microsoft Edge browser installations and updates
-    - [Dynamic updates](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-benefits-of-windows-10-dynamic-update/ba-p/467847) 
+- New peer selection options: Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. The subnet mask option applies to both Download Modes LAN (1) and Group (2). If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID)."
+- Local Peer Discovery: a new option for **Restrict Peer Selection By** (in Group Policy) or **DORestrictPeerSelectionBy** (in MDM). This option restricts the discovery of local peers using the DNS-SD protocol. When you set Option 2, Delivery Optimization will restrict peer selection to peers that are locally discovered (using DNS-SD). If you also enabled Group mode, Delivery Optimization will connect to locally discovered peers that are also part of the same group (that is, those which have the same Group ID).
+- Starting with Windows 10, version 2006 (and in Windows 11), the Bypass option of [Download Mode](waas-delivery-optimization-reference.md#download-mode) is no longer used.
 
 ## Requirements
 
@@ -82,8 +55,8 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 
 | Download package | Minimum Windows version |
 |------------------|---------------|
-| Windows 10 updates (feature updates and quality updates) | 1511 |
-| Windows 10 drivers | 1511 |
+| Windows client updates (feature updates and quality updates) | 1511 |
+| Windows client drivers | 1511 |
 | Windows Store files | 1511 |
 | Windows Store for Business files | 1511 |
 | Windows Defender definition updates | 1511 |
@@ -100,7 +73,7 @@ The following table lists the minimum Windows 10 version that supports Delivery 
 
 
 
-In Windows 10 Enterprise, Professional, and Education editions, Delivery Optimization is enabled by default for peer-to-peer sharing on the local network (NAT). Specifically, all of the devices must be behind the same NAT, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
+In Windows client Enterprise, Professional, and Education editions, Delivery Optimization is enabled by default for peer-to-peer sharing on the local network (NAT). Specifically, all of the devices must be behind the same NAT, but you can configure it differently in Group Policy and mobile device management (MDM) solutions such as Microsoft Intune.
 
 For more information, see "Download mode" in [Delivery optimization reference](waas-delivery-optimization-reference.md).
 
@@ -242,7 +215,7 @@ Try a Telnet test between two devices on the network to ensure they can connect 
 2. Run the test. For example, if you are on device with IP 192.168.8.12 and you are trying to test the connection to 192.168.9.17 run `telnet 192.168.9.17 7680` (the syntax is *telnet [destination IP] [port]*. You will either see a connection error or a blinking cursor like this /_. The blinking cursor means success.
 
 > [!NOTE]
-> You can also use [Test-NetConnection](/powershell/module/nettcpip/test-netconnection?view=windowsserver2019-ps) instead of Telnet to run the test.
+> You can also use [Test-NetConnection](/powershell/module/nettcpip/test-netconnection) instead of Telnet to run the test.
 > **Test-NetConnection -ComputerName 192.168.9.17 -Port 7680**
 
 ### None of the computers on the network are getting updates from peers
@@ -254,28 +227,3 @@ Check Delivery Optimization settings that could limit participation in peer cach
 - Enable peer caching while the device connects using VPN.
 - Allow uploads when the device is on battery while under the set battery level
 
-
-
-
-## Learn more
-
-[Windows 10, Delivery Optimization, and WSUS](/archive/blogs/mniehaus/windows-10-delivery-optimization-and-wsus-take-2)
-
-
-## Related articles
-
-- [Update Windows 10 in the enterprise](index.md)
-- [Overview of Windows as a service](waas-overview.md)
-- [Prepare servicing strategy for Windows 10 updates](waas-servicing-strategy-windows-10-updates.md)
-- [Build deployment rings for Windows 10 updates](waas-deployment-rings-windows-10-updates.md)
-- [Assign devices to servicing channels for Windows 10 updates](waas-servicing-channels-windows-10-updates.md)
-- [Optimize update delivery for Windows 10 updates](waas-optimize-windows-10-updates.md)
-- [Configure BranchCache for Windows 10 updates](waas-branchcache.md)
-- [Deploy updates using Windows Update for Business](waas-manage-updates-wufb.md)
-- [Configure Windows Update for Business](waas-configure-wufb.md)
-- [Integrate Windows Update for Business with management solutions](waas-integrate-wufb.md)
-- [Walkthrough: use Group Policy to configure Windows Update for Business](waas-wufb-group-policy.md)
-- [Walkthrough: use Intune to configure Windows Update for Business](/intune/windows-update-for-business-configure)
-- [Deploy Windows 10 updates using Windows Server Update Services](waas-manage-updates-wsus.md)
-- [Deploy Windows 10 updates using Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/deploy-use/manage-windows-as-a-service)
-- [Manage device restarts after updates](waas-restart.md)
