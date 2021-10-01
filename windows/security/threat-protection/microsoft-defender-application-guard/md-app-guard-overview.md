@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Application Guard (Windows 10)
+title: Microsoft Defender Application Guard (Windows 10 or Windows 11)
 description: Learn about Microsoft Defender Application Guard and how it helps to combat malicious content and malware out on the Internet.
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 01/27/2021
+ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -18,7 +18,9 @@ ms.technology: mde
 # Microsoft Defender Application Guard overview
 
 **Applies to** 
+
 - Windows 10
+- Windows 11
 
 Microsoft Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete.
 
