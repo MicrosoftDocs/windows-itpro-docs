@@ -86,13 +86,13 @@ To use TBSLogGenerator, follow these steps:
 
    ![Windows Explorer window that shows the text file that TBSLogGenerator produces.](./images/ts-tpm-5.png)
 
-The content of this text file resembles the following.
-
-![Contents of the text file, as shown in NotePad.](./images/ts-tpm-6.png)
-
-To find the PCR information, go to the end of the file.
-
-![View of NotePad that shows the PCR information at the end of the text file.](./images/ts-tpm-7.png)
+   The content of this text file resembles the following.
+    
+   ![Contents of the text file, as shown in NotePad.](./images/ts-tpm-6.png)
+    
+   To find the PCR information, go to the end of the file.
+    
+   ![View of NotePad that shows the PCR information at the end of the text file.](./images/ts-tpm-7.png)
 
 ## Use PCPTool to decode Measured Boot logs
 
@@ -117,4 +117,4 @@ where the variables represent the following values:
 
 The content of the XML file resembles the following.
 
-![Command Prompt window that shows an example of how to use PCPTool.](./images/pcptool-output.jpg)
+:::image type="content" alt-text="Command Prompt window that shows an example of how to use PCPTool." source="./images/pcptool-output.jpg" lightbox="./images/pcptool-output.jpg":::
