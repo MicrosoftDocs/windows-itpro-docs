@@ -7,7 +7,6 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.author: greglin
-ms.date: 09/03/2021
 ms.reviewer: 
 manager: laurawi
 ms.localizationpriority: high
@@ -36,25 +35,25 @@ The tools that you use for core workloads during Windows 10 deployments can stil
 - If you use [Windows Server Update Service (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus), you will need to sync the new **Windows 11** product category. After you sync the product category, you will see Windows 11 offered as an option. If you would like to validate Windows 11 prior to release, you can sync the **Windows Insider Pre-release** category as well.
 
   > [!NOTE]
-  > During deployment, you will be prompted to agree to the End User License Agreement on behalf of your users. Additionally, you will not see an x86 option because Windows 11 is not supported on 32-bit architecture.
+  > During deployment, you will be prompted to agree to the Microsoft Software License Terms on behalf of your users. Additionally, you will not see an x86 option because Windows 11 is not supported on 32-bit architecture.
 
 - If you use [Microsoft Endpoint Configuration Manager](/mem/configmgr/), you can sync the new **Windows 11** product category and begin upgrading eligible devices. If you would like to validate Windows 11 prior to release, you can sync the **Windows Insider Pre-release** category as well.  
 
   > [!NOTE]
-  > Configuration Manager will prompt you to accept the End User License Agreement on behalf of the users in your organization. 
+  > Configuration Manager will prompt you to accept the Microsoft Software License Terms on behalf of the users in your organization. 
 
 #### Cloud-based solutions
 
--	If you use Windows Update for Business policies, you will need to use the **Target Version** capability rather than feature update deferrals to upgrade from Windows 10 to Windows 11. Feature update deferrals are great to move to newer versions of your current product (for example, Windows 10, version 20H2 to 21H1, but do not enable you to move between products (Windows 10 to Windows 11). 
+-	If you use Windows Update for Business policies, you will need to use the **Target Version** capability (either through policy or the Windows Update for Business deployment service) rather than using feature update deferrals alone to upgrade from Windows 10 to Windows 11. Feature update deferrals are great to move to newer versions of your current product (for example, Windows 10, version 20H2 to 21H1), but won't automatically devices move between products (Windows 10 to Windows 11). 
+    - If you use Microsoft Intune and have a Microsoft 365 E3 license, you will be able to use the [feature update deployments](/mem/intune/protect/windows-10-feature-updates) page to select **Windows 11, version 21H2** and upgrade Windows 10 devices to Windows 11. You can also continue using the same update experience controls to manage Windows 10 and Windows 11 on the **Update Rings** page in Intune. If you aren’t ready to move to Windows 11, keep the feature update version set at the version you are currently on. When you are ready to start upgrading devices, change the feature update deployment setting to specify Windows 11. 
     - In Group Policy, **Select target Feature Update version** has two entry fields after taking the 9/1/2021 optional update ([KB5005101](https://support.microsoft.com/topic/september-1-2021-kb5005101-os-builds-19041-1202-19042-1202-and-19043-1202-preview-82a50f27-a56f-4212-96ce-1554e8058dc1)) or a later update: **Product Version** and **Target Version**. 
-    - The product field must specify Windows 11 in order for devices to upgrade to Windows 11. If only the target version field is configured, the device will be offered matching versions of the same product. 
-    - For example, if a device is running <i>Windows 10, version 2004</i> and only the target version is configured to 21H1, this device will be offered version <i>Windows 10, version 21H1</i>, even if multiple products have a 21H1 version.
-- Quality update deferrals will continue to work the same across both Windows 10 and Windows 11. This is true regardless of which management tool you use to configure Windows Update for Business policies.
-- If you use Microsoft Intune and have a Microsoft 365 E3 license, you will be able to use [feature update deployments](/mem/intune/protect/windows-10-feature-updates) to easily update devices from one release of Windows 10 to another, or to upgrade Windows 10 devices to Windows 11. You can also continue using the same update experience controls to manage Windows 10 and Windows 11. If you aren’t ready to move to Windows 11, keep the feature update version set at the version you are currently on. When you are ready to start upgrading devices, change the feature update deployment setting to specify Windows 11. 
+    - The product field must specify Windows 11 in order for devices to upgrade to Windows 11. If only the target version field is configured, the device will be offered matching versions of the same product. For example, if a device is running <i>Windows 10, version 2004</i> and only the target version is configured to 21H1, this device will be offered version <i>Windows 10, version 21H1</i>, even if multiple products have a 21H1 version. If you use deferrals today in Group Policy, your devices will continue to get the latest feature update of Windows 10 once it has reached your specified deferral age, but will not be offered Windows 11 until you specify this by using the **Select target Feature Update version** policy. Your deferrals will continue to apply in this case as well. 
+- Quality update deferrals and experience policies will continue to work the same across both Windows 10 and Windows 11. This is true regardless of which management tool you use to configure Windows Update for Business policies.
+
 
 ## Cloud-based management
 
-If you aren’t already taking advantage of cloud-based management capabilities, like those available in [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), it's worth considering. In addition to consolidating device management and endpoint security into a single platform, Microsoft Endpoint Manager can better support the diverse bring-your-own-device (BYOD) ecosystem that is increasingly the norm with hybrid work scenarios. It can also enable you to track your progress against compliance and business objectives, while protecting end-user privacy.  
+If you aren’t already taking advantage of cloud-based management capabilities, like those available in [Microsoft Endpoint Manager](/mem/endpoint-manager-overview), it's worth considering. In addition to consolidating device management and endpoint security into a single platform, Microsoft Endpoint Manager can better support the diverse bring-your-own-device (BYOD) ecosystem that is increasingly the norm with hybrid work scenarios. It can also enable you to track your progress against compliance and business objectives, while protecting user privacy.  
 
 The following are some common use cases and the corresponding Microsoft Endpoint Manager capabilities that support them: 
 
@@ -113,9 +112,9 @@ At a high level, the tasks involved are:
 6. Test and support the pilot devices. 
 7. Determine broad deployment readiness based on the results of the pilot. 
 
-## End-user readiness
+## User readiness
 
-Do not overlook the importance of end-user readiness to deliver an effective, enterprise-wide deployment of Windows 11. Windows 11 has a familiar design, but your users will see several enhancements to the overall user interface. They will also need to adapt to changes in menus and settings pages. Therefore, consider the following tasks to prepare users and your IT support staff Windows 11: 
+Do not overlook the importance of user readiness to deliver an effective, enterprise-wide deployment of Windows 11. Windows 11 has a familiar design, but your users will see several enhancements to the overall user interface. They will also need to adapt to changes in menus and settings pages. Therefore, consider the following tasks to prepare users and your IT support staff Windows 11: 
 - Create a communications schedule to ensure that you provide the right message at the right time to the right groups of users, based on when they will see the changes. 
 - Draft concise emails that inform users of what changes they can expect to see. Offer tips on how to use or customize their experience. Include information about support and help desk options. 
 - Update help desk manuals with screenshots of the new user interface, the out-of-box experience for new devices, and the upgrade experience for existing devices. 
