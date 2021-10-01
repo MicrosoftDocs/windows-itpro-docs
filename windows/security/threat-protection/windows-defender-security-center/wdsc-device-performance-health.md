@@ -10,10 +10,10 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 04/30/2018
+ms.date: 
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 
@@ -21,7 +21,8 @@ ms.technology: mde
 
 **Applies to**
 
-- Windows 10, version 1703 and later
+- Windows 10
+- Windows 11
 
 
 The **Device performance & health** section contains information about hardware, devices, and drivers related to the machine. IT administrators and IT pros should reference the appropriate documentation library for the issues they are seeing, such as the [configure the Load and unload device drivers security policy setting](/windows/device-security/security-policy-settings/load-and-unload-device-drivers) and how to [deploy drivers during Windows 10 deployment using Microsoft Endpoint Configuration Manager](/windows/deployment/deploy-windows-cm/add-drivers-to-a-windows-10-deployment-with-windows-pe-using-configuration-manager).
