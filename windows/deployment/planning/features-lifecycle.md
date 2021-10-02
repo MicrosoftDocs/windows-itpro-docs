@@ -22,7 +22,7 @@ Each release of Windows 10 and Windows 11 contains many new and improved feature
 
 ## Windows 11 features
 
-For information about features that are impacted when you upgrade from Windows 10 to Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3) section on the **Find Windows 11 specs, features, and computer requirements** page.
+For information about features that are impacted when you upgrade from Windows 10 to Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3).
 
 ## Features no longer being developed
 
