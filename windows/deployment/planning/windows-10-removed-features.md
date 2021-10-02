@@ -24,6 +24,8 @@ For information about features that might be removed in a future release, see [W
 > [!NOTE]
 > Join the [Windows Insider program](https://insider.windows.com) to get early access to new Windows 10 builds and test these changes yourself.
 
+For information about features in Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3).
+
 The following features and functionalities have been removed from the installed product image for Windows 10. Applications or code that depend on these features won't function in the release when it was removed, or in later releases.
 
 |Feature    |  Details and mitigation  | Removed in version |
