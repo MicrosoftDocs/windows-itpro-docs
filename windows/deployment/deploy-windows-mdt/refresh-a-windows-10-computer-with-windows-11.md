@@ -27,7 +27,7 @@ This topic will show you how to use MDT Lite Touch Installation (LTI) to upgrade
 For the purposes of this topic, we will use three computers: DC01, MDT01, and PC0001. 
 - DC01 is a domain controller for the contoso.com domain.
 - MDT01 is domain member server that hosts your deployment share.
-- PC0001 is a domain member computer running a previous version of Windows that is going to be refreshed to a new version of Windows 10, with data and settings restored. The example used here is a computer running Windows 10, version 1909.
+- PC0001 is a domain member computer running a previous version of Windows that is going to be refreshed to Windows 11, with data and settings restored. The example used here is a computer running Windows 10, version 1909.
 
 Both DC01 and MDT01 are running Windows Server 2019; however any supported version of Windows Server can be used. For more details on the setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
@@ -49,8 +49,8 @@ For a computer refresh with MDT, you use the User State Migration Tool (USMT), w
 
 During the computer refresh, USMT uses a feature called Hard-Link Migration Store. When you use this feature, the files are simply linked in the file system, which allows for fast migration, even when there is a lot of data.
 
->[!NOTE]
->In addition to the USMT backup, you can enable an optional full Windows Imaging (WIM) backup of the machine by configuring the MDT rules. If you do this, a .wim file is created in addition to the USMT backup. The .wim file contains the entire volume from the computer and helpdesk personnel can extract content from it if needed. Please note that this is a data WIM backup only. Using this backup to restore the entire computer is not a supported scenario.
+> [!NOTE]
+> In addition to the USMT backup, you can enable an optional full Windows Imaging (WIM) backup of the machine by configuring the MDT rules. If you do this, a .wim file is created in addition to the USMT backup. The .wim file contains the entire volume from the computer and helpdesk personnel can extract content from it if needed. Please note that this is a data WIM backup only. Using this backup to restore the entire computer is not a supported scenario.
  
 ### Multi-user migration
 
@@ -58,8 +58,8 @@ By default, ScanState in USMT backs up all profiles on the machine, including lo
 
 For example, the following line configures USMT to migrate only domain user profiles and not profiles from the local SAM account database: ScanStateArgs=/ue:\*\\\* /ui:CONTOSO\\\*
 
->[!NOTE]
->You also can combine the preceding switches with the /uel switch, which excludes profiles that have not been accessed within a specific number of days. For example, adding /uel:60 will configure ScanState (or LoadState) not to include profiles that haven't been accessed for more than 60 days.
+> [!NOTE]
+> You also can combine the preceding switches with the /uel switch, which excludes profiles that have not been accessed within a specific number of days. For example, adding /uel:60 will configure ScanState (or LoadState) not to include profiles that haven't been accessed for more than 60 days.
  
 ### Support for additional settings
 
@@ -80,17 +80,17 @@ In these section, we assume that you have already performed the prerequisite pro
 It is also assumed that you have a domain member client computer named PC0001 in your environment running Windows 7, 8.1 or 10 that is ready for a refresh to Windows 11.  For demonstration purposes, we will refreshing a Windows 10 PC to Windows 11.
 
 > [!IMPORTANT]
-> Using a Windows 11 image, it is possible to install Windows 11 on a device that doesn't meet Windows 11 hardware requirements.
+> The computer refresh process can be used to install Windows 11 on a device that doesn't meet Windows 11 hardware requirements, resulting in an unsupported configuration. Before upgrading to Windows 11, verify that the device meets [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements).
  
-### Upgrade (refresh) a Windows 7 SP1 client
+### Upgrade (refresh) a Windows 10 client
 
->[!IMPORTANT]
->Domain join details [specified in the deployment share rules](deploy-a-windows-10-image-using-mdt.md#configure-the-rules) will be used to rejoin the computer to the domain during the refresh process.  If the Windows 7 client is domain-jonied in a different OU than the one specified by MachineObjectOU, the domain join process will initially fail and then retry without specifying an OU. If the domain account that is specified (ex: **MDT_JD**) has [permissions limited to a specific OU](deploy-a-windows-10-image-using-mdt.md#step-1-configure-active-directory-permissions) then the domain join will ultimately fail, the refresh process will proceed, and the client computer object will be orphaned in Active Directory. In the current guide, computer objects should be located in Contoso > Computers > Workstations. Use the Active Directory Users and Computers console to review the location of computer objects and move them if needed. To diagnose MDT domain join errors, see **ZTIDomainJoin.log** in the C:\Windows\Temp\DeploymentLogs directory on the client computer. 
+> [!IMPORTANT]
+> Domain join details [specified in the deployment share rules](deploy-a-windows-11-image-using-mdt.md#configure-the-rules) will be used to rejoin the computer to the domain during the refresh process.  If the Windows 10 client is domain-jonied in a different OU than the one specified by MachineObjectOU, the domain join process will initially fail and then retry without specifying an OU. If the domain account that is specified (ex: **MDT_JD**) has [permissions limited to a specific OU](deploy-a-windows-11-image-using-mdt.md#step-1-configure-active-directory-permissions) then the domain join will ultimately fail, the refresh process will proceed, and the client computer object will be orphaned in Active Directory. In the current guide, computer objects should be located in Contoso > Computers > Workstations. Use the Active Directory Users and Computers console to review the location of computer objects and move them if needed. To diagnose MDT domain join errors, see **ZTIDomainJoin.log** in the C:\Windows\Temp\DeploymentLogs directory on the client computer. 
 
 1. On PC0001, sign in as **contoso\\Administrator** and start the Lite Touch Deploy Wizard by opening **\\\\MDT01\\MDTProduction$\\Scripts\\Litetouch.vbs**. 
 2. Complete the deployment guide using the following settings:
     
-   * Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Custom Image
+   * Select a task sequence to execute on this computer: Windows 11 Enterprise x64 Custom Image
    * Computer name: &lt;default&gt;
    * Specify where to save a complete computer backup: Do not back up the existing computer
      >[!NOTE]
@@ -102,7 +102,7 @@ It is also assumed that you have a domain member client computer named PC0001 in
 4. Setup starts and does the following:
     
    * Backs up user settings and data using USMT.
-   * Installs the Windows 10 Enterprise x64 operating system.
+   * Installs the Windows 11 Enterprise x64 operating system.
    * Installs any added applications.
    * Updates the operating system using your local Windows Server Update Services (WSUS) server.
    * Restores user settings and data using USMT.
@@ -111,14 +111,14 @@ It is also assumed that you have a domain member client computer named PC0001 in
 
      ![monitor deployment.](../images/monitor-pc0001.png)
 
-6. After the refresh process completes, sign in to the Windows 10 computer and verify that user accounts, data and settings were migrated.
+6. After the refresh process completes, sign in to the Windows 11 computer and verify that user accounts, data and settings were migrated.
 
 ## Related topics
 
 [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
 [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md)<br>
-[Create a Windows 10 reference image](create-a-windows-10-reference-image.md)<br>
-[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)<br>
-[Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)<br>
-[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)<br>
+[Create a Windows 11 reference image](create-a-windows-11-reference-image.md)<br>
+[Deploy a Windows 11 image using MDT](deploy-a-windows-11-image-using-mdt.md)<br>
+[Build a distributed environment for Windows 11 deployment](build-a-distributed-environment-for-windows-11-deployment.md)<br>
+[Replace a Windows 10 computer with a Windows 11 computer](replace-a-windows-10-computer-with-a-windows-11-computer.md)<br>
 [Configure MDT settings](configure-mdt-settings.md)
