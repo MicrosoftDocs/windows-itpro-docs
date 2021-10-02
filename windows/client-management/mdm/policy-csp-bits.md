@@ -204,7 +204,8 @@ Using the three policies together (BandwidthThrottlingStartTime, BandwidthThrott
 
 If you disable or do not configure this policy setting, BITS uses all available unused bandwidth.
 
-Note: You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting does not affect peer caching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
+> [!NOTE]
+> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting does not affect peer caching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
 
 Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
 
@@ -293,7 +294,8 @@ Using the three policies together (BandwidthThrottlingStartTime, BandwidthThrott
 
 If you disable or do not configure this policy setting, BITS uses all available unused bandwidth.
 
-Note: You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting does not affect peer caching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
+> [!NOTE]
+> You should base the limit on the speed of the network link, not the computer's network interface card (NIC). This policy setting does not affect peer caching transfers between peer computers (it does affect transfers from the origin server); the "Limit the maximum network bandwidth used for Peercaching" policy setting should be used for that purpose.
 
 Consider using this setting to prevent BITS transfers from competing for network bandwidth when the client computer has a fast network card (10Mbs), but is connected to the network via a slow link (56Kbs).
 
