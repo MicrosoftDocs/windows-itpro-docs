@@ -1,6 +1,6 @@
 ---
 title: Policy CSP - ApplicationDefaults
-description: Learn about various Policy configuration service provider (CSP) - ApplicationDefaults, including SyncML, for Windows 10.
+description: Learn about various Policy configuration service providers (CSP) - ApplicationDefaults, including SyncML, for Windows 10.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -39,28 +39,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -77,9 +83,9 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. This policy allows an administrator to set default file type and protocol associations. When set, default associations will be applied on sign-in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc.xml), and then needs to be  base64 encoded before being added to SyncML.
+This policy allows an administrator to set default file type and protocol associations. When set, default associations are applied on sign in to the PC. The association file can be created using the DISM tool (dism /online /export-defaultappassociations:appassoc.xml). Then, it needs to be base64 encoded before being added to SyncML.
  
-If policy is enabled and the client machine is Azure Active Directory joined, the associations assigned in SyncML will be processed and default associations will be applied.
+If policy is enabled and the client machine is having Azure Active Directory, the associations assigned in SyncML are processed and default associations are applied.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -100,7 +106,7 @@ To create the SyncML, follow these steps:
 <li>Paste the base64 encoded XML into the SyncML</li>
 </ol>
 
-Here is an example output from the dism default association export command:
+Here's an example output from the dism default association export command:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -113,13 +119,13 @@ Here is an example output from the dism default association export command:
 </DefaultAssociations
 ```
 
-Here is the base64 encoded result:
+Here's the base64 encoded result:
 
 ``` syntax
 PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxEZWZhdWx0QXNzb2NpYXRpb25zPg0KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iLmh0bSIgUHJvZ0lkPSJBcHBYNGh4dGFkNzdmYmszamtrZWVya3JtMHplOTR3amYzczkiIEFwcGxpY2F0aW9uTmFtZT0iTWljcm9zb2Z0IEVkZ2UiIC8+DQogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIuaHRtbCIgUHJvZ0lkPSJBcHBYNGh4dGFkNzdmYmszamtrZWVya3JtMHplOTR3amYzczkiIEFwcGxpY2F0aW9uTmFtZT0iTWljcm9zb2Z0IEVkZ2UiIC8+DQogIDxBc3NvY2lhdGlvbiBJZGVudGlmaWVyPSIucGRmIiBQcm9nSWQ9IkFwcFhkNG5yejhmZjY4c3JuaGY5dDVhOHNianlhcjFjcjcyMyIgQXBwbGljYXRpb25OYW1lPSJNaWNyb3NvZnQgRWRnZSIgLz4NCiAgPEFzc29jaWF0aW9uIElkZW50aWZpZXI9Imh0dHAiIFByb2dJZD0iQXBwWHEwZmV2em1lMnB5czYybjNlMGZicWE3cGVhcHlrcjh2IiBBcHBsaWNhdGlvbk5hbWU9Ik1pY3Jvc29mdCBFZGdlIiAvPg0KICA8QXNzb2NpYXRpb24gSWRlbnRpZmllcj0iaHR0cHMiIFByb2dJZD0iQXBwWDkwbnY2bmhheTVuNmE5OGZuZXR2N3RwazY0cHAzNWVzIiBBcHBsaWNhdGlvbk5hbWU9Ik1pY3Jvc29mdCBFZGdlIiAvPg0KPC9EZWZhdWx0QXNzb2NpYXRpb25zPg0KDQo=
 ```
 
-Here is the SyncMl example:
+Here's the SyncMl example:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -155,28 +161,34 @@ Here is the SyncMl example:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -199,7 +211,7 @@ Enabling this policy setting enables web-to-app linking so that apps can be laun
 
 Disabling this policy disables web-to-app linking and http(s) URIs will be opened in the default browser instead of launching the associated app.
 
-If you do not configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
+If you don't configure this policy setting, the default behavior depends on the Windows edition. Changes to this policy take effect on reboot.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -217,16 +229,7 @@ This setting supports a range of values between 0 and 1.
 <!--/Policy-->
 <hr/>
 
-Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 
