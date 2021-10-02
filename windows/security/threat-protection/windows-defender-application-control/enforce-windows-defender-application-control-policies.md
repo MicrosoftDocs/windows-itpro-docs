@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 You should now have one or more WDAC policies broadly deployed in audit mode. You have analyzed events collected from the devices with those policies and you're ready to enforce. Use this procedure to prepare and deploy your WDAC policies in enforcement mode.
 
