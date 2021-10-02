@@ -157,7 +157,6 @@ You can view progress of the process by clicking the Monitoring node in the Depl
 ![Monitor progress.](../images/mdt-replace.png)
 
 
-
 ## Related topics
 
 [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
