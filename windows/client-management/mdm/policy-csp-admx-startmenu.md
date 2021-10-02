@@ -723,7 +723,8 @@ If you disable this setting or do not configure it, users can use the Display Lo
 
 This setting affects the Start menu only. It does not affect the Log Off item on the Windows Security dialog box that appears when you press Ctrl+Alt+Del.
 
-Note: To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab, and then, in the Start Menu Settings box, click Display Logoff.
+> [!NOTE]
+> To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab, and then, in the Start Menu Settings box, click Display Logoff.
 
 Also, see "Remove Logoff" in User Configuration\Administrative Templates\System\Logon/Logoff.
 
@@ -1668,7 +1669,8 @@ This policy setting allows you to remove the Search link from the Start menu, an
 
 If you enable this policy setting, the Search item is removed from the Start menu and from the context menu that appears when you right-click the Start menu. Also, the system does not respond when users press the Application key (the key with the Windows logo)+ F.
 
-Note: Enabling this policy setting also prevents the user from using the F3 key.
+> [!NOTE]
+> Enabling this policy setting also prevents the user from using the F3 key.
 
 In File Explorer, the Search item still appears on the Standard buttons toolbar, but the system does not respond when the user presses Ctrl+F. Also, Search does not appear in the context menu when you right-click an icon representing a drive or a folder.
 
@@ -1886,7 +1888,7 @@ If you enable this policy setting, the system does not track the programs that t
 
 If you disable or do not configure this policy setting, the system tracks the programs that the user runs. The system uses this information to customize Windows features, such as showing frequently used programs in the Start Menu.
 
-Also, see these related policy settings: "Remove frequent programs liist from the Start Menu" and "Turn off personalized menus".
+Also, see these related policy settings: "Remove frequent programs list from the Start Menu" and "Turn off personalized menus".
 
 This policy  setting does not prevent users from pinning programs to the Start Menu or Taskbar. See the "Remove pinned programs list from the Start Menu" and "Do not allow pinning programs to the Taskbar" policy settings.
 
@@ -4976,7 +4978,8 @@ If you disable or do not configure this policy setting, users can use the Displa
 
 This policy setting affects the Start menu only. It does not affect the Log Off item on the Windows Security dialog box that appears when you press Ctrl+Alt+Del, and it does not prevent users from using other methods to log off.
 
-Tip: To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab and, in the Start Menu Settings box, click Display Logoff.
+> [!TIP]
+> To add or remove the Log Off item on a computer, click Start, click Settings, click Taskbar and Start Menu, click the Start Menu Options tab and, in the Start Menu Settings box, click Display Logoff.
 
 See also: "Remove Logoff" policy setting in User Configuration\Administrative Templates\System\Logon/Logoff.
 
