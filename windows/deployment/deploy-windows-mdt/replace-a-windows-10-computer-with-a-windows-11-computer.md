@@ -97,8 +97,8 @@ On **PC0002**:
         * Specify where to save your data and settings: Specify a location
         * Location: \\\\MDT01\\MigData$\\PC0002
         
-        >[!NOTE]
-        >If you are replacing the computer at a remote site you should create the MigData folder on MDT02 and use that share instead.
+        > [!NOTE]
+        > If you are replacing the computer at a remote site you should create the MigData folder on MDT02 and use that share instead.
          
     2.  Specify where to save a complete computer backup: Do not back up the existing computer
 
