@@ -721,7 +721,7 @@ Specifies how new packages should be loaded automatically by App-V on a specific
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP Friendly name: *Specify what to load in background (aka AutoLoad)*
+-   GP Friendly name: *Specify what to load in background (also known as AutoLoad)*
 -   GP name: *Steaming_Autoload*
 -   GP path: *System/App-V/Streaming*
 -   GP ADMX file name: *appv.admx*
