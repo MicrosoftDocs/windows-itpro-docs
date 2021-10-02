@@ -12,13 +12,17 @@ ms.author: greglin
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
-# Windows 10 features lifecycle
+# Windows client features lifecycle
 
 Applies to: 
 - Windows 10
 - Windows 11
 
 Each release of Windows 10 and Windows 11 contains many new and improved features. Occasionally we also remove features and functionality, usually because there is a better option.
+
+## Windows 11 features
+
+For information about features that are impacted when you upgrade from Windows 10 to Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3) section on the **Find Windows 11 specs, features, and computer requirements** page.
 
 ## Features no longer being developed
 
