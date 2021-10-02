@@ -93,8 +93,8 @@ It is also assumed that you have a domain member client computer named PC0001 in
    * Select a task sequence to execute on this computer: Windows 11 Enterprise x64 Custom Image
    * Computer name: &lt;default&gt;
    * Specify where to save a complete computer backup: Do not back up the existing computer
-     >[!NOTE]
-     >Skip this optional full WIM backup that we are choosing not to perform. The USMT backup will still run.
+     > [!NOTE]
+     > Skip this optional full WIM backup that we are choosing not to perform. The USMT backup will still run.
    * Select one or more applications to install: Install - Adobe Reader
 
      ![Computer refresh.](../images/fig2-taskseq.png "Start the computer refresh")
@@ -104,7 +104,7 @@ It is also assumed that you have a domain member client computer named PC0001 in
    * Backs up user settings and data using USMT.
    * Installs the Windows 11 Enterprise x64 operating system.
    * Installs any added applications.
-   * Updates the operating system using your local Windows Server Update Services (WSUS) server.
+   * Updates the operating system using your local Windows Server Update Services (WSUS) server (if applicable).
    * Restores user settings and data using USMT.
 
 5. You can monitor progress of the deployment using the deployment workbench on MDT01. See the following example:
@@ -119,6 +119,6 @@ It is also assumed that you have a domain member client computer named PC0001 in
 [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md)<br>
 [Create a Windows 11 reference image](create-a-windows-11-reference-image.md)<br>
 [Deploy a Windows 11 image using MDT](deploy-a-windows-11-image-using-mdt.md)<br>
-[Build a distributed environment for Windows 11 deployment](build-a-distributed-environment-for-windows-11-deployment.md)<br>
+[Build a distributed environment for Windows 11 deployment](build-a-distributed-environment-for-windows-deployment.md)<br>
 [Replace a Windows 10 computer with a Windows 11 computer](replace-a-windows-10-computer-with-a-windows-11-computer.md)<br>
 [Configure MDT settings](configure-mdt-settings.md)
