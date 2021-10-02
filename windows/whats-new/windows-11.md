@@ -37,7 +37,7 @@ Windows 11 is built on the same foundation as Windows 10, so the investments you
 
 ## How to get Windows 11
 
-Windows 11 will be delivered as an upgrade to eligible devices running Windows 10, beginning later in the 2021 calendar year. Windows 11 will also be available on eligible new devices.
+Windows 11 will be delivered as an upgrade to eligible devices running Windows 10, beginning on October 5, 2021. Windows 11 will also be available on eligible new devices.
 
 For administrators managing devices on behalf of their organization, Windows 11 will be available through the same, familiar channels that you use today for Windows 10 feature updates. You will be able to use existing deployment and management tools, such as Windows Update for Business, Microsoft Endpoint Manager, and Windows Autopilot. For more information, see [Plan for Windows 11](windows-11-plan.md).
 
@@ -89,5 +89,4 @@ When Windows 11 reaches general availability, important servicing-related announ
 ## Also see
 
 [What's new in Windows 11](/windows-hardware/get-started/what-s-new-in-windows)<br>
-[Windows 11 Security — Our Hacker-in-Chief Runs Attacks and Shows Solutions](https://www.youtube.com/watch?v=2RTwGNyhSy8)<br>
 [Windows 11: The Optimization and Performance Improvements](https://www.youtube.com/watch?v=oIYHRRTCVy4)
