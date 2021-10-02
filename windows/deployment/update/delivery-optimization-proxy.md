@@ -15,7 +15,10 @@ ms.topic: article
 
 # Using a proxy with Delivery Optimization
 
-**Applies to**: Windows 10
+**Applies to**
+
+- Windows 10
+- Windows 11
 
 When Delivery Optimization downloads content from HTTP sources, it uses the automatic proxy discovery capability of WinHttp to streamline and maximize the support for complex proxy configurations as it makes range requests from the content server. It does this by setting the **WINHTTP_ACCESS_TYPE_AUTOMATIC_PROXY** flag in all HTTP calls. 
 

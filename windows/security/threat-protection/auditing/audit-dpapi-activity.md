@@ -11,15 +11,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit DPAPI Activity
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit [DPAPI](/previous-versions/ms995355(v=msdn.10)) Activity determines whether the operating system generates audit events when encryption or decryption calls are made into the data protection application interface ([DPAPI](/previous-versions/ms995355(v=msdn.10))).

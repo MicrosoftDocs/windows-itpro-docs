@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -16,10 +16,6 @@ ms.technology: mde
 
 # 6281(F): Code Integrity determined that the page hashes of an image file are not valid. The file could be improperly signed without page hashes or corrupt due to unauthorized modification. The invalid hashes could indicate a potential disk device error.
 
-**Applies to**
--   Windows 10
--   Windows Server 2016
- 
 
 The file could be improperly signed without page hashes or corrupt due to unauthorized modification. The invalid hashes could indicate a potential disk device error.
 

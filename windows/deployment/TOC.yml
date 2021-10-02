@@ -52,6 +52,8 @@
           items:
             - name: Using a proxy with Delivery Optimization
               href: update/delivery-optimization-proxy.md
+            - name: Delivery Optimization client-service communication
+              href: update/delivery-optimization-workflow.md
         - name: Best practices for feature updates on mission-critical devices
           href: update/feature-update-mission-critical.md
         - name: Windows 10 deployment considerations
@@ -132,13 +134,13 @@
                   href: deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md
             - name: Subscription Activation
               items:
-                - name: Windows 10 Subscription Activation
+                - name: Windows 10/11 Subscription Activation
                   href: windows-10-subscription-activation.md
-                - name: Windows 10 Enterprise E3 in CSP
+                - name: Windows 10/11 Enterprise E3 in CSP
                   href: windows-10-enterprise-e3-overview.md
                 - name: Configure VDA for Subscription Activation
                   href: vda-subscription-activation.md
-                - name: Deploy Windows 10 Enterprise licenses
+                - name: Deploy Windows 10/11 Enterprise licenses
                   href: deploy-enterprise-licenses.md
         - name: Deploy Windows 10 updates
           items:

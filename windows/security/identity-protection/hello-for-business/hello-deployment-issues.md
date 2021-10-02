@@ -27,16 +27,17 @@ Applies to:
 
 - Azure AD joined deployments
 - Windows 10, version 1803 and later
+- Windows 11
 
 PIN reset on Azure AD joined devices uses a flow called web sign-in to authenticate the user above lock. Web sign in only allows navigation to specific domains. If it attempts to navigate to a domain that is not allowed it will shows a page with the error message "We can't open that page right now".
 
 ### Identifying Azure AD joined PIN Reset Allowed Domains Issue
 
-The user can launch the PIN reset flow from above lock using the "I forgot my PIN" link in the PIN credential provider. Selecting this link will launch a full screen UI for the PIN experience on Azure AD Join devices. Typically, this UI will display an Azure authentication server page where the user will authenticate using Azure AD credentials and complete multi-factor authentication.
+The user can launch the PIN reset flow from above lock using the "I forgot my PIN" link in the PIN credential provider. Selecting this link will launch a full screen UI for the PIN experience on Azure AD Join devices. Typically, this UI will display an Azure authentication server page where the user will authenticate using Azure AD credentials and complete multifactor authentication.
 
-In federated environments authentication may be configured to route to AD FS or a third party identity provider. If the PIN reset flow is launched and attempts to navigate to a federated identity provider server page, it will fail and display the "We can't open that page right now" error if the domain for the server page is not included in an allow list.
+In federated environments authentication may be configured to route to AD FS or a third-party identity provider. If the PIN reset flow is launched and attempts to navigate to a federated identity provider server page, it will fail and display the "We can't open that page right now" error if the domain for the server page is not included in an allow list.
 
-If you are a customer of Azure US Government cloud, PIN reset will also attempt to navigate to a domain that is not included in the default allow list. This results in "We can't open that page right now".
+If you are a customer of Azure US Government cloud, PIN reset will also attempt to navigate to a domain that is not included in the default allowlist. This results in "We can't open that page right now".
 
 ### Resolving Azure AD joined PIN Reset Allowed Domains Issue
 

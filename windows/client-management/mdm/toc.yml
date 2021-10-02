@@ -23,9 +23,9 @@ items:
           href: certificate-authentication-device-enrollment.md
         - name: On-premises authentication device enrollment
           href: on-premise-authentication-device-enrollment.md
-    - name: Understanding ADMX-backed policies
+    - name: Understanding ADMX policies
       href: understanding-admx-backed-policies.md
-    - name: Enable ADMX-backed policies in MDM
+    - name: Enable ADMX policies in MDM
       href: enable-admx-backed-policies-in-mdm.md
     - name: Win32 and Desktop Bridge app policy configuration
       href: win32-and-centennial-app-policy-configuration.md
@@ -381,7 +381,7 @@ items:
               href: policy-ddf-file.md
             - name: Policies in Policy CSP supported by Group Policy
               href: policies-in-policy-csp-supported-by-group-policy.md
-            - name: ADMX-backed policies in Policy CSP
+            - name: ADMX policies in Policy CSP
               href: policies-in-policy-csp-admx-backed.md
             - name: Policies in Policy CSP supported by HoloLens 2
               href: policies-in-policy-csp-supported-by-hololens2.md
@@ -455,6 +455,10 @@ items:
               href: policy-csp-admx-dfs.md
             - name: ADMX_DigitalLocker
               href: policy-csp-admx-digitallocker.md
+            - name: ADMX_DiskNVCache
+              href: policy-csp-admx-disknvcache.md
+            - name: ADMX_DiskQuota
+              href: policy-csp-admx-diskquota.md    
             - name: ADMX_DistributedLinkTracking
               href: policy-csp-admx-distributedlinktracking.md
             - name: ADMX_DnsClient
@@ -465,6 +469,8 @@ items:
               href: policy-csp-admx-eaime.md
             - name: ADMX_EncryptFilesonMove
               href: policy-csp-admx-encryptfilesonmove.md
+            - name: ADMX_EventLogging
+              href: policy-csp-admx-eventlogging.md  
             - name: ADMX_EnhancedStorage
               href: policy-csp-admx-enhancedstorage.md
             - name: ADMX_ErrorReporting
@@ -473,16 +479,26 @@ items:
               href: policy-csp-admx-eventforwarding.md
             - name: ADMX_EventLog
               href: policy-csp-admx-eventlog.md
+            - name: ADMX_EventViewer
+              href: policy-csp-admx-eventviewer.md  
             - name: ADMX_Explorer
               href: policy-csp-admx-explorer.md
+            - name: ADMX_ExternalBoot
+              href: policy-csp-admx-externalboot.md 
             - name: ADMX_FileRecovery
               href: policy-csp-admx-filerecovery.md
+            - name: ADMX_FileRevocation
+              href: policy-csp-admx-filerevocation.md  
             - name: ADMX_FileServerVSSProvider
               href: policy-csp-admx-fileservervssprovider.md
             - name: ADMX_FileSys
               href: policy-csp-admx-filesys.md
             - name: ADMX_FolderRedirection
               href: policy-csp-admx-folderredirection.md
+            - name: ADMX_FramePanes
+              href: policy-csp-admx-framepanes.md
+            - name: ADMX_FTHSVC
+              href: policy-csp-admx-fthsvc.md 
             - name: ADMX_Globalization
               href: policy-csp-admx-globalization.md
             - name: ADMX_GroupPolicy
@@ -493,6 +509,10 @@ items:
               href: policy-csp-admx-helpandsupport.md
             - name: ADMX_ICM
               href: policy-csp-admx-icm.md
+            - name: ADMX_IIS
+              href: policy-csp-admx-iis.md
+            - name: ADMX_iSCSI
+              href: policy-csp-admx-iscsi.md  
             - name: ADMX_kdc
               href: policy-csp-admx-kdc.md
             - name: ADMX_Kerberos
@@ -501,8 +521,12 @@ items:
               href: policy-csp-admx-lanmanserver.md
             - name: ADMX_LanmanWorkstation
               href: policy-csp-admx-lanmanworkstation.md
+            - name: ADMX_LeakDiagnostic
+              href: policy-csp-admx-leakdiagnostic.md  
             - name: ADMX_LinkLayerTopologyDiscovery
               href: policy-csp-admx-linklayertopologydiscovery.md
+            - name: ADMX_LocationProviderAdm
+              href: policy-csp-admx-locationprovideradm.md  
             - name: ADMX_Logon
               href: policy-csp-admx-logon.md
             - name: ADMX_MicrosoftDefenderAntivirus
@@ -537,6 +561,8 @@ items:
               href: policy-csp-admx-power.md
             - name: ADMX_PowerShellExecutionPolicy
               href: policy-csp-admx-powershellexecutionpolicy.md
+            - name: ADMX_PreviousVersions
+              href: policy-csp-admx-previousversions.md  
             - name: ADMX_Printing
               href: policy-csp-admx-printing.md
             - name: ADMX_Printing2
@@ -555,10 +581,14 @@ items:
               href: policy-csp-admx-scripts.md
             - name: ADMX_sdiageng
               href: policy-csp-admx-sdiageng.md
+            - name: ADMX_sdiagschd
+              href: policy-csp-admx-sdiagschd.md  
             - name: ADMX_Securitycenter
               href: policy-csp-admx-securitycenter.md
             - name: ADMX_Sensors
               href: policy-csp-admx-sensors.md
+            - name: ADMX_ServerManager
+              href: policy-csp-admx-servermanager.md  
             - name: ADMX_Servicing
               href: policy-csp-admx-servicing.md
             - name: ADMX_SettingSync
@@ -579,12 +609,18 @@ items:
               href: policy-csp-admx-startmenu.md
             - name: ADMX_SystemRestore
               href: policy-csp-admx-systemrestore.md
+            - name: ADMX_TabletShell
+              href: policy-csp-admx-tabletshell.md
             - name: ADMX_Taskbar
               href: policy-csp-admx-taskbar.md
             - name: ADMX_tcpip
               href: policy-csp-admx-tcpip.md
+            - name: ADMX_TerminalServer
+              href: policy-csp-admx-terminalserver.md 
             - name: ADMX_Thumbnails
               href: policy-csp-admx-thumbnails.md
+            - name: ADMX_TouchInput
+              href: policy-csp-admx-touchinput.md  
             - name: ADMX_TPM
               href: policy-csp-admx-tpm.md
             - name: ADMX_UserExperienceVirtualization
@@ -595,10 +631,14 @@ items:
               href: policy-csp-admx-w32time.md
             - name: ADMX_WCM
               href: policy-csp-admx-wcm.md
+            - name: ADMX_WDI
+              href: policy-csp-admx-wdi.md  
             - name: ADMX_WinCal
               href: policy-csp-admx-wincal.md
             - name: ADMX_WindowsAnytimeUpgrade
               href: policy-csp-admx-windowsanytimeupgrade.md
+            - name: ADMX_WindowsColorSystem
+              href: policy-csp-admx-windowscolorsystem.md
             - name: ADMX_WindowsConnectNow
               href: policy-csp-admx-windowsconnectnow.md
             - name: ADMX_WindowsExplorer
@@ -697,6 +737,8 @@ items:
               href: policy-csp-experience.md
             - name: ExploitGuard
               href: policy-csp-exploitguard.md
+            - name: Feeds
+              href: policy-csp-feeds.md
             - name: FileExplorer
               href: policy-csp-fileexplorer.md
             - name: Games
