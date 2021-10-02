@@ -105,7 +105,10 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting allows an administrator to automatically delete user profiles on system restart that have not been used within a specified number of days. Note: One day is interpreted as 24 hours after a specific user profile was accessed.
+This policy setting allows an administrator to automatically delete user profiles on system restart that have not been used within a specified number of days.
+
+> [!NOTE]
+> One day is interpreted as 24 hours after a specific user profile was accessed.
 
 If you enable this policy setting, the User Profile Service will automatically delete on the next system restart all user profiles on the computer that have not been used within the specified number of days. 
 
@@ -176,7 +179,8 @@ ADMX Info:
 <!--Description-->
 This policy setting controls whether Windows forcefully unloads the user's registry at logoff, even if there are open handles to the per-user registry keys. 
 
-Note: This policy setting should only be used for cases where you may be running into application compatibility issues due to this specific Windows behavior. It is not recommended to enable this policy by default as it may prevent users from getting an updated version of their roaming user profile.
+> [!NOTE]
+> This policy setting should only be used for cases where you may be running into application compatibility issues due to this specific Windows behavior. It is not recommended to enable this policy by default as it may prevent users from getting an updated version of their roaming user profile.
 
 If you enable this policy setting, Windows will not forcefully unload the users registry at logoff, but will unload the registry when all open handles to the per-user registry keys are closed.
 
