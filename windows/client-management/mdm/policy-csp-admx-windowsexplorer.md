@@ -13,6 +13,7 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_WindowsExplorer
+
 > [!TIP]
 > These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
 > 
@@ -739,7 +740,7 @@ This policy setting allows you to specify a list of known folders that should be
 
 Disabling a known folder will prevent the underlying file or directory from being created via the known folder API. If the folder exists before the policy is applied, the folder must be manually deleted since the policy only blocks the creation of the folder.
 
-You can specify a known folder using its known folder id or using its canonical name. For example, the Sample Videos known folder can be disabled by specifying {440fcffd-a92b-4739-ae1a-d4a54907c53f} or SampleVideos.
+You can specify a known folder using its known folder ID or using its canonical name. For example, the Sample Videos known folder can be disabled by specifying {440fcffd-a92b-4739-ae1a-d4a54907c53f} or SampleVideos.
 
 > [!NOTE]
 > Disabling a known folder can introduce application compatibility issues in applications that depend on the existence of the known folder.
