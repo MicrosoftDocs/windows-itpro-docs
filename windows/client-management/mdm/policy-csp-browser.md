@@ -4513,7 +4513,7 @@ Supported values:
 
 <hr/>
 <!--Policy-->
-<a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a>**Browser/SyncFavoritesBetweenIEAndMicrosoftEdge**  
+<a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a><b>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</b>
 
 <!--SupportedSKUs-->
 <table>
