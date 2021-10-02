@@ -1,121 +1,243 @@
-### YamlMime:Landing
+### YamlMime:Hub
 
-title: Windows client resources and documentation for IT Pros # < 60 chars
-summary: Plan, deploy, secure, and manage devices running Windows 10 and Windows 11.  # < 160 chars
+title: Windows client documentation for IT Pros # < 60 chars
+summary: Evaluate, plan, deploy, secure, and manage devices running Windows 10 and Windows 11. # < 160 chars
+# brand: aspnet | azure | dotnet | dynamics | m365 | ms-graph | office | power-apps | power-automate | power-bi | power-platform | power-virtual-agents | sql | sql-server | vs | visual-studio | windows | xamarin
+brand: windows
 
 metadata:
   title: Windows client documentation for IT Pros # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Evaluate, plan, deploy, secure, and manage devices running Windows 10 and Windows 11. # Required; article description that is displayed in search results. < 160 chars.
   services: windows-10
-  ms.service: windows-10 #Required; service per approved list. service slug assigned to your service by ACOM.
-  ms.subservice: subservice
-  ms.topic: landing-page # Required
-  ms.collection: windows-10
-  author: greg-lindsay #Required; your GitHub user alias, with correct capitalization.
-  ms.author: greglin #Required; microsoft alias of author; optional team alias.
-  ms.date: 06/01/2020 #Required; mm/dd/yyyy format.
+  ms.service: subservice #Required; service per approved list. service slug assigned to your service by ACOM.
+  ms.subservice: subservice # Optional; Remove if no subservice is used.
+  ms.topic: hub-page # Required
+  ms.collection: windows-10 # Optional; Remove if no collection is used.
+  author: dougeby #Required; your GitHub user alias, with correct capitalization.
+  ms.author: dougeby #Required; microsoft alias of author; optional team alias.
+  ms.date: 10/01/2021 #Required; mm/dd/yyyy format.
   localization_priority: medium
-    
-# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
-landingContent:
-# Cards and links should be based on top customer tasks or top subjects
-# Start card title with a verb
+# highlightedContent section (optional)
+# Maximum of 8 items
+highlightedContent:
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+  items:
+    # Card
+    - title: Become a Windows Insider
+      itemType: overview
+      url: https://insider.windows.com
+    # Card
+    - title: See what's new in Windows release health
+      itemType: overview
+      url: /windows/release-health/
+    # Card
+    - title: Learn more about Hybrid Work
+      itemType: overview
+      url: https://www.microsoft.com/hybridwork/
+
+
+# productDirectory section (optional)
+productDirectory:
+  title: Get to know Windows 11 # < 60 chars (optional)
+  summary: Learn more about what's new, what's updated, and what you get in Windows 11 # < 160 chars (optional)
+  items:
+  # Card
+    - title: What's new in Windows 11
+      imageSrc: /windows/resources/images/winlogo.svg
+      summary: Get more information about features and improvements that are important to admins
+      url: /windows/whats-new/windows-11-whats-new
+    - title: Windows 11 requirements
+      imageSrc: /windows/resources/images/winlogo.svg
+      summary: See the system requirements for Windows 11, including running Windows 11 on a virtual machine
+      url: /windows/whats-new/windows-11-requirements
+    - title: Trusted Platform Module (TPM)
+      imageSrc: /windows/resources/images/winlogo.svg
+      summary: Learn more about TPM, and why it's a good thing
+      url: /windows/security/information-protection/tpm/trusted-platform-module-overview
+      
+# conceptualContent section (optional)
+conceptualContent:
+# Supports up to 3 sections
+# itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
+
+  title: Windows client resources and documentation for IT Pros 
+  summary: Plan, deploy, secure, and manage devices running Windows 10 and Windows 11.
+  items:
+  # card
+    - title: Overview
+      links:
+        - url: /windows/whats-new/windows-11-whats-new
+          itemType: overview
+          text: What's new in Windows 11
+        - url: /windows/whats-new/windows-11-plan
+          itemType: overview
+          text: Plan for Windows 11
+        - url: /windows/whats-new/windows-11-prepare
+          itemType: overview
+          text: Prepare for Windows 11
+        - url: /windows/whats-new/whats-new-windows-10-version-21H1
+          itemType: overview
+          text: What's new in Windows 10, version 21H1
+        - url:  /windows/release-health/release-information
+          itemType: overview
+          text: Windows release information
+
   # Card (optional)
-  - title: What's new
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Windows 11 overview
-            url: /windows/whats-new/windows-11
-          - text: Windows 11 requirements
-            url: /windows/whats-new/windows-11-requirements
-          - text: Plan for Windows 11
-            url: /windows/whats-new/windows-11-plan
-          - text: Prepare for Windows 11
-            url: /windows/whats-new/windows-11-prepare
-          - text: What's new in Windows 10, version 21H1
-            url: /windows/whats-new/whats-new-windows-10-version-21H1
-          - text: Windows release information
-            url:  /windows/release-health/release-information
+    - title: Configuration
+      links:
+        - url: /windows/configuration/index
+          itemType: overview
+          text: Configure Windows
+        - url: /windows/configuration/provisioning-packages/provisioning-packages
+          itemType: how-to-guide
+          text: Use Provisioning packages to configure new devices
+        - url: /windows/configuration/windows-10-accessibility-for-itpros
+          itemType: overview
+          text: Accessibility information for IT Pros
+        - url: /windows/configuration/customize-start-menu-layout-windows-11
+          itemType: how-to-guide
+          text: Customize the Start menu layout
+        - url: /windows/configuration/stop-employees-from-using-microsoft-store
+          itemType: how-to-guide
+          text: Control access to Microsoft Store
+        - url: /windows/configuration/set-up-shared-or-guest-pc
+          itemType: how-to-guide
+          text: Set up a shared or guest PC
 
   # Card (optional)
-  - title: Configuration
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Configure Windows
-            url: /windows/configuration/index
-          - text: Accessibility information for IT Pros
-            url: /windows/configuration/windows-10-accessibility-for-itpros
-          - text: Configure access to Microsoft Store
-            url: /windows/configuration/stop-employees-from-using-microsoft-store
-          - text: Set up a shared or guest PC
-            url: /windows/configuration/set-up-shared-or-guest-pc
-
-  # Card (optional)
-  - title: Deployment
-    linkLists:
-      - linkListType: deploy
-        links:
-          - text: Deploy and update Windows
-            url: /windows/deployment/index
-          - text: Windows deployment scenarios
-            url: /windows/deployment/windows-10-deployment-scenarios
-          - text: Create a deployment plan
-            url: /windows/deployment/update/create-deployment-plan
-          - text: Prepare to deploy Windows client
-            url: /windows/deployment/update/prepare-deploy-windows
-
+    - title: Deployment
+      links:
+        - url: /windows/deployment/index      
+          itemType: deploy
+          text: Deploy and update Windows
+        - url: /windows/deployment/windows-10-deployment-scenarios
+          itemType: deploy
+          text: Windows deployment scenarios
+        - url: /windows/deployment/update/create-deployment-plan
+          itemType: deploy
+          text: Create a deployment plan
+        - url: /windows/deployment/update/prepare-deploy-windows
+          itemType: deploy
+          text: Prepare to deploy Windows client
  
   # Card
-  - title: App management
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Windows application management
-            url: /windows/application-management/index
-          - text: Understand the different apps included in Windows 10
-            url: /windows/application-management/apps-in-windows-10
-          - text: Get started with App-V for Windows 10
-            url:  /windows/application-management/app-v/appv-getting-started
-          - text: Keep removed apps from returning during an update
-            url:  /windows/application-management/remove-provisioned-apps-during-update
+    - title: App management
+      links:
+        - url: /windows/application-management/index
+          itemType: overview
+          text: Windows application management
+        - url: /windows/application-management/apps-in-windows-10
+          itemType: overview
+          text: Learn more about the different apps types for Windows
+        - url: /windows/application-management/private-app-repository-mdm-company-portal-windows-11
+          itemType: how-to-guide
+          text: Use the private app repo on Windows 11
+        - url:  /windows/application-management/remove-provisioned-apps-during-update
+          itemType: how-to-guide
+          text: Keep removed apps from returning during an update
 
   # Card
-  - title: Client management
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Windows client management
-            url: /windows/client-management/index
-          - text: Administrative tools 
-            url: /windows/client-management/administrative-tools-in-windows-10
-          - text: Create mandatory user profiles
-            url: /windows/client-management/mandatory-user-profile
-          - text: New policies for Windows 10
-            url: /windows/client-management/new-policies-for-windows-10
-          - text: Configuration service provider reference
-            url: /windows/client-management/mdm/configuration-service-provider-reference
+    - title: Client management
+      links:
+
+        - url: /windows/client-management/index
+          itemType: overview
+          text: Windows client management
+        - url: /windows/client-management/administrative-tools-in-windows-10
+          itemType: overview
+          text: Administrative tools 
+        - url: /windows/client-management/mandatory-user-profile
+          itemType: how-to-guide
+          text: Create mandatory user profiles
+        - url: /windows/client-management/new-policies-for-windows-10
+          itemType: overview
+          text: New policies for Windows 10
+        - url: /windows/client-management/mdm/configuration-service-provider-reference
+          itemType: reference
+          text: Configuration service provider reference
 
   # Card (optional)
-  - title: Security and Privacy
-    linkLists:
-      - linkListType: how-to-guide
-        links:
-          - text: Windows Enterprise Security
-            url: /windows/security/index
-          - text: Windows Privacy
-            url: /windows/privacy/index
-          - text: Identity and access management
-            url: /windows/security/identity-protection/index
-          - text: Threat protection
-            url: /windows/security/threat-protection/index
-          - text: Information protection
-            url: /windows/security/information-protection/index
-          - text: Required diagnostic data
-            url: /windows/privacy/required-windows-diagnostic-data-events-and-fields-2004
-          - text: Optional diagnostic data
-            url: /windows/privacy/windows-diagnostic-data
-          - text: Changes to Windows diagnostic data collection
-            url: /windows/privacy/changes-to-windows-diagnostic-data-collection
+    - title: Security and Privacy
+      links:
+        - url: /windows/security/index    
+          itemType: overview
+          text: Windows Enterprise Security
+        - url: /windows/privacy/index
+          itemType: overview
+          text: Windows Privacy
+        - url: /windows/security/hardware
+          itemType: overview
+          text: Hardware security
+        - url: /windows/security/operating-system
+          itemType: overview
+          text: Operating system security
+        - url: /windows/security/apps         
+          itemType: overview
+          text: Application security
+        - url: /windows/security/identity
+          itemType: overview
+          text: User and identity security
+        - url: /windows/security/cloud
+          itemType: overview
+          text: Cloud services
+
+# additionalContent section (optional)
+# Card with summary style
+additionalContent:
+  # Supports up to 4 subsections
+  sections:
+    - title: More Windows resources # < 60 chars (optional)
+      items:
+        # Card
+        - title: Windows 11 product site
+          summary: Find out more about Windows 11 for enterprise and Windows 11 for business
+          url: https://www.microsoft.com/microsoft-365/windows
+        - title: Windows blogs
+          summary: Keep up with the latest news about Windows
+          url: https://blogs.windows.com/
+        - title: "Planning for Windows 11: best practices for organizations"
+          summary: Blog article with best practices to help you plan for Windows 11
+          url: https://aka.ms/Windows/blog002
+        - title: Windows 11 security explained
+          summary: Blog article to learn how Windows 11 enables security by design from the chip to the cloud
+          url: https://aka.ms/Windows/blog010
+        # Card
+        - title: Participate in the Tech Community
+          summary: Learn how to be part of the Windows Tech Community
+          url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
+        # Card
+        - title: Ask the community
+          summary: Get help, and help others
+          url: https://answers.microsoft.com/windows/forum
+
+    - title: Other resources
+      items:
+        - title: Microsoft Endpoint Manager
+          links:
+            - text: Microsoft Endpoint Manager documentation
+              url: /mem
+            - text: Overview of Microsoft Endpoint Manager
+              url: /mem/endpoint-manager-overview
+            - text: Getting started with Microsoft Endpoint Manager
+              url: /mem/endpoint-manager-getting-started
+            - text: Microsoft Endpoint Manager blog
+              url: https://aka.ms/memblog
+        - title: Windows 365
+          links:
+            - text: Windows 365 documentation
+              url: /windows-365
+            - text: What is Windows 365
+              url: /windows-365/overview
+            - text: Windows 365 blog
+              url: https://www.microsoft.com/microsoft-365/blog/
+        - title: Windows Server
+          links:
+            - text: Windows Server documentation
+              url: /windows-server
+            - text: What's new in Windows Server 2022?
+              url: /windows-server/get-started/whats-new-in-windows-server-2022
+            - text: Get started with Windows Server
+              url: /windows-server/get-started/get-started-with-windows-server
+            - text: Windows Server blog
+              url: https://cloudblogs.microsoft.com/windowsserver/
