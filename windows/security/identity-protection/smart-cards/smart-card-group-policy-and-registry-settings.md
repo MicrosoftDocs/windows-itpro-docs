@@ -1,5 +1,5 @@
 ---
-title: Smart Card Group Policy and Registry Settings (Windows 10)
+title: Smart Card Group Policy and Registry Settings (Windows)
 description: Discover the Group Policy, registry key, local security policy, and credential delegation policy settings that are available for configuring smart cards.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,13 +12,13 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 09/23/2021
 ms.reviewer: 
 ---
 
 # Smart Card Group Policy and Registry Settings
 
-Applies to: Windows 10, Windows Server 2016
+Applies to: Windows 10, Windows 11, Windows Server 2016 and above
 
 This article for IT professionals and smart card developers describes the Group Policy settings, registry key settings, local security policy settings, and credential delegation policy settings that are available for configuring smart cards.
 

@@ -11,14 +11,15 @@ author: dansimp
 ms.author: dansimp
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # The Windows Security app
 
 **Applies to**
 
-- Windows 10, version 1703 and later
+- Windows 10
+- Windows 11
 
 This library describes the Windows Security app, and provides information on configuring certain features, including:
 

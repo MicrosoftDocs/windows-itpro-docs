@@ -81,7 +81,7 @@ To use the deployment service, you use a management tool built on the platform, 
 
 ### Using Microsoft Endpoint Manager
 
-Microsoft Endpoint Manager integrates with the deployment service to provide Windows client update management capabilities. For more information, see [Windows 10 feature updates policy in Intune](/mem/intune/protect/windows-10-feature-updates).
+Microsoft Endpoint Manager integrates with the deployment service to provide Windows client update management capabilities. For more information, see [Feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates).
 
 ### Scripting common actions using PowerShell
 
@@ -115,7 +115,7 @@ You should continue to use deployment rings as part of the servicing strategy fo
 
 ### Monitoring deployments to detect rollback issues
 
-During a feature update deployment, driver combinations can sometimes result in an unexpected update failure that makes the device revert to the previously installed operating system version. The deployment service can monitor devices for such issues and automatically pause deployments when this happens, giving you time to detect and mitigate issues.
+During deployments of Windows 11 or Windows 10 feature updates, driver combinations can sometimes result in an unexpected update failure that makes the device revert to the previously installed operating system version. The deployment service can monitor devices for such issues and automatically pause deployments when this happens, giving you time to detect and mitigate issues.
 
 
 ### How to enable deployment protections
@@ -124,21 +124,16 @@ Deployment scheduling controls are always available, but to take advantage of th
 
 #### Device prerequisites
 
-> [!NOTE]
-> Deployment protections are currently in preview and available if you're using Update Compliance. If you set these policies on a a device that isn't enrolled in Update Compliance, there is no effect.
-
 - Diagnostic data is set to *Required* or *Optional*.
 - The **AllowWUfBCloudProcessing** policy is set to **8**.
 
 #### Set the **AllowWUfBCloudProcessing** policy
 
-To enroll devices in Windows Update for Business cloud processing, set the **AllowWUfBCloudProcessing** policy using mobile device management (MDM) policy.
-
-> [!NOTE]
-> Setting this policy by using Group Policy isn't currently supported.
+To enroll devices in Windows Update for Business cloud processing, set the **AllowWUfBCloudProcessing** policy using mobile device management (MDM) policy or Group Policy.
 
 | Policy                                                                                                       | Sets registry key under **HKLM\\Software**                                |
 |--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| GPO for Windows 10, version 1809 or later: Computer Configuration > Administrative Templates > Windows Components > Data Collection and Preview Builds > **Allow WUfB Cloud Processing** | \\Policies\\Microsoft\\Windows\\DataCollection\\AllowWUfBCloudProcessing |
 | MDM for Windows 10, version 1809 or later: ../Vendor/MSFT/ Policy/Config/System/**AllowWUfBCloudProcessing** | \\Microsoft\\PolicyManager\\default\\System\\AllowWUfBCloudProcessing |
 
 Following is an example of setting the policy using Microsoft Endpoint Manager:
@@ -184,5 +179,5 @@ Avoid using different channels to manage the same resources. If you use Microsof
 
 To learn more about the deployment service, try the following:
 
-- [Windows 10 feature updates policy in Intune](/mem/intune/protect/windows-10-feature-updates)
+- [Feature updates for Windows 10 and later policy in Intune](/mem/intune/protect/windows-10-feature-updates)
 - [Windows updates API overview in Microsoft Graph](/graph/windowsupdates-concept-overview)

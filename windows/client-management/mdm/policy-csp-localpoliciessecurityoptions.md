@@ -5,15 +5,14 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
-ms.date: 05/02/2021
+ms.date: 09/29/2021
 ms.reviewer: 
 manager: dansimp
 ---
 
 # Policy CSP - LocalPoliciesSecurityOptions
-
 
 <hr/>
 
@@ -164,11 +163,10 @@ manager: dansimp
   </dd>
 </dl>
 
-
 <hr/>
 
 > [!NOTE]
-> To find data formats (and other policy-related details), see [Policy DDF file](./policy-ddf-file.md). 
+> To find data formats (and other policy-related details), see [Policy DDF file](./policy-ddf-file.md).
 
 <!--Policy-->
 <a href="" id="localpoliciessecurityoptions-accounts-blockmicrosoftaccounts"></a>**LocalPoliciesSecurityOptions/Accounts_BlockMicrosoftAccounts**  
@@ -304,9 +302,8 @@ This security setting determines whether local accounts that are not password pr
 
 Default: Enabled.
 
-Warning:
-
-Computers that are not in physically secure locations should always enforce strong password policies for all local user accounts. Otherwise, anyone with physical access to the computer can log on by using a user account that does not have a password. This is especially important for portable computers.
+> [!WARNING]
+> Computers that are not in physically secure locations should always enforce strong password policies for all local user accounts. Otherwise, anyone with physical access to the computer can log on by using a user account that does not have a password. This is especially important for portable computers.
 If you apply this security policy to the Everyone group, no one will be able to log on through Remote Desktop Services.
 
 This setting does not affect logons that use domain accounts.
@@ -524,9 +521,8 @@ Devices: Allow undock without having to log on.
 This security setting determines whether a portable computer can be undocked without having to log on. If this policy is enabled, logon is not required and an external hardware eject button can be used to undock the computer. If disabled, a user must log on and have the Remove computer from docking station privilege to undock the computer.
 Default: Enabled.
 
-Caution:
-
-Disabling this policy may tempt users to try and physically remove the laptop from its docking station using methods other than the external hardware eject button. Since this may cause damage to the hardware, this setting, in general, should only be disabled on laptop configurations that are physically securable.
+> [!CAUTION]
+> Disabling this policy may tempt users to try and physically remove the laptop from its docking station using methods other than the external hardware eject button. Since this may cause damage to the hardware, this setting, in general, should only be disabled on laptop configurations that are physically securable.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -666,7 +662,7 @@ For a computer to print to a shared printer, the driver for that shared printer 
 Default on servers: Enabled.
 Default on workstations: Disabled
 
->[!Note]
+>[!NOTE]
 >This setting does not affect the ability to add a local printer. This setting does not affect Administrators.
 
 <!--/Description-->
@@ -1413,14 +1409,14 @@ If this setting is enabled, the Microsoft network client will not communicate wi
  
 Default: Disabled.   
 
->[!Note] 
->All Windows operating systems support both a client-side SMB component and a server-side SMB component.Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
->- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. 
->- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
->- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. 
->- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. 
+> [!Note] 
+> All Windows operating systems support both a client-side SMB component and a server-side SMB component.Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+> - Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing. 
+> - Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+> - Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing. 
+> - Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled. 
 >
->SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
+> SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1493,16 +1489,16 @@ If this setting is enabled, the Microsoft network client will ask the server to 
 
 Default: Enabled.
 
->[!Note]
->All Windows operating systems support both a client-side SMB component and a server-side SMB component. Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
->- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
->- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
->- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
->- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
->If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted.
+> [!Note]
+> All Windows operating systems support both a client-side SMB component and a server-side SMB component. Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+> - Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
+> - Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+> - Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
+> - Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
+> If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted.
 >
->SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections.
-For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
+> SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections.
+> For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1728,16 +1724,16 @@ If this setting is enabled, the Microsoft network server will not communicate wi
 
 Default: Disabled for member servers. Enabled for domain controllers.
 
->[!Note]
->All Windows operating systems support both a client-side SMB component and a server-side SMB component. Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
->- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
->- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
->- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
->- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
+> [!NOTE]
+> All Windows operating systems support both a client-side SMB component and a server-side SMB component. Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
+> - Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
+> - Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+> - Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
+> - Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
 >
->Similarly, if client-side SMB signing is required, that client will not be able to establish a session with servers that do not have packet signing enabled. By default, server-side SMB signing is enabled only on domain controllers.
->If server-side SMB signing is enabled, SMB packet signing will be negotiated with clients that have client-side SMB signing enabled.
->SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
+> Similarly, if client-side SMB signing is required, that client will not be able to establish a session with servers that do not have packet signing enabled. By default, server-side SMB signing is enabled only on domain controllers.
+> If server-side SMB signing is enabled, SMB packet signing will be negotiated with clients that have client-side SMB signing enabled.
+> SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -1810,15 +1806,15 @@ If this setting is enabled, the Microsoft network server will negotiate SMB pack
 
 Default: Enabled on domain controllers only.
 
->[!Note]
+> [!NOTE]
 > All Windows operating systems support both a client-side SMB component and a server-side SMB component. Enabling or requiring packet signing for client and server-side SMB components is controlled by the following four policy settings:
->- Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
->- Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
->- Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
->- Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
->If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted.
+> - Microsoft network client: Digitally sign communications (always) - Controls whether or not the client-side SMB component requires packet signing.
+> - Microsoft network client: Digitally sign communications (if server agrees) - Controls whether or not the client-side SMB component has packet signing enabled.
+> - Microsoft network server: Digitally sign communications (always) - Controls whether or not the server-side SMB component requires packet signing.
+> - Microsoft network server: Digitally sign communications (if client agrees) - Controls whether or not the server-side SMB component has packet signing enabled.
+> If both client-side and server-side SMB signing is enabled and the client establishes an SMB 1.0 connection to the server, SMB signing will be attempted.
 >
->SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections.
+> SMB packet signing can significantly degrade SMB performance, depending on dialect version, OS version, file sizes, processor offloading capabilities, and application IO behaviors. This setting only applies to SMB 1.0 connections.
 For more information, reference: [Reduced performance after SMB Encryption or SMB Signing is enabled - Windows Server | Microsoft Docs](/troubleshoot/windows-server/networking/reduced-performance-after-smb-encryption-signing).
 
 <!--/Description-->
@@ -1896,8 +1892,8 @@ Disabled: No additional restrictions. Rely on default permissions.
 Default on workstations: Enabled.
 Default on server:Enabled.
 
->[!Important]
->This policy has no impact on domain controllers.
+> [!IMPORTANT]
+> This policy has no impact on domain controllers.
 
 <!--/Description-->
 <!--RegistryMapped-->
@@ -3189,8 +3185,9 @@ This policy setting controls the behavior of the elevation prompt for administra
 The options are:
 
 - 0 - Elevate without prompting: Allows privileged accounts to perform an operation that requires elevation without requiring consent or credentials.
-      > [!NOTE]
-      > Use this option only in the most constrained environments.
+
+  > [!NOTE]
+  > Use this option only in the most constrained environments.
 
 - 1 - Prompt for credentials on the secure desktop: When an operation requires elevation of privilege, the user is prompted on the secure desktop to enter a privileged user name and password. If the user enters valid credentials, the operation continues with the user's highest available privilege.
 
@@ -3565,8 +3562,10 @@ This policy setting controls the behavior of all User Account Control (UAC) poli
 
 The options are:
 - 0 - Disabled: Admin Approval Mode and all related UAC policy settings are disabled.
-      > [!NOTE]
-      > If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
+
+  > [!NOTE]
+  > If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
+
 - 1 - Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
 
 

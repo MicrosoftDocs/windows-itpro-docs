@@ -190,8 +190,8 @@ Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Us
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Name</strong></p></td>
-<td align="left"><p><strong>Parameters</strong></p></td>
+<td align="left"><p>Name</p></td>
+<td align="left"><p>Parameters</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Add-BitLockerKeyProtector</strong></p></td>
@@ -388,8 +388,9 @@ Get-ADUser -filter {samaccountname -eq "administrator"}
 
 > [!NOTE]
 > Use of this command requires the RSAT-AD-PowerShell feature.
->
-> **Tip:**  In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This does not require the use of additional features.
+
+> [!TIP]
+> In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This does not require the use of additional features.
 
 In the example below, the user wishes to add a domain SID-based protector to the previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
 
