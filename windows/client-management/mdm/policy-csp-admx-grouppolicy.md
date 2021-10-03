@@ -1669,7 +1669,8 @@ If you enable this policy setting, users are not able to invoke a refresh of com
 
 If you disable or do not configure this policy setting, the default behavior applies. By default, computer policy is applied when the computer starts up. It also applies at a specified refresh interval or when manually invoked by the user.
 
-Note: This policy setting applies only to non-administrators. Administrators can still invoke a refresh of computer policy at any time, no matter how this policy setting is configured.
+> [!NOTE]
+> This policy setting applies only to non-administrators. Administrators can still invoke a refresh of computer policy at any time, no matter how this policy setting is configured.
 
 Also, see the "Set Group Policy refresh interval for computers" policy setting to change the policy refresh interval.
 
@@ -2268,7 +2269,10 @@ If you disable this setting or do not configure it, the system uses the default 
 
 This setting appears in the Computer Configuration and User Configuration folders. The setting in Computer Configuration defines a slow link for policies in the Computer Configuration folder. The setting in User Configuration defines a slow link for settings in the User Configuration folder.
 
-Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile. Note: If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
+Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile.
+
+> [!NOTE]
+> If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
 
 <!--/Description-->
 
@@ -2346,7 +2350,10 @@ If you disable this setting or do not configure it, the system uses the default 
 
 This setting appears in the Computer Configuration and User Configuration folders. The setting in Computer Configuration defines a slow link for policies in the Computer Configuration folder. The setting in User Configuration defines a slow link for settings in the User Configuration folder.
 
-Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile. Note: If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
+Also, see the "Do not detect slow network connections" and related policies in Computer Configuration\Administrative Templates\System\User Profile. 
+
+> [!NOTE]
+> If the profile server has IP connectivity, the connection speed setting is used. If the profile server does not have IP connectivity, the SMB timing is used.
 
 <!--/Description-->
 
