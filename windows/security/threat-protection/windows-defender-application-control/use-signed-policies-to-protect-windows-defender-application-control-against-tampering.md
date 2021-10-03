@@ -27,7 +27,7 @@ ms.technology: mde
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 Signed WDAC policies give organizations the highest level of malware protection available in Windows. In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the computer. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this in mind, it is much more difficult to remove signed WDAC policies. Note that SecureBoot must be enabled in order to restrict users from updating or removing signed WDAC policies.
 
@@ -45,6 +45,9 @@ To sign a WDAC policy with SignTool.exe, you need the following components:
 -   The binary format of the WDAC policy that you generated in [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md) or another WDAC policy that you have created
 
 -   An internal CA code signing certificate or a purchased code signing certificate
+
+> [!NOTE]
+> All policies (base and supplemental and single-policy format) must be pkcs7 signed. [PKCS 7 Standard](https://datatracker.ietf.org/doc/html/rfc5652)
 
 If you do not have a code signing certificate, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) for instructions on how to create one. If you use an alternate certificate or WDAC policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing WDAC policy, copy each of the following commands into an elevated Windows PowerShell session:
 

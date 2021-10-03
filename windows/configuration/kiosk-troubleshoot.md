@@ -1,8 +1,8 @@
 ---
-title: Troubleshoot kiosk mode issues (Windows 10)
+title: Troubleshoot kiosk mode issues (Windows 10/11)
 description: Learn how to troubleshoot single-app and multi-app kiosk configurations, as well as common problems like sign-in issues.
 ms.assetid: 14DDDC96-88C7-4181-8415-B371F25726C8
-ms.reviewer: 
+ms.reviewer: sybruckm
 manager: dansimp
 keywords: ["lockdown", "app restrictions"]
 ms.prod: w10
@@ -20,12 +20,13 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
+- Windows 10
+- Windows 11
 
 ## Single-app kiosk issues
 
 >[!TIP]
->We recommend that you [enable logging for kiosk issues](kiosk-prepare.md#enable-logging). For some failures, events are only captured once. If you enable logging after an issue occurs with your kiosk, the logs may not capture those one-time events. In that case, prepare a new kiosk environment (such as a [virtual machine (VM)](kiosk-prepare.md#test-vm)), set up your kiosk account and configuration, and try to reproduce the problem.
+>We recommend that you [enable logging for kiosk issues](kiosk-prepare.md#enable-logging). For some failures, events are only captured once. If you enable logging after an issue occurs with your kiosk, the logs may not capture those one-time events. In that case, prepare a new kiosk environment (such as a [virtual machine (VM)](kiosk-prepare.md#testing-your-kiosk-in-a-virtual-machine-vm)), set up your kiosk account and configuration, and try to reproduce the problem.
 
 ### Sign-in issues 
 
@@ -37,6 +38,9 @@ ms.topic: article
 Check the Event Viewer logs for auto logon issues under **Applications and Services Logs\Microsoft\Windows\Authentication User Interface\Operational**.
 
 ## Multi-app kiosk issues
+
+> [!NOTE]
+> [!INCLUDE [Multi-app kiosk mode not supported on Windows 11](./includes/multi-app-kiosk-support-windows11.md)]
 
 ### Unexpected results 
 

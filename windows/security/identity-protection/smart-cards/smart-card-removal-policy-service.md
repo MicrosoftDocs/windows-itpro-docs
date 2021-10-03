@@ -1,5 +1,5 @@
 ---
-title: Smart Card Removal Policy Service (Windows 10)
+title: Smart Card Removal Policy Service (Windows)
 description: This topic for the IT professional describes the role of the removal policy service (ScPolicySvc) in smart card implementation.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,17 +12,17 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 09/24/2021
 ms.reviewer: 
 ---
 
 # Smart Card Removal Policy Service
 
-Applies To: Windows 10, Windows Server 2016
+Applies To: Windows 10, Windows 11, Windows Server 2016
 
 This topic for the IT professional describes the role of the removal policy service (ScPolicySvc) in smart card implementation.
 
-The smart card removal policy service is applicable when a user has signed in with a smart card and subsequently removes that smart card from the reader. The action that is performed when the smart card is removed is controlled by Group Policy settings. For more information, see [Smart Card Group Policy and Registry Settings](smart-card-group-policy-and-registry-settings.md).
+The smart card removal policy service is applicable when a user has signed in with a smart card and then removes that smart card from the reader. The action that is performed when the smart card is removed is controlled by Group Policy settings. For more information, see [Smart Card Group Policy and Registry Settings](smart-card-group-policy-and-registry-settings.md).
 
 **Smart card removal policy service**
 

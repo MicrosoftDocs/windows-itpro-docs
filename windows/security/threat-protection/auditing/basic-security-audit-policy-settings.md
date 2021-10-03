@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Basic security audit policy settings
 
-**Applies to**
--   Windows 10
 
 Basic security audit policy settings are found under Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Audit Policy.
 
