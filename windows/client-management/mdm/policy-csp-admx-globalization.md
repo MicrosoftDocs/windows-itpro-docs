@@ -13,13 +13,18 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_Globalization
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
 <!--Policies-->
 ## ADMX_Globalization policies  
+
+> [!TIP]
+> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <dl>
   <dd>
@@ -105,28 +110,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -143,7 +154,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy prevents automatic copying of user input methods to the system account for use on the sign-in screen. The user is restricted to the set of input methods that are enabled in the system account.
+This policy prevents automatic copying of user input methods to the system account for use on the sign-in screen. The user is restricted to the set of input methods that are enabled in the system account.
 
 Note this does not affect the availability of user input methods on the lock screen or with the UAC prompt.
 
@@ -152,12 +163,7 @@ If the policy is Enabled, then the user will get input methods enabled for the s
 If the policy is Disabled or Not Configured, then the user will be able to use input methods enabled for their user account on the sign-in page.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -176,28 +182,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -214,7 +226,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
+This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
 
 This does not affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
 
@@ -229,12 +241,6 @@ If this policy setting is enabled at the machine level, it cannot be disabled by
 To set this policy setting on a per-user basis, make sure that you do not configure the per-machine policy setting.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -253,28 +259,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -291,7 +303,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
+This policy setting prevents a user from selecting a supplemental custom locale as their user locale. The user is restricted to the set of locales that are installed with the operating system.
 
 This does not affect the selection of replacement locales. To prevent the selection of replacement locales, adjust the permissions of the %windir%\Globalization directory to prevent the installation of locales by unauthorized users.
 
@@ -306,12 +318,6 @@ If this policy setting is enabled at the machine level, it cannot be disabled by
 To set this policy setting on a per-user basis, make sure that you do not configure the per-machine policy setting.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -330,28 +336,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -368,7 +380,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the Administrative options from the Region settings control panel.
+This policy setting removes the Administrative options from the Region settings control panel.
 
 Administrative options include interfaces for setting system locale and copying settings to the default user. This policy setting does not, however, prevent an administrator or another application from changing these values programmatically.
 
@@ -383,12 +395,6 @@ If you disable or do not configure this policy setting, the user can see the Adm
 
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -407,28 +413,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -445,7 +457,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the option to change the user's geographical location (GeoID) from the Region settings control panel.
+This policy setting removes the option to change the user's geographical location (GeoID) from the Region settings control panel.
 
 This policy setting is used only to simplify the Regional Options control panel.
 
@@ -457,12 +469,6 @@ If you disable or do not configure this policy setting, the user sees the option
 > Even if a user can see the GeoID option, the "Disallow changing of geographical location" option can prevent them from actually changing their current geographical location.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -481,28 +487,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -519,7 +531,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the option to change the user's menus and dialogs (UI) language from the Language and Regional Options control panel.
+This policy setting removes the option to change the user's menus and dialogs (UI) language from the Language and Regional Options control panel.
 
 This policy setting is used only to simplify the Regional Options control panel.
 
@@ -530,12 +542,6 @@ If you enable this policy setting, the user does not see the option for changing
 
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -554,28 +560,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -592,7 +604,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting removes the regional formats interface from the Region settings control panel.
+This policy setting removes the regional formats interface from the Region settings control panel.
 
 This policy setting is used only to simplify the Regional and Language Options control panel.
 
@@ -601,12 +613,6 @@ If you enable this policy setting, the user does not see the regional formats op
 If you disable or do not configure this policy setting, the user sees the regional formats options for changing and customizing the user locale.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -625,28 +631,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -663,7 +675,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting turns off the automatic learning component of handwriting recognition personalization.
+This policy setting turns off the automatic learning component of handwriting recognition personalization.
 
 Automatic learning enables the collection and storage of text and ink written by the user in order to help adapt handwriting recognition to the vocabulary and handwriting style of the user.  Text that is collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that is stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history does not delete the stored personalization data. Ink entered through Input Panel is collected and stored.
 
@@ -684,12 +696,6 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 > Handwriting personalization works only for Microsoft handwriting recognizers, and not with third-party recognizers.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -708,28 +714,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -746,7 +758,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting turns off the automatic learning component of handwriting recognition personalization.
+This policy setting turns off the automatic learning component of handwriting recognition personalization.
 
 Automatic learning enables the collection and storage of text and ink written by the user in order to help adapt handwriting recognition to the vocabulary and handwriting style of the user.  Text that is collected includes all outgoing messages in Windows Mail, and MAPI enabled email clients, as well as URLs from the Internet Explorer browser history. The information that is stored includes word frequency and new words not already known to the handwriting recognition engines (for example, proper names and acronyms). Deleting email content or the browser history does not delete the stored personalization data. Ink entered through Input Panel is collected and stored.
 
@@ -767,12 +779,6 @@ This policy setting is related to the "Turn off handwriting personalization" pol
 > Handwriting personalization works only for Microsoft handwriting recognizers, and not with third-party recognizers.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -791,28 +797,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -829,7 +841,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts the permitted system locales to the specified list. If the list is empty, it locks the system locale to its current value. This policy setting does not change the existing system locale; however, the next time that an administrator attempts to change the computer's system locale, they will be restricted to the specified list.
+This policy setting restricts the permitted system locales to the specified list. If the list is empty, it locks the system locale to its current value. This policy setting does not change the existing system locale; however, the next time that an administrator attempts to change the computer's system locale, they will be restricted to the specified list.
 
 The locale list is specified using language names, separated by a semicolon (;). For example, en-US is English (United States). Specifying "en-US;en-CA" would restrict the system locale to English (United States) and English (Canada).
 
@@ -838,12 +850,6 @@ If you enable this policy setting, administrators can select a system locale onl
 If you disable or do not configure this policy setting, administrators can select any system locale shipped with the operating system.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -862,28 +868,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -900,7 +912,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
+This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
 
 To set this policy setting on a per-user basis, make sure that you do not configure the per-computer policy setting.
 
@@ -911,12 +923,6 @@ If you enable this policy setting, only locales in the specified locale list can
 If you disable or do not configure this policy setting, users can select any locale installed on the computer, unless restricted by the "Disallow selection of Custom Locales" policy setting.  If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy. If this policy setting is disabled at the computer level, the per-user policy is ignored. If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -935,28 +941,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -973,7 +985,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
+This policy setting restricts users on a computer to the specified list of user locales. If the list is empty, it locks all user locales to their current values. This policy setting does not change existing user locale settings; however, the next time a user attempts to change their user locale, their choices will be restricted to locales in this list.
 
 To set this policy setting on a per-user basis, make sure that you do not configure the per-computer policy setting.
 
@@ -986,12 +998,6 @@ If you disable or do not configure this policy setting, users can select any loc
 If this policy setting is enabled at the computer level, it cannot be disabled by a per-user policy. If this policy setting is disabled at the computer level, the per-user policy is ignored. If this policy setting is not configured at the computer level, restrictions are based on per-user policies.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1010,28 +1016,33 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
+    <td>No</td>
+    <td>No</td>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1048,7 +1059,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts the Windows UI language for all users.
+This policy setting restricts the Windows UI language for all users.
 
 This is a policy setting for computers with more than one UI language installed.
 
@@ -1057,12 +1068,6 @@ If you enable this policy setting, the UI language of Windows menus and dialogs 
 If you disable or do not configure this policy setting, the user can specify which UI language is used.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1081,28 +1086,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1119,7 +1130,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts the Windows UI language for specific users.
+This policy setting restricts the Windows UI language for specific users.
 
 This policy setting applies to computers with more than one UI language installed.
 
@@ -1130,12 +1141,6 @@ If you disable or do not configure this policy setting, there is no restriction 
 To enable this policy setting in Windows Server 2003, Windows XP, or Windows 2000, to use the "Restrict selection of Windows menus and dialogs language" policy setting.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1154,28 +1159,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1192,7 +1203,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from changing their user geographical location (GeoID).
+This policy setting prevents users from changing their user geographical location (GeoID).
 
 If you enable this policy setting, users cannot change their GeoID.
 
@@ -1203,12 +1214,6 @@ If you enable this policy setting at the computer level, it cannot be disabled b
 To set this policy setting on a per-user basis, make sure that the per-computer policy setting is not configured.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1227,28 +1232,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1265,7 +1276,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from changing their user geographical location (GeoID).
+This policy setting prevents users from changing their user geographical location (GeoID).
 
 If you enable this policy setting, users cannot change their GeoID.
 
@@ -1276,12 +1287,6 @@ If you enable this policy setting at the computer level, it cannot be disabled b
 To set this policy setting on a per-user basis, make sure that the per-computer policy setting is not configured.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1300,28 +1305,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>>
 </tr>
 </table>
 
@@ -1338,7 +1349,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents the user from customizing their locale by changing their user overrides.
+This policy setting prevents the user from customizing their locale by changing their user overrides.
 
 Any existing overrides in place when this policy is enabled will be frozen. To remove existing user overrides, first reset the user(s) values to the defaults and then apply this policy.
 
@@ -1353,12 +1364,6 @@ If this policy is set to Enabled at the computer level, then it cannot be disabl
 To set this policy on a per-user basis, make sure that the per-computer policy is set to Not Configured.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1377,28 +1382,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1415,7 +1426,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents the user from customizing their locale by changing their user overrides.
+This policy setting prevents the user from customizing their locale by changing their user overrides.
 
 Any existing overrides in place when this policy is enabled will be frozen. To remove existing user overrides, first reset the user(s) values to the defaults and then apply this policy.
 
@@ -1430,12 +1441,6 @@ If this policy is set to Enabled at the computer level, then it cannot be disabl
 To set this policy on a per-user basis, make sure that the per-computer policy is set to Not Configured.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1454,28 +1459,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1492,7 +1503,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting restricts users to the specified language by disabling the menus and dialog box controls in the Region settings control panel. If the specified language is not installed on the target computer, the language selection defaults to English.
+This policy setting restricts users to the specified language by disabling the menus and dialog box controls in the Region settings control panel. If the specified language is not installed on the target computer, the language selection defaults to English.
 
 If you enable this policy setting, the dialog box controls in the Regional and Language Options control panel are not accessible to the logged on user. This prevents users from specifying a language different than the one used.
 
@@ -1501,12 +1512,6 @@ To enable this policy setting in Windows Vista, use the "Restricts the UI langua
 If you disable or do not configure this policy setting, the logged-on user can access the dialog box controls in the Regional and Language Options control panel to select any available UI language.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1525,28 +1530,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1563,7 +1574,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy turns off the autocorrect misspelled words option. This does not, however, prevent the user or an application from changing the setting programmatically.
+This policy turns off the autocorrect misspelled words option. This does not, however, prevent the user or an application from changing the setting programmatically.
 
 The autocorrect misspelled words option controls whether or not errors in typed text will be automatically corrected.
 
@@ -1573,12 +1584,6 @@ If the policy is Disabled or Not Configured, then the user will be free to chang
 
 Note that the availability and function of this setting is dependent on supported languages being enabled.
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1597,28 +1602,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>/td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1635,7 +1646,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy turns off the highlight misspelled words option. This does not, however, prevent the user or an application from changing the setting programmatically.
+This policy turns off the highlight misspelled words option. This does not, however, prevent the user or an application from changing the setting programmatically.
 
 The highlight misspelled words option controls whether or next spelling errors in typed text will be highlighted.
 
@@ -1646,12 +1657,6 @@ If the policy is Disabled or Not Configured, then the user will be free to chang
 Note that the availability and function of this setting is dependent on supported languages being enabled.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1670,28 +1675,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1708,7 +1719,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy turns off the insert a space after selecting a text prediction option. This does not, however, prevent the user or an application from changing the setting programmatically.
+This policy turns off the insert a space after selecting a text prediction option. This does not, however, prevent the user or an application from changing the setting programmatically.
 
 The insert a space after selecting a text prediction option controls whether or not a space will be inserted after the user selects a text prediction candidate when using the on-screen keyboard.
 
@@ -1718,12 +1729,6 @@ If the policy is Disabled or Not Configured, then the user will be free to chang
 
 Note that the availability and function of this setting is dependent on supported languages being enabled.
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1742,28 +1747,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1780,7 +1791,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy turns off the offer text predictions as I type option. This does not, however, prevent the user or an application from changing the setting programmatically.
+This policy turns off the offer text predictions as I type option. This does not, however, prevent the user or an application from changing the setting programmatically.
 
 The offer text predictions as I type option controls whether or not text prediction suggestions will be presented to the user on the on-screen keyboard.
 
@@ -1791,12 +1802,6 @@ If the policy is Disabled or Not Configured, then the user will be free to chang
 Note that the availability and function of this setting is dependent on supported languages being enabled.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1815,28 +1820,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1853,7 +1864,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting determines how programs interpret two-digit years.
+This policy setting determines how programs interpret two-digit years.
 
 This policy setting affects only the programs that use this Windows feature to interpret two-digit years. If a program does not interpret two-digit years correctly, consult the documentation or manufacturer of the program.
 
@@ -1864,12 +1875,6 @@ For example, the default value, 2029, specifies that all two-digit years less th
 If you disable or do not configure this policy setting, Windows does not interpret two-digit year formats using this scheme for the program.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -1881,8 +1886,5 @@ ADMX Info:
 <!--/ADMXBacked-->
 <!--/Policy-->
 <hr/>
-
-> [!NOTE]
-> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->

@@ -14,7 +14,7 @@ ms.topic: article
 ---
 # Deploying App-V packages by using electronic software distribution (ESD)
 
->Applies to: Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
 You can deploy App-V packages using an electronic software distribution (ESD) solution. For information about planning to deploy App-V packages with an ESD, see [Planning to deploy App-V with an electronic software distribution system](appv-planning-to-deploy-appv-with-electronic-software-distribution-solutions.md).
 
