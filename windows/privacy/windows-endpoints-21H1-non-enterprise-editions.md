@@ -28,12 +28,12 @@ The following methodology was used to derive the network endpoints:
 
 1. Set up the latest version of Windows 10 on a test virtual machine using the default settings.
 2. Leave the device(s) running idle for a week ("idle" means a user is not interacting with the system/device).
-3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.  
+3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.
 4. Compile reports on traffic going to public IP addresses.
 5. The test virtual machine(s) was logged into using a local account, and was not joined to a domain or Azure Active Directory.
-6. All traffic was captured in our lab using a IPV4 network.  Therefore, no IPV6 traffic is reported here.
-7. These tests were conducted in an approved Microsoft lab.  It's possible your results may be different.
-8. These tests were conducted for one week. If you capture traffic for longer you may have different results.
+6. All traffic was captured in our lab using a IPV4 network. Therefore, no IPV6 traffic is reported here.
+7. These tests were conducted in an approved Microsoft lab. It's possible your results may be different.
+8. These tests were conducted for one week. If you capture traffic for longer, you may have different results.
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
@@ -42,7 +42,7 @@ The following methodology was used to derive the network endpoints:
 
 | **Area** | **Description** | **Protocol** | **Destination** |
 |-----------|--------------- |------------- |-----------------|
-| Activity Feed Service |The following endpoints are used by Activity Feed Service which enables multiple cross-device data roaming scenarios on Windows|TLSv1.2/HTTPS/HTTP|activity.windows.com|
+| Activity Feed Service |The following endpoints are used by Activity Feed Service, which enables multiple cross-device data roaming scenarios on Windows|TLSv1.2/HTTPS/HTTP|activity.windows.com|
 |Apps|The following endpoints are used for the Weather app.|TLSv1.2/HTTPS/HTTP|tile-service.weather.microsoft.com|
 ||The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office in a browser.|TLSv1.2/HTTPS/HTTP|evoke-windowsservices-tas.msedge.net|
 ||The following endpoint is used for OneNote Live Tile.|HTTPS/HTTP|cdn.onenote.net|
@@ -55,9 +55,7 @@ The following methodology was used to derive the network endpoints:
 |Device authentication|The following endpoint is used to authenticate a device.|HTTPS|login.live.com*|
 |Device Directory Service|Used by Device Directory Service to keep track of user-device associations and storing metadata about the devices.|HTTPS/HTTP|cs.dds.microsoft.com|
 |Device metadata|The following endpoint is used to retrieve device metadata.|TLSv1.2/HTTP|dmd.metaservices.microsoft.com|
-|Diagnostic data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service.|TLSv1.2/HTTP|v10.events.data.microsoft.com|
-|||TLSv1.2/HTTPS/HTTP|v20.events.data.microsoft.com|
-|||TLSv1.2/HTTP|www.microsoft.com|
+|Diagnostic data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. <br/>If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.|TLSv1.2/HTTP|v10.events.data.microsoft.com|
 ||The following endpoints are used by Windows Error Reporting.|TLSv1.2/HTTPS/HTTP|watson.telemetry.microsoft.com|
 |Font Streaming|The following endpoints are used to download fonts on demand.|TLSv1.2/HTTPS|fs.microsoft.com*|
 |Licensing|The following endpoint is used for online activation and some app licensing.|HTTPS/HTTP|*licensing.mp.microsoft.com|
@@ -133,7 +131,7 @@ The following methodology was used to derive the network endpoints:
 
 | **Area** | **Description** | **Protocol** | **Destination** |
 | --- | --- | --- | ---|
-| Activity Feed Service |The following endpoints are used by Activity Feed Service which enables multiple cross-device data roaming scenarios on Windows|TLSv1.2/HTTPS/HTTP|activity.windows.com|
+| Activity Feed Service |The following endpoints are used by Activity Feed Service, which enables multiple cross-device data roaming scenarios on Windows|TLSv1.2/HTTPS/HTTP|activity.windows.com|
 |Apps|The following endpoints are used for the Weather app.|TLSv1.2/HTTPS/HTTP|tile-service.weather.microsoft.com|
 ||The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office in a browser.|TLSv1.2/HTTPS/HTTP|evoke-windowsservices-tas.msedge.net|
 ||The following endpoint is used for OneNote Live Tile.|HTTPS/HTTP|cdn.onenote.net|
@@ -142,9 +140,7 @@ The following methodology was used to derive the network endpoints:
 |Cortana and Live Tiles|The following endpoints are related to Cortana and Live Tiles|TLSv1.2/HTTPS/HTTP|www.bing.com*|
 |Device authentication|The following endpoint is used to authenticate a device.|HTTPS|login.live.com*|
 |Device metadata|The following endpoint is used to retrieve device metadata.|TLSv1.2/HTTP|dmd.metaservices.microsoft.com|
-|Diagnostic data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service.|TLSv1.2/HTTP|v10.events.data.microsoft.com|
-|||TLSv1.2/HTTPS/HTTP|v20.events.data.microsoft.com|
-|||TLSv1.2/HTTP|www.microsoft.com|
+|Diagnostic data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. <br/>If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.|TLSv1.2/HTTP|v10.events.data.microsoft.com|
 ||The following endpoints are used by Windows Error Reporting.|TLSv1.2/HTTPS/HTTP|watson.telemetry.microsoft.com|
 |Font Streaming|The following endpoints are used to download fonts on demand.|TLSv1.2/HTTPS|fs.microsoft.com*|
 |Licensing|The following endpoint is used for online activation and some app licensing.|HTTPS/HTTP|*licensing.mp.microsoft.com|
@@ -204,7 +200,7 @@ The following methodology was used to derive the network endpoints:
 
 | **Area** | **Description** | **Protocol** | **Destination** |
 | --- | --- | --- | ---|
-| Activity Feed Service |The following endpoints are used by Activity Feed Service which enables multiple cross-device data roaming scenarios on Windows|TLSv1.2/HTTPS/HTTP|activity.windows.com|
+| Activity Feed Service |The following endpoints are used by Activity Feed Service, which enables multiple cross-device data roaming scenarios on Windows|TLSv1.2/HTTPS/HTTP|activity.windows.com|
 |Apps|The following endpoints are used for the Weather app.|TLSv1.2/HTTPS/HTTP|tile-service.weather.microsoft.com|
 ||The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office in a browser.|TLSv1.2/HTTPS/HTTP|evoke-windowsservices-tas.msedge.net|
 ||The following endpoint is used for OneNote Live Tile.|HTTPS/HTTP|cdn.onenote.net|
@@ -215,9 +211,7 @@ The following methodology was used to derive the network endpoints:
 |||TLSv1.2|odinvzc.azureedge.net|
 |||TLSv1.2|b-ring.msedge.net|
 |Device metadata|The following endpoint is used to retrieve device metadata.|TLSv1.2/HTTP|dmd.metaservices.microsoft.com|
-|Diagnostic data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service.|TLSv1.2/HTTP|v10.events.data.microsoft.com|
-|||TLSv1.2/HTTPS/HTTP|v20.events.data.microsoft.com|
-|||TLSv1.2/HTTP|www.microsoft.com|
+|Diagnostic data|The following endpoints are used by the Connected User Experiences and Telemetry component and connects to the Microsoft Data Management service. <br/>If you turn off traffic for this endpoint, diagnostic and usage information, which helps Microsoft find and fix problems and improve our products and services, will not be sent back to Microsoft.|TLSv1.2/HTTP|v10.events.data.microsoft.com|
 ||The following endpoints are used by Windows Error Reporting.|TLSv1.2/HTTPS/HTTP|watson.telemetry.microsoft.com|
 |Font Streaming|The following endpoints are used to download fonts on demand.|TLSv1.2/HTTPS|fs.microsoft.com*|
 |Licensing|The following endpoint is used for online activation and some app licensing.|HTTPS/HTTP|*licensing.mp.microsoft.com|
