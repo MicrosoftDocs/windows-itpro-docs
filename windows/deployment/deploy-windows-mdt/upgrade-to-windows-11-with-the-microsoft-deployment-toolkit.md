@@ -29,6 +29,9 @@ The simplest path to upgrade PCs that are currently running an earlier version o
 
 In-place upgrade differs from [computer refresh](refresh-a-windows-10-computer-with-windows-11.md) in that you cannot use a custom image to perform the in-place upgrade. In this article we will add a default Windows 11 image to the production deployment share specifically to perform an in-place upgrade.
 
+> [!IMPORTANT]
+> The upgrade process will be blocked if the device does not meet [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements). This will be displayed 
+
 Three computers are used in this topic: DC01, MDT01, and PC0002. 
 
 - DC01 is a domain controller for the contoso.com domain
@@ -42,7 +45,7 @@ Three computers are used in this topic: DC01, MDT01, and PC0002.
 > [!NOTE]
 > For details about the setup for the procedures in this article, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
-> If you have already completed all the steps in [Deploy a Windows 11 image using MDT](deploy-a-windows-11-image-using-mdt.md), then you already have a production deployment share and you can skip to [Add Windows 11 Enterprise x64 (full source)](#add-windows-10-enterprise-x64-full-source).
+> If you have already completed all the steps in [Deploy a Windows 11 image using MDT](deploy-a-windows-11-image-using-mdt.md), then you already have a production deployment share and you can skip to [Add Windows 11 Enterprise x64 (full source)](#add-windows-11-enterprise-x64-full-source).
 
 ## Create the MDT production deployment share
 
