@@ -49,9 +49,9 @@ Inventory can be performed recursively at any level from the AppManagement node 
 
 Inventory is specific to the package full name and lists bundled packs and resources packs as applicable under the package family name.
 
-> **Note**  On Windows 10 Mobile, XAP packages have the product ID in place of both the package family name and package full name.
+> [!NOTE]
+> On Windows 10 Mobile, XAP packages have the product ID in place of both the package family name and package full name.
 
- 
 Here are the nodes for each package full name:
 
 -   Name
@@ -116,8 +116,8 @@ Here are the nodes for each license ID:
 
 For detailed descriptions of each node, see [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md).
 
-> **Note**  The LicenseID in the CSP is the content ID for the license.
-
+> [!NOTE]
+> The LicenseID in the CSP is the content ID for the license.
 
 Here is an example of a query for all app licenses on a device.
 
@@ -308,9 +308,9 @@ Here are the requirements for this scenario:
 - The device does not need to have connectivity to the Microsoft Store, store services, or the have the Microsoft Store UI be enabled.
 - The user must be logged in, but association with AAD identity is not required.
 
-> **Note**  You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
+> [!NOTE]
+> You must unlock the device to deploy nonStore apps or you must deploy the app license before deploying the offline apps. For details, see [Deploy an offline license to a user](#deploy-an-offline-license-to-a-user).
 
- 
 The Add command for the package family name is required to ensure proper removal of the app at unenrollment.
 
 Here is an example of a line-of-business app installation.
@@ -429,14 +429,13 @@ Here are the requirements for this scenario:
 
 To provision app for all users of a device from a hosted location, the management server performs an Add and Exec command on the AppInstallation node in the device context. The Add command for the package family name is required to ensure proper removal of the app at unenrollment.
 
-> **Note**  When you remove the provisioned app, it will not remove it from the users that already installed the app.
-
- 
+> [!NOTE]
+> When you remove the provisioned app, it will not remove it from the users that already installed the app.
 
 Here is an example of app installation.
 
-> **Note**  This is only supported in Windows 10 for desktop editions.
-
+> [!NOTE]
+> This is only supported in Windows 10 for desktop editions.
 
 ```xml
 <!-- Add PackageFamilyName -->
@@ -472,8 +471,8 @@ The DeploymentOptions parameter is only available in the user context.
 
 Here is an example of app installation with dependencies.
 
-> **Note**  This is only supported in Windows 10 for desktop editions.
-
+> [!NOTE]
+> This is only supported in Windows 10 for desktop editions.
 
 ```xml
 <!-- Add PackageFamilyName -->
@@ -579,7 +578,8 @@ For user-based installation, use the ./User path and for provisioning of apps, u
 
 The Data field value of 0 (zero) indicates sucess, otherwise it is an error code. If there is a failure, you can get more details from the AppInstallation node.
 
-> **Note**  At this time, the alert for Store app installation is not yet available.
+> [!NOTE]
+> At this time, the alert for Store app installation is not yet available.
 
 
 ## Uninstall your apps
@@ -624,7 +624,8 @@ Here is an example for uninstalling a specific version of the app for a user.
 
 You can remove provisioned apps from a device for a specific version or for all versions of a package family. When a provisioned app is removed, it is not available to future users for the device. Logged in users who has the app registered to them will continue to have access to the app. If you want to removed the app for those users, you must explicitly uninstall the app for those users.
 
-> **Note**  You can only remove an app that has an inventory value IsProvisioned = 1.
+> [!NOTE]
+> You can only remove an app that has an inventory value IsProvisioned = 1.
 
  
 Removing provisioned app occurs in the device context.
@@ -753,7 +754,6 @@ Here is an example of a status check.
 
 Updating an existing app follows the same process as an initial installation. For more information, see [Deploy apps to a user from a hosted location](#deploy-apps-to-a-user-from-a-hosted-location).
 
-
 ### Update provisioned apps
 
 A provisioned app automatically updates when an app update is sent to the user. You can also update a provisioned app using the same process as an initial provisioning. For more information about initial provisioning, see [Provision apps for all users of a device](#provision-apps-for-all-users-of-a-device).
@@ -790,8 +790,8 @@ The following subsections provide information about additional settings configur
 
 You can install app on non-system volumes, such as a secondary partition or removable media (USB or SD cards). Using the RestrictApptoSystemVolume policy, you can prevent apps from getting installed or moved to non-system volumes. For more information about this policy, see [Policy CSP](policy-configuration-service-provider.md).
 
-> **Note**  This is only supported in mobile devices.
-
+> [!NOTE]
+> This is only supported in mobile devices.
 
 Here is an example.
 
@@ -825,8 +825,8 @@ Here is an example.
 
 In Windows 10 Mobile IT administrators can set a policy to restrict user application data for a Microsoft Store app to the system volume, regardless of where the package is installed or moved.
 
-> **Note**  The feature is only for Windows 10 Mobile.
-
+> [!NOTE]
+> The feature is only for Windows 10 Mobile.
  
 The RestrictAppDataToSystemVolume policy in [Policy CSP](policy-configuration-service-provider.md) enables you to restrict all user application data to stay on the system volume. When the policy is not configured or if it is disabled, and you move a package or when it is installed to a difference volume, then the user application data will moved to the same volume. You can set this policy to 0 (off, default) or 1.
 
@@ -862,8 +862,8 @@ Here is an example.
 
 The Universal Windows app has the ability to share application data between the users of the device. The ability to share data can be set at a package family level or per device.
 
-> **Note**  This is only applicable to multi-user devices.
-
+> [!NOTE]
+> This is only applicable to multi-user devices.
 
 The AllowSharedUserAppData policy in [Policy CSP](policy-configuration-service-provider.md) enables or disables app packages to share data between app packages when there are multiple users. If you enable this policy, applications can share data between packages in their package family. Data can be shared through ShareLocal folder for that package family and local machine. This folder is available through the Windows.Storage API.
 
@@ -898,11 +898,3 @@ Here is an example.
    </Item>
 </Replace>
 ```
-
- 
-
-
-
-
-
-
