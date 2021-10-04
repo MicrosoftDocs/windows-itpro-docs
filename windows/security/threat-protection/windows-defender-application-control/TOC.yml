@@ -1,5 +1,8 @@
 - name: Application Control for Windows
+  href: index.yml
+- name: About application control for Windows
   href: windows-defender-application-control.md
+  expanded: true
   items: 
     - name: WDAC and AppLocker Overview
       href: wdac-and-applocker-overview.md
@@ -292,3 +295,6 @@
                   href: applocker\using-event-viewer-with-applocker.md
             - name: AppLocker Settings
               href: applocker\applocker-settings.md
+- name: Windows security
+  href: /windows/security/
+

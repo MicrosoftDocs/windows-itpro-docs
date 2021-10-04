@@ -1,5 +1,5 @@
 ---
-title: Auto-remove unpublished packages on App-V client (Windows 10)
+title: Auto-remove unpublished packages on App-V client (Windows 10/11)
 description: How to automatically clean up any unpublished packages on your App-V client devices.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
@@ -14,9 +14,9 @@ ms.topic: article
 ---
 # Automatically clean up unpublished packages on the App-V client
 
->Applies to: Windows 10, version 1703
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
-If you wanted to free up additional storage space in previous versions of App-V, you would have had to manually remove your unpublished packages from your client devices. Windows 10, version 1703 introduces the ability to use PowerShell or Group Policy settings to automatically clean up your unpublished packages after restarting your device.
+If you wanted to free up additional storage space in previous versions of App-V, you would have had to manually remove your unpublished packages from your client devices. Starting with Windows 10 version 1703, use PowerShell or Group Policy settings to automatically clean up your unpublished packages after restarting your device.
 
 ## Clean up with PowerShell cmdlets
 

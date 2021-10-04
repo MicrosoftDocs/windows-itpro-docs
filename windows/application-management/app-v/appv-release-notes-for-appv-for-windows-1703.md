@@ -1,6 +1,6 @@
 ---
-title: Release Notes for App-V for Windows 10, version 1703 (Windows 10)
-description: A list of known issues and workarounds for App-V running on Windows 10, version 1703.
+title: Release Notes for App-V for Windows 10 version 1703 (Windows 10/11)
+description: A list of known issues and workarounds for App-V running on Windows 10 version 1703 and Windows 11.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -13,12 +13,11 @@ ms.author: greglin
 ---
 
 
-# Release Notes for App-V for Windows 10, version 1703
+# Release Notes for App-V for Windows 10 version 1703 and later
 
-**Applies to**
--   Windows 10, version 1703
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
 
-The following are known issues and workarounds for Application Virtualization (App-V) running on Windows 10, version 1703.
+The following are known issues and workarounds for Application Virtualization (App-V) running on Windows 10 version 1703 and later
 
 <table border="1">
     <thead>
@@ -106,7 +105,7 @@ The following are known issues and workarounds for Application Virtualization (A
 
 
 ## Related resources list
-For information that can help with troubleshooting App-V for Windows 10, see:
+For information that can help with troubleshooting App-V for Windows client, see:
 - [Application Virtualization (App-V): List of Microsoft Support Knowledge Base Articles](https://social.technet.microsoft.com/wiki/contents/articles/14272.app-v-v5-x-list-of-microsoft-support-knowledge-base-articles.aspx)
 
 - [The Official Microsoft App-V Team Blog](/archive/blogs/appv/)
@@ -119,6 +118,6 @@ For information that can help with troubleshooting App-V for Windows 10, see:
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
-- [What's new in App-V for Windows 10](appv-about-appv.md)
+- [What's new in App-V for Windows client](appv-about-appv.md)
 
 - [Release Notes for App-V for Windows 10, version 1607](appv-release-notes-for-appv-for-windows-1703.md)
