@@ -1,5 +1,5 @@
 ---
-title: Manage connections from Windows 10 operating system components to Microsoft services
+title: Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services
 description: Learn how to minimize connections from Windows to Microsoft services, and configure particular privacy settings related to these connections.
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
 ms.reviewer:
@@ -17,17 +17,18 @@ ms.topic: article
 ms.date: 5/21/2021
 ---
 
-# Manage connections from Windows 10 operating system components to Microsoft services
+# Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services
 
 **Applies to**
 
-- Windows 10 Enterprise, version 1607 and newer
+- Windows 11 Enterprise
+- Windows 10 Enterprise, version 1607 and later
 - Windows Server 2016
 - Windows Server 2019
 
-This article describes the network connections that Windows 10 components make to Microsoft and the Windows Settings, Group Policies and registry settings available to IT Professionals to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article. While it is possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
+This article describes the network connections that Windows 10 and Windows 11 components make to Microsoft and the Windows Settings, Group Policies and registry settings available to IT Professionals to help manage the data shared with Microsoft. If you want to minimize connections from Windows to Microsoft services, or configure privacy settings, there are a number of settings for consideration. For example, you can configure diagnostic data to the lowest level for your edition of Windows and evaluate other connections Windows makes to Microsoft services you want to turn off using the instructions in this article. While it is possible to minimize network connections to Microsoft, there are many reasons why these communications are enabled by default, such as updating malware definitions and maintaining current certificate revocation lists. This data helps us deliver a secure, reliable, and up-to-date experience.
 
-Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887) package that will allow your organization to quickly configure the settings covered in this document to restrict connections from Windows 10 to Microsoft. The Windows Restricted Traffic Limited Baseline is based on [Group Policy Administrative Template](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) functionality and the package you download contains further instructions on how to deploy to devices in your organization. Since some of the settings can reduce the functionality and security configuration of your device, **before deploying Windows Restricted Traffic Limited Functionality Baseline** make sure you **choose the right settings configuration for your environment** and **ensure that Windows and Microsoft Defender Antivirus are fully up to date**. Failure to do so may result in errors or unexpected behavior. You should not extract this package to the windows\system32 folder because it will not apply correctly.
+Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline](https://go.microsoft.com/fwlink/?linkid=828887) package that will allow your organization to quickly configure the settings covered in this document to restrict connections from Windows 10 and Windows 11 to Microsoft. The Windows Restricted Traffic Limited Baseline is based on [Group Policy Administrative Template](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) functionality and the package you download contains further instructions on how to deploy to devices in your organization. Since some of the settings can reduce the functionality and security configuration of your device, **before deploying Windows Restricted Traffic Limited Functionality Baseline** make sure you **choose the right settings configuration for your environment** and **ensure that Windows and Microsoft Defender Antivirus are fully up to date**. Failure to do so may result in errors or unexpected behavior. You should not extract this package to the windows\system32 folder because it will not apply correctly.
 
 > [!IMPORTANT]
 > - The downloadable Windows 10, version 1903 scripts/settings can be used on Windows 10, version 1909 devices.
@@ -42,7 +43,7 @@ Microsoft provides a [Windows Restricted Traffic Limited Functionality Baseline]
 > - To restrict a device effectively (first time or subsequently), it is recommended to apply the Restricted Traffic Limited Functionality Baseline settings package in offline mode.
 > - During update or upgrade of Windows, egress traffic may occur.
 
-To use Microsoft Intune cloud-based device management for restricting traffic please refer to the [Manage connections from Windows 10 operating system components to Microsoft services using Microsoft Intune MDM Server](manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm.md).
+To use Microsoft Intune cloud-based device management for restricting traffic please refer to the [Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services using Microsoft Intune MDM Server](manage-connections-from-windows-operating-system-components-to-microsoft-services-using-mdm.md).
 
 We are always striving to improve our documentation and welcome your feedback. You can provide feedback by contacting **telmhelp**@**microsoft.com**.
 
@@ -50,9 +51,9 @@ We are always striving to improve our documentation and welcome your feedback. Y
 
 The following sections list the components that make network connections to Microsoft services by default. You can configure these settings to control the data that is sent to Microsoft. To prevent Windows from sending any data to Microsoft, configure diagnostic data at the Security level, turn off Microsoft Defender Antivirus diagnostic data and MSRT reporting, and turn off all of these connections
 
-### Settings for Windows 10 Enterprise edition
+### Settings for Windows 10 and Windows 11 Enterprise edition
 
-The following table lists management options for each setting, beginning with Windows 10 Enterprise version 1607.
+The following table lists management options for each setting,  For Windows 10 (beginning with Windows 10 Enterprise version 1607) and Windows 11.
 
 
 | Setting | UI | Group Policy | Registry |
@@ -74,7 +75,7 @@ The following table lists management options for each setting, beginning with Wi
 | [15. Offline maps](#bkmk-offlinemaps) | ![Check mark.](images/checkmark.png) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [17. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | |
-| [18. Settings > Privacy](#bkmk-settingssection) | | | |
+| [18. Settings > Privacy & security](#bkmk-settingssection) | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.1 General](#bkmk-general) | ![Check mark.](images/checkmark.png) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.2 Location](#bkmk-priv-location) | ![Check mark.](images/checkmark.png) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.3 Camera](#bkmk-priv-camera) | ![Check mark.](images/checkmark.png) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -130,7 +131,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [12. Microsoft Account](#bkmk-microsoft-account) | | | ![Check mark](images/checkmark.png) |
 | [14. Network Connection Status Indicator](#bkmk-ncsi) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
-| [18. Settings > Privacy](#bkmk-settingssection) | | | |
+| [18. Settings > Privacy & security](#bkmk-settingssection) | | | |
 | [19. Software Protection Platform](#bkmk-spp) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [22. Teredo](#bkmk-teredo) | | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [24. Microsoft Defender Antivirus](#bkmk-defender) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -186,7 +187,7 @@ See the following table for a summary of the management settings for Windows Ser
 | [15. Offline maps](#bkmk-offlinemaps) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [16. OneDrive](#bkmk-onedrive) | | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | [17. Preinstalled apps](#bkmk-preinstalledapps) | ![Check mark](images/checkmark.png) | | |
-| [18. Settings > Privacy](#bkmk-settingssection) | | | |
+| [18. Settings > Privacy & security](#bkmk-settingssection) | | | |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.1 General](#bkmk-general) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.2 Location](#bkmk-priv-location) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
 | &nbsp;&nbsp;&nbsp;&nbsp;[18.3 Camera](#bkmk-priv-camera) | ![Check mark.](images/checkmark.png) | ![Check mark](images/checkmark.png) | ![Check mark](images/checkmark.png) |
@@ -237,7 +238,7 @@ Although not recommended, you can turn off Automatic Root Certificates Update, w
 > [!CAUTION]
 > By not automatically downloading the root certificates the device may not be able to connect to some websites.
 
-For Windows 10, Windows Server 2016 with Desktop Experience, and Windows Server 2016 Server Core:
+For Windows 10, Windows Server 2016 with Desktop Experience, Windows Server 2016 Server Core, and Windows 11:
 
 - Enable the Group Policy: **Computer Configuration** > **Administrative Templates** > **System** > **Internet Communication Management** > **Internet Communication Settings** > **Turn off Automatic Root Certificates Update**
 
@@ -293,7 +294,7 @@ You can also apply the Group Policies using the following registry keys:
 
 
 > [!IMPORTANT]
-> Using the Group Policy editor these steps are required for all supported versions of Windows 10, however they are not required for devices running Windows 10, version 1607 or Windows Server 2016.
+> Using the Group Policy editor these steps are required for all supported versions of Windows 10 and Windows 11, however they are not required for devices running Windows 10, version 1607 or Windows Server 2016.
 
 1. Expand **Computer Configuration** &gt; **Windows Settings** &gt; **Security Settings** &gt; **Windows Defender Firewall with Advanced Security** &gt; **Windows Defender Firewall with Advanced Security - &lt;LDAP name&gt;**, and then click **Outbound Rules**.
 
@@ -389,21 +390,21 @@ If you're running Windows 10, version 1607, Windows Server 2016, or later:
 
 ### <a href="" id="bkmk-previewbuilds"></a>7. Insider Preview builds
 
-The Windows Insider Preview program lets you help shape the future of Windows, be part of the community, and get early access to releases of Windows 10. This setting stops communication with the Windows Insider Preview service that checks for new builds.
-Windows Insider Preview builds only apply to Windows 10 and are not available for Windows Server 2016.
+The Windows Insider Preview program lets you help shape the future of Windows, be part of the community, and get early access to releases of Windows 10 and Windows 11. This setting stops communication with the Windows Insider Preview service that checks for new builds.
+Windows Insider Preview builds only apply to Windows 10 and Windows 11 and are not available for Windows Server 2016.
 
 
 > [!NOTE]
 > If you upgrade a device that is configured to minimize connections from Windows to Microsoft services (that is, a device configured for Restricted Traffic) to a Windows Insider Preview build, the Feedback & Diagnostic setting will automatically be set to **Optional (Full)**. Although the diagnostic data level may initially appear as **Required (Basic)**, a few hours after the UI is refreshed or the machine is rebooted, the setting will become **Optional (Full)**.
 
-To turn off Insider Preview builds for a released version of Windows 10:
+To turn off Insider Preview builds for a released version of Windows 10 or Windows 11:
 
 - **Disable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Data Collection and Preview Builds** &gt; **Toggle user control over Insider builds**.
 
-To turn off Insider Preview builds for Windows 10:
+To turn off Insider Preview builds for Windows 10 and Windows 11:
 
 > [!NOTE]
-> If you're running a preview version of Windows 10, you must roll back to a released version before you can turn off Insider Preview builds.
+> If you're running a preview version of Windows 10 or Windows 11, you must roll back to a released version before you can turn off Insider Preview builds.
 
 - Turn off the feature in the UI: **Settings** > **Update & security** > **Windows Insider Program** > **Stop Insider Preview builds**.
 
@@ -529,7 +530,7 @@ To turn off Live Tiles:
 
 - Create a REG_DWORD registry setting named **NoCloudApplicationNotification** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\PushNotifications** with a **value of 1 (one)**
 
-In Windows 10 Mobile, you must also unpin all tiles that are pinned to Start.
+In Windows 10 or Windows 11 Mobile, you must also unpin all tiles that are pinned to Start.
 
 ### <a href="" id="bkmk-mailsync"></a>11. Mail synchronization
 
@@ -548,7 +549,7 @@ To turn off the Windows Mail app:
 
 ### <a href="" id="bkmk-microsoft-account"></a>12. Microsoft Account
 
-Use the below setting to prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways. For example, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher. See [Feature updates are not being offered while other updates are](/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
+Use the below setting to prevent communication to the Microsoft Account cloud authentication service. Many apps and system components that depend on Microsoft Account authentication may lose functionality. Some of them could be in unexpected ways. For example, Windows Update will no longer offer feature updates to devices running Windows 10 1709 or higher and Windows 11. See [Feature updates are not being offered while other updates are](/windows/deployment/update/windows-update-troubleshooting#feature-updates-are-not-being-offered-while-other-updates-are).
 
 To disable the Microsoft Account Sign-In Assistant:
 
@@ -657,7 +658,7 @@ You can turn off the ability to download and update offline maps.
 
   -and-
 
-- In Windows 10, version 1607 and later, **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Maps** > **Turn off unsolicited network traffic on the Offline Maps settings page**
+- In Windows 10, version 1607 and later, and Windows 11 **Enable** the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Maps** > **Turn off unsolicited network traffic on the Offline Maps settings page**
 
   -or-
 
@@ -805,9 +806,9 @@ To remove the Sticky notes app:
 
 - Remove the app for the current user. From an elevated command prompt, run the following Windows PowerShell command: **Get-AppxPackage Microsoft.MicrosoftStickyNotes | Remove-AppxPackage**
 
-### <a href="" id="bkmk-settingssection"></a>18. Settings &gt; Privacy
+### <a href="" id="bkmk-settingssection"></a>18. Settings &gt; Privacy & security
 
-Use Settings &gt; Privacy to configure some settings that may be important to your organization. Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
+Use Settings &gt; Privacy & security to configure some settings that may be important to your organization. Except for the Feedback & Diagnostics page, these settings must be configured for every user account that signs into the PC.
 
 - [18.1 General](#bkmk-general)
 
@@ -1268,7 +1269,7 @@ In the **Other Devices** area, you can choose whether devices that aren't paired
 
 To turn off **Let apps automatically share and sync info with wireless devices that don't explicitly pair with your PC, tablet, or phone**:
 
-- Turn off the feature in the UI by going to Settings > Privacy > Other devices > "Communicate with unpaired devices. Let apps automatically share and sync info with wireless devices that don't explicitly pair with your PC, tablet, or phone" and **Turn it OFF**.
+- Turn off the feature in the UI by going to Settings > Privacy & security > Other devices > "Communicate with unpaired devices. Let apps automatically share and sync info with wireless devices that don't explicitly pair with your PC, tablet, or phone" and **Turn it OFF**.
 
   -or-
 
@@ -1342,7 +1343,7 @@ To change the level of diagnostic and usage data sent when you **Send your devic
 - Create a REG_DWORD registry setting in **HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection\\AllowTelemetry** with a **value of 0**.
 
 > [!NOTE]
-> If the **Security** option is configured by using Group Policy or the Registry, the value will not be reflected in the UI. The **Security** option is only available in Windows 10 Enterprise edition.
+> If the **Security** option is configured by using Group Policy or the Registry, the value will not be reflected in the UI. The **Security** option is only available in Windows 10 and Windows 11 Enterprise edition.
 
 
 To turn off tailored experiences with relevant tips and recommendations by using your diagnostics data:
@@ -1380,7 +1381,7 @@ To turn off **Let apps run in the background**:
 
  -or-
 
-- **Enable** the Group Policy (only applicable for Windows 10 version 1703 and above): **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps run in the background** and set the **Select a setting** box to **Force Deny**.
+- **Enable** the Group Policy (only applicable for Windows 10 version 1703 and above and Windows 11): **Computer Configuration** > **Administrative Templates** > **Windows Components** > **App Privacy** > **Let Windows apps run in the background** and set the **Select a setting** box to **Force Deny**.
 
   -or-
 
@@ -1527,7 +1528,7 @@ To turn this Off in the UI:
 
 Enterprise customers can manage their Windows activation status with volume licensing using an on-premises Key Management Server. You can opt out of sending KMS client activation data to Microsoft automatically by doing one of the following:
 
-**For Windows 10:**
+**For Windows 10 and Windows 11:**
 
 - **Enable** the Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Software Protection Platform** &gt; **Turn off KMS Client Online AVS Validation**
 
@@ -1555,7 +1556,7 @@ Enterprise customers can manage their Windows activation status with volume lice
 
 Enterprise customers can manage updates to the Disk Failure Prediction Model.
 
-For Windows 10:
+For Windows 10 and Windows 11:
 - **Disable** this Group Policy: **Computer Configuration** &gt; **Administrative Templates** &gt; **System** &gt; **Storage Health** &gt; **Allow downloading updates to the Disk Failure Prediction Model**
 
   -or-
@@ -1723,12 +1724,12 @@ In Group Policy, configure:
 
 Windows Spotlight provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. You can control it by using the user interface or Group Policy.
 
-If you're running Windows 10, version 1607 or later, you need to:
+If you're running Windows 10, version 1607 or later, or Windows 11, you need to:
 
 - **Enable** the following Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Turn off all Windows spotlight features**
 
     > [!NOTE]
-    > This must be done within 15 minutes after Windows 10 is installed. Alternatively, you can create an image with this setting.
+    > This must be done within 15 minutes after Windows 10 or Windows 11 is installed. Alternatively, you can create an image with this setting.
 
    -or-
 
@@ -1840,11 +1841,11 @@ You can turn off apps for websites, preventing customers who visit websites that
 
 Delivery Optimization is the downloader of Windows updates, Microsoft Store apps, Office and other content from Microsoft. Delivery Optimization can also download from sources in addition to Microsoft, which not only helps when you have a limited or unreliable Internet connection, but can also help you reduce the amount of bandwidth needed to keep all of your organization's PCs up-to-date. If you have Delivery Optimization Peer-to-Peer option turned on, PCs on your network may send and receive updates and apps to other PCs on your local network, if you choose, or to PCs on the Internet.
 
-By default, PCs running Windows 10 will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
+By default, PCs running Windows 10 or Windows 11 will only use Delivery Optimization to get and receive updates for PCs and apps on your local network.
 
 Use the UI, Group Policy, or Registry Keys to set up Delivery Optimization.
 
-In Windows 10 version 1607 and above you can stop network traffic related to Delivery Optimization Cloud Service by setting **Download Mode** to  **Simple Mode** (99), as described below.
+In Windows 10, version 1607 and above, and Windows 11 you can stop network traffic related to Delivery Optimization Cloud Service by setting **Download Mode** to  **Simple Mode** (99), as described below.
 
 ### <a href="" id="bkmk-wudo-ui"></a>28.1 Settings &gt; Update & security
 
@@ -1933,7 +1934,7 @@ For China releases of Windows 10 there is one additional Regkey to be set to pre
 
 ### <a href="" id="bkmk-clcp"></a>30. Cloud Clipboard
 
-Specifies whether clipboard items roam across devices. When this is allowed, an item copied to the clipboard is uploaded to the cloud so that other devices can access it. Clipboard items in the cloud can be downloaded and pasted across your Windows 10 devices.
+Specifies whether clipboard items roam across devices. When this is allowed, an item copied to the clipboard is uploaded to the cloud so that other devices can access it. Clipboard items in the cloud can be downloaded and pasted across your Windows 10 and Windows 11 devices.
 
 Most restricted value is 0.
 
