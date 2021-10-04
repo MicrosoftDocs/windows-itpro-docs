@@ -64,6 +64,8 @@ On **MDT01**:
 
  Copying the reference image to the production deployment share
 
+ If you copy the reference image using the above process, you should verify that all the files on MDT01 in **D:\\MDTBuildLab\\Operating Systems\\W11EX64** were successfully copied to **D:\\MDTProduction\\Operating Systems\\W11EX64** and then skip to [Create a task sequence to upgrade to Windows 11 Enterprise](#create-a-task-sequence-to-upgrade-to-windows11-enterprise).
+
 On **MDT01**:
 
 1. Sign in as contoso\\administrator and copy the content of a Windows 11 Enterprise x64 DVD/ISO to the **D:\\Downloads\\Windows 11 Enterprise x64** folder on MDT01, or just insert the DVD or mount an ISO on MDT01.
