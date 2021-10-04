@@ -172,13 +172,14 @@ If you do not configure this policy setting, it remains disabled.  The RPC serve
 
 If you enable this policy setting, it directs the RPC server runtime to restrict unauthenticated RPC clients connecting to RPC servers running on a machine. A client will be considered an authenticated client if it uses a named pipe to communicate with the server or if it uses RPC Security. RPC Interfaces that have specifically requested to be accessible by unauthenticated clients may be exempt from this restriction, depending on the selected value for this policy setting.
 
---  "None" allows all RPC clients to connect to RPC Servers running on the machine on which the policy setting is applied.
+- "None" allows all RPC clients to connect to RPC Servers running on the machine on which the policy setting is applied.
 
---  "Authenticated" allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. Exemptions are granted to interfaces that have requested them.
+- "Authenticated" allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied. Exemptions are granted to interfaces that have requested them.
 
---  "Authenticated without exceptions" allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied.  No exceptions are allowed.
+- "Authenticated without exceptions" allows only authenticated RPC Clients (per the definition above) to connect to RPC Servers running on the machine on which the policy setting is applied.  No exceptions are allowed.
 
-Note: This policy setting will not be applied until the system is rebooted.
+> [!NOTE]
+> This policy setting will not be applied until the system is rebooted.
 
 <!--/Description-->
 
