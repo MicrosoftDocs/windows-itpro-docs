@@ -30,8 +30,8 @@ Required service data is also collected and sent to Microsoft for essential serv
 
 Although most essential services can be turned off by enterprise admins, we recommend that where applicable you consider hosting the services on-premises and carefully assess the impact of turning off remaining services. The following list describes the essential services and connected experiences that are available to you in Windows and provides links to further information about each one.
 
-> [!Note:]
-> The information in this article describes the most common connected experiences and essential services. We will continue to update our list of connected experiences over time as Windows evolves.
+>[!Note:]
+>The information in this article describes the most common connected experiences and essential services. We will continue to update our list of connected experiences over time as Windows evolves.
 
 ## Windows essential services
 
@@ -44,13 +44,13 @@ Although most essential services can be turned off by enterprise admins, we reco
 
 ## Edge essential services and connected experiences
 
-## IE essential services and connected experiences**
+## IE essential services and connected experiences
 
-## Related links**
+## Related links
 
 - [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
-- [Connected Experiences in Office.](/deployoffice/privacy/connected-experiences.md)
-- [Essential Services in Office.](/deployoffice/privacy/essential-services.md)
+- [Connected Experiences in Office](/deployoffice/privacy/connected-experiences.md)
+- [Essential Services in Office](/deployoffice/privacy/essential-services.md)
 
 To view endpoints for Windows 10 Enterprise, see:
 
