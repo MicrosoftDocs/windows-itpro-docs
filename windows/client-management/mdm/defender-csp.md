@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/05/2021
+ms.date: 10/04/2021
 ---
 
 # Defender CSP
@@ -124,6 +124,7 @@ Threat category ID.
 The data type is integer.
 
 The following table describes the supported values:
+<br/><br/>
 
 | Value | Description                 |
 |-------|-----------------------------|
@@ -399,7 +400,7 @@ Supported product status values:
 -  Service started without any malware protection engine            = 1 << 1
 -  Pending full scan due to threat action                           = 1 << 2
 -  Pending reboot due to threat action                              = 1 << 3
--  ending manual steps due to threat action                        = 1 << 4
+-  ending manual steps due to threat action                         = 1 << 4
 -  AV signatures out of date                                        = 1 << 5
 -  AS signatures out of date                                        = 1 << 6
 -  No quick scan has happened for a specified period                = 1 << 7
@@ -839,6 +840,6 @@ Added in Windows 10, version 1803. OfflineScan action starts a Microsoft Defende
 
 Supported operations are Get and Execute.
 
-## Related topics
+## See also
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
