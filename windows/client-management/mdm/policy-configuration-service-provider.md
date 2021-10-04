@@ -3057,6 +3057,35 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_PreviousVersions policies
+
+</dl>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalpage_1" id="admx-previousversions-disablelocalpage_1">ADMX_PreviousVersions/DisableLocalPage_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalpage_2" id="admx-previousversions-disablelocalpage_2">ADMX_PreviousVersions/DisableLocalPage_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disableremotepage_1" id="admx-previousversions-disableremotepage_1">ADMX_PreviousVersions/DisableRemotePage_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disableremotepage_2" id="admx-previousversions-disableremotepage_2">ADMX_PreviousVersions/DisableRemotePage_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-hidebackupentries_1" id="admx-previousversions-hidebackupentries_1">ADMX_PreviousVersions/HideBackupEntries_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-hidebackupentries_2" id="admx-previousversions-hidebackupentries_2">ADMX_PreviousVersions/HideBackupEntries_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalrestore_1" id="admx-previousversions-disablelocalrestore_1">ADMX_PreviousVersions/DisableLocalRestore_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-previousversions.md#admx-previousversions-disablelocalrestore_2" id="admx-previousversions-disablelocalrestore_2">ADMX_PreviousVersions/DisableLocalRestore_2</a>
+  </dd>
+</dl>
+
 ### ADMX_Printing policies  
 
 <dl>
@@ -3198,13 +3227,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-programs.md#admx-programs-nowindowsmarketplace" id="admx-programs-nowindowsmarketplace">ADMX_Programs/NoWindowsMarketplace</a>
   </dd>
 </dl>
-
-### ADMX_Radar policies
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-radar.md#admx-radar-wdiscenarioexecutionpolicy" id="admx-radar-wdiscenarioexecutionpolicy">ADMX_Radar/WdiScenarioExecutionPolicy</a>
-  </dd>
-<dl>
 
 ### ADMX_Reliability policies
 
@@ -3978,6 +4000,23 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_TouchInput policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-touchinput.md#admx-touchinput-touchinputoff_1" id="admx-touchinput-touchinputoff_1">ADMX_TouchInput/TouchInputOff_1</a>
+  </dd>  
+  <dd>
+    <a href="./policy-csp-admx-touchinput.md#admx-touchinput-touchinputoff_2" id="admx-touchinput-touchinputoff_2">ADMX_TouchInput/TouchInputOff_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-touchinput.md#admx-touchinput-panningeverywhereoff_1" id="admx-touchinput-panningeverywhereoff_1">ADMX_TouchInput/PanningEverywhereOff_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-touchinput.md#admx-touchinput-panningeverywhereoff_2" id="admx-touchinput-panningeverywhereoff_2">ADMX_TouchInput/PanningEverywhereOff_2</a>
+  </dd>
+</dl>
+
 ### ADMX_TPM policies  
 
 <dl>
@@ -4456,6 +4495,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_WDI Policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-wdi.md#admx-wdi-wdidpsscenarioexecutionpolicy" id="admx-wdi-wdidpsscenarioexecutionpolicy">ADMX_WDI/WdiDpsScenarioExecutionPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-wdi.md#admx-wdi-wdidpsscenariodatasizelimitpolicy" id="admx-wdi-wdidpsscenariodatasizelimitpolicy">ADMX_WDI/WdiDpsScenarioDataSizeLimitPolicy</a>
+  </dd>
+<dl>
+
 ### ADMX_WinCal policies  
 
 <dl>
@@ -4472,6 +4522,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 <dl>
   <dd>
     <a href="./policy-csp-admx-windowsanytimeupgrade.md#admx-windowsanytimeupgrade-disabled" id="admx-windowsanytimeupgrade-disabled">ADMX_WindowsAnytimeUpgrade/Disabled</a>
+  </dd>
+</dl>
+
+### ADMX_WindowsColorSystem policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-windowscolorsystem.md#admx-windowscolorsystem-prohibitchanginginstalledprofilelist_1" id="admx-windowscolorsystem-prohibitchanginginstalledprofilelist_1">ADMX_WindowsColorSystem/ProhibitChangingInstalledProfileList_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-windowscolorsystem.md#admx-windowscolorsystem-prohibitchanginginstalledprofilelist_2" id="admx-windowscolorsystem-prohibitchanginginstalledprofilelist_2">ADMX_WindowsColorSystem/ProhibitChangingInstalledProfileList_2</a>
   </dd>
 </dl>
 

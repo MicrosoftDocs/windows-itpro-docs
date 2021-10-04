@@ -1,18 +1,23 @@
 ---
-title: Policy CSP - ADMX_FileRecovery
-description: Policy CSP - ADMX_FileRecovery
+title: Policy CSP - ADMX_PushToInstall
+description: Policy CSP - ADMX_PushToInstall
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 03/24/2021
+ms.date: 12/01/2020
 ms.reviewer: 
 manager: dansimp
 ---
 
-# Policy CSP - ADMX_FileRecovery
+# Policy CSP - ADMX_PushToInstall
+
+<hr/>
+
+<!--Policies-->
+## ADMX_PushToInstall policies  
 
 > [!TIP]
 > This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
@@ -20,12 +25,10 @@ manager: dansimp
 > You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
 > 
 > The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
-<hr/>
 
-<!--Policies-->
 <dl>
   <dd>
-    <a href="#admx-filerecovery-wdiscenarioexecutionpolicy">ADMX_FileRecovery/WdiScenarioExecutionPolicy</a>
+    <a href="#admx-pushtoinstall-disablepushtoinstall">ADMX_PushToInstall/DisablePushToInstall</a>
   </dd>
 </dl>
 
@@ -33,7 +36,7 @@ manager: dansimp
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-filerecovery-wdiscenarioexecutionpolicy"></a>**ADMX_FileRecovery/WdiScenarioExecutionPolicy**  
+<a href="" id="admx-pushtoinstall-disablepushtoinstall"></a>**ADMX_PushToInstall/DisablePushToInstall**  
 
 <!--SupportedSKUs-->
 <table>
@@ -76,25 +79,25 @@ manager: dansimp
 [Scope](./policy-configuration-service-provider.md#policy-scope):
 
 > [!div class = "checklist"]
+> * Device
+
 <hr/>
 
 <!--/Scope-->
 <!--Description-->
-
-> [!NOTE]
-> This policy setting applies to all sites in Trusted zones.
+If you enable this setting, users will not be able to push Apps to this device from the Microsoft Store running on other devices or the web.
 
 <!--/Description-->
 
-
 <!--ADMXBacked-->
 ADMX Info:  
--   GP ADMX file name: *FileRecovery.admx*
+-   GP Friendly name: *Turn off Push To Install service*
+-   GP name: *DisablePushToInstall*
+-   GP path: *Windows Components\Push To Install*
+-   GP ADMX file name: *PushToInstall.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
-<hr/>
-
 
 <!--/Policies-->
 
