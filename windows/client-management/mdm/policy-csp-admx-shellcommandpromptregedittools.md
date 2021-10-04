@@ -13,8 +13,12 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_ShellCommandPromptRegEditTools
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+> [!TIP]
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
@@ -45,28 +49,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -83,7 +93,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents users from running the interactive command prompt, Cmd.exe. This policy setting also determines whether batch files (.cmd and .bat) can run on the computer.
+This policy setting prevents users from running the interactive command prompt, Cmd.exe. This policy setting also determines whether batch files (.cmd and .bat) can run on the computer.
 
 If you enable this policy setting and the user tries to open a command window, the system displays a message explaining that a setting prevents the action.
 
@@ -93,12 +103,7 @@ If you disable this policy setting or do not configure it, users can run Cmd.exe
 > Do not prevent the computer from running batch files if the computer uses logon, logoff, startup, or shutdown batch file scripts, or for users that use Remote Desktop Services.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -117,28 +122,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -155,7 +166,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Disables the Windows registry editor Regedit.exe.
+Disables the Windows registry editor Regedit.exe.
 
 If you enable this policy setting and the user tries to start Regedit.exe, a message appears explaining that a policy setting prevents the action.
 
@@ -164,12 +175,7 @@ If you disable this policy setting or do not configure it, users can run Regedit
 To prevent users from using other administrative tools, use the "Run only specified Windows applications" policy setting.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -189,28 +195,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -227,7 +239,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting prevents Windows from running the programs you specify in this policy setting.
+This policy setting prevents Windows from running the programs you specify in this policy setting.
 
 If you enable this policy setting, users cannot run programs that you add to the list of disallowed applications.
 
@@ -240,12 +252,7 @@ This policy setting only prevents users from running programs that are started b
 > To create a list of allowed applications, click Show.  In the Show Contents dialog box, in the Value column, type the application executable name (for example, Winword.exe, Poledit.exe, Powerpnt.exe).
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -264,28 +271,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -302,7 +315,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. Limits the Windows programs that users have permission to run on the computer.
+Limits the Windows programs that users have permission to run on the computer.
 
 If you enable this policy setting, users can only run programs that you add to the list of allowed applications.
 
@@ -315,12 +328,7 @@ This policy setting only prevents users from running programs that are started b
 > To create a list of allowed applications, click Show. In the Show Contents dialog box, in the Value column, type the application executable name (for example, Winword.exe, Poledit.exe, Powerpnt.exe).
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -333,8 +341,7 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-> [!NOTE]
-> These policies are currently only available as part of a Windows Insider release.
+
 
 <!--/Policies-->
 

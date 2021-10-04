@@ -13,8 +13,12 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_RPC
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+> [!TIP]
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <hr/>
 
@@ -45,28 +49,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -83,7 +93,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls whether the RPC runtime generates extended error information when an error occurs.
+This policy setting controls whether the RPC runtime generates extended error information when an error occurs.
 
 Extended error information includes the local time that the error occurred, the RPC version, and the name of the computer on which the error occurred, or from which it was propagated. Programs can retrieve the extended error information by using standard Windows application programming interfaces (APIs).
 
@@ -110,12 +120,6 @@ You must select an error response type in the drop-down box.
 > This policy setting will not be applied until the system is rebooted.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -134,28 +138,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -172,7 +182,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls whether the RPC Runtime ignores delegation failures when delegation is requested.
+This policy setting controls whether the RPC Runtime ignores delegation failures when delegation is requested.
 
 The constrained delegation model, introduced in Windows Server 2003, does not report that delegation was enabled on a security context when a client connects to a server. Callers of RPC and COM are encouraged to use the RPC_C_QOS_CAPABILITIES_IGNORE_DELEGATE_FAILURE flag, but some applications written for the traditional delegation model prior to Windows Server 2003 may not use this flag and will encounter RPC_S_SEC_PKG_ERROR when connecting to a server that uses constrained delegation.
 
@@ -190,12 +200,7 @@ If you enable this policy setting, then:
 > This policy setting will not be applied until the system is rebooted.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -215,28 +220,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -253,7 +264,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting controls the idle connection timeout for RPC/HTTP connections.  
+This policy setting controls the idle connection timeout for RPC/HTTP connections.  
 
 This policy setting is useful in cases where a network agent like an HTTP proxy or a router uses a lower idle connection timeout than the IIS server running the RPC/HTTP proxy. In such cases, RPC/HTTP clients may encounter errors because connections will be timed out faster than expected. Using this policy setting you can force the RPC Runtime and the RPC/HTTP Proxy to use a lower connection timeout.
 
@@ -271,12 +282,7 @@ If you enable this policy setting, and the IIS server running the RPC HTTP proxy
 > This policy setting will not be applied until the system is rebooted.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -295,28 +301,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -333,7 +345,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting determines whether the RPC Runtime maintains RPC state information for the system, and how much information it maintains. Basic state information, which consists only of the most commonly needed state data, is required for troubleshooting RPC problems.
+This policy setting determines whether the RPC Runtime maintains RPC state information for the system, and how much information it maintains. Basic state information, which consists only of the most commonly needed state data, is required for troubleshooting RPC problems.
 
 If you disable this policy setting, the RPC runtime defaults to "Auto2" level.
 
@@ -357,12 +369,6 @@ If you enable this policy setting, you can use the drop-down box to determine wh
 > This policy setting will not be applied until the system is rebooted.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -375,8 +381,6 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-> [!NOTE]
-> These policies are currently only available as part of a Windows Insider release.
 
 <!--/Policies-->
 

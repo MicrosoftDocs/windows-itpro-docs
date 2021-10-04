@@ -13,9 +13,6 @@ manager: dansimp
 ---
 
 # Policy CSP - MixedReality
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 
 <hr/>
 
@@ -68,7 +65,7 @@ manager: dansimp
 Steps to use this policy correctly:
 
 1. Create a device configuration profile for kiosk targeting Azure AD groups and assign it to HoloLens device(s).
-1. Create a custom OMA URI based device configuration that sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s).
+1. Create a custom OMA URI-based device configuration that sets this policy value to desired number of days (> 0) and assign it to HoloLens device(s).
     1. The URI value should be entered in OMA-URI text box as ./Vendor/MSFT/Policy/Config/MixedReality/AADGroupMembershipCacheValidityInDays
     1. The value can be between min / max allowed.
 1. Enroll HoloLens devices and verify both configurations get applied to the device.
@@ -318,10 +315,6 @@ The following list shows the supported values:
 <!--/SupportedValues-->
 <!--/Policy-->
 <hr/>
-
-Footnotes:
-
-- 9 - Available in Windows 10, version 20H2.
 
 <!--/Policies-->
 

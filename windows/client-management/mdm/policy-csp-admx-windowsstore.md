@@ -13,8 +13,15 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_WindowsStore
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
+>[!TIP]
+> These are ADMX-backed policies and require a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
+
+
 
 <hr/>
 
@@ -48,28 +55,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -86,19 +99,14 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting enables or disables the automatic download of app updates on PCs running Windows 8.
+This policy setting enables or disables the automatic download of app updates on PCs running Windows 8.
 
 If you enable this setting, the automatic download of app updates is turned off.  If you disable this setting, the automatic download of app updates is turned on.
 
 If you don't configure this setting, the automatic download of app updates is determined by a registry setting that the user can change using Settings in the Windows Store.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -119,30 +127,37 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -157,19 +172,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting enables or disables the Store offer to update to the latest version of Windows.
+This policy setting enables or disables the Store offer to update to the latest version of Windows.
 
 If you enable this setting, the Store application will not offer updates to the latest version of Windows.
 
 If you disable or do not configure this setting the Store application will offer updates to the latest version of Windows.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -190,30 +200,37 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -228,19 +245,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting enables or disables the Store offer to update to the latest version of Windows.
+This policy setting enables or disables the Store offer to update to the latest version of Windows.
 
 If you enable this setting, the Store application will not offer updates to the latest version of Windows.
 
 If you disable or do not configure this setting the Store application will offer updates to the latest version of Windows.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -251,7 +263,7 @@ ADMX Info:
 
 <!--/ADMXBacked-->
 <!--/Policy-->
-<hr/>
+
 
 <hr/>
 
@@ -261,30 +273,37 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -299,19 +318,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting denies or allows access to the Store application.
+This policy setting denies or allows access to the Store application.
 
 If you enable this setting, access to the Store application is denied. Access to the Store is required for installing app updates.
 
 If you disable or don't configure this setting, access to the Store application is allowed.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -332,30 +346,37 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -370,19 +391,14 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Available in the latest Windows 10 Insider Preview Build. This policy setting denies or allows access to the Store application.
+This policy setting denies or allows access to the Store application.
 
 If you enable this setting, access to the Store application is denied. Access to the Store is required for installing app updates.
 
 If you disable or don't configure this setting, access to the Store application is allowed.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it. For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
@@ -395,6 +411,5 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
-> [!NOTE]
-> These policies are currently only available as part of a Windows Insider release.
+
 <!--/Policies-->
