@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "windows/whats-new/windows-11.md",
+      "redirect_url": "/windows/whats-new/windows-11-whats-new",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "windows/configuration/use-json-customize-start-menu-windows.md",
       "redirect_url": "/windows/configuration/customize-start-menu-layout-windows-11",
       "redirect_document_id": false  
@@ -18958,6 +18963,11 @@
     {
       "source_path": "windows/security/identity-protection/change-history-for-access-protection.md",
       "redirect_url": "/windows/security/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deploy-windows-cm/upgrade-to-windows-with-configuraton-manager.md",
+      "redirect_url": "/windows/deploy-windows-cm/upgrade-to-windows-with-configuration-manager",
       "redirect_document_id": false
     },
     {
