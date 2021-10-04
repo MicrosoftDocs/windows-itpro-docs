@@ -2,7 +2,7 @@
 title: Get the system apps on Windows client operating system | Microsoft Docs
 ms.reviewer: 
 manager: dougeby
-description: Use the Windows PowerShell Get-AppxPackage command to get a list off the system apps installed in Windows OS. See a list of some common system apps installed a Windows Enterprise client computer or device, including Windows 10.
+description: Use the Windows PowerShell Get-AppxPackage command to get a list off the system apps installed in Windows OS. See a list of some common system apps installed a Windows Enterprise client computer or device, including Windows 10/11.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -15,9 +15,10 @@ ms.topic: article
 
 # System apps installed with the Windows client OS
 
-> Applies to:
->
-> - Windows 10
+**Applies to**:
+
+- Windows 10
+- Windows 11
 
 On all Windows devices, the OS automatically installs some apps. These apps are called system apps, and are typically installed in the `C:\Windows\` folder. On your Windows devices, you can use Windows PowerShell to see the system apps automatically installed.
 

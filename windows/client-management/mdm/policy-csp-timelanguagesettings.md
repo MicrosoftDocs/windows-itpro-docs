@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 09/27/2019
+ms.date: 09/28/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -81,6 +81,9 @@ manager: dansimp
 <!--/Scope-->
 <!--Description-->
 Specifies the time zone to be applied to the device. This is the standard Windows name for the target time zone.
+
+> [!TIP]
+> To get the list of available time zones, run `Get-TimeZone -ListAvailable` in PowerShell.
 
 <!--/Description-->
 <!--SupportedValues-->
