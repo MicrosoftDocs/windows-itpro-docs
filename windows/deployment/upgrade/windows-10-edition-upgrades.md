@@ -71,7 +71,6 @@ X = unsupported <BR>
 > - For information about upgrade paths in Windows 10 in S mode (for Pro or Education), check out [Windows 10 Pro/Enterprise in S mode](../windows-10-pro-in-s-mode.md)
 > - Each desktop edition in the table also has an N and KN SKU. These editions have had media-related functionality removed. Devices with N or KN SKUs installed can be upgraded to corresponding N or KN SKUs using the same methods.
 > <br>
-> - Due to [naming changes](../update/waas-overview.md#naming-changes) the term LTSB might still be displayed in some products. This name will change to LTSC with subsequent feature updates.
 
 ## Upgrade using mobile device management (MDM)
 - To upgrade desktop editions of Windows 10 using MDM, you'll need to enter the product key for the upgraded edition in the **UpgradeEditionWithProductKey** policy setting of the **WindowsLicensing** CSP. For more info, see [WindowsLicensing CSP](/windows/client-management/mdm/windowslicensing-csp).
@@ -239,7 +238,6 @@ You can move directly from Enterprise to any valid destination edition. In this 
     </tr>
 </table>
 
-> **Windows 10 LTSC/LTSB**: Due to [naming changes](../update/waas-overview.md#naming-changes), product versions that display Windows 10 LTSB will be replaced with Windows 10 LTSC in subsequent feature updates. The term LTSC is used here to refer to all long term servicing versions.
 > 
 > **Windows N/KN**: Windows "N" and "KN" SKUs follow the same rules shown above.
 
