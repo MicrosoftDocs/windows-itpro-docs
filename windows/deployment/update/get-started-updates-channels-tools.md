@@ -67,9 +67,9 @@ We recommend that you use the Windows Insider Release Preview channel for valida
 
 ### Long-term Servicing Channel
 
-The **Long-Term Servicing Channel** is designed to be used only for specialized devices (which typically don't run Office) such as ones that control medical equipment or ATMs. Devices on this channel receive new feature releases every two to three years. LTSB releases service a special LTSB edition of Windows 10 and are only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
+The **Long-Term Servicing Channel** is designed to be used only for specialized devices (which typically don't run Office) such as ones that control medical equipment or ATMs. Devices on this channel receive new feature releases every two to three years. LTSC releases service a special LTSC edition of Windows 10 and are only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
-The General Availability Channel is the default servicing channel for all Windows devices except those with the LTSB edition installed. The following table shows the servicing channels available to each edition. 
+The General Availability Channel is the default servicing channel for all Windows devices except those with the LTSC edition installed. The following table shows the servicing channels available to each edition. 
 
 
 | Edition | General Availability Channel | Insider Program | Long-Term Servicing Channel |
@@ -77,7 +77,7 @@ The General Availability Channel is the default servicing channel for all Window
 | Home | ![yes.](images/checkmark.png)|![no](images/crossmark.png)    | ![no](images/crossmark.png)|
 | Pro | ![yes.](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
 | Enterprise  | ![yes.](images/checkmark.png) |![yes](images/checkmark.png)  |  ![no](images/crossmark.png)|
-| Enterprise LTSB  | ![no.](images/crossmark.png) |![no](images/crossmark.png) |   ![yes](images/checkmark.png)|
+| Enterprise LTSC  | ![no.](images/crossmark.png) |![no](images/crossmark.png) |   ![yes](images/checkmark.png)|
 | Pro Education | ![yes.](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
 | Education  | ![yes.](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
 
