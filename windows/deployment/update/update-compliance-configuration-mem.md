@@ -16,10 +16,11 @@ ms.topic: article
 ---
 
 # Configuring Microsoft Endpoint Manager devices for Update Compliance
+
 **Applies to**
 
--   Windows 10
--   Windows 11
+- Windows 10
+- Windows 11
 
 > [!NOTE]
 > As of May 10, 2021, a new policy is required to use Update Compliance: "Allow Update Compliance Processing." For more details, see the Mobile Device Management policies and Group policies tables.
