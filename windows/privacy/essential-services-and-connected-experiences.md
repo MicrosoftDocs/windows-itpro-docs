@@ -1,8 +1,24 @@
-**Essential Services and Connected Experiences for Windows**
+---
+title: Essential services and connected experiences for Windows
+description: Explains what the essential services and connected experiences are for Windows
+keywords: privacy, manage connections to Microsoft
+ms.prod: w10
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.localizationpriority: high
+audience: ITPro
+author: siosulli
+ms.author: dansimp
+manager: dansimp
+ms.date: 12/1/2020
+---
+
+# Essential services and connected experiences for Windows
 
 **Applies to**
 
--   Windows 11 and Windows 10, version 1903 and later.
+- Windows 11
+- Windows 10, version 1903 and later
 
 Windows includes built-in apps, services, and features, that connect to the internet to provide enhanced experiences and additional capabilities. These are called “connected experiences”. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure.
 
@@ -14,17 +30,18 @@ Required service data is also collected and sent to Microsoft for essential serv
 
 Although most essential services can be turned off by enterprise admins, we recommend that where applicable you consider hosting the services on-premises and carefully assess the impact of turning off remaining services. The following list describes the essential services and connected experiences that are available to you in Windows and provides links to further information about each one.
 
-Note: The information in this article describes the most common connected experiences and essential services. We will continue to update our list of connected experiences over time as Windows evolves. **Windows** **Essential Services**
+> [!Note:]
+> The information in this article describes the most common connected experiences and essential services. We will continue to update our list of connected experiences over time as Windows evolves.
 
-<table>
-<thead>
-<tr class="header">
-<th><strong>Essential Service</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
+## Windows essential services
+
+| **Essential Service** | **Description** |
+| --- | --- |
+|Authentication|The authentication service is required to enable sign in to work or school accounts. It validates a user’s identity and provides access to multiple apps and system components like OneDrive and activity history. Using a work or school account to sign in to Windows enables Microsoft to provide a consistent experience across your devices. If the authentication service is turned off, many apps and components may lose functionality and users may not be able to sign in.</br>To turn it off, see [Microsoft Account](manage-connections-from-windows-operating-system-components-to-microsoft-services#12-microsoft-account)
+|Certificates|Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA), are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates that are publicly known to be fraudulent. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.</br> If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.</br>To turn it off, see [Automatic Root Certificates Update](manage-connections-from-windows-operating-system-components-to-microsoft-services#automatic-root-certificates-update)
+
+<!---
+
 <td>Authentication</td>
 <td><p>The authentication service is required to enable sign in to work or school accounts. It validates a user’s identity and provides access to multiple apps and system components like OneDrive and activity history. Using a work or school account to sign in to Windows enables Microsoft to provide a consistent experience across your devices. If the authentication service is turned off, many apps and components may lose functionality and users may not be able to sign in.</p>
 <p>To turn it off, see <a href="https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#12-microsoft-account">Microsoft Account</a></p></td>
@@ -75,7 +92,8 @@ If automatic updates are turned off, applications and websites may stop working 
 </tbody>
 </table>
 
-**Windows Connected Experiences**
+--->
+**Windows connected experiences**
 
 <table>
 <thead>
@@ -214,7 +232,7 @@ If automatic updates are turned off, applications and websites may stop working 
 </tbody>
 </table>
 
-**Edge Essential Services and Connected Experiences**
+**Edge essential services and connected experiences**
 
 Windows ships with Microsoft Edge and Internet Explorer on Windows devices. Microsoft Edge is the default browser and is recommended for the best web browsing experience.
 
@@ -222,7 +240,7 @@ You can find details on all of Edge's connected experiences and essential servic
 
 To turn off specific Edge feature, see [Microsoft Edge](https://docs.microsoft.com/en-us/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services#13-microsoft-edge).
 
-**IE Essential Services and Connected Experiences**
+**IE essential services and connected experiences**
 
 Internet Explorer shares many of the Windows essential services listed above. The following table provides more details on the essential services and connected experiences specific to Internet Explorer.
 
@@ -292,17 +310,15 @@ Note: Apart from ActiveX Filtering, which is an essential service, all other fea
 
 To view endpoints for Windows 10 Enterprise, see:
 
--   
+-   [Manage connection endpoints for Windows 10, version 20H2](https://docs.microsoft.com/windows/privacy/manage-windows-20h2-endpoints)[Manage connection endpoints for Windows 10, version 1909](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1909-endpoints)
 
--   [Manage connection endpoints for Windows 10, version 20H2](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-20h2-endpoints)[Manage connection endpoints for Windows 10, version 1909](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1909-endpoints)
+-   [Manage connection endpoints for Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)
 
--   [Manage connection endpoints for Windows 10, version 1903](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1903-endpoints)
+-   [Manage connection endpoints for Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
 
--   [Manage connection endpoints for Windows 10, version 1809](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1809-endpoints)
+-   [Manage connection endpoints for Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)
 
--   [Manage connection endpoints for Windows 10, version 1803](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1803-endpoints)
-
--   [Manage connection endpoints for Windows 10, version 1709](https://docs.microsoft.com/en-us/windows/privacy/manage-windows-1709-endpoints)
+-   [Manage connection endpoints for Windows 10, version 1709](https://docs.microsoft.com/windows/privacy/manage-windows-1709-endpoints)
 
 To view endpoints for non-Enterprise Windows 10 editions, see:
 
