@@ -455,6 +455,10 @@ items:
               href: policy-csp-admx-dfs.md
             - name: ADMX_DigitalLocker
               href: policy-csp-admx-digitallocker.md
+            - name: ADMX_DiskNVCache
+              href: policy-csp-admx-disknvcache.md
+            - name: ADMX_DiskQuota
+              href: policy-csp-admx-diskquota.md    
             - name: ADMX_DistributedLinkTracking
               href: policy-csp-admx-distributedlinktracking.md
             - name: ADMX_DnsClient
@@ -506,7 +510,9 @@ items:
             - name: ADMX_ICM
               href: policy-csp-admx-icm.md
             - name: ADMX_IIS
-              href: policy-csp-admx-iis.md 
+              href: policy-csp-admx-iis.md
+            - name: ADMX_iSCSI
+              href: policy-csp-admx-iscsi.md  
             - name: ADMX_kdc
               href: policy-csp-admx-kdc.md
             - name: ADMX_Kerberos
@@ -555,14 +561,14 @@ items:
               href: policy-csp-admx-power.md
             - name: ADMX_PowerShellExecutionPolicy
               href: policy-csp-admx-powershellexecutionpolicy.md
+            - name: ADMX_PreviousVersions
+              href: policy-csp-admx-previousversions.md  
             - name: ADMX_Printing
               href: policy-csp-admx-printing.md
             - name: ADMX_Printing2
               href: policy-csp-admx-printing2.md
             - name: ADMX_Programs
               href: policy-csp-admx-programs.md
-            - name: ADMX_Radar
-              href: policy-csp-admx-radar.md  
             - name: ADMX_Reliability
               href: policy-csp-admx-reliability.md
             - name: ADMX_RemoteAssistance
@@ -599,18 +605,22 @@ items:
               href: policy-csp-admx-smartcard.md
             - name: ADMX_Snmp
               href: policy-csp-admx-snmp.md
-            - name: ADMX_SoundRec
-              href: policy-csp-admx-soundrec.md  
             - name: ADMX_StartMenu
               href: policy-csp-admx-startmenu.md
             - name: ADMX_SystemRestore
               href: policy-csp-admx-systemrestore.md
+            - name: ADMX_TabletShell
+              href: policy-csp-admx-tabletshell.md
             - name: ADMX_Taskbar
               href: policy-csp-admx-taskbar.md
             - name: ADMX_tcpip
               href: policy-csp-admx-tcpip.md
+            - name: ADMX_TerminalServer
+              href: policy-csp-admx-terminalserver.md 
             - name: ADMX_Thumbnails
               href: policy-csp-admx-thumbnails.md
+            - name: ADMX_TouchInput
+              href: policy-csp-admx-touchinput.md  
             - name: ADMX_TPM
               href: policy-csp-admx-tpm.md
             - name: ADMX_UserExperienceVirtualization
@@ -621,10 +631,14 @@ items:
               href: policy-csp-admx-w32time.md
             - name: ADMX_WCM
               href: policy-csp-admx-wcm.md
+            - name: ADMX_WDI
+              href: policy-csp-admx-wdi.md  
             - name: ADMX_WinCal
               href: policy-csp-admx-wincal.md
             - name: ADMX_WindowsAnytimeUpgrade
               href: policy-csp-admx-windowsanytimeupgrade.md
+            - name: ADMX_WindowsColorSystem
+              href: policy-csp-admx-windowscolorsystem.md
             - name: ADMX_WindowsConnectNow
               href: policy-csp-admx-windowsconnectnow.md
             - name: ADMX_WindowsExplorer
