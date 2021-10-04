@@ -8,8 +8,8 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
-ms.date: 09/22/2017
+author: dansimp
+ms.date: 10/04/2021
 ---
 
 # Enterprise app management
