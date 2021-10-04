@@ -37,8 +37,8 @@ Although most essential services can be turned off by enterprise admins, we reco
 
 | **Essential Service** | **Description** |
 | --- | --- |
-|Authentication|The authentication service is required to enable sign in to work or school accounts. It validates a user’s identity and provides access to multiple apps and system components like OneDrive and activity history. Using a work or school account to sign in to Windows enables Microsoft to provide a consistent experience across your devices. If the authentication service is turned off, many apps and components may lose functionality and users may not be able to sign in.</br>To turn it off, see [Microsoft Account](manage-connections-from-windows-operating-system-components-to-microsoft-services#12-microsoft-account)
-|Certificates|Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA), are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates that are publicly known to be fraudulent. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.</br> If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.</br>To turn it off, see [Automatic Root Certificates Update](manage-connections-from-windows-operating-system-components-to-microsoft-services#automatic-root-certificates-update)
+|Authentication|The authentication service is required to enable sign in to work or school accounts. It validates a user’s identity and provides access to multiple apps and system components like OneDrive and activity history. Using a work or school account to sign in to Windows enables Microsoft to provide a consistent experience across your devices. If the authentication service is turned off, many apps and components may lose functionality and users may not be able to sign in.</br>To turn it off, see [Microsoft Account](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#12-microsoft-account)
+|Certificates|Certificates are digital files, stored on client devices, used to both encrypt data and verify the identity of an individual or organization. Trusted root certificates issued by a certification authority (CA), are stored in a certificate trust list (CTL). The Automatic Root Certificates Update mechanism contacts Windows Updates to update the CTL. If a new version of the CTL is identified, the list of trusted root certificates cached on the local device will be updated. Untrusted certificates are certificates that are publicly known to be fraudulent. Untrusted certificates are also stored in a list on the local device and updated by the Automatic Root Certificates Update mechanism.</br> If automatic updates are turned off, applications and websites may stop working because they did not receive an updated root certificate that the application uses. Additionally, the list of untrusted certificates will no longer be updated, which increases the attack vector on the device.</br>To turn it off, see [Automatic Root Certificates Update](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#automatic-root-certificates-update)
 
 ## Windows connected experiences
 
@@ -48,34 +48,24 @@ Although most essential services can be turned off by enterprise admins, we reco
 
 ## Related links**
 
-[Manage connections from Windows operating system components to Microsoft services](https://docs.microsoft.com/windows/privacy/manage-connections-from-windows-operating-system-components-to-microsoft-services)
-
-[Connected Experiences in Office.](https://docs.microsoft.com/deployoffice/privacy/connected-experiences)
-
-[Essential Services in Office.](https://docs.microsoft.com/deployoffice/privacy/essential-services)
+- [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md)
+- [Connected Experiences in Office.](/deployoffice/privacy/connected-experiences.md)
+- [Essential Services in Office.](/deployoffice/privacy/essential-services.md)
 
 To view endpoints for Windows 10 Enterprise, see:
 
--   [Manage connection endpoints for Windows 10, version 20H2](https://docs.microsoft.com/windows/privacy/manage-windows-20h2-endpoints)[Manage connection endpoints for Windows 10, version 1909](https://docs.microsoft.com/windows/privacy/manage-windows-1909-endpoints)
-
--   [Manage connection endpoints for Windows 10, version 1903](https://docs.microsoft.com/windows/privacy/manage-windows-1903-endpoints)
-
--   [Manage connection endpoints for Windows 10, version 1809](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints)
-
--   [Manage connection endpoints for Windows 10, version 1803](https://docs.microsoft.com/windows/privacy/manage-windows-1803-endpoints)
-
--   [Manage connection endpoints for Windows 10, version 1709](https://docs.microsoft.com/windows/privacy/manage-windows-1709-endpoints)
+- [Manage connection endpoints for Windows 10, version 20H2](manage-windows-20h2-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1903](manage-windows-1903-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1809](manage-windows-1809-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
+- [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
 
 To view endpoints for non-Enterprise Windows 10 editions, see:
 
--   Windows 10, version 20H2, connection endpoints for non-Enterprise editions
-
-- [Windows 10, version 1909, connection endpoints for non-Enterprise editions](https://docs.microsoft.com/en-us/windows/privacy/windows-endpoints-1909-non-enterprise-editions)
-
--   [Windows 10, version 1903, connection endpoints for non-Enterprise editions](https://docs.microsoft.com/en-us/windows/privacy/windows-endpoints-1903-non-enterprise-editions)
-
--   [Windows 10, version 1809, connection endpoints for non-Enterprise editions](https://docs.microsoft.com/en-us/windows/privacy/windows-endpoints-1809-non-enterprise-editions)
-
--   [Windows 10, version 1803, connection endpoints for non-Enterprise editions](https://docs.microsoft.com/en-us/windows/privacy/windows-endpoints-1803-non-enterprise-editions)
-
--   [Windows 10, version 1709, connection endpoints for non-Enterprise editions](https://docs.microsoft.com/en-us/windows/privacy/windows-endpoints-1709-non-enterprise-editions)
+- [Windows 10, version 20H2, connection endpoints for non-Enterprise editions](windows-endpoints-20H2-non-enterprise-editions)
+- [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
+- [Windows 10, version 1903, connection endpoints for non-Enterprise editions](windows-endpoints-1903-non-enterprise-editions.md)
+- [Windows 10, version 1809, connection endpoints for non-Enterprise editions](windows-endpoints-1809-non-enterprise-editions.md)
+- [Windows 10, version 1803, connection endpoints for non-Enterprise editions](windows-endpoints-1803-non-enterprise-editions.md)
+- [Windows 10, version 1709, connection endpoints for non-Enterprise editions](windows-endpoints-1709-non-enterprise-editions.md)
