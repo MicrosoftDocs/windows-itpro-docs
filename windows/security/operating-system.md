@@ -21,7 +21,7 @@ Security and privacy depend on an operating system that guards your system and i
 
 Watch the latest [Microsoft Mechanics](https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA) video that shows off some of the latest Windows 11 security technology.
 
-> [!VIDEO https://www.youtube.com/watch?v=2RTwGNyhSy8]
+> [!VIDEO https://youtu.be/tg9QUrnVFho]
 
 <br/><br/>
 Use the links in the following table to learn more about the operating system security features and capabilities in Windows 11.<br/><br/>
