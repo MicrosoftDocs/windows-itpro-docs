@@ -55,7 +55,7 @@ The following table summarizes various Windows 10 deployment scenarios. The scen
       Use Windows Setup to update your OS and migrate apps and settings. Rollback data is saved in Windows.old.
     </td>
     <td align="center"> 
-<a href="/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit">Perform an in-place upgrade to Windows 10 with MDT</a><br><a href="/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager">Perform an in-place upgrade to Windows 10 using Configuration Manager</a>
+<a href="/windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit">Perform an in-place upgrade to Windows 10 with MDT</a><br><a href="/windows/deployment/deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager">Perform an in-place upgrade to Windows 10 using Configuration Manager</a>
     </td>
   </tr>
   <tr>
@@ -262,12 +262,13 @@ The deployment process for the replace scenario is as follows:
 
 2.  Deploy the new computer as a bare-metal deployment.
 
-    **Note**<br>In some situations, you can use the replace scenario even if the target is the same machine. For example, you can use replace if you want to modify the disk layout from the master boot record (MBR) to the GUID partition table (GPT), which will allow you to take advantage of the Unified Extensible Firmware Interface (UEFI) functionality. You can also use replace if the disk needs to be repartitioned since user data needs to be transferred off the disk.
+    > [!NOTE]
+    > In some situations, you can use the replace scenario even if the target is the same machine. For example, you can use replace if you want to modify the disk layout from the master boot record (MBR) to the GUID partition table (GPT), which will allow you to take advantage of the Unified Extensible Firmware Interface (UEFI) functionality. You can also use replace if the disk needs to be repartitioned since user data needs to be transferred off the disk.
 
 ## Related topics
 
 - [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md)
-- [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](./deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md)
+- [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](./deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md)
 - [Deploy Windows 10 with System Center 2012 R2 Configuration Manager](https://go.microsoft.com/fwlink/p/?LinkId=620230)
 - [Deploy Windows 10 with the Microsoft Deployment Toolkit](./deploy-windows-mdt/prepare-for-windows-deployment-with-mdt.md)
 - [Windows setup technical reference](/windows-hardware/manufacture/desktop/windows-setup-technical-reference)

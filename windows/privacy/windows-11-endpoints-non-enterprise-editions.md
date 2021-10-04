@@ -68,11 +68,8 @@ The following methodology was used to derive the network endpoints:
 |||HTTPS/HTTP|ecn.dev.virtualearth.net|
 |||HTTPS/HTTP|ssl.bing.com|
 |Microsoft Account|The following endpoints are used for Microsoft accounts to sign in|TLSv1.2/HTTPS/HTTP|*login.live.com|
-|Microsoft Edge|The following endpoints are used for Microsoft Edge Browser Services.|HTTPS/HTTP|edge.activity.windows.com|
-|||HTTPS/HTTP|edge.microsoft.com|
-||The following endpoint is used by Microsoft Edge Update service to check for new updates.|HTTPS/HTTP|msedge.api.cdp.microsoft.com|
-|Microsoft forward link redirection|The following endpoint is used by the Microsoft forward link redirection service (FWLink) to redirect permanent web links to their actual, sometimes transitory, URL. FWlinks are similar to URL shorteners, just longer|HTTP|go.microsoft.com/fwlink/|
-|||TLSv1.2/HTTPS/HTTP|go.microsoft.com|
+|Microsoft Edge| This network traffic is related to the Microsoft Edge browser. The Microsoft Edge browser requires these endpoint to contact external websites.|HTTPS/HTTP|edge.activity.windows.com </br> edge.microsoft.com|
+|Microsoft Edge|The following endpoint is used by Microsoft Edge Update service to check for new updates. If you disable this endpoint, Microsoft Edge won’t be able to check for and apply new edge updates.|HTTPS/HTTP|msedge.api.cdp.microsoft.com|
 |Microsoft Store|The following endpoint is used to download image files that are called when applications run (Microsoft Store or Inbox MSN Apps)|TLSv1.2/HTTPS/HTTP|img-prod-cms-rt-microsoft-com.akamaized.net|
 ||The following endpoint is used for the Windows Push Notification Services (WNS). WNS enables third-party developers to send toast, tile, badge, and raw updates from their own cloud service. This provides a mechanism to deliver new updates to your users in a power-efficient and dependable way.|TLSv1.2/HTTPS|*.wns.windows.com|
 ||The following endpoint is used to revoke licenses for malicious apps in the Microsoft Store.|TLSv1.2/HTTPS/HTTP|storecatalogrevocation.storequality.microsoft.com|
@@ -104,8 +101,7 @@ The following methodology was used to derive the network endpoints:
 |Skype|The following endpoint is used to retrieve Skype configuration values.|TLSv1.2/HTTPS/HTTP|*.pipe.aria.microsoft.com|
 |||TLSv1.2/HTTPS/HTTP|config.edge.skype.com|
 |Teams|The following endpoint is used for Microsoft Teams application.|TLSv1.2/HTTPS/HTTP|config.teams.microsoft.com|
-|Windows Defender|The following endpoint is used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com|
-||||wdcpalt.microsoft.com|
+|Microsoft Defender Antivirus|The following endpoints are used for Windows Defender when Cloud-based Protection is enabled|TLSv1.2/HTTPS|wdcp.microsoft.com </br>wdcpalt.microsoft.com|
 |||HTTPS/HTTP|*.smartscreen-prod.microsoft.com|
 |||TLSv1.2|definitionupdates.microsoft.com|
 ||The following endpoints are used for Windows Defender SmartScreen reporting and notifications.|TLSv1.2|*.smartscreen.microsoft.com|
@@ -131,6 +127,7 @@ The following methodology was used to derive the network endpoints:
 
 | **Area** | **Description** | **Protocol** | **Destination** |
 | --- | --- | --- | ---|
+
 | Activity Feed Service |The following endpoints are used by Activity Feed Service which enables multiple cross-device data roaming scenarios on Windows|TLSv1.2/HTTPS/HTTP|activity.windows.com|
 |Apps|The following endpoints are used for the Weather app.|TLSv1.2/HTTPS/HTTP|tile-service.weather.microsoft.com|
 ||The following endpoint is used by the Photos app to download configuration files, and to connect to the Office 365 portal's shared infrastructure, including Office in a browser.|TLSv1.2/HTTPS/HTTP|evoke-windowsservices-tas.msedge.net|
