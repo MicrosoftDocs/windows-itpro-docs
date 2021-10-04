@@ -1,6 +1,6 @@
 ---
-title: Optimize update delivery for Windows client updates
-description: Two methods of peer-to-peer content distribution are available in Windows 10, Delivery Optimization and BranchCache.
+title: Optimize Windows update delivery
+description: Two methods of peer-to-peer content distribution are available, Delivery Optimization and BranchCache.
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo
@@ -11,7 +11,7 @@ manager: laurawi
 ms.topic: article
 ---
 
-# Optimize Windows client update delivery
+# Optimize Windows update delivery
 
 
 **Applies to**
