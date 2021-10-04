@@ -17,6 +17,11 @@ ms.topic: article
 
 # Configuring devices through the Update Compliance Configuration Script
 
+**Applies to**
+
+- Windows 10
+- Windows 11
+
 > [!NOTE]
 > A new policy is required to use Update Compliance: "AllowUpdateComplianceProcessing." If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must rerun the script so the new policy can be configured.
 
