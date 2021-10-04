@@ -18961,6 +18961,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "windows/deploy-windows-cm/upgrade-to-windows-with-configuraton-manager.md",
+      "redirect_url": "/windows/deploy-windows-cm/upgrade-to-windows-with-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "windows/deployment/update/waas-deployment-rings-windows-10-updates.md",
       "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates",
       "redirect_document_id": false
