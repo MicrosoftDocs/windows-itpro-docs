@@ -41,7 +41,7 @@ For some interesting in-depth information about how cumulative updates work, see
 
 With each release in the General Availability Channel, we recommend beginning deployment right away to devices selected for early adoption (targeted validation) and ramp up to full deployment at your discretion. 
 
-Windows 10 and Windows 11 Enterprise LTSB are separate **Long-Term Servicing Channel** versions. Each release is supported for a total of 10 years (five years standard support, five years extended support). New releases are expected about every three years.
+Windows 10 Enterprise LTSC are separate **Long-Term Servicing Channel** versions. Each release is supported for a total of 10 years (five years standard support, five years extended support). New releases are expected about every three years.
 
 For more information, see [Assign devices to servicing channels for Windows client updates](waas-servicing-channels-windows-10-updates.md).
 
