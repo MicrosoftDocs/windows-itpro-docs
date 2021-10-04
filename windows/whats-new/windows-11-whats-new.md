@@ -99,7 +99,7 @@ For more information on the security features you can configure, manage, and enf
 
   When you add your apps in a Snap Layout, that layout is saved in a Snap Group. In the taskbar, when you hover over an app in an existing snap layout, it shows all the apps in that layout. This feature is the Snap Group. You can select the group, and the apps are opened in the same layout. As you add more Snap Groups, you can switch between them just by selecting the Snap Group.
 
-  Users can manage some snap features using the **Settings** app > **System** > **Multitasking**. For more information on the end user experience, see [Snap your windows](https://support.microsoft.com/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241).
+  Users can manage some snap features using the **Settings** app > **System** > **Multitasking**. For more information on the end-user experience, see [Snap your windows](https://support.microsoft.com/windows/snap-your-windows-885a9b1e-a983-a3b1-16cd-c531795e6241).
 
   You can also add Snap Layouts to apps your organization creates. For more information, see [Support snap layouts for desktop apps on Windows 11](/windows/apps/desktop/modernize/apply-snap-layout-menu).
 
@@ -107,13 +107,13 @@ For more information on the security features you can configure, manage, and enf
 
   Using policy, you can deploy your customized Start menu layout to devices in your organization. For more information, see [Customize the Start menu layout on Windows 11](/windows/configuration/customize-start-menu-layout-windows-11).
 
-  Users can manage some Start menu features using the **Settings** app > **Personalization**. For more information on the end user experience, see [See what's on the Start menu](https://support.microsoft.com/windows/see-what-s-on-the-start-menu-a8ccb400-ad49-962b-d2b1-93f453785a13).
+  Users can manage some Start menu features using the **Settings** app > **Personalization**. For more information on the end-user experience, see [See what's on the Start menu](https://support.microsoft.com/windows/see-what-s-on-the-start-menu-a8ccb400-ad49-962b-d2b1-93f453785a13).
 
 - **Taskbar**: You can also pin (and unpin) apps on the Taskbar. For example, you can pin commonly used apps in your organization, such as Outlook, Microsoft Teams, apps your organization creates, and more.
 
   Using policy, you can deploy your customized Taskbar to devices in your organization. For more information, see [Customize the Taskbar on Windows 11](/windows/configuration/customize-taskbar-windows-11).
 
-  Users can manage some Taskbar features using the **Settings** app > **Personalization**. For more information on the end user experience, see:
+  Users can manage some Taskbar features using the **Settings** app > **Personalization**. For more information on the end-user experience, see:
 
   - [Customize the taskbar notification area](https://support.microsoft.com/windows/customize-the-taskbar-notification-area-e159e8d2-9ac5-b2bd-61c5-bb63c1d437c3)
   - [Pin apps and folders to the desktop or taskbar](https://support.microsoft.com/windows/pin-apps-and-folders-to-the-desktop-or-taskbar-f3c749fb-e298-4cf1-adda-7fd635df6bb0)
@@ -124,7 +124,7 @@ For more information on the security features you can configure, manage, and enf
 
   You can enable/disable this feature using the `Computer Configuration\Administrative Templates\Windows Components\widgets` Group Policy. You can also deploy a customized Taskbar to devices in your organization. For more information, see [Customize the Taskbar on Windows 11](/windows/configuration/customize-taskbar-windows-11).
 
-  For information on the end user experience, see [Stay up to date with widgets](https://support.microsoft.com/windows/stay-up-to-date-with-widgets-7ba79aaa-dac6-4687-b460-ad16a06be6e4).
+  For information on the end-user experience, see [Stay up to date with widgets](https://support.microsoft.com/windows/stay-up-to-date-with-widgets-7ba79aaa-dac6-4687-b460-ad16a06be6e4).
 
 - **Virtual desktops**: On the Taskbar, you can select the Desktops icon to create a new desktop:
 
@@ -134,7 +134,7 @@ For more information on the security features you can configure, manage, and enf
 
   Using policy, you can deploy a customized Taskbar to devices in your organization. For more information, see [Customize the Taskbar on Windows 11](/windows/configuration/customize-taskbar-windows-11).
 
-  Users can manage some desktop features using **Settings** app > **System** > **Multitasking**. For more information on the end user experience, see [Multiple desktops in Windows](https://support.microsoft.com/windows/multiple-desktops-in-windows-11-36f52e38-5b4a-557b-2ff9-e1a60c976434).
+  Users can manage some desktop features using **Settings** app > **System** > **Multitasking**. For more information on the end-user experience, see [Multiple desktops in Windows](https://support.microsoft.com/windows/multiple-desktops-in-windows-11-36f52e38-5b4a-557b-2ff9-e1a60c976434).
 
 ## Use your same apps, improved
 
@@ -160,7 +160,7 @@ For more information on the security features you can configure, manage, and enf
 
   Users can also search for the Terminal app, right-select the app, and pin the app to the Start menu and taskbar.  
 
-- The **Microsoft Store** has a new look, and includes more public and retail apps. For more information on the end user experience, see:
+- The **Microsoft Store** has a new look, and includes more public and retail apps. For more information on the end-user experience, see:
 
   - [Get updates for apps and games in Microsoft Store](https://support.microsoft.com/account-billing/get-updates-for-apps-and-games-in-microsoft-store-a1fe19c0-532d-ec47-7035-d1c5a1dd464f)
   - [How to open Microsoft Store on Windows](https://support.microsoft.com/account-billing/how-to-open-microsoft-store-on-windows-10-e080b85a-7c9e-46a7-8d8b-3e9a42e32de6)
@@ -177,7 +177,7 @@ For more information on the security features you can configure, manage, and enf
 
   For more information on getting started, see [Windows client deployment resources and documentation](/windows/deployment/) and [Plan for Windows 11](windows-11-plan.md).
 
-  For more information on the end user experience, see [Ways to install Windows 11](https://support.microsoft.com/windows/e0edbbfb-cfc5-4011-868b-2ce77ac7c70e).
+  For more information on the end-user experience, see [Ways to install Windows 11](https://support.microsoft.com/windows/e0edbbfb-cfc5-4011-868b-2ce77ac7c70e).
 
 - **Windows Autopilot**: If you're purchasing new devices, you can use Windows Autopilot to set up and pre-configure the devices. When users get the device, they sign in with their organization account (`user@contoso.com`). In the background, Autopilot gets them ready for use, and deploys any apps or policies you set. You can also use Windows Autopilot to reset, repurpose, and recover devices. Autopilot offers zero touch deployment for admins.
 
@@ -197,7 +197,7 @@ For more information on the security features you can configure, manage, and enf
 
   For more information, see [Delivery Optimization for Windows updates](/windows/deployment/update/waas-delivery-optimization).
 
-  For more information on the end user experience, see:
+  For more information on the end-user experience, see:
 
   - [Installation & updates](https://support.microsoft.com/office/installation-updates-2f9c1819-310d-48a7-ac12-25191269903c#PickTab=Windows_11)
   - [Manage updates in Windows](https://support.microsoft.com/windows/manage-updates-in-windows-643e9ea7-3cf6-7da6-a25c-95d4f7f099fe)
