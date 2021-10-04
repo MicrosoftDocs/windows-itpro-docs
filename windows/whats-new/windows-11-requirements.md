@@ -89,5 +89,5 @@ Some features in Windows 11 have requirements beyond those listed above. See the
 ## See also
 
 [Windows minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)<br>
-[Windows 11 overview](windows-11.md)
+[What's new in Windows 11 overview](windows-11-whats-new.md)
 

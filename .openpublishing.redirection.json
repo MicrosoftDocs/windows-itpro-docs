@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "windows/whats-new/windows-11.md",
+      "redirect_url": "/windows/whats-new/windows-11-whats-new",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "windows/configuration/use-json-customize-start-menu-windows.md",
       "redirect_url": "/windows/configuration/customize-start-menu-layout-windows-11",
       "redirect_document_id": false  
