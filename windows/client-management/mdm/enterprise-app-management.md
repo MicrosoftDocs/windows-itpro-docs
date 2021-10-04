@@ -512,9 +512,9 @@ When an app installation is completed, a Windows notification is sent. You can a
 
 -   Status - indicates the status of app installation.
     -   NOT\_INSTALLED (0) - The node was added, but the execution was not completed.
-    -   INSTALLING (1) - Execution has started, but the deployment has not completed. If the deployment completes regardless of suceess this value is updated.
+    -   INSTALLING (1) - Execution has started, but the deployment has not completed. If the deployment completes regardless of success this value is updated.
     -   FAILED (2) - Installation failed. The details of the error can be found under LastError and LastErrorDescription.
-    -   INSTALLED (3) - Once an install is successful this node is cleaned up, however in the event the clean up actio has not completed, this state may briefly appear.
+    -   INSTALLED (3) - Once an install is successful this node is cleaned up, however in the event the clean up action has not completed, this state may briefly appear.
 -   LastError - This is the last error reported by the app deployment server.
 -   LastErrorDescription - Describes the last error reported by the app deployment server.
 -   Status - This is an integer that indicates the progress of the app installation. In cases of an https location, this shows the estimated download progress.
@@ -576,7 +576,7 @@ Here is an example of an alert.
 
 For user-based installation, use the ./User path and for provisioning of apps, use the ./Device path.
 
-The Data field value of 0 (zero) indicates sucess, otherwise it is an error code. If there is a failure, you can get more details from the AppInstallation node.
+The Data field value of 0 (zero) indicates success, otherwise it is an error code. If there is a failure, you can get more details from the AppInstallation node.
 
 > [!NOTE]
 > At this time, the alert for Store app installation is not yet available.
@@ -590,7 +590,7 @@ You can uninstall apps from users from Windows 10 devices. To uninstall an app,
 -   nonStore - These apps that were not acquired from the Microsoft Store.
 -   System - These apps are part of the OS. You cannot uninstall these apps.
 
-To uninstall an app, you delete it under the origin node, package family name, and package full name. To uninstall a XAP, use the product ID in place of the package family nane and package full name.
+To uninstall an app, you delete it under the origin node, package family name, and package full name. To uninstall a XAP, use the product ID in place of the package family name and package full name.
 
 Here is an example for uninstalling all versions of an app for a user.
 
