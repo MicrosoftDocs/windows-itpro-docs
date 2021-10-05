@@ -62,8 +62,8 @@ This article shows you how to create the XML file, add apps to the XML, and depl
       <CustomTaskbarLayoutCollection>
         <defaultlayout:TaskbarLayout>
           <taskbar:TaskbarPinList>
-            <taskbar:UWA AppUserModelID="Microsoft.Windows.Explorer"/>
-            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Windows System\Command Prompt.lnk"/>
+            <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer" />
+            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk" />
           </taskbar:TaskbarPinList>
         </defaultlayout:TaskbarLayout>
      </CustomTaskbarLayoutCollection>
@@ -102,25 +102,25 @@ This article shows you how to create the XML file, add apps to the XML, and depl
       <CustomTaskbarLayoutCollection PinListPlacement="Replace">
         <defaultlayout:TaskbarLayout region="US|UK">
           <taskbar:TaskbarPinList >
-            <taskbar:UWA AppUserModelID="MSEdge"/>
-            <taskbar:UWA AppUserModelID="Microsoft.Windows.Explorer"/>
-            <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
-            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Windows System\Command Prompt.lnk"/>
+            <taskbar:DesktopApp DesktopApplicationID="MSEdge"/>
+            <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer"/>
+            <taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.WINWORD.EXE.15" />
+            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk"/>
           </taskbar:TaskbarPinList>
         </defaultlayout:TaskbarLayout>
         <defaultlayout:TaskbarLayout region="DE|FR">
           <taskbar:TaskbarPinList>
-            <taskbar:UWA AppUserModelID="Microsoft.Windows.Explorer"/>
-            <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
-            <taskbar:UWA AppUserModelID="Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel" />
-            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Windows System\Command Prompt.lnk"/>
+            <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer"/>
+            <taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.WINWORD.EXE.15" />
+            <taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.EXCEL.EXE.15" />
+            <taskbar:UWA AppUserModelID="Microsoft.WindowsTerminal_8wekyb3d8bbwe!App" />
           </taskbar:TaskbarPinList>
         </defaultlayout:TaskbarLayout>
         <defaultlayout:TaskbarLayout>
           <taskbar:TaskbarPinList>
-            <taskbar:UWA AppUserModelID="Microsoft.Windows.Explorer"/>
-            <taskbar:UWA AppUserModelID="Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word" />
-            <taskbar:DesktopApp DesktopApplicationLinkPath="%APPDATA%\Microsoft\Windows\Start Menu\Programs\Windows System\Command Prompt.lnk"/>
+            <taskbar:DesktopApp DesktopApplicationID="Microsoft.Windows.Explorer"/>
+            <taskbar:DesktopApp DesktopApplicationID="Microsoft.Office.WINWORD.EXE.15" />
+            <taskbar:UWA AppUserModelID="Microsoft.WindowsTerminal_8wekyb3d8bbwe!App" />
           </taskbar:TaskbarPinList>
         </defaultlayout:TaskbarLayout>
       </CustomTaskbarLayoutCollection>

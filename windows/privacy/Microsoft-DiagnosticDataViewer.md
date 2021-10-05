@@ -21,7 +21,8 @@ ms.reviewer:
 
 **Applies to**
 
--   Windows 10, version 1803 and newer
+-   Windows 11
+-   Windows 10, version 1803 and later
 -   Windows Server, version 1803
 -   Windows Server 2019
 
