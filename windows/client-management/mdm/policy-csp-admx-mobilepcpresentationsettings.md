@@ -13,8 +13,6 @@ manager: dansimp
 ---
 
 # Policy CSP - ADMX_MobilePCPresentationSettings
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
 
 <hr/>
 
@@ -23,17 +21,19 @@ manager: dansimp
 
 <dl>
   <dd>
-    <a href="#admx-mobilepcpresentationsettings-presentationsettingsenable_1"></a>ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1</a>
+    <a href="#admx-mobilepcpresentationsettings-presentationsettingsenable_1">ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1</a>
   </dd>
   <dd>
-    <a href="#admx-mobilepcpresentationsettings-presentationsettingsenable_2"></a>ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_2</a>
+    <a href="#admx-mobilepcpresentationsettings-presentationsettingsenable_2">ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_2</a>
   </dd>
 </dl>
 
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-mobilepcpresentationsettings-presentationsettingsenable_1"></a>**ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1**  
+
+<a href="" id="admx-mobilepcpresentationsettings-presentationsettingsenable_1"></a>**ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1**
+
 
 <!--SupportedSKUs-->
 <table>
