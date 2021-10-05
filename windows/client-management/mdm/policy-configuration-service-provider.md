@@ -213,6 +213,23 @@ The following diagram shows the Policy configuration service provider in tree fo
   </dd>
 </dl>
 
+### ADMX_AdmPwd policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-admpwd.md#admx-admpwd-pol_admpwd_dontallowpwdexpirationbehindpolicy" id="admx-admpwd-pol_admpwd_dontallowpwdexpirationbehindpolicy">ADMX_AdmPwd/POL_AdmPwd_DontAllowPwdExpirationBehindPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-admpwd.md#admx-admpwd-pol_admpwd_enabled" id="admx-admpwd-pol_admpwd_enabled">ADMX_AdmPwd/POL_AdmPwd_Enabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-admpwd.md#admx-admpwd-pol_admpwd_adminname" id="admx-admpwd-pol_admpwd_adminname">ADMX_AdmPwd/POL_AdmPwd_AdminName</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-admpwd.md#admx-admpwd-pol_admpwd" id="admx-admpwd-pol_admpwd">ADMX_AdmPwd/POL_AdmPwd</a>
+  </dd>
+<dl>
+
 ### ADMX_AppCompat policies
 
 <dl>

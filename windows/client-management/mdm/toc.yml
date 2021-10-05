@@ -407,6 +407,8 @@ items:
               href: policy-csp-admx-activexinstallservice.md
             - name: ADMX_AddRemovePrograms
               href: policy-csp-admx-addremoveprograms.md
+            - name: ADMX_AdmPwd
+              href: policy-csp-admx-admpwd.md  
             - name: ADMX_AppCompat
               href: policy-csp-admx-appcompat.md
             - name: ADMX_AppxPackageManager
