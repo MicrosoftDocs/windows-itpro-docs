@@ -3623,6 +3623,22 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 </dl>
 
 ### ADMX_ShellCommandPromptRegEditTools policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disallowapps" id="admx-shellcommandpromptregedittools-disallowapps">ADMX_ShellCommandPromptRegEditTools/DisallowApps</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disableregedit" id="admx-shellcommandpromptregedittools-disableregedit">ADMX_ShellCommandPromptRegEditTools/DisableRegedit</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disablecmd" id="admx-shellcommandpromptregedittools-disablecmd">ADMX_ShellCommandPromptRegEditTools/DisableCMD</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-restrictapps" id="admx-shellcommandpromptregedittools-restrictapps">ADMX_ShellCommandPromptRegEditTools/RestrictApps</a>
+  </dd>
+<dl>
+
 ### ADMX_Smartcard policies
 
 <dl>
