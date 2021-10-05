@@ -25,12 +25,12 @@ ms.topic: article
 The simplest path to upgrade PCs that are currently running an earlier version of Windows client to Windows 11 is through an in-place upgrade. 
 
 > [!TIP]
-> In-place upgrade is the preferred method to use when migrating from Windows 10 to a later release of Windows 10, and is also a preferred method for upgrading from Windows 7, 8.1, or 10 to Windows 11, if you do not plan to significantly change the device's configuration or applications. MDT includes an in-place upgrade task sequence template that makes the process really simple. 
+> In-place upgrade is the preferred method to use when migrating to a newer version of the same OS, or upgrading to a new OS. This is especially true when you do not plan to significantly change the device's configuration or applications. MDT includes an in-place upgrade task sequence template that makes the process really simple. 
 
 In-place upgrade differs from [computer refresh](refresh-a-windows-10-computer-with-windows-11.md) in that you cannot use a custom image to perform the in-place upgrade. In this article we will add a default Windows 11 image to the production deployment share specifically to perform an in-place upgrade.
 
 > [!IMPORTANT]
-> The upgrade process will be blocked if the device does not meet [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements). This will be displayed 
+> Windows 11 will block the upgrade process on devices that do not meet [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements). Be sure to verify that your device meets these requirements before attempting to upgrade to Windows 11.
 
 Three computers are used in this topic: DC01, MDT01, and PC0002. 
 
@@ -93,6 +93,22 @@ On **MDT01**:
     -   Specify Product Key: Do not specify a product key at this time
     -   Organization: Contoso
     -   Admin Password: Do not specify an Administrator password at this time
+
+### Specify additional command line options
+
+Before running the upgrade task sequence, an additional step is required if you are upgrading to Windows 11.  This step is not necessary if you are upgrading to Windows 10.
+
+The **/EULA accept** command line option is required starting with Windows 11. For more information, see [Windows Setup command-line options](/windows-hardware/manufacture/desktop/windows-setup-command-line-options#eula). To add this command line option:
+
+1. In the Windows 11 Enterprise x64 Upgrade task sequence that you just created, in the Preparation section, click **Add** > **General** > **Set Task Sequence Variable** and provide the following values:
+   - Name: WindowsUpgradeAdditionalOptions
+   - Task Sequence Variable: WindowsUpgradeAdditionalOptions
+   - Value: /EULA accept
+2. Make the Set Task Sequence Variable step the first step in the Preparation phase by moving it up above the other steps.  See the following example:
+
+![Specify EULA](../images/windowsupgradeadditionaloptions.png)
+
+Using the WindowsUpgradeAdditionalOptions variable to set command line options.
 
 ## Perform the Windows 11 upgrade
 
