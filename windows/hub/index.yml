@@ -54,7 +54,7 @@ productDirectory:
       imageSrc: /windows/resources/images/winlogo.svg
       summary: Get more information on the edition that's right for your organization
       url: https://www.microsoft.com/windows/business/compare-windows-11
-    - title: FAQ: Upgrade to Windows 11
+    - title: FAQ - Upgrade to Windows 11
       imageSrc: /windows/resources/images/winlogo.svg
       summary: See some common questions and answers when upgrading to Windows 11
       url: https://support.microsoft.com/windows/upgrade-to-windows-11-faq-fb6206a2-1a0f-448a-80f1-8668ee5b2bf9
