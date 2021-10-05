@@ -19074,7 +19074,24 @@
       "source_path": "windows/deployment/update/change-history-for-update-windows-10.md",
       "redirect_url": "/windows/deployment/deploy-whats-new",
       "redirect_document_id": true
-    }    
+    }, 
+    {
+      "source_path": "windows/client-management/mdm/policy-csp-admx-windowsanytimeupgrade.md",
+      "redirect_url": "/windows/client-management/mdm/policy-csp-admx-wordwheel",
+      "redirect_document_id": true
+        
+    }, 
+    {
+    "source_path": "windows/client-management/mdm/policy-csp-admx-windowsfileprotection.md",
+    "redirect_url": "/windows/client-management/mdm/policy-csp-admx-mobilepcpresentationsettings",
+    "redirect_document_id": true
+  
+    }, 
+    {
+  "source_path": "windows/client-management/mdm/policy-csp-admx-skydrive.md",
+  "redirect_url": "/windows/client-management/mdm/policy-csp-admx-shellcommandpromptregedittools",
+  "redirect_document_id": true
+    }
 
 	]
 }
