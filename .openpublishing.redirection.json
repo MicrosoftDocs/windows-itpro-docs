@@ -18964,6 +18964,46 @@
       "source_path": "windows/security/identity-protection/change-history-for-access-protection.md",
       "redirect_url": "/windows/security/",
       "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-deployment",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/create-a-windows-11-reference-image",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/deploy-a-windows-11-image-using-mdt",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/refresh-a-windows-10-computer-with-windows-11",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/replace-a-windows-10-computer-with-a-windows-11-computer",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/simulate-a-windows-11-deployment-in-a-test-environment",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/upgrade-to-windows-11-with-the-microsoft-deployment-toolkit",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-10-deployment-information.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-11-deployment-information",
+      "redirect_document_id": false
     },
     {
       "source_path": "windows/deploy-windows-cm/upgrade-to-windows-with-configuraton-manager.md",
