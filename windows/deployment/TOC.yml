@@ -116,7 +116,7 @@
                 - name: Replace a device
                   href: deploy-windows-cm/replace-a-windows-7-client-with-windows-10-using-configuration-manager.md
                 - name: In-place upgrade
-                  href: deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md
+                  href: deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md
             - name: Deploy Windows client with MDT
               items:
                 - name: Deploy to a new device

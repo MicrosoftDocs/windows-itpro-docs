@@ -17,10 +17,15 @@ ms.topic: article
 
 # Manually Configuring Devices for Update Compliance
 
+**Applies to**
+
+- Windows 10
+- Windows 11
+
 > [!NOTE]
 > As of May 10, 2021, a new policy is required to use Update Compliance: "Allow Update Compliance Processing." For more details, see the Mobile Device Management policies and Group policies tables.
 
-There are a number of requirements to consider when manually configuring devices for Update Compliance. These can potentially change with newer versions of Windows 10. The [Update Compliance Configuration Script](update-compliance-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
+There are a number of requirements to consider when manually configuring devices for Update Compliance. These can potentially change with newer versions of Windows client. The [Update Compliance Configuration Script](update-compliance-configuration-script.md) will be updated when any configuration requirements change so only a redeployment of the script will be required.
 
 The requirements are separated into different categories:
 
