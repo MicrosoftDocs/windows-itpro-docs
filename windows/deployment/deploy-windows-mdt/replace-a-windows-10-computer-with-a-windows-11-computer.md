@@ -1,13 +1,13 @@
 ---
-title: Replace a Windows 7 computer with a Windows 10 computer (Windows 10)
-description: In this article, you will learn how to replace a Windows 7 device with a Windows 10 device.
+title: Replace a Windows 10 computer with a Windows 11 computer (Windows 11)
+description: In this article, you will learn how to replace a Windows 10 device with a Windows 11 device.
 ms.custom: seo-marvel-apr2020
 ms.assetid: acf091c9-f8f4-4131-9845-625691c09a2a
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, deployment, replace
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
@@ -17,18 +17,19 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Replace a Windows 7 computer with a Windows 10 computer
+# Replace a Windows 10 computer with a Windows 11 computer
 
 **Applies to**
--   Windows 10
+- Windows 10
+- Windows 11
 
-A computer replace scenario for Windows 10 is quite similar to a computer refresh for Windows 10. However, because you are replacing a device, you cannot store the backup on the old computer. Instead you need to store the backup to a location where the new computer can read it. The User State Migration Tool (USMT) will be used to back up and restore data and settings. 
+A computer replace scenario for Windows 11 is quite similar to a computer refresh for Windows 11. However, because you are replacing a device, you cannot store the backup on the old computer. Instead you need to store the backup to a location where the new computer can read it. The User State Migration Tool (USMT) will be used to back up and restore data and settings. 
 
 For the purposes of this topic, we will use four computers: DC01, MDT01, PC0002, and PC0007. 
 - DC01 is a domain controller for the contoso.com domain.
 - MDT01 is domain member server that hosts your deployment share.
-- PC0002 is an old computer running Windows 7 SP1 that will be replaced by PC0007. 
-- PC0007 is a new computer will have the Windows 10 OS installed prior to data from PC0002 being migrated. Both PC0002 and PC0007 are members of the contoso.com domain.
+- PC0002 is an old computer running Windows 10 that will be replaced by PC0007. 
+- PC0007 is a new computer will have the Windows 11 OS installed prior to data from PC0002 being migrated. Both PC0002 and PC0007 are members of the contoso.com domain.
 
 For more details on the setup for this topic, please see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
@@ -96,8 +97,8 @@ On **PC0002**:
         * Specify where to save your data and settings: Specify a location
         * Location: \\\\MDT01\\MigData$\\PC0002
         
-        >[!NOTE]
-        >If you are replacing the computer at a remote site you should create the MigData folder on MDT02 and use that share instead.
+        > [!NOTE]
+        > If you are replacing the computer at a remote site you should create the MigData folder on MDT02 and use that share instead.
          
     2.  Specify where to save a complete computer backup: Do not back up the existing computer
 
@@ -155,11 +156,12 @@ You can view progress of the process by clicking the Monitoring node in the Depl
 
 ![Monitor progress.](../images/mdt-replace.png)
 
+
 ## Related topics
 
 [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
-[Create a Windows 10 reference image](create-a-windows-10-reference-image.md)<br>
-[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)<br>
-[Build a distributed environment for Windows 10 deployment](build-a-distributed-environment-for-windows-10-deployment.md)<br>
-[Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)<br>
+[Create a Windows 11 reference image](create-a-windows-11-reference-image.md)<br>
+[Deploy a Windows 11 image using MDT](deploy-a-windows-11-image-using-mdt.md)<br>
+[Build a distributed environment for Windows 11 deployment](build-a-distributed-environment-for-windows-deployment.md)<br>
+[Refresh a Windows 10 computer with Windows 11](refresh-a-windows-10-computer-with-windows-11.md)<br>
 [Configure MDT settings](configure-mdt-settings.md)
