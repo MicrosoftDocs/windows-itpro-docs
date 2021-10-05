@@ -50,10 +50,10 @@ productDirectory:
       imageSrc: /windows/resources/images/winlogo.svg
       summary: See the system requirements for Windows 11, including running Windows 11 on a virtual machine
       url: /windows/whats-new/windows-11-requirements
-    - title: Compare Windows 11 Editions
+    - title: Learn more about Windows 11 Enterprise
       imageSrc: /windows/resources/images/winlogo.svg
-      summary: Get more information on the edition that's right for your organization
-      url: https://www.microsoft.com/windows/business/compare-windows-11
+      summary: Get more information on the features, security, and licensing plans designed for organizations
+      url: https://www.microsoft.com/microsoft-365/windows/windows-11-enterprise
     - title: FAQ - Upgrade to Windows 11
       imageSrc: /windows/resources/images/winlogo.svg
       summary: See some common questions and answers when upgrading to Windows 11
