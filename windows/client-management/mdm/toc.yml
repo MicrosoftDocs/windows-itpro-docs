@@ -609,6 +609,8 @@ items:
               href: policy-csp-admx-sharedfolders.md
             - name: ADMX_Sharing
               href: policy-csp-admx-sharing.md
+            - name: ADMX_ShellCommandPromptRegEditTools
+              href: policy-csp-admx-shellcommandpromptregedittools.md  
             - name: ADMX_Smartcard
               href: policy-csp-admx-smartcard.md
             - name: ADMX_Snmp

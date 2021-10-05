@@ -3622,7 +3622,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-
+### ADMX_ShellCommandPromptRegEditTools policies
 ### ADMX_Smartcard policies
 
 <dl>
