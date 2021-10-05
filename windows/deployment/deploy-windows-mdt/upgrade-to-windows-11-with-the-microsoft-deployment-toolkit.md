@@ -30,7 +30,7 @@ The simplest path to upgrade PCs that are currently running an earlier version o
 In-place upgrade differs from [computer refresh](refresh-a-windows-10-computer-with-windows-11.md) in that you cannot use a custom image to perform the in-place upgrade. In this article we will add a default Windows 11 image to the production deployment share specifically to perform an in-place upgrade.
 
 > [!IMPORTANT]
-> Windows 11 will block the upgrade process on devices that do not meet [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements). Be sure to verify that your device meets these requirements before attempting to upgrade to Windows 11.
+> Windows 11 setup will block the upgrade process on devices that do not meet [Windows 11 hardware requirements](/windows/whats-new/windows-11-requirements). Be sure to verify that your device meets these requirements before attempting to upgrade to Windows 11.
 
 Three computers are used in this topic: DC01, MDT01, and PC0002. 
 
