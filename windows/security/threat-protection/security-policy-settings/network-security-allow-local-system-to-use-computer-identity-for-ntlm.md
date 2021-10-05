@@ -1,5 +1,5 @@
 ---
-title: Network security Allow Local System to use computer identity for NTLM (Windows 10)
+title: "Network security: Allow Local System to use computer identity for NTLM (Windows 10)"
 description: Location, values, policy management, and security considerations for the policy setting, Network security Allow Local System to use computer identity for NTLM.
 ms.assetid: c46a658d-b7a4-4139-b7ea-b9268c240053
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 10/04/2021
 ms.technology: mde
 ---
 
