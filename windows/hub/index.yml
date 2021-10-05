@@ -148,7 +148,7 @@ conceptualContent:
           itemType: how-to-guide
           text: Keep removed apps from returning during an update
         - url:  https://blogs.windows.com/windowsdeveloper/2021/10/04/developing-for-windows-11/
-          itemType: blog
+          itemType: overview
           text: Blog - Develop apps for Windows 11
 
   # Card
