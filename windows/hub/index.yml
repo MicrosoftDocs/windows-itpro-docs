@@ -32,10 +32,9 @@ highlightedContent:
       itemType: overview
       url: /windows/release-health/
     # Card
-    - title: Learn more about Hybrid Work
+    - title: Empower your hybrid workforce
       itemType: overview
-      url: https://www.microsoft.com/hybridwork/
-
+      url: https://www.microsoft.com/microsoft-365/blog/2021/10/04/empower-your-hybrid-workforce-today-with-windows-11/
 
 # productDirectory section (optional)
 productDirectory:
@@ -190,23 +189,21 @@ additionalContent:
     - title: More Windows resources # < 60 chars (optional)
       items:
         # Card
-        - title: Windows 11 product site
-          summary: Find out more about Windows 11 for enterprise and Windows 11 for business
+        - title: Windows product site
+          summary: Find out how Windows enables your business to do more
           url: https://www.microsoft.com/microsoft-365/windows
+        - title: "Windows 11: A new era for the PC begins today"
+          summary: Blog article that describes how Windows 11 empowers you to produce and inspires you to create
+          url: https://blogs.windows.com/windowsexperience/2021/10/04/windows-11-a-new-era-for-the-pc-begins-today/
+        - title: Windows IT Pro blogs
+          summary: The latest Windows blog articles for the IT Pro 
+          url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog
         - title: Windows blogs
           summary: Keep up with the latest news about Windows
           url: https://blogs.windows.com/
-        - title: "Planning for Windows 11: best practices for organizations"
-          summary: Blog article with best practices to help you plan for Windows 11
-          url: https://aka.ms/Windows/blog002
-        - title: Windows 11 security explained
-          summary: Blog article to learn how Windows 11 enables security by design from the chip to the cloud
-          url: https://aka.ms/Windows/blog010
-        # Card
         - title: Participate in the Tech Community
           summary: Learn how to be part of the Windows Tech Community
           url: https://techcommunity.microsoft.com/t5/windows/ct-p/Windows10
-        # Card
         - title: Ask the community
           summary: Get help, and help others
           url: https://answers.microsoft.com/windows/forum
@@ -221,6 +218,10 @@ additionalContent:
               url: /mem/endpoint-manager-overview
             - text: Getting started with Microsoft Endpoint Manager
               url: /mem/endpoint-manager-getting-started
+            - text: Microsoft Endpoint Manager simplifies upgrades to Windows 11
+              url: https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/endpoint-manager-simplifies-upgrades-to-windows-11/ba-p/2771886
+            - text: Understanding readiness for Windows 11 with Microsoft Endpoint Manager
+              url: https://techcommunity.microsoft.com/t5/microsoft-endpoint-manager-blog/understanding-readiness-for-windows-11-with-microsoft-endpoint/ba-p/2770866
             - text: Microsoft Endpoint Manager blog
               url: https://aka.ms/memblog
         - title: Windows 365
@@ -229,8 +230,11 @@ additionalContent:
               url: /windows-365
             - text: What is Windows 365
               url: /windows-365/overview
+            - text: Windows 365 Enterprise now supports Windows 11
+              url: https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-365-enterprise-now-supports-windows-11/ba-p/2810334              
             - text: Windows 365 blog
               url: https://www.microsoft.com/microsoft-365/blog/
+
         - title: Windows Server
           links:
             - text: Windows Server documentation
