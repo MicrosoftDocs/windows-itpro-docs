@@ -126,12 +126,6 @@ On **PC0002**:
 
 <br>
 
-![upgrade2.](../images/mdt-upgrade-proc.png)
-
-<br>
-
-![upgrade3.](../images/mdt-post-upg.png)
-
 After the task sequence completes, the computer will be fully upgraded to Windows 11.
 
 ## Related topics
