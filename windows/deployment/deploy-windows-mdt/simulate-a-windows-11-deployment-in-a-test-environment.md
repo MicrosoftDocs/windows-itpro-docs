@@ -1,12 +1,12 @@
 ---
-title: Simulate a Windows 10 deployment in a test environment (Windows 10)
-description: This topic will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT.
+title: Simulate a Windows 11 deployment in a test environment (Windows 11)
+description: This topic will walk you through the process of creating a simulated environment on which to test your Windows 11 deployment using MDT.
 ms.assetid: 2de86c55-ced9-4078-b280-35e0329aea9c
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, script
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
@@ -16,7 +16,11 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Simulate a Windows 10 deployment in a test environment
+# Simulate a Windows 11 deployment in a test environment
+
+**Applies to**
+- Windows 10
+- Windows 11
 
 This topic will walk you through the process of creating a simulated environment on which to test your Windows 10 deployment using MDT. When working with advanced settings and rules, especially those like database calls, it is most efficient to be able to test the settings without having to run through a complete deployment. Luckily, MDT enables you to perform a simulated deployment by running the Gather process by itself. The simulation works best when you are using a domain-joined client.
 
@@ -25,15 +29,34 @@ This topic will walk you through the process of creating a simulated environment
 - A Windows 10 client named **PC0001** will be used to simulate deployment. The client is joined to the contoso.com domain and has access to the Internet to required download tools and scripts.
 - It is assumed that you have performed (at least) the following procedures so that you have an MDT service account and an MDT production deployment share:
   - [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md)
-  - [Create a Windows 10 reference image](create-a-windows-10-reference-image.md)
-  - [Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)
+  - [Create a Windows 11 reference image](create-a-windows-11-reference-image.md)
+  - [Deploy a Windows 11 image using MDT](deploy-a-windows-11-image-using-mdt.md)
 
 ## Simulate deployment
 
 On **PC0001**:
 
 1. Sign as **contoso\\Administrator**.
-2. Download the [sample Gather.ps1 script](/samples/browse/?redirectedfrom=TechNet-Gallery) from the TechNet gallery and copy it to a directory named **C:\MDT** on PC0001.
+2. Copy the following to a PowerShell script named gather.ps1 and copy it to a directory named **C:\MDT** on PC0001.
+
+```
+# Check for elevation
+If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
+    [Security.Principal.WindowsBuiltInRole] "Administrator"))
+{
+    Write-Warning "Oupps, you need to run this script from an elevated PowerShell prompt!`nPlease start the PowerShell prompt as an Administrator and re-run the script."
+    Write-Warning "Aborting script..."
+    Break
+}
+
+cls
+if (Test-Path -Path "C:\MININT") {Write-Host "C:\MININT exists, deleting...";Remove-Item C:\MININT -Recurse}
+cscript.exe ZTIGather.wsf /debug:true
+
+# Optional, comment out if you want the script to open the log in CMTrace
+& "C:\MDT\CMTrace" C:\MININT\SMSOSD\OSDLOGS\ZTIGather.log
+```
+
 3. Download and install the free [Microsoft System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717) on PC0001 so that you have access to the Configuration Manager Trace (cmtrace.exe) tool.
 4. Using Local Users and Groups (lusrmgr.msc), add the **contoso\\MDT\_BA** user account to the local **Administrators** group.
 5. Sign off, and then sign on to PC0001 as **contoso\\MDT\_BA**.

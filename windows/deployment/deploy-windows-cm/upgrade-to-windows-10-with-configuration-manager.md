@@ -135,8 +135,6 @@ On **PC0004**:
 ![Upgrade task sequence example 6.](../images/pc0004-f.png)<br>
 ![Upgrade task sequence example 7.](../images/pc0004-g.png)
 
-In-place upgrade with Configuration Manager
-
 ## Related topics
 
 [Windows 10 deployment scenarios](../windows-10-deployment-scenarios.md)<br>
