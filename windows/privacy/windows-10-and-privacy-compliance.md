@@ -29,7 +29,7 @@ Applies to:
 
 At Microsoft, we are committed to data privacy across all our products and services. With this guide, we provide administrators and compliance professionals with data privacy considerations for Windows.
 
-Microsoft collects data through multiple interactions with users of Windows devices. This information can contain personal data that may be used to provide, secure, and improve Windows services. To help users and organizations control the collection of personal data, Windows provides comprehensive transparency features, settings choices, controls, and support for data subject requests, all of which are detailed in this article.
+Microsoft collects data through multiple interactions with users of Windows devices. This information can contain personal data that may be used to provide, secure and improve Windows, and to provide connected experiences. To help users and organizations control the collection of personal data, Windows provides comprehensive transparency features, settings choices, controls, and support for data subject requests, all of which are detailed in this article.
 
 This information allows administrators and compliance professionals to work together to better manage personal data privacy considerations and related regulations, such as the General Data Protection Regulation (GDPR).
 
@@ -44,7 +44,7 @@ When setting up a device, a user can configure their privacy settings. Those pri
 The following table provides an overview of the Windows 10 and Windows 11 privacy settings presented during the device setup experience that involve processing personal data and where to find additional information.
 
 > [!NOTE]
-> This table is limited to the privacy settings that are most commonly avaialable when setting up a current version of Windows 10 or newer. For the full list of settings that involve data collection, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
+> This table is limited to the privacy settings that are most commonly available when setting up a current version of Windows 10 or newer. For the full list of settings that involve data collection, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
 
 | Feature/Setting | Description | Supporting Content | Privacy Statement |
 | --- | --- | --- | --- |
@@ -111,19 +111,19 @@ You can use the following articles to learn more about Autopilot and how to use 
 - [Overview of Windows Autopilot](/windows/deployment/windows-Autopilot/windows-Autopilot)
 - [Windows Autopilot deployment process](/windows/deployment/windows-Autopilot/deployment-process)
 
-#### _2.3.2 Managing connections from Windows components to Microsoft services_
+#### _2.3.2 Managing Windows connected experiences and essential services_
 
-Administrators can manage the data sent from their organization to Microsoft by configuring settings associated with the functionality provided by Windows components.
+Windows includes features that connect to the internet to provide enhanced experiences and additional capabilities. These are called connected experiences. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure.
 
-For more details, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). This topic includes the different methods available on how to configure each setting, the impact to functionality, and which versions of Windows that are applicable.
+Essential services are services in the product that connect to Microsoft to keep the product secure, up to date, performing as expected or are integral to how the product works. For example, the licensing service that confirms that you’re properly licensed to use Windows.
 
-#### _2.3.3 Managing Windows connections_
+[Windows essential services and connected experiences](essential-services-and-connected-experiences.md) provides a list of the most common Windows essential services and connected experiences.
 
-Some Windows components, apps, and related services transfer data to Microsoft network endpoints. An administrator may want to block these endpoints for their organization to meet their specific compliance objectives.
+When a connected experience is used, data is sent to and processed by Microsoft to provide that connected experience. Administrators can manage the data sent from their organization to Microsoft by configuring settings associated with the functionality provided by Windows connected experiences and essential services. For more details, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services). This topic includes the different methods available to configure each setting, the impact to functionality, and the versions of Windows that are applicable.
 
-The **Manage Windows connection endpoints** section on the left-hand navigation menu provides a list of endpoints for the latest Windows releases, along with descriptions of any functionality that would be impacted by restricting data collection.
+The article [Manage connection endpoints for Windows 10 Enterprise, version 21H1](manage-windows-21h1-endpoints.md) provides a list of endpoints to which data is transferred by Windows connected experiences for the latest Windows 10 release, along with descriptions of any functionality that would be impacted by restricting data collection.
 
-#### _2.3.4 Limited functionality baseline_
+#### _2.3.3 Limited functionality baseline_
 
 An organization may want to minimize the amount of data sent back to Microsoft or shared with Microsoft apps by managing the connections and configuring additional settings on their devices. Similar to [Windows security baselines](/windows/security/threat-protection/windows-security-baselines), Microsoft has released a limited functionality baseline focused on configuring settings to minimize the data sent back to Microsoft. However, the functionality of the device could be impacted by applying these settings. The [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md) article provides details on how to apply the baseline, along with the full list of settings covered in the baseline and the functionality that would be impacted. Administrators that don’t want to apply the baseline can still find details on how to configure each setting individually to find the right balance between data sharing and impact to functionality for their organization.
 
@@ -131,15 +131,15 @@ An organization may want to minimize the amount of data sent back to Microsoft o
 > - We recommend that you fully test any modifications to these settings before deploying them in your organization.
 > - We also recommend that if you plan to enable the Windows diagnostic data processor configuration, adjust the limited configuration baseline before deploying it to ensure the Windows diagnostic setting is not turned off.
 
-#### _2.3.5 Diagnostic data: Managing notifications for change of level at logon_
+#### _2.3.4 Diagnostic data: Managing notifications for change of level at logon_
 
 Starting with Windows 10, version 1803 and Windows 11, if an administrator modifies the diagnostic data collection setting, users are notified of this change during the initial device sign in. For example, if you configure the device to send optional diagnostic data, users will be notified the next time they sign into the device. You can disable these notifications by using the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Configure telemetry opt-in change notifications** or the MDM policy `ConfigureTelemetryOptInChangeNotification`.
 
-#### _2.3.6 Diagnostic data: Managing end user choice for changing the setting_
+#### _2.3.5 Diagnostic data: Managing end user choice for changing the setting_
 
-Windows 10, version 1803 and later and Windows 11 allows users to change their diagnostic data level to a lower setting than what their administrator has set. For example, if you have configured the device to send optional diagnostic data, a user can change the setting so that only required diagnostic data is sent by opening the Settings app in Windows. Administrators can restrict a user’s ability to change the setting by enabling the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Configure telemetry opt-in setting user interface** or the MDM policy `ConfigureTelemetryOptInSettingsUx`.
+Windows 10, version 1803 and later and Windows 11 allows users to change their diagnostic data level to a lower setting than what their administrator has set. For example, if you have configured the device to send optional diagnostic data, a user can change the setting so that only required diagnostic data is sent by opening the Settings app in Windows and navigating to **Diagnostic & feedback**. Administrators can restrict a user’s ability to change the setting by enabling the Group Policy: **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Data Collection and Preview Builds** > **Configure telemetry opt-in setting user interface** or the MDM policy `ConfigureTelemetryOptInSettingsUx`.
 
-#### _2.3.7 Diagnostic data: Managing device-based data delete_
+#### _2.3.6 Diagnostic data: Managing device-based data delete_
 
 Windows 10, version 1809 and later and Windows 11 allow a user to delete diagnostic data collected from their device by opening the Settings app in Windows and navigating to **Diagnostic & feedback** and clicking the **Delete** button under the **Delete diagnostic data** heading. An administrator can also delete diagnostic data for a device using the [Clear-WindowsDiagnosticData](/powershell/module/windowsdiagnosticdata/Clear-WindowsDiagnosticData) PowerShell cmdlet.
 
@@ -148,7 +148,7 @@ An administrator can disable a user’s ability to delete their device’s diagn
 >[!Note]
 >If the Windows diagnostic data processor configuration is enabled, the Delete diagnostic data button will be disabled and the powershell cmdlet will not delete data collected under this configuration. IT administrators can instead delete diagnostic data collected by invoking a delete request from the admin portal.
 
-#### _2.3.8 Diagnostic data: Enabling the Windows diagnostic data processor configuration_
+#### _2.3.7 Diagnostic data: Enabling the Windows diagnostic data processor configuration_
 
 **Applies to:**
 
