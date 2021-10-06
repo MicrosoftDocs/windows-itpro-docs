@@ -53,6 +53,7 @@ A good practice when using manage-bde is to determine the volume status on the t
 ```powershell
 manage-bde -status
 ```
+
 This command returns the volumes on the target, current encryption status, encryption method, and volume type (operating system or data) for each volume:
 
 ![Using manage-bde to check encryption status.](images/manage-bde-status.png)
@@ -131,11 +132,13 @@ Windows PowerShell cmdlets provide a new way for administrators to use when work
 <col width="50%" />
 <col width="50%" />
 </colgroup>
-<tbody>
-<tr class="odd">
-<th align="left"><p>Name</p></th>
-<th align="left"><p>Parameters</p></th>
+<thead>
+<tr class="header">
+<th><p>Name</p></th>
+<th><p>Parameters</p></th>
 </tr>
+</thead>
+<tbody>
 <tr class="even">
 <td align="left"><p><b>Add-BitLockerKeyProtector</b></p></td>
 <td align="left"><p>-ADAccountOrGroup</p>
