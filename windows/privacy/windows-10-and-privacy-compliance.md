@@ -71,7 +71,7 @@ Windows provides the ability to manage privacy settings through several differen
 
 ### 2.1 Privacy setting options for users
 
-Once a Windows device is set up, a user can manage data collection settings by opening the Settings app in Windows. Administrators can control privacy settings via setting policy on the device (see Section 2.2 below). If this is the case, the user will see an alert that says **Some settings are hidden or managed by your organization** when they navigate to the Settings page. In this case, the user can only change settings in accordance with the policies that the administrator has applied to the device.
+Once a Windows device is set up, a user can manage data collection settings by opening the Settings app in Windows. Administrators can control privacy settings via setting policy on the device (see Section 2.2 below). If this is the case, the user will see an alert that says **Some settings are hidden or managed by your organization** when they navigate to the settings page. In this case, the user can only change settings in accordance with the policies that the administrator has applied to the device.
 
 ### 2.2 Privacy setting controls for administrators
 
@@ -80,7 +80,7 @@ Administrators can configure and control privacy settings across their organizat
 The following table provides an overview of the privacy settings discussed earlier in this document with details on how to configure these policies. The table also provides information on what the default value would be for each of these privacy settings if you do not manage the setting by using policy and suppress the Out-of-box Experience (OOBE) during device setup. If you’re interested in minimizing data collection, we also provide the recommended value to set.
 
 > [!NOTE]
-> This is not a complete list of settings that involve managing data collection or connecting to Microsoft services. For a more detailed list, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
+> This is not a complete list of settings that involve managing data collected or connecting to connected experiences in Windows. For a more detailed list, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md).
 
 | Feature/Setting | GP/MDM Documentation | Default State if the Setup experience is suppressed | State to stop/minimize data collection |
 |---|---|---|---|
