@@ -160,9 +160,7 @@
                 - name: Manage device restarts after updates
                   href: update/waas-restart.md
                 - name: Manage additional Windows Update settings
-                  href: update/waas-wu-settings.md 
-                - name: Deploy feature updates for user-initiated installations
-                  href: update/feature-update-user-install.md        
+                  href: update/waas-wu-settings.md      
         - name: Use Windows Update for Business
           items:
             - name: What is Windows Update for Business?
