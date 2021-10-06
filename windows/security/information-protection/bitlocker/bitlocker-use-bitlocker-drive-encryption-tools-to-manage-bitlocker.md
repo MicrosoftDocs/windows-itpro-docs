@@ -133,8 +133,8 @@ Windows PowerShell cmdlets provide a new way for administrators to use when work
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p>Name</p></td>
-<td align="left"><p>Parameters</p></td>
+<th align="left"><p>Name</p></th>
+<th align="left"><p>Parameters</p></th>
 </tr>
 <tr class="even">
 <td align="left"><p><b>Add-BitLockerKeyProtector</b></p></td>
