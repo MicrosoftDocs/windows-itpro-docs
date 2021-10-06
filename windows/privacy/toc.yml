@@ -43,6 +43,8 @@
           href: manage-connections-from-windows-operating-system-components-to-microsoft-services.md
         - name: Manage connections from Windows operating system components to Microsoft services using MDM
           href: manage-connections-from-windows-operating-system-components-to-microsoft-services-using-MDM.md
+        - name: Essential services and connected experiences for Windows
+          href: essential-services-and-connected-experiences.md
         - name: Connection endpoints for Windows 11
           href: manage-windows-11-endpoints.md
         - name: Connection endpoints for Windows 10, version 21H1
