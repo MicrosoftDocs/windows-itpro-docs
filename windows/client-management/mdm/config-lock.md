@@ -42,7 +42,7 @@ After a Secured-Core PC reaches the desktop, Config lock will prevent configurat
         - DRTM
         - SMM
 
-:::image type="content" source="images/flow_configlock.png" alt-text="flow":::
+:::image type="content" source="images/flow_configlock.png" alt-text="config lock flow.":::
 
 IT Admin scenario:
 
@@ -67,19 +67,8 @@ Config Lock will be available for all Windows Professional and Enterprise Editio
 
 ## Enabling
 
-Config Lock isn't enabled by default (or turned on by the OS during boot). Rather, an IT Admin must intentionally turn it ON.
+Config Lock isn't enabled by default (or turned on by the OS during boot). Rather, an IT Admin must intentionally turn it on.
  
-Config Lock is controlled by the presence of the Secured-Core PC Device Identifier (the “BuiltAsSecuredCorePC” UEFI variable) inserted on the device by the OEM during initial device manufacturing. Config Lock can be enabled if the ByteArray value of this identifier is set to “1” and IT admin pushes the MDM policy to turn Config Lock ON. If it is “0” or the variable isn't present at all, Config Lock cannot be enabled.
-
-> [!NOTE]
-> BuiltAsSecuredCorePC actually accepts ByteArray values of 0-9, and any value from 1-9 will indicate Secured-Core PC to the Config Lock feature.  While we recommend “1” for consistency, OEMs may optionally use any other value up to 9 for internal versioning reasons, or other purposes.  (Technically, any value from 1-255 should trigger Config Lock, since BuiltAsSecuredCorePC is a byte.)
-
-The UEFI variable can be set however an OEM likes, but one option is to use the Set-UEFIVariable command from [PowerShell Gallery | UEFIv2 2.3](https://www.powershellgallery.com/packages/UEFIv2/2.3), per the following syntax:
-
-```powershell
-powershell.exe -ExecutionPolicy Bypass {Import-Module .\UEFIv2.psd1 ;  Set-UEFIVariable -VariableName BuiltAsSecuredCorePC -Namespace '{77fa9abd-0359-4d32-bd60-28f4e78f784b}' -ByteArray @(01) }. common ..]
-```
-
 The steps to turn on Config Lock using Microsoft Endpoint Manager (MEM) are as follows:
 
 1. Ensure that the device to turn on Config Lock is enrolled in MEM.
@@ -116,11 +105,7 @@ Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally m
  
 ## FAQ
 
-**#1. Can an IT Admin disable Config Lock ?** </br>
+**Can an IT Admin disable Config Lock ?** </br>
 	Yes. IT Admin can use MDM to turn off Config Lock.
-
-**#2. Does the Secured-Core PC Device Identifier UEFI variable (BuiltAsSecuredCorePC) value matter after it’s been read by the OA3 tool in the OEM factory?** </br>
-    Yes. Config Lock will always read this UEFI variable to know whether it pertains to a device or not. So, changing the variable changes the Config Lock even after the device has left the OEM factory.
-
-**#3. Could an end-user run the BuiltAsSecuredCorePC PowerShell command to disable Config Lock?** </br>
+**Could an end-user run the BuiltAsSecuredCorePC PowerShell command to disable Config Lock?** </br>
 	The PowerShell script is accessible, but the BuiltAsSecuredCorePC becomes read-only after boot, so the command will fail when run from the OS.
