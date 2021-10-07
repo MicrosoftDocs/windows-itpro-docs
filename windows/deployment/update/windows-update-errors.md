@@ -173,7 +173,7 @@ The following table provides information about common errors you might run into 
 
 | Message | Description | Mitigation |
 |---------|-------------|------------|
-| ERROR_SXS_ASSEMBLY_MISSING; The referenced assembly could not be found. | Typically, a component store corruption caused when a component is in a partially installed state. | Repair the component store with **Dism RestoreHealth command** or manually repair it with the payload from the partially installed component. From an elevated command prompt and run these commands:<br>*DISM /ONLINE /CLEANUP-IMAGE /SCANHEALTH*<br>*DISM /ONLINE /CLEANUP-IMAGE /CHECKHEALT*<br>*DISM /ONLINE /CLEANUP-IMAGE /RESTOREHEALTH*<br>*Sfc /Scannow*<br> Restart the device. | 
+| ERROR_SXS_ASSEMBLY_MISSING; The referenced assembly could not be found. | Typically, a component store corruption caused when a component is in a partially installed state. | Repair the component store with **Dism RestoreHealth command** or manually repair it with the payload from the partially installed component. From an elevated command prompt and run these commands:<br>*DISM /ONLINE /CLEANUP-IMAGE /SCANHEALTH*<br>*DISM /ONLINE /CLEANUP-IMAGE /CHECKHEALTH*<br>*DISM /ONLINE /CLEANUP-IMAGE /RESTOREHEALTH*<br>*Sfc /Scannow*<br> Restart the device. | 
 
 ## 0x8007371b
 
