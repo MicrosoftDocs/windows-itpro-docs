@@ -46,7 +46,7 @@ For information about tools to evaluate readiness, see [Determine eligibility](w
 
 ## Operating system requirements
 
-For the best Windows 11 upgrade experience, eligible devices should be running Windows 10, version 20H1 or later.
+For the best Windows 11 upgrade experience, eligible devices should be running Windows 10, version 2004 or later.
 
 > [!NOTE]
 > S mode is only supported on the Home edition of Windows 11.
