@@ -122,5 +122,5 @@ Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally m
 **#2. Does the Secured-Core PC Device Identifier UEFI variable (BuiltAsSecuredCorePC) value matter after it’s been read by the OA3 tool in the OEM factory?** </br>
     Yes. Config Lock will always read this UEFI variable to know whether it pertains to a device or not. So, changing the variable changes the Config Lock even after the device has left the OEM factory.
 
-**#3. Could an end-user run the BuiltAsSecuredCorePC Power Shell command to disable Config Lock?** </br>
-	The Power Shell script is accessible, but the BuiltAsSecuredCorePC becomes read-only after boot, so the command will fail when run from the OS.
+**#3. Could an end-user run the BuiltAsSecuredCorePC PowerShell command to disable Config Lock?** </br>
+	The PowerShell script is accessible, but the BuiltAsSecuredCorePC becomes read-only after boot, so the command will fail when run from the OS.
