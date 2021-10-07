@@ -24,7 +24,7 @@ Windows includes features that connect to the internet to provide enhanced exper
 
 When a connected experience is used, data is sent to and processed by Microsoft to provide that connected experience. This data is crucial because this information enables us to deliver these cloud-based connected experiences. We refer to this data as required service data. Required service data can include information related to the operation of the connected experience that is needed to keep the underlying service secure, up to date, and performing as expected. Required service data can also include information needed by a connected experience to perform its task, such as configuration information about Windows.
 
-Microsoft gives you the ability to choose which connected experiences you want to use in Windows, this will determines what required service data is sent to Microsoft.
+The connected experiences you choose to use in Windows will impact what required service data is sent to us.
 
 Required service data is also collected and sent to Microsoft for essential services. Essential services are used to keep the product **secure, up to date, performing as expected** or are **integral** to how the product works. For example, the licensing service that confirms that you’re properly licensed to use Windows.
 
