@@ -12,7 +12,7 @@ ms.author: v-hakima
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 12/17/2020
+ms.date: 10/04/2021
 ---
 
 # Manage connection endpoints for Windows 10 Enterprise, version 21H1
