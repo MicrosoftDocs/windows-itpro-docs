@@ -10,7 +10,7 @@ audience: ITPro
 author: siosulli
 ms.author: dansimp
 manager: dansimp
-ms.date: 12/1/2020
+ms.date: 
 ---
 
 # Essential services and connected experiences for Windows

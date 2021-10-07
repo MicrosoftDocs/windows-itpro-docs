@@ -13,7 +13,7 @@ ms.author: brianlic
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 07/21/2020
+ms.date: 
 ---
 
 # Windows Privacy Compliance:<br />A Guide for IT and Compliance Professionals
