@@ -13,7 +13,7 @@ author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 09/17/2021
+ms.date: 10/04/2021
 ---
 
 # Changes to Windows diagnostic data collection
