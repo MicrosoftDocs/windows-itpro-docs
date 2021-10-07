@@ -86,6 +86,9 @@ If you don't set or you disable this policy, the PKU2U protocol won't be used to
 
 If you enable this policy in a hybrid environment, you allow your users to authenticate by using certificates issued by Azure AD and their online identity between the corresponding devices. This configuration allows users to share resources between such devices. Without enabling this policy, remote connections to an Azure AD joined device will not work.
 
+### Fix/Remediation
+
+This vulnerability was fixed on February 2021 Security Update. More Information on [CVE-2021-25195](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-25195)
 
 ## Related topics
 
