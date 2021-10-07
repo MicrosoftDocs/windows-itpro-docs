@@ -57,8 +57,8 @@ IT Admin scenario:
 Helpdesk scenario:
 
 1. Helpdesk support engineer investigates the device
-1. Helpdesk support engineer contacts the IT Admin to unlocks the device
-1. IT Admin unlocks the device in order to make configuration changes
+1. Helpdesk support engineer contacts the IT Admin to unlock the device
+1. IT Admin unlocks the device to make configuration changes
 1. Device returns to locked state after a defined time (default 30 minutes)
 
 ## System Requirements
@@ -67,9 +67,9 @@ Config Lock will be available for all Windows Professional and Enterprise Editio
 
 ## Enabling
 
-Config Lock is not enabled by default (or turned on by the OS during boot). Rather, an IT Admin must intentionally turn it ON.
+Config Lock isn't enabled by default (or turned on by the OS during boot). Rather, an IT Admin must intentionally turn it ON.
  
-Config Lock is controlled by the presence of the Secured-Core PC Device Identifier (the “BuiltAsSecuredCorePC” UEFI variable) inserted on the device by the OEM during initial device manufacturing. Config Lock can be enabled if the ByteArray value of this identifier is set to “1” and IT admin pushes the MDM policy to turn Config Lock ON. If it is “0” or the variable is not present at all, Config Lock cannot be enabled.
+Config Lock is controlled by the presence of the Secured-Core PC Device Identifier (the “BuiltAsSecuredCorePC” UEFI variable) inserted on the device by the OEM during initial device manufacturing. Config Lock can be enabled if the ByteArray value of this identifier is set to “1” and IT admin pushes the MDM policy to turn Config Lock ON. If it is “0” or the variable isn't present at all, Config Lock cannot be enabled.
 
 > [!NOTE]
 > BuiltAsSecuredCorePC actually accepts ByteArray values of 0-9, and any value from 1-9 will indicate Secured-Core PC to the Config Lock feature.  While we recommend “1” for consistency, OEMs may optionally use any other value up to 9 for internal versioning reasons, or other purposes.  (Technically, any value from 1-255 should trigger Config Lock, since BuiltAsSecuredCorePC is a byte.)
@@ -100,17 +100,17 @@ The steps to turn on Config Lock using Microsoft Endpoint Manager (MEM) are as f
 
     :::image type="content" source="images/configlock-mem-editrow.png" alt-text="edit row":::
 
-1. Select the devices to turn on Config Lock. If you are using a test tenant, you can select “+ Add all devices”.
-1. You will not need to set any applicability rules for test purposes.
+1. Select the devices to turn on Config Lock. If you're using a test tenant, you can select “+ Add all devices”.
+1. You'll not need to set any applicability rules for test purposes.
 1. Review the Configuration and select “Create” if everything is correct.
-1. After the device syncs with the MEM server, you will be able to confirm if the Config Lock was successfully enabled.
+1. After the device syncs with the MEM server, you can confirm if the Config Lock was successfully enabled.
 
     :::image type="content" source="images/configlock-mem-dev.png" alt-text="status":::
 
     :::image type="content" source="images/configlock-mem-devstatus.png" alt-text="device status":::
 
 ## Disabling
-Config Lock is designed to ensure that a Secured-Core PC is not unintentionally misconfigured.  IT Admins retain the ability to change (enabled/disable) SCPC features via Group Policies and/or mobile device management (MDM) tools, such as MEM.
+Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally misconfigured.  IT Admins retain the ability to change (enabled/disable) SCPC features via Group Policies and/or mobile device management (MDM) tools, such as MEM.
 
 :::image type="content" source="images/configlock-mem-firmwareprotect.png" alt-text="firmware protect":::
  
@@ -122,5 +122,5 @@ Config Lock is designed to ensure that a Secured-Core PC is not unintentionally 
 **#2. Does the Secured-Core PC Device Identifier UEFI variable (BuiltAsSecuredCorePC) value matter after it’s been read by the OA3 tool in the OEM factory?** </br>
     Yes. Config Lock will always read this UEFI variable to know whether it pertains to a device or not. So, changing the variable changes the Config Lock even after the device has left the OEM factory.
 
-**#3. Could an end-user run the BuiltAsSecuredCorePC PS command to disable Config Lock?** </br>
-	The PS script is accessible, but the BuiltAsSecuredCorePC becomes read-only after boot, so the command will fail when run from the OS.
+**#3. Could an end-user run the BuiltAsSecuredCorePC Power Shell command to disable Config Lock?** </br>
+	The Power Shell script is accessible, but the BuiltAsSecuredCorePC becomes read-only after boot, so the command will fail when run from the OS.
