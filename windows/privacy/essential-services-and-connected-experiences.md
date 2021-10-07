@@ -99,8 +99,9 @@ Internet Explorer shares many of the Windows essential services listed above. Th
 - [Connected Experiences in Office](/deployoffice/privacy/connected-experiences.md)
 - [Essential Services in Office](/deployoffice/privacy/essential-services.md)
 
-To view endpoints for Windows 10 Enterprise, see:
+To view endpoints for Windows Enterprise, see:
 
+- [Manage connection endpoints for Windows 11](manage-windows-11-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 21H1](manage-windows-21H1-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 20H2](manage-windows-20h2-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1909](manage-windows-1909-endpoints.md)
@@ -109,8 +110,9 @@ To view endpoints for Windows 10 Enterprise, see:
 - [Manage connection endpoints for Windows 10, version 1803](manage-windows-1803-endpoints.md)
 - [Manage connection endpoints for Windows 10, version 1709](manage-windows-1709-endpoints.md)
 
-To view endpoints for non-Enterprise Windows 10 editions, see:
+To view endpoints for non-Enterprise Windows editions, see:
 
+- [Windows 11 connection endpoints for non-Enterprise editions](windows-11-endpoints-non-enterprise-editions.md)
 - [Windows 10, version 21H1, connection endpoints for non-Enterprise editions](windows-endpoints-21H1-non-enterprise-editions.md)
 - [Windows 10, version 20H2, connection endpoints for non-Enterprise editions](windows-endpoints-20H2-non-enterprise-editions.md)
 - [Windows 10, version 1909, connection endpoints for non-Enterprise editions](windows-endpoints-1909-non-enterprise-editions.md)
