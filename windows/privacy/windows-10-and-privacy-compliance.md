@@ -113,13 +113,13 @@ You can use the following articles to learn more about Autopilot and how to use 
 
 #### _2.3.2 Managing Windows connected experiences and essential services_
 
-Windows includes features that connect to the internet to provide enhanced experiences and more capabilities. These are called connected experiences. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure.
+Windows includes features that connect to the internet to provide enhanced experiences and additional capabilities. These features are called connected experiences. For example, Microsoft Defender Antivirus is a connected experience that delivers updated protection to keep the devices in your organization secure.
 
 Essential services are services in the product that connect to Microsoft to keep the product secure, up to date and performing as expected, or are integral to how the product works. For example, the licensing service that confirms that you’re properly licensed to use Windows.
 
 [Windows essential services and connected experiences](essential-services-and-connected-experiences.md) provides a list of the most common Windows essential services and connected experiences.
 
-When a connected experience is used, data is sent to and processed by Microsoft to provide that connected experience. Administrators can manage the data sent from their organization to Microsoft by configuring the settings that are associated with the functionality provided by Windows connected experiences and essential services. For more information, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). This article includes the different methods available to configure each setting, the impact to functionality, and the versions of Windows that are applicable.
+When a connected experience is used, data is sent to and processed by Microsoft to provide that connected experience. Administrators can manage the data sent from their organization to Microsoft by configuring settings that are associated with the functionality provided by Windows connected experiences and essential services. For more information, see [Manage connections from Windows operating system components to Microsoft services](manage-connections-from-windows-operating-system-components-to-microsoft-services.md). This article includes the different methods available to configure each setting, the impact to functionality, and the versions of Windows that are applicable.
 
 The article [Manage connection endpoints for Windows 11 Enterprise](manage-windows-11-endpoints.md) provides a list of endpoints to which data is transferred by Windows connected experiences for the latest Windows release, along with descriptions of any functionality that would be impacted by restricting data collection.
 
