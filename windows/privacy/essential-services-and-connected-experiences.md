@@ -28,7 +28,7 @@ The connected experiences you choose to use in Windows will impact what required
 
 Required service data is also collected and sent to Microsoft for essential services. Essential services are used to keep the product **secure, up to date, performing as expected** or are **integral** to how the product works. For example, the licensing service that confirms that you’re properly licensed to use Windows.
 
-Although most essential services can be turned off by enterprise admins, we recommend, where applicable, you consider hosting the services on-premises and carefully assess the impact of turning off remaining services. The following list describes the essential services and connected experiences that are available to you in Windows and provides links to further information about each one.
+Although enterprise admins can turn off most essential services, we recommend, where applicable, you consider hosting the services on-premises and carefully assess the impact of turning off remaining services. The following list describes the essential services and connected experiences that are available to you in Windows and provides links to further information about each one.
 
 > [!NOTE]
 > The information in this article describes the most common connected experiences and essential services. We will continue to update our list of connected experiences over time as Windows evolves.
