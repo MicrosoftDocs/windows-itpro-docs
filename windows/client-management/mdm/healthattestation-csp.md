@@ -51,6 +51,15 @@ The attestation report provides a health assessment of the boot-time properties 
 
 ### Attestation Flow with Microsoft Azure Attestation Service
 
+#add image
+<p>Attestation flow can be broadly in three main steps:
+<ul>
+    <li>An instancne of the Azure Attestation service is setup with an appropriate attestation policy. The attestation policy allows the MDM provider to attest to particular events in the boot as well security features.</li>
+    <li>The MDM provider triggers a call to the attestation service, the device then performs an attestation check keeping the report ready to be retrived.</li>
+    <li>The MDM provider after verifying the token is coming from the attestation service it can parse the attestation token to reflect on the attested state of the device.</li>
+</ul>
+The protocol implemented can be found here:<a href="https://docs.microsoft.com/en-us/azure/attestation/virtualization-based-security-protocol" id="attestationprotocol"> Attestation Protocol</a>
+</p>
 
 ### Configuration Service Provider Nodes
 Windows 11 introduces additions to the HealthAttestation CSP node to integrate with Microsoft Azure Attestaiton service.
@@ -206,17 +215,211 @@ This node will retrieve the service generated correlation IDs for the given MDM 
 
 ### MAA CSP Intergation Steps
 <ol>
-<li>Setup a MAA provider instance:
-MAA instance can be created following the steps here Quickstart: Set up Azure Attestation by using the Azure portal | Microsoft Docs.</li>
-<li>Update the provider with an appropriate policy:
-The MAA instance should be updated with an appropriate policy. How to author an Azure Attestation policy | Microsoft Docs
-A Sample attestation policy that only checks for secureboot is here:
-TODO</li>
-<li>Call TriggerAttestation with your rpid, AAD token and the attestURI:
+<li>Setup a MAA provider instance:<br>
+MAA instance can be created following the steps here <a href="https://docs.microsoft.com/en-us/azure/attestation/quickstart-portal" id="quickstartsetup">Quickstart: Set up Azure Attestation by using the Azure portal | Microsoft Docs.</a></li>
+<br><li>Update the provider with an appropriate policy:<br>
+The MAA instance should be updated with an appropriate policy. <a href="https://docs.microsoft.com/en-us/azure/attestation/claim-rule-grammar" id="policy">How to author an Azure Attestation policy | Microsoft Docs</a>
+<br>A Sample attestation policy:
+
+```
+version=1.2;
+
+configurationrules{
+};
+
+authorizationrules { 
+    => permit();
+};
+
+issuancerules{
+
+// SecureBoot enabled 
+c:[type == "events", issuer=="AttestationService"] => add(type = "efiConfigVariables", value = JmesPath(c.value, "Events[?EventTypeString == 'EV_EFI_VARIABLE_DRIVER_CONFIG' && ProcessedData.VariableGuid == '8BE4DF61-93CA-11D2-AA0D-00E098032B8C']"));
+c:[type == "efiConfigVariables", issuer=="AttestationPolicy"]=> issue(type = "secureBootEnabled", value = JsonToClaimValue(JmesPath(c.value, "[?ProcessedData.UnicodeName == 'SecureBoot'] | length(@) == `1` && @[0].ProcessedData.VariableData == 'AQ'")));
+![type=="secureBootEnabled", issuer=="AttestationPolicy"] => issue(type="secureBootEnabled", value=false);
+
+// Retrieve bool properties
+c:[type=="events", issuer=="AttestationService"] => add(type="boolProperties", value=JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && (PcrIndex == `12` || PcrIndex == `13` || PcrIndex == `19` || PcrIndex == `20`)].ProcessedData.EVENT_TRUSTBOUNDARY"));
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="codeIntegrityEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_CODEINTEGRITY")));
+c:[type=="codeIntegrityEnabledSet", issuer=="AttestationPolicy"] => issue(type="codeIntegrityEnabled", value=ContainsOnlyValue(c.value, true));
+![type=="codeIntegrityEnabled", issuer=="AttestationPolicy"] => issue(type="codeIntegrityEnabled", value=false);
+
+// Bitlocker Boot Status, The first non zero measurement or zero.
+c:[type=="events", issuer=="AttestationService"] => add(type="srtmDrtmEventPcr", value=JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && (PcrIndex == `12` || PcrIndex == `19`)].ProcessedData.EVENT_TRUSTBOUNDARY"));
+c:[type=="srtmDrtmEventPcr", issuer=="AttestationPolicy"] => issue(type="bitlockerEnabledValue", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_BITLOCKER_UNLOCK | @[? Value != `0`].Value | @[0]")));
+[type=="bitlockerEnabledValue"] => issue(type="bitlockerEnabled", value=true);
+![type=="bitlockerEnabledValue"] => issue(type="bitlockerEnabled", value=false);
+
+// Elam Driver (windows defender) Loaded
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="elamDriverLoaded", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_LOADEDMODULE_AGGREGATION[] | [? EVENT_IMAGEVALIDATED == `true` && (equals_ignore_case(EVENT_FILEPATH, '\\windows\\system32\\drivers\\wdboot.sys') || equals_ignore_case(EVENT_FILEPATH, '\\windows\\system32\\drivers\\wd\\wdboot.sys'))] | @ != `null`")));
+[type=="elamDriverLoaded", issuer=="AttestationPolicy"] => issue(type="WindowsDefenderElamDriverLoaded", value=true);
+![type=="elamDriverLoaded", issuer=="AttestationPolicy"] => issue(type="WindowsDefenderElamDriverLoaded", value=false);
+
+// Boot debugging
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="bootDebuggingEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_BOOTDEBUGGING")));
+c:[type=="bootDebuggingEnabledSet", issuer=="AttestationPolicy"] => issue(type="bootDebuggingDisabled", value=ContainsOnlyValue(c.value, false));
+![type=="bootDebuggingDisabled", issuer=="AttestationPolicy"] => issue(type="bootDebuggingDisabled", value=false);
+
+// Kernel Debugging
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="osKernelDebuggingEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_OSKERNELDEBUG")));
+c:[type=="osKernelDebuggingEnabledSet", issuer=="AttestationPolicy"] => issue(type="osKernelDebuggingDisabled", value=ContainsOnlyValue(c.value, false));
+![type=="osKernelDebuggingDisabled", issuer=="AttestationPolicy"] => issue(type="osKernelDebuggingDisabled", value=false);
+
+// DEP Policy
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => issue(type="depPolicy", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_DATAEXECUTIONPREVENTION.Value | @[-1]")));
+![type=="depPolicy"] => issue(type="depPolicy", value=0);
+
+// Test Signing
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="testSigningEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_TESTSIGNING")));
+c:[type=="testSigningEnabledSet", issuer=="AttestationPolicy"] => issue(type="testSigningDisabled", value=ContainsOnlyValue(c.value, false));
+![type=="testSigningDisabled", issuer=="AttestationPolicy"] => issue(type="testSigningDisabled", value=false);
+
+// Flight Signing
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="flightSigningEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_FLIGHTSIGNING")));
+c:[type=="flightSigningEnabledSet", issuer=="AttestationPolicy"] => issue(type="flightSigningNotEnabled", value=ContainsOnlyValue(c.value, false));
+![type=="flightSigningNotEnabled", issuer=="AttestationPolicy"] => issue(type="flightSigningNotEnabled", value=false);
+
+// VSM enabled
+c:[type=="events", issuer=="AttestationService"] => add(type="srtmDrtmEventPcr", value=JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && (PcrIndex == `12` || PcrIndex == `19`)].ProcessedData.EVENT_TRUSTBOUNDARY"));
+c:[type=="srtmDrtmEventPcr", issuer=="AttestationPolicy"] => add(type="vbsEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_VBS_VSM_REQUIRED")));
+c:[type=="srtmDrtmEventPcr", issuer=="AttestationPolicy"] => add(type="vbsEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_VBS_MANDATORY_ENFORCEMENT")));
+c:[type=="vbsEnabledSet", issuer=="AttestationPolicy"] => issue(type="vbsEnabled", value=ContainsOnlyValue(c.value, true));
+![type=="vbsEnabled", issuer=="AttestationPolicy"] => issue(type="vbsEnabled", value=false);
+c:[type=="vbsEnabled", issuer=="AttestationPolicy"] => issue(type="vbsEnabled", value=c.value);
+
+// HVCI
+c:[type=="srtmDrtmEventPcr", issuer=="AttestationPolicy"] => add(type="hvciEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_VBS_HVCI_POLICY | @[?String == 'HypervisorEnforcedCodeIntegrityEnable'].Value")));
+c:[type=="hvciEnabledSet", issuer=="AttestationPolicy"] => issue(type="hvciEnabled", value=ContainsOnlyValue(c.value, 1));
+![type=="hvciEnabled", issuer=="AttestationPolicy"] => issue(type="hvciEnabled", value=false);
+
+// IOMMU
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="iommuEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_VBS_IOMMU_REQUIRED")));
+c:[type=="iommuEnabledSet", issuer=="AttestationPolicy"] => issue(type="iommuEnabled", value=ContainsOnlyValue(c.value, true));
+![type=="iommuEnabled", issuer=="AttestationPolicy"] => issue(type="iommuEnabled", value=false);
+
+// Find the Boot Manager SVN, this is measured as part of a sequence and find the various measurements
+// Find the first EV_SEPARATOR in PCR 12, 13, Or 14
+c:[type=="events", issuer=="AttestationService"] => add(type="evSeparatorSeq", value=JmesPath(c.value, "Events[? EventTypeString == 'EV_SEPARATOR' && (PcrIndex == `12` || PcrIndex == `13` || PcrIndex == `14`)] | @[0].EventSeq"));
+c:[type=="evSeparatorSeq", value != "null", issuer=="AttestationPolicy"] => add(type="beforeEvSepClause", value=AppendString(AppendString("Events[? EventSeq < `", c.value), "`"));
+[type=="evSeparatorSeq", value=="null", issuer=="AttestationPolicy"] => add(type="beforeEvSepClause", value="Events[? `true` "); 
+
+// Find the first EVENT_APPLICATION_SVN. 
+c:[type=="beforeEvSepClause", issuer=="AttestationPolicy"] => add(type="bootMgrSvnSeqQuery", value=AppendString(c.value, " && EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `12` && ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_APPLICATION_SVN] | @[0].EventSeq"));
+c1:[type=="bootMgrSvnSeqQuery", issuer=="AttestationPolicy"] && c2:[type=="events", issuer=="AttestationService"] => add(type="bootMgrSvnSeq", value=JmesPath(c2.value, c1.value));
+c:[type=="bootMgrSvnSeq", value!="null", issuer=="AttestationPolicy"] => add(type="bootMgrSvnQuery", value=AppendString(AppendString("Events[? EventSeq == `", c.value), "`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_APPLICATION_SVN | @[0]"));
+
+// The first EVENT_APPLICATION_SVN. That value is the Boot Manager SVN
+c1:[type=="bootMgrSvnQuery", issuer=="AttestationPolicy"] && c2:[type=="events", issuer=="AttestationService"] => issue(type="bootMgrSvn", value=JsonToClaimValue(JmesPath(c2.value, c1.value)));
+
+// OS Rev List Info
+c:[type=="events", issuer=="AttestationService"] => issue(type="osRevListInfo", value=JsonToClaimValue(JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `13`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_OS_REVOCATION_LIST.RawData | @[0]")));
+
+// Safe mode
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="safeModeEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_SAFEMODE")));
+c:[type=="safeModeEnabledSet", issuer=="AttestationPolicy"] => issue(type="notSafeMode", value=ContainsOnlyValue(c.value, false));
+![type=="notSafeMode", issuer=="AttestationPolicy"] => issue(type="notSafeMode", value=true);
+
+// Win PE
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="winPEEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_WINPE")));
+c:[type=="winPEEnabledSet", issuer=="AttestationPolicy"] => issue(type="notWinPE", value=ContainsOnlyValue(c.value, false));
+![type=="notWinPE", issuer=="AttestationPolicy"] => issue(type="notWinPE", value=true);
+
+// CI Policy
+c:[type=="events", issuer=="AttestationService"] => issue(type="codeIntegrityPolicy", value=JsonToClaimValue(JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `13`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_SI_POLICY[].RawData")));
+
+// Secure Boot Custom Policy
+c:[type=="events", issuer=="AttestationService"] => issue(type="secureBootCustomPolicy", value=JsonToClaimValue(JmesPath(c.value, "Events[? EventTypeString == 'EV_EFI_VARIABLE_DRIVER_CONFIG' && PcrIndex == `7` && ProcessedData.UnicodeName == 'CurrentPolicy' && ProcessedData.VariableGuid == '77FA9ABD-0359-4D32-BD60-28F4E78F784B'].ProcessedData.VariableData | @[0]")));
+
+// Find the first EV_SEPARATOR in PCR 12, 13, Or 14
+c:[type=="events", issuer=="AttestationService"] => add(type="evSeparatorSeq", value=JmesPath(c.value, "Events[? EventTypeString == 'EV_SEPARATOR' && (PcrIndex == `12` || PcrIndex == `13` || PcrIndex == `14`)] | @[0].EventSeq"));
+c:[type=="evSeparatorSeq", value != "null", issuer=="AttestationPolicy"] => add(type="beforeEvSepClause", value=AppendString(AppendString("Events[? EventSeq < `", c.value), "`"));
+[type=="evSeparatorSeq", value=="null", issuer=="AttestationPolicy"] => add(type="beforeEvSepClause", value="Events[? `true` "); // No restriction of EV_SEPARATOR in case it is not present
+
+//Finding the Boot App SVN
+// Find the first EVENT_TRANSFER_CONTROL with value 1 or 2 in PCR 12 which is before the EV_SEPARATOR
+c1:[type=="beforeEvSepClause", issuer=="AttestationPolicy"] && c2:[type=="bootMgrSvnSeq", value != "null", issuer=="AttestationPolicy"] => add(type="beforeEvSepAfterBootMgrSvnClause", value=AppendString(AppendString(AppendString(c1.value, "&& EventSeq >= `"), c2.value), "`"));
+c:[type=="beforeEvSepAfterBootMgrSvnClause", issuer=="AttestationPolicy"] => add(type="tranferControlQuery", value=AppendString(c.value, " && EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `12`&& (ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_TRANSFER_CONTROL.Value == `1` || ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_TRANSFER_CONTROL.Value == `2`)] | @[0].EventSeq"));
+c1:[type=="tranferControlQuery", issuer=="AttestationPolicy"] && c2:[type=="events", issuer=="AttestationService"] => add(type="tranferControlSeq", value=JmesPath(c2.value, c1.value));
+
+// Find the first non-null EVENT_MODULE_SVN in PCR 13 after the transfer control.
+c:[type=="tranferControlSeq", value!="null", issuer=="AttestationPolicy"] => add(type="afterTransferCtrlClause", value=AppendString(AppendString(" && EventSeq > `", c.value), "`"));
+c1:[type=="beforeEvSepClause", issuer=="AttestationPolicy"] && c2:[type=="afterTransferCtrlClause", issuer=="AttestationPolicy"] => add(type="moduleQuery", value=AppendString(AppendString(c1.value, c2.value), " && EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `13` && ((ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_LOADEDMODULE_AGGREGATION[].EVENT_MODULE_SVN | @[0]) || (ProcessedData.EVENT_LOADEDMODULE_AGGREGATION[].EVENT_MODULE_SVN | @[0]))].EventSeq | @[0]"));
+c1:[type=="moduleQuery", issuer=="AttestationPolicy"] && c2:[type=="events", issuer=="AttestationService"] => add(type="moduleSeq", value=JmesPath(c2.value, c1.value));
+
+// Find the first EVENT_APPLICATION_SVN after EV_EVENT_TAG in PCR 12. 
+c:[type=="moduleSeq", value!="null", issuer=="AttestationPolicy"] => add(type="applicationSvnAfterModuleClause", value=AppendString(AppendString(" && EventSeq > `", c.value), "`"));
+c1:[type=="beforeEvSepClause", issuer=="AttestationPolicy"] && c2:[type=="applicationSvnAfterModuleClause", issuer=="AttestationPolicy"] => add(type="bootAppSvnQuery", value=AppendString(AppendString(c1.value, c2.value), " && EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `12`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_APPLICATION_SVN | @[0]"));
+c1:[type=="bootAppSvnQuery", issuer=="AttestationPolicy"] && c2:[type=="events", issuer=="AttestationService"] => issue(type="bootAppSvn", value=JsonToClaimValue(JmesPath(c2.value, c1.value)));
+
+// Finding the Boot Rev List Info
+c:[type=="events", issuer=="AttestationService"] => issue(type="bootRevListInfo", value=JsonToClaimValue(JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `13`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_BOOT_REVOCATION_LIST.RawData | @[0]")));
+
+};
+```    
+</li>
+<br><li>Call TriggerAttestation with your rpid, AAD token and the attestURI:<br>
 Use the Attestation URL generated in step 1, and append the appropriate api version you want to hit. More information about the api version can be found here Attestation - Attest Tpm - REST API (Azure Azure Attestation) | Microsoft Docs</li>
-<li>Call GetAttestReport and decode and parse the report to ensure the attested report contains the required properties:
+<br><li>Call GetAttestReport and decode and parse the report to ensure the attested report contains the required properties:<br>
 The decoded JWT token contains information per the attestation policy.
-{ "typ": "JWT", "alg": "RS256", "x5c": [ "MIIDcDCCAligAwIBAgIQOLMUhXOEQ2axV6zXp/KvnzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDEypBdHRlc3RhdGlvblNlcnZpY2UtTG9jYWxUZXN0LVJlcG9ydFNpZ25pbmcwHhcNMjAxMTI5MTExMjUyWhcNMjIxMTI5MTEyMjUyWjA1MTMwMQYDVQQDEypBdHRlc3RhdGlvblNlcnZpY2UtTG9jYWxUZXN0LVJlcG9ydFNpZ25pbmcwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCsuOlDyU1sYAuAV53n7TrmTU180bOREgfZoTsdOyllMcsKciTUWkTO0vKDa8CFwGEHmSVTAEngDIHw1putio84HKZdcI6nPt2B74kJ/+5ut8KGMWtBm6GFWwS0TXti1rE4Os1mPpCYAsUyKxaEw4lBbEzGa5mGx0SGLdseuUIiw23S695RLVCciDaAvf+q/gBScFgZJm2ZxgkyNF7+MSvnDMU1xv5YLDQeh3j5vZlstSq+rrRbB5SVnuD4cFBjvGW5lXBLxMEjpBXI6yzFmFuw/OjZ7VClk6HSNjvvhSwJu4F1oHuJ0oAuABOtPpRK/898Ru+9qS5ZMm79775nZK75AgMBAAGjfDB6MA4GA1UdDwEB/wQEAwIFoDAJBgNVHRMEAjAAMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAfBgNVHSMEGDAWgBR/8W25+uWj5sg8lEKKYy1gdCqWUTAdBgNVHQ4EFgQUf/Ftufrlo+bIPJRCimMtYHQqllEwDQYJKoZIhvcNAQELBQADggEBAJGfbRRvF3EpG6ZsOcSmWtu/1LDVZq+fGspjK/7+ImybEY/zC2CsWWpz7pT54KEGYe91q67nV5GZoSz7+O4A4A5QtMDFzOnrFVicDo5Cg2EDU4YQDN4j4DyrbttkQYiEiBFexJImrjIk4bfW2YqZjtzR7XFDsCsOAUHNY8cnnKaZCRbXrLwP/LUYAz/NVkttO4CW4U/8OZygrarfAsVrsCsx5o2mXBlaRYl5xECWfvT2YbCFuIt3gZR9sau65uMWthgyV0XAR7farxycfMEuBkyb+IVPwYW5QGFo5M8a78r/rFPdczGPlv0Qvg7zrBm775xs8O33V4nOmC1tfsxXUgw=" ], "kid": "e5j-rIjIITYTB9RQSgM-OzOWjXM" }.{ "nbf": 1629758941, "exp": 1630104841, "iat": 1629759241, "iss": "https://ulptestwin.eus.test.attest.azure.net", "jti": "e325dad03894f09b12c53f3b5eac5e36824c89ae", "ver": "1.0", "x-ms-ver": "1.0", "rp_data": "AQIDBA", "nonce": "AQIDBA", "cnf": { "jwk": { "kty": "RSA", "n": "vTCRaX0IZMsNHfJPOVyiYSCM2WABZmNo3PSVTOt9mh0vR4Mon080EGHM_V3afjKJ4NxmEZ01XeB-1TsuNM2-19_JMWZF-wiBTrBWEjcUQ84AxzukaWD1sMsH2kiqjaxXBHEUl8Hhq9SRjVEEdT-fKLOzBO070TffvRCKVxZIRI9Ry6E6K8gMEX3CH6Yk9b7clAua0MrUxd28hMxwx4hy1HyCsFSnXb_bIaqxLYjCxisc9mRx2vO6IuEqEVskSYDc-5f8u2G98ld6PuiMkAhvOOEBmaDlEksvUpnA8e9nWO98rg17pjyOms9GLvgKkSgOKbK8wQ-NuUyXutQfaN2MbQ", "e": "AQAB" } }, "x-ms-policy-hash": "BpV0Jxx6oZ2AjkgXx3Gj7JiJ1NpZWGppjdT2OTtBR4g", "AIKPresent": true, "BitlockerStatus": 1, "CodeIntegrityEnabled": true, "SafeMode": false, "SecureBootEnabled": true, "TpmVersion": 2, "VSMEnabled": true, "WinPE": false }.[Signature]</li>
+<br>
+
+    
+    {
+      "typ": "JWT",
+      "alg": "RS256",
+      "x5c": [
+        "MIIE.....=",
+        "MIIG.....=",
+        "MIIF.....="
+      ],
+      "kid": "8FUer20z6wzf1rod044wOAFdjsg"
+    }.{
+      "nbf": 1633664812,
+      "exp": 1634010712,
+      "iat": 1633665112,
+      "iss": "https://contosopolicy.eus.attest.azure.net",
+      "jti": "2b63663acbcafefa004d20969991c0b1f063c9be",
+      "ver": "1.0",
+      "x-ms-ver": "1.0",
+      "rp_data": "AQIDBA",
+      "nonce": "AQIDBA",
+      "cnf": {
+        "jwk": {
+          "kty": "RSA",
+          "n": "yZGC3-1rFZBt6n6vRHjRjvrOYlH69TftIQWOXiEHz__viQ_Z3qxWVa4TfrUxiQyDQnxJ8-f8tBRmlunMdFDIQWhnew_rc3-UYMUPNcTQ0IkrLBDG6qDjFFeEAMbn8gqr0rRWu_Qt7Cb_Cq1upoEBkv0RXk8yR6JXmFIvLuSdewGs-xCWlHhd5w3n1rVk0hjtRk9ZErlbPXt74E5l-ZZQUIyeYEZ1FmbivOIL-2f6NnKJ-cR4cdhEU8i9CH1YV0r578ry89nGvBJ5u4_3Ib9Ragdmxm259npH53hpnwf0I6V-_ZhGPyF6LBVUG_7x4CyxuHCU20uI0vXKXJNlbj1wsQ",
+          "e": "AQAB"
+        }
+      },
+      "x-ms-policy-hash": "GiGQCTOylCohHt4rd3pEppD9arh5mXC3ifF1m1hONh0",
+      "WindowsDefenderElamDriverLoaded": true,
+      "bitlockerEnabled": true,
+      "bitlockerEnabledValue": 4,
+      "bootAppSvn": 1,
+      "bootDebuggingDisabled": true,
+      "bootMgrSvn": 1,
+      "bootRevListInfo": "gHWqR2F-1wEgAAAACwBxrZXHbaiuTuO0PSaJ7WQMF8yz37Z2ATgSNTTlRkwcTw",
+      "codeIntegrityEnabled": true,
+      "codeIntegrityPolicy": [
+        "AAABAAAAAQBWAAsAIAAAAHsAOABmAGIANAA4ADYANQBlAC0AZQA5ADAAYgAtADQANAA0AGYALQBiADUAYgA1AC0AZQAyAGEAYQA1ADEAZAA4ADkAMABmAGQAfQAuAEMASQBQAAAAVnW86ERqAg5n9QT1UKFr-bOP2AlNtBaaHXjZODnNLlk",
+        "AAAAAAAACgBWAAsAIAAAAHsAYgBjADQAYgBmADYAZAA3AC0AYwBjADYAMAAtADQAMABmADAALQA4ADYANAA0AC0AMQBlADYANAA5ADEANgBmADgAMQA4ADMAfQAuAEMASQBQAAAAQ7vOXuAbBRIMglSSg7g_LHNeHoR4GrY-M-2W5MNvf0o",
+        "AAAAAAAACgBWAAsAIAAAAHsAYgAzADEAOAA5ADkAOQBhAC0AYgAxADMAZQAtADQANAA3ADUALQBiAGMAZgBkAC0AMQBiADEANgBlADMAMABlADYAMAAzADAAfQAuAEMASQBQAAAALTmwU3eadNtg0GyAyKIAkYed127RJCSgmfFmO1jN_aI",
+        "AAAAAAAACgBWAAsAIAAAAHsAZgBlADgAMgBkADUAOAA5AC0ANwA3AGQAMQAtADQAYwA3ADYALQA5AGEANABhAC0AZQA0ADUANQA0ADYAOAA4ADkANAAxAGIAfQAuAEMASQBQAAAA8HGUwA85gHN_ThItTYtu6sw657gVuOb4fOhYl-YJRoc",
+        "AACRVwAACgAmAAsAIAAAAEQAcgBpAHYAZQByAFMAaQBQAG8AbABpAGMAeQAuAHAANwBiAAAAYcVuY0HdW4Iqr5B-6Sl85kwIXRG9bqr43pVhkirg4qM"
+      ],
+      "depPolicy": 0,
+      "flightSigningNotEnabled": false,
+      "hvciEnabled": true,
+      "iommuEnabled": true,
+      "notSafeMode": true,
+      "notWinPE": true,
+      "osKernelDebuggingDisabled": true,
+      "osRevListInfo": "gHLuW2F-1wEgAAAACwDLyDTUQILjdz_RfNlShVgNYT9EghL7ceMReWg9TuwdKA",
+      "secureBootEnabled": true,
+      "testSigningDisabled": true,
+      "vbsEnabled": true
+    }.[Signature]
+
+</li>
 </ol>
 
 ## Windhows 10 Device HealthAttestation
