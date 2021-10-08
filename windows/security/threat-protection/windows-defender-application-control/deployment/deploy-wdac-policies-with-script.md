@@ -55,8 +55,9 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
    ```powershell
    $MountPoint = 'C:\EFI'
    $EFIDestinationFolder = "$MountPoint\Microsoft\Boot\CiPolicies\Active"
+   $EFIPartition = (Get-Partition | Where-Object IsSystem).AccessPaths[0]
    mkdir $EFIDestinationFolder
-   mountvol $MountPoint /s
+   mountvol $MountPoint $EFIPartition
    Copy-Item -Path $PolicyBinary -Destination $EFIDestinationFolder -Force
    mountvol $MountPoint /d
    ```
