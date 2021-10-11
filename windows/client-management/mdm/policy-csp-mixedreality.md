@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 10/06/2020
+ms.date: 10/12/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -22,6 +22,9 @@ manager: dansimp
 <dl>
   <dd>
     <a href="#mixedreality-aadgroupmembershipcachevalidityindays">MixedReality/AADGroupMembershipCacheValidityInDays</a>
+  </dd>
+  <dd>
+    <a href="#mixedreality-autologonuser">MixedReality/AutoLogonUser</a>
   </dd>
   <dd>
     <a href="#mixedreality-brightnessbuttondisabled">MixedReality/BrightnessButtonDisabled</a>
@@ -50,15 +53,15 @@ manager: dansimp
 </tr>
 <tr>
     <td>HoloLens (1st gen) Development Edition</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>❌</td>
 </tr>
 <tr>
     <td>HoloLens (1st gen) Commercial Suite</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>❌</td>
 </tr>
 <tr>
     <td>HoloLens 2</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td>✔️</td>
 </tr>
 </table>
 
@@ -75,6 +78,50 @@ Steps to use this policy correctly:
 
 > [!NOTE]
 > Until step 4 is performed for a Azure AD user will experience failure behavior mentioned similar to “disconnected” environments.
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="mixedreality-autologonuser"></a>**MixedReality/AutoLogonUser**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Windows Edition</th>
+    <th>Supported?</th>
+</tr>
+<tr>
+    <td>HoloLens (1st gen) Development Edition</td>
+    <td>❌</td>
+</tr>
+<tr>
+    <td>HoloLens (1st gen) Commercial Suite</td>
+    <td>❌</td>
+</tr>
+<tr>
+    <td>HoloLens 2</td>
+    <td>✔️</td>
+</tr>
+</table>
+
+<!--/Description-->
+This new AutoLogonUser policy controls whether a user will be automatically logged on. Some customers want to set up devices that are tied to an identity but don't want any sign-in experience. Imagine picking up a device and using remote assist immediately. Or have a benefit of being able to rapidly  distribute HoloLens devices and enable their end users to expedite login.
+
+When the policy is set to a non-empty value, it specifies the email address of the auto-logon user. The specified user must logon to the device at least once to enable auto-logon.
+
+The OMA-URI of new policy `./Device/Vendor/MSFT/Policy/Config/MixedReality/AutoLogonUser`
+
+<!--SupportedValues-->
+String value
+- User with the same email address will have auto logon enabled.
+
+On a device where this policy is configured, the user specified in the policy will need to logon at least once. Subsequent reboots of the device after the first logon will have the specified user automatically logged on. Only a single auto-logon user is supported. Once enabled, the automatically logged on user will not be able to log out manually. To logon as a different user, the policy must first be disabled.
+
+> [!NOTE]
+>
+> - Some events such as major OS updates may require the specified user to logon to the device again to resume auto-logon behavior.
+> - Auto-logon is only supported for MSA and AAD users.
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -114,15 +161,15 @@ Supported values are 0-60. The default value is 0 (day) and maximum value is 60 
 </tr>
 <tr>
     <td>HoloLens (1st gen) Development Edition</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>❌</td>
 </tr>
 <tr>
     <td>HoloLens (1st gen) Commercial Suite</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>❌</td>
 </tr>
 <tr>
     <td>HoloLens 2</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td>✔️</td>
 </tr>
 </table>
 
@@ -167,15 +214,15 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>HoloLens (1st gen) Development Edition</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>❌</td>
 </tr>
 <tr>
     <td>HoloLens (1st gen) Commercial Suite</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>❌</td>
 </tr>
 <tr>
     <td>HoloLens 2</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td>✔️</td>
 </tr>
 </table>
 
@@ -221,15 +268,15 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>HoloLens (1st gen) Development Edition</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>❌</td>
 </tr>
 <tr>
     <td>HoloLens (1st gen) Commercial Suite</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>❌</td>
 </tr>
 <tr>
     <td>HoloLens 2</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td>✔️</td>
 </tr>
 </table>
 
@@ -274,15 +321,15 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>HoloLens (1st gen) Development Edition</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>❌</td>
 </tr>
 <tr>
     <td>HoloLens (1st gen) Commercial Suite</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>❌</td>
 </tr>
 <tr>
     <td>HoloLens 2</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>9</sup></td>
+    <td>✔️</td>
 </tr>
 </table>
 
@@ -317,4 +364,3 @@ The following list shows the supported values:
 <hr/>
 
 <!--/Policies-->
-
