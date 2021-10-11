@@ -39,7 +39,7 @@ The special identity groups are described in the following tables:
 
 -   [Anonymous Logon](#anonymous-logon)
 
--   [Authenticated User](#authenticated-users)
+-   [Authenticated Users](#authenticated-users)
 
 -   [Batch](#batch)
 
