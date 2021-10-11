@@ -50,8 +50,8 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 The following list shows the supported values:
 - 0 - Disable Microsoft Defender Application Guard
 - 1 - Enable Microsoft Defender Application Guard for Microsoft Edge ONLY
-- 2 - Enable Microsoft Defender Application Guard for isolated Windows environments ONLY (Added in Windows 10, version 2004)
-- 3 - Enable Microsoft Defender Application Guard for Microsoft Edge AND isolated Windows environments (Added in Windows 10, version 2004)
+- 2 - Enable Microsoft Defender Application Guard for isolated Windows environments ONLY (added in Windows 10, version 2004)
+- 3 - Enable Microsoft Defender Application Guard for Microsoft Edge AND isolated Windows environments (added in Windows 10, version 2004)
 
 <a href="" id="clipboardfiletype"></a>**Settings/ClipboardFileType**  
 Determines the type of content that can be copied from the host to Application Guard environment and vice versa. 
