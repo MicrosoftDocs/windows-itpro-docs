@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 09/08/2021
+ms.date:
 ---
 
 
@@ -277,6 +277,8 @@ The following fields are available:
 - **DatasourceApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_21H1**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_21H2**  The total number of objects of this type present on this device.
+- **DatasourceApplicationFile_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_RS1**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_RS2**  The total number of objects of this type present on this device.
 - **DatasourceApplicationFile_RS3**  The total number of objects of this type present on this device.
@@ -290,6 +292,8 @@ The following fields are available:
 - **DatasourceDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_21H1**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_21H2**  The total number of objects of this type present on this device.
+- **DatasourceDevicePnp_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_RS1**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_RS2**  The total number of objects of this type present on this device.
 - **DatasourceDevicePnp_RS3**  The total number of objects of this type present on this device.
@@ -306,6 +310,8 @@ The following fields are available:
 - **DatasourceDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_21H1**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_21H2**  The total number of objects of this type present on this device.
+- **DatasourceDriverPackage_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_RS1**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_RS2**  The total number of objects of this type present on this device.
 - **DatasourceDriverPackage_RS3**  The total number of objects of this type present on this device.
@@ -322,6 +328,8 @@ The following fields are available:
 - **DataSourceMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_21H2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoBlock_21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_RS2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
@@ -335,6 +343,8 @@ The following fields are available:
 - **DataSourceMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_21H2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPassive_21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_RS1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_RS2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
@@ -348,6 +358,8 @@ The following fields are available:
 - **DataSourceMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_21H1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_21H2**  The total number of objects of this type present on this device.
+- **DataSourceMatchingInfoPostUpgrade_21H2Setup**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS1**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS2**  The total number of objects of this type present on this device.
 - **DataSourceMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
@@ -362,6 +374,8 @@ The following fields are available:
 - **DatasourceSystemBios_20H1Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_21H1**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_21H1Setup**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_21H2**  The total number of objects of this type present on this device.
+- **DatasourceSystemBios_21H2Setup**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_RS1**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_RS2**  The total number of objects of this type present on this device.
 - **DatasourceSystemBios_RS3**  The total number of objects of this type present on this device.
@@ -378,6 +392,8 @@ The following fields are available:
 - **DecisionApplicationFile_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_21H1**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_21H2**  The total number of objects of this type present on this device.
+- **DecisionApplicationFile_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_RS1**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_RS2**  The total number of objects of this type present on this device.
 - **DecisionApplicationFile_RS3**  The total number of objects of this type present on this device.
@@ -391,6 +407,8 @@ The following fields are available:
 - **DecisionDevicePnp_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_21H1**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_21H2**  The total number of objects of this type present on this device.
+- **DecisionDevicePnp_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_RS1**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_RS2**  The total number of objects of this type present on this device.
 - **DecisionDevicePnp_RS3**  The total number of objects of this type present on this device.
@@ -407,6 +425,8 @@ The following fields are available:
 - **DecisionDriverPackage_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_21H1**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_21H2**  The total number of objects of this type present on this device.
+- **DecisionDriverPackage_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_RS1**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_RS2**  The total number of objects of this type present on this device.
 - **DecisionDriverPackage_RS3**  The total number of objects of this type present on this device.
@@ -423,6 +443,8 @@ The following fields are available:
 - **DecisionMatchingInfoBlock_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_21H2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoBlock_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_RS1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_RS2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoBlock_RS3**  The total number of objects of this type present on this device.
@@ -436,6 +458,8 @@ The following fields are available:
 - **DecisionMatchingInfoPassive_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_21H2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPassive_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_RS1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_RS2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPassive_RS3**  The total number of objects of this type present on this device.
@@ -449,6 +473,8 @@ The following fields are available:
 - **DecisionMatchingInfoPostUpgrade_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_21H1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_21H2**  The total number of objects of this type present on this device.
+- **DecisionMatchingInfoPostUpgrade_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS1**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS2**  The total number of objects of this type present on this device.
 - **DecisionMatchingInfoPostUpgrade_RS3**  The total number of objects of this type present on this device.
@@ -462,6 +488,8 @@ The following fields are available:
 - **DecisionMediaCenter_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_21H1**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_21H2**  The total number of objects of this type present on this device.
+- **DecisionMediaCenter_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_RS1**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_RS2**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_RS3**  The total number of objects of this type present on this device.
@@ -469,17 +497,19 @@ The following fields are available:
 - **DecisionMediaCenter_RS5**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_TH1**  The total number of objects of this type present on this device.
 - **DecisionMediaCenter_TH2**  The total number of objects of this type present on this device.
-- **DecisionSModeState_19H1** The total number of objects of this type present on this device.
+- **DecisionSModeState_19H1**  The total number of objects of this type present on this device.
 - **DecisionSModeState_20H1**  The total number of objects of this type present on this device.
 - **DecisionSModeState_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSModeState_21H1**  The total number of objects of this type present on this device.
-- **DecisionSModeState_RS1** The total number of objects of this type present on this device.
-- **DecisionSModeState_RS2** The total number of objects of this type present on this device.
-- **DecisionSModeState_RS3** The total number of objects of this type present on this device.
-- **DecisionSModeState_RS4** The total number of objects of this type present on this device.
-- **DecisionSModeState_RS5** The total number of objects of this type present on this device.
-- **DecisionSModeState_TH1** The total number of objects of this type present on this device.
-- **DecisionSModeState_TH2** The total number of objects of this type present on this device.
+- **DecisionSModeState_21H2**  The total number of objects of this type present on this device.
+- **DecisionSModeState_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSModeState_RS1**  The total number of objects of this type present on this device.
+- **DecisionSModeState_RS2**  The total number of objects of this type present on this device.
+- **DecisionSModeState_RS3**  The total number of objects of this type present on this device.
+- **DecisionSModeState_RS4**  The total number of objects of this type present on this device.
+- **DecisionSModeState_RS5**  The total number of objects of this type present on this device.
+- **DecisionSModeState_TH1**  The total number of objects of this type present on this device.
+- **DecisionSModeState_TH2**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_19ASetup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_19H1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_19H1Setup**  The total number of objects of this type present on this device.
@@ -487,6 +517,8 @@ The following fields are available:
 - **DecisionSystemBios_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_21H1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemBios_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_RS1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_RS2**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_RS3**  The total number of objects of this type present on this device.
@@ -497,67 +529,79 @@ The following fields are available:
 - **DecisionSystemBios_RS5Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_TH1**  The total number of objects of this type present on this device.
 - **DecisionSystemBios_TH2**  The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_19H1** The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_19H1**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_20H1**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemDiskSize_21H1**  The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_RS1** The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_RS2** The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_RS3** The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_RS4** The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_RS5** The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_TH1** The total number of objects of this type present on this device.
-- **DecisionSystemDiskSize_TH2** The total number of objects of this type present on this device.
-- **DecisionSystemMemory_19H1** The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemDiskSize_TH2**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_19H1**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_20H1**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemMemory_21H1**  The total number of objects of this type present on this device.
-- **DecisionSystemMemory_RS1** The total number of objects of this type present on this device.
-- **DecisionSystemMemory_RS2** The total number of objects of this type present on this device.
-- **DecisionSystemMemory_RS3** The total number of objects of this type present on this device.
-- **DecisionSystemMemory_RS4** The total number of objects of this type present on this device.
-- **DecisionSystemMemory_RS5** The total number of objects of this type present on this device.
-- **DecisionSystemMemory_TH1** The total number of objects of this type present on this device.
-- **DecisionSystemMemory_TH2** The total number of objects of this type present on this device.
+- **DecisionSystemMemory_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemMemory_TH2**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessor_RS2**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_19H1** The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_19H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_20H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuCores_21H1**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_RS1** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_RS2** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_RS3** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_RS4** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_RS5** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_TH1** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuCores_TH2** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_19H1** The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuCores_TH2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_19H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_20H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuModel_21H1**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_RS1** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_RS2** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_RS3** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_RS4** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_RS5** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_TH1** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuModel_TH2** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_19H1** The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuModel_TH2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_19H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_20H1**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionSystemProcessorCpuSpeed_21H1**  The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_RS1** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_RS2** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_RS3** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_RS4** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_RS5** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_TH1** The total number of objects of this type present on this device.
-- **DecisionSystemProcessorCpuSpeed_TH2** The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_21H2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_RS1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_RS2**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_RS3**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_RS4**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_RS5**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_TH1**  The total number of objects of this type present on this device.
+- **DecisionSystemProcessorCpuSpeed_TH2**  The total number of objects of this type present on this device.
 - **DecisionTest_19H1**  The total number of objects of this type present on this device.
 - **DecisionTest_20H1**  The total number of objects of this type present on this device.
 - **DecisionTest_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_21H1**  The total number of objects of this type present on this device.
 - **DecisionTest_21H1Setup**  The total number of objects of this type present on this device.
+- **DecisionTest_21H2**  The total number of objects of this type present on this device.
+- **DecisionTest_21H2Setup**  The total number of objects of this type present on this device.
 - **DecisionTest_RS1**  The total number of objects of this type present on this device.
 - **DecisionTest_RS2**  The total number of objects of this type present on this device.
 - **DecisionTest_RS3**  The total number of objects of this type present on this device.
@@ -565,28 +609,32 @@ The following fields are available:
 - **DecisionTest_RS5**  The total number of objects of this type present on this device.
 - **DecisionTest_TH1**  The total number of objects of this type present on this device.
 - **DecisionTest_TH2**  The total number of objects of this type present on this device.
-- **DecisionTpmVersion_19H1** The total number of objects of this type present on this device.
+- **DecisionTpmVersion_19H1**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_20H1**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionTpmVersion_21H1**  The total number of objects of this type present on this device.
-- **DecisionTpmVersion_RS1** The total number of objects of this type present on this device.
-- **DecisionTpmVersion_RS2** The total number of objects of this type present on this device.
-- **DecisionTpmVersion_RS3** The total number of objects of this type present on this device.
-- **DecisionTpmVersion_RS4** The total number of objects of this type present on this device.
-- **DecisionTpmVersion_RS5** The total number of objects of this type present on this device.
-- **DecisionTpmVersion_TH1** The total number of objects of this type present on this device.
-- **DecisionTpmVersion_TH2** The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_19H1** The total number of objects of this type present on this device.
+- **DecisionTpmVersion_21H2**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_RS1**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_RS2**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_RS3**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_RS4**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_RS5**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_TH1**  The total number of objects of this type present on this device.
+- **DecisionTpmVersion_TH2**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_19H1**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_20H1**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_20H1Setup**  The total number of objects of this type present on this device.
 - **DecisionUefiSecureBoot_21H1**  The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_RS1** The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_RS2** The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_RS3** The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_RS4** The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_RS5** The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_TH1** The total number of objects of this type present on this device.
-- **DecisionUefiSecureBoot_TH2** The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_21H2**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_21H2Setup**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_RS1**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_RS2**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_RS3**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_RS4**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_RS5**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_TH1**  The total number of objects of this type present on this device.
+- **DecisionUefiSecureBoot_TH2**  The total number of objects of this type present on this device.
 - **InventoryApplicationFile**  The total number of objects of this type present on this device.
 - **InventoryDeviceContainer**  The total number of objects of this type present on this device.
 - **InventoryDevicePnp**  The total number of objects of this type present on this device.
@@ -616,6 +664,8 @@ The following fields are available:
 - **Wmdrm_20H1Setup**  The total number of objects of this type present on this device.
 - **Wmdrm_21H1**  The total number of objects of this type present on this device.
 - **Wmdrm_21H1Setup**  The total number of objects of this type present on this device.
+- **Wmdrm_21H2**  The total number of objects of this type present on this device.
+- **Wmdrm_21H2Setup**  The total number of objects of this type present on this device.
 - **Wmdrm_RS1**  The total number of objects of this type present on this device.
 - **Wmdrm_RS2**  The total number of objects of this type present on this device.
 - **Wmdrm_RS3**  The total number of objects of this type present on this device.
@@ -4237,6 +4287,7 @@ The following fields are available:
 - **DriverInfSectionName**  Name of the DDInstall section within the driver INF file.
 - **DriverPackageId**  The ID of the driver package that is staged to the driver store.
 - **DriverProvider**  The driver manufacturer or provider.
+- **DriverShimIds**  List of driver shim IDs.
 - **DriverUpdated**  Indicates whether the driver is replacing an old driver.
 - **DriverVersion**  The version of the driver file.
 - **EndTime**  The time the installation completed.
@@ -4614,13 +4665,13 @@ The following fields are available:
 - **Generic**  A count of generic objects in cache.
 - **HwItem**  A count of hwitem objects in cache.
 - **InventoryAcpiPhatHealthRecord**  A count of ACPI PHAT health records in cache.
-- **InventoryAcpiPhatVersionElement**  A count of ACPI PHAT version elements in cache
+- **InventoryAcpiPhatVersionElement**  A count of ACPI PHAT version elements in cache.
 - **InventoryApplication**  A count of application objects in cache.
 - **InventoryApplicationAppV**  A count of application AppV objects in cache.
-- **InventoryApplicationDriver**  A count of application driver objects in cache
+- **InventoryApplicationDriver**  A count of application driver objects in cache.
 - **InventoryApplicationFile**  A count of application file objects in cache.
-- **InventoryApplicationFramework**  A count of application framework objects in cache
-- **InventoryApplicationShortcut**  A count of application shortcut objects in cache
+- **InventoryApplicationFramework**  A count of application framework objects in cache.
+- **InventoryApplicationShortcut**  A count of application shortcut objects in cache.
 - **InventoryDeviceContainer**  A count of device container objects in cache.
 - **InventoryDeviceInterface**  A count of Plug and Play device interface objects in cache.
 - **InventoryDeviceMediaClass**  A count of device media objects in cache.
@@ -4631,14 +4682,14 @@ The following fields are available:
 - **InventoryDriverPackage**  A count of device objects in cache.
 - **InventoryMiscellaneousOfficeAddIn**  A count of office add-in objects in cache
 - **InventoryMiscellaneousOfficeAddInUsage**  A count of office add-in usage objects in cache.
-- **InventoryMiscellaneousOfficeIdentifiers**  A count of office identifier objects in cache
-- **InventoryMiscellaneousOfficeIESettings**  A count of office ie settings objects in cache
-- **InventoryMiscellaneousOfficeInsights**  A count of office insights objects in cache
-- **InventoryMiscellaneousOfficeProducts**  A count of office products objects in cache
-- **InventoryMiscellaneousOfficeSettings**  A count of office settings objects in cache
-- **InventoryMiscellaneousOfficeVBA**  A count of office vba objects in cache
-- **InventoryMiscellaneousOfficeVBARuleViolations**  A count of office vba rule violations objects in cache
-- **InventoryMiscellaneousUUPInfo**  A count of uup info objects in cache
+- **InventoryMiscellaneousOfficeIdentifiers**  A count of office identifier objects in cache.
+- **InventoryMiscellaneousOfficeIESettings**  A count of office ie settings objects in cache.
+- **InventoryMiscellaneousOfficeInsights**  A count of office insights objects in cache.
+- **InventoryMiscellaneousOfficeProducts**  A count of office products objects in cache.
+- **InventoryMiscellaneousOfficeSettings**  A count of office settings objects in cache.
+- **InventoryMiscellaneousOfficeVBA**  A count of office vba objects in cache.
+- **InventoryMiscellaneousOfficeVBARuleViolations**  A count of office vba rule violations objects in cache.
+- **InventoryMiscellaneousUUPInfo**  A count of uup info objects in cache.
 - **InventoryVersion**  The version of the inventory binary generating the events.
 - **Metadata**  A count of metadata objects in cache.
 - **Orphan**  A count of orphan file objects in cache.
