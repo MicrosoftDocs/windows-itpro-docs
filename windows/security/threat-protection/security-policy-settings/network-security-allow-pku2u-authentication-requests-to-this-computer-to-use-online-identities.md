@@ -88,7 +88,7 @@ If you enable this policy in a hybrid environment, you allow your users to authe
 
 ### Fix/Remediation
 
-This vulnerability was fixed on February 2021 Security Update. More Information on [CVE-2021-25195](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-25195)
+This vulnerability was fixed on February 9, 2021, in the [CVE-2021-25195](https://msrc.microsoft.com/update-guide/vulnerability/CVE-2021-25195) Security Update.
 
 ## Related topics
 
