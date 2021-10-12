@@ -13,7 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
-ms.date: 09/08/2021
+ms.date:
 ms.reviewer:
 ---
 
@@ -23,7 +23,6 @@ ms.reviewer:
  **Applies to**
 
 - Windows 10, version 1809
-
 
 The Basic level gathers a limited set of information that is critical for understanding the device and its configuration including: basic device information, quality-related information, app compatibility, and Microsoft Store. When the level is set to Basic, it also includes the Security level information.
 
