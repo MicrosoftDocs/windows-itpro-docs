@@ -157,7 +157,7 @@ Any user who accesses the system through a dial-up connection has the Dial-Up id
 | Well-Known SID/RID | S-1-5-1 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
-|Default User Rights| none| 
+|Default User Rights| none|
 
 ## Digest Authentication
 
@@ -167,7 +167,7 @@ Any user who accesses the system through a dial-up connection has the Dial-Up id
 | Well-Known SID/RID | S-1-5-64-21 |
 |Object Class|  Foreign Security Principal|
 |Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
-|Default User Rights| none| 
+|Default User Rights| none|
 
 ## Enterprise Domain Controllers
 
