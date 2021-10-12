@@ -9,7 +9,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/08/2020
+ms.date: 10/11/2021
 ---
 
 # Policies in Policy CSP supported by HoloLens 2
@@ -51,6 +51,7 @@ ms.date: 10/08/2020
 - [Experience/AllowCortana](policy-csp-experience.md#experience-allowcortana)
 - [Experience/AllowManualMDMUnenrollment](policy-csp-experience.md#experience-allowmanualmdmunenrollment)
 - [MixedReality/AADGroupMembershipCacheValidityInDays](./policy-csp-mixedreality.md#mixedreality-aadgroupmembershipcachevalidityindays) <sup>9</sup>
+- [MixedReality/AutoLogonUser](./policy-csp-mixedreality.md#mixedreality-autologonuser) <sup>10</sup>
 - [MixedReality/BrightnessButtonDisabled](./policy-csp-mixedreality.md#mixedreality-brightnessbuttondisabled) <sup>9</sup>
 - [MixedReality/FallbackDiagnostics](./policy-csp-mixedreality.md#mixedreality-fallbackdiagnostics) <sup>9</sup>
 - [MixedReality/MicrophoneDisabled](./policy-csp-mixedreality.md#mixedreality-microphonedisabled) <sup>9</sup>
@@ -101,7 +102,13 @@ ms.date: 10/08/2020
 - [Update/ActiveHoursStart](./policy-csp-update.md#update-activehoursstart) <sup>9</sup>
 - [Update/AllowAutoUpdate](policy-csp-update.md#update-allowautoupdate)
 - [Update/AllowUpdateService](policy-csp-update.md#update-allowupdateservice)
+- [Update/AutoRestartNotificationSchedule](policy-csp-update.md#update-autorestartnotificationschedule) <sup>10</sup>
+- [Update/AutoRestartRequiredNotificationDismissal](policy-csp-update.md#update-autorestartrequirednotificationdismissal) <sup>10</sup>
 - [Update/BranchReadinessLevel](policy-csp-update.md#update-branchreadinesslevel)
+- [Update/ConfigureDeadlineForFeatureUpdates](policy-csp-update.md#update-configuredeadlineforfeatureupdates) <sup>10</sup>
+- [Update/ConfigureDeadlineForQualityUpdates](policy-csp-update.md#update-configuredeadlineforqualityupdates) <sup>10</sup>
+- [Update/ConfigureDeadlineGracePeriod](policy-csp-update.md#update-configuredeadlinegraceperiod) <sup>10</sup>
+- [Update/ConfigureDeadlineNoAutoReboot](policy-csp-update.md#update-configuredeadlinenoautoreboot) <sup>10</sup>
 - [Update/DeferFeatureUpdatesPeriodInDays](policy-csp-update.md#update-deferfeatureupdatesperiodindays)
 - [Update/DeferQualityUpdatesPeriodInDays](policy-csp-update.md#update-deferqualityupdatesperiodindays)
 - [Update/ManagePreviewBuilds](policy-csp-update.md#update-managepreviewbuilds)
@@ -109,7 +116,10 @@ ms.date: 10/08/2020
 - [Update/PauseQualityUpdates](policy-csp-update.md#update-pausequalityupdates)
 - [Update/ScheduledInstallDay](policy-csp-update.md#update-scheduledinstallday)
 - [Update/ScheduledInstallTime](policy-csp-update.md#update-scheduledinstalltime)
+- [Update/ScheduleImminentRestartWarning](policy-csp-update.md#update-scheduleimminentrestartwarning) <sup>10</sup>
+- [Update/ScheduleRestartWarning](policy-csp-update.md#update-schedulerestartwarning) <sup>10</sup>
 - [Update/SetDisablePauseUXAccess](policy-csp-update.md#update-setdisablepauseuxaccess)
+- [Update/UpdateNotificationLevel](policy-csp-update.md#update-updatenotificationlevel) <sup>10</sup>
 - [Update/UpdateServiceUrl](policy-csp-update.md#update-updateserviceurl)
 - [Wifi/AllowManualWiFiConfiguration](policy-csp-wifi.md#wifi-allowmanualwificonfiguration)
 - [Wifi/AllowWiFi](policy-csp-wifi.md#wifi-allowwifi) <sup>8</sup>
@@ -125,6 +135,7 @@ Footnotes:
 - 7 - Available in Windows 10, version 1909.
 - 8 - Available in Windows 10, version 2004.
 - 9 - Available in [Windows Holographic, version 20H2](/hololens/hololens-release-notes#windows-holographic-version-20h2)
+- 10 - Available in [Windows Holographic, version 21H2](/hololens/hololens-release-notes#windows-holographic-version-21h2)
 
 ## Related topics
 
