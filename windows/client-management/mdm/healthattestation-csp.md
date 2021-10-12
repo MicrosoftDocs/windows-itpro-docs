@@ -49,9 +49,17 @@ The attestation report provides a health assessment of the boot-time properties 
 <li>Receives a signed report from the Azure Attestation Service instance and stores it in a local cache on the device.</li>
 </ul>
 
+**MAA endpoint**
+Microsoft Azure attestation service is an azure resource, and every intance of the service gets admin configured URL. The URI generated is unique in nature and for the puposes of device health attestation is known as the MAA endpoint.
+
+**JWT (JSON Web Token)**
+JSON Web Token (JWT) is an open standard RFC7519 method for securely transmitting information between parties as a JavaScript Object Notation (JSON) object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret or a public/private key pair.
+
 ### Attestation Flow with Microsoft Azure Attestation Service
 
-![Attestation Flow with Microsoft Azure Attestation Service](./media/maa-attestation-flow.png)
+![Attestation Flow with Microsoft Azure Attestation Service](./images/maa-attestation-flow.png)
+
+<br>
 <p>Attestation flow can be broadly in three main steps:
 <ul>
     <li>An instancne of the Azure Attestation service is setup with an appropriate attestation policy. The attestation policy allows the MDM provider to attest to particular events in the boot as well security features.</li>
@@ -67,11 +75,23 @@ Windows 11 introduces additions to the HealthAttestation CSP node to integrate w
 ./Vendor/MSFT
 HealthAttestation
 ----...
-----TriggerAttestation
+----TriggerAttestation                    |
+----AttestStatus                          | Added in Windows 11
+----GetAttestReport                       |
+----GetServiceCorrelationIDs              |
+----VerifyHealth
+----Status
+----ForceRetrieve
+----Certificate
+----Nonce
+----CorrelationID
+----HASEndpoint
+----TpmReadyStatus
 ----CurrentProtocolVersion
 ----PreferredMaxProtocolVersion
 ----MaxSupportedProtocolVersion
 ```
+
 
 <a href="" id="healthattestation"></a>**./Vendor/MSFT/HealthAttestation**  
 <p>The root node for the device HealthAttestation configuration service provider.</p>
@@ -360,7 +380,7 @@ c:[type=="events", issuer=="AttestationService"] => issue(type="bootRevListInfo"
 <br><li>Call TriggerAttestation with your rpid, AAD token and the attestURI:<br>
 Use the Attestation URL generated in step 1, and append the appropriate api version you want to hit. More information about the api version can be found here Attestation - Attest Tpm - REST API (Azure Azure Attestation) | Microsoft Docs</li>
 <br><li>Call GetAttestReport and decode and parse the report to ensure the attested report contains the required properties:<br>
-The decoded JWT token contains information per the attestation policy.
+GetAttestReport return the signed attestation token as a JWT.The JWT can be decoded to parse the information per the attestation policy.
 <br>
 
     
@@ -421,6 +441,11 @@ The decoded JWT token contains information per the attestation policy.
 
 </li>
 </ol>
+
+### Learn More 
+<p>
+More information about TPM attestation can be found here. <a href="https://docs.microsoft.com/en-us/azure/attestation/" > Microsoft Azure Attestation </a>
+</p>
 
 ## Windhows 10 Device HealthAttestation
 
