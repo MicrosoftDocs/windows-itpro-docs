@@ -136,13 +136,13 @@ For more information on the security features you can configure, manage, and enf
 
   Users can manage some desktop features using **Settings** app > **System** > **Multitasking**. For more information on the end-user experience, see [Multiple desktops in Windows](https://support.microsoft.com/windows/multiple-desktops-in-windows-11-36f52e38-5b4a-557b-2ff9-e1a60c976434).
 
-## Use your same apps, improved
+## Use your same apps, and new apps, improved
 
-- Starting with Windows 11, users can download and install Android apps from the Microsoft Store. This feature is called the **Windows Subsystem for Android**, and allows users to use Android apps on their Windows devices, just like other apps installed from the Microsoft Store.
+- Starting with Windows 11, users can download and install **Android apps** from the Microsoft Store. This feature is called the **Windows Subsystem for Android**, and allows users to use Android apps on their Windows devices, similar to other apps installed from the Microsoft Store.
 
   Users open the Microsoft Store, install the **Amazon Appstore** app, and sign in with their Amazon account. When they sign in, they can search, download, and install Android apps.
 
-  For more information, see [Android apps on Windows 11](/windows/application-management/android-apps-subsystem-windows).
+  For more information, see [Windows Subsystem for Android developer information](/windows/android/wsa).
 
 - Your Windows 10 apps will also work on Windows 11. **[App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure)** is also available if there are some issues.
 

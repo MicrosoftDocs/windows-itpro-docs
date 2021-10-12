@@ -75,7 +75,7 @@ There are different types of apps that can run on your Windows client devices. T
 
 Starting with Windows 11, users can use the Microsoft Store to search, download, and install Android apps. This feature uses the Windows Subsystem for Android, and allows users to interact with Android apps, just like others apps installed from the Microsoft Store.
 
-For more information on Android apps and the Windows Subsystem for Android, see [Android apps on Windows 11](/windows/application-management/android-apps-subsystem-windows).
+For more information on Android apps and the Windows Subsystem for Android, see [Windows Subsystem for Android developer information](/windows/android/wsa).
 
 ## Add or deploy apps to devices
 

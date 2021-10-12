@@ -15,8 +15,6 @@ items:
       href: add-apps-and-features.md
     - name: Sideload apps
       href: sideload-apps-in-windows-10.md
-    - name: Android apps on Windows 11
-      href: android-apps-subsystem-windows.md
     - name: Private app repo on Windows 11
       href: private-app-repository-mdm-company-portal-windows-11.md
     - name: Remove background task resource restrictions
