@@ -233,6 +233,9 @@ This node will retrieve the service generated correlation IDs for the given MDM 
     If Trigger Attestation call failed and no previous data is present. The field remains empty.
     Otherwise, the last service correlation id will be returned.
 
+> **_Note:_** MAA CSP nodes are available on arm64 but is not currently supported.
+
+
 ### MAA CSP Intergation Steps
 <ol>
 <li>Setup a MAA provider instance:<br>
