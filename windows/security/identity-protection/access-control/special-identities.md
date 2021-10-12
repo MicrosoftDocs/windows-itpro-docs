@@ -12,7 +12,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 10/12/2021
 ms.reviewer: 
 ---
 
@@ -39,7 +39,7 @@ The special identity groups are described in the following tables:
 
 -   [Anonymous Logon](#anonymous-logon)
 
--   [Authenticated User](#authenticated-users)
+-   [Authenticated Users](#authenticated-users)
 
 -   [Batch](#batch)
 
@@ -106,7 +106,7 @@ Any user who accesses the system through a sign-in process has the Authenticated
 |  :--: | :--: | 
 | Well-Known SID/RID | S-1-5-11 |
 |Object Class|  Foreign Security Principal|
-|Default Location in Active Directory |cn=System,cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
+|Default Location in Active Directory |cn=WellKnown Security Principals, cn=Configuration, dc=\<forestRootDomain\>|
 |Default User Rights| [Access this computer from the network](/windows/device-security/security-policy-settings/access-this-computer-from-the-network): SeNetworkLogonRight<br>  [Add workstations to domain](/windows/device-security/security-policy-settings/add-workstations-to-domain): SeMachineAccountPrivilege<br>  [Bypass traverse checking](/windows/device-security/security-policy-settings/bypass-traverse-checking): SeChangeNotifyPrivilege|
 
 ## Batch
