@@ -45,9 +45,11 @@ Refer to the following list for what each state means:
 
 Microsoft uses diagnostic data to determine whether devices that use Windows Update are ready for a feature update in order to ensure a smooth experience. When Microsoft determines a device is not ready to update due to a known issue, a *safeguard hold* is generated to delay the device's upgrade and protect the end-user experience. Holds are released over time as diagnostic data is analyzed and fixes are addressed. Details are provided on some, but not all safeguard holds on the Windows client release information pages for any given release. 
 
-## Queries for safeguard holds
+### Queries for safeguard holds
 
-Update Compliance reporting offers two queries to help you retrieve data related to safeguard holds. The first query shows the device data for all devices that are affected by safeguard holds. The second query shows data specific to devices running the target build.
+Update Compliance reporting offers two queries to help you retrieve data related to safeguard holds. These queries show data for devices that are configured to send diagnostic data at *Optional* level (previously *Full*). For Windows 10 devices, devices configured to send diagnostic data at *Enhanced* level are also included.
+
+The first query shows the device data for all devices that are affected by safeguard holds. The second query shows data specific to devices running the target build.
 
 ![Left pane showing Need Attention, Security update status, feature update status, and Windows Defender AV status, with Need Attention selected. Right pane shows the list of queries relevant to the Need Attention status, with "Devices with a safeguard hold" and "Target build distribution of devices with a safeguard hold" queries highlighted](images/UC_workspace_safeguard_queries.png)
 
