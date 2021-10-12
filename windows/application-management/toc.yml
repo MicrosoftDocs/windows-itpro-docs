@@ -15,6 +15,8 @@ items:
       href: add-apps-and-features.md
     - name: Sideload apps
       href: sideload-apps-in-windows-10.md
+    - name: Android apps on Windows 11
+      href: android-apps-subsystem-windows.md
     - name: Private app repo on Windows 11
       href: private-app-repository-mdm-company-portal-windows-11.md
     - name: Remove background task resource restrictions
@@ -23,7 +25,7 @@ items:
       href: manage-windows-mixed-reality.md
 - name: Application Virtualization (App-V)
   items: 
-    - name: App-V for Windows 10 overview
+    - name: App-V for Windows overview
       href: app-v/appv-for-windows.md
     - name: Getting Started
       items: 
@@ -266,5 +268,5 @@ items:
       href: per-user-services-in-windows.md
     - name: Disabling System Services in Windows Server
       href: /windows-server/security/windows-services/security-guidelines-for-disabling-system-services-in-windows-server
-    - name: How to keep apps removed from Windows 10 from returning during an update
+    - name: How to keep apps removed from Windows from returning during an update
       href: remove-provisioned-apps-during-update.md

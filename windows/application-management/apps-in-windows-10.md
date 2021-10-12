@@ -71,6 +71,12 @@ There are different types of apps that can run on your Windows client devices. T
 
   Using an MDM provider, you can create shortcuts to your web apps and progressive web apps on devices.
 
+## Android apps
+
+Starting with Windows 11, users can use the Microsoft Store to search, download, and install Android apps. This feature uses the Windows Subsystem for Android, and allows users to interact with Android apps, just like others apps installed from the Microsoft Store.
+
+For more information on Android apps and the Windows Subsystem for Android, see [Android apps on Windows 11](/windows/application-management/android-apps-subsystem-windows).
+
 ## Add or deploy apps to devices
 
 When your apps are ready, you can add or deploy these apps to your Windows devices. This section lists some common options.
