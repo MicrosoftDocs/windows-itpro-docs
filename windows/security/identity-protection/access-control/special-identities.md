@@ -12,7 +12,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 10/12/2021
 ms.reviewer: 
 ---
 
@@ -39,7 +39,7 @@ The special identity groups are described in the following tables:
 
 -   [Anonymous Logon](#anonymous-logon)
 
--   [Authenticated User](#authenticated-users)
+-   [Authenticated Users](#authenticated-users)
 
 -   [Batch](#batch)
 
