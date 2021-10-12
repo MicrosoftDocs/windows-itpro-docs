@@ -51,7 +51,7 @@ The attestation report provides a health assessment of the boot-time properties 
 
 ### Attestation Flow with Microsoft Azure Attestation Service
 
-#add image
+![Attestation Flow with Microsoft Azure Attestation Service](./media/maa-attestation-flow.png)
 <p>Attestation flow can be broadly in three main steps:
 <ul>
     <li>An instancne of the Azure Attestation service is setup with an appropriate attestation policy. The attestation policy allows the MDM provider to attest to particular events in the boot as well security features.</li>
