@@ -36,6 +36,13 @@ Next, you need to synchronize the on-premises Active Directory with Azure Active
 
 <br>
 
+If the user principal name (UPN) in your on-premises Active Directory is different from the UPN in Azure AD, you also need to complete the following steps - 
+- Configure Azure AD Connect to sync the user's on-premises UPN to the onPremisesUserPrincipalName attribute in Azure AD.
+- Add the domain name of the on-premises UPN as a [verified domain](/azure/active-directory/fundamentals/add-custom-domain) in Azure AD. 
+
+> [!NOTE]
+> Windows Hello for Business Hybrid key trust is not supported if your users' on-premises domain cannot be added as a verified domain in Azure AD.
+
 <hr>
 
 ## Follow the Windows Hello for Business hybrid key trust deployment guide
