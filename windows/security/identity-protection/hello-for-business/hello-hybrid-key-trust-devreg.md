@@ -33,17 +33,26 @@ You are ready to configure device registration for your hybrid environment. Hybr
 > * Azure AD joined devices
 > * Hybrid Azure AD joined devices
 >
-> You can learn about this and more by reading [Introduction to Device Management in Azure Active Directory.](/azure/active-directory/device-management-introduction)
+> You can learn about this and more by reading [What is a device identity](/azure/active-directory/devices/overview)
 
-## Configure Azure for Device Registration
+## Configure Hybrid Azure AD join
 Begin configuring device registration to support Hybrid Windows Hello for Business by configuring device registration capabilities in Azure AD. 
 
-To do this, follow the **Configure device settings** steps under [Setting up Azure AD Join in your organization](/azure/active-directory/devices/device-management-azure-portal).
+Follow the guidance on the [How to configure hybrid Azure Active Directory joined devices](/azure/active-directory/devices/hybrid-azuread-join-plan) page. In the **Select your scenario based on your identity infrastructure** section, identify your configuration (either **Managed environment** or **federated environment**) and perform only the steps applicable to your environment.
 
-Next, follow the guidance on the [How to configure hybrid Azure Active Directory joined devices](/azure/active-directory/devices/hybrid-azuread-join-manual) page. In the **Configuration steps** section, identify your configuration at the top of the table (either **Windows current and password hash sync** or **Windows current and federation**) and perform only the steps identified with a check mark.
+<br>
+
+If the user principal name (UPN) in your on-premises Active Directory is different from the UPN in Azure AD, you also need to complete the following steps - 
+- Configure Azure AD Connect to sync the user's on-premises UPN to the onPremisesUserPrincipalName attribute in Azure AD.
+- Add the domain name of the on-premises UPN as a [verified domain](/azure/active-directory/fundamentals/add-custom-domain) in Azure AD. 
+
+You can learn more about this scenario by reading [review on-premises UPN support for Hybrid Azure Ad join](azure/active-directory/devices/hybrid-azuread-join-plan#review-on-premises-ad-users-upn-support-for-hybrid-azure-ad-join)
+
+> [!NOTE]
+> Windows Hello for Business Hybrid key trust is not supported if your users' on-premises domain cannot be added as a verified domain in Azure AD.
 
 
-<br><br>
+<br>
 
 <hr>
 
