@@ -1,6 +1,6 @@
 ---
-title: Use a script to install a desktop app in provisioning packages (Windows 10)
-description: With Windows 10, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
+title: Use a script to install a desktop app in provisioning packages (Windows 10/11)
+description: With Windows 10/11, you can create provisioning packages that let you quickly and efficiently configure a device without having to install a new image.
 ms.prod: w10
 ms.mktglfcycl: deploy
 ms.sitesec: library
@@ -8,8 +8,7 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2017
-ms.reviewer: 
+ms.reviewer: gkomatsu
 manager: dansimp
 ---
 
@@ -19,14 +18,9 @@ manager: dansimp
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
+-   Windows 11
 
-This walkthrough describes how to leverage the ability to include scripts in a Windows 10 provisioning package to install Win32 applications. Scripted operations other than installing apps can also be performed, however, some care is needed in order to avoid unintended behavior during script execution (see [Remarks](#remarks) below). 
-
->**Prerequisite**: [Windows Assessment and Deployment Kit (ADK) for Windows 10](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit), version 1511 or higher 
-
->[!NOTE]
->This scenario is only supported for installing applications on Windows 10 for desktop, version 1511 or higher.
+This walkthrough describes how to include scripts in a Windows client provisioning package to install Win32 applications. Scripted operations other than installing apps can also be performed. However, some care is needed to avoid unintended behavior during script execution (see [Remarks](#remarks) below).
 
 ## Assemble the application assets
 
@@ -34,12 +28,11 @@ This walkthrough describes how to leverage the ability to include scripts in a W
 
 2. If you need to include a directory structure of files, you will need to cab the assets for easy inclusion in the provisioning packages.
 
-<span id="cab" />
 ## Cab the application assets
 
-1. Create a .DDF file as below, replacing *file1* and *file2* with the files you want to package, and adding the name of file/directory.
+1. Create a `.DDF` file as below, replacing *file1* and *file2* with the files you want to package, and adding the name of file/directory.
 
-    ```
+    ```ddf
     ;*** MSDN Sample Source Code MakeCAB Directive file example
     
     ;
@@ -89,15 +82,15 @@ This walkthrough describes how to leverage the ability to include scripts in a W
 
 2. Use makecab to create the cab files.
 
-    ```
+    ```makecab
     Makecab -f <path to DDF file>
     ```
 
 ## Create the script to install the application
 
-In Windows 10, version 1607 and earlier, create a script to perform whatever work is needed to install the application(s). The following examples are provided to help get started authoring the orchestrator script that will execute the required installers. In practice, the orchestrator script may reference many more assets than those in these examples.
+Create a script to perform whatever work is needed to install the application(s). The following examples are provided to help get started authoring the orchestrator script that will execute the required installers. In practice, the orchestrator script may reference many more assets than those in these examples.
 
-In Windows 10, version 1703, you don’t need to create an orchestrator script. You can have one command line per app. If necessary, you can create a script that logs the output per app, as mentioned below (rather than one orchestrator script for the entire provisioning package). 
+You don’t need to create an orchestrator script. You can have one command line per app. If necessary, you can create a script that logs the output per app, as mentioned below (rather than one orchestrator script for the entire provisioning package). 
 
 >[!NOTE]
 >All actions performed by the script must happen silently, showing no UI and requiring no user interaction.
@@ -108,15 +101,16 @@ In Windows 10, version 1703, you don’t need to create an orchestrator script. 
 
 Granular logging is not built in, so the logging must be built into the script itself. Here is an example script that logs ‘Hello World’ to a logfile. When run on the device, the logfile will be available after provisioning is completed. As you will see in the following examples, it’s recommended that you log each action that your script performs.
 
-```
+```log
 set LOGFILE=%SystemDrive%\HelloWorld.log
 echo Hello, World >> %LOGFILE% 
 ```
+
 ### .exe example
 
-This example script shows how to create a log output file on the system drive, install an app from a .exe installer, and echo the results to the log file.
+This example script shows how to create a log output file on the system drive, install an app from an `.exe` installer, and echo the results to the log file.
 
-```
+```exe
 set LOGFILE=%SystemDrive%\Fiddler_install.log
 echo Installing Fiddler.exe >> %LOGFILE%
 fiddler4setup.exe /S >> %LOGFILE%
@@ -127,7 +121,7 @@ echo result: %ERRORLEVEL% >> %LOGFILE%
 
 This is the same as the previous installer, but installs the app from an MSI installer. Notice that msiexec is called with the /quiet flag in order to meet the silent requirement of scripts run from within a provisioning package.
 
-```
+```msi
 set LOGFILE=%SystemDrive%\IPOverUsb_install.log
 echo Installing IpOverUsbInstaller.msi >> %LOGFILE%
 msiexec /i IpOverUsbInstaller.msi /quiet >> %LOGFILE%
@@ -136,9 +130,9 @@ echo result: %ERRORLEVEL% >> %LOGFILE%
 
 ### PowerShell example
 
-This is an example script with logging that shows how to run a powershell script from the provisioning commands setting. Note that the PowerShell script referenced from this example must also be included in the package, and obey the same requirements as all scripts run from within the provisioning package: it must execute silently, with no user interaction.
+This is an example script with logging that shows how to run a PowerShell script from the provisioning commands setting. The PowerShell script referenced from this example must also be included in the package, and obey the same requirements as all scripts run from within the provisioning package: it must execute silently, with no user interaction.
 
-```
+```powershell
 set LOGFILE=%SystemDrive%\my_powershell_script.log
 echo Running my_powershell_script.ps1 in system context >> %LOGFILE%
 echo Executing "PsExec.exe -accepteula -i -s cmd.exe /c powershell.exe my_powershell_script.ps1" >> %LOGFILE%
@@ -147,11 +141,12 @@ echo result: %ERRORLEVEL% >> %LOGFILE%
 ```
 
 <span id="cab-extract" />
+
 ### Extract from a .CAB example
 
-This example script shows expansion of a .cab from the provisioning commands script, as well as installation of the expanded setup.exe
+This example script shows expansion of a .cab from the provisioning commands script, and installation of the expanded setup.exe
 
-```
+```cab
 set LOGFILE=%SystemDrive%\install_my_app.log
 echo Expanding installer_assets.cab >> %LOGFILE%
 expand -r installer_assets.cab -F:* . >> %LOGFILE%
@@ -163,9 +158,9 @@ echo result: %ERRORLEVEL% >> %LOGFILE%
 
 ### Calling multiple scripts in the package
 
-In Windows 10, version 1703, your provisioning package can include multiple CommandLines.
+Your provisioning package can include multiple CommandLines.
 
-In Windows 10, version 1607 and earlier, you are allowed one CommandLine per provisioning package. The batch files shown above are orchestrator scripts that manage the installation and call any other scripts included in the provisioning package. The orchestrator script is what should be invoked from the CommandLine specified in the package. 
+You are allowed one CommandLine per provisioning package. The batch files shown above are orchestrator scripts that manage the installation and call any other scripts included in the provisioning package. The orchestrator script is what should be invoked from the CommandLine specified in the package. 
 
 Here’s a table describing this relationship, using the PowerShell example from above:
 
@@ -174,16 +169,16 @@ Here’s a table describing this relationship, using the PowerShell example from
 | --- | --- | --- |
 | ProvisioningCommands/DeviceContext/CommandLine | cmd /c PowerShell_Example.bat | The command line needed to invoke the orchestrator script. |
 | ProvisioningCommands/DeviceContext/CommandFiles | PowerShell_Example.bat | The single orchestrator script referenced by the command line that handles calling into the required installers or performing any other actions such as expanding cab files. This script must do the required logging. |
-| ProvisioningCommands/DeviceContext/CommandFiles | my_powershell_script.ps1 | Other assets referenced by the orchestrator script. In this example there is only one, but there could be many assets referenced here. One common use case is using the orchestrator to call a series of install.exe or setup.exe installers to install several applications. Each of those installers must be included as an asset here. |
+| ProvisioningCommands/DeviceContext/CommandFiles | my_powershell_script.ps1 | Other assets referenced by the orchestrator script. In this example, there is only one, but there could be many assets referenced here. One common use case is using the orchestrator to call a series of install.exe or setup.exe installers to install several applications. Each of those installers must be included as an asset here. |
 
  
-### Add script to provisioning package (Windows 10, version 1607)
+### Add script to provisioning package
  
 When you have the batch file written and the referenced assets ready to include, you can add them to a provisioning package in the Window Configuration Designer. 
 
 Using Windows Configuration Designer, specify the full details of how the script should be run in the CommandLine setting in the provisioning package. This includes flags or any other parameters that you would normally type on the command line. So for example if the package contained an app installer called install.exe and a script used to automate the install called InstallMyApp.bat, the `ProvisioningCommands/DeviceContext/CommandLine` setting should be configured to: 
 
-```
+```bat
 cmd /c InstallMyApp.bat
 ```
 
@@ -201,20 +196,21 @@ When you are done, [build the package](provisioning-create-package.md#build-pack
  
 
 ### Remarks
+
 1. No user interaction or console output is supported via ProvisioningCommands. All work needs to be silent. If your script attempts to do any of the following it will cause undefined behavior, and could put the device in an unrecoverable state if executed during setup or the Out of Box Experience:
     a. Echo to console
     b. Display anything on the screen
     c. Prompt the user with a dialog or install wizard
 2. When applied at first boot, provisioning runs early in the boot sequence and before a user context has been established; care must be taken to only include installers that can run at this time. Other installers can be provisioned via a management tool.
-3. If the device is put into an unrecoverable state because of a bad script, you can reset it using [recovery options in Windows 10](https://support.microsoft.com/help/12415/windows-10-recovery-options).
+3. If the device is put into an unrecoverable state because of a bad script, you can reset it using [recovery options in Windows client](https://support.microsoft.com/help/12415/windows-10-recovery-options).
 4. The CommandFile assets are deployed on the device to a temporary folder unique to each package.
-    - For Windows 10, version 1607 and earlier:
-        a. For packages added during the out of box experience, this is usually in `%WINDIR%\system32\config\systemprofile\appdata\local\Temp\ProvisioningPkgTmp\<{PackageIdGuid}>\Commands`
-        b. For packages added by double-clicking on an already deployed device, this will be in the temp folder for the user executing the PPKG: `%TMP%\ProvisioningPkgTmp\<{PackageIdGuid}>\Commands`
-    - For Windows 10, version 1703:
-        a. For packages added during the out of box experience, this is usually in `%WINDIR%\system32\config\systemprofile\appdata\local\Temp\ProvisioningPkgTmp\<{PackageIdGuid}>\Commands\0`
+
+    1. For packages added during the out of box experience, this is usually in `%WINDIR%\system32\config\systemprofile\appdata\local\Temp\ProvisioningPkgTmp\<{PackageIdGuid}>\Commands\0`
+
         The `0` after `Commands\` refers to the installation order and indicates the first app to be installed. The number will increment for each app in the package.
-        b. For packages added by double-clicking on an already deployed device, this will be in the temp folder for the user executing the provisioning package: `%TMP%\ProvisioningPkgTmp\<{PackageIdGuid}>\Commands\0`
+
+    2. For packages added by double-clicking on an already deployed device, this will be in the temp folder for the user executing the provisioning package: `%TMP%\ProvisioningPkgTmp\<{PackageIdGuid}>\Commands\0`
+
 5. The command line will be executed with the directory the CommandFiles were deployed to as the working directory. This means you do not need to specific the full path to assets in the command line or from within any script.
 6. The runtime provisioning component will attempt to run the scripts from the provisioning package at the earliest point possible, depending on the stage when the PPKG was added. For example, if the package was added during the Out-of-Box Experience, it will be run immediately after the package is applied, while the out of box experience is still happening. This is before the user account configuration options are presented to the user. A spinning progress dialog will appear and “please wait” will be displayed on the screen. 
 
@@ -223,15 +219,15 @@ When you are done, [build the package](provisioning-create-package.md#build-pack
 7. The scripts are executed in the background as the rest of provisioning continues to run. For packages added on existing systems using the double-click to install, there is no notification that provisioning or script execution has completed
 
 
-## Related topics
+## Related articles
 
-- [Provisioning packages for Windows 10](provisioning-packages.md)
-- [How provisioning works in Windows 10](provisioning-how-it-works.md)
+- [Provisioning packages for Windows client](provisioning-packages.md)
+- [How provisioning works in Windows client](provisioning-how-it-works.md)
 - [Install Windows Configuration Designer](provisioning-install-icd.md)
 - [Create a provisioning package](provisioning-create-package.md)
 - [Apply a provisioning package](provisioning-apply-package.md)
 - [Settings changed when you uninstall a provisioning package](provisioning-uninstall-package.md)
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
-- [PowerShell cmdlets for provisioning Windows 10 (reference)](provisioning-powershell.md)
+- [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)

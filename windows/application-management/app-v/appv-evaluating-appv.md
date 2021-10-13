@@ -1,6 +1,6 @@
 ---
-title: Evaluating App-V (Windows 10)
-description: Learn how to evaluate App-V for Windows 10 in a lab environment before deploying into a production environment.
+title: Evaluating App-V (Windows 10/11)
+description: Learn how to evaluate App-V for Windows 10/11 in a lab environment before deploying into a production environment.
 author: greg-lindsay
 ms.pagetype: mdop, appcompat, virtualization
 ms.mktglfcycl: deploy
@@ -15,8 +15,10 @@ ms.author: greglin
 
 # Evaluating App-V
 
-**Applies to**
--   Windows 10, version 1607
+[!INCLUDE [Applies to Windows client versions](../includes/applies-to-windows-client-versions.md)]
+
+> [!NOTE]
+> [!INCLUDE [Application Virtualization will be end of life in April 2026](../includes/app-v-end-life-statement.md)]
 
 Before you deploy App-V into a production environment, you should evaluate it in a lab environment. You can use the information in this topic to set up App-V in a lab environment for evaluation purposes only.
 

@@ -1,6 +1,6 @@
 ---
 title: How Windows Update works 
-description: In this article, learn about the process Windows Update uses to download and install updates on a Windows 10 devices.
+description: In this article, learn about the process Windows Update uses to download and install updates on a Windows client devices.
 ms.prod: w10
 ms.mktglfcycl: 
 audience: itpro
@@ -15,9 +15,12 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# How does Windows Update work?
+# How Windows Update works
 
-> Applies to: Windows 10
+**Applies to**
+
+-   Windows 10
+-   Windows 11
 
 The Windows Update workflow has four core areas of functionality: 
 

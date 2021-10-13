@@ -1,7 +1,7 @@
 ---
-title: Windows Hello for Business Overview (Windows 10)
+title: Windows Hello for Business Overview (Windows)
 ms.reviewer: An overview of Windows Hello for Business
-description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10.
+description: Learn how Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices in Windows 10 and Windows 11.
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -20,6 +20,7 @@ localizationpriority: medium
 
 **Applies to**
 - Windows 10
+- Windows 11
 
 In Windows 10, Windows Hello for Business replaces passwords with strong two-factor authentication on PCs and mobile devices. This authentication consists of a new type of user credential that is tied to a device and uses a biometric or PIN.
 
@@ -47,7 +48,7 @@ As an administrator in an enterprise or educational organization, you can create
  Windows Hello provides reliable, fully integrated biometric authentication based on facial recognition or fingerprint matching. Windows Hello uses a combination of special infrared (IR) cameras and software to increase accuracy and guard against spoofing. Major hardware vendors are shipping devices that have integrated Windows Hello-compatible cameras. Fingerprint reader hardware can be used or added to devices that don't currently have it. On devices that support Windows Hello, an easy biometric gesture unlocks users' credentials.
  
 - **Facial recognition**. This type of biometric recognition uses special cameras that see in IR light, which allows them to reliably tell the difference between a photograph or scan and a living person. Several vendors are shipping external cameras that incorporate this technology, and major laptop manufacturers are incorporating it into their devices, as well. 
-- **Fingerprint recognition**. This type of biometric recognition uses a capacitive fingerprint sensor to scan your fingerprint. Fingerprint readers have been available for Windows computers for years, but the current generation of sensors is significantly more reliable and less error-prone. Most existing fingerprint readers (whether external or integrated into laptops or USB keyboards) work with Windows 10. 
+- **Fingerprint recognition**. This type of biometric recognition uses a capacitive fingerprint sensor to scan your fingerprint. Fingerprint readers have been available for Windows computers for years, but the current generation of sensors is significantly more reliable and less error-prone. Most existing fingerprint readers (whether external or integrated into laptops or USB keyboards) work with Windows 10 and Windows 11. 
 
 Windows stores biometric data that is used to implement Windows Hello securely on the local device only. The biometric data doesn't roam and is never sent to external devices or servers. Because Windows Hello only stores biometric identification data on the device, there's no single collection point an attacker can compromise to steal biometric data. For more information about biometric authentication with Windows Hello for Business, see [Windows Hello biometrics in the enterprise](hello-biometrics-in-enterprise.md).
 

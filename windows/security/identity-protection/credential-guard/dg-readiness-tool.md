@@ -18,7 +18,11 @@ ms.reviewer:
 # Windows Defender Device Guard and Windows Defender Credential Guard hardware readiness tool
 
 **Applies to:**
-- Windows 10 Enterprise Edition
+- Windows 10
+- Windows 11
+- Windows Server 2016
+- Windows Server 2019
+- Windows Server 2022
 
 ```powershell
 # Script to find out if a machine is Device Guard compliant.
@@ -777,7 +781,7 @@ function CheckOSSKU
 
 function CheckOSArchitecture
 {
-    $OSArch = $(gwmi win32_operatingsystem).OSArchitecture.ToLower()
+    $OSArch = $(Get-WmiObject win32_operatingsystem).OSArchitecture.ToLower()
     Log $OSArch
     if($OSArch -match ("^64\-?\s?bit"))
     {
@@ -815,9 +819,9 @@ function CheckSecureBootState
 
 function CheckVirtualization
 {
-    $_vmmExtension = $(gwmi -Class Win32_processor).VMMonitorModeExtensions
-    $_vmFirmwareExtension = $(gwmi -Class Win32_processor).VirtualizationFirmwareEnabled
-    $_vmHyperVPresent =  (gcim -Class Win32_ComputerSystem).HypervisorPresent
+    $_vmmExtension = $(Get-WMIObject -Class Win32_processor).VMMonitorModeExtensions
+    $_vmFirmwareExtension = $(Get-WMIObject -Class Win32_processor).VirtualizationFirmwareEnabled
+    $_vmHyperVPresent =  (Get-CimInstance -Class Win32_ComputerSystem).HypervisorPresent
     Log "VMMonitorModeExtensions $_vmmExtension"
     Log "VirtualizationFirmwareEnabled $_vmFirmwareExtension"
     Log "HyperVisorPresent $_vmHyperVPresent"
@@ -1043,7 +1047,7 @@ if(!$TestForAdmin)
     exit
 }
 
-$isRunningOnVM = (get-wmiobject win32_computersystem).model
+$isRunningOnVM = (Get-WmiObject win32_computersystem).model
 if($isRunningOnVM.Contains("Virtual"))
 {
     LogAndConsoleWarning "Running on a Virtual Machine. DG/CG is supported only if both guest VM and host machine are running with Windows 10, version 1703 or later with English localization."

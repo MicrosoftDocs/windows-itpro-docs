@@ -5,8 +5,8 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
-ms.date: 07/07/2020
+author: dansimp
+ms.date: 10/11/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -50,8 +50,8 @@ Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 The following list shows the supported values:
 - 0 - Disable Microsoft Defender Application Guard
 - 1 - Enable Microsoft Defender Application Guard for Microsoft Edge ONLY
-- 2 - Enable Microsoft Defender Application Guard for isolated Windows environments ONLY
-- 3 - Enable Microsoft Defender Application Guard for Microsoft Edge AND isolated Windows environments
+- 2 - Enable Microsoft Defender Application Guard for isolated Windows environments ONLY (added in Windows 10, version 2004)
+- 3 - Enable Microsoft Defender Application Guard for Microsoft Edge AND isolated Windows environments (added in Windows 10, version 2004)
 
 <a href="" id="clipboardfiletype"></a>**Settings/ClipboardFileType**  
 Determines the type of content that can be copied from the host to Application Guard environment and vice versa. 
@@ -279,7 +279,7 @@ Value type is integer. Supported operation is Get.
 - Bit 6 - Set to 1 when system reboot is required.
 
 <a href="" id="platformstatus"></a>**PlatformStatus**  
-Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device. 
+Added in Windows 10, version 2004. Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device. 
 
 Value type is integer. Supported operation is Get.
 

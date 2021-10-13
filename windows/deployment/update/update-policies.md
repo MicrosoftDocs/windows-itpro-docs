@@ -1,8 +1,8 @@
 ---
-title: Policies for update compliance, activity, and end-user experience
+title: Policies for update compliance, activity, and user experience
 ms.reviewer: 
 manager: laurawi
-description: 
+description: Explanation and recommendations for settings
 keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -14,7 +14,13 @@ ms.topic: article
 ms.collection: M365-modern-desktop
 ---
 
-# Policies for update compliance, activity, and end-user experience
+# Policies for update compliance, activity, and user experience
+
+**Applies to**
+
+- Windows 10
+- Windows 11
+
 Keeping devices up to date is the best way to keep them working smoothly and securely. 
 
 ## Deadlines for update compliance
@@ -25,7 +31,7 @@ deadline approaches, and then prioritize velocity as the deadline nears, while s
 ### Deadlines
 
 Beginning with Windows 10, version 1903 and with the August 2019 security update for Windows 10, version 1709
-and late, a new policy was introduced to replace older deadline-like policies: **Specify deadlines for automatic updates and restarts**.
+and later (including Windows 11), a new policy was introduced to replace older deadline-like policies: **Specify deadlines for automatic updates and restarts**.
 
 The older policies started enforcing deadlines once the device reached a “restart pending” state for
 an update. The new policy starts the countdown for the update installation deadline from when the
@@ -33,14 +39,10 @@ update is published plus any deferral. In addition, this policy includes a confi
 to opt out of automatic restarts until the deadline is reached (although we recommend always allowing automatic
 restarts for maximum update velocity).
 
-> [!IMPORTANT]
-> If you use the new **Specify deadlines for automatic updates and restarts** setting in Windows 10,
-> version 1903, you must disable the [older deadline policies](wufb-compliancedeadlines.md#prior-to-windows-10-version-1709) because they could conflict.
-
 We recommend you set deadlines as follows:
 - Quality update deadline, in days: 3
 - Feature update deadline, in days: 7
-- 
+
 Notifications are automatically presented to the user at appropriate times, and users can choose to be reminded
 later, to reschedule, or to restart immediately, depending on how close the deadline is. We recommend that you
 do **not** set any notification policies, because they are automatically configured with appropriate defaults. An exception is if you
@@ -172,7 +174,7 @@ The default timeout on devices that support traditional sleep is set to three ho
 
 ## Old or conflicting policies
 
-Each release of Windows 10 can introduce new policies to make the experience better for both administrators and their organizations. When we release a new client policy, we either release it purely for that release and later or we backport the policy to make it available on earlier versions. 
+Each release of Windows client can introduce new policies to make the experience better for both administrators and their organizations. When we release a new client policy, we either release it purely for that release and later or we backport the policy to make it available on earlier versions. 
 
 > [!IMPORTANT]
 > If you are using Group Policy, note that we don't update the old ADMX templates and you must use the newer (1903) ADMX template in order to use the newer policy. Also, if you are
