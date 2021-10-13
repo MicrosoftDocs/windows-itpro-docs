@@ -95,6 +95,9 @@ It's fundamentally important to understand which deployment model to use for a s
 
 A deployment's trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trust types: key trust and certificate trust.
 
+> [!NOTE]
+> Windows Hello for Business is introducing a new trust model called cloud trust in early 2022. This trust model will enable deployment of Windows Hello for Business using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). More information will be available on Windows Hello for Business cloud trust once it is generally available.
+
 The key trust type does not require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 or later domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
 The certificate trust type issues authentication certificates to end users.  Users authenticate using a certificate requested using a hardware-bound key created during the built-in provisioning experience.  Unlike key trust, certificate trust does not require Windows Server 2016 domain controllers (but still requires [Windows Server 2016 or later Active Directory schema](./hello-hybrid-cert-trust-prereqs.md#directories)).  Users can use their certificate to authenticate to any Windows Server 2008 R2, or later, domain controller.

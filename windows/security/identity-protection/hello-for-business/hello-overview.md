@@ -97,6 +97,9 @@ Windows Hello for Business can use either keys (hardware or software) or certifi
 
 Windows Hello for Business with a key does not support supplied credentials for RDP. RDP does not support authentication with a key or a self signed certificate. RDP with Windows Hello for Business is supported with certificate based deployments as a supplied credential. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
 
+> [!NOTE]
+> Windows Hello for Business is introducing a new trust model called cloud trust in early 2022. This trust model will enable deployment of Windows Hello for Business using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). More information will be available on Windows Hello for Business cloud trust once it is generally available.
+
 ## Learn more
 
 [Implementing strong user authentication with Windows Hello for Business](https://www.microsoft.com/en-us/itshowcase/implementing-strong-user-authentication-with-windows-hello-for-business)

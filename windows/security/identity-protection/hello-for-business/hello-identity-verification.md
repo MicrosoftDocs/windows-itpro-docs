@@ -22,7 +22,7 @@ ms.date: 1/22/2021
 
 This article lists the infrastructure requirements for the different deployment models for Windows Hello for Business.
 
-## Cloud Only Deployment
+## Azure AD Cloud Only Deployment
 
 * Windows 10, version 1511 or later, or Windows 11
 * Microsoft Azure Account
@@ -34,6 +34,9 @@ This article lists the infrastructure requirements for the different deployment 
 ## Hybrid Deployments
 
 The table shows the minimum requirements for each deployment. For key trust in a multi-domain/multi-forest deployment, the following requirements are applicable for each domain/forest that hosts Windows Hello for business components or is involved in the Kerberos referral process.
+
+> [!NOTE]
+> Windows Hello for Business is introducing a new trust model called cloud trust in early 2022. This trust model will enable deployment of Windows Hello for Business using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). More information will be available on Windows Hello for Business cloud trust once it is generally available.
 
 | Key trust</br>Group Policy managed | Certificate trust</br>Mixed managed | Key trust</br>Modern managed | Certificate trust</br>Modern managed | 
 | --- | --- | --- | --- |
