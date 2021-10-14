@@ -60,7 +60,7 @@ The table shows the minimum requirements for each deployment. For key trust in a
 >   - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 >
 > - On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.
-
+>
 >   **Requirements:**
 >   - Reset from settings - Windows 10, version 1703, Professional
 >   - Reset above lock screen - Windows 10, version 1709, Professional
