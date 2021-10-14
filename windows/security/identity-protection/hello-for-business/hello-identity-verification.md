@@ -53,16 +53,18 @@ The table shows the minimum requirements for each deployment. For key trust in a
 | Azure AD Premium, optional | Azure AD Premium, needed for device write-back | Azure AD Premium, optional for automatic MDM enrollment | Azure AD Premium, optional for automatic MDM enrollment |
 
 > [!Important]
-> 1. Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models. <br/> 
-> **Requirements:**
-> - Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903
-> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+> - Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models.
 >
-> 2. On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.<br/>
-> **Requirements:**
-> - Reset from settings - Windows 10, version 1703, Professional
-> - Reset above lock screen - Windows 10, version 1709, Professional
-> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+>   **Requirements:**
+>   - Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903
+>   - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+>
+> - On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.
+
+>   **Requirements:**
+>   - Reset from settings - Windows 10, version 1703, Professional
+>   - Reset above lock screen - Windows 10, version 1709, Professional
+>   - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 ## On-premises Deployments
 
