@@ -376,9 +376,9 @@ Creating the policy to prevent all printers from being installed:
 
 1. If you have not completed step #9 – follow these steps:
 
-    - Uninstall your printer: Device Manager > Printers > right click the Canon Printer > click “Uninstall device”.
-    - For USB printer – unplug and plug back the cable; for network device – make a search for the printer in the Windows Settings app.
-    - You should not be able to reinstall the printer.
+   1. Uninstall your printer: Device Manager > Printers > right click the Canon Printer > click “Uninstall device”.
+   1. For USB printer – unplug and plug back the cable; for network device – make a search for the printer in the Windows Settings app.
+   1. You should not be able to reinstall the printer.
 
 2. If you completed step #9 above and restarted the machine, simply look for your printer under Device Manager or the Windows Settings app and see that it is no-longer available for you to use.
 
