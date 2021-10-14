@@ -54,15 +54,15 @@ The table shows the minimum requirements for each deployment. For key trust in a
 
 > [!Important]
 > 1. Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models. <br/> 
-> **Requirements:**<br/>
-> Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903<br/>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+> **Requirements:**
+> - Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903
+> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 >
 > 2. On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.<br/>
-> **Requirements:**<br/>
-> Reset from settings - Windows 10, version 1703, Professional<br/>
-> Reset above lock screen - Windows 10, version 1709, Professional<br/>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+> **Requirements:**
+> - Reset from settings - Windows 10, version 1703, Professional
+> - Reset above lock screen - Windows 10, version 1709, Professional
+> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 ## On-premises Deployments
 
