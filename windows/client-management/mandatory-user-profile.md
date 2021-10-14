@@ -100,11 +100,11 @@ First, you create a default user profile with the customizations that you want, 
 
    - If the device is joined to the domain and you are signed in with an account that has permissions to write to a shared folder on the network, you can enter the shared folder path.
 
-   ![Example of Copy profile to.](images/copy-to-path.png)
+     ![Example of Copy profile to.](images/copy-to-path.png)
 
    - If the device is not joined to the domain, you can save the profile locally and then copy it to the shared folder location.
 
-   ![Example of Copy To UI with UNC path.](images/copy-to-path.png)
+     ![Example of Copy To UI with UNC path.](images/copy-to-path.png)
 
 1. Click **OK** to copy the default user profile.
 
