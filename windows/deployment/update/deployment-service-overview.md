@@ -29,7 +29,7 @@ The deployment service is designed for IT Pros who are looking for more control 
 - You can stage deployments over a period of days or weeks by using rich expressions (for example, deploy 20H2 to 500 devices per day, beginning on March 14, 2021).
 - You can bypass pre-configured Windows Update for Business policies to immediately deploy a security update across your organization when emergencies arise.
 - You can benefit from deployments with automatic piloting tailored to your unique device population to ensure coverage of hardware and software in your organization.
-- You can leverage safeguards against likely update issues, as identified by Microsoft machine learning algorithms, and automatically put the deployment on hold for any affected devices.
+- You can use safeguards against likely update issues that have been identified by Microsoft machine-learning algorithms and automatically hold the deployment for any affected devices.
 
 The service is privacy focused and backed by leading industry compliance certifications.
 
@@ -113,7 +113,7 @@ You should continue to use deployment rings as part of the servicing strategy fo
 
 ### Safeguard holds against likely and known issues
 
-[Safeguard holds](https://docs.microsoft.com/windows/deployment/update/safeguard-holds) are a key technology Microsoft uses to protect devices from encountering known quality or compatibility issues, by preventing them from installing the update or upgrade. For Windows 11 deployments, the deployment service extends these safeguard holds to also protect devices that Microsoft identifies as being at a higher risk of experiencing post-update issues (such as OS rollbacks, app crashes, or graphics issues) and temporarily puts the deployment on hold for these devices while Microsoft investigates the likely issue. Safeguard holds apply to deployments by default, but you may opt out if desired.
+Microsoft uses [safeguard holds](/windows/deployment/update/safeguard-holds) to protect devices from encountering known quality or compatibility issues by preventing them from installing the update or upgrade. For Windows 11 deployments, the deployment service extends these safeguard holds to also protect devices that Microsoft identifies as being at a higher risk of experiencing problems after an update (such as operating system rollbacks, app crashes, or graphics issues). The service temporarily holds the deployment for these devices while Microsoft investigates the likely issue. Safeguard holds apply to deployments by default, but you can opt out.
 
 ### Monitoring deployments to detect rollback issues
 
