@@ -39,7 +39,7 @@ You can view the dynamic port range on a computer by using the following netsh c
 
 The range is set separately for each transport (TCP or UDP). The port range is now a range that has a starting point and an ending point. Microsoft customers who deploy servers that are running Windows Server may have problems that affect RPC communication between servers if firewalls are used on the internal network. In these situations, we recommend that you reconfigure the firewalls to allow traffic between servers in the dynamic port range of **49152** through **65535**. This range is in addition to well-known ports that are used by services and applications. Or, the port range that is used by the servers can be modified on each server. You adjust this range by using the netsh command, as follows. The above command sets the dynamic port range for TCP. 
  
-```cmd
+```console
 netsh int <ipv4|ipv6> set dynamic <tcp|udp> start=number num=range
 ```
  
@@ -107,7 +107,7 @@ You may also see CLOSE_WAIT state connections in the same output, however CLOSE_
  
 4. Open a command prompt in admin mode and run the below command
 
-   ```cmd
+   ```console
    Netsh trace start scenario=netconnection capture=yes tracefile=c:\Server.etl
    ```
 
@@ -121,7 +121,7 @@ The key is to identify which process or application is using all the ports. Belo
 
 Start by looking at the netstat output. If you are using Windows 10 or Windows Server 2016, then you can run the command `netstat -anobq` and check for the process ID which has maximum entries as BOUND. Alternately, you can also run the below Powershell command to identify the process:
 
-```Powershell
+```powershell
 Get-NetTCPConnection | Group-Object -Property State, OwningProcess | Select -Property Count, Name, @{Name="ProcessName";Expression={(Get-Process -PID ($_.Name.Split(',')[-1].Trim(' '))).Name}}, Group | Sort Count -Descending 
 ```
 
@@ -165,7 +165,7 @@ Finally, if the above methods did not help you isolate the process, we suggest y
  
 As a workaround, rebooting the computer will get the it back in normal state and would help you resolve the issue for the time being. However, when a reboot is impractical, you can also consider increasing the number of ports on the machine using the below commands:
 
-```cmd
+```console
 netsh int ipv4 set dynamicport tcp start=10000 num=1000
 ```
 
@@ -176,7 +176,7 @@ This will set the dynamic port range to start at port 10000 and to end at port 1
 
 For Windows 7 and Windows Server 2008 R2, you can use the below script to collect the netstat output at defined frequency. From the outputs, you can see the port usage trend.
 
-```
+```console
 @ECHO ON
 set v=%1
 :loop
