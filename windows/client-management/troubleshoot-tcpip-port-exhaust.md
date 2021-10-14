@@ -58,7 +58,7 @@ Since outbound connections start to fail, you will see a lot of the below behavi
  
 - Unable to sign in to the machine with domain credentials, however sign-in with local account works. Domain sign-in will require you to contact the DC for authentication which is again an outbound connection. If you have cache credentials set, then domain sign-in might still work.
 
-    ![Screenshot of error for NETLOGON in Event Viewer.](images/tcp-ts-14.png)
+    :::image type="content" alt-text="Screenshot of error for NETLOGON in Event Viewer." source="images/tcp-ts-14.png" lightbox="images/tcp-ts-14.png":::
 
 - Group Policy update failures:
 
@@ -84,11 +84,11 @@ If you suspect that the machine is in a state of port exhaustion:
 
     1. **Event ID 4227**
 
-       ![Screenshot of event id 4227 in Event Viewer.](images/tcp-ts-18.png)
+       :::image type="content" alt-text="Screenshot of event ID 4227 in Event Viewer." source="images/tcp-ts-18.png" lightbox="images/tcp-ts-18.png":::
 
     1. **Event ID 4231**
 
-       ![Screenshot of event id 4231 in Event Viewer.](images/tcp-ts-19.png)
+       :::image type="content" alt-text="Screenshot of event ID 4231 in Event Viewer." source="images/tcp-ts-19.png" lightbox="images/tcp-ts-19.png":::
 
 3. Collect a `netstat -anob` output from the server. The netstat output will show you a huge number of entries for TIME_WAIT state for a single PID.
 
@@ -157,7 +157,7 @@ Steps to use Process explorer:
     
     File   \Device\AFD
 
-    ![Screenshot of Process Explorer.](images/tcp-ts-22.png)
+    :::image type="content" alt-text="Screenshot of Process Explorer." source="images/tcp-ts-22.png" lightbox="images/tcp-ts-22.png":::
 
 10. Some are normal, but large numbers of them are not (hundreds to thousands). Close the process in question. If that restores outbound connectivity, then you have further proven that the app is the cause. Contact the vendor of that app.
  
