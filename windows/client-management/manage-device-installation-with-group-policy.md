@@ -342,8 +342,8 @@ Getting the right device identifier to prevent it from being installed:
     > ClassGuid = {4d36e979-e325-11ce-bfc1-08002be10318}\
     > This class includes printers.
 
-> [!NOTE]
-> As mentioned before, preventing an entire Class could block you from using your system completely. Please make sure you understand which devices are going to be blocked when specifying a Class. For our scenario, there are other classes that relate to printers but before you apply them, make sure they are not blocking any other existing device that is crucial to your system.
+    > [!NOTE]
+    > As mentioned before, preventing an entire Class could block you from using your system completely. Please make sure you understand which devices are going to be blocked when specifying a Class. For our scenario, there are other classes that relate to printers but before you apply them, make sure they are not blocking any other existing device that is crucial to your system.
 
 Creating the policy to prevent all printers from being installed:
 
