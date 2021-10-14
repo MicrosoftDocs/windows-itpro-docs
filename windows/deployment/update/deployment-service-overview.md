@@ -29,7 +29,6 @@ The deployment service is designed for IT Pros who are looking for more control 
 - You can stage deployments over a period of days or weeks by using rich expressions (for example, deploy 20H2 to 500 devices per day, beginning on March 14, 2021).
 - You can bypass pre-configured Windows Update for Business policies to immediately deploy a security update across your organization when emergencies arise.
 - You can benefit from deployments with automatic piloting tailored to your unique device population to ensure coverage of hardware and software in your organization.
-- You can use safeguards against likely update issues that have been identified by Microsoft machine-learning algorithms and automatically hold the deployment for any affected devices.
 
 The service is privacy focused and backed by leading industry compliance certifications.
 
@@ -53,6 +52,7 @@ Using the deployment service typically follows a common pattern:
 2. The chosen tool conveys your approval, scheduling, and device selection information to the deployment service.
 3. The deployment service processes the content approval and compares it with previously approved content. Final update applicability is determined and conveyed to Windows Update, which then offers approved content to devices on their next check for updates.
 
+
 The deployment service exposes these capabilities through Microsoft [Graph REST APIs](/graph/overview). You can call the APIs directly, through a Graph SDK, or integrate them with a management tool such as Microsoft Endpoint Manager.
 
 ## Prerequisites
@@ -74,6 +74,7 @@ Additionally, your organization must have one of the following subscriptions:
 - Windows Virtual Desktop Access E3 or E5
 - Microsoft 365 Business Premium
 
+
 ## Getting started
 
 To use the deployment service, you use a management tool built on the platform, script common actions using PowerShell, or build your own application.
@@ -85,6 +86,7 @@ Microsoft Endpoint Manager integrates with the deployment service to provide Win
 ### Scripting common actions using PowerShell
 
 The Microsoft Graph SDK includes a PowerShell extension that you can use to script and automate common update actions. For more information, see [Get started with the Microsoft Graph PowerShell SDK](/graph/powershell/get-started).
+
 
 ### Building your own application
 
@@ -111,17 +113,14 @@ This built-in piloting capability complements your existing ring structure and p
 
 You should continue to use deployment rings as part of the servicing strategy for your organization, but use gradual rollouts to add scheduling convenience and additional protections within each ring.
 
-### Safeguard holds against likely and known issues
-
-Microsoft uses [safeguard holds](/windows/deployment/update/safeguard-holds) to protect devices from encountering known quality or compatibility issues by preventing them from installing the update or upgrade. For Windows 11 deployments, the deployment service extends these safeguard holds to also protect devices that Microsoft identifies as being at a higher risk of experiencing problems after an update (such as operating system rollbacks, app crashes, or graphics issues). The service temporarily holds the deployment for these devices while Microsoft investigates the likely issue. Safeguard holds apply to deployments by default, but you can opt out.
-
 ### Monitoring deployments to detect rollback issues
 
 During deployments of Windows 11 or Windows 10 feature updates, driver combinations can sometimes result in an unexpected update failure that makes the device revert to the previously installed operating system version. The deployment service can monitor devices for such issues and automatically pause deployments when this happens, giving you time to detect and mitigate issues.
 
+
 ### How to enable deployment protections
 
-Deployment scheduling controls are always available, but to take advantage of the unique deployment protections tailored to your population, devices must share diagnostic data with Microsoft.
+Deployment scheduling controls are always available, but to take advantage of the unique deployment protections tailored to your organization, devices must share diagnostic data with Microsoft.
 
 #### Device prerequisites
 
@@ -174,6 +173,7 @@ Follow these suggestions for the best results with the service.
 ### General
 
 Avoid using different channels to manage the same resources. If you use Microsoft Endpoint Manager along with Microsoft Graph APIs or PowerShell, aspects of resources (such as devices, deployments, updatable asset groups) might be overwritten if you use both channels to manage the same resources. Instead, only manage each resource through the channel that created it.
+
 
 ## Next steps
 
