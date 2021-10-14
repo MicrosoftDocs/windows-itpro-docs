@@ -68,7 +68,7 @@ First, you create a default user profile with the customizations that you want, 
 
 1. At a command prompt, type the following command and press **ENTER**.
 
-   ```dos
+   ```console
    sysprep /oobe /reboot /generalize /unattend:unattend.xml
    ```
 
