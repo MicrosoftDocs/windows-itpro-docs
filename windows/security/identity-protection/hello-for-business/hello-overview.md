@@ -81,12 +81,19 @@ Windows Hello helps protect user identities and user credentials. Because the us
 ## How Windows Hello for Business works: key points
 
 -   Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
+
 -   Identity provider (such as Active Directory, Azure AD, or a Microsoft account) validates user identity and maps the Windows Hello public key to a user account during the registration step.
+
 -   Keys can be generated in hardware (TPM 1.2 or 2.0 for enterprises, and TPM 2.0 for consumers) or software, based on the policy.
+
 -   Authentication is the two-factor authentication with the combination of a key or certificate tied to a device and something that the person knows (a PIN) or something that the person is (biometrics). The Windows Hello gesture does not roam between devices and is not shared with the server. Biometrics templates are stored locally on a device.  The PIN is never stored or shared.
+
 -   The private key never leaves a device when using TPM. The authenticating server has a public key that is mapped to the user account during the registration process.
+
 -   PIN entry and biometric gesture both trigger Windows 10 to use the private key to cryptographically sign data that is sent to the identity provider.  The identity provider verifies the user's identity and authenticates the user.
+
 -   Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
+
 -   Certificate private keys can be protected by the Windows Hello container and the Windows Hello gesture.
 
 For details, see [How Windows Hello for Business works](hello-how-it-works.md).
