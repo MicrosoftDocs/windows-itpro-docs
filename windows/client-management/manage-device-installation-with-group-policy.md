@@ -14,7 +14,6 @@ ms.topic: article
 
 # Manage Device Installation with Group Policy
 
-
 **Applies to**
 
 - Windows 10
