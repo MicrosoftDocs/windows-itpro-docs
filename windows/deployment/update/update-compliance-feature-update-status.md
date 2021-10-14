@@ -47,7 +47,7 @@ Microsoft uses diagnostic data to determine whether devices that use Windows Upd
 
 ### Queries for safeguard holds
 
-Update Compliance reporting offers two queries to help you retrieve data related to safeguard holds. These queries show data for devices that are configured to send diagnostic data at *Optional* level (previously *Full*). For Windows 10 devices, devices configured to send diagnostic data at *Enhanced* level are also included.
+Update Compliance reporting offers two queries to help you retrieve data related to safeguard holds. These queries show data for devices that are configured to send diagnostic data at the *Optional* level (previously *Full*). For Windows 10 devices, devices configured to send diagnostic data at *Enhanced* level are also included.
 
 The first query shows the device data for all devices that are affected by safeguard holds. The second query shows data specific to devices running the target build.
 
