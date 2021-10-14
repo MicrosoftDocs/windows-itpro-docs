@@ -16,9 +16,9 @@ ms.topic: troubleshooting
 # Group Policy settings that apply only to Windows 10 Enterprise and Education Editions
 
 **Applies to**
+-   Windows 10
+-   Windows 11
 
-- Windows 10
-- Windows 11
 
 In Windows 10, version 1607, the following Group Policy settings apply only to Windows 10 Enterprise and Windows 10 Education.
 

@@ -50,8 +50,7 @@ Organizations that use Windows Server Update Services (WSUS) must take action to
         ```
       
         > [!NOTE]
-        > * On Windows 10, you must rename the FOD .CAB file to : **Microsoft-Windows-Holographic-Desktop-FOD-Package\~31bf3856ad364e35\~amd64\~\~.cab**
-        > * On Windows 11, you must rename the FOD .CAB file to: **Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e45~amd_64~~.cab**
+        > On Windows 10 and 11, you must rename the FOD .CAB file to: **Microsoft-Windows-Holographic-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab**
 
    1. In **Settings** > **Update & Security** > **Windows Update**, select **Check for updates**.
 
