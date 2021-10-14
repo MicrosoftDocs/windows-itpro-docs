@@ -13,7 +13,7 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 09/08/2021
+ms.date: 10/04/2021
 ---
 
 # Configure Windows diagnostic data in your organization
