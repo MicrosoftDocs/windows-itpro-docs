@@ -75,19 +75,19 @@ The hybrid deployment model is for organizations that:
 
 > [!Important]
 > Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models.<br/>
-> **Requirements:**<br/>
-> Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903<br/>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+> **Requirements:**
+> - Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903
+> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 ##### On-premises
 The on-premises deployment model is for organizations that do not have cloud identities or use applications hosted in Azure Active Directory.
 
 > [!Important]
 > On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.<br/>
-> **Requirements:**<br/>
-> Reset from settings - Windows 10, version 1703, Professional<br/>
-> Reset above lock screen - Windows 10, version 1709, Professional<br/>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+> **Requirements:**
+> - Reset from settings - Windows 10, version 1703, Professional
+> - Reset above lock screen - Windows 10, version 1709, Professional
+> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 It's fundamentally important to understand which deployment model to use for a successful deployment.  Some aspects of the deployment may have already been decided for you based on your current infrastructure.
 
