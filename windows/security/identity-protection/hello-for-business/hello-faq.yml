@@ -212,7 +212,7 @@ sections:
           
       - question: Does Windows Hello for Business work with third-party federation servers?
         answer: |
-          Windows Hello for Business works with any third-party federation servers that support the protocols used during the provisioning experience.  Interested third-parties can inquiry at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration).<br><br>
+          Windows Hello for Business works with any third-party federation servers that support the protocols used during the provisioning experience.<br><br>
           
           | Protocol | Description |
           | :---: | :--- |
