@@ -119,7 +119,7 @@ The key is to identify which process or application is using all the ports. Belo
  
 ### Method 1
 
-Start by looking at the netstat output. If you are using Windows 10 or Windows Server 2016, then you can run the command `netstat -anobq` and check for the process ID which has maximum entries as BOUND. Alternately, you can also run the below Powershell command to identify the process:
+Start by looking at the netstat output. If you are using Windows 10 or Windows Server 2016, then you can run the command `netstat -anobq` and check for the process ID which has maximum entries as BOUND. Alternately, you can also run the below PowerShell command to identify the process:
 
 ```powershell
 Get-NetTCPConnection | Group-Object -Property State, OwningProcess | Select -Property Count, Name, @{Name="ProcessName";Expression={(Get-Process -PID ($_.Name.Split(',')[-1].Trim(' '))).Name}}, Group | Sort Count -Descending 
@@ -127,7 +127,7 @@ Get-NetTCPConnection | Group-Object -Property State, OwningProcess | Select -Pro
 
 Most port leaks are caused by user-mode processes not correctly closing the ports when an error was encountered. At the user-mode level ports (actually sockets) are handles. Both **TaskManager** and **ProcessExplorer** are able to display handle counts which allows you to identify which process is consuming all of the ports.
  
-For Windows 7 and Windows Server 2008 R2, you can update your Powershell version to include the above cmdlet. 
+For Windows 7 and Windows Server 2008 R2, you can update your PowerShell version to include the above cmdlet. 
  
 ### Method 2
 
