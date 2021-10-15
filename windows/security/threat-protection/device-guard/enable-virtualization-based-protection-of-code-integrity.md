@@ -294,12 +294,14 @@ C. If you experience a critical error during boot or your system is unstable aft
 
 ## How to turn off HVCI
 
-1. Run the following command from an elevated prompt to set the HVCI registry key to off
-```ini
+1. Run the following command from an elevated prompt to set the HVCI registry key to off:
+
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f
 ```
-2. Restart the device.
-3. To confirm HVCI has been successfully disabled, open System Information and check **Virtualization-based security Services Running**, which should now have no value displayed.
+
+1. Restart the device.
+1. To confirm HVCI has been successfully disabled, open System Information and check **Virtualization-based security Services Running**, which should now have no value displayed.
 
 ## HVCI deployment in virtual machines
 
