@@ -31,7 +31,7 @@ You may wish to disable the automatic Windows Hello for Business enrollment prom
 
 Cloud only deployments will use Azure AD multi-factor authentication (MFA) during Windows Hello for Business (WHfB) enrollment and there's no additional MFA configuration needed. If you aren't already registered in Azure AD MFA, you will be guided though the MFA registration as part of the Windows Hello for Business enrollment process.
 
-The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](hello-identity-verification.md#cloud-only-deployment).
+The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](hello-identity-verification.md#azure-ad-cloud-only-deployment).
 
 Also note that it's possible for federated domains to enable the “Supports MFA” flag in your federated domain settings. This flag tells Azure AD that the federated IDP will perform the MFA challenge.
 
