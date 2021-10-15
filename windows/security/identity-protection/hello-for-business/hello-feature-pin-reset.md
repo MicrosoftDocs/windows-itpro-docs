@@ -38,7 +38,7 @@ There are two forms of PIN reset called destructive and non-destructive. Destruc
 Destructive and non-destructive PIN reset use the same entry points for initiating a PIN reset. If a user has forgotten their PIN, but has an alternate logon method, they can navigate to Sign-in options in Settings and initiate a PIN reset from the PIN options. If they do not have an alternate way to sign into their device, PIN reset can also be initiated from above the lock screen in the PIN credential provider.
 
 >[!IMPORTANT]
->For hybrid Azure AD joined devices, users must have corporate network connectivity to domain controllers to reset their PIN. If AD FS is being used for certificate trust or for on-premises only deployments, users must also have corporate network connectivity to federation services to reset their PIN.
+>For hybrid Azure AD joined devices, users must have corporate network connectivity to domain controllers to complete destructive PIN reset. If AD FS is being used for certificate trust or for on-premises only deployments, users must also have corporate network connectivity to federation services to reset their PIN.
 
 ### Reset PIN from Settings
 
