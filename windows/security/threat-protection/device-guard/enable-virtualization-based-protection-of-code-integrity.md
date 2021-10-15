@@ -311,6 +311,6 @@ Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 ### Requirements for running HVCI in Hyper-V virtual machines
 -   The Hyper-V host must run at least Windows Server 2016 or Windows 10 version 1607.
 -   The Hyper-V virtual machine must be Generation 2, and running at least Windows Server 2016 or Windows 10.
--   HVCI and [nested virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time
+-   HVCI and [nested virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time. To enable the HyperV role on the virtual machine, you must first install the HyperV role in a Windows nested virtualization environment.
 -   Virtual Fibre Channel adapters are not compatible with HVCI. Before attaching a virtual Fibre Channel Adapter to a virtual machine, you must first opt out of virtualization-based security using `Set-VMSecurity`.
 -   The AllowFullSCSICommandSet option for pass-through disks is not compatible with HVCI. Before configuring a pass-through disk with AllowFullSCSICommandSet, you must first opt out of virtualization-based security using `Set-VMSecurity`.
