@@ -78,7 +78,7 @@ Set the following registry keys to enable HVCI. This provides exactly the same s
 
 Recommended settings (to enable virtualization-based protection of Code Integrity policies, without UEFI Lock):
 
-``` commands
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
 
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
@@ -94,49 +94,49 @@ If you want to customize the preceding recommended settings, use the following s
 
 **To enable VBS**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
 ```
 
 **To enable VBS and require Secure boot only (value 1)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
 ```
 
 **To enable VBS with Secure Boot and DMA (value 3)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
 ```
 
 **To enable VBS without UEFI lock (value 0)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 0 /f
 ```
 
 **To enable VBS with UEFI lock (value 1)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 1 /f
 ```
 
 **To enable virtualization-based protection of Code Integrity policies**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 1 /f
 ```
 
 **To enable virtualization-based protection of Code Integrity policies without UEFI lock (value 0)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 0 /f
 ```
 
 **To enable virtualization-based protection of Code Integrity policies with UEFI lock (value 1)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 1 /f
 ```
 
@@ -144,7 +144,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorE
 
 Recommended settings (to enable virtualization-based protection of Code Integrity policies, without UEFI Lock):
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
 
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
@@ -158,31 +158,31 @@ If you want to customize the preceding recommended settings, use the following s
 
 **To enable VBS (it is always locked to UEFI)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
 ```
 
 **To enable VBS and require Secure boot only (value 1)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
 ```
 
 **To enable VBS with Secure Boot and DMA (value 3)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
 ```
 
 **To enable virtualization-based protection of Code Integrity policies (with the default, UEFI lock)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "HypervisorEnforcedCodeIntegrity" /t REG_DWORD /d 1 /f
 ```
 
 **To enable virtualization-based protection of Code Integrity policies without UEFI lock**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG_DWORD /d 1 /f
 ```
 
