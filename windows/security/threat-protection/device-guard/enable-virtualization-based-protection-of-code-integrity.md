@@ -54,8 +54,11 @@ Enabling in Intune requires using the Code Integrity node in the [AppLocker CSP]
 ### Enable HVCI using Group Policy
 
 1. Use Group Policy Editor (gpedit.msc) to either edit an existing GPO or create a new one.
+
 2. Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard**.
+
 3. Double-click **Turn on Virtualization Based Security**.
+
 4. Click **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled with UEFI lock** to ensure HVCI cannot be disabled remotely or select **Enabled without UEFI lock**.
 
    ![Enable HVCI using Group Policy.](../images/enable-hvci-gp.png)
@@ -301,6 +304,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorE
 ```
 
 1. Restart the device.
+
 1. To confirm HVCI has been successfully disabled, open System Information and check **Virtualization-based security Services Running**, which should now have no value displayed.
 
 ## HVCI deployment in virtual machines
