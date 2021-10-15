@@ -285,7 +285,7 @@ This field lists the computer name. All valid values for computer name.
 
 Another method to determine the available and enabled Windows Defender Device Guard features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the Windows Defender Device Guard properties are displayed at the bottom of the **System Summary** section.
 
-![Windows Defender Device Guard properties in the System Summary.](../images/dg-fig11-dgproperties.png)
+:::image type="content" alt-text="Windows Defender Device Guard properties in the System Summary." source="../images/dg-fig11-dgproperties.png" lightbox="../images/dg-fig11-dgproperties.png":::
 
 ## Troubleshooting
 
