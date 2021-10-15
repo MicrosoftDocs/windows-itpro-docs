@@ -299,9 +299,9 @@ C. If you experience a critical error during boot or your system is unstable aft
 
 1. Run the following command from an elevated prompt to set the HVCI registry key to off:
 
-```console
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f
-```
+    ```console
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f
+    ```
 
 1. Restart the device.
 
