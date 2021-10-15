@@ -42,28 +42,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -80,7 +86,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This policy setting blocks applications from using the network to send tile, badge, toast, and raw notifications. Specifically, this policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to use [periodic (polling) notifications](/windows/uwp/design/shell/tiles-and-notifications/periodic-notification-overview).
+This policy setting blocks applications from using the network to send tile, badge, toast, and raw notifications. Specifically, this policy setting turns off the connection between Windows and the Windows Push Notification Service (WNS). This policy setting also stops applications from being able to use [periodic (polling) notifications](/windows/uwp/design/shell/tiles-and-notifications/periodic-notification-overview).
 
 If you enable this policy setting, applications and system features will not be able receive notifications from the network from WNS or via notification polling APIs.
 
@@ -96,7 +102,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off notifications network usage*
+-   GP Friendly name: *Turn off notifications network usage*
 -   GP name: *NoCloudNotification*
 -   GP path: *Start Menu and Taskbar/Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -123,28 +129,34 @@ Validation:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -161,7 +173,7 @@ Validation:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1607. Boolean value that turns off notification mirroring.
+Boolean value that turns off notification mirroring.
 
 For each user logged into the device, if you enable this policy (set value to 1) the app and system notifications received by this user on this device will not get mirrored to other devices of the same logged in user. If you disable or do not configure this policy (set value to 0) the notifications received by this user on this device will be mirrored to other devices of the same logged in user. This feature can be turned off by apps that do not want to participate in Notification Mirroring. This feature can also be turned off by the user in the Cortana setting page.
 
@@ -170,7 +182,7 @@ No reboot or service restart is required for this policy to take effect.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off notification mirroring*
+-   GP Friendly name: *Turn off notification mirroring*
 -   GP name: *NoNotificationMirroring*
 -   GP path: *Start Menu and Taskbar/Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -193,28 +205,34 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -231,7 +249,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. This policy setting turns off tile notifications.
+This policy setting turns off tile notifications.
 
 If you enable this policy setting, applications and system features will not be able to update their tiles and tile badges in the Start screen.
 
@@ -242,7 +260,7 @@ No reboots or service restarts are required for this policy setting to take effe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off tile notifications*
+-   GP Friendly name: *Turn off tile notifications*
 -   GP name: *NoTileNotification*
 -   GP path: *Start Menu and Taskbar/Notifications*
 -   GP ADMX file name: *WPN.admx*
@@ -262,15 +280,5 @@ Validation:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->

@@ -12,7 +12,7 @@ manager: laurawi
 
 # Use Quick Assist to help users
 
-Quick Assist is a Windows 10 application that enables a person to share their device with another person over a remote connection. Your support staff can use it to remotely connect to a user’s device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
+Quick Assist is a Windows application that enables a person to share their device with another person over a remote connection. Your support staff can use it to remotely connect to a user’s device and then view its display, make annotations, or take full control. In this way, they can troubleshoot, diagnose technological issues, and provide instructions to users directly on their devices.
 
 ## Before you begin
 
@@ -57,7 +57,7 @@ Both the helper and sharer must be able to reach these endpoints over port 443:
 
 7. RDP shares the video to the helper over https (port 443) through the RDP relay service to the helper's RDP control. Input is shared from the helper to the sharer through the RDP relay service.
 
-:::image type="content" source="images/quick-assist-flow.png" lightbox="images/quick-assist-flow.png" alt-text="Schematic flow of connections when a Quick Assist session is established":::
+:::image type="content" source="images/quick-assist-flow.png" lightbox="images/quick-assist-flow.png" alt-text="Schematic flow of connections when a Quick Assist session is established.":::
 
 ### Data and privacy
 

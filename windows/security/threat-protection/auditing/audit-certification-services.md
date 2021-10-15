@@ -11,15 +11,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/06/2021
 ms.technology: mde
 ---
 
 # Audit Certification Services
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 Audit Certification Services determines whether the operating system generates events when Active Directory Certificate Services (AD CS) operations are performed.
 

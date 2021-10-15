@@ -192,32 +192,32 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr>
-<td style="vertical-align:top"><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
-<td style="vertical-align:top"><p>Added support for Windows 10 Pro starting in the version 1809.</p>
+<td><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
+<td><p>Added support for Windows 10 Pro starting in the version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="office-csp.md" data-raw-source="[Office CSP](office-csp.md)">Office CSP</a></td>
-<td style="vertical-align:top"><p>Added FinalStatus setting in Windows 10, version 1809.</p>
+<td><a href="office-csp.md" data-raw-source="[Office CSP](office-csp.md)">Office CSP</a></td>
+<td><p>Added FinalStatus setting in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="remotewipe-csp.md" data-raw-source="[RemoteWipe CSP](remotewipe-csp.md)">RemoteWipe CSP</a></td>
-<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
+<td><a href="remotewipe-csp.md" data-raw-source="[RemoteWipe CSP](remotewipe-csp.md)">RemoteWipe CSP</a></td>
+<td><p>Added new settings in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="tenantlockdown-csp.md" data-raw-source="[TenantLockdown CSP](tenantlockdown-csp.md)">TenantLockdown CSP</a></td>
-<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1809.</p>
+<td><a href="tenantlockdown-csp.md" data-raw-source="[TenantLockdown CSP](tenantlockdown-csp.md)">TenantLockdown CSP</a></td>
+<td><p>Added new CSP in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="windowsdefenderapplicationguard-csp.md" data-raw-source="[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)">WindowsDefenderApplicationGuard CSP</a></td>
-<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
+<td><a href="windowsdefenderapplicationguard-csp.md" data-raw-source="[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)">WindowsDefenderApplicationGuard CSP</a></td>
+<td><p>Added new settings in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="policy-ddf-file.md" data-raw-source="[Policy DDF file](policy-ddf-file.md)">Policy DDF file</a></td>
-<td style="vertical-align:top"><p>Posted an updated version of the Policy DDF for Windows 10, version 1809.</p>
+<td><a href="policy-ddf-file.md" data-raw-source="[Policy DDF file](policy-ddf-file.md)">Policy DDF file</a></td>
+<td><p>Posted an updated version of the Policy DDF for Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 1809:</p>
+<td><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td><p>Added the following new policies in Windows 10, version 1809:</p>
 <ul>
 <li>Browser/AllowFullScreenMode</li>
 <li>Browser/AllowPrelaunch</li>
@@ -270,47 +270,47 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr>
-<td style="vertical-align:top"><a href="assignedaccess-csp.md" data-raw-source="[AssignedAccess CSP](assignedaccess-csp.md)">AssignedAccess CSP</a></td>
-<td style="vertical-align:top"><p>Added the following note:</p>
+<td><a href="assignedaccess-csp.md" data-raw-source="[AssignedAccess CSP](assignedaccess-csp.md)">AssignedAccess CSP</a></td>
+<td><p>Added the following note:</p>
 <ul>
 <li>You can only assign one single app kiosk profile to an individual user account on a device. The single app profile does not support domain groups.</li>
 </ul>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="passportforwork-csp.md" data-raw-source="[PassportForWork  CSP](passportforwork-csp.md)">PassportForWork  CSP</a></td>
-<td style="vertical-align:top"><p>Added new settings in Windows 10, version 1809.</p>
+<td><a href="passportforwork-csp.md" data-raw-source="[PassportForWork  CSP](passportforwork-csp.md)">PassportForWork  CSP</a></td>
+<td><p>Added new settings in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="enterprisemodernappmanagement-csp.md" data-raw-source="[EnterpriseModernAppManagement  CSP](enterprisemodernappmanagement-csp.md)">EnterpriseModernAppManagement  CSP</a></td>
-<td style="vertical-align:top"><p>Added NonRemovable setting under AppManagement node in Windows 10, version 1809.</p>
+<td><a href="enterprisemodernappmanagement-csp.md" data-raw-source="[EnterpriseModernAppManagement  CSP](enterprisemodernappmanagement-csp.md)">EnterpriseModernAppManagement  CSP</a></td>
+<td><p>Added NonRemovable setting under AppManagement node in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="win32compatibilityappraiser-csp.md" data-raw-source="[Win32CompatibilityAppraiser  CSP](win32compatibilityappraiser-csp.md)">Win32CompatibilityAppraiser  CSP</a></td>
-<td style="vertical-align:top"><p>Added new configuration service provider in Windows 10, version 1809.</p>
+<td><a href="win32compatibilityappraiser-csp.md" data-raw-source="[Win32CompatibilityAppraiser  CSP](win32compatibilityappraiser-csp.md)">Win32CompatibilityAppraiser  CSP</a></td>
+<td><p>Added new configuration service provider in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="windowslicensing-csp.md" data-raw-source="[WindowsLicensing  CSP](windowslicensing-csp.md)">WindowsLicensing  CSP</a></td>
-<td style="vertical-align:top"><p>Added S mode settings and SyncML examples in Windows 10, version 1809.</p>
+<td><a href="windowslicensing-csp.md" data-raw-source="[WindowsLicensing  CSP](windowslicensing-csp.md)">WindowsLicensing  CSP</a></td>
+<td><p>Added S mode settings and SyncML examples in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="supl-csp.md" data-raw-source="[SUPL CSP](supl-csp.md)">SUPL CSP</a></td>
-<td style="vertical-align:top"><p>Added 3 new certificate nodes in Windows 10, version 1809.</p>
+<td><a href="supl-csp.md" data-raw-source="[SUPL CSP](supl-csp.md)">SUPL CSP</a></td>
+<td><p>Added 3 new certificate nodes in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="defender-csp.md" data-raw-source="[Defender CSP](defender-csp.md)">Defender CSP</a></td>
-<td style="vertical-align:top"><p>Added a new node Health/ProductStatus in Windows 10, version 1809.</p>
+<td><a href="defender-csp.md" data-raw-source="[Defender CSP](defender-csp.md)">Defender CSP</a></td>
+<td><p>Added a new node Health/ProductStatus in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
-<td style="vertical-align:top"><p>Added a new node AllowStandardUserEncryption in Windows 10, version 1809.</p>
+<td><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
+<td><p>Added a new node AllowStandardUserEncryption in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="devdetail-csp.md" data-raw-source="[DevDetail CSP](devdetail-csp.md)">DevDetail CSP</a></td>
-<td style="vertical-align:top"><p>Added a new node SMBIOSSerialNumber in Windows 10, version 1809.</p>
+<td><a href="devdetail-csp.md" data-raw-source="[DevDetail CSP](devdetail-csp.md)">DevDetail CSP</a></td>
+<td><p>Added a new node SMBIOSSerialNumber in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Added the following new policies in Windows 10, version 1809:</p>
+<td><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td><p>Added the following new policies in Windows 10, version 1809:</p>
 <ul>
 <li>ApplicationManagement/LaunchAppAfterLogOn</li>
 <li>ApplicationManagement/ScheduleForceRestartForUpdateFailures </li>
@@ -360,24 +360,24 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr>
-<td style="vertical-align:top"><a href="wifi-csp.md" data-raw-source="[Wifi CSP](wifi-csp.md)">Wifi CSP</a></td>
-<td style="vertical-align:top"><p>Added a new node WifiCost in Windows 10, version 1809.</p>
+<td><a href="wifi-csp.md" data-raw-source="[Wifi CSP](wifi-csp.md)">Wifi CSP</a></td>
+<td><p>Added a new node WifiCost in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="diagnose-mdm-failures-in-windows-10.md" data-raw-source="[Diagnose MDM failures in Windows 10](diagnose-mdm-failures-in-windows-10.md)">Diagnose MDM failures in Windows 10</a></td>
-<td style="vertical-align:top"><p>Recent changes:</p>
+<td><a href="diagnose-mdm-failures-in-windows-10.md" data-raw-source="[Diagnose MDM failures in Windows 10](diagnose-mdm-failures-in-windows-10.md)">Diagnose MDM failures in Windows 10</a></td>
+<td><p>Recent changes:</p>
 <ul>
 <li>Added procedure for collecting logs remotely from Windows 10 Holographic.</li>
 <li>Added procedure for downloading the MDM Diagnostic Information log.</li>
 </ul>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
-<td style="vertical-align:top"><p>Added new node AllowStandardUserEncryption in Windows 10, version 1809.</p>
+<td><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
+<td><p>Added new node AllowStandardUserEncryption in Windows 10, version 1809.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Recent changes:</p>
+<td><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td><p>Recent changes:</p>
 <ul>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutDuration - removed from docs. Not supported.</li>
 <li>AccountPoliciesAccountLockoutPolicy/AccountLockoutThreshold - removed from docs. Not supported.</li>
@@ -398,8 +398,8 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </ul>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="wirednetwork-csp.md" data-raw-source="[WiredNetwork CSP](wirednetwork-csp.md)">WiredNetwork CSP</a></td>
-<td style="vertical-align:top">New CSP added in Windows 10, version 1809.
+<td><a href="wirednetwork-csp.md" data-raw-source="[WiredNetwork CSP](wirednetwork-csp.md)">WiredNetwork CSP</a></td>
+<td>New CSP added in Windows 10, version 1809.
 </td></tr>
 </tbody>
 </table>
@@ -419,8 +419,8 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr>
-<td style="vertical-align:top"><a href="policy-ddf-file.md" data-raw-source="[Policy DDF file](policy-ddf-file.md)">Policy DDF file</a></td>
-<td style="vertical-align:top"><p>Updated the DDF files in the Windows 10 version 1703 and 1709.</p>
+<td><a href="policy-ddf-file.md" data-raw-source="[Policy DDF file](policy-ddf-file.md)">Policy DDF file</a></td>
+<td><p>Updated the DDF files in the Windows 10 version 1703 and 1709.</p>
 <ul>
 <li><a href="https://download.microsoft.com/download/8/C/4/8C43C116-62CB-470B-9B69-76A3E2BC32A8/PolicyDDF_all.xml" data-raw-source="[Download the Policy DDF file for Windows 10, version 1709](https://download.microsoft.com/download/8/C/4/8C43C116-62CB-470B-9B69-76A3E2BC32A8/PolicyDDF_all.xml)">Download the Policy DDF file for Windows 10, version 1709</a></li>
 <li><a href="https://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml" data-raw-source="[Download the Policy DDF file for Windows 10, version 1703](https://download.microsoft.com/download/7/2/C/72C36C37-20F9-41BF-8E23-721F6FFC253E/PolicyDDF_all.xml)">Download the Policy DDF file for Windows 10, version 1703</a></li>
@@ -444,35 +444,35 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr>
-<td style="vertical-align:top"><a href="windowsdefenderapplicationguard-csp.md" data-raw-source="[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)">WindowsDefenderApplicationGuard CSP</a></td>
-<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<td><a href="windowsdefenderapplicationguard-csp.md" data-raw-source="[WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)">WindowsDefenderApplicationGuard CSP</a></td>
+<td><p>Added the following node in Windows 10, version 1803:</p>
 <ul>
 <li>Settings/AllowVirtualGPU</li>
 <li>Settings/SaveFilesToHost</li>
 </ul>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="\networkproxy--csp.md" data-raw-source="[NetworkProxy CSP](\networkproxy--csp.md)">NetworkProxy CSP</a></td>
-<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<td><a href="\networkproxy--csp.md" data-raw-source="[NetworkProxy CSP](\networkproxy--csp.md)">NetworkProxy CSP</a></td>
+<td><p>Added the following node in Windows 10, version 1803:</p>
 <ul>
 <li>ProxySettingsPerUser</li>
 </ul>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="accounts-csp.md" data-raw-source="[Accounts CSP](accounts-csp.md)">Accounts CSP</a></td>
-<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+<td><a href="accounts-csp.md" data-raw-source="[Accounts CSP](accounts-csp.md)">Accounts CSP</a></td>
+<td><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="https://aka.ms/mmat" data-raw-source="[MDM Migration Analysis Tool (MMAT)](https://aka.ms/mmat)">MDM Migration Analysis Tool (MMAT)</a></td>
-<td style="vertical-align:top"><p>Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.</p>
+<td><a href="https://aka.ms/mmat" data-raw-source="[MDM Migration Analysis Tool (MMAT)](https://aka.ms/mmat)">MDM Migration Analysis Tool (MMAT)</a></td>
+<td><p>Updated version available. MMAT is a tool you can use to determine which Group Policies are set on a target user/computer and cross-reference them against the list of supported MDM policies.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="configuration-service-provider-reference.md#csp-ddf-files-download" data-raw-source="[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)">CSP DDF files download</a></td>
-<td style="vertical-align:top"><p>Added the DDF download of Windows 10, version 1803 configuration service providers.</p>
+<td><a href="configuration-service-provider-reference.md#csp-ddf-files-download" data-raw-source="[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)">CSP DDF files download</a></td>
+<td><p>Added the DDF download of Windows 10, version 1803 configuration service providers.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
+<td><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
 <li>Bluetooth/AllowPromptedProximalConnections</li>
 <li>KioskBrowser/EnableEndSessionButton</li>
@@ -500,41 +500,41 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr>
-<td style="vertical-align:top"><a href="euiccs-csp.md" data-raw-source="[eUICCs CSP](euiccs-csp.md)">eUICCs CSP</a></td>
-<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<td><a href="euiccs-csp.md" data-raw-source="[eUICCs CSP](euiccs-csp.md)">eUICCs CSP</a></td>
+<td><p>Added the following node in Windows 10, version 1803:</p>
 <ul>
 <li>IsEnabled</li>
 </ul>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="devicestatus-csp.md" data-raw-source="[DeviceStatus CSP](devicestatus-csp.md)">DeviceStatus CSP</a></td>
-<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<td><a href="devicestatus-csp.md" data-raw-source="[DeviceStatus CSP](devicestatus-csp.md)">DeviceStatus CSP</a></td>
+<td><p>Added the following node in Windows 10, version 1803:</p>
 <ul>
 <li>OS/Mode</li>
 </ul>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="understanding-admx-backed-policies.md" data-raw-source="[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)">Understanding ADMX-backed policies</a></td>
-<td style="vertical-align:top"><p>Added the following videos:</p>
+<td><a href="understanding-admx-backed-policies.md" data-raw-source="[Understanding ADMX-backed policies](understanding-admx-backed-policies.md)">Understanding ADMX-backed policies</a></td>
+<td><p>Added the following videos:</p>
 <ul>
 <li><a href="https://www.microsoft.com/showcase/video.aspx?uuid=bdc9b54b-11b0-4bdb-a022-c339d16e7121" data-raw-source="[How to create a custom xml to enable an ADMX-backed policy and deploy the XML in Intune](https://www.microsoft.com/showcase/video.aspx?uuid=bdc9b54b-11b0-4bdb-a022-c339d16e7121)">How to create a custom xml to enable an ADMX-backed policy and deploy the XML in Intune</a></li>
 <li><a href="https://www.microsoft.com/showcase/video.aspx?uuid=a59888b1-429f-4a49-8570-c39a143d9a73" data-raw-source="[How to import a custom ADMX file to a device using Intune](https://www.microsoft.com/showcase/video.aspx?uuid=a59888b1-429f-4a49-8570-c39a143d9a73)">How to import a custom ADMX file to a device using Intune</a></li>
 </ul>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="accountmanagement-csp.md" data-raw-source="[AccountManagement CSP](accountmanagement-csp.md)">AccountManagement CSP</a></td>
-<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+<td><a href="accountmanagement-csp.md" data-raw-source="[AccountManagement CSP](accountmanagement-csp.md)">AccountManagement CSP</a></td>
+<td><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="rootcacertificates-csp.md" data-raw-source="[RootCATrustedCertificates CSP](rootcacertificates-csp.md)">RootCATrustedCertificates CSP</a></td>
-<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<td><a href="rootcacertificates-csp.md" data-raw-source="[RootCATrustedCertificates CSP](rootcacertificates-csp.md)">RootCATrustedCertificates CSP</a></td>
+<td><p>Added the following node in Windows 10, version 1803:</p>
 <ul>
 <li>UntrustedCertificates</li>
 </ul>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
+<td><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
 <li>ApplicationDefaults/EnableAppUriHandlers</li>
 <li>ApplicationManagement/MSIAllowUserControlOverInstall</li>
@@ -556,16 +556,16 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </ul>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="policy-csp-bluetooth.md" data-raw-source="[Policy CSP - Bluetooth](policy-csp-bluetooth.md)">Policy CSP - Bluetooth</a></td>
-<td style="vertical-align:top"><p>Added new section <a href="policy-csp-bluetooth.md#servicesallowedlist-usage-guide" data-raw-source="[ServicesAllowedList usage guide](policy-csp-bluetooth.md#servicesallowedlist-usage-guide)">ServicesAllowedList usage guide</a>.</p>
+<td><a href="policy-csp-bluetooth.md" data-raw-source="[Policy CSP - Bluetooth](policy-csp-bluetooth.md)">Policy CSP - Bluetooth</a></td>
+<td><p>Added new section <a href="policy-csp-bluetooth.md#servicesallowedlist-usage-guide" data-raw-source="[ServicesAllowedList usage guide](policy-csp-bluetooth.md#servicesallowedlist-usage-guide)">ServicesAllowedList usage guide</a>.</p>
 </td></tr>
 <tr>
-<td style="vertical-align:top"><a href="multisim-csp.md" data-raw-source="[MultiSIM CSP](multisim-csp.md)">MultiSIM CSP</a></td>
-<td style="vertical-align:top"><p>Added SyncML examples and updated the settings descriptions.</p>
+<td><a href="multisim-csp.md" data-raw-source="[MultiSIM CSP](multisim-csp.md)">MultiSIM CSP</a></td>
+<td><p>Added SyncML examples and updated the settings descriptions.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="remotewipe-csp.md" data-raw-source="[RemoteWipe CSP](remotewipe-csp.md)">RemoteWipe CSP</a></td>
-<td style="vertical-align:top"><p>Reverted back to Windows 10, version 1709. Removed previous draft documentation for version 1803.</p>
+<td><a href="remotewipe-csp.md" data-raw-source="[RemoteWipe CSP](remotewipe-csp.md)">RemoteWipe CSP</a></td>
+<td><p>Reverted back to Windows 10, version 1709. Removed previous draft documentation for version 1803.</p>
 </td></tr>
 </tbody>
 </table>
@@ -585,8 +585,8 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr>
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
+<td><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
 <li>Display/DisablePerProcessDpiForApps</li>
 <li>Display/EnablePerProcessDpi</li>
@@ -603,12 +603,12 @@ This article lists new and updated articles for the Mobile Device Management (MD
 <ul>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="vpnv2-profile-xsd.md" data-raw-source="[VPNv2 ProfileXML XSD](vpnv2-profile-xsd.md)">VPNv2 ProfileXML XSD</a></td>
-<td style="vertical-align:top"><p>Updated the XSD and Plug-in profile example for VPNv2 CSP.</p>
+<td><a href="vpnv2-profile-xsd.md" data-raw-source="[VPNv2 ProfileXML XSD](vpnv2-profile-xsd.md)">VPNv2 ProfileXML XSD</a></td>
+<td><p>Updated the XSD and Plug-in profile example for VPNv2 CSP.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="assignedaccess-csp.md" data-raw-source="[AssignedAccess CSP](assignedaccess-csp.md)">AssignedAccess CSP</a></td>
-<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
+<td><a href="assignedaccess-csp.md" data-raw-source="[AssignedAccess CSP](assignedaccess-csp.md)">AssignedAccess CSP</a></td>
+<td><p>Added the following nodes in Windows 10, version 1803:</p>
 <ul>
 <li>Status</li>
 <li>ShellLauncher</li>
@@ -617,12 +617,12 @@ This article lists new and updated articles for the Mobile Device Management (MD
 <p>Updated the AssigneAccessConfiguration schema. Starting in Windows 10, version 1803 AssignedAccess CSP is supported in HoloLens (1st gen) Commercial Suite. Added example for HoloLens (1st gen) Commercial Suite.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="multisim-csp.md" data-raw-source="[MultiSIM CSP](multisim-csp.md)">MultiSIM CSP</a></td>
-<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+<td><a href="multisim-csp.md" data-raw-source="[MultiSIM CSP](multisim-csp.md)">MultiSIM CSP</a></td>
+<td><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="enterprisemodernappmanagement-csp.md" data-raw-source="[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)">EnterpriseModernAppManagement CSP</a></td>
-<td style="vertical-align:top"><p>Added the following node in Windows 10, version 1803:</p>
+<td><a href="enterprisemodernappmanagement-csp.md" data-raw-source="[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)">EnterpriseModernAppManagement CSP</a></td>
+<td><p>Added the following node in Windows 10, version 1803:</p>
 <ul>
 <li>MaintainProcessorArchitectureOnUpdate</li>
 </ul>
@@ -645,8 +645,8 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr>
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1803:</p>
+<td><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td><p>Added the following new policies for Windows 10, version 1803:</p>
 <ul>
 <li>Browser/AllowConfigurationUpdateForBooksLibrary</li>
 <li>Browser/AlwaysEnableBooksLibrary</li>
@@ -744,16 +744,16 @@ This article lists new and updated articles for the Mobile Device Management (MD
 <p>Security/RequireDeviceEncryption - updated to show it is supported in desktop.</p>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
-<td style="vertical-align:top"><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, version 1803.</p>
+<td><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
+<td><p>Updated the description for AllowWarningForOtherDiskEncryption to describe changes added in Windows 10, version 1803.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="enterprisemodernappmanagement-csp.md" data-raw-source="[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)">EnterpriseModernAppManagement CSP</a></td>
-<td style="vertical-align:top"><p>Added new node MaintainProcessorArchitectureOnUpdate in Windows 10, next major update.</p>
+<td><a href="enterprisemodernappmanagement-csp.md" data-raw-source="[EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)">EnterpriseModernAppManagement CSP</a></td>
+<td><p>Added new node MaintainProcessorArchitectureOnUpdate in Windows 10, next major update.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="dmclient-csp.md" data-raw-source="[DMClient CSP](dmclient-csp.md)">DMClient CSP</a></td>
-<td style="vertical-align:top"><p>Added ./User/Vendor/MSFT/DMClient/Provider/[ProviderID]/FirstSyncStatus node. Also added the following nodes in Windows 10, version 1803:</p>
+<td><a href="dmclient-csp.md" data-raw-source="[DMClient CSP](dmclient-csp.md)">DMClient CSP</a></td>
+<td><p>Added ./User/Vendor/MSFT/DMClient/Provider/[ProviderID]/FirstSyncStatus node. Also added the following nodes in Windows 10, version 1803:</p>
 <ul>
 <li>AADSendDeviceToken</li>
 <li>BlockInStatusPage</li>
@@ -764,16 +764,16 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </ul>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="defender-csp.md" data-raw-source="[Defender CSP](defender-csp.md)">Defender CSP</a></td>
-<td style="vertical-align:top"><p>Added new node (OfflineScan) in Windows 10, version 1803.</p>
+<td><a href="defender-csp.md" data-raw-source="[Defender CSP](defender-csp.md)">Defender CSP</a></td>
+<td><p>Added new node (OfflineScan) in Windows 10, version 1803.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="uefi-csp.md" data-raw-source="[UEFI CSP](uefi-csp.md)">UEFI CSP</a></td>
-<td style="vertical-align:top"><p>Added a new CSP in Windows 10, version 1803.</p>
+<td><a href="uefi-csp.md" data-raw-source="[UEFI CSP](uefi-csp.md)">UEFI CSP</a></td>
+<td><p>Added a new CSP in Windows 10, version 1803.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="update-csp.md" data-raw-source="[Update CSP](update-csp.md)">Update CSP</a></td>
-<td style="vertical-align:top"><p>Added the following nodes in Windows 10, version 1803:</p>
+<td><a href="update-csp.md" data-raw-source="[Update CSP](update-csp.md)">Update CSP</a></td>
+<td><p>Added the following nodes in Windows 10, version 1803:</p>
 <ul>
 <li>Rollback</li>
 <li>Rollback/FeatureUpdate</li>
@@ -799,8 +799,8 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><a href="configuration-service-provider-reference.md" data-raw-source="[Configuration service provider reference](configuration-service-provider-reference.md)">Configuration service provider reference</a></td>
-<td style="vertical-align:top"><p>Added new section <a href="configuration-service-provider-reference.md#csp-ddf-files-download" data-raw-source="[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)">CSP DDF files download</a></p>
+<td><a href="configuration-service-provider-reference.md" data-raw-source="[Configuration service provider reference](configuration-service-provider-reference.md)">Configuration service provider reference</a></td>
+<td><p>Added new section <a href="configuration-service-provider-reference.md#csp-ddf-files-download" data-raw-source="[CSP DDF files download](configuration-service-provider-reference.md#csp-ddf-files-download)">CSP DDF files download</a></p>
 </td></tr>
 </tbody>
 </table>
@@ -820,8 +820,8 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Added the following policies for Windows 10, version 1709:</p>
+<td><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td><p>Added the following policies for Windows 10, version 1709:</p>
 <ul>
 <li>Authentication/AllowFidoDeviceSignon</li>
 <li>Cellular/LetAppsAccessCellularData</li>
@@ -858,28 +858,28 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><a href="policy-ddf-file.md" data-raw-source="[Policy DDF file](policy-ddf-file.md)">Policy DDF file</a></td>
-<td style="vertical-align:top"><p>Updated the DDF content for Windows 10 version 1709. Added a link to the download of Policy DDF for Windows 10, version 1709.</p>
+<td><a href="policy-ddf-file.md" data-raw-source="[Policy DDF file](policy-ddf-file.md)">Policy DDF file</a></td>
+<td><p>Updated the DDF content for Windows 10 version 1709. Added a link to the download of Policy DDF for Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Updated the following policies:</p>
+<td><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td><p>Updated the following policies:</p>
 <ul>
 <li>Defender/ControlledFolderAccessAllowedApplications - string separator is |.</li>
 <li>Defender/ControlledFolderAccessProtectedFolders - string separator is |.</li>
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top"><a href="euiccs-csp.md" data-raw-source="[eUICCs CSP](euiccs-csp.md)">eUICCs CSP</a></td>
-<td style="vertical-align:top"><p>Added new CSP in Windows 10, version 1709.</p>
+<td><a href="euiccs-csp.md" data-raw-source="[eUICCs CSP](euiccs-csp.md)">eUICCs CSP</a></td>
+<td><p>Added new CSP in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="assignedaccess-csp.md" data-raw-source="[AssignedAccess CSP](assignedaccess-csp.md)">AssignedAccess CSP</a></td>
-<td style="vertical-align:top"><p>Added SyncML examples for the new Configuration node.</p>
+<td><a href="assignedaccess-csp.md" data-raw-source="[AssignedAccess CSP](assignedaccess-csp.md)">AssignedAccess CSP</a></td>
+<td><p>Added SyncML examples for the new Configuration node.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="dmclient-csp.md" data-raw-source="[DMClient CSP](dmclient-csp.md)">DMClient CSP</a></td>
-<td style="vertical-align:top"><p>Added new nodes to the DMClient CSP in Windows 10, version 1709. Updated the CSP and DDF topics.</p>
+<td><a href="dmclient-csp.md" data-raw-source="[DMClient CSP](dmclient-csp.md)">DMClient CSP</a></td>
+<td><p>Added new nodes to the DMClient CSP in Windows 10, version 1709. Updated the CSP and DDF topics.</p>
 </td></tr>
 </tbody>
 </table>
@@ -899,8 +899,8 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p>
+<td><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td><p>Added the following new policies for Windows 10, version 1709:</p>
 <ul>
 <li>Authentication/AllowAadPasswordReset</li>
 <li>Handwriting/PanelDefaultModeDocked</li>
@@ -910,16 +910,16 @@ This article lists new and updated articles for the Mobile Device Management (MD
 <p>Added new settings to Update/BranchReadinessLevel policy in Windows 10 version 1709.</p>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top"><a href="assignedaccess-csp.md" data-raw-source="[AssignedAccess CSP](assignedaccess-csp.md)">AssignedAccess CSP</a></td>
-<td style="vertical-align:top"><p>Starting in Windows 10, version 1709, AssignedAccess CSP is also supported in Windows 10 Pro.</p>
+<td><a href="assignedaccess-csp.md" data-raw-source="[AssignedAccess CSP](assignedaccess-csp.md)">AssignedAccess CSP</a></td>
+<td><p>Starting in Windows 10, version 1709, AssignedAccess CSP is also supported in Windows 10 Pro.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top">Microsoft Store for Business and Microsoft Store</td>
-<td style="vertical-align:top"><p>Windows Store for Business name changed to Microsoft Store for Business. Windows Store name changed to Microsoft Store.</p>
+<td>Microsoft Store for Business and Microsoft Store</td>
+<td><p>Windows Store for Business name changed to Microsoft Store for Business. Windows Store name changed to Microsoft Store.</p>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top">The <a href="/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692" data-raw-source="[\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692)">[MS-MDE2]: Mobile Device Enrollment Protocol Version 2</a></td>
-<td style="vertical-align:top"><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
+<td>The <a href="/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692" data-raw-source="[\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2](/openspecs/windows_protocols/ms-mde2/4d7eadd5-3951-4f1c-8159-c39e07cbe692)">[MS-MDE2]: Mobile Device Enrollment Protocol Version 2</a></td>
+<td><p>The Windows 10 enrollment protocol was updated. The following elements were added to the RequestSecurityToken message:</p>
 <ul>
 <li>UXInitiated - boolean value that indicates whether the enrollment is user initiated from the Settings page. </li>
 <li>ExternalMgmtAgentHint - a string the agent uses to give hints the enrollment server may need.</li>
@@ -928,20 +928,20 @@ This article lists new and updated articles for the Mobile Device Management (MD
 <p>For examples, see section 4.3.1 RequestSecurityToken of the MS-MDE2 protocol documentation.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="enterpriseapn-csp.md" data-raw-source="[EnterpriseAPN CSP](enterpriseapn-csp.md)">EnterpriseAPN CSP</a></td>
-<td style="vertical-align:top"><p>Added a SyncML example.</p>
+<td><a href="enterpriseapn-csp.md" data-raw-source="[EnterpriseAPN CSP](enterpriseapn-csp.md)">EnterpriseAPN CSP</a></td>
+<td><p>Added a SyncML example.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="vpnv2-csp.md" data-raw-source="[VPNv2 CSP](vpnv2-csp.md)">VPNv2 CSP</a></td>
-<td style="vertical-align:top"><p>Added RegisterDNS setting in Windows 10, version 1709.</p>
+<td><a href="vpnv2-csp.md" data-raw-source="[VPNv2 CSP](vpnv2-csp.md)">VPNv2 CSP</a></td>
+<td><p>Added RegisterDNS setting in Windows 10, version 1709.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="enroll-a-windows-10-device-automatically-using-group-policy.md" data-raw-source="[Enroll a Windows 10 device automatically using Group Policy](enroll-a-windows-10-device-automatically-using-group-policy.md)">Enroll a Windows 10 device automatically using Group Policy</a></td>
-<td style="vertical-align:top"><p>Added new topic to introduce a new Group Policy for automatic MDM enrollment.</p>
+<td><a href="enroll-a-windows-10-device-automatically-using-group-policy.md" data-raw-source="[Enroll a Windows 10 device automatically using Group Policy](enroll-a-windows-10-device-automatically-using-group-policy.md)">Enroll a Windows 10 device automatically using Group Policy</a></td>
+<td><p>Added new topic to introduce a new Group Policy for automatic MDM enrollment.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="mdm-enrollment-of-windows-devices.md" data-raw-source="[MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)">MDM enrollment of Windows-based devices</a></td>
-<td style="vertical-align:top"><p>New features in the Settings app:</p>
+<td><a href="mdm-enrollment-of-windows-devices.md" data-raw-source="[MDM enrollment of Windows-based devices](mdm-enrollment-of-windows-devices.md)">MDM enrollment of Windows-based devices</a></td>
+<td><p>New features in the Settings app:</p>
 <ul>
 <li>User sees installation progress of critical policies during MDM enrollment.</li>
 <li>User knows what policies, profiles, apps MDM has configured</li>
@@ -967,23 +967,23 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><a href="enable-admx-backed-policies-in-mdm.md" data-raw-source="[Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md)">Enable ADMX-backed policies in MDM</a></td>
-<td style="vertical-align:top"><p>Added new step-by-step guide to enable ADMX-backed policies.</p>
+<td><a href="enable-admx-backed-policies-in-mdm.md" data-raw-source="[Enable ADMX-backed policies in MDM](enable-admx-backed-policies-in-mdm.md)">Enable ADMX-backed policies in MDM</a></td>
+<td><p>Added new step-by-step guide to enable ADMX-backed policies.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="mobile-device-enrollment.md" data-raw-source="[Mobile device enrollment](mobile-device-enrollment.md)">Mobile device enrollment</a></td>
-<td style="vertical-align:top"><p>Added the following statement:</p>
+<td><a href="mobile-device-enrollment.md" data-raw-source="[Mobile device enrollment](mobile-device-enrollment.md)">Mobile device enrollment</a></td>
+<td><p>Added the following statement:</p>
 <ul>
 <li>Devices that are joined to an on-premises Active Directory can enroll into MDM via the Work access page in <strong>Settings</strong>. However, the enrollment can only target the user enrolled with user-specific policies. Device targeted policies will continue to impact all users of the device.</li>
 </ul>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="cm-cellularentries-csp.md" data-raw-source="[CM\_CellularEntries CSP](cm-cellularentries-csp.md)">CM_CellularEntries CSP</a></td>
-<td style="vertical-align:top"><p>Updated the description of the PuposeGroups node to add the GUID for applications. This node is required instead of optional.</p>
+<td><a href="cm-cellularentries-csp.md" data-raw-source="[CM\_CellularEntries CSP](cm-cellularentries-csp.md)">CM_CellularEntries CSP</a></td>
+<td><p>Updated the description of the PuposeGroups node to add the GUID for applications. This node is required instead of optional.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="enterprisedataprotection-csp.md" data-raw-source="[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)">EnterpriseDataProtection CSP</a></td>
-<td style="vertical-align:top"><p>Updated the Settings/EDPEnforcementLevel values to the following:</p>
+<td><a href="enterprisedataprotection-csp.md" data-raw-source="[EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)">EnterpriseDataProtection CSP</a></td>
+<td><p>Updated the Settings/EDPEnforcementLevel values to the following:</p>
 <ul>
 <li> 0 (default) – Off / No protection (decrypts previously protected data).</li>
 <li>  1 – Silent mode (encrypt and audit only).</li>
@@ -992,31 +992,31 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </ul>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="applocker-csp.md" data-raw-source="[AppLocker CSP](applocker-csp.md)">AppLocker CSP</a></td>
-<td style="vertical-align:top"><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in <a href="applocker-csp.md#allow-list-examples" data-raw-source="[Allowlist examples](applocker-csp.md#allow-list-examples)">Allow list examples</a>.</p>
+<td><a href="applocker-csp.md" data-raw-source="[AppLocker CSP](applocker-csp.md)">AppLocker CSP</a></td>
+<td><p>Added two new SyncML examples (to disable the calendar app and to block usage of the map app) in <a href="applocker-csp.md#allow-list-examples" data-raw-source="[Allowlist examples](applocker-csp.md#allow-list-examples)">Allow list examples</a>.</p>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="devicemanageability-csp.md" data-raw-source="[DeviceManageability CSP](devicemanageability-csp.md)">DeviceManageability CSP</a></td>
-<td style="vertical-align:top"><p>Added the following settings in Windows 10, version 1709:</p>
+<td><a href="devicemanageability-csp.md" data-raw-source="[DeviceManageability CSP](devicemanageability-csp.md)">DeviceManageability CSP</a></td>
+<td><p>Added the following settings in Windows 10, version 1709:</p>
 <ul>
 <li>Provider/<em>ProviderID</em>/ConfigInfo</li>
 <li> Provider/<em>ProviderID</em>/EnrollmentInfo</li>
 </ul>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="office-csp.md" data-raw-source="[Office CSP](office-csp.md)">Office CSP</a></td>
-<td style="vertical-align:top"><p>Added the following setting in Windows 10, version 1709:</p>
+<td><a href="office-csp.md" data-raw-source="[Office CSP](office-csp.md)">Office CSP</a></td>
+<td><p>Added the following setting in Windows 10, version 1709:</p>
 <ul>
 <li>Installation/CurrentStatus</li>
 </ul>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
-<td style="vertical-align:top">Added information to the ADMX-backed policies. Changed the minimum personal identification number (PIN) length to 4 digits in SystemDrivesRequireStartupAuthentication and SystemDrivesMinimumPINLength in Windows 10, version 1709.
+<td><a href="bitlocker-csp.md" data-raw-source="[BitLocker CSP](bitlocker-csp.md)">BitLocker CSP</a></td>
+<td>Added information to the ADMX-backed policies. Changed the minimum personal identification number (PIN) length to 4 digits in SystemDrivesRequireStartupAuthentication and SystemDrivesMinimumPINLength in Windows 10, version 1709.
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="firewall-csp.md" data-raw-source="[Firewall CSP](firewall-csp.md)">Firewall CSP</a></td>
-<td style="vertical-align:top">Updated the CSP and DDF topics. Here are the changes:
+<td><a href="firewall-csp.md" data-raw-source="[Firewall CSP](firewall-csp.md)">Firewall CSP</a></td>
+<td>Updated the CSP and DDF topics. Here are the changes:
 <ul>
 <li>Removed the two settings - FirewallRules/FirewallRuleName/FriendlyName and FirewallRules/FirewallRuleName/IcmpTypesAndCodes.</li>
 <li>Changed some data types from integer to bool.</li>
@@ -1025,8 +1025,8 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </ul>
 </td></tr>
 <tr class="odd">
-<td style="vertical-align:top"><a href="policy-ddf-file.md" data-raw-source="[Policy DDF file](policy-ddf-file.md)">Policy DDF file</a></td>
-<td style="vertical-align:top">Added another Policy DDF file <a href="https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml" data-raw-source="[download](https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)">download</a> for the 8C release of Windows 10, version 1607, which added the following policies:
+<td><a href="policy-ddf-file.md" data-raw-source="[Policy DDF file](policy-ddf-file.md)">Policy DDF file</a></td>
+<td>Added another Policy DDF file <a href="https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml" data-raw-source="[download](https://download.microsoft.com/download/6/1/C/61C022FD-6F5D-4F73-9047-17F630899DC4/PolicyDDF_all_version1607_8C.xml)">download</a> for the 8C release of Windows 10, version 1607, which added the following policies:
 <ul>
 <li>Browser/AllowMicrosoftCompatibilityList</li>
 <li>Update/DisableDualScan</li>
@@ -1034,8 +1034,8 @@ This article lists new and updated articles for the Mobile Device Management (MD
 </ul>
 </td></tr>
 <tr class="even">
-<td style="vertical-align:top"><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
-<td style="vertical-align:top"><p>Added the following new policies for Windows 10, version 1709:</p>
+<td><a href="policy-configuration-service-provider.md" data-raw-source="[Policy CSP](policy-configuration-service-provider.md)">Policy CSP</a></td>
+<td><p>Added the following new policies for Windows 10, version 1709:</p>
 <ul>
 <li>Browser/ProvisionFavorites</li>
 <li>Browser/LockdownFavorites</li>

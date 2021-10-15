@@ -2,7 +2,7 @@
 title: Set up Delivery Optimization
 ms.reviewer: 
 manager: laurawi
-description: In this article, learn how to set up Delivery Optimization, a new peer-to-peer distribution method in Windows 10.
+description: In this article, learn how to set up Delivery Optimization.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -15,11 +15,12 @@ ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
 
-# Set up Delivery Optimization for Windows 10 updates
+# Set up Delivery Optimization for Windows client updates
 
 **Applies to**
 
 - Windows 10
+- Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
@@ -211,6 +212,6 @@ Log entries are written to the PowerShell pipeline as objects. To dump logs to a
 
 Update Compliance provides you with information about your Delivery Optimization configuration, including the observed bandwidth savings across all devices that used peer-to-peer distribution over the past 28 days.
 
-[ ![DO status](images/UC_workspace_DO_status.png) ](images/UC_workspace_DO_status.png#lightbox)
+[ ![DO status.](images/UC_workspace_DO_status.png) ](images/UC_workspace_DO_status.png#lightbox)
 
 For details, see [Delivery Optimization in Update Compliance](update-compliance-delivery-optimization.md).

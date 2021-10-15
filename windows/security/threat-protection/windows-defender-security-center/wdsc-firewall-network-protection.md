@@ -9,10 +9,10 @@ ms.sitesec: library
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 04/30/2018
+ms.date:
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 
@@ -20,8 +20,8 @@ ms.technology: mde
 
 **Applies to**
 
-- Windows 10, version 1703 and later
-
+- Windows 10
+- Windows 11
 
 The **Firewall & network protection** section contains information about the firewalls and network connections used by the machine, including the status of Windows Defender Firewall and any other third-party firewalls. IT administrators and IT pros can get configuration guidance from the [Windows Defender Firewall with Advanced Security documentation library](../windows-firewall/windows-firewall-with-advanced-security.md).
 
@@ -52,5 +52,5 @@ This can only be done in Group Policy.
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >  
->![Windows Security app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
+>![Windows Security app with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
 

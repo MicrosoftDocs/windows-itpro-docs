@@ -49,7 +49,7 @@ You use a command-line option,**/hardlink** , to create a hard-link migration st
 
 The following flowchart illustrates the procedural differences between a local migration store and a remote migration store. In this example, a hard-link migration store is used for the local store.
 
-![migration store comparison](images/dep-win8-l-usmt-migrationcomparemigstores.gif)
+![migration store comparison.](images/dep-win8-l-usmt-migrationcomparemigstores.gif)
 
 ## <a href="" id="bkmk-localvremote"></a>Local Store vs. Remote Store
 

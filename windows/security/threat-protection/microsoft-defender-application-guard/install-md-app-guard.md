@@ -1,5 +1,5 @@
 ---
-title: Enable hardware-based isolation for Microsoft Edge (Windows 10)
+title: Enable hardware-based isolation for Microsoft Edge (Windows)
 description: Learn about the Microsoft Defender Application Guard modes (Standalone or Enterprise-managed), and how to install Application Guard in your enterprise.
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 10/21/2020
+ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -18,7 +18,9 @@ ms.technology: mde
 # Prepare to install Microsoft Defender Application Guard
 
 **Applies to:**
-- - Windows 10
+
+- Windows 10
+- Windows 11
 
 ## Review system requirements
  
@@ -34,6 +36,7 @@ Before you can install and use Microsoft Defender Application Guard, you must de
 Applies to:
 - Windows 10 Enterprise edition, version 1709 or higher
 - Windows 10 Pro edition, version 1803
+- Windows 11
 
 Employees can use hardware-isolated browsing sessions without any administrator or management policy configuration. In this mode,   you must install Application Guard and then the employee must manually start Microsoft Edge in Application Guard while browsing untrusted sites. For an example of how this works, see the [Application Guard in standalone mode](test-scenarios-md-app-guard.md) testing scenario.
 
@@ -41,11 +44,12 @@ Employees can use hardware-isolated browsing sessions without any administrator 
 
 Applies to:
 - Windows 10 Enterprise edition, version 1709 or higher
+- Windows 11
 
 You and your security department can define your corporate boundaries by explicitly adding trusted domains and by customizing the Application Guard experience to meet and enforce your needs on employee devices. Enterprise-managed mode also automatically redirects any browser requests to add non-enterprise domain(s) in the container.
 
 The following diagram shows the flow between the host PC and the isolated container.
-![Flowchart for movement between Microsoft Edge and Application Guard](images/application-guard-container-v-host.png)
+![Flowchart for movement between Microsoft Edge and Application Guard.](images/application-guard-container-v-host.png)
 
 ## Install Application Guard
 
@@ -55,7 +59,7 @@ Application Guard functionality is turned off by default. However, you can quick
 
 1. Open the **Control Panel**, click **Programs,** and then click **Turn Windows features on or off**.
 
-    ![Windows Features, turning on Microsoft Defender Application Guard](images/turn-windows-features-on-off.png)
+    ![Windows Features, turning on Microsoft Defender Application Guard.](images/turn-windows-features-on-off.png)
 
 2. Select the check box next to **Microsoft Defender Application Guard** and then click **OK**.
 
@@ -66,7 +70,7 @@ Application Guard functionality is turned off by default. However, you can quick
 >[!NOTE]
 >Ensure your devices have met all system requirements prior to this step. PowerShell will install the feature without checking system requirements. If your devices don't meet the system requirements, Application Guard may not work. This step is recommended for enterprise managed scenarios only.
 
-1. Click the **Search** or **Cortana** icon in the Windows 10 taskbar and type **PowerShell**.
+1. Click the **Search** or **Cortana** icon in the Windows 10 or Windows 11 taskbar and type **PowerShell**.
    
 2. Right-click **Windows PowerShell**, and then click **Run as administrator**.
 
@@ -86,7 +90,7 @@ Application Guard functionality is turned off by default. However, you can quick
 > [!IMPORTANT]
 > Make sure your organization's devices meet [requirements](reqs-md-app-guard.md) and are [enrolled in Intune](/mem/intune/enrollment/device-enrollment).
 
-:::image type="content" source="images/MDAG-EndpointMgr-newprofile.jpg" alt-text="Enroll devices in Intune":::
+:::image type="content" source="images/MDAG-EndpointMgr-newprofile.jpg" alt-text="Enroll devices in Intune.":::
 
 1. Go to [https://endpoint.microsoft.com](https://endpoint.microsoft.com) and sign in.
 

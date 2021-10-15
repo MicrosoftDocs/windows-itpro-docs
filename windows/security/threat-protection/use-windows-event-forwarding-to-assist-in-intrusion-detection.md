@@ -380,9 +380,9 @@ This can easily be extended to other Auto-Execution Start Points keys in the reg
 
 Use the following figures to see how you can configure those registry keys.
 
-![default acl for run key](images/runkey.png)
+![default acl for run key.](images/runkey.png)
 
-![default acl for runonce key](images/runoncekey.png)
+![default acl for runonce key.](images/runoncekey.png)
 
 ## <a href="" id="bkmk-appendixc"></a>Appendix C - Event channel settings (enable and channel access) methods
 
@@ -399,7 +399,7 @@ The following GPO snippet performs the following:
 -   Enables the **Microsoft-Windows-DriverFrameworks-UserMode/Operational** event channel.
 -   Sets the maximum file size for **Microsoft-Windows-DriverFrameworks-UserMode/Operational** to 50MB.
 
-![configure event channels](images/capi-gpo.png)
+![configure event channels.](images/capi-gpo.png)
 
 ## <a href="" id="bkmk-appendixd"></a>Appendix D - Minimum GPO for WEF Client configuration
 
@@ -409,7 +409,7 @@ Here are the minimum steps for WEF to operate:
 2.  Start the WinRM service.
 3.  Add the Network Service account to the built-in Event Log Readers security group. This allows reading from secured event channel, such as the security event channel.
 
-![configure the wef client](images/wef-client-config.png)
+![configure the wef client.](images/wef-client-config.png)
 
 ## <a href="" id="bkmk-appendixe"></a>Appendix E – Annotated baseline subscription event query
 

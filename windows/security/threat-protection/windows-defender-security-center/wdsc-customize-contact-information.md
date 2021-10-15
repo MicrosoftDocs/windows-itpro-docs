@@ -10,33 +10,24 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 04/30/2018
+ms.date: 
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Customize the Windows Security app for your organization
 
 **Applies to**
 
-- Windows 10, version 1709 and later
-
-**Audience**
-
-- Enterprise security administrators
-
-**Manageability available with**
-
-- Group Policy
+- Windows 10
+- Windows 11
 
 You can add information about your organization in a contact card to the Windows Security app. You can include a link to a support site, a phone number for a help desk, and an email address for email-based support.
 
-![The security center custom fly-out](images/security-center-custom-flyout.png)
+![The security center custom fly-out.](images/security-center-custom-flyout.png)
 
 This information will also be shown in some enterprise-specific notifications (including notifications for the [Block at first sight feature](/windows/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus), and [potentially unwanted applications](/windows/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)).
-
-![A security center notification](images/security-center-custom-notif.png)
 
 Users can select the displayed information to initiate a support request:
 
@@ -60,7 +51,7 @@ This can only be done in Group Policy.
 
 3. Expand the tree to **Windows components > Windows Security > Enterprise Customization**.
 
-4. Enable the contact card and the customized notifications by configuring two separate Group Policy settings. They will both use the same source of information (explained in Steps 5 and 6). You can enable both, or slect one or the other:
+4. Enable the contact card and the customized notifications by configuring two separate Group Policy settings. They will both use the same source of information (explained in Steps 5 and 6). You can enable both, or select one or the other:
 
     1. To enable the contact card, open the **Configure customized contact information** setting and set it to **Enabled**. Click **OK**.
 

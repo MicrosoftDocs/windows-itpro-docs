@@ -17,7 +17,12 @@ ms.custom: seo-marvel-apr2020
 
 # Feature Update Status
 
-[ ![The Feature Update Status report](images/UC_workspace_FU_status.png) ](images/UC_workspace_FU_status.png#lightbox)
+**Applies to**
+
+- Windows 10
+- Windows 11
+
+[ ![The Feature Update Status report.](images/UC_workspace_FU_status.png) ](images/UC_workspace_FU_status.png#lightbox)
 
 The Feature Update Status section provides information about the status of [feature updates](waas-quick-start.md#definitions) across all devices. This section tile in the [Overview Blade](update-compliance-using.md#overview-blade) gives a percentage of devices that are on the latest applicable feature update; [Servicing Channel](waas-overview.md#servicing-channels) is considered in determining applicability. Within this section are two blades; one providing a holistic view of feature updates, the other containing three **Deployment Status** tiles, each charged with tracking the deployment for a different [Servicing Channel](waas-overview.md#servicing-channels). 
 
@@ -38,7 +43,7 @@ Refer to the following list for what each state means:
 
 ## Safeguard holds
 
-Microsoft uses diagnostic data to determine whether devices that use Windows Update are ready for a feature update in order to ensure a smooth experience. When Microsoft determines a device is not ready to update due to a known issue, a *safeguard hold* is generated to delay the device's upgrade and protect the end-user experience. Holds are released over time as diagnostic data is analyzed and fixes are addressed. Details are provided on some, but not all safeguard holds on the Windows 10 release information page for any given release. 
+Microsoft uses diagnostic data to determine whether devices that use Windows Update are ready for a feature update in order to ensure a smooth experience. When Microsoft determines a device is not ready to update due to a known issue, a *safeguard hold* is generated to delay the device's upgrade and protect the end-user experience. Holds are released over time as diagnostic data is analyzed and fixes are addressed. Details are provided on some, but not all safeguard holds on the Windows client release information pages for any given release. 
 
 ## Queries for safeguard holds
 

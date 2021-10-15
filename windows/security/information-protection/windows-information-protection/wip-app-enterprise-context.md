@@ -36,13 +36,13 @@ You need to add the Enterprise Context column to the **Details** tab of the Task
 
     The **Select columns** box appears.
 
-    ![Task Manager, Select column box with Enterprise Context option selected](images/wip-select-column.png)
+    ![Task Manager, Select column box with Enterprise Context option selected.](images/wip-select-column.png)
 
 3. Scroll down and check the **Enterprise Context** option, and then click **OK** to close the box.
 
     The **Enterprise Context** column should now be available in Task Manager.
 
-    ![Task Manager, Enterprise Context column highlighted](images/wip-taskmgr.png)
+    ![Task Manager, Enterprise Context column highlighted.](images/wip-taskmgr.png)
 
 ## Review the Enterprise Context
 The **Enterprise Context** column shows you what each app can do with your enterprise data:

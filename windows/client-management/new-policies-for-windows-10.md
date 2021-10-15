@@ -11,7 +11,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 10/24/2017
+ms.date: 09/15/2021
 ms.topic: reference
 ---
 
@@ -20,7 +20,8 @@ ms.topic: reference
 
 **Applies to**
 
--   Windows 10
+- Windows 10
+- Windows 11
 
 As of September 2020 This page will no longer be updated. To find the Group Polices that ship in each version of Windows,  refer to the Group Policy Settings Reference Spreadsheet. You can always locate the most recent version of the Spreadsheet by searching the Internet for "Windows Version + Group Policy Settings Reference".
 
@@ -481,7 +482,7 @@ For a spreadsheet of Group Policy settings included in Windows 10 and Windows Se
 ## New MDM policies
 
 
-Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, Windows 10 Education, and Windows 10 Mobile includes settings from Windows Phone 8.1, plus new or enhanced settings for Windows 10, such as:
+Mobile device management (MDM) for Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education includes settings from Windows Phone 8.1, plus new or enhanced settings for Windows 10, such as:
 
 -   Defender (Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education only)
 

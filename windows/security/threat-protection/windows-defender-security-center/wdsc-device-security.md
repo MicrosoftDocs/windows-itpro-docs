@@ -10,17 +10,18 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.author: dansimp
-ms.date: 10/02/2018
+ms.date: 
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Device security
 
 **Applies to**
 
-- Windows 10, version 1803 and later
+- Windows 10
+- Windows 11
 
 The **Device security** section contains information and settings for built-in device security.
 
@@ -28,7 +29,7 @@ You can choose to hide the section from users of the machine. This can be useful
 
 ## Hide the Device security section
 
-You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigiation bar on the side of the app.
+You can choose to hide the entire section by using Group Policy. The section will not appear on the home page of the Windows Security app, and its icon will not be shown on the navigation bar on the side of the app.
 
 This can only be done in Group Policy.
 
@@ -50,7 +51,7 @@ This can only be done in Group Policy.
 >[!NOTE]
 >If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >  
->![Windows Security app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
+>![Windows Security app with all sections hidden by Group Policy.](images/wdsc-all-hide.png)
 
 ## Disable the Clear TPM button
 If you don't want users to be able to click the **Clear TPM** button in the Windows Security app, you can disable it.

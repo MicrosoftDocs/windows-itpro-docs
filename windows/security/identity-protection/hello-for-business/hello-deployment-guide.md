@@ -21,6 +21,7 @@ ms.reviewer:
 **Applies to**
 
 - Windows 10, version 1703 or later
+- Windows 11
 
 Windows Hello for Business is the springboard to a world without passwords. It replaces username and password sign-in to Windows with strong user authentication based on an asymmetric key pair.
 
@@ -41,7 +42,7 @@ This guide assumes that baseline infrastructure exists which meets the requireme
 - Proper name resolution, both internal and external names
 - Active Directory and an adequate number of domain controllers per site to support authentication
 - Active Directory Certificate Services 2012 or later
-- One or more workstation computers running Windows 10, version 1703
+- One or more workstation computers running Windows 10, version 1703 or later
 
 If you are installing a server role for the first time, ensure the appropriate server operating system is installed, updated with the latest patches, and joined to the domain. This document provides guidance to install and configure the specific roles on that server.  
 
@@ -49,7 +50,10 @@ Do not begin your deployment until the hosting servers and infrastructure (not r
 
 ## Deployment and trust models
 
-Windows Hello for Business has three deployment models: Cloud, hybrid, and on-premises. Hybrid and on-premises deployment models have two trust models: *Key trust* and *certificate trust*.
+Windows Hello for Business has three deployment models: Azure AD cloud only, hybrid, and on-premises. Hybrid and on-premises deployment models have two trust models: *Key trust* and *certificate trust*.
+
+> [!NOTE]
+> Windows Hello for Business is introducing a new trust model called cloud trust in early 2022. This trust model will enable deployment of Windows Hello for Business using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). More information will be available on Windows Hello for Business cloud trust once it is generally available.
 
 Hybrid deployments are for enterprises that use Azure Active Directory. On-premises deployments are for enterprises who exclusively use on-premises Active Directory. Remember that the environments that use Azure Active Directory must use the hybrid deployment model for all domains in that forest.
 

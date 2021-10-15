@@ -21,6 +21,7 @@ ms.reviewer:
 **Applies to**
 
 - Windows 10
+- Windows 11
 
 Congratulations! You are taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.
 
@@ -73,26 +74,31 @@ The hybrid deployment model is for organizations that:
 - Use applications hosted in Azure Active Directory, and want a single sign-in user experience for both on-premises and Azure Active Directory resources
 
 > [!Important]
-> Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models.</br>
-> **Requirements:**</br>
-> Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903</br>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+> Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models.
+>
+> **Requirements:**
+> - Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903
+> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 ##### On-premises
 The on-premises deployment model is for organizations that do not have cloud identities or use applications hosted in Azure Active Directory.
 
 > [!Important]
-> On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.</br>
-> **Requirements:**</br>
-> Reset from settings - Windows 10, version 1703, Professional</br>
-> Reset above lock screen - Windows 10, version 1709, Professional</br>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+> On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.
+>
+> **Requirements:**
+> - Reset from settings - Windows 10, version 1703, Professional
+> - Reset above lock screen - Windows 10, version 1709, Professional
+> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 It's fundamentally important to understand which deployment model to use for a successful deployment.  Some aspects of the deployment may have already been decided for you based on your current infrastructure.
 
 #### Trust types
 
 A deployment's trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trust types: key trust and certificate trust.
+
+> [!NOTE]
+> Windows Hello for Business is introducing a new trust model called cloud trust in early 2022. This trust model will enable deployment of Windows Hello for Business using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). More information will be available on Windows Hello for Business cloud trust once it is generally available.
 
 The key trust type does not require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 or later domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
@@ -145,9 +151,9 @@ Modern management is an emerging device management paradigm that leverages the c
 
 ### Client
 
-Windows Hello for Business is an exclusive Windows 10 feature.  As part of the Windows as a Service strategy, Microsoft has improved the deployment, management, and user experience with each new release of Windows 10 and introduced support for new scenarios.
+Windows Hello for Business is an exclusive Windows 10 and Windows 11 feature. As part of the Windows as a Service strategy, Microsoft has improved the deployment, management, and user experience with each new release of Windows and introduced support for new scenarios.
 
-Most deployment scenarios require a minimum of Windows 10, version 1511, also known as the November Update.  The client requirement may change based on different components in your existing infrastructure, or other infrastructure choices made later in planning your deployment.  Those components and choices may require a minimum client running Windows 10, version 1703, also known as the Creators Update.
+Most deployment scenarios require a minimum of Windows 10, version 1511, also known as the November Update.  The client requirement may change based on different components in your existing infrastructure, or other infrastructure choices made later in planning your deployment. Those components and choices may require a minimum client running Windows 10, version 1703, also known as the Creators Update.
 
 
 ### Active Directory
@@ -156,7 +162,7 @@ Hybrid and on-premises deployments include Active Directory as part of their inf
 
 ### Public Key Infrastructure
 
-The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-premises deployments need a certificate in order for Windows 10 devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
+The Windows Hello for Business deployment depends on an enterprise public key infrastructure as a trust anchor for authentication. Domain controllers for hybrid and on-premises deployments need a certificate in order for Windows devices to trust the domain controller as legitimate. Deployments using the certificate trust type need an enterprise public key infrastructure and a certificate registration authority to issue authentication certificates to users.  Hybrid deployments may need to issue VPN certificates to users to enable connectivity on-premises resources.
 
 ### Cloud
 
@@ -267,7 +273,7 @@ If you use modern management for both domain and non-domain joined devices, writ
 
 ### Client
 
-Windows Hello for Business is a feature exclusive to Windows 10.   Some deployments and features are available using earlier versions of Windows 10.  Others need the latest versions.
+Windows Hello for Business is a feature exclusive to Windows 10 and Windows 11. Some deployments and features are available using earlier versions of Windows 10. Others need the latest versions.
 
 If box **1a** on your planning worksheet reads **cloud only**, write **N/A** in box **3a** on your planning worksheet.  Optionally, you may write **1511 or later** in box **3b** on your planning worksheet if you plan to manage non-domain joined devices.
 > [!NOTE]

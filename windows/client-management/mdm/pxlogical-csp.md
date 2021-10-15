@@ -23,11 +23,11 @@ The PXLOGICAL configuration service provider is used to add, remove, or modify W
 
 The following diagram shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for initial bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
 
-![pxlogical csp (cp) (initial bootstrapping)](images/provisioning-csp-pxlogical-cp.png)
+![pxlogical csp (cp) (initial bootstrapping).](images/provisioning-csp-pxlogical-cp.png)
 
 The following diagram shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for updating the bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
 
-![pxlogical csp (cp) (update bootstrapping)](images/provisioning-csp-pxlogical-cp-2.png)
+![pxlogical csp (cp) (update bootstrapping).](images/provisioning-csp-pxlogical-cp-2.png)
 
 <a href="" id="pxphysical"></a>**PXPHYSICAL**  
 Defines a group of logical proxy settings.

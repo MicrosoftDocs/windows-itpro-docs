@@ -90,6 +90,13 @@ manager: dansimp
   </dd>
 </dl>
 
+> [!TIP]
+> Some of these are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <hr/>
 
@@ -99,28 +106,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -144,16 +157,10 @@ If you enable or do not configure this policy setting, Windows uses standby stat
 If you disable this policy setting, standby states (S1-S3) are not allowed.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow standby states (S1-S3) when sleeping (on battery)*
+-   GP Friendly name: *Allow standby states (S1-S3) when sleeping (on battery)*
 -   GP name: *AllowStandbyStatesDC_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -169,28 +176,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -214,16 +227,10 @@ If you enable or do not configure this policy setting, Windows uses standby stat
 If you disable this policy setting, standby states (S1-S3) are not allowed.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Allow standby states (S1-S3) when sleeping (plugged in)*
+-   GP Friendly name: *Allow standby states (S1-S3) when sleeping (plugged in)*
 -   GP name: *AllowStandbyStatesAC_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -239,28 +246,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -277,7 +290,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
@@ -286,16 +299,10 @@ If you disable or do not configure this policy setting, users control this setti
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the display (on battery)*
+-   GP Friendly name: *Turn off the display (on battery)*
 -   GP name: *VideoPowerDownTimeOutDC_2*
 -   GP path: *System/Power Management/Video and Display Settings*
 -   GP ADMX file name: *power.admx*
@@ -311,28 +318,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -349,7 +362,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows turns off the display.
+This policy setting allows you to specify the period of inactivity before Windows turns off the display.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows turns off the display.
 
@@ -358,16 +371,10 @@ If you disable or do not configure this policy setting, users control this setti
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the display from turning off.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off the display (plugged in)*
+-   GP Friendly name: *Turn off the display (plugged in)*
 -   GP name: *VideoPowerDownTimeOutAC_2*
 -   GP path: *System/Power Management/Video and Display Settings*
 -   GP ADMX file name: *power.admx*
@@ -383,28 +390,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -422,7 +435,7 @@ ADMX Info:
 <!--/Scope-->
 <!--Description-->
 
-Added in Windows&nbsp;10, version 1903. This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
+This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
 
 If you enable this policy setting, you must specify a percentage value that indicates the battery charge level. Energy Saver is automatically turned on at (and below) the specified battery charge level.
 
@@ -431,7 +444,7 @@ If you disable or do not configure this policy setting, users control this setti
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Energy Saver Battery Threshold (on battery)*
+-   GP Friendly name: *Energy Saver Battery Threshold (on battery)*
 -   GP name: *EsBattThresholdDC*
 -   GP element: *EnterEsBattThreshold*
 -   GP path: *System/Power Management/Energy Saver Settings*
@@ -457,28 +470,34 @@ Supported values: 0-100. The default is 70.
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -495,7 +514,7 @@ Supported values: 0-100. The default is 70.
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1903. This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
+This policy setting allows you to specify battery charge level at which Energy Saver is turned on.
 
 If you enable this policy setting, you must provide a percentage value that indicates the battery charge level. Energy Saver is automatically turned on at (and below) the specified battery charge level.
 
@@ -504,7 +523,7 @@ If you disable or do not configure this policy setting, users control this setti
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Energy Saver Battery Threshold (plugged in)*
+-   GP Friendly name: *Energy Saver Battery Threshold (plugged in)*
 -   GP name: *EsBattThresholdAC*
 -   GP element: *EnterEsBattThreshold*
 -   GP path: *System/Power Management/Energy Saver Settings*
@@ -530,28 +549,34 @@ Supported values: 0-100. The default is 70.
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -568,7 +593,7 @@ Supported values: 0-100. The default is 70.
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
@@ -577,16 +602,10 @@ If you disable or do not configure this policy setting, users control this setti
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify the system hibernate timeout (on battery)*
+-   GP Friendly name: *Specify the system hibernate timeout (on battery)*
 -   GP name: *DCHibernateTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -602,28 +621,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -640,7 +665,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
+This policy setting allows you to specify the period of inactivity before Windows transitions the system to hibernate.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to hibernate.
 
@@ -649,16 +674,11 @@ If you disable or do not configure this policy setting, users control this setti
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify the system hibernate timeout (plugged in)*
+-   GP Friendly name: *Specify the system hibernate timeout (plugged in)*
 -   GP name: *ACHibernateTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -674,28 +694,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -719,16 +745,10 @@ If you enable or do not configure this policy setting, the user is prompted for 
 If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require a password when a computer wakes (on battery)*
+-   GP Friendly name: *Require a password when a computer wakes (on battery)*
 -   GP name: *DCPromptForPasswordOnResume_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -744,28 +764,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -789,16 +815,10 @@ If you enable or do not configure this policy setting, the user is prompted for 
 If you disable this policy setting, the user is not prompted for a password when the system resumes from sleep.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require a password when a computer wakes (plugged in)*
+-   GP Friendly name: *Require a password when a computer wakes (plugged in)*
 -   GP name: *ACPromptForPasswordOnResume_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -814,28 +834,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -852,7 +878,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1903. This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
+This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
 
 If you enable this policy setting, you must select the desired action.
 
@@ -861,7 +887,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the lid switch action (on battery)*
+-   GP Friendly name: *Select the lid switch action (on battery)*
 -   GP name: *DCSystemLidAction_2*
 -   GP element: *SelectDCSystemLidAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -893,28 +919,34 @@ The following are the supported lid close switch actions (on battery):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -931,7 +963,7 @@ The following are the supported lid close switch actions (on battery):
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1903. This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
+This policy setting specifies the action that Windows takes when a user closes the lid on a mobile PC.
 
 If you enable this policy setting, you must select the desired action.
 
@@ -940,7 +972,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the lid switch action (plugged in)*
+-   GP Friendly name: *Select the lid switch action (plugged in)*
 -   GP name: *ACSystemLidAction_2*
 -   GP element: *SelectACSystemLidAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -972,28 +1004,34 @@ The following are the supported lid close switch actions (plugged in):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1010,7 +1048,7 @@ The following are the supported lid close switch actions (plugged in):
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1903. This policy setting specifies the action that Windows takes when a user presses the Power button. 
+This policy setting specifies the action that Windows takes when a user presses the Power button. 
 
 If you enable this policy setting, you must select the desired action.
 
@@ -1019,7 +1057,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the Power button action (on battery)*
+-   GP Friendly name: *Select the Power button action (on battery)*
 -   GP name: *DCPowerButtonAction_2*
 -   GP element: *SelectDCPowerButtonAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -1051,28 +1089,34 @@ The following are the supported Power button actions (on battery):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1089,7 +1133,7 @@ The following are the supported Power button actions (on battery):
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1903. This policy setting specifies the action that Windows takes when a user presses the Power button. 
+This policy setting specifies the action that Windows takes when a user presses the Power button. 
 
 If you enable this policy setting, you must select the desired action.
 
@@ -1098,7 +1142,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the Power button action (plugged in)*
+-   GP Friendly name: *Select the Power button action (plugged in)*
 -   GP name: *ACPowerButtonAction_2*
 -   GP element: *SelectACPowerButtonAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -1130,28 +1174,34 @@ The following are the supported Power button actions (plugged in):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1168,7 +1218,7 @@ The following are the supported Power button actions (plugged in):
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1903. This policy setting specifies the action that Windows takes when a user presses the Sleep button.
+This policy setting specifies the action that Windows takes when a user presses the Sleep button.
 
 If you enable this policy setting, you must select the desired action.
 
@@ -1177,7 +1227,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the Sleep button action (on battery)*
+-   GP Friendly name: *Select the Sleep button action (on battery)*
 -   GP name: *DCSleepButtonAction_2*
 -   GP element: *SelectDCSleepButtonAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -1209,28 +1259,34 @@ The following are the supported Sleep button actions (on battery):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1247,7 +1303,7 @@ The following are the supported Sleep button actions (on battery):
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1903. This policy setting specifies the action that Windows takes when a user presses the Sleep button.
+This policy setting specifies the action that Windows takes when a user presses the Sleep button.
 
 If you enable this policy setting, you must select the desired action.
 
@@ -1256,7 +1312,7 @@ If you disable this policy setting or do not configure it, users can see and cha
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Select the Sleep button action (plugged in)*
+-   GP Friendly name: *Select the Sleep button action (plugged in)*
 -   GP name: *ACSleepButtonAction_2*
 -   GP element: *SelectACSleepButtonAction*
 -   GP path: *System/Power Management/Button Settings*
@@ -1288,28 +1344,34 @@ The following are the supported Sleep button actions (plugged in):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1326,7 +1388,7 @@ The following are the supported Sleep button actions (plugged in):
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
@@ -1335,16 +1397,10 @@ If you disable or do not configure this policy setting, users control this setti
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify the system sleep timeout (on battery)*
+-   GP Friendly name: *Specify the system sleep timeout (on battery)*
 -   GP name: *DCStandbyTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -1360,28 +1416,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1398,7 +1460,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1709. This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
+This policy setting allows you to specify the period of inactivity before Windows transitions the system to sleep.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows transitions to sleep.
 
@@ -1407,16 +1469,10 @@ If you disable or do not configure this policy setting, users control this setti
 If the user has configured a slide show to run on the lock screen when the machine is locked, this can prevent the sleep transition from occurring.  The "Prevent enabling lock screen slide show" policy setting can be used to disable the slide show feature.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Specify the system sleep timeout (plugged in)*
+-   GP Friendly name: *Specify the system sleep timeout (plugged in)*
 -   GP name: *ACStandbyTimeOut_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -1432,28 +1488,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1470,7 +1532,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1903. This policy setting allows you to turn off hybrid sleep.
+This policy setting allows you to turn off hybrid sleep.
 
 If you set this policy setting to 0, a hiberfile is not generated when the system transitions to sleep (Stand By).
 
@@ -1479,7 +1541,7 @@ If you set this policy setting to 1 or do not configure this policy setting, use
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off hybrid sleep (on battery)*
+-   GP Friendly name: *Turn off hybrid sleep (on battery)*
 -   GP name: *DCStandbyWithHiberfileEnable_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -1508,28 +1570,34 @@ The following are the supported values for Hybrid sleep (on battery):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1546,7 +1614,7 @@ The following are the supported values for Hybrid sleep (on battery):
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1903. This policy setting allows you to turn off hybrid sleep.
+This policy setting allows you to turn off hybrid sleep.
 
 If you set this policy setting to 0, a hiberfile is not generated when the system transitions to sleep (Stand By).
 
@@ -1555,7 +1623,7 @@ If you set this policy setting to 1 or do not configure this policy setting, use
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off hybrid sleep (plugged in)*
+-   GP Friendly name: *Turn off hybrid sleep (plugged in)*
 -   GP name: *ACStandbyWithHiberfileEnable_2*
 -   GP path: *System/Power Management/Sleep Settings*
 -   GP ADMX file name: *power.admx*
@@ -1584,28 +1652,34 @@ The following are the supported values for Hybrid sleep (plugged in):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1622,7 +1696,7 @@ The following are the supported values for Hybrid sleep (plugged in):
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1903. This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
 
@@ -1633,7 +1707,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify the unattended sleep timeout (on battery)*
+-   GP Friendly name: *Specify the unattended sleep timeout (on battery)*
 -   GP name: *UnattendedSleepTimeOutDC*
 -   GP element: *EnterUnattendedSleepTimeOut*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -1660,28 +1734,34 @@ Default value for unattended sleep timeout (on battery):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1698,7 +1778,7 @@ Default value for unattended sleep timeout (on battery):
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows&nbsp;10, version 1903. This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
+This policy setting allows you to specify the period of inactivity before Windows transitions to sleep automatically when a user is not present at the computer.
 
 If you enable this policy setting, you must provide a value, in seconds, indicating how much idle time should elapse before Windows automatically transitions to sleep when left unattended. If you specify 0 seconds, Windows does not automatically transition to sleep.
 
@@ -1709,7 +1789,7 @@ If the user has configured a slide show to run on the lock screen when the machi
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Specify the unattended sleep timeout (plugged in)*
+-   GP Friendly name: *Specify the unattended sleep timeout (plugged in)*
 -   GP name: *UnattendedSleepTimeOutAC*
 -   GP element: *EnterUnattendedSleepTimeOut*
 -   GP path: *System/Power Management/Sleep Settings*
@@ -1729,17 +1809,6 @@ Default value for unattended sleep timeout (plugged in):
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-- 9 - Available in Windows 10, version 20H2.
 
 <!--/Policies-->
 

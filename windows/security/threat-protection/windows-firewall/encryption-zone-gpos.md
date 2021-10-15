@@ -1,5 +1,5 @@
 ---
-title: Encryption Zone GPOs (Windows 10)
+title: Encryption Zone GPOs (Windows)
 description: Learn how to add a device to an encryption zone by adding the device account to the encryption zone group in Windows Defender Firewall with Advanced Security.
 ms.assetid: eeb973dd-83a5-4381-9af9-65c43c98c29b
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 Handle encryption zones in a similar manner to the boundary zones. A device is added to an encryption zone by adding the device account to the encryption zone group. Woodgrove Bank has a single service that must be protected, and the devices that are running that service are added to the group CG\_DOMISO\_Encryption. This group is granted Read and Apply Group Policy permissions in on the GPO described in this section.
 

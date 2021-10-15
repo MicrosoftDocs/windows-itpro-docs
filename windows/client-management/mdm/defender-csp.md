@@ -10,7 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 08/05/2021
+ms.date: 10/04/2021
 ---
 
 # Defender CSP
@@ -73,7 +73,7 @@ Defender
 --------SupportLogLocation (Added in the next major release of Windows 10)
 --------PlatformUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 --------EngineUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
---------DefinitionUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
+--------SecurityIntelligenceUpdatesChannel (Added with the 4.18.2106.5 Defender platform release)
 --------DisableGradualRelease (Added with the 4.18.2106.5 Defender platform release)
 ----Scan
 ----UpdateSignature
@@ -124,6 +124,7 @@ Threat category ID.
 The data type is integer.
 
 The following table describes the supported values:
+<br/><br/>
 
 | Value | Description                 |
 |-------|-----------------------------|
@@ -399,7 +400,7 @@ Supported product status values:
 -  Service started without any malware protection engine            = 1 << 1
 -  Pending full scan due to threat action                           = 1 << 2
 -  Pending reboot due to threat action                              = 1 << 3
--  ending manual steps due to threat action                        = 1 << 4
+-  ending manual steps due to threat action                         = 1 << 4
 -  AV signatures out of date                                        = 1 << 5
 -  AS signatures out of date                                        = 1 << 6
 -  No quick scan has happened for a specified period                = 1 << 7
@@ -722,6 +723,8 @@ Current Channel (Staged): Devices will be offered updates after the monthly grad
 
 Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
 
+Critical: Devices will be offered updates with a 48-hour delay. Suggested for critical environments only 
+
 If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
 
 The data type is integer.
@@ -730,10 +733,12 @@ Supported operations are Add, Delete, Get, Replace.
 
 Valid values are:
 - 0: Not configured (Default)
-- 1: Beta Channel - Prerelease
-- 2: Current Channel (Preview)
-- 3: Current Channel (Staged)
-- 4: Current Channel (Broad)
+- 2: Beta Channel - Prerelease
+- 3: Current Channel (Preview)
+- 4: Current Channel (Staged)
+- 5: Current Channel (Broad)
+- 6: Critical- Time Delay
+
 
 More details:  
 
@@ -751,6 +756,8 @@ Current Channel (Staged): Devices will be offered updates after the monthly grad
 
 Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
 
+Critical: Devices will be offered updates with a 48-hour delay. Suggested for critical environments only
+
 If you disable or do not configure this policy, the device will stay up to date automatically during the gradual release cycle. Suitable for most devices.
 
 The data type is integer.
@@ -758,19 +765,22 @@ The data type is integer.
 Supported operations are Add, Delete, Get, Replace.
 
 Valid values are:
-- 0 - Not configured (Default)
-- 1 - Beta Channel - Prerelease
-- 2 - Current Channel (Preview)
-- 3 - Current Channel (Staged)
-- 4 - Current Channel (Broad)
+- 0: Not configured (Default)
+- 2: Beta Channel - Prerelease
+- 3: Current Channel (Preview)
+- 4: Current Channel (Staged)
+- 5: Current Channel (Broad)
+- 6: Critical- Time Delay
 
 More details:  
 
 - [Manage the gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/manage-gradual-rollout)  
 - [Create a custom gradual rollout process for Microsoft Defender updates](/microsoft-365/security/defender-endpoint/configure-updates)  
 
-<a href="" id="configuration-definitionupdateschannel"></a>**Configuration/DefinitionUpdatesChannel** 
-Enable this policy to specify when devices receive daily Microsoft Defender definition updates during the daily gradual rollout.
+<a href="" id="configuration-definitionupdateschannel"></a>**Configuration/SecurityIntelligenceUpdatesChannel** 
+Enable this policy to specify when devices receive daily Microsoft Defender security intelligence (definition) updates during the daily gradual rollout.
+
+Current Channel (Staged): Devices will be offered updates after the release cycle. Suggested to apply to a small, representative part of production population (~10%).
 
 Current Channel (Broad): Devices will be offered updates only after the gradual release cycle completes. Suggested to apply to a broad set of devices in your production population (~10-100%).
 
@@ -781,8 +791,8 @@ Supported operations are Add, Delete, Get, Replace.
 
 Valid Values are:
 - 0: Not configured (Default)
-- 3: Current Channel (Staged)
-- 4: Current Channel (Broad)
+- 4: Current Channel (Staged)
+- 5: Current Channel (Broad)
 
 More details:  
 
@@ -830,6 +840,6 @@ Added in Windows 10, version 1803. OfflineScan action starts a Microsoft Defende
 
 Supported operations are Get and Execute.
 
-## Related topics
+## See also
 
 [Configuration service provider reference](configuration-service-provider-reference.md)

@@ -12,9 +12,6 @@ ms.date: 10/14/2020
 
 # Policy CSP - WindowsSandbox
 
-> [!WARNING]
-> Some information relates to prereleased products, which may be substantially modified before it's commercially released. Microsoft makes no warranties, expressed or implied, concerning the information provided here.
-
 
 <hr/>
 
@@ -53,28 +50,34 @@ Available in the latest Windows 10 insider preview build.
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -109,7 +112,7 @@ If audio input is enabled, a user will be able to disable audio input from their
 <!--ADMXMapped-->
 ADMX Info:
 
-- GP English Name: *Allow audio input in Windows Sandbox*
+- GP Friendly name: *Allow audio input in Windows Sandbox*
 - GP name: *AllowAudioInput*
 - GP path: *Windows Components/Windows Sandbox* 
 - GP ADMX file name: *WindowsSandbox.admx*
@@ -141,28 +144,34 @@ Available in the latest Windows 10 insider preview build.
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -194,7 +203,7 @@ If clipboard sharing is enabled, a user will be able to disable clipboard sharin
 <!--ADMXMapped-->
 ADMX Info:
 
-- GP English Name: *Allow clipboard sharing with Windows Sandbox*
+- GP Friendly name: *Allow clipboard sharing with Windows Sandbox*
 - GP name: *AllowClipboardRedirection*
 - GP path: *Windows Components/Windows Sandbox*
 - GP ADMX file name: *WindowsSandbox.admx*
@@ -226,28 +235,34 @@ Available in the latest Windows 10 insider preview build.
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -279,7 +294,7 @@ If networking is enabled, a user will be able to disable networking from their o
 <!--ADMXMapped-->
 ADMX Info:
 
-- GP English Name: *Allow networking in Windows Sandbox*
+- GP Friendly name: *Allow networking in Windows Sandbox*
 - GP name: *AllowNetworking*
 - GP path: *Windows Components/Windows Sandbox*
 - GP ADMX file name: *WindowsSandbox.admx*
@@ -309,28 +324,34 @@ Available in the latest Windows 10 insider preview build.
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -362,7 +383,7 @@ If printer sharing is enabled, a user will be able to disable printer sharing fr
 <!--ADMXMapped-->
 ADMX Info:
 
-- GP English Name: *Allow printer sharing with Windows Sandbox*
+- GP Friendly name: *Allow printer sharing with Windows Sandbox*
 - GP name: *AllowPrinterRedirection*
 - GP path: *Windows Components/Windows Sandbox* 
 - GP ADMX file name: *WindowsSandbox.admx*
@@ -393,28 +414,34 @@ Available in the latest Windows 10 insider preview build.
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -449,7 +476,7 @@ If vGPU is enabled, a user will be able to disable vGPU support from their own c
 <!--ADMXMapped-->
 ADMX Info:
 
-- GP English Name: *Allow vGPU sharing for Windows Sandbox*
+- GP Friendly name: *Allow vGPU sharing for Windows Sandbox*
 - GP name: *AllowVGPU*
 - GP path: *Windows Components/Windows Sandbox*
 - GP ADMX file name: *WindowsSandbox.admx*
@@ -480,28 +507,34 @@ Available in the latest Windows 10 insider preview build.
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -535,7 +568,7 @@ If video input is enabled, users will be able to disable video input from their 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info: 
-- GP English Name: *Allow video input in Windows Sandbox*
+- GP Friendly name: *Allow video input in Windows Sandbox*
 - GP name: *AllowVideoInput*
 - GP path: *Windows Components/Windows Sandbox*
 - GP ADMX file name: *WindowsSandbox.admx*

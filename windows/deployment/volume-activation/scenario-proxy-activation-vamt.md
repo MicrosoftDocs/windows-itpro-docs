@@ -19,7 +19,7 @@ ms.topic: article
 
 In this scenario, the Volume Activation Management Tool (VAMT) is used to activate products that are installed on workgroup computers in an isolated lab environment. For workgroups which are isolated from the larger network, you can perform proxy activation of Multiple Activation Keys (MAKs), KMS Host keys (CSVLKs), Generic Volume License Keys (GVLKs) (or KMS client keys), or retail keys. Proxy activation is performed by installing a second instance of VAMT on a computer in the isolated workgroup. You can then use removable media to transfer VAMT Computer Information Lists (CILXs) between the instance of VAMT in the isolated workgroup and another VAMT host that has Internet access. The following diagram shows a Multiple Activation Key (MAK) proxy activation scenario:
 
-![VAMT MAK proxy activation scenario](images/dep-win8-l-vamt-makproxyactivationscenario.jpg)
+![VAMT MAK proxy activation scenario.](images/dep-win8-l-vamt-makproxyactivationscenario.jpg)
 
 ## Step 1: Install VAMT on a Workgroup Computer in the Isolated Lab
 

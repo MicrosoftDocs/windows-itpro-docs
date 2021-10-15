@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Application Guard (Windows 10)
+title: Microsoft Defender Application Guard (Windows 10 or Windows 11)
 description: Learn about Microsoft Defender Application Guard and how it helps to combat malicious content and malware out on the Internet.
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
-ms.date: 01/27/2021
+ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
@@ -18,7 +18,9 @@ ms.technology: mde
 # Microsoft Defender Application Guard overview
 
 **Applies to** 
+
 - Windows 10
+- Windows 11
 
 Microsoft Defender Application Guard (Application Guard) is designed to help prevent old and newly emerging attacks to help keep employees productive. Using our unique hardware isolation approach, our goal is to destroy the playbook that attackers use by making current attack methods obsolete.
 
@@ -29,7 +31,7 @@ For Microsoft Edge, Application Guard helps to isolate enterprise-defined untrus
 For Microsoft Office, Application Guard helps prevents untrusted Word, PowerPoint and Excel files from accessing trusted resources. Application Guard opens untrusted files in an isolated Hyper-V-enabled container. The isolated Hyper-V container is separate from the host operating system. This container isolation means that if the untrusted site or file turns out to be malicious, the host device is protected, and the attacker can't get to your enterprise data. For example, this approach makes the isolated container anonymous, so an attacker can't get to your employee's enterprise credentials.
 
 
-![Hardware isolation diagram](images/appguard-hardware-isolation.png)
+![Hardware isolation diagram.](images/appguard-hardware-isolation.png)
 
 ### What types of devices should use Application Guard?
 

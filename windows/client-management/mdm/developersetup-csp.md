@@ -35,48 +35,48 @@ DeveloperSetup
 ------------HttpsPort
 ```
 <a href="" id="developersetup"></a>**DeveloperSetup**  
-<p style="margin-left: 20px">The root node for the DeveloperSetup configuration service provider.
+<p>The root node for the DeveloperSetup configuration service provider.
 
 <a href="" id="enabledevelopermode"></a>**EnableDeveloperMode**  
-<p style="margin-left: 20px">A Boolean value that is used to enable Developer Mode on the device. The default value is false.
+<p>A Boolean value that is used to enable Developer Mode on the device. The default value is false.
 
-<p style="margin-left: 20px">The only supported operation is Replace.
+<p>The only supported operation is Replace.
 
 <a href="" id="deviceportal"></a>**DevicePortal**   
-<p style="margin-left: 20px">The node for the Windows Device Portal.   
+<p>The node for the Windows Device Portal.   
 
 <a href="" id="deviceportal-authentication"></a>**DevicePortal/Authentication**  
-<p style="margin-left: 20px">The node that describes the characteristics of the authentication mechanism that is used for the Windows Device Portal.  
+<p>The node that describes the characteristics of the authentication mechanism that is used for the Windows Device Portal.  
 
 <a href="" id="deviceportal-authentication-mode"></a>**DevicePortal/Authentication/Mode**   
-<p style="margin-left: 20px">An integer value that specifies the mode of authentication that is used when making requests to the Windows Device Portal.  
+<p>An integer value that specifies the mode of authentication that is used when making requests to the Windows Device Portal.  
 
-<p style="margin-left: 20px">The only supported operation is Replace.
+<p>The only supported operation is Replace.
 
 <a href="" id="deviceportal-authentication-basicauth"></a>**DevicePortal/Authentication/BasicAuth**   
-<p style="margin-left: 20px">The node that describes the credentials that are used for basic authentication with the Windows Device Portal.  
+<p>The node that describes the credentials that are used for basic authentication with the Windows Device Portal.  
 
 <a href="" id="deviceportal-authentication-username"></a>**DevicePortal/Authentication/BasicAuth/Username**   
-<p style="margin-left: 20px">A string value that specifies the user name to use when performing basic authentication with the Windows Device Portal. 
+<p>A string value that specifies the user name to use when performing basic authentication with the Windows Device Portal. 
 The user name must contain only ASCII characters and cannot contain a colon (:).
 
-<p style="margin-left: 20px">The only supported operation is Replace.
+<p>The only supported operation is Replace.
 
 <a href="" id="deviceportal-authentication-password"></a>**DevicePortal/Authentication/BasicAuth/Password**   
-<p style="margin-left: 20px">A string value that specifies the password to use when authenticating requests against the Windows Device Portal.  
+<p>A string value that specifies the password to use when authenticating requests against the Windows Device Portal.  
 
-<p style="margin-left: 20px">The only supported operation is Replace.
+<p>The only supported operation is Replace.
 
 <a href="" id="deviceportal-connection"></a>**DevicePortal/Connection**  
-<p style="margin-left: 20px">The node for configuring connections to the Windows Device Portal service.   
+<p>The node for configuring connections to the Windows Device Portal service.   
 
 <a href="" id="deviceportal-connection-httpport"></a>**DevicePortal/Connection/HttpPort**   
-<p style="margin-left: 20px">An integer value that is used to configure the HTTP port for incoming connections to the Windows Device Portal service. 
+<p>An integer value that is used to configure the HTTP port for incoming connections to the Windows Device Portal service. 
 If authentication is enabled, <strong>HttpPort</strong> will redirect the user to the (required) <strong>HttpsPort</strong>. 
 
-<p style="margin-left: 20px">The only supported operation is Replace.
+<p>The only supported operation is Replace.
 
 <a href="" id="deviceportal-connection-httpsport"></a>**DevicePortal/Connection/HttpsPort**   
-<p style="margin-left: 20px">An integer value that is used to configure the HTTPS port for incoming connections to the Windows Device Portal service.  
+<p>An integer value that is used to configure the HTTPS port for incoming connections to the Windows Device Portal service.  
 
-<p style="margin-left: 20px">The only supported operation is Replace.
+<p>The only supported operation is Replace.

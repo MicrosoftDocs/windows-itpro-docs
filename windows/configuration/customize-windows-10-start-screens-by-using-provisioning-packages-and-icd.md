@@ -1,5 +1,5 @@
 ---
-title: Customize Windows 10 Start and tasbkar with provisioning packages (Windows 10)
+title: Customize Windows 10 Start and taskbar with provisioning packages (Windows 10)
 description: In Windows 10, you can use a provisioning package to deploy a customized Start layout to users.
 ms.assetid: AC952899-86A0-42FC-9E3C-C25F45B1ACAC
 ms.reviewer: 
@@ -21,8 +21,10 @@ ms.localizationpriority: medium
 
 - Windows 10
 
-
 > **Looking for consumer information?** [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
+
+> [!NOTE]
+> Currently, using provisioning packages to customize the Start menu layout is supported on Windows 10. It's not supported on Windows 11.
 
 In Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education, version 1703, you can use a provisioning package that you create with Windows Configuration Designer to deploy a customized Start and taskbar layout to users. No reimaging is required, and the Start and taskbar layout can be updated simply by overwriting the .xml file that contains the layout. The provisioning package can be applied to a running device. This enables you to customize Start and taskbar layouts for different departments or organizations, with minimal management overhead.
 
@@ -87,7 +89,7 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 
 7. Open the customizations.xml file in a text editor. The **&lt;Customizations&gt;** section will look like this:
 
-    ![Customizations file with the placeholder text to replace highlighted](images/customization-start.png)
+    ![Customizations file with the placeholder text to replace highlighted.](images/customization-start.png)
 
 7. Replace **layout.xml** with the text from the layout.xml file, [with markup characters replaced with escape characters](#escape).
 
@@ -136,5 +138,5 @@ Use the Windows Configuration Designer tool to create a provisioning package. [L
 - [Add image for secondary tiles](start-secondary-tiles.md)
 - [Start layout XML for desktop editions of Windows 10 (reference)](start-layout-xml-desktop.md)
 - [Customize Windows 10 Start and taskbar with Group Policy](customize-windows-10-start-screens-by-using-group-policy.md)
-- [Customize Windows 10 Start and tasbkar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
+- [Customize Windows 10 Start and taskbar with mobile device management (MDM)](customize-windows-10-start-screens-by-using-mobile-device-management.md)
 - [Changes to Start policies in Windows 10](changes-to-start-policies-in-windows-10.md)

@@ -54,11 +54,14 @@ Enabling in Intune requires using the Code Integrity node in the [AppLocker CSP]
 ### Enable HVCI using Group Policy
 
 1. Use Group Policy Editor (gpedit.msc) to either edit an existing GPO or create a new one.
+
 2. Navigate to **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard**.
+
 3. Double-click **Turn on Virtualization Based Security**.
+
 4. Click **Enabled** and under **Virtualization Based Protection of Code Integrity**, select **Enabled with UEFI lock** to ensure HVCI cannot be disabled remotely or select **Enabled without UEFI lock**.
 
-   ![Enable HVCI using Group Policy](../images/enable-hvci-gp.png)
+   ![Enable HVCI using Group Policy.](../images/enable-hvci-gp.png)
 
 5. Click **Ok** to close the editor.
 
@@ -71,14 +74,17 @@ Set the following registry keys to enable HVCI. This provides exactly the same s
 <!--This comment ensures that the Important above and the Warning below don't merge together. -->
 
 > [!IMPORTANT]
-> - Among the commands that follow, you can choose settings for **Secure Boot** and **Secure Boot with DMA**. In most situations, we recommend that you choose **Secure Boot**. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled.<br>In contrast, with **Secure Boot with DMA**, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have WDAC enabled.<br>
+> - Among the commands that follow, you can choose settings for **Secure Boot** and **Secure Boot with DMA**. In most situations, we recommend that you choose **Secure Boot**. This option provides Secure Boot with as much protection as is supported by a given computer’s hardware. A computer with input/output memory management units (IOMMUs) will have Secure Boot with DMA protection. A computer without IOMMUs will simply have Secure Boot enabled.
+>
+>   In contrast, with **Secure Boot with DMA**, the setting will enable Secure Boot—and VBS itself—only on a computer that supports DMA, that is, a computer with IOMMUs. With this setting, any computer without IOMMUs will not have VBS or HVCI protection, although it can still have WDAC enabled.
+>
 > - All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. We recommend that you enable these features on a group of test computers before you enable them on users' computers.
 
 #### For Windows 10 version 1607 and later
 
 Recommended settings (to enable virtualization-based protection of Code Integrity policies, without UEFI Lock):
 
-``` commands
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
 
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
@@ -94,49 +100,49 @@ If you want to customize the preceding recommended settings, use the following s
 
 **To enable VBS**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
 ```
 
 **To enable VBS and require Secure boot only (value 1)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
 ```
 
 **To enable VBS with Secure Boot and DMA (value 3)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
 ```
 
 **To enable VBS without UEFI lock (value 0)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 0 /f
 ```
 
 **To enable VBS with UEFI lock (value 1)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Locked" /t REG_DWORD /d 1 /f
 ```
 
 **To enable virtualization-based protection of Code Integrity policies**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 1 /f
 ```
 
 **To enable virtualization-based protection of Code Integrity policies without UEFI lock (value 0)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 0 /f
 ```
 
 **To enable virtualization-based protection of Code Integrity policies with UEFI lock (value 1)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Locked" /t REG_DWORD /d 1 /f
 ```
 
@@ -144,7 +150,7 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorE
 
 Recommended settings (to enable virtualization-based protection of Code Integrity policies, without UEFI Lock):
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
 
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
@@ -158,31 +164,31 @@ If you want to customize the preceding recommended settings, use the following s
 
 **To enable VBS (it is always locked to UEFI)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "EnableVirtualizationBasedSecurity" /t REG_DWORD /d 1 /f
 ```
 
 **To enable VBS and require Secure boot only (value 1)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 1 /f
 ```
 
 **To enable VBS with Secure Boot and DMA (value 3)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "RequirePlatformSecurityFeatures" /t REG_DWORD /d 3 /f
 ```
 
 **To enable virtualization-based protection of Code Integrity policies (with the default, UEFI lock)**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "HypervisorEnforcedCodeIntegrity" /t REG_DWORD /d 1 /f
 ```
 
 **To enable virtualization-based protection of Code Integrity policies without UEFI lock**
 
-``` command
+```console
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG_DWORD /d 1 /f
 ```
 
@@ -190,7 +196,9 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG
 
 Windows 10 and Windows Server 2016 have a WMI class for related properties and features: *Win32\_DeviceGuard*. This class can be queried from an elevated Windows PowerShell session by using the following command:
 
-`Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard`
+```powershell
+Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
+```
 
 > [!NOTE]
 > The *Win32\_DeviceGuard* WMI class is only available on the Enterprise edition of Windows 10.
@@ -279,7 +287,7 @@ This field lists the computer name. All valid values for computer name.
 
 Another method to determine the available and enabled Windows Defender Device Guard features is to run msinfo32.exe from an elevated PowerShell session. When you run this program, the Windows Defender Device Guard properties are displayed at the bottom of the **System Summary** section.
 
-![Windows Defender Device Guard properties in the System Summary](../images/dg-fig11-dgproperties.png)
+:::image type="content" alt-text="Windows Defender Device Guard properties in the System Summary." source="../images/dg-fig11-dgproperties.png" lightbox="../images/dg-fig11-dgproperties.png":::
 
 ## Troubleshooting
 
@@ -291,12 +299,15 @@ C. If you experience a critical error during boot or your system is unstable aft
 
 ## How to turn off HVCI
 
-1. Run the following command from an elevated prompt to set the HVCI registry key to off
-```ini
-reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f
-```
-2. Restart the device.
-3. To confirm HVCI has been successfully disabled, open System Information and check **Virtualization-based security Services Running**, which should now have no value displayed.
+1. Run the following command from an elevated prompt to set the HVCI registry key to off:
+
+    ```console
+    reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard\Scenarios\HypervisorEnforcedCodeIntegrity" /v "Enabled" /t REG_DWORD /d 0 /f
+    ```
+
+1. Restart the device.
+
+1. To confirm HVCI has been successfully disabled, open System Information and check **Virtualization-based security Services Running**, which should now have no value displayed.
 
 ## HVCI deployment in virtual machines
 
@@ -311,6 +322,6 @@ Set-VMSecurity -VMName <VMName> -VirtualizationBasedSecurityOptOut $true
 ### Requirements for running HVCI in Hyper-V virtual machines
 -   The Hyper-V host must run at least Windows Server 2016 or Windows 10 version 1607.
 -   The Hyper-V virtual machine must be Generation 2, and running at least Windows Server 2016 or Windows 10.
--   HVCI and [nested virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time
+-   HVCI and [nested virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization) can be enabled at the same time. To enable the HyperV role on the virtual machine, you must first install the HyperV role in a Windows nested virtualization environment.
 -   Virtual Fibre Channel adapters are not compatible with HVCI. Before attaching a virtual Fibre Channel Adapter to a virtual machine, you must first opt out of virtualization-based security using `Set-VMSecurity`.
 -   The AllowFullSCSICommandSet option for pass-through disks is not compatible with HVCI. Before configuring a pass-through disk with AllowFullSCSICommandSet, you must first opt out of virtualization-based security using `Set-VMSecurity`.

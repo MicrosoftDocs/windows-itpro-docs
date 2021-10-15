@@ -1,5 +1,5 @@
 ---
-title: VPN connection types (Windows 10)
+title: VPN connection types (Windows 10 and Windows 11)
 description: Learn about Windows VPN platform clients and the VPN connection-type features that can be configured.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -7,7 +7,7 @@ ms.sitesec: library
 ms.pagetype: security, networking
 author: dansimp
 ms.localizationpriority: medium
-ms.date: 11/13/2020
+ms.date: 08/23/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -17,13 +17,13 @@ ms.author: dansimp
 
 **Applies to**
 -   Windows 10
--   Windows 10 Mobile
+-   Windows 11
 
 Virtual private networks (VPNs) are point-to-point connections across a private or public network, such as the Internet. A VPN client uses special TCP/IP or UDP-based protocols, called *tunneling protocols*, to make a virtual call to a virtual port on a VPN server. In a typical VPN deployment, a client initiates a virtual point-to-point connection to a remote access server over the Internet. The remote access server answers the call, authenticates the caller, and transfers data between the VPN client and the organization’s private network.
 
-There are many options for VPN clients. In Windows 10, the built-in plug-in and the Universal Windows Platform (UWP) VPN plug-in platform are built on top of the Windows VPN platform. This guide focuses on the Windows VPN platform clients and the features that can be configured. 
+There are many options for VPN clients. In Windows 10 and Windows 11, the built-in plug-in and the Universal Windows Platform (UWP) VPN plug-in platform are built on top of the Windows VPN platform. This guide focuses on the Windows VPN platform clients and the features that can be configured. 
 
-![VPN connection types](images/vpn-connection.png)
+![VPN connection types.](images/vpn-connection.png)
 
 ## Built-in VPN client
 
@@ -56,7 +56,7 @@ There are many options for VPN clients. In Windows 10, the built-in plug-in and 
  
 ## Universal Windows Platform VPN plug-in
 
-The Universal Windows Platform (UWP) VPN plug-ins were introduced in Windows 10, although there were originally separate versions available for the Windows 8.1 Mobile and Windows 8.1 PC platforms. Using the UWP platform, third-party VPN providers can create app-containerized plug-ins using WinRT APIs, eliminating the complexity and problems often associated with writing to system-level drivers.  
+The Universal Windows Platform (UWP) VPN plug-ins were introduced in Windows 10 and Windows 11, although there were originally separate versions available for the Windows 8.1 Mobile and Windows 8.1 PC platforms. Using the UWP platform, third-party VPN providers can create app-containerized plug-ins using WinRT APIs, eliminating the complexity and problems often associated with writing to system-level drivers.  
 
 There are a number of Universal Windows Platform VPN applications, such as Pulse Secure, Cisco AnyConnect, F5 Access, Sonicwall Mobile Connect, and Check Point Capsule. If you want to use a UWP VPN plug-in, work with your vendor for any custom settings needed to configure your VPN solution.
 
@@ -67,12 +67,12 @@ See [VPN profile options](vpn-profile-options.md) and [VPNv2 CSP](/windows/clien
 The following image shows connection options in a VPN Profile configuration policy using Microsoft Intune:
 
 > [!div class="mx-imgBorder"]
-> ![Available connection types](images/vpn-connection-intune.png)
+> ![Available connection types.](images/vpn-connection-intune.png)
      
 In Intune, you can also include custom XML for third-party plug-in profiles:
 
 > [!div class="mx-imgBorder"]
-> ![Custom XML](images/vpn-custom-xml-intune.png)
+> ![Custom XML.](images/vpn-custom-xml-intune.png)
 
 
 ## Related topics

@@ -1,12 +1,12 @@
 ---
-title: Use web services in MDT (Windows 10)
-description: Learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 10 deployment.
+title: Use web services in MDT (Windows 11)
+description: Learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 11 deployment.
 ms.assetid: 8f47535e-0551-4ccb-8f02-bb97539c6522
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, web apps
-ms.prod: w10
+ms.prod: w11
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.pagetype: mdt
@@ -17,6 +17,10 @@ ms.topic: article
 ---
 
 # Use web services in MDT
+
+**Applies to**
+- Windows 10
+- Windows 11
 
 In this topic, you will learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 10 deployment. Web services provide a powerful way to assign settings during a deployment. Simply put, web services are web applications that run code on the server side, and MDT has built-in functions to call these web services.
 Using a web service in MDT is straightforward, but it does require that you have enabled the Web Server (IIS) role on the server. Developing web services involves a little bit of coding, but for most web services used with MDT, you can use the free Microsoft Visual Studio Express 2013 for Web.
@@ -33,7 +37,7 @@ In these steps we assume you have installed Microsoft Visual Studio Express 2013
     1.  Web.config
     2.  mdtsample.asmx
 
-![figure 15](../images/mdt-09-fig15.png)
+![figure 15.](../images/mdt-09-fig15.png)
 
 Figure 15. The sample project in Microsoft Visual Studio Express 2013 for Web.
 
@@ -49,7 +53,7 @@ This section assumes that you have enabled the Web Server (IIS) role on MDT01.
     4.  Select the **Start application pool immediately** check box.
     5.  Click **OK**.
 
-![figure 16](../images/mdt-09-fig16.png)
+![figure 16.](../images/mdt-09-fig16.png)
 
 Figure 16. The new MDTSample application.
 
@@ -60,7 +64,7 @@ Figure 16. The new MDTSample application.
     2.  Application pool: MDTSample
     3.  Physical Path: E:\\MDTSample
 
-    ![figure 17](../images/mdt-09-fig17.png)
+    ![figure 17.](../images/mdt-09-fig17.png)
 
     Figure 17. Adding the MDTSample web application.
 
@@ -68,7 +72,7 @@ Figure 16. The new MDTSample application.
     1.  Anonymous Authentication: Enabled
     2.  ASP.NET Impersonation: Disabled
 
-![figure 18](../images/mdt-09-fig18.png)
+![figure 18.](../images/mdt-09-fig18.png)
 
 Figure 18. Configuring Authentication for the MDTSample web service.
 
@@ -77,14 +81,14 @@ Figure 18. Configuring Authentication for the MDTSample web service.
 1.  On PC0001, using Internet Explorer, navigate to: **http://MDT01/MDTSample/mdtsample.asmx**.
 2.  Click the **GetComputerName** link.
 
-    ![figure 19](../images/mdt-09-fig19.png)
+    ![figure 19.](../images/mdt-09-fig19.png)
 
     Figure 19. The MDT Sample web service.
 3.  On the **GetComputerName** page, type in the following settings, and click **Invoke**:
     1.  Model: Hewlett-Packard
     2.  SerialNumber: 123456789
 
-![figure 20](../images/mdt-09-fig20.png)
+![figure 20.](../images/mdt-09-fig20.png)
 
 Figure 20. The result from the MDT Sample web service.
 
@@ -103,7 +107,7 @@ After verifying the web service using Internet Explorer, you are ready to do the
    Parameters=Model,SerialNumber
    OSDComputerName=string
    ```
-   ![figure 21](../images/mdt-09-fig21.png)
+   ![figure 21.](../images/mdt-09-fig21.png)
 
    Figure 21. The updated CustomSettings.ini file.
 
@@ -115,7 +119,7 @@ After verifying the web service using Internet Explorer, you are ready to do the
    ```
 4. Review the ZTIGather.log in the **C:\\MININT\\SMSOSD\\OSDLOGS** folder.
 
-![figure 22](../images/mdt-09-fig22.png)
+![figure 22.](../images/mdt-09-fig22.png)
 
 Figure 22. The OSDCOMPUTERNAME value obtained from the web service.
 

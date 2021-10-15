@@ -1,5 +1,5 @@
 ---
-title: Manage Windows Defender Credential Guard (Windows 10)
+title: Manage Windows Defender Credential Guard (Windows)
 description: Learn how to deploy and manage Windows Defender Credential Guard using Group Policy, the registry, or hardware readiness tools.
 ms.prod: w10
 ms.mktglfcycl: explore
@@ -21,9 +21,10 @@ ms.custom:
 # Manage Windows Defender Credential Guard
 
 **Applies to**
--   Windows 10 Enterprise or Education SKUs
--   Windows Server 2016
--   Windows Server 2019
+- Windows 10
+- Windows 11
+- Windows Server 2016
+- Windows Server 2019
 
 
 ## Enable Windows Defender Credential Guard
@@ -45,7 +46,7 @@ You can use Group Policy to enable Windows Defender Credential Guard. This will 
 
 5.  In the **Secure Launch Configuration** box, choose **Not Configured**, **Enabled** or **Disabled**. Check [this article](../../threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection.md) for more details.
 
-    ![Windows Defender Credential Guard Group Policy setting](images/credguard-gp-2.png)
+    ![Windows Defender Credential Guard Group Policy setting.](images/credguard-gp-2.png)
 
 6.  Close the Group Policy Management Console.
 
@@ -168,7 +169,7 @@ You can view System Information to check that Windows Defender Credential Guard 
     Here's an example:
 
     > [!div class="mx-imgBorder"]
-    > ![System Information](images/credguard-msinfo32.png)
+    > ![System Information.](images/credguard-msinfo32.png)
 
 You can also check that Windows Defender Credential Guard is running by using the [HVCI and Windows Defender Credential Guard hardware readiness tool](dg-readiness-tool.md).
 

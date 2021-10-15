@@ -12,9 +12,14 @@ ms.topic: article
 
 # Safeguard holds
 
-Microsoft uses quality and compatibility data to identify issues that might cause a Windows 10 feature update to fail or roll back. When we find such an issue, we might apply holds to the updating service to prevent affected devices from installing the update in order to safeguard them from these experiences. We also use holds when a customer, a partner, or Microsoft internal validation finds an issue that would cause severe impact (for example, rollback of the update, data loss, loss of connectivity, or loss of key functionality) and when a workaround is not immediately available.
+**Applies to**
 
-Safeguard holds prevent a device with a known issue from being offered a new operating system version. We renew the offering once a fix is found and verified. We use holds to ensure customers have a successful experience as their device moves to a new version of Windows 10.
+-   Windows 10
+-   Windows 11
+
+Microsoft uses quality and compatibility data to identify issues that might cause a Windows client feature update to fail or roll back. When we find such an issue, we might apply holds to the updating service to prevent affected devices from installing the update in order to safeguard them from these experiences. We also use holds when a customer, a partner, or Microsoft internal validation finds an issue that would cause severe impact (for example, rollback of the update, data loss, loss of connectivity, or loss of key functionality) and when a workaround is not immediately available.
+
+Safeguard holds prevent a device with a known issue from being offered a new operating system version. We renew the offering once a fix is found and verified. We use holds to ensure customers have a successful experience as their device moves to a new version of Windows client.
 
 The lifespan of holds varies depending on the time required to investigate and fix an issue. During this time Microsoft works diligently to procure, develop, and validate a fix and then offer it to affected devices. We monitor quality and compatibility data to confirm that a fix is complete before releasing the hold. Once we release the hold, Windows Update will resume offering new operating system versions to devices.
 
@@ -30,7 +35,7 @@ Queries identify Safeguard IDs for each affected device, giving IT admins a deta
 On devices that use Windows Update (but not Windows Update for Business), the **Windows Update** page in the Settings app displays a message stating that an update is on its way, but not ready for the device. Instead of the option to download and install the update, users will see this message:
 
 
-![Feature update message reading "The Windows 10 May 2020 Update is on its way. Once it's ready for your device, you'll see the update available on this page](images/safeguard-hold-notification.png)
+![Feature update message reading "The Windows 10 May 2020 Update is on its way. Once it's ready for your device, you'll see the update available on this page.](images/safeguard-hold-notification.png)
 
 If you see this message, it means one or more holds affect your device. When the issue is fixed and the update is safe to install, we’ll release the hold and the update can resume safely.
 

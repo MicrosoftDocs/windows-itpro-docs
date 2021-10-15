@@ -48,30 +48,37 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -91,7 +98,7 @@ This policy allows you to disable Per-Process System DPI for a semicolon-separat
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Per-Process System DPI settings*
+-   GP Friendly name: *Configure Per-Process System DPI settings*
 -   GP name: *DisplayPerProcessSystemDpiSettings*
 -   GP element: *DisplayDisablePerProcessSystemDpiSettings*
 -   GP path: *System/Display*
@@ -108,30 +115,37 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -159,12 +173,12 @@ Per Process System DPI will not work for all applications as some older desktop 
 
 In some cases, you may see some unexpected behavior in some desktop applications that have Per-Process System DPI applied. If that happens, Per Process System DPI should be disabled.
 
-Enabling this setting lets you specify the system-wide default for desktop applications as well as per-application overrides. If you disable or do not configure this setting, Per Process System DPI will not apply to any processes on the system.
+Enabling this setting lets you specify the system-wide default for desktop applications and per-application overrides. If you disable or do not configure this setting. Per Process System DPI will not apply to any processes on the system.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Per-Process System DPI settings*
+-   GP Friendly name: *Configure Per-Process System DPI settings*
 -   GP name: *DisplayPerProcessSystemDpiSettings*
 -   GP element: *DisplayGlobalPerProcessSystemDpiSettings*
 -   GP path: *System/Display*
@@ -188,30 +202,37 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -231,7 +252,7 @@ This policy allows you to enable Per-Process System DPI for a semicolon-separate
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Per-Process System DPI settings*
+-   GP Friendly name: *Configure Per-Process System DPI settings*
 -   GP name: *DisplayPerProcessSystemDpiSettings*
 -   GP element: *DisplayEnablePerProcessSystemDpiSettings*
 -   GP path: *System/Display*
@@ -248,30 +269,37 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -299,7 +327,7 @@ If GDI DPI Scaling is configured to both turn off and turn on an application, th
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off GdiDPIScaling for applications*
+-   GP Friendly name: *Turn off GdiDPIScaling for applications*
 -   GP name: *DisplayTurnOffGdiDPIScaling*
 -   GP element: *DisplayTurnOffGdiDPIScalingPrompt*
 -   GP path: *System/Display*
@@ -309,10 +337,10 @@ ADMX Info:
 <!--Validation-->
 To validate on Desktop, do the following:
 
-1.   Configure the setting for an app which has GDI DPI scaling enabled via MDM or any other supported mechanisms.
+1.   Configure the setting for an app, which has GDI DPI scaling enabled via MDM or any other supported mechanisms.
 2.   Run the app and observe blurry text.
 
-<!--/Validation-->
+<!--/Validation-->Each cloud resource can also be paired optionally with an internal proxy server by using a trailing comma followed by the proxy address.
 <!--/Policy-->
 
 <hr/>
@@ -323,30 +351,37 @@ To validate on Desktop, do the following:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -374,7 +409,7 @@ If GDI DPI Scaling is configured to both turn off and turn on an application, th
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn on GdiDPIScaling for applications*
+-   GP Friendly name: *Turn on GdiDPIScaling for applications*
 -   GP name: *DisplayTurnOnGdiDPIScaling*
 -   GP element: *DisplayTurnOnGdiDPIScalingPrompt*
 -   GP path: *System/Display*
@@ -384,23 +419,14 @@ ADMX Info:
 <!--Validation-->
 To validate on Desktop, do the following:
 
-1.   Configure the setting for an app which uses GDI.
+1.   Configure the setting for an app, which uses GDI.
 2.   Run the app and observe crisp text.
 
 <!--/Validation-->
 <!--/Policy-->
 <hr/>
 
-Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

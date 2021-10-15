@@ -28,6 +28,9 @@ manager: dansimp
     <a href="#kerberos-kerberosclientsupportsclaimscompoundarmor">Kerberos/KerberosClientSupportsClaimsCompoundArmor</a>
   </dd>
   <dd>
+    <a href="#kerberos-pkinithashalgorithmconfiguration">Kerberos/PKInitHashAlgorithmConfiguration</a>
+  </dd>
+  <dd>
     <a href="#kerberos-requirekerberosarmoring">Kerberos/RequireKerberosArmoring</a>
   </dd>
   <dd>
@@ -41,6 +44,13 @@ manager: dansimp
   </dd>
 </dl>
 
+> [!TIP]
+> These are ADMX-backed policies and require a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
+> 
+> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
+> 
+> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
+
 
 <hr/>
 
@@ -50,28 +60,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -95,16 +111,10 @@ If you enable this policy setting, the Kerberos client searches the forests in t
 If you disable or do not configure this policy setting, the Kerberos client does not search the listed forests to resolve the SPN. If the Kerberos client is unable to resolve the SPN because the name is not found, NTLM authentication might be used.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Use forest search order*
+-   GP Friendly name: *Use forest search order*
 -   GP name: *ForestSearch*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -120,28 +130,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -164,17 +180,89 @@ If you enable this policy setting, the client computers will request claims, pro
 If you disable or do not configure this policy setting, the client devices will not request claims, provide information required to create compounded authentication and armor Kerberos messages. Services hosted on the device will not be able to retrieve claims for clients using Kerberos protocol transition.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Kerberos client support for claims, compound authentication and Kerberos armoring*
+-   GP Friendly name: *Kerberos client support for claims, compound authentication and Kerberos armoring*
 -   GP name: *EnableCbacAndArmor*
+-   GP path: *System/Kerberos*
+-   GP ADMX file name: *Kerberos.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="kerberos-pkinithashalgorithmconfiguration"></a>**Kerberos/PKInitHashAlgorithmConfiguration**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+     <td>Yes</td>
+     <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting controls hash or checksum algorithms used by the Kerberos client when performing certificate authentication.
+
+If you enable this policy, you will be able to configure one of four states for each algorithm:
+
+* **Default**: This sets the algorithm to the recommended state.
+* **Supported**: This enables usage of the algorithm. Enabling algorithms that have been disabled by default may reduce your security.
+* **Audited**: This enables usage of the algorithm and reports an event (ID 205) every time it is used. This state is intended to verify that the algorithm is not being used and can be safely disabled.
+* **Not Supported**: This disables usage of the algorithm. This state is intended for algorithms that are deemed to be insecure.
+
+If you disable or do not configure this policy, each algorithm will assume the **Default** state.
+
+More information about the hash and checksum algorithms supported by the Windows Kerberos client and their default states can be found https://go.microsoft.com/fwlink/?linkid=2169037.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Introducing agility to PKINIT in Kerberos protocol*
+-   GP name: *PKInitHashAlgorithmConfiguration*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
 
@@ -189,28 +277,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 </table>
 
@@ -233,21 +327,16 @@ Warning: When a domain does not support Kerberos armoring by enabling "Support D
 
 If you enable this policy setting, the client computers in the domain enforce the use of Kerberos armoring in only authentication service (AS) and ticket-granting service (TGS) message exchanges with the domain controllers. 
 
-Note: The Kerberos Group Policy "Kerberos client support for claims, compound authentication and Kerberos armoring" must also be enabled to support Kerberos armoring. 
+> [!NOTE]
+> The Kerberos Group Policy "Kerberos client support for claims, compound authentication and Kerberos armoring" must also be enabled to support Kerberos armoring. 
 
 If you disable or do not configure this policy setting, the client computers in the domain enforce the use of Kerberos armoring when possible as supported by the target domain.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Fail authentication requests when Kerberos armoring is not available*
+-   GP Friendly name: *Fail authentication requests when Kerberos armoring is not available*
 -   GP name: *ClientRequireFast*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -263,28 +352,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 </table>
 
@@ -308,16 +403,10 @@ If you enable this policy setting, the Kerberos client requires that the KDC's X
 If you disable or do not configure this policy setting, the Kerberos client requires only that the KDC certificate contain the Server Authentication purpose object identifier in the EKU extensions which can be issued to any server.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Require strict KDC validation*
+-   GP Friendly name: *Require strict KDC validation*
 -   GP name: *ValidateKDC*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -333,28 +422,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 </table>
 
@@ -379,19 +474,14 @@ If you enable this policy setting, the Kerberos client or server uses the config
 
 If you disable or do not configure this policy setting, the Kerberos client or server uses the locally configured value or the default value. 
 
-Note: This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8 the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it is not advised to set this value more than 48,000 bytes.
+> [!NOTE]
+> This policy setting configures the existing MaxTokenSize registry value in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Lsa\Kerberos\Parameters, which was added in Windows XP and Windows Server 2003, with a default value of 12,000 bytes. Beginning with Windows 8 the default is 48,000 bytes. Due to HTTP's base64 encoding of authentication context tokens, it is not advised to set this value more than 48,000 bytes.
 
 <!--/Description-->
-> [!TIP]
-> This is an ADMX-backed policy and requires a special SyncML format to enable or disable.  For details, see [Understanding ADMX-backed policies](./understanding-admx-backed-policies.md).
-> 
-> You must specify the data type in the SyncML as &lt;Format&gt;chr&lt;/Format&gt;. For an example SyncML, refer to [Enabling a policy](./understanding-admx-backed-policies.md#enabling-a-policy).
-> 
-> The payload of the SyncML must be XML-encoded; for this XML encoding, there are a variety of online encoders that you can use. To avoid encoding the payload, you can use CDATA if your MDM supports it.  For more information, see [CDATA Sections](http://www.w3.org/TR/REC-xml/#sec-cdata-sect).
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Set maximum Kerberos SSPI context token buffer size*
+-   GP Friendly name: *Set maximum Kerberos SSPI context token buffer size*
 -   GP name: *MaxTokenSize*
 -   GP path: *System/Kerberos*
 -   GP ADMX file name: *Kerberos.admx*
@@ -407,28 +497,34 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+     <td>Yes</td>
+     <td>Yes</td>
 </tr>
 </table>
 
@@ -461,17 +557,6 @@ Devices joined to Azure Active Directory in a hybrid environment need to interac
 <!--/Validation-->
 <!--/Policy-->
 <hr/>
-
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->
 

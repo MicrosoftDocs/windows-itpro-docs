@@ -20,9 +20,9 @@ ms.custom: bitlocker
 
 This article describes common issues that affect your BitLocker configuration and BitLocker's general functionality. This article also provides guidance to address these issues.
 
-## BitLocker encryption is slower in Windows 10
+## BitLocker encryption is slower in Windows 10 and Windows 11
 
-In both Windows 10 and Windows 7, BitLocker runs in the background to encrypt drives. However, in Windows 10, BitLocker is less aggressive about requesting resources. This behavior reduces the chance that BitLocker will affect the computer's performance.
+In both Windows 11, Windows 10, and Windows 7, BitLocker runs in the background to encrypt drives. However, in Windows 11 and Windows 10, BitLocker is less aggressive about requesting resources. This behavior reduces the chance that BitLocker will affect the computer's performance.
 
 To compensate for these changes, BitLocker uses a new conversion model. This model, (referred to as Encrypt-On-Write), makes sure that any new disk writes on all client SKUs and any internal drives are always encrypted *as soon as you turn on BitLocker*.
 
@@ -158,7 +158,7 @@ For more information and recommendations about backing up virtualized domain con
 
 When the VSS NTDS writer requests access to the encrypted drive, the Local Security Authority Subsystem Service (LSASS) generates an error entry that resembles the following:
 
-```
+```console
 \# for hex 0xc0210000 / decimal -1071579136
 ‎ STATUS\_FVE\_LOCKED\_VOLUME ntstatus.h
 ‎ \# This volume is locked by BitLocker Drive Encryption.
@@ -166,7 +166,7 @@ When the VSS NTDS writer requests access to the encrypted drive, the Local Secur
 
 The operation produces the following call stack:
 
-```
+```console
 \# Child-SP RetAddr Call Site
 ‎ 00 00000086\`b357a800 00007ffc\`ea6e7a4c KERNELBASE\!FindFirstFileExW+0x1ba \[d:\\rs1\\minkernel\\kernelbase\\filefind.c @ 872\]
 ‎ 01 00000086\`b357abd0 00007ffc\`e824accb KERNELBASE\!FindFirstFileW+0x1c \[d:\\rs1\\minkernel\\kernelbase\\filefind.c @ 208\]

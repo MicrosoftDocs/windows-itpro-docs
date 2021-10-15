@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "windows/whats-new/windows-11.md",
+      "redirect_url": "/windows/whats-new/windows-11-whats-new",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/use-json-customize-start-menu-windows.md",
+      "redirect_url": "/windows/configuration/customize-start-menu-layout-windows-11",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/application-management/msix-app-packaging-tool.md",
+      "redirect_url": "/windows/application-management/apps-in-windows-10",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "browsers/edge/about-microsoft-edge.md",
       "redirect_url": "/previous-versions/windows/edge-legacy/about-microsoft-edge",
       "redirect_document_id": false
@@ -213,6 +228,11 @@
     {
       "source_path": "devices/surface/update.md",
       "redirect_url": "/surface/manage-surface-driver-and-firmware-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/identity-protection/hello-for-business/hello-how-it-works-device-registration.md",
+      "redirect_url": "/azure/active-directory/devices/device-registration-how-it-works",
       "redirect_document_id": false
     },
     {
@@ -8441,8 +8461,8 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "windows/deploy/upgrade-windows-phone-8-1-to-10.md",
-      "redirect_url": "/windows/deployment/upgrade/upgrade-windows-phone-8-1-to-10",
+      "source_path": "windows/deployment/upgrade/upgrade-windows-phone-8-1-to-10.md",
+      "redirect_url": "/windows/deployment/upgrade/windows-10-edition-upgrades",
       "redirect_document_id": false
     },
     {
@@ -18941,9 +18961,137 @@
       "redirect_document_id": false
     }, 
     {
-      "source_path": "windows/privacy/data-processor-service-for-windows-enterprise-public-preview-terms.md",
-      "redirect_url": "/windows/privacy/windows-10-and-privacy-compliance",
+      "source_path": "windows/security/identity-protection/change-history-for-access-protection.md",
+      "redirect_url": "/windows/security/",
       "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-10-deployment.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/build-a-distributed-environment-for-windows-deployment",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/create-a-windows-10-reference-image.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/create-a-windows-11-reference-image",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/deploy-a-windows-10-image-using-mdt.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/deploy-a-windows-11-image-using-mdt",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/refresh-a-windows-7-computer-with-windows-10.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/refresh-a-windows-10-computer-with-windows-11",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/replace-a-windows-7-computer-with-a-windows-10-computer.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/replace-a-windows-10-computer-with-a-windows-11-computer",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/simulate-a-windows-10-deployment-in-a-test-environment.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/simulate-a-windows-11-deployment-in-a-test-environment",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/upgrade-to-windows-11-with-the-microsoft-deployment-toolkit",
+      "redirect_document_id": false
+    }, 
+    {
+      "source_path": "windows/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-10-deployment-information.md",
+      "redirect_url": "/windows/deployment/deploy-windows-mdt/use-the-mdt-database-to-stage-windows-11-deployment-information",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deploy-windows-cm/upgrade-to-windows-with-configuraton-manager.md",
+      "redirect_url": "/windows/deploy-windows-cm/upgrade-to-windows-with-configuration-manager",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-deployment-rings-windows-10-updates.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-servicing-differences.md",
+      "redirect_url": "/windows/deployment/update/waas-servicing-strategy-windows-10-updates",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/wufb-autoupdate.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/wufb-basics.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/wufb-managedrivers.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/wufb-manageupdate.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/wwufb-onboard.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/feature-update-conclusion.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/waas-wufb-intune.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/feature-update-maintenance-window.md",
+      "redirect_url": "/windows/deployment/update/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/feature-update-mission-critical.md",
+      "redirect_url": "/windows/deployment/waas-manage-updates-wufb",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/security/threat-protection/windows-security-baselines.md",
+      "redirect_url": "/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "windows/deployment/update/change-history-for-update-windows-10.md",
+      "redirect_url": "/windows/deployment/deploy-whats-new",
+      "redirect_document_id": true
+    }, 
+    {
+      "source_path": "windows/client-management/mdm/policy-csp-admx-windowsanytimeupgrade.md",
+      "redirect_url": "/windows/client-management/mdm/policy-csp-admx-wordwheel",
+      "redirect_document_id": true
+        
+    }, 
+    {
+    "source_path": "windows/client-management/mdm/policy-csp-admx-windowsfileprotection.md",
+    "redirect_url": "/windows/client-management/mdm/policy-csp-admx-mobilepcpresentationsettings",
+    "redirect_document_id": true
+  
+    }, 
+    {
+  "source_path": "windows/client-management/mdm/policy-csp-admx-skydrive.md",
+  "redirect_url": "/windows/client-management/mdm/policy-csp-admx-shellcommandpromptregedittools",
+  "redirect_document_id": true
     }
-	    ]
+
+	]
 }

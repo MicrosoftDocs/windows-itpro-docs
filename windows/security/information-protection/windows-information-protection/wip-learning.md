@@ -38,11 +38,11 @@ In the **Website learning report**, you can view a summary of the devices that h
 
 1. Click **Intune** > **Client apps** > **App protection status** > **Reports**.
 
-   ![Image showing the UI path to the WIP report](images/access-wip-learning-report.png) 
+   ![Image showing the UI path to the WIP report.](images/access-wip-learning-report.png) 
 
 1. Select either **App learning report for Windows Information Protection** or **Website learning report for Windows Information Protection**. 
 
-   ![Image showing the UI with for app and website learning reports](images/wip-learning-select-report.png) 
+   ![Image showing the UI with for app and website learning reports.](images/wip-learning-select-report.png) 
 
 Once you have the apps and websites showing up in the WIP Learning logging reports, you can decide whether to add them to your app protection policies. 
 
@@ -75,7 +75,7 @@ The information needed for the following steps can be found using Device Health,
 
 4. In the **Recommended apps** drop down menu, choose either **Store apps** or **Desktop apps**, depending on the app you've chosen (for example, an executable (EXE) is a desktop app). 
 
-    ![View of drop down menu for Store or desktop apps](images/wip-learning-choose-store-or-desktop-app.png)
+    ![View of drop down menu for Store or desktop apps.](images/wip-learning-choose-store-or-desktop-app.png)
 
 5. In **NAME** (optional), type the name of the app, and then in **PUBLISHER** (required), paste the publisher information that you copied in step 1 above.
 
@@ -87,7 +87,7 @@ The information needed for the following steps can be found using Device Health,
 
     `O=GOOGLE LLC, L=MOUNTAIN VIEW, S=CA, C=US`
 
-    ![View of Add Apps app info entry boxes](images/wip-learning-app-info.png)
+    ![View of Add Apps app info entry boxes.](images/wip-learning-app-info.png)
 
 6. Type the name of the product in **PRODUCT NAME** (required)  (this will probably be the same as what you typed for **NAME**).
 

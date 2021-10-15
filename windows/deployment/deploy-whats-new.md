@@ -102,7 +102,7 @@ The following Delivery Optimization policies are removed in the Windows 10, vers
 
 Microsoft previously announced that we are [extending support](https://www.microsoft.com/microsoft-365/blog/2018/09/06/helping-customers-shift-to-a-modern-desktop) for Windows 10 Enterprise and Windows 10 Education editions to 30 months from the version release date. This includes all past versions and future versions that are targeted for release in September (versions ending in 09, ex: 1809). Future releases that are targeted for release in March (versions ending in 03, ex: 1903) will continue to be supported for 18 months from their release date. All releases of Windows 10 Home, Windows 10 Pro, and Microsoft 365 Apps for enterprise will continue to be supported for 18 months (there is no change for these editions).  These support policies are summarized in the table below.
 
-![Support lifecycle](images/support-cycle.png)
+![Support lifecycle.](images/support-cycle.png)
 
 ## Windows 10 Enterprise upgrade
 

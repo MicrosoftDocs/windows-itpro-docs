@@ -24,7 +24,7 @@ This topic for the IT professional discusses the factors to consider when you de
 
 Traditional identity devices, such as physical smart cards, follow a predictable lifecycle in any deployment, as shown in the following diagram.
 
-![Diagram of physical smart card lifecycle](images/vsc-physical-smart-card-lifecycle.png)
+![Diagram of physical smart card lifecycle.](images/vsc-physical-smart-card-lifecycle.png)
 
 Physical devices are created by a dedicated manufacturer and then purchased by the corporation that will ultimately deploy it. The device passes through the personalization stage, where its unique properties are set. In smart cards, these properties are the administrator key, Personal Identification Number (PIN), PIN Unlock Key (PUK), and its physical appearance. To provision the device, it is loaded with the required certificates, such as a sign-in certificate. After you provision the device, it is ready for use. The device must simply be maintained. For example, you must replace cards when they are lost or stolen and reset PINs when users forget them. Finally, you’ll retire devices when they exceed their intended lifetime or when employees leave the company.
 

@@ -1,6 +1,6 @@
 ---
 title: Azure Active Directory join cloud only deployment
-description: Use this deployment guide to successfully use Azure Active Directory to join a Windows 10 device. 
+description: Use this deployment guide to successfully use Azure Active Directory to join a Windows 10 or Windows 11 device. 
 keywords: identity, Hello, Active Directory, cloud, 
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -20,7 +20,7 @@ ms.reviewer:
 
 ## Introduction
 
-When you Azure Active Directory (Azure AD) join a Windows 10 device, the system prompts you to enroll in Windows Hello for Business by default. If you want to use Windows Hello for Business in your cloud only environment, then there's no additional configuration needed.
+When you Azure Active Directory (Azure AD) join a Windows 10 or Windows 11 device, the system prompts you to enroll in Windows Hello for Business by default. If you want to use Windows Hello for Business in your cloud only environment, then there's no additional configuration needed.
 
 You may wish to disable the automatic Windows Hello for Business enrollment prompts if you aren't ready to use it in your environment. Instructions on how to disable Windows Hello for Business enrollment in a cloud only environment are included below.
 
@@ -31,7 +31,7 @@ You may wish to disable the automatic Windows Hello for Business enrollment prom
 
 Cloud only deployments will use Azure AD multi-factor authentication (MFA) during Windows Hello for Business (WHfB) enrollment and there's no additional MFA configuration needed. If you aren't already registered in Azure AD MFA, you will be guided though the MFA registration as part of the Windows Hello for Business enrollment process.
 
-The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](hello-identity-verification.md#cloud-only-deployment).
+The necessary Windows Hello for Business prerequisites are located at [Cloud Only Deployment](hello-identity-verification.md#azure-ad-cloud-only-deployment).
 
 Also note that it's possible for federated domains to enable the “Supports MFA” flag in your federated domain settings. This flag tells Azure AD that the federated IDP will perform the MFA challenge.
 

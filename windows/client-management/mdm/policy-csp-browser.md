@@ -201,30 +201,37 @@ ms.localizationpriority: medium
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -248,7 +255,7 @@ ms.localizationpriority: medium
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Address bar drop-down list suggestions*
+-   GP Friendly name: *Allow Address bar drop-down list suggestions*
 -   GP name: *AllowAddressBarDropdown*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -272,30 +279,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -317,7 +331,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Autofill*
+-   GP Friendly name: *Configure Autofill*
 -   GP name: *AllowAutofill*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -351,30 +365,37 @@ To verify AllowAutofill is set to 0 (not allowed):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -397,7 +418,7 @@ To verify AllowAutofill is set to 0 (not allowed):
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow configuration updates for the Books Library*
+-   GP Friendly name: *Allow configuration updates for the Books Library*
 -   GP name: *AllowConfigurationUpdateForBooksLibrary*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -420,30 +441,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -464,7 +492,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure cookies*
+-   GP Friendly name: *Configure cookies*
 -   GP name: *Cookies*
 -   GP element: *CookiesListBox*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -499,30 +527,37 @@ To verify AllowCookies is set to 0 (not allowed):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -539,14 +574,14 @@ To verify AllowCookies is set to 0 (not allowed):
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 [!INCLUDE [allow-developer-tools-shortdesc](../includes/allow-developer-tools-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Developer Tools*
+-   GP Friendly name: *Allow Developer Tools*
 -   GP name: *AllowDeveloperTools*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -570,30 +605,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -614,7 +656,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Do Not Track*
+-   GP Friendly name: *Configure Do Not Track*
 -   GP name: *AllowDoNotTrack*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -648,30 +690,37 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -694,7 +743,7 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Extensions*
+-   GP Friendly name: *Allow Extensions*
 -   GP name: *AllowExtensions*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -717,30 +766,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -763,7 +819,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Adobe Flash*
+-   GP Friendly name: *Allow Adobe Flash*
 -   GP name: *AllowFlash*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -786,30 +842,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -833,7 +896,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure the Adobe Flash Click-to-Run setting*
+-   GP Friendly name: *Configure the Adobe Flash Click-to-Run setting*
 -   GP name: *AllowFlashClickToRun*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -858,30 +921,37 @@ Most restricted value: 1
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -904,7 +974,7 @@ Most restricted value: 1
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow FullScreen Mode*
+-   GP Friendly name: *Allow FullScreen Mode*
 -   GP name: *AllowFullScreenMode*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -935,30 +1005,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -979,7 +1056,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow InPrivate browsing*
+-   GP Friendly name: *Allow InPrivate browsing*
 -   GP name: *AllowInPrivate*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1004,30 +1081,37 @@ Most restricted value:  0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1052,7 +1136,7 @@ Most restricted value:  0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Microsoft Compatibility List*
+-   GP Friendly name: *Allow Microsoft Compatibility List*
 -   GP name: *AllowCVList*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1077,30 +1161,37 @@ Most restricted value:  0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1122,7 +1213,7 @@ Most restricted value:  0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Password Manager*
+-   GP Friendly name: *Configure Password Manager*
 -   GP name: *AllowPasswordManager*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1155,30 +1246,37 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1200,7 +1298,7 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Pop-up Blocker*
+-   GP Friendly name: *Configure Pop-up Blocker*
 -   GP name: *AllowPopups*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1233,30 +1331,37 @@ To verify AllowPopups is set to 0 (not allowed):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1280,7 +1385,7 @@ To verify AllowPopups is set to 0 (not allowed):
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed*
+-   GP Friendly name: *Allow Microsoft Edge to pre-launch at Windows startup, when the system is idle, and each time Microsoft Edge is closed*
 -   GP name: *AllowPrelaunch*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1311,30 +1416,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1357,7 +1469,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow printing*
+-   GP Friendly name: *Allow printing*
 -   GP name: *AllowPrinting*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1388,30 +1500,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1434,7 +1553,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Saving History*
+-   GP Friendly name: *Allow Saving History*
 -   GP name: *AllowSavingHistory*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1465,30 +1584,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1515,7 +1641,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow search engine customization*
+-   GP Friendly name: *Allow search engine customization*
 -   GP name: *AllowSearchEngineCustomization*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1540,30 +1666,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1584,7 +1717,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure search suggestions in Address bar*
+-   GP Friendly name: *Configure search suggestions in Address bar*
 -   GP name: *AllowSearchSuggestionsinAddressBar*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1610,30 +1743,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1656,7 +1796,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow sideloading of Extensions*
+-   GP Friendly name: *Allow sideloading of Extensions*
 -   GP name: *AllowSideloadingOfExtensions*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1687,30 +1827,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1731,7 +1878,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Windows Defender SmartScreen*
+-   GP Friendly name: *Configure Windows Defender SmartScreen*
 -   GP name: *AllowSmartScreen*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1764,30 +1911,37 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1810,7 +1964,7 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Microsoft Edge to start and load the Start and New Tab pages in the background at Windows startup and each time Microsoft Edge is closed*
+-   GP Friendly name: *Allow Microsoft Edge to start and load the Start and New Tab pages in the background at Windows startup and each time Microsoft Edge is closed*
 -   GP name: *AllowTabPreloading*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1840,30 +1994,37 @@ Most restricted value: 1
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1886,7 +2047,7 @@ Most restricted value: 1
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow web content on New Tab page*
+-   GP Friendly name: *Allow web content on New Tab page*
 -   GP name: *AllowWebContentOnNewTabPage*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1916,30 +2077,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1963,7 +2131,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Always show the Books Library in Microsoft Edge*
+-   GP Friendly name: *Always show the Books Library in Microsoft Edge*
 -   GP name: *AlwaysEnableBooksLibrary*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -1988,30 +2156,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2034,7 +2209,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow clearing browsing data on exit*
+-   GP Friendly name: *Allow clearing browsing data on exit*
 -   GP name: *AllowClearingBrowsingDataOnExit*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -2068,30 +2243,37 @@ To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set 
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2118,7 +2300,7 @@ To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure additional search engines*
+-   GP Friendly name: *Configure additional search engines*
 -   GP name: *ConfigureAdditionalSearchEngines*
 -   GP element: *ConfigureAdditionalSearchEngines_Prompt*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -2143,30 +2325,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2189,7 +2378,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Favorites Bar*
+-   GP Friendly name: *Configure Favorites Bar*
 -   GP name: *ConfigureFavoritesBar*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -2220,30 +2409,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2265,7 +2461,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Home Button*
+-   GP Friendly name: *Configure Home Button*
 -   GP name: *ConfigureHomeButton*
 -   GP element: *ConfigureHomeButtonDropdown*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -2301,30 +2497,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2350,7 +2553,7 @@ For this policy to work, you must configure Microsoft Edge in assigned access; o
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure kiosk mode*
+-   GP Friendly name: *Configure kiosk mode*
 -   GP name: *ConfigureKioskMode*
 -   GP element: *ConfigureKioskMode_TextBox*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -2385,30 +2588,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2433,7 +2643,7 @@ You must set ConfigureKioskMode to enabled (1 - InPrivate public browsing) and c
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure kiosk reset after idle timeout*
+-   GP Friendly name: *Configure kiosk reset after idle timeout*
 -   GP name: *ConfigureKioskResetAfterIdleTimeout*
 -   GP element: *ConfigureKioskResetAfterIdleTimeout_TextBox*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -2464,30 +2674,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2516,7 +2733,7 @@ When you enable this policy and select an option, and also enter the URLs of the
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Open Microsoft Edge With*
+-   GP Friendly name: *Configure Open Microsoft Edge With*
 -   GP name: *ConfigureOpenEdgeWith*
 -   GP element: *ConfigureOpenEdgeWithListBox*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -2553,30 +2770,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2598,7 +2822,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure collection of browsing data for Microsoft 365 Analytics*
+-   GP Friendly name: *Configure collection of browsing data for Microsoft 365 Analytics*
 -   GP name: *ConfigureTelemetryForMicrosoft365Analytics*
 -   GP element: *ZonesListBox*
 -   GP path: *Data Collection and Preview Builds*
@@ -2631,30 +2855,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2683,7 +2914,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable lockdown of Start pages*
+-   GP Friendly name: *Disable lockdown of Start pages*
 -   GP name: *DisableLockdownOfStartPages*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -2707,30 +2938,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2752,7 +2990,7 @@ Most restricted value: 0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow extended telemetry for the Books tab*
+-   GP Friendly name: *Allow extended telemetry for the Books tab*
 -   GP name: *EnableExtendedBooksTelemetry*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -2776,30 +3014,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2819,14 +3064,14 @@ Most restricted value: 0
 [!INCLUDE [configure-enterprise-mode-site-list-shortdesc](../includes/configure-enterprise-mode-site-list-shortdesc.md)]
 
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
  
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure the Enterprise Mode Site List*
+-   GP Friendly name: *Configure the Enterprise Mode Site List*
 -   GP name: *EnterpriseModeSiteList*
 -   GP element: *EnterSiteListPrompt*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -2851,30 +3096,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2904,30 +3156,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2944,7 +3203,7 @@ Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only available for Windows 10 for desktop and not supported in Windows 10 Mobile.
+> This policy is only available for Windows for desktop and not supported in Windows Mobile.
 
 
 [!INCLUDE [configure-start-pages-shortdesc](../includes/configure-start-pages-shortdesc.md)]
@@ -2965,7 +3224,7 @@ When you enable the Configure Open Microsoft Edge With policy and select an opti
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Start pages*
+-   GP Friendly name: *Configure Start pages*
 -   GP name: *HomePages*
 -   GP element: *HomePagesPrompt*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -2989,30 +3248,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3036,7 +3302,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent changes to Favorites on Microsoft Edge*
+-   GP Friendly name: *Prevent changes to Favorites on Microsoft Edge*
 -   GP name: *LockdownFavorites*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -3060,30 +3326,37 @@ Most restricted value: 1
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3105,7 +3378,7 @@ Most restricted value: 1
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent access to the about:flags page in Microsoft Edge*
+-   GP Friendly name: *Prevent access to the about:flags page in Microsoft Edge*
 -   GP name: *PreventAccessToAboutFlagsInMicrosoftEdge*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -3129,30 +3402,37 @@ Most restricted value: 1
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3174,7 +3454,7 @@ Most restricted value: 1
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent certificate error overrides*
+-   GP Friendly name: *Prevent certificate error overrides*
 -   GP name: *PreventCertErrorOverrides*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -3204,30 +3484,37 @@ Most restricted value: 1
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3250,7 +3537,7 @@ Most restricted value: 1
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent the First Run webpage from opening on Microsoft Edge*
+-   GP Friendly name: *Prevent the First Run webpage from opening on Microsoft Edge*
 -   GP name: *PreventFirstRunPage*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -3274,30 +3561,37 @@ Most restricted value: 1
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3320,7 +3614,7 @@ Most restricted value: 1
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start*
+-   GP Friendly name: *Prevent Microsoft Edge from gathering Live Tile information when pinning a site to Start*
 -   GP name: *PreventLiveTileDataCollection*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -3344,30 +3638,37 @@ Most restricted value: 1
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3388,7 +3689,7 @@ Most restricted value: 1
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent bypassing Windows Defender SmartScreen prompts for sites*
+-   GP Friendly name: *Prevent bypassing Windows Defender SmartScreen prompts for sites*
 -   GP name: *PreventSmartScreenPromptOverride*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -3412,30 +3713,37 @@ Most restricted value: 1
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3457,7 +3765,7 @@ Most restricted value: 1
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent bypassing Windows Defender SmartScreen prompts for files*
+-   GP Friendly name: *Prevent bypassing Windows Defender SmartScreen prompts for files*
 -   GP name: *PreventSmartScreenPromptOverrideForFiles*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -3481,30 +3789,37 @@ Most restricted value: 1
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3525,7 +3840,7 @@ Most restricted value: 1
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent turning off required extensions*
+-   GP Friendly name: *Prevent turning off required extensions*
 -   GP name: *PreventTurningOffRequiredExtensions*
 -   GP element: *PreventTurningOffRequiredExtensions_Prompt*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3556,30 +3871,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3596,14 +3918,14 @@ Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 [!INCLUDE [prevent-using-localhost-ip-address-for-webrtc-shortdesc](../includes/prevent-using-localhost-ip-address-for-webrtc-shortdesc.md)]
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent using Localhost IP address for WebRTC*
+-   GP Friendly name: *Prevent using Localhost IP address for WebRTC*
 -   GP name: *HideLocalHostIPAddress*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -3627,30 +3949,37 @@ Most restricted value: 1
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3688,7 +4017,7 @@ To define a default list of favorites:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Provision Favorites*
+-   GP Friendly name: *Provision Favorites*
 -   GP name: *ConfiguredFavorites*
 -   GP element: *ConfiguredFavoritesPrompt*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3705,30 +4034,37 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3748,13 +4084,13 @@ ADMX Info:
 [!INCLUDE [send-all-intranet-sites-to-ie-shortdesc](../includes/send-all-intranet-sites-to-ie-shortdesc.md)]
 
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Send all intranet sites to Internet Explorer 11*
+-   GP Friendly name: *Send all intranet sites to Internet Explorer 11*
 -   GP name: *SendIntranetTraffictoInternetExplorer*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -3779,30 +4115,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3831,7 +4174,7 @@ Most restricted value:  0
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Set default search engine*
+-   GP Friendly name: *Set default search engine*
 -   GP name: *SetDefaultSearchEngine*
 -   GP element: *SetDefaultSearchEngine_Prompt*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3857,30 +4200,37 @@ Most restricted value: 1
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3902,7 +4252,7 @@ Most restricted value: 1
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Set Home Button URL*
+-   GP Friendly name: *Set Home Button URL*
 -   GP name: *SetHomeButtonURL*
 -   GP element: *SetHomeButtonURLPrompt*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -3932,30 +4282,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3977,7 +4334,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Set New Tab page URL*
+-   GP Friendly name: *Set New Tab page URL*
 -   GP name: *SetNewTabPageURL*
 -   GP element: *SetNewTabPageURLPrompt*
 -   GP path: *Windows Components/Microsoft Edge*
@@ -4006,30 +4363,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4049,12 +4413,12 @@ Supported values:
 
 
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Show message when opening sites in Internet Explorer*
+-   GP Friendly name: *Show message when opening sites in Internet Explorer*
 -   GP name: *ShowMessageWhenOpeningSitesInInternetExplorer*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -4079,30 +4443,37 @@ Most restricted value: 0
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4123,12 +4494,12 @@ By default, a notification will be presented to the user informing them of this 
 With this policy, you can either allow (default) or suppress this notification.
 
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.
+> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Suppress Edge Deprecation Notification*
+-   GP Friendly name: *Suppress Edge Deprecation Notification*
 -   GP name: *SuppressEdgeDeprecationNotification*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -4142,35 +4513,42 @@ Supported values:
 
 <hr/>
 <!--Policy-->
-<a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a>**Browser/SyncFavoritesBetweenIEAndMicrosoftEdge**  
+<a href="" id="browser-syncfavoritesbetweenieandmicrosoftedge"></a><b>Browser/SyncFavoritesBetweenIEAndMicrosoftEdge</b>
 
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4192,12 +4570,12 @@ Supported values:
 [!INCLUDE [keep-favorites-in-sync-between-ie-and-edge-shortdesc](../includes/keep-favorites-in-sync-between-ie-and-edge-shortdesc.md)]
 
 > [!NOTE]
-> This policy is only enforced in Windows 10 for desktop and not supported in Windows 10 Mobile.  
+> This policy is only enforced in Windows for desktop and not supported in Windows Mobile.  
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Keep favorites in sync between Internet Explorer and Microsoft Edge*
+-   GP Friendly name: *Keep favorites in sync between Internet Explorer and Microsoft Edge*
 -   GP name: *SyncFavoritesBetweenIEAndMicrosoftEdge*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -4230,30 +4608,37 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4276,7 +4661,7 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Unlock Home Button*
+-   GP Friendly name: *Unlock Home Button*
 -   GP name: *UnlockHomeButton*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -4305,30 +4690,37 @@ Supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th> 
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
+
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -4350,7 +4742,7 @@ Supported values:
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow a shared Books folder*
+-   GP Friendly name: *Allow a shared Books folder*
 -   GP name: *UseSharedFolderForBooks*
 -   GP path: *Windows Components/Microsoft Edge*
 -   GP ADMX file name: *MicrosoftEdge.admx*
@@ -4367,15 +4759,6 @@ Most restricted value: 0
 <!--/Policy-->
 <hr/>
 
-Footnotes:
 
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->

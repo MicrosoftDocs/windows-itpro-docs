@@ -1,5 +1,5 @@
 ---
-title: Domain Isolation Policy Design (Windows 10)
+title: Domain Isolation Policy Design (Windows)
 description: Learn how to design a domain isolation policy, based on which devices accept only connections from authenticated members of the same isolated domain.
 ms.assetid: 7475084e-f231-473a-9357-5e1d39861d66
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/07/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 In the domain isolation policy design, you configure the devices on your network to accept only connections coming from devices that are authenticated as members of the same isolated domain.
 
@@ -34,7 +35,7 @@ By using connection security rules based on IPsec, you provide a logical barrier
 
 The design is shown in the following illustration, with the arrows that show the permitted communication paths.
 
-![isolated domain boundary zone](images/wfasdomainisoboundary.gif)
+![isolated domain boundary zone.](images/wfasdomainisoboundary.gif)
 
 Characteristics of this design, as shown in the diagram, include the following:
 

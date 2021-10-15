@@ -11,17 +11,18 @@ ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 04/30/2018
+ms.date: 
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # App and browser control
 
 **Applies to**
 
-- Windows 10, version 1703 and later
+- Windows 10
+- Windows 11
 
 The **App and browser control** section contains information and settings for Windows Defender SmartScreen. IT administrators and IT pros can get configuration guidance from the [Windows Defender SmartScreen documentation library](/windows/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview).
 
@@ -76,4 +77,4 @@ This can only be done in Group Policy.
 > [!NOTE]
 > If you hide all sections then the app will show a restricted interface, as in the following screenshot:
 >
-> ![Windows Security app with all sections hidden by Group Policy](images/wdsc-all-hide.png)
+> ![Windows Security app with all sections hidden by Group Policy.](images/wdsc-all-hide.png)

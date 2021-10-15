@@ -15,7 +15,6 @@ manager: dansimp
 # Policy CSP - SmartScreen
 
 
-
 <hr/>
 
 <!--Policies-->
@@ -42,28 +41,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -80,7 +85,7 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
+Allows IT Admins to control whether users are allowed to install apps from places other than the Store.
 
 > [!Note]
 > This policy will block installation only while the device is online. To block offline installation too, **SmartScreen/PreventOverrideForFilesInShell** and **SmartScreen/EnableSmartScreenInShell** policies should also be enabled.<p>This policy setting is intended to prevent malicious content from affecting your user's devices when downloading executable content from the internet.
@@ -88,7 +93,7 @@ Added in Windows 10, version 1703. Allows IT Admins to control whether users ar
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure App Install Control*
+-   GP Friendly name: *Configure App Install Control*
 -   GP name: *ConfigureAppInstallControl*
 -   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
 -   GP ADMX file name: *SmartScreen.admx*
@@ -111,28 +116,34 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -149,12 +160,12 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows IT Admins to configure SmartScreen for Windows.
+Allows IT Admins to configure SmartScreen for Windows.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Windows Defender SmartScreen*
+-   GP Friendly name: *Configure Windows Defender SmartScreen*
 -   GP name: *ShellConfigureSmartScreen*
 -   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
 -   GP ADMX file name: *SmartScreen.admx*
@@ -177,28 +188,34 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -215,12 +232,12 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows IT Admins to control whether users can ignore SmartScreen warnings and run malicious files.
+Allows IT Admins to control whether users can ignore SmartScreen warnings and run malicious files.
 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Windows Defender SmartScreen*
+-   GP Friendly name: *Configure Windows Defender SmartScreen*
 -   GP name: *ShellConfigureSmartScreen*
 -   GP element: *ShellConfigureSmartScreen_Dropdown*
 -   GP path: *Windows Components/Windows Defender SmartScreen/Explorer*
@@ -237,16 +254,4 @@ The following list shows the supported values:
 <!--/Policy-->
 <hr/>
 
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-
 <!--/Policies-->
-

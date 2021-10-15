@@ -1,5 +1,5 @@
 ---
-title: Smart Card and Remote Desktop Services (Windows 10)
+title: Smart Card and Remote Desktop Services (Windows)
 description: This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -12,13 +12,13 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 09/24/2021
 ms.reviewer: 
 ---
 
 # Smart Card and Remote Desktop Services
 
-Applies To: Windows 10, Windows Server 2016
+Applies To: Windows 10, Windows 11, Windows Server 2016 and above
 
 This topic for the IT professional describes the behavior of Remote Desktop Services when you implement smart card sign-in.
 
@@ -34,7 +34,7 @@ Smart card support is required to enable many Remote Desktop Services scenarios.
 
 In a Remote Desktop scenario, a user is using a remote server for running services, and the smart card is local to the computer that the user is using. In a smart card sign-in scenario, the smart card service on the remote server redirects to the smart card reader that is connected to the local computer where the user is trying to sign in.
 
-![Smart card service redirects to smart card reader](images/sc-image101.png)
+![Smart card service redirects to smart card reader.](images/sc-image101.png)
 
 **Remote Desktop redirection**
 

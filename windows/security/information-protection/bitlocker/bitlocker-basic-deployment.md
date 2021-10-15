@@ -22,7 +22,9 @@ ms.custom: bitlocker
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
 
 This article for the IT professional explains how BitLocker features can be used to protect your data through drive encryption.
 
@@ -108,14 +110,14 @@ Windows Explorer allows users to launch the BitLocker Drive Encryption wizard by
 
 The following table shows the compatibility matrix for systems that have been BitLocker enabled then presented to a different version of Windows.
 
-Table 1: Cross compatibility for Windows 10, Windows 8.1, Windows 8, and Windows 7 encrypted volumes
+Table 1: Cross compatibility for Windows 11, Windows 10, Windows 8.1, Windows 8, and Windows 7 encrypted volumes
 
-|Encryption Type|Windows 10 and Windows 8.1|Windows 8|Windows 7|
+|Encryption Type|Windows 11, Windows 10, and Windows 8.1|Windows 8|Windows 7|
 |--- |--- |--- |--- |
 |Fully encrypted on Windows 8|Presents as fully encrypted|N/A|Presented as fully encrypted|
 |Used Disk Space Only encrypted on Windows 8|Presents as encrypt on write|N/A|Presented as fully encrypted|
 |Fully encrypted volume from Windows 7|Presents as fully encrypted|Presented as fully encrypted|N/A|
-|Partially encrypted volume from Windows 7|Windows 10 and Windows 8.1 will complete encryption regardless of policy|Windows 8 will complete encryption regardless of policy|N/A|
+|Partially encrypted volume from Windows 7|Windows 11, Windows 10, and Windows 8.1 will complete encryption regardless of policy|Windows 8 will complete encryption regardless of policy|N/A|
 
 ## <a href="" id="bkmk-dep3"></a>Encrypting volumes using the manage-bde command-line interface
 
@@ -188,8 +190,8 @@ Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Us
 </colgroup>
 <tbody>
 <tr class="odd">
-<td align="left"><p><strong>Name</strong></p></td>
-<td align="left"><p><strong>Parameters</strong></p></td>
+<td align="left"><p>Name</p></td>
+<td align="left"><p>Parameters</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><strong>Add-BitLockerKeyProtector</strong></p></td>
@@ -386,8 +388,9 @@ Get-ADUser -filter {samaccountname -eq "administrator"}
 
 > [!NOTE]
 > Use of this command requires the RSAT-AD-PowerShell feature.
->
-> **Tip:**  In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This does not require the use of additional features.
+
+> [!TIP]
+> In addition to the Windows PowerShell command above, information about the locally logged on user and group membership can be found using: WHOAMI /ALL. This does not require the use of additional features.
 
 In the example below, the user wishes to add a domain SID-based protector to the previously encrypted operating system volume. The user knows the SID for the user account or group they wish to add and uses the following command:
 

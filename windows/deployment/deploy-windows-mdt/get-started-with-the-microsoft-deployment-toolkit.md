@@ -1,9 +1,9 @@
 ---
-title: Get started with the Microsoft Deployment Toolkit (MDT) (Windows 10)
+title: Get started with the Microsoft Deployment Toolkit (MDT) (Windows 10/11)
 description: This topic will help you gain a better understanding of how to use the Microsoft Deployment Toolkit (MDT), as part of a Windows operating system deployment.
 ms.assetid: a256442c-be47-4bb9-a105-c831f58ce3ee
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, image, feature, install, tools
 ms.prod: w10
@@ -20,6 +20,7 @@ ms.topic: article
 
 **Applies to**
 - Windows 10
+- Windows 11
 
 This article provides an overview of the features, components, and capabilities of the [Microsoft Deployment Toolkit (MDT)](/mem/configmgr/mdt/). When you have finished reviewing this information, see [Prepare for deployment with MDT](prepare-for-windows-deployment-with-mdt.md).
 
@@ -29,21 +30,21 @@ MDT is a unified collection of tools, processes, and guidance for automating des
 
 In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
 
-MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with [Microsoft Endpoint Configuration Manager](/configmgr/).
+MDT supports the deployment of Windows 11, as well as Windows 7, Windows 8.1, Windows 10, and Windows Server. It also includes support for zero-touch installation (ZTI) with [Microsoft Endpoint Configuration Manager](/configmgr/).
 
 ## Key features in MDT
 
 MDT has been in existence since 2003, when it was first introduced as Business Desktop Deployment (BDD) 1.0. The toolkit has evolved, both in functionality and popularity, and today it is considered fundamental to Windows operating system and enterprise application deployment.
 
 MDT has many useful features, such as:
-- **Windows Client support.** Supports Windows 7, Windows 8.1, and Windows 10.
+- **Windows Client support.** Supports Windows 7, Windows 8.1, Windows 10, and Windows 11.
 - **Windows Server support.** Supports Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, and Windows Server 2019.
 - **Additional operating systems support.** Supports Windows Thin PC and [Windows Embedded POSReady 7](https://www.microsoft.com/en-us/download/details.aspx?id=26558), as well as Windows 8.1 Embedded Industry.
 - **UEFI support.** Supports deployment to machines using Unified Extensible Firmware Interface (UEFI) version 2.3.1.
 - **GPT support.** Supports deployment to machines that require the new GPT partition table format. This is related to UEFI.
 - **Enhanced Windows PowerShell support.** Provides support for running PowerShell scripts.
 
-    ![figure 2](../images/mdt-05-fig02.png)
+    ![figure 2.](../images/mdt-05-fig02.png)
 
     The deployment share mounted as a standard PSDrive allows for administration using PowerShell.
 
@@ -58,7 +59,7 @@ MDT has many useful features, such as:
 - **Offline BitLocker.** Provides the capability to have BitLocker enabled during the Windows Preinstallation Environment (Windows PE) phase, thus saving hours of encryption time.
 - **USMT offline user-state migration.** Provides support for running the User State Migration Tool (USMT) capture offline, during the Windows PE phase of the deployment.
 
-    ![figure 3](../images/mdt-05-fig03.png)
+    ![figure 3.](../images/mdt-05-fig03.png)
 
     The offline USMT backup in action.
 
@@ -68,15 +69,15 @@ MDT has many useful features, such as:
 - **Support for Microsoft Office.** Provides added support for deploying Microsoft Office.
 - **Support for Modern UI app package provisioning.** Provisions applications based on the new Windows app package standard, which is used in Windows 8 and later.
 - **Extensibility.** Provides the capability to extend MDT far beyond the built-in features by adding custom scripts, web services, System Center Orchestrator runbooks, PowerShell scripts, and VBScripts.
-- **Upgrade task sequence.** Provides a new upgrade task sequence template that you can use to upgrade existing Windows 7, Windows 8, and Windows 8.1 systems directly to Windows 10, automatically preserving all data, settings, applications, and drivers. For more information about using this new upgrade task sequence, refer to the [Microsoft Deployment Toolkit resource page](/mem/configmgr/mdt/).
+- **Upgrade task sequence.** Provides a new upgrade task sequence template that you can use to upgrade existing Windows 7, Windows 8, Windows 8.1, and Windows 10 systems directly to Windows 11, automatically preserving all data, settings, applications, and drivers. For more information about using this new upgrade task sequence, refer to the [Microsoft Deployment Toolkit resource page](/mem/configmgr/mdt/).
 
 ## MDT Lite Touch components
 
-Many features in MDT support Lite Touch Installation (LTI) for Windows 10. An LTI deployment strategy requires very little infrastructure or user interaction, and can be used to deploy an operating system from a network share or from a physical media, such as a USB flash drive or disc.
+Many features in MDT support Lite Touch Installation (LTI) for Windows 11. An LTI deployment strategy requires very little infrastructure or user interaction, and can be used to deploy an operating system from a network share or from a physical media, such as a USB flash drive or disc.
 
 When deploying the Windows operating system using MDT, most of the administration and configuration is done through the Deployment Workbench, but you also can perform many of the tasks using Windows PowerShell. The easiest way to find out how to use PowerShell in MDT is to use the Deployment Workbench to perform an operation and at the end of that task, click View Script. That will give you the PowerShell command.
 
-![figure 4](../images/mdt-05-fig04.png)
+![figure 4.](../images/mdt-05-fig04.png)
 
 If you click **View Script** on the right side, you will get the PowerShell code that was used to perform the task.
 
@@ -93,7 +94,7 @@ The rules (CustomSettings.ini and Bootstrap.ini) make up the brain of MDT. The r
 - Regional settings
 You can manage hundreds of settings in the rules. For more information, see the [Microsoft Deployment Toolkit resource center](/mem/configmgr/mdt/).
 
-![figure 5](../images/mdt-05-fig05.png)
+![figure 5.](../images/mdt-05-fig05.png)
 
 Example of a MDT rule. In this example, the new computer name is being calculated based on PC- plus the first seven (Left) characters from the serial number
 

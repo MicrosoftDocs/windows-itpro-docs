@@ -17,23 +17,23 @@ To provide the best experience for consumers, Windows provides controls that giv
 
 By default, resource limits are imposed on applications. Foreground apps are given the most memory and execution time; background apps get less. Users are thus protected from poor foreground app performance and heavy battery drain.
 
-Enterprise users want the same ability to enable or limit background activity. In Windows 10, version 1703 (also known as the Creators Update), enterprises can now configure settings via policy and provisioning that control background activity.
+Enterprise users want the same ability to enable or limit background activity. Starting with Windows 10 version 1703, enterprises can now configure settings via policy and provisioning that control background activity.
 
 ## Background activity controls
 
 Users have the ability to control background activity for their device through two interfaces in the **Settings** app: the **Background apps** page and the **Battery usage by app** page. The **Background apps** page has a master switch to turn background activity on or off for all apps, and provides individual switches to control each app's ability to run in the background. 
 
-![Background apps settings page](images/backgroundapps-setting.png)
+![Background apps settings page.](images/backgroundapps-setting.png)
 
 The **Battery usage by app** page allows fine-grained tuning of background activity. Users have the ability to set background activity to by **Managed By Windows**, as well as turning it on or off for each app. Only devices with a battery have this page available in the **Settings** app. Here is the set of available controls on desktop: 
 
-![Battery usage by app on desktop](images/battery-usage-by-app-desktop.png)
+![Battery usage by app on desktop.](images/battery-usage-by-app-desktop.png)
 
 Here is the set of available controls for mobile devices: 
 
-![Battery usage by app on mobile](images/battery-usage-by-app-mobile.png)
+![Battery usage by app on mobile.](images/battery-usage-by-app-mobile.png)
 
-Although the user interface differs across editions of the operating system, the policy and developer interface is consistent across Windows 10. For more information about these controls, see [Optimize background activity](/windows/uwp/debug-test-perf/optimize-background-activity).
+Although the user interface differs across editions of the operating system, the policy and developer interface is consistent across Windows clients. For more information about these controls, see [Optimize background activity](/windows/uwp/debug-test-perf/optimize-background-activity).
 
 ## Enterprise background activity controls 
 

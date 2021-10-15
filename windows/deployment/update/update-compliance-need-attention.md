@@ -14,9 +14,15 @@ ms.prod: w10
 ---
 
 # Needs attention!
-![Needs attention section](images/UC_workspace_needs_attention.png)
 
-The **Needs attention!** section provides a breakdown of all Windows 10 device and update issues detected by Update Compliance. The summary tile for this section counts the number of devices that have issues, while the blades within break down the issues encountered. Finally, a [list of queries](#list-of-queries) blade in this section contains queries that provide values but do not fit within any other main section. 
+**Applies to**
+
+- Windows 10
+- Windows 11
+
+![Needs attention section.](images/UC_workspace_needs_attention.png)
+
+The **Needs attention!** section provides a breakdown of all Windows client device and update issues detected by Update Compliance. The summary tile for this section counts the number of devices that have issues, while the blades within break down the issues encountered. Finally, a [list of queries](#list-of-queries) blade in this section contains queries that provide values but do not fit within any other main section. 
 
 > [!NOTE]
 > The summary tile counts the number of devices that have issues, while the blades within the section break down the issues encountered. A single device can have more than one issue, so these numbers might not add up.
@@ -26,7 +32,7 @@ The different issues are broken down by Device Issues and Update Issues:
 ## Device Issues
 
 * **Missing multiple security updates:** This issue occurs when a device is behind by two or more security updates. These devices might be more vulnerable and should be investigated and updated.
-* **Out of support OS Version:** This issue occurs when a device has fallen out of support due to the version of Windows 10 it is running. When a device has fallen out of support, it will no longer receive important security updates, and might be vulnerable. These devices should be updated to a supported version of Windows 10.
+* **Out of support OS Version:** This issue occurs when a device has fallen out of support due to the version of Windows client it is running. When a device has fallen out of support, it will no longer receive important security updates, and might be vulnerable. These devices should be updated to a supported version of Windows client.
 
 ## Update Issues
 
@@ -39,7 +45,7 @@ The different issues are broken down by Device Issues and Update Issues:
 Selecting any of the issues will take you to a [Log Analytics](/azure/log-analytics/query-language/get-started-analytics-portal) view with all devices that have the given issue.
 
 > [!NOTE]
-> This blade also has a link to the [Setup Diagnostic Tool](../upgrade/setupdiag.md), a standalone tool you can use to obtain details about why a Windows 10 feature update was unsuccessful. 
+> This blade also has a link to the [Setup Diagnostic Tool](../upgrade/setupdiag.md), a standalone tool you can use to obtain details about why a Windows client feature update was unsuccessful. 
 
 ## List of Queries
 

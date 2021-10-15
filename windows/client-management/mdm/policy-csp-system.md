@@ -7,7 +7,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
-ms.date: 10/14/2020
+ms.date: 08/26/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -62,7 +62,7 @@ manager: dansimp
     <a href="#system-allowusertoresetphone">System/AllowUserToResetPhone</a>
   </dd>
  <dd>
-    <a href="#system-allowwufbcloudprocessing">System/AllowWuFBCloudProcessing</a>
+    <a href="#system-allowwufbcloudprocessing">System/AllowWUfBCloudProcessing</a>
   </dd>
   <dd>
     <a href="#system-bootstartdriverinitialization">System/BootStartDriverInitialization</a>
@@ -114,24 +114,29 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -158,7 +163,7 @@ If you enable or do not configure this policy setting, users can download and in
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Toggle user control over Insider builds*
+-   GP Friendly name: *Toggle user control over Insider builds*
 -   GP name: *AllowBuildPreview*
 -   GP path: *Data Collection and Preview Builds*
 -   GP ADMX file name: *AllowBuildPreview.admx*
@@ -182,24 +187,29 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -234,7 +244,7 @@ See the documentation at [ConfigureWDD](https://aka.ms/ConfigureWDD) for informa
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow commercial data pipeline*
+-   GP Friendly name: *Allow commercial data pipeline*
 -   GP name: *AllowCommercialDataPipeline*
 -   GP element: *AllowCommercialDataPipeline*
 -   GP path: *Data Collection and Preview Builds*
@@ -294,24 +304,29 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -333,7 +348,7 @@ This policy allows the device name to be sent to Microsoft as part of Windows di
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow device name to be sent in Windows diagnostic data*
+-   GP Friendly name: *Allow device name to be sent in Windows diagnostic data*
 -   GP name: *AllowDeviceNameInDiagnosticData*
 -   GP element: *AllowDeviceNameInDiagnosticData*
 -   GP path: *Data Collection and Preview Builds*
@@ -363,24 +378,29 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -419,24 +439,29 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -480,24 +505,29 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -514,7 +544,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Boolean policy setting that determines whether Windows is allowed to download fonts and font catalog data from an online font provider. If you enable this setting, Windows periodically queries an online font provider to determine whether a new font catalog is available. Windows may also download font data if needed to format or render text. If you disable this policy setting, Windows does not connect to an online font provider and only enumerates locally installed fonts.
+Boolean policy setting that determines whether Windows is allowed to download fonts and font catalog data from an online font provider. If you enable this setting, Windows periodically queries an online font provider to determine whether a new font catalog is available. Windows may also download font data if needed to format or render text. If you disable this policy setting, Windows does not connect to an online font provider and only enumerates locally installed fonts.
 
 This MDM setting corresponds to the EnableFontProviders Group Policy setting. If both the Group Policy and the MDM settings are configured, the group policy setting takes precedence. If neither is configured, the behavior depends on a DisableFontProviders registry value. In server editions, this registry value is set to 1 by default, so the default behavior is false (disabled). In all other editions, the registry value is not set by default, so the default behavior is true (enabled).
 
@@ -526,7 +556,7 @@ This setting is used by lower-level components for text display and fond handlin
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Enable Font Providers*
+-   GP Friendly name: *Enable Font Providers*
 -   GP name: *EnableFontProviders*
 -   GP path: *Network/Fonts*
 -   GP ADMX file name: *GroupPolicy.admx*
@@ -555,24 +585,29 @@ To verify if System/AllowFontProviders is set to true:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -603,7 +638,7 @@ For example, an app's original Location setting is Off. The administrator then s
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off location*
+-   GP Friendly name: *Turn off location*
 -   GP name: *DisableLocation_2*
 -   GP path: *Windows Components/Location and Sensors*
 -   GP ADMX file name: *Sensors.admx*
@@ -647,24 +682,29 @@ If you disable this policy setting, devices may not appear in Microsoft Managed 
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -703,24 +743,29 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -747,7 +792,7 @@ The following list shows the supported values for Windows 8.1:
 -   1 – Allowed, except for Secondary Data Requests.
 -   2 (default) – Allowed.
 
-<!--<table style="margin-left: 20px">
+<!--<table>
 <colgroup>
 <col width="100%" />
 </colgroup>
@@ -758,14 +803,14 @@ The following list shows the supported values for Windows 8.1:
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>0 – Not allowed.</p>
+<td><p>0 – Not allowed.</p>
 </td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p> 1 – Allowed, except for Secondary Data Requests.</p></td>
+<td><p> 1 – Allowed, except for Secondary Data Requests.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>2 (default) – Allowed.</p></td>
+<td><p>2 (default) – Allowed.</p></td>
 </tr>
 </tbody>
 </table>-->
@@ -790,7 +835,7 @@ The following list shows the supported values for Windows 10 version 1809 and ol
 
 Most restrictive value is 0.
 
-<!--<table style="margin-left: 20px">
+<!--<table>
 <colgroup>
 <col width="100%" />
 </colgroup>
@@ -801,20 +846,20 @@ Most restrictive value is 0.
 </thead>
 <tbody>
 <tr class="odd">
-<td style="vertical-align:top"><p>0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.</p>
+<td><p>0 – Security. Information that is required to help keep Windows more secure, including data about the Connected User Experience and Telemetry component settings, the Malicious Software Removal Tool, and Windows Defender.</p>
 <div class="alert">
 <strong>Note</strong>  This value is only applicable to Windows 10 Enterprise, Windows 10 Education, Windows 10 IoT Core (IoT Core), and Windows Server 2016. Using this setting on other devices is equivalent to setting the value of 1.
 </div>
 </td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.</p></td>
+<td><p>1 – Basic. Basic device info, including: quality-related data, app compatibility, app usage data, and data from the Security level.</p></td>
 </tr>
 <tr class="odd">
-<td style="vertical-align:top"><p>2 – Enhanced. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.</p></td>
+<td><p>2 – Enhanced. Additional insights, including: how Windows, Windows Server, System Center, and apps are used, how they perform, advanced reliability data, and data from both the Basic and the Security levels.</p></td>
 </tr>
 <tr class="even">
-<td style="vertical-align:top"><p>3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.</p></td>
+<td><p>3 – Full. All data necessary to identify and help to fix problems, plus data from the Security, Basic, and Enhanced levels.</p></td>
 </tr>
 </tbody>
 </table>-->
@@ -822,7 +867,7 @@ Most restrictive value is 0.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Telemetry*
+-   GP Friendly name: *Allow Telemetry*
 -   GP name: *AllowTelemetry*
 -   GP element: *AllowTelemetry*
 -   GP path: *Data Collection and Preview Builds*
@@ -839,24 +884,29 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -889,7 +939,7 @@ If you disable or do not configure this policy setting, devices will not appear 
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Allow Update Compliance Processing*
+-   GP Friendly name: *Allow Update Compliance Processing*
 -   GP name: *AllowUpdateComplianceProcessing*
 -   GP element: *AllowUpdateComplianceProcessing*
 -   GP path: *Data Collection and Preview Builds*
@@ -913,24 +963,29 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -964,7 +1019,7 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWuFBCloudProcessing**
+<a href="" id="system-allowwufbcloudprocessing"></a>**System/AllowWUfBCloudProcessing**
 
 <hr/>
 
@@ -985,30 +1040,44 @@ If you disable or do not configure this policy setting, devices enrolled to the 
 
 <hr/>
 
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+-   0 - Disabled.
+-   8 - Enabled.
+<!--/SupportedValues-->
+
+
 <!--Policy-->
 <a href="" id="system-bootstartdriverinitialization"></a>**System/BootStartDriverInitialization**  
 
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1047,7 +1116,7 @@ If your malware detection application does not include an Early Launch Antimalwa
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Boot-Start Driver Initialization Policy*
+-   GP Friendly name: *Boot-Start Driver Initialization Policy*
 -   GP name: *POL_DriverLoadPolicy_Name*
 -   GP path: *System/Early Launch Antimalware*
 -   GP ADMX file name: *earlylauncham.admx*
@@ -1063,24 +1132,29 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1107,7 +1181,7 @@ Value type is string.
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Microsoft 365 Update Readiness upload endpoint*
+-   GP Friendly name: *Configure Microsoft 365 Update Readiness upload endpoint*
 -   GP name: *ConfigureMicrosoft365UploadEndpoint*
 -   GP element: *ConfigureMicrosoft365UploadEndpoint*
 -   GP path: *Data Collection and Preview Builds*
@@ -1133,24 +1207,29 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1174,7 +1253,7 @@ If you set this policy setting to "Enable telemetry change notifications" or don
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure telemetry opt-in change notifications.*
+-   GP Friendly name: *Configure telemetry opt-in change notifications.*
 -   GP name: *ConfigureTelemetryOptInChangeNotification*
 -   GP element: *ConfigureTelemetryOptInChangeNotification*
 -   GP path: *Data Collection and Preview Builds*
@@ -1196,24 +1275,29 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1242,7 +1326,7 @@ If you set this policy setting to "Enable Telemetry opt-in Settings" or don't co
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure telemetry opt-in setting user interface.*
+-   GP Friendly name: *Configure telemetry opt-in setting user interface.*
 -   GP name: *ConfigureTelemetryOptInSettingsUx*
 -   GP element: *ConfigureTelemetryOptInSettingsUx*
 -   GP path: *Data Collection and Preview Builds*
@@ -1264,24 +1348,29 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1305,7 +1394,7 @@ If you disable or don't configure this policy setting, the Delete diagnostic dat
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable deleting diagnostic data*
+-   GP Friendly name: *Disable deleting diagnostic data*
 -   GP name: *DisableDeviceDelete*
 -   GP element: *DisableDeviceDelete*
 -   GP path: *Data Collection and Preview Builds*
@@ -1331,24 +1420,29 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1372,7 +1466,7 @@ If you disable or don't configure this policy setting, the Diagnostic Data Viewe
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Disable diagnostic data viewer.*
+-   GP Friendly name: *Disable diagnostic data viewer.*
 -   GP name: *DisableDiagnosticDataViewer*
 -   GP element: *DisableDiagnosticDataViewer*
 -   GP path: *Data Collection and Preview Builds*
@@ -1398,24 +1492,29 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1437,7 +1536,7 @@ This policy setting blocks the Connected User Experience and Telemetry service f
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service*
+-   GP Friendly name: *Configure Authenticated Proxy usage for the Connected User Experience and Telemetry service*
 -   GP name: *DisableEnterpriseAuthProxy*
 -   GP element: *DisableEnterpriseAuthProxy*
 -   GP path: *Data Collection and Preview Builds*
@@ -1454,24 +1553,29 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1488,7 +1592,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1703. Allows IT Admins to prevent apps and features from working with files on OneDrive. If you enable this policy setting:
+Allows IT Admins to prevent apps and features from working with files on OneDrive. If you enable this policy setting:
 
 * Users cannot access OneDrive from the OneDrive app or file picker.
 * Microsoft Store apps cannot access OneDrive using the WinRT API.
@@ -1501,7 +1605,7 @@ If you disable or do not configure this policy setting, apps and features can wo
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Prevent the usage of OneDrive for file storage*
+-   GP Friendly name: *Prevent the usage of OneDrive for file storage*
 -   GP name: *PreventOnedriveFileSync*
 -   GP path: *Windows Components/OneDrive*
 -   GP ADMX file name: *SkyDrive.admx*
@@ -1532,24 +1636,29 @@ To validate on Desktop, do the following:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" />  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1588,7 +1697,7 @@ Also, see the "Turn off System Restore configuration" policy setting. If the "Tu
 
 <!--ADMXBacked-->
 ADMX Info:  
--   GP English name: *Turn off System Restore*
+-   GP Friendly name: *Turn off System Restore*
 -   GP name: *SR_DisableSR*
 -   GP path: *System/System Restore*
 -   GP ADMX file name: *systemrestore.admx*
@@ -1604,24 +1713,29 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1638,7 +1752,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Added in Windows 10, version 1803. When filing feedback in the Feedback Hub, diagnostic logs are collected for certain types of feedback. We now offer the option for users to save it locally, in addition to sending it to Microsoft. This policy will allow enterprises to mandate that all diagnostics are saved locally for use in internal investigations.
+When filing feedback in the Feedback Hub, diagnostic logs are collected for certain types of feedback. We now offer the option for users to save it locally, in addition to sending it to Microsoft. This policy will allow enterprises to mandate that all diagnostics are saved locally for use in internal investigations.
 
 <!--/Description-->
 <!--SupportedValues-->
@@ -1658,24 +1772,29 @@ The following list shows the supported values:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1717,7 +1836,7 @@ If you disable or do not configure this policy setting, then the level of diagno
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Limit Enhanced diagnostic data to the minimum required by Windows Analytics*
+-   GP Friendly name: *Limit Enhanced diagnostic data to the minimum required by Windows Analytics*
 -   GP name: *LimitEnhancedDiagnosticDataWindowsAnalytics*
 -   GP element: *LimitEnhancedDiagnosticDataWindowsAnalytics*
 -   GP path: *Data Collection and Preview Builds*
@@ -1734,24 +1853,29 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" />  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1775,7 +1899,7 @@ If you disable or do not configure this policy setting, Connected User Experienc
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Configure Connected User Experiences and Telemetry*
+-   GP Friendly name: *Configure Connected User Experiences and Telemetry*
 -   GP name: *TelemetryProxy*
 -   GP element: *TelemetryProxyName*
 -   GP path: *Data Collection and Preview Builds*
@@ -1792,24 +1916,29 @@ ADMX Info:
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup>  <sup>11</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -1835,7 +1964,7 @@ If you disable or do not configure this policy setting, File History can be acti
 <!--/Description-->
 <!--ADMXMapped-->
 ADMX Info:  
--   GP English name: *Turn off File History*
+-   GP Friendly name: *Turn off File History*
 -   GP name: *DisableFileHistory*
 -   GP path: *Windows Components/File History*
 -   GP ADMX file name: *FileHistory.admx*
@@ -1855,19 +1984,5 @@ The following list shows the supported values:
 <!--/Validation-->
 <!--/Policy-->
 <hr/>
-
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
-- 9 - Available in Windows 10, version 20H2.
-- 10 - Available in Windows 10, version 21H1.
-- 11 - Also applies to Windows 10 Business.
 
 <!--/Policies-->

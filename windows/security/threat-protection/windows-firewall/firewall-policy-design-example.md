@@ -1,5 +1,5 @@
 ---
-title: Basic Firewall Policy Design Example (Windows 10)
+title: Basic Firewall Policy Design Example (Windows)
 description: This example features a fictitious company and illustrates firewall policy design for Windows Defender Firewall with Advanced Security.
 ms.assetid: 0dc3bcfe-7a4d-4a15-93a9-64b13bd775a7
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 In this example, the fictitious company Woodgrove Bank is a financial services institution.
 
@@ -38,7 +39,7 @@ The network administrators want to implement Windows Defender Firewall with Adva
 
 The following illustration shows the traffic protection needs for this design example.
 
-![design example 1](images/wfas-designexample1.gif)
+![design example 1.](images/wfas-designexample1.gif)
 
 1.  The network infrastructure servers that are running services, such as Active Directory, DNS, DHCP, or WINS, can receive unsolicited inbound requests from network clients. The network clients can receive the responses from the infrastructure servers.
 
@@ -67,7 +68,7 @@ Other traffic notes:
 
 Woodgrove Bank uses Active Directory groups and Group Policy Objects to deploy the firewall settings and rules to the devices on their network. They know that they must deploy policies to the following collections of devices:
 
--   Client devices that run Windows 10, Windows 8, or Windows 7
+-   Client devices that run Windows 11, Windows 10, Windows 8, or Windows 7
 
 -   WGBank front-end servers that run Windows Server 2016, Windows Server 2012 R2, Windows Server 2012 or Windows Server 2008 R2 (there are none in place yet, but their solution must support adding them)
 

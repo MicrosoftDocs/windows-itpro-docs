@@ -1,5 +1,5 @@
 ---
-title: Restrict access to only trusted devices (Windows 10)
+title: Restrict access to only trusted devices (Windows)
 description: Windows Defender Firewall with Advanced Security enables you to isolate devices you trust and restrict access of untrusted devices to trusted devices.
 ms.assetid: bc1f49a4-7d54-4857-8af9-b7c79f47273b
 ms.reviewer: 
@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
+ms.date: 09/08/2021
 ms.technology: mde
 ---
 
@@ -22,7 +22,8 @@ ms.technology: mde
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 Your organizational network likely has a connection to the Internet. You also likely have partners, vendors, or contractors who attach devices that are not owned by your organization to your network. Because you do not manage those devices, you cannot trust them to be free of malicious software, maintained with the latest security updates, or in any way in compliance with your organization's security policies. These untrustworthy devices both on and outside of your physical network must not be permitted to access your organization's devices except where it is truly required.
 
@@ -35,7 +36,7 @@ The protection provided by domain isolation can help you comply with regulatory 
 
 The following illustration shows an isolated domain, with one of the zones that are optionally part of the design. The rules that implement both the isolated domain and the different zones are deployed by using Group Policy and Active Directory.
 
-![domain isolation](images/wfas-domainiso.gif)
+![domain isolation.](images/wfas-domainiso.gif)
 
 These goals, which correspond to [Domain Isolation Policy Design](domain-isolation-policy-design.md) and [Certificate-based Isolation Policy Design](certificate-based-isolation-policy-design.md), provide the following benefits:
 

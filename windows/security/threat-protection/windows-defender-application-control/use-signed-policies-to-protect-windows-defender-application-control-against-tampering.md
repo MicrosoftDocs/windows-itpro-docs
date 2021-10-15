@@ -1,6 +1,6 @@
 ---
-title: Use signed policies to protect Windows Defender Application Control against tampering  (Windows 10)
-description: Signed WDAC policies give organizations the highest level of malware protection available in Windows 10.
+title: Use signed policies to protect Windows Defender Application Control against tampering  (Windows)
+description: Signed WDAC policies give organizations the highest level of malware protection available in Windows 10 and Windows 11.
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -22,11 +22,14 @@ ms.technology: mde
 
 **Applies to:**
 
--   Windows 10
--   Windows Server 2016
+- Windows 10
+- Windows 11
+- Windows Server 2016 and above
 
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
-Signed WDAC policies give organizations the highest level of malware protection available in Windows 10. In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the computer. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this in mind, it is much more difficult to remove signed WDAC policies. Note that SecureBoot must be enabled in order to restrict users from updating or removing signed WDAC policies.
+Signed WDAC policies give organizations the highest level of malware protection available in Windows. In addition to their enforced policy rules, signed policies cannot be modified or deleted by a user or administrator on the computer. These policies are designed to prevent administrative tampering and kernel mode exploit access. With this in mind, it is much more difficult to remove signed WDAC policies. Note that SecureBoot must be enabled in order to restrict users from updating or removing signed WDAC policies.
 
 Before you sign and deploy a signed WDAC policy, we recommend that you [audit the policy](audit-windows-defender-application-control-policies.md) to discover any blocked applications that should be allowed to run. 
 
@@ -42,6 +45,9 @@ To sign a WDAC policy with SignTool.exe, you need the following components:
 -   The binary format of the WDAC policy that you generated in [Create a Windows Defender Application Control policy from a reference computer](create-initial-default-policy.md) or another WDAC policy that you have created
 
 -   An internal CA code signing certificate or a purchased code signing certificate
+
+> [!NOTE]
+> All policies (base and supplemental and single-policy format) must be pkcs7 signed. [PKCS 7 Standard](https://datatracker.ietf.org/doc/html/rfc5652)
 
 If you do not have a code signing certificate, see [Optional: Create a code signing certificate for Windows Defender Application Control](create-code-signing-cert-for-windows-defender-application-control.md) for instructions on how to create one. If you use an alternate certificate or WDAC policy, be sure to update the following steps with the appropriate variables and certificate so that the commands will function properly. To sign the existing WDAC policy, copy each of the following commands into an elevated Windows PowerShell session:
 
