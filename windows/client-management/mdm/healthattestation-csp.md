@@ -8,22 +8,452 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
-ms.date: 06/26/2017
+author: dansimp
+ms.date: 
 ---
 
 # Device HealthAttestation CSP
 
-The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT managers to assess if a device is booted to a trusted and compliant state, and take enterprise policy actions.
+The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT adminstrators to assess if a device is booted to a trusted and compliant state, and to take enterprise policy actions.
 
 The following is a list of functions performed by the Device HealthAttestation CSP:
 
--   Collects device boot logs, TPM audit trails and the TPM certificate (DHA-BootData) from a managed device
--   Forwards DHA-BootData to Device Health Attestation Service (DHA-Service)
+-   Collects device boot logs, Trusted Platform Module (TPM) audit trails and the TPM certificate (DHA-BootData) from a managed device
+-   Forwards DHA-BootData to a Device Health Attestation Service (DHA-Service)
 -   Receives an encrypted blob (DHA-EncBlob) from DHA-Service, and stores it in a local cache on the device
--   Receives attestation requests (DHA-Requests) from a DHA-Enabled MDM, and replies with Device Health Attestation data (DHA-Data
+-   Receives attestation requests (DHA-Requests) from a DHA-Enabled MDM, and replies with Device Health Attestation data (DHA-Data)
 
-## Terms
+## Windows 11 Device health attestation
+
+Windows 11 introduces an update to the device health attestation feature. This helps add support for deeper insights to Windows boot security, supporting a zero trust approach to device security. Device health attestation on Windows can be accessed by using the HealthAttestation CSP. This CSP helps assess if a device is booted to a trusted and compliant state and then to take appropriate action. Windows 11 introduces additional child nodes to the HealthAttestation node for the MDM providers to connect to the Microsoft Azure Attestation service which provides a simplified approach to attestation.
+
+The attestation report provides a health assessment of the boot-time properties of the device to ensure that the devices are automatically secure as soon as they power on. The health attestation result can then be used to allow or deny access to networks, apps, or services, depending on the health of the device.
+
+### Terms
+**TPM (Trusted Platform Module)**
+<p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption and signing.</p>
+
+**DHA (Device HealthAttestation) feature**
+<p>The Device HealthAttestation (DHA) feature enables enterprise IT administrators to monitor the security posture of managed devices remotely by using hardware (TPM) protected and attested data via a tamper-resistant and tamper-evident communication channel.</p>
+
+**MAA-Session (Microsoft Azure Attestaiton service based device HealthAttestation session)**
+<p>The Microsoft Azure Attestaiton service based device HealthAttestation session (MAA-Session) describes the end-to-end communication flow that is performed in one device health attestation session.</p>
+
+**MAA-CSP Nodes (Microsoft Azure Attestaiton based Configuration Service Provider)**
+<p>The Configuration Service Provider nodes added to Windhows 11 to integrate with Microsoft Azure Attestation Service.</p>
+<p>The following list of operations is performed by MAA-CSP:</p>
+<ul>
+<li>Receives attestation trigger requests from a HealthAttestation enabled MDM provider.</li>
+<li>The device collects Attestation Evidence (device boot logs, TPM audit trails and the TPM certificate) from a managed device.</li>
+<li>Forwards the Attestation Evidence to the Azure Attestation Service instance as configured by the MDM provider.</li>
+<li>Receives a signed report from the Azure Attestation Service instance and stores it in a local cache on the device.</li>
+</ul>
+
+**MAA endpoint**
+Microsoft Azure attestation service is an azure resource, and every intance of the service gets adminintrator configured URL. The URI generated is unique in nature and for the puposes of device health attestation is known as the MAA endpoint.
+
+**JWT (JSON Web Token)**
+JSON Web Token (JWT) is an open standard RFC7519 method for securely transmitting information between parties as a JavaScript Object Notation (JSON) object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret or a public/private key pair.
+
+### Attestation Flow with Microsoft Azure Attestation Service
+
+![Attestation Flow with Microsoft Azure Attestation Service](./images/maa-attestation-flow.png)
+
+<br>
+<p>Attestation flow can be broadly in three main steps:
+<ul>
+    <li>An instance of the Azure Attestation service is setup with an appropriate attestation policy. The attestation policy allows the MDM provider to attest to particular events in the boot as well security features.</li>
+    <li>The MDM provider triggers a call to the attestation service, the device then performs an attestation check keeping the report ready to be retrieved.</li>
+    <li>The MDM provider after verifying the token is coming from the attestation service it can parse the attestation token to reflect on the attested state of the device.</li>
+</ul>
+The protocol implemented can be found here:<a href="https://docs.microsoft.com/en-us/azure/attestation/virtualization-based-security-protocol" id="attestationprotocol"> Attestation Protocol</a>
+</p>
+
+### Configuration Service Provider Nodes
+Windows 11 introduces additions to the HealthAttestation CSP node to integrate with Microsoft Azure Attestaiton service.
+```
+./Vendor/MSFT
+HealthAttestation
+----...
+----TriggerAttestation                    |
+----AttestStatus                          | Added in Windows 11
+----GetAttestReport                       |
+----GetServiceCorrelationIDs              |
+----VerifyHealth
+----Status
+----ForceRetrieve
+----Certificate
+----Nonce
+----CorrelationID
+----HASEndpoint
+----TpmReadyStatus
+----CurrentProtocolVersion
+----PreferredMaxProtocolVersion
+----MaxSupportedProtocolVersion
+```
+
+
+<a href="" id="healthattestation"></a>**./Vendor/MSFT/HealthAttestation**  
+<p>The root node for the device HealthAttestation configuration service provider.</p>
+
+<a href="" id="triggerAttestation"></a>**TriggerAttestation** (Required)  
+<p>Node type: EXECUTE
+This node will trigger attestation flow by launching an attestation process. If the attestation process is launched successfully, this node will return code 202 indicating the request is received and being processed. Otherwise, an error will be returned.
+</p>
+
+<p>Templated SyncML Call:</p>
+
+    <SyncML xmlns="SYNCML:SYNCML1.2">
+        <SyncBody>
+            <Exec>
+                <CmdID>VERIFYHEALTHV2</CmdID>
+                <Item>
+                    <Target>
+                        <LocURI>
+                            ./Vendor/MSFT/HealthAttestation/TriggerAttestation
+                        </LocURI>
+                    </Target>
+                    <Data>
+                        {
+                        rpID : "rpID", serviceEndpoint : “MAA endpoint”,
+                        nonce : “nonce”, aadToken : “aadToken”, "cv" : "CorrelationVector"
+                        }                    
+                    </Data>
+                </Item>
+            </Exec>
+            <Final/>
+        </SyncBody>
+    </SyncML>
+
+<p>Data fields:</p>
+<ul>
+<li>rpID (Relying Party Identifier): This field contains an identifier that can be used to help determine the caller.</li>
+<li>serviceEndpoint : This field contains the complete URL of the Microsoft Azure Attestation provider instance to be used for evaluation.</li>
+<li>nonce : This field contains an arbitrary number that can be used just once in a cryptographic communication. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in replay attacks.</li>
+<li>aadToken : The AAD token to used for authentication against the Microsoft Azure Attestation service.</li>
+<li>cv : This field contains an identifier(Correlation Vector) that will passed in to the service call, that can be used for diagnostics purposes.</li>
+</ul>
+
+<p>Sample Data:</p>
+
+     <Data>
+     { 
+     "rpid" : "https://www.contoso.com/attestation",
+      "endpoint" : "https://contoso.eus.attest.azure.net/attest/tpm?api-version=2020-10-01",
+      "nonce" : "5468697320697320612054657374204e6f6e6365",
+      "aadToken" : "dummytokenstring",
+      "cv" : "testonboarded" 
+     }
+     </Data>
+
+<a href="" id="AttestStatus"></a>**AttestStatus**
+<p>Node type: GET
+This node will retrieve the status(HRESULT value) stored in registry updated by the attestation process triggered in the previous step.
+The status is always cleared prior to making the attest service call.
+</p>
+
+<p>Templated SyncML Call:</p>
+
+    <SyncML xmlns="SYNCML:SYNCML1.2">
+      <SyncBody>
+        <Get>
+          <Item>
+            <Target>
+              <LocURI>
+                ./Device/Vendor/MSFT/HealthAttestation/AttestStatus
+              </LocURI>
+            </Target>
+          </Item>
+        </Get>
+        <Final/> 
+      </SyncBody>
+    </SyncML>
+
+<p>Sample Data:</p>
+
+     If Successful: 0
+     If Failed: A corresponding HRESULT error code
+     Example: 0x80072efd,  WININET_E_CANNOT_CONNECT
+
+<a href="" id="getAttestReport"></a>**GetAttestReport**
+<p>Node type: GET
+This node will retrieve the attestation report per the call made by the TriggerAttestation, if there is any, for the given MDM provider. The report is stored in a registry key in the respective MDM enrollment store.
+</p>
+
+<p>Templated SyncML Call:</p>
+
+     <SyncML xmlns="SYNCML:SYNCML1.2">
+       <SyncBody>
+         <Get>
+           <Item>
+             <Target>
+               <LocURI>
+                 ./Device/Vendor/MSFT/HealthAttestation/GetAttestReport
+               </LocURI>
+             </Target>
+           </Item>
+         </Get>
+         <Final/> 
+       </SyncBody>
+     </SyncML>
+
+<p>Sample data:</p>
+
+     If Success:
+     JWT token: aaaaaaaaaaaaa.bbbbbbbbbbbbb.cccccccccc
+     If failed:
+     Previously cached report if available (the token may have already expired per the attestation policy).
+     OR Sync ML 404 error if not cached report available.
+
+<a href="" id="getServiceCorrelationIDs"></a>**GetServiceCorrelationIDs**
+<p>Node type: GET
+This node will retrieve the service generated correlation IDs for the given MDM provider. If there are more than one correlation id, they are separated by “;” in the string.
+</p>
+<p>Templated SyncML Call:</p>
+
+     <SyncML xmlns="SYNCML:SYNCML1.2">
+       <SyncBody>
+         <Get>
+           <Item>
+             <Target>
+               <LocURI>
+                 ./Device/Vendor/MSFT/HealthAttestation/GetServiceCorrelationIDs
+               </LocURI>
+             </Target>
+           </Item>
+         </Get>
+         <Final/> 
+       </SyncBody>
+     </SyncML>
+
+<p>Sample data:</p>
+
+    If success:
+    GUID returned by the attestation service: 1k9+vQOn00S8ZK33;CMc969r1JEuHwDpM
+    If Trigger Attestation call failed and no previous data is present. The field remains empty.
+    Otherwise, the last service correlation id will be returned. In a successful attestation there are two 
+    calls between client and MAA and for each call the GUID is separated by semicolon.
+
+> **_Note:_** MAA CSP nodes are available on arm64 but is not currently supported.
+
+
+### MAA CSP Intergation Steps
+<ol>
+<li>Setup a MAA provider instance:<br>
+MAA instance can be created following the steps here <a href="https://docs.microsoft.com/en-us/azure/attestation/quickstart-portal" id="quickstartsetup">Quickstart: Set up Azure Attestation by using the Azure portal | Microsoft Docs.</a></li>
+<br><li>Update the provider with an appropriate policy:<br>
+The MAA instance should be updated with an appropriate policy. <a href="https://docs.microsoft.com/en-us/azure/attestation/claim-rule-grammar" id="policy">How to author an Azure Attestation policy | Microsoft Docs</a>
+<br>A Sample attestation policy:
+
+```
+version=1.2;
+
+configurationrules{
+};
+
+authorizationrules { 
+    => permit();
+};
+
+issuancerules{
+
+// SecureBoot enabled 
+c:[type == "events", issuer=="AttestationService"] => add(type = "efiConfigVariables", value = JmesPath(c.value, "Events[?EventTypeString == 'EV_EFI_VARIABLE_DRIVER_CONFIG' && ProcessedData.VariableGuid == '8BE4DF61-93CA-11D2-AA0D-00E098032B8C']"));
+c:[type == "efiConfigVariables", issuer=="AttestationPolicy"]=> issue(type = "secureBootEnabled", value = JsonToClaimValue(JmesPath(c.value, "[?ProcessedData.UnicodeName == 'SecureBoot'] | length(@) == `1` && @[0].ProcessedData.VariableData == 'AQ'")));
+![type=="secureBootEnabled", issuer=="AttestationPolicy"] => issue(type="secureBootEnabled", value=false);
+
+// Retrieve bool properties
+c:[type=="events", issuer=="AttestationService"] => add(type="boolProperties", value=JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && (PcrIndex == `12` || PcrIndex == `13` || PcrIndex == `19` || PcrIndex == `20`)].ProcessedData.EVENT_TRUSTBOUNDARY"));
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="codeIntegrityEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_CODEINTEGRITY")));
+c:[type=="codeIntegrityEnabledSet", issuer=="AttestationPolicy"] => issue(type="codeIntegrityEnabled", value=ContainsOnlyValue(c.value, true));
+![type=="codeIntegrityEnabled", issuer=="AttestationPolicy"] => issue(type="codeIntegrityEnabled", value=false);
+
+// Bitlocker Boot Status, The first non zero measurement or zero.
+c:[type=="events", issuer=="AttestationService"] => add(type="srtmDrtmEventPcr", value=JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && (PcrIndex == `12` || PcrIndex == `19`)].ProcessedData.EVENT_TRUSTBOUNDARY"));
+c:[type=="srtmDrtmEventPcr", issuer=="AttestationPolicy"] => issue(type="bitlockerEnabledValue", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_BITLOCKER_UNLOCK | @[? Value != `0`].Value | @[0]")));
+[type=="bitlockerEnabledValue"] => issue(type="bitlockerEnabled", value=true);
+![type=="bitlockerEnabledValue"] => issue(type="bitlockerEnabled", value=false);
+
+// Elam Driver (windows defender) Loaded
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="elamDriverLoaded", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_LOADEDMODULE_AGGREGATION[] | [? EVENT_IMAGEVALIDATED == `true` && (equals_ignore_case(EVENT_FILEPATH, '\\windows\\system32\\drivers\\wdboot.sys') || equals_ignore_case(EVENT_FILEPATH, '\\windows\\system32\\drivers\\wd\\wdboot.sys'))] | @ != `null`")));
+[type=="elamDriverLoaded", issuer=="AttestationPolicy"] => issue(type="WindowsDefenderElamDriverLoaded", value=true);
+![type=="elamDriverLoaded", issuer=="AttestationPolicy"] => issue(type="WindowsDefenderElamDriverLoaded", value=false);
+
+// Boot debugging
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="bootDebuggingEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_BOOTDEBUGGING")));
+c:[type=="bootDebuggingEnabledSet", issuer=="AttestationPolicy"] => issue(type="bootDebuggingDisabled", value=ContainsOnlyValue(c.value, false));
+![type=="bootDebuggingDisabled", issuer=="AttestationPolicy"] => issue(type="bootDebuggingDisabled", value=false);
+
+// Kernel Debugging
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="osKernelDebuggingEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_OSKERNELDEBUG")));
+c:[type=="osKernelDebuggingEnabledSet", issuer=="AttestationPolicy"] => issue(type="osKernelDebuggingDisabled", value=ContainsOnlyValue(c.value, false));
+![type=="osKernelDebuggingDisabled", issuer=="AttestationPolicy"] => issue(type="osKernelDebuggingDisabled", value=false);
+
+// DEP Policy
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => issue(type="depPolicy", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_DATAEXECUTIONPREVENTION.Value | @[-1]")));
+![type=="depPolicy"] => issue(type="depPolicy", value=0);
+
+// Test Signing
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="testSigningEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_TESTSIGNING")));
+c:[type=="testSigningEnabledSet", issuer=="AttestationPolicy"] => issue(type="testSigningDisabled", value=ContainsOnlyValue(c.value, false));
+![type=="testSigningDisabled", issuer=="AttestationPolicy"] => issue(type="testSigningDisabled", value=false);
+
+// Flight Signing
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="flightSigningEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_FLIGHTSIGNING")));
+c:[type=="flightSigningEnabledSet", issuer=="AttestationPolicy"] => issue(type="flightSigningNotEnabled", value=ContainsOnlyValue(c.value, false));
+![type=="flightSigningNotEnabled", issuer=="AttestationPolicy"] => issue(type="flightSigningNotEnabled", value=false);
+
+// VSM enabled
+c:[type=="events", issuer=="AttestationService"] => add(type="srtmDrtmEventPcr", value=JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && (PcrIndex == `12` || PcrIndex == `19`)].ProcessedData.EVENT_TRUSTBOUNDARY"));
+c:[type=="srtmDrtmEventPcr", issuer=="AttestationPolicy"] => add(type="vbsEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_VBS_VSM_REQUIRED")));
+c:[type=="srtmDrtmEventPcr", issuer=="AttestationPolicy"] => add(type="vbsEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_VBS_MANDATORY_ENFORCEMENT")));
+c:[type=="vbsEnabledSet", issuer=="AttestationPolicy"] => issue(type="vbsEnabled", value=ContainsOnlyValue(c.value, true));
+![type=="vbsEnabled", issuer=="AttestationPolicy"] => issue(type="vbsEnabled", value=false);
+c:[type=="vbsEnabled", issuer=="AttestationPolicy"] => issue(type="vbsEnabled", value=c.value);
+
+// HVCI
+c:[type=="srtmDrtmEventPcr", issuer=="AttestationPolicy"] => add(type="hvciEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_VBS_HVCI_POLICY | @[?String == 'HypervisorEnforcedCodeIntegrityEnable'].Value")));
+c:[type=="hvciEnabledSet", issuer=="AttestationPolicy"] => issue(type="hvciEnabled", value=ContainsOnlyValue(c.value, 1));
+![type=="hvciEnabled", issuer=="AttestationPolicy"] => issue(type="hvciEnabled", value=false);
+
+// IOMMU
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="iommuEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_VBS_IOMMU_REQUIRED")));
+c:[type=="iommuEnabledSet", issuer=="AttestationPolicy"] => issue(type="iommuEnabled", value=ContainsOnlyValue(c.value, true));
+![type=="iommuEnabled", issuer=="AttestationPolicy"] => issue(type="iommuEnabled", value=false);
+
+// Find the Boot Manager SVN, this is measured as part of a sequence and find the various measurements
+// Find the first EV_SEPARATOR in PCR 12, 13, Or 14
+c:[type=="events", issuer=="AttestationService"] => add(type="evSeparatorSeq", value=JmesPath(c.value, "Events[? EventTypeString == 'EV_SEPARATOR' && (PcrIndex == `12` || PcrIndex == `13` || PcrIndex == `14`)] | @[0].EventSeq"));
+c:[type=="evSeparatorSeq", value != "null", issuer=="AttestationPolicy"] => add(type="beforeEvSepClause", value=AppendString(AppendString("Events[? EventSeq < `", c.value), "`"));
+[type=="evSeparatorSeq", value=="null", issuer=="AttestationPolicy"] => add(type="beforeEvSepClause", value="Events[? `true` "); 
+
+// Find the first EVENT_APPLICATION_SVN. 
+c:[type=="beforeEvSepClause", issuer=="AttestationPolicy"] => add(type="bootMgrSvnSeqQuery", value=AppendString(c.value, " && EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `12` && ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_APPLICATION_SVN] | @[0].EventSeq"));
+c1:[type=="bootMgrSvnSeqQuery", issuer=="AttestationPolicy"] && c2:[type=="events", issuer=="AttestationService"] => add(type="bootMgrSvnSeq", value=JmesPath(c2.value, c1.value));
+c:[type=="bootMgrSvnSeq", value!="null", issuer=="AttestationPolicy"] => add(type="bootMgrSvnQuery", value=AppendString(AppendString("Events[? EventSeq == `", c.value), "`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_APPLICATION_SVN | @[0]"));
+
+// The first EVENT_APPLICATION_SVN. That value is the Boot Manager SVN
+c1:[type=="bootMgrSvnQuery", issuer=="AttestationPolicy"] && c2:[type=="events", issuer=="AttestationService"] => issue(type="bootMgrSvn", value=JsonToClaimValue(JmesPath(c2.value, c1.value)));
+
+// OS Rev List Info
+c:[type=="events", issuer=="AttestationService"] => issue(type="osRevListInfo", value=JsonToClaimValue(JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `13`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_OS_REVOCATION_LIST.RawData | @[0]")));
+
+// Safe mode
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="safeModeEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_SAFEMODE")));
+c:[type=="safeModeEnabledSet", issuer=="AttestationPolicy"] => issue(type="notSafeMode", value=ContainsOnlyValue(c.value, false));
+![type=="notSafeMode", issuer=="AttestationPolicy"] => issue(type="notSafeMode", value=true);
+
+// Win PE
+c:[type=="boolProperties", issuer=="AttestationPolicy"] => add(type="winPEEnabledSet", value=JsonToClaimValue(JmesPath(c.value, "[*].EVENT_WINPE")));
+c:[type=="winPEEnabledSet", issuer=="AttestationPolicy"] => issue(type="notWinPE", value=ContainsOnlyValue(c.value, false));
+![type=="notWinPE", issuer=="AttestationPolicy"] => issue(type="notWinPE", value=true);
+
+// CI Policy
+c:[type=="events", issuer=="AttestationService"] => issue(type="codeIntegrityPolicy", value=JsonToClaimValue(JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `13`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_SI_POLICY[].RawData")));
+
+// Secure Boot Custom Policy
+c:[type=="events", issuer=="AttestationService"] => issue(type="secureBootCustomPolicy", value=JsonToClaimValue(JmesPath(c.value, "Events[? EventTypeString == 'EV_EFI_VARIABLE_DRIVER_CONFIG' && PcrIndex == `7` && ProcessedData.UnicodeName == 'CurrentPolicy' && ProcessedData.VariableGuid == '77FA9ABD-0359-4D32-BD60-28F4E78F784B'].ProcessedData.VariableData | @[0]")));
+
+// Find the first EV_SEPARATOR in PCR 12, 13, Or 14
+c:[type=="events", issuer=="AttestationService"] => add(type="evSeparatorSeq", value=JmesPath(c.value, "Events[? EventTypeString == 'EV_SEPARATOR' && (PcrIndex == `12` || PcrIndex == `13` || PcrIndex == `14`)] | @[0].EventSeq"));
+c:[type=="evSeparatorSeq", value != "null", issuer=="AttestationPolicy"] => add(type="beforeEvSepClause", value=AppendString(AppendString("Events[? EventSeq < `", c.value), "`"));
+[type=="evSeparatorSeq", value=="null", issuer=="AttestationPolicy"] => add(type="beforeEvSepClause", value="Events[? `true` "); // No restriction of EV_SEPARATOR in case it is not present
+
+//Finding the Boot App SVN
+// Find the first EVENT_TRANSFER_CONTROL with value 1 or 2 in PCR 12 which is before the EV_SEPARATOR
+c1:[type=="beforeEvSepClause", issuer=="AttestationPolicy"] && c2:[type=="bootMgrSvnSeq", value != "null", issuer=="AttestationPolicy"] => add(type="beforeEvSepAfterBootMgrSvnClause", value=AppendString(AppendString(AppendString(c1.value, "&& EventSeq >= `"), c2.value), "`"));
+c:[type=="beforeEvSepAfterBootMgrSvnClause", issuer=="AttestationPolicy"] => add(type="tranferControlQuery", value=AppendString(c.value, " && EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `12`&& (ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_TRANSFER_CONTROL.Value == `1` || ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_TRANSFER_CONTROL.Value == `2`)] | @[0].EventSeq"));
+c1:[type=="tranferControlQuery", issuer=="AttestationPolicy"] && c2:[type=="events", issuer=="AttestationService"] => add(type="tranferControlSeq", value=JmesPath(c2.value, c1.value));
+
+// Find the first non-null EVENT_MODULE_SVN in PCR 13 after the transfer control.
+c:[type=="tranferControlSeq", value!="null", issuer=="AttestationPolicy"] => add(type="afterTransferCtrlClause", value=AppendString(AppendString(" && EventSeq > `", c.value), "`"));
+c1:[type=="beforeEvSepClause", issuer=="AttestationPolicy"] && c2:[type=="afterTransferCtrlClause", issuer=="AttestationPolicy"] => add(type="moduleQuery", value=AppendString(AppendString(c1.value, c2.value), " && EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `13` && ((ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_LOADEDMODULE_AGGREGATION[].EVENT_MODULE_SVN | @[0]) || (ProcessedData.EVENT_LOADEDMODULE_AGGREGATION[].EVENT_MODULE_SVN | @[0]))].EventSeq | @[0]"));
+c1:[type=="moduleQuery", issuer=="AttestationPolicy"] && c2:[type=="events", issuer=="AttestationService"] => add(type="moduleSeq", value=JmesPath(c2.value, c1.value));
+
+// Find the first EVENT_APPLICATION_SVN after EV_EVENT_TAG in PCR 12. 
+c:[type=="moduleSeq", value!="null", issuer=="AttestationPolicy"] => add(type="applicationSvnAfterModuleClause", value=AppendString(AppendString(" && EventSeq > `", c.value), "`"));
+c1:[type=="beforeEvSepClause", issuer=="AttestationPolicy"] && c2:[type=="applicationSvnAfterModuleClause", issuer=="AttestationPolicy"] => add(type="bootAppSvnQuery", value=AppendString(AppendString(c1.value, c2.value), " && EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `12`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_APPLICATION_SVN | @[0]"));
+c1:[type=="bootAppSvnQuery", issuer=="AttestationPolicy"] && c2:[type=="events", issuer=="AttestationService"] => issue(type="bootAppSvn", value=JsonToClaimValue(JmesPath(c2.value, c1.value)));
+
+// Finding the Boot Rev List Info
+c:[type=="events", issuer=="AttestationService"] => issue(type="bootRevListInfo", value=JsonToClaimValue(JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `13`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_BOOT_REVOCATION_LIST.RawData | @[0]")));
+
+};
+```    
+</li>
+<br><li>Call TriggerAttestation with your rpid, AAD token and the attestURI:<br>
+Use the Attestation URL generated in step 1, and append the appropriate api version you want to hit. More information about the api version can be found here Attestation - Attest Tpm - REST API (Azure Azure Attestation) | Microsoft Docs</li>
+<br><li>Call GetAttestReport and decode and parse the report to ensure the attested report contains the required properties:<br>
+GetAttestReport return the signed attestation token as a JWT.The JWT can be decoded to parse the information per the attestation policy.
+<br>
+
+    
+    {
+      "typ": "JWT",
+      "alg": "RS256",
+      "x5c": [
+        "MIIE.....=",
+        "MIIG.....=",
+        "MIIF.....="
+      ],
+      "kid": "8FUer20z6wzf1rod044wOAFdjsg"
+    }.{
+      "nbf": 1633664812,
+      "exp": 1634010712,
+      "iat": 1633665112,
+      "iss": "https://contosopolicy.eus.attest.azure.net",
+      "jti": "2b63663acbcafefa004d20969991c0b1f063c9be",
+      "ver": "1.0",
+      "x-ms-ver": "1.0",
+      "rp_data": "AQIDBA",
+      "nonce": "AQIDBA",
+      "cnf": {
+        "jwk": {
+          "kty": "RSA",
+          "n": "yZGC3-1rFZBt6n6vRHjRjvrOYlH69TftIQWOXiEHz__viQ_Z3qxWVa4TfrUxiQyDQnxJ8-f8tBRmlunMdFDIQWhnew_rc3-UYMUPNcTQ0IkrLBDG6qDjFFeEAMbn8gqr0rRWu_Qt7Cb_Cq1upoEBkv0RXk8yR6JXmFIvLuSdewGs-xCWlHhd5w3n1rVk0hjtRk9ZErlbPXt74E5l-ZZQUIyeYEZ1FmbivOIL-2f6NnKJ-cR4cdhEU8i9CH1YV0r578ry89nGvBJ5u4_3Ib9Ragdmxm259npH53hpnwf0I6V-_ZhGPyF6LBVUG_7x4CyxuHCU20uI0vXKXJNlbj1wsQ",
+          "e": "AQAB"
+        }
+      },
+      "x-ms-policy-hash": "GiGQCTOylCohHt4rd3pEppD9arh5mXC3ifF1m1hONh0",
+      "WindowsDefenderElamDriverLoaded": true,
+      "bitlockerEnabled": true,
+      "bitlockerEnabledValue": 4,
+      "bootAppSvn": 1,
+      "bootDebuggingDisabled": true,
+      "bootMgrSvn": 1,
+      "bootRevListInfo": "gHWqR2F-1wEgAAAACwBxrZXHbaiuTuO0PSaJ7WQMF8yz37Z2ATgSNTTlRkwcTw",
+      "codeIntegrityEnabled": true,
+      "codeIntegrityPolicy": [
+        "AAABAAAAAQBWAAsAIAAAAHsAOABmAGIANAA4ADYANQBlAC0AZQA5ADAAYgAtADQANAA0AGYALQBiADUAYgA1AC0AZQAyAGEAYQA1ADEAZAA4ADkAMABmAGQAfQAuAEMASQBQAAAAVnW86ERqAg5n9QT1UKFr-bOP2AlNtBaaHXjZODnNLlk",
+        "AAAAAAAACgBWAAsAIAAAAHsAYgBjADQAYgBmADYAZAA3AC0AYwBjADYAMAAtADQAMABmADAALQA4ADYANAA0AC0AMQBlADYANAA5ADEANgBmADgAMQA4ADMAfQAuAEMASQBQAAAAQ7vOXuAbBRIMglSSg7g_LHNeHoR4GrY-M-2W5MNvf0o",
+        "AAAAAAAACgBWAAsAIAAAAHsAYgAzADEAOAA5ADkAOQBhAC0AYgAxADMAZQAtADQANAA3ADUALQBiAGMAZgBkAC0AMQBiADEANgBlADMAMABlADYAMAAzADAAfQAuAEMASQBQAAAALTmwU3eadNtg0GyAyKIAkYed127RJCSgmfFmO1jN_aI",
+        "AAAAAAAACgBWAAsAIAAAAHsAZgBlADgAMgBkADUAOAA5AC0ANwA3AGQAMQAtADQAYwA3ADYALQA5AGEANABhAC0AZQA0ADUANQA0ADYAOAA4ADkANAAxAGIAfQAuAEMASQBQAAAA8HGUwA85gHN_ThItTYtu6sw657gVuOb4fOhYl-YJRoc",
+        "AACRVwAACgAmAAsAIAAAAEQAcgBpAHYAZQByAFMAaQBQAG8AbABpAGMAeQAuAHAANwBiAAAAYcVuY0HdW4Iqr5B-6Sl85kwIXRG9bqr43pVhkirg4qM"
+      ],
+      "depPolicy": 0,
+      "flightSigningNotEnabled": false,
+      "hvciEnabled": true,
+      "iommuEnabled": true,
+      "notSafeMode": true,
+      "notWinPE": true,
+      "osKernelDebuggingDisabled": true,
+      "osRevListInfo": "gHLuW2F-1wEgAAAACwDLyDTUQILjdz_RfNlShVgNYT9EghL7ceMReWg9TuwdKA",
+      "secureBootEnabled": true,
+      "testSigningDisabled": true,
+      "vbsEnabled": true
+    }.[Signature]
+
+</li>
+</ol>
+
+### Learn More 
+<p>
+More information about TPM attestation can be found here. <a href="https://docs.microsoft.com/en-us/azure/attestation/" > Microsoft Azure Attestation </a>
+</p>
+
+## Windows 10 Device HealthAttestation
+
+### Terms
 
 **TPM (Trusted Platform Module)**
 <p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption and signing. </p>
@@ -173,7 +603,7 @@ The following is a list of functions performed by the Device HealthAttestation C
 </tbody>
 </table>
 
-## CSP diagram and node descriptions  
+### CSP diagram and node descriptions  
 
 
 The following shows the Device HealthAttestation configuration service provider in tree format.  
@@ -243,7 +673,7 @@ HealthAttestation
 <p>Added in Windows 10, version 1607 March service release. Returns a bitmask of information describing the state of TPM. It indicates whether the TPM of the device is in a ready and trusted state.</p>
 <p>Value type is integer. The supported operation is Get.</p>
 
-## **DHA-CSP integration steps**
+### **DHA-CSP integration steps**
 
 
 The following list of validation and development tasks are required for integrating the Microsoft Device Health Attestation feature with a Windows Mobile device management solution (MDM):
@@ -260,7 +690,7 @@ The following list of validation and development tasks are required for integrat
 
 Each step is described in detail in the following sections of this topic.
 
-## <a href="" id="verify-access"></a>**Step 1: Verify HTTPS access**
+### <a href="" id="verify-access"></a>**Step 1: Verify HTTPS access**
 
 
 Validate that both the MDM server and the device (MDM client) can access has.spserv.microsoft.com using the TCP protocol over port 443 (HTTPS).
@@ -313,7 +743,7 @@ SSL-Session:
 ```
 
 
-## <a href="" id="assign-trusted-dha-service"></a>**Step 2: Assign an enterprise trusted DHA-Service**
+### <a href="" id="assign-trusted-dha-service"></a>**Step 2: Assign an enterprise trusted DHA-Service**
 
 There are three types of DHA-Service:
 - Device Health Attestation – Cloud (owned and operated by Microsoft)
@@ -339,7 +769,7 @@ The following example shows a sample call that instructs a managed device to com
 ```
 
 
-## <a href="" id="prepare-health-data"></a>**Step 3: Instruct client to prepare health data for verification**
+### <a href="" id="prepare-health-data"></a>**Step 3: Instruct client to prepare health data for verification**
 
 
 Send a SyncML call to start collection of the DHA-Data.
@@ -366,7 +796,7 @@ The following example shows a sample call that triggers collection and verificat
 </Get>
 ```
 
-## <a href="" id="take-action-client-response"></a>**Step 4: Take action based on the clients response**
+### <a href="" id="take-action-client-response"></a>**Step 4: Take action based on the clients response**
 
 
 After the client receives the health attestation request, it sends a response. The following list describes the responses, along with a recommended action to take.
@@ -394,7 +824,7 @@ Here is a sample alert that is issued by DHA_CSP:
 ```
 - If the response to the status node is not 0, 1 or 3, then troubleshoot the issue. For the complete list of status codes see [Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes).
 
-## <a href="" id="forward-health-attestation"></a>**Step 5: Instruct the client to forward health attestation data for verification**
+### <a href="" id="forward-health-attestation"></a>**Step 5: Instruct the client to forward health attestation data for verification**
 
 
 Create a call to the **Nonce**, **Certificate** and **CorrelationId** nodes, and pick up an encrypted payload that includes a health certificate and related data from the device.
@@ -431,7 +861,7 @@ Here is an example:
 </Get>
 ```
 
-## <a href="" id="forward-data-to-has"></a>**Step 6: Forward device health attestation data to DHA-service**
+### <a href="" id="forward-data-to-has"></a>**Step 6: Forward device health attestation data to DHA-service**
 
 
 In response to the request that was sent in the previous step, the MDM client forwards an XML formatted blob (response from ./Vendor/MSFT/HealthAttestation/Certificate node) and a call identifier called CorrelationId (response  to ./Vendor/MSFT/HealthAttestation/CorrelationId node).
@@ -455,14 +885,14 @@ When the MDM-Server receives the above data, it must:
     - DHA-OnPrem or DHA-EMC: https://FullyQualifiedDomainName-FDQN/DeviceHealthAttestation/ValidateHealthCertificate/v3
 
 
-## <a href="" id="receive-has-response"></a>**Step 7: Receive response from the DHA-service**
+### <a href="" id="receive-has-response"></a>**Step 7: Receive response from the DHA-service**
 
 When the Microsoft Device Health Attestation Service receives a request for verification, it performs the following steps:
 - Decrypts the encrypted data it receives.
 - Validates the data it has received 
 - Creates a report, and shares the evaluation results to the MDM server via SSL in XML format 
 
-## <a href="" id="take-policy-action"></a>**Step 8: Take appropriate policy action based on evaluation results**
+### <a href="" id="take-policy-action"></a>**Step 8: Take appropriate policy action based on evaluation results**
 
 
 After the MDM server receives the verified data, the information can be used to make policy decisions by evaluating the data. Some possible actions would be:
@@ -816,7 +1246,7 @@ Each of these are described in further detail in the following sections, along w
 
 <p>In case of a detected issue a list of impacted DHA-report elements will be listed under the HealthStatusMismatchFlags attribute.</p>
 
-## **Device HealthAttestation CSP status and error codes**
+### **Device HealthAttestation CSP status and error codes**
 
 <table>
     <tr>
@@ -1027,7 +1457,7 @@ Each of these are described in further detail in the following sections, along w
 
 </table>
 
-## DHA-Report V3 schema
+### DHA-Report V3 schema
 
 
 ```xml
@@ -1131,7 +1561,7 @@ Each of these are described in further detail in the following sections, along w
 </xs:schema>
 ```
 
-## DHA-Report example
+### DHA-Report example
 
 
 ```xml
