@@ -42,9 +42,6 @@ If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), 
 > [!NOTE]
 > Backing up TPM to Active Directory was supported only on Windows 10 version 1507 and 1511.
 
->[!NOTE]
->Even though it is not a BitLocker requirement, we recommend configuring BitLocker to store the recovery key and TPM owner information in Active Directory. For more information about these features, see [Backing Up BitLocker and TPM Recovery Information to AD DS](/previous-versions/windows/it-pro/windows-7/dd875529(v=ws.10)). If you have access to Microsoft BitLocker Administration and Monitoring (MBAM), which is part of Microsoft Desktop Optimization Pack (MDOP), you have additional management features for BitLocker.
-
 For the purposes of this topic, we will use DC01, a domain controller that is a member of the domain contoso.com for the fictitious Contoso Corporation. For more details on the setup for this topic, see [Deploy Windows 10 with the Microsoft Deployment Toolkit](./prepare-for-windows-deployment-with-mdt.md).
 
 ## Configure Active Directory for BitLocker
