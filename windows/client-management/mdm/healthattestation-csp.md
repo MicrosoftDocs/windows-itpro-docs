@@ -14,7 +14,7 @@ ms.date:
 
 # Device HealthAttestation CSP
 
-The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT admins to assess if a device is booted to a trusted and compliant state, and to take enterprise policy actions.
+The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT adminstrators to assess if a device is booted to a trusted and compliant state, and to take enterprise policy actions.
 
 The following is a list of functions performed by the Device HealthAttestation CSP:
 
@@ -39,7 +39,7 @@ The attestation report provides a health assessment of the boot-time properties 
 **MAA-Session (Microsoft Azure Attestaiton service based device HealthAttestation session)**
 <p>The Microsoft Azure Attestaiton service based device HealthAttestation session (MAA-Session) describes the end-to-end communication flow that is performed in one device health attestation session.</p>
 
-**MAA-CSP (Microsoft Azure Attestaiton based Configuration Service Provider)**
+**MAA-CSP Nodes (Microsoft Azure Attestaiton based Configuration Service Provider)**
 <p>The Configuration Service Provider nodes added to Windhows 11 to integrate with Microsoft Azure Attestation Service.</p>
 <p>The following list of operations is performed by MAA-CSP:</p>
 <ul>
@@ -50,7 +50,7 @@ The attestation report provides a health assessment of the boot-time properties 
 </ul>
 
 **MAA endpoint**
-Microsoft Azure attestation service is an azure resource, and every intance of the service gets admin configured URL. The URI generated is unique in nature and for the puposes of device health attestation is known as the MAA endpoint.
+Microsoft Azure attestation service is an azure resource, and every intance of the service gets adminintrator configured URL. The URI generated is unique in nature and for the puposes of device health attestation is known as the MAA endpoint.
 
 **JWT (JSON Web Token)**
 JSON Web Token (JWT) is an open standard RFC7519 method for securely transmitting information between parties as a JavaScript Object Notation (JSON) object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret or a public/private key pair.
@@ -62,8 +62,8 @@ JSON Web Token (JWT) is an open standard RFC7519 method for securely transmittin
 <br>
 <p>Attestation flow can be broadly in three main steps:
 <ul>
-    <li>An instancne of the Azure Attestation service is setup with an appropriate attestation policy. The attestation policy allows the MDM provider to attest to particular events in the boot as well security features.</li>
-    <li>The MDM provider triggers a call to the attestation service, the device then performs an attestation check keeping the report ready to be retrived.</li>
+    <li>An instance of the Azure Attestation service is setup with an appropriate attestation policy. The attestation policy allows the MDM provider to attest to particular events in the boot as well security features.</li>
+    <li>The MDM provider triggers a call to the attestation service, the device then performs an attestation check keeping the report ready to be retrieved.</li>
     <li>The MDM provider after verifying the token is coming from the attestation service it can parse the attestation token to reflect on the attested state of the device.</li>
 </ul>
 The protocol implemented can be found here:<a href="https://docs.microsoft.com/en-us/azure/attestation/virtualization-based-security-protocol" id="attestationprotocol"> Attestation Protocol</a>
@@ -98,7 +98,7 @@ HealthAttestation
 
 <a href="" id="triggerAttestation"></a>**TriggerAttestation** (Required)  
 <p>Node type: EXECUTE
-This node will trigger attestation flow by launching an attestation process. If a process is already running, this node will return code 202 indicating the request is received and being processed. Otherwise, an error will be returned.
+This node will trigger attestation flow by launching an attestation process. If the attestation process is launched successfully, this node will return code 202 indicating the request is received and being processed. Otherwise, an error will be returned.
 </p>
 
 <p>Templated SyncML Call:</p>
@@ -231,7 +231,8 @@ This node will retrieve the service generated correlation IDs for the given MDM 
     If success:
     GUID returned by the attestation service: 1k9+vQOn00S8ZK33;CMc969r1JEuHwDpM
     If Trigger Attestation call failed and no previous data is present. The field remains empty.
-    Otherwise, the last service correlation id will be returned.
+    Otherwise, the last service correlation id will be returned. In a successful attestation there are two 
+    calls between client and MAA and for each call the GUID is separated by semicolon.
 
 > **_Note:_** MAA CSP nodes are available on arm64 but is not currently supported.
 
@@ -450,7 +451,7 @@ GetAttestReport return the signed attestation token as a JWT.The JWT can be deco
 More information about TPM attestation can be found here. <a href="https://docs.microsoft.com/en-us/azure/attestation/" > Microsoft Azure Attestation </a>
 </p>
 
-## Windhows 10 Device HealthAttestation
+## Windows 10 Device HealthAttestation
 
 ### Terms
 
