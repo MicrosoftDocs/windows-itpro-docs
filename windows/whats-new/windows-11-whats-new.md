@@ -138,11 +138,14 @@ For more information on the security features you can configure, manage, and enf
 
 ## Use your same apps, and new apps, improved
 
-- Starting with Windows 11, users can download and install **Android apps** from the Microsoft Store. This feature is called the **Windows Subsystem for Android**, and allows users to use Android apps on their Windows devices, similar to other apps installed from the Microsoft Store.
+- Starting with Windows 11, users in the [Windows Insider program](https://insider.windows.com/) can download and install **Android apps** from the Microsoft Store. This feature is called the **Windows Subsystem for Android**, and allows users to use Android apps on their Windows devices, similar to other apps installed from the Microsoft Store.
 
   Users open the Microsoft Store, install the **Amazon Appstore** app, and sign in with their Amazon account. When they sign in, they can search, download, and install Android apps.
 
-  For more information, see [Windows Subsystem for Android developer information](/windows/android/wsa).
+  For more information, see:
+
+  - [Windows Subsystem for Android](https://support.microsoft.com/windows/abed2335-81bf-490a-92e5-fe01b66e5c48)
+  - [Windows Subsystem for Android developer information](/windows/android/wsa)
 
 - Your Windows 10 apps will also work on Windows 11. **[App Assure](https://www.microsoft.com/fasttrack/microsoft-365/app-assure)** is also available if there are some issues.
 
