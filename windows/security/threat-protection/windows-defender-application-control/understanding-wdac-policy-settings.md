@@ -10,7 +10,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
-author: Robert Wait
+author: Robert Waite
 ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
