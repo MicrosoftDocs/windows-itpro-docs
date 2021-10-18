@@ -28,16 +28,23 @@ The security audit policy settings under **Security Settings\\Advanced Audit Pol
 
 -   A group administrator has modified settings or data on servers that contain finance information.
 -   An employee within a defined group has accessed an important file.
--   The correct system access control list (SACL) is applied to every file and folder or registry key on a computer or file share as a verifiable safeguard against undetected access.
+-   The correct system access control list (SACL) - as a verifiable safeguard against undetected access - is applied to either of the following:
+    -  every file and folder 
+    -  registry key on a computer
+    -  file share.
 
 You can access these audit policy settings through the Local Security Policy snap-in (secpol.msc) on the local computer or by using Group Policy.
 
-These advanced audit policy settings allow you to select only the behaviors that you want to monitor. You can exclude audit results for behaviors that are of little or no concern to you, or behaviors that create an excessive number of log entries. In addition, because security audit policies can be applied by using domain Group Policy Objects, audit policy settings can be modified, tested, and deployed to selected users and groups with relative simplicity.
+These advanced audit policy settings allow you to select only the behaviors that you want to monitor. You can exclude audit results for the following types of behaviors:
+- That are of little or no concern to you
+- That create an excessive number of log entries. 
+
+In addition, because security audit policies can be applied by using domain Group Policy Objects, audit policy settings can be modified, tested, and deployed to selected users and groups with relative simplicity.
 Audit policy settings under **Security Settings\\Advanced Audit Policy Configuration** are available in the following categories:
 
 ## Account Logon
 
-Configuring policy settings in this category can help you document attempts to authenticate account data on a domain controller or on a local Security Accounts Manager (SAM). Unlike Logon and Logoff policy settings and events, which track attempts to access a particular computer, settings and events in this category focus on the account database that is used. This category includes the following subcategories:
+Configuring policy settings in this category can help you document attempts to authenticate account data on a domain controller or on a local Security Accounts Manager (SAM). Unlike Logon and Logoff policy settings and events, Account Logon settings and events focus on the account database that is used. This category includes the following subcategories:
 
 -   [Audit Credential Validation](audit-credential-validation.md)
 -   [Audit Kerberos Authentication Service](audit-kerberos-authentication-service.md)
@@ -57,7 +64,11 @@ The security audit policy settings in this category can be used to monitor chang
 
 ## Detailed Tracking
 
-Detailed Tracking security policy settings and audit events can be used to monitor the activities of individual applications and users on that computer, and to understand how a computer is being used. This category includes the following subcategories:
+Detailed Tracking security policy settings and audit events can be used for the following purposes:
+- To monitor the activities of individual applications and users on that computer
+- To understand how a computer is being used. 
+
+This category includes the following subcategories:
 
 - [Audit DPAPI Activity](audit-dpapi-activity.md)
 - [Audit PNP activity](audit-pnp-activity.md)
@@ -93,7 +104,7 @@ Logon/Logoff security policy settings and audit events allow you to track attemp
 
 ## Object Access
 
-Object Access policy settings and audit events allow you to track attempts to access specific objects or types of objects on a network or computer. To audit attempts to access a file, directory, registry key, or any other object, you must enable the appropriate Object Access auditing subcategory for success and/or failure events. For example, the file system subcategory needs to be enabled to audit file operations, and the Registry subcategory needs to be enabled to audit registry accesses.
+Object Access policy settings and audit events allow you to track attempts to access specific objects or types of objects on a network or computer. To audit attempts to access a file, directory, registry key, or any other object, enable the appropriate Object Access auditing subcategory for success and/or failure events. For example, the file system subcategory needs to be enabled to audit file operations; the Registry subcategory needs to be enabled to audit registry accesses.
 
 Proving that these audit policies are in effect to an external auditor is more difficult. There is no easy way to verify that the proper SACLs are set on all inherited objects. To address this issue, see [Global Object Access Auditing](#global-object-access-auditing).
 
@@ -116,7 +127,7 @@ This category includes the following subcategories:
 
 ## Policy Change
 
-Policy Change audit events allow you to track changes to important security policies on a local system or network. Because policies are typically established by administrators to help secure network resources, monitoring changes or attempts to change these policies can be an important aspect of security management for a network. This category includes the following subcategories:
+Policy Change audit events allow you to track changes to important security policies on a local system or network. Because policies are typically established by administrators to help secure network resources, tracking changes (or its attempts) to these policies is an important aspect of security management for a network. This category includes the following subcategories:
 
 -   [Audit Audit Policy Change](audit-audit-policy-change.md)
 -   [Audit Authentication Policy Change](audit-authentication-policy-change.md)
@@ -135,7 +146,11 @@ Permissions on a network are granted for users or computers to complete defined 
 
 ## System
 
-System security policy settings and audit events allow you to track system-level changes to a computer that are not included in other categories and that have potential security implications. This category includes the following subcategories:
+System security policy settings and audit events allow you to track the following types of system-level changes to a computer:
+- Not included in other categories
+- Have potential security implications.
+
+This category includes the following subcategories:
 
 -   [Audit IPsec Driver](audit-ipsec-driver.md)
 -   [Audit Other System Events](audit-other-system-events.md)
@@ -146,9 +161,11 @@ System security policy settings and audit events allow you to track system-level
 ## Global Object Access Auditing
 
 Global Object Access Auditing policy settings allow administrators to define computer system access control lists (SACLs) per object type for the file system or for the registry. The specified SACL is then automatically applied to every object of that type.
-Auditors will be able to prove that every resource in the system is protected by an audit policy by viewing the contents of the Global Object Access Auditing policy settings. For example, if auditors see a policy setting called "Track all changes made by group administrators," they know that this policy is in effect.
+Auditors can prove that every resource in the system is protected by an audit policy. They can do this task by viewing the contents of the Global Object Access Auditing policy settings. For example, if auditors see a policy setting called "Track all changes made by group administrators," they know that this policy is in effect.
 
-Resource SACLs are also useful for diagnostic scenarios. For example, setting the Global Object Access Auditing policy to log all the activity for a specific user and enabling the policy to track "Access denied" events for the file system or registry can help administrators quickly identify which object in a system is denying a user access.
+Resource SACLs are also useful for diagnostic scenarios. For example, administrators quickly identify which object in a system is denying a user access by:
+- Setting the Global Object Access Auditing policy to log all the activities for a specific user 
+- Enabling the policy to track "Access denied" events for the file system or registry can help
 
 > [!NOTE]
 > If a file or folder SACL and a Global Object Access Auditing policy setting (or a single registry setting SACL and a Global Object Access Auditing policy setting) are configured on a computer, the effective SACL is derived from combining the file or folder SACL and the Global Object Access Auditing policy. This means that an audit event is generated if an activity matches the file or folder SACL or the Global Object Access Auditing policy.
