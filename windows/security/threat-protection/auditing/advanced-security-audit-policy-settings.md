@@ -20,7 +20,9 @@ ms.technology: windows-sec
 
 # Advanced security audit policy settings
 
-This reference for IT professionals provides information about the advanced audit policy settings that are available in Windows and the audit events that they generate.
+This reference for IT professionals provides information about:
+- The advanced audit policy settings available in Windows
+- The audit events that these settings generate.
 
 The security audit policy settings under **Security Settings\\Advanced Audit Policy Configuration** can help your organization audit compliance with important business-related and security-related rules by tracking precisely defined activities, such as:
 
