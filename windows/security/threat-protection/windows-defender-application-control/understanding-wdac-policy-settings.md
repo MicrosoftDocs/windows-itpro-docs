@@ -19,7 +19,7 @@ ms.technology: mde
 ---
 
 # Understanding WDAC Policy Settings
-Windows Defender Application Control (WDAC) Policies expose a Settings section where policy authors can define arbitrary secure settings. Secure Settings provide local admin tamper-free settings for secure boot enabled systems, with policy signing enabled. Settings consist of a Provider, Key, and ValueName, as well as a setting value. Setting values can be of type boolean, ulong, binary, and string. Applications can query for policy settings using [WldpQuerySecurityPolicy]. <br/>
+Windows Defender Application Control (WDAC) Policies expose a Settings section where policy authors can define arbitrary secure settings. Secure Settings provide local admin tamper-free settings for secure boot enabled systems, with policy signing enabled. Settings consist of a Provider, Key, and ValueName, as well as a setting value. Setting values can be of type boolean, ulong, binary, and string. Applications can query for policy settings using WldpQuerySecurityPolicy. <br/>
 
 An example settings section of a WDAC Policy:
 ```xml
