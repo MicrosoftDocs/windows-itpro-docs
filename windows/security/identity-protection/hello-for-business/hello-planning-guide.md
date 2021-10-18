@@ -74,26 +74,31 @@ The hybrid deployment model is for organizations that:
 - Use applications hosted in Azure Active Directory, and want a single sign-in user experience for both on-premises and Azure Active Directory resources
 
 > [!Important]
-> Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models.</br>
-> **Requirements:**</br>
-> Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903</br>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+> Hybrid deployments support non-destructive PIN reset that works with both the certificate trust and key trust models.
+>
+> **Requirements:**
+> - Microsoft PIN Reset Service - Windows 10, versions 1709 to 1809, Enterprise Edition. There is no licensing requirement for this service since version 1903
+> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 ##### On-premises
 The on-premises deployment model is for organizations that do not have cloud identities or use applications hosted in Azure Active Directory.
 
 > [!Important]
-> On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.</br>
-> **Requirements:**</br>
-> Reset from settings - Windows 10, version 1703, Professional</br>
-> Reset above lock screen - Windows 10, version 1709, Professional</br>
-> Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
+> On-premises deployments support destructive PIN reset that works with both the certificate trust and the key trust models.
+>
+> **Requirements:**
+> - Reset from settings - Windows 10, version 1703, Professional
+> - Reset above lock screen - Windows 10, version 1709, Professional
+> - Reset above lock screen (_I forgot my PIN_ link) - Windows 10, version 1903
 
 It's fundamentally important to understand which deployment model to use for a successful deployment.  Some aspects of the deployment may have already been decided for you based on your current infrastructure.
 
 #### Trust types
 
 A deployment's trust type defines how each Windows Hello for Business client authenticates to the on-premises Active Directory.  There are two trust types: key trust and certificate trust.
+
+> [!NOTE]
+> Windows Hello for Business is introducing a new trust model called cloud trust in early 2022. This trust model will enable deployment of Windows Hello for Business using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). More information will be available on Windows Hello for Business cloud trust once it is generally available.
 
 The key trust type does not require issuing authentication certificates to end users. Users authenticate using a hardware-bound key created during the built-in provisioning experience. This requires an adequate distribution of Windows Server 2016 or later domain controllers relative to your existing authentication and the number of users included in your Windows Hello for Business deployment. Read the [Planning an adequate number of Windows Server 2016 or later Domain Controllers for Windows Hello for Business deployments](hello-adequate-domain-controllers.md) to learn more.
 
