@@ -37,12 +37,14 @@
           href: windows-diagnostic-data-1703.md
     - name: Windows 10 diagnostic data events and fields collected through the limit enhanced diagnostic data policy
       href: enhanced-diagnostic-data-windows-analytics-events-and-fields.md
-    - name: Manage Windows connection endpoints
+    - name: Manage Windows connected experiences
       items: 
         - name: Manage connections from Windows operating system components to Microsoft services
           href: manage-connections-from-windows-operating-system-components-to-microsoft-services.md
         - name: Manage connections from Windows operating system components to Microsoft services using MDM
           href: manage-connections-from-windows-operating-system-components-to-microsoft-services-using-MDM.md
+        - name: Essential services and connected experiences for Windows
+          href: essential-services-and-connected-experiences.md
         - name: Connection endpoints for Windows 11
           href: manage-windows-11-endpoints.md
         - name: Connection endpoints for Windows 10, version 21H1

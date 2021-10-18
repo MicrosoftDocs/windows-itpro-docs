@@ -5,8 +5,8 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
-ms.date: 06/02/2021
+author: dansimp
+ms.date: 10/14/2021
 ms.reviewer:
 manager: dansimp
 ---
@@ -214,7 +214,7 @@ Requirements:
 
    If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain.
 
-6. Wait for the SYSVOL DFSR replication to be completed and then restart the Domain Controller for the policy to be available.
+6. Wait for the SYSVOL DFSR replication to be completed for the policy to be available.
 
 This procedure will work for any future version as well.
 
