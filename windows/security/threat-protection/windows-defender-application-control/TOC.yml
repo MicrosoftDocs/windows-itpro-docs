@@ -22,6 +22,8 @@
               href: understand-windows-defender-application-control-policy-design-decisions.md
             - name: Understand WDAC policy rules and file rules
               href: select-types-of-rules-to-create.md
+            - name: Understand WDAC secure settings
+              href: understand-wdac-policy-settings.md
               items: 
                 - name: Allow apps installed by a managed installer
                   href: configure-authorized-apps-deployed-with-a-managed-installer.md

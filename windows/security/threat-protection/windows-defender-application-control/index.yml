@@ -69,6 +69,8 @@ landingContent:
         links:
           - text: Understanding policy and file rules
             url: select-types-of-rules-to-create.md
+          - text: Understanding WDAC secure settings
+            url: understanding-wdac-policy-settings.md
       - linkListType: how-to-guide
         links:
           - text: Allow managed installer and configure managed installer rules
