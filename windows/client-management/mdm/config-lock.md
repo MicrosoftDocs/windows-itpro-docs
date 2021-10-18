@@ -19,22 +19,75 @@ ms.date: 10/07/2021
 
 In an enterprise organization, IT administrators enforce policies on their corporate devices to keep the devices in a compliant state and protect the OS by preventing users from changing configurations and creating config drift. Config drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a non-compliant state can be vulnerable until the next sync and configuration reset with the MDM. Windows 11 with Config Lock enables IT administrators to prevent config drift and keep the OS configuration in the desired state. With config lock, the OS monitors the registry keys that configure each feature and when it detects a drift, reverts to the IT-desired state in seconds.
 
-Secured-Core Configuration Lock (Config Lock) is a new Secured-Core PC (SCPC) feature that prevents configuration drift from Secured-Core PC features (shown below) caused by unintentional misconfiguration. In short, it ensures a device intended to be a Secured-Core PC remains a Secured-Core PC.
+Secured-Core Configuration Lock (Config Lock) is a new [Secured-Core PC (SCPC)](/windows-hardware/design/device-experiences/oem-highly-secure) feature that prevents configuration drift from Secured-Core PC features (shown below) caused by unintentional misconfiguration. In short, it ensures a device intended to be a Secured-Core PC remains a Secured-Core PC.
 
 :::image type="content" source="../images/config-lock-mdsl.png" alt-text="mdsl":::
 
 To summarize, Config Lock:
 
-- Enables IT to “lock” a fixed set of configurations on Secured-Core PCs under MDM management
-- Detects drift and quickly remediates
-- Focuses on security features
+- Enables IT to “lock” Secured-Core PC features when managed through MDM
+- Detects drift remediates within seconds
 - DOES NOT prevent malicious attacks
 
-## Flow
+## Configuration Flow
 
 After a Secured-Core PC reaches the desktop, Config lock will prevent configuration drift as follows:
 
-- Detect whether the device is a Secured-Core PC
+Config Lock will prevent configuration drift by detecting if the device is a Secured-Core PC or not. When the device is not a Secured-Core PC, the lock will not apply. If the device is a Secured-Core PC, config lock will lock the policies listed here.
+
+**List of locked policies**
+
+
+|Policies  |
+|---------|
+|**CSPs**     |
+|[BitLocker ](bitlocker-csp.md)      |
+|[PassportForWork](passportforwork-csp.md)       |
+|[WindowsDefenderApplicationGuard](windowsdefenderapplicationguard-csp.md)       |
+|[ApplicationControl](applicationcontrol-csp.md) |
+|     |
+|**MDM policies**     |
+|[DataProtection/AllowDirectMemoryAccess](policy-csp-dataprotection.md)      |
+|[DataProtection/LegacySelectiveWipeID](policy-csp-dataprotection.md)      |
+|[DeviceGuard/ConfigureSystemGuardLaunch](policy-csp-deviceguard.md)      |
+|[DeviceGuard/EnableVirtualizationBasedSecurity](policy-csp-deviceguard.md)      |
+|[DeviceGuard/LsaCfgFlags](policy-csp-deviceguard.md)      |
+|[DeviceGuard/RequirePlatformSecurityFeatures](policy-csp-deviceguard.md)      |
+|[DeviceInstallation/AllowInstallationOfMatchingDeviceIDs](policy-csp-deviceinstallation.md)      |
+|[DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs](policy-csp-deviceinstallation.md)      |
+|[DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses](policy-csp-deviceinstallation.md) |
+|[DeviceInstallation/PreventDeviceMetadataFromNetwork](policy-csp-deviceinstallation.md) |
+|[DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings](policy-csp-deviceinstallation.md) |
+|[DeviceInstallation/PreventInstallationOfMatchingDeviceIDs](policy-csp-deviceinstallation.md) |
+|[DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs](policy-csp-deviceinstallation.md) |
+|[DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses](policy-csp-deviceinstallation.md) |
+|[DmaGuard/DeviceEnumerationPolicy](policy-csp-dmaguard.md) |
+|[WindowsDefenderSecurityCenter/CompanyName](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableAccountProtectionUI](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableAppBrowserUI](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableClearTpmButton](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableDeviceSecurityUI](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableEnhancedNotifications](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableFamilyUI](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableHealthUI](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableNetworkUI](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableNotifications](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableVirusUI](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/Email](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/EnableCustomizedToasts](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/EnableInAppCustomization](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/HideRansomwareDataRecovery](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/HideSecureBoot](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/HideTPMTroubleshooting](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/HideWindowsSecurityNotificationAreaControl](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/Phone](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/URL](policy-csp-windowsdefendersecuritycenter.md) |
+|[SmartScreen/EnableAppInstallControl](policy-csp-smartscreen.md)|
+|[SmartScreen/EnableSmartScreenInShell](policy-csp-smartscreen.md) |
+|[SmartScreen/PreventOverrideForFilesInShell](policy-csp-smartscreen.md) |
+
 - If so, prevent the following Secured-Core PC features from being disabled without IT Admin permission:
     - Memory Access Protection (kDMA)
     - Memory Integrity (HVCI)
@@ -65,7 +118,7 @@ Helpdesk scenario:
 
 Config Lock will be available for all Windows Professional and Enterprise Editions.  
 
-## Enabling
+## Enabling Config Lock using Microsoft Intune
 
 Config Lock isn't enabled by default (or turned on by the OS during boot). Rather, an IT Admin must intentionally turn it on.
  
@@ -106,6 +159,7 @@ Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally m
 ## FAQ
 
 **Can an IT Admin disable Config Lock ?** </br>
-	Yes. IT Admin can use MDM to turn off Config Lock.
+	Yes. IT Admin can use MDM to turn off Config Lock.</br>
+
 **Could an end-user run the BuiltAsSecuredCorePC PowerShell command to disable Config Lock?** </br>
 	The PowerShell script is accessible, but the BuiltAsSecuredCorePC becomes read-only after boot, so the command will fail when run from the OS.
