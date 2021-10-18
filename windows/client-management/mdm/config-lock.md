@@ -31,9 +31,7 @@ To summarize, Config Lock:
 
 ## Configuration Flow
 
-After a Secured-Core PC reaches the desktop, Config lock will prevent configuration drift as follows:
-
-Config Lock will prevent configuration drift by detecting if the device is a Secured-Core PC or not. When the device is not a Secured-Core PC, the lock will not apply. If the device is a Secured-Core PC, config lock will lock the policies listed here.
+After a Secured-Core PC reaches the desktop, Config Lock will prevent configuration drift by detecting if the device is a Secured-Core PC or not. When the device is not a Secured-Core PC, the lock will not apply. If the device is a Secured-Core PC, config lock will lock the policies listed here.
 
 **List of locked policies**
 
@@ -88,19 +86,12 @@ Config Lock will prevent configuration drift by detecting if the device is a Sec
 |[SmartScreen/EnableSmartScreenInShell](policy-csp-smartscreen.md) |
 |[SmartScreen/PreventOverrideForFilesInShell](policy-csp-smartscreen.md) |
 
-- If so, prevent the following Secured-Core PC features from being disabled without IT Admin permission:
-    - Memory Access Protection (kDMA)
-    - Memory Integrity (HVCI)
-    - System Guard
-        - DRTM
-        - SMM
-
 :::image type="content" source="images/flow_configlock.png" alt-text="config lock flow.":::
 
 IT Admin scenario:
 
-1. IT Admin use MDM to enable Config Lock
-1. IT Admin use MDM service to set policies
+1. IT Admins use MDM to enable Config Lock
+1. IT Admins use MDM service to set policies
 1. Policies are targeted to user/device
 1. Policies come down to device and get set
 1. Configurations are locked
