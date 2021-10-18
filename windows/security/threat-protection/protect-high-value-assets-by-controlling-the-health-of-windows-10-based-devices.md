@@ -200,7 +200,7 @@ Windows 10 supports features to help prevent sophisticated low-level malware lik
 
     In Windows 10, Credential Guard aims to protect domain corporate credentials from theft and reuse by malware. With Credential Guard, Windows 10 implemented an architectural change that fundamentally prevents the current forms of the pass-the-hash (PtH) attack.
 
-    This is accomplished by leveraging Hyper-V and the new virtualization-based security feature to create a protected container where trusted code and secrets are isolated from the Windows kernel. That means that even if the Windows kernel is compromised an attacker has no way to read and extract the data required to initiate a PtH attack. Credential Guard prevents this because the memory where secrets are stored is no longer accessible from the regular OS, even in kernel mode - the hypervisor controls who can access the memory.
+    This attack-free state is accomplished by using Hyper-V and the new virtualization-based security feature to create a protected container where trusted code and secrets are isolated from the Windows kernel. This accomplishment means that even if the Windows kernel is compromised, an attacker has no way to read and extract the data required to initiate a PtH attack. Credential Guard prevents this unauthorized access because the memory where secrets are stored is no longer accessible from the regular OS, even in kernel mode - the hypervisor controls who can access the memory.
 
 -   **Health attestation.** The device’s firmware logs the boot process, and Windows 10 can send it to a trusted server that can check and assess the device’s health.
 
@@ -208,15 +208,15 @@ Windows 10 supports features to help prevent sophisticated low-level malware lik
 
     For more information, see [Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](/previous-versions/windows/hardware/design/dn653311(v=vs.85)).
 
-    During each subsequent boot, the same components are measured, which allows comparison of the measurements against an expected baseline. For additional security, the values measured by the TPM can be signed and transmitted to a remote server, which can then perform the comparison. This process, called *remote device health attestation*, allows the server to verify health status of the Windows device.
+    During each subsequent boot, the same components are measured, which allows comparison of the measurements against an expected baseline. For more security, the values measured by the TPM can be signed and transmitted to a remote server, which can then perform the comparison. This process, called *remote device health attestation*, allows the server to verify health status of the Windows device.
 
     Although Secure Boot is a proactive form of protection, health attestation is a reactive form of boot protection. Health attestation ships disabled in Windows and is enabled by an antimalware or an MDM vendor. Unlike Secure Boot, health attestation will not stop the boot process and enter remediation when a measurement does not work. But with conditional access control, health attestation will help to prevent access to high-value assets.
 
 ### <a href="" id="virtual"></a>Virtualization-based security
 
-Virtualization-based security provides a new trust boundary for Windows 10. leverages Hyper-V hypervisor technology to enhance platform security. Virtualization-based security provides a secure execution environment to run specific Windows trusted code (trustlet) and to protect sensitive data.
+Virtualization-based security provides a new trust boundary for Windows 10 and uses Hyper-V hypervisor technology to enhance platform security. Virtualization-based security provides a secure execution environment to run specific Windows trusted code (trustlet) and to protect sensitive data.
 
-Virtualization-based security helps to protect against a compromised kernel or a malicious user with Administrator privileges. Note that virtualization-based security is not trying to protect against a physical attacker.
+Virtualization-based security helps to protect against a compromised kernel or a malicious user with Administrator privileges. Virtualization-based security is not trying to protect against a physical attacker.
 
 The following Windows 10 services are protected with virtualization-based security:
 
@@ -234,14 +234,14 @@ The schema below is a high-level view of Windows 10 with virtualization-based se
 
 ### Credential Guard
 
-In Windows 10, when Credential Guard is enabled, Local Security Authority Subsystem Service (lsass.exe) runs sensitive code in an Isolated user mode to help protect data from malware that may be running in the normal user mode. This helps ensure that protected data is not stolen and reused on 
+In Windows 10, when Credential Guard is enabled, Local Security Authority Subsystem Service (lsass.exe) runs a sensitive code in an Isolated user mode to help protect data from malware that may be running in the normal user mode. This code execution helps ensure that protected data is not stolen and reused on 
 remote machines, which mitigates many PtH-style attacks.
 
 Credential Guard helps protect credentials by encrypting them with either a per-boot or persistent key:
 
 -   **The per-boot key** is used for any in-memory credentials that do not require persistence. An example of such a credential would be a ticket-granting ticket (TGT) session key. This key is negotiated with a Key Distribution Center (KDC) every time authentication occurs and is protected with a per-boot key.
 -   **The persistent key**, or some derivative, is used to help protect items that are stored and reloaded after a reboot. Such protection is intended for long-term storage, and must be protected with a consistent key.
-Credential Guard is activated by a registry key and then enabled by using an UEFI variable. This is done to protect against remote modifications of the configuration. The use of a UEFI variable implies that physical access is required to change the configuration. When lsass.exe detects that 
+Credential Guard is activated by a registry key and then enabled by using a UEFI variable. This activation is done to protect against remote modifications of the configuration. The use of a UEFI variable implies that physical access is required to change the configuration. When lsass.exe detects that 
 credential isolation is enabled, it then spawns LsaIso.exe as an isolated process, which ensures that it runs within isolated user mode. The startup of LsaIso.exe is performed before initialization of a security support provider, which ensures that the secure mode support routines are ready before any authentication begins.
 
 ### Device Guard
