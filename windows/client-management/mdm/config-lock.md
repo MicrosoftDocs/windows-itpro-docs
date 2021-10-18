@@ -31,7 +31,7 @@ To summarize, Config Lock:
 
 ## Configuration Flow
 
-After a Secured-Core PC reaches the desktop, Config Lock will prevent configuration drift by detecting if the device is a Secured-Core PC or not. When the device is not a Secured-Core PC, the lock will not apply. If the device is a Secured-Core PC, config lock will lock the policies listed here.
+After a Secured-Core PC reaches the desktop, Config Lock will prevent configuration drift by detecting if the device is a Secured-Core PC or not. When the device isn't a Secured-Core PC, the lock won't apply. If the device is a Secured-Core PC, config lock will lock the policies listed here.
 
 **List of locked policies**
 
