@@ -18,7 +18,7 @@ ms.date: 09/06/2021
 ms.technology: windows-sec
 ---
 
-# Advanced security audit policy settings
+# Advanced security audit policy settings (Windows 10)
 
 This reference for IT professionals provides information about:
 - The advanced audit policy settings available in Windows
