@@ -84,19 +84,19 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
 
 2. Manually rename the rule collection to ManagedInstaller
 
-    Change
+    Change:
 
     ```powershell
     <RuleCollection Type="Exe" EnforcementMode="NotConfigured">
     ```
 
-    to
+    to:
 
     ```powershell
     <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
     ```
 
-An example of a valid Managed Installer rule collection, using Microsoft Endpoint Config Manager (MEMCM), MEM (Intune), Powershell, and PowerShell ISE, is shown below. Remove any rules that you do not wish to designate as a Managed Installer.
+An example of a valid Managed Installer rule collection, using Microsoft Endpoint Config Manager (MEMCM), MEM (Intune), PowerShell, and PowerShell ISE, is shown below. Remove any rules that you do not wish to designate as a Managed Installer.
 
 ```xml
 <AppLockerPolicy Version="1">
@@ -197,7 +197,7 @@ Below are steps to create a WDAC policy that allows Windows to boot and enables 
     Set-CIPolicyIdInfo -FilePath <XML filepath> -PolicyName "<friendly name>" -ResetPolicyID
     ```
 
-3. Set Option 13 (Enabled:Managed Installer)
+3. Set Option 13 (Enabled:Managed Installer).
 
     ```powershell
     Set-RuleOption -FilePath <XML filepath> -Option 13
