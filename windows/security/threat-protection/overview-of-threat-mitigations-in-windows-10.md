@@ -205,7 +205,7 @@ In Windows 10 and Windows Server 2016, client connections to the Active Director
 
 Most security controls are designed to prevent the initial infection point. However, despite all the best preventative controls, malware might eventually find a way to infect the system. So, some protections are built to place limits on malware that gets on the device. Protected Processes creates limits of this type.
 
-With Protected Processes, Windows 10 prevents untrusted processes from interacting or tampering with those processes that have been specially signed. Protected Processes defines levels of trust for processes. Less trusted processes are prevented from interacting with and therefore attacking more trusted processes. Windows 10 uses Protected Processes more broadly across the operating system, and as in Windows 8.1, implements them in a way that can be used by third-party anti-malware vendors, as described in [Protecting Anti-Malware Services](/windows/win32/services/protecting-anti-malware-services-). This helps make the system and antimalware solutions less susceptible to tampering by malware that does manage to get on the system.
+With Protected Processes, Windows 10 prevents untrusted processes from interacting or tampering with those processes that have been specially signed. Protected Processes defines levels of trust for processes. Less trusted processes are prevented from interacting with and therefore attacking more trusted processes. Windows 10 uses Protected Processes more broadly across the operating system, and, as in Windows 8.1, implements them in a way that can be used by third-party anti-malware vendors, as described in [Protecting Anti-Malware Services](/windows/win32/services/protecting-anti-malware-services-). This ease in use helps make the system and antimalware solutions less susceptible to tampering by malware that does manage to get on the system.
 
 ### Universal Windows apps protections
 
@@ -273,7 +273,7 @@ Windows 10 includes an entirely new browser, Microsoft Edge. Microsoft Edge is m
 
 - **Simplifies security configuration tasks.** Because Microsoft Edge uses a simplified application structure and a single sandbox configuration, there are fewer required security settings. In addition, Microsoft Edge default settings align with security best practices, making it more secure by default.
 
-In addition to Microsoft Edge, Microsoft includes IE11 in Windows 10, primarily for backwards-compatibility with websites and with binary extensions that do not work with Microsoft Edge. It must not be configured as the primary browser but rather as an optional or automatic switchover. We recommend using Microsoft Edge as the primary web browser because it provides compatibility with the modern web and the best possible security.
+In addition to Microsoft Edge, Microsoft includes IE11 in Windows 10, primarily for backwards-compatibility with websites and with binary extensions that do not work with Microsoft Edge. You cannot configure it as the primary browser but rather as an optional or automatic switchover. We recommend using Microsoft Edge as the primary web browser because it provides compatibility with the modern web and the best possible security.
 
 For sites that require IE11 compatibility, including those sites that require binary extensions and plug-ins, enable Enterprise mode and use the Enterprise Mode Site List to define which sites have the dependency. With this configuration, when Microsoft Edge identifies a site that requires IE11, users will automatically be switched to IE11.
 
