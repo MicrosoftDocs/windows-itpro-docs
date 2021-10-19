@@ -14,7 +14,7 @@ ms.date:
 
 # Device HealthAttestation CSP
 
-The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT adminstrators to assess if a device is booted to a trusted and compliant state, and to take enterprise policy actions.
+The Device HealthAttestation configuration service provider (DHA-CSP) enables enterprise IT administrators to assess if a device is booted to a trusted and compliant state, and to take enterprise policy actions.
 
 The following is a list of functions performed by the Device HealthAttestation CSP:
 
@@ -25,22 +25,22 @@ The following is a list of functions performed by the Device HealthAttestation C
 
 ## Windows 11 Device health attestation
 
-Windows 11 introduces an update to the device health attestation feature. This helps add support for deeper insights to Windows boot security, supporting a zero trust approach to device security. Device health attestation on Windows can be accessed by using the HealthAttestation CSP. This CSP helps assess if a device is booted to a trusted and compliant state and then to take appropriate action. Windows 11 introduces additional child nodes to the HealthAttestation node for the MDM providers to connect to the Microsoft Azure Attestation service which provides a simplified approach to attestation.
+Windows 11 introduces an update to the device health attestation feature. This helps add support for deeper insights to Windows boot security, supporting a zero trust approach to device security. Device health attestation on Windows can be accessed by using the HealthAttestation CSP. This CSP helps assess if a device is booted to a trusted and compliant state and then to take appropriate action. Windows 11 introduces additional child nodes to the HealthAttestation node for the MDM providers to connect to the Microsoft Azure Attestation service, which provides a simplified approach to attestation.
 
 The attestation report provides a health assessment of the boot-time properties of the device to ensure that the devices are automatically secure as soon as they power on. The health attestation result can then be used to allow or deny access to networks, apps, or services, depending on the health of the device.
 
 ### Terms
 **TPM (Trusted Platform Module)**
-<p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption and signing.</p>
+<p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption, and signing.</p>
 
 **DHA (Device HealthAttestation) feature**
 <p>The Device HealthAttestation (DHA) feature enables enterprise IT administrators to monitor the security posture of managed devices remotely by using hardware (TPM) protected and attested data via a tamper-resistant and tamper-evident communication channel.</p>
 
-**MAA-Session (Microsoft Azure Attestaiton service based device HealthAttestation session)**
-<p>The Microsoft Azure Attestaiton service based device HealthAttestation session (MAA-Session) describes the end-to-end communication flow that is performed in one device health attestation session.</p>
+**MAA-Session (Microsoft Azure Attestation service based device HealthAttestation session)**
+<p>The Microsoft Azure Attestation service-based device HealthAttestation session (MAA-Session) describes the end-to-end communication flow that is performed in one device health attestation session.</p>
 
-**MAA-CSP Nodes (Microsoft Azure Attestaiton based Configuration Service Provider)**
-<p>The Configuration Service Provider nodes added to Windhows 11 to integrate with Microsoft Azure Attestation Service.</p>
+**MAA-CSP Nodes (Microsoft Azure Attestation based Configuration Service Provider)**
+<p>The Configuration Service Provider nodes added to Windows 11 to integrate with Microsoft Azure Attestation Service.</p>
 <p>The following list of operations is performed by MAA-CSP:</p>
 <ul>
 <li>Receives attestation trigger requests from a HealthAttestation enabled MDM provider.</li>
@@ -50,7 +50,7 @@ The attestation report provides a health assessment of the boot-time properties 
 </ul>
 
 **MAA endpoint**
-Microsoft Azure attestation service is an azure resource, and every intance of the service gets adminintrator configured URL. The URI generated is unique in nature and for the puposes of device health attestation is known as the MAA endpoint.
+Microsoft Azure attestation service is an Azure resource, and every instance of the service gets administrator configured URL. The URI generated is unique in nature and for the purposes of device health attestation is known as the MAA endpoint.
 
 **JWT (JSON Web Token)**
 JSON Web Token (JWT) is an open standard RFC7519 method for securely transmitting information between parties as a JavaScript Object Notation (JSON) object. This information can be verified and trusted because it is digitally signed. JWTs can be signed using a secret or a public/private key pair.
@@ -60,17 +60,17 @@ JSON Web Token (JWT) is an open standard RFC7519 method for securely transmittin
 ![Attestation Flow with Microsoft Azure Attestation Service](./images/maa-attestation-flow.png)
 
 <br>
-<p>Attestation flow can be broadly in three main steps:
+<p>Attestation flow can be broadly in three main steps:</p>
 <ul>
-    <li>An instance of the Azure Attestation service is setup with an appropriate attestation policy. The attestation policy allows the MDM provider to attest to particular events in the boot as well security features.</li>
+    <li>An instance of the Azure Attestation service is set up with an appropriate attestation policy. The attestation policy allows the MDM provider to attest to particular events in the boot as well security features.</li>
     <li>The MDM provider triggers a call to the attestation service, the device then performs an attestation check keeping the report ready to be retrieved.</li>
     <li>The MDM provider after verifying the token is coming from the attestation service it can parse the attestation token to reflect on the attested state of the device.</li>
 </ul>
-The protocol implemented can be found here:<a href="https://docs.microsoft.com/en-us/azure/attestation/virtualization-based-security-protocol" id="attestationprotocol"> Attestation Protocol</a>
-</p>
+
+The protocol implemented can be found here: <a href="/azure/attestation/virtualization-based-security-protocol" id="attestationprotocol"> Attestation Protocol</a>.
 
 ### Configuration Service Provider Nodes
-Windows 11 introduces additions to the HealthAttestation CSP node to integrate with Microsoft Azure Attestaiton service.
+Windows 11 introduces additions to the HealthAttestation CSP node to integrate with Microsoft Azure Attestation service.
 ```
 ./Vendor/MSFT
 HealthAttestation
@@ -103,48 +103,52 @@ This node will trigger attestation flow by launching an attestation process. If 
 
 <p>Templated SyncML Call:</p>
 
-    <SyncML xmlns="SYNCML:SYNCML1.2">
-        <SyncBody>
-            <Exec>
-                <CmdID>VERIFYHEALTHV2</CmdID>
-                <Item>
-                    <Target>
-                        <LocURI>
-                            ./Vendor/MSFT/HealthAttestation/TriggerAttestation
-                        </LocURI>
-                    </Target>
-                    <Data>
-                        {
-                        rpID : "rpID", serviceEndpoint : “MAA endpoint”,
-                        nonce : “nonce”, aadToken : “aadToken”, "cv" : "CorrelationVector"
-                        }                    
-                    </Data>
-                </Item>
-            </Exec>
-            <Final/>
-        </SyncBody>
-    </SyncML>
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+    <SyncBody>
+        <Exec>
+            <CmdID>VERIFYHEALTHV2</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>
+                        ./Vendor/MSFT/HealthAttestation/TriggerAttestation
+                    </LocURI>
+                </Target>
+                <Data>
+                    {
+                    rpID : "rpID", serviceEndpoint : “MAA endpoint”,
+                    nonce : “nonce”, aadToken : “aadToken”, "cv" : "CorrelationVector"
+                    }                    
+                </Data>
+            </Item>
+        </Exec>
+        <Final/>
+    </SyncBody>
+</SyncML>
+```
 
 <p>Data fields:</p>
 <ul>
 <li>rpID (Relying Party Identifier): This field contains an identifier that can be used to help determine the caller.</li>
 <li>serviceEndpoint : This field contains the complete URL of the Microsoft Azure Attestation provider instance to be used for evaluation.</li>
 <li>nonce : This field contains an arbitrary number that can be used just once in a cryptographic communication. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in replay attacks.</li>
-<li>aadToken : The AAD token to used for authentication against the Microsoft Azure Attestation service.</li>
-<li>cv : This field contains an identifier(Correlation Vector) that will passed in to the service call, that can be used for diagnostics purposes.</li>
+<li>aadToken: The AAD token to be used for authentication against the Microsoft Azure Attestation service.</li>
+<li>cv: This field contains an identifier(Correlation Vector) that will passed in to the service call, that can be used for diagnostics purposes.</li>
 </ul>
 
 <p>Sample Data:</p>
 
-     <Data>
-     { 
-     "rpid" : "https://www.contoso.com/attestation",
-      "endpoint" : "https://contoso.eus.attest.azure.net/attest/tpm?api-version=2020-10-01",
-      "nonce" : "5468697320697320612054657374204e6f6e6365",
-      "aadToken" : "dummytokenstring",
-      "cv" : "testonboarded" 
-     }
-     </Data>
+```json
+<Data>
+{ 
+"rpid" : "https://www.contoso.com/attestation",
+"endpoint" : "https://contoso.eus.attest.azure.net/attest/tpm?api-version=2020-10-01",
+"nonce" : "5468697320697320612054657374204e6f6e6365",
+"aadToken" : "dummytokenstring",
+"cv" : "testonboarded" 
+}
+</Data>
+```
 
 <a href="" id="AttestStatus"></a>**AttestStatus**
 <p>Node type: GET
@@ -154,26 +158,30 @@ The status is always cleared prior to making the attest service call.
 
 <p>Templated SyncML Call:</p>
 
-    <SyncML xmlns="SYNCML:SYNCML1.2">
-      <SyncBody>
-        <Get>
-          <Item>
-            <Target>
-              <LocURI>
-                ./Device/Vendor/MSFT/HealthAttestation/AttestStatus
-              </LocURI>
-            </Target>
-          </Item>
-        </Get>
-        <Final/> 
-      </SyncBody>
-    </SyncML>
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+    <SyncBody>
+    <Get>
+        <Item>
+        <Target>
+            <LocURI>
+            ./Device/Vendor/MSFT/HealthAttestation/AttestStatus
+            </LocURI>
+        </Target>
+        </Item>
+    </Get>
+    <Final/> 
+    </SyncBody>
+</SyncML>
+```
 
 <p>Sample Data:</p>
 
-     If Successful: 0
-     If Failed: A corresponding HRESULT error code
-     Example: 0x80072efd,  WININET_E_CANNOT_CONNECT
+```
+If Successful: 0
+If Failed: A corresponding HRESULT error code
+Example: 0x80072efd,  WININET_E_CANNOT_CONNECT
+```
 
 <a href="" id="getAttestReport"></a>**GetAttestReport**
 <p>Node type: GET
@@ -182,67 +190,73 @@ This node will retrieve the attestation report per the call made by the TriggerA
 
 <p>Templated SyncML Call:</p>
 
-     <SyncML xmlns="SYNCML:SYNCML1.2">
-       <SyncBody>
-         <Get>
-           <Item>
-             <Target>
-               <LocURI>
-                 ./Device/Vendor/MSFT/HealthAttestation/GetAttestReport
-               </LocURI>
-             </Target>
-           </Item>
-         </Get>
-         <Final/> 
-       </SyncBody>
-     </SyncML>
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+<SyncBody>
+    <Get>
+    <Item>
+        <Target>
+        <LocURI>
+            ./Device/Vendor/MSFT/HealthAttestation/GetAttestReport
+        </LocURI>
+        </Target>
+    </Item>
+    </Get>
+    <Final/> 
+</SyncBody>
+</SyncML>
+```
 
 <p>Sample data:</p>
 
-     If Success:
-     JWT token: aaaaaaaaaaaaa.bbbbbbbbbbbbb.cccccccccc
-     If failed:
-     Previously cached report if available (the token may have already expired per the attestation policy).
-     OR Sync ML 404 error if not cached report available.
+```
+If Success:
+JWT token: aaaaaaaaaaaaa.bbbbbbbbbbbbb.cccccccccc
+If failed:
+Previously cached report if available (the token may have already expired per the attestation policy).
+OR Sync ML 404 error if not cached report available.
+```
 
 <a href="" id="getServiceCorrelationIDs"></a>**GetServiceCorrelationIDs**
 <p>Node type: GET
-This node will retrieve the service generated correlation IDs for the given MDM provider. If there are more than one correlation id, they are separated by “;” in the string.
+This node will retrieve the service-generated correlation IDs for the given MDM provider. If there are more than one correlation IDs, they are separated by “;” in the string.
 </p>
 <p>Templated SyncML Call:</p>
 
-     <SyncML xmlns="SYNCML:SYNCML1.2">
-       <SyncBody>
-         <Get>
-           <Item>
-             <Target>
-               <LocURI>
-                 ./Device/Vendor/MSFT/HealthAttestation/GetServiceCorrelationIDs
-               </LocURI>
-             </Target>
-           </Item>
-         </Get>
-         <Final/> 
-       </SyncBody>
-     </SyncML>
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+<SyncBody>
+    <Get>
+    <Item>
+        <Target>
+        <LocURI>
+            ./Device/Vendor/MSFT/HealthAttestation/GetServiceCorrelationIDs
+        </LocURI>
+        </Target>
+    </Item>
+    </Get>
+    <Final/> 
+</SyncBody>
+</SyncML>
+```
 
 <p>Sample data:</p>
 
-    If success:
-    GUID returned by the attestation service: 1k9+vQOn00S8ZK33;CMc969r1JEuHwDpM
-    If Trigger Attestation call failed and no previous data is present. The field remains empty.
-    Otherwise, the last service correlation id will be returned. In a successful attestation there are two 
-    calls between client and MAA and for each call the GUID is separated by semicolon.
+> If success:
+> GUID returned by the attestation service: 1k9+vQOn00S8ZK33;CMc969r1JEuHwDpM
+> If Trigger Attestation call failed and no previous data is present. The field remains empty.
+> Otherwise, the last service correlation id will be returned. In a successful attestation there are two 
+> calls between client and MAA and for each call the GUID is separated by semicolon.
 
 > **_Note:_** MAA CSP nodes are available on arm64 but is not currently supported.
 
 
-### MAA CSP Intergation Steps
+### MAA CSP Integration Steps
 <ol>
-<li>Setup a MAA provider instance:<br>
-MAA instance can be created following the steps here <a href="https://docs.microsoft.com/en-us/azure/attestation/quickstart-portal" id="quickstartsetup">Quickstart: Set up Azure Attestation by using the Azure portal | Microsoft Docs.</a></li>
+<li>Set up a MAA provider instance:<br>
+MAA instance can be created following the steps here <a href="/azure/attestation/quickstart-portal" id="quickstartsetup">Quickstart: Set up Azure Attestation by using the Azure portal | Microsoft Docs.</a></li>
 <br><li>Update the provider with an appropriate policy:<br>
-The MAA instance should be updated with an appropriate policy. <a href="https://docs.microsoft.com/en-us/azure/attestation/claim-rule-grammar" id="policy">How to author an Azure Attestation policy | Microsoft Docs</a>
+The MAA instance should be updated with an appropriate policy. <a href="/azure/attestation/claim-rule-grammar" id="policy">How to author an Azure Attestation policy | Microsoft Docs</a>
 <br>A Sample attestation policy:
 
 ```
@@ -379,15 +393,16 @@ c1:[type=="bootAppSvnQuery", issuer=="AttestationPolicy"] && c2:[type=="events",
 c:[type=="events", issuer=="AttestationService"] => issue(type="bootRevListInfo", value=JsonToClaimValue(JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `13`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_BOOT_REVOCATION_LIST.RawData | @[0]")));
 
 };
-```    
+```
+
 </li>
 <br><li>Call TriggerAttestation with your rpid, AAD token and the attestURI:<br>
-Use the Attestation URL generated in step 1, and append the appropriate api version you want to hit. More information about the api version can be found here Attestation - Attest Tpm - REST API (Azure Azure Attestation) | Microsoft Docs</li>
+Use the Attestation URL generated in step 1, and append the appropriate api version you want to hit. More information about the api version can be found here Attestation - Attest Tpm - REST API (Azure Attestation) | Microsoft Docs</li>
 <br><li>Call GetAttestReport and decode and parse the report to ensure the attested report contains the required properties:<br>
-GetAttestReport return the signed attestation token as a JWT.The JWT can be decoded to parse the information per the attestation policy.
+GetAttestReport return the signed attestation token as a JWT. The JWT can be decoded to parse the information per the attestation policy.
 <br>
 
-    
+```json
     {
       "typ": "JWT",
       "alg": "RS256",
@@ -442,21 +457,21 @@ GetAttestReport return the signed attestation token as a JWT.The JWT can be deco
       "testSigningDisabled": true,
       "vbsEnabled": true
     }.[Signature]
-
+```
 </li>
 </ol>
 
 ### Learn More 
-<p>
-More information about TPM attestation can be found here. <a href="https://docs.microsoft.com/en-us/azure/attestation/" > Microsoft Azure Attestation </a>
-</p>
+
+More information about TPM attestation can be found here: [Microsoft Azure Attestation](/azure/attestation/).
+
 
 ## Windows 10 Device HealthAttestation
 
 ### Terms
 
 **TPM (Trusted Platform Module)**
-<p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption and signing. </p>
+<p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption, and signing. </p>
 
 **DHA (Device HealthAttestation) feature**
 <p>The Device HealthAttestation (DHA) feature enables enterprise IT administrators to monitor the security posture of managed devices remotely by using hardware (TPM) protected and attested data via a tamper-resistant and tamper-evident communication channel.</p>
@@ -489,10 +504,10 @@ More information about TPM attestation can be found here. <a href="https://docs.
 <strong>DHA session data (Device HealthAttestation session data)</strong>
 <p>The following list of data is produced or consumed in one DHA-Transaction:</p>
 <ul>
-<li>DHA-BootData: the device boot data (TCG logs, PCR values, device/TPM certificate, boot and TPM counters) that are required for validating device boot health.</li>
+<li>DHA-BootData: the device boot data (TCG logs, PCR values, device/TPM certificate, boot, and TPM counters) that are required for validating device boot health.</li>
 <li>DHA-EncBlob: an encrypted summary report that DHA-Service issues to a device after reviewing the DHA-BootData it receives from devices.</li>
 <li>DHA-SignedBlob: it is a signed snapshot of the current state of a device’s runtime that is captured by DHA-CSP at device health attestation time.</li>
-<li>DHA-Data: an XML formatted data blob that devices forward for device health validation to DHA-Service via MDM-Server. DHA-Data has 2 parts:
+<li>DHA-Data: an XML formatted data blob that devices forward for device health validation to DHA-Service via MDM-Server. DHA-Data has two parts:
 <ul> 
 <li>DHA-EncBlob: the encrypted data blob that the device receives from DHA-Service</li>
 <li>DHA-SignedBlob: a current snapshot of the current security state of the device that is generated by DHA-CSP</li>
@@ -526,7 +541,7 @@ More information about TPM attestation can be found here. <a href="https://docs.
 <strong>DHA-Service (Device HealthAttestation Service)</strong>
 <p>Device HealthAttestation Service (DHA-Service) validates the data it receives from DHA-CSP and issues a highly trusted hardware (TPM) protected report (DHA-Report) to DHA-Enabled device management solutions through a tamper resistant and tamper evident communication channel.</p>
 
-<p>DHA-Service is available in 2 flavors: “DHA-Cloud” and “DHA-Server2016”. DHA-Service supports a variety of implementation scenarios including cloud, on premises, air-gapped, and hybrid scenarios.</p>
+<p>DHA-Service is available in two flavors: “DHA-Cloud” and “DHA-Server2016”. DHA-Service supports various implementation scenarios including cloud, on premises, air-gapped, and hybrid scenarios.</p>
 <p>The following list of operations is performed by DHA-Service:</p>
 
 - Receives device boot data (DHA-BootData) from a DHA-Enabled device</li>
@@ -635,12 +650,12 @@ HealthAttestation
 
 <p>The supported operation is Get.</p>
 
-<p>The following list shows some examples of supported values. For the complete list of status see <a href="#device-healthattestation-csp-status-and-error-codes" data-raw-source="[Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes)">Device HealthAttestation CSP status and error codes</a>.</p>
+<p>The following list shows some examples of supported values. For the complete list of status, see <a href="#device-healthattestation-csp-status-and-error-codes" data-raw-source="[Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes)">Device HealthAttestation CSP status and error codes</a>.</p>
 
 -   0 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_UNINITIALIZED): DHA-CSP is preparing a request to get a new DHA-EncBlob from DHA-Service
 -   1 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_REQUESTED): DHA-CSP is waiting for the DHA-Service to respond back, and issue a DHA-EncBlob to the device
 -   2 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_FAILED): A valid DHA-EncBlob could not be retrieved from the DHA-Service for reasons other than discussed in the DHA error/status codes
--   3 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_COMPLETE): DHA-Data is ready for pick up
+-   3 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_COMPLETE): DHA-Data is ready for pickup
 
 <a href="" id="forceretrieve"></a>**ForceRetrieve** (Optional)  
 <p>Instructs the client to initiate a new request to DHA-Service, and get a new DHA-EncBlob (a summary of the boot state that is issued by DHA-Service). This option should only be used if the MDM server enforces a certificate freshness policy, which needs to force a device to get a fresh encrypted blob from DHA-Service.</p>
@@ -650,7 +665,7 @@ HealthAttestation
 <a href="" id="certificate"></a>**Certificate** (Required)  
 <p>Instructs the DHA-CSP to forward DHA-Data to the MDM server.</p>
 
-<p>Value type is b64.The supported operation is Get.</p>
+<p>Value type is b64. The supported operation is Get.</p>
 
 <a href="" id="nonce"></a>**Nonce** (Required)  
 <p>Enables MDMs to protect the device health attestation communications from man-in-the-middle type (MITM) attacks with a crypt-protected random value that is generated by the MDM Server.</p>
@@ -822,7 +837,7 @@ Here is a sample alert that is issued by DHA_CSP:
     </Item>
 </Alert>
 ```
-- If the response to the status node is not 0, 1 or 3, then troubleshoot the issue. For the complete list of status codes see [Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes).
+- If the response to the status node is not 0, 1 or 3, then troubleshoot the issue. For the complete list of status codes, see [Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes).
 
 ### <a href="" id="forward-health-attestation"></a>**Step 5: Instruct the client to forward health attestation data for verification**
 
@@ -901,7 +916,7 @@ After the MDM server receives the verified data, the information can be used to 
 -   Allow the device to access the resources, but flag the device for further investigation.
 -   Prevent a device from accessing resources.
 
-The following list of data points are verified by the DHA-Service in DHA-Report version 3:
+The following list of data points is verified by the DHA-Service in DHA-Report version 3:
 
 - [Issued](#issued ) 
 - [AIKPresent](#aikpresent)
@@ -933,7 +948,7 @@ The following list of data points are verified by the DHA-Service in DHA-Report 
 
 \*  TPM 2.0 only   
 \*\*  Reports if BitLocker was enabled during initial boot.    
-\*\*\* The “Hybrid Resume” must be disabled on the device. Reports 1st party ELAM “Defender” was loaded during boot.  
+\*\*\* The “Hybrid Resume” must be disabled on the device. Reports first-party ELAM “Defender” was loaded during boot.  
 
 Each of these are described in further detail in the following sections, along with the recommended actions to take.
 
@@ -949,7 +964,7 @@ Each of these are described in further detail in the following sections, along w
 
 -   Disallow all access
 -   Disallow access to HBI assets
--   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a devices past activities and trust history.
+-   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a device's past activities and trust history.
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="resetcount"></a>**ResetCount** (Reported only for devices that support TPM 2.0)
@@ -974,7 +989,7 @@ Each of these are described in further detail in the following sections, along w
 
 -   Disallow all access
 -   Disallow access to HBI assets
--   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a devices past activities and trust history.
+-   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a device's past activities and trust history.
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="bitlockerstatus"></a>**BitLockerStatus** (at boot time) 
@@ -990,7 +1005,7 @@ Each of these are described in further detail in the following sections, along w
 
 -   Disallow all access
 -   Disallow access to HBI assets
--   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a devices past activities and trust history.
+-   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a device's past activities and trust history.
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="bootmanagerrevlistversion"></a>**BootManagerRevListVersion**
@@ -1003,7 +1018,7 @@ Each of these are described in further detail in the following sections, along w
 -   Disallow all access
 -   Disallow access to HBI and MBI assets
 -   Place the device in a watch list to monitor the device more closely for potential risks.
--   Trigger a corrective action, such as such as informing the technical support team to contact the owner investigate the issue.
+-   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
 
 <a href="" id="codeintegrityrevlistversion"></a>**CodeIntegrityRevListVersion**
 <p>This attribute indicates the version of the code that is performing integrity checks during the boot sequence. Using this attribute can help you detect if the device is running the latest version of the code that performs integrity checks, or if it is exposed to security risks (revoked) and enforce an appropriate policy action.</p>
@@ -1015,7 +1030,7 @@ Each of these are described in further detail in the following sections, along w
 -   Disallow all access
 -   Disallow access to HBI and MBI assets
 -   Place the device in a watch list to monitor the device more closely for potential risks.
--   Trigger a corrective action, such as such as informing the technical support team to contact the owner investigate the issue.
+-   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
 
 <a href="" id="securebootenabled"></a>**SecureBootEnabled**  
 <p>When Secure Boot is enabled the core components used to boot the machine must have correct cryptographic signatures that are trusted by the organization that manufactured the device. The UEFI firmware verifies this before it lets the machine start. If any files have been tampered with, breaking their signature, the system will not boot.</p>
@@ -1026,11 +1041,11 @@ Each of these are described in further detail in the following sections, along w
 
 -   Disallow all access
 -   Disallow access to HBI assets
--   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a devices past activities and trust history.
+-   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a device's past activities and trust history.
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="bootdebuggingenabled"></a>**BootDebuggingEnabled**
-<p>Boot debug enabled points to a device that is used in development and testing. Devices that are used for test and development typically are less secure: the device may run unstable code, or be configured with fewer security restrictions that is required for testing and development.</p>
+<p>Boot debug-enabled points to a device that is used in development and testing. Devices that are used for test and development typically are less secure: the device may run unstable code, or be configured with fewer security restrictions that is required for testing and development.</p>
 
 <p>Boot debugging can be disabled or enabled by using the following commands in WMI or a PowerShell script:</p>
 
@@ -1056,7 +1071,7 @@ Each of these are described in further detail in the following sections, along w
 -   Disallow all access
 -   Disallow access to HBI assets
 -   Place the device in a watch list to monitor the device more closely for potential risks.
--   Trigger a corrective action, such as such as informing the technical support team to contact the owner investigate the issue.
+-   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
 
 <a href="" id="codeintegrityenabled"></a>**CodeIntegrityEnabled**  
 <p>When code integrity is enabled, code execution is restricted to integrity verified code.</p>
@@ -1071,7 +1086,7 @@ Each of these are described in further detail in the following sections, along w
 
 -   Disallow all access
 -   Disallow access to HBI assets
--   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a devices past activities and trust history.
+-   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a device's past activities and trust history.
 -   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="testsigningenabled"></a>**TestSigningEnabled**
@@ -1110,11 +1125,11 @@ Each of these are described in further detail in the following sections, along w
 <p>If WinPE = 1 (True), then limit access to remote resources that are required for Windows OS installation.</p>
 
 <a href="" id="elamdriverloaded"></a>**ELAMDriverLoaded**  (Windows Defender)
-<p>To use this reporting feature you must disable &quot;Hybrid Resume&quot; on the device. Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.</p>
+<p>To use this reporting feature, you must disable &quot;Hybrid Resume&quot; on the device. Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.</p>
 
-<p>In the current release, this attribute only monitors/reports if a Microsoft 1st party ELAM  (Windows Defender) was loaded during initial boot.</p>
+<p>In the current release, this attribute only monitors/reports if a Microsoft first-party ELAM  (Windows Defender) was loaded during initial boot.</p>
 
-<p>If a device is expected to use a 3rd party antivirus program, ignore the reported state.</p>
+<p>If a device is expected to use a third-party antivirus program, ignore the reported state.</p>
 
 <p>If a device is expected to use Windows Defender and ELAMDriverLoaded = 1 (True), then allow access.</p>
 
@@ -1135,7 +1150,7 @@ Each of these are described in further detail in the following sections, along w
 -   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
 
 <a href="" id="vsmenabled"></a>**VSMEnabled**  
-<p>Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel. VSM requires about 1GB of memory – it has just enough capability to run the LSA service that is used for all authentication brokering.</p>
+<p>Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel. VSM requires about 1 GB of memory – it has enough capability to run the LSA service that is used for all authentication brokering.</p>
 
 <p>VSM can be enabled by using the following command in WMI or a PowerShell script:</p>
 
@@ -1190,7 +1205,7 @@ Each of these are described in further detail in the following sections, along w
 <a href="" id="pcr0"></a>**PCR0**
 <p>The measurement that is captured in PCR[0] typically represents a consistent view of the Host Platform between boot cycles. It contains a measurement of components that are provided by the host platform manufacturer.</p>
 
-<p>Enterprise managers can create a allow list of trusted PCR[0] values, compare the PCR[0] value of the managed devices (the value that is verified and reported by HAS) with the allow list, and then make a trust decision based on the result of the comparison.</p>
+<p>Enterprise managers can create an allow list of trusted PCR[0] values, compare the PCR[0] value of the managed devices (the value that is verified and reported by HAS) with the allow list, and then make a trust decision based on the result of the comparison.</p>
 
 <p>If your enterprise does not have a allow list of accepted PCR[0] values, then take no action.</p>
 
@@ -1206,7 +1221,7 @@ Each of these are described in further detail in the following sections, along w
 
 <p>If SBCPHash is not present, or is an accepted allow-listed value, then allow access.
 
-<p>If SBCPHash is present in DHA-Report, and is not a allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
+<p>If SBCPHash is present in DHA-Report, and is not an allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Place the device in a watch list to monitor the device more closely for potential risks.
@@ -1216,7 +1231,7 @@ Each of these are described in further detail in the following sections, along w
 
 <p>If CIPolicy is not present, or is an accepted allow-listed value, then allow access.</p>
 
-<p>If CIPolicy is present and is not a allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
+<p>If CIPolicy is present and is not an allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Place the device in a watch list to monitor the device more closely for potential risks.
@@ -1392,7 +1407,7 @@ Each of these are described in further detail in the following sections, along w
     <tr>
         <td>27</td>
         <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CREATE_HTTPHANDLE</td>
-        <td>DHA-CSP failed to create a HTTP request handle.</td>
+        <td>DHA-CSP failed to create an HTTP request handle.</td>
     </tr>
     <tr>
         <td>28</td>
@@ -1427,7 +1442,7 @@ Each of these are described in further detail in the following sections, along w
     <tr>
         <td>34</td>
         <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_MISSING_RESPONSE</td>
-        <td>DHA-CSP received an empty response along with a HTTP error code from DHA-Service.</td>
+        <td>DHA-CSP received an empty response along with an HTTP error code from DHA-Service.</td>
     </tr>
     <tr>
         <td>35</td>
