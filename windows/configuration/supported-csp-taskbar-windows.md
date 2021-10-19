@@ -37,7 +37,7 @@ For more general information, see [Configuration service provider (CSP) referenc
 
 - [Experience/ConfigureChatIcon](/windows/client-management/mdm/policy-csp-experience#experience-configurechaticonvisibilityonthetaskbar)
   - Group policy: `Computer Configuration\Administrative Templates\Windows Components\Chat`
-  - Local setting: Settings > Personalization > Tasbkar
+  - Local setting: Settings > Personalization > Taskbar > Chat
 
 ## Existing CSP policies that Windows 11 doesn't support
 
