@@ -242,11 +242,11 @@ This node will retrieve the service generated correlation IDs for the given MDM 
 
 <p>Sample data:</p>
 
-    If success:
-    GUID returned by the attestation service: 1k9+vQOn00S8ZK33;CMc969r1JEuHwDpM
-    If Trigger Attestation call failed and no previous data is present. The field remains empty.
-    Otherwise, the last service correlation id will be returned. In a successful attestation there are two 
-    calls between client and MAA and for each call the GUID is separated by semicolon.
+> If success:
+> GUID returned by the attestation service: 1k9+vQOn00S8ZK33;CMc969r1JEuHwDpM
+> If Trigger Attestation call failed and no previous data is present. The field remains empty.
+> Otherwise, the last service correlation id will be returned. In a successful attestation there are two 
+> calls between client and MAA and for each call the GUID is separated by semicolon.
 
 > **_Note:_** MAA CSP nodes are available on arm64 but is not currently supported.
 
