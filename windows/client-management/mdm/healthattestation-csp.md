@@ -60,14 +60,14 @@ JSON Web Token (JWT) is an open standard RFC7519 method for securely transmittin
 ![Attestation Flow with Microsoft Azure Attestation Service](./images/maa-attestation-flow.png)
 
 <br>
-<p>Attestation flow can be broadly in three main steps:
+<p>Attestation flow can be broadly in three main steps:</p>
 <ul>
     <li>An instance of the Azure Attestation service is setup with an appropriate attestation policy. The attestation policy allows the MDM provider to attest to particular events in the boot as well security features.</li>
     <li>The MDM provider triggers a call to the attestation service, the device then performs an attestation check keeping the report ready to be retrieved.</li>
     <li>The MDM provider after verifying the token is coming from the attestation service it can parse the attestation token to reflect on the attested state of the device.</li>
 </ul>
-The protocol implemented can be found here:<a href="https://docs.microsoft.com/en-us/azure/attestation/virtualization-based-security-protocol" id="attestationprotocol"> Attestation Protocol</a>
-</p>
+
+The protocol implemented can be found here: <a href="/azure/attestation/virtualization-based-security-protocol" id="attestationprotocol"> Attestation Protocol</a>.
 
 ### Configuration Service Provider Nodes
 Windows 11 introduces additions to the HealthAttestation CSP node to integrate with Microsoft Azure Attestaiton service.
@@ -240,9 +240,9 @@ This node will retrieve the service generated correlation IDs for the given MDM 
 ### MAA CSP Intergation Steps
 <ol>
 <li>Setup a MAA provider instance:<br>
-MAA instance can be created following the steps here <a href="https://docs.microsoft.com/en-us/azure/attestation/quickstart-portal" id="quickstartsetup">Quickstart: Set up Azure Attestation by using the Azure portal | Microsoft Docs.</a></li>
+MAA instance can be created following the steps here <a href="/azure/attestation/quickstart-portal" id="quickstartsetup">Quickstart: Set up Azure Attestation by using the Azure portal | Microsoft Docs.</a></li>
 <br><li>Update the provider with an appropriate policy:<br>
-The MAA instance should be updated with an appropriate policy. <a href="https://docs.microsoft.com/en-us/azure/attestation/claim-rule-grammar" id="policy">How to author an Azure Attestation policy | Microsoft Docs</a>
+The MAA instance should be updated with an appropriate policy. <a href="/azure/attestation/claim-rule-grammar" id="policy">How to author an Azure Attestation policy | Microsoft Docs</a>
 <br>A Sample attestation policy:
 
 ```
@@ -447,9 +447,9 @@ GetAttestReport return the signed attestation token as a JWT.The JWT can be deco
 </ol>
 
 ### Learn More 
-<p>
-More information about TPM attestation can be found here. <a href="https://docs.microsoft.com/en-us/azure/attestation/" > Microsoft Azure Attestation </a>
-</p>
+
+More information about TPM attestation can be found here: [Microsoft Azure Attestation](/azure/attestation/).
+
 
 ## Windows 10 Device HealthAttestation
 
