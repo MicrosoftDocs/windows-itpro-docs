@@ -177,45 +177,9 @@ An example of a valid Managed Installer rule collection, using Microsoft Endpoin
   </RuleCollection>
 </AppLockerPolicy>
 ```
-### Enable service enforcement in AppLocker policy
 
-Since many installation processes rely on services, it is typically necessary to enable tracking of services.
-Correct tracking of services requires the presence of at least one rule in the rule collection. So, a simple audit-only rule will suffice. The audit rule can be added to the policy created above, which specifies the rule collection of your managed installer.
-
-For example:
-
-```xml
-<RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
-    <FilePathRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.dll" />
-      </Conditions>
-    </FilePathRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
-  <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
-    <FilePathRule Id="9420c496-046d-45ab-bd0e-455b2649e41e" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.exe" />
-      </Conditions>
-    </FilePathRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
-```
+>[!NOTE]
+>Since many installation processes rely on services, it is typically necessary to enable tracking of services. Correct tracking of services requires the presence of at least one rule in the rule collection. So, a simple audit-only rule will suffice. 
 
 ## Enable the managed installer option in WDAC policy
 
