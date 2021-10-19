@@ -71,7 +71,7 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
 6. Restart the system.
 
 > [!NOTE]
-> Deploying your policy via [MEM](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle step 4 automatically. 
+> If you deploy your policy via [MEM](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP, step 4 will be executed automatically.
 
 ## Script-based deployment process for Windows 10 versions earlier than 1903
 
