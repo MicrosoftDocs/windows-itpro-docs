@@ -67,7 +67,7 @@ For more information on the security features you can configure, manage, and enf
 
 ## Easier access to new services, and services you already use
 
-- **Windows 365** is a desktop operating system that's also a cloud service. From another internet-connected device, including Android and macOS devices, you can run Windows 365, just like a virtual machine.
+- **Windows 365** is a desktop operating system that's also a cloud service. From another internet-connected device, including Android™️ and macOS devices, you can run Windows 365, just like a virtual machine.
 
   For more information, see [What is Windows 365 Enterprise?](/windows-365/overview).
 
