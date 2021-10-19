@@ -16,7 +16,7 @@ ms.reviewer:
 ms.technology: windows-sec
 ---
 
-# Microsoft Security Compliance Toolkit 1.0 - Usage
+# Microsoft Security Compliance Toolkit 1.0 - How to use
 
 ## What is the Security Compliance Toolkit (SCT)?
 
