@@ -14,7 +14,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.date: 08/10/2021
+ms.date: 10/19/2021
 ms.technology: mde
 ---
 
@@ -26,8 +26,8 @@ ms.technology: mde
 -   Windows 11
 -   Windows Server 2016 and above
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 Windows 10, version 1703 introduced a new option for Windows Defender Application Control (WDAC), called _managed installer_, that helps balance security and manageability when enforcing application control policies. This option lets you automatically allow applications installed by a designated software distribution solution such as Microsoft Endpoint Configuration Manager.
 
@@ -41,8 +41,7 @@ Ensure that the WDAC policy allows the system/boot components and any other auth
 
 ## Security considerations with managed installer
 
-Since managed installer is a heuristic-based mechanism, it doesn't provide the same security guarantees that explicit allow or deny rules do.
-It's best suited for use where each user operates as a standard user and where all software is deployed and installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager (MEMCM).
+Since managed installer is a heuristic-based mechanism, it doesn't provide the same security guarantees that explicit allow or deny rules do. The managed installer is best suited for use where each user operates as a standard user and where all software is deployed and installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager (MEMCM).
 
 Users with administrator privileges, or malware running as an administrator user on the system, may be able to circumvent the intent of Windows Defender Application Control when the managed installer option is allowed.
 
@@ -177,45 +176,9 @@ An example of a valid Managed Installer rule collection, using Microsoft Endpoin
   </RuleCollection>
 </AppLockerPolicy>
 ```
-### Enable service enforcement in AppLocker policy
 
-Since many installation processes rely on services, it is typically necessary to enable tracking of services.
-Correct tracking of services requires the presence of at least one rule in the rule collection. So, a simple audit-only rule will suffice. The audit rule can be added to the policy created above, which specifies the rule collection of your managed installer.
-
-For example:
-
-```xml
-<RuleCollection Type="Dll" EnforcementMode="AuditOnly" >
-    <FilePathRule Id="86f235ad-3f7b-4121-bc95-ea8bde3a5db5" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.dll" />
-      </Conditions>
-    </FilePathRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
-  <RuleCollection Type="Exe" EnforcementMode="AuditOnly">
-    <FilePathRule Id="9420c496-046d-45ab-bd0e-455b2649e41e" Name="Dummy Rule" Description="" UserOrGroupSid="S-1-1-0" Action="Deny">
-      <Conditions>
-        <FilePathCondition Path="%OSDRIVE%\ThisWillBeBlocked.exe" />
-      </Conditions>
-    </FilePathRule>
-    <RuleCollectionExtensions>
-      <ThresholdExtensions>
-        <Services EnforcementMode="Enabled" />
-      </ThresholdExtensions>
-      <RedstoneExtensions>
-        <SystemApps Allow="Enabled"/>
-      </RedstoneExtensions>
-    </RuleCollectionExtensions>
-  </RuleCollection>
-```
+>[!NOTE]
+>Since many installation processes rely on services, it is typically necessary to enable tracking of services. Correct tracking of services requires the presence of at least one rule in the rule collection. So, a simple audit-only rule will suffice. 
 
 ## Enable the managed installer option in WDAC policy
 
