@@ -228,3 +228,4 @@ sections:
           
       - question: Does Windows Hello for Business work with Azure Active Directory Domain Services (Azure AD DS) clients?
         answer: | No, Azure AD DS is a separately managed environment in Azure, and hybrid device registration with cloud Azure AD is not available for it via Azure AD Connect. Hence, Windows Hello for Business does not work with Azure AD.
+
