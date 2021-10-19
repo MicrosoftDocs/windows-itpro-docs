@@ -67,7 +67,7 @@ For more information on the security features you can configure, manage, and enf
 
 ## Easier access to new services, and services you already use
 
-- **Windows 365** is a desktop operating system that's also a cloud service. From another internet-connected device, including Android™️ and macOS devices, you can run Windows 365, just like a virtual machine.
+- **Windows 365** is a desktop operating system that's also a cloud service. From another internet-connected device, including Android and macOS devices, you can run Windows 365, just like a virtual machine.
 
   For more information, see [What is Windows 365 Enterprise?](/windows-365/overview).
 
@@ -138,7 +138,7 @@ For more information on the security features you can configure, manage, and enf
 
 ## Use your same apps, and new apps, improved
 
-- Starting with Windows 11, users in the [Windows Insider program](https://insider.windows.com/) can download and install **Android apps** from the Microsoft Store. This feature is called the **Windows Subsystem for Android**, and allows users to use Android apps on their Windows devices, similar to other apps installed from the Microsoft Store.
+- Starting with Windows 11, users in the [Windows Insider program](https://insider.windows.com/) can download and install **Android™️ apps** from the Microsoft Store. This feature is called the **Windows Subsystem for Android**, and allows users to use Android apps on their Windows devices, similar to other apps installed from the Microsoft Store.
 
   Users open the Microsoft Store, install the **Amazon Appstore** app, and sign in with their Amazon account. When they sign in, they can search, download, and install Android apps.
 
