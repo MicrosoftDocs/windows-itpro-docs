@@ -68,7 +68,7 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
    & $RefreshPolicyTool
    ```
 
-6. Reboot the system
+6. Restart the system.
 
 > [!NOTE]
 > Deploying your policy via [MEM](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle step 4 automatically. 
