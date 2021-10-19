@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 08/14/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Configuring a managed installer with AppLocker and Windows Defender Application Control

@@ -16,7 +16,7 @@ ms.author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ms.date: 02/20/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Defender Application Control design guide

@@ -16,7 +16,7 @@ ms.author: deniseb
 manager: dansimp
 ms.date: 05/26/2020
 ms.custom: asr
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Application Control for Windows

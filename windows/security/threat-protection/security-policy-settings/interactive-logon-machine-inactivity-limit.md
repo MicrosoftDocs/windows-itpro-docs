@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/18/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Interactive logon: Machine inactivity limit

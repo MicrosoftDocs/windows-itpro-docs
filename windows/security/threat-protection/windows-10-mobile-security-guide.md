@@ -13,7 +13,7 @@ ms.pagetype: security, mobile
 ms.localizationpriority: medium
 author: dulcemontemayor
 ms.date: 10/13/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 # Windows 10 Mobile security guide
 
