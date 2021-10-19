@@ -103,27 +103,29 @@ This node will trigger attestation flow by launching an attestation process. If 
 
 <p>Templated SyncML Call:</p>
 
-    <SyncML xmlns="SYNCML:SYNCML1.2">
-        <SyncBody>
-            <Exec>
-                <CmdID>VERIFYHEALTHV2</CmdID>
-                <Item>
-                    <Target>
-                        <LocURI>
-                            ./Vendor/MSFT/HealthAttestation/TriggerAttestation
-                        </LocURI>
-                    </Target>
-                    <Data>
-                        {
-                        rpID : "rpID", serviceEndpoint : “MAA endpoint”,
-                        nonce : “nonce”, aadToken : “aadToken”, "cv" : "CorrelationVector"
-                        }                    
-                    </Data>
-                </Item>
-            </Exec>
-            <Final/>
-        </SyncBody>
-    </SyncML>
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+    <SyncBody>
+        <Exec>
+            <CmdID>VERIFYHEALTHV2</CmdID>
+            <Item>
+                <Target>
+                    <LocURI>
+                        ./Vendor/MSFT/HealthAttestation/TriggerAttestation
+                    </LocURI>
+                </Target>
+                <Data>
+                    {
+                    rpID : "rpID", serviceEndpoint : “MAA endpoint”,
+                    nonce : “nonce”, aadToken : “aadToken”, "cv" : "CorrelationVector"
+                    }                    
+                </Data>
+            </Item>
+        </Exec>
+        <Final/>
+    </SyncBody>
+</SyncML>
+```
 
 <p>Data fields:</p>
 <ul>
@@ -136,15 +138,17 @@ This node will trigger attestation flow by launching an attestation process. If 
 
 <p>Sample Data:</p>
 
-     <Data>
-     { 
-     "rpid" : "https://www.contoso.com/attestation",
-      "endpoint" : "https://contoso.eus.attest.azure.net/attest/tpm?api-version=2020-10-01",
-      "nonce" : "5468697320697320612054657374204e6f6e6365",
-      "aadToken" : "dummytokenstring",
-      "cv" : "testonboarded" 
-     }
-     </Data>
+```json
+<Data>
+{ 
+"rpid" : "https://www.contoso.com/attestation",
+"endpoint" : "https://contoso.eus.attest.azure.net/attest/tpm?api-version=2020-10-01",
+"nonce" : "5468697320697320612054657374204e6f6e6365",
+"aadToken" : "dummytokenstring",
+"cv" : "testonboarded" 
+}
+</Data>
+```
 
 <a href="" id="AttestStatus"></a>**AttestStatus**
 <p>Node type: GET
@@ -154,26 +158,30 @@ The status is always cleared prior to making the attest service call.
 
 <p>Templated SyncML Call:</p>
 
-    <SyncML xmlns="SYNCML:SYNCML1.2">
-      <SyncBody>
-        <Get>
-          <Item>
-            <Target>
-              <LocURI>
-                ./Device/Vendor/MSFT/HealthAttestation/AttestStatus
-              </LocURI>
-            </Target>
-          </Item>
-        </Get>
-        <Final/> 
-      </SyncBody>
-    </SyncML>
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+    <SyncBody>
+    <Get>
+        <Item>
+        <Target>
+            <LocURI>
+            ./Device/Vendor/MSFT/HealthAttestation/AttestStatus
+            </LocURI>
+        </Target>
+        </Item>
+    </Get>
+    <Final/> 
+    </SyncBody>
+</SyncML>
+```
 
 <p>Sample Data:</p>
 
-     If Successful: 0
-     If Failed: A corresponding HRESULT error code
-     Example: 0x80072efd,  WININET_E_CANNOT_CONNECT
+```
+If Successful: 0
+If Failed: A corresponding HRESULT error code
+Example: 0x80072efd,  WININET_E_CANNOT_CONNECT
+```
 
 <a href="" id="getAttestReport"></a>**GetAttestReport**
 <p>Node type: GET
@@ -182,28 +190,32 @@ This node will retrieve the attestation report per the call made by the TriggerA
 
 <p>Templated SyncML Call:</p>
 
-     <SyncML xmlns="SYNCML:SYNCML1.2">
-       <SyncBody>
-         <Get>
-           <Item>
-             <Target>
-               <LocURI>
-                 ./Device/Vendor/MSFT/HealthAttestation/GetAttestReport
-               </LocURI>
-             </Target>
-           </Item>
-         </Get>
-         <Final/> 
-       </SyncBody>
-     </SyncML>
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+<SyncBody>
+    <Get>
+    <Item>
+        <Target>
+        <LocURI>
+            ./Device/Vendor/MSFT/HealthAttestation/GetAttestReport
+        </LocURI>
+        </Target>
+    </Item>
+    </Get>
+    <Final/> 
+</SyncBody>
+</SyncML>
+```
 
 <p>Sample data:</p>
 
-     If Success:
-     JWT token: aaaaaaaaaaaaa.bbbbbbbbbbbbb.cccccccccc
-     If failed:
-     Previously cached report if available (the token may have already expired per the attestation policy).
-     OR Sync ML 404 error if not cached report available.
+```
+If Success:
+JWT token: aaaaaaaaaaaaa.bbbbbbbbbbbbb.cccccccccc
+If failed:
+Previously cached report if available (the token may have already expired per the attestation policy).
+OR Sync ML 404 error if not cached report available.
+```
 
 <a href="" id="getServiceCorrelationIDs"></a>**GetServiceCorrelationIDs**
 <p>Node type: GET
@@ -211,20 +223,22 @@ This node will retrieve the service generated correlation IDs for the given MDM 
 </p>
 <p>Templated SyncML Call:</p>
 
-     <SyncML xmlns="SYNCML:SYNCML1.2">
-       <SyncBody>
-         <Get>
-           <Item>
-             <Target>
-               <LocURI>
-                 ./Device/Vendor/MSFT/HealthAttestation/GetServiceCorrelationIDs
-               </LocURI>
-             </Target>
-           </Item>
-         </Get>
-         <Final/> 
-       </SyncBody>
-     </SyncML>
+```xml
+<SyncML xmlns="SYNCML:SYNCML1.2">
+<SyncBody>
+    <Get>
+    <Item>
+        <Target>
+        <LocURI>
+            ./Device/Vendor/MSFT/HealthAttestation/GetServiceCorrelationIDs
+        </LocURI>
+        </Target>
+    </Item>
+    </Get>
+    <Final/> 
+</SyncBody>
+</SyncML>
+```
 
 <p>Sample data:</p>
 
@@ -379,7 +393,8 @@ c1:[type=="bootAppSvnQuery", issuer=="AttestationPolicy"] && c2:[type=="events",
 c:[type=="events", issuer=="AttestationService"] => issue(type="bootRevListInfo", value=JsonToClaimValue(JmesPath(c.value, "Events[? EventTypeString == 'EV_EVENT_TAG' && PcrIndex == `13`].ProcessedData.EVENT_TRUSTBOUNDARY.EVENT_BOOT_REVOCATION_LIST.RawData | @[0]")));
 
 };
-```    
+```
+
 </li>
 <br><li>Call TriggerAttestation with your rpid, AAD token and the attestURI:<br>
 Use the Attestation URL generated in step 1, and append the appropriate api version you want to hit. More information about the api version can be found here Attestation - Attest Tpm - REST API (Azure Azure Attestation) | Microsoft Docs</li>
@@ -387,7 +402,7 @@ Use the Attestation URL generated in step 1, and append the appropriate api vers
 GetAttestReport return the signed attestation token as a JWT.The JWT can be decoded to parse the information per the attestation policy.
 <br>
 
-    
+```json
     {
       "typ": "JWT",
       "alg": "RS256",
@@ -442,7 +457,7 @@ GetAttestReport return the signed attestation token as a JWT.The JWT can be deco
       "testSigningDisabled": true,
       "vbsEnabled": true
     }.[Signature]
-
+```
 </li>
 </ol>
 
