@@ -25,13 +25,13 @@ The following is a list of functions performed by the Device HealthAttestation C
 
 ## Windows 11 Device health attestation
 
-Windows 11 introduces an update to the device health attestation feature. This helps add support for deeper insights to Windows boot security, supporting a zero trust approach to device security. Device health attestation on Windows can be accessed by using the HealthAttestation CSP. This CSP helps assess if a device is booted to a trusted and compliant state and then to take appropriate action. Windows 11 introduces additional child nodes to the HealthAttestation node for the MDM providers to connect to the Microsoft Azure Attestation service which provides a simplified approach to attestation.
+Windows 11 introduces an update to the device health attestation feature. This helps add support for deeper insights to Windows boot security, supporting a zero trust approach to device security. Device health attestation on Windows can be accessed by using the HealthAttestation CSP. This CSP helps assess if a device is booted to a trusted and compliant state and then to take appropriate action. Windows 11 introduces additional child nodes to the HealthAttestation node for the MDM providers to connect to the Microsoft Azure Attestation service, which provides a simplified approach to attestation.
 
 The attestation report provides a health assessment of the boot-time properties of the device to ensure that the devices are automatically secure as soon as they power on. The health attestation result can then be used to allow or deny access to networks, apps, or services, depending on the health of the device.
 
 ### Terms
 **TPM (Trusted Platform Module)**
-<p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption and signing.</p>
+<p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption, and signing.</p>
 
 **DHA (Device HealthAttestation) feature**
 <p>The Device HealthAttestation (DHA) feature enables enterprise IT administrators to monitor the security posture of managed devices remotely by using hardware (TPM) protected and attested data via a tamper-resistant and tamper-evident communication channel.</p>
@@ -132,8 +132,8 @@ This node will trigger attestation flow by launching an attestation process. If 
 <li>rpID (Relying Party Identifier): This field contains an identifier that can be used to help determine the caller.</li>
 <li>serviceEndpoint : This field contains the complete URL of the Microsoft Azure Attestation provider instance to be used for evaluation.</li>
 <li>nonce : This field contains an arbitrary number that can be used just once in a cryptographic communication. It is often a random or pseudo-random number issued in an authentication protocol to ensure that old communications cannot be reused in replay attacks.</li>
-<li>aadToken : The AAD token to be used for authentication against the Microsoft Azure Attestation service.</li>
-<li>cv : This field contains an identifier(Correlation Vector) that will passed in to the service call, that can be used for diagnostics purposes.</li>
+<li>aadToken: The AAD token to be used for authentication against the Microsoft Azure Attestation service.</li>
+<li>cv: This field contains an identifier(Correlation Vector) that will passed in to the service call, that can be used for diagnostics purposes.</li>
 </ul>
 
 <p>Sample Data:</p>
@@ -471,7 +471,7 @@ More information about TPM attestation can be found here: [Microsoft Azure Attes
 ### Terms
 
 **TPM (Trusted Platform Module)**
-<p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption and signing. </p>
+<p>TPM is a specialized hardware-protected logic that performs a series of hardware protected security operations including providing protected storage, random number generation, encryption, and signing. </p>
 
 **DHA (Device HealthAttestation) feature**
 <p>The Device HealthAttestation (DHA) feature enables enterprise IT administrators to monitor the security posture of managed devices remotely by using hardware (TPM) protected and attested data via a tamper-resistant and tamper-evident communication channel.</p>
@@ -504,10 +504,10 @@ More information about TPM attestation can be found here: [Microsoft Azure Attes
 <strong>DHA session data (Device HealthAttestation session data)</strong>
 <p>The following list of data is produced or consumed in one DHA-Transaction:</p>
 <ul>
-<li>DHA-BootData: the device boot data (TCG logs, PCR values, device/TPM certificate, boot and TPM counters) that are required for validating device boot health.</li>
+<li>DHA-BootData: the device boot data (TCG logs, PCR values, device/TPM certificate, boot, and TPM counters) that are required for validating device boot health.</li>
 <li>DHA-EncBlob: an encrypted summary report that DHA-Service issues to a device after reviewing the DHA-BootData it receives from devices.</li>
 <li>DHA-SignedBlob: it is a signed snapshot of the current state of a device’s runtime that is captured by DHA-CSP at device health attestation time.</li>
-<li>DHA-Data: an XML formatted data blob that devices forward for device health validation to DHA-Service via MDM-Server. DHA-Data has 2 parts:
+<li>DHA-Data: an XML formatted data blob that devices forward for device health validation to DHA-Service via MDM-Server. DHA-Data has two parts:
 <ul> 
 <li>DHA-EncBlob: the encrypted data blob that the device receives from DHA-Service</li>
 <li>DHA-SignedBlob: a current snapshot of the current security state of the device that is generated by DHA-CSP</li>
@@ -541,7 +541,7 @@ More information about TPM attestation can be found here: [Microsoft Azure Attes
 <strong>DHA-Service (Device HealthAttestation Service)</strong>
 <p>Device HealthAttestation Service (DHA-Service) validates the data it receives from DHA-CSP and issues a highly trusted hardware (TPM) protected report (DHA-Report) to DHA-Enabled device management solutions through a tamper resistant and tamper evident communication channel.</p>
 
-<p>DHA-Service is available in 2 flavors: “DHA-Cloud” and “DHA-Server2016”. DHA-Service supports a variety of implementation scenarios including cloud, on premises, air-gapped, and hybrid scenarios.</p>
+<p>DHA-Service is available in two flavors: “DHA-Cloud” and “DHA-Server2016”. DHA-Service supports various implementation scenarios including cloud, on premises, air-gapped, and hybrid scenarios.</p>
 <p>The following list of operations is performed by DHA-Service:</p>
 
 - Receives device boot data (DHA-BootData) from a DHA-Enabled device</li>
@@ -650,7 +650,7 @@ HealthAttestation
 
 <p>The supported operation is Get.</p>
 
-<p>The following list shows some examples of supported values. For the complete list of status see <a href="#device-healthattestation-csp-status-and-error-codes" data-raw-source="[Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes)">Device HealthAttestation CSP status and error codes</a>.</p>
+<p>The following list shows some examples of supported values. For the complete list of status, see <a href="#device-healthattestation-csp-status-and-error-codes" data-raw-source="[Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes)">Device HealthAttestation CSP status and error codes</a>.</p>
 
 -   0 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_UNINITIALIZED): DHA-CSP is preparing a request to get a new DHA-EncBlob from DHA-Service
 -   1 - (HEALTHATTESTATION\_CERT\_RETRIEVAL_REQUESTED): DHA-CSP is waiting for the DHA-Service to respond back, and issue a DHA-EncBlob to the device
@@ -837,7 +837,7 @@ Here is a sample alert that is issued by DHA_CSP:
     </Item>
 </Alert>
 ```
-- If the response to the status node is not 0, 1 or 3, then troubleshoot the issue. For the complete list of status codes see [Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes).
+- If the response to the status node is not 0, 1 or 3, then troubleshoot the issue. For the complete list of status codes, see [Device HealthAttestation CSP status and error codes](#device-healthattestation-csp-status-and-error-codes).
 
 ### <a href="" id="forward-health-attestation"></a>**Step 5: Instruct the client to forward health attestation data for verification**
 
@@ -948,7 +948,7 @@ The following list of data points is verified by the DHA-Service in DHA-Report v
 
 \*  TPM 2.0 only   
 \*\*  Reports if BitLocker was enabled during initial boot.    
-\*\*\* The “Hybrid Resume” must be disabled on the device. Reports 1st party ELAM “Defender” was loaded during boot.  
+\*\*\* The “Hybrid Resume” must be disabled on the device. Reports first-party ELAM “Defender” was loaded during boot.  
 
 Each of these are described in further detail in the following sections, along with the recommended actions to take.
 
@@ -1125,11 +1125,11 @@ Each of these are described in further detail in the following sections, along w
 <p>If WinPE = 1 (True), then limit access to remote resources that are required for Windows OS installation.</p>
 
 <a href="" id="elamdriverloaded"></a>**ELAMDriverLoaded**  (Windows Defender)
-<p>To use this reporting feature you must disable &quot;Hybrid Resume&quot; on the device. Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.</p>
+<p>To use this reporting feature, you must disable &quot;Hybrid Resume&quot; on the device. Early launch anti-malware (ELAM) provides protection for the computers in your network when they start up and before third-party drivers initialize.</p>
 
-<p>In the current release, this attribute only monitors/reports if a Microsoft 1st party ELAM  (Windows Defender) was loaded during initial boot.</p>
+<p>In the current release, this attribute only monitors/reports if a Microsoft first-party ELAM  (Windows Defender) was loaded during initial boot.</p>
 
-<p>If a device is expected to use a 3rd party antivirus program, ignore the reported state.</p>
+<p>If a device is expected to use a third-party antivirus program, ignore the reported state.</p>
 
 <p>If a device is expected to use Windows Defender and ELAMDriverLoaded = 1 (True), then allow access.</p>
 
@@ -1150,7 +1150,7 @@ Each of these are described in further detail in the following sections, along w
 -   Trigger a corrective action, such as informing the technical support team to contact the owner investigate the issue.
 
 <a href="" id="vsmenabled"></a>**VSMEnabled**  
-<p>Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel. VSM requires about 1GB of memory – it has just enough capability to run the LSA service that is used for all authentication brokering.</p>
+<p>Virtual Secure Mode (VSM) is a container that protects high value assets from a compromised kernel. VSM requires about 1 GB of memory – it has enough capability to run the LSA service that is used for all authentication brokering.</p>
 
 <p>VSM can be enabled by using the following command in WMI or a PowerShell script:</p>
 
@@ -1205,7 +1205,7 @@ Each of these are described in further detail in the following sections, along w
 <a href="" id="pcr0"></a>**PCR0**
 <p>The measurement that is captured in PCR[0] typically represents a consistent view of the Host Platform between boot cycles. It contains a measurement of components that are provided by the host platform manufacturer.</p>
 
-<p>Enterprise managers can create a allow list of trusted PCR[0] values, compare the PCR[0] value of the managed devices (the value that is verified and reported by HAS) with the allow list, and then make a trust decision based on the result of the comparison.</p>
+<p>Enterprise managers can create an allow list of trusted PCR[0] values, compare the PCR[0] value of the managed devices (the value that is verified and reported by HAS) with the allow list, and then make a trust decision based on the result of the comparison.</p>
 
 <p>If your enterprise does not have a allow list of accepted PCR[0] values, then take no action.</p>
 
@@ -1231,7 +1231,7 @@ Each of these are described in further detail in the following sections, along w
 
 <p>If CIPolicy is not present, or is an accepted allow-listed value, then allow access.</p>
 
-<p>If CIPolicy is present and is not a allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
+<p>If CIPolicy is present and is not an allow-listed value, then take one of the following actions that align with your enterprise policies:</p>
 
 - Disallow all access
 - Place the device in a watch list to monitor the device more closely for potential risks.
