@@ -22,7 +22,7 @@ The following shows the DMClient CSP in tree format.
 ./Vendor/MSFT
 DMClient
 ----Provider
---------
+--------ProviderID
 ------------EntDeviceName
 ------------ExchangeID
 ------------EntDMID
@@ -45,6 +45,10 @@ DMClient
 ------------HWDevID
 ------------ManagementServerAddressList
 ------------CommercialID
+------------ConfigLock
+----------------Lock
+----------------UnlockDuration
+----------------SecureCore
 ------------Push
 ----------------PFN
 ----------------ChannelURI
@@ -597,6 +601,27 @@ Supported operations are Add, Get, and Replace.
 Optional. Boolean value that allows the IT admin to require the device to start a management session on first user login for all NT users. A session is only kicked off the first time a user logs in to the system; subsequent logins will not trigger an MDM session. Login is not the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.
 
 Supported operations are Add, Get, and Replace.
+
+<a href="" id="provider-providerid-configlock"></a>**Provider/*ProviderID*/ConfigLock**
+
+Configuration Drift is a major concern for commercial customers. Some customers view it as a security risk. This node mitigates the customer concern by bringing the capability to monitor and quickly remediate the policy configuration when a device is MDM managed.
+
+Default = Locked
+
+> [!Note]
+>If the device is not Secure Core, then this feature will not work.
+
+<a href="" id="provider-providerid-configlock-lock"></a>**Provider/*ProviderID*/ConfigLock/Lock**
+
+Supported operations are Add, Delete, Get. Supported values are 0-unlock, 1-lock.
+
+<a href="" id="provider-providerid-configlock-unlockduration"></a>**Provider/*ProviderID*/ConfigLock/UnlockDuration**
+
+Supported operations are Add, Delete, Get. Supported values are 1 to 480 (in min).
+
+<a href="" id="provider-providerid-configlock-securecore"></a>**Provider/*ProviderID*/ConfigLock/SecureCore**
+
+Supported operation is Get only. Supported values are false or true.
 
 <a href="" id="provider-providerid-push"></a>**Provider/*ProviderID*/Push**  
 Optional. Not configurable during WAP Provisioning XML. If removed, DM sessions triggered by Push will no longer be supported.
