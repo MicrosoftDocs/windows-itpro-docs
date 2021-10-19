@@ -4671,186 +4671,7 @@ The following fields are available:
 - **totalRunDuration**  Total running/evaluation time from last time.
 - **totalRuns**  Total number of running/evaluation from last time.
 
-
-## Other events
-
-### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
-
-This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
-
-The following fields are available:
-
-- **batteryData**  Battery Performance data.
-- **batteryData.data()**  Battery performance data.
-- **BatteryDataSize:**  Size of the battery performance data.
-- **batteryInfo.data()**  Battery performance data.
-- **BatteryInfoSize:**  Size of the battery performance data.
-- **pszBatteryDataXml**  Battery performance data.
-- **szBatteryInfo**  Battery performance data.
-
-
-### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_BPM
-
-This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **BPMCurrentlyEngaged**  Instantaneous snapshot if BPM is engaged on device.
-- **BPMExitCriteria**  What is the BPM exit criteria - 20%SOC or 50%SOC?
-- **BPMHvtCountA**  Current HVT count for BPM counter A.
-- **BPMHvtCountB**  Current HVT count for BPM counter B.
-- **bpmOptOutLifetimeCount**  BPM OptOut Lifetime Count.
-- **BPMRsocBucketsHighTemp_Values**  Time in temperature range 46°C -60°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
-- **BPMRsocBucketsLowTemp_Values**  Time in temperature range 0°C -20°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
-- **BPMRsocBucketsMediumHighTemp_Values**  Time in temperature range 36°C -45°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
-- **BPMRsocBucketsMediumLowTemp_Values**  Time in temperature range 21°C-35°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
-- **BPMTotalEngagedMinutes**  Total time that BPM was engaged.
-- **BPMTotalEntryEvents**  Total number of times entering BPM.
-- **ComponentId**  Component ID.
-- **FwVersion**  FW version that created this log.
-- **LogClass**  Log Class.
-- **LogInstance**  Log instance within class (1..n).
-- **LogVersion**  Log MGR version.
-- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
-- **ProductId**  Product ID.
-- **SeqNum**  Sequence Number.
-- **TimeStamp**  UTC seconds when log was created.
-- **Ver**  Schema version.
-
-
-### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_CTT
-
-This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **BPMKioskModeStartDateInSeconds**  First time Battery Limit was turned on.
-- **BPMKioskModeTotalEngagedMinutes**  Total time Battery Limit was on (SOC value at 50%).
-- **ComponentId**  Component ID.
-- **CTTEqvTimeat35C**  Poll time every minute. Add to lifetime counter based on temperature. Only count time above 80% SOC.
-- **CTTEqvTimeat35CinBPM**  Poll time every minute. Add to lifetime counter based on temperature. Only count time above 55% SOC and when device is in BPM. Round up.
-- **CTTMinSOC1day**  Rolling 1 day minimum SOC. Value set to 0 initially.
-- **CTTMinSOC28day**  Rolling 28 day minimum SOC. Value set to 0 initially.
-- **CTTMinSOC3day**  Rolling 3 day minimum SOC. Value set to 0 initially.
-- **CTTMinSOC7day**  Rolling 7 day minimum SOC. Value set to 0 initially.
-- **CTTStartDateInSeconds**  Start date from when device was starting to be used.
-- **currentAuthenticationState**  Current Authentication State.
-- **FwVersion**  FW version that created this log.
-- **LogClass**  Log Class.
-- **LogInstance**  Log instance within class (1..n).
-- **LogVersion**  Log MGR version.
-- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
-- **newSnFruUpdateCount**  New Sn FRU Update Count.
-- **newSnUpdateCount**  New Sn Update Count.
-- **ProductId**  Product ID.
-- **ProtectionPolicy**  Battery limit engaged. True (0 False).
-- **SeqNum**  Sequence Number.
-- **TimeStamp**  UTC seconds when log was created.
-- **Ver**  Schema version.
-- **VoltageOptimization**  Current CTT reduction in mV.
-
-
-### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_GG
-
-This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **cbTimeCell_Values**  cb time for different cells.
-- **ComponentId**  Component ID.
-- **cycleCount**  Cycle Count.
-- **deltaVoltage**  Delta voltage.
-- **eocChargeVoltage_Values**  EOC Charge voltage values.
-- **fullChargeCapacity**  Full Charge Capacity.
-- **FwVersion**  FW version that created this log.
-- **lastCovEvent**  Last Cov event.
-- **lastCuvEvent**  Last Cuv event.
-- **LogClass**  LOG_CLASS.
-- **LogInstance**  Log instance within class (1..n).
-- **LogVersion**  LOG_MGR_VERSION.
-- **manufacturerName**  Manufacturer name.
-- **maxChargeCurrent**  Max charge current.
-- **maxDeltaCellVoltage**  Max delta cell voltage.
-- **maxDischargeCurrent**  Max discharge current.
-- **maxTempCell**  Max temp cell.
-- **maxVoltage_Values**  Max voltage values.
-- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
-- **minTempCell**  Min temp cell.
-- **minVoltage_Values**  Min voltage values.
-- **numberOfCovEvents**  Number of Cov events.
-- **numberOfCuvEvents**  Number of Cuv events.
-- **numberOfOCD1Events**  Number of OCD1 events.
-- **numberOfOCD2Events**  Number of OCD2 events.
-- **numberOfQmaxUpdates**  Number of Qmax updates.
-- **numberOfRaUpdates**  Number of Ra updates.
-- **numberOfShutdowns**  Number of shutdowns.
-- **pfStatus_Values**  pf status values.
-- **ProductId**  Product ID.
-- **qmax_Values**  Qmax values for different cells.
-- **SeqNum**  Sequence Number.
-- **TimeStamp**  UTC seconds when log was created.
-- **Ver**  Schema version.
-
-
-### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_GGExt
-
-This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **avgCurrLastRun**  Average current last run.
-- **avgPowLastRun**  Average power last run.
-- **batteryMSPN**  BatteryMSPN
-- **batteryMSSN**  BatteryMSSN.
-- **cell0Ra3**  Cell0Ra3.
-- **cell1Ra3**  Cell1Ra3.
-- **cell2Ra3**  Cell2Ra3.
-- **cell3Ra3**  Cell3Ra3.
-- **ComponentId**  Component ID.
-- **currentAtEoc**  Current at Eoc.
-- **firstPFstatusA**  First PF status-A.
-- **firstPFstatusB**  First PF status-B.
-- **firstPFstatusC**  First PF status-C.
-- **firstPFstatusD**  First PF status-D.
-- **FwVersion**  FW version that created this log.
-- **lastQmaxUpdate**  Last Qmax update.
-- **lastRaDisable**  Last Ra disable.
-- **lastRaUpdate**  Last Ra update.
-- **lastValidChargeTerm**  Last valid charge term.
-- **LogClass**  LOG CLASS.
-- **LogInstance**  Log instance within class (1..n).
-- **LogVersion**  LOG MGR VERSION.
-- **maxAvgCurrLastRun**  Max average current last run.
-- **maxAvgPowLastRun**  Max average power last run.
-- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
-- **mfgInfoBlockB01**  MFG info Block B01.
-- **mfgInfoBlockB02**  MFG info Block B02.
-- **mfgInfoBlockB03**  MFG info Block B03.
-- **mfgInfoBlockB04**  MFG info Block B04.
-- **numOfRaDisable**  Number of Ra disable.
-- **numOfValidChargeTerm**  Number of valid charge term.
-- **ProductId**  Product ID.
-- **qmaxCycleCount**  Qmax cycle count.
-- **SeqNum**  Sequence Number.
-- **stateOfHealthEnergy**  State of health energy.
-- **stateOfHealthFcc**  State of health Fcc.
-- **stateOfHealthPercent**  State of health percent.
-- **TimeStamp**  UTC seconds when log was created.
-- **totalFwRuntime**  Total FW runtime.
-- **updateStatus**  Update status.
-- **Ver**  Schema version.
-
-
-### Microsoft.Surface.SystemReset.Prod.ResetCauseEventV2
-
-This event sends reason for SAM, PCH and SoC reset. The data collected with this event is used to keep Windows performing properly.
-
-The following fields are available:
-
-- **HostResetCause**  Host reset cause.
-- **PchResetCause**  PCH reset cause.
-- **SamResetCause**  SAM reset cause.
-
+## Settings events
 
 ### Microsoft.Windows.Shell.SystemSettings.SettingsAppActivity.ProtocolActivation
 
@@ -4860,89 +4681,6 @@ The following fields are available:
 
 - **activationSource**  Where activation is initiated.
 - **uriString**  URI of the launching protocol.
-
-
-### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantCompatCheckResult
-
-This event provides the result of running the compatibility check for update assistant. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  The global event counter for all telemetry on the device.
-- **UpdateAssistantCompatCheckResultOutput**  Output of compatibility check for update assistant.
-- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
-
-
-### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantDeviceInformation
-
-This event provides basic information about the device where update assistant was run. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  The global event counter for all telemetry on the device.
-- **UpdateAssistantAppFilePath**  Path to Update Assistant app.
-- **UpdateAssistantDeviceId**  Device Id of the Update Assistant Candidate Device.
-- **UpdateAssistantExeName**  Exe name running as Update Assistant.
-- **UpdateAssistantExternalId**  External Id of the Update Assistant Candidate Device.
-- **UpdateAssistantIsDeviceCloverTrail**  True/False is the device clovertrail.
-- **UpdateAssistantIsPushing**  True if the update is pushing to the device.
-- **UpdateAssistantMachineId**  Machine Id of the Update Assistant Candidate Device.
-- **UpdateAssistantOsVersion**  Update Assistant OS Version.
-- **UpdateAssistantPartnerId**  Partner Id for Assistant application.
-- **UpdateAssistantReportPath**  Path to report for Update Assistant.
-- **UpdateAssistantStartTime**  Start time for UpdateAssistant.
-- **UpdateAssistantTargetOSVersion**  Update Assistant Target OS Version.
-- **UpdateAssistantUiType**  The type of UI whether default or OOBE.
-- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
-- **UpdateAssistantVersionInfo**  Information about Update Assistant application.
-
-
-### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantEULAProperty
-
-This event is set to true at the start of AcceptEULA. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  The global event counter for all telemetry on the device.
-- **UpdateAssistantEULAPropertyGeoId**  Geo Id used to show EULA.
-- **UpdateAssistantEULAPropertyRegion**  Region used to show EULA.
-- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
-
-
-### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
-
-This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  The global event counter for all telemetry on the device.
-- **UpdateAssistantStateAcceptEULA**  True at the start of AcceptEULA.
-- **UpdateAssistantStateCheckingCompat**  True at the start of Checking Compat
-- **UpdateAssistantStateCheckingUpgrade**  True at the start of CheckingUpgrade.
-- **UpdateAssistantStateDownloading**  True at the start Downloading.
-- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
-- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
-- **UpdateAssistantStateInstalling**  True at the start of Installing.
-- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
-- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
-
-
-### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantUserActionDetails
-
-This event provides details about user action. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **CV**  The correlation vector.
-- **GlobalEventCounter**  The global event counter for all telemetry on the device.
-- **UpdateAssistantUserActionExitingState**  Exiting state name user performed action on.
-- **UpdateAssistantUserActionHResult**  HRESULT of user action.
-- **UpdateAssistantUserActionState**  State name user performed action on.
-- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
 
 
 ## Privacy consent logging events
@@ -5547,6 +5285,182 @@ The following fields are available:
 - **healthLogSize**  4KB.
 - **productId**  Identifier for product model.
 
+### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
+
+This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
+
+The following fields are available:
+
+- **batteryData**  Battery Performance data.
+- **batteryData.data()**  Battery performance data.
+- **BatteryDataSize:**  Size of the battery performance data.
+- **batteryInfo.data()**  Battery performance data.
+- **BatteryInfoSize:**  Size of the battery performance data.
+- **pszBatteryDataXml**  Battery performance data.
+- **szBatteryInfo**  Battery performance data.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_BPM
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **BPMCurrentlyEngaged**  Instantaneous snapshot if BPM is engaged on device.
+- **BPMExitCriteria**  What is the BPM exit criteria - 20%SOC or 50%SOC?
+- **BPMHvtCountA**  Current HVT count for BPM counter A.
+- **BPMHvtCountB**  Current HVT count for BPM counter B.
+- **bpmOptOutLifetimeCount**  BPM OptOut Lifetime Count.
+- **BPMRsocBucketsHighTemp_Values**  Time in temperature range 46°C -60°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMRsocBucketsLowTemp_Values**  Time in temperature range 0°C -20°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMRsocBucketsMediumHighTemp_Values**  Time in temperature range 36°C -45°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMRsocBucketsMediumLowTemp_Values**  Time in temperature range 21°C-35°C and in the following true RSOC ranges: 0%-49%; 50%-79%; 80%-89%; 90%-94%; 95%-100%.
+- **BPMTotalEngagedMinutes**  Total time that BPM was engaged.
+- **BPMTotalEntryEvents**  Total number of times entering BPM.
+- **ComponentId**  Component ID.
+- **FwVersion**  FW version that created this log.
+- **LogClass**  Log Class.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  Log MGR version.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **ProductId**  Product ID.
+- **SeqNum**  Sequence Number.
+- **TimeStamp**  UTC seconds when log was created.
+- **Ver**  Schema version.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_CTT
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **BPMKioskModeStartDateInSeconds**  First time Battery Limit was turned on.
+- **BPMKioskModeTotalEngagedMinutes**  Total time Battery Limit was on (SOC value at 50%).
+- **ComponentId**  Component ID.
+- **CTTEqvTimeat35C**  Poll time every minute. Add to lifetime counter based on temperature. Only count time above 80% SOC.
+- **CTTEqvTimeat35CinBPM**  Poll time every minute. Add to lifetime counter based on temperature. Only count time above 55% SOC and when device is in BPM. Round up.
+- **CTTMinSOC1day**  Rolling 1 day minimum SOC. Value set to 0 initially.
+- **CTTMinSOC28day**  Rolling 28 day minimum SOC. Value set to 0 initially.
+- **CTTMinSOC3day**  Rolling 3 day minimum SOC. Value set to 0 initially.
+- **CTTMinSOC7day**  Rolling 7 day minimum SOC. Value set to 0 initially.
+- **CTTStartDateInSeconds**  Start date from when device was starting to be used.
+- **currentAuthenticationState**  Current Authentication State.
+- **FwVersion**  FW version that created this log.
+- **LogClass**  Log Class.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  Log MGR version.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **newSnFruUpdateCount**  New Sn FRU Update Count.
+- **newSnUpdateCount**  New Sn Update Count.
+- **ProductId**  Product ID.
+- **ProtectionPolicy**  Battery limit engaged. True (0 False).
+- **SeqNum**  Sequence Number.
+- **TimeStamp**  UTC seconds when log was created.
+- **Ver**  Schema version.
+- **VoltageOptimization**  Current CTT reduction in mV.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_GG
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **cbTimeCell_Values**  cb time for different cells.
+- **ComponentId**  Component ID.
+- **cycleCount**  Cycle Count.
+- **deltaVoltage**  Delta voltage.
+- **eocChargeVoltage_Values**  EOC Charge voltage values.
+- **fullChargeCapacity**  Full Charge Capacity.
+- **FwVersion**  FW version that created this log.
+- **lastCovEvent**  Last Cov event.
+- **lastCuvEvent**  Last Cuv event.
+- **LogClass**  LOG_CLASS.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  LOG_MGR_VERSION.
+- **manufacturerName**  Manufacturer name.
+- **maxChargeCurrent**  Max charge current.
+- **maxDeltaCellVoltage**  Max delta cell voltage.
+- **maxDischargeCurrent**  Max discharge current.
+- **maxTempCell**  Max temp cell.
+- **maxVoltage_Values**  Max voltage values.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **minTempCell**  Min temp cell.
+- **minVoltage_Values**  Min voltage values.
+- **numberOfCovEvents**  Number of Cov events.
+- **numberOfCuvEvents**  Number of Cuv events.
+- **numberOfOCD1Events**  Number of OCD1 events.
+- **numberOfOCD2Events**  Number of OCD2 events.
+- **numberOfQmaxUpdates**  Number of Qmax updates.
+- **numberOfRaUpdates**  Number of Ra updates.
+- **numberOfShutdowns**  Number of shutdowns.
+- **pfStatus_Values**  pf status values.
+- **ProductId**  Product ID.
+- **qmax_Values**  Qmax values for different cells.
+- **SeqNum**  Sequence Number.
+- **TimeStamp**  UTC seconds when log was created.
+- **Ver**  Schema version.
+
+
+### Microsoft.Surface.Battery.Prod.BatteryInfoEventV2_GGExt
+
+This event includes the hardware level data about battery performance. The data The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **avgCurrLastRun**  Average current last run.
+- **avgPowLastRun**  Average power last run.
+- **batteryMSPN**  BatteryMSPN
+- **batteryMSSN**  BatteryMSSN.
+- **cell0Ra3**  Cell0Ra3.
+- **cell1Ra3**  Cell1Ra3.
+- **cell2Ra3**  Cell2Ra3.
+- **cell3Ra3**  Cell3Ra3.
+- **ComponentId**  Component ID.
+- **currentAtEoc**  Current at Eoc.
+- **firstPFstatusA**  First PF status-A.
+- **firstPFstatusB**  First PF status-B.
+- **firstPFstatusC**  First PF status-C.
+- **firstPFstatusD**  First PF status-D.
+- **FwVersion**  FW version that created this log.
+- **lastQmaxUpdate**  Last Qmax update.
+- **lastRaDisable**  Last Ra disable.
+- **lastRaUpdate**  Last Ra update.
+- **lastValidChargeTerm**  Last valid charge term.
+- **LogClass**  LOG CLASS.
+- **LogInstance**  Log instance within class (1..n).
+- **LogVersion**  LOG MGR VERSION.
+- **maxAvgCurrLastRun**  Max average current last run.
+- **maxAvgPowLastRun**  Max average power last run.
+- **MCUInstance**  Instance id used to identify multiple MCU's in a product.
+- **mfgInfoBlockB01**  MFG info Block B01.
+- **mfgInfoBlockB02**  MFG info Block B02.
+- **mfgInfoBlockB03**  MFG info Block B03.
+- **mfgInfoBlockB04**  MFG info Block B04.
+- **numOfRaDisable**  Number of Ra disable.
+- **numOfValidChargeTerm**  Number of valid charge term.
+- **ProductId**  Product ID.
+- **qmaxCycleCount**  Qmax cycle count.
+- **SeqNum**  Sequence Number.
+- **stateOfHealthEnergy**  State of health energy.
+- **stateOfHealthFcc**  State of health Fcc.
+- **stateOfHealthPercent**  State of health percent.
+- **TimeStamp**  UTC seconds when log was created.
+- **totalFwRuntime**  Total FW runtime.
+- **updateStatus**  Update status.
+- **Ver**  Schema version.
+
+
+### Microsoft.Surface.SystemReset.Prod.ResetCauseEventV2
+
+This event sends reason for SAM, PCH and SoC reset. The data collected with this event is used to keep Windows performing properly.
+
+The following fields are available:
+
+- **HostResetCause**  Host reset cause.
+- **PchResetCause**  PCH reset cause.
+- **SamResetCause**  SAM reset cause.
 
 ## Update Assistant events
 
@@ -6024,6 +5938,87 @@ The following fields are available:
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of remediation.
 
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantCompatCheckResult
+
+This event provides the result of running the compatibility check for update assistant. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantCompatCheckResultOutput**  Output of compatibility check for update assistant.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantDeviceInformation
+
+This event provides basic information about the device where update assistant was run. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantAppFilePath**  Path to Update Assistant app.
+- **UpdateAssistantDeviceId**  Device Id of the Update Assistant Candidate Device.
+- **UpdateAssistantExeName**  Exe name running as Update Assistant.
+- **UpdateAssistantExternalId**  External Id of the Update Assistant Candidate Device.
+- **UpdateAssistantIsDeviceCloverTrail**  True/False is the device clovertrail.
+- **UpdateAssistantIsPushing**  True if the update is pushing to the device.
+- **UpdateAssistantMachineId**  Machine Id of the Update Assistant Candidate Device.
+- **UpdateAssistantOsVersion**  Update Assistant OS Version.
+- **UpdateAssistantPartnerId**  Partner Id for Assistant application.
+- **UpdateAssistantReportPath**  Path to report for Update Assistant.
+- **UpdateAssistantStartTime**  Start time for UpdateAssistant.
+- **UpdateAssistantTargetOSVersion**  Update Assistant Target OS Version.
+- **UpdateAssistantUiType**  The type of UI whether default or OOBE.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+- **UpdateAssistantVersionInfo**  Information about Update Assistant application.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantEULAProperty
+
+This event is set to true at the start of AcceptEULA. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantEULAPropertyGeoId**  Geo Id used to show EULA.
+- **UpdateAssistantEULAPropertyRegion**  Region used to show EULA.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantStartState
+
+This event marks the start of an Update Assistant State. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantStateAcceptEULA**  True at the start of AcceptEULA.
+- **UpdateAssistantStateCheckingCompat**  True at the start of Checking Compat
+- **UpdateAssistantStateCheckingUpgrade**  True at the start of CheckingUpgrade.
+- **UpdateAssistantStateDownloading**  True at the start Downloading.
+- **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
+- **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
+- **UpdateAssistantStateInstalling**  True at the start of Installing.
+- **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
+
+
+### Microsoft.Windows.UpdateAssistantApp.UpdateAssistantUserActionDetails
+
+This event provides details about user action. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **CV**  The correlation vector.
+- **GlobalEventCounter**  The global event counter for all telemetry on the device.
+- **UpdateAssistantUserActionExitingState**  Exiting state name user performed action on.
+- **UpdateAssistantUserActionHResult**  HRESULT of user action.
+- **UpdateAssistantUserActionState**  State name user performed action on.
+- **UpdateAssistantVersion**  Current package version of UpdateAssistant.
 
 ## Update events
 

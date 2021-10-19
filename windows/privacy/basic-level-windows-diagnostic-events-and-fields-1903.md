@@ -5947,27 +5947,6 @@ The following fields are available:
 - **ModelName**  Windows Mixed Reality device model name.
 - **SerialNumber**  Windows Mixed Reality device serial number.
 
-
-## OneDrive events
-
-### Microsoft.OneDrive.Sync.Setup.OSUpgradeInstallationOperation
-
-This event is related to the OS version when the OS is upgraded with OneDrive installed. The data collected with this event is used to help keep Windows up to date, secure, and performing properly.
-
-The following fields are available:
-
-- **CurrentOneDriveVersion**  The current version of OneDrive.
-- **CurrentOSBuildBranch**  The current branch of the operating system.
-- **CurrentOSBuildNumber**  The current build number of the operating system.
-- **CurrentOSVersion**  The current version of the operating system.
-- **HResult**  The HResult of the operation.
-- **SourceOSBuildBranch**  The source branch of the operating system.
-- **SourceOSBuildNumber**  The source build number of the operating system.
-- **SourceOSVersion**  The source version of the operating system.
-
-
-## Other events
-
 ### Microsoft.ML.ONNXRuntime.ProcessInfo
 
 This event collects information when an application loads ONNXRuntime.dll. The data collected with this event is used to keep Windows product and service performing properly.
@@ -5992,21 +5971,52 @@ The following fields are available:
 - **totalRunDuration**  Total running/evaluation time from last time.
 - **totalRuns**  Total number of running/evaluation from last time.
 
+## OneDrive events
 
-### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
+### Microsoft.OneDrive.Sync.Setup.OSUpgradeInstallationOperation
 
-This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
+This event is related to the OS version when the OS is upgraded with OneDrive installed. The data collected with this event is used to help keep Windows up to date, secure, and performing properly.
 
 The following fields are available:
 
-- **batteryData**  Hardware level data about battery performance.
-- **batteryData.data()**  Battery performance data.
-- **BatteryDataSize:**  Size of the battery performance data.
-- **batteryInfo.data()**  Battery performance data.
-- **BatteryInfoSize:**  Battery performance data.
-- **pszBatteryDataXml**  Battery performance data.
-- **szBatteryInfo**  Battery performance data.
+- **CurrentOneDriveVersion**  The current version of OneDrive.
+- **CurrentOSBuildBranch**  The current branch of the operating system.
+- **CurrentOSBuildNumber**  The current build number of the operating system.
+- **CurrentOSVersion**  The current version of the operating system.
+- **HResult**  The HResult of the operation.
+- **SourceOSBuildBranch**  The source branch of the operating system.
+- **SourceOSBuildNumber**  The source build number of the operating system.
+- **SourceOSVersion**  The source version of the operating system.
 
+## Privacy consent logging events
+
+### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
+
+This event is used to determine whether the user successfully completed the privacy consent experience. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **presentationVersion**  Which display version of the privacy consent experience the user completed
+- **privacyConsentState**  The current state of the privacy consent experience
+- **settingsVersion**  Which setting version of the privacy consent experience the user completed
+- **userOobeExitReason**  The exit reason of the privacy consent experience
+
+
+### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentStatus
+
+This event provides the effectiveness of new privacy experience. The data collected with this event is used to help keep Windows up to date.
+
+The following fields are available:
+
+- **isAdmin**  whether the person who is logging in is an admin
+- **isExistingUser**  whether the account existed in a downlevel OS
+- **isLaunching**  Whether or not the privacy consent experience will be launched
+- **isSilentElevation**  whether the user has most restrictive UAC controls
+- **privacyConsentState**  whether the user has completed privacy experience
+- **userRegionCode**  The current user's region setting
+
+
+## Update Assistant events
 
 ### Microsoft.Windows.UpdateHealthTools.ExpediteBlocked
 
@@ -6386,37 +6396,6 @@ The following fields are available:
 - **CV**  Correlation vector.
 - **GlobalEventCounter**  Client side counter which indicates ordering of events sent by this user.
 - **PackageVersion**  Current package version of remediation.
-
-
-## Privacy consent logging events
-
-### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentCompleted
-
-This event is used to determine whether the user successfully completed the privacy consent experience. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **presentationVersion**  Which display version of the privacy consent experience the user completed
-- **privacyConsentState**  The current state of the privacy consent experience
-- **settingsVersion**  Which setting version of the privacy consent experience the user completed
-- **userOobeExitReason**  The exit reason of the privacy consent experience
-
-
-### Microsoft.Windows.Shell.PrivacyConsentLogging.PrivacyConsentStatus
-
-This event provides the effectiveness of new privacy experience. The data collected with this event is used to help keep Windows up to date.
-
-The following fields are available:
-
-- **isAdmin**  whether the person who is logging in is an admin
-- **isExistingUser**  whether the account existed in a downlevel OS
-- **isLaunching**  Whether or not the privacy consent experience will be launched
-- **isSilentElevation**  whether the user has most restrictive UAC controls
-- **privacyConsentState**  whether the user has completed privacy experience
-- **userRegionCode**  The current user's region setting
-
-
-## Quality Update Assistant events
 
 ### Microsoft.Windows.QualityUpdateAssistant.Applicability
 
@@ -7088,6 +7067,19 @@ The following fields are available:
 - **healthLogSize**  4KB.
 - **productId**  Identifier for product model.
 
+### Microsoft.Surface.Battery.Prod.BatteryInfoEvent
+
+This event includes the hardware level data about battery performance. The data collected with this event is used to help keep Windows products and services performing properly.
+
+The following fields are available:
+
+- **batteryData**  Hardware level data about battery performance.
+- **batteryData.data()**  Battery performance data.
+- **BatteryDataSize:**  Size of the battery performance data.
+- **batteryInfo.data()**  Battery performance data.
+- **BatteryInfoSize:**  Battery performance data.
+- **pszBatteryDataXml**  Battery performance data.
+- **szBatteryInfo**  Battery performance data.
 
 ## System reset events
 
