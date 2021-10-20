@@ -29,9 +29,22 @@ Programming considerations:
 -   For the WiFi CSP, you cannot use the Replace command unless the node already exists.
 -   Using Proxyis only supported in Windows 10 Mobile. Using this configuration in Windows 10 for desktop editions (Home, Pro, Enterprise, and Education) will result in failure.
 
-The following image shows the WiFi configuration service provider in tree format.
+The following shows the WiFi configuration service provider in tree format.
 
-![wi-fi csp diagram.](images/provisioning-csp-wifi.png)
+```
+./Device/Vendor/MSFT
+or
+./User/Vendor/MSFT
+WiFi
+---Profile 
+------SSID
+---------WlanXML
+---------Proxy
+---------ProxyPacUrl
+---------ProxyWPAD
+---------WiFiCost
+```
+
 
 The following list shows the characteristics and parameters.
 

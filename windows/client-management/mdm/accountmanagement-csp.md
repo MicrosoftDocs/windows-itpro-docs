@@ -19,10 +19,18 @@ AccountManagement CSP is used to configure setting in the Account Manager servic
 > [!NOTE]
 > The AccountManagement CSP is only supported in Windows Holographic for Business edition.
 
+The following shows the AccountManagement configuration service provider in tree format.
 
-The following diagram shows the AccountManagement configuration service provider in tree format.
-
-![accountmanagement csp.](images/provisioning-csp-accountmanagement.png)
+```
+./Vendor/MSFT
+AccountManagement
+----UserProfileManagement
+--------EnableProfileManager
+--------DeletionPolicy
+--------StorageCapacityStartDeletion
+--------StorageCapacityStopDeletion
+--------ProfileInactivityThreshold
+```
 
 <a href="" id="accountmanagement"></a>**./Vendor/MSFT/AccountManagement**  
 Root node for the AccountManagement configuration service provider.

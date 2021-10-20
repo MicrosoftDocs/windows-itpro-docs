@@ -22,9 +22,16 @@ The FileSystem configuration service provider is used to query, add, modify, and
 > [!NOTE]
 > This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_OEM capabilities to be accessed from a network configuration application.
 
-The following diagram shows the FileSystem configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
+The following shows the FileSystem configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
 
-![filesystem csp (dm).](images/provisioning-csp-filesystem-dm.png)
+```
+./Vendor/MSFT
+FileSystem
+----file name
+----file directory
+--------file name
+--------file directory
+```
 
 <a href="" id="filesystem"></a>**FileSystem**
 Required. Defines the root of the file system management object. It functions as the root directory for file system queries.

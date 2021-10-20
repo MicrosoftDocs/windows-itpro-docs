@@ -23,7 +23,36 @@ manager: dansimp
 
 [EnterpriseAppVManagement CSP reference](./enterpriseappvmanagement-csp.md)
 
-![enterpriseappvmanagement csp.](images/provisioning-csp-enterpriseappvmanagement.png)
+The following shows the EnterpriseAppVManagement configuration service provider in tree format.
+
+```
+./Vendor/MSFT
+EnterpriseAppVManagement
+----AppVPackageManagement
+--------EnterpriseID
+------------PackageFamilyName
+---------------PackageFullName
+------------------Name
+------------------Version
+------------------Publisher
+------------------InstallLocation
+------------------InstallDate
+------------------Users
+------------------AppVPackageID
+------------------AppVVersionId
+------------------AppVPackageUri
+----AppVPublishing
+--------LastSync
+------------LastError
+------------LastErrorDescription
+------------SyncStatusDescription
+------------SyncProgress
+--------Sync
+------------PublishXML
+----AppVDynamicPolicy
+--------ConfigurationId
+------------Policy
+```
 
 <p>(./User/Vendor/MSFT/EnterpriseAppVManagement) contains the following sub-nodes.</p>
 

@@ -24,9 +24,27 @@ The DeviceInstance CSP is only supported in Windows 10 Mobile.
 
  
 
-The following diagram shows the DeviceInstanceService configuration service provider in tree format.
+The following shows the DeviceInstanceService configuration service provider in tree format.
 
-![provisioning\-csp\-deviceinstanceservice.](images/provisioning-csp-deviceinstanceservice.png)
+```
+./Vendor/MSFT
+DeviceInstanceService
+------------Roaming
+------------PhoneNumber
+------------IMEI
+------------IMSI
+------------Identity
+---------------Identity1
+------------------Roaming
+------------------PhoneNumber
+------------------IMEI
+------------------IMSI
+---------------Identity2
+------------------PhoneNumber
+------------------IMEI
+------------------IMSI
+------------------Roaming
+```
 
 <a href="" id="roaming"></a>**Roaming**  
 A boolean value that specifies the roaming status of the device. In dual SIM mode when the device supports two different phone numbers, querying SIM 1 explicitly with ./Vendor/MSFT/DeviceInstanceService/Identify1/Roaming is functionally equivalent to using ./Vendor/MSFT/DeviceInstanceService/Roaming.
@@ -36,34 +54,34 @@ Supported operation is **Get**.
 Returns **True** if the device is roaming; otherwise **False**.
 
 <a href="" id="phonenumber"></a>**PhoneNumber**  
-A string that represents the phone number of the device. In case of dual SIM mode when the device supports two different phone numbers, querying SIM 1 explicitly with ./Vendor/MSFT/DeviceInstanceService/Identify1/PhoneNumber is functionally equivalent to using ./Vendor/MSFT/DeviceInstanceService/PhoneNumber.
+A string that represents the phone number of the device. In dual SIM mode, when the device supports two different phone numbers, querying SIM 1 explicitly with ./Vendor/MSFT/DeviceInstanceService/Identify1/PhoneNumber is functionally equivalent to using ./Vendor/MSFT/DeviceInstanceService/PhoneNumber.
 
 Value type is chr.
 
 Supported operation is **Get**.
 
 <a href="" id="imei"></a>**IMEI**  
-A string the represents the International Mobile Station Equipment Identity (IMEI) of the device. In case of dual SIM mode when the device supports two different phone numbers, querying SIM 1 explicitly with ./Vendor/MSFT/DeviceInstanceService/Identify1/IMEI is functionally equivalent to using ./Vendor/MSFT/DeviceInstanceService/IMEI.
+A string the represents the International Mobile Station Equipment Identity (IMEI) of the device. In dual SIM mode, when the device supports two different phone numbers, querying SIM 1 explicitly with ./Vendor/MSFT/DeviceInstanceService/Identify1/IMEI is functionally equivalent to using ./Vendor/MSFT/DeviceInstanceService/IMEI.
 
 Value type is chr.
 
 Supported operation is **Get**.
 
 <a href="" id="imsi"></a>**IMSI**  
-A string that represents the first six digits of device IMSI number (Mobile Country/region Code, Mobile Network Code) of the device. In case of dual SIM mode when the device supports two different phone numbers, querying SIM 1 explicitly with ./Vendor/MSFT/DeviceInstanceService/Identify1/IMSI is functionally equivalent to using ./Vendor/MSFT/DeviceInstanceService/IMSI.
+A string that represents the first six digits of device IMSI number (Mobile Country/region Code, Mobile Network Code) of the device. In dual SIM mode when the device supports two different phone numbers, querying SIM 1 explicitly with ./Vendor/MSFT/DeviceInstanceService/Identify1/IMSI is functionally equivalent to using ./Vendor/MSFT/DeviceInstanceService/IMSI.
 
 Value type is chr.
 
 Supported operation is **Get**.
 
 <a href="" id="identity"></a>**Identity**  
-The parent node to group per SIM specific information in case of dual SIM mode.
+The parent node to group per SIM-specific information in dual SIM mode.
 
 <a href="" id="identity1"></a>**Identity1**  
-The parent node to group SIM1 specific information in case of dual SIM mode.
+The parent node to group SIM1 specific information in dual SIM mode.
 
 <a href="" id="identity2"></a>**Identity2**  
-The parent node to group SIM2 specific information in case of dual SIM mode.
+The parent node to group SIM2 specific information in dual SIM mode.
 
 ## Examples
 

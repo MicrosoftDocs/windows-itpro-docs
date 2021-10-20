@@ -138,9 +138,46 @@ Updates are configured using a combination of the [Update CSP](update-csp.md), a
 
 The enterprise IT can configure auto-update polices via OMA DM using the [Policy CSP](policy-configuration-service-provider.md) (this functionality is not supported in Windows 10 Mobile and Windows 10 Home). Here's the CSP diagram for the Update node in Policy CSP.
 
-The following diagram shows the Update policies in a tree format.
+The following shows the Update policies in a tree format.
 
-![update policies.](images/update-policies.png)
+```
+./Vendor/MSFT
+Policy
+----Config
+--------Update
+-----------ActiveHoursEnd
+-----------ActiveHoursMaxRange
+-----------ActiveHoursStart
+-----------AllowAutoUpdate
+-----------AllowMUUpdateService
+-----------AllowNonMicrosoftSignedUpdate
+-----------AllowUpdateService
+-----------AutoRestartNotificationSchedule
+-----------AutoRestartRequiredNotificationDismissal
+-----------BranchReadinessLevel
+-----------DeferFeatureUpdatesPeriodInDays
+-----------DeferQualityUpdatesPeriodInDays
+-----------DeferUpdatePeriod
+-----------DeferUpgradePeriod
+-----------EngagedRestartDeadline
+-----------EngagedRestartSnoozeSchedule
+-----------EngagedRestartTransitionSchedule
+-----------ExcludeWUDriversInQualityUpdate
+-----------IgnoreMOAppDownloadLimit
+-----------IgnoreMOUpdateDownloadLimit
+-----------PauseDeferrals
+-----------PauseFeatureUpdates
+-----------PauseQualityUpdates
+-----------RequireDeferUpgrade
+-----------RequireUpdateApproval
+-----------ScheduleImminentRestartWarning
+-----------ScheduledInstallDay
+-----------ScheduledInstallTime
+-----------ScheduleRestartWarning
+-----------SetAutoRestartNotificationDisable
+-----------UpdateServiceUrl
+-----------UpdateServiceUrlAlternate
+```
 
 <a href="" id="update-activehoursend"></a>**Update/ActiveHoursEnd**
 > [!NOTE]
@@ -674,9 +711,38 @@ Example
 
 ### Update management
 
-The enterprise IT can configure the set of approved updates and get compliance status via OMA DM using the [Update CSP](update-csp.md). The following diagram shows the Update CSP in tree format..
+The enterprise IT can configure the set of approved updates and get compliance status via OMA DM using the [Update CSP](update-csp.md). The following shows the Update CSP in tree format.
 
-![provisioning csp update.](images/provisioning-csp-update.png)
+```
+./Vendor/MSFT
+Update
+----ApprovedUpdates
+--------Approved Update Guid
+------------ApprovedTime
+----FailedUpdates
+--------Failed Update Guid
+------------HResult
+------------Status
+------------RevisionNumber
+----InstalledUpdates
+--------Installed Update Guid
+------------RevisionNumber
+----InstallableUpdates
+--------Installable Update Guid
+------------Type
+------------RevisionNumber
+----PendingRebootUpdates
+--------Pending Reboot Update Guid
+------------InstalledTime
+------------RevisionNumber
+----LastSuccessfulScanTime
+----DeferUpgrade
+----Rollback
+--------QualityUpdate
+--------FeatureUpdate
+--------QualityUpdateStatus
+--------FeatureUpdateStatus
+```
 
 <a href="" id="update"></a>**Update**
 The root node.

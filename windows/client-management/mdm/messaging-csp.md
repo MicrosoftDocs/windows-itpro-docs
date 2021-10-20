@@ -15,9 +15,18 @@ manager: dansimp
 
 The Messaging configuration service provider is used to configure the ability to get text messages audited on a mobile device. This CSP was added in Windows 10, version 1703.
 
-The following diagram shows the Messaging configuration service provider in tree format.
+The following shows the Messaging configuration service provider in tree format.
 
-![messaging csp.](images/provisioning-csp-messaging.png)
+```
+./User/Vendor/MSFT
+Messaging
+----AuditingLevel
+----Auditing
+--------Messages
+----------Count
+----------RevisionId
+----------Data
+```
 
 <a href="" id="--user-msft-applocker"></a>**./User/Vendor/MSFT/Messaging**  
 

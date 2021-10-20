@@ -19,11 +19,37 @@ The APPLICATION configuration service provider that has an APPID of w7 is used f
 
 > **Note**  This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_DEVICE\_MANAGEMENT\_ADMIN capabilities to be accessed from a network configuration application.
 
- 
 
-The following image shows the configuration service provider in tree format as used by OMA Client Provisioning.
+The following shows the configuration service provider in tree format as used by OMA Client Provisioning.
 
-![w7 application csp (dm).](images/provisioning-csp-w7-application-dm.png)
+```
+APPLICATION
+---APPADDR
+------ADDR
+------ADDRTYPE
+------PORT
+---------PORTNBR
+---APPAUTH
+------AAUTHDATA
+------AAUTHLEVEL
+------AAUTHNAME
+------AAUTHSECRET
+------AAUTHTYPE
+---AppID
+---BACKCOMPATRETRYDISABLED
+---CONNRETRYFREQ
+---DEFAULTENCODING
+---INIT
+---INITIALBACKOFTIME
+---MAXBACKOFTIME
+---NAME
+---PROTOVER
+---PROVIDER-ID
+---ROLE 
+---TO-NAPID
+---USEHWDEVID
+---SSLCLIENTCERTSEARCHCRITERIA
+```
 
 > **Note**   All parm names and characteristic types are case sensitive and must use all uppercase.
 Both APPSRV and CLIENT credentials must be provided in provisioning XML.

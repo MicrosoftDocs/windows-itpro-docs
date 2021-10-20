@@ -42,9 +42,25 @@ The Policy configuration service provider has the following sub-categories:
 > - **./Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
 > - **./Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
 
-The following diagram shows the Policy configuration service provider in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
+The following shows the Policy configuration service provider in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
 
-![policy csp diagram.](images/provisioning-csp-policy.png)
+```
+./Vendor/MSFT
+Policy
+-------Config
+----------AreaName
+-------------PolicyName
+-------Result
+----------AreaName
+-------------PolicyName
+-------ConfigOperations
+----------ADMXInstall
+-------------AppName
+----------------Policy
+------------------UniqueID
+----------------Preference
+------------------UniqueID
+```
 
 
 <a href="" id="--vendor-msft-policy"></a>**./Vendor/MSFT/Policy**  

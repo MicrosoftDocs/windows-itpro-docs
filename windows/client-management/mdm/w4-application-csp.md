@@ -21,11 +21,17 @@ The default security roles are defined in the root characteristic, and map to ea
 
 > **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_CSP\_W4\_APPLICATION capabilities to be accessed from a network configuration application.
 
- 
+The following shows the configuration service provider in tree format as used by OMA Client Provisioning.
 
-The following diagram shows the configuration service provider in tree format as used by OMA Client Provisioning.
-
-![w4 application csp (cp).](images/provisioning-csp-w4-application-cp.png)
+```
+APPLICATION
+----APPID
+----NAME
+----TO-PROXY
+----TO-NAPID
+----ADDR
+----MS
+```
 
 <a href="" id="appid"></a>**APPID**
 Required. This parameter takes a string value. The only supported value for configuring MMS is "w4".

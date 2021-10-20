@@ -28,9 +28,13 @@ This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID
 
  
 
-The following diagram shows the BrowserFavorite configuration service provider in tree format as used by Open Mobile Alliance Device (OMA) Client Provisioning. The OMA Device Management protocol is not supported with this configuration service provider.
+The following shows the BrowserFavorite configuration service provider in tree format as used by Open Mobile Alliance Device (OMA) Client Provisioning. The OMA Device Management protocol is not supported with this configuration service provider.
 
-![browserfavorite csp (cp).](images/provisioning-csp-browserfavorite-cp.png)
+```
+BrowserFavorite
+favorite name
+----URL
+```
 
 <a href="" id="favorite-name-------------"></a>***favorite name***   
 Required. Specifies the user-friendly name of the favorite URL that is displayed in the Favorites list of Internet Explorer.
@@ -78,19 +82,19 @@ The following table shows the Microsoft custom elements that this configuration 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>parm-query</p></td>
+<td><p>Parm-query</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>noparm</p></td>
+<td><p>Noparm</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>nocharacteristic</p></td>
+<td><p>Nocharacteristic</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>characteristic-query</p></td>
+<td><p>Characteristic-query</p></td>
 <td><p>Yes</p>
 <p>Recursive query: Yes</p>
 <p>Top-level query: Yes</p></td>

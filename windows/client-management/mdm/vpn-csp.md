@@ -23,7 +23,7 @@ The VPN configuration service provider allows the MDM server to configure the VP
 
 Important considerations:
 
--   For a VPN that requires a client certificate, the server must first enroll the needed client certificate before deploying a VPN profile to ensure that there is a functional VPN profile at the device. This is particularly critical for forced tunnel VPN.
+-   For a VPN that requires a client certificate, the server must first enroll the needed client certificate before deploying a VPN profile to ensure that there is a functional VPN profile at the device. This is critical for forced tunnel VPN.
 
 -   VPN configuration commands must be wrapped with an Atomic command as shown in the example below.
 
@@ -31,9 +31,61 @@ Important considerations:
 
 -   For the VPN CSP, you cannot use the Replace command unless the node already exists.
 
-The following diagram shows the VPN configuration service provider in tree format.
+The following shows the VPN configuration service provider in tree format.
 
-![provisioning\-csp\-vpnimg.](images/provisioning-csp-vpn.png)
+```
+./Vendor/MSFT
+VPN
+-----ProfileName
+---------Server
+---------TunnelType
+---------ThirdParty
+-------------Name
+-------------AppID
+-------------CustomStoreURL
+-------------CustomConfiguration
+---------RoleGroup
+---------Authentication
+-------------Method
+-------------Certificate
+---------------Issuer
+---------------EKU
+---------------CacheLifeTimeProtectedCert
+-------------MultiAuth
+---------------StartURL
+---------------EndURL
+-------------EAP
+---------Proxy
+-------------Automatic
+-------------Manual
+---------------Server
+---------------Port
+-------------BypassProxyforLocal
+---------SecuredResources
+-------------AppPublisherNameList
+---------------AppPublisherName
+-------------AppAllowedList
+---------------AppAllowedList
+-------------NetworkAllowedList
+---------------NetworkAllowedList
+-------------NameSapceAllowedList
+---------------NameSapceAllowedList
+-------------ExcudedAppList
+---------------ExcudedAppList
+-------------ExcludedNetworkList
+---------------ExcludedNetworkList
+-------------ExcludedNameSpaceList
+---------------ExcludedNameSpaceList
+-------------DNSSuffixSearchList
+---------------DNSSuffixSearchList
+---------Policies
+-------------RememberCredentials
+-------------SplitTunnel
+-------------BypassforLocal
+-------------TrustedNetworkDetection
+-------------ConnectionType
+---------DNSSuffix
+```
 
 <a href="" id="profilename"></a>***ProfileName***
 Unique alpha numeric Identifier for the profile. The profile name must not include a forward slash (/).
@@ -48,12 +100,12 @@ Supported operations are Get, Add, and Replace.
 Value type is chr. Some examples are 208.23.45.130 or vpn.contoso.com.
 
 <a href="" id="tunneltype"></a>**TunnelType**
-Optional, but required when deploying a 3rd party IKEv2 VPN profile. Only a value of IKEv2 is supported for this release.
+Optional, but required when deploying a third-party IKEv2 VPN profile. Only a value of IKEv2 is supported for this release.
 
 Value type is chr. Supported operations are Get and Add.
 
 <a href="" id="thirdparty"></a>**ThirdParty**
-Optional, but required if deploying 3rd party SSL-VPN plugin profile. Defines a group of setting applied to SSL-VPN profile provisioning.
+Optional, but required if deploying third-party SSL-VPN plugin profile. Defines a group of setting applied to SSL-VPN profile provisioning.
 
 Supported operations are Get and Add.
 
@@ -73,17 +125,17 @@ Valid values:
 -   Checkpoint Mobile VPN
 
 <a href="" id="thirdparty-appid"></a>**ThirdParty/AppID**
-Optional, but required when deploying a 3rd party SSL-VPN plugin app from a private enterprise storefront. This is the ProductID associated with the store application. The client will use this ProductID to ensure that only the enterprise approved plugin is initialized.
+Optional, but required when deploying a third-party SSL-VPN plugin app from a private enterprise storefront. This is the ProductID associated with the store application. The client will use this ProductID to ensure that only the enterprise approved plugin is initialized.
 
 Value type is chr. Supported operations are Get, Add, Replace, and Delete.
 
 <a href="" id="thirdparty-customstoreurl"></a>**ThirdParty/CustomStoreURL**
-Optional, but required if an enterprise is deploying a 3rd party SSL-VPN plugin app from the private enterprise storefront. This node specifies the URL of the 3rd party SSL-VPN plugin app.
+Optional, but required if an enterprise is deploying a third-party SSL-VPN plugin app from the private enterprise storefront. This node specifies the URL of the third-party SSL-VPN plugin app.
 
 Value type is chr. Supported operations are Get, Add, Replace, and Delete.
 
 <a href="" id="thirdparty-customconfiguration"></a>**ThirdParty/CustomConfiguration**
-Optional. This is an HTML encoded XML blob for SSL-VPN plugin specific configuration that is deployed to the device to make it available for SSL-VPN plugins.
+Optional. This is an HTML encoded XML blob for SSL-VPN plugin-specific configuration that is deployed to the device to make it available for SSL-VPN plugins.
 
 Value type is char. Supported operations are Get, Add, Replace, and Delete.
 
@@ -98,7 +150,7 @@ Optional node for ThirdParty VPN profiles, but required for IKEv2. This is a col
 Supported operations are Get and Add.
 
 <a href="" id="authentication-method"></a>**Authentication/Method**
-Required for IKEv2 profiles and optional for third party profiles. This specifies the authentication provider to use for VPN client authentication. Only the EAP method is supported for IKEv2 profiles.
+Required for IKEv2 profiles and optional for third-party profiles. This specifies the authentication provider to use for VPN client authentication. Only the EAP method is supported for IKEv2 profiles.
 
 Supported operations are Get and Add.
 
@@ -114,7 +166,7 @@ Optional node. A collection of nodes that enables simpler authentication experie
 Supported operations are Get and Add.
 
 <a href="" id="authentication-certificate-issuer"></a>**Authentication/Certificate/Issuer**
-Optional. Filters out the installed certificates with private keys stored in registry or TPM. This can be used in conjunction with EKU for more granular filtering.
+Optional. Filters out the installed certificates with private keys stored in registry or TPM. This can be used with EKU for more granular filtering.
 
 Value type is chr. Supported operations are Get, Add, Delete, and Replace.
 
@@ -123,7 +175,7 @@ Value type is chr. Supported operations are Get, Add, Delete, and Replace.
  
 
 <a href="" id="authentication-certificate-eku"></a>**Authentication/Certificate/EKU**
-Optional. This Extended Key Usage (EKU) element is used to filter out the installed certificates with private keys stored in the registry or TPM. You can use this in conjunction with ISSUER for a more granular filtering.
+Optional. This Extended Key Usage (EKU) element is used to filter out the installed certificates with private keys stored in the registry or TPM. You can use this with ISSUER for a more granular filtering.
 
 Value type is chr. Supported operations are Get, Add, Delete, and Replace.
 
@@ -175,16 +227,16 @@ Default is False.
 Optional node. A collection of configuration objects that define the inclusion resource lists for what can be secured over VPN. Allowed lists are applied only when Policies/SplitTunnel element is set to True. VPN exclusions are not supported..
 
 <a href="" id="securedresources-appallowedlist-appallowedlist"></a>**SecuredResources/AppAllowedList/AppAllowedList**
-Optional. Specifies one or more ProductIDs for the enterprise line of business applications built for Windows. When this element is defined, then all traffic sourced from specified apps will be secured over VPN (assuming protected networks defined allows access). They will not be able to connect directly bypassing the VPN connection. When the profile is auto-triggered, VPN is triggered automatically by these apps.
+Optional. Specifies one or more ProductIDs for the enterprise line-of-business applications built for Windows. When this element is defined, then all traffic sourced from specified apps will be secured over VPN (assuming protected networks defined allows access). They will not be able to connect directly bypassing the VPN connection. When the profile is autotriggered, VPN is triggered automatically by these apps.
 
-Supported operations are Get, Add, Replace and Delete.
+Supported operations are Get, Add, Replace, and Delete.
 
 Value type is chr.
 
 Examples are {F05DC613-E223-40AD-ABA9-CCCE04277CD9} and ContosoApp.ContosoCorp\_jlsnulm3s397u.
 
 <a href="" id="securedresources-networkallowedlist-networkallowedlist"></a>**SecuredResources/NetworkAllowedList/NetworkAllowedList**
-Optional, but required when Policies/SplitTunnel is set to true for IKEv2 profile. Specifies one or more IP ranges that you want secured over VPN. Applications connecting to protected resources that match this list will be secured over VPN. Otherwise, they’ll continue to connect directly. The IP ranges are defined in the format 10.0.0.0/8. When the profile is auto-triggered, the VPN is triggered automatically by these protected networks.
+Optional, but required when Policies/SplitTunnel is set to true for IKEv2 profile. Specifies one or more IP ranges that you want secured over VPN. Applications connecting to protected resources that match this list will be secured over VPN. Otherwise, they’ll continue to connect directly. The IP ranges are defined in the format 10.0.0.0/8. When the profile is autotriggered, the VPN is triggered automatically by these protected networks.
 
 Supported operations are Get, Add, Replace, and Delete.
 
@@ -202,7 +254,7 @@ Value type is chr.
 An example is \*.corp.contoso.com.
 
 <a href="" id="securedresources-excluddedapplist-excludedapplist"></a>**SecuredResources/ExcluddedAppList/ExcludedAppList**
-Optional. Specifies one or more ProductIDs for enterprise line of business applications built for Windows. When the element is defined, these apps will never use VPN. They will connect directly and bypass the VPN connection.
+Optional. Specifies one or more ProductIDs for enterprise line-of-business applications built for Windows. When the element is defined, these apps will never use VPN. They will connect directly and bypass the VPN connection.
 
 Supported operations are Get, Add, Replace, and Delete.
 

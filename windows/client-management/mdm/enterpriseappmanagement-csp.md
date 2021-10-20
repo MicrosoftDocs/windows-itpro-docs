@@ -21,9 +21,35 @@ The EnterpriseAppManagement enterprise configuration service provider is used to
 
  
 
-The following diagram shows the EnterpriseAppManagement configuration service provider in tree format.
+The following shows the EnterpriseAppManagement configuration service provider in tree format.
 
-![enterpriseappmanagement csp.](images/provisioning-csp-enterpriseappmanagement.png)
+```
+./Vendor/MSFT
+EnterpriseAppManagement
+----EnterpriseID
+--------EnrollmentToken
+--------StoreProductID
+--------StoreUri
+--------CertificateSearchCriteria
+--------Status
+--------CRLCheck
+--------EnterpriseApps
+------------Inventory
+----------------ProductID
+--------------------Version
+--------------------Title
+--------------------Publisher
+--------------------InstallDate
+------------Download
+----------------ProductID
+--------------------Version
+--------------------Name
+--------------------URL
+--------------------Status
+--------------------LastError
+--------------------LastErrorDesc
+--------------------DownloadInstall
+```
 
 <a href="" id="enterpriseid"></a>***EnterpriseID***
 Optional. A dynamic node that represents the EnterpriseID as a GUID. It is used to enroll or unenroll enterprise applications.
