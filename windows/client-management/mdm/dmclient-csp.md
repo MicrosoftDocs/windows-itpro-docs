@@ -604,12 +604,12 @@ Supported operations are Add, Get, and Replace.
 
 <a href="" id="provider-providerid-configlock"></a>**Provider/*ProviderID*/ConfigLock**
 
-Optional. This node enables [Config Lock](/windows/client-management/mdm/config-lock.md) feature. If enabled, policies defined in the Config Lock document will be monitored and quickly remediated when a configuration drift is detected.
+Optional. This node enables [Config Lock](config-lock.md) feature. If enabled, policies defined in the Config Lock document will be monitored and quickly remediated when a configuration drift is detected.
 
 Default = Locked
 
 > [!Note]
->If the device is not a Secured-core PC, then this feature will not work. To know more, see [Secured-core PC](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure).
+>If the device is not a Secured-core PC, then this feature will not work. To know more, see [Secured-core PC](/windows-hardware/design/device-experiences/oem-highly-secure).
 
 <a href="" id="provider-providerid-configlock-lock"></a>**Provider/*ProviderID*/ConfigLock/Lock**
 
