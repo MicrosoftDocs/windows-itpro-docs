@@ -31,9 +31,56 @@ To summarize, Config Lock:
 
 ## Configuration Flow
 
-After a Secured-Core PC reaches the desktop, Config Lock will prevent configuration drift by detecting if the device is a Secured-Core PC or not. When the device isn't a Secured-Core PC, the lock won't apply. If the device is a Secured-Core PC, config lock will lock the policies listed below.
+After a Secured-Core PC reaches the desktop, Config Lock will prevent configuration drift by detecting if the device is a Secured-Core PC or not. When the device isn't a Secured-Core PC, the lock won't apply. If the device is a Secured-Core PC, config lock will lock the policies listed under [List of locked policies](#list-of-locked-policies).
 
-**List of locked policies**
+## System Requirements
+
+Config Lock will be available for all Windows Professional and Enterprise Editions running on [Secured-Core PCs](/windows-hardware/design/device-experiences/oem-highly-secure).  
+
+## Enabling Config Lock using Microsoft Intune
+
+Config Lock isn't enabled by default (or turned on by the OS during boot). Rather, an IT Admin must intentionally turn it on.
+ 
+The steps to turn on Config Lock using Microsoft Endpoint Manager (Microsoft Intune) are as follows:
+
+1. Ensure that the device to turn on Config Lock is enrolled in Microsoft Intune.
+1. From the Microsoft Intune portal main page, select **Devices** > **Configuration Profiles** > **Create a profile**.
+1. Select the following and press **Create**:
+    - **Platform**: Windows 10 and later
+    - **Profile type**: Templates
+    - **Template name**: Custom
+
+    :::image type="content" source="images/configlock-mem-createprofile.png" alt-text="create profile":::
+
+1. Name your profile.
+1. When you reach the Configuration Settings step, select “Add” and add the following information:
+    - **OMA-URI**: ./Vendor/MSFT/DMClient/Provider/MS%20DM%20Server/ConfigLock/Lock
+    - **Data type**: Integer
+    - **Value**: 1 </br>
+    To turn off Config Lock. Change value to 0.
+
+    :::image type="content" source="images/configlock-mem-editrow.png" alt-text="edit row":::
+
+1. Select the devices to turn on Config Lock. If you're using a test tenant, you can select “+ Add all devices”.
+1. You'll not need to set any applicability rules for test purposes.
+1. Review the Configuration and select “Create” if everything is correct.
+1. After the device syncs with the Microsoft Intune server, you can confirm if the Config Lock was successfully enabled.
+
+    :::image type="content" source="images/configlock-mem-dev.png" alt-text="status":::
+
+    :::image type="content" source="images/configlock-mem-devstatus.png" alt-text="device status":::
+
+## Disabling
+Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally misconfigured.  IT Admins retain the ability to change (enabled/disable) SCPC features via Group Policies and/or mobile device management (MDM) tools, such as Microsoft Intune.
+
+:::image type="content" source="images/configlock-mem-firmwareprotect.png" alt-text="firmware protect":::
+ 
+## FAQ
+
+**Can an IT Admin disable Config Lock ?** </br>
+	Yes. IT Admin can use MDM to turn off Config Lock.</br>
+
+### List of locked policies
 
 
 |Policies  |
@@ -70,7 +117,7 @@ After a Secured-Core PC reaches the desktop, Config Lock will prevent configurat
 |[WindowsDefenderSecurityCenter/DisableHealthUI](policy-csp-windowsdefendersecuritycenter.md) |
 |[WindowsDefenderSecurityCenter/DisableNetworkUI](policy-csp-windowsdefendersecuritycenter.md) |
 |[WindowsDefenderSecurityCenter/DisableNotifications](policy-csp-windowsdefendersecuritycenter.md) |
-|[WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning](policy-csp-windowsdefendersecuritycenter.md) |
+|[WindowsDefenderSecurityCenter/DisableTpmFirmwareUpdateWarning](policy-csp-windowsdefendersecuritycenter.md)|
 |[WindowsDefenderSecurityCenter/DisableVirusUI](policy-csp-windowsdefendersecuritycenter.md) |
 |[WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](policy-csp-windowsdefendersecuritycenter.md) |
 |[WindowsDefenderSecurityCenter/Email](policy-csp-windowsdefendersecuritycenter.md) |
@@ -86,71 +133,4 @@ After a Secured-Core PC reaches the desktop, Config Lock will prevent configurat
 |[SmartScreen/EnableSmartScreenInShell](policy-csp-smartscreen.md) |
 |[SmartScreen/PreventOverrideForFilesInShell](policy-csp-smartscreen.md) |
 
-:::image type="content" source="images/flow_configlock.png" alt-text="config lock flow.":::
 
-IT Admin scenario:
-
-1. IT Admins use MDM to enable Config Lock
-1. IT Admins use MDM service to set policies
-1. Policies are targeted to user/device
-1. Policies come down to device and get set
-1. Configurations are locked
-1. A local admin user attempts to override the policy
-1. System quickly remediates policy to the desired SCPC state
-
-Helpdesk scenario:
-
-1. Helpdesk support engineer investigates the device
-1. Helpdesk support engineer contacts the IT Admin to unlock the device
-1. IT Admin unlocks the device to make configuration changes
-1. Device returns to locked state after a defined time (default 30 minutes)
-
-## System Requirements
-
-Config Lock will be available for all Windows Professional and Enterprise Editions.  
-
-## Enabling Config Lock using Microsoft Intune
-
-Config Lock isn't enabled by default (or turned on by the OS during boot). Rather, an IT Admin must intentionally turn it on.
- 
-The steps to turn on Config Lock using Microsoft Endpoint Manager (MEM) are as follows:
-
-1. Ensure that the device to turn on Config Lock is enrolled in MEM.
-1. From the MEM portal main page, select **Devices** > **Configuration Profiles** > **Create a profile**.
-1. Select the following and press **Create**:
-    - **Platform**: Windows 10 and later
-    - **Profile type**: Templates
-    - **Template name**: Custom
-
-    :::image type="content" source="images/configlock-mem-createprofile.png" alt-text="create profile":::
-
-1. Name your profile.
-1. When you reach the Configuration Settings step, select “Add” and add the following information:
-    - **OMA-URI**: ./Vendor/MSFT/DMClient/Provider/MS%20DM%20Server/ConfigLock/Lock
-    - **Data type**: Integer
-    - **Value**: 1 </br>
-    To turn off Config Lock. Change value to 0.
-
-    :::image type="content" source="images/configlock-mem-editrow.png" alt-text="edit row":::
-
-1. Select the devices to turn on Config Lock. If you're using a test tenant, you can select “+ Add all devices”.
-1. You'll not need to set any applicability rules for test purposes.
-1. Review the Configuration and select “Create” if everything is correct.
-1. After the device syncs with the MEM server, you can confirm if the Config Lock was successfully enabled.
-
-    :::image type="content" source="images/configlock-mem-dev.png" alt-text="status":::
-
-    :::image type="content" source="images/configlock-mem-devstatus.png" alt-text="device status":::
-
-## Disabling
-Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally misconfigured.  IT Admins retain the ability to change (enabled/disable) SCPC features via Group Policies and/or mobile device management (MDM) tools, such as MEM.
-
-:::image type="content" source="images/configlock-mem-firmwareprotect.png" alt-text="firmware protect":::
- 
-## FAQ
-
-**Can an IT Admin disable Config Lock ?** </br>
-	Yes. IT Admin can use MDM to turn off Config Lock.</br>
-
-**Could an end-user run the BuiltAsSecuredCorePC PowerShell command to disable Config Lock?** </br>
-	The PowerShell script is accessible, but the BuiltAsSecuredCorePC becomes read-only after boot, so the command will fail when run from the OS.

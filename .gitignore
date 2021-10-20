@@ -19,3 +19,4 @@ packages.config
 wdav-pm-sln.csproj
 wdav-pm-sln.csproj.user
 wdav-pm-sln.sln
+.vscode/settings.json
