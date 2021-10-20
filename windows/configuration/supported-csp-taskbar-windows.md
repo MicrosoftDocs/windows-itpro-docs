@@ -35,6 +35,10 @@ For more general information, see [Configuration service provider (CSP) referenc
   - Group policy: `User Configuration\Administrative Templates\Start Menu and Taskbar\Do not allow pinning programs to the Taskbar`
   - Local setting: None
 
+- [Experience/ConfigureChatIcon](/windows/client-management/mdm/policy-csp-experience#experience-configurechaticonvisibilityonthetaskbar)
+  - Group policy: `Computer Configuration\Administrative Templates\Windows Components\Chat`
+  - Local setting: Settings > Personalization > Taskbar > Chat
+
 ## Existing CSP policies that Windows 11 doesn't support
 
 The following list includes some of the CSP policies that aren't supported on Windows 11:
