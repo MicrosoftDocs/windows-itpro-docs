@@ -13,6 +13,7 @@ ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
+author: dansimp
 manager: dansimp
 ms.date: 10/19/2021
 ms.technology: windows-sec
