@@ -604,24 +604,30 @@ Supported operations are Add, Get, and Replace.
 
 <a href="" id="provider-providerid-configlock"></a>**Provider/*ProviderID*/ConfigLock**
 
-Configuration Drift is a major concern for commercial customers. Some customers view it as a security risk. This node mitigates the customer concern by bringing the capability to monitor and quickly remediate the policy configuration when a device is MDM managed.
+Optional. This node enables [Config Lock](/windows/client-management/mdm/config-lock.md) feature. If enabled, policies defined in the Config Lock document will be monitored and quickly remediated when a configuration drift is detected.
 
 Default = Locked
 
 > [!Note]
->If the device is not Secure Core, then this feature will not work.
+>If the device is not a Secured-core PC, then this feature will not work. To know more, see [Secured-core PC](https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/oem-highly-secure).
 
 <a href="" id="provider-providerid-configlock-lock"></a>**Provider/*ProviderID*/ConfigLock/Lock**
 
-Supported operations are Add, Delete, Get. Supported values are 0-unlock, 1-lock.
+The supported values for this node are 0-unlock, 1-lock.
+
+Supported operations are Add, Delete, Get.
 
 <a href="" id="provider-providerid-configlock-unlockduration"></a>**Provider/*ProviderID*/ConfigLock/UnlockDuration**
 
-Supported operations are Add, Delete, Get. Supported values are 1 to 480 (in min).
+The supported values for this node are 1 to 480 (in min).
+
+Supported operations are Add, Delete, Get.
 
 <a href="" id="provider-providerid-configlock-securecore"></a>**Provider/*ProviderID*/ConfigLock/SecureCore**
 
-Supported operation is Get only. Supported values are false or true.
+The supported values for this node are false or true.
+
+Supported operation is Get only.
 
 <a href="" id="provider-providerid-push"></a>**Provider/*ProviderID*/Push**  
 Optional. Not configurable during WAP Provisioning XML. If removed, DM sessions triggered by Push will no longer be supported.
