@@ -696,7 +696,7 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     1.  Right-click **Windows Firewall with Advanced Security LDAP://path**, and &gt; **Properties**.
 
-        ![Local accounts for an Active Directory](images/adlocalaccounts-proc1-sample6.png)
+        ![Local accounts for Active Directory](images/adlocalaccounts-proc1-sample6.png)
 
     2.  On each profile, ensure that the firewall is enabled and that inbound connections are set to **Block all connections**.
 
@@ -791,7 +791,7 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     6.  Click **Add User or Group** &gt; **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![Local accounts for an AD](images/adlocalaccounts-proc2-sample5.png)
+        ![Local accounts for AD](images/adlocalaccounts-proc2-sample5.png)
 
         **Note**  
         You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
@@ -804,7 +804,7 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     1.  Right-click the workstation OU, and then &gt; **Link an Existing GPO**.
 
-        ![Local accounts for an Active Directory](images/adlocalaccounts-proc2-sample6.png)
+        ![Local accounts representation for an Active Directory](images/adlocalaccounts-proc2-sample6.png)
 
     2.  Select the GPO that you just created, and &gt; **OK**.
 
