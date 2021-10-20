@@ -4,7 +4,7 @@ description: Windows Hello uses biometrics to authenticate users and guard again
 ms.assetid: d3f27d94-2226-4547-86c0-65c84d6df8Bc
 ms.reviewer: 
 keywords: Windows Hello, enterprise biometrics
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security

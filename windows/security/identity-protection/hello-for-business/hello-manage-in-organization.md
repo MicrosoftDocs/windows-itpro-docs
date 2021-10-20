@@ -4,7 +4,7 @@ description: You can create a Group Policy or mobile device management (MDM) pol
 ms.assetid: 47B55221-24BE-482D-BD31-C78B22AC06D8
 ms.reviewer: 
 keywords: identity, PIN, biometric, Hello
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -4,7 +4,7 @@ description: This topic for the IT professional describes how to manage which Tr
 ms.assetid: a78e751a-2806-43ae-9c20-2e7ca466b765
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

@@ -4,7 +4,7 @@ description: Learn how to prevent accidental enterprise data leaks through apps 
 ms.assetid: 6cca0119-5954-4757-b2bc-e0ea4d2c7032
 ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, DLP, data loss prevention, data leakage protection
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security

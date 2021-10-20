@@ -3,7 +3,7 @@ title: BitLocker and TPM other known issues
 description: Describes common issues that relate directly to the TPM, and provides guidance for resolving those issues.
 ms.reviewer: kaushika
 ms.technology: windows
-ms.prod: w10
+ms.prod: m365-security
 ms.sitesec: library
 ms.localizationpriority: medium
 author: Teresa-Motiv

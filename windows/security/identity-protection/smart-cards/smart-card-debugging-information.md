@@ -1,7 +1,7 @@
 ---
 title: Smart Card Troubleshooting (Windows)
 description: Describes the tools and services that smart card developers can use to help identify certificate issues with the smart card deployment.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

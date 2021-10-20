@@ -1,7 +1,7 @@
 ---
 title: Service Accounts (Windows 10)
 description: Service Accounts
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

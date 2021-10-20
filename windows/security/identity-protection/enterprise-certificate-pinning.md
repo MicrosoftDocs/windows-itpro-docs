@@ -9,7 +9,7 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
-ms.prod: w10
+ms.prod: m365-security
 ms.technology: windows
 ms.pagetype: security
 ms.localizationpriority: medium

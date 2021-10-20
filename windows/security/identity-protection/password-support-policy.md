@@ -7,7 +7,7 @@ ms.custom:
 - CI ID 110060
 - CSSTroubleshoot 
 ms.author: v-tea
-ms.prod: w10
+ms.prod: m365-security
 ms.sitesec: library
 ms.pagetype: security
 author: Teresa-Motiv

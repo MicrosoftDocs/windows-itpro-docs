@@ -4,7 +4,7 @@ description: Overview of all the different infrastructure requirements for Windo
 ms.assetid: 5BF09642-8CF5-4FBC-AC9A-5CA51E19387E
 ms.reviewer: 
 keywords: identity, PIN, biometric, Hello, passport
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

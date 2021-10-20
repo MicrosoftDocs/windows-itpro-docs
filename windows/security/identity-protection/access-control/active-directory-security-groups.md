@@ -1,7 +1,7 @@
 ---
 title: Active Directory Security Groups
 description: Active Directory Security Groups
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

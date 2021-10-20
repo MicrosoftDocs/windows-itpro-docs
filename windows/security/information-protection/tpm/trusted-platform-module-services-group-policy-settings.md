@@ -3,7 +3,7 @@ title: TPM Group Policy settings (Windows)
 description: This topic describes the Trusted Platform Module (TPM) Services that can be controlled centrally by using Group Policy settings.
 ms.assetid: 54ff1c1e-a210-4074-a44e-58fee26e4dbd
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

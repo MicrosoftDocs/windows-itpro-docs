@@ -4,7 +4,7 @@ description: This topic provides a high-level overview of BitLocker, including a
 ms.assetid: 40526fcc-3e0d-4d75-90e0-c7d0615f33b2
 ms.reviewer: 
 ms.author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

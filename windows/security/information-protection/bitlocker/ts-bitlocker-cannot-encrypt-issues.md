@@ -3,7 +3,7 @@ title: BitLocker cannot encrypt a drive  known issues
 description: Provides guidance for troubleshooting known issues that may prevent BitLocker Drive Encryption from encrypting a drive
 ms.reviewer: kaushika
 ms.technology: windows
-ms.prod: w10
+ms.prod: m365-security
 ms.sitesec: library
 ms.localizationpriority: medium
 author: Teresa-Motiv

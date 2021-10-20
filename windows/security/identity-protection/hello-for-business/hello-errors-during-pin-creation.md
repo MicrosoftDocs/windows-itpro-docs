@@ -4,7 +4,7 @@ description: When you set up Windows Hello in Windows 10, you may get an error 
 ms.assetid: DFEFE22C-4FEF-4FD9-BFC4-9B419C339502
 ms.reviewer: 
 keywords: PIN, error, create a work PIN
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

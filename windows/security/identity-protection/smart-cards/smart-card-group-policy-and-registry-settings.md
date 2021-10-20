@@ -1,7 +1,7 @@
 ---
 title: Smart Card Group Policy and Registry Settings (Windows)
 description: Discover the Group Policy, registry key, local security policy, and credential delegation policy settings that are available for configuring smart cards.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

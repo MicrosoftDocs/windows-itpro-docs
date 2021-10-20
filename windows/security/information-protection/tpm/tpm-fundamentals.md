@@ -3,7 +3,7 @@ title: Trusted Platform Module (TPM) fundamentals (Windows)
 description: Inform yourself about the components of the Trusted Platform Module (TPM 1.2 and TPM 2.0) and how they are used to mitigate dictionary attacks.
 ms.assetid: ac90f5f9-9a15-4e87-b00d-4adcf2ec3000
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
