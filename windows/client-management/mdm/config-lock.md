@@ -71,6 +71,7 @@ The steps to turn on Config Lock using Microsoft Endpoint Manager (Microsoft Int
     :::image type="content" source="images/configlock-mem-devstatus.png" alt-text="device status":::
 
 ## Disabling
+
 Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally misconfigured.  IT Admins retain the ability to change (enabled/disable) SCPC features via Group Policies and/or mobile device management (MDM) tools, such as Microsoft Intune.
 
 :::image type="content" source="images/configlock-mem-firmwareprotect.png" alt-text="firmware protect":::
