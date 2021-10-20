@@ -6003,7 +6003,10 @@ The following fields are available:
 - **UpdateAssistantStateInitializingApplication**  True at the start of the state InitializingApplication.
 - **UpdateAssistantStateInitializingStates**  True at the start of InitializingStates.
 - **UpdateAssistantStateInstalling**  True at the start of Installing.
+- **UpdateAssistantStatePerformRestart**  True at the start of PerformRestart.
 - **UpdateAssistantStatePostInstall**  True at the start of PostInstall.
+- **UpdateAssistantStateShowingUpdate**  True at the start of Showing Update.
+- **UpdateAssistantStateWelcomeToNewOS**  True at the start of WelcomeToNewOS.
 - **UpdateAssistantVersion**  Current package version of UpdateAssistant.
 
 
