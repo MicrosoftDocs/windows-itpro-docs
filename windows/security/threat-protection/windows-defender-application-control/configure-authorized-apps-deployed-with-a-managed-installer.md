@@ -17,8 +17,7 @@ author: dansimp
 manager: dansimp
 ms.date: 10/19/2021
 ms.technology: windows-sec
-
-
+---
 # Configuring authorized apps deployed by a managed installer with AppLocker and Windows Defender Application Control
 
 **Applies to:**
