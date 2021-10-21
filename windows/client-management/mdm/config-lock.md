@@ -78,18 +78,21 @@ Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally m
  
 ## FAQ
 
-**Can an IT Admin disable Config Lock ?** </br>
-	Yes. IT Admin can use MDM to turn off Config Lock.</br>
+**Can an IT admins disable Config Lock ?** </br>
+	Yes. IT admins can use MDM to turn off Config Lock.</br>
 
 ### List of locked policies
 
 |**CSPs**     |
+|-----|
 |[BitLocker ](bitlocker-csp.md)      |
 |[PassportForWork](passportforwork-csp.md)       |
 |[WindowsDefenderApplicationGuard](windowsdefenderapplicationguard-csp.md)       |
-|[ApplicationControl](applicationcontrol-csp.md) |
-|     |
+|[ApplicationControl](applicationcontrol-csp.md) 
+
+
 |**MDM policies**     |
+|-----|
 |[DataProtection/AllowDirectMemoryAccess](policy-csp-dataprotection.md)      |
 |[DataProtection/LegacySelectiveWipeID](policy-csp-dataprotection.md)      |
 |[DeviceGuard/ConfigureSystemGuardLaunch](policy-csp-deviceguard.md)      |
@@ -130,5 +133,3 @@ Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally m
 |[SmartScreen/EnableAppInstallControl](policy-csp-smartscreen.md)|
 |[SmartScreen/EnableSmartScreenInShell](policy-csp-smartscreen.md) |
 |[SmartScreen/PreventOverrideForFilesInShell](policy-csp-smartscreen.md) |
-
-
