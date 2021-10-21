@@ -18,9 +18,9 @@ ms.date: 10/20/2020
 
 # What's new in mobile device enrollment and management
 
-This article provides information about what's new in Windows 10 and 11 mobile device management (MDM) enrollment and management experience across all Windows 10 and 11 devices. This article also provides details about the breaking changes and known issues and frequently asked questions.
+This article provides information about what's new in Windows 10 and Windows 11 mobile device management (MDM) enrollment and management experience across all Windows 10 and Windows 11 devices. This article also provides details about the breaking changes and known issues and frequently asked questions.
 
-For details about Microsoft mobile device management protocols for Windows 10 and 11 see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
+For details about Microsoft mobile device management protocols for Windows 10 and Windows 11 see [\[MS-MDM\]: Mobile Device Management Protocol](/openspecs/windows_protocols/ms-mdm/33769a92-ac31-47ef-ae7b-dc8501f7104f) and [\[MS-MDE2\]: Mobile Device Enrollment Protocol Version 2]( https://go.microsoft.com/fwlink/p/?LinkId=619347). 
 
 
 ## What’s new in MDM for Windows 11, version 21H2
@@ -35,7 +35,7 @@ For details about Microsoft mobile device management protocols for Windows 10 a
 
 ### Get command inside an atomic command is not supported
 
-In Windows 10 and 11, a Get command inside an atomic command is not supported. 
+In Windows 10 and Windows 11, a Get command inside an atomic command is not supported. 
 
 ### Apps installed using WMI classes are not removed
 
@@ -43,11 +43,11 @@ Applications installed using WMI classes are not removed when the MDM account is
 
 ### Passing CDATA in SyncML does not work
 
-Passing CDATA in data in SyncML to ConfigManager and CSPs does not work in Windows 10 and 11. .
+Passing CDATA in data in SyncML to ConfigManager and CSPs does not work in Windows 10 and Windows 11
 
 ### SSL settings in IIS server for SCEP must be set to "Ignore"
 
-The certificate setting under "SSL Settings" in the IIS server for SCEP must be set to "Ignore" in Windows 10 and 11. 
+The certificate setting under "SSL Settings" in the IIS server for SCEP must be set to "Ignore" in Windows 10 and Windows 11. 
 
 ![ssl settings.](images/ssl-settings.png)
 
@@ -63,7 +63,7 @@ Remote server unenrollment is disabled for mobile devices enrolled via Azure Act
 
 ### Certificates causing issues with Wi-Fi and VPN
 
-In Windows 10 and 11, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We are working to fix this issue.
+In Windows 10 and Windows 11, when using the ClientCertificateInstall to install certificates to the device store and the user store and both certificates are sent to the device in the same MDM payload, the certificate intended for the device store will also get installed in the user store. This may cause issues with Wi-Fi or VPN when choosing the correct certificate to establish a connection. We are working to fix this issue.
 
 ### Version information for Windows 11
 
