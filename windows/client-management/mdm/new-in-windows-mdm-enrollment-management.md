@@ -1,6 +1,6 @@
 ---
 title: What's new in MDM enrollment and management
-description: Discover what's new and breaking changes in Windows 10 and 11 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
+description: Discover what's new and breaking changes in Windows 10 and Windows 11 mobile device management (MDM) enrollment and management experience across all Windows 10 devices.
 MS-HAID:
 - 'p\_phdevicemgmt.mdm\_enrollment\_and\_management\_overview'
 - 'p\_phDeviceMgmt.new\_in\_windows\_mdm\_enrollment\_management'
@@ -69,7 +69,7 @@ In Windows 10 and 11, when using the ClientCertificateInstall to install certif
 
 The software version information from **DevDetail/Ext/Microsoft/OSPlatform** does not match the version in **Settings** under **System/About**.
 
-### Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 and 11
+### Multiple certificates might cause Wi-Fi connection instabilities in Windows 10 and Windows 11
 
 In your deployment, if you have multiple certificates provisioned on the device and the Wi-Fi profile provisioned does not have a strict filtering criteria, you may see connection failures when connecting to Wi-Fi. The solution is to ensure that the Wi-Fi profile provisioned has strict filtering criteria such that it matches only one certificate.
 
@@ -244,7 +244,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
 After the MDM client automatically renews the WNS channel URI, the MDM client will immediately check-in with the MDM server. Henceforth, for every MDM client check-in, the MDM server should send a GET request for "ProviderID/Push/ChannelURI" to retrieve the latest channel URI and compare it with the existing channel URI; then update the channel URI if necessary.
 
-### User provisioning failure in Azure Active Directory joined Windows 10 and 11 devices
+### User provisioning failure in Azure Active Directory joined Windows 10 and Windows 11 devices
 
 In Azure AD joined Windows 10 and 11, provisioning /.User resources fails when the user is not logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, make sure to log off and log on with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
@@ -277,7 +277,7 @@ No. Only one MDM is allowed.
 
 Entry | Description
 --------------- | --------------------
-What is dmwappushsvc? | It is a Windows service that ships in Windows 10 and 11 operating system as a part of the windows management platform. It is used internally by the operating system as a queue for categorizing and processing all WAP messages, which include Windows management messages, MMS, NabSync, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
+What is dmwappushsvc? | It is a Windows service that ships in Windows 10 and Windows 11 operating system as a part of the windows management platform. It is used internally by the operating system as a queue for categorizing and processing all WAP messages, which include Windows management messages, MMS, NabSync, and Service Indication/Service Loading (SI/SL). The service also initiates and orchestrates management sync sessions with the MDM server. |
 What data is handled by dmwappushsvc? | It is a component handling the internal workings of the management platform and involved in processing messages that have been received by the device remotely for management. The messages in the queue are serviced by another component that is also part of the Windows management stack to process messages. The service also routes and authenticates WAP messages received by the device to internal OS components that process them further: MMS, NabSync, SI/SL. This service does not send telemetry.|
 How do I turn if off? | The service can be stopped from the "Services" console on the device (Start > Run > services.msc). However, since this is a component part of the OS and  required for the proper functioning of the device, we strongly recommend not to do this. Disabling this will cause your management to fail.|
 
