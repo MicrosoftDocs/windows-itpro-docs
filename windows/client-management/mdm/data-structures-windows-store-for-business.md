@@ -9,8 +9,8 @@ manager: dansimp
 description: 
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.date: 09/18/2017
 ---

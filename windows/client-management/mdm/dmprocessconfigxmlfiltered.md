@@ -16,8 +16,8 @@ api_type:
 - DllExport
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.date: 06/26/2017
 ---

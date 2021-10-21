@@ -3,8 +3,8 @@ title: Policy CSP - AppVirtualization
 description: Learn how the Policy CSP - AppVirtualization setting allows you to enable or disable Microsoft Application Virtualization (App-V) feature.
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019

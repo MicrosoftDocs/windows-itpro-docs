@@ -3,8 +3,8 @@ title: UEFI DDF file
 description: Learn about the OMA DM device description framework (DDF) for the Uefi configuration service provider (CSP).
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.date: 10/02/2018
 ms.reviewer: 

@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_Snmp
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.date: 09/24/2020
 ms.reviewer: 

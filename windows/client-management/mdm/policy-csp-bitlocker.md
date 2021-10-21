@@ -3,8 +3,8 @@ title: Policy CSP - Bitlocker
 description: Use the Policy configuration service provider (CSP) - Bitlocker to manage encryption of PCs and devices.
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019

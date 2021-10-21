@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_Sharing
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.date: 09/21/2020
 ms.reviewer: 

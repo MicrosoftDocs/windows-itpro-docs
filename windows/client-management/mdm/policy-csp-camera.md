@@ -3,8 +3,8 @@ title: Policy CSP - Camera
 description: Learn how to use the Policy CSP - Camera setting so that you can configure it to disable or enable the camera.
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019

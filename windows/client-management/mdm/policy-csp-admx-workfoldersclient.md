@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_WorkFoldersClient
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: nimishasatapathy
 ms.date: 09/22/2021
 ms.reviewer: 

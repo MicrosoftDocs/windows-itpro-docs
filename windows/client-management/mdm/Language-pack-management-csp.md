@@ -5,8 +5,8 @@ ms.reviewer:
 manager: dansimp
 ms.author: v-nsatapathy
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: nimishasatapathy
 ms.date: 06/22/2021
 ---

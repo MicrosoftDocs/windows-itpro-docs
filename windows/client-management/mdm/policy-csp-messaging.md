@@ -3,8 +3,8 @@ title: Policy CSP - Messaging
 description: Enable, and disable, text message back up and restore as well as Messaging Everywhere by using the Policy CSP for messaging.
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019

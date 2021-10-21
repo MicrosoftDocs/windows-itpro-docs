@@ -3,8 +3,8 @@ title: Policy CSP - Display
 description: Learn how to use the Policy CSP - Display setting to disable Per-Process System DPI for a semicolon-separated list of applications.
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019

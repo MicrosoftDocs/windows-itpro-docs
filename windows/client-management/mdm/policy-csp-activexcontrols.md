@@ -4,8 +4,8 @@ description: Learn about various Policy configuration service provider (CSP) 
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.date: 09/27/2019
 ms.reviewer: 

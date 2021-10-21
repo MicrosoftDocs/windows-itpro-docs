@@ -3,8 +3,8 @@ title: Messaging CSP
 description: Use the Messaging configuration service provider (CSP) to configure the ability to get text messages audited on a mobile device.
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.date: 06/26/2017
 ms.reviewer: 

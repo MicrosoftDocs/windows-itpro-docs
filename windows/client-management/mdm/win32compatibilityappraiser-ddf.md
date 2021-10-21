@@ -3,8 +3,8 @@ title: Win32CompatibilityAppraiser DDF file
 description: XML file containing the device description framework for the Win32CompatibilityAppraiser configuration service provider.
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.date: 07/19/2018
 ms.reviewer: 

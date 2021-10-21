@@ -3,8 +3,8 @@ title: Policy CSP - RemoteManagement
 description: Learn how the Policy CSP - RemoteManagement setting allows you to manage whether the Windows Remote Management (WinRM) client uses Basic authentication.
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019

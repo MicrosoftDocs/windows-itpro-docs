@@ -4,8 +4,8 @@ description: The ApplicationControl CSP allows you to manage multiple Windows De
 keywords: security, malware
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: ManikaDhiman
 ms.reviewer: jsuther1974
 ms.date: 09/10/2020

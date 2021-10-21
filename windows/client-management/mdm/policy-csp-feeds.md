@@ -3,8 +3,8 @@ title: Policy CSP - Feeds
 description: Use the Policy CSP - Feeds setting policy specifies whether news and interests is allowed on the device.
 ms.author: v-nsatapathy
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: nimishasatapathy
 ms.localizationpriority: medium
 ms.date: 09/17/2021

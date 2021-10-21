@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_Winsrv
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.date: 02/25/2021
 ms.reviewer: 

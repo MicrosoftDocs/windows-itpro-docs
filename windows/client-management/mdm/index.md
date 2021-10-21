@@ -7,8 +7,8 @@ MS-HAID:
 ms.assetid: 50ac90a7-713e-4487-9cb9-b6d6fdaa4e5b
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: dansimp
 ---
 

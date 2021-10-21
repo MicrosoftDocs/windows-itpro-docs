@@ -3,8 +3,8 @@ title: Understanding ADMX policies
 description: In Windows 10, you can use ADMX policies for Windows 10 mobile device management (MDM) across Windows 10 devices.
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.date: 03/23/2020
 ms.reviewer: 

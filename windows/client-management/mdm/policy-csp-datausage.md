@@ -3,8 +3,8 @@ title: Policy CSP - DataUsage
 description: Learn how to use the Policy CSP - DataUsage setting to configure the cost of 4G connections on the local machine. 
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 09/27/2019

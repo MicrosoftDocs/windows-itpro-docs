@@ -4,8 +4,8 @@ description: Policy CSP - MixedReality
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.date: 10/12/2021
 ms.reviewer: 

@@ -3,8 +3,8 @@ title: Policy CSP - ADMX_AppCompat
 description: Policy CSP - ADMX_AppCompat
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 08/20/2020

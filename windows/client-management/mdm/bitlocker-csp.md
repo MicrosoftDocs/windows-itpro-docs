@@ -3,8 +3,8 @@ title: BitLocker CSP
 description: Learn how the BitLocker configuration service provider (CSP) is used by the enterprise to manage encryption of PCs and devices.
 ms.author: dansimp
 ms.topic: article
-ms.prod: w10
-ms.technology: windows
+ms.prod: m365-security
+ms.technology: windows-sec
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 04/16/2020
