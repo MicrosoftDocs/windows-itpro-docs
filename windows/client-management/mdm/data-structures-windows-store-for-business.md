@@ -1,5 +1,6 @@
 ---
 title: Data structures for Microsoft Store for Business
+description: Learn about the various data structures for Microsoft Store for Business.
 MS-HAID:
 - 'p\_phdevicemgmt.business\_store\_data\_structures'
 - 'p\_phDeviceMgmt.data\_structures\_windows\_store\_for\_business'

@@ -78,19 +78,19 @@ The following table shows the Microsoft custom elements that this configuration 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>parm-query</p></td>
+<td><p>Parm-query</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>noparm</p></td>
+<td><p>No parm</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>nocharacteristic</p></td>
+<td><p>No characteristic</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>characteristic-query</p></td>
+<td><p>Characteristic-query</p></td>
 <td><p>Yes</p>
 <p>Recursive query: Yes</p>
 <p>Top-level query: Yes</p></td>
