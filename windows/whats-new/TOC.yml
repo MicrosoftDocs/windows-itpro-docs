@@ -5,6 +5,8 @@
   items:
     - name: What's new in Windows 11
       href: windows-11-whats-new.md
+    - name: Windows 11 SE
+      href: windows-11-se-administrators-overview.md
     - name: Windows 11 requirements
       href: windows-11-requirements.md
     - name: Plan for Windows 11
