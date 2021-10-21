@@ -246,7 +246,7 @@ After the MDM client automatically renews the WNS channel URI, the MDM client wi
 
 ### User provisioning failure in Azure Active Directory joined Windows 10 and Windows 11 devices
 
-In Azure AD joined Windows 10 and 11, provisioning /.User resources fails when the user is not logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, make sure to log off and log on with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
+In Azure AD joined Windows 10 and Windows 11, provisioning /.User resources fails when the user is not logged in as an Azure AD user. If you attempt to join Azure AD from **Settings** &gt; **System** &gt; **About** user interface, make sure to log off and log on with Azure AD credentials to get your organizational configuration from your MDM server. This behavior is by design.
 
 ### Requirements to note for VPN certificates also used for Kerberos Authentication
 
