@@ -83,8 +83,6 @@ Config Lock is designed to ensure that a Secured-Core PC isn't unintentionally m
 
 ### List of locked policies
 
-
-|Policies  |
 |---------|
 |**CSPs**     |
 |[BitLocker ](bitlocker-csp.md)      |
