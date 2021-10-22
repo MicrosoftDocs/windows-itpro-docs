@@ -217,7 +217,7 @@ The following XML sample explains the properties for the EAP TLS XML including c
 
 Alternatively you can use the following procedure to create an EAP Configuration XML.
 
-1.  Follow steps 1 through 7 in the [EAP configuration](eap-configuration.md) article.
+1.  Follow steps 1 through 7 in [EAP configuration](eap-configuration.md).
 
 2.  In the Microsoft VPN SelfHost Properties dialog box, select **Microsoft : Smart Card or other Certificate** from the drop down (this selects EAP TLS.)
 
@@ -240,7 +240,7 @@ Alternatively you can use the following procedure to create an EAP Configuration
 
 7.  Close the rasphone dialog box.
 
-8.  Continue following the procedure in the [EAP configuration](eap-configuration.md) article from Step 9 to get an EAP TLS profile with appropriate filtering.
+8.  Continue following the procedure in [EAP configuration](eap-configuration.md) from Step 9 to get an EAP TLS profile with appropriate filtering.
 
 > [!NOTE]
 > You can also set all the other applicable EAP Properties through this UI as well. A guide to what these properties mean can be found in [Extensible Authentication Protocol (EAP) Settings for Network Access](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh945104(v=ws.11)).
