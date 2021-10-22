@@ -517,7 +517,7 @@ Specifies the list of domains that are allowed to be navigated to in AAD PIN res
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> This policy is in preview mode only and therefore not meant or recommended for production purposes.
+> The Web Sign-in feature is in preview mode only and therefore not meant or recommended for production purposes.
 
 This policy is intended for use on Shared PCs to enable a quick first sign-in experience for a user. It works by automatically connecting new non-admin Azure Active Directory (Azure AD) accounts to the pre-configured candidate local accounts.
 
@@ -596,7 +596,7 @@ Value type is integer. Supported values:
 <!--/Scope-->
 <!--Description-->
 > [!Warning]
-> This policy is in preview mode only and therefore not meant or recommended for production purposes.
+> The Web Sign-in feature is in preview mode only and therefore not meant or recommended for production purposes.
 
 "Web Sign-in" is a new way of signing into a Windows PC. It enables Windows logon support for new Azure AD credentials, like Temporary Access Pass.
 
