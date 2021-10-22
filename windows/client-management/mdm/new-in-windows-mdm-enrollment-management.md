@@ -266,10 +266,10 @@ The DM agent for [push-button reset](/windows-hardware/manufacture/desktop/push-
 ## Frequently Asked Questions
 
 
-### **Can there be more than one MDM server to enroll and manage devices in Windows 10 or 11?**
+### Can there be more than one MDM server to enroll and manage devices in Windows 10 or 11?
 No. Only one MDM is allowed.
 
-### **How do I set the maximum number of Azure Active Directory joined devices per user?**
+### How do I set the maximum number of Azure Active Directory joined devices per user?
 1.  Login to the portal as tenant admin: https://manage.windowsazure.com.
 2.  Click Active Directory on the left pane.
 3.  Choose your tenant.
@@ -279,7 +279,7 @@ No. Only one MDM is allowed.
 	:::image type="content" alt-text="aad maximum joined devices." source="images/faq-max-devices.png":::
  
 
-### **What is dmwappushsvc?**
+### What is dmwappushsvc?
 
 Entry | Description
 --------------- | --------------------
