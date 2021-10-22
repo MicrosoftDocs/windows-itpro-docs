@@ -43,7 +43,7 @@ Applications installed using WMI classes are not removed when the MDM account is
 
 ### Passing CDATA in SyncML does not work
 
-Passing CDATA in data in SyncML to ConfigManager and CSPs does not work in Windows 10 and Windows 11
+Passing CDATA in data in SyncML to ConfigManager and CSPs does not work in Windows 10 and Windows 11.
 
 ### SSL settings in IIS server for SCEP must be set to "Ignore"
 
@@ -85,25 +85,25 @@ EAP XML must be updated with relevant information for your environment This can 
 -   For Wi-Fi, look for the &lt;EAPConfig&gt; section of your current WLAN Profile XML (This is what you specify for the WLanXml node in the Wi-Fi CSP). Within these tags you will find the complete EAP configuration. Replace the section under &lt;EAPConfig&gt; with your updated XML and update your Wi-Fi profile. You might need to refer to your MDM’s guidance on how to deploy a new Wi-Fi profile.
 -   For VPN, EAP Configuration is a separate field in the MDM Configuration. Work with your MDM provider to identify and update the appropriate Field.
 
-For information about EAP Settings, see <https://technet.microsoft.com/library/hh945104.aspx#BKMK_Cfg_cert_Selct>
+For information about EAP Settings, see <https://technet.microsoft.com/library/hh945104.aspx#BKMK_Cfg_cert_Selct>.
 
-For information about generating an EAP XML, see [EAP configuration](eap-configuration.md)
+For information about generating an EAP XML, see [EAP configuration](eap-configuration.md).
 
-For more information about extended key usage, see <http://tools.ietf.org/html/rfc5280#section-4.2.1.12>
+For more information about extended key usage, see <http://tools.ietf.org/html/rfc5280#section-4.2.1.12>.
 
-For information about adding extended key usage (EKU) to a certificate, see <https://technet.microsoft.com/library/cc731792.aspx>
+For information about adding extended key usage (EKU) to a certificate, see <https://technet.microsoft.com/library/cc731792.aspx>.
 
 The following list describes the prerequisites for a certificate to be used with EAP:
 
 -   The certificate must have at least one of the following EKU (Extended Key Usage) properties:
 
-    -   Client Authentication
-    -   As defined by RFC 5280, this is a well-defined OID with Value 1.3.6.1.5.5.7.3.2
-    -   Any Purpose
+    -   Client Authentication.
+    -   As defined by RFC 5280, this is a well-defined OID with Value 1.3.6.1.5.5.7.3.2.
+    -   Any Purpose.
     -   An EKU Defined and published by Microsoft, is a well-defined OID with value 1.3.6.1.4.1.311.10.12.1. The inclusion of this OID implies that the certificate can be used for any purpose. The advantage of this EKU over the All Purpose EKU is that additional non-critical or custom EKUs can still be added to the certificate for effective filtering.
-    -   All Purpose
+    -   All Purpose.
     -   As defined by RFC 5280, If a CA includes extended key usages to satisfy some application needs, but does not want to restrict usage of the key, the CA can add an Extended Key Usage Value of 0. A certificate with such an EKU can be used for all purposes.
--   The user or the computer certificate on the client chains to a trusted root CA
+-   The user or the computer certificate on the client chains to a trusted root CA.
 -   The user or the computer certificate does not fail any one of the checks that are performed by the CryptoAPI certificate store, and the certificate passes requirements in the remote access policy.
 -   The user or the computer certificate does not fail any one of the certificate object identifier checks that are specified in the Internet Authentication Service (IAS)/Radius Server.
 -   The Subject Alternative Name (SubjectAltName) extension in the certificate contains the user principal name (UPN) of the user.
@@ -217,24 +217,30 @@ The following XML sample explains the properties for the EAP TLS XML including c
 
 Alternatively you can use the following procedure to create an EAP Configuration XML.
 
-1.  Follow steps 1 through 7 in the [EAP configuration](eap-configuration.md) article.
+1.  Follow steps 1 through 7 in [EAP configuration](eap-configuration.md).
+
 2.  In the Microsoft VPN SelfHost Properties dialog box, select **Microsoft : Smart Card or other Certificate** from the drop down (this selects EAP TLS.)
 
-    ![vpn selfhost properties window.](images/certfiltering1.png)
+    :::image type="content" alt-text="vpn selfhost properties window." source="images/certfiltering1.png":::
 
     > [!NOTE]
     > For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
 3.  Click the **Properties** button underneath the drop down menu.
+
 4.  In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
 
-    ![smart card or other certificate properties window.](images/certfiltering2.png)
+	:::image type="content" alt-text="smart card or other certificate properties window." source="images/certfiltering2.png":::
+
 5.  In the **Configure Certificate Selection** menu, adjust the filters as needed.
 
-    ![configure certificate selection window.](images/certfiltering3.png)
+	:::image type="content" alt-text="configure certificate selection window." source="images/certfiltering3.png":::
+
 6.  Click **OK** to close the windows to get back to the main rasphone.exe dialog box.
+
 7.  Close the rasphone dialog box.
-8.  Continue following the procedure in the [EAP configuration](eap-configuration.md) article from Step 9 to get an EAP TLS profile with appropriate filtering.
+
+8.  Continue following the procedure in [EAP configuration](eap-configuration.md) from Step 9 to get an EAP TLS profile with appropriate filtering.
 
 > [!NOTE]
 > You can also set all the other applicable EAP Properties through this UI as well. A guide to what these properties mean can be found in [Extensible Authentication Protocol (EAP) Settings for Network Access](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh945104(v=ws.11)).
@@ -260,20 +266,20 @@ The DM agent for [push-button reset](/windows-hardware/manufacture/desktop/push-
 ## Frequently Asked Questions
 
 
-### **Can there be more than one MDM server to enroll and manage devices in Windows 10 or 11?**
+### Can there be more than one MDM server to enroll and manage devices in Windows 10 or 11?
 No. Only one MDM is allowed.
 
-### **How do I set the maximum number of Azure Active Directory joined devices per user?**
+### How do I set the maximum number of Azure Active Directory joined devices per user?
 1.  Login to the portal as tenant admin: https://manage.windowsazure.com.
 2.  Click Active Directory on the left pane.
 3.  Choose your tenant.
 4.  Click **Configure**.
 5.  Set quota to unlimited.
 
-    ![aad maximum joined devices.](images/faq-max-devices.png)
+	:::image type="content" alt-text="aad maximum joined devices." source="images/faq-max-devices.png":::
  
 
-### **What is dmwappushsvc?**
+### What is dmwappushsvc?
 
 Entry | Description
 --------------- | --------------------
