@@ -25,7 +25,7 @@ manager: dansimp
 
 The following shows the EnterpriseAppVManagement configuration service provider in tree format.
 
-```
+```console
 ./Vendor/MSFT
 EnterpriseAppVManagement
 ----AppVPackageManagement

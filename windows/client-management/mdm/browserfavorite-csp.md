@@ -30,7 +30,7 @@ This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID
 
 The following shows the BrowserFavorite configuration service provider in tree format as used by Open Mobile Alliance Device (OMA) Client Provisioning. The OMA Device Management protocol is not supported with this configuration service provider.
 
-```
+```console
 BrowserFavorite
 favorite name
 ----URL

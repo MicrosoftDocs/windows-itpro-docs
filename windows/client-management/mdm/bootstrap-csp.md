@@ -23,7 +23,7 @@ The BOOTSTRAP configuration service provider sets the Trusted Provisioning Serve
 
 The following shows the BOOTSTRAP configuration service provider in tree format as used by Open Mobile Alliance (OMA) Client Provisioning. The OMA Device Management protocol is not supported with this configuration service provider.
 
-```
+```console
 BOOTSTRAP
 ----CONTEXT-ALLOW
 ----PROVURL

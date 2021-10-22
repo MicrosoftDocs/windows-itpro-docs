@@ -31,7 +31,7 @@ Programming considerations:
 
 The following shows the WiFi configuration service provider in tree format.
 
-```
+```console
 ./Device/Vendor/MSFT
 or
 ./User/Vendor/MSFT

@@ -24,7 +24,8 @@ The SecurityPolicy configuration service provider is used to configure security 
 For the SecurityPolicy CSP, you cannot use the Replace command unless the node already exists.
 
 The following shows the SecurityPolicy configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning.
-```
+
+```console
 ./Vendor/MSFT
 SecurityPolicy
 ----PolicyID

@@ -22,7 +22,7 @@ The APPLICATION configuration service provider that has an APPID of w7 is used f
 
 The following shows the configuration service provider in tree format as used by OMA Client Provisioning.
 
-```
+```console
 APPLICATION
 ---APPADDR
 ------ADDR

@@ -32,7 +32,7 @@ The DevicePasswordEnabled setting must be set to 0 (device password is enabled) 
 
 The following shows the DeviceLock configuration service provider in tree format.
 
-```
+```console
 ./Vendor/MSFT
 DeviceLock
 --------Provider

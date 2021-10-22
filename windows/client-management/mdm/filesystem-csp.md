@@ -24,7 +24,7 @@ The FileSystem configuration service provider is used to query, add, modify, and
 
 The following shows the FileSystem configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
 
-```
+```console
 ./Vendor/MSFT
 FileSystem
 ----file name

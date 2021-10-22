@@ -27,7 +27,7 @@ The HotSpot configuration service provider is used to configure and enable Inter
 
 The following shows the HotSpot configuration service provider management object in tree format as used by OMA Client Provisioning. The OMA DM protocol is not supported by this configuration service provider.
 
-```
+```console
 ./Vendor/MSFT
 HotSpot
 -------Enabled

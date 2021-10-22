@@ -140,7 +140,7 @@ The enterprise IT can configure auto-update polices via OMA DM using the [Policy
 
 The following shows the Update policies in a tree format.
 
-```
+```console
 ./Vendor/MSFT
 Policy
 ----Config
@@ -713,7 +713,7 @@ Example
 
 The enterprise IT can configure the set of approved updates and get compliance status via OMA DM using the [Update CSP](update-csp.md). The following shows the Update CSP in tree format.
 
-```
+```console
 ./Vendor/MSFT
 Update
 ----ApprovedUpdates

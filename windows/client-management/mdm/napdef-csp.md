@@ -27,7 +27,7 @@ The NAPDEF configuration service provider is used to add, modify, or delete WAP 
 
 The following shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **initial bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
 
-```
+```console
 NAPDEF
 ----NAPAUTHINFO
 ------AUTHNAME
@@ -45,7 +45,7 @@ NAPDEF
 
 The following shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **updating the bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
 
-```
+```console
 NAPDEF
 --NAPID
 ----NAPAUTHINFO

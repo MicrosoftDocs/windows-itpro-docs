@@ -21,7 +21,7 @@ AccountManagement CSP is used to configure setting in the Account Manager servic
 
 The following shows the AccountManagement configuration service provider in tree format.
 
-```
+```console
 ./Vendor/MSFT
 AccountManagement
 ----UserProfileManagement

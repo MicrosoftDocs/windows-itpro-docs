@@ -19,7 +19,7 @@ The Windows Defender Advanced Threat Protection (WDATP) configuration service pr
 
 The following shows the WDATP configuration service provider in tree format as used by the Open Mobile Alliance (OMA) Device Management (DM).
 
-```
+```console
 ./Device/Vendor/MSFT
 WindowsAdvancedThreatProtection
 ----Onboarding

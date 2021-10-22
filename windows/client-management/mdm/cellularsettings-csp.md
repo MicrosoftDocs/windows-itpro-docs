@@ -21,7 +21,7 @@ The CellularSettings configuration service provider is used to configure cellula
 
 The following shows the CellularSettings CSP in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
 
-```
+```console
 ./Vendor/MSFT
 CellularSettings
 ----DataRoam

@@ -23,7 +23,7 @@ The EnterpriseAppManagement enterprise configuration service provider is used to
 
 The following shows the EnterpriseAppManagement configuration service provider in tree format.
 
-```
+```console
 ./Vendor/MSFT
 EnterpriseAppManagement
 ----EnterpriseID

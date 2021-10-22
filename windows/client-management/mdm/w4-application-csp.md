@@ -23,7 +23,7 @@ The default security roles are defined in the root characteristic, and map to ea
 
 The following shows the configuration service provider in tree format as used by OMA Client Provisioning.
 
-```
+```console
 APPLICATION
 ----APPID
 ----NAME

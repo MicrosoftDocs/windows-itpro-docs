@@ -17,7 +17,7 @@ The Messaging configuration service provider is used to configure the ability to
 
 The following shows the Messaging configuration service provider in tree format.
 
-```
+```console
 ./User/Vendor/MSFT
 Messaging
 ----AuditingLevel

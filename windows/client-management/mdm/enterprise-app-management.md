@@ -41,7 +41,7 @@ These classifications are represented as nodes in the EnterpriseModernAppManagem
 
 The following shows the EnterpriseModernAppManagement CSP in a tree format.
 
-```
+```console
 ./Device/Vendor/MSFT 
 or
 ./User/Vendor/MSFT

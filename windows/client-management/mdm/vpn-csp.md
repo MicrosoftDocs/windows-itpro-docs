@@ -33,7 +33,7 @@ Important considerations:
 
 The following shows the VPN configuration service provider in tree format.
 
-```
+```console
 ./Vendor/MSFT
 VPN
 -----ProfileName

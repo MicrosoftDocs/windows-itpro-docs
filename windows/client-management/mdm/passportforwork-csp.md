@@ -23,7 +23,7 @@ The PassportForWork configuration service provider is used to provision Windows 
 
 The following shows the PassportForWork configuration service provider in tree format.
 
-```
+```console
 ./User/Vendor/MSFT
 PassportForWork
 -------TenantId
@@ -46,7 +46,7 @@ PassportForWork
 
 The following shows the PassportForWork configuration service provider in tree format.
 
-```
+```console
 ./Device/Vendor/MSFT
 PassportForWork
 -------TenantId

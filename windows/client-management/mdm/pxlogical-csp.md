@@ -22,7 +22,7 @@ The PXLOGICAL configuration service provider is used to add, remove, or modify W
 
 The following shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for initial bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
 
-```
+```console
 PXLOGICAL
 ----DOMAIN
 ----NAME
@@ -47,7 +47,7 @@ PXLOGICAL
 
 The following shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for updating the bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
 
-```
+```console
 PXLOGICAL
 --PROXY-ID
 ----DOMAIN

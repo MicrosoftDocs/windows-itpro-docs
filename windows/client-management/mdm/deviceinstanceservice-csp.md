@@ -26,7 +26,7 @@ The DeviceInstance CSP is only supported in Windows 10 Mobile.
 
 The following shows the DeviceInstanceService configuration service provider in tree format.
 
-```
+```console
 ./Vendor/MSFT
 DeviceInstanceService
 ------------Roaming

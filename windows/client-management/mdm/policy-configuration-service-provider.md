@@ -44,7 +44,7 @@ The Policy configuration service provider has the following sub-categories:
 
 The following shows the Policy configuration service provider in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
 
-```
+```console
 ./Vendor/MSFT
 Policy
 -------Config
