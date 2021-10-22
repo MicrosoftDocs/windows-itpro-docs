@@ -220,7 +220,7 @@ The deployment process has three parts:
 
 2.  Browse to the DUControlledUpdates.xml that was created from the test device, and then specify the file path and name on the device as `NonPersistent\DUControlledUpdates.xml`.
 
-    ![embedded updates of a device](images/windowsembedded-update19.png)
+    ![embedded updates related to a specific device](images/windowsembedded-update19.png)
 
 3.  Select **Remediate noncompliant settings**, and then select **OK**.
 
@@ -510,7 +510,7 @@ Use this procedure for pre-GDR1 devices:
 22. Select **OK**, and then select **OK** again to complete the configuration baseline.
 23. Deploy the newly created configuration baseline to the appropriate device collection. Right-click on the configuration baseline that you created, and then select **Deploy**.
 
-    ![embedded updates of a device](images/windowsembedded-update14.png)
+    ![embedded updates related to a device](images/windowsembedded-update14.png)
 24. Select **Remediate noncompliant rules when supported**.
 25. Select the appropriate device collection and define the schedule.
 

@@ -6,7 +6,7 @@ manager: kaushika
 ms.custom:
 - CI ID 110060
 - CSSTroubleshoot 
-ms.author: v-tea
+ms.author: v-tappelgate
 ms.prod: m365-security
 ms.sitesec: library
 ms.pagetype: security

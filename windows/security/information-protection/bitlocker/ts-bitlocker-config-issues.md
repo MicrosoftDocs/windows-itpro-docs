@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.sitesec: library
 ms.localizationpriority: medium
 author: Teresa-Motiv
-ms.author: v-tea
+ms.author: v-tappelgate
 manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker

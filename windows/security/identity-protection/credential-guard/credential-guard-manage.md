@@ -8,7 +8,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 author: dansimp
-ms.author: v-tea
+ms.author: v-tappelgate
 manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
