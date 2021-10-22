@@ -10,6 +10,7 @@ Tools/NuGet/
 *.ini
 _themes*/
 common/
+.vscode/
 .openpublishing.build.mdproj
 .openpublishing.buildcore.ps1
 packages.config
