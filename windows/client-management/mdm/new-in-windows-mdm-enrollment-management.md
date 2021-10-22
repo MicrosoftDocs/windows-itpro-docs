@@ -218,22 +218,28 @@ The following XML sample explains the properties for the EAP TLS XML including c
 Alternatively you can use the following procedure to create an EAP Configuration XML.
 
 1.  Follow steps 1 through 7 in the [EAP configuration](eap-configuration.md) article.
+
 2.  In the Microsoft VPN SelfHost Properties dialog box, select **Microsoft : Smart Card or other Certificate** from the drop down (this selects EAP TLS.)
 
-    ![vpn selfhost properties window.](images/certfiltering1.png)
+    :::image type="content" alt-text="vpn selfhost properties window." source="images/certfiltering1.png":::
 
     > [!NOTE]
     > For PEAP or TTLS, select the appropriate method and continue following this procedure.
 
 3.  Click the **Properties** button underneath the drop down menu.
+
 4.  In the **Smart Card or other Certificate Properties** menu, select the **Advanced** button.
 
-    ![smart card or other certificate properties window.](images/certfiltering2.png)
+	:::image type="content" alt-text="smart card or other certificate properties window." source="images/certfiltering2.png":::
+
 5.  In the **Configure Certificate Selection** menu, adjust the filters as needed.
 
-    ![configure certificate selection window.](images/certfiltering3.png)
+	:::image type="content" alt-text="configure certificate selection window." source="images/certfiltering3.png":::
+
 6.  Click **OK** to close the windows to get back to the main rasphone.exe dialog box.
+
 7.  Close the rasphone dialog box.
+
 8.  Continue following the procedure in the [EAP configuration](eap-configuration.md) article from Step 9 to get an EAP TLS profile with appropriate filtering.
 
 > [!NOTE]
@@ -270,7 +276,7 @@ No. Only one MDM is allowed.
 4.  Click **Configure**.
 5.  Set quota to unlimited.
 
-    ![aad maximum joined devices.](images/faq-max-devices.png)
+	:::image type="content" alt-text="aad maximum joined devices." source="images/faq-max-devices.png":::
  
 
 ### **What is dmwappushsvc?**
