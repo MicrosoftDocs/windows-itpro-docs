@@ -26,6 +26,9 @@ ms.technology: mde
 - Windows 11
 - Windows Server 2019 and above
 
+>[!NOTE]
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+
 With Windows Defender Application Control (WDAC), you can automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, using a feature called _managed installer_. Managed installer can help you better balance security and manageability when enforcing application control policies.
 
 ## How does a managed installer work?
