@@ -66,13 +66,13 @@ Devices that are joined to an on-premises Active Directory can enroll into MDM v
 
 ## Disable MDM enrollments
 
-Starting in Windows 10, version 1607, IT admin can disable MDM enrollments for domain-joined PCs using Group Policy. Using the GP editor, the path is **Computer configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **MDM** &gt; **Disable MDM Enrollment**.
+In Windows 10 and Windows 11, IT admin can disable MDM enrollments for domain-joined PCs using Group Policy. Using the GP editor, the path is **Computer configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **MDM** &gt; **Disable MDM Enrollment**.
 
 ![Disable MDM enrollment policy in GP Editor.](images/mdm-enrollment-disable-policy.png)
 
 Here is the corresponding registry key:
 
-Key: \\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\MDM
+HKLM\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\MDM
 
 Value: DisableRegistration
 
@@ -80,19 +80,8 @@ Value: DisableRegistration
 
 The following scenarios do not allow MDM enrollments:
 
--   Built-in administrator accounts on Windows desktop cannot enroll into MDM.
--   Standard users cannot enroll in MDM. Only admin users can enroll.
--   Windows 8.1 devices enrolled into MDM via enroll-on-behalf-of (EOBO) can upgrade to Windows 10, but the enrollment is not supported. We recommend performing a server initiated unenroll to remove these enrollments and then enrolling after the upgrade to Windows 10 is completed.
-
-## Enrollment migration
-
-**Desktop:** After the MDM client upgrade from Windows 8.1 to Windows 10, enrollment migration starts at the first client-initiated sync with the MDM service. The enrollment migration start time depends on the MDM server configuration. For example, for Intune it runs every 6 hours.
-
-Until the enrollment migration is completed, the user interface will show no enrollment and server push will not work.
-
-To manually trigger enrollment migration, you can run MDMMaintenenceTask.
-
-**Mobile devices:** After the MDM client upgrade from Windows Phone 8.1 to Windows 10 Mobile, enrollment migration is performed during the first boot after the upgrade.
+- Built-in administrator accounts on Windows desktop cannot enroll into MDM.
+- Standard users cannot enroll in MDM. Only admin users can enroll.
 
 ## Enrollment error messages
 
