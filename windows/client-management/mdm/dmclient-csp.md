@@ -22,7 +22,7 @@ The following shows the DMClient CSP in tree format.
 ./Vendor/MSFT
 DMClient
 ----Provider
---------
+--------ProviderID
 ------------EntDeviceName
 ------------ExchangeID
 ------------EntDMID
@@ -45,6 +45,10 @@ DMClient
 ------------HWDevID
 ------------ManagementServerAddressList
 ------------CommercialID
+------------ConfigLock
+----------------Lock
+----------------UnlockDuration
+----------------SecureCore
 ------------Push
 ----------------PFN
 ----------------ChannelURI
@@ -597,6 +601,33 @@ Supported operations are Add, Get, and Replace.
 Optional. Boolean value that allows the IT admin to require the device to start a management session on first user login for all NT users. A session is only kicked off the first time a user logs in to the system; subsequent logins will not trigger an MDM session. Login is not the same as device unlock. Default value is false, where polling is disabled on first login. Supported values are true or false.
 
 Supported operations are Add, Get, and Replace.
+
+<a href="" id="provider-providerid-configlock"></a>**Provider/*ProviderID*/ConfigLock**
+
+Optional. This node enables [Config Lock](config-lock.md) feature. If enabled, policies defined in the Config Lock document will be monitored and quickly remediated when a configuration drift is detected.
+
+Default = Locked
+
+> [!Note]
+>If the device is not a Secured-core PC, then this feature will not work. To know more, see [Secured-core PC](/windows-hardware/design/device-experiences/oem-highly-secure).
+
+<a href="" id="provider-providerid-configlock-lock"></a>**Provider/*ProviderID*/ConfigLock/Lock**
+
+The supported values for this node are 0-unlock, 1-lock.
+
+Supported operations are Add, Delete, Get.
+
+<a href="" id="provider-providerid-configlock-unlockduration"></a>**Provider/*ProviderID*/ConfigLock/UnlockDuration**
+
+The supported values for this node are 1 to 480 (in min).
+
+Supported operations are Add, Delete, Get.
+
+<a href="" id="provider-providerid-configlock-securecore"></a>**Provider/*ProviderID*/ConfigLock/SecureCore**
+
+The supported values for this node are false or true.
+
+Supported operation is Get only.
 
 <a href="" id="provider-providerid-push"></a>**Provider/*ProviderID*/Push**  
 Optional. Not configurable during WAP Provisioning XML. If removed, DM sessions triggered by Push will no longer be supported.
