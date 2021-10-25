@@ -19,9 +19,9 @@ ms.date: 10/07/2021
 
 In an enterprise organization, IT administrators enforce policies on their corporate devices to keep the devices in a compliant state and protect the OS by preventing users from changing configurations and creating config drift. Config drift occurs when users with local admin rights change settings and put the device out of sync with security policies. Devices in a non-compliant state can be vulnerable until the next sync and configuration reset with the MDM. Windows 11 with Config Lock enables IT administrators to prevent config drift and keep the OS configuration in the desired state. With config lock, the OS monitors the registry keys that configure each feature and when it detects a drift, reverts to the IT-desired state in seconds.
 
-Secured-Core Configuration Lock (Config Lock) is a new [Secured-Core PC (SCPC)](/windows-hardware/design/device-experiences/oem-highly-secure) feature that prevents configuration drift from Secured-Core PC features (shown below) caused by unintentional misconfiguration. In short, it ensures a device intended to be a Secured-Core PC remains a Secured-Core PC.
+Secured-Core Configuration Lock (Config Lock) is a new [Secured-Core PC (SCPC)](/windows-hardware/design/device-experiences/oem-highly-secure) feature that prevents configuration drift from Secured-Core PC features caused by unintentional misconfiguration. In short, it ensures a device intended to be a Secured-Core PC remains a Secured-Core PC.
 
-   :::image type="content" source="images/config-lock-mdsl.png" alt-text="modern device security levels for config lock.":::
+<!--   :::image type="content" source="images/config-lock-mdsl.png" alt-text="modern device security levels for config lock."::: -->
 
 To summarize, Config Lock:
 
