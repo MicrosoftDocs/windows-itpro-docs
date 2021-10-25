@@ -21,8 +21,6 @@ In an enterprise organization, IT administrators enforce policies on their corpo
 
 Secured-Core Configuration Lock (Config Lock) is a new [Secured-Core PC (SCPC)](/windows-hardware/design/device-experiences/oem-highly-secure) feature that prevents configuration drift from Secured-Core PC features caused by unintentional misconfiguration. In short, it ensures a device intended to be a Secured-Core PC remains a Secured-Core PC.
 
-<!--   :::image type="content" source="images/config-lock-mdsl.png" alt-text="modern device security levels for config lock."::: -->
-
 To summarize, Config Lock:
 
 - Enables IT to “lock” Secured-Core PC features when managed through MDM
