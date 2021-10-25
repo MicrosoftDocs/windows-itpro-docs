@@ -105,6 +105,8 @@
           href: querying-application-control-events-centrally-using-advanced-hunting.md
         - name: Known Issues
           href: operations/known-issues.md
+        - name: Managed installer and ISG technical reference and troubleshooting guide
+          href: configure-wdac-managed-installer.md
     - name: AppLocker
       href: applocker\applocker-overview.md
       items: 
