@@ -9,7 +9,7 @@ ms.topic: article
 ms.prod: m365-security
 ms.technology: windows-sec
 author: dansimp
-ms.date: 06/26/2017
+ms.date: 10/25/2021
 ---
 
 # BrowserFavorite CSP
@@ -28,9 +28,13 @@ This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID
 
  
 
-The following diagram shows the BrowserFavorite configuration service provider in tree format as used by Open Mobile Alliance Device (OMA) Client Provisioning. The OMA Device Management protocol is not supported with this configuration service provider.
+The following shows the BrowserFavorite configuration service provider in tree format as used by Open Mobile Alliance Device (OMA) Client Provisioning. The OMA Device Management protocol is not supported with this configuration service provider.
 
-![browserfavorite csp (cp).](images/provisioning-csp-browserfavorite-cp.png)
+```console
+BrowserFavorite
+favorite name
+----URL
+```
 
 <a href="" id="favorite-name-------------"></a>***favorite name***   
 Required. Specifies the user-friendly name of the favorite URL that is displayed in the Favorites list of Internet Explorer.
@@ -82,11 +86,11 @@ The following table shows the Microsoft custom elements that this configuration 
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>No parm</p></td>
+<td><p>Noparm</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>No characteristic</p></td>
+<td><p>Nocharacteristic</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">

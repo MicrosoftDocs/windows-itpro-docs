@@ -66,13 +66,13 @@ Devices that are joined to an on-premises Active Directory can enroll into MDM v
 
 ## Disable MDM enrollments
 
-Starting in Windows 10, version 1607, IT admin can disable MDM enrollments for domain-joined PCs using Group Policy. Using the GP editor, the path is **Computer configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **MDM** &gt; **Disable MDM Enrollment**.
+In Windows 10 and Windows 11, IT admin can disable MDM enrollments for domain-joined PCs using Group Policy. Using the GP editor, the path is **Computer configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **MDM** &gt; **Disable MDM Enrollment**.
 
 ![Disable MDM enrollment policy in GP Editor.](images/mdm-enrollment-disable-policy.png)
 
 Here is the corresponding registry key:
 
-Key: \\SOFTWARE\\Policies\\Microsoft\\Windows\\CurrentVersion\\MDM
+HKLM\SOFTWARE\Policies\Microsoft\Windows\CurrentVersion\MDM
 
 Value: DisableRegistration
 
@@ -80,19 +80,8 @@ Value: DisableRegistration
 
 The following scenarios do not allow MDM enrollments:
 
--   Built-in administrator accounts on Windows desktop cannot enroll into MDM.
--   Standard users cannot enroll in MDM. Only admin users can enroll.
--   Windows 8.1 devices enrolled into MDM via enroll-on-behalf-of (EOBO) can upgrade to Windows 10, but the enrollment is not supported. We recommend performing a server initiated unenroll to remove these enrollments and then enrolling after the upgrade to Windows 10 is completed.
-
-## Enrollment migration
-
-**Desktop:** After the MDM client upgrade from Windows 8.1 to Windows 10, enrollment migration starts at the first client-initiated sync with the MDM service. The enrollment migration start time depends on the MDM server configuration. For example, for Intune it runs every 6 hours.
-
-Until the enrollment migration is completed, the user interface will show no enrollment and server push will not work.
-
-To manually trigger enrollment migration, you can run MDMMaintenenceTask.
-
-**Mobile devices:** After the MDM client upgrade from Windows Phone 8.1 to Windows 10 Mobile, enrollment migration is performed during the first boot after the upgrade.
+- Built-in administrator accounts on Windows desktop cannot enroll into MDM.
+- Standard users cannot enroll in MDM. Only admin users can enroll.
 
 ## Enrollment error messages
 
@@ -143,49 +132,49 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 <td><p>s:</p></td>
 <td><p>MessageFormat</p></td>
 <td><p>MENROLL_E_DEVICE_MESSAGE_FORMAT_ERROR</p></td>
-<td><p>Message format is bad</p></td>
+<td><p>Invalid message from the Mobile Device Management (MDM) server.</p></td>
 <td><p>80180001</p></td>
 </tr>
 <tr class="even">
 <td><p>s:</p></td>
 <td><p>Authentication</p></td>
 <td><p>MENROLL_E_DEVICE_AUTHENTICATION_ERROR</p></td>
-<td><p>User not recognized</p></td>
+<td><p>The Mobile Device Management (MDM) server failed to authenticate the user. Try again or contact your system administrator.</p></td>
 <td><p>80180002</p></td>
 </tr>
 <tr class="odd">
 <td><p>s:</p></td>
 <td><p>Authorization</p></td>
 <td><p>MENROLL_E_DEVICE_AUTHORIZATION_ERROR</p></td>
-<td><p>User not allowed to enroll</p></td>
+<td><p>The user is not authorized to enroll to Mobile Device Management (MDM). Try again or contact your system administrator.</p></td>
 <td><p>80180003</p></td>
 </tr>
 <tr class="even">
 <td><p>s:</p></td>
 <td><p>CertificateRequest</p></td>
-<td><p>MENROLL_E_DEVICE_CERTIFCATEREQUEST_ERROR</p></td>
-<td><p>Failed to get certificate</p></td>
+<td><p>MENROLL_E_DEVICE_CERTIFICATEREQUEST_ERROR</p></td>
+<td><p>The user has no permission for the certificate template or the certificate authority is unreachable. Try again or contact your system administrator.</p></td>
 <td><p>80180004</p></td>
 </tr>
 <tr class="odd">
 <td><p>s:</p></td>
 <td><p>EnrollmentServer</p></td>
 <td><p>MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR</p></td>
-<td></td>
+<td>The Mobile Device Management (MDM) server encountered an error. Try again or contact your system administrator.</td>
 <td><p>80180005</p></td>
 </tr>
 <tr class="even">
 <td><p>a:</p></td>
 <td><p>InternalServiceFault</p></td>
 <td><p>MENROLL_E_DEVICE_INTERNALSERVICE_ERROR</p></td>
-<td><p>The server hit an unexpected issue</p></td>
+<td><p> There was an unhandled exception on the Mobile Device Management (MDM) server. Try again or contact your system administrator.</p></td>
 <td><p>80180006</p></td>
 </tr>
 <tr class="odd">
 <td><p>a:</p></td>
 <td><p>InvalidSecurity</p></td>
 <td><p>MENROLL_E_DEVICE_INVALIDSECURITY_ERROR</p></td>
-<td><p>Cannot parse the security header</p></td>
+<td><p>The Mobile Device Management (MDM) server was not able to validate your account. Try again or contact your system administrator.</p></td>
 <td><p>80180007</p></td>
 </tr>
 </tbody>
@@ -242,43 +231,43 @@ In Windows 10, version 1507, we added the deviceenrollmentserviceerror element.
 <tr class="odd">
 <td><p>DeviceCapReached</p></td>
 <td><p>MENROLL_E_DEVICECAPREACHED</p></td>
-<td><p>User already enrolled in too many devices. Delete or unenroll old ones to fix this error. The user can fix it without admin help.</p></td>
+<td><p>The account has too many devices enrolled to Mobile Device Management (MDM). Delete or unenroll old devices to fix this error.</p></td>
 <td><p>80180013</p></td>
 </tr>
 <tr class="even">
 <td><p>DeviceNotSupported</p></td>
 <td><p>MENROLL_E_DEVICENOTSUPPORTED</p></td>
-<td><p>Specific platform (e.g. Windows) or version is not supported. There is no point retrying or calling admin. User could upgrade device.</p></td>
+<td><p>The Mobile Device Management (MDM) server doesn't support this platform or version, consider upgrading your device.</p></td>
 <td><p>80180014</p></td>
 </tr>
 <tr class="odd">
 <td><p>NotSupported</p></td>
-<td><p>MENROLL_E_NOTSUPPORTED</p></td>
-<td><p>Mobile device management generally not supported (would save an admin call)</p></td>
+<td><p>MENROLL_E_NOT_SUPPORTED</p></td>
+<td><p>Mobile Device Management (MDM) is generally not supported for this device.</p></td>
 <td><p>80180015</p></td>
 </tr>
 <tr class="even">
 <td><p>NotEligibleToRenew</p></td>
 <td><p>MENROLL_E_NOTELIGIBLETORENEW</p></td>
-<td><p>Device is trying to renew but server rejects the request. Client might show notification for this if Robo fails. Check time on device. The user can fix it by re-enrolling.</p></td>
+<td><p>The device is attempting to renew the Mobile Device Management (MDM) certificate, but the server rejected the request. Check renew schedule on the device.</p></td>
 <td><p>80180016</p></td>
 </tr>
 <tr class="odd">
 <td><p>InMaintenance</p></td>
 <td><p>MENROLL_E_INMAINTENANCE</p></td>
-<td><p>Account is in maintenance, retry later. The user can retry later, but they may need to contact the admin because they would not know when problem is solved.</p></td>
+<td><p>The Mobile Device Management (MDM) server states your account is in maintenance, try again later.</p></td>
 <td><p>80180017</p></td>
 </tr>
 <tr class="even">
 <td><p>UserLicense</p></td>
-<td><p>MENROLL_E_USERLICENSE</p></td>
-<td><p>License of user is in bad state and blocking the enrollment. The user needs to call the admin.</p></td>
+<td><p>MENROLL_E_USER_LICENSE</p></td>
+<td><p>There was an error with your Mobile Device Management (MDM) user license. Contact your system administrator.</p></td>
 <td><p>80180018</p></td>
 </tr>
 <tr class="odd">
 <td><p>InvalidEnrollmentData</p></td>
 <td><p>MENROLL_E_ENROLLMENTDATAINVALID</p></td>
-<td><p>The server rejected the enrollment data. The server may not be configured correctly.</p></td>
+<td><p>The Mobile Device Management (MDM) server rejected the enrollment data. The server may not be configured correctly.</p></td>
 <td><p>80180019</p></td>
 </tr>
 </tbody>

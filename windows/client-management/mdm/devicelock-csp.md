@@ -30,9 +30,33 @@ The DevicePasswordEnabled setting must be set to 0 (device password is enabled) 
 -   MaxInactivityTimeDeviceLock
 -   MinDevicePasswordComplexCharacters
 
-The following image shows the DeviceLock configuration service provider in tree format.
+The following shows the DeviceLock configuration service provider in tree format.
 
-![devicelock csp.](images/provisioning-csp-devicelock.png)
+```console
+./Vendor/MSFT
+DeviceLock
+--------Provider
+----------ProviderID
+-------------DevicePasswordEnabled
+-------------AllowSimpleDevicePassword
+-------------MinDevicePasswordLength
+-------------AlphanumericDevicePasswordRequired
+-------------MaxDevicePasswordFailedAttempts
+-------------DevicePasswordExpiration
+-------------DevicePasswordHistory
+-------------MaxInactivityTimeDeviceLock
+-------------MinDevicePasswordComplexCharacters
+----------DeviceValue
+-------------DevicePasswordEnabled
+-------------AllowSimpleDevicePassword
+-------------MinDevicePasswordLength
+-------------AlphanumericDevicePasswordRequired
+-------------MaxDevicePasswordFailedAttempts
+-------------DevicePasswordExpiration
+-------------DevicePasswordHistory
+-------------MaxInactivityTimeDeviceLock
+-------------MinDevicePasswordComplexCharacters
+```
 
 <a href="" id="provider"></a>**Provider**  
 Required. An interior node to group all policy providers. Scope is permanent. Supported operation is Get.

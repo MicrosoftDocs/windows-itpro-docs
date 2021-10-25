@@ -19,9 +19,13 @@ The CellularSettings configuration service provider is used to configure cellula
 > [!Note]
 > Starting in Windows 10, version 1703 the CellularSettings CSP is supported in Windows 10 Home, Pro, Enterprise, and Education editions.
 
-The following image shows the CellularSettings CSP in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
+The following shows the CellularSettings CSP in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
 
-![provisioning for cellular settings.](images/provisioning-csp-cellularsettings.png)
+```console
+./Vendor/MSFT
+CellularSettings
+----DataRoam
+```
 
 <a href="" id="dataroam"></a>**DataRoam**  
 <p> Optional. Integer. Specifies the default roaming value. Valid values are:</p>

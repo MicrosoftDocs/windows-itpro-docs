@@ -25,9 +25,26 @@ The HotSpot configuration service provider is used to configure and enable Inter
 
  
 
-The following diagram shows the HotSpot configuration service provider management object in tree format as used by OMA Client Provisioning. The OMA DM protocol is not supported by this configuration service provider.
+The following shows the HotSpot configuration service provider management object in tree format as used by OMA Client Provisioning. The OMA DM protocol is not supported by this configuration service provider.
 
-![hotspot csp (cp).](images/provisioning-csp-hotspot-cp.png)
+```console
+./Vendor/MSFT
+HotSpot
+-------Enabled
+-------DedicatedConnections
+-------TetheringNAIConnection
+-------MaxUsers
+-------MaxBluetoothUsers
+-------MOHelpNumber
+-------MOInfoLink
+-------MOAppLink
+-------MOHelpMessage
+-------EntitlementRequired
+-------EntitlementDll
+-------EntitlementInterval
+-------PeerlessTimeout
+-------PublicConnectionTimeout
+```
 
 <a href="" id="enabled"></a>**Enabled**
 Required. Specifies whether to enable Internet sharing on the device. The default is false.

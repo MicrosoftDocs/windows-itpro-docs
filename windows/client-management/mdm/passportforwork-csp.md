@@ -21,15 +21,68 @@ The PassportForWork configuration service provider is used to provision Windows 
  
 ### User configuration diagram
 
-The following diagram shows the PassportForWork configuration service provider in tree format.
+The following shows the PassportForWork configuration service provider in tree format.
 
-![passportforwork csp.](images/provisioning-csp-passportforwork.png)
+```console
+./User/Vendor/MSFT
+PassportForWork
+-------TenantId
+----------Policies
+-------------UsePassportForWork
+-------------RequireSecurityDevice
+-------------EnablePinRecovery
+-------------PINComplexity
+----------------MinimumPINLength
+----------------MaximumPINLength
+----------------UppercaseLetters
+----------------LowercaseLetters
+----------------SpecialCharecters
+----------------Digits
+----------------History
+----------------Expiration
+```
 
 ### Device configuration diagram
 
-The following diagram shows the PassportForWork configuration service provider in tree format.
+The following shows the PassportForWork configuration service provider in tree format.
 
-![passportforwork diagram.](images/provisioning-csp-passportforwork2.png)
+```console
+./Device/Vendor/MSFT
+PassportForWork
+-------TenantId
+----------Policies
+-------------UsePassportForWork
+-------------RequireSecurityDevice
+-------------ExcludeSecurityDevices
+----------------TPM12
+-------------EnablePinRecovery
+-------------UserCertificateForOnPremAuth
+-------------PINComplexity
+----------------MinimumPINLength
+----------------MaximumPINLength
+----------------UppercaseLetters
+----------------LowercaseLetters
+----------------SpecialCharacters
+----------------Digits
+----------------History
+----------------Expiration
+-------------Remote
+----------------UseRemotePassport
+-------------UseHelloCertificatesAsSmartCardCertificates
+-------UseBiometrics
+-------Biometrics
+----------UseBiometrics
+----------FacialFeatureUse
+-------DeviceUnlock
+----------GroupA
+----------GroupB
+----------Plugins
+-------DynamicLock
+----------DynamicLock
+----------Plugins
+-------SecurityKey
+----------UseSecurityKeyForSignin
+```
 
 <a href="" id="passportforwork"></a>**PassportForWork**  
 Root node for PassportForWork configuration service provider.

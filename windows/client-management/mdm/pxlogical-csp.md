@@ -19,15 +19,56 @@ The PXLOGICAL configuration service provider is used to add, remove, or modify W
 
 > **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
- 
 
-The following diagram shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for initial bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
+The following shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for initial bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
 
-![pxlogical csp (cp) (initial bootstrapping).](images/provisioning-csp-pxlogical-cp.png)
+```console
+PXLOGICAL
+----DOMAIN
+----NAME
+----PORT
+-------PORTNBR
+-------SERVICE
+----PUSHENABLED
+----PROXY-ID
+----TRUST
+----PXPHYSICAL
+-------DOMAIN
+-------PHYSICAL-PROXY-ID
+-------PORT
+---------PORTNBR
+---------SERVICE
+-------PUSHENABLED
+-------PXADDR
+-------PXADDRTYPE
+-------TO-NAPID
+```
 
-The following diagram shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for updating the bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
 
-![pxlogical csp (cp) (update bootstrapping).](images/provisioning-csp-pxlogical-cp-2.png)
+The following shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for updating the bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
+
+```console
+PXLOGICAL
+--PROXY-ID
+----DOMAIN
+----NAME
+----PORT
+-------PORTNBR
+-------SERVICE
+----PUSHENABLED
+----TRUST
+----PXPHYSICAL
+-------PHYSICAL-PROXY-ID
+----------DOMAIN
+----------PORT
+-------------PORTNBR
+-------------SERVICE
+----------PUSHENABLED
+----------PXADDR
+----------PXADDRTYPE
+----------TO-NAPID
+```
+
 
 <a href="" id="pxphysical"></a>**PXPHYSICAL**  
 Defines a group of logical proxy settings.
@@ -37,7 +78,7 @@ The element's mwid attribute is a Microsoft provisioning XML attribute, and is o
 <a href="" id="domain"></a>**DOMAIN**  
 Specifies the domain associated with the proxy (for example, "\*.com").
 
-A Windows device supports only one proxy that does not have a DOMAIN parameter, or has an empty DOMAIN value. That is, the device only supports one default proxy. All other proxy configurations must have a DOMAIN parameter with a non-empty value. A query of this parameter returns a semicolon delimited string of all domains associated with the proxy.
+A Windows device supports only one proxy that does not have a DOMAIN parameter, or has an empty DOMAIN value. That is, the device only supports one default proxy. All other proxy configurations must have a DOMAIN parameter with a non-empty value. A query of this parameter returns a semicolon-delimited string of all domains associated with the proxy.
 
 <a href="" id="name"></a>**NAME**  
 Specifies the name of the logical proxy.

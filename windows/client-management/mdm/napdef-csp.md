@@ -25,13 +25,41 @@ The NAPDEF configuration service provider is used to add, modify, or delete WAP 
 
  
 
-The following diagram shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **initial bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
+The following shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **initial bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
 
-![napdef csp (cp) (initial bootstrapping).](images/provisioning-csp-napdef-cp.png)
+```console
+NAPDEF
+----NAPAUTHINFO
+------AUTHNAME
+------AUTHSECRET
+------AUTHTYPE
+----BEARER
+----INTERNET
+----LOCAL-ADDR
+----LOCAL-ADDRTYPE
+----NAME
+----NAP-ADDRESS
+----NAP-ADDRTYPE
+----NAPID
+```
 
-The following diagram shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **updating the bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
+The following shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **updating the bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
 
-![napdef csp (cp) (update bootstrapping).](images/provisioning-csp-napdef-cp-2.png)
+```console
+NAPDEF
+--NAPID
+----NAPAUTHINFO
+------AUTHNAME
+------AUTHSECRET
+------AUTHTYPE
+----BEARER
+----INTERNET
+----LOCAL-ADDR
+----LOCAL-ADDRTYPE
+----NAME
+----NAP-ADDRESS
+----NAP-ADDRTYPE
+```
 
 <a href="" id="napauthinfo"></a>**NAPAUTHINFO**  
 Defines a group of authentication settings.
@@ -106,26 +134,26 @@ The following table shows the Microsoft custom elements that this configuration 
 </colgroup>
 <thead>
 <tr class="header">
-<th>ELements</th>
+<th>Elements</th>
 <th>Available</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>parm-query</p></td>
+<td><p>Parm-query</p></td>
 <td><p>Yes</p>
 <p>Note that some GPRS parameters will not necessarily contain the exact same value as was set.</p></td>
 </tr>
 <tr class="even">
-<td><p>noparm</p></td>
+<td><p>Noparm</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>nocharacteristic</p></td>
+<td><p>Nocharacteristic</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>characteristic-query</p></td>
+<td><p>Characteristic-query</p></td>
 <td><p>Yes</p></td>
 </tr>
 </tbody>
