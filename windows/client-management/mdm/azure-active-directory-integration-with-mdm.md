@@ -226,7 +226,7 @@ However, key management is different for on-premises MDM. You must obtain the cl
 
 ## Themes
 
-The pages rendered by the MDM as part of the integrated enrollment process must use Windows 10 templates ([Download the Windows 10 templates and CSS files](https://download.microsoft.com/download/3/E/5/3E535D52-6432-47F6-B460-4E685C5D543A/MDM-ISV_1.1.3.zip)). This is important for enrollment during the Azure AD Join experience in OOBE where all of the pages are edge-to-edge HTML pages. Don't try to copy the templates because you'll never get the button placement right. Using the shared Windows 10 templates ensure a seamless experience for the customers.
+The pages rendered by the MDM as part of the integrated enrollment process must use Windows templates ([Download the Windows templates and CSS files (1.1.4)](https://download.microsoft.com/download/0/7/0/0702afe3-dc1e-48f6-943e-886a4876f6ca/MDM-ISV_1.1.4.zip)). This is important for enrollment during the Azure AD Join experience in OOBE where all of the pages are edge-to-edge HTML pages. Don't try to copy the templates because you'll never get the button placement right. Using the shared templates ensure a seamless experience for the customers.
 
 There are 3 distinct scenarios:
 
@@ -236,7 +236,11 @@ There are 3 distinct scenarios:
 
 Scenarios 1, 2, and 3 are available in Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education. Scenarios 1 and 3 are available in Windows 10 Mobile. Support for scenario 1 was added in Windows 10 Mobile, version 1511.
 
-The CSS files provided by Microsoft contains version information and we recommend that you use the latest version. There are separate CSS files for desktop and mobile devices, OOBE, and post-OOBE experiences. [Download the Windows 10 templates and CSS files](https://download.microsoft.com/download/3/E/5/3E535D52-6432-47F6-B460-4E685C5D543A/MDM-ISV_1.1.3.zip).
+The CSS files provided by Microsoft contains version information and we recommend that you use the latest version. There are separate CSS files for desktop and mobile devices, OOBE, and post-OOBE experiences. [Download the Windows templates and CSS files (1.1.4)](https://download.microsoft.com/download/0/7/0/0702afe3-dc1e-48f6-943e-886a4876f6ca/MDM-ISV_1.1.4.zip). 
+
+- For Windows 10, use **oobe-desktop.css**
+- For Windows 11, use **oobe-light.css**
+
 
 ### Using themes
 
