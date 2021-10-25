@@ -8,7 +8,7 @@ ms.date: 09/27/2019
 ms.topic: article
 ms.prod: m365-security
 ms.technology: windows-sec
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ---
 

@@ -6,7 +6,7 @@ ms.localizationpriority: medium
 ms.topic: article
 ms.prod: m365-security
 ms.technology: windows-sec
-author: manikadhiman
+author: dansimp
 ms.date: 11/09/2020
 ms.reviewer: 
 manager: dansimp

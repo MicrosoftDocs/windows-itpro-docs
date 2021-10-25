@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: m365-security
 ms.technology: windows-sec
-author: manikadhiman
+author: dansimp
 ms.date: 04/22/2021
 ms.reviewer: 
 manager: dansimp

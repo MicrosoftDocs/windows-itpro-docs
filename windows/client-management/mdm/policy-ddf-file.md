@@ -8,7 +8,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: m365-security
 ms.technology: windows-sec
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 10/28/2020
 ---
