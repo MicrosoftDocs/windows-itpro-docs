@@ -39,9 +39,109 @@ Windows 10 lets you inventory all apps deployed to a user and all apps for all 
 
 These classifications are represented as nodes in the EnterpriseModernAppManagement CSP.
 
-The following diagram shows the EnterpriseModernAppManagement CSP in a tree format.
+The following shows the EnterpriseModernAppManagement CSP in a tree format.
 
-![enterprisemodernappmanagement csp diagram.](images/provisioning-csp-enterprisemodernappmanagement.png)
+```console
+./Device/Vendor/MSFT 
+or
+./User/Vendor/MSFT
+EnterpriseAppManagement
+----AppManagement
+--------UpdateScan
+--------LastScanError
+--------AppInventoryResults
+--------AppInventoryQuery
+--------RemovePackage
+--------AppStore
+----------PackageFamilyName
+------------PackageFullName
+--------------Name
+--------------Version
+--------------Publisher
+--------------Architecture
+--------------InstallLocation
+--------------IsFramework
+--------------IsBundle
+--------------InstallDate
+--------------ResourceID
+--------------RequiresReinstall
+--------------PackageStatus
+--------------Users
+--------------IsProvisioned
+--------------IsStub
+------------DoNotUpdate
+------------AppSettingPolicy
+--------------SettingValue
+------------MaintainProcessorArchitectureOnUpdate
+------------NonRemovable
+----------ReleaseManagement
+------------ReleaseManagementKey
+--------------ChannelId
+--------------ReleaseId
+--------------EffectiveRelease
+-----------------ChannelId
+-----------------ReleaseId
+--------nonStore
+----------PackageFamilyName
+------------PackageFullName
+--------------Name
+--------------Version
+--------------Publisher
+--------------Architecture
+--------------InstallLocation
+--------------IsFramework
+--------------IsBundle
+--------------InstallDate
+--------------ResourceID
+--------------RequiresReinstall
+--------------PackageStatus
+--------------Users
+--------------IsProvisioned
+--------------IsStub
+------------DoNotUpdate
+------------AppSettingPolicy
+--------------SettingValue
+------------MaintainProcessorArchitectureOnUpdate
+------------NonRemoveable
+--------System
+----------PackageFamilyName
+------------PackageFullName
+--------------Name
+--------------Version
+--------------Publisher
+--------------Architecture
+--------------InstallLocation
+--------------IsFramework
+--------------IsBundle
+--------------InstallDate
+--------------ResourceID
+--------------RequiresReinstall
+--------------PackageStatus
+--------------Users
+--------------IsProvisioned
+--------------IsStub
+------------DoNotUpdate
+------------AppSettingPolicy
+--------------SettingValue
+------------MaintainProcessorArchitectureOnUpdate
+------------NonRemoveable
+----AppInstallation
+--------PackageFamilyName
+----------StoreInstall
+----------HostedInstall
+----------LastError
+----------LastErrorDesc
+----------Status
+----------ProgressStatus
+----AppLicenses
+--------StoreLicenses
+----------LicenseID
+------------LicenseCategory
+------------LicenseUsage
+------------RequesterID
+------------AddLicense
+------------GetLicenseFromStore
+```
 
 Each app displays one package family name and 1-n package full names for installed apps. The apps are categorized based on their origin (Store, nonStore, System).
 
