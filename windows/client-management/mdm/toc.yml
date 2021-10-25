@@ -48,6 +48,8 @@ items:
       href: device-update-management.md
     - name: Bulk enrollment
       href: bulk-enrollment-using-windows-provisioning-tool.md
+    - name: Secured-Core PC Configuration Lock
+      href: config-lock.md
     - name: Management tool for the Microsoft Store for Business
       href: management-tool-for-windows-store-for-business.md
       items: 
