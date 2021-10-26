@@ -188,6 +188,9 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
   
     Specify "-mionly" if you don't plan to use the Intelligent Security Graph (ISG).
 
+> [!NOTE]
+> Managed installer tracking will start the next time a process runs that matches your managed installer rules. If an intended process is already running, you must restart it.
+
 ## Enable the managed installer option in WDAC policy
 
 In order to enable trust for the binaries laid down by managed installers, the "Enabled: Managed Installer" option must be specified in your WDAC policy.
