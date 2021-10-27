@@ -31,7 +31,6 @@ Use these settings to join a device to an Active Directory domain or an Azure Ac
 The **Azure > Authority** and **Azure > BPRT** settings for bulk Azure Active Directory (Azure AD) enrollment can only be configured using one of the provisioning wizards. After you get a bulk token for Azure AD enrollment in a wizard, you can switch to the advanced editor to configure additional provisioning settings. For information about using the wizards, see:
 
 - [Instructions for desktop wizard](../provisioning-packages/provision-pcs-for-initial-deployment.md)
-- [Instructions for the mobile wizard](../mobile-devices/provisioning-configure-mobile.md)
 - [Instructions for the kiosk wizard](../kiosk-single-app.md#wizard)
 
 ## ComputerAccount
