@@ -927,18 +927,18 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Allows IT Admins to either  prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.  The mode will be specified by the policy string beginning with either the string "showonly:" or "hide:".  Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix. For example, if the URI for a settings page is "ms-settings:bluetooth", the page identifier used in the policy will be just "bluetooth".  Multiple page identifiers are separated by semicolons.
+Allows IT Admins to either prevent specific pages in the System Settings app from being visible or accessible, or to do so for all pages except those specified.  The mode will be specified by the policy string beginning with either the string "showonly:" or "hide:".  Pages are identified by a shortened version of their already published URIs, which is the URI minus the "ms-settings:" prefix. For example, if the URI for a settings page is "ms-settings:bluetooth", the page identifier used in the policy will be just "bluetooth".  Multiple page identifiers are separated by semicolons. For additional information on the URI reference scheme used for the various pages of the System Settings app, see [ms-settings: URI scheme reference](/windows/uwp/launch-resume/launch-settings-app#ms-settings-uri-scheme-reference).
 
 The following example illustrates a policy that would allow access only to the about and bluetooth pages, which have URI "ms-settings:about" and "ms-settings:bluetooth" respectively:
 
 showonly:about;bluetooth
 
-If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (i.e. treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs. Note that if a page is already hidden for another reason, then it will remain hidden even if it is in a "showonly:" list.
+If the policy is not specified, the behavior will be that no pages are affected. If the policy string is formatted incorrectly, it will be ignored entirely (that is, treated as not set) to prevent the machine from becoming unserviceable if data corruption occurs. Note that if a page is already hidden for another reason, then it will remain hidden even if it is in a "showonly:" list.
 
 The format of the PageVisibilityList value is as follows:
 
 - The value is a unicode string up to 10,000 characters long, which will be used without case sensitivity.
-- There are two variants: one that shows only the given pages and one which hides the given pages.
+- There are two variants: one that shows only the given pages and one that hides the given pages.
 - The first variant starts with the string "showonly:" and the second with the string "hide:".
 - Following the variant identifier is a semicolon-delimited list of page identifiers, which must not have any extra whitespace.
 - Each page identifier is the ms-settings:xyz URI for the page, minus the ms-settings: prefix, so the identifier for the page with URI "ms-settings:network-wifi" would be just "network-wifi".
@@ -964,7 +964,7 @@ ADMX Info:
 
 <!--/ADMXMapped-->
 <!--Validation-->
-To validate on Desktop, do the following:
+To validate on Desktop, use the following steps:
 
 1.   Open System Settings and verify that the About page is visible and accessible.
 2.   Configure the policy with the following string: "hide:about".
