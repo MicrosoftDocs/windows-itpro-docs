@@ -23,9 +23,13 @@ The SecurityPolicy configuration service provider is used to configure security 
 
 For the SecurityPolicy CSP, you cannot use the Replace command unless the node already exists.
 
-The following diagram shows the SecurityPolicy configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning.
+The following shows the SecurityPolicy configuration service provider management object in tree format as used by both OMA DM and OMA Client Provisioning.
 
-![securitypolicy csp (dm,cp).](images/provisioning-csp-securitypolicy-dmandcp.png)
+```console
+./Vendor/MSFT
+SecurityPolicy
+----PolicyID
+```
 
 <a href="" id="policyid"></a>***PolicyID***  
 Defines the security policy identifier as a decimal value.
@@ -48,7 +52,7 @@ The following security policies are supported.
 <tbody>
 <tr class="odd">
 <td><p>4104</p>
-<p>Hex:1008</p></td>
+<p>Hex: 1008</p></td>
 <td><p>TPS Policy</p></td>
 <td><p>This setting indicates whether mobile operators can be assigned the Trusted Provisioning Server (TPS) SECROLE_OPERATOR_TPS role.</p>
 <p>Default value: 1</p>
@@ -58,7 +62,7 @@ The following security policies are supported.
 </tr>
 <tr class="even">
 <td><p>4105</p>
-<p>Hex:1009</p></td>
+<p>Hex: 1009</p></td>
 <td><p>Message Authentication Retry Policy</p></td>
 <td><p>This setting specifies the maximum number of times the user is allowed to try authenticating a Wireless Application Protocol (WAP) PIN-signed message.</p>
 <p>Default value: 3</p>
@@ -66,7 +70,7 @@ The following security policies are supported.
 </tr>
 <tr class="odd">
 <td><p>4108</p>
-<p>Hex:100c</p></td>
+<p>Hex: 100c</p></td>
 <td><p>Service Loading Policy</p></td>
 <td><p>This setting indicates whether SL messages are accepted, by specifying the security roles that can accept SL messages. An SL message downloads new services or provisioning XML to the device.</p>
 <p>Default value: 256 (SECROLE_KNOWN_PPG)</p>
