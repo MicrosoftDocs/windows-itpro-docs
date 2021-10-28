@@ -266,7 +266,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 
 <a href="" id="status"></a>**Status**  
-Returns bitmask that indicates status of Application Guard installation for Microsoft Edge and pre-requisites on the device. In contrast, PlatformStatus indicates status of Microsoft Office/Generic platform.  
+Returns bitmask that indicates status of Application Guard installation for Microsoft Edge and pre-requisites on the device.
 
 Value type is integer. Supported operation is Get.
 
@@ -279,7 +279,7 @@ Value type is integer. Supported operation is Get.
 - Bit 6 - Set to 1 when system reboot is required.
 
 <a href="" id="platformstatus"></a>**PlatformStatus**  
-Added in Windows 10, version 2004. Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device. 
+Added in Windows 10, version 2004. Applies to Microsoft Office/Generic platform. Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device. 
 
 Value type is integer. Supported operation is Get.
 
