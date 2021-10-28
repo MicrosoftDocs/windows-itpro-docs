@@ -10,7 +10,7 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 author: greg-lindsay
 ms.localizationpriority: medium
-ms.date: 09/14/2021
+ms.date: 09/20/2021
 ms.topic: article
 ---
 
@@ -18,9 +18,9 @@ ms.topic: article
 
 
 **Applies to**
+-  Windows 10
+-  Windows 11
 
-- Windows 10
-- Windows 11
 
 Administrative Tools is a folder in Control Panel that contains tools for system administrators and advanced users. 
 
@@ -55,7 +55,7 @@ These tools were included in previous versions of Windows. The associated docume
 -   [Windows Memory Diagnostic]( https://go.microsoft.com/fwlink/p/?LinkId=708507)
 
 > [!TIP]
-> If the content that is linked to a tool in the following list doesn't provide the information you need to use that tool, send us a comment by using the **Was this page helpful?** feature on this **Administrative Tools in Windows 10** or **Administrative Tools in Windows 11** page. Details about the information you want for a tool will help us plan future content. 
+> If the content that is linked to a tool in the following list doesn't provide the information you need to use that tool, send us a comment by using the **Was this page helpful?** feature on this **Administrative Tools in Windows 10** page. Details about the information you want for a tool will help us plan future content. 
 
 ## Related topics
 

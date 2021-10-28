@@ -70,7 +70,7 @@ In Windows 10, Windows Hello replaces passwords. When the identity provider sup
 >[!NOTE]
 >Windows Hello as a convenience sign-in uses regular user name and password authentication, without the user entering the password.
 
-![How authentication works in Windows Hello.](images/authflow.png)
+:::image type="content" alt-text="How authentication works in Windows Hello." source="images/authflow.png" lightbox="images/authflow.png":::
 
 Imagine that someone is looking over your shoulder as you get money from an ATM and sees the PIN that you enter. Having that PIN won't help them access your account because they don't have your ATM card. In the same way, learning your PIN for your device doesn't allow that attacker to access your account because the PIN is local to your specific device and doesn't enable any type of authentication from any other device.
 
@@ -81,12 +81,19 @@ Windows Hello helps protect user identities and user credentials. Because the us
 ## How Windows Hello for Business works: key points
 
 -   Windows Hello credentials are based on certificate or asymmetrical key pair. Windows Hello credentials can be bound to the device, and the token that is obtained using the credential is also bound to the device.
+
 -   Identity provider (such as Active Directory, Azure AD, or a Microsoft account) validates user identity and maps the Windows Hello public key to a user account during the registration step.
+
 -   Keys can be generated in hardware (TPM 1.2 or 2.0 for enterprises, and TPM 2.0 for consumers) or software, based on the policy.
+
 -   Authentication is the two-factor authentication with the combination of a key or certificate tied to a device and something that the person knows (a PIN) or something that the person is (biometrics). The Windows Hello gesture does not roam between devices and is not shared with the server. Biometrics templates are stored locally on a device.  The PIN is never stored or shared.
+
 -   The private key never leaves a device when using TPM. The authenticating server has a public key that is mapped to the user account during the registration process.
+
 -   PIN entry and biometric gesture both trigger Windows 10 to use the private key to cryptographically sign data that is sent to the identity provider.  The identity provider verifies the user's identity and authenticates the user.
+
 -   Personal (Microsoft account) and corporate (Active Directory or Azure AD) accounts use a single container for keys. All keys are separated by identity providers' domains to help ensure user privacy.
+
 -   Certificate private keys can be protected by the Windows Hello container and the Windows Hello gesture.
 
 For details, see [How Windows Hello for Business works](hello-how-it-works.md).
@@ -96,6 +103,9 @@ For details, see [How Windows Hello for Business works](hello-how-it-works.md).
 Windows Hello for Business can use either keys (hardware or software) or certificates in hardware or software. Enterprises that have a public key infrastructure (PKI) for issuing and managing end user certificates can continue to use PKI in combination with Windows Hello. Enterprises that do not use PKI or want to reduce the effort associated with managing user certificates can rely on key-based credentials for Windows Hello but still use certificates on their domain controllers as a root of trust.
 
 Windows Hello for Business with a key does not support supplied credentials for RDP. RDP does not support authentication with a key or a self signed certificate. RDP with Windows Hello for Business is supported with certificate based deployments as a supplied credential. Windows Hello for Business key trust can be used with [Windows Defender Remote Credential Guard](../remote-credential-guard.md).
+
+> [!NOTE]
+> Windows Hello for Business is introducing a new trust model called cloud trust in early 2022. This trust model will enable deployment of Windows Hello for Business using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). More information will be available on Windows Hello for Business cloud trust once it is generally available.
 
 ## Learn more
 

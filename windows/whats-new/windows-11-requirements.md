@@ -2,7 +2,7 @@
 title: Windows 11 requirements
 description: Hardware requirements to deploy Windows 11
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
 author: greg-lindsay
 ms.author: greglin
@@ -21,7 +21,7 @@ ms.custom: seo-marvel-apr2020
 
 - Windows 11
 
-This article lists the system requirements for Windows 11. Windows 11 is also supported on a virtual machine (VM). 
+This article lists the system requirements for Windows 11. Windows 11 is also [supported on a virtual machine (VM)](#virtual-machine-support). 
 
 ## Hardware requirements
 
@@ -46,7 +46,7 @@ For information about tools to evaluate readiness, see [Determine eligibility](w
 
 ## Operating system requirements
 
-For the best Windows 11 upgrade experience, eligible devices should be running Windows 10, version 20H1 or later.
+For the best Windows 11 upgrade experience, eligible devices should be running Windows 10, version 2004 or later.
 
 > [!NOTE]
 > S mode is only supported on the Home edition of Windows 11.
@@ -80,6 +80,22 @@ Some features in Windows 11 have requirements beyond those listed above. See the
 - **Windows Projection**: requires a display adapter that supports Windows Display Driver Model (WDDM) 2.0 and a Wi-Fi adapter that supports Wi-Fi Direct.
 - **Xbox app**: requires an Xbox Live account, which is not available in all regions. Please go to the Xbox Live Countries and Regions page for the most up-to-date information on availability. Some features in the Xbox app will require an active [Xbox Game Pass](https://www.xbox.com/xbox-game-pass) subscription.
 
+## Virtual machine support
+
+The following configuration requirements apply to VMs running Windows 11. 
+
+-	Generation: 2<b> \*</b>
+-	Storage: 64 GB or greater
+-	Security: Secure Boot capable, virtual TPM enabled
+-	Memory:  4 GB or greater
+-	Processor: 2 or more virtual processors
+
+The VM host CPU must also meet Windows 11 [processor requirements](/windows-hardware/design/minimum/windows-processor-requirements).
+
+<b>\*</b> In-place upgrade of existing generation 1 VMs to Windows 11 is not possible.
+
+> [!NOTE]
+> Procedures to configure required VM settings depend on the VM host type. For VM hosts running Hyper-V, virtualization (VT-x, VT-d) must be enabled in BIOS. Virtual TPM 2.0 is emulated in the guest VM independent of the Hyper-V host TPM presence or version.
 
 ## Next steps
 
@@ -89,5 +105,5 @@ Some features in Windows 11 have requirements beyond those listed above. See the
 ## See also
 
 [Windows minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview)<br>
-[Windows 11 overview](windows-11.md)
+[What's new in Windows 11 overview](windows-11-whats-new.md)
 

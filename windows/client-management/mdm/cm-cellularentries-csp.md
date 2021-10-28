@@ -18,9 +18,35 @@ The CM\_CellularEntries configuration service provider is used to configure the 
 
 This configuration service provider requires the ID\_CAP\_NETWORKING\_ADMIN capability to be accessed from a network configuration application.
 
-The following diagram shows the CM\_CellularEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
+The following shows the CM\_CellularEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
 
-![cm\-cellularentries csp.](images/provisioning-csp-cm-cellularentries.png)
+```console
+CM_CellularEntries
+----entryname
+--------AlwaysOn
+--------AuthType
+--------ConnectionType
+--------Desc.langid
+--------Enabled
+--------IpHeaderCompression
+--------Password
+--------SwCompression
+--------UserName
+--------UseRequiresMappingPolicy
+--------Version
+--------DevSpecificCellular
+-----------GPRSInfoAccessPointName
+--------Roaming
+--------OEMConnectionID
+--------ApnId
+--------IPType
+--------ExemptFromDisablePolicy
+--------ExemptFromRoaming
+--------TetheringNAI
+--------IdleDisconnectTimeout
+--------SimIccId
+--------PurposeGroups
+```
 
 <a href="" id="entryname"></a>***entryname***  
 <p>Defines the name of the connection.</p>
@@ -51,27 +77,27 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>gprs</p></td>
+<td><p>Gprs</p></td>
 <td><p>Default. Used for GPRS type connections (GPRS + GSM + EDGE + UMTS + LTE).</p></td>
 </tr>
 <tr class="even">
-<td><p>cdma</p></td>
+<td><p>Cdma</p></td>
 <td><p>Used for CDMA type connections (1XRTT + EVDO).</p></td>
 </tr>
 <tr class="odd">
-<td><p>lte</p></td>
+<td><p>Lte</p></td>
 <td><p>Used for LTE type connections (eHRPD + LTE) when the device is registered HOME.</p></td>
 </tr>
 <tr class="even">
-<td><p>legacy</p></td>
+<td><p>Legacy</p></td>
 <td><p>Used for GPRS + GSM + EDGE + UMTS connections.</p></td>
 </tr>
 <tr class="odd">
-<td><p>lte_iwlan</p></td>
+<td><p>Lte_iwlan</p></td>
 <td><p>Used for GPRS type connections that may be offloaded over WiFi</p></td>
 </tr>
 <tr class="even">
-<td><p>iwlan</p></td>
+<td><p>Iwlan</p></td>
 <td><p>Used for connections that are implemented over WiFi offload only</p></td>
 </tr>
 </tbody>
@@ -285,15 +311,15 @@ The following table shows the Microsoft custom elements that this configuration 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>nocharacteristic</p></td>
+<td><p>Nocharacteristic</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="even">
-<td><p>characteristic-query</p></td>
+<td><p>Characteristic-query</p></td>
 <td><p>Yes</p></td>
 </tr>
 <tr class="odd">
-<td><p>parm-query</p></td>
+<td><p>Parm-query</p></td>
 <td><p>Yes</p></td>
 </tr>
 </tbody>
