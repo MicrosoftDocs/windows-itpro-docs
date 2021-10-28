@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 
 ms.reviewer: 
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows security baselines

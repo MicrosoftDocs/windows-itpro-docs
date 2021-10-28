@@ -15,7 +15,7 @@ ms.topic: conceptual
 ms.date: 09/08/2021
 ms.reviewer: 
 ms.custom: asr
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Defender Firewall with Advanced Security
