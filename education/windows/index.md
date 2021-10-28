@@ -24,7 +24,7 @@ ms.date: 10/13/2017
 
 ## ![Plan for Windows 10 in your school.](images/clipboard.png) Plan
 
-<p><b><a href="configure-windows-for-education.md" data-raw-source="[Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)">Windows 10 configuration recommendations for education customers</a></b><br />Provides guidance on ways to customize the OS diagnostic data, consumer experiences, Cortana, search, as well as some of the preinstalled apps, so that Windows is ready for your school.</p>
+<p><b><a href="configure-windows-for-education.md" data-raw-source="[Windows 10 configuration recommendations for education customers](configure-windows-for-education.md)">Windows 10 configuration recommendations for education customers</a></b><br />Provides guidance on ways to customize the OS diagnostic data, consumer experiences, Cortana, search, and some of the preinstalled apps, so that Windows is ready for your school.</p>
 <p><b><a href="edu-deployment-recommendations.md" data-raw-source="[Deployment recommendations for school IT administrators](edu-deployment-recommendations.md)">Deployment recommendations for school IT administrators</a></b><br />Learn how to customize the OS privacy settings, Skype, and Xbox for Windows-based devices used in schools so that you can choose what information is shared with Microsoft.</p>
 <b><a href="get-minecraft-for-education.md" data-raw-source="[Get Minecraft Education Edition](get-minecraft-for-education.md)">Get Minecraft Education Edition</a></b><br />Minecraft Education Edition is built for learning. Learn how to get early access and add it to your Microsoft Store for Business for distribution.</p></div>
 <div class="side-by-side-content-right"><p><b><a href="take-tests-in-windows-10.md" data-raw-source="[Take tests in Windows 10](take-tests-in-windows-10.md)">Take tests in Windows 10</a></b><br />Take a Test is a new app that lets you create the right environment for taking tests. Learn how to use and get it set up.</p>
@@ -35,7 +35,7 @@ ms.date: 10/13/2017
 <p><b><a href="set-up-windows-10.md" data-raw-source="[Set up Windows devices for education](set-up-windows-10.md)">Set up Windows devices for education</a></b><br />Depending on your school&#39;s device management needs, you can use the Set up School PCs app or the Windows Configuration Designer tool to quickly set up student PCs.</p>
 <p><b><a href="deploy-windows-10-in-a-school.md" data-raw-source="[Deploy Windows 10 in a school](deploy-windows-10-in-a-school.md)">Deploy Windows 10 in a school</a></b><br />Get step-by-step guidance to help you deploy Windows 10 in a school environment.</p>
 <p><b><a href="deploy-windows-10-in-a-school-district.md" data-raw-source="[Deploy Windows 10 in a school district](deploy-windows-10-in-a-school-district.md)">Deploy Windows 10 in a school district</a></b><br />Get step-by-step guidance on how to deploy Windows 10 to PCs and devices across a school district.</p>
-<p><b><a href="test-windows10s-for-edu.md" data-raw-source="[Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md)">Test Windows 10 S on existing Windows 10 education devices</a></b><br />Test Windows 10 S on a variety of Windows 10 devices (except Windows 10 Home) in your school and share your feedback with us.</p>
+<p><b><a href="test-windows10s-for-edu.md" data-raw-source="[Test Windows 10 S on existing Windows 10 education devices](test-windows10s-for-edu.md)">Test Windows 10 S on existing Windows 10 education devices</a></b><br />Test Windows 10 S on various Windows 10 devices (except Windows 10 Home) in your school and share your feedback with us.</p>
 
 ## ![Switch to Windows 10 for Education.](images/windows.png) Switch
 
@@ -54,9 +54,10 @@ Follow these links to find step-by-step guidance on how to deploy Windows 8.1 in
 <p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645532(v=ws.11)" target="_blank">Microsoft Store apps</a></b><br />Explore Microsoft Store app deployment strategies and considerations for educational institutions running Windows 8.1.</p>
 <p><b><a href="/previous-versions/windows/it-pro/windows-8.1-and-8/dn645486(v=ws.11)" target="_blank">Windows To Go</a></b><br />Learn about the benefits, limitations, and processes involved in deploying Windows To Go.</p>
 
-## Related topics
+## Related articles
 - [Microsoft Education documentation and resources](/education)
-- [Windows 10 and Windows 10 Mobile](/windows/windows-10/)
+- [Windows for business](https://www.microsoft.com/windows/business)
+- [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business)
 
 <!--
 <p><b><a href="/education/" target="_blank">Try it out: Windows 10 deployment (for education)</a></b><br />Learn how to upgrade devices running the Windows 7 operating system to Windows 10 Anniversary Update, and how to manage devices, apps, and users in Windows 10 Anniversary Update.<br /><br />For the best experience, use this guide in tandem with the <a href="https://vlabs.holsystems.com/vlabs/technet?eng=VLabs&auth=none&src=vlabs&altadd=true&labid=20949&lod=true" target="_blank">TechNet Virtual Lab: IT Pro Try-It-Out</a>.</p>

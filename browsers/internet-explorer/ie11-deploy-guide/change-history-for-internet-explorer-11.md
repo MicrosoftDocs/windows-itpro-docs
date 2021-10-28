@@ -1,7 +1,7 @@
 ---
 ms.localizationpriority: medium
 title: Change history for Internet Explorer 11 (IE11) - Deployment Guide for IT Pros (Internet Explorer 11 for IT Pros)
-description: This topic lists new and updated topics in the Internet Explorer 11 Deployment Guide documentation for Windows 10 and Windows 10 Mobile.
+description: This topic lists new and updated topics in the Internet Explorer 11 Deployment Guide documentation for Windows 10.
 ms.mktglfcycl: deploy
 ms.prod: ie11
 ms.sitesec: library
@@ -18,7 +18,7 @@ ms.author: dansimp
 
 [!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
 
-This topic lists new and updated topics in the Internet Explorer 11 documentation for both Windows 10 and Windows 10 Mobile.
+This topic lists new and updated topics in the Internet Explorer 11 documentation for both Windows 10.
 
 ## April 2017
 |New or changed topic | Description |
