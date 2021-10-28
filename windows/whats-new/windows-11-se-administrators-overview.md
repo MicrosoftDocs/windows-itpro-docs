@@ -63,7 +63,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps are automati
 
 ### Add your own apps
 
-If your apps aren't shown in the [Allowed apps list](#allowed-apps) (in this article), then you can submit an application request at [aka.ms/eduapprequest](aka.ms/eduapprequest). Be sure to sign in with your school account, such as `user@contoso.edu`.
+If your apps aren't shown in the [Allowed apps list](#allowed-apps) (in this article), then you can submit an application request at [aka.ms/eduapprequest](https://aka.ms/eduapprequest). Be sure to sign in with your school account, such as `user@contoso.edu`.
 
 If your school district has a Microsoft account manager, then contact your account manager to add other apps, or apps created by your app developers.
 
