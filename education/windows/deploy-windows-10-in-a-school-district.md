@@ -1577,7 +1577,7 @@ For more information about Intune, see [Microsoft Intune Documentation](/intune/
 
 If you selected to deploy and manage apps by using Microsoft Endpoint Manager and Intune in a hybrid configuration, then skip this section and continue to the [Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager) section.
 
-You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you to deploy apps to companion devices (such as iOS, or Android devices). Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or that another solution manages.
+You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you to deploy apps to companion devices (such as iOS or Android devices). Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or that another solution manages.
 
 For more information about how to configure Intune to manage your apps, see the following resources:
 

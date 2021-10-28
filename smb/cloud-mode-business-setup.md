@@ -78,7 +78,7 @@ If you're new at setting up Office 365, and you'd like to see how it's done, you
 
    **Figure 2** - Microsoft 365 admin center
 
-   ![Microsoft 365 admin center.](images/office365_portal.png)
+   ![Opens the Microsoft 365 admin center.](images/office365_portal.png)
 
 
 6. Select the **Admin** tile to go to the admin center.
@@ -88,7 +88,7 @@ If you're new at setting up Office 365, and you'd like to see how it's done, you
   
    **Figure 3** - Admin center
 
-   ![Microsoft 365 admin center.](images/office365_admin_portal.png)
+   ![Complete the Office 365 setup in the Microsoft 365 admin center.](images/office365_admin_portal.png)
 
 
 8. Go back to the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">admin center</a> to add or buy a domain.
