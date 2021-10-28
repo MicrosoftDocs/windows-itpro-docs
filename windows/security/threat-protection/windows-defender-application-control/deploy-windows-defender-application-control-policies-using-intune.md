@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 04/29/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Deploy WDAC policies using Mobile Device Management (MDM)

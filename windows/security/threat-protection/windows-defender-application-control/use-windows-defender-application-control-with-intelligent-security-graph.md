@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 07/15/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Authorize reputable apps with the Intelligent Security Graph (ISG)

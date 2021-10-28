@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 12/06/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Querying Application Control events centrally using Advanced hunting  

@@ -12,7 +12,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 06/28/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Microsoft network client: Digitally sign communications (always)

@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # GPO\_DOMISO\_IsolatedDomain\_Servers

@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 07/15/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Understand Windows Defender Application Control (WDAC) policy rules and file rules

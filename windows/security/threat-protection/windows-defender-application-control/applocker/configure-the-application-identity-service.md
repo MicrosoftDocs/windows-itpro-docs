@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 07/01/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Configure the Application Identity service

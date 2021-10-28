@@ -16,7 +16,7 @@ ms.author: deniseb
 manager: dansimp
 ms.date: 07/29/2021
 ms.custom: asr
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Defender Application Control and AppLocker feature availability
