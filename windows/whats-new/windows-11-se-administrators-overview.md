@@ -38,7 +38,6 @@ Windows 11 SE comes with some preinstalled apps. The following apps are automati
 ---
 | Application | Min Version | Vendor |
 | --- | --- | --- |
-| Read and Write | 12.0.71 | Texthelp Systems Ltd. |
 | Dragon Assistant | 3.2.98.061 | Nuance Communications |
 | Dragon Professional Individual | 15.00.100  | Nuance Communications |
 | e-Speaking Voice and Speech recognition | 4.4.0.8 | e-speaking |
@@ -46,6 +45,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps are automati
 | Jaws for Windows | 2022.2109.84 ILM | Freedom Scientific |
 | NextUp Talker | 1.0.49 | NextUp Technologies, LLC. |
 | NonVisual Desktop Access | 2021.2 | NV Access |
+| Read and Write | 12.0.71 | Texthelp Systems Ltd. |
 | SuperNova Magnifier & Screen Reader | 20.03 | Dolphin Computer Access |
 | SuperNova Magnifier & Speech | 20.03 | Dolphin Computer Access |
 | Text Aloud | 4.0.64 | Nextup.com |
@@ -63,48 +63,40 @@ Windows 11 SE comes with some preinstalled apps. The following apps are automati
 
 ### Add your own apps
 
-If your school district has a Microsoft account manager, then contact your account manager to add other apps, or apps created by your app developers. If you don't have a Microsoft account manager, you can submit a form request at [aka.ms/edusupport](https://aka.ms/edusupport).
+If your apps aren't shown in the [Allowed apps list](#allowed-apps) (in this article), then you can submit an application request at [aka.ms/eduapprequest](aka.ms/eduapprequest). Be sure to sign in with your school account, such as `user@contoso.edu`.
+
+If your school district has a Microsoft account manager, then contact your account manager to add other apps, or apps created by your app developers.
 
 These apps are automatically added to an exception list in your Intune organization tenant. To deploy and manage apps on your Windows 11 SE devices, you must use the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431). For more specific information, see [ADD LINK TO LAURA'S ARTICLE]().
 
 These apps:
 
-- Must be a `.MSIX` or `.APPX` package file. For more information, see [What is MSIX?](/windows/msix/overview).
+- Can be any native Windows app type, such as a Microsoft Store app, Win32 app, `.MSIX`, `.APPX`, and more.
 
 - Must be in the following app categories:​
   - Content Filtering apps​
   - Test Taking solutions​
-  - Accessibility apps​
+  - Accessibility tool apps
   - Effective classroom communication apps​
   - Essential diagnostics, management, and supportability apps
 
-- Must meet the performance requirement of Win 11 SE. --> **What are the perf requirements? Are we documenting these requirements somewhere else? If yes, I need the link to that content. If no, we can document them here, or in another article.**
+- Must meet the performance requirements of Windows 11. For more specific information, see [Windows 11 requirements](/windows/whats-new/windows-11-requirements).
 
-- Must meet the security requirements of Windows 11 code integrity. For example:
+- Must meet minimum security requirements, such as:
   - All app binaries are code-signed​.
   - All files include the `OriginalFileName` in the resource file header​.
   - All kernel drivers are WHQL-signed.
 
-  --> **Is there more information on Windows 11 code integrity? Hopefully an article somewhere?**
-
 - Must have an installer, and don't have an equivalent web application​.
 
-- Can run on Google Chromebooks.
-
-- Don't invoke or deny any of the following processes:
-  - CDB.exe​
-  - KD.exe​
-  - MSBuild.exe​
-  - Dnx.exe​
-  - Powershell.exe​
-  - Reg.exe
+- Must not invoke any processes that can be used to jailbreak a device, automate jailbreaks, or present a security risk. For example, processes such as Reg.exe, CBE.exe, CMD.exe, and KD.exe are blocked on Windows 11 SE.
 
 ## 0x87D300D9 error with an app
 
 When you deploy an app using Endpoint Manager, you may get a `0x87D300D9` error code with a `Failed` state in the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431). If you have an app that fails with this error, then:
 
 - Make sure your app is on the app exception list in your Intune tenant organization. For more information, see [ADD LINK TO LAURA'S ARTICLE]().
-- If the app is on the exception list, then it's possible the app is packaged wrong. Apps must be a `.MSIX` or `.APPX` package file. For more requirements, see [Add your own apps](#add-your-own-apps) (in this article).
+- If the app is on the exception list, then it's possible the app is packaged wrong. For more requirements, see [Add your own apps](#add-your-own-apps) (in this article).
 - If the app isn't on the exception list, then it won't run on Windows 11 SE. To get apps on the exception list, see [Add your own apps](#add-your-own-apps) (in this article). Or, use an app that runs in a web browser, such as a web app or PWA.
 
 ## Next steps
