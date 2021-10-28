@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/26/2018
 ms.reviewer: 
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Microsoft Security Compliance Toolkit 1.0
@@ -26,6 +26,8 @@ The SCT enables administrators to effectively manage their enterprise’s Group 
 <p></p>
 
 The Security Compliance Toolkit consists of:
+
+-   Windows 11 security baseline
 
 -   Windows 10 security baselines
     -   Windows 10 Version 1909 (November 2019 Update)
@@ -48,7 +50,7 @@ The Security Compliance Toolkit consists of:
     -   Office 2016 
     
 -   Microsoft Edge security baseline
-    -   Edge Browser Version 80
+    -   Edge Browser Version 93
 
 -   Tools
     -   Policy Analyzer tool

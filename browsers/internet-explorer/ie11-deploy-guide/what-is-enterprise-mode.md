@@ -39,7 +39,7 @@ Using Enterprise Mode means that you can continue to use Microsoft Edge as your 
 > [!TIP]
 > If you are running an earlier version of Internet Explorer, we recommend upgrading to IE11, so that any legacy apps continue to work correctly.
 
-For Windows 10 and Windows 10 Mobile, Microsoft Edge is the default browser experience. However, Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or included on your Enterprise Mode Site List. 
+For Windows 10, Microsoft Edge is the default browser experience. However, Microsoft Edge lets you continue to use IE11 for sites that are on your corporate intranet or included on your Enterprise Mode Site List. 
 
 
 ## What is Enterprise Mode?
@@ -68,12 +68,12 @@ Download the [Enterprise Mode Site List Manager (schema v.2)](https://go.microso
 
 [!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
  XML file
-The Enterprise Mode Site List is an XML document that specifies a list of sites, their compat mode, and their intended browser. Using [Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853), you can automatically start a webpage using a specific browser. In the case of IE11, the webpage can also be launched in a specific compat mode, so it always renders correctly. Your employees can easily view this site list by typing _about:compat_ in either Microsoft Edge or IE11.
+The Enterprise Mode Site List is an XML document that specifies a list of sites, their compatibility mode, and their intended browser. Using [Enterprise Mode Site List Manager (schema v.2)](https://go.microsoft.com/fwlink/p/?LinkId=716853), you can automatically start a webpage using a specific browser. In IE11, the webpage can also be launched in a specific compatibility mode, so it always renders correctly. Your employees can easily view this site list by typing `about:compat` in either Microsoft Edge or IE11.
 
 Starting with Windows 10, version 1511 (also known as the Anniversary Update), you can also [restrict IE11 to only the legacy web apps that need it](https://blogs.windows.com/msedgedev/2016/05/19/edge14-ie11-better-together/), automatically sending sites not included in the Enterprise Mode Site List to Microsoft Edge.
 
 ### Site list xml file
-This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypflug/9e9961de771d2fcbd86b#file-emie-v2-schema-xml). There are equivalent Enterprise Mode Site List policies for both [Microsoft Edge](/microsoft-edge/deploy/emie-to-improve-compatibility) and [Internet Explorer 11](turn-on-enterprise-mode-and-use-a-site-list.md). The Microsoft Edge list is used to determine which sites should open in IE11; while the IE11 list is used to determine the compat mode for a site, and which sites should open in Microsoft Edge. We recommend using one list for both browsers, where each policy points to the same XML file location.
+This is a view of the [raw EMIE v2 schema.xml file](https://gist.github.com/kypflug/9e9961de771d2fcbd86b#file-emie-v2-schema-xml). There are equivalent Enterprise Mode Site List policies for both [Microsoft Edge](/microsoft-edge/deploy/emie-to-improve-compatibility) and [Internet Explorer 11](turn-on-enterprise-mode-and-use-a-site-list.md). The Microsoft Edge list is used to determine which sites should open in IE11; while the IE11 list is used to determine the compatibility mode for a site, and which sites should open in Microsoft Edge. We recommend using one list for both browsers, where each policy points to the same XML file location.
 
 ```xml
 <site-list version="205">
@@ -123,7 +123,7 @@ You can build and manage your Enterprise Mode Site List is by using any generic 
 ### Enterprise Mode Site List Manager
 This tool helps you create error-free XML documents with simple n+1 versioning and URL verification. We recommend using this tool if your site list is relatively small. For more info about this tool, see the Use the [Enterprise Mode Site List Manager](use-the-enterprise-mode-site-list-manager.md) topics.
 
-There are 2 versions of this tool, both supported on Windows 7, Windows 8.1, and Windows 10:
+There are two versions of this tool, both supported on Windows 7, Windows 8.1, and Windows 10:
 
 - [Enterprise Mode Site List Manager (schema v.1)](https://www.microsoft.com/download/details.aspx?id=42501). This is an older version of the schema that you must use if you want to create and update your Enterprise Mode Site List for devices running the v.1 version of the schema.
 

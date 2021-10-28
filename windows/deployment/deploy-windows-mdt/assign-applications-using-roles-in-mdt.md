@@ -3,7 +3,7 @@ title: Assign applications using roles in MDT (Windows 10)
 description: This topic will show you how to add applications to a role in the MDT database and then assign that role to a computer.
 ms.assetid: d82902e4-de9c-4bc4-afe0-41d649b83ce7
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: settings, database, deploy
 ms.prod: w10
@@ -17,6 +17,10 @@ ms.topic: article
 ---
 
 # Assign applications using roles in MDT
+
+**Applies to**
+- Windows 10
+- Windows 11
 
 This topic will show you how to add applications to a role in the MDT database and then assign that role to a computer. For the purposes of this topic, the application we are adding is Adobe Reader XI. In addition to using computer-specific entries in the database, you can use roles in MDT to group settings together.
 

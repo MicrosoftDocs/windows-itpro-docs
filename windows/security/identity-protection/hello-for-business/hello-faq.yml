@@ -14,7 +14,7 @@ metadata:
   ms.collection: M365-identity-device-management
   ms.topic: article
   localizationpriority: medium
-  ms.date: 01/14/2021
+  ms.date: 10/15/2021
   ms.reviewer: 
     
 title: Windows Hello for Business Frequently Asked Questions (FAQ)
@@ -25,6 +25,10 @@ summary: |
 sections:
   - name: Ignored
     questions:
+      - question: What is Windows Hello for Business cloud trust?
+        answer: |
+          Windows Hello for Business cloud trust is a new trust model that is planned to be introduced in early 2022. This trust model will enable Windows Hello for Business deployment using the infrastructure introduced for supporting [security key sign-in on Hybrid Azure AD joined devices and on-premises resource access on Azure AD Joined devices](/azure/active-directory/authentication/howto-authentication-passwordless-security-key-on-premises). More information will be available on Windows Hello for Business cloud trust once it is generally available.
+      
       - question: What about virtual smart cards?
         answer: |
           Windows Hello for Business is the modern, two-factor credential for Windows 10. Microsoft will be deprecating virtual smart cards in the future, but no date is set at this time. Customers using Windows 10 and virtual smart cards should move to Windows Hello for Business.  Microsoft will publish the date early to ensure customers have adequate lead time to move to Windows Hello for Business. Microsoft recommends that new Windows 10 deployments use Windows Hello for Business. Virtual smart card remain supported for Windows 7 and Windows 8.
@@ -208,7 +212,7 @@ sections:
           
       - question: Does Windows Hello for Business work with third-party federation servers?
         answer: |
-          Windows Hello for Business works with any third-party federation servers that support the protocols used during the provisioning experience.  Interested third-parties can inquiry at [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration).<br><br>
+          Windows Hello for Business works with any third-party federation servers that support the protocols used during the provisioning experience.<br><br>
           
           | Protocol | Description |
           | :---: | :--- |
@@ -220,3 +224,9 @@ sections:
       - question: Does Windows Hello for Business work with Mac and Linux clients?
         answer: |
           Windows Hello for Business is a feature of Windows 10. At this time, Microsoft is not developing clients for other platforms. However, Microsoft is open to third-parties who are interested in moving these platforms away from passwords. Interested third-parties can get more information by emailing [whfbfeedback@microsoft.com](mailto:whfbfeedback@microsoft.com?subject=collaboration).
+          Windows Hello for Business is a feature of the Windows platform. At this time, Microsoft is not developing clients for other platforms.
+          
+      - question: Does Windows Hello for Business work with Azure Active Directory Domain Services (Azure AD DS) clients?
+        answer: | 
+          No, Azure AD DS is a separately managed environment in Azure, and hybrid device registration with cloud Azure AD is not available for it via Azure AD Connect. Hence, Windows Hello for Business does not work with Azure AD.
+

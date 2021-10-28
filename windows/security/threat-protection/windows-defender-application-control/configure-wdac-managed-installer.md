@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 08/14/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Managed installer and ISG technical reference and troubleshooting guide

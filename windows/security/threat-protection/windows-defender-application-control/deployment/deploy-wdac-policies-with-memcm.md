@@ -11,7 +11,7 @@ ms.author: jogeurte
 ms.manager: jsuther
 manager: dansimp
 ms.date: 07/19/2021
-ms.technology: mde
+ms.technology: windows-sec
 ms.topic: article
 ms.localizationpriority: medium
 ---

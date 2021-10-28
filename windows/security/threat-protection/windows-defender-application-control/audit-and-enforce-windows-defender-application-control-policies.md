@@ -15,7 +15,7 @@ ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Use audit events to create WDAC policy rules and Convert **base** policy from audits to enforced

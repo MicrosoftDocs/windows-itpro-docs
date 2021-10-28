@@ -12,7 +12,7 @@ ms.date: 07/01/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # System Guard Secure Launch and SMM protection

@@ -11,7 +11,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 09/08/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5031(F): The Windows Firewall Service blocked an application from accepting incoming connections on the network.

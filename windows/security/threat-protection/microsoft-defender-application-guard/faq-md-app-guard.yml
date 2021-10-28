@@ -9,11 +9,11 @@ metadata:
   ms.localizationpriority: medium
   author: denisebmsft
   ms.author: deniseb
-  ms.date: 09/29/2021
+  ms.date: 09/30/2021
   ms.reviewer:
   manager: dansimp
   ms.custom: asr
-  ms.technology: mde
+  ms.technology: windows-sec
     
 title: Frequently asked questions - Microsoft Defender Application Guard
 summary: |
@@ -171,11 +171,6 @@ sections:
           
           10. Choose **Apply to this Service** and select **Internet Connection Sharing (ICS) Shared Access**.
           
-      - question: |
-          Why can I not launch Application Guard when Exploit Guard is enabled?
-        answer: |
-          There is a known issue such that if you change the Exploit Protection settings for CFG and possibly others, hvsimgr cannot launch. To mitigate this issue, go to **Windows Security** > **App and Browser control** > **Exploit Protection Setting**, and then switch CFG to **use default**.
-
       - question: |
           How can I disable portions of ICS without breaking Application Guard?
         answer: |

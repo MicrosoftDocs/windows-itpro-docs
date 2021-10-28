@@ -13,7 +13,7 @@ ms.collection:
   - m365-security-compliance
   - m365-initiative-windows-security
 ms.topic: troubleshooting
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Filter origin audit log improvements

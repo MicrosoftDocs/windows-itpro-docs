@@ -11,7 +11,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.date: 3/20/2019
 ms.reviewer: 
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Common Criteria Certifications

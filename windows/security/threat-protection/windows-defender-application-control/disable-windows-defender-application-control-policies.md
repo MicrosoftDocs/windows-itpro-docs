@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Disable Windows Defender Application Control policies

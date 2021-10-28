@@ -14,8 +14,8 @@ author: jsuther1974
 ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
-ms.date: 09/22/2021
-ms.technology: mde
+ms.date: 10/19/2021
+ms.technology: windows-sec
 ---
 
 # Automatically allow apps deployed by a managed installer with Windows Defender Application Control
@@ -26,8 +26,8 @@ ms.technology: mde
 - Windows 11
 - Windows Server 2019 and above
 
->[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
+> [!NOTE]
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 With Windows Defender Application Control (WDAC), you can automatically allow applications installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager, using a feature called _managed installer_. Managed installer can help you better balance security and manageability when enforcing application control policies.
 
@@ -39,8 +39,7 @@ You can then configure WDAC to trust files that are installed by a managed insta
 
 ## Security considerations with managed installer
 
-Since managed installer is a heuristic-based mechanism, it doesn't provide the same security guarantees that explicit allow or deny rules do.
-It's best suited for use where each user operates as a standard user and where all software is deployed and installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager (MEMCM).
+Since managed installer is a heuristic-based mechanism, it doesn't provide the same security guarantees that explicit allow or deny rules do. The managed installer is best suited for use where each user operates as a standard user and where all software is deployed and installed by a software distribution solution, such as Microsoft Endpoint Configuration Manager (MEMCM).
 
 Users with administrator privileges, or malware running as an administrator user on the system, may be able to circumvent the intent of Windows Defender Application Control when the managed installer option is allowed.
 
@@ -79,13 +78,13 @@ Currently, neither the AppLocker policy creation UI in GPO Editor nor the PowerS
 
 2. Manually change the rule collection Type from "Exe" to "ManagedInstaller" and set EnforcementMode to "AuditOnly"
 
-    Change
+    Change:
 
     ```XML
     <RuleCollection Type="Exe" EnforcementMode="NotConfigured">
     ```
 
-    to
+    to:
 
     ```XML
     <RuleCollection Type="ManagedInstaller" EnforcementMode="AuditOnly">
@@ -208,7 +207,7 @@ Below are steps to create a WDAC policy that allows Windows to boot and enables 
     Set-CIPolicyIdInfo -FilePath <XML filepath> -PolicyName "<friendly name>" -ResetPolicyID
     ```
 
-3. Set Option 13 (Enabled:Managed Installer)
+3. Set Option 13 (Enabled:Managed Installer).
 
     ```powershell
     Set-RuleOption -FilePath <XML filepath> -Option 13

@@ -201,7 +201,7 @@ When the process is complete, you will have a new Windows 10 computer in your do
 ![User data and setting restored example 8.](../images/pc0006h.png)<br>
 ![User data and setting restored example 9.](../images/pc0006i.png)
 
-Next, see [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade-to-windows-10-with-configuraton-manager.md).
+Next, see [Perform an in-place upgrade to Windows 10 using Configuration Manager](upgrade-to-windows-10-with-configuration-manager.md).
 
 ## Related topics
 
