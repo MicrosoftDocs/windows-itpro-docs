@@ -266,7 +266,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 
 <a href="" id="status"></a>**Status**  
-Returns bitmask that indicates status of Application Guard installation for Microsoft Office/generic platform and pre-requisites on the device. This does not apply to Microsoft Edge currently. 
+Returns bitmask that indicates status of Application Guard installation for Microsoft Edge and pre-requisites on the device. In contrast, PlatformStatus indicates status of Microsoft Office/Generic platform.  
 
 Value type is integer. Supported operation is Get.
 
