@@ -38,7 +38,7 @@ ms.date: 07/21/2021
 > For any questions, please contact us at DGSSMigration@microsoft.com. 
 
 
-**Applies to**:
+**Applies to**
 
 -   Windows 10
 

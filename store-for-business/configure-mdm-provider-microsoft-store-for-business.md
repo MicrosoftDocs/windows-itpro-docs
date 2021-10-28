@@ -17,7 +17,7 @@ ms.date: 07/21/2021
 
 # Configure an MDM provider
 
-**Applies to**:
+**Applies to**
 
 -   Windows 10
 
