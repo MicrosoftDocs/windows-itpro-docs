@@ -96,7 +96,7 @@ MDT includes the Deployment Workbench—a console from which you can manage the 
 
 LTI performs deployment from a *deployment share*—a network-shared folder on the device where you installed MDT. You can perform over-the-network deployments from the deployment share or perform deployments from a local copy of the deployment share on a USB drive or DVD. You will learn more about MDT in the [Prepare the admin device](#prepare-the-admin-device) section.
 
-The focus of MDT is deployment, so you also need tools that help you manage your Windows 10 devices and apps. You can manage Windows 10 devices and apps with Intune, the Compliance Management feature in Office 365, or Group Policy in AD DS. You can use any combination of these tools based on your school requirements.
+The focus of MDT is deployment, so you also need tools that help you manage your Windows 10 devices and apps. You can manage Windows 10 devices and apps with [Microsoft Endpoint Manager](/mem/), the Compliance Management feature in Office 365, or Group Policy in AD DS. You can use any combination of these tools based on your school requirements.
 
 The configuration process requires the following devices:
 
@@ -295,7 +295,7 @@ Although all new Office 365 Education subscriptions have automatic licensing ena
 
 ### Enable Azure AD Premium
 
-When you create your Office 365 subscription, you create an Office 365 tenant that includes an Azure AD directory. Azure AD is the centralized repository for all your student and faculty accounts in Office 365, Intune, and other Azure AD–integrated apps. Azure AD is available in Free, Basic, and Premium editions. Azure AD Free, which is included in Office 365 Education, has fewer features than Azure AD Basic, which in turn has fewer features than Azure AD Premium.
+When you create your Office 365 subscription, you create an Office 365 tenant that includes an Azure AD directory. Azure AD is the centralized repository for all your student and faculty accounts in Office 365, Intune, and other Azure AD–integrated apps. Azure AD has different editions, which may include Office 365 Education. For more information, see [Introduction to Azure Active Directory Tenants](/microsoft-365/education/deploy/intro-azure-active-directory).
 
 Educational institutions can obtain Azure AD Basic edition licenses at no cost. After you obtain your licenses, activate your Azure AD access by completing the steps in [Step 3: Activate your Azure Active Directory access](/azure/active-directory/fundamentals/active-directory-get-started-premium#step-3-activate-your-azure-active-directory-access).
 
@@ -439,8 +439,8 @@ Several methods are available to bulk-import user accounts into AD DS domains. T
 ---
 |  Method |  Description and reason to select this method  |
 |---|---|
-| **Ldifde.exe** | This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](/previous-versions/windows/it-pro/windows-2000-server/bb727091(v=technet.10)), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/kb/555636), [Import or Export Directory Objects Using Ldifde](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816781(v=ws.10)), and [LDIFDE](/previous-versions/orphan-topics/ws.10/cc755456(v=ws.10)). |
-| **VBScript** | This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](/previous-versions/windows/it-pro/windows-2000-server/bb727091(v=technet.10)) and [ADSI Scriptomatic](https://technet.microsoft.com/scriptcenter/dd939958.aspx) |
+| **Ldifde.exe** | This command-line tool allows you to import and export objects (such as user accounts) from AD DS. Select this method if you aren’t comfortable with Microsoft Visual Basic Scripting Edition (VBScript), Windows PowerShell, or other scripting languages. For more information about using Ldifde.exe, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/116.active-directory-step-by-step-guide-bulk-import-and-export.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/kb/555636), [Import or Export Directory Objects Using Ldifde](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816781(v=ws.10)), and [LDIFDE](/previous-versions/orphan-topics/ws.10/cc755456(v=ws.10)). |
+| **VBScript** | This scripting language uses the Active Directory Services Interfaces (ADSI) Component Object Model interface to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with VBScript. For more information about using VBScript and ADSI, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/116.active-directory-step-by-step-guide-bulk-import-and-export.aspx). |
 | **Windows PowerShell** |  This scripting language natively supports cmdlets to manage AD DS objects, including user and group objects. Select this method if you’re comfortable with Window PowerShell scripting. For more information about using Windows PowerShell, see [Import Bulk Users to Active Directory](/archive/blogs/technet/bettertogether/import-bulk-users-to-active-directory) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).  |
 
 ---
@@ -454,8 +454,8 @@ After you have selected your user and group account bulk import method, you’re
 ---
 | Method |  Source file format   |
 |---|---|
-| **Ldifde.exe** | Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](/previous-versions/windows/it-pro/windows-2000-server/bb727091(v=technet.10)), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/kb/555636), [Import or Export Directory Objects Using Ldifde](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816781(v=ws.10)), and [LDIFDE](/previous-versions/orphan-topics/ws.10/cc755456(v=ws.10)). |
-| **VBScript**  |  VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](/previous-versions/windows/it-pro/windows-2000-server/bb727091(v=technet.10)) |
+| **Ldifde.exe** | Ldifde.exe requires a specific format for the source file. Use Ldifde.exe to export existing user and group accounts so that you can see the format. For examples of the format that Ldifde.exe requires, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/116.active-directory-step-by-step-guide-bulk-import-and-export.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/kb/555636), [Import or Export Directory Objects Using Ldifde](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816781(v=ws.10)), and [LDIFDE](/previous-versions/orphan-topics/ws.10/cc755456(v=ws.10)). |
+| **VBScript**  |  VBScript can use any .csv file format to create a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in comma-separated values (CSV) format, see [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/116.active-directory-step-by-step-guide-bulk-import-and-export.aspx) |
 | **Windows PowerShell** | Windows PowerShell can use any .csv file format you want to create as a source file for the bulk-import process. To create the .csv file, use software such as Excel. For examples of how to format your source file in CSV format, see [Import Bulk Users to Active Directory](/archive/blogs/technet/bettertogether/import-bulk-users-to-active-directory) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx). |
 
 ---
@@ -469,8 +469,8 @@ With the bulk-import source file finished, you’re ready to import the user and
 
 For more information about how to import user accounts into AD DS by using:
 
-- Ldifde.exe: See [Step-by-Step Guide to Bulk Import and Export to Active Directory](/previous-versions/windows/it-pro/windows-2000-server/bb727091(v=technet.10)), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/kb/555636), [Import or Export Directory Objects Using Ldifde](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816781(v=ws.10)), and [LDIFDE](/previous-versions/orphan-topics/ws.10/cc755456(v=ws.10)).
-- VBScript: See [Step-by-Step Guide to Bulk Import and Export to Active Directory](/previous-versions/windows/it-pro/windows-2000-server/bb727091(v=technet.10)).
+- Ldifde.exe: See [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/116.active-directory-step-by-step-guide-bulk-import-and-export.aspx), [LDIFDE—Export/Import data from Active Directory—LDIFDE commands](https://support.microsoft.com/kb/555636), [Import or Export Directory Objects Using Ldifde](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc816781(v=ws.10)), and [LDIFDE](/previous-versions/orphan-topics/ws.10/cc755456(v=ws.10)).
+- VBScript: See [Step-by-Step Guide to Bulk Import and Export to Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/116.active-directory-step-by-step-guide-bulk-import-and-export.aspx).
 - Windows PowerShell: See [Import Bulk Users to Active Directory](/archive/blogs/technet/bettertogether/import-bulk-users-to-active-directory) and [PowerShell: Bulk create AD Users from CSV file](https://social.technet.microsoft.com/wiki/contents/articles/24541.powershell-bulk-create-ad-users-from-csv-file.aspx).
 
 ### Summary
@@ -713,7 +713,7 @@ For a school, there are many ways to manage devices. Table 10 lists the methods 
 ---
 | Method | Description |
 | --- | --- |
-| **Group Policy** | Group Policy is an integral part of AD DS and allows you to specify configuration settings for Windows 10 and previous versions of Windows. Select this method when you: <br/><br/>- Want to manage institution-owned devices that are domain joined (personally owned devices are typically not domain joined).<br/>- Want more granular control of device and user settings.<br/>- Have an existing AD DS infrastructure.<br/>- Typically manage on-premises devices.<br/>- Can manage a required setting only by using Group Policy.<br/><br/>The advantages of this method include:<br/><br/>- No cost beyond the AD DS infrastructure.<br/>- A larger number of settings (compared to Intune).<br/><br/>The disadvantages of this method are:<br/><br/>- Can only manage domain-joined (institution-owned devices).<br/>- Requires an AD DS infrastructure (if the institution does not have AD DS already).<br/>- Typically manages on-premises devices (unless devices connect by using a VPN or DirectAccess). | 
+| **Group Policy** | Group Policy is an integral part of AD DS and allows you to specify configuration settings for Windows 10 and previous versions of Windows. Select this method when you: <br/><br/>- Want to manage institution-owned devices that are domain joined (personally owned devices are typically not domain joined).<br/>- Want more granular control of device and user settings.<br/>- Have an existing AD DS infrastructure.<br/>- Typically manage on-premises devices.<br/>- Can manage a required setting only by using Group Policy.<br/><br/>The advantages of this method include:<br/><br/>- No cost beyond the AD DS infrastructure.<br/>- A larger number of settings.<br/><br/>The disadvantages of this method are:<br/><br/>- Can only manage domain-joined (institution-owned devices).<br/>- Requires an AD DS infrastructure (if the institution does not have AD DS already).<br/>- Typically manages on-premises devices (unless devices connect by using a VPN or DirectAccess). | 
 | **Intune** | Intune is a cloud-based management system that allows you to specify configuration settings for Windows 10, previous versions of Windows, and other operating systems (such as iOS or Android). Intune is a subscription-based cloud service that integrates with Office 365 and Azure AD.<br/><br/>Select this method when you:<br/><br/>- Want to manage institution-owned and personal devices (does not require that the device be domain joined).<br/>- Don’t require the level of granular control over device and user settings (compared to Group Policy).<br/>- Don’t have an existing AD DS infrastructure.<br/>- Need to manage devices regardless of where they are (on or off premises).<br/>- Can manage a required setting only by using Intune.<br/><br/>The advantages of this method are:<br/><br/>- You can manage institution-owned and personal devices.<br/>- It doesn’t require that devices be domain joined.<br/>- It doesn’t require any on-premises infrastructure.<br/>- It can manage devices regardless of their location (on or off premises).<br/><br/>The disadvantages of this method are:<br/><br/>- Carries an additional cost for subscription.<br/>- Doesn’t have a granular level control over device and user settings (compared to Group Policy). | 
 
 ---
@@ -756,20 +756,23 @@ For more information about Group Policy, see [Group Policy Planning and Deployme
 
 Now, you’re ready to configure settings by using Intune. The steps in this section assume that you have an Office 365 subscription. You will configure the Intune settings that you selected in the [Select Microsoft-recommended settings](#select-microsoft-recommended-settings) section.
 
-For more information about Intune, see [Documentation for Microsoft Intune](/intune/).
+For more information about Intune, see [Documentation for Microsoft Intune](/mem/intune/).
 
 #### To configure Intune settings
 
-1. Add Intune to your Office 365 subscription by completing the steps in [Get started with a paid subscription to Microsoft Intune](/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune).
-2. Enroll devices with Intune by completing the steps in [Get ready to enroll devices in Microsoft Intune](https://technet.microsoft.com/library/dn646962.aspx).
-3. Configure the settings in Intune Windows 10 policies by completing the steps in [Manage settings and features on your devices with Microsoft Intune policies](https://technet.microsoft.com/library/dn646984.aspx).
-4. Manage Windows 10 devices by completing the steps in [Manage Windows PCs with Microsoft Intune](https://technet.microsoft.com/library/dn646959.aspx). 
+1. Check your Intune licensing. If you have a Microsoft 365 subscription, you may already have Intune. For more information, see [Microsoft Intune licensing](/mem/intune/fundamentals/licenses).
+2. Enroll devices in Microsoft Intune. For more information on your enrollment options, see [Intune enrollment methods for Windows devices](/mem/intune/enrollment/windows-enrollment-methods). 
+3. Configure the [compliance settings](/mem/intune/protect/device-compliance-get-started) and [configuration settings](/mem/intune/configuration/device-profiles) that meet your school system's needs.
+4. Use the reporting features in Intune to monitor devices. For more information, see [Intune reports](/mem/intune/fundamentals/reports).
 
 ### Deploy apps by using Intune
 
-You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you deploy apps to companion devices (such as iOS or Android devices) Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or are managed by another solution.
+You can use Intune to deploy apps to Android, iOS/iPadOS, macOS, and Windows devices. You can manage app security and features on organization-owned devices and personal devices.
 
-For more information about how to configure Intune to manage your apps, see [Deploy and configure apps with Microsoft Intune](/intune/).
+For more information about how to configure Intune to manage your apps, see:
+
+- [What is Microsoft Intune app management?](/mem/intune/apps/app-management)
+- [App protection policies overview](/mem/intune/apps/app-protection-policy)
 
 ### Summary
 

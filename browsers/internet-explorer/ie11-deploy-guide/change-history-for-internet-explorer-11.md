@@ -18,7 +18,7 @@ ms.author: dansimp
 
 [!INCLUDE [Microsoft 365 workloads end of support for IE11](../includes/microsoft-365-ie-end-of-support.md)]
 
-This topic lists new and updated topics in the Internet Explorer 11 documentation for both Windows 10.
+This topic lists new and updated topics in the Internet Explorer 11 documentation for Windows 10.
 
 ## April 2017
 |New or changed topic | Description |
