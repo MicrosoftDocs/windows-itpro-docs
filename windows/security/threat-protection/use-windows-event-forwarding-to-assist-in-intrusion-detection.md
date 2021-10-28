@@ -12,7 +12,7 @@ ms.pagetype: security
 author: dulcemontemayor
 ms.date: 02/28/2019
 ms.localizationpriority: medium
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Use Windows Event Forwarding to help with intrusion detection

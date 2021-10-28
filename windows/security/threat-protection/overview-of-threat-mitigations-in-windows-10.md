@@ -10,7 +10,7 @@ author: dansimp
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Mitigate threats by using Windows 10 security features

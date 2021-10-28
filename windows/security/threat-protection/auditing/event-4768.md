@@ -11,7 +11,7 @@ ms.date: 10/20/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4768(S, F): A Kerberos authentication ticket (TGT) was requested.

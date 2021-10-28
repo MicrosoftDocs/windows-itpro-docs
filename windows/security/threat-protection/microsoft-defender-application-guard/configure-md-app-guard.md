@@ -12,7 +12,7 @@ ms.date: 09/20/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Configure Microsoft Defender Application Guard policy settings

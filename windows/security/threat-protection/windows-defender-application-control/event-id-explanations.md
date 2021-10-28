@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 06/02/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Understanding Application Control events

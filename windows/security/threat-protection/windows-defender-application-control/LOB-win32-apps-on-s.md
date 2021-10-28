@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 10/30/2019
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Allow Line-of-Business Win32 Apps on Intune-Managed S Mode Devices

@@ -14,7 +14,7 @@ ms.topic: conceptual
 ms.date: 04/19/2017
 ms.reviewer: 
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Interactive logon: Don't display last signed-in

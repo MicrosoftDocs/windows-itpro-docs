@@ -11,7 +11,7 @@ ms.date: 09/17/2018
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Network access: Restrict clients allowed to make remote calls to SAM
