@@ -14,7 +14,7 @@ author: dansimp
 ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Allow COM object registration in a Windows Defender Application Control policy

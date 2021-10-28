@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/13/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Understand AppLocker policy design decisions

@@ -14,7 +14,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Fileless threats

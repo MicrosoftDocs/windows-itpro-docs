@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 11/02/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Account lockout threshold
