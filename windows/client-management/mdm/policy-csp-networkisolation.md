@@ -3,8 +3,8 @@ title: Policy CSP - NetworkIsolation
 description: Learn how Policy CSP - NetworkIsolation contains a list of Enterprise resource domains hosted in the cloud that need to be protected.
 ms.author: dansimp
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019

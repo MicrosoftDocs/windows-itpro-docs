@@ -3,8 +3,8 @@ title: Policy CSP - Experience
 description: Learn how to use the Policy CSP - Experience setting to allow history of clipboard items to be stored in memory.
 ms.author: dansimp
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 11/02/2020

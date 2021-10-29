@@ -3,8 +3,8 @@ title: WiredNetwork CSP
 description: The WiredNetwork configuration service provider (CSP) is used by the enterprise to configure wired Internet on devices that do not have GP. Learn how it works.
 ms.author: dansimp
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.date: 06/27/2018
 ms.reviewer: 

@@ -3,8 +3,8 @@ title: EnrollmentStatusTracking CSP
 description: Learn how to perform a hybrid certificate trust deployment of Windows Hello for Business, for systems with no previous installations.
 ms.author: dansimp
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.date: 05/21/2019
 ---

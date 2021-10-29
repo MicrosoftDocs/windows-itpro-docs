@@ -3,8 +3,8 @@ title: Implement server-side support for mobile application management on Window
 description: Learn about implementing the Windows version of mobile application management (MAM), which is a lightweight solution for managing company data access and security on personal devices.
 ms.author: dansimp
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.date: 06/26/2017
 ms.reviewer: 

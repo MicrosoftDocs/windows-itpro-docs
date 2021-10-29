@@ -3,8 +3,8 @@ title: Policy CSP - AttachmentManager
 description: Manage Windows marks file attachments with information about their zone of origin, such as restricted, internet, intranet, local.
 ms.author: dansimp
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019

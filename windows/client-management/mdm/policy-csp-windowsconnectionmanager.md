@@ -3,8 +3,8 @@ title: Policy CSP - WindowsConnectionManager
 description: The Policy CSP - WindowsConnectionManager setting prevents computers from connecting to a domain-based network and a non-domain-based network simultaneously.
 ms.author: dansimp
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019

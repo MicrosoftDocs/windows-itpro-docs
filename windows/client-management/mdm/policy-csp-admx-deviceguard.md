@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_DeviceGuard
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.date: 09/08/2021
 ms.reviewer: 

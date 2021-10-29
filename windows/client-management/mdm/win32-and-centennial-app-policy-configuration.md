@@ -3,8 +3,8 @@ title: Win32 and Desktop Bridge app ADMX policy Ingestion
 description: Starting in Windows 10, version 1703, you can ingest ADMX files and set those ADMX policies for Win32 and Desktop Bridge apps.
 ms.author: dansimp
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.date: 03/23/2020
 ms.reviewer: 

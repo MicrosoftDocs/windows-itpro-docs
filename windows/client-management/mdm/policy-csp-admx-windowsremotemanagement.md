@@ -4,8 +4,8 @@ description: Policy CSP - ADMX_WindowsRemoteManagement
 ms.author: dansimp
 ms.localizationpriority: medium
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.date: 12/16/2020
 ms.reviewer: 

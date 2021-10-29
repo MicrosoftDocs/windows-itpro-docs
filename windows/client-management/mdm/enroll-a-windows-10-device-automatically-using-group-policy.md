@@ -3,8 +3,8 @@ title: Enroll a Windows 10 device automatically using Group Policy
 description: Learn how to use a Group Policy to trigger auto-enrollment to MDM for Active Directory (AD) domain-joined devices.
 ms.author: dansimp
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.date: 10/14/2021
 ms.reviewer:
@@ -289,7 +289,7 @@ To collect Event Viewer logs:
 - [Filter Using Security Groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc752992(v=ws.11))
 - [Enforce a Group Policy Object Link](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753909(v=ws.11))
 - [Group Policy Central Store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)
-- [Getting started with Cloud Native Windows Endpoints](https://docs.microsoft.com/mem/cloud-native-windows-endpoints)
+- [Getting started with Cloud Native Windows Endpoints](/mem/cloud-native-windows-endpoints)
 - [A Framework for Windows endpoint management transformation](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/a-framework-for-windows-endpoint-management-transformation/ba-p/2460684)
 - [Success with remote Windows Autopilot and Hybrid Azure Active Director join](https://techcommunity.microsoft.com/t5/intune-customer-success/success-with-remote-windows-autopilot-and-hybrid-azure-active/ba-p/2749353)
 

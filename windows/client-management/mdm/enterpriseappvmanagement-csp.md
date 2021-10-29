@@ -3,8 +3,8 @@ title: EnterpriseAppVManagement CSP
 description: Examine the tree format for EnterpriseAppVManagement CSP to manage virtual applications in Windows 10 PCs.(Enterprise and Education editions). 
 ms.author: dansimp
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.date: 06/26/2017
 ms.reviewer: 

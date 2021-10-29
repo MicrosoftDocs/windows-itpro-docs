@@ -6,8 +6,8 @@ description: Use the Policy CSP - DeviceInstallation setting to specify a list o
 ms.author: dansimp
 ms.date: 09/27/2019
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
 ---

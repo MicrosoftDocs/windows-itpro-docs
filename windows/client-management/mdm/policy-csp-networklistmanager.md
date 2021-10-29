@@ -3,8 +3,8 @@ title: Policy CSP - NetworkListManager
 description: The Policy CSP - NetworkListManager setting creates a new MDM policy that allows admins to configure a list of URIs of HTTPS endpoints that are considered secure.
 ms.author: v-nsatapathy
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: nimishasatapathy
 ms.localizationpriority: medium
 ms.date: 7/10/2021

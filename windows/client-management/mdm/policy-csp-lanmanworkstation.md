@@ -3,8 +3,8 @@ title: Policy CSP - LanmanWorkstation
 description: Use the Policy CSP - LanmanWorkstation setting to determine if the SMB client will allow insecure guest logons to an SMB server.
 ms.author: dansimp
 ms.topic: article
-ms.prod: m365-security
-ms.technology: windows-sec
+ms.prod: w10
+ms.technology: windows
 author: dansimp
 ms.localizationpriority: medium
 ms.date: 09/27/2019
