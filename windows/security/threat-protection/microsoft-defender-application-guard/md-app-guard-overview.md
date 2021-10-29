@@ -12,7 +12,7 @@ ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Microsoft Defender Application Guard overview

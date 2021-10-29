@@ -12,7 +12,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 09/07/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Configure the Workstation Authentication Certificate Template

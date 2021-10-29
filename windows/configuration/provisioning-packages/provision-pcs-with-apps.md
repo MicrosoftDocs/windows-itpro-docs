@@ -203,7 +203,5 @@ For details about the settings you can customize in provisioning packages, see [
 - [Provision PCs with common settings for initial deployment (simple provisioning)](provision-pcs-for-initial-deployment.md)
 - [Use a script to install a desktop app in provisioning packages](provisioning-script-to-install-app.md)
 - [PowerShell cmdlets for provisioning Windows client (reference)](provisioning-powershell.md)
-- [NFC-based device provisioning](../mobile-devices/provisioning-nfc.md)
-- [Use the package splitter tool](../mobile-devices/provisioning-package-splitter.md)
 - [Windows Configuration Designer command-line interface (reference)](provisioning-command-line.md)
 - [Create a provisioning package with multivariant settings](provisioning-multivariant.md)

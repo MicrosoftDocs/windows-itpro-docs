@@ -11,7 +11,7 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5064(S, F): A cryptographic context operation was attempted.

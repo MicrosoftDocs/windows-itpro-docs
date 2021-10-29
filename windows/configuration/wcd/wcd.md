@@ -18,74 +18,74 @@ This section describes the settings that you can configure in [provisioning pack
 
 ## Edition that each group of settings applies to
 
-| Setting group | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-[AccountManagement](wcd-accountmanagement.md) |  |  |  | X |  |
-| [Accounts](wcd-accounts.md) | X | X | X | X | X |
-| [ADMXIngestion](wcd-admxingestion.md) | X | | | | |
-| [AssignedAccess](wcd-assignedaccess.md) | X |  | | X | |
-| [AutomaticTime](wcd-automatictime.md) | | X | | | |
-| [Browser](wcd-browser.md) | X | X | X |  |  |
-| [CallAndMessagingEnhancement](wcd-callandmessagingenhancement.md) | | X | | | |
-| [Calling](wcd-calling.md) | | X | | | |
-| [CellCore](wcd-cellcore.md) | X | X | | | |
-| [Cellular](wcd-cellular.md) | X |  |  |  |  |
-| [Certificates](wcd-certificates.md) | X | X | X | X | X |
-| [CleanPC](wcd-cleanpc.md) | X |  |  |  |  |
-| [Connections](wcd-connections.md) | X | X | X |  |  |
-| [ConnectivityProfiles](wcd-connectivityprofiles.md) | X | X | X | X |  |
-| [CountryAndRegion](wcd-countryandregion.md) | X | X | X |  |  |
-| [DesktopBackgroundAndColors](wcd-desktopbackgroundandcolors.md) | X |  |  |  |  |
-| [DeveloperSetup](wcd-developersetup.md) |  |  |  | X |  |
-| [DeviceFormFactor](wcd-deviceformfactor.md) |  X | X | X |  |  |
-| [DeviceInfo](wcd-deviceinfo.md) | | X | | | |
-| [DeviceManagement](wcd-devicemanagement.md) |  X | X | X | X |  |
-| [DeviceUpdateCenter](wcd-deviceupdatecenter.md) | X |  |  |  |  |
-| [DMClient](wcd-dmclient.md) | X | X | X |  | X |
-| [EditionUpgrade](wcd-editionupgrade.md) | X | X |  | X |  |
-| [EmbeddedLockdownProfiles](wcd-embeddedlockdownprofiles.md) |  | X |  |  |  |
-| [FirewallConfiguration](wcd-firewallconfiguration.md) |  |  |  |  | X |
-| [FirstExperience](wcd-firstexperience.md) |  |  |  | X |  |
-| [Folders](wcd-folders.md) |X | X | X |  |  |
-| [InitialSetup](wcd-initialsetup.md) |  | X |  |  |  |
-| [InternetExplorer](wcd-internetexplorer.md) |  | X |  |  |  |
-| [KioskBrowser](wcd-kioskbrowser.md) |  |  |  |  | X |
-| [Licensing](wcd-licensing.md) | X |  |  |  |  |
-| [Location](wcd-location.md) |  |  |  |  | X |
-| [Maps](wcd-maps.md) |X | X | X |  |  |
-| [Messaging](wcd-messaging.md) |  | X |  |  |  |
-| [ModemConfigurations](wcd-modemconfigurations.md) |  | X |  |  |  |
-| [Multivariant](wcd-multivariant.md) |  | X |  |  |  |
-| [NetworkProxy](wcd-networkproxy.md) |  |  | X |  |  |
-| [NetworkQOSPolicy](wcd-networkqospolicy.md) |  |  | X |  |  |
-| [NFC](wcd-nfc.md) |  | X |  |  |  |
-| [OOBE](wcd-oobe.md) | X | X |  |  |  |
-| [OtherAssets](wcd-otherassets.md) |  | X |  |  |  |
-| [Personalization](wcd-personalization.md) | X |  |  |  |  |
-| [Policies](wcd-policies.md) | X | X | X | X | X |
-| [Privacy](wcd-folders.md) |X | X | X |  | X |
-| [ProvisioningCommands](wcd-provisioningcommands.md) | X |  |  |  |  |
-| [RcsPresence](wcd-rcspresence.md) |  | X |  |  |  |
-| [SharedPC](wcd-sharedpc.md) | X |  |  |  |  |
-| [Shell](wcd-shell.md) |  | X |  |  |  |
-| [SMISettings](wcd-smisettings.md) | X |  |  |  |  |
-| [Start](wcd-start.md) | X | X |  |  |  |
-| [StartupApp](wcd-startupapp.md) |  |  |  |  | X |
-| [StartupBackgroundTasks](wcd-startupbackgroundtasks.md) |  |  |  |  | X |
-| [StorageD3InModernStandby](wcd-storaged3inmodernstandby.md) |X | X | X |  | X |
-| [SurfaceHubManagement](wcd-surfacehubmanagement.md) |  |  |  X  |  |  |
-| [TabletMode](wcd-tabletmode.md) |X | X | X |  |  |
-| [TakeATest](wcd-takeatest.md) | X |  |  |  |  |
-| [TextInput](wcd-textinput.md) |  | X |  |  |  |
-| [Theme](wcd-theme.md) |  | X |  |  |  |
-| [Time](wcd-time.md) | X |  |  |  |  |
-| [UnifiedWriteFilter](wcd-unifiedwritefilter.md) | X |  |  |  | X |
-| [UniversalAppInstall](wcd-universalappinstall.md) | X | X | X |  | X |
-| [UniversalAppUninstall](wcd-universalappuninstall.md) | X | X | X |  | X |
-| [UsbErrorsOEMOverride](wcd-usberrorsoemoverride.md) | X | X | X |  |  |
-| [WeakCharger](wcd-weakcharger.md) |X | X | X |  |  |
-| [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md) | X |  |  |  |  |
-| [WindowsTeamSettings](wcd-windowsteamsettings.md) |  |  | X |  |  |
-| [Workplace](wcd-workplace.md) |X | X | X |  | X |
+| Setting group | Desktop editions | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| [AccountManagement](wcd-accountmanagement.md) |  |  | ✔️ |  |
+| [Accounts](wcd-accounts.md) | ✔️ | ✔️ | ✔️ | ✔️ |
+| [ADMXIngestion](wcd-admxingestion.md) | ✔️ | | | |
+| [AssignedAccess](wcd-assignedaccess.md) | ✔️ | | ✔️ | |
+| [AutomaticTime](wcd-automatictime.md) | | | | |
+| [Browser](wcd-browser.md) | ✔️ | ✔️ |  |  |
+| [CallAndMessagingEnhancement](wcd-callandmessagingenhancement.md) | | | | |
+| [Calling](wcd-calling.md) | | | | |
+| [CellCore](wcd-cellcore.md) | ✔️ | | | |
+| [Cellular](wcd-cellular.md) | ✔️ | |  |  |
+| [Certificates](wcd-certificates.md) | ✔️ | ✔️ | ✔️ | ✔️ |
+| [CleanPC](wcd-cleanpc.md) | ✔️ |  |  |  |
+| [Connections](wcd-connections.md) | ✔️ | ✔️ |  |  |
+| [ConnectivityProfiles](wcd-connectivityprofiles.md) | ✔️ | ✔️ | ✔️ |  |
+| [CountryAndRegion](wcd-countryandregion.md) | ✔️ | ✔️ |  |  |
+| [DesktopBackgroundAndColors](wcd-desktopbackgroundandcolors.md) | ✔️ | |  |  |
+| [DeveloperSetup](wcd-developersetup.md) |  |  | ✔️ |  |
+| [DeviceFormFactor](wcd-deviceformfactor.md) |  ✔️ | ✔️ |  |  |
+| [DeviceInfo](wcd-deviceinfo.md) | | | | |
+| [DeviceManagement](wcd-devicemanagement.md) |  ✔️ | ✔️ | ✔️ |  |
+| [DeviceUpdateCenter](wcd-deviceupdatecenter.md) | ✔️ |  |  |  |
+| [DMClient](wcd-dmclient.md) | ✔️ | ✔️ |  | ✔️ |
+| [EditionUpgrade](wcd-editionupgrade.md) | ✔️ |  | ✔️ |  |
+| [EmbeddedLockdownProfiles](wcd-embeddedlockdownprofiles.md) |  |  |  |  |
+| [FirewallConfiguration](wcd-firewallconfiguration.md) |  |  |  | ✔️ |
+| [FirstExperience](wcd-firstexperience.md) |  |  | ✔️ |  |
+| [Folders](wcd-folders.md) |✔️ | ✔️ |  |  |
+| [InitialSetup](wcd-initialsetup.md) |  | |  |  |
+| [InternetExplorer](wcd-internetexplorer.md) |  |  |  |  |
+| [KioskBrowser](wcd-kioskbrowser.md) |  |  |  | ✔️ |
+| [Licensing](wcd-licensing.md) | ✔️ |  |  |  |
+| [Location](wcd-location.md) |  |  |  | ✔️ |
+| [Maps](wcd-maps.md) |✔️ | ✔️ |  |  |
+| [Messaging](wcd-messaging.md) |  |  |  |  |
+| [ModemConfigurations](wcd-modemconfigurations.md) |  |  |  |  |
+| [Multivariant](wcd-multivariant.md) |  |  |  |  |
+| [NetworkProxy](wcd-networkproxy.md) |  | ✔️ |  |  |
+| [NetworkQOSPolicy](wcd-networkqospolicy.md) |  | ✔️ |  |  |
+| [NFC](wcd-nfc.md) |  |  |  |  |
+| [OOBE](wcd-oobe.md) | ✔️ |  |  |  |
+| [OtherAssets](wcd-otherassets.md) |  |  |  |  |
+| [Personalization](wcd-personalization.md) | ✔️ |  |  |  | 
+| [Policies](wcd-policies.md) | ✔️ | ✔️ | ✔️ | ✔️ |
+| [Privacy](wcd-folders.md) |✔️ | ✔️ |  | ✔️ |
+| [ProvisioningCommands](wcd-provisioningcommands.md) | ✔️ |  |  |  |
+| [RcsPresence](wcd-rcspresence.md) |  |  |  |  |
+| [SharedPC](wcd-sharedpc.md) | ✔️ |  |  |  |
+| [Shell](wcd-shell.md) |  |  |  |  |
+| [SMISettings](wcd-smisettings.md) | ✔️ |  |  |  |
+| [Start](wcd-start.md) | ✔️ |  |  |  |
+| [StartupApp](wcd-startupapp.md) |  |  |  | ✔️ |
+| [StartupBackgroundTasks](wcd-startupbackgroundtasks.md) |  |  |  | ✔️ |
+| [StorageD3InModernStandby](wcd-storaged3inmodernstandby.md) |✔️ | ✔️ |  | ✔️ |
+| [SurfaceHubManagement](wcd-surfacehubmanagement.md) |  |  ✔️  |  |  |
+| [TabletMode](wcd-tabletmode.md) |✔️ | ✔️ |  |  |
+| [TakeATest](wcd-takeatest.md) | ✔️ |  |  |  |
+| [TextInput](wcd-textinput.md) |  |  |  |  |
+| [Theme](wcd-theme.md) |  |  |  |  |
+| [Time](wcd-time.md) | ✔️ |  |  |  |
+| [UnifiedWriteFilter](wcd-unifiedwritefilter.md) | ✔️ |  |  | ✔️ |
+| [UniversalAppInstall](wcd-universalappinstall.md) | ✔️ | ✔️ |  | ✔️ |
+| [UniversalAppUninstall](wcd-universalappuninstall.md) | ✔️ | ✔️ |  | ✔️ |
+| [UsbErrorsOEMOverride](wcd-usberrorsoemoverride.md) | ✔️ | ✔️ |  |  |
+| [WeakCharger](wcd-weakcharger.md) |✔️ | ✔️ |  |  |
+| [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md) | ✔️ |  |  |  |
+| [WindowsTeamSettings](wcd-windowsteamsettings.md) |  | ✔️ |  |  |
+| [Workplace](wcd-workplace.md) |✔️ | ✔️ |  | ✔️ |
 
 

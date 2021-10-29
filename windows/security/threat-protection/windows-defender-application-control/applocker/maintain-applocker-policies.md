@@ -14,7 +14,7 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Maintain AppLocker policies

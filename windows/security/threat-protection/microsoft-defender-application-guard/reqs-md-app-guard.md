@@ -12,7 +12,7 @@ ms.date: 10/20/2021
 ms.reviewer: 
 manager: dansimp
 ms.custom: asr
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # System requirements for Microsoft Defender Application Guard

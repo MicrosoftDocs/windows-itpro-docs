@@ -11,7 +11,7 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4612(S): Internal resources allocated for the queuing of audit messages have been exhausted, leading to the loss of some audits.

@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/11/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # User Account Control: Behavior of the elevation prompt for standard users

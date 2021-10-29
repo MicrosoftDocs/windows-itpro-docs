@@ -1,6 +1,61 @@
 {
   "redirections": [
     {
+      "source_path": "windows/configuration/wcd/wcd-embeddedlockdownprofiles.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/configure-mobile.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/lockdown-xml.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/mobile-lockdown-designer.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/product-ids-in-windows-10-mobile.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/provisioning-configure-mobile.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/provisioning-nfc.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/provisioning-package-splitter.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/settings-that-can-be-locked-down.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/mobile-devices/start-layout-xml-mobile.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "windows/whats-new/windows-11.md",
       "redirect_url": "/windows/whats-new/windows-11-whats-new",
       "redirect_document_id": false  
@@ -6637,22 +6692,22 @@
     },
     {
       "source_path": "windows/manage/set-up-a-kiosk-for-windows-10-for-mobile-edition.md",
-      "redirect_url": "/windows/configuration/mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/manage/lockdown-xml.md",
-      "redirect_url": "/windows/configuration/mobile-devices/lockdown-xml",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/manage/settings-that-can-be-locked-down.md",
-      "redirect_url": "/windows/configuration/mobile-devices/settings-that-can-be-locked-down",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/manage/product-ids-in-windows-10-mobile.md",
-      "redirect_url": "/windows/configuration/mobile-devices/product-ids-in-windows-10-mobile",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -6682,7 +6737,7 @@
     },
     {
       "source_path": "windows/manage/start-layout-xml-mobile.md",
-      "redirect_url": "/windows/configuration/mobile-devices/start-layout-xml-mobile",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -6847,7 +6902,7 @@
     },
     {
       "source_path": "windows/deploy/provisioning-nfc.md",
-      "redirect_url": "/windows/configuration/provisioning-packages/provisioning-nfc",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -7602,7 +7657,7 @@
     },
     {
       "source_path": "windows/configure/configure-mobile.md",
-      "redirect_url": "/windows/configuration/mobile-devices/configure-mobile",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -7767,7 +7822,7 @@
     },
     {
       "source_path": "windows/configure/lockdown-xml.md",
-      "redirect_url": "/windows/configuration/mobile-devices/lockdown-xml",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -7787,12 +7842,12 @@
     },
     {
       "source_path": "windows/configure/mobile-lockdown-designer.md",
-      "redirect_url": "/windows/configuration/mobile-devices/mobile-lockdown-designer",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configure/product-ids-in-windows-10-mobile.md",
-      "redirect_url": "/windows/configuration/mobile-devices/product-ids-in-windows-10-mobile",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -7822,7 +7877,7 @@
     },
     {
       "source_path": "windows/configure/provisioning-configure-mobile.md",
-      "redirect_url": "/windows/configuration/mobile-devices/provisioning-configure-mobile",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -7847,12 +7902,12 @@
     },
     {
       "source_path": "windows/configure/provisioning-nfc.md",
-      "redirect_url": "/windows/configuration/mobile-devices/provisioning-nfc",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
       "source_path": "windows/configure/provisioning-package-splitter.md",
-      "redirect_url": "/windows/configuration/mobile-devices/provisioning-package-splitter",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -7892,7 +7947,7 @@
     },
     {
       "source_path": "windows/configure/set-up-a-kiosk-for-windows-10-for-mobile-edition.md",
-      "redirect_url": "/windows/configuration/mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -7902,7 +7957,7 @@
     },
     {
       "source_path": "windows/configure/settings-that-can-be-locked-down.md",
-      "redirect_url": "/windows/configuration/mobile-devices/settings-that-can-be-locked-down",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {
@@ -7912,7 +7967,7 @@
     },
     {
       "source_path": "windows/configure/start-layout-xml-mobile.md",
-      "redirect_url": "/windows/configuration/mobile-devices/start-layout-xml-mobile",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false
     },
     {

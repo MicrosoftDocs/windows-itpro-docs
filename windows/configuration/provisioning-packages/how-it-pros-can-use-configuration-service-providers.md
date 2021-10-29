@@ -70,8 +70,6 @@ When a CSP is available but is not explicitly included in your MDM solution, you
 
 ### CSPs in Lockdown XML
 
-Starting with Windows 10 version 1703, you can use the [Lockdown Designer app](../mobile-devices/mobile-lockdown-designer.md) to configure your Lockdown XML.
-
 ## <a href="" id="bkmk-csp-doc"></a>How do you use the CSP documentation?
 
 All CSPs are documented in the [Configuration service provider reference](/windows/client-management/mdm/configuration-service-provider-reference).
