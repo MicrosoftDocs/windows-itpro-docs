@@ -23,7 +23,7 @@ Use to configure settings for cellular connections.
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | X |    |  |  |  |
+| All settings | ✔️ |    |  |  |  |
 
 ## PerDevice
 

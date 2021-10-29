@@ -20,7 +20,7 @@ Use for settings related to NetworkProxy.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |   |  | X |  |  |
+| All settings |   |  | ✔️ |  |  |
 
 
 ## AutoDetect
