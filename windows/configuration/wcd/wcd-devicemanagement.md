@@ -45,7 +45,7 @@ Use to configure device management settings.
 | DisableOnRoaming | Specify whether the client will connect while cellular roaming |
 | InitialBackOffTime | Specify the initial amount of time (in milliseconds) that the DM client waits before attempting a connection retry  |
 | InitiateSession | Specify whether a session should be started with the MDM server when the account is provisioned |
-| MaxBackOffTime | Specify the maximum number of milliseconds to wait before attemption a connection retry |
+| MaxBackOffTime | Specify the maximum number of milliseconds to wait before attempting a connection retry |
 | Name | Enter a display name for the management server  |
 | Port | Enter the OMA DM server port |
 | PrefConRef | Enter a URI to NAP management object or a connection GUID used by the device Connection Manager |
