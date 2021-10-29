@@ -41,7 +41,7 @@ MEMCM includes native support for WDAC, which allows you to configure Windows 10
 
 Note that MEMCM does not remove policies once deployed. To stop enforcement, you should switch the policy to audit mode, which will produce the same effect. If you want to disable WDAC altogether (including audit mode), you can deploy a script to delete the policy file from disk, and either trigger a reboot or wait for the next reboot.
 
-For more information on using MEMCM's native WDAC policies, see [Windows Defender Application Control management with Configuration Manager](/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager)
+For more information on using MEMCM's native WDAC policies, see [Windows Defender Application Control management with Configuration Manager](/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager).
 
 ## Deploy custom WDAC policies using Packages/Programs or Task Sequences
 
