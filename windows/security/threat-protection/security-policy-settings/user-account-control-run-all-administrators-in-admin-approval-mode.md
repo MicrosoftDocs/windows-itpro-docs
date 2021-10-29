@@ -40,7 +40,7 @@ This policy setting determines the behavior of all User Account Control (UAC) po
     Admin Approval Mode and all related UAC policies are disabled.
 
     > [!NOTE]
-    > If this security setting is configured to **Disabled**, Windows Security notifies the user that the overall security of the operating system has been reduced.
+    > If this security setting is configured to **Disabled**, Windows Security app notifies the user that the overall security of the operating system has been reduced.
 
 ### Best practices
 
