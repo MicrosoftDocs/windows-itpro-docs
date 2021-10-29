@@ -40,8 +40,8 @@ This policy setting determines the behavior of all User Account Control (UAC) po
     Admin Approval Mode and all related UAC policies are disabled.
 
     > [!NOTE]
-    > If this security setting is configured to **Disabled**, the Security Center notifies the user that the overall security of the operating system has been reduced.
-     
+    > If this security setting is configured to **Disabled**, Windows Security notifies the user that the overall security of the operating system has been reduced.
+
 ### Best practices
 
 -   Turn on this policy to allow all other UAC features and policies to function.
@@ -52,7 +52,7 @@ Computer Configuration\\Windows Settings\\Security Settings\\Local Policies\\Sec
 
 ### Default values
 
-The following table lists the actual and effective default values for this policy. Default values are also listed on the policy’s property page.
+The following table lists the actual and effective default values for this policy. Default values are also listed on the policy's property page.
 
 | Server type or GPO | Default value |
 | - | - |

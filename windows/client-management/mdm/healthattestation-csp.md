@@ -116,8 +116,8 @@ This node will trigger attestation flow by launching an attestation process. If 
                 </Target>
                 <Data>
                     {
-                    rpID : "rpID", serviceEndpoint : “MAA endpoint”,
-                    nonce : “nonce”, aadToken : “aadToken”, "cv" : "CorrelationVector"
+                    rpID : "rpID", serviceEndpoint : "MAA endpoint",
+                    nonce : "nonce", aadToken : "aadToken", "cv" : "CorrelationVector"
                     }                    
                 </Data>
             </Item>
@@ -219,7 +219,7 @@ OR Sync ML 404 error if not cached report available.
 
 <a href="" id="getServiceCorrelationIDs"></a>**GetServiceCorrelationIDs**
 <p>Node type: GET
-This node will retrieve the service-generated correlation IDs for the given MDM provider. If there are more than one correlation IDs, they are separated by “;” in the string.
+This node will retrieve the service-generated correlation IDs for the given MDM provider. If there are more than one correlation IDs, they are separated by ";" in the string.
 </p>
 <p>Templated SyncML Call:</p>
 
@@ -506,7 +506,7 @@ More information about TPM attestation can be found here: [Microsoft Azure Attes
 <ul>
 <li>DHA-BootData: the device boot data (TCG logs, PCR values, device/TPM certificate, boot, and TPM counters) that are required for validating device boot health.</li>
 <li>DHA-EncBlob: an encrypted summary report that DHA-Service issues to a device after reviewing the DHA-BootData it receives from devices.</li>
-<li>DHA-SignedBlob: it is a signed snapshot of the current state of a device’s runtime that is captured by DHA-CSP at device health attestation time.</li>
+<li>DHA-SignedBlob: it is a signed snapshot of the current state of a device's runtime that is captured by DHA-CSP at device health attestation time.</li>
 <li>DHA-Data: an XML formatted data blob that devices forward for device health validation to DHA-Service via MDM-Server. DHA-Data has two parts:
 <ul> 
 <li>DHA-EncBlob: the encrypted data blob that the device receives from DHA-Service</li>
@@ -529,7 +529,7 @@ More information about TPM attestation can be found here: [Microsoft Azure Attes
 </ul>
 
 <strong>DHA-CSP (Device HealthAttestation Configuration Service Provider)</strong>
-<p>The Device HealthAttestation Configuration Service Provider (DHA-CSP) uses a device’s TPM and firmware to measure critical security properties of the device’s BIOS and Windows boot, such that even on a system infected with kernel level malware or a rootkit, these properties cannot be spoofed.</p>
+<p>The Device HealthAttestation Configuration Service Provider (DHA-CSP) uses a device's TPM and firmware to measure critical security properties of the device's BIOS and Windows boot, such that even on a system infected with kernel level malware or a rootkit, these properties cannot be spoofed.</p>
 <p>The following list of operations is performed by DHA-CSP:</p>
 <ul>
 <li>Collects device boot data (DHA-BootData) from a managed device</li>
@@ -541,7 +541,7 @@ More information about TPM attestation can be found here: [Microsoft Azure Attes
 <strong>DHA-Service (Device HealthAttestation Service)</strong>
 <p>Device HealthAttestation Service (DHA-Service) validates the data it receives from DHA-CSP and issues a highly trusted hardware (TPM) protected report (DHA-Report) to DHA-Enabled device management solutions through a tamper resistant and tamper evident communication channel.</p>
 
-<p>DHA-Service is available in two flavors: “DHA-Cloud” and “DHA-Server2016”. DHA-Service supports various implementation scenarios including cloud, on premises, air-gapped, and hybrid scenarios.</p>
+<p>DHA-Service is available in two flavors: "DHA-Cloud" and "DHA-Server2016". DHA-Service supports various implementation scenarios including cloud, on premises, air-gapped, and hybrid scenarios.</p>
 <p>The following list of operations is performed by DHA-Service:</p>
 
 - Receives device boot data (DHA-BootData) from a DHA-Enabled device</li>
@@ -890,8 +890,8 @@ When the MDM-Server receives the above data, it must:
 <?xml version='1.0' encoding='utf-8' ?>
 <HealthCertificateValidationRequest ProtocolVersion='1' xmlns='http://schemas.microsoft.com/windows/security/healthcertificate/validation/request/v1'>
     <Nonce>[INT]</Nonce>
-    <Claims> [base64 blob, eg ‘ABc123+/…==’] </Claims>
-    <HealthCertificateBlob> [base64 blob, eg ‘ABc123+/...==’]
+    <Claims> [base64 blob, eg 'ABc123+/…=='] </Claims>
+    <HealthCertificateBlob> [base64 blob, eg 'ABc123+/...==']
     </HealthCertificateBlob>
 </HealthCertificateValidationRequest>
 ```
@@ -948,7 +948,7 @@ The following list of data points is verified by the DHA-Service in DHA-Report v
 
 \*  TPM 2.0 only   
 \*\*  Reports if BitLocker was enabled during initial boot.    
-\*\*\* The “Hybrid Resume” must be disabled on the device. Reports first-party ELAM “Defender” was loaded during boot.  
+\*\*\* The "Hybrid Resume" must be disabled on the device. Reports first-party ELAM "Defender" was loaded during boot.
 
 Each of these are described in further detail in the following sections, along with the recommended actions to take.
 
@@ -956,7 +956,7 @@ Each of these are described in further detail in the following sections, along w
 <p>The date and time DHA-report was evaluated or issued to MDM.</p>
 
 <a href="" id="aikpresent"></a>**AIKPresent**  
-<p>When an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate. It can be trusted more than a device that doesn’t have an EK certificate.</p>
+<p>When an Attestation Identity Key (AIK) is present on a device, it indicates that the device has an endorsement key (EK) certificate. It can be trusted more than a device that doesn't have an EK certificate.</p>
 
 <p>If AIKPresent = True (1), then allow access.</p>
 
@@ -1277,7 +1277,7 @@ Each of these are described in further detail in the following sections, along w
     <tr>
         <td>1</td>
         <td>HEALTHATTESTATION_CERT_RETRIEVAL_REQUESTED</td>
-        <td>This state signifies that MDM client’s Exec call on the node VerifyHealth has been triggered and now the OS is trying to retrieve DHA-EncBlob from DHA-Server.</td>
+        <td>This state signifies that MDM client's Exec call on the node VerifyHealth has been triggered and now the OS is trying to retrieve DHA-EncBlob from DHA-Server.</td>
     </tr>
     <tr>
         <td>2</td>
@@ -1620,4 +1620,3 @@ xmlns="http://schemas.microsoft.com/windows/security/healthcertificate/validatio
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
