@@ -21,7 +21,7 @@ Use to set the name of the Windows mobile device.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| DeviceName |   | X |  |  |  |
+| DeviceName |   | ✔️ |  |  |  |
 
 In **DeviceName**, enter a name for the device. If **DeviceName** is set to an asterisk (*) or is an empty string, a random device name will be generated.
 

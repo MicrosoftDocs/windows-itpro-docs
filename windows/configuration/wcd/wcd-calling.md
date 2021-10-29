@@ -24,7 +24,7 @@ Use to configure settings for Calling.
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |  |  X  |  |  |  |
+| All settings |  |  ✔️  |  |  |  |
 
 
 ## Branding
@@ -152,11 +152,6 @@ AppId | Enter the app ID for your phone call/SMS filter application.
 ## SupplementaryServiceCodeOverrides
 
 See [Dialer codes for supplementary services](/windows-hardware/customize/mobile/mcsf/dialer-codes-for-supplementary-services).
-
-## VoicemailRegistrationTable
-
-Configure these settings to customize visual voicemail in the Windows 10 Mobile UI. For settings and values, see [Visual voicemail](/windows-hardware/customize/mobile/mcsf/visual-voicemail).
-
 
 ## List of USSD codes
 

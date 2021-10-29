@@ -21,12 +21,12 @@ Use to configure profiles that a user will connect with, such as an email accoun
 
 | Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [Email](#email)  | X |  X  | X |  |  |
-| [Exchange](#exchange) | X |  X  | X |  |  |
-| [KnownAccounts](#knownaccounts) | X |  X  | X |  |  |
-| [VPN](#vpn) | X |  X  | X | X |  |
-| [WiFiSense](#wifisense) | X |  X  | X |  |  |
-| [WLAN](#wlan) | X |  X  | X | X |  |
+| [Email](#email)  | ✔️ |  ✔️  | ✔️ |  |  |
+| [Exchange](#exchange) | ✔️ |  ✔️  | ✔️ |  |  |
+| [KnownAccounts](#knownaccounts) | ✔️ |  ✔️  | ✔️ |  |  |
+| [VPN](#vpn) | ✔️ |  ✔️  | ✔️ | ✔️ |  |
+| [WiFiSense](#wifisense) | ✔️ |  ✔️  | ✔️ |  |  |
+| [WLAN](#wlan) | ✔️ |  ✔️  | ✔️ | ✔️ |  |
 
 ## Email
 

@@ -20,7 +20,7 @@ Use to configure settings related to near field communications (NFC) subsystem.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |   | X |  |  |  |
+| All settings |   | ✔️ |  |  |  |
 
 Expand **NFC** > **SEMgr** > **UI**. The following table describes the settings you can configure.
 

@@ -21,7 +21,7 @@ Use to configure settings for Map data.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| MapData |   | X |  |  |  |
+| MapData |   | ✔️ |  |  |  |
 
 Use **MapData** to specify the source directory location of the map region you want to include.
 

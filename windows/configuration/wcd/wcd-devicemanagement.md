@@ -21,10 +21,10 @@ Use to configure device management settings.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [Accounts](#accounts) | X  | X | X |  |  |
-| [PGList](#pglist) | X  | X | X |  |  |
-| [Policies](#policies) | X  | X | X |  |  |
-| [TrustedProvisioningSource](#trustedprovisioningsource) | X  | X | X |  |  |
+| [Accounts](#accounts) | ✔️  | ✔️ | ✔️ |  |  |
+| [PGList](#pglist) | ✔️  | ✔️ | ✔️ |  |  |
+| [Policies](#policies) | ✔️  | ✔️ | ✔️ |  |  |
+| [TrustedProvisioningSource](#trustedprovisioningsource) | ✔️  | ✔️ | ✔️ |  |  |
 
 ## Accounts
 

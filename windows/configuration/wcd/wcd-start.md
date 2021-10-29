@@ -21,10 +21,10 @@ Use Start settings to apply a customized Start screen to devices.
 
 | Setting   | Desktop editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | 
-| StartLayout | X  | |  |  |
+| StartLayout | ✔️  | |  |  |
 
 >[!IMPORTANT]
->The StartLayout setting is available in the advanced provisioning for Windows 10 desktop editions, but should only be used to apply a layout to Windows 10 Mobile devices. For desktop editions, use [Policies > StartLayout](wcd-policies.md#start).
+>The StartLayout setting is available in the advanced provisioning for Windows 10 desktop editions, but shouldn't be used. For desktop editions, use [Policies > StartLayout](wcd-policies.md#start).
 
 ## StartLayout
 
