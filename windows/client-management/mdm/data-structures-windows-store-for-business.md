@@ -100,11 +100,11 @@ Specifies the properties of the alternate identifier.
 <tbody>
 <tr class="odd">
 <td><p>seatDetails</p></td>
-<td><p>Collection of <a href="#seatdetails" data-raw-source="[SeatDetails](#seatdetails)">SeatDetails</a></p></td>
+<td><p>collection of <a href="#seatdetails" data-raw-source="[SeatDetails](#seatdetails)">SeatDetails</a></p></td>
 </tr>
 <tr class="even">
 <td><p>failedSeatOperations</p></td>
-<td><p>Collection of <a href="#failedseatrequest" data-raw-source="[FailedSeatRequest](#failedseatrequest)">FailedSeatRequest</a></p></td>
+<td><p>collection of <a href="#failedseatrequest" data-raw-source="[FailedSeatRequest](#failedseatrequest)">FailedSeatRequest</a></p></td>
 </tr>
 </tbody>
 </table>
