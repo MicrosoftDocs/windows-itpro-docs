@@ -29,7 +29,7 @@ IT admins managing updates using the [Windows Update for Business deployment ser
 
 ## Am I affected by a safeguard hold?
 
-IT admins can use [Update Compliance](update-compliance-monitor) to monitor various update health metrics for devices in their organization. Update Compliance provides a [Safeguard Holds report](/windows/deployment/update/update-compliance-safeguard-holds), as well as [queries in the Feature Update Status report](/windows/deployment/update/update-compliance-feature-update-status), to provide you insight into the safeguard holds that are preventing devices from updating or upgrading.
+IT admins can use [Update Compliance](update-compliance-monitor.md) to monitor various update health metrics for devices in their organization. Update Compliance provides a [Safeguard Holds report](/windows/deployment/update/update-compliance-safeguard-holds), as well as [queries in the Feature Update Status report](/windows/deployment/update/update-compliance-feature-update-status), to provide you insight into the safeguard holds that are preventing devices from updating or upgrading.
 
 The Update Compliance reports identify safeguard holds by their 8-digit identifiers. For safeguard holds associated with publicly discussed known issues, you can find additional details about the issue on the [Windows release health](/windows/release-health/) dashboard by searching for the safeguard hold ID on the **Known issues** page for the relevant release.
 
