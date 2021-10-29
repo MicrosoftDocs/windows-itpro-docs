@@ -278,7 +278,7 @@ Specifies the properties of the alternate identifier.
 <tr class="even">
 <td><p>lastModified</p></td>
 <td><p>dateTime</p></td>
-<td><p>Specifies the last modified date for an application. Modifications for an application includes updated product details, updates to an application, and updates to the quantity of an application.</p></td>
+<td><p>Specifies the last modified date for an application. Modifications for an application include updated product details, updates to an application, and updates to the quantity of an application.</p></td>
 </tr>
 <tr class="odd">
 <td><p>licenseType</p></td>
