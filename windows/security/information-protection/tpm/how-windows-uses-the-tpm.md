@@ -147,8 +147,7 @@ The resulting solution provides defense in depth, because even if malware runs i
 
 ## Conclusion
 
-The TPM adds hardware-based security benefits to Windows. When installed on hardware that includes a TPM, Window delivers remarkably improved security benefits. The following table summarizes the key benefits of the TPM’s major features.
-
+The TPM adds hardware-based security benefits to Windows. When installed on hardware that includes a TPM, Windows delivers remarkably improved security benefits. The following table summarizes the key benefits of the TPM’s major features.
 
 |Feature | Benefits when used on a system with a TPM|
 |---|---|

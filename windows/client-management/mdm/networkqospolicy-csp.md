@@ -29,7 +29,7 @@ The following actions are supported:
 > - Azure AD Hybrid joined devices.
 > - Devices that use both GPO and CSP at the same time.
 > 
-> The minimum operating system requirement for this CSP is Windows 10, version 2004. This CSP is supported only in Microsoft Surface Hub prior to Window 10, version 2004.
+> The minimum operating system requirement for this CSP is Windows 10, version 2004. This CSP is supported only in Microsoft Surface Hub prior to Windows 10, version 2004.
 
 The following shows the NetworkQoSPolicy configuration service provider in tree format.
 ```

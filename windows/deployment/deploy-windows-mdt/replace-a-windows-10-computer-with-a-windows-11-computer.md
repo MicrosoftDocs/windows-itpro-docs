@@ -82,7 +82,7 @@ On **MDT01**:
 
 During a computer replace, these are the high-level steps that occur:
 
-1.  On the computer you are replacing, a special replace task sequence runs the USMT backup and, if you configured it, runs the optional full Window Imaging (WIM) backup.
+1.  On the computer you are replacing, a special replace task sequence runs the USMT backup and, if you configured it, runs the optional full Windows Imaging (WIM) backup.
 2.  On the new computer, you perform a standard bare-metal deployment. At the end of the bare-metal deployment, the USMT backup from the old computer is restored.
 
 ### Run the replace task sequence

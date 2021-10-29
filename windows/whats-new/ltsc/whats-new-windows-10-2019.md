@@ -40,7 +40,7 @@ Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This inclu
 
 ## Security
 
-This version of Window 10 includes security improvements for threat protection, information protection, and identity protection.
+This version of Windows 10 includes security improvements for threat protection, information protection, and identity protection.
 
 ### Threat protection
 

@@ -23,8 +23,7 @@ Safeguard holds prevent a device with a known issue from being offered a new ope
 
 The lifespan of holds varies depending on the time required to investigate and fix an issue. During this time Microsoft works diligently to procure, develop, and validate a fix and then offer it to affected devices. We monitor quality and compatibility data to confirm that a fix is complete before releasing the hold. Once we release the hold, Windows Update will resume offering new operating system versions to devices.
 
-Safeguard holds only affect devices that use the Window Update service for updates. We encourage IT admins who manage updates to devices through other channels (such as media installations or updates coming from Windows Server Update Services) to remain aware of known issues that might also be present in their environments.
-
+Safeguard holds only affect devices that use the Windows Update service for updates. We encourage IT admins who manage updates to devices through other channels (such as media installations or updates coming from Windows Server Update Services) to remain aware of known issues that might also be present in their environments.
 
 ## Am I affected by a safeguard hold?
 

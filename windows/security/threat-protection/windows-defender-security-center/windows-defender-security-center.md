@@ -87,7 +87,7 @@ You can find more information about each section, including options for configur
 > Disabling the Windows Security Center Service will not disable Microsoft Defender Antivirus or [Windows Defender Firewall](/windows/access-protection/windows-firewall/windows-firewall-with-advanced-security).
 
 > [!WARNING]
-> If you disable the Window Security Center Service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Security app may display stale or inaccurate information about any antivirus or firewall products you have installed on the device.
+> If you disable the Windows Security Center Service, or configure its associated Group Policy settings to prevent it from starting or running, the Windows Security app may display stale or inaccurate information about any antivirus or firewall products you have installed on the device.
 >
 > It may also prevent Microsoft Defender Antivirus from enabling itself if you have an old or outdated third-party antivirus, or if you uninstall any third-party antivirus products you may have previously installed.
 >

@@ -57,7 +57,7 @@ Along with exploring new features, you also have the option to validate your app
 - Identify issues sooner to accelerate your Windows deployment 
 - Engage Microsoft earlier for help with potential compatibility issues 
 - Deploy Windows 10 Semi-Annual releases faster and more confidently 
-- Maximize the 18-month support Window that comes with each Semi-Annual release. 
+- Maximize the 18-month support window that comes with each Semi-Annual release. 
 
 |Objective |Feature exploration|
 |---------|---------|

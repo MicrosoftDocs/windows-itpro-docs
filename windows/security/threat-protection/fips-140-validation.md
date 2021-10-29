@@ -5248,7 +5248,7 @@ Random Number Generator (RNG)
 <td><p>Windows Embedded Compact 7 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#1060">#1060</a></p>
 <p>Windows CE 6.0 and Windows CE 6.0 R2 and Windows Mobile Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#292">#292</a></p>
 <p>Windows CE and Windows Mobile 6.0 and Windows Mobile 6.5 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#286">#286</a></p>
-<p>Windows CE 5.00 and Window CE 5.01 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#66">#66</a></p></td>
+<p>Windows CE 5.00 and Windows CE 5.01 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/rng#66">#66</a></p></td>
 </tr>
 <tr class="even">
 <td><p><b>FIPS 186-2<br />
@@ -6761,7 +6761,7 @@ Version 6.3.9600</td>
 <p>Windows Server 2003 SP2 Enhanced Cryptographic Provider (RSAENH) <a href="http://csrc.nist.gov/groups/stm/cavp/documents/des/tripledesval.html#544">#544</a></p>
 <p>Windows Server 2003 SP2 Enhanced DSS and Diffie-Hellman Cryptographic Provider <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#543">#543</a></p>
 <p>Windows Server 2003 SP2 Kernel Mode Cryptographic Module (fips.sys) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#542">#542</a></p>
-<p>Windows CE 6.0 and Window CE 6.0 R2 and Windows Mobile Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#526">#526</a></p>
+<p>Windows CE 6.0 and Windows CE 6.0 R2 and Windows Mobile Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#526">#526</a></p>
 <p>Windows CE and Windows Mobile 6 and Windows Mobile 6.1 and Windows Mobile 6.5 Enhanced Cryptographic Provider (RSAENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#517">#517</a></p>
 <p>Windows Server 2003 SP1 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#381">#381</a></p>
 <p>Windows Server 2003 SP1 Kernel Mode Cryptographic Module (fips.sys) <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation/validation-list/tdes#370">#370</a></p>
