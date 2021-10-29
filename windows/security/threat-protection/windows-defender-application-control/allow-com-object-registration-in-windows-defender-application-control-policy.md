@@ -104,16 +104,16 @@ Example 3: Allows a specific COM object to register in PowerShell
 
 Here's an example of an error in the Event Viewer (**Application and Service Logs** > **Microsoft** > **Windows** > **AppLocker** > **MSI and Script**):
 
-Log Name: Microsoft-Windows-AppLocker/MSI and Script<br/>
-Source: Microsoft-Windows-AppLocker<br/>
-Date: 11/11/2020 1:18:11 PM<br/>
-Event ID: 8036<br/>
-Task Category: None<br/>
-Level: Error<br/>
-Keywords:<br/>
-User: S-1-5-21-3340858017-3068726007-3466559902-3647<br/>
-Computer: contoso.com<br/>
-Description: {f8d253d9-89a4-4daa-87b6-1168369f0b21} was prevented from running due to Config CI policy.<br/>
+> Log Name: Microsoft-Windows-AppLocker/MSI and Script<br/>
+> Source: Microsoft-Windows-AppLocker<br/>
+> Date: 11/11/2020 1:18:11 PM<br/>
+> Event ID: 8036<br/>
+> Task Category: None<br/>
+> Level: Error<br/>
+> Keywords:<br/>
+> User: S-1-5-21-3340858017-3068726007-3466559902-3647<br/>
+> Computer: contoso.com<br/>
+> Description: {f8d253d9-89a4-4daa-87b6-1168369f0b21} was prevented from running due to Config CI policy.
 
 Event XML:
 
@@ -155,10 +155,10 @@ To add this CLSID to the existing policy, follow these steps:
     Once the command has been run, you will find that the following section is added to the policy XML.
     
     ```XML
-      <Settings>
-        <Setting Provider="WSH" Key="{f8d253d9-89a4-4daa-87b6-1168369f0b21}" ValueName="EnterpriseDefinedClsId">
-          <Value>
-            <Boolean>true</Boolean>
-          </Value>
-        </Setting>
+    <Settings>
+      <Setting Provider="WSH" Key="{f8d253d9-89a4-4daa-87b6-1168369f0b21}" ValueName="EnterpriseDefinedClsId">
+        <Value>
+          <Boolean>true</Boolean>
+        </Value>
+      </Setting>
     ```
