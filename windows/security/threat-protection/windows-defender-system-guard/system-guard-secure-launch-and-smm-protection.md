@@ -25,7 +25,7 @@ You can enable System Guard Secure Launch by using any of these options:
 
 - [Mobile Device Management (MDM)](#mobile-device-management)
 - [Group Policy](#group-policy)
-- [Windows Security Center](#windows-security-center)
+- [Windows Security app](#windows-security-center)
 - [Registry](#registry)
 
 ### Mobile Device Management
@@ -40,11 +40,11 @@ System Guard Secure Launch can be configured for Mobile Device Management (MDM) 
 
     ![Secure Launch Configuration.](images/secure-launch-group-policy.png)
 
-### Windows Security Center
+### Windows Security app
 
 Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation** > **Firmware protection**.
 
-  ![Windows Security Center.](images/secure-launch-security-app.png)
+  ![Windows Security app.](images/secure-launch-security-app.png)
   
 ### Registry
 
@@ -64,7 +64,7 @@ Click **Start** > **Settings** > **Update & Security** > **Windows Security** > 
 
 To verify that Secure Launch is running, use System Information (MSInfo32). Click **Start**, search for **System Information**, and look under **Virtualization-based Security Services Running** and **Virtualization-based Security Services Configured**.
 
-![Verifying Secure Launch is running in the Windows Security Center.](images/secure-launch-msinfo.png)
+![Verifying Secure Launch is running in the Windows Security app.](images/secure-launch-msinfo.png)
 
 > [!NOTE]
 > To enable System Guard Secure launch, the platform must meet all the baseline requirements for [Device Guard](../device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md), [Credential Guard](../../identity-protection/credential-guard/credential-guard-requirements.md), and [Virtualization Based Security](/windows-hardware/design/device-experiences/oem-vbs).

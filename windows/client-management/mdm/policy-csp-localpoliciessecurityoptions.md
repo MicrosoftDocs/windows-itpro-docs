@@ -3564,7 +3564,7 @@ The options are:
 - 0 - Disabled: Admin Approval Mode and all related UAC policy settings are disabled.
 
   > [!NOTE]
-  > If this policy setting is disabled, the Windows Security Center notifies you that the overall security of the operating system has been reduced.
+  > If this policy setting is disabled, Windows Security notifies you that the overall security of the operating system has been reduced.
 
 - 1 - Enabled: (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode. 
 
