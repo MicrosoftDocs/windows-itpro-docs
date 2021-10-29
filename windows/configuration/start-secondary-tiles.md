@@ -1,6 +1,6 @@
 ---
 title: Add image for secondary Microsoft Edge tiles (Windows 10)
-description: 
+description: Add app tiles on Windows 10 that's a secondary tile.
 ms.prod: w10
 ms.mktglfcycl: manage
 ms.sitesec: library
@@ -71,7 +71,7 @@ In Windows 10, version 1703, by using the PowerShell cmdlet `export-StartLayoutE
 
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 
-    Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet does not append the file name extension, and the policy settings require the extension.
+    Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet does not append the file name extension, and the policy settings require the extension.
 
 3. If you’d like to change the image for a secondary tile to your own custom image, open the layout.xml file, and look for the images that the tile references.
    - For example, your layout.xml contains `Square150x150LogoUri="ms-appdata:///local/PinnedTiles/21581260870/hires.png" Wide310x150LogoUri="ms-appx:///"` 
@@ -114,11 +114,11 @@ In Microsoft Intune, you create a device restrictions policy to apply to device 
     There are more Start menu settings you can configure. For more information on these settings, see [Start settings in Intune](/intune/device-restrictions-windows-10#start)
 
 8. Select **Next**.
-9. In **Scope tags** (optional), assign a tag to filter the profile to specific IT groups, such as `US-NC IT Team` or `JohnGlenn_ITDepartment`. For more information about scope tags, see [Use RBAC and scope tags for distributed IT](../fundamentals/scope-tags.md).
+9. In **Scope tags** (optional), assign a tag to filter the profile to specific IT groups, such as `US-NC IT Team` or `JohnGlenn_ITDepartment`. For more information about scope tags, see [Use RBAC and scope tags for distributed IT](/mem/intune/fundamentals/scope-tags).
 
     Select **Next**.
 
-10. In **Assignments**, select the users or groups that will receive your profile. For more information on assigning profiles, see [Assign user and device profiles](device-profile-assign.md).
+10. In **Assignments**, select the users or groups that will receive your profile. For more information on assigning profiles, see [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
 
     Select **Next**.
 
