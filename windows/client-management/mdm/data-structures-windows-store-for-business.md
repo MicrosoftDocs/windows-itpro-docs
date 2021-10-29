@@ -263,7 +263,7 @@ Specifies the properties of the alternate identifier.
 <tr class="odd">
 <td><p>productKey</p></td>
 <td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
-<td><p>Identifier used on subsequent requests to get additional content including product descriptions, offline license, and download URLs.</p></td>
+<td><p>Identifier used on subsequent requests to get more content including product descriptions, offline license, and download URLs.</p></td>
 </tr>
 <tr class="even">
 <td><p>seatCapacity</p></td>
@@ -589,7 +589,7 @@ Specifies the properties of the localized product.
 <tr class="odd">
 <td><p>productKey</p></td>
 <td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
-<td><p>Identifier used on subsequent requests to get additional content including product descriptions, offline license, and download URLs.</p></td>
+<td><p>Identifier used on subsequent requests to get more content including product descriptions, offline license, and download URLs.</p></td>
 </tr>
 <tr class="even">
 <td><p>productType</p></td>
@@ -658,7 +658,7 @@ Specifies the properties of the product image.
 <tr class="even">
 <td><p>purpose</p></td>
 <td><p>string</p></td>
-<td><p>Tag for the purpose of the image, e.g. &quot;screenshot&quot; or &quot;logo&quot;.</p></td>
+<td><p>Tag for the image, for example &quot;screenshot&quot; or &quot;logo&quot;.</p></td>
 </tr>
 <tr class="odd">
 <td><p>height</p></td>
