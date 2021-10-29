@@ -20,10 +20,10 @@ Use to configure settings for the [Out Of Box Experience (OOBE)](/windows-hardwa
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [Desktop > EnableCortanaVoice](#enablecortanavoice) | X  |  |  |  |  |
-| [Desktop > HideOobe](#hided) | X  |  |  |  |  |
-| [Mobile > EnforceEnterpriseProvisioning](#nforce) |   | X |  |  |  |
-| [Mobile > HideOobe](#hidem) |   | X |  |  |  |
+| [Desktop > EnableCortanaVoice](#enablecortanavoice) | ✔️  |  |  |  |  |
+| [Desktop > HideOobe](#hided) | ✔️  |  |  |  |  |
+| [Mobile > EnforceEnterpriseProvisioning](#nforce) |   | ✔️ |  |  |  |
+| [Mobile > HideOobe](#hidem) |   | ✔️ |  |  |  |
 
 
 
@@ -50,8 +50,3 @@ When set to **True**, it forces the OOBE flow into using the enterprise provisio
 When set to **False**, it does not force the OOBE flow to the enterprise provisioning page.
 
 <span id="hidem" />
-## HideOobe for mobile
-
-When set to **True**, it hides the interactive OOBE flow for Windows 10 Mobile.
-
-When set to **False**, the OOBE screens are displayed.

@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "windows/configuration/wcd/wcd-theme.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "windows/configuration/wcd/wcd-embeddedlockdownprofiles.md",
       "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false  
