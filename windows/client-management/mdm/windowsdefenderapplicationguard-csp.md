@@ -266,7 +266,7 @@ ADMX Info:
 <!--/ADMXMapped-->
 
 <a href="" id="status"></a>**Status**  
-Returns bitmask that indicates status of Application Guard installation for Microsoft Edge and pre-requisites on the device.
+Returns bitmask that indicates status of Application Guard installation for Microsoft Edge and prerequisites on the device.
 
 Value type is integer. Supported operation is Get.
 
