@@ -273,32 +273,6 @@ Learn about the new Group Policies that were added in Windows 10, version 1703.
 
 - [Group Policy Settings Reference for Windows and Windows Server](https://www.microsoft.com/download/details.aspx?id=25250)
 
-## Windows 10 Mobile enhancements
-
-### Lockdown Designer
-
-The Lockdown Designer app helps you configure and create a lockdown XML file to apply to devices running Windows 10 Mobile, and includes a remote simulation to help you determine the layout for tiles on the Start screen. Using Lockdown Designer is easier than [manually creating a lockdown XML file](/windows/configuration/mobile-devices/lockdown-xml).
-
-![Lockdown Designer app in Store.](images/ldstore.png)
-
-[Learn more about the Lockdown Designer app.](/windows/configuration/mobile-devices/mobile-lockdown-designer)
-
-### Other enhancements
-
-Windows 10 Mobile, version 1703 also includes the following enhancements:
-
-- SD card encryption
-- Remote PIN resets for Azure Active Directory accounts
-- SMS text message archiving
-- WiFi Direct management
-- OTC update tool
-- Continuum display management
-   - Individually turn off the monitor or phone screen when not in use
-   - individually adjust screen time-out settings
-- Continuum docking solutions
-   - Set Ethernet port properties
-   - Set proxy properties for the Ethernet port
-
 ## Miracast on existing wireless network or LAN
 
 In the Windows 10, version 1703, Microsoft has extended the ability to send a Miracast stream over a local network rather than over a direct wireless link. This functionality is based on the [Miracast over Infrastructure Connection Establishment Protocol (MS-MICE)](/openspecs/windows_protocols/ms-mice/9598ca72-d937-466c-95f6-70401bb10bdb).
