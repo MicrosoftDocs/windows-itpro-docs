@@ -20,7 +20,6 @@ ms.date: 07/21/2021
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 > [!IMPORTANT]
 > Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
@@ -133,7 +132,7 @@ Device Guard is a feature set that consists of both hardware and software system
   **JobDescription** - string, optional - A short (< 100 chars), human-readable description of this submission. If the script is being called as part of an automated build     rocess the agent may wish to pass a version number or changeset number for this field. This information will be provided as part of the results of the Get-SigningHistory     command.
 
 **Submit-SigningV1MigrationPolicy** Submits a file to the service for signing and timestamping. The only valid file type for policy 
-signing is binary policy files with the extension (.bin) that have been created via the [ConvertFromCiPolicy](/powershell/module/configci/convertfrom-cipolicy?view=windowsserver2019-ps&viewFallbackFrom=win10-ps) cmdlet. Otherwise, binary policy file may not be deployed properly. Note: Only use for V1 migration.
+signing is binary policy files with the extension (.bin) that have been created via the [ConvertFromCiPolicy](/powershell/module/configci/convertfrom-cipolicy) cmdlet. Otherwise, binary policy file may not be deployed properly. Note: Only use for V1 migration.
 
 - Usage:
 

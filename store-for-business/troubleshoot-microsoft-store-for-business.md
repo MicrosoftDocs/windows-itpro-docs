@@ -20,7 +20,6 @@ ms.date: 07/21/2021
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 > [!IMPORTANT]
 > Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
@@ -29,6 +28,7 @@ Troubleshooting topics for Microsoft Store for Business.
 
 ## Can't find apps in private store
 The private store for your organization is a page in Microsoft Store app that contains apps that are private to your organization. After your organization acquires an app, your Store for Business admin can add it to your organization's private store. Your private store usually has a name that is close to the name of your organization or company. If you can't see your private store, there are a couple of things to check:
+
 - **No apps in the private store** - The private store page is only available in Microsoft Store on Windows 10 if there are apps added to your private store. You won't see your private store page with no apps listed on it. If your Microsoft Store for Business admin has added an app to the private store, and the private store page is still not available, they can check the private store status for the app on **Product & services - Apps**. If the status under **Private store** is **Add in progress**, wait and check back.
 - **Signed in with the wrong account** - If you have multiple accounts that you use in your organization, you might be signed in with the wrong account. Or, you might not be signed in. Use this procedure to sign in with your organization account.
 
@@ -64,5 +64,5 @@ If you are still having trouble using Microsoft Store or installing an app, Admi
    
 **To view Support page** 
 
-1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com)
+1. Sign in to [Microsoft Store for Business](https://businessstore.microsoft.com).
 2.Choose **Manage**> **Support**. 
