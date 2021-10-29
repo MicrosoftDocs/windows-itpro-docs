@@ -36,7 +36,7 @@ Microsoft Store for Business and Education has a set of roles that help admins a
 
 This table lists the global user accounts and the permissions they have in Microsoft Store.
 
-| &nbsp;                         |  **Global Administrator** | **Billing Administrator** |
+|| Global Administrator | Billing Administrator |
 | ------------------------------ | --------------------- | --------------------- |
 | **Sign up for Microsoft Store for Business and Education** |  ✔️       | ✔️             |
 | **Modify company profile settings** | ✔️                    | ✔️                     |
@@ -52,7 +52,7 @@ Microsoft Store for Business has a set of roles that help IT admins and employee
 
 This table lists the roles and their permissions.
 
-| &nbsp;                         |  **Admin** | **Purchaser** | **Device Guard signer** |
+|| Admin | Purchaser | Device Guard signer |
 | ------------------------------ | ------ | --------  | ------------------- |
 | **Assign roles**                   | ✔️      |           |                     |
 | **Manage Microsoft Store for Business and Education settings** |  ✔️ |           |                     |
