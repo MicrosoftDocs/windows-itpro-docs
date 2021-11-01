@@ -15,12 +15,12 @@ manager: dansimp
 
 # Shell (Windows Configuration Designer reference)
 
-Do not use. Use [Start > StartLayout](wcd-start.md#startlayout) 
+Don't use. Use [Start > StartLayout](wcd-start.md#startlayout).
 
 ## Applies to
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |   | X |  |  |  |
+| All settings |   | ✔️ |  |  |  |
 
 

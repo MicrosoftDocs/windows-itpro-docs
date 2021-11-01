@@ -21,8 +21,8 @@ Use for settings related to Microsoft licensing programs.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowWindowsEntitlementReactivation](#allowwindowsentitlementreactivation) | X  |  |  |  |  |
-| [DisallowKMSClientOnlineAVSValidation](#disallowkmsclientonlineavsvalidation) | X  |  |  |  |  |
+| [AllowWindowsEntitlementReactivation](#allowwindowsentitlementreactivation) | ✔️  |  |  |  |  |
+| [DisallowKMSClientOnlineAVSValidation](#disallowkmsclientonlineavsvalidation) | ✔️  |  |  |  |  |
 
 ## AllowWindowsEntitlementReactivation
 

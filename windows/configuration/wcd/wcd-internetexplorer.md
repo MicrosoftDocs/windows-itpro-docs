@@ -21,11 +21,11 @@ Use to configure settings related to Internet Explorer.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [CustomHTTPHeaders](#customhttpheaders) |   | X |  |  |  |
-| [CustomUserAgentString](#customuseragentstring) |   | X |  |  |  |
-| DataSaving > [BrowseDataSaver](#browsedatasaver) |   | X |  |  |  |
-| DataSaving > [ShowPicturesAutomatically](#showpicturesautomatically) |   | X |  |  |  |
-| [FirstRunURL](#firstrunurl) |   | X |  |  |  |
+| [CustomHTTPHeaders](#customhttpheaders) |   | ✔️ |  |  |  |
+| [CustomUserAgentString](#customuseragentstring) |   | ✔️ |  |  |  |
+| DataSaving > [BrowseDataSaver](#browsedatasaver) |   | ✔️ |  |  |  |
+| DataSaving > [ShowPicturesAutomatically](#showpicturesautomatically) |   | ✔️ |  |  |  |
+| [FirstRunURL](#firstrunurl) |   | ✔️ |  |  |  |
 
 ## CustomHTTPHeaders
 
