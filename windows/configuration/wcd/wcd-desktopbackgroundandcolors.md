@@ -21,5 +21,5 @@ Do not use. Instead, use the [Personalization settings](wcd-personalization.md).
 
 | Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | X  |  |  |  |  |
+| All settings | ✔️  |  |  |  |  |
 

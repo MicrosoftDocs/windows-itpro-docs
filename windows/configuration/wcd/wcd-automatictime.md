@@ -23,13 +23,13 @@ The OS includes support for Network Time Protocol (NTP), which enables devices t
 
 | Settings | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [EnableAutomaticTime](#enableautomatictime)  |  | X |  |  |  |
-| [NetworkTimeUpdateThreshold](#networktimeupdatethreshold)  |  | X |  |  |  |
-| [NTPEnabled](#ntpenabled)  |  | X |  |  |  |
-| [NTPRegularSyncInterval](#ntpregularsyncinterval)  |  | X |  |  |  |
-| [NTPRetryInterval](#ntpretryinterval)  |  | X |  |  |  |
-| [NTPServer](#ntpserver)  |  | X |  |  |  |
-| [PreferredSlot](#preferredslot)  |  | X |  |  |  |
+| [EnableAutomaticTime](#enableautomatictime)  |  | ✔️ |  |  |  |
+| [NetworkTimeUpdateThreshold](#networktimeupdatethreshold)  |  | ✔️ |  |  |  |
+| [NTPEnabled](#ntpenabled)  |  | ✔️ |  |  |  |
+| [NTPRegularSyncInterval](#ntpregularsyncinterval)  |  | ✔️ |  |  |  |
+| [NTPRetryInterval](#ntpretryinterval)  |  | ✔️ |  |  |  |
+| [NTPServer](#ntpserver)  |  | ✔️ |  |  |  |
+| [PreferredSlot](#preferredslot)  |  | ✔️ |  |  |  |
 
 ## EnableAutomaticTime
 
@@ -58,15 +58,9 @@ Change the default NTP server for phones that are set to use NTP. To enumerate t
 
 **Example**:
 
-```
-ntpserver1.contoso.com;ntpserver2.fabrikam.com;ntpserver3.contoso.com
-```
+`ntpserver1.contoso.com;ntpserver2.fabrikam.com;ntpserver3.contoso.com`
 
 The list should contain one or more server names. The default NTP source server value is `time.windows.com`.
-
-
-
-
 
 ## PreferredSlot
 
