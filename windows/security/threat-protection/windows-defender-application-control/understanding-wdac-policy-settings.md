@@ -10,7 +10,6 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
-author: Robert Waite
 ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
@@ -39,7 +38,7 @@ An application that may want to restrict its capabilities, when used on a system
 ### WldpQuerySecurityPolicy
 API that queries the secure settings of a WDAC policy.
 
-#### Syntax
+### Syntax
 ``` C++
 HRESULT WINAPI WldpQuerySecurityPolicy(
     _In_ const UNICODE_STRING * Provider,
@@ -50,23 +49,23 @@ HRESULT WINAPI WldpQuerySecurityPolicy(
     _Inout_ PULONG ValueSize)
 ```
 
-#### Parameters
+### Parameters
 Provider [in]
 Setting Provider name.
 
-Key [in]
+#### Key [in]
 Key name of the Key-Value pair under Setting Provider "Provider".
 
-ValueName [in]
+#### ValueName [in]
 The value name of the "Key-Value" pair.
 
-ValueType [in, out]
+#### ValueType [in, out]
 Pointer to receive the value type.
 
-Value [in, out]
+#### Value [in, out]
 Pointer to a buffer to receive the value. The buffer should be of size “ValueSize”. If this value is NULL, this function will return the required buffer size for Value.
 
-ValueSize [in, out]
+#### ValueSize [in, out]
 On input, it indicates the buffer size of "Value". On successful return, it indicates the size of data written to Value buffer.
 
 #### Return Value
