@@ -21,7 +21,7 @@ Use these settings to configure the out-of-box experience (OOBE) to set up HoloL
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |   |  |  | X |  |
+| All settings |   |  |  | ✔️ |  |
 
 Setting | Description
 --- | ---

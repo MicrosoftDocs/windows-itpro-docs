@@ -21,7 +21,7 @@ Use to enable AllJoyn router to work on public networks.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| EnableAllJoynOnPublicNetwork |   |  |  |  | X |
+| EnableAllJoynOnPublicNetwork |   |  |  |  | ✔️ |
 
 Set to **True** or **False**.
 

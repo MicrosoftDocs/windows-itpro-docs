@@ -24,7 +24,7 @@ Use to configure settings for DeviceInfo.
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |  |  X  |  |  |  |
+| All settings |  |  ✔️  |  |  |  |
 
 
 ## PhoneMobileOperatorDisplayName

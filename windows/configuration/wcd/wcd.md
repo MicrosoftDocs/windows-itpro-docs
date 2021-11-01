@@ -77,7 +77,6 @@ This section describes the settings that you can configure in [provisioning pack
 | [TabletMode](wcd-tabletmode.md) |✔️ | ✔️ |  |  |
 | [TakeATest](wcd-takeatest.md) | ✔️ |  |  |  |
 | [TextInput](wcd-textinput.md) |  |  |  |  |
-| [Theme](wcd-theme.md) |  |  |  |  |
 | [Time](wcd-time.md) | ✔️ |  |  |  |
 | [UnifiedWriteFilter](wcd-unifiedwritefilter.md) | ✔️ |  |  | ✔️ |
 | [UniversalAppInstall](wcd-universalappinstall.md) | ✔️ | ✔️ |  | ✔️ |
@@ -87,5 +86,4 @@ This section describes the settings that you can configure in [provisioning pack
 | [WindowsHelloForBusiness](wcd-windowshelloforbusiness.md) | ✔️ |  |  |  |
 | [WindowsTeamSettings](wcd-windowsteamsettings.md) |  | ✔️ |  |  |
 | [Workplace](wcd-workplace.md) |✔️ | ✔️ |  | ✔️ |
-
 
