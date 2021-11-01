@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 06/27/2019
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Domain member: Disable machine account password changes

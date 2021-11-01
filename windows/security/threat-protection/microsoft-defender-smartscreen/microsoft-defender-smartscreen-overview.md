@@ -11,7 +11,7 @@ audience: ITPro
 ms.localizationpriority: high
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Microsoft Defender SmartScreen

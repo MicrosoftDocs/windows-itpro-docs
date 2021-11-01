@@ -4,7 +4,7 @@ description: With Microsoft Store for Business and Microsoft Store for Education
 ms.assetid: 9DA71F6B-654D-4121-9A40-D473CC654A1C
 ms.reviewer: 
 ms.prod: w10
-ms.pagetype: store, mobile
+ms.pagetype: store
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.author: cmcatee
@@ -20,7 +20,6 @@ ms.date: 07/21/2021
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 > [!IMPORTANT]
 > Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
@@ -92,10 +91,10 @@ After your admin signs up for the Store for Business and Education, they can ass
 
 | Permission | Account settings | Acquire apps | Distribute apps | Device Guard signing |
 | ---------- | ---------------- | ------------ | --------------- | -------------------- |
-| Admin | X | X | X |  |
-| Purchaser |  | X | X |  |
-| Device Guard signer |  |  |  | X |
-| Basic purchaser |  | X | X |  |
+| Admin | ✔️ | ✔️ | ✔️ |  |
+| Purchaser |  | ✔️ | ✔️ |  |
+| Device Guard signer |  |  |  | ✔️ |
+| Basic purchaser |  | ✔️ | ✔️ |  |
 
 > [!NOTE]
 > Currently, the Basic purchaser role is only available for schools using Microsoft Store for Education. For more information, see [Microsoft Store for Education permissions](/education/windows/education-scenarios-store-for-business?toc=%2fmicrosoft-store%2feducation%2ftoc.json#manage-domain-settings).

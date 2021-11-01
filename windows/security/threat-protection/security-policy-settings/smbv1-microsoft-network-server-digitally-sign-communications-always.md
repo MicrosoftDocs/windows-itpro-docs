@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 01/04/2019
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # SMB v1 Microsoft network server: Digitally sign communications (always)

@@ -20,11 +20,11 @@ manager: dansimp
 - Windows 10
 
 
-This guide shows you how to deploy the Windows 10 operating system in a school district. You learn how to deploy Windows 10 in classrooms; integrate the school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD); and deploy Windows 10 and your apps to new devices or upgrade existing devices to Windows 10. This guide also describes how to use Microsoft Endpoint Configuration Manager, Microsoft Intune, and Group Policy to manage devices. Finally, the guide discusses common, ongoing maintenance tasks that you will perform after initial deployment as well as the automated tools and built-in features of the operating system.
+This guide shows you how to deploy the Windows 10 operating system in a school district. You learn how to deploy Windows 10 in classrooms; integrate the school environment with Microsoft Office 365, Active Directory Domain Services (AD DS), and Microsoft Azure Active Directory (Azure AD); and deploy Windows 10 and your apps to new devices or upgrade existing devices to Windows 10. This guide also describes how to use Microsoft Endpoint Configuration Manager, Microsoft Intune, and Group Policy to manage devices. Finally, the guide discusses common, ongoing maintenance tasks that you will perform after initial deployment and the automated tools and built-in features of the operating system.
 
 ## Prepare for district deployment
 
-Proper preparation is essential for a successful district deployment. To avoid common mistakes, your first step is to plan a typical district configuration. Just as with building a house, you need a blueprint for what your district and individual schools should look like when it’s finished. The second step in preparation is to learn how you will manage the users, apps, and devices in your district. Just as a builder needs to have the right tools to build a house, you need the right set of tools to deploy your district.
+Proper preparation is essential for a successful district deployment. To avoid common mistakes, your first step is to plan a typical district configuration. As with building a house, you need a blueprint for what your district and individual schools should look like when it’s finished. The second step in preparation is to learn how you will manage the users, apps, and devices in your district. Just as a builder needs to have the right tools to build a house, you need the right set of tools to deploy your district.
 
 > [!NOTE]
 > This guide focuses on Windows 10 deployment and management in a district. For management of other devices and operating systems in education environments, see [Manage BYOD and corporate-owned devices with MDM solutions](https://www.microsoft.com/cloud-platform/mobile-device-management).
@@ -126,7 +126,7 @@ Office 365 Education allows:
 
 * Students and faculty to use Yammer to collaborate through private social networking.
 
-* Students and faculty to access classroom resources from anywhere on any device (including Windows 10 Mobile, iOS, and Android devices).
+* Students and faculty to access classroom resources from anywhere on any device (including iOS and Android devices).
 
 For more information about Office 365 Education features and an FAQ, go to [Office 365 Education plans and pricing](https://products.office.com/en-us/academic).
 
@@ -1577,7 +1577,7 @@ For more information about Intune, see [Microsoft Intune Documentation](/intune/
 
 If you selected to deploy and manage apps by using Microsoft Endpoint Manager and Intune in a hybrid configuration, then skip this section and continue to the [Deploy and manage apps by using Microsoft Endpoint Configuration Manager](#deploy-and-manage-apps-by-using-microsoft-endpoint-configuration-manager) section.
 
-You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you to deploy apps to companion devices (such as Windows 10 Mobile, iOS, or Android devices). Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or that another solution manages.
+You can use Intune to deploy Microsoft Store and Windows desktop apps. Intune provides improved control over which users receive specific apps. In addition, Intune allows you to deploy apps to companion devices (such as iOS or Android devices). Finally, Intune helps you manage app security and features, such as mobile application management policies that let you manage apps on devices that are not enrolled in Intune or that another solution manages.
 
 For more information about how to configure Intune to manage your apps, see the following resources:
 
@@ -1589,9 +1589,9 @@ For more information about how to configure Intune to manage your apps, see the 
 
 ### Deploy and manage apps by using Microsoft Endpoint Configuration Manager
 
-You can use  Microsoft Endpoint Manager to deploy Microsoft Store and Windows desktop apps. Configuration Manager allows you to create a Configuration Manager application that you can use to deploy apps to different devices (such as Windows 10 desktop, Windows 10 Mobile, iOS, or Android devices) by using *deployment types*. You can think of a Configuration Manager application as a box. You can think of deployment types as one or more sets of installation files and installation instructions within that box.
+You can use  Microsoft Endpoint Manager to deploy Microsoft Store and Windows desktop apps. Configuration Manager allows you to create a Configuration Manager application that you can use to deploy apps to different devices (such as Windows 10 desktop, iOS, or Android devices) by using *deployment types*. You can think of a Configuration Manager application as a box. You can think of deployment types as one or more sets of installation files and installation instructions within that box.
 
-For example, you could create a Skype application that contains a deployment type for Windows 10 desktop, Windows 10 Mobile, iOS, and Android. You can deploy the one application to multiple device types.
+For example, you could create a Skype application that contains a deployment type for Windows 10 desktop, iOS, and Android. You can deploy the one application to multiple device types.
 
 > [!NOTE]
 > When you configure Configuration Manager and Intune in a hybrid model, you deploy apps by using Configuration Manager as described in this section.
@@ -1607,7 +1607,7 @@ If you selected to manage updates by using Configuration Manager and Intune in a
 To help ensure that your users have the most current features and security protection, keep Windows 10 and your apps current with updates. To configure Windows 10 and app updates, use the **Updates** workspace in Intune.
 
 > [!NOTE]
-> You can only manage updates (including antivirus and antimalware updates) for Windows 10 desktop operating systems (not Windows 10 Mobile, iOS, or Android).
+> You can only manage updates (including antivirus and antimalware updates) for Windows 10 desktop operating systems (not iOS or Android).
 
 For more information about how to configure Intune to manage updates and malware protection, see the following resources:
 
@@ -1631,7 +1631,7 @@ In this section, you prepared your institution for device management. You identi
 
 ## Deploy Windows 10 to devices
 
-You’re ready to deploy Windows 10 to faculty and student devices. You must complete the steps in this section for each student device in the classrooms as well as for any new student devices you add in the future. You can also perform these actions for any device that’s eligible for a Windows 10 upgrade. This section discusses deploying Windows 10 to new devices, refreshing Windows 10 on existing devices, and upgrading existing devices that are running eligible versions of Windows 8.1 or Windows 7 to Windows 10.
+You’re ready to deploy Windows 10 to faculty and student devices. You must complete the steps in this section for each student device in the classrooms and for any new student devices you add in the future. You can also perform these actions for any device that’s eligible for a Windows 10 upgrade. This section discusses deploying Windows 10 to new devices, refreshing Windows 10 on existing devices, and upgrading existing devices that are running eligible versions of Windows 8.1 or Windows 7 to Windows 10.
 
 ### Prepare for deployment
 

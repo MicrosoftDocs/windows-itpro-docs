@@ -15,7 +15,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 ms.date: 09/08/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # GPO\_DOMISO\_Encryption\_WS2008

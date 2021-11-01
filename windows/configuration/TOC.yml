@@ -295,9 +295,7 @@
         - name: TakeATest
           href: wcd/wcd-takeatest.md    
         - name: TextInput
-          href: wcd/wcd-textinput.md  
-        - name: Theme
-          href: wcd/wcd-theme.md  
+          href: wcd/wcd-textinput.md
         - name: Time
           href: wcd/wcd-time.md    
         - name: UnifiedWriteFilter

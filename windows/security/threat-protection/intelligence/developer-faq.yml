@@ -16,7 +16,7 @@ metadata:
   audience: ITPro
   ms.collection: M365-security-compliance
   ms.topic: article
-  ms.technology: mde
+  ms.technology: windows-sec
     
 title: Software developer FAQ
 summary: This page provides answers to common questions we receive from software developers. For general guidance about submitting malware or incorrectly detected files, read the submission guide.

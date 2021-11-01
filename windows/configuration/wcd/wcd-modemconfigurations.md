@@ -20,5 +20,5 @@ ModemConfiguration settings are removed in Windows 10, version 1709.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |   | X |  |  |  |
+| All settings |   | ✔️ |  |  |  |
 
