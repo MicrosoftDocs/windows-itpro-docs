@@ -62,7 +62,7 @@ Enter the name that users will see when they want to project wirelessly to the d
 
 ## MaintenanceHours
 
-Maintenance hours are the period of time during when automatic maintenance tasks are run.
+Maintenance hours are the period of time when automatic maintenance tasks are run.
 
 | Setting | Value | Description |
 | --- | --- | --- |
