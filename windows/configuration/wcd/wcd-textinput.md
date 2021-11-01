@@ -21,8 +21,8 @@ Use TextInput settings to configure text intelligence and keyboard for mobile de
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| Intelligence > DisablePredictions |  |  X  |  |  |  |
-| PreEnabledKeyboard |  |  X  |  |  |  |
+| Intelligence > DisablePredictions |  |  ✔️  |  |  |  |
+| PreEnabledKeyboard |  |  ✔️  |  |  |  |
 
 ## Intelligence
 
@@ -30,16 +30,16 @@ Set **DisablePredictions** to the locale or alternative input language that must
 
 ## PreEnabledKeyboard
 
-In addition to the automatically-enabled default keyboard, OEMs may choose to pre-enable more keyboards for a particular market.
+OEMs can use the default keyboard that's automatically enabled. They can also pre-enable more keyboards for a particular market.
 
-During phone bring-up, OEMs must set the boot locale, or default locale, for the phone. During first boot, Windows Phone reads the locale setting and automatically enables a default keyboard based on the locale to keyboard mapping table in Set languages and locales.
+During phone bring-up, OEMs must set the boot locale, or default locale, for the phone. During first boot, Windows Phone reads the locale setting. It automatically enables a default keyboard based on the locale to keyboard-mapping table in Set languages and locales.
 
-The mapping works for almost all regions and additional customizations are not needed unless specified in the pre-enabled keyboard column in Set languages and locales. If an OEM chooses to pre-enable more keyboards for a particular market, they can do so by specifying the setting. Pre-enabled keyboards will automatically be enabled during boot. Microsoft recommends that partners limit the number of pre-enabled keyboards to those languages that correspond to the languages spoken within the market.
+The mapping works for almost all regions. More customizations aren't needed unless specified in the pre-enabled keyboard column in Set languages and locales. If an OEM chooses to pre-enable more keyboards for a particular market, they enter the setting. Pre-enabled keyboards will automatically be enabled during boot. Microsoft recommends limiting the number of pre-enabled keyboards to the languages that correspond to the languages spoken within the market.
 
 
-PreEnabledKeyboard must be entered once for each keyboard you want to pre-enable. As shown below, the format to specify a particular keyboard must be: Locale code.Locale value. See the following table for more information on the locale codes and values that you can use. The setting Value must be set to 1 to enable the keyboard.
+PreEnabledKeyboard must be entered once for each keyboard you want to pre-enable. As shown below, the format to specify a particular keyboard must be: `Locale code.Locale value`. For more information on the locale codes and values that you can use, see the following table. The setting Value must be set to 1 to enable the keyboard.
 
-The following table shows the values that you can use for the Locale code.Locale value part of the setting name.
+The following table shows the values that you can use for the `Locale code.Locale value` part of the setting name.
 
 >[!NOTE]
 >The keyboards for some locales require additional language model files: am-ET, bn-IN, gu-IN, hi-IN, ja-JP, kn-IN, ko-KR, ml-IN, mr-IN, my-MM, or-IN, pa-IN, si-LK, ta-IN, te-IN, zh-TW, zh-CN, and zh-HK. 
