@@ -26,7 +26,7 @@ Use for settings related to Messaging and Commercial Mobile Alert System (CMAS).
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |   | X |  |  |  |
+| All settings |   | ✔️ |  |  |  |
 
 ## GlobalSettings 
 
@@ -98,11 +98,6 @@ AllowMmsIfDataIsOffWhileRoaming | **True** allows MMS if data is off while roami
 
 Set to **True** to show the select all contacts/unselect all menu option to allow users to easily select multiple recipients for an SMS or MMS message. This menu option provides users with an easier way to add multiple recipients and may also meet a mandatory requirement for some mobile operator networks.
 
-Windows 10 Mobile supports the following select multiple recipients features:
-
-- A multi-select chooser, which enables users to choose multiple contacts.
-- A **select all contacts/unselect all** menu option, which enables users to select or unselect all their contacts. This option is not shown by default and must be enabled by the OEM.
-
 ### AllowSendingDeliveryReport
 
 Specify whether the phone automatically sends a receipt acknowledgment for MMS messages. Partners can specify whether the phone automatically sends a receipt acknowledgment for MMS messages when they arrive, and they can determine whether users can control the receipt acknowledgments by using the **Send MMS acknowledgment** toggle in **Messaging > settings**. By default, this user setting is visible and turned on.
@@ -158,13 +153,13 @@ SevereAlertDependentOnExtremeAlert | When set as **True**, the CMAS-Extreme aler
 
 Setting | Description
 --- | ---
-AllowSelectAllContacts | Set to **True** to show the **select all contacts/unselect all** menu option to allow users to easily select multiple recipients for an SMS or MMS message. This menu option provides users with an easier way to add multiple recipients and may also meet a mandatory requirement for some mobile operator networks. Windows 10 Mobile supports the following select multiple recipients features:</br></br>- A multi-select chooser, which enables users to choose multiple contacts.</br>- A **select all contacts/unselect all** menu option, which enables users to select or unselect all their contacts. This option is not shown by default and must be enabled by the OEM.
+AllowSelectAllContacts | Set to **True** to show the **select all contacts/unselect all** menu option to allow users to easily select multiple recipients for an SMS or MMS message. This menu option provides users with an easier way to add multiple recipients and may also meet a mandatory requirement for some mobile operator networks. 
 AllowSMStoSMTPAddress | Allow SMS to SMTP address.
 AssistedDialingMcc | By setting AssistedDialingMcc and AssistedDialingMnc, international assisted dialing will be enabled for SMS if the user setting for international assisted dialing is enabled. Enter the Mobile Country Code (MCC) to use for sending SMS.
 AssistedDialingMnc | By setting AssistedDialingMcc and AssistedDialingMnc, international assisted dialing will be enabled for SMS if the user setting for international assisted dialing is enabled. Enter the Mobile Network Code (MNC) to use for sending SMS.
 AssistedDialingPlusCodeSupportOverride | For devices that support IMS over SMS, you can override support for the assisted dialing plus (+) code for SMS by setting AssistedDialingPlusCodeSupportOverride. If enabled, the OS will not convert the plus (+) code to the proper assisted number when the user turns on the dialing assist option.
 AutoRetryDownload | You can configure the messaging app to automatically retry downloading an MMS message if the initial download attempt fails. When this customization is enabled, the download is retried 3 times at 20-, 40-, and 60-second intervals. 
-BroadcastChannels | You can specify one or more ports from which the device will accept cellular broadcast messages. Set the BroadcastChannels value to the port number(s) that can accept cellular broadcast messages. If you specify the same port that Windows 10 Mobile already recognizes as an Emergency Alert port (a CMAS or ETWS port number) and a cell broadcast message is received on that port, the user will only receive the message once. The message that is received will be displayed as an Emergency Alert message.
+BroadcastChannels | You can specify one or more ports from which the device will accept cellular broadcast messages. Set the BroadcastChannels value to the port number(s) that can accept cellular broadcast messages.
 ConvertLongSMStoMMS | For networks that do support MMS and do not support segmentation of SMS messages, you can specify an automatic switch from SMS to MMS for long messages.
 DefaultContentLocationUrl | For networks that require it, you can specify the default GET path within the MMSC to use when the GET URL is missing from the WAP push MMS notification. Set DefaultContentLocationUrl to specify the default GET path within the MMSC.
 EarthquakeMessageString | To override the Primary Earthquake default message, specify the EarthquakeMessageString setting value. This string will be used regardless of what language is set on the device.

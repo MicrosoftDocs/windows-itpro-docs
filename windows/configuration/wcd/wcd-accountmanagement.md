@@ -21,11 +21,11 @@ Use these settings to configure the Account Manager service.
 
 | Settings | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [DeletionPolicy](#deletionpolicy) |  |  |  | X |  |
-| [EnableProfileManager](#enableprofilemanager) |  |  |  | X |  |
-| [ProfileInactivityThreshold](#profileinactivitythreshold) |  |  |  | X |  |
-| [StorageCapacityStartDeletion](#storagecapacitystartdeletion) |  |  |  | X |  |
-| [StorageCapacityStopDeletion](#storagecapacitystopdeletion) |  |  |  | X |  |
+| [DeletionPolicy](#deletionpolicy) |  |  |  | ✔️ |  |
+| [EnableProfileManager](#enableprofilemanager) |  |  |  | ✔️ |  |
+| [ProfileInactivityThreshold](#profileinactivitythreshold) |  |  |  | ✔️ |  |
+| [StorageCapacityStartDeletion](#storagecapacitystartdeletion) |  |  |  | ✔️ |  |
+| [StorageCapacityStopDeletion](#storagecapacitystopdeletion) |  |  |  | ✔️ |  |
 
 >[!NOTE]
 >Although the AccountManagement settings are available in advanced provisioning for other editions, you should only use them for HoloLens devices.

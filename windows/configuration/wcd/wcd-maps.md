@@ -20,9 +20,9 @@ Use for settings related to Maps.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [ChinaVariantWin10](#chinavariantwin10) | X  | X | X |  |  |
-| [UseExternalStorage](#useexternalstorage) | X  | X | X |  |  |
-| [UseSmallerCache](#usesmallercache) | X  | X | X |  |  |
+| [ChinaVariantWin10](#chinavariantwin10) | ✔️  | ✔️ | ✔️ |  |  |
+| [UseExternalStorage](#useexternalstorage) | ✔️  | ✔️ | ✔️ |  |  |
+| [UseSmallerCache](#usesmallercache) | ✔️  | ✔️ | ✔️ |  |  |
 
 
 ## ChinaVariantWin10
