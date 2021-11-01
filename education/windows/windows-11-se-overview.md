@@ -25,11 +25,12 @@ For education customers seeking cost-effective devices, Microsoft Windows 11 SE 
 
 - A simplified and secure experience for students, with a focus on students in grades 4-8. Students focus on learning. Student privacy is prioritized.
 - Admins remotely manage Windows 11 SE devices using [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For more specific information, see [ADD LINK TO LAURA'S ARTICLE]().
-- It's built for low-cost computers, and automates & limits the app experience. For example, it's designed to only run essential apps, and limits the number of apps that can be snapped.
+- It's built for low-cost computers.
+- It has a curated app experience, and is designed to only run essential education apps.
 
 ## Get Windows 11 SE
 
-Windows 11 SE is preinstalled on devices from OEMs, and is available to everyone. The OEM installs Windows 11 SE, and makes the devices available for you to purchase. For example, you'll be able to purchase Windows Surface devices with Windows 11 SE already installed.
+Windows 11 SE is only available preinstalled on devices from OEMs. The OEM installs Windows 11 SE, and makes the devices available for you to purchase. For example, you'll be able to purchase Microsoft Surface devices with Windows 11 SE already installed.
 
 ## Available apps
 
@@ -66,7 +67,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 
 ### Add your own apps
 
-If your apps aren't shown in the [Allowed apps list](#allowed-apps) (in this article), then you can submit an application request at [aka.ms/eduapprequest](https://aka.ms/eduapprequest). Anyone from the school district can submit the request. In the form, sign in with your school account, such as `user@contoso.edu`. We'll update you using this email account.
+If the apps you need aren't shown in the [available apps list](#available-apps) (in this article), then you can submit an application request at [aka.ms/eduapprequest](https://aka.ms/eduapprequest). Anyone from a school district can submit the request. In the form, sign in with your school account, such as `user@contoso.edu`. We'll update you using this email account.
 
 Microsoft reviews every app request to make sure each app meets the following requirements:
 
@@ -75,18 +76,18 @@ Microsoft reviews every app request to make sure each app meets the following re
 - Apps must be in one of the following app categories:​
   - Content Filtering apps​
   - Test Taking solutions​
-  - Accessibility tool apps
-  - Effective classroom communication apps​
+  - Accessibility tools
+  - Classroom communication apps​
   - Essential diagnostics, management, and supportability apps
 
-- Apps must meet the performance requirements of Windows 11. For more specific information, see [Windows 11 requirements](/windows/whats-new/windows-11-requirements).
+- Apps must meet the performance [requirements of Windows 11](/windows/whats-new/windows-11-requirements).
 
 - Apps must meet the following security requirements:
   - All app binaries are code-signed​.
   - All files include the `OriginalFileName` in the resource file header​.
   - All kernel drivers are WHQL-signed.
 
-- Apps can't have an equivalent web application​.
+- Apps don't have an equivalent web application​.
 
 - Apps can't invoke any processes that can be used to jailbreak a device, automate jailbreaks, or present a security risk. For example, processes such as Reg.exe, CBE.exe, CMD.exe, and KD.exe are blocked on Windows 11 SE.
 
@@ -94,7 +95,7 @@ If the app meets the requirements, Microsoft also works with the Independent Sof
 
 When the app is ready, Microsoft will update you. Then, you add the app to the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), and deploy it to your Windows 11 SE devices. For more information on adding and deploying education apps, see [ADD LINK TO LAURA'S ARTICLE]().
 
-## 0x87D300D9 error with an app
+### 0x87D300D9 error with an app
 
 When you deploy an app using Endpoint Manager, you may get a `0x87D300D9` error code with a `Failed` state in the [Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431). If you have an app that fails with this error, then:
 
