@@ -21,7 +21,7 @@ Use these settings to configure RcsPresence.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |   | X |  |  |  |
+| All settings |   | ✔️ |  |  |  |
 
 Setting | Description
 --- | ---

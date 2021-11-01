@@ -26,7 +26,7 @@ Use SurfaceHubManagement settings to set the administrator group that will manag
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |  |  | X |  |   |
+| All settings |  |  | ✔️ |  |   |
 
 
 ## GroupName
