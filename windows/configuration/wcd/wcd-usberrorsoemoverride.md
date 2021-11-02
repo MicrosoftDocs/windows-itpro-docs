@@ -22,7 +22,7 @@ Allows an OEM to hide the USB option UI in Settings and all USB device errors.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [HideUsbErrorNotifyOptionUI](#hideusberrornotifyoptionui) | X | X | X | X |   |
+| [HideUsbErrorNotifyOptionUI](#hideusberrornotifyoptionui) | ✔️ | ✔️ | ✔️ | ✔️ |   |
 
 ## HideUsbErrorNotifyOptionUI
 

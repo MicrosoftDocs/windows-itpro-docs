@@ -22,8 +22,8 @@ Use WeakCharger settings to configure the charger notification UI.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [HideWeakChargerNotifyOptionUI](#hideweakchargernotifyoptionui) | X | X | X |  |   |
-| [NotifyOnWeakCharger](#notifyonweakcharger) | X | X | X |  |   |
+| [HideWeakChargerNotifyOptionUI](#hideweakchargernotifyoptionui) | ✔️ | ✔️ | ✔️ |  |   |
+| [NotifyOnWeakCharger](#notifyonweakcharger) | ✔️ | ✔️ | ✔️ |  |   |
 
 
 ## HideWeakChargerNotifyOptionUI
@@ -34,12 +34,15 @@ Select between **Show Weak Charger Notifications UI** and **Hide Weak Charger No
 
 ## NotifyOnWeakCharger
 
-This setting displays a warning when the user connects the device to an incompatible charging source. This warning is intended to notify users that their device may take longer to charge or may not charge at all with the current charging source.
+This setting shows a warning when the user connects the device to an incompatible charging source. This warning is intended to notify users that their device may take longer to charge. Or, it may not charge at all.
 
-An incompatible charging source is one that does not behave like one of the following port types as defined by the USB Battery Charging Specification, Revision 1.2, available on the USB.org website:
+An incompatible charging source is one that doesn't behave like one of the following port types:
+
 - Charging downstream port
 - Standard downstream port 
 - Dedicated charging port
+
+The port types are defined by the USB Battery Charging Specification, Revision 1.2, available at `USB.org`.
 
 Select between **Disable Weak Charger Notifications UI** and **Enable Weak Charger Notifications UI**.
 
