@@ -12,7 +12,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/23/2021
+ms.date: 11/02/2021
 ms.reviewer: 
 ---
 
