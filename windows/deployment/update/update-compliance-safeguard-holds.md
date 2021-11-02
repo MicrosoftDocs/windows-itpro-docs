@@ -38,9 +38,13 @@ The safeguard hold report can be found in a different location from the other Up
 
 ## Safeguard hold view
 
+[ ![The safeguard hold view of the Safeguard Hold report.](images/UC_workspace_safeguard_holds_safeguard_hold_view.png) ](images/UC_workspace_safeguard_holds_safeguard_hold_view.png#lightbox)
+
 The safeguard hold view shows which safeguard holds apply to devices in your population, and how many devices are affected by each safeguard hold. You can use the **Safeguard hold ID(s)** dropdown at the top of the report to filter the chart and corresponding table to show only the selected safeguard hold IDs. Note that a device can be affected by more than one safeguard hold. 
 
 ## Device view
+
+[ ![The device view of the Safeguard Hold report.](images/UC_workspace_safeguard_holds_device_view.png) ](images/UC_workspace_safeguard_holds_device_view.png#lightbox)
 
 The device view shows which devices are affected by safeguard holds. In the **Safeguard Hold IDs** column of the table, you can find a list of the safeguard holds that apply to each device. You can also use the **Safeguard hold ID(s)** dropdown at the top of the report to filter the table to show only devices affected by the selected safeguard hold IDs.
 
