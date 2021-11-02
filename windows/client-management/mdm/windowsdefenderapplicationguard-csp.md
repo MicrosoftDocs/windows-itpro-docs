@@ -278,7 +278,7 @@ Value type is integer. Supported operation is Get.
  > [!IMPORTANT]
  > If you are deploying Application Guard via Intune, Network Isolation Policy must to configured, to enable Application Guard for Microsoft Edge. 
 - Bit 5	- Set to 1 when the client machine meets minimum hardware requirements.
-- Bit 6 - Set to 1 when system reboot is required.
+- Bit 6	- Set to 1 when system reboot is required.
 
 <a href="" id="platformstatus"></a>**PlatformStatus**  
 Added in Windows 10, version 2004. Returns bitmask that indicates status of Application Guard platform installation and prerequisites on the device. 
