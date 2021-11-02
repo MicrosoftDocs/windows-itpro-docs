@@ -21,5 +21,5 @@ Documentation not available at this time.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |  |  |  |  |  X |
+| All settings |  |  |  |  |  ✔️ |
 
