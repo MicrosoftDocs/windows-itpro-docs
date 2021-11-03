@@ -21,11 +21,11 @@ Use to configure browser settings that should only be set by OEMs who are part o
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowPrelaunch](#allowprelaunch) |  |    | X |  |  |
-| [FavoriteBarItems](#favoritebaritems) | X |    |  |  |  |
-| [Favorites](#favorites) |  |  X  |  |  |  |
-| [PartnerSearchCode](#partnersearchcode)  | X | X | X |  |  |
-| [SearchProviders](#searchproviders) |   |  X  |  |  |  |
+| [AllowPrelaunch](#allowprelaunch) |  |    | ✔️ |  |  |
+| [FavoriteBarItems](#favoritebaritems) | ✔️ |    |  |  |  |
+| [Favorites](#favorites) |  |  ✔️  |  |  |  |
+| [PartnerSearchCode](#partnersearchcode)  | ✔️ | ✔️ | ✔️ |  |  |
+| [SearchProviders](#searchproviders) |   |  ✔️  |  |  |  |
 
 
 ## AllowPrelaunch
@@ -76,9 +76,6 @@ OEMs who are part of the program only have one PartnerSearchCode and this should
 
 Contains the settings you can use to configure the default and additional search providers.
 
-Microsoft Bing is the default search provider for Windows 10 Mobile. The default search provider must be set to Bing, except for devices shipping to certain countries where a different default search provider is required as specified in the [Specific region guidance](#specific-region-guidance) section of [Default](#default).
-
-
 ### Default
 
 Use *Default* to specify a name that matches one of the search providers you enter in [SearchProviderList](#searchproviderlist). If you don't specify a default search provider, this will default to Microsoft Bing. 
@@ -103,9 +100,4 @@ Use to specify a list of additional search providers.
 For example, to specify Yandex in Russia and Commonwealth of Independent States (CIS), set the value of URL to "https://yandex.ru/search/touch/?text={searchTerm}&clid=2234144".
 
 When configured with multiple search providers, the browser can display up to ten search providers.
-
->[!IMPORTANT]
->Microsoft Bing is the default search provider for Windows 10 Mobile. The default search provider must be set to Bing, except for devices shipping to certain countries where a different default search provider is required as specified in the [Specific region guidance](#specific-region-guidance) section of [Default](#default).
-
-
 

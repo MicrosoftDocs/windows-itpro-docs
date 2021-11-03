@@ -12,7 +12,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 09/23/2021
+ms.date: 11/02/2021
 ms.reviewer: 
 ---
 
@@ -389,7 +389,7 @@ The registry keys for the smart card KSP are in **HKEY\_LOCAL\_MACHINE\\SYSTEM\\
 | **AllowPrivateSignatureKeyImport** | A non-zero value allows RSA signature private keys to be imported for use in key archival scenarios.<br>Default value: 00000000                 |
 | **DefaultPrivateKeyLenBits**       | Defines the default length for private keys, if desired.<br>Default value: 00000400<br>Default key generation parameter: 1024-bit keys        |
 | **RequireOnCardPrivateKeyGen**     | This key sets the flag that requires on-card private key generation (default). If this value is set, a key generated on a host can be imported into the smart card. This is used for smart cards that don't support on-card key generation or where key escrow is required.<br>Default value: 00000000 |
-| **TransactionTimeoutMilliseconds** | Default timeout values allow you to specify whether transactions that take an excessive amount of time will fail.<br>Default value: 000005dc1500<br>The default timeout for holding transactions to the smart card is 1.5 seconds.           |
+| **TransactionTimeoutMilliseconds** | Default timeout values allow you to specify whether transactions that take an excessive amount of time will fail.<br>Default value: 000005dc<br>The default timeout for holding transactions to the smart card is 1.5 seconds.           |
 
 **Additional registry keys for the smart card KSP**
 

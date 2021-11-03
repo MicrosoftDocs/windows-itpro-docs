@@ -24,8 +24,8 @@ Use to configure call origin and blocking apps.
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [BlockingApp](#blockingapp) |  |  X  |  |  |  |
-| [CallOriginApp](#calloriginapp) |  |  X  |  |  |  |
+| [BlockingApp](#blockingapp) |  |  ✔️  |  |  |  |
+| [CallOriginApp](#calloriginapp) |  |  ✔️  |  |  |  |
 
 ## BlockingApp
 

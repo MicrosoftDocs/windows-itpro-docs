@@ -208,6 +208,8 @@
                     href: update/update-compliance-security-update-status.md
                   - name: Feature update status report
                     href: update/update-compliance-feature-update-status.md
+                  - name: Safeguard holds report
+                    href: update/update-compliance-safeguard-holds.md
                   - name: Delivery Optimization in Update Compliance
                     href: update/update-compliance-delivery-optimization.md
                   - name: Data handling and privacy in Update Compliance

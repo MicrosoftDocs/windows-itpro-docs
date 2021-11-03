@@ -20,6 +20,6 @@ Use to select a default profile for mobile devices that have multivariant config
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| DefaultProfile |   | X |  |  |  |
+| DefaultProfile |   | ✔️ |  |  |  |
 
 If you will be adding [multivariant settings](../provisioning-packages/provisioning-multivariant.md) to your provisioning package,  you can use the **DefaultProfile** setting to specify which variant should be applied by default if OOBE is skipped. In the **DefaultProfile** field, enter the UINAME from your customizations.xml that you want to use as default.
