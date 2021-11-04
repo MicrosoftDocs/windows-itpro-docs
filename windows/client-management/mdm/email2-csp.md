@@ -118,7 +118,8 @@ Value options:
 -   0 - Server authentication isn't required.
 -   1 - Server authentication is required.
 
-> **Note**  If this value isn't specified, then no SMTP authentication is done. Also, this is different from SMTPALTENABLED.
+> [!NOTE]
+> If this value isn't specified, then no SMTP authentication is done. Also, this is different from SMTPALTENABLED.
 
  
 
@@ -204,7 +205,8 @@ Required. Character string that specifies the name of the email service to creat
 
 Supported operations are Get, Add, Replace, and Delete.
 
-> **Note**   The EMAIL2 Configuration Service Provider doesn't support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
+> [!NOTE]
+> The EMAIL2 Configuration Service Provider doesn't support the OMA DM **Replace** command on the parameters **SERVICENAME** and **SERVICETYPE**. To replace either the email account name or the account service type, the existing email account must be deleted and then a new one must be created.
 
  
 
