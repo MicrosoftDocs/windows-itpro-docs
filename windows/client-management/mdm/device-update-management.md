@@ -691,7 +691,8 @@ Example
 
 <a href="" id="update-updateserviceurlalternate"></a>**Update/UpdateServiceUrlAlternate**
 
-> **Note**  This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
+> [!NOTE]
+> This policy is available on Windows 10 Pro, Windows 10 Enterprise, and Windows 10 Education.
 
 Added in the January service release of Windows 10, version 1607. Specifies an alternate intranet server to host updates from Microsoft Update. You can then use this update service to automatically update computers on your network.
 
