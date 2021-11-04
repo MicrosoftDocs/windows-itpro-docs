@@ -31,7 +31,7 @@ This article provides independent software vendors (ISV) with the information th
 
 In Windows 10, the MDM protocol has been extended to better enable IT admins to manage updates. In particular, Windows has added configuration service providers (CSPs) that expose policies and actions for MDMs to:
 
--   Configure automatic update policies to ensure devices stay up-to-date.
+-   Configure automatic update policies to ensure devices stay up to date.
 -   Get device compliance information (the list of updates that are needed but not yet installed).
 -   Enter a per-device update approval list. The list makes sure devices only install updates that are approved and tested.
 -   Approve end-user license agreements (EULAs) for the end user so update deployment can be automated even for updates with EULAs.
@@ -121,10 +121,10 @@ These steps get information about the set of Microsoft Updates that IT needs to 
 
 An MDM can manage updates via OMA DM. The details of how to use and integrate an MDM with the Windows OMA DM protocol, and how to enroll devices for MDM management, is documented in [Mobile device management](mobile-device-enrollment.md). This section focuses on how to extend that integration to support update management. The key aspects of update management include the following information:
 
--   Configure automatic update policies to ensure devices stay up-to-date.
+-   Configure automatic update policies to ensure devices stay up to date.
 -   Get device compliance information (the list of updates that are needed but not yet installed)
 -   Specify a per-device update approval list. The list makes sure devices only install updates that are approved and tested.
--   Approve EULAs for the end-user so update deployment can be automated, even for updates with EULAs
+-   Approve EULAs for the end user so update deployment can be automated, even for updates with EULAs
 
 The following list describes a suggested model for applying updates.
 
@@ -228,8 +228,8 @@ Supported operations are Get and Replace.
 
 The following list shows the supported values:
 
--   0 – Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end-users to manage data usage. With this option, users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel.
--   1 – Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks. They're installed during "Automatic Maintenance" when the device isn't in use, and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end-user is prompted to schedule the restart time. The end-user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end-user to control the start time reduces the risk of accidental data loss caused by applications that don't shutdown properly on restart.
+-   0 – Notify the user before downloading the update. This policy is used by the enterprise who wants to enable the end users to manage data usage. With this option, users are notified when there are updates that apply to the device and are ready for download. Users can download and install the updates from the Windows Update control panel.
+-   1 – Auto install the update and then notify the user to schedule a device restart. Updates are downloaded automatically on non-metered networks. They're installed during "Automatic Maintenance" when the device isn't in use, and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates immediately. If the installation requires a restart, the end user is prompted to schedule the restart time. The end user has up to seven days to schedule the restart and after that, a restart of the device is forced. Enabling the end user to control the start time reduces the risk of accidental data loss caused by applications that don't shutdown properly on restart.
 -   2 (default) – Auto install and restart. Updates are downloaded automatically on non-metered networks. They're installed during "Automatic Maintenance" when the device isn't in use, and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device isn't actively being used. This behavior is the default behavior for unmanaged devices. Devices are updated quickly. But, it increases the risk of accidental data loss caused by an application that doesn't shutdown properly on restart.
 -   3 – Auto install and restart at a specified time. The IT specifies the installation day and time. If no day and time are specified, the default is 3 AM daily. Automatic installation happens at this time and device restart happens after a 15-minute countdown. If the user is logged in when Windows is ready to restart, the user can interrupt the 15-minute countdown to delay the restart.
 -   4 – Auto install and restart without end-user control. Updates are downloaded automatically on non-metered networks. They're installed during "Automatic Maintenance" when the device isn't in use, and isn't running on battery power. If automatic maintenance is unable to install updates for two days, Windows Update will install updates right away. If a restart is required, then the device is automatically restarted when the device isn't actively being used. This setting option also sets the end-user control panel to read-only.
@@ -239,7 +239,7 @@ The following list shows the supported values:
 > This option should be used only for systems under regulatory compliance, as you will not get security updates as well.
  
 
-If the policy isn't configured, end-users get the default behavior (Auto install and restart).
+If the policy isn't configured, end users get the default behavior (Auto install and restart).
 
 <a href="" id="update-allowmuupdateservice"></a>**Update/AllowMUUpdateService**
 > [!NOTE]
@@ -258,7 +258,7 @@ The following list shows the supported values:
 > This policy is available on Windows 10 Pro, Windows 10 Enterprise and Windows 10 Education.
 
 
-Allows the IT admin to manage if Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for third party software and patch distribution.
+Allows the IT admin to manage if Automatic Updates accepts updates signed by entities other than Microsoft when the update is found at the UpdateServiceUrl location. This policy supports using WSUS for third-party software and patch distribution.
 
 Supported operations are Get and Replace.
 
@@ -267,7 +267,7 @@ The following list shows the supported values:
 -   0 – Not allowed or not configured. Updates from an intranet Microsoft update service location must be signed by Microsoft.
 -   1 – Allowed. Accepts updates received through an intranet Microsoft update service location, if they're signed by a certificate in the "Trusted Publishers" certificate store of the local computer.
 
-This policy is specific to desktop and local publishing using WSUS for third party updates (binaries and updates not hosted on Microsoft Update). It allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
+This policy is specific to desktop and local publishing using WSUS for third-party updates (binaries and updates not hosted on Microsoft Update). It allows IT to manage whether Automatic Updates accepts updates signed by entities other than Microsoft when the update is found on an intranet Microsoft update service location.
 
 <a href="" id="update-allowupdateservice"></a>**Update/AllowUpdateService**
 > [!NOTE]
@@ -575,7 +575,7 @@ The following list shows the supported values:
 > If you previously used the **Update/PhoneUpdateRestrictions** policy in previous versions of Windows, it has been deprecated. Please use this policy instead.
 
 
-Allows the IT admin to restrict the updates that are installed on a device to only the updates on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update for the end-user. EULAs are approved once an update is approved.
+Allows the IT admin to restrict the updates that are installed on a device to only the updates on an update approval list. It enables IT to accept the End User License Agreement (EULA) associated with the approved update for the end user. EULAs are approved once an update is approved.
 
 Supported operations are Get and Replace.
 
@@ -748,7 +748,7 @@ The root node.
 Supported operation is Get.
 
 <a href="" id="approvedupdates"></a>**ApprovedUpdates**
-Node for update approvals and EULA acceptance for the end-user.
+Node for update approvals and EULA acceptance for the end user.
 
 > [!NOTE]
 > When the RequireUpdateApproval policy is set, the MDM uses the ApprovedUpdates list to pass the approved GUIDs. These GUIDs should be a subset of the InstallableUpdates list.
