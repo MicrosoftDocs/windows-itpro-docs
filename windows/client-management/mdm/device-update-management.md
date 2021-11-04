@@ -955,9 +955,9 @@ Here's the list of older policies that are still supported for backward compatib
 
 The following screenshots of the administrator console show the list of update titles, approval status, and additional metadata fields.
 
-:::image type="content" alt-text="mdm update management screenshot." source="images/deviceupdatescreenshot1.png" lightbox="images/deviceupdatescreenshot1.png":::
+![mdm update management screenshot.](images/deviceupdatescreenshot1.png)
 
-:::image type="content" alt-text="mdm update management metadata screenshot." source="images/deviceupdatescreenshot2.png" lightbox="images/deviceupdatescreenshot2.png":::
+![mdm update management metadata screenshot.](images/deviceupdatescreenshot2.png)
 
 
 ## <a href="" id="syncmlexample"></a>SyncML example
