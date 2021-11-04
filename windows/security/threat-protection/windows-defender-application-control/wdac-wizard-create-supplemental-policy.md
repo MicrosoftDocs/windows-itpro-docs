@@ -16,7 +16,7 @@ ms.author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ms.date: 10/14/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Creating a new Supplemental Policy with the Wizard

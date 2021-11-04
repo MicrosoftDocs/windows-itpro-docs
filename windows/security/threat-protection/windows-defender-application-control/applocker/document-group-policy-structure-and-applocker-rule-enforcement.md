@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.pagetype: security
 ms.date: 09/21/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Document the Group Policy structure and AppLocker rule enforcement

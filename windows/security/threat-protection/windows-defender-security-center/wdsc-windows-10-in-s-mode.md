@@ -13,7 +13,7 @@ ms.author: dansimp
 ms.date: 04/30/2018
 ms.reviewer: 
 manager: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Manage Windows Security in Windows 10 in S mode

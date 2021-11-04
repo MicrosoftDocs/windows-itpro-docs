@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/03/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Create a WDAC policy for fixed-workload devices using a reference computer

@@ -11,7 +11,7 @@ ms.topic: article
 ms.localizationpriority: 
 ms.date: 
 ms.reviewer: 
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Sandbox architecture
