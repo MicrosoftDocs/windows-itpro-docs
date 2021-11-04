@@ -1011,17 +1011,16 @@ Set auto update to notify and defer.
 
 The following diagram and screenshots show the process flow of the device update process using Windows Server Update Services and Microsoft Update Catalog.
 
-:::image type="content" alt-text="mdm device update management screenshot3." source="images/deviceupdatescreenshot3.png" lightbox="images/deviceupdatescreenshot3.png":::
+![mdm device update management screenshot3.](images/deviceupdatescreenshot3.png)
 
-:::image type="content" alt-text="mdm device update management screenshot4" source="images/deviceupdatescreenshot4.png" lightbox="images/deviceupdatescreenshot4.png":::
+![mdm device update management screenshot4](images/deviceupdatescreenshot4.png)
 
-:::image type="content" alt-text="mdm device update management screenshot5" source="images/deviceupdatescreenshot5.png" lightbox="images/deviceupdatescreenshot5.png":::
+![mdm device update management screenshot5](images/deviceupdatescreenshot5.png)
 
-:::image type="content" alt-text="mdm device update management screenshot6" source="images/deviceupdatescreenshot6.png" lightbox="images/deviceupdatescreenshot6.png":::
+![mdm device update management screenshot6](images/deviceupdatescreenshot6.png)
 
-:::image type="content" alt-text="mdm device update management screenshot7" source="images/deviceupdatescreenshot7.png" lightbox="images/deviceupdatescreenshot7.png":::
+![mdm device update management screenshot7](images/deviceupdatescreenshot7.png)
 
-:::image type="content" alt-text="mdm device update management screenshot8" source="images/deviceupdatescreenshot8.png" lightbox="images/deviceupdatescreenshot8.png":::
+![mdm device update management screenshot8](images/deviceupdatescreenshot8.png)
 
-:::image type="content" alt-text="mdm device update management screenshot9" source="images/deviceupdatescreenshot9.png" lightbox="images/deviceupdatescreenshot9.png":::
-
+![mdm device update management screenshot9](images/deviceupdatescreenshot9.png)
