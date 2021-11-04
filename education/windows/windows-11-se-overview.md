@@ -20,7 +20,7 @@ ms.topic: article
 - Windows 11 SE
 - Microsoft Intune for Education
 
-Windows 11 SE is a new edition of Windows that's designed for education. It runs on web-first devices that use essential education apps, and comes with Microsoft Office 365 preinstalled.
+Windows 11 SE is a new edition of Windows that's designed for education. It runs on web-first devices that use essential education apps. Microsoft Office 365 is preinstalled.
 
 For education customers seeking cost-effective devices, Microsoft Windows 11 SE is a great choice. Windows 11 SE includes the following benefits:
 
@@ -35,7 +35,7 @@ Windows 11 SE is only available preinstalled on devices from OEMs. The OEM insta
 
 ## Available apps
 
-Windows 11 SE comes with some preinstalled apps. The following apps can also run on Windows 11 SE, and are deployed using the [Intune for Education portal](https://intuneeducation.portal.azure.com). For more information on adding and deploying education apps, see [Add apps in Intune for Education](/intune-education/add-desktop-apps-edu).
+Windows 11 SE comes with some preinstalled apps. The following apps can also run on Windows 11 SE, and are deployed using the [Intune for Education portal](https://intuneeducation.portal.azure.com). For more information, see [Manage devices running Windows 11 SE](/intune-education/windows-11-se-overview).
 
 ---
 | Application | Min version | Vendor |
@@ -59,12 +59,12 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 
 ---
 
-### Allowed apps
+### Enabled apps
 
-| App type | Allowed |
+| App type | Enabled |
 | --- | --- |
 | Apps that run in a browser | ✔️ <br/><br/> Apps that run in a browser, like Progressive Web Apps (PWA) and Web apps, can run on Windows 11 SE without any changes or limitations. |
-| Apps that require installation | ❌<br/><br/> Apps that require an installation, including Microsoft Store apps and Win32 apps can't be installed. If students try to install these apps, the installation fails. <br/><br/>If there are specific installation-type of apps you want to allow, then work with Microsoft to get them added. For more information, see [Add your own apps](#add-your-own-apps) (in this article). |
+| Apps that require installation | ❌ Apps that require an installation, including Microsoft Store apps and Win32 apps can't be installed. If students try to install these apps, the installation fails. <br/><br/>✔️ If there are specific installation-type of apps you want to enable, then work with Microsoft to get them enabled. For more information, see [Add your own apps](#add-your-own-apps) (in this article). |
 
 ### Add your own apps
 
@@ -77,7 +77,7 @@ Microsoft reviews every app request to make sure each app meets the following re
 - Apps must be in one of the following app categories:​
   - Content Filtering apps​
   - Test Taking solutions​
-  - Accessibility tools
+  - Assistive technologies
   - Classroom communication apps​
   - Essential diagnostics, management, and supportability apps
 
@@ -94,20 +94,18 @@ Microsoft reviews every app request to make sure each app meets the following re
 
 If the app meets the requirements, Microsoft works with the Independent Software Vendor (ISV) to test the app, and make sure the app works as expected on Windows 11 SE.
 
-When the app is ready, Microsoft will update you. Then, you add the app to the [Intune for Education portal](https://intuneeducation.portal.azure.com), and [assign](/intune-education/assign-apps) it to your Windows 11 SE devices. For more information on adding and deploying education apps, see [Add apps in Intune for Education](/intune-education/add-desktop-apps-edu).
+When the app is ready, Microsoft will update you. Then, you add the app to the [Intune for Education portal](https://intuneeducation.portal.azure.com), and [assign](/intune-education/assign-apps) it to your Windows 11 SE devices.
+
+For more information on Intune requirements for adding education apps, see [Manage devices running Windows 11 SE](/intune-education/windows-11-se-overview).
 
 ### 0x87D300D9 error with an app
 
 When you deploy an app using Intune for Education, you may get a `0x87D300D9` error code with a `Failed` state in the [Intune for Education portal](https://intuneeducation.portal.azure.com). If you have an app that fails with this error, then:
 
 - Make sure the app is on the [available apps list](#available-apps) (in this article). Or, make sure your app is [approved for Windows 11 SE](#add-your-own-apps) (in this article).
-- If the app is approved, then it's possible the app is packaged wrong. For more information, see [Add your own apps](#add-your-own-apps) (in this article) and [Add apps in Intune for Education](/intune-education/add-desktop-apps-edu).
+- If the app is approved, then it's possible the app is packaged wrong. For more information, see [Add your own apps](#add-your-own-apps) (in this article) and [Manage devices running Windows 11 SE](/intune-education/windows-11-se-overview).
 - If the app isn't approved, then it won't run on Windows 11 SE. To get apps approved, see [Add your own apps](#add-your-own-apps) (in this article). Or, use an app that runs in a web browser, such as a web app or PWA.
 
-## Next steps
+## Related articles
 
-Insert article links to other Windows 11 SE articles:
-
-- How-to deploy app using Intune/Endpoint Manager --> CAT PM will write
-- [Use Intune for Education to manage devices running Windows 11 SE](/intune-education/windows-11-se-overview) --> Liz and Laura are writing
-- Support.com article --> Iris is writing?
+- [Use Intune for Education to manage devices running Windows 11 SE](/intune-education/windows-11-se-overview)
