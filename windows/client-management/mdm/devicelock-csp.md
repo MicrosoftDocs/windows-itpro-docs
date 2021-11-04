@@ -69,7 +69,8 @@ Optional. The node that contains the configured management server's ProviderID. 
 -   **Delete** - Delete all policies set by this account. This command could be used in enterprise unenrollment for removing policy values set by the enterprise management server.
 -   **Get** - Return all policies set by the management server.
 
-> **Note**   The value cannot be changed after it's added. The **Replace** command isn't supported.
+> [!NOTE]
+> The value cannot be changed after it's added. The **Replace** command isn't supported.
 
  
 
