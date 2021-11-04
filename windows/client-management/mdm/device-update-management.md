@@ -56,7 +56,7 @@ The Microsoft Update Catalog contains many updates that aren't needed by MDM-man
 
 This section describes this setup. The following diagram shows the server-server sync protocol process.
 
-![mdm server-server sync.](images/deviceupdateprocess2.png)
+:::image type="content" alt-text="mdm server-server sync." source="images/deviceupdateprocess2.png" lightbox="images/deviceupdateprocess2.png":::
 
 MSDN provides much information about the Server-Server sync protocol. In particular:
 
