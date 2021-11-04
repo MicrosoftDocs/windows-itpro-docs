@@ -750,13 +750,15 @@ Supported operation is Get.
 <a href="" id="approvedupdates"></a>**ApprovedUpdates**
 Node for update approvals and EULA acceptance for the end-user.
 
-> **Note** When the RequireUpdateApproval policy is set, the MDM uses the ApprovedUpdates list to pass the approved GUIDs. These GUIDs should be a subset of the InstallableUpdates list.
+> [!NOTE]
+> When the RequireUpdateApproval policy is set, the MDM uses the ApprovedUpdates list to pass the approved GUIDs. These GUIDs should be a subset of the InstallableUpdates list.
 
 The MDM must first present the EULA to IT and have them accept it before the update is approved. Failure to present the EULA is a breach of legal or contractual obligations. The EULAs can be obtained from the update metadata and have their own EULA ID. It's possible for multiple updates to share the same EULA. It's only necessary to approve the EULA once per EULA ID, not one per update.
 
 The update approval list enables IT to approve individual updates and update classifications. Auto-approval by update classifications allows IT to automatically approve Definition Updates (updates to the virus and spyware definitions on devices) and Security Updates (product-specific updates for security-related vulnerability). The update approval list doesn't support the uninstall of updates by revoking approval of already installed updates. Updates are approved based on UpdateID, and an UpdateID only needs to be approved once. An update UpdateID and RevisionNumber are part of the UpdateIdentity type. An UpdateID can be associated to several UpdateIdentity GUIDs because of changes to the RevisionNumber setting. MDM services must synchronize the UpdateIdentity of an UpdateID based on the latest RevisionNumber to get the latest metadata for an update. However, update approval is based on UpdateID.
 
-> **Note**  For the Windows 10 build, the client may need to reboot after additional updates are added.
+> [!NOTE]
+> For the Windows 10 build, the client may need to reboot after additional updates are added.
 
  
 
@@ -1009,5 +1011,17 @@ Set auto update to notify and defer.
 
 The following diagram and screenshots show the process flow of the device update process using Windows Server Update Services and Microsoft Update Catalog.
 
-![mdm device update management screenshot3.](images/deviceupdatescreenshot3.png)![mdm device update management screenshot4](images/deviceupdatescreenshot4.png)![mdm device update management screenshot5](images/deviceupdatescreenshot5.png)![mdm device update management screenshot6](images/deviceupdatescreenshot6.png)![mdm device update management screenshot7](images/deviceupdatescreenshot7.png)![mdm device update management screenshot8](images/deviceupdatescreenshot8.png)![mdm device update management screenshot9](images/deviceupdatescreenshot9.png)
+:::image type="content" alt-text="mdm device update management screenshot3." source="images/deviceupdatescreenshot3.png" lightbox="images/deviceupdatescreenshot3.png":::
+
+:::image type="content" alt-text="mdm device update management screenshot4" source="images/deviceupdatescreenshot4.png" lightbox="images/deviceupdatescreenshot4.png":::
+
+:::image type="content" alt-text="mdm device update management screenshot5" source="images/deviceupdatescreenshot5.png" lightbox="images/deviceupdatescreenshot5.png":::
+
+:::image type="content" alt-text="mdm device update management screenshot6" source="images/deviceupdatescreenshot6.png" lightbox="images/deviceupdatescreenshot6.png":::
+
+:::image type="content" alt-text="mdm device update management screenshot7" source="images/deviceupdatescreenshot7.png" lightbox="images/deviceupdatescreenshot7.png":::
+
+:::image type="content" alt-text="mdm device update management screenshot8" source="images/deviceupdatescreenshot8.png" lightbox="images/deviceupdatescreenshot8.png":::
+
+:::image type="content" alt-text="mdm device update management screenshot9" source="images/deviceupdatescreenshot9.png" lightbox="images/deviceupdatescreenshot9.png":::
 
