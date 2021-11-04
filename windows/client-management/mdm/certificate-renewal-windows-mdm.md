@@ -41,7 +41,7 @@ During the automatic certificate renew process, the device will deny HTTP redire
 
 The following example shows the details of an automatic renewal request.
 
-``` xml
+```xml
 <s:Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" 
    xmlns:a="http://www.w3.org/2005/08/addressing" xmlns:u=
    "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
@@ -121,7 +121,7 @@ After validation is completed, the web service retrieves the PKCS\#10 content fr
 
 The following example shows the details of a certificate renewal response.
 
-``` xml
+```xml
 <wap-provisioningdoc version="1.1">
    <characteristic type="CertificateStore">
 <!-- Root certificate provision is only needed here if it is not in the device already -->      <characteristic type="Root">
@@ -147,7 +147,7 @@ The following example shows the details of a certificate renewal response.
 ```
 
 > [!Note]
-The client receives a new certificate, instead of renewing the initial certificate. The administrator controls which certificate template the client should use. The templates may be different at renewal time than the initial enrollment time.
+> The client receives a new certificate, instead of renewing the initial certificate. The administrator controls which certificate template the client should use. The templates may be different at renewal time than the initial enrollment time.
 
 ## Configuration service providers supported during MDM enrollment and certificate renewal
 
