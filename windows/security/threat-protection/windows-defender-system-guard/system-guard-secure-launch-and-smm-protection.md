@@ -25,7 +25,7 @@ You can enable System Guard Secure Launch by using any of these options:
 
 - [Mobile Device Management (MDM)](#mobile-device-management)
 - [Group Policy](#group-policy)
-- [Windows Security app](#windows-security-center)
+- [Windows Security app](#windows-security-app)
 - [Registry](#registry)
 
 ### Mobile Device Management
@@ -34,7 +34,7 @@ System Guard Secure Launch can be configured for Mobile Device Management (MDM) 
 
 ### Group Policy
 
-1. Click **Start** > type and then click **Edit group policy**. 
+1. Click **Start** > type and then click **Edit group policy**.
 
 2. Click **Computer Configuration** > **Administrative Templates** > **System** > **Device Guard** > **Turn On Virtualization Based Security** > **Secure Launch Configuration**.
 
@@ -54,7 +54,7 @@ Click **Start** > **Settings** > **Update & Security** > **Windows Security** > 
 
 3. Right-click **Scenarios** > **New** > **Key** and name the new key **SystemGuard**.
 
-4. Right-click **SystemGuard** > **New** > **DWORD (32-bit) Value** and name the new DWORD **Enabled**. 
+4. Right-click **SystemGuard** > **New** > **DWORD (32-bit) Value** and name the new DWORD **Enabled**.
 
 5. Double-click **Enabled**, change the value to **1**, and click **OK**.
 
