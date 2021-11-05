@@ -1,6 +1,6 @@
 ---
 title: How a Windows Defender System Guard helps protect Windows 10
-description: Windows Defender System Guard re-organizes the existing Windows 10 system integrity features under one roof. Learn how it works.
+description: Windows Defender System Guard reorganizes the existing Windows 10 system integrity features under one roof. Learn how it works.
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.reviewer: 
 manager: dansimp
@@ -21,7 +21,7 @@ ms.technology: windows-sec
 
 To protect critical resources such as the Windows authentication stack, single sign-on tokens, the Windows Hello biometric stack, and the Virtual Trusted Platform Module, a system's firmware and hardware must be trustworthy.
 
-Windows Defender System Guard re-organizes the existing Windows 10 system integrity features under one roof and sets up the next set of investments in Windows security. It's designed to make these security guarantees:
+Windows Defender System Guard reorganizes the existing Windows 10 system integrity features under one roof and sets up the next set of investments in Windows security. It's designed to make these security guarantees:
 
 - Protect and maintain the integrity of the system as it starts up
 - Validate that system integrity has truly been maintained through local and remote attestation
@@ -38,7 +38,7 @@ This hardware-based root of trust comes from the device’s Secure Boot feature,
 This technique of measuring the static early boot UEFI components is called the Static Root of Trust for Measurement (SRTM). 
 
 As there are thousands of PC vendors that produce many models with different UEFI BIOS versions, there becomes an incredibly large number of SRTM measurements upon bootup. 
-Two techniques exist to establish trust here—either maintain a list of known 'bad' SRTM measurements (also known as a block list), or a list of known 'good' SRTM measurements (also known as an allow list). 
+Two techniques exist to establish trust here—either maintain a list of known 'bad' SRTM measurements (also known as a blocklist), or a list of known 'good' SRTM measurements (also known as an allowlist). 
 Each option has a drawback:
 
 - A list of known 'bad' SRTM measurements allows a hacker to change just 1 bit in a component to create an entirely new SRTM hash that needs to be listed. This means that the SRTM flow is inherently brittle - a minor change can invalidate the entire chain of trust.
