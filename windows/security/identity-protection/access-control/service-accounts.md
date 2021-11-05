@@ -26,7 +26,6 @@ This topic for the IT professional explains group and standalone managed service
 
 ## Overview
 
-
 A service account is a user account that is created explicitly to provide a security context for services running on Windows Server operating systems. The security context determines the service's ability to access local and network resources. The Windows operating systems rely on services to run various features. These services can be configured through the applications, the Services snap-in, or Task Manager, or by using Windows PowerShell.
 
 This topic contains information about the following types of service accounts:
@@ -49,7 +48,7 @@ In addition to the enhanced security that is provided by having individual accou
 
 -   Unlike domain accounts in which administrators must reset manually passwords, the network passwords for these accounts are automatically reset.
 
--   You do not have to complete complex SPN management tasks to use managed service accounts.
+-   You don't have to complete complex SPN management tasks to use managed service accounts.
 
 -   Administrative tasks for managed service accounts can be delegated to non-administrators.
 
@@ -69,9 +68,9 @@ The Microsoft Key Distribution Service (kdssvc.dll) provides the mechanism to se
 
 Group managed service accounts provide a single identity solution for services running on a server farm, or on systems that use Network Load Balancing. By providing a group managed service account solution, services can be configured for the group managed service account principal, and the password management is handled by the operating system.
 
-By using a group managed service account, services or service administrators do not need to manage password synchronization between service instances. The group managed service account supports hosts that are kept offline for an extended time period and the management of member hosts for all instances of a service. This means that you can deploy a server farm that supports a single identity to which existing client computers can authenticate without knowing the instance of the service to which they are connecting.
+By using a group managed service account, services or service administrators don't need to manage password synchronization between service instances. The group managed service account supports hosts that are kept offline for an extended time period and the management of member hosts for all instances of a service. This means that you can deploy a server farm that supports a single identity to which existing client computers can authenticate without knowing the instance of the service to which they are connecting.
 
-Failover clusters do not support group managed service account s. However, services that run on top of the Cluster service can use a group managed service account or a standalone managed service account if they are a Windows service, an App pool, a scheduled task, or if they natively support group managed service account or standalone managed service accounts.
+Failover clusters don't support group managed service account s. However, services that run on top of the Cluster service can use a group managed service account or a standalone managed service account if they are a Windows service, an App pool, a scheduled task, or if they natively support group managed service account or standalone managed service accounts.
 
 ### <a href="" id="bkmk-soft"></a>Software requirements
 

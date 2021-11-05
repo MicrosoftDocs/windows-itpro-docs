@@ -40,7 +40,7 @@ The criteria is designed to ensure that Microsoft can work with the following gr
 - Anti-malware testing organizations
 - Other organizations involved in the fight against cybercrime
 
-Members will receive information to facilitate effective malware detection, deterrence, and eradication. This information includes technical information on malware as well as metadata on malicious activity. Information shared through VIA is governed by the VIA membership agreement and a Microsoft non-disclosure agreement, where applicable.
+Members will receive information to facilitate effective malware detection, deterrence, and eradication. This information includes technical information on malware and metadata on malicious activity. Information shared through VIA is governed by the VIA membership agreement and a Microsoft non-disclosure agreement, where applicable.
 
 VIA has an open enrollment for potential members.
 
@@ -54,7 +54,7 @@ To be eligible for VIA your organization must:
 
     - Your organization develops anti-malware technology that can run on Windows and your organization’s product is commercially available.
     - Your organization provides security services to Microsoft customers or for Microsoft products.
-    - Your organization publishes anti-malware testing reports on a regular basis.
+    - Your organization publishes anti-malware testing reports regularly.
     - Your organization has a research or response team dedicated to fighting malware to protect your organization, your customers, or the general public.
 
 3. Be willing to sign and adhere to the VIA membership agreement.
