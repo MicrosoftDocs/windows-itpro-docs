@@ -24,10 +24,7 @@ This section describes the settings that you can configure in [provisioning pack
 | [Accounts](wcd-accounts.md) | ✔️ | ✔️ | ✔️ | ✔️ |
 | [ADMXIngestion](wcd-admxingestion.md) | ✔️ | | | |
 | [AssignedAccess](wcd-assignedaccess.md) | ✔️ | | ✔️ | |
-| [AutomaticTime](wcd-automatictime.md) | | | | |
 | [Browser](wcd-browser.md) | ✔️ | ✔️ |  |  |
-| [CallAndMessagingEnhancement](wcd-callandmessagingenhancement.md) | | | | |
-| [Calling](wcd-calling.md) | | | | |
 | [CellCore](wcd-cellcore.md) | ✔️ | | | |
 | [Cellular](wcd-cellular.md) | ✔️ | |  |  |
 | [Certificates](wcd-certificates.md) | ✔️ | ✔️ | ✔️ | ✔️ |
@@ -38,7 +35,6 @@ This section describes the settings that you can configure in [provisioning pack
 | [DesktopBackgroundAndColors](wcd-desktopbackgroundandcolors.md) | ✔️ | |  |  |
 | [DeveloperSetup](wcd-developersetup.md) |  |  | ✔️ |  |
 | [DeviceFormFactor](wcd-deviceformfactor.md) |  ✔️ | ✔️ |  |  |
-| [DeviceInfo](wcd-deviceinfo.md) | | | | |
 | [DeviceManagement](wcd-devicemanagement.md) |  ✔️ | ✔️ | ✔️ |  |
 | [DeviceUpdateCenter](wcd-deviceupdatecenter.md) | ✔️ |  |  |  |
 | [DMClient](wcd-dmclient.md) | ✔️ | ✔️ |  | ✔️ |
@@ -47,27 +43,18 @@ This section describes the settings that you can configure in [provisioning pack
 | [FirewallConfiguration](wcd-firewallconfiguration.md) |  |  |  | ✔️ |
 | [FirstExperience](wcd-firstexperience.md) |  |  | ✔️ |  |
 | [Folders](wcd-folders.md) |✔️ | ✔️ |  |  |
-| [InitialSetup](wcd-initialsetup.md) |  | |  |  |
-| [InternetExplorer](wcd-internetexplorer.md) |  |  |  |  |
 | [KioskBrowser](wcd-kioskbrowser.md) |  |  |  | ✔️ |
 | [Licensing](wcd-licensing.md) | ✔️ |  |  |  |
 | [Location](wcd-location.md) |  |  |  | ✔️ |
 | [Maps](wcd-maps.md) |✔️ | ✔️ |  |  |
-| [Messaging](wcd-messaging.md) |  |  |  |  |
-| [ModemConfigurations](wcd-modemconfigurations.md) |  |  |  |  |
-| [Multivariant](wcd-multivariant.md) |  |  |  |  |
 | [NetworkProxy](wcd-networkproxy.md) |  | ✔️ |  |  |
 | [NetworkQOSPolicy](wcd-networkqospolicy.md) |  | ✔️ |  |  |
-| [NFC](wcd-nfc.md) |  |  |  |  |
 | [OOBE](wcd-oobe.md) | ✔️ |  |  |  |
-| [OtherAssets](wcd-otherassets.md) |  |  |  |  |
 | [Personalization](wcd-personalization.md) | ✔️ |  |  |  | 
 | [Policies](wcd-policies.md) | ✔️ | ✔️ | ✔️ | ✔️ |
 | [Privacy](wcd-folders.md) |✔️ | ✔️ |  | ✔️ |
 | [ProvisioningCommands](wcd-provisioningcommands.md) | ✔️ |  |  |  |
-| [RcsPresence](wcd-rcspresence.md) |  |  |  |  |
 | [SharedPC](wcd-sharedpc.md) | ✔️ |  |  |  |
-| [Shell](wcd-shell.md) |  |  |  |  |
 | [SMISettings](wcd-smisettings.md) | ✔️ |  |  |  |
 | [Start](wcd-start.md) | ✔️ |  |  |  |
 | [StartupApp](wcd-startupapp.md) |  |  |  | ✔️ |
@@ -76,7 +63,6 @@ This section describes the settings that you can configure in [provisioning pack
 | [SurfaceHubManagement](wcd-surfacehubmanagement.md) |  |  ✔️  |  |  |
 | [TabletMode](wcd-tabletmode.md) |✔️ | ✔️ |  |  |
 | [TakeATest](wcd-takeatest.md) | ✔️ |  |  |  |
-| [TextInput](wcd-textinput.md) |  |  |  |  |
 | [Time](wcd-time.md) | ✔️ |  |  |  |
 | [UnifiedWriteFilter](wcd-unifiedwritefilter.md) | ✔️ |  |  | ✔️ |
 | [UniversalAppInstall](wcd-universalappinstall.md) | ✔️ | ✔️ |  | ✔️ |
