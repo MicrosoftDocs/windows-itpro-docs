@@ -60,7 +60,7 @@ Click **Start** > **Settings** > **Update & Security** > **Windows Security** > 
 
     ![Secure Launch Registry.](images/secure-launch-registry.png)
 
-## How to verify System Guard Secure Launch is configured and running
+## How to verify System Guard Secure Launch is configured and running?
 
 To verify that Secure Launch is running, use System Information (MSInfo32). Click **Start**, search for **System Information**, and look under **Virtualization-based Security Services Running** and **Virtualization-based Security Services Configured**.
 
