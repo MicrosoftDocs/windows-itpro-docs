@@ -72,7 +72,7 @@ A device health attestation module can communicate measured boot data that is pr
 
 Remote health attestation service performs a series of checks on the measurements. It validates security related data points, including boot state (Secure Boot, Debug Mode, and so on), and the state of components that manage security (BitLocker, Device Guard, and so on). It then conveys the health state of the device by sending a health encrypted blob back to the device.
 
-An MDM solution typically applies configuration policies and deploys software to devices. MDM defines the security baseline and knows the level of compliance of the device with regular checks to see what software is installed and what configuration is enforced, as well as determining the health status of the device.
+An MDM solution typically applies configuration policies and deploys software to devices. MDM defines the security baseline and knows the level of compliance of the device with regular checks to see what software is installed and what configuration is enforced, and determining the health status of the device.
 
 An MDM solution asks the device to send device health information and forward the health encrypted blob to the remote health attestation service. The remote health attestation service verifies device health data, checks that MDM is communicating to the same device, and then issues a device health report back to the MDM solution.
 
@@ -86,7 +86,7 @@ Depending on the requirements and the sensitivity of the managed asset, device h
 
 In Windows 10, there are three pillars of investments:
 
--   **Secure identities.** Microsoft is part of the FIDO Alliance which aims to provide an interoperable method of secure authentication by moving away from the use of passwords for authentication, both on the local system as well as for services like on-premises resources and cloud resources.
+-   **Secure identities.** Microsoft is part of the FIDO alliance that aims to provide an interoperable method of secure authentication by moving away from the use of passwords for authentication, both on the local system and for services like on-premises resources and cloud resources.
 -   **Information protection.** Microsoft is making investments to allow organizations to have better control over who has access to important data and what they can do with that data. With Windows 10, organizations can take advantage of policies that specify which applications are considered to be corporate applications and can be trusted to access secure data.
 -   **Threat resistance.** Microsoft is helping organizations to better secure enterprise assets against the threats of malware and attacks by using security defenses relying on hardware.
 
@@ -182,7 +182,7 @@ Windows 10 supports features to help prevent sophisticated low-level malware lik
     The ELAM driver is a small driver with a small policy database that has a very narrow scope, focused on drivers that are loaded early at system launch. The policy database is stored in a registry hive that is also measured to the TPM, to record the operational parameters of the ELAM driver. An ELAM driver must be signed by Microsoft and the associated certificate must contain the complementary EKU (1.3.6.1.4.1.311.61.4.1).
 -   **Virtualization-based security (Hyper-V + Secure Kernel).** Virtualization-based security is a completely new enforced security boundary that allows you to protect critical parts of Windows 10.
 
-    Virtualization-based security isolates sensitive code like Kernel Mode Code Integrity or sensitive corporate domain credentials from the rest of the Windows operating system. For more information, refer to the [Virtualization-based security](#virtual) section.
+    Virtualization-based security isolates sensitive code like Kernel Mode Code Integrity or sensitive corporate domain credentials from the rest of the Windows operating system. For more information, see [Virtualization-based security](#virtual) section.
 
 -   **Hypervisor-protected Code Integrity (HVCI).** Hypervisor-protected Code Integrity is a feature of Device Guard that ensures only drivers, executables, and DLLs that comply with the Device Guard Code Integrity policy are allowed to run.
 
@@ -208,7 +208,7 @@ Windows 10 supports features to help prevent sophisticated low-level malware lik
 
     For more information, see [Secured Boot and Measured Boot: Hardening Early Boot Components Against Malware](/previous-versions/windows/hardware/design/dn653311(v=vs.85)).
 
-    During each subsequent boot, the same components are measured, which allows comparison of the measurements against an expected baseline. For additional security, the values measured by the TPM can be signed and transmitted to a remote server, which can then perform the comparison. This process, called *remote device health attestation*, allows the server to verify health status of the Windows device.
+    During each subsequent boot, the same components are measured, which allows comparison of the measurements against an expected baseline. For more security, the values measured by the TPM can be signed and transmitted to a remote server, which can then perform the comparison. This process, called *remote device health attestation*, allows the server to verify health status of the Windows device.
 
     Although Secure Boot is a proactive form of protection, health attestation is a reactive form of boot protection. Health attestation ships disabled in Windows and is enabled by an antimalware or an MDM vendor. Unlike Secure Boot, health attestation will not stop the boot process and enter remediation when a measurement does not work. But with conditional access control, health attestation will help to prevent access to high-value assets.
 
@@ -255,14 +255,14 @@ Hyper-V Code Integrity is a feature that validates the integrity of a driver or 
 > [!NOTE]
 > Independently of activation of Device Guard Policy, [Windows 10 by default raises the bar for what runs in the kernel](https://go.microsoft.com/fwlink/p/?LinkId=691613). Windows 10 drivers must be signed by Microsoft, and more specifically, by the WHQL (Windows Hardware Quality Labs) portal. Additionally, starting in October 2015, the WHQL portal will only accept driver submissions, including both kernel and user mode driver submissions, that have a valid Extended Validation (“EV”) Code Signing Certificate.
 
-With Device Guard in Windows 10, organizations are now able to define their own Code Integrity policy for use on x64 systems running Windows 10 Enterprise. Organizations have the ability to configure the policy that determines what is trusted to run. These include drivers and system files, as well as traditional desktop applications and scripts. The system is then locked down to only run applications that the organization trusts.
+With Device Guard in Windows 10, organizations are now able to define their own Code Integrity policy for use on x64 systems running Windows 10 Enterprise. Organizations have the ability to configure the policy that determines what is trusted to run. These include drivers and system files, and traditional desktop applications and scripts. The system is then locked down to only run applications that the organization trusts.
 
 Device Guard is a built-in feature of Windows 10 Enterprise that prevents the execution of unwanted code and applications. Device Guard can be configured using two rule actions - allow and deny:
 
 -   **Allow** limits execution of applications to an allowed list of code or trusted publisher and blocks everything else.
 -   **Deny** completes the allow trusted publisher approach by blocking the execution of a specific application.
 
-At the time of this writing, and according to Microsoft’s latest research, more than 90 percent of malware is unsigned completely. So implementing a basic Device Guard policy can simply and effectively help block the vast majority of malware. In fact, Device Guard has the potential to go further, and can also help block signed malware.
+At the time of this writing, and according to Microsoft’s latest research, more than 90 percent of malware is unsigned completely. So implementing a basic Device Guard policy can simply and effectively help block malware. In fact, Device Guard has the potential to go further, and can also help block signed malware.
 
 Device Guard needs to be planned and configured to be truly effective. It is not just a protection that is enabled or disabled. Device Guard is a combination of hardware security features and software security features that, when configured together, can lock down a computer to help ensure the most secure and resistant system possible.
 
@@ -278,16 +278,16 @@ For more information on how to deploy Device Guard in an enterprise, see the [De
 
 As previously described, Device Guard is a powerful way to lock down systems. Device Guard is not intended to be used broadly and it may not always be applicable, but there are some high-interest scenarios.
 
-Device Guard is useful and applicable on fixed workloads systems like cash registers, kiosk machines, Secure Admin Workstations (SAWs), or well managed desktops. Device Guard is highly relevant on systems that have very well-defined software that are expected to run and don’t change too frequently. 
+Device Guard is useful and applicable on fixed workloads systems like cash registers, kiosk machines, Secure Admin Workstations (SAWs), or well managed desktops. Device Guard is highly relevant on systems that have a well-defined software that are expected to run and don’t change too frequently. 
 It could also help protect Information Workers (IWs) beyond just SAWs, as long as what they need to run is known and the set of applications is not going to change on a daily basis.
 
 SAWs are computers that are built to help significantly reduce the risk of compromise from malware, phishing attacks, bogus websites, and PtH attacks, among other security risks. Although SAWs can’t be considered a “silver bullet” security solution to these attacks, these types of clients are helpful as part of a layered, defense-in-depth approach to security.
 
 To protect high-value assets, SAWs are used to make secure connections to those assets.
 
-Similarly, on corporate fully-managed workstations, where applications are installed by using a distribution tool like Microsoft Endpoint Configuration Manager, Intune, or any third-party device management, then Device Guard is very applicable. In that type of scenario, the organization has a good idea of the software that an average user is running.
+Similarly, on corporate fully-managed workstations, where applications are installed by using a distribution tool like Microsoft Endpoint Configuration Manager, Intune, or any third-party device management, then Device Guard is applicable. In that type of scenario, the organization has a good idea of the software that an average user is running.
 
-It could be challenging to use Device Guard on corporate, lightly-managed workstations where the user is typically allowed to install software on their own. When an organization offers great flexibility, it’s quite difficult to run Device Guard in enforcement mode. Nevertheless, Device Guard can be run in Audit mode, and in that case, the event log will contain a record of any binaries that violated the Device Guard policy. When Device Guard is used in Audit mode, organizations can get rich data about drivers and applications that users install and run.
+It could be challenging to use Device Guard on corporate, lightly-managed workstations where the user is typically allowed to install software on their own. When an organization offers great flexibility, it’s difficult to run Device Guard in enforcement mode. Nevertheless, Device Guard can be run in Audit mode, and in that case, the event log will contain a record of any binaries that violated the Device Guard policy. When Device Guard is used in Audit mode, organizations can get rich data about drivers and applications that users install and run.
 
 Before you can benefit from the protection included in Device Guard, Code Integrity policy must be created by using tools provided by Microsoft, but the policy can be deployed with common management tools, like Group Policy. The Code Integrity policy is a binary-encoded XML document that includes configuration settings for both the User and Kernel-modes of Windows 10, along with restrictions on Windows 10 script hosts. Device Guard Code Integrity policy restricts what code can run on a device.
 
@@ -306,13 +306,13 @@ On computers with Device Guard, Microsoft proposes to move from a world where un
 With Windows 10, organizations will make line-of-business (LOB) apps available to members of the organization through the Microsoft Store infrastructure. More specifically, LOB apps will be available in a private store within the public Microsoft Store. Microsoft Store signs and distributes Universal 
 Windows apps and Classic Windows apps. All apps downloaded from the Microsoft Store are signed.
 
-In organizations today, the vast majority of LOB applications are unsigned. Code signing is frequently viewed as a tough problem to solve for a variety of reasons, like the lack of code signing expertise. Even if code signing is a best practice, a lot of internal applications are not signed.
+In organizations today, many LOB applications are unsigned. Code signing is frequently viewed as a tough problem to solve for a variety of reasons, like the lack of code signing expertise. Even if code signing is a best practice, a lot of internal applications are not signed.
 
 Windows 10 includes tools that allow IT pros to take applications that have been already packaged and run them through a process to create additional signatures that can be distributed along with existing applications.
 
 ### Why are antimalware and device management solutions still necessary?
 
-Although allow-list mechanisms are extremely efficient at ensuring that only trusted applications can be run, they cannot prevent the compromise of a trusted (but vulnerable) application by malicious content designed to exploit a known vulnerability. Device Guard doesn’t protect against user mode malicious code run by exploiting vulnerabilities.
+Although allow-list mechanisms are efficient at ensuring that only trusted applications can be run, they cannot prevent the compromise of a trusted (but vulnerable) application by malicious content designed to exploit a known vulnerability. Device Guard doesn’t protect against user mode malicious code run by exploiting vulnerabilities.
 
 Vulnerabilities are weaknesses in software that could allow an attacker to compromise the integrity, availability, or confidentiality of the device. Some of the worst vulnerabilities allow attackers to exploit the compromised device by causing it to run malicious code without the user’s knowledge.
 
@@ -779,7 +779,7 @@ The following process describes how Azure AD conditional access works:
 
 For more information about Azure AD join, see [Azure AD & Windows 10: Better Together for Work or School](https://go.microsoft.com/fwlink/p/?LinkId=691619), a white paper.
 
-Conditional access control is a topic that many organizations and IT pros may not know as well as they should. The different attributes that describe a user, a device, compliance, and context of access are very powerful when used with a conditional access engine. Conditional access control is an essential step that helps organizations secure their environment.
+Conditional access control is a topic that many organizations and IT pros may not know and they should. The different attributes that describe a user, a device, compliance, and context of access are very powerful when used with a conditional access engine. Conditional access control is an essential step that helps organizations secure their environment.
 
 ## Takeaways and summary
 
