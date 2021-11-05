@@ -19,9 +19,9 @@ ms.technology: windows-sec
 
 # Windows Defender System Guard: How a hardware-based root of trust helps protect Windows 10
 
-In order to protect critical resources such as the Windows authentication stack, single sign-on tokens, the Windows Hello biometric stack, and the Virtual Trusted Platform Module, a system's firmware and hardware must be trustworthy.
+To protect critical resources such as the Windows authentication stack, single sign-on tokens, the Windows Hello biometric stack, and the Virtual Trusted Platform Module, a system's firmware and hardware must be trustworthy.
 
-Windows Defender System Guard reorganizes the existing Windows 10 system integrity features under one roof and sets up the next set of investments in Windows security. It's designed to make these security guarantees:
+Windows Defender System Guard re-organizes the existing Windows 10 system integrity features under one roof and sets up the next set of investments in Windows security. It's designed to make these security guarantees:
 
 - Protect and maintain the integrity of the system as it starts up
 - Validate that system integrity has truly been maintained through local and remote attestation
@@ -67,8 +67,7 @@ To defend against this, two techniques are used:
  - Paging protection to prevent inappropriate access to code and data
  - SMM hardware supervision and attestation
 
-Paging protection can be implemented to lock certain code tables to be read-only to prevent tampering. 
-This prevents access to any memory that has not been specifically assigned. 
+Paging protection can be implemented to lock certain code tables to be read-only to prevent tampering. This prevents access to any memory that has not been specifically assigned. 
 
 A hardware-enforced processor feature known as a supervisor SMI handler can monitor the SMM and make sure it does not access any part of the address space that it is not supposed to. 
 
