@@ -53,7 +53,7 @@ Sign-in a certificate authority or management workstations with _Domain Admin_ e
 5. On the **General** tab, type **Domain Controller Authentication (Kerberos)** in Template display name.  Adjust the validity and renewal period to meet your enterprise's needs.
    > [!NOTE]
    > If you use different template names, you'll need to remember and substitute these names in different portions of the lab.
-6. On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **None** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
+6. On the **Subject Name** tab, select the **Build from this Active Directory information** button if it is not already selected.  Select **Fully distinguished name** from the **Subject name format** list.  Select **DNS name** from the **Include this information in alternate subject** list. Clear all other items.
 7. On the **Cryptography** tab, select **Key Storage Provider** from the **Provider Category** list.  Select **RSA** from the **Algorithm name** list.  Type **2048** in the **Minimum key size** text box.  Select **SHA256** from the **Request hash** list.  Click **OK**.
 8. Close the console.
 
