@@ -13,14 +13,13 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 07/27/2017
 ---
 
 # Lockdown features from Windows Embedded 8.1 Industry
 
 **Applies to**
--   Windows 10
 
+- Windows 10
 
 Many of the lockdown features available in Windows Embedded 8.1 Industry have been modified in some form for Windows 10. This table maps Windows Embedded Industry 8.1 features to Windows 10 Enterprise features, along with links to documentation.
 
@@ -90,7 +89,7 @@ Many of the lockdown features available in Windows Embedded 8.1 Industry have be
 <td align="left">MDM and Group Policy</td>
 <td align="left"><p>The USB Filter driver has been replaced by MDM and Group Policy settings for blocking the connection of USB devices.</p>
 <p>Group Policy: <strong>Computer Configuration</strong> &gt; <strong>Administrative Templates</strong> &gt; <strong>System</strong> &gt; <strong>Device Installation</strong> &gt; <strong>Device Installation Restrictions</strong></p>
-<p>MDM policy name may vary depending on your MDM service. In Microsoft Intune, use <strong>Allow removable storage</strong> or <strong>Allow USB connection (Windows 10 Mobile only)</strong>.</p></td>
+<p>MDM policy name may vary depending on your MDM service. In Microsoft Intune, use <strong>Removable storage</strong>.</p></td>
 </tr>
 <tr class="even">
 <td align="left"><p><a href="/previous-versions/windows/embedded/dn449303(v=winembedded.82)" data-raw-source="[Assigned Access](/previous-versions/windows/embedded/dn449303(v=winembedded.82))">Assigned Access</a>: launch a UWP app on sign-in and lock access to system</p></td>

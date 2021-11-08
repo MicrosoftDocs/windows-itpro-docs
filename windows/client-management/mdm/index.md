@@ -1,6 +1,6 @@
 ---
 title: Mobile device management
-description: Windows 10 provides an enterprise-level solution to mobile management, to help IT pros comply with security policies while avoiding compromise of user's privacy
+description: Windows 10 and Windows 11 provides an enterprise-level solution to mobile management, to help IT pros comply with security policies while avoiding compromise of user's privacy
 MS-HAID:
 - 'p\_phDeviceMgmt.provisioning\_and\_device\_management'
 - 'p\_phDeviceMgmt.mobile\_device\_management\_windows\_mdm'
@@ -15,9 +15,9 @@ author: dansimp
 # Mobile device management
 
 
-Windows 10 provides an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users’ privacy on their personal devices. A built-in management component can communicate with the management server.
+Windows 10 and Windows 11 provides an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users’ privacy on their personal devices. A built-in management component can communicate with the management server.
 
-There are two parts to the Windows 10 management component:
+There are two parts to the Windows management component:
 
 -   The enrollment client, which enrolls and configures the device to communicate with the enterprise management server.
 -   The management client, which periodically synchronizes with the management server to check for updates and apply the latest policies set by IT.
@@ -40,6 +40,7 @@ The MDM security baseline includes policies that cover the following areas:
 
 For more details about the MDM policies defined in the MDM security baseline and what Microsoft’s recommended baseline policy values are, see:
 
+- [MDM Security baseline for Windows 11](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/Windows11-MDM-SecurityBaseLine-Document.zip)
 - [MDM Security baseline for Windows 10, version 2004](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/2004-MDM-SecurityBaseLine-Document.zip)
 - [MDM Security baseline for Windows 10, version 1909](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1909-MDM-SecurityBaseLine-Document.zip)
 - [MDM Security baseline for Windows 10, version 1903](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1903-MDM-SecurityBaseLine-Document.zip)

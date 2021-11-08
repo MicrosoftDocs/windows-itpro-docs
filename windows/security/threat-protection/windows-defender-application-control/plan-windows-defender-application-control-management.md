@@ -15,7 +15,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/21/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Plan for Windows Defender Application Control lifecycle policy management

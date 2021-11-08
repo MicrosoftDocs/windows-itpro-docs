@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/21/2017
 ms.reviewer: 
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Use a reference device to create and maintain AppLocker policies

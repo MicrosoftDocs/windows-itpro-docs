@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/04/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Network security: Allow Local System to use computer identity for NTLM

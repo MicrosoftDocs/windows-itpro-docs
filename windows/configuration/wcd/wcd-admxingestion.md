@@ -28,8 +28,8 @@ Starting in Windows 10, version 1703, you can import (*ingest*) select Group Pol
 
 | Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy)  | X |  |  |  |
-| [ConfigOperations](#configoperations)  | X |   |   |   |
+| [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy)  | ✔️ |  |  |  |
+| [ConfigOperations](#configoperations)  | ✔️ |  |   |   |
 
 ## ConfigADMXInstalledPolicy
 
