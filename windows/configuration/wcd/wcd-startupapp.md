@@ -21,6 +21,6 @@ Use StartupApp settings to configure the default app that will run on start for 
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| Default |  |  |  |  |  X |
+| Default |  |  |  |  |  ✔️ |
 
 Enter the [Application User Model ID (AUMID)](/windows-hardware/customize/enterprise/find-the-application-user-model-id-of-an-installed-app) for the default app.

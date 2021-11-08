@@ -19,7 +19,7 @@ Use **Privacy** to configure settings for app activation with voice.
 
 | Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | X  | X | X |  | X |
+| All settings | ✔️  | ✔️ | ✔️ |  | ✔️ |
 
 ## LetAppsActivateWithVoice
 
