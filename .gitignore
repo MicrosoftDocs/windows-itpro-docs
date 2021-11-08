@@ -13,6 +13,7 @@ common/
 .openpublishing.build.mdproj
 .openpublishing.buildcore.ps1
 packages.config
+settings.json
 
 # User-specific files
 .vs/
