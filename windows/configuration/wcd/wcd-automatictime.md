@@ -21,15 +21,15 @@ The OS includes support for Network Time Protocol (NTP), which enables devices t
 
 ## Applies to
 
-| Settings | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [EnableAutomaticTime](#enableautomatictime)  |  | X |  |  |  |
-| [NetworkTimeUpdateThreshold](#networktimeupdatethreshold)  |  | X |  |  |  |
-| [NTPEnabled](#ntpenabled)  |  | X |  |  |  |
-| [NTPRegularSyncInterval](#ntpregularsyncinterval)  |  | X |  |  |  |
-| [NTPRetryInterval](#ntpretryinterval)  |  | X |  |  |  |
-| [NTPServer](#ntpserver)  |  | X |  |  |  |
-| [PreferredSlot](#preferredslot)  |  | X |  |  |  |
+| Settings | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [EnableAutomaticTime](#enableautomatictime)  |  |  |  |  |
+| [NetworkTimeUpdateThreshold](#networktimeupdatethreshold)  |  |  |  |  |
+| [NTPEnabled](#ntpenabled)  |  |  |  |  |
+| [NTPRegularSyncInterval](#ntpregularsyncinterval)  |  |  |  |  |
+| [NTPRetryInterval](#ntpretryinterval)  |  |  |  |  |
+| [NTPServer](#ntpserver)  |  |  |  |  |
+| [PreferredSlot](#preferredslot)  |  |  |  |  |
 
 ## EnableAutomaticTime
 
