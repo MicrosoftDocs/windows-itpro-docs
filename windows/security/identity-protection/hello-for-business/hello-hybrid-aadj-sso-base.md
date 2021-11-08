@@ -335,6 +335,9 @@ Sign-in a workstation with access equivalent to a _domain user_.
 > [!IMPORTANT]
 > For more details about the actual experience after everything has been configured, please see [Windows Hello for Business and Authentication](./hello-how-it-works-authentication.md).
 
+    > [!NOTE]
+    > For access issues in the context of VPN make sure to check the resolution and workaround described in  [this article](https://docs.microsoft.com/en-us/troubleshoot/windows-client/group-policy/group-membership-changes-not-updating-over-some-vpn-connections#workarounds).
+
 ## Section Review
 > [!div class="checklist"]
 > * Configure Internet Information Services to host CRL distribution point
