@@ -23,6 +23,7 @@ summary: This topic for the IT professional lists questions and answers about un
   
   -   [What is Windows security auditing and why might I want to use it?](#what-is-windows-security-auditing-and-why-might-i-want-to-use-it-)
   -   [What is the difference between audit policies located in Local Policies\\Audit Policy and audit policies located in Advanced Audit Policy Configuration?](#what-is-the-difference-between-audit-policies-located-in-local-policies--audit-policy-and-audit-policies-located-in-advanced-audit-policy-configuration-)
+  -   [What is the difference between audit policies located in Local Policies\\Audit Policy and audit policies located in Advanced Audit Policy Configuration?](#what-is-the-difference-between-audit-policies-located-in-local-policies--audit-policy-and-audit-policies-located-in-advanced-audit-policy-configuration-)
   -   [What is the interasction between basic audit policy settings and advanced audit policy settings?](#what-is-the-interaction-between-basic-audit-policy-settings-and-advanced-audit-policy-settings-)
   -   [How are audit settings merged by Group Policy?](#how-are-audit-settings-merged-by-group-policy-)
   -   [What is the difference between an object DACL and an object SACL?](#what-is-the-difference-between-an-object-dacl-and-an-object-sacl-)
