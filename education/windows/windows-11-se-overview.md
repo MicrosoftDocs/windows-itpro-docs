@@ -24,9 +24,9 @@ Windows 11 SE is a new edition of Windows that's designed for education. It runs
 
 For education customers seeking cost-effective devices, Microsoft Windows 11 SE is a great choice. Windows 11 SE includes the following benefits:
 
-- A simplified and secure experience for students, with a focus on students in grades 4-8. Students focus on learning. Student privacy is prioritized.
+- A simplified and secure experience for students. Student privacy is prioritized.
 - Admins remotely manage Windows 11 SE devices using [Microsoft Intune for Education](/intune-education/what-is-intune-for-education).
-- It's built for low-cost computers.
+- It's built for low-cost devices.
 - It has a curated app experience, and is designed to only run essential education apps.
 
 ## Get Windows 11 SE
@@ -63,7 +63,7 @@ Windows 11 SE comes with some preinstalled apps. The following apps can also run
 
 | App type | Enabled |
 | --- | --- |
-| Apps that run in a browser | ✔️ <br/><br/> Apps that run in a browser, like Progressive Web Apps (PWA) and Web apps, can run on Windows 11 SE without any changes or limitations. |
+| Apps that run in a browser | ✔️ Apps that run in a browser, like Progressive Web Apps (PWA) and Web apps, can run on Windows 11 SE without any changes or limitations. |
 | Apps that require installation | ❌ Apps that require an installation, including Microsoft Store apps and Win32 apps can't be installed. If students try to install these apps, the installation fails. <br/><br/>✔️ If there are specific installation-type of apps you want to enable, then work with Microsoft to get them enabled. For more information, see [Add your own apps](#add-your-own-apps) (in this article). |
 
 ### Add your own apps
