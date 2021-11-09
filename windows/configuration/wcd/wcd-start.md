@@ -19,7 +19,7 @@ Use Start settings to apply a customized Start screen to devices.
 
 ## Applies to
 
-| Setting   | Desktop editions | Surface Hub | HoloLens | IoT Core |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | 
 | StartLayout | ✔️  | |  |  |
 
