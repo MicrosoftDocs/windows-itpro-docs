@@ -97,197 +97,31 @@ The following is an example of the v.2 version of the Enterprise Mode schema.
 ### Updated schema elements
 This table includes the elements used by the v.2 version of the Enterprise Mode schema.
 
-<table>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Supported browser</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;site-list&gt;</td>
-<td>A new root node with this text is using the updated v.2 version of the schema. It replaces &lt;rules&gt;.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;site-list version=&quot;205&quot;&gt;
-  &lt;site url=&quot;contoso.com&quot;&gt;
-    &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
-    &lt;open-in&gt;IE11&lt;/open-in&gt;
-  &lt;/site&gt;
-&lt;/site-list&gt;</pre></td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-<tr>
-<td>&lt;site&gt;</td>
-<td>A unique entry added for each site you want to put on the Enterprise Mode site list. The first &lt;site&gt; element will overrule any additional &lt;site&gt; elements that use the same value for the &lt;url&gt; element.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;site url=&quot;contoso.com&quot;&gt;
-  &lt;compat-mode&gt;default&lt;/compat-mode&gt;
-  &lt;open-in&gt;none&lt;/open-in&gt;
-&lt;/site&gt;</pre>
-<strong>-or-</strong>
-<p>For IPv4 ranges:<pre class="syntax">&lt;site url=&quot;10.122.34.99:8080&quot;&gt;
-  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
-&lt;site&gt;</pre><p>
-<strong>-or-</strong>
-<p>For IPv6 ranges:<pre class="syntax">&lt;site url=&quot;[10.122.34.99]:8080&quot;&gt;
-  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
-&lt;site&gt;</pre><p>
-You can also use the self-closing version, &lt;url=&quot;contoso.com&quot; /&gt;, which also sets:
-<ul>
-  <li>&lt;compat-mode&gt;default&lt;/compat-mode&gt;</li>
-  <li>&lt;open-in&gt;none&lt;/open-in&gt;</li>
-</ul></td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-<tr>
-<td>&lt;compat-mode&gt;</td>
-<td>A child element that controls what compatibility setting is used for specific sites or domains. This element is only supported in IE11.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;site url=&quot;contoso.com&quot;&gt;
-  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
-&lt;/site&gt;</pre>
-<strong>-or-</strong>
-<p>For IPv4 ranges:<pre class="syntax">&lt;site url=&quot;10.122.34.99:8080&quot;&gt;
-  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
-&lt;site&gt;</pre><p>
-<strong>-or-</strong>
-<p>For IPv6 ranges:<pre class="syntax">&lt;site url=&quot;[10.122.34.99]:8080&quot;&gt;
-  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
-&lt;site&gt;</pre><p>
-Where:
-<ul>
-  <li><b>IE8Enterprise.</b> Loads the site in IE8 Enterprise Mode.<br>This element is required for sites included in the <b>EmIE</b> section of the v.1 schema and is needed to load in IE8 Enterprise Mode.</li><p>
-  <li><b>IE7Enterprise.</b> Loads the site in IE7 Enterprise Mode.<br>This element is required for sites included in the <b>EmIE</b> section of the v.1 schema and is needed to load in IE7 Enterprise Mode.<p><b>Important</b><br>This tag replaces the combination of the <code>&quot;forceCompatView&quot;=&quot;true&quot;</code> attribute and the list of sites specified in the EmIE section of the v.1 version of the schema.</li><p>
-  <li><b>IE<i>[x]</i>.</b> Where <i>[x]</i> is the document mode number into which the site loads.</li><p>
-  <li><b>Default or not specified.</b> Loads the site using the default compatibility mode for the page. In this situation, X-UA-compatible meta tags or HTTP headers are honored.</li>
-</ul></td>
-<td>Internet Explorer 11</td>
-</tr>
-<tr>
-<td>&lt;open-in&gt;</td>
-<td>A child element that controls what browser is used for sites. This element supports the <b>Open in IE11</b> or <b>Open in Microsoft Edge</b> experiences, for devices running Windows 10.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;site url=&quot;contoso.com&quot;&gt;
-  &lt;open-in&gt;none&lt;/open-in&gt;
-&lt;/site&gt;</pre><p>
-Where:
-<ul>
-  <li><b>IE11.</b> Opens the site in IE11, regardless of which browser is opened by the employee.</li><p>
-  <li><b>MSEdge.</b> Opens the site in Microsoft Edge, regardless of which browser is opened by the employee.</li><p>
-  <li><b>None or not specified.</b> Opens in whatever browser the employee chooses.</li>
-</ul></td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-</table>
+|Element  |Description |Supported browser  |
+|---------|---------|---------|
+|&lt;site-list&gt;     |A new root node with this text is using the updated v.2 version of the schema. It replaces &lt;rules&gt;. <br> **Example** <br> <pre class="syntax">&lt;site-list version="205"&gt;<br>  &lt;site url="contoso.com"&gt;<br>   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;<br>   &lt;open-in&gt;IE11&lt;/open-in&gt;<br>  &lt;/site&gt;<br>&lt;/site-list&gt;</pre>         | Internet Explorer 11 and Microsoft Edge        |
+|&lt;site&gt;    |A unique entry added for each site you want to put on the Enterprise Mode site list. The first &lt;site&gt; element will overrule any additional &lt;site&gt; elements that use the same value for the &lt;url&gt; element. <br> **Example** <pre class="syntax">&lt;site url="contoso.com"&gt;<br>  &lt;compat-mode&gt;default&lt;/compat-mode&gt;<br>  &lt;open-in&gt;none&lt;/open-in&gt;<br>&lt;/site&gt;</pre> <br> **or** For IPv4 ranges: <br>  <pre class="syntax">&lt;site url="10.122.34.99:8080"&gt;<br> &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;<br>&lt;site&gt;</pre><p> <br> **or**  For IPv6 ranges:<pre class="syntax">&lt;site url="[10.122.34.99]:8080"&gt;<br>  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;<br>&lt;site&gt;</pre><p> <br> You can also use the self-closing version, &lt;url="contoso.com" /&gt;, which also sets:<ul><li>&lt;compat-mode&gt;default&lt;/compat-mode&gt;</li><li>&lt;open-in&gt;none&lt;/open-in&gt;</li>| Internet Explorer 11 and Microsoft Edge        |
+|&lt;compat-mode&gt;     |A child element that controls what compatibility setting is used for specific sites or domains. This element is only supported in IE11. <br> **Example** <pre class="syntax"><br>&lt;site url="contoso.com"&gt;<br>  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;<br>&lt;/site&gt;</pre> **or** <br> For IPv4 ranges:<pre class="syntax">&lt;site url="10.122.34.99:8080"&gt;<br>  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;<br>&lt;site&gt;</pre><p> **or** For IPv6 ranges:<pre class="syntax">&lt;site url="[10.122.34.99]:8080"&gt;<br>  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;<br>&lt;site&gt;</pre><p> Where<ul><li>**IE8Enterprise.** Loads the site in IE8 Enterprise Mode.<br>This element is required for sites included in the **EmIE** section of the v.1 schema and is needed to load in IE8 Enterprise Mode.</li><p><li>**IE7Enterprise.** Loads the site in IE7 Enterprise Mode.<br>This element is required for sites included in the **EmIE** section of the v.1 schema and is needed to load in IE7 Enterprise Mode<p>**Important**<br>This tag replaces the combination of the `"forceCompatView"="true"` attribute and the list of sites specified in the EmIE section of the v.1 version of the schema.<li>**IE<i>[x]</i>**. Where <i>[x]</i> is the document mode number into which the site loads.<li>**Default or not specified.** Loads the site using the default compatibility mode for the page. In this situation, X-UA-compatible meta tags or HTTP headers are honored.</li>      |Internet Explorer 11         |
+|&lt;open-in&gt;    |A child element that controls what browser is used for sites. This element supports the **Open in IE11** or **Open in Microsoft Edge** experiences, for devices running Windows 10.<br> **Examples**<pre class="syntax">&lt;site url="contoso.com"&gt;<br>  &lt;open-in&gt;none&lt;/open-in&gt; <br>&lt;/site&gt;</pre><p> <br> Where<ul><li><b>IE11.</b> Opens the site in IE11, regardless of which browser is opened by the employee.<li><b>MSEdge.</b> Opens the site in Microsoft Edge, regardless of which browser is opened by the employee.<li><b>None or not specified.</b> Opens in whatever browser the employee chooses.</li>  | Internet Explorer 11 and Microsoft Edge        |
 
 ### Updated schema attributes
 The &lt;url&gt; attribute, as part of the &lt;site&gt; element in the v.2 version of the schema, replaces the &lt;domain&gt; element from the v.1 version of the schema.
 
-<table>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Supported browser</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>allow-redirect</td>
-<td>A boolean attribute of the &lt;open-in&gt; element that controls the behavior for redirected sites. Setting this attribute to &quot;true&quot; indicates that the site will open in IE11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain. Omitting the attribute is equivalent to &quot;false&quot; (sites in redirect chain will not open in another browser).
-<p><b>Example</b>
-<pre class="syntax">
-&lt;site url=&quot;contoso.com/travel&quot;&gt;
-  &lt;open-in allow-redirect=&quot;true&quot;&gt;IE11&lt;/open-in&gt;
-&lt;/site&gt;</pre>
-In this example, if <a href="https://contoso.com/travel" data-raw-source="https://contoso.com/travel">https://contoso.com/travel</a> is encountered in a redirect chain in Microsoft Edge, it will be opened in Internet Explorer.</td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-<tr>
-<td>version</td>
-<td>Specifies the version of the Enterprise Mode Site List. This attribute is supported for the &lt;site-list&gt; element.</td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-<tr>
-<td>url</td>
-<td>Specifies the URL (and port number using standard port conventions) to which the child elements apply. The URL can be a domain, sub-domain, or any path URL.
-<br><b>Note</b><br>
-Make sure that you don&#39;t specify a protocol. Using &lt;site url=&quot;contoso.com&quot;&gt; applies to both <a href="http://contoso.com" data-raw-source="http://contoso.com">http://contoso.com</a> and <a href="https://contoso.com" data-raw-source="https://contoso.com">https://contoso.com</a>.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;site url=&quot;contoso.com:8080&quot;&gt;
-  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
-  &lt;open-in&gt;IE11&lt;/open-in&gt;
-&lt;/site&gt;</pre>
-In this example, going to <a href="https://contoso.com:8080" data-raw-source="https://contoso.com:8080">https://contoso.com:8080</a> using Microsoft Edge, causes the site to open in IE11 and load in IE8 Enterprise Mode.</td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-</table>
+|Attribute|Description|Supported browser|
+|---------|---------|---------|
+|allow-redirect|A boolean attribute of the <open-in> element that controls the behavior for redirected sites. Setting this attribute to "true" indicates that the site will open in IE11 or Microsoft Edge even if the site is navigated to as part of a HTTP or meta refresh redirection chain. Omitting the attribute is equivalent to "false" (sites in redirect chain will not open in another browser).<br>**Example**<pre class="syntax">&lt;site url="contoso.com/travel"&gt;<br>  &lt;open-in allow-redirect="true"&gt;IE11 &lt;/open-in&gt;<br>&lt;/site&gt;</pre> In this example, if [https://contoso.com/travel](https://contoso.com/travel) is encountered in a redirect chain in Microsoft Edge, it will be opened in Internet Explorer. <li>| Internet Explorer 11 and Microsoft Edge|
+|version     |Specifies the version of the Enterprise Mode Site List. This attribute is supported for the &lt;site-list&gt; element.   | Internet Explorer 11 and Microsoft Edge|
+|url|Specifies the URL (and port number using standard port conventions) to which the child elements apply. The URL can be a domain, sub-domain, or any path URL.<br> **Note**<br> Make sure that you don't specify a protocol. Using &lt;site url="contoso.com"&gt;  applies to both [https://contoso.com](https://contoso.com) and [https://contoso.com](https://contoso.com). <br> **Example**<pre class="syntax">&lt;site url="contoso.com:8080"&gt;<br>   &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt; <br> &lt;open-in&gt;IE11&lt;/open-in&gt;<br>&lt;/site&gt;</pre>In this example, going to [https://contoso.com:8080](https://contoso.com:8080) using Microsoft Edge, causes the site to open in IE11 and load in IE8 Enterprise Mode. | Internet Explorer 11 and Microsoft Edge|
 
 ### Deprecated attributes
 These v.1 version schema attributes have been deprecated in the v.2 version of the schema:
 
-<table>
-<thead>
-<tr class="header">
-<th>Deprecated element/attribute</th>
-<th>New element</th>
-<th>Replacement example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>forceCompatView</td>
-<td>&lt;compat-mode&gt;</td>
-<td>Replace forceCompatView=&quot;true&quot; with &lt;compat-mode&gt;IE7Enterprise&lt;/compat-mode&gt;</td>
-</tr>
-<tr>
-<td>docMode</td>
-<td>&lt;compat-mode&gt;</td>
-<td>Replace docMode=&quot;IE5&quot; with &lt;compat-mode&gt;IE5&lt;/compat-mode&gt;</td>
-</tr>
-<tr>
-<td>doNotTransition</td>
-<td>&lt;open-in&gt;</td>
-<td>Replace doNotTransition=&quot;true&quot; with &lt;open-in&gt;none&lt;/open-in&gt;</td>
-</tr>
-<tr>
-<td>&lt;domain&gt; and &lt;path&gt;</td>
-<td>&lt;site&gt;</td>
-<td>Replace:
-<pre class="syntax">
-&lt;emie&gt;
-  &lt;domain&gt;contoso.com&lt;/domain&gt;
-&lt;/emie&gt;</pre>
-With:
-<pre class="syntax">
-&lt;site url=&quot;contoso.com&quot;/&gt;
-  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;
-  &lt;open-in&gt;IE11&lt;/open-in&gt;
-&lt;/site&gt;</pre>
-<b>-AND-</b><p>
-Replace:
-<pre class="syntax">
-&lt;emie&gt;
-  &lt;domain exclude=&quot;true&quot; doNotTransition=&quot;true&quot;&gt;
-    contoso.com
-    &lt;path forceCompatView=&quot;true&quot;&gt;/about&lt;/path&gt;
-  &lt;/domain&gt;
-&lt;/emie&gt;</pre>
-With:
-<pre class="syntax">
-&lt;site url=&quot;contoso.com/about&quot;&gt;
-  &lt;compat-mode&gt;IE7Enterprise&lt;/compat-mode&gt;
-  &lt;open-in&gt;IE11&lt;/open-in&gt;
-&lt;/site&gt;</pre></td>
-</tr>
-</table>
+|Deprecated attribute|New attribute|Replacement example|
+|--- |--- |--- |
+|forceCompatView|&lt;compat-mode>|Replace &lt;forceCompatView="true"> with &lt;compat-mode&gt;IE7Enterprise&lt;/compat-mode>|
+|docMode|&lt;compat-mode&gt;|Replace &lt;docMode="IE5"&gt; with &lt;compat-mode&gt;IE5&lt;/compat-mode&gt;|
+|doNotTransition|&lt;open-in&gt;|Replace:<br> &lt;doNotTransition="true"&gt; with &lt;open-in&gt;none&lt;/open-in&gt;|
+|&lt;domain&gt; and &lt;path&gt;|&lt;site&gt;|Replace:<pre class="syntax">&lt;emie&gt;<br> &lt;domain exclude="false"&gt;contoso.com&lt;/domain&gt;<br>&lt;/emie&gt;</pre>With:<pre class="syntax">&lt;site url="contoso.com"/&gt; <br>  &lt;compat-mode&gt;IE8Enterprise&lt;/compat-mode&gt;<br>&lt;/site&gt;</pre>**-AND-** <br>Replace:<pre class="syntax">&lt;emie&gt; <br>  &lt;domain exclude="true"&gt;contoso.com <br> &lt;path exclude="false" forceCompatView="true"&gt;/about&lt;/path&gt;<br> &lt;/domain&gt;<br>&lt;/emie&gt;</pre><br> With:<pre class="syntax">&lt;site url="contoso.com/about"&gt;<br> &lt;compat-mode&gt;IE7Enterprise&lt;/compat-mode&gt;<br> &lt;open-in&gt;IE11&lt;/open-in&gt;<br>&lt;/site&gt;|
 
 While the old, replaced attributes aren't supported in the v.2 version of the schema, they'll continue to work in the v.1 version of the schema. If, however, you're using the v.2 version of the schema and these attributes are still there, the v.2 version schema takes precedence. We don’t recommend combining the two schemas, and instead recommend that you move to the v.2 version of the schema to take advantage of the new features.
 
