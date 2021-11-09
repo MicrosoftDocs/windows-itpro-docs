@@ -24,7 +24,7 @@ In some previous versions of App-V, connection groups were referred to as Dynami
 
 **In this section:**
 
-|||
+|Links|Description|
 |--- |--- |
 |[About the Connection Group Virtual Environment](appv-connection-group-virtual-environment.md)|Describes the connection group virtual environment.|
 |[About the Connection Group File](appv-connection-group-file.md)|Describes the connection group file.|
