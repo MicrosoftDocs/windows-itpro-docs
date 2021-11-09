@@ -838,6 +838,7 @@ This guide discusses thick image deployment. For information about thin image de
 
 ### Select a method to initiate deployment
 The LTI deployment process is highly automated: it requires minimal information to deploy or upgrade Windows 10. The ZTI deployment process is fully automated, but you must manually initiate it. To do so, use the method listed in Table 15 that best meets the needs of your institution.
+
 |Method|Description and reason to select this method|
 |--- |--- |
 |Windows Deployment Services|This method:<li>Uses diskless booting to initiate LTI and ZTI deployments.<li>Works only with devices that support PXE boot.<li>Deploys Windows 10 over the network, which consumes more network bandwidth than deployment from local media.<li>Deploys images more slowly than when you use local media.<li>Requires that you deploy a Windows Deployment Services server.<br><br>Select this method when you want to deploy Windows over-the-network and perform diskless booting. The advantage of this method is that the diskless media are generic and typically don’t require updates after you create them (LTI and ZTI access the centrally located deployment content over the network). The disadvantage of this method is that over-the-network deployments are slower than deployments from local media, and you must deploy a Windows Deployment Services server.|
@@ -856,6 +857,7 @@ Before you can deploy Windows 10 and your apps to devices, you need to prepare y
 ### Configure the MDT deployment share
 
 The first step in preparing for Windows 10 deployment is to configure—that is, *populate*—the MDT deployment share. Table 16 lists the MDT deployment share configuration tasks that you must perform. Perform the tasks in the order represented in Table 16.
+
 |Task|Description|
 |--- |--- |
 |1. Import operating systems|Import the operating systems that you selected in the [Select the operating systems](#select-the-operating-systems) section into the deployment share. For more information about how to import operating systems, see [Import Device Drivers into the Deployment Workbench](/mem/configmgr/mdt/use-the-mdt#ImportDeviceDriversintotheDeploymentWorkbench)|
@@ -1247,6 +1249,7 @@ After the initial deployment, you need to perform certain tasks to maintain the 
 - **As required (ad hoc).** Perform these tasks as necessary in a classroom. For example, a new version of an app may be available, or a student may inadvertently corrupt a device so that you must restore it to the default configuration.
 
 Table 19 lists the school and individual classroom maintenance tasks, the resources for performing the tasks, and the schedule (or frequency) on which you should perform the tasks.
+
 |Task and resources|Monthly|New semester or academic year|As required|
 |--- |--- |--- |--- |
 |Verify that Windows Update is active and current with operating system and software updates.<br>For more information about completing this task when you have:<li>Intune, see [Keep Windows PCs up to date with software updates in Microsoft Intune](/intune/deploy-use/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune)<li>Group Policy, see [Windows Update for Business](/windows/deployment/update/waas-manage-updates-wufb).<li>WSUS, see [Windows Server Update Services](/windows/deployment/deploy-whats-new).<br>Neither Intune, Group Policy, nor WSUS, see “Install, upgrade, & activate” in Windows 10 help.|x|x|x|

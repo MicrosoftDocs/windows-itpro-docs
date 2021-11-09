@@ -135,6 +135,7 @@ Table 2. Settings in the Device Management node in the Google Admin Console
 Table 3 lists the settings in the Security node in the Google Admin Console. Review the settings and determine which settings you will migrate to Windows.
 
 Table 3. Settings in the Security node in the Google Admin Console
+
 |Section|Settings|
 |--- |--- |
 |Basic settings|These settings configure password management and whether or not two-factor authentication (2FA) is configured. You can set the minimum password length, the maximum password length, if non-admin users can recover their own passwords, and enable 2FA.<br> Record these settings and use them to help configure your on-premises Active Directory or Azure Active Directory (Azure AD) to mirror the current behavior of your Chromebook environment.|
@@ -463,6 +464,7 @@ It is important that you perform AD DS and Azure AD services deployment or remed
 In the [Plan for Active Directory services](#plan-adservices) section, you determined the AD DS and/or Azure AD deployment or remediation (if any) that needed to be performed. Table 8 list AD DS, Azure AD, and the deployment resources for both. Use the resources in this table to deploy or remediate on-premises AD DS, Azure AD, or both.
 
 Table 8. AD DS, Azure AD and deployment resources
+
 |Product or technology|Resources|
 |--- |--- |
 |AD DS| <li> [Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)) <li>[Active Directory Domain Services Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11))|
@@ -497,6 +499,7 @@ In the [Plan for app migration or replacement](#plan-app-migrate-replace) sectio
 In this step, you need to configure your management system to deploy the apps to the appropriate Windows users and devices. Table 10 lists the Microsoft management systems and the app deployment resources for each. Use the resources in this table to configure these management systems to deploy the apps that you selected in the [Plan for app migration or replacement](#plan-app-migrate-replace) section of this guide.
 
 Table 10. Management systems and app deployment resources
+
 |Management system|Resources|
 |--- |--- |
 |Group Policy| <li> [Editing an AppLocker Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791894(v=ws.10)) <li> [Group Policy Software Deployment Background](/previous-versions/windows/it-pro/windows-server-2003/cc739305(v=ws.10)) <li> [Assigning and Publishing Software](/previous-versions/windows/it-pro/windows-server-2003/cc783635(v=ws.10))|
