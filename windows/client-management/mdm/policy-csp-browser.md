@@ -213,22 +213,22 @@ ms.localizationpriority: medium
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -291,22 +291,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -377,22 +377,22 @@ To verify AllowAutofill is set to 0 (not allowed):
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -453,22 +453,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -539,22 +539,22 @@ To verify AllowCookies is set to 0 (not allowed):
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -617,22 +617,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -702,22 +702,22 @@ To verify AllowDoNotTrack is set to 0 (not allowed):
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -778,22 +778,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -854,22 +854,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -933,22 +933,22 @@ Most restricted value: 1
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1017,22 +1017,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1093,22 +1093,22 @@ Most restricted value:  0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1173,22 +1173,22 @@ Most restricted value:  0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1258,22 +1258,22 @@ To verify AllowPasswordManager is set to 0 (not allowed):
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1343,22 +1343,22 @@ To verify AllowPopups is set to 0 (not allowed):
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1428,22 +1428,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1512,22 +1512,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1596,22 +1596,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1678,22 +1678,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1755,22 +1755,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1839,22 +1839,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1923,22 +1923,22 @@ To verify AllowSmartScreen is set to 0 (not allowed):
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2006,22 +2006,22 @@ Most restricted value: 1
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2089,22 +2089,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2168,22 +2168,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2255,22 +2255,22 @@ To verify that browsing data is cleared on exit (ClearBrowsingDataOnExit is set 
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2337,22 +2337,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2421,22 +2421,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2509,22 +2509,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2600,22 +2600,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2686,22 +2686,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2782,22 +2782,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2867,22 +2867,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -2950,22 +2950,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3026,22 +3026,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3108,22 +3108,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3168,22 +3168,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3260,22 +3260,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3338,22 +3338,22 @@ Most restricted value: 1
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3414,22 +3414,22 @@ Most restricted value: 1
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3496,22 +3496,22 @@ Most restricted value: 1
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3573,22 +3573,22 @@ Most restricted value: 1
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3650,22 +3650,22 @@ Most restricted value: 1
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3725,22 +3725,22 @@ Most restricted value: 1
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3801,22 +3801,22 @@ Most restricted value: 1
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3883,22 +3883,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3961,22 +3961,22 @@ Most restricted value: 1
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -4046,22 +4046,22 @@ ADMX Info:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -4127,22 +4127,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -4212,22 +4212,22 @@ Most restricted value: 1
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -4294,22 +4294,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -4375,22 +4375,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -4455,22 +4455,22 @@ Most restricted value: 0
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -4530,22 +4530,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -4620,22 +4620,22 @@ To verify that favorites are in synchronized between Internet Explorer and Micro
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -4702,22 +4702,22 @@ Supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
