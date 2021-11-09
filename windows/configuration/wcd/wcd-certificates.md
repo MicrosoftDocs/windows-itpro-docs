@@ -27,7 +27,7 @@ Use to deploy Root Certificate Authority (CA) certificates to devices. The follo
 
 | Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| All setting groups | X |  X | X | X | X |
+| All setting groups | ✔️ |  ✔️ | ✔️ | ✔️ | ✔️ |
 
 
 ## CACertificates

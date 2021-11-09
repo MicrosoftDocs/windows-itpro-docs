@@ -11,7 +11,7 @@ ms.date: 09/13/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4776(S, F): The computer attempted to validate the credentials for an account.

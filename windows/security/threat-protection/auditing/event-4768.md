@@ -7,11 +7,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 09/07/2021
+ms.date: 10/20/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4768(S, F): A Kerberos authentication ticket (TGT) was requested.
@@ -29,7 +29,7 @@ This event generates only on domain controllers.
 
 If TGT issue fails then you will see Failure event with **Result Code** field not equal to “**0x0**”.
 
-This event doesn't generate for **Result Codes**: 0x10, 0x17 and 0x18. Event “[4771](event-4771.md): Kerberos pre-authentication failed.” generates instead.
+This event doesn't generate for **Result Codes**: 0x10 and 0x18. Event “[4771](event-4771.md): Kerberos pre-authentication failed.” generates instead.
 
 > [!NOTE]
 > For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.

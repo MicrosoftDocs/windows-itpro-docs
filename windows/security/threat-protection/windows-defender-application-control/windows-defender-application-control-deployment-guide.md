@@ -15,7 +15,7 @@ ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
 ms.date: 05/16/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Deploying Windows Defender Application Control (WDAC) policies

@@ -43,12 +43,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -69,12 +69,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -95,12 +95,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -121,12 +121,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -147,12 +147,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -173,12 +173,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
+	<td>Yes<sup>6</sup></td>
+	<td>Yes<sup>6</sup></td>
+	<td>Yes<sup>6</sup></td>
+	<td>Yes<sup>6</sup></td>
+	<td>Yes<sup>6</sup></td>
+	<td>Yes<sup>6</sup></td>
 </tr>
 </table>
 
@@ -199,12 +199,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -225,12 +225,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -251,12 +251,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -277,12 +277,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td>No</td>
+	<td>Yes<sup>5</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
 </tr>
 </table>
 
@@ -303,12 +303,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -329,12 +329,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -356,12 +356,12 @@ Additional lists:
 
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes<sup>1</sup></td>
 </tr>
 </table>
 
@@ -382,12 +382,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -408,12 +408,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -434,12 +434,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -460,12 +460,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -486,12 +486,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -512,12 +512,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -538,12 +538,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -564,12 +564,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -590,12 +590,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -616,12 +616,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -642,12 +642,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -668,12 +668,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -694,12 +694,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -720,12 +720,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -746,12 +746,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -772,12 +772,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -799,12 +799,12 @@ Additional lists:
 	
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -825,12 +825,12 @@ Additional lists:
 	<th>Mobile</th>
 	</tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -852,12 +852,12 @@ Additional lists:
 	
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>3</sup></td>
 </tr>
 </table>
 
@@ -878,12 +878,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -904,12 +904,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>Yes<sup>6</sup></td>
+	<td>Yes<sup>6</sup></td>
+	<td>Yes<sup>6</sup></td>
+	<td>Yes<sup>6</sup></td>
+	<td>Yes<sup>6</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -930,12 +930,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -956,12 +956,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -982,12 +982,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -1008,12 +1008,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1034,13 +1034,13 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" />
+	<td>Yes
 <a href="/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection">Only for mobile application management (MAM)</td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1061,12 +1061,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -1087,12 +1087,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1113,12 +1113,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1139,12 +1139,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1165,12 +1165,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
+	<td>No</td>
+	<td>Yes<sup>3<sup></td>
+	<td>Yes<sup>3<sup></td>
+	<td>Yes<sup>3<sup></td>
+	<td>Yes<sup>3<sup></td>
+	<td>Yes<sup>3<sup></td>
 </tr>
 </table>
 
@@ -1191,12 +1191,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes<sup>B<sup></td>
 </tr>
 </table>
 
@@ -1217,12 +1217,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -1243,12 +1243,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1269,12 +1269,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1296,13 +1296,13 @@ Additional lists:
 	<th>Mobile Enterprise</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>No</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -1322,12 +1322,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1348,12 +1348,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes<sup>2</sup></td>
 </tr>
 </table>
 
@@ -1374,12 +1374,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1400,12 +1400,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1426,12 +1426,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1452,12 +1452,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
+	<td>No</td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
 </tr>
 </table>
 
@@ -1478,12 +1478,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1504,12 +1504,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1530,12 +1530,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -1556,12 +1556,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1582,12 +1582,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1608,12 +1608,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1634,12 +1634,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes<sup>2</sup></td>
+	<td>Yes<sup>2</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -1660,12 +1660,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1686,12 +1686,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1712,12 +1712,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
+	<td>Yes<sup>B<sup></td>
+	<td>Yes<sup>B<sup></td>
+	<td>Yes<sup>B<sup></td>
+	<td>Yes<sup>B<sup></td>
+	<td>Yes<sup>B<sup></td>
+	<td>Yes<sup>B<sup></td>
 </tr>
 </table>
 
@@ -1738,12 +1738,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1764,12 +1764,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1790,12 +1790,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1816,12 +1816,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1842,12 +1842,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1868,12 +1868,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1894,12 +1894,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1920,12 +1920,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1946,12 +1946,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -1972,12 +1972,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -1998,12 +1998,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -2024,12 +2024,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -2050,12 +2050,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -2103,12 +2103,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes<sup>5</sup></td>
+	<td>Yes<sup>5</sup></td>
+	<td>Yes<sup>5</sup></td>
+	<td>Yes<sup>5</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -2129,12 +2129,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -2155,12 +2155,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -2181,12 +2181,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -2207,12 +2207,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -2233,12 +2233,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -2259,12 +2259,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -2290,7 +2290,7 @@ Additional lists:
 	<td></td>
 	<td></td>
 	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
 	<td></td>
 </tr>
 </table>
@@ -2312,12 +2312,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -2338,12 +2338,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -2364,12 +2364,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes<sup>5</sup></td>
+	<td>Yes<sup>5</sup></td>
+	<td>Yes<sup>5</sup></td>
+	<td>Yes<sup>5</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -2390,12 +2390,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
+	<td>No</td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>Yes<sup>1</sup></td>
+	<td>No</td>
 </tr>
 </table>
 
@@ -2416,12 +2416,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>>
+	<td>No</td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>Yes<sup>3</sup></td>
+	<td>No</td>>
 </tr>
 </table>
 
@@ -2443,12 +2443,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -2469,12 +2469,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>No</td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -2495,12 +2495,12 @@ Additional lists:
 	<th>Mobile</th>
 </tr>
 <tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
+	<td>No</td>
+	<td>Yes<sup>5</sup></td>
+	<td>Yes<sup>5</sup></td>
+	<td>Yes<sup>5</sup></td>
+	<td>Yes<sup>5</sup></td>
+	<td>Yes<sup>5</sup></td>
 </tr>
 </table>
 
@@ -2526,7 +2526,7 @@ Additional lists:
 	<td></td>
 	<td></td>
 	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
+	<td>Yes</td>
 </tr>
 </table>
 
@@ -2555,36 +2555,36 @@ The following list shows the CSPs supported in HoloLens devices:
 
 | Configuration service provider        | HoloLens (1st gen) Development Edition      | HoloLens (1st gen) Commercial Suite | HoloLens 2 |
 |------|--------|--------|--------|
-| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png)
-| [Accounts CSP](accounts-csp.md)    | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [ApplicationControl CSP](applicationcontrol-csp.md) | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png) |  ![check mark](images/checkmark.png) |
-| [AppLocker CSP](applocker-csp.md)      | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![cross mark](images/crossmark.png) |
-| [AssignedAccess CSP](assignedaccess-csp.md)      | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
-| [CertificateStore CSP](certificatestore-csp.md)    | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)| ![check mark](images/checkmark.png) |
-| [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [DevDetail CSP](devdetail-csp.md)   | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>2</sup>   (runtime provisioning via provisioning packages only; no MDM support)| ![check mark](images/checkmark.png) |
-| [DeviceManageability CSP](devicemanageability-csp.md) | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceStatus CSP](devicestatus-csp.md)  | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)  | ![check mark](images/checkmark.png) |
-| [DevInfo CSP](devinfo-csp.md)  | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [DiagnosticLog CSP](diagnosticlog-csp.md)  | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [DMAcc CSP](dmacc-csp.md)      | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [DMClient CSP](dmclient-csp.md)    | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md) | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>10</sup>  |
-| [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [NetworkProxy CSP](networkproxy-csp.md) | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [NetworkQoSPolicy CSP](networkqospolicy-csp.md)  | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png)       | ![check mark](images/checkmark.png) <sup>8</sup>|
-| [NodeCache CSP](nodecache-csp.md)  | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-[PassportForWork CSP](passportforwork-csp.md) | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Policy CSP](policy-configuration-service-provider.md)    | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [RemoteFind CSP](remotefind-csp.md)    | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
-| [RemoteWipe CSP](remotewipe-csp.md) (**doWipe** and **doWipePersistProvisionedData** nodes only)  | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
-| [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [TenantLockdown CSP](tenantlockdown-csp.md) | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>10</sup>  |
-| [Update CSP](update-csp.md)     | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [VPNv2 CSP](vpnv2-csp.md)    | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [WiFi CSP](wifi-csp.md)     | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![cross mark](images/crossmark.png) |
+| [AccountManagement CSP](accountmanagement-csp.md)   | No | Yes <sup>4</sup>       | Yes
+| [Accounts CSP](accounts-csp.md)    | Yes | Yes | Yes |
+| [ApplicationControl CSP](applicationcontrol-csp.md) | No | No |  Yes |
+| [AppLocker CSP](applocker-csp.md)      | No | Yes       | No |
+| [AssignedAccess CSP](assignedaccess-csp.md)      | No | Yes <sup>4</sup>       | Yes |
+| [CertificateStore CSP](certificatestore-csp.md)    | Yes | Yes| Yes |
+| [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | No | Yes       | Yes |
+| [DevDetail CSP](devdetail-csp.md)   | Yes | Yes       | Yes |
+| [DeveloperSetup CSP](developersetup-csp.md)   | No | Yes <sup>2</sup>   (runtime provisioning via provisioning packages only; no MDM support)| Yes |
+| [DeviceManageability CSP](devicemanageability-csp.md) | No | No | Yes |
+| [DeviceStatus CSP](devicestatus-csp.md)  | No | Yes  | Yes |
+| [DevInfo CSP](devinfo-csp.md)  | Yes | Yes       | Yes |
+| [DiagnosticLog CSP](diagnosticlog-csp.md)  | No | Yes       | Yes |
+| [DMAcc CSP](dmacc-csp.md)      | Yes | Yes       | Yes |
+| [DMClient CSP](dmclient-csp.md)    | Yes | Yes       | Yes |
+| [EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md) | No | No | Yes <sup>10</sup>  |
+| [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | No | Yes       | Yes |
+| [NetworkProxy CSP](networkproxy-csp.md) | No | No | Yes |
+| [NetworkQoSPolicy CSP](networkqospolicy-csp.md)  | No | No       | Yes <sup>8</sup>|
+| [NodeCache CSP](nodecache-csp.md)  | Yes | Yes       | Yes |
+[PassportForWork CSP](passportforwork-csp.md) | No | Yes | Yes |
+| [Policy CSP](policy-configuration-service-provider.md)    | No | Yes       | Yes |
+| [RemoteFind CSP](remotefind-csp.md)    | No | Yes <sup>4</sup>       | Yes |
+| [RemoteWipe CSP](remotewipe-csp.md) (**doWipe** and **doWipePersistProvisionedData** nodes only)  | No | Yes <sup>4</sup>       | Yes |
+| [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | No | Yes       | Yes |
+| [TenantLockdown CSP](tenantlockdown-csp.md) | No | No | Yes <sup>10</sup>  |
+| [Update CSP](update-csp.md)     | No | Yes       | Yes |
+| [VPNv2 CSP](vpnv2-csp.md)    | No | Yes       | Yes |
+| [WiFi CSP](wifi-csp.md)     | No | Yes       | Yes |
+| [WindowsLicensing CSP](windowslicensing-csp.md)   | Yes | Yes       | No |
 
  
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
@@ -2648,18 +2648,4 @@ The following list shows the CSPs supported in HoloLens devices:
 - [WiFi CSP](wifi-csp.md)
 
 <hr>
-
- Footnotes:
-- A - Only for mobile application management (MAM).
-- B - Provisioning only.
-- 1 - Added in Windows 10, version 1607.
-- 2 - Added in Windows 10, version 1703.
-- 3 - Added in Windows 10, version 1709.
-- 4 - Added in Windows 10, version 1803.
-- 5 - Added in Windows 10, version 1809.
-- 6 - Added in Windows 10, version 1903.
-- 7 - Added in Windows 10, version 1909.
-- 8 - Added in Windows 10, version 2004.
-- 9 - Added in Windows 10 Team 2020 Update
-- 10 - Added in [Windows Holographic, version 20H2](/hololens/hololens-release-notes#windows-holographic-version-20h2)
 

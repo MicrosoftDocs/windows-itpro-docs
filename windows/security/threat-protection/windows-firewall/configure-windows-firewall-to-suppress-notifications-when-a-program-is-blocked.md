@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/07/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Configure Windows Defender Firewall with Advanced Security to Suppress Notifications When a Program Is Blocked

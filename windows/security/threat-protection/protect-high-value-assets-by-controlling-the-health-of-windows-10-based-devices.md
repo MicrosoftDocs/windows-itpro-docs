@@ -13,7 +13,7 @@ ms.pagetype: security, devices
 author: dulcemontemayor
 ms.date: 10/13/2017
 ms.localizationpriority: medium
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Control the health of Windows 10-based devices

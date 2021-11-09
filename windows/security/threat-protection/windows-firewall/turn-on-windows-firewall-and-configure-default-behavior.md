@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Turn on Windows Defender Firewall with Advanced Security and Configure Default Behavior
