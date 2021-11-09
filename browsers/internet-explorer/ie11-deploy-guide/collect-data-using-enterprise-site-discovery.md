@@ -205,24 +205,28 @@ You can use Group Policy to finish setting up Enterprise Site Discovery. If you 
 You can use both the WMI and XML settings individually or together:
 
 **To turn off Enterprise Site Discovery**
+
 |Setting name|Option|
 |--- |--- |
 |Turn on Site Discovery WMI output|Off|
 |Turn on Site Discovery XML output|Blank|
 
 **Turn on WMI recording only**
+
 |Setting name|Option|
 |--- |--- |
 |Turn on Site Discovery WMI output|On|
 |Turn on Site Discovery XML output|Blank|
 
 **To turn on XML recording only**
+
 |Setting name|Option|
 |--- |--- |
 |Turn on Site Discovery WMI output|Off|
 |Turn on Site Discovery XML output|XML file path|
  
 **To turn on both WMI and XML recording**
+
 |Setting name|Option|
 |--- |--- |
 |Turn on Site Discovery WMI output|On|
