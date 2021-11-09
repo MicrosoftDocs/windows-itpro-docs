@@ -126,7 +126,7 @@ The following list shows the supported values:
 <!--Description-->
 > [!NOTE]
 > 
-> - This policy is deprecated in Windows 10, version 1607.
+> - This policy is deprecated in Windows 10, version 1607.<br/>
 > - This policy is only enforced in Windows 10 for desktop.
 
 Specifies whether to allow automatic [device encryption](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption) during OOBE when the device is Azure AD joined.
