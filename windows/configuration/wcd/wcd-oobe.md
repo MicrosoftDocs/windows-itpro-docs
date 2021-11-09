@@ -19,7 +19,7 @@ Use to configure settings for the [Out Of Box Experience (OOBE)](/windows-hardwa
 ## Applies to
 
 | Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
+| --- | :---: | :---: | :---: | :---: | 
 | [Desktop > EnableCortanaVoice](#enablecortanavoice) | ✔️  |  |  |  |
 | [Desktop > HideOobe](#hided) | ✔️  |  |  |  |
 | [Mobile > EnforceEnterpriseProvisioning](#nforce) |   |  |  |  |

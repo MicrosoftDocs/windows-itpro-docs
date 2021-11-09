@@ -43,12 +43,12 @@ This section describes the **Policies** settings that you can configure in [prov
 ## ApplicationManagement
 
 
-| Setting | Description | Windows client | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | --- | :---: | :---: | :---: | :---: | 
 | [AllowAllTrustedApps](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowalltrustedapps) | Whether non-Microsoft Store apps are allowed | ✔️ |   |  | ✔️ |
 | [AllowAppStoreAutoUpdate](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowappstoreautoupdate)  | Whether automatic update of apps from Microsoft Store is allowed  | ✔️  |   |   | ✔️ |
 | [AllowDeveloperUnlock](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowdeveloperunlock)  | Whether developer unlock of device is allowed  | ✔️  | ✔️  | ✔️  | ✔️ |
-| [AllowGameDVR](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowgamedvr)  |Whether DVR and broadcasting is allowed   | ✔️  |  |   |   |  |
+| [AllowGameDVR](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowgamedvr)  |Whether DVR and broadcasting is allowed   | ✔️  |  |   |   |  
 | [AllowSharedUserAppData](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowshareduserappdata)  | Whether multiple users of the same app can share data  | ✔️  |   |   |  |
 | [AllowStore](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-allowstore)  | Whether app store is allowed at device  |   |    |   |  |
 | [ApplicationRestrictions](/windows/client-management/mdm/policy-configuration-service-provider#applicationmanagement-applicationrestrictions)  | An XML blob that specifies app restrictions, such as an allow list, disallow list, etc.  |   |   |  |  |
