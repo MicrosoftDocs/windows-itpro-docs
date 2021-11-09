@@ -23,6 +23,7 @@ Connection groups enable the applications within a package to interact with each
 In some previous versions of App-V, connection groups were referred to as Dynamic Suite Composition.
 
 **In this section:**
+
 |||
 |--- |--- |
 |[About the Connection Group Virtual Environment](appv-connection-group-virtual-environment.md)|Describes the connection group virtual environment.|
