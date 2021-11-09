@@ -356,12 +356,12 @@ Table 5. Select on-premises AD DS, Azure AD, or hybrid
 
 |If you plan to...|On-premises AD DS|Azure AD|Hybrid|
 |--- |--- |--- |--- |
-|Use Office 365||X|X|
-|Use Intune for management||X|X|
-|Use Microsoft Endpoint Manager for management|X||X|
-|Use Group Policy for management|X||X|
-|Have devices that are domain-joined|X||X|
-|Allow faculty and students to Bring Your Own Device (BYOD) which are not domain-joined||X|X|
+|Use Office 365||✔️|✔️|
+|Use Intune for management||✔️|✔️|
+|Use Microsoft Endpoint Manager for management|✔️||✔️|
+|Use Group Policy for management|✔️||✔️|
+|Have devices that are domain-joined|✔️||✔️|
+|Allow faculty and students to Bring Your Own Device (BYOD) which are not domain-joined||✔️|✔️|
 
 ### <a href="" id="plan-userdevapp-manage"></a>
 
@@ -377,15 +377,15 @@ Table 6. Device, user, and app management products and technologies
 
 |Desired feature|Windows provisioning packages|Group Policy|Configuration Manager|Intune|MDT|Windows Software Update Services|
 |--- |--- |--- |--- |--- |--- |--- |
-|Deploy operating system images|X||X||X||
-|Deploy apps during operating system deployment|X||X||X||
-|Deploy apps after operating system deployment|X|X|X||||
-|Deploy software updates during operating system deployment|||X||X||
-|Deploy software updates after operating system deployment|X|X|X|X||X|
-|Support devices that are domain-joined|X|X|X|X|X||
-|Support devices that are not domain-joined|X|||X|X||
-|Use on-premises resources|X|X|X||X||
-|Use cloud-based services||||X|||
+|Deploy operating system images|✔️||✔️||✔️||
+|Deploy apps during operating system deployment|✔️||✔️||✔️||
+|Deploy apps after operating system deployment|✔️|✔️|✔️||||
+|Deploy software updates during operating system deployment|||✔️||✔️||
+|Deploy software updates after operating system deployment|✔️|✔️|✔️|✔️||✔️|
+|Support devices that are domain-joined|✔️|✔️|✔️|✔️|✔️||
+|Support devices that are not domain-joined|✔️|||✔️|✔️||
+|Use on-premises resources|✔️|✔️|✔️||✔️||
+|Use cloud-based services||||✔️|||
 
 You can use Configuration Manager and Intune in conjunction with each other to provide features from both products and technologies. In some instances you may need only one of these products or technologies. In other instances, you may need two or more to meet the device, user, and app management needs for your institution.
 
