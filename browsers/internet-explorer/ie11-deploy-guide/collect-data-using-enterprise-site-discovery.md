@@ -63,17 +63,17 @@ Data is collected on the configuration characteristics of IE and the sites it br
 
 |Data point              |IE11 |IE10 |IE9  |IE8  |Description                                                             |
 |------------------------|-----|-----|-----|-----|------------------------------------------------------------------------|
-|URL                     |  X  |  X  |  X  |  X  |URL of the browsed site, including any parameters included in the URL.  |
-|Domain                  |  X  |  X  |  X  |  X  |Top-level domain of the browsed site.                                   |
-|ActiveX GUID            |  X  |  X  |  X  |  X  |GUID of the ActiveX controls loaded by the site.                        |
-|Document mode           |  X  |  X  |  X  |  X  |Document mode used by IE for a site, based on page characteristics.     |
-|Document mode reason    |  X  |  X  |     |     |The reason why a document mode was set by IE.                           |
-|Browser state reason    |  X  |  X  |     |     |Additional information about why the browser is in its current state. Also called, browser mode.           |
-|Hang count              |  X  |  X  |  X  |  X  |Number of visits to the URL when the browser hung.                      |
-|Crash count             |  X  |  X  |  X  |  X  |Number of visits to the URL when the browser crashed.                   |
-|Most recent navigation failure (and count) |  X  |  X  |  X  |  X  |Description of the most recent navigation failure (like, a 404 bad request or 500 internal server error) and the number of times it happened.  |
-|Number of visits        |  X  |  X  |  X  |  X  |Number of times a site has been visited.                                |
-|Zone                    |  X  |  X  |  X  |  X  |Zone used by IE to browse sites, based on browser settings.             |
+|URL                     |  ✔️  |  ✔️  |  ✔️  |  ✔️  |URL of the browsed site, including any parameters included in the URL.  |
+|Domain                  |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Top-level domain of the browsed site.                                   |
+|ActiveX GUID            |  ✔️  |  ✔️  |  ✔️  |  ✔️  |GUID of the ActiveX controls loaded by the site.                        |
+|Document mode           |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Document mode used by IE for a site, based on page characteristics.     |
+|Document mode reason    |  ✔️  |  ✔️  |     |     |The reason why a document mode was set by IE.                           |
+|Browser state reason    |  ✔️  |  ✔️  |     |     |Additional information about why the browser is in its current state. Also called, browser mode.           |
+|Hang count              |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Number of visits to the URL when the browser hung.                      |
+|Crash count             |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Number of visits to the URL when the browser crashed.                   |
+|Most recent navigation failure (and count) |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Description of the most recent navigation failure (like, a 404 bad request or 500 internal server error) and the number of times it happened.  |
+|Number of visits        |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Number of times a site has been visited.                                |
+|Zone                    |  ✔️  |  ✔️  |  ✔️  |  ✔️  |Zone used by IE to browse sites, based on browser settings.             |
 
 
 >**Important**<br>By default, IE doesn’t collect this data; you have to turn this feature on if you want to use it. After you turn on this feature, data is collected on all sites visited by IE, except during InPrivate sessions. Additionally, the data collection process is silent, so there’s no notification to the employee. Therefore, you must get consent from the employee before you start collecting info. You must also make sure that using this feature complies with all applicable local laws and regulatory requirements.
