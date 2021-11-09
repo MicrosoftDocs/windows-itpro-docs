@@ -18,12 +18,12 @@ Use to configure settings for the [Out Of Box Experience (OOBE)](/windows-hardwa
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | :---: |
-| [Desktop > EnableCortanaVoice](#enablecortanavoice) | ✔️  |  |  |  |  |
-| [Desktop > HideOobe](#hided) | ✔️  |  |  |  |  |
-| [Mobile > EnforceEnterpriseProvisioning](#nforce) |   | ✔️ |  |  |  |
-| [Mobile > HideOobe](#hidem) |   | ✔️ |  |  |  |
+| [Desktop > EnableCortanaVoice](#enablecortanavoice) | ✔️  |  |  |  |
+| [Desktop > HideOobe](#hided) | ✔️  |  |  |  |
+| [Mobile > EnforceEnterpriseProvisioning](#nforce) |   |  |  |  |
+| [Mobile > HideOobe](#hidem) |   |  |  |  |
 
 
 

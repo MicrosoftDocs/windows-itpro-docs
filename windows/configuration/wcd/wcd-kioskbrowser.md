@@ -19,9 +19,9 @@ Use KioskBrowser settings to configure Internet sharing.
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |  |    |  |  | ✔️ |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings |  |  |  | ✔️ |
 
 >[!NOTE]
 >To configure Kiosk Browser settings for desktop editions, go to [Policies > KioskBrowser](wcd-policies.md#kioskbrowser).
