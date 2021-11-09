@@ -36,8 +36,8 @@ This section describes the **Policies** settings that you can configure in [prov
 ## ApplicationDefaults
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [DefaultAssociationsConfiguration](/windows/client-management/mdm/policy-configuration-service-provider#applicationdefaults-defaultassociationsconfiguration) | Set default file type and protocol associations  | ✔️ |  |  |
+| --- | --- | :---: | :---: | :---: | :---: | 
+| [DefaultAssociationsConfiguration](/windows/client-management/mdm/policy-configuration-service-provider#applicationdefaults-defaultassociationsconfiguration) | Set default file type and protocol associations  | ✔️ |  |  |  |
 
 
 ## ApplicationManagement
@@ -72,7 +72,7 @@ This section describes the **Policies** settings that you can configure in [prov
 ## BitLocker
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: |
 | [EncryptionMethod](/windows/client-management/mdm/policy-configuration-service-provider#bitlocker-encryptionmethod)  | Specify BitLocker drive encryption method and cipher strength | ✔️ |  |  |  |
 
 
@@ -90,7 +90,7 @@ This section describes the **Policies** settings that you can configure in [prov
 ## Browser
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: |
 | [AllowAddressBarDropdown](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowaddressbardropdown) | Specify whether to allow the address bar drop-down functionality in Microsoft Edge. If you want to minimize network connections from Microsoft Edge to Microsoft services, we recommend disabling this functionality.  | ✔️ |  |  |  |
 | [AllowAutofill](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowautofill)  | Specify whether autofill on websites is allowed.  | ✔️  |  ✔️  |   | ✔️ |
 | [AllowBrowser](/windows/client-management/mdm/policy-configuration-service-provider#browser-allowbrowser) | Specify whether the browser is allowed on the device (for Windows 10, version 1803 and earlier only). | ✔️ |   |  |  |
@@ -154,14 +154,14 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 ## Camera
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: | 
 | [AllowCamera](/windows/client-management/mdm/policy-configuration-service-provider#camera-allowcamera) | Disable or enable the camera. | ✔️ |  ✔️ |  |  |
 
 
 ## Connectivity
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: |
 | [AllowBluetooth](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowbluetooth) | Allow the user to enable Bluetooth or restrict access. | ✔️ |  ✔️ | ✔️ | ✔️ |
 | [AllowCellularData](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowcellulardata) | Allow the cellular data channel on the device. | ✔️ | ✔️ |  | ✔️ |
 | [AllowCellularDataRoaming](/windows/client-management/mdm/policy-configuration-service-provider#connectivity-allowcellulardataroaming) | Allow or disallow cellular data roaming on the device. | ✔️ | ✔️ |  | ✔️ |
@@ -182,43 +182,14 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 ## Cryptography
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: | 
 | [AllowFipsAlgorithmPolicy](/windows/client-management/mdm/policy-configuration-service-provider#cryptography-allowfipsalgorithmpolicy) | Allow or disallow the Federal Information Processing Standard (FIPS) policy. | ✔️ |   |  |  |
 | [TLSCiperSuites](/windows/client-management/mdm/policy-configuration-service-provider#cryptography-tlsciphersuites)  | List the Cryptographic Cipher Algorithms allowed for SSL connections. Format is a semicolon delimited list. Last write win.  | ✔️  |   |   |  |
 
 ## Defender
 
-<<<<<<< Updated upstream
-| Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowArchiveScanning](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowarchivescanning) | Allow or disallow scanning of archives. | ✔️ |  |  |  |  |
-| [AllowBehaviorMonitoring](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowbehaviormonitoring)  | Allow or disallow Windows Defender Behavior Monitoring functionality.  |  ✔️ |  |   |   |  |
-| [AllowCloudProtection](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowcloudprotection) | To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions. | ✔️ |  |  |  |  |
-| [AllowEmailScanning](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowemailscanning)  | Allow or disallow scanning of email.  |  ✔️ |  |   |   |  |
-| [AllowFullScanOnMappedNetworkDrives](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowfullscanonmappednetworkdrives) | Allow or disallow a full scan of mapped network drives. | ✔️ |  |  |  |  |
-| [AllowFullScanRemovableDriveScanning](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowfullscanremovabledrivescanning)  | Allow or disallow a full scan of removable drives.  |  ✔️ |  |   |   |  |
-| [AllowIOAVProtection](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowioavprotection)  | Allow or disallow Windows Defender IOAVP Protection functionality.  |  ✔️ |  |   |   |  |
-| [AllowOnAccessProtection](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowonaccessprotection) | Allow or disallow Windows Defender On Access Protection functionality. | ✔️ |  |  |  |  |
-| [AllowRealtimeMonitoring](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowrealtimemonitoring)  | Allow or disallow Windows Defender Realtime Monitoring functionality.  |  ✔️ |  |   |   |  |
-| [AllowScanningNetworkFiles](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowscanningnetworkfiles) | Allow or disallow scanning of network files.  | ✔️ |  |  |  |  |
-| [AllowScriptScanning](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowscriptscanning) | Allow or disallow Windows Defender Script Scanning functionality. | ✔️ |  |  |  |  |
-| [AllowUserUIAccess](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowuseruiaccess)  | Allow or disallow user access to the Windows Defender UI.  |  ✔️ |  |   |   |  |
-| [AvgCPULoadFactor](/windows/client-management/mdm/policy-configuration-service-provider#defender-avgcpuloadfactor) | Represents the average CPU load factor for the Windows Defeder scan (in percent). | ✔️ |  |  |  |  |
-| [DaysToRetainCleanedMalware](/windows/client-management/mdm/policy-configuration-service-provider#defender-daystoretaincleanedmalware)  | Specify time period (in days) that quarantine items will be stored on the system.  |  ✔️ |  |   |   |  |
-| [ExcludedExtensions](/windows/client-management/mdm/policy-configuration-service-provider#defender-excludedextensions) | Specify a list of file type extensions to ignore durinng a scan. Separate each file type in the list by using \|. | ✔️ |  |  |  |  |
-| [ExcludedPaths](/windows/client-management/mdm/policy-configuration-service-provider#defender-excludedpaths)  | Specify a list of directory paths to ignore during a scan. Separate each path in the list by using \|.  |  ✔️ |  |   |   |  |
-| [ExcludedProcesses](/windows/client-management/mdm/policy-configuration-service-provider#defender-excludedprocesses) | Specify a list of files opened by processes to ignore durinng a scan. Separate each file type in the list by using \|. The process itself is not excluded from the scan, but can be excluded by using the [Defender/ExcludedPaths](/windows/client-management/mdm/policy-configuration-service-provider#defender-excludedpaths) policy to exclude its path. | ✔️ |  |  |  |  |
-| [RealTimeScanDirection](/windows/client-management/mdm/policy-configuration-service-provider#defender-realtimescandirection)  | Control which sets of files should be monitored.  |  ✔️ |  |   |   |  |
-| [ScanParameter](/windows/client-management/mdm/policy-configuration-service-provider#defender-scanparameter) | Select whether to perform a quick scan or full scan. | ✔️ |  |  |  |  |
-| [ScheduleQuickScanTime](/windows/client-management/mdm/policy-configuration-service-provider#defender-schedulequickscantime)  | Specify the time of day that Windows Defender quick scan should run.  |  ✔️ |  |   |   |  |
-| [ScheduleScanDay](/windows/client-management/mdm/policy-configuration-service-provider#defender-schedulescanday) | Select the day that Windows Defender scan should run. | ✔️ |  |  |  |  |
-| [ScheduleScanTime](/windows/client-management/mdm/policy-configuration-service-provider#defender-schedulescantime)  | Select the time of day that the Windows Defender scan should run.  |  ✔️ |  |   |   |  |
-| [SignatureUpdateInterval](/windows/client-management/mdm/policy-configuration-service-provider#defender-signatureupdateinterval) | Specify the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval. | ✔️ |  |  |  |  |
-| [SubmitSamplesConsent](/windows/client-management/mdm/policy-configuration-service-provider#defender-submitsamplesconsent) | Checks for the user consent level in Windows Defender to send data. | ✔️ |  |  |  |  |
-| [ThreatSeverityDefaultAction](/windows/client-management/mdm/policy-configuration-service-provider#defender-threatseveritydefaultaction)  | Specify any valid threat severity levels and the corresponding default action ID to take.  |  ✔️ |  |   |   |  |
-=======
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: |
 | [AllowArchiveScanning](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowarchivescanning) | Allow or disallow scanning of archives. | ✔️ |  |  |  |
 | [AllowBehaviorMonitoring](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowbehaviormonitoring)  | Allow or disallow Windows Defender Behavior Monitoring functionality.  |  ✔️ |   |   |  |
 | [AllowCloudProtection](/windows/client-management/mdm/policy-configuration-service-provider#defender-allowcloudprotection) | To best protect your PC, Windows Defender will send information to Microsoft about any problems it finds. Microsoft will analyze that information, learn more about problems affecting you and other customers, and offer improved solutions. | ✔️ |   |  |  |
@@ -245,7 +216,6 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 | [SignatureUpdateInterval](/windows/client-management/mdm/policy-configuration-service-provider#defender-signatureupdateinterval) | Specify the interval (in hours) that will be used to check for signatures, so instead of using the ScheduleDay and ScheduleTime the check for new signatures will be set according to the interval. | ✔️ |  |  |  |
 | [SubmitSamplesConsent](/windows/client-management/mdm/policy-configuration-service-provider#defender-submitsamplesconsent) | Checks for the user consent level in Windows Defender to send data. | ✔️ |  |  |  |
 | [ThreatSeverityDefaultAction](/windows/client-management/mdm/policy-configuration-service-provider#defender-threatseveritydefaultaction)  | Specify any valid threat severity levels and the corresponding default action ID to take.  |  ✔️ |   |   |  |
->>>>>>> Stashed changes
 
 ## DeliveryOptimization
 
@@ -285,7 +255,7 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 ## DeviceLock
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: | 
 | [AllowIdleReturnWithoutPassword](/windows/client-management/mdm/policy-configuration-service-provider#devicelock-allowidlereturnwithoutpassword) | Specify whether the user must input a PIN or password when the device resumes from an idle state. |  |   |  |  |
 | [AllowScreenTimeoutWhileLockedUserConfig](/windows/client-management/mdm/policy-configuration-service-provider#devicelock-allowscreentimeoutwhilelockeduserconfig) | Specify whether to show a user-configurable setting to control the screen timeout while on the lock screen. |  |   |  |  |
 | [AllowSimpleDevicePassword](/windows/client-management/mdm/policy-configuration-service-provider#devicelock-allowsimpledevicepassword) | Specify whether PINs or passwords such as "1111" or "1234" are allowed. For the desktop, it also controls the use of picture passwords. | ✔️ |  | ✔️ |  |
@@ -311,7 +281,7 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 ## Experience
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: |
 | [AllowCopyPaste](/windows/client-management/mdm/policy-configuration-service-provider#experience-allowcopypaste) | Specify whether copy and paste is allowed. |  |  |  |  |
 | [AllowCortana](/windows/client-management/mdm/policy-configuration-service-provider#experience-allowcortana) | Specify whether Cortana is allowed on the device. | ✔️ |   | ✔️ |  |
 | [AllowDeviceDiscovery](/windows/client-management/mdm/policy-configuration-service-provider#experience-allowdevicediscovery) | Allow users to turn device discovery on or off in the UI.  | ✔️ |   |  |  |
@@ -334,7 +304,7 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 ## ExploitGuard
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: | 
 | [ExploitProtectionSettings](/windows/client-management/mdm/policy-csp-exploitguard) | See the [explanation of ExploitProtectionSettings](/windows/client-management/mdm/policy-csp-exploitguard) in the Policy CSP for instructions. In the **ExploitProtectionSettings** field, you can enter a path (local, UNC, or URI) to the mitigation options config, or you can enter the XML for the config. | ✔️ |   |  |  |
 
 
@@ -350,7 +320,7 @@ PreventTabPreloading | Prevent Microsoft Edge from starting and loading the Star
 These settings apply to the **Kiosk Browser** app available in Microsoft Store. For more information, see [Guidelines for web browsers](../guidelines-for-assigned-access-app.md#guidelines-for-web-browsers).
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: | 
 [BlockedUrlExceptions](/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-blockedurlexceptions) | List of exceptions to the blocked website URLs (with wildcard support). This is used to configure URLs kiosk browsers are allowed to navigate to, which are a subset of the blocked URLs. | ✔️ |  |  |  |
 [BlockedUrls](/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-blockedurls) | List of blocked website URLs (with wildcard support). This is used to configure blocked URLs kiosk browsers cannot navigate to. | ✔️ |  |  |  |  |
 [DefaultURL](/windows/client-management/mdm/policy-csp-kioskbrowser#kioskbrowser-defaulturl) | Configures the default URL kiosk browsers to navigate on launch and restart.  | ✔️ |  |  |  |
@@ -371,7 +341,7 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 ## LocalPoliciesSecurityOptions
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: |
 | [InteractiveLogon_DoNotDisplayLastSignedIn](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-interactivelogon-donotdisplaylastsignedin) | Specify whether the Windows sign-in screen will show the username of the last person who signed in. | ✔️ |  |  |  |
 | [Shutdown_AllowSystemtobeShutDownWithoutHavingToLogOn](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-shutdown-allowsystemtobeshutdownwithouthavingtologon) | Specify whether a computer can be shut down without signing in. | ✔️ |   |  |  |
 | [UserAccountControl_BehaviorOfTheElevationPromptForStandardUsers](/windows/client-management/mdm/policy-csp-localpoliciessecurityoptions#localpoliciessecurityoptions-useraccountcontrol-behavioroftheelevationpromptforstandardusers) | Configure how an elevation prompt should behave for standard users. | ✔️ |  |  |  |
@@ -385,7 +355,7 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 ## Power
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: | 
 | [AllowStandbyStatesWhenSleepingOnBattery](/windows/client-management/mdm/policy-csp-power#allowstandbystateswhensleepingonbattery) | Specify whether Windows can use standby states when putting the computer in a sleep state while on battery. | ✔️ |  |  |  |
 | [AllowStandbyWhenSleepingPluggedIn](/windows/client-management/mdm/policy-csp-power#allowstandbystateswhensleepingpluggedin) | Specify whether Windows can use standby states when putting the computer in a sleep state while plugged in. | ✔️ |  |  |  |
 | [DisplayOffTimeoutOnBattery](/windows/client-management/mdm/policy-csp-power#displayofftimeoutonbattery) | Specify the period of inactivity before Windows turns off the display while on battery. | ✔️ |  |  |  |
@@ -412,7 +382,7 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 ## Privacy
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: |
 | [AllowAutoAcceptPairingAndPrivacyConsentPrompts](/windows/client-management/mdm/policy-configuration-service-provider#privacy-allowautoacceptpairingandprivacyconsentprompts) | Allow or disallow the automatic acceptance of the pairing and privacy user consent dialog boxes when launching apps. |  |   |  |  |
 | [AllowInputPersonalization](/windows/client-management/mdm/policy-configuration-service-provider#privacy-allowinputpersonalization) | Allow the use of cloud-based speech services for Cortana, dictation, or Store apps. | ✔️ |   | ✔️ |  |
 
@@ -420,7 +390,7 @@ To configure multiple URLs for **Blocked URL Exceptions** or **Blocked URLs** in
 ## Search
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: | 
 [AllowCloudSearch](/windows/client-management/mdm/policy-csp-search#search-allowcloudsearch) | Allow search and Cortana to search cloud sources like OneDrive and SharePoint. T   | ✔️ |   |  |  |
 [AllowCortanaInAAD](/windows/client-management/mdm/policy-csp-search#search-allowcortanainaad) | This specifies whether the Cortana consent page can appear in the Azure Active Directory (AAD) device out-of-box-experience (OOBE) flow.    | ✔️ |   |  |  |
 | [AllowIndexingEncryptedStoresOrItems](/windows/client-management/mdm/policy-configuration-service-provider#search-allowindexingencryptedstoresoritems) | Allow or disallow the indexing of items. | ✔️ |   |  |  |
@@ -497,7 +467,7 @@ DisableContextMenus | Prevent context menus from being invoked in the Start menu
 ## System
 
 | Setting | Description | Windows client | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: | 
 | [AllowBuildPreview](/windows/client-management/mdm/policy-configuration-service-provider#system-allowbuildpreview) | Specify whether users can access the Insider build controls in the **Advanced Options** for Windows Update. | ✔️ |  |  |  |
 | [AllowEmbeddedMode](/windows/client-management/mdm/policy-configuration-service-provider#system-allowembeddedmode) | Specify whether to set general purpose device to be in embedded mode. | ✔️ |  ✔️ |  | ✔️ |
 | [AllowExperimentation](/windows/client-management/mdm/policy-configuration-service-provider#system-allowexperimentation) | Determine the level that Microsoft can experiment with the product to study user preferences or device behavior. | ✔️ |  |  | |
@@ -535,14 +505,14 @@ ConfigureTelemetryOptInSettingsUx | This policy setting determines whether peopl
 ## TimeLanguageSettings
 
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: | 
 | [AllowSet24HourClock](/windows/client-management/mdm/policy-configuration-service-provider#timelanguagesettings-allowset24hourclock) | Configure the default clock setting to be the 24 hour format. |  |  |  |  |
 
 
 ## Update
 
 |                                                                                                   Setting                                                                                                    |                                                                      Description                                                                      | Windows client |  Surface Hub | HoloLens | IoT Core |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------:|:---------------:|:-----------:|:--------:|:--------:|
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|:----------------:|:---------------:|:-----------:|:--------:|
 |                                    [ActiveHoursEnd](/windows/client-management/mdm/policy-configuration-service-provider#update-activehoursend)                                    |                    Use with **Update/ActiveHoursStart** to manage the range of active hours where update rboots are not scheduled.                    |        ✔️         |            ✔️      |          |    ✔️     |
 |                               [ActiveHoursMaxRange](/windows/client-management/mdm/policy-configuration-service-provider#update-activehoursmaxrange)                               |                                                        Specify the maximum active hours range.                                                        |        ✔️         |              ✔️      |          |    ✔️     |
 |                                  [ActiveHoursStart](/windows/client-management/mdm/policy-configuration-service-provider#update-activehoursstart)                                  |                    Use with **Update/ActiveHoursEnd** to manage the range of active hours where update reboots are not scheduled.                     |        ✔️         |             ✔️      |          |    ✔️     |
@@ -610,18 +580,13 @@ ConfigureTelemetryOptInSettingsUx | This policy setting determines whether peopl
 
 ## WindowsLogon
 
+
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
+| --- | --- | :---: | :---: | :---: | :---: | 
 | [HideFastUserSwitching](/windows/client-management/mdm/policy-configuration-service-provider#windowslogon-hidefastuserswitching) | Hide the **Switch account** button on the sign-in screen, Start, and the Task Manager. | ✔️ |  |  |  |
 
 ## WirelessDisplay
 
-<<<<<<< Updated upstream
-| Setting | Description | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowUserInputFromWirelessDisplayReceiver](/windows/client-management/mdm/policy-configuration-service-provider#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver) | This policy controls whether or not the wireless display can send input (keyboard, mouse, pen, and touch, dependent upon display support) back to the source device. For example, a Surface Laptop is projecting wirelessly to a Surface Hub. If input from the wireless display receiver is allowed, users can draw with a pen on the Surface Hub.  | ✔️ | ✔️ |  |  |  |
-=======
 | Setting | Description | Windows client |  Surface Hub | HoloLens | IoT Core |
 | --- | --- | :---: |  :---: | :---: | :---: |
 | [AllowUserInputFromWirelessDisplayReceiver](/windows/client-management/mdm/policy-configuration-service-provider#wirelessdisplay-allowuserinputfromwirelessdisplayreceiver) | This policy controls whether or not the wireless display can send input (keyboard, mouse, pen, and touch, dependent upon display support) back to the source device. For example, a Surface Laptop is projecting wirelessly to a Surface Hub. If input from the wireless display receiver is allowed, users can draw with a pen on the Surface Hub.  | ✔️ |   |  |  |
->>>>>>> Stashed changes
