@@ -10,8 +10,8 @@ ms.pagetype: security
 ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
-author: jogeurte
-ms.reviewer: jogeurte
+author: jgeurten
+ms.reviewer: jgeurten
 ms.author: dansimp
 manager: dansimp
 ms.date: 10/11/2021
