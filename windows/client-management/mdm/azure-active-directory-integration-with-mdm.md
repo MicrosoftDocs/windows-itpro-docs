@@ -135,7 +135,7 @@ Use the following steps to register a cloud-based MDM application with Azure AD.
 
 8.  Enter the login URL for your MDM service.
 
-9.  For the App ID, enter **https://&lt;your\_tenant\_name>/ContosoMDM**, then select OK.
+9.  For the App ID, enter `https://<your_tenant_name>/ContosoMDM`, then select OK.
 
 10. While still in the Azure portal, select the **Configure** tab of your application.
 
@@ -235,7 +235,7 @@ The Terms of Use endpoint is hosted by the MDM server. During the Azure AD Join 
 
 ### Redirect to the Terms of Use endpoint
 
-This redirect is a full page redirect to the Terms of User endpoint hosted by the MDM. Here's an example URL, https:<span></span>//fabrikam.contosomdm.com/TermsOfUse.
+This redirect is a full page redirect to the Terms of User endpoint hosted by the MDM. Here's an example URL, `https://fabrikam.contosomdm.com/TermsOfUse`.
 
 The following parameters are passed in the query string:
 
@@ -260,7 +260,7 @@ The following claims are expected in the access token passed by Windows to the T
 |Object ID|Identifier of the user object corresponding to the authenticated user.|
 |UPN|A claim containing the user principal name (UPN) of the authenticated user.|
 |TID|A claim representing the tenant ID of the tenant. In the example above, it's Fabrikam.|
-|Resource|A sanitized URL representing the MDM application. Example,<br> [https://fabrikam.contosomdm.com](https://fabrikam.contosomdm.com).|
+|Resource|A sanitized URL representing the MDM application. Example: `https://fabrikam.contosomdm.com` |
 
 
 > [!NOTE]
