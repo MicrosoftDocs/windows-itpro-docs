@@ -54,21 +54,35 @@ Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages glo
 
 1.  Using the information in the following table, create a new registry key using the name of the executable file, for example, **MyApp.exe**.
 
- |Package publishing method|Where to create the registry key|
- |--- |--- |
- |Published globally|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual<br>**Example:** <br>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe|
- |Published to the user|HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual<br> **Example:** <br>HKEY_CURRENT_USER \SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe|
- |Connection group can contain:<li>Packages that are published just globally or just to the user<li>Packages that are published globally and to the user|Either HKEY_LOCAL_MACHINE or HKEY_CURRENT_USER key, but all of the following must be true:<li>If you want to include multiple packages in the virtual environment, you must include them in an enabled connection group.<li>Create only one subkey for one of the packages in the connection group. If, for example, you have one package that is published globally, and another package that is published to the user, you create a subkey for either of these packages, but not both. Although you create a subkey for only one of the packages, all of the packages in the connection group, plus the local application, will be available in the virtual environment.<li>The key under which you create the subkey must match the publishing method you used for the package.<li>For example, if you published the package to the user, you must create the subkey under<code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual</code>. Do not add a key for the same application under both hives.|
+    - **Published globally**: Create the `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual` registry key.
+
+      For example, create `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe`.
+
+    - **Published to the user**: Create the `HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual` registry key.
+
+       For example, create `HKEY_CURRENT_USER \SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe`.
+
+    - Connection group can be:
+      - Packages that are published just globally or just to the user
+      - Packages that are published globally and to the user
+
+      Use the `HKEY_LOCAL_MACHINE` or `HKEY_CURRENT_USER` key. But, all of the following must be true:
+
+      - If you want to include multiple packages in the virtual environment, you must include them in an enabled connection group.
+      - Create only one subkey for one of the packages in the connection group. If, for example, you have one package that is published globally, and another package that is published to the user, you create a subkey for either of these packages, but not both. Although you create a subkey for only one of the packages, all of the packages in the connection group, plus the local application, will be available in the virtual environment.
+      - The key under which you create the subkey must match the publishing method you used for the package.
+
+        For example, if you published the package to the user, you must create the subkey under `HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual`. Do not add a key for the same application under both hives.
 
 2.  Set the new registry subkey’s value to the PackageId and VersionId of the package, separating the values with an underscore.
 
-    **Syntax**: &lt;PackageId&gt;\_&lt;VersionId&gt;
+    **Syntax**: `<PackageId>_<VersionId>`
 
     **Example**: 4c909996-afc9-4352-b606-0b74542a09c1\_be463724-Oct1-48f1-8604-c4bd7ca92fa
 
     The application in the previous example would produce a registry export file (.reg file) like the following:
 
-    ``` syntax
+    ```registry
     Windows Registry Editor Version 5.00 
     [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual] 
     @="" 
@@ -81,24 +95,24 @@ Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages glo
 
 You can use the **Start-AppVVirtualProcess** cmdlet to retrieve the package name and then start a process within the specified package's virtual environment. This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
 
-Use the following example syntax, and substitute the name of your package for **&lt;Package&gt;**:
+Use the following example syntax, and substitute the name of your package for `<Package>`:
 
 `$AppVName = Get-AppvClientPackage <Package>`
 
 `Start-AppvVirtualProcess -AppvClientObject $AppVName cmd.exe`
 
-If you don’t know the exact name of your package, you can use the command line <strong>Get-AppvClientPackage \*executable\*</strong>, where **executable** is the name of the application, for example:<br>Get-AppvClientPackage \*Word\*
+If you don’t know the exact name of your package, you can use the command line `Get-AppvClientPackage YourExecutable`, where `YourExecutable` is the name of the application. For example, enter `Get-AppvClientPackage Word`.
 
-## <a href="" id="bkmk-cl-switch-appvpid"></a>Command line switch /appvpid:&lt;PID&gt;
+## <a href="" id="bkmk-cl-switch-appvpid"></a>Command line switch `/appvpid:<PID>`
 
 
-You can apply the **/appvpid:&lt;PID&gt;** switch to any command, which enables that command to run within a virtual process that you select by specifying its process ID (PID). Using this method launches the new executable in the same App-V environment as an executable that is already running.
+You can apply the `/appvpid:<PID>` switch to any command, which enables that command to run within a virtual process that you select by specifying its process ID (PID). Using this method launches the new executable in the same App-V environment as an executable that is already running.
 
 Example: `cmd.exe /appvpid:8108`
 
 To find the process ID (PID) of your App-V process, run the command **tasklist.exe** from an elevated command prompt.
 
-## <a href="" id="bkmk-cl-hook-switch-appvve"></a>Command line hook switch /appvve:&lt;GUID&gt;
+## <a href="" id="bkmk-cl-hook-switch-appvve"></a>Command line hook switch `/appvve:<GUID>`
 
 
 This switch lets you run a local command within the virtual environment of an App-V package. Unlike the **/appvid** switch, where the virtual environment must already be running, this switch enables you to start the virtual environment.
@@ -117,25 +131,11 @@ To get the package GUID and version GUID of your application, run the **Get-Appv
 
 -   Version ID of the desired package
 
-If you don’t know the exact name of your package, use the command line <strong>Get-AppvClientPackage \*executable\*</strong>, where **executable** is the name of the application, for example:<br>Get-AppvClientPackage \*Word\*
+If you don’t know the exact name of your package, use the command line `Get-AppvClientPackage YourExecutable`, where `YourExecutable` is the name of the application. For example, enter `Get-AppvClientPackage Word`.
 
 This method lets you launch any command within the context of an App-V package, regardless of whether the package is currently running.
-
-
-
-
-<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
 
 [Technical Reference for App-V](appv-technical-reference.md)
-
- 
-
- 
-
-
-
-
-
