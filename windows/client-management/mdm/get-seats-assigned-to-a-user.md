@@ -43,9 +43,8 @@ The response body contain [SeatDetailsResultSet](data-structures-windows-store-f
 
 |Error code|Description|Retry|Data field|
 |--- |--- |--- |--- |
-|400|Invalid parameters|No|Parameter name<br>Reason: Invalid parameter<br>Details: String|
-|404|Not found||Item type: User
-Values: UserName|
+|400|Invalid parameters|No|Parameter name<br><br>Reason: Invalid parameter<br><br>Details: String|
+|404|Not found||Item type: User<br><br>Values: UserName|
 
  
 
