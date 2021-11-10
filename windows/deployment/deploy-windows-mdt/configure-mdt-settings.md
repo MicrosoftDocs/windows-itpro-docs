@@ -35,7 +35,7 @@ The computers used in this topic.
 -   [Configure MDT deployment share rules](configure-mdt-deployment-share-rules.md)
 -   [Configure MDT for UserExit scripts](configure-mdt-for-userexit-scripts.md)
 -   [Simulate a Windows 10 deployment in a test environment](simulate-a-windows-10-deployment-in-a-test-environment.md)
--   [Use the MDT database to stage Windows 10 deployment information](use-the-mdt-database-to-stage-windows-10-deployment-information.md)
+-   [Use the MDT database to stage Windows deployment information](use-the-mdt-database-to-stage-windows-deployment-information.md)
 -   [Assign applications using roles in MDT](assign-applications-using-roles-in-mdt.md)
 -   [Use web services in MDT](use-web-services-in-mdt.md)
 -   [Use Orchestrator runbooks with MDT](use-orchestrator-runbooks-with-mdt.md)
