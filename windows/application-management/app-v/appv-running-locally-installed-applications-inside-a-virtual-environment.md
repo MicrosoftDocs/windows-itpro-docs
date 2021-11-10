@@ -54,46 +54,11 @@ Starting with App-V 5.0 SP3, when using RunVirtual, you can publish packages glo
 
 1.  Using the information in the following table, create a new registry key using the name of the executable file, for example, **MyApp.exe**.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Package publishing method</th>
-    <th align="left">Where to create the registry key</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Published globally</p></td>
-    <td align="left"><p>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual</p>
-    <p><strong>Example</strong>: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Published to the user</p></td>
-    <td align="left"><p>HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual</p>
-    <p><strong>Example</strong>: HKEY_CURRENT_USER \SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Connection group can contain:</p>
-    <ul>
-    <li><p>Packages that are published just globally or just to the user</p></li>
-    <li><p>Packages that are published globally and to the user</p></li>
-    </ul></td>
-    <td align="left"><p>Either HKEY_LOCAL_MACHINE or HKEY_CURRENT_USER key, but all of the following must be true:</p>
-    <ul>
-    <li><p>If you want to include multiple packages in the virtual environment, you must include them in an enabled connection group.</p></li>
-    <li><p>Create only one subkey for one of the packages in the connection group. If, for example, you have one package that is published globally, and another package that is published to the user, you create a subkey for either of these packages, but not both. Although you create a subkey for only one of the packages, all of the packages in the connection group, plus the local application, will be available in the virtual environment.</p></li>
-    <li><p>The key under which you create the subkey must match the publishing method you used for the package.</p>
-    <p>For example, if you published the package to the user, you must create the subkey under <code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual</code>. Do not add a key for the same application under both hives.</p></li>
-    </ul></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+ |Package publishing method|Where to create the registry key|
+ |--- |--- |
+ |Published globally|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual<br>**Example:** <br>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe|
+ |Published to the user|HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual<br> **Example:** <br>HKEY_CURRENT_USER \SOFTWARE\Microsoft\AppV\Client\RunVirtual\MyApp.exe|
+ |Connection group can contain:<li>Packages that are published just globally or just to the user<li>Packages that are published globally and to the user|Either HKEY_LOCAL_MACHINE or HKEY_CURRENT_USER key, but all of the following must be true:<li>If you want to include multiple packages in the virtual environment, you must include them in an enabled connection group.<li>Create only one subkey for one of the packages in the connection group. If, for example, you have one package that is published globally, and another package that is published to the user, you create a subkey for either of these packages, but not both. Although you create a subkey for only one of the packages, all of the packages in the connection group, plus the local application, will be available in the virtual environment.<li>The key under which you create the subkey must match the publishing method you used for the package.<li>For example, if you published the package to the user, you must create the subkey under<code>HKEY_CURRENT_USER\SOFTWARE\Microsoft\AppV\Client\RunVirtual</code>. Do not add a key for the same application under both hives.|
 
 2.  Set the new registry subkey’s value to the PackageId and VersionId of the package, separating the values with an underscore.
 

@@ -69,40 +69,12 @@ Adding a new browser favorite.
 
 The following table shows the Microsoft custom elements that this configuration service provider supports for OMA Client Provisioning.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elements</th>
-<th>Available</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Parm-query</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Noparm</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Nocharacteristic</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Characteristic-query</p></td>
-<td><p>Yes</p>
-<p>Recursive query: Yes</p>
-<p>Top-level query: Yes</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Elements|Available|
+|--- |--- |
+|Parm-query|Yes|
+|Noparm|Yes|
+|Nocharacteristic|Yes|
+|Characteristic-query|Yes<br> <br>Recursive query: Yes<br> <br>Top-level query: Yes|
 
 ## Related topics
 

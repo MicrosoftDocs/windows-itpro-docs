@@ -85,17 +85,13 @@ See the [example ETW capture](#example-etw-capture) at the bottom of this articl
 
 The following is a high-level view of the main wifi components in Windows.
 
-<table>
-<tr><td><img src="images/wcm.png" alt="Windows Connection Manager"></td><td>The <b>Windows Connection Manager</b> (Wcmsvc) is closely associated with the UI controls (taskbar icon) to connect to various networks, including wireless networks. It accepts and processes input from the user and feeds it to the core wireless service. </td></tr>
-<tr><td><img src="images/wlan.png" alt="WLAN Autoconfig Service"></td><td>The <b>WLAN Autoconfig Service</b> (WlanSvc) handles the following core functions of wireless networks in windows:
-
-- Scanning for wireless networks in range
-- Managing connectivity of wireless networks</td></tr>
-<tr><td><img src="images/msm.png" alt="Media Specific Module"></td><td>The <b>Media Specific Module</b> (MSM) handles security aspects of connection being established.</td></tr>
-<tr><td><img src="images/wifi-stack.png" alt="Native WiFi stack"></td><td>The <b>Native WiFi stack</b> consists of drivers and wireless APIs to interact with wireless miniports and the supporting user-mode Wlansvc.</td></tr>
-<tr><td><img src="images/miniport.png" alt="Wireless miniport"></td><td>Third-party <b>wireless miniport</b> drivers interface with the upper wireless stack to provide notifications to and receive commands from Windows.</td></tr>
-</table>
-
+|Wi-fi Components|Description|
+|--- |--- |
+|![Windows Connection Manager](images/wcm.png)|The Windows Connection Manager (Wcmsvc) is closely associated with the UI controls (taskbar icon) to connect to various networks, including wireless networks. It accepts and processes input from the user and feeds it to the core wireless service.|
+|![WLAN Autoconfig Service](images/wlan.png)|The WLAN Autoconfig Service (WlanSvc) handles the following core functions of wireless networks in windows:<li> Scanning for wireless networks in range<li>Managing connectivity of wireless networks|
+|![Media Specific Module](images/msm.png)|The Media Specific Module (MSM) handles security aspects of connection being established.|
+|![Native WiFi stack](images/wifi-stack.png)|The Native WiFi stack consists of drivers and wireless APIs to interact with wireless miniports and the supporting user-mode Wlansvc.|
+|![Wireless miniport](images/miniport.png)|Third-party wireless miniport drivers interface with the upper wireless stack to provide notifications to and receive commands from Windows.|
 
 The wifi connection state machine has the following states:
 - Reset
