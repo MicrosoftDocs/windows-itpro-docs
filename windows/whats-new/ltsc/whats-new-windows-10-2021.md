@@ -21,18 +21,22 @@ ms.topic: article
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2021, compared to Windows 10 Enterprise LTSC 2019 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
 
 > [!NOTE]
-> Features in Windows 10 Enterprise LTSC 2021 are equivalent to Windows 10, version 21H2. 
+> Features in Windows 10 Enterprise LTSC 2021 are equivalent to Windows 10, version 21H2.<br>
+> The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the semi-annual channel release of Windows 10 might be limited.
 
-Windows 10 Enterprise LTSC 2021 builds on Windows 10 Pro, version 21H2, adding premium features such as advanced protection against modern security threats and comprehensive device management, app management, and control capabilities.
+Windows 10 Enterprise LTSC 2021 builds on Windows 10 Pro, version 21H2, adding premium features such as advanced protection against modern security threats and comprehensive device management, app management, and control capabilities. 
 
 The Windows 10 Enterprise LTSC 2021 release includes the cumulative enhancements provided in Windows 10 versions 1903, 1909, 2004, and 21H1. Details about these enhancements are provided below. 
 
-> [!IMPORTANT]
-> The LTSC release is [intended for special use devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/LTSC-What-is-it-and-when-should-it-be-used/ba-p/293181). Support for LTSC by apps and tools that are designed for the semi-annual channel release of Windows 10 might be limited.
+
+
 
 ## Lifecycle
 
-Windows 10 Enterprise LTSC 2021 has a 5 year lifecycle (except for IoT). It is not a direct replacement for LTSC 2019, which continues to have a 10 year lifecycle. For more information, see [The next Windows 10 Long Term Servicing Channel (LTSC) release](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-next-windows-10-long-term-servicing-channel-ltsc-release/ba-p/2147232).
+> [!IMPORTANT]
+> Windows 10 Enterprise LTSC 2021 has a 5 year lifecycle (except for IoT). It is not a direct replacement for LTSC 2019, which continues to have a 10 year lifecycle.
+
+For more information about the lifecycle for this release, see [The next Windows 10 Long Term Servicing Channel (LTSC) release](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-next-windows-10-long-term-servicing-channel-ltsc-release/ba-p/2147232).
 
 ## Microsoft Edge
 
@@ -80,7 +84,6 @@ WPA3 H2E standards are supported for enhanced Wi-Fi security.
 
 #### Microsoft Defender for Endpoint
 
-- [Auto Labeling](/windows/security/information-protection/windows-information-protection/how-wip-works-with-labels#how-wip-protects-automatically-classified-files). 
 - [Attack surface area reduction](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction) – IT admins can configure devices with advanced web protection that enables them to define allow and deny lists for specific URL’s and IP addresses.
 - [Next generation protection](/microsoft-365/security/defender-endpoint/microsoft-defender-antivirus-in-windows-10) – Controls have been extended to protection from ransomware, credential misuse, and attacks that are transmitted through removable storage.
     - Integrity enforcement capabilities – Enable remote runtime attestation of Windows 10 platform.
@@ -168,30 +171,23 @@ An experimental implementation of TLS 1.3 is included in Windows 10, version 190
 
 [Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. The following Windows Autopilot features are available in Windows 10, version 1903 and later:
 
-- [Windows Autopilot for white glove deployment](/windows/deployment/windows-autopilot/white-glove) is new in this version of Windows. "White glove" deployment enables partners or IT staff to pre-provision devices so they are fully configured and business ready for your users.
+- [Windows Autopilot for for pre-provisioned deployment](/windows/deployment/windows-autopilot/pre-provision) is now available. Pre-provisioned deployment enables partners or IT staff to pre-provision devices so they are fully configured and business ready for your users.
 - The Intune [enrollment status page](/intune/windows-enrollment-status) (ESP) now tracks Intune Management Extensions​.
 - [Cortana voiceover](/windows-hardware/customize/desktop/cortana-voice-support) and speech recognition during OOBE is disabled by default for all Windows 10 Pro Education, and Enterprise SKUs.
 - Windows Autopilot is self-updating during OOBE. Starting with the Windows 10, version 1903 Autopilot functional and critical updates will begin downloading automatically during OOBE.
 - Windows Autopilot will set the [diagnostics data](/windows/privacy/windows-diagnostic-data) level to Full on Windows 10 version 1903 and later during OOBE.
-
-With this release, you can configure [Windows Autopilot user-driven](/windows/deployment/windows-autopilot/user-driven) Hybrid Azure Active Directory join with VPN support. This support is also backported to Windows 10, version 1909 and 1903.
-
-If you configure the language settings in the Autopilot profile and the device is connected to Ethernet, all scenarios will now skip the language, locale, and keyboard pages.  In previous versions, this was only supported with self-deploying profiles.
-
-Enhancements to Windows Autopilot since the last release of Windows 10 include:
-- [Windows Autopilot for HoloLens](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/windows-autopilot-for-hololens-2/ba-p/1371494): Set up HoloLens 2 devices with Windows Autopilot for HoloLens 2 self-deploying mode.
-- [Windows Autopilot with co-management](/mem/configmgr/comanage/quickstart-autopilot): Co-management and Autopilot together can help you reduce cost and improve the end user experience.
+- [Windows Autopilot with co-management](/mem/configmgr/comanage/quickstart-autopilot) is available. Co-management and Autopilot together can help you reduce cost and improve the end user experience.
 - Enhancements to Windows Autopilot deployment reporting are in preview. From the Microsoft Endpoint Manager admin center (endpoint.microsoft.com), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Click **Autopilot deployment (preview)**.
-
-A new [resolved issues](/mem/autopilot/resolved-issues) article is available that includes several new fixes for Windows Autopilot deployment scenarios.
-
-A new Intune remote action: **Collect diagnostics**, lets you collect the logs from corporate devices without interrupting or waiting for the end user. For more information, see [Collect diagnostics remote action](/mem/intune/fundamentals/whats-new#collect-diagnostics-remote-action).
-
-Intune has also added capabilities to [Role-based access control](/mem/intune/fundamentals/whats-new#role-based-access-control) (RBAC) that can be used to further define profile settings for the Enrollment Status Page (ESP). For more information see [Create Enrollment Status Page profile and assign to a group](/mem/intune/enrollment/windows-enrollment-status#create-enrollment-status-page-profile-and-assign-to-a-group).  
+- You can configure [Windows Autopilot user-driven](/windows/deployment/windows-autopilot/user-driven) Hybrid Azure Active Directory join with VPN support.
+- If you configure the language settings in the Autopilot profile and the device is connected to Ethernet, all scenarios will now skip the language, locale, and keyboard pages.  In previous versions, this was only supported with self-deploying profiles.
 
 ## Microsoft Intune
 
 Microsoft Intune supports Windows 10 Enterprise LTSC 2021, except for [Windows Update Rings](/mem/intune/configuration/device-profile-create#create-the-profile) in device profiles.
+
+A new Intune remote action: **Collect diagnostics**, lets you collect the logs from corporate devices without interrupting or waiting for the end user. For more information, see [Collect diagnostics remote action](/mem/intune/fundamentals/whats-new#collect-diagnostics-remote-action).
+
+Intune has also added capabilities to [Role-based access control](/mem/intune/fundamentals/whats-new#role-based-access-control) (RBAC) that can be used to further define profile settings for the Enrollment Status Page (ESP). For more information see [Create Enrollment Status Page profile and assign to a group](/mem/intune/enrollment/windows-enrollment-status#create-enrollment-status-page-profile-and-assign-to-a-group). 
 
 For a full list of what's new in Microsoft Intune, see [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new).
 
