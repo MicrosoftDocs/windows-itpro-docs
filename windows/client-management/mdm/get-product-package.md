@@ -36,9 +36,7 @@ The following parameters may be specified in the request URI.
 
 |Error code|Description|Retry|Data field|Details|
 |--- |--- |--- |--- |--- |
-|400|Invalid parameters|No|Parameter name
-Reason: Invalid parameter
-Details: String|Can be productId, skuId, or packageId|
+|400|Invalid parameters|No|Parameter name <br/> <br/>Reason: Invalid parameter <br/> <br/>Details: String|Can be productId, skuId, or packageId|
 |404|Not found|||Item type: Product/SKU|
 |409|Conflict||Reason: Not owned||
 
