@@ -17,7 +17,8 @@ ms.date: 07/12/2017
 
 The EnterpriseAssignedAccess configuration service provider allows IT administrators to configure settings, such as language and themes, lock down a device, and configure custom layouts on a device. For example, the administrator can lock down a device so that only applications specified in an Allow list are available. Apps not on the Allow list remain installed on the device, but are hidden from view and blocked from launching.
 
-> **Note**   The EnterpriseAssignedAccess CSP is only supported in Windows 10 Mobile.
+> [!NOTE]
+> The EnterpriseAssignedAccess CSP is only supported in Windows 10 Mobile.
 
 For more information about how to interact with the lockdown XML at runtime, see [**DeviceLockdownProfile class**](/uwp/api/Windows.Embedded.DeviceLockdown.DeviceLockdownProfile).
 
@@ -789,7 +790,8 @@ The culture code that identifies the language to display on a device, and specif
 
 The language setting is configured in the Default User profile only.
 
-> **Note**  Apply the Locale ID only after the corresponding language packs are built into and supported for the OS image running on the device. The specified language will be applied as the phone language and a restart may be required.
+> [!NOTE]
+> Apply the Locale ID only after the corresponding language packs are built into and supported for the OS image running on the device. The specified language will be applied as the phone language and a restart may be required.
 
 Supported operations are Get and Replace.
 
@@ -798,7 +800,8 @@ Supported operations are Get and Replace.
 
 The XML examples in this section show how to perform various tasks by using OMA client provisioning.
 
-> **Note**  These examples are XML snippets and do not include all sections that are required for a complete lockdown XML file.
+> [!NOTE]
+> These examples are XML snippets and do not include all sections that are required for a complete lockdown XML file.
 
  
 
