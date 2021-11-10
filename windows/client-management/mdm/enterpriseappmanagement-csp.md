@@ -436,7 +436,7 @@ To perform an XAP update, create the Name, URL, Version, and DownloadInstall nod
 > [!NOTE]
 > - If a previous app-update node existed for this product ID (the node can persist for up to 1 week or 7 days after an installation has completed), then a 418 (already exist) error would be returned on the “Add”. To get around the 418 error, the server should issue a Replace command for the Name, URL, and Version nodes, and then execute on the “DownloadInstall” (within an “Atomic” operation).
 > 
-> -The application product ID curly braces need to be escaped where { is %7B and } is %7D.
+> - The application product ID curly braces need to be escaped where { is %7B and } is %7D.
 
  
 
