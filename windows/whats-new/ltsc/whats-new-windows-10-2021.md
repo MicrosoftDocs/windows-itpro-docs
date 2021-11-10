@@ -20,14 +20,10 @@ ms.topic: article
 
 This article lists new and updated features and content that are of interest to IT Pros for Windows 10 Enterprise LTSC 2021, compared to Windows 10 Enterprise LTSC 2019 (LTSB). For a brief description of the LTSC servicing channel and associated support, see [Windows 10 Enterprise LTSC](index.md).
 
->[!NOTE]
->Features in Windows 10 Enterprise LTSC 2021 are equivalent to Windows 10, version 21H2. 
+> [!NOTE]
+> Features in Windows 10 Enterprise LTSC 2021 are equivalent to Windows 10, version 21H2. 
 
-Windows 10 Enterprise LTSC 2021 builds on Windows 10 Pro, version 21H2, adding premium features designed to address the needs of large and mid-size organizations (including large academic institutions), such as:
-- Advanced protection against modern security threats 
-- Full flexibility of OS deployment
-- Updating and support options
-- Comprehensive device and app management and control capabilities
+Windows 10 Enterprise LTSC 2021 builds on Windows 10 Pro, version 21H2, adding premium features such as advanced protection against modern security threats and comprehensive device management, app management, and control capabilities.
 
 The Windows 10 Enterprise LTSC 2021 release includes the cumulative enhancements provided in Windows 10 versions 1903, 1909, 2004, and 21H1. Details about these enhancements are provided below. 
 
