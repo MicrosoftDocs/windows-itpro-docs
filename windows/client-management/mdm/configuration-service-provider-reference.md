@@ -1288,7 +1288,7 @@ The following list shows the CSPs supported in HoloLens devices:
 - [Policy CSP](policy-configuration-service-provider.md)
 - [Provisioning CSP (Provisioning only)](provisioning-csp.md)
 - [Reboot CSP](reboot-csp.md)
-- [RemoteWipe CSP](remotewipe-csp.md)<sup>5<sup>
+- [RemoteWipe CSP](remotewipe-csp.md)
 - [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 - [UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)
 - [Update CSP](update-csp.md)
