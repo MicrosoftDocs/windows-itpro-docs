@@ -158,48 +158,16 @@ Supported operations are Get, Add, and Replace.
 <a href="" id="-download-productid-status"></a>**/Download/*ProductID*/Status**
 Required. The integer value that indicates the status of the current download process. The following table shows the possible values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>0: CONFIRM</p></td>
-<td><p>Waiting for confirmation from user.</p></td>
-</tr>
-<tr class="even">
-<td><p>1: QUEUED</p></td>
-<td><p>Waiting for download to start.</p></td>
-</tr>
-<tr class="odd">
-<td><p>2: DOWNLOADING</p></td>
-<td><p>In the process of downloading.</p></td>
-</tr>
-<tr class="even">
-<td><p>3: DOWNLOADED</p></td>
-<td><p>Waiting for installation to start.</p></td>
-</tr>
-<tr class="odd">
-<td><p>4: INSTALLING</p></td>
-<td><p>Handed off for installation.</p></td>
-</tr>
-<tr class="even">
-<td><p>5: INSTALLED</p></td>
-<td><p>Successfully installed</p></td>
-</tr>
-<tr class="odd">
-<td><p>6: FAILED</p></td>
-<td><p>Application was rejected (not signed properly, bad XAP format, not enrolled properly, etc.)</p></td>
-</tr>
-<tr class="even">
-<td><p>7:DOWNLOAD_FAILED</p></td>
-<td><p>Unable to connect to server, file doesn&#39;t exist, etc.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Value|Description|
+|--- |--- |
+|0: CONFIRM|Waiting for confirmation from user.|
+|1: QUEUED|Waiting for download to start.|
+|2: DOWNLOADING|In the process of downloading.|
+|3: DOWNLOADED|Waiting for installation to start.|
+|4: INSTALLING|Handed off for installation.|
+|5: INSTALLED|Successfully installed|
+|6: FAILED|Application was rejected (not signed properly, bad XAP format, not enrolled properly, etc.)|
+|7:DOWNLOAD_FAILED|Unable to connect to server, file doesn't exist, etc.|
 
 Scope is dynamic. Supported operations are Get, Add, and Replace.
 
