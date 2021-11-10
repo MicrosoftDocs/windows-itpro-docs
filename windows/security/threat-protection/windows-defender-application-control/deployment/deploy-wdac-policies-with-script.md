@@ -98,4 +98,4 @@ In addition to the steps outlined above, the binary policy file must also be cop
    Copy-Item -Path $PolicyBinary -Destination $EFIDestinationFolder -Force
     ```
 
-3. Reboot the system.
+3. Restart the system.
