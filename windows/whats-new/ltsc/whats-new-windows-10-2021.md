@@ -44,12 +44,9 @@ Microsoft Edge Browser support is now included in-box.
 Microsoft Edge kiosk mode is available for LTSC releases starting in Windows 10 Enterprise 2021 LTSC and [Windows 10 IoT Enterprise 2021 LTSC](/windows/iot/product-family/what's-new-in-windows-10-iot-enterprise-21h2).
 
 Microsoft Edge kiosk mode offers two lockdown experiences of the browser so organizations can create, manage, and provide the best experience for their customers. The following lockdown experiences are available:
-
-Digital/Interactive Signage experience - Displays a specific site in full-screen mode.
-Public-Browsing experience - Runs a limited multi-tab version of Microsoft Edge.
-Both experiences are running a Microsoft Edge InPrivate session, which protects user data.
-
-
+- Digital/Interactive Signage experience - Displays a specific site in full-screen mode.
+- Public-Browsing experience - Runs a limited multi-tab version of Microsoft Edge.
+- Both experiences are running a Microsoft Edge InPrivate session, which protects user data.
 
 ## Security
 
@@ -118,7 +115,7 @@ WDAG performance is improved with optimized document opening times:
 
 Microsoft Defender Application Guard now supports Office: With [Microsoft Defender Application Guard for Office](/microsoft-365/security/office-365-security/install-app-guard), you can launch untrusted Office documents (from outside the Enterprise) in an isolated container to prevent potentially malicious content from compromising your device.
 
-- [Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control): In Windows 10, version 1903 WDAC has a number of new features that light up key scenarios and provide feature parity with AppLocker.
+- [Windows Defender Application Control (WDAC)](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control): In Windows 10, version 1903 WDAC added a number of new features that light up key scenarios and provide feature parity with AppLocker.
     - [Multiple Policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies): WDAC now supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios: 1) enforce and audit side-by-side, 2) simpler targeting for policies with different scope/intent, 3) expanding a policy using a new ‘supplemental’ policy.
     - [Path-Based Rules](/windows/security/threat-protection/windows-defender-application-control/create-path-based-rules): The path condition identifies an app by its location in the file system of the computer or on the network instead of a signer or hash identifier. Additionally, WDAC has an option that allows admins to enforce at runtime that only code from paths that are not user-writeable is executed. When code tries to execute at runtime, the directory is scanned and files will be checked for write permissions for non-known admins. If a file is found to be user writeable, the executable is blocked from running unless it is authorized by something other than a path rule like a signer or hash rule.<br>
     This brings WDAC to functionality parity with AppLocker in terms of support for file path rules. WDAC improves upon the security of policies based on file path rules with the availability of the user-writability permission checks at runtime time, which is a capability that is not available with AppLocker.
@@ -130,13 +127,13 @@ Microsoft Defender Application Guard now supports Office: With [Microsoft Defend
 
 This new feature is displayed under the Device Security page with the string “Your device exceeds the requirements for enhanced hardware security” if configured properly:
 
-![System Guard.](images/system-guard.png "SMM Firmware Measurement")
+![System Guard.](../images/system-guard.png "SMM Firmware Measurement")
 
 In this release, [Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) enables an even *higher* level of [System Management Mode](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows#system-management-mode-smm-protection) (SMM) Firmware Protection that goes beyond checking the OS memory and secrets to additional resources like registers and IO.
 
 With this improvement, the OS can detect a higher level of SMM compliance, enabling devices to be even more hardened against SMM exploits and vulnerabilities. This feature is forward-looking and currently requires new hardware available soon.
 
- ![System Guard.](images/system-guard2.png)
+ ![System Guard.](../images/system-guard2.png)
 
 ### Security management
 
@@ -160,7 +157,15 @@ An experimental implementation of TLS 1.3 is included in Windows 10, version 190
 
 ### Windows Autopilot
 
-[Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) is a collection of technologies used to set up and pre-configure new devices, getting them ready for productive use. The following Windows Autopilot features are available in Windows 10, version 1903 and later:
+[Windows Autopilot](/mem/autopilot/windows-autopilot) is a deployment tool introduced with Windows 10, version 1709 and is also available for Windows 10 Enterprise LTSC 2019, LTSC 2021, and later versions. Windows Autopilot provides a modern device lifecycle management service powered by the cloud to deliver a zero touch experience for deploying Windows 10. 
+
+Windows Autopilot is currently available with Surface, Dell, HP, and Lenovo. Other OEM partners such as Panasonic, and Acer will support Autopilot soon. Check the [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog) or this article for updated information.
+
+Using Intune, Autopilot now enables locking the device during provisioning during the Windows Out Of Box Experience (OOBE) until policies and settings for the device get provisioned, thereby ensuring that by the time the user gets to the desktop, the device is secured and configured correctly. 
+
+You can also apply an Autopilot deployment profile to your devices using Microsoft Store for Business. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the Autopilot deployment profile you applied to the device. For more information, see [Manage Windows device deployment with Windows Autopilot Deployment](/microsoft-store/add-profile-to-devices).
+
+The following new Windows Autopilot features are available in Windows 10, version 1903 and later:
 
 - [Windows Autopilot for for pre-provisioned deployment](/windows/deployment/windows-autopilot/pre-provision) is now available. Pre-provisioned deployment enables partners or IT staff to pre-provision devices so they are fully configured and business ready for your users.
 - The Intune [enrollment status page](/intune/windows-enrollment-status) (ESP) now tracks Intune Management Extensions​.
