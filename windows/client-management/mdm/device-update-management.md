@@ -356,11 +356,30 @@ If the **Specify intranet Microsoft update service location** policy is enabled,
 
 If the **Allow Telemetry** policy is enabled and the Options value is set to 0, then the **Defer upgrades by**, **Defer updates by** and **Pause Updates and Upgrades** settings have no effect.
 
-|Update category|Maximum deferral|Deferral increment|Update type/notes|
-|--- |--- |--- |--- |
-|OS upgrade|8 months|1 month|Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5|
-|Update|1 month|1 week|<div class="alert">**Note:** <br>If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.</div><li>Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441<li>Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4<li>Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F<li>Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828<li>Tools - B4832BD8-E735-4761-8DAF-37F882276DAB<li>Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F<li>Update -<li>CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83<li>Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0|
-|Other/cannot defer|No deferral|No deferral|Any update category not enumerated above falls into this category.<br> <br>Definition Update - E0789628-CE08-4437-BE74-2495B842F43B|
+- **Update category**: OS upgrade
+  - **Maximum deferral**: 8 months
+  - **Deferral increment**: 1 month
+  - **Update type/notes**: Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5
+
+- **Update category**: Update
+  - **Maximum deferral**: 1 month
+  - **Deferral increment**: 1 week
+  - **Update type/notes**: If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
+
+    - Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441
+    - Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4
+    - Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F
+    - Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828
+    - Tools - B4832BD8-E735-4761-8DAF-37F882276DAB
+    - Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F
+    - Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83
+    - Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0
+
+- **Update category**: Other/cannot defer
+  - **Maximum deferral**: No deferral
+  - **Deferral increment**: No deferral
+  - **Update type/notes**: Any update category not enumerated above falls into this category.
+    - Definition Update - E0789628-CE08-4437-BE74-2495B842F43B
 
 <a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**
 > [!NOTE]
