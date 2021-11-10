@@ -23,7 +23,8 @@ The EnterpriseAssignedAccess configuration service provider allows IT administra
 For more information about how to interact with the lockdown XML at runtime, see [**DeviceLockdownProfile class**](/uwp/api/Windows.Embedded.DeviceLockdown.DeviceLockdownProfile).
 
 The following shows the EnterpriseAssignedAccess configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
-```
+
+```console
 ./Vendor/MSFT
 EnterpriseAssignedAccess
 ----AssignedAccess
@@ -39,6 +40,7 @@ EnterpriseAssignedAccess
 ----Locale
 --------Language
 ```
+
 The following list shows the characteristics and parameters.
 
 <a href="" id="-vendor-msft-enterpriseassignedaccess-"></a>**./Vendor/MSFT/EnterpriseAssignedAccess/**
