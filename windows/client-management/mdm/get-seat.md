@@ -46,11 +46,3 @@ The response body contains [SeatDetails](data-structures-windows-store-for-busin
 |400|Invalid parameters|No|Parameter name <br/><br/>Reason: Missing parameter or invalid parameter<br/><br/>Details: String|Invalid can include productId, skuId or username|
 |404|Not found|||ItemType: Inventory, User, Seat<br/><br/>Values: ProductId/SkuId, UserName, ProductId/SkuId/Username|
 |409|Conflict||Reason: Not online||
- 
-
- 
-
-
-
-
-
