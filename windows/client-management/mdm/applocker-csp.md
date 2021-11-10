@@ -258,19 +258,19 @@ Data type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-6.  On your phone under **Device discovery**, tap **Pair**. You will get a code (case sensitive).
-7.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
+1.  On your phone under **Device discovery**, tap **Pair**. You will get a code (case sensitive).
+2.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
 
     The **Device Portal** page opens on your browser.
 
     ![device portal screenshot.](images/applocker-screenshot1.png)
 
-8.  On the desktop **Device Portal** page, click **Apps** to open the **App Manager**.
-9.  On the **App Manager** page under **Running apps**, you will see the **Publisher** and **PackageFullName** of apps.
+3.  On the desktop **Device Portal** page, click **Apps** to open the **App Manager**.
+4.  On the **App Manager** page under **Running apps**, you will see the **Publisher** and **PackageFullName** of apps.
 
     ![device portal app manager.](images/applocker-screenshot3.png)
 
-10. If you do not see the app that you want, look under **Installed apps**. Using the drop- down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
+5. If you do not see the app that you want, look under **Installed apps**. Using the drop- down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
 
     ![app manager.](images/applocker-screenshot2.png)
 
@@ -278,7 +278,7 @@ The following table shows the mapping of information to the AppLocker publisher 
 
 |Device portal data|AppLocker publisher rule field|
 |--- |--- |
-|PackageFullName|ProductName<br> The product name is first part of the PackageFullName followed by the version number. In the Windows Camera example, the ProductName is Microsoft.WindowsCamera.|
+|PackageFullName|ProductName<br><br> The product name is first part of the PackageFullName followed by the version number. In the Windows Camera example, the ProductName is Microsoft.WindowsCamera.|
 |Publisher|Publisher|
 |Version|Version<br> <br>This can be used either in the HighSection or LowSection of the BinaryVersionRange.<br> <br>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version- independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.|
 
