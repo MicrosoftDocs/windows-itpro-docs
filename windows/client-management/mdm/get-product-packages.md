@@ -36,9 +36,7 @@ The following parameters may be specified in the request URI.
 
 |Error code|Description|Retry|Data field|
 |--- |--- |--- |--- |
-|400|Invalid parameters|No|Parameter name
-Reason: Missing parameter or invalid parameter
-Details: String|
+|400|Invalid parameters|No|Parameter name <br/> <br/>Reason: Missing parameter or invalid parameter <br/> <br/>Details: String|
 |404|Not found|||
 |409|Conflict||Reason: Not owned|
 
