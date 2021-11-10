@@ -28,9 +28,6 @@ Windows 10 Enterprise LTSC 2021 builds on Windows 10 Pro, version 21H2, adding p
 
 The Windows 10 Enterprise LTSC 2021 release includes the cumulative enhancements provided in Windows 10 versions 1903, 1909, 2004, and 21H1. Details about these enhancements are provided below. 
 
-
-
-
 ## Lifecycle
 
 > [!IMPORTANT]
@@ -52,13 +49,7 @@ Digital/Interactive Signage experience - Displays a specific site in full-screen
 Public-Browsing experience - Runs a limited multi-tab version of Microsoft Edge.
 Both experiences are running a Microsoft Edge InPrivate session, which protects user data.
 
-## Windows Subsystem for Linux
 
-Windows Subsystem for Linux (WSL) is be available in-box.
-
-## Networking
-
-WPA3 H2E standards are supported for enhanced Wi-Fi security.
 
 ## Security
 
@@ -193,14 +184,11 @@ For a full list of what's new in Microsoft Intune, see [What's new in Microsoft 
 
 ### SetupDiag
 
-[SetupDiag](/windows/deployment/upgrade/setupdiag) version 1.6.2107.27002 (downloadable version) is available.
-
-SetupDiag is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
+[SetupDiag](/windows/deployment/upgrade/setupdiag) is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
 
 ### Reserved storage
 
 [**Reserved storage**](https://techcommunity.microsoft.com/t5/Storage-at-Microsoft/Windows-10-and-reserved-storage/ba-p/428327): Reserved storage sets aside disk space to be used by updates, apps, temporary files, and system caches. It improves the day-to-day function of your PC by ensuring critical OS functions always have access to disk space.  Reserved storage will be enabled automatically on new PCs with Windows 10, version 1903 pre-installed, and for clean installs.  It will not be enabled when updating from a previous version of Windows 10. 
-
 
 #### Microsoft Endpoint Manager
 
@@ -210,20 +198,17 @@ An in-place upgrade wizard is available in Configuration Manager. For more infor
 
 Also see [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new).
         .
-
 ### Windows Assessment and Deployment Toolkit (ADK)
 
 A new [Windows ADK](/windows-hardware/get-started/adk-install) is available for Windows 11 that also supports Windows 10, version 21H2.
 
 ### Microsoft Deployment Toolkit (MDT)
 
-MDT version 8456 supports Windows 10 Enterprise LTSC 2021.
-
 For the latest information about MDT, see the [MDT release notes](/mem/configmgr/mdt/release-notes).
 
 ### Windows Setup
 
-Windows Setup [answer files](/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs) (unattend.xml) have [improved language handling](https://oofhours.com/2020/06/01/new-in-windows-10-2004-better-language-handling/).
+Windows Setup [answer files](/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs) (unattend.xml) have improved language handling.
 
 Improvements in Windows Setup with this release also include:
 - Reduced offline time during feature updates
@@ -232,7 +217,6 @@ Improvements in Windows Setup with this release also include:
 - New recovery options
 
 For more information, see Windows Setup enhancements in the [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/pilot-new-features-with-the-windows-insider-program-for-business/ba-p/1220464).
-
 
 ## Device management
 
@@ -243,18 +227,13 @@ For more information about what's new in MDM, see [What's new in mobile device e
 Windows Management Instrumentation (WMI) Group Policy Service (GPSVC) has a performance improvement to support remote work scenarios:
 - An issue is fixed that caused changes by an Active Directory (AD) administrator to user or computer group memberships to propagate slowly. Although the access token eventually updates, these changes might not appear when the administrator uses gpresult /r or gpresult /h to create a report.
 
+## Windows Subsystem for Linux
 
+Windows Subsystem for Linux (WSL) is be available in-box.
 
+## Networking
 
-
-
-
-
-
-
-
-
-
+WPA3 H2E standards are supported for enhanced Wi-Fi security.
 
 ## See Also
 
