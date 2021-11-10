@@ -254,19 +254,21 @@ This following is a step-by-step walk-through of the App-V and UPM operations an
   - (Operation) A user-publishing/refresh is initiated. (Expectation) If this is the first time a user has published virtual applications (e.g. non-persistent), this will take the usual duration of a publishing/refresh.
   - (Operation) After the publishing/refresh, the UPM solution captures the user integrations.<li>(Expectation) Depending on how the UPM solution is configured, this may occur as part of the logoff process. This will incur the same/similar overhead as persisting the user state.
  
-   **On subsequent logins**:
+  **On subsequent logins**:
 
-   - (Operation) UPM solution applies the user integrations to the system prior to publishing/refresh.
+  - (Operation) UPM solution applies the user integrations to the system prior to publishing/refresh.
 
-     (Expectation) There will be shortcuts present on the desktop, or in the start menu, which work immediately. When the publishing/refresh completes (i.e., package entitlements change), some may go away.
+    (Expectation) There will be shortcuts present on the desktop, or in the start menu, which work immediately. When the publishing/refresh completes (i.e., package entitlements change), some may go away.
 
-   - (Operation) Publishing/refresh will process un-publish and publish operations for changes in user package entitlements. 
+  - (Operation) Publishing/refresh will process un-publish and publish operations for changes in user package entitlements. 
  
-     (Expectation) If there are no entitlement changes, publishing1 will complete in seconds. Otherwise, the publishing/refresh will increase relative to the number and complexity* of virtual applications
-    
-    - (Operation) UPM solution will capture user integrations again at logoff. (Expectation) Same as previous.
+    (Expectation) If there are no entitlement changes, publishing will complete in seconds. Otherwise, the publishing/refresh will increase relative to the number and complexity of virtual applications
 
-     ¹ The publishing operation (**Publish-AppVClientPackage**) adds entries to the user catalog, maps entitlement to the user, identifies the local store, and finishes by completing any integration steps.
+    The publishing operation (**Publish-AppVClientPackage**) adds entries to the user catalog, maps entitlement to the user, identifies the local store, and finishes by completing any integration steps.  
+  
+  - (Operation) UPM solution will capture user integrations again at logoff.
+ 
+     (Expectation) Same as previous.
 
   **Outcome**: 
 
@@ -275,9 +277,12 @@ This following is a step-by-step walk-through of the App-V and UPM operations an
 
 - **Storage**: After implementing this approach in the VDI/RDSH environment, on first login
 
-  - (Operation) A user-publishing/refresh is initiated. (Expectation)
-   - If this is the first time a user has published virtual applications (e.g., non-persistent), this will take the usual duration of a publishing/refresh.
-   - First and subsequent logins will be impacted by pre-configuring of packages (add/refresh).
+  - (Operation) A user-publishing/refresh is initiated. 
+
+    (Expectation):
+
+    - If this is the first time a user has published virtual applications (e.g., non-persistent), this will take the usual duration of a publishing/refresh.
+    - First and subsequent logins will be impacted by pre-configuring of packages (add/refresh).
  
   - (Operation) After the publishing/refresh, the UPM solution captures the user integrations.
 
@@ -388,8 +393,8 @@ Removing FB1 does not require the original application installer. After completi
 
     "C:\\UpgradedPackages"
 
-    **Note**  
-    This cmdlet requires an executable (.exe) or batch file (.bat). You must provide an empty (does nothing) executable or batch file.  
+    > [!Note]
+    > This cmdlet requires an executable (.exe) or batch file (.bat). You must provide an empty (does nothing) executable or batch file.  
 
 |Step|Considerations|Benefits|Tradeoffs|
 |--- |--- |--- |--- |
@@ -438,15 +443,15 @@ For documentation on How to Apply a Dynamic Configuration, see:
 
 -   Open AppxManifest.xml and locate the following:
 
-    ```
+    ```xml
     <appv:Extension Category="AppV.Fonts">
     <appv:Fonts>
     <appv:Font Path="[{Fonts}]\private\CalibriL.ttf" DelayLoad="true"></appv:Font>
     </appv:Fonts>
     ```
 
-    **Note**&nbsp;&nbsp;If there are fonts marked as **DelayLoad**, those will not impact first launch.
-
+  > [!Note]
+  > If there are fonts marked as **DelayLoad**, those will not impact first launch.
 
 ### Excluding virtual fonts from the package
 
@@ -456,7 +461,7 @@ Use the dynamic configuration file that best suits the user scope – deployment
 
 Fonts
 
-```
+```xml
 -->
 <Fonts Enabled="false" />
 <!--
