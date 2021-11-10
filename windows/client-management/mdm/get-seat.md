@@ -18,61 +18,21 @@ The **Get seat** operation retrieves the information about an active seat for a 
 
 ## Request
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Request URI</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>GET</p></td>
-<td><p>https://bspmts.mp.microsoft.com/V1/Inventory/{productId}/{skuId}/Seats/{username}</p></td>
-</tr>
-</tbody>
-</table>
+**GET:**
 
+```http
+https://bspmts.mp.microsoft.com/V1/Inventory/{productId}/{skuId}/Seats/{username}
+```
 
 ### URI parameters
 
 The following parameters may be specified in the request URI.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>productId</p></td>
-<td><p>string</p></td>
-<td><p>Required. Product identifier for an application that is used by the Store for Business.</p></td>
-</tr>
-<tr class="even">
-<td><p>skuId</p></td>
-<td><p>string</p></td>
-<td><p>Required. Product identifier that specifies a specific SKU of an application.</p></td>
-</tr>
-<tr class="odd">
-<td><p>username</p></td>
-<td><p>string</p></td>
-<td><p>Requires UserPrincipalName (UPN). User name of the target user account.</p></td>
-</tr>
-</tbody>
-</table>
+|Parameter|Type|Description|
+|--- |--- |--- |
+|productId|string|Required. Product identifier for an application that is used by the Store for Business.|
+|skuId|string|Required. Product identifier that specifies a specific SKU of an application.|
+|username|string|Requires UserPrincipalName (UPN). User name of the target user account.|
 
  
 ## Response
@@ -81,51 +41,14 @@ The following parameters may be specified in the request URI.
 
 The response body contains [SeatDetails](data-structures-windows-store-for-business.md#seatdetails).
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Error code</th>
-<th>Description</th>
-<th>Retry</th>
-<th>Data field</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>400</p></td>
-<td><p>Invalid parameters</p></td>
-<td><p>No</p></td>
-<td><p>Parameter name</p>
-<p>Reason: Missing parameter or invalid parameter</p>
-<p>Details: String</p></td>
-<td><p>Invalid can include productId, skuId or username</p></td>
-</tr>
-<tr class="even">
-<td><p>404</p></td>
-<td><p>Not found</p></td>
-<td></td>
-<td></td>
-<td><p>ItemType: Inventory, User, Seat</p>
-<p>Values: ProductId/SkuId, UserName, ProductId/SkuId/Username</p></td>
-</tr>
-<tr class="odd">
-<td><p>409</p></td>
-<td><p>Conflict</p></td>
-<td></td>
-<td><p>Reason: Not online</p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
+|Error code|Description|Retry|Data field|Details|
+|--- |--- |--- |--- |--- |
+|400|Invalid parameters|No|Parameter name
+Reason: Missing parameter or invalid parameter
+Details: String|Invalid can include productId, skuId or username|
+|404|Not found|||ItemType: Inventory, User, Seat
+Values: ProductId/SkuId, UserName, ProductId/SkuId/Username|
+|409|Conflict||Reason: Not online||
  
 
  

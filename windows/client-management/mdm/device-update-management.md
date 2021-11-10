@@ -356,57 +356,11 @@ If the **Specify intranet Microsoft update service location** policy is enabled,
 
 If the **Allow Telemetry** policy is enabled and the Options value is set to 0, then the **Defer upgrades by**, **Defer updates by** and **Pause Updates and Upgrades** settings have no effect.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Update category</th>
-<th>Maximum deferral</th>
-<th>Deferral increment</th>
-<th>Update type/notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>OS upgrade</p></td>
-<td><p>8 months</p></td>
-<td><p>1 month</p></td>
-<td><p>Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5</p></td>
-</tr>
-<tr class="even">
-<td><p>Update</p></td>
-<td><p>1 month</p></td>
-<td><p>1 week</p></td>
-<td><div class="alert">
-<strong>Note</strong>
-If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.
-</div>
-<ul>
-<li>Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441</li>
-<li>Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4</li>
-<li>Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F</li>
-<li>Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828</li>
-<li>Tools - B4832BD8-E735-4761-8DAF-37F882276DAB</li>
-<li>Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F</li>
-<li>Update - CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83</li>
-<li>Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>Other/cannot defer</p></td>
-<td><p>No deferral</p></td>
-<td><p>No deferral</p></td>
-<td><p>Any update category not enumerated above falls into this category.</p>
-<p>Definition Update - E0789628-CE08-4437-BE74-2495B842F43B</p></td>
-</tr>
-</tbody>
-</table>
-
+|Update category|Maximum deferral|Deferral increment|Update type/notes|
+|--- |--- |--- |--- |
+|OS upgrade|8 months|1 month|Upgrade - 3689BDC8-B205-4AF4-8D4A-A63924C5E9D5|
+|Update|1 month|1 week|<div class="alert">**Note:** <br>If a machine has Microsoft Update enabled, any Microsoft Updates in these categories will also observe Defer / Pause logic.</div><li>Security Update - 0FA1201D-4330-4FA8-8AE9-B877473B6441<li>Critical Update - E6CF1350-C01B-414D-A61F-263D14D133B4<li>Update Rollup - 28BC880E-0592-4CBF-8F95-C79B17911D5F<li>Service Pack - 68C5B0A3-D1A6-4553-AE49-01D3A7827828<li>Tools - B4832BD8-E735-4761-8DAF-37F882276DAB<li>Feature Pack - B54E7D24-7ADD-428F-8B75-90A396FA584F<li>Update -<li>CD5FFD1E-E932-4E3A-BF74-18BF0B1BBD83<li>Driver - EBFC1FC5-71A4-4F7B-9ACA-3B9A503104A0|
+|Other/cannot defer|No deferral|No deferral|Any update category not enumerated above falls into this category.<br> <br>Definition Update - E0789628-CE08-4437-BE74-2495B842F43B|
 
 <a href="" id="update-deferupgradeperiod"></a>**Update/DeferUpgradePeriod**
 > [!NOTE]
@@ -878,71 +832,16 @@ Here are the new policies added in Windows 10, version 1607 in [Policy CSP](pol
 
 Here's the list of corresponding Group Policy settings in HKLM\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>GPO key</th>
-<th>Type</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>BranchReadinessLevel</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>16: systems take Feature Updates on the Current Branch (CB) train</p>
-<p>32: systems take Feature Updates on the Current Branch for Business</p>
-<p>Other value or absent: receive all applicable updates (CB)</p></td>
-</tr>
-<tr class="even">
-<td><p>DeferQualityUpdates</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>1: defer quality updates</p>
-<p>Other value or absent: don’t defer quality updates</p></td>
-</tr>
-<tr class="odd">
-<td><p>DeferQualityUpdatesPeriodInDays</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>0-30: days to defer quality updates</p></td>
-</tr>
-<tr class="even">
-<td><p>PauseQualityUpdates</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>1: pause quality updates</p>
-<p>Other value or absent: don’t pause quality updates</p></td>
-</tr>
-<tr class="odd">
-<td><p>DeferFeatureUpdates</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>1: defer feature updates</p>
-<p>Other value or absent: don’t defer feature updates</p></td>
-</tr>
-<tr class="even">
-<td><p>DeferFeatureUpdatesPeriodInDays</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>0-180: days to defer feature updates</p></td>
-</tr>
-<tr class="odd">
-<td><p>PauseFeatureUpdates</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>1: pause feature updates</p>
-<p>Other value or absent: don’t pause feature updates</p></td>
-</tr>
-<tr class="even">
-<td><p>ExcludeWUDriversInQualityUpdate</p></td>
-<td><p>REG_DWORD</p></td>
-<td><p>1: exclude WU drivers</p>
-<p>Other value or absent: offer WU drivers</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|GPO key|Type|Value|
+|--- |--- |--- |
+|BranchReadinessLevel|REG_DWORD|16: systems take Feature Updates on the Current Branch (CB) train<br><br>32: systems take Feature Updates on the Current Branch for Business<br><br>Other value or absent: receive all applicable updates (CB)|
+|DeferQualityUpdates|REG_DWORD|1: defer quality updates<br><br>Other value or absent: don’t defer quality updates|
+|DeferQualityUpdatesPeriodInDays|REG_DWORD|0-30: days to defer quality updates|
+|PauseQualityUpdates|REG_DWORD|1: pause quality updates<br><br>Other value or absent: don’t pause quality updates|
+|DeferFeatureUpdates|REG_DWORD|1: defer feature updates<br><br>Other value or absent: don’t defer feature updates|
+|DeferFeatureUpdatesPeriodInDays|REG_DWORD|0-180: days to defer feature updates|
+|PauseFeatureUpdates|REG_DWORD|1: pause feature updates<br><br>Other value or absent: don’t pause feature updates|
+|ExcludeWUDriversInQualityUpdate|REG_DWORD|1: exclude WU drivers<br><br>Other value or absent: offer WU drivers|
 
 Here's the list of older policies that are still supported for backward compatibility. You can use these older policies for Windows 10, version 1511 devices.
 

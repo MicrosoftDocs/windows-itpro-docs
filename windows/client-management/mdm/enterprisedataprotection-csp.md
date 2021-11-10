@@ -300,36 +300,9 @@ A read-only bit mask that indicates the current state of WIP on the Device. The 
 
 Suggested values:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Reserved for future use</p></td>
-<td><p>WIP mandatory settings</p>
-<p>Set = 1</p>
-<p>Not set = 0</p></td>
-<td><p>Reserved for future use</p></td>
-<td><p>AppLocker configured</p>
-<p>Yes = 1</p>
-<p>No = 0</p></td>
-<td><p>WIP on = 1</p>
-<p>WIP off = 0</p></td>
-</tr>
-<tr class="even">
-<td><p>4</p></td>
-<td><p>3</p></td>
-<td><p>2</p></td>
-<td><p>1</p></td>
-<td><p>0</p></td>
-</tr>
-</tbody>
-</table>
+|Reserved for future use|WIP mandatory settings<br>Set = 1<br>Not set = 0|Reserved for future use|AppLocker configured<br>Yes = 1<br>No = 0|WIP on = 1<br>WIP off = 0|
+|--- |--- |--- |--- |--- |
+|4|3|2|1|0|
 
  
 
