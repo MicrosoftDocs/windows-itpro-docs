@@ -60,7 +60,7 @@ Make sure that you install the latest Windows updates, cumulative updates, and r
 
 1. Network Capture with ETW. Enter the following at an elevated command prompt:
 
-    ```
+    ```cmd
     netsh trace start wireless_dbg capture=yes overwrite=yes maxsize=4096 tracefile=c:\tmp\wireless.etl
     ```
 2. Reproduce the issue.
@@ -70,12 +70,12 @@ Make sure that you install the latest Windows updates, cumulative updates, and r
     - If intermittent connection drops trigger stop command on a script (ping or test network constantly until fail, then netsh trace stop).
 3. Stop the trace by entering the following command: 
 
-    ```
+    ```cmd
     netsh trace stop
     ```
 4. To convert the output file to text format: 
 
-    ```
+    ```cmd
     netsh trace convert c:\tmp\wireless.etl
     ```
 
@@ -285,7 +285,7 @@ C:\tmp>dir
 
 Copy and paste all the lines below and save them into a text file named "wifi.tat." Load the filter file into the TextAnalysisTool by clicking **File > Load Filters**.
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <TextAnalysisTool.NET version="2018-01-03" showOnlyFilteredLines="False">
   <filters>
