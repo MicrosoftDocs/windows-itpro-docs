@@ -19,9 +19,9 @@ Use TabletMode to configure settings related to tablet mode.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | ✔️ | ✔️ | ✔️ |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings | ✔️ | ✔️ |  |  |
 
 ## ConvertibleSlateModePromptPreference
 
