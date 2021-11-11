@@ -18,31 +18,9 @@ metadata:
   ms.date: 09/06/2021
   ms.technology: windows-sec
     
-title: Advanced security auditing FAQ
+title: Advanced security auditing FAQ 
 
 
-
-  This topic for the IT professional lists questions and answers about understanding, deploying, and managing security audit policies.
-  
-  -   [What is Windows security auditing and why might I want to use it?](#what-is-windows-security-auditing-and-why-might-i-want-to-use-it-)
-  -   [What is the difference between audit policies located in Local Policies\\Audit Policy and audit policies located in Advanced Audit Policy Configuration?](#what-is-the-difference-between-audit-policies-located-in-local-policies--audit-policy-and-audit-policies-located-in-advanced-audit-policy-configuration-)
-  -   [What is the interaction between basic audit policy settings and advanced audit policy settings?](#what-is-the-interaction-between-basic-audit-policy-settings-and-advanced-audit-policy-settings-)
-  -   [How are audit settings merged by Group Policy?](#how-are-audit-settings-merged-by-group-policy-)
-  -   [What is the difference between an object DACL and an object SACL?](#what-is-the-difference-between-an-object-dacl-and-an-object-sacl-)
-  -   [Why are audit policies applied on a per-computer basis rather than per user?](#why-are-audit-policies-applied-on-a-per-computer-basis-rather-than-per-user-)
-  -   [What are the differences in auditing functionality between versions of Windows?](#what-are-the-differences-in-auditing-functionality-between-versions-of-windows-)
-  -   [Can I use advanced audit policy from a domain controller running Windows Server 2003 or Windows 2000 Server?](#can-i-use-advanced-audit-policies-from-a-domain-controller-running-windows-server-2003-or-windows-2000-server-)
-  -   [What is the difference between success and failure events? Is something wrong if I get a failure audit?](#what-is-the-difference-between-success-and-failure-events--is-something-wrong-if-i-get-a-failure-audit-)
-  -   [How can I set an audit policy that affects all objects on a computer?](#how-can-i-set-an-audit-policy-that-affects-all-objects-on-a-computer-)
-  -   [How do I figure out why someone was able to access a resource?](#how-do-i-figure-out-why-someone-was-able-to-access-a-resource-)
-  -   [How do I know when changes are made to access control settings, by whom, and what the changes were?](#how-do-i-know-when-changes-are-made-to-access-control-settings--by-whom--and-what-the-changes-were-)
-  -   [How can I roll back security audit policies from the advanced audit policy to the basic audit policy?](#how-can-i-roll-back-security-audit-policies-from-the-advanced-audit-policy-to-the-basic-audit-policy-)
-  -   [How can I monitor if changes are made to audit policy settings?](#how-can-i-monitor-if-changes-are-made-to-audit-policy-settings-)
-  -   [How can I minimize the number of events that are generated?](#how-can-i-minimize-the-number-of-events-that-are-generated-)
-  -   [What are the best tools to model and manage audit policy?](#what-are-the-best-tools-to-model-and-manage-audit-policies-)
-  -   [Where can I find information about all the possible events that I might receive?](#where-can-i-find-information-about-all-the-possible-events-that-i-might-receive-)
-  -   [Where can I find more detailed information?](#where-can-i-find-more-detailed-information-)
-  
 
 sections:
   - name: Ignored
