@@ -7,7 +7,6 @@ MS-HAID:
 ms.assetid: ABE44EC8-CBE5-4775-BA8A-4564CB73531B
 ms.reviewer: 
 manager: dansimp
-description: Learn about data structures for Microsoft Store for Business.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
