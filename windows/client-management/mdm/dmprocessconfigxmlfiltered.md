@@ -92,42 +92,13 @@ If **DMProcessConfigXMLFiltered** retrieves a document, the *pbstrXmlOut* holds 
 
 Returns the standard **HRESULT** value **S\_OK** to indicate success. The following table shows more error codes that can be returned:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Return code</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>CONFIG_E_OBJECTBUSY</strong></p></td>
-<td><p>Another instance of the configuration management service is currently running.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>CONFIG_E_ENTRYNOTFOUND</strong></p></td>
-<td><p>No metabase entry was found.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>CONFIG_E_CSPEXCEPTION</strong></p></td>
-<td><p>An exception occurred in one of the configuration service providers.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>CONFIG_E_TRANSACTIONINGFAILURE</strong></p></td>
-<td><p>A configuration service provider failed to roll back properly. The affected settings might be in an unknown state.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>CONFIG_E_BAD_XML</strong></p></td>
-<td><p>The XML input is invalid or malformed.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Return code|Description|
+|--- |--- |
+|**CONFIG_E_OBJECTBUSY**|Another instance of the configuration management service is currently running.|
+|**CONFIG_E_ENTRYNOTFOUND**|No metabase entry was found.|
+|**CONFIG_E_CSPEXCEPTION**|An exception occurred in one of the configuration service providers.|
+|**CONFIG_E_TRANSACTIONINGFAILURE**|A configuration service provider failed to roll back properly. The affected settings might be in an unknown state.|
+|**CONFIG_E_BAD_XML**|The XML input is invalid or malformed.|
 
 ## Remarks
 
@@ -190,38 +161,14 @@ if ( bstr != NULL )
 
 ## Requirements
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Minimum supported client</p></td>
-<td><p>None supported</p></td>
-</tr>
-<tr class="even">
-<td><p>Minimum supported server</p></td>
-<td><p>None supported</p></td>
-</tr>
-<tr class="odd">
-<td><p>Minimum supported phone</p></td>
-<td><p>Windows Phone 8.1</p></td>
-</tr>
-<tr class="even">
-<td><p>Header</p></td>
-<td><p>Dmprocessxmlfiltered.h</p></td>
-</tr>
-<tr class="odd">
-<td><p>Library</p></td>
-<td><p>Dmprocessxmlfiltered.lib</p></td>
-</tr>
-<tr class="even">
-<td><p>DLL</p></td>
-<td><p>Dmprocessxmlfiltered.dll</p></td>
-</tr>
-</tbody>
-</table>
+|Requirement|Support|
+|--- |--- |
+|Minimum supported client|None supported|
+|Minimum supported server|None supported|
+|Minimum supported phone|Windows Phone 8.1|
+|Header|Dmprocessxmlfiltered.h|
+|Library|Dmprocessxmlfiltered.lib|
+|DLL|Dmprocessxmlfiltered.dll|
 
 ## See also
 

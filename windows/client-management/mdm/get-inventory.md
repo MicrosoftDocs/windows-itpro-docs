@@ -21,143 +21,34 @@ The **Get Inventory** operation retrieves information from the Microsoft Store f
 
 ## Request
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Request URI</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>GET</p></td>
-<td><p>https://bspmts.mp.microsoft.com/V1/Inventory?continuationToken={ContinuationToken}&amp;modifiedSince={ModifiedSince}&amp;licenseTypes={LicenseType}&amp;maxResults={MaxResults}</p></td>
-</tr>
-</tbody>
-</table>
+**GET:**
 
-
- 
-
+```http
+https://bspmts.mp.microsoft.com/V1/Inventory?continuationToken={ContinuationToken}&amp;modifiedSince={ModifiedSince}&amp;licenseTypes={LicenseType}&amp;maxResults={MaxResults}
+```
 ### URI parameters
 
 The following parameters may be specified in the request URI.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Type</th>
-<th>Default value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>continuationToken</p></td>
-<td><p>string</p></td>
-<td><p>Null</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>modifiedSince</p></td>
-<td><p>datetime</p></td>
-<td><p>Null</p></td>
-<td><p>Optional. Used to determine changes since a specific date.</p></td>
-</tr>
-<tr class="odd">
-<td><p>licenseTypes</p></td>
-<td><p>collection of <a href="data-structures-windows-store-for-business.md#licensetype" data-raw-source="[LicenseType](data-structures-windows-store-for-business.md#licensetype)">LicenseType</a></p></td>
-<td><p>{online,offline}</p></td>
-<td><p>Optional. A collection of license types</p></td>
-</tr>
-<tr class="even">
-<td><p>maxResults</p></td>
-<td><p>integer-32</p></td>
-<td><p>25</p></td>
-<td><p>Optional. Specifies the maximum number of applications returned in a single query.</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
+|Parameter|Type|Default value|Description|
+|--- |--- |--- |--- |
+|continuationToken|string|Null||
+|modifiedSince|datetime|Null|Optional. Used to determine changes since a specific date.|
+|licenseTypes|collection of [LicenseType](data-structures-windows-store-for-business.md#licensetype)|{online,offline}|Optional. A collection of license types|
+|maxResults|integer-32|25|Optional. Specifies the maximum number of applications returned in a single query.|
 
 Here are some examples.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Query type</th>
-<th>Example query</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Online and offline</p></td>
-<td><p>https:<span></span>//bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=online&amp;licenseTypes=offline&amp;maxResults=25</p></td>
-</tr>
-<tr class="even">
-<td><p>Online only</p></td>
-<td><p>https:<span></span>//bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=online&amp;maxResults=25</p></td>
-</tr>
-<tr class="odd">
-<td><p>Offline only</p></td>
-<td><p>https:<span></span>//bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=offline&amp;maxResults=25</p></td>
-</tr>
-<tr class="even">
-<td><p>Both license types and a time filter</p></td>
-<td><p>https:<span></span>//bspmts.mp.microsoft.com/V1/Inventory?modifiedSince=2015-07-13T14%3a02%3a25.6863382-07%3a00&amp;licenseTypes=online&amp;licenseTypes=offline&amp;maxResults=25</p></td>
-</tr>
-</tbody>
-</table>
+|Query type|Example query|
+|--- |--- |
+|Online and offline|[https://bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=online&licenseTypes=offline&maxResults=25](https://bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=online&licenseTypes=offline&maxResults=25)|
+|Online only|[https://bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=online&maxResults=25](https://bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=online&maxResults=25)|
+|Offline only|[https://bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=offline&maxResults=25](https://bspmts.mp.microsoft.com/V1/Inventory?licenseTypes=offline&maxResults=25)|
+|Both license types and a time filter|[https://bspmts.mp.microsoft.com/V1/Inventory?modifiedSince=2015-07-13T14%3a02%3a25.6863382-07%3a00&licenseTypes=online&licenseTypes=offline&maxResults=25](https://bspmts.mp.microsoft.com/V1/Inventory?modifiedSince=2015-07-13T14%3a02%3a25.6863382-07%3a00&licenseTypes=online&licenseTypes=offline&maxResults=25)|
 
-
-
-
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Error code</th>
-<th>Description</th>
-<th>Retry</th>
-<th>Data field</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>400</p></td>
-<td><p>Invalid parameters</p></td>
-<td><p>No</p></td>
-<td><p>Parameter name</p>
-<p>Invalid modified date, license, or continuationToken</p>
-<p>Details: String</p></td>
-</tr>
-</tbody>
-</table>
-
-
-
+|Error code|Description|Retry|Data field|
+|--- |--- |--- |--- |
+|400|Invalid parameters|No|Parameter name<br><br>Invalid modified date, license, or continuationToken<br><br>Details: String|
 
 ## Response
 

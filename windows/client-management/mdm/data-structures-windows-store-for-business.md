@@ -7,6 +7,7 @@ MS-HAID:
 ms.assetid: ABE44EC8-CBE5-4775-BA8A-4564CB73531B
 ms.reviewer: 
 manager: dansimp
+description: Learn about data structures for Microsoft Store for Business.
 ms.author: dansimp
 ms.topic: article
 ms.prod: w10
@@ -16,7 +17,6 @@ ms.date: 09/18/2017
 ---
 
 # Data structures for Microsoft Store for Business
-
 
 Here's the list of data structures used in the Microsoft Store for Business REST APIs:
 
@@ -54,194 +54,47 @@ Here's the list of data structures used in the Microsoft Store for Business REST
 
 Specifies the properties of the alternate identifier.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>type</p></td>
-<td><p>string</p></td>
-<td><p>LegacyWindowStoreProductId, LegacyWindowsPhoneProductId, RedirectToThresholdProductId</p></td>
-</tr>
-<tr class="even">
-<td><p>value</p></td>
-<td><p>string</p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|Description|
+|--- |--- |--- |
+|Type|String|LegacyWindowStoreProductId, LegacyWindowsPhoneProductId, RedirectToThresholdProductId|
+|Value|String||
 
 ## BulkSeatOperationResultSet
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>seatDetails</p></td>
-<td><p>collection of <a href="#seatdetails" data-raw-source="[SeatDetails](#seatdetails)">SeatDetails</a></p></td>
-</tr>
-<tr class="even">
-<td><p>failedSeatOperations</p></td>
-<td><p>collection of <a href="#failedseatrequest" data-raw-source="[FailedSeatRequest](#failedseatrequest)">FailedSeatRequest</a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|
+|--- |--- |
+|seatDetails|Collection of [SeatDetails](#seatdetails)|
+|failedSeatOperations|Collection of [FailedSeatRequest](#failedseatrequest)|
 
 ## FailedSeatRequest
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>failureReason</p></td>
-<td><p>string</p></td>
-</tr>
-<tr class="even">
-<td><p>productKey</p></td>
-<td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>userName</p></td>
-<td><p>string</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|
+|--- |--- |
+|failureReason|String|
+|productKey|[ProductKey](#productkey)|
+|userName|String|
 
 ## FrameworkPackageDetails
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>packageId</p></td>
-<td><p>string</p></td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>contentId</p></td>
-<td><p>string</p></td>
-<td><p>Identifies a specific application.</p></td>
-</tr>
-<tr class="odd">
-<td><p>location</p></td>
-<td><p><a href="#packagelocation" data-raw-source="[PackageLocation](#packagelocation)">PackageLocation</a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>packageFullName</p></td>
-<td><p>string</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>packageIdentityName</p></td>
-<td><p>string</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>architectures</p></td>
-<td><p>collection of <a href="#productarchitectures" data-raw-source="[ProductArchitectures](#productarchitectures)">ProductArchitectures</a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>packageFormat</p></td>
-<td><p><a href="#productpackageformat" data-raw-source="[ProductPackageFormat](#productpackageformat)">ProductPackageFormat</a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>platforms</p></td>
-<td><p>collection of <a href="#productplatform" data-raw-source="[ProductPlatform](#productplatform)">ProductPlatform</a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>fileSize</p></td>
-<td><p>integer-64</p></td>
-<td><p>Size of the file.</p></td>
-</tr>
-<tr class="even">
-<td><p>packageRank</p></td>
-<td><p>integer-32</p></td>
-<td><p>Optional</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|Description|
+|--- |--- |--- |
+|packageId|String||
+|contentId|String|Identifies a specific application.|
+|Location|[PackageLocation](#packagelocation)||
+|packageFullName|String||
+|packageIdentityName|String||
+|Architectures|Collection of [ProductArchitectures](#productarchitectures)||
+|packageFormat|[ProductPackageFormat](#productpackageformat)||
+|Platforms|Collection of [ProductPlatform](#productplatform)||
+|fileSize|integer-64|Size of the file.|
+|packageRank|integer-32|Optional|
 
 ## InventoryDistributionPolicy
 
-
-<table>
-<colgroup>
-<col width="66%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>open</p></td>
-<td><p>Open distribution policy - licenses/seats can be assigned/consumed without limit</p></td>
-</tr>
-<tr class="even">
-<td><p>restricted</p></td>
-<td><p>Restricted distribution policy - licenses/seats must be assigned/consumed according to the available count</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Description|
+|--- |--- |
+|Open|Open distribution policy - licenses/seats can be assigned/consumed without limit|
+|Restricted|Restricted distribution policy - licenses/seats must be assigned/consumed according to the available count|
 
 ## InventoryEntryDetails
 
@@ -303,274 +156,86 @@ Specifies the properties of the alternate identifier.
 ## InventoryResultSet
 
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>continuationToken</p></td>
-<td><p>string</p></td>
-<td><p>Only available if there is a next page.</p></td>
-</tr>
-<tr class="even">
-<td><p>inventoryEntries</p></td>
-<td><p>collection of <a href="#inventoryentrydetails" data-raw-source="[InventoryEntryDetails](#inventoryentrydetails)">InventoryEntryDetails</a></p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-
+|Name|Type|Description|
+|--- |--- |--- |
+|continuationToken|String|Only available if there is a next page.|
+|inventoryEntries|Collection of [InventoryEntryDetails](#inventoryentrydetails)||
  
-
 ## InventoryStatus
 
-
-<table>
-<colgroup>
-<col width="66%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>active</p></td>
-<td><p>Entry is available in the organization’s inventory.</p></td>
-</tr>
-<tr class="even">
-<td><p>removed</p></td>
-<td><p>Entry has been removed from the organization’s inventory.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Description|
+|--- |--- |
+|Active|Entry is available in the organization’s inventory.|
+|Removed|Entry has been removed from the organization’s inventory.|
 
 ## LicenseType
 
-
-<table>
-<colgroup>
-<col width="66%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>online</p></td>
-<td><p>Online license application.</p></td>
-</tr>
-<tr class="even">
-<td><p>offline</p></td>
-<td><p>Offline license application.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Description|
+|--- |--- |
+|Online|Online license application.|
+|Offline|Offline license application.|
 
 ## LocalizedProductDetail
 
 
 Specifies the properties of the localized product.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>language</p></td>
-<td><p>string</p></td>
-<td><p>Language or fallback language if the specified language is not available.</p></td>
-</tr>
-<tr class="even">
-<td><p>displayName</p></td>
-<td><p>string</p></td>
-<td><p>Display name of the application.</p></td>
-</tr>
-<tr class="odd">
-<td><p>description</p></td>
-<td><p>string</p></td>
-<td><p>App description provided by developer can be up to 10,000 characters.</p></td>
-</tr>
-<tr class="even">
-<td><p>images</p></td>
-<td><p>collection of <a href="#productimage" data-raw-source="[ProductImage](#productimage)">ProductImage</a></p></td>
-<td><p>Artwork and icon associated with the application.</p></td>
-</tr>
-<tr class="odd">
-<td><p>publisher</p></td>
-<td><p><a href="#publisherdetails" data-raw-source="[PublisherDetails](#publisherdetails)">PublisherDetails</a></p></td>
-<td><p>Publisher of the application.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|Description|
+|--- |--- |--- |
+|Language|String|Language or fallback language if the specified language is not available.|
+|displayName|String|Display name of the application.|
+|Description|String|App description provided by developer can be up to 10,000 characters.|
+|Images|Collection of [ProductImage](#productimage)|Artwork and icon associated with the application.|
+|Publisher|[PublisherDetails](#publisherdetails)|Publisher of the application.|
 
 ## OfflineLicense
 
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>productKey</p></td>
-<td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
-<td><p>Identifies a set of seats associated with an application.</p></td>
-</tr>
-<tr class="even">
-<td><p>licenseBlob</p></td>
-<td><p>string</p></td>
-<td><p>Base-64 encoded offline license that can be installed via a CSP.</p></td>
-</tr>
-<tr class="odd">
-<td><p>licenseInstanceId</p></td>
-<td><p>string</p></td>
-<td><p>Version of the license.</p></td>
-</tr>
-<tr class="even">
-<td><p>requestorId</p></td>
-<td><p>string</p></td>
-<td><p>Organization requesting the license.</p></td>
-</tr>
-<tr class="odd">
-<td><p>contentId</p></td>
-<td><p>string</p></td>
-<td><p>Identifies the specific license required by an application.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|Description|
+|--- |--- |--- |
+|productKey|[ProductKey](#productkey)|Identifies a set of seats associated with an application.|
+|licenseBlob|String|Base-64 encoded offline license that can be installed via a CSP.|
+|licenseInstanceId|String|Version of the license.|
+|requestorId|String|Organization requesting the license.|
+|contentId|String|Identifies the specific license required by an application.|
 
 ## PackageContentInfo
 
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>productPlatforms</p></td>
-<td><p>collection of <a href="#productplatform" data-raw-source="[ProductPlatform](#productplatform)">ProductPlatform</a></p></td>
-</tr>
-<tr class="even">
-<td><p>packageFormat</p></td>
-<td><p>string</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|
+|--- |--- |
+|productPlatforms|Collection of ProductPlatform|
+|packageFormat|String|
 
 ## PackageLocation
 
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>url</p></td>
-<td><p>URI</p></td>
-<td><p>CDN location of the packages. URL expiration is based on the estimated time to download the package.</p></td>
-</tr>
-</tbody>
-</table>
+|Name|Type|Description|
+|--- |--- |--- |
+|Url|URI|CDN location of the packages. URL expiration is based on the estimated time to download the package.|
 
- 
 
 ## ProductArchitectures
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>neutral</p></td>
-</tr>
-<tr class="even">
-<td><p>arm</p></td>
-</tr>
-<tr class="odd">
-<td><p>x86</p></td>
-</tr>
-<tr class="even">
-<td><p>x64</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|
+|--- |
+|Neutral|
+|Arm|
+|x86|
+|x64|
 
 ## ProductDetails
 
+|Name|Type|Description|
+|--- |--- |--- |
+|productKey|[ProductKey](#productkey)|Identifier used on subsequent requests to get more content including product descriptions, offline license, and download URLs.|
+|productType|String|Type of product.|
+|supportedLanguages|Collection of string|The set of localized languages for an application.|
+|publisherId|String|Publisher identifier.|
+|Category|String|Application category.|
+|alternateIds|Collection of [AlternateIdentifier](#alternateidentifier)|The identifiers that can be used to instantiate the installation of on online application.|
+|packageFamilyName|String||
+|supportedPlatforms|Collection of [ProductPlatform](#productplatform)||
 
 <table>
 <colgroup>
@@ -630,9 +295,7 @@ Specifies the properties of the localized product.
 </table>
 
  
-
 ## ProductImage
-
 
 Specifies the properties of the product image.
 
@@ -693,428 +356,108 @@ Specifies the properties of the product image.
 </tbody>
 </table>
 
- 
-
 ## ProductKey
-
 
 Specifies the properties of the product key.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>productId</p></td>
-<td><p>string</p></td>
-<td><p>Product identifier for an application that is used by the Store for Business.</p></td>
-</tr>
-<tr class="even">
-<td><p>skuId</p></td>
-<td><p>string</p></td>
-<td><p>Product identifier that specifies a specific SKU of an application.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|Description|
+|--- |--- |--- |
+|productId|String|Product identifier for an application that is used by the Store for Business.|
+|skuId|String|Product identifier that specifies a specific SKU of an application.|
 
 ## ProductPackageDetails
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>frameworkDependencyPackages</p></td>
-<td><p>collection of <a href="#frameworkpackagedetails" data-raw-source="[FrameworkPackageDetails](#frameworkpackagedetails)">FrameworkPackageDetails</a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>packageId</p></td>
-<td><p>string</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>contentId</p></td>
-<td><p>string</p></td>
-<td><p>Identifies a specific application.</p></td>
-</tr>
-<tr class="even">
-<td><p>location</p></td>
-<td><p><a href="#packagelocation" data-raw-source="[PackageLocation](#packagelocation)">PackageLocation</a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>packageFullName</p></td>
-<td><p>string</p></td>
-<td><p>example, Microsoft.BingTranslator_1.1.10917.2059_x86__8wekyb3d8bbwe</p></td>
-</tr>
-<tr class="even">
-<td><p>packageIdentityName</p></td>
-<td><p>string</p></td>
-<td><p>example, Microsoft.BingTranslator</p></td>
-</tr>
-<tr class="odd">
-<td><p>architectures</p></td>
-<td><p>collection of <a href="#productarchitectures" data-raw-source="[ProductArchitectures](#productarchitectures)">ProductArchitectures</a></p></td>
-<td><p>Values {x86, x64, arm, neutral}</p></td>
-</tr>
-<tr class="even">
-<td><p>packageFormat</p></td>
-<td><p><a href="#productpackageformat" data-raw-source="[ProductPackageFormat](#productpackageformat)">ProductPackageFormat</a></p></td>
-<td><p>Extension of the package file.</p></td>
-</tr>
-<tr class="odd">
-<td><p>platforms</p></td>
-<td><p>collection of <a href="#productplatform" data-raw-source="[ProductPlatform](#productplatform)">ProductPlatform</a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>fileSize</p></td>
-<td><p>integer-64</p></td>
-<td><p>Size of the file.</p></td>
-</tr>
-<tr class="odd">
-<td><p>packageRank</p></td>
-<td><p>integer-32</p></td>
-<td><p>Optional</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|Description|
+|--- |--- |--- |
+|frameworkDependencyPackages|Collection of [FrameworkPackageDetails](#frameworkpackagedetails)||
+|packageId|String||
+|contentId|String|Identifies a specific application.|
+|Location|[PackageLocation](#packagelocation)||
+|packageFullName|String|Example, Microsoft.BingTranslator_1.1.10917.2059_x86__8wekyb3d8bbwe|
+|packageIdentityName|String|Example, Microsoft.BingTranslator|
+|Architectures|Collection of [ProductArchitectures](#productarchitectures)|Values {x86, x64, arm, neutral}|
+|packageFormat|[ProductPackageFormat](#productpackageformat)|Extension of the package file.|
+|Platforms|Collection of [ProductPlatform](#productplatform)||
+|fileSize|integer-64|Size of the file.|
+|packageRank|integer-32|Optional|
 
 ## ProductPackageFormat
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>appx</p></td>
-</tr>
-<tr class="even">
-<td><p>appxBundle</p></td>
-</tr>
-<tr class="odd">
-<td><p>xap</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|
+|--- |
+|Appx|
+|appxBundle|
+|Xap|
 
 ## ProductPackageSet
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>packageSetId</p></td>
-<td><p>string</p></td>
-<td><p>An identifier for the particular combination of application packages.</p></td>
-</tr>
-<tr class="even">
-<td><p>productPackages</p></td>
-<td><p>collection of <a href="#productpackagedetails" data-raw-source="[ProductPackageDetails](#productpackagedetails)">ProductPackageDetails</a></p></td>
-<td><p>A collection of application packages.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|Description|
+|--- |--- |--- |
+|packageSetId|String|An identifier for the particular combination of application packages.|
+|productPackages|Collection of [ProductPackageDetails](#productpackagedetails)|A collection of application packages.|
 
 ## ProductPlatform
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>platformName</p></td>
-<td><p>string</p></td>
-</tr>
-<tr class="even">
-<td><p>minVersion</p></td>
-<td><p><a href="#versioninfo" data-raw-source="[VersionInfo](#versioninfo)">VersionInfo</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>maxTestedVersion</p></td>
-<td><p><a href="#versioninfo" data-raw-source="[VersionInfo](#versioninfo)">VersionInfo</a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|
+|--- |--- |
+|platformName|String|
+|minVersion|[VersionInfo](#versioninfo)|
+|maxTestedVersion|[VersionInfo](#versioninfo)|
 
 ## PublisherDetails
 
-
 Specifies the properties of the publisher details.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>publisherName</p></td>
-<td><p>string</p></td>
-<td><p>Name of the publisher.</p></td>
-</tr>
-<tr class="even">
-<td><p>publisherWebsite</p></td>
-<td><p>string</p></td>
-<td><p>Website of the publisher.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|Description|
+|--- |--- |--- |
+|publisherName|String|Name of the publisher.|
+|publisherWebsite|String|Website of the publisher.|
 
 ## SeatAction
 
 
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>assign</p></td>
-</tr>
-<tr class="even">
-<td><p>reclaim</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|
+|--- |
+|Assign|
+|Reclaim|
 
 ## SeatDetails
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>assignedTo</p></td>
-<td><p>string</p></td>
-<td><p>Format = UPN (user@domain)</p></td>
-</tr>
-<tr class="even">
-<td><p>dateAssigned</p></td>
-<td><p>datetime</p></td>
-<td><p></p></td>
-</tr>
-<tr class="odd">
-<td><p>state</p></td>
-<td><p><a href="#seatstate" data-raw-source="[SeatState](#seatstate)">SeatState</a></p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>productKey</p></td>
-<td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
-<td><p></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|Description|
+|--- |--- |--- |
+|assignedTo|String|Format = UPN (user@domain)|
+|dateAssigned|Datetime||
+|State|[SeatState](#seatstate)||
+|productKey|[ProductKey](#productkey)||
 
 ## SeatDetailsResultSet
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>seats</p></td>
-<td><p>collection of <a href="#seatdetails" data-raw-source="[SeatDetails](#seatdetails)">SeatDetails</a></p></td>
-</tr>
-<tr class="even">
-<td><p>continuationToken</p></td>
-<td><p>string</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|
+|--- |--- |
+|Seats|Collection of [SeatDetails](#seatdetails)|
+|continuationToken|String|
 
 ## SeatState
 
-
-<table>
-<colgroup>
-<col width="100%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>active</p></td>
-</tr>
-<tr class="even">
-<td><p>revoked</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|
+|--- |
+|Active|
+|Revoked|
 
 ## SupportedProductPlatform
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>platformName</p></td>
-<td><p>string</p></td>
-</tr>
-<tr class="even">
-<td><p>minVersion</p></td>
-<td><p><a href="#versioninfo" data-raw-source="[VersionInfo](#versioninfo)">VersionInfo</a></p></td>
-</tr>
-<tr class="odd">
-<td><p>maxTestedVersion</p></td>
-<td><p><a href="#versioninfo" data-raw-source="[VersionInfo](#versioninfo)">VersionInfo</a></p></td>
-</tr>
-<tr class="even">
-<td><p>architectures</p></td>
-<td><p>collection of <a href="#productarchitectures" data-raw-source="[ProductArchitectures](#productarchitectures)">ProductArchitectures</a></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|
+|--- |--- |
+|platformName|String|
+|minVersion|[VersionInfo](#versioninfo)|
+|maxTestedVersion|[VersionInfo](#versioninfo)|
+|Architectures|Collection of [ProductArchitectures](#productarchitectures)|
 
 ## VersionInfo
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="66%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>major</p></td>
-<td><p>integer-32</p></td>
-</tr>
-<tr class="even">
-<td><p>minor</p></td>
-<td><p>integer-32</p></td>
-</tr>
-<tr class="odd">
-<td><p>build</p></td>
-<td><p>integer-32</p></td>
-</tr>
-<tr class="even">
-<td><p>revision</p></td>
-<td><p>integer-32</p></td>
-</tr>
-</tbody>
-</table>
+|Name|Type|
+|--- |--- |
+|Major|integer-32|
+|Minor|integer-32|
+|Build|integer-32|
+|Revision|integer-32|

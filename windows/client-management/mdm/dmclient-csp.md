@@ -328,220 +328,50 @@ If there's no infinite schedule set, then a 24-hour schedule is created and sche
 
 **Valid poll schedule: sigmoid polling schedule with infinite schedule (Recommended).**
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Schedule name</th>
-<th>Schedule set by the server</th>
-<th>Actual value queried on device</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>IntervalForFirstSetOfRetries</p></td>
-<td><p>15</p></td>
-<td><p>15</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfFirstRetries</p></td>
-<td><p>5</p></td>
-<td><p>5</p></td>
-</tr>
-<tr class="odd">
-<td><p>IntervalForSecondSetOfRetries</p></td>
-<td><p>60</p></td>
-<td><p>60</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfSecondRetries</p></td>
-<td><p>10</p></td>
-<td><p>10</p></td>
-</tr>
-<tr class="odd">
-<td><p>IntervalForRemainingScheduledRetries</p></td>
-<td><p>1440</p></td>
-<td><p>1440</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfRemainingScheduledRetries</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-</tr>
-</tbody>
-</table>
+|Schedule name|Schedule set by the server|Actual value queried on device|
+|--- |--- |--- |
+|IntervalForFirstSetOfRetries|15|15|
+|NumberOfFirstRetries|5|5|
+|IntervalForSecondSetOfRetries|60|60|
+|NumberOfSecondRetries|10|10|
+|IntervalForRemainingScheduledRetries|1440|1440|
+|NumberOfRemainingScheduledRetries|0|0|
 
- 
+**Valid poll schedule: initial enrollment only [no infinite schedule]**
 
-**Valid poll schedule: initial enrollment only \[no infinite schedule\]**
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Schedule name</th>
-<th>Schedule set by the server</th>
-<th>Actual value queried on device</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>IntervalForFirstSetOfRetries</p></td>
-<td><p>15</p></td>
-<td><p>15</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfFirstRetries</p></td>
-<td><p>5</p></td>
-<td><p>5</p></td>
-</tr>
-<tr class="odd">
-<td><p>IntervalForSecondSetOfRetries</p></td>
-<td><p>60</p></td>
-<td><p>60</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfSecondRetries</p></td>
-<td><p>10</p></td>
-<td><p>10</p></td>
-</tr>
-<tr class="odd">
-<td><p>IntervalForRemainingScheduledRetries</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfRemainingScheduledRetries</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Schedule name|Schedule set by the server|Actual value queried on device|
+|--- |--- |--- |
+|IntervalForFirstSetOfRetries|15|15|
+|NumberOfFirstRetries|5|5|
+|IntervalForSecondSetOfRetries|60|60|
+|NumberOfSecondRetries|10|10|
+|IntervalForRemainingScheduledRetries|0|0|
+|NumberOfRemainingScheduledRetries|0|0|
 
 **Invalid poll schedule: disable all poll schedules**
 
 > [!NOTE]
 > Disabling poll schedules results in UNDEFINED behavior and enrollment may fail if poll schedules are all set to zero.
 
+|Schedule name|Schedule set by the server|Actual value queried on device|
+|--- |--- |--- |
+|IntervalForFirstSetOfRetries|0|0|
+|NumberOfFirstRetries|0|0|
+|IntervalForSecondSetOfRetries|0|0|
+|NumberOfSecondRetries|0|0|
+|IntervalForRemainingScheduledRetries|0|0|
+|NumberOfRemainingScheduledRetries|0|0|
  
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Schedule name</th>
-<th>Schedule set by the server</th>
-<th>Actual value queried on device</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>IntervalForFirstSetOfRetries</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfFirstRetries</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="odd">
-<td><p>IntervalForSecondSetOfRetries</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfSecondRetries</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="odd">
-<td><p>IntervalForRemainingScheduledRetries</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfRemainingScheduledRetries</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
 **Invalid poll schedule: two infinite schedules**
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Schedule name</th>
-<th>Schedule set by server</th>
-<th>Actual schedule set on device</th>
-<th>Actual experience</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>IntervalForFirstSetOfRetries</p></td>
-<td><p>15</p></td>
-<td><p>15</p></td>
-<td><p>Device polls</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfFirstRetries</p></td>
-<td><p>5</p></td>
-<td><p>5</p></td>
-<td><p>Device polls</p></td>
-</tr>
-<tr class="odd">
-<td><p>IntervalForSecondSetOfRetries</p></td>
-<td><p>1440</p></td>
-<td><p>1440</p></td>
-<td><p>Device polls the server once in 24 hours</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfSecondRetries</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-<td><p>Device polls the server once in 24 hours</p></td>
-</tr>
-<tr class="odd">
-<td><p>IntervalForRemainingScheduledRetries</p></td>
-<td><p>1440</p></td>
-<td><p>0</p></td>
-<td><p>Third schedule is disabled</p></td>
-</tr>
-<tr class="even">
-<td><p>NumberOfRemainingScheduledRetries</p></td>
-<td><p>0</p></td>
-<td><p>0</p></td>
-<td><p>Third schedule is disabled</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Schedule name|Schedule set by server|Actual schedule set on device|Actual experience|
+|--- |--- |--- |--- |
+|IntervalForFirstSetOfRetries|15|15|Device polls|
+|NumberOfFirstRetries|5|5|Device polls|
+|IntervalForSecondSetOfRetries|1440|1440|Device polls the server once in 24 hours|
+|NumberOfSecondRetries|0|0|Device polls the server once in 24 hours|
+|IntervalForRemainingScheduledRetries|1440|0|Third schedule is disabled|
+|NumberOfRemainingScheduledRetries|0|0|Third schedule is disabled|
 
 If the device was previously enrolled in MDM with polling schedule configured using the registry key values directly, the MDM provider that supports using DMClient CSP to update polling schedule must first send an Add command to add a **./Vendor/MSFT/DMClient/Enrollment/&lt;ProviderID&gt;/Poll** node before it sends a Get/Replace command to query or update polling parameters using the DMClient CSP
 
@@ -654,58 +484,17 @@ Supported operation is Get.
 
 The status error mapping is listed below.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Status</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>0</p></td>
-<td><p>Success</p></td>
-</tr>
-<tr class="even">
-<td><p>1</p></td>
-<td><p>Failure: invalid PFN</p></td>
-</tr>
-<tr class="odd">
-<td><p>2</p></td>
-<td><p>Failure: invalid or expired device authentication with MSA</p></td>
-</tr>
-<tr class="even">
-<td><p>3</p></td>
-<td><p>Failure: WNS client registration failed due to an invalid or revoked PFN</p></td>
-</tr>
-<tr class="odd">
-<td><p>4</p></td>
-<td><p>Failure: no Channel URI assigned</p></td>
-</tr>
-<tr class="even">
-<td><p>5</p></td>
-<td><p>Failure: Channel URI has expired</p></td>
-</tr>
-<tr class="odd">
-<td><p>6</p></td>
-<td><p>Failure: Channel URI failed to be revoked</p></td>
-</tr>
-<tr class="even">
-<td><p>7</p></td>
-<td><p>Failure: push notification received, but unable to establish an OMA-DM session due to power or connectivity limitations.</p></td>
-</tr>
-<tr class="odd">
-<td><p>8</p></td>
-<td><p>Unknown error</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Status|Description|
+|--- |--- |
+|0|Success|
+|1|Failure: invalid PFN|
+|2|Failure: invalid or expired device authentication with MSA|
+|3|Failure: WNS client registration failed due to an invalid or revoked PFN|
+|4|Failure: no Channel URI assigned|
+|5|Failure: Channel URI has expired|
+|6|Failure: Channel URI failed to be revoked|
+|7|Failure: push notification received, but unable to establish an OMA-DM session due to power or connectivity limitations.|
+|8|Unknown error|
 
 <a href="" id="provider-providerid-customenrollmentcompletepage"></a>**Provider/*ProviderID*/CustomEnrollmentCompletePage**  
 Optional. Added in Windows 10, version 1703.

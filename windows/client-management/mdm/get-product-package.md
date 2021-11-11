@@ -18,108 +18,27 @@ The **Get product package** operation retrieves the information about a specific
 
 ## Request
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Request URI</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>GET</p></td>
-<td><p>https://bspmts.mp.microsoft.com/V1/Products/{productId}/{skuId}/Packages/{packageId}</p></td>
-</tr>
-</tbody>
-</table>
+**GET:**
 
- 
+```http
+https://bspmts.mp.microsoft.com/V1/Products/{productId}/{skuId}/Packages/{packageId}
+```
 
 ### URI parameters
 
 The following parameters may be specified in the request URI.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>productId</p></td>
-<td><p>string</p></td>
-<td><p>Required. Product identifier for an application that is used by the Store for Business.</p></td>
-</tr>
-<tr class="even">
-<td><p>skuId</p></td>
-<td><p>string</p></td>
-<td><p>Required. Product identifier that specifies a specific SKU of an application.</p></td>
-</tr>
-<tr class="odd">
-<td><p>packageId</p></td>
-<td><p>string</p></td>
-<td><p>Required.</p></td>
-</tr>
-</tbody>
-</table>
-   
+|Parameter|Type|Description|
+|--- |--- |--- |
+|productId|string|Required. Product identifier for an application that is used by the Store for Business.|
+|skuId|string|Required. Product identifier that specifies a specific SKU of an application.|
+|packageId|string|Required.|
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Error code</th>
-<th>Description</th>
-<th>Retry</th>
-<th>Data field</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>400</p></td>
-<td><p>Invalid parameters</p></td>
-<td><p>No</p></td>
-<td><p>Parameter name</p>
-<p>Reason: Invalid parameter</p>
-<p>Details: String</p></td>
-<td><p>Can be productId, skuId, or packageId</p></td>
-</tr>
-<tr class="even">
-<td><p>404</p></td>
-<td><p>Not found</p></td>
-<td></td>
-<td></td>
-<td><p>Item type: Product/SKU</p></td>
-</tr>
-<tr class="odd">
-<td><p>409</p></td>
-<td><p>Conflict</p></td>
-<td></td>
-<td><p>Reason: Not owned</p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
+|Error code|Description|Retry|Data field|Details|
+|--- |--- |--- |--- |--- |
+|400|Invalid parameters|No|Parameter name <br/> <br/>Reason: Invalid parameter <br/> <br/>Details: String|Can be productId, skuId, or packageId|
+|404|Not found|||Item type: Product/SKU|
+|409|Conflict||Reason: Not owned||
 
 ## Response
 

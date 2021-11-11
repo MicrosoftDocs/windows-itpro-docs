@@ -17,12 +17,14 @@ ms.date: 07/12/2017
 
 The EnterpriseAssignedAccess configuration service provider allows IT administrators to configure settings, such as language and themes, lock down a device, and configure custom layouts on a device. For example, the administrator can lock down a device so that only applications specified in an Allow list are available. Apps not on the Allow list remain installed on the device, but are hidden from view and blocked from launching.
 
-> **Note**   The EnterpriseAssignedAccess CSP is only supported in Windows 10 Mobile.
+> [!NOTE]
+> The EnterpriseAssignedAccess CSP is only supported in Windows 10 Mobile.
 
 For more information about how to interact with the lockdown XML at runtime, see [**DeviceLockdownProfile class**](/uwp/api/Windows.Embedded.DeviceLockdown.DeviceLockdownProfile).
 
 The following shows the EnterpriseAssignedAccess configuration service provider in tree format as used by both the Open Mobile Alliance (OMA) Device Management (DM) and OMA Client Provisioning.
-```
+
+```console
 ./Vendor/MSFT
 EnterpriseAssignedAccess
 ----AssignedAccess
@@ -38,6 +40,7 @@ EnterpriseAssignedAccess
 ----Locale
 --------Language
 ```
+
 The following list shows the characteristics and parameters.
 
 <a href="" id="-vendor-msft-enterpriseassignedaccess-"></a>**./Vendor/MSFT/EnterpriseAssignedAccess/**
@@ -631,110 +634,30 @@ Supported operations are Get and Replace.
 <a href="" id="theme-themeaccentcolorid"></a>**Theme/ThemeAccentColorID**
 The accent color to apply as the foreground color for tiles, controls, and other visual elements on the device. The following table shows the possible values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>0</strong></p></td>
-<td><p>Lime</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1</strong></p></td>
-<td><p>Green</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2</strong></p></td>
-<td><p>Emerald</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>3</strong></p></td>
-<td><p>Teal (Viridian)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>4</strong></p></td>
-<td><p>Cyan (Blue)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>5</strong></p></td>
-<td><p>Cobalt</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>6</strong></p></td>
-<td><p>Indigo</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>7</strong></p></td>
-<td><p>Violet (Purple)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>8</strong></p></td>
-<td><p>Pink</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>9</strong></p></td>
-<td><p>Magenta</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>10</strong></p></td>
-<td><p>Crimson</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>11</strong></p></td>
-<td><p>Red</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>12</strong></p></td>
-<td><p>Orange (Mango)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>13</strong></p></td>
-<td><p>Amber</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>14</strong></p></td>
-<td><p>Yellow</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>15</strong></p></td>
-<td><p>Brown</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>16</strong></p></td>
-<td><p>Olive</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>17</strong></p></td>
-<td><p>Steel</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>18</strong></p></td>
-<td><p>Mauve</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>19</strong></p></td>
-<td><p>Sienna</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>101</strong> through <strong>104</strong></p></td>
-<td><p>Optional colors, as defined by the OEM</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>151</strong></p></td>
-<td><p>Custom accent color for Enterprise</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Value|Description|
+|--- |--- |
+|0|Lime|
+|1|Green|
+|2|Emerald|
+|3|Teal (Viridian)|
+|4|Cyan (Blue)|
+|5|Cobalt|
+|6|Indigo|
+|7|Violet (Purple)|
+|8|Pink|
+|9|Magenta|
+|10|Crimson|
+|11|Red|
+|12|Orange (Mango)|
+|13|Amber|
+|14|Yellow|
+|15|Brown|
+|16|Olive|
+|17|Steel|
+|18|Mauve|
+|19|Sienna|
+|101 through 104|Optional colors, as defined by the OEM|
+|151|Custom accent color for Enterprise|
 
 Supported operations are Get and Replace.
 
@@ -758,440 +681,119 @@ An integer that specifies the time zone of the device. The following table shows
 
 Supported operations are Get and Replace.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Time zone</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>0</strong></p></td>
-<td><p>UTC-12 International Date Line West</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>100</strong></p></td>
-<td><p>UTC+13 Samoa</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>110</strong></p></td>
-<td><p>UTC-11 Coordinated Universal Time-11</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>200</strong></p></td>
-<td><p>UTC-10 Hawaii</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>300</strong></p></td>
-<td><p>UTC-09 Alaska</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>400</strong></p></td>
-<td><p>UTC-08 Pacific Time (US &amp; Canada)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>410</strong></p></td>
-<td><p>UTC-08 Baja California</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>500</strong></p></td>
-<td><p>UTC-07 Mountain Time (US &amp; Canada)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>510</strong></p></td>
-<td><p>UTC-07 Chihuahua, La Paz, Mazatlan</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>520</strong></p></td>
-<td><p>UTC-07 Arizona</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>600</strong></p></td>
-<td><p>UTC-06 Saskatchewan</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>610</strong></p></td>
-<td><p>UTC-06 Central America</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>620</strong></p></td>
-<td><p>UTC-06 Central Time (US &amp; Canada)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>630</strong></p></td>
-<td><p>UTC-06 Guadalajara, Mexico City, Monterrey</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>700</strong></p></td>
-<td><p>UTC-05 Eastern Time (US &amp; Canada)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>710</strong></p></td>
-<td><p>UTC-05 Bogota, Lima, Quito</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>720</strong></p></td>
-<td><p>UTC-05 Indiana (East)</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>800</strong></p></td>
-<td><p>UTC-04 Atlantic Time (Canada)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>810</strong></p></td>
-<td><p>UTC-04 Cuiaba</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>820</strong></p></td>
-<td><p>UTC-04 Santiago</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>830</strong></p></td>
-<td><p>UTC-04 Georgetown, La Paz, Manaus, San Juan</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>840</strong></p></td>
-<td><p>UTC-04 Caracas</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>850</strong></p></td>
-<td><p>UTC-04 Asuncion</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>900</strong></p></td>
-<td><p>UTC-03:30 Newfoundland</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>910</strong></p></td>
-<td><p>UTC-03 Brasilia</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>920</strong></p></td>
-<td><p>UTC-03 Greenland</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>930</strong></p></td>
-<td><p>UTC-03 Montevideo</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>940</strong></p></td>
-<td><p>UTC-03 Cayenne, Fortaleza</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>950</strong></p></td>
-<td><p>UTC-03 Buenos Aires</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>960</strong></p></td>
-<td><p>UTC-03 Salvador</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1000</strong></p></td>
-<td><p>UTC-02 Mid-Atlantic</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1010</strong></p></td>
-<td><p>UTC-02 Coordinated Universal Time-02</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1100</strong></p></td>
-<td><p>UTC-01 Azores</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1110</strong></p></td>
-<td><p>UTC-01 Cabo Verde</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1200</strong></p></td>
-<td><p>UTC Dublin, Edinburgh, Lisbon, London</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1210</strong></p></td>
-<td><p>UTC Monrovia, Reykjavik</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1220</strong></p></td>
-<td><p>UTC Casablanca</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1230</strong></p></td>
-<td><p>UTC Coordinated Universal Time</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1300</strong></p></td>
-<td><p>UTC+01 Belgrade, Bratislava, Budapest, Ljubljana, Prague</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1310</strong></p></td>
-<td><p>UTC+01 Sarajevo, Skopje, Warsaw, Zagreb</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1320</strong></p></td>
-<td><p>UTC+01 Brussels, Copenhagen, Madrid, Paris</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1330</strong></p></td>
-<td><p>UTC+01 West Central Africa</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1340</strong></p></td>
-<td><p>UTC+01 Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1350</strong></p></td>
-<td><p>UTC+01 Windhoek</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1360</strong></p></td>
-<td><p>UTC+01 Tripoli</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1400</strong></p></td>
-<td><p>UTC+02 E. Europe</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1410</strong></p></td>
-<td><p>UTC+02 Cairo</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1420</strong></p></td>
-<td><p>UTC+02 Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1430</strong></p></td>
-<td><p>UTC+02 Athens, Bucharest</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1440</strong></p></td>
-<td><p>UTC+02 Jerusalem</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1450</strong></p></td>
-<td><p>UTC+02 Amman</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1460</strong></p></td>
-<td><p>UTC+02 Beirut</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1470</strong></p></td>
-<td><p>UTC+02 Harare, Pretoria</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1480</strong></p></td>
-<td><p>UTC+02 Damascus</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1490</strong></p></td>
-<td><p>UTC+02 Istanbul</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1500</strong></p></td>
-<td><p>UTC+03 Kuwait, Riyadh</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1510</strong></p></td>
-<td><p>UTC+03 Baghdad</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1520</strong></p></td>
-<td><p>UTC+03 Nairobi</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1530</strong></p></td>
-<td><p>UTC+03 Kaliningrad, Minsk</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1540</strong></p></td>
-<td><p>UTC+04 Moscow, St. Petersburg, Volgograd</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1550</strong></p></td>
-<td><p>UTC+03 Tehran</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1600</strong></p></td>
-<td><p>UTC+04 Abu Dhabi, Muscat</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1610</strong></p></td>
-<td><p>UTC+04 Baku</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1620</strong></p></td>
-<td><p>UTC+04 Yerevan</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1630</strong></p></td>
-<td><p>UTC+04 Kabul</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1640</strong></p></td>
-<td><p>UTC+04 Tbilisi</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1650</strong></p></td>
-<td><p>UTC+04 Port Louis</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1700</strong></p></td>
-<td><p>UTC+06 Ekaterinburg</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1710</strong></p></td>
-<td><p>UTC+05 Tashkent</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1720</strong></p></td>
-<td><p>UTC+05 Chennai, Kolkata, Mumbai, New Delhi</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1730</strong></p></td>
-<td><p>UTC+05 Sri Jayawardenepura</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1740</strong></p></td>
-<td><p>UTC+05 Kathmandu</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1750</strong></p></td>
-<td><p>UTC+05 Islamabad, Karachi</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1800</strong></p></td>
-<td><p>UTC+06 Astana</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1810</strong></p></td>
-<td><p>UTC+07 Novosibirsk</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1820</strong></p></td>
-<td><p>UTC+06 Yangon (Rangoon)</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1830</strong></p></td>
-<td><p>UTC+06 Dhaka</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1900</strong></p></td>
-<td><p>UTC+08 Krasnoyarsk</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>1910</strong></p></td>
-<td><p>UTC+07 Bangkok, Hanoi, Jakarta</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>1900</strong></p></td>
-<td><p>UTC+08 Krasnoyarsk</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2000</strong></p></td>
-<td><p>UTC+08 Beijing, Chongqing, Hong Kong SAR, Urumqi</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>2010</strong></p></td>
-<td><p>UTC+09 Irkutsk</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2020</strong></p></td>
-<td><p>UTC+08 Kuala Lumpur, Singapore</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>2030</strong></p></td>
-<td><p>UTC+08 Taipei</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2040</strong></p></td>
-<td><p>UTC+08 Perth</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>2050</strong></p></td>
-<td><p>UTC+08 Ulaanbaatar</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2100</strong></p></td>
-<td><p>UTC+09 Seoul</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>2110</strong></p></td>
-<td><p>UTC+09 Osaka, Sapporo, Tokyo</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2120</strong></p></td>
-<td><p>UTC+10 Yakutsk</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>2130</strong></p></td>
-<td><p>UTC+09 Darwin</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2140</strong></p></td>
-<td><p>UTC+09 Adelaide</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>2200</strong></p></td>
-<td><p>UTC+10 Canberra, Melbourne, Sydney</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2210</strong></p></td>
-<td><p>UTC+10 Brisbane</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>2220</strong></p></td>
-<td><p>UTC+10 Hobart</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2230</strong></p></td>
-<td><p>UTC+11 Vladivostok</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>2240</strong></p></td>
-<td><p>UTC+10 Guam, Port Moresby</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2300</strong></p></td>
-<td><p>UTC+11 Solomon Is., New Caledonia</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>2310</strong></p></td>
-<td><p>UTC+12 Magadan</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2400</strong></p></td>
-<td><p>UTC+12 Fiji</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>2410</strong></p></td>
-<td><p>UTC+12 Auckland, Wellington</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2420</strong></p></td>
-<td><p>UTC+12 Petropavlovsk-Kamchatsky</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>2430</strong></p></td>
-<td><p>UTC+12 Coordinated Universal Time +12</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>2500</strong></p></td>
-<td><p>UTC+13 Nuku&#39;alofa</p></td>
-</tr>
-</tbody>
-</table>
-
+|Value|Time zone|
+|--- |--- |
+|0|UTC-12 International Date Line West|
+|100|UTC+13 Samoa|
+|110|UTC-11 Coordinated Universal Time-11|
+|200|UTC-10 Hawaii|
+|300|UTC-09 Alaska|
+|400|UTC-08 Pacific Time (US & Canada)|
+|410|UTC-08 Baja California|
+|500|UTC-07 Mountain Time (US & Canada)|
+|510|UTC-07 Chihuahua, La Paz, Mazatlan|
+|520|UTC-07 Arizona|
+|600|UTC-06 Saskatchewan|
+|610|UTC-06 Central America|
+|620|UTC-06 Central Time (US & Canada)|
+|630|UTC-06 Guadalajara, Mexico City, Monterrey|
+|700|UTC-05 Eastern Time (US & Canada)|
+|710|UTC-05 Bogota, Lima, Quito|
+|720|UTC-05 Indiana (East)|
+|800|UTC-04 Atlantic Time (Canada)|
+|810|UTC-04 Cuiaba|
+|820|UTC-04 Santiago|
+|830|UTC-04 Georgetown, La Paz, Manaus, San Juan|
+|840|UTC-04 Caracas|
+|850|UTC-04 Asuncion|
+|900|UTC-03:30 Newfoundland|
+|910|UTC-03 Brasilia|
+|920|UTC-03 Greenland|
+|930|UTC-03 Montevideo|
+|940|UTC-03 Cayenne, Fortaleza|
+|950|UTC-03 Buenos Aires|
+|960|UTC-03 Salvador|
+|1000|UTC-02 Mid-Atlantic|
+|1010|UTC-02 Coordinated Universal Time-02|
+|1100|UTC-01 Azores|
+|1110|UTC-01 Cabo Verde|
+|1200|UTC Dublin, Edinburgh, Lisbon, London|
+|1210|UTC Monrovia, Reykjavik|
+|1220|UTC Casablanca|
+|1230|UTC Coordinated Universal Time|
+|1300|UTC+01 Belgrade, Bratislava, Budapest, Ljubljana, Prague|
+|1310|UTC+01 Sarajevo, Skopje, Warsaw, Zagreb|
+|1320|UTC+01 Brussels, Copenhagen, Madrid, Paris|
+|1330|UTC+01 West Central Africa|
+|1340|UTC+01 Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna|
+|1350|UTC+01 Windhoek|
+|1360|UTC+01 Tripoli|
+|1400|UTC+02 E. Europe|
+|1410|UTC+02 Cairo|
+|1420|UTC+02 Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius|
+|1430|UTC+02 Athens, Bucharest|
+|1440|UTC+02 Jerusalem|
+|1450|UTC+02 Amman|
+|1460|UTC+02 Beirut|
+|1470|UTC+02 Harare, Pretoria|
+|1480|UTC+02 Damascus|
+|1490|UTC+02 Istanbul|
+|1500|UTC+03 Kuwait, Riyadh|
+|1510|UTC+03 Baghdad|
+|1520|UTC+03 Nairobi|
+|1530|UTC+03 Kaliningrad, Minsk|
+|1540|UTC+04 Moscow, St. Petersburg, Volgograd|
+|1550|UTC+03 Tehran|
+|1600|UTC+04 Abu Dhabi, Muscat|
+|1610|UTC+04 Baku|
+|1620|UTC+04 Yerevan|
+|1630|UTC+04 Kabul|
+|1640|UTC+04 Tbilisi|
+|1650|UTC+04 Port Louis|
+|1700|UTC+06 Ekaterinburg|
+|1710|UTC+05 Tashkent|
+|1720|UTC+05 Chennai, Kolkata, Mumbai, New Delhi|
+|1730|UTC+05 Sri Jayawardenepura|
+|1740|UTC+05 Kathmandu|
+|1750|UTC+05 Islamabad, Karachi|
+|1800|UTC+06 Astana|
+|1810|UTC+07 Novosibirsk|
+|1820|UTC+06 Yangon (Rangoon)|
+|1830|UTC+06 Dhaka|
+|1900|UTC+08 Krasnoyarsk|
+|1910|UTC+07 Bangkok, Hanoi, Jakarta|
+|1900|UTC+08 Krasnoyarsk|
+|2000|UTC+08 Beijing, Chongqing, Hong Kong SAR, Urumqi|
+|2010|UTC+09 Irkutsk|
+|2020|UTC+08 Kuala Lumpur, Singapore|
+|2030|UTC+08 Taipei|
+|2040|UTC+08 Perth|
+|2050|UTC+08 Ulaanbaatar|
+|2100|UTC+09 Seoul|
+|2110|UTC+09 Osaka, Sapporo, Tokyo|
+|2120|UTC+10 Yakutsk|
+|2130|UTC+09 Darwin|
+|2140|UTC+09 Adelaide|
+|2200|UTC+10 Canberra, Melbourne, Sydney|
+|2210|UTC+10 Brisbane|
+|2220|UTC+10 Hobart|
+|2230|UTC+11 Vladivostok|
+|2240|UTC+10 Guam, Port Moresby|
+|2300|UTC+11 Solomon Is., New Caledonia|
+|2310|UTC+12 Magadan|
+|2400|UTC+12 Fiji|
+|2410|UTC+12 Auckland, Wellington|
+|2420|UTC+12 Petropavlovsk-Kamchatsky|
+|2430|UTC+12 Coordinated Universal Time +12|
+|2500|UTC+13 Nuku'alofa|
 
 <a href="" id="locale-language-"></a>**Locale/Language/**
 The culture code that identifies the language to display on a device, and specifies the formatting of numbers, currencies, time, and dates. For language values, see [Locale IDs Assigned by Microsoft](/openspecs/windows_protocols/ms-lcid/a9eac961-e77d-41a6-90a5-ce1a8b0cdb9c).
 
 The language setting is configured in the Default User profile only.
 
-> **Note**  Apply the Locale ID only after the corresponding language packs are built into and supported for the OS image running on the device. The specified language will be applied as the phone language and a restart may be required.
+> [!NOTE]
+> Apply the Locale ID only after the corresponding language packs are built into and supported for the OS image running on the device. The specified language will be applied as the phone language and a restart may be required.
 
 Supported operations are Get and Replace.
 
@@ -1200,7 +802,8 @@ Supported operations are Get and Replace.
 
 The XML examples in this section show how to perform various tasks by using OMA client provisioning.
 
-> **Note**  These examples are XML snippets and do not include all sections that are required for a complete lockdown XML file.
+> [!NOTE]
+> These examples are XML snippets and do not include all sections that are required for a complete lockdown XML file.
 
  
 
@@ -1469,212 +1072,45 @@ The following example shows how to set the language.
 
 ## <a href="" id="productid"></a>Product IDs in Windows 10 Mobile
 
-
 The following table lists the product ID and AUMID for each app that is included in Windows 10 Mobile.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>App</th>
-<th>Product ID</th>
-<th>AUMID</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Alarms and clock</td>
-<td>44F7D2B4-553D-4BEC-A8B7-634CE897ED5F</td>
-<td>Microsoft.WindowsAlarms_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="even">
-<td>Calculator</td>
-<td>B58171C6-C70C-4266-A2E8-8F9C994F4456</td>
-<td>Microsoft.WindowsCalculator_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="odd">
-<td>Camera</td>
-<td>F0D8FEFD-31CD-43A1-A45A-D0276DB069F1</td>
-<td>Microsoft.WindowsCamera_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="even">
-<td>Contact Support</td>
-<td>0DB5FCFF-4544-458A-B320-E352DFD9CA2B</td>
-<td>Windows.ContactSupport_cw5n1h2txyewy!App</td>
-</tr>
-<tr class="odd">
-<td>Cortana</td>
-<td>FD68DCF4-166F-4C55-A4CA-348020F71B94</td>
-<td>Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI</td>
-</tr>
-<tr class="even">
-<td>Excel</td>
-<td>EAD3E7C0-FAE6-4603-8699-6A448138F4DC</td>
-<td>Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel</td>
-</tr>
-<tr class="odd">
-<td>Facebook</td>
-<td>82A23635-5BD9-DF11-A844-00237DE2DB9E</td>
-<td>Microsoft.MSFacebook_8wekyb3d8bbwe!x82a236355bd9df11a84400237de2db9e</td>
-</tr>
-<tr class="even">
-<td>File Explorer</td>
-<td>C5E2524A-EA46-4F67-841F-6A9465D9D515</td>
-<td>c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App</td>
-</tr>
-<tr class="odd">
-<td>FM Radio</td>
-<td>F725010E-455D-4C09-AC48-BCDEF0D4B626</td>
-<td>N/A</td>
-</tr>
-<tr class="even">
-<td>Get Started</td>
-<td>B3726308-3D74-4A14-A84C-867C8C735C3C</td>
-<td>Microsoft.Getstarted_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="odd">
-<td>Groove Music</td>
-<td>D2B6A184-DA39-4C9A-9E0A-8B589B03DEC0</td>
-<td>Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic</td>
-</tr>
-<tr class="even">
-<td>Maps</td>
-<td>ED27A07E-AF57-416B-BC0C-2596B622EF7D</td>
-<td>Microsoft.WindowsMaps_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="odd">
-<td>Messaging</td>
-<td>27E26F40-E031-48A6-B130-D1F20388991A</td>
-<td>Microsoft.Messaging_8wekyb3d8bbwe!x27e26f40ye031y48a6yb130yd1f20388991ax</td>
-</tr>
-<tr class="even">
-<td>Microsoft Edge</td>
-<td>395589FB-5884-4709-B9DF-F7D558663FFD</td>
-<td>Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge</td>
-</tr>
-<tr class="odd">
-<td>Money</td>
-<td>1E0440F1-7ABF-4B9A-863D-177970EEFB5E</td>
-<td>Microsoft.BingFinance_8wekyb3d8bbwe!AppexFinance</td>
-</tr>
-<tr class="even">
-<td>Movies and TV</td>
-<td>6AFFE59E-0467-4701-851F-7AC026E21665</td>
-<td>Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo</td>
-</tr>
-<tr class="odd">
-<td>News</td>
-<td>9C3E8CAD-6702-4842-8F61-B8B33CC9CAF1</td>
-<td>Microsoft.BingNews_8wekyb3d8bbwe!AppexNews</td>
-</tr>
-<tr class="even">
-<td>OneDrive</td>
-<td>AD543082-80EC-45BB-AA02-FFE7F4182BA8</td>
-<td>Microsoft.MicrosoftSkydrive_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="odd">
-<td>OneNote</td>
-<td>CA05B3AB-F157-450C-8C49-A1F127F5E71D</td>
-<td>Microsoft.Office.OneNote_8wekyb3d8bbwe!microsoft.onenoteim</td>
-</tr>
-<tr class="even">
-<td>Outlook Calendar</td>
-<td><p>A558FEBA-85D7-4665-B5D8-A2FF9C19799B</p></td>
-<td><p>Microsoft.WindowsCommunicationsApps_8wekyb3d8bbwe!Microsoft.WindowsLive.Calendar</p></td>
-</tr>
-<tr class="odd">
-<td>Outlook Mail</td>
-<td><p>A558FEBA-85D7-4665-B5D8-A2FF9C19799B</p></td>
-<td><p>Microsoft.WindowsCommunicationsApps_8wekyb3d8bbwe!Microsoft.WindowsLive.Mail</p></td>
-</tr>
-<tr class="even">
-<td>People</td>
-<td>60BE1FB8-3291-4B21-BD39-2221AB166481</td>
-<td>Microsoft.People_8wekyb3d8bbwe!xb94d6231y84ddy49a8yace3ybc955e769e85x</td>
-</tr>
-<tr class="odd">
-<td>Phone (dialer)</td>
-<td>F41B5D0E-EE94-4F47-9CFE-3D3934C5A2C7</td>
-<td>Microsoft.CommsPhone_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="even">
-<td>Photos</td>
-<td>FCA55E1B-B9A4-4289-882F-084EF4145005</td>
-<td>Microsoft.Windows.Photos_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="odd">
-<td>Podcasts</td>
-<td>C3215724-B279-4206-8C3E-61D1A9D63ED3</td>
-<td>Microsoft.MSPodcast_8wekyb3d8bbwe!xc3215724yb279y4206y8c3ey61d1a9d63ed3x</td>
-</tr>
-<tr class="even">
-<td>PowerPoint</td>
-<td>B50483C4-8046-4E1B-81BA-590B24935798</td>
-<td>Microsoft.Office.PowerPoint_8wekyb3d8bbwe!microsoft.pptim</td>
-</tr>
-<tr class="odd">
-<td>Settings</td>
-<td>2A4E62D8-8809-4787-89F8-69D0F01654FB</td>
-<td>2a4e62d8-8809-4787-89f8-69d0f01654fb_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="even">
-<td>Skype</td>
-<td>C3F8E570-68B3-4D6A-BDBB-C0A3F4360A51</td>
-<td>Microsoft.SkypeApp_kzf8qxf38zg5c!Skype.AppId</td>
-</tr>
-<tr class="odd">
-<td>Skype Video</td>
-<td>27E26F40-E031-48A6-B130-D1F20388991A</td>
-<td>Microsoft.Messaging_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="even">
-<td>Sports</td>
-<td>0F4C8C7E-7114-4E1E-A84C-50664DB13B17</td>
-<td>Microsoft.BingSports_8wekyb3d8bbwe!AppexSports</td>
-</tr>
-<tr class="odd">
-<td>Storage</td>
-<td>5B04B775-356B-4AA0-AAF8-6491FFEA564D</td>
-<td>N/A</td>
-</tr>
-<tr class="even">
-<td>Store</td>
-<td>7D47D89A-7900-47C5-93F2-46EB6D94C159</td>
-<td>Microsoft.WindowsStore_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="odd">
-<td>Voice recorder</td>
-<td>7311B9C5-A4E9-4C74-BC3C-55B06BA95AD0</td>
-<td>Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="even">
-<td>Wallet</td>
-<td>587A4577-7868-4745-A29E-F996203F1462</td>
-<td>Microsoft.MicrosoftWallet_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="odd">
-<td>Weather</td>
-<td>63C2A117-8604-44E7-8CEF-DF10BE3A57C8</td>
-<td>Microsoft.BingWeather_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="even">
-<td>Windows Feedback</td>
-<td>7604089D-D13F-4A2D-9998-33FC02B63CE3</td>
-<td>Microsoft.WindowsFeedback_8wekyb3d8bbwe!App</td>
-</tr>
-<tr class="odd">
-<td>Word</td>
-<td>258F115C-48F4-4ADB-9A68-1387E634459B</td>
-<td>Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word</td>
-</tr>
-<tr class="even">
-<td>Xbox</td>
-<td>B806836F-EEBE-41C9-8669-19E243B81B83</td>
-<td>Microsoft.XboxApp_8wekyb3d8bbwe!Microsoft.XboxApp</td>
-</tr>
-</tbody>
-</table>
+|App|Product ID|AUMID|
+|--- |--- |--- |
+|Alarms and clock|44F7D2B4-553D-4BEC-A8B7-634CE897ED5F|Microsoft.WindowsAlarms_8wekyb3d8bbwe!App|
+|Calculator|B58171C6-C70C-4266-A2E8-8F9C994F4456|Microsoft.WindowsCalculator_8wekyb3d8bbwe!App|
+|Camera|F0D8FEFD-31CD-43A1-A45A-D0276DB069F1|Microsoft.WindowsCamera_8wekyb3d8bbwe!App|
+|Contact Support|0DB5FCFF-4544-458A-B320-E352DFD9CA2B|Windows.ContactSupport_cw5n1h2txyewy!App|
+|Cortana|FD68DCF4-166F-4C55-A4CA-348020F71B94|Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI|
+|Excel|EAD3E7C0-FAE6-4603-8699-6A448138F4DC|Microsoft.Office.Excel_8wekyb3d8bbwe!microsoft.excel|
+|Facebook|82A23635-5BD9-DF11-A844-00237DE2DB9E|Microsoft.MSFacebook_8wekyb3d8bbwe!x82a236355bd9df11a84400237de2db9e|
+|File Explorer|C5E2524A-EA46-4F67-841F-6A9465D9D515|c5e2524a-ea46-4f67-841f-6a9465d9d515_cw5n1h2txyewy!App|
+|FM Radio|F725010E-455D-4C09-AC48-BCDEF0D4B626|N/A|
+|Get Started|B3726308-3D74-4A14-A84C-867C8C735C3C|Microsoft.Getstarted_8wekyb3d8bbwe!App|
+|Groove Music|D2B6A184-DA39-4C9A-9E0A-8B589B03DEC0|Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic|
+|Maps|ED27A07E-AF57-416B-BC0C-2596B622EF7D|Microsoft.WindowsMaps_8wekyb3d8bbwe!App|
+|Messaging|27E26F40-E031-48A6-B130-D1F20388991A|Microsoft.Messaging_8wekyb3d8bbwe!x27e26f40ye031y48a6yb130yd1f20388991ax|
+|Microsoft Edge|395589FB-5884-4709-B9DF-F7D558663FFD|Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge|
+|Money|1E0440F1-7ABF-4B9A-863D-177970EEFB5E|Microsoft.BingFinance_8wekyb3d8bbwe!AppexFinance|
+|Movies and TV|6AFFE59E-0467-4701-851F-7AC026E21665|Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo|
+|News|9C3E8CAD-6702-4842-8F61-B8B33CC9CAF1|Microsoft.BingNews_8wekyb3d8bbwe!AppexNews|
+|OneDrive|AD543082-80EC-45BB-AA02-FFE7F4182BA8|Microsoft.MicrosoftSkydrive_8wekyb3d8bbwe!App|
+|OneNote|CA05B3AB-F157-450C-8C49-A1F127F5E71D|Microsoft.Office.OneNote_8wekyb3d8bbwe!microsoft.onenoteim|
+|Outlook Calendar|A558FEBA-85D7-4665-B5D8-A2FF9C19799B|Microsoft.WindowsCommunicationsApps_8wekyb3d8bbwe!Microsoft.WindowsLive.Calendar|
+|Outlook Mail|A558FEBA-85D7-4665-B5D8-A2FF9C19799B|Microsoft.WindowsCommunicationsApps_8wekyb3d8bbwe!Microsoft.WindowsLive.Mail|
+|People|60BE1FB8-3291-4B21-BD39-2221AB166481|Microsoft.People_8wekyb3d8bbwe!xb94d6231y84ddy49a8yace3ybc955e769e85x|
+|Phone (dialer)|F41B5D0E-EE94-4F47-9CFE-3D3934C5A2C7|Microsoft.CommsPhone_8wekyb3d8bbwe!App|
+|Photos|FCA55E1B-B9A4-4289-882F-084EF4145005|Microsoft.Windows.Photos_8wekyb3d8bbwe!App|
+|Podcasts|C3215724-B279-4206-8C3E-61D1A9D63ED3|Microsoft.MSPodcast_8wekyb3d8bbwe!xc3215724yb279y4206y8c3ey61d1a9d63ed3x|
+|PowerPoint|B50483C4-8046-4E1B-81BA-590B24935798|Microsoft.Office.PowerPoint_8wekyb3d8bbwe!microsoft.pptim|
+|Settings|2A4E62D8-8809-4787-89F8-69D0F01654FB|2a4e62d8-8809-4787-89f8-69d0f01654fb_8wekyb3d8bbwe!App|
+|Skype|C3F8E570-68B3-4D6A-BDBB-C0A3F4360A51|Microsoft.SkypeApp_kzf8qxf38zg5c!Skype.AppId|
+|Skype Video|27E26F40-E031-48A6-B130-D1F20388991A|Microsoft.Messaging_8wekyb3d8bbwe!App|
+|Sports|0F4C8C7E-7114-4E1E-A84C-50664DB13B17|Microsoft.BingSports_8wekyb3d8bbwe!AppexSports|
+|Storage|5B04B775-356B-4AA0-AAF8-6491FFEA564D|N/A|
+|Store|7D47D89A-7900-47C5-93F2-46EB6D94C159|Microsoft.WindowsStore_8wekyb3d8bbwe!App|
+|Voice recorder|7311B9C5-A4E9-4C74-BC3C-55B06BA95AD0|Microsoft.WindowsSoundRecorder_8wekyb3d8bbwe!App|
+|Wallet|587A4577-7868-4745-A29E-F996203F1462|Microsoft.MicrosoftWallet_8wekyb3d8bbwe!App|
+|Weather|63C2A117-8604-44E7-8CEF-DF10BE3A57C8|Microsoft.BingWeather_8wekyb3d8bbwe!App|
+|Windows Feedback|7604089D-D13F-4A2D-9998-33FC02B63CE3|Microsoft.WindowsFeedback_8wekyb3d8bbwe!App|
+|Word|258F115C-48F4-4ADB-9A68-1387E634459B|Microsoft.Office.Word_8wekyb3d8bbwe!microsoft.word|
+|Xbox|B806836F-EEBE-41C9-8669-19E243B81B83|Microsoft.XboxApp_8wekyb3d8bbwe!Microsoft.XboxApp|

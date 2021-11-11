@@ -259,40 +259,11 @@ The following table describes the fields in the previous sample:
 
 The following table describes the fields in the previous sample:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Add</td>
-<td>This is required to precede the Exec command.
-<ul>
-<li>CmdID - Input value used to reference the request. Responses includes this value, which can be use to match the request and response.</li>
-<li>LocURI - Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>Exec</td>
-<td>The Exec node includes the parameters and properties requires to locate, download, validate and perform product installation.
-<ul>
-<li>CmdID - Input value used to reference the request. Responses will include this value which can be used to match request and response.</li>
-<li>LocURI - Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.</li>
-<li>Data - The Data node contains an embedded XML, of type “MsiInstallJob”</li>
-<li>MsiInstallJob - Contains all information required for the successful download, validation and execution of the MSI installation process (see section at the end of this document for details on this embedded data object).</li>
-</ul></td>
-</tr>
-</tbody>
+|Name|Description|
+|--- |--- |
+|Add|This is required to precede the Exec command.<li>CmdID - Input value used to reference the request. Responses includes this value, which can be use to match the request and response.<li>LocURI - Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.|
+|Exec|The Exec node includes the parameters and properties requires to locate, download, validate and perform product installation.<li>CmdID - Input value used to reference the request. Responses will include this value which can be used to match request and response.<li>LocURI - Path to Win32 CSP command processor, including the Product ID (in this example, 1803A630-3C38-4D2B-9B9A-0CB37243539C) property escaped for XML formatting.<li>Data - The Data node contains an embedded XML, of type “MsiInstallJob”<li>MsiInstallJob - Contains all information required for the successful download, validation and execution of the MSI installation process (see section at the end of this document for details on this embedded data object).|
 </table>
-
- 
 
 > [!Note]
 > Information status on the MSI job will be reported using standard OMA-DM notification mechanism. The status reported is represented using standard MSIEXEC return codes as HRESULT as defined in the MSIEXEC topic on Microsoft TechNet at [Msiexec (command-line options)](https://technet.microsoft.com/library/cc759262%28v=ws.10%29.aspx).
@@ -353,70 +324,20 @@ The following table describes the fields in the previous sample:
 
 The following table MsiInstallJob describes the schema elements.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>MsiInstallJob</td>
-<td>root element
-<p>&quot;Attribute: &quot;id - the application identifier of the application being installed</p></td>
-</tr>
-<tr class="even">
-<td>Product</td>
-<td>child element of MsiInstallJob
-<p>Attribute: “Version” – string representation of application version</p></td>
-</tr>
-<tr class="odd">
-<td>Download</td>
-<td>child element of Product. Container for download configuration information.</td>
-</tr>
-<tr class="even">
-<td>ContentURLList</td>
-<td>child element of Download. Contains list of 1 or more content download URL locators in the form of ContentURL elements.</td>
-</tr>
-<tr class="odd">
-<td>ContentURL</td>
-<td>Location content should be downloaded from. Must be a property formatted URL that points to the .MSI file.</td>
-</tr>
-<tr class="even">
-<td>Validation</td>
-<td>Contains information used to validate contend authenticity. • FileHash – SHA256 hash value of file content</td>
-</tr>
-<tr class="odd">
-<td>FileHash</td>
-<td>SHA256 hash value of file content</td>
-</tr>
-<tr class="even">
-<td>Enforcement</td>
-<td>installation properties to be used when installing this MSI</td>
-</tr>
-<tr class="odd">
-<td>CommandLine</td>
-<td>Command-line options to be used when calling MSIEXEC.exe</td>
-</tr>
-<tr class="even">
-<td>TimeOut</td>
-<td>Amount of time, in minutes that the installation process can run before the installer considers the installation may have failed and no longer monitors the installation operation.</td>
-</tr>
-<tr class="odd">
-<td>RetryCount</td>
-<td>The number of times the download and installation operation will be retried before the installation will be marked as failed.</td>
-</tr>
-<tr class="even">
-<td>RetryInterval</td>
-<td>Amount of time, in minutes between retry operations.</td>
-</tr>
-</tbody>
-</table>
+|Element|Description|
+|--- |--- |
+|MsiInstallJob|root element<br>"Attribute: "id - the application identifier of the application being installed|
+|Product|child element of MsiInstallJob<br>Attribute: “Version” – string representation of application version|
+|Download|child element of Product. Container for download configuration information.|
+|ContentURLList|child element of Download. Contains list of 1 or more content download URL locators in the form of ContentURL elements.|
+|ContentURL|Location content should be downloaded from. Must be a property formatted URL that points to the .MSI file.|
+|Validation|Contains information used to validate contend authenticity. • FileHash – SHA256 hash value of file content|
+|FileHash|SHA256 hash value of file content|
+|Enforcement|installation properties to be used when installing this MSI|
+|CommandLine|Command-line options to be used when calling MSIEXEC.exe|
+|TimeOut|Amount of time, in minutes that the installation process can run before the installer considers the installation may have failed and no longer monitors the installation operation.|
+|RetryCount|The number of times the download and installation operation will be retried before the installation will be marked as failed.|
+|RetryInterval|Amount of time, in minutes between retry operations.|
 
  
 
@@ -453,85 +374,17 @@ The following tables shows how app targeting and MSI package type (per-user, per
 
 For Intune standalone environment, the MSI package will determine the MSI execution context.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Target</th>
-<th>Per-user MSI</th>
-<th>Per-machine MSI</th>
-<th>Dual mode MSI</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>User</td>
-<td>Install the MSI per-user
-<p>LocURI contains a User prefix, such as ./User</p></td>
-<td>Install the MSI per-device
-<p>LocURI contains a Device prefix, such as ./Device</p></td>
-<td>Install the MSI per-user
-<p>LocURI contains a User prefix, such as ./User</p></td>
-</tr>
-<tr class="even">
-<td>System</td>
-<td>Install the MSI per-user
-<p>LocURI contains a User prefix, such as ./User</p></td>
-<td>Install the MSI per-device
-<p>LocURI contains a Device prefix, such as ./Device</p></td>
-<td>Install the MSI per-user
-<p>LocURI contains a User prefix, such as ./User</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Target|Per-user MSI|Per-machine MSI|Dual mode MSI|
+|--- |--- |--- |--- |
+|User|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|Install the MSI per-device<br>LocURI contains a Device prefix, such as ./Device|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|
+|System|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|Install the MSI per-device<br>LocURI contains a Device prefix, such as ./Device|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|
 
 The following table applies to SCCM hybrid environment.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Target</th>
-<th>Per-user MSI</th>
-<th>Per-machine MSI</th>
-<th>Dual mode MSI</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>User</td>
-<td>Install the MSI per-user
-<p>LocURI contains a User prefix, such as ./User</p></td>
-<td>Install the MSI per-device
-<p>LocURI contains a Device prefix, such as ./Device</p></td>
-<td>Install the MSI per-user
-<p>LocURI contains a User prefix, such as ./User</p></td>
-</tr>
-<tr class="even">
-<td>System</td>
-<td>Install the MSI per-user
-<p>LocURI contains a User prefix, such as ./User</p></td>
-<td>Install the MSI per-device
-<p>LocURI contains a Device prefix, such as ./Device</p></td>
-<td>Install the MSI per- system context
-<p>LocURI contains a Device prefix, such as ./Device</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Target|Per-user MSI|Per-machine MSI|Dual mode MSI|
+|--- |--- |--- |--- |
+|User|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|Install the MSI per-device<br>LocURI contains a Device prefix, such as ./Device|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|
+|System|Install the MSI per-user<br>LocURI contains a User prefix, such as ./User|Install the MSI per-device<br>LocURI contains a Device prefix, such as ./Device|Install the MSI per- system context<br>LocURI contains a Device prefix, such as ./Device|
 
 ## How to determine the package type from the MSI package
 
