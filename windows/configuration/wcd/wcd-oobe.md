@@ -22,11 +22,6 @@ Use to configure settings for the [Out Of Box Experience (OOBE)](/windows-hardwa
 | --- | :---: | :---: | :---: | :---: | 
 | [Desktop > EnableCortanaVoice](#enablecortanavoice) | ✔️  |  |  |  |
 | [Desktop > HideOobe](#hideoobe-for-desktop) | ✔️  |  |  |  |
-| [Mobile > EnforceEnterpriseProvisioning](#enforceenterpriseprovisioning) |   |  |  |  |
-| [Mobile > HideOobe](#hidem) |   |  |  |  |
-
-
-
 
 ## EnableCortanaVoice
 
@@ -40,10 +35,4 @@ When set to **True**, it hides the interactive OOBE flow for Windows 10.
 > You must create a user account if you set the value to true or the device will not be usable.
 
 When set to **False**, the OOBE screens are displayed.
-
-## EnforceEnterpriseProvisioning
-
-When set to **True**, it forces the OOBE flow into using the enterprise provisioning page without making the user interact with the Windows button. This is the default setting.
-
-When set to **False**, it does not force the OOBE flow to the enterprise provisioning page.
 
