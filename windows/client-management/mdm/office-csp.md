@@ -18,7 +18,7 @@ The Office configuration service provider (CSP) enables a Microsoft Office clien
 
 This CSP was added in Windows 10, version 1703.
 
-For additional information, see [Office DDF](office-ddf.md).
+For more information, see [Office DDF](office-ddf.md).
 
 The following shows the Office configuration service provider in tree format.
 ```
@@ -78,7 +78,7 @@ Behavior:
 -  When Office CSP is triggered to install, it will first check if the FinalStatus node exists or not. If the node exists, delete it.
 -  When Office installation reaches any terminal states (either success or failure), this node is created that contains the following values:  
     - When status = 0: 70 (succeeded)
-    - When status != 0: 60 (failed)
+    - When status!= 0: 60 (failed)
 
 <a href="" id="currentstatus"></a>**Installation/CurrentStatus**  
 Returns an XML of current Office 365 installation status on the device.
@@ -157,18 +157,18 @@ To get the current status of Office 365 on the device.
 |997|Installation in progress||
 |13|ERROR_INVALID_DATA <br>Cannot verify signature of the downloaded Office Deployment Tool (ODT)|Failure|
 |1460|ERROR_TIMEOUT <br>Failed to download ODT|Failure|
-|1602|ERROR_INSTALL_USEREXIT <br>User cancelled the installation|Failure|
+|1602|ERROR_INSTALL_USEREXIT <br>User canceled the installation|Failure|
 |1603|ERROR_INSTALL_FAILURE<br>Failed any pre-req check.<li>SxS (Tried to install when 2016 MSI is installed)<li>Bit mismatch between the currently installed Office and the Office that was attempting to be installed (such as when you try to install a 32-bit version while 64-bit version is currently installed.)|Failure|
 |17000|ERROR_PROCESSPOOL_INITIALIZATION 
 Failed to start C2RClient|Failure|
 |17001|ERROR_QUEUE_SCENARIO 
 Failed to queue installation scenario in C2RClient|Failure|
-|17002|ERROR_COMPLETING_SCENARIO <br>Failed to complete the process. Possible reasons:<li>Installation cancelled by user<li>Installation cancelled by another installation<li>Out of disk space during installation <li>Unknown language ID|Failure|
+|17002|ERROR_COMPLETING_SCENARIO <br>Failed to complete the process. Possible reasons:<li>Installation canceled by user<li>Installation canceled by another installation<li>Out of disk space during installation <li>Unknown language ID|Failure|
 |17003|ERROR_ANOTHER_RUNNING_SCENARIO <br>Another scenario is running|Failure|
-|17004|ERROR_COMPLETING_SCENARIO_NEED_CLEAN_UP<br>Possible reasons:<li>Unknown SKUs<li>Content does't exist on CDN<ul><li>such as trying to install an unsupported LAP, like zh-sg<li>CDN issue that content is not available</li></ul><li>Signature check issue, such as failed the signature check for Office content<li>User cancelled|Failure|
+|17004|ERROR_COMPLETING_SCENARIO_NEED_CLEAN_UP<br>Possible reasons:<li>Unknown SKUs<li>Content does't exist on CDN<ul><li>Such as trying to install an unsupported LAP, like zh-sg<li>CDN issue that content is not available</li></ul><li>Signature check issue, such as failed the signature check for Office content<li>User canceled|Failure|
 |17005|ERROR_SCENARIO_CANCELLED_AS_PLANNED|Failure|
 |17006|ERROR_SCENARIO_CANCELLED<br>Blocked update by running apps|Failure|
-|17007|ERROR_REMOVE_INSTALLATION_NEEDED<br>The client is requesting client clean up in a "Remove Installation" scenario|Failure|
-|17100|ERROR_HANDLING_COMMAND_LINE<br>C2RClient command line error|Failure|
+|17007|ERROR_REMOVE_INSTALLATION_NEEDED<br>The client is requesting client clean-up in a "Remove Installation" scenario|Failure|
+|17100|ERROR_HANDLING_COMMAND_LINE<br>C2RClient command-line error|Failure|
 |0x80004005|E_FAIL <br>ODT cannot be used to install Volume license|Failure|
 |0x8000ffff|E_UNEXPECTED<br>Tried to uninstall when there is no C2R Office on the machine.|Failure|
