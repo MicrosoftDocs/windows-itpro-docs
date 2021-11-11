@@ -129,40 +129,8 @@ If the MAM device is properly configured for MDM enrollment, then the Enroll onl
 
 We have updated Skype for Business to work with MAM. The following table explains Office release channels and release dates for Skype for Business compliance with the MAM feature.
 
-<table>
-<colgroup>
-<col width="15%" />
-<col width="35%" />
-<col width="15%" />
-<col width="35%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Update channel</th>
-<th>Primary purpose</th>
-<th>LOB Tattoo availability</th>
-<th>Default update channel for the products</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/deployoffice/overview-update-channels#BKMK_CB" data-raw-source="[Current channel](/deployoffice/overview-update-channels#BKMK_CB)">Current channel</a></td>
-<td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
-<td>March 9 2017</td>
-<td><p>Visio Pro for Office 365</p>
-<p>Project Desktop Client</p>
-<p>Microsoft 365 Apps for business (the version of Office that comes with some Microsoft 365 plans, such as Business Premium.)</p></td>
-</tr>
-<tr>
-<td><a href="/deployoffice/overview-update-channels#BKMK_CBB" data-raw-source="[Deferred channel](/deployoffice/overview-update-channels#BKMK_CBB)">Deferred channel</a></td>
-<td>Provide users with new features of Office only a few times a year.</td>
-<td>October 10 2017</td>
-<td>Microsoft 365 Apps for enterprise</td>
-</tr><tr>
-<td><a href="/deployoffice/overview-update-channels#BKMK_FRCBB" data-raw-source="[First release for deferred channel](/deployoffice/overview-update-channels#BKMK_FRCBB)">First release for Deferred channel</a></td>
-<td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
-<td>June 13 2017</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+|Update channel|Primary purpose|LOB Tattoo availability|Default update channel for the products|
+|--- |--- |--- |--- |
+|[Current channel](/deployoffice/overview-update-channels#BKMK_CB)|Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel.|March 9 2017|Visio Pro for Office 365<br>Project Desktop Client<br>Microsoft 365 Apps for business (the version of Office that comes with some Microsoft 365 plans, such as Business Premium.)|
+|[Deferred channel](/deployoffice/overview-update-channels#BKMK_CBB)|Provide users with new features of Office only a few times a year.|October 10 2017|Microsoft 365 Apps for enterprise|
+|[First release for deferred channel](/deployoffice/overview-update-channels#BKMK_FRCBB)|Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel.|June 13 2017||

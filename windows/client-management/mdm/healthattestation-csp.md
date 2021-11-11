@@ -551,77 +551,16 @@ More information about TPM attestation can be found here: [Microsoft Azure Attes
 
 ![healthattestation service diagram.](images/healthattestation_2.png)
 
-<table> 
-<col width="20%" />
-<col width="60%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>DHA-Service type</th>
-<th>Description</th>
-<th>Operation cost</th>
-</tr>
-</thead>
-<tbody>
-<tr class="even">
-<td>Device Health Attestation – Cloud <p>(DHA-Cloud)</p></td>
-<td><p>DHA-Cloud is a Microsoft owned and operated DHA-Service that is:</p>
-<ul>
-<li>Available in Windows for free</li>
-<li>Running on a high-availability and geo-balanced cloud infrastructure </li>
-<li>Supported by most DHA-Enabled device management solutions as the default device attestation service provider</li>
-<li>Accessible to all enterprise-managed devices via following:
-<ul>
-<li>FQDN = has.spserv.microsoft.com) port</li>
-<li>Port = 443</li>
-<li>Protocol = TCP</li>
-</ul> 
-</li>
-</ul>
-<td>No cost</td>
-</td>
-</tr>
-<tr class="even">
-<td>Device Health Attestation – On Premise<p>(DHA-OnPrem)</p></td>
-<td><p>DHA-OnPrem refers to DHA-Service that is running on premises:</p>
-<ul>
-<li>Offered to Windows Server 2016 customer (no added licensing cost for enabling/running DHA-Service) </li>
-<li>Hosted on an enterprise owned and managed server device/hardware</li>
-<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios</li>
-<li><p>Accessible to all enterprise-managed devices via following:</p>
-<ul>
-<li>FQDN = (enterprise assigned)</li>
-<li>Port = (enterprise assigned)</li>
-<li>Protocol = TCP</li>
-</ul>
-</li>
-</ul></td>
-<td>The operation cost of running one or more instances of Server 2016 on-premises.</td>
-</tr>
-<tr class="even">
-<td>Device Health Attestation - Enterprise-Managed Cloud<p>(DHA-EMC)</p></td>
-<td><p>DHA-EMC refers to an enterprise-managed DHA-Service that is running as a virtual host/service on a Windows Server 2016 compatible - enterprise-managed cloud service, such as Microsoft Azure.</p>
-<ul>
-<li>Offered to Windows Server 2016 customers with no additional licensing cost (no added licensing cost for enabling/running DHA-Service)</li>
-<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios </li>
-<li><p>Accessible to all enterprise-managed devices via following:</p>
-<ul>
-<li>FQDN = (enterprise assigned)</li>
-<li>Port = (enterprise assigned)</li>
-<li>Protocol = TCP</li>
-</ul>
-</li>
-</ul></td>
-<td>The operation cost of running Server 2016 on a compatible cloud service, such as Microsoft Azure.</td>
-</tr>
-</tbody>
-</table>
+|DHA-Service type|Description|Operation cost|
+|--- |--- |--- |
+|Device Health Attestation – Cloud (DHA-Cloud)|DHA-Cloud is a Microsoft owned and operated DHA-Service that is:<li>Available in Windows for free<li>Running on a high-availability and geo-balanced cloud infrastructure <li>Supported by most DHA-Enabled device management solutions as the default device attestation service provider<li>Accessible to all enterprise-managed devices via following:<ul><li>FQDN = has.spserv.microsoft.com port<li>Port = 443<li>Protocol = TCP|No cost</ul></li>|
+|Device Health Attestation – On Premise(DHA-OnPrem)|DHA-OnPrem refers to DHA-Service that is running on premises:<li>Offered to Windows Server 2016 customer (no added licensing cost for enabling/running DHA-Service) <li>Hosted on an enterprise owned and managed server device/hardware<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios<li>Accessible to all enterprise-managed devices via following:<ul><li>FQDN = (enterprise assigned)<li>Port = (enterprise assigned)<li>Protocol = TCP|The operation cost of running one or more instances of Server 2016 on-premises.</ul></li>|
+|Device Health Attestation - Enterprise-Managed Cloud(DHA-EMC)|DHA-EMC refers to an enterprise-managed DHA-Service that is running as a virtual host/service on a Windows Server 2016 compatible - enterprise-managed cloud service, such as Microsoft Azure.<li>Offered to Windows Server 2016 customers with no additional licensing cost (no added licensing cost for enabling/running DHA-Service)<li>Supported by 1st and 3rd party DHA-Enabled device management solution providers that support on-premises and hybrid (Cloud + OnPrem) hardware attestation scenarios <li>Accessible to all enterprise-managed devices via following:<ul> <li>FQDN = (enterprise assigned)<li>Port = (enterprise assigned)<li>Protocol = TCP|The operation cost of running Server 2016 on a compatible cloud service, such as Microsoft Azure.</ul></li>|
 
 ### CSP diagram and node descriptions  
 
-
-The following shows the Device HealthAttestation configuration service provider in tree format.  
+The following shows the Device HealthAttestation configuration service provider in tree format. 
+ 
 ```
 ./Vendor/MSFT
 HealthAttestation
@@ -1263,214 +1202,48 @@ Each of these are described in further detail in the following sections, along w
 
 ### **Device HealthAttestation CSP status and error codes**
 
-<table>
-    <tr>
-        <th>Error code</th>
-        <th>Error name</th>
-        <th>Description</th>
-    </tr>
-    <tr>
-        <td>0</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED</td>
-        <td>This is the initial state for devices that have never participated in a DHA-Session. </td>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_REQUESTED</td>
-        <td>This state signifies that MDM client’s Exec call on the node VerifyHealth has been triggered and now the OS is trying to retrieve DHA-EncBlob from DHA-Server.</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED</td>
-        <td>This state signifies that the device failed to retrieve DHA-EncBlob from DHA-Server.</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_COMPLETE</td>
-        <td>This state signifies that the device has successfully retrieved DHA-EncBlob from the DHA-Server.</td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_PCR_FAIL</td>
-        <td>Deprecated in Windows 10, version 1607.</td>
-    </tr>
-    <tr>
-        <td>5</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_GETQUOTE_FAIL</td>
-        <td>DHA-CSP failed to get a claim quote.</td>
-    </tr>
-    <tr>
-        <td>6</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_DEVICE_NOT_READY</td>
-        <td>DHA-CSP failed in opening a handle to Microsoft Platform Crypto Provider.</td>
-    </tr>
-    <tr>
-        <td>7</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_WINDOWS_AIK_FAIL</td>
-        <td>DHA-CSP failed in retrieving Windows AIK</td>
-    </tr>
-    <tr>
-        <td>8</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FROM_WEB_FAIL</td>
-        <td>Deprecated in Windows 10, version 1607.</td>
-    </tr>
-    <tr>
-        <td>9</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_INVALID_TPM_VERSION</td>
-        <td>Invalid TPM version (TPM version is not 1.2 or 2.0)</td>
-    </tr>
-    <tr>
-        <td>10</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_GETNONCE_FAIL</td>
-        <td>Nonce was not found in the registry.</td>
-    </tr>
-    <tr>
-        <td>11</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_GETCORRELATIONID_FAIL</td>
-        <td>Correlation ID was not found in the registry.</td>
-    </tr>
-    <tr>
-        <td>12</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_GETCERT_FAIL</td>
-        <td>Deprecated in Windows 10, version 1607.</td>
-    </tr>
-    <tr>
-        <td>13</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_GETCLAIM_FAIL</td>
-        <td>Deprecated in Windows 10, version 1607.</td>
-    </tr>
-    <tr>
-        <td>14</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_ENCODING_FAIL</td>
-        <td>Failure in Encoding functions. (Extremely unlikely scenario)</td>
-    </tr>
-    <tr>
-        <td>15</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_ENDPOINTOVERRIDE_FAIL</td>
-        <td>Deprecated in Windows 10, version 1607.</td>
-    </tr>
-    <tr>
-        <td>16</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_LOAD_XML</td>
-        <td>DHA-CSP failed to load the payload it received from DHA-Service </td>
-    </tr>
-    <tr>
-        <td>17</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CORRUPT_XML</td>
-        <td>DHA-CSP received a corrupted response from DHA-Service.</td>
-    </tr>
-    <tr>
-        <td>18</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EMPTY_XML</td>
-        <td>DHA-CSP received an empty response from DHA-Service.</td>
-    </tr>
-    <tr>
-        <td>19</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_DECRYPT_AES_EK</td>
-        <td>DHA-CSP failed in decrypting the AES key from the EK challenge.</td>
-    </tr>
-    <tr>
-        <td>20</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_DECRYPT_CERT_AES_EK</td>
-        <td>DHA-CSP failed in decrypting the health cert with the AES key.</td>
-    </tr>
-    <tr>
-        <td>21</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EXPORT_AIKPUB</td>
-        <td>DHA-CSP failed in exporting the AIK Public Key.</td>
-    </tr>
-    <tr>
-        <td>22</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CREATE_CLAIMAUTHORITYONLY</td>
-        <td>DHA-CSP failed in trying to create a claim with AIK attestation data.</td>
-    </tr>
-    <tr>
-        <td>23</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_APPEND_AIKPUB</td>
-        <td>DHA-CSP failed in appending the AIK Pub to the request blob.</td>
-    </tr>
-    <tr>
-        <td>24</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_APPEND_AIKCERT</td>
-        <td>DHA-CSP failed in appending the AIK Cert to the request blob.</td>
-    </tr>
-    <tr>
-        <td>25</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_INIT_HTTPHANDLE</td>
-        <td>DHA-CSP failed to obtain a Session handle.</td>
-    </tr>
-    <tr>
-        <td>26</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_GETTARGET_HTTPHANDLE</td>
-        <td>DHA-CSP failed to connect to the DHA-Service.</td>
-    </tr>
-    <tr>
-        <td>27</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CREATE_HTTPHANDLE</td>
-        <td>DHA-CSP failed to create an HTTP request handle.</td>
-    </tr>
-    <tr>
-        <td>28</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_SET_INTERNETOPTION</td>
-        <td>DHA-CSP failed to set options.</td>
-    </tr>
-    <tr>
-        <td>29</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_ADD_REQUESTHEADERS</td>
-        <td>DHA-CSP failed to add request headers.</td>
-    </tr>
-    <tr>
-        <td>30</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_SEND_REQUEST</td>
-        <td>DHA-CSP failed to send the HTTP request.</td>
-    </tr>
-    <tr>
-        <td>31</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_RECEIVE_RESPONSE</td>
-        <td>DHA-CSP failed to receive a response from the DHA-Service.</td>
-    </tr>
-    <tr>
-        <td>32</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_QUERY_HEADERS</td>
-        <td>DHA-CSP failed to query headers when trying to get HTTP status code.</td>
-    </tr>
-    <tr>
-        <td>33</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EMPTY_RESPONSE</td>
-        <td>DHA-CSP received an empty response from DHA-Service even though HTTP status was OK.</td>
-    </tr>
-    <tr>
-        <td>34</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_MISSING_RESPONSE</td>
-        <td>DHA-CSP received an empty response along with an HTTP error code from DHA-Service.</td>
-    </tr>
-    <tr>
-        <td>35</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_IMPERSONATE_USER</td>
-        <td>DHA-CSP failed to impersonate user.</td>
-    </tr>
-    <tr>
-        <td>36</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_ACQUIRE_PDCNETWORKACTIVATOR</td>
-        <td>DHA-CSP failed to acquire the PDC activators that are needed for network communication when the device is in Connected standby mode.</td>
-    </tr>
-    <tr>
-        <td>0xFFFF</td>
-        <td>HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_UNKNOWN</td>
-        <td>DHA-CSP failed due to an unknown reason, this error is highly unlikely to occur.</td>
-    </tr>
-    <tr>
-        <td>400</td>
-        <td>Bad_Request_From_Client</td>
-        <td>DHA-CSP has received a bad (malformed) attestation request.</td>
-    </tr>
-    <tr>
-        <td>404</td>
-        <td>Endpoint_Not_Reachable</td>
-        <td>DHA-Service is not reachable by DHA-CSP</td>
-    </tr>
-
-</table>
+|Error code|Error name|Description|
+|--- |--- |--- |
+|0|HEALTHATTESTATION_CERT_RETRIEVAL_UNINITIALIZED|This is the initial state for devices that have never participated in a DHA-Session.|
+|1|HEALTHATTESTATION_CERT_RETRIEVAL_REQUESTED|This state signifies that MDM client’s Exec call on the node VerifyHealth has been triggered and now the OS is trying to retrieve DHA-EncBlob from DHA-Server.|
+|2|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED|This state signifies that the device failed to retrieve DHA-EncBlob from DHA-Server.|
+|3|HEALTHATTESTATION_CERT_RETRIEVAL_COMPLETE|This state signifies that the device has successfully retrieved DHA-EncBlob from the DHA-Server.|
+|4|HEALTHATTESTATION_CERT_RETRIEVAL_PCR_FAIL|Deprecated in Windows 10, version 1607.|
+|5|HEALTHATTESTATION_CERT_RETRIEVAL_GETQUOTE_FAIL|DHA-CSP failed to get a claim quote.|
+|6|HEALTHATTESTATION_CERT_RETRIEVAL_DEVICE_NOT_READY|DHA-CSP failed in opening a handle to Microsoft Platform Crypto Provider.|
+|7|HEALTHATTESTATION_CERT_RETRIEVAL_WINDOWS_AIK_FAIL|DHA-CSP failed in retrieving Windows AIK|
+|8|HEALTHATTESTATION_CERT_RETRIEVAL_FROM_WEB_FAIL|Deprecated in Windows 10, version 1607.|
+|9|HEALTHATTESTATION_CERT_RETRIEVAL_INVALID_TPM_VERSION|Invalid TPM version (TPM version is not 1.2 or 2.0)|
+|10|HEALTHATTESTATION_CERT_RETRIEVAL_GETNONCE_FAIL|Nonce was not found in the registry.|
+|11|HEALTHATTESTATION_CERT_RETRIEVAL_GETCORRELATIONID_FAIL|Correlation ID was not found in the registry.|
+|12|HEALTHATTESTATION_CERT_RETRIEVAL_GETCERT_FAIL|Deprecated in Windows 10, version 1607.|
+|13|HEALTHATTESTATION_CERT_RETRIEVAL_GETCLAIM_FAIL|Deprecated in Windows 10, version 1607.|
+|14|HEALTHATTESTATION_CERT_RETRIEVAL_ENCODING_FAIL|Failure in Encoding functions. (Extremely unlikely scenario)|
+|15|HEALTHATTESTATION_CERT_RETRIEVAL_ENDPOINTOVERRIDE_FAIL|Deprecated in Windows 10, version 1607.|
+|16|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_LOAD_XML|DHA-CSP failed to load the payload it received from DHA-Service|
+|17|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CORRUPT_XML|DHA-CSP received a corrupted response from DHA-Service.|
+|18|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EMPTY_XML|DHA-CSP received an empty response from DHA-Service.|
+|19|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_DECRYPT_AES_EK|DHA-CSP failed in decrypting the AES key from the EK challenge.|
+|20|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_DECRYPT_CERT_AES_EK|DHA-CSP failed in decrypting the health cert with the AES key.|
+|21|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EXPORT_AIKPUB|DHA-CSP failed in exporting the AIK Public Key.|
+|22|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CREATE_CLAIMAUTHORITYONLY|DHA-CSP failed in trying to create a claim with AIK attestation data.|
+|23|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_APPEND_AIKPUB|DHA-CSP failed in appending the AIK Pub to the request blob.|
+|24|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_APPEND_AIKCERT|DHA-CSP failed in appending the AIK Cert to the request blob.|
+|25|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_INIT_HTTPHANDLE|DHA-CSP failed to obtain a Session handle.|
+|26|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_GETTARGET_HTTPHANDLE|DHA-CSP failed to connect to the DHA-Service.|
+|27|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_CREATE_HTTPHANDLE|DHA-CSP failed to create an HTTP request handle.|
+|28|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_SET_INTERNETOPTION|DHA-CSP failed to set options.|
+|29|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_ADD_REQUESTHEADERS|DHA-CSP failed to add request headers.|
+|30|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_SEND_REQUEST|DHA-CSP failed to send the HTTP request.|
+|31|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_RECEIVE_RESPONSE|DHA-CSP failed to receive a response from the DHA-Service.|
+|32|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_QUERY_HEADERS|DHA-CSP failed to query headers when trying to get HTTP status code.|
+|33|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_EMPTY_RESPONSE|DHA-CSP received an empty response from DHA-Service even though HTTP status was OK.|
+|34|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_MISSING_RESPONSE|DHA-CSP received an empty response along with an HTTP error code from DHA-Service.|
+|35|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_IMPERSONATE_USER|DHA-CSP failed to impersonate user.|
+|36|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_ACQUIRE_PDCNETWORKACTIVATOR|DHA-CSP failed to acquire the PDC activators that are needed for network communication when the device is in Connected standby mode.|
+|0xFFFF|HEALTHATTESTATION_CERT_RETRIEVAL_FAILED_UNKNOWN|DHA-CSP failed due to an unknown reason, this error is highly unlikely to occur.|
+|400|Bad_Request_From_Client|DHA-CSP has received a bad (malformed) attestation request.|
+|404|Endpoint_Not_Reachable|DHA-Service is not reachable by DHA-CSP|
 
 ### DHA-Report V3 schema
 

@@ -127,39 +127,12 @@ The name of the *NAPID* element is the same as the value passed during initial b
 
 The following table shows the Microsoft custom elements that this configuration service provider supports for OMA Client Provisioning.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Elements</th>
-<th>Available</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Parm-query</p></td>
-<td><p>Yes</p>
-<p>Note that some GPRS parameters will not necessarily contain the exact same value as was set.</p></td>
-</tr>
-<tr class="even">
-<td><p>Noparm</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Nocharacteristic</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Characteristic-query</p></td>
-<td><p>Yes</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Elements|Available|
+|--- |--- |
+|Parm-query|Yes <br>Note that some GPRS parameters will not necessarily contain the exact same value as was set.|
+|Noparm|Yes|
+|Nocharacteristic|Yes|
+|Characteristic-query|Yes|
 
 ## Related topics
 

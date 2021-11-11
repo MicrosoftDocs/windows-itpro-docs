@@ -186,34 +186,11 @@ The DLL must be code signed in a specific way, see [Sign binaries and packages](
 
 During an entitlement check the Internet Sharing service loads the specified DLL and then call the `IsEntitled` function. The function must connect to the server to perform any required validation, then return one of the following **ICS\_ENTITLEMENT\_RESULT** enumeration values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>ENTITLEMENT_SUCCESS</strong></p></td>
-<td><p>The device is allowed to connect to the server.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>ENTITLEMENT_FAILED</strong></p></td>
-<td><p>The device is not allowed to connect to the server</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>ENTITLEMENT_UNAVAILABLE</strong></p></td>
-<td><p>The entitlement check failed because the device could not contact the server or acquire a connection to verify entitlement.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Value|Description|
+|--- |--- |
+|**ENTITLEMENT_SUCCESS**|The device is allowed to connect to the server.|
+|**ENTITLEMENT_FAILED**|The device is not allowed to connect to the server|
+|**ENTITLEMENT_UNAVAILABLE**|The entitlement check failed because the device could not contact the server or acquire a connection to verify entitlement.|
 
 The definition for the **ICS\_ENTITLEMENT\_RESULT** is in the header file `IcsEntitlementh`, which ships with the Windows Adaptation Kit.
 

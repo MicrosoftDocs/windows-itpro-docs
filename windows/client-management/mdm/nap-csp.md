@@ -87,34 +87,11 @@ Required. Specifies the type of address used to identify the destination network
 
 The following table shows some commonly used ADDRTYPE values and the types of connection that corresponds with each value.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>ADDRTYPE Value</th>
-<th>Connection Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>E164</p></td>
-<td><p>RAS connections</p></td>
-</tr>
-<tr class="even">
-<td><p>APN</p></td>
-<td><p>GPRS connections</p></td>
-</tr>
-<tr class="odd">
-<td><p>ALPHA</p></td>
-<td><p>Wi-Fi-based connections</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|ADDRTYPE Value|Connection Type|
+|--- |--- |
+|E164|RAS connections|
+|APN|GPRS connections|
+|ALPHA|Wi-Fi-based connections|
 
 <a href="" id="napx-authinfo"></a>***NAPX*/AuthInfo**  
 Optional node. Specifies the authentication information, including the protocol, user name, and password.

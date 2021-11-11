@@ -35,113 +35,17 @@ The OMA DM client communicates with the server over HTTPS and uses DM Sync (OMA 
 
 The following table shows the OMA DM standards that Windows uses.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>General area</th>
-<th>OMA DM standard that is supported</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Data transport and session</p></td>
-<td><ul>
-<li><p>Client-initiated remote HTTPS DM session over SSL.</p></li>
-<li><p>Remote HTTPS DM session over SSL.</p></li>
-<li><p>Remote DM server initiation notification using WAP Push over Short Message Service (SMS). Not used by enterprise management.</p></li>
-<li><p>Remote bootstrap by using WAP Push over SMS. Not used by enterprise management.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>Bootstrap XML</p></td>
-<td><ul>
-<li><p>OMA Client Provisioning XML.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>DM protocol commands</p></td>
-<td><p>The following list shows the commands that are used by the device. For further information about the OMA DM command elements, see &quot;SyncML Representation Protocol Device Management Usage (OMA-SyncML-DMRepPro-V1_1_2-20030613-A)&quot; available from the <a href="https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/" data-raw-source="[OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/)">OMA website</a>.</p>
-<ul>
-<li><p>Add (Implicit Add supported)</p></li>
-<li><p>Alert (DM alert): Generic alert (1226) is used by enterprise management client when the user triggers an MDM unenrollment action from the device or when a CSP finishes some asynchronous actions. Device alert (1224) is used to notify the server some device triggered event.</p></li>
-<li><p>Atomic: Note that performing an Add command followed by Replace on the same node within an atomic element is not supported. Nested Atomic and Get commands are not allowed and will generate error code 500.</p></li>
-<li><p>Delete: Removes a node from the DM tree, and the entire subtree beneath that node if one exists</p></li>
-<li><p>Exec: Invokes an executable on the client device</p></li>
-<li><p>Get: Retrieves data from the client device; for interior nodes, the child node names in the Data element are returned in URI-encoded format</p></li>
-<li><p>Replace: Overwrites data on the client device</p></li>
-<li><p>Result: Returns the data results of a Get command to the DM server</p></li>
-<li><p>Sequence: Specifies the order in which a group of commands must be processed</p></li>
-<li><p>Status: Indicates the completion status (success or failure) of an operation</p></li>
-</ul>
-<p>If an XML element that is not a valid OMA DM command is under one of the following elements, the status code 400 is returned for that element:</p>
-<ul>
-<li><p>SyncBody</p></li>
-<li><p>Atomic</p></li>
-<li><p>Sequence</p></li>
-</ul>
-<p>If no CmdID is provided in the DM command, the client returns blank in the status element and the status code 400.</p>
-<p>If Atomic elements are nested, the following status codes are returned:</p>
-<ul>
-<li><p>The nested Atomic command returns 500.</p></li>
-<li><p>The parent Atomic command returns 507.</p></li>
-</ul>
-<p>For more information about the Atomic command, see OMA DM protocol common elements.</p>
-<p>Performing an Add command followed by Replace on the same node within an Atomic element is not supported.</p>
-<p>LocURI cannot start with &quot;/&quot;.</p>
-<p>Meta XML tag in SyncHdr is ignored by the device.</p></td>
-</tr>
-<tr class="even">
-<td><p>OMA DM standard objects</p></td>
-<td><ul>
-<li><p>DevInfo</p></li>
-<li><p>DevDetail</p></li>
-<li><p>OMA DM DMS account objects (OMA DM version 1.2)</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>Security</p></td>
-<td><ul>
-<li><p>Authenticate DM server initiation notification SMS message (not used by enterprise management)</p></li>
-<li><p>Application layer Basic and MD5 client authentication</p></li>
-<li><p>Authenticate server with MD5 credential at application level</p></li>
-<li><p>Data integrity and authentication with HMAC at application level</p></li>
-<li><p>SSL level certificate based client/server authentication, encryption, and data integrity check</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td><p>Nodes</p></td>
-<td><p>In the OMA DM tree, the following rules apply for the node name:</p>
-<ul>
-<li><p>&quot;.&quot; can be part of the node name.</p></li>
-<li><p>The node name cannot be empty.</p></li>
-<li><p>The node name cannot be only the asterisk (*) character.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>Provisioning Files</p></td>
-<td><p>Provisioning XML must be well formed and follow the definition in <a href="https://go.microsoft.com/fwlink/p/?LinkId=526905" data-raw-source="[SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905)">SyncML Representation Protocol</a> specification.</p>
-<p>If an XML element that is not a valid OMA DM command is under SyncBody, the status code 400 is returned for that element.</p>
-<div class="alert">
-<strong>Note</strong><br/><p>To represent a Unicode string as a URI, first encode the string as UTF-8. Then encode each of the UTF-8 bytes using URI encoding.</p>
-</div>
-<div>
-
-</div></td>
-</tr>
-<tr class="even">
-<td><p>WBXML support</p></td>
-<td><p>Windows supports sending and receiving SyncML in both XML format and encoded WBXML format. This is configurable by using the DEFAULTENCODING node under the w7 APPLICATION characteristic during enrollment. For more information about WBXML encoding, see section 8 of the <a href="https://go.microsoft.com/fwlink/p/?LinkId=526905" data-raw-source="[SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905)">SyncML Representation Protocol</a> specification.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Handling of large objects</p></td>
-<td><p>In Windows 10, version 1511, client support for uploading large objects to the server was added.</p></td>
-</tr>
-</tbody>
-</table>
+|General area|OMA DM standard that is supported|
+|--- |--- |
+|Data transport and session|<li>Client-initiated remote HTTPS DM session over SSL.<li>Remote HTTPS DM session over SSL.<li>Remote DM server initiation notification using WAP Push over Short Message Service (SMS). Not used by enterprise management.<li>Remote bootstrap by using WAP Push over SMS. Not used by enterprise management.|
+|Bootstrap XML|OMA Client Provisioning XML.|
+|DM protocol commands|The following list shows the commands that are used by the device. For further information about the OMA DM command elements, see "[OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/)" available from the OMA website.<li>Add (Implicit Add supported)<li>Alert (DM alert): Generic alert (1226) is used by enterprise management client when the user triggers an MDM unenrollment action from the device or when a CSP finishes some asynchronous actions. Device alert (1224) is used to notify the server some device triggered event.<li>Atomic: Note that performing an Add command followed by Replace on the same node within an atomic element is not supported. Nested Atomic and Get commands are not allowed and will generate error code 500.<li>Delete: Removes a node from the DM tree, and the entire subtree beneath that node if one exists<li>Exec: Invokes an executable on the client device<li>Get: Retrieves data from the client device; for interior nodes, the child node names in the Data element are returned in URI-encoded format<li>Replace: Overwrites data on the client device<li>Result: Returns the data results of a Get command to the DM server<li>Sequence: Specifies the order in which a group of commands must be processed<li>Status: Indicates the completion status (success or failure) of an operation<br>If an XML element that is not a valid OMA DM command is under one of the following elements, the status code 400 is returned for that element:<li>SyncBody<li>Atomic<li>Sequence<br>If no CmdID is provided in the DM command, the client returns blank in the status element and the status code 400.<br>If Atomic elements are nested, the following status codes are returned:<li>The nested Atomic command returns 500.<li>The parent Atomic command returns 507.<br>For more information about the Atomic command, see OMA DM protocol common elements.<br>Performing an Add command followed by Replace on the same node within an Atomic element is not supported.<br>LocURI cannot start with "/".<br>Meta XML tag in SyncHdr is ignored by the device.|
+|OMA DM standard objects|DevInfo<li>DevDetail<li>OMA DM DMS account objects (OMA DM version 1.2)|
+|Security|<li>Authenticate DM server initiation notification SMS message (not used by enterprise management)<li>Application layer Basic and MD5 client authentication<li>Authenticate server with MD5 credential at application level<li>Data integrity and authentication with HMAC at application level<li>SSL level certificate based client/server authentication, encryption, and data integrity check|
+|Nodes|In the OMA DM tree, the following rules apply for the node name:<li>"" can be part of the node name.<li>The node name cannot be empty.<li>The node name cannot be only the asterisk (*) character.|
+|Provisioning Files|Provisioning XML must be well formed and follow the definition in SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905).<br>If an XML element that is not a valid OMA DM command is under SyncBody, the status code 400 is returned for that element.<div class="alert">**Note**<br>To represent a Unicode string as a URI, first encode the string as UTF-8. Then encode each of the UTF-8 bytes using URI encoding.</div>|
+|WBXML support|Windows supports sending and receiving SyncML in both XML format and encoded WBXML format. This is configurable by using the DEFAULTENCODING node under the w7 APPLICATION characteristic during enrollment. For more information about WBXML encoding, see section 8 of the [SyncML Representation Protocol](https://go.microsoft.com/fwlink/p/?LinkId=526905) specification.|
+|Handling of large objects|In Windows 10, version 1511, client support for uploading large objects to the server was added.|
 
 
 <a href="" id="protocol-common-elements"></a>
@@ -149,99 +53,26 @@ The following table shows the OMA DM standards that Windows uses.
 
 Common elements are used by other OMA DM element types. The following table lists the OMA DM common elements used to configure the devices. For more information about OMA DM common elements, see "SyncML Representation Protocol Device Management Usage" (OMA-SyncML-DMRepPro-V1_1_2-20030613-A) available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_1_2-20031209-A/).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Chal</p></td>
-<td><p>Specifies an authentication challenge. The server or client can send a challenge to the other if no credentials or inadequate credentials were given in the original request message.</p></td>
-</tr>
-<tr class="even">
-<td><p>Cmd</p></td>
-<td><p>Specifies the name of an OMA DM command referenced in a Status element.</p></td>
-</tr>
-<tr class="odd">
-<td><p>CmdID</p></td>
-<td><p>Specifies the unique identifier for an OMA DM command.</p></td>
-</tr>
-<tr class="even">
-<td><p>CmdRef</p></td>
-<td><p>Specifies the ID of the command for which status or results information is being returned. This element takes the value of the CmdID element of the corresponding request message.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Cred</p></td>
-<td><p>Specifies the authentication credential for the originator of the message.</p></td>
-</tr>
-<tr class="even">
-<td><p>Final</p></td>
-<td><p>Indicates that the current message is the last message in the package.</p></td>
-</tr>
-<tr class="odd">
-<td><p>LocName</p></td>
-<td><p>Specifies the display name in the Target and Source elements, used for sending a user ID for MD5 authentication.</p></td>
-</tr>
-<tr class="even">
-<td><p>LocURI</p></td>
-<td><p>Specifies the address of the target or source location. If the address contains a non-alphanumeric character, it must be properly escaped according to the URL encoding standard.</p></td>
-</tr>
-<tr class="odd">
-<td><p>MsgID</p></td>
-<td><p>Specifies a unique identifier for an OMA DM session message.</p></td>
-</tr>
-<tr class="even">
-<td><p>MsgRef</p></td>
-<td><p>Specifies the ID of the corresponding request message. This element takes the value of the request message MsgID element.</p></td>
-</tr>
-<tr class="odd">
-<td><p>RespURI</p></td>
-<td><p>Specifies the URI that the recipient must use when sending a response to this message.</p></td>
-</tr>
-<tr class="even">
-<td><p>SessionID</p></td>
-<td><p>Specifies the identifier of the OMA DM session associated with the containing message.</p>
-<div class="alert">
-<strong>Note</strong>  If the server does not notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the desktop client returns the SessionID in integer in decimal format and the mobile device client returns 2 bytes as a string. If the server supports DM session sync version 2.0, which is used in Windows 10, the desktop and mobile device client returns 2 bytes.
-</div>
-<div>
-
-</div></td>
-</tr>
-<tr class="odd">
-<td><p>Source</p></td>
-<td><p>Specifies the message source address.</p></td>
-</tr>
-<tr class="even">
-<td><p>SourceRef</p></td>
-<td><p>Specifies the source of the corresponding request message. This element takes the value of the request message Source element and is returned in the Status or Results element.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Target</p></td>
-<td><p>Specifies the address of the node, in the DM Tree, that is the target of the OMA DM command.</p></td>
-</tr>
-<tr class="even">
-<td><p>TargetRef</p></td>
-<td><p>Specifies the target address in the corresponding request message. This element takes the value of the request message Target element and is returned in the Status or Results element.</p></td>
-</tr>
-<tr class="odd">
-<td><p>VerDTD</p></td>
-<td><p>Specifies the major and minor version identifier of the OMA DM representation protocol specification used to represent the message.</p></td>
-</tr>
-<tr class="even">
-<td><p>VerProto</p></td>
-<td><p>Specifies the major and minor version identifier of the OMA DM protocol specification used with the message.</p></td>
-</tr>
-</tbody>
-</table>
-
+|Element|Description|
+|--- |--- |
+|Chal|Specifies an authentication challenge. The server or client can send a challenge to the other if no credentials or inadequate credentials were given in the original request message.|
+|Cmd|Specifies the name of an OMA DM command referenced in a Status element.|
+|CmdID|Specifies the unique identifier for an OMA DM command.|
+|CmdRef|Specifies the ID of the command for which status or results information is being returned. This element takes the value of the CmdID element of the corresponding request message.|
+|Cred|Specifies the authentication credential for the originator of the message.|
+|Final|Indicates that the current message is the last message in the package.|
+|LocName|Specifies the display name in the Target and Source elements, used for sending a user ID for MD5 authentication.|
+|LocURI|Specifies the address of the target or source location. If the address contains a non-alphanumeric character, it must be properly escaped according to the URL encoding standard.|
+|MsgID|Specifies a unique identifier for an OMA DM session message.|
+|MsgRef|Specifies the ID of the corresponding request message. This element takes the value of the request message MsgID element.|
+|RespURI|Specifies the URI that the recipient must use when sending a response to this message.|
+|SessionID|Specifies the identifier of the OMA DM session associated with the containing message.<div class="alert">**Note**<br>  If the server does not notify the device that it supports a new version (through SyncApplicationVersion node in the DMClient CSP), the desktop client returns the SessionID in integer in decimal format and the mobile device client returns 2 bytes as a string. If the server supports DM session sync version 2.0, which is used in Windows 10, the desktop and mobile device client returns 2 bytes.</div>|
+|Source|Specifies the message source address.|
+|SourceRef|Specifies the source of the corresponding request message. This element takes the value of the request message Source element and is returned in the Status or Results element.|
+|Target|Specifies the address of the node, in the DM Tree, that is the target of the OMA DM command.|
+|TargetRef|Specifies the target address in the corresponding request message. This element takes the value of the request message Target element and is returned in the Status or Results element.|
+|VerDTD|Specifies the major and minor version identifier of the OMA DM representation protocol specification used to represent the message.|
+|VerProto|Specifies the major and minor version identifier of the OMA DM protocol specification used with the message.|
 
 ## Device management session
 
@@ -257,52 +88,13 @@ A DM session can be divided into two phases:
 
 The following table shows the sequence of events during a typical DM session.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Step</th>
-<th>Action</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>1</p></td>
-<td><p>DM client is invoked to call back to the management server</p>
-<p>Enterprise scenario – The device task schedule invokes the DM client.</p></td>
-<td><p>The MO server sends a server trigger message to invoke the DM client.</p>
-<p>The trigger message includes the server ID and tells the client device to initiate a session with the server. The client device authenticates the trigger message and verifies that the server is authorized to communicate with it.</p>
-<p>Enterprise scenario - At the scheduled time, the DM client is invoked periodically to call back to the enterprise management server over HTTPS.</p></td>
-</tr>
-<tr class="even">
-<td><p>2</p></td>
-<td><p>The device sends a message, over an IP connection, to initiate the session.</p></td>
-<td><p>This message includes device information and credentials. The client and server do mutual authentication over an SSL channel or at the DM application level.</p></td>
-</tr>
-<tr class="odd">
-<td><p>3</p></td>
-<td><p>The DM server responds, over an IP connection (HTTPS).</p></td>
-<td><p>The server sends initial device management commands, if any.</p></td>
-</tr>
-<tr class="even">
-<td><p>4</p></td>
-<td><p>The device responds to server management commands.</p></td>
-<td><p>This message includes the results of performing the specified device management operations.</p></td>
-</tr>
-<tr class="odd">
-<td><p>5</p></td>
-<td><p>The DM server terminates the session or sends another command.</p></td>
-<td><p>The DM session ends, or Step 4 is repeated.</p></td>
-</tr>
-</tbody>
-</table>
-
-
+|Step|Action|Description|
+|--- |--- |--- |
+|1|DM client is invoked to call back to the management server<br><br>Enterprise scenario – The device task schedule invokes the DM client.|The MO server sends a server trigger message to invoke the DM client.<br><br>The trigger message includes the server ID and tells the client device to initiate a session with the server. The client device authenticates the trigger message and verifies that the server is authorized to communicate with it.<br><br>Enterprise scenario - At the scheduled time, the DM client is invoked periodically to call back to the enterprise management server over HTTPS.|
+|2|The device sends a message, over an IP connection, to initiate the session.|This message includes device information and credentials. The client and server do mutual authentication over an SSL channel or at the DM application level.|
+|3|The DM server responds, over an IP connection (HTTPS).|The server sends initial device management commands, if any.|
+|4|The device responds to server management commands.|This message includes the results of performing the specified device management operations.|
+|5|The DM server terminates the session or sends another command.|The DM session ends, or Step 4 is repeated.|
 
 The step numbers in the table do not represent message identification numbers (MsgID). All messages from the server must have a MsgID that is unique within the session, starting at 1 for the first message, and increasing by an increment of 1 for each additional message. For more information about MsgID and OMA SyncML protocol, see "OMA Device Management Representation Protocol" (DM_RepPro-V1_2-20070209-A) available from the [OMA website](https://www.openmobilealliance.org/release/DM/V1_2-20070209-A/).
 
