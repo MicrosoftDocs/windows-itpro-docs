@@ -19,9 +19,9 @@ Use to specify enterprise-specific mobile device management configuration settin
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| UpdateManagementServiceAddress | ✔️  | ✔️ | ✔️ |  | ✔️ |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| UpdateManagementServiceAddress | ✔️  | ✔️ |  | ✔️ |
 
 For the **UpdateManagementServiceAddress** setting, enter a list of servers. The first server in the semi-colon delimited list is the server that will be used to instantiate MDM sessions. 
 
