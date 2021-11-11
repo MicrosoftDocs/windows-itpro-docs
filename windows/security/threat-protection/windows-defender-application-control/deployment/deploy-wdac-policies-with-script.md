@@ -10,7 +10,7 @@ ms.reviewer: jogeurte
 ms.author: jogeurte
 ms.manager: jsuther
 manager: dansimp
-ms.date: 04/14/2021
+ms.date: 11/06/2021
 ms.technology: windows-sec
 ms.topic: article
 ms.localizationpriority: medium
@@ -32,7 +32,7 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
 > [!NOTE]
 > To use this procedure, download and distribute the [WDAC policy refresh tool](https://aka.ms/refreshpolicy) to all managed endpoints. Ensure your WDAC policies allow the WDAC policy refresh tool or use a managed installer to distribute the tool.
 
-## Script-based deployment process for Windows 10 version 1903 and above
+## Deploying policies for Windows 10 version 1903 and above
 
 1. Initialize the variables to be used by the script.
 
@@ -56,23 +56,7 @@ This topic describes how to deploy Windows Defender Application Control (WDAC) p
    & $RefreshPolicyTool
    ```
 
-### Deploying signed policies
-
-In addition to the steps outlined above, the binary policy file must also be copied to the device's EFI partition. Deploying your policy via [MEM](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle this step automatically. 
-
-1. Mount the EFI volume and make the directory, if it does not exist, in an elevated PowerShell prompt: 
-
-    ```powershell
-    mountvol J: /S
-    J:
-    mkdir J:\EFI\Microsoft\Boot\CiPolicies\Active
-    ```
-
-2. Copy the signed policy binary as `{PolicyGUID}.cip` to `J:\EFI\Microsoft\Boot\CiPolicies\Active`.
-
-3. Reboot the system.
-
-## Script-based deployment process for Windows 10 versions earlier than 1903
+## Deploying policies for Windows 10 versions earlier than 1903
 
 1. Initialize the variables to be used by the script.
 
@@ -93,3 +77,25 @@ In addition to the steps outlined above, the binary policy file must also be cop
    ```powershell
    Invoke-CimMethod -Namespace root\Microsoft\Windows\CI -ClassName PS_UpdateAndCompareCIPolicy -MethodName Update -Arguments @{FilePath = $DestinationBinary}
    ```
+
+## Deploying signed policies
+
+In addition to the steps outlined above, the binary policy file must also be copied to the device's EFI partition. Deploying your policy via [MEM](/windows/security/threat-protection/windows-defender-application-control/deploy-windows-defender-application-control-policies-using-intune) or the Application Control CSP will handle this step automatically. 
+
+1. Mount the EFI volume and make the directory, if it does not exist, in an elevated PowerShell prompt: 
+
+    ```powershell
+   $MountPoint = 'C:\EFI'
+   $EFIDestinationFolder = "$MountPoint\Microsoft\Boot\CiPolicies\Active"
+   $EFIPartition = (Get-Partition | Where-Object IsSystem).AccessPaths[0]
+   mkdir $EFIDestinationFolder
+   mountvol $MountPoint $EFIPartition
+    ```
+
+2. Copy the signed policy to the created folder:
+
+    ```powershell
+   Copy-Item -Path $PolicyBinary -Destination $EFIDestinationFolder -Force
+    ```
+
+3. Restart the system.
