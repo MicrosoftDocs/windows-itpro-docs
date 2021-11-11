@@ -350,7 +350,7 @@ With Azure integrated MDM enrollment, there's no discovery phase and the discove
 |Enrolled certificate store|My/User|My/System|My/User|
 |CSR subject name|User Principal Name|Device ID|User Principal Name|
 |EnrollmentData Terms of Use binary blob as AdditionalContext for EnrollmentServiceURL|Not supported|Supported|Supported|
-|CSPs accessible during enrollment|Windows 10 support:<li>DMClient<li>CertificateStore<li>RootCATrustedCertificates<li>ClientCertificateInstall<li>EnterpriseModernAppManagement<li>PassportForWork<li>Policy<li>w7 APPLICATION|||
+|CSPs accessible during enrollment|Windows 10 support: <br/>- DMClient <br/>- CertificateStore <br/>- RootCATrustedCertificates <br/> - ClientCertificateInstall <br/>- EnterpriseModernAppManagement <br/> - PassportForWork <br/> - Policy <br/> - w7 APPLICATION|||
 
 ## Management protocol with Azure AD
 
