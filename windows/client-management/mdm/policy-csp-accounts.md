@@ -270,7 +270,7 @@ The following list shows the supported values:
 
 
 <!--Policy-->
-<a href="" id="accounts-domainnamesforemailSync"></a>**Accounts/DomainNamesForEmailSync**  
+<a href="" id="accounts-domainnamesforemailsync"></a>**Accounts/DomainNamesForEmailSync**  
 
 <!--SupportedSKUs-->
 <table>
