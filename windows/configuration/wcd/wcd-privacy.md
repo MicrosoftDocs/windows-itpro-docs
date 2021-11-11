@@ -17,9 +17,9 @@ Use **Privacy** to configure settings for app activation with voice.
 
 ## Applies to
 
-| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| Setting   | Windows client |  Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| All settings | ✔️  | ✔️ |  | ✔️ |
+| All settings | ✔️  |  ✔️ |  | ✔️ |
 
 ## LetAppsActivateWithVoice
 

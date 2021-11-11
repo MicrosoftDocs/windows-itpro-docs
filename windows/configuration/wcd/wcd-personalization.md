@@ -18,12 +18,12 @@ Use to configure settings to personalize a PC.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [DeployDesktopImage](#deploydesktopimage) | ✔️  |  |  |  |  |
-| [DeployLockScreenImage](#deploylockscreenimage) | ✔️  |  |  |  |  |
-| [DesktopImageUrl](#desktopimageurl) | ✔️  |  |  |  |  |
-| [LockScreenImageUrl](#lockscreenimageurl) | ✔️  |  |  |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [DeployDesktopImage](#deploydesktopimage) | ✔️  |  |  |  |
+| [DeployLockScreenImage](#deploylockscreenimage) | ✔️  |  |  |  |
+| [DesktopImageUrl](#desktopimageurl) | ✔️  |  |  |  |
+| [LockScreenImageUrl](#lockscreenimageurl) | ✔️  |  |  |  |
 
 ## DeployDesktopImage
 
