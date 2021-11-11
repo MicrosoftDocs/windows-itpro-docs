@@ -22,7 +22,7 @@ ms.topic: article
 
 > **Looking for information about Windows 10 for personal or home use?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq)
 
-For many IT Pros, it's valuable to have visibility into feature updates early--before they’re available in theGeneral Availability Channel. With Windows 10, feature flighting enables participants in the Windows Insider Preview program can consume and deploy preproduction code to test devices, gaining early visibility into the next build. This is better for your organization because you can test the early builds of Windows 10 to discover possible issues with the code or with device and app compatibility in your organization before the update is ever publicly available. We at Microsoft also appreciate it because Insiders can report issues back to us in time for us to make improvements in a release before it is more generally available.
+For many IT Pros, it's valuable to have visibility into feature updates early--before they’re available in the General Availability Channel. With Windows 10, feature flighting enables participants in the Windows Insider Preview program can consume and deploy preproduction code to test devices, gaining early visibility into the next build. This is better for your organization because you can test the early builds of Windows 10 to discover possible issues with the code or with device and app compatibility in your organization before the update is ever publicly available. We at Microsoft also appreciate it because Insiders can report issues back to us in time for us to make improvements in a release before it is more generally available.
 
 The Windows Insider Program for Business gives you the opportunity to:
  

@@ -30,7 +30,7 @@ Some new terms have been introduced as part of Windows as a service, so you shou
 - **Quality updates** deliver both security and non-security fixes. They are typically released on the second Tuesday of each month, though they can be released at any time. Quality updates include security updates, critical updates, servicing stack updates, and driver updates. Quality updates are cumulative, so installing the latest quality update is sufficient to get all the available fixes for a specific Windows 10 feature update. The "servicing stack" is the code that installs other updates, so they are important to keep current. For more information, see [Servicing stack updates](servicing-stack-updates.md).
 - **Insider Preview** builds are made available during the development of the features that will be shipped in the next feature update, enabling organizations to validate new features and confirm compatibility with existing apps and infrastructure, providing feedback to Microsoft on any issues encountered.
 - **Servicing channels** allow organizations to choose when to deploy new features. 
-  - The **General Availability Channel** receives feature updates as they become available. 
+  - The **General Availability Channel** receives feature updates annually.
   - The **Long-Term Servicing Channel**, which meant only for specialized devices (which typically don't run Office) such as those that control medical equipment or ATM machines, receives new feature releases every two to three years.
 - **Deployment rings** are groups of devices used to initially pilot, and then to broadly deploy, each feature update in an organization. 
 
@@ -52,6 +52,6 @@ To stay up to date, deploy feature updates at an appropriate time after their re
 
 Extensive advanced testing isn’t required. Instead, only business-critical apps need to be tested, with the remaining apps validated through a series of pilot deployment rings. Once these pilot deployments have validated most apps, broad deployment can begin.
 
-This process repeats with each new feature update as they become available. These are small deployment projects, compared to the large projects that were necessary with the old three-to-five-year Windows release cycles.
+This process repeats with each new feature update. These are small deployment projects, compared to the large projects that were necessary with the old three-to-five-year Windows release cycles.
 
 Other technologies such as BranchCache and Delivery Optimization, both peer-to-peer distribution tools, can help with the distribution of the feature update installation files.

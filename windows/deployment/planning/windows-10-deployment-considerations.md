@@ -72,7 +72,7 @@ In either of these scenarios, you can make a variety of configuration changes to
 
 ## Stay up to date
 
-For computers using the [General Availability Channel](../update/get-started-updates-channels-tools.md#general-availability-channel), you can deploy these upgrades by using a variety of methods:
+For computers using the [General Availability Channel](../update/waas-overview.md#general-availability-channel), you can deploy these upgrades by using a variety of methods:
 
 -   Windows Update or Windows Update for Business, for devices where you want to receive updates directly from the Internet.
 -   Windows Server Update Services (WSUS), for devices configured to pull updates from internal servers after they are approved (deploying like an update). 

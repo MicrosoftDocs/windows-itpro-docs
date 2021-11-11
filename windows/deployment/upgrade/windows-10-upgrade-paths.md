@@ -41,33 +41,33 @@ D = Edition downgrade; personal data is maintained, applications and settings ar
 
 | | Windows 10 Home | Windows 10 Pro | Windows 10 Pro Education | Windows 10 Education | Windows 10 Enterprise |
 |---|---|---|---|---|---|
-| Home  | | ✔  | ✔  | ✔  | |
-| Pro   | D | | ✔   | ✔  | ✔  |
-| Education  | | | | | D  |
-| Enterprise  | | | | ✔ | |
+| **Home**  | | ✔  | ✔  | ✔  | |
+| **Pro**   | D | | ✔   | ✔  | ✔  |
+| **Education**  | | | | | D  |
+| **Enterprise**  | | | | ✔ | |
 
 ### Windows 8.1
 
 |  | Windows 10 Home | Windows 10 Pro | Windows 10 Pro Education | Windows 10 Education | Windows 10 Enterprise |
 |---|---|---|---|---|---|
-| (Core)  | ✔  | ✔  | ✔  | ✔  | |
-| Connected   | ✔  | ✔  | ✔  | ✔  | |
-| Pro  | D   | ✔  | ✔   | ✔  | ✔  |
-| Pro Student  | D | ✔  | ✔  | ✔  | ✔  |
-| Pro WMC  | D  | ✔  | ✔  | ✔  | ✔  |
-| Enterprise  | | | | ✔  | ✔  |
-| Embedded Industry | | | | | ✔  |
+| **(Core)**  | ✔  | ✔  | ✔  | ✔  | |
+| **Connected**   | ✔  | ✔  | ✔  | ✔  | |
+| **Pro**  | D   | ✔  | ✔   | ✔  | ✔  |
+| **Pro Student**  | D | ✔  | ✔  | ✔  | ✔  |
+| **Pro WMC**  | D  | ✔  | ✔  | ✔  | ✔  |
+| **Enterprise**  | | | | ✔  | ✔  |
+| **Embedded Industry** | | | | | ✔  |
 
 ### Windows 7
 
 |  | Windows 10 Home | Windows 10 Pro | Windows 10 Pro Education | Windows 10 Education | Windows 10 Enterprise |
 |---|---|---|---|---|---|
-| Starter   | ✔  | ✔  | ✔  | ✔  | |
-| Home Basic  | ✔  | ✔  | ✔  | ✔  | |
-| Home Premium  | ✔  | ✔  | ✔  | ✔  | |
-| Professional  | D  | ✔  | ✔ | ✔  | ✔  |
-| Ultimate  | D  | ✔   | ✔   | ✔  | ✔  |
-| Enterprise  |  |  |  | ✔  | ✔  |
+| **Starter**   | ✔  | ✔  | ✔  | ✔  | |
+| **Home Basic**  | ✔  | ✔  | ✔  | ✔  | |
+| **Home Premium**  | ✔  | ✔  | ✔  | ✔  | |
+| **Professional**  | D  | ✔  | ✔ | ✔  | ✔  |
+| **Ultimate**  | D  | ✔   | ✔   | ✔  | ✔  |
+| **Enterprise**  |  |  |  | ✔  | ✔  |
 
 ## Related Topics
 
