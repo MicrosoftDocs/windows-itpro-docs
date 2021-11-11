@@ -18,7 +18,8 @@ ms.date: 11/19/2019
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
 The following shows the AppLocker configuration service provider in tree format.
-```
+
+```console
 ./Vendor/MSFT
 AppLocker
 ----ApplicationLaunchRestrictions
@@ -410,8 +411,7 @@ The following list shows the apps that may be included in the inbox.
 |Messaging|27e26f40-e031-48a6-b130-d1f20388991a|Microsoft.Messaging|
 |Microsoft account|3a4fae89-7b7e-44b4-867b-f7e2772b8253|Microsoft.CloudExperienceHost|
 |Microsoft Edge|395589fb-5884-4709-b9df-f7d558663ffd|Microsoft.MicrosoftEdge|
-|Microsoft Frameworks|ProductID = 00000000-0000-0000-0000-000000000000
-PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"||
+|Microsoft Frameworks|ProductID = 00000000-0000-0000-0000-000000000000 PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"||
 |Migration UI||MigrationUIApp|
 |MiracastView|906beeda-b7e6-4ddc-ba8d-ad5031223ef9|906beeda-b7e6-4ddc-ba8d-ad5031223ef9|
 |Mixed Reality Portal||Microsoft.Windows.HolographicFirstRun|
