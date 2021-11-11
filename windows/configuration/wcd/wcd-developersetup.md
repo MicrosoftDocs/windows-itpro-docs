@@ -21,8 +21,8 @@ Use to unlock developer mode on HoloLens devices and configure authentication to
 
 | Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: |
-| [EnableDeveloperMode](#enabledevelopermode) |   |  | ✔️ |  |
-| [AuthenticationMode](#authenticationmode) |   |  | ✔️ |  |
+| [EnableDeveloperMode](#developersetupsettings-enabledevelopermode) |   |  | ✔️ |  |
+| [AuthenticationMode](#windowsdeviceportalsettings-authentication-mode) |   |  | ✔️ |  |
 
 
 ## DeveloperSetupSettings: EnableDeveloperMode
