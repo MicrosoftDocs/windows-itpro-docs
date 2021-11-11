@@ -30,7 +30,8 @@ To learn more about WIP, see the following articles:
 -   [General guidance and best practices for Windows Information Protection (WIP)](/windows/security/information-protection/windows-information-protection/guidance-and-best-practices-wip)
 
 The following shows the EnterpriseDataProtection CSP in tree format.
-```
+
+```console
 ./Device/Vendor/MSFT
 EnterpriseDataProtection
 ----Settings
@@ -45,6 +46,7 @@ EnterpriseDataProtection
 --------EDPShowIcons
 ----Status
 ```
+
 <a href="" id="--device-vendor-msft-enterprisedataprotection"></a>**./Device/Vendor/MSFT/EnterpriseDataProtection**  
 The root node for the CSP.
 
@@ -71,7 +73,6 @@ Changing the primary enterprise ID is not supported and may cause unexpected beh
 > [!Note]
 > The client requires domain name to be canonical, otherwise the setting will be rejected by the client.
 
- 
 
 Here are the steps to create canonical domain names:
 
@@ -111,7 +112,6 @@ The CSP checks the current edition and hardware support (TPM), and returns an er
 > [!Note]
 > This setting is only supported in Windows 10 Mobile.
 
- 
 
 Supported operations are Add, Get, Replace, and Delete. Value type is integer.
 
@@ -124,7 +124,7 @@ Specifies a recovery certificate that can be used for data recovery of encrypted
 DRA information from MDM policy must be a serialized binary blob identical to what we expect from GP.
 The binary blob is the serialized version of following structure:
 
-``` syntax
+```cpp
 //
 //  Recovery Policy Data Structures
 //
@@ -243,7 +243,6 @@ typedef enum _PUBLIC_KEY_SOURCE_TAG {
     EfsCertificate,
     EfsCertificateThumbprint
 } PUBLIC_KEY_SOURCE_TAG, *PPUBLIC_KEY_SOURCE_TAG;
- 
 ```
 
 For EFSCertificate KeyTag, it is expected to be a DER ENCODED binary certificate.
@@ -300,36 +299,9 @@ A read-only bit mask that indicates the current state of WIP on the Device. The 
 
 Suggested values:
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Reserved for future use</p></td>
-<td><p>WIP mandatory settings</p>
-<p>Set = 1</p>
-<p>Not set = 0</p></td>
-<td><p>Reserved for future use</p></td>
-<td><p>AppLocker configured</p>
-<p>Yes = 1</p>
-<p>No = 0</p></td>
-<td><p>WIP on = 1</p>
-<p>WIP off = 0</p></td>
-</tr>
-<tr class="even">
-<td><p>4</p></td>
-<td><p>3</p></td>
-<td><p>2</p></td>
-<td><p>1</p></td>
-<td><p>0</p></td>
-</tr>
-</tbody>
-</table>
+|Reserved for future use|WIP mandatory settings<br>Set = 1<br>Not set = 0|Reserved for future use|AppLocker configured<br>Yes = 1<br>No = 0|WIP on = 1<br>WIP off = 0|
+|--- |--- |--- |--- |--- |
+|4|3|2|1|0|
 
  
 
