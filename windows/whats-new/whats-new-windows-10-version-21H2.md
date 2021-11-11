@@ -34,14 +34,14 @@ To learn more about the status of the November 2021 Update rollout, known issues
 
 ## Updates and servicing
 
-Windows 10, version 21H2 feature updates are installed annually using the General Availability Channel, like Windows 11. Previous feature updates were installed using the semi-annual channel. Quality updates are still installed monthly on patch Tuesday.
+Windows 10, version 21H2 feature updates are installed annually using the General Availability Channel. Previous feature updates were installed using the semi-annual channel. For more information on this change, see the [How to get the Windows 10 November 2021 Update](https://blogs.windows.com/windowsexperience/?p=176473).
+
+Quality updates are still installed monthly on patch Tuesday.
 
 For more information, see:
 
 - [Feature and quality update definitions](/windows/deployment/update/waas-quick-start#definitions)
 - [Windows servicing channels](/windows/deployment/update/waas-overview#servicing-channels)
-
-For more information on this change, see the [How to get the Windows 10 November 2021 Update](https://blogs.windows.com/windowsexperience/?p=176473).
 
 ## GPU compute support for the Windows Subsystem for Linux
 
@@ -64,7 +64,7 @@ Azure virtual desktop is a Windows client OS hosted in the cloud, and it has vir
 For more information, see:
 
 - [What is Azure Virtual Desktop?](/azure/virtual-desktop/overview)
-- [Set up MSIX app attach with the Azure portal](azure/virtual-desktop/app-attach-azure-portal)
+- [Set up MSIX app attach with the Azure portal](/azure/virtual-desktop/app-attach-azure-portal)
 
 ## Wi-Fi 6E support
 
