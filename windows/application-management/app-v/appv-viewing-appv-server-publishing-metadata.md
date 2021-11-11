@@ -77,84 +77,20 @@ To get the name of the Publishing server and the port number (`http://<PubServer
 
 In your publishing metadata query, enter the string values that correspond to the client operating system that you’re using.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Operating system</th>
-<th align="left">Architecture</th>
-<th align="left">String value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Windows 10/11</p></td>
-<td align="left"><p>64-bit</p></td>
-<td align="left"><p>WindowsClient_10.0_x64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 10/11</p></td>
-<td align="left"><p>32-bit</p></td>
-<td align="left"><p>WindowsClient_10.0_x86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 8.1</p></td>
-<td align="left"><p>64-bit</p></td>
-<td align="left"><p>WindowsClient_6.2_x64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8.1</p></td>
-<td align="left"><p>32-bit</p></td>
-<td align="left"><p>WindowsClient_6.2_x86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows 8</p></td>
-<td align="left"><p>64-bit</p></td>
-<td align="left"><p>WindowsClient_6.2_x64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows 8</p></td>
-<td align="left"><p>32-bit</p></td>
-<td align="left"><p>WindowsClient_6.2_x86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2012 R2</p></td>
-<td align="left"><p>64-bit</p></td>
-<td align="left"><p>WindowsServer_6.2_x64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2012 R2</p></td>
-<td align="left"><p>32-bit</p></td>
-<td align="left"><p>WindowsServer_6.2_x86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2012</p></td>
-<td align="left"><p>64-bit</p></td>
-<td align="left"><p>WindowsServer_6.2_x64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2012</p></td>
-<td align="left"><p>32-bit</p></td>
-<td align="left"><p>WindowsServer_6.2_x86</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Server 2008 R2</p></td>
-<td align="left"><p>64-bit</p></td>
-<td align="left"><p>WindowsServer_6.1_x64</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Server 2008 R2</p></td>
-<td align="left"><p>32-bit</p></td>
-<td align="left"><p>WindowsServer_6.1_x86</p></td>
-</tr>
-</tbody>
-</table>
-
-
+|Operating system|Architecture|String value|
+|--- |--- |--- |
+|Windows 10/11|64-bit|WindowsClient_10.0_x64|
+|Windows 10/11|32-bit|WindowsClient_10.0_x86|
+|Windows 8.1|64-bit|WindowsClient_6.2_x64|
+|Windows 8.1|32-bit|WindowsClient_6.2_x86|
+|Windows 8|64-bit|WindowsClient_6.2_x64|
+|Windows 8|32-bit|WindowsClient_6.2_x86|
+|Windows Server 2012 R2|64-bit|WindowsServer_6.2_x64|
+|Windows Server 2012 R2|32-bit|WindowsServer_6.2_x86|
+|Windows Server 2012|64-bit|WindowsServer_6.2_x64|
+|Windows Server 2012|32-bit|WindowsServer_6.2_x86|
+|Windows Server 2008 R2|64-bit|WindowsServer_6.1_x64|
+|Windows Server 2008 R2|32-bit|WindowsServer_6.1_x86|
 
 
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
