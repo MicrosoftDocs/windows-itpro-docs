@@ -19,9 +19,9 @@ Use WindowsHelloForBusiness settings to specify whether [FIDO2 security keys for
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [SecurityKeys](#securitykeys) | ✔️ |    |  |  |  |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| [SecurityKeys](#securitykeys) | ✔️ |  |  |  |
 
 ## SecurityKeys
 
