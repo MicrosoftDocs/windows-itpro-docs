@@ -251,8 +251,13 @@ Registry – HKEY\_CURRENT\_USER
 This following is a step-by-step walk-through of the App-V and UPM operations and the expectations users should expect.
 
 - **Performance**: After implementing this approach in the VDI/RDSH environment, on first login,
-  - (Operation) A user-publishing/refresh is initiated. (Expectation) If this is the first time a user has published virtual applications (e.g. non-persistent), this will take the usual duration of a publishing/refresh.
-  - (Operation) After the publishing/refresh, the UPM solution captures the user integrations.<li>(Expectation) Depending on how the UPM solution is configured, this may occur as part of the logoff process. This will incur the same/similar overhead as persisting the user state.
+  - (Operation) A user-publishing/refresh is initiated. 
+
+    (Expectation) If this is the first time a user has published virtual applications (e.g. non-persistent), this will take the usual duration of a publishing/refresh.
+
+- (Operation) After the publishing/refresh, the UPM solution captures the user integrations.
+
+    (Expectation) Depending on how the UPM solution is configured, this may occur as part of the logoff process. This will incur the same/similar overhead as persisting the user state.
  
   **On subsequent logins**:
 
@@ -286,14 +291,16 @@ This following is a step-by-step walk-through of the App-V and UPM operations an
  
   - (Operation) After the publishing/refresh, the UPM solution captures the user integrations.
 
-     (Expectation) Depending on how the UPM solution is configured, this may occur as part of the logoff process. This will incur the same/similar overhead as persisting the user state. 
+    (Expectation) Depending on how the UPM solution is configured, this may occur as part of the logoff process. This will incur the same/similar overhead as persisting the user state. 
  
   **On subsequent logins**:
  
   - (Operation) UPM solution applies the user integrations to the system prior to publishing/refresh.
   - (Operation) Add/refresh must pre-configure all user targeted applications.
-    - (Expectation) This may increase the time to application availability significantly (on the order of 10’s of seconds).
-    - This will increase the publishing refresh time relative to the number and complexity* of virtual applications.
+
+    - (Expectation):
+      - This may increase the time to application availability significantly (on the order of 10’s of seconds).
+      - This will increase the publishing refresh time relative to the number and complexity* of virtual applications.
 
    - (Operation) Publishing/refresh will process un-publish and publish operations for changes to user package entitlements.
 
