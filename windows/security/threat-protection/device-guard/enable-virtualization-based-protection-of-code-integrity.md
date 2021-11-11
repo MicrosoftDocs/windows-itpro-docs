@@ -19,8 +19,9 @@ ms.technology: windows-sec
 
 **Applies to** 
 - Windows 10
+- Windows 11
 
-This topic covers different ways to enable Hypervisor-protected code integrity (HVCI) on Windows 10.
+This topic covers different ways to enable Hypervisor-protected code integrity (HVCI) on Windows 10 and Windows 11.
 Some applications, including device drivers, may be incompatible with HVCI.
 This can cause devices or software to malfunction and in rare cases may result in a blue screen. Such issues may occur after HVCI has been turned on or during the enablement process itself.
 If this happens, see [Troubleshooting](#troubleshooting) for remediation steps.
@@ -34,9 +35,9 @@ If this happens, see [Troubleshooting](#troubleshooting) for remediation steps.
 * HVCI also ensures that your other trusted processes, like Credential Guard, have got a valid certificate.
 * Modern device drivers must also have an EV (Extended Validation) certificate and should support HVCI.
 
-## How to turn on HVCI in Windows 10
+## How to turn on HVCI in Windows 10 and Windows 11 
 
-To enable HVCI on Windows 10 devices with supporting hardware throughout an enterprise, use any of these options:
+To enable HVCI on Windows 10 and Windows 11 devices with supporting hardware throughout an enterprise, use any of these options:
 - [Windows Security app](#windows-security-app)
 - [Microsoft Intune (or another MDM provider)](#enable-hvci-using-intune)
 - [Group Policy](#enable-hvci-using-group-policy)
@@ -80,7 +81,7 @@ Set the following registry keys to enable HVCI. This provides exactly the same s
 >
 > - All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. We recommend that you enable these features on a group of test computers before you enable them on users' computers.
 
-#### For Windows 10 version 1607 and later
+#### For Windows 10 version 1607 and later, For Windows 11 21H2
 
 Recommended settings (to enable virtualization-based protection of Code Integrity policies, without UEFI Lock):
 
@@ -194,17 +195,17 @@ reg add "HKLM\SYSTEM\CurrentControlSet\Control\DeviceGuard" /v "Unlocked" /t REG
 
 ### Validate enabled Windows Defender Device Guard hardware-based security features
 
-Windows 10 and Windows Server 2016 have a WMI class for related properties and features: *Win32\_DeviceGuard*. This class can be queried from an elevated Windows PowerShell session by using the following command:
+Windows 10, Windows 11 and Windows Server 2016 have a WMI class for related properties and features: *Win32\_DeviceGuard*. This class can be queried from an elevated Windows PowerShell session by using the following command:
 
 ```powershell
 Get-CimInstance –ClassName Win32_DeviceGuard –Namespace root\Microsoft\Windows\DeviceGuard
 ```
 
 > [!NOTE]
-> The *Win32\_DeviceGuard* WMI class is only available on the Enterprise edition of Windows 10.
+> The *Win32\_DeviceGuard* WMI class is only available on the Enterprise edition of Windows 10 and Windows 11.
 
 > [!NOTE]
-> Mode Based Execution Control property will only be listed as available starting with Windows 10 version 1803.
+> Mode Based Execution Control property will only be listed as available starting with Windows 10 version 1803 and Windows 11 21H2.
 
 The output of this command provides details of the available hardware-based security features as well as those features that are currently enabled.
 
