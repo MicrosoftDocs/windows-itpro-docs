@@ -31,6 +31,9 @@ manager: dansimp
   <dd>
     <a href="#accounts-allowmicrosoftaccountsigninassistant">Accounts/AllowMicrosoftAccountSignInAssistant</a>
   </dd>
+  <dd>
+    <a href="#accounts-domainnamesforemailsync">Accounts/DomainNamesForEmailSync</a>
+  </dd>
 </dl>
 
 
@@ -266,5 +269,69 @@ The following list shows the supported values:
 <hr/>
 
 
+<!--Policy-->
+<a href="" id="accounts-domainnamesforemailSync"></a>**Accounts/DomainNamesForEmailSync**  
 
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Mobile</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Mobile Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+
+<!--/Description-->
+<!--SupportedValues-->
+The following list shows the supported values:
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
 <!--/Policies-->
