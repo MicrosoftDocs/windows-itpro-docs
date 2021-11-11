@@ -29,7 +29,8 @@ Each policy entry identifies one or more applications in combination with a host
 **Default Policies**: Policies are applied in order of their scope with the most specific policies considered before the more general policies. The phone’s default behavior applies to all applications and all domains and is only used when no other, more specific policy is available. The default policy is to use any available Wi-Fi network first and then any available APN.
 
 The following shows the CMPolicyEnterprise configuration service provider management object in tree format as used by both Open Mobile Alliance (OMA) Client Provisioning and OMA Device Management.
-```
+
+```console
 ./Vendor/MSFT
 CMPolicy
 ----PolicyName
