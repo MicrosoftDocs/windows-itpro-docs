@@ -19,7 +19,7 @@ Use these settings to join a device to an Active Directory domain or an Azure Ac
 
 ## Applies to
 
-| Setting groups | Desktop editions | Surface Hub | HoloLens | IoT Core |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | 
 | [Azure](#azure) | ✔️ | ✔️ | ✔️ |  |
 | [ComputerAccount](#computeraccount) | ✔️ | ✔️ |   |  ✔️ |

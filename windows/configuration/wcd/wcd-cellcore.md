@@ -24,26 +24,26 @@ Use to configure settings for cellular data.
 
 ## Applies to
 
- Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core 
- --- | :---: | :---: | :---: | :---: | :---: 
- PerDevice: [CellConfigurations](#cellconfigurations) |  | ✔️ |  |  |  |
- PerDevice: [CellData](#celldata)  | ✔️ | ✔️ | ✔️  |  |   
- PerDevice: [CellUX](#cellux)  | ✔️ | ✔️ | ✔️ |  | 
- PerDevice: [CGDual](#cgdual)  |  | ✔️ |  |  | 
- PerDevice: [eSim](#esim) | ✔️ | ✔️ | ✔️  |  | 
- PerDevice: [External](#external)  |  | ✔️ |  |  | 
- PerDevice: [General](#general)  |  | ✔️ |  |  | 
- PerDevice: [RCS](#rcs)  |  | ✔️ |  |  | 
- PerDevice: [SMS](#sms)  | ✔️ | ✔️ | ✔️  |  |  
- PerDevice: [UIX](#uix)  |  | ✔️ |  |  | 
- PerDevice: [UTK](#utk)  |  | ✔️ |  |  |
- PerlMSI: [CellData](#celldata2) |  | ✔️ |  |  |
- PerIMSI: [CellUX](#cellux2) |  | ✔️ |  |  |
- PerIMSI: [General](#general2) |  | ✔️ |  |  |
- PerIMSI: [RCS](#rcs2) |  | ✔️ |  |  |
- PerIMSI: [SMS](#sms2) | ✔️ | ✔️ | ✔️  |  | 
- PerIMSI: [UTK](#utk2) |  | ✔️ |  |  |
- PerIMSI: [VoLTE](#volte) |  | ✔️ |  |  |
+ Setting groups | Windows client | Surface Hub | HoloLens | IoT Core 
+ --- | :---: | :---: | :---: | :---: 
+ PerDevice: [CellConfigurations](#cellconfigurations) |  |  |  |  |
+ PerDevice: [CellData](#celldata)  | ✔️ | ✔️  |  |   
+ PerDevice: [CellUX](#cellux)  | ✔️ | ✔️ |  | 
+ PerDevice: [CGDual](#cgdual)  |  |  |  | 
+ PerDevice: [eSim](#esim) | ✔️ |  ✔️  |  | 
+ PerDevice: [External](#external)  |  |   |  | 
+ PerDevice: [General](#general)  |  |  |  | 
+ PerDevice: [RCS](#rcs)  |  |  |  | 
+ PerDevice: [SMS](#sms)  | ✔️ | ✔️  |  |  
+ PerDevice: [UIX](#uix)  |  |  |  | 
+ PerDevice: [UTK](#utk)  |  |  |  |
+ PerlMSI: [CellData](#celldata2) |  |  |  |
+ PerIMSI: [CellUX](#cellux2) |  |  |  |
+ PerIMSI: [General](#general2) |  |  |  |
+ PerIMSI: [RCS](#rcs2) |  |  |  |
+ PerIMSI: [SMS](#sms2) | ✔️ | ✔️  |  | 
+ PerIMSI: [UTK](#utk2) |  |   |  |
+ PerIMSI: [VoLTE](#volte) |  |  |  |
 
 
 ## PerDevice
