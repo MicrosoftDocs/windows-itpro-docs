@@ -29,7 +29,6 @@ ms.date: 07/22/2020
 - [Defender/AllowFullScanOnMappedNetworkDrives](policy-csp-defender.md#defender-allowfullscanonmappednetworkdrives)
 - [Defender/AllowFullScanRemovableDriveScanning](policy-csp-defender.md#defender-allowfullscanremovabledrivescanning)
 - [Defender/AllowIOAVProtection](policy-csp-defender.md#defender-allowioavprotection)
-- [Defender/AllowIntrusionPreventionSystem](policy-csp-defender.md#defender-allowintrusionpreventionsystem)
 - [Defender/AllowOnAccessProtection](policy-csp-defender.md#defender-allowonaccessprotection)
 - [Defender/AllowRealtimeMonitoring](policy-csp-defender.md#defender-allowrealtimemonitoring)
 - [Defender/AllowScanningNetworkFiles](policy-csp-defender.md#defender-allowscanningnetworkfiles)
