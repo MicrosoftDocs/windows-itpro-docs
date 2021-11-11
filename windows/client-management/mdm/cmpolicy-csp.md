@@ -29,7 +29,7 @@ Each policy entry identifies one or more applications in combination with a host
 
 The following shows the CMPolicy configuration service provider management object in tree format as used by both Open Mobile Alliance (OMA) Client Provisioning and OMA Device Management.
 
-```
+```console
 ./Vendor/MSFT
 CMPolicy
 ----PolicyName
@@ -42,6 +42,7 @@ CMPolicy
 ----------------ConnectionID
 ----------------Type
 ```
+
 <a href="" id="policyname"></a>***policyName***  
 Defines the name of the policy.
 
