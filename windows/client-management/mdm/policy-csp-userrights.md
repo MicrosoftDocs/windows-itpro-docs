@@ -1080,7 +1080,7 @@ GP Info:
 
 <!--/Scope-->
 <!--Description-->
-This security setting determines which users are prevented from logging on at the computer. This policy setting supersedes the Allow log on locally policy setting if an account is subject to both policies.
+This security setting determines which users are prevented from logging on to the computer. This policy setting supersedes the **Allow log on locally** policy setting if an account is subject to both policies.
 
 > [!NOTE]
 > If you apply this security policy to the **Everyone** group, no one will be able to log on locally.
