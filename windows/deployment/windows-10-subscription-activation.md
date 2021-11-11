@@ -23,7 +23,7 @@ Applies to:
 - Windows 10
 - Windows 11
 
-Starting with Windows 10, version 1703, Windows 10 Pro supports the Subscription Activation feature, enabling users to “step-up” from Windows 10 Pro or Windows 11 Pro to **Windows 10 Enterprise** or **Windows 11 Enterprise**, respectively, if they are subscribed to Windows 10/11 Enterprise E3 or E5.
+Windows 10 Pro supports the Subscription Activation feature, enabling users to “step-up” from Windows 10 Pro or Windows 11 Pro to **Windows 10 Enterprise** or **Windows 11 Enterprise**, respectively, if they are subscribed to Windows 10/11 Enterprise E3 or E5.
 
 With Windows 10, version 1903 and later, the Subscription Activation feature also supports the ability to step-up from Windows 10 Pro Education or Windows 11 Pro Education to the Enterprise grade editions for educational institutions—**Windows 10 Education** or **Windows 11 Education**.
 
@@ -44,9 +44,10 @@ For information on how to deploy Enterprise licenses, see [Deploy Windows 10/11 
 
 ## Subscription Activation for Windows 10/11 Enterprise
 
-With Windows 10, version 1703 and later both Windows 10/11 Enterprise E3 and Windows 10/11 Enterprise E5 are available as online services via subscription. Deploying Windows 10 Enterprise or Windows 11 Enterprise in your organization can now be accomplished with no keys and no reboots.
+Windows 10/11 Enterprise E3 and Windows 10/11 Enterprise E5 are available as online services via subscription. Deploying Windows 10 Enterprise or Windows 11 Enterprise in your organization can now be accomplished with no keys and no reboots.
 
  If you are running Windows 10, version 1703 or later:
+
 - Devices with a current Windows 10 Pro license or Windows 11 Pro license can be seamlessly upgraded to Windows 10 Enterprise or Windows 11 Enterprise, respectively.
 - Product key-based Windows 10 Enterprise or Windows 11 Enterprise software licenses can be transitioned to Windows 10 Enterprise and Windows 11 Enterprise subscriptions.
 
@@ -109,8 +110,6 @@ An issue has been identified with Hybrid Azure AD joined devices that have enabl
 
 To resolve this issue:
 
-If the device is running Windows 10, version 1703, 1709, or 1803, the user must either sign in with an Azure AD account, or you must disable MFA for this user during the 30-day polling period and renewal.
-
 If the device is running Windows 10, version 1809 or later:
 
 - Windows 10, version 1809 must be updated with [KB4497934](https://support.microsoft.com/help/4497934/windows-10-update-kb4497934). Later versions of Windows 10 automatically include this patch.
@@ -166,7 +165,7 @@ The IT administrator assigns Windows 10 Enterprise to a user. See the following 
 
 When a licensed user signs in to a device that meets requirements using their Azure AD credentials, the operating system steps up from Windows 10 Pro to Windows 10 Enterprise (or Windows 10 Pro Education to Windows 10 Education) and all the appropriate Windows 10 Enterprise/Education features are unlocked. When a user’s subscription expires or is transferred to another user, the device reverts seamlessly to Windows 10 Pro / Windows 10 Pro Education edition, once current subscription validity expires.
 
-Devices running Windows 10 Pro, version 1703 or Windows 10 Pro Education, version 1903 or later can get Windows 10 Enterprise or Education Semi-Annual Channel on up to five devices for each user covered by the license. This benefit does not include Long Term Servicing Channel.
+Devices running Windows 10 Pro Education, version 1903 or later can get Windows 10 Enterprise or Education General Availability Channel on up to five devices for each user covered by the license. This benefit does not include Long Term Servicing Channel.
 
 The following figures summarize how the Subscription Activation model works:
 
@@ -190,19 +189,7 @@ You are using Windows 10, version 1803 or above, and just purchased Windows 10 E
 
 All of your Windows 10 Pro devices will step-up to Windows 10 Enterprise, and devices that are already running Windows 10 Enterprise will migrate from KMS or MAK activated Enterprise edition to Subscription activated Enterprise edition when a Subscription Activation-enabled user signs in to the device.
 
-#### Scenario #2 
-
-You are using Windows 10, version 1607, 1703, or 1709 with KMS for activation, and just purchased Windows 10 Enterprise E3 or E5 subscriptions (or have had an E3 or E5 subscription for a while but haven’t yet deployed Windows 10 Enterprise).
-
-To change all of your Windows 10 Pro devices to Windows 10 Enterprise, run the following command on each computer:
-
-```console
-cscript.exe c:\windows\system32\slmgr.vbs /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
-```
-
-The command causes the OS to change to Windows 10 Enterprise and then seek out the KMS server to reactivate.  This key comes from [Appendix A: KMS Client Setup Keys](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj612867(v=ws.11)) in the Volume Activation guide.  It is also possible to inject the Windows 10 Pro key from this article if you wish to step back down from Enterprise to Pro.
-
-#### Scenario #3
+#### Scenario #2
 
 Using Azure AD-joined devices or Active Directory-joined devices running Windows 10 1709 or later, and with Azure AD synchronization configured, just follow the steps in [Deploy Windows 10 Enterprise licenses](deploy-enterprise-licenses.md) to acquire a $0 SKU and get a new Windows 10 Enterprise E3 or E5 license in Azure AD. Then, assign that license to all of your Azure AD users. These can be AD-synced accounts.  The device will automatically change from Windows 10 Pro to Windows 10 Enterprise when that user signs in.
 
@@ -228,26 +215,6 @@ If you are running Windows 10, version 1803 or later, Subscription Activation wi
 
 > [!CAUTION]
 > Firmware-embedded Windows 10 activation happens automatically only when we go through OOBE (Out Of Box Experience).
-
-If you are using Windows 10, version 1607, 1703, or 1709 and have already deployed Windows 10 Enterprise, but you want to move away from depending on KMS servers and MAK keys for Windows client machines, you can seamlessly transition as long as the computer has been activated with a firmware-embedded Windows 10 Pro product key.
-
-If the computer has never been activated with a Pro key, run the following script. Copy the text below into a .cmd file and run the file from an elevated command prompt:
-
-```console
-@echo off
-FOR /F "skip=1" %%A IN ('wmic path SoftwareLicensingService get OA3xOriginalProductKey') DO  (
-SET "ProductKey=%%A"
-goto InstallKey
-)
-
-:InstallKey
-IF [%ProductKey%]==[] (
-echo No key present
-) ELSE (
-echo Installing %ProductKey%
-changepk.exe /ProductKey %ProductKey%
-)
-```
 
 ### Obtaining an Azure AD license
 
