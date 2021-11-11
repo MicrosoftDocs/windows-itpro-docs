@@ -24,7 +24,7 @@ Use Start settings to apply a customized Start screen to devices.
 | StartLayout | ✔️  | |  |  |
 
 >[!IMPORTANT]
->The StartLayout setting is available in the advanced provisioning for Windows 10 Windows client, but shouldn't be used. For Windows client, use [Policies > StartLayout](wcd-policies.md#start).
+>The StartLayout setting is available in the advanced provisioning for Windows 10, but shouldn't be used. For Windows client, use [Policies > StartLayout](wcd-policies.md#start).
 
 ## StartLayout
 
