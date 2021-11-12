@@ -1,9 +1,9 @@
 ---
-title: Use Orchestrator runbooks with MDT (Windows 11)
+title: Use Orchestrator runbooks with MDT (Windows 10)
 description: Learn how to integrate Microsoft System Center 2012 R2 Orchestrator with MDT to replace the existing web services that are used in deployment solutions.
 ms.assetid: 68302780-1f6f-4a9c-9407-b14371fdce3f
 ms.reviewer: 
-manager: dougeby
+manager: laurawi
 ms.author: greglin
 keywords: web services, database
 ms.prod: w10
@@ -17,10 +17,6 @@ ms.topic: article
 ---
 
 # Use Orchestrator runbooks with MDT
-
-**Applies to**
-- Windows 10
-- Windows 11
 
 This topic will show you how to integrate Microsoft System Center 2012 R2 Orchestrator with MDT to replace the existing web services that are used in deployment solutions.
 MDT can integrate with System Center 2012 R2 Orchestrator, which is a component that ties the Microsoft System Center products together, as well as other products from both Microsoft and third-party vendors. The difference between using Orchestrator and "normal" web services, is that with Orchestrator you have a rich drag-and-drop style interface when building the solution, and little or no coding is required.
