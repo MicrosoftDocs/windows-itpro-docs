@@ -52,7 +52,6 @@ Microsoft Edge kiosk mode offers two lockdown experiences of the browser so orga
 
 ### Windows Hello
 
-- Windows Hello for Business introduces a new deployment method called cloud trust to support simplified passwordless deployments and achieve a deploy-to-run state within a few minutes.
 - Windows Hello is now supported as Fast Identity Online 2 (FIDO2) authenticator across all major browsers including Chrome and Firefox.
 - You can now enable passwordless sign-in for Microsoft accounts on your Windows 10 device by going to **Settings > Accounts > Sign-in options**, and selecting **On** under **Make your device passwordless**. Enabling passwordless sign in will switch all Microsoft accounts on your Windows 10 device to modern authentication with Windows Hello Face, Fingerprint, or PIN.
 - Windows Hello PIN sign-in support is [added to Safe mode](/windows-insider/archive/new-in-20H1#windows-hello-pin-in-safe-mode-build-18995).
@@ -114,6 +113,8 @@ Application Guard performance is improved with optimized document opening times:
 [Edge support for Microsoft Defender Application Guard](/deployedge/microsoft-edge-security-windows-defender-application-guard) has been available for Chromium-based Edge since early 2020.
 
 Microsoft Defender Application Guard now supports Office: With [Microsoft Defender Application Guard for Office](/microsoft-365/security/office-365-security/install-app-guard), you can launch untrusted Office documents (from outside the Enterprise) in an isolated container to prevent potentially malicious content from compromising your device.
+
+#### Windows Defender Application Control
 
 - [Application Control for Windows](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control): In Windows 10, version 1903 WDAC added a number of new features that light up key scenarios and provide feature parity with AppLocker.
     - [Multiple Policies](/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies): WDAC now supports multiple simultaneous code integrity policies for one device in order to enable the following scenarios: 1) enforce and audit side-by-side, 2) simpler targeting for policies with different scope/intent, 3) expanding a policy using a new ‘supplemental’ policy.
