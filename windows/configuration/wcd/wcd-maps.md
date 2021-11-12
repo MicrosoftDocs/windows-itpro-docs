@@ -18,11 +18,11 @@ Use for settings related to Maps.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ChinaVariantWin10](#chinavariantwin10) | ✔️  | ✔️ | ✔️ |  |  |
-| [UseExternalStorage](#useexternalstorage) | ✔️  | ✔️ | ✔️ |  |  |
-| [UseSmallerCache](#usesmallercache) | ✔️  | ✔️ | ✔️ |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ChinaVariantWin10](#chinavariantwin10) | ✔️  | ✔️ |  |  |
+| [UseExternalStorage](#useexternalstorage) | ✔️  | ✔️ |  |  |
+| [UseSmallerCache](#usesmallercache) | ✔️  | ✔️ |  |  |
 
 
 ## ChinaVariantWin10

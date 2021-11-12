@@ -18,7 +18,8 @@ ms.date: 11/19/2019
 The AppLocker configuration service provider is used to specify which applications are allowed or disallowed. There is no user interface shown for apps that are blocked.
 
 The following shows the AppLocker configuration service provider in tree format.
-```
+
+```console
 ./Vendor/MSFT
 AppLocker
 ----ApplicationLaunchRestrictions
@@ -258,54 +259,29 @@ Data type is string.
 
 Supported operations are Get, Add, Delete, and Replace.
 
-6.  On your phone under **Device discovery**, tap **Pair**. You will get a code (case sensitive).
-7.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
+1.  On your phone under **Device discovery**, tap **Pair**. You will get a code (case sensitive).
+2.  On the browser on the **Set up access page**, enter the code (case sensitive) into the text box and click **Submit**.
 
     The **Device Portal** page opens on your browser.
 
     ![device portal screenshot.](images/applocker-screenshot1.png)
 
-8.  On the desktop **Device Portal** page, click **Apps** to open the **App Manager**.
-9.  On the **App Manager** page under **Running apps**, you will see the **Publisher** and **PackageFullName** of apps.
+3.  On the desktop **Device Portal** page, click **Apps** to open the **App Manager**.
+4.  On the **App Manager** page under **Running apps**, you will see the **Publisher** and **PackageFullName** of apps.
 
     ![device portal app manager.](images/applocker-screenshot3.png)
 
-10. If you do not see the app that you want, look under **Installed apps**. Using the drop- down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
+5. If you do not see the app that you want, look under **Installed apps**. Using the drop- down menu, click on the application and you get the Version, Publisher, and PackageFullName displayed.
 
     ![app manager.](images/applocker-screenshot2.png)
 
 The following table shows the mapping of information to the AppLocker publisher rule field.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Device portal data</th>
-<th>AppLocker publisher rule field</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>PackageFullName</p></td>
-<td><p>ProductName</p>
-<p>The product name is first part of the PackageFullName followed by the version number. In the Windows Camera example, the ProductName is Microsoft.WindowsCamera.</p></td>
-</tr>
-<tr class="even">
-<td><p>Publisher</p></td>
-<td><p>Publisher</p></td>
-</tr>
-<tr class="odd">
-<td><p>Version</p></td>
-<td><p>Version</p>
-<p>This can be used either in the HighSection or LowSection of the BinaryVersionRange.</p>
-<p>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version- independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.</p></td>
-</tr>
-</tbody>
-</table>
-
+|Device portal data|AppLocker publisher rule field|
+|--- |--- |
+|PackageFullName|ProductName<br><br> The product name is first part of the PackageFullName followed by the version number. In the Windows Camera example, the ProductName is Microsoft.WindowsCamera.|
+|Publisher|Publisher|
+|Version|Version<br> <br>This can be used either in the HighSection or LowSection of the BinaryVersionRange.<br> <br>HighSection defines the highest version number and LowSection defines the lowest version number that should be trusted. You can use a wildcard for both versions to make a version- independent rule. Using a wildcard for one of the values will provide higher than or lower than a specific version semantics.|
 
 Here is an example AppLocker publisher rule:
 
@@ -325,21 +301,11 @@ You can get the publisher name and product name of apps using a web API.
 
 3.  In your browser, run the Store for Business portal web API, to return a JavaScript Object Notation (JSON) file that includes the publisher and product name values.
 
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Request URI</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td><p><code>https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata</code></p></td>
-    </tr>
-    </tbody>
-    </table>
+Request URI:
+
+```http
+https://bspmts.mp.microsoft.com/v1/public/catalog/Retail/Products/{app ID}/applockerdata
+```
 
 Here is the example for Microsoft OneNote:
 
@@ -360,35 +326,11 @@ Result
 }
 ```
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Result data</th>
-<th>AppLocker publisher rule field</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>packageIdentityName</p></td>
-<td><p>ProductName</p></td>
-</tr>
-<tr class="even">
-<td><p>publisherCertificateName</p></td>
-<td><p>Publisher</p></td>
-</tr>
-<tr class="odd">
-<td><p>windowsPhoneLegacyId</p></td>
-<td><p>Same value maps to the ProductName and Publisher name</p>
-<p>This value will only be present if there is a XAP package associated with the app in the Store.</p>
-<p>If this value is populated then the simple thing to do to cover both the AppX and XAP package would be to create two rules for the app. One rule for AppX using the packageIdentityName and publisherCertificateName value and another one using the windowsPhoneLegacyId value.</p></td>
-</tr>
-</tbody>
-</table>
-
+|Result data|AppLocker publisher rule field|
+|--- |--- |
+|packageIdentityName|ProductName|
+|publisherCertificateName|Publisher|
+|windowsPhoneLegacyId|Same value maps to the ProductName and Publisher name. <br> <br> This value will only be present if there is a XAP package associated with the app in the Store. <br> <br>If this value is populated then the simple thing to do to cover both the AppX and XAP package would be to create two rules for the app. One rule for AppX using the packageIdentityName and publisherCertificateName value and another one using the windowsPhoneLegacyId value.|
 
 
 ## <a href="" id="settingssplashapps"></a>Settings apps that rely on splash apps
@@ -428,464 +370,96 @@ The following list shows the apps that may be included in the inbox.
 
 
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>App</th>
-<th>Product ID</th>
-<th>Product name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="even">
-<td>3D Viewer</td>
-<td>f41647c9-d567-4378-b2ab-7924e5a152f3</td>
-<td>Microsoft.Microsoft3DViewer <p>(Added in Windows 10, version 1703)</p></td>
-</tr>
-<tr class="odd">
-<td>Advanced info</td>
-<td>b6e3e590-9fa5-40c0-86ac-ef475de98e88</td>
-<td>b6e3e590-9fa5-40c0-86ac-ef475de98e88</td>
-</tr>
-<tr class="even">
-<td>Age out worker</td>
-<td>09296e27-c9f3-4ab9-aa76-ecc4497d94bb</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Alarms and clock</td>
-<td>44f7d2b4-553d-4bec-a8b7-634ce897ed5f</td>
-<td>Microsoft.WindowsAlarms</td>
-</tr>
-<tr class="even">
-<td>App downloads</td>
-<td>20bf77a0-19c7-4daa-8db5-bc3dfdfa44ac</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Assigned access lock app</td>
-<td>b84f4722-313e-4f85-8f41-cf5417c9c5cb</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Bing lock images</td>
-<td>5f28c179-2780-41df-b966-27807b8de02c</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Block and filter</td>
-<td>59553c14-5701-49a2-9909-264d034deb3d</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Broker plug-in (same as Work or school account)</td>
-<td></td>
-<td>Microsoft.AAD.BrokerPlugin</td>
-</tr>
-<tr class="even">
-<td>Calculator</td>
-<td>b58171c6-c70c-4266-a2e8-8f9c994f4456</td>
-<td>Microsoft.WindowsCalculator</td>
-</tr>
-<tr class="odd">
-<td>Camera</td>
-<td>f0d8fefd-31cd-43a1-a45a-d0276db069f1</td>
-<td>Microsoft.WindowsCamera</td>
-</tr>
-<tr class="even">
-<td>CertInstaller</td>
-<td>4c4ad968-7100-49de-8cd1-402e198d869e</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Color profile</td>
-<td>b08997ca-60ab-4dce-b088-f92e9c7994f3</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Connect</td>
-<td>af7d2801-56c0-4eb1-824b-dd91cdf7ece5</td>
-<td>Microsoft.DevicesFlow</td>
-</tr>
-<tr class="odd">
-<td>Contact Support</td>
-<td>0db5fcff-4544-458a-b320-e352dfd9ca2b</td>
-<td>Windows.ContactSupport</td>
-</tr>
-<tr class="even">
-<td>Cortana</td>
-<td>fd68dcf4-166f-4c55-a4ca-348020f71b94</td>
-<td>Microsoft.Windows.Cortana</td>
-</tr>
-<tr class="odd">
-<td>Cortana Listen UI</td>
-<td></td>
-<td>CortanaListenUI</td>
-</tr>
-<tr class="odd">
-<td>Credentials Dialog Host</td>
-<td></td>
-<td>Microsoft.CredDialogHost</td>
-</tr>
-<tr class="odd">
-<td>Device Portal PIN UX</td>
-<td></td>
-<td>holopairingapp</td>
-</tr>
-<tr class="odd">
-<td>Email and accounts</td>
-<td>39cf127b-8c67-c149-539a-c02271d07060</td>
-<td>Microsoft.AccountsControl</td>
-</tr>
-<tr class="even">
-<td>Enterprise installs app</td>
-<td>da52fa01-ac0f-479d-957f-bfe4595941cb</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Equalizer</td>
-<td>373cb76e-7f6c-45aa-8633-b00e85c73261</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Excel</td>
-<td>ead3e7c0-fae6-4603-8699-6a448138f4dc</td>
-<td>Microsoft.Office.Excel</td>
-</tr>
-<tr class="odd">
-<td>Facebook</td>
-<td>82a23635-5bd9-df11-a844-00237de2db9e</td>
-<td>Microsoft.MSFacebook</td>
-</tr>
-<tr class="even">
-<td>Field Medic</td>
-<td>73c58570-d5a7-46f8-b1b2-2a90024fc29c</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>File Explorer</td>
-<td>c5e2524a-ea46-4f67-841f-6a9465d9d515</td>
-<td>c5e2524a-ea46-4f67-841f-6a9465d9d515</td>
-</tr>
-<tr class="even">
-<td>FM Radio</td>
-<td>f725010e-455d-4c09-ac48-bcdef0d4b626</td>
-<td>f725010e-455d-4c09-ac48-bcdef0d4b626</td>
-</tr>
-<tr class="odd">
-<td>Get Started</td>
-<td>b3726308-3d74-4a14-a84c-867c8c735c3c</td>
-<td>Microsoft.Getstarted</td>
-</tr>
-<tr class="even">
-<td>Glance</td>
-<td>106e0a97-8b19-42cf-8879-a8ed2598fcbb</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Groove Music</td>
-<td>d2b6a184-da39-4c9a-9e0a-8b589b03dec0</td>
-<td>Microsoft.ZuneMusic</td>
-</tr>
-<tr class="even">
-<td>Hands-Free Activation</td>
-<td>df6c9621-e873-4e86-bb56-93e9f21b1d6f</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Hands-Free Activation</td>
-<td>72803bd5-4f36-41a4-a349-e83e027c4722</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>HAP update background worker</td>
-<td>73c73cdd-4dea-462c-bd83-fa983056a4ef</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Holographic Shell</td>
-<td></td>
-<td>HoloShell</td>
-</tr>
-<tr class="odd">
-<td>Lumia motion data</td>
-<td>8fc25fd2-4e2e-4873-be44-20e57f6ec52b</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Maps</td>
-<td>ed27a07e-af57-416b-bc0c-2596b622ef7d</td>
-<td>Microsoft.WindowsMaps</td>
-</tr>
-<tr class="odd">
-<td>Messaging</td>
-<td>27e26f40-e031-48a6-b130-d1f20388991a</td>
-<td>Microsoft.Messaging</td>
-</tr>
-<tr class="even">
-<td>Microsoft account</td>
-<td>3a4fae89-7b7e-44b4-867b-f7e2772b8253</td>
-<td>Microsoft.CloudExperienceHost</td>
-</tr>
-<tr class="odd">
-<td>Microsoft Edge</td>
-<td>395589fb-5884-4709-b9df-f7d558663ffd</td>
-<td>Microsoft.MicrosoftEdge</td>
-</tr>
-<tr class="even">
-<td>Microsoft Frameworks</td>
-<td>ProductID = 00000000-0000-0000-0000-000000000000
-<p>PublisherName=&quot;CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US&quot;</p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Migration UI</td>
-<td></td>
-<td>MigrationUIApp</td>
-</tr>
-<tr class="odd">
-<td>MiracastView</td>
-<td>906beeda-b7e6-4ddc-ba8d-ad5031223ef9</td>
-<td>906beeda-b7e6-4ddc-ba8d-ad5031223ef9</td>
-</tr>
-<tr>
-<td>Mixed Reality Portal</td>
-<td></td>
-<td>Microsoft.Windows.HolographicFirstRun</td>
-<tr class="even">
-<td>Money</td>
-<td>1e0440f1-7abf-4b9a-863d-177970eefb5e</td>
-<td>Microsoft.BingFinance</td>
-</tr>
-<tr class="odd">
-<td>Movies and TV</td>
-<td>6affe59e-0467-4701-851f-7ac026e21665</td>
-<td>Microsoft.ZuneVideo</td>
-</tr>
-<tr class="even">
-<td>Music downloads</td>
-<td>3da8a0c1-f7e5-47c0-a680-be8fd013f747</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Navigation bar</td>
-<td>2cd23676-8f68-4d07-8dd2-e693d4b01279</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Network services</td>
-<td>62f172d1-f552-4749-871c-2afd1c95c245</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>News</td>
-<td>9c3e8cad-6702-4842-8f61-b8b33cc9caf1</td>
-<td>Microsoft.BingNews</td>
-</tr>
-<tr class="even">
-<td>OneDrive</td>
-<td>ad543082-80ec-45bb-aa02-ffe7f4182ba8</td>
-<td>Microsoft.MicrosoftSkydrive</td>
-</tr>
-<tr class="odd">
-<td>OneNote</td>
-<td>ca05b3ab-f157-450c-8c49-a1f127f5e71d</td>
-<td>Microsoft.Office.OneNote</td>
-</tr>
-<tr class="even">
-<td>Outlook Calendar and Mail</td>
-<td>a558feba-85d7-4665-b5d8-a2ff9c19799b</td>
-<td>Microsoft.WindowsCommunicationsApps</td>
-</tr>
-<tr class="odd">
-<td>People</td>
-<td>60be1fb8-3291-4b21-bd39-2221ab166481</td>
-<td>Microsoft.People</td>
-</tr>
-<tr class="even">
-<td>Phone</td>
-<td>5b04b775-356b-4aa0-aaf8-6491ffea5611</td>
-<td>5b04b775-356b-4aa0-aaf8-6491ffea5611</td>
-</tr>
-<tr class="odd">
-<td>Phone (dialer)</td>
-<td>f41b5d0e-ee94-4f47-9cfe-3d3934c5a2c7</td>
-<td>Microsoft.CommsPhone</td>
-</tr>
-<tr class="even">
-<td>Phone reset dialog</td>
-<td>2864278d-09b5-46f7-b502-1c24139ecbdd</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Photos</td>
-<td>fca55e1b-b9a4-4289-882f-084ef4145005</td>
-<td>Microsoft.Windows.Photos</td>
-</tr>
-<tr class="even">
-<td>Podcasts</td>
-<td>c3215724-b279-4206-8c3e-61d1a9d63ed3</td>
-<td>Microsoft.MSPodcast</td>
-</tr>
-<tr class="odd">
-<td>Podcast downloads</td>
-<td>063773e7-f26f-4a92-81f0-aa71a1161e30</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>PowerPoint</td>
-<td>b50483c4-8046-4e1b-81ba-590b24935798</td>
-<td>Microsoft.Office.PowerPoint</td>
-</tr>
-<tr class="odd">
-<td>PrintDialog</td>
-<td>0d32eeb1-32f0-40da-8558-cea6fcbec4a4</td>
-<td>Microsoft.PrintDialog</td>
-</tr>
-<tr class="even">
-<td>Purchase dialog</td>
-<td>c60e79ca-063b-4e5d-9177-1309357b2c3f</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Rate your device</td>
-<td>aec3bfad-e38c-4994-9c32-50bd030730ec</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>RingtoneApp.WindowsPhone</td>
-<td>3e962450-486b-406b-abb5-d38b4ee7e6fe</td>
-<td>Microsoft.Tonepicker</td>
-</tr>
-<tr class="odd">
-<td>Save ringtone</td>
-<td>d8cf8ec7-ec6d-4892-aab9-1e3a4b5fa24b</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Settings</td>
-<td>2a4e62d8-8809-4787-89f8-69d0f01654fb</td>
-<td>2a4e62d8-8809-4787-89f8-69d0f01654fb</td>
-</tr>
-<tr class="odd">
-<td>Settings</td>
-<td></td>
-<td>SystemSettings</td>
-</tr>
-<tr class="odd">
-<td>Setup wizard</td>
-<td>07d87655-e4f0-474b-895a-773790ad4a32</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Sharing</td>
-<td>b0894dfd-4671-4bb9-bc17-a8b39947ffb6</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Sign in for Windows 10 Holographic</td>
-<td></td>
-<td>WebAuthBridgeInternetSso, WebAuthBridgeInternet, WebAuthBridgeIntranetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternet, WebAuthBrokerIntranetSso, SignIn</td>
-</tr>
-<tr class="odd">
-<td>Skype</td>
-<td>c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51</td>
-<td>Microsoft.SkypeApp</td>
-</tr>
-<tr class="even">
-<td>Skype Video</td>
-<td>27e26f40-e031-48a6-b130-d1f20388991a</td>
-<td>Microsoft.Messaging</td>
-</tr>
-<tr class="odd">
-<td>Sports</td>
-<td>0f4c8c7e-7114-4e1e-a84c-50664db13b17</td>
-<td>Microsoft.BingSports</td>
-</tr>
-<tr class="even">
-<td>SSMHost</td>
-<td>e232aa77-2b6d-442c-b0c3-f3bb9788af2a</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Start</td>
-<td>5b04b775-356b-4aa0-aaf8-6491ffea5602</td>
-<td>5b04b775-356b-4aa0-aaf8-6491ffea5602</td>
-</tr>
-<tr class="even">
-<td>Storage</td>
-<td>5b04b775-356b-4aa0-aaf8-6491ffea564d</td>
-<td>5b04b775-356b-4aa0-aaf8-6491ffea564d</td>
-</tr>
-<tr class="odd">
-<td>Store</td>
-<td>7d47d89a-7900-47c5-93f2-46eb6d94c159</td>
-<td>Microsoft.WindowsStore</td>
-</tr>
-<tr class="even">
-<td>Touch (gestures and touch)</td>
-<td>bbc57c87-46af-4c2c-824e-ac8104cceb38</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Voice recorder</td>
-<td>7311b9c5-a4e9-4c74-bc3c-55b06ba95ad0</td>
-<td>Microsoft.WindowsSoundRecorder</td>
-</tr>
-<tr class="even">
-<td>Wallet</td>
-<td>587a4577-7868-4745-a29e-f996203f1462</td>
-<td>Microsoft.MicrosoftWallet</td>
-</tr>
-<tr class="even">
-<td>Wallet</td>
-<td>12ae577e-f8d1-4197-a207-4d24c309ff8f</td>
-<td>Microsoft.Wallet</td>
-</tr>
-<tr class="odd">
-<td>Weather</td>
-<td>63c2a117-8604-44e7-8cef-df10be3a57c8</td>
-<td>Microsoft.BingWeather</td>
-</tr>
-<tr class="even">
-<td>Windows default lock screen</td>
-<td>cdd63e31-9307-4ccb-ab62-1ffa5721b503</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Windows Feedback</td>
-<td>7604089d-d13f-4a2d-9998-33fc02b63ce3</td>
-<td>Microsoft.WindowsFeedback</td>
-</tr>
-<tr class="even">
-<td>Word</td>
-<td>258f115c-48f4-4adb-9a68-1387e634459b</td>
-<td>Microsoft.Office.Word</td>
-</tr>
-<tr class="odd">
-<td>Work or school account</td>
-<td>e5f8b2c4-75ae-45ee-9be8-212e34f77747</td>
-<td>Microsoft.AAD.BrokerPlugin</td>
-</tr>
-<tr class="even">
-<td>Xbox</td>
-<td>b806836f-eebe-41c9-8669-19e243b81b83</td>
-<td>Microsoft.XboxApp</td>
-</tr>
-<tr class="odd">
-<td>Xbox identity provider</td>
-<td>ba88225b-059a-45a2-a8eb-d3580283e49d</td>
-<td>Microsoft.XboxIdentityProvider</td>
-</tr>
-</tbody>
-</table>
-
-
+|App|Product ID|Product name|
+|--- |--- |--- |
+|3D Viewer|f41647c9-d567-4378-b2ab-7924e5a152f3|Microsoft.Microsoft3DViewer (Added in Windows 10, version 1703)|
+|Advanced info|b6e3e590-9fa5-40c0-86ac-ef475de98e88|b6e3e590-9fa5-40c0-86ac-ef475de98e88|
+|Age out worker|09296e27-c9f3-4ab9-aa76-ecc4497d94bb||
+|Alarms and clock|44f7d2b4-553d-4bec-a8b7-634ce897ed5f|Microsoft.WindowsAlarms|
+|App downloads|20bf77a0-19c7-4daa-8db5-bc3dfdfa44ac||
+|Assigned access lock app|b84f4722-313e-4f85-8f41-cf5417c9c5cb||
+|Bing lock images|5f28c179-2780-41df-b966-27807b8de02c||
+|Block and filter|59553c14-5701-49a2-9909-264d034deb3d||
+|Broker plug-in (same as Work or school account)||Microsoft.AAD.BrokerPlugin|
+|Calculator|b58171c6-c70c-4266-a2e8-8f9c994f4456|Microsoft.WindowsCalculator|
+|Camera|f0d8fefd-31cd-43a1-a45a-d0276db069f1|Microsoft.WindowsCamera|
+|CertInstaller|4c4ad968-7100-49de-8cd1-402e198d869e||
+|Color profile|b08997ca-60ab-4dce-b088-f92e9c7994f3||
+|Connect|af7d2801-56c0-4eb1-824b-dd91cdf7ece5|Microsoft.DevicesFlow|
+|Contact Support|0db5fcff-4544-458a-b320-e352dfd9ca2b|Windows.ContactSupport|
+|Cortana|fd68dcf4-166f-4c55-a4ca-348020f71b94|Microsoft.Windows.Cortana|
+|Cortana Listen UI||CortanaListenUI|
+|Credentials Dialog Host||Microsoft.CredDialogHost|
+|Device Portal PIN UX||holopairingapp|
+|Email and accounts|39cf127b-8c67-c149-539a-c02271d07060|Microsoft.AccountsControl|
+|Enterprise installs app|da52fa01-ac0f-479d-957f-bfe4595941cb||
+|Equalizer|373cb76e-7f6c-45aa-8633-b00e85c73261||
+|Excel|ead3e7c0-fae6-4603-8699-6a448138f4dc|Microsoft.Office.Excel|
+|Facebook|82a23635-5bd9-df11-a844-00237de2db9e|Microsoft.MSFacebook|
+|Field Medic|73c58570-d5a7-46f8-b1b2-2a90024fc29c||
+|File Explorer|c5e2524a-ea46-4f67-841f-6a9465d9d515|c5e2524a-ea46-4f67-841f-6a9465d9d515|
+|FM Radio|f725010e-455d-4c09-ac48-bcdef0d4b626|f725010e-455d-4c09-ac48-bcdef0d4b626|
+|Get Started|b3726308-3d74-4a14-a84c-867c8c735c3c|Microsoft.Getstarted|
+|Glance|106e0a97-8b19-42cf-8879-a8ed2598fcbb||
+|Groove Music|d2b6a184-da39-4c9a-9e0a-8b589b03dec0|Microsoft.ZuneMusic|
+|Hands-Free Activation|df6c9621-e873-4e86-bb56-93e9f21b1d6f||
+|Hands-Free Activation|72803bd5-4f36-41a4-a349-e83e027c4722||
+|HAP update background worker|73c73cdd-4dea-462c-bd83-fa983056a4ef||
+|Holographic Shell||HoloShell|
+|Lumia motion data|8fc25fd2-4e2e-4873-be44-20e57f6ec52b||
+|Maps|ed27a07e-af57-416b-bc0c-2596b622ef7d|Microsoft.WindowsMaps|
+|Messaging|27e26f40-e031-48a6-b130-d1f20388991a|Microsoft.Messaging|
+|Microsoft account|3a4fae89-7b7e-44b4-867b-f7e2772b8253|Microsoft.CloudExperienceHost|
+|Microsoft Edge|395589fb-5884-4709-b9df-f7d558663ffd|Microsoft.MicrosoftEdge|
+|Microsoft Frameworks|ProductID = 00000000-0000-0000-0000-000000000000 PublisherName="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"||
+|Migration UI||MigrationUIApp|
+|MiracastView|906beeda-b7e6-4ddc-ba8d-ad5031223ef9|906beeda-b7e6-4ddc-ba8d-ad5031223ef9|
+|Mixed Reality Portal||Microsoft.Windows.HolographicFirstRun|
+|Money|1e0440f1-7abf-4b9a-863d-177970eefb5e|Microsoft.BingFinance|
+|Movies and TV|6affe59e-0467-4701-851f-7ac026e21665|Microsoft.ZuneVideo|
+|Music downloads|3da8a0c1-f7e5-47c0-a680-be8fd013f747||
+|Navigation bar|2cd23676-8f68-4d07-8dd2-e693d4b01279||
+|Network services|62f172d1-f552-4749-871c-2afd1c95c245||
+|News|9c3e8cad-6702-4842-8f61-b8b33cc9caf1|Microsoft.BingNews|
+|OneDrive|ad543082-80ec-45bb-aa02-ffe7f4182ba8|Microsoft.MicrosoftSkydrive|
+|OneNote|ca05b3ab-f157-450c-8c49-a1f127f5e71d|Microsoft.Office.OneNote|
+|Outlook Calendar and Mail|a558feba-85d7-4665-b5d8-a2ff9c19799b|Microsoft.WindowsCommunicationsApps|
+|People|60be1fb8-3291-4b21-bd39-2221ab166481|Microsoft.People|
+|Phone|5b04b775-356b-4aa0-aaf8-6491ffea5611|5b04b775-356b-4aa0-aaf8-6491ffea5611|
+|Phone (dialer)|f41b5d0e-ee94-4f47-9cfe-3d3934c5a2c7|Microsoft.CommsPhone|
+|Phone reset dialog|2864278d-09b5-46f7-b502-1c24139ecbdd||
+|Photos|fca55e1b-b9a4-4289-882f-084ef4145005|Microsoft.Windows.Photos|
+|Podcasts|c3215724-b279-4206-8c3e-61d1a9d63ed3|Microsoft.MSPodcast|
+|Podcast downloads|063773e7-f26f-4a92-81f0-aa71a1161e30||
+|PowerPoint|b50483c4-8046-4e1b-81ba-590b24935798|Microsoft.Office.PowerPoint|
+|PrintDialog|0d32eeb1-32f0-40da-8558-cea6fcbec4a4|Microsoft.PrintDialog|
+|Purchase dialog|c60e79ca-063b-4e5d-9177-1309357b2c3f||
+|Rate your device|aec3bfad-e38c-4994-9c32-50bd030730ec||
+|RingtoneApp.WindowsPhone|3e962450-486b-406b-abb5-d38b4ee7e6fe|Microsoft.Tonepicker|
+|Save ringtone|d8cf8ec7-ec6d-4892-aab9-1e3a4b5fa24b||
+|Settings|2a4e62d8-8809-4787-89f8-69d0f01654fb|2a4e62d8-8809-4787-89f8-69d0f01654fb|
+|Settings||SystemSettings|
+|Setup wizard|07d87655-e4f0-474b-895a-773790ad4a32||
+|Sharing|b0894dfd-4671-4bb9-bc17-a8b39947ffb6||
+|Sign in for Windows 10 Holographic||WebAuthBridgeInternetSso, WebAuthBridgeInternet, WebAuthBridgeIntranetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternetSso, WebAuthBrokerInternet, WebAuthBrokerIntranetSso, SignIn|
+|Skype|c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51|Microsoft.SkypeApp|
+|Skype Video|27e26f40-e031-48a6-b130-d1f20388991a|Microsoft.Messaging|
+|Sports|0f4c8c7e-7114-4e1e-a84c-50664db13b17|Microsoft.BingSports|
+|SSMHost|e232aa77-2b6d-442c-b0c3-f3bb9788af2a||
+|Start|5b04b775-356b-4aa0-aaf8-6491ffea5602|5b04b775-356b-4aa0-aaf8-6491ffea5602|
+|Storage|5b04b775-356b-4aa0-aaf8-6491ffea564d|5b04b775-356b-4aa0-aaf8-6491ffea564d|
+|Store|7d47d89a-7900-47c5-93f2-46eb6d94c159|Microsoft.WindowsStore|
+|Touch (gestures and touch)|bbc57c87-46af-4c2c-824e-ac8104cceb38||
+|Voice recorder|7311b9c5-a4e9-4c74-bc3c-55b06ba95ad0|Microsoft.WindowsSoundRecorder|
+|Wallet|587a4577-7868-4745-a29e-f996203f1462|Microsoft.MicrosoftWallet|
+|Wallet|12ae577e-f8d1-4197-a207-4d24c309ff8f|Microsoft.Wallet|
+|Weather|63c2a117-8604-44e7-8cef-df10be3a57c8|Microsoft.BingWeather|
+|Windows default lock screen|cdd63e31-9307-4ccb-ab62-1ffa5721b503||
+|Windows Feedback|7604089d-d13f-4a2d-9998-33fc02b63ce3|Microsoft.WindowsFeedback|
+|Word|258f115c-48f4-4adb-9a68-1387e634459b|Microsoft.Office.Word|
+|Work or school account|e5f8b2c4-75ae-45ee-9be8-212e34f77747|Microsoft.AAD.BrokerPlugin|
+|Xbox|b806836f-eebe-41c9-8669-19e243b81b83|Microsoft.XboxApp|
+|Xbox identity provider|ba88225b-059a-45a2-a8eb-d3580283e49d|Microsoft.XboxIdentityProvider|
 
 ## <a href="" id="allow-list-examples"></a>Allowlist examples
 

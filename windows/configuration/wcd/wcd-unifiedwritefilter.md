@@ -40,9 +40,9 @@ The overlay doesn't mirror the entire volume. It dynamically grows to keep track
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | ✔️ |  |  |  |  ✔️ |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings | ✔️ |  |  |  ✔️ |
 
 ## FilterEnabled
 

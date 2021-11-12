@@ -30,32 +30,11 @@ CellularSettings
 <a href="" id="dataroam"></a>**DataRoam**  
 <p> Optional. Integer. Specifies the default roaming value. Valid values are:</p>
 
-<table><table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Setting</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>0</p></td>
-<td><p>Don’t roam</p></td>
-</tr>
-<tr class="even">
-<td><p>1</p></td>
-<td><p>Don’t roam (or Domestic roaming if applicable)</p></td>
-</tr>
-<tr class="odd">
-<td><p>2</p></td>
-<td><p>Roam</p></td>
-</tr>
-</tbody>
-</table>
+|Value|Setting|
+|--- |--- |
+|0|Don’t roam|
+|1|Don’t roam (or Domestic roaming if applicable)|
+|2|Roam|
 
  ## Related topics
 
