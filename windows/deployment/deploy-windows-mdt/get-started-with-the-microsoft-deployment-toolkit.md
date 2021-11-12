@@ -31,6 +31,9 @@ In addition to reducing deployment time and standardizing desktop and server ima
 
 MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with [Microsoft Endpoint Configuration Manager](/configmgr/).
 
+> [!IMPORTANT]
+> For more information about MDT supported platforms, see [MDT Release Notes](/mem/configmgr/mdt/release-notes#supported-platforms) and [MDT FAQ](/mem/configmgr/mdt/faq#is-this-release-only-supported-with-version--x--of-windows-client--windows-adk--or-configuration-manager-).
+
 ## Key features in MDT
 
 MDT has been in existence since 2003, when it was first introduced as Business Desktop Deployment (BDD) 1.0. The toolkit has evolved, both in functionality and popularity, and today it is considered fundamental to Windows operating system and enterprise application deployment.
