@@ -4,7 +4,7 @@ description: In this article, you will learn how to replace a Windows 7 device w
 ms.custom: seo-marvel-apr2020
 ms.assetid: acf091c9-f8f4-4131-9845-625691c09a2a
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, deployment, replace
 ms.prod: w10
