@@ -118,7 +118,7 @@ If you enable or do not configure this policy setting, users can access and run 
 
 If you disable this policy setting, users cannot access or run the troubleshooting tools from the Control Panel.
 
-Note that this setting also controls a user's ability to launch standalone troubleshooting packs such as those found in .diagcab files.
+>[!Note] This setting also controls a user's ability to launch standalone troubleshooting packs such as those found in .diagcab files.
 
 <!--/Description-->
 
