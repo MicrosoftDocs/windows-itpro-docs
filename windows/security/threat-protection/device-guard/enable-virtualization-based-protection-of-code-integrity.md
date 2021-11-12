@@ -81,7 +81,7 @@ Set the following registry keys to enable HVCI. This provides exactly the same s
 >
 > - All drivers on the system must be compatible with virtualization-based protection of code integrity; otherwise, your system may fail. We recommend that you enable these features on a group of test computers before you enable them on users' computers.
 
-#### For Windows 10 version 1607 and later, For Windows 11 21H2
+#### For Windows 10 version 1607 and later and for Windows 11 version 21H2
 
 Recommended settings (to enable virtualization-based protection of Code Integrity policies, without UEFI Lock):
 
