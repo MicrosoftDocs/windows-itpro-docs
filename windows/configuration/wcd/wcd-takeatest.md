@@ -19,13 +19,13 @@ Use TakeATest to configure the Take A Test app, a secure browser for test-taking
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | X |  |  |  |   |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings | ✔️ |  |  |   |
 
 ## AllowScreenMonitoring
 
-When set to True, students are able to record and take screen captures in the Take A Test app.
+When set to True, students can record and take screen captures in the Take A Test app.
 
 ## AllowTextSuggestions
 
@@ -43,9 +43,8 @@ When set to True, students can print in the Take A Test app.
 
 Enter the account to use when taking a test.
 
-To specify a domain account, enter **domain\user**. To specify an AAD account, enter <strong>username@tenant.com</strong>. To specify a local account, enter the username. 
+To specify a domain account, enter **domain\user**. To specify an Azure AD account, enter `username@tenant.com`. To specify a local account, enter the username.
 
-
-## Related topics
+## Related articles
 
 - [SecureAssessment configuration service provider (CSP)](/windows/client-management/mdm/secureassessment-csp)

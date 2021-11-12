@@ -1,6 +1,101 @@
 {
   "redirections": [
     {
+      "source_path": "windows/client-management/mdm/enable-offline-updates-for-windows-embedded-8-1-handheld-devices-to-windows-10.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-phone-8-1-end-of-support-faq-7f1ef0aa-0aaf-0747-3724-5c44456778a3",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/client-management/mdm/deviceinstanceservice-csp.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },   
+    {
+      "source_path": "windows/client-management/mdm/cm-proxyentries-csp.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },      
+    {
+      "source_path": "windows/client-management/mdm/bootstrap-csp.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },  
+    {
+      "source_path": "windows/configuration/wcd/wcd-textinput.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },  
+    {
+      "source_path": "windows/configuration/wcd/wcd-shell.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },  
+    {
+      "source_path": "windows/configuration/wcd/wcd-rcspresence.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },    
+    {
+      "source_path": "windows/configuration/wcd/wcd-otherassets.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },    
+    {
+      "source_path": "windows/configuration/wcd/wcd-nfc.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-multivariant.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-modemconfigurations.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-messaging.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-internetexplorer.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-initialsetup.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-deviceinfo.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-calling.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-callandmessagingenhancement.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-automatictime.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
+      "source_path": "windows/configuration/wcd/wcd-theme.md",
+      "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
+      "redirect_document_id": false  
+    },
+    {
       "source_path": "windows/configuration/wcd/wcd-embeddedlockdownprofiles.md",
       "redirect_url": "https://support.microsoft.com/windows/windows-10-mobile-end-of-support-faq-8c2dd1cf-a571-00f0-0881-bb83926d05c5",
       "redirect_document_id": false  

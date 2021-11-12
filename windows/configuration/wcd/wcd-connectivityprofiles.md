@@ -19,14 +19,14 @@ Use to configure profiles that a user will connect with, such as an email accoun
 
 ## Applies to
 
-| Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [Email](#email)  | X |  X  | X |  |  |
-| [Exchange](#exchange) | X |  X  | X |  |  |
-| [KnownAccounts](#knownaccounts) | X |  X  | X |  |  |
-| [VPN](#vpn) | X |  X  | X | X |  |
-| [WiFiSense](#wifisense) | X |  X  | X |  |  |
-| [WLAN](#wlan) | X |  X  | X | X |  |
+| Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [Email](#email)  | ✔️ |  ✔️ |  |  |
+| [Exchange](#exchange) | ✔️ |  ✔️ |  |  |
+| [KnownAccounts](#knownaccounts) | ✔️ |  ✔️ |  |  |
+| [VPN](#vpn) | ✔️ |  ✔️ | ✔️ |  |
+| [WiFiSense](#wifisense) | ✔️ | ✔️ |  |  |
+| [WLAN](#wlan) | ✔️ | ✔️ | ✔️ |  |
 
 ## Email
 
@@ -118,8 +118,8 @@ Configure settings to change the default maximum transmission unit ([MTU](#mtu))
 | --- | --- |
 | **ProfileType**  | Choose between **Native** and **Third Party**  |
 | AlwaysOn | Set to **True** to automatically connect the VPN at sign-in  |
-| ByPassForLocal | When set to **True**, requests to local resources on the same Wi-Fi neetwork as the VPN client can bypass VPN  |
-| DnsSuffix | Enter one or more comma-separated DNS suffixes. The first suffix listed is usedas the primary connection-specific DNS suffix for the VPN interface. The list is added to the SuffixSearchList.  |
+| ByPassForLocal | When set to **True**, requests to local resources on the same Wi-Fi network as the VPN client can bypass VPN  |
+| DnsSuffix | Enter one or more comma-separated DNS suffixes. The first suffix listed is used as the primary connection-specific DNS suffix for the VPN interface. The list is added to the SuffixSearchList.  |
 | LockDown | When set to **True**:</br>- Profile automatically becomes an "always on" profile</br>- VPN cannot be disconnected</br>-If the profile is not connected, the user has no network connectivity</br>- No other profiles can be connected or modified |
 | Proxy | Configure to **Automatic** or **Manual**  |
 | ProxyAutoConfigUrl  | When **Proxy** is set to **Automatic**, enter the URL to automatically retrieve the proxy settings |
@@ -135,7 +135,7 @@ AuthenticationUserMethod | When you set **NativeProtocolType** to **IKEv2**, cho
 EAPConfiguration | When you set **AuthenticationUserMethod** to **EAP**, enter the HTML-encoded XML to configure EAP. For more information, see [EAP configuration](/windows/client-management/mdm/eap-configuration).
 NativeProtocolType | Choose between **PPTP**, **L2TP**, **IKEv2**, and **Automatic**.
 RoutingPolicyType | Choose between **SplitTunnel**, in which traffic can go over any interface as determined by the networking stack, and **ForceTunnel**, in which all IP traffic must go over the VPN interface.
-Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the exteranl IP of a gateway or a virtual IP for a server farm.
+Server | Enter the public or routable IP address or DNS name for the VPN gateway. It can point to the external IP of a gateway or a virtual IP for a server farm.
 
 When **ProfileType** is set to **Third Party**, the following additional settings are available.
 

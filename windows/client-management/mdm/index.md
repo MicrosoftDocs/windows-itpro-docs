@@ -38,6 +38,7 @@ The MDM security baseline includes policies that cover the following areas:
 
 For more details about the MDM policies defined in the MDM security baseline and what Microsoft's recommended baseline policy values are, see:
 
+- [MDM Security baseline for Windows 11](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/Windows11-MDM-SecurityBaseLine-Document.zip)
 - [MDM Security baseline for Windows 10, version 2004](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/2004-MDM-SecurityBaseLine-Document.zip)
 - [MDM Security baseline for Windows 10, version 1909](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1909-MDM-SecurityBaseLine-Document.zip)
 - [MDM Security baseline for Windows 10, version 1903](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/1903-MDM-SecurityBaseLine-Document.zip)

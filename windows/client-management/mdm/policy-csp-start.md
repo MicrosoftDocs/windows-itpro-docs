@@ -2215,22 +2215,22 @@ To validate on Desktop, do the following:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
