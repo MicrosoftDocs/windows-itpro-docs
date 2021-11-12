@@ -149,10 +149,6 @@ BitLocker and Mobile Device Management (MDM) with Azure Active Directory work to
 
 Windows 10, version 1909 also includes two new features called **Key-rolling** and **Key-rotation** enables secure rolling of Recovery passwords on MDM managed AAD devices on demand from Microsoft Intune/MDM tools or when a recovery password is used to unlock the BitLocker protected drive. This feature will help prevent accidental recovery password disclosure as part of manual BitLocker drive unlock by users.
 
-#### Transport Layer Security (TLS)
-
-An experimental implementation of TLS 1.3 is included in Windows 10, version 1909. TLS 1.3 disabled by default system wide. If you enable TLS 1.3 on a device for testing, then it can also be enabled in Internet Explorer 11.0 and Microsoft Edge by using Internet Options. For beta versions of Microsoft Edge on Chromium, TLS 1.3 is not built on the Windows TLS stack, and is instead configured independently, using the **Edge://flags** dialog. Also see [Microsoft Edge platform status](https://developer.microsoft.com/microsoft-edge/platform/status/tls13/).
-
 ## Deployment
 
 ### Windows Autopilot
