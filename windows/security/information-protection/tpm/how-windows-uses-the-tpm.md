@@ -23,6 +23,7 @@ The Windows operating system improves most existing security features in the ope
 
 
 **See also:**
+- [Windows 11 Specifications](https://www.microsoft.com/windows/windows-11-specifications)
 
 - [Windows 10 Specifications](https://www.microsoft.com/windows/windows-10-specifications)
 
