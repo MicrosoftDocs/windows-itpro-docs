@@ -33,7 +33,24 @@ This topic will walk you through the process of creating a simulated environment
 On **PC0001**:
 
 1. Sign as **contoso\\Administrator**.
-2. Download the [sample Gather.ps1 script](/samples/browse/?redirectedfrom=TechNet-Gallery) from the TechNet gallery and copy it to a directory named **C:\MDT** on PC0001.
+2. Copy the following to a PowerShell script named gather.ps1 and copy it to a directory named **C:\MDT** on PC0001.
+
+    ```powershell
+    # Check for elevation
+    If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
+        [Security.Principal.WindowsBuiltInRole] "Administrator"))
+    {
+        Write-Warning "Oupps, you need to run this script from an elevated PowerShell prompt!`nPlease start the PowerShell prompt as an Administrator and re-run the script."
+        Write-Warning "Aborting script..."
+        Break
+    }
+    cls
+    if (Test-Path -Path "C:\MININT") {Write-Host "C:\MININT exists, deleting...";Remove-Item C:\MININT -Recurse}
+    cscript.exe ZTIGather.wsf /debug:true
+    # Optional, comment out if you want the script to open the log in CMTrace
+    & "C:\MDT\CMTrace" C:\MININT\SMSOSD\OSDLOGS\ZTIGather.log
+    ```
+
 3. Download and install the free [Microsoft System Center 2012 R2 Configuration Manager Toolkit](https://go.microsoft.com/fwlink/p/?LinkId=734717) on PC0001 so that you have access to the Configuration Manager Trace (cmtrace.exe) tool.
 4. Using Local Users and Groups (lusrmgr.msc), add the **contoso\\MDT\_BA** user account to the local **Administrators** group.
 5. Sign off, and then sign on to PC0001 as **contoso\\MDT\_BA**.
