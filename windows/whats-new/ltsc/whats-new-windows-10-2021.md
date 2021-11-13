@@ -3,7 +3,7 @@ title: What's new in Windows 10 Enterprise LTSC 2021
 ms.reviewer: 
 manager: dougeby
 ms.author: greglin
-description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2019 (also known as Windows 10 Enterprise 2019 LTSB).
+description: New and updated IT Pro content about new features in Windows 10 Enterprise LTSC 2021.
 keywords: ["What's new in Windows 10", "Windows 10", "Windows 10 Enterprise LTSC 2021"]
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -124,17 +124,13 @@ Microsoft Defender Application Guard now supports Office: With [Microsoft Defend
 
 #### Windows Defender System Guard
 
-[System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) has added a new feature in this version of Windows called **SMM Firmware Measurement**. This feature is built on top of [System Guard Secure Launch](/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection) to check that the System Management Mode (SMM) firmware on the device is operating in a healthy manner - specifically, OS memory and secrets are protected from SMM. There are currently no devices out there with compatible hardware, but they will be coming out in the next few months.
+[System Guard](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows) has improved a feature in this version of Windows called **SMM Firmware Protection**. This feature is built on top of [System Guard Secure Launch](/windows/security/threat-protection/windows-defender-system-guard/system-guard-secure-launch-and-smm-protection) to reduce the firmware attack surface and ensure that the System Management Mode (SMM) firmware on the device is operating in a healthy manner - specifically, SMM code cannot access the OS memory and secrets.
 
-This new feature is displayed under the Device Security page with the string “Your device exceeds the requirements for enhanced hardware security” if configured properly:
+In this release, [Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) enables an even *higher* level of [System Management Mode](/windows/security/threat-protection/windows-defender-system-guard/how-hardware-based-root-of-trust-helps-protect-windows#system-management-mode-smm-protection) (SMM) Firmware Protection that goes beyond checking the OS memory and secrets to additional resources like registers and IO.
 
-![System Guard.](../images/system-guard.png "SMM Firmware Measurement")
+With this improvement, the OS can detect a higher level of SMM compliance, enabling devices to be even more hardened against SMM exploits and vulnerabilities. Based on the platform, the underlying hardware and firmware, there are three versions of SMM Firmware Protection (one, two and three), with each subsequent versions offering stronger protections than the preceding ones. 
 
-In this release, [Windows Defender System Guard](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows) enables an even *higher* level of [System Management Mode](/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows#system-management-mode-smm-protection) (SMM) Firmware Protection that goes beyond checking the OS memory and secrets to additional resources like registers and IO.
-
-With this improvement, the OS can detect a higher level of SMM compliance, enabling devices to be even more hardened against SMM exploits and vulnerabilities. This feature is forward-looking and currently requires new hardware available soon.
-
- ![System Guard.](../images/system-guard2.png)
+There are already devices in the market today that offer SMM Firmware Protection versions one and two. SMM Firmware Protection version three This feature is currently forward-looking and requires new hardware that will be made available soon.
 
 ### Security management
 
@@ -150,30 +146,6 @@ BitLocker and Mobile Device Management (MDM) with Azure Active Directory work to
 
 Windows 10, version 1909 also includes two new features called **Key-rolling** and **Key-rotation** enables secure rolling of Recovery passwords on MDM managed AAD devices on demand from Microsoft Intune/MDM tools or when a recovery password is used to unlock the BitLocker protected drive. This feature will help prevent accidental recovery password disclosure as part of manual BitLocker drive unlock by users.
 
-## Deployment
-
-### Windows Autopilot
-
-[Windows Autopilot](/mem/autopilot/windows-autopilot) is a deployment tool introduced with Windows 10, version 1709 and is also available for Windows 10 Enterprise LTSC 2019, LTSC 2021, and later versions. Windows Autopilot provides a modern device lifecycle management service powered by the cloud to deliver a zero touch experience for deploying Windows 10. 
-
-Windows Autopilot is currently available with Surface, Dell, HP, and Lenovo. Other OEM partners such as Panasonic, and Acer will support Autopilot soon. Check the [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog) or this article for updated information.
-
-Using Intune, Autopilot now enables locking the device during provisioning during the Windows Out Of Box Experience (OOBE) until policies and settings for the device get provisioned, thereby ensuring that by the time the user gets to the desktop, the device is secured and configured correctly. 
-
-You can also apply an Autopilot deployment profile to your devices using Microsoft Store for Business. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the Autopilot deployment profile you applied to the device. For more information, see [Manage Windows device deployment with Windows Autopilot Deployment](/microsoft-store/add-profile-to-devices).
-
-The following new Windows Autopilot features are available in Windows 10, version 1903 and later:
-
-- [Windows Autopilot for for pre-provisioned deployment](/windows/deployment/windows-autopilot/pre-provision) is now available. Pre-provisioned deployment enables partners or IT staff to pre-provision devices so they are fully configured and business ready for your users.
-- The Intune [enrollment status page](/intune/windows-enrollment-status) (ESP) now tracks Intune Management Extensions​.
-- [Cortana voiceover](/windows-hardware/customize/desktop/cortana-voice-support) and speech recognition during OOBE is disabled by default for all Windows 10 Pro Education, and Enterprise SKUs.
-- Windows Autopilot is self-updating during OOBE. Starting with the Windows 10, version 1903 Autopilot functional and critical updates will begin downloading automatically during OOBE.
-- Windows Autopilot will set the [diagnostics data](/windows/privacy/windows-diagnostic-data) level to Full on Windows 10 version 1903 and later during OOBE.
-- [Windows Autopilot with co-management](/mem/configmgr/comanage/quickstart-autopilot) is available. Co-management and Autopilot together can help you reduce cost and improve the end user experience.
-- Enhancements to Windows Autopilot deployment reporting are in preview. From the Microsoft Endpoint Manager admin center (endpoint.microsoft.com), select **Devices** > **Monitor** and scroll down to the **Enrollment** section. Click **Autopilot deployment (preview)**.
-- You can configure [Windows Autopilot user-driven](/windows/deployment/windows-autopilot/user-driven) Hybrid Azure Active Directory join with VPN support.
-- If you configure the language settings in the Autopilot profile and the device is connected to Ethernet, all scenarios will now skip the language, locale, and keyboard pages.  In previous versions, this was only supported with self-deploying profiles.
-
 ## Microsoft Intune
 
 Microsoft Intune supports Windows 10 Enterprise LTSC 2021, except for [Windows Update Rings](/mem/intune/configuration/device-profile-create#create-the-profile) in device profiles.
@@ -184,6 +156,8 @@ Intune has also added capabilities to [Role-based access control](/mem/intune/fu
 
 For a full list of what's new in Microsoft Intune, see [What's new in Microsoft Intune](/mem/intune/fundamentals/whats-new).
 
+## Deployment
+
 ### SetupDiag
 
 [SetupDiag](/windows/deployment/upgrade/setupdiag) is a command-line tool that can help diagnose why a Windows 10 update failed. SetupDiag works by searching Windows Setup log files. When searching log files, SetupDiag uses a set of rules to match known issues. In the current version of SetupDiag there are 53 rules contained in the rules.xml file, which is extracted when SetupDiag is run. The rules.xml file will be updated as new versions of SetupDiag are made available. 
@@ -192,7 +166,7 @@ For a full list of what's new in Microsoft Intune, see [What's new in Microsoft 
 
 [**Reserved storage**](https://techcommunity.microsoft.com/t5/Storage-at-Microsoft/Windows-10-and-reserved-storage/ba-p/428327): Reserved storage sets aside disk space to be used by updates, apps, temporary files, and system caches. It improves the day-to-day function of your PC by ensuring critical OS functions always have access to disk space.  Reserved storage will be enabled automatically on new PCs with Windows 10, version 1903 pre-installed, and for clean installs.  It will not be enabled when updating from a previous version of Windows 10. 
 
-#### Microsoft Endpoint Manager
+### Microsoft Endpoint Manager
 
 Configuration Manager, Intune, Desktop Analytics, Co-Management, and Device Management Admin Console are now [Microsoft Endpoint Manager](/configmgr/). See the Nov. 4 2019 [announcement](https://www.microsoft.com/microsoft-365/blog/2019/11/04/use-the-power-of-cloud-intelligence-to-simplify-and-accelerate-it-and-the-move-to-a-modern-workplace/). Also see [Modern management and security principles driving our Microsoft Endpoint Manager vision](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Modern-management-and-security-principles-driving-our-Microsoft/ba-p/946797).
 
