@@ -36,7 +36,7 @@ The Windows 10 Enterprise LTSC 2019 release is an important release for LTSC use
 
 ## Microsoft Intune
 
-Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later.  This includes support for features such as [Windows Autopilot](#windows-autopilot). However, note that Windows 10 Update Rings Device profiles do not support LTSC releases, therefore you should use [Policy configuration service provider](/windows/client-management/mdm/policy-csp-update), WSUS, or Configuration Manager for patching.
+Microsoft Intune supports Windows 10 Enterprise LTSC 2019 and later. However, note that Windows 10 Update Rings Device profiles do not support LTSC releases, therefore you should use [Policy configuration service provider](/windows/client-management/mdm/policy-csp-update), WSUS, or Configuration Manager for patching.
 
 ## Security
 
@@ -188,26 +188,6 @@ This is an update to the [BitLocker CSP](/windows/client-management/mdm/bitlocke
 
 This feature will soon be enabled on Olympia Corp as an optional feature.
 
-#### Delivering BitLocker policy to AutoPilot devices during OOBE 
-
-You can choose which encryption algorithm to apply to BitLocker encryption capable devices, rather than automatically having those devices encrypt themselves with the default algorithm. This allows the encryption algorithm (and other BitLocker policies that must be applied prior to encryption), to be delivered before BitLocker encryption begins. 
-
-For example, you can choose the XTS-AES 256 encryption algorithm, and have it applied to devices that would normally encrypt themselves automatically with the default XTS-AES 128 algorithm during OOBE.
-
-To achieve this:
-
-1. Configure the [encryption method settings](/intune/endpoint-protection-windows-10#windows-encryption) in the Windows 10 Endpoint Protection profile to the desired encryption algorithm. 
-
-2. [Assign the policy](/intune/device-profile-assign) to your Autopilot device group. 
-
-   > [!IMPORTANT]
-   > The encryption policy must be assigned to **devices** in the group, not users.
-
-3. Enable the Autopilot [Enrollment Status Page](/windows/deployment/windows-autopilot/enrollment-status) (ESP) for these devices. 
-
-   > [!IMPORTANT]
-   > If the ESP is not enabled, the policy will not apply before encryption starts.
-
 ### Identity protection
 
 Improvements have been added are to Windows Hello for Business and Credential Guard.
@@ -291,20 +271,6 @@ We’ve continued to work on the **Current threats** area in  [Virus & threat pr
 ![S mode settings.](../images/virus-and-threat-protection.png "Virus & threat protection settings")
 
 ## Deployment
-
-### Windows Autopilot
-
-[Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot) is a deployment tool introduced with Windows 10, version 1709 and is also available for Windows 10 Enterprise LTSC 2019 (and later versions). Windows Autopilot provides a modern device lifecycle management service powered by the cloud to deliver a zero touch experience for deploying Windows 10. 
-
-Windows Autopilot is currently available with Surface, Dell, HP, and Lenovo. Other OEM partners such as Panasonic, and Acer will support Autopilot soon. Check the [Windows IT Pro Blog](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows10Blog) or this article for updated information.
-
-Using Intune, Autopilot now enables locking the device during provisioning during the Windows Out Of Box Experience (OOBE) until policies and settings for the device get provisioned, thereby ensuring that by the time the user gets to the desktop, the device is secured and configured correctly. 
-
-You can also apply an Autopilot deployment profile to your devices using Microsoft Store for Business. When people in your organization run the out-of-box experience on the device, the profile configures Windows based on the Autopilot deployment profile you applied to the device. For more information, see [Manage Windows device deployment with Windows Autopilot Deployment](/microsoft-store/add-profile-to-devices).
-
-#### Autopilot Reset	
-
-IT Pros can use Autopilot Reset to quickly remove personal files, apps, and settings. A custom login screen is available from the lock screen that enables you to apply original settings and management enrollment (Azure Active Directory and device management) so that devices are returned to a fully configured, known, IT-approved state and ready to use. For more information, see [Reset devices with Autopilot Reset](/education/windows/autopilot-reset).
 
 ### MBR2GPT.EXE
 
