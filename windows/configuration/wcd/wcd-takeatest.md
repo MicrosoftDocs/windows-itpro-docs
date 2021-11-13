@@ -19,9 +19,9 @@ Use TakeATest to configure the Take A Test app, a secure browser for test-taking
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | ✔️ |  |  |  |   |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings | ✔️ |  |  |   |
 
 ## AllowScreenMonitoring
 
