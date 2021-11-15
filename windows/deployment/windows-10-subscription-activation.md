@@ -249,7 +249,7 @@ changepk.exe /ProductKey %ProductKey%
 )
 ```
 
-Since [WMIC was deprecated](https://docs.microsoft.com/windows/win32/wmisdk/wmic) in Windows 10, version 21H1, run this PowerShell alternative:
+Since [WMIC was deprecated](/windows/win32/wmisdk/wmic) in Windows 10, version 21H1, run this PowerShell alternative:
 ```console
 $(Get-WmiObject SoftwareLicensingService).OA3xOriginalProductKey | foreach{ if ( $null -ne $_ ) { Write-Host "Installing"$_;.\changepk.exe /Productkey $_ } else { Write-Host "No key present" } }
 ```
