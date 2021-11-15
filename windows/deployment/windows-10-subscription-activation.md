@@ -231,7 +231,7 @@ If you are running Windows 10, version 1803 or later, Subscription Activation wi
 
 If you are using Windows 10, version 1607, 1703, or 1709 and have already deployed Windows 10 Enterprise, but you want to move away from depending on KMS servers and MAK keys for Windows client machines, you can seamlessly transition as long as the computer has been activated with a firmware-embedded Windows 10 Pro product key.
 
-If the computer has never been activated with a Pro key, run the following script. Copy the text below into a .cmd file and run the file from an elevated command prompt:
+If the computer has never been activated with a Pro key, run the following script. Copy the text below into a `.cmd` file, and run the file from an elevated command prompt:
 
 ```console
 @echo off
@@ -247,6 +247,12 @@ echo No key present
 echo Installing %ProductKey%
 changepk.exe /ProductKey %ProductKey%
 )
+```
+
+Since [WMIC was deprecated](/windows/win32/wmisdk/wmic) in Windows 10, version 21H1, you can use the following Windows PowerShell script instead:
+
+```powershell
+$(Get-WmiObject SoftwareLicensingService).OA3xOriginalProductKey | foreach{ if ( $null -ne $_ ) { Write-Host "Installing"$_;.\changepk.exe /Productkey $_ } else { Write-Host "No key present" } }
 ```
 
 ### Obtaining an Azure AD license
