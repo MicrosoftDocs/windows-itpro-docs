@@ -26,7 +26,7 @@ This article lists new and updated features and content that is of interest to I
 
 Windows 10 Enterprise LTSC 2021 builds on Windows 10 Enterprise LTSC 2019, adding premium features such as advanced protection against modern security threats and comprehensive device management, app management, and control capabilities. 
 
-The Windows 10 Enterprise LTSC 2021 release includes the cumulative enhancements provided in Windows 10 versions 1903, 1909, 2004, and 21H1. Details about these enhancements are provided below. 
+The Windows 10 Enterprise LTSC 2021 release includes the cumulative enhancements provided in Windows 10 versions 1903, 1909, 2004, 21H1, and 21H2. Details about these enhancements are provided below. 
 
 ## Lifecycle
 
