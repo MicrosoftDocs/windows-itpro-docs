@@ -1188,12 +1188,12 @@ The following list shows the supported values:
 <tr>
     <td>Home</td>
     <td>No</td>
-    <td>No</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Pro</td>
     <td>No</td>
-    <td>No</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
@@ -1233,6 +1233,8 @@ The values for this policy are 0, 1, 2, and 3. This policy defaults to 0 if not 
 -   1 - Show: The Chat icon will be displayed on the taskbar by default. Users can show or hide it in Settings.
 -   2 - Hide: The Chat icon will be hidden by default. Users can show or hide it in Settings.
 -   3 - Disabled: The Chat icon will not be displayed, and users cannot show or hide it in Settings.
+
+Note: Options 1 and 2 (Show, Hide) only work on first boot whereas option 3 - Disabled will work on all attempts.
 
 <!--/SupportedValues-->
 <!--/Policy-->
