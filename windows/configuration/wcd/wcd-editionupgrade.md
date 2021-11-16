@@ -19,11 +19,11 @@ Use to upgrade the edition of Windows 10 on the device. [Learn about Windows 10 
 
 ## Applies to
 
-| Setting  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ChangeProductKey](#changeproductkey) | ✔️  | ✔️ |  |  |  |
-| [UpgradeEditionWithLicense](#upgradeeditionwithlicense) | ✔️  | ✔️ |  | ✔️ |  |
-| [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey) | ✔️  | ✔️ |  |  |  |
+| Setting  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ChangeProductKey](#changeproductkey) | ✔️  |  |  |  |
+| [UpgradeEditionWithLicense](#upgradeeditionwithlicense) | ✔️  |  | ✔️ |  |
+| [UpgradeEditionWithProductKey](#upgradeeditionwithproductkey) | ✔️  |  |  |  |
 
 
 ## ChangeProductKey

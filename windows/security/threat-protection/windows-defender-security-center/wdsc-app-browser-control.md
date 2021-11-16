@@ -37,14 +37,11 @@ You can prevent users from modifying settings in the Exploit protection area. Th
 You can only prevent users from modifying Exploit protection settings by using Group Policy.
 
 > [!IMPORTANT]
->
-> ### Requirements
->
 > You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration**, select **Policies** and then **Administrative templates**.
 
 3. Expand the tree to **Windows components > Windows Security > App and browser protection**.
 
@@ -59,14 +56,11 @@ You can choose to hide the entire section by using Group Policy. The section wil
 This can only be done in Group Policy.
 
 > [!IMPORTANT]
->
-> ### Requirements
->
-> You must have Windows 10, version 1709 (the Fall Creators Update). The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
+> You must have Windows 10, version 1709 or later. The ADMX/ADML template files for earlier versions of Windows do not include these Group Policy settings.
 
 1. On your Group Policy management machine, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)), right-click the Group Policy Object you want to configure and click **Edit**.
 
-2. In the **Group Policy Management Editor** go to **Computer configuration** and click **Administrative templates**.
+2. In the **Group Policy Management Editor** go to **Computer configuration**, select **Policies** and then **Administrative templates**.
 
 3. Expand the tree to **Windows components > Windows Security > App and browser protection**.
 

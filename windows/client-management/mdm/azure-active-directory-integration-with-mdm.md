@@ -135,7 +135,7 @@ Use the following steps to register a cloud-based MDM application with Azure AD.
 
 8.  Enter the login URL for your MDM service.
 
-9.  For the App ID, enter **https://&lt;your\_tenant\_name>/ContosoMDM**, then select OK.
+9.  For the App ID, enter `https://<your_tenant_name>/ContosoMDM`, then select OK.
 
 10. While still in the Azure portal, select the **Configure** tab of your application.
 
@@ -187,40 +187,14 @@ The following image show how MDM applications show up in the Azure app gallery.
 
 The following table shows the required information to create an entry in the Azure AD app gallery.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Item</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>Application ID</strong></p></td>
-<td><p>The client ID of your MDM app that is configured within your tenant. This ID is the unique identifier for your multi-tenant app.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Publisher</strong></p></td>
-<td><p>A string that identifies the publisher of the app.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Application URL</strong></p></td>
-<td><p>A URL to the landing page of your app where your administrators can get more information about the MDM app and contains a link to the landing page of your app. This URL isn't used for the actual enrollment.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>Description</strong></p></td>
-<td><p>A brief description of your MDM app, which must be under 255 characters.</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>Icons</strong></p></td>
-<td><p>A set of logo icons for the MDM app. Dimensions: 45 X 45, 150 X 122, 214 X 215</p></td>
-</tr>
-</tbody>
-</table>
+|Item|Description|
+|--- |--- |
+|**Application ID**|The client ID of your MDM app that is configured within your tenant. This ID is the unique identifier for your multi-tenant app.|
+|**Publisher**|A string that identifies the publisher of the app.|
+|**Application URL**|A URL to the landing page of your app where your administrators can get more information about the MDM app and contains a link to the landing page of your app. This URL isn't used for the actual enrollment.|
+|**Description**|A brief description of your MDM app, which must be under 255 characters.|
+|**Icons**|A set of logo icons for the MDM app. Dimensions: 45 X 45, 150 X 122, 214 X 215|
+
 
  
 ### Add on-premises MDM to the app gallery
@@ -250,42 +224,10 @@ The CSS files provided by Microsoft contain version information and we recommend
 
 An MDM page must adhere to a predefined theme depending on the scenario that is displayed. For example, if the CXH-HOSTHTTP header is FRX, which is the OOBE scenario, then the page must support a dark theme with blue background color, which uses WinJS file Ui-dark.css ver 4.0 and oobe-desktop.css ver 1.0.4.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>CXH-HOST (HTTP HEADER)</th>
-<th>Scenario</th>
-<th>Background Theme</th>
-<th>WinJS</th>
-<th>Scenario CSS</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>FRX</td>
-<td>OOBE</td>
-<td>Dark theme + blue background color</td>
-<td>Filename: Ui-dark.css</td>
-<td>Filename: oobe-dekstop.css</td>
-</tr>
-<tr class="even">
-<td>MOSET</td>
-<td>Settings/
-<p>Post OOBE</p></td>
-<td>Light theme</td>
-<td>Filename: Ui-light.css</td>
-<td>Filename: settings-desktop.css</td>
-</tr>
-</tbody>
-</table>
-
+|CXH-HOST (HTTP HEADER)|Scenario|Background Theme|WinJS|Scenario CSS|
+|--- |--- |--- |--- |--- |
+|FRX|OOBE|Dark theme + blue background color|Filename: Ui-dark.css|Filename: oobe-dekstop.css|
+|MOSET|Settings/Post OOBE|Light theme|Filename: Ui-light.css|Filename: settings-desktop.css|
  
 ## Terms of Use protocol semantics
 
@@ -293,40 +235,16 @@ The Terms of Use endpoint is hosted by the MDM server. During the Azure AD Join 
 
 ### Redirect to the Terms of Use endpoint
 
-This redirect is a full page redirect to the Terms of User endpoint hosted by the MDM. Here's an example URL, https:<span></span>//fabrikam.contosomdm.com/TermsOfUse.
+This redirect is a full page redirect to the Terms of User endpoint hosted by the MDM. Here's an example URL, `https://fabrikam.contosomdm.com/TermsOfUse`.
 
 The following parameters are passed in the query string:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Item</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>redirect_uri</p></td>
-<td><p>After the user accepts or rejects the Terms of Use, the user is redirected to this URL.</p></td>
-</tr>
-<tr class="even">
-<td><p>client-request-id</p></td>
-<td><p>A GUID that is used to correlate logs for diagnostic and debugging purposes. Use this parameter to log or trace the state of the enrollment request to help find the root cause of failures.</p></td>
-</tr>
-<tr class="odd">
-<td><p>api-version</p></td>
-<td><p>Specifies the version of the protocol requested by the client. This value provides a mechanism to support version revisions of the protocol.</p></td>
-</tr>
-<tr class="even">
-<td><p>mode</p></td>
-<td><p>Specifies that the device is organization owned when mode=azureadjoin. This parameter isn't present for BYOD devices.</p></td>
-</tr>
-</tbody>
-</table>
+|Item|Description|
+|--- |--- |
+|redirect_uri|After the user accepts or rejects the Terms of Use, the user is redirected to this URL.|
+|client-request-id|A GUID that is used to correlate logs for diagnostic and debugging purposes. Use this parameter to log or trace the state of the enrollment request to help find the root cause of failures.|
+|api-version|Specifies the version of the protocol requested by the client. This value provides a mechanism to support version revisions of the protocol.|
+|mode|Specifies that the device is organization owned when mode=azureadjoin. This parameter isn't present for BYOD devices.|
 
  
 ### Access token
@@ -337,37 +255,13 @@ Azure AD issues a bearer access token. The token is passed in the authorization 
 
 The following claims are expected in the access token passed by Windows to the Terms of Use endpoint:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Item</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Object ID</p></td>
-<td><p>Identifier of the user object corresponding to the authenticated user.</p></td>
-</tr>
-<tr class="even">
-<td><p>UPN</p></td>
-<td><p>A claim containing the user principal name (UPN) of the authenticated user.</p></td>
-</tr>
-<tr class="odd">
-<td><p>TID</p></td>
-<td><p>A claim representing the tenant ID of the tenant. In the example above, it's Fabrikam.</p></td>
-</tr>
-<tr class="even">
-<td><p>Resource</p></td>
-<td><p>A sanitized URL representing the MDM application. Example, https:<span></span>//fabrikam.contosomdm.com.</p></td>
-</tr>
-</tbody>
-</table>
-<br/>
+|Item|Description|
+|--- |--- |
+|Object ID|Identifier of the user object corresponding to the authenticated user.|
+|UPN|A claim containing the user principal name (UPN) of the authenticated user.|
+|TID|A claim representing the tenant ID of the tenant. In the example above, it's Fabrikam.|
+|Resource|A sanitized URL representing the MDM application. Example: `https://fabrikam.contosomdm.com` |
+
 
 > [!NOTE]
 > There's no device ID claim in the access token because the device may not yet be enrolled at this time.
@@ -428,184 +322,35 @@ Location: ms-appx-web://App1/ToUResponse?error=access_denied&error_description=A
 
 The following table shows the error codes.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Cause</th>
-<th>HTTP status</th>
-<th>Error</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>api-version</p></td>
-<td><p>302</p></td>
-<td><p>invalid_request</p></td>
-<td><p>unsupported version</p></td>
-</tr>
-<tr class="even">
-<td><p>Tenant or user data are missing or other required prerequisites for device enrollment are not met</p></td>
-<td><p>302</p></td>
-<td><p>unauthorized_client</p></td>
-<td><p>unauthorized user or tenant</p></td>
-</tr>
-<tr class="odd">
-<td><p>Azure AD token validation failed</p></td>
-<td><p>302</p></td>
-<td><p>unauthorized_client</p></td>
-<td><p>unauthorized_client</p></td>
-</tr>
-<tr class="even">
-<td><p>internal service error</p></td>
-<td><p>302</p></td>
-<td><p>server_error</p></td>
-<td><p>internal service error</p></td>
-</tr>
-</tbody>
-</table>
+|Cause|HTTP status|Error|Description|
+|--- |--- |--- |--- |
+|api-version|302|invalid_request|unsupported version|
+|Tenant or user data are missing or other required prerequisites for device enrollment are not met|302|unauthorized_client|unauthorized user or tenant|
+|Azure AD token validation failed|302|unauthorized_client|unauthorized_client|
+|internal service error|302|server_error|internal service error|
 
  
 ## Enrollment protocol with Azure AD
 
 With Azure integrated MDM enrollment, there's no discovery phase and the discovery URL is directly passed down to the system from Azure. The following table shows the comparison between the traditional and Azure enrollments.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Detail</th>
-<th>Traditional MDM enrollment</th>
-<th>Azure AD Join (organization-owned device)</th>
-<th>Azure AD adds a work account (user-owned device)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>MDM auto-discovery using email address to retrieve MDM discovery URL</p></td>
-<td><p>Enrollment</p></td>
-<td><p>Not applicable</p>
-<p>Discovery URL provisioned in Azure</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>Uses MDM discovery URL</p></td>
-<td><p>Enrollment</p>
-<p>Enrollment renewal</p>
-<p>ROBO</p></td>
-<td><p>Enrollment</p>
-<p>Enrollment renewal</p>
-<p>ROBO</p></td>
-<td><p>Enrollment</p>
-<p>Enrollment renewal</p>
-<p>ROBO</p></td>
-</tr>
-<tr class="odd">
-<td><p>Is MDM enrollment required?</p></td>
-<td><p>Yes</p></td>
-<td><p>Yes</p></td>
-<td><p>No</p>
-<p>User can decline.</p></td>
-</tr>
-<tr class="even">
-<td><p>Authentication type</p></td>
-<td><p>OnPremise</p>
-<p>Federated</p>
-<p>Certificate</p></td>
-<td><p>Federated</p></td>
-<td><p>Federated</p></td>
-</tr>
-<tr class="odd">
-<td><p>EnrollmentPolicyServiceURL</p></td>
-<td><p>Optional (all auth)</p></td>
-<td><p>Optional (all auth)</p>
-<p></p></td>
-<td><p>Optional (all auth)</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td><p>EnrollmentServiceURL</p></td>
-<td><p>Required (all auth)</p></td>
-<td><p>Used (all auth)</p></td>
-<td><p>Used (all auth)</p></td>
-</tr>
-<tr class="odd">
-<td><p>EnrollmentServiceURL includes OS Version, OS Platform, and other attributes provided by MDM discovery URL</p></td>
-<td><p>Highly recommended</p></td>
-<td><p>Highly recommended</p></td>
-<td><p>Highly recommended</p></td>
-</tr>
-<tr class="even">
-<td><p>AuthenticationServiceURL used</p></td>
-<td><p>Used (Federated auth)</p></td>
-<td><p>Skipped</p></td>
-<td><p>Skipped</p></td>
-</tr>
-<tr class="odd">
-<td><p>BinarySecurityToken</p></td>
-<td><p>Custom per MDM</p></td>
-<td><p>Azure AD issued token</p></td>
-<td><p>Azure AD issued token</p></td>
-</tr>
-<tr class="even">
-<td><p>EnrollmentType</p></td>
-<td><p>Full</p></td>
-<td><p>Device</p></td>
-<td><p>Full</p></td>
-</tr>
-<tr class="odd">
-<td><p>Enrolled certificate type</p></td>
-<td><p>User certificate</p></td>
-<td><p>Device certificate</p></td>
-<td><p>User certificate</p></td>
-</tr>
-<tr class="even">
-<td><p>Enrolled certificate store</p></td>
-<td><p>My/User</p></td>
-<td><p>My/System</p></td>
-<td><p>My/User</p></td>
-</tr>
-<tr class="odd">
-<td><p>CSR subject name</p></td>
-<td><p>User Principal Name</p></td>
-<td><p>Device ID</p></td>
-<td><p>User Principal Name</p></td>
-</tr>
-<tr class="even">
-<td><p>EnrollmentData Terms of Use binary blob as AdditionalContext for EnrollmentServiceURL</p></td>
-<td><p>Not supported</p></td>
-<td><p>Supported</p></td>
-<td><p>Supported</p></td>
-</tr>
-<tr class="odd">
-<td><p>CSPs accessible during enrollment</p></td>
-<td><p>Windows 10 support:</p>
-<ul>
-<li>DMClient</li>
-<li>CertificateStore</li>
-<li>RootCATrustedCertificates</li>
-<li>ClientCertificateInstall</li>
-<li>EnterpriseModernAppManagement</li>
-<li>PassportForWork</li>
-<li>Policy</li>
-<li>w7 APPLICATION</li>
-</ul>
-</tr>
-</tbody>
-</table>
-
- 
+|Detail|Traditional MDM enrollment|Azure AD Join (organization-owned device)|Azure AD adds a work account (user-owned device)|
+|--- |--- |--- |--- |
+|MDM auto-discovery using email address to retrieve MDM discovery URL|Enrollment|Not applicable<br>Discovery URL provisioned in Azure||
+|Uses MDM discovery URL|Enrollment<br>Enrollment renewal<br>ROBO|Enrollment<br>Enrollment renewal<br>ROBO|Enrollment<br>Enrollment renewal<br>ROBO|
+|Is MDM enrollment required?|Yes|Yes|No<br>User can decline.|
+|Authentication type|OnPremise<br>Federated<br>Certificate|Federated|Federated|
+|EnrollmentPolicyServiceURL|Optional (all auth)|Optional (all auth)|Optional (all auth)|
+|EnrollmentServiceURL|Required (all auth)|Used (all auth)|Used (all auth)|
+|EnrollmentServiceURL includes OS Version, OS Platform, and other attributes provided by MDM discovery URL|Highly recommended|Highly recommended|Highly recommended|
+|AuthenticationServiceURL used|Used (Federated auth)|Skipped|Skipped|
+|BinarySecurityToken|Custom per MDM|Azure AD issued token|Azure AD issued token|
+|EnrollmentType|Full|Device|Full|
+|Enrolled certificate type|User certificate|Device certificate|User certificate|
+|Enrolled certificate store|My/User|My/System|My/User|
+|CSR subject name|User Principal Name|Device ID|User Principal Name|
+|EnrollmentData Terms of Use binary blob as AdditionalContext for EnrollmentServiceURL|Not supported|Supported|Supported|
+|CSPs accessible during enrollment|Windows 10 support: <br/>- DMClient <br/>- CertificateStore <br/>- RootCATrustedCertificates <br/> - ClientCertificateInstall <br/>- EnterpriseModernAppManagement <br/> - PassportForWork <br/> - Policy <br/> - w7 APPLICATION|||
 
 ## Management protocol with Azure AD
 
@@ -737,202 +482,41 @@ When a user is enrolled into MDM through Azure Active Directory Join and then di
 
 ## Error codes
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Code</th>
-<th>ID</th>
-<th>Error message</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>0x80180001</td>
-<td>"idErrorServerConnectivity", // MENROLL_E_DEVICE_MESSAGE_FORMAT_ERROR</td>
-<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
-</tr>
-<tr class="even">
-<td>0x80180002</td>
-<td>"idErrorAuthenticationFailure", // MENROLL_E_DEVICE_AUTHENTICATION_ERROR</td>
-<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="odd">
-<td>0x80180003</td>
-<td>"idErrorAuthorizationFailure", // MENROLL_E_DEVICE_AUTHORIZATION_ERROR</td>
-<td><p>This user isn't authorized to enroll. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x80180004</td>
-<td>"idErrorMDMCertificateError", // MENROLL_E_DEVICE_CERTIFCATEREQUEST_ERROR</td>
-<td><p>There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="odd">
-<td>0x80180005</td>
-<td>"idErrorServerConnectivity", // MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR</td>
-<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
-</tr>
-<tr class="even">
-<td>0x80180006</td>
-<td>"idErrorServerConnectivity", // MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR</td>
-<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
-</tr>
-<tr class="odd">
-<td>0x80180007</td>
-<td>"idErrorAuthenticationFailure", // MENROLL_E_DEVICE_INVALIDSECURITY_ERROR</td>
-<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x80180008</td>
-<td>"idErrorServerConnectivity", // MENROLL_E_DEVICE_UNKNOWN_ERROR</td>
-<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
-</tr>
-<tr class="odd">
-<td>0x80180009</td>
-<td>"idErrorAlreadyInProgress", // MENROLL_E_ENROLLMENT_IN_PROGRESS</td>
-<td><p>Another enrollment is in progress. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x8018000A</td>
-<td>"idErrorMDMAlreadyEnrolled", // MENROLL_E_DEVICE_ALREADY_ENROLLED</td>
-<td><p>This device is already enrolled. You can contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="odd">
-<td>0x8018000D</td>
-<td>"idErrorMDMCertificateError", // MENROLL_E_DISCOVERY_SEC_CERT_DATE_INVALID</td>
-<td><p>There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x8018000E</td>
-<td>"idErrorAuthenticationFailure", // MENROLL_E_PASSWORD_NEEDED</td>
-<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="odd">
-<td>0x8018000F</td>
-<td>"idErrorAuthenticationFailure", // MENROLL_E_WAB_ERROR</td>
-<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x80180010</td>
-<td>"idErrorServerConnectivity", // MENROLL_E_CONNECTIVITY</td>
-<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
-</tr>
-<tr class="odd">
-<td>0x80180012</td>
-<td>"idErrorMDMCertificateError", // MENROLL_E_INVALIDSSLCERT</td>
-<td><p>There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x80180013</td>
-<td>"idErrorDeviceLimit", // MENROLL_E_DEVICECAPREACHED</td>
-<td><p>Looks like there are too many devices or users for this account. Contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="odd">
-<td>0x80180014</td>
-<td>"idErrorMDMNotSupported", // MENROLL_E_DEVICENOTSUPPORTED</td>
-<td><p>This feature isn't supported. Contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x80180015</td>
-<td>"idErrorMDMNotSupported", // MENROLL_E_NOTSUPPORTED</td>
-<td><p>This feature isn't supported. Contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="odd">
-<td>0x80180016</td>
-<td>"idErrorMDMRenewalRejected", // MENROLL_E_NOTELIGIBLETORENEW</td>
-<td><p>The server did not accept the request. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x80180017</td>
-<td>"idErrorMDMAccountMaintenance", // MENROLL_E_INMAINTENANCE</td>
-<td><p>The service is in maintenance. You can try to do this again later or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="odd">
-<td>0x80180018</td>
-<td>"idErrorMDMLicenseError", // MENROLL_E_USERLICENSE</td>
-<td><p>There was an error with your license. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x80180019</td>
-<td>"idErrorInvalidServerConfig", // MENROLL_E_ENROLLMENTDATAINVALID</td>
-<td><p>Looks like the server isn't correctly configured. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="odd">
-<td>"rejectedTermsOfUse"</td>
-<td>"idErrorRejectedTermsOfUse"</td>
-<td><p>Your organization requires that you agree to the Terms of Use. Please try again or ask your support person for more information.</p></td>
-</tr>
-<tr class="even">
-<td>0x801c0001</td>
-<td>"idErrorServerConnectivity", // DSREG_E_DEVICE_MESSAGE_FORMAT_ERROR</td>
-<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
-</tr>
-<tr class="odd">
-<td>0x801c0002</td>
-<td>"idErrorAuthenticationFailure", // DSREG_E_DEVICE_AUTHENTICATION_ERROR</td>
-<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x801c0003</td>
-<td>"idErrorAuthorizationFailure", // DSREG_E_DEVICE_AUTHORIZATION_ERROR</td>
-<td><p>This user isn't authorized to enroll. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="odd">
-<td>0x801c0006</td>
-<td>"idErrorServerConnectivity", // DSREG_E_DEVICE_INTERNALSERVICE_ERROR</td>
-<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
-</tr>
-<tr class="even">
-<td>0x801c000B</td>
-<td>"idErrorUntrustedServer", // DSREG_E_DISCOVERY_REDIRECTION_NOT_TRUSTED</td>
-<td>The server being contacted isn't trusted. Contact your system administrator with the error code {0}.</td>
-</tr>
-<tr class="odd">
-<td>0x801c000C</td>
-<td>"idErrorServerConnectivity", // DSREG_E_DISCOVERY_FAILED</td>
-<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
-</tr>
-<tr class="even">
-<td>0x801c000E</td>
-<td>"idErrorDeviceLimit", // DSREG_E_DEVICE_REGISTRATION_QUOTA_EXCCEEDED</td>
-<td><p>Looks like there are too many devices or users for this account. Contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="odd">
-<td>0x801c000F</td>
-<td>"idErrorDeviceRequiresReboot", // DSREG_E_DEVICE_REQUIRES_REBOOT</td>
-<td><p>A reboot is required to complete device registration.</p></td>
-</tr>
-<tr class="even">
-<td>0x801c0010</td>
-<td>"idErrorInvalidCertificate", // DSREG_E_DEVICE_AIK_VALIDATION_ERROR</td>
-<td><p>Looks like you have an invalid certificate. Contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="odd">
-<td>0x801c0011</td>
-<td>"idErrorAuthenticationFailure", // DSREG_E_DEVICE_ATTESTATION_ERROR</td>
-<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x801c0012</td>
-<td>"idErrorServerConnectivity", // DSREG_E_DISCOVERY_BAD_MESSAGE_ERROR</td>
-<td><p>There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}</p></td>
-</tr>
-<tr class="odd">
-<td>0x801c0013</td>
-<td>"idErrorAuthenticationFailure", // DSREG_E_TENANTID_NOT_FOUND</td>
-<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-<tr class="even">
-<td>0x801c0014</td>
-<td>"idErrorAuthenticationFailure", // DSREG_E_USERSID_NOT_FOUND</td>
-<td><p>There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
-
+|Code|ID|Error message|
+|--- |--- |--- |
+|0x80180001|"idErrorServerConnectivity", // MENROLL_E_DEVICE_MESSAGE_FORMAT_ERROR|There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}|
+|0x80180002|"idErrorAuthenticationFailure", // MENROLL_E_DEVICE_AUTHENTICATION_ERROR|There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x80180003|"idErrorAuthorizationFailure", // MENROLL_E_DEVICE_AUTHORIZATION_ERROR|This user isn't authorized to enroll. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x80180004|"idErrorMDMCertificateError", // MENROLL_E_DEVICE_CERTIFCATEREQUEST_ERROR|There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x80180005|"idErrorServerConnectivity", // MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR|There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}|
+|0x80180006|"idErrorServerConnectivity", // MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR|There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}|
+|0x80180007|"idErrorAuthenticationFailure", // MENROLL_E_DEVICE_INVALIDSECURITY_ERROR|There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x80180008|"idErrorServerConnectivity", // MENROLL_E_DEVICE_UNKNOWN_ERROR|There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}|
+|0x80180009|"idErrorAlreadyInProgress", // MENROLL_E_ENROLLMENT_IN_PROGRESS|Another enrollment is in progress. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x8018000A|"idErrorMDMAlreadyEnrolled", // MENROLL_E_DEVICE_ALREADY_ENROLLED|This device is already enrolled. You can contact your system administrator with the error code {0}.|
+|0x8018000D|"idErrorMDMCertificateError", // MENROLL_E_DISCOVERY_SEC_CERT_DATE_INVALID|There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x8018000E|"idErrorAuthenticationFailure", // MENROLL_E_PASSWORD_NEEDED|There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x8018000F|"idErrorAuthenticationFailure", // MENROLL_E_WAB_ERROR|There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x80180010|"idErrorServerConnectivity", // MENROLL_E_CONNECTIVITY|There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}|
+|0x80180012|"idErrorMDMCertificateError", // MENROLL_E_INVALIDSSLCERT|There was a certificate error. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x80180013|"idErrorDeviceLimit", // MENROLL_E_DEVICECAPREACHED|Looks like there are too many devices or users for this account. Contact your system administrator with the error code {0}.|
+|0x80180014|"idErrorMDMNotSupported", // MENROLL_E_DEVICENOTSUPPORTED|This feature isn't supported. Contact your system administrator with the error code {0}.|
+|0x80180015|"idErrorMDMNotSupported", // MENROLL_E_NOTSUPPORTED|This feature isn't supported. Contact your system administrator with the error code {0}.|
+|0x80180016|"idErrorMDMRenewalRejected", // MENROLL_E_NOTELIGIBLETORENEW|The server did not accept the request. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x80180017|"idErrorMDMAccountMaintenance", // MENROLL_E_INMAINTENANCE|The service is in maintenance. You can try to do this again later or contact your system administrator with the error code {0}.|
+|0x80180018|"idErrorMDMLicenseError", // MENROLL_E_USERLICENSE|There was an error with your license. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x80180019|"idErrorInvalidServerConfig", // MENROLL_E_ENROLLMENTDATAINVALID|Looks like the server isn't correctly configured. You can try to do this again or contact your system administrator with the error code {0}.|
+|"rejectedTermsOfUse"|"idErrorRejectedTermsOfUse"|Your organization requires that you agree to the Terms of Use. Please try again or ask your support person for more information.|
+|0x801c0001|"idErrorServerConnectivity", // DSREG_E_DEVICE_MESSAGE_FORMAT_ERROR|There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}|
+|0x801c0002|"idErrorAuthenticationFailure", // DSREG_E_DEVICE_AUTHENTICATION_ERROR|There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x801c0003|"idErrorAuthorizationFailure", // DSREG_E_DEVICE_AUTHORIZATION_ERROR|This user isn't authorized to enroll. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x801c0006|"idErrorServerConnectivity", // DSREG_E_DEVICE_INTERNALSERVICE_ERROR|There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}|
+|0x801c000B|"idErrorUntrustedServer", // DSREG_E_DISCOVERY_REDIRECTION_NOT_TRUSTED|The server being contacted isn't trusted. Contact your system administrator with the error code {0}.|
+|0x801c000C|"idErrorServerConnectivity", // DSREG_E_DISCOVERY_FAILED|There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}|
+|0x801c000E|"idErrorDeviceLimit", // DSREG_E_DEVICE_REGISTRATION_QUOTA_EXCCEEDED|Looks like there are too many devices or users for this account. Contact your system administrator with the error code {0}.|
+|0x801c000F|"idErrorDeviceRequiresReboot", // DSREG_E_DEVICE_REQUIRES_REBOOT|A reboot is required to complete device registration.|
+|0x801c0010|"idErrorInvalidCertificate", // DSREG_E_DEVICE_AIK_VALIDATION_ERROR|Looks like you have an invalid certificate. Contact your system administrator with the error code {0}.|
+|0x801c0011|"idErrorAuthenticationFailure", // DSREG_E_DEVICE_ATTESTATION_ERROR|There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x801c0012|"idErrorServerConnectivity", // DSREG_E_DISCOVERY_BAD_MESSAGE_ERROR|There was an error communicating with the server. You can try to do this again or contact your system administrator with the error code {0}|
+|0x801c0013|"idErrorAuthenticationFailure", // DSREG_E_TENANTID_NOT_FOUND|There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.|
+|0x801c0014|"idErrorAuthenticationFailure", // DSREG_E_USERSID_NOT_FOUND|There was a problem authenticating your account or device. You can try to do this again or contact your system administrator with the error code {0}.|

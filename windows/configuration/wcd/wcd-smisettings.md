@@ -19,9 +19,9 @@ Use SMISettings settings to customize the device with custom shell, suppress Win
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | ✔️  |  |  |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| All settings | ✔️  |  |  |  |
 
 ## All settings in SMISettings
 
