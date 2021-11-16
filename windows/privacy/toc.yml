@@ -47,6 +47,8 @@
           href: essential-services-and-connected-experiences.md
         - name: Connection endpoints for Windows 11
           href: manage-windows-11-endpoints.md
+        - name: Connection endpoints for Windows 10, version 21H2
+          href: manage-windows-21h2-endpoints.md
         - name: Connection endpoints for Windows 10, version 21H1
           href: manage-windows-21H1-endpoints.md
         - name: Connection endpoints for Windows 10, version 20H2
