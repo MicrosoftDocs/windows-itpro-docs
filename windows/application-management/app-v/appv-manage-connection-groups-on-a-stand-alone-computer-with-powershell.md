@@ -69,10 +69,10 @@ This topic explains the following procedures:
 
 2.  Use the following cmdlets, and add the optional **–UserSID** parameter, where **-UserSID** represents the end user’s security identifier (SID):
 
-|Cmdlet|Examples|
-|--- |--- |
-|Enable-AppVClientConnectionGroup|Enable-AppVClientConnectionGroup "ConnectionGroupA" -UserSID S-1-2-34-56789012-3456789012-345678901-2345|
-|Disable-AppVClientConnectionGroup|Disable-AppVClientConnectionGroup "ConnectionGroupA" -UserSID S-1-2-34-56789012-3456789012-345678901-2345|
+    |Cmdlet|Examples|
+    |--- |--- |
+    |Enable-AppVClientConnectionGroup|Enable-AppVClientConnectionGroup "ConnectionGroupA" -UserSID S-1-2-34-56789012-3456789012-345678901-2345|
+    |Disable-AppVClientConnectionGroup|Disable-AppVClientConnectionGroup "ConnectionGroupA" -UserSID S-1-2-34-56789012-3456789012-345678901-2345|
 
 ## To allow only administrators to enable connection groups
 
