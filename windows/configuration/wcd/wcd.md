@@ -18,7 +18,7 @@ This section describes the settings that you can configure in [provisioning pack
 
 ## Edition that each group of settings applies to
 
-| Setting group | Desktop editions | Surface Hub | HoloLens | IoT Core |
+| Setting group | Windows client | Surface Hub | HoloLens | IoT Core |
 | --- | :---: | :---: | :---: | :---: | 
 | [AccountManagement](wcd-accountmanagement.md) |  |  | ✔️ |  |
 | [Accounts](wcd-accounts.md) | ✔️ | ✔️ | ✔️ | ✔️ |

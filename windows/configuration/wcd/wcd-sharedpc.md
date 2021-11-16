@@ -20,9 +20,9 @@ Use SharedPC settings to optimize Windows 10 for shared use scenarios, such as t
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | ✔️  |  |  |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| All settings | ✔️  |  |  |  |
 
 ## AccountManagement
 
