@@ -110,15 +110,49 @@ The enrollment server can decline enrollment messages using the SOAP Fault forma
 </s:envelope>
 ```
 
-|Namespace|Subcode|Error|Description|HRESULT|
-|--- |--- |--- |--- |--- |
-|s:|MessageFormat|MENROLL_E_DEVICE_MESSAGE_FORMAT_ERROR|Invalid message from the Mobile Device Management (MDM) server.|80180001|
-|s:|Authentication|MENROLL_E_DEVICE_AUTHENTICATION_ERROR|The Mobile Device Management (MDM) server failed to authenticate the user. Try again or contact your system administrator.|80180002|
-|s:|Authorization|MENROLL_E_DEVICE_AUTHORIZATION_ERROR|The user is not authorized to enroll to Mobile Device Management (MDM). Try again or contact your system administrator.|80180003|
-|s:|CertificateRequest|MENROLL_E_DEVICE_CERTIFICATEREQUEST_ERROR|The user has no permission for the certificate template or the certificate authority is unreachable. Try again or contact your system administrator.|80180004|
-|s:|EnrollmentServer|MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR|The Mobile Device Management (MDM) server encountered an error. Try again or contact your system administrator.|80180005|
-|a:|InternalServiceFault|MENROLL_E_DEVICE_INTERNALSERVICE_ERROR|There was an unhandled exception on the Mobile Device Management (MDM) server. Try again or contact your system administrator.|80180006|
-|a:|InvalidSecurity|MENROLL_E_DEVICE_INVALIDSECURITY_ERROR|The Mobile Device Management (MDM) server was not able to validate your account. Try again or contact your system administrator.|80180007|
+**Sample error messages**
+
+- **Namespace**: `s:`
+  - **Subcode**: MessageFormat
+  - **Error**: MENROLL_E_DEVICE_MESSAGE_FORMAT_ERROR
+  - **Description**: Invalid message from the Mobile Device Management (MDM) server.
+  - **HRESULT**: 80180001
+
+- **Namespace**: `s:`
+  - **Subcode**: Authentication
+  - **Error**: MENROLL_E_DEVICE_AUTHENTICATION_ERROR
+  - **Description**: The Mobile Device Management (MDM) server failed to authenticate the user. Try again or contact your system administrator.
+  - **HRESULT**: 80180002
+
+- **Namespace**: `s:`
+  - **Subcode**: Authorization
+  - **Error**: MENROLL_E_DEVICE_AUTHORIZATION_ERROR
+  - **Description**: The user is not authorized to enroll to Mobile Device Management (MDM). Try again or contact your system administrator.
+  - **HRESULT**: 80180003
+
+- **Namespace**: `s:`
+  - **Subcode**: CertificateRequest
+  - **Error**: MENROLL_E_DEVICE_CERTIFICATEREQUEST_ERROR
+  - **Description**: The user has no permission for the certificate template or the certificate authority is unreachable. Try again or contact your system administrator.
+  - **HRESULT**: 80180004
+
+- **Namespace**: `s:`
+  - **Subcode**: EnrollmentServer
+  - **Error**: MENROLL_E_DEVICE_CONFIGMGRSERVER_ERROR
+  - **Description**: The Mobile Device Management (MDM) server encountered an error. Try again or contact your system administrator.
+  - **HRESULT**: 80180005
+
+- **Namespace**: `a:`
+  - **Subcode**: InternalServiceFault
+  - **Error**: MENROLL_E_DEVICE_INTERNALSERVICE_ERROR
+  - **Description**: There was an unhandled exception on the Mobile Device Management (MDM) server. Try again or contact your system administrator.
+  - **HRESULT**: 80180006
+
+- **Namespace**: `a:`
+  - **Subcode**: InvalidSecurity
+  - **Error**: MENROLL_E_DEVICE_INVALIDSECURITY_ERROR
+  - **Description**: The Mobile Device Management (MDM) server was not able to validate your account. Try again or contact your system administrator.
+  - **HRESULT**: 80180007
 
 In Windows 10, version 1507, we added the deviceenrollmentserviceerror element. Here is an example:
 
@@ -152,15 +186,42 @@ In Windows 10, version 1507, we added the deviceenrollmentserviceerror element.
 </s:envelope>
 ```
 
-|Subcode|Error|Description|HRESULT|
-|--- |--- |--- |--- |
-|DeviceCapReached|MENROLL_E_DEVICECAPREACHED|The account has too many devices enrolled to Mobile Device Management (MDM). Delete or unenroll old devices to fix this error.|80180013|
-|DeviceNotSupported|MENROLL_E_DEVICENOTSUPPORTED|The Mobile Device Management (MDM) server doesn't support this platform or version, consider upgrading your device.|80180014|
-|NotSupported|MENROLL_E_NOT_SUPPORTED|Mobile Device Management (MDM) is generally not supported for this device.|80180015|
-|NotEligibleToRenew|MENROLL_E_NOTELIGIBLETORENEW|The device is attempting to renew the Mobile Device Management (MDM) certificate, but the server rejected the request. Check renew schedule on the device.|80180016|
-|InMaintenance|MENROLL_E_INMAINTENANCE|The Mobile Device Management (MDM) server states your account is in maintenance, try again later.|80180017|
-|UserLicense|MENROLL_E_USER_LICENSE|There was an error with your Mobile Device Management (MDM) user license. Contact your system administrator.|80180018|
-|InvalidEnrollmentData|MENROLL_E_ENROLLMENTDATAINVALID|The Mobile Device Management (MDM) server rejected the enrollment data. The server may not be configured correctly.|80180019|
+**Sample error messages**
+
+- **Subcode**: DeviceCapReached
+  - **Error**: MENROLL_E_DEVICECAPREACHED
+  - **Description**: The account has too many devices enrolled to Mobile Device Management (MDM). Delete or unenroll old devices to fix this error.
+  - **HRESULT**: 80180013
+
+- **Subcode**: DeviceNotSupported
+  - **Error**: MENROLL_E_DEVICENOTSUPPORTED
+  - **Description**: The Mobile Device Management (MDM) server doesn't support this platform or version, consider upgrading your device.
+  - **HRESULT**: 80180014
+
+- **Subcode**: NotSupported
+  - **Error**: MENROLL_E_NOT_SUPPORTED
+  - **Description**: Mobile Device Management (MDM) is generally not supported for this device.
+  - **HRESULT**: 80180015
+
+- **Subcode**: NotEligibleToRenew
+  - **Error**: MENROLL_E_NOTELIGIBLETORENEW
+  - **Description**: The device is attempting to renew the Mobile Device Management (MDM) certificate, but the server rejected the request. Check renew schedule on the device.
+  - **HRESULT**: 80180016
+
+- **Subcode**: InMaintenance
+  - **Error**: MENROLL_E_INMAINTENANCE
+  - **Description**: The Mobile Device Management (MDM) server states your account is in maintenance, try again later.
+  - **HRESULT**: 80180017
+
+- **Subcode**: UserLicense
+  - **Error**: MENROLL_E_USER_LICENSE
+  - **Description**: There was an error with your Mobile Device Management (MDM) user license. Contact your system administrator.
+  - **HRESULT**: 80180018
+
+- **Subcode**: InvalidEnrollmentData
+  - **Error**: MENROLL_E_ENROLLMENTDATAINVALID
+  - **Description**: The Mobile Device Management (MDM) server rejected the enrollment data. The server may not be configured correctly.
+  - **HRESULT**: 80180019
 
 TraceID is a freeform text node which is logged. It should identify the server side state for this enrollment attempt. This information may be used by support to look up why the server declined the enrollment.
 
