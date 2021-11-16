@@ -201,68 +201,32 @@ You can use Group Policy to finish setting up Enterprise Site Discovery. If you 
 You can use both the WMI and XML settings individually or together:
 
 **To turn off Enterprise Site Discovery**
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>Off</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>Blank</td>
-    </tr>
-</table>
+
+|Setting name  |Option  |
+|---------|---------|
+|Turn on Site Discovery WMI output     | Off       |
+|Turn on Site Discovery XML output    | Blank       |
 
 **Turn on WMI recording only**
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>On</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>Blank</td>
-    </tr>
-</table>
+
+|Setting name  |Option |
+|---------|---------|
+|Turn on Site Discovery WMI output    | On        |
+|Turn on Site Discovery XML output    | Blank       |
 
 **To turn on XML recording only**
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>Off</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>XML file path</td>
-    </tr>
-</table>
+
+|Setting name  |Option  |
+|---------|---------|
+|Turn on Site Discovery WMI output     | Off        |
+|Turn on Site Discovery XML output     | XML file path        |
  
 **To turn on both WMI and XML recording**
-<table>
-    <tr>
-        <th>Setting name</th>
-        <th>Option</th>
-    </tr>
-    <tr>
-        <td>Turn on Site Discovery WMI output</td>
-        <td>On</td>
-    </tr>
-        <tr>
-        <td>Turn on Site Discovery XML output</td>
-        <td>XML file path</td>
-    </tr>
-</table>
+
+|Setting name  |Option  |
+|---------|---------|
+|Turn on Site Discovery WMI output     | On         |
+|Turn on Site Discovery XML output     | XML file path         |
 
 ## Use Configuration Manager to collect your data
 After you’ve collected your data, you’ll need to get the local files off of your employee’s computers. To do this, use the hardware inventory process in Configuration Manager, using one of these options:
