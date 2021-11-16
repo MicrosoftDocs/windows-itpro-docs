@@ -181,7 +181,7 @@ The following example removes a package for all users:
       </Target>
       <Meta><Format xmlns="syncml:metinf">xml</Format></Meta>
       <Data>
-          <Package Name="{PackageFullName}" RemoveForAllUsers=1 />
+          <Package Name="{PackageFullName}" RemoveForAllUsers="1" />
       </Data>
    </Item>
 </Exec>
