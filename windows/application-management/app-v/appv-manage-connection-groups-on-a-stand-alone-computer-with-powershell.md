@@ -84,9 +84,9 @@ This topic explains the following procedures:
 
 2.  Run the following cmdlet and parameter:
 
-|Cmdlet|Parameter and values|Example|
-|--- |--- |--- |
-|Set-AppvClientConfiguration|-RequirePublishAsAdmin<li>0 - False<li>1 - True|Set-AppvClientConfiguration -RequirePublishAsAdmin<br>1|
+    |Cmdlet|Parameter and values|Example|
+    |--- |--- |--- |
+    |Set-AppvClientConfiguration|-RequirePublishAsAdmin<li>0 - False<li>1 - True|Set-AppvClientConfiguration -RequirePublishAsAdmin<br>1|
 
 <br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
