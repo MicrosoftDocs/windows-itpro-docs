@@ -268,7 +268,8 @@ A new security policy setting
 
 We’ve continued to work on the **Current threats** area in  [Virus & threat protection](/windows/security/threat-protection/windows-defender-security-center/wdsc-virus-threat-protection), which now displays all threats that need action. You can quickly take action on threats from this screen: 
 
-![Virus & threat protection settings in Windows S mode.](../images/virus-and-threat-protection.png)
+> [!div class="mx-imgBorder"]
+> ![Virus & threat protection settings in Windows S mode.](../images/virus-and-threat-protection.png)
 
 ## Deployment
 
