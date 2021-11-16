@@ -14,16 +14,12 @@ ms.date: 06/26/2017
 
 # NAPDEF CSP
 
-
 The NAPDEF configuration service provider is used to add, modify, or delete WAP network access points (NAPs). For complete information about these settings, see the standard WAP specification WAP-183-ProvCont-20010724-a.
 
-> **Note**  You cannot use NAPDEF CSP on the desktop to update the Push Proxy Gateway (PPG) list.
+> [!Note]
+> You cannot use NAPDEF CSP on the desktop to update the Push Proxy Gateway (PPG) list.
 > 
-> 
-> 
-> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
-
- 
+> This configuration service provider requires the `ID_CAP_CSP_FOUNDATION` and `ID_CAP_NETWORKING_ADMIN` capabilities to be accessed from a network configuration application. 
 
 The following shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **initial bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
 
@@ -77,9 +73,8 @@ Specifies the protocol used to authenticate the user.
 
 The only permitted values for this element are "POP" (Password Authentication Protocol) and "CHAP" (Challenge Handshake Authentication Protocol) authentication protocols. Note
 
-> **Note**  **AuthName** and **AuthSecret** are not created if **AuthType** is not included in the initial device configuration. **AuthName** and **AuthSecret** cannot be changed if **AuthType** is not included in the provisioning XML used to make the change.
-
- 
+> [!Note]
+> **AuthName** and **AuthSecret** are not created if **AuthType** is not included in the initial device configuration. **AuthName** and **AuthSecret** cannot be changed if **AuthType** is not included in the provisioning XML used to make the change. 
 
 <a href="" id="bearer"></a>**BEARER**  
 Specifies the type of bearer.
@@ -124,7 +119,6 @@ The name of the *NAPID* element is the same as the value passed during initial b
 
 ## Microsoft Custom Elements
 
-
 The following table shows the Microsoft custom elements that this configuration service provider supports for OMA Client Provisioning.
 
 |Elements|Available|
@@ -134,17 +128,6 @@ The following table shows the Microsoft custom elements that this configuration 
 |Nocharacteristic|Yes|
 |Characteristic-query|Yes|
 
-## Related topics
-
+## Related articles
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-
