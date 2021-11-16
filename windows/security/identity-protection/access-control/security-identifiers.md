@@ -20,7 +20,9 @@ ms.reviewer:
 
 **Applies to**
 -   Windows 10
+-   Windows 11
 -   Windows Server 2016
+-   Windows Server 2019
 
 This topic for the IT professional describes security identifiers and how they work in regards to accounts and groups in the Windows operating system.
 
@@ -307,6 +309,19 @@ Capability Security Identifiers (SIDs) are used to uniquely and immutably identi
 All Capability SIDs that the operating system is aware of are stored in the Windows Registry in the path `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities'. Any Capability SID added to Windows by first or third-party applications will be added to this location.
 
 ## Examples of registry keys taken from Windows 10, version 1909, 64-bit Enterprise edition
+
+You may see the following registry keys under AllCachedCapabilities:
+
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_DevUnlock
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_DevUnlock_Internal
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Enterprise
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_General
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Restricted
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SecurityManager\CapabilityClasses\AllCachedCapabilities\capabilityClass_Windows
+
+All Capability SIDs are prefixed by S-1-15-3
+
+## Examples of registry keys taken from Windows 11, version 21H2, 64-bit Enterprise edition
 
 You may see the following registry keys under AllCachedCapabilities:
 
