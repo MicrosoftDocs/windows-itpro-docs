@@ -48,7 +48,7 @@ This version of Window 10 includes security improvements for threat protection, 
 
 The [Microsoft Defender for Endpoint](/windows/security/threat-protection/index) platform includes the security pillars shown in the following diagram. In this version of Windows, Defender for Endpoint includes powerful analytics, security stack integration, and centralized management for better detection, prevention, investigation, response, and management. 
 
-![Microsoft Defender for Endpoint.](../images/wdatp.png)
+[ ![Microsoft Defender for Endpoint.](../images/wdatp.png) ](../images/wdatp.png#lightbox)
 
 ##### Attack surface reduction 
 
