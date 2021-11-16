@@ -113,16 +113,16 @@ Below is an alert example:
 
 ```xml
 <Alert>
-        <CmdID>1</CmdID>
-        <Data>1224</Data>
-        <Item>
-            <Meta>
-                <Type xmlns=”syncml:metinf”>com.microsoft/MDM/LoginStatus</Type>
-                <Format xmlns=”syncml:metinf”>chr</Format>
-            </Meta>
-            <Data>user</Data>
-        </Item>
-    </Alert>
+    <CmdID>1</CmdID>
+    <Data>1224</Data>
+    <Item>
+        <Meta>
+            <Type xmlns=”syncml:metinf”>com.microsoft/MDM/LoginStatus</Type>
+            <Format xmlns=”syncml:metinf”>chr</Format>
+        </Meta>
+        <Data>user</Data>
+    </Item>
+</Alert>
 ```
 
 The server notifies the device whether it is a user targeted or device targeted configuration by a prefix to the management node’s LocURL, with ./user for user targeted configuration, or ./device for device targeted configuration. By default, if no prefix with ./device or ./user, it is device targeted configuration.
