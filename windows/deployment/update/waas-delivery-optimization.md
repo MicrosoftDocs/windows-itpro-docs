@@ -39,6 +39,9 @@ For information about setting up Delivery Optimization, including tips for the b
 
 - New peer selection options: Currently the available options include: 0 = NAT, 1 = Subnet mask, and 2 = Local Peer Discovery. The subnet mask option applies to both Download Modes LAN (1) and Group (2). If Group mode is set, Delivery Optimization will connect to locally discovered peers that are also part of the same Group (have the same Group ID)."
 - Local Peer Discovery: a new option for **Restrict Peer Selection By** (in Group Policy) or **DORestrictPeerSelectionBy** (in MDM). This option restricts the discovery of local peers using the DNS-SD protocol. When you set Option 2, Delivery Optimization will restrict peer selection to peers that are locally discovered (using DNS-SD). If you also enabled Group mode, Delivery Optimization will connect to locally discovered peers that are also part of the same group (that is, those which have the same Group ID).
+
+**Please Note:** that the "Local peer discovery (DNS-SD)" option can only be set via MDM delivered policies on Windows 11 builds. This feature can be enabled in supported Windows 10 builds by setting the "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\DeliveryOptimization\DORestrictPeerSelectionBy" value to "2". More information can be found here - https://docs.microsoft.com/en-us/windows/deployment/update/waas-delivery-optimization-reference.
+
 - Starting with Windows 10, version 2006 (and in Windows 11), the Bypass option of [Download Mode](waas-delivery-optimization-reference.md#download-mode) is no longer used.
 
 ## Requirements
