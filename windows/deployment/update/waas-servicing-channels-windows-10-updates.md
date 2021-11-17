@@ -43,7 +43,7 @@ The General Availability Channel is the default servicing channel for all Window
 >The LTSC edition is only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
 >[!NOTE]
->Devices will automatically receive updates from the Semi-Annual Channel, unless they are configured to receive preview updates through the Windows Insider Program.
+>Devices will automatically receive updates from the General Availability Channel, unless they are configured to receive preview updates through the Windows Insider Program.
 
 
 ## Enroll devices in the Windows Insider Program
