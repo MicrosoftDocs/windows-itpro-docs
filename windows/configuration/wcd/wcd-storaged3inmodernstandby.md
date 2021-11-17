@@ -22,6 +22,6 @@ Use **StorageD3InModernStandby** to enable or disable low-power state (D3) durin
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | ✔️  | ✔️ | ✔️ |  | ✔️ |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| All settings | ✔️  | ✔️ |  | ✔️ |

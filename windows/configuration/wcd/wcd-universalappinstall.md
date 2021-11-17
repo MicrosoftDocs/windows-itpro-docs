@@ -22,13 +22,13 @@ Use UniversalAppInstall settings to install Windows apps from the Microsoft Stor
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [DeviceContextApp](#devicecontextapp) | ✔️ |  | ✔️ |  |   |
-| [DeviceContextAppLicense](#devicecontextapplicense) | ✔️ |  | ✔️ |  |   |
-| [StoreInstall](#storeinstall) | ✔️ | ✔️ | ✔️ |  | ✔️  |
-| [UserContextApp](#usercontextapp) | ✔️ | ✔️ | ✔️ |  | ✔️  |
-| [UserContextAppLicense](#usercontextapplicense) | ✔️ | ✔️ | ✔️ |  | ✔️  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| [DeviceContextApp](#devicecontextapp) | ✔️ | ✔️ |  |   |
+| [DeviceContextAppLicense](#devicecontextapplicense) | ✔️ | ✔️ |  |   |
+| [StoreInstall](#storeinstall) | ✔️ |  ✔️ |  | ✔️  |
+| [UserContextApp](#usercontextapp) | ✔️ |  ✔️ |  | ✔️  |
+| [UserContextAppLicense](#usercontextapplicense) | ✔️ | ✔️ |  | ✔️  |
 
 ## DeviceContextApp
 
