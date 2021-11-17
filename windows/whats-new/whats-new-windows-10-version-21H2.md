@@ -24,7 +24,7 @@ Windows 10, version 21H2 is the next feature update. This article lists the new 
 Windows 10, version 21H2 is an [H2-targeted release](/lifecycle/faq/windows#what-is-the-servicing-timeline-for-a-version--feature-update--of-windows-10-), and has the following servicing schedule:
 
 - **Windows 10 Professional**: Serviced for 24 months from the release date.
-- **Windows 10 Enterprise**: Serviced for 36 months from the release date.
+- **Windows 10 Enterprise**: Serviced for 30 months from the release date.
 
 Windows 10, version 21H2 is available through Windows Server Update Services (including Configuration Manager), Windows Update for Business, and the Volume Licensing Service Center (VLSC). For more information, see [How to get the Windows 10 November 2021 Update](https://blogs.windows.com/windowsexperience/2021/11/16/how-to-get-the-windows-10-november-2021-update/) and [IT tools to support Windows 10, version 21H2 blog](https://aka.ms/tools-for-21h2).
 
