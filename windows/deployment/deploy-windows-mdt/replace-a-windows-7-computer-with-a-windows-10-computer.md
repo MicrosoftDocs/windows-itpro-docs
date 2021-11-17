@@ -48,7 +48,7 @@ On **MDT01**:
 
 1. Open the Deployment Workbench, under **Deployment Shares** right-click **MDT Production**, click **Properties**, and then click the **Rules** tab.
 2. Change the **SkipUserData=YES** option to **NO**, and click **OK**.
-3. Right-click **MDT Production** and click **Update Deployment Share**. Click **Next**, **Next**, and **Finish** to complete the Update Deployment Share Wizard with the default setttings.
+3. Right-click **MDT Production** and click **Update Deployment Share**. Click **Next**, **Next**, and **Finish** to complete the Update Deployment Share Wizard with the default settings.
 
 ### Create and share the MigData folder
 
@@ -151,7 +151,7 @@ On **HV01**:
     * Updates the operating system via your local Windows Server Update Services (WSUS) server.
     * Restores the USMT backup from PC0002.
 
-You can view progress of the process by clicking the Monitoring node in the Deployment Workbrench on MDT01.
+You can view progress of the process by clicking the Monitoring node in the Deployment Workbench on MDT01.
 
 ![Monitor progress.](../images/mdt-replace.png)
 

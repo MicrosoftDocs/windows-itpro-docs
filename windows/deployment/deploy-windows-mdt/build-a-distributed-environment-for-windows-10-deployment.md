@@ -62,7 +62,7 @@ On **MDT01**:
 Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
 ```
 
-2. Wait for installation to comlete, and then verify that the installation was successful. See the following output:
+2. Wait for installation to complete, and then verify that the installation was successful. See the following output:
 
 ```output
 PS C:\> Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
@@ -82,7 +82,7 @@ On **MDT02**:
 Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
 ```
 
-2. Wait for installation to comlete, and then verify that the installation was successful. See the following  output:
+2. Wait for installation to complete, and then verify that the installation was successful. See the following  output:
 
 ```output
 PS C:\> Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
