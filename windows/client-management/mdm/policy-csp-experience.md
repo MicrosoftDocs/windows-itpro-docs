@@ -1234,7 +1234,8 @@ The values for this policy are 0, 1, 2, and 3. This policy defaults to 0 if not 
 -   2 - Hide: The Chat icon will be hidden by default. Users can show or hide it in Settings.
 -   3 - Disabled: The Chat icon will not be displayed, and users cannot show or hide it in Settings.
 
-Note: Options 1 and 2 (Show, Hide) only work on first boot whereas option 3 - Disabled will work on all attempts.
+> [!NOTE]
+> Options 1 and 2 (Show, Hide) only work on the first sign-in attempt whereas Option 3 (Disabled) works on all attempts.
 
 <!--/SupportedValues-->
 <!--/Policy-->
