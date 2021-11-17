@@ -1,12 +1,12 @@
 ---
-title: Deploy a Windows 11 image using MDT (Windows 11)
-description: This topic will show you how to take your reference image for Windows 11, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT).
+title: Deploy a Windows 10 image using MDT (Windows 10)
+description: This topic will show you how to take your reference image for Windows 10, and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT).
 ms.assetid: 1d70a3d8-1b1d-4051-b656-c0393a93f83c
 ms.reviewer: 
 manager: dougeby
 ms.author: greglin
 keywords: deployment, automate, tools, configure
-ms.prod: w11
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
@@ -16,13 +16,12 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Deploy a Windows 11 image using MDT
+# Deploy a Windows 10 image using MDT
 
 **Applies to**
-- Windows 10
-- Windows 11
+-   Windows 10
 
-This topic will show you how to take your reference image for Windows 11 [that was just created](create-a-windows-11-reference-image.md), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
+This topic will show you how to take your reference image for Windows 10 (that was just [created](create-a-windows-10-reference-image.md)), and deploy that image to your environment using the Microsoft Deployment Toolkit (MDT). 
 
 We will prepare for this by creating an MDT deployment share that is used solely for image deployment. Separating the processes of creating reference images from the processes used to deploy them in production allows greater control of on both processes. We will configure Active Directory permissions, configure the deployment share, create a new task sequence, and add applications, drivers, and rules.
 
@@ -31,7 +30,7 @@ For the purposes of this topic, we will use four computers: DC01, MDT01, HV01 an
 - DC01 is a domain controller 
 - MDT01 is a domain member server 
 - HV01 is a Hyper-V server 
-- PC0005 is a blank device to which we will deploy Windows 11
+- PC0005 is a blank device to which we will deploy Windows 10
 
 MDT01 and PC0005 are members of the domain contoso.com for the fictitious Contoso Corporation.  HV01 used to test deployment of PC0005 in a virtual environment.
 
@@ -90,8 +89,11 @@ The steps for creating the deployment share for production are the same as when 
 1. Ensure you are signed on as: contoso\administrator.
 2. In the Deployment Workbench console, right-click **Deployment Shares** and select **New Deployment Share**.
 3. On the **Path** page, in the **Deployment share path** text box, type **D:\\MDTProduction** and click **Next**.
+
 4. On the **Share** page, in the **Share name** text box, type **MDTProduction$** and click **Next**.
+
 5. On the **Descriptive Name** page, in the **Deployment share description** text box, type **MDT Production** and click **Next**.
+
 6. On the **Options** page, accept the default settings and click **Next** twice, and then click **Finish**.
 7. Using File Explorer, verify that you can access the **\\\\MDT01\\MDTProduction$** share.
 
@@ -111,22 +113,26 @@ On **MDT01**:
 
 ## Step 3: Add a custom image
 
-The next step is to add a reference image into the deployment share with the setup files required to successfully deploy Windows 11. When adding a custom image, you still need to copy setup files (an option in the wizard) because Windows 10/11 stores additional components in the Sources\\SxS folder which is outside the image and may be required when installing components.
+The next step is to add a reference image into the deployment share with the setup files required to successfully deploy Windows 10. When adding a custom image, you still need to copy setup files (an option in the wizard) because Windows 10 stores additional components in the Sources\\SxS folder which is outside the image and may be required when installing components.
 
-### Add the Windows 11 Enterprise x64 custom image
+### Add the Windows 10 Enterprise x64 RTM custom image
 
-In these steps, we assume that you have completed the steps in the [Create a Windows 11 reference image](create-a-windows-11-reference-image.md) topic, so you have a Windows 11 reference image at **D:\\MDTBuildLab\\Captures\REFW11X64-001.wim** on MDT01.
+In these steps, we assume that you have completed the steps in the [Create a Windows 10 reference image](create-a-windows-10-reference-image.md) topic, so you have a Windows 10 reference image at **D:\\MDTBuildLab\\Captures\REFW10X64-001.wim** on MDT01.
 
-1.  Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Production**; select the **Operating Systems** node, and create a folder named **Windows 11**.
+1.  Using the Deployment Workbench, expand the **Deployment Shares** node, and then expand **MDT Production**; select the **Operating Systems** node, and create a folder named **Windows 10**.
 2.  Right-click the **Windows 10** folder and select **Import Operating System**.
-3.  On the **OS Type** page, select **Custom image file** and click **Next**.
-4.  On the **Image** page, in the **Source file** text box, browse to **D:\\MDTBuildLab\\Captures\\REFW11X64-001.wim** and click **Next**.
-5.  On the **Setup** page, select the **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path** option; in the **Setup source directory** text box, browse to **D:\\MDTBuildLab\\Operating Systems\\W11EX64** and click **Next**.
-6.  On the **Destination** page, in the **Destination directory name** text box, type **W11EX64**, click **Next** twice, and then click **Finish**.
-7.  After adding the operating system, double-click the added operating system name in the **Operating Systems / Windows 11** node and change the name to **Windows 11 Enterprise x64 Custom Image**.
 
-> [!NOTE]
-> The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT now uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
+3.  On the **OS Type** page, select **Custom image file** and click **Next**.
+
+4.  On the **Image** page, in the **Source file** text box, browse to **D:\\MDTBuildLab\\Captures\\REFW10X64-001.wim** and click **Next**.
+
+5.  On the **Setup** page, select the **Copy Windows 7, Windows Server 2008 R2, or later setup files from the specified path** option; in the **Setup source directory** text box, browse to **D:\\MDTBuildLab\\Operating Systems\\W10EX64RTM** and click **Next**.
+
+6.  On the **Destination** page, in the **Destination directory name** text box, type **W10EX64RTM**, click **Next** twice, and then click **Finish**.
+7.  After adding the operating system, double-click the added operating system name in the **Operating Systems / Windows 10** node and change the name to **Windows 10 Enterprise x64 RTM Custom Image**.
+
+>[!NOTE]
+>The reason for adding the setup files has changed since earlier versions of MDT. MDT 2010 used the setup files to install Windows. MDT uses DISM to apply the image; however, you still need the setup files because some components in roles and features are stored outside the main image.
  
 
 ![imported OS.](../images/fig2-importedos.png)
@@ -139,15 +145,21 @@ When you configure your MDT Build Lab deployment share, you can also add applica
 
 On **MDT01**:
 
-1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2100720091_en_US.exe) to **D:\\setup\\adobe** on MDT01.
-2. Extract the .exe file that you downloaded to an .msi (ex: .\AcroRdrDC2100720091_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
+1. Download the Enterprise distribution version of [Adobe Acrobat Reader DC](https://get.adobe.com/reader/enterprise/) (AcroRdrDC2100520060_en_US.exe) to **D:\\setup\\adobe** on MDT01.
+2. Extract the .exe file that you downloaded to an .msi (ex: .\AcroRdrDC2100520060_en_US.exe -sfx_o"d:\setup\adobe\install\" -sfx_ne).
 3. In the Deployment Workbench, expand the **MDT Production** node and navigate to the **Applications** node.
 4. Right-click the **Applications** node, and create a new folder named **Adobe**.
+
 5. In the **Applications** node, right-click the **Adobe** folder and select **New Application**.
+
 6. On the **Application Type** page, select the **Application with source files** option and click **Next**.
+
 7. On the **Details** page, in the **Application Name** text box, type **Install - Adobe Reader** and click *Next**.
+
 8. On the **Source** page, in the **Source Directory** text box, browse to **D:\\setup\\adobe\\install** and click **Next**.
+
 9. On the **Destination** page, in the **Specify the name of the directory that should be created** text box, type **Install - Adobe Reader** and click **Next**.
+
 10. On the **Command Details** page, in the **Command Line** text box, type **msiexec /i AcroRead.msi /q**, click **Next** twice, and then click **Finish**.
 
     ![acroread image.](../images/acroread.png)
@@ -156,10 +168,7 @@ On **MDT01**:
 
 ## Step 5: Prepare the drivers repository
 
-> [!IMPORTANT]
-> The section below on preparing the drivers repository uses Windows 10-compatible devices and drivers as examples. These examples do not infer Windows 11 compatibility. Check with your device manufacturer before deploying drivers, and verify that the device meets Windows 11 hardware requirements. For more information, see [Windows 11 requirements](/windows/whats-new/windows-11-requirements).
-
-In order to deploy Windows 10 or Windows 11 with MDT successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
+In order to deploy Windows 10 with MDT successfully, you need drivers for the boot images and for the actual operating system. This section will show you how to add drivers for the boot image and operating system, using the following hardware models as examples:
 -   Lenovo ThinkPad T420
 -   Dell Latitude 7390
 -   HP EliteBook 8560w
@@ -167,8 +176,8 @@ In order to deploy Windows 10 or Windows 11 with MDT successfully, you need dri
 
 For boot images, you need to have storage and network drivers; for the operating system, you need to have the full suite of drivers.
 
-> [!NOTE]
-> You should only add drivers to the Windows PE images if the default drivers don't work. Adding drivers that are not necessary will only make the boot image larger and potentially delay the download time.
+>[!NOTE]
+>You should only add drivers to the Windows PE images if the default drivers don't work. Adding drivers that are not necessary will only make the boot image larger and potentially delay the download time.
  
 ### Create the driver source structure in the file system
 
@@ -183,8 +192,8 @@ On **MDT01**:
 2.  In the **D:\\drivers** folder, create the following folder structure:
     1.  WinPE x86
     2.  WinPE x64
-    3.  Windows 11 x64
-3.  In the new Windows 11 x64 folder, create the following folder structure:
+    3.  Windows 10 x64
+3.  In the new Windows 10 x64 folder, create the following folder structure:
     -   Dell Inc.
         -   Latitude E7450
     -   Hewlett-Packard
@@ -204,8 +213,8 @@ When you import drivers to the MDT driver repository, MDT creates a single insta
 2.  In the **Out-Of-Box Drivers** node, create the following folder structure:
     1.  WinPE x86
     2.  WinPE x64
-    3.  Windows 11 x64
-3.  In the **Windows 11 x64** folder, create the following folder structure:
+    3.  Windows 10 x64
+3.  In the **Windows 10 x64** folder, create the following folder structure:
     -   Dell Inc.
         -   Latitude E7450
     -   Hewlett-Packard
@@ -236,20 +245,24 @@ The Out-of-Box Drivers structure in the Deployment Workbench.
 ### Create the selection profiles for boot image drivers
 
 By default, MDT adds any storage and network drivers that you import to the boot images. However, you should add only the drivers that are necessary to the boot image. You can control which drivers are added by using selection profiles.
-The drivers that are used for the boot images (Windows PE) are Windows 11 drivers. If you can’t locate Windows 11 drivers for your device, a Windows 10, Windows 8.1 or Windows 7 driver will most likely work, but Windows 11 drivers should be your first choice.
+The drivers that are used for the boot images (Windows PE) are Windows 10 drivers. If you can’t locate Windows 10 drivers for your device, a Windows 7 or Windows 8.1 driver will most likely work, but Windows 10 drivers should be your first choice.
 
 On **MDT01**:
 
 1.  In the Deployment Workbench, under the **MDT Production** node, expand the **Advanced Configuration** node, right-click the **Selection Profiles** node, and select **New Selection Profile**.
 2.  In the New Selection Profile Wizard, create a selection profile with the following settings:
-    1.  Selection Profile name: **WinPE x86**
+    1.  Selection Profile name: WinPE x86
     2.  Folders: Select the WinPE x86 folder in Out-of-Box Drivers.
     3. Click **Next**, **Next** and **Finish**.
 3.  Right-click the **Selection Profiles** node again, and select **New Selection Profile**.
 4.  In the New Selection Profile Wizard, create a selection profile with the following settings:
-    1.  Selection Profile name: **WinPE x64**
+    1.  Selection Profile name: WinPE x64
     2.  Folders: Select the WinPE x64 folder in Out-of-Box Drivers.
     3.  Click **Next**, **Next** and **Finish**.
+
+    ![figure 5.](../images/fig5-selectprofile.png)
+
+    Creating the WinPE x64 selection profile.
 
 ### Extract and import drivers for the x64 boot image
 
@@ -257,7 +270,7 @@ Windows PE supports all the hardware models that we have, but here you learn to 
 
 On **MDT01**:
 
-1. Download **PROWinx64.exe** from Intel.com (ex: [Intel® Network Adapter Driver](https://www.intel.com/content/www/us/en/download/16765/intel-network-adapter-driver-for-windows-8-final-release.html)).
+1. Download **PROWinx64.exe** from Intel.com (ex: [PROWinx64.exe](https://downloadcenter.intel.com/downloads/eula/25016/Intel-Network-Adapter-Driver-for-Windows-10?httpDown=https%3A%2F%2Fdownloadmirror.intel.com%2F25016%2Feng%2FPROWinx64.exe)).
 2.  Extract PROWinx64.exe to a temporary folder - in this example to the **C:\\Tmp\\ProWinx64** folder.
     a. **Note**: Extracting the .exe file manually requires an extraction utility. You can also run the .exe and it will self-extract files to the **%userprofile%\AppData\Local\Temp\RarSFX0** directory. This directory is temporary and will be deleted when the .exe terminates. 
 3.  Using File Explorer, create the **D:\\Drivers\\WinPE x64\\Intel PRO1000** folder.
@@ -279,11 +292,11 @@ In this example, we assume you have downloaded and extracted the drivers using T
 
 On **MDT01**:
 
-1. In the Deployment Workbench, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 11 x64** node, expand the **Lenovo** node.
+1. In the Deployment Workbench, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Lenovo** node.
 
 2.  Right-click the **30A6003TUS** folder and select **Import Drivers** and use the following Driver source directory to import drivers: 
 
-    **D:\\Drivers\\Windows 11 x64\\Lenovo\\ThinkStation P500 (30A6003TUS)**
+    **D:\\Drivers\\Windows 10 x64\\Lenovo\\ThinkStation P500 (30A6003TUS)**
 
     The folder you select and all sub-folders will be checked for drivers, expanding any .cab files that are present and searching for drivers.
 
@@ -295,29 +308,29 @@ In these steps, we assume you have downloaded and extracted the CAB file for the
 
 On **MDT01**:
 
-1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 11 x64** node, expand the **Dell Inc.** node.
+1. In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Dell Inc.** node.
 
 2.  Right-click the **Latitude E7450** folder and select **Import Drivers** and use the following Driver source directory to import drivers: 
 
-    **D:\\Drivers\\Windows 11 x64\\Dell Inc.\\Latitude E7450**
+    **D:\\Drivers\\Windows 10 x64\\Dell Inc.\\Latitude E7450**
 
 ### For the HP EliteBook 8560w
 
 For the HP EliteBook 8560w, you use HP Image Assistant to get the drivers. The HP Image Assistant can be accessed on the [HP Support site](https://ftp.ext.hp.com/pub/caps-softpaq/cmit/HPIA.html).
 
-In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the **D:\\Drivers\\Windows 11 x64\\Hewlett-Packard\\HP EliteBook 8560w** folder.
+In these steps, we assume you have downloaded and extracted the drivers for the HP EliteBook 8650w model to the **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w** folder.
 
 On **MDT01**:
 
-1.  In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 11 x64** node, expand the **Hewlett-Packard** node.
+1.  In the **Deployment Workbench**, in the **MDT Production** > **Out-Of-Box Drivers** > **Windows 10 x64** node, expand the **Hewlett-Packard** node.
 
 2.  Right-click the **HP EliteBook 8560w** folder and select **Import Drivers** and use the following Driver source directory to import drivers: 
 
-    **D:\\Drivers\\Windows 11 x64\\Hewlett-Packard\\HP EliteBook 8560w**
+    **D:\\Drivers\\Windows 10 x64\\Hewlett-Packard\\HP EliteBook 8560w**
 
 ### For the Microsoft Surface Laptop
 
-For the Microsoft Surface Laptop model, you find the drivers on the Microsoft website. In these steps we assume you have downloaded and extracted the Surface Laptop drivers to the **D:\\Drivers\\Windows 11 x64\\Microsoft\\Surface Laptop** folder.
+For the Microsoft Surface Laptop model, you find the drivers on the Microsoft website. In these steps we assume you have downloaded and extracted the Surface Laptop drivers to the **D:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Laptop** folder.
 
 On **MDT01**:
 
@@ -325,40 +338,40 @@ On **MDT01**:
 
 2.  Right-click the **Surface Laptop** folder and select **Import Drivers**; and use the following Driver source directory to import drivers: 
 
-    **D:\\Drivers\\Windows 11 x64\\Microsoft\\Surface Laptop**
+    **D:\\Drivers\\Windows 10 x64\\Microsoft\\Surface Laptop**
 
 ## Step 6: Create the deployment task sequence
 
-This section will show you how to create the task sequence used to deploy your production Windows 11 reference image. You will then configure the task sequence to enable patching via a Windows Server Update Services (WSUS) server.
+This section will show you how to create the task sequence used to deploy your production Windows 10 reference image. You will then configure the task sequence to enable patching via a Windows Server Update Services (WSUS) server.
 
-### Create a task sequence for Windows 11 Enterprise
+### Create a task sequence for Windows 10 Enterprise
 
 On **MDT01**:
 
-1. In the Deployment Workbench, under the **MDT Production** node, right-click **Task Sequences**, and create a folder named **Windows 11**.
+1. In the Deployment Workbench, under the **MDT Production** node, right-click **Task Sequences**, and create a folder named **Windows 10**.
 
-2. Right-click the new **Windows 11** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
-   - Task sequence ID: W11-X64-001
-   - Task sequence name: Windows 11 Enterprise x64 Custom Image
+2. Right-click the new **Windows 10** folder and select **New Task Sequence**. Use the following settings for the New Task Sequence Wizard:
+   - Task sequence ID: W10-X64-001
+   - Task sequence name: Windows 10 Enterprise x64 RTM Custom Image
    - Task sequence comments: Production Image
    - Template: Standard Client Task Sequence
-   - Select OS: Windows 11 Enterprise x64 Custom Image
+   - Select OS: Windows 10 Enterprise x64 RTM Custom Image
    - Specify Product Key: Do not specify a product key at this time
    - Full Name: Contoso
    - Organization: Contoso
    - Internet Explorer home page: https://www.contoso.com
    - Admin Password: Do not specify an Administrator Password at this time
 
-### Edit the Windows 11 task sequence
+### Edit the Windows 10 task sequence
 
-1. Continuing from the previous procedure, right-click the **Windows 11 Enterprise x64 Custom Image** task sequence, and select **Properties**.
+1. Continuing from the previous procedure, right-click the **Windows 10 Enterprise x64 RTM Custom Image** task sequence, and select **Properties**.
 
-2. On the **Task Sequence** tab, configure the **Windows 11 Enterprise x64 Custom Image** task sequence with the following settings:
+2. On the **Task Sequence** tab, configure the **Windows 10 Enterprise x64 RTM Custom Image** task sequence with the following settings:
 
    1.  Preinstall: After the **Enable BitLocker (Offline)** action, add a **Set Task Sequence Variable** action with the following settings:
        1.  Name: Set DriverGroup001
        2.  Task Sequence Variable: DriverGroup001
-       3.  Value: Windows 11 x64\\%Manufacturer%\\%Model%
+       3.  Value: Windows 10 x64\\%Manufacturer%\\%Model%
 
    2.  Configure the **Inject Drivers** action with the following settings:
        - Choose a selection profile: Nothing
@@ -473,7 +486,7 @@ On **MDT01**:
 11. Click **OK**.
 
     >[!NOTE]
-    >It might take a while for the Deployment Workbench to create the monitoring database and web service.
+    >It will take a while for the Deployment Workbench to create the monitoring database and web service.
  
     ![figure 8.](../images/mdt-07-fig08.png)
 
@@ -604,13 +617,13 @@ Like the MDT Build Lab deployment share, the MDT Production deployment share nee
 >[!NOTE]
 >The update process will take 5 to 10 minutes.
 
-## Step 8: Deploy the Windows 11 client image
+## Step 8: Deploy the Windows 10 client image
 
 These steps will walk you through the process of using task sequences to deploy Windows 10 images through a fully automated process. First, you need to add the boot image to Windows Deployment Services (WDS) and then start the deployment. In contrast with deploying images from the MDT Build Lab deployment share, we recommend using the Pre-Installation Execution Environment (PXE) to start the full deployments in the datacenter, even though you technically can use an ISO/CD or USB to start the process.
 
 ### Configure Windows Deployment Services
 
-You need to add the MDT Production Lite Touch x64 Boot image to WDS in preparation for the deployment. In this procedure, we assume that WDS is already installed and initialized on MDT01 as described in the [Prepare for Windows deployment](prepare-for-windows-deployment-with-mdt.md#install-and-initialize-wds) article. 
+You need to add the MDT Production Lite Touch x64 Boot image to WDS in preparation for the deployment. In this procedure, we assume that WDS is already installed and initialized on MDT01 as described in the [Prepare for Windows deployment](prepare-for-windows-deployment-with-mdt.md#install-and-initialize-windows-deployment-services-wds) article.
 
 On **MDT01**:
 
@@ -624,7 +637,7 @@ On **MDT01**:
 
    The boot image added to the WDS console.
 
-### Deploy the Windows 11 client
+### Deploy the Windows 10 client
 
 At this point, you should have a solution ready for deploying the Windows 10 client. We recommend starting by trying a few deployments at a time until you are confident that your configuration works as expected. We find it useful to try some initial tests on virtual machines before testing on physical hardware. This helps rule out hardware issues when testing or troubleshooting. Here are the steps to deploy your Windows 10 image to a virtual machine:
 
@@ -654,9 +667,9 @@ On **HV01**:
 
 4.  Setup now begins and does the following:
 
-    - Installs the Windows 11 Enterprise operating system.
+    - Installs the Windows 10 Enterprise operating system.
     - Installs the added application.
-    - Updates the operating system via your local Windows Server Update Services (WSUS) server (if configured).
+    - Updates the operating system via your local Windows Server Update Services (WSUS) server.
 
     ![pc0005 image1.](../images/pc0005-vm.png)
 
@@ -714,9 +727,9 @@ On **MDT01**:
 
     The newly created multicast namespace.
 
-## Use offline media to deploy Windows 11
+## Use offline media to deploy Windows 10
 
-In addition to network-based deployments, MDT supports the use of offline media-based deployments of Windows 11. You can very easily generate an offline version of your deployment share - either the full deployment share or a subset of it - through the use of selection profiles. The generated offline media can be burned to a DVD or copied to a USB stick for deployment.
+In addition to network-based deployments, MDT supports the use of offline media-based deployments of Windows 10. You can very easily generate an offline version of your deployment share - either the full deployment share or a subset of it - through the use of selection profiles. The generated offline media can be burned to a DVD or copied to a USB stick for deployment.
 
 Offline media are useful not only when you do not have network connectivity to the deployment share, but also when you have limited connection to the deployment share and do not want to copy 5 GB of data over the wire. Offline media can still join the domain, but you save the transfer of operating system images, drivers, and applications over the wire.
 
@@ -735,10 +748,10 @@ On **MDT01**:
 
     - Folders
       - Applications / Adobe
-      - Operating Systems / Windows 11
+      - Operating Systems / Windows 10
       - Out-Of-Box Drivers / WinPE x64
-      - Out-Of-Box Drivers / Windows 11 x64
-      - Task Sequences / Windows 11
+      - Out-Of-Box Drivers / Windows 10 x64
+      - Task Sequences / Windows 10
 
       ![offline media.](../images/mdt-offline-media.png)
 
@@ -756,7 +769,7 @@ In these steps, you generate offline media from the MDT Production deployment sh
 3.  Use the following settings for the New Media Wizard:
     -   General Settings
         - Media path: **D:\\MDTOfflineMedia**
-        - Selection profile: **Windows 11 Offline Media**
+        - Selection profile: **Windows 10 Offline Media**
 
 ### Configure the offline media
 
@@ -770,7 +783,7 @@ On **MDT01**:
 
 3.  In the **General** tab, configure the following:
     - Clear the Generate x86 boot image check box.
-    - ISO file name: Windows 11 Offline Media.iso
+    - ISO file name: Windows 10 Offline Media.iso
 
 4.  On the **Windows PE** tab, in the **Platform** drop-down list, select **x64**.
 
@@ -803,10 +816,15 @@ The ISO that you got when updating the offline media item can be burned to a DVD
 Follow these steps to create a bootable USB stick from the offline media content:
 
 1.  On a physical machine running Windows 7 or later, insert the USB stick you want to use.
+
 2.  Copy the content of the **MDTOfflineMedia\\Content** folder to the root of the USB stick.
+
 3.  Start an elevated command prompt (run as Administrator), and start the Diskpart utility by typing **Diskpart** and pressing **Enter**.
+
 4.  In the Diskpart utility, you can type **list volume** (or the shorter **list vol**) to list the volumes, but you really only need to remember the drive letter of the USB stick to which you copied the content. In our example, the USB stick had the drive letter F.
+
 5.  In the Diskpart utility, type **select volume F** (replace F with your USB stick drive letter).
+
 6.  In the Diskpart utility, type **active**, and then type **exit**.
 
 ## Unified Extensible Firmware Interface (UEFI)-based deployments
