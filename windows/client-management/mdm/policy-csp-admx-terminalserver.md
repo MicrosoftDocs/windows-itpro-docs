@@ -33,6 +33,9 @@ manager: dansimp
   <dd>
     <a href="#admx-terminalserver-ts_gateway_policy_auth_method">ADMX_TerminalServer/TS_GATEWAY_POLICY_AUTH_METHOD</a>
   </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_radc_defaultconnection">ADMX_TerminalServer/TS_RADC_DefaultConnection</a>
+  </dd>
 </dl>
 
 
