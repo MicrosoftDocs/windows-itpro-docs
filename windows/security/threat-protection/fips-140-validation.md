@@ -9,7 +9,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.reviewer: 
+ms.reviewer:
 ms.technology: other
 ---
 
