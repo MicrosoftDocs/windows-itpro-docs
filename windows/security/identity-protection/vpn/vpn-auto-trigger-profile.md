@@ -78,7 +78,7 @@ Should a management tool remove or add the same profile name back and set **Alwa
 
 ## Trusted network detection
 
-This feature configures the VPN such that it would not get triggered if a user is on a trusted corporate network. The value of this setting is a list of DNS suffices. The VPN stack will look at the network name of the physical interface connection profile and if it matches any in the configured list and the network is private or provisioned by MDM, then VPN will not get triggered.
+This feature configures the VPN such that it would not get triggered if a user is on a trusted corporate network. The value of this setting is a list of DNS suffixes. The VPN stack will look at the network name of the physical interface connection profile and if it matches any in the configured list and the network is private or provisioned by MDM, then VPN will not get triggered.
 
 Trusted network detection can be configured using the VPNv2/*ProfileName*/TrustedNetworkDetection setting in the [VPNv2 CSP](/windows/client-management/mdm/vpnv2-csp).
 
