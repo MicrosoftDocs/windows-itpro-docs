@@ -10,7 +10,7 @@ ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: 
-ms.technology: other
+ms.technology: windows-sec
 ---
 
 # FIPS 140-2 Validation
