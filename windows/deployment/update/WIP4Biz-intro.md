@@ -52,12 +52,12 @@ Windows 10 Insider Preview builds offer organizations a valuable and exciting op
 
 ## Validate Insider Preview builds 
 Along with exploring new features, you also have the option to validate your apps and infrastructure on Insider Preview builds. This activity can play an important role in your [Windows 10 deployment strategy](/windows/deployment/update/waas-windows-insider-for-business). Early validation has several benefits:
- 
-- Get a head start on your Windows validation process 
-- Identify issues sooner to accelerate your Windows deployment 
-- Engage Microsoft earlier for help with potential compatibility issues 
-- Deploy Windows 10 General Availability Channel releases faster and more confidently 
-- Maximize the support Window that comes with each General Availability Channel release. 
+
+- Get a head start on your Windows validation process.
+- Identify issues sooner to accelerate your Windows deployment.
+- Engage Microsoft earlier for help with potential compatibility issues.
+- Deploy Windows 10 General Availability Channel releases faster and more confidently.
+- Maximize the support window that comes with each General Availability Channel release.
 
 |Objective |Feature exploration|
 |---------|---------|
