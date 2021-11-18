@@ -189,7 +189,79 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 
+<!--Policy-->
+<a href="" id="admx-terminalserver-ts_radc_defaultconnection"></a>**ADMX_TerminalServer/TS_RADC_DefaultConnection**  
 
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting specifies the default connection URL for RemoteApp and Desktop Connections. The default connection URL is a specific connection that can only be configured by using Group Policy. In addition to the capabilities that are common to all connections, the default connection URL allows document file types to be associated with RemoteApp programs.  The default connection URL must be configured in the form of [http://contoso.com/rdweb/Feed/webfeed.aspx](http://contoso.com/rdweb/Feed/webfeed.aspx).    
+
+- If you enable this policy setting, the specified URL is configured as the default connection URL for the user and replaces any existing connection URL. The user cannot change the default connection URL. The user's default logon credentials are used when setting up the default connection URL.  
+
+- If you disable or do not configure this policy setting, the user has no default connection URL.  
+
+RemoteApp programs that are installed through RemoteApp and Desktop Connections from an un-trusted server can compromise the security of a user's account.
+
+
+<!--/Description-->
+
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Specify default connection URL*
+-   GP name: *TS_RADC_DefaultConnection*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
 
 <!--/Policies-->
 
