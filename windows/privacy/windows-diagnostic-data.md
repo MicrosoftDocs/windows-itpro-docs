@@ -19,6 +19,8 @@ ms.reviewer:
 
 Applies to:
 - Windows 11
+- Windows 10, version 21H2
+- Windows 10, version 21H1
 - Windows 10, version 20H2
 - Windows 10, version 2004
 - Windows 10, version 1909
