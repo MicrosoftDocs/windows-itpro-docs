@@ -36,7 +36,7 @@ The following table summarizes equivalent feature update versions of Windows 10 
 | Windows 10 Enterprise LTSC 2015  | Windows 10, Version 1507 | 7/29/2015 |
 | Windows 10 Enterprise LTSC 2016  | Windows 10, Version 1607 | 8/2/2016 |
 | Windows 10 Enterprise LTSC 2019  | Windows 10, Version 1809 | 11/13/2018 |
-| Windows 10 Enterprise LTSC 2019  | Windows 10, Version 21H2 | 11/16/2021 |
+| Windows 10 Enterprise LTSC 2021  | Windows 10, Version 21H2 | 11/16/2021 |
 
 > [!NOTE]
 > The Long-Term Servicing Channel was previously called the Long-Term Servicing Branch (LTSB). All references to LTSB are changed in this article to LTSC for consistency, even though the name of previous versions might still be displayed as LTSB.
