@@ -173,6 +173,7 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#admx-terminalserver-ts_server_image_quality">ADMX_TerminalServer/TS_SERVER_IMAGE_QUALITY</a>
+  </dd>
     <a href="#admx-terminalserver-ts_gateway_policy_server">ADMX_TerminalServer/TS_GATEWAY_POLICY_SERVER</a>
   </dd>
   <dd>
@@ -2661,7 +2662,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-<a href="" id="admx-terminalserver-ts_gateway_policy_enable"></a>**ADMX_TerminalServer/TS_GATEWAY_POLICY_ENABLE**  
+<a href="" id="admx-terminalserver-ts_remotedesktopvirtualgraphics"></a>**ADMX_TerminalServer/TS_RemoteDesktopVirtualGraphics**  
 
 <!--SupportedSKUs-->
 <table>
@@ -2705,49 +2706,182 @@ ADMX Info:
 
 > [!div class = "checklist"]
 > * Device
-> * User
 
 <hr/>
 
 <!--/Scope-->
 <!--Description-->
 
-This policy setting allows you to specify the visual experience that remote users will have in Remote Desktop Connection (RDC) connections that use RemoteFX. 
+This policy setting allows you to specify the visual experience that remote users will have in Remote Desktop Connection (RDC) connections that use RemoteFX. You can use this policy to balance the network bandwidth usage with the type of graphics experience that is delivered.  Depending on the requirements of your users, you can reduce network bandwidth usage by reducing the screen capture rate. 
 
-You can use this policy to balance the network bandwidth usage with the type of graphics experience that is delivered. 
+You can also reduce network bandwidth usage by reducing the image quality (increasing the amount of image compression that is performed).  
+If you have a higher than average bandwidth network, you can maximize the utilization of bandwidth by selecting the highest setting for screen capture rate and the highest setting for image quality. 
+ 
+By default, Remote Desktop Connection sessions that use RemoteFX are optimized for a balanced experience over LAN conditions. 
 
-Depending on the requirements of your users, you can reduce network bandwidth usage by reducing the screen capture rate. You can also reduce network bandwidth usage by reducing the image quality (increasing the amount of image compression that is performed). If you have a higher than average bandwidth network, you can maximize the utilization of bandwidth by selecting the highest setting for screen capture rate and the highest setting for image quality.  
-
-By default, Remote Desktop Connection sessions that use RemoteFX are optimized for a balanced experience over LAN conditions. If you disable or do not configure this policy setting, Remote Desktop Connection sessions that use RemoteFX will be the same as if the medium screen capture rate and the medium image compression settings were selected (the default behavior).
-
-If you enable this policy setting, when Remote Desktop Connection cannot connect directly to a remote computer (an RD Session Host server or a computer with Remote Desktop enabled), the clients will attempt to connect to the remote computer through an RD Gateway server. 
-
-In this case, the clients will attempt to connect to the RD Gateway server that is specified in the "Set RD Gateway server address" policy setting.  You can enforce this policy setting or you can allow users to overwrite this setting. 
-
-By default, when you enable this policy setting, it is enforced. When this policy setting is enforced, users cannot override this setting, even if they select the "Use these RD Gateway server settings" option on the client.  Note: To enforce this policy setting, you must also specify the address of the RD Gateway server by using the "Set RD Gateway server address" policy setting, or client connection attempts to any remote computer will fail, if the client cannot connect directly to the remote computer. 
-
-To enhance security, it is also highly recommended that you specify the authentication method by using the "Set RD Gateway authentication method" policy setting. If you do not specify an authentication method by using this policy setting, either the NTLM protocol that is enabled on the client or a smart card can be used.  To allow users to overwrite this policy setting, select the "Allow users to change this setting" check box. 
-
-When you do this, users on the client can choose not to connect through the RD Gateway server by selecting the "Do not use an RD Gateway server" option. Users can specify a connection method by configuring settings on the client, using an RDP file, or using an HTML script. If users do not specify a connection method, the connection method that you specify in this policy setting is used by default.  
-
-If you disable or do not configure this policy setting, clients will not use the RD Gateway server address that is specified in the "Set RD Gateway server address" policy setting. If an RD Gateway server is specified by the user, a client connection attempt will be made through that RD Gateway server.
+If you disable or do not configure this policy setting, Remote Desktop Connection sessions that use RemoteFX will be the same as if the medium screen capture rate and the medium image compression settings were selected (the default behavior).
 
 <!--/Description-->
-
 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Optimize visual experience when using RemoteFX*
 -   GP name: *TS_RemoteDesktopVirtualGraphics*
--   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection*
--   GP Friendly name: *Enable connection through RD Gateway*
--   GP name: *TS_GATEWAY_POLICY_ENABLE*
--   GP path: *Windows Components\Remote Desktop Services\RD Gateway*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\RemoteFX for Windows Server 2008 R2*
 -   GP ADMX file name: *TerminalServer.admx*
 
 <!--/ADMXBacked-->
 <!--/Policy-->
 
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-terminalserver-ts_sd_clustname"></a>**ADMX_TerminalServer/TS_SD_ClustName**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to specify the name of a farm to join in RD Connection Broker. RD Connection Broker uses the farm name to determine which RD Session Host servers are in the same RD Session Host server farm. 
+
+Therefore, you must use the same farm name for all RD Session Host servers in the same load-balanced farm. The farm name does not have to correspond to a name in Active Directory Domain Services. If you specify a new farm name, a new farm is created in RD Connection Broker. If you specify an existing farm name, the server joins that farm in RD Connection Broker.  
+
+- If you enable this policy setting, you must specify the name of a farm in RD Connection Broker.  
+
+- If you disable or do not configure this policy setting, the farm name is not specified at the Group Policy level.  
+
+>[!NOTES]
+>    1. This policy setting is not effective unless both the Join RD Connection Broker and the Configure RD Connection Broker server name policy settings are enabled and configured by using Group Policy.  
+>    2. For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Configure RD Connection Broker farm name*
+-   GP name: *TS_SD_ClustName*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\RD Connection Broker*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-terminalserver-ts_sd_expose_address"></a>**ADMX_TerminalServer/TS_SD_EXPOSE_ADDRESS**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy setting allows you to specify the redirection method to use when a client device reconnects to an existing Remote Desktop Services session in a load-balanced RD Session Host server farm. This setting applies to an RD Session Host server that is configured to use RD Connection Broker and not to the RD Connection Broker server.  
+
+- If you enable this policy setting, a Remote Desktop Services client queries the RD Connection Broker server and is redirected to their existing session by using the IP address of the RD Session Host server where their session exists. To use this redirection method, client computers must be able to connect directly by IP address to RD Session Host servers in the farm.  
+
+- If you disable this policy setting, the IP address of the RD Session Host server is not sent to the client. Instead, the IP address is embedded in a token. When a client reconnects to the load balancer, the routing token is used to redirect the client to their existing session on the correct RD Session Host server in the farm. Only disable this setting when your network load-balancing solution supports the use of RD Connection Broker routing tokens and you do not want clients to directly connect by IP address to RD Session Host servers in the load-balanced farm. 
+
+If you do not configure this policy setting, the Use IP address redirection policy setting is not enforced at the group Group policy Policy level and the default will be used. This setting is enabled by default.  
+
+>[!NOTES]
+> For Windows Server 2008, this policy setting is supported on at least Windows Server 2008 Standard.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Use IP Address Redirection*
+-   GP name: *TS_SD_EXPOSE_ADDRESS*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\RD Connection Broker*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
 <hr/>
 
 <!--Policy-->
