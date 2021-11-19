@@ -4068,11 +4068,143 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 
 <dl>
   <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_auto_reconnect" id="admx-terminalserver-ts_auto_reconnect">ADMX_TerminalServer/TS_AUTO_RECONNECT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_camera_redirection" id="admx-terminalserver-ts_camera_redirection">ADMX_TerminalServer/TS_CAMERA_REDIRECTION</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_certificate_template_policy" id="admx-terminalserver-ts_certificate_template_policy">ADMX_TerminalServer/TS_CERTIFICATE_TEMPLATE_POLICY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_allow_signed_files_1" id="admx-terminalserver-ts_client_allow_signed_files_1">ADMX_TerminalServer/TS_CLIENT_ALLOW_SIGNED_FILES_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_allow_signed_files_2" id="admx-terminalserver-ts_client_allow_signed_files_2">ADMX_TerminalServer/TS_CLIENT_ALLOW_SIGNED_FILES_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_allow_unsigned_files_1" id="admx-terminalserver-ts_client_allow_unsigned_files_1">ADMX_TerminalServer/TS_CLIENT_ALLOW_UNSIGNED_FILES_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_allow_unsigned_files_2" id="admx-terminalserver-ts_client_allow_unsigned_files_2">ADMX_TerminalServer/TS_CLIENT_ALLOW_UNSIGNED_FILES_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_audio" id="admx-terminalserver-ts_client_audio">ADMX_TerminalServer/TS_CLIENT_AUDIO</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_audio_capture" id="admx-terminalserver-ts_client_audio_capture">ADMX_TerminalServer/TS_CLIENT_AUDIO_CAPTURE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_audio_quality" id="admx-terminalserver-ts_client_audio_quality">ADMX_TerminalServer/TS_CLIENT_AUDIO_QUALITY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_clipboard" id="admx-terminalserver-ts_client_clipboard">ADMX_TerminalServer/TS_CLIENT_CLIPBOARD</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_com" id="admx-terminalserver-ts_client_com">ADMX_TerminalServer/TS_CLIENT_COM</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_default_m" id="admx-terminalserver-ts_client_default_m">ADMX_TerminalServer/TS_CLIENT_DEFAULT_M</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_disable_hardware_mode" id="admx-terminalserver-ts_client_disable_hardware_mode">ADMX_TerminalServer/TS_CLIENT_DISABLE_HARDWARE_MODE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_disable_password_saving_1" id="admx-terminalserver-ts_client_disable_password_saving_1">ADMX_TerminalServer/TS_CLIENT_DISABLE_PASSWORD_SAVING_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_lpt" id="admx-terminalserver-ts_client_lpt">ADMX_TerminalServer/TS_CLIENT_LPT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_pnp" id="admx-terminalserver-ts_client_pnp">ADMX_TerminalServer/TS_CLIENT_PNP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_printer" id="admx-terminalserver-ts_client_printer">ADMX_TerminalServer/TS_CLIENT_PRINTER</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_trusted_certificate_thumbprints_1" id="admx-terminalserver-ts_client_trusted_certificate_thumbprints_1">ADMX_TerminalServer/TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_trusted_certificate_thumbprints_2" id="admx-terminalserver-ts_client_trusted_certificate_thumbprints_2">ADMX_TerminalServer/TS_CLIENT_TRUSTED_CERTIFICATE_THUMBPRINTS_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_client_turn_off_udp" id="admx-terminalserver-ts_client_turn_off_udp">ADMX_TerminalServer/TS_CLIENT_TURN_OFF_UDP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_colordepth" id="admx-terminalserver-ts_colordepth">ADMX_TerminalServer/TS_COLORDEPTH</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_delete_roaming_user_profiles" id="admx-terminalserver-ts_delete_roaming_user_profiles">ADMX_TerminalServer/TS_DELETE_ROAMING_USER_PROFILES</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_disable_remote_desktop_wallpaper" id="admx-terminalserver-ts_disable_remote_desktop_wallpaper">ADMX_TerminalServer/TS_DISABLE_REMOTE_DESKTOP_WALLPAPER</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_dx_use_full_hwgpu" id="admx-terminalserver-ts_dx_use_full_hwgpu">ADMX_TerminalServer/TS_DX_USE_FULL_HWGPU</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_easy_print" id="admx-terminalserver-ts_easy_print">ADMX_TerminalServer/TS_EASY_PRINT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_easy_print_user" id="admx-terminalserver-ts_easy_print_user">ADMX_TerminalServer/TS_EASY_PRINT_User</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_enablevirtualgraphics" id="admx-terminalserver-ts_enablevirtualgraphics">ADMX_TerminalServer/TS_EnableVirtualGraphics</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_fallbackprintdrivertype" id="admx-terminalserver-ts_fallbackprintdrivertype">ADMX_TerminalServer/TS_FALLBACKPRINTDRIVERTYPE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_forcible_logoff" id="admx-terminalserver-ts_forcible_logoff">ADMX_TerminalServer/TS_FORCIBLE_LOGOFF</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_gateway_policy_enable" id="admx-terminalserver-ts_gateway_policy_enable">ADMX_TerminalServer/TS_GATEWAY_POLICY_ENABLE</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_gateway_policy_auth_method" id="admx-terminalserver-ts_gateway_policy_auth_method">ADMX_TerminalServer/TS_GATEWAY_POLICY_AUTH_METHOD</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_gateway_policy_server" id="admx-terminalserver-ts_gateway_policy_server">ADMX_TerminalServer/TS_GATEWAY_POLICY_SERVER</a>
   </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_join_session_directory" id="admx-terminalserver-ts_join_session_directory">ADMX_TerminalServer/TS_JOIN_SESSION_DIRECTORY</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_keep_alive" id="admx-terminalserver-ts_keep_alive">ADMX_TerminalServer/TS_KEEP_ALIVE</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_license_secgroup" id="admx-terminalserver-ts_license_secgroup">ADMX_TerminalServer/TS_LICENSE_SECGROUP</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_license_servers" id="admx-terminalserver-ts_license_servers">ADMX_TerminalServer/TS_LICENSE_SERVERS</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_license_tooltip" id="admx-terminalserver-ts_license_tooltip">ADMX_TerminalServer/TS_LICENSE_TOOLTIP</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_licensing_mode" id="admx-terminalserver-ts_licensing_mode">ADMX_TerminalServer/TS_LICENSING_MODE</a>
+  </dd> 
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_max_con_policy" id="admx-terminalserver-ts_max_con_policy">ADMX_TerminalServer/TS_MAX_CON_POLICY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_maxdisplayres" id="admx-terminalserver-ts_maxdisplayres">ADMX_TerminalServer/TS_MAXDISPLAYRES</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_maxmonitor" id="admx-terminalserver-ts_maxmonitor">ADMX_TerminalServer/TS_MAXMONITOR</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_nodisconnectmenu" id="admx-terminalserver-ts_nodisconnectmenu">ADMX_TerminalServer/TS_NoDisconnectMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_nosecuritymenu" id="admx-terminalserver-ts_nosecuritymenu">ADMX_TerminalServer/TS_NoSecurityMenu</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_preventlicenseupgrade" id="admx-terminalserver-ts_preventlicenseupgrade">ADMX_TerminalServer/TS_PreventLicenseUpgrade</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_promt_creds_client_comp" id="admx-terminalserver-ts_promt_creds_client_comp">ADMX_TerminalServer/TS_PROMT_CREDS_CLIENT_COMP</a>
+  </dd>
 <dl>
 
 ### ADMX_Thumbnails policies  
