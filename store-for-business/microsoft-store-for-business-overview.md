@@ -27,7 +27,7 @@ ms.date: 07/21/2021
 > [!IMPORTANT]
 > Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
 
-Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options.
+Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options. There will be no support for Microsoft Store for Business and Education on Windows 11.
 
 > [!IMPORTANT]
 > Customers who are in the Office 365 GCC environment or are eligible to buy with government pricing cannot use Microsoft Store for Business.
