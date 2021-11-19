@@ -54,7 +54,7 @@ Make sure that you install the latest Windows updates, cumulative updates, and r
 - [Windows 10 version 1511](https://support.microsoft.com/help/4000824)
 - [Windows 8.1 and Windows Server 2012 R2](https://support.microsoft.com/help/4009470)
 - [Windows Server 2012](https://support.microsoft.com/help/4009471)
-- [Windows 7 SP1 and Windows Server 2008 R2 SP1](https://support.microsoft.com/help/40009469)
+- [Windows 7 SP1 and Windows Server 2008 R2 SP1](https://support.microsoft.com/help/4009469)
 
 ## Data Collection
 

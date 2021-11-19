@@ -311,7 +311,7 @@ The UE-V settings storage location and settings template catalog support storing
 
     - [Information about roaming profiles from the Directory Services team](https://blogs.technet.microsoft.com/askds/tag/roaming-profiles/)
     
-    - [Information about Microsoft support policy for a DFS-R and DFS-N deployment scenario](https://support.microsoft.com/kb/2533009)
+    - [Information about Microsoft support policy for a DFS-R and DFS-N deployment scenario](/troubleshoot/windows-server/networking/support-policy-for-dfsr-dfsn-deployment)
 
     In addition, because SYSVOL uses DFSR for replication, SYSVOL cannot be used for UE-V data file replication.
 

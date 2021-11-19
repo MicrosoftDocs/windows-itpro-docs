@@ -212,7 +212,7 @@ Requirements:
 
 5. Copy PolicyDefinitions folder to **\\contoso.com\SYSVOL\contoso.com\policies\PolicyDefinitions**.
 
-   If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain.
+   If this folder does not exist, then be aware that you will be switching to a [central policy store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for your entire domain.
 
 6. Wait for the SYSVOL DFSR replication to be completed for the policy to be available.
 
@@ -247,7 +247,7 @@ To collect Event Viewer logs:
 
       ![Event ID 76.](images/auto-enrollment-troubleshooting-event-id-76.png)
 
-      To troubleshoot, check the error code that appears in the event. See [Troubleshooting Windows device enrollment problems in Microsoft Intune](https://support.microsoft.com/en-ph/help/4469913/troubleshooting-windows-device-enrollment-problems-in-microsoft-intune) for more information.
+      To troubleshoot, check the error code that appears in the event. See [Troubleshooting Windows device enrollment problems in Microsoft Intune](/troubleshoot/mem/intune/troubleshoot-windows-enrollment-errors) for more information.
 
     - The auto-enrollment did not trigger at all. In this case, you will not find either event ID 75 or event ID 76. To know the reason, you must understand the internal mechanisms happening on the device as described in the following section.
 
@@ -288,7 +288,7 @@ To collect Event Viewer logs:
 - [Link a Group Policy Object](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732979(v=ws.11))
 - [Filter Using Security Groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc752992(v=ws.11))
 - [Enforce a Group Policy Object Link](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753909(v=ws.11))
-- [Group Policy Central Store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)
+- [Group Policy Central Store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store)
 - [Getting started with Cloud Native Windows Endpoints](https://docs.microsoft.com/mem/cloud-native-windows-endpoints)
 - [A Framework for Windows endpoint management transformation](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/a-framework-for-windows-endpoint-management-transformation/ba-p/2460684)
 - [Success with remote Windows Autopilot and Hybrid Azure Active Director join](https://techcommunity.microsoft.com/t5/intune-customer-success/success-with-remote-windows-autopilot-and-hybrid-azure-active/ba-p/2749353)

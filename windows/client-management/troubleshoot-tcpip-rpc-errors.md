@@ -46,7 +46,7 @@ Remote Procedure Call (RPC) dynamic port allocation is used by server applicatio
  
 Customers using firewalls may want to control which ports RPC is using so that their firewall router can be configured to forward only these Transmission Control Protocol (UDP and TCP) ports. Many RPC servers in Windows let you specify the server port in custom configuration items such as registry entries. When you can specify a dedicated server port, you know what traffic flows between the hosts across the firewall, and you can define what traffic is allowed in a more directed manner.
  
-As a server port, please choose a port outside of the range you may want to specify below. You can find a comprehensive list of server ports that are used in Windows and major Microsoft products in the article [Service overview and network port requirements for Windows](https://support.microsoft.com/help/832017).
+As a server port, please choose a port outside of the range you may want to specify below. You can find a comprehensive list of server ports that are used in Windows and major Microsoft products in the article [Service overview and network port requirements for Windows](/troubleshoot/windows-server/networking/service-overview-and-network-port-requirements).
 The article also lists the RPC servers and which RPC servers can be configured to use custom server ports beyond the facilities the RPC runtime offers. 
  
 Some firewalls also allow for UUID filtering where it learns from a RPC Endpoint Mapper request for a RPC interface UUID. The response has the server port number, and a subsequent RPC Bind on this port is then allowed to pass.

@@ -81,7 +81,7 @@ To troubleshoot Stop error messages, follow these general steps:
      >
      >To do this, see [How to perform a clean boot in Windows](https://support.microsoft.com/help/929135).
      >
-     >You can disable a driver by following the steps in [How to temporarily deactivate the kernel mode filter driver in Windows](https://support.microsoft.com/help/816071).
+     >You can disable a driver by following the steps in [How to temporarily deactivate the kernel mode filter driver in Windows](/troubleshoot/windows-server/performance/deactivate-kernel-mode-filter-driver).
      >
      >You may also want to consider the option of rolling back changes or reverting to the last-known working state. For more information, see [Roll Back a Device Driver to a Previous Version](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732648(v=ws.11)).
 
@@ -125,9 +125,9 @@ More information on how to use Dumpchk.exe to check your dump files:
 
 ### Pagefile Settings
 
-- [Introduction of page file in Long-Term Servicing Channel and Semi-Annual Channel of Windows](https://support.microsoft.com/help/4133658) 
-- [How to determine the appropriate page file size for 64-bit versions of Windows](https://support.microsoft.com/help/2860880) 
-- [How to generate a kernel or a complete memory dump file in Windows Server 2008 and Windows Server 2008 R2](https://support.microsoft.com/help/969028)
+- [Introduction of page file in Long-Term Servicing Channel and Semi-Annual Channel of Windows](/windows/client-management/introduction-page-file) 
+- [How to determine the appropriate page file size for 64-bit versions of Windows](/windows/client-management/determine-appropriate-page-file-size) 
+- [How to generate a kernel or a complete memory dump file in Windows Server 2008 and Windows Server 2008 R2](/windows/client-management/generate-kernel-or-complete-crash-dump)
 
 ### Memory dump analysis
 

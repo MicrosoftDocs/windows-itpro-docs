@@ -82,7 +82,7 @@ For more information on the rules available via AppLocker on the different suppo
 Applies to: Windows 10 Enterprise, Windows 10 Education 
 
 > [!Note]
-> Not supported on Windows 10 Pro, starting with version 1511. For more info, see [Knowledge Base article #3135657](https://support.microsoft.com/kb/3135657).
+> Not supported on Windows 10 Pro, starting with version 1511. For more info, see [Knowledge Base article #3135657](/troubleshoot/windows-client/group-policy/cannot-disable-microsoft-store).
 
 You can also use Group Policy to manage access to Microsoft Store.
 

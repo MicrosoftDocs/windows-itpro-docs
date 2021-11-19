@@ -279,7 +279,7 @@ Additionally, users may see blank tiles if sign-in was attempted without network
 
 ### Symptom: Start Menu issues with Tile Data Layer corruption 
 
-**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database. (The feature was deprecated in [Windows 10 1703](https://support.microsoft.com/help/4014193/features-that-are-removed-or-deprecated-in-windows-10-creators-update).) 
+**Cause**: Windows 10, version 1507 through the release of version 1607 uses a database for the Tile image information. This is called the Tile Data Layer database. (The feature was deprecated in [Windows 10 1703](/en-US/windows/deployment/planning/windows-10-removed-features).) 
 
 **Resolution** There are steps you can take to fix the icons, first is to confirm that is the issue that needs to be addressed.
 
