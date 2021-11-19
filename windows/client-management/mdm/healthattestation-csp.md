@@ -111,8 +111,8 @@ Templated SyncML Call:
                 </Target>
                 <Data>
                     {
-                    rpID : "rpID", serviceEndpoint : “MAA endpoint”,
-                    nonce : “nonce”, aadToken : “aadToken”, "cv" : "CorrelationVector"
+                    rpID : "rpID", serviceEndpoint : "MAA endpoint",
+                    nonce : "nonce", aadToken : "aadToken", "cv" : "CorrelationVector"
                     }                    
                 </Data>
             </Item>
@@ -217,7 +217,7 @@ OR Sync ML 404 error if not cached report available.
 
 Node type: GET
 
-This node will retrieve the service-generated correlation IDs for the given MDM provider. If there are more than one correlation IDs, they are separated by “;” in the string.
+This node will retrieve the service-generated correlation IDs for the given MDM provider. If there is more than one correlation ID, they are separated by “;” in the string.
 
 Templated SyncML Call:
 
@@ -874,7 +874,7 @@ The following list of data points is verified by the DHA-Service in DHA-Report v
 
 \*  TPM 2.0 only   
 \*\*  Reports if BitLocker was enabled during initial boot.    
-\*\*\* The “Hybrid Resume” must be disabled on the device. Reports first-party ELAM “Defender” was loaded during boot.  
+\*\*\* The "Hybrid Resume" must be disabled on the device. Reports first-party ELAM "Defender" was loaded during boot.
 
 Each of these are described in further detail in the following sections, along with the recommended actions to take.
 
@@ -890,10 +890,10 @@ If AIKPresent = True (1), then allow access.
 
 If AIKPresent = False (0), then take one of the following actions that align with your enterprise policies:
 
--   Disallow all access
--   Disallow access to HBI assets
--   Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a device's past activities and trust history.
--   Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
+- Disallow all access
+- Disallow access to HBI assets
+- Allow conditional access based on other data points that are present at evaluation time. For example, other attributes on the health certificate, or a device's past activities and trust history.
+- Take one of the previous actions and additionally place the device in a watch list to monitor the device more closely for potential risks.
 
 <a href="" id="resetcount"></a>**ResetCount** (Reported only for devices that support TPM 2.0)
 

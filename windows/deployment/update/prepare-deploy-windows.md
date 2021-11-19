@@ -94,7 +94,7 @@ Enable update services on devices. Ensure that every device is running all the s
 - Windows Management Service
 - Windows Module Installer
 - Windows Push Notification
-- Windows Security Center Service
+- Windows Security Service
 - Windows Time Service
 - Windows Update
 - Windows Update Medic Service

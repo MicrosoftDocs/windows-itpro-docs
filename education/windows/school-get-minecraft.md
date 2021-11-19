@@ -250,7 +250,7 @@ You'll download a .zip file, extract the files, and then use one of the files to
 <!--- ## Manage Minecraft: Education Edition -->
 
 <!--- ### Access to Microsoft Store for Business
-By default, when a teacher with a work or school account acquires Minecraft: Education Edition, they are automatically signed up for Window Store for Business, and the **Basic Purchaser** role is assigned to them. **Basic Purchaser** role allows teachers to acquire Minecraft: Education Edition and to distribute it to students. 
+By default, when a teacher with a work or school account acquires Minecraft: Education Edition, they are automatically signed up for Windows Store for Business, and the **Basic Purchaser** role is assigned to them. **Basic Purchaser** role allows teachers to acquire Minecraft: Education Edition and to distribute it to students. 
 
 However, tenant admins can control whether or not teachers automatically sign up for Microsoft Store for Business, and get the **Basic Purchaser** role. You can configure this with the **Allow educators in my organization to sign up for the Microsoft Store for Business.** You'll find this on the **Permissions** page. 
 
