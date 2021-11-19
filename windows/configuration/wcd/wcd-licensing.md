@@ -19,10 +19,10 @@ Use for settings related to Microsoft licensing programs.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [AllowWindowsEntitlementReactivation](#allowwindowsentitlementreactivation) | ✔️  |  |  |  |  |
-| [DisallowKMSClientOnlineAVSValidation](#disallowkmsclientonlineavsvalidation) | ✔️  |  |  |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [AllowWindowsEntitlementReactivation](#allowwindowsentitlementreactivation) | ✔️  |  |  |  |
+| [DisallowKMSClientOnlineAVSValidation](#disallowkmsclientonlineavsvalidation) | ✔️  |  |  |  |
 
 ## AllowWindowsEntitlementReactivation
 

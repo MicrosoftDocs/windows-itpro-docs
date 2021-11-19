@@ -2141,7 +2141,7 @@ Do not allow update deferral policies to cause scans against Windows Update. If 
 
 For more information about dual scan, see [Demystifying "Dual Scan"](/archive/blogs/wsus/demystifying-dual-scan) and [Improving Dual Scan on 1607](/archive/blogs/wsus/improving-dual-scan-on-1607).
 
-This is the same as the Group Policy in Windows Components > Window Update "Do not allow update deferral policies to cause scans against Windows Update."
+This is the same as the Group Policy in Windows Components > Windows Update "Do not allow update deferral policies to cause scans against Windows Update."
 
 Value type is integer. Supported operations are Add, Get, Replace, and Delete.
 
@@ -3494,22 +3494,22 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 
@@ -3569,22 +3569,22 @@ The following list shows the supported values:
 <tr>
     <td>Pro</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Business</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Enterprise</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Education</td>
     <td>Yes</td>
-    <td>Yes</td>
+    <td>No</td>
 </tr>
 </table>
 

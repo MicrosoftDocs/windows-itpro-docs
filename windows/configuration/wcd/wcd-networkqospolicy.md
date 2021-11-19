@@ -18,9 +18,9 @@ Use to create network Quality of Service (QoS) policies. A QoS policy performs a
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |   |  | ✔️ |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings |   | ✔️ |  |  |
 
 1. In **Available customizations**, select **NetworkQ0SPolicy**, enter a friendly name for the account, and then click **Add**.
 2. In **Available customizations**, select the name that you just created. The following table describes the settings you can configure. 

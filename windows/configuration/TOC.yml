@@ -190,14 +190,8 @@
           href: wcd/wcd-admxingestion.md 
         - name: AssignedAccess
           href: wcd/wcd-assignedaccess.md 
-        - name: AutomaticTime
-          href: wcd/wcd-automatictime.md 
         - name: Browser
           href: wcd/wcd-browser.md 
-        - name: CallAndMessagingEnhancement
-          href: wcd/wcd-callandmessagingenhancement.md 
-        - name: Calling
-          href: wcd/wcd-calling.md
         - name: CellCore
           href: wcd/wcd-cellcore.md
         - name: Cellular
@@ -218,8 +212,6 @@
           href: wcd/wcd-developersetup.md     
         - name: DeviceFormFactor
           href: wcd/wcd-deviceformfactor.md  
-        - name: DeviceInfo
-          href: wcd/wcd-deviceinfo.md
         - name: DeviceManagement
           href: wcd/wcd-devicemanagement.md  
         - name: DeviceUpdateCenter
@@ -236,10 +228,6 @@
           href: wcd/wcd-folders.md  
         - name: HotSpot
           href: wcd/wcd-hotspot.md
-        - name: InitialSetup
-          href: wcd/wcd-initialsetup.md     
-        - name: InternetExplorer
-          href: wcd/wcd-internetexplorer.md 
         - name: KioskBrowser
           href: wcd/wcd-kioskbrowser.md      
         - name: Licensing
@@ -247,23 +235,13 @@
         - name: Location
           href: wcd/wcd-location.md      
         - name: Maps
-          href: wcd/wcd-maps.md  
-        - name: Messaging
-          href: wcd/wcd-messaging.md     
-        - name: ModemConfigurations
-          href: wcd/wcd-modemconfigurations.md     
-        - name: Multivariant
-          href: wcd/wcd-multivariant.md     
+          href: wcd/wcd-maps.md 
         - name: NetworkProxy
           href: wcd/wcd-networkproxy.md     
         - name: NetworkQOSPolicy
-          href: wcd/wcd-networkqospolicy.md
-        - name: NFC
-          href: wcd/wcd-nfc.md     
+          href: wcd/wcd-networkqospolicy.md 
         - name: OOBE
-          href: wcd/wcd-oobe.md    
-        - name: OtherAssets
-          href: wcd/wcd-otherassets.md     
+          href: wcd/wcd-oobe.md 
         - name: Personalization
           href: wcd/wcd-personalization.md     
         - name: Policies
@@ -271,13 +249,9 @@
         - name: Privacy
           href: wcd/wcd-privacy.md  
         - name: ProvisioningCommands
-          href: wcd/wcd-provisioningcommands.md    
-        - name: RcsPresence
-          href: wcd/wcd-rcspresence.md 
+          href: wcd/wcd-provisioningcommands.md
         - name: SharedPC
-          href: wcd/wcd-sharedpc.md     
-        - name: Shell
-          href: wcd/wcd-shell.md     
+          href: wcd/wcd-sharedpc.md 
         - name: SMISettings
           href: wcd/wcd-smisettings.md     
         - name: Start
@@ -293,9 +267,7 @@
         - name: TabletMode
           href: wcd/wcd-tabletmode.md  
         - name: TakeATest
-          href: wcd/wcd-takeatest.md    
-        - name: TextInput
-          href: wcd/wcd-textinput.md
+          href: wcd/wcd-takeatest.md
         - name: Time
           href: wcd/wcd-time.md    
         - name: UnifiedWriteFilter
