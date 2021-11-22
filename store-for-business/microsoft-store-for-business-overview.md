@@ -27,7 +27,7 @@ ms.date: 07/21/2021
 > [!IMPORTANT]
 > Starting on April 14th, 2021, only free apps will be available in Microsoft Store for Business and Education. For more information, see [Microsoft Store for Business and Education](index.md).
 
-Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options.
+Designed for organizations, Microsoft Store for Business and Microsoft Store for Education give IT decision makers and administrators in businesses or schools a flexible way to find, acquire, manage, and distribute free and paid apps in select markets to Windows 10 devices in volume. IT administrators can manage Microsoft Store apps and private line-of-business apps in one inventory, plus assign and re-use licenses as needed. You can choose the best distribution method for your organization: directly assign apps to individuals and teams, publish apps to private pages in Microsoft Store, or connect with management solutions for more options. There will be no support for Microsoft Store for Business and Education on Windows 11.
 
 > [!IMPORTANT]
 > Customers who are in the Office 365 GCC environment or are eligible to buy with government pricing cannot use Microsoft Store for Business.
@@ -164,184 +164,164 @@ For more information, see [Manage settings in the Store for Business](manage-set
 Store for Business and Education is currently available in these markets.
 
 ### Support for free and paid products
-<table>
-   <tr>
-        <th align="center" colspan="4">Supports all free and paid products</th>
-   </tr>
-   <tr align="left">
-     <td>
-        <ul>
-            <li>Afghanistan</li>
-            <li>Algeria</li>
-            <li>Andorra</li>
-            <li>Angola</li>
-            <li>Anguilla</li>
-            <li>Antigua and Barbuda</li>
-            <li>Argentina</li>
-            <li>Australia</li>
-            <li>Austria</li>
-            <li>Bahamas</li>
-            <li>Bahrain</li>
-            <li>Bangladesh</li>
-            <li>Barbados</li>
-            <li>Belgium</li>
-            <li>Belize</li>
-            <li>Bermuda</li>
-            <li>Benin</li>
-            <li>Bhutan</li>
-            <li>Bolivia</li>
-            <li>Bonaire</li>
-            <li>Botswana</li>
-            <li>Brunei Darussalam</li>
-            <li>Bulgaria</li>
-            <li>Burundi</li>
-            <li>Cambodia</li>
-            <li>Cameroon</li>
-            <li>Canada</li>
-            <li>Cayman Islands</li>
-            <li>Chile</li>
-            <li>Colombia</li>
-            <li>Comoros</li>
-            <li>Costa Rica</li>
-            <li>C&ocirc;te D&#39;ivoire</li>
-            <li>Croatia</li>
-            <li>Cur&ccedil;ao</li>
-            <li>Cyprus</li>
-            <li>Czech Republic</li>
-            <li>Denmark</li>
-            <li>Dominican Republic</li>
-            <li>Ecuador</li>
-        </ul>
-     </td>
-     <td>
-        <ul> 
-            <li>Egypt</li>
-            <li>El Salvador</li>
-            <li>Estonia</li>
-            <li>Ethiopia</li>
-            <li>Faroe Islands</li>
-            <li>Fiji</li>
-            <li>Finland</li>
-            <li>France</li>
-            <li>French Guiana</li>
-            <li>French Polynesia</li>
-            <li>Germany</li>
-            <li>Ghana</li>
-            <li>Greece</li>
-            <li>Greenland</li>
-            <li>Guadeloupe</li>
-            <li>Guatemala</li>
-            <li>Honduras</li>
-            <li>Hong Kong SAR</li>
-            <li>Hungary</li>
-            <li>Iceland</li>
-            <li>Indonesia</li>
-            <li>Iraq</li>
-            <li>Ireland</li>
-            <li>Israel</li>
-            <li>Italy</li>
-            <li>Jamaica</li>
-            <li>Japan</li>
-            <li>Jersey</li>
-            <li>Jordan</li>
-            <li>Kenya</li>
-            <li>Kuwait</li>
-            <li>Laos</li>
-            <li>Latvia</li>
-            <li>Lebanon</li>
-            <li>Libya</li>
-            <li>Liechtenstein</li>
-            <li>Lithuania</li>
-            <li>Luxembourg</li>
-            <li>Macedonia</li>
-            <li>Madagascar</li>
-        </ul>
-    </td>
-     <td>
-        <ul>
-            <li>Malawi</li>
-            <li>Malaysia</li>
-            <li>Maldives</li>
-            <li>Mali</li>
-            <li>Malta</li>
-            <li>Marshall Islands</li>
-            <li>Martinique</li>
-            <li>Mauritius</li>
-            <li>Mayotte</li>
-            <li>Mexico</li>
-            <li>Mongolia</li>
-            <li>Montenegro</li>
-            <li>Morocco</li>
-            <li>Mozambique</li>
-            <li>Myanamar</li>
-            <li>Namibia</li>
-            <li>Nepal</li>
-            <li>Netherlands</li>
-            <li>New Caledonia</li>
-            <li>New Zealand</li>
-            <li>Nicaragua</li>
-            <li>Nigeria</li>
-            <li>Norway</li>
-            <li>Oman</li>
-            <li>Pakistan</li>
-            <li>Palestinian Authority</li>
-            <li>Panama</li>
-            <li>Papua New Guinea</li>
-            <li>Paraguay</li>
-            <li>Peru</li>
-            <li>Philippines</li>
-            <li>Poland</li>
-            <li>Portugal</li>
-            <li>Qatar</li>
-            <li>Republic of Cabo Verde</li>
-            <li>Reunion</li>
-            <li>Romania</li>
-            <li>Rwanda</li>
-            <li>Saint Kitts and Nevis</li> 
-        </ul>
-    </td>
-    <td>
-        <ul>
-            <li>Saint Lucia</li>
-            <li>Saint Martin</li>
-            <li>Saint Vincent and the Grenadines</li>
-            <li>San marino</li>
-            <li>Saudi Arabia</li>
-            <li>Senegal</li>
-            <li>Serbia</li>
-            <li>Seychelles</li>
-            <li>Singapore</li>
-            <li>Sint Maarten</li>
-            <li>Slovakia</li>
-            <li>Slovenia</li>
-            <li>South Africa</li>
-            <li>Spain</li>
-            <li>Sri Lanka</li>
-            <li>Suriname</li>
-            <li>Sweden</li>
-            <li>Switzerland</li>
-            <li>Tanzania</li>
-            <li>Thailand</li>
-            <li>Timor-Leste</li>
-            <li>Togo</li>
-            <li>Tonga</li>
-            <li>Trinidad and Tobago</li>
-            <li>Tunisia</li>
-            <li>Turkey</li>
-            <li>Turks and Caicos Islands</li>
-            <li>Uganda</li>
-            <li>United Arab Emirates</li>
-            <li>United Kingdom</li>
-            <li>United States</li>
-            <li>Uruguay</li>
-            <li>Vatican City</li>
-            <li>Viet Nam</li>
-            <li>Virgin Islands, U.S.</li>
-            <li>Zambia</li>
-            <li>Zimbabwe<br>&nbsp;&nbsp;&nbsp;</li><br/>        </ul>
-    </td>
-   </tr>
-</table>
+
+- Afghanistan
+- Algeria
+- Andorra
+- Angola
+- Anguilla
+- Antigua and Barbuda
+- Argentina
+- Australia
+- Austria
+- Bahamas
+- Bahrain
+- Bangladesh
+- Barbados
+- Belgium
+- Belize
+- Bermuda
+- Benin
+- Bhutan
+- Bolivia
+- Bonaire
+- Botswana
+- Brunei Darussalam
+- Bulgaria
+- Burundi
+- Cambodia
+- Cameroon
+- Canada
+- Cayman Islands
+- Chile
+- Colombia
+- Comoros
+- Costa Rica
+- Côte D'ivoire
+- Croatia
+- Curçao
+- Cyprus
+- Czech Republic
+- Denmark
+- Dominican Republic
+- Ecuador
+- Egypt
+- El Salvador
+- Estonia
+- Ethiopia
+- Faroe Islands
+- Fiji
+- Finland
+- France
+- French Guiana
+- French Polynesia
+- Germany
+- Ghana
+- Greece
+- Greenland
+- Guadeloupe
+- Guatemala
+- Honduras
+- Hong Kong SAR
+- Hungary
+- Iceland
+- Indonesia
+- Iraq
+- Ireland
+- Israel
+- Italy
+- Jamaica
+- Japan
+- Jersey
+- Jordan
+- Kenya
+- Kuwait
+- Laos
+- Latvia
+- Lebanon
+- Libya
+- Liechtenstein
+- Lithuania
+- Luxembourg
+- Macedonia
+- Madagascar
+- Malawi
+- Malaysia
+- Maldives
+- Mali
+- Malta
+- Marshall Islands
+- Martinique
+- Mauritius
+- Mayotte
+- Mexico
+- Mongolia
+- Montenegro
+- Morocco
+- Mozambique
+- Myanamar
+- Namibia
+- Nepal
+- Netherlands
+- New Caledonia
+- New Zealand
+- Nicaragua
+- Nigeria
+- Norway
+- Oman
+- Pakistan
+- Palestinian Authority
+- Panama
+- Papua New Guinea
+- Paraguay
+- Peru
+- Philippines
+- Poland
+- Portugal
+- Qatar
+- Republic of Cabo Verde
+- Reunion
+- Romania
+- Rwanda
+- Saint Kitts and Nevis
+- Saint Lucia
+- Saint Martin
+- Saint Vincent and the Grenadines
+- San marino
+- Saudi Arabia
+- Senegal
+- Serbia
+- Seychelles
+- Singapore
+- Sint Maarten
+- Slovakia
+- Slovenia
+- South Africa
+- Spain
+- Sri Lanka
+- Suriname
+- Sweden
+- Switzerland
+- Tanzania
+- Thailand
+- Timor-Leste
+- Togo
+- Tonga
+- Trinidad and Tobago
+- Tunisia
+- Turkey
+- Turks and Caicos Islands
+- Uganda
+- United Arab Emirates
+- United Kingdom
+- United States
+- Uruguay
+- Vatican City
+- Viet Nam
+- Virgin Islands, U.S.
+- Zambia
+- Zimbabwe
+
 
 ### Support for free apps
 Customers in these markets can use Microsoft Store for Business and Education to acquire free apps:

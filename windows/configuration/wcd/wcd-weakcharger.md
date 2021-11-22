@@ -20,10 +20,10 @@ Use WeakCharger settings to configure the charger notification UI.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [HideWeakChargerNotifyOptionUI](#hideweakchargernotifyoptionui) | ✔️ | ✔️ | ✔️ |  |   |
-| [NotifyOnWeakCharger](#notifyonweakcharger) | ✔️ | ✔️ | ✔️ |  |   |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| [HideWeakChargerNotifyOptionUI](#hideweakchargernotifyoptionui) | ✔️ | ✔️ |  |   |
+| [NotifyOnWeakCharger](#notifyonweakcharger) | ✔️ | ✔️ |  |   |
 
 
 ## HideWeakChargerNotifyOptionUI

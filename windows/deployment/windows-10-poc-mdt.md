@@ -528,7 +528,7 @@ This section will demonstrate how to export user data from an existing client co
 ## Replace a computer with Windows 10
 
 At a high level, the computer replace process consists of:<BR>
-- A special replace task sequence that runs the USMT backup and an optional full Window Imaging (WIM) backup.<BR>
+- A special replace task sequence that runs the USMT backup and an optional full Windows Imaging (WIM) backup.<BR>
 - A standard OS deployment on a new computer. At the end of the deployment, the USMT backup from the old computer is restored.
 
 ### Create a backup-only task sequence
