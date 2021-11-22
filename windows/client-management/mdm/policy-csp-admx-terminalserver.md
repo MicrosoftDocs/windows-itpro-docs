@@ -273,6 +273,30 @@ manager: dansimp
   <dd>
     <a href="#admx-terminalserver-ts_time_zone">ADMX_TerminalServer/TS_TIME_ZONE</a>
   </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_tscc_permissions_policy">ADMX_TerminalServer/TS_TSCC_PERMISSIONS_POLICY</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_turnoff_singleapp">ADMX_TerminalServer/TS_TURNOFF_SINGLEAPP</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_uia">ADMX_TerminalServer/TS_UIA</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_usb_redirection_disable">ADMX_TerminalServer/TS_USB_REDIRECTION_DISABLE</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_user_authentication_policy">ADMX_TerminalServer/TS_USER_AUTHENTICATION_POLICY</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_user_home">ADMX_TerminalServer/TS_USER_HOME</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_user_mandatory_profiles">ADMX_TerminalServer/TS_USER_MANDATORY_PROFILES</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_user_profiles">ADMX_TerminalServer/TS_USER_PROFILES</a>
+  </dd>
 </dl>
 
 <hr/>
