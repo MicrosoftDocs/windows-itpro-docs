@@ -1,12 +1,12 @@
 ---
-title: Build a distributed environment for Windows 11 deployment (Windows 11)
-description: In this topic, you will learn how to replicate your Windows 11 deployment shares to facilitate the deployment of Windows 11 in remote or branch locations.
+title: Build a distributed environment for Windows 10 deployment (Windows 10)
+description: In this topic, you will learn how to replicate your Windows 10 deployment shares to facilitate the deployment of Windows 10 in remote or branch locations.
 ms.assetid: a6cd5657-6a16-4fff-bfb4-44760902d00c
 ms.reviewer: 
 manager: dougeby
 ms.author: greglin
 keywords: replication, replicate, deploy, configure, remote
-ms.prod: w11
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.sitesec: library
@@ -16,13 +16,12 @@ author: greg-lindsay
 ms.topic: article
 ---
 
-# Build a distributed environment for Windows 11 deployment
+# Build a distributed environment for Windows 10 deployment
 
 **Applies to**
-- Windows 10
-- Windows 11
+-   Windows 10
 
-Perform the steps in this article to build a distributed environment for Windows 11 deployment. A distributed environment for deployment is useful when you have a segmented network, for example one that is segmented geographically into two branch locations. If you work in a distributed environment, replicating the deployment shares is an important part of a deployment solution because images of 5 GB or more in size can present bandwidth issues when deployed over the wire. Replicating this content enables clients to do local deployments.
+Perform the steps in this article to build a distributed environment for Windows 10 deployment. A distributed environment for deployment is useful when you have a segmented network, for example one that is segmented geographically into two branch locations. If you work in a distributed environment, replicating the deployment shares is an important part of a deployment solution because images of 5 GB or more in size can present bandwidth issues when deployed over the wire. Replicating this content enables clients to do local deployments.
 
 Four computers are used in this topic: DC01, MDT01, MDT02, and PC0006. DC01 is a domain controller, MDT01 and MDT02 are domain member computers running Windows Server 2019, and PC0006 is a blank device where we will deploy Windows 10. The second deployment server (MDT02) will be configured for a remote site (Stockholm) by replicating the deployment share on MDT01 at the original site (New York). All devices are members of the domain contoso.com for the fictitious Contoso Corporation. 
 
@@ -32,7 +31,7 @@ For the purposes of this article, we assume that MDT02 is prepared with the same
 
 Computers used in this topic.
 
-> HV01 is also used in this topic to host the PC0006 virtual machine.
+>HV01 is also used in this topic to host the PC0006 virtual machine.
 
 ## Replicate deployment shares
 
@@ -63,7 +62,7 @@ On **MDT01**:
 Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
 ```
 
-2. Wait for installation to comlete, and then verify that the installation was successful. See the following output:
+2. Wait for installation to complete, and then verify that the installation was successful. See the following output:
 
 ```output
 PS C:\> Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
@@ -83,7 +82,7 @@ On **MDT02**:
 Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
 ```
 
-2. Wait for installation to comlete, and then verify that the installation was successful. See the following  output:
+2. Wait for installation to complete, and then verify that the installation was successful. See the following  output:
 
 ```output
 PS C:\> Install-WindowsFeature -Name FS-DFS-Replication -IncludeManagementTools
@@ -120,7 +119,7 @@ When you have multiple deployment servers sharing the same content, you need to 
 
 On **MDT01**:
 
-1. Using Notepad, navigate to the **D:\\MDTProduction\\Control** folder and modify the Boostrap.ini file as follows. Under [DefaultGateway] enter the IP addresses for the default gateway of client devices in your locations (replace 10.10.10.1 and 10.10.20.1 with your default gateways). The default gateway setting is what tells the client which deployment share (i.e. server) to use. 
+1. Using Notepad, navigate to the **D:\\MDTProduction\\Control** folder and modify the Boostrap.ini file as follows. Under [DefaultGateway] enter the IP addresses for the client's default gateway in New York and Stockholm, respectively (replace 10.10.10.1 and 10.10.20.1 with your default gateways). The default gateway setting is what tells the client which deployment share (i.e. server) to use. 
 
    ```ini
    [Settings]
@@ -142,8 +141,8 @@ On **MDT01**:
    UserPassword=pass@word1
    SkipBDDWelcome=YES
    ```
-   > [!NOTE]
-   > The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 10 computer with Windows 11](refresh-a-windows-10-computer-with-windows-11.md) and [Replace a Windows 10 computer with a Windows 11 computer](replace-a-windows-10-computer-with-a-windows-11-computer.md).
+   >[!NOTE]
+   >The DeployRoot value needs to go into the Bootstrap.ini file, but you can use the same logic in the CustomSettings.ini file. For example, you can redirect the logs to the local deployment server (SLSHARE), or have the User State Migration Tool (USMT) migration store (UDDIR) local. To learn more about USMT, see [Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md) and [Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md).
      
 2. Save the Bootstrap.ini file.
 3. Using the Deployment Workbench, right-click the **MDT Production** deployment share and select **Update Deployment Share**. Use the default settings for the Update Deployment Share Wizard. This process will take a few minutes.
@@ -154,8 +153,8 @@ On **MDT01**:
 
    Replacing the updated boot image in WDS.
 
- > [!TIP]
- > If you modify bootstrap.ini again later, be sure to repeat the process of updating the deployment share in the Deployment Workbench and replacing the boot image in the WDS console.
+ >[!TIP]
+ >If you modify bootstrap.ini again later, be sure to repeat the process of updating the deployment share in the Deployment Workbench and replacing the boot image in the WDS console.
 
    ## Replicate the content
 
@@ -228,7 +227,7 @@ On **MDT02**:
 
 The DFS Replication Health Report.
 
-> If there are replication errors you can review the DFS event log in Event Viewer under **Applications and Services Logs**.
+>If there are replication errors you can review the DFS event log in Event Viewer under **Applications and Services Logs**.
 
 ## Configure Windows Deployment Services (WDS) in a remote site
 
@@ -251,19 +250,21 @@ Now you should have a solution ready for deploying the Windows 10 client to the
     6. Install an operating system from a network-based installation server
 2.  Start the PC0006 virtual machine, and press **Enter** to start the Pre-Boot Execution Environment (PXE) boot. The VM will now load the Windows PE boot image from the WDS server.
 3.  After Windows Preinstallation Environment (Windows PE) has booted, complete the Windows Deployment Wizard using the following settings:
-    1.  Select a task sequence to execute on this computer: Windows 11 Enterprise x64 Custom Image 
+    1.  Select a task sequence to execute on this computer: Windows 10 Enterprise x64 RTM Custom Image 
     2.  Computer Name: PC0006
     3.  Applications: Select the Install - Adobe Reader
 4.  Setup will now start and perform the following:
-    1.  Install the Windows 11 Enterprise operating system.
+    1.  Install the Windows 10 Enterprise operating system.
     2.  Install applications.
     3.  Update the operating system using your local Windows Server Update Services (WSUS) server.
+
+![pc0001.](../images/pc0006.png)
 
 ## Related topics
 
 [Get started with the Microsoft Deployment Toolkit (MDT)](get-started-with-the-microsoft-deployment-toolkit.md)<br>
-[Create a Windows 11 reference image](create-a-windows-11-reference-image.md)<br>
-[Deploy a Windows 11 image using MDT](deploy-a-windows-11-image-using-mdt.md)<br>
-[Refresh a Windows 10 computer with Windows 11](refresh-a-windows-10-computer-with-windows-11.md)<br>
-[Replace a Windows 10 computer with a Windows 11 computer](replace-a-windows-10-computer-with-a-windows-11-computer.md)<br>
+[Create a Windows 10 reference image](create-a-windows-10-reference-image.md)<br>
+[Deploy a Windows 10 image using MDT](deploy-a-windows-10-image-using-mdt.md)<br>
+[Refresh a Windows 7 computer with Windows 10](refresh-a-windows-7-computer-with-windows-10.md)<br>
+[Replace a Windows 7 computer with a Windows 10 computer](replace-a-windows-7-computer-with-a-windows-10-computer.md)<br>
 [Configure MDT settings](configure-mdt-settings.md)
