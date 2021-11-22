@@ -846,8 +846,8 @@ The following list shows the supported values:
 
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
+|Home|No|Yes|
+|Pro|No|Yes|
 |Business|No|No|
 |Enterprise|No|Yes|
 |Education|No|Yes|
@@ -873,6 +873,9 @@ The values for this policy are 0, 1, 2, and 3. This policy defaults to 0 if not 
 -   1 - Show: The Chat icon will be displayed on the taskbar by default. Users can show or hide it in Settings.
 -   2 - Hide: The Chat icon will be hidden by default. Users can show or hide it in Settings.
 -   3 - Disabled: The Chat icon will not be displayed, and users cannot show or hide it in Settings.
+
+> [!NOTE]
+> Option 1 (Show) and Option 2 (Hide) only work on the first sign-in attempt. Option 3 (Disabled) works on all attempts.
 
 <!--/SupportedValues-->
 <!--/Policy-->
