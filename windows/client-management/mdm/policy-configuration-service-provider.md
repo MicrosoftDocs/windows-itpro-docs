@@ -4248,9 +4248,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_avc_hw_encode_preferred" id="admx-terminalserver-ts_server_avc_hw_encode_preferred">ADMX_TerminalServer/TS_SERVER_AVC_HW_ENCODE_PREFERRED</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_avc_hw_encode_preferred" id="admx-terminalserver-ts_server_avc_hw_encode_preferred">ADMX_TerminalServer/TS_SERVER_AVC_HW_ENCODE_PREFERRED</a>
-  </dd>
-  <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_avc444_mode_preferred" id="admx-terminalserver-ts_server_avc444_mode_preferred">ADMX_TerminalServer/TS_SERVER_AVC444_MODE_PREFERRED</a>
   </dd>
   <dd>
