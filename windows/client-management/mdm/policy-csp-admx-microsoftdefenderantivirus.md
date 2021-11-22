@@ -507,10 +507,10 @@ ADMX Info:
 Allows an administrator to specify if Automatic Exclusions feature for Server SKUs should be turned off.
 
 Disabled (Default):
-Microsoft Defender will exclude pre-defined list of paths from the scan to improve performance.
+Microsoft Defender Antivirus will exclude pre-defined list of paths from the scan to improve performance.
 
 Enabled:
-Microsoft Defender will not exclude pre-defined list of paths from scans. This can impact machine performance in some scenarios.
+Microsoft Defender Antivirus will not exclude pre-defined list of paths from scans. This can impact machine performance in some scenarios.
 
 Not configured:
 Same as Disabled.
@@ -1415,7 +1415,7 @@ ADMX Info:
 Enable or disable file hash computation feature.
 
 Enabled:
-When this feature is enabled Microsoft Defender will compute hash value for files it scans.
+When this feature is enabled Microsoft Defender Antivirus will compute hash value for files it scans.
 
 Disabled:
 File hash value is not computed
