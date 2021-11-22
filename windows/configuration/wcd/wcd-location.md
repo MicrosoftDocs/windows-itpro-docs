@@ -18,9 +18,9 @@ Use Location settings to configure location services.
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [EnableLocation](#enablelocation) |  |    |  |  | ✔️ |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [EnableLocation](#enablelocation) |  |  |  | ✔️ |
 
 ## EnableLocation
 

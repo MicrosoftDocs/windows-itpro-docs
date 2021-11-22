@@ -17,9 +17,9 @@ Use **Time** to configure settings for time zone setup for Windows 10, version (
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ProvisionSetTimeZone](#provisionsettimezone) | ✔️  |  |  |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ProvisionSetTimeZone](#provisionsettimezone) | ✔️ |  |  |  |
 
 ## ProvisionSetTimeZone
 
