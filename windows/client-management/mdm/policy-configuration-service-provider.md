@@ -4283,9 +4283,10 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_idle_limit_1" id="admx-terminalserver-ts_sessions_idle_limit_1">ADMX_TerminalServer/TS_SESSIONS_Idle_Limit_1</a>
   </dd>  
-<dd>
+ <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_idle_limit_2" id="admx-terminalserver-ts_sessions_idle_limit_2">ADMX_TerminalServer/TS_SESSIONS_Idle_Limit_2</a>
   </dd>
+
 <dl>
 
 ### ADMX_Thumbnails policies  
