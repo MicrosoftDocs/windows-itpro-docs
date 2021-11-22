@@ -4280,6 +4280,51 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_disconnected_timeout_2" id="admx-terminalserver-ts_sessions_disconnected_timeout_2">ADMX_TerminalServer/TS_SESSIONS_Disconnected_Timeout_2</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_single_session" id="admx-terminalserver-ts_single_session">ADMX_TerminalServer/TS_SINGLE_SESSION</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_smart_card" id="admx-terminalserver-ts_smart_card">ADMX_TerminalServer/TS_SMART_CARD</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_start_program_1" id="admx-terminalserver-ts_start_program_1">ADMX_TerminalServer/TS_START_PROGRAM_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_start_program_2" id="admx-terminalserver-ts_start_program_2">ADMX_TerminalServer/TS_START_PROGRAM_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_temp_delete" id="admx-terminalserver-ts_temp_delete">ADMX_TerminalServer/TS_TEMP_DELETE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_temp_per_session" id="admx-terminalserver-ts_temp_per_session">ADMX_TerminalServer/TS_TEMP_PER_SESSION</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_time_zone" id="admx-terminalserver-ts_time_zone">ADMX_TerminalServer/TS_TIME_ZONE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_tscc_permissions_policy" id="admx-terminalserver-ts_tscc_permissions_policy">ADMX_TerminalServer/TS_TSCC_PERMISSIONS_POLICY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_turnoff_singleapp" id="admx-terminalserver-ts_turnoff_singleapp">ADMX_TerminalServer/TS_TURNOFF_SINGLEAPP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_uia" id="admx-terminalserver-ts_uia">ADMX_TerminalServer/TS_UIA</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_usb_redirection_disable" id="admx-terminalserver-ts_usb_redirection_disable">ADMX_TerminalServer/TS_USB_REDIRECTION_DISABLE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_user_authentication_policy" id="admx-terminalserver-ts_user_authentication_policy">ADMX_TerminalServer/TS_USER_AUTHENTICATION_POLICY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_user_home" id="admx-terminalserver-ts_user_home">ADMX_TerminalServer/TS_USER_HOME</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_user_mandatory_profiles" id="admx-terminalserver-ts_user_mandatory_profiles">ADMX_TerminalServer/TS_USER_MANDATORY_PROFILES</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_user_profiles" id="admx-terminalserver-ts_user_profiles">ADMX_TerminalServer/TS_USER_PROFILES</a>
+  </dd>
 <dl>
 
 ### ADMX_Thumbnails policies  
