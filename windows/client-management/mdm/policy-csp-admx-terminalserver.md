@@ -165,7 +165,7 @@ manager: dansimp
   <dd>
     <a href="#admx-terminalserver-ts_promt_creds_client_comp">ADMX_TerminalServer/TS_PROMT_CREDS_CLIENT_COMP</a>
   </dd>
-<dd>
+  <dd>
     <a href="#admx-terminalserver-ts_radc_defaultconnection">ADMX_TerminalServer/TS_RADC_DefaultConnection</a>
   </dd>
   <dd>
@@ -215,6 +215,63 @@ manager: dansimp
   </dd>
   <dd>
     <a href="#admx-terminalserver-ts_server_image_quality">ADMX_TerminalServer/TS_SERVER_IMAGE_QUALITY</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_server_legacy_rfx">ADMX_TerminalServer/TS_SERVER_LEGACY_RFX</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_server_profile">ADMX_TerminalServer/TS_SERVER_PROFILE</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_server_visexp">ADMX_TerminalServer/TS_SERVER_VISEXP</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_server_wddm_graphics_driver">ADMX_TerminalServer/TS_SERVER_WDDM_GRAPHICS_DRIVER</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_session_end_on_limit_1">ADMX_TerminalServer/TS_Session_End_On_Limit_1</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_session_end_on_limit_2">ADMX_TerminalServer/TS_Session_End_On_Limit_2</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_sessions_disconnected_timeout_1">ADMX_TerminalServer/TS_SESSIONS_Disconnected_Timeout_1</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_sessions_disconnected_timeout_2">ADMX_TerminalServer/TS_SESSIONS_Disconnected_Timeout_2</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_sessions_idle_limit_1">ADMX_TerminalServer/TS_SESSIONS_Idle_Limit_1</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_sessions_idle_limit_2">ADMX_TerminalServer/TS_SESSIONS_Idle_Limit_2</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_sessions_limits_1">ADMX_TerminalServer/TS_SESSIONS_Limits_1</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_sessions_limits_2">ADMX_TerminalServer/TS_SESSIONS_Limits_2</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_single_session">ADMX_TerminalServer/TS_SINGLE_SESSION</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_smart_card">ADMX_TerminalServer/TS_SMART_CARD</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_start_program_1">ADMX_TerminalServer/TS_START_PROGRAM_1</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_start_program_2">ADMX_TerminalServer/TS_START_PROGRAM_2</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_temp_delete">ADMX_TerminalServer/TS_TEMP_DELETE</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_temp_per_session">ADMX_TerminalServer/TS_TEMP_PER_SESSION</a>
+  </dd>
+  <dd>
+    <a href="#admx-terminalserver-ts_time_zone">ADMX_TerminalServer/TS_TIME_ZONE</a>
   </dd>
 </dl>
 
@@ -6296,5 +6353,6 @@ ADMX Info:
 <!--/Policy-->
 
 <hr/>
+
 <!--/Policies-->
 
