@@ -4242,7 +4242,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_advanced_remotefx_remoteapp" id="admx-terminalserver-ts_server_advanced_remotefx_remoteapp">ADMX_TerminalServer/TS_SERVER_ADVANCED_REMOTEFX_REMOTEAPP</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server-auth" id="admx-terminalserver-ts_server_auth">ADMX_TerminalServer/TS_SERVER_AUTH</a>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_auth" id="admx-terminalserver-ts_server_auth">ADMX_TerminalServer/TS_SERVER_AUTH</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_avc_hw_encode_preferred" id="admx-terminalserver-ts_server_avc_hw_encode_preferred">ADMX_TerminalServer/TS_SERVER_AVC_HW_ENCODE_PREFERRED</a>
