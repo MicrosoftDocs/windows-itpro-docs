@@ -126,96 +126,23 @@ Table 2 lists the settings in the Device Management node in the Google Admin Con
 
 Table 2. Settings in the Device Management node in the Google Admin Console
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Section</th>
-<th align="left">Settings</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Network</td>
-<td align="left"><p>These settings configure the network connections for Chromebook devices and include the following settings categories:</p>
-<ul>
-<li><p><strong>Wi-Fi.</strong> Configures the Wi-Fi connections that are available. The Windows devices will need these configuration settings to connect to the same Wi-Fi networks.</p></li>
-<li><p><strong>Ethernet.</strong> Configures authentication for secured, wired Ethernet connections (802.1x). The Windows devices will need these configuration settings to connect to the network.</p></li>
-<li><p><strong>VPN.</strong> Specifies the VPN network connections used by devices when not directly connected to your intranet. The Windows devices will need the same VPN network connections for users to remotely connect to your intranet.</p></li>
-<li><p><strong>Certificates.</strong> Contains the certificates used for network authentication. The Windows devices will need these certificates to connect to the network.</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left">Mobile</td>
-<td align="left"><p>These settings configure and manage companion devices (such as smartphones or tablets) that are used in conjunction with the Chromebook devices and include the following settings categories:</p>
-<ul>
-<li><p><strong>Device management settings.</strong> Configures settings for mobile (companion) devices, such as device synchronization, password settings, auditing, enable remote wipe, and other settings. Record these settings so that you can ensure the same settings are applied when the devices are being managed by Microsoft Intune or another mobile device management (MDM) provider.</p></li>
-<li><p><strong>Device activation.</strong> Contains a list of mobile (companion) devices that need to be approved for management by using the Google Admin Console. Approve or block any devices in this list so that the list of managed devices accurately reflects active managed devices.</p></li>
-<li><p><strong>Managed devices.</strong> Performs management tasks on mobile (companion) devices that are managed by the Google Admin Console. Record the list of companion devices on this page so that you can ensure the same devices are managed by Intune or another MDM provider.</p></li>
-<li><p><strong>Set Up Apple Push Certificate.</strong> Configures the certificate that is essentially the digital signature that lets the Google Admin Console manage iOS devices. You will need this certificate if you plan to manage iOS devices by using Intune or another MDM provider.</p></li>
-<li><p><strong>Set Up Android for Work.</strong> Authorizes the Google Admin Console to be the MDM provider for Android devices by providing an Enterprise Mobility Management (EMM) token. You will need this token if you plan to manage Android devices by using another MDM provider.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left">Chrome management</td>
-<td align="left"><p>These settings configure and manage companion devices (such as smartphones or tablets) that are used in conjunction with the Chromebook devices and include the following settings categories:</p>
-<ul>
-<li><p><strong>User settings.</strong> Configures user-based settings for the Chrome browser and Chromebook devices. Most of these Chromebook user-based settings can be mapped to a corresponding setting in Windows. Record the settings and then map them to settings in Group Policy or Intune.</p></li>
-<li><p><strong>Public session settings.</strong> Configures Public Sessions for Chrome devices that are used as kiosks, loaner devices, shared computers, or for any other work or school-related purpose for which users don&#39;t need to sign in with their credentials. You can configure Windows devices similarly by using Assigned Access. Record the settings and apps that are available in Public Sessions so that you can provide similar configuration in Assigned Access.</p></li>
-<li><p><strong>Device settings.</strong> Configures device-based settings for the Chrome browser and Chromebook devices. You can map most of these Chromebook device-based settings to a corresponding setting in Windows. Record the settings and then map them to settings in Group Policy or Intune.</p></li>
-<li><p><strong>Devices.</strong> Manages Chrome device management licenses. The number of licenses recorded here should correspond to the number of licenses you will need for your new management system, such as Intune. Record the number of licenses and use those to determine how many licenses you will need to manage your Windows devices.</p></li>
-<li><p><strong>App Management.</strong> Provides configuration settings for Chrome apps. Record the settings for any apps that you have identified that will run on Windows devices.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Section  |Settings  |
+|---------|---------|
+|Network     | <p>These settings configure the network connections for Chromebook devices and include the following settings categories:<ul></p><li> **Wi-Fi.** Configures the Wi-Fi connections that are available. The Windows devices will need these configuration settings to connect to the same Wi-Fi networks.</p></li> <li>**Ethernet.** Configures authentication for secured, wired Ethernet connections (802.1x). The Windows devices will need these configuration settings to connect to the network.</p><li>**VPN.** Specifies the VPN network connections used by devices when not directly connected to your intranet. The Windows devices will need the same VPN network connections for users to remotely connect to your intranet.</p><li>**Certificates.** Contains the certificates used for network authentication. The Windows devices will need these certificates to connect to the network.</p>        |
+|Mobile     |These settings configure and manage companion devices (such as smartphones or tablets) that are used in conjunction with the Chromebook devices and include the following settings categories:<ul> <li>**Device management settings.** Configures settings for mobile (companion) devices, such as device synchronization, password settings, auditing, enable remote wipe, and other settings. Record these settings so that you can ensure the same settings are applied when the devices are being managed by Microsoft Intune or another mobile device management (MDM) provider.<li>**Device activation.** Contains a list of mobile (companion) devices that need to be approved for management by using the Google Admin Console. Approve or block any devices in this list so that the list of managed devices accurately reflects active managed devices.<li>**Managed devices.** Performs management tasks on mobile (companion) devices that are managed by the Google Admin Console. Record the list of companion devices on this page so that you can ensure the same devices are managed by Intune or another MDM provider.<li> **Set Up Apple Push Certificate.** Configures the certificate that is essentially the digital signature that lets the Google Admin Console manage iOS devices. You will need this certificate if you plan to manage iOS devices by using Intune or another MDM provider. <li>**Set Up Android for Work.** Authorizes the Google Admin Console to be the MDM provider for Android devices by providing an Enterprise Mobility Management (EMM) token. You will need this token if you plan to manage Android devices by using another MDM provider.        |
+|Chrome management    |These settings configure and manage companion devices (such as smartphones or tablets) that are used in conjunction with the Chromebook devices and include the following settings categories:<ul> <li>**User settings.** Configures user-based settings for the Chrome browser and Chromebook devices. Most of these Chromebook user-based settings can be mapped to a corresponding setting in Windows. Record the settings and then map them to settings in Group Policy or Intune.<li>**Public session settings.** Configures Public Sessions for Chrome devices that are used as kiosks, loaner devices, shared computers, or for any other work or school-related purpose for which users don&#39;t need to sign in with their credentials. You can configure Windows devices similarly by using Assigned Access. Record the settings and apps that are available in Public Sessions so that you can provide similar configuration in Assigned Access.<li> **Device settings.** Configures device-based settings for the Chrome browser and Chromebook devices. You can map most of these Chromebook device-based settings to a corresponding setting in Windows. Record the settings and then map them to settings in Group Policy or Intune.<li>**Devices.** Manages Chrome device management licenses. The number of licenses recorded here should correspond to the number of licenses you will need for your new management system, such as Intune. Record the number of licenses and use those to determine how many licenses you will need to manage your Windows devices <li>**App Management.** Provides configuration settings for Chrome apps. Record the settings for any apps that you have identified that will run on Windows devices.      |
 
 Table 3 lists the settings in the Security node in the Google Admin Console. Review the settings and determine which settings you will migrate to Windows.
 
 Table 3. Settings in the Security node in the Google Admin Console
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Section</th>
-<th align="left">Settings</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Basic settings</p></td>
-<td align="left"><p>These settings configure password management and whether or not two-factor authentication (2FA) is configured. You can set the minimum password length, the maximum password length, if non-admin users can recover their own passwords, and enable 2FA.</p>
-<p>Record these settings and use them to help configure your on-premises Active Directory or Azure Active Directory (Azure AD) to mirror the current behavior of your Chromebook environment.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Password monitoring</p></td>
-<td align="left"><p>This section is used to monitor the strength of user passwords. You don’t need to migrate any settings in this section.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>API reference</p></td>
-<td align="left"><p>This section is used to enable access to various Google Apps Administrative APIs. You don’t need to migrate any settings in this section.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Set up single sign-on (SSO)</p></td>
-<td align="left"><p>This section is used to configure SSO for Google web-based apps (such as Google Apps Gmail or Google Apps Calendar). While you don’t need to migrate any settings in this section, you probably will want to configure Azure Active Directory synchronization to replace Google-based SSO.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Advanced settings</p></td>
-<td align="left"><p>This section is used to configure administrative access to user data and to configure the Google Secure Data Connector (which allows Google Apps to access data on your local network). You don’t need to migrate any settings in this section.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Section|Settings|
+|--- |--- |
+|Basic settings|These settings configure password management and whether or not two-factor authentication (2FA) is configured. You can set the minimum password length, the maximum password length, if non-admin users can recover their own passwords, and enable 2FA.<br> Record these settings and use them to help configure your on-premises Active Directory or Azure Active Directory (Azure AD) to mirror the current behavior of your Chromebook environment.|
+|Password monitoring|This section is used to monitor the strength of user passwords. You don’t need to migrate any settings in this section.|
+|API reference|This section is used to enable access to various Google Apps Administrative APIs. You don’t need to migrate any settings in this section.|
+|Set up single sign-on (SSO)|This section is used to configure SSO for Google web-based apps (such as Google Apps Gmail or Google Apps Calendar). While you don’t need to migrate any settings in this section, you probably will want to configure Azure Active Directory synchronization to replace Google-based SSO.|
+|Advanced settings|This section is used to configure administrative access to user data and to configure the Google Secure Data Connector (which allows Google Apps to access data on your local network). You don’t need to migrate any settings in this section.|
 
 **Identify locally-configured settings to migrate**
 
@@ -428,62 +355,14 @@ Table 5 is a decision matrix that helps you decide if you can use only on-premis
 
 Table 5. Select on-premises AD DS, Azure AD, or hybrid
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">If you plan to...</th>
-<th align="left">On-premises AD DS</th>
-<th align="left">Azure AD</th>
-<th align="left">Hybrid</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Use Office 365</td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left">X</td>
-</tr>
-<tr class="even">
-<td align="left">Use Intune for management</td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left">X</td>
-</tr>
-<tr class="odd">
-<td align="left">Use Microsoft Endpoint Manager for management</td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left">X</td>
-</tr>
-<tr class="even">
-<td align="left">Use Group Policy for management</td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left">X</td>
-</tr>
-<tr class="odd">
-<td align="left">Have devices that are domain-joined</td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left">X</td>
-</tr>
-<tr class="even">
-<td align="left">Allow faculty and students to Bring Your Own Device (BYOD) which are not domain-joined</td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left">X</td>
-</tr>
-</tbody>
-</table>
-
- 
+|If you plan to...|On-premises AD DS|Azure AD|Hybrid|
+|--- |--- |--- |--- |
+|Use Office 365||✔️|✔️|
+|Use Intune for management||✔️|✔️|
+|Use Microsoft Endpoint Manager for management|✔️||✔️|
+|Use Group Policy for management|✔️||✔️|
+|Have devices that are domain-joined|✔️||✔️|
+|Allow faculty and students to Bring Your Own Device (BYOD) which are not domain-joined||✔️|✔️|
 
 ### <a href="" id="plan-userdevapp-manage"></a>
 
@@ -497,113 +376,17 @@ Table 6 is a decision matrix that lists the device, user, and app management pro
 
 Table 6. Device, user, and app management products and technologies
 
-<table>
-<colgroup>
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-<col width="14%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Desired feature</th>
-<th align="left">Windows provisioning packages</th>
-<th align="left">Group Policy</th>
-<th align="left">Configuration Manager</th>
-<th align="left">Intune</th>
-<th align="left">MDT</th>
-<th align="left">Windows Software Update Services</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Deploy operating system images</td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">Deploy apps during operating system deployment</td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">Deploy apps after operating system deployment</td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">Deploy software updates during operating system deployment</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">Deploy software updates after operating system deployment</td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left">X</td>
-</tr>
-<tr class="even">
-<td align="left">Support devices that are domain-joined</td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">Support devices that are not domain-joined</td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left">Use on-premises resources</td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left">Use cloud-based services</td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left">X</td>
-<td align="left"></td>
-<td align="left"></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Desired feature|Windows provisioning packages|Group Policy|Configuration Manager|Intune|MDT|Windows Software Update Services|
+|--- |--- |--- |--- |--- |--- |--- |
+|Deploy operating system images|✔️||✔️||✔️||
+|Deploy apps during operating system deployment|✔️||✔️||✔️||
+|Deploy apps after operating system deployment|✔️|✔️|✔️||||
+|Deploy software updates during operating system deployment|||✔️||✔️||
+|Deploy software updates after operating system deployment|✔️|✔️|✔️|✔️||✔️|
+|Support devices that are domain-joined|✔️|✔️|✔️|✔️|✔️||
+|Support devices that are not domain-joined|✔️|||✔️|✔️||
+|Use on-premises resources|✔️|✔️|✔️||✔️||
+|Use cloud-based services||||✔️|||
 
 You can use Configuration Manager and Intune in conjunction with each other to provide features from both products and technologies. In some instances you may need only one of these products or technologies. In other instances, you may need two or more to meet the device, user, and app management needs for your institution.
 
@@ -665,35 +448,10 @@ It is important that you perform any network infrastructure remediation first be
 
 Table 7. Network infrastructure products and technologies and deployment resources
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Product or technology</th>
-<th align="left">Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">DHCP</td>
-<td align="left"><ul>
-<li><p><a href="/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)" data-raw-source="[Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11))">Core Network Guide</a></p></li>
-<li><p><a href="/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd283051(v=ws.10)" data-raw-source="[DHCP Deployment Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd283051(v=ws.10))">DHCP Deployment Guide</a></p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left">DNS</td>
-<td align="left"><ul>
-<li><p><a href="/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)" data-raw-source="[Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11))">Core Network Guide</a></p></li>
-<li><p><a href="/previous-versions/windows/it-pro/windows-server-2003/cc780661(v=ws.10)" data-raw-source="[Deploying Domain Name System (DNS)](/previous-versions/windows/it-pro/windows-server-2003/cc780661(v=ws.10))">Deploying Domain Name System (DNS)</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
+|Product or technology|Resources|
+|--- |--- |
+|DHCP|<li> [Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)) <li> [DHCP Deployment Guide](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd283051(v=ws.10))|
+|DNS|<li>[Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)) <li>[Deploying Domain Name System (DNS)](/previous-versions/windows/it-pro/windows-server-2003/cc780661(v=ws.10))|
  
 
 If you use network infrastructure products and technologies from other vendors, refer to the vendor documentation on how to perform the necessary remediation. If you determined that no remediation is necessary, you can skip this section.
@@ -707,37 +465,10 @@ In the [Plan for Active Directory services](#plan-adservices) section, you deter
 
 Table 8. AD DS, Azure AD and deployment resources
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Product or technology</th>
-<th align="left">Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">AD DS</td>
-<td align="left"><ul>
-<li><p><a href="/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)" data-raw-source="[Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11))">Core Network Guide</a></p></li>
-<li><p><a href="/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11)" data-raw-source="[Active Directory Domain Services Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11))">Active Directory Domain Services Overview</a></p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left">Azure AD</td>
-<td align="left"><ul>
-<li><p><a href="/azure/active-directory/" data-raw-source="[Azure Active Directory documentation](/azure/active-directory/)">Azure Active Directory documentation</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690259" data-raw-source="[Manage and support Azure Active Directory Premium](https://go.microsoft.com/fwlink/p/?LinkId=690259)">Manage and support Azure Active Directory Premium</a></p></li>
-<li><p><a href="/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100" data-raw-source="[Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)">Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Product or technology|Resources|
+|--- |--- |
+|AD DS| <li> [Core Network Guide](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh911995(v=ws.11)) <li>[Active Directory Domain Services Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831484(v=ws.11))|
+|Azure AD| <li> [Azure Active Directory documentation](/azure/active-directory/) <li>[Manage and support Azure Active Directory Premium](https://go.microsoft.com/fwlink/p/?LinkId=690259) <li>[Guidelines for Deploying Windows Server Active Directory on Azure Virtual Machines](/windows-server/identity/ad-ds/introduction-to-active-directory-domain-services-ad-ds-virtualization-level-100)|
 
 If you decided not to migrate to AD DS or Azure AD as a part of the migration, or if you determined that no remediation is necessary, you can skip this section. If you use identity products and technologies from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
@@ -750,59 +481,13 @@ Table 9 lists the Microsoft management systems and the deployment resources for 
 
 Table 9. Management systems and deployment resources
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Management system</th>
-<th align="left">Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Windows provisioning packages</td>
-<td align="left"><ul>
-<li><p><a href="/windows/configuration/provisioning-packages/provisioning-create-package" data-raw-source="[Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package)">Build and apply a provisioning package</a></p></li>
-<li><p><a href="/windows/configuration/provisioning-packages/provisioning-install-icd" data-raw-source="[Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd)">Windows Imaging and Configuration Designer</a></p></li>
-<li><p><a href="/archive/blogs/canitpro/step-by-step-building-windows-10-provisioning-packages" data-raw-source="[Step-By-Step: Building Windows 10 Provisioning Packages](/archive/blogs/canitpro/step-by-step-building-windows-10-provisioning-packages)">Step-By-Step: Building Windows 10 Provisioning Packages</a></p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left">Group Policy</td>
-<td align="left"><ul>
-<li><p><a href="/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj899807(v=ws.11)" data-raw-source="[Core Network Companion Guide: Group Policy Deployment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj899807(v=ws.11))">Core Network Companion Guide: Group Policy Deployment</a></p></li>
-<li><p><a href="/previous-versions/windows/it-pro/windows-server-2003/cc737330(v=ws.10)" data-raw-source="[Deploying Group Policy](/previous-versions/windows/it-pro/windows-server-2003/cc737330(v=ws.10))">Deploying Group Policy</a></p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left">Configuration Manager</td>
-<td align="left"><ul>
-<li><p><a href="/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10)" data-raw-source="[Site Administration for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10))">Site Administration for System Center 2012 Configuration Manager</a></p></li>
-<li><p><a href="/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10)" data-raw-source="[Deploying Clients for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10))">Deploying Clients for System Center 2012 Configuration Manager</a></p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left">Intune</td>
-<td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690262" data-raw-source="[Set up and manage devices with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=690262)">Set up and manage devices with Microsoft Intune</a></p></li>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690263" data-raw-source="[Smoother Management Of Office 365 Deployments with Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=690263)">Smoother Management Of Office 365 Deployments with Windows Intune</a></p></li>
-<li><p><a href="/learn/?l=fCzIjVKy_6404984382" data-raw-source="[System Center 2012 R2 Configuration Manager &amp;amp; Windows Intune](/learn/?l=fCzIjVKy_6404984382)">System Center 2012 R2 Configuration Manager &amp; Windows Intune</a></p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left">MDT</td>
-<td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=690324" data-raw-source="[MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=690324)">MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013</a></p></li>
-<li><p><a href="/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key" data-raw-source="[Step-By-Step: Installing Windows 8.1 From A USB Key](/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key)">Step-By-Step: Installing Windows 8.1 From A USB Key</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Management system|Resources|
+|--- |--- |
+|Windows provisioning packages| <li> [Build and apply a provisioning package](/windows/configuration/provisioning-packages/provisioning-create-package) <li>[Windows Imaging and Configuration Designer](/windows/configuration/provisioning-packages/provisioning-install-icd) <li> [Step-By-Step: Building Windows 10 Provisioning Packages](/archive/blogs/canitpro/step-by-step-building-windows-10-provisioning-packages)|
+|Group Policy|<li> [Core Network Companion Guide: Group Policy Deployment](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj899807(v=ws.11)) <li> [Deploying Group Policy](/previous-versions/windows/it-pro/windows-server-2003/cc737330(v=ws.10))"|
+|Configuration Manager| <li> [Site Administration for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg681983(v=technet.10)) <li> [Deploying Clients for System Center 2012 Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699391(v=technet.10))|
+|Intune| <li> [Set up and manage devices with Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=690262) <li> [Smoother Management Of Office 365 Deployments with Windows Intune](https://go.microsoft.com/fwlink/p/?LinkId=690263) <li> [System Center 2012 R2 Configuration Manager &amp;amp; Windows Intune](/learn/?l=fCzIjVKy_6404984382)|
+|MDT| <li>[MDT documentation in the Microsoft Deployment Toolkit (MDT) 2013](https://go.microsoft.com/fwlink/p/?LinkId=690324) <li> [Step-By-Step: Installing Windows 8.1 From A USB Key](/archive/blogs/canitpro/step-by-step-installing-windows-8-1-from-a-usb-key)|
 
 If you determined that no new management system or no remediation of existing systems is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 
@@ -815,44 +500,11 @@ In this step, you need to configure your management system to deploy the apps to
 
 Table 10. Management systems and app deployment resources
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Management system</th>
-<th align="left">Resources</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">Group Policy</td>
-<td align="left"><ul>
-<li><p><a href="/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791894(v=ws.10)" data-raw-source="[Editing an AppLocker Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791894(v=ws.10))">Editing an AppLocker Policy</a></p></li>
-<li><p><a href="/previous-versions/windows/it-pro/windows-server-2003/cc739305(v=ws.10)" data-raw-source="[Group Policy Software Deployment Background](/previous-versions/windows/it-pro/windows-server-2003/cc739305(v=ws.10))">Group Policy Software Deployment Background</a></p></li>
-<li><p><a href="/previous-versions/windows/it-pro/windows-server-2003/cc783635(v=ws.10)" data-raw-source="[Assigning and Publishing Software](/previous-versions/windows/it-pro/windows-server-2003/cc783635(v=ws.10))">Assigning and Publishing Software</a></p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left">Configuration Manager</td>
-<td align="left"><ul>
-<li><p><a href="/previous-versions/system-center/system-center-2012-R2/gg682082(v=technet.10)" data-raw-source="[How to Deploy Applications in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682082(v=technet.10))">How to Deploy Applications in Configuration Manager</a></p></li>
-<li><p><a href="/previous-versions/system-center/system-center-2012-R2/gg699373(v=technet.10)" data-raw-source="[Application Management in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699373(v=technet.10))">Application Management in Configuration Manager</a></p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td align="left">Intune</td>
-<td align="left"><ul>
-<li><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=733913" data-raw-source="[Deploy apps to mobile devices in Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733913)">Deploy apps to mobile devices in Microsoft Intune</a></p></li>
-<li><p><a href="/mem/intune/" data-raw-source="[Manage apps with Microsoft Intune](/mem/intune/)">Manage apps with Microsoft Intune</a></p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Management system|Resources|
+|--- |--- |
+|Group Policy| <li> [Editing an AppLocker Policy](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/ee791894(v=ws.10)) <li> [Group Policy Software Deployment Background](/previous-versions/windows/it-pro/windows-server-2003/cc739305(v=ws.10)) <li> [Assigning and Publishing Software](/previous-versions/windows/it-pro/windows-server-2003/cc783635(v=ws.10))|
+|Configuration Manager| <li> [How to Deploy Applications in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg682082(v=technet.10)) <li> [Application Management in Configuration Manager](/previous-versions/system-center/system-center-2012-R2/gg699373(v=technet.10))|
+|Intune| <li> [Deploy apps to mobile devices in Microsoft Intune](https://go.microsoft.com/fwlink/p/?LinkId=733913) <li> [Manage apps with Microsoft Intune](/mem/intune/)|
 
 If you determined that no deployment of apps is necessary, you can skip this section. If you use a management system from another vendor, refer to the vendor documentation on how to perform the necessary steps.
 

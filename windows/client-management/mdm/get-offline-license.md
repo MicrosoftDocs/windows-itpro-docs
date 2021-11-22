@@ -18,102 +18,27 @@ The **Get offline license** operation retrieves the offline license information 
 
 ## Request
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Method</th>
-<th>Request URI</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>POST</p></td>
-<td><p>https://bspmts.mp.microsoft.com/V1/Products/{productId}/{skuId}/OfflineLicense/{contentId}</p></td>
-</tr>
-</tbody>
-</table>
+**POST:**
 
- 
+```http
+https://bspmts.mp.microsoft.com/V1/Products/{productId}/{skuId}/OfflineLicense/{contentId}
+```
+
 ### URI parameters
 
 The following parameters may be specified in the request URI.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>productId</p></td>
-<td><p>string</p></td>
-<td><p>Required. Identifies a specific product that has been acquired.</p></td>
-</tr>
-<tr class="even">
-<td><p>skuId</p></td>
-<td><p>string</p></td>
-<td><p>Required. The SKU identifier.</p></td>
-</tr>
-<tr class="odd">
-<td><p>contentId</p></td>
-<td><p>string</p></td>
-<td><p>Required. Identifies a specific application.</p></td>
-</tr>
-</tbody>
-</table>
+|Parameter|Type|Description|
+|--- |--- |--- |
+|productId|string|Required. Identifies a specific product that has been acquired.|
+|skuId|string|Required. The SKU identifier.|
+|contentId|string|Required. Identifies a specific application.|
    
-
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Error code</th>
-<th>Description</th>
-<th>Retry</th>
-<th>Data field</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>400</p></td>
-<td><p>Invalid parameters</p></td>
-<td><p>No</p></td>
-<td><p>Parameter name</p>
-<p>Reason: Missing parameter or invalid parameter</p>
-<p>Details: String</p></td>
-</tr>
-<tr class="even">
-<td><p>404</p></td>
-<td><p>Not found</p></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>409</p></td>
-<td><p>Conflict</p></td>
-<td></td>
-<td><p>Reason: Not owned, Not offline</p></td>
-</tr>
-</tbody>
-</table>
-
+|Error code|Description|Retry|Data field|
+|--- |--- |--- |--- |
+|400|Invalid parameters|No|Parameter name<br>Reason: Missing parameter or invalid parameter<br>Details: String|
+|404|Not found|||
+|409|Conflict||Reason: Not owned, Not offline|
 
 ## Response
 

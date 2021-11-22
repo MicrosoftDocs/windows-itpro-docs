@@ -19,12 +19,12 @@ Use to configure device management settings.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [Accounts](#accounts) | ✔️  | ✔️ | ✔️ |  |  |
-| [PGList](#pglist) | ✔️  | ✔️ | ✔️ |  |  |
-| [Policies](#policies) | ✔️  | ✔️ | ✔️ |  |  |
-| [TrustedProvisioningSource](#trustedprovisioningsource) | ✔️  | ✔️ | ✔️ |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [Accounts](#accounts) | ✔️  | ✔️ |  |  |
+| [PGList](#pglist) | ✔️  | ✔️ |  |  |
+| [Policies](#policies) | ✔️  | ✔️ |  |  |
+| [TrustedProvisioningSource](#trustedprovisioningsource) | ✔️  | ✔️ |  |  |
 
 ## Accounts
 

@@ -93,7 +93,7 @@ Microsoft Defender for Endpoint has been expanded with powerful analytics, secur
 
 Windows Defender Application Guard hardens a favorite attacker entry-point by isolating malware and other threats away from your data, apps, and infrastructure. For more information, see [Windows Defender Application Guard overview](/windows/threat-protection/windows-defender-application-guard/wd-app-guard-overview).
 
-### Window Defender Exploit Guard
+### Windows Defender Exploit Guard
 
 Window Defender Exploit Guard provides intrusion prevention capabilities to reduce the attack and exploit surface of applications. Exploit Guard has many of the threat mitigations that were available in Enhanced Mitigation Experience Toolkit (EMET) toolkit, a deprecated security download. These mitigations are now built into Windows and configurable with Exploit Guard. These mitigations include [Exploit protection](/microsoft-365/security/defender-endpoint/enable-exploit-protection), [Attack surface reduction protection](/microsoft-365/security/defender-endpoint/evaluate-attack-surface-reduction), [Controlled folder access](/microsoft-365/security/defender-endpoint/evaluate-controlled-folder-access), and [Network protection](/microsoft-365/security/defender-endpoint/enable-network-protection).
 

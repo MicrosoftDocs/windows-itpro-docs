@@ -20,7 +20,7 @@ Do not use at this time. Instead, use [ConnectivityProfiles > WLAN](wcd-connecti
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |  |  |  |  |   |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings |  |  |  |   |
 
