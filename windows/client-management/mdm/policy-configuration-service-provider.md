@@ -4205,6 +4205,84 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_promt_creds_client_comp" id="admx-terminalserver-ts_promt_creds_client_comp">ADMX_TerminalServer/TS_PROMT_CREDS_CLIENT_COMP</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_radc_defaultconnectionp" id="admx-terminalserver-ts_radc_defaultconnection">ADMX_TerminalServer/TS_RADC_DefaultConnection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_rdsappx_waitforregistration" id="admx-terminalserver-ts_rdsappx_waitforregistration">ADMX_TerminalServer/TS_RDSAppX_WaitForRegistration</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_remotecontrol_1" id="admx-terminalserver-ts_remotecontrol_1">ADMX_TerminalServer/TS_RemoteControl_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_remotecontrol_2" id="admx-terminalserver-ts_remotecontrol_2">ADMX_TerminalServer/TS_RemoteControl_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_remotedesktopvirtualgraphics" id="admx-terminalserver-ts_remotedesktopvirtualgraphics">ADMX_TerminalServer/TS_RemoteDesktopVirtualGraphics</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sd_clustname" id="admx-terminalserver-ts_sd_clustname">ADMX_TerminalServer/TS_SD_ClustName</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sd_expose_address" id="admx-terminalserver-ts_sd_expose_address">ADMX_TerminalServer/TS_SD_EXPOSE_ADDRESS</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sd_loc" id="admx-terminalserver-ts_sd_loc">ADMX_TerminalServer/TS_SD_Loc</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_security_layer_policy" id="admx-terminalserver-ts_security_layer_policy">ADMX_TerminalServer/TS_SECURITY_LAYER_POLICY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_select_network_detect" id="admx-terminalserver-ts_select_network_detect">ADMX_TerminalServer/TS_SELECT_NETWORK_DETECT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_select_transport" id="admx-terminalserver-ts_select_transport">ADMX_TerminalServer/TS_SELECT_TRANSPORT</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_advanted_remotefx_remoteapp" id="admx-terminalserver-ts_server_advanted_remotefx_remoteapp">ADMX_TerminalServer/TS_SERVER_ADVANCED_REMOTEFX_REMOTEAPP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server-auth" id="admx-terminalserver-ts_server_auth">ADMX_TerminalServer/TS_SERVER_AUTH</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server-auth" id="admx-terminalserver-ts_server_avc_hw_encode_preferred">ADMX_TerminalServer/TS_SERVER_AVC_HW_ENCODE_PREFERRED</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_avc_hw_encode_preferred" id="admx-terminalserver-ts_server_avc_hw_encode_preferred">ADMX_TerminalServer/TS_SERVER_AVC_HW_ENCODE_PREFERRED</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_avc444_mode_preferred" id="admx-terminalserver-ts_server_avc444_mode_preferred">ADMX_TerminalServer/TS_SERVER_AVC444_MODE_PREFERRED</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_compressor" id="admx-terminalserver-ts_server_compressor">ADMX_TerminalServer/TS_SERVER_COMPRESSOR</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_image_quality" id="admx-terminalserver-ts_server_image_quality">ADMX_TerminalServer/TS_SERVER_IMAGE_QUALITY</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_legacy_rfx" id="admx-terminalserver-ts_server_legacy_rfx">ADMX_TerminalServer/TS_SERVER_LEGACY_RFX</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_profile" id="admx-terminalserver-ts_server_profile">ADMX_TerminalServer/TS_SERVER_PROFILE</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_visexp" id="admx-terminalserver-ts_server_visexp">ADMX_TerminalServer/TS_SERVER_VISEXP</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_wddm_graphics_driver" id="admx-terminalserver-ts_server_wddm_graphics_driver">ADMX_TerminalServer/TS_SERVER_WDDM_GRAPHICS_DRIVER</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_session_end_on_limit_1" id="admx-terminalserver-ts_session_end_on_limit_1">ADMX_TerminalServer/TS_Session_End_On_Limit_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_session_end_on_limit_2" id="admx-terminalserver-ts_session_end_on_limit_2">ADMX_TerminalServer/TS_Session_End_On_Limit_2</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_disconnected_timeout_1" id="admx-terminalserver-ts_sessions_disconnected_timeout_1">ADMX_TerminalServer/TS_SESSIONS_Disconnected_Timeout_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_sessions_disconnected_timeout_2" id="admx-terminalserver-ts_sessions_disconnected_timeout_2">ADMX_TerminalServer/TS_SESSIONS_Disconnected_Timeout_2</a>
+  </dd>
 <dl>
 
 ### ADMX_Thumbnails policies  

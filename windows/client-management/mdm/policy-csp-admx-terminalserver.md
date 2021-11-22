@@ -567,154 +567,9 @@ ADMX Info:
 
 <hr/>
 
-<!--Policy-->
-<a href="" id="admx-terminalserver-ts_radc_defaultconnection"></a>**ADMX_TerminalServer/TS_RADC_DefaultConnection**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
-This policy setting specifies the default connection URL for RemoteApp and Desktop Connections. The default connection URL is a specific connection that can only be configured by using Group Policy. In addition to the capabilities that are common to all connections, the default connection URL allows document file types to be associated with RemoteApp programs.  The default connection URL must be configured in the form of [http://contoso.com/rdweb/Feed/webfeed.aspx](http://contoso.com/rdweb/Feed/webfeed.aspx).    
-
-- If you enable this policy setting, the specified URL is configured as the default connection URL for the user and replaces any existing connection URL. The user cannot change the default connection URL. The user's default logon credentials are used when setting up the default connection URL.  
-
-- If you disable or do not configure this policy setting, the user has no default connection URL.  
-
-RemoteApp programs that are installed through RemoteApp and Desktop Connections from an un-trusted server can compromise the security of a user's account.
-
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Specify default connection URL*
--   GP name: *TS_RADC_DefaultConnection*
--   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection*
--   GP ADMX file name: *TerminalServer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
 
 <!--Policy-->
-<a href="" id="admx-terminalserver-ts_rdsappx_waitforregistration"></a>**ADMX_TerminalServer/TS_RDSAppX_WaitForRegistration**  
-
-<!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
-
-<!--/SupportedSKUs-->
-<hr/>
-
-<!--Scope-->
-[Scope](./policy-configuration-service-provider.md#policy-scope):
-
-> [!div class = "checklist"]
-> * User
-
-<hr/>
-
-<!--/Scope-->
-<!--Description-->
-
-This policy setting allows you to specify whether the app registration is completed before showing the Start screen to the user.  By default, when a new user signs in to a computer, the Start screen is shown and apps are registered in the background. However, some apps may not work until app registration is complete.  
-
-- If you enable this policy setting, user sign-in is blocked for up to 6 minutes to complete the app registration. You can use this policy setting when customizing the Start screen on Remote Desktop Session Host servers.  
-
-- If you disable or do not configure this policy setting, the Start screen is shown and apps are registered in the background.
-
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Suspend user sign-in to complete app registration*
--   GP name: *TS_RDSAppX_WaitForRegistration*
--   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection*
--   GP ADMX file name: *TerminalServer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-terminalserver-ts_remotecontrol_1"></a>**ADMX_TerminalServer/TS_RemoteControl_1**  
+<a href="" id="admx-terminalserver-ts_client_allow_signed_files_1"></a>**ADMX_TerminalServer/TS_CLIENT_ALLOW_SIGNED_FILES_1**  
 
 <!--SupportedSKUs-->
 <table>
@@ -763,32 +618,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-
-This policy determines whether the RPC protocol messagese used by VSS for SMB2 File Shares feature is enabled.  VSS for SMB2 File Shares feature enables VSS aware backup applications to perform application consistent backup and restore of VSS aware applications storing data on SMB2 File Shares.  By default, the RPC protocol message between File Server VSS provider and File Server VSS Agent is signed but not encrypted.  
-
-To make changes to this setting effective, you must restart Volume Shadow Copy (VSS) Service.
-
-
-<!--/Description-->
-
-
-<!--ADMXBacked-->
-ADMX Info:  
--   GP Friendly name: *Allow or Disallow use of encryption to protect the RPC protocol messages between File Share Shadow Copy Provider running on application server and File Share Shadow Copy Agent running on the file servers*
--   GP name: *TS_RemoteControl_1*
--   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection*
--   GP ADMX file name: *TerminalServer.admx*
-
-<!--/ADMXBacked-->
-<!--/Policy-->
-<hr/>
-
-<!--Policy-->
-<a href="" id="admx-terminalserver-ts_remotecontrol_2"></a>**ADMX_TerminalServer/TS_RemoteControl_2**  
-
-<!--/Scope-->
-<!--Description-->
-This policy setting allows you to specify whether users can run Remote Desktop Protocol (.rdp) files from a publisher that signed the file with a valid certificate. A valid certificate is one issued by an authority recognized by the client, such as the issuers in the client's Third-Party Root Certification Authorities certificate store.
+This policy setting allows you to specify whether users can run Remote Desktop Protocol (.rdp) files from a publisher that signed the file with a valid certificate. A valid certificate is one that is issued by an authority recognized by the client, such as the issuers in the client's Third-Party Root Certification Authorities certificate store. 
 
 This policy setting also controls whether the user can start an RDP session by using default .rdp settings (for example, when a user directly opens the Remote Desktop Connection [RDC] client without specifying an .rdp file).  
 
@@ -796,7 +626,7 @@ If you enable or do not configure this policy setting, users can run .rdp files 
 
 If you disable this policy setting, users cannot run .rdp files that are signed with a valid certificate. Additionally, users cannot start an RDP session by directly opening the RDC client and specifying the remote computer name. When a user tries to start an RDP session, the user receives a message that the publisher has been blocked.  
 
->[!Note]
+>[!NOTE]
 >You can define this policy setting in the Computer Configuration node or in the User Configuration node. If you configure this policy setting for the computer, all users on the computer are affected.
 
 <!--/Description-->
@@ -804,7 +634,7 @@ If you disable this policy setting, users cannot run .rdp files that are signed 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Allow .rdp files from valid publishers and user's default .rdp settings*
--   GP name: *TTS_CLIENT_ALLOW_SIGNED_FILES_1*
+-   GP name: *TS_CLIENT_ALLOW_SIGNED_FILES_1*
 -   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Connection Client*
 -   GP ADMX file name: *TerminalServer.admx*
 
@@ -2743,6 +2573,82 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="admx-terminalserver-ts_gateway_policy_enable"></a>**ADMX_TerminalServer/TS_GATEWAY_POLICY_ENABLE**
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+If you enable this policy setting, when Remote Desktop Connection cannot connect directly to a remote computer (an RD Session Host server or a computer with Remote Desktop enabled), the clients will attempt to connect to the remote computer through an RD Gateway server.
+
+In this case, the clients will attempt to connect to the RD Gateway server that is specified in the "Set RD Gateway server address" policy setting. You can enforce this policy setting or you can allow users to overwrite this setting.
+
+By default, when you enable this policy setting, it is enforced. When this policy setting is enforced, users cannot override this setting, even if they select the "Use these RD Gateway server settings" option on the client. To enforce this policy setting, you must also specify the address of the RD Gateway server by using the "Set RD Gateway server address" policy setting, or client connection attempts to any remote computer will fail, if the client cannot connect directly to the remote computer.
+
+To enhance security, it is also highly recommended that you specify the authentication method by using the "Set RD Gateway authentication method" policy setting. If you do not specify an authentication method by using this policy setting, either the NTLM protocol that is enabled on the client or a smart card can be used. To allow users to overwrite this policy setting, select the "Allow users to change this setting" check box.
+
+When you do this, users on the client can choose not to connect through the RD Gateway server by selecting the "Do not use an RD Gateway server" option. Users can specify a connection method by configuring settings on the client, using an RDP file, or using an HTML script. If users do not specify a connection method, the connection method that you specify in this policy setting is used by default.
+
+If you disable or do not configure this policy setting, clients will not use the RD Gateway server address that is specified in the "Set RD Gateway server address" policy setting. If an RD Gateway server is specified by the user, a client connection attempt will be made through that RD Gateway server.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:
+- GP Friendly name: *Enable connection through RD Gateway*
+- GP name: *TS_GATEWAY_POLICY_ENABLE*
+- GP path: *Windows Components\Remote Desktop Services\RD Gateway*
+- GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
 <a href="" id="admx-terminalserver-ts_gateway_policy_auth_method"></a>**ADMX_TerminalServer/TS_GATEWAY_POLICY_AUTH_METHOD**  
 
 <!--SupportedSKUs-->
@@ -3864,6 +3770,292 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
+<a href="" id="admx-terminalserver-ts_radc_defaultconnection"></a>**ADMX_TerminalServer/TS_RADC_DefaultConnection**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting specifies the default connection URL for RemoteApp and Desktop Connections. The default connection URL is a specific connection that can only be configured by using Group Policy. In addition to the capabilities that are common to all connections, the default connection URL allows document file types to be associated with RemoteApp programs.  The default connection URL must be configured in the form of [http://contoso.com/rdweb/Feed/webfeed.aspx](http://contoso.com/rdweb/Feed/webfeed.aspx).    
+
+- If you enable this policy setting, the specified URL is configured as the default connection URL for the user and replaces any existing connection URL. The user cannot change the default connection URL. The user's default logon credentials are used when setting up the default connection URL.  
+
+- If you disable or do not configure this policy setting, the user has no default connection URL.  
+
+RemoteApp programs that are installed through RemoteApp and Desktop Connections from an un-trusted server can compromise the security of a user's account.
+
+
+<!--/Description-->
+
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Specify default connection URL*
+-   GP name: *TS_RADC_DefaultConnection*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-terminalserver-ts_rdsappx_waitforregistration"></a>**ADMX_TerminalServer/TS_RDSAppX_WaitForRegistration**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy setting allows you to specify whether the app registration is completed before showing the Start screen to the user.  By default, when a new user signs in to a computer, the Start screen is shown and apps are registered in the background. However, some apps may not work until app registration is complete.  
+
+- If you enable this policy setting, user sign-in is blocked for up to 6 minutes to complete the app registration. You can use this policy setting when customizing the Start screen on Remote Desktop Session Host servers.  
+
+- If you disable or do not configure this policy setting, the Start screen is shown and apps are registered in the background.
+
+
+<!--/Description-->
+
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Suspend user sign-in to complete app registration*
+-   GP name: *TS_RDSAppX_WaitForRegistration*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-terminalserver-ts_remotecontrol_1"></a>**ADMX_TerminalServer/TS_RemoteControl_1**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy determines whether the RPC protocol messagese used by VSS for SMB2 File Shares feature is enabled. VSS for SMB2 File Shares feature enables VSS aware backup applications to perform application consistent backup and restore of VSS aware applications storing data on SMB2 File Shares. By default, the RPC protocol message between File Server VSS provider and File Server VSS Agent is signed but not encrypted.  
+
+To make changes to this setting effective, you must restart Volume Shadow Copy (VSS) Service.
+
+
+<!--/Description-->
+
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Allow or Disallow use of encryption to protect the RPC protocol messages between File Share Shadow Copy Provider running on application server and File Share Shadow Copy Agent running on the file servers*
+-   GP name: *TS_RemoteControl_1*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="admx-terminalserver-ts_remotecontrol_2"></a>**ADMX_TerminalServer/TS_RemoteControl_2**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+This policy determines whether the RPC protocol messagese used by VSS for SMB2 File Shares feature is enabled. VSS for SMB2 File Shares feature enables VSS aware backup applications to perform application consistent backup and restore of VSS aware applications storing data on SMB2 File Shares. By default, the RPC protocol message between File Server VSS provider and File Server VSS Agent is signed but not encrypted.  
+
+To make changes to this setting effective, you must restart Volume Shadow Copy (VSS) Service.
+
+
+<!--/Description-->
+
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Allow or Disallow use of encryption to protect the RPC protocol messages between File Share Shadow Copy Provider running on application server and File Share Shadow Copy Agent running on the file servers*
+-   GP name: *TS_RemoteControl_2*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Device and Resource Redirection*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
 <a href="" id="admx-terminalserver-ts_remotedesktopvirtualgraphics"></a>**ADMX_TerminalServer/TS_RemoteDesktopVirtualGraphics**  
 
 <!--SupportedSKUs-->
@@ -4973,6 +5165,77 @@ ADMX Info:
 
 <!--Policy-->
 
+<a href="" id="admx-terminalserver-ts_server_visexp"></a>**ADMX_TerminalServer/TS_SERVER_VISEXP**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+<!--/Scope-->
+<!--Description-->
+
+This policy setting allows you to specify the visual experience that remote users receive in Remote Desktop Services sessions. Remote sessions on the remote computer are then optimized to support this visual experience. By default, Remote Desktop Services sessions are optimized for rich multimedia, such as applications that use Silverlight or Windows Presentation Foundation.  
+
+- If you enable this policy setting, you must select the visual experience for which you want to optimize Remote Desktop Services sessions. You can select either Rich multimedia or Text.  
+
+- If you disable or do not configure this policy setting, Remote Desktop Services sessions are optimized for rich multimedia.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Optimize visual experience for Remote Desktop Service Sessions*
+-   GP name: *TS_SERVER_VISEXP*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Remote Session Environment\RemoteFX for Windows Server 2008 R2*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+
 <a href="" id="admx-terminalserver-ts_server_wddm_graphics_driver"></a>**ADMX_TerminalServer/TS_SERVER_WDDM_GRAPHICS_DRIVER**  
 
 <!--SupportedSKUs-->
@@ -5567,6 +5830,83 @@ If you want Remote Desktop Services to end instead of disconnect a session when 
 ADMX Info:  
 -   GP Friendly name: *Set time limit for active Remote Desktop Services sessions*
 -   GP name: *TS_SESSIONS_Limits_1*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+
+<a href="" id="admx-terminalserver-ts_sessions_limits_2"></a>**ADMX_TerminalServer/TS_SESSIONS_Limits_2**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+<!--/Scope-->
+<!--Description-->
+
+This policy setting allows you to specify the maximum amount of time that a Remote Desktop Services session can be active before it is automatically disconnected.  
+
+- If you enable this policy setting, you must select the desired time limit in the Active session limit list. Remote Desktop Services will automatically disconnect active sessions after the specified amount of time. The user receives a warning two minutes before the Remote Desktop Services session disconnects, which allows the user to save open files and close programs. If you have a console session, active session time limits do not apply.  
+
+- If you disable or do not configure this policy setting, this policy setting is not specified at the Group Policy level. By default, Remote Desktop Services allows sessions to remain active for an unlimited amount of time.  
+
+If you want Remote Desktop Services to end instead of disconnect a session when the time limit is reached, you can configure the policy setting Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits\End session when time limits are reached.  
+
+>[!NOTE]
+> This policy setting appears in both Computer Configuration and User Configuration. If both policy settings are configured, the Computer Configuration policy setting takes precedence.
+
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Set time limit for active Remote Desktop Services sessions*
+-   GP name: *TS_SESSIONS_Limits_2*
 -   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Session Time Limits*
 -   GP ADMX file name: *TerminalServer.admx*
 
@@ -6312,7 +6652,7 @@ ADMX Info:
 <hr/>
 <!--Policy-->
 
-<a href="" id="admx-terminalserver-ts_usb_redirectiom_disable"></a>**ADMX_TerminalServer/TS_USB_REDIRECTION_DISABLE**  
+<a href="" id="admx-terminalserver-ts_usb_redirection_disable"></a>**ADMX_TerminalServer/TS_USB_REDIRECTION_DISABLE**  
 
 <!--SupportedSKUs-->
 <table>
