@@ -4206,7 +4206,7 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_promt_creds_client_comp" id="admx-terminalserver-ts_promt_creds_client_comp">ADMX_TerminalServer/TS_PROMT_CREDS_CLIENT_COMP</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_radc_defaultconnectionp" id="admx-terminalserver-ts_radc_defaultconnection">ADMX_TerminalServer/TS_RADC_DefaultConnection</a>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_radc_defaultconnection" id="admx-terminalserver-ts_radc_defaultconnection">ADMX_TerminalServer/TS_RADC_DefaultConnection</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_rdsappx_waitforregistration" id="admx-terminalserver-ts_rdsappx_waitforregistration">ADMX_TerminalServer/TS_RDSAppX_WaitForRegistration</a>
@@ -4239,13 +4239,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_select_transport" id="admx-terminalserver-ts_select_transport">ADMX_TerminalServer/TS_SELECT_TRANSPORT</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_advanted_remotefx_remoteapp" id="admx-terminalserver-ts_server_advanted_remotefx_remoteapp">ADMX_TerminalServer/TS_SERVER_ADVANCED_REMOTEFX_REMOTEAPP</a>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_advanced_remotefx_remoteapp" id="admx-terminalserver-ts_server_advanced_remotefx_remoteapp">ADMX_TerminalServer/TS_SERVER_ADVANCED_REMOTEFX_REMOTEAPP</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server-auth" id="admx-terminalserver-ts_server_auth">ADMX_TerminalServer/TS_SERVER_AUTH</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server-auth" id="admx-terminalserver-ts_server_avc_hw_encode_preferred">ADMX_TerminalServer/TS_SERVER_AVC_HW_ENCODE_PREFERRED</a>
+    <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_avc_hw_encode_preferred" id="admx-terminalserver-ts_server_avc_hw_encode_preferred">ADMX_TerminalServer/TS_SERVER_AVC_HW_ENCODE_PREFERRED</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-terminalserver.md#admx-terminalserver-ts_server_avc_hw_encode_preferred" id="admx-terminalserver-ts_server_avc_hw_encode_preferred">ADMX_TerminalServer/TS_SERVER_AVC_HW_ENCODE_PREFERRED</a>
