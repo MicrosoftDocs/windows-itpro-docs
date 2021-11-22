@@ -30,22 +30,22 @@ The following table lists and describes the settings that can be changed by admi
 
 | Setting  | Description |
 | --- | --- |
-| Block manual unenrollment  | Default: Blocked<br/><br/>Users can't unenroll their devices from device management services. |
+| Block manual unenrollment  | Default: Blocked<br/><br/>Users can't unenroll their devices from device management services. <br/><br/>[Experience/AllowManualMDMUnenrollment CSP](/windows/client-management/mdm/policy-csp-experience#experience-allowmanualmdmunenrollment)|
 | Allow option to Show Network  | Default: Allowed<br/><br/>Gives users the option to see the **Show Network** folder in File Explorer. |
 | Allow option to Show This PC  | Default: Allowed<br/><br/>Gives user the option to see the **Show This PC** folder in File Explorer. |
 | Set Allowed Folder location  | Default folders: Documents, Desktop, Pictures, and Downloads<br/><br/>Gives user access to these folders. |
 | Set Allowed Storage Locations  | Default: Blocks Local Drives and Network Drives<br/><br/>Blocks user access to these storage locations. |
 | Allow News and Interests | Default: Hide<br/><br/>Hides Widgets. |
-| Disable advertising ID  | Default: Disabled<br/><br/>Blocks apps from using usage data to tailor advertisements. <br/><br/>[Privacy/DisableAdvertisingId](/windows/client-management/mdm/policy-csp-privacy#privacy-disableadvertisingid) |
+| Disable advertising ID  | Default: Disabled<br/><br/>Blocks apps from using usage data to tailor advertisements. <br/><br/>[Privacy/DisableAdvertisingId CSP](/windows/client-management/mdm/policy-csp-privacy#privacy-disableadvertisingid) |
 | Visible settings pages  | Default: <br/><br/> | 
-| Enable App Install Control  | Default: Turned On<br/><br/>Users can’t download apps from the internet. |
+| Enable App Install Control  | Default: Turned On<br/><br/>Users can’t download apps from the internet.<br/><br/>[SmartScreen/EnableAppInstallControl CSP](/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)|
 | Configure Storage Sense Cloud Content Dehydration Threshold | Default: 30 days<br/><br/>If a file hasn’t been opened in 30 days, it becomes an online-only file. Online-only files can be opened when there's an internet connection. When an online-only file is opened on a device, it downloads and becomes locally available on that device. The file is available until it's unopened for the specified number of days, and becomes online-only again. <br/><br/>[Storage/ConfigStorageSenseCloudContentDehydrationThreshold CSP](/windows/client-management/mdm/policy-csp-storage#storage-configstoragesensecloudcontentdehydrationthreshold) |
 | Allow Telemetry  | Default: Required Telemetry Only<br/><br/>Sends only basic device info, including quality-related data, app compatibility, and similar data to keep the device secure and up-to-date. <br/><br/>[System/AllowTelemetry CSP](/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) |
 | Allow Experimentation  | Default: Disabled<br/><br/>Microsoft can't experiment with the product to study user preferences or device behavior. <br/><br/>[System/AllowExperimentation CSP](/windows/client-management/mdm/policy-csp-system#system-allowexperimentation) |
-| Block external extensions  | Default: Blocked<br/><br/>In Microsoft Edge, users can't install external extensions. |
-| Configure new tab page  | Default: `Office.com`<br/><br/>In Microsoft Edge, the new tab page defaults to `office.com`. |
-| Configure homepage  | Default: `Office.com`<br/><br/>In Microsoft Edge, the homepage defaults to `office.com`. |
-| Prevent SmartScreen prompt override  | Default: Enabled<br/><br/>In Microsoft Edge, users can't override Windows Defender SmartScreen warnings. |
+| Block external extensions  | Default: Blocked<br/><br/>In Microsoft Edge, users can't install external extensions. <br/><br/>[BlockExternalExtensions](/DeployEdge/microsoft-edge-policies#blockexternalextensions)|
+| Configure new tab page  | Default: `Office.com`<br/><br/>In Microsoft Edge, the new tab page defaults to `office.com`. <br/><br/>[Configure the new tab page URL](/DeployEdge/microsoft-edge-policies#configure-the-new-tab-page-url)|
+| Configure homepage  | Default: `Office.com`<br/><br/>In Microsoft Edge, the homepage defaults to `office.com`. <br/><br/>[HomepageIsNewTabPage](/DeployEdge/microsoft-edge-policies#homepageisnewtabpage)|
+| Prevent SmartScreen prompt override  | Default: Enabled<br/><br/>In Microsoft Edge, users can't override Windows Defender SmartScreen warnings. <br/><br/>[PreventSmartScreenPromptOverride](/DeployEdge/microsoft-edge-policies#preventsmartscreenpromptoverride)|
 
 ## Settings that can't be changed
 
