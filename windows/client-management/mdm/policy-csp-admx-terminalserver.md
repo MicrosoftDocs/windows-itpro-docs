@@ -6288,7 +6288,7 @@ ADMX Info:
 <hr/>
 <!--Policy-->
 
-<a href="" id="admx-terminalserver-ts_uia"></a>**ADMX_TerminalServer/TS_UIA**  
+<a href="" id="admx-terminalserver-ts_usb_redirectiom_disable"></a>**ADMX_TerminalServer/TS_USB_REDIRECTION_DISABLE**  
 
 <!--SupportedSKUs-->
 <table>
@@ -6338,15 +6338,314 @@ ADMX Info:
 <!--Description-->
 
 This policy setting allows you to permit RDP redirection of other supported RemoteFX USB devices from this computer. Redirected RemoteFX USB devices will not be available for local usage on this computer.  
-If you enable this policy setting, you can choose to give the ability to redirect other supported RemoteFX USB devices over RDP to all users or only to users who are in the Administrators group on the computer.  If you disable or do not configure this policy setting, other supported RemoteFX USB devices are not available for RDP redirection by using any user account. For this change to take effect, you must restart Windows.
+If you enable this policy setting, you can choose to give the ability to redirect other supported RemoteFX USB devices over RDP to all users or only to users who are in the Administrators group on the computer. 
+If you disable or do not configure this policy setting, other supported RemoteFX USB devices are not available for RDP redirection by using any user account. For this change to take effect, you must restart Windows.
 
 <!--/Description-->
 
 <!--ADMXBacked-->
 ADMX Info:  
 -   GP Friendly name: *Allow RDP redirection of other supported RemoteFX USB devices from this computer*
--   GP name: *TS_UIA*
+-   GP name: *TS_USB_REDIRECTION_DISABLE*
 -   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Connection Client\RemoteFX USB Device Redirection*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+
+<a href="" id="admx-terminalserver-ts_user_authentication_policy"></a>**ADMX_TerminalServer/TS_USER_AUTHENTICATION_POLICY**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+<!--/Scope-->
+<!--Description-->
+
+This policy setting enhances security by requiring that user authentication occur earlier in the remote connection process.  
+
+- If you enable this policy setting, only client computers that support Network Level Authentication can connect to the RD Session Host server. To determine whether a client computer supports Network Level Authentication, start Remote Desktop Connection on the client computer, click the icon in the upper-left corner of the Remote Desktop Connection dialog box, and then click About. In the About Remote Desktop Connection dialog box, look for the phrase Network Level Authentication supported.  
+
+- If you disable this policy setting, Network Level Authentication is not required for user authentication before allowing remote connections to the RD Session Host server. If you do not configure this policy setting, the local setting on the target computer will be enforced. On Windows Server 2012 and Windows 8, Network Level Authentication is enforced by default.  
+
+Disabling this policy setting provides less security because user authentication will occur later in the remote connection process.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Require user authentication for remote connections by using Network Level Authentication*
+-   GP name: *TS_USER_AUTHENTICATION_POLICY*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Security*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+
+<a href="" id="admx-terminalserver-ts_user_home"></a>**ADMX_TerminalServer/TS_USER_HOME**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+<!--/Scope-->
+<!--Description-->
+
+This policy setting allows you to specify the name of the certificate template that determines which certificate is automatically selected to authenticate an RD Session Host server. A certificate is needed to authenticate an RD Session Host server when TLS 1.0, 1.1 or 1.2 is used to secure communication between a client and an RD Session Host server during RDP connections.  
+
+- If you enable this policy setting, you need to specify a certificate template name. Only certificates created by using the specified certificate template will be considered when a certificate to authenticate the RD Session Host server is automatically selected. Automatic certificate selection only occurs when a specific certificate has not been selected. 
+
+If no certificate can be found that was created with the specified certificate template, the RD Session Host server will issue a certificate enrollment request and will use the current certificate until the request is completed. If more than one certificate is found that was created with the specified certificate template, the certificate that will expire latest and that matches the current name of the RD Session Host server will be selected.  
+
+- If you disable or do not configure this policy, the certificate template name is not specified at the Group Policy level. By default, a self-signed certificate is used to authenticate the RD Session Host server.  
+
+If you select a specific certificate to be used to authenticate the RD Session Host server, that certificate will take precedence over this policy setting.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Server authentication certificate template*
+-   GP name: *TS_USER_HOME*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Security*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+ 
+<a href="" id="admx-terminalserver-ts_user_mandatory_profiles"></a>**ADMX_TerminalServer/TS_USER_MANDATORY_PROFILES** 
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+<!--/Scope-->
+<!--Description-->
+
+This policy setting allows you to specify whether Remote Desktop Services uses a mandatory profile for all users connecting remotely to the RD Session Host server.  
+
+- If you enable this policy setting, Remote Desktop Services uses the path specified in the "Set path for Remote Desktop Services Roaming User Profile" policy setting as the root folder for the mandatory user profile. All users connecting remotely to the RD Session Host server use the same user profile.  
+
+- If you disable or do not configure this policy setting, mandatory user profiles are not used by users connecting remotely to the RD Session Host server.  
+
+For this policy setting to take effect, you must also enable and configure the "Set path for Remote Desktop Services Roaming User Profile" policy setting.
+
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Use mandatory profiles on the RD Session Host server*
+-   GP name: *TS_USER_MANDATORY_PROFILES*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Profiles*
+-   GP ADMX file name: *TerminalServer.admx*
+
+<!--/ADMXBacked-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy--> 
+
+<a href="" id="admx-terminalserver-ts_user_profiles"></a>**ADMX_TerminalServer/TS_USER_PROFILES** 
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+<!--/Scope-->
+<!--Description-->
+
+This policy setting allows you to specify the network path that Remote Desktop Services uses for roaming user profiles. By default, Remote Desktop Services stores all user profiles locally on the RD Session Host server. You can use this policy setting to specify a network share where user profiles can be centrally stored, allowing a user to access the same profile for sessions on all RD Session Host servers that are configured to use the network share for user profiles.  If you enable this policy setting, Remote Desktop Services uses the specified path as the root directory for all user profiles. The profiles are contained in subfolders named for the account name of each user.  
+
+To configure this policy setting, type the path to the network share in the form of \\Computername\Sharename. Do not specify a placeholder for the user account name, because Remote Desktop Services automatically adds this when the user logs on and the profile is created. 
+
+If the specified network share does not exist, Remote Desktop Services displays an error message on the RD Session Host server and will store the user profiles locally on the RD Session Host server.  
+
+If you disable or do not configure this policy setting, user profiles are stored locally on the RD Session Host server. You can configure a user's profile path on the Remote Desktop Services Profile tab on the user's account Properties dialog box.  
+
+1. The roaming user profiles enabled by the policy setting apply only to Remote Desktop Services connections. A user might also have a Windows roaming user profile configured. The Remote Desktop Services roaming user profile always takes precedence in a Remote Desktop Services session.  
+2. To configure a mandatory Remote Desktop Services roaming user profile for all users connecting remotely to the RD Session Host server, use this policy setting together with the "Use mandatory profiles on the RD Session Host server" policy setting located in Computer Configuration\Administrative Templates\Windows Components\Remote Desktop Services\RD Session Host\Profiles. The path set in the "Set path for Remote Desktop Services Roaming User Profile" policy setting should contain the mandatory profile.
+
+<!--/Description-->
+
+<!--ADMXBacked-->
+ADMX Info:  
+-   GP Friendly name: *Set path for Remote Desktop Services Roaming User Profile*
+-   GP name: *TS_USER_PROFILES*
+-   GP path: *Windows Components\Remote Desktop Services\Remote Desktop Session Host\Profiles*
 -   GP ADMX file name: *TerminalServer.admx*
 
 <!--/ADMXBacked-->
