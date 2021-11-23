@@ -567,6 +567,13 @@ GP Info:
 <!--/Scope-->
 <!--Description-->
 This user right determines which users and groups can change the time and date on the internal clock of the computer. Users that are assigned this user right can affect the appearance of event logs. If the system time is changed, events that are logged will reflect this new time, not the actual time that the events occurred.
+> [!CAUTION]
+> Configuring user rights replaces existing users or groups previously assigned those user rights. The system requires that Local Service account (SID S-1-5-19) always has the ChangeSystemTime right. Therefore, Local Service must always be specified in addition to any other accounts being configured in this policy.
+> 
+> Not including the Local Service account will result in failure with the following error:
+> | Error Code  | Symbolic Name | Error Description | Header |
+> |----------|----------|----------|----------|
+> |  0x80070032 (Hex)|ERROR_NOT_SUPPORTED|The request is not supported.|  winerror.h  |
 
 <!--/Description-->
 <!--DbMapped-->
