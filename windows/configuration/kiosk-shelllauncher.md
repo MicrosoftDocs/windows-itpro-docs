@@ -12,6 +12,7 @@ ms.sitesec: library
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Use Shell Launcher to create a Windows client kiosk
