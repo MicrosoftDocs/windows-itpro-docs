@@ -19,10 +19,10 @@ Use to remove user-installed and pre-installed applications, with the option to 
 
 ## Applies to
 
-| Settings  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| CleanPCRetainingUserData | X |    |  |  |  |
-| CleanPCWithoutRetainingUserData | X |    |  |  |  |
+| Settings  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| CleanPCRetainingUserData | ✔️ |  |  |  |
+| CleanPCWithoutRetainingUserData | ✔️ |  |  |  |
 
 For each setting, the options are **Enable** and **Not configured**. 
 

@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 author: jsuther1974
 ms.reviewer: isbrahm
 ms.date: 08/12/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Use a Windows Defender Application Control policy to control specific plug-ins, add-ins, and modules 

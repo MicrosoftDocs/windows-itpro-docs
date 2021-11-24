@@ -13,7 +13,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
 ms.date: 03/01/2019
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 

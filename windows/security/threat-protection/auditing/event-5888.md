@@ -11,7 +11,7 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 5888(S): An object in the COM+ Catalog was modified.

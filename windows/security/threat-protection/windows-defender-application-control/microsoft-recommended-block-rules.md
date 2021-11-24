@@ -4,7 +4,7 @@ description: View a list of recommended block rules, based on knowledge shared b
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: windows-sec
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

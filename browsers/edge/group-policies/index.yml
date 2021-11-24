@@ -6,7 +6,7 @@ summary: Microsoft Edge Legacy works with Group Policy and Microsoft Intune to h
 metadata:
   title: Microsoft Edge Legacy # Required; page title displayed in search results. Include the brand. < 60 chars.
   description: Find the tools and resources you need to help deploy and use Microsoft Edge in your organization. # Required; article description that is displayed in search results. < 160 chars.
-  keywords: Microsoft Edge Legacy, Windows 10, Windows 10 Mobile
+  keywords: Microsoft Edge Legacy, Windows 10
   ms.localizationpriority: medium
   ms.prod: edge
   author: shortpatti

@@ -16,7 +16,7 @@ ms.reviewer: isbrahm
 ms.author: dansimp
 manager: dansimp
 ms.date: 11/20/2019
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Create a WDAC policy for fully managed devices

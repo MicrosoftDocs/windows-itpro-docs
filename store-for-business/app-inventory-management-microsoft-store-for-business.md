@@ -19,7 +19,6 @@ ms.date: 07/21/2021
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 > [!IMPORTANT]
 > Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).
@@ -64,12 +63,12 @@ Each app in the Store for Business has an online, or an offline license. For mor
 
 | Action | Online-licensed app | Offline-licensed app |
 | ------ | ------------------- | -------------------- |
-| Assign to employees | X |  |
-| Add to private store | X |  |
-| Remove from private store | X |  |
-| View license details | X |  |
-| View product details | X | X |
-| Download for offline use | | X |
+| Assign to employees | ✔️ |  |
+| Add to private store | ✔️ |  |
+| Remove from private store | ✔️ |  |
+| View license details | ✔️ |  |
+| View product details | ✔️ | ✔️ |
+| Download for offline use | | ✔️ |
 
 The actions in the table are how you distribute apps, and manage app licenses. We'll cover those in the next sections. Working with offline-licensed apps has different steps. For more information on distributing offline-licensed apps, see [Distribute offline apps](distribute-offline-apps.md).
 

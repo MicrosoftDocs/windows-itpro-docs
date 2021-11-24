@@ -12,7 +12,7 @@ ms.reviewer:
 manager: dansimp
 ms.date: 09/09/2021
 ms.custom: asr
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Application Guard testing scenarios

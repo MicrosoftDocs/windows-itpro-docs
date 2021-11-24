@@ -14,24 +14,48 @@ ms.date: 06/26/2017
 
 # NAPDEF CSP
 
-
 The NAPDEF configuration service provider is used to add, modify, or delete WAP network access points (NAPs). For complete information about these settings, see the standard WAP specification WAP-183-ProvCont-20010724-a.
 
-> **Note**  You cannot use NAPDEF CSP on the desktop to update the Push Proxy Gateway (PPG) list.
+> [!Note]
+> You cannot use NAPDEF CSP on the desktop to update the Push Proxy Gateway (PPG) list.
 > 
-> 
-> 
-> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> This configuration service provider requires the `ID_CAP_CSP_FOUNDATION` and `ID_CAP_NETWORKING_ADMIN` capabilities to be accessed from a network configuration application. 
 
- 
+The following shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **initial bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
 
-The following diagram shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **initial bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
+```console
+NAPDEF
+----NAPAUTHINFO
+------AUTHNAME
+------AUTHSECRET
+------AUTHTYPE
+----BEARER
+----INTERNET
+----LOCAL-ADDR
+----LOCAL-ADDRTYPE
+----NAME
+----NAP-ADDRESS
+----NAP-ADDRTYPE
+----NAPID
+```
 
-![napdef csp (cp) (initial bootstrapping).](images/provisioning-csp-napdef-cp.png)
+The following shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **updating the bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
 
-The following diagram shows the NAPDEF configuration service provider management object in tree format as used by OMA Client Provisioning for **updating the bootstrapping of the phone**. The OMA DM protocol is not supported by this configuration service provider.
-
-![napdef csp (cp) (update bootstrapping).](images/provisioning-csp-napdef-cp-2.png)
+```console
+NAPDEF
+--NAPID
+----NAPAUTHINFO
+------AUTHNAME
+------AUTHSECRET
+------AUTHTYPE
+----BEARER
+----INTERNET
+----LOCAL-ADDR
+----LOCAL-ADDRTYPE
+----NAME
+----NAP-ADDRESS
+----NAP-ADDRTYPE
+```
 
 <a href="" id="napauthinfo"></a>**NAPAUTHINFO**  
 Defines a group of authentication settings.
@@ -49,9 +73,8 @@ Specifies the protocol used to authenticate the user.
 
 The only permitted values for this element are "POP" (Password Authentication Protocol) and "CHAP" (Challenge Handshake Authentication Protocol) authentication protocols. Note
 
-> **Note**  **AuthName** and **AuthSecret** are not created if **AuthType** is not included in the initial device configuration. **AuthName** and **AuthSecret** cannot be changed if **AuthType** is not included in the provisioning XML used to make the change.
-
- 
+> [!Note]
+> **AuthName** and **AuthSecret** are not created if **AuthType** is not included in the initial device configuration. **AuthName** and **AuthSecret** cannot be changed if **AuthType** is not included in the provisioning XML used to make the change. 
 
 <a href="" id="bearer"></a>**BEARER**  
 Specifies the type of bearer.
@@ -96,54 +119,15 @@ The name of the *NAPID* element is the same as the value passed during initial b
 
 ## Microsoft Custom Elements
 
-
 The following table shows the Microsoft custom elements that this configuration service provider supports for OMA Client Provisioning.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>ELements</th>
-<th>Available</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>parm-query</p></td>
-<td><p>Yes</p>
-<p>Note that some GPRS parameters will not necessarily contain the exact same value as was set.</p></td>
-</tr>
-<tr class="even">
-<td><p>noparm</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>nocharacteristic</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>characteristic-query</p></td>
-<td><p>Yes</p></td>
-</tr>
-</tbody>
-</table>
+|Elements|Available|
+|--- |--- |
+|Parm-query|Yes <br>Note that some GPRS parameters will not necessarily contain the exact same value as was set.|
+|Noparm|Yes|
+|Nocharacteristic|Yes|
+|Characteristic-query|Yes|
 
- 
-
-## Related topics
-
+## Related articles
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-

@@ -17,8 +17,15 @@ ms.topic: article
 
 # Get started with Update Compliance
 
+**Applies to**
+
+- Windows 10
+- Windows 11
+
 > [!IMPORTANT]
-> **A new policy is required to use Update Compliance: "AllowUpdateComplianceProcessing"**. If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must configure devices with this additional policy. You can do this by rerunning the [Update Compliance Configuration Script](update-compliance-configuration-script.md) if you configure your devices through Group Policy, or refer to [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md) for details on manually configuring the new policy for both Group Policy and MDM. 
+> **A new policy is required to use Update Compliance: "AllowUpdateComplianceProcessing"**. If you're already using Update Compliance and have configured your devices prior to May 10, 2021, you must configure devices with this additional policy. You can do this by rerunning the [Update Compliance Configuration Script](update-compliance-configuration-script.md) if you configure your devices through Group Policy, or refer to [Manually configuring devices for Update Compliance](update-compliance-configuration-manual.md) for details on manually configuring the new policy for both Group Policy and MDM.
+>
+> Devices must have this policy configured by January 31, 2022, to remain enrolled in Update Compliance. Devices without this policy configured, including Windows 10 releases prior to version 1809 which do not support this policy, will stop appearing in Update Compliance reports after this date.
 
 This topic introduces the high-level steps required to enroll to the Update Compliance solution and configure devices to send data to it. The following steps cover the enrollment and device configuration workflow.
 
@@ -35,11 +42,11 @@ After adding the solution to Azure and configuring devices, it can take some tim
 
 Before you begin the process to add Update Compliance to your Azure subscription, first ensure you can meet the prerequisites:
 
-- **Compatible Operating Systems and Editions**: Update Compliance works only with Windows 10 Professional, Education, and Enterprise editions. Update Compliance supports both the typical Windows 10 Enterprise edition, as well as [Windows 10 Enterprise multi-session](/azure/virtual-desktop/windows-10-multisession-faq). Update Compliance only provides data for the standard Desktop Windows 10 version and is not currently compatible with Windows Server, Surface Hub, IoT, etc.
-- **Compatible Windows 10 Servicing Channels**: Update Compliance supports Windows 10 devices on the Semi-Annual Channel and the Long-term Servicing Channel (LTSC). Update Compliance *counts* Windows Insider Preview (WIP) devices, but does not currently provide detailed deployment insights for them.
-- **Diagnostic data requirements**: Update Compliance requires devices be configured to send diagnostic data at *Required* level (previously *Basic*). To learn more about what's included in different diagnostic levels, see [Diagnostics, feedback, and privacy in Windows 10](https://support.microsoft.com/help/4468236/diagnostics-feedback-and-privacy-in-windows-10-microsoft-privacy).
+- **Compatible operating systems and editions**: Update Compliance works only with Windows 10 or Windows 11 Professional, Education, and Enterprise editions. Update Compliance supports both the typical Windows 10 or Windows 11 Enterprise edition, as well as [Windows 10 Enterprise multi-session](/azure/virtual-desktop/windows-10-multisession-faq). Update Compliance only provides data for the standard Desktop Windows client version and is not currently compatible with Windows Server, Surface Hub, IoT, or other versions.
+- **Compatible Windows client servicing channels**: Update Compliance supports Windows client devices on the General Availability Channel and the Long-term Servicing Channel (LTSC). Update Compliance *counts* Windows Insider Preview devices, but does not currently provide detailed deployment insights for them.
+- **Diagnostic data requirements**: Update Compliance requires devices to send diagnostic data at *Required* level (previously *Basic*). Some queries in Update Compliance require devices to send diagnostic data at *Optional* level (previously *Full*) for Windows 11 devices or *Enhanced* level for Windows 10 devices. To learn more about what's included in different diagnostic levels, see [Diagnostics, feedback, and privacy in Windows](https://support.microsoft.com/windows/diagnostics-feedback-and-privacy-in-windows-28808a2b-a31b-dd73-dcd3-4559a5199319).
 - **Data transmission requirements**: Devices must be able to contact specific endpoints required to authenticate and send diagnostic data. These are enumerated in detail at [Configuring Devices for Update Compliance manually](update-compliance-configuration-manual.md).
-- **Showing Device Names in Update Compliance**: For Windows 10, version 1803 or later, device names will not appear in Update Compliance unless you individually opt-in devices by using policy. The steps to accomplish this is outlined in [Configuring Devices for Update Compliance](update-compliance-configuration-manual.md).
+- **Showing device names in Update Compliance**: For Windows 10, version 1803 or later, device names will not appear in Update Compliance unless you individually opt-in devices by using policy. The steps to accomplish this is outlined in [Configuring Devices for Update Compliance](update-compliance-configuration-manual.md).
 
 ## Add Update Compliance to your Azure subscription
 

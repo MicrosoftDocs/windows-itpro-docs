@@ -15,7 +15,7 @@ manager: dansimp
 # Policy CSP - RestrictedGroups
 
 > [!IMPORTANT]
-> Starting from Windows 10, version 20H2, it is recommended to use the [LocalUsersandGroups](policy-csp-localusersandgroups.md) policy instead of the RestrictedGroups policy to configure members (users or AAD groups) to a Windows 10 local group. Applying both the policies to the same device is unsupported and may yield unpredictable results. 
+> Starting from Windows 10, version 20H2, it is recommended to use the [LocalUsersandGroups](policy-csp-localusersandgroups.md) policy instead of the RestrictedGroups policy to configure members (users or AAD groups) to a Windows 10 local group. Applying both the policies to the same device is unsupported and may yield unpredictable results.
 
 
 <hr/>
@@ -38,28 +38,34 @@ manager: dansimp
 <!--SupportedSKUs-->
 <table>
 <tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
 </tr>
 <tr>
     <td>Home</td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Business</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Enterprise</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 <tr>
     <td>Education</td>
-    <td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
+    <td>Yes</td>
+    <td>Yes</td>
 </tr>
 </table>
 
@@ -132,7 +138,8 @@ Starting in Windows 10, version 1809, you can use this schema for retrieval and 
 <!--Example-->
 
 Here's an example:
-```
+
+```xml
 <groupmembership>
     <accessgroup desc = "Group1">
         <member name = "S-1-15-6666767-76767676767-666666777"/>
@@ -144,13 +151,18 @@ Here's an example:
     </accessgroup>
 </groupmembership>
 ```
+
 where:
+
 - `<accessgroup desc>` contains the local group SID or group name to configure. If a SID is specified here, the policy uses the [LookupAccountName](/windows/win32/api/winbase/nf-winbase-lookupaccountnamea) API to get the local group name. For best results, use names for `<accessgroup desc>`.
+
 - `<member name>` contains the members to add to the group in `<accessgroup desc>`. A member can be specified as a name or as a SID. For best results, use a SID for `<member name>`. The member SID can be a user account or a group in AD, Azure AD, or on the local machine. If a name is specified here, the policy will try to get the corresponding SID using the [LookupAccountSID](/windows/win32/api/winbase/nf-winbase-lookupaccountsida) API. Name can be used for a user account or a group in AD or on the local machine. Membership is configured using the [NetLocalGroupSetMembers](/windows/win32/api/lmaccess/nf-lmaccess-netlocalgroupsetmembers) API.
+
 - In this example, `Group1` and `Group2` are local groups on the device being configured, and `Group3` is a domain group.
 
 > [!NOTE]
 > Currently, the RestrictedGroups/ConfigureGroupMembership policy does not have a MemberOf functionality. However, you can add a domain group as a member to a local group by using the member portion, as shown in the previous example.
+
 <!--/Example-->
 <!--Validation-->
 
@@ -170,16 +182,5 @@ The following table describes how this policy setting behaves in different Windo
 <!--/Validation-->
 <!--/Policy-->
 <hr/>
-
-Footnotes:
-
-- 1 - Available in Windows 10, version 1607.
-- 2 - Available in Windows 10, version 1703.
-- 3 - Available in Windows 10, version 1709.
-- 4 - Available in Windows 10, version 1803.
-- 5 - Available in Windows 10, version 1809.
-- 6 - Available in Windows 10, version 1903.
-- 7 - Available in Windows 10, version 1909.
-- 8 - Available in Windows 10, version 2004.
 
 <!--/Policies-->

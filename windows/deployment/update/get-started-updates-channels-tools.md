@@ -1,7 +1,7 @@
 ---
 title: Windows client updates, channels, and tools
 description: Brief summary of the kinds of Windows updates, the channels they are served through, and the tools for managing them
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
+keywords: updates, servicing, current, deployment, General Availability Channel, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo
@@ -35,7 +35,7 @@ version of the software.
 
 We include information here about many different update types you'll hear about, but the two overarching types that you have the most direct control over are *feature updates* and *quality updates*. 
 
-- **Feature updates:** Released as soon as they become available. Feature updates add new features and functionality to Windows 10. Because they are delivered frequently (rather than every 3-5 years), they are easier to manage.
+- **Feature updates:** Released annually. Feature updates add new features and functionality to Windows 10. Because they are delivered frequently (rather than every 3-5 years), they are easier to manage.
 - **Quality updates:** Quality updates deliver both security and non-security fixes. Quality updates include security updates, critical updates, servicing stack updates, and driver updates. They are typically released on the second Tuesday of each month, though they can be released at any time. The second-Tuesday releases are the ones that focus on security updates. Quality updates are *cumulative*, so installing the latest quality update is sufficient to get all the available fixes for a specific feature update, including any out-of-band security fixes and any *servicing stack updates* that might have been released previously.
 - **Servicing stack updates:** The "servicing stack" is the code component that actually installs Windows updates. From time to time, the servicing stack itself needs to be updated in order to function smoothly. If you don't install the latest servicing stack update, there's a risk that your device can't be updated with the latest Microsoft security fixes. Servicing stack updates are not necessarily included in *every* monthly quality update, and occasionally are released out of band to address a late-breaking issue. Always install the latest available quality update to catch any servicing stack updates that might have been released. The servicing stack also contains the "component-based servicing stack" (CBS), which is a key underlying component for several elements of Windows deployment, such as DISM, SFC, changing Windows features or roles, and repairing components. The CBS is a small component that typically does not have updates released every month. You can find a list of servicing stack updates at [Latest servicing stack updates](https://portal.msrc.microsoft.com/security-guidance/advisory/ADV990001). For more detail about servicing stack updates, see [Servicing stack updates](servicing-stack-updates.md).
 - **Driver updates**: These update drivers applicable to your devices. Driver updates are turned off by default in Windows Server Update Services (WSUS), but for cloud-based update methods, you can control whether they are installed or not.
@@ -51,7 +51,7 @@ The first step of controlling when and how devices install updates is assigning 
 
 ### General Availability Channel
 
-In the General Availability Channel, feature updates are available as soon as Microsoft releases them. As long as a device isn't set to defer feature updates, any device in this channel will install a feature update as soon as it's released. If you use Windows Update for Business, the channel provides three months of additional total deployment time before being required to update to the next release.
+In the General Availability Channel, feature updates are released annually. As long as a device isn't set to defer feature updates, any device in this channel will install a feature update as soon as it's released. If you use Windows Update for Business, the channel provides three months of additional total deployment time before being required to update to the next release.
 
 
 ### Windows Insider Program for Business
@@ -67,9 +67,9 @@ We recommend that you use the Windows Insider Release Preview channel for valida
 
 ### Long-term Servicing Channel
 
-The **Long-Term Servicing Channel** is designed to be used only for specialized devices (which typically don't run Office) such as ones that control medical equipment or ATMs. Devices on this channel receive new feature releases every two to three years. LTSB releases service a special LTSB edition of Windows 10 and are only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
+The **Long-Term Servicing Channel** is designed to be used only for specialized devices (which typically don't run Office) such as ones that control medical equipment or ATMs. Devices on this channel receive new feature releases every two to three years. LTSC releases service a special LTSC edition of Windows 10 and are only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
-The General Availability Channel is the default servicing channel for all Windows devices except those with the LTSB edition installed. The following table shows the servicing channels available to each edition. 
+The General Availability Channel is the default servicing channel for all Windows devices except those with the LTSC edition installed. The following table shows the servicing channels available to each edition. 
 
 
 | Edition | General Availability Channel | Insider Program | Long-Term Servicing Channel |
@@ -77,7 +77,7 @@ The General Availability Channel is the default servicing channel for all Window
 | Home | ![yes.](images/checkmark.png)|![no](images/crossmark.png)    | ![no](images/crossmark.png)|
 | Pro | ![yes.](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
 | Enterprise  | ![yes.](images/checkmark.png) |![yes](images/checkmark.png)  |  ![no](images/crossmark.png)|
-| Enterprise LTSB  | ![no.](images/crossmark.png) |![no](images/crossmark.png) |   ![yes](images/checkmark.png)|
+| Enterprise LTSC  | ![no.](images/crossmark.png) |![no](images/crossmark.png) |   ![yes](images/checkmark.png)|
 | Pro Education | ![yes.](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
 | Education  | ![yes.](images/checkmark.png) | ![yes](images/checkmark.png) |  ![no](images/crossmark.png)|
 

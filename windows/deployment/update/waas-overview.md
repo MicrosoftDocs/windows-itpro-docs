@@ -1,7 +1,7 @@
 ---
 title: Overview of Windows as a service
 description: Windows as a service is a way to build, deploy, and service Windows. Learn how Windows as a service works.
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
+keywords: updates, servicing, current, deployment, General Availability Channel, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo
@@ -90,9 +90,9 @@ There are three servicing channels. The [Windows Insider Program](#windows-insid
 
 ### General Availability Channel
 
-In the General Availability Channel, feature updates are available as soon as Microsoft releases them. This servicing model is ideal for pilot deployments and testing of feature updates and for users such as developers who need to work with the latest features immediately. Once the latest release has gone through pilot deployment and testing, you will be able to choose the timing at which it goes into broad deployment.
+In the General Availability Channel, feature updates are available annually. This servicing model is ideal for pilot deployments and testing of feature updates and for users such as developers who need to work with the latest features. Once the latest release has gone through pilot deployment and testing, you will be able to choose the timing at which it goes into broad deployment.
 
-When Microsoft officially releases a feature update, we make it available to any device not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft Endpoint Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the Semi-Annual Channel will be available but not necessarily immediately mandatory, depending on the policy of the management system. For more details about servicing tools, see [Servicing tools](#servicing-tools).
+When Microsoft officially releases a feature update, we make it available to any device not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft Endpoint Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the General Availability Channel will be available but not necessarily immediately mandatory, depending on the policy of the management system. For more details about servicing tools, see [Servicing tools](#servicing-tools).
 
 
 > [!NOTE]
@@ -104,23 +104,23 @@ When Microsoft officially releases a feature update, we make it available to any
 
 ### Long-term Servicing Channel
 
-Specialized systems—such as devices that control medical equipment, point-of-sale systems, and ATMs—often require a longer servicing option because of their purpose. These devices typically perform a single important task and don’t need feature updates as frequently as other devices in the organization. It’s more important that these devices be kept as stable and secure as possible than up to date with user interface changes. The LTSC servicing model prevents Enterprise LTSB devices from receiving the usual feature updates and provides only quality updates to ensure that device security stays up to date. With this in mind, quality updates are still immediately available to Windows 10 Enterprise LTSB clients, but customers can choose to defer them by using one of the servicing tools mentioned in the section Servicing tools.
+Specialized systems—such as devices that control medical equipment, point-of-sale systems, and ATMs—often require a longer servicing option because of their purpose. These devices typically perform a single important task and don’t need feature updates as frequently as other devices in the organization. It’s more important that these devices be kept as stable and secure as possible than up to date with user interface changes. The LTSC servicing model prevents Enterprise LTSC devices from receiving the usual feature updates and provides only quality updates to ensure that device security stays up to date. With this in mind, quality updates are still immediately available to Windows 10 Enterprise LTSC clients, but customers can choose to defer them by using one of the servicing tools mentioned in the section Servicing tools.
 
 > [!NOTE]
 >
 > The Long-term Servicing channel is not intended for deployment on most or all the devices in an organization; it should be used only for special-purpose devices. As a general guideline, a device with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the General Availability channel.
 
-Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 or Windows 11 Enterprise LTSB. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over a 10-year life cycle.
+Microsoft never publishes feature updates through Windows Update on devices that run Windows 10 Enterprise LTSC. Instead, it typically offers new LTSC releases every 2–3 years, and organizations can choose to install them as in-place upgrades or even skip releases over a 10-year life cycle.
 
 > [!NOTE]
-> LTSB releases will support the currently released processors and chipsets at the time of release of the LTSB. As future CPU generations are released, support will be created through future LTSB releases that customers can deploy for those systems. For more information, see **Supporting the latest processor and chipsets on Windows** in [Lifecycle support policy FAQ - Windows Products](https://support.microsoft.com/help/18581/lifecycle-support-policy-faq-windows-products).
+> LTSC releases will support the currently released processors and chipsets at the time of release of the LTSC. As future CPU generations are released, support will be created through future LTSC releases that customers can deploy for those systems. For more information, see **Supporting the latest processor and chipsets on Windows** in [Lifecycle support policy FAQ - Windows Products](https://support.microsoft.com/help/18581/lifecycle-support-policy-faq-windows-products).
 
-The Long-term Servicing Channel is available only in the Windows 10 or Windows 11 Enterprise LTSB editions. This edition of Windows doesn’t include a number of applications, such as Microsoft Edge, Microsoft Store, Cortana (though limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. These apps are not supported in the Enterprise LTSB editions, even if you install by using sideloading.
+The Long-term Servicing Channel is available only in the Windows 10 Enterprise LTSC editions. This edition of Windows doesn’t include a number of applications, such as Microsoft Edge, Microsoft Store, Cortana (though limited search capabilities remain available), Microsoft Mail, Calendar, OneNote, Weather, News, Sports, Money, Photos, Camera, Music, and Clock. These apps are not supported in the Enterprise LTSC editions, even if you install by using sideloading.
 
 
 ### Windows Insider
 
-For many IT pros, gaining visibility into feature updates early--before they’re available to the Semi-Annual Channel — can be both intriguing and valuable for future end user communications as well as provide the means to test for any issues on the next General Availability release. Windows Insiders can consume and deploy preproduction code to their test machines, gaining early visibility into the next build. Testing the early builds helps both Microsoft and its customers because they have the opportunity to discover possible issues before the update is ever publicly available and can report it to Microsoft.
+For many IT pros, gaining visibility into feature updates early--before they’re available to the General Availability Channel — can be both intriguing and valuable for future end user communications as well as provide the means to test for any issues on the next General Availability release. Windows Insiders can consume and deploy preproduction code to their test machines, gaining early visibility into the next build. Testing the early builds helps both Microsoft and its customers because they have the opportunity to discover possible issues before the update is ever publicly available and can report it to Microsoft.
 
 Microsoft recommends that all organizations have at least a few devices enrolled in the Windows Insider Program and provide feedback on any issues they encounter. For information about the Windows Insider Program for Business, go to [Windows Insider Program for Business](/windows-insider/at-work-pro/wip-4-biz-get-started).
 
@@ -130,7 +130,7 @@ Microsoft recommends that all organizations have at least a few devices enrolled
 
 There are many tools you can use to service Windows as a service. Each option has its pros and cons, ranging from capabilities and control to simplicity and low administrative requirements. The following are examples of the servicing tools available to manage Windows as a service updates:
 
-- **Windows Update (stand-alone)** provides limited control over feature updates, with IT pros manually configuring the device to be in the Semi-Annual Channel. Organizations can target which devices defer updates by selecting the **Defer upgrades** check box in **Start\Settings\Update & Security\Advanced Options** on a Windows client device.
+- **Windows Update (stand-alone)** provides limited control over feature updates, with IT pros manually configuring the device to be in the General Availability Channel. Organizations can target which devices defer updates by selecting the **Defer upgrades** check box in **Start\Settings\Update & Security\Advanced Options** on a Windows client device.
 - **Windows Update for Business** includes control over update deferment and provides centralized management using Group Policy or MDM. Windows Update for Business can be used to defer updates by up to 365 days, depending on the version. These deployment options are available to clients in the General Availability Channel. In addition to being able to use Group Policy to manage Windows Update for Business, either option can be configured without requiring any on-premises infrastructure by using Microsoft Intune.
 - **Windows Server Update Services (WSUS)** provides extensive control over updates and is natively available in the Windows Server operating system. In addition to the ability to defer updates, organizations can add an approval layer for updates and choose to deploy them to specific computers or groups of computers whenever ready. 
 - **Microsoft Endpoint Configuration Manager** provides the greatest control over servicing Windows as a service. IT pros can defer updates, approve them, and have multiple options for targeting deployments and managing bandwidth usage and deployment times. 

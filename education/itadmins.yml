@@ -79,7 +79,7 @@ productDirectory:
         - url: https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Azure-Information-Protection-Deployment-Acceleration-Guide/ba-p/334423
           text: Azure information protection deployment acceleration guide
         - url: /cloud-app-security/getting-started-with-cloud-app-security
-          text: Microsoft Cloud app security
+          text: Microsoft Defender for Cloud Apps
         - url: /microsoft-365/compliance/create-test-tune-dlp-policy
           text: Office 365 data loss prevention
         - url: /microsoft-365/compliance/

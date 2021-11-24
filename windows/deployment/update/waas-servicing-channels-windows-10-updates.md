@@ -27,23 +27,23 @@ ms.custom:
 >[!TIP]
 >If you're not familiar with the servicing or release channels, read [Servicing Channels](waas-overview.md#servicing-channels) first.
 
-The General Availability Channel is the default servicing channel for all Windows 10 and Windows 11 devices except devices with the LTSB edition installed. The following table shows the servicing channels available to each edition. 
+The General Availability Channel is the default servicing channel for all Windows 10 and Windows 11 devices except devices with the LTSC edition installed. The following table shows the servicing channels available to each edition. 
 
 | Edition | General Availability Channel | Long-Term Servicing Channel | Insider Program |
 | --- | --- | --- | --- |
 | Home | ![no.](images/crossmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Pro | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Enterprise  | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
-| Enterprise LTSB  | ![no.](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
+| Enterprise LTSC  | ![no.](images/crossmark.png) | ![yes](images/checkmark.png) | ![no](images/crossmark.png) |
 | Pro Education | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 | Education  | ![yes.](images/checkmark.png) | ![no](images/crossmark.png) | ![yes](images/checkmark.png) |
 
 
 >[!NOTE]
->The LTSB edition is only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
+>The LTSC edition is only available through the [Microsoft Volume Licensing Center](https://www.microsoft.com/Licensing/servicecenter/default.aspx).
 
 >[!NOTE]
->Devices will automatically receive updates from the Semi-Annual Channel, unless they are configured to receive preview updates through the Windows Insider Program.
+>Devices will automatically receive updates from the General Availability Channel, unless they are configured to receive preview updates through the Windows Insider Program.
 
 
 ## Enroll devices in the Windows Insider Program

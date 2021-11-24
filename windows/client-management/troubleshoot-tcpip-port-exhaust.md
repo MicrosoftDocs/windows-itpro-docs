@@ -39,7 +39,7 @@ You can view the dynamic port range on a computer by using the following netsh c
 
 The range is set separately for each transport (TCP or UDP). The port range is now a range that has a starting point and an ending point. Microsoft customers who deploy servers that are running Windows Server may have problems that affect RPC communication between servers if firewalls are used on the internal network. In these situations, we recommend that you reconfigure the firewalls to allow traffic between servers in the dynamic port range of **49152** through **65535**. This range is in addition to well-known ports that are used by services and applications. Or, the port range that is used by the servers can be modified on each server. You adjust this range by using the netsh command, as follows. The above command sets the dynamic port range for TCP. 
  
-```cmd
+```console
 netsh int <ipv4|ipv6> set dynamic <tcp|udp> start=number num=range
 ```
  
@@ -58,7 +58,7 @@ Since outbound connections start to fail, you will see a lot of the below behavi
  
 - Unable to sign in to the machine with domain credentials, however sign-in with local account works. Domain sign-in will require you to contact the DC for authentication which is again an outbound connection. If you have cache credentials set, then domain sign-in might still work.
 
-    ![Screenshot of error for NETLOGON in Event Viewer.](images/tcp-ts-14.png)
+    :::image type="content" alt-text="Screenshot of error for NETLOGON in Event Viewer." source="images/tcp-ts-14.png" lightbox="images/tcp-ts-14.png":::
 
 - Group Policy update failures:
 
@@ -82,32 +82,32 @@ If you suspect that the machine is in a state of port exhaustion:
 
 2. Open event viewer and under the system logs, look for the events which clearly indicate the current state: 
 
-    a.	**Event ID 4227**
+    1. **Event ID 4227**
 
-    ![Screenshot of event id 4227 in Event Viewer.](images/tcp-ts-18.png)
+       :::image type="content" alt-text="Screenshot of event ID 4227 in Event Viewer." source="images/tcp-ts-18.png" lightbox="images/tcp-ts-18.png":::
 
-    b.	**Event ID 4231**
+    1. **Event ID 4231**
 
-    ![Screenshot of event id 4231 in Event Viewer.](images/tcp-ts-19.png)
+       :::image type="content" alt-text="Screenshot of event ID 4231 in Event Viewer." source="images/tcp-ts-19.png" lightbox="images/tcp-ts-19.png":::
 
 3. Collect a `netstat -anob` output from the server. The netstat output will show you a huge number of entries for TIME_WAIT state for a single PID.
 
     ![Screenshot of netstate command output.](images/tcp-ts-20.png)
 
-After a graceful closure or an abrupt closure of a session, after a period of 4 minutes (default), the port used the process or application would be released back to the available pool. During this 4 minutes, the TCP connection state will be TIME_WAIT state. In a situation where you suspect port exhaustion, an application or process will not be able to release all the ports that it has consumed and will remain in the TIME_WAIT state.
- 
-You may also see CLOSE_WAIT state connections in the same output, however CLOSE_WAIT state is a state when one side of the TCP peer has no more data to send (FIN sent) but is able to receive data from the other end. This state does not necessarily indicate port exhaustion.
- 
->[!Note]
->Having huge connections in TIME_WAIT state does not always indicate that the server is currently out of ports unless the first two points are verified. Having lot of TIME_WAIT connections does indicate that the process is creating lot of TCP connections and may eventually lead to port exhaustion.
->
->Netstat has been updated in Windows 10 with the addition of the **-Q** switch to show ports that have transitioned out of time wait as in the BOUND state.  An update for Windows 8.1 and Windows Server 2012 R2 has been released that contains this functionality. The PowerShell cmdlet `Get-NetTCPConnection` in Windows 10 also shows these BOUND ports.
->
->Until 10/2016, netstat was inaccurate. Fixes for netstat, back-ported to 2012 R2, allowed Netstat.exe and Get-NetTcpConnection to correctly report TCP or UDP port usage in Windows Server 2012 R2. See [Windows Server 2012 R2: Ephemeral ports hotfixes](https://support.microsoft.com/help/3123245/update-improves-port-exhaustion-identification-in-windows-server-2012) to learn more.
+    After a graceful closure or an abrupt closure of a session, after a period of 4 minutes (default), the port used the process or application would be released back to the available pool. During this 4 minutes, the TCP connection state will be TIME_WAIT state. In a situation where you suspect port exhaustion, an application or process will not be able to release all the ports that it has consumed and will remain in the TIME_WAIT state.
+     
+    You may also see CLOSE_WAIT state connections in the same output, however CLOSE_WAIT state is a state when one side of the TCP peer has no more data to send (FIN sent) but is able to receive data from the other end. This state does not necessarily indicate port exhaustion.
+     
+    >[!Note]
+    >Having huge connections in TIME_WAIT state does not always indicate that the server is currently out of ports unless the first two points are verified. Having lot of TIME_WAIT connections does indicate that the process is creating lot of TCP connections and may eventually lead to port exhaustion.
+    >
+    >Netstat has been updated in Windows 10 with the addition of the **-Q** switch to show ports that have transitioned out of time wait as in the BOUND state.  An update for Windows 8.1 and Windows Server 2012 R2 has been released that contains this functionality. The PowerShell cmdlet `Get-NetTCPConnection` in Windows 10 also shows these BOUND ports.
+    >
+    >Until 10/2016, netstat was inaccurate. Fixes for netstat, back-ported to 2012 R2, allowed Netstat.exe and Get-NetTcpConnection to correctly report TCP or UDP port usage in Windows Server 2012 R2. See [Windows Server 2012 R2: Ephemeral ports hotfixes](https://support.microsoft.com/help/3123245/update-improves-port-exhaustion-identification-in-windows-server-2012) to learn more.
  
 4. Open a command prompt in admin mode and run the below command
 
-   ```cmd
+   ```console
    Netsh trace start scenario=netconnection capture=yes tracefile=c:\Server.etl
    ```
 
@@ -119,15 +119,15 @@ The key is to identify which process or application is using all the ports. Belo
  
 ### Method 1
 
-Start by looking at the netstat output. If you are using Windows 10 or Windows Server 2016, then you can run the command `netstat -anobq` and check for the process ID which has maximum entries as BOUND. Alternately, you can also run the below Powershell command to identify the process:
+Start by looking at the netstat output. If you are using Windows 10 or Windows Server 2016, then you can run the command `netstat -anobq` and check for the process ID which has maximum entries as BOUND. Alternately, you can also run the below PowerShell command to identify the process:
 
-```Powershell
+```powershell
 Get-NetTCPConnection | Group-Object -Property State, OwningProcess | Select -Property Count, Name, @{Name="ProcessName";Expression={(Get-Process -PID ($_.Name.Split(',')[-1].Trim(' '))).Name}}, Group | Sort Count -Descending 
 ```
 
 Most port leaks are caused by user-mode processes not correctly closing the ports when an error was encountered. At the user-mode level ports (actually sockets) are handles. Both **TaskManager** and **ProcessExplorer** are able to display handle counts which allows you to identify which process is consuming all of the ports.
  
-For Windows 7 and Windows Server 2008 R2, you can update your Powershell version to include the above cmdlet. 
+For Windows 7 and Windows Server 2008 R2, you can update your PowerShell version to include the above cmdlet. 
  
 ### Method 2
 
@@ -157,7 +157,7 @@ Steps to use Process explorer:
     
     File   \Device\AFD
 
-    ![Screenshot of Process Explorer.](images/tcp-ts-22.png)
+    :::image type="content" alt-text="Screenshot of Process Explorer." source="images/tcp-ts-22.png" lightbox="images/tcp-ts-22.png":::
 
 10. Some are normal, but large numbers of them are not (hundreds to thousands). Close the process in question. If that restores outbound connectivity, then you have further proven that the app is the cause. Contact the vendor of that app.
  
@@ -165,7 +165,7 @@ Finally, if the above methods did not help you isolate the process, we suggest y
  
 As a workaround, rebooting the computer will get the it back in normal state and would help you resolve the issue for the time being. However, when a reboot is impractical, you can also consider increasing the number of ports on the machine using the below commands:
 
-```cmd
+```console
 netsh int ipv4 set dynamicport tcp start=10000 num=1000
 ```
 
@@ -176,7 +176,7 @@ This will set the dynamic port range to start at port 10000 and to end at port 1
 
 For Windows 7 and Windows Server 2008 R2, you can use the below script to collect the netstat output at defined frequency. From the outputs, you can see the port usage trend.
 
-```
+```console
 @ECHO ON
 set v=%1
 :loop
@@ -195,5 +195,5 @@ goto loop
 ## Useful links
 
 - [Port Exhaustion and You!](/archive/blogs/askds/port-exhaustion-and-you-or-why-the-netstat-tool-is-your-friend) - this article gives a detail on netstat states and how you can use netstat output to determine the port status
+- [Detecting ephemeral port exhaustion](/archive/blogs/yongrhee/windows-server-2012-r2-ephemeral-ports-a-k-a-dynamic-ports-hotfixes): this article has a script which will run in a loop to report the port status. (Applicable for Windows 2012 R2, Windows 8, Windows 10 and Windows 11)
 
-- [Detecting ephemeral port exhaustion](/archive/blogs/yongrhee/windows-server-2012-r2-ephemeral-ports-a-k-a-dynamic-ports-hotfixes): this article has a script which will run in a loop to report the port status. (Applicable for Windows 2012 R2, Windows 8, Windows 10, and Windows 11)

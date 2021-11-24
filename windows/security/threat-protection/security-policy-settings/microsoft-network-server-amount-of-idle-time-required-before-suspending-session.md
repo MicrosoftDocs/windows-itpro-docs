@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Microsoft network server: Amount of idle time required before suspending session

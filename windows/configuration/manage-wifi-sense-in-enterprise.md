@@ -12,15 +12,14 @@ ms.sitesec: library
 ms.pagetype: mobile
 author: greg-lindsay
 ms.localizationpriority: medium
-ms.date: 05/02/2018
 ms.topic: article
 ---
 
 # Manage Wi-Fi Sense in your company
-**Applies to:**
 
--   Windows 10
--   Windows 10 Mobile
+**Applies to**
+
+- Windows 10 version 1709 and older
 
 >[!IMPORTANT]
 >Beginning with Windows 10, version 1803, Wifi-Sense is no longer available. The following information only applies to Windows 10, version 1709 and prior. Please see [Connecting to open Wi-Fi hotspots in Windows 10](https://privacy.microsoft.com/windows-10-open-wi-fi-hotspots) for more details.

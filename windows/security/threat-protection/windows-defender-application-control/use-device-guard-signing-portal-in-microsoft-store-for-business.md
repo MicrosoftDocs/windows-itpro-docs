@@ -15,7 +15,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 manager: dansimp
 ms.date: 02/19/2019
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Optional: Use the Device Guard Signing Portal in the Microsoft Store for Business

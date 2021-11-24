@@ -18,9 +18,35 @@ The CM\_CellularEntries configuration service provider is used to configure the 
 
 This configuration service provider requires the ID\_CAP\_NETWORKING\_ADMIN capability to be accessed from a network configuration application.
 
-The following diagram shows the CM\_CellularEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
+The following shows the CM\_CellularEntries configuration service provider management object in tree format as used by Open Mobile Alliance Client Provisioning (OMA CP). The OMA DM protocol is not supported with this configuration service provider.
 
-![cm\-cellularentries csp.](images/provisioning-csp-cm-cellularentries.png)
+```console
+CM_CellularEntries
+----entryname
+--------AlwaysOn
+--------AuthType
+--------ConnectionType
+--------Desc.langid
+--------Enabled
+--------IpHeaderCompression
+--------Password
+--------SwCompression
+--------UserName
+--------UseRequiresMappingPolicy
+--------Version
+--------DevSpecificCellular
+-----------GPRSInfoAccessPointName
+--------Roaming
+--------OEMConnectionID
+--------ApnId
+--------IPType
+--------ExemptFromDisablePolicy
+--------ExemptFromRoaming
+--------TetheringNAI
+--------IdleDisconnectTimeout
+--------SimIccId
+--------PurposeGroups
+```
 
 <a href="" id="entryname"></a>***entryname***  
 <p>Defines the name of the connection.</p>
@@ -44,38 +70,14 @@ The following diagram shows the CM\_CellularEntries configuration service provid
 <a href="" id="connectiontype"></a>**ConnectionType**  
 <p>Optional. Type: String. Specifies the type of connection used for the APN. The following connection types are available:
 
-<table><table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>gprs</p></td>
-<td><p>Default. Used for GPRS type connections (GPRS + GSM + EDGE + UMTS + LTE).</p></td>
-</tr>
-<tr class="even">
-<td><p>cdma</p></td>
-<td><p>Used for CDMA type connections (1XRTT + EVDO).</p></td>
-</tr>
-<tr class="odd">
-<td><p>lte</p></td>
-<td><p>Used for LTE type connections (eHRPD + LTE) when the device is registered HOME.</p></td>
-</tr>
-<tr class="even">
-<td><p>legacy</p></td>
-<td><p>Used for GPRS + GSM + EDGE + UMTS connections.</p></td>
-</tr>
-<tr class="odd">
-<td><p>lte_iwlan</p></td>
-<td><p>Used for GPRS type connections that may be offloaded over WiFi</p></td>
-</tr>
-<tr class="even">
-<td><p>iwlan</p></td>
-<td><p>Used for connections that are implemented over WiFi offload only</p></td>
-</tr>
-</tbody>
-</table>
+|Connection type|Usage|
+|--- |--- |
+|Gprs|Default. Used for GPRS type connections (GPRS + GSM + EDGE + UMTS + LTE).|
+|Cdma|Used for CDMA type connections (1XRTT + EVDO).|
+|Lte|Used for LTE type connections (eHRPD + LTE) when the device is registered HOME.|
+|Legacy|Used for GPRS + GSM + EDGE + UMTS connections.|
+|Lte_iwlan|Used for GPRS type connections that may be offloaded over WiFi|
+|Iwlan|Used for connections that are implemented over WiFi offload only|
 
  
 
@@ -269,37 +271,14 @@ Configuring a CDMA connection:
 
 ## Microsoft Custom Elements
 
-
 The following table shows the Microsoft custom elements that this configuration service provider supports for OMA Client Provisioning.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Available</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>nocharacteristic</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>characteristic-query</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>parm-query</p></td>
-<td><p>Yes</p></td>
-</tr>
-</tbody>
-</table>
+|Element|Available|
+|--- |--- |
+|Nocharacteristic|Yes|
+|Characteristic-query|Yes|
+|Parm-query|Yes|
 
- 
 
 ## Related topics
 

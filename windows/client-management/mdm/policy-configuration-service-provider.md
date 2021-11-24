@@ -42,9 +42,25 @@ The Policy configuration service provider has the following sub-categories:
 > - **./Vendor/MSFT/Policy/Config/_AreaName/PolicyName_** to configure the policy.
 > - **./Vendor/MSFT/Policy/Result/_AreaName/PolicyName_** to get the result.
 
-The following diagram shows the Policy configuration service provider in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
+The following shows the Policy configuration service provider in tree format as used by both Open Mobile Alliance Device Management (OMA DM) and OMA Client Provisioning.
 
-![policy csp diagram.](images/provisioning-csp-policy.png)
+```console
+./Vendor/MSFT
+Policy
+-------Config
+----------AreaName
+-------------PolicyName
+-------Result
+----------AreaName
+-------------PolicyName
+-------ConfigOperations
+----------ADMXInstall
+-------------AppName
+----------------Policy
+------------------UniqueID
+----------------Preference
+------------------UniqueID
+```
 
 
 <a href="" id="--vendor-msft-policy"></a>**./Vendor/MSFT/Policy**  
@@ -212,6 +228,23 @@ The following diagram shows the Policy configuration service provider in tree fo
     <a href="./policy-csp-admx-addremoveprograms.md#admx-addremoveprograms-nowindowssetuppage" id="admx-addremoveprograms-nowindowssetuppage">ADMX_AddRemovePrograms/NoWindowsSetupPage</a>
   </dd>
 </dl>
+
+### ADMX_AdmPwd policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-admpwd.md#admx-admpwd-pol_admpwd_dontallowpwdexpirationbehindpolicy" id="admx-admpwd-pol_admpwd_dontallowpwdexpirationbehindpolicy">ADMX_AdmPwd/POL_AdmPwd_DontAllowPwdExpirationBehindPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-admpwd.md#admx-admpwd-pol_admpwd_enabled" id="admx-admpwd-pol_admpwd_enabled">ADMX_AdmPwd/POL_AdmPwd_Enabled</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-admpwd.md#admx-admpwd-pol_admpwd_adminname" id="admx-admpwd-pol_admpwd_adminname">ADMX_AdmPwd/POL_AdmPwd_AdminName</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-admpwd.md#admx-admpwd-pol_admpwd" id="admx-admpwd-pol_admpwd">ADMX_AdmPwd/POL_AdmPwd</a>
+  </dd>
+<dl>
 
 ### ADMX_AppCompat policies
 
@@ -2411,6 +2444,26 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_MobilePCMobilityCenter policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-mobilepcmobilitycenter.md#admx-mobilepcmobilitycenter-mobilitycenterenable_1" id="admx-mobilepcmobilitycenter-mobilitycenterenable_1">ADMX_MobilePCMobilityCenter/MobilityCenterEnable_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mobilepcmobilitycenter.md#admx-mobilepcmobilitycenter-mobilitycenterenable_2" id="admx-mobilepcmobilitycenter-mobilitycenterenable_2">ADMX_MobilePCMobilityCenter/MobilityCenterEnable_2</a>
+  </dd>
+<dl>
+
+### ADMX_MobilePCPresentationSettings policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-mobilepcpresentationsettings.md#admx-mobilepcpresentationsettings-presentationsettingsenable_1" id="admx-mobilepcpresentationsettings-presentationsettingsenable_1">ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-mobilepcpresentationsettings.md#admx-mobilepcpresentationsettings-presentationsettingsenable_2" id="admx-mobilepcpresentationsettings-presentationsettingsenable_2">ADMX_MobilePCPresentationSettings/PresentationSettingsEnable_2</a>
+  </dd>
+<dl>
+
 ### ADMX_MSAPolicy policies
 <dl>
   <dd>
@@ -2519,6 +2572,13 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-msi.md#admx-msi-transformssecure" id="admx-msi-transformssecure">ADMX_MSI/TransformsSecure</a>
   </dd>
 </dl>
+
+### ADMX_MsiFileRecovery policies
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-msifilerecovery.md#admx-msifilerecovery-wdiscenarioexecutionpolicy" id="admx-msifilerecovery-wdiscenarioexecutionpolicy">ADMX_MsiFileRecovery/WdiScenarioExecutionPolicy</a>
+  </dd>
+<dl>
 
 ### ADMX_nca policies
 <dl>
@@ -2911,6 +2971,32 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### ADMX_pca policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectdeprecatedcomcomponentfailurespolicy" id="admx-pca-detectdeprecatedcomcomponentfailurespolicy">ADMX_pca/DetectDeprecatedCOMComponentFailuresPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectdeprecatedcomponentfailurespolicy" id="admx-pca-detectdeprecatedcomponentfailurespolicy">ADMX_pca/DetectDeprecatedComponentFailuresPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectinstallfailurespolicy" id="admx-pca-detectinstallfailurespolicy">ADMX_pca/DetectInstallFailuresPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectundetectedinstallerspolicy" id="admx-pca-detectundetectedinstallerspolicy">ADMX_pca/DetectUndetectedInstallersPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectupdatefailurespolicy" id="admx-pca-detectupdatefailurespolicy">ADMX_pca/DetectUpdateFailuresPolicy</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-disablepcauipolicy" id="admx-pca-disablepcauipolicy">ADMX_pca/DisablePcaUIPolicy</a>
+  </dd>
+<dd>
+    <a href="./policy-csp-admx-pca.md#admx-pca-detectblockeddriverspolicy" id="admx-pca-detectblockeddriverspolicy">ADMX_pca/DetectBlockedDriversPolicy</a>
+</dd>
+<dl>
+
 ### ADMX_PeerToPeerCaching policies
 
 <dl>
@@ -2942,6 +3028,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-peertopeercaching.md#admx-peertopeercaching-setdowngrading" id="admx-peertopeercaching-setdowngrading">ADMX_PeerToPeerCaching/SetDowngrading</a>
   </dd>
 </dl>
+
+### ADMX_PenTraining policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-pentraining.md#admx-pentraining-pentrainingoff_1" id="admx-pentraining-pentrainingoff_1">ADMX_PenTraining/PenTrainingOff_1</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-pentraining.md#admx-pentraining-pentrainingoff_2" id="admx-pentraining-pentrainingoff_2">ADMX_PenTraining/PenTrainingOff_2</a>
+  </dd>
+<dl>
 
 ### ADMX_PerformanceDiagnostics policies
 
@@ -3541,30 +3638,22 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-##  ADMX_ShellCommandPromptRegEditTools policies
+### ADMX_ShellCommandPromptRegEditTools policies
 
 <dl>
   <dd>
-    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disablecmd" id="admx-shellcommandpromptregedittools-disablecmd">ADMX_ShellCommandPromptRegEditTools/DisableCMD</a>
+    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disallowapps" id="admx-shellcommandpromptregedittools-disallowapps">ADMX_ShellCommandPromptRegEditTools/DisallowApps</a>
   </dd>
   <dd>
     <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disableregedit" id="admx-shellcommandpromptregedittools-disableregedit">ADMX_ShellCommandPromptRegEditTools/DisableRegedit</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disallowapps" id="admx-shellcommandpromptregedittools-disallowapps">ADMX_ShellCommandPromptRegEditTools/DisallowApps</a>
+    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disablecmd" id="admx-shellcommandpromptregedittools-disablecmd">ADMX_ShellCommandPromptRegEditTools/DisableCMD</a>
   </dd>
   <dd>
-    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-disablecmd" id="admx-shellcommandpromptregedittools-restrictapps">ADMX_ShellCommandPromptRegEditTools/RestrictApps</a>
+    <a href="./policy-csp-admx-shellcommandpromptregedittools.md#admx-shellcommandpromptregedittools-restrictapps" id="admx-shellcommandpromptregedittools-restrictapps">ADMX_ShellCommandPromptRegEditTools/RestrictApps</a>
   </dd>
-</dl>
-
-### ADMX_SkyDrive policies  
-
 <dl>
-  <dd>
-    <a href="./policy-csp-admx-skydrive.md#admx-skydrive-preventnetworktrafficpreusersignin" id="admx-skydrive-preventnetworktrafficpreusersignin">ADMX_SkyDrive/PreventNetworkTrafficPreUserSignIn</a>
-  </dd>
-</dl>
 
 ### ADMX_Smartcard policies
 
@@ -4517,25 +4606,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
-### ADMX_WindowsAnytimeUpgrade policies  
-
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-windowsanytimeupgrade.md#admx-windowsanytimeupgrade-disabled" id="admx-windowsanytimeupgrade-disabled">ADMX_WindowsAnytimeUpgrade/Disabled</a>
-  </dd>
-</dl>
-
-### ADMX_WindowsColorSystem policies
-
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-windowscolorsystem.md#admx-windowscolorsystem-prohibitchanginginstalledprofilelist_1" id="admx-windowscolorsystem-prohibitchanginginstalledprofilelist_1">ADMX_WindowsColorSystem/ProhibitChangingInstalledProfileList_1</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-windowscolorsystem.md#admx-windowscolorsystem-prohibitchanginginstalledprofilelist_2" id="admx-windowscolorsystem-prohibitchanginginstalledprofilelist_2">ADMX_WindowsColorSystem/ProhibitChangingInstalledProfileList_2</a>
-  </dd>
-</dl>
-
 ### ADMX_WindowsConnectNow policies  
 
 <dl>
@@ -4934,6 +5004,28 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-admx-wlansvc.md#admx-wlansvc-setpinpreferred" id="admx-wlansvc-setpinpreferred">ADMX_wlansvc/SetPINPreferred</a>
   </dd>
 </dl>
+
+### ADMX_WordWheel policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-wordwheel.md#admx-wordwheel-customsearch" id="admx-wordwheel-customsearch">ADMX_WordWheel/CustomSearch</a>
+  </dd>
+<dl>
+
+### ADMX_WorkFoldersClient policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-admx-workfoldersclient.md#admx-workfoldersclient-pol_userenabletokenbroker" id="admx-workfoldersclient-pol_userenabletokenbroker">ADMX_WorkFoldersClient/Pol_UserEnableTokenBroker</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-workfoldersclient.md#admx-workfoldersclient-pol_userenableworkfolders" id="admx-workfoldersclient-pol_userenableworkfolders">ADMX_WorkFoldersClient/Pol_UserEnableWorkFolders</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-admx-workfoldersclient.md#admx-workfoldersclient-pol_machineenableworkfolders" id="admx-workfoldersclient-pol_machineenableworkfolders">ADMX_WorkFoldersClient/Pol_MachineEnableWorkFolders</a>
+  </dd>
+<dl>
 
 ### ADMX_WPN policies  
 
@@ -5748,9 +5840,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-allowioavprotection" id="defender-allowioavprotection">Defender/AllowIOAVProtection</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-defender.md#defender-allowintrusionpreventionsystem" id="defender-allowintrusionpreventionsystem">Defender/AllowIntrusionPreventionSystem</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-allowonaccessprotection" id="defender-allowonaccessprotection">Defender/AllowOnAccessProtection</a>
@@ -8810,23 +8899,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-windowsdefendersecuritycenter.md#windowsdefendersecuritycenter-url" id="windowsdefendersecuritycenter-url">WindowsDefenderSecurityCenter/URL</a>
-  </dd>
-</dl>
-
-### ADMX_WindowsFileProtection policies  
-
-<dl>
-  <dd>
-    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpshowprogress" id="admx-windowsfileprotection-wfpshowprogress">ADMX_WindowsFileProtection/WFPShowProgress</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpquota" id="admx-windowsfileprotection-wfpquota">ADMX_WindowsFileProtection/WFPQuota</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpscan" id="admx-windowsfileprotection-wfpscan">ADMX_WindowsFileProtection/WFPScan</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-admx-windowsfileprotection.md#admx-windowsfileprotection-wfpdllcachedir" id="admx-windowsfileprotection-wfpdllcachedir">ADMX_WindowsFileProtection/WFPDllCacheDir</a>
   </dd>
 </dl>
 

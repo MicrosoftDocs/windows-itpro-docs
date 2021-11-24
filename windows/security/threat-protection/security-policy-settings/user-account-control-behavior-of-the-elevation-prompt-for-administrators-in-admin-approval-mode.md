@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 09/08/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # User Account Control: Behavior of the elevation prompt for administrators in Admin Approval Mode

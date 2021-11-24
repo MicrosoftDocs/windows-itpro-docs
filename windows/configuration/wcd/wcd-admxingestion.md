@@ -26,10 +26,10 @@ Starting in Windows 10, version 1703, you can import (*ingest*) select Group Pol
 
 ## Applies to
 
-| Setting groups | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy)  | X |  |  |  |  |
-| [ConfigOperations](#configoperations)  | X |   |  |   |   |
+| Setting groups | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [ConfigADMXInstalledPolicy](#configadmxinstalledpolicy)  | ✔️ |  |  |  |
+| [ConfigOperations](#configoperations)  | ✔️ |  |   |   |
 
 ## ConfigADMXInstalledPolicy
 

@@ -16,9 +16,14 @@ ms.topic: article
 
 # Privacy in Update Compliance
 
+**Applies to**
+
+- Windows 10
+- Windows 11
+
 Update Compliance is fully committed to privacy, centering on these tenets:
 
-- **Transparency:** Windows 10 diagnostic data events that are required for Update Compliance's operation are fully documented (see the links for additional information) so you can review them with your company's security and compliance teams. The Diagnostic Data Viewer lets you see diagnostic data sent from a given device (see [Diagnostic Data Viewer Overview](/windows/configuration/diagnostic-data-viewer-overview) for details).
+- **Transparency:** Windows client diagnostic data events that are required for Update Compliance's operation are fully documented (see the links for additional information) so you can review them with your company's security and compliance teams. The Diagnostic Data Viewer lets you see diagnostic data sent from a given device (see [Diagnostic Data Viewer Overview](/windows/configuration/diagnostic-data-viewer-overview) for details).
 - **Control:** You ultimately control the level of diagnostic data you wish to share. In Windows 10, version 1709 we added a new policy to Limit enhanced diagnostic data to the minimum required by Windows Analytics.
 - **Security:** Your data is protected with strong security and encryption.
 - **Trust:** Update Compliance supports the Online Services Terms.

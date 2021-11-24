@@ -4,7 +4,7 @@ description: In this article, you will learn how to replace a Windows 7 device w
 ms.custom: seo-marvel-apr2020
 ms.assetid: acf091c9-f8f4-4131-9845-625691c09a2a
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, deployment, replace
 ms.prod: w10
@@ -48,7 +48,7 @@ On **MDT01**:
 
 1. Open the Deployment Workbench, under **Deployment Shares** right-click **MDT Production**, click **Properties**, and then click the **Rules** tab.
 2. Change the **SkipUserData=YES** option to **NO**, and click **OK**.
-3. Right-click **MDT Production** and click **Update Deployment Share**. Click **Next**, **Next**, and **Finish** to complete the Update Deployment Share Wizard with the default setttings.
+3. Right-click **MDT Production** and click **Update Deployment Share**. Click **Next**, **Next**, and **Finish** to complete the Update Deployment Share Wizard with the default settings.
 
 ### Create and share the MigData folder
 
@@ -81,7 +81,7 @@ On **MDT01**:
 
 During a computer replace, these are the high-level steps that occur:
 
-1.  On the computer you are replacing, a special replace task sequence runs the USMT backup and, if you configured it, runs the optional full Window Imaging (WIM) backup.
+1.  On the computer you are replacing, a special replace task sequence runs the USMT backup and, if you configured it, runs the optional full Windows Imaging (WIM) backup.
 2.  On the new computer, you perform a standard bare-metal deployment. At the end of the bare-metal deployment, the USMT backup from the old computer is restored.
 
 ### Run the replace task sequence
@@ -151,7 +151,7 @@ On **HV01**:
     * Updates the operating system via your local Windows Server Update Services (WSUS) server.
     * Restores the USMT backup from PC0002.
 
-You can view progress of the process by clicking the Monitoring node in the Deployment Workbrench on MDT01.
+You can view progress of the process by clicking the Monitoring node in the Deployment Workbench on MDT01.
 
 ![Monitor progress.](../images/mdt-replace.png)
 
