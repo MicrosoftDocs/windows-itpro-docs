@@ -857,10 +857,10 @@ Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer j
 >[!NOTE]
 > WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
 
-Supported values for this policy are:  
--  Not configured
-- 1-Enabled
-- 0-Disabled
+Supported values for this policy are:
+- Not configured
+- Enabled
+- Disabled
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -945,8 +945,8 @@ Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer j
 
 Supported values for this policy are:  
 - Not configured
-- 1-Enabled
-- 0-Disabled
+- Enabled
+- Disabled
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1031,8 +1031,8 @@ Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer j
 
 Supported values for this policy are:  
 - Not configured
-- 1-Enabled
-- 0-Disabled
+- Enabled
+- Disabled
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -1117,8 +1117,8 @@ Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer j
 
 Supported values for this policy are:  
 - Not configured
-- 1-Enabled
-- 0-Disabled
+- Enabled
+- Disabled
 
 <!--/Description-->
 <!--ADMXMapped-->
