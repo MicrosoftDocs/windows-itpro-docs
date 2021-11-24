@@ -48,6 +48,18 @@ manager: dansimp
   <dd>
     <a href="#storage-removablediskdenywriteaccess">Storage/RemovableDiskDenyWriteAccess</a>
   </dd>
+  <dd>
+    <a href="#storage-wpddevicesdenyreadaccessperdevice">Storage/WPDDevicesDenyReadAccessPerDevice</a>
+  </dd>
+  <dd>
+    <a href="#storage-wpddevicesdenyreadaccessperuser">Storage/WPDDevicesDenyReadAccessPerUser</a>
+  </dd>
+  <dd>
+    <a href="#storage-wpddevicesdenywriteaccessperdevice">Storage/WPDDevicesDenyWriteAccessPerDevice</a>
+  </dd>
+  <dd>
+    <a href="#storage-wpddevicesdenywriteaccessperuser">Storage/WPDDevicesDenyWriteAccessPerUser</a>
+  </dd>
 </dl>
 
 
@@ -139,8 +151,8 @@ The following list shows the supported values:
 </tr>
 <tr>
     <td>Home</td>
-    <td></td>
-    <td></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
@@ -218,8 +230,8 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td></td>
-    <td></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
@@ -300,8 +312,8 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td></td>
-    <td></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
@@ -382,8 +394,8 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td></td>
-    <td></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
@@ -464,8 +476,8 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td></td>
-    <td></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
@@ -552,8 +564,8 @@ ADMX Info:
 </tr>
 <tr>
     <td>Home</td>
-    <td></td>
-    <td></td>
+    <td>No</td>
+    <td>No</td>
 </tr>
 <tr>
     <td>Pro</td>
@@ -782,5 +794,348 @@ See [Use custom settings for Windows 10 devices in Intune](/intune/custom-settin
 <!--/Policy-->
 <hr/>
 
+<!--Policy-->
+<a href="" id="storage-wpddevicesdenyreadaccessperdevice"></a>**Storage/WPDDevicesDenyReadAccessPerDevice**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
+
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
+- Mass Storage Class (MSC) over USB
+
+If enabled, this policy will block end-user from Read access on any Windows Portal devices, e.g. mobile/iOS/Android.
+
+Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer justifications[TC(1] [TW2].
+
+>[!NOTE]
+> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+
+Supported values for this policy are:  
+-  Not configured
+- 1-Enabled
+- 0-Disabled
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *WPD Devices: Deny read access*
+-   GP name: *WPDDevices_DenyRead_Access_2*
+-   GP path: *System/Removable Storage Access*
+-   GP ADMX file name: *RemovableStorage.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="storage-wpddevicesdenyreadaccessperuser"></a>**Storage/WPDDevicesDenyReadAccessPerUser**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
+
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
+- Mass Storage Class (MSC) over USB
+
+If enabled, this policy will block end-user from Read access on any Windows Portal devices, e.g. mobile/iOS/Android.
+
+Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer justifications[TC(1] [TW2].
+
+>[!NOTE]
+> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+
+Supported values for this policy are:  
+- Not configured
+- 1-Enabled
+- 0-Disabled
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *WPD Devices: Deny read access*
+-   GP name: *WPDDevices_DenyRead_Access_1*
+-   GP path: *System/Removable Storage Access*
+-   GP ADMX file name: *RemovableStorage.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="storage-wpddevicesdenywriteaccessperdevice"></a>**Storage/WPDDevicesDenyWriteAccessPerDevice**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
+
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
+- Mass Storage Class (MSC) over USB
+
+If enabled, this will block end-user from Write access on any Windows Portal devices, e.g. mobile/iOS/Android.
+
+Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer justifications.
+
+>[!NOTE]
+> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+
+Supported values for this policy are:  
+- Not configured
+- 1-Enabled
+- 0-Disabled
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *WPD Devices: Deny write access*
+-   GP name: *WPDDevices_DenyWrite_Access_2*
+-   GP path: *System/Removable Storage Access*
+-   GP ADMX file name: *RemovableStorage.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+<hr/>
+
+<!--Policy-->
+<a href="" id="storage-wpddevicesdenywriteaccessperuser"></a>**Storage/WPDDevicesDenyWriteAccessPerUser**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * User
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy will do the enforcement over the following protocols which are used by most portable devices, e.g. mobile/IOS/Android:
+
+- Picture Transfer Protocol (PTP) over USB, IP, and Bluetooth
+- Media Transfer Protocol (MTP) over USB, IP, and Bluetooth
+- Mass Storage Class (MSC) over USB
+
+If enabled, this will block end-user from Write access on any Windows Portal devices, e.g. mobile/iOS/Android.
+
+Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer justifications.
+
+>[!NOTE]
+> WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
+
+Supported values for this policy are:  
+- Not configured
+- 1-Enabled
+- 0-Disabled
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP Friendly name: *WPD Devices: Deny write access*
+-   GP name: *WPDDevices_DenyWrite_Access_2*
+-   GP path: *System/Removable Storage Access*
+-   GP ADMX file name: *RemovableStorage.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+<!--/SupportedValues-->
+<!--Validation-->
+
+<!--/Validation-->
+<!--/Policy-->
+<hr/>
 
 <!--/Policies-->

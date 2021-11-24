@@ -8293,6 +8293,18 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   <dd>
     <a href="./policy-csp-storage.md#storage-removablediskdenywriteaccess" id="storage-removablediskdenywriteaccess">Storage/RemovableDiskDenyWriteAccess</a>
   </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-wpddevicesdenyreadaccessperdevice" id="storage-wpddevicesdenyreadaccessperdevice">Storage/WPDDevicesDenyReadAccessPerDevice</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-wpddevicesdenyreadaccessperuser" id="storage-wpddevicesdenyreadaccessperuser">Storage/WPDDevicesDenyReadAccessPerUser</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-wpddevicesdenywriteaccessperdevice" id="storage-wpddevicesdenywriteaccessperdevice">Storage/WPDDevicesDenyWriteAccessPerDevice</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-storage.md#storage-wpddevicesdenywriteaccessperuser" id="storage-wpddevicesdenywriteaccessperuser">Storage/WPDDevicesDenyWriteAccessPerUser</a>
+  </dd>
 </dl>
 
 ### System policies
