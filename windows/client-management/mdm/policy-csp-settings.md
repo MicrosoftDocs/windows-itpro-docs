@@ -30,6 +30,9 @@ manager: dansimp
     <a href="#settings-allowdatetime">Settings/AllowDateTime</a>
   </dd>
   <dd>
+    <a href="#settings-alloweditdevicename">Settings/AllowEditDeviceName</a>
+  </dd>
+  <dd>
     <a href="#settings-allowlanguage">Settings/AllowLanguage</a>
   </dd>
   <dd>
@@ -260,6 +263,68 @@ The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="settings-alloweditdevicename"></a>**Settings/AllowEditDeviceName**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+This policy disables edit device name option on Settings.
+
+<!--/Description-->
+<!--SupportedValues-->
+
+Describes what value are supported in by this policy and meaning of each value, default value.
 
 <!--/SupportedValues-->
 <!--/Policy-->
