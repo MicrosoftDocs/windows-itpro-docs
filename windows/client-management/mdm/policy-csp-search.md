@@ -25,6 +25,9 @@ manager: dansimp
     <a href="#search-allowcloudsearch">Search/AllowCloudSearch</a>
   </dd>
   <dd>
+    <a href="#search-allowcortanainaad">Search/AllowCortanaInAAD</a>
+  </dd>
+  <dd>
     <a href="#search-allowfindmyfiles">Search/AllowFindMyFiles</a>
   </dd>
   <dd>
@@ -132,6 +135,76 @@ The following list shows the supported values:
 
 -   0 – Not allowed.
 -   1 (default) – Allowed.
+
+<!--/SupportedValues-->
+<!--/Policy-->
+
+<hr/>
+
+<!--Policy-->
+<a href="" id="search-allowcortanainaad"></a>**Search/AllowCortanaInAAD**  
+
+<!--SupportedSKUs-->
+<table>
+<tr>
+    <th>Edition</th>
+    <th>Windows 10</th>
+    <th>Windows 11</th>
+</tr>
+<tr>
+    <td>Home</td>
+    <td>No</td>
+    <td>No</td>
+</tr>
+<tr>
+    <td>Pro</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Business</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Enterprise</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+<tr>
+    <td>Education</td>
+    <td>Yes</td>
+    <td>Yes</td>
+</tr>
+</table>
+
+<!--/SupportedSKUs-->
+<hr/>
+
+<!--Scope-->
+[Scope](./policy-configuration-service-provider.md#policy-scope):
+
+> [!div class = "checklist"]
+> * Device
+
+<hr/>
+
+<!--/Scope-->
+<!--Description-->
+
+<!--/Description-->
+<!--ADMXMapped-->
+ADMX Info:  
+-   GP English name: *Allow Cloud Search*
+-   GP name: *AllowCortanaInAAD*
+-   GP element: *AllowCloudSearch_Dropdown*
+-   GP path: *Windows Components/Search*
+-   GP ADMX file name: *Search.admx*
+
+<!--/ADMXMapped-->
+<!--SupportedValues-->
+
+This is a simple boolean value, default false, that can be set by MDM policy to allow the Cortana Page in OOBE when logged in with an AAD account.
 
 <!--/SupportedValues-->
 <!--/Policy-->
