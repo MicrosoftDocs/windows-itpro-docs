@@ -16,7 +16,7 @@ ms.topic: article
 
 # Hard-Link Migration Store
 
-A *hard-link migration store* enables you to perform an in-place migration where all user state is maintained on the computer while the old operating system is removed and the new operating system is installed; this is why it is best suited for the computer-refresh scenario. Use of a hard-link migration store for a computer-refresh scenario drastically improves migration performance and significantly reduces hard-disk utilization, reduces deployment costs and enables entirely new migration scenarios.
+A *hard-link migration store* enables you to perform an in-place migration where all user state is maintained on the computer while the old operating system is removed and the new operating system is installed; this is why it is best suited for the computer-refresh scenario. Use of a hard-link migration store for a computer-refresh scenario drastically improves migration performance and significantly reduces hard-disk utilization, reduces deployment costs, and enables entirely new migration scenarios.
 
 ## In this topic
 
@@ -54,7 +54,7 @@ You cannot use a hard-link migration store if your planned migration includes an
 
 -   You are migrating data from one computer to a second computer.
 
--   You are migrating data from one volume on a computer to another volume, for example from C: to D:.
+-   You are migrating data from one volume on a computer to another volume, for example from `C:` to `D:`.
 
 -   You are formatting or repartitioning the disk outside of Windows Setup, or specifying a disk format or repartition during Windows Setup that will remove the migration store.
 
@@ -67,7 +67,7 @@ When you create a hard link, you give an existing file an additional path. For i
 **Note**  
 A hard link can only be created for a file on the same volume. If you copy a hard-link migration store to another drive or external device, the files, and not the links, are copied, as in a non-compressed migration-store scenario.
 
-For more information about hard links, please see [Hard Links and Junctions](/windows/win32/fileio/hard-links-and-junctions)
+For more information about hard links, see [Hard Links and Junctions](/windows/win32/fileio/hard-links-and-junctions)
 
 In most aspects, a hard-link migration store is identical to an uncompressed migration store. It is located where specified by the Scanstate command-line tool and you can view the contents of the store by using Windows&reg; Explorer. Once created, it can be deleted or copied to another location without changing user state. Restoring a hard-link migration store is similar to restoring any other migration store; however, as with creating the store, the same hard-link functionality is used to keep files in-place.
 
@@ -109,11 +109,11 @@ This section provides details about hard-link migration stores.
 
 ### <a href="" id="bkmk-harddiskspace"></a>Hard Disk Space
 
-The **/hardlink** command-line option proceeds with creating the migration store only if there is 250 megabytes (MB) of free space on the hard disk. Provided that every volume involved in the migration is formatted as NTFS, 250 MB should be enough space to ensure success for almost every hard-link migration, regardless on the size of the migration.
+The **/hardlink** command-line option proceeds with creating the migration store only if there are 250 megabytes (MB) of free space on the hard disk. If every volume involved in the migration is formatted as NTFS, 250 MB should be enough space to ensure success for almost every hard-link migration, regardless on the size of the migration.
 
 ### <a href="" id="bkmk-hardlinkstoresizeest"></a>Hard-Link Store Size Estimation
 
-It is not necessary to estimate the size of a hard-link migration store. Estimating the size of a migration store is only useful in scenarios where the migration store is very large, and on NTFS volumes the hard-link migration store will require much less incremental space than other store options. The only case where the local store can be quite large is when non-NTFS file systems exist on the system and contain data being migrated. Since NTFS has been the default file system format for Windows XP and newer operating systems, this situation is unusual.
+It is not necessary to estimate the size of a hard-link migration store. Estimating the size of a migration store is only useful in scenarios where the migration store is large, and on NTFS volumes the hard-link migration store will require much less incremental space than other store options. The only case where the local store can be large is when non-NTFS file systems exist on the system and contain data being migrated. Since NTFS has been the default file system format for Windows XP and newer operating systems, this situation is unusual.
 
 ### <a href="" id="bkmk-migstoremultvolumes"></a>Migration Store Path on Multiple Volumes
 
@@ -147,7 +147,7 @@ Files that are locked by an application or the operating system are handled diff
 
 Files that are locked by the operating system cannot remain in place and must be copied into the hard-link migration store. As a result, selecting many operating-system files for migration significantly reduces performance during a hard-link migration. As a best practice, we recommend that you do not migrate any files out of the \\Windows directory, which minimizes performance-related issues.
 
-Files that are locked by an application are treated the same in hard-link migrations as in other scenarios when the volume shadow-copy service is not being utilized. The volume shadow-copy service cannot be used in conjunction with hard-link migrations. However, by modifying the new **&lt;HardLinkStoreControl&gt;** section in the Config.xml file, it is possible to enable the migration of files locked by an application.
+Files that are locked by an application are treated the same in hard-link migrations as in other scenarios when the volume shadow-copy service is not being utilized. The volume shadow-copy service cannot be used with hard-link migrations. However, by modifying the new **&lt;HardLinkStoreControl&gt;** section in the Config.xml file, it is possible to enable the migration of files locked by an application.
 
 **Important**  
 There are some scenarios in which modifying the **&lt;HardLinkStoreControl&gt;** section in the Config.xml file makes it more difficult to delete a hard-link migration store. In these scenarios, you must use USMTutils.exe to schedule the migration store for deletion on the next restart.
