@@ -571,7 +571,8 @@ This user right determines which users and groups can change the time and date o
 > Configuring user rights replaces existing users or groups previously assigned those user rights. The system requires that Local Service account (SID S-1-5-19) always has the ChangeSystemTime right. Therefore, Local Service must always be specified in addition to any other accounts being configured in this policy.
 > 
 > Not including the Local Service account will result in failure with the following error:
-> | Error Code  | Symbolic Name | Error Description | Header |
+> 
+> | Error code  | Symbolic name | Error description | Header |
 > |----------|----------|----------|----------|
 > |  0x80070032 (Hex)|ERROR_NOT_SUPPORTED|The request is not supported.|  winerror.h  |
 
