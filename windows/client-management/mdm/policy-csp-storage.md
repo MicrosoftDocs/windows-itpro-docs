@@ -1124,7 +1124,7 @@ Supported values for this policy are:
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP Friendly name: *WPD Devices: Deny write access*
--   GP name: *WPDDevices_DenyWrite_Access_2*
+-   GP name: *WPDDevices_DenyWrite_Access_1*
 -   GP path: *System/Removable Storage Access*
 -   GP ADMX file name: *RemovableStorage.admx*
 
