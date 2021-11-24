@@ -98,6 +98,9 @@ manager: dansimp
     <a href="#system-limitdiagnosticlogcollection">System/LimitDiagnosticLogCollection</a>
   </dd>
   <dd>
+    <a href="#system-limitdumpcollection">System/LimitDumpCollection</a>
+  </dd>
+  <dd>
     <a href="#system-limitenhanceddiagnosticdatawindowsanalytics">System/LimitEnhancedDiagnosticDataWindowsAnalytics</a>
   </dd>
   <dd>
