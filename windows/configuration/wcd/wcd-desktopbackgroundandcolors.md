@@ -19,7 +19,7 @@ Do not use. Instead, use the [Personalization settings](wcd-personalization.md).
 
 ## Applies to
 
-| Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | ✔️  |  |  |  |  |
+| Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings | ✔️  |  |  |  |
 

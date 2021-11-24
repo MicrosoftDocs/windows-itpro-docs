@@ -42,49 +42,30 @@ You can obtain information about the App-V client or perform specific tasks by u
 
 The client management console contains the following described main tabs.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Tab</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Overview</p></td>
-<td align="left"><p>The <strong>Overview</strong> tab contains the following elements:</p>
-<ul>
-<li><p>Update – Use the <strong>Update</strong> tile to refresh a virtualized application or to receive a new virtualized package.</p>
-<p>The <strong>Last Refresh</strong> displays the current version of the virtualized package.</p></li>
-<li><p>Download all virtual applications – Use the <strong>Download</strong> tile to download all of the packages provisioned to the current user.</p>
-<p>(Associated Windows PowerShell cmdlet: <strong>Mount-AppvClientPackage</strong>)</p>
-<p></p></li>
-<li><p>Work Offline – Use this tile to disallow all automatic and manual virtual application updates.</p>
-<p>(Associated Windows PowerShell cmdlet: <strong>Set-AppvPublishServer –UserRefreshEnabled –GlobalRefreshEnabled</strong>)</p></li>
-</ul></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Virtual Apps</p></td>
-<td align="left"><p>The <strong>VIRTUAL APPS</strong> tab displays all of the packages that have been published to the user. You can also click a specific package and see all of the applications that are part of that package. This displays information about packages that are currently in use and how much of each package has been downloaded to the computer. You can also start and stop package downloads. Additionally, you can repair the user state. A repair will delete all user data that is associated with a package.</p>
-<p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>App Connection Groups</p></td>
-<td align="left"><p>The <strong>APP CONNECTION GROUPS</strong> tab displays all of the connection groups that are available to the current user. Click a specific connection group to see all of the packages that are part of the selected group. This displays information about connection groups that are already in use and how much of the connection group contents have been downloaded to the computer. Additionally, you can start and stop connection group downloads. You can use this section to initiate a repair. A repair will remove all of the user state that is associated a connection group.</p>
-<p>(Associated Windows PowerShell cmdlets: Download - <strong>Mount-AppvClientConnectionGroup</strong>. Repair -<strong>AppvClientConnectionGroup</strong>.)</p>
-<p></p></td>
-</tr>
-</tbody>
-</table>
+- **Overview**: The **Overview** tab contains the following elements:
 
+  - **Update**: Refreshes a virtualized application or to receive a new virtualized package.
+  - **Last Refresh**: Displays the current version of the virtualized package.
+  - **Download all virtual applications**: Use the Download tile to download all of the packages provisioned to the current user.
 
+    Associated Windows PowerShell cmdlet: `Mount-AppvClientPackage`
 
+  - **Work Offline**: Disallows all automatic and manual virtual application updates.
 
-<br>For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
+    Associated Windows PowerShell cmdlet: `-AppvPublishServer –UserRefreshEnabled –GlobalRefreshEnabled`
+
+- **VIRTUAL APPS**: Displays all of the packages that have been published to the user.
+
+  You can also click a specific package and see all of the applications that are part of that package. This option displays information about packages that are currently in use and how much of each package has been downloaded to the computer. You can also start and stop package downloads, and repair the user state. A repair will delete all user data that is associated with a package.
+
+- **APP CONNECTION GROUPS**: Displays all of the connection groups that are available to the current user. Click a specific connection group to see all of the packages that are part of the selected group. This displays information about connection groups that are already in use and how much of the connection group contents have been downloaded to the computer. Additionally, you can start and stop connection group downloads. You can use this section to initiate a repair. A repair will remove all of the user state that is associated a connection group.
+
+  Associated Windows PowerShell cmdlets:
+
+  - Download: `Mount-AppvClientConnectionGroup`
+  - Repair: `AppvClientConnectionGroup`
+
+For App-V issues, use the [App-V TechNet Forum](https://social.technet.microsoft.com/Forums/en-US/home?forum=mdopappv).
 
 ## Related topics
 
