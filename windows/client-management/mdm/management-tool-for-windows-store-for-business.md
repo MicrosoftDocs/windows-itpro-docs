@@ -34,26 +34,12 @@ For additional information about Store for Business, see the TechNet topics in [
 
 The Store for Business provides services that enable a management tool to synchronize new and updated applications on behalf of an organization. Once synchronized, you can distribute new and updated applications using the Windows Management framework. The services provides several capabilities including providing application data, the ability to assign and reclaim applications, and the ability to download offline-licensed application packages.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Application data</p></td>
-<td><p>The Store for Business service provides metadata for the applications that have been acquired via the Store for Business. This includes the application identifier that is used to deploy online license applications, artwork for an application that is used to create a company portal, and localized descriptions for applications.</p></td>
-</tr>
-<tr class="even">
-<td><p>Licensing models</p></td>
-<td><p><strong>Offline vs. Online</strong></p>
-<p>Online-licensed applications require connectivity to the Microsoft Store. Users require an Azure Active Directory identity and rely on the store services on the device to be able to acquire an application from the store. It is similar to how applications are acquired from the Microsoft Store using a Microsoft account. Assigning or reclaiming seats for an application require a call to the Store for Business services.</p>
-<p>Offline-licensed applications enable an organization to use the application for imaging and for devices that may not have connectivity to the store or may not have Azure Active Directory. Offline-licensed application do not require connectivity to the store, however it can be updated directly from the store if the device has connectivity and the app update policies allow updates to be distributed via the store.</p></td>
-</tr>
-</tbody>
-</table>
+- **Application data**: The Store for Business service provides metadata for the applications that have been acquired via the Store for Business. This includes the application identifier that is used to deploy online license applications, artwork for an application that is used to create a company portal, and localized descriptions for applications.
 
- 
+- **Licensing models**:
+
+  - **Online-licensed** applications require connectivity to the Microsoft Store. Users require an Azure Active Directory identity and rely on the store services on the device to be able to acquire an application from the store. It is similar to how applications are acquired from the Microsoft Store using a Microsoft account. Assigning or reclaiming seats for an application require a call to the Store for Business services.
+  - **Offline-licensed** applications enable an organization to use the application for imaging and for devices that may not have connectivity to the store or may not have Azure Active Directory. Offline-licensed application do not require connectivity to the store, however it can be updated directly from the store if the device has connectivity and the app update policies allow updates to be distributed via the store.
 
 ### Offline-licensed application distribution
 
@@ -89,12 +75,10 @@ MTS requires calls to be authenticated using an Azure AD OAuth bearer token. The
 
 Here are the details for requesting an authorization token:
 
--   Login Authority = https:<span></span>//login.windows.net/\<TargetTenantId\>
--   Resource/audience\* = https:<span></span>//onestore.microsoft.com
+-   Login Authority = `https://login.windows.net/<TargetTenantId>`
+-   Resource/audience = `https://onestore.microsoft.com`: The token audience URI is meant as an identifier of the application for which the token is being generated, and it is not a URL for a service endpoint or a web-page.
 -   ClientId = your AAD application client id
 -   ClientSecret = your AAD application client secret/key
-
-\* The token audience URI is meant as an identifier of the application for which the token is being generated, and it is not a URL for a service endpoint or a web-page.
 
 ## Using the management tool
 

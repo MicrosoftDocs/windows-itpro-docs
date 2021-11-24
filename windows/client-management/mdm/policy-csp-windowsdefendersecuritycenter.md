@@ -210,7 +210,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting to specify if to display the Account protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Use this policy setting to specify if to display the Account protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -282,7 +282,7 @@ Valid values:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the app and browser protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the app and browser protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -444,7 +444,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the Device security area in the Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the Device security area in the Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
 
 <!--/Description-->
 <!--ADMXMapped-->
@@ -593,7 +593,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the family options area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the family options area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -667,7 +667,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the device performance and health area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the device performance and health area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -741,7 +741,7 @@ The following list shows the supported values:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the firewall and network protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the firewall and network protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -977,7 +977,7 @@ ADMX Info:
 
 <!--/Scope-->
 <!--Description-->
-Use this policy setting if you want to disable the display of the virus and threat protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows defender Security Center will display this area.
+Use this policy setting if you want to disable the display of the virus and threat protection area in Windows Defender Security Center. If you disable or do not configure this setting, Windows Defender Security Center will display this area.
 
 Value type is integer. Supported operations are Add, Get, Replace and Delete.
 
@@ -1733,4 +1733,3 @@ ADMX Info:
 <hr/>
 
 <!--/Policies-->
-

@@ -14,17 +14,16 @@ ms.date: 06/26/2017
 
 # NAP CSP
 
-
 The NAP (Network Access Point) Configuration Service Provider is used to manage and query GPRS and CDMA connections.
 
-> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
-
- 
+> [!Note]
+> This configuration service provider requires the `ID_CAP_CSP_FOUNDATION` and `ID_CAP_NETWORKING_ADMIN` capabilities to be accessed from a network configuration application.
 
 For the NAP CSP, you cannot use the Replace command unless the node already exists.
 
 The following shows the NAP configuration service provider management object in tree format as used by OMA DM. The OMA Client Provisioning protocol is not supported by this configuration service provider.
-```
+
+```console
 ./Vendor/MSFT
 NAP
 ----*
@@ -61,6 +60,7 @@ NAP
 ----------------Secure
 ----------------SecureLevel
 ```
+
 <a href="" id="--vendor-msft-nap"></a>**./Vendor/MSFT/NAP**  
 Root node.
 
@@ -87,34 +87,11 @@ Required. Specifies the type of address used to identify the destination network
 
 The following table shows some commonly used ADDRTYPE values and the types of connection that corresponds with each value.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>ADDRTYPE Value</th>
-<th>Connection Type</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>E164</p></td>
-<td><p>RAS connections</p></td>
-</tr>
-<tr class="even">
-<td><p>APN</p></td>
-<td><p>GPRS connections</p></td>
-</tr>
-<tr class="odd">
-<td><p>ALPHA</p></td>
-<td><p>Wi-Fi-based connections</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|ADDRTYPE Value|Connection Type|
+|--- |--- |
+|E164|RAS connections|
+|APN|GPRS connections|
+|ALPHA|Wi-Fi-based connections|
 
 <a href="" id="napx-authinfo"></a>***NAPX*/AuthInfo**  
 Optional node. Specifies the authentication information, including the protocol, user name, and password.
@@ -136,17 +113,7 @@ Node.
 <a href="" id="napx-bearer-bearertype"></a>***NAPX*/Bearer/BearerType**  
 Required. Specifies the network type of the destination network. This can be set to GPRS, CDMA2000, WCDMA, TDMA, CSD, DTPT, WiFi.
 
-## Related topics
-
+## Related articles
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
  
-
- 
-
-
-
-
-
-

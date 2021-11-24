@@ -1075,7 +1075,7 @@ This article lists new and updated articles for the Mobile Device Management (MD
 <li>Defender/EnableGuardMyFolders to Defender/EnableControlledFolderAccess</li>
 </ul>
 <p>Added links to the additional <a href="policy-csp-bitlocker.md" data-raw-source="[ADMX-backed BitLocker policies](policy-csp-bitlocker.md)">ADMX-backed BitLocker policies</a>.</p>
-<p>There were issues reported with the previous release of the following policies. These issues were fixed in Window 10, version 1709:</p>
+<p>There were issues reported with the previous release of the following policies. These issues were fixed in Windows 10, version 1709:</p>
 <ul>
 <li>Privacy/AllowAutoAcceptPairingAndPrivacyConsentPrompts</li>
 <li>Start/HideAppList</li>

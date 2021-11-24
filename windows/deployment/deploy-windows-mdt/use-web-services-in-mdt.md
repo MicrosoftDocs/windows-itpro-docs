@@ -1,12 +1,12 @@
 ---
-title: Use web services in MDT (Windows 11)
-description: Learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 11 deployment.
+title: Use web services in MDT (Windows 10)
+description: Learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 10 deployment.
 ms.assetid: 8f47535e-0551-4ccb-8f02-bb97539c6522
 ms.reviewer: 
 manager: dougeby
 ms.author: greglin
 keywords: deploy, web apps
-ms.prod: w11
+ms.prod: w10
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
 ms.pagetype: mdt
@@ -17,10 +17,6 @@ ms.topic: article
 ---
 
 # Use web services in MDT
-
-**Applies to**
-- Windows 10
-- Windows 11
 
 In this topic, you will learn how to create a simple web service that generates computer names and then configure MDT to use that service during your Windows 10 deployment. Web services provide a powerful way to assign settings during a deployment. Simply put, web services are web applications that run code on the server side, and MDT has built-in functions to call these web services.
 Using a web service in MDT is straightforward, but it does require that you have enabled the Web Server (IIS) role on the server. Developing web services involves a little bit of coding, but for most web services used with MDT, you can use the free Microsoft Visual Studio Express 2013 for Web.
