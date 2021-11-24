@@ -14,8 +14,7 @@ author: dansimp
 
 # Mobile device management
 
-
-Windows 10 and Windows 11 provides an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users’ privacy on their personal devices. A built-in management component can communicate with the management server.
+Windows 10 and Windows 11 provides an enterprise management solution to help IT pros manage company security policies and business applications, while avoiding compromise of the users' privacy on their personal devices. A built-in management component can communicate with the management server.
 
 There are two parts to the Windows management component:
 
@@ -26,19 +25,18 @@ Third-party MDM servers can manage Windows 10 by using the MDM protocol. The bu
 
 ## MDM security baseline
 
-With Windows 10, version 1809, Microsoft is also releasing a Microsoft MDM security baseline that functions like the Microsoft GP-based security baseline. You can easily integrate this baseline into any MDM to support IT pros’ operational needs, addressing security concerns for modern cloud-managed devices.
-
+With Windows 10, version 1809, Microsoft is also releasing a Microsoft MDM security baseline that functions like the Microsoft GP-based security baseline. You can easily integrate this baseline into any MDM to support IT pros' operational needs, addressing security concerns for modern cloud-managed devices.
 
 The MDM security baseline includes policies that cover the following areas:
 
-- Microsoft inbox security technology (not deprecated) such as BitLocker, Windows Defender SmartScreen, and DeviceGuard (virtual-based security), ExploitGuard, Defender, and Firewall
+- Microsoft inbox security technology (not deprecated) such as BitLocker, Windows Defender SmartScreen, and Device Guard (virtual-based security), Exploit Guard, Microsoft Defender Antivirus, and Firewall
 - Restricting remote access to devices
 - Setting credential requirements for passwords and PINs
 - Restricting use of legacy technology
 - Legacy technology policies that offer alternative solutions with modern technology
 - And much more
 
-For more details about the MDM policies defined in the MDM security baseline and what Microsoft’s recommended baseline policy values are, see:
+For more details about the MDM policies defined in the MDM security baseline and what Microsoft's recommended baseline policy values are, see:
 
 - [MDM Security baseline for Windows 11](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/Windows11-MDM-SecurityBaseLine-Document.zip)
 - [MDM Security baseline for Windows 10, version 2004](https://download.microsoft.com/download/2/C/4/2C418EC7-31E0-4A74-8928-6DCD512F9A46/2004-MDM-SecurityBaseLine-Document.zip)
@@ -83,6 +81,3 @@ When an organization wants to move to MDM to manage devices, they should prepare
 -   [WMI providers supported in Windows 10](wmi-providers-supported-in-windows.md)
 -   [Using PowerShell scripting with the WMI Bridge Provider](using-powershell-scripting-with-the-wmi-bridge-provider.md)
 -   [MDM Bridge WMI Provider](/windows/win32/dmwmibridgeprov/mdm-bridge-wmi-provider-portal)
-
- 
-

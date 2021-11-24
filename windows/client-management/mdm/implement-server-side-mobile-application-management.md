@@ -18,11 +18,11 @@ The Windows version of mobile application management (MAM) is a lightweight solu
 
 ## Integration with Azure AD
 
-MAM on Windows is integrated with Azure Active Directory (Azure AD) identity service. The MAM service supports Azure AD integrated authentication for the user and the device during enrollment and the downloading of MAM policies. MAM integration with Azure AD is similar to mobile device management (MDM) integration. See [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md).  
+MAM on Windows is integrated with Azure Active Directory (Azure AD) identity service. The MAM service supports Azure AD-integrated authentication for the user and the device during enrollment and the downloading of MAM policies. MAM integration with Azure AD is similar to mobile device management (MDM) integration. See [Azure Active Directory integration with MDM](azure-active-directory-integration-with-mdm.md).  
 
-MAM enrollment is integrated with adding a work account flow to a personal device. If both MAM and Azure AD integrated MDM services are provided in an organization, a users’ personal devices will be enrolled to MAM or MDM, depending on the user’s actions. If a user adds their work or school Azure AD account as a secondary account to the machine, their device will be enrolled to MAM. If a user joins their device to Azure AD, it will be enrolled to MDM.  In general, a device that has a personal account as its primary account is considered a personal device and should be enrolled to MAM. An Azure AD join, and enrollment to MDM, should be used to manage corporate devices.  
+MAM enrollment is integrated with adding a work account flow to a personal device. If both MAM and Azure AD-integrated MDM services are provided in an organization, a users’ personal devices will be enrolled to MAM or MDM, depending on the user’s actions. If a user adds their work or school Azure AD account as a secondary account to the machine, their device will be enrolled to MAM. If a user joins their device to Azure AD, it will be enrolled to MDM.  In general, a device that has a personal account as its primary account is considered a personal device and should be enrolled to MAM. An Azure AD join, and enrollment to MDM, should be used to manage corporate devices.  
 
-On personal devices, users can add an Azure AD account as a secondary account to the device while keeping their personal account as primary. Users can add an Azure AD account to the device from a supported Azure AD integrated application, such as the next update of Microsoft Office 365 or Microsoft Office Mobile. Alternatively, users can add an Azure AD account from **Settings > Accounts > Access work or school**.  
+On personal devices, users can add an Azure AD account as a secondary account to the device while keeping their personal account as primary. Users can add an Azure AD account to the device from a supported Azure AD-integrated application, such as the next update of Microsoft Office 365 or Microsoft Office Mobile. Alternatively, users can add an Azure AD account from **Settings > Accounts > Access work or school**.  
 
 Regular non-admin users can enroll to MAM.  
 
@@ -44,7 +44,7 @@ To make applications WIP-aware, app developers need to include the following dat
 
 MAM enrollment requires integration with Azure AD. The MAM service provider needs to publish the Management MDM app to the Azure AD app gallery. Starting with Azure AD in Windows 10, version 1703, the same cloud-based Management MDM app will support both MDM and MAM enrollments. If you have already published your MDM app, it needs to be updated to include MAM Enrollment and Terms of use URLs. The screenshot below illustrates the management app for an IT admin configuration.  
 
-![Mobile application management app.](images/implement-server-side-mobile-application-management.png)
+:::image type="content" alt-text="Mobile application management app." source="images/implement-server-side-mobile-application-management.png":::
 
 MAM and MDM services in an organization could be provided by different vendors. Depending on the company configuration, IT admin typically needs to add one or two Azure AD Management apps to configure MAM and MDM policies. For example, if both MAM and MDM are provided by the same vendor, then an IT Admin needs to add one Management app from this vendor that will contain both MAM and MDM policies for the organization. Alternatively, if the MAM and MDM services in an organization are provided by two different vendors, then two Management apps from the two vendors need to be configured for the company in Azure AD: one for MAM and one for MDM. Please note: if the MDM service in an organization is not integrated with Azure AD and uses auto-discovery, only one Management app for MAM needs to be configured.  
 
@@ -129,40 +129,8 @@ If the MAM device is properly configured for MDM enrollment, then the Enroll onl
 
 We have updated Skype for Business to work with MAM. The following table explains Office release channels and release dates for Skype for Business compliance with the MAM feature.
 
-<table>
-<colgroup>
-<col width="15%" />
-<col width="35%" />
-<col width="15%" />
-<col width="35%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Update channel</th>
-<th>Primary purpose</th>
-<th>LOB Tattoo availability</th>
-<th>Default update channel for the products</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="/deployoffice/overview-update-channels#BKMK_CB" data-raw-source="[Current channel](/deployoffice/overview-update-channels#BKMK_CB)">Current channel</a></td>
-<td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
-<td>March 9 2017</td>
-<td><p>Visio Pro for Office 365</p>
-<p>Project Desktop Client</p>
-<p>Microsoft 365 Apps for business (the version of Office that comes with some Microsoft 365 plans, such as Business Premium.)</p></td>
-</tr>
-<tr>
-<td><a href="/deployoffice/overview-update-channels#BKMK_CBB" data-raw-source="[Deferred channel](/deployoffice/overview-update-channels#BKMK_CBB)">Deferred channel</a></td>
-<td>Provide users with new features of Office only a few times a year.</td>
-<td>October 10 2017</td>
-<td>Microsoft 365 Apps for enterprise</td>
-</tr><tr>
-<td><a href="/deployoffice/overview-update-channels#BKMK_FRCBB" data-raw-source="[First release for deferred channel](/deployoffice/overview-update-channels#BKMK_FRCBB)">First release for Deferred channel</a></td>
-<td>Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel. </td>
-<td>June 13 2017</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+|Update channel|Primary purpose|LOB Tattoo availability|Default update channel for the products|
+|--- |--- |--- |--- |
+|[Current channel](/deployoffice/overview-update-channels#BKMK_CB)|Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel.|March 9 2017|Visio Pro for Office 365<br>Project Desktop Client<br>Microsoft 365 Apps for business (the version of Office that comes with some Microsoft 365 plans, such as Business Premium.)|
+|[Deferred channel](/deployoffice/overview-update-channels#BKMK_CBB)|Provide users with new features of Office only a few times a year.|October 10 2017|Microsoft 365 Apps for enterprise|
+|[First release for deferred channel](/deployoffice/overview-update-channels#BKMK_FRCBB)|Provide pilot users and application compatibility testers the opportunity to test the next Deferred Channel.|June 13 2017||

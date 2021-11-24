@@ -148,7 +148,7 @@ The following are the explicit requirements for the server.
 
 -   The &lt;DiscoveryResponse&gt;&lt;AuthenticationServiceUrl&gt; element must support HTTPS.
 -   The authentication server must use a device trusted root certificate. Otherwise, the WAP call will fail.
--   WP doesn’t support Window Integrated Authentication (WIA) for ADFS during WAB authentication. ADFS 2012 R2 if used needs to be configured to not attempt WIA for Windows device.
+-   WP doesn’t support Windows Integrated Authentication (WIA) for ADFS during WAB authentication. ADFS 2012 R2 if used needs to be configured to not attempt WIA for Windows device.
 
 The enrollment client issues an HTTPS request as follows:
 
