@@ -9,6 +9,7 @@ ms.localizationpriority: medium
 ms.author: delhan
 ms.reviewer: dcscontentpm
 manager: dansimp
+ms.collection: highpri
 ---
 
 # Introduction to page files

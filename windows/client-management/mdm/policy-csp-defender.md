@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.date: 01/08/2020
 ms.reviewer: 
 manager: dansimp
+ms.collection: highpri
 ---
 
 # Policy CSP - Defender
