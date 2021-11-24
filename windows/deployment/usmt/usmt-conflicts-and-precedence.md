@@ -16,7 +16,6 @@ ms.topic: article
 
 # Conflicts and Precedence
 
-
 When you include, exclude, and reroute files and settings, it is important to know how User State Migration Tool (USMT) 10.0 deals with conflicts and precedence. When working with USMT, the following are the most important conflicts and precedence guidelines to keep in mind.
 
 -   **If there are conflicting rules within a component, the most specific rule is applied.** However, the &lt;unconditionalExclude&gt; rule is an exception because it takes precedence over all others. Directory names take precedence over file extensions. For examples, see [What happens when there are conflicting include and exclude rules?](#bkmk1) and the first example in [Include and exclude precedence examples](#precexamples)****later in this topic.
@@ -32,7 +31,6 @@ When you include, exclude, and reroute files and settings, it is important to kn
 -   **You can use the &lt;unconditionalExclude&gt; element to globally exclude data.** This element excludes objects, regardless of any other &lt;include&gt; rules that are in the .xml files. For example, you can use the &lt;unconditionalExclude&gt; element to exclude all MP3 files on the computer or to exclude all files from C:\\UserData.
 
 ## In this topic
-
 
 **General**
 
@@ -59,7 +57,6 @@ When you include, exclude, and reroute files and settings, it is important to kn
 -   [How does the &lt;merge&gt; rule work when there are file collisions?](#bkmk11)
 
 ## General
-
 
 ### <a href="" id="bkmk2"></a>What is the relationship between rules that are located within different components?
 
@@ -129,7 +126,6 @@ USMT does not distinguish the .xml files based on their name or content. It proc
 
 ## <a href="" id="the--include--and--exclude--rules"></a>The &lt;include&gt; and &lt;exclude&gt; rules
 
-
 ### <a href="" id="bkmk1"></a>What happens when there are conflicting &lt;include&gt; and &lt;exclude&gt; rules?
 
 If there are conflicting rules within a component, the most specific rule is applied, except with the &lt;unconditionalExclude&gt; rule, which takes precedence over all other rules. If the rules are equally specific, then the data will be not be migrated. For example if you exclude a file, and include the same file, the file will not be migrated. If there are conflicting rules within different components, the rules do not affect each other because each component is processed independently.
@@ -159,211 +155,34 @@ These examples explain how USMT deals with &lt;include&gt; and &lt;exclude&gt; r
 
 ### <a href="" id="filesex"></a>Including and excluding files
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">If you have the following code in the same component</th>
-<th align="left">Resulting behavior</th>
-<th align="left">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* [<em>]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:* [</em>.txt]&lt;/pattern&gt;</p></li>
-</ul></td>
-<td align="left"><p>Migrates all files and subfolders in Dir1 (including all .txt files in C:).</p></td>
-<td align="left"><p>The &lt;exclude&gt; rule does not affect the migration because the &lt;include&gt; rule is more specific.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* [<em>]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [</em>.txt]&lt;/pattern&gt;</p></li>
-</ul></td>
-<td align="left"><p>Migrates all files and subfolders in C:\Dir1, except the .txt files in C:\Dir1\Dir2 and its subfolders.</p></td>
-<td align="left"><p>Both rules are processed as intended.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* [<em>]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\ * [</em>.txt]&lt;/pattern&gt;</p></li>
-</ul></td>
-<td align="left"><p>Migrates all files and subfolders in C:\Dir1, except the .txt files in C:\Dir1 and its subfolders.</p></td>
-<td align="left"><p>Both rules are processed as intended.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [<em>.txt]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [</em>.txt]&lt;/pattern&gt;</p></li>
-</ul></td>
-<td align="left"><p>Nothing will be migrated.</p></td>
-<td align="left"><p>The rules are equally specific, so the &lt;exclude&gt; rule takes precedence over the &lt;include&gt; rule.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><ul>
-<li><p>Include rule: C:\Dir1* [<em>.txt]</p></li>
-<li><p>Exclude rule: C:\Dir1\Dir2* [</em>]</p></li>
-</ul></td>
-<td align="left"><p>Migrates the .txt files in Dir1 and the .txt files from subfolders other than Dir2.</p>
-<p>No files are migrated from Dir2 or its subfolders.</p></td>
-<td align="left"><p>Both rules are processed as intended.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><ul>
-<li><p>Include rule: C:\Dir1\Dir2* [<em>]</p></li>
-<li><p>Exclude rule: C:\Dir1* [</em>.txt]</p></li>
-</ul></td>
-<td align="left"><p>Migrates all files and subfolders of Dir2, except the .txt files from Dir1 and any subfolders of Dir1 (including Dir2).</p></td>
-<td align="left"><p>Both rules are processed as intended.</p></td>
-</tr>
-</tbody>
-</table>
+| If you have the following code in the same component | Resulting behavior | Explanation |
+|-----|-----|-----|
+| <ul><li>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* []&lt;/pattern&gt;</li><li>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:* [.txt]&lt;/pattern&gt;</li></ul> | Migrates all files and subfolders in Dir1 (including all .txt files in C:). | The &lt;exclude&gt; rule does not affect the migration because the &lt;include&gt; rule is more specific. |
+| <ul><li>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* []&lt;/pattern&gt;</li><li>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [.txt]&lt;/pattern&gt;</li></ul> | Migrates all files and subfolders in C:\Dir1, except the .txt files in C:\Dir1\Dir2 and its subfolders. | Both rules are processed as intended. |
+| <ul><li>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* []&lt;/pattern&gt;</li><li>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\ * [.txt]&lt;/pattern&gt;</li></ul> | Migrates all files and subfolders in C:\Dir1, except the .txt files in C:\Dir1 and its subfolders. | Both rules are processed as intended. |
+| <ul><li>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [.txt]&lt;/pattern&gt;</li><li>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [.txt]&lt;/pattern&gt;</li></ul> | Nothing will be migrated. | The rules are equally specific, so the &lt;exclude&gt; rule takes precedence over the &lt;include&gt; rule. |
+| <ul><li>Include rule: C:\Dir1* [.txt]</li><li>Exclude rule: C:\Dir1\Dir2* []</li></ul> | Migrates the .txt files in Dir1 and the .txt files from subfolders other than Dir2. <br/>No files are migrated from Dir2 or its subfolders. | Both rules are processed as intended. |
+| <ul><li>Include rule: C:\Dir1\Dir2* []</li><li>Exclude rule: C:\Dir1* [.txt]</li></ul> | Migrates all files and subfolders of Dir2, except the .txt files from Dir1 and any subfolders of Dir1 (including Dir2). | Both rules are processed as intended. |
 
- 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">If you have the following code in different components</th>
-<th align="left">Resulting behavior</th>
-<th align="left">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Component 1:</p>
-<ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* [<em>]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [</em>.txt]&lt;/pattern&gt;</p></li>
-</ul>
-<p>Component 2:</p>
-<ul>
-<li><p>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [<em>.txt]&lt;/pattern&gt;</p></li>
-<li><p>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* [</em>]&lt;/pattern&gt;</p></li>
-</ul></td>
-<td align="left"><p>Migrates all files and subfolders of C:\Dir1\ (including C:\Dir1\Dir2).</p></td>
-<td align="left"><p>Rules that are in different components do not affect each other, except for the &lt;unconditionalExclude&gt; rule. Therefore, in this example, although some .txt files were excluded when Component 1 was processed, they were included when Component 2 was processed.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Component 1:</p>
-<ul>
-<li><p>Include rule: C:\Dir1\Dir2* [<em>]</p></li>
-</ul>
-<p>Component 2:</p>
-<ul>
-<li><p>Exclude rule: C:\Dir1* [</em>.txt]</p></li>
-</ul></td>
-<td align="left"><p>Migrates all files and subfolders from Dir2 except the .txt files in C:\Dir1 and its subfolders.</p></td>
-<td align="left"><p>Both rules are processed as intended.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Component 1:</p>
-<ul>
-<li><p>Exclude rule: C:\Dir1\Dir2* [<em>]</p></li>
-</ul>
-<p>Component 2:</p>
-<ul>
-<li><p>Include rule: C:\Dir1* [</em>.txt]</p></li>
-</ul></td>
-<td align="left"><p>Migrates all .txt files in Dir1 and any subfolders.</p></td>
-<td align="left"><p>Component 1 does not contain an &lt;include&gt; rule, so the &lt;exclude&gt; rule is not processed.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| If you have the following code in different components | Resulting behavior | Explanation |
+|-----|----|----|
+| Component 1:<ul><li>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* []&lt;/pattern&gt;</li><li>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [.txt]&lt;/pattern&gt;</li></ul> <br/>Component 2:<ul><li>Include rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1\Dir2* [.txt]&lt;/pattern&gt;</li><li>Exclude rule: &lt;pattern type=&quot;File&quot;&gt;C:\Dir1* []&lt;/pattern&gt;</li></ul> | Migrates all files and subfolders of C:\Dir1\ (including C:\Dir1\Dir2). | Rules that are in different components do not affect each other, except for the &lt;unconditionalExclude&gt; rule. Therefore, in this example, although some .txt files were excluded when Component 1 was processed, they were included when Component 2 was processed. |
+| Component 1:<ul><li>Include rule: C:\Dir1\Dir2* []</li></ul> <br/>Component 2:<ul><li>Exclude rule: C:\Dir1* [.txt]</li></ul> | Migrates all files and subfolders from Dir2 except the .txt files in C:\Dir1 and its subfolders. | Both rules are processed as intended. |
+| Component 1:<ul><li>Exclude rule: C:\Dir1\Dir2* []</li></ul> <br/>Component 2:<ul><li>Include rule: C:\Dir1* [.txt]</li></ul> | Migrates all .txt files in Dir1 and any subfolders. | Component 1 does not contain an &lt;include&gt; rule, so the &lt;exclude&gt; rule is not processed. |
 
 ### <a href="" id="regex"></a>Including and excluding registry objects
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">If you have the following code in the same component</th>
-<th align="left">Resulting behavior</th>
-<th align="left">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><ul>
-<li><p>Include rule: HKLM\Software\Microsoft\Command Processor* [<em>]</p></li>
-<li><p>Exclude Rule: HKLM\Software\Microsoft\Command Processor [DefaultColor]</p></li>
-</ul></td>
-<td align="left"><p>Migrates all keys in HKLM\Software\Microsoft\Command Processor except DefaultColor.</p></td>
-<td align="left"><p>Both rules are processed as intended.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><ul>
-<li><p>Include rule: HKLM\Software\Microsoft\Command Processor [DefaultColor]</p></li>
-<li><p>Exclude Rule: HKLM\Software\Microsoft\Command Processor* [</em>]</p></li>
-</ul></td>
-<td align="left"><p>Migrates only DefaultColor in HKLM\Software\Microsoft\Command Processor.</p></td>
-<td align="left"><p>DefaultColor is migrated because the &lt;include&gt; rule is more specific than the &lt;exclude&gt; rule.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><ul>
-<li><p>Include rule: HKLM\Software\Microsoft\Command Processor [DefaultColor]</p></li>
-<li><p>Exclude rule: HKLM\Software\Microsoft\Command Processor [DefaultColor]</p></li>
-</ul></td>
-<td align="left"><p>Does not migrate DefaultColor.</p></td>
-<td align="left"><p>The rules are equally specific, so the &lt;exclude&gt; rule takes precedence over the &lt;include&gt; rule.</p></td>
-</tr>
-</tbody>
-</table>
+| If you have the following code in the same component | Resulting behavior | Explanation |
+|-----|-----|-----|
+| <ul><li>Include rule: <br/>HKLM\Software\Microsoft\Command Processor* []</li><li>Exclude Rule: <br/>HKLM\Software\Microsoft\Command Processor [DefaultColor]</li></ul> | Migrates all keys in HKLM\Software\Microsoft\Command Processor except DefaultColor. | Both rules are processed as intended. |
+| <ul><li>Include rule: <br/>HKLM\Software\Microsoft\Command Processor [DefaultColor]</li><li>Exclude Rule: <br/>HKLM\Software\Microsoft\Command Processor* []</li></ul> | Migrates only DefaultColor in HKLM\Software\Microsoft\Command Processor. | DefaultColor is migrated because the &lt;include&gt; rule is more specific than the &lt;exclude&gt; rule. |
+| <ul><li>Include rule: <br/>HKLM\Software\Microsoft\Command Processor [DefaultColor]</li><li>Exclude rule: <br/>HKLM\Software\Microsoft\Command Processor [DefaultColor]</li></ul> | Does not migrate DefaultColor. | The rules are equally specific, so the &lt;exclude&gt; rule takes precedence over the &lt;include&gt; rule. |
 
- 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">If you have the following code in different components</th>
-<th align="left">Resulting behavior</th>
-<th align="left">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Component 1:</p>
-<ul>
-<li><p>Include rule: HKLM\Software\Microsoft\Command Processor [DefaultColor]</p></li>
-<li><p>Exclude rule: HKLM\Software\Microsoft\Command Processor* [<em>]</p></li>
-</ul>
-<p>Component 2:</p>
-<ul>
-<li><p>Include rule: HKLM\Software\Microsoft\Command Processor* [</em>]</p></li>
-<li><p>Exclude rule: HKLM\Software\Microsoft\Command Processor [DefaultColor]</p></li>
-</ul></td>
-<td align="left"><p>Migrates all the keys/values under HKLM\Software\Microsoft\Command Processor.</p></td>
-<td align="left"><p>Rules that are in different components do not affect each other, except for the &lt;unconditionalExclude&gt; rule. Therefore, in this example, the objects that were excluded when Component 1 was processed were included when Component 2 was processed.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| If you have the following code in different components | Resulting behavior | Explanation |
+|-----|-----|-----|
+| Component 1:<ul><li>Include rule: <br/>HKLM\Software\Microsoft\Command Processor [DefaultColor]</li><li>Exclude rule: <br/>HKLM\Software\Microsoft\Command Processor* []</li></ul> <br/>Component 2:<ul><li>Include rule: <br/>HKLM\Software\Microsoft\Command Processor* []</li><li>Exclude rule: <br/>HKLM\Software\Microsoft\Command Processor [DefaultColor]</li></ul> | Migrates all the keys/values under HKLM\Software\Microsoft\Command Processor. | Rules that are in different components do not affect each other, except for the &lt;unconditionalExclude&gt; rule. Therefore, in this example, the objects that were excluded when Component 1 was processed were included when Component 2 was processed. |
 
 ## File collisions
-
 
 ### <a href="" id="collisions"></a>What is the default behavior when there are file collisions?
 
@@ -401,65 +220,12 @@ You have a custom .xml file that contains the following code:
 
 For this example, the following table describes the resulting behavior if you add the code in the first column to your custom .xml file.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">If you specify the following code</th>
-<th align="left">Resulting behavior</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.DestinationPriority()&quot;&gt; 
-   &lt;objectSet&gt; 
-      &lt;pattern type=&quot;File&quot;&gt;c:\data* [<em>]&lt;/pattern&gt; 
-   &lt;/objectSet&gt; 
-&lt;/merge&gt;</code></pre></td>
-<td align="left"><p>During ScanState, all the files will be added to the store.</p>
-<p>During LoadState, only C:\Data\SampleA.txt will be restored.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; 
-   &lt;objectSet&gt; 
-      &lt;pattern type=&quot;File&quot;&gt;c:\data* [</em>]&lt;/pattern&gt; 
-   &lt;/objectSet&gt; 
-&lt;/merge&gt; </code></pre></td>
-<td align="left"><p>During ScanState, all the files will be added to the store.</p>
-<p>During LoadState, all the files will be restored, overwriting the existing files on the destination computer.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; 
-   &lt;objectSet&gt; 
-      &lt;pattern type=&quot;File&quot;&gt;c:\data\ [*]&lt;/pattern&gt; 
-   &lt;/objectSet&gt; 
-&lt;/merge&gt; </code></pre></td>
-<td align="left"><p>During ScanState, all the files will be added to the store.</p>
-<p>During LoadState, the following will occur:</p>
-<ul>
-<li><p>C:\Data\SampleA.txt will be restored.</p></li>
-<li><p>C:\Data\SampleB.txt will be restored, overwriting the existing file on the destination computer.</p></li>
-<li><p>C:\Data\Folder\SampleB.txt will not be restored.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
-
- 
+| If you specify the following code | Resulting behavior |
+|-----|-----|
+| <pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.DestinationPriority()&quot;&gt; <br/>   &lt;objectSet&gt; <br/>      &lt;pattern type=&quot;File&quot;&gt;c:\data* []&lt;/pattern&gt; <br/>   &lt;/objectSet&gt; <br/>&lt;/merge&gt;</code></pre> | During ScanState, all the files will be added to the store. <br/>During LoadState, only C:\Data\SampleA.txt will be restored. |
+| <pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; <br/>   &lt;objectSet&gt; <br/>      &lt;pattern type=&quot;File&quot;&gt;c:\data* []&lt;/pattern&gt; <br/>   &lt;/objectSet&gt; <br/>&lt;/merge&gt; </code></pre> | During ScanState, all the files will be added to the store. <br/>During LoadState, all the files will be restored, overwriting the existing files on the destination computer. |
+| <pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; <br/>   &lt;objectSet&gt; <br/>      &lt;pattern type=&quot;File&quot;&gt;c:\data\ [*]&lt;/pattern&gt; <br/>   &lt;/objectSet&gt; <br/>&lt;/merge&gt; </code></pre> | During ScanState, all the files will be added to the store. <br/>During LoadState, the following will occur:<ul><li>C:\Data\SampleA.txt will be restored.</li><li>C:\Data\SampleB.txt will be restored, overwriting the existing file on the destination computer.</li><li>C:\Data\Folder\SampleB.txt will not be restored.</li></ul> | 
 
 ## Related topics
 
-
 [USMT XML Reference](usmt-xml-reference.md)
-
- 
-
- 
-
-
-
-
-

@@ -15,14 +15,10 @@ ms.topic: article
 
 # Custom XML Examples
 
-
 **Note**  
 Because the tables in this topic are wide, you may need to adjust the width of its window.
 
- 
-
 ## In This Topic:
-
 
 -   [Example 1: Migrating an Unsupported Application](#example)
 
@@ -33,7 +29,6 @@ Because the tables in this topic are wide, you may need to adjust the width of i
 -   [Example 4: Migrating Specific Folders from Various Locations](#example4)
 
 ## <a href="" id="example"></a>Example 1: Migrating an Unsupported Application
-
 
 The following is a template for the sections that you need to migrate your application. The template is not functional on its own, but you can use it to write your own .xml file.
 
@@ -103,37 +98,13 @@ The following is a template for the sections that you need to migrate your appli
 
 ## <a href="" id="example2"></a>Example 2: Migrating the My Videos Folder
 
-
 The following is a custom .xml file named CustomFile.xml that migrates My Videos for all users, if the folder exists on the source computer.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Code</th>
-<th align="left">Behavior</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><pre class="syntax"><code>&lt;condition&gt;MigXmlHelper.DoesObjectExist(&quot;File&quot;,&quot;%CSIDL_MYVIDEO%&quot;)&lt;/condition&gt;</code></pre></td>
-<td align="left"><p>Verifies that My Videos exists on the source computer.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><pre class="syntax"><code>&lt;include filter=&#39;MigXmlHelper.IgnoreIrrelevantLinks()&#39;&gt;</code></pre></td>
-<td align="left"><p>Filters out the shortcuts in My Videos that do not resolve on the destination computer. This has no effect on files that are not shortcuts. For example, if there is a shortcut in My Videos on the source computer that points to C:\Folder1, that shortcut will be migrated only if C:\Folder1 exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;%CSIDL_MYVIDEO%* [*]&lt;/pattern&gt;</code></pre></td>
-<td align="left"><p>Migrates My Videos for all users.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Code | Behavior |
+|------|----------|
+| <pre class="syntax"><code>&lt;condition&gt;MigXmlHelper.DoesObjectExist(&quot;File&quot;,&quot;%CSIDL_MYVIDEO%&quot;)&lt;/condition&gt;</code></pre> | Verifies that My Videos exists on the source computer. |
+| <pre class="syntax"><code>&lt;include filter=&#39;MigXmlHelper.IgnoreIrrelevantLinks()&#39;&gt;</code></pre> | Filters out the shortcuts in My Videos that do not resolve on the destination computer. This has no effect on files that are not shortcuts. For example, if there is a shortcut in My Videos on the source computer that points to C:\Folder1, that shortcut will be migrated only if C:\Folder1 exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering. |
+| <pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;%CSIDL_MYVIDEO%* [*]&lt;/pattern&gt;</code></pre> | Migrates My Videos for all users. |
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -160,41 +131,14 @@ The following is a custom .xml file named CustomFile.xml that migrates My Videos
 
 ## <a href="" id="example3"></a>Example 3: Migrating Files and Registry Keys
 
-
 This table describes the behavior in the following example .xml file.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Code</th>
-<th align="left">Behavior</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;%ProgramFiles%\USMTTestFolder* [USMTTestFile.txt]&lt;/pattern&gt;</code></pre></td>
-<td align="left"><p>Migrates all instances of the file Usmttestfile.txt from all sub-directories under %ProgramFiles%\USMTTestFolder.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;%ProgramFiles%\USMTDIRTestFolder* [<em>]&lt;/pattern&gt;</code></pre></td>
-<td align="left"><p>Migrates the whole directory under %ProgramFiles%\USMTDIRTestFolder.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><pre class="syntax"><code>&lt;pattern type=&quot;Registry&quot;&gt;HKCU\Software\USMTTESTKEY* [MyKey]&lt;/pattern&gt;</code></pre></td>
-<td align="left"><p>Migrates all instances of MyKey under HKCU\Software\USMTTESTKEY.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><pre class="syntax"><code>&lt;pattern type=&quot;Registry&quot;&gt;HKLM\Software\USMTTESTKEY* [</em>]&lt;/pattern&gt;</code></pre></td>
-<td align="left"><p>Migrates the entire registry hive under HKLM\Software\USMTTESTKEY.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Code | Behavior |
+|------|----------|
+| <pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;%ProgramFiles%\USMTTestFolder* [USMTTestFile.txt]&lt;/pattern&gt;</code></pre> | Migrates all instances of the file Usmttestfile.txt from all sub-directories under %ProgramFiles%\USMTTestFolder. |
+| <pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;%ProgramFiles%\USMTDIRTestFolder* []&lt;/pattern&gt;</code></pre> | Migrates the whole directory under %ProgramFiles%\USMTDIRTestFolder. |
+| <pre class="syntax"><code>&lt;pattern type=&quot;Registry&quot;&gt;HKCU\Software\USMTTESTKEY* [MyKey]&lt;/pattern&gt;</code></pre> | Migrates all instances of MyKey under HKCU\Software\USMTTESTKEY. |
+| <pre class="syntax"><code>&lt;pattern type=&quot;Registry&quot;&gt;HKLM\Software\USMTTESTKEY* []&lt;/pattern&gt;</code></pre> | Migrates the entire registry hive under HKLM\Software\USMTTESTKEY. |
 
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
@@ -303,16 +247,6 @@ The behavior for this custom .xml file is described within the &lt;`displayName`
 
 ## Related topics
 
-
 [USMT XML Reference](usmt-xml-reference.md)
 
 [Customize USMT XML Files](usmt-customize-xml-files.md)
-
- 
-
- 
-
-
-
-
-

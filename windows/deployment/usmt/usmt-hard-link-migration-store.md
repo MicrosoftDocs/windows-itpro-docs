@@ -16,11 +16,9 @@ ms.topic: article
 
 # Hard-Link Migration Store
 
-
 A *hard-link migration store* enables you to perform an in-place migration where all user state is maintained on the computer while the old operating system is removed and the new operating system is installed; this is why it is best suited for the computer-refresh scenario. Use of a hard-link migration store for a computer-refresh scenario drastically improves migration performance and significantly reduces hard-disk utilization, reduces deployment costs and enables entirely new migration scenarios.
 
 ## In this topic
-
 
 [When to Use a Hard-Link Migration](#bkmk-when)
 
@@ -46,7 +44,6 @@ A *hard-link migration store* enables you to perform an in-place migration where
 
 ## <a href="" id="bkmk-when"></a>When to Use a Hard-Link Migration
 
-
 You can use a hard-link migration store when your planned migration meets both of the following criteria:
 
 -   You are upgrading the operating system on existing hardware rather than migrating to new computers.
@@ -63,15 +60,12 @@ You cannot use a hard-link migration store if your planned migration includes an
 
 ## <a href="" id="bkmk-understandhardlinkmig"></a>Understanding a Hard-Link Migration
 
-
 The hard-link migration store is created using the command-line option, **/hardlink**, and is equivalent to other migration-store types. However, it differs in that hard links are utilized to keep files stored on the source computer during the migration. Keeping the files in place on the source computer eliminates the redundant work of duplicating files. It also enables the performance benefits and reduction in disk utilization that define this scenario.
 
 When you create a hard link, you give an existing file an additional path. For instance, you could create a hard link to c:\\file1.txt called c:\\hard link\\myFile.txt. These are two paths to the same file. If you open c:\\file1.txt, make changes, and save the file, you will see those changes when you open c:\\hard link\\myFile.txt. If you delete c:\\file1.txt, the file still exists on your computer as c:\\hardlink\\myFile.txt. You must delete both references to the file in order to delete the file.
 
 **Note**  
 A hard link can only be created for a file on the same volume. If you copy a hard-link migration store to another drive or external device, the files, and not the links, are copied, as in a non-compressed migration-store scenario.
-
- 
 
 For more information about hard links, please see [Hard Links and Junctions](/windows/win32/fileio/hard-links-and-junctions)
 
@@ -81,8 +75,6 @@ As a best practice, we recommend that you delete the hard-link migration store a
 
 **Important**  
 Using the **/c** option will force the Loadstate tool to continue applying files when non-fatal errors occur. If you use the **/c** option, you should verify that no errors are reported in the logs before deleting the hard-link migration store in order to avoid data loss.
-
- 
 
 Keeping the hard-link migration store can result in additional disk space being consumed or problems with some applications for the following reasons:
 
@@ -95,10 +87,7 @@ Keeping the hard-link migration store can result in additional disk space being 
 **Important**  
 The read-only file attribute on migrated files is lost when the hard-link migration store is deleted. This is due to a limitation in NTFS file system hard links.
 
- 
-
 ## <a href="" id="bkmk-scenario"></a>Hard-Link Migration Scenario
-
 
 For example, a company has decided to deploy Windows 10 on all of their computers. Each employee will keep the same computer, but the operating system on each computer will be updated.
 
@@ -107,17 +96,14 @@ For example, a company has decided to deploy Windows 10 on all of their compute
     **Note**  
     As a best practice, we recommend that you do not create your hard-link migration store until just before you perform the migration in order to migrate the latest versions of your files. You should not use your software applications on the computer after creating the migration store until you have finished migrating your files with Loadstate.
 
-     
-
 2.  On each computer, an administrator installs the company's standard operating environment (SOE), which includes Windows 7 and other applications the company currently uses.
 
 3.  An administrator runs the LoadState command-line tool on each computer. The LoadState tool restores user state back on each computer.
 
 > [!NOTE]
 > During the update of a domain-joined computer, the profiles of users whose SID cannot be resolved will not be migrated. When using a hard-link migration store, it could cause a data loss.
-     
-## <a href="" id="bkmk-hardlinkstoredetails"></a>Hard-Link Migration Store Details
 
+## <a href="" id="bkmk-hardlinkstoredetails"></a>Hard-Link Migration Store Details
 
 This section provides details about hard-link migration stores.
 
@@ -166,50 +152,20 @@ Files that are locked by an application are treated the same in hard-link migrat
 **Important**  
 There are some scenarios in which modifying the **&lt;HardLinkStoreControl&gt;** section in the Config.xml file makes it more difficult to delete a hard-link migration store. In these scenarios, you must use USMTutils.exe to schedule the migration store for deletion on the next restart.
 
- 
-
 ## <a href="" id="bkmk-xmlelementsinconfig"></a>XML Elements in the Config.xml File
-
 
 A new section in the Config.xml file allows optional configuration of some of the hard-link migration behavior introduced with the **/HardLink** option.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>&lt;Policies&gt;</strong></p></td>
-<td align="left"><p>This element contains elements that describe the policies that USMT follows while creating a migration store.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>&lt;HardLinkStoreControl&gt;</strong></p></td>
-<td align="left"><p>This element contains elements that describe how to handle files during the creation of a hard link migration store.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>&lt;fileLocked&gt;</strong></p></td>
-<td align="left"><p>This element contains elements that describe how to handle files that are locked for editing.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>&lt;createHardLink&gt;</strong></p></td>
-<td align="left"><p>This element defines a standard MigXML pattern that describes file paths where hard links should be created, even if the file is locked for editing by another application.</p>
-<p>Syntax: &lt;createHardLink&gt; [pattern] &lt;/createHardLink&gt;</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>&lt;errorHardLink&gt;</strong></p></td>
-<td align="left"><p>This element defines a standard MigXML pattern that describes file paths where hard links should not be created, if the file is locked for editing by another application.</p>
-<p>&lt;errorHardLink&gt; [pattern] &lt;/errorHardLink&gt;</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+| Element | Description |
+|--- |--- |
+| **&lt;Policies&gt;** | This element contains elements that describe the policies that USMT follows while creating a migration store. |
+| **&lt;HardLinkStoreControl&gt;** | This element contains elements that describe how to handle files during the creation of a hard link migration store. |
+| **&lt;fileLocked&gt;** | This element contains elements that describe how to handle files that are locked for editing. |
+| **&lt;createHardLink&gt;** | This element defines a standard MigXML pattern that describes file paths where hard links should be created, even if the file is locked for editing by another application. <br/><br/>Syntax: &lt;createHardLink&gt; [pattern] &lt;/createHardLink&gt; |
+| **&lt;errorHardLink&gt;** | This element defines a standard MigXML pattern that describes file paths where hard links should not be created, if the file is locked for editing by another application. <br/><br/>&lt;errorHardLink&gt; [pattern] &lt;/errorHardLink&gt; |
 
 **Important**  
 You must use the **/nocompress** option with the **/HardLink** option.
-
- 
 
 The following XML sample specifies that files locked by an application under the \\Users directory can remain in place during the migration. It also specifies that locked files that are not located in the \\Users directory should result in the **File in Use** error. It is important to exercise caution when specifying the paths using the **File in Use&lt;createhardlink&gt;** tag in order to minimize scenarios that make the hard-link migration store more difficult to delete.
 
@@ -226,8 +182,4 @@ The following XML sample specifies that files locked by an application under the
 
 ## Related topics
 
-
 [Plan Your Migration](usmt-plan-your-migration.md)
-
- 
-
