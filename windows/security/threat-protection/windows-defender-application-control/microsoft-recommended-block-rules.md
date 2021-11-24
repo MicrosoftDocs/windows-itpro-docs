@@ -4,7 +4,7 @@ description: View a list of recommended block rules, based on knowledge shared b
 keywords: security, malware
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
-ms.technology: mde
+ms.technology: windows-sec
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -27,7 +27,7 @@ ms.date: 08/23/2021
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 Members of the security community<sup>*</sup> continuously collaborate with Microsoft to help protect customers. With the help of their valuable reports, Microsoft has identified a list of valid applications that an attacker could also potentially use to bypass Windows Defender Application Control. 
 
@@ -89,6 +89,7 @@ Unless your use scenarios explicitly require them, Microsoft recommends that you
 | `Brock Mammen`| |
 | `Casey Smith` | `@subTee` | 
 | `Jimmy Bayne` | `@bohops` |
+| `Kim Oppalfens` | `@thewmiguy` |
 | `Lasse Trolle Borup` | `Langkjaer Cyber Defence` |
 | `Lee Christensen` | `@tifkin_` |
 | `Matt Graeber` | `@mattifestation` | 
@@ -151,7 +152,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <Deny ID="ID_DENY_BGINFO" FriendlyName="bginfo.exe" FileName="BGINFO.Exe" MinimumFileVersion="4.21.0.0"/> 
   <Deny ID="ID_DENY_CBD" FriendlyName="cdb.exe" FileName="CDB.Exe" MinimumFileVersion="65535.65535.65535.65535"/>
   <Deny ID="ID_DENY_CSI" FriendlyName="csi.exe" FileName="csi.Exe" MinimumFileVersion="65535.65535.65535.65535"/>
-  <Deny ID="ID_DENY_CSCRIPT" FriendlyName="cscript.exe" FileName="cscript.exe" MinimumFileVersion = "10.0.0.0" />
+  <Deny ID="ID_DENY_CSCRIPT" FriendlyName="cscript.exe" FileName="cscript.exe" MinimumFileVersion = "5.812.10240.0" />
   <Deny ID="ID_DENY_DBGHOST" FriendlyName="dbghost.exe" FileName="DBGHOST.Exe" MinimumFileVersion="2.3.0.0"/> 
   <Deny ID="ID_DENY_DBGSVC" FriendlyName="dbgsvc.exe" FileName="DBGSVC.Exe" MinimumFileVersion="2.3.0.0"/>
   <Deny ID="ID_DENY_DNX" FriendlyName="dnx.exe" FileName="dnx.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
@@ -164,6 +165,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <Deny ID="ID_DENY_KILL" FriendlyName="kill.exe" FileName="kill.exe" MinimumFileVersion="65535.65535.65535.65535" />
   <Deny ID="ID_DENY_LXRUN" FriendlyName="lxrun.exe" FileName="lxrun.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_LXSS" FriendlyName="LxssManager.dll" FileName="LxssManager.dll" MinimumFileVersion="65535.65535.65535.65535"/>
+  <Deny ID="ID_DENY_INTUNE_AGENT" FriendlyName="IntuneWindowsAgent.exe" FileName="Microsoft.Management.Services.IntuneWindowsAgent.exe" MinimumFileVersion="1.46.204.0"/> 
   <Deny ID="ID_DENY_MFC40" FriendlyName="mfc40.dll" FileName="mfc40.dll" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_MS_BUILD" FriendlyName="Microsoft.Build.dll" FileName="Microsoft.Build.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
   <Deny ID="ID_DENY_MS_BUILD_FMWK" FriendlyName="Microsoft.Build.Framework.dll" FileName="Microsoft.Build.Framework.dll" MinimumFileVersion="65535.65535.65535.65535" /> 
@@ -181,7 +183,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <Deny ID="ID_DENY_WFC" FriendlyName="WFC.exe" FileName="wfc.exe" MinimumFileVersion="65535.65535.65535.65535" />   
   <Deny ID="ID_DENY_WINDBG" FriendlyName="windbg.exe" FileName="windbg.Exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WMIC" FriendlyName="wmic.exe" FileName="wmic.exe" MinimumFileVersion="65535.65535.65535.65535"/>
-  <Deny ID="ID_DENY_WSCRIPT" FriendlyName="wscript.exe"  FileName="wscript.exe" MinimumFileVersion = "10.0.0.0" />
+  <Deny ID="ID_DENY_WSCRIPT" FriendlyName="wscript.exe"  FileName="wscript.exe" MinimumFileVersion = "5.812.10240.0" />
   <Deny ID="ID_DENY_WSL" FriendlyName="wsl.exe" FileName="wsl.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WSLCONFIG" FriendlyName="wslconfig.exe" FileName="wslconfig.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
   <Deny ID="ID_DENY_WSLHOST" FriendlyName="wslhost.exe" FileName="wslhost.exe" MinimumFileVersion="65535.65535.65535.65535"/> 
@@ -905,6 +907,7 @@ Select the correct version of each .dll for the Windows release you plan to supp
   <FileRuleRef RuleID="ID_DENY_KILL"/>
   <FileRuleRef RuleID="ID_DENY_LXSS"/> 
   <FileRuleRef RuleID="ID_DENY_LXRUN"/> 
+  <FileRuleRef RuleID="ID_DENY_INTUNE_AGENT"/>
   <FileRuleRef RuleID="ID_DENY_MFC40"/>
   <FileRuleRef RuleID="ID_DENY_MS_BUILD" /> 
   <FileRuleRef RuleID="ID_DENY_MS_BUILD_FMWK" /> 

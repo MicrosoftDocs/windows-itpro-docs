@@ -4,10 +4,18 @@
   items:
     - name: Windows 11
       items:
-        - name: Start menu layout
-          href: customize-start-menu-layout-windows-11.md
-        - name: Supported Start menu CSPs
-          href: supported-csp-start-menu-layout-windows.md
+        - name: Start menu
+          items:
+          - name: Customize Start menu layout
+            href: customize-start-menu-layout-windows-11.md
+          - name: Supported Start menu CSPs
+            href: supported-csp-start-menu-layout-windows.md
+        - name: Taskbar
+          items:
+          - name: Customize Taskbar
+            href: customize-taskbar-windows-11.md
+          - name: Supported Taskbar CSPs
+            href: supported-csp-taskbar-windows.md
     - name: Windows 10 Start and taskbar
       items:
         - name: Start layout and taskbar
@@ -54,16 +62,14 @@
       href: kiosk-methods.md
     - name: Prepare a device for kiosk configuration
       href: kiosk-prepare.md
-    - name: Set up digital signs on Windows 10
+    - name: Set up digital signs
       href: setup-digital-signage.md
     - name: Set up a single-app kiosk
       href: kiosk-single-app.md
     - name: Set up a multi-app kiosk
       href: lock-down-windows-10-to-specific-apps.md
-    - name: Set up a shared or guest PC with Windows 10
+    - name: Set up a shared or guest PC
       href: set-up-shared-or-guest-pc.md
-    - name: Set up a kiosk on Windows 10 Mobile 
-      href: mobile-devices/set-up-a-kiosk-for-windows-10-for-mobile-edition.md 
     - name: Kiosk reference information
       items:
         - name: More kiosk methods and reference information
@@ -80,9 +86,9 @@
           href: kiosk-xml.md
         - name: Use AppLocker to create a Windows 10 kiosk
           href: lock-down-windows-10-applocker.md
-        - name: Use Shell Launcher to create a Windows 10 kiosk
+        - name: Use Shell Launcher to create a Windows client kiosk
           href: kiosk-shelllauncher.md
-        - name: Use MDM Bridge WMI Provider to create a Windows 10 kiosk
+        - name: Use MDM Bridge WMI Provider to create a Windows client kiosk
           href: kiosk-mdm-bridge.md
         - name: Troubleshoot kiosk mode issues
           href: kiosk-troubleshoot.md
@@ -90,9 +96,9 @@
 
 - name: Use provisioning packages
   items:
-    - name: Provisioning packages for Windows 10
+    - name: Provisioning packages for Windows client
       href: provisioning-packages/provisioning-packages.md
-    - name: How provisioning works in Windows 10
+    - name: How provisioning works in Windows client
       href: provisioning-packages/provisioning-how-it-works.md
     - name: Introduction to configuration service providers (CSPs)
       href: provisioning-packages/how-it-pros-can-use-configuration-service-providers.md
@@ -112,7 +118,7 @@
       href: provisioning-packages/provisioning-script-to-install-app.md
     - name: Create a provisioning package with multivariant settings
       href: provisioning-packages/provisioning-multivariant.md
-    - name: PowerShell cmdlets for provisioning Windows 10 (reference)
+    - name: PowerShell cmdlets for provisioning Windows client (reference)
       href: provisioning-packages/provisioning-powershell.md
     - name: Windows Configuration Designer command-line interface (reference)
       href: provisioning-packages/provisioning-command-line.md
@@ -170,8 +176,6 @@
 
 - name: Reference
   items:
-    - name: Configure Windows 10 Mobile devices
-      href: mobile-devices/configure-mobile.md
     - name: Windows Configuration Designer reference
       items:
         - name: Windows Configuration Designer provisioning settings (reference)
@@ -186,14 +190,8 @@
           href: wcd/wcd-admxingestion.md 
         - name: AssignedAccess
           href: wcd/wcd-assignedaccess.md 
-        - name: AutomaticTime
-          href: wcd/wcd-automatictime.md 
         - name: Browser
           href: wcd/wcd-browser.md 
-        - name: CallAndMessagingEnhancement
-          href: wcd/wcd-callandmessagingenhancement.md 
-        - name: Calling
-          href: wcd/wcd-calling.md
         - name: CellCore
           href: wcd/wcd-cellcore.md
         - name: Cellular
@@ -214,8 +212,6 @@
           href: wcd/wcd-developersetup.md     
         - name: DeviceFormFactor
           href: wcd/wcd-deviceformfactor.md  
-        - name: DeviceInfo
-          href: wcd/wcd-deviceinfo.md
         - name: DeviceManagement
           href: wcd/wcd-devicemanagement.md  
         - name: DeviceUpdateCenter
@@ -223,9 +219,7 @@
         - name: DMClient
           href: wcd/wcd-dmclient.md 
         - name: EditionUpgrade
-          href: wcd/wcd-editionupgrade.md 
-        - name: EmbeddedLockdownProfiles
-          href: wcd/wcd-embeddedlockdownprofiles.md     
+          href: wcd/wcd-editionupgrade.md    
         - name: FirewallConfiguration
           href: wcd/wcd-firewallconfiguration.md     
         - name: FirstExperience
@@ -234,10 +228,6 @@
           href: wcd/wcd-folders.md  
         - name: HotSpot
           href: wcd/wcd-hotspot.md
-        - name: InitialSetup
-          href: wcd/wcd-initialsetup.md     
-        - name: InternetExplorer
-          href: wcd/wcd-internetexplorer.md 
         - name: KioskBrowser
           href: wcd/wcd-kioskbrowser.md      
         - name: Licensing
@@ -245,23 +235,13 @@
         - name: Location
           href: wcd/wcd-location.md      
         - name: Maps
-          href: wcd/wcd-maps.md  
-        - name: Messaging
-          href: wcd/wcd-messaging.md     
-        - name: ModemConfigurations
-          href: wcd/wcd-modemconfigurations.md     
-        - name: Multivariant
-          href: wcd/wcd-multivariant.md     
+          href: wcd/wcd-maps.md 
         - name: NetworkProxy
           href: wcd/wcd-networkproxy.md     
         - name: NetworkQOSPolicy
-          href: wcd/wcd-networkqospolicy.md
-        - name: NFC
-          href: wcd/wcd-nfc.md     
+          href: wcd/wcd-networkqospolicy.md 
         - name: OOBE
-          href: wcd/wcd-oobe.md    
-        - name: OtherAssets
-          href: wcd/wcd-otherassets.md     
+          href: wcd/wcd-oobe.md 
         - name: Personalization
           href: wcd/wcd-personalization.md     
         - name: Policies
@@ -269,13 +249,9 @@
         - name: Privacy
           href: wcd/wcd-privacy.md  
         - name: ProvisioningCommands
-          href: wcd/wcd-provisioningcommands.md    
-        - name: RcsPresence
-          href: wcd/wcd-rcspresence.md 
+          href: wcd/wcd-provisioningcommands.md
         - name: SharedPC
-          href: wcd/wcd-sharedpc.md     
-        - name: Shell
-          href: wcd/wcd-shell.md     
+          href: wcd/wcd-sharedpc.md 
         - name: SMISettings
           href: wcd/wcd-smisettings.md     
         - name: Start
@@ -291,11 +267,7 @@
         - name: TabletMode
           href: wcd/wcd-tabletmode.md  
         - name: TakeATest
-          href: wcd/wcd-takeatest.md    
-        - name: TextInput
-          href: wcd/wcd-textinput.md  
-        - name: Theme
-          href: wcd/wcd-theme.md  
+          href: wcd/wcd-takeatest.md
         - name: Time
           href: wcd/wcd-time.md    
         - name: UnifiedWriteFilter
@@ -383,23 +355,3 @@
               href: ue-v/uev-application-template-schema-reference.md
             - name: Security Considerations for UE-V
               href: ue-v/uev-security-considerations.md
-
-
-    - name: Use Windows Configuration Designer for Windows 10 Mobile devices
-      items:
-        - name: Use Windows Configuration Designer to configure Windows 10 Mobile devices
-          href: mobile-devices/provisioning-configure-mobile.md
-        - name: NFC-based device provisioning
-          href: mobile-devices/provisioning-nfc.md
-        - name: Barcode provisioning and the package splitter tool
-          href: mobile-devices/provisioning-package-splitter.md
-        - name: Use the Lockdown Designer app to create a Lockdown XML file
-          href: mobile-devices/mobile-lockdown-designer.md
-        - name: Configure Windows 10 Mobile using Lockdown XML
-          href: mobile-devices/lockdown-xml.md
-        - name: Settings and quick actions that can be locked down in Windows 10 Mobile
-          href: mobile-devices/settings-that-can-be-locked-down.md
-        - name: Product IDs in Windows 10 Mobile
-          href: mobile-devices/product-ids-in-windows-10-mobile.md
-        - name: Start layout XML for mobile editions of Windows 10 (reference)
-          href: mobile-devices/start-layout-xml-mobile.md

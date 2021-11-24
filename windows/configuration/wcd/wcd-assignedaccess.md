@@ -19,10 +19,10 @@ Use this setting to configure single use (kiosk) devices.
 
 ## Applies to
 
-| Setting | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [AssignedAccessSettings](#assignedaccesssettings)  | X |  |  | X |  |
-| [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | X |  |  | X |  |
+| Setting | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| [AssignedAccessSettings](#assignedaccesssettings)  | ✔️ |  | ✔️ |  |
+| [MultiAppAssignedAccessSettings](#multiappassignedaccesssettings) | ✔️ |  | ✔️ |  |
 
 
 ## AssignedAccessSettings
@@ -31,9 +31,7 @@ Enter the account and the application you want to use for Assigned access, using
 
 **Example**:
 
-```
-{"Account":"domain\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}
-```
+`{"Account":"domain\user", "AUMID":"Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"}`
 
 ## MultiAppAssignedAccessSettings
 

@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4773(F): A Kerberos service ticket request failed.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Currently this event doesn’t generate. It is a defined event, but it is never invoked by the operating system. [4769](event-4769.md) failure event is generated instead.

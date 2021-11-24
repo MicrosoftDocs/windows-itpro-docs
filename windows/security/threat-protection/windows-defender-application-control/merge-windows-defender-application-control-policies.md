@@ -11,7 +11,7 @@ ms.author: jogeurte
 ms.manager: jsuther
 manager: dansimp
 ms.date: 04/22/2021
-ms.technology: mde
+ms.technology: windows-sec
 ms.topic: article
 ms.localizationpriority: medium
 ---
@@ -25,7 +25,7 @@ ms.localizationpriority: medium
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 This article shows how to merge multiple policy XML files together and how to merge rules directly into a policy. WDAC deployments often include a few base policies and optional supplemental policies for specific use cases.
 

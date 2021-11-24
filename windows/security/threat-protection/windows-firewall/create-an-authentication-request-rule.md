@@ -1,5 +1,5 @@
 ---
-title: Create an Authentication Request Rule (Windows 10)
+title: Create an Authentication Request Rule (Windows)
 description: Create a new rule for Windows Defender Firewall with Advanced Security so devices on the network use IPsec protocols and methods before they can communicate.
 ms.assetid: 1296e048-039f-4d1a-aaf2-8472ad05e359
 ms.reviewer: 
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/07/2021
+ms.technology: windows-sec
 ---
 
 # Create an Authentication Request Rule
 
 **Applies to:**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 After you have configured IPsec algorithms and authentication methods, you can create the rule that requires the devices on the network to use those protocols and methods before they can communicate.
 

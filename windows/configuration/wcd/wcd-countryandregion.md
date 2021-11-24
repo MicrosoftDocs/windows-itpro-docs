@@ -19,8 +19,8 @@ Use to configure a setting that partners must customize to ship Windows devices 
 
 ## Applies to
 
-| Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| CountryCodeForExtendedCapabilityPrompts | X  | X | X |  |  |
+| Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| CountryCodeForExtendedCapabilityPrompts | ✔️  | ✔️ |  |  |
 
 You can set the **CountryCodeForExtendedCapabilityPrompts** setting for **China** to enable additional capability prompts when apps use privacy-sensitive features (such as Contacts or Microphone). 

@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/06/2021
+ms.technology: windows-sec
 ---
 
 # Audit policy change
 
-**Applies to**
--   Windows 10
 
 Determines whether to audit every incident of a change to user rights assignment policies, audit policies, or trust policies.
 

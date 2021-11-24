@@ -1,5 +1,5 @@
 ---
-title: Configure Authentication Methods (Windows 10)
+title: Configure Authentication Methods (Windows)
 description: Learn how to configure authentication methods for devices in an isolated domain or standalone server zone in Windows Defender Firewall with Advanced Security.
 ms.assetid: 5fcdc523-617f-4233-9213-15fe19f4cd02
 ms.reviewer: 
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 08/17/2017
-ms.technology: mde
+ms.date: 09/07/2021
+ms.technology: windows-sec
 ---
 
 # Configure Authentication Methods
 
 **Applies to**
 -   Windows 10
--   Windows Server 2016
+-   Windows 11
+-   Windows Server 2016 and above
 
 This procedure shows you how to configure the authentication methods that can be used by computers in an isolated domain or standalone isolated server zone.
 

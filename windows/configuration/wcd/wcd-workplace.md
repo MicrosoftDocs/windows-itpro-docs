@@ -20,13 +20,13 @@ Use Workplace settings to configure bulk user enrollment to a mobile device mana
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| [Enrollments](#enrollments) | X | X | X |  | X  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| [Enrollments](#enrollments) | ✔️ | ✔️ |  | ✔️  |
 
 ## Enrollments
 
-Select **Enrollments**, enter a UPN, and then click **Add** to configure the settings for the enrollment. The UPN is a unique identifier for enrollment. For bulk enrollment, this must a service account that is allowed to enroll multiple users. Example, "generic-device@contoso.com"
+Select **Enrollments**, enter a UPN, and then select **Add** to configure the settings for the enrollment. The UPN is a unique identifier for enrollment. For bulk enrollment, this value must be a service account that's allowed to enroll multiple users. For example, use `generic-device@contoso.com`.
 
 | Settings | Value | Description |
 | --- | --- | --- |
@@ -34,8 +34,8 @@ Select **Enrollments**, enter a UPN, and then click **Add** to configure the set
 | DiscoveryServiceFullUrl | URL | The full URL for the discovery service |
 | EnrollmentServiceFullUrl | URL | The full URL for the enrollment service |
 | PolicyServiceFullUrl | URL | The full URL for the policy service |
-| Secret | - Password string for on-premises authentication enrollment</br>- Federated security token for federated enrollment</br>- Certificate thumb print for certificate-based enrollment | Enter the appropriate value for the selected AuthPolicy  |
+| Secret | - Password string for on-premises authentication enrollment</br>- Federated security token for federated enrollment</br>- Certificate thumb print for certificate-based enrollment | Enter the appropriate value for the selected AuthPolicy.  |
 
-## Related topics
+## Related articles
 
 - [Provisioning configuration service provider (CSP)](/windows/client-management/mdm/provisioning-csp)

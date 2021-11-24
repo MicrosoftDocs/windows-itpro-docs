@@ -24,6 +24,8 @@ For information about features that might be removed in a future release, see [W
 > [!NOTE]
 > Join the [Windows Insider program](https://insider.windows.com) to get early access to new Windows 10 builds and test these changes yourself.
 
+For information about features in Windows 11, see [Feature deprecations and removals](https://www.microsoft.com/windows/windows-11-specifications#table3).
+
 The following features and functionalities have been removed from the installed product image for Windows 10. Applications or code that depend on these features won't function in the release when it was removed, or in later releases.
 
 |Feature    |  Details and mitigation  | Removed in version |
@@ -62,7 +64,6 @@ The following features and functionalities have been removed from the installed 
 |TCP Offload Engine | Removing this legacy code. This functionality was previously transitioned to the Stack TCP Engine. For more information, see [Why Are We Deprecating Network Performance Features?](https://blogs.technet.microsoft.com/askpfeplat/2017/06/13/why-are-we-deprecating-network-performance-features-kb4014193)| 1709 |
 |Tile Data Layer |To be replaced by the Tile Store.| 1709 |
 |Resilient File System (ReFS) (added: August 17, 2017)| Creation ability will be available in the following editions only: Windows 10 Enterprise and Windows 10 Pro for Workstations.  Creation ability will be removed from all other editions. All other editions will have Read and Write ability. | 1709 |
-|Apps Corner| This Windows 10 mobile application is removed in the version 1703 release. | 1703 |
 |By default, Flash autorun in Edge is turned off. | Use the Click-to-Run (C2R) option instead. (This setting can be changed by the user.) | 1703 |
 |Interactive Service Detection Service| See [Interactive Services](/windows/win32/services/interactive-services) for guidance on how to keep software up to date. | 1703 |
 |Microsoft Paint | This application will not be available for languages that are not on the [full localization list](https://www.microsoft.com/windows/windows-10-specifications#Windows-10-localization). | 1703 |

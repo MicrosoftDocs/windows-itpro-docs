@@ -15,7 +15,7 @@ author: jsuther1974
 ms.reviewer: isbrahm
 ms.author: dansimp
 ms.date: 02/08/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Understand Windows Defender Application Control policy design decisions 
@@ -27,7 +27,7 @@ ms.technology: mde
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 This topic is for the IT professional. It lists the design questions, possible answers, and ramifications for decisions made, when planning application control policies deployment using Windows Defender Application Control (WDAC), within a Windows operating system environment.
 

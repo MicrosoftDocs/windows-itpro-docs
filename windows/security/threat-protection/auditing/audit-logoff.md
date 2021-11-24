@@ -11,15 +11,11 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 07/16/2018
-ms.technology: mde
+ms.date: 09/06/2021
+ms.technology: windows-sec
 ---
 
 # Audit Logoff
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 Audit Logoff determines whether the operating system generates audit events when logon sessions are terminated.

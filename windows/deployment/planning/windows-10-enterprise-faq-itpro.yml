@@ -79,7 +79,7 @@ sections:
       - question: |
           Can I upgrade computers from Windows 7 or Windows 8.1 without deploying a new image?
         answer: |
-          Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device using MDT and/or Configuration Manager. For more information, see [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](../deploy-windows-cm/upgrade-to-windows-10-with-configuraton-manager.md) or [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md).
+          Computers running Windows 7 or Windows 8.1 can be upgraded directly to Windows 10 through the in-place upgrade process without a need to reimage the device using MDT and/or Configuration Manager. For more information, see [Upgrade to Windows 10 with Microsoft Endpoint Configuration Manager](../deploy-windows-cm/upgrade-to-windows-10-with-configuration-manager.md) or [Upgrade to Windows 10 with the Microsoft Deployment Toolkit](../deploy-windows-mdt/upgrade-to-windows-10-with-the-microsoft-deployment-toolkit.md).
           
       - question: |
           Can I upgrade from Windows 7 Enterprise or Windows 8.1 Enterprise to Windows 10 Enterprise for free?
@@ -103,7 +103,7 @@ sections:
       - question: |
           What are the servicing channels?
         answer: |
-          To align with the new method of delivering feature updates and quality updates in Windows 10, Microsoft introduced the concept of servicing channels to allow customers to designate how aggressively their individual devices are updated. For example, an organization may have test devices that the IT department can update with new features as soon as possible, and then specialized devices that require a longer feature update cycle to ensure continuity. With that in mind, Microsoft offers two servicing channels for Windows 10: Semi-Annual Channel, and Long-Term Servicing Channel (LTSC). For details about the versions in each servicing channel, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx). For more information on each channel, see [servicing channels](../update/waas-overview.md#servicing-channels).
+          To align with the new method of delivering feature updates and quality updates in Windows 10, Microsoft introduced the concept of servicing channels to allow customers to designate how aggressively their individual devices are updated. For example, an organization may have test devices that the IT department can update with new features as soon as possible, and then specialized devices that require a longer feature update cycle to ensure continuity. With that in mind, Microsoft offers two servicing channels for Windows 10: General Availability Channel, and Long-Term Servicing Channel (LTSC). For details about the versions in each servicing channel, see [Windows 10 release information](https://technet.microsoft.com/windows/release-info.aspx). For more information on each channel, see [servicing channels](../update/waas-overview.md#servicing-channels).
           
       - question: |
           What tools can I use to manage Windows as a service updates?

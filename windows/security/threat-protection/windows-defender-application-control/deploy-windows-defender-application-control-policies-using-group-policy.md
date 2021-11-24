@@ -15,7 +15,7 @@ ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/28/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Deploy Windows Defender Application Control policies by using Group Policy
@@ -27,7 +27,7 @@ ms.technology: mde
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 > [!NOTE]
 > Group Policy-based deployment of WDAC policies only supports single-policy format WDAC policies. To use WDAC on devices running Windows 10 1903 and greater, or Windows 11, we recommend using an alternative method for policy deployment.

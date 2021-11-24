@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 08/27/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Interactive logon: Number of previous logons to cache (in case domain controller is not available)

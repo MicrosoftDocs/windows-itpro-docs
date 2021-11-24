@@ -17,13 +17,40 @@ ms.date: 06/26/2017
 
 The EnterpriseAppManagement enterprise configuration service provider is used to handle enterprise application management tasks such as installing an enterprise application token, the first auto-downloadable app link, querying installed enterprise applications (name and version), auto updating already installed enterprise applications, and removing all installed enterprise apps (including the enterprise app token) during unenrollment.
 
-> **Note**   The EnterpriseAppManagement CSP is only supported in Windows 10 Mobile.
+> [!NOTE]
+> The EnterpriseAppManagement CSP is only supported in Windows 10 Mobile.
 
  
 
-The following diagram shows the EnterpriseAppManagement configuration service provider in tree format.
+The following shows the EnterpriseAppManagement configuration service provider in tree format.
 
-![enterpriseappmanagement csp.](images/provisioning-csp-enterpriseappmanagement.png)
+```console
+./Vendor/MSFT
+EnterpriseAppManagement
+----EnterpriseID
+--------EnrollmentToken
+--------StoreProductID
+--------StoreUri
+--------CertificateSearchCriteria
+--------Status
+--------CRLCheck
+--------EnterpriseApps
+------------Inventory
+----------------ProductID
+--------------------Version
+--------------------Title
+--------------------Publisher
+--------------------InstallDate
+------------Download
+----------------ProductID
+--------------------Version
+--------------------Name
+--------------------URL
+--------------------Status
+--------------------LastError
+--------------------LastErrorDesc
+--------------------DownloadInstall
+```
 
 <a href="" id="enterpriseid"></a>***EnterpriseID***
 Optional. A dynamic node that represents the EnterpriseID as a GUID. It is used to enroll or unenroll enterprise applications.
@@ -55,7 +82,8 @@ Optional. The character string that contains the search criteria to search for t
 
 Supported operations are Get and Add.
 
-> **Note**   Do NOT use Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00. The server must replace this value in the supplied client certificate. If your server returns a client certificate containing the same Subject value, this can cause unexpected behavior. The server should always override the subject value and not use the default device-provided Device ID Subject= Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00
+> [!NOTE]
+> Do NOT use Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00. The server must replace this value in the supplied client certificate. If your server returns a client certificate containing the same Subject value, this can cause unexpected behavior. The server should always override the subject value and not use the default device-provided Device ID Subject= Subject=CN%3DB1C43CD0-1624-5FBB-8E54-34CF17DFD3A1\\x00
 
  
 
@@ -132,48 +160,16 @@ Supported operations are Get, Add, and Replace.
 <a href="" id="-download-productid-status"></a>**/Download/*ProductID*/Status**
 Required. The integer value that indicates the status of the current download process. The following table shows the possible values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>0: CONFIRM</p></td>
-<td><p>Waiting for confirmation from user.</p></td>
-</tr>
-<tr class="even">
-<td><p>1: QUEUED</p></td>
-<td><p>Waiting for download to start.</p></td>
-</tr>
-<tr class="odd">
-<td><p>2: DOWNLOADING</p></td>
-<td><p>In the process of downloading.</p></td>
-</tr>
-<tr class="even">
-<td><p>3: DOWNLOADED</p></td>
-<td><p>Waiting for installation to start.</p></td>
-</tr>
-<tr class="odd">
-<td><p>4: INSTALLING</p></td>
-<td><p>Handed off for installation.</p></td>
-</tr>
-<tr class="even">
-<td><p>5: INSTALLED</p></td>
-<td><p>Successfully installed</p></td>
-</tr>
-<tr class="odd">
-<td><p>6: FAILED</p></td>
-<td><p>Application was rejected (not signed properly, bad XAP format, not enrolled properly, etc.)</p></td>
-</tr>
-<tr class="even">
-<td><p>7:DOWNLOAD_FAILED</p></td>
-<td><p>Unable to connect to server, file doesn&#39;t exist, etc.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Value|Description|
+|--- |--- |
+|0: CONFIRM|Waiting for confirmation from user.|
+|1: QUEUED|Waiting for download to start.|
+|2: DOWNLOADING|In the process of downloading.|
+|3: DOWNLOADED|Waiting for installation to start.|
+|4: INSTALLING|Handed off for installation.|
+|5: INSTALLED|Successfully installed|
+|6: FAILED|Application was rejected (not signed properly, bad XAP format, not enrolled properly, etc.)|
+|7:DOWNLOAD_FAILED|Unable to connect to server, file doesn't exist, etc.|
 
 Scope is dynamic. Supported operations are Get, Add, and Replace.
 
@@ -437,10 +433,10 @@ Install or update the installed app with the product ID “{B316008A-141D-4A79-8
 
 To perform an XAP update, create the Name, URL, Version, and DownloadInstall nodes first, then perform an “execute” on the “DownloadInstall” node (all within an “Atomic” operation). If the application does not exist, the application will be silently installed without any user interaction. If the application cannot be installed, the user will be notified with an Alert dialog.
 
-> **Note**  
-> 1.  If a previous app-update node existed for this product ID (the node can persist for up to 1 week or 7 days after an installation has completed), then a 418 (already exist) error would be returned on the “Add”. To get around the 418 error, the server should issue a Replace command for the Name, URL, and Version nodes, and then execute on the “DownloadInstall” (within an “Atomic” operation).
-
-2. The application product ID curly braces need to be escaped where { is %7B and } is %7D.
+> [!NOTE]
+> - If a previous app-update node existed for this product ID (the node can persist for up to 1 week or 7 days after an installation has completed), then a 418 (already exist) error would be returned on the “Add”. To get around the 418 error, the server should issue a Replace command for the Name, URL, and Version nodes, and then execute on the “DownloadInstall” (within an “Atomic” operation).
+> 
+> - The application product ID curly braces need to be escaped where { is %7B and } is %7D.
 
  
 

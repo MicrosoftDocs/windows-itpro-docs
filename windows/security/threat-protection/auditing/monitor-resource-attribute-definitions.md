@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/09/2021
+ms.technology: windows-sec
 ---
 
 # Monitor resource attribute definitions
 
-**Applies to**
--   Windows 10
 
 This topic for the IT professional describes how to monitor changes to resource attribute definitions when you are using advanced security auditing options to monitor dynamic access control objects.
 Resource attribute definitions define the basic properties of resource attributes, such as what it means for a resource to be defined as “high business value.” Resource attribute definitions are stored in AD DS under the Resource Properties container. Changes to these definitions could significantly change the protections that govern a resource, even if the resource attributes that apply to the resource remain unchanged. Changes can be monitored like any other AD DS object.

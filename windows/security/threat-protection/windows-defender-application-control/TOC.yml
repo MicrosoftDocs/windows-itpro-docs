@@ -1,5 +1,8 @@
 - name: Application Control for Windows
+  href: index.yml
+- name: About application control for Windows
   href: windows-defender-application-control.md
+  expanded: true
   items: 
     - name: WDAC and AppLocker Overview
       href: wdac-and-applocker-overview.md
@@ -105,6 +108,8 @@
           href: querying-application-control-events-centrally-using-advanced-hunting.md
         - name: Known Issues
           href: operations/known-issues.md
+        - name: Managed installer and ISG technical reference and troubleshooting guide
+          href: configure-wdac-managed-installer.md
     - name: AppLocker
       href: applocker\applocker-overview.md
       items: 
@@ -292,3 +297,6 @@
                   href: applocker\using-event-viewer-with-applocker.md
             - name: AppLocker Settings
               href: applocker\applocker-settings.md
+- name: Windows security
+  href: /windows/security/
+

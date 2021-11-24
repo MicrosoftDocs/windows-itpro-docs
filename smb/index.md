@@ -1,7 +1,7 @@
 ---
-title: Windows 10 for small to midsize businesses
+title: Windows 10/11 for small to midsize businesses
 description: Microsoft products and devices to transform and grow your businessLearn how to use Windows 10 for your small to midsize business.
-keywords: Windows 10, SMB, small business, midsize business, business
+keywords: Windows 10, Windows 11, SMB, small business, midsize business, business
 ms.prod: w10
 ms.technology: 
 ms.topic: article
@@ -15,22 +15,39 @@ manager: dansimp
 audience: itpro
 ---
 
-# Windows 10 for SMB
+# Windows 10/11 for Small and Medium Business (SMB)
 
 ![Windows 10 for SMB.](images/smb_portal_banner.png)
 
 ## ![Learn more about Windows and other resources for SMBs.](images/learn.png) Learn
 
-<p><b><a href="https://business.microsoft.com/en-us/products/windows" target="_blank">Windows 10 for business</a></b><br />Learn how Windows 10 and Windows devices can help your business.</p>
-<p><b><a href="https://blogs.business.microsoft.com/" target="_blank">SMB blog</a></b><br />Read about the latest stories, technology insights, and business strategies for SMBs.</p>
-<p><b><a href="https://business.microsoft.com/en-us/products" target="_blank">How to buy</a></b><br />Go here when you&#39;re ready to buy or want to learn more about Microsoft products you can use to help transform your business.</p>
+**[Windows for business](https://www.microsoft.com/windows/business)**
 
+Learn how Windows can help your business be more productive, collaborate better, and be more secure.
+
+**[Bing Pages](https://www.microsoft.com/bing/bing-pages-overview)**
+
+Use Bing to grow your business and enhance your brand online.
+
+**[Customer stories](https://customers.microsoft.com/)**
+
+Read about the latest stories and technology insights.
+
+**[SMB Blog](https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/bg-p/Microsoft365BusinessBlog)**
+
+Read about business strategies and collaborations with SMBs.
+
+**[Business Solutions and Technology](https://www.microsoft.com/store/b/business)**
+
+Learn more about Microsoft products, or when you're ready to buy products and services to help transform your business.
 
 ## ![Deploy a Microsoft solution for your business.](images/deploy.png) Deploy
 
-<p><b><a href="cloud-mode-business-setup.md" data-raw-source="[Get started: Deploy and manage a full cloud IT solution for your business](cloud-mode-business-setup.md)">Get started: Deploy and manage a full cloud IT solution for your business</a></b><br />Find out how easy it is to deploy and manage a full cloud IT solution for your small to midsize business using Microsoft cloud services and tools.</p>
+**[Get started: Deploy and manage a full cloud IT solution for your business](cloud-mode-business-setup.md)**
 
+Using Microsoft cloud services and tools, it can be easy to deploy and manage a full cloud IT solution for your small to midsize business.
 
- ## Related topics
+## Related articles
 
-- [Windows 10 and Windows 10 Mobile](/windows/windows-10/)
+- [Windows for business](https://www.microsoft.com/windows/business)
+- [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business)

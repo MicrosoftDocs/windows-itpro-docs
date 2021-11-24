@@ -3,7 +3,7 @@ title: Get started with the Microsoft Deployment Toolkit (MDT) (Windows 10)
 description: This topic will help you gain a better understanding of how to use the Microsoft Deployment Toolkit (MDT), as part of a Windows operating system deployment.
 ms.assetid: a256442c-be47-4bb9-a105-c831f58ce3ee
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, image, feature, install, tools
 ms.prod: w10
@@ -30,6 +30,9 @@ MDT is a unified collection of tools, processes, and guidance for automating des
 In addition to reducing deployment time and standardizing desktop and server images, MDT enables you to more easily manage security and ongoing configurations. MDT builds on top of the core deployment tools in the [Windows Assessment and Deployment Kit](/windows-hardware/get-started/adk-install) (Windows ADK) with additional guidance and features designed to reduce the complexity and time required for deployment in an enterprise environment.
 
 MDT supports the deployment of Windows 10, as well as Windows 7, Windows 8.1, and Windows Server. It also includes support for zero-touch installation (ZTI) with [Microsoft Endpoint Configuration Manager](/configmgr/).
+
+> [!IMPORTANT]
+> For more information about MDT supported platforms, see [MDT Release Notes](/mem/configmgr/mdt/release-notes#supported-platforms) and [MDT FAQ](/mem/configmgr/mdt/faq#is-this-release-only-supported-with-version--x--of-windows-client--windows-adk--or-configuration-manager-).
 
 ## Key features in MDT
 

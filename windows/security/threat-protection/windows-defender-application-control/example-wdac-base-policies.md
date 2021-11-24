@@ -16,7 +16,7 @@ ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
 ms.date: 11/15/2019
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Windows Defender Application Control (WDAC) example base policies
@@ -28,7 +28,7 @@ ms.technology: mde
 -   Windows Server 2016 and above
 
 >[!NOTE]
->Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+>Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 When creating policies for use with Windows Defender Application Control (WDAC), start from an existing base policy and then add or remove rules to build your own custom policy. Windows includes several example policies that can be used, or organizations that use the Device Guard Signing Service can download a starter policy from that service.
 

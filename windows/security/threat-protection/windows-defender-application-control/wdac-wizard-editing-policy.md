@@ -16,7 +16,7 @@ ms.author: dansimp
 manager: dansimp
 ms.topic: conceptual
 ms.date: 10/14/2020
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Editing existing base and supplemental WDAC policies with the Wizard
@@ -28,13 +28,13 @@ ms.technology: mde
 - Windows Server 2016 and above
 
 > [!NOTE]
-> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Defender App Guard feature availability](feature-availability.md).
+> Some capabilities of Windows Defender Application Control are only available on specific Windows versions. Learn more about the [Windows Defender Application Control feature availability](feature-availability.md).
 
 The WDAC Wizard makes editing and viewing WDAC policies easier than the PowerShell cmdlets or manually. The Wizard currently supports the following editing capabilities: 
 <ul>
-<li>[Configuring policy rules](#configuring-policy-rules)</li>
-<li>[Adding new allow or block file rules to existing policies](#adding-file-rules)</li>
-<li>[Removing allow or block file rules on existing policies](#removing-file-rules)</li>
+    <li><a href="#configuring-policy-rules">Configuring policy rules</a></li>
+    <li><a href="#adding-file-rules">Adding new allow or block file rules to existing policies</a></li>
+    <li><a href="#removing-file-rules">Removing allow or block file rules on existing policies</a></li>
 </ul>
 
 ## Configuring Policy Rules

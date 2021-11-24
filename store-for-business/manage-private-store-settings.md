@@ -20,7 +20,6 @@ ms.localizationpriority: medium
 **Applies to**
 
 -   Windows 10
--   Windows 10 Mobile
 
 > [!IMPORTANT]
 > Microsoft Store for Business and Microsoft Store for Education will be retired in the first quarter of 2023. You can continue to use the current capabilities of free apps until that time. For more information about this change, see [Evolving the Microsoft Store for Business and Education](https://aka.ms/windows/msfb_evolution).

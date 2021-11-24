@@ -33,24 +33,10 @@ Additional lists:
 [AccountManagement CSP](accountmanagement-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -59,24 +45,10 @@ Additional lists:
 [Accounts CSP](accounts-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -85,24 +57,10 @@ Additional lists:
 [ActiveSync CSP](activesync-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -111,24 +69,10 @@ Additional lists:
 [AllJoynManagement CSP](alljoynmanagement-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -137,24 +81,10 @@ Additional lists:
 [APPLICATION CSP](application-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -163,24 +93,10 @@ Additional lists:
 [ApplicationControl CSP](applicationcontrol-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -189,24 +105,10 @@ Additional lists:
 [AppLocker CSP](applocker-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -215,24 +117,10 @@ Additional lists:
 [AssignedAccess CSP](assignedaccess-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -241,24 +129,10 @@ Additional lists:
 [BOOTSTRAP CSP](bootstrap-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -267,24 +141,10 @@ Additional lists:
 [BitLocker CSP](bitlocker-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -293,24 +153,10 @@ Additional lists:
 [BrowserFavorite CSP](browserfavorite-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -319,24 +165,10 @@ Additional lists:
 [CMPolicy CSP](cmpolicy-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -345,25 +177,10 @@ Additional lists:
 [CMPolicyEnterprise CSP](cmpolicyenterprise-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
 
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-</tr>
-</table>
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -372,24 +189,10 @@ Additional lists:
 [CM_CellularEntries CSP](cm-cellularentries-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -398,24 +201,10 @@ Additional lists:
 [CM_ProxyEntries CSP](cm-proxyentries-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -424,24 +213,10 @@ Additional lists:
 [CellularSettings CSP](cellularsettings-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -450,24 +225,10 @@ Additional lists:
 [CertificateStore CSP](certificatestore-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -476,24 +237,10 @@ Additional lists:
 [CleanPC CSP](cleanpc-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -502,24 +249,10 @@ Additional lists:
 [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -528,24 +261,10 @@ Additional lists:
 [CustomDeviceUI CSP](customdeviceui-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -554,24 +273,10 @@ Additional lists:
 [DMAcc CSP](dmacc-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -580,24 +285,10 @@ Additional lists:
 [DMClient CSP](dmclient-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -606,24 +297,10 @@ Additional lists:
 [Defender CSP](defender-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -632,24 +309,10 @@ Additional lists:
 [DevDetail CSP](devdetail-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -658,24 +321,10 @@ Additional lists:
 [DevInfo CSP](devinfo-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -684,24 +333,10 @@ Additional lists:
 [DeveloperSetup CSP](developersetup-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -710,24 +345,10 @@ Additional lists:
 [DeviceInstanceService CSP](deviceinstanceservice-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -736,24 +357,10 @@ Additional lists:
 [DeviceLock CSP](devicelock-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -762,24 +369,10 @@ Additional lists:
 [DeviceManageability CSP](devicemanageability-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -788,25 +381,10 @@ Additional lists:
 [DeviceStatus CSP](devicestatus-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -815,24 +393,10 @@ Additional lists:
 [DiagnosticLog CSP](diagnosticlog-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -841,25 +405,10 @@ Additional lists:
 [DynamicManagement CSP](dynamicmanagement-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -868,24 +417,10 @@ Additional lists:
 [EMAIL2 CSP](email2-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -894,24 +429,10 @@ Additional lists:
 [EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>6</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -920,24 +441,10 @@ Additional lists:
 [EnterpriseAPN CSP](enterpriseapn-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -946,24 +453,10 @@ Additional lists:
 [EnterpriseAppManagement CSP](enterpriseappmanagement-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -972,24 +465,10 @@ Additional lists:
 [EnterpriseAppVManagement CSP](enterpriseappvmanagement-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -998,24 +477,10 @@ Additional lists:
 [EnterpriseAssignedAccess CSP](enterpriseassignedaccess-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1024,25 +489,10 @@ Additional lists:
 [EnterpriseDataProtection CSP](enterprisedataprotection-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" />
-<a href="/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection">Only for mobile application management (MAM)</td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes<br> [Only for mobile application management (MAM)](/windows/client-management/mdm/implement-server-side-mobile-application-management#integration-with-windows-information-protection)|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1051,24 +501,10 @@ Additional lists:
 [EnterpriseDesktopAppManagement CSP](enterprisedesktopappmanagement-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1077,24 +513,10 @@ Additional lists:
 [EnterpriseExt CSP](enterpriseext-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1103,24 +525,10 @@ Additional lists:
 [EnterpriseExtFileSystem CSP](enterpriseextfilessystem-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1129,24 +537,10 @@ Additional lists:
 [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1155,24 +549,10 @@ Additional lists:
 [eUICCs CSP](euiccs-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3<sup></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1181,24 +561,10 @@ Additional lists:
 [FileSystem CSP](filesystem-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1207,24 +573,10 @@ Additional lists:
 [Firewall CSP](firewall-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1233,24 +585,10 @@ Additional lists:
 [HealthAttestation CSP](healthattestation-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1259,24 +597,10 @@ Additional lists:
 [HotSpot CSP](hotspot-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1285,26 +609,10 @@ Additional lists:
 [LanguagePackManagement CSP](language-pack-management-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-	<th>Mobile Enterprise</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|Mobile Enterprise|
+|--- |--- |--- |--- |--- |--- |--- |
+|Yes|Yes|No|Yes|Yes|No|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1312,24 +620,10 @@ Additional lists:
 [Maps CSP](maps-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1338,24 +632,10 @@ Additional lists:
 [Messaging CSP](messaging-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1364,24 +644,10 @@ Additional lists:
 [MultiSIM CSP](multisim-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1390,24 +656,10 @@ Additional lists:
 [NAP CSP](nap-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1416,24 +668,10 @@ Additional lists:
 [NAPDEF CSP](napdef-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1442,24 +680,10 @@ Additional lists:
 [NetworkProxy CSP](networkproxy-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1468,24 +692,10 @@ Additional lists:
 [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1494,24 +704,10 @@ Additional lists:
 [NodeCache CSP](nodecache-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1520,24 +716,10 @@ Additional lists:
 [Office CSP](office-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1546,24 +728,10 @@ Additional lists:
 [PROXY CSP](proxy-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1572,24 +740,10 @@ Additional lists:
 [PXLOGICAL CSP](pxlogical-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1598,24 +752,10 @@ Additional lists:
 [PassportForWork CSP](passportforwork-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1624,24 +764,10 @@ Additional lists:
 [Personalization CSP](personalization-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>2</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1650,24 +776,10 @@ Additional lists:
 [Policy CSP](policy-configuration-service-provider.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1676,24 +788,10 @@ Additional lists:
 [PolicyManager CSP](policymanager-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1702,24 +800,10 @@ Additional lists:
 [Provisioning CSP](provisioning-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>B<sup></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1728,24 +812,10 @@ Additional lists:
 [Reboot CSP](reboot-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1754,24 +824,10 @@ Additional lists:
 [Registry CSP](registry-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1780,24 +836,10 @@ Additional lists:
 [RemoteFind CSP](remotefind-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1806,24 +848,10 @@ Additional lists:
 [RemoteLock](remotelock-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1832,24 +860,10 @@ Additional lists:
 [RemoteRing CSP](remotering-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1858,24 +872,10 @@ Additional lists:
 [RemoteWipe CSP](remotewipe-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1884,24 +884,10 @@ Additional lists:
 [Reporting CSP](reporting-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1910,24 +896,10 @@ Additional lists:
 [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1936,24 +908,10 @@ Additional lists:
 [SUPL CSP](supl-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1962,24 +920,10 @@ Additional lists:
 [SecureAssessment CSP](secureassessment-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -1988,24 +932,10 @@ Additional lists:
 [SecurityPolicy CSP](securitypolicy-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2014,24 +944,10 @@ Additional lists:
 [SharedPC CSP](sharedpc-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2040,24 +956,10 @@ Additional lists:
 [Storage CSP](storage-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2066,25 +968,10 @@ Additional lists:
 [SurfaceHub](surfacehub-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|||||||
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2093,24 +980,10 @@ Additional lists:
 [TenantLockdown CSP](tenantlockdown-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2119,24 +992,10 @@ Additional lists:
 [TPMPolicy CSP](tpmpolicy-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2145,24 +1004,10 @@ Additional lists:
 [UEFI CSP](uefi-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>4</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2171,24 +1016,10 @@ Additional lists:
 [UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2197,24 +1028,10 @@ Additional lists:
 [Update CSP](update-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2223,24 +1040,10 @@ Additional lists:
 [VPN CSP](vpn-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2249,24 +1052,10 @@ Additional lists:
 [VPNv2 CSP](vpnv2-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2275,25 +1064,10 @@ Additional lists:
 [W4 APPLICATION CSP](w4-application-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+||||||Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2302,24 +1076,10 @@ Additional lists:
 [WiFi CSP](wifi-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2328,24 +1088,10 @@ Additional lists:
 [Win32AppInventory CSP](win32appinventory-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2354,24 +1100,10 @@ Additional lists:
 [Win32CompatibilityAppraiser CSP](win32compatibilityappraiser-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2380,24 +1112,10 @@ Additional lists:
 [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>1</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2406,24 +1124,10 @@ Additional lists:
 [WindowsDefenderApplicationGuard CSP](windowsdefenderapplicationguard-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>3</sup></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|No|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2433,24 +1137,10 @@ Additional lists:
 [WindowsLicensing CSP](windowslicensing-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|Yes|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2459,24 +1149,10 @@ Additional lists:
 [WindowsSecurityAuditing CSP](windowssecurityauditing-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|No|No|No|No|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2485,24 +1161,10 @@ Additional lists:
 [WiredNetwork CSP](wirednetwork-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td><img src="images/crossmark.png" alt="cross mark" /></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-	<td><img src="images/checkmark.png" alt="check mark" /><sup>5</sup></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+|No|Yes|Yes|Yes|Yes|Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2511,24 +1173,10 @@ Additional lists:
 [w7 APPLICATION CSP](w7-application-csp.md)
 
 <!--StartSKU-->
-<table>
-<tr>
-	<th>Home</th>
-	<th>Pro</th>
-	<th>Business</th>
-	<th>Enterprise</th>
-	<th>Education</th>
-	<th>Mobile</th>
-</tr>
-<tr>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table>
+
+|Home|Pro|Business|Enterprise|Education|Mobile|
+|--- |--- |--- |--- |--- |--- |
+||||||Yes|
 
 <!--EndSKU-->
 <!--EndCSP-->
@@ -2555,41 +1203,41 @@ The following list shows the CSPs supported in HoloLens devices:
 
 | Configuration service provider        | HoloLens (1st gen) Development Edition      | HoloLens (1st gen) Commercial Suite | HoloLens 2 |
 |------|--------|--------|--------|
-| [AccountManagement CSP](accountmanagement-csp.md)   | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png)
-| [Accounts CSP](accounts-csp.md)    | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [ApplicationControl CSP](applicationcontrol-csp.md) | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png) |  ![check mark](images/checkmark.png) |
-| [AppLocker CSP](applocker-csp.md)      | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![cross mark](images/crossmark.png) |
-| [AssignedAccess CSP](assignedaccess-csp.md)      | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
-| [CertificateStore CSP](certificatestore-csp.md)    | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)| ![check mark](images/checkmark.png) |
-| [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [DevDetail CSP](devdetail-csp.md)   | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [DeveloperSetup CSP](developersetup-csp.md)   | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>2</sup>   (runtime provisioning via provisioning packages only; no MDM support)| ![check mark](images/checkmark.png) |
-| [DeviceManageability CSP](devicemanageability-csp.md) | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [DeviceStatus CSP](devicestatus-csp.md)  | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)  | ![check mark](images/checkmark.png) |
-| [DevInfo CSP](devinfo-csp.md)  | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [DiagnosticLog CSP](diagnosticlog-csp.md)  | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [DMAcc CSP](dmacc-csp.md)      | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [DMClient CSP](dmclient-csp.md)    | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md) | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>10</sup>  |
-| [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [NetworkProxy CSP](networkproxy-csp.md) | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) |
-| [NetworkQoSPolicy CSP](networkqospolicy-csp.md)  | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png)       | ![check mark](images/checkmark.png) <sup>8</sup>|
-| [NodeCache CSP](nodecache-csp.md)  | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-[PassportForWork CSP](passportforwork-csp.md) | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) | ![check mark](images/checkmark.png) |
-| [Policy CSP](policy-configuration-service-provider.md)    | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [RemoteFind CSP](remotefind-csp.md)    | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
-| [RemoteWipe CSP](remotewipe-csp.md) (**doWipe** and **doWipePersistProvisionedData** nodes only)  | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>4</sup>       | ![check mark](images/checkmark.png) |
-| [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [TenantLockdown CSP](tenantlockdown-csp.md) | ![cross mark.](images/crossmark.png) | ![cross mark](images/crossmark.png) | ![check mark](images/checkmark.png) <sup>10</sup>  |
-| [Update CSP](update-csp.md)     | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [VPNv2 CSP](vpnv2-csp.md)    | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [WiFi CSP](wifi-csp.md)     | ![cross mark.](images/crossmark.png) | ![check mark](images/checkmark.png)       | ![check mark](images/checkmark.png) |
-| [WindowsLicensing CSP](windowslicensing-csp.md)   | ![check mark.](images/checkmark.png) | ![check mark](images/checkmark.png)       | ![cross mark](images/crossmark.png) |
+| [AccountManagement CSP](accountmanagement-csp.md)   | No | Yes        | Yes
+| [Accounts CSP](accounts-csp.md)    | Yes | Yes | Yes |
+| [ApplicationControl CSP](applicationcontrol-csp.md) | No | No |  Yes |
+| [AppLocker CSP](applocker-csp.md)      | No | Yes       | No |
+| [AssignedAccess CSP](assignedaccess-csp.md)      | No | Yes        | Yes |
+| [CertificateStore CSP](certificatestore-csp.md)    | Yes | Yes| Yes |
+| [ClientCertificateInstall CSP](clientcertificateinstall-csp.md)  | No | Yes       | Yes |
+| [DevDetail CSP](devdetail-csp.md)   | Yes | Yes       | Yes |
+| [DeveloperSetup CSP](developersetup-csp.md)   | No | Yes    (runtime provisioning via provisioning packages only; no MDM support)| Yes |
+| [DeviceManageability CSP](devicemanageability-csp.md) | No | No | Yes |
+| [DeviceStatus CSP](devicestatus-csp.md)  | No | Yes  | Yes |
+| [DevInfo CSP](devinfo-csp.md)  | Yes | Yes       | Yes |
+| [DiagnosticLog CSP](diagnosticlog-csp.md)  | No | Yes       | Yes |
+| [DMAcc CSP](dmacc-csp.md)      | Yes | Yes       | Yes |
+| [DMClient CSP](dmclient-csp.md)    | Yes | Yes       | Yes |
+| [EnrollmentStatusTracking CSP](enrollmentstatustracking-csp.md) | No | No | Yes   |
+| [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md) | No | Yes       | Yes |
+| [NetworkProxy CSP](networkproxy-csp.md) | No | No | Yes |
+| [NetworkQoSPolicy CSP](networkqospolicy-csp.md)  | No | No       | Yes |
+| [NodeCache CSP](nodecache-csp.md)  | Yes | Yes       | Yes |
+[PassportForWork CSP](passportforwork-csp.md) | No | Yes | Yes |
+| [Policy CSP](policy-configuration-service-provider.md)    | No | Yes       | Yes |
+| [RemoteFind CSP](remotefind-csp.md)    | No | Yes        | Yes |
+| [RemoteWipe CSP](remotewipe-csp.md) (**doWipe** and **doWipePersistProvisionedData** nodes only)  | No | Yes        | Yes |
+| [RootCATrustedCertificates CSP](rootcacertificates-csp.md)   | No | Yes       | Yes |
+| [TenantLockdown CSP](tenantlockdown-csp.md) | No | No | Yes   |
+| [Update CSP](update-csp.md)     | No | Yes       | Yes |
+| [VPNv2 CSP](vpnv2-csp.md)    | No | Yes       | Yes |
+| [WiFi CSP](wifi-csp.md)     | No | Yes       | Yes |
+| [WindowsLicensing CSP](windowslicensing-csp.md)   | Yes | Yes       | No |
 
  
 ## <a href="" id="surfacehubcspsupport"></a>CSPs supported in Microsoft Surface Hub
 
--   [Accounts CSP](accounts-csp.md)<sup>9</sup> 
+-   [Accounts CSP](accounts-csp.md) 
     > [!NOTE]
     > Support in Surface Hub is limited to **Domain\ComputerName**.
 -   [AccountManagement CSP](accountmanagement-csp.md)
@@ -2605,21 +1253,21 @@ The following list shows the CSPs supported in HoloLens devices:
 -   [DMAcc CSP](dmacc-csp.md)
 -   [DMClient CSP](dmclient-csp.md)
 -   [EnterpriseModernAppManagement CSP](enterprisemodernappmanagement-csp.md)
--   [Firewall-CSP](firewall-csp.md)<sup>9</sup> 
+-   [Firewall-CSP](firewall-csp.md) 
 -   [HealthAttestation CSP](healthattestation-csp.md)
 -   [NetworkQoSPolicy CSP](networkqospolicy-csp.md)
 -   [NodeCache CSP](nodecache-csp.md)
 -   [PassportForWork CSP](passportforwork-csp.md)
 -   [Policy CSP](policy-configuration-service-provider.md)
 -   [Reboot CSP](reboot-csp.md)
--   [RemoteWipe CSP](remotewipe-csp.md)<sup>9</sup> 
+-   [RemoteWipe CSP](remotewipe-csp.md) 
 -   [Reporting CSP](reporting-csp.md)
 -   [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 -   [SurfaceHub CSP](surfacehub-csp.md)
 -   [UEFI CSP](uefi-csp.md)
--   [Wifi-CSP](wifi-csp.md)<sup>9</sup> 
+-   [Wifi-CSP](wifi-csp.md) 
 -   [WindowsAdvancedThreatProtection CSP](windowsadvancedthreatprotection-csp.md)
--   [Wirednetwork-CSP](wirednetwork-csp.md)<sup>9</sup> 
+-   [Wirednetwork-CSP](wirednetwork-csp.md) 
 
 
 ## <a href="" id="iotcoresupport"></a>CSPs supported in Windows 10 IoT Core
@@ -2640,7 +1288,7 @@ The following list shows the CSPs supported in HoloLens devices:
 - [Policy CSP](policy-configuration-service-provider.md)
 - [Provisioning CSP (Provisioning only)](provisioning-csp.md)
 - [Reboot CSP](reboot-csp.md)
-- [RemoteWipe CSP](remotewipe-csp.md)<sup>5<sup>
+- [RemoteWipe CSP](remotewipe-csp.md)
 - [RootCATrustedCertificates CSP](rootcacertificates-csp.md)
 - [UnifiedWriteFilter CSP](unifiedwritefilter-csp.md)
 - [Update CSP](update-csp.md)
@@ -2648,18 +1296,4 @@ The following list shows the CSPs supported in HoloLens devices:
 - [WiFi CSP](wifi-csp.md)
 
 <hr>
-
- Footnotes:
-- A - Only for mobile application management (MAM).
-- B - Provisioning only.
-- 1 - Added in Windows 10, version 1607.
-- 2 - Added in Windows 10, version 1703.
-- 3 - Added in Windows 10, version 1709.
-- 4 - Added in Windows 10, version 1803.
-- 5 - Added in Windows 10, version 1809.
-- 6 - Added in Windows 10, version 1903.
-- 7 - Added in Windows 10, version 1909.
-- 8 - Added in Windows 10, version 2004.
-- 9 - Added in Windows 10 Team 2020 Update
-- 10 - Added in [Windows Holographic, version 20H2](/hololens/hololens-release-notes#windows-holographic-version-20h2)
 

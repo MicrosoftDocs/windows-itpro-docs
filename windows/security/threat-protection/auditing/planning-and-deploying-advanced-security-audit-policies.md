@@ -14,14 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.date: 04/19/2017
-ms.technology: mde
+ms.date: 09/09/2021
+ms.technology: windows-sec
 ---
 
 # Plan and deploy advanced security audit policies
 
-**Applies to**
--   Windows 10
 
 This article for IT professionals explains the options that security policy planners should consider and the tasks they must complete to deploy an effective security audit policy in a network that includes advanced security audit policies.
 

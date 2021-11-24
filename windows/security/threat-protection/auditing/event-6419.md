@@ -7,18 +7,14 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
-ms.date: 04/19/2017
+ms.date: 09/09/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 6419(S): A request was made to disable a device.
-
-**Applies to**
--   Windows 10
--   Windows Server 2016
 
 
 <img src="images/event-6419.png" alt="Event 6419 illustration" width="526" height="682" hspace="10" align="left" />

@@ -15,14 +15,22 @@ manager: dansimp
 # UnifiedWriteFilter (reference)
 
 
-Use UnifiedWriteFilter to configure settings for the Unified Write Filter (UWF) in your device to help protect your physical storage media, including most standard writable storage types that are supported by the OS, such as physical hard disks, solidate-state drives, internal USB devices, external SATA devices, and so on. You can also use UWF to make read-only media appear to the OS as a writeable volume.
+Use UnifiedWriteFilter to configure settings for the Unified Write Filter (UWF). It helps protect your physical storage media, including most standard writable storage types that are supported by the OS, such as:
+
+- Physical hard disks
+- Solidate-state drives
+- Internal USB devices
+- External SATA devices
+- And so on
+
+You can also use UWF to make read-only media appear to the OS as a writeable volume.
 
 >[!IMPORTANT]
->You cannot use UWF to protect external USB devices or flash drives.
+>You can't use UWF to protect external USB devices or flash drives.
 
-UWF intercepts all write attempts to a protected volume and redirects those write attempts to a virtual overlay. This improves the reliability and stability of your device and reduces the wear on write-sensitive media, such as flash memory media like solid-state drives.
+UWF intercepts all write attempts to a protected volume and redirects these write attempts to a virtual overlay. This feature improves the reliability and stability of your device. It also reduces the wear on write-sensitive media, such as flash memory media like solid-state drives.
 
-The overlay does not mirror the entire volume, but dynamically grows to keep track of redirected writes. Generally the overlay is stored in system memory, although you can cache a portion of the overlay on a physical volume. 
+The overlay doesn't mirror the entire volume. It dynamically grows to keep track of redirected writes. Generally, the overlay is stored in system memory. You can cache a portion of the overlay on a physical volume.
 
 >[!NOTE]
 >UWF fully supports the NTFS system; however, during device startup, NTFS file system journal files can write to a protected volume before UWF has loaded and started protecting the volume. 
@@ -32,9 +40,9 @@ The overlay does not mirror the entire volume, but dynamically grows to keep tra
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | X |  |  |  |  X |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings | ✔️ |  |  |  ✔️ |
 
 ## FilterEnabled
 
@@ -42,9 +50,9 @@ Set to **True** to enable UWF.
 
 ## OverlayFlags
 
-OverlayFlags specifies whether to allow writes to unused space on the volume to pass through, and not be redirected to the overlay file. Enabling this setting helps conserve space on the overlay file. 
+OverlayFlags specifies whether to allow writes to unused space on the volume to pass through, and not redirect to the overlay file. Enabling this setting helps conserve space on the overlay file. 
 
-- Value `0` (default value when [OverlayType](#overlaytype) is not **Disk**): writes are redirected to the overlay file
+- Value `0` (default value when [OverlayType](#overlaytype) isn't **Disk**): writes are redirected to the overlay file
 - Value `1`(default value when [OverlayType](#overlaytype) is  **Disk**): writes to unused space on the volume are allowed to pass through without being redirected to the overlay file.
 
 ## OverlaySize
@@ -60,7 +68,7 @@ OverlayType specifies where the overlay is stored. Select between **RAM** (defau
 
 ## RegistryExclusions
 
-You can add or remove registry entries that will be excluded from UWF filtering. When a registry key is in the exclusion list, all writes to that registry key bypass UWF filtering and are written directly to the registry and persist after the device restarts.
+You can add or remove registry entries that will be excluded from UWF filtering. When a registry key is in the exclusion list, all writes to that registry key bypass UWF filtering. They're written directly to the registry and persist after the device restarts.
 
 Use **Add** to add a registry entry to the exclusion list after you restart the device.
 

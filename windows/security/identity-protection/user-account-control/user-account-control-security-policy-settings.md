@@ -1,5 +1,5 @@
 ---
-title: User Account Control security policy settings (Windows 10)
+title: User Account Control security policy settings (Windows)
 description: You can use security policies to configure how User Account Control works in your organization.
 ms.assetid: 3D75A9AC-69BB-4EF2-ACB3-1769791E1B98
 ms.reviewer: 
@@ -14,13 +14,16 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 09/24/2021
 ---
 
 # User Account Control security policy settings
 
 **Applies to**
 -   Windows 10
+-   Windows 11
+-   Windows Server 2016 and above
+    
 
 You can use security policies to configure how User Account Control works in your organization. They can be configured locally by using the Local Security Policy snap-in (secpol.msc) or configured for the domain, OU, or specific groups by Group Policy.
 
@@ -88,7 +91,7 @@ This policy setting controls whether applications that request to run with a Use
 This policy setting controls the behavior of all User Account Control (UAC) policy settings for the computer. If you change this policy setting, you must restart your computer.
 
 -   **Enabled** (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the Administrators group to run in Admin Approval Mode.
--   **Disabled** Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
+-   **Disabled** Admin Approval Mode and all related UAC policy settings are disabled. Note: If this policy setting is disabled, the Windows Security app notifies you that the overall security of the operating system has been reduced.
 
 ## User Account Control: Switch to the secure desktop when prompting for elevation
 

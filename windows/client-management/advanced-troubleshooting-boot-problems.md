@@ -31,8 +31,7 @@ There are several reasons why a Windows-based computer may have problems during 
 
 **1. PreBoot**
 
-The PC’s firmware initiates a Power-On Self Test (POST) and loads firmware settings. This pre-boot process ends when a valid system disk is detected. Firmware reads the master boot record (MBR), and then starts Windows Boot
-Manager.
+The PC’s firmware initiates a Power-On Self Test (POST) and loads firmware settings. This pre-boot process ends when a valid system disk is detected. Firmware reads the master boot record (MBR), and then starts Windows Boot Manager.
 
 **2. Windows Boot Manager**
 
@@ -303,7 +302,7 @@ problems can be solved. Modify the registry at your own risk.
 
 To troubleshoot this Stop error, follow these steps to filter the drivers:
 
-1.  Go to Window Recovery Environment (WinRE) by putting an ISO disk of the system in the disk drive. The ISO should be of same version of Windows or a later version.
+1.  Go to Windows Recovery Environment (WinRE) by putting an ISO disk of the system in the disk drive. The ISO should be of same version of Windows or a later version.
 
 2.  Open the registry.
 

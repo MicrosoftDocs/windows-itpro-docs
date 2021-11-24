@@ -1,5 +1,5 @@
 ---
-title: User Account Control Group Policy and registry key settings (Windows 10)
+title: User Account Control Group Policy and registry key settings (Windows)
 description: Here's a list of UAC  Group Policy and registry key settings that your organization can use to manage UAC.
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,7 +21,8 @@ ms.reviewer:
 **Applies to**
 
 - Windows 10
-- Windows Server 2016
+- Windows 11
+- Windows Server 2016 and above
 
 ## Group Policy settings
 There are 10 Group Policy settings that can be configured for User Account Control (UAC). The table lists the default for each of the policy settings, and the following sections explain the different UAC policy settings and provide recommendations. These policy settings are located in **Security Settings\\Local Policies\\Security Options** in the Local Security Policy snap-in. For more information about each of the Group Policy settings, see the Group Policy description. For information about the registry key settings, see [Registry key settings](#registry-key-settings).
@@ -149,7 +150,7 @@ The options are:
 -   **Enabled.** (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the **Administrators** group to run in Admin Approval Mode.
 -   **Disabled.** Admin Approval Mode and all related UAC policy settings are disabled.
 
-**Note** If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
+**Note** If this policy setting is disabled, the Windows Security app notifies you that the overall security of the operating system has been reduced.
 
 ### User Account Control: Switch to the secure desktop when prompting for elevation
 

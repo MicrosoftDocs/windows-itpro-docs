@@ -3,7 +3,7 @@ title: Create a Windows 10 reference image (Windows 10)
 description: Creating a reference image is important because that image serves as the foundation for the devices in your organization.
 ms.assetid: 9da2fb57-f2ff-4fce-a858-4ae4c237b5aa
 ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: deploy, deployment, configure, customize, install, installation
 ms.prod: w10
