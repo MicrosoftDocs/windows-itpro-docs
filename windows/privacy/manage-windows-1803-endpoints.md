@@ -297,7 +297,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 
 ## Office
 
-The following endpoints are used to connect to the Microsoft 365 admin center's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
+The following endpoints are used to connect to the Microsoft 365 admin center's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2&view=o365-worldwide#BKMK_Portal-identity). 
 You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps.
 If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.
 
@@ -309,7 +309,7 @@ If you turn off traffic for these endpoints, users won't be able to save documen
 |   |    | *.s-msedge.net  |
 |   | HTTPS | ocos-office365-s2s.msedge.net |
 
-The following endpoint is used to connect to the Microsoft 365 admin center's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US#BKMK_Portal-identity). 
+The following endpoint is used to connect to the Microsoft 365 admin center's shared infrastructure, including Office. For more info, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2&view=o365-worldwide#BKMK_Portal-identity). 
 You can turn this off by removing all Microsoft Office apps and the Mail and Calendar apps.
 If you turn off traffic for these endpoints, users won't be able to save documents to the cloud or see their recently used documents.
 
@@ -332,7 +332,7 @@ If you [turn off traffic for this endpoint](manage-connections-from-windows-oper
 |----------------|----------|------------|
 | onedrive | HTTP \ HTTPS   | g.live.com/1rewlive5skydrive/ODSUProduction |
 
-The following endpoint is used by OneDrive for Business to download and verify app updates. For more info, see [Office 365 URLs and IP address ranges](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US).
+The following endpoint is used by OneDrive for Business to download and verify app updates. For more info, see [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2&view=o365-worldwide).
 To turn off traffic for this endpoint, uninstall OneDrive for Business. In this case, your device will not able to get OneDrive for Business app updates.
 
 | Source process | Protocol | Destination |
@@ -460,5 +460,5 @@ To view endpoints for non-Enterprise Windows 10 editions, see:
 
 ## Related links
 
-- [Office 365 URLs and IP address ranges](https://support.office.com/en-us/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&rs=en-US&ad=US)
+- [Office 365 URLs and IP address ranges](/microsoft-365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2&view=o365-worldwide)
 - [Network infrastructure requirements for Microsoft Intune](/mem/intune/fundamentals/intune-endpoints)

@@ -31,7 +31,7 @@ To manage updates with Windows Update for Business as described in this article,
 
 - Create Active Directory security groups that align with the deployment rings you use to phase deployment of updates.
 - Allow access to the Windows Update service.
-- Download and install ADMX templates appropriate to your Windows 10 version. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759) and [Step-By-Step: Managing Windows 10 with Administrative templates](/archive/blogs/canitpro/step-by-step-managing-windows-10-with-administrative-templates).
+- Download and install ADMX templates appropriate to your Windows 10 version. For more information, see [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) and [Step-By-Step: Managing Windows 10 with Administrative templates](/archive/blogs/canitpro/step-by-step-managing-windows-10-with-administrative-templates).
 
 ## Set up Windows Update for Business
 

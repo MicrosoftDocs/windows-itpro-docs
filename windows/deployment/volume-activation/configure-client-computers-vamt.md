@@ -65,12 +65,12 @@ Enable the VAMT to access client computers across multiple subnets using the **W
 
    In certain scenarios, only a limited set of TCP/IP ports are allowed through a hardware firewall. Administrators must ensure that WMI (which relies on RPC over TCP/IP) is allowed through these types of firewalls. By default, the WMI port is a dynamically allocated random port above 1024. The following Microsoft knowledge article discusses how administrators can limit the range of dynamically-allocated ports. This is useful if, for example, the hardware firewall only allows traffic in a certain range of ports.
 
-   For more info, see [How to configure RPC dynamic port allocation to work with firewalls](https://support.microsoft.com/help/929851).
+   For more info, see [How to configure RPC dynamic port allocation to work with firewalls](/troubleshoot/windows-server/networking/default-dynamic-port-range-tcpip-chang).
 
 ## Create a registry value for the VAMT to access workgroup-joined computer
 
 > [WARNING]  
-> This section contains information about how to modify the registry. Make sure to back up the registry before you modify it; in addition, ensure that you know how to restore the registry, if a problem occurs. For more information about how to back up, restore, and modify the registry, see [Windows registry information for advanced users](https://support.microsoft.com/help/256986).
+> This section contains information about how to modify the registry. Make sure to back up the registry before you modify it; in addition, ensure that you know how to restore the registry, if a problem occurs. For more information about how to back up, restore, and modify the registry, see [Windows registry information for advanced users](/troubleshoot/windows-server/performance/windows-registry-advanced-users).
 
 On the client computer, create the following registry key using regedit.exe.
 

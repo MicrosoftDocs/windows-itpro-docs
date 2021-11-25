@@ -158,4 +158,4 @@ For example: An extend code of **0x4000D**, represents a problem during phase 4 
 <br>[Windows 10 Enterprise system requirements](https://technet.microsoft.com/windows/dn798752.aspx)
 <br>[Windows 10 Specifications](https://www.microsoft.com/windows/Windows-/ifications)
 <br>[Windows 10 IT pro forums](https://social.technet.microsoft.com/Forums/en-US/home?category=Windows10ITPro)
-<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](https://support.microsoft.com/kb/947821)
+<br>[Fix Windows Update errors by using the DISM or System Update Readiness tool](/troubleshoot/windows-server/deployment/fix-windows-update-errors)
