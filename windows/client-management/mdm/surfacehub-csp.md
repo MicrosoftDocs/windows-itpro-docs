@@ -282,7 +282,7 @@ SurfaceHub
 <p>Added in Windows 10, version 1703. Node for the Skype for Business settings.
 
 <a href="" id="inboxapps-skypeforbusiness-domainname"></a>**InBoxApps/SkypeForBusiness/DomainName**
-<p>Added in Windows 10, version 1703. Specifies the domain of the Skype for Business account when you are using Active Directory. For more information, see <a href="https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_users" data-raw-source="[Set up Skype for Business Online](https://support.office.com/en-us/article/Set-up-Skype-for-Business-Online-40296968-e779-4259-980b-c2de1c044c6e?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_users)">Set up Skype for Business Online</a>.
+<p>Added in Windows 10, version 1703. Specifies the domain of the Skype for Business account when you are using Active Directory. For more information, see <a href="/SkypeForBusiness/set-up-skype-for-business-online" data-raw-source="[Set up Skype for Business Online](/SkypeForBusiness/set-up-skype-for-business-online)">Set up Skype for Business Online</a>.
 
 <p>The data type is string. Supported operation is Get and Replace.
 

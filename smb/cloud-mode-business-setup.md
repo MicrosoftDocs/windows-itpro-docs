@@ -50,12 +50,12 @@ Here's a few things to keep in mind before you get started:
 To set up a cloud infrastructure for your organization, follow the steps in this section.
 
 ### 1.1 Set up Office 365 for business
-See <a href="https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa" target="_blank">Set up Office 365 for business</a> to learn more about the setup steps for businesses and nonprofits who have Office 365. You can watch video and learn how to:
+See <a href="/microsoft-365/admin/setup" target="_blank">Set up Office 365 for business</a> to learn more about the setup steps for businesses and nonprofits who have Office 365. You can watch video and learn how to:
 - Plan your setup
 - Create Office 365 accounts and how to add your domain.
 - Install Office
 
-To set up your Microsoft 365 for business tenant, see <a href="https://support.office.com/article/Get-started-with-Office-365-for-Business-d6466f0d-5d13-464a-adcb-00906ae87029" target="_blank">Get Started with Microsoft 365 for business</a>.
+To set up your Microsoft 365 for business tenant, see <a href="/microsoft-365/business-video/what-is-microsoft-365" target="_blank">Get Started with Microsoft 365 for business</a>.
 
 If you're new at setting up Office 365, and you'd like to see how it's done, you can follow these steps to get started:
 
@@ -130,7 +130,7 @@ When adding users, you can also assign admin privileges to certain users in your
 2. In the **Home > Active users** page, add users individually or in bulk.
    - To add users one at a time, select **+ Add a user**.
 
-     If you select this option, you'll see the **New user** screen and you can add details about the new user including their name, user name, role, and so on. You also have the opportunity to assign **Product licenses**. For detailed step-by-step info on adding a user account, see *Add a user account in the admin center* in <a href="https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec" target="_blank">Add users individually or in bulk to Office 365 - Admin Help</a>.
+     If you select this option, you'll see the **New user** screen and you can add details about the new user including their name, user name, role, and so on. You also have the opportunity to assign **Product licenses**. For detailed step-by-step info on adding a user account, see *Add a user account in the admin center* in <a href="/microsoft-365/admin/add-users/add-users" target="_blank">Add users individually or in bulk to Office 365 - Admin Help</a>.
 
      **Figure 8** - Add an individual user
 
@@ -138,7 +138,7 @@ When adding users, you can also assign admin privileges to certain users in your
 
    - To add multiple users at once, select **More** and then choose **+ Import multiple users**. If you select this option, you'll need to create and upload a CSV file containing the list of users.
 
-     The **Import multiple users** screen includes a link where you can learn more about importing multiple users and also links for downloading a sample CSV file (one with headers only and another with headers and sample user information). For detailed step-by-step info on adding multiple users to Office 365, see <a href="https://support.office.com/article/Add-several-users-at-the-same-time-to-Office-365-Admin-Help-1f5767ed-e717-4f24-969c-6ea9d412ca88" target="_blank">Add several users at the same time to Office 365 - Admin Help</a>. Once you've added all the users, don't forget to assign **Product licenses** to the new users.
+     The **Import multiple users** screen includes a link where you can learn more about importing multiple users and also links for downloading a sample CSV file (one with headers only and another with headers and sample user information). For detailed step-by-step info on adding multiple users to Office 365, see <a href="/microsoft-365/enterprise/add-several-users-at-the-same-time" target="_blank">Add several users at the same time to Office 365 - Admin Help</a>. Once you've added all the users, don't forget to assign **Product licenses** to the new users.
 
      **Figure 9** - Import multiple users
 
@@ -571,8 +571,8 @@ See [Add users to Office 365](/microsoft-365/admin/add-users/add-users) to learn
 
 ### For IT admins
 To learn more about the services and tools mentioned in this walkthrough, and learn what other tasks you can do, follow these links:
-- <a href="https://support.office.com/article/Set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa" target="_blank">Set up Office 365 for business</a>
-- Common admin tasks in Office 365 including email and OneDrive in <a href="https://support.office.com/article/Common-management-tasks-for-Office-365-46c667f7-5073-47b9-a75f-05a60cf77d91" target="_blank">Manage Office 365</a>
+- <a href="/microsoft-365/admin/setup" target="_blank">Set up Office 365 for business</a>
+- Common admin tasks in Office 365 including email and OneDrive in <a href="/microsoft-365/admin/" target="_blank">Manage Office 365</a>
 - More info about managing devices, apps, data, troubleshooting, and more in <a href="/intune/" target="_blank">Intune documentation</a>
 - Learn more about Windows client in the [Windows client documentation for IT Pros](/windows/resources/).
 - Info about distributing apps to your employees, managing apps, managing settings, and more in <a href="/microsoft-store/" target="_blank">Microsoft Store for Business</a>
