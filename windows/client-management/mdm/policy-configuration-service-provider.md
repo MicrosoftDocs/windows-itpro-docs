@@ -8797,6 +8797,17 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
 </dl>
 
+### VirtualizationBasedTechnology policies
+
+<dl>
+  <dd>
+    <a href="./policy-csp-virtualizationbasedtechnology.md#virtualizationbasedtechnology-hypervisorenforcedcodeintegrity" id="virtualizationbasedtechnology-hypervisorenforcedcodeintegrity">VirtualizationBasedTechnology/HypervisorEnforcedCodeIntegrity</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-virtualizationbasedtechnology.md#virtualizationbasedtechnology-requireuefimemoryattributestable" id="virtualizationbasedtechnology-requireuefimemoryattributestable">VirtualizationBasedTechnology/RequireUEFIMemoryAttributesTable</a>
+  </dd>
+</dl>
+
 ### Wifi policies
 
 <dl>
