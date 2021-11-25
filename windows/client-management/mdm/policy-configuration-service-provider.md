@@ -8498,7 +8498,16 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 
 <dl>
   <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks" id="timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks">TimeLanguageSettings/BlockCleanupOfUnusedPreinstalledLangPacks</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone" id="timelanguagesettings-configuretimezone">TimeLanguageSettings/ConfigureTimeZone</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-machineuilanguageoverwrite" id="timelanguagesettings-machineuilanguageoverwrite">TimeLanguageSettings/MachineUILanguageOverwrite</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-restrictlanguagepacksandfeaturesinstall" id="timelanguagesettings-restrictlanguagepacksandfeaturesinstall">TimeLanguageSettings/RestrictLanguagePacksAndFeaturesInstall</a>
   </dd>
 </dl>
 
