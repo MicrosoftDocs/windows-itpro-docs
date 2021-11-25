@@ -8980,6 +8980,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsdiscovery" id="wirelessdisplay-allowmdnsdiscovery">WirelessDisplay/AllowMdnsDiscovery</a>
   </dd>
   <dd>
+    <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmovementdetectiononinfrastructure" id="wirelessdisplay-allowmovementdetectiononinfrastructure">WirelessDisplay/AllowMovementDetectionOnInfrastructure</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectionfrompc" id="wirelessdisplay-allowprojectionfrompc">WirelessDisplay/AllowProjectionFromPC</a>
   </dd>
   <dd>
