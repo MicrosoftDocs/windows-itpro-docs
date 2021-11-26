@@ -151,36 +151,12 @@ The following table shows the Microsoft custom elements that this configuration 
 
 These features are available only for the device technique. In addition, the parameter-query and characteristic-query features are not supported for all PXPHYSICAL proxy parameters for all PXADDR types. All parameters can be queried when the PXPHYSICAL proxy PXADDRType is IPv4. For example, if a mobile operator queries the TO-NAPID parameter of a PXPHYSICAL proxy and the PXADDR Type is E164, a noparm is returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Feature</th>
-<th>Available</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>parm-query</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>noparm</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>nocharacteristic</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>characteristic-query</p></td>
-<td><p>Yes</p></td>
-</tr>
-</tbody>
-</table>
+|Feature|Available|
+|--- |--- |
+|parm-query|Yes|
+|noparm|Yes|
+|nocharacteristic|Yes|
+|characteristic-query|Yes|
 
  
 

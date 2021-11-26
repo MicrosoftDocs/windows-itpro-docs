@@ -22,32 +22,10 @@ Each message is composed of a header, specified by the SyncHdr element, and a me
 
 The following table shows the OMA DM versions that are supported.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Version</th>
-<th>Format</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>OMA DM version 1.1.2</p></td>
-<td><p><code>&lt;SyncML xmlns='SYNCML:SYNCML1.1'&gt;</code></p>
-<p><code>&lt;/SyncML&gt;</code></p></td>
-</tr>
-<tr class="even">
-<td><p>OMA DM version 1.2</p></td>
-<td><p><code>&lt;SyncML xmlns='SYNCML:SYNCML1.2'&gt;</code></p>
-<p><code>&lt;/SyncML&gt;</code></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Version|Format|
+|--- |--- |
+|OMA DM version 1.1.2|<code>&lt;SyncML xmlns='SYNCML:SYNCML1.1'&gt;</code></p><p><code>&lt;/SyncML&gt;</code>|
+|OMA DM version 1.2|<code>&lt;SyncML xmlns='SYNCML:SYNCML1.2'&gt;</code></p><p><code>&lt;/SyncML&gt;</code>|
 
 ## File format
 
