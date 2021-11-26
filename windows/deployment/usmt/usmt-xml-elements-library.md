@@ -1997,7 +1997,7 @@ These functions return either a string or a pattern.
     |Setting|Required?|Value|
     |--- |--- |--- |
     | *ObjectType* | Yes | The type of object. Can be Registry or Ini (for an .ini file). |
-    | *EncodedLocationPattern* | Yes | <ul><li>If type of object is Registry, EncodedLocationPattern must be a valid registry path. For example, HKLM\SOFTWARE\MyKey[].</li><li>If the type of object is Ini, then EncodedLocationPattern must be in the following format: <br/>IniFilePath|SectionName[SettingName]</li></ul> |
+    | *EncodedLocationPattern* | Yes | <ul><li>If type of object is Registry, EncodedLocationPattern must be a valid registry path. For example, HKLM\SOFTWARE\MyKey[].</li><li>If the type of object is Ini, then EncodedLocationPattern must be in the following format: <br/>IniFilePath&#124;SectionName[SettingName]</li></ul> |
     | *ExpandContent* | No (default=TRUE) | Can be TRUE or FALSE. If FALSE, then the given location will not be expanded before it is returned. |
 
 ~~~

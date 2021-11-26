@@ -231,10 +231,10 @@ The following table indicates which command-line options are not compatible with
 |/**ui**|||X|X|
 |/**ue**|||X|X|
 |/**uel**|||X|X|
-|/**efs**:*<option>*|||X||
+|/**efs**:*&lt;option&gt;*|||X||
 |/**genconfig**|||N/A||
 |/**config**|||X||
-|*<StorePath>*|||X||
+|*&lt;StorePath&gt;*|||X||
 
 > [!NOTE] 
 > You must specify either the /**key** or /**keyfile** option with the /**encrypt** option.
