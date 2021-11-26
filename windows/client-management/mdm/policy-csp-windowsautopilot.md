@@ -5,7 +5,7 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: aljupudi
+author: alekyaj
 ms.localizationpriority: medium
 ms.date: 11/25/2021
 ms.reviewer: 
