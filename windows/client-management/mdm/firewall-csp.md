@@ -98,7 +98,6 @@ Firewall
 ----------------EdgeTraversal
 ----------------LocalUserAuthorizationList
 ----------------FriendlyName
-----------------IcmpTypesAndCodes
 ----------------Status
 ----------------Name
 ```
