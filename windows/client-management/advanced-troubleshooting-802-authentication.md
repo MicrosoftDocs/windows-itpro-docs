@@ -37,7 +37,7 @@ Viewing [NPS authentication status events](/previous-versions/windows/it-pro/win
 
 NPS event log entries contain information about the connection attempt, including the name of the connection request policy that matched the connection attempt and the network policy that accepted or rejected the connection attempt. If you don't see both success and failure events, see the [NPS audit policy](#audit-policy) section later in this article.
 
-Check Windows Security Event log on the NPS Server for NPS events that correspond to rejected ([event ID 6273](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735399(v%3dws.10))) or accepted ([event ID 6272](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735388(v%3dws.10))) connection attempts.
+Check the Windows Security event log on the NPS Server for NPS events that correspond to rejected ([event ID 6273](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735399(v%3dws.10))) or accepted ([event ID 6272](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc735388(v%3dws.10))) connection attempts.
  
 In the event message, scroll to the very bottom, and then check the [Reason Code](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd197570(v%3dws.10)) field and the text that's associated with it.
  

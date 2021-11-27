@@ -17,13 +17,10 @@ ms.date: 06/26/2017
 
 The HotSpot configuration service provider is used to configure and enable Internet sharing on the device, in which the device can be configured to share its cellular connection over Wi-Fi with up to eight client devices or computers.
 
-> **Note**  HotSpot CSP is only supported in Windows 10 Mobile.
+> [!Note]
+> HotSpot CSP is only supported in Windows 10 Mobile.
 > 
-> 
-> 
-> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application.
-
- 
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application. 
 
 The following shows the HotSpot configuration service provider management object in tree format as used by OMA Client Provisioning. The OMA DM protocol is not supported by this configuration service provider.
 
@@ -62,8 +59,8 @@ By default, any available connection will be used as a public connection. Howeve
 
 Specified connections will be mapped, by policy, to the Internet sharing service. All attempts to enumerate Connection Manager connections for the Internet sharing service will return only the mapped connections.
 
-> **Note**   The mapping policy will also include the connection specified in the **TetheringNAIConnection** value as well.
-
+> [!Note]
+> The mapping policy will also include the connection specified in the **TetheringNAIConnection** value as well.
  
 
 If the specified connections do not exist, Internet sharing will not start because it will not have any cellular connections available to share
@@ -77,9 +74,8 @@ If a CDMA mobile operator requires using a Tethering NAI during Internet sharing
 
 Specified connections will be mapped, by policy, to the Internet sharing service. All attempts to enumerate Connection Manager connections for the Internet sharing service will return only the mapped connections.
 
-> **Note**   The mapping policy will also include the connections specified in the **DedicatedConnections** as well.
-
- 
+> [!Note]
+> The mapping policy will also include the connections specified in the **DedicatedConnections** as well. 
 
 If the specified connections do not exist, Internet sharing will not start because it will not have any cellular connections available to share
 
@@ -109,8 +105,8 @@ Optional. Reference to a localized string, provided by the mobile operator, that
 
 Where `<path_to_res_dll>` is the path to the resource dll that contains the string and `<str_id>` is the string identifier. For more information on language-neutral string resource registry values, see [Using Registry String Redirection](/windows/win32/intl/using-registry-string-redirection) on MSDN.
 
-> **Note**  MOAppLink is required to use the MOHelpMessage setting.
-
+> [!Note]
+> MOAppLink is required to use the MOHelpMessage setting.
  
 
 <a href="" id="entitlementrequired"></a>**EntitlementRequired**
@@ -137,14 +133,14 @@ Optional. The time-out value, in minutes, after which Internet sharing is automa
 Changes to this node require a reboot.
 
 <a href="" id="minwifikeylength"></a>**MinWifiKeyLength**
-> **Important**   This parm is no longer supported for Windows Phone 8.1. The enforced minimum allowed length of the Wi-Fi key is 8.
 
- 
+> [!Important]
+> This parm is no longer supported for Windows Phone 8.1. The enforced minimum allowed length of the Wi-Fi key is 8. 
 
 <a href="" id="minwifissidlength"></a>**MinWifiSSIDLength**
-> **Important**   This parm is no longer supported for Windows Phone 8.1. The enforced minimum allowed length of the Wi-Fi SSID is 1.
 
- 
+> [!Important]
+> This parm is no longer supported for Windows Phone 8.1. The enforced minimum allowed length of the Wi-Fi SSID is 1. 
 
 ## Additional requirements for CDMA networks
 
@@ -169,7 +165,8 @@ For CDMA networks that use a separate Network Access Identity (NAI) for Internet
 </wap-provisioningdoc>
 ```
 
-> **Note**  CDMA devices are limited to one active data connection at a time. This means any application or service (such as email or MMS) that is bound to another connection may not work while Internet sharing is turned on.
+> [!Note]
+> CDMA devices are limited to one active data connection at a time. This means any application or service (such as email or MMS) that is bound to another connection may not work while Internet sharing is turned on.
 
  
 
@@ -186,34 +183,11 @@ The DLL must be code signed in a specific way, see [Sign binaries and packages](
 
 During an entitlement check the Internet Sharing service loads the specified DLL and then call the `IsEntitled` function. The function must connect to the server to perform any required validation, then return one of the following **ICS\_ENTITLEMENT\_RESULT** enumeration values.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p><strong>ENTITLEMENT_SUCCESS</strong></p></td>
-<td><p>The device is allowed to connect to the server.</p></td>
-</tr>
-<tr class="even">
-<td><p><strong>ENTITLEMENT_FAILED</strong></p></td>
-<td><p>The device is not allowed to connect to the server</p></td>
-</tr>
-<tr class="odd">
-<td><p><strong>ENTITLEMENT_UNAVAILABLE</strong></p></td>
-<td><p>The entitlement check failed because the device could not contact the server or acquire a connection to verify entitlement.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Value|Description|
+|--- |--- |
+|**ENTITLEMENT_SUCCESS**|The device is allowed to connect to the server.|
+|**ENTITLEMENT_FAILED**|The device is not allowed to connect to the server|
+|**ENTITLEMENT_UNAVAILABLE**|The entitlement check failed because the device could not contact the server or acquire a connection to verify entitlement.|
 
 The definition for the **ICS\_ENTITLEMENT\_RESULT** is in the header file `IcsEntitlementh`, which ships with the Windows Adaptation Kit.
 
