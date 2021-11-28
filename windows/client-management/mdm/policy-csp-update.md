@@ -3550,9 +3550,11 @@ Value type is a string containing a Windows product, for example, â€œWindows 11â
 
 <!--/Validation-->
 <!--/Policy-->
-By using this Windows Update for Business policy to upgrade devices to a new product (ex. Windows 11) you are agreeing that when applying this operating system to a device either 
-(1) The applicable Windows license was purchased though volume licensing, or 
-(2) That you are authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: (https://www.microsoft.com/Useterms).
+By using this Windows Update for Business policy to upgrade devices to a new product (for example, Windows 11) you are agreeing that when applying this operating system to a device, either:
+
+1. The applicable Windows license was purchased through volume licensing, or
+
+2. That you are authorized to bind your organization and are accepting on its behalf the relevant Microsoft Software License Terms to be found here: (https://www.microsoft.com/Useterms).
 
 <hr/>
 
