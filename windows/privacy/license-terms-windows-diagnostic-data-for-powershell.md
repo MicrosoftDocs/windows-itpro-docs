@@ -25,13 +25,13 @@ MICROSOFT SOFTWARE LICENSE TERMS
 
 MICROSOFT WINDOWS DIAGNOSTIC DATA FOR POWERSHELL
 
-These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). They apply to the software named above and any Microsoft services or software updates (except to the extent such services or updates are accompanied by new or additional terms, in which case those different terms apply prospectively and do not alter your or Microsoft’s rights relating to pre-updated software or services). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.
+These license terms are an agreement between you and Microsoft Corporation (or one of its affiliates). They apply to the software named above and any Microsoft services or software updates (except to the extent such services or updates are accompanied by new or another terms, in which case those different terms apply prospectively and don't alter your or Microsoft’s rights relating to pre-updated software or services). IF YOU COMPLY WITH THESE LICENSE TERMS, YOU HAVE THE RIGHTS BELOW. BY USING THE SOFTWARE, YOU ACCEPT THESE TERMS.
 
 1. INSTALLATION AND USE RIGHTS.
 
 a) General. You may install and use any number of copies of the software.
 
-b) Third Party Software. The software may include third party applications that Microsoft, not the third party, licenses to you under this agreement. Any included notices for third party applications are for your information only.
+b) Third-Party Software. The software may include third-party applications that Microsoft, not the third party, licenses to you under this agreement. Any included notices for third-party applications are for your information only.
 
 2. DATA COLLECTION. The software may collect information about you and your use of the software and send that to Microsoft. Microsoft may use this information to provide services and improve Microsoft’s products and services. Your opt-out rights, if any, are described in the product documentation. Some features in the software may enable collection of data from users of your applications that access or use the software. If you use these features to enable data collection in your applications, you must comply with applicable law, including getting any required user consent, and maintain a prominent privacy policy that accurately informs users about how you use, collect, and share their data. You can learn more about Microsoft’s data collection and use in the product documentation and the Microsoft Privacy Statement at https://go.microsoft.com/fwlink/?LinkId=512132. You agree to comply with all applicable provisions of the Microsoft Privacy Statement.
 
@@ -39,7 +39,7 @@ b) Third Party Software. The software may include third party applications that 
 
 a) work around any technical limitations in the software that only allow you to use it in certain ways;
 
-b) reverse engineer, decompile or disassemble the software;
+b) reverse engineer, decompile, or disassemble the software;
 
 c) remove, minimize, block, or modify any notices of Microsoft or its suppliers in the software;
 
@@ -47,7 +47,9 @@ d) use the software in any way that is against the law or to create or propagate
 
 e) share, publish, distribute, or lend the software, provide the software as a stand-alone hosted solution for others to use, or transfer the software or this agreement to any third party.
 
-4. EXPORT RESTRICTIONS. You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. For further information on export restrictions, visit https://aka.ms/exporting.
+4. EXPORT RESTRICTIONS. You must comply with all domestic and international export laws and regulations that apply to the software, which include restrictions on destinations, end users, and end use. 
+
+     For further information on export restrictions, visit https://aka.ms/exporting.
 
 5. SUPPORT SERVICES. Microsoft is not obligated under this agreement to provide any support services for the software. Any support provided is “as is”, “with all faults”, and without warranty of any kind.
 
@@ -59,7 +61,7 @@ e) share, publish, distribute, or lend the software, provide the software as a s
 
 a) Australia. You have statutory guarantees under the Australian Consumer Law and nothing in this agreement is intended to affect those rights.
 
-b) Canada. If you acquired this software in Canada, you may stop receiving updates by turning off the automatic update feature, disconnecting your device from the Internet (if and when you re-connect to the Internet, however, the software will resume checking for and installing updates), or uninstalling the software. The product documentation, if any, may also specify how to turn off updates for your specific device or software.
+b) Canada. If you acquired this software in Canada, you may stop receiving updates by turning off the automatic update feature, disconnecting your device from the Internet (if and when you reconnect to the Internet, however, the software will resume checking for and installing updates), or uninstalling the software. The product documentation, if any, may also specify how to turn off updates for your specific device or software.
 
 c) Germany and Austria.
 
