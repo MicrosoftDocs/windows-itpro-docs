@@ -113,7 +113,7 @@ Some changes do not invoke a 4738 event.
 
     -   Uppercase full domain name: CONTOSO.LOCAL
 
-    -   For some [well-known security principals](https://support.microsoft.com/kb/243330), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
+    -   For some [well-known security principals](/windows/security/identity-protection/access-control/security-identifiers), such as LOCAL SERVICE or ANONYMOUS LOGON, the value of this field is “NT AUTHORITY”.
 
     -   For local user accounts, this field will contain the name of the computer or device that this account belongs to, for example: “Win81”.
 
@@ -171,7 +171,7 @@ Typical **Primary Group** values for user accounts:
 
 -   513 (Domain Users. For local accounts this RID means Users) – for domain and local users.
 
-    See this article <https://support.microsoft.com/kb/243330> for more information. If the value of **primaryGroupID** attribute of user object was changed, you will see the new value here.
+    See this article </windows/security/identity-protection/access-control/security-identifiers> for more information. If the value of **primaryGroupID** attribute of user object was changed, you will see the new value here.
 
 <!-- -->
 
@@ -193,7 +193,7 @@ Typical **Primary Group** values for user accounts:
 
 -   **New UAC Value** \[Type = UnicodeString\]: specifies flags that control password, lockout, disable/enable, script, and other behavior for the user account. If the value of **userAccountControl** attribute of user object was changed, you will see the new value here.
 
-To decode this value, you can go through the property value definitions in the [User’s or Computer’s account UAC flags.](https://support.microsoft.com/help/305144/how-to-use-useraccountcontrol-to-manipulate-user-account-properties) from largest to smallest. Compare each property value to the flags value in the event. If the flags value in the event is greater than or equal to the property value, then the property is "set" and applies to that event. Subtract the property value from the flags value in the event and note that the flag applies and then go on to the next flag.
+To decode this value, you can go through the property value definitions in the [User’s or Computer’s account UAC flags.](/troubleshoot/windows-server/identity/useraccountcontrol-manipulate-account-properties) from largest to smallest. Compare each property value to the flags value in the event. If the flags value in the event is greater than or equal to the property value, then the property is "set" and applies to that event. Subtract the property value from the flags value in the event and note that the flag applies and then go on to the next flag.
 
 Here's an example: Flags value from event: 0x15
 
@@ -223,7 +223,7 @@ Decoding:
 
 So this UAC flags value decodes to: LOCKOUT and SCRIPT
 
--   **User Account Control** \[Type = UnicodeString\]**:** shows the list of changes in **userAccountControl** attribute. You will see a line of text for each change. See possible values in here: [User’s or Computer’s account UAC flags](https://support.microsoft.com/help/305144/how-to-use-useraccountcontrol-to-manipulate-user-account-properties). In the “User Account Control field text” column, you can see the text that will be displayed in the **User Account Control** field in 4738 event.
+-   **User Account Control** \[Type = UnicodeString\]**:** shows the list of changes in **userAccountControl** attribute. You will see a line of text for each change. See possible values in here: [User’s or Computer’s account UAC flags](/troubleshoot/windows-server/identity/useraccountcontrol-manipulate-account-properties). In the “User Account Control field text” column, you can see the text that will be displayed in the **User Account Control** field in 4738 event.
 
 -   **User Parameters** \[Type = UnicodeString\]: if you change any setting using Active Directory Users and Computers management console in Dial-in tab of user’s account properties, then you will see **&lt;value changed, but not displayed&gt;** in this field. For local accounts, this field is not applicable and always has “&lt;value not set&gt;“ value.
 
