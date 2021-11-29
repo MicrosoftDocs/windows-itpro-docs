@@ -15,7 +15,7 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/19/2017
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Accounts: Limit local account use of blank passwords to console logon only

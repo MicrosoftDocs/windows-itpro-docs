@@ -82,8 +82,6 @@ items:
               href: bulk-assign-and-reclaim-seats-from-user.md
             - name: Get seats assigned to a user
               href: get-seats-assigned-to-a-user.md
-    - name: Enable offline upgrades to Windows 10 for Windows Embedded 8.1 Handheld devices
-      href: enable-offline-updates-for-windows-embedded-8-1-handheld-devices-to-windows-10.md
     - name: Certificate renewal
       href: certificate-renewal-windows-mdm.md
     - name: Disconnecting from the management infrastructure (unenrollment)
@@ -151,8 +149,6 @@ items:
           items: 
             - name: BitLocker DDF file
               href: bitlocker-ddf-file.md
-        - name: BOOTSTRAP CSP
-          href: bootstrap-csp.md
         - name: BrowserFavorite CSP
           href: browserfavorite-csp.md
         - name: CellularSettings CSP
@@ -174,8 +170,6 @@ items:
               href: clientcertificateinstall-ddf-file.md
         - name: CM_CellularEntries CSP
           href: cm-cellularentries-csp.md
-        - name: CM_ProxyEntries CSP
-          href: cm-proxyentries-csp.md
         - name: CMPolicy CSP
           href: cmpolicy-csp.md
         - name: CMPolicyEnterprise CSP
@@ -203,8 +197,6 @@ items:
           items: 
             - name: DeveloperSetup DDF
               href: developersetup-ddf.md
-        - name: DeviceInstanceService CSP
-          href: deviceinstanceservice-csp.md
         - name: DeviceLock CSP
           href: devicelock-csp.md
           items: 

@@ -19,9 +19,9 @@ Use to configure settings related to various types of phone connections.
 
 ## Applies to
 
-| Setting groups  | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings  | X |  X  | X |  |  |
+| Setting groups  | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: | 
+| All settings  | ✔️ | ✔️ |  |  |
 
 
 For each setting group:

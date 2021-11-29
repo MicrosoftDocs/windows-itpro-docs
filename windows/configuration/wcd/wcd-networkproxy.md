@@ -18,9 +18,9 @@ Use for settings related to NetworkProxy.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings |   |  | X |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings |   | ✔️ |  |  |
 
 
 ## AutoDetect

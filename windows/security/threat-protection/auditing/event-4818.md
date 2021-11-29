@@ -11,7 +11,7 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4818(S): Proposed Central Access Policy does not grant the same access permissions as the current Central Access Policy.

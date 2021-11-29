@@ -60,7 +60,7 @@ When using WSUS to manage updates on Windows client devices, start by configurin
 
 3. Right-click **Your_Domain**, and then select **Create a GPO in this domain, and Link it here**.
 
-   ![Example of UI.](images/waas-wsus-fig3.png) 
+   ![Create a GPO in this domain example in the UI.](images/waas-wsus-fig3.png) 
     
    >[!NOTE]
    >In this example, the **Configure Automatic Updates** and **Intranet Microsoft Update Service Location** Group Policy settings are specified for the entire domain. This is not a requirement; you can target these settings to any security group by using Security Filtering or a specific OU.
@@ -73,13 +73,13 @@ When using WSUS to manage updates on Windows client devices, start by configurin
 
 7. Right-click the **Configure Automatic Updates** setting, and then click **Edit**.
 
-   ![Example of UI.](images/waas-wsus-fig4.png)
+   ![Configure Automatic Updates in the UI.](images/waas-wsus-fig4.png)
     
 8. In the **Configure Automatic Updates** dialog box, select **Enable**.
 
 9. Under **Options**, from the **Configure automatic updating** list, select **3 - Auto download and notify for install**, and then click **OK**.
 
-   ![Example of UI.](images/waas-wsus-fig5.png)
+   ![Select Auto download and notify for install in the UI.](images/waas-wsus-fig5.png)
    
    >[!IMPORTANT]
    > Use Regedit.exe to check that the following key is not enabled, because it can break Windows Store connectivity: Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\DoNotConnectToWindowsUpdateInternetLocations
@@ -91,12 +91,12 @@ When using WSUS to manage updates on Windows client devices, start by configurin
 
 11. In the **Specify intranet Microsoft update service location** dialog box, select **Enable**.
 
-12. Under **Options**, in the **Set the intranet update service for detecting updates** and **Set the intranet statistics server** options, type <strong>http://Your_WSUS_Server_FQDN:PortNumber</strong>, and then select **OK**.
+12. Under **Options**, in the **Set the intranet update service for detecting updates** and **Set the intranet statistics server** options, type `http://Your_WSUS_Server_FQDN:PortNumber`, and then select **OK**.
 
     >[!NOTE]
     >The URL `http://CONTOSO-WSUS1.contoso.com:8530` in the following image is just an example. In your environment, be sure to use the server name and port number for your WSUS instance.
     
-     ![Example of UI.](images/waas-wsus-fig6.png)
+     ![Set the intranet statistics server in the UI.](images/waas-wsus-fig6.png)
      
      >[!NOTE]
      >The default HTTP port for WSUS is 8530, and the default HTTP over Secure Sockets Layer (HTTPS) port is 8531. (The other options are 80 and 443; no other ports are supported.)
@@ -116,7 +116,7 @@ You can use computer groups to target a subset of devices that have specific qua
 
 2. Go to *Server_Name*\Computers\All Computers, and then click **Add Computer Group**. 
 
-    ![Example of UI.](images/waas-wsus-fig7.png)
+    ![Add Computer Group in the WSUS Administration UI.](images/waas-wsus-fig7.png)
     
 3. Type **Ring 2 Pilot Business Users** for the name, and then click **Add**.
 
@@ -144,7 +144,7 @@ When new computers communicate with WSUS, they appear in the **Unassigned Comput
 
 2. Select both computers, right-click the selection, and then click **Change Membership**.
 
-    ![Example of UI.](images/waas-wsus-fig8.png)
+    ![Select Change Membership in the UI.](images/waas-wsus-fig8.png)
 
 3. In the **Set Computer Group Membership** dialog box, select the **Ring 2 Pilot Business Users** deployment ring, and then click **OK**.
 
@@ -162,7 +162,7 @@ Another way to add multiple computers to a deployment ring in the WSUS Administr
 
 3. In the search results, select the computers, right-click the selection, and then click **Change Membership**.
 
-    ![Example of UI.](images/waas-wsus-fig9.png)
+    ![Select Change Membership to search for multiple computers in the UI.](images/waas-wsus-fig9.png)
     
 4. Select the **Ring 3 Broad IT** deployment ring, and then click **OK**.
 
@@ -179,7 +179,7 @@ The WSUS Administration Console provides a friendly interface from which you can
 
 1. Open the WSUS Administration Console, and go to *Server_Name*\Options, and then click **Computers**.
 
-     ![Example of UI.](images/waas-wsus-fig10.png)
+     ![Select Comptuers in the WSUS Administration Console.](images/waas-wsus-fig10.png)
      
 2. In the **Computers** dialog box, select **Use Group Policy or registry settings on computers**, and then click **OK**.
 
@@ -203,7 +203,7 @@ Now that WSUS is ready for client-side targeting, complete the following steps t
 
 5. Right-click the **WSUS – Client Targeting – Ring 4 Broad Business Users** GPO, and then click **Edit**.
 
-    ![Example of UI.](images/waas-wsus-fig11.png)
+    ![Select the WSUS ring 4 and edit in group policy.](images/waas-wsus-fig11.png)
     
 6. In the Group Policy Management Editor, go to Computer Configuration\Policies\Administrative Templates\Windows Components\Windows Update.
 
@@ -213,7 +213,7 @@ Now that WSUS is ready for client-side targeting, complete the following steps t
 
 9. In the **Target group name for this computer** box, type *Ring 4 Broad Business Users*. This is the name of the deployment ring in WSUS to which these computers will be added.
 
-    ![Example of UI.](images/waas-wsus-fig12.png)
+    ![Enter the WSUS deployment ring name.](images/waas-wsus-fig12.png)
 
 > [!WARNING]
 > The target group name must match the computer group name.
@@ -230,7 +230,7 @@ Now you’re ready to deploy this GPO to the correct computer security group for
 
 3. Under **Security Filtering**, remove the default **AUTHENTICATED USERS** security group, and then add the **Ring 4 Broad Business Users** group.
 
-    ![Example of UI.](images/waas-wsus-fig13.png)
+    ![Remove the default AUTHENTICATED USERS security group in group policy.](images/waas-wsus-fig13.png)
     
 The next time the clients in the **Ring 4 Broad Business Users** security group receive their computer policy and contact WSUS, they will be added to the **Ring 4 Broad Business Users** deployment ring. 
 
@@ -239,7 +239,7 @@ The next time the clients in the **Ring 4 Broad Business Users** security group 
 For clients that should have their feature updates approved as soon as they’re available, you can configure Automatic Approval rules in WSUS.
 
 >[!NOTE]
->WSUS respects the client device's servicing branch. If you approve a feature update while it is still in one branch, such as Insider Preview, WSUS will install the update only on devices that are in that servicing branch. When Microsoft releases the build for Semi-Annual Channel (or General Availability Channel), the devices in that will install it. Windows Update for Business branch settings do not apply to feature updates through WSUS.
+>WSUS respects the client device's servicing branch. If you approve a feature update while it is still in one branch, such as Insider Preview, WSUS will install the update only on devices that are in that servicing branch. When Microsoft releases the build for the [General Availability Channel](waas-overview.md#general-availability-channel), the devices in that will install it. Windows Update for Business branch settings do not apply to feature updates through WSUS.
 
 
 **To configure an Automatic Approval rule for Windows client feature updates and approve them for the Ring 3 Broad IT deployment ring**
@@ -251,7 +251,7 @@ This example uses Windows 10, but the process is the same for Windows 11.
 
 3. In the **Add Rule** dialog box, select the **When an update is in a specific classification**, **When an update is in a specific product**, and **Set a deadline for the approval** check boxes.
 
-     ![Example of UI.](images/waas-wsus-fig14.png)
+     ![Select the update and deadline check boxes in the WSUS Administration Console.](images/waas-wsus-fig14.png)
      
 4. In the **Edit the properties** area, select **any classification**. Clear everything except **Upgrades**, and then click **OK**.
 
@@ -265,7 +265,7 @@ This example uses Windows 10, but the process is the same for Windows 11.
 
 8. In the **Step 3: Specify a name** box, type **Windows 10 Upgrade Auto-approval for Ring 3 Broad IT**, and then click **OK**.
 
-    ![Example of UI.](images/waas-wsus-fig15.png)
+    ![Enter the ring 3 deployment name.](images/waas-wsus-fig15.png)
     
 9. In the **Automatic Approvals** dialog box, click **OK**.
 
@@ -300,7 +300,7 @@ To simplify the manual approval process, start by creating a software update vie
     
 5. In the **Step 3: Specify a name** box, type **All Windows 10 Upgrades**, and then click **OK**.
 
-     ![Example of UI.](images/waas-wsus-fig16.png)
+     ![Enter All Windows 10 Upgrades for the name in the WSUS admin console.](images/waas-wsus-fig16.png)
 
 Now that you have the **All Windows 10 Upgrades** view, complete the following steps to manually approve an update for the **Ring 4 Broad Business Users** deployment ring:
 
@@ -308,21 +308,21 @@ Now that you have the **All Windows 10 Upgrades** view, complete the following s
 
 2. Right-click the feature update you want to deploy, and then click **Approve**.
 
-      ![Example of UI.](images/waas-wsus-fig17.png)  
+      ![Approve the feature you want to deploy in WSUS admin console.](images/waas-wsus-fig17.png)  
       
 3. In the **Approve Updates** dialog box, from the **Ring 4 Broad Business Users** list, select **Approved for Install**.
 
-      ![Example of UI.](images/waas-wsus-fig18.png) 
+      ![Select Approve for install in the WSUS admin console.](images/waas-wsus-fig18.png) 
       
 4. In the **Approve Updates** dialog box, from the **Ring 4 Broad Business Users** list, click **Deadline**, click **One Week**, and then click **OK**. 
 
-      ![Example of UI.](images/waas-wsus-fig19.png) 
+      ![Select a one week deadline in the WSUS admin console.](images/waas-wsus-fig19.png) 
       
 5. If the **Microsoft Software License Terms** dialog box opens, click **Accept**.
 
     If the deployment is successful, you should receive a successful progress report.
     
-    ![Example of UI.](images/waas-wsus-fig20.png) 
+    ![A sample successful deployment.](images/waas-wsus-fig20.png) 
 
 6. In the **Approval Progress** dialog box, click **Close**.
 

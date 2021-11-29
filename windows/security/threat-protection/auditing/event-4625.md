@@ -11,7 +11,7 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4625(F): An account failed to log on.
@@ -182,7 +182,7 @@ This event generates on domain controllers, member servers, and workstations.
     | 0x0                     | Status OK.  |
 
 > [!NOTE]
-> To see the meaning of other status or substatus codes, you might also check for status code in the Window header file ntstatus.h in Windows SDK.
+> To see the meaning of other status or substatus codes, you might also check for status code in the Windows header file ntstatus.h in Windows SDK.
 
 More information: <https://dev.windows.com/en-us/downloads>
 

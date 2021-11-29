@@ -12,7 +12,7 @@ ms.sitesec: library
 ms.localizationpriority: none
 author: dansimp
 ms.date: 09/06/2021
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Audit Account Lockout
@@ -29,9 +29,9 @@ This subcategory failure logon attempts, when account was already locked out.
 
 | Computer Type     | General Success | General Failure | Stronger Success | Stronger Failure | Comments                                                                                                                                                                                                                                                                                                                                                                          |
 |-------------------|-----------------|-----------------|------------------|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Domain Controller | No              | Yes             | No               | Yes              | We recommend tracking account lockouts, especially for high value domain or local accounts (database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts, and so on).<br>This subcategory doesn’t have Success events, so there is no recommendation to enable Success auditing for this subcategory. |
-| Member Server     | No              | Yes             | No               | Yes              | We recommend tracking account lockouts, especially for high value domain or local accounts (database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts, and so on).<br>This subcategory doesn’t have Success events, so there is no recommendation to enable Success auditing for this subcategory. |
-| Workstation       | No              | Yes             | No               | Yes              | We recommend tracking account lockouts, especially for high value domain or local accounts (database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts, and so on).<br>This subcategory doesn’t have Success events, so there is no recommendation to enable Success auditing for this subcategory. |
+| Domain Controller | No              | Yes             | No               | Yes              | We recommend tracking account lockouts, especially for high value domain or for local accounts (database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts, and so on).<br>This subcategory doesn’t have Success events, so there is no recommendation to enable Success auditing for this subcategory. |
+| Member Server     | No              | Yes             | No               | Yes              | We recommend tracking account lockouts, especially for high value domain or for local accounts (database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts, and so on).<br>This subcategory doesn’t have Success events, so there is no recommendation to enable Success auditing for this subcategory. |
+| Workstation       | No              | Yes             | No               | Yes              | We recommend tracking account lockouts, especially for high value domain or for local accounts (database administrators, built-in local administrator account, domain administrators, service accounts, domain controller accounts, and so on).<br>This subcategory doesn’t have Success events, so there is no recommendation to enable Success auditing for this subcategory. |
 
 **Events List:**
 

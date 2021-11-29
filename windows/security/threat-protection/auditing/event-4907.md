@@ -11,7 +11,7 @@ ms.date: 09/08/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4907(S): Auditing settings on object were changed.

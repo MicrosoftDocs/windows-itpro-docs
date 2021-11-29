@@ -15,7 +15,7 @@ ms.reviewer: jogeurte
 ms.author: dansimp
 manager: dansimp
 ms.date: 02/28/2018
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # Deploy Windows Defender Application Control policies by using Group Policy

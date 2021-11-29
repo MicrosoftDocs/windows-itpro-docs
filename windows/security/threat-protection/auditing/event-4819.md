@@ -11,7 +11,7 @@ ms.date: 09/07/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
-ms.technology: mde
+ms.technology: windows-sec
 ---
 
 # 4819(S): Central Access Policies on the machine have been changed.
