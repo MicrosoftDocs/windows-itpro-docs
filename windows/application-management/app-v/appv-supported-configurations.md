@@ -18,7 +18,7 @@ ms.topic: article
 
 - Windows 10
 - Windows 11
-- Window Server 2019
+- Windows Server 2019
 - Windows Server 2016
 - Windows Server 2012 R2
 - Windows Server 2012
