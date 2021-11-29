@@ -38,9 +38,9 @@ You must have administrator permissions to update, register, or unregister a set
     |Windows PowerShell command|Description|
     |--- |--- |
     |`Get-UevTemplate`|Lists all the settings location templates that are registered on the computer.|
-    |`Get-UevTemplate -Application <string>`|Lists all the settings location templates that are registered on the computer where the application name or template name contains <string>.|
-    |`Get-UevTemplate -TemplateID <string>`|Lists all the settings location templates that are registered on the computer where the template ID contains <string>.|
-    |`Get-UevTemplate [-ApplicationOrTemplateID] <string>`|Lists all the settings location templates that are registered on the computer where the application or template name, or template ID contains <string>.|
+    |`Get-UevTemplate -Application <string>`|Lists all the settings location templates that are registered on the computer where the application name or template name contains.|
+    |`Get-UevTemplate -TemplateID <string>`|Lists all the settings location templates that are registered on the computer where the template ID contains.|
+    |`Get-UevTemplate [-ApplicationOrTemplateID] <string>`|Lists all the settings location templates that are registered on the computer where the application or template name, or template ID contains.|
     |`Get-UevTemplateProgram [-ID] <template ID>`|Gets the name of the program and version information, which depend on the template ID.|
     |`Get-UevAppXPackage`|Gets the effective list of Windows apps.|
     |`Get-UevAppXPackage -Computer`|Gets the list of Windows apps that are configured for the computer.|
