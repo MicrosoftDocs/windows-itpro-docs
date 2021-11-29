@@ -2,7 +2,7 @@
 description: Use this article to make informed decisions about how you can configure Windows diagnostic data in your organization.
 title: Configure Windows diagnostic data in your organization (Windows 10 and Windows 11)
 keywords: privacy
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,7 +13,8 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 10/04/2021
+ms.date: 11/29/2021
+ms.technology: windows-privacy
 ---
 
 # Configure Windows diagnostic data in your organization

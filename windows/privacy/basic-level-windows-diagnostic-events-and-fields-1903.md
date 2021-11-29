@@ -2,7 +2,7 @@
 description: Use this article to learn more about what required Windows diagnostic data is gathered.
 title: Windows 10, version 1909 and Windows 10, version 1903 required diagnostic events and fields (Windows 10)
 keywords: privacy, telemetry
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,6 +14,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
 ms.date:
+ms.technology: windows-privacy
 ---
 
 

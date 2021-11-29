@@ -2,7 +2,7 @@
 title: MICROSOFT WINDOWS DIAGNOSTIC DATA FOR POWERSHELL
 description: MICROSOFT SOFTWARE LICENSE TERMS
 keywords: privacy, license, terms
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -13,9 +13,10 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/16/2018
+ms.date: 11/29/2021
 ms.reviewer: 
 robots: noindex,nofollow
+ms.technology: windows-privacy
 ---
 
 # Microsoft Windows diagnostic data for PowerShell license terms
