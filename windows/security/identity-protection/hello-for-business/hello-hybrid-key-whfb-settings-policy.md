@@ -30,7 +30,7 @@ ms.reviewer:
 You need at least a Windows 10, version 1703 workstation to run the Group Policy Management Console, which provides the latest Windows Hello for Business and PIN Complexity Group Policy settings.  To run the Group Policy Management Console, you need to install the Remote Server Administration Tools for Windows. You can download these tools from the [Microsoft Download Center](https://www.microsoft.com/download/details.aspx?id=45520).
 Install the Remote Server Administration Tools for Windows on a computer running Windows 10, version 1703 or later.
 
-Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10 Creators Edition (1703) to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administrative-templates-in-windows) for more information.
+Alternatively, you can create copy the .ADMX and .ADML files from a Windows 10 Creators Edition (1703) to their respective language folder on a Windows Server or you can create a Group Policy Central Store and copy them their respective language folder. See [How to create and manage the Central Store for Group Policy Administrative Templates in Windows](troubleshoot/windows-client/group-policy/create-and-manage-central-store) for more information.
 
 Domain controllers of Windows Hello for Business deployments need one Group Policy setting, which enables automatic certificate enrollment for the newly create domain controller authentication certificate. This policy setting ensures domain controllers (new and existing) automatically request and renew the correct domain controller certificate.  
 
@@ -69,7 +69,7 @@ Sign-in a domain controller or management workstations with _Domain Admin_ equiv
 3. In the **Select GPO** dialog box, select **Domain Controller Auto Certificate Enrollment** or the name of the domain controller certificate enrollment Group Policy object you previously created and click **OK**.
 
 >[!IMPORTANT]
->If you don't find options in GPO, you have to load the [PolicyDefinitions folder](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra). 
+>If you don't find options in GPO, you have to load the [PolicyDefinitions folder](/troubleshoot/windows-client/group-policy/create-and-manage-central-store). 
 
 ### Windows Hello for Business Group Policy
 

@@ -93,7 +93,7 @@ The following issue affects Citrix applications:
 
 <sup>[1]</sup> Products that connect to Virtualization Based Security (VBS) protected processes can cause Windows Defender Credential Guard-enabled Windows 10, Windows 11, Windows Server 2016 or Windows Server 2019 machines to exhibit high CPU usage. For technical and troubleshooting information, see the following Microsoft Knowledge Base article:
 
-- [KB4032786 High CPU usage in the LSAISO process on Windows](https://support.microsoft.com/help/4032786)
+- [KB4032786 High CPU usage in the LSAISO process on Windows](/troubleshoot/windows-client/performance/lsaiso-process-high-cpu-usage)
     
 For further technical information on LSAISO.exe, see the MSDN article: [Isolated User Mode (IUM) Processes](/windows/win32/procthread/isolated-user-mode--ium--processes)
     
