@@ -2,7 +2,7 @@
 title: Windows 10 diagnostic data for the Full diagnostic data level (Windows 10)
 description: Use this article to learn about the types of data that is collected the Full diagnostic data level.
 keywords: privacy,Windows 10
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -12,8 +12,9 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/28/2017
+ms.date: 11/29/2021
 ms.reviewer: 
+ms.technology: windows-privacy
 ---
 
 # Windows 10 diagnostic data for the Full diagnostic data level
