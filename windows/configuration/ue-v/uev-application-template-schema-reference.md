@@ -108,52 +108,14 @@ Architecture enumerates two possible values: **Win32** and **Win64**. These valu
 <a href="" id="process"></a>**Process**
 The Process data type is a container used to describe processes to be monitored by UE-V. It contains six child elements: **Filename**, **Architecture**, **ProductName**, **FileDescription**, **ProductVersion**, and **FileVersion**. This table details each element’s respective data type:
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Element</strong></p></td>
-<td align="left"><p><strong>Data Type</strong></p></td>
-<td align="left"><p><strong>Mandatory</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Filename</p></td>
-<td align="left"><p>FilenameString</p></td>
-<td align="left"><p>True</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Architecture</p></td>
-<td align="left"><p>Architecture</p></td>
-<td align="left"><p>False</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>ProductName</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>False</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>FileDescription</p></td>
-<td align="left"><p>String</p></td>
-<td align="left"><p>False</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>ProductVersion</p></td>
-<td align="left"><p>ProcessVersion</p></td>
-<td align="left"><p>False</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>FileVersion</p></td>
-<td align="left"><p>ProcessVersion</p></td>
-<td align="left"><p>False</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Element|Data Type|Mandatory|
+|--- |--- |--- |
+|Filename|FilenameString|True|
+|Architecture|Architecture|False|
+|ProductName|String|False|
+|FileDescription|String|False|
+|ProductVersion|ProcessVersion|False|
+|FileVersion|ProcessVersion|False|
 
 <a href="" id="processes"></a>**Processes**
 The Processes data type represents a container for a collection of one or more Process elements. Two child elements are supported in the Processes sequence type: **Process** and **ShellProcess**. Process is an element of type Process and ShellProcess is of data type Empty. At least one item must be identified in the sequence.
@@ -177,32 +139,11 @@ FileSetting contains parameters associated with files and files paths. Four chil
 <a href="" id="settings"></a>**Settings**
 Settings is a container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings described earlier. In addition, it can also contain the following child elements with behaviors described:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Element</strong></p></td>
-<td align="left"><p><strong>Description</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Asynchronous</p></td>
-<td align="left"><p>Asynchronous settings packages are applied without blocking the application startup so that the application start proceeds while the settings are still being applied. This is useful for settings that can be applied asynchronously, such as those <code>get/set</code> through an API, like SystemParameterSetting.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>PreventOverlappingSynchronization</p></td>
-<td align="left"><p>By default, UE-V only saves settings for an application when the last instance of an application using the template is closed. When this element is set to ‘false’, UE-V exports the settings even if other instances of an application are running. Suited templates – those that include a Common element section– that are shipped with UE-V use this flag to enable shared settings to always export on application close, while preventing application-specific settings from exporting until the last instance is closed.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>AlwaysApplySettings</p></td>
-<td align="left"><p>This parameter forces an imported settings package to be applied even if there are no differences between the package and the current state of the application. This parameter should be used only in special cases since it can slow down settings import.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Element|Description|
+|--- |--- |
+|Asynchronous|Asynchronous settings packages are applied without blocking the application startup so that the application start proceeds while the settings are still being applied. This is useful for settings that can be applied asynchronously, such as those get/set through an API, like SystemParameterSetting.|
+|PreventOverlappingSynchronization|By default, UE-V only saves settings for an application when the last instance of an application using the template is closed. When this element is set to ‘false’, UE-V exports the settings even if other instances of an application are running. Suited templates – those that include a Common element section– that are shipped with UE-V use this flag to enable shared settings to always export on application close, while preventing application-specific settings from exporting until the last instance is closed.|
+|AlwaysApplySettings|This parameter forces an imported settings package to be applied even if there are no differences between the package and the current state of the application. This parameter should be used only in special cases since it can slow down settings import.|
 
 ### <a href="" id="name21"></a>Name Element
 
@@ -482,162 +423,50 @@ The child elements and syntax rules for FileVersion are identical to those of Pr
 
 Application is a container for settings that apply to a particular application. It is a collection of the following fields/types.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Field/Type</strong></p></td>
-<td align="left"><p><strong>Description</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name21" data-raw-source="[Name](#name21)">Name</a>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V service uses to reference the template at runtime. For more information, see <a href="#id21" data-raw-source="[ID](#id21)">ID</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Description</p></td>
-<td align="left"><p>An optional description of the template.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>LocalizedNames</p></td>
-<td align="left"><p>An optional name displayed in the UI, localized by a language locale.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>LocalizedDescriptions</p></td>
-<td align="left"><p>An optional template description localized by a language locale.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see <a href="#version21" data-raw-source="[Version](#version21)">Version</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DeferToMSAccount</p></td>
-<td align="left"><p>Controls whether this template is enabled in conjunction with a Microsoft account or not. If MSA syncing is enabled for a user on a machine, then this template will automatically be disabled.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>DeferToOffice365</p></td>
-<td align="left"><p>Similar to MSA, this controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>FixedProfile</p></td>
-<td align="left"><p>Specifies that this template can only be associated with the profile specified within this element, and cannot be changed via WMI or PowerShell.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Processes</p></td>
-<td align="left"><p>A container for a collection of one or more Process elements. For more information, see <a href="#processes21" data-raw-source="[Processes](#processes21)">Processes</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Settings</p></td>
-<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in <a href="#data21" data-raw-source="[Data types](#data21)">Data types</a>.</p></td>
-</tr>
-</tbody>
-</table>
+|Field/Type|Description|
+|--- |--- |
+|Name|Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name21).|
+|ID|Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V service uses to reference the template at runtime. For more information, see [ID](#id21).|
+|Description|An optional description of the template.|
+|LocalizedNames|An optional name displayed in the UI, localized by a language locale.|
+|LocalizedDescriptions|An optional template description localized by a language locale.|
+|Version|Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version21).|
+|DeferToMSAccount|Controls whether this template is enabled in conjunction with a Microsoft account or not. If MSA syncing is enabled for a user on a machine, then this template will automatically be disabled.|
+|DeferToOffice365|Similar to MSA, this controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.|
+|FixedProfile|Specifies that this template can only be associated with the profile specified within this element, and cannot be changed via WMI or PowerShell.|
+|Processes|A container for a collection of one or more Process elements. For more information, see [Processes](#processes21).|
+|Settings|A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see **Settings** in [Data types](#data21)".|
 
- 
 
 ### <a href="" id="common21"></a>Common Element
 
 Common is similar to an Application element, but it is always associated with two or more Application elements. The Common section represents the set of settings that are shared between those Application instances. It is a collection of the following fields/types.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Field/Type</strong></p></td>
-<td align="left"><p><strong>Description</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name21" data-raw-source="[Name](#name21)">Name</a>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V service uses to reference the template at runtime. For more information, see <a href="#id21" data-raw-source="[ID](#id21)">ID</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Description</p></td>
-<td align="left"><p>An optional description of the template.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>LocalizedNames</p></td>
-<td align="left"><p>An optional name displayed in the UI, localized by a language locale.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>LocalizedDescriptions</p></td>
-<td align="left"><p>An optional template description localized by a language locale.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Version</p></td>
-<td align="left"><p>Identifies the version of the settings location template for administrative tracking of changes. For more information, see <a href="#version21" data-raw-source="[Version](#version21)">Version</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>DeferToMSAccount</p></td>
-<td align="left"><p>Controls whether this template is enabled in conjunction with a Microsoft account or not. If MSA syncing is enabled for a user on a machine, then this template will automatically be disabled.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>DeferToOffice365</p></td>
-<td align="left"><p>Similar to MSA, this controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>FixedProfile</p></td>
-<td align="left"><p>Specifies that this template can only be associated with the profile specified within this element, and cannot be changed via WMI or PowerShell.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Settings</p></td>
-<td align="left"><p>A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see <strong>Settings</strong> in <a href="#data21" data-raw-source="[Data types](#data21)">Data types</a>.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Field/Type|Description|
+|--- |--- |
+|Name|Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name21).|
+|ID|Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V service uses to reference the template at runtime. For more information, see [ID](#id21).|
+|Description|An optional description of the template.|
+|LocalizedNames|An optional name displayed in the UI, localized by a language locale.|
+|LocalizedDescriptions|An optional template description localized by a language locale.|
+|Version|Identifies the version of the settings location template for administrative tracking of changes. For more information, see [Version](#version21).|
+|DeferToMSAccount|Controls whether this template is enabled in conjunction with a Microsoft account or not. If MSA syncing is enabled for a user on a machine, then this template will automatically be disabled.|
+|DeferToOffice365|Similar to MSA, this controls whether this template is enabled in conjunction with Office365. If Office 365 is being used to sync settings, this template will automatically be disabled.|
+|FixedProfile|Specifies that this template can only be associated with the profile specified within this element, and cannot be changed via WMI or PowerShell.|
+|Settings|A container for all the settings that apply to a particular template. It contains instances of the Registry, File, SystemParameter, and CustomAction settings. For more information, see **Settings** in [Data types](#data21).|
 
 ### <a href="" id="settingslocationtemplate21"></a>SettingsLocationTemplate Element
 
 This element defines the settings for a single application or a suite of applications.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Field/Type</strong></p></td>
-<td align="left"><p><strong>Description</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Name</p></td>
-<td align="left"><p>Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see <a href="#name21" data-raw-source="[Name](#name21)">Name</a>.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>ID</p></td>
-<td align="left"><p>Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V service uses to reference the template at runtime. For more information, see <a href="#id21" data-raw-source="[ID](#id21)">ID</a>.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Description</p></td>
-<td align="left"><p>An optional description of the template.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>LocalizedNames</p></td>
-<td align="left"><p>An optional name displayed in the UI, localized by a language locale.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>LocalizedDescriptions</p></td>
-<td align="left"><p>An optional template description localized by a language locale.</p></td>
-</tr>
-</tbody>
-</table>
+|Field/Type|Description|
+|--- |--- |
+|Name|Specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. For more information, see [Name](#name21).|
+|ID|Populates a unique identifier for a particular template. This tag becomes the primary identifier that the UE-V service uses to reference the template at runtime. For more information, see [ID](#id21).|
+|Description|An optional description of the template.|
+|LocalizedNames|An optional name displayed in the UI, localized by a language locale.|
+|LocalizedDescriptions|An optional template description localized by a language locale.|
 
- 
 
 ### <a href="" id="appendix21"></a>Appendix: SettingsLocationTemplate.xsd
 

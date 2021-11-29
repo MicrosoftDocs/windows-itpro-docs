@@ -35,52 +35,15 @@ The UE-V Configuration Pack includes tools to:
 
 -   Create or update a UE-V Agent policy configuration item to set or clear these settings
 
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p>Max package size</p></td>
-    <td align="left"><p>Enable/disable Windows app sync</p></td>
-    <td align="left"><p>Wait for sync on application start</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Setting import delay</p></td>
-    <td align="left"><p>Sync unlisted Windows apps</p></td>
-    <td align="left"><p>Wait for sync on logon</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Settings import notification</p></td>
-    <td align="left"><p>IT contact URL</p></td>
-    <td align="left"><p>Wait for sync timeout</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Settings storage path</p></td>
-    <td align="left"><p>IT contact descriptive text</p></td>
-    <td align="left"><p>Settings template catalog path</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Sync enablement</p></td>
-    <td align="left"><p>Tray icon enabled</p></td>
-    <td align="left"><p>Start/Stop UE-V agent service</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p>Sync method</p></td>
-    <td align="left"><p>First use notification</p></td>
-    <td align="left"><p>Define which Windows apps will roam settings</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p>Sync timeout</p></td>
-    <td align="left"><p></p></td>
-    <td align="left"><p></p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
+     |Configuration|Setting|Description|
+     |--- |--- |--- |
+     |Max package size|Enable/disable Windows app sync|Wait for sync on application start|
+     |Setting import delay|Sync unlisted Windows apps|Wait for sync on logon|
+     |Settings import notification|IT contact URL|Wait for sync timeout|
+     |Settings storage path|IT contact descriptive text|Settings template catalog path|
+     |Sync enablement|Tray icon enabled|Start/Stop UE-V agent service|
+     |Sync method|First use notification|Define which Windows apps will roam settings|
+     |Sync timeout|||
 
 -   Verify compliance by confirming that UE-V is running.
 
