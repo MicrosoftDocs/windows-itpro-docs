@@ -8,9 +8,9 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
-author: robsize
+author: siosulli
 ms.author: dansimp
-manager: robsize
+manager: siosulli
 ms.date: 11/29/2021
 ms.technology: privacy
 ---

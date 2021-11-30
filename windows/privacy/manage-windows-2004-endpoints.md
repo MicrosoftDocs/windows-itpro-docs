@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: linque1
-ms.author: robsize
-manager: robsize
+ms.author: siosulli
+manager: siosulli
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/29/2021
