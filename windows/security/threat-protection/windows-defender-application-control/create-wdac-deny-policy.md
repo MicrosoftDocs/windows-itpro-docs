@@ -18,7 +18,7 @@ ms.date: 11/29/2021
 ms.technology: windows-sec
 ---
 
-# Guidance on Creating WDAC Deny Policies
+# **Guidance on Creating WDAC Deny Policies**
 
 With Windows Defender Application Control (WDAC), you can create applicatoin contorl policies to explicitly deny specific drivers and applications, as well as signatures and certificates and file paths.
 
