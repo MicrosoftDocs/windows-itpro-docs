@@ -237,63 +237,63 @@ To troubleshoot Name/SID lookup APIs:
 
 ```xml
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0">
-                          <xs:simpleType name="name">
-                            <xs:restriction base="xs:string">
-                              <xs:maxLength value="255" />
-                            </xs:restriction>
-                          </xs:simpleType>
-                          <xs:element name="accessgroup">
-                            <xs:complexType>
-                                <xs:sequence>
-                                    <xs:element name="group" minOccurs="1" maxOccurs="1">
-                                      <xs:annotation>
-                                        <xs:documentation>Group Configuration Action</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="action" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                    <xs:element name="add" minOccurs="0" maxOccurs="unbounded">
-                                      <xs:annotation>
-                                        <xs:documentation>Group Member to Add</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="member" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                    <xs:element name="remove" minOccurs="0" maxOccurs="unbounded">
-                                      <xs:annotation>
-                                        <xs:documentation>Group Member to Remove</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="member" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                    <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
-                                      <xs:annotation>
-                                        <xs:documentation>Group property to configure</xs:documentation>
-                                      </xs:annotation>
-                                      <xs:complexType>
-                                        <xs:attribute name="desc" type="name" use="required"/>
-                                        <xs:attribute name="value" type="name" use="required"/>
-                                      </xs:complexType>
-                                    </xs:element>
-                                  </xs:sequence>
-                              <xs:attribute name="desc" type="name" use="required"/>
-                            </xs:complexType>
-                          </xs:element>
-                          <xs:element name="GroupConfiguration">
-                            <xs:complexType>
-                              <xs:sequence>
-                                <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
-                                  <xs:annotation>
-                              <xs:documentation>Local Group Configuration</xs:documentation>
-                            </xs:annotation>
-                                </xs:element>
-                              </xs:sequence>
-                            </xs:complexType>
-                          </xs:element>
-                      </xs:schema>
+  <xs:simpleType name="name">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="255" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="accessgroup">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="group" minOccurs="1" maxOccurs="1">
+              <xs:annotation>
+                <xs:documentation>Group Configuration Action</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="action" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="add" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>Group Member to Add</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="member" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="remove" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>Group Member to Remove</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="member" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="property" minOccurs="0" maxOccurs="unbounded">
+              <xs:annotation>
+                <xs:documentation>Group property to configure</xs:documentation>
+              </xs:annotation>
+              <xs:complexType>
+                <xs:attribute name="desc" type="name" use="required"/>
+                <xs:attribute name="value" type="name" use="required"/>
+              </xs:complexType>
+            </xs:element>
+          </xs:sequence>
+      <xs:attribute name="desc" type="name" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GroupConfiguration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="accessgroup" minOccurs="0" maxOccurs="unbounded">
+          <xs:annotation>
+      <xs:documentation>Local Group Configuration</xs:documentation>
+    </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
 ```
 
 
