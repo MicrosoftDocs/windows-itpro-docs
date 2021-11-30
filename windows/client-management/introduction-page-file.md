@@ -28,20 +28,20 @@ Page files enable the system to remove infrequently accessed modified pages from
 
 Some products or services require a page file for various reasons. For specific information, check the product documentation.
 
-For example, the following Windows servers requires page files:
+For example, the following Windows servers require page files:
 
 - Windows Server domain controllers (DCs)
 - DFS Replication (DFS-R) servers
 - Certificate servers
 - ADAM/LDS servers
 
-This is because the algorithm of the database cache for Extensible Storage Engine (ESENT, or ESE in Microsoft Exchange Server) depends on the "\Memory\Transition Pages RePurposed/sec" performance monitor counter. A page file is required to make sure that the database cache can release memory if other services or applications request memory.
+This is because the algorithm of the database cache for Extensible Storage Engine (ESENT, or ESE for Microsoft Exchange Server) depends on the "\Memory\Transition Pages RePurposed/sec" performance monitor counter. A page file is required to make sure that the database cache can release memory if other services or applications request memory.
 
-For Windows Server 2012 Hyper-V and Windows Server 2012 R2 Hyper-V, the page file of the management OS (commonly called the host OS) should be left at the default of setting of "System Managed" .
+For Windows Server 2012 Hyper-V and Windows Server 2012 R2 Hyper-V, the page file of the management OS (commonly called the host OS) should be left at the default of setting of "System Managed".
 
 ### Support for system crash dumps
 
-Page files can be used to "back" (or support) system crash dumps and extend how much system-committed memory (also known as “virtual memory”) a system can support. 
+Page files can be used to "back" (or support) system crash dumps and extend how much system-committed memory (also known as "virtual memory") a system can support.
 
 For more information about system crash dumps, see [system crash dump options](system-failure-recovery-options.md#under-write-debugging-information).
 
@@ -49,7 +49,7 @@ For more information about system crash dumps, see [system crash dump options](s
 
 When large physical memory is installed, a page file might not be required to support the system commit charge during peak usage. For example, 64-bit versions of Windows and Windows Server support more physical memory (RAM) than 32-bit versions support. The available physical memory alone might be large enough. 
 
-However, the reason to configure the page file size has not changed. It has always been about supporting a system crash dump, if it is necessary, or extending the system commit limit, if it is necessary. For example, when a lot of physical memory is installed, a page file might not be required to back the system commit charge during peak usage. The available physical memory alone might be large enough to do this. However, a page file or a dedicated dump file might still be required to back a system crash dump.
+However, the reason to configure the page file size hasn't changed. It has always been about supporting a system crash dump, if it's necessary, or extending the system commit limit, if it's necessary. For example, when a lot of physical memory is installed, a page file might not be required to back the system commit charge during peak usage. The available physical memory alone might be large enough to do this. However, a page file or a dedicated dump file might still be required to back a system crash dump.
 
 ## System committed memory
 
@@ -65,7 +65,7 @@ The system commit charge is the total committed or "promised" memory of all comm
 
 ![Task Manager.](images/task-manager-commit.png)
 
-The system committed charge and system committed limit can be measured on the **Performance** tab in Task Manager or by using the "\Memory\Committed Bytes" and "\Memory\Commit Limit" performance counters. The \Memory\% Committed Bytes In Use counter is a ratio of \Memory\Committed Bytes to \Memory\Commit Limit values.
+The system committed charge and system committed limit can be measured on the **Performance** tab in Task Manager or by using the "\Memory\Committed Bytes" and "\Memory\Commit Limit" performance counters. The **\Memory\% Committed Bytes In Use** counter is a ratio of \Memory\Committed Bytes to \Memory\Commit Limit values.
 
 > [!NOTE]
 > System-managed page files automatically grow up to three times the physical memory or 4 GB (whichever is larger, but no more than one-eighth of the volume size) when the system commit charge reaches 90 percent of the system commit limit. This assumes that enough free disk space is available to accommodate the growth.
