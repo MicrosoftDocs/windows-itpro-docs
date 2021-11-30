@@ -14,7 +14,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/29/2021
-ms.technology: windows-privacy
+ms.technology: privacy
 ---
 
 # Configure Windows diagnostic data in your organization

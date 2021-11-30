@@ -15,7 +15,7 @@ ms.topic: article
 audience: ITPro
 ms.date: 
 ms.reviewer:
-ms.technology: windows-privacy
+ms.technology: privacy
 ---
 
 

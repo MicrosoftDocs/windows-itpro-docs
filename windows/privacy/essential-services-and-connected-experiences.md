@@ -11,7 +11,7 @@ author: siosulli
 ms.author: dansimp
 manager: dansimp
 ms.date:
-ms.technology: windows-privacy
+ms.technology: privacy
  
 ---
 

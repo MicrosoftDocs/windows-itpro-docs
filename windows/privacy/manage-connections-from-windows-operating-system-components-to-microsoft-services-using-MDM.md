@@ -12,7 +12,7 @@ author: robsize
 ms.author: dansimp
 manager: robsize
 ms.date: 11/29/2021
-ms.technology: windows-privacy
+ms.technology: privacy
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services using Microsoft Intune MDM Server

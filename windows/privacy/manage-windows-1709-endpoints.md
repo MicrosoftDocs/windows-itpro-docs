@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/29/2021
 ms.reviewer:
-ms.technology: windows-privacy 
+ms.technology: privacy 
 ---
 # Manage connection endpoints for Windows 10 Enterprise, version 1709
 

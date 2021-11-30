@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 ms.topic: article
 audience: ITPro
 ms.date: 11/29/2021
-ms.technology: windows-privacy
+ms.technology: privacy
 ---
 
 

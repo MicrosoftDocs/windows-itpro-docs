@@ -16,7 +16,7 @@ ms.date: 11/29/2021
 audience: ITPro
 ms.date: 
 ms.reviewer:
-ms.technology: windows-privacy
+ms.technology: privacy
 ---
 
 

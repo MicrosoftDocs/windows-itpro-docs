@@ -16,7 +16,7 @@ ms.topic: article
 ms.date: 11/29/2021
 ms.reviewer: 
 robots: noindex,nofollow
-ms.technology: windows-privacy
+ms.technology: privacy
 ---
 
 # Microsoft Windows diagnostic data for PowerShell license terms

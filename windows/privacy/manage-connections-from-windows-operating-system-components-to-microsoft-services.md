@@ -15,7 +15,7 @@ manager: riche
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/29/2021
-ms.technology: windows-privacy
+ms.technology: privacy
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services
