@@ -10,6 +10,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: gkomatsu
 manager: dansimp
+ms.collection: highpri
 ---
 
 # Create a provisioning package

@@ -9,16 +9,17 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 03/26/2019
-ms.reviewer: 
 ---
 
-# Kernel DMA Protection 
+# Kernel DMA Protection
 
 **Applies to**
--   Windows 10
+-   Windows 10
 -   Windows 11
 
 In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA Protection to protect PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to externally accessible PCIe ports (for example, Thunderbolt™ 3 ports and CFexpress). In Windows 10 version 1903, Microsoft expanded the Kernel DMA Protection support to cover internal PCIe ports (for example, M.2 slots)
