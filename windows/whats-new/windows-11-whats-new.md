@@ -1,6 +1,6 @@
 ---
 title: Windows 11, what's new and overview for administrators
-description: Learn more about what's new in Windows 11. Read about see the features IT professionals and administrators should know about Windows 11, including security, using apps, using Android apps, the new desktop, and deploying and servicing PCs.
+description: Learn more about what's new in Windows 11. Read about the features IT professionals and administrators should know about Windows 11, including security, using apps, using Android apps, the new desktop, and deploying and servicing PCs.
 ms.reviewer: 
 manager: dougeby
 ms.audience: itpro
@@ -21,7 +21,7 @@ ms.custom:
 
 - Windows 11
 
-Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition and update to what you know, and what you're familiar with.
+Windows 11 is the next client operating system, and includes features that organizations should know. Windows 11 is built on the same foundation as Windows 10. If you use Windows 10, then Windows 11 is a natural transition. It's an update to what you know, and what you're familiar with.
 
 It offers innovations focused on enhancing end-user productivity, and is designed to support today's hybrid work environment.
 
@@ -41,7 +41,7 @@ The security and privacy features in Windows 11 are similar to Windows 10. Secur
   
   For more information, see [Windows security baselines](/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines).
 
-- **Microsoft Defender Antivirus** is built into Windows, and helps protect devices using next-generation security. When used with Microsoft Defender for Endpoint, your organization gets strong endpoint protection, and advanced endpoint protection & response. If your devices are managed with Endpoint Manager, you can create policies based on threat levels found in Microsoft Defender for Endpoint.
+- **Microsoft Defender Antivirus** is built into Windows, and helps protect devices using next-generation security. When used with Microsoft Defender for Endpoint, your organization gets strong endpoint protection, and advanced endpoint protection & response. If you use Endpoint Manager to manage devices, then you can create policies based on threat levels in Microsoft Defender for Endpoint.
 
   For more information, see:
 
@@ -194,7 +194,7 @@ For more information on the security features you can configure, manage, and enf
 
 - **Microsoft Endpoint Manager** is a mobile application management (MAM) and mobile device management (MDM) provider. It helps manage devices, and manage apps on devices in your organization. You configure policies, and then deploy these policies to users and groups. You can create and deploy policies that install apps, configure device features, enforce PIN requirements, block compromised devices, and more.
 
-  If you currently use Group Policy to manage your Windows 10 devices, you can also use Group Policy to manage Windows 11 devices. In Endpoint Manager, there are [administrative templates](/mem/intune/configuration/administrative-templates-windows) and the [settings catalog](/mem/intune/configuration/settings-catalog) that include many of the same policies. [Group Policy analytics](/mem/intune/configuration/group-policy-analytics) analyze your on-premises group policy objects.
+  If you use Group Policy to manage your Windows 10 devices, then you can also use Group Policy to manage Windows 11 devices. In Endpoint Manager, there are [administrative templates](/mem/intune/configuration/administrative-templates-windows) and the [settings catalog](/mem/intune/configuration/settings-catalog) that include many of the same policies. [Group Policy analytics](/mem/intune/configuration/group-policy-analytics) analyze your on-premises group policy objects.
 
 - **Windows Updates and Delivery optimization** helps manage updates, and manage features on your devices. Starting with Windows 11, the OS feature updates are installed annually. For more information on servicing channels, and what they are, see [Servicing channels](/windows/deployment/update/waas-overview#servicing-channels).
 
@@ -210,6 +210,10 @@ For more information on the security features you can configure, manage, and enf
 
   - [Installation & updates](https://support.microsoft.com/office/installation-updates-2f9c1819-310d-48a7-ac12-25191269903c#PickTab=Windows_11)
   - [Manage updates in Windows](https://support.microsoft.com/windows/manage-updates-in-windows-643e9ea7-3cf6-7da6-a25c-95d4f7f099fe)
+
+## Education and apps
+
+Windows 11 SE is a new edition of Windows that's designed for education. It runs on low-cost devices, and runs essential apps, including Microsoft 365. For more information, see [Windows 11 SE for Education](/education/windows/windows-11-se-overview).
 
 ## Next steps
 

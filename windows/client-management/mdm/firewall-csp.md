@@ -5,8 +5,8 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: dansimp
-ms.date: 01/26/2018
+author: manikadhiman
+ms.date: 11/29/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -98,7 +98,6 @@ Firewall
 ----------------EdgeTraversal
 ----------------LocalUserAuthorizationList
 ----------------FriendlyName
-----------------IcmpTypesAndCodes
 ----------------Status
 ----------------Name
 ```
