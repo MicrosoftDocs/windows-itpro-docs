@@ -8,7 +8,7 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
-ms.date: 07/01/2021
+ms.date: 11/30/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
@@ -17,8 +17,8 @@ ms.technology: windows-sec
 
 **Applies to:**
 
--   Windows 11
--   Windows 10
+- Windows 11
+- Windows 10
 
 # System Guard Secure Launch and SMM protection
 
