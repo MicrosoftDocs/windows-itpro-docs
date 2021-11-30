@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.date: 11/29/2021
 ms.reviewer: 
 manager: dansimp
+ms.collection: highpri
 ---
 
 # Policy CSP - Update

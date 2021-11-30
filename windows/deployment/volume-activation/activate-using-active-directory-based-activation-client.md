@@ -3,8 +3,7 @@ title: Activate using Active Directory-based activation (Windows 10)
 description: Learn how active directory-based activation is implemented as a role service that relies on AD DS to store activation objects.
 ms.custom: seo-marvel-apr2020
 ms.assetid: 08cce6b7-7b5b-42cf-b100-66c363a846af
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 keywords: vamt, volume activation, activation, windows activation
 ms.prod: w10
@@ -16,6 +15,7 @@ author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 07/27/2017
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Activate using Active Directory-based activation

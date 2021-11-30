@@ -8,12 +8,13 @@ ms.localizationpriority: medium
 ms.sitesec: library
 ms.pagetype: mdt
 ms.date: 09/28/2021
-ms.reviewer: 
 manager: dougeby
 ms.audience: itpro
 author: greg-lindsay
 audience: itpro
-ms.collection: M365-modern-desktop
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ---
 
