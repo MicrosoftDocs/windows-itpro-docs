@@ -1816,7 +1816,7 @@ ADMX Info:
 <a href="" id="admx-userexperiencevirtualization-microsoftoffice2010sharepointworkspace"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2010SharePointWorkspace**  
 
 <!--SupportedSKUs-->
-2
+
 |Edition|Windows 10|Windows 11|
 |--- |--- |--- |
 |Home|No|No|
@@ -3025,7 +3025,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013sharepointdesignerbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesignerBackup**  
+
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013sharepointdesignerbackup"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013SharePointDesignerBackup**
 
 <!--SupportedSKUs-->
 
@@ -3073,7 +3074,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013uploadcenter"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013UploadCenter**  
+
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice2013uploadcenter"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2013UploadCenter**
 
 <!--SupportedSKUs-->
 
@@ -4241,7 +4243,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016uploadcenter"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016UploadCenter**  
+
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice2016uploadcenter"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice2016UploadCenter**
 
 <!--SupportedSKUs-->
 
@@ -4630,7 +4633,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365common2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2016**  
+
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365common2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Common2016**
 
 <!--SupportedSKUs-->
 
@@ -5265,7 +5269,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-microsoftoffice365project2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016**  
+
+<a href="" id="admx-userexperiencevirtualization-microsoftoffice365project2016"></a>**ADMX_UserExperienceVirtualization/MicrosoftOffice365Project2016**
 
 <!--SupportedSKUs-->
 
@@ -6089,7 +6094,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-syncovermeterednetwork"></a>**ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork**  
+
+<a href="" id="admx-userexperiencevirtualization-syncovermeterednetwork"></a>**ADMX_UserExperienceVirtualization/SyncOverMeteredNetwork**
 
 <!--SupportedSKUs-->
 
@@ -6475,7 +6481,8 @@ ADMX Info:
 <!--/Policy-->
 <hr/>
 <!--Policy-->
-<a href="" id="admx-userexperiencevirtualization-wordpad"></a>**ADMX_UserExperienceVirtualization/Wordpad**  
+
+<a href="" id="admx-userexperiencevirtualization-wordpad"></a>**ADMX_UserExperienceVirtualization/Wordpad**
 
 <!--SupportedSKUs-->
 
