@@ -61,7 +61,7 @@ ms.localizationpriority: medium
 <hr/>
 
 <!--Policy-->
-## DeviceInstallation/AllowInstallationOfMatchingDeviceIDs
+### DeviceInstallation/AllowInstallationOfMatchingDeviceIDs
 
 <!--SupportedSKUs-->
 
@@ -163,7 +163,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <hr/>
 
 <!--Policy-->
-## DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs
+### DeviceInstallation/AllowInstallationOfMatchingDeviceInstanceIDs
 
 <!--SupportedSKUs-->
 
@@ -262,7 +262,7 @@ To verify the policy is applied, check C:\windows\INF\setupapi.dev.log and see i
 <hr/>
 
 <!--Policy-->
-## DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses
+### DeviceInstallation/AllowInstallationOfMatchingDeviceSetupClasses
 
 <!--SupportedSKUs-->
 
@@ -373,7 +373,7 @@ To verify that the policy is applied, check C:\windows\INF\setupapi.dev.log and 
 <hr/>
 
 <!--Policy-->
-## DeviceInstallation/EnableInstallationPolicyLayering
+### DeviceInstallation/EnableInstallationPolicyLayering
 
 <!--SupportedSKUs-->
 
@@ -478,7 +478,7 @@ You can also change the evaluation order of device installation policy settings 
 <hr/>
 
 <!--Policy-->
-## DeviceInstallation/PreventDeviceMetadataFromNetwork
+### DeviceInstallation/PreventDeviceMetadataFromNetwork
 
 <!--SupportedSKUs-->
 
@@ -535,7 +535,7 @@ ADMX Info:
 <hr/>
 
 <!--Policy-->
-## DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings
+### DeviceInstallation/PreventInstallationOfDevicesNotDescribedByOtherPolicySettings
 
 <!--SupportedSKUs-->
 
@@ -628,7 +628,7 @@ You can also block installation by using a custom profile in Intune.
 <hr/>
 
 <!--Policy-->
-## DeviceInstallation/PreventInstallationOfMatchingDeviceIDs
+### DeviceInstallation/PreventInstallationOfMatchingDeviceIDs
 
 <!--SupportedSKUs-->
 
@@ -726,7 +726,7 @@ For example, this custom profile blocks installation and usage of USB devices wi
 <hr/>
 
 <!--Policy-->
-## DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs
+### DeviceInstallation/PreventInstallationOfMatchingDeviceInstanceIDs
 
 <!--SupportedSKUs-->
 
@@ -831,7 +831,7 @@ with
 <hr/>
 
 <!--Policy-->
-## DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses
+### DeviceInstallation/PreventInstallationOfMatchingDeviceSetupClasses
 
 <!--SupportedSKUs-->
 
