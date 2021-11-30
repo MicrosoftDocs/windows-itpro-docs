@@ -8,7 +8,9 @@ metadata:
   description: Learn about Windows security # Required; article description that is displayed in search results. < 160 chars.
   ms.topic: landing-page # Required
   ms.prod: windows
-  ms.collection: m365-security-compliance
+  ms.collection:
+    - m365-security-compliance
+    - highpri
   author: dansimp #Required; your GitHub user alias, with correct capitalization.
   ms.author: dansimp #Required; microsoft alias of author; optional team alias.
   ms.date: 09/20/2021

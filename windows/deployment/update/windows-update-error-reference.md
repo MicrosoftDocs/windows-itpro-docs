@@ -9,10 +9,10 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.audience: itpro
 ms.date: 09/18/2018
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows Update error codes by component

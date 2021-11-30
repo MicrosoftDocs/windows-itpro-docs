@@ -7,9 +7,9 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Overview of Windows as a service
@@ -17,7 +17,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
