@@ -60,132 +60,21 @@ Make sure that you don't specify a protocol when adding your URLs. Using a URL l
 
 ### Schema elements
 This table includes the elements used by the Enterprise Mode schema.
-
-<table>
-<thead>
-<tr class="header">
-<th>Element</th>
-<th>Description</th>
-<th>Supported browser</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;rules&gt;</td>
-<td>Root node for the schema.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;rules version="205"&gt;
-  &lt;emie&gt;
-    &lt;domain&gt;contoso.com&lt;/domain&gt;
-  &lt;/emie&gt;
-&lt;/rules&gt;</pre></td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-<tr>
-<td>&lt;emie&gt;</td>
-<td>The parent node for the Enterprise Mode section of the schema. All &lt;domain&gt; entries will have either IE8 Enterprise Mode or IE7 Enterprise Mode applied.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;rules version="205"&gt;
-  &lt;emie&gt;
-    &lt;domain&gt;contoso.com&lt;/domain&gt;
-  &lt;/emie&gt;
-&lt;/rules&gt;</pre>
-<strong>-or-</strong>
-<p>For IPv6 ranges:<pre class="syntax">&lt;rules version="205"&gt;
-  &lt;emie&gt;
-    &lt;domain&gt;[10.122.34.99]:8080&lt;/domain&gt;
-  &lt;/emie&gt;
-  &lt;/rules&gt;</pre>
-<strong>-or-</strong>
-<p>For IPv4 ranges:<pre class="syntax">&lt;rules version="205"&gt;
-  &lt;emie&gt;
-    &lt;domain&gt;10.122.34.99:8080&lt;/domain&gt;
-  &lt;/emie&gt;
-  &lt;/rules&gt;</pre></td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-<tr>
-<td>&lt;docMode&gt;</td>
-<td>The parent node for the document mode section of the section. All &lt;domain&gt; entries will get IE5 - IE11 document modes applied. If there's a &lt;domain&gt; element in the &lt;docMode&gt; section that uses the same value as a &lt;domain&gt; element in the &lt;emie&gt; section, the &lt;emie&gt; element is applied.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;rules version="205"&gt;
-  &lt;docMode&gt;
-    &lt;domain docMode="7"&gt;contoso.com&lt;/domain&gt;
-  &lt;/docMode&gt;
-&lt;/rules&gt;</pre></td>
-<td>Internet Explorer 11</td>
-</tr>
-<tr>
-<td>&lt;domain&gt;</td>
-<td>A unique entry added for each site you want to put on the Enterprise Mode site list. The first &lt;domain&gt; element will overrule any additional &lt;domain&gt; elements that use the same value for the section. You can use port numbers for this element.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;emie&gt;
-  &lt;domain&gt;contoso.com:8080&lt;/domain&gt;
-&lt;/emie&gt;</pre></td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-<tr>
-<td>&lt;path&gt;</td>
-<td>A unique entry added for each path under a domain you want to put on the Enterprise Mode site list. The &lt;path&gt; element is a child of the &lt;domain&gt; element. Additionally, the first &lt;path&gt; element will overrule any additional &lt;path&gt; elements in the schema section.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;emie&gt;
-  &lt;domain exclude="false"&gt;fabrikam.com
-    &lt;path exclude="true"&gt;/products&lt;/path&gt;
-  &lt;/domain&gt;
-&lt;/emie&gt;</pre><p>
-Where https://fabrikam.com doesn't use IE8 Enterprise Mode, but https://fabrikam.com/products does.</td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-</table>
+|Element |Description  |Supported browser  |
+|---------|---------|---------|
+|&lt;rules&gt;   | Root node for the schema.<br>**Example** <pre class="syntax">&lt;rules version="205"&gt; <br>  &lt;emie&gt; <br>   &lt;domain&gt;contoso.com&lt;/domain&gt; <br>  &lt;/emie&gt;<br> &lt;/rules&gt; |Internet Explorer 11 and Microsoft Edge         |
+|&lt;emie&gt;     |The parent node for the Enterprise Mode section of the schema. All &lt;domain&gt; entries will have either IE8 Enterprise Mode or IE7 Enterprise Mode applied. <br> **Example** <pre class="syntax">&lt;rules version="205"&gt; <br> &lt;emie&gt; <br>   &lt;domain&gt;contoso.com&lt;/domain&gt; <br> &lt;/emie&gt;<br>&lt;/rules&gt;  <br> </pre><p> **or** <br> For IPv6 ranges: <pre class="syntax"><br>&lt;rules version="205"&gt; <br> &lt;emie&gt; <br>  &lt;domain&gt;[10.122.34.99]:8080&lt;/domain&gt; <br> &lt;/emie&gt;<br>&lt;/rules&gt; </pre><p> <br> **or**<br> For IPv4 ranges:<pre class="syntax">&lt;rules version="205"&gt; <br> &lt;emie&gt; <br>  &lt;domain&gt;[10.122.34.99]:8080&lt;/domain&gt; <br> &lt;/emie&gt;<br>&lt;/rules&gt; | Internet Explorer 11 and Microsoft Edge       |
+|&lt;docMode&gt;     |The parent node for the document mode section of the section. All &lt;domain&gt; entries will get IE5 - IE11 document modes applied. If there's a &lt;domain&gt; element in the docMode section that uses the same value as a &lt;domain&gt; element in the emie section, the emie element is applied.  <br> **Example** <pre class="syntax"> <br/>&lt;rules version="205"&gt; <br> &lt;docmode&gt; <br>   &lt;domain docMode="7"&gt;contoso.com&lt;/domain&gt; <br> &lt;/docmode&gt;<br>&lt;/rules&gt;     |Internet Explorer 11         |
+|&lt;domain&gt;     |A unique entry added for each site you want to put on the Enterprise Mode site list. The first &lt;domain&gt; element will overrule any additional &lt;domain&gt; elements that use the same value for the section. You can use port numbers for this element. <br> **Example** <pre class="syntax"> <br/>&lt;emie&gt; <br> &lt;domain&gt;contoso.com:8080&lt;/domain&gt;<br>&lt;/emie&gt;       |Internet Explorer 11 and Microsoft Edge         |
+|&lt;path&gt;    |A unique entry added for each path under a domain you want to put on the Enterprise Mode site list. The &lt;path&gt; element is a child of the &lt;domain&gt; element. Additionally, the first &lt;path&gt; element will overrule any additional &lt;path&gt; elements in the schema section.<br> **Example**  <pre class="syntax"> <br/>&lt;emie&gt; <br> &lt;domain exclude="false"&gt;fabrikam.com <br>   &lt;path exclude="true"&gt;/products&lt;/path&gt;<br> &lt;/domain&gt;<br>&lt;/emie&gt;</pre><p> <br> Where [https://fabrikam.com](https://fabrikam.com) doesn't use IE8 Enterprise Mode, but [https://fabrikam.com/products](https://fabrikam.com/products) does.   |Internet Explorer 11 and Microsoft Edge         |
 
 ### Schema attributes
 This table includes the attributes used by the Enterprise Mode schema.
-
-<table>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Description</th>
-<th>Supported browser</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&lt;version&gt;</td>
-<td>Specifies the version of the Enterprise Mode Site List. This attribute is supported for the &lt;rules&gt; element.</td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-<tr>
-<td>&lt;exclude&gt;</td>
-<td>Specifies the domain or path that is excluded from getting the behavior applied. This attribute is supported on the &lt;domain&gt; and &lt;path&gt; elements.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;emie&gt;
-  &lt;domain exclude="false"&gt;fabrikam.com
-    &lt;path exclude="true"&gt;/products&lt;/path&gt;
-  &lt;/domain&gt;
-&lt;/emie&gt;</pre><p>
-Where https://fabrikam.com doesn't use IE8 Enterprise Mode, but https://fabrikam.com/products does.</td>
-<td>Internet Explorer 11 and Microsoft Edge</td>
-</tr>
-<tr>
-<td>&lt;docMode&gt;</td>
-<td>Specifies the document mode to apply. This attribute is only supported on &lt;domain&gt; or &lt;path&gt; elements in the &lt;docMode&gt; section.
-<p><b>Example</b>
-<pre class="syntax">
-&lt;docMode&gt;
-  &lt;domain exclude="false"&gt;fabrikam.com
-    &lt;path docMode="7"&gt;/products&lt;/path&gt;
-  &lt;/domain&gt;
-&lt;/docMode&gt;</pre></td>
-<td>Internet Explorer 11</td>
-</tr>
-</table>
+|Attribute|Description|Supported browser|
+|--- |--- |--- |
+|&lt;version&gt;|Specifies the version of the Enterprise Mode Site List. This attribute is supported for the &lt;rules&gt; element.|Internet Explorer 11 and Microsoft Edge|
+|&lt;exclude&gt;|Specifies the domain or path that is excluded from getting the behavior applied. This attribute is supported on the <domain> and <path> elements.<br> **Example** <pre class="syntax">&lt;emie&gt;<br>  &lt;domain exclude="false"&gt;fabrikam.com <br>    &lt;path exclude="true"&gt;/products&lt;/path&gt;<br>  &lt;/domain&gt;<br>&lt;/emie&gt; </pre><p> Where [https://fabrikam.com](https://fabrikam.com) doesn't use IE8 Enterprise Mode, but [https://fabrikam.com/products](https://fabrikam.com/products) does.|Internet Explorer 11 and Microsoft Edge|
+|&lt;docMode&gt;|Specifies the document mode to apply. This attribute is only supported on &lt;domain&gt; or &lt;path&gt;elements in the &lt;docMode&gt; section.<br> **Example**<pre class="syntax">&lt;docMode&gt; <br>  &lt;domain exclude="false"&gt;fabrikam.com <br>    &lt;path docMode="7"&gt;/products&lt;/path&gt;<br>  &lt;/domain&gt;<br>&lt;/docMode&gt;|Internet Explorer 11|
 
 ### Using Enterprise Mode and document mode together
 If you want to use both Enterprise Mode and document mode together, you need to be aware that  &lt;emie&gt; entries override &lt;docMode&gt; entries for the same domain. 

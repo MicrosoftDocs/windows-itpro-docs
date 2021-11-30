@@ -120,7 +120,7 @@ In many cases, most apps don’t require enlightenment for them to use Windows I
 
 To configure Windows Information Protection in a Mobile Device Management (MDM) solution that supports it, simply add authorized apps to the allow list. When a device running Windows 10 Mobile enrolls in the MDM solution, unauthorized apps will not have access to enterprise data.
 
-Windows Information Protection works seamlessly until users try to access enterprise data with or paste enterprise data into unauthorized apps or locations on the web. For example, copying enterprise data from an authorized app to another authorized app works as usual, but Window Information Protection can block users from copying enterprise data from an authorized app to an unauthorized app. Likewise, it will block users from using an unauthorized app to open a file that contains enterprise data.
+Windows Information Protection works seamlessly until users try to access enterprise data with or paste enterprise data into unauthorized apps or locations on the web. For example, copying enterprise data from an authorized app to another authorized app works as usual, but Windows Information Protection can block users from copying enterprise data from an authorized app to an unauthorized app. Likewise, it will block users from using an unauthorized app to open a file that contains enterprise data.
 
 The extent to which users will be prevented from copying and pasting data from authorized apps to unauthorized apps or locations on the web depends on which protection level is set:
 - **Block.** Windows Information Protection blocks users from completing the operation.
