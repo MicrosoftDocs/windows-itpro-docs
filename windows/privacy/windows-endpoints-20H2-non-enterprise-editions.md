@@ -9,7 +9,7 @@ ms.localizationpriority: high
 audience: ITPro
 author: gental-giant
 ms.author: v-hakima
-manager: siosulli
+manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 12/17/2020

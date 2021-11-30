@@ -10,7 +10,7 @@ ms.localizationpriority: high
 audience: ITPro
 author: siosulli
 ms.author: dansimp
-manager: siosulli
+manager: dansimp
 ms.date: 11/29/2021
 ms.technology: privacy
 ---

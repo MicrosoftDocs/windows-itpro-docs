@@ -9,7 +9,7 @@ ms.localizationpriority: high
 audience: ITPro
 author: linque1
 ms.author: siosulli
-manager: siosulli
+manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/29/2021
