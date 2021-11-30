@@ -10,7 +10,9 @@ author: Teresa-Motiv
 ms.author: v-tea
 manager: kaushika
 audience: ITPro
-ms.collection: Windows Security Technologies\BitLocker
+ms.collection:
+  - Windows Security Technologies\BitLocker
+  - highpri
 ms.topic: troubleshooting
 ms.date: 10/18/2019
 ms.custom: bitlocker
