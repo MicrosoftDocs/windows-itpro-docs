@@ -10,7 +10,9 @@ localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: article
 audience: ITPro
 ms.date: 11/29/2021

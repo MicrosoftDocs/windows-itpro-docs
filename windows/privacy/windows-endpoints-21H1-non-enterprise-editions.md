@@ -13,6 +13,7 @@ manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/04/2021
+ms.technology: privacy
 ---
 # Windows 10, version 21H1, connection endpoints for non-Enterprise editions
 

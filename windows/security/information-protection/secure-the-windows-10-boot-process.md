@@ -10,10 +10,11 @@ ms.localizationpriority: medium
 author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
-ms.date: 
-ms.reviewer: 
+ms.date: 11/24/2021
 ms.author: dansimp
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: What's new in Windows client deployment
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 description: Use this article to learn about new solutions and online content related to deploying Windows in your organization.
 keywords: deployment, automate, tools, configure, news
@@ -14,12 +13,13 @@ audience: itpro
 author: greg-lindsay
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # What's new in Windows client deployment
 
 **Applies to:**
-- Windows 10
+- Windows 10
 - Windows 11
 
 ## In this topic

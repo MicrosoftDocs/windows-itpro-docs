@@ -10,9 +10,10 @@ audience: ITPro
 author: siosulli
 ms.author: dansimp
 manager: dansimp
-ms.date:
 ms.technology: privacy
- 
+ms.date: 11/24/2021
+ms.collection: highpri
+
 ---
 
 # Essential services and connected experiences for Windows
