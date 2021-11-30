@@ -8,16 +8,21 @@ ms.sitesec: library
 ms.pagetype: security
 ms.localizationpriority: medium
 author: dansimp
-ms.date: 07/01/2021
+ms.date: 11/30/2021
 ms.reviewer: 
 manager: dansimp
 ms.author: dansimp
 ms.technology: windows-sec
 ---
 
+**Applies to:**
+
+- Windows 11
+- Windows 10
+
 # System Guard Secure Launch and SMM protection
 
-This topic explains how to configure [System Guard Secure Launch and System Management Mode (SMM) protection](system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md) to improve the startup security of Windows 10 devices. The information below is presented from a client perspective.
+This topic explains how to configure [System Guard Secure Launch and System Management Mode (SMM) protection](system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md) to improve the startup security of Windows 10 and Windows 11 devices. The information below is presented from a client perspective.
 
 ## How to enable System Guard Secure Launch
 
