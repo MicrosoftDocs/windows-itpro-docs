@@ -10,9 +10,10 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: article
-ms.reviewer: 
 ---
 
 # Windows 10, version 1709 and later and Windows 11 optional diagnostic data

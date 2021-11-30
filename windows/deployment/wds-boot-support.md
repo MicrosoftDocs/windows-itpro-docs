@@ -8,9 +8,10 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.author: greglin
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows Deployment Services (WDS) boot.wim support
