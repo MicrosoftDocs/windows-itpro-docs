@@ -12,7 +12,7 @@ manager: dansimp
 ms.collection: M365-identity-device-management
 ms.topic: article
 ms.localizationpriority: medium
-ms.date: 04/19/2017
+ms.date: 11/19/2021
 ms.reviewer: 
 ---
 
@@ -47,7 +47,7 @@ In addition to the enhanced security that is provided by having individual accou
 
 -   You can create a class of domain accounts that can be used to manage and maintain services on local computers.
 
--   Unlike domain accounts in which administrators must reset manually passwords, the network passwords for these accounts are automatically reset.
+-   Unlike domain accounts in which administrators must manually reset passwords, the network passwords for these accounts are automatically reset.
 
 -   You do not have to complete complex SPN management tasks to use managed service accounts.
 
