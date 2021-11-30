@@ -69,9 +69,9 @@ For more information, see:
 - [What's new in Azure Virtual Desktop?](/azure/virtual-desktop/whats-new)
 - [Set up MSIX app attach with the Azure portal](/azure/virtual-desktop/app-attach-azure-portal)
 
-## Wi-Fi 6E support
+## Wi-Fi WPA3 H2E support
 
-Also known as 802.11ax, Wi-Fi 6E support is built in to Windows 10, version 21H2. Wi-Fi 6E has new channel frequencies that are dedicated to 6E devices, and is more performant for apps that use more bandwidth.
+Wi-Fi WPA3 H2E (Hash-to-Element) support is built in to Windows 10, version 21H2.
 
 ## Related articles
 
