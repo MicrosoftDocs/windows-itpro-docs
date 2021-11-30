@@ -19,10 +19,6 @@ ms.custom: seo-marvel-mar2020
 
 # Set up MDT for BitLocker
 
-**Applies to**
-- Windows 10
-- Windows 11
-
 This topic will show you how to configure your environment for BitLocker, the disk volume encryption built into Windows 10 Enterprise and Windows 10 Pro, using MDT. BitLocker in Windows 10 has two requirements in regard to an operating system deployment:
 
 - A protector, which can either be stored in the Trusted Platform Module (TPM) chip, or stored as a password. Technically, you can also use a USB stick to store the protector, but it's not a practical approach as the USB stick can be lost or stolen. We, therefore, recommend that you instead use a TPM chip and/or a password.

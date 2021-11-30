@@ -8,8 +8,8 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
-ms.date: 09/27/2019
+author: dansimp
+ms.date: 11/19/2021
 ---
 
 # EnterpriseModernAppManagement CSP
@@ -181,7 +181,7 @@ The following example removes a package for all users:
       </Target>
       <Meta><Format xmlns="syncml:metinf">xml</Format></Meta>
       <Data>
-          <Package Name="{PackageFullName}" RemoveForAllUsers=1 />
+          <Package Name="{PackageFullName}" RemoveForAllUsers="1" />
       </Data>
    </Item>
 </Exec>
