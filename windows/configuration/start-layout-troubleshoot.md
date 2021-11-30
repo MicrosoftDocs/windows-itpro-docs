@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.reviewer: 
 manager: dansimp
 ms.topic: troubleshooting
+ms.collection: highpri
 ---
 
 # Troubleshoot Start menu errors

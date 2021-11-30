@@ -10,6 +10,7 @@ ms.localizationpriority: medium
 ms.date: 04/16/2020
 ms.reviewer: 
 manager: dansimp
+ms.collection: highpri
 ---
 # BitLocker CSP
 
