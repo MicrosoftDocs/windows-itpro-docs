@@ -12,9 +12,9 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 12/01/2021
 ms.reviewer: 
-ms.technology: windows-privacy
+ms.technology: privacy
 ---
 # Windows 10, version 1803, connection endpoints for non-Enterprise editions
 

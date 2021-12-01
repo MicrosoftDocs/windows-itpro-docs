@@ -15,7 +15,7 @@ ms.collection:
   - highpri
 ms.topic: article
 ms.reviewer:
-ms.technology: windows-privacy 
+ms.technology: privacy 
 
 ---
 

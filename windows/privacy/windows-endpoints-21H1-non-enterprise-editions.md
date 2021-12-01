@@ -14,8 +14,8 @@ ms.collection:
   - M365-security-compliance
   - highpri
 ms.topic: article
-ms.date: 11/29/2021
-ms.technology: windows-privacy
+ms.date: 12/01/2021
+ms.technology: privacy
 ---
 # Windows 10, version 21H1, connection endpoints for non-Enterprise editions
 

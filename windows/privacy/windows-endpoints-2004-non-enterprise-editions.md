@@ -12,8 +12,8 @@ ms.author: obezeajo
 manager: robsize
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 11/29/2021
-ms.technology: windows-privacy
+ms.date: 12/01/2021
+ms.technology: privacy
 ---
 # Windows 10, version 2004, connection endpoints for non-Enterprise editions
 
