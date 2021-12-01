@@ -33,30 +33,16 @@ Several log files are created during each phase of the upgrade process. These lo
 
 The following table describes some log files and how to use them for troubleshooting purposes:<br>
 
-<br>
-
-<table>
-<tr><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Log file</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Phase: Location</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>Description</td><td BGCOLOR="#a0e4fa"><font color="#000000"><B>When to use</td>
-<tr><td rowspan="5">setupact.log</td><td>Down-Level:<br>$Windows.~BT\Sources\Panther</td><td>Contains information about setup actions during the downlevel phase. </td>
-<td>All down-level failures and starting point for rollback investigations.<br> This is the most important log for diagnosing setup issues.</td>
-<tr><td>OOBE:<br>$Windows.~BT\Sources\Panther\UnattendGC</td>
-<td>Contains information about actions during the OOBE phase.</td><td>Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.</td>
-<tr><td>Rollback:<br>$Windows.~BT\Sources\Rollback<td>Contains information about actions during rollback.<td>Investigating generic rollbacks - 0xC1900101.</td>
-<tr><td>Pre-initialization (prior to downlevel):<br>Windows</td><td>Contains information about initializing setup.<td>If setup fails to launch.</td>
-<tr><td>Post-upgrade (after OOBE):<br>Windows\Panther<td>Contains information about setup actions during the installation.<td>Investigate post-upgrade related issues.</td>
-<tr><td>setuperr.log<td>Same as setupact.log<td>Contains information about setup errors during the installation.<td>Review all errors encountered during the installation phase.</td>
-<tr><td>miglog.xml<td>Post-upgrade (after OOBE):<br>Windows\Panther<td>Contains information about what was migrated during the installation.<td>Identify post upgrade data migration issues.</td>
-<tr><td>BlueBox.log<td>Down-Level:<br>Windows\Logs\Mosetup<td>Contains information communication between setup.exe and Windows Update.<td>Use during WSUS and WU down-level failures or for 0xC1900107.</td>
-<tr><td>Supplemental rollback logs:<br>
-Setupmem.dmp<br>
-setupapi.dev.log<br>
-Event logs (*.evtx)</td>
-<td>$Windows.~BT\Sources\Rollback<td>Additional logs collected during rollback.</td>
-<td>
-Setupmem.dmp: If OS bug checks during upgrade, setup will attempt to extract a mini-dump.<br>
-Setupapi: Device install issues - 0x30018<br>
-Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.</td>
-</table>
+| Log file | Phase: Location | When to use |
+|--- |--- |--- |
+|setupact.log|Down-Level:<br>$Windows.~BT\Sources\Panther|Contains information about setup actions during the downlevel phase.|All down-level failures and starting point for rollback investigations.<br> This is the most important log for diagnosing setup issues.|setupact.log|OOBE:<br>$Windows.~BT\Sources\Panther\UnattendGC|Contains information about actions during the OOBE phase.|Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.|
+|setupact.log|Rollback:<br>$Windows.~BT\Sources\Rollback|Contains information about actions during rollback.|Investigating generic rollbacks - 0xC1900101.|
+|setupact.log|Pre-initialization (prior to downlevel):<br>Windows|Contains information about initializing setup.|If setup fails to launch.|
+|setupact.log|Post-upgrade (after OOBE):<br>Windows\Panther|Contains information about setup actions during the installation.|Investigate post-upgrade related issues.|
+|setuperr.log|Same as setupact.log|Contains information about setup errors during the installation.|Review all errors encountered during the installation phase.|
+|miglog.xml|Post-upgrade (after OOBE):<br>Windows\Panther|Contains information about what was migrated during the installation.|Identify post upgrade data migration issues.|
+|BlueBox.log|Down-Level:<br>Windows\Logs\Mosetup|Contains information communication between setup.exe and Windows Update.|Use during WSUS and WU down-level failures or for 0xC1900107.|
+|Supplemental rollback logs:<br>Setupmem.dmp<br>setupapi.dev.log<br>Event logs (*.evtx)|$Windows.~BT\Sources\Rollback|Additional logs collected during rollback.|Setupmem.dmp: If OS bug checks during upgrade, setup will attempt to extract a mini-dump.<br>Setupapi: Device install issues - 0x30018<br>Event logs: Generic rollbacks (0xC1900101) or unexpected reboots.|
 
 ## Log entry structure
 

@@ -78,145 +78,27 @@ Wi-Fi network adapter drivers are one of the most important drivers to make sure
 
 The following list of commonly used Wi-Fi network adapters that are not supported by the default drivers provided with Windows 10 is provided to help you ascertain whether or not you need to add drivers to your image.
 
-<table>
-<colgroup>
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-<col width="25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><strong>Vendor name</strong></p></td>
-<td align="left"><p><strong>Product description</strong></p></td>
-<td align="left"><p><strong>HWID</strong></p></td>
-<td align="left"><p><strong>Windows Update availability</strong></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Broadcom</p></td>
-<td align="left"><p>802.11abgn Wireless SDIO adapter</p></td>
-<td align="left"><p>sd\vid_02d0&amp;pid_4330&amp;fn_1</p></td>
-<td align="left"><p>Contact the system OEM or Broadcom for driver availability.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Broadcom</p></td>
-<td align="left"><p>802.11n Network Adapter</p></td>
-<td align="left"><p>pci\ven_14e4&amp;dev_4331&amp;subsys_00d6106b&amp;rev_02</p></td>
-<td align="left"><p>Contact the system OEM or Broadcom for driver availability.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Broadcom</p></td>
-<td align="left"><p>802.11n Network Adapter</p></td>
-<td align="left"><p>pci\ven_14e4&amp;dev_4331&amp;subsys_00f5106b&amp;rev_02</p></td>
-<td align="left"><p>Contact the system OEM or Broadcom for driver availability.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Broadcom</p></td>
-<td align="left"><p>802.11n Network Adapter</p></td>
-<td align="left"><p>pci\ven_14e4&amp;dev_4331&amp;subsys_00ef106b&amp;rev_02</p></td>
-<td align="left"><p>Contact the system OEM or Broadcom for driver availability.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Broadcom</p></td>
-<td align="left"><p>802.11n Network Adapter</p></td>
-<td align="left"><p>pci\ven_14e4&amp;dev_4331&amp;subsys_00f4106b&amp;rev_02</p></td>
-<td align="left"><p>Contact the system OEM or Broadcom for driver availability.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Broadcom</p></td>
-<td align="left"><p>802.11n Network Adapter</p></td>
-<td align="left"><p>pci\ven_14e4&amp;dev_4331&amp;subsys_010e106b&amp;rev_02</p></td>
-<td align="left"><p>Contact the system OEM or Broadcom for driver availability.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Broadcom</p></td>
-<td align="left"><p>802.11n Network Adapter</p></td>
-<td align="left"><p>pci\ven_14e4&amp;dev_4331&amp;subsys_00e4106b&amp;rev_02</p></td>
-<td align="left"><p>Contact the system OEM or Broadcom for driver availability.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Broadcom</p></td>
-<td align="left"><p>802.11n Network Adapter</p></td>
-<td align="left"><p>pci\ven_14e4&amp;dev_4331&amp;subsys_433114e4&amp;rev_02</p></td>
-<td align="left"><p>Contact the system OEM or Broadcom for driver availability.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Broadcom</p></td>
-<td align="left"><p>802.11n Network Adapter</p></td>
-<td align="left"><p>pci\ven_14e4&amp;dev_4331&amp;subsys_010f106b&amp;rev_02</p></td>
-<td align="left"><p>Contact the system OEM or Broadcom for driver availability.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Marvell</p></td>
-<td align="left"><p>Yukon 88E8001/8003/8010 PCI Gigabit Ethernet</p></td>
-<td align="left"><p>pci\ven_11ab&amp;dev_4320&amp;subsys_811a1043</p></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619080" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619080)">32-bit driver</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619082" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619082)">64-bit driver</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Marvell</p></td>
-<td align="left"><p>Libertas 802.11b/g Wireless</p></td>
-<td align="left"><p>pci\ven_11ab&amp;dev_1faa&amp;subsys_6b001385&amp;rev_03</p></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619128" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619128)">32-bit driver</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619129" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619129)">64-bit driver</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Qualcomm</p></td>
-<td align="left"><p>Atheros AR6004 Wireless LAN Adapter</p></td>
-<td align="left"><p>sd\vid_0271&amp;pid_0401</p></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619086" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619086)">32-bit driver</a></p>
-<p>64-bit driver not available</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Qualcomm</p></td>
-<td align="left"><p>Atheros AR5BWB222 Wireless Network Adapter</p></td>
-<td align="left"><p>pci\ven_168c&amp;dev_0034&amp;subsys_20031a56</p></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619348" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619348)">32-bit driver</a></p>
-<p>64-bit driver not available</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Qualcomm</p></td>
-<td align="left"><p>Atheros AR5BWB222 Wireless Network Adapter</p></td>
-<td align="left"><p>pci\ven_168c&amp;dev_0034&amp;subsys_020a1028&amp;rev_01</p></td>
-<td align="left"><p>Contact the system OEM or Qualcom for driver availability.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Qualcomm</p></td>
-<td align="left"><p>Atheros AR5005G Wireless Network Adapter</p></td>
-<td align="left"><p>pci\ven_168c&amp;dev_001a&amp;subsys_04181468&amp;rev_01</p></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619349" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619349)">32-bit driver</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619091" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619091)">64-bit driver</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Ralink</p></td>
-<td align="left"><p>Wireless-G PCI Adapter</p></td>
-<td align="left"><p>pci\ven_1814&amp;dev_0301&amp;subsys_00551737&amp;rev_00</p></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619092" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619092)">32-bit driver</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619093" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619093)">64-bit driver</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Ralink</p></td>
-<td align="left"><p>Turbo Wireless LAN Card</p></td>
-<td align="left"><p>pci\ven_1814&amp;dev_0301&amp;subsys_25611814&amp;rev_00</p></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619094" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619094)">32-bit driver</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619095" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619095)">64-bit driver</a></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Ralink</p></td>
-<td align="left"><p>Wireless LAN Card V1</p></td>
-<td align="left"><p>pci\ven_1814&amp;dev_0302&amp;subsys_3a711186&amp;rev_00</p></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619097" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619097)">32-bit driver</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619098" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619098)">64-bit driver</a></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Ralink</p></td>
-<td align="left"><p>D-Link AirPlus G DWL-G510 Wireless PCI Adapter(rev.C)</p></td>
-<td align="left"><p>pci\ven_1814&amp;dev_0302&amp;subsys_3c091186&amp;rev_00</p></td>
-<td align="left"><p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619099" data-raw-source="[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619099)">32-bit driver</a></p>
-<p><a href="https://go.microsoft.com/fwlink/p/?LinkId=619100" data-raw-source="[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619100)">64-bit driver</a></p></td>
-</tr>
-</tbody>
-</table>
+|Vendor name|Product description|HWID|Windows Update availability|
+|--- |--- |--- |--- |
+|Broadcom|802.11abgn Wireless SDIO adapter|sd\vid_02d0&pid_4330&fn_1|Contact the system OEM or Broadcom for driver availability.|
+|Broadcom|802.11n Network Adapter|pci\ven_14e4&dev_4331&subsys_00d6106b&rev_02|Contact the system OEM or Broadcom for driver availability.|
+|Broadcom|802.11n Network Adapter|pci\ven_14e4&dev_4331&subsys_00f5106b&rev_02|Contact the system OEM or Broadcom for driver availability.|
+|Broadcom|802.11n Network Adapter|pci\ven_14e4&dev_4331&subsys_00ef106b&rev_02|Contact the system OEM or Broadcom for driver availability.|
+|Broadcom|802.11n Network Adapter|pci\ven_14e4&dev_4331&subsys_00f4106b&rev_02|Contact the system OEM or Broadcom for driver availability.|
+|Broadcom|802.11n Network Adapter|pci\ven_14e4&dev_4331&subsys_010e106b&rev_02|Contact the system OEM or Broadcom for driver availability.|
+|Broadcom|802.11n Network Adapter|pci\ven_14e4&dev_4331&subsys_00e4106b&rev_02|Contact the system OEM or Broadcom for driver availability.|
+|Broadcom|802.11n Network Adapter|pci\ven_14e4&dev_4331&subsys_433114e4&rev_02|Contact the system OEM or Broadcom for driver availability.|
+|Broadcom|802.11n Network Adapter|pci\ven_14e4&dev_4331&subsys_010f106b&rev_02|Contact the system OEM or Broadcom for driver availability.|
+|Marvell|Yukon 88E8001/8003/8010 PCI Gigabit Ethernet|pci\ven_11ab&dev_4320&subsys_811a1043|[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619080)<br>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619082)|
+|Marvell|Libertas 802.11b/g Wireless|pci\ven_11ab&dev_1faa&subsys_6b001385&rev_03|[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619128)<br>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619129)|
+|Qualcomm|Atheros AR6004 Wireless LAN Adapter|sd\vid_0271&pid_0401|[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619086)<br>64-bit driver not available|
+|Qualcomm|Atheros AR5BWB222 Wireless Network Adapter|pci\ven_168c&dev_0034&subsys_20031a56|[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619348)<br>64-bit driver not available|
+|Qualcomm|Atheros AR5BWB222 Wireless Network Adapter|pci\ven_168c&dev_0034&subsys_020a1028&rev_01|Contact the system OEM or Qualcom for driver availability.|
+|Qualcomm|Atheros AR5005G Wireless Network Adapter|pci\ven_168c&dev_001a&subsys_04181468&rev_01|[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619349)<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619091)|
+|Ralink|Wireless-G PCI Adapter|pci\ven_1814&dev_0301&subsys_00551737&rev_00|[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619092)<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619093)|
+|Ralink|Turbo Wireless LAN Card|pci\ven_1814&dev_0301&subsys_25611814&rev_00|[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619094)<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619095)|
+|Ralink|Wireless LAN Card V1|pci\ven_1814&dev_0302&subsys_3a711186&rev_00|[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619097)<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619098)|
+|Ralink|D-Link AirPlus G DWL-G510 Wireless PCI Adapter(rev.C)|pci\ven_1814&dev_0302&subsys_3c091186&rev_00|[32-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619099)<p>[64-bit driver](https://go.microsoft.com/fwlink/p/?LinkId=619100)|
 
 IT administrators that want to target Windows To Go images for specific systems should test their images to ensure that the necessary system drivers are in the image, especially for critical functionality like Wi-Fi that is not supported by class drivers. Some consumer devices require OEM-specific driver packages, which may not be available on Windows Update. For more information on how to add a driver to a Windows Image, please refer to the [Basic Windows Deployment Step-by-Step Guide](/previous-versions/windows/it-pro/windows-8.1-and-8/hh825212(v=win.10)).
 

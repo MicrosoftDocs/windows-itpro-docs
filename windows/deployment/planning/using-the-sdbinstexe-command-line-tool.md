@@ -59,56 +59,14 @@ Sdbinst.exe \[-?\] \[-p\] \[-q\] \[-u\] \[-g\] \[-u filepath\] \[-g *GUID*\] \[-
 
 The following table describes the available command-line options.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Option</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>-?</p></td>
-<td align="left"><p>Displays the Help for the Sdbinst.exe tool.</p>
-<p>For example,</p>
-<p><code>sdbinst.exe -?</code></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>-p</p></td>
-<td align="left"><p>Allows SDBs installation with Patches</p>
-<p>For example,</p>
-<p><code>sdbinst.exe -p C:\Windows\AppPatch\Myapp.sdb</code></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>-q</p></td>
-<td align="left"><p>Performs a silent installation with no visible window, status, or warning information. Fatal errors appear only in Event Viewer (Eventvwr.exe).</p>
-<p>For example,</p>
-<p><code>sdbinst.exe -q</code></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>-u <em>filepath</em></p></td>
-<td align="left"><p>Performs an uninstallation of the specified database.</p>
-<p>For example,</p>
-<p><code>sdbinst.exe -u C:\example.sdb</code></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>-g <em>GUID</em></p></td>
-<td align="left"><p>Specifies the customized database to uninstall by a globally unique identifier (GUID).</p>
-<p>For example,</p>
-<p><code>sdbinst.exe -g 6586cd8f-edc9-4ea8-ad94-afabea7f62e3</code></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>-n <em>&quot;name&quot;</em></p></td>
-<td align="left"><p>Specifies the customized database to uninstall by file name.</p>
-<p>For example,</p>
-<p><code>sdbinst.exe -n &quot;My_Database&quot;</code></p></td>
-</tr>
-</tbody>
-</table>
+|Option|Description|
+|--- |--- |
+|-?|Displays the Help for the Sdbinst.exe tool.<p>For example,<br>`sdbinst.exe -?`|
+|-p|Allows SDBs installation with Patches.<p>For example,<br>`sdbinst.exe -p C:\Windows\AppPatch\Myapp.sdb`|
+|-q|Performs a silent installation with no visible window, status, or warning information. Fatal errors appear only in Event Viewer (Eventvwr.exe).<p>For example,<br>`sdbinst.exe -q`|
+|-u (filepath)|Performs an uninstallation of the specified database.<p>For example,<br>`sdbinst.exe -u C:\example.sdb`|
+|-g (GUID)|Specifies the customized database to uninstall by a globally unique identifier (GUID).<p>For example,<br>`sdbinst.exe -g 6586cd8f-edc9-4ea8-ad94-afabea7f62e3`|
+|-n ("name")|Specifies the customized database to uninstall by file name.<p>For example,<br>`sdbinst.exe -n "My_Database"`|
 
 ## Related topics
 [Compatibility Administrator User's Guide](compatibility-administrator-users-guide.md)
