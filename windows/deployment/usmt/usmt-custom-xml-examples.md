@@ -15,19 +15,6 @@ ms.topic: article
 
 # Custom XML Examples
 
-**Note**  
-Because the tables in this topic are wide, you may need to adjust the width of its window.
-
-## In This Topic:
-
--   [Example 1: Migrating an Unsupported Application](#example)
-
--   [Example 2: Migrating the My Videos Folder](#example2)
-
--   [Example 3: Migrating Files and Registry Keys](#example3)
-
--   [Example 4: Migrating Specific Folders from Various Locations](#example4)
-
 ## <a href="" id="example"></a>Example 1: Migrating an Unsupported Application
 
 The following is a template for the sections that you need to migrate your application. The template is not functional on its own, but you can use it to write your own .xml file.
@@ -98,13 +85,23 @@ The following is a template for the sections that you need to migrate your appli
 
 ## <a href="" id="example2"></a>Example 2: Migrating the My Videos Folder
 
-The following is a custom .xml file named CustomFile.xml that migrates My Videos for all users, if the folder exists on the source computer.
+The following sample is a custom .xml file named CustomFile.xml that migrates My Videos for all users, if the folder exists on the source computer.
 
-| Code | Behavior |
-|------|----------|
-| <pre class="syntax"><code>&lt;condition&gt;MigXmlHelper.DoesObjectExist(&quot;File&quot;,&quot;%CSIDL_MYVIDEO%&quot;)&lt;/condition&gt;</code></pre> | Verifies that My Videos exists on the source computer. |
-| <pre class="syntax"><code>&lt;include filter=&#39;MigXmlHelper.IgnoreIrrelevantLinks()&#39;&gt;</code></pre> | Filters out the shortcuts in My Videos that do not resolve on the destination computer. This has no effect on files that are not shortcuts. For example, if there is a shortcut in My Videos on the source computer that points to C:\Folder1, that shortcut will be migrated only if C:\Folder1 exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering. |
-| <pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;%CSIDL_MYVIDEO%* [*]&lt;/pattern&gt;</code></pre> | Migrates My Videos for all users. |
+- **Sample condition**: Verifies that My Videos exists on the source computer:
+
+  `<condition>MigXmlHelper.DoesObjectExist("File","%CSIDL_MYVIDEO%")</condition>`
+
+- **Sample filter**: Filters out the shortcuts in My Videos that do not resolve on the destination computer:
+
+  `<include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>`
+
+  This has no effect on files that are not shortcuts. For example, if there is a shortcut in My Videos on the source computer that points to C:\Folder1, that shortcut will be migrated only if C:\Folder1 exists on the destination computer. However, all other files, such as .mp3 files, migrate without any filtering.
+
+- **Sample pattern**: Migrates My Videos for all users:
+
+  `<pattern type="File">%CSIDL_MYVIDEO%* [*]</pattern>`
+
+**XML file**
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -131,14 +128,25 @@ The following is a custom .xml file named CustomFile.xml that migrates My Videos
 
 ## <a href="" id="example3"></a>Example 3: Migrating Files and Registry Keys
 
-This table describes the behavior in the following example .xml file.
+The sample patterns describe the behavior in the following example .xml file.
 
-| Code | Behavior |
-|------|----------|
-| <pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;%ProgramFiles%\USMTTestFolder* [USMTTestFile.txt]&lt;/pattern&gt;</code></pre> | Migrates all instances of the file Usmttestfile.txt from all sub-directories under %ProgramFiles%\USMTTestFolder. |
-| <pre class="syntax"><code>&lt;pattern type=&quot;File&quot;&gt;%ProgramFiles%\USMTDIRTestFolder* []&lt;/pattern&gt;</code></pre> | Migrates the whole directory under %ProgramFiles%\USMTDIRTestFolder. |
-| <pre class="syntax"><code>&lt;pattern type=&quot;Registry&quot;&gt;HKCU\Software\USMTTESTKEY* [MyKey]&lt;/pattern&gt;</code></pre> | Migrates all instances of MyKey under HKCU\Software\USMTTESTKEY. |
-| <pre class="syntax"><code>&lt;pattern type=&quot;Registry&quot;&gt;HKLM\Software\USMTTESTKEY* []&lt;/pattern&gt;</code></pre> | Migrates the entire registry hive under HKLM\Software\USMTTESTKEY. |
+- **Sample pattern**: Migrates all instances of the file Usmttestfile.txt from all sub-directories under `%ProgramFiles%\USMTTestFolder`:
+
+  `<pattern type="File">%ProgramFiles%\USMTTestFolder* [USMTTestFile.txt]</pattern>`
+
+- **Sample pattern**: Migrates the whole directory under `%ProgramFiles%\USMTDIRTestFolder`:
+
+  `<pattern type="File">%ProgramFiles%\USMTDIRTestFolder* []</pattern>`
+
+- **Sample pattern**: Migrates all instances of MyKey under `HKCU\Software\USMTTESTKEY`:
+
+  `<pattern type="Registry">HKCU\Software\USMTTESTKEY* [MyKey]</pattern>`
+
+- **Sample pattern**: Migrates the entire registry hive under `HKLM\Software\USMTTESTKEY`:
+
+  `<pattern type="Registry">HKLM\Software\USMTTESTKEY* []</pattern>`
+
+**XML file**
 
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/testfilemig">
@@ -174,7 +182,7 @@ This table describes the behavior in the following example .xml file.
 ## <a href="" id="example4"></a>Example 4: Migrating Specific Folders from Various Locations
 
 
-The behavior for this custom .xml file is described within the &lt;`displayName`&gt; tags in the code.
+The behavior for this custom .xml file is described within the `<displayName>` tags in the code.
 
 ``` xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/test">
@@ -201,12 +209,12 @@ The behavior for this custom .xml file is described within the &lt;`displayName`
   <displayName>Component to migrate all user documents except Sample.doc</displayName>
   <role role="Data">
     <rules>
-         <include>
+          <include>
             <objectSet>
                  <pattern type="File"> C:\UserDocuments\* [*]</pattern>
             </objectSet>
           </include>
-        <exclude>
+          <exclude>
              <objectSet>
                  <pattern type="File"> C:\UserDocuments\ [Sample.doc]</pattern>
              </objectSet>
@@ -221,9 +229,9 @@ The behavior for this custom .xml file is described within the &lt;`displayName`
     <rules>
          <include>
             <objectSet>
-         <script>MigXmlHelper.GenerateDrivePatterns ("\Requests\* [*] ", "Fixed")</script>            
-         <script>MigXmlHelper.GenerateDrivePatterns ("*\Requests\* [*] ", "Fixed")</script>            
-     </objectSet>
+                 <script>MigXmlHelper.GenerateDrivePatterns ("\Requests\* [*] ", "Fixed")</script>            
+                 <script>MigXmlHelper.GenerateDrivePatterns ("*\Requests\* [*] ", "Fixed")</script>            
+            </objectSet>
           </include>
     </rules>
   </role>
@@ -235,8 +243,8 @@ The behavior for this custom .xml file is described within the &lt;`displayName`
     <rules>
          <include>
             <objectSet>                 
-<pattern type="File"> C:\*\Presentations\* [*]</pattern>
-<pattern type="File"> C:\Presentations\* [*]</pattern>
+                 <pattern type="File"> C:\*\Presentations\* [*]</pattern>
+                 <pattern type="File"> C:\Presentations\* [*]</pattern>
            </objectSet>
           </include>
     </rules>
