@@ -9,11 +9,12 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/19/2017
-ms.reviewer: 
 ---
 
 # User Account Control Group Policy and registry key settings
@@ -150,7 +151,7 @@ The options are:
 -   **Enabled.** (Default) Admin Approval Mode is enabled. This policy must be enabled and related UAC policy settings must also be set appropriately to allow the built-in Administrator account and all other users who are members of the **Administrators** group to run in Admin Approval Mode.
 -   **Disabled.** Admin Approval Mode and all related UAC policy settings are disabled.
 
-**Note** If this policy setting is disabled, the Security Center notifies you that the overall security of the operating system has been reduced.
+**Note** If this policy setting is disabled, the Windows Security app notifies you that the overall security of the operating system has been reduced.
 
 ### User Account Control: Switch to the secure desktop when prompting for elevation
 

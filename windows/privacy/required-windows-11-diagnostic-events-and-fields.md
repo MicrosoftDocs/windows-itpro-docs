@@ -10,7 +10,9 @@ localizationpriority: high
 author: brianlic-msft
 ms.author: brianlic
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: article
 audience: ITPro
 ms.date: 10/04/2021
@@ -36,7 +38,7 @@ Use this article to learn about diagnostic events, grouped by event area, and th
 
 You can learn more about Windows functional and diagnostic data through these articles:
 
-- [Windows 10, version 20H2 and Windows 10, version 2004 basic diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
+- [Windows 10, version 21H2, Windows 10, version 21H1, Windows 10, version 20H2 and Windows 10, version 2004 required Windows diagnostic events and fields](required-windows-diagnostic-data-events-and-fields-2004.md)
 - [Windows 10, version 1809 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1809.md)
 - [Windows 10, version 1803 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1803.md)
 - [Windows 10, version 1709 basic diagnostic events and fields](basic-level-windows-diagnostic-events-and-fields-1709.md)

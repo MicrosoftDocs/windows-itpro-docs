@@ -1,7 +1,6 @@
 ---
 title: Troubleshoot Windows 10 upgrade errors - Windows IT Pro
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 description: Understanding the Windows 10 upgrade process can help you troubleshoot errors when something goes wrong. Find out more with this guide.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
@@ -18,7 +17,7 @@ ms.topic: article
 # Troubleshooting upgrade errors
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 > [!NOTE]
 > This is a 300 level topic (moderately advanced).<br>

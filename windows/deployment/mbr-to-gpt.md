@@ -10,12 +10,12 @@ audience: itpro
 author: greg-lindsay
 ms.author: greglin
 ms.date: 02/13/2018
-ms.reviewer:
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
 ms.localizationpriority: medium
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # MBR2GPT.EXE
@@ -422,7 +422,7 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
 
 1. Mount the Windows PE WIM to a path (for example, C:\WinPE_Mount). For more information about how to mount WIM files, see [Mount an image](/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism#mount-an-image).
 
-2. Copy the ReAgent files and the ReAgent localization files from the Window 10, version 1903 ADK source folder to the mounted WIM.
+2. Copy the ReAgent files and the ReAgent localization files from the Windows 10, version 1903 ADK source folder to the mounted WIM.
 
    For example, if the ADK is installed to the default location of C:\Program Files (x86)\Windows Kits\10 and the Windows PE image is mounted to C:\WinPE_Mount, run the following commands from an elevated Command Prompt window:
 

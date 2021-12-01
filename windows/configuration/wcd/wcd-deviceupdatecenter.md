@@ -17,7 +17,7 @@ Do not use **DeviceUpdateCenter** settings at this time.
 
 ## Applies to
 
-| Setting   | Desktop editions | Mobile editions | Surface Hub | HoloLens | IoT Core |
-| --- | :---: | :---: | :---: | :---: | :---: |
-| All settings | ✔️  |  |  |  |  |
+| Setting   | Windows client | Surface Hub | HoloLens | IoT Core |
+| --- | :---: | :---: | :---: | :---: |
+| All settings | ✔️  |  |  |  |
 

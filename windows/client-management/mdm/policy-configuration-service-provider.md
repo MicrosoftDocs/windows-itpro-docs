@@ -11,6 +11,7 @@ ms.technology: windows
 author: manikadhiman
 ms.localizationpriority: medium
 ms.date: 07/18/2019
+ms.collection: highpri
 ---
 
 # Policy CSP
@@ -5840,9 +5841,6 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-allowioavprotection" id="defender-allowioavprotection">Defender/AllowIOAVProtection</a>
-  </dd>
-  <dd>
-    <a href="./policy-csp-defender.md#defender-allowintrusionpreventionsystem" id="defender-allowintrusionpreventionsystem">Defender/AllowIntrusionPreventionSystem</a>
   </dd>
   <dd>
     <a href="./policy-csp-defender.md#defender-allowonaccessprotection" id="defender-allowonaccessprotection">Defender/AllowOnAccessProtection</a>
