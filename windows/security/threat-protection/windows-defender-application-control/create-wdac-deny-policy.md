@@ -18,9 +18,9 @@ ms.date: 11/29/2021
 ms.technology: windows-sec
 ---
 
-# **Guidance on Creating WDAC Deny Policies**
+# Guidance on Creating WDAC Deny Policies
 
-With Windows Defender Application Control (WDAC), you can create applicatoin contorl policies to explicitly deny specific drivers and applications, as well as signatures and certificates and file paths.
+With Windows Defender Application Control (WDAC), you can create applicatoin control policies to explicitly deny specific drivers and applications, as well as signatures and certificates and file paths.
 
 Topics this article will be discussing are:
 1. File Rule Precedence Order
@@ -30,7 +30,7 @@ Topics this article will be discussing are:
 5. Best Practices
 6. Tutorial/Walkthrough
 
-## **File Rule Precendence Order**
+## File Rule Precendence Order
 
 To create effective WDAC deny policies, it is crucial to understand how WDAC pares the policy. The WDAC engine evaluates files against the policy in the following order.
 
@@ -38,18 +38,18 @@ To create effective WDAC deny policies, it is crucial to understand how WDAC par
 
 2. Explicit allow rules
 
-3. WDAC will then check for the Managed Installer extended (EA) <a https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer>Allow Apps with a WDAC managed Installer (windows) - Windows security | Microsoft Docs</a>)
+3. WDAC will then check for the Managed Installer extended (EA) [Allow Apps with a WDAC managed Installer (windows) - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer)
 
-4. Lastly, WDAC will call the ISG to get reputation on file, if the policy has support for the ISG
+4. Lastly, WDAC will call the Intelligent Security Graph (ISG) to get reputation on file, if the policy has support for the ISG
 
 Explicit allow and deny rules encompass rules at any level (e.g. has rules, signer rules path rules, attritbute rules or package family name rules). If there is an explicit deny rule, WDAC does not process any other rules, meaning a deny rule always takes precedence in the case where a deny and allow rule would be at odds. 
 
-## **Interaction with Existing Policies**
-### **Adding Allow Rules**
+## Interaction with Existing Policies
+### Adding Allow Rules
 
-In the scenario where there is not an explicit allow rule, there is not a managed installer or Intelligent Security Graph (ISG) EA and ISG is not configured, WDAC will block the file as there is nothing in the policy vouching for trust of the file. 
+In the scenario where there is not an explicit allow rule, there is not a managed installer or ISG EA and ISG is not configured, WDAC will block the file as there is nothing in the policy vouching for trust of the file. 
 
-If this deny policy is the only policy on the device, the following rule(s) need to be added to the policy in addition ot the deny/block rules to trust for the driver files outside of the intended blocklisted ones:
+If this deny policy is the only policy on the device, the following rule(s) need to be added to the policy in addition to the deny/block rules to trust for the driver files outside of the intended blocklisted ones:
 
 ```xml
 <FileRules>
@@ -90,7 +90,7 @@ If the policy enables user mode code integrity via the ***Enabled:UMCI*** rule-o
 </SigningScenarios>
 ```
 ## Single Policy Considerations
-If the set of deny rules is to be added into an existing policy with allow rules, then the above Allow All rules should not be added to the policy. Instead, the deny policy should be merged with the existing WDAC policy via the WDAC Wizard
+If the set of deny rules is to be added into an existing policy with allow rules, then the above Allow All rules should not be added to the policy. Instead, the deny policy should be merged with the existing WDAC policy via the WDAC Wizard.
 
 ```PowerShell
 $DenyPolicy = <path_to_deny_policy>
@@ -105,13 +105,13 @@ If you are currently using multiple policies [Use multiple Windows Defender Appl
 
 Policy 1 is an allow list of Windows and Microsoft-signed applications. Policy 2 is our new deny policy which blocks MaliciousApp.exe with the Allow All rules. MaliciousApp.exe will be blocked since there is an explicit block rule in Policy 2. Windows and Microsoft applications will be allowed since there is an explicit allow rule in Policy 1 and Policy 2 (due to the Allow All rules). All other applications, if not Windows and Microsoft signed, e.g., ExampleApp.exe, will not be allowed as this application is only trusted by Policy 2 (due to the Allow All rules) and not Policy 1.
 
-## **Best Practices**
+## Best Practices
 
 1. **Starting with Audit Mode Policies** - as with all new policies, we recommend rolling out your new deny policy in Audit Mode and monitoring the 3077 block events [Understanding Application Control event IDs (Windows) - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#microsoft-windows-codeintegrity-operational-log-event-ids) to ensure only the applications you intended to block are being blocked. More information on monitoring block events via the Event Viewer logs and Advanced Hunting: [Managing and troubleshooting Windows Defender Application Control policies (Windows) - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide)
 
 2. **Recommeneded Deny Rules Types** - signer and file attribute rules are recommended from a security, manageability, and performance perspective. Hash rules should only be utilized where otherwise impossible. The hash of an application is updated for every new version released by the publisher which quickly becomes impractical to manage and protect against new threats where the attacker is quickly iterating on the payload. Additionally, WDAC has optimized parsing of hash rules, but devices may see performance impacts at runtime evaluation when policies have tens of thousands or more hash rules. 
 
-## **Tutorial** 
+## Tutorial 
 
 ### Creating a Deny Policy
 Deny rules and policies can be created using the PowerShell cmdlets or the WDAC Wizard [Microsoft WDAC Wizard (webapp-wdac-wizard.azurewebsites.net](https://webapp-wdac-wizard.azurewebsites.net/) We recommend creating signer rules (PCACertificate, Publisher, and FilePublisher) wherever possible. In the cases of unsigned binaries, rules must be created on attributes of the file, such as the original filename, or the hash. 
