@@ -70,7 +70,7 @@ For example, here are the steps to install the fonts associated with the Hebrew 
 
 3. If you don't see **Hebrew Supplemental Fonts** in the list of installed features, select the plus sign (**+**) to add a feature.
 
-4. Select **Hebrew Supplemental Fonts** in the list, and then clselectick **Install**.
+4. Select **Hebrew Supplemental Fonts** in the list, and then select **Install**.
 
 > [!NOTE]
 > The optional features are installed by Windows Update. You need to be online for the Windows Update service to work.

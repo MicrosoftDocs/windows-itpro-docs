@@ -91,15 +91,15 @@ You can migrate a 32-bit operating system to a 64-bit operating system. However,
 USMT does not support any of the Windows Server® operating systems, Windows 2000, Windows XP, or any of the starter editions for Windows Vista or Windows 7.
 
 USMT for Windows 10 should not be used for migrating from Windows 7 to Windows 8.1. It is meant to migrate to Windows 10.
-For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) 4.0 User’s Guide](/previous-versions/windows/server/dd560801(v=ws.10)). 
+For more information about previous releases of the USMT tools, see [User State Migration Tool (USMT) 4.0 User’s Guide](/previous-versions/windows/server/dd560801(v=ws.10)).
 
 ## Windows PE
 
--   **Must use latest version of Window PE.** For example, to migrate to Windows 10, you'll need Windows PE 5.1. For more info, see [What's New in Windows PE](/windows-hardware/manufacture/desktop/whats-new-in-windows-pe-s14).
+- **Must use latest version of Windows PE.** For example, to migrate to Windows 10, you'll need Windows PE 5.1. For more info, see [What's New in Windows PE](/windows-hardware/manufacture/desktop/whats-new-in-windows-pe-s14).
 
 ## Credentials
 
--  **Run as administrator**
+- **Run as administrator**
     When manually running the **ScanState** and **LoadState** tools on Windows 7, Windows 8 or Windows 10 you must run them from an elevated command prompt to ensure that all specified users are migrated. If you do not run USMT from an elevated prompt, only the user profile that is logged on will be included in the migration.
 
 To open an elevated command prompt:

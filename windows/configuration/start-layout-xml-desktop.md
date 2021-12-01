@@ -12,6 +12,7 @@ ms.date: 10/02/2018
 ms.reviewer: 
 manager: dansimp
 ms.localizationpriority: medium
+ms.collection: highpri
 ---
 
 # Start layout XML for desktop editions of Windows 10 (reference)
@@ -19,7 +20,7 @@ ms.localizationpriority: medium
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 >**Looking for consumer information?** See [Customize the Start menu](https://go.microsoft.com/fwlink/p/?LinkId=623630)
 

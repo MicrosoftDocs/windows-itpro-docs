@@ -11,7 +11,9 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: article
 ms.date: 10/04/2021
 ---
@@ -261,10 +263,14 @@ The Windows diagnostic data processor configuration enables you to be the contro
 
 ### Prerequisites
 
-- The device must be any of the following releases of Windows:
-  - Windows 11 Enterprise, Professional, or Education edition
-  - Windows 10 Enterprise, Education, or Professional edition, version 1809 with July 2021 update or later.
+- Use a supported version of Windows 10 or Windows 11
+- The following editions are supported: 
+  - Enterprise
+  - Professional
+  - Education
 - The device must be joined to Azure Active Directory.
+
+For the best experience, use the most current build of any operating system specified above. Configuration functionality and availability may vary on older systems. See [Lifecycle Policy](/lifecycle/products/windows-10-enterprise-and-education)
 
 The diagnostic data setting on the device should be set to Required diagnostic data or higher, and the following endpoints need to be reachable:
 

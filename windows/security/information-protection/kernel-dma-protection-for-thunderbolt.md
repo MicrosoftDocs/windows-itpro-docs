@@ -9,16 +9,17 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 03/26/2019
-ms.reviewer: 
 ---
 
-# Kernel DMA Protection 
+# Kernel DMA Protection
 
 **Applies to**
--   Windows 10
+-   Windows 10
 -   Windows 11
 
 In Windows 10 version 1803, Microsoft introduced a new feature called Kernel DMA Protection to protect PCs against drive-by Direct Memory Access (DMA) attacks using PCI hot plug devices connected to externally accessible PCIe ports (for example, Thunderbolt™ 3 ports and CFexpress). In Windows 10 version 1903, Microsoft expanded the Kernel DMA Protection support to cover internal PCIe ports (for example, M.2 slots)
@@ -73,11 +74,11 @@ Systems released prior to Windows 10 version 1803 do not support Kernel DMA Prot
 
 Systems running Windows 10 version 1803 that do support Kernel DMA Protection do have this security feature enabled automatically by the OS with no user or IT admin configuration required.
 
-### Using Security Center
+### Using the Windows Security app
 
-Beginning with Windows 10 version 1809, you can use Security Center to check if Kernel DMA Protection is enabled. Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation details** > **Memory access protection**.
+Beginning with Windows 10 version 1809, you can use the Windows Security app to check if Kernel DMA Protection is enabled. Click **Start** > **Settings** > **Update & Security** > **Windows Security** > **Open Windows Security** > **Device security** > **Core isolation details** > **Memory access protection**.
 
-![Kernel DMA protection in Security Center.](bitlocker/images/kernel-dma-protection-security-center.png)
+![Kernel DMA protection in Windows Security](bitlocker/images/kernel-dma-protection-security-center.png)
 
 ### Using System information
 

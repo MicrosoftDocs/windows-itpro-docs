@@ -16,7 +16,7 @@ ms.reviewer:
 ms.technology: windows-sec
 ---
 
-# Get Support
+# Get Support for Windows baselines
 
 **What is the Microsoft Security Compliance Manager (SCM)?**
 

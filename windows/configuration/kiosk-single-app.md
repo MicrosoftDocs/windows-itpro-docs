@@ -12,6 +12,7 @@ ms.sitesec: library
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Set up a single-app kiosk on Windows 10/11
@@ -19,7 +20,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10 Pro, Enterprise, and Education
+- Windows 10 Pro, Enterprise, and Education
 - Windows 11
 
 A single-app kiosk uses the Assigned Access feature to run a single app above the lock screen. When the kiosk account signs in, the app is launched automatically. The person using the kiosk cannot do anything on the device outside of the kiosk app.
