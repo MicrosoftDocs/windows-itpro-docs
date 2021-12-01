@@ -83,7 +83,7 @@ In this example, the deferral behavior for updates to Office and other non-Windo
 |Updates to Office and other products|Microsoft Update|Microsoft Update|No|
 |Drivers, third-party applications|WSUS|WSUS|No|
 
-![diagram of content flow](images/wufb-config3a.png)
+![diagram of content flow 3](images/wufb-config3a.png)
 
 >[!NOTE]
 > Because the admin enabled **Update/AllowMUUpdateService**, placing the content on WSUS was not needed for the particular device, as the device will always receive Microsoft Update content from Microsoft when configured in this manner.
