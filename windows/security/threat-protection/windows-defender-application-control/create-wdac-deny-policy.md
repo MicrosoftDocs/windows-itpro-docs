@@ -132,7 +132,7 @@ $DenyRules += New-CIPolicyRule -Level FileName -DriverFilePath <binary_to_block>
  ```
 
  ### Adding Allow All Rules
-If required, as in the cases listed above, Allow All rules [link to above Allow All section] may need to be added to the policy. The Allow All rules can be manually added to the policy xml or by merging with the AllowAll xml present on the client system in the WDAC template folder: 
+If required, as in the cases listed above, [Allow All rules](48) may need to be added to the policy. The Allow All rules can be manually added to the policy xml or by merging with the AllowAll xml present on the client system in the WDAC template folder: 
 
 ```PowerShell
 $DenyPolicy = <path_to_deny_policy>
