@@ -29,7 +29,7 @@ Windows Defender System Guard reorganizes the existing Windows 10 system integri
 
 ### Static Root of Trust for Measurement (SRTM)
 
-With Windows 7, one of the means attackers would use to persist and evade detection was to install what is often referred to as a bootkit or rootkit on the system. 
+With Windows 7, one of the means attackers would use to persist and evade detection was to install what is often referred to as a bootkit or rootkit on the system.
 This malicious software would start before Windows started, or during the boot process itself, enabling it to start with the highest level of privilege.
 
 With Windows 10 running on modern hardware (that is, Windows 8-certified or greater) a hardware-based root of trust helps ensure that no unauthorized firmware or software (such as a bootkit) can start before the Windows bootloader. 
@@ -38,6 +38,7 @@ This technique of measuring the static early boot UEFI components is called the 
 
 As there are thousands of PC vendors that produce many models with different UEFI BIOS versions, there becomes an incredibly large number of SRTM measurements upon bootup. 
 Two techniques exist to establish trust here—either maintain a list of known 'bad' SRTM measurements (also known as a blocklist), or a list of known 'good' SRTM measurements (also known as an allowlist). 
+
 Each option has a drawback:
 
 - A list of known 'bad' SRTM measurements allows a hacker to change just 1 bit in a component to create an entirely new SRTM hash that needs to be listed. This means that the SRTM flow is inherently brittle - a minor change can invalidate the entire chain of trust.
