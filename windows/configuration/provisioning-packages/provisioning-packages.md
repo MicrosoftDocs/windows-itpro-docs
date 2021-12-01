@@ -11,7 +11,7 @@ author: greg-lindsay
 ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
-
+ms.collection: highpri
 ---
 
 # Provisioning packages for Windows

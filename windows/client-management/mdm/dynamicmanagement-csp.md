@@ -9,6 +9,7 @@ author: dansimp
 ms.date: 06/26/2017
 ms.reviewer: 
 manager: dansimp
+ms.collection: highpri
 ---
 
 # DynamicManagement CSP

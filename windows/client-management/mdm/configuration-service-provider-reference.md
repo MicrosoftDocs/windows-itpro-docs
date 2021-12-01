@@ -10,6 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.date: 09/18/2020
+ms.collection: highpri
 ---
 
 # Configuration service provider reference

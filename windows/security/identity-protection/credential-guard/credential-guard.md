@@ -12,7 +12,9 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.date: 08/17/2017
 ---

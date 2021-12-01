@@ -1,7 +1,6 @@
 ---
 title: SetupDiag
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 description: SetupDiag works by examining Windows Setup log files. This article shows how to use the SetupDiag tool to diagnose Windows Setup errors.
 keywords: deploy, troubleshoot, windows, 10, upgrade, update, setup, diagnose
@@ -14,12 +13,13 @@ audience: itpro
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
 ---
 
 # SetupDiag
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
 >[!NOTE]
 >This is a 300 level topic (moderate advanced).<br>

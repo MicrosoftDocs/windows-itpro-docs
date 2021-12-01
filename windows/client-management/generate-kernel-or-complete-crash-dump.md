@@ -10,6 +10,7 @@ ms.author: delhan
 ms.date: 8/28/2019
 ms.reviewer: 
 manager: willchen
+ms.collection: highpri
 ---
 
 # Generate a kernel or complete crash dump 

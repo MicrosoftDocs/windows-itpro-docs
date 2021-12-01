@@ -13,7 +13,9 @@ metadata:
   ms.author: dansimp
   manager: dansimp
   audience: ITPro
-  ms.collection: M365-security-compliance
+  ms.collection:
+    - M365-security-compliance
+    - highpri
   ms.topic: conceptual
   ms.date: 07/27/2021
   ms.custom: bitlocker
@@ -21,7 +23,7 @@ metadata:
 title: BitLocker Overview and Requirements FAQ
 summary: |
   **Applies to**
-  -   Windows 10
+  -   Windows 10
   
 
 sections:

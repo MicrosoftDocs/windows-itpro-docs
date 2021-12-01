@@ -13,6 +13,7 @@ ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 04/30/2018
+ms.collection: highpri
 ---
 
 # Configure Windows Spotlight on the lock screen
@@ -20,7 +21,7 @@ ms.date: 04/30/2018
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 
 Windows Spotlight is an option for the lock screen background that displays different background images and occasionally offers suggestions on the lock screen. Windows Spotlight is available in all desktop editions of Windows 10. 

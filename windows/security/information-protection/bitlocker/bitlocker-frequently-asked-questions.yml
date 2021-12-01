@@ -13,7 +13,9 @@ metadata:
   ms.author: dansimp
   manager: dansimp
   audience: ITPro
-  ms.collection: M365-security-compliance
+  ms.collection:
+    - M365-security-compliance
+    - highpri
   ms.topic: conceptual
   ms.date: 02/28/2019
   ms.custom: bitlocker
@@ -21,7 +23,7 @@ metadata:
 title: BitLocker frequently asked questions (FAQ) resources
 summary: |
   **Applies to**
-  -   Windows 10
+  -   Windows 10
   
   This topic links to frequently asked questions about BitLocker. BitLocker is a data protection feature that encrypts drives on your computer to help prevent data theft or exposure. BitLocker-protected computers can also delete data more securely when they are decommissioned because it is much more difficult to recover deleted data from an encrypted drive than from a non-encrypted drive.
   

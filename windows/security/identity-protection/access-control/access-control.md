@@ -9,11 +9,12 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/18/2017
-ms.reviewer: 
 ---
 
 # Access Control Overview

@@ -10,6 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: dansimp
 ms.date: 06/25/2018
+ms.collection: highpri
 ---
 
 # Diagnose MDM failures in Windows 10

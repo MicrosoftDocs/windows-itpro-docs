@@ -13,13 +13,14 @@ ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 08/05/2021
+ms.collection: highpri
 ---
 
 # Customize the Start menu and taskbar layout on Windows 10 and later devices
 
 **Applies to**:
 
-- Windows 10 version 1607 and later
+- Windows 10 version 1607 and later
 - Windows Server 2016 with Desktop Experience
 - Windows Server 2019 with Desktop Experience
 

@@ -12,7 +12,9 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 09/06/2021
 ---
@@ -21,7 +23,7 @@ ms.date: 09/06/2021
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 -   Windows 11
 -   Windows Server 2016 and above
 

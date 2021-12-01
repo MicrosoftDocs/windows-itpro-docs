@@ -10,11 +10,12 @@ audience: ITPro
 author: mapalko
 ms.author: mapalko
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 localizationpriority: medium
 ms.date: 5/3/2021
-ms.reviewer: 
 ---
 
 # PIN reset

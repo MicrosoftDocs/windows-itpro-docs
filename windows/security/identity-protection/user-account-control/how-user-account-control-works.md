@@ -11,7 +11,9 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/23/2021
@@ -20,8 +22,8 @@ ms.date: 09/23/2021
 # How User Account Control works
 
 **Applies to**
--   Windows 10
--   Windows 11
+-   Windows 10
+-   Windows 11
 -   Windows Server 2016 and above
 
 User Account Control (UAC) is a fundamental component of Microsoft's overall security vision. UAC helps mitigate the impact of malware.

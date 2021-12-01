@@ -71,38 +71,14 @@ manager: dansimp
 <a href="" id="applicationmanagement-allowalltrustedapps"></a>**ApplicationManagement/AllowAllTrustedApps**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|Yes|Yes|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -146,38 +122,14 @@ The following list shows the supported values:
 <a href="" id="applicationmanagement-allowappstoreautoupdate"></a>**ApplicationManagement/AllowAppStoreAutoUpdate**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -221,38 +173,14 @@ The following list shows the supported values:
 <a href="" id="applicationmanagement-allowdeveloperunlock"></a>**ApplicationManagement/AllowDeveloperUnlock**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -296,38 +224,14 @@ The following list shows the supported values:
 <a href="" id="applicationmanagement-allowgamedvr"></a>**ApplicationManagement/AllowGameDVR**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -373,38 +277,14 @@ The following list shows the supported values:
 <a href="" id="applicationmanagement-allowshareduserappdata"></a>**ApplicationManagement/AllowSharedUserAppData**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -447,38 +327,14 @@ Most restricted value: 0
 <a href="" id="applicationmanagement-blocknonadminuserinstall"></a>**ApplicationManagement/BlockNonAdminUserInstall**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th> 
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -529,32 +385,14 @@ The following list shows the supported values:
 <a href="" id="applicationmanagement-disablestoreoriginatedapps"></a>**ApplicationManagement/DisableStoreOriginatedApps**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>✔️<sup>1</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>✔️<sup>1</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -595,32 +433,14 @@ The following list shows the supported values:
 <a href="" id="applicationmanagement-launchappafterlogon"></a>**ApplicationManagement/LaunchAppAfterLogOn**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>✔️<sup>5</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>✔️<sup>5</sup></td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>✔️<sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>✔️<sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -666,32 +486,14 @@ For this policy to work, the Windows apps need to declare in their manifest that
 <a href="" id="applicationmanagement-msiallowusercontroloverinstall"></a>**ApplicationManagement/MSIAllowUserControlOverInstall**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>✔️<sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>✔️<sup>4</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>✔️<sup>4</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -737,32 +539,14 @@ This setting supports a range of values between 0 and 1.
 <a href="" id="applicationmanagement-msialwaysinstallwithelevatedprivileges"></a>**ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>✔️<sup>4</sup></td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>✔️<sup>4</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>✔️<sup>4</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -811,32 +595,14 @@ This setting supports a range of values between 0 and 1.
 <a href="" id="applicationmanagement-requireprivatestoreonly"></a>**ApplicationManagement/RequirePrivateStoreOnly**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>✔️</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>✔️</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -881,32 +647,14 @@ The following list shows the supported values:
 <a href="" id="applicationmanagement-restrictappdatatosystemvolume"></a>**ApplicationManagement/RestrictAppDataToSystemVolume**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>✔️</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>✔️</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>✔️</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>✔️</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -949,32 +697,14 @@ The following list shows the supported values:
 <a href="" id="applicationmanagement-restrictapptosystemvolume"></a>**ApplicationManagement/RestrictAppToSystemVolume**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>✔️</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>✔️</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>✔️</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>✔️</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1017,32 +747,14 @@ The following list shows the supported values:
 <a href="" id="applicationmanagement-scheduleforcerestartforupdatefailures"></a>**ApplicationManagement/ScheduleForceRestartForUpdateFailures**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Windows Edition</th>
-    <th>Supported?</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>❌</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>✔️<sup>5</sup></td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>✔️<sup>5</sup></td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
