@@ -10,10 +10,11 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.date: 09/30/2020
-ms.reviewer: 
 ---
 
 # Windows Defender Credential Guard: Requirements

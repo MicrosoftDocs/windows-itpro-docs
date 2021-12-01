@@ -9,6 +9,7 @@ author: dansimp
 ms.date: 10/14/2021
 ms.reviewer:
 manager: dansimp
+ms.collection: highpri
 ---
 
 # Enroll a Windows 10 device automatically using Group Policy

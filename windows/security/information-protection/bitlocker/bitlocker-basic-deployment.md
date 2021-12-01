@@ -2,8 +2,12 @@
 title: BitLocker basic deployment (Windows 10)
 description: This article for the IT professional explains how BitLocker features can be used to protect your data through drive encryption.
 ms.assetid: 97c646cb-9e53-4236-9678-354af41151c4
+<<<<<<< HEAD
 ms.reviewer: 
 ms.prod: m365-security
+=======
+ms.prod: w10
+>>>>>>> master
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -12,7 +16,9 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.custom: bitlocker

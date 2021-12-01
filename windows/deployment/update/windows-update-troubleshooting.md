@@ -7,10 +7,10 @@ audience: itpro
 itproauthor: jaimeo
 ms.audience: itpro
 author: jaimeo
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows Update troubleshooting

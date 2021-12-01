@@ -2,7 +2,6 @@
 title: Windows Hello for Business Deployment Prerequisite Overview
 description: Overview of all the different infrastructure requirements for Windows Hello for Business deployment models
 ms.assetid: 5BF09642-8CF5-4FBC-AC9A-5CA51E19387E
-ms.reviewer: 
 keywords: identity, PIN, biometric, Hello, passport
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -12,7 +11,9 @@ audience: ITPro
 author: mapalko
 ms.author: mapalko
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 localizationpriority: medium
 ms.date: 1/22/2021

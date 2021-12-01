@@ -12,6 +12,7 @@ ms.date: 08/30/2021
 ms.reviewer: 
 manager: dougeby
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Add or hide features on the Windows client OS
