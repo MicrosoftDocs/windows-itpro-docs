@@ -1,7 +1,6 @@
 ---
 title: Get started with Update Compliance
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 description: Prerequisites, Azure onboarding, and configuring devices for Update Compliance 
 keywords: update compliance, oms, operations management suite, prerequisites, requirements, updates, upgrades, antivirus, antimalware, signature, log analytics, wdav
 ms.prod: w10
@@ -11,7 +10,9 @@ audience: itpro
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: medium
-ms.collection: M365-analytics
+ms.collection:
+  - M365-analytics
+  - highpri
 ms.topic: article
 ---
 
@@ -19,7 +20,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 > [!IMPORTANT]

@@ -12,7 +12,9 @@ metadata:
   ms.service: subservice #Required; service per approved list. service slug assigned to your service by ACOM.
   ms.subservice: subservice # Optional; Remove if no subservice is used.
   ms.topic: hub-page # Required
-  ms.collection: windows-10 # Optional; Remove if no collection is used.
+  ms.collection:
+    - windows-10
+    - highpri
   author: dougeby #Required; your GitHub user alias, with correct capitalization.
   ms.author: dougeby #Required; microsoft alias of author; optional team alias.
   ms.date: 10/01/2021 #Required; mm/dd/yyyy format.

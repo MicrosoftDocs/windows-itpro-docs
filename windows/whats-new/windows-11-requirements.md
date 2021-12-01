@@ -1,7 +1,6 @@
 ---
 title: Windows 11 requirements
 description: Hardware requirements to deploy Windows 11
-ms.reviewer: 
 manager: dougeby
 ms.audience: itpro
 author: greg-lindsay
@@ -13,13 +12,14 @@ ms.localizationpriority: medium
 audience: itpro
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows 11 requirements
 
 **Applies to**
 
-- Windows 11
+- Windows 11
 
 This article lists the system requirements for Windows 11. Windows 11 is also [supported on a virtual machine (VM)](#virtual-machine-support). 
 
