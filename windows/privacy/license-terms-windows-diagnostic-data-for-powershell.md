@@ -81,7 +81,7 @@ It also applies even if Microsoft knew or should have known about the possibilit
 
 
 
-Note: As this software is distributed in Canada, some of the clauses in this agreement are provided below in French.
+Note that as this software is distributed in Canada, some of the clauses in this agreement are provided below in French.
 
 Remarque: Ce logiciel étant distribué au Canada, certaines des clauses dans ce contrat sont fournies ci-dessous en français.
 
