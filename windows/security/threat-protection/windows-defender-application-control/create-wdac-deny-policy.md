@@ -20,7 +20,7 @@ ms.technology: windows-sec
 
 # Guidance on Creating WDAC Deny Policies
 
-With Windows Defender Application Control (WDAC), you can create applicatoin control policies to explicitly deny specific drivers and applications, as well as signatures and certificates and file paths.
+With Windows Defender Application Control (WDAC), you can create application control policies to explicitly deny specific drivers and applications, as well as signatures and certificates and file paths.
 
 Topics this article will be discussing are:
 1. File Rule Precedence Order
@@ -36,11 +36,11 @@ To create effective WDAC deny policies, it is crucial to understand how WDAC par
 
 1. Explicit deny rules - if there is an explicit deny rule, do not process the rest of the rules; the file is untrusted.
 
-2. Explicit allow rules
+2. Explicit allow rules.
 
-3. WDAC will then check for the Managed Installer extended (EA) [Allow Apps with a WDAC managed Installer (windows) - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer)
+3. WDAC will then check for the Managed Installer extended (EA) [Allow Apps with a WDAC managed Installer (windows) - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/configure-authorized-apps-deployed-with-a-managed-installer).
 
-4. Lastly, WDAC will call the Intelligent Security Graph (ISG) to get reputation on file, if the policy has support for the ISG
+4. Lastly, WDAC will call the Intelligent Security Graph (ISG) to get reputation on file, if the policy has support for the ISG.
 
 Explicit allow and deny rules encompass rules at any level (e.g. has rules, signer rules path rules, attritbute rules or package family name rules). If there is an explicit deny rule, WDAC does not process any other rules, meaning a deny rule always takes precedence in the case where a deny and allow rule would be at odds. 
 
