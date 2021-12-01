@@ -69,9 +69,9 @@ For more information, see:
 - [What's new in Azure Virtual Desktop?](/azure/virtual-desktop/whats-new)
 - [Set up MSIX app attach with the Azure portal](/azure/virtual-desktop/app-attach-azure-portal)
 
-## Wi-Fi WPA3 H2E support
+## Wi-Fi WPA3-Personal H2E support
 
-Wi-Fi WPA3 H2E (Hash-to-Element) support is built in to Windows 10, version 21H2.
+Wi-Fi WPA3-Personal H2E (Hash-to-Element) support is built in to Windows 10, version 21H2.
 
 ## Related articles
 
