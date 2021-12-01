@@ -29,13 +29,13 @@ ms.collection: highpri
 Several log files are created during each phase of the upgrade process. These log files are essential for troubleshooting upgrade problems. By default, the folders that contain these log files are hidden on the upgrade target computer. To view the log files, configure Windows Explorer to view hidden items, or use a tool to automatically gather these logs. The most useful log is **setupact.log**. The log files are located in a different folder depending on the Windows Setup phase. Recall that you can determine the phase from the extend code. 
 
 >[!NOTE]
->Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files. 
+>Also see the [Windows Error Reporting](windows-error-reporting.md) section in this document for help locating error codes and log files.
 
 The following table describes some log files and how to use them for troubleshooting purposes:<br>
 
-|Log file |Phase: Location |When to use |
-|---|---|---|
-|setupact.log |Down-Level:<br>$Windows.~BT\Sources\Panther|Contains information about setup actions during the downlevel phase. |All down-level failures and starting point for rollback investigations.<br> This is the most important log for diagnosing setup issues. |
+|Log file |Phase: Location |Description |When to use|
+|---|---|---|---|
+|setupact.log|Down-Level:<br>$Windows.~BT\Sources\Panther|Contains information about setup actions during the downlevel phase. |All down-level failures and starting point for rollback investigations.<br> This is the most important log for diagnosing setup issues.|
 |setupact.log|OOBE:<br>$Windows.~BT\Sources\Panther\UnattendGC|Contains information about actions during the OOBE phase.|Investigating rollbacks that failed during OOBE phase and operations – 0x4001C, 0x4001D, 0x4001E, 0x4001F.|
 |setupact.log|Rollback:<br>$Windows.~BT\Sources\Rollback|Contains information about actions during rollback.|Investigating generic rollbacks - 0xC1900101.|
 |setupact.log|Pre-initialization (prior to downlevel):<br>Windows|Contains information about initializing setup.|If setup fails to launch.|
