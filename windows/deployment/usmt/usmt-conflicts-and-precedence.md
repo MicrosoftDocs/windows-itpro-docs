@@ -218,13 +218,48 @@ You have a custom .xml file that contains the following code:
 </include> 
 ```
 
-For this example, the following table describes the resulting behavior if you add the code in the first column to your custom .xml file.
+For this example, the following information describes the resulting behavior if you add the code to your custom .xml file.
 
-| If you specify the following code | Resulting behavior |
-|-----|-----|
-| <pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.DestinationPriority()&quot;&gt; <br/>   &lt;objectSet&gt; <br/>      &lt;pattern type=&quot;File&quot;&gt;c:\data* []&lt;/pattern&gt; <br/>   &lt;/objectSet&gt; <br/>&lt;/merge&gt;</code></pre> | During ScanState, all the files will be added to the store. <br/>During LoadState, only C:\Data\SampleA.txt will be restored. |
-| <pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; <br/>   &lt;objectSet&gt; <br/>      &lt;pattern type=&quot;File&quot;&gt;c:\data* []&lt;/pattern&gt; <br/>   &lt;/objectSet&gt; <br/>&lt;/merge&gt; </code></pre> | During ScanState, all the files will be added to the store. <br/>During LoadState, all the files will be restored, overwriting the existing files on the destination computer. |
-| <pre class="syntax"><code>&lt;merge script=&quot;MigXmlHelper.SourcePriority()&quot;&gt; <br/>   &lt;objectSet&gt; <br/>      &lt;pattern type=&quot;File&quot;&gt;c:\data\ [*]&lt;/pattern&gt; <br/>   &lt;/objectSet&gt; <br/>&lt;/merge&gt; </code></pre> | During ScanState, all the files will be added to the store. <br/>During LoadState, the following will occur:<ul><li>C:\Data\SampleA.txt will be restored.</li><li>C:\Data\SampleB.txt will be restored, overwriting the existing file on the destination computer.</li><li>C:\Data\Folder\SampleB.txt will not be restored.</li></ul> | 
+**Example 1**
+
+```xml
+<merge script="MigXmlHelper.DestinationPriority()">
+        <objectSet>
+                <pattern type="File">c:\data* []</pattern>
+        </objectSet>
+</merge>
+```
+
+**Result**: During ScanState, all the files will be added to the store. During LoadState, only C:\Data\SampleA.txt will be restored.
+
+**Example 2**
+
+```xml
+<merge script="MigXmlHelper.SourcePriority()">
+        <objectSet>
+                <pattern type="File">c:\data* []</pattern>
+        </objectSet>
+</merge>
+```
+
+**Result**: During ScanState, all the files will be added to the store.
+During LoadState, all the files will be restored, overwriting the existing files on the destination computer.
+
+**Example 3**
+
+```xml
+<merge script="MigXmlHelper.SourcePriority()">
+        <objectSet>
+                <pattern type="File">c:\data\ [*]</pattern>
+        </objectSet>
+</merge>
+```
+
+**Result**: During ScanState, all the files will be added to the store. During LoadState, the following will occur:
+
+- C:\Data\SampleA.txt will be restored.
+- C:\Data\SampleB.txt will be restored, overwriting the existing file on the destination computer.
+- C:\Data\Folder\SampleB.txt will not be restored.
 
 ## Related topics
 
