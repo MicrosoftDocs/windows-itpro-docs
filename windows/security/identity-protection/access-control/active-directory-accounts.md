@@ -115,56 +115,18 @@ When Active Directory is installed on the first domain controller in the domain,
 
 **Administrator account attributes**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-500</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p>User</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>N/A</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p>Administrators, Domain Admins, Enterprise Administrators, Domain Users. Note that the Primary Group ID of all user accounts is Domain Users.</p>
-<p>Group Policy Creator Owners, and Schema Admins in Active Directory</p>
-<p>Domain Users group</p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-service administrators?</p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
-
-
+|Attribute|Value|
+|--- |--- |
+|Well-Known SID/RID|S-1-5-&lt;domain&gt;-500|
+|Type|User|
+|Default container|CN=Users, DC=&lt;domain&gt;, DC=|
+|Default members|N/A|
+|Default member of|Administrators, Domain Admins, Enterprise Administrators, Domain Users. Note that the Primary Group ID of all user accounts is Domain Users.
+Group Policy Creator Owners, and Schema Admins in Active Directory
+Domain Users group|
+|Protected by ADMINSDHOLDER?|Yes|
+|Safe to move out of default container?|Yes|
+|Safe to delegate management of this group to non-service administrators?|No|
 
 ## <a href="" id="sec-guest"></a>Guest account
 
@@ -199,54 +161,16 @@ For details about the Guest account attributes, see the following table.
 
 **Guest account attributes**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-501</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p>User</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p>Guests, Domain Guests</p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Can be moved out, but we do not recommend it.</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
-
-
+|Attribute|Value|
+|--- |--- |
+|Well-Known SID/RID|S-1-5-&lt;domain&gt;-501|
+|Type|User|
+|Default container|CN=Users, DC=&lt;domain&gt;, DC=|
+|Default members|None|
+|Default member of|Guests, Domain Guests|
+|Protected by ADMINSDHOLDER?|No|
+|Safe to move out of default container?|Can be moved out, but we do not recommend it.|
+|Safe to delegate management of this group to non-Service admins?|No|
 
 ## <a href="" id="sec-helpassistant"></a>HelpAssistant account (installed with a Remote Assistance session)
 
@@ -269,53 +193,16 @@ For details about the HelpAssistant account attributes, see the following table.
 
 **HelpAssistant account attributes**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-13 (Terminal Server User), S-1-5-&lt;domain&gt;-14 (Remote Interactive Logon)</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p>User</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p>Domain Guests</p>
-<p>Guests</p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Can be moved out, but we do not recommend it.</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
+|Attribute|Value|
+|--- |--- |
+|Well-Known SID/RID|S-1-5-&lt;domain&gt;-13 (Terminal Server User), S-1-5-&lt;domain&gt;-14 (Remote Interactive Logon)|
+|Type|User|
+|Default container|CN=Users, DC=&lt;domain&gt;, DC=|
+|Default members|None|
+|Default member of|Domain Guests<p>Guests|
+|Protected by ADMINSDHOLDER?|No|
+|Safe to move out of default container?|Can be moved out, but we do not recommend it.|
+|Safe to delegate management of this group to non-Service admins?|No|
 
 
 
@@ -369,54 +256,16 @@ After the credentials are cached on the RODC, the RODC can accept that user's si
 
 For details about the KRBTGT account attributes, see the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-502</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p>User</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p>Domain Users group. Note that the Primary Group ID of all user accounts is Domain Users.</p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Can be moved out, but we do not recommend it.</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
-
-
+|Attribute|Value|
+|--- |--- |
+|Well-Known SID/RID|S-1-5-&lt;domain&gt;-502|
+|Type|User|
+|Default container|CN=Users, DC=&lt;domain&gt;, DC=|
+|Default members|None|
+|Default member of|Domain Users group. Note that the Primary Group ID of all user accounts is Domain Users.|
+|Protected by ADMINSDHOLDER?|Yes|
+|Safe to move out of default container?|Can be moved out, but we do not recommend it.|
+|Safe to delegate management of this group to non-Service admins?|No|
 
 ## <a href="" id="sec-account-settings"></a>Settings for default local accounts in Active Directory
 
@@ -425,73 +274,18 @@ Each default local account in Active Directory has a number of account settings 
 
 **Settings for default local accounts in Active Directory**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Account settings</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>User must change password at next logon</p></td>
-<td><p>Forces a password change the next time that the user logs signs in to the network. Use this option when you want to ensure that the user is the only person to know his or her password.</p></td>
-</tr>
-<tr class="even">
-<td><p>User cannot change password</p></td>
-<td><p>Prevents the user from changing the password. Use this option when you want to maintain control over a user account, such as for a Guest or temporary account.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Password never expires</p></td>
-<td><p>Prevents a user password from expiring. It is a best practice to enable this option with service accounts and to use strong passwords.</p></td>
-</tr>
-<tr class="even">
-<td><p>Store passwords using reversible encryption</p></td>
-<td><p>Provides support for applications that use protocols requiring knowledge of the plaintext form of the user’s password for authentication purposes.</p>
-<p>This option is required when using Challenge Handshake Authentication Protocol (CHAP) in Internet Authentication Services (IAS), and when using digest authentication in Internet Information Services (IIS).</p></td>
-</tr>
-<tr class="odd">
-<td><p>Account is disabled</p></td>
-<td><p>Prevents the user from signing in with the selected account. As an administrator, you can use disabled accounts as templates for common user accounts.</p></td>
-</tr>
-<tr class="even">
-<td><p>Smart card is required for interactive logon</p></td>
-<td><p>Requires that a user has a smart card to sign on to the network interactively. The user must also have a smart card reader attached to their computer and a valid personal identification number (PIN) for the smart card.</p>
-<p>When this attribute is applied on the account, the effect is as follows:</p>
-<ul>
-<li><p>The attribute only restricts initial authentication for interactive logon and Remote Desktop logon. When interactive or Remote Desktop logon requires a subsequent network logon, such as with a domain credential, an NT Hash provided by the domain controller is used to complete the smartcard authentication process</p></li>
-<li><p>Each time the attribute is enabled on an account, the account’s current password hash value is replaced with a 128-bit random number. This invalidates the use of any previously configured passwords for the account. The value does not change after that unless a new password is set or the attribute is disabled and re-enabled.</p></li>
-<li><p>Accounts with this attribute cannot be used to start services or run scheduled tasks.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>Account is trusted for delegation</p></td>
-<td><p>Lets a service running under this account perform operations on behalf of other user accounts on the network. A service running under a user account (also known as a service account) that is trusted for delegation can impersonate a client to gain access to resources, either on the computer where the service is running or on other computers. For example, in a forest that is set to the Windows Server 2003 functional level, this setting is found on the <b>Delegation</b> tab. It is available only for accounts that have been assigned service principal names (SPNs), which are set by using the <b>setspn</b> command from Windows Support Tools. This setting is security-sensitive and should be assigned cautiously.</p></td>
-</tr>
-<tr class="even">
-<td><p>Account is sensitive and cannot be delegated</p></td>
-<td><p>Gives control over a user account, such as for a Guest account or a temporary account. This option can be used if this account cannot be assigned for delegation by another account.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Use DES encryption types for this account</p></td>
-<td><p>Provides support for the Data Encryption Standard (DES). DES supports multiple levels of encryption, including Microsoft Point-to-Point Encryption (MPPE) Standard (40-bit and 56-bit), MPPE standard (56-bit), MPPE Strong (128-bit), Internet Protocol security (IPSec) DES (40-bit), IPSec 56-bit DES, and IPSec Triple DES (3DES).</p>
-<div class="alert">
-<b>Note</b><br/><p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see <a href="/archive/blogs/askds/hunting-down-des-in-order-to-securely-deploy-kerberos" data-raw-source="[Hunting down DES in order to securely deploy Kerberos](/archive/blogs/askds/hunting-down-des-in-order-to-securely-deploy-kerberos)">Hunting down DES in order to securely deploy Kerberos</a>.</p>
-</div>
-<div>
-
-</div></td>
-</tr>
-<tr class="even">
-<td><p>Do not require Kerberos preauthentication</p></td>
-<td><p>Provides support for alternate implementations of the Kerberos protocol. Because preauthentication provides additional security, use caution when enabling this option. Note that domain controllers running Windows 2000 or Windows Server 2003 can use other mechanisms to synchronize time.</p></td>
-</tr>
-</tbody>
-</table>
+|Account settings|Description|
+|--- |--- |
+|User must change password at next logon|Forces a password change the next time that the user logs signs in to the network. Use this option when you want to ensure that the user is the only person to know his or her password.|
+|User cannot change password|Prevents the user from changing the password. Use this option when you want to maintain control over a user account, such as for a Guest or temporary account.|
+|Password never expires|Prevents a user password from expiring. It is a best practice to enable this option with service accounts and to use strong passwords.|
+|Store passwords using reversible encryption|Provides support for applications that use protocols requiring knowledge of the plaintext form of the user’s password for authentication purposes.<p>This option is required when using Challenge Handshake Authentication Protocol (CHAP) in Internet Authentication Services (IAS), and when using digest authentication in Internet Information Services (IIS).|
+|Account is disabled|Prevents the user from signing in with the selected account. As an administrator, you can use disabled accounts as templates for common user accounts.|
+|Smart card is required for interactive logon|Requires that a user has a smart card to sign on to the network interactively. The user must also have a smart card reader attached to their computer and a valid personal identification number (PIN) for the smart card.<p>When this attribute is applied on the account, the effect is as follows:<li>The attribute only restricts initial authentication for interactive logon and Remote Desktop logon. When interactive or Remote Desktop logon requires a subsequent network logon, such as with a domain credential, an NT Hash provided by the domain controller is used to complete the smartcard authentication process<li>Each time the attribute is enabled on an account, the account’s current password hash value is replaced with a 128-bit random number. This invalidates the use of any previously configured passwords for the account. The value does not change after that unless a new password is set or the attribute is disabled and re-enabled.<li>Accounts with this attribute cannot be used to start services or run scheduled tasks.|
+|Account is trusted for delegation|Lets a service running under this account perform operations on behalf of other user accounts on the network. A service running under a user account (also known as a service account) that is trusted for delegation can impersonate a client to gain access to resources, either on the computer where the service is running or on other computers. For example, in a forest that is set to the Windows Server 2003 functional level, this setting is found on the Delegation tab. It is available only for accounts that have been assigned service principal names (SPNs), which are set by using the setspn command from Windows Support Tools. This setting is security-sensitive and should be assigned cautiously.|
+|Account is sensitive and cannot be delegated|Gives control over a user account, such as for a Guest account or a temporary account. This option can be used if this account cannot be assigned for delegation by another account.|
+|Use DES encryption types for this account|Provides support for the Data Encryption Standard (DES). DES supports multiple levels of encryption, including Microsoft Point-to-Point Encryption (MPPE) Standard (40-bit and 56-bit), MPPE standard (56-bit), MPPE Strong (128-bit), Internet Protocol security (IPSec) DES (40-bit), IPSec 56-bit DES, and IPSec Triple DES (3DES).<div class="alert">Note: DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see Hunting down DES in order to securely deploy Kerberos.</div>|
+|Do not require Kerberos preauthentication|Provides support for alternate implementations of the Kerberos protocol. Because preauthentication provides additional security, use caution when enabling this option. Note that domain controllers running Windows 2000 or Windows Server 2003 can use other mechanisms to synchronize time.|
 
 
 
@@ -649,46 +443,15 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     2.  Configure Windows Update settings as described in the following table.
 
-        <table>
-        <colgroup>
-        <col width="50%" />
-        <col width="50%" />
-        </colgroup>
-        <tbody>
-        <tr class="odd">
-        <td><p><b>Windows Update Setting</b></p></td>
-        <td><p><b>Configuration</b></p></td>
-        </tr>
-        <tr class="even">
-        <td><p>Allow Automatic Updates immediate installation</p></td>
-        <td><p>Enabled</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>Configure Automatic Updates</p></td>
-        <td><p>Enabled<br>4 - Auto download and schedule the installation<br>0 - Every day 03:00</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>Enable Windows Update Power Management to automatically wake up the system to install scheduled updates</p></td>
-        <td><p>Enabled</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>Specify intranet Microsoft Update service location</p></td>
-        <td><p>Enabled http://&lt;WSUSServername&gt; http://&lt;WSUSServername&gt; Where &lt;WSUSServername&gt; is the DNS name or IP address of the Windows Server Update Services (WSUS) in the environment.</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>Automatic Updates detection frequency</p></td>
-        <td><p>6 hours</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>Re-prompt for restart with scheduled installations</p></td>
-        <td><p>1 minute</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>Delay restart for scheduled installations</p></td>
-        <td><p>5 minutes</p></td>
-        </tr>
-        </tbody>
-        </table>
+        |Windows Update Setting|Configuration|
+        |--- |--- |
+        |Allow Automatic Updates immediate installation|Enabled|
+        |Configure Automatic Updates|Enabled4 - Auto download and schedule the installation0 - Every day 03:00|
+        |Enable Windows Update Power Management to automatically wake up the system to install scheduled updates|Enabled|
+        |Specify intranet Microsoft Update service location|Enabled `http://&lt;WSUSServername&gt; http://&lt;WSUSServername&gt;` Where `&gt;WSUSServername&gt;` is the DNS name or IP address of the Windows Server Update Services (WSUS) in the environment.|
+        |Automatic Updates detection frequency|6 hours|
+        |Re-prompt for restart with scheduled installations|1 minute|
+        |Delay restart for scheduled installations|5 minutes|
 
         > **Note**&nbsp;&nbsp;This step assumes that Windows Server Update Services (WSUS) is installed and configured in the environment. You can skip this step if you use another tool to deploy software updates. Also, if the public Microsoft Windows Update service only is used on the Internet, then these administrative workstations no longer receive updates.
 
