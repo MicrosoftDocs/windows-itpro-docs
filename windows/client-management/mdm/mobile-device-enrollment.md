@@ -10,6 +10,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.date: 08/11/2017
+ms.collection: highpri
 ---
 
 # Mobile device enrollment

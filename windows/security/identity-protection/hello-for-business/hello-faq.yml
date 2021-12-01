@@ -11,11 +11,12 @@ metadata:
   author: mapalko
   ms.author: mapalko
   manager: dansimp
-  ms.collection: M365-identity-device-management
+  ms.collection:
+    - M365-identity-device-management
+    - highpri
   ms.topic: article
   localizationpriority: medium
   ms.date: 10/15/2021
-  ms.reviewer: 
     
 title: Windows Hello for Business Frequently Asked Questions (FAQ)
 summary: |

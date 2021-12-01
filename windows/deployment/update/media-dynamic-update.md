@@ -8,9 +8,10 @@ itproauthor: jaimeo
 author: SteveDiAcetis
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer:
-manager: laurawi
-ms.collection: M365-modern-desktop
+manager: dougeby
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ---
 
@@ -18,7 +19,7 @@ ms.topic: article
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 -   Windows 11
 
 This topic explains how to acquire and apply Dynamic Update packages to existing Windows images *prior to deployment* and includes Windows PowerShell scripts you can use to automate this process.

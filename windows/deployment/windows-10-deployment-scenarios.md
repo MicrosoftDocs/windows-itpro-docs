@@ -2,8 +2,7 @@
 title: Windows 10 deployment scenarios (Windows 10)
 description: Understand the different ways Windows 10 operating system can be deployed in your organization. Explore several Windows 10 deployment scenarios.
 ms.assetid: 7A29D546-52CC-482C-8870-8123C7DC04B5
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
 ms.author: greglin
 author: greg-lindsay
@@ -14,14 +13,15 @@ ms.localizationpriority: medium
 ms.sitesec: library
 audience: itpro
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Windows 10 deployment scenarios
 
 **Applies to**
--   Windows 10
+-   Windows 10
 
-To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the capabilities and limitations of each, is a key task.
+To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the capabilities and limitations of each, is a key task.
 
 The following table summarizes various Windows 10 deployment scenarios. The scenarios are each assigned to one of three categories. 
 - Modern deployment methods are recommended unless you have a specific need to use a different procedure. These methods are supported with existing tools such as Microsoft Deployment Toolkit (MDT) and Microsoft Endpoint Configuration Manager. These methods are discussed in detail on the [Modern Desktop Deployment Center](/microsoft-365/enterprise/desktop-deployment-center-home).
