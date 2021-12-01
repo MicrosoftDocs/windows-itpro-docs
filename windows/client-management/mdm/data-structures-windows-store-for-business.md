@@ -97,60 +97,15 @@ Specifies the properties of the alternate identifier.
 
 ## InventoryEntryDetails
 
-
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>productKey</p></td>
-<td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
-<td><p>Identifier used on subsequent requests to get more content including product descriptions, offline license, and download URLs.</p></td>
-</tr>
-<tr class="even">
-<td><p>seatCapacity</p></td>
-<td><p>integer-64</p></td>
-<td><p>Total number of seats that have been purchased for an application.</p></td>
-</tr>
-<tr class="odd">
-<td><p>availableSeats</p></td>
-<td><p>integer-64</p></td>
-<td><p>Number of available seats remaining for an application.</p></td>
-</tr>
-<tr class="even">
-<td><p>lastModified</p></td>
-<td><p>dateTime</p></td>
-<td><p>Specifies the last modified date for an application. Modifications for an application include updated product details, updates to an application, and updates to the quantity of an application.</p></td>
-</tr>
-<tr class="odd">
-<td><p>licenseType</p></td>
-<td><p><a href="#licensetype" data-raw-source="[LicenseType](#licensetype)">LicenseType</a></p></td>
-<td><p>Indicates whether the set of seats for a given application supports online or offline licensing.</p></td>
-</tr>
-<tr class="even">
-<td><p>distributionPolicy</p></td>
-<td><p><a href="#inventorydistributionpolicy" data-raw-source="[InventoryDistributionPolicy](#inventorydistributionpolicy)">InventoryDistributionPolicy</a></p></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>status</p></td>
-<td><p><a href="#inventorystatus" data-raw-source="[InventoryStatus](#inventorystatus)">InventoryStatus</a></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Name|Type|Description|
+|--- |--- |--- |
+|productKey|[ProductKey](#productkey)|Identifier used on subsequent requests to get more content including product descriptions, offline license, and download URLs.|
+|seatCapacity|integer-64|Total number of seats that have been purchased for an application.|
+|availableSeats|integer-64|Number of available seats remaining for an application.|
+|lastModified|dateTime|Specifies the last modified date for an application. Modifications for an application include updated product details, updates to an application, and updates to the quantity of an application.|
+|licenseType|[LicenseType](#licensetype)|Indicates whether the set of seats for a given application supports online or offline licensing.|
+|distributionPolicy|[InventoryDistributionPolicy](#inventorydistributionpolicy)||
+|status|[InventoryStatus](#inventorystatus)||
 
 ## InventoryResultSet
 
@@ -236,124 +191,20 @@ Specifies the properties of the localized product.
 |packageFamilyName|String||
 |supportedPlatforms|Collection of [ProductPlatform](#productplatform)||
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>productKey</p></td>
-<td><p><a href="#productkey" data-raw-source="[ProductKey](#productkey)">ProductKey</a></p></td>
-<td><p>Identifier used on subsequent requests to get more content including product descriptions, offline license, and download URLs.</p></td>
-</tr>
-<tr class="even">
-<td><p>productType</p></td>
-<td><p>string</p></td>
-<td><p>Type of product.</p></td>
-</tr>
-<tr class="odd">
-<td><p>supportedLanguages</p></td>
-<td><p>collection of string</p></td>
-<td><p>The set of localized languages for an application.</p></td>
-</tr>
-<tr class="even">
-<td><p>publisherId</p></td>
-<td><p>string</p></td>
-<td><p>Publisher identifier.</p></td>
-</tr>
-<tr class="odd">
-<td><p>category</p></td>
-<td><p>string</p></td>
-<td><p>Application category.</p></td>
-</tr>
-<tr class="even">
-<td><p>alternateIds</p></td>
-<td><p>collection of <a href="#alternateidentifier" data-raw-source="[AlternateIdentifier](#alternateidentifier)">AlternateIdentifier</a></p></td>
-<td><p>The identifiers that can be used to instantiate the installation of on online application.</p></td>
-</tr>
-<tr class="odd">
-<td><p>packageFamilyName</p></td>
-<td><p>string</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>supportedPlatforms</p></td>
-<td><p>collection of <a href="#productplatform" data-raw-source="[ProductPlatform](#productplatform)">ProductPlatform</a></p></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
- 
 ## ProductImage
 
 Specifies the properties of the product image.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>location</p></td>
-<td><p>URI</p></td>
-<td><p>Location of the download image.</p></td>
-</tr>
-<tr class="even">
-<td><p>purpose</p></td>
-<td><p>string</p></td>
-<td><p>Tag for the image, for example &quot;screenshot&quot; or &quot;logo&quot;.</p></td>
-</tr>
-<tr class="odd">
-<td><p>height</p></td>
-<td><p>string</p></td>
-<td><p>Height of the image in pixels.</p></td>
-</tr>
-<tr class="even">
-<td><p>width</p></td>
-<td><p>string</p></td>
-<td><p>Width of the image in pixels.</p></td>
-</tr>
-<tr class="odd">
-<td><p>caption</p></td>
-<td><p>string</p></td>
-<td><p>Unlimited length.</p></td>
-</tr>
-<tr class="even">
-<td><p>backgroundColor</p></td>
-<td><p>string</p></td>
-<td><p>Format &quot;#RRGGBB&quot;</p></td>
-</tr>
-<tr class="odd">
-<td><p>foregroundColor</p></td>
-<td><p>string</p></td>
-<td><p>Format &quot;#RRGGBB&quot;</p></td>
-</tr>
-<tr class="even">
-<td><p>fileSize</p></td>
-<td><p>integer-64</p></td>
-<td><p>Size of the file.</p></td>
-</tr>
-</tbody>
-</table>
+|Name|Type|Description|
+|--- |--- |--- |
+|location|URI|Location of the download image.|
+|purpose|string|Tag for the image, for example "screenshot" or "logo".|
+|height|string|Height of the image in pixels.|
+|width|string|Width of the image in pixels.|
+|caption|string|Unlimited length.|
+|backgroundColor|string|Format "#RRGGBB"|
+|foregroundColor|string|Format "#RRGGBB"|
+|fileSize|integer-64|Size of the file.|
 
 ## ProductKey
 
