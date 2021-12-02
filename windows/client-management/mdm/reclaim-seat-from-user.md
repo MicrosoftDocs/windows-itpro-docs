@@ -32,7 +32,7 @@ The following parameters may be specified in the request URI.
 |productId|string|Required. Product identifier for an application that is used by the Store for Business.|
 |skuId|string|Required. Product identifier that specifies a specific SKU of an application.|
 |username|string|Requires UserPrincipalName (UPN). User name of the target user account.|
- 
+
 ## Response
 
 ### Response body
