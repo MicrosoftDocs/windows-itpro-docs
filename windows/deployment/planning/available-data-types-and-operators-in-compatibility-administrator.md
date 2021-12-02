@@ -75,19 +75,11 @@ The following table shows the operators that you can use for querying your custo
 |<=|Less than or equal to|Integer or string|1|
 |<>|Not equal to|Integer or string|1|
 |=|Equal to|Integer, string, or Boolean|1|
-|HAS|A special SQL operator used to check if the left-hand operand contains a substring specified by the right-hand operand.|Left-hand operand. MATCHFILE_NAME, MODE_NAME, FIX_NAME<div class="alert">**Note:**Only the HAS operator can be applied to the MATCHFILE_NAME, MODE_NAME, and FIX_NAME attributes.</div><p>Right-hand operand. String|1|
+|HAS|A special SQL operator used to check if the left-hand operand contains a substring specified by the right-hand operand.|Left-hand operand. MATCHFILE_NAME, MODE_NAME, FIX_NAME<div class="alert">Note: Only the HAS operator can be applied to the MATCHFILE_NAME, MODE_NAME, and FIX_NAME attributes.</div><br/>Right-hand operand. String|1|
 |OR|Logical OR operator|Boolean|2|
 |AND|Logical AND operator|Boolean|2|
 
 ## Related topics
 
 [Using the Compatibility Administrator Tool](using-the-compatibility-administrator-tool.md)
-
-
-
-
-
-
-
-
 
