@@ -29,8 +29,8 @@ When the User Experience Virtualization (UE-V) service is enabled, it creates th
 
 -   [Template Auto Update](#template-auto-update)
 
-**Note**<br>
-These tasks must remain enabled, because UE-V cannot function without them.
+> [!NOTE]
+> These tasks must remain enabled, because UE-V cannot function without them.
 
 These scheduled tasks are not configurable with the UE-V tools. Administrators who want to change the scheduled task for these items can create a script that uses the Schtasks.exe command-line options.
 
@@ -58,7 +58,7 @@ The **Sync Controller Application** task is used to start the Sync Controller to
 
 For example, the following command configures the agent to synchronize settings every 15 minutes instead of the default 30 minutes.
 
-``` syntax
+```cmd
 Schtasks /change /tn “Microsoft\UE-V\Sync Controller Application” /ri 15
 ```
 
@@ -81,13 +81,12 @@ The **Template Auto Update** task checks the settings template catalog for new, 
 
 **Example:** The following command configures the UE-V service to check the settings template catalog store every hour.
 
-``` syntax
+```cmd
 schtasks /change /tn "Microsoft\UE-V\Template Auto Update" /ri 60
 ```
 
 
 ## UE-V Scheduled Task Details
-
 
 The following chart provides additional information about scheduled tasks for UE-V 2:
 
@@ -97,7 +96,6 @@ The following chart provides additional information about scheduled tasks for UE
 |**Sync Controller Application** (Microsoft.Uev.SyncController.exe)|At logon and every 30 min thereafter.|Yes|Yes|Only if Network is connected|Starts the Sync Controller which synchronizes local settings with the settings storage location.|
 |**Synchronize Settings at Logoff** (Microsoft.Uev.SyncController.exe)|Runs at logon and then waits for Logoff to Synchronize settings.|No|Yes|N/A|Start an application at logon that controls the synchronization of applications at logoff.|
 |**Template Auto Update** (ApplySettingsCatalog.exe)|Runs at initial logon and at 3:30 AM every day thereafter.|Yes|No|N/A|Checks the settings template catalog for new, updated, or removed templates. This task only runs if SettingsTemplateCatalog is configured.|
- 
 
 **Legend**
 
