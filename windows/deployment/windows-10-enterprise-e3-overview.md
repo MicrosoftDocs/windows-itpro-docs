@@ -86,7 +86,10 @@ Now that you have Windows 10/11 Enterprise edition running on devices, how do yo
 
 The following sections provide you with the high-level tasks that need to be performed in your environment to help users take advantage of the Windows 10/11 Enterprise edition features.
 
-### Credential Guard\*
+### Credential Guard
+
+> [!NOTE]
+> Requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present).
 
 You can implement Credential Guard on Windows 10 Enterprise devices by turning on Credential Guard on these devices. Credential Guard uses Windows 10/11 virtualization-based security features (Hyper-V features) that must be enabled on each device before you can turn on Credential Guard. You can turn on Credential Guard by using one of the following methods:
 
@@ -106,7 +109,7 @@ For more information about implementing Credential Guard, see the following reso
 -   [PC OEM requirements for Device Guard and Credential Guard](/windows-hardware/design/device-experiences/oem-security-considerations)
 -   [Device Guard and Credential Guard hardware readiness tool](https://www.microsoft.com/download/details.aspx?id=53337)
 
-\* *Requires UEFI 2.3.1 or greater with Trusted Boot; Virtualization Extensions such as Intel VT-x, AMD-V, and SLAT must be enabled; x64 version of Windows; IOMMU, such as Intel VT-d, AMD-Vi; BIOS Lockdown; TPM 2.0 recommended for device health attestation (will use software if TPM 2.0 not present)*
+
 
 ### Device Guard
 
