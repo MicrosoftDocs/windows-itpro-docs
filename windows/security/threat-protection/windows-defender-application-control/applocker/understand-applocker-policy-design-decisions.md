@@ -98,57 +98,11 @@ Most organizations have evolved app control policies and methods over time. With
 ### Which Windows desktop and server operating systems are running in your organization?
 
 If your organization supports multiple Windows operating systems, app control policy planning becomes more complex. Your initial design decisions should consider the security and management priorities of applications that are installed on each version of the operating system.
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Possible answers</th>
-<th align="left">Design considerations</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Your organization&#39;s computers are running a combination of the following operating systems:</p>
-<ul>
-<li><p>Windows 11</p></li>
-<li><p>Windows 10</p></li>
-<li><p>Windows 8</p></li>
-<li><p>Windows 7</p></li>
-<li><p>Windows Vista</p></li>
-<li><p>Windows XP</p></li>
-<li><p>Windows Server 2012</p></li>
-<li><p>Windows Server 2008 R2</p></li>
-<li><p>Windows Server 2008</p></li>
-<li><p>Windows Server 2003</p></li>
-</ul></td>
-<td align="left"><p>AppLocker rules are only applied to computers running the supported versions of Windows, but SRP rules can be applied to all versions of Windows beginning with Windows XP and Windows Server 2003. For specific operating system version requirements, see <a href="requirements-to-use-applocker.md" data-raw-source="[Requirements to use AppLocker](requirements-to-use-applocker.md)">Requirements to use AppLocker</a>.</p>
-<div class="alert">
-<b>Note</b><br/><p>If you are using the Basic User security level as assigned in SRP, those privileges are not supported on computers running that support AppLocker.</p>
-</div>
-<div>
 
-</div>
-<p>AppLocker policies as applied through a GPO take precedence over SRP policies in the same or linked GPO. SRP policies can be created and maintained the same way.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Your organization&#39;s computers are running only the following operating systems:</p>
-<ul>
-<li><p>Windows 11</p></li>
-<li><p>Windows 10</p></li>
-<li><p>Windows 8.1</p></li>
-<li><p>Windows 8</p></li>
-<li><p>Windows 7</p></li>
-<li><p>Windows Server 2012 R2</p></li>
-<li><p>Windows Server 2012</p></li>
-<li><p>Windows Server 2008 R2</p></li>
-</ul></td>
-<td align="left"><p>Use AppLocker to create your application control policies.</p></td>
-</tr>
-</tbody>
-</table>
+|Possible answers|Design considerations|
+|--- |--- |
+|Your organization's computers are running a combination of the following operating systems:<li>Windows 11<li>Windows 10<li>Windows 8<li>Windows 7<li>Windows Vista<li>Windows XP<li>Windows Server 2012<li>Windows Server 2008 R2<li>Windows Server 2008<li>Windows Server 2003|AppLocker rules are only applied to computers running the supported versions of Windows, but SRP rules can be applied to all versions of Windows beginning with Windows XP and Windows Server 2003. For specific operating system version requirements, see [Requirements to use AppLocker](requirements-to-use-applocker.md).<div class="alert"> **Note:** If you are using the Basic User security level as assigned in SRP, those privileges are not supported on computers running that support AppLocker.</div><p>AppLocker policies as applied through a GPO take precedence over SRP policies in the same or linked GPO. SRP policies can be created and maintained the same way.|
+|Your organization's computers are running only the following operating systems:<li>Windows 11<li>Windows 10<li>Windows 8.1<li>Windows 8<li>Windows 7<li>Windows Server 2012 R2<li>Windows Server 2012<li>Windows Server 2008 R2|Use AppLocker to create your application control policies.|
 
 ### Are there specific groups in your organization that need customized application control policies?
 

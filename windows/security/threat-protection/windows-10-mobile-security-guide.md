@@ -156,59 +156,21 @@ Windows 10 Mobile supports both [FIPS 140 standards](http://csrc.nist.gov/groups
 The best way to fight malware is prevention. Windows 10 Mobile provides strong malware resistance through secured hardware, startup process defenses, core operating system architecture, and application-level protections.
 The table below outlines how Windows 10 Mobile mitigates specific malware threats.
 
-<table>
-<colgroup>
-<col width="40%" />
-<col width="60%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Threat</th>
-<th align="left">Windows 10 Mobile mitigation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Firmware bootkits replace the firmware with malware.</p></td>
-<td align="left"><p>All certified devices include Unified Extensible Firmware (UEFI) with Secure Boot, which requires signed firmware for updates to UEFI and Option ROMs.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Bootkits start malware before Windows starts.</p></td>
-<td align="left"><p>UEFI with Secure Boot verifies Windows bootloader integrity to help ensure that no malicious operating system can start before Windows.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>System or driver rootkits (typically malicious software that hides from the operating system) start kernel- level malware while Windows is starting, before antimalware solutions can start.</p></td>
-<td align="left"><p>Windows Trusted Boot verifies Windows boot components, including Microsoft drivers. Measured Boot runs in parallel with Trusted Boot and can provide information to a remote server that verifies the boot state of the device to help ensure that Trusted Boot and other boot components successfully checked the system.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>An app infects other apps or the operating system with malware.</p></td>
-<td align="left"><p>All Windows 10 Mobile apps run inside an AppContainer that isolates them from all other processes and sensitive operating system components. Apps cannot access any resources outside their AppContainer.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>An unauthorized app or malware attempts to start on the device.</p></td>
-<td align="left"><p>All Windows 10 Mobile apps must come from Microsoft Store or Microsoft Store for Business. Device Guard enforces administrative policies to select exactly which apps are allowed to run.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>User-level malware exploits a vulnerability in the system or an application and owns the device.</p></td>
-<td align="left"><p>Improvements to address space layout randomization (ASLR), Data Execution Prevention (DEP), the heap architecture, and memory-management algorithms reduce the likelihood that vulnerabilities can enable successful exploits.</p>
-<p>Protected Processes isolates non-trusted processes from each other and from sensitive operating system components.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Users access a dangerous website without knowledge of the risk.</p></td>
-<td align="left"><p>The Windows Defender SmartScreen URL Reputation feature prevents users from going to a malicious website that may try to exploit the browser and take control of the device.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Malware exploits a vulnerability in a browser add-on.</p></td>
-<td align="left"><p>Microsoft Edge is an app built on the Universal Windows Platform (UWP) that does not run legacy binary extensions, including Microsoft ActiveX and browser helper objects frequently used for toolbars, which eliminates these risks.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>A website that includes malicious code exploits a vulnerability in the web browser to run malware on the client device.</p></td>
-<td align="left"><p>Microsoft Edge includes Enhanced Protected Mode, which uses AppContainer-based sandboxing to help protect the system against vulnerabilities that at attacker may discover in the extensions running in the browser (for example, Adobe Flash, Java) or the browser itself.</p></td>
-</tr>
-</tbody>
-</table>
+|Threat|Windows 10 Mobile mitigation|
+|--- |--- |
+|Firmware bootkits replace the firmware with malware.|All certified devices include Unified Extensible Firmware (UEFI) with Secure Boot, which requires signed firmware for updates to UEFI and Option ROMs.|
+|Bootkits start malware before Windows starts.|UEFI with Secure Boot verifies Windows bootloader integrity to help ensure that no malicious operating system can start before Windows.|
+|System or driver rootkits (typically malicious software that hides from the operating system) start kernel- level malware while Windows is starting, before antimalware solutions can start.|Windows Trusted Boot verifies Windows boot components, including Microsoft drivers. Measured Boot runs in parallel with Trusted Boot and can provide information to a remote server that verifies the boot state of the device to help ensure that Trusted Boot and other boot components successfully checked the system.|
+|An app infects other apps or the operating system with malware.|All Windows 10 Mobile apps run inside an AppContainer that isolates them from all other processes and sensitive operating system components. Apps cannot access any resources outside their AppContainer.|
+|An unauthorized app or malware attempts to start on the device.|All Windows 10 Mobile apps must come from Microsoft Store or Microsoft Store for Business. Device Guard enforces administrative policies to select exactly which apps are allowed to run.|
+|User-level malware exploits a vulnerability in the system or an application and owns the device.|Improvements to address space layout randomization (ASLR), Data Execution Prevention (DEP), the heap architecture, and memory-management algorithms reduce the likelihood that vulnerabilities can enable successful exploits.<p>Protected Processes isolates non-trusted processes from each other and from sensitive operating system components.|
+|Users access a dangerous website without knowledge of the risk.|The Windows Defender SmartScreen URL Reputation feature prevents users from going to a malicious website that may try to exploit the browser and take control of the device.|
+|Malware exploits a vulnerability in a browser add-on.|Microsoft Edge is an app built on the Universal Windows Platform (UWP) that does not run legacy binary extensions, including Microsoft ActiveX and browser helper objects frequently used for toolbars, which eliminates these risks.|
+|A website that includes malicious code exploits a vulnerability in the web browser to run malware on the client device.|Microsoft Edge includes Enhanced Protected Mode, which uses AppContainer-based sandboxing to help protect the system against vulnerabilities that at attacker may discover in the extensions running in the browser (for example, Adobe Flash, Java) or the browser itself.|
 
->**Note:** The Windows 10 Mobile devices use a System on a Chip (SoC) design provided by SoC vendors such as Qualcomm. With this architecture, the SoC vendor and device manufacturers provide the pre-UEFI bootloaders and the UEFI environment. The UEFI environment implements the UEFI Secure Boot standard described in section 27 of the UEFI specification, which can be found at [www.uefi.org/specs]( http://www.uefi.org/specs). This standard describes the process by which all UEFI drivers and applications are validated against keys provisioned into a UEFI-based device before they are executed.
+
+>[!NOTE]
+> The Windows 10 Mobile devices use a System on a Chip (SoC) design provided by SoC vendors such as Qualcomm. With this architecture, the SoC vendor and device manufacturers provide the pre-UEFI bootloaders and the UEFI environment. The UEFI environment implements the UEFI Secure Boot standard described in section 27 of the UEFI specification, which can be found at [www.uefi.org/specs]( http://www.uefi.org/specs). This standard describes the process by which all UEFI drivers and applications are validated against keys provisioned into a UEFI-based device before they are executed.
 
 ### <a href="" id="companion-devices"></a>UEFI with Secure Boot
 

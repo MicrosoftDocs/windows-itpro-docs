@@ -143,103 +143,15 @@ The three key areas to determine for AppLocker policy management are:
 
 The following table contains the added sample data that was collected when determining how to maintain and manage AppLocker policies.
 
-<table>
-<colgroup>
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">Organizational unit</th>
-<th align="left">Implement AppLocker?</th>
-<th align="left">Apps</th>
-<th align="left">Installation path</th>
-<th align="left">Use default rule or define new rule condition</th>
-<th align="left">Allow or deny</th>
-<th align="left">GPO name</th>
-<th align="left">Support policy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Teller-East and Teller-West</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Teller Software</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\Teller.exe</p></td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p>Tellers-AppLockerTellerRules</p></td>
-<td align="left"><p>Web help</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p>
-<p></p></td>
-<td align="left"><p>C:\Windows</p></td>
-<td align="left"><p>Create a path exception to the default rule to exclude \Windows\Temp</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Help desk</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>HR-All</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Check Payout</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Checkcut.exe</p></td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p>HR-AppLockerHRRules</p></td>
-<td align="left"><p>Web help</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Time Sheet Organizer</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Timesheet.exe</p></td>
-<td align="left"><p>File is not signed; create a file hash condition</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Web help</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Deny</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Web help</p>
-<p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p></td>
-<td align="left"><p>C:\Windows</p></td>
-<td align="left"><p>Use the default rule for the Windows path</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Help desk</p></td>
-</tr>
-</tbody>
-</table>
- 
+|Business group|Organizational unit|Implement AppLocker?|Apps|Installation path|Use default rule or define new rule condition|Allow or deny|GPO name|Support policy|
+|--- |--- |--- |--- |--- |--- |--- |--- |--- |
+|Bank Tellers|Teller-East and Teller-West|Yes|Teller Software|C:\Program Files\Woodgrove\Teller.exe|File is signed; create a publisher condition|Allow|Tellers-AppLockerTellerRules|Web help|
+||||Windows files|C:\Windows|Create a path exception to the default rule to exclude \Windows\Temp|Allow||Help desk|
+|Human Resources|HR-All|Yes|Check Payout|C:\Program Files\Woodgrove\HR\Checkcut.exe|File is signed; create a publisher condition|Allow|HR-AppLockerHRRules|Web help|
+||||Time Sheet Organizer|C:\Program Files\Woodgrove\HR\Timesheet.exe|File is not signed; create a file hash condition|Allow||Web help|
+||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|File is signed; create a publisher condition|Deny||Web help|
+||||Windows files|C:\Windows|Use the default rule for the Windows path|Allow||Help desk|
+
 The following two tables illustrate examples of documenting considerations to maintain and manage AppLocker policies.
 
 **Event processing policy**
@@ -248,83 +160,17 @@ One discovery method for app usage is to set the AppLocker enforcement mode to *
 
 The following table is an example of what to consider and record.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">AppLocker event collection location</th>
-<th align="left">Archival policy</th>
-<th align="left">Analyzed?</th>
-<th align="left">Security policy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Forwarded to: AppLocker Event Repository on srvBT093</p></td>
-<td align="left"><p>Standard</p></td>
-<td align="left"><p>None</p></td>
-<td align="left"><p>Standard</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>DO NOT FORWARD. srvHR004</p></td>
-<td align="left"><p>60 months</p></td>
-<td align="left"><p>Yes, summary reports monthly to managers</p></td>
-<td align="left"><p>Standard</p></td>
-</tr>
-</tbody>
-</table>
+|Business group|AppLocker event collection location|Archival policy|Analyzed?|Security policy|
+|--- |--- |--- |--- |--- |
+|Bank Tellers|Forwarded to: AppLocker Event Repository on srvBT093|Standard|None|Standard|
+|Human Resources|DO NOT FORWARD. srvHR004|60 months|Yes, summary reports monthly to managers|Standard|
  
 <b>Policy maintenance policy</b>
 When applications are identified and policies are created for application control, then you can begin documenting how you intend to update those policies.
 The following table is an example of what to consider and record.
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">Rule update policy</th>
-<th align="left">Application decommission policy</th>
-<th align="left">Application version policy</th>
-<th align="left">Application deployment policy</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Planned: Monthly through business office triage</p>
-<p>Emergency: Request through help desk</p></td>
-<td align="left"><p>Through business office triage</p>
-<p>30-day notice required</p></td>
-<td align="left"><p>General policy: Keep past versions for 12 months</p>
-<p>List policies for each application</p></td>
-<td align="left"><p>Coordinated through business office</p>
-<p>30-day notice required</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>Planned: Monthly through HR triage</p>
-<p>Emergency: Request through help desk</p></td>
-<td align="left"><p>Through HR triage</p>
-<p>30-day notice required</p></td>
-<td align="left"><p>General policy: Keep past versions for 60 months</p>
-<p>List policies for each application</p></td>
-<td align="left"><p>Coordinated through HR</p>
-<p>30-day notice required</p></td>
-</tr>
-</tbody>
-</table>
+
+|Business group|Rule update policy|Application decommission policy|Application version policy|Application deployment policy|
+|--- |--- |--- |--- |--- |
+|Bank Tellers|Planned: Monthly through business office triage<p>Emergency: Request through help desk|Through business office triage<p>30-day notice required|General policy: Keep past versions for 12 months<p>List policies for each application|Coordinated through business office<p>30-day notice required|
+|Human Resources|Planned: Monthly through HR triage<p>Emergency: Request through help desk|Through HR triage<p>30-day notice required|General policy: Keep past versions for 60 months<p>List policies for each application|Coordinated through HR<p>30-day notice required|
+
