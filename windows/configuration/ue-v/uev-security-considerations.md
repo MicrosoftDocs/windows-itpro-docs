@@ -24,8 +24,8 @@ This topic contains a brief overview of accounts and groups, log files, and othe
 ## Security considerations for UE-V configuration
 
 
-**Important**
-When you create the settings storage share, limit the share access to users who require access.
+> [!IMPORTANT]
+> When you create the settings storage share, limit the share access to users who require access.
 
 Because settings packages might contain personal information, you should take care to protect them as well as possible. In general, do the following:
 
@@ -104,7 +104,8 @@ To ensure that UE-V works optimally, create only the root share on the server, a
 
 This permission configuration enables users to create folders for settings storage. The UE-V service creates and secures a settings package folder while it runs in the context of the user. Users receive full control to their settings package folder. Other users do not inherit access to this folder. You do not have to create and secure individual user directories. The UE-V service that runs in the context of the user does it automatically.
 
-> **Note**&nbsp;&nbsp;Additional security can be configured when a Windows Server is used for the settings storage share. UE-V can be configured to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable additional security, use the following command:
+> [!NOTE]
+> Additional security can be configured when a Windows Server is used for the settings storage share. UE-V can be configured to verify that either the local Administrators group or the current user is the owner of the folder where settings packages are stored. To enable additional security, use the following command:
 
 1.  Add the REG\_DWORD registry key RepositoryOwnerCheckEnabled to `HKEY_LOCAL_MACHINE\Software\Microsoft\UEV\Agent\Configuration`.
 
@@ -132,11 +133,6 @@ If you plan to share settings location templates with anyone outside your organi
 -   **Template Author Email** – Specify a general, non-identifying template author email or exclude this data from the template.
 
 To remove the template author name or template author email, you can use the UE-V generator application. From the generator, select **Edit a Settings Location Template**. Select the settings location template to edit from the recently used templates or Browse to the settings template file. Select **Next** to continue. On the Properties page, remove the data from the Template author name or Template author email text fields. Save the settings location template.
-
-
-
-
-
 
 ## Related topics
 
