@@ -65,7 +65,7 @@ Click **Start** > **Settings** > **Update & Security** > **Windows Security** > 
 
     ![Secure Launch Registry.](images/secure-launch-registry.png)
 
-## How to verify System Guard Secure Launch is configured and running?
+## How to verify System Guard Secure Launch is configured and running
 
 To verify that Secure Launch is running, use System Information (MSInfo32). Click **Start**, search for **System Information**, and look under **Virtualization-based Security Services Running** and **Virtualization-based Security Services Configured**.
 
@@ -81,7 +81,7 @@ To verify that Secure Launch is running, use System Information (MSInfo32). Clic
 |64-bit CPU|A 64-bit computer with minimum four cores (logical processors) is required for hypervisor and virtualization-based security (VBS). For more info about Hyper-V, see [Hyper-V on Windows Server 2016](/windows-server/virtualization/hyper-v/hyper-v-on-windows-server) or [Introduction to Hyper-V on Windows 10](/virtualization/hyper-v-on-windows/about/). For more info about hypervisor, see [Hypervisor Specifications](/virtualization/hyper-v-on-windows/reference/tlfs).|
 |Trusted Platform Module (TPM) 2.0|Platforms must support a discrete TPM 2.0. Integrated/firmware TPMs aren't supported, except Intel chips that support Platform Trust Technology (PTT), which is a type of integrated hardware TPM that meets the TPM 2.0 spec.|
 |Windows DMA Protection|Platforms must meet the Windows DMA Protection Specification (all external DMA ports must be off by default until the OS explicitly powers them).|
-|SMM communication buffers| All SMM communication buffers must be implemented in EfiRuntimeServicesData , EfiRuntimeServicesCode , EfiACPIMemoryNVS, or EfiReservedMemoryType memory types. |
+|SMM communication buffers| All SMM communication buffers must be implemented in EfiRuntimeServicesData, EfiRuntimeServicesCode, EfiACPIMemoryNVS, or EfiReservedMemoryType memory types. |
 |SMM Page Tables| Must NOT contain any mappings to EfiConventionalMemory (for example no OS/VMM owned memory). <br/>Must NOT contain any mappings to code sections within EfiRuntimeServicesCode. <br/>Must NOT have execute and write permissions for the same page <br/>Must allow ONLY that TSEG pages can be marked executable and the memory map must report TSEG EfiReservedMemoryType. <br/>BIOS SMI handler must be implemented such that SMM page tables are locked on every SMM entry.  |
 |Modern/Connected Standby|Platforms must support Modern/Connected Standby.|
 |TPM AUX Index|Platform must set up a AUX index with index, attributes, and policy that exactly corresponds to the AUX index specified in the TXT DG with a data size of exactly 104 bytes (for SHA256 AUX data). (NameAlg = SHA256) <br/> Platforms must set up a PS (Platform Supplier) index with: <ul><li> Exactly the "TXT PS2" style Attributes on creation as follows: <ul><li>AuthWrite</li><li>PolicyDelete</li><li>WriteLocked</li><li>WriteDefine</li><li>AuthRead</li><li>WriteDefine</li><li>NoDa</li><li>Written</li><li>PlatformCreate</li></ul> <li>A policy of exactly PolicyCommandCode(CC = TPM2_CC_UndefineSpaceSpecial) (SHA256 NameAlg and Policy)</li><li> Size of exactly 70 bytes </li><li> NameAlg = SHA256 </li><li> Also, it must have been initialized and locked (TPMA_NV_WRITTEN = 1, TPMA_NV_WRITELOCKED = 1) at time of OS launch. </li></ul> PS index data DataRevocationCounters, SINITMinVersion, and PolicyControl must all be 0x00 |
