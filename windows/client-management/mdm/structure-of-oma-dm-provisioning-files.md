@@ -81,7 +81,8 @@ This information is used to by the client device to properly manage the DM sessi
 
 The following example shows the header component of a DM message. In this case, OMA DM version 1.2 is used as an example only.
 
-> **Note**   The &lt;LocURI&gt; node value for the &lt;Source&gt; element in the SyncHdr of the device-generated DM package should be the same as the value of ./DevInfo/DevID. For more information about DevID, see [DevInfo configuration service provider](devinfo-csp.md).
+> [!NOTE]
+> The `<LocURI>` node value for the `<Source>` element in the SyncHdr of the device-generated DM package should be the same as the value of ./DevInfo/DevID. For more information about DevID, see [DevInfo configuration service provider](devinfo-csp.md).
 
  
 
@@ -125,7 +126,7 @@ The following example shows the body component of a DM message. In this example,
 
 When using SyncML for OMA DM provisioning, a LocURI in SyncBody can have a "." as a valid segment name only in the first segment. However, a "." is not a valid segment name for the other segments. For example, the following LocURI is not valid because the segment name of the seventh segment is a ".".
 
-```
+```xml
 <LocURI>./Vendor/MSFT/Registry/HKLM/Security/./Test</LocURI>
 ```
 
@@ -166,11 +167,3 @@ The following example illustrates how to use the Replace command to update a dev
    <Final />
 </SyncBody>
 ```
-
- 
-
-
-
-
-
-
