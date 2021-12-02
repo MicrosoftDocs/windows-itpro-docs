@@ -40,8 +40,8 @@ The following table describes each command-line option related to logs, and it p
 |**/listfiles** *[Path]FileName*|Specifies the path and file name of the Listfiles log.|Provides a list of the files that were migrated.|
 |Set the environment variable MIG_ENABLE_DIAG to a path to an XML file.|USMTDiag.xml|The diagnostic log contains detailed system environment information, user environment information, and information about the migration units (migunits) being gathered and their contents.|
 
-**Note**  
-You cannot store any of the log files in *StorePath*. If you do, the log will be overwritten when USMT is run.
+> [!NOTE]
+> You cannot store any of the log files in *StorePath*. If you do, the log will be overwritten when USMT is run.
 
 ## <a href="" id="bkmk-scanloadstatelogs"></a>ScanState and LoadState Logs
 

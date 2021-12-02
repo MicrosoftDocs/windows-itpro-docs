@@ -101,8 +101,8 @@ Additionally, the order in the **&lt;ErrorControl&gt;** section implies priority
 </ErrorControl>
 ```
 
-**Important**  
-The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
+> [!IMPORTANT]
+> The configurable **&lt;ErrorControl&gt;** rules support only the environment variables for the operating system that is running and the currently logged-on user. As a workaround, you can specify a path using the (\*) wildcard character.
 
 ### <a href="" id="bkmk-fatal"></a>&lt;fatal&gt;
 
@@ -188,8 +188,8 @@ Syntax: `<HardLinkStoreControl></HardLinkStoreControl>`
 
 The **&lt;HardLinkStoreControl&gt;** sample code below specifies that hard links can be created to locked files only if the locked file resides somewhere under C:\\Users\\. Otherwise, a file-access error occurs when a locked file is encountered that cannot be copied, even though is technically possible for the link to be created.
 
-**Important**  
-The **&lt;ErrorControl&gt;** section can be configured to conditionally ignore file access errors, based on the file’s location.
+> [!IMPORTANT]
+> The **&lt;ErrorControl&gt;** section can be configured to conditionally ignore file access errors, based on the file’s location.
 
 ``` xml
 <Policy>
