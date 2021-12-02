@@ -13,7 +13,7 @@ audience: ITPro
 ms.localizationpriority: medium
 keywords: event id 41, reboot, restart, stop error, bug check code
 manager: kaushika
-
+ms.collection: highpri
 ---
 
 # Advanced troubleshooting for Event ID 41: "The system has rebooted without cleanly shutting down first"

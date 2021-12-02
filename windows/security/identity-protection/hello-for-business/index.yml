@@ -12,7 +12,9 @@ metadata:
   manager: dansimp
   ms.author: mapalko
   ms.date: 01/22/2021
-  ms.collection: M365-identity-device-management
+  ms.collection:
+    - M365-identity-device-management
+    - highpri
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
 
