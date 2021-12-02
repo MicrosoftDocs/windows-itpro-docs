@@ -32,38 +32,14 @@ ms.date: 09/27/2019
 <a href="" id="troubleshooting-allowrecommendations"></a>**Troubleshooting/AllowRecommendations**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -101,38 +77,14 @@ Supported values:
 -   5 - Allow the user to choose their own recommended troubleshooting settings.
 
 By default, this policy is not configured and the SKU based defaults are used for managed devices. Current policy values for SKU's are as follows:
-<table>
-<tr>
-    <th>SKU</th>
-    <th>Unmanaged Default</th>
-    <th>Managed Default</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>Prompt (OOBE)</td>
-    <td>Off</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Prompt (OOBE)</td>
-    <td>Off</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>On (auto)</td>
-    <td>Off</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Off</td>
-    <td>Off</td>
-</tr>
-<tr>
-    <td>Government</td>
-    <td>Off</td>
-    <td>Off</td>
-</tr>
-</table>
+
+|SKU|Unmanaged Default|Managed Default|
+|--- |--- |--- |
+|Home|Prompt (OOBE)|Off|
+|Pro|Prompt (OOBE)|Off|
+|Education|On (auto)|Off|
+|Enterprise|Off|Off|
+|Government|Off|Off|
 
 <!--/SupportedValues-->
 <!--Example-->
