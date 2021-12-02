@@ -64,8 +64,8 @@ The UE-V service policy configuration item CAB file is created using the UevTemp
 
 -   ConfigurationFile &lt;full path to agent configuration XML file&gt;
 
-**Note**  
-It might be necessary to change the PowerShell execution policy to allow these scripts to run in your environment. Perform these steps in the Configuration Manager console:
+> [!NOTE]
+> It might be necessary to change the PowerShell execution policy to allow these scripts to run in your environment. Perform these steps in the Configuration Manager console:
 
 1.  Select **Administration &gt; Client Settings &gt; Properties**
 
@@ -76,7 +76,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
 1.  Copy the default settings configuration file from the UE-V Config Pack installation directory to a location visible to your ConfigMgr Admin Console:
 
-    ``` syntax
+    ```cmd
     C:\Program Files (x86)\Windows Kits\10\Microsoft User Experience Virtualization\Management\AgentConfiguration.xml 
     ```
 
@@ -125,7 +125,7 @@ It might be necessary to change the PowerShell execution policy to allow these s
 
 3.  Run this command on a machine running the ConfigMgr Admin Console:
 
-    ``` syntax
+    ```cmd
     C:\Program Files (x86)\Microsoft User Experience Virtualization\ConfigPack\UevAgentPolicyGenerator.exe -Site ABC -CabFilePath "C:\MyCabFiles\UevPolicyItem.cab" -ConfigurationFile "c:\AgentConfiguration.xml"
     ```
 
@@ -169,7 +169,7 @@ The result is a baseline CAB file that is ready for import into Configuration Ma
 
 3.  Add the command and parameters to the .bat file that will generate the baseline. The following example creates a baseline that distributes Notepad and Calculator:
 
-    ``` syntax
+    ```cmd
     C:\Program Files (x86)\Microsoft User Experience Virtualization\ConfigPack\UevTemplateBaselineGenerator.exe -Site "ABC" -TemplateFolder "C:\ProductionUevTemplates" -Register "MicrosoftNotepad.xml, MicrosoftCalculator.xml" -CabFilePath "C:\MyCabFiles\UevTemplateBaseline.cab"
     ```
 
@@ -193,21 +193,7 @@ To distribute a new Notepad template, you would perform these steps:
 
 You can download the [System Center 2012 Configuration Pack for Microsoft User Experience Virtualization 2.0](https://www.microsoft.com/download/details.aspx?id=40913) from the Microsoft Download Center.
 
-
-
-
-
-
 ## Related topics
 
 
 [Manage Configurations for UE-V](uev-manage-configurations.md)
-
- 
-
- 
-
-
-
-
-
