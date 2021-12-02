@@ -21,7 +21,8 @@ ms.topic: article
 
 User Experience Virtualization (UE-V) uses XML settings location templates to define the settings that User Experience Virtualization captures and applies. UE-V includes a set of standard settings location templates. It also includes the UE-V template generator tool that enables you to create custom settings location templates. After you create and deploy settings location templates, you can manage those templates by using Windows PowerShell and the Windows Management Instrumentation (WMI). 
 
-> **Note**&nbsp;&nbsp;For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/).
+> [!NOTE]
+> For a complete list of UE-V cmdlets, see [User Experience Virtualization in Windows PowerShell](/powershell/module/uev/).
 
 ## Manage UE-V settings location templates by using Windows PowerShell
 
@@ -29,7 +30,7 @@ The WMI and Windows PowerShell features of UE-V include the ability to enable, d
 
 You must have administrator permissions to update, register, or unregister a settings location template. Administrator permissions are not required to enable, disable, or list templates.
 
-***<em>To manage settings location templates by using Windows PowerShell</em>***
+**To manage settings location templates by using Windows PowerShell**
 
 1.  Use an account with administrator rights to open a Windows PowerShell command prompt.
 
@@ -173,8 +174,8 @@ User Experience Virtualization provides the following set of WMI commands. Admin
     |`Invoke-WmiMethod -Namespace root\Microsoft\UEV -Class UserConfiguredWindows8App -Name EnableApp -ArgumentList <package family name>`|Enables Windows apps in the current user Windows app list.|
     |`Invoke-WmiMethod -Namespace root\Microsoft\UEV -Class SettingsLocationTemplate -Name Validate -ArgumentList <template path>`|Determines whether a given settings location template complies with its XML schema.|
 
-**Note**  
-Where a list of Package Family Names is called by the WMI command, the list must be in quotes and separated by a pipe symbol, for example, `"<package family name | package family name>"`.
+> [!NOTE]
+> Where a list of Package Family Names is called by the WMI command, the list must be in quotes and separated by a pipe symbol, for example, `"<package family name | package family name>"`.
 
 ## Related topics
 
