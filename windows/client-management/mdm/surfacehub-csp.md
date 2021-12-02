@@ -206,18 +206,19 @@ SurfaceHub
 <p>The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-errorcontext"></a>**DeviceAccount/ErrorContext**
-<p>If there is an error calling ValidateAndCommit, there is additional context for that error in this node. Here are the possible error values:
+
+If there is an error calling ValidateAndCommit, there is additional context for that error in this node. Here are the possible error values:
 
 |ErrorContext value|Stage where error occurred|Description and suggestions|
 |--- |--- |--- |
 |1|Unknown||
-|2|Populating account|Unable to retrieve account details using the username and password you provided.<li>For Azure AD accounts, ensure that UserPrincipalName and Password are valid.<li>For AD accounts, ensure that DomainName, UserName, and Password are valid.<li>Ensure that the specified account has an Exchange server mailbox.|
+|2|Populating account|Unable to retrieve account details using the username and password you provided.-For Azure AD accounts, ensure that UserPrincipalName and Password are valid.<br/>-For AD accounts, ensure that DomainName, UserName, and Password are valid.<br/>-Ensure that the specified account has an Exchange server mailbox.|
 |3|Populating Exchange server address|Unable to auto-discover your Exchange server address. Try to manually specify the Exchange server address using the ExchangeServer field.|
 |4|Validating Exchange server address|Unable to validate the Exchange server address. Ensure that the ExchangeServer field is valid.|
 |5|Saving account information|Unable to save account details to the system.|
 |6|Validating EAS policies|The device account uses an unsupported EAS policy. Make sure the EAS policy is configured correctly according to the admin guide.|
  
-<p>The data type is integer. Supported operation is Get.
+The data type is integer. Supported operation is Get.
 
 <a href="" id="maintenancehourssimple-hours"></a>**MaintenanceHoursSimple/Hours**
 <p>Node for maintenance schedule.
