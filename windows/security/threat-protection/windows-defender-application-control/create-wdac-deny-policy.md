@@ -119,6 +119,9 @@ Deny rules and policies can be created using the PowerShell cmdlets or the WDAC 
 
 ### Creating a Deny Policy
 Deny rules and policies can be created using the PowerShell cmdlets or the [WDAC Wizard] (https://webapp-wdac-wizard.azurewebsites.net/) We recommend creating signer rules (PCACertificate, Publisher, and FilePublisher) wherever possible. In the cases of unsigned binaries, rules must be created on attributes of the file, such as the original filename, or the hash. 
+<<<<<<< HEAD
+>>>>>>> d2313afd3e53ed3184ca3c47b7242dd156a935af
+=======
 >>>>>>> d2313afd3e53ed3184ca3c47b7242dd156a935af
 
 ### Software Publisher Based Deny Rule
