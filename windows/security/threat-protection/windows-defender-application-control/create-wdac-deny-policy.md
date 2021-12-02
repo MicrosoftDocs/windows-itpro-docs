@@ -128,7 +128,7 @@ $DenyRules += New-CIPolicyRule -Level FileName -DriverFilePath <binary_to_block>
 
 ### Hash Based Deny Rule
 ```PowerShell
- New-CIPolicyRule -Level FileName -DriverFilePath <binary_to_block> -Deny -Fallback Hash
+ New-CIPolicyRule -Level Hash -DriverFilePath <binary_to_block> -Deny
  ```
 
 ### Adding Allow All Rules
