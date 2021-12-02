@@ -99,7 +99,7 @@ Merge-CIPolicy -PolicyPaths $ DenyPolicy, $ExistingPolicy -OutputFilePath $Exist
 ```
 
 ## Multiple Policy Considerations
-If you are currently using multiple policies [Use multiple Windows Defender Application Control Policies (Windows) - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) on a device, there are two options for integrating the deny list into your policy set. 
+If you are currently using [multiple policies] (deploy-multiple-windows-defender-application-control-policies.md) on a device, there are two options for integrating the deny list into your policy set. 
 
 (Recommended) The first option is to keep the deny list as its own policy isolated from your allow policies as it is easier to manage. Since applications need to be allowed by both WDAC policies to run on the device [Use multiple Windows Defender Application Control Policies (Windows) - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies#base-and-supplemental-policy-interaction), you will need to add the Allow All rule(s) to your deny policy. This will not override the set of applications allowed by WDAC illustrated by the following example:
 
