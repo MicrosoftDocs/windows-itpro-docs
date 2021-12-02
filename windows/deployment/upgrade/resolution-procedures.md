@@ -1,7 +1,6 @@
 ---
 title: Resolution procedures - Windows IT Pro
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 description: Discover general troubleshooting procedures for dealing with 0xC1900101, the generic rollback code thrown when something goes wrong during a Windows 10 upgrade.
 keywords: deploy, error, troubleshoot, windows, 10, upgrade, code, rollback, ITPro
@@ -13,12 +12,13 @@ audience: itpro
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Resolution procedures
 
 **Applies to**
-- Windows 10
+- Windows 10
 
 > [!NOTE]  
 > This is a 200 level topic (moderate).  

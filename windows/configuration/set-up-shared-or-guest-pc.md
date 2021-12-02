@@ -11,6 +11,7 @@ ms.topic: article
 ms.localizationpriority: medium
 ms.reviewer: sybruckm
 manager: dansimp
+ms.collection: highpri
 ---
 
 # Set up a shared or guest PC with Windows 10/11
@@ -18,7 +19,7 @@ manager: dansimp
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 Windows client has a *shared PC mode*, which optimizes Windows client for shared use scenarios, such as touchdown spaces in an enterprise and temporary customer use in retail. You can apply shared PC mode to Windows client Pro, Pro Education, Education, and Enterprise.
