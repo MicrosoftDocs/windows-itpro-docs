@@ -4,7 +4,7 @@ description: Learn how to minimize connections from Windows to Microsoft service
 ms.assetid: ACCEB0DD-BC6F-41B1-B359-140B242183D9
 ms.reviewer:
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -16,7 +16,8 @@ ms.collection:
   - M365-security-compliance
   - highpri
 ms.topic: article
-ms.date: 5/21/2021
+ms.date: 11/29/2021
+ms.technology: privacy
 ---
 
 # Manage connections from Windows 10 and Windows 11 operating system components to Microsoft services
