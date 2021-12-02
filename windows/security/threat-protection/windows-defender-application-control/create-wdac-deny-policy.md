@@ -1,6 +1,6 @@
 ---
 title: Create WDAC Deny Policy
-description: Explains how to configure a custom Manged Installer.
+description: Explains how to create WDAC deny policies
 keywords: WDAC, policy
 ms.assetid: 8d6e0474-c475-411b-b095-1c61adb2bdbb
 ms.prod: m365-security
@@ -11,7 +11,7 @@ ms.localizationpriority: medium
 audience: ITPro
 ms.collection: M365-security-compliance
 author: jgeurten
-ms.reviewer: isbrahm
+ms.reviewer: jsuther1974
 ms.author: dansimp
 manager: dansimp
 ms.date: 11/29/2021
@@ -42,7 +42,7 @@ To create effective WDAC deny policies, it is crucial to understand how WDAC par
 
 4. Lastly, WDAC will call the Intelligent Security Graph (ISG) to get reputation on file, if the policy has support for the ISG.
 
-Explicit allow and deny rules encompass rules at any level (e.g. has rules, signer rules path rules, attritbute rules or package family name rules). If there is an explicit deny rule, WDAC does not process any other rules, meaning a deny rule always takes precedence in the case where a deny and allow rule would be at odds. 
+Explicit allow and deny rules encompass rules at any level (e.g. hash rules, signer rules path rules, attribute rules or package family name rules). If there is an explicit deny rule, WDAC does not process any other rules, meaning a deny rule always takes precedence in the case where a deny and allow rule would be at odds. 
 
 ## Interaction with Existing Policies
 ### Adding Allow Rules
@@ -90,7 +90,7 @@ If the policy enables user mode code integrity via the ***Enabled:UMCI*** rule-o
 </SigningScenarios>
 ```
 ## Single Policy Considerations
-If the set of deny rules is to be added into an existing policy with allow rules, then the above Allow All rules should not be added to the policy. Instead, the deny policy should be merged with the existing WDAC policy via the WDAC Wizard.
+If the set of deny rules is to be added into an existing policy with allow rules, then the above Allow All rules should not be added to the policy. Instead, the deny policy should be merged with the existing WDAC policy via the WDAC Wizard [Windows Defender Application Control Wizard Policy Merging Operation - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/wdac-wizard-merging-policies) or using the following PowerShell command:
 
 ```PowerShell
 $DenyPolicy = <path_to_deny_policy>
@@ -99,22 +99,27 @@ Merge-CIPolicy -PolicyPaths $ DenyPolicy, $ExistingPolicy -OutputFilePath $Exist
 ```
 
 ## Multiple Policy Considerations
-If you are currently using multiple policies [Use multiple Windows Defender Application Control Policies (Windows) - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies) on a device, there are two options for integrating the deny list into your policy set. 
+If you are currently using [multiple policies] (deploy-multiple-windows-defender-application-control-policies.md) on a device, there are two options for integrating the deny list into your policy set. 
 
-(Recommended) The first option is to keep the deny list as its own policy isolated from your allow policies as it is easier to manage. Since applications need to be allowed by both WDAC policies to run on the device [Use multiple Windows Defender Application Control Policies (Windows) - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/deploy-multiple-windows-defender-application-control-policies#base-and-supplemental-policy-interaction), you will need to add the Allow All rule(s) to your deny policy. This will not override the set of applications allowed by WDAC illustrated by the following example:
+(Recommended) The first option is to keep the deny list as its own policy isolated from your allow policies as it is easier to manage. Since applications need to be [allowed by both WDAC policies to run on the device](deploy-multiple-windows-defender-application-control-policies#base-and-supplemental-policy-interaction), you will need to add the Allow All rule(s) to your deny policy. This will not override the set of applications allowed by WDAC illustrated by the following example:
 
 Policy 1 is an allow list of Windows and Microsoft-signed applications. Policy 2 is our new deny policy which blocks MaliciousApp.exe with the Allow All rules. MaliciousApp.exe will be blocked since there is an explicit block rule in Policy 2. Windows and Microsoft applications will be allowed since there is an explicit allow rule in Policy 1 and Policy 2 (due to the Allow All rules). All other applications, if not Windows and Microsoft signed, e.g., ExampleApp.exe, will not be allowed as this application is only trusted by Policy 2 (due to the Allow All rules) and not Policy 1.
 
 ## Best Practices
 
-1. **Starting with Audit Mode Policies** - as with all new policies, we recommend rolling out your new deny policy in Audit Mode and monitoring the 3077 block events [Understanding Application Control event IDs (Windows) - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/event-id-explanations#microsoft-windows-codeintegrity-operational-log-event-ids) to ensure only the applications you intended to block are being blocked. More information on monitoring block events via the Event Viewer logs and Advanced Hunting: [Managing and troubleshooting Windows Defender Application Control policies (Windows) - Windows security | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control-operational-guide)
+1. **Starting with Audit Mode Policies** - as with all new policies, we recommend rolling out your new deny policy in Audit Mode and monitoring the [3077 block events](event-id-explanations#microsoft-windows-codeintegrity-operational-log-event-ids) to ensure only the applications you intended to block are being blocked. More information on monitoring block events via the Event Viewer logs and Advanced Hunting: [Managing and troubleshooting Windows Defender Application Control policies](windows-defender-application-control-operational-guide)
 
 2. **Recommeneded Deny Rules Types** - signer and file attribute rules are recommended from a security, manageability, and performance perspective. Hash rules should only be utilized where otherwise impossible. The hash of an application is updated for every new version released by the publisher which quickly becomes impractical to manage and protect against new threats where the attacker is quickly iterating on the payload. Additionally, WDAC has optimized parsing of hash rules, but devices may see performance impacts at runtime evaluation when policies have tens of thousands or more hash rules. 
 
+<<<<<<< HEAD
+## Creating a Deny Policy Tutorial
+Deny rules and policies can be created using the PowerShell cmdlets or the WDAC Wizard [Microsoft WDAC Wizard (webapp-wdac-wizard.azurewebsites.net](https://webapp-wdac-wizard.azurewebsites.net/) We recommend creating signer rules (PCACertificate, Publisher, and FilePublisher) wherever possible. In the cases of unsigned binaries, rules must be created on attributes of the file, such as the original filename, or the hash. 
+=======
 ## Tutorial 
 
 ### Creating a Deny Policy
-Deny rules and policies can be created using the PowerShell cmdlets or the WDAC Wizard [Microsoft WDAC Wizard (webapp-wdac-wizard.azurewebsites.net](https://webapp-wdac-wizard.azurewebsites.net/) We recommend creating signer rules (PCACertificate, Publisher, and FilePublisher) wherever possible. In the cases of unsigned binaries, rules must be created on attributes of the file, such as the original filename, or the hash. 
+Deny rules and policies can be created using the PowerShell cmdlets or the [WDAC Wizard] (https://webapp-wdac-wizard.azurewebsites.net/) We recommend creating signer rules (PCACertificate, Publisher, and FilePublisher) wherever possible. In the cases of unsigned binaries, rules must be created on attributes of the file, such as the original filename, or the hash. 
+>>>>>>> d2313afd3e53ed3184ca3c47b7242dd156a935af
 
 ### Software Publisher Based Deny Rule
 ```Powershell
@@ -128,10 +133,10 @@ $DenyRules += New-CIPolicyRule -Level FileName -DriverFilePath <binary_to_block>
 
 ### Hash Based Deny Rule
 ```PowerShell
- New-CIPolicyRule -Level FileName -DriverFilePath <binary_to_block> -Deny -Fallback Hash
+ New-CIPolicyRule -Level Hash -DriverFilePath <binary_to_block> -Deny
  ```
 
- ### Adding Allow All Rules
+### Adding Allow All Rules
 If required, as in the cases listed above, [Allow All rules](48) may need to be added to the policy. The Allow All rules can be manually added to the policy xml or by merging with the AllowAll xml present on the client system in the WDAC template folder: 
 
 ```PowerShell
