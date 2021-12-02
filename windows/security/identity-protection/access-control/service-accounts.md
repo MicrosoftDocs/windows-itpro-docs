@@ -50,7 +50,7 @@ In addition to the enhanced security that is provided by having individual accou
 - Unlike domain accounts in which administrators must manually reset passwords, the network passwords for these accounts are automatically reset.
 
 - You do not have to complete complex SPN management tasks to use managed service accounts.
-
+-   You don't have to complete complex SPN management tasks to use managed service accounts.
 - Administrative tasks for managed service accounts can be delegated to non-administrators.
 
 ### Software requirements
