@@ -10,17 +10,18 @@ audience: ITPro
 author: mapalko
 ms.author: mapalko
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 localizationpriority: conceptual
 ms.date: 09/16/2020
-ms.reviewer: 
 ---
 # Planning a Windows Hello for Business Deployment
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 Congratulations! You are taking the first step forward in helping move your organizations away from password to a two-factor, convenience authentication for Windows — Windows Hello for Business. This planning guide helps you understand the different topologies, architectures, and components that encompass a Windows Hello for Business infrastructure.

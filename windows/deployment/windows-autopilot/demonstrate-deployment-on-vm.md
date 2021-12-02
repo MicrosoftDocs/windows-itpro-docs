@@ -1,7 +1,6 @@
 ---
 title: Demonstrate Autopilot deployment
-ms.reviewer:
-manager: laurawi
+manager: dougeby
 description: In this article, find step-by-step instructions on how to set up a Virtual Machine with a Windows Autopilot deployment.
 keywords: mdm, setup, windows, windows 10, oobe, manage, deploy, autopilot, ztd, zero-touch, partner, msfb, intune, upgrade
 ms.prod: w10
@@ -11,7 +10,9 @@ ms.sitesec: library
 ms.pagetype: deploy
 author: greg-lindsay
 ms.author: greglin
-ms.collection: M365-modern-desktop
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ms.custom: 
  - autopilot
@@ -23,7 +24,7 @@ ms.custom:
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 
 To get started with Windows Autopilot, you should try it out with a virtual machine (VM) or you can use a physical device that will be wiped and then have a fresh install of Windows 10.
 
