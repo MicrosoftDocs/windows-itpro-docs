@@ -17,7 +17,8 @@ ms.date: 06/26/2017
 
 The PXLOGICAL configuration service provider is used to add, remove, or modify WAP logical and physical proxies by using WAP or the standard Windows techniques.
 
-> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> [!NOTE]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
 
 The following shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for initial bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
@@ -164,13 +165,4 @@ These features are available only for the device technique. In addition, the par
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
 
