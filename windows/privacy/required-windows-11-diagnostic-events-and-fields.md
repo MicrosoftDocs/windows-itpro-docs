@@ -2,7 +2,7 @@
 description: Use this article to learn more about what Windows diagnostic data is gathered at the basic level.
 title: Required Windows 11 diagnostic events and fields
 keywords: privacy, telemetry
-ms.prod: w11
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -15,7 +15,8 @@ ms.collection:
   - highpri
 ms.topic: article
 audience: ITPro
-ms.date: 10/04/2021
+ms.date: 11/29/2021
+ms.technology: privacy
 ---
 
 
