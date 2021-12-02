@@ -42,9 +42,8 @@ The User State Migration Tool (USMT) 10.0 is designed so that an IT engineer ca
 
   The following data does not migrate with MigUser.xml:
 
-    -   Files outside the user profile that don’t match one of the file extensions in MigUser.xml.
-
-    -   Access control lists (ACLs) for folders outside the user profile.
+  - Files outside the user profile that don’t match one of the file extensions in MigUser.xml.
+  - Access control lists (ACLs) for folders outside the user profile.
 
 ## <a href="" id="bkmk-3"></a>User data
 
