@@ -54,13 +54,14 @@ The &lt;addObjects&gt; element emulates the existence of one or more objects on 
 
 Syntax:
 
-&lt;addObjects&gt;
-
-&lt;/addObjects&gt;
+```xml
+<addObjects>
+</addObjects>
+```
 
 The following example is from the MigApp.xml file:
 
-``` xml
+```xml
 <addObjects>
    <object>
       <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [UpgradeVersion]</location>
@@ -87,7 +88,9 @@ The &lt;attributes&gt; element defines the attributes for a registry key or file
 
 Syntax:
 
-&lt;attributes&gt;*Content*&lt;/attributes&gt;
+```xml
+<attributes>Content</attributes>
+```
 
 | Setting | Required? | Value |
 |------|-----|----|
@@ -95,7 +98,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-``` xml
+```xml
 <object>
    <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [Lang]</location>
    <attributes>DWORD</attributes>
@@ -115,7 +118,9 @@ You must specify the &lt;bytes&gt; element only for files because, if &lt;locati
 
 Syntax:
 
-&lt;bytes string="Yes|No" expand="Yes|No"&gt;*Content*&lt;/bytes&gt;
+```xml
+<bytes string="Yes|No" expand="Yes|No">Content</bytes>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -125,7 +130,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-``` xml
+```xml
 <object>
    <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [Lang]</location>
    <attributes>DWORD</attributes>
@@ -146,7 +151,9 @@ You might want to use the &lt;commandLine&gt; element if you want to start or st
 
 Syntax:
 
-&lt;commandLine&gt;*CommandLineString*&lt;/commandLine&gt;
+```xml
+<commandLine>CommandLineString</commandLine>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -168,11 +175,11 @@ A component can be nested inside another component; that is, the &lt;component&g
 
 Syntax:
 
-&lt;component type="System|Application|Device|Documents" context="User|System|UserAndSystem" defaultSupported="TRUE|FALSE|YES|NO"
-
-hidden="Yes|No"&gt;
-
-&lt;/component&gt;
+```xml
+<component type="System|Application|Device|Documents" context="User|System|UserAndSystem" defaultSupported="TRUE|FALSE|YES|NO"
+hidden="Yes|No">
+</component>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -199,7 +206,9 @@ The &lt;condition&gt; element has a Boolean result. You can use this element to 
 
 Syntax:
 
-&lt;condition negation="Yes|No"&gt;*ScriptName*&lt;/condition&gt;
+```xml
+<condition negation="Yes|No">ScriptName</condition>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -210,7 +219,7 @@ For example,
 
 In the code sample below, the &lt;condition&gt; elements, A and B, are joined together by the AND operator because they are in separate &lt;conditions&gt; sections. For example:
 
-``` xml
+```xml
 <detection>
    <conditions>
       <condition>A</condition>
@@ -223,7 +232,7 @@ In the code sample below, the &lt;condition&gt; elements, A and B, are joined to
 
 However, in the code sample below, the &lt;condition&gt; elements, A and B, are joined together by the OR operator because they are in the same &lt;conditions&gt; section.
 
-``` xml
+```xml
 <detection>
    <conditions>
       <condition>A</condition>
@@ -246,18 +255,18 @@ The &lt;condition&gt; functions return a Boolean value. You can use these elemen
 
     All matches are case insensitive.
 
-    Syntax: DoesOSMatch("*OSType*","*OSVersion*")
+    Syntax: `DoesOSMatch("OSType","OSVersion")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*OSType*|Yes|The only valid value for this setting is **NT**. Note, however, that you must set this setting for the &lt;condition&gt; functions to work correctly.|
     |*OSVersion*|Yes|The major version, minor version, build number and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. You can also specify partial specification of the version with a pattern. For example, `5.0.*`.|
 
-~~~
-For example:
+  For example:
 
-&lt;condition&gt;MigXmlHelper.DoesOSMatch("NT","\*")&lt;/condition&gt;
-~~~
+  ```xml
+  <condition>MigXmlHelper.DoesOSMatch("NT","\*")</condition>
+  ```
 
 -   **IsNative64Bit**
 
@@ -267,24 +276,24 @@ For example:
 
     All comparisons are case insensitive.
 
-    Syntax: IsOSLaterThan("*OSType*","*OSVersion*")
+    Syntax: `IsOSLaterThan("OSType","OSVersion")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*OSType*|Yes|Can be **9x** or **NT**. If *OSType* does not match the type of the current operating system, then it returns FALSE. For example, if the current operating system is Windows NT-based and *OSType* is "9x", the result will be FALSE.|
     |*OSVersion*|Yes|The major version, minor version, build number, and corrected service diskette version separated by periods. For example, `5.0.2600.Service Pack 1`. You can also specify partial specification of the version but no pattern is allowed. For example, `5.0`. <br/><br/>The IsOSLaterThan function returns TRUE if the current operating system is later than or equal to *OSVersion*.|
 
-~~~
-For example:
+  For example:
 
-&lt;condition negation="Yes"&gt;MigXmlHelper.IsOSLaterThan("NT","6.0")&lt;/condition&gt;
-~~~
+  ```xml
+  <condition negation="Yes">MigXmlHelper.IsOSLaterThan("NT","6.0")</condition>
+  ```
 
 -   **IsOSEarlierThan**
 
     All comparisons are case insensitive.
 
-    Syntax: IsOSEarlierThan("*OSType*","*OSVersion*")
+    Syntax: `IsOSEarlierThan("OSType","OSVersion")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -298,22 +307,20 @@ For example:
 
   The DoesObjectExist function returns TRUE if any object exists that matches the location pattern. Otherwise, it returns FALSE. The location pattern is expanded before attempting the enumeration.
 
-  Syntax: DoesObjectExist("*ObjectType*","*EncodedLocationPattern*")
+  Syntax: `DoesObjectExist("ObjectType","EncodedLocationPattern")`
 
    |Setting|Required?|Value|
    |--- |--- |--- |
    |*ObjectType*|Yes|Defines the object type. Can be File or Registry.|
    |*EncodedLocationPattern*|Yes|The [location pattern](#locations). Environment variables are allowed.|
 
-~~~
-For an example of this element, see the MigApp.xml file.
-~~~
+  For an example of this element, see the MigApp.xml file.
 
 - **DoesFileVersionMatch**
 
   The pattern check is case insensitive.
 
-  Syntax: DoesFileVersionMatch("*EncodedFileLocation*","*VersionTag*","*VersionValue*")
+  Syntax: `DoesFileVersionMatch("EncodedFileLocation","VersionTag","VersionValue")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -321,19 +328,17 @@ For an example of this element, see the MigApp.xml file.
     |*VersionTag*|Yes|The [version tag](#allowed) value that will be checked.|
     |*VersionValue*|Yes|A string pattern. For example, "Microsoft*".|
 
-~~~
-For example:
+  For example:
 
-&lt;condition&gt;MigXmlHelper.DoesFileVersionMatch("%MSNMessengerInstPath%\\msnmsgr.exe","ProductVersion","6.\*")&lt;/condition&gt;
-
-&lt;condition&gt;MigXmlHelper.DoesFileVersionMatch("%MSNMessengerInstPath%\\msnmsgr.exe","ProductVersion","7.\*")&lt;/condition&gt;
-~~~
+  ```xml
+  <condition>MigXmlHelper.DoesFileVersionMatch("%MSNMessengerInstPath%\\msnmsgr.exe","ProductVersion","6.\*")</condition>   <condition>MigXmlHelper.DoesFileVersionMatch("%MSNMessengerInstPath%\\msnmsgr.exe","ProductVersion","7.\*")</condition>
+  ```
 
 - **IsFileVersionAbove**
 
   The IsFileVersionAbove function returns TRUE if the version of the file is higher than *VersionValue*.
 
-  Syntax: IsFileVersionAbove("*EncodedFileLocation*","*VersionTag*","*VersionValue*")
+  Syntax: `IsFileVersionAbove("EncodedFileLocation","VersionTag","VersionValue")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -343,7 +348,7 @@ For example:
 
 - **IsFileVersionBelow**
 
-  Syntax: IsFileVersionBelow("*EncodedFileLocation*","*VersionTag*","*VersionValue*")
+  Syntax: `IsFileVersionBelow("EncodedFileLocation","VersionTag","VersionValue")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -355,13 +360,13 @@ For example:
 
   The IsSystemContext function returns TRUE if the current context is "System". Otherwise, it returns FALSE.
 
-  Syntax: IsSystemContext()
+  Syntax: `IsSystemContext()`
 
 - **DoesStringContentEqual**
 
   The DoesStringContentEqual function returns TRUE if the string representation of the given object is identical to `StringContent`.
 
-  Syntax: DoesStringContentEqual("*ObjectType*","*EncodedLocation*","*StringContent*")
+  Syntax: `DoesStringContentEqual("ObjectType","EncodedLocation","StringContent")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -369,19 +374,17 @@ For example:
     |*EncodedLocationPattern*|Yes|The [encoded location](#locations) for the object that will be examined. You can specify environment variables.|
     |StringContent|Yes|The string that will be checked against.|
 
-~~~
-For example:
+  For example:
 
-``` xml
-<condition negation="Yes">MigXmlHelper.DoesStringContentEqual("File","%USERNAME%","")</condition>
-```
-~~~
+  ```xml
+  <condition negation="Yes">MigXmlHelper.DoesStringContentEqual("File","%USERNAME%","")</condition>
+  ```
 
 - **DoesStringContentContain**
 
   The DoesStringContentContain function returns TRUE if there is at least one occurrence of *StrToFind* in the string representation of the object.
 
-  Syntax: DoesStringContentContain("*ObjectType*","*EncodedLocation*","*StrToFind*")
+  Syntax: `DoesStringContentContain("ObjectType","EncodedLocation","StrToFind")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -393,7 +396,7 @@ For example:
 
   The IsSameObject function returns TRUE if the given encoded locations resolve to the same physical object. Otherwise, it returns FALSE.
 
-  Syntax: IsSameObject("*ObjectType*","*EncodedLocation1*","*EncodedLocation2*")
+  Syntax: `IsSameObject("ObjectType","EncodedLocation1","EncodedLocation2")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -401,22 +404,20 @@ For example:
     |*EncodedLocation1*|Yes|The [encoded location](#locations) for the first object. You can specify environment variables.|
     |*EncodedLocation2*|Yes|The [encoded location](#locations) for the second object. You can specify environment variables.|
 
-~~~
-For example:
+  For example:
 
-``` xml
-<objectSet>
+  ```xml
+  <objectSet>
      <condition negation="Yes">MigXmlHelper.IsSameObject("File","%CSIDL_FAVORITES%","%CSIDL_COMMON_FAVORITES%")</condition>
      <pattern type="File">%CSIDL_FAVORITES%\* [*]</pattern>
-</objectSet>
-```
-~~~
+  </objectSet>
+  ```
 
 - **IsSameContent**
 
   The IsSameContent function returns TRUE if the given objects have the same content. Otherwise, it returns FALSE. The content will be compared byte by byte.
 
-  Syntax: IsSameContent("*ObjectType1*","*EncodedLocation1*","*ObjectType2*","*EncodedLocation2*")
+  Syntax: `IsSameContent("ObjectType1","EncodedLocation1","ObjectType2","EncodedLocation2")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -429,7 +430,7 @@ For example:
 
   The IsSameStringContent function returns TRUE if the given objects have the same content. Otherwise, it returns FALSE. The content will be interpreted as a string.
 
-  Syntax: IsSameStringContent("*ObjectType1*","*EncodedLocation1*","*ObjectType2*","*EncodedLocation2*")
+  Syntax: `IsSameStringContent("ObjectType1","EncodedLocation1","ObjectType2","EncodedLocation2")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -450,9 +451,10 @@ The &lt;conditions&gt; element returns a Boolean result that is used to specify 
 
 Syntax:
 
-&lt;conditions operation="AND|OR"&gt;
-
-&lt;/conditions&gt;
+```xml
+<conditions operation="AND|OR">
+</conditions>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -460,7 +462,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-``` xml
+```xml
 <environment name="GlobalEnv">
    <conditions>
       <condition negation="Yes">MigXmlHelper.IsNative64Bit()</condition>
@@ -485,9 +487,10 @@ You can use the &lt;content&gt; element to specify a list of object patterns to 
 
 Syntax:
 
-&lt;content filter="*ScriptInvocation*"&gt;
-
-&lt;/content&gt;
+```xml
+<content filter="ScriptInvocation">
+</content>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -501,26 +504,24 @@ The following functions generate patterns out of the content of an object. These
 
     If the registry value is a MULTI-SZ, only the first segment is processed. The returned pattern is the encoded location for a file that must exist on the system. If the specification is correct in the registry value, but the file does not exist, this function returns NULL.
 
-    Syntax: ExtractSingleFile(*Separators*,*PathHints*)
+    Syntax: `ExtractSingleFile(Separators,PathHints)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*Separators*|Yes|A list of possible separators that might follow the file specification in this registry value name. For example, if the content is "C:\Windows\Notepad.exe,-2", the separator is a comma. You can specify NULL.|
     |*PathHints*|Yes|A list of extra paths, separated by colons (;), where the function will look for a file matching the current content. For example, if the content is "Notepad.exe" and the path is the %Path% environment variable, the function will find Notepad.exe in %windir% and returns "c:\Windows [Notepad.exe]". You can specify NULL.|
 
-~~~
-For example:
+  For example:
 
-``` xml
-<content filter="MigXmlHelper.ExtractSingleFile(',','%system%')">
-```
+  ```xml
+  <content filter="MigXmlHelper.ExtractSingleFile(',','%system%')">
+  ```
 
-and
+  and
 
-``` xml
-<content filter="MigXmlHelper.ExtractSingleFile(NULL,'%CSIDL_COMMON_FONTS%')">
-```
-~~~
+  ```xml
+  <content filter="MigXmlHelper.ExtractSingleFile(NULL,'%CSIDL_COMMON_FONTS%')">
+  ```
 
 -   **ExtractMultipleFiles**
 
@@ -528,7 +529,7 @@ and
 
     The returned patterns are the encoded locations for files that must exist on the source computer. If the specification is correct in the registry value but the file does not exist, it will not be included in the resulting list.
 
-    Syntax: ExtractMultipleFiles(*Separators*,*PathHints*)
+    Syntax: `ExtractMultipleFiles(Separators,PathHints)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -539,7 +540,7 @@ and
 
     The ExtractDirectory function returns a pattern that is the encoded location for a directory that must exist on the source computer. If the specification is correct in the registry value, but the directory does not exist, this function returns NULL. If it is processing a registry value that is a MULTI-SZ, only the first segment will be processed.
 
-    Syntax: ExtractDirectory(*Separators*,*LevelsToTrim*,*PatternSuffix*)
+    Syntax: `ExtractDirectory(Separators,LevelsToTrim,PatternSuffix)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -547,19 +548,17 @@ and
     |*LevelsToTrim*|Yes|The number of levels to delete from the end of the directory specification. Use this function to extract a root directory when you have a registry value that points inside that root directory in a known location.|
     |*PatternSuffix*|Yes|The pattern to add to the directory specification. For example, `* [*]`.|
 
-~~~
-For example:
+  For example:
 
-``` xml
-<objectSet>
+  ```xml
+  <objectSet>
      <content filter='MigXmlHelper.ExtractDirectory (NULL, "1")'>
           <objectSet>
                <pattern type="Registry">%HklmWowSoftware%\Classes\Software\RealNetworks\Preferences\DT_Common []</pattern>
           </objectSet>
      </content>
-</objectSet>
-```
-~~~
+  </objectSet>
+  ```
 
 ## <a href="" id="contentmodify"></a>&lt;contentModify&gt;
 
@@ -575,9 +574,10 @@ The &lt;contentModify&gt; element modifies the content of an object before it is
 
 Syntax:
 
-&lt;contentModify script="*ScriptInvocation*"&gt;
-
-&lt;/contentModify&gt;
+```xml
+<contentModify script="ScriptInvocation">
+</contentModify>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -591,7 +591,7 @@ The following functions change the content of objects as they are migrated. Thes
 
     The ConvertToDWORD function converts the content of registry values that are enumerated by the parent &lt;ObjectSet&gt; element to a DWORD. For example, ConvertToDWORD will convert the string "1" to the DWORD 0x00000001. If the conversion fails, then the value of DefaultValueOnError will be applied.
 
-    Syntax: ConvertToDWORD(*DefaultValueOnError*)
+    Syntax: `ConvertToDWORD(DefaultValueOnError)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -601,35 +601,33 @@ The following functions change the content of objects as they are migrated. Thes
 
     The ConvertToString function converts the content of registry values that match the parent &lt;ObjectSet&gt; element to a string. For example, it will convert the DWORD 0x00000001 to the string "1". If the conversion fails, then the value of DefaultValueOnError will be applied.
 
-    Syntax: ConvertToString(*DefaultValueOnError*)
+    Syntax: `ConvertToString(DefaultValueOnError)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*DefaultValueOnError*|No|The value that will be written into the value name if the conversion fails. You can specify NULL, and 0 will be written if the conversion fails.|
 
-~~~
-For example:
+  For example:
 
-``` xml
-<contentModify script="MigXmlHelper.ConvertToString('1')">
+  ```xml
+  <contentModify script="MigXmlHelper.ConvertToString('1')">
      <objectSet>
           <pattern type="Registry">HKCU\Control Panel\Desktop [ScreenSaveUsePassword]</pattern>
      </objectSet>
-</contentModify>
-```
-~~~
+  </contentModify>
+  ```
 
 -   **ConvertToBinary**
 
     The ConvertToBinary function converts the content of registry values that match the parent &lt;ObjectSet&gt; element to a binary type.
 
-    Syntax: ConvertToBinary ()
+    Syntax: `ConvertToBinary ()`
 
 -   **OffsetValue**
 
     The OffsetValue function adds or subtracts *Value* from the value of the migrated object, and then writes the result back into the registry value on the destination computer. For example, if the migrated object is a DWORD with a value of 14, and the *Value* is "-2", the registry value will be 12 on the destination computer.
 
-    Syntax: OffsetValue(*Value*)
+    Syntax: `OffsetValue(Value)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -639,7 +637,7 @@ For example:
 
     The SetValueByTable function matches the value from the source computer to the source table. If the value is there, the equivalent value in the destination table will be applied. If the value is not there, or if the destination table has no equivalent value, the *DefaultValueOnError* will be applied.
 
-    Syntax: SetValueByTable(*SourceTable*,*DestinationTable*,*DefaultValueOnError*)
+    Syntax: `SetValueByTable(SourceTable,DestinationTable,DefaultValueOnError)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -651,7 +649,7 @@ For example:
 
     You can use the KeepExisting function when there are conflicts on the destination computer. This function will keep (not overwrite) the specified attributes for the object that is on the destination computer.
 
-    Syntax: KeepExisting("*OptionString*","*OptionString*","*OptionString*",…)
+    Syntax: `KeepExisting("OptionString","OptionString","OptionString",…)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -661,7 +659,7 @@ For example:
 
     The MergeMultiSzContent function merges the MULTI-SZ content of the registry values that are enumerated by the parent &lt;ObjectSet&gt; element with the content of the equivalent registry values that already exist on the destination computer. `Instruction` and `String` either remove or add content to the resulting MULTI-SZ. Duplicate elements will be removed.
 
-    Syntax: MergeMultiSzContent (*Instruction*,*String*,*Instruction*,*String*,…)
+    Syntax: `MergeMultiSzContent (Instruction,String,Instruction,String,…)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -672,7 +670,7 @@ For example:
 
     The MergeDelimitedContent function merges the content of the registry values that are enumerated by the parent &lt;ObjectSet&gt; element with the content of the equivalent registry values that already exist on the destination computer. The content is considered a list of elements separated by one of the characters in the Delimiters parameter. Duplicate elements will be removed.
 
-    Syntax: MergeDelimitedContent(*Delimiters*,*Instruction*,*String*,…)
+    Syntax: `MergeDelimitedContent(Delimiters,Instruction,String,…)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -692,7 +690,9 @@ The &lt;description&gt; element defines a description for the component but does
 
 Syntax:
 
-&lt;description&gt;*ComponentDescription*&lt;/description&gt;
+```xml
+<description>ComponentDescription</description>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -700,7 +700,7 @@ Syntax:
 
 The following code sample shows how the &lt;description&gt; element defines the "My custom component" description.:
 
-``` xml
+```xml
 <description>My custom component<description>
 ```
 
@@ -708,8 +708,8 @@ The following code sample shows how the &lt;description&gt; element defines the 
 
 The &lt;destinationCleanup&gt; element deletes objects, such as files and registry keys, from the destination computer before applying the objects from the source computer. This element is evaluated only when the LoadState tool is run on the destination computer. That is, this element is ignored by the ScanState tool.
 
-**Important**  
-Use this option with extreme caution because it will delete objects from the destination computer.
+> [!IMPORTANT]
+> Use this option with extreme caution because it will delete objects from the destination computer.
 
 
 
@@ -723,9 +723,10 @@ For each &lt;destinationCleanup&gt; element there can be multiple &lt;objectSet&
 
 Syntax:
 
-&lt;destinationCleanup filter=*ScriptInvocation*&gt;
-
-&lt;/destinationCleanup&gt;
+```xml
+<destinationCleanup filter=ScriptInvocation>
+</destinationCleanup>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -733,7 +734,7 @@ Syntax:
 
 For example:
 
-``` xml
+```xml
 <destinationCleanup>
    <objectSet>
       <pattern type="Registry">HKCU\Software\Lotus\123\99.0\DDE Preferences\* [*]</pattern>
@@ -760,9 +761,10 @@ For each &lt;detect&gt; element there can be multiple child &lt;condition&gt; or
 
 Syntax:
 
-&lt;detect name="*ID*" context="User|System|UserAndSystem"&gt;
-
-&lt;/detect&gt;
+```xml
+<detect name="ID" context="User|System|UserAndSystem">
+</detect>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -779,9 +781,10 @@ The &lt;detects&gt; element is a container for one or more &lt;detect&gt; elemen
 
 Syntax:
 
-&lt;detects name="*ID*" context="User|System|UserAndSystem"&gt;
-
-&lt;/detects&gt;
+```xml
+<detects name="ID" context="User|System|UserAndSystem">
+</detects>
+```
 
 -   **Number of occurrences:** Unlimited.
 
@@ -796,7 +799,7 @@ Syntax:
 
 The following example is from the MigApp.xml file.
 
-``` xml
+```xml
 <detects>
    <detect>
       <condition>MigXmlHelper.DoesFileVersionMatch("%Lotus123InstPath%\123w.exe","ProductVersion","9.*")</condition>
@@ -824,9 +827,10 @@ Use the &lt;detection&gt; element under the &lt;namedElements&gt; element if you
 
 Syntax:
 
-&lt;detection name="*ID*" context="User|System|UserAndSystem"&gt;
-
-&lt;/detection&gt;
+```xml
+<detection name="ID" context="User|System|UserAndSystem">
+</detection>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -835,7 +839,7 @@ Syntax:
 
 For example:
 
-``` xml
+```xml
 <detection name="AdobePhotoshopCS">
    <conditions>
       <condition>MigXmlHelper.DoesObjectExist("Registry","HKCU\Software\Adobe\Photoshop\8.0")</condition>
@@ -846,7 +850,7 @@ For example:
 
 and
 
-``` xml
+```xml
 <role role="Settings">
    <detection>
       <conditions>
@@ -869,7 +873,9 @@ The &lt;displayName&gt; element is a required field within each &lt;component&gt
 
 Syntax:
 
-&lt;displayName \_locID="*ID*"&gt;*ComponentName*&lt;/displayName&gt;
+```xml
+<displayName _locID="ID">ComponentName</displayName>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -878,7 +884,7 @@ Syntax:
 
 For example:
 
-``` xml
+```xml
 <displayName>Command Prompt settings</displayName>
 ```
 
@@ -896,9 +902,10 @@ The &lt;environment&gt; element is a container for &lt;variable&gt; elements in 
 
 Syntax:
 
-&lt;environment name="ID" context="User|System|UserAndSystem"&gt;
-
-&lt;/environment&gt;
+```xml
+<environment name="ID" context="User|System|UserAndSystem">
+</environment>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -911,7 +918,7 @@ Syntax:
 
 In this scenario, you want to generate the location of objects at run time depending on the configuration of the destination computer. For example, you must do this if an application writes data in the directory where it is installed, and users can install the application anywhere on the computer. If the application writes a registry value hklm\\software\\companyname\\install \[path\] and then updates this value with the location where the application is installed, then the only way for you to migrate the required data correctly is to define an environment variable. For example:
 
-``` xml
+```xml
 <environment>
    <variable name="INSTALLPATH">
       <script>MigXmlHelper.GetStringContent("Registry","\software\companyname\install [path]")</script>
@@ -921,7 +928,7 @@ In this scenario, you want to generate the location of objects at run time depen
 
 Then you can use an include rule as follows. You can use any of the [&lt;script&gt; functions](#scriptfunctions) to perform similar tasks.
 
-``` xml
+```xml
 <include>
    <objectSet>
       <pattern type="File">%INSTALLPATH%\ [*.xyz]</pattern>
@@ -931,7 +938,7 @@ Then you can use an include rule as follows. You can use any of the [&lt;script&
 
 Second, you can also filter registry values that contain data that you need. The following example extracts the first string (before the separator ",") in the value of the registry Hklm\\software\\companyname\\application\\ \[Path\].
 
-``` xml
+```xml
 <environment>
    <variable name="APPPATH">
         <objectSet>
@@ -949,7 +956,7 @@ Second, you can also filter registry values that contain data that you need. The
 
 In this scenario, you want to migrate five files named File1.txt, File2.txt, and so on, from %SYSTEMDRIVE%\\data\\userdata\\dir1\\dir2\\. To do this you must have the following &lt;include&gt; rule in an .xml file:
 
-``` xml
+```xml
 <include>
    <objectSet>
       <pattern type="File">%SYSTEMDRIVE%\data\userdata\dir1\dir2 [File1.txt]</pattern>
@@ -963,7 +970,7 @@ In this scenario, you want to migrate five files named File1.txt, File2.txt, and
 
 Instead of typing the path five times, you can create a variable for the location as follows:
 
-``` xml
+```xml
 <environment>
    <variable name="DATAPATH">
       <text>%SYSTEMDRIVE%\data\userdata\dir1\dir2 </text>
@@ -973,7 +980,7 @@ Instead of typing the path five times, you can create a variable for the locatio
 
 Then, you can specify the variable in an &lt;include&gt; rule as follows:
 
-``` xml
+```xml
 <include>
    <objectSet>
       <pattern type="File">%DATAPATH% [File1.txt]</pattern>
@@ -1000,9 +1007,10 @@ The &lt;exclude&gt; element determines what objects will not be migrated, unless
 
 Syntax:
 
-&lt;exclude filter="*ScriptInvocation*"&gt;
-
-&lt;/exclude&gt;
+```xml
+<exclude filter="ScriptInvocation">
+</exclude>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1011,7 +1019,7 @@ Syntax:
 
 For example, from the MigUser.xml file:
 
-``` xml
+```xml
 <exclude>
    <objectSet>
       <pattern type="File">%CSIDL_MYMUSIC%\* [*]</pattern>
@@ -1034,9 +1042,10 @@ You can use the &lt;excludeAttributes&gt; element to determine which parameters 
 
 Syntax:
 
-&lt;excludeAttributes attributes="Security|TimeFields|Security,TimeFields"&gt;
-
-&lt;/excludeAttributes&gt;
+```xml
+<excludeAttributes attributes="Security|TimeFields|Security,TimeFields">
+</excludeAttributes>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1044,7 +1053,7 @@ Syntax:
 
 Example:
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/miguser">
 <!-- This component migrates My Video files -->
    <component type="System" context="System">
@@ -1106,9 +1115,10 @@ The &lt;extensions&gt; element is a container for one or more &lt;extension&gt; 
 
 Syntax:
 
-&lt;extensions&gt;
-
-&lt;/extensions&gt;
+```xml
+<extensions>
+</extensions>
+```
 
 ## <a href="" id="extension"></a>&lt;extension&gt;
 
@@ -1123,7 +1133,9 @@ You can use the &lt;extension&gt; element to specify documents of a specific ext
 
 Syntax:
 
-&lt;extension&gt;*FilenameExtension*&lt;/extension&gt;
+```xml
+<extension>FilenameExtension</extension>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1131,7 +1143,7 @@ Syntax:
 
 For example, if you want to migrate all \*.doc files from the source computer, specifying the following code under the &lt;component&gt; element:
 
-``` xml
+```xml
 <extensions> 
         <extension>doc</extension> 
 <extensions> 
@@ -1139,7 +1151,7 @@ For example, if you want to migrate all \*.doc files from the source computer, s
 
 is the same as specifying the following code below the &lt;rules&gt; element:
 
-``` xml
+```xml
 <include> 
         <objectSet> 
                 <script>MigXmlHelper.GenerateDrivePatterns ("* [*.doc]", "Fixed")</script> 
@@ -1162,9 +1174,10 @@ You can use the &lt;externalProcess&gt; element to run a command line during the
 
 Syntax:
 
-&lt;externalProcess when="pre-scan|scan-success|post-scan|pre-apply|apply-success|post-apply"&gt;
-
-&lt;/externalProcess&gt;
+```xml
+<externalProcess when="pre-scan|scan-success|post-scan|pre-apply|apply-success|post-apply">
+</externalProcess>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1190,9 +1203,10 @@ The &lt;include&gt; element determines what to migrate, unless there is a more s
 
 Syntax:
 
-&lt;include filter="*ScriptInvocation*"&gt;
-
-&lt;/include&gt;
+```xml
+<include filter="ScriptInvocation">
+</include>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1200,7 +1214,7 @@ Syntax:
 
 The following example is from the MigUser.xml file:
 
-``` xml
+```xml
 <component type="Documents" context="User">
    <displayName _locID="miguser.myvideo">My Video</displayName>
       <paths>
@@ -1236,11 +1250,11 @@ The following functions return a Boolean value. You can use them to migrate cert
 
     This filter always returns FALSE.
 
-    Syntax: AnswerNo ()
+    Syntax: `AnswerNo ()`
 
 -   **CompareStringContent**
 
-    Syntax: CompareStringContent("*StringContent*","*CompareType*")
+    Syntax: `CompareStringContent("StringContent","CompareType")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -1251,11 +1265,11 @@ The following functions return a Boolean value. You can use them to migrate cert
 
     This filter screens out the .lnk files that point to an object that is not valid on the destination computer. Note that the screening takes place on the destination computer, so all .lnk files will be saved to the store during ScanState. Then they will be screened out when you run the LoadState tool.
 
-    Syntax: IgnoreIrrelevantLinks ()
+    Syntax: `IgnoreIrrelevantLinks ()`
 
     For example:
 
-    ``` xml
+    ```xml
     <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
          <objectSet>
               <pattern type="File">%CSIDL_COMMON_VIDEO%\* [*]</pattern>
@@ -1267,11 +1281,11 @@ The following functions return a Boolean value. You can use them to migrate cert
 
     You can use this function to collect the specified objects from the source computer but then not migrate the objects to the destination computer. When run with the ScanState tool, this function evaluates to TRUE. When run with the LoadState tool, this function evaluates to FALSE. You may want to use this function when you want to check an object's value on the destination computer but do not intend to migrate the object to the destination.
 
-    Syntax: NeverRestore()
+    Syntax: `NeverRestore()`
 
     In the following example, HKCU\\Control Panel\\International \[Locale\] will be included in the store, but it will not be migrated to the destination computer:
 
-    ``` xml
+    ```xml
     <include filter="MigXmlHelper.NeverRestore()">
        <objectSet>
           <pattern type="Registry">HKCU\Control Panel\International [Locale]</pattern>
@@ -1292,9 +1306,10 @@ You can use the &lt;includeAttributes&gt; element to determine whether certain p
 
 Syntax:
 
-&lt;includeAttributes attributes="Security|TimeFields|Security,TimeFields"&gt;
-
-&lt;/includeAttributes&gt;
+```xml
+<includeAttributes attributes="Security|TimeFields|Security,TimeFields">
+</includeAttributes>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1318,7 +1333,9 @@ The &lt;location&gt; element defines the location of the &lt;object&gt; element.
 
 Syntax:
 
-&lt;location type="*typeID*"&gt;*ObjectLocation*&lt;/location&gt;
+```xml
+<location type="typeID">ObjectLocation</location>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1327,7 +1344,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-``` xml
+```xml
 <addObjects>
    <object>
       <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [UpgradeVersion]</location>
@@ -1356,9 +1373,10 @@ You can use the &lt;locationModify&gt; element to change the location and name o
 
 Syntax:
 
-&lt;locationModify script="*ScriptInvocation*"&gt;
-
-&lt;/locationModify&gt;
+```xml
+<locationModify script="ScriptInvocation">
+</locationModify>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1366,7 +1384,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-``` xml
+```xml
 <locationModify script="MigXmlHelper.RelativeMove('%CSIDL_APPDATA%\Microsoft\Office','%CSIDL_APPDATA%')">
    <objectSet>
       <pattern type="File">%CSIDL_APPDATA%\Microsoft\Office\ [Access10.pip]</pattern>
@@ -1382,29 +1400,27 @@ The following functions change the location of objects as they are migrated when
 
   The ExactMove function moves all of the objects that are matched by the parent &lt;ObjectSet&gt; element into the given *ObjectEncodedLocation*. You can use this function when you want to move a single file to a different location on the destination computer. If the destination location is a node, all of the matching source objects will be written to the node without any subdirectories. If the destination location is a leaf, the migration engine will migrate all of the matching source objects to the same location. If a collision occurs, the normal collision algorithms will apply.
 
-  Syntax: ExactMove(*ObjectEncodedLocation*)
+  Syntax: `ExactMove(ObjectEncodedLocation)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*ObjectEncodedLocation*|Yes|The destination [location](#locations) for all of the source objects.|
 
-~~~
-For example:
+  For example:
 
-``` xml
-<locationModify script="MigXmlHelper.ExactMove('HKCU\Keyboard Layout\Toggle [HotKey]')">
+  ```xml
+  <locationModify script="MigXmlHelper.ExactMove('HKCU\Keyboard Layout\Toggle [HotKey]')">
      <objectSet>
           <pattern type="Registry">HKCU\Keyboard Layout\Toggle []</pattern>
      </objectSet>
-</locationModify>
-```
-~~~
+  </locationModify>
+  ```
 
 -   **Move**
 
     The Move function moves objects to a different location on the destination computer. In addition, this function creates subdirectories that were above the longest CSIDL in the source object name.
 
-    Syntax: Move(*DestinationRoot*)
+    Syntax: `Move(DestinationRoot)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -1414,17 +1430,16 @@ For example:
 
     You can use the RelativeMove function to collect and move data. Note that you can use environment variables in source and destination roots, but they may be defined differently on the source and destination computers.
 
-    Syntax: RelativeMove(*SourceRoot*,*DestinationRoot*)
+    Syntax: `RelativeMove(SourceRoot,DestinationRoot)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
     |*SourceRoot*|Yes|The location from where the objects will be moved. Any source objects that are enumerated by the parent &lt;ObjectSet&gt; element that are not in this location will not be moved.|
     |*DestinationRoot*|Yes|The location where the source objects will be moved to on the destination computer. If needed, this function will create any subdirectories that were above *SourceRoot*.|
 
-~~~
 For example:
 
-``` xml
+```xml
 <include>
    <objectSet>
       <pattern type="File">%CSIDL_COMMON_FAVORITES%\* [*]</pattern>
@@ -1436,7 +1451,6 @@ For example:
      </objectSet>
 </locationModify>
 ```
-~~~
 
 ## <a href="" id="locdefinition"></a>&lt;\_locDefinition&gt;
 
@@ -1456,7 +1470,9 @@ The &lt;manufacturer&gt; element defines the manufacturer for the component, but
 
 Syntax:
 
-&lt;manufacturer&gt;*Name*&lt;/manufacturer&gt;
+```xml
+<manufacturer>Name</manufacturer>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1478,9 +1494,10 @@ For an example of this element, see [Conflicts and Precedence](usmt-conflicts-an
 
 Syntax:
 
-&lt;merge script="*ScriptInvocation*"&gt;
-
-&lt;/merge&gt;
+```xml
+<merge script="ScriptInvocation">
+</merge>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1488,7 +1505,7 @@ Syntax:
 
 The following example is from the MigUser.xml file:
 
-``` xml
+```xml
 <rules>
    <include filter='MigXmlHelper.IgnoreIrrelevantLinks()'>
       <objectSet>
@@ -1513,7 +1530,7 @@ These functions control how collisions are resolved.
 
     For example:
 
-    ``` xml
+    ```xml
     <merge script="MigXmlHelper.DestinationPriority()">
          <objectSet>
               <pattern type="Registry">HKCU\Software\Microsoft\Office\9.0\PhotoDraw\ [MyPictures]</pattern>
@@ -1527,7 +1544,7 @@ These functions control how collisions are resolved.
 
     The FindFilePlaceByPattern function saves files with an incrementing counter when a collision occurs. It is a string that contains one of each constructs: &lt;F&gt;, &lt;E&gt;, &lt;N&gt; in any order.
 
-    Syntax: FindFilePlaceByPattern(*FilePattern*)
+    Syntax: `FindFilePlaceByPattern(FilePattern)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -1537,7 +1554,7 @@ These functions control how collisions are resolved.
 
     The NewestVersion function will resolve conflicts on the destination computer based on the version of the file.
 
-    Syntax: NewestVersion(*VersionTag*)
+    Syntax: `NewestVersion(VersionTag)`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -1557,7 +1574,7 @@ These functions control how collisions are resolved.
 
     For example:
 
-    ``` xml
+    ```xml
     <merge script="MigXmlHelper.SourcePriority()">
      <objectSet>
        <pattern type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Publisher [UpgradeVersion]</pattern>
@@ -1581,9 +1598,10 @@ The &lt;migration&gt; element is the single root element of a migration .xml fil
 
 Syntax:
 
-&lt;migration urlid="*UrlID/*Name"&gt;
-
-&lt;/migration&gt;
+```xml
+<migration urlid="*UrlID/*Name">
+</migration>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1592,7 +1610,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/migapp">
 </migration>
 ```
@@ -1607,7 +1625,7 @@ This filter helper function can be used to filter the migration of files based o
 |Operator|range, neq, lte, lt, eq, gte, gt|
 |valueToCompare|The value we are comparing. For example: <br/>Date: "2008/05/15-2005/05/17", "2008/05/15" <br/>Size: A numeral with B, KB, MB, or GB at the end. "5GB", "1KB-1MB"|
 
-``` xml
+```xml
 <component context="System"  type="Application">
 <displayName>File_size</displayName>
 <role role="Data">
@@ -1629,9 +1647,10 @@ You can use the **&lt;namedElements&gt;** element to define named elements. You 
 
 Syntax:
 
-&lt;namedElements&gt;
-
-&lt;/namedElements&gt;
+```xml
+<namedElements>
+</namedElements>
+```
 
 -   **Number of occurrences:** Unlimited
 
@@ -1655,13 +1674,14 @@ The &lt;object&gt; element represents a file or registry key.
 
 Syntax:
 
-&lt;object&gt;
-
-&lt;/object&gt;
+```xml
+<object>
+</object>
+```
 
 The following example is from the MigApp.xml file:
 
-``` xml
+```xml
 <addObjects>
    <object>
       <location type="Registry">%HklmWowSoftware%\Microsoft\Office\12.0\Common\Migration\Office [UpgradeVersion]</location>
@@ -1691,13 +1711,14 @@ The &lt;objectSet&gt; element contains a list of object patterns ; for example, 
 
 Syntax:
 
-&lt;objectSet&gt;
-
-&lt;/objectSet&gt;
+```xml
+<objectSet>
+</objectSet>
+```
 
 The following example is from the MigUser.xml file:
 
-``` xml
+```xml
 <component type="Documents" context="User">
    <displayName _locID="miguser.mymusic">My Music</displayName>
       <paths>
@@ -1740,7 +1761,7 @@ This is an internal USMT element. Do not use this element.
 
 You can use this element to specify multiple objects. You can specify multiple &lt;pattern&gt; elements for each &lt;objectSet&gt; element and they will be combined. If you are specifying files, you may want to use GenerateDrivePatterns with &lt;script&gt; instead. GenerateDrivePatterns is basically the same as a &lt;pattern&gt; rule, without the drive letter specification. For example, the following two lines of code are similar:
 
-``` xml
+```xml
 <pattern type="File">C:\Folder\* [Sample.doc]</pattern>
 <script>MigXmlHelper.GenerateDrivePatterns("\Folder\* [Sample.doc]","Fixed"</script>
 ```
@@ -1753,7 +1774,9 @@ You can use this element to specify multiple objects. You can specify multiple &
 
 Syntax:
 
-&lt;pattern type="*typeID*"&gt;*Path* \[*object*\]&lt;/pattern&gt;
+```xml
+<pattern type="typeID">Path [object]</pattern>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1764,13 +1787,13 @@ For example:
 
 -   To migrate a single registry key:
 
-    ``` xml
+    ```xml
     <pattern type="Registry">HKLM\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Cache [Persistent]</pattern>
     ```
 
 -   To migrate the EngineeringDrafts folder and any subfolders from the C: drive:
 
-    ``` xml
+    ```xml
     <pattern type="File">C:\EngineeringDrafts\* [*]</pattern>
     ```
 
@@ -1780,13 +1803,13 @@ For example:
 
 -   To migrate the Sample.doc file from C:\\EngineeringDrafts:
 
-    ``` xml
+    ```xml
     <pattern type="File"> C:\EngineeringDrafts\ [Sample.doc]</pattern>
     ```
 
 -   To migrate the Sample.doc file from where ever it exists on the C: drive use pattern in the following way. If multiple files exist with the same name on the C: drive, then all of these files will be migrated.
 
-    ``` xml
+    ```xml
     <pattern type="File"> C:\* [Sample.doc] </pattern>
     ```
 
@@ -1804,9 +1827,10 @@ You can use this element to run a script during a specific point within the migr
 
 Syntax:
 
-&lt;processing when="pre-scan|scan-success|post-scan|pre-apply|apply-success|post-apply"&gt;
-
-&lt;/processing&gt;
+```xml
+<processing when="pre-scan|scan-success|post-scan|pre-apply|apply-success|post-apply">
+</processing>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1830,9 +1854,10 @@ The &lt;role&gt; element is required in a custom .xml file. By specifying the &l
 
 Syntax:
 
-&lt;role role="Container|Binaries|Settings|Data"&gt;
-
-&lt;/role&gt;
+```xml
+<role role="Container|Binaries|Settings|Data">
+</role>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1840,7 +1865,7 @@ Syntax:
 
 The following example is from the MigUser.xml file. For more examples, see the MigApp.xml file:
 
-``` xml
+```xml
 <component type="System" context="User">
    <displayName _locID="miguser.startmenu">Start Menu</displayName>
    <paths>
@@ -1884,9 +1909,10 @@ The &lt;rules&gt; element is required in a custom .xml file. This element contai
 
 Syntax:
 
-&lt;rules name="*ID*" context="User|System|UserAndSystem"&gt;
-
-&lt;/rules&gt;
+```xml
+<rules name="ID" context="User|System|UserAndSystem">
+</rules>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -1895,7 +1921,7 @@ Syntax:
 
 The following example is from the MigUser.xml file:
 
-``` xml
+```xml
 <component type="Documents" context="User">
    <displayName _locID="miguser.mymusic">My Music</displayName>
       <paths>
@@ -1936,29 +1962,29 @@ The return value that is required by &lt;script&gt; depends on the parent elemen
 
 **Syntax and helper functions:**
 
--   General Syntax: &lt;script&gt;*ScriptWithArguments*&lt;/script&gt;
+-   General Syntax: `<script>ScriptWithArguments</script>`
 
 -   You can use [GetStringContent](#scriptfunctions) when &lt;script&gt; is within &lt;variable&gt;.
 
-    Syntax: &lt;script&gt;MigXmlHelper.GetStringContent("*ObjectType*","*EncodedLocationPattern*", "*ExpandContent*")&lt;/script&gt;
+    Syntax: `<script>MigXmlHelper.GetStringContent("ObjectType","EncodedLocationPattern", "ExpandContent")</script>`
 
     Example: `<script>MigXMLHelper.GetStringContent("Registry","HKLM\Software\MyApp\Installer [EXEPATH]")</script>`
 
 -   You can use [GenerateUserPatterns](#scriptfunctions) when &lt;script&gt; is within &lt;objectSet&gt;.
 
-    Syntax: &lt;script&gt;MigXmlHelper.GenerateUserPatterns("*ObjectType*","*EncodedLocationPattern*","*ProcessCurrentUser*")&lt;/script&gt;
+    Syntax: `<script>MigXmlHelper.GenerateUserPatterns("ObjectType","EncodedLocationPattern","ProcessCurrentUser")</script>`
 
     Example: `<script>MigXmlHelper.GenerateUserPatterns ("File","%USERPROFILE%\* [*.doc]", "FALSE")</script>`
 
 -   You can use [GenerateDrivePatterns](#scriptfunctions) when &lt;script&gt; is within &lt;objectSet&gt;.
 
-    Syntax: &lt;script&gt;MigXmlHelper.GenerateDrivePatterns("*PatternSegment*","*DriveType*")&lt;/script&gt;
+    Syntax: `<script>MigXmlHelper.GenerateDrivePatterns("PatternSegment","DriveType")</script>`
 
     Example: `<script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script>`
 
 -   You can use the [Simple executing scripts](#scriptfunctions) with &lt;script&gt; elements that are within &lt;processing&gt; elements: AskForLogoff, ConvertToShortFileName, KillExplorer, RemoveEmptyDirectories, RestartExplorer, RegisterFonts, StartService, StopService, SyncSCM.
 
-    Syntax: &lt;script&gt;MigXmlHelper.*ExecutingScript*&lt;/script&gt;
+    Syntax: `<script>MigXmlHelper.ExecutingScript</script>`
 
     Example: `<script>MigXmlHelper.KillExplorer()</script>`
 
@@ -1970,7 +1996,7 @@ Examples:
 
 To migrate the Sample.doc file from any drive on the source computer, use &lt;script&gt; as follows. If multiple files exist with the same name, all such files will get migrated.
 
-``` xml
+```xml
 <script>MigXmlHelper.GenerateDrivePatterns("* [sample.doc]", "Fixed")</script> 
 ```
 
@@ -1992,7 +2018,7 @@ These functions return either a string or a pattern.
 
     You can use GetStringContent with &lt;script&gt; elements that are within &lt;variable&gt; elements. If possible, this function returns the string representation of the given object. Otherwise, it returns NULL. For file objects this function always returns NULL.
 
-    Syntax: GetStringContent("*ObjectType*","*EncodedLocationPattern*", "*ExpandContent*")
+    Syntax: `GetStringContent("ObjectType","EncodedLocationPattern", "ExpandContent")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -2000,30 +2026,26 @@ These functions return either a string or a pattern.
     | *EncodedLocationPattern* | Yes | <ul><li>If type of object is Registry, EncodedLocationPattern must be a valid registry path. For example, HKLM\SOFTWARE\MyKey[].</li><li>If the type of object is Ini, then EncodedLocationPattern must be in the following format: <br/>IniFilePath&#124;SectionName[SettingName]</li></ul> |
     | *ExpandContent* | No (default=TRUE) | Can be TRUE or FALSE. If FALSE, then the given location will not be expanded before it is returned. |
 
-~~~
-For example:
+  For example:
 
-``` xml
-<variable name="MSNMessengerInstPath">
-<script>MigXmlHelper.GetStringContent("Registry","%HklmWowSoftware%\Microsoft\MSNMessenger [InstallationDirectory]")</script>
-</variable>
-```
-~~~
+  ```xml
+  <variable name="MSNMessengerInstPath">
+  <script>MigXmlHelper.GetStringContent("Registry","%HklmWowSoftware%\Microsoft\MSNMessenger [InstallationDirectory]")</script>
+  </variable>
+  ```
 
 - **GenerateDrivePatterns**
 
   The GenerateDrivePatterns function will iterate all of the available drives and select the ones that match the requested drive type. It will then concatenate the selected drives with the end part of *PatternSegment* to form a full encoded file pattern. For example, if *PatternSegment* is `Path [file.txt]` and DriveType is `Fixed`, then the function will generate `C:\Path [file.txt]`, and other patterns if there are fixed drives other than C:. You cannot specify environment variables with this function. You can use GenerateDrivePatterns with &lt;script&gt; elements that are within [&lt;objectSet&gt;](#objectset) that are within &lt;include&gt;/&lt;exclude&gt;.
 
-  Syntax: GenerateDrivePatterns("*PatternSegment*","*DriveType*")
+  Syntax: `GenerateDrivePatterns("PatternSegment","DriveType")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
     | *PatternSegment* | Yes | The suffix of an encoded pattern. It will be concatenated with a drive specification, such as &quot;c:&quot;, to form a complete [encoded file pattern](#locations). For example, &quot;* [*.doc]&quot;. *PatternSegment* cannot be an environment variable. |
     | *DriveType* | Yes | The drive type for which the patterns are to be generated. You can specify one of: <ul><li>Fixed</li><li>CDROM</li><li>Removable</li><li>Remote</li></ul> |
 
-~~~
-See the last component in the MigUser.xml file for an example of this element.
-~~~
+  See the last component in the MigUser.xml file for an example of this element.
 
 - **GenerateUserPatterns**
 
@@ -2035,7 +2057,7 @@ See the last component in the MigUser.xml file for an example of this element.
 
   -   "C:\\Documents and Settings\\C\\\* \[\*.doc\]"
 
-  Syntax:GenerateUserPatterns("*ObjectType*","*EncodedLocationPattern*","*ProcessCurrentUser*")
+  Syntax: `GenerateUserPatterns("ObjectType","EncodedLocationPattern","ProcessCurrentUser")`
 
     |Setting|Required?|Value|
     |--- |--- |--- |
@@ -2043,14 +2065,13 @@ See the last component in the MigUser.xml file for an example of this element.
     |*EncodedLocationPattern*|Yes|The [location pattern](#locations). Environment variables are allowed.|
     |*ProcessCurrentUser*|Yes|Can be TRUE or FALSE. Indicates if the patterns should be generated for the current user.|
 
-~~~
 **Example:**
 
 If GenerateUserPattens('File','%userprofile% \[\*.doc\]','FALSE') is called while USMT is processing user A, then this function will only generate patterns for users B and C. You can use this helper function to build complex rules. For example, to migrate all .doc files from the source computer — but if user X is not migrated, then do not migrate any of the .doc files from user X's profile.
 
 The following is example code for this scenario. The first &lt;rules&gt; element migrates all.doc files on the source computer with the exception of those inside C:\\Documents and Settings. The second &lt;rules&gt; elements will migrate all .doc files from C:\\Documents and Settings with the exception of the .doc files in the profiles of the other users. Because the second &lt;rules&gt; element will be processed in each migrated user context, the end result will be the desired behavior. The end result is the one we expected.
 
-``` xml
+```xml
 <rules context="System">
   <include>
     <objectSet>
@@ -2076,7 +2097,6 @@ The following is example code for this scenario. The first &lt;rules&gt; element
   </exclude>
 </rules>
 ```
-~~~
 
 ### MigXmlHelper.GenerateDocPatterns
 
@@ -2088,7 +2108,7 @@ This helper function invokes the document finder to scan the system for all file
 |*IncludePatterns*|No (default = TRUE)|Can be TRUE or FALSE. TRUE will generate include patterns and can be added under the &lt;include&gt; element. FALSE will generate exclude patterns and can be added under the &lt;exclude&gt; element.|
 |*SystemDrive*|No (default = FALSE)|Can be TRUE or FALSE. If TRUE, restricts all patterns to the system drive.|
 
-``` xml
+```xml
  <!-- This component migrates data in user context -->
   <component type="Documents" context="User">
     <displayName>MigDocUser</displayName>
@@ -2115,39 +2135,39 @@ The following scripts have no return value. You can use the following errors wit
 
 -   **AskForLogoff()**. Prompts the user to log off at the end of the migration. For example:
 
-    ``` xml
-         <processing when="apply-success">
-              <script>MigXmlHelper.AskForLogoff()</script>
-         </processing>
-    ```
+  ```xml
+  <processing when="apply-success">
+    <script>MigXmlHelper.AskForLogoff()</script>
+  </processing>
+  ```
 
 -   **ConvertToShortFileName(RegistryEncodedLocation)**. If *RegistryEncodedLocation* is the full path of an existing file, this function will convert the file to its short file name and then it will update the registry value.
 
 -   **KillExplorer()**. Stops Explorer.exe for the current user context. This allows access to certain keys and files that are kept open when Explorer.exe is running. For example:
 
-    ``` xml
-         <processing when="pre-apply">
-              <script>MigXmlHelper.KillExplorer()</script>
-         </processing>
-    ```
+  ```xml
+  <processing when="pre-apply">
+    <script>MigXmlHelper.KillExplorer()</script>
+  </processing>
+  ```
 
 -   **RegisterFonts(FileEncodedLocation)**. Registers the given font or all of the fonts in the given directory. For example:
 
-    ``` xml
-    <processing when="apply-success">
+ ```xml
+  <processing when="apply-success">
     <script>MigXmlHelper.RegisterFonts("%CSIDL_COMMON_FONTS%")</script>
-    </processing>
-    ```
+  </processing>
+  ```
 
 -   **RemoveEmptyDirectories (DirectoryEncodedPattern).** Deletes any empty directories that match *DirectoryEncodedPattern* on the destination computer.
 
 -   **RestartExplorer().** Restarts Explorer.exe at the end of the migration. For example:
 
-    ``` xml
-         <processing when="post-apply">
-              <script>MigXmlHelper.RestartExplorer()</script>
-         </processing>
-    ```
+  ```xml
+  <processing when="post-apply">
+    <script>MigXmlHelper.RestartExplorer()</script>
+  </processing>
+  ```
 
 -   **StartService (ServiceName, OptionalParam1, OptionalParam2,…).** Starts the service identified by *ServiceName. ServiceName* is the subkey in HKLM\\System\\CurrentControlSet\\Services that holds the data for the given service. The optional parameters, if any, will be passed to the StartService API. For more information, see [this Microsoft Web site](/windows/win32/api/winsvc/nf-winsvc-startservicea).
 
@@ -2168,7 +2188,9 @@ You can use the &lt;text&gt; element to set a value for any environment variable
 
 Syntax:
 
-&lt;text&gt;*NormalText*&lt;/text&gt;
+```xml
+<text>NormalText</text>
+```
 
 |Setting|Value|
 |--- |--- |
@@ -2176,7 +2198,7 @@ Syntax:
 
 For example:
 
-``` xml
+```xml
 <variable name="QuickTime5or6DataSys">
   <text>%CSIDL_COMMON_APPDATA%\QuickTime</text> 
 </variable>
@@ -2197,11 +2219,13 @@ Use this element if you want to exclude all .mp3 files from the source computer.
 
 Syntax:
 
-&lt;unconditionalExclude&gt;&lt;/unconditionalExclude&gt;
+```xml
+<unconditionalExclude></unconditionalExclude>
+```
 
 The following .xml file excludes all .mp3 files from migration. For additional examples of how to use this element, see the [Exclude Files and Settings](usmt-exclude-files-and-settings.md).
 
-``` xml
+```xml
 <migration urlid="http://www.microsoft.com/migration/1.0/migxmlext/excludefiles">
   <component context="System" type="Documents">
         <displayName>Test</displayName>
@@ -2237,9 +2261,10 @@ The &lt;variable&gt; element is required in an &lt;environment&gt; element. For 
 
 Syntax:
 
-&lt;variable name="*ID*" remap=TRUE|FALSE&gt;
-
-&lt;/variable&gt;
+```xml
+<variable name="ID" remap=TRUE|FALSE>
+</variable>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -2248,7 +2273,7 @@ Syntax:
 
 The following example is from the MigApp.xml file:
 
-``` xml
+```xml
 <environment>
    <variable name="HklmWowSoftware">
       <text>HKLM\Software</text>
@@ -2272,7 +2297,9 @@ The &lt;version&gt; element defines the version for the component, but does not 
 
 Syntax:
 
-&lt;version&gt;*ComponentVersion*&lt;/version&gt;
+```xml
+<version>ComponentVersion</version>
+```
 
 |Setting|Required?|Value|
 |--- |--- |--- |
@@ -2280,7 +2307,7 @@ Syntax:
 
 For example:
 
-``` xml
+```xml
 <version>4.*</version>
 ```
 
