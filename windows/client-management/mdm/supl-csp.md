@@ -16,21 +16,30 @@ ms.date: 09/12/2019
 
 The SUPL configuration service provider is used to configure the location client, as shown in the following table:
 
-|Location Service|SUPL|V2 UPL|
-|--- |--- |--- |
-|Connection type|All connections other than CDMA|CDMA|
-|Configuration|<li>Settings that need to get pushed to the GNSS driver to configure the SUPL behavior<ul><li>Address of the Home SUPL (H-SLP) server.<li>H-SLP server certificate.<li>Positioning method.<li>Version of the protocol to use by default.</ul><li>MCC/MNC value pairs which are used to specify which networks' UUIC the SUPL account matches.|<li>Address of the server — a mobile positioning center for non-trusted mode.<li>The positioning method used by the MPC for non-trusted mode.|
- 
+- **Location Service**: Connection type
+  - **SUPL**: All connections other than CDMA
+  - **V2 UPL**: CDMA
+
+- **Location Service**: Configuration
+  - **SUPL**: 
+    - Settings that need to get pushed to the GNSS driver to configure the SUPL behavior:
+      - Address of the Home SUPL (H-SLP) server.
+      - H-SLP server certificate.
+      - Positioning method.
+      - Version of the protocol to use by default.
+    - MCC/MNC value pairs which are used to specify which networks' UUIC the SUPL account matches.
+  - **V2 UPL**: 
+    - Address of the server — a mobile positioning center for non-trusted mode.
+    - The positioning method used by the MPC for non-trusted mode.
 
 The SUPL or V2 UPL connection will be reconfigured every time the device is rebooted, a new UICC is inserted, or new settings are provisioned by using OMA Client Provisioning, OMA DM, or test tools. When the device is in roaming mode, it reverts to Mobile Station Standalone mode, in which only the built–in Microsoft location components are used.
 
 The following shows the SUPL configuration service provider management object in tree format as used by OMA DM and OMA Client Provisioning.
 
-> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application.
+> [!NOTE]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION capability to be accessed from a network configuration application. 
 
- 
-
-```
+```console
 ./Vendor/MSFT/
 SUPL
 ----SUPL1
@@ -62,6 +71,7 @@ SUPL
 --------NIDefaultTimeout 
 --------ServerAccessInterval
 ```
+
 <a href="" id="supl1"></a>**SUPL1**  
 Required for SUPL. Defines the account for the SUPL Enabled Terminal (SET) node. Only one SUPL account is supported at a given time.
 
@@ -104,7 +114,8 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 
 The default is 0. The default method in Windows devices provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator’s network or location services.
 
-> **Important**   The Mobile Station Assisted, OTDOA, and AFLT positioning methods must only be configured for test purposes.
+> [!IMPORTANT]
+> The Mobile Station Assisted, OTDOA, and AFLT positioning methods must only be configured for test purposes.
 
  
 
@@ -223,7 +234,8 @@ Optional. Specifies the positioning method that the SUPL client will use for mob
 
 The default is 0. The default method provides high-quality assisted GNSS positioning for mobile originated position requests without loading the mobile operator’s network or location services.
 
->  **Important**   The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes.
+> [!IMPORTANT]
+> The Mobile Station Assisted and AFLT positioning methods must only be configured for test purposes.
 
  
 
@@ -430,9 +442,7 @@ The following table shows the Microsoft custom elements that this configuration 
 |Elements|Available|
 |--- |--- |
 |parm-query|Yes|
-|characteristic-query|Yes
-Recursive query: No
-Top level query: No|
+|characteristic-query|Yes <br/><br/>Recursive query: No<br/><br/>Top level query: No|
 
  
 ## Related topics
