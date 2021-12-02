@@ -186,7 +186,7 @@ You can use multiple XML files with the ScanState and LoadState tools. Each of t
 
 For example, you can use all of the XML migration file types for a single migration, as in the following example:
 
-```cmd
+```console
 Scanstate <store> /config:c:\myFolder\config.xml /i:migapps.xml /i:migdocs.xml /i:customrules.xml
 ```
 
@@ -214,14 +214,14 @@ To generate the XML migration rules file for a source computer:
 
 3.  At the command prompt, type:
 
-    ```cmd
+    ```console
     cd /d <USMTpath>
     scanstate.exe /genmigxml: <filepath.xml>
     ```
 
     Where *&lt;USMTpath&gt;* is the location on your source computer where you have saved the USMT files and tools, and *&lt;filepath.xml&gt;* is the full path to a file where you can save the report. For example, type:
 
-    ```cmd
+    ```console
     cd /d c:\USMT
     scanstate.exe /genmigxml:"C:\Documents and Settings\USMT Tester\Desktop\genMig.xml"
     ```
@@ -250,7 +250,7 @@ The MigDocs.xml file calls the **GenerateDocPatterns** function, which takes thr
 
 **Usage:**
 
-```cmd
+```console
 MigXmlHelper.GenerateDocPatterns ("<ScanProgramFiles>", "<IncludePatterns>", "<SystemDrive>")
 ```
 

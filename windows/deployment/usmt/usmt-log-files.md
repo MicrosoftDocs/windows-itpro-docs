@@ -107,7 +107,7 @@ The following examples describe common scenarios in which you can use the diagno
 
 Let's imagine that we have the following directory structure and that we want the "data" directory to be included in the migration along with the "New Text Document.txt" file in the "New Folder." The directory of **C:\\data** contains:
 
-```
+```console
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM    <DIR>          New Folder
@@ -118,7 +118,7 @@ Let's imagine that we have the following directory structure and that we want th
 
 The directory of **C:\\data\\New Folder** contains:
 
-```
+```console
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM                 0 New Text Document.txt
@@ -149,7 +149,7 @@ To migrate these files you author the following migration XML:
 
 However, upon testing the migration you notice that the "New Text Document.txt" file isn't included in the migration. To troubleshoot this failure, the migration can be repeated with the environment variable MIG\_ENABLE\_DIAG set such that the diagnostic log is generated. Upon searching the diagnostic log for the component "DATA1", the following XML section is discovered:
 
-``` xml
+```xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">
@@ -170,13 +170,13 @@ Analysis of this XML section reveals the migunit that was created when the migra
 
 An analysis of the XML elements reference topic reveals that the &lt;pattern&gt; tag needs to be modified as follows:
 
-``` xml
+```xml
 <pattern type="File">c:\data\* [*]</pattern>
 ```
 
 When the migration is preformed again with the modified tag, the diagnostic log reveals the following:
 
-``` xml
+```xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">
@@ -201,7 +201,7 @@ This diagnostic log confirms that the modified &lt;pattern&gt; value enables the
 
 In this scenario, you have the following directory structure and you want all files in the "data" directory to migrate, except for text files. The **C:\\Data** folder contains:
 
-```
+```console
 Directory of C:\Data
 
 01/21/2009  10:08 PM    <DIR>          .
@@ -214,7 +214,7 @@ Directory of C:\Data
 
 The **C:\\Data\\New Folder\\** contains:
 
-```
+```console
 01/21/2009  10:08 PM    <DIR>          .
 01/21/2009  10:08 PM    <DIR>          ..
 01/21/2009  10:08 PM                 0 New Text Document.txt
@@ -251,7 +251,7 @@ You author the following migration XML:
 
 However, upon testing the migration you notice that all the text files are still included in the migration. In order to troubleshoot this issue, the migration can be performed with the environment variable MIG\_ENABLE\_DIAG set so that the diagnostic log is generated. Upon searching the diagnostic log for the component "DATA1", the following XML section is discovered:
 
-``` xml
+```xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">
@@ -308,7 +308,7 @@ Upon reviewing the diagnostic log, you confirm that the files are still migratin
 
 Your revised migration XML script excludes the files from migrating, as confirmed in the diagnostic log:
 
-``` xml
+```xml
 <MigUnitList>
 <MigUnit Name="&lt;System&gt;\DATA1 (CMXEAgent)" Context="System" ConfidenceLevel="100" Group="Applications" Role="UserData" Agent="CMXEAgent" Selected="true" Supported="true">
 <Patterns Type="Include">
@@ -337,12 +337,4 @@ Your revised migration XML script excludes the files from migrating, as confirme
 [ScanState Syntax](usmt-scanstate-syntax.md)
 
 [LoadState Syntax](usmt-loadstate-syntax.md)
-
- 
-
- 
-
-
-
-
 
