@@ -10,12 +10,12 @@ audience: itpro
 author: greg-lindsay
 ms.author: greglin
 ms.date: 02/13/2018
-ms.reviewer:
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
 ms.localizationpriority: medium
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # MBR2GPT.EXE

@@ -10,9 +10,10 @@ audience: ITPro
 author: dansimp
 ms.author: v-tea
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
-ms.reviewer: 
 ms.custom: 
   - CI 120967
   - CSSTroubleshooting

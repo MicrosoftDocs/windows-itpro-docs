@@ -10,6 +10,7 @@ ms.author: delhan
 ms.date: 8/28/2019
 ms.reviewer: dcscontentpm
 manager: dansimp
+ms.collection: highpri
 ---
 
 # How to determine the appropriate page file size for 64-bit versions of Windows

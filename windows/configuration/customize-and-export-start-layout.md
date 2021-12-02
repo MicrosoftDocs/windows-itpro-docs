@@ -13,6 +13,7 @@ ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/18/2018
+ms.collection: highpri
 ---
 
 # Customize and export Start layout
