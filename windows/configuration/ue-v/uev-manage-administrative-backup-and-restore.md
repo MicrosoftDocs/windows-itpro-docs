@@ -114,7 +114,7 @@ WMI and Windows PowerShell commands let you restore application and Windows sett
 
      |**Windows PowerShell cmdlet**|**Description**|
      |--- |--- |
-     |`Restore-UevUserSetting` -|Restores the user settings for an application or restores a group of Windows settings.|
+     |`Restore-UevUserSetting -<TemplateID>` |Restores the user settings for an application or restores a group of Windows settings.|
    
 **To restore application settings and Windows settings with WMI**
 
