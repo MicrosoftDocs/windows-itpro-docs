@@ -131,7 +131,7 @@ $DenyRules += New-CIPolicyRule -Level FileName -DriverFilePath <binary_to_block>
  New-CIPolicyRule -Level FileName -DriverFilePath <binary_to_block> -Deny -Fallback Hash
  ```
 
- ### Adding Allow All Rules
+### Adding Allow All Rules
 If required, as in the cases listed above, [Allow All rules](48) may need to be added to the policy. The Allow All rules can be manually added to the policy xml or by merging with the AllowAll xml present on the client system in the WDAC template folder: 
 
 ```PowerShell
