@@ -336,49 +336,13 @@ For more information on device health attestation, see the [Detect an unhealthy 
 
 The following table details the hardware requirements for both virtualization-based security services and the health attestation feature. For more information, see [Minimum hardware requirements](/windows-hardware/design/minimum/minimum-hardware-requirements-overview).
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Hardware</th>
-<th align="left">Motivation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>UEFI 2.3.1 or later firmware with Secure Boot enabled</p></td>
-<td align="left"><p>Required to support UEFI Secure Boot.</p>
-<p>UEFI Secure Boot ensures that the device boots only authorized code.</p>
-<p>Additionally, Boot Integrity (Platform Secure Boot) must be supported following the requirements in Hardware Compatibility Specification for Systems for Windows 10 under the subsection: “System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby”</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Virtualization extensions, such as Intel VT-x, AMD-V, and SLAT must be enabled</p></td>
-<td align="left"><p>Required to support virtualization-based security.</p>
-<div class="alert">
-<b>Note</b><br/><p>Device Guard can be enabled without using virtualization-based security.</p>
-</div>
-<div>
-
-</div></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>X64 processor</p></td>
-<td align="left"><p>Required to support virtualization-based security that uses Windows Hypervisor. Hyper-V is supported only on x64 processor (and not on x86).</p>
-<p>Direct Memory Access (DMA) protection can be enabled to provide additional memory protection but requires processors to include DMA protection technologies.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IOMMU, such as Intel VT-d, AMD-Vi</p></td>
-<td align="left"><p>Support for the IOMMU in Windows 10 enhances system resiliency against DMA attacks.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Trusted Platform Module (TPM) </p></td>
-<td align="left"><p>Required to support health attestation and necessary for additional key protections for virtualization-based security. TPM 2.0 is supported. Support for TPM 1.2 was added beginning in Windows 10, version 1607 (RS1)</p></td>
-</tr>
-</tbody>
-</table>
+|Hardware|Motivation|
+|--- |--- |
+|UEFI 2.3.1 or later firmware with Secure Boot enabled|Required to support UEFI Secure Boot.<p>UEFI Secure Boot ensures that the device boots only authorized code.<p>Additionally, Boot Integrity (Platform Secure Boot) must be supported following the requirements in Hardware Compatibility Specification for Systems for Windows 10 under the subsection: “System.Fundamentals.Firmware.CS.UEFISecureBoot.ConnectedStandby”|
+|Virtualization extensions, such as Intel VT-x, AMD-V, and SLAT must be enabled|Required to support virtualization-based security.<div class="alert">**Note:** Device Guard can be enabled without using virtualization-based security.</div>|
+|X64 processor|Required to support virtualization-based security that uses Windows Hypervisor. Hyper-V is supported only on x64 processor (and not on x86).<p>Direct Memory Access (DMA) protection can be enabled to provide additional memory protection but requires processors to include DMA protection technologies.|
+|IOMMU, such as Intel VT-d, AMD-Vi|Support for the IOMMU in Windows 10 enhances system resiliency against DMA attacks.|
+|Trusted Platform Module (TPM)|Required to support health attestation and necessary for additional key protections for virtualization-based security. TPM 2.0 is supported. Support for TPM 1.2 was added beginning in Windows 10, version 1607 (RS1)|
 
 This section presented information about several closely related controls in Windows 10. The multi-layer defenses and in-depth approach helps to eradicate low-level malware during boot sequence. Virtualization-based security is a fundamental operating system architecture change that adds a new security boundary. Device Guard and Credential Guard respectively help to block untrusted code and protect corporate domain credentials from theft and reuse. This section also briefly discussed the importance of managing devices and patching vulnerabilities. All these technologies can be used to harden and lock down devices while limiting the risk of attackers compromising them.
 
@@ -591,36 +555,9 @@ For completeness of the measurements, see [Health Attestation CSP](/windows/clie
 
 The following table presents some key items that can be reported back to MDM depending on the type of Windows 10-based device.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">OS type</th>
-<th align="left">Key items that can be reported</th>
-</tr>
-</thead>
-<tbody>
-
-<tr class="even">
-<td align="left"><p>Windows 10 for desktop editions</p></td>
-<td align="left"><ul>
-<li><p>PCR0 measurement</p></li>
-<li><p>Secure Boot Enabled</p></li>
-<li><p>Secure Boot db matches Expected</p></li>
-<li><p>Secure Boot dbx is up to date</p></li>
-<li><p>Secure Boot policy GUID matches Expected</p></li>
-<li><p>BitLocker enabled</p></li>
-<li><p>Virtualization-based security enabled</p></li>
-<li><p>ELAM was loaded</p></li>
-<li><p>Code Integrity version is up to date</p></li>
-<li><p>Code Integrity policy hash matches Expected</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+|OS type|Key items that can be reported|
+|--- |--- |
+|Windows 10 for desktop editions|<li>PCR0 measurement<li>Secure Boot Enabled<li>Secure Boot db matches Expected<li>Secure Boot dbx is up to date<li>Secure Boot policy GUID matches Expected<li>BitLocker enabled<li>Virtualization-based security enabled<li>ELAM was loaded<li>Code Integrity version is up to date<li>Code Integrity policy hash matches Expected|
 
 ### Leverage MDM and the Health Attestation Service
 

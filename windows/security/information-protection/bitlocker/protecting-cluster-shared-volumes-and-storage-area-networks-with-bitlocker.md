@@ -160,110 +160,23 @@ Unlike CSV2.0 volumes, physical disk resources can only be accessed by one clust
 
 The following table contains information about both Physical Disk Resources (that is, traditional failover cluster volumes) and Cluster Shared Volumes (CSV) and the actions that are allowed by BitLocker in each situation.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><b>Action</b></p></td>
-<td align="left"><p><b>On owner node of failover volume</b></p></td>
-<td align="left"><p><b>On Metadata Server (MDS) of CSV</b></p></td>
-<td align="left"><p><b>On (Data Server) DS of CSV</b></p></td>
-<td align="left"><p><b>Maintenance Mode</b></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Manage-bde –on</b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Manage-bde –off</b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Manage-bde Pause/Resume</b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked<b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Manage-bde –lock</b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>manage-bde –wipe</b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Unlock</b></p></td>
-<td align="left"><p>Automatic via cluster service</p></td>
-<td align="left"><p>Automatic via cluster service</p></td>
-<td align="left"><p>Automatic via cluster service</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>manage-bde –protector –add</b></p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>manage-bde -protector -delete</b></p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>manage-bde –autounlock</b></p></td>
-<td align="left"><p>Allowed (not recommended)</p></td>
-<td align="left"><p>Allowed (not recommended)</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed (not recommended)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Manage-bde -upgrade</b></p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Shrink</b></p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Extend</b></p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-</tbody>
-</table>
- 
-&gt;</b>Note:**  Although the manage-bde -pause command is Blocked in clusters, the cluster service will automatically resume a paused encryption or decryption from the MDS node
+|**Action**|**On owner node of failover volume**|**On Metadata Server (MDS) of CSV**|**On (Data Server) DS of CSV**|**Maintenance Mode**|
+|--- |--- |--- |--- |--- |
+|**Manage-bde –on**|Blocked|Blocked|Blocked|Allowed|
+|**Manage-bde –off**|Blocked|Blocked|Blocked|Allowed|
+|**Manage-bde Pause/Resume**|Blocked|Blocked**|Blocked|Allowed|
+|**Manage-bde –lock**|Blocked|Blocked|Blocked|Allowed|
+|**manage-bde –wipe**|Blocked|Blocked|Blocked|Allowed|
+|**Unlock**|Automatic via cluster service|Automatic via cluster service|Automatic via cluster service|Allowed|
+|**manage-bde –protector –add**|Allowed|Allowed|Blocked|Allowed|
+|**manage-bde -protector -delete**|Allowed|Allowed|Blocked|Allowed|
+|**manage-bde –autounlock**|Allowed (not recommended)|Allowed (not recommended)|Blocked|Allowed (not recommended)|
+|**Manage-bde -upgrade**|Allowed|Allowed|Blocked|Allowed|
+|**Shrink**|Allowed|Allowed|Blocked|Allowed|
+|**Extend**|Allowed|Allowed|Blocked|Allowed|
+
+>[!NOTE]
+> Although the manage-bde -pause command is Blocked in clusters, the cluster service will automatically resume a paused encryption or decryption from the MDS node
  
 In the case where a physical disk resource experiences a failover event during conversion, the new owning node will detect the conversion is not complete and will complete the conversion process.
 

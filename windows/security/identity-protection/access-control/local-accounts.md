@@ -139,53 +139,16 @@ For details about the HelpAssistant account attributes, see the following table.
 
 **HelpAssistant account attributes**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-13 (Terminal Server User), S-1-5-&lt;domain&gt;-14 (Remote Interactive Logon)</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p>User</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p>Domain Guests</p>
-<p>Guests</p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Can be moved out, but we do not recommend it.</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
+|Attribute|Value|
+|--- |--- |
+|Well-Known SID/RID|S-1-5-<domain>-13 (Terminal Server User), S-1-5-<domain>-14 (Remote Interactive Logon)|
+|Type|User|
+|Default container|CN=Users, DC=<domain>, DC=|
+|Default members|None|
+|Default member of|Domain Guests<p>Guests|
+|Protected by ADMINSDHOLDER?|No|
+|Safe to move out of default container?|Can be moved out, but we do not recommend it.|
+|Safe to delegate management of this group to non-Service admins?|No|
 
 ### DefaultAccount
 
@@ -290,71 +253,18 @@ For more information about UAC, see [User Account Control](/windows/access-prote
 
 The following table shows the Group Policy and registry settings that are used to enforce local account restrictions for remote access.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><b>No.</b></p></td>
-<td><p><b>Setting</b></p></td>
-<td><p><b>Detailed Description</b></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy location</p></td>
-<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options</p></td>
-</tr>
-<tr class="odd">
-<td><p>1</p></td>
-<td><p>Policy name</p></td>
-<td><p><a href="/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode" data-raw-source="[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)">User Account Control: Run all administrators in Admin Approval Mode</a></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy setting</p></td>
-<td><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td><p>2</p></td>
-<td><p>Policy location</p></td>
-<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy name</p></td>
-<td><p><a href="/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode" data-raw-source="[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)">User Account Control: Run all administrators in Admin Approval Mode</a></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Policy setting</p></td>
-<td><p>Enabled</p></td>
-</tr>
-<tr class="even">
-<td><p>3</p></td>
-<td><p>Registry key</p></td>
-<td><p><b>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</b></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Registry value name</p></td>
-<td><p>LocalAccountTokenFilterPolicy</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Registry value type</p></td>
-<td><p>DWORD</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Registry value data</p></td>
-<td><p>0</p></td>
-</tr>
-</tbody>
-</table>
-
+|No.|Setting|Detailed Description|
+|--- |--- |--- |
+||Policy location|Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options|
+|1|Policy name|[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)|
+||Policy setting|Enabled|
+|2|Policy location|Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options|
+||Policy name|[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)|
+||Policy setting|Enabled|
+|3|Registry key|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System|
+||Registry value name|LocalAccountTokenFilterPolicy|
+||Registry value type|DWORD|
+||Registry value data|0|
 
 >[!NOTE]
 >You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates. 
@@ -437,54 +347,14 @@ In order to perform this procedure, you must first identify the name of the loca
 
 The following table shows the Group Policy settings that are used to deny network logon for all local Administrator accounts.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><b>No.</b></p></td>
-<td><p><b>Setting</b></p></td>
-<td><p><b>Detailed Description</b></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy location</p></td>
-<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment</p></td>
-</tr>
-<tr class="odd">
-<td><p>1</p></td>
-<td><p>Policy name</p></td>
-<td><p><a href="/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network" data-raw-source="[Deny access to this computer from the network](/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network)">Deny access to this computer from the network</a></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy setting</p></td>
-<td><p>Local account and member of Administrators group</p>
-</td>
-</tr>
-<tr class="odd">
-<td><p>2</p></td>
-<td><p>Policy location</p></td>
-<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy name</p></td>
-<td><p><a href="/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services" data-raw-source="[Deny log on through Remote Desktop Services](/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services)">Deny log on through Remote Desktop Services</a></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Policy setting</p></td>
-<td><p>Local account and member of Administrators group</p>
-</td>
-</tr>
-</tbody>
-</table>
-
- 
+|No.|Setting|Detailed Description|
+|--- |--- |--- |
+||Policy location|Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment|
+|1|Policy name|[Deny access to this computer from the network](/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network)|
+||Policy setting|Local account and member of Administrators group|
+|2|Policy location|Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment|
+||Policy name|[Deny log on through Remote Desktop Services](/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services)|
+||Policy setting|Local account and member of Administrators group|
 
 **To deny network logon to all local administrator accounts**
 

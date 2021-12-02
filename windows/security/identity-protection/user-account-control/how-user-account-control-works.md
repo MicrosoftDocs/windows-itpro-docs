@@ -106,169 +106,35 @@ The following diagram details the UAC architecture.
 
 To better understand each component, review the table below:
 
-<table>
-<tr>
-<th>Component</th>
-<th>Description</th>
-</tr>
-<tr>
-<th colspan="2">User</th>
-</tr>
-<tr>
-<td>
-<p>User performs operation requiring privilege</p>
-</td>
-<td>
-<p>If the operation changes the file system or registry, Virtualization is called. All other operations call ShellExecute.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>ShellExecute</p>
-</td>
-<td>
-<p>ShellExecute calls CreateProcess. ShellExecute looks for the ERROR_ELEVATION_REQUIRED error from CreateProcess. If it receives the error, ShellExecute calls the Application Information service to attempt to perform the requested task with the elevated prompt.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>CreateProcess</p>
-</td>
-<td>
-<p>If the application requires elevation, CreateProcess rejects the call with ERROR_ELEVATION_REQUIRED.</p>
-</td>
-</tr>
-<tr>
-<th colspan="2">System</th>
-</tr>
-<tr>
-<td>
-<p>Application Information service</p>
-</td>
-<td>
-<p>A system service that helps start apps that require one or more elevated privileges or user rights to run, such as local administrative tasks, and apps that require higher integrity levels. The Application Information service helps start such apps by creating a new process for the application with an administrative user&#39;s full access token when elevation is required and (depending on Group Policy) consent is given by the user to do so.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Elevating an ActiveX install</p>
-</td>
-<td>
-<p>If ActiveX is not installed, the system checks the UAC slider level. If ActiveX is installed, the <b>User Account Control: Switch to the secure desktop when prompting for elevation</b> Group Policy setting is checked.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Check UAC slider level</p>
-</td>
-<td>
-<p>UAC has a slider to select from four levels of notification.</p>
-<ul>
-<li><p><b>Always notify</b> will:</p>
-<ul>
-<li>Notify you when programs try to install software or make changes to your computer.</li>
-<li>Notify you when you make changes to Windows settings.</li>
-<li>Freeze other tasks until you respond.</li>
-</ul>
-<p>Recommended if you often install new software or visit unfamiliar websites.</p><br>
-</li>
-<li><p><b>Notify me only when programs try to make changes to my computer</b> will:</p>
-<ul>
-<li>Notify you when programs try to install software or make changes to your computer.</li>
-<li>Not notify you when you make changes to Windows settings.</li>
-<li>Freeze other tasks until you respond.</li>
-</ul>
-<p>Recommended if you do not often install apps or visit unfamiliar websites.</p><br>
-</li>
-<li><p><b>Notify me only when programs try to make changes to my computer (do not dim my desktop)</b> will:</p>
-<ul>
-<li>Notify you when programs try to install software or make changes to your computer.</li>
-<li>Not notify you when you make changes to Windows settings.</li>
-<li>Not freeze other tasks until you respond.</li>
-</ul>
-<p>Not recommended. Choose this only if it takes a long time to dim the desktop on your computer.</p><br>
-</li>
-<li><p><b>Never notify (Disable UAC prompts)</b> will:</p>
-<ul>
-<li>Not notify you when programs try to install software or make changes to your computer.</li>
-<li>Not notify you when you make changes to Windows settings.</li>
-<li>Not freeze other tasks until you respond.</li>
-</ul>
-<p>Not recommended due to security concerns.</p>
-</li></ul>
-</td>
-</tr>
-<tr>
-<td>
-<p>Secure desktop enabled</p>
-</td>
-<td>
-<p>The <b>User Account Control: Switch to the secure desktop when prompting for elevation</b> policy setting is checked: </p>
-<ul>
-<li>
-<p>If the secure desktop is enabled, all elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.</p>
-</li>
-<li>
-<p>If the secure desktop is not enabled, all elevation requests go to the interactive user&#39;s desktop, and the per-user settings for administrators and standard users are used.</p>
-</li>
-</ul>
-</td>
-</tr>
-<tr>
-<td>
-<p>CreateProcess</p>
-</td>
-<td>
-<p>CreateProcess calls AppCompat, Fusion, and Installer detection to assess if the app requires elevation. The file is then inspected to determine its requested execution level, which is stored in the application manifest for the file. CreateProcess fails if the requested execution level specified in the manifest does not match the access token and returns an error (ERROR_ELEVATION_REQUIRED) to ShellExecute.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>AppCompat</p>
-</td>
-<td>
-<p>The AppCompat database stores information in the application compatibility fix entries for an application.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Fusion</p>
-</td>
-<td>
-<p>The Fusion database stores information from application manifests that describe the applications. The manifest schema is updated to add a new requested execution level field.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>Installer detection</p>
-</td>
-<td>
-<p>Installer detection detects setup files, which helps prevent installations from being run without the user&#39;s knowledge and consent.</p>
-</td>
-</tr>
-<tr>
-<th colspan="2">Kernel</th>
-</td>
-</tr>
-<tr>
-<td>
-<p>Virtualization</p>
-</td>
-<td>
-<p>Virtualization technology ensures that non-compliant apps do not silently fail to run or fail in a way that the cause cannot be determined. UAC also provides file and registry virtualization and logging for applications that write to protected areas.</p>
-</td>
-</tr>
-<tr>
-<td>
-<p>File system and registry</p>
-</td>
-<td>
-<p>The per-user file and registry virtualization redirects per-computer registry and file write requests to equivalent per-user locations. Read requests are redirected to the virtualized per-user location first and to the per-computer location second.</p>
-</td>
-</tr>
-</table>
+### User
+
+|Component|Description|
+|--- |--- |
+|<p>User performs operation requiring privilege|<p>If the operation changes the file system or registry, Virtualization is called. All other operations call ShellExecute.|
+|<p>ShellExecute|<p>ShellExecute calls CreateProcess. ShellExecute looks for the ERROR_ELEVATION_REQUIRED error from CreateProcess. If it receives the error, ShellExecute calls the Application Information service to attempt to perform the requested task with the elevated prompt.|
+|<p>CreateProcess|<p>If the application requires elevation, CreateProcess rejects the call with ERROR_ELEVATION_REQUIRED.|
+
+### System
+
+|Component|Description|
+|--- |--- |
+|<p>Application Information service|<p>A system service that helps start apps that require one or more elevated privileges or user rights to run, such as local administrative tasks, and apps that require higher integrity levels. The Application Information service helps start such apps by creating a new process for the application with an administrative user's full access token when elevation is required and (depending on Group Policy) consent is given by the user to do so.|
+|<p>Elevating an ActiveX install|<p>If ActiveX is not installed, the system checks the UAC slider level. If ActiveX is installed, the **User Account Control: Switch to the secure desktop when prompting for elevation** Group Policy setting is checked.|
+|<p>Check UAC slider level|<p>UAC has a slider to select from four levels of notification.<ul><li><p>**Always notify** will:<ul><li>Notify you when programs try to install software or make changes to your computer.</li><li>Notify you when you make changes to Windows settings.</li><li>Freeze other tasks until you respond.</li></ul><p>Recommended if you often install new software or visit unfamiliar websites.<br></li><li><p>**Notify me only when programs try to make changes to my computer** will:<ul><li>Notify you when programs try to install software or make changes to your computer.</li><li>Not notify you when you make changes to Windows settings.</li><li>Freeze other tasks until you respond.</li></ul><p>Recommended if you do not often install apps or visit unfamiliar websites.<br></li><li><p>**Notify me only when programs try to make changes to my computer (do not dim my desktop)** will:<ul><li>Notify you when programs try to install software or make changes to your computer.</li><li>Not notify you when you make changes to Windows settings.</li><li>Not freeze other tasks until you respond.</li></ul><p>Not recommended. Choose this only if it takes a long time to dim the desktop on your computer.<br></li><li><p>**Never notify (Disable UAC prompts)** will:<ul><li>Not notify you when programs try to install software or make changes to your computer.</li><li>Not notify you when you make changes to Windows settings.</li><li>Not freeze other tasks until you respond.</li></ul><p>Not recommended due to security concerns.|
+|<p>Secure desktop enabled|<p>The **User Account Control: Switch to the secure desktop when prompting for elevation** policy setting is checked: <ul><li><p>If the secure desktop is enabled, all elevation requests go to the secure desktop regardless of prompt behavior policy settings for administrators and standard users.</li><li><p>If the secure desktop is not enabled, all elevation requests go to the interactive user&#39;s desktop, and the per-user settings for administrators and standard users are used.|
+|<p>CreateProcess|<p>CreateProcess calls AppCompat, Fusion, and Installer detection to assess if the app requires elevation. The file is then inspected to determine its requested execution level, which is stored in the application manifest for the file. CreateProcess fails if the requested execution level specified in the manifest does not match the access token and returns an error (ERROR_ELEVATION_REQUIRED) to ShellExecute.|
+|<p>AppCompat|<p>The AppCompat database stores information in the application compatibility fix entries for an application.|
+|<p>Fusion|<p>The Fusion database stores information from application manifests that describe the applications. The manifest schema is updated to add a new requested execution level field.|
+|<p>Installer detection|<p>Installer detection detects setup files, which helps prevent installations from being run without the user&#39;s knowledge and consent.|
+
+### Kernel
+
+|Component|Description|
+|--- |--- |
+|<p>Virtualization|<p>Virtualization technology ensures that non-compliant apps do not silently fail to run or fail in a way that the cause cannot be determined. UAC also provides file and registry virtualization and logging for applications that write to protected areas.|
+|<p>File system and registry|<p>The per-user file and registry virtualization redirects per-computer registry and file write requests to equivalent per-user locations. Read requests are redirected to the virtualized per-user location first and to the per-computer location second.|
  
-The slider will never turn UAC completely off. If you set it to <b>Never notify</b>, it will:
+The slider will never turn UAC completely off. If you set it to **Never notify**, it will:
 
 -   Keep the UAC service running.
 -   Cause all elevation request initiated by administrators to be auto-approved without showing a UAC prompt.
