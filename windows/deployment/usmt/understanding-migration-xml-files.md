@@ -240,7 +240,7 @@ The MigDocs.xml file calls the **GenerateDocPatterns** function, which takes thr
 
   If a child folder of an included folder contains an installed application, ScanProgramFiles will also create an exclusion rule for the child folder. All folders under the application folder will be scanned recursively for registered file name extensions.
 
-- `IncludePatterns`: This argument determines whether to generate exclude or include patterns in the XML. When this argument is set to **TRUE**, the **GenerateDocPatterns** function generates include patterns and the function must be added under the `<include>` element. Changing this argument to **FALSE** generates exclude patterns and the function must be added under the `<exclude>' element.
+- `IncludePatterns`: This argument determines whether to generate exclude or include patterns in the XML. When this argument is set to **TRUE**, the **GenerateDocPatterns** function generates include patterns and the function must be added under the `<include>` element. Changing this argument to **FALSE** generates exclude patterns and the function must be added under the `<exclude>` element.
 
   **Default value**: True
 
