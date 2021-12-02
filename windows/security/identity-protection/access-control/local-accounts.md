@@ -141,11 +141,11 @@ For details about the HelpAssistant account attributes, see the following table.
 
 |Attribute|Value|
 |--- |--- |
-|Well-Known SID/RID|S-1-5-<domain>-13 (Terminal Server User), S-1-5-<domain>-14 (Remote Interactive Logon)|
+|Well-Known SID/RID|S-1-5-&lt;domain&gt;-13 (Terminal Server User), S-1-5-&lt;domain&gt;-14 (Remote Interactive Logon)|
 |Type|User|
-|Default container|CN=Users, DC=<domain>, DC=|
+|Default container|CN=Users, DC=&lt;domain&gt;, DC=|
 |Default members|None|
-|Default member of|Domain Guests<p>Guests|
+|Default member of|Domain Guests&lt;p&gt;Guests|
 |Protected by ADMINSDHOLDER?|No|
 |Safe to move out of default container?|Can be moved out, but we do not recommend it.|
 |Safe to delegate management of this group to non-Service admins?|No|
