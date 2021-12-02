@@ -46,9 +46,7 @@ The following table shows the Microsoft custom elements that this configuration 
 |Parm-query|Yes|
 |Noparm|Yes|
 |Uncharacteristic|Yes|
-|Characteristic-query|Yes
-Recursive query: Yes
-Top-level query: No|
+|Characteristic-query|Yes<br/><br/>Recursive query: Yes<br/><br/>Top-level query: No|
 
  
 Use these elements to build standard OMA Client Provisioning configuration XML. For information about specific elements, see MSPROV DTD elements.
@@ -77,13 +75,3 @@ It is not possible to access registry keys nested under the current path by usin
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
-
