@@ -153,8 +153,8 @@ Settings is a container for all the settings that apply to a particular template
 
 Name specifies a unique name for the settings location template. This is used for display purposes when referencing the template in WMI, PowerShell, Event Viewer and debug logs. In general, avoid referencing version information, as this can be objected from the ProductVersion element. For example, specify `<Name>My Application</Name>` rather than `<Name>My Application 1.1</Name>`.
 
-**Note**  
-UE-V does not reference external DTDs, so it is not possible to use named entities in a settings location template. For example, do not use &reg; to refer to the registered trade mark sign ®. Instead, use canonical numbered references to include these types of special characters, for example, &\#174 for the ® character. This rule applies to all string values in this document.
+> [!NOTE]
+> UE-V does not reference external DTDs, so it is not possible to use named entities in a settings location template. For example, do not use &reg; to refer to the registered trade mark sign ®. Instead, use canonical numbered references to include these types of special characters, for example, &\#174 for the ® character. This rule applies to all string values in this document.
 
 See <http://www.w3.org/TR/xhtml1/dtds.html> for a complete list of character entities. UTF-8-encoded documents may include the Unicode characters directly. Saving templates through the UE-V template generator converts character entities to their Unicode representations automatically.
 
@@ -180,7 +180,8 @@ ID populates a unique identifier for a particular template. This tag becomes the
 
 Version identifies the version of the settings location template for administrative tracking of changes. The UE-V template generator automatically increments this number by one each time the template is saved. Notice that this field must be a whole number integer; fractional values, such as `<Version>2.5</Version>` are not allowed.
 
-**Hint:** You can save notes about version changes using XML comment tags `<!-- -->`, for example:
+> [!TIP]
+> You can save notes about version changes using XML comment tags `<!-- -->`, for example:
 
 ```xml
   <!--
@@ -194,8 +195,8 @@ Version identifies the version of the settings location template for administrat
   <Version>4</Version>
 ```
 
-**Important**  
-This value is queried to determine if a new version of a template should be applied to an existing template in these instances:
+> [!IMPORTANT]
+> This value is queried to determine if a new version of a template should be applied to an existing template in these instances:
 
 -   When the scheduled Template Auto Update task executes
 
@@ -252,7 +253,8 @@ Filename refers to the actual file name of the executable as it appears in the f
 
 Valid filenames must not match the regular expression \[^\\\\\\?\\\*\\|&lt;&gt;/:\]+, that is, they may not contain backslash characters, asterisk or question mark wild-card characters, the pipe character, the greater than or less than sign, forward slash, or colon (the \\ ? \* | &lt; &gt; / or : characters.).
 
-**Hint:** To test a string against this regex, use a PowerShell command window and substitute your executable’s name for **YourFileName**:
+> [!TIP]
+> To test a string against this regex, use a PowerShell command window and substitute your executable’s name for **YourFileName**:
 
 `"YourFileName.exe" -match  "[\\\?\*\|<>/:]+"`
 
@@ -266,8 +268,8 @@ A value of **True** indicates that the string contains illegal characters. Here 
 
 -   Program&lt;1&gt;.exe
 
-**Note**  
-The UE-V template generator encodes the greater than and less than characters as &gt; and &lt; respectively.
+> [!NOTE]
+> The UE-V template generator encodes the greater than and less than characters as &gt; and &lt; respectively.
 
  
 
@@ -283,8 +285,8 @@ Architecture refers to the processor architecture for which the target executabl
 
 If this element is absent, the settings location template ignores the process’ architecture and applies to both 32 and 64-bit processes if the file name and other attributes apply.
 
-**Note**  
-UE-V does not support ARM processors in this version.
+> [!NOTE]
+> UE-V does not support ARM processors in this version.
 
  
 
