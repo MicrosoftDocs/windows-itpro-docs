@@ -42,7 +42,7 @@ To create effective WDAC deny policies, it is crucial to understand how WDAC par
 
 4. Lastly, WDAC will call the Intelligent Security Graph (ISG) to get reputation on file, if the policy has support for the ISG.
 
-Explicit allow and deny rules encompass rules at any level (e.g. has rules, signer rules path rules, attritbute rules or package family name rules). If there is an explicit deny rule, WDAC does not process any other rules, meaning a deny rule always takes precedence in the case where a deny and allow rule would be at odds. 
+Explicit allow and deny rules encompass rules at any level (e.g. hash rules, signer rules path rules, attribute rules or package family name rules). If there is an explicit deny rule, WDAC does not process any other rules, meaning a deny rule always takes precedence in the case where a deny and allow rule would be at odds. 
 
 ## Interaction with Existing Policies
 ### Adding Allow Rules
