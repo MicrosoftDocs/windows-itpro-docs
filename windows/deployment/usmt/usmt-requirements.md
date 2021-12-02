@@ -34,15 +34,15 @@ The following table lists the operating systems supported in USMT.
 
 |Operating Systems|ScanState (source computer)|LoadState (destination computer)|
 |--- |--- |--- |
-|32-bit versions of Windows 7|X|X|
-|64-bit versions of Windows 7|X|X|
-|32-bit versions of Windows 8|X|X|
-|64-bit versions of Windows 8|X|X|
-|32-bit versions of Windows 10|X|X|
-|64-bit versions of Windows 10|X|X|
+|32-bit versions of Windows 7|✔️|✔️|
+|64-bit versions of Windows 7|✔️|✔️|
+|32-bit versions of Windows 8|✔️|✔️|
+|64-bit versions of Windows 8|✔️|✔️|
+|32-bit versions of Windows 10|✔️|✔️|
+|64-bit versions of Windows 10|✔️|✔️|
 
-**Note**  
-You can migrate a 32-bit operating system to a 64-bit operating system. However, you cannot migrate a 64-bit operating system to a 32-bit operating system.
+> [!NOTE]
+> You can migrate a 32-bit operating system to a 64-bit operating system. However, you cannot migrate a 64-bit operating system to a 32-bit operating system.
 
 USMT does not support any of the Windows Server® operating systems, Windows 2000, Windows XP, or any of the starter editions for Windows Vista or Windows 7.
 
@@ -66,8 +66,8 @@ To open an elevated command prompt:
 3. Right-click **cmd** or **Command Prompt**, and then click **Run as administrator**.
 4. If the current user is not already an administrator, you will be prompted to enter administrator credentials.
 
-**Important**<BR>
-You must run USMT using an account with full administrative permissions, including the following privileges:
+> [!IMPORTANT]
+> You must run USMT using an account with full administrative permissions, including the following privileges:
 
 - SeBackupPrivilege (Back up files and directories)
 - SeDebugPrivilege (Debug programs)
