@@ -111,10 +111,9 @@ Policy 1 is an allowlist of Windows and Microsoft-signed applications. Policy 2 
 
 2. **Recommended Deny Rules Types** - signer and file attribute rules are recommended from a security, manageability, and performance perspective. Hash rules should only be utilized where otherwise impossible. The hash of an application is updated for every new version released by the publisher that quickly becomes impractical to manage and protect against new threats where the attacker is quickly iterating on the payload. Additionally, WDAC has optimized parsing of hash rules, but devices may see performance impacts at runtime evaluation when policies have tens of thousands or more hash rules. 
 
-<<<<<<< HEAD
 ## Creating a Deny Policy Tutorial
-Deny rules and policies can be created using the PowerShell cmdlets or the WDAC Wizard [Microsoft WDAC Wizard (webapp-wdac-wizard.azurewebsites.net](https://webapp-wdac-wizard.azurewebsites.net/) We recommend creating signer rules (PCACertificate, Publisher, and FilePublisher) wherever possible. In the cases of unsigned binaries, rules must be created on attributes of the file, such as the original filename, or the hash. 
-=======
+Deny rules and policies can be created using the PowerShell cmdlets or the WDAC Wizard [Microsoft WDAC Wizard (webapp-wdac-wizard.azurewebsites.net](https://webapp-wdac-wizard.azurewebsites.net) We recommend creating signer rules (PCACertificate, Publisher, and FilePublisher) wherever possible. In the cases of unsigned binaries, rules must be created on attributes of the file, such as the original filename, or the hash. 
+
 ## Tutorial 
 
 ### Creating a Deny Policy
