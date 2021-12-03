@@ -2,7 +2,7 @@
 title: Configuring Hybrid Azure AD joined key trust Windows Hello for Business - Active Directory (AD)
 description: Configuring Hybrid key trust Windows Hello for Business - Active Directory (AD)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, ad, key trust, key-trust
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

@@ -2,7 +2,7 @@
 title: Azure Active Directory join cloud only deployment
 description: Use this deployment guide to successfully use Azure Active Directory to join a Windows 10 or Windows 11 device. 
 keywords: identity, Hello, Active Directory, cloud, 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

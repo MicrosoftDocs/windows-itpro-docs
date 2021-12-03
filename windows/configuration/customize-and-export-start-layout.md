@@ -13,6 +13,7 @@ ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 09/18/2018
+ms.collection: highpri
 ---
 
 # Customize and export Start layout
@@ -80,7 +81,7 @@ To prepare a Start layout for export, you simply customize the Start layout on a
 
 ## Export the Start layout
 
-When you have the Start layout that you want your users to see, use the [Export-StartLayout](/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet in Windows PowerShell to export the Start layout to an .xml file. Start layout is located by default at C:\Users\username\AppData\Local\Microsoft\Windows\Shell\
+When you have the Start layout that you want your users to see, use the [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet in Windows PowerShell to export the Start layout to an .xml file. Start layout is located by default at C:\Users\username\AppData\Local\Microsoft\Windows\Shell\
 
 >[!IMPORTANT]
 >If you include secondary Microsoft Edge tiles (tiles that link to specific websites in Microsoft Edge), see [Add custom images to Microsoft Edge secondary tiles](start-secondary-tiles.md) for instructions.
@@ -101,38 +102,25 @@ When you have the Start layout that you want your users to see, use the [Export-
 
     In the previous command, `-path` is a required parameter that specifies the path and file name for the export file. You can specify a local path or a UNC path (for example, \\\\FileServer01\\StartLayouts\\StartLayoutMarketing.xml).
 
-    Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](/powershell/module/startlayout/export-startlayout?view=win10-ps) cmdlet does not append the file name extension, and the policy settings require the extension.
+    Use a file name of your choice—for example, StartLayoutMarketing.xml. Include the .xml file name extension. The [Export-StartLayout](/powershell/module/startlayout/export-startlayout) cmdlet does not append the file name extension, and the policy settings require the extension.
     
     Example of a layout file produced by `Export-StartLayout`:
 
-    <span codelanguage="XML"></span>
-    <table>
-    <colgroup>
-    <col width="100%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">XML</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><pre><code>&lt;LayoutModificationTemplate Version=&quot;1&quot; xmlns=&quot;https://schemas.microsoft.com/Start/2014/LayoutModification&quot;&gt;
-      &lt;DefaultLayoutOverride&gt;
-        &lt;StartLayoutCollection&gt;
-          &lt;defaultlayout:StartLayout GroupCellWidth=&quot;6&quot; xmlns:defaultlayout=&quot;https://schemas.microsoft.com/Start/2014/FullDefaultLayout&quot;&gt;
-            &lt;start:Group Name=&quot;Life at a glance&quot; xmlns:start=&quot;https://schemas.microsoft.com/Start/2014/StartLayout&quot;&gt;
-              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;0&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge&quot; /&gt;
-              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;4&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI&quot; /&gt;
-              &lt;start:Tile Size=&quot;2x2&quot; Column=&quot;2&quot; Row=&quot;0&quot; AppUserModelID=&quot;Microsoft.BingWeather_8wekyb3d8bbwe!App&quot; /&gt;
-            &lt;/start:Group&gt;        
-          &lt;/defaultlayout:StartLayout&gt;
-        &lt;/StartLayoutCollection&gt;
-      &lt;/DefaultLayoutOverride&gt;
-    &lt;/LayoutModificationTemplate&gt;</code></pre></td>
-    </tr>
-    </tbody>
-    </table>
+    ```xml
+    <LayoutModificationTemplate Version="1" xmlns="https://schemas.microsoft.com/Start/2014/LayoutModification">
+          <DefaultLayoutOverride>
+            <StartLayoutCollection>
+              <defaultlayout:StartLayout GroupCellWidth="6" xmlns:defaultlayout="https://schemas.microsoft.com/Start/2014/FullDefaultLayout">
+                <start:Group Name="Life at a glance" xmlns:start="https://schemas.microsoft.com/Start/2014/StartLayout">
+                  <start:Tile Size="2x2" Column="0" Row="0" AppUserModelID="Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge" />
+                  <start:Tile Size="2x2" Column="4" Row="0" AppUserModelID="Microsoft.Windows.Cortana_cw5n1h2txyewy!CortanaUI" />
+                  <start:Tile Size="2x2" Column="2" Row="0" AppUserModelID="Microsoft.BingWeather_8wekyb3d8bbwe!App" />
+                </start:Group>        
+              </defaultlayout:StartLayout>
+            </StartLayoutCollection>
+          </DefaultLayoutOverride>
+        </LayoutModificationTemplate>
+    ```
 
 3. (Optional) Edit the .xml file to add [a taskbar configuration](configure-windows-10-taskbar.md) or to [modify the exported layout](start-layout-xml-desktop.md). When you make changes to the exported layout, be aware that [the order of the elements in the .xml file is critical.](start-layout-xml-desktop.md#required-order)
 

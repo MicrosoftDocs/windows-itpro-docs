@@ -12,7 +12,7 @@ ms.sitesec: library
 ms.localizationpriority: medium
 audience: itpro
 ms.topic: article
-ms.custom: 
+ms.collection: highpri
 ---
 
 # What's new in Windows 11

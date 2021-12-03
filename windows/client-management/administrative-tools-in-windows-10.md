@@ -12,13 +12,14 @@ author: greg-lindsay
 ms.localizationpriority: medium
 ms.date: 09/20/2021
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Administrative Tools in Windows
 
 
 **Applies to**
--  Windows 10
+-  Windows 10
 -  Windows 11
 
 
