@@ -112,7 +112,7 @@ This section contains hotfixes and KB articles for UE-V.
 | 2769631    | How to repair a corrupted UE-V install                                         | [support.microsoft.com/kb/2769631](https://support.microsoft.com/kb/2769631) |
 | 2850989    | Migrating MAPI profiles with Microsoft UE-V is not supported                   | [support.microsoft.com/kb/2850989](https://support.microsoft.com/kb/2850989) |
 | 2769586    | UE-V roams empty folders and registry keys                                     | [support.microsoft.com/kb/2769586](https://support.microsoft.com/kb/2769586) |
-| 2782997    | How To Enable Debug Logging in Microsoft User Experience Virtualization (UE-V) | [support.microsoft.com/kb/2782997](https://support.microsoft.com/kb/2782997) |
+| 2782997    | How To Enable Debug Logging in Microsoft User Experience Virtualization (UE-V) | [support.microsoft.com/kb/2782997](/troubleshoot/windows-client/ue-v/enable-debug-logging) |
 | 2769570    | UE-V does not update the theme on RDS or VDI sessions                          | [support.microsoft.com/kb/2769570](https://support.microsoft.com/kb/2769570) |
 | 2850582    | How To Use Microsoft User Experience Virtualization With App-V Applications    | [support.microsoft.com/kb/2850582](https://support.microsoft.com/kb/2850582) |
 | 3041879    | Current file versions for Microsoft User Experience Virtualization             | [support.microsoft.com/kb/3041879](https://support.microsoft.com/kb/3041879) |
