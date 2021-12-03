@@ -184,15 +184,15 @@ Version identifies the version of the settings location template for administrat
 > You can save notes about version changes using XML comment tags `<!-- -->`, for example:
 
 ```xml
-  <!--
-     Version History
+<!--
+   Version History
 
-     Version 1 Jul 05, 2012 Initial template created by Generator - Denise@Contoso.com
-     Version 2 Jul 31, 2012 Added support for app.exe v2.1.3 - Mark@Contoso.com
-     Version 3 Jan 01, 2013 Added font settings support - Mark@Contoso.com
-     Version 4 Jan 31, 2013 Added support for plugin settings - Tony@Contoso.com
-   -->
-  <Version>4</Version>
+   Version 1 Jul 05, 2012 Initial template created by Generator - Denise@Contoso.com
+   Version 2 Jul 31, 2012 Added support for app.exe v2.1.3 - Mark@Contoso.com
+   Version 3 Jan 01, 2013 Added font settings support - Mark@Contoso.com
+   Version 4 Jan 31, 2013 Added support for plugin settings - Tony@Contoso.com
+ -->
+<Version>4</Version>
 ```
 
 > [!IMPORTANT]
