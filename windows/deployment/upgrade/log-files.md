@@ -101,9 +101,9 @@ For example, assume that the error code for an error is 0x8007042B - 0x2000D. Se
 
 Some lines in the text below are shortened to enhance readability. The date and time at the start of each line (ex: 2016-10-05 15:27:08) is shortened to minutes and seconds, and the certificate file name which is a long text string is shortened to just "CN."
 
-<br><B>setuperr.log</B> content:
+**setuperr.log** content:
 
-<pre>
+```console
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
 27:08, Error           MIG    Error 1392 while gathering object C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Shell application requested abort![gle=0x00000570]
 27:08, Error                  Gather failed. Last error: 0x00000000
@@ -112,21 +112,21 @@ Some lines in the text below are shortened to enhance readability. The date and 
 27:09, Error           SP     Operation failed: Migrate framework (Full). Error: 0x8007042B[gle=0x000000b7]
 27:09, Error           SP     Operation execution failed: 13. hr = 0x8007042B[gle=0x000000b7]
 27:09, Error           SP     CSetupPlatformPrivate::Execute: Execution of operations queue failed, abandoning. Error: 0x8007042B[gle=0x000000b7]
-</PRE>
+```
 
 The first line indicates there was an error **0x00000570** with the file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]** (shown below):
 
-<pre>
+```console
 27:08, Error           SP     Error READ, 0x00000570 while gathering/applying object: File, C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18 [CN]. Will return 0[gle=0x00000570]
-</PRE>
+```
 
-</B>The error 0x00000570 is a [Win32 error code](/openspecs/windows_protocols/ms-erref/18d8fbe8-a967-4f1c-ae50-99ca8e491d2d) corresponding to: ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable.
+The error 0x00000570 is a [Win32 error code](/openspecs/windows_protocols/ms-erref/18d8fbe8-a967-4f1c-ae50-99ca8e491d2d) corresponding to: ERROR_FILE_CORRUPT: The file or directory is corrupted and unreadable.
 
 Therefore, Windows Setup failed because it was not able to migrate the corrupt file **C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN]**.  This file is a local system certificate and can be safely deleted. Searching the setupact.log file for additional details, the phrase "Shell application requested abort" is found in a location with the same timestamp as the lines in setuperr.log. This confirms our suspicion that this file is the cause of the upgrade failure:
 
-<br><B>setupact.log</B> content:
+**setupact.log** content:
 
-<pre>
+```console
 27:00, Info                   Gather started at 10/5/2016 23:27:00
 27:00, Info [0x080489] MIG    Setting system object filter context (System)
 27:00, Info [0x0803e5] MIG    Not unmapping HKCU\Software\Classes; it is not mapped
@@ -147,11 +147,11 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 27:08, Info                   Gather ended at 10/5/2016 23:27:08 with result 44
 27:08, Info                   Leaving MigGather method
 27:08, Error           SP     SPDoFrameworkGather: Gather operation failed. Error: 0x0000002C
-</pre>
+```
 
-<br><B>setupapi.dev.log</B> content:
+**setupapi.dev.log** content:
 
-<pre>
+```console
 >>>  [Device Install (UpdateDriverForPlugAndPlayDevices) - PCI\VEN_8086&DEV_8C4F]
 >>>  Section start 2019/09/26 20:13:01.623
       cmd: rundll32.exe "C:\WINDOWS\Installer\MSI6E4C.tmp",zzzzInvokeManagedCustomActionOutOfProc SfxCA_95972906 484 ChipsetWiX.CustomAction!Intel.Deployment.ChipsetWiX.CustomActions.InstallDrivers
@@ -235,9 +235,9 @@ Therefore, Windows Setup failed because it was not able to migrate the corrupt f
 !    ndv: No devices were updated.
 <<<  Section end 2019/09/26 20:13:01.759
 <<<  [Exit status: FAILURE(0xC1900101)]
-</pre>
+```
 
-<br>This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
+This analysis indicates that the Windows upgrade error can be resolved by deleting the C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\[CN] file. Note: In this example, the full, unshortened file name is  C:\ProgramData\Microsoft\Crypto\RSA\S-1-5-18\be8228fb2d3cb6c6b0ccd9ad51b320b4_a43d512c-69f2-42de-aef9-7a88fabdaa3f. 
 
 ## Related topics
 
