@@ -6,7 +6,7 @@ ms.reviewer:
 manager: dansimp
 ms.author: dansimp
 author: dansimp
-ms.prod: w10
+ms.prod: m365-security
 ms.topic: include
 ---
 

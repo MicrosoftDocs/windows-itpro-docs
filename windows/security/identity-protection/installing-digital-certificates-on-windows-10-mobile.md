@@ -4,7 +4,7 @@ description: Digital certificates bind the identity of a user or computer to a p
 ms.assetid: FF7B1BE9-41F4-44B0-A442-249B650CEE25
 ms.reviewer: 
 keywords: S/MIME, PFX, SCEP
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

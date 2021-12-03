@@ -3,7 +3,8 @@ metadata:
   title: BitLocker and Active Directory Domain Services (AD DS) FAQ (Windows 10)
   description: Learn more about how BitLocker and Active Directory Domain Services (AD DS) can work together to keep devices secure. 
   ms.assetid: c40f87ac-17d3-47b2-afc6-6c641f72ecee
-  ms.prod: w10
+  ms.reviewer: 
+  ms.prod: m365-security
   ms.mktglfcycl: explore
   ms.sitesec: library
   ms.pagetype: security

@@ -39,11 +39,11 @@ Here's a step-by-step guide to adding an Azure Active Directory tenant, adding a
 
    If you don't have a paid subscription to any Microsoft service, you can purchase an Azure AD premium subscription. Go to the Office 356 portal at https://portal.office.com/, and then sign in using the admin account that you created in Step 4 (for example, user1@contosoltd.onmicrosoftcom).
 
-   ![login to office 365.](images/azure-ad-add-tenant4.png)
+   ![login to office 365](images/azure-ad-add-tenant4.png)
 
 6. Select **Install software**.
 
-   ![login to office 365.](images/azure-ad-add-tenant5.png)
+   ![login to office 365 portal](images/azure-ad-add-tenant5.png)
 
 7. In the Microsoft 365 admin center, select **Purchase Services** from the left navigation.
 
@@ -69,27 +69,27 @@ If you have paid subscriptions to Office 365, Microsoft Dynamics CRM Online, Ent
 
 1.  Sign in to the Microsoft 365 admin center at <https://portal.office.com> using your organization's account.
 
-    ![register azuread.](images/azure-ad-add-tenant10.png)
+    ![register in azuread.](images/azure-ad-add-tenant10.png)
 
 2.  On the **Home** page, select on the Admin tools icon.
 
-    ![register azuread.](images/azure-ad-add-tenant11.png)
+    ![register in azure-ad.](images/azure-ad-add-tenant11.png)
 
 3.  On the **Admin center** page, hover your mouse over the Admin tools icon on the left and then click **Azure AD**. This will take you to the Azure Active Directory sign-up page and brings up your existing Office 365 organization account information.
 
-    ![register azuread.](images/azure-ad-add-tenant12.png)
+    ![register azuread](images/azure-ad-add-tenant12.png)
 
 4.  On the **Sign up** page, make sure to enter a valid phone number and then click **Sign up**.
 
-    ![register azuread.](images/azure-ad-add-tenant13.png)
+    ![registration in azure-ad](images/azure-ad-add-tenant13.png)
 
 5.  It may take a few minutes to process the request.
 
-    ![register azuread.](images/azure-ad-add-tenant14.png)
+    ![registration in azuread.](images/azure-ad-add-tenant14.png)
 
 6.  You will see a welcome page when the process completes.
 
-    ![register azuread.](images/azure-ad-add-tenant15.png)
+    ![register screen of azuread](images/azure-ad-add-tenant15.png)
 
  
 
