@@ -25,8 +25,9 @@ ms.collection: highpri
 
 **MBR2GPT.EXE** converts a disk from the Master Boot Record (MBR) to the GUID Partition Table (GPT) partition style without modifying or deleting data on the disk. The tool is designed to be run from a Windows Preinstallation Environment (Windows PE) command prompt, but can also be run from the full Windows 10 operating system (OS) by using the **/allowFullOS** option.
 
->MBR2GPT.EXE is located in the **Windows\\System32** directory on a computer running Windows 10 version 1703 (also known as the Creator's Update) or later.
->The tool is available in both the full OS environment and Windows PE. To use this tool in a deployment task sequence with Configuration Manager or Microsoft Deployment Toolkit (MDT), you must first update the Windows PE image (winpe.wim, boot.wim) with the [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) 1703, or a later version.
+MBR2GPT.EXE is located in the **Windows\\System32** directory on a computer running Windows 10 version 1703 (also known as the Creator's Update) or later.
+
+The tool is available in both the full OS environment and Windows PE. To use this tool in a deployment task sequence with Configuration Manager or Microsoft Deployment Toolkit (MDT), you must first update the Windows PE image (winpe.wim, boot.wim) with the [Windows ADK](https://developer.microsoft.com/windows/hardware/windows-assessment-deployment-kit) 1703, or a later version.
 
 See the following video for a detailed description and demonstration of MBR2GPT.
 
@@ -41,8 +42,10 @@ You can use MBR2GPT to:
 
 Offline conversion of system disks with earlier versions of Windows installed, such as Windows 7, 8, or 8.1 are not officially supported. The recommended method to convert these disks is to upgrade the operating system to Windows 10 first, then perform the MBR to GPT conversion.
 
->[!IMPORTANT]
->After the disk has been converted to GPT partition style, the firmware must be reconfigured to boot in UEFI mode. <BR>Make sure that your device supports UEFI before attempting to convert the disk.
+> [!IMPORTANT]
+> After the disk has been converted to GPT partition style, the firmware must be reconfigured to boot in UEFI mode.
+>
+> Make sure that your device supports UEFI before attempting to convert the disk.
 
 ## Disk Prerequisites
 
@@ -100,7 +103,7 @@ In the following example:
 4. The new disk layout is displayed - four partitions are present on the GPT disk: three are identical to the previous partitions and one is the new EFI system partition (volume 3).
 5. The OS volume is selected again, and detail displays that it has been converted to the [GPT partition type](/windows/win32/api/winioctl/ns-winioctl-partition_information_gpt) of **ebd0a0a2-b9e5-4433-87c0-68b6b72699c7** corresponding to the **PARTITION_BASIC_DATA_GUID** type.
 
->As noted in the output from the MBR2GPT tool, you must make changes to the computer firmware so that the new EFI system partition will boot properly.
+As noted in the output from the MBR2GPT tool, you must make changes to the computer firmware so that the new EFI system partition will boot properly.
 
 ```console
 X:\>DiskPart
@@ -238,11 +241,12 @@ The following steps illustrate high-level phases of the MBR-to-GPT conversion pr
 
 For Windows to remain bootable after the conversion, an EFI system partition (ESP) must be in place. MBR2GPT creates the ESP using the following rules:
 
-1. The existing MBR system partition is reused if it meets these requirements:<br>
-  a. It is not also the OS or Windows Recovery Environment partition.<br>
-  b. It is at least 100MB (or 260MB for 4K sector size disks) in size.<br>
-  c. It is less than or equal to 1GB in size. This is a safety precaution to ensure it is not a data partition.<br>
-  d. The conversion is not being performed from the full OS. In this case, the existing MBR system partition is in use and cannot be repurposed.
+1. The existing MBR system partition is reused if it meets these requirements:
+   1. It is not also the OS or Windows Recovery Environment partition.
+   1. It is at least 100MB (or 260MB for 4K sector size disks) in size.
+   1. It is less than or equal to 1GB in size. This is a safety precaution to ensure it is not a data partition.
+   1. The conversion is not being performed from the full OS. In this case, the existing MBR system partition is in use and cannot be repurposed.
+
 2. If the existing MBR system partition cannot be reused, a new ESP is created by shrinking the OS partition. This new partition has a size of 100MB (or 260MB for 4K sector size disks) and is formatted FAT32.
 
 If the existing MBR system partition is not reused for the ESP, it is no longer used by the boot process after the conversion. Other partitions are not modified.
@@ -379,7 +383,7 @@ Number Friendly Name      Serial Number        HealthStatus OperationalStatus To
 
 You can also view the partition type of a disk by opening the Disk Management tool, right-clicking the disk number, clicking **Properties**, and then clicking the **Volumes** tab. See the following example:
 
-![Volumes.](images/mbr2gpt-volume.png)
+:::image type="content" alt-text="Volumes." source="images/mbr2gpt-volume.png":::
 
 
 If Windows PowerShell and Disk Management are not available, such as when you are using Windows PE, you can determine the partition type at a command prompt with the DiskPart tool. To determine the partition style from a command line, type **diskpart** and then type **list disk**. See the following example:
