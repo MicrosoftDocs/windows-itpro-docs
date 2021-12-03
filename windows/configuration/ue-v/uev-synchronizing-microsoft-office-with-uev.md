@@ -37,92 +37,15 @@ Review the following tables for details about Office support in UE-V:
 
 ### Supported UE-V templates for Microsoft Office
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Office 2016 templates (UE-V for Windows 10 and Windows 10, version 1607, available in UE-V gallery)</th>
-<th align="left">Office 2013 templates (UE-V for Windows 10 and UE-V 2.x, available on UE-V gallery)</th>
-<th align="left">Office 2010 templates (UE-V 1.0 and 1.0 SP1)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>MicrosoftOffice2016Win32.xml</p>
-<p>MicrosoftOffice2016Win64.xml</p>
-<p>MicrosoftSkypeForBusiness2016Win32.xml</p>
-<p>MicrosoftSkypeForBusiness2016Win64.xml</p></td>
-<td align="left"><p>MicrosoftOffice2013Win32.xml</p>
-<p>MicrosoftOffice2013Win64.xml</p>
-<p>MicrosoftLync2013Win32.xml</p>
-<p>MicrosoftLync2013Win64.xml</p></td>
-<td align="left"><p>MicrosoftOffice2010Win32.xml</p>
-<p>MicrosoftOffice2010Win64.xml</p>
-<p>MicrosoftLync2010.xml</p>
-<p></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Office 2016 templates (UE-V for Windows 10 and Windows 10, version 1607, available in UE-V gallery)|Office 2013 templates (UE-V for Windows 10 and UE-V 2.x, available on UE-V gallery)|Office 2010 templates (UE-V 1.0 and 1.0 SP1)|
+|--- |--- |--- |
+|MicrosoftOffice2016Win32.xml<p>MicrosoftOffice2016Win64.xml<p>MicrosoftSkypeForBusiness2016Win32.xml<p>MicrosoftSkypeForBusiness2016Win64.xml|MicrosoftOffice2013Win32.xml<p>MicrosoftOffice2013Win64.xml<p>MicrosoftLync2013Win32.xml<p>MicrosoftLync2013Win64.xml|MicrosoftOffice2010Win32.xml<p>MicrosoftOffice2010Win64.xml<p>MicrosoftLync2010.xml|
 
 ### Microsoft Office Applications supported by the UE-V templates
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Microsoft Access 2016</p>
-<p>Microsoft Lync 2016</p>
-<p>Microsoft Excel 2016</p>
-<p>Microsoft OneNote 2016</p>
-<p>Microsoft Outlook 2016</p>
-<p>Microsoft PowerPoint 2016</p>
-<p>Microsoft Project 2016</p>
-<p>Microsoft Publisher 2016</p>
-<p>Microsoft SharePoint Designer 2013 (not updated for 2016)</p>
-<p>Microsoft Visio 2016</p>
-<p>Microsoft Word 2016</p>
-<p>Microsoft Office Upload Manager</p></td>
-<td align="left"><p>Microsoft Access 2013</p>
-<p>Microsoft Lync 2013</p>
-<p>Microsoft Excel 2013</p>
-<p>Microsoft InfoPath 2013</p>
-<p>Microsoft OneNote 2013</p>
-<p>Microsoft Outlook 2013</p>
-<p>Microsoft PowerPoint 2013</p>
-<p>Microsoft Project 2013</p>
-<p>Microsoft Publisher 2013</p>
-<p>Microsoft SharePoint Designer 2013</p>
-<p>Microsoft Visio 2013</p>
-<p>Microsoft Word 2013</p>
-<p>Microsoft Office Upload Manager</p></td>
-<td align="left"><p>Microsoft Access 2010</p>
-<p>Microsoft Lync 2010</p>
-<p>Microsoft Excel 2010</p>
-<p>Microsoft InfoPath 2010</p>
-<p>Microsoft OneNote 2010</p>
-<p>Microsoft Outlook 2010</p>
-<p>Microsoft PowerPoint 2010</p>
-<p>Microsoft Project 2010</p>
-<p>Microsoft Publisher 2010</p>
-<p>Microsoft SharePoint Designer 2010</p>
-<p>Microsoft Visio 2010</p>
-<p>Microsoft Word 2010</p>
-<p></p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|2016|2013|2010|
+|--- |--- |--- |
+|Microsoft Access 2016<p>Microsoft Lync 2016<p>Microsoft Excel 2016<p>Microsoft OneNote 2016<p>Microsoft Outlook 2016<p>Microsoft PowerPoint 2016<p>Microsoft Project 2016<p>Microsoft Publisher 2016<p>Microsoft SharePoint Designer 2013 (not updated for 2016)<p>Microsoft Visio 2016<p>Microsoft Word 2016<p>Microsoft Office Upload Manager|Microsoft Access 2013<p>Microsoft Lync 2013<p>Microsoft Excel 2013<p>Microsoft InfoPath 2013<p>Microsoft OneNote 2013<p>Microsoft Outlook 2013<p>Microsoft PowerPoint 2013<p>Microsoft Project 2013<p>Microsoft Publisher 2013<p>Microsoft SharePoint Designer 2013<p>Microsoft Visio 2013<p>Microsoft Word 2013<p>Microsoft Office Upload Manager|Microsoft Access 2010<p>Microsoft Lync 2010<p>Microsoft Excel 2010<p>Microsoft InfoPath 2010<p>Microsoft OneNote 2010<p>Microsoft Outlook 2010<p>Microsoft PowerPoint 2010<p>Microsoft Project 2010<p>Microsoft Publisher 2010<p>Microsoft SharePoint Designer 2010<p>Microsoft Visio 2010<p>Microsoft Word 2010|
 
 ## Deploying Office templates
 
