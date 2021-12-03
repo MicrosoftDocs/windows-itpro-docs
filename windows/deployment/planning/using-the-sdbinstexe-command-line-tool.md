@@ -37,7 +37,7 @@ Until you register the database files, the operating system is unable to identif
 
 Sample output from the command `Sdbinst.exe /?` in an elevated CMD window:
 
-```
+```cmd
 Microsoft Windows [Version 10.0.14393]
 (c) 2016 Microsoft Corporation. All rights reserved.
 
