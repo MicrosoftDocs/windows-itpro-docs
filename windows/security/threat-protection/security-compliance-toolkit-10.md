@@ -1,6 +1,6 @@
 ---
 title: Microsoft Security Compliance Toolkit 1.0
-description: This article describes how to use the Microsoft Security Compliance Toolkit in your organization
+description: This article describes how to use the Security Compliance Toolkit 1.0 in your organization
 keywords: virtualization, security, malware
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,7 +16,7 @@ ms.reviewer:
 ms.technology: windows-sec
 ---
 
-# Microsoft Security Compliance Toolkit 1.0 - Usage
+# Microsoft Security Compliance Toolkit 1.0 Usage
 
 ## What is the Security Compliance Toolkit (SCT)?
 
