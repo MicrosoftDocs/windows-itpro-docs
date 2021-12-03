@@ -33,7 +33,7 @@ More information about Special Groups auditing can be found here:
 
 <https://blogs.technet.com/b/askds/archive/2008/03/11/special-groups-auditing-via-group-policy-preferences.aspx>
 
-<https://docs.microsoft.com/windows/security/threat-protection/auditing/event-4908>
+</windows/security/threat-protection/auditing/event-4908>
 
 > **Note**&nbsp;&nbsp;For recommendations, see [Security Monitoring Recommendations](#security-monitoring-recommendations) for this event.
 
