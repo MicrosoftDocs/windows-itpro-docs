@@ -26,71 +26,21 @@ The RemoteLock CSP supports the ability to lock a device that has a PIN set on t
 <a href="" id="lock"></a>**Lock**
 Required. The setting accepts requests to lock the device screen. The device screen will lock immediately if a PIN has been set. If no PIN is set, the lock request is ignored and the OMA DM (405) Forbidden error is returned over the management channel. All OMA DM errors are listed [here](https://go.microsoft.com/fwlink/p/?LinkId=522607) in the protocol specification. The supported operations are Get and Exec.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="40%" />
-<col width="40%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Status</th>
-<th>Description</th>
-<th>Meaning [Standard]</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>(200) OK</p></td>
-<td><p>The device was successfully locked.</p></td>
-<td><p>The command and the associated Alert action are completed successfully.</p></td>
-</tr>
-<tr class="even">
-<td><p>(405)</p></td>
-<td><p>The device could not be locked because there is no PIN currently set on the device.</p></td>
-<td><p>The requested command is not allowed on the target.</p></td>
-</tr>
-<tr class="odd">
-<td><p>(500) Command failed</p></td>
-<td><p>The device was not locked for some unknown reason.</p></td>
-<td><p>Non-specific errors were created by the recipient while attempting to complete the command.</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Status|Description|Meaning [Standard]|
+|--- |--- |--- |
+|(200) OK|The device was successfully locked.|The command and the associated Alert action are completed successfully.|
+|(405)|The device could not be locked because there is no PIN currently set on the device.|The requested command is not allowed on the target.|
+|(500) Command failed|The device was not locked for some unknown reason.|Non-specific errors were created by the recipient while attempting to complete the command.|
 
 <a href="" id="lockandresetpin"></a>**LockAndResetPIN**
 This setting can be used to lock and reset the PIN on the device. It is used in conjunction with the NewPINValue node. After the **Exec** operation is called successfully on this node, the previous PIN will no longer work and cannot be recovered. The supported operation is Exec.
 
 This node will return the following status. All OMA DM errors are listed [here](https://go.microsoft.com/fwlink/p/?LinkId=522607) in the protocol specification.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="40%" />
-<col width="<40></40>%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Status</th>
-<th>Description</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>(200) OK</p></td>
-<td><p>The device has been locked with a new password which has been reset.</p></td>
-<td><p>The command and the associated Alert action are completed successfully.</p></td>
-</tr>
-<tr class="even">
-<td><p>(500) Command failed</p></td>
-<td><p>N/A</p></td>
-<td><p>Non-specific errors were created by the recipient while attempting to complete the command.</p></td>
-</tr>
-</tbody>
-</table>
+|Status|Description|Meaning|
+|--- |--- |--- |
+|(200) OK|The device has been locked with a new password which has been reset.|The command and the associated Alert action are completed successfully.|
+|(500) Command failed|N/A|Non-specific errors were created by the recipient while attempting to complete the command.|
 
 <a href="" id="lockandrecoverpin"></a>**LockAndRecoverPIN**
 Added in Windows 10, version 1703. This setting performs a similar function to the LockAndResetPIN node. With LockAndResetPIN any Windows Hello keys associated with the PIN gets deleted, but with LockAndRecoverPIN those keys are saved. After the Exec operation is called successfully on this setting, the new PIN can be retrieved from the NewPINValue setting. The previous PIN will no longer work.
