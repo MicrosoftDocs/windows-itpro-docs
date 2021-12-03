@@ -49,15 +49,15 @@ The following table describes some log files and how to use them for troubleshoo
 
 A setupact.log or setuperr.log entry (files are located at C:\Windows) includes the following elements:
 
-<ol>
-<LI><B>The date and time</B> - 2016-09-08 09:20:05.
-<LI><B>The log level</B> - Info, Warning, Error, Fatal Error.
-<LI><B>The logging component</B> - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS.
-<UL>
-<LI>The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are particularly useful for troubleshooting Windows Setup errors.
-</UL>
-<LI><B>The message</B> - Operation completed successfully.
-</OL>
+1.  **The date and time** - 2016-09-08 09:20:05.
+
+2.  **The log level** - Info, Warning, Error, Fatal Error.
+
+3.  **The logging component** - CONX, MOUPG, PANTHR, SP, IBSLIB, MIG, DISM, CSI, CBS.
+
+    The logging components SP (setup platform), MIG (migration engine), and CONX (compatibility information) are particularly useful for troubleshooting Windows Setup errors.
+
+4.  **The message** - Operation completed successfully.
 
 See the following example:
 
@@ -70,32 +70,37 @@ See the following example:
 
 The following instructions are meant for IT professionals. Also see the [Upgrade error codes](upgrade-error-codes.md) section in this guide to familiarize yourself with [result codes](upgrade-error-codes.md#result-codes) and [extend codes](upgrade-error-codes.md#extend-codes).
 
-<br>To analyze Windows Setup log files:
+To analyze Windows Setup log files:
 
-<ol>
-<LI>Determine the Windows Setup error code. This code should be returned by Windows Setup if it is not successful with the upgrade process.
-<LI>Based on the <a href="upgrade-error-codes.md#extend-codes" data-raw-source="[extend code](upgrade-error-codes.md#extend-codes)">extend code</a> portion of the error code, determine the type and location of a <a href="#log-files" data-raw-source="[log files](#log-files)">log files</a> to investigate.
-<LI>Open the log file in a text editor, such as notepad.
-<LI>Using the <a href="upgrade-error-codes.md#result-codes" data-raw-source="[result code](upgrade-error-codes.md#result-codes)">result code</a> portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the &quot;abort&quot; and abandoning&quot; text strings described in step 7 below.
-<LI>To find the last occurrence of the result code:
-  <OL type="a">
-  <LI>Scroll to the bottom of the file and click after the last character.
-  <LI>Click <B>Edit</B>.
-  <LI>Click <B>Find</B>.
-  <LI>Type the result code.
-  <LI>Under <B>Direction</B> select <b>Up</b>.
-  <LI>Click <b>Find Next</b>.
-  </OL>
-<LI> When you have located the last occurrence of the result code, scroll up a few lines from this location in the file and review the processes that failed just prior to generating the result code.
-<LI> Search for the following important text strings:
-  <UL>
-  <LI><B>Shell application requested abort</B>
-  <LI><B>Abandoning apply due to error for object</B>
-  </UL>
-<LI> Decode Win32 errors that appear in this section.
-<LI> Write down the timestamp for the observed errors in this section.
-<LI> Search other log files for additional information matching these timestamps or errors.
-</OL>
+1.  Determine the Windows Setup error code. This code should be returned by Windows Setup if it is not successful with the upgrade process.
+
+2.  Based on the [extend code](upgrade-error-codes.md#extend-codes) portion of the error code, determine the type and location of a [log files](#log-files) to investigate.
+
+3.  Open the log file in a text editor, such as notepad.
+
+4.  Using the [result code](upgrade-error-codes.md#result-codes) portion of the Windows Setup error code, search for the result code in the file and find the last occurrence of the code. Alternatively search for the "abort" and abandoning" text strings described in step 7 below.
+
+5.  To find the last occurrence of the result code:
+
+    1.  Scroll to the bottom of the file and click after the last character.
+    2.  Click **Edit**.
+    3.  Click **Find**.
+    4.  Type the result code.
+    5.  Under **Direction** select **Up**.
+    6.  Click **Find Next**.
+
+6.  When you have located the last occurrence of the result code, scroll up a few lines from this location in the file and review the processes that failed just prior to generating the result code.
+
+7.  Search for the following important text strings:
+
+    *   **Shell application requested abort**
+    *   **Abandoning apply due to error for object**
+
+8.  Decode Win32 errors that appear in this section.
+
+9.  Write down the timestamp for the observed errors in this section.
+
+10. Search other log files for additional information matching these timestamps or errors.
 
 For example, assume that the error code for an error is 0x8007042B - 0x2000D. Searching for "8007042B" reveals the following content from the setuperr.log file:
 
