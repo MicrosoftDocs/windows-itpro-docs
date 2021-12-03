@@ -165,13 +165,12 @@ Windows To Go Startup Options is a setting available on Windows 10-based PCs tha
 
 1. On the Start screen, type, type **Windows To Go Startup Options**, click **Settings** and, then press Enter.
 
-  ![windows to go startup options.](images/wtg-startup-options.gif)
+   ![windows to go startup options.](images/wtg-startup-options.gif)
 
 2. Select **Yes** to enable the startup options.
 
     > [!TIP]
     > If your computer is part of a domain, the Group Policy setting can be used to enable the startup options instead of the dialog.
-
 
 3. Click **Save Changes**. If the User Account Control dialog box is displayed, confirm that the action it displays is what you want, and then click **Yes**.
 
