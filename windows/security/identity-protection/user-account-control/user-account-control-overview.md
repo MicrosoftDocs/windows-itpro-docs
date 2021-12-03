@@ -2,7 +2,8 @@
 title: User Account Control (Windows)
 description: User Account Control (UAC) helps prevent malware from damaging a PC and helps organizations deploy a better-managed desktop.
 ms.assetid: 43ac4926-076f-4df2-84af-471ee7d20c38
-ms.prod: w10
+ms.reviewer: 
+ms.prod: m365-security
 ms.mktglfcycl: operate
 ms.sitesec: library
 ms.pagetype: security

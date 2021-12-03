@@ -37,33 +37,11 @@ On the user interface for the Standard User Analyzer (SUA) tool, you can apply f
 
 3.  On the **Mitigation** menu, click the command that corresponds to the action that you want to take. The following table describes the commands.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">Mitigation menu command</th>
-    <th align="left">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>Apply Mitigations</strong></p></td>
-    <td align="left"><p>Opens the <strong>Mitigate AppCompat Issues</strong> dialog box, in which you can select the fixes that you intend to apply to the application.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>Undo Mitigations</strong></p></td>
-    <td align="left"><p>Removes the application fixes that you just applied.</p>
-    <p>This option is available only after you apply an application fix and before you close the SUA tool. Alternatively, you can manually remove application fixes by using <strong>Programs and Features</strong> in Control Panel.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>Export Mitigations as Windows Installer file</strong></p></td>
-    <td align="left"><p>Exports your application fixes as a Windows® Installer (.msi) file, which can then be deployed to other computers that are running the application.</p></td>
-    </tr>
-    </tbody>
-    </table>
+    |Mitigation menu command|Description|
+    |--- |--- |
+    |**Apply Mitigations**|Opens the **Mitigate AppCompat Issues** dialog box, in which you can select the fixes that you intend to apply to the application.|
+    |**Undo Mitigations**|Removes the application fixes that you just applied.<p>This option is available only after you apply an application fix and before you close the SUA tool. Alternatively, you can manually remove application fixes by using **Programs and Features** in Control Panel.|
+    |**Export Mitigations as Windows Installer file**|Exports your application fixes as a Windows® Installer (.msi) file, which can then be deployed to other computers that are running the application.|
 
      
 
