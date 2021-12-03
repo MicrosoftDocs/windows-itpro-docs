@@ -58,7 +58,7 @@ The **Sync Controller Application** task is used to start the Sync Controller to
 
 For example, the following command configures the agent to synchronize settings every 15 minutes instead of the default 30 minutes.
 
-```cmd
+```console
 Schtasks /change /tn “Microsoft\UE-V\Sync Controller Application” /ri 15
 ```
 
@@ -81,7 +81,7 @@ The **Template Auto Update** task checks the settings template catalog for new, 
 
 **Example:** The following command configures the UE-V service to check the settings template catalog store every hour.
 
-```cmd
+```console
 schtasks /change /tn "Microsoft\UE-V\Template Auto Update" /ri 60
 ```
 

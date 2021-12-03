@@ -81,7 +81,7 @@ If any of these checks fails, the conversion will not proceed and an error will 
 
 In the following example, disk 0 is validated for conversion. Errors and warnings are logged to the default location, **%windir%**.
 
-```cmd
+```console
 X:\>mbr2gpt /validate /disk:0
 MBR2GPT: Attempting to validate disk 0
 MBR2GPT: Retrieving layout of disk
@@ -102,7 +102,7 @@ In the following example:
 
 >As noted in the output from the MBR2GPT tool, you must make changes to the computer firmware so that the new EFI system partition will boot properly.
 
-```cmd
+```console
 X:\>DiskPart
 
 Microsoft DiskPart version 10.0.15048.0
@@ -307,8 +307,7 @@ To view a list of options available when using the tool, type **mbr2gpt /?**
 
 The following text is displayed:
 
-```cmd
-
+```console
 C:\> mbr2gpt /?
 
 Converts a disk from MBR to GPT partitioning without modifying or deleting data on the disk.
@@ -385,7 +384,7 @@ You can also view the partition type of a disk by opening the Disk Management to
 
 If Windows PowerShell and Disk Management are not available, such as when you are using Windows PE, you can determine the partition type at a command prompt with the DiskPart tool. To determine the partition style from a command line, type **diskpart** and then type **list disk**. See the following example:
 
-```cmd
+```console
 X:\>DiskPart
 
 Microsoft DiskPart version 10.0.15048.0
@@ -435,7 +434,7 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
 
     **Command 1:**
   
-    ```cmd
+    ```console
     copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources\ReAgent*.*" "C:\WinPE_Mount\Windows\System32"
     ```
    
@@ -447,7 +446,7 @@ To fix this issue, mount the Windows PE image (WIM), copy the missing file from 
 
     **Command 2:**
   
-    ```cmd
+    ```console
     copy "C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Windows Setup\amd64\Sources\En-Us\ReAgent*.*" "C:\WinPE_Mount\Windows\System32\En-Us"
     ```
    
