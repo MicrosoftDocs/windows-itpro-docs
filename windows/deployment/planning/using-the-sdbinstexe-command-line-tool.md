@@ -65,9 +65,9 @@ The following table describes the available command-line options.
 |-?|Displays the Help for the Sdbinst.exe tool.<p>For example,<br>`sdbinst.exe -?`|
 |-p|Allows SDBs installation with Patches.<p>For example,<br>`sdbinst.exe -p C:\Windows\AppPatch\Myapp.sdb`|
 |-q|Does a silent installation with no visible window, status, or warning information. Fatal errors appear only in Event Viewer (Eventvwr.exe).<p>For example,<br>`sdbinst.exe -q`|
-|-u (filepath)|Does an uninstallation of the specified database.<p>For example,<br>`sdbinst.exe -u C:\example.sdb`|
-|-g (GUID)|Specifies the customized database to uninstall by a globally unique identifier (GUID).<p>For example,<br>`sdbinst.exe -g 6586cd8f-edc9-4ea8-ad94-afabea7f62e3`|
-|-n ("name")|Specifies the customized database to uninstall by file name.<p>For example,<br>`sdbinst.exe -n "My_Database"`|
+|-u *filepath*|Does an uninstallation of the specified database.<p>For example,<br>`sdbinst.exe -u C:\example.sdb`|
+|-g *GUID*|Specifies the customized database to uninstall by a globally unique identifier (GUID).<p>For example,<br>`sdbinst.exe -g 6586cd8f-edc9-4ea8-ad94-afabea7f62e3`|
+|-n *"name"*|Specifies the customized database to uninstall by file name.<p>For example,<br>`sdbinst.exe -n "My_Database"`|
 
 ## Related topics
 
