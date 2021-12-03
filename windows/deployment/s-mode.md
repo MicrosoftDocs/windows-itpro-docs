@@ -7,14 +7,14 @@ ms.localizationpriority: medium
 ms.prod: w10
 ms.sitesec: library
 ms.pagetype: deploy
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.audience: itpro
 author: greg-lindsay
 ms.author: greglin
 audience: itpro
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows 10 in S mode - What is it?

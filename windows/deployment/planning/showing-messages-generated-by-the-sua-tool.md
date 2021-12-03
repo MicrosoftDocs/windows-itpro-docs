@@ -37,41 +37,12 @@ On the user interface for the Standard User Analyzer (SUA) tool, you can show th
 
 3.  On the **View** menu, click the command that corresponds to the messages that you want to see. The following table describes the commands.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left">View menu command</th>
-    <th align="left">Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><strong>Error Messages</strong></p></td>
-    <td align="left"><p>When this command is selected, the user interface shows error messages that the SUA tool has generated. Error messages are highlighted in pink.</p>
-    <p>This command is selected by default.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>Warning Messages</strong></p></td>
-    <td align="left"><p>When this command is selected, the user interface shows warning messages that the SUA tool has generated. Warning messages are highlighted in yellow.</p></td>
-    </tr>
-    <tr class="odd">
-    <td align="left"><p><strong>Information Messages</strong></p></td>
-    <td align="left"><p>When this command is selected, the user interface shows informational messages that the SUA tool has generated. Informational messages are highlighted in green.</p></td>
-    </tr>
-    <tr class="even">
-    <td align="left"><p><strong>Detailed Information</strong></p></td>
-    <td align="left"><p>When this command is selected, the user interface shows information that the SUA tool has generated, such as debug, stack trace, stop code, and severity information.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-     
-
- 
+|View menu command|Description|
+|--- |--- |
+|**Error Messages**|When this command is selected, the user interface shows error messages that the SUA tool has generated. Error messages are highlighted in pink.<p>This command is selected by default.|
+|**Warning Messages**|When this command is selected, the user interface shows warning messages that the SUA tool has generated. Warning messages are highlighted in yellow.|
+|**Information Messages**|When this command is selected, the user interface shows informational messages that the SUA tool has generated. Informational messages are highlighted in green.|
+|**Detailed Information**|When this command is selected, the user interface shows information that the SUA tool has generated, such as debug, stack trace, stop code, and severity information.|
 
  
 

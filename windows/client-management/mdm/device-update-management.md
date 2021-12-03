@@ -11,6 +11,7 @@ ms.prod: w10
 ms.technology: windows
 author: manikadhiman
 ms.date: 11/15/2017
+ms.collection: highpri
 ---
 
 

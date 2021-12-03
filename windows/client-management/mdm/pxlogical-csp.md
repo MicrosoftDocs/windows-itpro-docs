@@ -17,7 +17,8 @@ ms.date: 06/26/2017
 
 The PXLOGICAL configuration service provider is used to add, remove, or modify WAP logical and physical proxies by using WAP or the standard Windows techniques.
 
-> **Note**   This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
+> [!NOTE]
+> This configuration service provider requires the ID\_CAP\_CSP\_FOUNDATION and ID\_CAP\_NETWORKING\_ADMIN capabilities to be accessed from a network configuration application.
 
 
 The following shows the PXLOGICAL configuration service provider management object in tree format as used by OMA Client Provisioning for initial bootstrapping of the device. The OMA DM protocol is not supported by this configuration service provider.
@@ -151,36 +152,12 @@ The following table shows the Microsoft custom elements that this configuration 
 
 These features are available only for the device technique. In addition, the parameter-query and characteristic-query features are not supported for all PXPHYSICAL proxy parameters for all PXADDR types. All parameters can be queried when the PXPHYSICAL proxy PXADDRType is IPv4. For example, if a mobile operator queries the TO-NAPID parameter of a PXPHYSICAL proxy and the PXADDR Type is E164, a noparm is returned.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Feature</th>
-<th>Available</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>parm-query</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>noparm</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>nocharacteristic</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>characteristic-query</p></td>
-<td><p>Yes</p></td>
-</tr>
-</tbody>
-</table>
+|Feature|Available|
+|--- |--- |
+|parm-query|Yes|
+|noparm|Yes|
+|nocharacteristic|Yes|
+|characteristic-query|Yes|
 
  
 
@@ -188,13 +165,4 @@ These features are available only for the device technique. In addition, the par
 
 
 [Configuration service provider reference](configuration-service-provider-reference.md)
-
- 
-
- 
-
-
-
-
-
 

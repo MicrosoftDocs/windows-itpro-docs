@@ -11,6 +11,7 @@ author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: tracyp
 ms.topic: troubleshooting
+ms.collection: highpri
 ---
  
 # Advanced troubleshooting 802.1X authentication
