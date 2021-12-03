@@ -223,24 +223,24 @@ Author identifies the creator of the settings location template. Two optional ch
 Processes contains at least one `<Process>` element, which in turn contains the following child elements: **Filename**, **Architecture**, **ProductName**, **FileDescription**, **ProductVersion**, and **FileVersion**. The Filename child element is mandatory and the others are optional. A fully populated element contains tags similar to this example:
 
 ```xml
-    <Process>
-      <Filename>MyApplication.exe</Filename>
-      <Architecture>Win64</Architecture>
-      <ProductName> MyApplication </ProductName>
-      <FileDescription>MyApplication.exe</FileDescription>
-      <ProductVersion>
-        <Major Minimum="2" Maximum="2" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="0" Maximum="0" />
-        <Patch Minimum="5" Maximum="5" />
-      </ProductVersion>
-      <FileVersion>
-        <Major Minimum="2" Maximum="2" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="0" Maximum="0" />
-        <Patch Minimum="5" Maximum="5" />
-      </FileVersion>
-    </Process>
+<Process>
+  <Filename>MyApplication.exe</Filename>
+  <Architecture>Win64</Architecture>
+  <ProductName> MyApplication </ProductName>
+  <FileDescription>MyApplication.exe</FileDescription>
+  <ProductVersion>
+	<Major Minimum="2" Maximum="2" />
+	<Minor Minimum="0" Maximum="0" />
+	<Build Minimum="0" Maximum="0" />
+	<Patch Minimum="5" Maximum="5" />
+  </ProductVersion>
+  <FileVersion>
+	<Major Minimum="2" Maximum="2" />
+	<Minor Minimum="0" Maximum="0" />
+	<Build Minimum="0" Maximum="0" />
+	<Patch Minimum="5" Maximum="5" />
+  </FileVersion>
+</Process>
 ```
 
 ### Filename
@@ -299,13 +299,13 @@ If this element is absent, the settings location template ignores the process’
 ProductName is an optional element used to identify a product for administrative purposes or reporting. ProductName differs from Filename in that there are no regular expression restrictions on its value. This allows for more easily understood descriptions of a process where the executable name may not be obvious. For example:
 
 ```xml
-    <Process>
-      <Filename>MyApplication.exe</Filename>
-      <ProductName>My Application 6.x by Contoso.com</ProductName>
-      <ProductVersion>
-        <Major Minimum="6" Maximum="6" />
-      </ProductVersion>
-    </Process>
+<Process>
+  <Filename>MyApplication.exe</Filename>
+  <ProductName>My Application 6.x by Contoso.com</ProductName>
+  <ProductVersion>
+	<Major Minimum="6" Maximum="6" />
+  </ProductVersion>
+</Process>
 ```
 
 ### FileDescription
@@ -353,10 +353,10 @@ The product and file version elements may be left unspecified. Doing so makes th
 Product version: 1.0 specified in the UE-V template generator produces the following XML:
 
 ```xml
-      <ProductVersion>
-        <Major Minimum="1" Maximum="1" />
-        <Minor Minimum="0" Maximum="0" />
-      </ProductVersion>
+<ProductVersion>
+  <Major Minimum="1" Maximum="1" />
+  <Minor Minimum="0" Maximum="0" />
+</ProductVersion>
 ```
 
 **Example 2:**
@@ -364,12 +364,12 @@ Product version: 1.0 specified in the UE-V template generator produces the follo
 File version: 5.0.2.1000 specified in the UE-V template generator produces the following XML:
 
 ```xml
-      <FileVersion>
-        <Major Minimum="5" Maximum="5" />
-        <Minor Minimum="0" Maximum="0" />
-        <Build Minimum="2" Maximum="2" />
-        <Patch Minimum="1000" Maximum="1000" />
-      </FileVersion>
+<FileVersion>
+  <Major Minimum="5" Maximum="5" />
+  <Minor Minimum="0" Maximum="0" />
+  <Build Minimum="2" Maximum="2" />
+  <Patch Minimum="1000" Maximum="1000" />
+</FileVersion>
 ```
 
 **Incorrect Example 1 – incomplete range:**
@@ -377,9 +377,9 @@ File version: 5.0.2.1000 specified in the UE-V template generator produces the f
 Only the Minimum attribute is present. Maximum must be included in a range as well.
 
 ```xml
-      <ProductVersion>
-        <Major Minimum="2" />
-      </ProductVersion>
+<ProductVersion>
+  <Major Minimum="2" />
+</ProductVersion>
 ```
 
 **Incorrect Example 2 – Minor specified without Major element:**
@@ -387,9 +387,9 @@ Only the Minimum attribute is present. Maximum must be included in a range as we
 Only the Minor element is present. Major must be included as well.
 
 ```xml
-      <ProductVersion>
-        <Minor Minimum="0" Maximum="0" />
-      </ProductVersion>
+<ProductVersion>
+  <Minor Minimum="0" Maximum="0" />
+</ProductVersion>
 ```
 
 ### FileVersion
@@ -407,18 +407,18 @@ Including a FileVersion element for an application allows for more granular fine
 The child elements and syntax rules for FileVersion are identical to those of ProductVersion.
 
 ```xml
-      <Process>
-        <Filename>MSACCESS.EXE</Filename>
-        <Architecture>Win32</Architecture>
-        <ProductVersion>
-          <Major Minimum="14" Maximum="14" />
-          <Minor Minimum="0" Maximum="0" />
-        </ProductVersion>
-        <FileVersion>
-          <Major Minimum="14" Maximum="14" />
-          <Minor Minimum="0" Maximum="0" />
-        </FileVersion>
-      </Process>
+<Process>
+  <Filename>MSACCESS.EXE</Filename>
+  <Architecture>Win32</Architecture>
+  <ProductVersion>
+    <Major Minimum="14" Maximum="14" />
+    <Minor Minimum="0" Maximum="0" />
+  </ProductVersion>
+  <FileVersion>
+    <Major Minimum="14" Maximum="14" />
+    <Minor Minimum="0" Maximum="0" />
+  </FileVersion>
+</Process>
 ```
 
 ### <a href="" id="application21"></a>Application Element
