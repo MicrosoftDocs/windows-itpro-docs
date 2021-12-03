@@ -10,6 +10,7 @@ ms.topic: troubleshooting
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
+ms.collection: highpri
 ---
 
 # Advanced troubleshooting for Stop error or blue screen error issue
