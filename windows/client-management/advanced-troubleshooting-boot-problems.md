@@ -10,6 +10,7 @@ ms.date: 11/16/2018
 ms.reviewer: 
 manager: dansimp
 ms.topic: troubleshooting
+ms.collection: highpri
 ---
 
 # Advanced troubleshooting for Windows boot problems
@@ -302,7 +303,7 @@ problems can be solved. Modify the registry at your own risk.
 
 To troubleshoot this Stop error, follow these steps to filter the drivers:
 
-1.  Go to Window Recovery Environment (WinRE) by putting an ISO disk of the system in the disk drive. The ISO should be of same version of Windows or a later version.
+1.  Go to Windows Recovery Environment (WinRE) by putting an ISO disk of the system in the disk drive. The ISO should be of same version of Windows or a later version.
 
 2.  Open the registry.
 

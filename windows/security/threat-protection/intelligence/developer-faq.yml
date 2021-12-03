@@ -55,6 +55,6 @@ sections:
           Firewall blocks aren't related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Windows Defender Firewall](../windows-firewall/windows-firewall-with-advanced-security.md).
           
       - question: |
-          Why does the Microsoft Defender Windows Defender SmartScreen say my program isn't commonly downloaded?
+          Why does the Microsoft Defender SmartScreen say my program isn't commonly downloaded?
         answer: |
-          This isn't related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Microsoft Defender Windows Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)
+          This isn't related to Microsoft Defender Antivirus and other Microsoft antimalware. [Learn about Microsoft Defender SmartScreen](../microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview.md)

@@ -7,17 +7,17 @@ ms.mktglfcycl: deploy
 ms.sitesec: library
 author: greg-lindsay
 ms.author: greglin
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.localizationpriority: high
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Plan for Windows 11
 
 **Applies to**
 
--   Windows 11
+-   Windows 11
 
 ## Deployment planning
 

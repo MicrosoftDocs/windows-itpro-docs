@@ -1,15 +1,15 @@
 ---
 title: Overview of Windows as a service
 description: Windows as a service is a way to build, deploy, and service Windows. Learn how Windows as a service works.
-keywords: updates, servicing, current, deployment, semi-annual channel, feature, quality, rings, insider, tools
+keywords: updates, servicing, current, deployment, General Availability Channel, semi-annual channel, feature, quality, rings, insider, tools
 ms.prod: w10
 ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Overview of Windows as a service
@@ -17,7 +17,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 > **Looking for consumer information?** See [Windows Update: FAQ](https://support.microsoft.com/help/12373/windows-update-faq) 
@@ -90,9 +90,9 @@ There are three servicing channels. The [Windows Insider Program](#windows-insid
 
 ### General Availability Channel
 
-In the General Availability Channel, feature updates are available as soon as Microsoft releases them. This servicing model is ideal for pilot deployments and testing of feature updates and for users such as developers who need to work with the latest features immediately. Once the latest release has gone through pilot deployment and testing, you will be able to choose the timing at which it goes into broad deployment.
+In the General Availability Channel, feature updates are available annually. This servicing model is ideal for pilot deployments and testing of feature updates and for users such as developers who need to work with the latest features. Once the latest release has gone through pilot deployment and testing, you will be able to choose the timing at which it goes into broad deployment.
 
-When Microsoft officially releases a feature update, we make it available to any device not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft Endpoint Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the Semi-Annual Channel will be available but not necessarily immediately mandatory, depending on the policy of the management system. For more details about servicing tools, see [Servicing tools](#servicing-tools).
+When Microsoft officially releases a feature update, we make it available to any device not configured to defer feature updates so that those devices can immediately install it. Organizations that use Windows Server Update Services (WSUS), Microsoft Endpoint Configuration Manager, or Windows Update for Business, however, can defer feature updates to selective devices by withholding their approval and deployment. In this scenario, the content available for the General Availability Channel will be available but not necessarily immediately mandatory, depending on the policy of the management system. For more details about servicing tools, see [Servicing tools](#servicing-tools).
 
 
 > [!NOTE]
@@ -120,7 +120,7 @@ The Long-term Servicing Channel is available only in the Windows 10 Enterprise L
 
 ### Windows Insider
 
-For many IT pros, gaining visibility into feature updates early--before they’re available to the Semi-Annual Channel — can be both intriguing and valuable for future end user communications as well as provide the means to test for any issues on the next General Availability release. Windows Insiders can consume and deploy preproduction code to their test machines, gaining early visibility into the next build. Testing the early builds helps both Microsoft and its customers because they have the opportunity to discover possible issues before the update is ever publicly available and can report it to Microsoft.
+For many IT pros, gaining visibility into feature updates early--before they’re available to the General Availability Channel — can be both intriguing and valuable for future end user communications as well as provide the means to test for any issues on the next General Availability release. Windows Insiders can consume and deploy preproduction code to their test machines, gaining early visibility into the next build. Testing the early builds helps both Microsoft and its customers because they have the opportunity to discover possible issues before the update is ever publicly available and can report it to Microsoft.
 
 Microsoft recommends that all organizations have at least a few devices enrolled in the Windows Insider Program and provide feedback on any issues they encounter. For information about the Windows Insider Program for Business, go to [Windows Insider Program for Business](/windows-insider/at-work-pro/wip-4-biz-get-started).
 
@@ -130,7 +130,7 @@ Microsoft recommends that all organizations have at least a few devices enrolled
 
 There are many tools you can use to service Windows as a service. Each option has its pros and cons, ranging from capabilities and control to simplicity and low administrative requirements. The following are examples of the servicing tools available to manage Windows as a service updates:
 
-- **Windows Update (stand-alone)** provides limited control over feature updates, with IT pros manually configuring the device to be in the Semi-Annual Channel. Organizations can target which devices defer updates by selecting the **Defer upgrades** check box in **Start\Settings\Update & Security\Advanced Options** on a Windows client device.
+- **Windows Update (stand-alone)** provides limited control over feature updates, with IT pros manually configuring the device to be in the General Availability Channel. Organizations can target which devices defer updates by selecting the **Defer upgrades** check box in **Start\Settings\Update & Security\Advanced Options** on a Windows client device.
 - **Windows Update for Business** includes control over update deferment and provides centralized management using Group Policy or MDM. Windows Update for Business can be used to defer updates by up to 365 days, depending on the version. These deployment options are available to clients in the General Availability Channel. In addition to being able to use Group Policy to manage Windows Update for Business, either option can be configured without requiring any on-premises infrastructure by using Microsoft Intune.
 - **Windows Server Update Services (WSUS)** provides extensive control over updates and is natively available in the Windows Server operating system. In addition to the ability to defer updates, organizations can add an approval layer for updates and choose to deploy them to specific computers or groups of computers whenever ready. 
 - **Microsoft Endpoint Configuration Manager** provides the greatest control over servicing Windows as a service. IT pros can defer updates, approve them, and have multiple options for targeting deployments and managing bandwidth usage and deployment times. 

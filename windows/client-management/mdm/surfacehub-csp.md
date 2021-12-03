@@ -206,63 +206,22 @@ SurfaceHub
 <p>The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="deviceaccount-errorcontext"></a>**DeviceAccount/ErrorContext**
-<p>If there is an error calling ValidateAndCommit, there is additional context for that error in this node. Here are the possible error values:
 
-<table>
-<colgroup>
-<col width="15%" />
-<col width="20%" />
-<col width="65%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>ErrorContext value</th>
-<th>Stage where error occurred</th>
-<th>Description and suggestions</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>1</p></td>
-<td><p>Unknown</p></td>
-<td><p></p></td>
-</tr>
-<tr class="even">
-<td><p>2</p></td>
-<td><p>Populating account</p></td>
-<td><p>Unable to retrieve account details using the username and password you provided.</p>
-<ul>
-<li>For Azure AD accounts, ensure that UserPrincipalName and Password are valid.</li>
-<li>For AD accounts, ensure that DomainName, UserName, and Password are valid.</li>
-<li>Ensure that the specified account has an Exchange server mailbox.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>3</p></td>
-<td><p>Populating Exchange server address</p></td>
-<td><p>Unable to auto-discover your Exchange server address. Try to manually specify the Exchange server address using the ExchangeServer field.</p></td>
-</tr>
-<tr class="even">
-<td><p>4</p></td>
-<td><p>Validating Exchange server address</p></td>
-<td><p>Unable to validate the Exchange server address. Ensure that the ExchangeServer field is valid.</p></td>
-</tr>
-<tr class="odd">
-<td><p>5</p></td>
-<td><p>Saving account information</p></td>
-<td><p>Unable to save account details to the system.</p></td>
-</tr>
-<tr class="even">
-<td><p>6</p></td>
-<td><p>Validating EAS policies</p></td>
-<td><p>The device account uses an unsupported EAS policy. Make sure the EAS policy is configured correctly according to the admin guide.</p></td>
-</tr>
-</tbody>
-</table>
- 
-<p>The data type is integer. Supported operation is Get.
+If there is an error calling ValidateAndCommit, there is additional context for that error in this node. Here are the possible error values:
+
+| ErrorContext value | Stage where error occurred | Description and suggestions |
+| --- | --- | --- |
+| 1 | Unknown | |
+| 2 | Populating account | Unable to retrieve account details using the username and password you provided.<br/><br/>-For Azure AD accounts, ensure that UserPrincipalName and Password are valid.<br/>-For AD accounts, ensure that DomainName, UserName, and Password are valid.<br/>-Ensure that the specified account has an Exchange server mailbox. |
+| 3 | Populating Exchange server address | Unable to auto-discover your Exchange server address. Try to manually specify the Exchange server address using the ExchangeServer field. |
+| 4 | Validating Exchange server address | Unable to validate the Exchange server address. Ensure that the ExchangeServer field is valid. |
+| 5 | Saving account information | Unable to save account details to the system. |
+| 6 | Validating EAS policies | The device account uses an unsupported EAS policy. Make sure the EAS policy is configured correctly according to the admin guide. |
+
+The data type is integer. Supported operation is Get.
 
 <a href="" id="maintenancehourssimple-hours"></a>**MaintenanceHoursSimple/Hours**
+
 <p>Node for maintenance schedule.
 
 <a href="" id="maintenancehourssimple-hours-starttime"></a>**MaintenanceHoursSimple/Hours/StartTime**
@@ -295,7 +254,7 @@ SurfaceHub
 <p>The data type is boolean. Supported operation is Get and Replace.
 
 <a href="" id="inboxapps-welcome-currentbackgroundpath"></a>**InBoxApps/Welcome/CurrentBackgroundPath**
-<p>Download location for image to be used as the background during user sessions and on the welcome screen. To set this, specify an https URL to a PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
+<p>Download location for image to be used as the background during user sessions and on the welcome screen. To set this, specify an https URL to a 32-bit PNG file (only PNGs are supported for security reasons). If any certificate authorities need to be trusted in order to access the URL, please ensure they are valid and installed on the Hub, otherwise it may not be able to load the image.
 
 <p>The data type is string. Supported operation is Get and Replace.
 
@@ -343,26 +302,11 @@ SurfaceHub
 <a href="" id="inboxapps-wirelessprojection-channel"></a>**InBoxApps/WirelessProjection/Channel**
 <p>Wireless channel to use for Miracast operation. The supported channels are defined by the Wi-Fi Alliance Wi-Fi Direct specification.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p>Works with all Miracast senders in all regions</p></td>
-<td><p>1, 3, 4, 5, 6, 7, 8, 9, 10, 11</p></td>
-</tr>
-<tr class="even">
-<td><p>Works with all 5ghz band Miracast senders in all regions</p></td>
-<td><p>36, 40, 44, 48</p></td>
-</tr>
-<tr class="odd">
-<td><p>Works with all 5ghz band Miracast senders in all regions except Japan</p></td>
-<td><p>149, 153, 157, 161, 165</p></td>
-</tr>
-</tbody>
-</table>
+|Compatibility|Values|
+|--- |--- |
+|Works with all Miracast senders in all regions|1, 3, 4, 5, 6, 7, 8, 9, 10, 11|
+|Works with all 5ghz band Miracast senders in all regions|36, 40, 44, 48|
+|Works with all 5ghz band Miracast senders in all regions except Japan|149, 153, 157, 161, 165|
 
 
 <p>The default value is 255. Outside of regulatory concerns, if the channel is configured incorrectly the driver will either not boot, or will broadcast on the wrong channel (which senders won&#39;t be looking for).
@@ -397,50 +341,19 @@ SurfaceHub
 
 <p>The following table shows the permitted values.
 
-<table>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>Never time out</td></tr>
-<tr>
-<td>1</td>
-<td>1 minute</td>
-</tr>
-<tr>
-<td>2</td>
-<td>2 minutes</td></tr>
-<tr>
-<td>3</td>
-<td>3 minutes</td></tr>
-<tr>
-<td>5</td>
-<td>5 minutes (default)</td></tr>
-<tr>
-<td>10</td>
-<td>10 minutes</td></tr>
-<tr>
-<td>15</td>
-<td>15 minutes</td></tr>
-<tr>
-<td>30</td>
-<td>30 minutes</td></tr>
-<tr>
-<td>60</td>
-<td>1 hour</td></tr>
-<tr>
-<td>120</td>
-<td>2 hours</td></tr>
-<tr>
-<td>240</td>
-<td>4 hours</td></tr>
-</tbody>
-</table>
+|Value|Description|
+|--- |--- |
+|0|Never time out|
+|1|1 minute|
+|2|2 minutes|
+|3|3 minutes|
+|5|5 minutes (default)|
+|10|10 minutes|
+|15|15 minutes|
+|30|30 minutes|
+|60|1 hour|
+|120|2 hours|
+|240|4 hours|
 
 <p>The data type is integer. Supported operation is Get and Replace.
 
@@ -449,50 +362,19 @@ SurfaceHub
 
 <p>The following table shows the permitted values.
 
-<table>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>Never time out</td></tr>
-<tr>
-<td>1</td>
-<td>1 minute (default)</td>
-</tr>
-<tr>
-<td>2</td>
-<td>2 minutes</td></tr>
-<tr>
-<td>3</td>
-<td>3 minutes</td></tr>
-<tr>
-<td>5</td>
-<td>5 minutes</td></tr>
-<tr>
-<td>10</td>
-<td>10 minutes</td></tr>
-<tr>
-<td>15</td>
-<td>15 minutes</td></tr>
-<tr>
-<td>30</td>
-<td>30 minutes</td></tr>
-<tr>
-<td>60</td>
-<td>1 hour</td></tr>
-<tr>
-<td>120</td>
-<td>2 hours</td></tr>
-<tr>
-<td>240</td>
-<td>4 hours</td></tr>
-</tbody>
-</table>
+|Value|Description|
+|--- |--- |
+|0|Never time out|
+|1|1 minute (default)|
+|2|2 minutes|
+|3|3 minutes|
+|5|5 minutes|
+|10|10 minutes|
+|15|15 minutes|
+|30|30 minutes|
+|60|1 hour|
+|120|2 hours|
+|240|4 hours|
 
 <p>The data type is integer. Supported operation is Get and Replace.
 
@@ -501,50 +383,19 @@ SurfaceHub
 
 <p>The following table shows the permitted values.
 
-<table>
-<thead>
-<tr class="header">
-<th>Value</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>Never time out</td></tr>
-<tr>
-<td>1</td>
-<td>1 minute</td>
-</tr>
-<tr>
-<td>2</td>
-<td>2 minutes</td></tr>
-<tr>
-<td>3</td>
-<td>3 minutes</td></tr>
-<tr>
-<td>5</td>
-<td>5 minutes (default)</td></tr>
-<tr>
-<td>10</td>
-<td>10 minutes</td></tr>
-<tr>
-<td>15</td>
-<td>15 minutes</td></tr>
-<tr>
-<td>30</td>
-<td>30 minutes</td></tr>
-<tr>
-<td>60</td>
-<td>1 hour</td></tr>
-<tr>
-<td>120</td>
-<td>2 hours</td></tr>
-<tr>
-<td>240</td>
-<td>4 hours</td></tr>
-</tbody>
-</table>
+|Value|Description|
+|--- |--- |
+|0|Never time out|
+|1|1 minute|
+|2|2 minutes|
+|3|3 minutes|
+|5|5 minutes (default)|
+|10|10 minutes|
+|15|15 minutes|
+|30|30 minutes|
+|60|1 hour|
+|120|2 hours|
+|240|4 hours|
 
 <p>The data type is integer. Supported operation is Get and Replace.
 
