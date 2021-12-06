@@ -16,9 +16,7 @@ ms.topic: article
 
 # What does USMT migrate?
 
-
 ## In this topic
-
 
 -   [Default migration scripts](#bkmk-defaultmigscripts)
 
@@ -32,7 +30,6 @@ ms.topic: article
 
 ## <a href="" id="bkmk-defaultmigscripts"></a>Default migration scripts
 
-
 The User State Migration Tool (USMT) 10.0 is designed so that an IT engineer can precisely define migrations using the USMT .xml scripting language. USMT provides the following sample scripts:
 
 -   **MigApp.XML.** Rules to migrate application settings.
@@ -41,25 +38,23 @@ The User State Migration Tool (USMT) 10.0 is designed so that an IT engineer ca
 
 -   **MigUser.XML.** Rules to migrate user profiles and user data.
 
-    MigUser.xml gathers everything in a user’s profile and then does a file extension- based search of most of the system for other user data. If data doesn’t match either of these criteria, the data won’t be migrated. For the most part, this file describes a "core" migration.
+  MigUser.xml gathers everything in a user’s profile and then does a file extension- based search of most of the system for other user data. If data doesn’t match either of these criteria, the data won’t be migrated. For the most part, this file describes a "core" migration.
 
-    The following data does not migrate with MigUser.xml:
+  The following data does not migrate with MigUser.xml:
 
-    -   Files outside the user profile that don’t match one of the file extensions in MigUser.xml.
-
-    -   Access control lists (ACLs) for folders outside the user profile.
+  - Files outside the user profile that don’t match one of the file extensions in MigUser.xml.
+  - Access control lists (ACLs) for folders outside the user profile.
 
 ## <a href="" id="bkmk-3"></a>User data
-
 
 This section describes the user data that USMT migrates by default, using the MigUser.xml file. It also defines how to migrate ACLs.
 
 -   **Folders from each user profile.** When you specify the MigUser.xml file, USMT migrates everything in a user’s profiles including the following:
 
-    My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites.
+  My Documents, My Video, My Music, My Pictures, desktop files, Start menu, Quick Launch settings, and Favorites.
 
-    >[!IMPORTANT]
-    >Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](./usmt-common-issues.md#usmt-does-not-migrate-the-start-layout).
+  > [!IMPORTANT]
+  > Starting in Windows 10, version 1607 the USMT does not migrate the Start menu layout. To migrate a user's Start menu, you must export and then import settings using the Windows PowerShell cmdlets **Export-StartLayout** and **Import-StartLayout**. For more information, see [USMT common issues](./usmt-common-issues.md#usmt-does-not-migrate-the-start-layout).
 
 -   **Folders from the All Users and Public profiles.** When you specify the MigUser.xml file, USMT also migrates the following from the **All Users** profile in Windows® XP, or the **Public** profile in Windows Vista, Windows 7, or Windows 8:
 
@@ -77,24 +72,19 @@ This section describes the user data that USMT migrates by default, using the Mi
 
     -   Shared Favorites
 
--   **File types.** When you specify the MigUser.xml file, the ScanState tool searches the fixed drives, collects and then migrates files with any of the following file extensions:
+-   **File types.** When you specify the MigUser.xml file, the ScanState tool searches the fixed drives, collects, and then migrates files with any of the following file extensions:
 
-    **.accdb, .ch3, .csv, .dif, .doc\*, .dot\*, .dqy, .iqy, .mcw, .mdb\*, .mpp, .one\*, .oqy, .or6, .pot\*, .ppa, .pps\*, .ppt\*, .pre, .pst, .pub, .qdf, .qel, .qph, .qsd, .rqy, .rtf, .scd, .sh3, .slk, .txt, .vl\*, .vsd, .wk\*, .wpd, .wps, .wq1, .wri, .xl\*, .xla, .xlb, .xls\*.**
+  **.accdb, .ch3, .csv, .dif, .doc\*, .dot\*, .dqy, .iqy, .mcw, .mdb\*, .mpp, .one\*, .oqy, .or6, .pot\*, .ppa, .pps\*, .ppt\*, .pre, .pst, .pub, .qdf, .qel, .qph, .qsd, .rqy, .rtf, .scd, .sh3, .slk, .txt, .vl\*, .vsd, .wk\*, .wpd, .wps, .wq1, .wri, .xl\*, .xla, .xlb, .xls\*.**
 
-    **Note**  
-    The asterisk (\*) stands for zero or more characters.
-
-     
+  > [!NOTE]
+  > The asterisk (\*) stands for zero or more characters.
 
 -   **Access control lists.** USMT migrates ACLs for specified files and folders from computers running both Windows® XP and Windows Vista. For example, if you migrate a file named File1.txt that is read-only for User1 and read/write for User2, these settings will still apply on the destination computer after the migration.
 
-**Important**  
-To migrate ACLs, you must specify the directory to migrate in the MigUser.xml file. Using file patterns like \*.doc will not migrate a directory. The source ACL information is migrated only when you explicitly specify the directory. For example, `<pattern type="File">c:\test docs</pattern>`.
-
- 
+> [!IMPORTANT]
+> To migrate ACLs, you must specify the directory to migrate in the MigUser.xml file. Using file patterns like \*.doc will not migrate a directory. The source ACL information is migrated only when you explicitly specify the directory. For example, `<pattern type="File">c:\test docs</pattern>`.
 
 ## <a href="" id="bkmk-4"></a>Operating-system components
-
 
 USMT migrates operating-system components to a destination computer from computers running Windows 7 and Windows 8
 
@@ -150,228 +140,71 @@ The following components are migrated by default using the manifest files:
 
 \* These settings are not available for an offline migration. For more information, see [Offline Migration Reference](offline-migration-reference.md).
 
-**Important**  
-This list may not be complete. There may be additional components that are migrated.
+> [!IMPORTANT]
+> This list may not be complete. There may be additional components that are migrated.
 
- 
-
-**Note**  
-Some settings, such as fonts, are not applied by the LoadState tool until after the destination computer has been restarted. For this reason, restart the destination computer after you run the LoadState tool.
-
- 
+> [!NOTE]
+> Some settings, such as fonts, are not applied by the LoadState tool until after the destination computer has been restarted. For this reason, restart the destination computer after you run the LoadState tool.
 
 ## <a href="" id="bkmk-2"></a>Supported applications
 
-
 Although it is not required for all applications, it is good practice to install all applications on the destination computer before restoring the user state. Installing applications before migrating settings helps to ensure that the migrated settings are not overwritten by the application installers.
 
-**Note**  
-The versions of installed applications must match on the source and destination computers. USMT does not support migrating the settings of an earlier version of an application to a later version, except for Microsoft Office.
-
- 
-
-**Note**  
-USMT migrates only the settings that have been used or modified by the user. If there is an application setting on the source computer that was not touched by the user, the setting may not migrate.
-
- 
+> [!NOTE]
+> 
+> - The versions of installed applications must match on the source and destination computers. USMT does not support migrating the settings of an earlier version of an application to a later version, except for Microsoft Office.
+> - USMT migrates only the settings that have been used or modified by the user. If there is an application setting on the source computer that was not touched by the user, the setting may not migrate.
 
 When you specify the MigApp.xml file, USMT migrates the settings for the following applications:
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Product</th>
-<th align="left">Version</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Adobe Acrobat Reader</p></td>
-<td align="left"><p>9</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>AOL Instant Messenger</p></td>
-<td align="left"><p>6.8</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Adobe Creative Suite</p></td>
-<td align="left"><p>2</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Adobe Photoshop CS</p></td>
-<td align="left"><p>8, 9</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Adobe ImageReady CS</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Apple iTunes</p></td>
-<td align="left"><p>6, 7, 8</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Apple QuickTime Player</p></td>
-<td align="left"><p>5, 6, 7</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Apple Safari</p></td>
-<td align="left"><p>3.1.2</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Google Chrome</p></td>
-<td align="left"><p>beta</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Google Picasa</p></td>
-<td align="left"><p>3</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Google Talk</p></td>
-<td align="left"><p>beta</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IBM Lotus 1-2-3</p></td>
-<td align="left"><p>9</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>IBM Lotus Notes</p></td>
-<td align="left"><p>6,7, 8</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>IBM Lotus Organizer</p></td>
-<td align="left"><p>5</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>IBM Lotus WordPro</p></td>
-<td align="left"><p>9.9</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Intuit Quicken Deluxe</p></td>
-<td align="left"><p>2009</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Money Plus Business</p></td>
-<td align="left"><p>2008</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Money Plus Home</p></td>
-<td align="left"><p>2008</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Mozilla Firefox</p></td>
-<td align="left"><p>3</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Office</p></td>
-<td align="left"><p>2003, 2007, 2010</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Office Access®</p></td>
-<td align="left"><p>2003, 2007, 2010</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Office Excel®</p></td>
-<td align="left"><p>2003, 2007, 2010</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Office FrontPage®</p></td>
-<td align="left"><p>2003, 2007, 2010</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Office OneNote®</p></td>
-<td align="left"><p>2003, 2007, 2010</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Office Outlook®</p></td>
-<td align="left"><p>2003, 2007, 2010</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Office PowerPoint®</p></td>
-<td align="left"><p>2003, 2007, 2010</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Office Publisher</p></td>
-<td align="left"><p>2003, 2007, 2010</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Office Word</p></td>
-<td align="left"><p>2003, 2007, 2010</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Opera Software Opera</p></td>
-<td align="left"><p>9.5</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Outlook Express</p></td>
-<td align="left"><p>(only mailbox file)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Microsoft Project</p></td>
-<td align="left"><p>2003, 2007</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Office Visio®</p></td>
-<td align="left"><p>2003, 2007</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>RealPlayer Basic</p></td>
-<td align="left"><p>11</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Sage Peachtree</p></td>
-<td align="left"><p>2009</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Skype</p></td>
-<td align="left"><p>3.8</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Live Mail</p></td>
-<td align="left"><p>12, 14</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Live Messenger</p></td>
-<td align="left"><p>8.5, 14</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Live MovieMaker</p></td>
-<td align="left"><p>14</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Live Photo Gallery</p></td>
-<td align="left"><p>12, 14</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Windows Live Writer</p></td>
-<td align="left"><p>12, 14</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows Mail</p></td>
-<td align="left"><p>(Windows 7 and 8)</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Works</p></td>
-<td align="left"><p>9</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Yahoo Messenger</p></td>
-<td align="left"><p>9</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Microsoft Zune™ Software</p></td>
-<td align="left"><p>3</p></td>
-</tr>
-</tbody>
-</table>
-
- 
+|Product|Version|
+|--- |--- |
+|Adobe Acrobat Reader|9|
+|AOL Instant Messenger|6.8|
+|Adobe Creative Suite|2|
+|Adobe Photoshop CS|8, 9|
+|Adobe ImageReady CS||
+|Apple iTunes|6, 7, 8|
+|Apple QuickTime Player|5, 6, 7|
+|Apple Safari|3.1.2|
+|Google Chrome|beta|
+|Google Picasa|3|
+|Google Talk|beta|
+|IBM Lotus 1-2-3|9|
+|IBM Lotus Notes|6,7, 8|
+|IBM Lotus Organizer|5|
+|IBM Lotus WordPro|9.9|
+|Intuit Quicken Deluxe|2009|
+|Money Plus Business|2008|
+|Money Plus Home|2008|
+|Mozilla Firefox|3|
+|Microsoft Office|2003, 2007, 2010|
+|Microsoft Office Access®|2003, 2007, 2010|
+|Microsoft Office Excel®|2003, 2007, 2010|
+|Microsoft Office FrontPage®|2003, 2007, 2010|
+|Microsoft Office OneNote®|2003, 2007, 2010|
+|Microsoft Office Outlook®|2003, 2007, 2010|
+|Microsoft Office PowerPoint®|2003, 2007, 2010|
+|Microsoft Office Publisher|2003, 2007, 2010|
+|Microsoft Office Word|2003, 2007, 2010|
+|Opera Software Opera|9.5|
+|Microsoft Outlook Express|(only mailbox file)|
+|Microsoft Project|2003, 2007|
+|Microsoft Office Visio®|2003, 2007|
+|RealPlayer Basic|11|
+|Sage Peachtree|2009|
+|Skype|3.8|
+|Windows Live Mail|12, 14|
+|Windows Live Messenger|8.5, 14|
+|Windows Live MovieMaker|14|
+|Windows Live Photo Gallery|12, 14|
+|Windows Live Writer|12, 14|
+|Windows Mail|(Windows 7 and 8)|
+|Microsoft Works|9|
+|Yahoo Messenger|9|
+|Microsoft Zune™ Software|3|
 
 ## <a href="" id="no"></a>What USMT does not migrate
-
 
 The following is a list of the settings that USMT does not migrate. If you are having a problem that is not listed here, see [Common Issues](usmt-common-issues.md).
 
@@ -417,8 +250,4 @@ Starting in Windows 10, version 1607 the USMT does not migrate the Start menu la
 
 ## Related topics
 
-
 [Plan your migration](usmt-plan-your-migration.md)
-
- 
-

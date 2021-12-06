@@ -2,7 +2,7 @@
 title: Unenlightened and enlightened app behavior while using Windows Information Protection (WIP) (Windows 10)
 description: Learn how unenlightened and enlightened apps might behave, based on Windows Information Protection (WIP) network policies, app configuration, and other criteria
 keywords: WIP, Enterprise Data Protection, EDP, Windows Information Protection, unenlightened apps, enlightened apps
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security

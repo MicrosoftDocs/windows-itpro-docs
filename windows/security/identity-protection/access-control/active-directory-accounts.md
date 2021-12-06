@@ -1,7 +1,7 @@
 ---
 title: Active Directory Accounts (Windows 10)
 description: Active Directory Accounts
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -107,65 +107,23 @@ The Administrator account can also be disabled when it is not required. Renaming
 
 On a domain controller, the Administrator account becomes the Domain Admin account. The Domain Admin account is used to sign in to the domain controller and this account requires a strong password. The Domain Admin account gives you access to domain resources.
 
-**Note**  
-When the domain controller is initially installed, you can sign in and use Server Manager to set up a local Administrator account, with the rights and permissions you want to assign. For example, you can use a local Administrator account to manage the operating system when you first install it. By using this approach, you can set up the operating system without getting locked out. Generally, you do not need to use the account after installation. You can only create local user accounts on the domain controller, before Active Directory Domain Services is installed, and not afterwards.
-
-
+> [!NOTE]
+> When the domain controller is initially installed, you can sign in and use Server Manager to set up a local Administrator account, with the rights and permissions you want to assign. For example, you can use a local Administrator account to manage the operating system when you first install it. By using this approach, you can set up the operating system without getting locked out. Generally, you do not need to use the account after installation. You can only create local user accounts on the domain controller, before Active Directory Domain Services is installed, and not afterwards.
 
 When Active Directory is installed on the first domain controller in the domain, the Administrator account is created for Active Directory. The Administrator account is the most powerful account in the domain. It is given domain-wide access and administrative rights to administer the computer and the domain, and it has the most extensive rights and permissions over the domain. The person who installs Active Directory Domain Services on the computer creates the password for this account during the installation.
 
 **Administrator account attributes**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-500</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p>User</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>N/A</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p>Administrators, Domain Admins, Enterprise Administrators, Domain Users. Note that the Primary Group ID of all user accounts is Domain Users.</p>
-<p>Group Policy Creator Owners, and Schema Admins in Active Directory</p>
-<p>Domain Users group</p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-service administrators?</p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
-
-
+|Attribute|Value|
+|--- |--- |
+|Well-Known SID/RID|S-1-5-`<domain>`-500|
+|Type|User|
+|Default container|CN=Users, DC=`<domain>`, DC=|
+|Default members|N/A|
+|Default member of|Administrators, Domain Admins, Enterprise Administrators, Domain Users. Note that the Primary Group ID of all user accounts is Domain Users. <br/><br/>Group Policy Creator Owners, and Schema Admins in Active Directory<br/><br/>Domain Users group|
+|Protected by ADMINSDHOLDER?|Yes|
+|Safe to move out of default container?|Yes|
+|Safe to delegate management of this group to non-service administrators?|No|
 
 ## <a href="" id="sec-guest"></a>Guest account
 
@@ -200,54 +158,16 @@ For details about the Guest account attributes, see the following table.
 
 **Guest account attributes**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-501</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p>User</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p>Guests, Domain Guests</p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Can be moved out, but we do not recommend it.</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
-
-
+|Attribute|Value|
+|--- |--- |
+|Well-Known SID/RID|S-1-5-`<domain>`-501|
+|Type|User|
+|Default container|CN=Users, DC=`<domain>`, DC=|
+|Default members|None|
+|Default member of|Guests, Domain Guests|
+|Protected by ADMINSDHOLDER?|No|
+|Safe to move out of default container?|Can be moved out, but we do not recommend it.|
+|Safe to delegate management of this group to non-Service admins?|No|
 
 ## <a href="" id="sec-helpassistant"></a>HelpAssistant account (installed with a Remote Assistance session)
 
@@ -260,9 +180,9 @@ HelpAssistant is the primary account that is used to establish a Remote Assistan
 
 The SIDs that pertain to the default HelpAssistant account include:
 
--   SID: S-1-5-&lt;domain&gt;-13, display name Terminal Server User. This group includes all users who sign in to a server with Remote Desktop Services enabled. Note that, in Windows Server 2008, Remote Desktop Services are called Terminal Services.
+-   SID: S-1-5-`<domain>`-13, display name Terminal Server User. This group includes all users who sign in to a server with Remote Desktop Services enabled. Note that, in Windows Server 2008, Remote Desktop Services are called Terminal Services.
 
--   SID: S-1-5-&lt;domain&gt;-14, display name Remote Interactive Logon. This group includes all users who connect to the computer by using a remote desktop connection. This group is a subset of the Interactive group. Access tokens that contain the Remote Interactive Logon SID also contain the Interactive SID.
+-   SID: S-1-5-`<domain>`-14, display name Remote Interactive Logon. This group includes all users who connect to the computer by using a remote desktop connection. This group is a subset of the Interactive group. Access tokens that contain the Remote Interactive Logon SID also contain the Interactive SID.
 
 For the Windows Server operating system, Remote Assistance is an optional component that is not installed by default. You must install Remote Assistance before it can be used.
 
@@ -270,53 +190,16 @@ For details about the HelpAssistant account attributes, see the following table.
 
 **HelpAssistant account attributes**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-13 (Terminal Server User), S-1-5-&lt;domain&gt;-14 (Remote Interactive Logon)</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p>User</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p>Domain Guests</p>
-<p>Guests</p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Can be moved out, but we do not recommend it.</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
+|Attribute|Value|
+|--- |--- |
+|Well-Known SID/RID|S-1-5-`<domain>`-13 (Terminal Server User), S-1-5-`<domain>`-14 (Remote Interactive Logon)|
+|Type|User|
+|Default container|CN=Users, DC=`<domain>`, DC=|
+|Default members|None|
+|Default member of|Domain Guests<p>Guests|
+|Protected by ADMINSDHOLDER?|No|
+|Safe to move out of default container?|Can be moved out, but we do not recommend it.|
+|Safe to delegate management of this group to non-Service admins?|No|
 
 
 
@@ -355,8 +238,8 @@ For all account types (users, computers, and services)
 
 Because it is impossible to predict the specific errors that will occur for any given user in a production operating environment, you must assume all computers and users will be affected.
 
-**Important**  
-Rebooting a computer is the only reliable way to recover functionality as this will cause both the computer account and user accounts to log back in again. Logging in again will request new TGTs that are valid with the new KRBTGT, correcting any KRBTGT related operational issues on that computer.
+> [!IMPORTANT]
+> Rebooting a computer is the only reliable way to recover functionality as this will cause both the computer account and user accounts to log back in again. Logging in again will request new TGTs that are valid with the new KRBTGT, correcting any KRBTGT related operational issues on that computer.
 
 For information about how to help mitigate the risks associated with a potentially compromised KRBTGT account, see [KRBTGT Account Password Reset Scripts now available for customers](https://blogs.microsoft.com/cybertrust/2015/02/11/krbtgt-account-password-reset-scripts-now-available-for-customers/).
 
@@ -370,54 +253,16 @@ After the credentials are cached on the RODC, the RODC can accept that user's si
 
 For details about the KRBTGT account attributes, see the following table.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-502</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p>User</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p>Domain Users group. Note that the Primary Group ID of all user accounts is Domain Users.</p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Can be moved out, but we do not recommend it.</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
-
-
+|Attribute|Value|
+|--- |--- |
+|Well-Known SID/RID|S-1-5-`<domain>`-502|
+|Type|User|
+|Default container|CN=Users, DC=`<domain>`, DC=|
+|Default members|None|
+|Default member of|Domain Users group. Note that the Primary Group ID of all user accounts is Domain Users.|
+|Protected by ADMINSDHOLDER?|Yes|
+|Safe to move out of default container?|Can be moved out, but we do not recommend it.|
+|Safe to delegate management of this group to non-Service admins?|No|
 
 ## <a href="" id="sec-account-settings"></a>Settings for default local accounts in Active Directory
 
@@ -426,73 +271,18 @@ Each default local account in Active Directory has a number of account settings 
 
 **Settings for default local accounts in Active Directory**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Account settings</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>User must change password at next logon</p></td>
-<td><p>Forces a password change the next time that the user logs signs in to the network. Use this option when you want to ensure that the user is the only person to know his or her password.</p></td>
-</tr>
-<tr class="even">
-<td><p>User cannot change password</p></td>
-<td><p>Prevents the user from changing the password. Use this option when you want to maintain control over a user account, such as for a Guest or temporary account.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Password never expires</p></td>
-<td><p>Prevents a user password from expiring. It is a best practice to enable this option with service accounts and to use strong passwords.</p></td>
-</tr>
-<tr class="even">
-<td><p>Store passwords using reversible encryption</p></td>
-<td><p>Provides support for applications that use protocols requiring knowledge of the plaintext form of the user’s password for authentication purposes.</p>
-<p>This option is required when using Challenge Handshake Authentication Protocol (CHAP) in Internet Authentication Services (IAS), and when using digest authentication in Internet Information Services (IIS).</p></td>
-</tr>
-<tr class="odd">
-<td><p>Account is disabled</p></td>
-<td><p>Prevents the user from signing in with the selected account. As an administrator, you can use disabled accounts as templates for common user accounts.</p></td>
-</tr>
-<tr class="even">
-<td><p>Smart card is required for interactive logon</p></td>
-<td><p>Requires that a user has a smart card to sign on to the network interactively. The user must also have a smart card reader attached to their computer and a valid personal identification number (PIN) for the smart card.</p>
-<p>When this attribute is applied on the account, the effect is as follows:</p>
-<ul>
-<li><p>The attribute only restricts initial authentication for interactive logon and Remote Desktop logon. When interactive or Remote Desktop logon requires a subsequent network logon, such as with a domain credential, an NT Hash provided by the domain controller is used to complete the smartcard authentication process</p></li>
-<li><p>Each time the attribute is enabled on an account, the account’s current password hash value is replaced with a 128-bit random number. This invalidates the use of any previously configured passwords for the account. The value does not change after that unless a new password is set or the attribute is disabled and re-enabled.</p></li>
-<li><p>Accounts with this attribute cannot be used to start services or run scheduled tasks.</p></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><p>Account is trusted for delegation</p></td>
-<td><p>Lets a service running under this account perform operations on behalf of other user accounts on the network. A service running under a user account (also known as a service account) that is trusted for delegation can impersonate a client to gain access to resources, either on the computer where the service is running or on other computers. For example, in a forest that is set to the Windows Server 2003 functional level, this setting is found on the <b>Delegation</b> tab. It is available only for accounts that have been assigned service principal names (SPNs), which are set by using the <b>setspn</b> command from Windows Support Tools. This setting is security-sensitive and should be assigned cautiously.</p></td>
-</tr>
-<tr class="even">
-<td><p>Account is sensitive and cannot be delegated</p></td>
-<td><p>Gives control over a user account, such as for a Guest account or a temporary account. This option can be used if this account cannot be assigned for delegation by another account.</p></td>
-</tr>
-<tr class="odd">
-<td><p>Use DES encryption types for this account</p></td>
-<td><p>Provides support for the Data Encryption Standard (DES). DES supports multiple levels of encryption, including Microsoft Point-to-Point Encryption (MPPE) Standard (40-bit and 56-bit), MPPE standard (56-bit), MPPE Strong (128-bit), Internet Protocol security (IPSec) DES (40-bit), IPSec 56-bit DES, and IPSec Triple DES (3DES).</p>
-<div class="alert">
-<b>Note</b><br/><p>DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see <a href="/archive/blogs/askds/hunting-down-des-in-order-to-securely-deploy-kerberos" data-raw-source="[Hunting down DES in order to securely deploy Kerberos](/archive/blogs/askds/hunting-down-des-in-order-to-securely-deploy-kerberos)">Hunting down DES in order to securely deploy Kerberos</a>.</p>
-</div>
-<div>
-
-</div></td>
-</tr>
-<tr class="even">
-<td><p>Do not require Kerberos preauthentication</p></td>
-<td><p>Provides support for alternate implementations of the Kerberos protocol. Because preauthentication provides additional security, use caution when enabling this option. Note that domain controllers running Windows 2000 or Windows Server 2003 can use other mechanisms to synchronize time.</p></td>
-</tr>
-</tbody>
-</table>
+|Account settings|Description|
+|--- |--- |
+|User must change password at next logon|Forces a password change the next time that the user logs signs in to the network. Use this option when you want to ensure that the user is the only person to know his or her password.|
+|User cannot change password|Prevents the user from changing the password. Use this option when you want to maintain control over a user account, such as for a Guest or temporary account.|
+|Password never expires|Prevents a user password from expiring. It is a best practice to enable this option with service accounts and to use strong passwords.|
+|Store passwords using reversible encryption|Provides support for applications that use protocols requiring knowledge of the plaintext form of the user’s password for authentication purposes.<br/><br/>This option is required when using Challenge Handshake Authentication Protocol (CHAP) in Internet Authentication Services (IAS), and when using digest authentication in Internet Information Services (IIS).|
+|Account is disabled|Prevents the user from signing in with the selected account. As an administrator, you can use disabled accounts as templates for common user accounts.|
+|Smart card is required for interactive logon|Requires that a user has a smart card to sign on to the network interactively. The user must also have a smart card reader attached to their computer and a valid personal identification number (PIN) for the smart card.<br/><br/>When this attribute is applied on the account, the effect is as follows:<li>The attribute only restricts initial authentication for interactive logon and Remote Desktop logon. When interactive or Remote Desktop logon requires a subsequent network logon, such as with a domain credential, an NT Hash provided by the domain controller is used to complete the smartcard authentication process<li>Each time the attribute is enabled on an account, the account’s current password hash value is replaced with a 128-bit random number. This invalidates the use of any previously configured passwords for the account. The value does not change after that unless a new password is set or the attribute is disabled and re-enabled.<li>Accounts with this attribute cannot be used to start services or run scheduled tasks.|
+|Account is trusted for delegation|Lets a service running under this account perform operations on behalf of other user accounts on the network. A service running under a user account (also known as a service account) that is trusted for delegation can impersonate a client to gain access to resources, either on the computer where the service is running or on other computers. For example, in a forest that is set to the Windows Server 2003 functional level, this setting is found on the Delegation tab. It is available only for accounts that have been assigned service principal names (SPNs), which are set by using the setspn command from Windows Support Tools. This setting is security-sensitive and should be assigned cautiously.|
+|Account is sensitive and cannot be delegated|Gives control over a user account, such as for a Guest account or a temporary account. This option can be used if this account cannot be assigned for delegation by another account.|
+|Use DES encryption types for this account|Provides support for the Data Encryption Standard (DES). DES supports multiple levels of encryption, including Microsoft Point-to-Point Encryption (MPPE) Standard (40-bit and 56-bit), MPPE standard (56-bit), MPPE Strong (128-bit), Internet Protocol security (IPSec) DES (40-bit), IPSec 56-bit DES, and IPSec Triple DES (3DES).<div class="alert"> **Note:** DES is not enabled by default in Windows Server operating systems starting with Windows Server 2008 R2, nor in Windows client operating systems starting with Windows 7. For these operating systems, computers will not use DES-CBC-MD5 or DES-CBC-CRC cipher suites by default. If your environment requires DES, then this setting might affect compatibility with client computers or services and applications in your environment. For more information, see [Hunting down DES in order to securely deploy Kerberos](/archive/blogs/askds/hunting-down-des-in-order-to-securely-deploy-kerberos)</div>|
+|Do not require Kerberos preauthentication|Provides support for alternate implementations of the Kerberos protocol. Because preauthentication provides additional security, use caution when enabling this option. Note that domain controllers running Windows 2000 or Windows Server 2003 can use other mechanisms to synchronize time.|
 
 
 
@@ -552,8 +342,8 @@ Restrict Domain Admins accounts and other sensitive accounts to prevent them fro
 
 -   **Standard user account**. Grant standard user rights for standard user tasks, such as email, web browsing, and using line-of-business (LOB) applications. These accounts should not be granted administrator rights.
 
-**Important**  
-Ensure that sensitive administrator accounts cannot access email or browse the Internet as described in the following section.
+> [!IMPORTANT]
+> Ensure that sensitive administrator accounts cannot access email or browse the Internet as described in the following section.
 
 
 
@@ -561,8 +351,8 @@ Ensure that sensitive administrator accounts cannot access email or browse the I
 
 Administrators need to manage job responsibilities that require sensitive administrator rights from a dedicated workstation because they do not have easy physical access to the servers. A workstation that is connected to the Internet and has email and web browsing access is regularly exposed to compromise through phishing, downloading, and other types of Internet attacks. Because of these threats, it is a best practice to set these administrators up by using workstations that are dedicated to administrative duties only, and not provide access to the Internet, including email and web browsing. For more information, see [Separate administrator accounts from user accounts](#task1-separate-admin-accounts).
 
-**Note**  
-If the administrators in your environment can sign in locally to managed servers and perform all tasks without elevated rights or domain rights from their workstation, you can skip this task.
+> [!NOTE]
+> If the administrators in your environment can sign in locally to managed servers and perform all tasks without elevated rights or domain rights from their workstation, you can skip this task.
 
 
 
@@ -582,8 +372,8 @@ If the administrators in your environment can sign in locally to managed servers
 
 The following procedure describes how to block Internet access by creating a Group Policy Object (GPO) that configures an invalid proxy address on administrative workstations. These instructions apply only to computers running Internet Explorer and other Windows components that use these proxy settings.
 
-**Note**  
-In this procedure, the workstations are dedicated to domain administrators. By simply modifying the administrator accounts to grant permission to administrators to sign in locally, you can create additional OUs to manage administrators that have fewer administrative rights to use the instructions described in the following procedure.
+> [!NOTE]
+> In this procedure, the workstations are dedicated to domain administrators. By simply modifying the administrator accounts to grant permission to administrators to sign in locally, you can create additional OUs to manage administrators that have fewer administrative rights to use the instructions described in the following procedure.
 
 **To install administrative workstations in a domain and block Internet and email access (minimum)**
 
@@ -591,9 +381,10 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
 2.  Create computer accounts for the new workstations.
 
-    > **Note**&nbsp;&nbsp;You might have to delegate permissions to join computers to the domain if the account that joins the workstations to the domain does not already have them. For more information, see [Delegation of Administration in Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/20292.delegation-of-administration-in-active-directory.aspx).
+    > [!NOTE]
+    > You might have to delegate permissions to join computers to the domain if the account that joins the workstations to the domain does not already have them. For more information, see [Delegation of Administration in Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/20292.delegation-of-administration-in-active-directory.aspx).
 
-    ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample1.gif)
+    ![Active Directory local accounts](images/adlocalaccounts-proc1-sample1.gif)
 
 3.  Close Active Directory Users and Computers.
 
@@ -601,13 +392,13 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
 5.  Right-click the new OU, and &gt; **Create a GPO in this domain, and Link it here**.
 
-    ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample2.png)
+    ![Active Directory's local accounts](images/adlocalaccounts-proc1-sample2.png)
 
 6.  Name the GPO, and &gt; **OK**.
 
 7.  Expand the GPO, right-click the new GPO, and &gt; **Edit**.
 
-    ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample3.png)
+    ![Active Directory (AD) local accounts](images/adlocalaccounts-proc1-sample3.png)
 
 8.  Configure which members of accounts can log on locally to these administrative workstations as follows:
 
@@ -619,14 +410,14 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     4.  Click **Add User or Group** &gt; **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        **Important**  
-        These instructions assume that the workstation is to be dedicated to domain administrators.
+        > [!IMPORTANT]
+        > These instructions assume that the workstation is to be dedicated to domain administrators.
 
 
 
     5.  Click **Add User or Group**, type **Administrators**, and &gt; **OK**.
 
-        ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample4.png)
+        ![AD local accounts](images/adlocalaccounts-proc1-sample4.png)
 
 9.  Configure the proxy configuration:
 
@@ -634,7 +425,7 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     2.  Double-click **Proxy Settings**, select the **Enable proxy settings** check box, type **127.0.0.1** (the network Loopback IP address) as the proxy address, and &gt; **OK**.
 
-        ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample5.png)
+        ![AD's local accounts](images/adlocalaccounts-proc1-sample5.png)
 
 10. Configure the loopback processing mode to enable the user Group Policy proxy setting to apply to all users on the computer as follows:
 
@@ -650,58 +441,28 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
     2.  Configure Windows Update settings as described in the following table.
 
-        <table>
-        <colgroup>
-        <col width="50%" />
-        <col width="50%" />
-        </colgroup>
-        <tbody>
-        <tr class="odd">
-        <td><p><b>Windows Update Setting</b></p></td>
-        <td><p><b>Configuration</b></p></td>
-        </tr>
-        <tr class="even">
-        <td><p>Allow Automatic Updates immediate installation</p></td>
-        <td><p>Enabled</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>Configure Automatic Updates</p></td>
-        <td><p>Enabled<br>4 - Auto download and schedule the installation<br>0 - Every day 03:00</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>Enable Windows Update Power Management to automatically wake up the system to install scheduled updates</p></td>
-        <td><p>Enabled</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>Specify intranet Microsoft Update service location</p></td>
-        <td><p>Enabled http://&lt;WSUSServername&gt; http://&lt;WSUSServername&gt; Where &lt;WSUSServername&gt; is the DNS name or IP address of the Windows Server Update Services (WSUS) in the environment.</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>Automatic Updates detection frequency</p></td>
-        <td><p>6 hours</p></td>
-        </tr>
-        <tr class="odd">
-        <td><p>Re-prompt for restart with scheduled installations</p></td>
-        <td><p>1 minute</p></td>
-        </tr>
-        <tr class="even">
-        <td><p>Delay restart for scheduled installations</p></td>
-        <td><p>5 minutes</p></td>
-        </tr>
-        </tbody>
-        </table>
+        |Windows Update Setting|Configuration|
+        |--- |--- |
+        |Allow Automatic Updates immediate installation|Enabled|
+        |Configure Automatic Updates|Enabled4 - Auto download and schedule the installation0 - Every day 03:00|
+        |Enable Windows Update Power Management to automatically wake up the system to install scheduled updates|Enabled|
+        |Specify intranet Microsoft Update service location|Enabled `http://<WSUSServername> http://<WSUSServername>` Where `<WSUSServername>` is the DNS name or IP address of the Windows Server Update Services (WSUS) in the environment.|
+        |Automatic Updates detection frequency|6 hours|
+        |Re-prompt for restart with scheduled installations|1 minute|
+        |Delay restart for scheduled installations|5 minutes|
 
-        > **Note**&nbsp;&nbsp;This step assumes that Windows Server Update Services (WSUS) is installed and configured in the environment. You can skip this step if you use another tool to deploy software updates. Also, if the public Microsoft Windows Update service only is used on the Internet, then these administrative workstations no longer receive updates.
+        > [!NOTE]
+        > This step assumes that Windows Server Update Services (WSUS) is installed and configured in the environment. You can skip this step if you use another tool to deploy software updates. Also, if the public Microsoft Windows Update service only is used on the Internet, then these administrative workstations no longer receive updates.
 
 12. Configure the inbound firewall to block all connections as follows:
 
     1.  Right-click **Windows Firewall with Advanced Security LDAP://path**, and &gt; **Properties**.
 
-        ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample6.png)
+        ![Local accounts for Active Directory](images/adlocalaccounts-proc1-sample6.png)
 
     2.  On each profile, ensure that the firewall is enabled and that inbound connections are set to **Block all connections**.
 
-        ![Active Directory local accounts.](images/adlocalaccounts-proc1-sample7.png)
+        ![Local accounts for an AD](images/adlocalaccounts-proc1-sample7.png)
 
     3.  Click **OK** to complete the configuration.
 
@@ -713,8 +474,8 @@ In this procedure, the workstations are dedicated to domain administrators. By s
 
 It is a best practice to restrict administrators from using sensitive administrator accounts to sign in to lower-trust servers and workstations. This restriction prevents administrators from inadvertently increasing the risk of credential theft by signing in to a lower-trust computer.
 
-**Important**  
-Ensure that you either have local access to the domain controller or that you have built at least one dedicated administrative workstation.
+> [!IMPORTANT]
+> Ensure that you either have local access to the domain controller or that you have built at least one dedicated administrative workstation.
 
 
 
@@ -726,8 +487,8 @@ Restrict logon access to lower-trust servers and workstations by using the follo
 
 -   **Ideal**. Restrict server administrators from signing in to workstations, in addition to domain administrators.
 
-**Note**  
-For this procedure, do not link accounts to the OU that contain workstations for administrators that perform administration duties only, and do not provide Internet or email access. For more information, see [Create dedicated workstation hosts for administrators](#task2-admin-workstations)
+> [!NOTE]
+> For this procedure, do not link accounts to the OU that contain workstations for administrators that perform administration duties only, and do not provide Internet or email access. For more information, see [Create dedicated workstation hosts for administrators](#task2-admin-workstations)
 
 
 
@@ -735,15 +496,15 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
 1.  As a domain administrator, open the Group Policy Management Console (GPMC).
 
-2.  Open **Group Policy Management**, and expand *&lt;forest&gt;*\\Domains\\*&lt;domain&gt;*, and then expand to **Group Policy Objects**.
+2.  Open **Group Policy Management**, and expand *&lt;forest&gt;*\\Domains\\`<domain>`, and then expand to **Group Policy Objects**.
 
 3.  Right-click **Group Policy Objects**, and &gt; **New**.
 
-    ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample1.png)
+    ![Local account's representation - Active Directory](images/adlocalaccounts-proc2-sample1.png)
 
 4.  In the **New GPO** dialog box, name the GPO that restricts administrators from signing in to workstations, and &gt; **OK**.
 
-    ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample2.png)
+    ![Local account's representation - AD](images/adlocalaccounts-proc2-sample2.png)
 
 5.  Right-click **New GPO**, and &gt; **Edit**.
 
@@ -757,10 +518,10 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     3.  Click **Add User or Group**, click **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample3.png)
+        ![An Active Directory's local accounts](images/adlocalaccounts-proc2-sample3.png)
 
-        **Note**  
-        You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
+        > [!NOTE]
+        > You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
 
 
 
@@ -768,8 +529,8 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
 8.  Configure the user rights to deny batch and service logon rights for domain administrators as follows:
 
-    **Note**  
-    Completing this step might cause issues with administrator tasks that run as scheduled tasks or services with accounts in the Domain Admins group. The practice of using domain administrator accounts to run services and tasks on workstations creates a significant risk of credential theft attacks and therefore should be replaced with alternative means to run scheduled tasks or services.
+    > [!NOTE]
+    > Completing this step might cause issues with administrator tasks that run as scheduled tasks or services with accounts in the Domain Admins group. The practice of using domain administrator accounts to run services and tasks on workstations creates a significant risk of credential theft attacks and therefore should be replaced with alternative means to run scheduled tasks or services.
 
 
 
@@ -779,10 +540,10 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     3.  Click **Add User or Group** &gt; **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample4.png)
+        ![An AD's local accounts](images/adlocalaccounts-proc2-sample4.png)
 
-        **Note**  
-        You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
+        > [!NOTE]
+        > You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
 
 
 
@@ -792,24 +553,30 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     6.  Click **Add User or Group** &gt; **Browse**, type **Domain Admins**, and &gt; **OK**.
 
-        ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample5.png)
+        ![Local accounts for AD](images/adlocalaccounts-proc2-sample5.png)
 
-        **Note**  
-        You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
+        > [!NOTE]
+        > You can optionally add any groups that contain server administrators who you want to restrict from signing in to workstations.
 
 
 
 9.  Link the GPO to the first Workstations OU.
 
-    Navigate to the *&lt;forest&gt;*\\Domains\\*&lt;domain&gt;*\\OU Path, and then:
+    Navigate to the *&lt;forest&gt;*\\Domains\\`<domain>`\\OU Path, and then:
 
     1.  Right-click the workstation OU, and then &gt; **Link an Existing GPO**.
 
-        ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample6.png)
+        ![Local accounts representation for an Active Directory](images/adlocalaccounts-proc2-sample6.png)
 
     2.  Select the GPO that you just created, and &gt; **OK**.
 
-        ![Active Directory local accounts.](images/adlocalaccounts-proc2-sample7.png)
+        ![Active Directory's local accounts' presentation](images/adlocalaccounts-proc2-sample7.png)
+=======
+        ![Active Directory local accounts 13](images/adlocalaccounts-proc2-sample6.png)
+
+    2.  Select the GPO that you just created, and &gt; **OK**.
+
+        ![Active Directory local accounts 14](images/adlocalaccounts-proc2-sample7.png)
 
 10. Test the functionality of enterprise applications on workstations in the first OU and resolve any issues caused by the new policy.
 
@@ -817,8 +584,8 @@ For this procedure, do not link accounts to the OU that contain workstations for
 
     However, do not create a link to the Administrative Workstation OU if it is created for administrative workstations that are dedicated to administration duties only, and that are without Internet or email access. For more information, see [Create dedicated workstation hosts for administrators](#task2-admin-workstations).
 
-    **Important**  
-    If you later extend this solution, do not deny logon rights for the **Domain Users** group. The **Domain Users** group includes all user accounts in the domain, including Users, Domain Administrators, and Enterprise Administrators.
+    > [!IMPORTANT]
+    > If you later extend this solution, do not deny logon rights for the **Domain Users** group. The **Domain Users** group includes all user accounts in the domain, including Users, Domain Administrators, and Enterprise Administrators.
 
 
 
@@ -832,7 +599,7 @@ It is a best practice to configure the user objects for all sensitive accounts i
 
 As with any configuration change, test this enabled setting fully to ensure that it performs correctly before you implement it.
 
-![Active Directory local accounts.](images/adlocalaccounts-proc3-sample1.png)
+![An Active Directory local accounts' presentation](images/adlocalaccounts-proc3-sample1.png)
 
 ## <a href="" id="sec-secure-manage-dcs"></a>Secure and manage domain controllers
 

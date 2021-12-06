@@ -4,7 +4,7 @@ description: Use Configuration Manager to make & deploy a Windows Information Pr
 ms.assetid: 85b99c20-1319-4aa3-8635-c1a87b244529
 ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection, SCCM, System Center Configuration Manager, Configuration Manager, MEMCM, Microsoft Endpoint Configuration Manager
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security

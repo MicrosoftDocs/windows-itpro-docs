@@ -2,7 +2,7 @@
 title: Essential services and connected experiences for Windows
 description: Explains what the essential services and connected experiences are for Windows
 keywords: privacy, manage connections to Microsoft
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -10,8 +10,10 @@ audience: ITPro
 author: siosulli
 ms.author: dansimp
 manager: dansimp
+ms.technology: privacy
 ms.date: 11/24/2021
 ms.collection: highpri
+
 ---
 
 # Essential services and connected experiences for Windows
