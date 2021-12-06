@@ -45,7 +45,3 @@ If success auditing is enabled, an audit entry is generated each time any accoun
 -   [5039](event-5039.md)(-): A registry key was virtualized.
 
 -   [4670](event-4670.md)(S): Permissions on an object were changed.
-
-> [!NOTE]
-> On creating a subkey for a parent, the expectation is to see a 4656 event for the newly created subkey. You will see this event only when "Audit Object Access" is enabled under **Local Policies** > **Audit Policy** in Local Security Policy. This event is not generated while using advanced audit policy configurations for registry specific events, such as using "auditpol.exe /set /subcategory:{0CCE921E-69AE-11D9-BED3-505054503030} /success:enable". While using regedit.exe for creating subkeys you will see an additional 4663 event because you perform NtEnumerateKeys on the newly created subkey. You might additionally see a 4663 event on the newly created key if you try to rename the subkey. While using reg.exe for creating subkeys you'll see an additional 4663 event because you perform NtSetValueKey on the newly created subkey. We recommend not relying on 4663 events for subkey creation as they are dependent on the type of permissions enabled on the parent and are not consistent across regedit.exe and reg.exe.
-
