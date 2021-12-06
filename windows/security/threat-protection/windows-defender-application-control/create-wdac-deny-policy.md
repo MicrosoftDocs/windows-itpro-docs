@@ -105,6 +105,7 @@ If you are currently using [multiple policies](deploy-multiple-windows-defender-
 
 Policy 1 is an allow list of Windows and Microsoft-signed applications. Policy 2 is our new deny policy which blocks MaliciousApp.exe with the Allow All rules. MaliciousApp.exe will be blocked since there is an explicit block rule in Policy 2. Windows and Microsoft applications will be allowed since there is an explicit allow rule in Policy 1 and Policy 2 (due to the Allow All rules). All other applications, if not Windows and Microsoft signed, e.g., ExampleApp.exe, will not be allowed as this application is only trusted by Policy 2 (due to the Allow All rules) and not Policy 1.
 
+The second option involves merging the deny list with your existing WDAC policy, regardless if the policy is an allow list policy and contains allow and/or deny rules. 
 ## Best Practices
 
 1. **Starting with Audit Mode Policies** - as with all new policies, we recommend rolling out your new deny policy in Audit Mode and monitoring the [3077 block events](event-id-explanations.md#microsoft-windows-codeintegrity-operational-log-event-ids) to ensure only the applications you intended to block are being blocked. More information on monitoring block events via the Event Viewer logs and Advanced Hunting: [Managing and troubleshooting Windows Defender Application Control policies](windows-defender-application-control-operational-guide.md)
