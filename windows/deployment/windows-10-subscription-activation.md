@@ -11,7 +11,9 @@ ms.pagetype: mdt
 audience: itpro
 author: greg-lindsay
 manager: dougeby
-ms.collection: M365-modern-desktop
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 search.appverid:
 - MET150
 ms.topic: article

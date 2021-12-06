@@ -7,16 +7,16 @@ ms.mktglfcycl: manage
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Windows client updates, channels, and tools
 
 **Applies to**
 
-- Windows 10
+- Windows 10
 - Windows 11
 
 ## How Windows updates work

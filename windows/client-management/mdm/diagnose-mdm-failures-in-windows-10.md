@@ -8,8 +8,9 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.date: 06/25/2018
+ms.collection: highpri
 ---
 
 # Diagnose MDM failures in Windows 10
