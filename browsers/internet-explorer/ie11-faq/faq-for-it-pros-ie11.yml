@@ -25,8 +25,6 @@ sections:
   - name: Ignored
     questions:
       - question: |
-          Frequently Asked Questions
-      - question: |
           What operating system does IE11 run on?
         answer: |
           -   Windows 10
