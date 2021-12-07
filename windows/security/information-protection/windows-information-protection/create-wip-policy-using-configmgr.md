@@ -392,13 +392,21 @@ There are no default locations included with WIP, you must add each of your netw
 
          If you have multiple ranges, you must separate them using the "," delimiter.
 
-         **Format examples**: **Starting IPv4 Address:** `3.4.0.1`, **Ending IPv4 Address:** `3.4.255.254`, **Custom URI:** `3.4.0.1-3.4.255.254`, `10.0.0.1-10.255.255.254`
+         **Format examples**:
+
+         - **Starting IPv4 Address:** `3.4.0.1`
+         - **Ending IPv4 Address:** `3.4.255.254`
+         - **Custom URI:** `3.4.0.1-3.4.255.254, 10.0.0.1-10.255.255.254`
 
      - **Enterprise IPv6 Range**: Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.
 
          If you have multiple ranges, you must separate them using the "," delimiter.
 
-         **Format examples**: **Starting IPv6 Address:** `2a01:110::`, **Ending IPv6 Address:** `2a01:110:7fff:ffff:ffff:ffff:ffff:ffff` **Custom URI:** `2a01:110:7fff:ffff:ffff:ffff:ffff:ffff`,`fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff`
+         **Format examples**:
+
+         - **Starting IPv6 Address:** `2a01:110::`
+         - **Ending IPv6 Address:** `2a01:110:7fff:ffff:ffff:ffff:ffff:ffff`
+         - **Custom URI:** `2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff`
 
      - **Neutral Resources**: Specify your authentication redirection endpoints for your company. These locations are considered enterprise or personal, based on the context of the connection before the redirection.
 
