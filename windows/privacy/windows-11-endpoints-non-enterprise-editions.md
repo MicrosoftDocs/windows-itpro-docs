@@ -12,7 +12,7 @@ ms.author: v-hakima
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 10/04/2021
+ms.date: 12/01/2021
 ms.technology: privacy
 ---
 # Windows 11 connection endpoints for non-Enterprise editions
