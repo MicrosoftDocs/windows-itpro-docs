@@ -41,7 +41,7 @@ Here's an approximate scaling guide for WEF events:
 | 5,000 - 50,000      | SEM                        |
 | 50,000+             | Hadoop/HDInsight/Data Lake |
  
-Event generation on a device must be enabled either separately or as part of the GPO for the baseline WEF implementation, including enabling of disabled event logs and setting channel permissions. For more info, see [Appendix C - Event channel settings (enable and channel access) methods](#bkmk-appendixc). This condition is because WEF is a passive system regarding the event log. It cannot change the size of event log files, enable disabled event channels, change channel permissions, or adjust a security audit policy. WEF only queries event channels for existing events. Additionally, having event generation already occurring on a device allows for more complete event collection building a complete history of system activity. Otherwise, you'll be limited to the speed of GPO and WEF subscription refresh cycles to make changes to what is being generated on the device. On modern devices, enabling more event channels and expanding the size of event log files has not resulted in noticeable performance differences.
+Event generation on a device must be enabled either separately or as part of the GPO for the baseline WEF implementation, including enabling of disabled event logs and setting channel permissions. For more info, see [Appendix C - Event channel settings (enable and channel access) methods](#bkmk-appendixc). This condition is because WEF is a passive system regarding the event log. It cannot change the size of event log files, enable disabled event channels, change channel permissions, or adjust a security audit policy. WEF only queries event channels for existing events. Additionally, having event generation already occurring on a device allows for more complete event collection building a complete history of system activity. Otherwise, you'll be limited to the speed of GPO and WEF subscription refresh cycles to make changes to what is being generated on the device. On modern devices, enabling additional event channels and expanding the size of event log files hasn't resulted in noticeable performance differences.
 
 For the minimum recommended audit policy and registry system ACL settings, see [Appendix A - Minimum recommended minimum audit policy](#bkmk-appendixa) and [Appendix B - Recommended minimum registry system ACL policy](#bkmk-appendixb).
 
@@ -66,7 +66,7 @@ This section addresses common questions from IT pros and customers.
 
 The short answer is: No.
 
-The longer answer is: The **Eventlog-forwardingPlugin/Operational** event channel logs the success, warning, and error events related to WEF subscriptions present on the device. Unless the user opens Event Viewer and navigates to that channel, they will not notice WEF either through resource consumption or Graphical User Interface pop-ups. Even if there is an issue with the WEF subscription, there is no user interaction or performance degradation. All success, warning, and failure events are logged to this operational event channel.
+The longer answer is: The **Eventlog-forwardingPlugin/Operational** event channel logs the success, warning, and error events related to WEF subscriptions present on the device. Unless the user opens Event Viewer and navigates to that channel, they won't notice WEF either through resource consumption or Graphical User Interface pop-ups. Even if there is an issue with the WEF subscription, there is no user interaction or performance degradation. All success, warning, and failure events are logged to this operational event channel.
 
 ### Is WEF Push or Pull?
 
@@ -91,13 +91,13 @@ In a domain setting, the connection used to transmit WEF events is encrypted usi
 
 This authentication and encryption is performed regardless if HTTP or HTTPS is selected.
 
-The HTTPS option is available if certificate based authentication is used, in cases where the Kerberos based mutual authentication is not an option. The SSL certificate and provisioned client certificates are used to provide mutual authentication.
+The HTTPS option is available if certificate based authentication is used, in cases where the Kerberos based mutual authentication isn't an option. The SSL certificate and provisioned client certificates are used to provide mutual authentication.
 
 ### Do WEF Clients have a separate buffer for events?
 
 The WEF client machines local event log is the buffer for WEF for when the connection to the WEC server is lost. To increase the “buffer size”, increase the maximum file size of the specific event log file where events are being selected. For more info, see [Appendix C – Event Channel Settings (enable and Channel Access) methods](#bkmk-appendixc).
 
-When the event log overwrites existing events (resulting in data loss if the device is not connected to the Event Collector), there is no notification sent to the WEF collector that events are lost from the client. Neither is there an indicator that there was a gap encountered in the event stream.
+When the event log overwrites existing events (resulting in data loss if the device isn't connected to the Event Collector), there is no notification sent to the WEF collector that events are lost from the client. Neither is there an indicator that there was a gap encountered in the event stream.
 
 ### What format is used for forwarded events?
 
@@ -119,7 +119,7 @@ This table outlines the built-in delivery options:
 
 | Event delivery optimization options | Description |
 | - | - |
-| Normal | This option ensures reliable delivery of events and does not attempt to conserve bandwidth. It is the appropriate choice unless you need tighter control over bandwidth usage or need forwarded events delivered as quickly as possible. It uses pull delivery mode, batches 5 items at a time and sets a batch timeout of 15 minutes. |
+| Normal | This option ensures reliable delivery of events and doesn't attempt to conserve bandwidth. It is the appropriate choice unless you need tighter control over bandwidth usage or need forwarded events delivered as quickly as possible. It uses pull delivery mode, batches 5 items at a time and sets a batch timeout of 15 minutes. |
 | Minimize bandwidth | This option ensures that the use of network bandwidth for event delivery is strictly controlled. It is an appropriate choice if you want to limit the frequency of network connections made to deliver events. It uses push delivery mode and sets a batch timeout of 6 hours. In addition, it uses a heartbeat interval of 6 hours. |
 | Minimize latency | This option ensures that events are delivered with minimal delay. It is an appropriate choice if you are collecting alerts or critical events. It uses push delivery mode and sets a batch timeout of 30 seconds. |
  
@@ -149,13 +149,13 @@ Yes. If you desire a High-Availability environment, simply configure multiple WE
 
 There are three factors that limit the scalability of WEC servers. The general rule for a stable WEC server on commodity hardware is planning for a total of 3,000 events per second on average for all configured subscriptions.
 
--   **Disk I/O**. The WEC server does not process or validate the received event, but rather buffers the received event and then logs it to a local event log file (EVTX file). The speed of logging to the EVTX file is limited by the disk write speed. Isolating the EVTX file to its own array or using high speed disks can increase the number of events per second that a single WEC server can receive.
--   **Network Connections**. While a WEF source does not maintain a permanent, persistent connection to the WEC server, it does not immediately disconnect after sending its events. This means that the number of WEF sources that can simultaneously connect to the WEC server is limited to the open TCP ports available on the WEC server.
--   **Registry size**. For each unique device that connects to a WEF subscription, there is a registry key (corresponding to the FQDN of the WEF Client) created to store bookmark and source heartbeat information. If this is not pruned to remove inactive clients this set of registry keys can grow to an unmanageable size over time.
+-   **Disk I/O**. The WEC server doesn't process or validate the received event, but rather buffers the received event and then logs it to a local event log file (EVTX file). The speed of logging to the EVTX file is limited by the disk write speed. Isolating the EVTX file to its own array or using high speed disks can increase the number of events per second that a single WEC server can receive.
+-   **Network Connections**. While a WEF source doesn't maintain a permanent, persistent connection to the WEC server, it doesn't immediately disconnect after sending its events. This means that the number of WEF sources that can simultaneously connect to the WEC server is limited to the open TCP ports available on the WEC server.
+-   **Registry size**. For each unique device that connects to a WEF subscription, there is a registry key (corresponding to the FQDN of the WEF Client) created to store bookmark and source heartbeat information. If this isn't pruned to remove inactive clients this set of registry keys can grow to an unmanageable size over time.
 
     -   When a subscription has &gt;1000 WEF sources connect to it over its operational lifetime, also known as lifetime WEF sources, Event Viewer can become unresponsive for a few minutes when selecting the **Subscriptions** node in the left-navigation, but will function normally afterwards.
     -   At &gt;50,000 lifetime WEF sources, Event Viewer is no longer an option and wecutil.exe (included with Windows) must be used to configure and manage subscriptions.
-    -   At &gt;100,000 lifetime WEF sources, the registry will not be readable and the WEC server will likely have to be rebuilt.
+    -   At &gt;100,000 lifetime WEF sources, the registry won't be readable and the WEC server will likely have to be rebuilt.
 
 ## Subscription information
 
@@ -163,9 +163,9 @@ Below lists all of the items that each subscription collects, the actual subscri
 
 ### Baseline subscription
 
-While this appears to be the largest subscription, it really is the lowest volume on a per-device basis. (Exceptions should be allowed for unusual devices – a device performing complex developer related tasks can be expected to create an unusually high volume of process create and AppLocker events.) This subscription does not require special configuration on client devices to enable event channels or modify channel permissions.
+While this appears to be the largest subscription, it really is the lowest volume on a per-device basis. (Exceptions should be allowed for unusual devices – a device performing complex developer related tasks can be expected to create an unusually high volume of process create and AppLocker events.) This subscription doesn't require special configuration on client devices to enable event channels or modify channel permissions.
 
-The subscription is essentially a collection of query statements applied to the Event Log. This means that it is modular in nature and a given query statement can be removed or changed without impacting other query statement in the subscription. Additionally, suppress statements which filter out specific events, only apply within that query statement and are not to the entire subscription.
+The subscription is essentially a collection of query statements applied to the Event Log. This means that it is modular in nature and a given query statement can be removed or changed without impacting other query statement in the subscription. Additionally, suppress statements which filter out specific events, only apply within that query statement and aren't to the entire subscription.
 
 ### Baseline subscription requirements
 

@@ -6,13 +6,17 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 10/14/2021
+ms.date: 12/03/2021
 ms.reviewer:
 manager: dansimp
 ms.collection: highpri
 ---
 
 # Enroll a Windows 10 device automatically using Group Policy
+
+**Applies to:**
+
+-   Windows 10
 
 Starting in Windows 10, version 1709, you can use a Group Policy to trigger auto-enrollment to MDM for Active Directory (AD) domain-joined devices.
 
@@ -191,6 +195,9 @@ Requirements:
 
    - 21H1 --> [Administrative Templates (.admx) for Windows 10 May 2021 Update (21H1)](https://www.microsoft.com/download/details.aspx?id=103124)
 
+   - 21H2 --> [Administrative Templates (.admx) for Windows 10 November 2021 Update (21H2)](https://www.microsoft.com/download/103667)
+   
+   
 2. Install the package on the Domain Controller.
 
 3. Navigate, depending on the version to the folder:
@@ -209,9 +216,11 @@ Requirements:
 
    - 21H1 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2021 Update (21H1)**
 
+   - 21H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 November 2021 Update (21H2)**
+
 4. Rename the extracted Policy Definitions folder to **PolicyDefinitions**.
 
-5. Copy PolicyDefinitions folder to **\\contoso.com\SYSVOL\contoso.com\policies\PolicyDefinitions**.
+5. Copy PolicyDefinitions folder to **\\SYSVOL\contoso.com\policies\PolicyDefinitions**.
 
    If this folder does not exist, then be aware that you will be switching to a [central policy store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra) for your entire domain.
 
@@ -290,12 +299,13 @@ To collect Event Viewer logs:
 - [Filter Using Security Groups](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc752992(v=ws.11))
 - [Enforce a Group Policy Object Link](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753909(v=ws.11))
 - [Group Policy Central Store](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)
-- [Getting started with Cloud Native Windows Endpoints](https://docs.microsoft.com/mem/cloud-native-windows-endpoints)
+- [Getting started with Cloud Native Windows Endpoints](/mem/cloud-native-windows-endpoints)
 - [A Framework for Windows endpoint management transformation](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/a-framework-for-windows-endpoint-management-transformation/ba-p/2460684)
 - [Success with remote Windows Autopilot and Hybrid Azure Active Director join](https://techcommunity.microsoft.com/t5/intune-customer-success/success-with-remote-windows-autopilot-and-hybrid-azure-active/ba-p/2749353)
 
 
 ### Useful Links
+- [Windows 10 Administrative Templates for Windows 10 November 2021 Update 21H2](https://www.microsoft.com/download/103667)
 - [Windows 10 Administrative Templates for Windows 10 May 2021 Update 21H1](https://www.microsoft.com/download/details.aspx?id=103124)
 - [Windows 10 Administrative Templates for Windows 10 November 2019 Update 1909](https://www.microsoft.com/download/details.aspx?id=100591)
 - [Windows 10 Administrative Templates for Windows 10 May 2019 Update 1903](https://www.microsoft.com/download/details.aspx?id=58495)
