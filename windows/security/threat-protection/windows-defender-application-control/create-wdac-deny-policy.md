@@ -103,7 +103,9 @@ If you are currently using [multiple policies](deploy-multiple-windows-defender-
 
 (Recommended) The first option is to keep the deny list as its own policy isolated from your allow policies as it is easier to manage. Since applications need to be [allowed by both WDAC policies to run on the device](deploy-multiple-windows-defender-application-control-policies.md#base-and-supplemental-policy-interaction), you will need to add the Allow All rule(s) to your deny policy. This will not override the set of applications allowed by WDAC illustrated by the following example:
 
-Policy 1 is an allow list of Windows and Microsoft-signed applications. Policy 2 is our new deny policy which blocks MaliciousApp.exe with the Allow All rules. MaliciousApp.exe will be blocked since there is an explicit block rule in Policy 2. Windows and Microsoft applications will be allowed since there is an explicit allow rule in Policy 1 and Policy 2 (due to the Allow All rules). All other applications, if not Windows and Microsoft signed, e.g., ExampleApp.exe, will not be allowed as this application is only trusted by Policy 2 (due to the Allow All rules) and not Policy 1. The second option involves merging the deny list with your existing WDAC policy, regardless if the policy is an allow list policy and contains allow and/or deny rules.
+Policy 1 is an allow list of Windows and Microsoft-signed applications. Policy 2 is our new deny policy which blocks MaliciousApp.exe with the Allow All rules. MaliciousApp.exe will be blocked since there is an explicit block rule in Policy 2. Windows and Microsoft applications will be allowed since there is an explicit allow rule in Policy 1 and Policy 2 (due to the Allow All rules). All other applications, if not Windows and Microsoft signed, e.g., ExampleApp.exe, will not be allowed as this application is only trusted by Policy 2 (due to the Allow All rules) and not Policy 1. 
+
+The second option involves merging the deny list with your existing WDAC policy, regardless if the policy is an allow list policy and contains allow and/or deny rules.
 
 ## Best Practices
 
