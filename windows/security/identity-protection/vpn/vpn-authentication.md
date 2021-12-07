@@ -23,12 +23,54 @@ In addition to older and less-secure password-based authentication methods (whic
 
 Windows supports a number of EAP authentication methods. 
 
-|Method|Details|
-|--- |--- |
-|EAP-Microsoft Challenge Handshake Authentication Protocol version 2 (EAP-MSCHAPv2)|<li>User name and password authentication<li>Winlogon credentials- can specify authentication with computer sign-in credentials|
-|EAP-Transport Layer Security (EAP-TLS)|<p>Supports the following types of certificate authentication <li>Certificate with keys in the software Key Storage Provider (KSP)<li>Certificate with keys in Trusted Platform Module (TPM) KSP<li>Smart card certificates<li>Windows Hello for Business certificate<p>Certificate filtering<li>Certificate filtering can be enabled to search for a particular certificate to use to authenticate with<li>Filtering can be Issuer-based or Enhanced Key Usage (EKU)-based<p>Server validation- with TLS, server validation can be toggled on or off<li>Server name-specify the server to validate<li>Server certificate- trusted root certificate to validate the server<li>Notification-specify if the user should get a notification asking whether to trust the server or not|
-|[Protected Extensible Authentication Protocol (PEAP)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754179(v=ws.11))|<p>Server validation with PEAP,- server validation can be toggled on or off<li>Server name- specify the server to validate<li>Server certificate- trusted root certificate to validate the server<li>Notification- specify if the user should get a notification asking whether to trust the server or not<p>Inner method- the outer method creates a secure tunnel inside while the inner method is used to complete the authentication<li>EAP-MSCHAPv2<li>EAP-TLS<p>Fast Reconnect: reduces the delay between an authentication request by a client and the response by the Network Policy Server (NPS) or other Remote Authentication Dial-in User Service (RADIUS) server. This reduces resource requirements for both client and server, and minimizes the number of times that users are prompted for credentials.<p>[Cryptobinding](/openspecs/windows_protocols/ms-peap/757a16c7-0826-4ba9-bb71-8c3f1339e937): By deriving and exchanging values from the PEAP phase 1 key material (**Tunnel Key**) and from the PEAP phase 2 inner EAP method key material (**Inner Session Key**), it is possible to prove that the two authentications terminate at the same two entities (PEAP peer and PEAP server). This process, termed "cryptobinding", is used to protect the PEAP negotiation against "Man in the Middle" attacks.|
-|Tunneled Transport Layer Security (TTLS)|**Inner method**<p>Non-EAP<li>Password Authentication Protocol (PAP)<li>CHAP<li>MSCHAP<li>MSCHAPv2<p>EAP<li>MSCHAPv2<li>TLS<p>Server validation: in TTLS, the server must be validated. The following can be configured:<li>Server name<li>Trusted root certificate for server certificate<li>Whether there should be a server validation notification|
+- EAP-Microsoft Challenge Handshake Authentication Protocol version 2 (EAP-MSCHAPv2):
+  - User name and password authentication
+  - Winlogon credentials - can specify authentication with computer sign-in credentials
+
+- EAP-Transport Layer Security (EAP-TLS):
+  - Supports the following types of certificate authentication:
+    - Certificate with keys in the software Key Storage Provider (KSP)
+    - Certificate with keys in Trusted Platform Module (TPM) KSP
+    - Smart card certificates
+    - Windows Hello for Business certificate
+
+  - Certificate filtering:
+    - Certificate filtering can be enabled to search for a particular certificate to use to authenticate with
+    - Filtering can be Issuer-based or Enhanced Key Usage (EKU)-based
+
+  - Server validation - with TLS, server validation can be toggled on or off:
+    - Server name - specify the server to validate
+    - Server certificate - trusted root certificate to validate the server
+    - Notification - specify if the user should get a notification asking whether to trust the server or not
+
+- [Protected Extensible Authentication Protocol (PEAP)](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc754179(v=ws.11)):
+  - Server validation - with PEAP, server validation can be toggled on or off:
+    - Server name - specify the server to validate
+    - Server certificate - trusted root certificate to validate the server
+    - Notification - specify if the user should get a notification asking whether to trust the server or not
+
+  - Inner method - the outer method creates a secure tunnel inside while the inner method is used to complete the authentication:
+    - EAP-MSCHAPv2
+    - EAP-TLS
+
+  - Fast Reconnect: reduces the delay between an authentication request by a client and the response by the Network Policy Server (NPS) or other Remote Authentication Dial-in User Service (RADIUS) server. This reduces resource requirements for both client and server, and minimizes the number of times that users are prompted for credentials.
+
+  - [Cryptobinding](/openspecs/windows_protocols/ms-peap/757a16c7-0826-4ba9-bb71-8c3f1339e937): By deriving and exchanging values from the PEAP phase 1 key material (**Tunnel Key**) and from the PEAP phase 2 inner EAP method key material (**Inner Session Key**), it is possible to prove that the two authentications terminate at the same two entities (PEAP peer and PEAP server). This process, termed "cryptobinding", is used to protect the PEAP negotiation against "Man in the Middle" attacks.
+
+- Tunneled Transport Layer Security (TTLS)
+  - Inner method
+    - Non-EAP
+      - Password Authentication Protocol (PAP)
+      - CHAP
+      - MSCHAP
+      - MSCHAPv2
+    - EAP
+      - MSCHAPv2
+      - TLS
+  - Server validation: in TTLS, the server must be validated. The following can be configured:
+    - Server name
+    - Trusted root certificate for server certificate
+    - Whether there should be a server validation notification
 
 For a UWP VPN plug-in, the app vendor controls the authentication method to be used. The following credential types can be used:
 
