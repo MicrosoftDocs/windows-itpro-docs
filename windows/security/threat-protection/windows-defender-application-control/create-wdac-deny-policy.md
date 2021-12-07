@@ -90,7 +90,7 @@ If the policy enables user mode code integrity via the ***Enabled:UMCI*** rule-o
 </SigningScenarios>
 ```
 ## Single Policy Considerations
-If the set of deny rules is to be added into an existing policy with allow rules, then the above Allow All rules should not be added to the policy. Instead, the deny policy should be merged with the existing WDAC policy via the WDAC Wizard [Windows Defender Application Control Wizard Policy Merging Operation](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-application-control/wdac-wizard-merging-policies) or using the following PowerShell command:
+If the set of deny rules is to be added into an existing policy with allow rules, then the above Allow All rules should not be added to the policy. Instead, the deny policy should be merged with the existing WDAC policy via the [WDAC Wizard](wdac-wizard-merging-policies.md) or using the following PowerShell command:
 
 ```PowerShell
 $DenyPolicy = <path_to_deny_policy>
