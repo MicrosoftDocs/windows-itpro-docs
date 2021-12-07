@@ -33,14 +33,16 @@ BitLocker can protect both physical disk resources and cluster shared volumes ve
 
 BitLocker on volumes within a cluster are managed based on how the cluster service "views" the volume to be protected. The volume can be a physical disk resource such as a logical unit number (LUN) on a storage area network (SAN) or network attached storage (NAS).
 
->**Important**  SANs used with BitLocker must have obtained Windows Hardware Certification. For more info, see [Windows Hardware Lab Kit](/windows-hardware/drivers/).
+> [!IMPORTANT]
+> SANs used with BitLocker must have obtained Windows Hardware Certification. For more info, see [Windows Hardware Lab Kit](/windows-hardware/drivers/).
  
 Alternatively, the volume can be a cluster-shared volume, a shared namespace, within the cluster. Windows Server 2012 expanded the CSV architecture, now known as CSV2.0, to enable support for BitLocker. When using BitLocker with volumes designated for a cluster, the volume will need to turn on 
 BitLocker before its addition to the storage pool within cluster or put the resource into maintenance mode before BitLocker operations will complete.
 
 Windows PowerShell or the manage-bde command-line interface is the preferred method to manage BitLocker on CSV2.0 volumes. This method is recommended over the BitLocker Control Panel item because CSV2.0 volumes are mount points. Mount points are an NTFS object that is used to provide an entry point to other volumes. Mount points do not require the use of a drive letter. Volumes that lack drive letters do not appear in the BitLocker Control Panel item. Additionally, the new Active Directory-based protector option required for cluster disk resource or CSV2.0 resources is not available in the Control Panel item.
 
->**Note:**  Mount points can be used to support remote mount points on SMB based network shares. This type of share is not supported for BitLocker encryption.
+> [!NOTE]
+> Mount points can be used to support remote mount points on SMB based network shares. This type of share is not supported for BitLocker encryption.
  
 For thinly provisioned storage, such as a Dynamic Virtual Hard Disk (VHD), BitLocker runs in Used Disk Space Only encryption mode. You cannot use the **manage-bde -WipeFreeSpace** command to transition the volume to full-volume encryption on these types of volumes. This action is blocked in order to avoid expanding thinly provisioned volumes to occupy the entire backing store while wiping the unoccupied (free) space.
 
@@ -57,7 +59,8 @@ You can also use an Active Directory Domain Services (AD DS) protector for prote
 
 4.  Registry-based auto-unlock key
 
->**Note:**  A Windows Server 2012 or later domain controller is required for this feature to work properly.
+> [!NOTE]
+> A Windows Server 2012 or later domain controller is required for this feature to work properly.
  
 ### Turning on BitLocker before adding disks to a cluster using Windows PowerShell
 
