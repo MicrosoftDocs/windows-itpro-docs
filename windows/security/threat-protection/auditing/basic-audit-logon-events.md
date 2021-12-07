@@ -45,7 +45,7 @@ You can configure this security setting by opening the appropriate policy under 
 | 4779          | A user disconnected a terminal server session without logging off.                                                                                                                                              |
  
 
-When event 528 is logged, a logon type is also listed in the event log. The following table describes each logon type.
+When event 4624 (Legacy Windows Event ID 528) is logged, a logon type is also listed in the event log. The following table describes each logon type.
 
 | Logon type | Logon title | Description |
 | - | - | - |
