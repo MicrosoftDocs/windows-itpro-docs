@@ -33,18 +33,15 @@ To avoid the automatic encryption of data, developers can enlighten apps by addi
 
 We strongly suggest that the only unenlightened apps you add to your allowed apps list are Line-of-Business (LOB) apps.
 
->[!IMPORTANT]
->After revoking WIP, unenlightened apps will have to be uninstalled and re-installed since their settings files will remain encrypted.
-
->[!Note]
->For more info about creating enlightened apps, see the [Windows Information Protection (WIP)](/windows/uwp/enterprise/wip-hub) topic in the Windows Dev Center.
+> [!IMPORTANT]
+> After revoking WIP, unenlightened apps will have to be uninstalled and re-installed since their settings files will remain encrypted. For more info about creating enlightened apps, see the [Windows Information Protection (WIP)](/windows/uwp/enterprise/wip-hub) topic in the Windows Dev Center.
 
 ## Unenlightened app behavior
 This table includes info about how unenlightened apps might behave, based on your Windows Information Protection (WIP) networking policies, your app configuration, and potentially whether the app connects to network resources directly by using IP addresses or by using hostnames.
 
 |App rule setting|Networking policy configuration|
 |--- |--- |
-|**Not required.** App connects to enterprise cloud resources directly, using an IP address.|<p>**Name-based policies, without the /&#42;AppCompat&#42;/ string:**<li>App is entirely blocked from both personal and enterprise cloud resources.<li>No encryption is applied.<li>App can’t access local Work files.<p>**Name-based policies, using the /&#42;AppCompat&#42;/ string or proxy-based policies:**<li>App can access both personal and enterprise cloud resources. However, you might encounter apps using policies that restrict access to enterprise cloud resources.<li>No encryption is applied.<li>App can’t access local Work files.|
+|**Not required.** App connects to enterprise cloud resources directly, using an IP address.| **Name-based policies, without the `/*AppCompat*/` string:**<li>App is entirely blocked from both personal and enterprise cloud resources.<li>No encryption is applied.<li>App can’t access local Work files.<br/><br/>**Name-based policies, using the `/*AppCompat*/` string or proxy-based policies:**<li>App can access both personal and enterprise cloud resources. However, you might encounter apps using policies that restrict access to enterprise cloud resources.<li>No encryption is applied.<li>App can’t access local Work files.|
 |**Not required.** App connects to enterprise cloud resources, using a hostname.|<li>App is blocked from accessing enterprise cloud resources, but can access other network resources.<li>No encryption is applied.<li>App can’t access local Work files.|
 |**Allow.** App connects to enterprise cloud resources, using an IP address or a hostname.|<li>App can access both personal and enterprise cloud resources.<li>Auto-encryption is applied.<li>App can access local Work files.|
 |**Exempt.** App connects to enterprise cloud resources, using an IP address or a hostname.|<li>App can access both personal and enterprise cloud resources.<li>No encryption is applied.<li>App can access local Work files.|
