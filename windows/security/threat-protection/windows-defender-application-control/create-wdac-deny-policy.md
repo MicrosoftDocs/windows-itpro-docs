@@ -114,7 +114,7 @@ Policy 1 is an allow list of Windows and Microsoft-signed applications. Policy 2
 
 ## Creating a Deny Policy Tutorial
 
-Deny rules and policies can be created using the PowerShell cmdlets or the [WDAC Wizard](https://webapp-wdac-wizard.azurewebsites.net/) We recommend creating signer rules (PCACertificate, Publisher, and FilePublisher) wherever possible. In the cases of unsigned binaries, rules must be created on attributes of the file, such as the original filename, or the hash. 
+Deny rules and policies can be created using the PowerShell cmdlets or the [WDAC Wizard](https://webapp-wdac-wizard.azurewebsites.net/). We recommend creating signer rules (PCACertificate, Publisher, and FilePublisher) wherever possible. In the cases of unsigned binaries, rules must be created on attributes of the file, such as the original filename, or the hash. 
 
 ### Software Publisher Based Deny Rule
 ```Powershell
