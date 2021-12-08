@@ -53,145 +53,33 @@ For information about the application control scenarios that AppLocker addresses
 
 The following table compares AppLocker to Software Restriction Policies.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Feature</th>
-<th align="left">Software Restriction Policies</th>
-<th align="left">AppLocker</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Rule scope</p></td>
-<td align="left"><p>All users</p></td>
-<td align="left"><p>Specific user or group</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Rule conditions provided</p></td>
-<td align="left"><p>File hash, path, certificate, registry path, and Internet zone</p></td>
-<td align="left"><p>File hash, path, and publisher</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Rule types provided</p></td>
-<td align="left"><p>Defined by the security levels:</p>
-<ul>
-<li><p>Disallowed</p></li>
-<li><p>Basic User</p></li>
-<li><p>Unrestricted</p></li>
-</ul></td>
-<td align="left"><p>Allow and deny</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Default rule action</p></td>
-<td align="left"><p>Unrestricted</p></td>
-<td align="left"><p>Implicit deny</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Audit-only mode</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Wizard to create multiple rules at one time</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Policy import or export</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Rule collection</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Windows PowerShell support</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Custom error messages</p></td>
-<td align="left"><p>No</p></td>
-<td align="left"><p>Yes</p></td>
-</tr>
-</tbody>
-</table>
+|Feature|Software Restriction Policies|AppLocker|
+|--- |--- |--- |
+|Rule scope|All users|Specific user or group|
+|Rule conditions provided|File hash, path, certificate, registry path, and Internet zone|File hash, path, and publisher|
+|Rule types provided|Defined by the security levels:<li>Disallowed<li>Basic User<li>Unrestricted|Allow and deny|
+|Default rule action|Unrestricted|Implicit deny|
+|Audit-only mode|No|Yes|
+|Wizard to create multiple rules at one time|No|Yes|
+|Policy import or export|No|Yes|
+|Rule collection|No|Yes|
+|Windows PowerShell support|No|Yes|
+|Custom error messages|No|Yes|
 
 <b>Application control function differences</b>
 
 The following table compares the application control functions of Software Restriction Policies (SRP) and AppLocker.
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Application control function</th>
-<th align="left">SRP</th>
-<th align="left">AppLocker</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Operating system scope</p></td>
-<td align="left"><p>SRP policies can be applied to all Windows operating systems beginning with Windows XP and Windows Server 2003.</p></td>
-<td align="left"><p>AppLocker policies apply only to those supported operating system versions and editions listed in <a href="requirements-to-use-applocker.md" data-raw-source="[Requirements to use AppLocker](requirements-to-use-applocker.md)">Requirements to use AppLocker</a>. But these systems can also use SRP.</p>
-<div class="alert">
-<b>Note</b><br/><p>Use different GPOs for SRP and AppLocker rules.</p>
-</div>
-<div>
 
-</div></td>
-</tr>
-<tr class="even">
-<td align="left"><p>User support</p></td>
-<td align="left"><p>SRP allows users to install applications as an administrator.</p></td>
-<td align="left"><p>AppLocker policies are maintained through Group Policy, and only the administrator of the device can update an AppLocker policy.</p>
-<p>AppLocker permits customization of error messages to direct users to a Web page for help.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Policy maintenance</p></td>
-<td align="left"><p>SRP policies are updated by using the Local Security Policy snap-in or the Group Policy Management Console (GPMC).</p></td>
-<td align="left"><p>AppLocker policies are updated by using the Local Security Policy snap-in or the GPMC.</p>
-<p>AppLocker supports a small set of PowerShell cmdlets to aid in administration and maintenance.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Policy management infrastructure</p></td>
-<td align="left"><p>To manage SRP policies, SRP uses Group Policy within a domain and the Local Security Policy snap-in for a local computer.</p></td>
-<td align="left"><p>To manage AppLocker policies, AppLocker uses Group Policy within a domain and the Local Security Policy snap-in for a local computer.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Block malicious scripts</p></td>
-<td align="left"><p>Rules for blocking malicious scripts prevents all scripts associated with the Windows Script Host from running, except those that are digitally signed by your organization.</p></td>
-<td align="left"><p>AppLocker rules can control the following file formats: .ps1, .bat, .cmd, .vbs, and .js. In addition, you can set exceptions to allow specific files to run.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Manage software installation</p></td>
-<td align="left"><p>SRP can prevent all Windows Installer packages from installing. It allows .msi files that are digitally signed by your organization to be installed.</p></td>
-<td align="left"><p>The Windows Installer rule collection is a set of rules created for Windows Installer file types (.mst, .msi and .msp) to allow you to control the installation of files on client computers and servers.</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Manage all software on the computer</p></td>
-<td align="left"><p>All software is managed in one rule set. By default, the policy for managing all software on a device disallows all software on the user&#39;s device, except software that is installed in the Windows folder, Program Files folder, or subfolders.</p></td>
-<td align="left"><p>Unlike SRP, each AppLocker rule collection functions as an allowed list of files. Only the files that are listed within the rule collection will be allowed to run. This configuration makes it easier for administrators to determine what will occur when an AppLocker rule is applied.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Different policies for different users</p></td>
-<td align="left"><p>Rules are applied uniformly to all users on a particular device.</p></td>
-<td align="left"><p>On a device that is shared by multiple users, an administrator can specify the groups of users who can access the installed software. Using AppLocker, an administrator can specify the user to whom a specific rule should apply.</p></td>
-</tr>
-</tbody>
-</table>
+|Application control function|SRP|AppLocker|
+|--- |--- |--- |
+|Operating system scope|SRP policies can be applied to all Windows operating systems beginning with Windows XP and Windows Server 2003.|AppLocker policies apply only to those supported operating system versions and editions listed in [Requirements to use AppLocker](requirements-to-use-applocker.md). But these systems can also use SRP.<div class="alert">**Note:** Use different GPOs for SRP and AppLocker rules.</div>|
+|User support|SRP allows users to install applications as an administrator.|AppLocker policies are maintained through Group Policy, and only the administrator of the device can update an AppLocker policy.<p>AppLocker permits customization of error messages to direct users to a Web page for help.|
+|Policy maintenance|SRP policies are updated by using the Local Security Policy snap-in or the Group Policy Management Console (GPMC).|AppLocker policies are updated by using the Local Security Policy snap-in or the GPMC.<p>AppLocker supports a small set of PowerShell cmdlets to aid in administration and maintenance.|
+|Policy management infrastructure|To manage SRP policies, SRP uses Group Policy within a domain and the Local Security Policy snap-in for a local computer.|To manage AppLocker policies, AppLocker uses Group Policy within a domain and the Local Security Policy snap-in for a local computer.|
+|Block malicious scripts|Rules for blocking malicious scripts prevents all scripts associated with the Windows Script Host from running, except those that are digitally signed by your organization.|AppLocker rules can control the following file formats: .ps1, .bat, .cmd, .vbs, and .js. In addition, you can set exceptions to allow specific files to run.|
+|Manage software installation|SRP can prevent all Windows Installer packages from installing. It allows .msi files that are digitally signed by your organization to be installed.|The Windows Installer rule collection is a set of rules created for Windows Installer file types (.mst, .msi and .msp) to allow you to control the installation of files on client computers and servers.|
+|Manage all software on the computer|All software is managed in one rule set. By default, the policy for managing all software on a device disallows all software on the user's device, except software that is installed in the Windows folder, Program Files folder, or subfolders.|Unlike SRP, each AppLocker rule collection functions as an allowed list of files. Only the files that are listed within the rule collection will be allowed to run. This configuration makes it easier for administrators to determine what will occur when an AppLocker rule is applied.|
+|Different policies for different users|Rules are applied uniformly to all users on a particular device.|On a device that is shared by multiple users, an administrator can specify the groups of users who can access the installed software. Using AppLocker, an administrator can specify the user to whom a specific rule should apply.|
 
 ## Related topics
 
