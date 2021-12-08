@@ -281,13 +281,18 @@ This article lists new and updated articles for the Mobile Device Management (MD
 
 ## October 2017
 
-|New or updated article|Description|
-|--- |--- |
-|[Policy DDF file](policy-ddf-file.md)|Updated the DDF content for Windows 10 version 1709. Added a link to the download of Policy DDF for Windows 10, version 1709.|
-|[Policy CSP](policy-configuration-service-provider.md)|Updated the following policies:<li>Defender/ControlledFolderAccessAllowedApplications - string separator is'I' <li>Defender/ControlledFolderAccessProtectedFolders - string separator is 'I'.|
-|[eUICCs CSP](euiccs-csp.md)|Added new CSP in Windows 10, version 1709.|
-|[AssignedAccess CSP](assignedaccess-csp.md)|Added SyncML examples for the new Configuration node.|
-|[DMClient CSP](dmclient-csp.md)|Added new nodes to the DMClient CSP in Windows 10, version 1709. Updated the CSP and DDF topics.|
+[Policy DDF file](policy-ddf-file.md): Updated the DDF content for Windows 10 version 1709. Added a link to the download of Policy DDF for Windows 10, version 1709.
+
+[Policy CSP](policy-configuration-service-provider.md): Updated the following policies:
+
+- Defender/ControlledFolderAccessAllowedApplications - string separator is'|'
+- Defender/ControlledFolderAccessProtectedFolders - string separator is '|'.
+
+[eUICCs CSP](euiccs-csp.md): Added new CSP in Windows 10, version 1709.
+
+[AssignedAccess CSP](assignedaccess-csp.md):Added SyncML examples for the new Configuration node.
+
+[DMClient CSP](dmclient-csp.md): Added new nodes to the DMClient CSP in Windows 10, version 1709. Updated the CSP and DDF topics.
 
 ## September 2017
 
