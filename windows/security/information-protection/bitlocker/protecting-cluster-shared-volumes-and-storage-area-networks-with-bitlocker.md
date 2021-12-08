@@ -33,14 +33,16 @@ BitLocker can protect both physical disk resources and cluster shared volumes ve
 
 BitLocker on volumes within a cluster are managed based on how the cluster service "views" the volume to be protected. The volume can be a physical disk resource such as a logical unit number (LUN) on a storage area network (SAN) or network attached storage (NAS).
 
->**Important**  SANs used with BitLocker must have obtained Windows Hardware Certification. For more info, see [Windows Hardware Lab Kit](/windows-hardware/drivers/).
+> [!IMPORTANT]
+> SANs used with BitLocker must have obtained Windows Hardware Certification. For more info, see [Windows Hardware Lab Kit](/windows-hardware/drivers/).
  
 Alternatively, the volume can be a cluster-shared volume, a shared namespace, within the cluster. Windows Server 2012 expanded the CSV architecture, now known as CSV2.0, to enable support for BitLocker. When using BitLocker with volumes designated for a cluster, the volume will need to turn on 
 BitLocker before its addition to the storage pool within cluster or put the resource into maintenance mode before BitLocker operations will complete.
 
 Windows PowerShell or the manage-bde command-line interface is the preferred method to manage BitLocker on CSV2.0 volumes. This method is recommended over the BitLocker Control Panel item because CSV2.0 volumes are mount points. Mount points are an NTFS object that is used to provide an entry point to other volumes. Mount points do not require the use of a drive letter. Volumes that lack drive letters do not appear in the BitLocker Control Panel item. Additionally, the new Active Directory-based protector option required for cluster disk resource or CSV2.0 resources is not available in the Control Panel item.
 
->**Note:**  Mount points can be used to support remote mount points on SMB based network shares. This type of share is not supported for BitLocker encryption.
+> [!NOTE]
+> Mount points can be used to support remote mount points on SMB based network shares. This type of share is not supported for BitLocker encryption.
  
 For thinly provisioned storage, such as a Dynamic Virtual Hard Disk (VHD), BitLocker runs in Used Disk Space Only encryption mode. You cannot use the **manage-bde -WipeFreeSpace** command to transition the volume to full-volume encryption on these types of volumes. This action is blocked in order to avoid expanding thinly provisioned volumes to occupy the entire backing store while wiping the unoccupied (free) space.
 
@@ -57,14 +59,17 @@ You can also use an Active Directory Domain Services (AD DS) protector for prote
 
 4.  Registry-based auto-unlock key
 
->**Note:**  A Windows Server 2012 or later domain controller is required for this feature to work properly.
+> [!NOTE]
+> A Windows Server 2012 or later domain controller is required for this feature to work properly.
  
 ### Turning on BitLocker before adding disks to a cluster using Windows PowerShell
 
 BitLocker encryption is available for disks before or after addition to a cluster storage pool. The advantage of encrypting volumes prior to adding them to a cluster is that the disk resource does not require suspending the resource to complete the operation. To turn on BitLocker for a disk before adding it to a cluster:
 
 1.  Install the BitLocker Drive Encryption feature if it is not already installed.
+
 2.  Ensure the disk is formatted NTFS and has a drive letter assigned to it.
+
 3.  Identify the name of the cluster with Windows PowerShell.
 
     ```powershell
@@ -77,9 +82,11 @@ BitLocker encryption is available for disks before or after addition to a cluste
     Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
     ```
 
-    >**Warning:**  You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
+    > [!WARNING]
+    > You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
      
 5.  Repeat the preceding steps for each disk in the cluster.
+
 6.  Add the volume(s) to the cluster.
 
 ### Turning on BitLocker for a clustered disk using Windows PowerShell
@@ -110,7 +117,9 @@ When the cluster service owns a disk resource already, it needs to be set into m
     ```powershell
     Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
     ```
-    >**Warning:**  You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
+
+    > [!WARNING]
+    > You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
      
 6.  Use **Resume-ClusterResource** to take the physical disk resource back out of maintenance mode:
 
@@ -160,110 +169,23 @@ Unlike CSV2.0 volumes, physical disk resources can only be accessed by one clust
 
 The following table contains information about both Physical Disk Resources (that is, traditional failover cluster volumes) and Cluster Shared Volumes (CSV) and the actions that are allowed by BitLocker in each situation.
 
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p><b>Action</b></p></td>
-<td align="left"><p><b>On owner node of failover volume</b></p></td>
-<td align="left"><p><b>On Metadata Server (MDS) of CSV</b></p></td>
-<td align="left"><p><b>On (Data Server) DS of CSV</b></p></td>
-<td align="left"><p><b>Maintenance Mode</b></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Manage-bde –on</b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Manage-bde –off</b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Manage-bde Pause/Resume</b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked<b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Manage-bde –lock</b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>manage-bde –wipe</b></p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Unlock</b></p></td>
-<td align="left"><p>Automatic via cluster service</p></td>
-<td align="left"><p>Automatic via cluster service</p></td>
-<td align="left"><p>Automatic via cluster service</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>manage-bde –protector –add</b></p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>manage-bde -protector -delete</b></p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>manage-bde –autounlock</b></p></td>
-<td align="left"><p>Allowed (not recommended)</p></td>
-<td align="left"><p>Allowed (not recommended)</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed (not recommended)</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Manage-bde -upgrade</b></p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><b>Shrink</b></p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><b>Extend</b></p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Allowed</p></td>
-<td align="left"><p>Blocked</p></td>
-<td align="left"><p>Allowed</p></td>
-</tr>
-</tbody>
-</table>
- 
-&gt;</b>Note:**  Although the manage-bde -pause command is Blocked in clusters, the cluster service will automatically resume a paused encryption or decryption from the MDS node
+| Action | On owner node of failover volume | On Metadata Server (MDS) of CSV | On (Data Server) DS of CSV | Maintenance Mode |
+|--- |--- |--- |--- |--- |
+|**Manage-bde –on**|Blocked|Blocked|Blocked|Allowed|
+|**Manage-bde –off**|Blocked|Blocked|Blocked|Allowed|
+|**Manage-bde Pause/Resume**|Blocked|Blocked**|Blocked|Allowed|
+|**Manage-bde –lock**|Blocked|Blocked|Blocked|Allowed|
+|**manage-bde –wipe**|Blocked|Blocked|Blocked|Allowed|
+|**Unlock**|Automatic via cluster service|Automatic via cluster service|Automatic via cluster service|Allowed|
+|**manage-bde –protector –add**|Allowed|Allowed|Blocked|Allowed|
+|**manage-bde -protector -delete**|Allowed|Allowed|Blocked|Allowed|
+|**manage-bde –autounlock**|Allowed (not recommended)|Allowed (not recommended)|Blocked|Allowed (not recommended)|
+|**Manage-bde -upgrade**|Allowed|Allowed|Blocked|Allowed|
+|**Shrink**|Allowed|Allowed|Blocked|Allowed|
+|**Extend**|Allowed|Allowed|Blocked|Allowed|
+
+> [!NOTE]
+> Although the manage-bde -pause command is Blocked in clusters, the cluster service will automatically resume a paused encryption or decryption from the MDS node
  
 In the case where a physical disk resource experiences a failover event during conversion, the new owning node will detect the conversion is not complete and will complete the conversion process.
 

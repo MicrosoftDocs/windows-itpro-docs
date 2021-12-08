@@ -35,32 +35,9 @@ Publisher conditions can be made only for files that are digitally signed; this 
 Publisher conditions are easier to maintain than file hash conditions and are generally more secure than path conditions. Rules that are specified to the version level might have to be updated when a new version of the file is released. The following table describes the advantages and disadvantages 
 of the publisher condition.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Publisher condition advantages</th>
-<th align="left">Publisher condition disadvantages</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><ul>
-<li><p>Frequent updating is not required.</p></li>
-<li><p>You can apply different values within a certificate.</p></li>
-<li><p>A single rule can be used to allow an entire product suite.</p></li>
-<li><p>You can use the asterisk (*) wildcard character within a publisher rule to specify that any value should be matched.</p></li>
-</ul></td>
-<td align="left"><ul>
-<li><p>The file must be signed.</p></li>
-<li><p>Although a single rule can be used to allow an entire product suite, all files in the suite must be signed uniformly.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+|Publisher condition advantages|Publisher condition disadvantages|
+|--- |--- |
+|<li>Frequent updating is not required.<li>You can apply different values within a certificate.<li>A single rule can be used to allow an entire product suite.<li>You can use the asterisk (*) wildcard character within a publisher rule to specify that any value should be matched.|<li>The file must be signed.<li>Although a single rule can be used to allow an entire product suite, all files in the suite must be signed uniformly.|
  
 Wildcard characters can be used as values in the publisher rule fields according to the following specifications:
 
