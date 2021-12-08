@@ -155,40 +155,15 @@ For this example, we're going to add Internet Explorer, a desktop app, to the **
 
 5.  Pick the options you want to include for the app rule (see table), and then click **OK**.
 
-    <table>
-        <tr>
-            <th>Option</th>
-            <th>Manages</th>
-        </tr>
-        <tr>
-            <td>All fields left as "*"</td>
-            <td>All files signed by any publisher. (Not recommended.)</td>
-        </tr>
-        <tr>
-            <td><b>Publisher</b> selected</td>
-            <td>All files signed by the named publisher.<p>This might be useful if your company is the publisher and signer of internal line-of-business apps.</td>
-        </tr>
-        <tr>
-            <td><b>Publisher</b> and <b>Product Name</b> selected</td>
-            <td>All files for the specified product, signed by the named publisher.</td>
-        </tr>
-        <tr>
-            <td><b>Publisher</b>, <b>Product Name</b>, and <b>Binary name</b> selected</td>
-            <td>Any version of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>
-        <tr>
-            <td><b>Publisher</b>, <b>Product Name</b>, <b>Binary name</b>, and <b>File Version, and above</b>, selected</td>
-            <td>Specified version or newer releases of the named file or package for the specified product, signed by the named publisher.<p>This option is recommended for enlightened apps that weren't previously enlightened.</td>
-        </tr>
-        <tr>
-            <td><b>Publisher</b>, <b>Product Name</b>, <b>Binary name</b>, and <b>File Version, And below</b> selected</td>
-            <td>Specified version or older releases of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>
-        <tr>
-            <td><b>Publisher</b>, <b>Product Name</b>, <b>Binary name</b>, and <b>File Version, Exactly</b> selected</td>
-            <td>Specified version of the named file or package for the specified product, signed by the named publisher.</td>
-        </tr>
-    </table>
+     |Option|Manages|
+     |--- |--- |
+     |All fields left as "*"|All files signed by any publisher. (Not recommended.)|
+     |**Publisher** selected|All files signed by the named publisher.This might be useful if your company is the publisher and signer of internal line-of-business apps.|
+     |**Publisher** and **Product Name** selected|All files for the specified product, signed by the named publisher.|
+     |**Publisher**, **Product Name**, and **Binary name** selected|Any version of the named file or package for the specified product, signed by the named publisher.|
+     |**Publisher**, **Product Name**, **Binary name**, and **File Version, and above**, selected|Specified version or newer releases of the named file or package for the specified product, signed by the named publisher.This option is recommended for enlightened apps that weren't previously enlightened.|
+     |**Publisher**, **Product Name**, **Binary name**, and **File Version, And below** selected|Specified version or older releases of the named file or package for the specified product, signed by the named publisher.|
+     |**Publisher**, **Product Name**, **Binary name**, and **File Version, Exactly** selected|Specified version of the named file or package for the specified product, signed by the named publisher.|
 
 If you're unsure about what to include for the publisher, you can run this PowerShell command:
 
@@ -374,46 +349,70 @@ There are no default locations included with WIP, you must add each of your netw
 
    ![Add or edit corporate network definition box, Add your enterprise network locations.](images/wip-configmgr-add-network-domain.png)
 
-   <table>
-       <tr>
-           <th>Network location type</th>
-           <th>Format</th>
-           <th>Description</th>
-       </tr>
-       <tr>
-           <td>Enterprise Cloud Resources</td>
-           <td><b>With proxy:</b> contoso.sharepoint.com,contoso.internalproxy1.com|<br>contoso.visualstudio.com,contoso.internalproxy2.com<p><b>Without proxy:</b> contoso.sharepoint.com|contoso.visualstudio.com</td>
-           <td>Specify the cloud resources to be treated as corporate and protected by WIP.<p>For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.<p>If you have multiple resources, you must separate them using the &quot;|&quot; delimiter. If you don't use proxy servers, you must also include the &quot;,&quot; delimiter just before the &quot;|&quot;. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;</code>.<p><b>Important</b><br>In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can't tell whether it's attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the <code>/&#42;AppCompat&#42;/</code> string to the setting. For example: <code>URL &lt;,proxy&gt;|URL &lt;,proxy&gt;|/&#42;AppCompat&#42;/</code>.</td>
-       </tr>
-       <tr>
-           <td>Enterprise Network Domain Names (Required)</td>
-           <td>corp.contoso.com,region.contoso.com</td>
-           <td>Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.<p>This setting works with the IP ranges settings to detect whether a network endpoint is enterprise or personal on private networks.<p>If you have multiple resources, you must separate them using the &quot;,&quot; delimiter.</td>
-       </tr>
-       <tr>
-           <td>Proxy servers</td>
-           <td>proxy.contoso.com:80;proxy2.contoso.com:443</td>
-           <td>Specify the proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you're connecting to are enterprise resources.<br><br>This list shouldn't include any servers listed in your Internal proxy servers list. Internal proxy servers must be used only for WIP-protected (enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the &quot;;&quot; delimiter.</td>
-       </tr>
-       <tr>
-           <td>Internal proxy servers</td>
-           <td>contoso.internalproxy1.com;contoso.internalproxy2.com</td>
-           <td>Specify the internal proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you're connecting to are enterprise resources.<br><br>This list shouldn't include any servers listed in your Proxy servers list. Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.<br><br>If you have multiple resources, you must separate them using the &quot;;&quot; delimiter.</td><br/>    </tr>
-       <tr>
-           <td>Enterprise IPv4 Range (Required)</td>
-           <td><b>Starting IPv4 Address:</b> 3.4.0.1<br><b>Ending IPv4 Address:</b> 3.4.255.254<br><b>Custom URI:</b> 3.4.0.1-3.4.255.254,<br>10.0.0.1-10.255.255.254</td>
-           <td>Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the &quot;,&quot; delimiter.</td>
-       </tr>
-       <tr>
-           <td>Enterprise IPv6 Range</td>
-           <td><b>Starting IPv6 Address:</b> 2a01:110::<br><b>Ending IPv6 Address:</b> 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff<br><b>Custom URI:</b> 2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,<br>fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff</td>
-           <td>Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.<p>If you have multiple ranges, you must separate them using the &quot;,&quot; delimiter.</td>
-       </tr>
-       <tr>
-           <td>Neutral Resources</td>
-           <td>sts.contoso.com,sts.contoso2.com</td>
-           <td>Specify your authentication redirection endpoints for your company.<p>These locations are considered enterprise or personal, based on the context of the connection before the redirection.<p>If you have multiple resources, you must separate them using the &quot;,&quot; delimiter.</td>
-       </tr><br/></table>
+     - **Enterprise Cloud Resources**: Specify the cloud resources to be treated as corporate and protected by WIP.
+
+         For each cloud resource, you may also optionally specify a proxy server from your Internal proxy servers list to route traffic for this cloud resource. Be aware that all traffic routed through your Internal proxy servers is considered enterprise.
+
+         If you have multiple resources, you must separate them using the `|` delimiter. If you don't use proxy servers, you must also include the `,` delimiter just before the `|`. For example: URL `<,proxy>|URL <,proxy>`.
+
+         **Format examples**:
+
+         - **With proxy**: `contoso.sharepoint.com,contoso.internalproxy1.com|contoso.visualstudio.com,contoso.internalproxy2.com`
+
+         - **Without proxy**: `contoso.sharepoint.com|contoso.visualstudio.com`
+
+         >[!Important]
+         > In some cases, such as when an app connects directly to a cloud resource through an IP address, Windows can't tell whether it's attempting to connect to an enterprise cloud resource or to a personal site. In this case, Windows blocks the connection by default. To stop Windows from automatically blocking these connections, you can add the /*AppCompat*/ string to the setting. For example: URL <,proxy>|URL <,proxy>|/*AppCompat*/.
+
+     - **Enterprise Network Domain Names (Required)**: Specify the DNS suffixes used in your environment. All traffic to the fully-qualified domains appearing in this list will be protected.
+
+         This setting works with the IP ranges settings to detect whether a network endpoint is enterprise or personal on private networks.
+
+         If you have multiple resources, you must separate them using the "," delimiter.
+
+         **Format examples**: `corp.contoso.com,region.contoso.com`
+
+     - **Proxy servers**: Specify the proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you're connecting to are enterprise resources.
+
+         This list shouldn't include any servers listed in your Internal proxy servers list. Internal proxy servers must be used only for WIP-protected (enterprise) traffic.
+
+         If you have multiple resources, you must separate them using the ";" delimiter.
+
+         **Format examples**: `proxy.contoso.com:80;proxy2.contoso.com:443`
+
+     - **Internal proxy servers**: Specify the internal proxy servers your devices will go through to reach your cloud resources. Using this server type indicates that the cloud resources you're connecting to are enterprise resources.
+
+         This list shouldn't include any servers listed in your Proxy servers list. Proxy servers must be used only for non-WIP-protected (non-enterprise) traffic.
+
+         If you have multiple resources, you must separate them using the ";" delimiter.
+
+         **Format examples**: `contoso.internalproxy1.com;contoso.internalproxy2.com`
+
+     - **Enterprise IPv4 Range (Required)**: Specify the addresses for a valid IPv4 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.
+
+         If you have multiple ranges, you must separate them using the "," delimiter.
+
+         **Format examples**:
+
+         - **Starting IPv4 Address:** `3.4.0.1`
+         - **Ending IPv4 Address:** `3.4.255.254`
+         - **Custom URI:** `3.4.0.1-3.4.255.254, 10.0.0.1-10.255.255.254`
+
+     - **Enterprise IPv6 Range**: Specify the addresses for a valid IPv6 value range within your intranet. These addresses, used with your Enterprise Network Domain Names, define your corporate network boundaries.
+
+         If you have multiple ranges, you must separate them using the "," delimiter.
+
+         **Format examples**:
+
+         - **Starting IPv6 Address:** `2a01:110::`
+         - **Ending IPv6 Address:** `2a01:110:7fff:ffff:ffff:ffff:ffff:ffff`
+         - **Custom URI:** `2a01:110:7fff:ffff:ffff:ffff:ffff:ffff,fd00::-fdff:ffff:ffff:ffff:ffff:ffff:ffff:ffff`
+
+     - **Neutral Resources**: Specify your authentication redirection endpoints for your company. These locations are considered enterprise or personal, based on the context of the connection before the redirection.
+
+         If you have multiple resources, you must separate them using the "," delimiter.
+
+         **Format examples**: `sts.contoso.com,sts.contoso2.com`
 
 3. Add as many locations as you need, and then click **OK**.
 
