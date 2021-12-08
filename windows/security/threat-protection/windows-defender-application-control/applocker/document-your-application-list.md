@@ -42,70 +42,18 @@ Record the name of the app, whether it is signed as indicated by the publisher's
 Record the installation path of the apps. For example, Microsoft Office 2016 installs files to *%programfiles%\\Microsoft Office\\Office16\\*, which is *C:\\Program Files\\Microsoft Office\\Office16\\* on most devices.
 
 The following table provides an example of how to list applications for each business group at the early stage of designing your application control policies. Eventually, as more planning information is added to the list, the information can be used to build AppLocker rules.
-<table>
-<colgroup>
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-<col width="20%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">Organizational unit</th>
-<th align="left">Implement AppLocker?</th>
-<th align="left">Apps</th>
-<th align="left">Installation path</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Teller-East and Teller-West</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Teller Software</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\Teller.exe</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p></td>
-<td align="left"><p>C:\Windows</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>HR-All</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Check Payout</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Checkcut.exe</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Time Sheet Organizer</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Timesheet.exe</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p></td>
-<td align="left"><p>C:\Windows</p></td>
-</tr>
-</tbody>
-</table>
- 
-&gt;<b>Note:</b>  AppLocker only supports publisher rules for Universal Windows apps. Therefore, collecting the installation path information for Universal Windows apps is not necessary.
+
+|Business group|Organizational unit|Implement AppLocker?|Apps|Installation path|
+|--- |--- |--- |--- |--- |
+|Bank Tellers|Teller-East and Teller-West|Yes|Teller Software|C:\Program Files\Woodgrove\Teller.exe|
+||||Windows files|C:\Windows|
+|Human Resources|HR-All|Yes|Check Payout|C:\Program Files\Woodgrove\HR\Checkcut.exe|
+||||Time Sheet Organizer|C:\Program Files\Woodgrove\HR\Timesheet.exe|
+||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|
+||||Windows files|C:\Windows|
+
+>[!NOTE]
+>AppLocker only supports publisher rules for Universal Windows apps. Therefore, collecting the installation path information for Universal Windows apps is not necessary.
  
 <b>Event processing</b>
 

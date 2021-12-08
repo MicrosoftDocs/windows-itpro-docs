@@ -11,6 +11,7 @@ ms.pagetype: security
 ms.localizationpriority: medium
 author: greg-lindsay
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Configure kiosks and digital signs on Windows desktop editions

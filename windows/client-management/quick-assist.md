@@ -8,6 +8,7 @@ author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
 manager: laurawi
+ms.collection: highpri
 ---
 
 # Use Quick Assist to help users

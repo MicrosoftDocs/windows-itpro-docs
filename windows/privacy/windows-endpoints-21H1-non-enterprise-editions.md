@@ -2,17 +2,18 @@
 title: Windows 10, version 21H1, connection endpoints for non-Enterprise editions
 description: Explains what Windows 10 endpoints are used in non-Enterprise editions. Specific to Windows 10, version 21H1.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
 audience: ITPro
 author: gental-giant
 ms.author: v-hakima
-manager: robsize
+manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 10/04/2021
+ms.date: 12/01/2021
+ms.technology: privacy
 ---
 # Windows 10, version 21H1, connection endpoints for non-Enterprise editions
 

@@ -17,7 +17,7 @@ ms.technology: windows-sec
 ---
 # Virus Information Alliance
 
-The Virus Information Alliance (VIA) is a public antimalware collaboration program for security software providers, security service providers, antimalware testing organizations, and other organizations involved in fighting cybercrime.
+The Virus Information Alliance (VIA) is a public anti-malware collaboration program for security software providers, security service providers, anti-malware testing organizations, and other organizations involved in fighting cyber crime.
 
 Members of the VIA program collaborate by exchanging technical information on malicious software with Microsoft. The goal is to improve protection for Microsoft customers.
 
@@ -25,7 +25,7 @@ Members of the VIA program collaborate by exchanging technical information on ma
 
 The VIA program gives members access to information that will help them improve protection. For example, the program provides malware telemetry and samples to security teams so they can identify gaps and prioritize new threat coverage.
 
-Malware prevalence data is provided to antimalware testers to assist them in selecting sample sets. The data also helps set scoring criteria that represent the real-world threat landscape. Service organizations, such as a CERT, can leverage our data to help assess the impact of policy changes or to help shut down malicious activity.
+Malware prevalence data is provided to anti-malware testers to assist them in selecting sample sets. The data also helps set scoring criteria that represent the real-world threat landscape. Service organizations, such as a CERT, can leverage our data to help assess the impact of policy changes or to help shut down malicious activity.
 
 Microsoft is committed to continuous improvement to help reduce the impact of malware on customers. By sharing malware-related information, Microsoft enables members of this community to work towards better protection for customers.
 
@@ -37,10 +37,10 @@ The criteria is designed to ensure that Microsoft can work with the following gr
 
 - Security software providers
 - Security service providers
-- Antimalware testing organizations
+- Anti-malware testing organizations
 - Other organizations involved in the fight against cybercrime
 
-Members will receive information to facilitate effective malware detection, deterrence, and eradication. This information includes technical information on malware as well as metadata on malicious activity. Information shared through VIA is governed by the VIA membership agreement and a Microsoft non-disclosure agreement, where applicable.
+Members will receive information to facilitate effective malware detection, deterrence, and eradication. This information includes technical information on malware and metadata on malicious activity. Information shared through VIA is governed by the VIA membership agreement and a Microsoft non-disclosure agreement, where applicable.
 
 VIA has an open enrollment for potential members.
 
@@ -52,9 +52,9 @@ To be eligible for VIA your organization must:
 
 2. Fit into one of the following categories:
 
-    - Your organization develops antimalware technology that can run on Windows and your organization’s product is commercially available.
+    - Your organization develops anti-malware technology that can run on Windows and your organization’s product is commercially available.
     - Your organization provides security services to Microsoft customers or for Microsoft products.
-    - Your organization publishes antimalware testing reports on a regular basis.
+    - Your organization publishes anti-malware testing reports regularly.
     - Your organization has a research or response team dedicated to fighting malware to protect your organization, your customers, or the general public.
 
 3. Be willing to sign and adhere to the VIA membership agreement.
