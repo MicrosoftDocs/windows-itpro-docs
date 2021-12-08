@@ -123,7 +123,7 @@ All PIN complexity policies, are grouped separately from feature enablement and 
 
 >[!NOTE]
 > Windows Hello for Business policy conflict resolution logic does not respect the ControlPolicyConflict/MDMWinsOverGP policy in the Policy CSP.
-
+>
 ><b>Examples</b>
 >
 >The following are configured using computer Group Policy:
