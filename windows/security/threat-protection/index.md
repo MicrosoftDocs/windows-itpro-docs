@@ -29,7 +29,7 @@ In Windows client, hardware and software work together to help protect you from 
 
 See the following articles to learn more about the different areas of Windows threat protection:
 
-- [Application Control](/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
+- [Application Control](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 - [Attack Surface Reduction Rules](/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 - [Controlled Folder Access](/microsoft-365/security/defender-endpoint/controlled-folders)
 - [Exploit Protection](/microsoft-365/security/defender-endpoint/exploit-protection)
