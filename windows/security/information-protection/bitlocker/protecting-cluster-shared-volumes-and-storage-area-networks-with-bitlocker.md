@@ -117,7 +117,9 @@ When the cluster service owns a disk resource already, it needs to be set into m
     ```powershell
     Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
     ```
-    >**Warning:**  You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
+
+    > [!WARNING]
+    > You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
      
 6.  Use **Resume-ClusterResource** to take the physical disk resource back out of maintenance mode:
 
@@ -182,7 +184,7 @@ The following table contains information about both Physical Disk Resources (tha
 |**Shrink**|Allowed|Allowed|Blocked|Allowed|
 |**Extend**|Allowed|Allowed|Blocked|Allowed|
 
->[!NOTE]
+> [!NOTE]
 > Although the manage-bde -pause command is Blocked in clusters, the cluster service will automatically resume a paused encryption or decryption from the MDS node
  
 In the case where a physical disk resource experiences a failover event during conversion, the new owning node will detect the conversion is not complete and will complete the conversion process.
