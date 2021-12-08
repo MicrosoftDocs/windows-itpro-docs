@@ -167,7 +167,7 @@ Unlike CSV2.0 volumes, physical disk resources can only be accessed by one clust
 
 The following table contains information about both Physical Disk Resources (that is, traditional failover cluster volumes) and Cluster Shared Volumes (CSV) and the actions that are allowed by BitLocker in each situation.
 
-|**Action**|**On owner node of failover volume**|**On Metadata Server (MDS) of CSV**|**On (Data Server) DS of CSV**|**Maintenance Mode**|
+| Action | On owner node of failover volume | On Metadata Server (MDS) of CSV | On (Data Server) DS of CSV | Maintenance Mode |
 |--- |--- |--- |--- |--- |
 |**Manage-bde –on**|Blocked|Blocked|Blocked|Allowed|
 |**Manage-bde –off**|Blocked|Blocked|Blocked|Allowed|
