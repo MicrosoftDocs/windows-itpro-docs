@@ -53,26 +53,20 @@ After completing the instructions in this guide, you will have a PoC environment
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
 
-<br>
-
-<div>
-
-<table border="1" cellspacing="0" cellpadding="0">
-<tr><TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Topic</B></font></td><TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Description</B></font></td><TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Time</B></font></td></tr>
-<tr><td><a href="#hardware-and-software-requirements" data-raw-source="[Hardware and software requirements](#hardware-and-software-requirements)">Hardware and software requirements</a><td>Prerequisites to complete this guide.<td>Informational
-<tr><td><a href="#lab-setup" data-raw-source="[Lab setup](#lab-setup)">Lab setup</a><td>A description and diagram of the PoC environment.<td>Informational
-<tr><td><a href="#configure-the-poc-environment" data-raw-source="[Configure the PoC environment](#configure-the-poc-environment)">Configure the PoC environment</a><td>Parent topic for procedures.<td>Informational
-<tr><td><a href="#verify-support-and-install-hyper-v" data-raw-source="[Verify support and install Hyper-V](#verify-support-and-install-hyper-v)">Verify support and install Hyper-V</a><td>Verify that installation of Hyper-V is supported, and install the Hyper-V server role.<td>10 minutes
-<tr><td><a href="#download-vhd-and-iso-files" data-raw-source="[Download VHD and ISO files](#download-vhd-and-iso-files)">Download VHD and ISO files</a><td>Download evaluation versions of Windows Server 2012 R2 and Windows 10 and prepare these files to be used on the Hyper-V host.<td>30 minutes
-<tr><td><a href="#convert-pc-to-vm" data-raw-source="[Convert PC to VM](#convert-pc-to-vm)">Convert PC to VM</a><td>Convert a physical computer on your network to a VM hosted in Hyper-V.<td>30 minutes
-<tr><td><a href="#resize-vhd" data-raw-source="[Resize VHD](#resize-vhd)">Resize VHD</a><td>Increase the storage capacity for one of the Windows Server VMs.<td>5 minutes
-<tr><td><a href="#configure-hyper-v" data-raw-source="[Configure Hyper-V](#configure-hyper-v)">Configure Hyper-V</a><td>Create virtual switches, determine available RAM for virtual machines, and add virtual machines.<td>15 minutes
-<tr><td><a href="#configure-vms" data-raw-source="[Configure service and user accounts](#configure-vms)">Configure service and user accounts</a><td>Start virtual machines and configure all services and settings.<td>60 minutes
-<tr><td><a href="#configure-vms" data-raw-source="[Configure VMs](#configure-vms)">Configure VMs</a><td>Start virtual machines and configure all services and settings.<td>60 minutes
-<tr><td><a href="#appendix-a-verify-the-configuration" data-raw-source="[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)">Appendix A: Verify the configuration</a><td>Verify and troubleshoot network connectivity and services in the PoC environment.<td>30 minutes
-<tr><td><a href="#appendix-b-terminology-used-in-this-guide" data-raw-source="[Appendix B: Terminology in this guide](#appendix-b-terminology-used-in-this-guide)">Appendix B: Terminology in this guide</a><td>Terms used in this guide.<td>Informational
-</table>
-</div>
+|Topic|Description|Time|
+|--- |--- |--- |
+|[Hardware and software requirements](#hardware-and-software-requirements)|Prerequisites to complete this guide.|Informational|
+|[Lab setup](#lab-setup)|A description and diagram of the PoC environment.|Informational|
+|[Configure the PoC environment](#configure-the-poc-environment)|Parent topic for procedures.|Informational|
+|[Verify support and install Hyper-V](#verify-support-and-install-hyper-v)|Verify that installation of Hyper-V is supported, and install the Hyper-V server role.|10 minutes|
+|[Download VHD and ISO files](#download-vhd-and-iso-files)|Download evaluation versions of Windows Server 2012 R2 and Windows 10 and prepare these files to be used on the Hyper-V host.|30 minutes|
+|[Convert PC to VM](#convert-pc-to-vm)|Convert a physical computer on your network to a VM hosted in Hyper-V.|30 minutes|
+|[Resize VHD](#resize-vhd)|Increase the storage capacity for one of the Windows Server VMs.|5 minutes|
+|[Configure Hyper-V](#configure-hyper-v)|Create virtual switches, determine available RAM for virtual machines, and add virtual machines.|15 minutes|
+|[Configure service and user accounts](#configure-vms)|Start virtual machines and configure all services and settings.|60 minutes|
+|[Configure VMs](#configure-vms)|Start virtual machines and configure all services and settings.|60 minutes|
+|[Appendix A: Verify the configuration](#appendix-a-verify-the-configuration)|Verify and troubleshoot network connectivity and services in the PoC environment.|30 minutes|
+|[Appendix B: Terminology in this guide](#appendix-b-terminology-used-in-this-guide)|Terms used in this guide.|Informational|
 
 ## Hardware and software requirements
 
@@ -85,60 +79,17 @@ Hardware requirements are displayed below:
 
 <div>
 
-<table border="1" cellspacing="0" cellpadding="0">
-    <tr>
-        <td></td>
-        <td BGCOLOR="#a0e4fa"><strong><font color="#000000">Computer 1</strong> (required)</font></td>
-        <td BGCOLOR="#a0e4fa"><strong><font color="#000000">Computer 2</strong> (recommended)</font></td>
-    </tr>
-    <tr>
-        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Role</strong></font></td>
-        <td>Hyper-V host</td>
-        <td>Client computer</td>
-    </tr>
-    <tr>
-        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Description</strong></font></td>
-        <td>This computer will run Hyper-V, the Hyper-V management tools, and the Hyper-V Windows PowerShell module.</td>
-        <td>This computer is a Windows 7 or Windows 8/8.1 client on your corporate network that will be converted to a VM to demonstrate the upgrade process.</td>
-    </tr>
-    <tr>
-        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>OS</strong></font></td>
-        <td>Windows 8.1/10 or Windows Server 2012/2012 R2/2016<b>*</b></td>
-        <td>Windows 7 or a later</td>
-    </tr>
-    <tr>
-        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Edition</strong></font></td>
-        <td>Enterprise, Professional, or Education</td>
-        <td>Any</td>
-    </tr>
-    <tr>
-        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Architecture</strong></font></td>
-        <td>64-bit</td>
-        <td>Any<BR><I>Note: Retaining applications and settings requires that architecture (32 or 64-bit) is the same before and after the upgrade.</I></td>
-    </tr>
-    <tr>
-        <td BGCOLOR="#a0e4fa"><strong>RAM</strong></td>
-        <td>8 GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.
-        <BR>16 GB RAM to test Windows 10 deployment with Microsoft Endpoint Configuration Manager.</td>
-        <td>Any</td>
-    </tr>
-    <tr>
-        <td BGCOLOR="#a0e4fa"><strong>Disk</strong></td>
-        <td>200 GB available hard disk space, any format.</td>
-        <td>Any size, MBR formatted.</td>
-    </tr>
-    <tr>
-        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>CPU</strong></font></td>
-        <td>SLAT-Capable CPU</td>
-        <td>Any</td>
-    </tr>
-    <tr>
-        <td BGCOLOR="#a0e4fa"><font color="#000000"><strong>Network</strong></font></td>
-        <td>Internet connection</td>
-        <td>Any</td>
-    </tr>
-</table>
-
+||Computer 1 (required)|Computer 2 (recommended)|
+|--- |--- |--- |
+|**Role**|Hyper-V host|Client computer|
+|**Description**|This computer will run Hyper-V, the Hyper-V management tools, and the Hyper-V Windows PowerShell module.|This computer is a Windows 7 or Windows 8/8.1 client on your corporate network that will be converted to a VM to demonstrate the upgrade process.|
+|**OS**|Windows 8.1/10 or Windows Server 2012/2012 R2/2016*|Windows 7 or a later|
+|**Edition**|Enterprise, Professional, or Education|Any|
+|**Architecture**|64-bit|Any <p> *Note: Retaining applications and settings requires that architecture (32 or 64-bit) is the same before and after the upgrade.*|
+|**RAM**|8 GB RAM (16 GB recommended) to test Windows 10 deployment with MDT.<br>16 GB RAM to test Windows 10 deployment with Microsoft Endpoint Configuration Manager.|Any|
+|**Disk**|200 GB available hard disk space, any format.|Any size, MBR formatted.|
+|**CPU**|SLAT-Capable CPU|Any|
+|**Network**|Internet connection|Any|
 
 <B>\*</B><I>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console. Providing all steps in this guide as Hyper-V WMI or as 2008 R2 Hyper-V Manager procedures is beyond the scope of the guide.</I>
 <BR>
@@ -236,57 +187,51 @@ When you have completed installation of Hyper-V on the host computer, begin conf
 
 1. Create a directory on your Hyper-V host named **C:\VHD** and download a single [Windows Server 2012 R2 VHD](https://www.microsoft.com/evalcenter/evaluate-windows-server-2012-r2) from the TechNet Evaluation Center to the **C:\VHD** directory.
 
-    **Important**: This guide assumes that VHDs are stored in the **C:\VHD** directory on the Hyper-V host. If you use a different directory to store VHDs, you must adjust steps in this guide appropriately.
+     **Important**: This guide assumes that VHDs are stored in the **C:\VHD** directory on the Hyper-V host. If you use a different directory to store VHDs, you must adjust steps in this guide appropriately.
 
-    After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD. An example of the download offering is shown below.
+     After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD. An example of the download offering is shown below.
 
-    <TABLE BORDER="1">
-    <tr><td> <img src="images/download_vhd.png" alt="VHD"/> </TD></TR>
-    </TABLE>
+     ![VHD](images/download_vhd.png)
 
 2. Download the file to the **C:\VHD** directory. When the download is complete, rename the VHD file that you downloaded to **2012R2-poc-1.vhd**. This is done to make the filename simple to recognize and type.
 3. Copy the VHD to a second file also in the **C:\VHD** directory and name this VHD **2012R2-poc-2.vhd**.
 4. Download the [Windows 10 Enterprise ISO](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) from the TechNet Evaluation Center to the **C:\VHD** directory on your Hyper-V host.
 
-    >During registration, you must specify the type, version, and language of installation media to download. In this example, a Windows 10 Enterprise, 64 bit, English ISO is chosen. You can choose a different version if desired. **Note: The evaluation version of Windows 10 does not support in-place upgrade**.
+     >During registration, you must specify the type, version, and language of installation media to download. In this example, a Windows 10 Enterprise, 64 bit, English ISO is chosen. You can choose a different version if desired. **Note: The evaluation version of Windows 10 does not support in-place upgrade**.
 
 5. Rename the ISO file that you downloaded to **w10-enterprise.iso**. Again, this is done so that the filename is simple to type and recognize. After completing registration you will be able to download the 3.63 GB Windows 10 Enterprise evaluation ISO.
 
-After completing these steps, you will have three files in the **C:\VHD** directory: **2012R2-poc-1.vhd**, **2012R2-poc-2.vhd**, **w10-enterprise.iso**.
+     After completing these steps, you will have three files in the **C:\VHD** directory: **2012R2-poc-1.vhd**, **2012R2-poc-2.vhd**, **w10-enterprise.iso**.
 
-The following displays the procedures described in this section, both before and after downloading files:
+     The following displays the procedures described in this section, both before and after downloading files:
 
-<pre>
-C:>mkdir VHD
-C:>cd VHD
-C:\VHD&gt;ren 9600*.vhd 2012R2-poc-1.vhd
-C:\VHD&gt;copy 2012R2-poc-1.vhd 2012R2-poc-2.vhd
-   1 file(s) copied.
-C:\VHD ren *.iso w10-enterprise.iso
-C:\VHD&gt;dir /B
-2012R2-poc-1.vhd
-2012R2-poc-2.vhd
-w10-enterprise.iso
-</pre>
+     <pre>
+     C:>mkdir VHD
+     C:>cd VHD
+     C:\VHD&gt;ren 9600*.vhd 2012R2-poc-1.vhd
+     C:\VHD&gt;copy 2012R2-poc-1.vhd 2012R2-poc-2.vhd
+        1 file(s) copied.
+     C:\VHD ren *.iso w10-enterprise.iso
+     C:\VHD&gt;dir /B
+     2012R2-poc-1.vhd
+     2012R2-poc-2.vhd
+     w10-enterprise.iso
+     </pre>
 
 ### Convert PC to VM
 
 >Important: Do not attempt to use the VM resulting from the following procedure as a reference image. Also, to avoid conflicts with existing clients, do not start the VM outside the PoC network.
 
-<TABLE BORDER="2"><tr><td>
 If you do not have a PC available to convert to VM, perform the following steps to download an evaluation VM:
-<BR>
-<OL>
-<LI>Open the <a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/" data-raw-source="[Download virtual machines](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)">Download virtual machines</a> page.
-<LI>Under <strong>Virtual machine</strong>, choose <strong>IE11 on Win7</strong>.
-<LI>Under <strong>Select platform</strong> choose <strong>HyperV (Windows)</strong>.
-<LI>Click <strong>Download .zip</strong>. The download is 3.31 GB.
-<LI>Extract the zip file. Three directories are created.
-<LI>Open the <strong>Virtual Hard Disks</strong> directory and then copy <strong>IE11 - Win7.vhd</strong> to the <strong>C:\VHD</strong> directory.
-<LI>Rename <strong>IE11 - Win7.vhd</strong> to <strong>w7.vhd</strong> (do not rename the file to w7.vhdx).
-<LI>In step 5 of the <a href="#configure-hyper-v" data-raw-source="[Configure Hyper-V](#configure-hyper-v)">Configure Hyper-V</a> section, replace the VHD file name <strong>w7.vhdx</strong> with <strong>w7.vhd</strong>.
-</OL>
-</TABLE>
+
+1. Open the [Download virtual machines](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/) page.
+2. Under **Virtual machine**, choose **IE11 on Win7**.
+3. Under **Select platform** choose **HyperV (Windows)**.
+4. Click **Download .zip**. The download is 3.31 GB.
+5. Extract the zip file. Three directories are created.
+6. Open the **Virtual Hard Disks** directory and then copy **IE11 - Win7.vhd** to the **C:\VHD** directory.
+7. Rename **IE11 - Win7.vhd** to **w7.vhd** (do not rename the file to w7.vhdx).
+8. In step 5 of the [Configure Hyper-V](#configure-hyper-v) section, replace the VHD file name **w7.vhdx** with **w7.vhd**.
 
 If you have a PC available to convert to VM (computer 2):
 
@@ -301,30 +246,10 @@ If you have a PC available to convert to VM (computer 2):
 
 When creating a VM in Hyper-V, you must specify either generation 1 or generation 2. The following table describes requirements for these two types of VMs.
 
-<div>
-
-<table border="1" cellspacing="0" cellpadding="0">
-    <tr>
-        <td></td>
-        <td>Architecture</td>
-        <td>Operating system</td>
-        <td>Partition style</td>
-    </tr>
-    <tr>
-        <td>Generation 1</td>
-        <td>32-bit or 64-bit</td>
-        <td>Windows 7 or later</td>
-        <td>MBR</td>
-    </tr>
-    <tr>
-        <td>Generation 2</td>
-        <td>64-bit</td>
-        <td>Windows 8 or later</td>
-        <td>MBR or GPT</td>
-    </tr>
-</table>
-
-</div>
+||Architecture|Operating system|Partition style|
+|--- |--- |--- |--- |
+|**Generation 1**|32-bit or 64-bit|Windows 7 or later|MBR|
+|**Generation 2**|64-bit|Windows 8 or later|MBR or GPT|
 
 If the PC is running a 32-bit OS or the OS is Windows 7, it must be converted to a generation 1 VM. Otherwise, it can be converted to a generation 2 VM.
 
@@ -370,74 +295,42 @@ Number Friendly Name                  OperationalStatus                     Tota
 
 **Choosing a VM generation**
 
-The following table displays the Hyper-V VM generation to choose based on the OS, architecture, and partition style. Links to procedures to create the corresponding VMs are included.
+The following tables display the Hyper-V VM generation to choose based on the OS, architecture, and partition style. Links to procedures to create the corresponding VMs are included.
 
-<div>
+**Windows 7 MBR**
 
-<table border="1" cellspacing="0" cellpadding="0">
-    <tr>
-        <td>OS</td>
-        <td>Partition style</td>
-        <td>Architecture</td>
-        <td>VM generation</td>
-        <td>Procedure</td>
-    </tr>
-    <tr>
-        <td rowspan="4">Windows 7</td>
-        <td rowspan="2">MBR</td>
-        <td>32</td>
-        <td>1</td>
-        <td><a href="#prepare-a-generation-1-vm" data-raw-source="[Prepare a generation 1 VM](#prepare-a-generation-1-vm)">Prepare a generation 1 VM</a></td>
-    </tr>
-    <tr>
-        <td>64</td>
-        <td>1</td>
-        <td><a href="#prepare-a-generation-1-vm" data-raw-source="[Prepare a generation 1 VM](#prepare-a-generation-1-vm)">Prepare a generation 1 VM</a></td>
-    </tr>
-    <tr>
-        <td rowspan="2">GPT</td>
-        <td>32</td>
-        <td>N/A</td>
-        <td>N/A</td>
-    </tr>
-    <tr>
-        <td>64</td>
-        <td>1</td>
-        <td><a href="#prepare-a-generation-1-vm-from-a-gpt-disk" data-raw-source="[Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk)">Prepare a generation 1 VM from a GPT disk</a></td>
-    </tr>
-    <tr>
-        <td rowspan="4">Windows 8 or later</td>
-        <td rowspan="2">MBR</td>
-        <td>32</td>
-        <td>1</td>
-        <td><a href="#prepare-a-generation-1-vm" data-raw-source="[Prepare a generation 1 VM](#prepare-a-generation-1-vm)">Prepare a generation 1 VM</a></td>
-    </tr>
-    <tr>
-        <td>64</td>
-        <td>1, 2</td>
-        <td><a href="#prepare-a-generation-1-vm" data-raw-source="[Prepare a generation 1 VM](#prepare-a-generation-1-vm)">Prepare a generation 1 VM</a></td>
-    </tr>
-    <tr>
-        <td rowspan="2">GPT</td>
-        <td>32</td>
-        <td>1</td>
-        <td><a href="#prepare-a-generation-1-vm-from-a-gpt-disk" data-raw-source="[Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk)">Prepare a generation 1 VM from a GPT disk</a></td>
-    </tr>
-    <tr>
-        <td>64</td>
-        <td>2</td>
-        <td><a href="#prepare-a-generation-2-vm" data-raw-source="[Prepare a generation 2 VM](#prepare-a-generation-2-vm)">Prepare a generation 2 VM</a></td>
-    </tr>
-</table>
+|Architecture|VM generation|Procedure|
+|--- |--- |--- |
+|32|1|[Prepare a generation 1 VM](#prepare-a-generation-1-vm)|
+|64|1|[Prepare a generation 1 VM](#prepare-a-generation-1-vm)|
 
-</div>
+**Windows 7 GPT**
 
-Notes:<BR>
-<UL>
-<LI>If the PC is running Windows 7, it can only be converted and hosted in Hyper-V as a generation 1 VM. This Hyper-V requirement means that if the Windows 7 PC is also using a GPT partition style, the OS disk can be shadow copied, but a new system partition must be created. In this case, see <a href="#prepare-a-generation-1-vm-from-a-gpt-disk" data-raw-source="[Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk)">Prepare a generation 1 VM from a GPT disk</a>.
-<LI>If the PC is running Windows 8 or later and uses the GPT partition style, you can capture the disk image and create a generation 2 VM. To do this, you must temporarily mount the EFI system partition which is accomplished using the <strong>mountvol</strong> command. In this case, see <a href="#prepare-a-generation-2-vm" data-raw-source="[Prepare a generation 2 VM](#prepare-a-generation-2-vm)">Prepare a generation 2 VM</a>.
-<LI>If the PC is using an MBR partition style, you can convert the disk to VHD and use it to create a generation 1 VM. If you use the Disk2VHD tool described in this guide, it is not necessary to mount the MBR system partition, but it is still necessary to capture it. In this case, see <a href="#prepare-a-generation-1-vm" data-raw-source="[Prepare a generation 1 VM](#prepare-a-generation-1-vm)">Prepare a generation 1 VM</a>.
-</UL>
+|Architecture|VM generation|Procedure|
+|--- |--- |--- |
+|32|N/A|N/A|
+|64|1|[Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk)|
+
+**Windows 8 or later MBR**
+
+|Architecture|VM generation|Procedure|
+|--- |--- |--- |
+|32|1|[Prepare a generation 1 VM](#prepare-a-generation-1-vm)|
+|64|1, 2|[Prepare a generation 1 VM](#prepare-a-generation-1-vm)|
+
+**Windows 8 or later GPT**
+
+|Architecture|VM generation|Procedure|
+|--- |--- |--- |
+|32|1|[Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk)|
+|64|2|[Prepare a generation 2 VM](#prepare-a-generation-2-vm)|
+
+> [!NOTE]
+>
+>- If the PC is running Windows 7, it can only be converted and hosted in Hyper-V as a generation 1 VM. This Hyper-V requirement means that if the Windows 7 PC is also using a GPT partition style, the OS disk can be shadow copied, but a new system partition must be created. In this case, see [Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk).
+>- If the PC is running Windows 8 or later and uses the GPT partition style, you can capture the disk image and create a generation 2 VM. To do this, you must temporarily mount the EFI system partition which is accomplished using the <strong>mountvol</strong> command. In this case, see [Prepare a generation 2 VM](#prepare-a-generation-2-vm).
+>- If the PC is using an MBR partition style, you can convert the disk to VHD and use it to create a generation 1 VM. If you use the Disk2VHD tool described in this guide, it is not necessary to mount the MBR system partition, but it is still necessary to capture it. In this case, see [Prepare a generation 1 VM](#prepare-a-generation-1-vm).
+
 
 #### Prepare a generation 1 VM
 
@@ -1080,26 +973,18 @@ Use the following procedures to verify that the PoC environment is configured pr
 
 ## Appendix B: Terminology used in this guide
 
-<P>&nbsp;
-
-<div>
-
-<table border="1" cellspacing="0" cellpadding="0">
-<tr><TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Term</B></font>
-<TD BGCOLOR="#a0e4fa"><font color="#000000"><B>Definition</B></font>
-<tr><td>GPT<td>GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.
-<tr><td>Hyper-V<td>Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.
-<tr><td>Hyper-V host<td>The computer where Hyper-V is installed.
-<tr><td>Hyper-V Manager<td>The user-interface console used to view and configure Hyper-V.
-<tr><td>MBR<td>Master Boot Record (MBR) is a legacy hard-disk formatting scheme that limits support for newer hardware. MBR is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions. MBR is in the process of being replaced by the GPT partition format.
-<tr><td>Proof of concept (PoC)<td>Confirmation that a process or idea works as intended. A PoC is carried out in a test environment to learn about and verify a process.
-<tr><td>Shadow copy<td>A copy or &quot;snapshot&quot; of a computer at a point in time, created by the Volume Shadow Copy Service (VSS), typically for backup purposes.
-<tr><td>Virtual machine (VM)<td>A VM is a virtual computer with its own operating system, running on the Hyper-V host.
-<tr><td>Virtual switch<td>A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.
-<tr><td>VM snapshot<td>A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.
-</TABLE>
-
-</div>
+|Term|Definition|
+|--- |--- |
+|GPT|GUID partition table (GPT) is an updated hard-disk formatting scheme that enables the use of newer hardware. GPT is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions.|
+|Hyper-V|Hyper-V is a server role introduced with Windows Server 2008 that lets you create a virtualized computing environment. Hyper-V can also be installed as a Windows feature on Windows client operating systems, starting with Windows 8.|
+|Hyper-V host|The computer where Hyper-V is installed.|
+|Hyper-V Manager|The user-interface console used to view and configure Hyper-V.|
+|MBR|Master Boot Record (MBR) is a legacy hard-disk formatting scheme that limits support for newer hardware. MBR is one of the partition formats that can be chosen when first initializing a hard drive, prior to creating and formatting partitions. MBR is in the process of being replaced by the GPT partition format.|
+|Proof of concept (PoC)|Confirmation that a process or idea works as intended. A PoC is carried out in a test environment to learn about and verify a process.|
+|Shadow copy|A copy or "snapshot" of a computer at a point in time, created by the Volume Shadow Copy Service (VSS), typically for backup purposes.|
+|Virtual machine (VM)|A VM is a virtual computer with its own operating system, running on the Hyper-V host.|
+|Virtual switch|A virtual network connection used to connect VMs to each other and to physical network adapters on the Hyper-V host.|
+|VM snapshot|A point in time image of a VM that includes its disk, memory and device state. It can be used to return a virtual machine to a former state corresponding to the time the snapshot was taken.|
 
 ## Related Topics
 
