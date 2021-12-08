@@ -67,7 +67,9 @@ You can also use an Active Directory Domain Services (AD DS) protector for prote
 BitLocker encryption is available for disks before or after addition to a cluster storage pool. The advantage of encrypting volumes prior to adding them to a cluster is that the disk resource does not require suspending the resource to complete the operation. To turn on BitLocker for a disk before adding it to a cluster:
 
 1.  Install the BitLocker Drive Encryption feature if it is not already installed.
+
 2.  Ensure the disk is formatted NTFS and has a drive letter assigned to it.
+
 3.  Identify the name of the cluster with Windows PowerShell.
 
     ```powershell
@@ -80,9 +82,11 @@ BitLocker encryption is available for disks before or after addition to a cluste
     Enable-BitLocker E: -ADAccountOrGroupProtector -ADAccountOrGroup CLUSTER$
     ```
 
-    >**Warning:**  You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
+    > [!WARNING]
+    > You must configure an **ADAccountOrGroup** protector using the cluster CNO for a BitLocker enabled volume to either be shared in a Cluster Shared Volume or to fail over properly in a traditional failover cluster.
      
 5.  Repeat the preceding steps for each disk in the cluster.
+
 6.  Add the volume(s) to the cluster.
 
 ### Turning on BitLocker for a clustered disk using Windows PowerShell
