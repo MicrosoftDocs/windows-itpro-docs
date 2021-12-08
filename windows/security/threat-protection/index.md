@@ -34,12 +34,12 @@ See the following articles to learn more about the different areas of Windows th
 - [Controlled Folder Access](/microsoft-365/security/defender-endpoint/controlled-folders)
 - [Exploit Protection](/microsoft-365/security/defender-endpoint/exploit-protection)
 - [Microsoft Defender Application Guard](/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview)
-- [Microsoft Defender Device Guard](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
+- [Microsoft Defender Device Guard](device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control.md)
 - [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 - [Network Protection](/microsoft-365/security/defender-endpoint/network-protection)
 - [Virtualization-Based Protection of Code Integrity](/windows/security/threat-protection/device-guard/enable-virtualization-based-protection-of-code-integrity)
 - [Web Protection](/microsoft-365/security/defender-endpoint/web-protection-overview)
-- [Windows Firewall](windows-firewall/windows-firewall-with-advanced-security)
+- [Windows Firewall](windows-firewall/windows-firewall-with-advanced-security.md)
 - [Windows Sandbox](/windows/security/threat-protection/windows-sandbox/windows-sandbox-overview)
 
 ### Next-generation protection
