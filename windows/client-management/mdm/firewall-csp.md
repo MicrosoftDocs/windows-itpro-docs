@@ -6,7 +6,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: manikadhiman
-ms.date: 01/26/2018
+ms.date: 11/29/2021
 ms.reviewer: 
 manager: dansimp
 ---
@@ -98,7 +98,6 @@ Firewall
 ----------------EdgeTraversal
 ----------------LocalUserAuthorizationList
 ----------------FriendlyName
-----------------IcmpTypesAndCodes
 ----------------Status
 ----------------Name
 ```

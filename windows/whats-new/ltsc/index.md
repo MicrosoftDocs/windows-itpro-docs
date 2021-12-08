@@ -11,12 +11,13 @@ ms.author: greglin
 manager: dougeby
 ms.localizationpriority: low
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Windows 10 Enterprise LTSC
 
 **Applies to**
--   Windows 10 Enterprise LTSC
+-   Windows 10 Enterprise LTSC
 
 ## In this topic
 

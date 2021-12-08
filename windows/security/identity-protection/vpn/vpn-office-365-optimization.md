@@ -1,7 +1,7 @@
 ---
 title: Optimizing Office 365 traffic for remote workers with the native Windows 10 or Windows 11 VPN client
 description: tbd
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking

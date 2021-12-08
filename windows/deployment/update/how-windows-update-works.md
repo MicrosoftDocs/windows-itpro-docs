@@ -8,9 +8,10 @@ itproauthor: jaimeo
 author: jaimeo
 ms.localizationpriority: medium
 ms.author: jaimeo
-ms.reviewer: 
-manager: laurawi
-ms.collection: M365-modern-desktop
+manager: dougeby
+ms.collection:
+  - M365-modern-desktop
+  - highpri
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---
