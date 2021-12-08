@@ -68,24 +68,16 @@ Defines the root node for the BitLocker configuration service provider.
 Allows the administrator to require storage card encryption on the device. This policy is valid only for a mobile SKU.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|No|No|
+|Business|No|No|
+|Enterprise|No|No|
+|Education|No|No|
+|Mobile|Yes|Yes|
+
 <!--/SupportedSKUs-->
 
 Data type is integer. Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the storage card, but the user will no longer be prompted to turn it on.
@@ -124,24 +116,16 @@ Data type is integer. Supported operations are Add, Get, Replace, and Delete.
 Allows the administrator to require encryption to be turned on by using BitLocker\Device Encryption.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|Yes|Yes|
+
 <!--/SupportedSKUs-->
 Data type is integer. Sample value for this node to enable this policy: 1.
 Supported operations are Add, Get, Replace, and Delete.
@@ -193,24 +177,16 @@ If you want to disable this policy, use the following SyncML:
 Allows you to set the default encryption method for each of the different drive types: operating system drives, fixed data drives, and removable data drives. Hidden, system, and recovery partitions are skipped from encryption. This setting is a direct mapping to the BitLocker Group Policy "Choose drive encryption method and cipher strength (Windows 10 [Version 1511] and later)".
 <!--/Description-->
 <!--SupportedValues-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedValues-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -276,26 +252,16 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 Allows you to associate unique organizational identifiers to a new drive that is enabled with BitLocker.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -347,26 +313,16 @@ If you disable or do not configure this setting, the identification field is not
 Allows users on devices that are compliant with InstantGo or the Microsoft Hardware Security Test Interface (HSTI) to not have a PIN for preboot authentication.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -400,26 +356,16 @@ If this policy is disabled, the options of "Require additional authentication at
 Allows users to configure whether or not enhanced startup PINs are used with BitLocker.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -456,26 +402,16 @@ If you disable or do not configure this policy setting, enhanced PINs will not b
 Allows you to configure whether standard users are allowed to change BitLocker PIN or password that is used to protect the operating system drive.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -512,26 +448,16 @@ Sample value for this node to disable this policy is:
 Allows users to enable authentication options that require user input from the preboot environment, even if the platform indicates a lack of preboot input capability.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -574,26 +500,16 @@ When the Windows Recovery Environment is not enabled and this policy is not enab
 Allows you to configure the encryption type that is used by BitLocker.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -633,26 +549,16 @@ For more information about the tool to manage BitLocker, see [Manage-bde](/windo
 This setting is a direct mapping to the BitLocker Group Policy "Require additional authentication at startup".
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -741,26 +647,16 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 This setting is a direct mapping to the BitLocker Group Policy "Configure minimum PIN length for startup".
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -818,26 +714,16 @@ This setting is a direct mapping to the BitLocker Group Policy "Configure pre-bo
 (PrebootRecoveryInfo_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -907,26 +793,16 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLocker-protected operating system drives can be recovered" (OSRecoveryUsage_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -1004,26 +880,16 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLocker-protected fixed drives can be recovered" ().
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -1110,26 +976,16 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 This setting is a direct mapping to the BitLocker Group Policy "Deny write access to fixed drives not protected by BitLocker" (FDVDenyWriteAccess_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-   
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -1179,26 +1035,16 @@ Data type is string. Supported operations are Add, Get, Replace, and Delete.
 Allows you to configure the encryption type on fixed data drives that is used by BitLocker.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -1240,26 +1086,16 @@ For more information about the tool to manage BitLocker, see [Manage-bde](/windo
 This setting is a direct mapping to the BitLocker Group Policy "Deny write access to removable drives not protected by BitLocker" (RDVDenyWriteAccess_Name).
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -1320,26 +1156,16 @@ Disabling the policy will let the system choose the default behaviors. If you wa
 Allows you to configure the encryption type that is used by BitLocker.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -1375,26 +1201,16 @@ If this policy is disabled or not configured, the BitLocker Setup Wizard asks th
 Allows you to control the use of BitLocker on removable data drives.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
 ADMX Info:
@@ -1445,26 +1261,16 @@ Allows the admin to disable the warning prompt for other disk encryption on the 
 > [!Warning]
 > When you enable BitLocker on a device with third-party encryption, it may render the device unusable and require you to reinstall Windows.
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--SupportedValues-->
 The following list shows the supported values:
@@ -1509,26 +1315,16 @@ Allows Admin to enforce "RequireDeviceEncryption" policy for scenarios where pol
 
 If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDeviceEncryption" policy will not try to encrypt drive(s) if a standard user is the current logged on user in the system.
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 <!--SupportedValues-->
 The expected values for this policy are:
@@ -1564,26 +1360,16 @@ This setting initiates a client-driven recovery password refresh after an OS dri
 <!--/Description-->
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 
 Value type is int. Supported operations are Add, Delete, Get, and Replace.
@@ -1619,26 +1405,16 @@ Each server-side recovery key rotation is represented by a request ID. The serve
 - RotateRecoveryPasswordsRequestID: Returns request ID of last request processed.
 - RotateRecoveryPasswordsRotationStatus: Returns status of last request processed.
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 
 Value type is string. Supported operation is Execute. Request ID is expected as a parameter.
@@ -1664,26 +1440,16 @@ Interior node. Supported operation is Get.
 This node reports compliance state of device encryption on the system. 
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 
 <!--SupportedValues-->
@@ -1732,26 +1498,16 @@ Status code can be one of the following:
 - 0 - Pass
 - Any other code - Failure HRESULT
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 <!--/SupportedSKUs-->
 
 Value type is int. Supported operation is Get.
@@ -1767,26 +1523,16 @@ This node reports the RequestID corresponding to RotateRecoveryPasswordsStatus.
 This node needs to be queried in synchronization with RotateRecoveryPasswordsStatus to ensure the status is correctly matched to the request ID.
 <!--/Description-->
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Home</th>
-    <th>Pro</th>
-    <th>Business</th>
-    <th>Enterprise</th>
-    <th>Education</th>
-    <th>Mobile</th>
-    
-</tr>
-<tr>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/checkmark.png" alt="check mark" /></td>
-    <td><img src="images/crossmark.png" alt="cross mark" /></td>
-    
-</tr>
-</table> 
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
+|Mobile|No|No|
+
 
 <!--/SupportedSKUs-->
 
