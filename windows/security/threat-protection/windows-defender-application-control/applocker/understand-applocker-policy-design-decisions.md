@@ -57,7 +57,8 @@ You might need to control a limited number of apps because they access sensitive
 | Control apps by computer, not user | AppLocker is a computer-based policy implementation. If your domain or site organizational structure is not based on a logical user structure, such as an OU, you might want to set up that structure before you begin your AppLocker planning. Otherwise, you will have to identify users, their computers, and their app access requirements.|
 |Understand app usage, but there is no need to control any apps yet | AppLocker policies can be set to audit app usage to help you track which apps are used in your organization. You can then use the AppLocker event log to create AppLocker policies.|
 
->**Important:**  The following list contains files or types of files that cannot be managed by AppLocker:
+> [!IMPORTANT]
+> The following list contains files or types of files that cannot be managed by AppLocker:
 
 -   AppLocker does not protect against running 16-bit DOS binaries in an NT Virtual DOS Machine (NTVDM). This technology allows running legacy DOS and 16-bit Windows programs on computers that are using Intel 80386 or higher when there is already another operating system running and controlling the hardware. The result is that 16-bit binaries can still run on Windows Server 2008 R2 and Windows 7 when AppLocker is configured to otherwise block binaries and libraries. If it is a requirement to prevent 16-bit applications from running, you must configure the Deny rule in the Executable rule collection for NTVDM.exe.
 
@@ -65,7 +66,8 @@ You might need to control a limited number of apps because they access sensitive
 
 -   AppLocker can only control VBScript, JScript, .bat files, .cmd files and Windows PowerShell scripts. It does not control all interpreted code that runs within a host process, for example Perl scripts and macros. Interpreted code is a form of executable code that runs within a host process. For example, Windows batch files (\*.bat) run within the context of the Windows Command Host (cmd.exe). To use AppLocker to control interpreted code, the host process must call AppLocker before it runs the interpreted code, and then enforce the decision that is returned by AppLocker. Not all host processes call into AppLocker. Therefore, AppLocker cannot control every kind of interpreted code, for example Microsoft Office macros.
 
-    >**Important:**  You should configure the appropriate security settings of these host processes if you must allow them to run. For example, configure the security settings in Microsoft Office to ensure that only signed and trusted macros are loaded.
+  > [!IMPORTANT]
+  > You should configure the appropriate security settings of these host processes if you must allow them to run. For example, configure the security settings in Microsoft Office to ensure that only signed and trusted macros are loaded.
 
 -   AppLocker rules allow or prevent an app from launching. AppLocker does not control the behavior of apps after they are launched. Applications could contain flags that are passed to functions that signal AppLocker to circumvent the rules and allow another .exe or .dll file to be loaded. In practice, an app that is allowed by AppLocker could use these flags to bypass AppLocker rules and launch child processes. You must follow a process that best suits your needs to thoroughly vet each app before allowing them to run using AppLocker rules.
 
@@ -98,57 +100,11 @@ Most organizations have evolved app control policies and methods over time. With
 ### Which Windows desktop and server operating systems are running in your organization?
 
 If your organization supports multiple Windows operating systems, app control policy planning becomes more complex. Your initial design decisions should consider the security and management priorities of applications that are installed on each version of the operating system.
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Possible answers</th>
-<th align="left">Design considerations</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Your organization&#39;s computers are running a combination of the following operating systems:</p>
-<ul>
-<li><p>Windows 11</p></li>
-<li><p>Windows 10</p></li>
-<li><p>Windows 8</p></li>
-<li><p>Windows 7</p></li>
-<li><p>Windows Vista</p></li>
-<li><p>Windows XP</p></li>
-<li><p>Windows Server 2012</p></li>
-<li><p>Windows Server 2008 R2</p></li>
-<li><p>Windows Server 2008</p></li>
-<li><p>Windows Server 2003</p></li>
-</ul></td>
-<td align="left"><p>AppLocker rules are only applied to computers running the supported versions of Windows, but SRP rules can be applied to all versions of Windows beginning with Windows XP and Windows Server 2003. For specific operating system version requirements, see <a href="requirements-to-use-applocker.md" data-raw-source="[Requirements to use AppLocker](requirements-to-use-applocker.md)">Requirements to use AppLocker</a>.</p>
-<div class="alert">
-<b>Note</b><br/><p>If you are using the Basic User security level as assigned in SRP, those privileges are not supported on computers running that support AppLocker.</p>
-</div>
-<div>
 
-</div>
-<p>AppLocker policies as applied through a GPO take precedence over SRP policies in the same or linked GPO. SRP policies can be created and maintained the same way.</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p>Your organization&#39;s computers are running only the following operating systems:</p>
-<ul>
-<li><p>Windows 11</p></li>
-<li><p>Windows 10</p></li>
-<li><p>Windows 8.1</p></li>
-<li><p>Windows 8</p></li>
-<li><p>Windows 7</p></li>
-<li><p>Windows Server 2012 R2</p></li>
-<li><p>Windows Server 2012</p></li>
-<li><p>Windows Server 2008 R2</p></li>
-</ul></td>
-<td align="left"><p>Use AppLocker to create your application control policies.</p></td>
-</tr>
-</tbody>
-</table>
+|Possible answers|Design considerations|
+|--- |--- |
+|Your organization's computers are running a combination of the following operating systems:<li>Windows 11<li>Windows 10<li>Windows 8<li>Windows 7<li>Windows Vista<li>Windows XP<li>Windows Server 2012<li>Windows Server 2008 R2<li>Windows Server 2008<li>Windows Server 2003|AppLocker rules are only applied to computers running the supported versions of Windows, but SRP rules can be applied to all versions of Windows beginning with Windows XP and Windows Server 2003. For specific operating system version requirements, see [Requirements to use AppLocker](requirements-to-use-applocker.md).<br/><br/> **Note:** If you are using the Basic User security level as assigned in SRP, those privileges are not supported on computers running that support AppLocker.<br/><br/>AppLocker policies as applied through a GPO take precedence over SRP policies in the same or linked GPO. SRP policies can be created and maintained the same way.|
+|Your organization's computers are running only the following operating systems:<li>Windows 11<li>Windows 10<li>Windows 8.1<li>Windows 8<li>Windows 7<li>Windows Server 2012 R2<li>Windows Server 2012<li>Windows Server 2008 R2|Use AppLocker to create your application control policies.|
 
 ### Are there specific groups in your organization that need customized application control policies?
 
@@ -223,7 +179,7 @@ AppLocker is very effective for organizations that have application restriction 
 | Possible answers | Design considerations |
 | - | - |
 | Users run without administrative rights. | Apps are installed by using an installation deployment technology.|
-| AppLocker can help reduce the total cost of ownership for business groups that typically use a finite set of apps, such as human resources and finance departments. At the same time, these departments access highly sensitive information, much of which contains confidential and proprietary information. By using AppLocker to create rules for specific apps that are allowed to run, you can help limit unauthorized applications from accessing this information.<br/>**Note: **AppLocker can also be effective in helping create standardized desktops in organizations where users run as administrators. However, it is important to note that users with administrative credentials can add new rules to the local AppLocker policy.| Users must be able to install applications as needed. 
+| AppLocker can help reduce the total cost of ownership for business groups that typically use a finite set of apps, such as human resources and finance departments. At the same time, these departments access highly sensitive information, much of which contains confidential and proprietary information. By using AppLocker to create rules for specific apps that are allowed to run, you can help limit unauthorized applications from accessing this information.<br/><br/>**Note:** AppLocker can also be effective in helping create standardized desktops in organizations where users run as administrators. However, it is important to note that users with administrative credentials can add new rules to the local AppLocker policy.| Users must be able to install applications as needed. 
 | Users currently have administrator access, and it would be difficult to change this.|Enforcing AppLocker rules is not suited for business groups that must be able to install apps as needed and without approval from the IT department. If one or more OUs in your organization has this requirement, you can choose not to enforce application rules in those OUs by using AppLocker or to implement the **Audit only** enforcement setting through AppLocker.|
 
 ### Is the structure in Active Directory Domain Services based on the organization's hierarchy?
