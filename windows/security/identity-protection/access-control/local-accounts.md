@@ -94,15 +94,11 @@ In comparison, on the Windows client operating system, a user with a local user 
 
 In this case, Group Policy can be used to enable secure settings that can control the use of the local Administrators group automatically on every server or client computer. For more information about Group Policy, see [Group Policy Overview](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831791(v=ws.11)).
 
-**Note**  
-Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
-
- 
-
-**Important**  
-Even when the Administrator account has been disabled, it can still be used to gain access to a computer by using safe mode. In the Recovery Console or in safe mode, the Administrator account is automatically enabled. When normal operations are resumed, it is disabled.
-
- 
+> [!IMPORTANT]
+> 
+> - Blank passwords are not allowed in the versions designated in the **Applies To** list at the beginning of this topic.
+>
+> - Even when the Administrator account has been disabled, it can still be used to gain access to a computer by using safe mode. In the Recovery Console or in safe mode, the Administrator account is automatically enabled. When normal operations are resumed, it is disabled. 
 
 ### <a href="" id="sec-guest"></a>Guest account
 
@@ -139,53 +135,16 @@ For details about the HelpAssistant account attributes, see the following table.
 
 **HelpAssistant account attributes**
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Attribute</th>
-<th>Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><p>Well-Known SID/RID</p></td>
-<td><p>S-1-5-&lt;domain&gt;-13 (Terminal Server User), S-1-5-&lt;domain&gt;-14 (Remote Interactive Logon)</p></td>
-</tr>
-<tr class="even">
-<td><p>Type</p></td>
-<td><p>User</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default container</p></td>
-<td><p>CN=Users, DC=&lt;domain&gt;, DC=</p></td>
-</tr>
-<tr class="even">
-<td><p>Default members</p></td>
-<td><p>None</p></td>
-</tr>
-<tr class="odd">
-<td><p>Default member of</p></td>
-<td><p>Domain Guests</p>
-<p>Guests</p></td>
-</tr>
-<tr class="even">
-<td><p>Protected by ADMINSDHOLDER?</p></td>
-<td><p>No</p></td>
-</tr>
-<tr class="odd">
-<td><p>Safe to move out of default container?</p></td>
-<td><p>Can be moved out, but we do not recommend it.</p></td>
-</tr>
-<tr class="even">
-<td><p>Safe to delegate management of this group to non-Service admins?</p></td>
-<td><p>No</p></td>
-</tr>
-</tbody>
-</table>
+|Attribute|Value|
+|--- |--- |
+|Well-Known SID/RID|`S-1-5-<domain>-13 (Terminal Server User), S-1-5-<domain>-14 (Remote Interactive Logon)`|
+|Type|User|
+|Default container|`CN=Users, DC=<domain>, DC=`|
+|Default members|None|
+|Default member of|Domain Guests<br/><br/>Guests|
+|Protected by ADMINSDHOLDER?|No|
+|Safe to move out of default container?|Can be moved out, but we do not recommend it.|
+|Safe to delegate management of this group to non-Service admins?|No|
 
 ### DefaultAccount
 
@@ -232,8 +191,8 @@ The SYSTEM account is used by the operating system and by services that run unde
 
 On the other hand, the SYSTEM account does appear on an NTFS file system volume in File Manager in the **Permissions** portion of the **Security** menu. By default, the SYSTEM account is granted Full Control permissions to all files on an NTFS volume. Here the SYSTEM account has the same functional rights and permissions as the Administrator account.
 
-**Note**  
-To grant the account Administrators group file permissions does not implicitly give permission to the SYSTEM account. The SYSTEM account's permissions can be removed from a file, but we do not recommend removing them.
+> [!NOTE]
+> To grant the account Administrators group file permissions does not implicitly give permission to the SYSTEM account. The SYSTEM account's permissions can be removed from a file, but we do not recommend removing them.
 
 ### NETWORK SERVICE 
 The NETWORK SERVICE account is a predefined local account used by the service control manager (SCM). A service that runs in the context of the NETWORK SERVICE account presents the computer's credentials to remote servers. For more information, see [NetworkService Account](/windows/desktop/services/networkservice-account).
@@ -250,8 +209,8 @@ You can use Local Users and Groups to assign rights and permissions on the local
 
 You cannot use Local Users and Groups on a domain controller. However, you can use Local Users and Groups on a domain controller to target remote computers that are not domain controllers on the network.
 
-**Note**  
-You use Active Directory Users and Computers to manage users and groups in Active Directory.
+> [!NOTE]
+> You use Active Directory Users and Computers to manage users and groups in Active Directory.
 
 You can also manage local users by using NET.EXE USER and manage local groups by using NET.EXE LOCALGROUP, or by using a variety of PowerShell cmdlets and other scripting technologies.
 
@@ -271,8 +230,8 @@ The other approaches that can be used to restrict and protect user accounts with
 
 Each of these approaches is described in the following sections.
 
-**Note**  
-These approaches do not apply if all administrative local accounts are disabled.
+> [!NOTE]
+> These approaches do not apply if all administrative local accounts are disabled.
 
  
 
@@ -290,77 +249,24 @@ For more information about UAC, see [User Account Control](/windows/access-prote
 
 The following table shows the Group Policy and registry settings that are used to enforce local account restrictions for remote access.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><b>No.</b></p></td>
-<td><p><b>Setting</b></p></td>
-<td><p><b>Detailed Description</b></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy location</p></td>
-<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options</p></td>
-</tr>
-<tr class="odd">
-<td><p>1</p></td>
-<td><p>Policy name</p></td>
-<td><p><a href="/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode" data-raw-source="[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)">User Account Control: Run all administrators in Admin Approval Mode</a></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy setting</p></td>
-<td><p>Enabled</p></td>
-</tr>
-<tr class="odd">
-<td><p>2</p></td>
-<td><p>Policy location</p></td>
-<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy name</p></td>
-<td><p><a href="/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode" data-raw-source="[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)">User Account Control: Run all administrators in Admin Approval Mode</a></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Policy setting</p></td>
-<td><p>Enabled</p></td>
-</tr>
-<tr class="even">
-<td><p>3</p></td>
-<td><p>Registry key</p></td>
-<td><p><b>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System</b></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Registry value name</p></td>
-<td><p>LocalAccountTokenFilterPolicy</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Registry value type</p></td>
-<td><p>DWORD</p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Registry value data</p></td>
-<td><p>0</p></td>
-</tr>
-</tbody>
-</table>
+|No.|Setting|Detailed Description|
+|--- |--- |--- |
+||Policy location|Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options|
+|1|Policy name|[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)|
+||Policy setting|Enabled|
+|2|Policy location|Computer Configuration\Windows Settings\Security Settings\Local Policies\Security Options|
+||Policy name|[User Account Control: Run all administrators in Admin Approval Mode](/windows/device-security/security-policy-settings/user-account-control-run-all-administrators-in-admin-approval-mode)|
+||Policy setting|Enabled|
+|3|Registry key|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System|
+||Registry value name|LocalAccountTokenFilterPolicy|
+||Registry value type|DWORD|
+||Registry value data|0|
 
-
->[!NOTE]
->You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates. 
+> [!NOTE]
+> You can also enforce the default for LocalAccountTokenFilterPolicy by using the custom ADMX in Security Templates. 
  
 
-**To enforce local account restrictions for remote access**
+#### To enforce local account restrictions for remote access
 
 1.  Start the **Group Policy Management** Console (GPMC).
 
@@ -430,63 +336,23 @@ The following table shows the Group Policy and registry settings that are used t
 
 Denying local accounts the ability to perform network logons can help prevent a local account password hash from being reused in a malicious attack. This procedure helps to prevent lateral movement by ensuring that the credentials for local accounts that are stolen from a compromised operating system cannot be used to compromise additional computers that use the same credentials.
 
-**Note**  
-In order to perform this procedure, you must first identify the name of the local, default Administrator account, which might not be the default user name "Administrator", and any other accounts that are members of the local Administrators group.
+> [!NOTE]
+> To perform this procedure, you must first identify the name of the local, default Administrator account, which might not be the default user name "Administrator", and any other accounts that are members of the local Administrators group.
 
  
 
 The following table shows the Group Policy settings that are used to deny network logon for all local Administrator accounts.
 
-<table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><p><b>No.</b></p></td>
-<td><p><b>Setting</b></p></td>
-<td><p><b>Detailed Description</b></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy location</p></td>
-<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment</p></td>
-</tr>
-<tr class="odd">
-<td><p>1</p></td>
-<td><p>Policy name</p></td>
-<td><p><a href="/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network" data-raw-source="[Deny access to this computer from the network](/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network)">Deny access to this computer from the network</a></p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy setting</p></td>
-<td><p>Local account and member of Administrators group</p>
-</td>
-</tr>
-<tr class="odd">
-<td><p>2</p></td>
-<td><p>Policy location</p></td>
-<td><p>Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment</p></td>
-</tr>
-<tr class="even">
-<td><p></p></td>
-<td><p>Policy name</p></td>
-<td><p><a href="/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services" data-raw-source="[Deny log on through Remote Desktop Services](/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services)">Deny log on through Remote Desktop Services</a></p></td>
-</tr>
-<tr class="odd">
-<td><p></p></td>
-<td><p>Policy setting</p></td>
-<td><p>Local account and member of Administrators group</p>
-</td>
-</tr>
-</tbody>
-</table>
+|No.|Setting|Detailed Description|
+|--- |--- |--- |
+||Policy location|Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment|
+|1|Policy name|[Deny access to this computer from the network](/windows/device-security/security-policy-settings/deny-access-to-this-computer-from-the-network)|
+||Policy setting|Local account and member of Administrators group|
+|2|Policy location|Computer Configuration\Windows Settings\Security Settings\Local Policies\User Rights Assignment|
+||Policy name|[Deny log on through Remote Desktop Services](/windows/device-security/security-policy-settings/deny-log-on-through-remote-desktop-services)|
+||Policy setting|Local account and member of Administrators group|
 
- 
-
-**To deny network logon to all local administrator accounts**
+#### To deny network logon to all local administrator accounts
 
 1.  Start the **Group Policy Management** Console (GPMC).
 
@@ -532,8 +398,8 @@ The following table shows the Group Policy settings that are used to deny networ
 
 11. Create links to all other OUs that contain servers.
 
-    **Note**  
-    You might have to create a separate GPO if the user name of the default Administrator account is different on workstations and servers.
+    > [!NOTE]
+    > You might have to create a separate GPO if the user name of the default Administrator account is different on workstations and servers.
 
 
 ### <a href="" id="sec-create-unique-passwords"></a>Create unique passwords for local accounts with administrative rights
