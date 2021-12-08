@@ -1,7 +1,7 @@
 ---
 title: Windows Defender Credential Guard Requirements (Windows)
 description: Windows Defender Credential Guard baseline hardware, firmware, and software requirements, and additional protections for improved security.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -10,10 +10,11 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.date: 09/30/2020
-ms.reviewer: 
 ---
 
 # Windows Defender Credential Guard: Requirements

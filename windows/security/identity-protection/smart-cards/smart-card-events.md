@@ -1,7 +1,7 @@
 ---
 title: Smart Card Events (Windows)
 description: This topic for the IT professional and smart card developer describes events that are related to smart card deployment and development.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

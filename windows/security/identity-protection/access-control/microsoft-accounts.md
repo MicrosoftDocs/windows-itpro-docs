@@ -1,7 +1,7 @@
 ---
 title: Microsoft Accounts (Windows 10)
 description: Microsoft Accounts
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
