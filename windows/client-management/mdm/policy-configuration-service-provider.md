@@ -8695,16 +8695,16 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-update.md#update-setedurestart" id="update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourcefordriverupdates" id="update-setpolicydrivenupdatesourcefordriverupdates">Update/SetPolicyDrivenUpdateSourceForDriverUpdates</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourcefordriver" id="update-setpolicydrivenupdatesourcefordriver">Update/SetPolicyDrivenUpdateSourceForDriver</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforfeatureupdates" id="update-setpolicydrivenupdatesourceforfeatureupdates">Update/SetPolicyDrivenUpdateSourceForFeatureUpdates</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforfeature" id="update-setpolicydrivenupdatesourceforfeature">Update/SetPolicyDrivenUpdateSourceForFeature</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforotherupdates" id="update-setpolicydrivenupdatesourceforotherupdates">Update/SetPolicyDrivenUpdateSourceForOtherUpdates</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforother" id="update-setpolicydrivenupdatesourceforother">Update/SetPolicyDrivenUpdateSourceForOther</a>
   </dd>
   <dd>
-    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforqualityupdates" id="update-setpolicydrivenupdatesourceforqualityupdates">Update/SetPolicyDrivenUpdateSourceForQualityUpdates</a>
+    <a href="./policy-csp-update.md#update-setpolicydrivenupdatesourceforquality" id="update-setpolicydrivenupdatesourceforquality">Update/SetPolicyDrivenUpdateSourceForQuality</a>
   </dd>
   <dd> 
     <a href="./policy-csp-update.md#update-setproxybehaviorforupdatedetection"id="update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a> 

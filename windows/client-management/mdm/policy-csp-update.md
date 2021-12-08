@@ -203,16 +203,16 @@ ms.collection: highpri
     <a href="#update-setedurestart">Update/SetEDURestart</a>
   </dd>
   <dd>
-    <a href="#update-setpolicydrivenupdatesourcefordriverupdates">Update/SetPolicyDrivenUpdateSourceForDriverUpdates</a>
+    <a href="#update-setpolicydrivenupdatesourcefordriver">Update/SetPolicyDrivenUpdateSourceForDriver</a>
   </dd>
   <dd>
-    <a href="#update-setpolicydrivenupdatesourceforfeatureupdates">Update/SetPolicyDrivenUpdateSourceForFeatureUpdates</a>
+    <a href="#update-setpolicydrivenupdatesourceforfeature">Update/SetPolicyDrivenUpdateSourceForFeature</a>
   </dd>
   <dd>
-    <a href="#update-setpolicydrivenupdatesourceforotherupdates">Update/SetPolicyDrivenUpdateSourceForOtherUpdates</a>
+    <a href="#update-setpolicydrivenupdatesourceforother">Update/SetPolicyDrivenUpdateSourceForOther</a>
   </dd>
   <dd>
-    <a href="#update-setpolicydrivenupdatesourceforqualityupdates">Update/SetPolicyDrivenUpdateSourceForQualityUpdates</a>
+    <a href="#update-setpolicydrivenupdatesourceforquality">Update/SetPolicyDrivenUpdateSourceForQuality</a>
   </dd>
   <dd>
     <a href="#update-setproxybehaviorforupdatedetection">Update/SetProxyBehaviorForUpdateDetection</a>
@@ -1130,38 +1130,14 @@ Default value is 2.
 <a href="" id="update-configuredeadlinegraceperiodforfeatureupdates"></a>**Update/ConfigureDeadlineGracePeriodForFeatureUpdates**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -1669,38 +1645,14 @@ The following list shows the supported values:
 <a href="" id="update-donotenforceenterprisetlscertpinningforupdatedetection"></a>**Update/DoNotEnforceEnterpriseTLSCertPinningForUpdateDetection**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -2585,38 +2537,14 @@ This policy is deprecated. Use [Update/RequireUpdateApproval](#update-requireupd
 <a href="" id="update-productversion"></a>**Update/ProductVersion**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3385,41 +3313,17 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourcefordriverupdates"></a>**Update/SetPolicyDrivenUpdateSourceForDriverUpdates**  
+<a href="" id="update-setpolicydrivenupdatesourcefordriver"></a>**Update/SetPolicyDrivenUpdateSourceForDriver**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3437,9 +3341,9 @@ The following list shows the supported values:
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, please also configure the scan source policies for other update types:
-- SetPolicyDrivenUpdateSourceForFeatureUpdates
-- SetPolicyDrivenUpdateSourceForQualityUpdates
-- SetPolicyDrivenUpdateSourceForOtherUpdates
+- SetPolicyDrivenUpdateSourceForFeature
+- SetPolicyDrivenUpdateSourceForQuality
+- SetPolicyDrivenUpdateSourceForOther
 
 >[!NOTE]
 >If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
@@ -3448,7 +3352,7 @@ If you configure this policy, please also configure the scan source policies for
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP Friendly name: *Specify source service for specific classes of Windows Updates*
--   GP name: *SetPolicyDrivenUpdateSourceForDriverUpdates*
+-   GP name: *SetPolicyDrivenUpdateSourceForDriver*
 -   GP path: *Windows Components/Windows Update*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
@@ -3456,8 +3360,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download and deploy Driver Updates from Windows Update 
-- 1: Enabled, Detect, download and deploy Driver Updates from Windows Server Update Server (WSUS) 
+- 0: (Default) Detect, download and deploy Driver from Windows Update 
+- 1: Enabled, Detect, download and deploy Driver from Windows Server Update Server (WSUS) 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3465,41 +3369,17 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourceforfeatureupdates"></a>**Update/SetPolicyDrivenUpdateSourceForFeatureUpdates**  
+<a href="" id="update-setpolicydrivenupdatesourceforfeature"></a>**Update/SetPolicyDrivenUpdateSourceForFeature**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3517,9 +3397,9 @@ The following list shows the supported values:
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, please also configure the scan source policies for other update types:
-- SetPolicyDrivenUpdateSourceForQualityUpdates
-- SetPolicyDrivenUpdateSourceForDriverUpdates
-- SetPolicyDrivenUpdateSourceForOtherUpdates
+- SetPolicyDrivenUpdateSourceForQuality
+- SetPolicyDrivenUpdateSourceForDriver
+- SetPolicyDrivenUpdateSourceForOther
 
 >[!NOTE]
 >If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
@@ -3528,7 +3408,7 @@ If you configure this policy, please also configure the scan source policies for
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP Friendly name: *Specify source service for specific classes of Windows Updates*
--   GP name: *SetPolicyDrivenUpdateSourceForFeatureUpdates*
+-   GP name: *SetPolicyDrivenUpdateSourceForFeature*
 -   GP path: *Windows Components/Windows Update*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
@@ -3536,8 +3416,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download and deploy Driver Updates from Windows Update 
-- 1: Enabled, Detect, download and deploy Driver Updates from Windows Server Update Server (WSUS) 
+- 0: (Default) Detect, download and deploy Feature from Windows Update 
+- 1: Enabled, Detect, download and deploy Feature from Windows Server Update Server (WSUS) 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3545,41 +3425,17 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourceforotherupdates"></a>**Update/SetPolicyDrivenUpdateSourceForOtherUpdates**  
+<a href="" id="update-setpolicydrivenupdatesourceforother"></a>**Update/SetPolicyDrivenUpdateSourceForOther**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3597,9 +3453,9 @@ The following list shows the supported values:
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, please also configure the scan source policies for other update types:
-- SetPolicyDrivenUpdateSourceForFeatureUpdates
-- SetPolicyDrivenUpdateSourceForQualityUpdates
-- SetPolicyDrivenUpdateSourceForDriverUpdates
+- SetPolicyDrivenUpdateSourceForFeature
+- SetPolicyDrivenUpdateSourceForQuality
+- SetPolicyDrivenUpdateSourceForDriver
 
 >[!NOTE]
 >If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
@@ -3608,7 +3464,7 @@ If you configure this policy, please also configure the scan source policies for
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP Friendly name: *Specify source service for specific classes of Windows Updates*
--   GP name: *SetPolicyDrivenUpdateSourceForOtherUpdates*
+-   GP name: *SetPolicyDrivenUpdateSourceForOther*
 -   GP path: *Windows Components/Windows Update*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
@@ -3616,8 +3472,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download and deploy Driver Updates from Windows Update 
-- 1: Enabled, Detect, download and deploy Driver Updates from Windows Server Update Server (WSUS) 
+- 0: (Default) Detect, download and deploy Other from Windows Update 
+- 1: Enabled, Detect, download and deploy Other from Windows Server Update Server (WSUS) 
 
 <!--/SupportedValues-->
 <!--/Policy-->
@@ -3625,41 +3481,17 @@ The following list shows the supported values:
 <hr/>
 
 <!--Policy-->
-<a href="" id="update-setpolicydrivenupdatesourceforqualityupdates"></a>**Update/SetPolicyDrivenUpdateSourceForQualityUpdates**  
+<a href="" id="update-setpolicydrivenupdatesourceforquality"></a>**Update/SetPolicyDrivenUpdateSourceForQuality**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -3677,9 +3509,9 @@ The following list shows the supported values:
 Configure this policy to specify whether to receive Windows Driver Updates from Windows Update endpoint, managed by Windows Update for Business policies, or through your configured Windows Server Update Service (WSUS) server. 
 
 If you configure this policy, please also configure the scan source policies for other update types:
-- SetPolicyDrivenUpdateSourceForFeatureUpdates
-- SetPolicyDrivenUpdateSourceForDriverUpdates
-- SetPolicyDrivenUpdateSourceForOtherUpdates
+- SetPolicyDrivenUpdateSourceForFeature
+- SetPolicyDrivenUpdateSourceForDriver
+- SetPolicyDrivenUpdateSourceForOther
 
 >[!NOTE]
 >If you have not properly configured Update/UpdateServiceUrl correctly to point to your WSUS server, this policy will have no effect. 
@@ -3688,7 +3520,7 @@ If you configure this policy, please also configure the scan source policies for
 <!--ADMXMapped-->
 ADMX Info:  
 -   GP Friendly name: *Specify source service for specific classes of Windows Updates*
--   GP name: *SetPolicyDrivenUpdateSourceForQualityUpdates*
+-   GP name: *SetPolicyDrivenUpdateSourceForQuality*
 -   GP path: *Windows Components/Windows Update*
 -   GP ADMX file name: *WindowsUpdate.admx*
 
@@ -3696,8 +3528,8 @@ ADMX Info:
 <!--SupportedValues-->
 The following list shows the supported values:
 
-- 0: (Default) Detect, download and deploy Driver Updates from Windows Update 
-- 1: Enabled, Detect, download and deploy Driver Updates from Windows Server Update Server (WSUS) 
+- 0: (Default) Detect, download and deploy Quality from Windows Update 
+- 1: Enabled, Detect, download and deploy Quality from Windows Server Update Server (WSUS) 
 
 <!--/SupportedValues-->
 <!--/Policy-->
