@@ -150,7 +150,7 @@ S = Supported; Not considered a downgrade or an upgrade
 
 **Destination Edition: (Starting)**
 
-||Home|Pro|Pro for Workstations|Pro Education|Education|Enterprise LTSC|Enterprise|
+|Edition|Home|Pro|Pro for Workstations|Pro Education|Education|Enterprise LTSC|Enterprise|
 |--- |--- |--- |--- |--- |--- |--- |--- |
 |Home||||||||
 |Pro||||||||
