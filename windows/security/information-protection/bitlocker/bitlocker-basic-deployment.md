@@ -3,7 +3,7 @@ title: BitLocker basic deployment (Windows 10)
 description: This article for the IT professional explains how BitLocker features can be used to protect your data through drive encryption.
 ms.assetid: 97c646cb-9e53-4236-9678-354af41151c4
 ms.reviewer: 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
@@ -12,7 +12,9 @@ author: dansimp
 ms.author: dansimp
 manager: dansimp
 audience: ITPro
-ms.collection: M365-security-compliance
+ms.collection:
+  - M365-security-compliance
+  - highpri
 ms.topic: conceptual
 ms.date: 02/28/2019
 ms.custom: bitlocker
@@ -183,132 +185,20 @@ manage-bde -on C:
 
 Windows PowerShell cmdlets provide an alternative way to work with BitLocker. Using Windows PowerShell's scripting capabilities, administrators can integrate BitLocker options into existing scripts with ease. The list below displays the available BitLocker cmdlets.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Name</p></td>
-<td align="left"><p>Parameters</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Add-BitLockerKeyProtector</strong></p></td>
-<td align="left"><p>-ADAccountOrGroup</p>
-<p>-ADAccountOrGroupProtector</p>
-<p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-Password</p>
-<p>-PasswordProtector</p>
-<p>-Pin</p>
-<p>-RecoveryKeyPath</p>
-<p>-RecoveryKeyProtector</p>
-<p>-RecoveryPassword</p>
-<p>-RecoveryPasswordProtector</p>
-<p>-Service</p>
-<p>-StartupKeyPath</p>
-<p>-StartupKeyProtector</p>
-<p>-TpmAndPinAndStartupKeyProtector</p>
-<p>-TpmAndPinProtector</p>
-<p>-TpmAndStartupKeyProtector</p>
-<p>-TpmProtector</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Backup-BitLockerKeyProtector</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-KeyProtectorId</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Disable-BitLocker</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Disable-BitLockerAutoUnlock</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Enable-BitLocker</strong></p></td>
-<td align="left"><p>-AdAccountOrGroup</p>
-<p>-AdAccountOrGroupProtector</p>
-<p>-Confirm</p>
-<p>-EncryptionMethod</p>
-<p>-HardwareEncryption</p>
-<p>-Password</p>
-<p>-PasswordProtector</p>
-<p>-Pin</p>
-<p>-RecoveryKeyPath</p>
-<p>-RecoveryKeyProtector</p>
-<p>-RecoveryPassword</p>
-<p>-RecoveryPasswordProtector</p>
-<p>-Service</p>
-<p>-SkipHardwareTest</p>
-<p>-StartupKeyPath</p>
-<p>-StartupKeyProtector</p>
-<p>-TpmAndPinAndStartupKeyProtector</p>
-<p>-TpmAndPinProtector</p>
-<p>-TpmAndStartupKeyProtector</p>
-<p>-TpmProtector</p>
-<p>-UsedSpaceOnly</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Enable-BitLockerAutoUnlock</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Get-BitLockerVolume</strong></p></td>
-<td align="left"><p>-MountPoint</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Lock-BitLocker</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-ForceDismount</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Remove-BitLockerKeyProtector</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-KeyProtectorId</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Resume-BitLocker</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p><strong>Suspend-BitLocker</strong></p></td>
-<td align="left"><p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-RebootCount</p>
-<p>-WhatIf</p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p><strong>Unlock-BitLocker</strong></p></td>
-<td align="left"><p>-AdAccountOrGroup</p>
-<p>-Confirm</p>
-<p>-MountPoint</p>
-<p>-Password</p>
-<p>-RecoveryKeyPath</p>
-<p>-RecoveryPassword</p>
-<p>-RecoveryPassword</p>
-<p>-WhatIf</p></td>
-</tr>
-</tbody>
-</table>
+|Name|Parameters|
+|--- |--- |
+|**Add-BitLockerKeyProtector**|<li>ADAccountOrGroup<li>ADAccountOrGroupProtector<li>Confirm<li>MountPoint<li>Password<li>PasswordProtector<li>Pin<li>RecoveryKeyPath<li>RecoveryKeyProtector<li>RecoveryPassword<li>RecoveryPasswordProtector<li>Service<li>StartupKeyPath<li>StartupKeyProtector<li>TpmAndPinAndStartupKeyProtector<li>TpmAndPinProtector<li>TpmAndStartupKeyProtector<li>TpmProtector<li>WhatIf|
+|**Backup-BitLockerKeyProtector**|<li>Confirm<li>KeyProtectorId<li>MountPoint<li>WhatIf|
+|**Disable-BitLocker**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Disable-BitLockerAutoUnlock**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Enable-BitLocker**|<li>AdAccountOrGroup<li>AdAccountOrGroupProtector<li>Confirm<li>EncryptionMethod<li>HardwareEncryption<li>Password<li>PasswordProtector<li>Pin<li>RecoveryKeyPath<li>RecoveryKeyProtector<li>RecoveryPassword<li>RecoveryPasswordProtector<li>Service<li>SkipHardwareTest<li>StartupKeyPath<li>StartupKeyProtector<li>TpmAndPinAndStartupKeyProtector<li>TpmAndPinProtector<li>TpmAndStartupKeyProtector<li>TpmProtector<li>UsedSpaceOnly<li>WhatIf|
+|**Enable-BitLockerAutoUnlock**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Get-BitLockerVolume**|<li>MountPoint|
+|**Lock-BitLocker**|<li>Confirm<li>ForceDismount<li>MountPoint<li>WhatIf|
+|**Remove-BitLockerKeyProtector**|<li>Confirm<li>KeyProtectorId<li>MountPoint<li>WhatIf|
+|**Resume-BitLocker**|<li>Confirm<li>MountPoint<li>WhatIf|
+|**Suspend-BitLocker**|<li>Confirm<li>MountPoint<li>RebootCount<li>WhatIf|
+|**Unlock-BitLocker**|<li>AdAccountOrGroup<li>Confirm<li>MountPoint<li>Password<li>RecoveryKeyPath<li>RecoveryPassword<li>RecoveryPassword<li>WhatIf|
 
 Similar to manage-bde, the Windows PowerShell cmdlets allow configuration beyond the options offered in the control panel. As with manage-bde, users need to consider the specific needs of the volume they are encrypting prior to running Windows PowerShell cmdlets.
 

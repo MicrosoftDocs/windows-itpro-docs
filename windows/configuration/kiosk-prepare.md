@@ -12,6 +12,7 @@ ms.sitesec: library
 author: greg-lindsay
 ms.localizationpriority: medium
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Prepare a device for kiosk configuration
@@ -19,7 +20,7 @@ ms.topic: article
 
 **Applies to**
 
-- Windows 10 Pro, Enterprise, and Education
+- Windows 10 Pro, Enterprise, and Education
 - Windows 11
 
 
