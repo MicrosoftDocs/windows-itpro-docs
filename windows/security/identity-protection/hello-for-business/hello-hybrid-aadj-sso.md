@@ -2,7 +2,7 @@
 title: Azure AD Join Single Sign-on Deployment
 description: Learn how to provide single sign-on to your on-premises resources for Azure Active Directory joined devices, using Windows Hello for Business.
 keywords: identity, PIN, biometric, Hello, passport, AADJ, SSO, 
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

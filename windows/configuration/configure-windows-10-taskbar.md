@@ -12,6 +12,7 @@ ms.localizationpriority: medium
 ms.date: 01/18/2018
 ms.reviewer: 
 manager: dansimp
+ms.collection: highpri
 ---
 # Configure Windows 10 taskbar
 

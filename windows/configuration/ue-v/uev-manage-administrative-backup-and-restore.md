@@ -112,64 +112,22 @@ WMI and Windows PowerShell commands let you restore application and Windows sett
 
 2.  Enter the following Windows PowerShell cmdlet to restore the application settings and Windows settings.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left"><strong>Windows PowerShell cmdlet</strong></th>
-    <th align="left"><strong>Description</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><code>Restore-UevUserSetting -&lt;TemplateID&gt;</code></p></td>
-    <td align="left"><p>Restores the user settings for an application or restores a group of Windows settings.</p></td>
-    </tr>
-    </tbody>
-    </table>
-
-
-
+     |**Windows PowerShell cmdlet**|**Description**|
+     |--- |--- |
+     |`Restore-UevUserSetting -<TemplateID>` |Restores the user settings for an application or restores a group of Windows settings.|
+   
 **To restore application settings and Windows settings with WMI**
 
 1.  Open a Windows PowerShell window.
 
 2.  Enter the following WMI command to restore application settings and Windows settings.
 
-    <table>
-    <colgroup>
-    <col width="50%" />
-    <col width="50%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th align="left"><strong>WMI command</strong></th>
-    <th align="left"><strong>Description</strong></th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td align="left"><p><code>Invoke-WmiMethod -Namespace root\Microsoft\UEV -Class UserSettings -Name RestoreByTemplateId -ArgumentList &lt;template_ID&gt;</code></p></td>
-    <td align="left"><p>Restores the user settings for an application or restores a group of Windows settings.</p></td>
-    </tr>
-    </tbody>
-    </table>
+    |**WMI command**|**Description**|
+    |--- |--- |
+    |`Invoke-WmiMethod -Namespace root\Microsoft\UEV -Class UserSettings -Name RestoreByTemplateId -ArgumentList <template_ID>`|Restores the user settings for an application or restores a group of Windows settings.|
 
-
-
-~~~
-**Note**  
-UE-V does not provide a settings rollback for Windows apps.
-~~~
-
-
-
-
-
-
+>[!NOTE]
+>UE-V does not provide a settings rollback for Windows apps.
 
 ## Related topics
 

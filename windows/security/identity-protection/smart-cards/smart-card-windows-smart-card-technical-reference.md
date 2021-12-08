@@ -1,7 +1,7 @@
 ---
 title: Smart Card Technical Reference (Windows)
 description: Learn about the Windows smart card infrastructure for physical smart cards, and how smart card-related components work in Windows.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
