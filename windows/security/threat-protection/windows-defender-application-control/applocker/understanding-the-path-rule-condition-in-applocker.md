@@ -35,30 +35,9 @@ The path condition identifies an application by its location in the file system 
 
 When creating a rule that uses a deny action, path conditions are less secure than publisher and file hash conditions for preventing access to a file because a user could easily copy the file to a different location than the location specified in the rule. Because path rules specify locations within the file system, you should ensure that there are no subdirectories that are writable by non-administrators. For example, if you create a path rule for C:\\ with the allow action, any file under that location will be allowed to run, including within users' profiles. The following table describes the advantages and disadvantages of the path condition.
 
-<table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Path condition advantages</th>
-<th align="left">Path condition disadvantages</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><ul>
-<li><p>You can easily control many folders or a single file.</p></li>
-<li><p>You can use the asterisk (*) as a wildcard character within path rules.</p></li>
-</ul></td>
-<td align="left"><ul>
-<li><p>It might be less secure if a rule that is configured to use a folder path contains subfolders that are writable by non-administrators.</p></li>
-<li><p>You must specify the full path to a file or folder when creating path rules so that the rule will be properly enforced.</p></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+|Path condition advantages|Path condition disadvantages|
+|--- |--- |
+|<li>You can easily control many folders or a single file.<li>You can use the asterisk (*) as a wildcard character within path rules.|<li>It might be less secure if a rule that is configured to use a folder path contains subfolders that are writable by non-administrators.<li>You must specify the full path to a file or folder when creating path rules so that the rule will be properly enforced.|
 
 AppLocker does not enforce rules that specify paths with short names. You should always specify the full path to a file or folder when creating path rules so that the rule will be properly enforced.
 
