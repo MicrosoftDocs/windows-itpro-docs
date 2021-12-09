@@ -28,7 +28,7 @@ For RequireDeviceEncryption and RequireStorageCardEncryption, the Get operation 
 
 The following shows the BitLocker configuration service provider in tree format.
 
-```
+```console
 ./Device/Vendor/MSFT
 BitLocker
 ----RequireStorageCardEncryption
@@ -63,54 +63,7 @@ BitLocker
 <a href="" id="--device-vendor-msft-bitlocker"></a>**./Device/Vendor/MSFT/BitLocker**  
 Defines the root node for the BitLocker configuration service provider.
 <!--Policy-->
-<a href="" id="requirestoragecardencryption"></a>**RequireStorageCardEncryption**  
-<!--Description-->
-Allows the administrator to require storage card encryption on the device. This policy is valid only for a mobile SKU.
-<!--/Description-->
-<!--SupportedSKUs-->
 
-|Edition|Windows 10|Windows 11|
-|--- |--- |--- |
-|Home|No|No|
-|Pro|No|No|
-|Business|No|No|
-|Enterprise|No|No|
-|Education|No|No|
-|Mobile|Yes|Yes|
-
-<!--/SupportedSKUs-->
-
-Data type is integer. Sample value for this node to enable this policy: 1. Disabling this policy will not turn off the encryption on the storage card, but the user will no longer be prompted to turn it on.
-<!--SupportedValues-->
-- 0 (default) – Storage cards do not need to be encrypted.
-- 1 – Require storage cards to be encrypted.  
-<!--/SupportedValues-->
-Disabling this policy will not turn off the encryption on the system card, but the user will no longer be prompted to turn it on.
-
-If you want to disable this policy use the following SyncML:
-
-```xml
-<SyncML>
-    <SyncBody>
-        <Replace>
-            <CmdID>$CmdID$</CmdID>
-            <Item>
-                <Target>
-                    <LocURI>./Device/Vendor/MSFT/BitLocker/RequireStorageCardEncryption</LocURI>
-                </Target>
-                <Meta>
-                    <Format xmlns="syncml:metinf">int</Format>
-                </Meta>
-                <Data>0</Data>
-                </Item>
-        </Replace>
-    </SyncBody>
-</SyncML>
-```
-
-Data type is integer. Supported operations are Add, Get, Replace, and Delete.
-<!--/Policy-->
-<!--Policy-->
 <a href="" id="requiredeviceencryption"></a>**RequireDeviceEncryption**  
 <!--Description-->
 Allows the administrator to require encryption to be turned on by using BitLocker\Device Encryption.
@@ -124,7 +77,6 @@ Allows the administrator to require encryption to be turned on by using BitLocke
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|Yes|Yes|
 
 <!--/SupportedSKUs-->
 Data type is integer. Sample value for this node to enable this policy: 1.
@@ -185,7 +137,6 @@ Allows you to set the default encryption method for each of the different drive 
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedValues-->
 <!--ADMXMapped-->
@@ -260,7 +211,6 @@ Allows you to associate unique organizational identifiers to a new drive that is
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -321,7 +271,6 @@ Allows users on devices that are compliant with InstantGo or the Microsoft Hardw
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -364,7 +313,6 @@ Allows users to configure whether or not enhanced startup PINs are used with Bit
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -410,7 +358,6 @@ Allows you to configure whether standard users are allowed to change BitLocker P
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -456,7 +403,6 @@ Allows users to enable authentication options that require user input from the p
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -508,7 +454,6 @@ Allows you to configure the encryption type that is used by BitLocker.
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -557,7 +502,6 @@ This setting is a direct mapping to the BitLocker Group Policy "Require addition
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -655,7 +599,6 @@ This setting is a direct mapping to the BitLocker Group Policy "Configure minimu
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -722,7 +665,6 @@ This setting is a direct mapping to the BitLocker Group Policy "Configure pre-bo
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -801,7 +743,6 @@ This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLo
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -888,7 +829,6 @@ This setting is a direct mapping to the BitLocker Group Policy "Choose how BitLo
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -984,7 +924,6 @@ This setting is a direct mapping to the BitLocker Group Policy "Deny write acces
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -1043,7 +982,6 @@ Allows you to configure the encryption type on fixed data drives that is used by
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -1094,7 +1032,6 @@ This setting is a direct mapping to the BitLocker Group Policy "Deny write acces
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -1164,7 +1101,6 @@ Allows you to configure the encryption type that is used by BitLocker.
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -1209,7 +1145,6 @@ Allows you to control the use of BitLocker on removable data drives.
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--ADMXMapped-->
@@ -1269,7 +1204,6 @@ Allows the admin to disable the warning prompt for other disk encryption on the 
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--SupportedValues-->
@@ -1323,7 +1257,6 @@ If "AllowWarningForOtherDiskEncryption" is not set, or is set to "1", "RequireDe
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 <!--SupportedValues-->
@@ -1368,7 +1301,6 @@ This setting initiates a client-driven recovery password refresh after an OS dri
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 
@@ -1413,7 +1345,6 @@ Each server-side recovery key rotation is represented by a request ID. The serve
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 
@@ -1448,7 +1379,6 @@ This node reports compliance state of device encryption on the system.
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 
@@ -1506,7 +1436,6 @@ Status code can be one of the following:
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
 
 <!--/SupportedSKUs-->
 
@@ -1531,8 +1460,6 @@ This node needs to be queried in synchronization with RotateRecoveryPasswordsSta
 |Business|Yes|Yes|
 |Enterprise|Yes|Yes|
 |Education|Yes|Yes|
-|Mobile|No|No|
-
 
 <!--/SupportedSKUs-->
 
