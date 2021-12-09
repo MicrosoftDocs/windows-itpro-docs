@@ -1723,91 +1723,34 @@ In Group Policy, configure:
 - Create a SZ registry setting named **ConfigureAppInstallControl** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows Defender\\SmartScreen** with a value of **Anywhere**.
 
 
-### <a href="" id="bkmk-spotlight"></a>25. Windows Spotlight
+### <a href="" id="bkmk-spotlight"></a>25. Personalized Experiences
 
-Windows Spotlight provides features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. You can control it by using the user interface or Group Policy.
+Personalized experiences provide features such as different background images and text on the lock screen, suggested apps, Microsoft account notifications, and Windows tips. Example features include Windows Spotlight and Start Suggestions. You can control them by using the Group Policy.
+
+> [!NOTE]
+> This excludes how individual experiences (e.g., Windows Spotlight) can be controlled by users in Windows Settings.
 
 If you're running Windows 10, version 1607 or later, or Windows 11, you need to:
 
 - **Enable** the following Group Policy **User Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Turn off all Windows spotlight features**
 
-    > [!NOTE]
-    > This must be done within 15 minutes after Windows 10 or Windows 11 is installed. Alternatively, you can create an image with this setting.
+    -or-
 
-   -or-
-
-- Create a new REG_DWORD registry setting named **DisableWindowsSpotlightFeatures** in **HKEY_CURRENT_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a value of 1 (one).
+- Create a new REG_DWORD registry setting named **DisableWindowsSpotlightFeatures** in **HKEY_CURRENT_USER\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a **value of 1 (one)**.
 
 
 -AND-
 
 
-- Enable the following Group Policy **Computer Configuration** > **Administrative Templates** > **Control Panel** > **Personalization** > **Do not display the Lock Screen**
+- Enable the following Group Policy **Computer Configuration** > **Administrative Templates** > **Windows Components** > **Cloud Content** > **Turn off cloud optimized content**
 
    -or-
 
-- Create a new REG_DWORD registry setting named **NoLockScreen** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a **value of 1 (one)**
+- Create a new REG_DWORD registry setting named **DisableCloudOptimizedContent** in **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent** with a **value of 1 (one)**
 
+  > [!NOTE]
+  > This must be done within 15 minutes after Windows 10 or Windows 11 is installed. Alternatively, you can create an image with this setting
 
--AND-
-
-
-- Configure the following in **Settings** UI:
-
-  - **Personalization** > **Lock screen** > **Background** > **Windows spotlight**, select a different background, and turn off **Get fun facts, tips, tricks and more on your lock screen**
-
-  - **Personalization** &gt; **Start** &gt; **Occasionally show suggestions in Start**
-
-  - **System** &gt; **Notifications & actions** &gt; **Show me tips about Windows**
-
-   -or-
-
-- Apply the Group Policies:
-
-  - **Enable** the **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization** &gt; **Force a specific default lock screen image and logon image** Group Policy.
-     - Add **C:\\windows\\web\\screen\\lockscreen.jpg** as the location in the **Path to local lock screen image** box.
-
-     - Check the **Turn off fun facts, tips, tricks, and more on lock screen** check box.
-
-       > [!NOTE]
-       > This will only take effect if the policy is applied before the first logon.
-       > If you cannot apply the **Force a specific default lock screen image** policy before the first logon to the device,
-       > you can **Enable** the **Do not display the lock screen** policy under **Computer Configuration** &gt; **Administrative Templates** &gt; **Control Panel** &gt; **Personalization**
-       >
-       > Alternatively, you can create a new REG_SZ registry setting named **LockScreenImage** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization**
-       > with a value of **C:\\windows\\web\\screen\\lockscreen.jpg** and create a new REG_DWORD registry setting named **LockScreenOverlaysDisabled** in
-       > **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Personalization** with a value of **1 (one)**.
-       >
-       > The Group Policy for the **LockScreenOverlaysDisabled** registry key is **Force a specific default lock screen and logon image** that is under **Control Panel** **Personalization**.
-
-
-  \-AND-
-
-
-  - Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Do not show Windows tips** to **Enabled**
-
-    -or-
-
-  - Create a new REG_DWORD registry setting named **DisableSoftLanding** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a **value of 1 (one)**
-
-
-  \-AND-
-
-
-  - Set the Group Policy **Computer Configuration** &gt; **Administrative Templates** &gt; **Windows Components** &gt; **Cloud Content** &gt; **Turn off Microsoft consumer experiences** to **Enabled**
-
-    -or-
-
-  - Create a new REG_DWORD registry setting named **DisableWindowsConsumerFeatures** in **HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\CloudContent** with a **value of 1 (one)**
-
-This policy setting controls whether the lock screen appears for users. The Do not display the lock screen Group Policy should be set to Enable to prevent the lock screen from being displayed. The Group Computer Configuration\Administrative templates\Control Panel\Personalization!Do not display the lock screen.   
-
-If you enable this policy setting, users that are not required to press CTRL + ALT + DEL before signing in will see their selected tile after locking their PC.
-
-If you disable or do not configure this policy setting, users that are not required to press CTRL + ALT + DEL before signing in will see a lock screen after locking their PC. They must dismiss the lock screen using touch, the keyboard, or by dragging it with the mouse.
-
-
-For more info, see [Windows Spotlight on the lock screen](/windows/configuration/windows-spotlight).
 
 ### <a href="" id="bkmk-windowsstore"></a>26. Microsoft Store
 
