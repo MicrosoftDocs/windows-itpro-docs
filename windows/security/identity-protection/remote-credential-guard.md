@@ -18,7 +18,9 @@ ms.reviewer:
 # Protect Remote Desktop credentials with Windows Defender Remote Credential Guard
 
 **Applies to**
+-   Windows 11
 -   Windows 10
+-   Windows Server 2019
 -   Windows Server 2016
 
 Introduced in Windows 10, version 1607, Windows Defender Remote Credential Guard helps you protect your credentials over a Remote Desktop connection by redirecting Kerberos requests back to the device that's requesting the connection. It also provides single sign-on experiences for Remote Desktop sessions.
