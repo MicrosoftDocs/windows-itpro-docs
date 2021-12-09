@@ -126,7 +126,7 @@ WCD supports the following scenarios for IT administrators:
 
 * **Simple provisioning** – Enables IT administrators to define a desired configuration in WCD and then apply that configuration on target devices. The simple provisioning wizard makes the entire process quick and easy by guiding an IT administrator through common configuration settings in a step-by-step manner. 
 
-[Learn how to use simple provisioning to configure Windows computers.](provision-pcs-for-initial-deployment.md)
+  [Learn how to use simple provisioning to configure Windows computers.](provision-pcs-for-initial-deployment.md)
 
 * **Advanced provisioning (deployment of classic (Win32) and Universal Windows Platform (UWP) apps, and certificates)** – Allows an IT administrator to use WCD to open provisioning packages in the advanced settings editor and include apps for deployment on end-user devices. 
 
