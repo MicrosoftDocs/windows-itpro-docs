@@ -352,13 +352,13 @@ This procedure will demonstrate how to deploy the reference image to the PoC env
 
     If desired, edit the follow line to include or exclude other users when migrating settings. Currently, the command is set to user exclude (ue) all users except for CONTOSO users specified by the user include option (ui):
     
-    ```cmd
+    ```console
     ScanStateArgs=/ue:*\* /ui:CONTOSO\*
     ```
 
     For example, to migrate **all** users on the computer, replace this line with the following:
 
-    ```cmd
+    ```console
     ScanStateArgs=/all
     ```   
 
@@ -486,7 +486,7 @@ This section will demonstrate how to export user data from an existing client co
 
 4. Open an elevated command prompt on PC1 and type the following:
 
-    ```cmd
+    ```console
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
 
@@ -558,7 +558,7 @@ At a high level, the computer replace process consists of:<BR>
 
 1. If you are not already signed on to PC1 as **contoso\administrator**, sign in using this account. To verify the currently signed in account, type the following command at an elevated command prompt:
 
-    ```cmd
+    ```console
     whoami
     ```
 2. To ensure a clean environment before running the backup task sequence, type the following at an elevated Windows PowerShell prompt on PC1:
@@ -570,7 +570,7 @@ At a high level, the computer replace process consists of:<BR>
     ```
 3. Sign in to PC1 using the contoso\administrator account, and then type the following at an elevated command prompt:
 
-    ```cmd
+    ```console
     cscript \\SRV1\MDTProd$\Scripts\Litetouch.vbs
     ```
 
@@ -626,7 +626,7 @@ At a high level, the computer replace process consists of:<BR>
 
 6. When OS installation has started on PC1, re-enable the external network adapter on SRV1 by typing the following command on SRV1:
 
-     ```cmd
+     ```powershell
      Enable-NetAdapter "Ethernet 2"
      ```
 

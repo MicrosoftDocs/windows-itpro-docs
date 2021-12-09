@@ -131,7 +131,7 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
 1. To verify your computer supports SLAT, open an administrator command prompt,  type **systeminfo**, press ENTER, and review the section displayed at the bottom of the output, next to Hyper-V Requirements. See the following example:
 
-    ```cmd
+    ```console
     C:\>systeminfo
 
     ...
@@ -147,7 +147,7 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
     You can also identify Hyper-V support using [tools](/archive/blogs/taylorb/hyper-v-will-my-computer-run-hyper-v-detecting-intel-vt-and-amd-v) provided by the processor manufacturer, the [msinfo32](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/cc731397(v=ws.11)) tool, or you can download the [coreinfo](/sysinternals/downloads/coreinfo) utility and run it, as shown in the following example:
 
-    ```cmd
+    ```console
     C:\>coreinfo -v
 
     Coreinfo v3.31 - Dump information on system CPU and memory topology
@@ -167,13 +167,13 @@ Starting with Windows 8, the host computer’s microprocessor must support secon
 
 2. The Hyper-V feature is not installed by default. To install it, open an elevated Windows PowerShell window and type the following command:
 
-    ```cmd
+    ```powershell
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
     ```
 
     This command works on all operating systems that support Hyper-V, but on Windows Server operating systems you must type an additional command to add the Hyper-V Windows PowerShell module and the Hyper-V Manager console. This command will also install Hyper-V if it isn't already installed, so if desired you can just type the following command on Windows Server 2012 or 2016 instead of using the Enable-WindowsOptionalFeature command:
 
-    ```cmd
+    ```powershell
     Install-WindowsFeature -Name Hyper-V -IncludeManagementTools
     ```
 
@@ -215,7 +215,7 @@ When you have completed installation of Hyper-V on the host computer, begin conf
 
      The following displays the procedures described in this section, both before and after downloading files:
 
-    ```cmd
+    ```console
      C:>mkdir VHD
      C:>cd VHD
      C:\VHD&gt;ren 9600*.vhd 2012R2-poc-1.vhd
@@ -380,7 +380,7 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
 2. On the computer you wish to convert, open an elevated command prompt and type the following command:
 
-    ```cmd
+    ```console
     mountvol s: /s
     ```
 
@@ -400,7 +400,7 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
 6. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (PC1.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
-    ```cmd
+    ```console
     C:\vhd>dir /B
     2012R2-poc-1.vhd
     2012R2-poc-2.vhd
@@ -588,13 +588,13 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
    4. Click **Command Prompt**.
    5. Type the following command to save an image of the OS drive:
 
-      ```cmd
+      ```console
       dism /Capture-Image /ImageFile:D:\c.wim /CaptureDir:C:\ /Name:Drive-C
       ```
 
    6. Wait for the OS image to complete saving, and then type the following commands to convert the C: drive to MBR:
 
-      ```cmd
+      ```console
       diskpart
       select disk 0
       clean
@@ -610,7 +610,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
    7. Type the following commands to restore the OS image and boot files:
 
-      ```cmd
+      ```console
       dism /Apply-Image /ImageFile:D:\c.wim /Index:1 /ApplyDir:C:\
       bcdboot c:\windows
       exit
@@ -761,7 +761,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     To open Windows PowerShell on Windows 7, click **Start**, and search for "**power**." Right-click **Windows PowerShell** and then click **Pin to Taskbar** so that it is simpler to use Windows PowerShell during this lab. Click **Windows PowerShell** on the taskbar, and then type **ipconfig** at the prompt to see the client's current IP address. Also type **ping dc1.contoso.com** and **nltest /dsgetdc:contoso.com** to verify that it can reach the domain controller. See the following examples of a successful network connection:
 
-    ```cmd
+    ```console
     ipconfig
 
     Windows IP Configuration
