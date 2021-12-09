@@ -35,65 +35,65 @@ The following are known issues and workarounds for Application Virtualization (A
 
      **Workaround**: The recommended workaround is to add the following code to the AppXManifest.xml file, underneath the `<appv:Extensions>` tag:
 
-```xml
-<appv:Extension Category="AppV.URLProtocol">
-    <appv:URLProtocol>
-        <appv:Name>ftp</appv:Name>
-        <appv:ApplicationURLProtocol>
-            <appv:DefaultIcon>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0</appv:DefaultIcon>
-            <appv:ShellCommands>
-                <appv:DefaultCommand>open</appv:DefaultCommand>
-                <appv:ShellCommand>
-                    <appv:ApplicationId>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe</appv:ApplicationId>
-                    <appv:Name>open</appv:Name>
-                    <appv:CommandLine>"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"</appv:CommandLine>
-                    <appv:DdeExec>
-                        <appv:DdeCommand />
-                    </appv:DdeExec>
-                </appv:ShellCommand>
-            </appv:ShellCommands>
-        </appv:ApplicationURLProtocol>
-    </appv:URLProtocol>
-</appv:Extension>
-<appv:Extension Category="AppV.URLProtocol">
-    <appv:URLProtocol>
-        <appv:Name>http</appv:Name>
-        <appv:ApplicationURLProtocol>
-            <appv:DefaultIcon>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0</appv:DefaultIcon>
-            <appv:ShellCommands>
-                <appv:DefaultCommand>open</appv:DefaultCommand>
-                <appv:ShellCommand>
-                    <appv:ApplicationId>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe</appv:ApplicationId>
-                    <appv:Name>open</appv:Name>
-                    <appv:CommandLine>"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"</appv:CommandLine>
-                    <appv:DdeExec>
-                        <appv:DdeCommand />
-                    </appv:DdeExec>
-                </appv:ShellCommand>
-            </appv:ShellCommands>
-        </appv:ApplicationURLProtocol>
-    </appv:URLProtocol>
-</appv:Extension>
-<appv:Extension Category="AppV.URLProtocol">
-    <appv:URLProtocol>
-        <appv:Name>https</appv:Name>
-        <appv:ApplicationURLProtocol>
-            <appv:DefaultIcon>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0</appv:DefaultIcon>
-            <appv:ShellCommands>
-                <appv:DefaultCommand>open</appv:DefaultCommand>
-                <appv:ShellCommand>
-                    <appv:ApplicationId>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe</appv:ApplicationId>
-                    <appv:Name>open</appv:Name>
-                    <appv:CommandLine>"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"</appv:CommandLine>
-                    <appv:DdeExec>
-                        <appv:DdeCommand />
-                    </appv:DdeExec>
-                </appv:ShellCommand>
-            </appv:ShellCommands>
-        </appv:ApplicationURLProtocol>
-    </appv:URLProtocol>
-</appv:Extension>
-```
+     ```xml
+     <appv:Extension Category="AppV.URLProtocol">
+         <appv:URLProtocol>
+             <appv:Name>ftp</appv:Name>
+             <appv:ApplicationURLProtocol>
+                 <appv:DefaultIcon>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0</appv:DefaultIcon>
+                 <appv:ShellCommands>
+                     <appv:DefaultCommand>open</appv:DefaultCommand>
+                     <appv:ShellCommand>
+                         <appv:ApplicationId>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe</appv:ApplicationId>
+                         <appv:Name>open</appv:Name>
+                         <appv:CommandLine>"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"</appv:CommandLine>
+                         <appv:DdeExec>
+                             <appv:DdeCommand />
+                         </appv:DdeExec>
+                     </appv:ShellCommand>
+                 </appv:ShellCommands>
+             </appv:ApplicationURLProtocol>
+         </appv:URLProtocol>
+     </appv:Extension>
+     <appv:Extension Category="AppV.URLProtocol">
+         <appv:URLProtocol>
+             <appv:Name>http</appv:Name>
+             <appv:ApplicationURLProtocol>
+                 <appv:DefaultIcon>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0</appv:DefaultIcon>
+                 <appv:ShellCommands>
+                     <appv:DefaultCommand>open</appv:DefaultCommand>
+                     <appv:ShellCommand>
+                         <appv:ApplicationId>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe</appv:ApplicationId>
+                         <appv:Name>open</appv:Name>
+                         <appv:CommandLine>"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"</appv:CommandLine>
+                         <appv:DdeExec>
+                             <appv:DdeCommand />
+                         </appv:DdeExec>
+                     </appv:ShellCommand>
+                 </appv:ShellCommands>
+             </appv:ApplicationURLProtocol>
+         </appv:URLProtocol>
+     </appv:Extension>
+     <appv:Extension Category="AppV.URLProtocol">
+         <appv:URLProtocol>
+             <appv:Name>https</appv:Name>
+             <appv:ApplicationURLProtocol>
+                 <appv:DefaultIcon>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe,0</appv:DefaultIcon>
+                 <appv:ShellCommands>
+                     <appv:DefaultCommand>open</appv:DefaultCommand>
+                     <appv:ShellCommand>
+                         <appv:ApplicationId>[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe</appv:ApplicationId>
+                         <appv:Name>open</appv:Name>
+                         <appv:CommandLine>"[{ProgramFilesX86}]\Google\Chrome\Application\chrome.exe" -- "%1"</appv:CommandLine>
+                         <appv:DdeExec>
+                             <appv:DdeCommand />
+                         </appv:DdeExec>
+                     </appv:ShellCommand>
+                 </appv:ShellCommands>
+             </appv:ApplicationURLProtocol>
+         </appv:URLProtocol>
+     </appv:Extension>
+     ```
 
 ## Related resources list
 For information that can help with troubleshooting App-V for Windows client, see:
