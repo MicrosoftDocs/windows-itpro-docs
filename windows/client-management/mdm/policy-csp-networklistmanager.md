@@ -58,7 +58,16 @@ manager: dansimp
 
 <!--/Scope-->
 <!--Description-->
-This policy setting provides the list of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.
+This policy setting provides the list of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.  
+When entering a list of TLS Endpoints in MEM (Microsoft Endpoint Management), you must follow this format even in the UI:  
+```<![CDATA[https://nls.corp.contoso.com&#xF000;https://nls.corp.fabricam.com]]>```  
+- The HTTPS endpoint must not have any additional authentication checks such as login or multi-factor authentication.
+- The HTTPS endpoint must be an internal address not accessible from outside the corporate network.
+- The client must trust the server certificate, so the CA cert the HTTPS server cert chains to must be present in the client machines root certificate store.
+- A certificate should not be a public certificate.
+
+
+
 
 <hr/>
 
@@ -91,7 +100,7 @@ This policy setting provides the list of URLs (separated by Unicode character 0x
 
 <!--/Scope-->
 <!--Description-->
-This policy setting provides the string to be used to name the network authenticated against one of the endpoints listed in NetworkListManager/AllowedTlsAuthenticationEndpoints policy.
+This policy setting provides the string to be used to name the network authenticated against one of the endpoints listed in NetworkListManager/AllowedTlsAuthenticationEndpoints policy. If this setting is used for Trusted Network Detection in an Always On VPN profile, it must be the DNS suffix configured in the TrustedNetworkDetection attribute.
 
 <hr/>
 
