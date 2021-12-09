@@ -1749,7 +1749,7 @@ If you're running Windows 10, version 1607 or later, or Windows 11, you need to:
 - Create a new REG_DWORD registry setting named **DisableCloudOptimizedContent** in **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Windows\CloudContent** with a **value of 1 (one)**.
 
   > [!NOTE]
-  > This must be done within 15 minutes after Windows 10 or Windows 11 is installed. Alternatively, you can create an image with this setting
+  > This must be done within 15 minutes after Windows 10 or Windows 11 is installed. Alternatively, you can create an image with this setting.
 
 
 ### <a href="" id="bkmk-windowsstore"></a>26. Microsoft Store
