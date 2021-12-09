@@ -54,23 +54,23 @@ To help you better understand the scan source policy, see the default scan behav
 - If you configure a WSUS server and deferral policies: All of your updates will come from Windows Update unless you specify the scan source policy.
 - If you configure a WSUS server and the scan source policy: All of your updates will come from the source chosen in the scan source policy.
 
->[!NOTE]
->The only two policies relevant in terms of where your updates come from are the specify scan source policy and whether or not you have configured a WSUS server, this should simplify the configuration options.
+> [!TIP]
+> The only two relevant policies for where your updates come from are the specify scan source policy and whether or not you have configured a WSUS server. This should simplify the configuration options.
 
 ## Configure the scan sources
 
-The policy can be configured using:
+The policy can be configured using the following two methods:
 
 1. Group Policy: Specify source service for specific classes of Windows Updates
 
 - Path: Computer Configuration\Administrative Templates\Windows Components\Windows Update\Manage updates offered from Windows Server Update Service\
 
-:::image type="content" source="media/specify-update-type-sources.png" alt-text="Screenshot of the Group Policy for specifiying sources for update types":::
+   :::image type="content" source="media/specify-update-type-sources.png" alt-text="Screenshot of the Group Policy for specifiying sources for update types":::
 
-2. Configuration Service Provider (CSP) Policies: **SetPolicyDrivenUpdateSourceFor[]**:
+1. Configuration Service Provider (CSP) Policies: **SetPolicyDrivenUpdateSourceFor[]**:
 
->[!NOTE]
->You should configure **all** of these if you are using CSPs.
+> [!NOTE]
+> You should configure **all** of these policies if you are using CSPs.
 
 - [Update/SetPolicyDrivenUpdateSourceForDriverUpdates](../../client-management/mdm/policy-csp-update.md#update-setpolicydrivenupdatesourcefordriverupdates)
 - [Update/SetPolicyDrivenUpdateSourceForFeatureUpdates](../../client-management/mdm/policy-csp-update.md#update-setpolicydrivenupdatesourceforfeatureupdates)
