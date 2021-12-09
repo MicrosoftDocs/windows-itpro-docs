@@ -145,7 +145,9 @@ You can move directly from Enterprise to any valid destination edition. In this 
 ### Supported Windows 10 downgrade paths
 
 ✔ = Supported downgrade path
+
 S = Supported; Not considered a downgrade or an upgrade
+
 [blank] = Not supported or not a downgrade
 
 **Destination Edition: (Starting)**
