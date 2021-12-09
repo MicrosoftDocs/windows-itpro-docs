@@ -92,8 +92,8 @@ Hardware requirements are displayed below:
 |**Network**|Internet connection|Any|
 
 <B>\*</B><I>The Hyper-V server role can also be installed on a computer running Windows Server 2008 R2. However, the Windows PowerShell module for Hyper-V is not available on Windows Server 2008 R2, therefore you cannot use many of the steps provided in this guide to configure Hyper-V. To manage Hyper-V on Windows Server 2008 R2, you can use Hyper-V WMI, or you can use the Hyper-V Manager console. Providing all steps in this guide as Hyper-V WMI or as 2008 R2 Hyper-V Manager procedures is beyond the scope of the guide.</I>
-<BR>
-<BR>The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows.
+
+The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows.
 
 </div>
 
