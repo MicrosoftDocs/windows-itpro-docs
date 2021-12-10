@@ -200,18 +200,20 @@ When you have completed installation of Hyper-V on the host computer, begin conf
     > [!IMPORTANT]
     > This guide assumes that VHDs are stored in the **C:\VHD** directory on the Hyper-V host. If you use a different directory to store VHDs, you must adjust steps in this guide appropriately.
 
-     After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD. An example of the download offering is shown below.
+    After completing registration you will be able to download the 7.47 GB Windows Server 2012 R2 evaluation VHD. An example of the download offering is shown below.
 
-     ![VHD](images/download_vhd.png)
+    :::image type="content" alt-text="VHD" source="images/download_vhd.png":::
 
 2. Download the file to the **C:\VHD** directory. When the download is complete, rename the VHD file that you downloaded to **2012R2-poc-1.vhd**. This is done to make the filename simple to recognize and type.
+
 3. Copy the VHD to a second file also in the **C:\VHD** directory and name this VHD **2012R2-poc-2.vhd**.
+
 4. Download the [Windows 10 Enterprise ISO](https://www.microsoft.com/evalcenter/evaluate-windows-10-enterprise) from the TechNet Evaluation Center to the **C:\VHD** directory on your Hyper-V host.
 
-    During registration, you must specify the type, version, and language of installation media to download. In this example, a Windows 10 Enterprise, 64 bit, English ISO is chosen. You can choose a different version if desired.
+   During registration, you must specify the type, version, and language of installation media to download. In this example, a Windows 10 Enterprise, 64 bit, English ISO is chosen. You can choose a different version if desired.
 
-    > [!NOTE]
-    > The evaluation version of Windows 10 does not support in-place upgrade**.
+   > [!NOTE]
+   > The evaluation version of Windows 10 does not support in-place upgrade**.
 
 5. Rename the ISO file that you downloaded to **w10-enterprise.iso**. Again, this is done so that the filename is simple to type and recognize. After completing registration you will be able to download the 3.63 GB Windows 10 Enterprise evaluation ISO.
 
@@ -818,7 +820,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
     See the following example:
 
-    ![ISE 1.](images/ISE.png)
+    :::image type="content" alt-text="ISE 1." source="images/ISE.png" lightbox="images/ISE.png":::
 
 19. Click **File**, click **Save As**, and save the commands as **c:\VHD\pc1.ps1** on the Hyper-V host.
 
