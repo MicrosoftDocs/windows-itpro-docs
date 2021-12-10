@@ -68,8 +68,6 @@ When entering a list of TLS endpoints in Microsoft Endpoint Manager, you should 
 - A certificate should not be a public certificate.
 
 
-
-
 <hr/>
 
 
