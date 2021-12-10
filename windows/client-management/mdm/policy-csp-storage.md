@@ -612,7 +612,7 @@ This policy will do the enforcement over the following protocols which are used 
 
 If enabled, this policy will block end-user from Read access on any Windows Portal devices, e.g. mobile/iOS/Android.
 
-Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer justifications[TC(1] [TW2].
+Audit/Warn – Audit/Warn modes with customer justifications.
 
 >[!NOTE]
 > WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
@@ -674,7 +674,7 @@ This policy will do the enforcement over the following protocols which are used 
 
 If enabled, this policy will block end-user from Read access on any Windows Portal devices, e.g. mobile/iOS/Android.
 
-Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer justifications[TC(1] [TW2].
+Audit/Warn – Audit/Warn modes with customer justifications.
 
 >[!NOTE]
 > WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
@@ -736,7 +736,7 @@ This policy will do the enforcement over the following protocols which are used 
 
 If enabled, this will block end-user from Write access on any Windows Portal devices, e.g. mobile/iOS/Android.
 
-Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer justifications.
+Audit/Warn –  Audit/Warn modes with customer justifications.
 
 >[!NOTE]
 > WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
@@ -798,7 +798,7 @@ This policy will do the enforcement over the following protocols which are used 
 
 If enabled, this will block end-user from Write access on any Windows Portal devices, e.g. mobile/iOS/Android.
 
-Audit/Warn – P1: in the future, will consider Audit/Warn modes with customer justifications.
+Audit/Warn –  Audit/Warn modes with customer justifications.
 
 >[!NOTE]
 > WPD policy is not a reliable policy for removable storage - admin can not use WPD policy to block removable storage, e.g. if an end-user is using an USB thumb drive under a WPD policy, the policy may block PTP/MTP/etc, but end-user can still browser the USB via explorer.
