@@ -16,7 +16,7 @@ ms.collection:
   - M365-security-compliance
   - highpri
 ms.topic: article
-ms.date: 11/29/2021
+ms.date: 12/10/2021
 ms.technology: privacy
 ---
 
