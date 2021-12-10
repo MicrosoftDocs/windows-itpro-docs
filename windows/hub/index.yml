@@ -179,9 +179,6 @@ conceptualContent:
         - url: /windows/security/index    
           itemType: overview
           text: Windows Enterprise Security
-        - url: /windows/privacy/index
-          itemType: overview
-          text: Windows Privacy
         - url: /windows/security/hardware
           itemType: overview
           text: Hardware security
@@ -193,10 +190,13 @@ conceptualContent:
           text: Application security
         - url: /windows/security/identity
           itemType: overview
-          text: User and identity security
+          text: Identity and privacy
         - url: /windows/security/cloud
           itemType: overview
           text: Cloud services
+        - url: /windows/privacy/index
+          itemType: overview
+          text: Windows Privacy
 
 # additionalContent section (optional)
 # Card with summary style
