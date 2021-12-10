@@ -43,38 +43,14 @@ manager: dansimp
 <a href="" id="timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks"></a>**TimeLanguageSettings/BlockCleanupOfUnusedPreinstalledLangPacks**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -121,38 +97,14 @@ ADMX Info:
 <a href="" id="timelanguagesettings-configuretimezone"></a>**TimeLanguageSettings/ConfigureTimeZone**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -189,38 +141,14 @@ Specifies the time zone to be applied to the device. This is the standard Window
 <a href="" id="timelanguagesettings-machineuilanguageoverwrite"></a>**TimeLanguageSettings/MachineUILanguageOverwrite**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
@@ -267,38 +195,14 @@ ADMX Info:
 <a href="" id="timelanguagesettings-restrictlanguagepacksandfeaturesinstall"></a>**TimeLanguageSettings/RestrictLanguagePacksAndFeaturesInstall**  
 
 <!--SupportedSKUs-->
-<table>
-<tr>
-    <th>Edition</th>
-    <th>Windows 10</th>
-    <th>Windows 11</th>
-</tr>
-<tr>
-    <td>Home</td>
-    <td>No</td>
-    <td>No</td>
-</tr>
-<tr>
-    <td>Pro</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Business</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Enterprise</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-<tr>
-    <td>Education</td>
-    <td>Yes</td>
-    <td>Yes</td>
-</tr>
-</table>
+
+|Edition|Windows 10|Windows 11|
+|--- |--- |--- |
+|Home|No|No|
+|Pro|Yes|Yes|
+|Business|Yes|Yes|
+|Enterprise|Yes|Yes|
+|Education|Yes|Yes|
 
 <!--/SupportedSKUs-->
 <hr/>
