@@ -1395,7 +1395,6 @@ The following list shows the supported values:
 
 -   0 – Disabled
 -   1 – Enabled
-- 
 <!--/SupportedValues-->
 <!--/Policy-->
 
