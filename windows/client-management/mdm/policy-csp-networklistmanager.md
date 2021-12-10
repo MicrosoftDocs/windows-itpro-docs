@@ -60,7 +60,7 @@ manager: dansimp
 <!--Description-->
 This policy setting provides the list of URLs (separated by Unicode character 0xF000) to endpoints accessible only within an enterprise's network. If any of the URLs can be resolved over HTTPS, the network would be considered authenticated.  
 
-When entering a list of TLS endpoints in Microsoft Endpoint Manager, you should follow this format, even in the UI:  
+When entering a list of TLS endpoints in Microsoft Endpoint Manager, you must follow this format, even in the UI:  
 ```<![CDATA[https://nls.corp.contoso.com&#xF000;https://nls.corp.fabricam.com]]>```  
 - The HTTPS endpoint must not have any additional authentication checks, such as login or multifactor authentication.
 - The HTTPS endpoint must be an internal address not accessible from outside the corporate network.
