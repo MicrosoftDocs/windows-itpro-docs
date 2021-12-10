@@ -1,5 +1,5 @@
 ---
-title: Windows as a service  
+title: Windows as a service
 ms.prod: w10 
 ms.topic: landing-page
 ms.manager: laurawi
@@ -26,21 +26,20 @@ Find the latest and greatest news on Windows 10 deployment and servicing.
 **Discovering the Windows 10 Update history pages**
 > [!VIDEO https://www.youtube-nocookie.com/embed/mTnAb9XjMPY]
 
-Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. Bookmark the <a href="/windows/release-health/">Windows release health dashboard</a> for near real-time information on known issues, workarounds, and resolutions--as well as the current status of the latest feature update rollout.
+Everyone wins when transparency is a top priority. We want you to know when updates are available, as well as alert you to any potential issues you may encounter during or after you install an update. Bookmark the [Windows release health dashboard](/windows/release-health/) for near real-time information on known issues, workarounds, and resolutions--as well as the current status of the latest feature update rollout.
 
 The latest news:
-<ul compact style="list-style: none"> 
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/How-to-get-Extended-Security-Updates-for-eligible-Windows/ba-p/917807">How to get Extended Security Updates for eligible Windows devices </a> - October 17, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/End-of-service-reminders-for-Windows-10-versions-1703-and-1803/ba-p/903715">End of service reminders for Windows 10, versions 1703 and 1803  </a> - October 9, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Using-machine-learning-to-improve-the-Windows-10-update/ba-p/877860">Using machine learning to improve the Windows 10 update experience  </a> - September 26, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054
-">Publishing pre-release Windows 10 feature updates to WSUS  </a> - September 24, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-extended-support-dates-for-MDOP-tools/ba-p/837312">New extended support dates for MDOP tools   </a> - September 4, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/FastTrack-for-Windows-10-deployment-and-other-migration/ba-p/800406">FastTrack for Windows 10 deployment and other migration resources   </a> - August 12, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Tactical-considerations-for-creating-Windows-deployment-rings/ba-p/746979">Tactical considerations for creating Windows deployment rings   </a> - July 10, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Upgrading-Windows-10-devices-with-installation-media-different/ba-p/746126">Upgrading Windows 10 devices with installation media different than the original OS install language</a> - July 9, 2019</li>
-<li><a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Moving-to-the-next-Windows-10-feature-update-for-commercial/ba-p/732968">Moving to the next Windows 10 feature update for commercial customers</a> - July 1, 2019</li>
-</ul>
+
+- [How to get Extended Security Updates for eligible Windows devices](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/How-to-get-Extended-Security-Updates-for-eligible-Windows/ba-p/917807) - October 17, 2019
+- [End of service reminders for Windows 10, versions 1703 and 1803](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/End-of-service-reminders-for-Windows-10-versions-1703-and-1803/ba-p/903715) - October 9, 2019
+- [Using machine learning to improve the Windows 10 update experience](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Using-machine-learning-to-improve-the-Windows-10-update/ba-p/877860) - September 26, 2019
+- [Publishing pre-release Windows 10 feature updates to WSUS](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Publishing-pre-release-Windows-10-feature-updates-to-WSUS/ba-p/845054) - September 24, 2019
+- [New extended support dates for MDOP tools](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-extended-support-dates-for-MDOP-tools/ba-p/837312) - September 4, 2019
+- [FastTrack for Windows 10 deployment and other migration resources](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/FastTrack-for-Windows-10-deployment-and-other-migration/ba-p/800406) - August 12, 2019
+- [Tactical considerations for creating Windows deployment rings](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Tactical-considerations-for-creating-Windows-deployment-rings/ba-p/746979) - July 10, 2019
+- [Upgrading Windows 10 devices with installation media different than the original OS install language](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Upgrading-Windows-10-devices-with-installation-media-different/ba-p/746126) - July 9, 2019
+- [Moving to the next Windows 10 feature update for commercial customers](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Moving-to-the-next-Windows-10-feature-update-for-commercial/ba-p/732968) - July 1, 2019
+
 
 [See more news](waas-morenews.md). You can also check out the [Windows 10 blog](https://techcommunity.microsoft.com/t5/Windows-10-Blog/bg-p/Windows10Blog).
 
@@ -49,20 +48,19 @@ Written by IT pros for IT pros, sharing real world examples and scenarios for Wi
 
 <img src="images/champs-2.png" alt="Champs" width="640" height="320">
 
-<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Tactical-considerations-for-creating-Windows-deployment-rings/ba-p/746979">**NEW** Tactical considerations for creating Windows deployment rings</a>
+[**NEW** Tactical considerations for creating Windows deployment rings](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Tactical-considerations-for-creating-Windows-deployment-rings/ba-p/746979)
 
-<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-Enterprise-vs-Windows-10-Pro-Modern-management/ba-p/720445">**NEW** Windows 10 Enterprise vs. Windows 10 Pro: Modern management considerations for your organization</a>
+[**NEW** Windows 10 Enterprise vs. Windows 10 Pro: Modern management considerations for your organization](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Windows-10-Enterprise-vs-Windows-10-Pro-Modern-management/ba-p/720445)
 
-<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Deployment-rings-The-hidden-strategic-gem-of-Windows-as-a/ba-p/659622">Deployment rings: The hidden [strategic] gem of Windows as a service</a>
+[Deployment rings: The hidden [strategic] gem of Windows as a service](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Deployment-rings-The-hidden-strategic-gem-of-Windows-as-a/ba-p/659622)
 
-<a href="https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Classifying-Windows-updates-in-common-deployment-tools/ba-p/331175">Classifying Windows updates in common deployment tools</a>
+[Classifying Windows updates in common deployment tools](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/Classifying-Windows-updates-in-common-deployment-tools/ba-p/331175)
 
-<a href="/windows-server/get-started/express-updates">Express updates for Windows Server 2016 re-enabled for November 2018 update
-</a>
+[Express updates for Windows Server 2016 re-enabled for November 2018 update](/windows-server/get-started/express-updates)
 
-<a href="https://support.microsoft.com/help/4472027/">2019 SHA-2 Code Signing Support requirement for Windows and WSUS</a>
+[2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/)
 
-<a href="/windows/deployment/update/feature-update-mission-critical">Deploying Windows 10 Feature Updates to 24/7 Mission Critical Devices</a>
+[Deploying Windows 10 Feature Updates to 24/7 Mission Critical Devices](/windows/deployment/update/feature-update-mission-critical)
 
 ## Discover
 
@@ -70,14 +68,14 @@ Learn more about Windows as a service and its value to your organization.
 
 <img src="images/discover-land.png" alt="Discover">
 
-<a href="waas-overview.md">Overview of Windows as a service</a>
+[Overview of Windows as a service](waas-overview.md)
 
-<a href="waas-quick-start.md">Quick guide to Windows as a service</a>
+[Quick guide to Windows as a service](waas-quick-start.md)
 
 
-<a href="../deploy-whats-new.md">What's new in Windows 10 deployment</a>
+[What's new in Windows 10 deployment](../deploy-whats-new.md)
 
-<a href="https://channel9.msdn.com/events/Ignite/2015/BRK3303">How Microsoft IT deploys Windows 10</a></font>
+[How Microsoft IT deploys Windows 10](https://channel9.msdn.com/events/Ignite/2015/BRK3303)</font>
 
 ## Plan
 
@@ -85,15 +83,15 @@ Prepare to implement Windows as a service effectively using the right tools, pro
 
 <img src="images/plan-land.png" alt="Plan" />
 
-<a href="https://www.microsoft.com/windowsforbusiness/simplified-updates">Simplified updates</a>
+[Simplified updates](https://www.microsoft.com/windowsforbusiness/simplified-updates)
 
-<a href="https://www.microsoft.com/itpro/windows-10/end-user-readiness">Windows 10 end user readiness</a>
+[Windows 10 end user readiness](https://www.microsoft.com/itpro/windows-10/end-user-readiness)
 
-<a href="https://developer.microsoft.com/windows/ready-for-windows#/">Ready for Windows</a>
+[Ready for Windows](https://developer.microsoft.com/windows/ready-for-windows#/)
 
-<a href="/mem/configmgr/desktop-analytics/overview">Manage Windows upgrades with Upgrade Readiness</a>
+[Manage Windows upgrades with Upgrade Readiness](/mem/configmgr/desktop-analytics/overview)
 
-<a href="https://www.microsoft.com/itshowcase/windows10deployment">Preparing your organization for a seamless Windows 10 deployment</a>
+[Preparing your organization for a seamless Windows 10 deployment](https://www.microsoft.com/itshowcase/windows10deployment)
 
 ## Deploy
 
@@ -101,15 +99,15 @@ Secure your organization's deployment investment.
 
 <img src="images/deploy-land.png" alt="Deploy" />
 
-<a href="index.md">Update Windows 10 in the enterprise</a>
+[Update Windows 10 in the enterprise](index.md)
 
-<a href="https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade">Deploying as an in-place upgrade</a>
+[Deploying as an in-place upgrade](https://www.microsoft.com/itshowcase/Article/Content/668/Deploying-Windows-10-at-Microsoft-as-an-inplace-upgrade)
 
-<a href="waas-configure-wufb.md">Configure Windows Update for Business</a>
+[Configure Windows Update for Business](waas-configure-wufb.md)
 
-<a href="waas-optimize-windows-10-updates.md#express-update-delivery">Express update delivery</a>
+[Express update delivery](waas-optimize-windows-10-updates.md#express-update-delivery)
 
-<a href="../planning/windows-10-deployment-considerations.md">Windows 10 deployment considerations</a>
+[Windows 10 deployment considerations](../planning/windows-10-deployment-considerations.md)
 
 
 ## Microsoft Ignite 2018
