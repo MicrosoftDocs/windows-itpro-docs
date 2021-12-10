@@ -64,7 +64,7 @@ When entering a list of TLS endpoints in Microsoft Endpoint Manager, you should 
 ```<![CDATA[https://nls.corp.contoso.com&#xF000;https://nls.corp.fabricam.com]]>```  
 - The HTTPS endpoint must not have any additional authentication checks, such as login or multifactor authentication.
 - The HTTPS endpoint must be an internal address not accessible from outside the corporate network.
-- The client must trust the server certificate, so the CA cert the HTTPS server cert chains to must be present in the client machines root certificate store.
+- The client must trust the server certificate, so the CA certificate that the HTTPS server certificate chains to must be present in the client machine's root certificate store.
 - A certificate should not be a public certificate.
 
 
