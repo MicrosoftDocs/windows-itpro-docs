@@ -2,7 +2,7 @@
 title: Connection endpoints for Windows 10, version 1809
 description: Explains what Windows 10 endpoints are used for, how to turn off traffic to them, and the impact. Specific to Windows 10 Enterprise, version 1809.
 keywords: privacy, manage connections to Microsoft, Windows 10, Windows Server 2016
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.localizationpriority: high
@@ -12,8 +12,10 @@ ms.author: dansimp
 manager: dansimp
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.date: 6/26/2018
+ms.date: 11/29/2021
 ms.reviewer: 
+ms.technology: privacy
+
 ---
 
 # Manage connection endpoints for Windows 10 Enterprise, version 1809
@@ -41,7 +43,7 @@ We used the following methodology to derive these network endpoints:
 3. Use globally accepted network protocol analyzer/capturing tools and log all background egress traffic.
 4. Compile reports on traffic going to public IP addresses.
 5. The test virtual machine was logged in using a local account and was not joined to a domain or Azure Active Directory.
-6. All traffic was captured in our lab using a IPV4 network.  Therefore no IPV6 traffic is reported here.
+6. All traffic was captured in our lab using an IPV4 network.  Therefore no IPV6 traffic is reported here.
 
 > [!NOTE]
 > Microsoft uses global load balancers that can appear in network trace-routes. For example, an endpoint for *.akadns.net might be used to load balance requests to an Azure datacenter, which can change over time.
@@ -340,7 +342,7 @@ The following endpoint is OfficeHub traffic used to get the metadata of Office a
 |:--------------:|:--------:|:------------|
 |Windows Apps\Microsoft.Windows.Photos|HTTPS| `client-office365-tas.msedge.net` |
 
-The following endpoint is used to connect the Office To-Do app to it's cloud service.
+The following endpoint is used to connect the Office To-Do app to its cloud service.
 To turn off traffic for this endpoint, either uninstall the app or [disable the Microsoft Store](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-windowsstore).
 
 | Source process | Protocol | Destination |
@@ -424,7 +426,7 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 
 ## Windows Spotlight
 
-The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, as well as suggested apps, Microsoft account notifications, and Windows tips.
+The following endpoints are used to retrieve Windows Spotlight metadata that describes content, such as references to image locations, and suggested apps, Microsoft account notifications, and Windows tips.
 If you [turn off traffic for these endpoints](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-spotlight), Windows Spotlight will still try to deliver new lock screen images and updated content but it will fail; suggested apps, Microsoft account notifications, and Windows tips will not be downloaded. For more information, see [Windows Spotlight](/windows/configuration/windows-spotlight).
 
 | Source process | Protocol | Destination |
@@ -438,7 +440,7 @@ If you [turn off traffic for these endpoints](manage-connections-from-windows-op
 ## Windows Update
 
 The following endpoint is used for Windows Update downloads of apps and OS updates, including HTTP downloads or HTTP downloads blended with peers.
-If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-updates), Windows Update downloads will not be managed, as critical metadata that is used to make downloads more resilient is blocked. Downloads may be impacted by corruption (resulting in re-downloads of full files). Additionally, downloads of the same update by multiple devices on the same local network will not use peer devices for bandwidth reduction.
+If you [turn off traffic for this endpoint](manage-connections-from-windows-operating-system-components-to-microsoft-services.md#bkmk-updates), Windows Update downloads will not be managed, as critical metadata that is used to make downloads more resilient is blocked. Downloads may be impacted by corruption (resulting in redownloads of full files). Additionally, downloads of the same update by multiple devices on the same local network will not use peer devices for bandwidth reduction.
 
 | Source process | Protocol | Destination |
 |:--------------:|:--------:|:------------|

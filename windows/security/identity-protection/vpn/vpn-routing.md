@@ -1,7 +1,7 @@
 ---
 title: VPN routing decisions (Windows 10 and Windows 10)
 description: Learn about approaches that either send all data through a VPN or only selected data. The one you choose impacts capacity planning and security expectations.
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, networking

@@ -11,6 +11,7 @@ ms.sitesec: library
 ms.pagetype: mobile
 author: MandiOhlinger
 ms.localizationpriority: medium
+ms.collection: highpri
 ---
 
 # Customize the Taskbar on Windows 11

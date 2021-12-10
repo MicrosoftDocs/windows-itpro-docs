@@ -8,9 +8,10 @@ ms.author: dansimp
 ms.topic: article
 ms.prod: w10
 ms.technology: windows
-author: manikadhiman
+author: dansimp
 ms.localizationpriority: medium
 ms.date: 07/18/2019
+ms.collection: highpri
 ---
 
 # Policy CSP
