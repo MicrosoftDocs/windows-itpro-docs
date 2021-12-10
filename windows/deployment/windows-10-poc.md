@@ -39,6 +39,7 @@ Approximately 3 hours are required to configure the PoC environment. You will ne
 
 Windows PowerShell commands are provided to set up the PoC environment quickly. You do not need to be an expert in Windows PowerShell to complete the steps in the guide, however you are required to customize some commands to your environment.
 
+> [!TIP]
 > Instructions to "type" Windows PowerShell commands provided in this guide can be followed literally by typing the commands, but the preferred method is to copy and paste these commands.
 > 
 > A Windows PowerShell window can be used to run all commands in this guide. However, when commands are specified for a command prompt, you must either type CMD at the Windows PowerShell prompt to enter the command prompt, or preface the command with "cmd /c", or if desired you can escape special characters in the command using the back-tick character (`). In most cases, the simplest thing is to type cmd and enter a command prompt, type the necessary commands, then type "exit" to return to Windows PowerShell.
@@ -52,6 +53,8 @@ This guide contains instructions for three general procedures: Install Hyper-V, 
 After completing the instructions in this guide, you will have a PoC environment that enables you to test Windows 10 deployment procedures by following instructions in companion guides that are written to use the PoC environment. Links are provided to download trial versions of Windows Server 2012, Windows 10 Enterprise, and all deployment tools necessary to complete the lab.
 
 Topics and procedures in this guide are summarized in the following table. An estimate of the time required to complete each procedure is also provided. Time required to complete procedures will vary depending on the resources available to the Hyper-V host and assigned to VMs, such as processor speed, memory allocation, disk speed, and network speed.
+
+<br/>
 
 |Topic|Description|Time|
 |--- |--- |--- |
@@ -77,7 +80,7 @@ One computer that meets the hardware and software specifications below is requir
 
 Hardware requirements are displayed below:
 
-<div>
+<br/>
 
 ||Computer 1 (required)|Computer 2 (recommended)|
 |--- |--- |--- |
@@ -95,7 +98,7 @@ Hardware requirements are displayed below:
 
 The Hyper-V role cannot be installed on Windows 7 or earlier versions of Windows.
 
-</div>
+
 
 ## Lab setup
 
@@ -107,7 +110,8 @@ The lab architecture is summarized in the following diagram:
     - Two VMs are running Windows Server 2012 R2 with required network services and tools installed.
     - Two VMs are client systems: One VM is intended to mirror a host on your corporate network (computer 2) and one VM is running Windows 10 Enterprise to demonstrate the hardware replacement scenario.
 
->If you have an existing Hyper-V host, you can use this host and skip the Hyper-V installation section in this guide.
+> [!NOTE]
+> If you have an existing Hyper-V host, you can use this host and skip the Hyper-V installation section in this guide.
 
 <I>The two Windows Server VMs can be combined into a single VM to conserve RAM and disk space if required. However, instructions in this guide assume two server systems are used. Using two servers enables Active Directory Domain Services and DHCP to be installed on a server that is not directly connected to the corporate network. This mitigates the risk of clients on the corporate network receiving DHCP leases from the PoC network (i.e. "rogue" DHCP), and limits NETBIOS service broadcasts.</I>
 
@@ -340,7 +344,9 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 > [!NOTE]
 >
 >- If the PC is running Windows 7, it can only be converted and hosted in Hyper-V as a generation 1 VM. This Hyper-V requirement means that if the Windows 7 PC is also using a GPT partition style, the OS disk can be shadow copied, but a new system partition must be created. In this case, see [Prepare a generation 1 VM from a GPT disk](#prepare-a-generation-1-vm-from-a-gpt-disk).
+> 
 >- If the PC is running Windows 8 or later and uses the GPT partition style, you can capture the disk image and create a generation 2 VM. To do this, you must temporarily mount the EFI system partition which is accomplished using the <strong>mountvol</strong> command. In this case, see [Prepare a generation 2 VM](#prepare-a-generation-2-vm).
+> 
 >- If the PC is using an MBR partition style, you can convert the disk to VHD and use it to create a generation 1 VM. If you use the Disk2VHD tool described in this guide, it is not necessary to mount the MBR system partition, but it is still necessary to capture it. In this case, see [Prepare a generation 1 VM](#prepare-a-generation-1-vm).
 
 
@@ -348,9 +354,11 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
 1. Download the [Disk2vhd utility](/sysinternals/downloads/disk2vhd), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
 
-    >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
+   > [!TIP]
+   > You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
 
 2. On the computer you wish to convert, double-click the disk2vhd utility to start the graphical user interface.
+
 3. Select the checkboxes next to the **C:\\** and the **system reserved** (BIOS/MBR) volumes. The system volume is not assigned a drive letter, but will be displayed in the Disk2VHD tool with a volume label similar to **\\?\Volume{**. See the following example. 
 
     > [!IMPORTANT]
@@ -360,7 +368,7 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
     ![disk2vhd 1.](images/disk2vhd.png)
 
-    >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
+    Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better, however, when the VHD is saved on a disk different than those being converted, such as a flash drive.
 
 5. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (w7.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
@@ -376,7 +384,8 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
 1. Download the [Disk2vhd utility](/sysinternals/downloads/disk2vhd), extract the .zip file and copy **disk2vhd.exe** to a flash drive or other location that is accessible from the computer you wish to convert.
 
-    >You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
+    > [!TIP]
+    > You might experience timeouts if you attempt to run Disk2vhd from a network share, or specify a network share for the destination. To avoid timeouts, use local, portable media such as a USB drive.
 
 2. On the computer you wish to convert, open an elevated command prompt and type the following command:
 
@@ -396,7 +405,7 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
     ![disk2vhd 2.](images/disk2vhd-gen2.png)
 
-    >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
+    Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
 
 6. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHDX file (PC1.vhdx) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
@@ -424,7 +433,7 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
     ![disk2vhd 3.](images/disk2vhd4.png)
 
-    >Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
+    Disk2vhd can save VHDs to local hard drives, even if they are the same as the volumes being converted. Performance is better however when the VHD is saved on a disk different than those being converted, such as a flash drive.
 
 5. When the Disk2vhd utility has completed converting the source computer to a VHD, copy the VHD file (w7.vhd) to your Hyper-V host in the C:\VHD directory. There should now be four files in this directory:
 
@@ -440,7 +449,6 @@ The following tables display the Hyper-V VM generation to choose based on the OS
 
 ### Resize VHD
 
-<HR size="4">
 <strong><I>Enhanced session mode</I></strong>
 
 > [!IMPORTANT]
@@ -689,7 +697,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Set-DhcpServerv4OptionValue -ScopeId 192.168.0.0 -DnsDomain contoso.com -Router 192.168.0.2 -DnsServer 192.168.0.1,192.168.0.2 -Force
     ```
 
-    >The -Force option is necessary when adding scope options to skip validation of 192.168.0.2 as a DNS server because we have not configured it yet. The scope should immediately begin issuing leases on the PoC network. The first DHCP lease that will be issued is to vEthernet interface on the Hyper-V host, which is a member of the internal network. You can verify this by using the command: Get-DhcpServerv4Lease -ScopeId 192.168.0.0.
+    The -Force option is necessary when adding scope options to skip validation of 192.168.0.2 as a DNS server because we have not configured it yet. The scope should immediately begin issuing leases on the PoC network. The first DHCP lease that will be issued is to vEthernet interface on the Hyper-V host, which is a member of the internal network. You can verify this by using the command: Get-DhcpServerv4Lease -ScopeId 192.168.0.0.
 
 11. The DNS server role will also be installed on the member server, SRV1, at 192.168.0.2 so that we can forward DNS queries from DC1 to SRV1 to resolve Internet names without having to configure a forwarder outside the PoC network. Since the IP address of SRV1 already exists on DC1's network adapter, it will be automatically added during the DCPROMO process. To verify this server-level DNS forwarder on DC1, type the following command at an elevated Windows PowerShell prompt on DC1:
 
@@ -747,13 +755,13 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
 
 14. Sign in to PC1 using an account that has local administrator rights.
 
-    >PC1 will be disconnected from its current domain, so you cannot use a domain account to sign on unless these credentials are cached and the use of cached credentials is permitted by Group Policy. If cached credentials are available and permitted, you can use these credentials to sign in. Otherwise, use an existing local administrator account.
+    PC1 will be disconnected from its current domain, so you cannot use a domain account to sign on unless these credentials are cached and the use of cached credentials is permitted by Group Policy. If cached credentials are available and permitted, you can use these credentials to sign in. Otherwise, use an existing local administrator account.
 
 15. After signing in, the operating system detects that it is running in a new environment. New drivers will be automatically installed, including the network adapter driver. The network adapter driver must be updated before you can proceed, so that you will be able to join the contoso.com domain. Depending on the resources allocated to PC1, installing the network adapter driver might take a few minutes. You can monitor device driver installation by clicking **Show hidden icons** in the notification area.
 
     ![PoC 1.](images/installing-drivers.png)
 
-    >If the client was configured with a static address, you must change this to a dynamic one so that it can obtain a DHCP lease.
+    If the client was configured with a static address, you must change this to a dynamic one so that it can obtain a DHCP lease.
 
 16. When the new network adapter driver has completed installation, you will receive an alert to set a network location for the contoso.com network. Select **Work network** and then click **Close**. When you receive an alert that a restart is required, click **Restart Later**.
 
@@ -792,7 +800,8 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
             Flags: PDC GC DS LDAP KDC TIMESERV WRITABLE DNS_FOREST CLOSE_SITE FULL_SECRET WS 0xC000
     ```
 
-    >If PC1 is running Windows 7, enhanced session mode might not be available, which means that you cannot copy and paste commands from the Hyper-V host to a Windows PowerShell prompt on PC1. However, it is possible to use integration services to copy a file from the Hyper-V host to a VM. The next procedure demonstrates this. If the Copy-VMFile command fails, then type the commands below at an elevated Windows PowerShell prompt on PC1 instead of saving them to a script to run remotely. If PC1 is running Windows 8 or a later operating system, you can use enhanced session mode to copy and paste these commands instead of typing them.
+    > [!NOTE]
+	> If PC1 is running Windows 7, enhanced session mode might not be available, which means that you cannot copy and paste commands from the Hyper-V host to a Windows PowerShell prompt on PC1. However, it is possible to use integration services to copy a file from the Hyper-V host to a VM. The next procedure demonstrates this. If the Copy-VMFile command fails, then type the commands below at an elevated Windows PowerShell prompt on PC1 instead of saving them to a script to run remotely. If PC1 is running Windows 8 or a later operating system, you can use enhanced session mode to copy and paste these commands instead of typing them.
 
 18. Minimize the PC1 window and switch to the Hyper-V host computer. Open an elevated Windows PowerShell ISE window on the Hyper-V host (right-click Windows PowerShell and then click **Run ISE as Administrator**) and type the following commands in the (upper) script editor pane:
 
@@ -805,13 +814,14 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Restart-Computer
     ```
 
-    >If you do not see the script pane, click **View** and verify **Show Script Pane Top** is enabled. Click **File** and then click **New**.
+    If you do not see the script pane, click **View** and verify **Show Script Pane Top** is enabled. Click **File** and then click **New**.
 
     See the following example:
 
     ![ISE 1.](images/ISE.png)
 
 19. Click **File**, click **Save As**, and save the commands as **c:\VHD\pc1.ps1** on the Hyper-V host.
+
 20. In the (lower) terminal input window, type the following commands to enable Guest Service Interface on PC1 and then use this service to copy the script to PC1:
 
     ```powershell
@@ -819,7 +829,8 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Copy-VMFile "PC1" -SourcePath "C:\VHD\pc1.ps1" -DestinationPath "C:\pc1.ps1" -CreateFullPath -FileSource Host
     ```
 
-    >In order for this command to work properly, PC1 must be running the vmicguestinterface (Hyper-V Guest Service Interface) service. If this service is not enabled in this step, then the copy-VMFile command will fail. In this case, you can try updating integration services on the VM by mounting the Hyper-V Integration Services Setup (vmguest.iso), which is located in C:\Windows\System32 on Windows Server 2012 and 2012 R2 operating systems that are running the Hyper-V role service.
+    > [!NOTE]
+	> In order for this command to work properly, PC1 must be running the vmicguestinterface (Hyper-V Guest Service Interface) service. If this service is not enabled in this step, then the copy-VMFile command will fail. In this case, you can try updating integration services on the VM by mounting the Hyper-V Integration Services Setup (vmguest.iso), which is located in C:\Windows\System32 on Windows Server 2012 and 2012 R2 operating systems that are running the Hyper-V role service.
 
     If the copy-vmfile command does not work and you cannot properly enable or upgrade integration services on PC1, then create the file c:\pc1.ps1 on the VM by typing the commands into this file manually. The copy-vmfile command is only used in this procedure as a demonstration of automation methods that can be used in a Hyper-V environment when enhanced session mode is not available. After typing the script file manually, be sure to save the file as a Windows PowerShell script file with the .ps1 extension and not as a text (.txt) file.
 
@@ -829,7 +840,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     Get-Content c:\pc1.ps1 | powershell.exe -noprofile -
     ```
 
-    >The commands in this script might take a few moments to complete. If an error is displayed, check that you typed the command correctly, paying close attention to spaces. PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. PC1 is also not renamed to "PC1" in system properties so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
+    The commands in this script might take a few moments to complete. If an error is displayed, check that you typed the command correctly, paying close attention to spaces. PC1 is removed from its domain in this step while not connected to the corporate network so as to ensure the computer object in the corporate domain is unaffected. PC1 is also not renamed to "PC1" in system properties so that it maintains some of its mirrored identity. However, if desired you can also rename the computer.
 
 22. Upon completion of the script, PC1 will automatically restart. When it has restarted, sign in to the contoso.com domain using the **Switch User** option, with the **user1** account you created in step 11 of this section.
 
@@ -837,6 +848,7 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     > The settings that will be used later to migrate user data specifically select only accounts that belong to the CONTOSO domain. However, this can be changed to migrate all user accounts, or only other specified accounts. If you wish to test migration of user data and settings with accounts other than those in the CONTOSO domain, you must specify these accounts or domains when you configure the value of **ScanStateArgs** in the MDT test lab guide. This value is specifically called out when you get to that step. If you wish to only migrate CONTOSO accounts, then you can log in with the user1 account or the administrator account at this time and modify some of the files and settings for later use in migration testing.
 
 23. Minimize the PC1 window but do not turn it off while the second Windows Server 2012 R2 VM (SRV1) is configured. This verifies that the Hyper-V host has enough resources to run all VMs simultaneously. Next, SRV1 will be started, joined to the contoso.com domain, and configured with RRAS and DNS services.
+
 24. On the Hyper-V host computer, at an elevated Windows PowerShell prompt, type the following commands:
 
     ```powershell
@@ -845,7 +857,9 @@ The second Windows Server 2012 R2 VHD needs to be expanded in size from 40GB to 
     ```
 
 25. Accept the default settings, read license terms and accept them, provide an administrator password of <strong>pass@word1</strong>, and click **Finish**. When you are prompted about finding PCs, devices, and content on the network, click **Yes**.
+
 26. Sign in to SRV1 using the local administrator account. In the same way that was done on DC1, sign out of SRV1 and then sign in again to enable enhanced session mode. This will enable you to copy and paste Windows PowerShell commands from the Hyper-V host to the VM.
+
 27. Open an elevated Windows PowerShell prompt on SRV1 and type the following commands:
 
     ```powershell
@@ -970,13 +984,20 @@ Use the following procedures to verify that the PoC environment is configured pr
     ipconfig /all
     ```
 
-    **Get-Service** displays a status of "Running" for all three services.<BR>
-    **DCDiag** displays "passed test" for all tests.<BR>
-    **Get-DnsServerResourceRecord** displays the correct DNS address records for DC1, SRV1, and the computername of PC1. Additional address records for the zone apex (@), DomainDnsZones, and ForestDnsZones will also be registered.<BR>
-    **Get-DnsServerForwarder** displays a single forwarder of 192.168.0.2.<BR>
-    **Resolve-DnsName** displays public IP address results for `www.microsoft.com`.<BR>
-    **Get-DhcpServerInDC** displays 192.168.0.1, `dc1.contoso.com`.<BR>
-    **Get-DhcpServerv4Statistics** displays 1 scope with 2 addresses in use (these belong to PC1 and the Hyper-V host).<BR>
+    **Get-Service** displays a status of "Running" for all three services.
+	
+    **DCDiag** displays "passed test" for all tests.
+	
+    **Get-DnsServerResourceRecord** displays the correct DNS address records for DC1, SRV1, and the computername of PC1. Additional address records for the zone apex (@), DomainDnsZones, and ForestDnsZones will also be registered.
+	
+    **Get-DnsServerForwarder** displays a single forwarder of 192.168.0.2.
+	
+    **Resolve-DnsName** displays public IP address results for `www.microsoft.com`.
+
+    **Get-DhcpServerInDC** displays 192.168.0.1, `dc1.contoso.com`.
+	
+    **Get-DhcpServerv4Statistics** displays 1 scope with 2 addresses in use (these belong to PC1 and the Hyper-V host).
+	
     **ipconfig** displays a primary DNS suffix and suffix search list of `contoso.com`, IP address of 192.168.0.1, subnet mask of 255.255.255.0, default gateway of 192.168.0.2, and DNS server addresses of 192.168.0.1 and 192.168.0.2.
 
 2. On SRV1, open an elevated Windows PowerShell prompt and type the following commands:
@@ -989,10 +1010,14 @@ Use the following procedures to verify that the PoC environment is configured pr
     netsh int ipv4 show address
     ```
 
-    **Get-Service** displays a status of "Running" for both services.<BR>
-    **Get-DnsServerForwarder** either displays no forwarders, or displays a list of forwarders you are required to use so that SRV1 can resolve Internet names.<BR>
-    **Resolve-DnsName** displays public IP address results for `www.microsoft.com`.<BR>
-    **ipconfig** displays a primary DNS suffix of `contoso.com`. The suffix search list contains `contoso.com` and your corporate domain. Two ethernet adapters are shown: Ethernet adapter "Ethernet" has an IP addresses of 192.168.0.2, subnet mask of 255.255.255.0, no default gateway, and DNS server addresses of 192.168.0.1 and 192.168.0.2. Ethernet adapter "Ethernet 2" has an IP address, subnet mask, and default gateway configured by DHCP on your corporate network.<BR>
+    **Get-Service** displays a status of "Running" for both services.
+
+    **Get-DnsServerForwarder** either displays no forwarders, or displays a list of forwarders you are required to use so that SRV1 can resolve Internet names.
+
+    **Resolve-DnsName** displays public IP address results for `www.microsoft.com`.
+
+    **ipconfig** displays a primary DNS suffix of `contoso.com`. The suffix search list contains `contoso.com` and your corporate domain. Two ethernet adapters are shown: Ethernet adapter "Ethernet" has an IP addresses of 192.168.0.2, subnet mask of 255.255.255.0, no default gateway, and DNS server addresses of 192.168.0.1 and 192.168.0.2. Ethernet adapter "Ethernet 2" has an IP address, subnet mask, and default gateway configured by DHCP on your corporate network.
+
     **netsh** displays three interfaces on the computer: interface "Ethernet 2" with DHCP enabled = Yes and IP address assigned by your corporate network, interface "Ethernet" with DHCP enabled = No and IP address of 192.168.0.2, and interface "Loopback Pseudo-Interface 1" with IP address of 127.0.0.1.
 
 3. On PC1, open an elevated Windows PowerShell prompt and type the following commands:
@@ -1005,10 +1030,14 @@ Use the following procedures to verify that the PoC environment is configured pr
     tracert www.microsoft.com
     ```
 
-    **whoami** displays the current user context, for example in an elevated Windows PowerShell prompt, contoso\administrator is displayed.<BR>
-    **hostname** displays the name of the local computer, for example W7PC-001.<BR>
-    **nslookup** displays the DNS server used for the query, and the results of the query. For example, server `dc1.contoso.com`, address 192.168.0.1, Name `e2847.dspb.akamaiedge.net`.<BR>
-    **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it cannot be resolved, "..could not find host" will be displayed and if the target is found and also responds to ICMP, you will see "Reply from" and the IP address of the target.<BR>
+    **whoami** displays the current user context, for example in an elevated Windows PowerShell prompt, contoso\administrator is displayed.
+
+    **hostname** displays the name of the local computer, for example W7PC-001.
+
+    **nslookup** displays the DNS server used for the query, and the results of the query. For example, server `dc1.contoso.com`, address 192.168.0.1, Name `e2847.dspb.akamaiedge.net`.
+
+    **ping** displays if the source can resolve the target name, and whether or not the target responds to ICMP. If it cannot be resolved, "..could not find host" will be displayed and if the target is found and also responds to ICMP, you will see "Reply from" and the IP address of the target.
+
     **tracert** displays the path to reach the destination, for example `srv1.contoso.com` [192.168.0.2] followed by a list of hosts and IP addresses corresponding to subsequent routing nodes between the source and the destination.
 
 
