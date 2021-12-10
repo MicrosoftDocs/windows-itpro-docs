@@ -8449,6 +8449,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-textinput.md#textinput-allowlinguisticdatacollection" id="textinput-allowlinguisticdatacollection">TextInput/AllowLinguisticDataCollection</a>
   </dd>
   <dd>
+    <a href="./policy-csp-textinput.md#textinput-allowtextinputsuggestionupdate"id="textinput-allowtextinputsuggestionupdate">TextInput/AllowTextInputSuggestionUpdate</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-textinput.md#textinput-configurejapaneseimeversion"id="textinput-configurejapaneseimeversion">TextInput/ConfigureJapaneseIMEVersion</a>
   </dd>
   <dd>
@@ -8499,7 +8502,16 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
 
 <dl>
   <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks" id="timelanguagesettings-blockcleanupofunusedpreinstalledlangpacks">TimeLanguageSettings/BlockCleanupOfUnusedPreinstalledLangPacks</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-configuretimezone" id="timelanguagesettings-configuretimezone">TimeLanguageSettings/ConfigureTimeZone</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-machineuilanguageoverwrite" id="timelanguagesettings-machineuilanguageoverwrite">TimeLanguageSettings/MachineUILanguageOverwrite</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-timelanguagesettings.md#timelanguagesettings-restrictlanguagepacksandfeaturesinstall" id="timelanguagesettings-restrictlanguagepacksandfeaturesinstall">TimeLanguageSettings/RestrictLanguagePacksAndFeaturesInstall</a>
   </dd>
 </dl>
 
