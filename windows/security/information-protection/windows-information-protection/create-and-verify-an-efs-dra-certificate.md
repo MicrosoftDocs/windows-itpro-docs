@@ -2,7 +2,7 @@
 title: Make & verify an EFS Data Recovery Agent certificate (Windows 10)
 description: Follow these steps to create, verify, and perform a quick recovery by using a Encrypting File System (EFS) Data Recovery Agent (DRA) certificate.
 keywords: Windows Information Protection, WIP, EDP, Enterprise Data Protection
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security

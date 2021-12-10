@@ -4,7 +4,7 @@ description: Learn the difference between enlightened and unenlightened apps. Fi
 ms.assetid: 17c85ea3-9b66-4b80-b511-8f277cb4345f
 ms.reviewer: 
 keywords: WIP, Windows Information Protection, EDP, Enterprise Data Protection
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: explore
 ms.sitesec: library
 ms.pagetype: security
