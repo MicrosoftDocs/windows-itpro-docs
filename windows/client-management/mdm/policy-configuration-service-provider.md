@@ -8360,6 +8360,12 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
     <a href="./policy-csp-system.md#system-feedbackhubalwayssavediagnosticslocally" id="system-feedbackhubalwayssavediagnosticslocally">System/FeedbackHubAlwaysSaveDiagnosticsLocally</a>
   </dd>
   <dd>
+    <a href="./policy-csp-system.md#system-limitdiagnosticlogcollection" id="system-limitdiagnosticlogcollection">System/LimitDiagnosticLogCollection</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-system.md#system-limitdumpcollection" id="system-limitdumpcollection">System/LimitDumpCollection</a>
+  </dd>
+  <dd>
     <a href="./policy-csp-system.md#system-limitenhanceddiagnosticdatawindowsanalytics" id="system-limitenhanceddiagnosticdatawindowsanalytics">System/LimitEnhancedDiagnosticDataWindowsAnalytics</a>
   </dd>
   <dd>
@@ -8991,6 +8997,9 @@ dfsdiscoverdc">ADMX_DFS/DFSDiscoverDC</a>
   </dd>
   <dd>
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmdnsdiscovery" id="wirelessdisplay-allowmdnsdiscovery">WirelessDisplay/AllowMdnsDiscovery</a>
+  </dd>
+  <dd>
+    <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowmovementdetectiononinfrastructure" id="wirelessdisplay-allowmovementdetectiononinfrastructure">WirelessDisplay/AllowMovementDetectionOnInfrastructure</a>
   </dd>
   <dd>
     <a href="./policy-csp-wirelessdisplay.md#wirelessdisplay-allowprojectionfrompc" id="wirelessdisplay-allowprojectionfrompc">WirelessDisplay/AllowProjectionFromPC</a>
