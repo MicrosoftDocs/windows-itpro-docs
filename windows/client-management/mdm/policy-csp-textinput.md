@@ -657,7 +657,7 @@ Default: Enabled
 The following list shows the supported values:
 
 - 1 (Enabled) - The newer UX is downloaded from Microsoft service.
-- 0 (Diabled) - The UX remains unchanged with what the operating system installs.
+- 0 (Disabled) - The UX remains unchanged with what the operating system installs.
 
 <!--/SupportedValues-->
 <!--/Policy-->
