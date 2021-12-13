@@ -19,6 +19,7 @@ ms.collection: highpri
 # Windows 10 deployment scenarios
 
 **Applies to**
+
 -   Windows 10
 
 To successfully deploy the Windows 10 operating system in your organization, it is important to understand the different ways that it can be deployed, especially now that there are new scenarios to consider. Choosing among these scenarios, and understanding the capabilities and limitations of each, is a key task.
@@ -32,9 +33,9 @@ The following tables summarize various Windows 10 deployment scenarios. The scen
    > [!NOTE]
    > Once you have deployed Windows 10 in your organization, it is important to stay up to date by [creating a deployment plan](update/create-deployment-plan.md) for Windows 10 feature updates.
 
-- Dynamic deployment methods enable you to configure applications and settings for specific use cases. 
+- Dynamic deployment methods enable you to configure applications and settings for specific use cases.
 
-- Traditional deployment methods use existing tools to deploy operating system images.<br>&nbsp;
+- Traditional deployment methods use existing tools to deploy operating system images.
 
 ### Modern
 
