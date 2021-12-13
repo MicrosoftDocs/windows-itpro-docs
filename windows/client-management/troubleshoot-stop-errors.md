@@ -10,6 +10,7 @@ ms.topic: troubleshooting
 author: dansimp
 ms.localizationpriority: medium
 ms.author: dansimp
+ms.collection: highpri
 ---
 
 # Advanced troubleshooting for Stop error or blue screen error issue
@@ -48,6 +49,9 @@ To troubleshoot Stop error messages, follow these general steps:
 
     1. Make sure that you install the latest Windows updates, cumulative updates, and rollup updates. To verify the update status, refer to the appropriate update history for your system:
 
+        - [Windows 10, version 21H2](https://support.microsoft.com/topic/windows-10-update-history-857b8ccb-71e4-49e5-b3f6-7073197d98fb)
+        - [Windows 10, version 21H1](https://support.microsoft.com/topic/windows-10-update-history-1b6aac92-bf01-42b5-b158-f80c6d93eb11)
+        - [Windows 10, version 20H2](https://support.microsoft.com/topic/windows-10-update-history-7dd3071a-3906-fa2c-c342-f7f86728a6e3)
         - [Windows 10, version 2004](https://support.microsoft.com/help/4555932)  
         - [Windows 10, version 1909](https://support.microsoft.com/help/4529964)
         - [Windows 10, version 1903](https://support.microsoft.com/help/4498140)

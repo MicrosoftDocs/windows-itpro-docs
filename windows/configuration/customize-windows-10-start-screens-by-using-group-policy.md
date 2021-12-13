@@ -12,6 +12,7 @@ author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Customize Windows 10 Start and taskbar with Group Policy

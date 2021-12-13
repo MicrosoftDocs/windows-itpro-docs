@@ -8,6 +8,7 @@ ms.author: greglin
 ms.topic: article
 ms.localizationpriority: medium
 ms.prod: w10
+ms.collection: highpri
 ---
 # Find the Application User Model ID of an installed app
 

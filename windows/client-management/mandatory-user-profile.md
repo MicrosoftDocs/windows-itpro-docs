@@ -11,6 +11,7 @@ ms.date: 09/14/2021
 ms.reviewer: 
 manager: dansimp
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Create mandatory user profiles

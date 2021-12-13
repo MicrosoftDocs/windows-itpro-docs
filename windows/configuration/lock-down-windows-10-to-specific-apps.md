@@ -13,6 +13,7 @@ author: greg-lindsay
 ms.localizationpriority: medium
 ms.author: greglin
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Set up a multi-app kiosk on Windows 10 devices

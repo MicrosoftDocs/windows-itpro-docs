@@ -13,6 +13,7 @@ ms.author: greglin
 ms.topic: conceptual
 ms.localizationpriority: medium
 ms.date: 4/16/2018
+ms.collection: highpri
 ---
 
 # Configure access to Microsoft Store
@@ -20,7 +21,7 @@ ms.date: 4/16/2018
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 >For more info about the features and functionality that are supported in each edition of Windows, see [Compare Windows 10 Editions](https://www.microsoft.com/WindowsForBusiness/Compare).
 

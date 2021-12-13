@@ -2,7 +2,7 @@
 title: Configure Device Registration for Hybrid Azure AD joined key trust Windows Hello for Business
 description: Azure Device Registration for Hybrid Certificate Key Deployment (Windows Hello for Business)
 keywords: identity, PIN, biometric, Hello, passport, WHFB, hybrid, key-trust, device, registration
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

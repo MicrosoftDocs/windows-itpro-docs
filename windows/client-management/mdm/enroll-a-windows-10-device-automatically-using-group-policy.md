@@ -6,12 +6,17 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
-ms.date: 10/14/2021
+ms.date: 12/03/2021
 ms.reviewer:
 manager: dansimp
+ms.collection: highpri
 ---
 
 # Enroll a Windows 10 device automatically using Group Policy
+
+**Applies to:**
+
+-   Windows 10
 
 Starting in Windows 10, version 1709, you can use a Group Policy to trigger auto-enrollment to MDM for Active Directory (AD) domain-joined devices.
 
@@ -190,6 +195,9 @@ Requirements:
 
    - 21H1 --> [Administrative Templates (.admx) for Windows 10 May 2021 Update (21H1)](https://www.microsoft.com/download/details.aspx?id=103124)
 
+   - 21H2 --> [Administrative Templates (.admx) for Windows 10 November 2021 Update (21H2)](https://www.microsoft.com/download/103667)
+   
+   
 2. Install the package on the Domain Controller.
 
 3. Navigate, depending on the version to the folder:
@@ -208,9 +216,11 @@ Requirements:
 
    - 21H1 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 May 2021 Update (21H1)**
 
+   - 21H2 --> **C:\Program Files (x86)\Microsoft Group Policy\Windows 10 November 2021 Update (21H2)**
+
 4. Rename the extracted Policy Definitions folder to **PolicyDefinitions**.
 
-5. Copy PolicyDefinitions folder to **\\contoso.com\SYSVOL\contoso.com\policies\PolicyDefinitions**.
+5. Copy PolicyDefinitions folder to **\\SYSVOL\contoso.com\policies\PolicyDefinitions**.
 
    If this folder does not exist, then be aware that you will be switching to a [central policy store](/troubleshoot/windows-client/group-policy/create-and-manage-central-store) for your entire domain.
 
@@ -295,6 +305,7 @@ To collect Event Viewer logs:
 
 
 ### Useful Links
+- [Windows 10 Administrative Templates for Windows 10 November 2021 Update 21H2](https://www.microsoft.com/download/103667)
 - [Windows 10 Administrative Templates for Windows 10 May 2021 Update 21H1](https://www.microsoft.com/download/details.aspx?id=103124)
 - [Windows 10 Administrative Templates for Windows 10 November 2019 Update 1909](https://www.microsoft.com/download/details.aspx?id=100591)
 - [Windows 10 Administrative Templates for Windows 10 May 2019 Update 1903](https://www.microsoft.com/download/details.aspx?id=58495)

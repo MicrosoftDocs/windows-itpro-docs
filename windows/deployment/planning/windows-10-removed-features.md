@@ -8,9 +8,10 @@ ms.sitesec: library
 audience: itpro
 author: greg-lindsay
 ms.author: greglin
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Features and functionality removed in Windows 10

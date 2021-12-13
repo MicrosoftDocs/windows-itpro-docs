@@ -2,12 +2,12 @@
 title: Guidelines for troubleshooting BitLocker
 description: Describes approaches for investigating BitLocker issues, including how to gather diagnostic information
 ms.reviewer: kaushika
-ms.technology: windows
-ms.prod: w10
+ms.technology: windows-sec
+ms.prod: m365-security
 ms.sitesec: library
 ms.localizationpriority: medium
 author: Teresa-Motiv
-ms.author: v-tea
+ms.author: v-tappelgate
 manager: kaushika
 audience: ITPro
 ms.collection: Windows Security Technologies\BitLocker
@@ -34,7 +34,7 @@ Open Event Viewer and review the following logs under Applications and Services 
 
 Additionally, review the Windows logs\\System log for events that were produced by the TPM and TPM-WMI event sources.
 
-To filter and display or export logs, you can use the [wevtutil.exe](/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6) cmdlet.
+To filter and display or export logs, you can use the [wevtutil.exe](/windows-server/administration/windows-commands/wevtutil) command-line tool or the [Get-WinEvent](/powershell/module/microsoft.powershell.diagnostics/get-winevent?view=powershell-6&preserve-view=true) cmdlet.
 
 
 For example, to use wevtutil to export the contents of the operational log from the BitLocker-API folder to a text file that is named BitLockerAPIOpsLog.txt, open a Command Prompt window, and run the following command:
@@ -88,11 +88,11 @@ Open an elevated Windows PowerShell window, and run each of the following comman
 
 |Command |Notes |
 | --- | --- |
-|[**get-tpm \> C:\\TPM.txt**](/powershell/module/trustedplatformmodule/get-tpm?view=win10-ps) |Exports information about the local computer's Trusted Platform Module (TPM). This cmdlet shows different values depending on whether the TPM chip is version 1.2 or 2.0. This cmdlet is not supported in Windows 7. |
+|[**get-tpm \> C:\\TPM.txt**](/powershell/module/trustedplatformmodule/get-tpm?view=win10-ps&preserve-view=true) |Exports information about the local computer's Trusted Platform Module (TPM). This cmdlet shows different values depending on whether the TPM chip is version 1.2 or 2.0. This cmdlet is not supported in Windows 7. |
 |[**manage-bde –status \>&nbsp;C:\\BDEStatus.txt**](/windows-server/administration/windows-commands/manage-bde-status) |Exports information about the general encryption status of all drives on the computer. |
 |[**manage-bde c: <br />-protectors -get \>&nbsp;C:\\Protectors**](/windows-server/administration/windows-commands/manage-bde-protectors) |Exports information about the protection methods that are used for the BitLocker encryption key.  |
 |[**reagentc&nbsp;/info&nbsp;\>&nbsp;C:\\reagent.txt**](/windows-hardware/manufacture/desktop/reagentc-command-line-options) |Exports information about an online or offline image about the current status of the Windows Recovery Environment (WindowsRE) and any available recovery image. |
-|[**get-BitLockerVolume \| fl**](/powershell/module/bitlocker/get-bitlockervolume?view=win10-ps) |Gets information about volumes that BitLocker Drive Encryption can protect. |
+|[**get-BitLockerVolume \| fl**](/powershell/module/bitlocker/get-bitlockervolume?view=win10-ps&preserve-view=true) |Gets information about volumes that BitLocker Drive Encryption can protect. |
 
 ## Review the configuration information
 
