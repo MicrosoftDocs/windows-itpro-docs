@@ -60,7 +60,7 @@ Written by IT pros for IT pros, sharing real world examples and scenarios for Wi
 
 [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/)
 
-[Deploying Windows 10 Feature Updates to 24/7 Mission Critical Devices](/windows/deployment/update/feature-update-mission-critical)
+[What is Windows Update for Business?](waas-manage-updates-wufb.md)
 
 ## Discover
 
