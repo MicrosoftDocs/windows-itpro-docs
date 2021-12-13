@@ -34,7 +34,7 @@ In this walkthrough, we'll show you how to deploy and manage a full cloud IT sol
 - Create policies and app deployment rules
 - Log in as a user and start using your Windows device
 
-Go to the <a href="https://business.microsoft.com" target="_blank">Microsoft Business site</a> and select **Products** to learn more about pricing and purchasing options for your business.
+Go to [Microsoft 365 for business](https://www.microsoft.com/microsoft-365/business) to learn more about pricing and purchasing options for your business.
 
 ## Prerequisites
 
@@ -50,16 +50,17 @@ Here's a few things to keep in mind before you get started:
 To set up a cloud infrastructure for your organization, follow the steps in this section.
 
 ### 1.1 Set up Office 365 for business
-See <a href="/microsoft-365/admin/setup" target="_blank">Set up Office 365 for business</a> to learn more about the setup steps for businesses and nonprofits who have Office 365. You can watch video and learn how to:
+
+See [Microsoft 365 admin center for business](/microsoft-365/admin) and [Microsoft 365 resources for nonprofits](https://www.microsoft.com/nonprofits/microsoft-365) to learn more about the setup steps for businesses and nonprofits who have Office 365. You can learn how to:
 - Plan your setup
 - Create Office 365 accounts and how to add your domain.
 - Install Office
 
-To set up your Microsoft 365 for business tenant, see <a href="/microsoft-365/business-video/what-is-microsoft-365" target="_blank">Get Started with Microsoft 365 for business</a>.
+To set up your Microsoft 365 for business tenant, see [Get Started with Microsoft 365 for business](/microsoft-365/business-video/what-is-microsoft-365).
 
 If you're new at setting up Office 365, and you'd like to see how it's done, you can follow these steps to get started:
 
-1. Go to the <a href="https://products.office.com/business/office-365-affiliate-program-buy-business-premium" target="_blank">Office 365</a> page in the <a href="https://business.microsoft.com" target="_blank">Microsoft Business site</a>. Select **Try now** to use the Microsoft 365 Business Standard Trial or select **Buy now** to sign up for Microsoft 365 Business Standard. In this walkthrough, we'll select **Try now**.
+1. Go to [Try or buy a Microsoft 365 for business subscription](/microsoft-365/commerce/try-or-buy-microsoft-365). In this walkthrough, we'll select **Try now**.
 
    **Figure 1** - Try or buy Office 365
 
@@ -68,7 +69,7 @@ If you're new at setting up Office 365, and you'd like to see how it's done, you
 2. Fill out the sign up form and provide information about you and your company.
 3. Create a user ID and password to use to sign into your account.
 
-   This step creates an onmicrosoft.com email address. You can use this email address to sign in to the various admin centers. Save your sign-in info so you can use it to sign into <a href="https://portal.office.com" target="_blank">https://portal.office.com</a> (the admin portal).
+   This step creates an `onmicrosoft.com` email address. You can use this email address to sign in to the various admin centers. Save your sign-in info so you can use it to sign into [https://portal.office.com](https://portal.office.com) (the admin portal).
 
 4. Select **Create my account** and then enter the phone number you used in step 2 to verify your identity. You'll be asked to enter your verification code.
 5. Select **You're ready to go...** which will take you to the Microsoft 365 admin center.
@@ -91,7 +92,7 @@ If you're new at setting up Office 365, and you'd like to see how it's done, you
    ![Complete the Office 365 setup in the Microsoft 365 admin center.](images/office365_admin_portal.png)
 
 
-8. Go back to the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">admin center</a> to add or buy a domain.
+8. Go back to the [admin center](https://portal.office.com/adminportal/home#/homepage) to add or buy a domain.
    1. Select the **Domains** option.
 
       **Figure 4** - Option to add or buy a domain
@@ -121,7 +122,7 @@ When adding users, you can also assign admin privileges to certain users in your
 
 **To add users and assign product licenses**
 
-1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">admin center</a>, select **Users > Active users**.
+1. In the [admin center](https://portal.office.com/adminportal/home#/homepage), select **Users > Active users**.
 
    **Figure 7** - Add users
 
@@ -130,7 +131,7 @@ When adding users, you can also assign admin privileges to certain users in your
 2. In the **Home > Active users** page, add users individually or in bulk.
    - To add users one at a time, select **+ Add a user**.
 
-     If you select this option, you'll see the **New user** screen and you can add details about the new user including their name, user name, role, and so on. You also have the opportunity to assign **Product licenses**. For detailed step-by-step info on adding a user account, see *Add a user account in the admin center* in <a href="/microsoft-365/admin/add-users/add-users" target="_blank">Add users individually or in bulk to Office 365 - Admin Help</a>.
+     If you select this option, you'll see the **New user** screen and you can add details about the new user including their name, user name, role, and so on. You also have the opportunity to assign **Product licenses**. For detailed step-by-step info on adding a user account, see [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users).
 
      **Figure 8** - Add an individual user
 
@@ -138,7 +139,7 @@ When adding users, you can also assign admin privileges to certain users in your
 
    - To add multiple users at once, select **More** and then choose **+ Import multiple users**. If you select this option, you'll need to create and upload a CSV file containing the list of users.
 
-     The **Import multiple users** screen includes a link where you can learn more about importing multiple users and also links for downloading a sample CSV file (one with headers only and another with headers and sample user information). For detailed step-by-step info on adding multiple users to Office 365, see <a href="/microsoft-365/enterprise/add-several-users-at-the-same-time" target="_blank">Add several users at the same time to Office 365 - Admin Help</a>. Once you've added all the users, don't forget to assign **Product licenses** to the new users.
+     The **Import multiple users** screen includes a link where you can learn more about importing multiple users and also links for downloading a sample CSV file (one with headers only and another with headers and sample user information). For detailed step-by-step info on adding multiple users to Office 365, see [Add users and assign licenses at the same time](/microsoft-365/admin/add-users/add-users). Once you've added all the users, don't forget to assign **Product licenses** to the new users.
 
      **Figure 9** - Import multiple users
 
@@ -151,11 +152,11 @@ When adding users, you can also assign admin privileges to certain users in your
    ![Verify users and assigned product licenses.](images/o365_active_users.png)
 
 ### 1.3 Add Microsoft Intune
-Microsoft Intune provides mobile device management, app management, and PC management capabilities from the cloud. Using Intune, organizations can provide their employees with access to apps, data, and corporate resources from anywhere on almost any device while helping to keep corporate information secure. To learn more, see <a href="/intune/understand-explore/introduction-to-microsoft-intune" target="_blank">What is Intune?</a>
+Microsoft Intune provides mobile device management, app management, and PC management capabilities from the cloud. Using Intune, organizations can provide their employees with access to apps, data, and corporate resources from anywhere on almost any device while helping to keep corporate information secure. To learn more, see [Microsoft Intune is an MDM and MAM provider](/mem/intune/fundamentals/what-is-intune).
 
 **To add Microsoft Intune to your tenant**
 
-1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">admin center</a>, select **Billing > Purchase services**.
+1. In the [admin center](https://portal.office.com/adminportal/home#/homepage), select **Billing > Purchase services**.
 2. In the **Home > Purchase services** screen, search for **Microsoft Intune**. Hover over **Microsoft Intune** to see the options to start a free 30-day trial or to buy now.
 3. Confirm your order to enable access to Microsoft Intune.
 4. In the admin center, the Intune licenses will show as available and ready to be assigned to users. Select **Users > Active users** and then edit the product licenses assigned to the users to turn on **Intune A Direct**.
@@ -178,7 +179,7 @@ Microsoft Azure is an open and flexible cloud platform that enables you to quick
 
 **To add Azure AD to your domain**
 
-1. In the <a href="https://portal.office.com/adminportal/home#/homepage" target="_blank">admin center</a>, select **Admin centers > Azure AD**.
+1. In the [admin center](https://portal.office.com/adminportal/home#/homepage), select **Admin centers > Azure AD**.
 
    > [!NOTE]
    > You will need Azure AD Premium to configure automatic MDM enrollment with Intune.
@@ -203,16 +204,16 @@ Microsoft Azure is an open and flexible cloud platform that enables you to quick
 
    ![Start managing your Azure subscription.](images/azure_ad_successful_signup.png)
 
-   This step will take you to the <a href="https://portal.azure.com" target="_blank">Microsoft Azure portal</a>.
+   This step will take you to the [Microsoft Azure portal](https://portal.azure.com).
 
 ### 1.5 Add groups in Azure AD
-This section is the walkthrough is optional. However, we recommend that you create groups in Azure AD to manage access to corporate resources, such as apps, policies and settings, and so on. For more information, see <a href="/azure/active-directory/active-directory-manage-groups" target="_blank">Managing access to resources with Azure Active Directory groups</a>.
+This section is the walkthrough is optional. However, we recommend that you create groups in Azure AD to manage access to corporate resources, such as apps, policies and settings, and so on. For more information, see [Managing access to resources with Azure Active Directory groups](/azure/active-directory/active-directory-manage-groups.
 
-To add Azure AD group(s), we will use the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal (https://manage.windowsazure.com)</a>. See <a href="/azure/active-directory/active-directory-accessmanagement-manage-groups" target="_blank">Managing groups in Azure Active Directory</a> for more information about managing groups.
+To add Azure AD group(s), use the [Microsoft Azure portal](https://portal.azure.com). See [Managing groups in Azure Active Directory](/azure/active-directory/active-directory-accessmanagement-manage-groups) for more information about managing groups.
 
 **To add groups in Azure AD**
 
-1. If this is the first time you're setting up your directory, when you navigate to the **Azure Active Directory** node in the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal</a>, you will see a screen informing you that your directory is ready for use.
+1. If this is the first time you're setting up your directory, when you navigate to the **Azure Active Directory** node, you will see a screen informing you that your directory is ready for use.
 
    Afterwards, you should see a list of active directories. In the following example, **Fabrikam Design** is the active directory.
 
@@ -252,14 +253,14 @@ To add Azure AD group(s), we will use the <a href="https://manage.windowsazure.c
 ### 1.6 Configure automatic MDM enrollment with Intune
 Now that you have Azure AD Premium and have it properly configured, you can configure automatic MDM enrollment with Intune, which allows users to enroll their Windows devices into Intune management, join their devices directly to Azure AD, and get access to Office 365 resources after sign in.
 
-You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/" target="_blank">this blog post</a> to learn how you can combine login, Azure AD Join, and Intune MDM enrollment into an easy step so that you can bring your devices into a managed state that complies with the policies for your organization. We will use this blog post as our guide for this part of the walkthrough.
+You can read the [Windows 10, Azure AD and Microsoft Intune blog post](https://blogs.technet.microsoft.com/enterprisemobility/2015/08/14/windows-10-azure-ad-and-microsoft-intune-automatic-mdm-enrollment-powered-by-the-cloud/) to learn how you can combine login, Azure AD Join, and Intune MDM enrollment into an easy step so that you can bring your devices into a managed state that complies with the policies for your organization. We will use this blog post as our guide for this part of the walkthrough.
 
 > [!IMPORTANT]
 > We will use the classic Azure portal instead of the new portal to configure automatic MDM enrollment with Intune.
 
 **To enable automatic MDM enrollment**
 
-1. In the <a href="https://manage.windowsazure.com/" target="_blank">classic Azure portal</a>, click on your company's Azure Active Directory to go back to the main window. Select **Applications** from the list of directory menu options. 
+1. In the Azure portal, click on your company's Azure Active Directory to go back to the main window. Select **Applications** from the list of directory menu options. 
 
    The list of applications for your company will appear. **Microsoft Intune** will be one of the applications on the list.
 
@@ -296,18 +297,18 @@ You can read <a href="https://blogs.technet.microsoft.com/enterprisemobility/201
 ### 1.7 Configure Microsoft Store for Business for app distribution
 Next, you'll need to configure Microsoft Store for Business to distribute apps with a management tool such as Intune.
 
-In this part of the walkthrough, we'll be working on the <a href="https://manage.microsoft.com/" target="_blank">Microsoft Intune management portal</a> and <a href="https://businessstore.microsoft.com/Store/Apps" target="_blank">Microsoft Store for Business</a>.
+In this part of the walkthrough, use the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and [Microsoft Store for Business](https://businessstore.microsoft.com/Store/Apps).
 
 **To associate your Store account with Intune and configure synchronization**
 
-1. From the <a href="https://manage.microsoft.com/" target="_blank">Microsoft Intune management portal</a>, select **Admin**.
+1. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. In the **Administration** workspace, click **Mobile Device Management**. If this is the first item you're using the portal, click **manage mobile devices** in the **Mobile Device Management** window. The page will refresh and you'll have new options under **Mobile Device Management**.
 
    **Figure 24** - Mobile device management
 
    ![Set up mobile device management in Intune.](images/intune_admin_mdm_configure.png)
 
-3. Sign into <a href="https://businessstore.microsoft.com/Store/Apps" target="_blank">Microsoft Store for Business</a> using the same tenant account that you used to sign into Intune.
+3. Sign into [Microsoft Store for Business](https://businessstore.microsoft.com/Store/Apps) using the same tenant account that you used to sign into Intune.
 4. Accept the EULA.
 5. In the Store portal, select **Settings > Management tools** to go to the management tools page.
 6. In the **Management tools** page, find **Microsoft Intune** on the list and click **Activate** to get Intune ready to use with Microsoft Store for Business.
@@ -316,7 +317,7 @@ In this part of the walkthrough, we'll be working on the <a href="https://manage
 
    ![Activate Intune from the Store portal.](images/wsfb_management_tools_activate.png)
 
-7. Go back to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Admin > Mobile Device Management**, expand **Windows**, and then choose **Store for Business**.
+7. Go back to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Admin > Mobile Device Management**, expand **Windows**, and then choose **Store for Business**.
 8. In the **Microsoft Store for Business** page, select **Configure Sync** to sync your Store for Business volume-purchased apps with Intune.
 
    **Figure 26** - Configure Store for Business sync in Intune
@@ -333,20 +334,20 @@ In this part of the walkthrough, we'll be working on the <a href="https://manage
 
 **To buy apps from the Store**
 
-In your <a href="https://businessstore.microsoft.com/Store/Apps" target="_blank">Microsoft Store for Business</a> portal, you can see the list of apps that you own by going to **Manage > Inventory**. You should see the following apps in your inventory:
+In your [Microsoft Store for Business portal](https://businessstore.microsoft.com/Store/Apps), you can see the list of apps that you own by going to **Manage > Inventory**. You should see the following apps in your inventory:
 - Sway
 - OneNote
 - PowerPoint Mobile
 - Excel Mobile
 - Word Mobile
 
-In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Apps > Apps > Volume-Purchased Apps** and verify that you can see the same list of apps appear on Intune.
+In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Apps > Apps > Volume-Purchased Apps** and verify that you can see the same list of apps appear on Intune.
 
 In the following example, we'll show you how to buy apps through the Microsoft Store for Business and then make sure the apps appear on Intune.
 
 **Example 1 - Add other apps like Reader and InstaNote**
 
-1. In the <a href="https://businessstore.microsoft.com/Store/Apps" target="_blank">Microsoft Store for Business</a> portal, click **Shop**, scroll down to the **Made by Microsoft** category, and click **Show all** to see all the Microsoft apps in the list.
+1. In the [Microsoft Store for Business portal](https://businessstore.microsoft.com/Store/Apps), click **Shop**, scroll down to the **Made by Microsoft** category, and click **Show all** to see all the Microsoft apps in the list.
 
    **Figure 28** - Shop for Store apps
 
@@ -369,7 +370,7 @@ In the following example, we'll show you how to buy apps through the Microsoft S
 
 If you need to sync your most recently purchased apps and have it appear in your catalog, you can do this by forcing a sync.
 
-1. In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Admin > Mobile Device Management > Windows > Store for Business**.
+1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Admin > Mobile Device Management > Windows > Store for Business**.
 2. In the **Microsoft Store for Business** page, click **Sync now** to force a sync.
 
    **Figure 30** - Force a sync in Intune
@@ -377,10 +378,10 @@ If you need to sync your most recently purchased apps and have it appear in your
    ![Force a sync in Intune.](images/intune_admin_mdm_forcesync.png)
 
 **To view purchased apps**
-- In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Apps > Apps** and then choose **Volume-Purchased Apps** to see the list of available apps. Verify that the apps you purchased were imported correctly.
+- In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Apps > Apps** and then choose **Volume-Purchased Apps** to see the list of available apps. Verify that the apps you purchased were imported correctly.
 
 **To add more apps**
-- If you have other apps that you want to deploy or manage, you must add it to Microsoft Intune. To deploy Win32 apps and Web links, see <a href="/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune" target="_blank">Add apps for enrolled devices to Intune</a> for more info on how to do this.
+- If you have other apps that you want to deploy or manage, you must add it to Microsoft Intune. To deploy Win32 apps and Web links, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add) for more info on how to do this.
 
 ## 2. Set up devices
 
@@ -425,7 +426,7 @@ Verify that the device is set up correctly and boots without any issues.
 2. Confirm that the Store and built-in apps are working.
 
 ### 2.3 Verify the device is Azure AD joined
-In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, verify that the device is joined to Azure AD and shows up as being managed in Microsoft Intune.
+In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), verify that the device is joined to Azure AD and shows up as being managed in Microsoft Intune.
 
 **To verify if the device is joined to Azure AD**
 1. Check the device name on your PC. On your Windows PC, select **Settings > System > About** and then check **PC name**.
@@ -434,7 +435,7 @@ In the <a href="https://manage.microsoft.com/" target="_blank">Intune management
 
    ![Check the PC name on your device.](images/win10_settings_pcname.png)
   
-2. Log in to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>.
+2. Sign in to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 3. Select **Groups** and then go to **Devices**.
 4. In the **All Devices** page, look at the list of devices and select the entry that matches the name of your PC. 
    - Check that the device name appears in the list. Select the device and it will also show the current logged-in user in the **General Information** section.
@@ -454,7 +455,7 @@ In this section, we'll show you how to reconfigure app deployment settings and a
 In some cases, if an app is missing from the device, you need to reconfigure the deployment settings for the app and set the app to require installation as soon as possible.
 
 **To reconfigure app deployment settings**
-1. In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Apps** and go to **Apps > Volume-Purchased Apps**.
+1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Apps** and go to **Apps > Volume-Purchased Apps**.
 2. Select the app, right-click, then select **Manage Deployment...**.
 3. Select the group(s) whose apps will be managed, and then click **Add** to add the group.
 4. Click **Next** at the bottom of the app deployment settings window or select **Deployment Action** on the left column to check the deployment settings for the app.
@@ -477,7 +478,7 @@ In some cases, if an app is missing from the device, you need to reconfigure the
 ### 3.2 Configure other settings in Intune
 
 **To disable the camera**
-1. In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Policy > Configuration Policies**.
+1. In the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431), select **Devices > Configuration Policies**.
 2. In the **Policies** window, click **Add** to create a new policy.
 3. On the **Create a New Policy** page, click **Windows** to expand the group, select **General Configuration (Windows 10 Desktop and Mobile and later)**, choose **Create and Deploy a Custom Policy**, and then click **Create Policy**.
 4. On the **Create Policy** page, select **Device Capabilities**.
@@ -500,7 +501,7 @@ In some cases, if an app is missing from the device, you need to reconfigure the
     ![New policy appears on the list.](images/intune_policies_newpolicy_deployed.png)
 
 **To turn off Windows Hello and PINs during device setup**
-1. In the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a>, select **Admin**.
+1. Go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431).
 2. Go to **Mobile Device Management > Windows > Windows Hello for Business**.
 3. In the **Windows Hello for Business** page, select **Disable Windows Hello for Business on enrolled devices**.
 
@@ -560,22 +561,22 @@ For other devices, such as those personally-owned by employees who need to conne
 
    ![Device is enrolled in Azure AD.](images/win10_device_enrolled_in_aad.png)
 
-9. You can confirm that the new device and user are showing up as Intune-managed by going to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and following the steps in [2.3 Verify the device is Azure AD joined](#23-verify-the-device-is-azure-ad-joined). It may take several minutes before the new device shows up so check again later.
+9. You can confirm that the new device and user are showing up as Intune-managed by going to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and following the steps in [2.3 Verify the device is Azure AD joined](#23-verify-the-device-is-azure-ad-joined). It may take several minutes before the new device shows up so check again later.
 
 ### 4.2 Add a new user
 You can add new users to your tenant simply by adding them to the Microsoft 365 groups. Adding new users to Microsoft 365 groups automatically adds them to the corresponding groups in Microsoft Intune.
 
-See [Add users to Office 365](/microsoft-365/admin/add-users/add-users) to learn more. Once you're done adding new users, go to the <a href="https://manage.microsoft.com/" target="_blank">Intune management portal</a> and verify that the same users were added to the Intune groups as well.
+See [Add users to Office 365](/microsoft-365/admin/add-users/add-users) to learn more. Once you're done adding new users, go to the [Microsoft Endpoint Manager admin center](https://go.microsoft.com/fwlink/?linkid=2109431) and verify that the same users were added to the Intune groups as well.
 
 ## Get more info
 
 ### For IT admins
 To learn more about the services and tools mentioned in this walkthrough, and learn what other tasks you can do, follow these links:
-- <a href="/microsoft-365/admin/setup" target="_blank">Set up Office 365 for business</a>
-- Common admin tasks in Office 365 including email and OneDrive in <a href="/microsoft-365/admin/" target="_blank">Manage Office 365</a>
-- More info about managing devices, apps, data, troubleshooting, and more in <a href="/intune/" target="_blank">Intune documentation</a>
+- [Set up Office 365 for business](/microsoft-365/admin/setup)
+- Common admin tasks in Office 365 including email and OneDrive in [Manage Office 365](/microsoft-365/admin/)
+- More info about managing devices, apps, data, troubleshooting, and more in the [/mem/intune/](/mem/intune/)
 - Learn more about Windows client in the [Windows client documentation for IT Pros](/windows/resources/).
-- Info about distributing apps to your employees, managing apps, managing settings, and more in <a href="/microsoft-store/" target="_blank">Microsoft Store for Business</a>
+- Info about distributing apps to your employees, managing apps, managing settings, and more in [Microsoft Store for Business](/microsoft-store/)
 
 ### For information workers
 Whether it's in the classroom, getting the most out of your devices, or learning some of the cool things you can do, we've got teachers covered. Follow these links for more info:
