@@ -4,7 +4,7 @@ description: This event is created when a Windows Hello for Business is successf
 ms.assetid: 0DD59E75-1C5F-4CC6-BB0E-71C83884FF04
 ms.reviewer: 
 keywords: ngc
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security

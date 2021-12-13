@@ -10,6 +10,7 @@ ms.topic: article
 ms.prod: w10
 ms.technology: windows
 author: dansimp
+ms.collection: highpri
 ---
 
 # Mobile device management

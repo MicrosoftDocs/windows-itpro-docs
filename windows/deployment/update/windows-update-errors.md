@@ -8,9 +8,10 @@ itproauthor: jaimeo
 ms.audience: itpro
 author: jaimeo
 ms.reviewer: kaushika
-manager: laurawi
+manager: dougeby
 ms.topic: troubleshooting
 ms.custom: seo-marvel-apr2020
+ms.collection: highpri
 ---
 
 # Windows Update common errors and mitigation

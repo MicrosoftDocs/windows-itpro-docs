@@ -6,11 +6,11 @@ ms.mktglfcycl:
 audience: itpro
 ms.localizationpriority: medium
 ms.audience: itpro
-ms.reviewer:
-manager: laurawi
+manager: dougeby
 ms.topic: article
 ms.author: jaimeo
 author: jaimeo
+ms.collection: highpri
 ---
 
 # Windows Update - additional resources

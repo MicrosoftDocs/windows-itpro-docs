@@ -1,7 +1,6 @@
 ---
 title: Windows 10 upgrade paths (Windows 10)
-ms.reviewer: 
-manager: laurawi
+manager: dougeby
 ms.author: greglin
 description: You can upgrade to Windows 10 from a previous version of Windows if the upgrade path is supported.
 ms.prod: w10
@@ -12,13 +11,14 @@ ms.pagetype: mobile
 audience: itpro
 author: greg-lindsay
 ms.topic: article
+ms.collection: highpri
 ---
 
 # Windows 10 upgrade paths
 
 **Applies to**
 
--   Windows 10
+-   Windows 10
 
 ## Upgrade paths
 

@@ -1,6 +1,6 @@
 ---
 title: Delivery Optimization for Windows client updates
-manager: laurawi
+manager: dougeby
 description: This article provides information about Delivery Optimization, a peer-to-peer distribution method in Windows 10.
 keywords: oms, operations management suite, wdav, updates, downloads, log analytics
 ms.prod: w10
@@ -12,6 +12,7 @@ ms.author: jaimeo
 ms.collection:
 - M365-modern-desktop
 - m365initiative-coredeploy
+- highpri
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ---

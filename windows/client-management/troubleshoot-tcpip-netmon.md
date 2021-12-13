@@ -10,6 +10,7 @@ ms.author: dansimp
 ms.date: 12/06/2018
 ms.reviewer: 
 manager: dansimp
+ms.collection: highpri
 ---
 
 # Collect data using Network Monitor

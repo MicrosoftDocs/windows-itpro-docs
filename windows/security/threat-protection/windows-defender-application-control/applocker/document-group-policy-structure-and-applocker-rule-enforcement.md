@@ -43,96 +43,16 @@ To complete this AppLocker planning document, you should first complete the foll
 After you determine how to structure your Group Policy Objects (GPOs) so that you can apply AppLocker policies, you should record your findings. You can use the following table to determine how many GPOs to create (or edit) and which objects they are linked to. If you decided to create custom rules to allow system files to run, note the high-level rule configuration in the **Use default rule or define new rule condition** column.
 
 The following table includes the sample data that was collected when you determined your enforcement settings and the GPO structure for your AppLocker policies.
-<table>
-<colgroup>
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-<col width="12%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">Business group</th>
-<th align="left">Organizational unit</th>
-<th align="left">Implement AppLocker?</th>
-<th align="left">Apps</th>
-<th align="left">Installation path</th>
-<th align="left">Use default rule or define new rule condition</th>
-<th align="left">Allow or deny</th>
-<th align="left">GPO name</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><p>Bank Tellers</p></td>
-<td align="left"><p>Teller-East and Teller-West</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Teller Software</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\Teller.exe</p></td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p>Tellers-AppLockerTellerRules</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p></td>
-<td align="left"><p>C:\Windows</p></td>
-<td align="left"><p>Create a path exception to the default rule to exclude \Windows\Temp</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p>Human Resources</p></td>
-<td align="left"><p>HR-All</p></td>
-<td align="left"><p>Yes</p></td>
-<td align="left"><p>Check Payout</p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Checkcut.exe</p></td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p>HR-AppLockerHRRules</p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Time Sheet Organizer</p>
-<p></p></td>
-<td align="left"><p>C:\Program Files\Woodgrove\HR\Timesheet.exe</p>
-<p></p></td>
-<td align="left"><p>File is not signed; create a file hash condition</p>
-<p></p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="odd">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Internet Explorer 7</p></td>
-<td align="left"><p>C:\Program Files\Internet Explorer&lt;/p&gt;</td>
-<td align="left"><p>File is signed; create a publisher condition</p></td>
-<td align="left"><p>Deny</p></td>
-<td align="left"><p></p></td>
-</tr>
-<tr class="even">
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p></p></td>
-<td align="left"><p>Windows files</p></td>
-<td align="left"><p>C:\Windows</p></td>
-<td align="left"><p>Use a default rule for the Windows path</p></td>
-<td align="left"><p>Allow</p></td>
-<td align="left"><p></p></td>
-</tr>
-</tbody>
-</table>
- 
+
+|Business group|Organizational unit|Implement AppLocker?|Apps|Installation path|Use default rule or define new rule condition|Allow or deny|GPO name|
+|--- |--- |--- |--- |--- |--- |--- |--- |
+|Bank Tellers|Teller-East and Teller-West|Yes|Teller Software|C:\Program Files\Woodgrove\Teller.exe|File is signed; create a publisher condition|Allow|Tellers-AppLockerTellerRules|
+||||Windows files|C:\Windows|Create a path exception to the default rule to exclude \Windows\Temp|Allow||
+|Human Resources|HR-All|Yes|Check Payout|C:\Program Files\Woodgrove\HR\Checkcut.exe|File is signed; create a publisher condition|Allow|HR-AppLockerHRRules|
+||||Time Sheet Organizer|C:\Program Files\Woodgrove\HR\Timesheet.exe|File is not signed; create a file hash condition|Allow||
+||||Internet Explorer 7|C:\Program Files\Internet Explorer</p>|File is signed; create a publisher condition|Deny||
+||||Windows files|C:\Windows|Use a default rule for the Windows path|Allow||
+
 ## Next steps
 
 After you have determined the Group Policy structure and rule enforcement strategy for each business group's apps, the following tasks remain:
