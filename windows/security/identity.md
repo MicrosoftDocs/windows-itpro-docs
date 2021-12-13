@@ -13,7 +13,7 @@ ms.prod: m365-security
 ms.technology: windows-sec
 ---
 
-# Windows identity and user security
+# Windows identity and privacy
  
 Malicious actors launch millions of password attacks every day. Weak passwords, password spraying, and phishing are the entry point for many attacks. Knowing that the right user is accessing the right device and the right data is critical to keeping your business, family, and self, safe and secure.  Windows Hello, Windows Hello for Business, and Credential Guard enable customers to move to passwordless multifactor authentication (MFA). MFA can reduce the risk of compromise in organizations.
 
