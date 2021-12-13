@@ -16,4 +16,5 @@ ms.author: dansimp
 
 Return to: [Deprecated document modes and Internet Explorer 11](deprecated-document-modes.md)
 
-   ![Full-sized flowchart detailing how document modes are chosen in IE11](images/docmode-decisions-lg.png)
+:::image type="content" source="images/docmode-decisions-lg.png" alt-text="Full-sized flowchart detailing how document modes are chosen in IE11" lightbox="images/docmode-decisions-lg.png":::
+
