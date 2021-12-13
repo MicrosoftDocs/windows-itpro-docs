@@ -2,7 +2,7 @@
 title: Configure Windows Hello for Business Policy settings - key trust
 description: Configure Windows Hello for Business Policy settings for Windows Hello for Business
 keywords: identity, PIN, biometric, Hello, passport
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security, mobile

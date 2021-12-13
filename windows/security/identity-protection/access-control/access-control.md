@@ -1,7 +1,7 @@
 ---
 title: Access Control Overview (Windows 10)
 description: Access Control Overview
-ms.prod: w10
+ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
@@ -9,11 +9,12 @@ audience: ITPro
 author: dansimp
 ms.author: dansimp
 manager: dansimp
-ms.collection: M365-identity-device-management
+ms.collection:
+  - M365-identity-device-management
+  - highpri
 ms.topic: article
 ms.localizationpriority: medium
 ms.date: 07/18/2017
-ms.reviewer: 
 ---
 
 # Access Control Overview

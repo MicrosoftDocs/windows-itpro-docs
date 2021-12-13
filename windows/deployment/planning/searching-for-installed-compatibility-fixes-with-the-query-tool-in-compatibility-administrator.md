@@ -105,8 +105,7 @@ You can use the **Fix Description** tab of the Query tool to add parameters that
 
     The query runs and the results of the query are displayed in the lower pane.
 
-## Querying by Using the Fix Description Tab
-
+## Querying by Using the Advanced Tab
 
 You can use the **Fix Description** tab of the Query tool to add additional SQL Server SELECT and WHERE clauses to your search criteria.
 
