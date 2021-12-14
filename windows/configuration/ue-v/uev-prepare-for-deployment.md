@@ -22,7 +22,7 @@ Before you deploy User Experience Virtualization (UE-V), review this topic for i
 
 ## Plan your UE-V deployment
 
-With UE-V, you can synchronize user-defined application and operating system settings across all the devices that a user works from. Use UE-V to synchronize settings for Windows applications and custom applications, such as third-party and line of business applications. 
+With UE-V, you can synchronize user-defined application and operating system settings across all the devices that a user works from. Use UE-V to synchronize settings for Windows applications and custom applications, such as third-party and line-of-business applications. 
 
 Whether you want to synchronize settings for only default Windows applications or for both Windows and custom applications, you’ll need to first deploy the features required to use UE-V.  
 
@@ -120,7 +120,7 @@ UE-V roams taskbar settings between Windows 10 devices. However, UE-V does not s
 
 | **Settings group**       | **Category**   | **Capture**    | **Apply**    |
 |--------------------------|----------------|----------------|--------------|
-| **Application Settings** | Windows applications   | Close appllication<br>Windows application settings change event | Start the UE-V App Monitor at startup<br>Open app<br>Windows application settings change event<br>Arrival of a settings package     |
+| **Application Settings** | Windows applications   | Close application<br>Windows application settings change event | Start the UE-V App Monitor at startup<br>Open app<br>Windows application settings change event<br>Arrival of a settings package     |
 |           | Desktop applications   | Application closes | Application opens and closes        |
 | **Desktop settings**     | Desktop background     | Lock or log off | Log on, unlock, remote connect, notification of new package arrival, or scheduled task runs |
 |           | Ease of Access (Common – Accessibility, Narrator, Magnifier, On-Screen-Keyboard) | Lock or Log off | Log on        |
