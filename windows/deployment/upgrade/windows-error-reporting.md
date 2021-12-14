@@ -63,7 +63,7 @@ Ten parameters are listed in the event:
 
 The event will also contain links to log files that can be used to perform a detailed diagnosis of the error.  An example of this event from a successful upgrade is shown below.
 
-![Windows Error Reporting.](../images/event.png)
+:::image type="content" alt-text="Windows Error Reporting." source="../images/event.png" lightbox="../images/event.png":::
 
 ## Related topics
 

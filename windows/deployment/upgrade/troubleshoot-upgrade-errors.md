@@ -85,7 +85,7 @@ When performing an operating system upgrade, Windows Setup uses phases described
 
 **Figure 1**: Phases of a successful Windows 10 upgrade (uninstall is not shown):
 
-![Upgrade process.](../images/upgrade-process.png)
+:::image type="content" alt-text="Upgrade process." source="../images/upgrade-process.png" lightbox="../images/upgrade-process.png":::
 
 DU = Driver/device updates.<br>
 OOBE = Out of box experience.<br>

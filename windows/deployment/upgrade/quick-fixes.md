@@ -215,7 +215,7 @@ In the previous example, there is 703 GB of available free space on the system d
 
 To free up additional space on the system drive, begin by running Disk Cleanup. You can access Disk Cleanup by right-clicking the hard drive icon and then clicking Properties. See the following example:
 
-![Disk cleanup.](../images/cleanup.png)
+:::image type="content" alt-text="Disk cleanup." source="../images/cleanup.png":::
 
 For instructions to run Disk Cleanup and other suggestions to free up hard drive space, see [Tips to free up drive space on your PC](https://support.microsoft.com/help/17421/windows-free-up-drive-space).
 
