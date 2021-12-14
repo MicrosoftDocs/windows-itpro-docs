@@ -115,8 +115,8 @@ UE-V includes settings location templates that capture settings values for these
 | Ease of Access       | Accessibility and input settings, Microsoft Magnifier, Narrator, and on-Screen Keyboard | Log on only | Log off or scheduled task interval | Enabled           |
 | Desktop settings     | Start menu and Taskbar settings, folder options, default desktop icons, additional clocks, and region and language settings | Log on only  | Log off or scheduled task | Enabled           |
 
->**Important**
-UE-V roams taskbar settings between Windows 10 devices. However, UE-V does not synchronize taskbar settings between Windows 10 devices and devices running previous operating systems versions.
+> [!IMPORTANT]
+> UE-V roams taskbar settings between Windows 10 devices. However, UE-V does not synchronize taskbar settings between Windows 10 devices and devices running previous operating systems versions.
 
 | **Settings group**       | **Category**   | **Capture**    | **Apply**    |
 |--------------------------|----------------|----------------|--------------|
@@ -133,8 +133,8 @@ For Windows applications, the application developer specifies which user setting
 
 To display a list of Windows applications that can synchronize settings with their package family name, enabled status, and enabled source, open a Windows PowerShell window, type Get-UevAppxPackage, and press ENTER.
 
->**Note** 
-Starting in Windows 10, version 1607, you can configure UE-V to not synchronize Windows applications settings if the device is configured to use Enterprise State Roaming.
+> [!NOTE]
+> Starting in Windows 10, version 1607, you can configure UE-V to not synchronize Windows applications settings if the device is configured to use Enterprise State Roaming.
 
 ### UE-V-support for roaming printers
 
@@ -148,8 +148,8 @@ Printer roaming in UE-V requires one of these scenarios:
 
 -   The printer driver can be imported from Windows Update.
 
->**Note**
-The UE-V printer roaming feature does not roam printer settings or preferences, such as printing double-sided.
+> [!NOTE]
+> The UE-V printer roaming feature does not roam printer settings or preferences, such as printing double-sided.
 
 ### Determine whether you need settings synchronized for other applications
 
@@ -201,8 +201,8 @@ You should also consider these things when you are preparing to deploy UE-V:
 
 Many enterprise applications, including Microsoft Outlook, Lync, and Skype for Business prompt users for their domain credentials when they log in. Users have the option of saving their credentials to disk to prevent having to enter them every time they open these applications. Enabling roaming credentials synchronization lets users save their credentials on one computer and avoid re-entering them on every computer they use in their environment. Users can synchronize some domain credentials with UE-V.
 
-**Important**
-Credentials synchronization is disabled by default. You must explicitly enable credentials synchronization after you enable the UE-V service to implement this feature.
+> [!IMPORTANT]
+> Credentials synchronization is disabled by default. You must explicitly enable credentials synchronization after you enable the UE-V service to implement this feature.
 
 UE-V can synchronize enterprise credentials, but does not roam credentials intended only for use on the local device.
 
@@ -210,20 +210,24 @@ Credentials are synchronous settings, meaning that they are applied to users' pr
 
 Credentials synchronization is managed by its own settings location template, which is disabled by default. You can enable or disable this template through the same methods used for other templates. The template identifier for this feature is RoamingCredentialSettings.
 
->**Important**
-If you are using Active Directory Credential Roaming in your environment, we recommend that you do not enable the UE-V credential roaming template. Instead, use PowerShell or Group Policy to enable credentials synchronization. Note that credentials are encrypted during synchronization.
+> [!IMPORTANT]
+> If you are using Active Directory Credential Roaming in your environment, we recommend that you do not enable the UE-V credential roaming template. Instead, use PowerShell or Group Policy to enable credentials synchronization. Note that credentials are encrypted during synchronization.
 
 [PowerShell](uev-administering-uev-with-windows-powershell-and-wmi.md)**:** Enter this PowerShell cmdlet to enable credential synchronization:
 
-`Enable-UevTemplate RoamingCredentialSettings`
+```powershell
+Enable-UevTemplate RoamingCredentialSettings
 
-`Copy`
+Copy
+```
 
 Use this PowerShell cmdlet to disable credential synchronization:
 
-`Disable-UevTemplate RoamingCredentialSettings`
+```powershell
+Disable-UevTemplate RoamingCredentialSettings
 
-`Copy`
+Copy
+```
 
 <!-- WATCH THE MDOP ADMX templates LINK IN THE NEXT PARAGRAPH. IS IT CURRENT? -->
 
@@ -335,10 +339,10 @@ Before you proceed, ensure that your environment meets these requirements for us
 | Windows 8 and Windows 8.1         | Enterprise or Pro | None | 32-bit or 64-bit        | Windows PowerShell 3.0 or higher | .NET Framework 4.5 or higher   |
 | Windows Server 2012 and Windows Server 2012 R2       | Standard or Datacenter           | None | 64-bit   | Windows PowerShell 3.0 or higher | .NET Framework 4.5 or higher   |
 
-**Note**
--  Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.
-
--   The “Delete Roaming Cache” policy for mandatory profiles is not supported with UE-V and should not be used.
+> [!NOTE]
+> -  Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.
+> 
+> -   The “Delete Roaming Cache” policy for mandatory profiles is not supported with UE-V and should not be used.
 
 There are no special random access memory (RAM) requirements specific to UE-V.
 
@@ -368,19 +372,19 @@ Enable this configuration using one of these methods:
 
 Restart the device to allow the settings to synchronize.
 
-- >**Note**
-  These methods do not work for pooled virtual desktop infrastructure (VDI) environments.
+> [!NOTE]
+> These methods do not work for pooled virtual desktop infrastructure (VDI) environments.
 
 
->**Note**
-If you set *SyncMethod = None*, any settings changes are saved directly to the server. If the network connection to the settings storage path is not found, then the settings changes are cached on the device and are synchronized the next time that the sync provider runs. If the settings storage path is not found and the user profile is removed from a pooled VDI environment on log off, settings changes are lost and the user must reapply the change when the computer is reconnected to the settings storage path.
+> [!NOTE]
+> If you set *SyncMethod = None*, any settings changes are saved directly to the server. If the network connection to the settings storage path is not found, then the settings changes are cached on the device and are synchronized the next time that the sync provider runs. If the settings storage path is not found and the user profile is removed from a pooled VDI environment on log off, settings changes are lost and the user must reapply the change when the computer is reconnected to the settings storage path.
 
 **Synchronization for external sync engines** The *SyncMethod=External* parameter specifies that if UE-V settings are written to a local folder on the user device, then any external sync engine (such as OneDrive for Business, Work Folders, Sharepoint, or Dropbox) can be used to apply these settings to the different devices that users access.
 
 **Support for shared VDI sessions** UE-V supports VDI sessions that are shared among end users. You can register and configure a special VDI template, which ensures that UE-V keeps all of its functionality intact for non-persistent VDI sessions.
 
->**Note**
-If you do not enable VDI mode for non-persistent VDI sessions, certain features do not work, such as [back-up/restore and last known good (LKG)](uev-manage-administrative-backup-and-restore.md).
+> [!NOTE]
+> If you do not enable VDI mode for non-persistent VDI sessions, certain features do not work, such as [back-up/restore and last known good (LKG)](uev-manage-administrative-backup-and-restore.md).
 
 The VDI template is provided with UE-V and is typically available here after installation: C:\ProgramData\Microsoft\UEV\InboxTemplates
 
