@@ -100,10 +100,10 @@ When you enable the UE-V service on user devices, it registers a default group o
 | Browser options: Internet Explorer 11 and 10 | Synchronize favorites, home page, tabs, and toolbars.<br>**Note**<br>UE-V does not roam settings for Internet Explorer cookies. |
 | Windows accessories | Microsoft NotePad, WordPad |
 
-**Notes**
-An Outlook profile must be created for any device on which a user wants to sync their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
-
-UE-V does not synchronize settings between the Microsoft Calculator in Windows 10 and the Microsoft Calculator in previous operating systems.
+> [!NOTE]
+> - An Outlook profile must be created for any device on which a user wants to sync their Outlook signature. If the profile is not already created, the user can create one and then restart Outlook on that device to enable signature synchronization.
+> 
+> - UE-V does not synchronize settings between the Microsoft Calculator in Windows 10 and the Microsoft Calculator in previous operating systems.
 
 ### Windows settings synchronized by default
 
@@ -340,9 +340,9 @@ Before you proceed, ensure that your environment meets these requirements for us
 | Windows Server 2012 and Windows Server 2012 R2       | Standard or Datacenter           | None | 64-bit   | Windows PowerShell 3.0 or higher | .NET Framework 4.5 or higher   |
 
 > [!NOTE]
-> -  Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.
+> - Windows Server 2012 operating systems come with .NET Framework 4.5 installed. The Windows 10 operating system comes with .NET Framework 4.6 installed.
 > 
-> -   The “Delete Roaming Cache” policy for mandatory profiles is not supported with UE-V and should not be used.
+> - The “Delete Roaming Cache” policy for mandatory profiles is not supported with UE-V and should not be used.
 
 There are no special random access memory (RAM) requirements specific to UE-V.
 

@@ -104,15 +104,15 @@ The wifi connection state machine has the following states:
 
 Standard wifi connections tend to transition between states such as:
 
-**Connecting**
+- Connecting
 
-Reset --> Ihv_Configuring --> Configuring --> Associating --> Authenticating --> Connected
+  Reset --> Ihv_Configuring --> Configuring --> Associating --> Authenticating --> Connected
 
-**Disconnecting**
+- Disconnecting
 
-Connected --> Roaming --> Wait_For_Disconnected --> Disconnected --> Reset
+  Connected --> Roaming --> Wait_For_Disconnected --> Disconnected --> Reset
 
->Filtering the ETW trace with the [TextAnalysisTool](https://github.com/TextAnalysisTool/Releases) (TAT) is an easy first step to determine where a failed connection setup is breaking down.  A useful [wifi filter file](#wifi-filter-file) is included at the bottom of this article.
+Filtering the ETW trace with the [TextAnalysisTool](https://github.com/TextAnalysisTool/Releases) (TAT) is an easy first step to determine where a failed connection setup is breaking down.  A useful [wifi filter file](#wifi-filter-file) is included at the bottom of this article.
 
 Use the **FSM transition** trace filter to see the connection state machine. You can see [an example](#textanalysistool-example) of this filter applied in the TAT at the bottom of this page.
 

@@ -293,7 +293,7 @@ Additionally, users may see blank tiles if sign-in was attempted without network
 >[!Note]
 >Corruption recovery removes any manual pins from Start. Apps should still be visible, but you’ll need to re-pin any secondary tiles and/or pin app tiles to the main Start view. Aps that you have installed that are completely missing from “all apps” is unexpected, however. That implies the re-registration didn’t work.
 
-- Open a command prompt, and run the following command:
+Open a command prompt, and run the following command:
 
 ```console
 C:\Windows\System32\tdlrecover.exe -reregister -resetlayout -resetcache
