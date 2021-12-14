@@ -101,7 +101,7 @@ WORKAROUND: None
 
 **Additional resources for this feature**
 
-- [UE-V Registry Settings](troubleshoot/windows-client/ue-v/ue-v-registry-settings)
+- [UE-V Registry Settings](/troubleshoot/windows-client/ue-v/ue-v-registry-settings)
 
 - [How To Enable Debug Logging in Microsoft User Experience Virtualization (UE-V)(/troubleshoot/windows-client/ue-v/enable-debug-logging)
 
