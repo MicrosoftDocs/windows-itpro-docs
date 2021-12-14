@@ -69,7 +69,7 @@ Enable the VAMT to access client computers across multiple subnets using the **W
 
 ## Create a registry value for the VAMT to access workgroup-joined computer
 
-> [!WARNING]  
+> [!WARNING]
 > This section contains information about how to modify the registry. Make sure to back up the registry before you modify it; in addition, ensure that you know how to restore the registry, if a problem occurs. For more information about how to back up, restore, and modify the registry, see [Windows registry information for advanced users](/troubleshoot/windows-server/performance/windows-registry-advanced-users).
 
 On the client computer, create the following registry key using regedit.exe.
